@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: '35 * * * *'   # every hour at :35, so each refresh (:05 past 12/3/6/9 ET) reads a copy under an hour old
   workflow_dispatch:
+  push:                    # backup for GitHub's best-effort cron: each news refresh commit to data/ starts a fresh fetch
+    branches: [main]
+    paths:
+      - 'data/**'
   pull_request:            # dry run on changes to the fetcher: fetch everything, publish nothing
     paths:
       - 'tools/fetch_sources.py'
