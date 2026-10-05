@@ -33,6 +33,7 @@ header{grid-area:head;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20
 .ctrls{margin-left:auto;display:flex;gap:6px}
 .ctrl{font-family:var(--display);font-size:9px;padding:8px 10px;background:var(--panel-2);border:2px solid var(--edge)}
 .ctrl[aria-pressed="false"]{color:var(--dim);text-decoration:line-through}
+.chanbtn{background:#f7c948;color:#1a1300;border-color:#1a1300;text-decoration:none}
 main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .stage{position:relative;width:100%;aspect-ratio:16/9;background:#000;border:4px solid var(--edge);box-shadow:0 0 0 4px #05060d;container-type:inline-size;overflow:hidden}
 .stage canvas#field{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
@@ -158,6 +159,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
       <button class="tab" disabled>MLS<small>soon</small></button>
     </nav>
     <div class="ctrls">
+      <a class="ctrl chanbtn" href="../" aria-label="Switch to the Pixel Broadcasting newsroom">&#9664; NEWS</a>
       <button class="ctrl" id="btn-sound" aria-pressed="false" title="Crowd and sound effects">SOUND</button>
       <button class="ctrl" id="btn-voice" aria-pressed="true" title="Announcer voices">VOICES</button>
     </div>
@@ -1652,10 +1654,6 @@ $('btn-start').onclick = () => {
   }, 30000);
   setInterval(pollLive, 10000);
 })();
-</script>
-<script>
-// Opened on its own (not inside the Pixel Broadcasting switcher): add a way back to the news
-if(window.top===window){var pbc=document.createElement("a");pbc.href="../#news";pbc.textContent="\u25C0 NEWS";pbc.setAttribute("aria-label","Switch to the news channel");pbc.style.cssText="position:fixed;top:8px;right:8px;z-index:9999;font:11px 'Press Start 2P',ui-monospace,monospace;padding:8px 10px;background:#f7c948;color:#1a1300;text-decoration:none;border:2px solid #2c3364";document.body.appendChild(pbc)}
 </script>
 </body>
 </html>
