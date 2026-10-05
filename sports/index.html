@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pixel Sports Live</title>
+<title>Pixel Sports Live · Pixel Broadcasting Company</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@700&family=Silkscreen&family=VT323&display=swap">
 <style>
 /* Layout: arcade cabinet. Header with sport tabs, 16:9 stage with booth (top-left) and scoreboard (top-right), live feed under it, game list at right. */
 :root{
@@ -23,16 +23,44 @@ button{font:inherit;color:inherit;cursor:pointer}
 button:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .app{max-width:1400px;margin:0 auto;padding-block:12px;padding-inline:16px;display:grid;gap:12px;
   grid-template-columns:minmax(0,1fr) 300px;grid-template-areas:"head head" "main side"}
-header{grid-area:head;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
 .logo{font-family:var(--display);font-size:14px;color:var(--gold);letter-spacing:1px;text-shadow:2px 2px 0 #7a2b10}
 .tabs{display:flex;flex-wrap:wrap;gap:6px}
 .tab{font-family:var(--display);font-size:10px;padding:8px 10px;background:var(--panel);border:2px solid var(--edge);border-radius:0}
 .tab[aria-pressed="true"]{background:var(--gold);color:#1a1300;border-color:#fff3b8}
 .tab:disabled{opacity:.45;cursor:not-allowed}
 .tab small{font-family:var(--body);font-size:14px;margin-left:4px}
-.ctrls{margin-left:auto;display:flex;gap:6px}
 .ctrl{font-family:var(--display);font-size:9px;padding:8px 10px;background:var(--panel-2);border:2px solid var(--edge)}
 .ctrl[aria-pressed="false"]{color:var(--dim);text-decoration:line-through}
+/* Shared Pixel Broadcasting Company header: same look as the newsroom page (index.html) */
+.pbc-top{grid-area:head;display:flex;flex-direction:column;gap:12px;min-width:0}
+.pbc-mast{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.pbc-brand{display:flex;align-items:center;gap:12px;min-width:0}
+.pbc-mark{font-family:"Silkscreen","Courier New",monospace;background:#f2b632;color:#1d2766;padding:6px 8px;font-size:18px;letter-spacing:.06em;box-shadow:3px 3px 0 #1d2766}
+.pbc-brand h1{font-family:"Pixelify Sans","Trebuchet MS",system-ui,sans-serif;font-weight:700;font-size:clamp(22px,3.4vw,34px);margin:0;line-height:1.05;text-wrap:balance;color:#eceefa}
+.pbc-brand p{margin:2px 0 0;color:#9ba3cc;font-size:19px}
+.pbc-side{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.pbc-onair{font-family:"Silkscreen","Courier New",monospace;font-size:13px;letter-spacing:.08em;color:#eceefa;display:flex;align-items:center;gap:8px;border:2px solid #272d5c;padding:6px 10px}
+.pbc-dot{width:10px;height:10px;background:#e5383b;display:inline-block;animation:pbcpulse 1.6s steps(2) infinite}
+@keyframes pbcpulse{50%{opacity:.25}}
+.pbc-chan{display:flex;border:2px solid #272d5c}
+.pbc-chan a{font-family:"Silkscreen","Courier New",monospace;font-size:13px;letter-spacing:.08em;padding:6px 12px;color:#9ba3cc;text-decoration:none}
+.pbc-chan a[aria-current="page"]{background:#f2b632;color:#1d2766}
+.pbc-chan a:not([aria-current]):hover{color:#eceefa}
+.pbc-chan a:focus-visible,.pbc-btn:focus-visible{outline:3px solid #f2b632;outline-offset:2px}
+.pbc-ctl{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.pbc-btns{display:flex;gap:10px;margin-left:auto}
+.pbc-btn{font-family:"Silkscreen","Courier New",monospace;font-size:13px;padding:8px 14px;background:#131733;color:#fff;border:2px solid #272d5c}
+.pbc-btn:hover{border-color:#f2b632}
+.pbc-btn.on{border-color:#f2b632;color:#f2b632}
+@media (max-width:640px){
+  .pbc-side{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+  .pbc-btns{width:100%}.pbc-btn{flex:1 1 0;padding:10px 8px}
+}
+@media (prefers-reduced-motion:reduce){.pbc-dot{animation:none}}
+.stage.theater{position:fixed;z-index:100;left:50%;top:50%;transform:translate(-50%,-50%);width:min(100vw,177.78vh);border:0;box-shadow:0 0 0 100vmax #000}
+.stage.theater ~ *{visibility:hidden}
+body.theater-on{overflow:hidden}
+body.theater-on #fs{position:fixed;top:10px;right:10px;z-index:101;flex:none}
 main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .stage{position:relative;width:100%;aspect-ratio:16/9;background:#000;border:4px solid var(--edge);box-shadow:0 0 0 4px #05060d;container-type:inline-size;overflow:hidden}
 .stage canvas#field{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
@@ -148,8 +176,18 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 </head>
 <body>
 <div class="app">
-  <header>
-    <div class="logo">PIXEL SPORTS LIVE</div>
+  <div class="pbc-top">
+  <header class="pbc-mast">
+    <div class="pbc-brand">
+      <span class="pbc-mark" aria-hidden="true">PBC</span>
+      <div><h1>Pixel Broadcasting Company</h1><p>Pixel Sports Live</p></div>
+    </div>
+    <div class="pbc-side">
+      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="./" aria-current="page">SPORTS</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR 24 HOURS</div>
+    </div>
+  </header>
+  <div class="pbc-ctl">
     <nav class="tabs" aria-label="Sport">
       <button class="tab" aria-pressed="true" id="sport-nfl">NFL</button>
       <button class="tab" disabled>NBA<small>soon</small></button>
@@ -157,11 +195,12 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
       <button class="tab" disabled>NHL<small>soon</small></button>
       <button class="tab" disabled>MLS<small>soon</small></button>
     </nav>
-    <div class="ctrls">
-      <button class="ctrl" id="btn-sound" aria-pressed="false" title="Crowd and sound effects">SOUND</button>
-      <button class="ctrl" id="btn-voice" aria-pressed="true" title="Announcer voices">VOICES</button>
+    <div class="pbc-btns">
+      <button class="pbc-btn" id="fs" type="button">FULL SCREEN</button>
+      <button class="pbc-btn" id="btn-sound" type="button" aria-label="Sound" title="Off, game blips, or blips with announcer voices">SOUND: OFF</button>
     </div>
-  </header>
+  </div>
+  </div>
 
   <main>
     <div class="stage" id="stage">
@@ -187,7 +226,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
         <div class="inner">
           <div class="t">PIXEL SPORTS<br>LIVE</div>
           <button class="big" id="btn-start">PRESS START</button>
-          <p>Starts the announcer voices. Turn on SOUND for the crowd.</p>
+          <p>Turns on the announcer voices. SOUND changes it.</p>
         </div>
       </div>
     </div>
@@ -249,7 +288,7 @@ const S = {
   events: new Map(), game: null, mode: null, home: null, away: null,
   roster: {}, over: {}, seen: new Set(), queue: [], token: 0, pumping: null,
   actors: [], ball: {x: 50, y: MIDY, h: 0, vis: true}, cam: 50, anim: null, flag: null,
-  prevScore: {h: 0, a: 0}, sound: false, voices: true, started: false, speaking: null, field: null
+  prevScore: {h: 0, a: 0}, sound: false, voices: false, started: false, speaking: null, field: null
 };
 
 const $ = id => document.getElementById(id);
@@ -533,17 +572,11 @@ function drawBooth(now){
 
 /* ================= sound ================= */
 const SND = {
-  ctx: null, master: null, crowd: null,
+  ctx: null, master: null,
   init(){
     if (this.ctx) return;
     const C = window.AudioContext || window.webkitAudioContext; if (!C) return;
     const ctx = this.ctx = new C(); this.master = ctx.createGain(); this.master.gain.value = S.sound ? 1 : 0; this.master.connect(ctx.destination);
-    const buf = ctx.createBuffer(1, ctx.sampleRate * 3, ctx.sampleRate), d = buf.getChannelData(0);
-    for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
-    const src = ctx.createBufferSource(); src.buffer = buf; src.loop = true;
-    const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 900; bp.Q.value = 0.6;
-    this.crowd = ctx.createGain(); this.crowd.gain.value = 0.035;
-    src.connect(bp).connect(this.crowd).connect(this.master); src.start();
   },
   setOn(on){ if (this.master) this.master.gain.setTargetAtTime(on ? 1 : 0, this.ctx.currentTime, 0.05); },
   tone(type, f, t0, dur, vol, f2){
@@ -554,17 +587,13 @@ const SND = {
   },
   whistle(){ this.tone('square', 2900, 0, 0.12, 0.05); this.tone('square', 2700, 0.14, 0.32, 0.05); },
   thump(){ this.tone('triangle', 160, 0, 0.18, 0.4, 50); },
-  roar(level = 0.18, secs = 2.5){
-    if (!this.crowd) return; const t = this.ctx.currentTime, g = this.crowd.gain;
-    g.cancelScheduledValues(t); g.setValueAtTime(g.value, t); g.linearRampToValueAtTime(level, t + 0.3); g.linearRampToValueAtTime(0.035, t + secs);
-  },
   fanfare(){ [523, 659, 784, 1046].forEach((f, i) => this.tone('square', f, i * 0.13, 0.22, 0.06)); this.tone('square', 1046, 0.55, 0.5, 0.06); },
   groan(){ this.tone('sawtooth', 220, 0, 0.6, 0.04, 140); }
 };
 function sfx(name){
   if (!S.started) return;
   if (name === 'whistle') SND.whistle(); else if (name === 'kick') SND.thump();
-  else if (name === 'roar') SND.roar(0.2, 2.5); else if (name === 'td') { SND.fanfare(); SND.roar(0.3, 4); }
+  else if (name === 'td') SND.fanfare(); // no crowd noise (Chris, 2026-10-05), so 'roar' plays nothing
   else if (name === 'groan') SND.groan();
 }
 
@@ -1622,10 +1651,30 @@ function showIdle(){
 }
 
 /* ================= boot ================= */
-$('btn-sound').onclick = e => { S.sound = !S.sound; e.currentTarget.setAttribute('aria-pressed', String(S.sound)); SND.setOn(S.sound); };
-$('btn-voice').onclick = e => { S.voices = !S.voices; e.currentTarget.setAttribute('aria-pressed', String(S.voices)); if (!S.voices && window.speechSynthesis) speechSynthesis.cancel(); };
+// SOUND cycles like the newsroom's button: off, blips (game sounds), voices (blips and announcers)
+const SOUND_MODES = ['off', 'blips', 'voices'];
+function setSound(m){
+  S.sound = m !== 'off'; S.voices = m === 'voices';
+  const b = $('btn-sound'); b.textContent = 'SOUND: ' + m.toUpperCase(); b.classList.toggle('on', S.sound);
+  if (S.sound) SND.init(); SND.setOn(S.sound);
+  if (!S.voices && window.speechSynthesis) speechSynthesis.cancel();
+}
+const soundMode = () => S.voices ? 'voices' : S.sound ? 'blips' : 'off';
+$('btn-sound').onclick = () => setSound(SOUND_MODES[(SOUND_MODES.indexOf(soundMode()) + 1) % 3]);
+function setTheater(on){
+  $('stage').classList.toggle('theater', on); document.body.classList.toggle('theater-on', on);
+  $('fs').textContent = on ? 'EXIT FULL SCREEN' : 'FULL SCREEN';
+}
+$('fs').onclick = async () => {
+  if ($('stage').classList.contains('theater')) { setTheater(false); try { if (document.fullscreenElement) await document.exitFullscreen(); } catch (e) {} return; }
+  setTheater(true);
+  try { if (document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen(); } catch (e) {}
+};
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('stage').classList.contains('theater') && !document.fullscreenElement) setTheater(false); });
+document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && $('stage').classList.contains('theater')) setTheater(false); });
 $('btn-start').onclick = () => {
   S.started = true; SND.init(); $('start').hidden = true;
+  if (soundMode() === 'off') setSound('voices');
   if (window.speechSynthesis) { pickVoices(); const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u); }
   if (!S.game) { const {live} = sortedGames(); if (live[0]) selectGame(String(live[0].id), 'live'); else if (S.events.size) showIdle(); }
   else if (S.mode === 'live') say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
