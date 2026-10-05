@@ -1,0 +1,33 @@
+{
+  "_about": "Chris's approved news sources (2026-10-05). The Fetch news sources GitHub Action reads ONLY these URLs (plus article links on the same sites) and saves them to the feeds branch for the 3-hour refresh. Add or remove a source only when Chris names it. Never add the Christian Science Monitor.",
+  "national": [
+    {"id": "democracynow", "name": "Democracy Now!", "url": "https://www.democracynow.org/{Y}/{M}/{D}/headlines", "fallbacks": ["https://www.democracynow.org/headlines"], "for": ["world", "national", "politics"]},
+    {"id": "aljazeera", "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/", "for": ["world", "international"]},
+    {"id": "pbs", "name": "PBS NewsHour", "url": "https://www.pbs.org/newshour/", "for": ["national", "politics"]},
+    {"id": "propublica", "name": "ProPublica", "url": "https://www.propublica.org/feeds/propublica/main", "for": ["national", "politics"]},
+    {"id": "marketplace", "name": "Marketplace", "url": "https://www.marketplace.org/", "for": ["business"]},
+    {"id": "npr-business", "name": "NPR Business", "url": "https://www.npr.org/sections/business/", "for": ["business"]},
+    {"id": "sciencenews", "name": "Science News", "url": "https://www.sciencenews.org/", "for": ["science"]},
+    {"id": "cbssports", "name": "CBS Sports", "url": "https://www.cbssports.com/", "for": ["sports"]}
+  ],
+  "local": {
+    "new-york-city": {"name": "Gothamist", "url": "https://tollbit.gothamist.com/feed", "fallbacks": ["https://gothamist.com/feed", "https://gothamist.com/news"]},
+    "los-angeles-ca": {"name": "LAist", "url": "https://laist.com/index.atom"},
+    "chicago-il": {"name": "WBEZ", "url": "https://www.wbez.org/news"},
+    "seattle-wa": {"name": "KUOW", "url": "https://www.kuow.org/latest"},
+    "atlanta-ga": {"name": "WABE", "url": "https://www.wabe.org/category/news/feed/"},
+    "denver-co": {"name": "Denverite", "url": "https://denverite.com/feed/"},
+    "boston-ma": {"name": "WBUR", "url": "https://www.wbur.org/news"},
+    "paris-france": {"name": "The Local France", "url": "https://www.thelocal.fr/"}
+  },
+  "weather": {
+    "paris-france": {"name": "Météo-France", "url": "https://meteofrance.com/previsions-meteo-france/paris/75000"}
+  },
+  "_weather_us": "US desks use the National Weather Service MapClick URL already in their sources in data/locals.json (fetched in JSON form).",
+  "allowed_hosts": [
+    "www.democracynow.org", "www.aljazeera.com", "www.pbs.org", "www.propublica.org", "www.marketplace.org",
+    "www.npr.org", "www.sciencenews.org", "www.cbssports.com", "tollbit.gothamist.com", "gothamist.com", "laist.com",
+    "www.wbez.org", "www.kuow.org", "www.wabe.org", "denverite.com", "www.wbur.org", "www.thelocal.fr",
+    "forecast.weather.gov", "meteofrance.com"
+  ]
+}

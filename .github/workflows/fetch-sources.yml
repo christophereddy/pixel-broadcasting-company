@@ -1,26 +1,42 @@
-# Saves Chris's approved news sources (tools/sources.txt) to the `feeds` branch shortly before each 3-hour
-# news refresh, so the refresh reads them from GitHub instead of fetching news sites itself.
-# The `feeds` branch holds one commit that is replaced on every run. It never touches main or the site.
+# Fetches Chris's approved news sources (tools/sources.json) every hour and saves them to the
+# feeds branch, so the 3-hour news refresh reads them from the repo instead of fetching
+# sites itself (which asked Chris to approve every site). The branch holds one commit, replaced each run.
 name: Fetch news sources
+
 on:
   schedule:
-    - cron: '45 * * * *'  # hourly at :45 UTC, so a fresh copy is always under an hour old at refresh time
+    - cron: '35 * * * *'   # every hour at :35, so each refresh (:05 past 12/3/6/9 ET) reads a copy under an hour old
   workflow_dispatch:
+  pull_request:            # dry run on changes to the fetcher: fetch everything, publish nothing
+    paths:
+      - 'tools/fetch_sources.py'
+      - 'tools/sources.json'
+      - '.github/workflows/fetch-sources.yml'
+
 permissions:
   contents: write
-concurrency: fetch-sources
+
+concurrency:
+  group: fetch-sources
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/fetch_sources.py out
-      - name: Replace the feeds branch with this run's copy
+      - name: Fetch approved sources
+        run: python3 tools/fetch_sources.py "$RUNNER_TEMP/feeds"
+      - name: Show what came back
+        run: python3 -c "import json,sys; i=json.load(open(sys.argv[1])); [print('ok    ', o['id'], o['url'], 'items', o.get('items',''), 'articles', o.get('articles',''), o.get('note','')) for o in i['ok']]; [print('FAILED', f['id'], f.get('error','')) for f in i['failed']]" "$RUNNER_TEMP/feeds/index.json"
+      - name: Publish to the feeds branch
+        if: github.event_name != 'pull_request'
         run: |
-          cd out
+          cd "$RUNNER_TEMP/feeds"
           git init -q -b feeds
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -q -m "Sources fetched $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" feeds
+          git commit -q -m "News sources fetched $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" feeds
