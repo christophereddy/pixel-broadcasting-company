@@ -12,7 +12,7 @@ Schedule: routine trig_015dGokHMd1Msk935koiC35z runs at midnight Eastern and eve
 
 ## Steps
 
-1. Gather fresh, dated items with WebFetch (the sandbox blocks curl to news sites). Do the fetches in the refresh thread's own session, not in helper agents: WebFetch only opens sites whose URLs Chris has pasted into that thread. If fetches fail with a request to include the URL in a message, ask Chris once to re-paste his source list.
+1. Read the saved sources first. The "Fetch news sources" GitHub Action saves every approved source in `tools/sources.txt` (plus each city's NWS page) to the repo's `feeds` branch every hour at :45 UTC: `git clone --depth 1 -b feeds https://github.com/christophereddy/pixel-broadcasting-company feeds`, then read `feeds/index.json` (status and fetch time per source) and the `.txt` files it names. Feeds come out as TITLE/DATE/LINK/SUMMARY blocks, pages as text with links. Scheduled refreshes can't open news sites without Chris approving each one (the site check only honors URLs in the message that started the turn, and a routine's message carries none), so build the refresh from these copies. Use WebFetch only for a source whose saved copy failed or is older than 3 hours, or to open an article for detail, and only in the refresh thread's own session, never in helper agents. If that prompts, skip it and keep the source's previous stories while they are still within the age limits. Sources and their notes:
    - World, national and politics: `https://www.democracynow.org/YYYY/M/D/headlines` (today's US date, or yesterday's if today's page isn't up).
    - World and international (dated, wide foreign coverage): `https://www.aljazeera.com/news/`.
    - National and politics (dated): `https://www.pbs.org/newshour/`.

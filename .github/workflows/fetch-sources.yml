@@ -1,0 +1,26 @@
+# Saves Chris's approved news sources (tools/sources.txt) to the `feeds` branch shortly before each 3-hour
+# news refresh, so the refresh reads them from GitHub instead of fetching news sites itself.
+# The `feeds` branch holds one commit that is replaced on every run. It never touches main or the site.
+name: Fetch news sources
+on:
+  schedule:
+    - cron: '45 * * * *'  # hourly at :45 UTC, so a fresh copy is always under an hour old at refresh time
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: fetch-sources
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/fetch_sources.py out
+      - name: Replace the feeds branch with this run's copy
+        run: |
+          cd out
+          git init -q -b feeds
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -q -m "Sources fetched $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" feeds
