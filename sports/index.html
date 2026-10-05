@@ -333,26 +333,55 @@ async function loadScoreboard(){
   return true;
 }
 
-// ESPN's MLB scoreboard sometimes lists only placeholder "TBD @ TBD" games (seen in the 2026 playoffs) while
-// each team's schedule has the real ones. When that happens, fill the list from the team schedules.
+// ESPN's MLB scoreboard sometimes lists only placeholder "TBD @ TBD" games (seen in the 2026 playoffs), and the team
+// schedules can miss upcoming games too. ESPN's event index (sports.core.api.espn.com) still lists every game, so when
+// the scoreboard has no real upcoming games the list is rebuilt from that index, falling back to the team schedules.
 const realGame = ev => { const c = ev.competitions?.[0]?.competitors || []; return c.length === 2 && c.every(x => x.team?.abbreviation && x.team.abbreviation !== 'TBD'); };
+const CORE_MLB = 'https://sports.core.api.espn.com/v2/sports/baseball/leagues/mlb';
+const https = u => String(u || '').replace(/^http:/, 'https:');
+async function inBatches(items, n, fn){ const out = []; for (let i = 0; i < items.length; i += n) out.push(...await Promise.allSettled(items.slice(i, i + n).map(fn))); return out; }
+// one game from the event index, shaped like a scoreboard event so the rest of the page can use it
+async function coreGame(ref, byId){
+  const e = await getJSON(https(ref)), c = e.competitions?.[0]; if (!c) return null;
+  const st = c.status?.type ? c.status : await getJSON(https(c.status.$ref));
+  const live = st.type?.state && st.type.state !== 'pre';
+  const comps = await Promise.all((c.competitors || []).map(async x => {
+    const id = String(x.id || (/teams\/(\d+)/.exec(x.team?.$ref || '') || [])[1]);
+    let score = '';
+    if (live && x.score?.$ref) { const sc = await getJSON(https(x.score.$ref)).catch(() => null); score = sc ? (sc.displayValue ?? String(sc.value ?? '')) : ''; }
+    return {homeAway: x.homeAway, team: {...(byId[id] || {id})}, score};
+  }));
+  return {id: String(e.id), date: e.date, name: e.name, shortName: e.shortName, status: st, competitions: [{competitors: comps, venue: c.venue?.fullName ? {fullName: c.venue.fullName} : undefined, notes: c.notes, status: st}]};
+}
 async function mlbScheduleFallback(earlier, later){
   const evs = [...S.events.values()], broken = !evs.some(e => stateOf(e) === 'pre' && realGame(e)) || !evs.every(realGame);
   for (const [id, ev] of S.events) if (!realGame(ev)) S.events.delete(id);
+  for (const [id, ev] of Object.entries(S.fbGames || {})) if (!S.events.has(id)) S.events.set(id, ev); // keep what the last rebuild found
   if (!broken || (S.fbAt && Date.now() - S.fbAt < 5 * 60e3)) return;
-  S.fbAt = Date.now();
+  S.fbAt = Date.now(); S.fbGames ||= {};
+  const sport = S.sport, keep = ev => { if (ev && realGame(ev)) { S.fbGames[ev.id] = ev; S.events.set(ev.id, ev); } };
   try {
     const meta = S.mlbTeams || (S.mlbTeams = (await getJSON(API + '/teams')).sports[0].leagues[0].teams.map(x => x.team));
-    const byId = Object.fromEntries(meta.map(t => [String(t.id), t])), sport = S.sport;
-    const scheds = [];
-    for (let i = 0; i < meta.length; i += 6) scheds.push(...await Promise.allSettled(meta.slice(i, i + 6).map(t => getJSON(`${API}/teams/${t.id}/schedule`))));
+    const byId = Object.fromEntries(meta.map(t => [String(t.id), t]));
+    let got = 0;
+    try {
+      const list = await getJSON(`${CORE_MLB}/events?dates=${ymd(earlier)}-${ymd(later)}&limit=100`);
+      // finished games never change, so only unfinished ones are fetched again
+      const refs = (list.items || []).map(x => x.$ref).filter(r => { const id = (/events\/(\d+)/.exec(r) || [])[1]; return !(S.fbGames[id] && stateOf(S.fbGames[id]) === 'post'); });
+      const res = await inBatches(refs, 6, r => coreGame(r, byId));
+      if (sport !== S.sport) return;
+      for (const r of res) if (r.status === 'fulfilled' && r.value) { keep(r.value); got++; }
+      got += Object.keys(S.fbGames).length;
+    } catch (e) { /* the event index could not be read; try the team schedules */ }
+    if (got) return;
+    const scheds = await inBatches(meta, 6, t => getJSON(`${API}/teams/${t.id}/schedule`));
     if (sport !== S.sport) return;
     for (const r of scheds) if (r.status === 'fulfilled') for (const ev of r.value.events || []) {
       const d = new Date(ev.date); if (!(d >= earlier && d <= later)) continue;
       const c = ev.competitions?.[0]; if (!c) continue;
-      ev.status ||= c.status;
+      ev.status ||= c.status; ev.id = String(ev.id);
       for (const x of c.competitors || []) { x.team = {...(byId[String(x.team?.id || x.id)] || {}), ...(x.team || {})}; if (x.score && typeof x.score === 'object') x.score = x.score.displayValue ?? String(x.score.value ?? ''); }
-      if (realGame(ev)) S.events.set(String(ev.id), ev);
+      keep(ev);
     }
   } catch (e) { /* keep whatever the scoreboard gave */ }
 }
