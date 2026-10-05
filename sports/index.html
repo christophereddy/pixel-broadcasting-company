@@ -574,10 +574,13 @@ function drawFlag(g, t){
 const booth = $('booth').getContext('2d'); booth.imageSmoothingEnabled = false;
 function drawAnnouncer(g, ox, c, talking, mouthOpen, blink){
   const r = (x, y, w, h, col) => { g.fillStyle = col; g.fillRect(ox + x, y, w, h); };
-  r(4, 24, 28, 14, c.jacket); r(15, 24, 6, 14, '#f2f0e8'); r(17, 25, 2, 9, c.tie);
+  if (c.longHair) r(8, 6, 20, 19, c.hair); // hair falls behind the shoulders
+  r(4, 24, 28, 14, c.jacket); r(15, 24, 6, 14, c.shirt || '#f2f0e8'); if (c.tie) r(17, 25, 2, 9, c.tie);
   r(14, 20, 8, 5, c.skin);
   r(10, 6, 16, 15, c.skin); r(9, 11, 1, 4, c.skin); r(26, 11, 1, 4, c.skin);
-  if (c.bald) { r(10, 6, 16, 2, c.skin); r(9, 7, 2, 6, c.hair); r(25, 7, 2, 6, c.hair); }
+  if (c.cap) { r(9, 7, 2, 5, c.hair); r(25, 7, 2, 5, c.hair); r(10, 3, 16, 5, c.cap); r(10, 8, 16, 1, c.capBrim); r(17, 4, 2, 2, c.capLogo); }
+  else if (c.bald) { r(10, 6, 16, 2, c.skin); r(9, 7, 2, 6, c.hair); r(25, 7, 2, 6, c.hair); }
+  else if (c.longHair) { r(10, 4, 16, 4, c.hair); r(9, 5, 2, 12, c.hair); r(25, 5, 2, 12, c.hair); r(18, 7, 8, 2, c.hair); r(9, 15, 1, 2, '#f7c948'); }
   else { r(10, 4, 16, 4, c.hair); r(9, 5, 2, 6, c.hair); r(25, 5, 2, 6, c.hair); r(12, 8, 6, 1, c.hair); }
   r(12, 11, 4, 1, c.brow); r(20, 11, 4, 1, c.brow);
   r(13, 13, 2, blink ? 1 : 2, '#1a1a24'); r(21, 13, 2, blink ? 1 : 2, '#1a1a24');
@@ -587,16 +590,28 @@ function drawAnnouncer(g, ox, c, talking, mouthOpen, blink){
   r(9, 3, 18, 1, '#2a2a33'); r(7, 10, 3, 6, '#2a2a33'); r(26, 10, 3, 6, '#2a2a33');
   r(10, 17, 4, 1, '#2a2a33'); r(13, 16, 2, 2, '#111');
 }
-const ANN = {
-  A: {jacket: '#1f3c88', tie: '#c0392b', skin: '#e0ac69', hair: '#5a3825', brow: '#3b2416'},
-  B: {jacket: '#7a2533', tie: '#f7c948', skin: '#8d5524', hair: '#d8d8d8', brow: '#d8d8d8', bald: true, stache: true, glasses: true}
+// each sport has its own booth: Chip and Duke are football people, baseball gets Nina and Gus
+const CAST = {
+  nfl: {
+    A: {name: 'CHIP RIVERS', tag: 'CHIP', look: {jacket: '#1f3c88', tie: '#c0392b', skin: '#e0ac69', hair: '#5a3825', brow: '#3b2416'}},
+    B: {name: 'DUKE HAMMOND', tag: 'DUKE', look: {jacket: '#7a2533', tie: '#f7c948', skin: '#8d5524', hair: '#d8d8d8', brow: '#d8d8d8', bald: true, stache: true, glasses: true}}
+  },
+  mlb: {
+    // Nina Alvarez calls the play-by-play; Gus Petrakis caught for fifteen years before moving upstairs
+    A: {name: 'NINA ALVAREZ', tag: 'NINA', look: {jacket: '#1d6b5a', shirt: '#f2e6d8', skin: '#c68642', hair: '#2b1a12', brow: '#2b1a12', longHair: true}},
+    B: {name: 'GUS PETRAKIS', tag: 'GUS', look: {jacket: '#3a3f4f', tie: '#c0392b', skin: '#f1c27d', hair: '#a8a8a8', brow: '#8a8a8a', stache: true, cap: '#1b2a4a', capBrim: '#121c33', capLogo: '#f2f0e8'}}
+  }
 };
+const crew = () => CAST[S.sport] || CAST.nfl;
+const tag = who => crew()[who].tag + ': ';
 function drawBooth(now){
   const g = booth; g.fillStyle = '#24305e'; g.fillRect(0, 0, 76, 38);
   g.fillStyle = '#2f3d78'; for (let x = 0; x < 76; x += 8) g.fillRect(x, 0, 4, 22);
   const mouth = Math.floor(now / 120) % 2 === 0, blink = (now % 4200) < 140;
-  drawAnnouncer(g, 1, ANN.A, S.speaking === 'A', mouth, blink);
-  drawAnnouncer(g, 40, ANN.B, S.speaking === 'B', mouth, (now + 1700) % 5100 < 140);
+  const cr = crew();
+  drawAnnouncer(g, 1, cr.A.look, S.speaking === 'A', mouth, blink);
+  drawAnnouncer(g, 40, cr.B.look, S.speaking === 'B', mouth, (now + 1700) % 5100 < 140);
+  if ($('nameA').textContent !== cr.A.name) { $('nameA').textContent = cr.A.name; $('nameB').textContent = cr.B.name; }
   g.fillStyle = '#5b3a1e'; g.fillRect(0, 33, 76, 5); g.fillStyle = '#7d5230'; g.fillRect(0, 33, 76, 1);
   $('nameA').className = S.speaking === 'A' ? 'on' : ''; $('nameB').className = S.speaking === 'B' ? 'on' : '';
 }
@@ -632,26 +647,33 @@ function sfx(name){
 }
 
 /* ================= voices ================= */
-let VOICES = {A: null, B: null};
+let VOICES = {nfl: {A: null, B: null}, mlb: {A: null, B: null}};
+const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}}; // [pitch, rate]
 function pickVoices(){
   const vs = (window.speechSynthesis?.getVoices() || []).filter(v => /^en(-|_|$)/i.test(v.lang));
   if (!vs.length) return;
   const pref = (re) => vs.find(v => re.test(v.name));
-  VOICES.A = pref(/Google US English|Daniel|Alex|Guy|David|Aaron/i) || vs[0];
-  VOICES.B = vs.find(v => v !== VOICES.A && /UK English Male|Fred|Mark|Tom|Arthur|Ryan|Christopher|Male/i.test(v.name)) || vs.find(v => v !== VOICES.A) || VOICES.A;
+  const A = pref(/Google US English|Daniel|Alex|Guy|David|Aaron/i) || vs[0];
+  const B = vs.find(v => v !== A && /UK English Male|Fred|Mark|Tom|Arthur|Ryan|Christopher|Male/i.test(v.name)) || vs.find(v => v !== A) || A;
+  VOICES.nfl = {A, B};
+  // baseball: a woman's voice for Nina where the device has one, and a male voice that is not Chip's or Duke's for Gus
+  const nina = pref(/Samantha|Ava|Allison|Susan|Zira|Jenny|Aria|Karen|Moira|Tessa|Serena|Victoria|Female|Google UK English Female/i) || B;
+  const gus = vs.find(v => v !== A && v !== B && v !== nina && /Fred|Ralph|Eddy|Reed|Rocko|Guy|Eric|Lee|Oliver|Male|David|Daniel|Alex|Aaron/i.test(v.name)) || vs.find(v => v !== nina) || A;
+  VOICES.mlb = {A: nina, B: gus};
 }
 if (window.speechSynthesis) { pickVoices(); speechSynthesis.onvoiceschanged = pickVoices; }
 
 function say(who, text, tok, cap){
-  $('caption').textContent = cap || (who === 'A' ? 'CHIP: ' : 'DUKE: ') + text;
+  $('caption').textContent = cap || tag(who) + text;
   if (!S.voices || !window.speechSynthesis || !S.started) {
     S.speaking = who;
     return sleep(Math.min(5200, 900 + text.length * 38)).then(() => { if (S.speaking === who) S.speaking = null; });
   }
   return new Promise(res => {
     const u = new SpeechSynthesisUtterance(text);
-    if (VOICES[who]) u.voice = VOICES[who];
-    u.pitch = who === 'A' ? 1.05 : 0.72; u.rate = who === 'A' ? 1.1 : 0.98; u.volume = 1;
+    const vo = VOICES[S.sport] || VOICES.nfl, st = (VOICE_STYLE[S.sport] || VOICE_STYLE.nfl)[who];
+    if (vo[who]) u.voice = vo[who];
+    u.pitch = st[0]; u.rate = st[1]; u.volume = 1;
     let done = false;
     const fin = () => { if (done) return; done = true; if (S.speaking === who) S.speaking = null; res(); };
     u.onstart = () => { S.speaking = who; };
@@ -1039,8 +1061,59 @@ const DEF_POS = ['P', 'C', '1B', '2B', 'SS', '3B', 'LF', 'CF', 'RF'];
 const BASEW = {first: 1, second: 2, third: 3, home: 4};
 const mcx = x => MB.PLX + x * MB.KX, mcy = y => MB.PLY - y * MB.KY;
 const isMLB = () => S.sport === 'mlb';
-// outfield wall distance in feet by angle from straightaway center: 330 down the lines, 375 in the gaps, 400 to center
-function fenceR(deg){ const a = Math.abs(deg); return a >= 45 ? 330 : a >= 22 ? 330 + (45 - a) / 23 * 45 : 375 + (22 - a) / 22 * 25; }
+// Real outfield walls (posted distances from each park's Wikipedia infobox, checked 2026-10-05).
+// f: [left field line, left-center, center, right-center, right field line] in feet (null = not posted);
+// x: extra [angle, feet] points (deep corners and notches); w: wall height in feet, a number or [angle, feet] points.
+// Angles run from -45 (left field line) through 0 (straightaway center) to 45 (right field line).
+const PARKS = {
+  ARI: {name: 'Chase Field', f: [330, 374, 407, 374, 334], x: [[-12, 413], [12, 413]]},
+  ATH: {name: 'Sutter Health Park', f: [330, null, 403, null, 325]},
+  ATL: {name: 'Truist Park', f: [335, 385, 400, 375, 325]},
+  BAL: {name: 'Camden Yards', f: [333, 374, 400, 373, 318]},
+  BOS: {name: 'Fenway Park', f: [310, 379, 390, 380, 302], x: [[10, 420]], w: [[-45, 37], [-17, 37], [-15, 8]]},
+  CHC: {name: 'Wrigley Field', f: [355, 368, 400, 368, 353], w: [[-45, 15], [-36, 11.5], [36, 11.5], [45, 15]]},
+  CHW: {name: 'Rate Field', f: [330, 375, 400, 375, 335]},
+  CIN: {name: 'Great American Ball Park', f: [328, 379, 404, 370, 325]},
+  CLE: {name: 'Progressive Field', f: [325, 370, 400, 375, 325], x: [[6, 410]], w: [[-45, 19], [-8, 19], [-6, 9]]},
+  COL: {name: 'Coors Field', f: [347, 390, 415, 375, 350]},
+  DET: {name: 'Comerica Park', f: [342, 370, 412, 365, 330], w: [[-45, 8], [-8, 8], [-5, 7]]},
+  HOU: {name: 'Daikin Park', f: [315, 366, 409, 370, 326], x: [[-12, 399], [12, 408]], w: [[-45, 19], [-20, 19], [-18, 8]]},
+  KC: {name: 'Kauffman Stadium', f: [330, 379, 410, 379, 330]},
+  LAA: {name: 'Angel Stadium', f: [347, 390, 396, 370, 350], x: [[32, 365]]},
+  LAD: {name: 'Dodger Stadium', f: [330, 375, 400, 375, 330], x: [[-33, 360], [33, 360]]},
+  MIA: {name: 'loanDepot park', f: [344, 386, 400, 387, 335]},
+  MIL: {name: 'American Family Field', f: [342, 371, 400, 374, 337]},
+  MIN: {name: 'Target Field', f: [339, 377, null, 367, 328], x: [[-4, 411], [4, 403]]},
+  NYM: {name: 'Citi Field', f: [335, 358, 408, 375, 330], x: [[-12, 385], [12, 398]]},
+  NYY: {name: 'Yankee Stadium', f: [318, 399, 408, 385, 314]},
+  PHI: {name: 'Citizens Bank Park', f: [329, 381, 401, 369, 330], x: [[-13, 409]]},
+  PIT: {name: 'PNC Park', f: [325, 383, 399, 375, 320], w: [[-45, 6], [-18, 6], [-6, 10], [8, 10], [20, 21], [45, 21]]},
+  SD: {name: 'Petco Park', f: [336, 390, 396, 391, 331], x: [[-35, 343], [34, 382]]},
+  SF: {name: 'Oracle Park', f: [339, 399, 391, 415, 309], x: [[33, 365]], w: [[-45, 8], [-18, 8], [-6, 7], [0, 10], [6, 7], [16, 20], [30, 24], [45, 24]]},
+  SEA: {name: 'T-Mobile Park', f: [331, 378, 401, 381, 326]},
+  STL: {name: 'Busch Stadium', f: [336, 375, 400, 375, 335]},
+  TB: {name: 'Tropicana Field', f: [315, 370, 404, 370, 322]},
+  TEX: {name: 'Globe Life Field', f: [329, 372, 407, 374, 326]},
+  TOR: {name: 'Rogers Centre', f: [328, 368, 400, 359, 328]},
+  WSH: {name: 'Nationals Park', f: [337, 377, 402, 370, 335]}
+};
+PARKS.OAK = PARKS.ATH; PARKS.WSN = PARKS.WSH; PARKS.CWS = PARKS.CHW; PARKS.KCR = PARKS.KC; PARKS.SDP = PARKS.SD; PARKS.SFG = PARKS.SF; PARKS.TBR = PARKS.TB;
+const PARK_GENERIC = {name: '', f: [330, 375, 400, 375, 330]};
+const ptsOf = park => [...[-45, -22, 0, 22, 45].map((d, i) => [d, park.f[i]]).filter(q => q[1] != null), ...(park.x || [])].sort((a, b) => a[0] - b[0]);
+const lerpPts = (pts, deg) => {
+  if (deg <= pts[0][0]) return pts[0][1];
+  for (let i = 1; i < pts.length; i++) if (deg <= pts[i][0]) { const [d0, v0] = pts[i - 1], [d1, v1] = pts[i]; return v0 + (v1 - v0) * (deg - d0) / (d1 - d0); }
+  return pts[pts.length - 1][1];
+};
+// pick the park: the venue's name first (it catches neutral-site games), else the home team's park
+function setPark(venue){
+  const v = (venue || '').toLowerCase();
+  const pk = Object.values(PARKS).find(k => v.includes(k.name.toLowerCase())) || PARKS[(S.home?.abbr || '').toUpperCase()] || PARK_GENERIC;
+  S.park = {...pk, pts: ptsOf(pk), wall: Array.isArray(pk.w) ? pk.w : [[-45, pk.w || 8], [45, pk.w || 8]]};
+}
+// outfield wall distance (feet) and height (feet) by angle from straightaway center
+function fenceR(deg){ return lerpPts((S.park || (S.park = {pts: ptsOf(PARK_GENERIC)})).pts, Math.max(-45, Math.min(45, deg))); }
+const wallH = deg => S.park?.wall ? lerpPts(S.park.wall, deg) : 8;
 const polar = (deg, r) => [r * Math.sin(deg * Math.PI / 180), r * Math.cos(deg * Math.PI / 180)];
 // the home team's dugout is on the third-base side, the visitors' on the first-base side
 const dugoutOf = team => team === S.home ? [-105, 22] : [105, 22];
@@ -1091,20 +1164,22 @@ function buildDiamond(){
   g.restore();
   // foul lines, chalk boxes, bases
   g.fillStyle = '#f4f4ee';
-  for (const s of [-1, 1]) for (let r = 4; r < 330; r += 0.6) { const [x, y] = polar(45 * s, r); g.fillRect(Math.round(mcx(x)), Math.round(mcy(y)), 1, 1); }
+  for (const s of [-1, 1]) for (let r = 4; r < fenceR(45 * s); r += 0.6) { const [x, y] = polar(45 * s, r); g.fillRect(Math.round(mcx(x)), Math.round(mcy(y)), 1, 1); }
   for (const s of [-1, 1]) { const x0 = mcx(s * 3.5), x1 = mcx(s * 7.5); g.fillRect(Math.min(x0, x1), mcy(3), Math.abs(x1 - x0), 1); g.fillRect(Math.min(x0, x1), mcy(-3), Math.abs(x1 - x0), 1); g.fillRect(x0, mcy(3), 1, 5); g.fillRect(x1, mcy(3), 1, 5); }
   for (const b of [1, 2, 3]) { const [x, y] = P(...BASE[b]); g.fillRect(Math.round(x) - 2, Math.round(y) - 1, 4, 3); }
   g.fillRect(mcx(0) - 2, mcy(0) - 1, 5, 2); g.fillRect(mcx(0) - 1, mcy(0) + 1, 3, 1); // home plate
   // the outfield wall, its distance markers and the foul poles
   for (let d = -45; d <= 45; d += 0.2) {
-    const [x, y] = P(...polar(d, fenceR(d)));
-    g.fillStyle = '#124a2a'; g.fillRect(Math.round(x), Math.round(y) - 12, 2, 12);
-    g.fillStyle = '#f7d038'; g.fillRect(Math.round(x), Math.round(y) - 13, 2, 1);
+    const [x, y] = P(...polar(d, fenceR(d))), hp = Math.round(6 + wallH(d) * 0.75);
+    g.fillStyle = '#124a2a'; g.fillRect(Math.round(x), Math.round(y) - hp, 2, hp);
+    g.fillStyle = '#f7d038'; g.fillRect(Math.round(x), Math.round(y) - hp - 1, 2, 1);
   }
   g.font = '8px "Press Start 2P"'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#f4f4ee';
-  for (const d of [-45, -22, 0, 22, 45]) { const [x, y] = P(...polar(d * 0.97, fenceR(d))); g.fillText(String(Math.round(fenceR(d))), x, y - 6); }
+  // posted distances on the wall, as the park shows them
+  for (const [d, ft] of S.park.pts) { const [x, y] = P(...polar(d * 0.97, fenceR(d))); g.fillText(String(Math.round(ft)), x, y - 6); }
   g.fillStyle = '#f7d038';
-  for (const s of [-1, 1]) { const [x, y] = P(...polar(45 * s, 330)); g.fillRect(Math.round(x), Math.round(y) - 46, 2, 46); }
+  for (const s of [-1, 1]) { const [x, y] = P(...polar(45 * s, fenceR(45 * s))); g.fillRect(Math.round(x), Math.round(y) - 46, 2, 46); }
+  if (S.park.name) { g.fillStyle = '#f4f4ee'; g.fillText(S.park.name.toUpperCase(), mcx(0), 8); }
   // dugouts in team colors
   for (const t of [S.home, S.away]) {
     const [dx, dy] = dugoutOf(t), x = mcx(dx), y = mcy(dy);
@@ -1551,10 +1626,10 @@ const LINES_MLB = {
   triple: ['Into the corner, and he is flying around second! Triple!', 'Three bases! The rarest hit in baseball, folks.', 'Look at those wheels! Stand-up triple for {player}.'],
   double: ['Into the gap! That is a double.', 'Off the wall! Two bases for {player}.', 'Ripped down the line, and he cruises into second.', 'Extra bases for {bat}! Nice piece of hitting.', 'Split the outfielders. Easy double.'],
   single: ['Base hit! {player} is aboard.', 'Seeing-eye single. Found a hole.', 'Line drive single. That is a professional at-bat.', 'Base knock! {bat} has a runner.', 'He just put it where they are not.', 'Took what the pitcher gave him. Nice hitting.'],
-  walk: ['Ball four. Take your base.', 'Good eye at the plate. He earned that walk.', 'The pitcher could not find the zone.', 'A free pass. Those always seem to come around to score.'],
+  walk: ['As a catcher you can only frame so many of those. Ball four.', 'Ball four. Take your base.', 'Good eye at the plate. He earned that walk.', 'The pitcher could not find the zone.', 'A free pass. Those always seem to come around to score.'],
   ibb: ['Intentional walk. They will take their chances with the next guy.', 'Four wide ones. Put him on and set up the force.'],
   hbp: ['Ouch! He wears one.', 'Plunked! That one is going to leave a bruise.', 'Hit by the pitch. Take your base, and some ice.'],
-  k: ['Strike three! Sit down!', 'Struck him out! Nasty stuff.', 'Punch out! The pitcher wins that battle.', 'He had no chance on that one.', 'Fanned him! That is a big strikeout.'],
+  k: ['Fifteen years behind the plate taught me this: you set him up, then you put him away.', 'Strike three! Sit down!', 'Struck him out! Nasty stuff.', 'Punch out! The pitcher wins that battle.', 'He had no chance on that one.', 'Fanned him! That is a big strikeout.'],
   kl: ['Caught looking! He froze him.', 'Strike three called! He thought it was a ball. The umpire did not.', 'Painted the corner, and he never moved the bat.'],
   groundout: ['Routine grounder, and they get him at first.', 'Easy play for the infield.', 'Pounded into the ground. That is an out.', 'Smooth work by the {fld} infield.'],
   flyout: ['Lazy fly ball, and it is caught.', 'Can of corn.', 'Under it, and that is an out.', 'He got under that one. Not enough on it.'],
@@ -1564,7 +1639,7 @@ const LINES_MLB = {
   fc: ['Fielder\'s choice. They take the lead runner.', 'They get the force, but the batter is aboard.'],
   error: ['Oh, he booted it! Error.', 'That one goes in the box score as an error.', 'Kicked it! The {fld} defense gives them a gift.'],
   sac: ['Sacrifice. Doing the little things right.', 'Productive out. That is how you play the game.', 'Unselfish at-bat. He gave himself up for the team.'],
-  sb: ['He stole it! Great jump.', 'Safe! He had that base stolen all the way.', 'Swiped the bag! The catcher had no chance.'],
+  sb: ['I used to hate seeing that jump from behind the plate. No throw was beating him.', 'He stole it! Great jump.', 'Safe! He had that base stolen all the way.', 'Swiped the bag! The catcher had no chance.'],
   cs: ['Thrown out! What an arm on that catcher!', 'Caught stealing! Gunned down at the bag.', 'Out! Perfect throw, perfect tag.'],
   pickoff: ['Picked off! Caught leaning the wrong way.', 'The pitcher catches him napping! Picked off!'],
   wp: ['Ball gets away, and the runners move up.', 'In the dirt and away! Free base.', 'The catcher could not block that one.'],
@@ -1652,7 +1727,7 @@ async function runPlayMLB(p, fast, tok){
   if (o.kind === 'pitch') {
     const call = pitchCall(p, o), info = pitchInfo(p), busy = S.mode === 'live' && S.queue.length > 2;
     if (call) {
-      const cap = 'CHIP: ' + call + (info ? ` (${info})` : '');
+      const cap = tag('A') + call + (info ? ` (${info})` : '');
       if (busy) $('caption').textContent = cap; else await say('A', call, tok, cap);
     }
     if (tok !== S.token) return;
@@ -1927,7 +2002,7 @@ async function pump(){
   if (S.pumping === tok) S.pumping = null;
   if (tok === S.token && S.mode === 'replay' && !S.queue.length && S.replayDone === false) {
     S.replayDone = true; if (S.rp) { S.ri = S.rp.plays.length; updateTimeline(); }
-    $('caption').textContent = 'DUKE: And that is the ballgame! Thanks for watching.';
+    $('caption').textContent = tag('B') + 'And that is the ballgame! Thanks for watching.';
   }
 }
 
@@ -1958,11 +2033,11 @@ async function selectGame(id, mode){
   S.rp = null; S.ri = 0; S.paused = false; $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
   const t = teamsOf(ev); S.home = t.home; S.away = t.away;
   S.home.kit = isMLB() ? kitMLB(S.home, true) : kit(S.home, true); S.away.kit = isMLB() ? kitMLB(S.away, false) : kit(S.away, false);
-  S.lineup = {}; if (isMLB()) mlbReset();
+  S.lineup = {}; if (isMLB()) { setPark(ev.competitions?.[0]?.venue?.fullName); mlbReset(); }
   hideNotice(); hideBanner(); renderList(); setBadge(); setBoard();
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   clearLog('Loading play-by-play...');
-  $('caption').textContent = `CHIP: Welcome to ${S.home.loc}, where the ${S.away.nick} visit the ${S.home.nick}.`;
+  $('caption').textContent = `${tag('A')}Welcome to ${S.home.loc}, where the ${S.away.nick} visit the ${S.home.nick}.`;
   await (document.fonts?.load('8px "Press Start 2P"').catch(() => {}));
   buildField();
   renderGamePanel(); renderDetail();
@@ -1977,7 +2052,7 @@ async function selectGame(id, mode){
     clearLog(`The play-by-play starts at ${start}.`);
     const when = new Date(ev.date).toLocaleString([], {weekday: 'long', hour: 'numeric', minute: '2-digit'});
     $('clock').textContent = when; $('dd').textContent = ev.competitions[0].venue?.fullName || '';
-    $('caption').textContent = `CHIP: ${isMLB() ? 'First pitch' : 'Kickoff'} is ${when}. We will go live the moment it starts.`;
+    $('caption').textContent = `${tag('A')}${isMLB() ? 'First pitch' : 'Kickoff'} is ${when}. We will go live the moment it starts.`;
     return;
   }
   let sum;
@@ -1990,7 +2065,7 @@ async function selectGame(id, mode){
     $('log').innerHTML = '';
     S.queue = plays.slice(); plays.forEach(p => S.seen.add(p.id));
     S.rp = buildReplay(sum, plays); S.ri = 0; renderTimeline();
-    $('caption').textContent = `CHIP: Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : 'opening kick'}!`;
+    $('caption').textContent = `${tag('A')}Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : 'opening kick'}!`;
     await sleep(1200); pump();
   } else {
     $('log').innerHTML = '';
@@ -1999,8 +2074,8 @@ async function selectGame(id, mode){
     for (const p of back) { S.seen.add(p.id); addLog(p); applyState(p, null); }
     if (!plays.length) clearLog(`Waiting for the first ${isMLB() ? 'pitch' : 'snap'}...`);
     restFormation(); if (!isMLB()) S.cam = clamp(S.ball.x, 10, 90);
-    $('caption').textContent = `CHIP: We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`;
-    if (S.started && S.voices) say('A', $('caption').textContent.replace(/^CHIP: /, ''), tok);
+    $('caption').textContent = `${tag('A')}We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`;
+    if (S.started && S.voices) say('A', $('caption').textContent.slice(tag('A').length), tok);
   }
 }
 
@@ -2121,7 +2196,7 @@ function seekTo(i, why){
   if (!before.length) $('clock').textContent = '--';
   restFormation(); if (!R.mlb) S.cam = clamp(S.ball.x, 10, 90);
   S.queue = R.plays.slice(i); S.ri = i; updateTimeline(); renderGamePanel();
-  $('caption').textContent = `CHIP: Taking you to ${why || playLabel(R.plays[i])}${why ? ', ' + playLabel(R.plays[i]) : ''}.`;
+  $('caption').textContent = `${tag('A')}Taking you to ${why || playLabel(R.plays[i])}${why ? ', ' + playLabel(R.plays[i]) : ''}.`;
   setTimeout(() => { if (tok === S.token) pump(); }, 700);
 }
 function stepDrive(dir){
@@ -2500,7 +2575,7 @@ async function switchSport(sp){
   $('tline').hidden = true; hideNotice(); hideBanner(); showErr('');
   clearLog('Pick a game to see its play-by-play here.');
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
-  $('caption').textContent = `CHIP: Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
+  $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
   setBadge(); renderList(); renderGamePanel(); renderDetail();
   await neutralField(); if (sp !== S.sport) return;
   setBoard(); openSport();
