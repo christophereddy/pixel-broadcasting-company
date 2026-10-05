@@ -27,7 +27,7 @@ def get(url):
     req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml,application/xml,application/json;q=0.9,*/*;q=0.8'})
     for attempt in range(2):
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=45) as r:
                 final = r.geturl()
                 if urlparse(final).hostname not in HOSTS:
                     raise ValueError(f'redirected off the approved list: {final}')
@@ -91,8 +91,23 @@ def fresh(iso):
 def strip_tags(s):
     return ' '.join(html.unescape(re.sub(r'<[^>]+>', ' ', s or '')).split())
 
+def parse_feed_loose(body):
+    """Regex fallback for feeds that aren't valid XML (e.g. undeclared namespace prefixes)."""
+    def tag(chunk, *names):
+        for n in names:
+            m = re.search(rf'<{n}\b[^>]*?(?:href="([^"]*)")?[^>]*>(.*?)</{n}>', chunk, re.S) or re.search(rf'<{n}\b[^>]*href="([^"]*)"', chunk)
+            if m:
+                g = m.groups(); v = (g[1] if len(g) > 1 and g[1] else '') or g[0] or ''
+                return re.sub(r'^<!\[CDATA\[|\]\]>$', '', v.strip())
+        return ''
+    items = []
+    for chunk in re.findall(r'<(?:item|entry)\b.*?</(?:item|entry)>', body, re.S):
+        items.append({'title': strip_tags(tag(chunk, 'title')), 'link': tag(chunk, 'link'), 'date': when(tag(chunk, 'pubDate', 'published', 'updated', 'dc:date')), 'summary': strip_tags(tag(chunk, 'description', 'summary', 'content:encoded', 'content'))[:1200]})
+    return items
+
 def parse_feed(body):
-    root = ET.fromstring(body.encode('utf-8'))
+    try: root = ET.fromstring(body.encode('utf-8'))
+    except ET.ParseError: return parse_feed_loose(body)
     items = []
     for it in root.iter():
         tag = it.tag.split('}')[-1]
@@ -153,13 +168,19 @@ def main():
     index = {'fetchedAt': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'), 'ok': [], 'failed': []}
     def save(name, data): json.dump(data, open(f'{OUT}/{name}.json', 'w'), ensure_ascii=False, indent=1)
     def run(key, src, file):
-        urls = list(dn_urls(src)) if '{Y}' in src['url'] else [src['url']]
-        err = ''
+        urls = (list(dn_urls(src)) if '{Y}' in src['url'] else [src['url']]) + src.get('fallbacks', [])
+        err, weak = '', None
         for u in urls:
             try:
-                data = fetch_source({**src, 'url': u}); data['for'] = src.get('for', ['local']); save(file, data)
+                data = fetch_source({**src, 'url': u}); data['for'] = src.get('for', ['local'])
+                if not (data.get('items') or data['articles']):  # nothing usable: try the next URL, keep this as a last resort
+                    weak = weak or (u, data); err = f'{u}: no stories found'; continue
+                save(file, data)
                 index['ok'].append({'id': key, 'file': f'{file}.json', 'url': u, 'items': len(data.get('items', [])), 'articles': len(data['articles'])}); return
             except Exception as e: err = f'{u}: {e}'[:300]
+        if weak:
+            save(file, weak[1])
+            index['ok'].append({'id': key, 'file': f'{file}.json', 'url': weak[0], 'items': 0, 'articles': 0, 'note': 'page text only, no stories found'}); return
         index['failed'].append({'id': key, 'url': src['url'], 'error': err})
     for s in CFG['national']:
         run(s['id'], s, s['id'])

@@ -29,7 +29,7 @@ jobs:
       - name: Fetch approved sources
         run: python3 tools/fetch_sources.py "$RUNNER_TEMP/news-sources"
       - name: Show what came back
-        run: python3 -c "import json,sys; i=json.load(open(sys.argv[1])); [print('ok    ', o['id'], o.get('items',''), o.get('articles','')) for o in i['ok']]; [print('FAILED', f['id'], f.get('error','')) for f in i['failed']]" "$RUNNER_TEMP/news-sources/index.json"
+        run: python3 -c "import json,sys; i=json.load(open(sys.argv[1])); [print('ok    ', o['id'], o['url'], 'items', o.get('items',''), 'articles', o.get('articles',''), o.get('note','')) for o in i['ok']]; [print('FAILED', f['id'], f.get('error','')) for f in i['failed']]" "$RUNNER_TEMP/news-sources/index.json"
       - name: Publish to the news-sources branch
         if: github.event_name != 'pull_request'
         run: |
