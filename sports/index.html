@@ -302,7 +302,8 @@ function teamsOf(ev){
       id: String(t.id || x.id), abbr: t.abbreviation || '???',
       nick: t.shortDisplayName || t.name || t.abbreviation || 'Team',
       loc: t.location || t.displayName || t.abbreviation || 'Team',
-      color: '#' + (t.color || '334477'), alt: '#' + (t.alternateColor || 'ffffff'), score: x.score
+      color: '#' + (t.color || '334477'), alt: '#' + (t.alternateColor || 'ffffff'), score: x.score,
+      logo: t.logo || t.logos?.[0]?.href || ''
     };
   }
   return m;
@@ -1147,6 +1148,18 @@ function kitMLB(team, isHome){
   return {jersey: '#9a9eab', num: lum(c) < 0.45 ? c : (lum(a) < 0.45 ? a : '#22222c'), helmet: c, stripe: a, pants: '#9a9eab'};
 }
 
+// team logos for the dugout signs; the field is redrawn once one arrives
+const LOGOS = {};
+function teamLogo(t){
+  const url = t.logo || `https://a.espncdn.com/i/teamlogos/mlb/500/${String(t.abbr).toLowerCase()}.png`;
+  let im = LOGOS[url];
+  if (!im) {
+    im = LOGOS[url] = new Image();
+    im.onload = () => { if (isMLB() && (S.home === t || S.away === t)) buildField(); };
+    im.src = url;
+  }
+  return im.complete && im.naturalWidth ? im : null;
+}
 function buildDiamond(){
   const c = document.createElement('canvas'); c.width = MB.FW; c.height = MB.FH;
   const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
@@ -1203,11 +1216,22 @@ function buildDiamond(){
   g.fillStyle = '#f7d038';
   for (const s of [-1, 1]) { const [x, y] = P(...polar(45 * s, fenceR(45 * s))); g.fillRect(Math.round(x), Math.round(y) - 46, 2, 46); }
   if (S.park.name) { g.fillStyle = '#f4f4ee'; g.fillText(S.park.name.toUpperCase(), mcx(0), 8); }
-  // dugouts in team colors
+  // dugouts: the team's colors on the roof, its logo, and a HOME / AWAY sign
   for (const t of [S.home, S.away]) {
-    const [dx, dy] = dugoutOf(t), x = mcx(dx), y = mcy(dy);
-    g.fillStyle = '#05060d'; g.fillRect(x - 28, y - 3, 56, 9);
-    g.fillStyle = t.color; g.fillRect(x - 28, y - 5, 56, 3);
+    const [dx, dy] = dugoutOf(t), x = Math.round(mcx(dx)), y = Math.round(mcy(dy));
+    g.fillStyle = '#05060d'; g.fillRect(x - 32, y - 3, 64, 10);                 // the dugout itself
+    g.fillStyle = t.color; g.fillRect(x - 34, y - 8, 68, 6);                    // roof in the team color
+    g.fillStyle = t.alt; g.fillRect(x - 34, y - 2, 68, 1);                      // trim in the second color
+    g.fillStyle = t.color; g.fillRect(x - 32, y + 7, 64, 2);                    // padded rail
+    // sign above the roof
+    g.fillStyle = '#05060d'; g.fillRect(x - 43, y - 22, 86, 13);
+    g.fillStyle = t.color; g.fillRect(x - 42, y - 21, 84, 11);
+    const img = teamLogo(t);
+    if (img) g.drawImage(img, x - 41, y - 21, 11, 11);
+    g.font = '8px "Press Start 2P"'; g.textAlign = 'center'; g.textBaseline = 'middle';
+    const tx = x + (img ? 6 : 0), label = `${t === S.home ? 'HOME' : 'AWAY'} ${t.abbr}`;
+    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, y - 14);
+    g.fillStyle = '#f4f4ee'; g.fillText(label, tx, y - 15);
   }
   S.field = c;
 }
