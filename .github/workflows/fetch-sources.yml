@@ -22,10 +22,10 @@ concurrency:
 
 jobs:
   fetch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned so the ubuntu-latest move to Ubuntu 26 (Oct 19, 2026) does not change it unannounced
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Fetch approved sources
         run: python3 tools/fetch_sources.py "$RUNNER_TEMP/feeds"
       - name: Show what came back
