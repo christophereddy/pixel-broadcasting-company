@@ -18,23 +18,28 @@
   color-scheme:dark;
 }
 html,body{height:auto}
-body{background:var(--room);color:var(--text);font-family:var(--f-body);font-size:20px;line-height:1.25}
-.page{max-width:1120px;margin:0 auto;padding:20px 16px 40px;display:flex;flex-direction:column;gap:16px}
+body{margin:0;background:var(--room);color:var(--text);font-family:var(--f-body);font-size:20px;line-height:1.25}
+.page{max-width:1400px;margin:0 auto;padding:12px 16px 32px;display:grid;gap:12px;grid-template-columns:minmax(0,1fr) 300px;grid-template-areas:"head head" "main side"}
+.top{grid-area:head;display:flex;flex-direction:column;gap:12px;min-width:0}
+.main{grid-area:main;display:flex;flex-direction:column;gap:12px;min-width:0}
+.side{grid-area:side;align-self:start;display:flex;flex-direction:column;gap:12px;min-width:0}
+@media (max-width:900px){.page{grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "main" "side"}}
 .mast{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand>div{min-width:0}
 .mark{font-family:var(--f-label);background:var(--gold);color:var(--navy);padding:6px 8px;font-size:18px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--navy)}
 h1{font-family:var(--f-display);font-weight:700;font-size:clamp(22px,3.4vw,34px);margin:0;line-height:1.05;text-wrap:balance}
 .brand p{margin:2px 0 0;color:var(--muted);font-size:19px}
 .onair{font-family:var(--f-label);font-size:13px;letter-spacing:.08em;color:var(--text);display:flex;align-items:center;gap:8px;border:2px solid var(--line);padding:6px 10px}
 .mastside{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
-.nextref{display:flex;flex-direction:column;align-items:flex-end;border:2px solid var(--line);background:var(--panel);padding:5px 10px;line-height:1.1}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.nextref{box-sizing:border-box;display:flex;align-items:center;gap:10px;height:36px;white-space:nowrap;border:2px solid var(--line);background:var(--panel);padding:5px 12px;line-height:1.1}
 .nlabel{font-family:var(--f-label);font-size:11px;letter-spacing:.08em;color:var(--gold)}
 #nextTime{font-size:19px;color:var(--text);font-variant-numeric:tabular-nums}
-@media (max-width:520px){.mastside{align-items:flex-start}.nextref{align-items:flex-start}}
 .dot{width:10px;height:10px;background:var(--live);display:inline-block;animation:pulse 1.6s steps(2) infinite}
 @keyframes pulse{50%{opacity:.25}}
 
-.screen{position:relative;width:100%;aspect-ratio:16/9;max-width:100%;background:#000;border:4px solid #05060f;box-shadow:0 0 0 2px var(--line),0 18px 50px #0008;container-type:inline-size;overflow:hidden}
+.screen{box-sizing:border-box;position:relative;width:100%;aspect-ratio:16/9;max-width:100%;background:#000;border:4px solid #2c3364;box-shadow:0 0 0 4px #05060d;container-type:inline-size;overflow:hidden}
 .screen canvas{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .ov{position:absolute;inset:0;pointer-events:none}
 .bug{position:absolute;left:2.4cqw;top:2.4cqw;display:flex;align-items:stretch;font-family:var(--f-label);font-size:1.9cqw;line-height:1}
@@ -75,36 +80,38 @@ body.theater-on{overflow:hidden}
 }
 @media (max-width:640px){ .below{display:block} }
 
-.locbar{display:flex;flex-direction:column;gap:6px;background:var(--panel);border:2px solid var(--line);padding:12px 14px}
-.locbar label{font-family:var(--f-label);font-size:13px;letter-spacing:.1em;color:var(--gold)}
-.locrow{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-#city{flex:0 1 260px;min-width:0;font-family:var(--f-body);font-size:21px;background:var(--room);color:var(--text);border:2px solid var(--line);padding:4px 8px;cursor:pointer}
+.edline{display:flex;align-items:center;gap:6px;flex-wrap:nowrap;height:27px;white-space:nowrap;min-width:0}
+#city{flex:0 1 auto;min-width:0;height:27px;font-family:var(--f-body);font-size:19px;line-height:1.1;max-width:100%;background:var(--room);color:var(--text);border:2px solid var(--line);padding:1px 4px;cursor:pointer}
+#city:hover{border-color:var(--gold)}
 #city:focus-visible{outline:none;border-color:var(--gold)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.findp{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:2px solid var(--line);padding:10px 12px}
+.findp[hidden]{display:none}
+.findrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 #find{flex:1 1 240px;min-width:0;font-family:var(--f-body);font-size:20px;background:var(--room);color:var(--text);border:2px solid var(--line);padding:4px 10px}
 #find:focus-visible{outline:none;border-color:var(--gold)}
-#findBtn{font-family:var(--f-label);font-size:13px;background:var(--gold);color:var(--navy);border:0;padding:8px 14px;cursor:pointer;box-shadow:3px 3px 0 var(--navy)}
-#findBtn:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+#findBtn,#findX{font-family:var(--f-label);font-size:13px;border:0;padding:8px 14px;cursor:pointer;white-space:nowrap}
+#findBtn{background:var(--gold);color:var(--navy);box-shadow:3px 3px 0 var(--navy)}
+#findX{background:transparent;color:var(--muted);border:2px solid var(--line)}
+#findBtn:focus-visible,#findX:focus-visible{outline:3px solid var(--text);outline-offset:2px}
 #findBtn:disabled{opacity:.6;cursor:default}
+.locstatus{margin:0;color:var(--muted);font-size:18px}
 .locstatus.warn{color:#ffb4a8}
-.locstatus{margin:0;color:var(--muted);font-size:18px;flex:1 1 240px;min-width:0}
-.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
-@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr)}}
 .card{background:var(--panel);border:2px solid var(--line);padding:14px 16px;min-width:0}
 h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--gold);margin:0 0 10px}
 ol,ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
-#rundown li{display:grid;grid-template-columns:8.4em minmax(0,1fr) minmax(0,auto);gap:10px;align-items:baseline;padding:4px 6px;font-variant-numeric:tabular-nums}
+#rundown li{display:flex;flex-direction:column;gap:0;padding:4px 8px;font-variant-numeric:tabular-nums}
 #rundown li .tm{color:var(--muted);white-space:nowrap}
-@media (max-width:520px){#rundown li{grid-template-columns:8.4em minmax(0,1fr)}#rundown li .who{display:none}}
-#rundown li .who{color:var(--muted);font-size:17px;text-align:right}
+#rundown li .who{display:none}
 #rundown li.now{background:var(--navy)}
 #rundown li.now .tm{color:var(--gold)}
-#rundown li.now .tm::before{content:"NOW ";font-family:var(--f-label);font-size:11px;color:var(--live)}
+#rundown li .tm{font-size:16px;line-height:1.1}
+#rundown li.now .tm::after{content:" NOW";font-family:var(--f-label);font-size:10px;color:var(--live)}
 #rundown .pk{all:unset;cursor:pointer;color:var(--text);text-decoration:underline dotted 1px;text-underline-offset:3px;min-width:0}
 #rundown .pk:hover{color:var(--gold)}
 #rundown .pk:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #rundown li.picked{background:#3a1420}
-#rundown li.picked .tm::before{content:"NEXT ";font-family:var(--f-label);font-size:11px;color:var(--gold)}
+#rundown li.picked .tm::after{content:" NEXT";font-family:var(--f-label);font-size:10px;color:var(--gold)}
 .rdhint{margin:0 0 6px;color:var(--muted);font-size:16px}
 #cast li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:center;padding:3px 4px}
 #cast canvas{width:42px;height:36px;image-rendering:pixelated;background:#1d2350}
@@ -116,30 +123,47 @@ footer{color:var(--muted);font-size:17px;line-height:1.35}
 footer a{color:var(--text);text-decoration-color:var(--gold)}
 footer a:focus-visible{outline:2px solid var(--gold)}
 @media (prefers-reduced-motion:reduce){.dot{animation:none}}
-/* Phones: city picker and the Full Screen / Sound buttons sit up top, then the broadcast, then the story. */
-.mast{order:0}.topctl{order:1;display:flex;gap:10px;justify-content:flex-end;margin-bottom:-6px}.screen{order:2}.locbar{order:3}.below{order:4}.grid{order:5}#foot{order:6}
-.topctl #fs,.topctl #snd{position:static;font-size:13px;padding:8px 14px;background:var(--panel);border-color:var(--line)}
+.topctl{display:flex;gap:10px;margin-left:auto}
+.topctl #fs,.topctl #snd{position:static;font-size:13px;height:36px;line-height:1;padding:0 14px;background:var(--panel);border-color:var(--line)}
+.ctl{min-height:36px}
 @media (max-width:640px){
-  .locbar{order:1}.topctl{order:2;margin-bottom:0}.screen{order:3}.below{order:4}.grid{order:5}#foot{order:6}
-  .mastside{flex-direction:row;flex-wrap:wrap;gap:8px}.locbar{padding:10px 12px}.locstatus{font-size:15px}#findForm{flex-wrap:nowrap}#findBtn{white-space:nowrap}
-  .topctl #fs,.topctl #snd{position:static;flex:1 1 0;font-size:13px;padding:10px 8px;background:var(--panel);border-color:var(--line)}
+  .mastside{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+  .nextref{width:100%;gap:8px}.nextref .nlabel{font-size:10px}.nextref .lw{display:none}#nextTime{font-size:17px;min-width:0;overflow:hidden;text-overflow:ellipsis}.nextref{padding:5px 10px}.topctl{width:100%}
+  .topctl #fs,.topctl #snd{flex:1 1 0;padding:10px 8px}
 }
 .pbc-chan{display:flex;border:2px solid var(--line)}.pbc-chan a{font-family:var(--f-label);font-size:13px;letter-spacing:.08em;padding:6px 12px;color:var(--muted);text-decoration:none}.pbc-chan a[aria-current="page"]{background:var(--gold);color:var(--navy)}.pbc-chan a:not([aria-current]):hover{color:var(--text)}.pbc-chan a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 </style>
 
 <div class="page">
+  <div class="top">
   <header class="mast">
     <div class="brand">
       <span class="mark" aria-hidden="true">PBC</span>
-      <div><h1>Pixel Broadcasting Company</h1><p id="edition">On the air</p></div>
+      <div><h1>Pixel Broadcasting Company</h1>
+        <p class="edline"><span id="edition">On the air</span><span aria-hidden="true">·</span><label class="sr" for="city">Local desk city</label><select id="city"></select></p></div>
     </div>
     <div class="mastside">
       <nav class="pbc-chan" aria-label="Channel"><a href="./" aria-current="page">NEWS</a><a href="sports/">SPORTS</a></nav>
       <div class="onair"><span class="dot"></span>ON AIR 24 HOURS</div>
-      <div class="nextref" id="nextRef"><span class="nlabel">NEXT NEWS REFRESH</span><span id="nextTime"></span></div>
     </div>
   </header>
+  <div class="ctl">
+    <div class="nextref" id="nextRef"><span class="nlabel">NEXT <span class="lw">NEWS </span>REFRESH</span><span id="nextTime"></span></div>
+    <div class="topctl" id="topctl"></div>
+  </div>
+  </div>
 
+  <div class="main">
+  <form class="findp" id="findForm" novalidate hidden>
+    <label for="find" class="nlabel">CITY NOT LISTED? FIND IT</label>
+    <div class="findrow">
+      <input id="find" type="text" list="places" maxlength="60" placeholder="Start typing your city" autocomplete="off">
+      <datalist id="places"></datalist>
+      <button type="submit" id="findBtn">SET MY CITY</button>
+      <button type="button" id="findX">CANCEL</button>
+    </div>
+    <p id="locStatus" class="locstatus" aria-live="polite"></p>
+  </form>
   <div class="screen" id="screen">
     <canvas id="tv" width="384" height="216" aria-label="Pixel art newsroom broadcast"></canvas>
     <div class="ov" aria-live="polite">
@@ -156,27 +180,14 @@ footer a:focus-visible{outline:2px solid var(--gold)}
     <button id="fs" type="button">FULL SCREEN</button>
     <button id="snd" type="button" aria-label="Sound">SOUND: OFF</button>
   </div>
-  <div class="locbar">
-    <label for="city">YOUR LOCAL DESK</label>
-    <div class="locrow">
-      <select id="city" aria-label="Cities with a local desk"></select>
-      <p id="locStatus" class="locstatus"></p>
-    </div>
-    <form class="locrow" id="findForm" novalidate>
-      <label class="sr" for="find">Find your city</label>
-      <input id="find" type="text" list="places" maxlength="60" placeholder="Not listed? Start typing your city" autocomplete="off">
-      <datalist id="places"></datalist>
-      <button type="submit" id="findBtn">SET MY CITY</button>
-    </form>
-  </div>
-  <div class="topctl" id="topctl"></div>
   <p class="below" id="below"><b id="belowHead"></b><span id="belowSum"></span></p>
+  <footer id="foot"></footer>
+  </div>
 
-  <section class="grid">
+  <aside class="side">
     <div class="card"><h2>RUNDOWN</h2><p class="rdhint">Pick a segment to jump to it after the current story.</p><ol id="rundown"></ol></div>
     <div class="card"><h2>ON THE DESK</h2><ul id="cast"></ul></div>
-  </section>
-  <footer id="foot"></footer>
+  </aside>
 </div>
 
 <script type="application/json" id="seed">{"updatedAt": "2026-10-05T01:15:00Z", "location": {"name": "New York City", "short": "NYC", "tz": "America/New_York"}, "world": [{"h": "Iran: Hormuz stays shut until US meets 7 conditions", "b": "Iran's top negotiator Mohammad Bagher Ghalibaf said the Strait of Hormuz will not open until Tehran's seven conditions based on the Islamabad memorandum are met.", "date": "2026-10-04", "more": ["The strait has been blocked for more than seven months since US-Israel strikes on February 28.", "About one-fifth of the world's oil and gas shipping passes through the strait in peacetime."]}, {"h": "Yemen launches offensive to retake Houthi territory", "b": "Rashad al-Alimi, Saudi-backed head of Yemen's Presidential Leadership Council, announced a military operation to retake Houthi-held territory and restore state authority.", "date": "2026-10-04", "more": ["Government forces said about 700 Houthis were killed in 257 operations on Saturday.", "The Houthis claimed a missile and drone strike on a Saudi Aramco facility in Riyadh, which the Saudi-led coalition called misleading."]}, {"h": "Ethiopian forces seize Tigray capital Mekelle", "b": "Ethiopian government forces took control of Mekelle after the Tigray People's Liberation Front said it had temporarily moved out of the city.", "date": "2026-10-04", "more": ["Government troops first captured Mekelle's main airport before entering the city centre.", "Fighting broke out on September 23 after seven armed and political groups formed an alliance against Prime Minister Abiy Ahmed's government."]}, {"h": "Air strike in Sudan kills UN food aid driver", "b": "The World Food Programme said a driver was killed when an air strike hit a convoy of trucks clearly marked as humanitarian vehicles in South Kordofan state.", "date": "2026-10-04", "more": ["The WFP called for an investigation but did not say who was responsible.", "Sudan's war has displaced 14 million people, and 19.5 million face acute food insecurity."]}, {"h": "OPEC+ keeps oil output steady for November", "b": "Seven OPEC+ members including Saudi Arabia and Russia agreed to keep oil production unchanged for November.", "date": "2026-10-04", "more": ["The G7 separately announced plans to release 100 million barrels of oil and fuel products.", "Brent crude has been trading above $100 a barrel and US diesel prices have hit record highs."]}, {"h": "US pulls B-1 bombers from UK's RAF Fairford", "b": "The Pentagon said all US bombers deployed to RAF Fairford in England have returned to their home stations as a precaution, after arrests over alleged plots against the base.", "date": "2026-10-04", "more": ["On October 2, British police arrested a 25-year-old UK-Iranian dual national on suspicion of plotting an attack on the base.", "Iran has denied involvement and summoned the UK ambassador."]}, {"h": "Zelenskyy says Ukraine ready for US-backed talks", "b": "Ukrainian President Volodymyr Zelenskyy said Ukraine is ready for three-way talks with the US and Russia, with technical-level talks possible by the end of the month.", "date": "2026-10-04", "more": ["Possible venues include the United Arab Emirates or another place proposed by Washington.", "India said it plans to increase its mediation role, including on Black Sea shipping and grain exports."]}, {"h": "Australia probes Flydubai co-pilot's ties", "b": "Australian authorities are investigating the ties of Hamam al-Hammami, the Omani co-pilot accused of attacking his captain with an axe on Flydubai flight FZ1073 on September 30.", "date": "2026-10-04", "more": ["The Dubai-to-Tel Aviv flight diverted safely to Tabuk, Saudi Arabia, where a reserve pilot landed it.", "Al-Hammami had been barred from flying in Oman over extremism concerns and reportedly studied in Melbourne about a decade ago."]}], "national": [{"h": "Search for missing Bermuda-Boston air ambulance", "b": "The Coast Guard is searching for a Gulfstream G100 medical jet carrying four Canadians and two Bermudians that lost contact over the Atlantic early Saturday.", "date": "2026-10-04", "more": ["The pilot reported electrical problems and declared an emergency as the jet neared the coast.", "A debris field was found near Nantucket, and crews planned to use sonar to search the ocean floor."]}, {"h": "Christa Pike still unconscious after failed execution", "b": "Christa Pike's lawyer said she has not regained consciousness since Tennessee's failed attempt to execute her by lethal injection on Wednesday.", "date": "2026-10-04", "more": ["Pike, 50, remains hospitalized on a ventilator under guard.", "Tennessee prisons commissioner Frank Strada resigned Saturday, and Governor Bill Lee ordered an independent investigation."]}, {"h": "Cornell president vows transparency in rape case", "b": "Cornell University President Michael Kotlikoff called an alleged 2024 gang rape at the Chi Phi fraternity \"deeply disturbing\" and pledged an independent review.", "date": "2026-10-04", "more": ["The alleged victim has sued the university and seven former students.", "Governor Kathy Hochul appointed Attorney General Letitia James as special prosecutor in the case."]}, {"h": "Judge rules activist Salah Sarsour can be deported", "b": "A US judge ruled that Palestinian rights advocate Salah Sarsour, who has lived in the US for more than 30 years, can be deported under a Cold War-era law.", "date": "2026-10-04", "more": ["The government says he poses a threat to American foreign policy."]}, {"h": "Mamdani and Irish PM ride the G train", "b": "New York City Mayor Zohran Mamdani and Irish Prime Minister Micheal Martin rode the G train referencing the \"Split the G\" Guinness trend and played bingo at the New York Irish Center.", "date": "2026-10-04", "more": ["The outings took place during UN week in September; Al Jazeera published the video on October 4."]}], "politics": [{"h": "Trump predicts 'big surprise' at Ohio rally", "b": "President Trump held a rally at Butler High School in Vandalia, Ohio, backing Senator Jon Husted against Democrat Sherrod Brown and urging supporters to vote.", "date": "2026-10-04", "more": ["Trump said, \"Just get out and vote. If you do that, we're going to win, and we're going to win big.\"", "Ohio gas prices are up 35% from a year ago at $4.16 a gallon, Al Jazeera reported."]}, {"h": "Cornell case spurs push to change NY rape laws", "b": "New York lawmakers are pressing bills to close the state's \"voluntary intoxication\" distinction in sexual assault law, which passed the state Senate in June and awaits an Assembly vote.", "date": "2026-10-04", "more": ["Other bills would extend rape-shield protections to civil cases and protect people who report sexual assault from defamation suits.", "Governor Kathy Hochul said, \"Voluntary intoxication is not a license for sexual assault or gang rape. Period.\""]}, {"h": "KKK leader claims rising support before midterms", "b": "A Ku Klux Klan leader told Al Jazeera's Phil Lavelle that support for the group's message is growing ahead of the midterm elections.", "date": "2026-10-04", "more": ["The group is trying to rebrand itself around \"family and faith,\" and the report examines its actual influence."]}, {"h": "UK Greens vote to define Zionism as racism", "b": "Britain's Green Party voted 1,022 to 813 at its Brighton conference to define Zionism as an ethnonationalist political project and a form of racism.", "date": "2026-10-04", "more": ["Israeli President Isaac Herzog called the vote \"a disgrace and a shame.\"", "Party leader Zack Polanski did not vote on the motion."]}, {"h": "Spain protests after housing decrees rejected", "b": "Spain's parliament rejected two government decrees meant to protect renters and limit short-term leases, and tens of thousands protested nationwide on Saturday.", "date": "2026-10-04", "more": ["Opposition leader Alberto Nunez Feijoo called for immediate elections.", "A snap election could come as early as November 29."]}], "international": [{"h": "Brazil votes in tight Lula-Bolsonaro race", "b": "Nearly 159 million Brazilians were eligible to vote as President Luiz Inacio Lula da Silva sought a fourth term against Senator Flavio Bolsonaro.", "date": "2026-10-04", "more": ["If no candidate wins more than 50%, a runoff will be held on October 25.", "Al Jazeera described the race as tight."], "place": "Brasilia, Brazil", "tz": "America/Sao_Paulo"}, {"h": "Early Bosnia results show familiar parties ahead", "b": "Early results in Bosnia's general election showed Denis Becirovic, Zeljka Cvijanovic and Darijana Filipovic leading for the three seats of the presidency.", "date": "2026-10-04", "more": ["About 3.4 million people were eligible to vote.", "It was the first nationwide use of fingerprint identification and electronic ballot scanners."], "place": "Sarajevo, Bosnia and Herzegovina", "tz": "Europe/Sarajevo"}, {"h": "Russia hits Kyiv bridge during Merz visit", "b": "Russia struck the Northern Bridge over the Dnipro River in Kyiv on Sunday while German Chancellor Friedrich Merz was visiting the city.", "date": "2026-10-04", "more": ["Merz announced a $1.1 billion military aid package and $394 million for energy repairs.", "He said, \"If Russia is not stopped, its war machine will sooner or later turn against us.\""], "place": "Kyiv, Ukraine", "tz": "Europe/Kyiv"}, {"h": "France to close up to 500 schools amid protests", "b": "France's education ministry said 400 to 500 schools will close Monday as student protests over staffing and class hours have turned violent.", "date": "2026-10-04", "more": ["Since the protests began, 24 schools have been burned or ransacked and more than 5,000 people were arrested in the past week.", "Organizers plan to resume demonstrations Tuesday."], "place": "Paris, France", "tz": "Europe/Paris"}, {"h": "Imran Khan supporters march toward Islamabad", "b": "More than 5,000 supporters of jailed former Pakistani Prime Minister Imran Khan set off from the northwest toward Islamabad after talks with the government failed.", "date": "2026-10-04", "more": ["They expect to reach Khairabad, about 50 miles west of Islamabad, on Thursday.", "Authorities have blocked main routes into the capital with shipping containers."], "place": "Islamabad, Pakistan", "tz": "Asia/Karachi"}, {"h": "India protests against election chief enter day 3", "b": "Thousands rallied in Mumbai and New Delhi demanding the resignation of election commission chief Gyanesh Kumar over voter-roll revisions they say removed millions of eligible voters.", "date": "2026-10-04", "more": ["The election commission and the ruling BJP deny the allegations.", "Police detained dozens of protesters in New Delhi."], "place": "New Delhi, India", "tz": "Asia/Kolkata"}], "business": [], "science": [], "sports": [{"h": "Patriots edge Bills 29-26", "b": "Drake Maye threw for 269 yards and three touchdowns and ran for 54 yards as New England beat Buffalo.", "date": "2026-10-04", "more": ["Maye led a game-winning 73-yard drive that included a 23-yard touchdown pass to Efton Chism."]}, {"h": "Lamb's 17 catches lift Cowboys past Texans 34-30", "b": "CeeDee Lamb caught 17 passes for 189 yards and a touchdown in Dallas's win over Houston.", "date": "2026-10-04", "more": ["Dak Prescott hit Lamb for the game-winning 12-yard score with 40 seconds remaining."]}, {"h": "Rams rally past Eagles 24-20", "b": "Matthew Stafford completed 13 of 17 passes for 149 yards in the fourth quarter as Los Angeles beat Philadelphia.", "date": "2026-10-04", "more": ["Puka Nacua caught five passes for 76 yards in the final quarter alone.", "Philadelphia went 0-for-12 on third-down attempts."]}, {"h": "Seahawks drop Chargers to 0-4, 30-23", "b": "Emanuel Wilson scored twice, on a 23-yard catch and an 8-yard run, as Seattle beat the Chargers.", "date": "2026-10-04", "more": ["Wilson ran for 81 yards on 21 carries.", "Seattle was called for 14 penalties for a franchise-record 150 yards."]}, {"h": "49ers stay unbeaten, top Broncos 24-14", "b": "San Francisco beat Denver to remain undefeated.", "date": "2026-10-04", "more": ["The 49ers have not allowed a sack through four games."]}, {"h": "Bears run over Jets 23-12", "b": "Kyle Monangai rushed for 146 yards and two touchdowns on 30 carries as Chicago beat New York.", "date": "2026-10-04", "more": ["The Bears totaled 232 rushing yards and held the Jets without a third-down conversion."]}, {"h": "Chourio walk-off puts Brewers up 2-0 on Padres", "b": "Milwaukee beat San Diego 4-3 in NLDS Game 2 on Jackson Chourio's two-run single in the ninth inning.", "date": "2026-10-04", "more": ["The Brewers drew three walks against Padres closer Mason Miller before Chourio's hit.", "Milwaukee leads the series 2-0."]}, {"h": "Rasmussen, Rays blank Yankees 1-0 in Game 1", "b": "Drew Rasmussen struck out 10 and carried a no-hitter into the eighth inning as Tampa Bay beat New York.", "date": "2026-10-03", "more": ["Yankees catcher Austin Wells was thrown out at third trying to stretch a double into a triple in the eighth.", "Tampa Bay leads the Division Series 1-0."]}], "goodnews": [{"h": "Man catches child who fell from balcony in Egypt", "b": "Video shows a man in Egypt rushing to catch a young boy who fell from a second-floor balcony.", "date": "2026-10-04", "more": ["The child hit a washing line on the way down, giving the man crucial extra time to reach him."]}, {"h": "Dakar neighbours clean up school for new year", "b": "Students, teachers and volunteers in Dakar, Senegal, cleaned Medina Gounass Elementary School on Saturday ahead of the new academic year.", "date": "2026-10-04", "more": ["They swept classrooms, cleared drains and removed plastic and household waste.", "Organizers said the effort also aimed to raise awareness about protecting the environment."]}], "local": [{"h": "Sixth person dies after falling ill in NYPD custody", "b": "Reginald Newkirk, 54, of Brooklyn died Sunday at Kings County Hospital, at least the sixth person this year to die after a medical crisis in NYPD custody.", "date": "2026-10-04", "more": ["He was arrested Friday for drug possession, hospitalized and cleared, then had another medical emergency Saturday afternoon.", "Public defenders have called for independent Civilian Complaint Review Board investigations of every death in police custody."]}, {"h": "NY prison system staffing crisis drives workers away", "b": "New York's prison system has a 56% vacancy rate among corrections workers.", "date": "2026-10-04", "more": ["New officer training is up 40%, but more than 250 of 660 newly trained officers resigned within a year.", "The state spent over $1 billion deploying the National Guard after about 2,000 guards were fired following a 2025 wildcat strike."]}, {"h": "NJ reports first West Nile Virus death of the year", "b": "New Jersey reported its first West Nile Virus death of 2026, a South Jersey resident over 60.", "date": "2026-10-04", "more": ["As of Thursday the state had confirmed 26 cases, 19 with neurological illness, already above last year's total of 23."]}, {"h": "Banned books and Winnie the Pooh in NYC libraries", "b": "City library branches have a busy October, including banned-book events and NYPL celebrations of Winnie the Pooh's 100th birthday.", "date": "2026-10-04", "more": ["Queens Public Library and Penguin Random House are holding a banned book giveaway at the Hunters Point branch."]}], "weather": {"now": {"temp": 57, "cond": "Fog/Mist", "wind": "Variable 3 mph", "humidity": 93, "obs": "Oct 4, 2:51 pm EDT"}, "periods": [{"name": "Monday", "kind": "high", "temp": 69, "text": "Sunny, with a high near 69. Breezy, with a northwest wind 7 to 12 mph increasing to 15 to 20 mph."}, {"name": "Monday Night", "kind": "low", "temp": 50, "text": "Clear, with a low around 50. Northwest wind 11 to 14 mph."}, {"name": "Tuesday", "kind": "high", "temp": 63, "text": "Sunny, with a high near 63. Northwest wind 9 to 11 mph."}, {"name": "Tuesday Night", "kind": "low", "temp": 49, "text": "Clear, with a low around 49."}, {"name": "Wednesday", "kind": "high", "temp": 68, "text": "Sunny, with a high near 68."}]}, "localgood": [{"h": "Banned books and Pooh at NYC libraries", "b": "NYC libraries mark Banned Books Week this October, with Queens Public Library offering free banned titles.", "date": "2026-10-04", "more": ["NYPL is celebrating Winnie the Pooh's centennial with movies, readings and crafts across the boroughs."]}], "sources": [{"name": "Gothamist", "url": "https://gothamist.com/news", "desk": "local"}, {"name": "National Weather Service", "url": "https://forecast.weather.gov/MapClick.php?lat=40.7128&lon=-74.006", "desk": "local"}, {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/"}, {"name": "PBS News", "url": "https://www.pbs.org/newshour/"}, {"name": "CBS Sports", "url": "https://www.cbssports.com/"}, {"name": "CBS Sports - NFL Week 4 grades", "url": "https://www.cbssports.com/nfl/news/nfl-week-4-grades-for-all-32-teams-bears-bengals-patriots-rams/"}, {"name": "CBS Sports - NFL Week 4 winners and losers", "url": "https://www.cbssports.com/nfl/news/nfl-week-4-winners-losers-drake-maye-texans/"}, {"name": "CBS Sports - Seahawks drop Chargers to 0-4", "url": "https://www.cbssports.com/nfl/news/emanuel-wilson-scores-twice-as-seahawks-drop-chargers-to-0-4/"}, {"name": "CBS Sports - NLDS Game 2 winners and losers", "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoffs-nlds-game-2-winners-losers/"}, {"name": "CBS Sports - Division Series Game 1 winners and losers", "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoffs-division-series-game-1-winners-losers/"}]}</script>
@@ -804,7 +815,7 @@ function frame(){
   if(real-lastRundown>1000){lastRundown=real;
     const hr=hourIn(D.location.tz);
     $("clock").textContent=fmt(real,{hour:"numeric",minute:"2-digit",timeZoneName:"short"})+" · "+(D.location.short||"")+" "+nowWx().temp+"°";
-    $("edition").textContent=edition(hr)+" edition · "+D.location.name;
+    $("edition").textContent=edition(hr)+" edition";
     const nr=nextRefresh(real),mins=Math.max(0,Math.round((nr-real)/60000));
     $("nextTime").textContent=fmt(nr,{hour:"numeric",minute:"2-digit",timeZoneName:"short"})+" · in "+(mins>=60?Math.floor(mins/60)+"h "+(mins%60)+"m":mins+"m");
   }
@@ -851,7 +862,10 @@ let CITIES={},pickSlug=null;
 // Cities baked in at publish time, so visitors without a sign-in can still switch desks.
 try{const seeded=JSON.parse(document.getElementById("locals-data").textContent);(Array.isArray(seeded)?seeded:[]).forEach(x=>{if(validLocal(x))CITIES[x.slug]=x})}catch(e){}
 try{pickSlug=localStorage.getItem("pbc-local-desk")}catch(e){}
-function setStatus(m,warn){const el=$("locStatus");el.textContent=m;el.classList.toggle("warn",!!warn)}
+// Status shows in the "not listed" panel; quiet notes only update it, without opening the panel.
+function setStatus(m,warn,quiet){const el=$("locStatus");el.textContent=m;el.classList.toggle("warn",!!warn);if(!quiet)$("findForm").hidden=false}
+function openFind(){$("findForm").hidden=false;$("locStatus").textContent="";$("find").focus()}
+$("findX").addEventListener("click",()=>{$("findForm").hidden=true;$("find").value=""});
 const PLACES=JSON.parse(document.getElementById("places-data").textContent);
 const label=c=>c.name+", "+c.region;
 (function(){const dl=$("places");PLACES.forEach(c=>{const o=document.createElement("option");o.value=label(c);dl.appendChild(o)})})();
@@ -877,17 +891,20 @@ $("findForm").addEventListener("submit",async ev=>{
 function fillCities(){
   const sel=$("city"),cur=pickSlug||"";sel.textContent="";
   const list=Object.values(CITIES).sort((a,b)=>a.location.name.localeCompare(b.location.name));
-  if(!list.length){const o=document.createElement("option");o.value="";o.textContent=FEED.location.name;sel.appendChild(o);sel.disabled=true;return}
-  sel.disabled=false;
+  if(!list.length){const o=document.createElement("option");o.value="";o.textContent=FEED.location.name;sel.appendChild(o);
+    const x=document.createElement("option");x.value="__other";x.textContent="City not listed…";sel.appendChild(x);sel.value="";return}
   list.forEach(c=>{const o=document.createElement("option");o.value=c.slug;o.textContent=c.location.name;sel.appendChild(o)});
   sel.value=CITIES[cur]?cur:(list.find(c=>c.location.name===FEED.location.name)||list[0]).slug;
+  const o=document.createElement("option");o.value="__other";o.textContent="City not listed…";sel.appendChild(o);
 }
 function applyCity(){
   const c=CITIES[$("city").value];
   LOCAL=c?JSON.parse(JSON.stringify(c)):null;onData();
-  if(c)setStatus("Local news and weather for "+c.location.name+", updated "+fmt(Date.parse(c.updatedAt)||Date.now(),{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})+".");
+  if(c)setStatus("Local news and weather for "+c.location.name+", updated "+fmt(Date.parse(c.updatedAt)||Date.now(),{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})+".",false,true);
 }
-$("city").addEventListener("change",()=>{pickSlug=$("city").value;try{localStorage.setItem("pbc-local-desk",pickSlug)}catch(e){}applyCity()});
+$("city").addEventListener("change",()=>{
+  if($("city").value==="__other"){fillCities();if(LOCAL&&CITIES[LOCAL.slug])$("city").value=LOCAL.slug;openFind();return}
+  pickSlug=$("city").value;try{localStorage.setItem("pbc-local-desk",pickSlug)}catch(e){}applyCity()});
 async function connect(){
   for(let i=0;i<30&&!(window.claude&&window.claude.use);i++)await new Promise(r=>setTimeout(r,200));
   try{const db=window.claude&&window.claude.use?await window.claude.use("db"):null;if(!db)return;DB=db;
@@ -899,7 +916,7 @@ async function connect(){
       if(pending)setStatus("Setting up a local desk for "+label(pending)+". It will be on the air after the next headline refresh, within about three hours. Showing "+D.location.name+" until then.")},()=>{});
   }catch(e){}
 }
-fillCities();if(CITIES[$("city").value])applyCity();else setStatus("Showing "+FEED.location.name+".");
+fillCities();if(CITIES[$("city").value])applyCity();else setStatus("Showing "+FEED.location.name+".",false,true);
 
 buildCast();onData();requestAnimationFrame(frame);connect();
 })();
