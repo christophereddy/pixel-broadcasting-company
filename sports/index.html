@@ -353,8 +353,14 @@ async function loadScoreboard(){
   let ok = false;
   for (const r of res) {
     if (r.status !== 'fulfilled') continue; ok = true;
-    for (const ev of r.value.events || []) S.events.set(String(ev.id), ev);
+    for (const ev of r.value.events || []) {
+      const id = String(ev.id), had = S.events.get(id);
+      if (had && realGame(had) && !realGame(ev)) continue; // never swap a real game for a "TBD @ TBD" placeholder
+      S.events.set(id, ev);
+    }
   }
+  if (ok && isMLB()) await mlbScheduleFallback(earlier, later);
+  if (sport !== S.sport) return false;
   if (!ok) {
     showErr("Can't reach ESPN right now. Retrying every 30 seconds. If you opened this page inside Claude, open the downloaded file in Chrome, Edge or Safari instead.");
     return false;
@@ -362,6 +368,30 @@ async function loadScoreboard(){
   showErr('');
   renderList();
   return true;
+}
+
+// ESPN's MLB scoreboard sometimes lists only placeholder "TBD @ TBD" games (seen in the 2026 playoffs) while
+// each team's schedule has the real ones. When that happens, fill the list from the team schedules.
+const realGame = ev => { const c = ev.competitions?.[0]?.competitors || []; return c.length === 2 && c.every(x => x.team?.abbreviation && x.team.abbreviation !== 'TBD'); };
+async function mlbScheduleFallback(earlier, later){
+  const evs = [...S.events.values()], broken = !evs.some(e => stateOf(e) === 'pre' && realGame(e)) || !evs.every(realGame);
+  for (const [id, ev] of S.events) if (!realGame(ev)) S.events.delete(id);
+  if (!broken || (S.fbAt && Date.now() - S.fbAt < 5 * 60e3)) return;
+  S.fbAt = Date.now();
+  try {
+    const meta = S.mlbTeams || (S.mlbTeams = (await getJSON(API + '/teams')).sports[0].leagues[0].teams.map(x => x.team));
+    const byId = Object.fromEntries(meta.map(t => [String(t.id), t])), sport = S.sport;
+    const scheds = [];
+    for (let i = 0; i < meta.length; i += 6) scheds.push(...await Promise.allSettled(meta.slice(i, i + 6).map(t => getJSON(`${API}/teams/${t.id}/schedule`))));
+    if (sport !== S.sport) return;
+    for (const r of scheds) if (r.status === 'fulfilled') for (const ev of r.value.events || []) {
+      const d = new Date(ev.date); if (!(d >= earlier && d <= later)) continue;
+      const c = ev.competitions?.[0]; if (!c) continue;
+      ev.status ||= c.status;
+      for (const x of c.competitors || []) { x.team = {...(byId[String(x.team?.id || x.id)] || {}), ...(x.team || {})}; if (x.score && typeof x.score === 'object') x.score = x.score.displayValue ?? String(x.score.value ?? ''); }
+      if (realGame(ev)) S.events.set(String(ev.id), ev);
+    }
+  } catch (e) { /* keep whatever the scoreboard gave */ }
 }
 
 /* ================= game list ================= */
@@ -1255,8 +1285,10 @@ const IN_PLAY = ['single', 'double', 'triple', 'hr', 'groundout', 'flyout', 'lin
 function clausesOf(tx){ return tx.replace(/\([^)]*\)/g, '').split(/\s*[,;]\s*|\s+and\s+(?=[A-Z])/).map(s => s.trim().replace(/\.$/, '')).filter(Boolean); }
 const RUNNER_RE = /^(.*?)\s+(scored|to (first|second|third|home)|advanced to (second|third|home)|out at (first|second|third|home)|thrown out at (first|second|third|home)|out stretching at (second|third|home)|stole (second|third|home)|caught stealing (second|third|home)|picked off(?: at| of)? (first|second|third))\b/i;
 function classifyMLB(p){
-  const tx = (p.text || '').trim(), ty = (p.type?.text || '').trim(), t = tx || ty;
+  // ESPN writes pitches as "Pitch 3 : Strike 2 Swinging"; the at-bat result follows as its own play
+  const tx = (p.text || '').trim().replace(/^pitch \d+\s*:\s*/i, ''), ty = (p.type?.text || '').trim(), t = tx || ty;
   if (!t) return {kind: 'admin'};
+  if (/ pitches to /i.test(t)) return {kind: 'admin', atbat: true};
   if (/^(top|bottom|middle|mid|end|start|beginning)\b/i.test(t) && /\b\d+(st|nd|rd|th)\b|inning/i.test(t)) return {kind: 'admin'};
   if (PITCH_RE.test(t) || (!tx && PITCH_RE.test(ty))) {
     const l = t.toLowerCase();
@@ -1737,7 +1769,7 @@ async function runPlayMLB(p, fast, tok){
     await sleep(S.voices ? 150 : 450);
     return;
   }
-  const pbp = speechText(p.text || p.type?.text || '');
+  const pbp = speechText(p.text || ''); // ESPN's empty "End Batter/Pitcher" markers stay silent
   if (pbp) await say('A', pbp, tok);
   if (tok !== S.token) return;
   const col = colorLineMLB(p, o);
@@ -1923,6 +1955,7 @@ function applyState(p, plan){
   S.fdX = S.down && S.toGo != null && S.toGo < 30 ? clamp(S.ball.x + S.offDir * S.toGo, 0, 100) : null;
 }
 function addLog(p){
+  if (isMLB() && !(p.text || '').trim()) return; // skip ESPN's empty end-of-at-bat markers
   const log = $('log'); log.querySelector('.empty')?.remove();
   const li = document.createElement('li'); if (p.scoringPlay) li.className = 'score';
   const mlb = isMLB(), o = mlb ? (p._o || (p._o = outcomeMLB(p))) : null;
@@ -2011,8 +2044,8 @@ function playsOf(summary){
   const out = [], seen = new Set();
   if (isMLB()) {
     // baseball summaries list every pitch and play in one array
+    // keep ESPN's order: baseball sequenceNumbers restart with every at-bat, so sorting by them scrambles the game
     for (const p of summary.plays || []) { if (!p || p.id == null || seen.has(p.id)) continue; seen.add(p.id); out.push(p); }
-    out.sort((a, b) => Number(a.sequenceNumber || 0) - Number(b.sequenceNumber || 0));
     return out;
   }
   const dr = summary.drives || {};
