@@ -134,6 +134,10 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .game .s.live{color:var(--live)}
 .side .none{padding:4px 12px;color:var(--dim);font-size:18px}
 .err{font-size:18px;color:#ff9aa5;padding:6px 12px}
+/* where the data comes from, like the newsroom's footer */
+#foot{grid-column:1/-1;color:var(--muted);font-size:17px;line-height:1.35}
+#foot a{color:var(--text);text-decoration-color:var(--gold)}
+#foot a:focus-visible{outline:2px solid var(--gold)}
 @media (max-width:900px){
   .booth{width:38cqw}.board{width:33cqw}
   .caption{font-size:2.8cqw;min-height:8.6cqw;max-height:11.5cqw}
@@ -242,16 +246,31 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     <section><h4>RECENT FINALS</h4><div id="list-final"></div></section>
    </div>
   </aside>
+  <footer id="foot"></footer>
 </div>
 
 <script>
 'use strict';
 /* ================= config ================= */
-// each sport reads its own ESPN feeds; the NFL and MLB tabs switch between them
+// football reads ESPN's feeds; baseball reads MLB's own (statsapi.mlb.com). The NFL and MLB tabs switch between them.
 const SPORTS = {
-  nfl: {name: 'NFL', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl'},
-  mlb: {name: 'MLB', api: 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb', site: 'https://site.web.api.espn.com/apis/common/v3/sports/baseball/mlb'}
+  nfl: {name: 'NFL', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
+    credits: [['Games, play-by-play, rosters, stats and headshots', 'ESPN', 'https://www.espn.com/nfl/']]},
+  mlb: {name: 'MLB', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
+    credits: [['Games, pitch-by-pitch play-by-play, rosters, stats, logos and headshots', 'MLB Stats API', 'https://statsapi.mlb.com'],
+      ['Ballpark fence distances and wall heights', "each park's Wikipedia page", 'https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums']]}
 };
+// the footer says where this sport's data comes from
+function setCredits(){
+  const f = document.getElementById('foot'); if (!f) return;
+  f.replaceChildren('Data sources · ');
+  SPORTS[S.sport].credits.forEach(([what, name, url], i) => {
+    if (i) f.append(' · ');
+    const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = name;
+    f.append(what + ': ', a);
+  });
+  f.append(' · Announcer lines are written for this page; every play they describe comes from the data above.');
+}
 let API = SPORTS.nfl.api, SITE = SPORTS.nfl.site;
 const W = 480, H = 270, PX = 8, FT = 64, FB = 250, SY = (FB - FT) / 53.3, MIDY = 26.65;
 const QUIRK = {CLV:'CLE', ARZ:'ARI', BLT:'BAL', HST:'HOU', JAC:'JAX', SL:'LAR', LA:'LAR', WAS:'WSH'};
@@ -310,6 +329,7 @@ function teamsOf(ev){
 }
 
 async function loadScoreboard(){
+  if (isMLB()) return loadMLBGames();
   const now = new Date(), later = new Date(now.getTime() + 10 * 864e5), earlier = new Date(now.getTime() - 8 * 864e5);
   const urls = [API + '/scoreboard', API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later), API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now)];
   const sport = S.sport, res = await Promise.allSettled(urls.map(getJSON));
@@ -317,14 +337,8 @@ async function loadScoreboard(){
   let ok = false;
   for (const r of res) {
     if (r.status !== 'fulfilled') continue; ok = true;
-    for (const ev of r.value.events || []) {
-      const id = String(ev.id), had = S.events.get(id);
-      if (had && realGame(had) && !realGame(ev)) continue; // never swap a real game for a "TBD @ TBD" placeholder
-      S.events.set(id, ev);
-    }
+    for (const ev of r.value.events || []) S.events.set(String(ev.id), ev);
   }
-  if (ok && isMLB()) await mlbScheduleFallback(earlier, later);
-  if (sport !== S.sport) return false;
   if (!ok) {
     showErr("Can't reach ESPN right now. Retrying every 30 seconds. If you opened this page inside Claude, open the downloaded file in Chrome, Edge or Safari instead.");
     return false;
@@ -334,118 +348,49 @@ async function loadScoreboard(){
   return true;
 }
 
-// ESPN's MLB scoreboard sometimes lists only placeholder "TBD @ TBD" games (seen in the 2026 playoffs), and the team
-// schedules can miss upcoming games too. ESPN's event index (sports.core.api.espn.com) still lists every game, so when
-// the scoreboard has no real upcoming games the list is rebuilt from that index, falling back to the team schedules.
-const realGame = ev => { const c = ev.competitions?.[0]?.competitors || []; return c.length === 2 && c.every(x => x.team?.abbreviation && x.team.abbreviation !== 'TBD'); };
-const CORE_MLB = 'https://sports.core.api.espn.com/v2/sports/baseball/leagues/mlb';
-const https = u => String(u || '').replace(/^http:/, 'https:');
-async function inBatches(items, n, fn){ const out = []; for (let i = 0; i < items.length; i += n) out.push(...await Promise.allSettled(items.slice(i, i + n).map(fn))); return out; }
-// one game from the event index, shaped like a scoreboard event so the rest of the page can use it
-async function coreGame(ref, byId){
-  const e = await getJSON(https(ref)), c = e.competitions?.[0]; if (!c) return null;
-  const st = c.status?.type ? c.status : await getJSON(https(c.status.$ref));
-  const live = st.type?.state && st.type.state !== 'pre';
-  const comps = await Promise.all((c.competitors || []).map(async x => {
-    const id = String(x.id || (/teams\/(\d+)/.exec(x.team?.$ref || '') || [])[1]);
-    let score = '';
-    if (live && x.score?.$ref) { const sc = await getJSON(https(x.score.$ref)).catch(() => null); score = sc ? (sc.displayValue ?? String(sc.value ?? '')) : ''; }
-    return {homeAway: x.homeAway, team: {...(byId[id] || {id})}, score};
-  }));
-  return {id: String(e.id), date: e.date, name: e.name, shortName: e.shortName, status: st, competitions: [{competitors: comps, venue: c.venue?.fullName ? {fullName: c.venue.fullName} : undefined, notes: c.notes, status: st}]};
+// Baseball reads only MLB's own data (statsapi.mlb.com): its schedule for the games list, and each game's live feed for
+// the pitches, runners and box score. One source, so a game is never listed twice.
+const MLB_API = 'https://statsapi.mlb.com/api';
+// MLB's data has no team colors, so here they are by MLB team id: [main color, second color]
+const MLB_COLORS = {
+  108: ['BA0021', '003263'], 109: ['A71930', 'E3D4AD'], 110: ['DF4601', '000000'], 111: ['BD3039', '0C2340'], 112: ['0E3386', 'CC3433'],
+  113: ['C6011F', '000000'], 114: ['00385D', 'E50022'], 115: ['333366', 'C4CED4'], 116: ['0C2340', 'FA4616'], 117: ['002D62', 'EB6E1F'],
+  118: ['004687', 'BD9B60'], 119: ['005A9C', 'EF3E42'], 120: ['AB0003', '14225A'], 121: ['002D72', 'FF5910'], 133: ['003831', 'EFB21E'],
+  134: ['27251F', 'FDB827'], 135: ['2F241D', 'FFC425'], 136: ['0C2C56', '005C5C'], 137: ['FD5A1E', '27251F'], 138: ['C41E3A', '0C2340'],
+  139: ['092C5C', '8FBCE6'], 140: ['003278', 'C0111F'], 141: ['134A8E', '1D2D5C'], 142: ['002B5C', 'D31145'], 143: ['E81828', '002D72'],
+  144: ['CE1141', '13274F'], 145: ['27251F', 'C4CED4'], 146: ['00A3E0', 'EF3340'], 147: ['0C2340', 'C4CED3'], 158: ['12284B', 'FFC52F']
+};
+// an MLB team, shaped like the team objects the rest of the page uses
+function mlbTeamOf(t){
+  const [c, a] = MLB_COLORS[t?.id] || ['334477', 'ffffff'];
+  return {id: String(t?.id ?? ''), abbreviation: t?.abbreviation || '???', shortDisplayName: t?.teamName || t?.clubName || t?.name || 'Team',
+    location: t?.franchiseName || t?.locationName || t?.shortName || t?.name || 'Team', color: c, alternateColor: a,
+    logo: t?.id ? `https://www.mlbstatic.com/team-logos/${t.id}.svg` : ''};
 }
-// MLB's own schedule (statsapi.mlb.com) is the most dependable list of games. Its games carry an "mlb-<gamePk>" id until
-// the matching ESPN game is found, because the play-by-play still comes from ESPN.
-const MLB_ABBR = {CWS: 'CHW', AZ: 'ARI', WSN: 'WSH', KCR: 'KC', SDP: 'SD', SFG: 'SF', TBR: 'TB', OAK: 'ATH'};
-async function statsApiGames(earlier, later, byId, keep){
-  const d = x => x.toISOString().slice(0, 10);
-  let n = 0;
-  try {
-    const j = await getJSON(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=${d(earlier)}&endDate=${d(later)}&hydrate=team,linescore`);
-    const byAbbr = Object.fromEntries(Object.values(byId).map(t => [t.abbreviation, t]));
-    for (const day of j.dates || []) for (const g of day.games || []) {
-      const st = g.status?.abstractGameState === 'Final' ? 'post' : g.status?.abstractGameState === 'Live' ? 'in' : 'pre';
-      if (/postponed|cancel|suspended/i.test(g.status?.detailedState || '') && st !== 'post') continue;
-      const ls = g.linescore || {}, detail = st === 'in' ? `${ls.inningState || ''} ${ls.currentInningOrdinal || ''}`.trim() || 'Live' : st === 'post' ? 'Final' : '';
-      const side = (ha) => { const t = g.teams?.[ha], ab = t?.team?.abbreviation, team = byAbbr[MLB_ABBR[ab] || ab] || {abbreviation: ab, displayName: t?.team?.name, location: t?.team?.locationName, shortDisplayName: t?.team?.teamName};
-        return {homeAway: ha, team, score: st === 'pre' ? '' : String(t?.score ?? '')}; };
-      const status = {type: {state: st, shortDetail: detail, detail: g.status?.detailedState || ''}};
-      keep({id: 'mlb-' + g.gamePk, mlbPk: g.gamePk, date: g.gameDate, name: '', shortName: '', status,
-        competitions: [{competitors: [side('home'), side('away')], venue: {fullName: g.venue?.name || ''}, notes: [{headline: g.seriesDescription || ''}], status}]});
-      n++;
-    }
-  } catch (e) { /* MLB's schedule could not be read */ }
-  return n;
-}
-// the same game from ESPN, if we have it: same teams, first pitch within six hours
-function espnMatch(ev){
-  const t = teamsOf(ev), when = new Date(ev.date).getTime();
-  for (const [id, e] of S.events) {
-    if (id.startsWith('mlb-') || !realGame(e)) continue;
-    const u = teamsOf(e);
-    if (u.home.abbr === t.home.abbr && u.away.abbr === t.away.abbr && Math.abs(new Date(e.date).getTime() - when) < 6 * 3600e3) return id;
+async function loadMLBGames(){
+  const now = new Date(), d = x => x.toISOString().slice(0, 10);
+  const earlier = new Date(now.getTime() - 8 * 864e5), later = new Date(now.getTime() + 10 * 864e5);
+  let j;
+  try { j = await getJSON(`${MLB_API}/v1/schedule?sportId=1&startDate=${d(earlier)}&endDate=${d(later)}&hydrate=team,linescore`); }
+  catch (e) { j = null; }
+  if (!isMLB()) return false; // the viewer switched sports while this was loading
+  if (!j) { showErr("Can't reach MLB's game data right now. Retrying every 30 seconds."); return false; }
+  for (const day of j.dates || []) for (const g of day.games || []) {
+    const ab = g.status?.abstractGameState, det = g.status?.detailedState || '';
+    if (/postponed|cancel|suspended/i.test(det)) continue;
+    const st = ab === 'Final' ? 'post' : ab === 'Live' ? 'in' : 'pre', ls = g.linescore || {};
+    const detail = st === 'in' ? (`${ls.inningState || ''} ${ls.currentInningOrdinal || ''}`.trim() || det) : st === 'post' ? (ls.currentInning > 9 ? `Final/${ls.currentInning}` : 'Final') : det;
+    const side = ha => {
+      const x = g.teams?.[ha] || {}, lr = x.leagueRecord;
+      return {homeAway: ha, team: mlbTeamOf(x.team), score: st === 'pre' ? '' : String(x.score ?? 0), records: lr ? [{summary: `${lr.wins}-${lr.losses}`}] : []};
+    };
+    const status = {type: {state: st, shortDetail: detail, detail: det}};
+    S.events.set(String(g.gamePk), {id: String(g.gamePk), date: g.gameDate, status,
+      competitions: [{competitors: [side('home'), side('away')], venue: {fullName: g.venue?.name || ''}, notes: [{headline: g.seriesDescription || ''}], status}]});
   }
-  return null;
-}
-// list each game once, preferring ESPN's copy (it has the play-by-play), but keep MLB's status and score when ESPN's is stale
-function dropDuplicates(){
-  for (const [id, ev] of [...S.events]) {
-    if (!id.startsWith('mlb-')) continue;
-    const e = espnMatch(ev); if (!e) continue;
-    const espn = S.events.get(e);
-    if (stateOf(espn) === 'pre' && stateOf(ev) !== 'pre') { espn.status = ev.status; espn.competitions[0].status = ev.status; espn.competitions[0].competitors.forEach(x => { const m = ev.competitions[0].competitors.find(y => y.homeAway === x.homeAway); if (m) x.score = m.score; }); }
-    S.events.delete(id); if (S.fbGames) delete S.fbGames[id];
-  }
-}
-// find the ESPN game id for an MLB-schedule game, using the home team's ESPN schedule if needed
-async function resolveEspnId(ev){
-  let id = espnMatch(ev); if (id) return id;
-  const home = teamsOf(ev).home;
-  if (!home.id || home.id === 'undefined') return null;
-  try {
-    const j = await getJSON(`${API}/teams/${home.id}/schedule`), byId = Object.fromEntries((S.mlbTeams || []).map(t => [String(t.id), t]));
-    for (const e of j.events || []) {
-      const c = e.competitions?.[0]; if (!c) continue;
-      e.id = String(e.id); e.status ||= c.status;
-      for (const x of c.competitors || []) { x.team = {...(byId[String(x.team?.id || x.id)] || {}), ...(x.team || {})}; if (x.score && typeof x.score === 'object') x.score = x.score.displayValue ?? String(x.score.value ?? ''); }
-      if (realGame(e) && !S.events.has(e.id)) S.events.set(e.id, e);
-    }
-  } catch (e) { return null; }
-  return espnMatch(ev);
-}
-async function mlbScheduleFallback(earlier, later){
-  const evs = [...S.events.values()], broken = !evs.some(e => stateOf(e) === 'pre' && realGame(e)) || !evs.every(realGame);
-  for (const [id, ev] of S.events) if (!realGame(ev)) S.events.delete(id);
-  for (const [id, ev] of Object.entries(S.fbGames || {})) if (!S.events.has(id)) S.events.set(id, ev); // keep what the last rebuild found
-  dropDuplicates();
-  if (!broken || (S.fbAt && Date.now() - S.fbAt < 5 * 60e3)) return;
-  S.fbAt = Date.now(); S.fbGames ||= {};
-  const sport = S.sport, keep = ev => { if (ev && realGame(ev)) { S.fbGames[ev.id] = ev; S.events.set(ev.id, ev); } };
-  try {
-    const meta = S.mlbTeams || (S.mlbTeams = (await getJSON(API + '/teams')).sports[0].leagues[0].teams.map(x => x.team));
-    const byId = Object.fromEntries(meta.map(t => [String(t.id), t]));
-    let got = await statsApiGames(earlier, later, byId, keep);
-    try {
-      const list = await getJSON(`${CORE_MLB}/events?dates=${ymd(earlier)}-${ymd(later)}&limit=100`);
-      // finished games never change, so only unfinished ones are fetched again
-      const refs = (list.items || []).map(x => x.$ref).filter(r => { const id = (/events\/(\d+)/.exec(r) || [])[1]; return !(S.fbGames[id] && stateOf(S.fbGames[id]) === 'post'); });
-      const res = await inBatches(refs, 6, r => coreGame(r, byId));
-      if (sport !== S.sport) return;
-      for (const r of res) if (r.status === 'fulfilled' && r.value) { keep(r.value); got++; }
-      got += Object.keys(S.fbGames).length;
-    } catch (e) { /* the event index could not be read; try the team schedules */ }
-    dropDuplicates();
-    if (got) return;
-    const scheds = await inBatches(meta, 6, t => getJSON(`${API}/teams/${t.id}/schedule`));
-    if (sport !== S.sport) return;
-    for (const r of scheds) if (r.status === 'fulfilled') for (const ev of r.value.events || []) {
-      const d = new Date(ev.date); if (!(d >= earlier && d <= later)) continue;
-      const c = ev.competitions?.[0]; if (!c) continue;
-      ev.status ||= c.status; ev.id = String(ev.id);
-      for (const x of c.competitors || []) { x.team = {...(byId[String(x.team?.id || x.id)] || {}), ...(x.team || {})}; if (x.score && typeof x.score === 'object') x.score = x.score.displayValue ?? String(x.score.value ?? ''); }
-      keep(ev);
-    }
-  } catch (e) { /* keep whatever the scoreboard gave */ }
+  showErr('');
+  renderList();
+  return true;
 }
 
 /* ================= game list ================= */
@@ -491,10 +436,25 @@ const FALLBACK = {QB:[12], RB:[28,32], WR:[11,13,81], TE:[87], OL:[70,71,72,73,7
 
 // MLB positions, grouped the way a baseball roster reads
 const MLB_SIDE = {SP: 'PITCHERS', RP: 'PITCHERS', P: 'PITCHERS', C: 'CATCHERS', '1B': 'INFIELDERS', '2B': 'INFIELDERS', '3B': 'INFIELDERS', SS: 'INFIELDERS', IF: 'INFIELDERS',
-  LF: 'OUTFIELDERS', CF: 'OUTFIELDERS', RF: 'OUTFIELDERS', OF: 'OUTFIELDERS', DH: 'DESIGNATED HITTERS'};
+  LF: 'OUTFIELDERS', CF: 'OUTFIELDERS', RF: 'OUTFIELDERS', OF: 'OUTFIELDERS', DH: 'DESIGNATED HITTERS', TWP: 'TWO-WAY PLAYERS'};
+const MLB_GROUPS = ['PITCHERS', 'CATCHERS', 'INFIELDERS', 'OUTFIELDERS', 'DESIGNATED HITTERS', 'TWO-WAY PLAYERS', 'OTHER'];
+function mlbRosterPlayer(x, it){
+  const pos = it?.position?.abbreviation || x.primaryPosition?.abbreviation || '', num = it?.jerseyNumber || x.primaryNumber;
+  return {num: num != null && num !== '' ? Number(num) : null, first: x.useName || x.firstName || '', last: x.lastName || (x.fullName || '').split(' ').slice(-1)[0] || '',
+    grp: pos, side: MLB_SIDE[pos] || 'OTHER', id: String(x.id), name: x.fullName || '', pos, posName: it?.position?.name || x.primaryPosition?.name || '',
+    bats: x.batSide?.code || '', age: x.currentAge, ht: x.height, wt: x.weight ? x.weight + ' lbs' : '', exp: null, college: ''};
+}
 async function loadRoster(team){
   if (S.roster[team.id]) return;
   const pools = {}, all = [], byId = {};
+  if (isMLB()) {
+    try {
+      const d = await getJSON(`${MLB_API}/v1/teams/${team.id}/roster?rosterType=active&hydrate=person`);
+      for (const it of d.roster || []) { if (!it.person?.id) continue; const p = mlbRosterPlayer(it.person, it); all.push(p); byId[p.id] = p; }
+    } catch (e) { /* the roster fills in from the game's box score */ }
+    S.roster[team.id] = {pools, all, byId}; S.over[team.id] = {};
+    return;
+  }
   try {
     const d = await getJSON(`${API}/teams/${team.id}/roster`);
     for (const g of d.athletes || []) for (const it of g.items || [g]) {
@@ -1143,7 +1103,6 @@ const MB = {FW: 960, FH: 500, KX: 1.3, KY: 0.75, PLX: 480, PLY: 470};
 const BASE = [[0, 0], [63.6, 63.6], [0, 127.3], [-63.6, 63.6], [0, 0]];
 const STATION = {P: [0, 58], C: [0, -5], '1B': [70, 86], '2B': [30, 138], SS: [-32, 138], '3B': [-70, 86], LF: [-150, 262], CF: [0, 310], RF: [150, 262]};
 const DEF_POS = ['P', 'C', '1B', '2B', 'SS', '3B', 'LF', 'CF', 'RF'];
-const BASEW = {first: 1, second: 2, third: 3, home: 4};
 const mcx = x => MB.PLX + x * MB.KX, mcy = y => MB.PLY - y * MB.KY;
 const isMLB = () => S.sport === 'mlb';
 // Real outfield walls (posted distances from each park's Wikipedia infobox, checked 2026-10-05).
@@ -1182,7 +1141,7 @@ const PARKS = {
   TOR: {name: 'Rogers Centre', f: [328, 368, 400, 359, 328]},
   WSH: {name: 'Nationals Park', f: [337, 377, 402, 370, 335]}
 };
-PARKS.OAK = PARKS.ATH; PARKS.WSN = PARKS.WSH; PARKS.CWS = PARKS.CHW; PARKS.KCR = PARKS.KC; PARKS.SDP = PARKS.SD; PARKS.SFG = PARKS.SF; PARKS.TBR = PARKS.TB;
+PARKS.AZ = PARKS.ARI; PARKS.OAK = PARKS.ATH; PARKS.WSN = PARKS.WSH; PARKS.CWS = PARKS.CHW; PARKS.KCR = PARKS.KC; PARKS.SDP = PARKS.SD; PARKS.SFG = PARKS.SF; PARKS.TBR = PARKS.TB;
 const PARK_GENERIC = {name: '', f: [330, 375, 400, 375, 330]};
 const ptsOf = park => [...[-45, -22, 0, 22, 45].map((d, i) => [d, park.f[i]]).filter(q => q[1] != null), ...(park.x || [])].sort((a, b) => a[0] - b[0]);
 const lerpPts = (pts, deg) => {
@@ -1212,14 +1171,14 @@ function kitMLB(team, isHome){
 // team logos for the dugout signs; the field is redrawn once one arrives
 const LOGOS = {};
 function teamLogo(t){
-  const url = t.logo || `https://a.espncdn.com/i/teamlogos/mlb/500/${String(t.abbr).toLowerCase()}.png`;
+  const url = t.logo; if (!url) return null;
   let im = LOGOS[url];
   if (!im) {
     im = LOGOS[url] = new Image();
-    im.onload = () => { if (isMLB() && (S.home === t || S.away === t)) buildField(); };
+    im.onload = () => { im.ok = true; if (isMLB() && (S.home === t || S.away === t)) buildField(); };
     im.src = url;
   }
-  return im.complete && im.naturalWidth ? im : null;
+  return im.ok ? im : null;
 }
 function buildDiamond(){
   const c = document.createElement('canvas'); c.width = MB.FW; c.height = MB.FH;
@@ -1304,32 +1263,124 @@ function mlbReset(){
   S.camX = MB.PLX; S.camY = MB.FH - H / 2;
   S.ball.x = 2; S.ball.y = 57; S.ball.h = 2; S.ball.vis = true;
 }
-const rosterById = (team, id) => (id && S.roster[team?.id]?.byId?.[id]) || null;
-function personOf(team, id, name){
-  const r = rosterById(team, id) || (name ? (S.roster[team?.id]?.all || []).find(x => x.name.toLowerCase() === name.toLowerCase()) : null);
-  const nm = r?.name || name || '';
-  return {id: id || r?.id || null, num: r?.num ?? null, name: nm, last: r?.last || nm.split(' ').slice(-1)[0] || '', bats: r?.bats || ''};
+/* ---- MLB's live game feed, turned into the page's list of plays ---- */
+// Each at-bat in the feed becomes: "Now batting", one item per pitch, one per runner play (steals, wild pitches,
+// pickoffs) or substitution, and the at-bat's result. Counts, outs, runners and scores come straight from the feed.
+const BASE_NUM = {'1B': 1, '2B': 2, '3B': 3, '4B': 4, HM: 4, score: 4};
+const POS_CODE = {1: 'P', 2: 'C', 3: '1B', 4: '2B', 5: '3B', 6: 'SS', 7: 'LF', 8: 'CF', 9: 'RF'};
+const ordinal = n => n + ((n % 100 >= 11 && n % 100 <= 13) ? 'th' : ({1: 'st', 2: 'nd', 3: 'rd'}[n % 10] || 'th'));
+const tidy = t => String(t || '').replace(/\s+/g, ' ').trim();
+const RESULT_KIND = {single: 'single', double: 'double', triple: 'triple', home_run: 'hr', walk: 'walk', intent_walk: 'walk', hit_by_pitch: 'hbp',
+  catcher_interf: 'walk', strikeout: 'k', strikeout_double_play: 'k', strikeout_triple_play: 'k', grounded_into_double_play: 'dp', double_play: 'dp',
+  triple_play: 'dp', sac_fly_double_play: 'dp', sac_bunt_double_play: 'dp', force_out: 'fc', fielders_choice: 'fc', fielders_choice_out: 'fc',
+  field_error: 'error', error: 'error', sac_fly: 'sac', sac_bunt: 'sac', field_out: 'out'};
+const TRAJ = {ground_ball: 'ground', bunt_grounder: 'ground', line_drive: 'line', bunt_line_drive: 'line', fly_ball: 'fly', popup: 'pop', bunt_popup: 'pop'};
+function actionKind(et){
+  if (/^stolen_base/.test(et)) return 'sb';
+  if (/caught_stealing/.test(et)) return 'cs';
+  if (/^pickoff/.test(et)) return /error/.test(et) ? 'adv' : 'pickoff';
+  if (/wild_pitch|passed_ball/.test(et)) return 'wp';
+  if (/balk|defensive_indiff|other_advance|other_out|runner_double_play|error/.test(et)) return 'adv';
+  if (/substitution|defensive_switch/.test(et)) return 'sub';
+  return 'admin';
 }
-function mlbPerson(p, type, team){
-  const pa = (p.participants || []).find(x => String(x.type || '').toLowerCase() === type);
-  if (!pa?.athlete?.id || !team) return null;
-  const who = personOf(team, String(pa.athlete.id), pa.athlete.displayName || pa.athlete.fullName);
-  const bats = p.bats?.abbreviation || p.bats?.type || (typeof p.bats === 'string' ? p.bats : '');
-  if (type === 'batter' && bats) who.bats = bats;
-  return who;
+// everyone in the game, by MLB id; kept across refreshes so the same player is always the same object
+function feedPeople(feed){
+  const P = S.people || (S.people = {});
+  for (const x of Object.values(feed?.gameData?.players || {})) {
+    if (x?.id == null) continue;
+    const q = P[x.id] || (P[x.id] = {id: String(x.id)});
+    Object.assign(q, {name: x.fullName || q.name || '', last: x.lastName || (x.fullName || '').split(' ').slice(-1)[0] || '', bats: q.bats || x.batSide?.code || '',
+      num: q.num ?? (x.primaryNumber != null && x.primaryNumber !== '' ? Number(x.primaryNumber) : null)});
+  }
+  for (const side of ['home', 'away']) for (const x of Object.values(feed?.liveData?.boxscore?.teams?.[side]?.players || {})) {
+    const q = P[x.person?.id]; if (q && x.jerseyNumber != null && x.jerseyNumber !== '') q.num = Number(x.jerseyNumber);
+  }
+  return P;
 }
-// the batting order's fielders: who plays where, from the box score
-function mlbLineups(sum){
-  S.lineup = {};
-  for (const tp of sum?.boxscore?.players || []) {
-    const tid = String(tp.team?.id || ''), m = S.lineup[tid] = {}, team = tid === S.home?.id ? S.home : tid === S.away?.id ? S.away : null;
-    for (const cat of tp.statistics || []) for (const a of cat.athletes || []) {
-      const pos = a.position?.abbreviation, id = String(a.athlete?.id || '');
-      if (!DEF_POS.includes(pos) || (m[pos] && !a.starter) || (m[pos]?.starter)) continue;
-      const who = personOf(team, id, a.athlete?.displayName);
-      if (who.num == null && a.athlete?.jersey != null) who.num = Number(a.athlete.jersey);
-      who.starter = !!a.starter; m[pos] = who;
+const personFor = (P, x) => x?.id == null ? null : (P[x.id] || (P[x.id] = {id: String(x.id), num: null, name: x.fullName || '', last: (x.fullName || '').split(' ').slice(-1)[0] || '', bats: ''}));
+// one entry per runner: a runner can show up more than once in a play (to first on the hit, then to second on the throw)
+function runnerMoves(list){
+  const by = new Map();
+  for (const r of list) {
+    const id = r.details?.runner?.id, m = r.movement || {}; if (id == null) continue;
+    const end = m.isOut ? null : (BASE_NUM[m.end] ?? null), at = m.isOut ? (BASE_NUM[m.outBase] || null) : null, k = by.get(id);
+    if (!k) by.set(id, {id: String(id), from: BASE_NUM[m.start] || 0, to: end, out: !!m.isOut, at});
+    else { k.to = end ?? k.to; if (m.isOut) { k.out = true; k.to = null; k.at = at || k.at; } }
+  }
+  return [...by.values()];
+}
+function feedPlays(feed){
+  const P = feedPeople(feed), out = [];
+  let half = null, h = 0, a = 0;
+  for (const ap of feed?.liveData?.plays?.allPlays || []) {
+    const ab = ap.about || {}, i = ab.atBatIndex, top = ab.isTopInning ?? ab.halfInning === 'top', inn = ab.inning || 0;
+    const period = {number: inn, type: top ? 'Top' : 'Bottom'}, key = (top ? 'T' : 'B') + inn;
+    const add = (id, text, f, extra) => out.push(Object.assign({id: String(id), text, period, homeScore: h, awayScore: a, f}, extra || {}));
+    if (key !== half) { half = key; add('h' + key, `${top ? 'Top' : 'Bottom'} of the ${ordinal(inn)}`, {kind: 'admin'}); }
+    const m = ap.matchup || {}, batter = personFor(P, m.batter), pitcher = personFor(P, m.pitcher);
+    if (batter && m.batSide?.code) batter.bats = m.batSide.code; // switch hitters pick a side each at-bat
+    add(i + '-ab', `Now batting: ${batter?.name || 'the next hitter'}${pitcher ? ', facing ' + pitcher.name : ''}.`, {kind: 'admin', atbat: true, batter, pitcher});
+    const evs = ap.playEvents || [], runners = ap.runners || [], used = new Set();
+    const byIdx = new Map(); for (const r of runners) { const k = r.details?.playIndex; if (!byIdx.has(k)) byIdx.set(k, []); byIdx.get(k).push(r); }
+    let hit = null;
+    for (const e of evs) {
+      const d = e.details || {}, c = e.count || {};
+      if (e.isPitch) {
+        const t = d.description || d.call?.description || 'Pitch';
+        const sub = d.isInPlay ? 'inplay' : (d.call?.code === 'H' || /hit by pitch/i.test(t)) ? 'hbp' : /foul tip/i.test(t) ? 'swing' : /foul/i.test(t) ? 'foul'
+          : /swinging|missed bunt/i.test(t) ? 'swing' : d.isStrike ? 'called' : 'ball';
+        if (e.hitData) hit = e.hitData;
+        add(`${i}-${e.index}`, d.isInPlay || c.balls > 3 || c.strikes > 2 ? t : `${t} (${c.balls ?? 0}-${c.strikes ?? 0})`, {kind: 'pitch', sub, batter},
+          {resultCount: {balls: c.balls, strikes: c.strikes}, pitchVelocity: e.pitchData?.startSpeed ? Math.round(e.pitchData.startSpeed) : null,
+           pitchType: d.type?.description ? {text: d.type.description} : null});
+        continue;
+      }
+      if (e.type !== 'action') continue;
+      const kind = actionKind(d.eventType || ''), list = byIdx.get(e.index) || [];
+      if (kind === 'admin' && !list.length) continue; // timeouts, status notes, mound visits
+      used.add(e.index);
+      if (d.awayScore != null) a = d.awayScore; if (d.homeScore != null) h = d.homeScore;
+      add(`${i}-${e.index}`, tidy(d.description), {kind: kind === 'admin' ? 'adv' : kind, runners: list.length ? runnerMoves(list) : null, outs: c.outs,
+        pitcher: d.eventType === 'pitching_substitution' && e.player ? personFor(P, e.player) : null}, {scoringPlay: !!d.isScoringPlay});
     }
+    const r = ap.result || {};
+    if (!ab.isComplete || r.type !== 'atBat') continue;
+    const et = r.eventType || '';
+    let kind = RESULT_KIND[et];
+    if (!kind) {
+      // the at-bat ended on a runner play (caught stealing for the third out, say), which was already shown above
+      if (evs.some(e => used.has(e.index) && e.details?.eventType === et)) continue;
+      kind = actionKind(et); if (kind === 'admin' || kind === 'sub') kind = 'adv';
+    }
+    if (kind === 'out') kind = {ground: 'groundout', fly: 'flyout', line: 'lineout', pop: 'popout'}[TRAJ[hit?.trajectory]] || 'out';
+    if (r.awayScore != null) a = r.awayScore; if (r.homeScore != null) h = r.homeScore;
+    const post = [null, m.postOnFirst, m.postOnSecond, m.postOnThird].map(x => personFor(P, x));
+    add(i + '-r', tidy(r.description), {kind, result: true, batter, pitcher, hit, runners: runnerMoves(runners.filter(x => !used.has(x.details?.playIndex))),
+      outs: ap.count?.outs, post, ibb: et === 'intent_walk', looking: /called out on strikes|looking/i.test(r.description || '')}, {scoringPlay: !!ab.isScoringPlay});
+  }
+  return out;
+}
+// the starting nine from the box score, and in a live game whoever is on the field right now
+function mlbLineups(feed){
+  S.lineup = {};
+  const P = feedPeople(feed), bs = feed?.liveData?.boxscore?.teams || {};
+  for (const side of ['home', 'away']) {
+    const team = side === 'home' ? S.home : S.away, m = S.lineup[team.id] = {}, tb = bs[side] || {}, R = S.roster[team.id];
+    for (const x of Object.values(tb.players || {})) {
+      const id = x.person?.id; if (id == null) continue;
+      const bo = Number(x.battingOrder) || 0, pos = x.allPositions?.[0]?.abbreviation || x.position?.abbreviation;
+      if (bo && bo % 100 === 0 && DEF_POS.includes(pos) && P[id]) m[pos] = P[id];
+      // anyone who played but isn't on the active roster still gets a page in the team panel
+      if (R && !R.byId[String(id)] && P[id]) { const q = mlbRosterPlayer({id, fullName: P[id].name, lastName: P[id].last, primaryNumber: P[id].num, primaryPosition: x.position}, x); R.all.push(q); R.byId[q.id] = q; }
+    }
+    const sp = tb.pitchers?.[0]; if (sp != null && P[sp]) m.P = P[sp];
+  }
+  const df = feed?.liveData?.linescore?.defense;
+  if (df?.team?.id != null && feed?.gameData?.status?.abstractGameState === 'Live') {
+    const m = S.lineup[String(df.team.id) === S.home.id ? S.home.id : S.away.id];
+    const spot = {pitcher: 'P', catcher: 'C', first: '1B', second: '2B', third: '3B', shortstop: 'SS', left: 'LF', center: 'CF', right: 'RF'};
+    for (const k in spot) if (df[k]?.id != null && P[df[k].id]) m[spot[k]] = P[df[k].id];
   }
 }
 function mlbNum(team, pos){
@@ -1352,32 +1403,22 @@ function mlbSyncHalf(p){
 }
 
 /* ---- reading a play ---- */
-const PITCH_RE = /^(ball\b|strike\b|foul\b|in play|ball in dirt|swinging strike|called strike|foul tip|foul bunt|missed bunt|pitchout|automatic (ball|strike)|intent(ional)? ball|hit by pitch$)/i;
-const BAT_KINDS = [[/homered|home run|grand slam/i, 'hr'], [/tripled/i, 'triple'], [/doubled/i, 'double'], [/singled/i, 'single'],
-  [/hit by (a )?pitch/i, 'hbp'], [/walked/i, 'walk'], [/struck out/i, 'k'], [/double play|triple play/i, 'dp'], [/fielder'?s choice/i, 'fc'],
-  [/\berror\b|reached on/i, 'error'], [/sacrifice|sac fly|sac bunt/i, 'sac'], [/grounded|ground out|groundout|bunted out|forced out/i, 'groundout'],
-  [/flied|fly out|flyout/i, 'flyout'], [/lined (out|into)|lineout|line out/i, 'lineout'], [/popped|pop out|fouled out|foul out/i, 'popout']];
-const RUN_KINDS = [[/caught stealing/i, 'cs'], [/picked off/i, 'pickoff'], [/\bstole\b|\bsteals\b/i, 'sb'], [/wild pitch|passed ball|\bbalk\b|defensive indifference/i, 'wp']];
 const IN_PLAY = ['single', 'double', 'triple', 'hr', 'groundout', 'flyout', 'lineout', 'popout', 'dp', 'fc', 'error', 'sac', 'out'];
 function clausesOf(tx){ return tx.replace(/\([^)]*\)/g, '').split(/\s*[,;]\s*|\s+and\s+(?=[A-Z])/).map(s => s.trim().replace(/\.$/, '')).filter(Boolean); }
-const RUNNER_RE = /^(.*?)\s+(scored|to (first|second|third|home)|advanced to (second|third|home)|out at (first|second|third|home)|thrown out at (first|second|third|home)|out stretching at (second|third|home)|stole (second|third|home)|caught stealing (second|third|home)|picked off(?: at| of)? (first|second|third))\b/i;
-function classifyMLB(p){
-  // ESPN writes pitches as "Pitch 3 : Strike 2 Swinging"; the at-bat result follows as its own play
-  const tx = (p.text || '').trim().replace(/^pitch \d+\s*:\s*/i, ''), ty = (p.type?.text || '').trim(), t = tx || ty;
-  if (!t) return {kind: 'admin'};
-  if (/ pitches to /i.test(t)) return {kind: 'admin', atbat: true};
-  if (/^(top|bottom|middle|mid|end|start|beginning)\b/i.test(t) && /\b\d+(st|nd|rd|th)\b|inning/i.test(t)) return {kind: 'admin'};
-  if (PITCH_RE.test(t) || (!tx && PITCH_RE.test(ty))) {
-    const l = t.toLowerCase();
-    return {kind: 'pitch', sub: /in play/.test(l) ? 'inplay' : /hit by pitch/.test(l) ? 'hbp' : /foul tip/.test(l) ? 'swing' : /foul/.test(l) ? 'foul' : /swing|missed/.test(l) ? 'swing' : /strike/.test(l) ? 'called' : 'ball'};
-  }
-  const first = clausesOf(tx)[0] || '';
-  for (const [re, k] of BAT_KINDS) if (re.test(first)) return {kind: k};
-  if (/pitch(er|ing) change|replaces|lineup change|defensive (switch|sub)|pinch[- ]|mound visit|challenge|review|enters the game|moves to|remains in|warming|ejected|delay/i.test(tx)) return {kind: 'sub'};
-  for (const [re, k] of RUN_KINDS) if (re.test(tx)) return {kind: k};
-  if (RUNNER_RE.test(first)) return {kind: 'adv'};
-  if (/\bout\b/i.test(first)) return {kind: 'out'};
-  return {kind: 'admin'};
+// where a batted ball went: MLB's hit chart puts home plate at (125.42, 198.27), about 2.5 feet per unit
+function nearestFielder(x, y){
+  let best = 'SS', bd = 1e9;
+  for (const ps of DEF_POS) { if (ps === 'C' || ps === 'P') continue; const [sx, sy] = STATION[ps], dd = Math.hypot(sx - x, sy - y); if (dd < bd) { bd = dd; best = ps; } }
+  return best;
+}
+function spotFromHit(hit, kind){
+  const c = hit?.coordinates; if (!c || c.coordX == null || c.coordY == null) return null;
+  let x = (c.coordX - 125.42) * 2.5, y = (198.27 - c.coordY) * 2.5;
+  const deg = clamp(Math.atan2(x, Math.max(1, y)) * 180 / Math.PI, -50, 50);
+  let traj = TRAJ[hit.trajectory] || (['groundout', 'dp', 'fc'].includes(kind) ? 'ground' : 'fly');
+  if (kind === 'hr') { [x, y] = polar(deg, Math.max(hit.totalDistance || 0, Math.hypot(x, y), fenceR(deg) + 18)); traj = 'hr'; }
+  else { const cap = fenceR(deg) - 6; if (Math.hypot(x, y) > cap) [x, y] = polar(deg, cap); }
+  return {x, y, traj, deg, pos: POS_CODE[hit.location] || nearestFielder(x, y)};
 }
 // where a batted ball goes, read from the words in the play
 function hitSpot(cl, kind, tx, seed){
@@ -1422,90 +1463,46 @@ function hitSpot(cl, kind, tx, seed){
   if (kind === 'popout') return out(...polar(deg, 160 + deep), 'pop', deg);
   return out(...polar(deg, Math.min(fenceR(deg) - 16, 280 + deep)), traj === 'line' ? 'line' : 'fly', deg); // fly outs, sac flies, errors on fly balls
 }
-function findRunnerBase(pre, name, moved, to, out, at, v){
-  const nm = (name || '').toLowerCase();
-  for (let b = 3; b >= 1; b--) if (pre[b] && !moved.has(b) && pre[b].last && nm.includes(pre[b].last.toLowerCase())) return b;
-  const cands = [3, 2, 1].filter(b => pre[b] && !moved.has(b));
-  if (!cands.length) return null;
-  if (/picked off/.test(v) && at && cands.includes(at)) return at;
-  if (/caught stealing/.test(v) && at && cands.includes(at - 1)) return at - 1;
-  if (to != null) return cands.find(b => b < to) ?? null;
-  if (out && at) return cands.find(b => b < at) ?? cands[cands.length - 1];
-  return cands[0];
-}
 // what a play does: who bats, where everyone ends up, how many outs. Computed once, before the play is shown.
 function outcomeMLB(p){
   const halfChanged = mlbSyncHalf(p);
-  const st = S.mlb, c = classifyMLB(p), tx = (p.text || '').replace(/\s+/g, ' ').trim();
-  const o = {kind: c.kind, sub: c.sub, atbat: !!c.atbat, halfChanged, moves: [], outsAdd: 0, after: null, atBatOver: false, bDest: 0, runs: 0};
-  const bat = st.batting, fld = st.fielding;
-  o.batter = mlbPerson(p, 'batter', bat);
-  const pit = mlbPerson(p, 'pitcher', fld); if (pit && fld) st.pitcher[fld.id] = pit;
-  if (['pitch', 'admin', 'sub'].includes(c.kind) || !bat) return o;
-  const cls = clausesOf(tx), isBat = IN_PLAY.includes(c.kind) || ['walk', 'hbp', 'k'].includes(c.kind);
-  if (isBat) {
-    o.atBatOver = true;
-    if (!o.batter) {
-      const nm = (/^(.*?)\s+(singled|doubled|tripled|homered|walked|intentionally|struck|grounded|flied|lined|popped|fouled|hit|reached|sacrificed|bunted|out|was|safe)\b/i.exec(cls[0] || '') || [])[1];
-      o.batter = st.batter && (!nm || nm.toLowerCase().includes((st.batter.last || '#').toLowerCase())) ? st.batter : personOf(bat, null, nm || '');
-    }
-    o.spot = IN_PLAY.includes(c.kind) ? hitSpot(cls[0], c.kind, tx, p.id) : null;
+  const st = S.mlb, f = p.f || {kind: 'admin'};
+  const o = {kind: f.kind, sub: f.sub, atbat: !!f.atbat, ibb: !!f.ibb, looking: !!f.looking, halfChanged, moves: [], outsAdd: 0, after: null,
+    atBatOver: !!f.result, bDest: 0, runs: 0, batter: f.batter || null};
+  if (f.pitcher && st.fielding) st.pitcher[st.fielding.id] = f.pitcher;
+  if (IN_PLAY.includes(o.kind)) o.spot = spotFromHit(f.hit, o.kind) || hitSpot(clausesOf(p.text || '')[0], o.kind, p.text || '', p.id);
+  if (!f.runners || !st.batting) return o;
+  const pre = st.bases.slice(), moved = new Set();
+  for (const r of f.runners) {
+    if (f.result && !r.from && (!o.batter || r.id === o.batter.id)) { o.bDest = r.out ? -1 : (r.to || 0); continue; } // the batter
+    const b = r.from || [3, 2, 1].find(x => pre[x]?.id === r.id); if (!b || moved.has(b)) continue;
+    moved.add(b);
+    o.moves.push({from: b, to: r.out ? null : r.to, out: r.out, at: r.out ? (r.at || Math.min(4, b + 1)) : null, r: pre[b] || S.people?.[r.id] || {id: r.id, num: null, name: '', last: ''}});
   }
-  const pre = st.bases.slice(), moved = new Set(), moves = [];
-  let bDest = isBat ? ({single: 1, double: 2, triple: 3, hr: 4, walk: 1, hbp: 1, error: 1, fc: 1}[c.kind] ?? -1) : 0;
-  if (c.kind === 'k' && /reached|to first/i.test(tx)) bDest = 1;
-  for (const cl of isBat ? cls.slice(1) : cls) {
-    const m = RUNNER_RE.exec(cl); if (!m) continue;
-    // "shortstop to second to first" describes the throws, not a runner: runners are named people
-    if (!/^[A-Z]/.test(m[1].trim())) continue;
-    const name = m[1], v = m[2].toLowerCase(), word = v.split(' ').pop();
-    let to = null, out = false, at = null;
-    if (v === 'scored') to = 4;
-    else if (/out|caught|picked/.test(v)) { out = true; at = BASEW[word]; }
-    else to = BASEW[word];
-    // the batter can turn up in a later clause ("Soto to second on the throw")
-    if (isBat && o.batter?.last && name.toLowerCase().includes(o.batter.last.toLowerCase()) && !pre.some(r => r && r.last && r.last === o.batter.last)) {
-      if (out) bDest = -1; else if (to) bDest = Math.max(bDest, to);
-      continue;
-    }
-    const b = findRunnerBase(pre, name, moved, to, out, at, v);
-    if (b == null) continue;
-    moved.add(b); moves.push({from: b, to: out ? null : to, out, at: out ? (at || Math.min(4, b + 1)) : null, r: pre[b]});
+  let after = [null, null, null, null];
+  if (f.post) after = f.post.slice(); // MLB says who is on base once the at-bat is over
+  else {
+    for (let b = 1; b <= 3; b++) if (pre[b] && !moved.has(b)) after[b] = pre[b];
+    for (const mv of o.moves) if (!mv.out && mv.to >= 1 && mv.to <= 3) after[mv.to] = mv.r;
   }
-  if (c.kind === 'hr') { for (let b = 1; b <= 3; b++) if (pre[b] && !moved.has(b)) { moved.add(b); moves.push({from: b, to: 4, r: pre[b]}); } }
-  else if (bDest >= 1) {
-    // runners the batter forces ahead of him move up even when the text doesn't say so
-    let occ = Math.min(bDest, 3);
-    for (let b = 1; b <= 3; b++) {
-      if (!pre[b] || moved.has(b) || b > occ) continue;
-      const to = Math.min(4, occ + 1); moved.add(b); moves.push({from: b, to, r: pre[b]}); if (to < 4) occ = to;
-    }
-  }
-  if (c.kind === 'dp' && !moves.some(m => m.out)) { const b = [1, 2, 3].find(x => pre[x] && !moved.has(x)); if (b) { moved.add(b); moves.push({from: b, to: null, out: true, at: b + 1, r: pre[b]}); } }
-  const after = [null, null, null, null];
-  for (let b = 1; b <= 3; b++) if (pre[b] && !moved.has(b)) after[b] = pre[b];
-  for (const mv of moves) if (!mv.out && mv.to >= 1 && mv.to <= 3) after[mv.to] = mv.r;
-  if (bDest >= 1 && bDest <= 3) after[bDest] = o.batter || {id: null, num: null, name: '', last: ''};
-  o.moves = moves; o.after = after; o.bDest = bDest;
-  o.outsAdd = moves.filter(m => m.out).length + (isBat && bDest < 0 ? 1 : 0);
-  o.runs = moves.filter(m => m.to === 4).length + (bDest === 4 ? 1 : 0);
+  o.after = after;
+  o.outsAdd = o.moves.filter(m => m.out).length + (o.bDest < 0 ? 1 : 0);
+  o.runs = o.moves.filter(m => m.to === 4).length + (o.bDest === 4 ? 1 : 0);
   return o;
 }
 function mlbApply(p, o){
-  const st = S.mlb;
+  const st = S.mlb, f = p.f || {};
   if (o.kind === 'pitch') {
     if (o.batter) st.batter = o.batter;
     const rc = p.resultCount;
     if (rc && Number.isFinite(+rc.balls) && Number.isFinite(+rc.strikes)) { st.balls = +rc.balls; st.strikes = +rc.strikes; }
-    else if (o.sub === 'ball') st.balls = Math.min(4, st.balls + 1);
-    else if (o.sub === 'called' || o.sub === 'swing') st.strikes = Math.min(3, st.strikes + 1);
-    else if (o.sub === 'foul' && st.strikes < 2) st.strikes++;
     st.lastPitch = true;
   } else if (o.atbat) {
     if (o.batter) st.batter = o.batter;
+    st.balls = 0; st.strikes = 0; st.lastPitch = false;
   } else if (o.after) {
-    st.bases = o.after; st.outs = Math.min(3, st.outs + o.outsAdd);
-    if (Number.isFinite(+p.outs) && p.outs !== null && +p.outs > st.outs && +p.outs <= 3) st.outs = +p.outs;
+    st.bases = o.after;
+    st.outs = Number.isFinite(+f.outs) && f.outs !== null ? Math.min(3, +f.outs) : Math.min(3, st.outs + o.outsAdd);
     if (o.atBatOver) { st.balls = 0; st.strikes = 0; st.batter = null; st.lastPitch = false; }
     if (st.outs >= 3) { st.bases = [null, null, null, null]; st.batter = null; }
   }
@@ -1637,7 +1634,7 @@ function planMLB(p){
       seg(tc + tr * 0.75, tc + tr, {k: 'arc', x0: q(0.75)[0], y0: q(0.75)[1], x1: L[0], y1: L[1], peak: 2});
       go(fd, tc + Math.min(tr - 0.05, 0.9), L[0], L[1]);
       tBall = tc + tr;
-      if (['single', 'double', 'triple'].includes(o.kind)) {
+      if (['single', 'double', 'triple'].includes(o.kind) && dist < 150) {
         // through the infield: it rolls on to an outfielder
         const of = A(sp.x < -40 ? 'LF' : sp.x > 40 ? 'RF' : 'CF'), R = [L[0] * 1.6, L[1] * 1.6];
         seg(tBall, tBall + 1.1, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 3});
@@ -1690,7 +1687,7 @@ function planMLB(p){
     if (o.bDest === 4 && bat) go(bat, tEnd + 1.2, ...dugoutOf(st.batting));
   } else if (['walk', 'hbp', 'k'].includes(o.kind)) {
     let t0 = 0.2;
-    if (!st.lastPitch) t0 = pitch(0, o.kind === 'k' ? (/looking|called/i.test(p.text || '') ? 'called' : 'swing') : o.kind === 'hbp' ? 'hbp' : 'ball') + 0.3;
+    if (!st.lastPitch) t0 = pitch(0, o.kind === 'k' ? (o.looking ? 'called' : 'swing') : o.kind === 'hbp' ? 'hbp' : 'ball') + 0.3;
     else seg(0, 30, {k: 'hold', a: pit});
     if (o.kind === 'k' || o.bDest < 1) { hold(bat, t0); go(bat, t0 + 2.4, ...dugoutOf(st.batting)); tEnd = t0 + 1.6; }
     else {
@@ -1789,8 +1786,8 @@ const ASIDES_MLB = {
 const fillM = (t, p) => t.replace(/\{bat\}/g, S.mlb.batting?.loc || '').replace(/\{fld\}/g, S.mlb.fielding?.loc || '').replace(/\{player\}/g, p._o?.batter?.last || S.mlb.batting?.nick || 'he');
 function colorLineMLB(p, o){
   let key = o.kind;
-  if (key === 'k' && /looking|called/i.test(p.text || '')) key = 'kl';
-  if (key === 'walk' && /intentional/i.test(p.text || '')) key = 'ibb';
+  if (key === 'k' && o.looking) key = 'kl';
+  if (key === 'walk' && o.ibb) key = 'ibb';
   if (key === 'sub') key = /pitch(er|ing) change|pitching/i.test(p.text || '') ? 'pitchChange' : null;
   if (key === 'out') key = o.spot?.traj === 'ground' ? 'groundout' : 'flyout';
   if (!key || !LINES_MLB[key]) return null;
@@ -1820,11 +1817,11 @@ function dukeAsideMLB(p, o, before){
 }
 const NUMW = ['zero', 'one', 'two', 'three', 'four'];
 function pitchCall(p, o){
-  const t = (p.text || p.type?.text || '').toLowerCase(), n = (t.match(/(?:ball|strike) (\d)/) || [])[1], w = n != null ? (NUMW[n] || n) : null;
+  const c = p.resultCount || {}, b = +c.balls, k = +c.strikes;
   if (o.sub === 'foul') return pickFresh(['Fouled off.', 'Foul ball.', 'Fouled back.', 'Spoiled that one.', 'Foul, down the line.'], p.id + 'foul');
-  if (o.sub === 'ball') return w ? `Ball ${w}.` : 'Ball.';
-  if (o.sub === 'called') return w ? `Strike ${w}, called.` : 'Called strike.';
-  if (o.sub === 'swing') return w ? `Swing and a miss, strike ${w}.` : 'Swing and a miss.';
+  if (o.sub === 'ball') return b >= 1 && b <= 3 ? `Ball ${NUMW[b]}.` : 'Ball.';
+  if (o.sub === 'called') return k >= 1 && k <= 2 ? `Strike ${NUMW[k]}, called.` : 'Called strike.';
+  if (o.sub === 'swing') return k >= 1 && k <= 2 ? `Swing and a miss, strike ${NUMW[k]}.` : 'Swing and a miss.';
   if (o.sub === 'hbp') return 'Hit by the pitch!';
   return '';
 }
@@ -1867,7 +1864,7 @@ async function runPlayMLB(p, fast, tok){
     await sleep(S.voices ? 150 : 450);
     return;
   }
-  const pbp = speechText(p.text || ''); // ESPN's empty "End Batter/Pitcher" markers stay silent
+  const pbp = speechText(p.text || '');
   if (pbp) await say('A', pbp, tok);
   if (tok !== S.token) return;
   const col = colorLineMLB(p, o);
@@ -1900,7 +1897,7 @@ function buildReplayMLB(plays){
     const nh = p.homeScore ?? hs, na = p.awayScore ?? as, dh = nh - hs, da = na - as;
     if (dh > 0 || da > 0) {
       const pts = Math.max(dh, da), team = dh >= da ? S.home : S.away;
-      scores.push({i, team, kind: /homered|home run|grand slam/i.test(p.text || '') ? 'HR' : `${pts} RUN${pts > 1 ? 'S' : ''}`, a: na, h: nh});
+      scores.push({i, team, kind: p.f?.kind === 'hr' ? 'HR' : `${pts} RUN${pts > 1 ? 'S' : ''}`, a: na, h: nh});
     }
     hs = nh; as = na;
   });
@@ -2054,7 +2051,7 @@ function applyState(p, plan){
   S.fdX = S.down && S.toGo != null && S.toGo < 30 ? clamp(S.ball.x + S.offDir * S.toGo, 0, 100) : null;
 }
 function addLog(p){
-  if (isMLB() && !(p.text || '').trim()) return; // skip ESPN's empty end-of-at-bat markers
+  if (isMLB() && !(p.text || '').trim()) return;
   const log = $('log'); log.querySelector('.empty')?.remove();
   const li = document.createElement('li'); if (p.scoringPlay) li.className = 'score';
   const mlb = isMLB(), o = mlb ? (p._o || (p._o = outcomeMLB(p))) : null;
@@ -2141,12 +2138,7 @@ async function pump(){
 
 function playsOf(summary){
   const out = [], seen = new Set();
-  if (isMLB()) {
-    // baseball summaries list every pitch and play in one array
-    // keep ESPN's order: baseball sequenceNumbers restart with every at-bat, so sorting by them scrambles the game
-    for (const p of summary.plays || []) { if (!p || p.id == null || seen.has(p.id)) continue; seen.add(p.id); out.push(p); }
-    return out;
-  }
+  if (isMLB()) return feedPlays(summary);
   const dr = summary.drives || {};
   for (const d of [...(dr.previous || []), ...(dr.current ? [dr.current] : [])]) for (const p of d.plays || []) {
     if (seen.has(p.id)) continue; seen.add(p.id); out.push(p);
@@ -2158,12 +2150,6 @@ function playsOf(summary){
 /* ================= selecting a game ================= */
 async function selectGame(id, mode){
   const ev = S.events.get(id); if (!ev) return;
-  if (id.startsWith('mlb-')) {
-    const sel = S.selecting = {};
-    const espn = await resolveEspnId(ev);
-    if (S.selecting !== sel) return; // the viewer picked another game meanwhile
-    if (espn) { const e = S.events.get(espn); e.status = stateOf(e) === 'pre' ? ev.status : e.status; S.events.delete(id); renderList(); return selectGame(espn, mode); }
-  }
   S.token++; const tok = S.token;
   if (window.speechSynthesis) speechSynthesis.cancel();
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
@@ -2172,7 +2158,7 @@ async function selectGame(id, mode){
   S.rp = null; S.ri = 0; S.paused = false; $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
   const t = teamsOf(ev); S.home = t.home; S.away = t.away;
   S.home.kit = isMLB() ? kitMLB(S.home, true) : kit(S.home, true); S.away.kit = isMLB() ? kitMLB(S.away, false) : kit(S.away, false);
-  S.lineup = {}; if (isMLB()) { setPark(ev.competitions?.[0]?.venue?.fullName); mlbReset(); }
+  S.lineup = {}; S.people = {}; if (isMLB()) { setPark(ev.competitions?.[0]?.venue?.fullName); mlbReset(); }
   hideNotice(); hideBanner(); renderList(); setBadge(); setBoard();
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   clearLog('Loading play-by-play...');
@@ -2195,8 +2181,8 @@ async function selectGame(id, mode){
     return;
   }
   let sum;
-  try { sum = await getJSON(`${API}/summary?event=${id}`); S.summary = sum; if (isMLB()) { mlbLineups(sum); S.actors = mlbFormation(S.mlb); } refreshDetail(); }
-  catch (e) { clearLog("Couldn't load this game's play-by-play from ESPN. Retrying shortly."); return; }
+  try { sum = await getJSON(gameURL(id)); S.summary = sum; if (isMLB()) { mlbLineups(sum); S.actors = mlbFormation(S.mlb); } refreshDetail(); }
+  catch (e) { clearLog(`Couldn't load this game's play-by-play from ${isMLB() ? 'MLB' : 'ESPN'}. Retrying shortly.`); return; }
   if (tok !== S.token) return;
   const plays = playsOf(sum);
   if (mode === 'replay') {
@@ -2218,11 +2204,13 @@ async function selectGame(id, mode){
   }
 }
 
+// a game's play-by-play: ESPN's game summary for football, MLB's live game feed for baseball
+const gameURL = id => isMLB() ? `${MLB_API}/v1.1/game/${id}/feed/live` : `${API}/summary?event=${id}`;
 async function pollLive(){
   if (S.mode !== 'live' || !S.game) return;
   const tok = S.token;
   try {
-    const sum = await getJSON(`${API}/summary?event=${S.game}`);
+    const sum = await getJSON(gameURL(S.game));
     if (tok !== S.token) return;
     S.summary = sum; if (isMLB()) mlbLineups(sum); refreshDetail();
     const fresh = playsOf(sum).filter(p => !S.seen.has(p.id));
@@ -2393,10 +2381,16 @@ function drawHelmet(cv, team){
 }
 
 // portraits: drawn in the same pixel style as the field (team helmet, jersey, number), with skin tone,
-// hair color and facial hair read off the player's real ESPN headshot. The photo itself is never shown.
+// hair color and facial hair read off the player's real headshot (ESPN for football, MLB for baseball). The photo itself is never shown.
 // If there's no headshot, or the browser won't let us read it, the face is left as an empty helmet.
 const SHOTS = new Map(); // url -> Promise<looks | null>
-function headshotURL(pl){ return pl.headshot || (pl.id ? `https://a.espncdn.com/i/headshots/${S.sport}/players/full/${pl.id}.png` : ''); }
+function headshotURL(pl){
+  if (pl.headshot) return pl.headshot;
+  if (!pl.id) return '';
+  // MLB's cut-out headshots have a see-through background, which the face reader needs
+  return isMLB() ? `https://img.mlbstatic.com/mlb-photos/image/upload/w_180,f_png,q_auto:best/v1/people/${pl.id}/headshot/silo/current`
+    : `https://a.espncdn.com/i/headshots/${S.sport}/players/full/${pl.id}.png`;
+}
 function loadLooks(pl){
   const url = headshotURL(pl); if (!url) return Promise.resolve(null);
   if (!SHOTS.has(url)) SHOTS.set(url, new Promise(res => {
@@ -2417,6 +2411,7 @@ function readLooks(img){
   const g = cv.getContext('2d'); g.drawImage(img, 0, 0, W, H);
   const px = g.getImageData(0, 0, W, H).data;
   const op = (x, y) => px[(y * W + x) * 4 + 3] > 140;
+  if (op(0, 0) && op(W - 1, 0)) return null; // a photo with a solid background can't be read
   const span = y => { let l = -1, r = -1; for (let x = 0; x < W; x++) if (op(x, y)) { if (l < 0) l = x; r = x; } return l < 0 ? null : [l, r]; };
   let y0 = 0; while (y0 < H && !span(y0)) y0++;
   if (y0 >= H * 0.6) return null;
@@ -2559,9 +2554,10 @@ function teamHTML(t){
   let h = `<div class="dhead"><b>${esc(t.loc.toUpperCase())} ${esc(t.nick.toUpperCase())}</b><button class="back">CLOSE</button></div>`;
   const rec = recordOf(t === S.home ? 'home' : 'away');
   if (rec) h += `<div class="muted">Record ${esc(rec)}</div>`;
-  const tb = teamBox(t);
+  const tb = isMLB() ? null : teamBox(t);
   h += `<h5>THIS GAME</h5>`;
-  if (tb?.statistics?.length && tb.statistics[0]?.stats) {
+  if (isMLB()) h += mlbTeamStats(t);
+  else if (tb?.statistics?.length && tb.statistics[0]?.stats) {
     // baseball box scores group team stats (batting, pitching, fielding)
     for (const cat of tb.statistics) {
       const items = (cat.stats || []).filter(x => x.displayValue != null).slice(0, 8);
@@ -2574,7 +2570,7 @@ function teamHTML(t){
     h += '<div class="kv">' + (pickd.length ? pickd : st.slice(0, 10)).map(x => `<span>${esc(x.label)}</span><span>${esc(x.displayValue)}</span>`).join('') + '</div>';
   } else h += `<div class="muted">Team stats show up once the game starts.</div>`;
   const all = S.roster[t.id]?.all || [];
-  const groups = isMLB() ? [...new Set(all.map(p => p.side))].sort((a, b) => ['PITCHERS', 'CATCHERS', 'INFIELDERS', 'OUTFIELDERS', 'DESIGNATED HITTERS'].indexOf(a) - ['PITCHERS', 'CATCHERS', 'INFIELDERS', 'OUTFIELDERS', 'DESIGNATED HITTERS'].indexOf(b)).map(x => [x, x])
+  const groups = isMLB() ? [...new Set(all.map(p => p.side))].sort((a, b) => MLB_GROUPS.indexOf(a) - MLB_GROUPS.indexOf(b)).map(x => [x, x])
     : [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
   if (!all.length) h += `<h5>ROSTER</h5><div class="muted">Roster not available.</div>`;
   for (const [key, label] of groups) {
@@ -2585,7 +2581,32 @@ function teamHTML(t){
   return h;
 }
 
+// baseball box score lines, from MLB's live game feed
+const sideOf = t => t === S.home ? 'home' : 'away';
+const MLB_TEAM_STATS = [['BATTING', 'batting', [['R', 'runs'], ['H', 'hits'], ['HR', 'homeRuns'], ['RBI', 'rbi'], ['BB', 'baseOnBalls'], ['K', 'strikeOuts'], ['SB', 'stolenBases'], ['LOB', 'leftOnBase']]],
+  ['PITCHING', 'pitching', [['IP', 'inningsPitched'], ['H', 'hits'], ['R', 'runs'], ['ER', 'earnedRuns'], ['BB', 'baseOnBalls'], ['K', 'strikeOuts'], ['HR', 'homeRuns'], ['PITCHES', 'numberOfPitches']]],
+  ['FIELDING', 'fielding', [['E', 'errors'], ['A', 'assists'], ['PO', 'putOuts']]]];
+function mlbTeamStats(t){
+  const ts = S.summary?.liveData?.boxscore?.teams?.[sideOf(t)]?.teamStats;
+  if (!ts || S.mode === 'pre') return `<div class="muted">Team stats show up once the game starts.</div>`;
+  let h = '';
+  for (const [label, grp, keys] of MLB_TEAM_STATS) {
+    const items = keys.filter(([, k]) => ts[grp]?.[k] != null);
+    if (items.length) h += `<div class="muted">${label}</div><div class="kv">` + items.map(([l, k]) => `<span>${esc(l)}</span><span>${esc(ts[grp][k])}</span>`).join('') + '</div>';
+  }
+  return h || `<div class="muted">Team stats show up once the game starts.</div>`;
+}
+const stTable = (name, labels, row) => `<div class="stbl"><table><tr><th>${esc(name)}</th>${labels.map(l => `<th>${esc(l)}</th>`).join('')}</tr><tr><td></td>${row.map(x => `<td>${esc(x ?? '-')}</td>`).join('')}</tr></table></div>`;
+function mlbGameStats(team, p){
+  const st = S.summary?.liveData?.boxscore?.teams?.[sideOf(team)]?.players?.['ID' + p.id]?.stats; if (!st) return '';
+  const b = st.batting || {}, q = st.pitching || {};
+  let h = '';
+  if (b.plateAppearances || b.atBats || b.baseOnBalls || b.hitByPitch) h += stTable('BATTING', ['AB', 'R', 'H', 'RBI', 'HR', 'BB', 'K'], [b.atBats, b.runs, b.hits, b.rbi, b.homeRuns, b.baseOnBalls, b.strikeOuts]);
+  if (q.inningsPitched || q.battersFaced) h += stTable('PITCHING', ['IP', 'H', 'R', 'ER', 'BB', 'K', 'PITCHES'], [q.inningsPitched, q.hits, q.runs, q.earnedRuns, q.baseOnBalls, q.strikeOuts, q.numberOfPitches]);
+  return h;
+}
 function gameStatsFor(team, p){
+  if (isMLB()) return mlbGameStats(team, p);
   const pb = playerBox(team); if (!pb) return '';
   let h = '';
   for (const cat of pb.statistics || []) {
@@ -2605,7 +2626,7 @@ function playerHTML(t, p){
   const ss = S.pstats?.[p.id];
   h += `<h5>SEASON</h5>`;
   if (ss === undefined || ss === 'loading') h += `<div class="muted">Loading season stats...</div>`;
-  else if (!ss) h += `<div class="muted">No season stats from ESPN for this player.</div>`;
+  else if (!ss) h += `<div class="muted">No season stats for this player.</div>`;
   else h += ss;
   return h;
 }
@@ -2614,6 +2635,12 @@ async function loadSeason(team, p){
   if (S.pstats[p.id] !== undefined) return;
   S.pstats[p.id] = 'loading';
   let out = null;
+  if (isMLB()) {
+    out = await mlbSeason(p);
+    S.pstats[p.id] = out;
+    if (S.view?.kind === 'player' && S.view.p === p) renderDetail();
+    return;
+  }
   try {
     const d = await getJSON(`${SITE}/athletes/${p.id}/overview`);
     const st = d.statistics;
@@ -2626,6 +2653,35 @@ async function loadSeason(team, p){
   } catch (e) { out = null; }
   S.pstats[p.id] = out;
   if (S.view?.kind === 'player' && S.view.p === p) renderDetail();
+}
+
+// a baseball player's season and career numbers from MLB
+const MLB_SEASON = {
+  hitting: [['G', 'gamesPlayed'], ['AB', 'atBats'], ['R', 'runs'], ['H', 'hits'], ['HR', 'homeRuns'], ['RBI', 'rbi'], ['BB', 'baseOnBalls'], ['SO', 'strikeOuts'], ['SB', 'stolenBases'], ['AVG', 'avg'], ['OBP', 'obp'], ['SLG', 'slg'], ['OPS', 'ops']],
+  pitching: [['G', 'gamesPlayed'], ['GS', 'gamesStarted'], ['W', 'wins'], ['L', 'losses'], ['ERA', 'era'], ['IP', 'inningsPitched'], ['H', 'hits'], ['ER', 'earnedRuns'], ['BB', 'baseOnBalls'], ['SO', 'strikeOuts'], ['WHIP', 'whip'], ['SV', 'saves']]
+};
+async function mlbSeason(p){
+  try {
+    const d = await getJSON(`${MLB_API}/v1/people/${p.id}?hydrate=stats(group=[hitting,pitching],type=[season,career])`);
+    const groups = {};
+    for (const s of d.people?.[0]?.stats || []) {
+      const g = s.group?.displayName, ty = s.type?.displayName, sp = s.splits?.[0]?.stat; if (!MLB_SEASON[g] || !sp) continue;
+      (groups[g] ||= {})[ty] = {stat: sp, season: s.splits[0].season};
+    }
+    // pitchers' batting lines are usually empty, so they show their pitching first and batting only if they've hit
+    const order = /P$/.test(p.pos || '') ? ['pitching', 'hitting'] : ['hitting', 'pitching'];
+    let h = '';
+    for (const g of order) {
+      const G = groups[g]; if (!G) continue;
+      if (g === 'hitting' && /P$/.test(p.pos || '') && !(+G.career?.stat?.atBats > 0)) continue;
+      if (g === 'pitching' && !/P$|TWP/.test(p.pos || '') && !(+G.career?.stat?.inningsPitched > 0)) continue;
+      const cols = MLB_SEASON[g], rows = [['season', G.season ? `${G.season.season || ''} Season`.trim() : null], ['career', 'Career']].filter(([k, l]) => l && G[k]);
+      if (!rows.length) continue;
+      h += `<div class="muted">${g === 'hitting' ? 'BATTING' : 'PITCHING'}</div><div class="stbl"><table><tr><th></th>${cols.map(([l]) => `<th>${esc(l)}</th>`).join('')}</tr>` +
+        rows.map(([k, l]) => `<tr><td>${esc(l)}</td>${cols.map(([, key]) => `<td>${esc(G[k].stat[key] ?? '-')}</td>`).join('')}</tr>`).join('') + '</table></div>';
+    }
+    return h || null;
+  } catch (e) { return null; }
 }
 
 /* ================= notices ================= */
@@ -2701,7 +2757,7 @@ async function switchSport(sp){
   clearLog('Pick a game to see its play-by-play here.');
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
-  setBadge(); renderList(); renderGamePanel(); renderDetail();
+  setBadge(); renderList(); renderGamePanel(); renderDetail(); $('feedsrc').textContent = SPORTS[sp].src; setCredits();
   await neutralField(); if (sp !== S.sport) return;
   setBoard(); openSport();
 }
@@ -2711,7 +2767,7 @@ $('sport-mlb').onclick = () => switchSport('mlb');
 (async function boot(){
   if (/^#mlb$/i.test(location.hash)) { S.sport = 'mlb'; API = SPORTS.mlb.api; SITE = SPORTS.mlb.site; }
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));
-  setBadge();
+  setBadge(); $('feedsrc').textContent = SPORTS[S.sport].src; setCredits();
   await neutralField();
   requestAnimationFrame(step);
   await openSport();
