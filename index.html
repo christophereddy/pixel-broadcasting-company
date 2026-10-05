@@ -124,7 +124,7 @@ footer a:focus-visible{outline:2px solid var(--gold)}
   .mastside{flex-direction:row;flex-wrap:wrap;gap:8px}.locbar{padding:10px 12px}.locstatus{font-size:15px}#findForm{flex-wrap:nowrap}#findBtn{white-space:nowrap}
   .topctl #fs,.topctl #snd{position:static;flex:1 1 0;font-size:13px;padding:10px 8px;background:var(--panel);border-color:var(--line)}
 }
-.chanbtn{font-family:"Silkscreen",monospace;font-size:14px;padding:6px 10px;background:#f7c948;color:#1a1300;text-decoration:none;border:2px solid #1a1300}.chanbtn:hover{filter:brightness(1.1)}.chanbtn:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.pbc-chan{display:flex;border:2px solid var(--line)}.pbc-chan a{font-family:var(--f-label);font-size:13px;letter-spacing:.08em;padding:6px 12px;color:var(--muted);text-decoration:none}.pbc-chan a[aria-current="page"]{background:var(--gold);color:var(--navy)}.pbc-chan a:not([aria-current]):hover{color:var(--text)}.pbc-chan a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 </style>
 
 <div class="page">
@@ -134,7 +134,7 @@ footer a:focus-visible{outline:2px solid var(--gold)}
       <div><h1>Pixel Broadcasting Company</h1><p id="edition">On the air</p></div>
     </div>
     <div class="mastside">
-      <a class="chanbtn" href="sports/" aria-label="Switch to Pixel Sports Live">SPORTS ▶</a>
+      <nav class="pbc-chan" aria-label="Channel"><a href="./" aria-current="page">NEWS</a><a href="sports/">SPORTS</a></nav>
       <div class="onair"><span class="dot"></span>ON AIR 24 HOURS</div>
       <div class="nextref" id="nextRef"><span class="nlabel">NEXT NEWS REFRESH</span><span id="nextTime"></span></div>
     </div>
