@@ -2740,6 +2740,20 @@ async function drawLogo(cv, team){
   }
 }
 
+// the 32 NFL teams (ESPN ids and colors), used when ESPN's team list doesn't load
+const NFL_TEAMS = [[22, 'ARI', 'Arizona', 'Cardinals', 'a40227', 'ffffff'], [1, 'ATL', 'Atlanta', 'Falcons', 'a71930', '000000'], [33, 'BAL', 'Baltimore', 'Ravens', '29126f', '000000'],
+  [2, 'BUF', 'Buffalo', 'Bills', '00338d', 'd50a0a'], [29, 'CAR', 'Carolina', 'Panthers', '0085ca', '000000'], [3, 'CHI', 'Chicago', 'Bears', '0b1c3a', 'e64100'],
+  [4, 'CIN', 'Cincinnati', 'Bengals', 'fb4f14', '000000'], [5, 'CLE', 'Cleveland', 'Browns', '472a08', 'ff3c00'], [6, 'DAL', 'Dallas', 'Cowboys', '002a5c', 'b0b7bc'],
+  [7, 'DEN', 'Denver', 'Broncos', '0a2343', 'fc4c02'], [8, 'DET', 'Detroit', 'Lions', '0076b6', 'bbbbbb'], [9, 'GB', 'Green Bay', 'Packers', '204e32', 'ffb612'],
+  [34, 'HOU', 'Houston', 'Texans', '021018', 'eb0028'], [11, 'IND', 'Indianapolis', 'Colts', '003b75', 'ffffff'], [30, 'JAX', 'Jacksonville', 'Jaguars', '007487', 'd7a22a'],
+  [12, 'KC', 'Kansas City', 'Chiefs', 'e31837', 'ffb612'], [13, 'LV', 'Las Vegas', 'Raiders', '000000', 'a5acaf'], [24, 'LAC', 'Los Angeles', 'Chargers', '0080c6', 'ffc20e'],
+  [14, 'LAR', 'Los Angeles', 'Rams', '003594', 'ffd100'], [15, 'MIA', 'Miami', 'Dolphins', '008e97', 'fc4c02'], [16, 'MIN', 'Minnesota', 'Vikings', '4f2683', 'ffc62f'],
+  [17, 'NE', 'New England', 'Patriots', '002a5c', 'c60c30'], [18, 'NO', 'New Orleans', 'Saints', 'd3bc8d', '000000'], [19, 'NYG', 'New York', 'Giants', '003c7f', 'c9243f'],
+  [20, 'NYJ', 'New York', 'Jets', '115740', 'ffffff'], [21, 'PHI', 'Philadelphia', 'Eagles', '06424d', '000000'], [23, 'PIT', 'Pittsburgh', 'Steelers', '000000', 'ffb612'],
+  [25, 'SF', 'San Francisco', '49ers', 'aa0000', 'b3995d'], [26, 'SEA', 'Seattle', 'Seahawks', '002a5c', '69be28'], [27, 'TB', 'Tampa Bay', 'Buccaneers', 'bd1c36', '3e3a35'],
+  [10, 'TEN', 'Tennessee', 'Titans', '4b92db', '002a5c'], [28, 'WSH', 'Washington', 'Commanders', '5a1414', 'ffb612']]
+  .map(([id, abbreviation, location, name, color, alternateColor]) => ({id: String(id), abbreviation, location, shortDisplayName: name, color, alternateColor,
+    logo: `https://a.espncdn.com/i/teamlogos/nfl/500/${abbreviation.toLowerCase()}.png`}));
 async function loadTeams(){
   const sport = S.sport; let list = [];
   try {
@@ -2747,9 +2761,10 @@ async function loadTeams(){
       const j = await getJSON(`${MLB_API}/v1/teams?sportId=1&season=${seasonYear()}`);
       list = (j.teams || []).filter(t => t.active !== false).map(t => teamObj(mlbTeamOf(t)));
     } else {
-      const j = await getJSON(`${API}/teams`);
-      list = (j.sports?.[0]?.leagues?.[0]?.teams || []).map(x => x.team).filter(t => t?.id && t.isActive !== false)
+      const j = await getJSON(`${API}/teams`).catch(() => null);
+      list = (j?.sports?.[0]?.leagues?.[0]?.teams || []).map(x => x.team).filter(t => t?.id && t.isActive !== false)
         .map(t => teamObj({...t, logo: (t.logos?.find(l => l.rel?.includes('default')) || t.logos?.[0])?.href}));
+      if (list.length < 32) list = NFL_TEAMS.map(t => teamObj(t));
     }
   } catch (e) { list = []; }
   if (sport !== S.sport) return;
