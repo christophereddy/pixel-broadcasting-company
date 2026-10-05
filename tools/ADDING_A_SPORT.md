@@ -1,6 +1,6 @@
 # Adding a sport to Pixel Sports Live
 
-NFL, NBA, WNBA and MLB are built the same way, and every new sport (NHL, MLS...) has to match them. A viewer who switches tabs should see the same page with the same controls in the same places. Only the field, the players and the data change.
+NFL, college football (NCAAF), NBA, WNBA and MLB are built the same way, and every new sport (NHL, MLS...) has to match them. A viewer who switches tabs should see the same page with the same controls in the same places. Only the field, the players and the data change.
 
 This list is the contract. `tools/check_sports.cjs` checks the parts it can see on screen. The rest is for whoever builds the sport, and for the person reviewing the pull request.
 
