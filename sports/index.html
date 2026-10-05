@@ -353,8 +353,14 @@ async function loadScoreboard(){
   let ok = false;
   for (const r of res) {
     if (r.status !== 'fulfilled') continue; ok = true;
-    for (const ev of r.value.events || []) S.events.set(String(ev.id), ev);
+    for (const ev of r.value.events || []) {
+      const id = String(ev.id), had = S.events.get(id);
+      if (had && realGame(had) && !realGame(ev)) continue; // never swap a real game for a "TBD @ TBD" placeholder
+      S.events.set(id, ev);
+    }
   }
+  if (ok && isMLB()) await mlbScheduleFallback(earlier, later);
+  if (sport !== S.sport) return false;
   if (!ok) {
     showErr("Can't reach ESPN right now. Retrying every 30 seconds. If you opened this page inside Claude, open the downloaded file in Chrome, Edge or Safari instead.");
     return false;
@@ -362,6 +368,30 @@ async function loadScoreboard(){
   showErr('');
   renderList();
   return true;
+}
+
+// ESPN's MLB scoreboard sometimes lists only placeholder "TBD @ TBD" games (seen in the 2026 playoffs) while
+// each team's schedule has the real ones. When that happens, fill the list from the team schedules.
+const realGame = ev => { const c = ev.competitions?.[0]?.competitors || []; return c.length === 2 && c.every(x => x.team?.abbreviation && x.team.abbreviation !== 'TBD'); };
+async function mlbScheduleFallback(earlier, later){
+  const evs = [...S.events.values()], broken = !evs.some(e => stateOf(e) === 'pre' && realGame(e)) || !evs.every(realGame);
+  for (const [id, ev] of S.events) if (!realGame(ev)) S.events.delete(id);
+  if (!broken || (S.fbAt && Date.now() - S.fbAt < 5 * 60e3)) return;
+  S.fbAt = Date.now();
+  try {
+    const meta = S.mlbTeams || (S.mlbTeams = (await getJSON(API + '/teams')).sports[0].leagues[0].teams.map(x => x.team));
+    const byId = Object.fromEntries(meta.map(t => [String(t.id), t])), sport = S.sport;
+    const scheds = [];
+    for (let i = 0; i < meta.length; i += 6) scheds.push(...await Promise.allSettled(meta.slice(i, i + 6).map(t => getJSON(`${API}/teams/${t.id}/schedule`))));
+    if (sport !== S.sport) return;
+    for (const r of scheds) if (r.status === 'fulfilled') for (const ev of r.value.events || []) {
+      const d = new Date(ev.date); if (!(d >= earlier && d <= later)) continue;
+      const c = ev.competitions?.[0]; if (!c) continue;
+      ev.status ||= c.status;
+      for (const x of c.competitors || []) { x.team = {...(byId[String(x.team?.id || x.id)] || {}), ...(x.team || {})}; if (x.score && typeof x.score === 'object') x.score = x.score.displayValue ?? String(x.score.value ?? ''); }
+      if (realGame(ev)) S.events.set(String(ev.id), ev);
+    }
+  } catch (e) { /* keep whatever the scoreboard gave */ }
 }
 
 /* ================= game list ================= */
