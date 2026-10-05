@@ -353,17 +353,77 @@ async function coreGame(ref, byId){
   }));
   return {id: String(e.id), date: e.date, name: e.name, shortName: e.shortName, status: st, competitions: [{competitors: comps, venue: c.venue?.fullName ? {fullName: c.venue.fullName} : undefined, notes: c.notes, status: st}]};
 }
+// MLB's own schedule (statsapi.mlb.com) is the most dependable list of games. Its games carry an "mlb-<gamePk>" id until
+// the matching ESPN game is found, because the play-by-play still comes from ESPN.
+const MLB_ABBR = {CWS: 'CHW', AZ: 'ARI', WSN: 'WSH', KCR: 'KC', SDP: 'SD', SFG: 'SF', TBR: 'TB', OAK: 'ATH'};
+async function statsApiGames(earlier, later, byId, keep){
+  const d = x => x.toISOString().slice(0, 10);
+  let n = 0;
+  try {
+    const j = await getJSON(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=${d(earlier)}&endDate=${d(later)}&hydrate=team,linescore`);
+    const byAbbr = Object.fromEntries(Object.values(byId).map(t => [t.abbreviation, t]));
+    for (const day of j.dates || []) for (const g of day.games || []) {
+      const st = g.status?.abstractGameState === 'Final' ? 'post' : g.status?.abstractGameState === 'Live' ? 'in' : 'pre';
+      if (/postponed|cancel|suspended/i.test(g.status?.detailedState || '') && st !== 'post') continue;
+      const ls = g.linescore || {}, detail = st === 'in' ? `${ls.inningState || ''} ${ls.currentInningOrdinal || ''}`.trim() || 'Live' : st === 'post' ? 'Final' : '';
+      const side = (ha) => { const t = g.teams?.[ha], ab = t?.team?.abbreviation, team = byAbbr[MLB_ABBR[ab] || ab] || {abbreviation: ab, displayName: t?.team?.name, location: t?.team?.locationName, shortDisplayName: t?.team?.teamName};
+        return {homeAway: ha, team, score: st === 'pre' ? '' : String(t?.score ?? '')}; };
+      const status = {type: {state: st, shortDetail: detail, detail: g.status?.detailedState || ''}};
+      keep({id: 'mlb-' + g.gamePk, mlbPk: g.gamePk, date: g.gameDate, name: '', shortName: '', status,
+        competitions: [{competitors: [side('home'), side('away')], venue: {fullName: g.venue?.name || ''}, notes: [{headline: g.seriesDescription || ''}], status}]});
+      n++;
+    }
+  } catch (e) { /* MLB's schedule could not be read */ }
+  return n;
+}
+// the same game from ESPN, if we have it: same teams, first pitch within six hours
+function espnMatch(ev){
+  const t = teamsOf(ev), when = new Date(ev.date).getTime();
+  for (const [id, e] of S.events) {
+    if (id.startsWith('mlb-') || !realGame(e)) continue;
+    const u = teamsOf(e);
+    if (u.home.abbr === t.home.abbr && u.away.abbr === t.away.abbr && Math.abs(new Date(e.date).getTime() - when) < 6 * 3600e3) return id;
+  }
+  return null;
+}
+// list each game once, preferring ESPN's copy (it has the play-by-play), but keep MLB's status and score when ESPN's is stale
+function dropDuplicates(){
+  for (const [id, ev] of [...S.events]) {
+    if (!id.startsWith('mlb-')) continue;
+    const e = espnMatch(ev); if (!e) continue;
+    const espn = S.events.get(e);
+    if (stateOf(espn) === 'pre' && stateOf(ev) !== 'pre') { espn.status = ev.status; espn.competitions[0].status = ev.status; espn.competitions[0].competitors.forEach(x => { const m = ev.competitions[0].competitors.find(y => y.homeAway === x.homeAway); if (m) x.score = m.score; }); }
+    S.events.delete(id); if (S.fbGames) delete S.fbGames[id];
+  }
+}
+// find the ESPN game id for an MLB-schedule game, using the home team's ESPN schedule if needed
+async function resolveEspnId(ev){
+  let id = espnMatch(ev); if (id) return id;
+  const home = teamsOf(ev).home;
+  if (!home.id || home.id === 'undefined') return null;
+  try {
+    const j = await getJSON(`${API}/teams/${home.id}/schedule`), byId = Object.fromEntries((S.mlbTeams || []).map(t => [String(t.id), t]));
+    for (const e of j.events || []) {
+      const c = e.competitions?.[0]; if (!c) continue;
+      e.id = String(e.id); e.status ||= c.status;
+      for (const x of c.competitors || []) { x.team = {...(byId[String(x.team?.id || x.id)] || {}), ...(x.team || {})}; if (x.score && typeof x.score === 'object') x.score = x.score.displayValue ?? String(x.score.value ?? ''); }
+      if (realGame(e) && !S.events.has(e.id)) S.events.set(e.id, e);
+    }
+  } catch (e) { return null; }
+  return espnMatch(ev);
+}
 async function mlbScheduleFallback(earlier, later){
   const evs = [...S.events.values()], broken = !evs.some(e => stateOf(e) === 'pre' && realGame(e)) || !evs.every(realGame);
   for (const [id, ev] of S.events) if (!realGame(ev)) S.events.delete(id);
   for (const [id, ev] of Object.entries(S.fbGames || {})) if (!S.events.has(id)) S.events.set(id, ev); // keep what the last rebuild found
+  dropDuplicates();
   if (!broken || (S.fbAt && Date.now() - S.fbAt < 5 * 60e3)) return;
   S.fbAt = Date.now(); S.fbGames ||= {};
   const sport = S.sport, keep = ev => { if (ev && realGame(ev)) { S.fbGames[ev.id] = ev; S.events.set(ev.id, ev); } };
   try {
     const meta = S.mlbTeams || (S.mlbTeams = (await getJSON(API + '/teams')).sports[0].leagues[0].teams.map(x => x.team));
     const byId = Object.fromEntries(meta.map(t => [String(t.id), t]));
-    let got = 0;
+    let got = await statsApiGames(earlier, later, byId, keep);
     try {
       const list = await getJSON(`${CORE_MLB}/events?dates=${ymd(earlier)}-${ymd(later)}&limit=100`);
       // finished games never change, so only unfinished ones are fetched again
@@ -373,6 +433,7 @@ async function mlbScheduleFallback(earlier, later){
       for (const r of res) if (r.status === 'fulfilled' && r.value) { keep(r.value); got++; }
       got += Object.keys(S.fbGames).length;
     } catch (e) { /* the event index could not be read; try the team schedules */ }
+    dropDuplicates();
     if (got) return;
     const scheds = await inBatches(meta, 6, t => getJSON(`${API}/teams/${t.id}/schedule`));
     if (sport !== S.sport) return;
@@ -2051,6 +2112,12 @@ function playsOf(summary){
 /* ================= selecting a game ================= */
 async function selectGame(id, mode){
   const ev = S.events.get(id); if (!ev) return;
+  if (id.startsWith('mlb-')) {
+    const sel = S.selecting = {};
+    const espn = await resolveEspnId(ev);
+    if (S.selecting !== sel) return; // the viewer picked another game meanwhile
+    if (espn) { const e = S.events.get(espn); e.status = stateOf(e) === 'pre' ? ev.status : e.status; S.events.delete(id); renderList(); return selectGame(espn, mode); }
+  }
   S.token++; const tok = S.token;
   if (window.speechSynthesis) speechSynthesis.cancel();
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
