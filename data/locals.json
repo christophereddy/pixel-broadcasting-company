@@ -53,7 +53,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -66,7 +66,7 @@
   "local": [
    {
     "h": "WBUR names its 2026 Makers",
-    "b": "WBUR's 2026 Makers features seven local artists of color whose work explores cultural boundaries.",
+    "b": "WBUR's annual Makers series looks at borders and the places where cultures meet.",
     "date": "2026-10-05"
    }
   ],
@@ -117,7 +117,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -129,12 +129,28 @@
   },
   "local": [
    {
-    "h": "Unhoused artist Peace Prophet's watercolors prized",
-    "b": "Peace Prophet, a 71-year-old unhoused Chicago artist, paints watercolors collected across the city, some collectors owning hundreds.",
-    "date": "2026-10-04",
+    "h": "$75 million raised for Bronzeville cultural zone",
+    "b": "The Bronzeville Legacy Collective has raised $75 million toward nine cultural sites, with a long-term goal of $250 million.",
+    "date": "2026-10-05",
     "more": [
-     "She has lived on the streets since 2000 and turns down offers of housing help, accepting only payment for her work."
+     "Projects include the National Museum of Gospel Music and the Emmett Till and Mamie Till-Mobley House.",
+     "Several are expected to open between 2027 and 2029."
     ]
+   },
+   {
+    "h": "Runner set for his 48th Chicago Marathon",
+    "b": "Henry Kozlowski is one of two people who have finished every Chicago Marathon since 1977, and he plans to run in his high school gym shorts.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Bob Odenkirk heads back to the stage",
+    "b": "The Naperville native is leaning into theater, with a play in Champaign about an alien invasion up next.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Unhoused artist Peace Prophet's watercolors prized",
+    "b": "Her paintings hang in homes across Chicago, but she has turned down offers of help, accepting only payment for her work.",
+    "date": "2026-10-04"
    }
   ],
   "weather": {
@@ -184,7 +200,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -196,20 +212,14 @@
   },
   "local": [
    {
-    "h": "Denver weighs what to do with empty offices",
-    "b": "About 38% of downtown Denver's offices sit vacant.",
-    "date": "2026-10-05",
-    "more": [
-     "The city faces hard choices about converting or tearing down old office buildings without repeating urban renewal mistakes."
-    ]
+    "h": "Hiking Whittier's history with the 'Lumpers'",
+    "b": "A hiking group of retired women who have climbed Colorado's highest peaks is now exploring the history of north Denver.",
+    "date": "2026-10-05"
    },
    {
-    "h": "Hiking Whittier's parks with the 'Lumpers'",
-    "b": "A hiking group of retired women toured Denver's Whittier neighborhood through its parks.",
-    "date": "2026-10-05",
-    "more": [
-     "The walk took in four parks named for Black historical figures, including Madam C.J. Walker."
-    ]
+    "h": "Denver weighs what to do with empty offices",
+    "b": "Demolition is treated as a last resort, but buildings like 1300 Logan St. have long outlived their purpose.",
+    "date": "2026-10-05"
    }
   ],
   "weather": {
@@ -259,7 +269,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -271,37 +281,24 @@
   },
   "local": [
    {
-    "h": "Malibu delays PCH speed camera fines to November",
-    "b": "Malibu pushed its Pacific Coast Highway speed camera program to November, starting with a 60-day warning phase for drivers going 11+ mph over the limit.",
-    "date": "2026-10-04",
-    "more": [
-     "A September test recorded about 100,000 speeding violations in under 10 days.",
-     "Since 2010, more than 60 people have died in collisions on this stretch of PCH."
-    ]
-   },
-   {
-    "h": "How to get free mulch for your yard",
-    "b": "Southern California residents can get free mulch through city programs or services like ChipDrop, which connects arborists with gardeners.",
-    "date": "2026-10-04",
-    "more": [
-     "Los Angeles offers free mulch piles, while Orange County provides scheduled pickups."
-    ]
-   },
-   {
-    "h": "LA mayoral rivals agree homeless agency must go",
-    "b": "At a South LA forum, Karen Bass and Nithya Raman both backed leaving the Los Angeles Homeless Services Authority.",
-    "date": "2026-10-04",
-    "more": [
-     "They split sharply on housing density and short-term rental rules ahead of the 2028 Olympics."
-    ]
+    "h": "Malibu PCH speed cameras to start with warnings",
+    "b": "Drivers going 11 mph or more over the limit will get warnings for 60 days starting in November; fines come later.",
+    "date": "2026-10-04"
    },
    {
     "h": "Could the billionaire tax reach everyone?",
-    "b": "LAist fact-checked opponents' claim that Proposition 40 is a 'Trojan horse' for taxes on regular Californians.",
-    "date": "2026-10-04",
-    "more": [
-     "Legal experts say lawmakers could make some amendments, but the tax's constitutional language limits how far it could expand."
-    ]
+    "b": "Opponents say Prop. 40 opens the door to future wealth taxes on everyday Californians; LAist fact-checks the claim.",
+    "date": "2026-10-04"
+   },
+   {
+    "h": "Bass and Raman spar over housing at South LA forum",
+    "b": "The mayoral candidates agreed a new homelessness system is needed but split on where to allow new housing and how to protect renters.",
+    "date": "2026-10-04"
+   },
+   {
+    "h": "How to get free mulch for your yard",
+    "b": "Three options are available in Southern California, with varying amounts of work.",
+    "date": "2026-10-04"
    }
   ],
   "weather": {
@@ -363,7 +360,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -375,38 +372,38 @@
   },
   "local": [
    {
+    "h": "Mamdani to clear 10,000 families off childcare waitlist",
+    "b": "The city will move 10,000 low-income families off the waitlist for subsidized childcare, Mayor Mamdani announced.",
+    "date": "2026-10-05",
+    "more": [
+     "More than 16,000 families are waiting for the Child Care Assistance Program, which serves families earning up to $116,000 a year for a family of four.",
+     "Governor Kathy Hochul is putting $475 million toward the backlog that built up since May 2025."
+    ]
+   },
+   {
+    "h": "Two killed in Queens and Brooklyn crashes",
+    "b": "A hit-and-run on Monday killed a 62-year-old man, and a crash involving an impaired driver on Sunday killed a 23-year-old woman, police said.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "NY's stockpiled abortion pills have all expired",
+    "b": "In 2023 the state bought 150,000 misoprostol pills, enough for 12,500 doses, for $112,000. Now they are all expired.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Legionnaires' outbreaks spark NYC water debate",
+    "b": "A group backed by cooling tower companies wants the city to filter all drinking water; experts dispute that it is needed.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "City Council hearing to spotlight AI risks",
+    "b": "Tech workers and whistleblowers will testify to the City Council about the dangers of artificial intelligence.",
+    "date": "2026-10-05"
+   },
+   {
     "h": "Sixth person dies after falling ill in NYPD custody",
-    "b": "Reginald Newkirk, 54, of Brooklyn died Sunday at Kings County Hospital, at least the sixth person this year to die after a medical crisis in NYPD custody.",
-    "date": "2026-10-04",
-    "more": [
-     "He was arrested Friday for drug possession, hospitalized and cleared, then had another medical emergency Saturday afternoon.",
-     "Public defenders have called for independent Civilian Complaint Review Board investigations of every death in police custody."
-    ]
-   },
-   {
-    "h": "NY prison system staffing crisis drives workers away",
-    "b": "New York's prison system has a 56% vacancy rate among corrections workers.",
-    "date": "2026-10-04",
-    "more": [
-     "New officer training is up 40%, but more than 250 of 660 newly trained officers resigned within a year.",
-     "The state spent over $1 billion deploying the National Guard after about 2,000 guards were fired following a 2025 wildcat strike."
-    ]
-   },
-   {
-    "h": "NJ reports first West Nile Virus death of the year",
-    "b": "New Jersey reported its first West Nile Virus death of 2026, a South Jersey resident over 60.",
-    "date": "2026-10-04",
-    "more": [
-     "As of Thursday the state had confirmed 26 cases, 19 with neurological illness, already above last year's total of 23."
-    ]
-   },
-   {
-    "h": "Banned books and Winnie the Pooh in NYC libraries",
-    "b": "City library branches have a busy October, including banned-book events and NYPL celebrations of Winnie the Pooh's 100th birthday.",
-    "date": "2026-10-04",
-    "more": [
-     "Queens Public Library and Penguin Random House are holding a banned book giveaway at the Hunters Point branch."
-    ]
+    "b": "The 54-year-old was hospitalized twice after his arrest Friday, police said.",
+    "date": "2026-10-04"
    }
   ],
   "weather": {
@@ -462,7 +459,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -485,20 +482,17 @@
   "local": [
    {
     "h": "Up to 500 French schools to close Monday",
-    "b": "The education minister said up to 500 schools will be fully or partly closed Monday because of protests by teenage pupils.",
-    "date": "2026-10-04",
-    "more": [
-     "Protests disrupted more than 730 schools on Friday, and organisers have urged new rallies."
-    ]
+    "b": "Up to 500 schools across France will be totally or partly closed on Monday because of protests by teenage pupils, the minister said.",
+    "date": "2026-10-04"
    },
    {
     "h": "Le Pen voices 'complete confidence' in Bardella",
-    "b": "National Rally figure Marine Le Pen said she has complete confidence in party president Jordan Bardella.",
+    "b": "Marine Le Pen says she has complete confidence in Jordan Bardella.",
     "date": "2026-10-04"
    },
    {
     "h": "Shared French-Swiss lake is drying up",
-    "b": "Concern is growing as a lake on the French-Swiss border dries up.",
+    "b": "There is a cry for help as a lake shared by France and Switzerland dries up.",
     "date": "2026-10-04"
    }
   ],
@@ -525,7 +519,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "goodnews": []
  },
  {
@@ -582,7 +576,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T10:27:00Z",
+  "updatedAt": "2026-10-05T13:32:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
