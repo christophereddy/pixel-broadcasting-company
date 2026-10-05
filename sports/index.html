@@ -140,6 +140,11 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .tbox:hover{border-color:var(--gold)}
 .tbox canvas{width:48px;height:48px;image-rendering:pixelated;image-rendering:crisp-edges}
 .tbox span{font-family:var(--display);font-size:10px}
+.tbox .rk{position:absolute;top:2px;left:3px;font-family:var(--display);font-size:8px;color:var(--gold)}
+.tbox small{font-size:14px;line-height:1;color:var(--dim)}
+.confbar{display:flex;align-items:center;gap:8px;margin:10px 12px 0}
+.confbar label{font-family:var(--display);font-size:10px;color:var(--dim)}
+.confbar select{flex:1;min-width:0;font-family:var(--display);font-size:11px;padding:6px 4px;background:var(--panel-2);color:var(--ink);border:2px solid var(--edge);border-radius:0}
 .tbox.live{border-color:var(--live)}
 .tbox.live::after{content:'LIVE';position:absolute;top:2px;right:2px;font-family:var(--display);font-size:7px;padding:1px 2px;background:var(--live);color:#fff}
 .tpage{padding:0 12px 6px}
@@ -180,6 +185,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   <div class="pbc-ctl">
     <nav class="tabs" aria-label="Sport">
       <button class="tab" aria-pressed="true" id="sport-nfl">NFL</button>
+      <button class="tab" aria-pressed="false" id="sport-cfb">NCAAF</button>
       <button class="tab" aria-pressed="false" id="sport-nba">NBA</button>
       <button class="tab" aria-pressed="false" id="sport-wnba">WNBA</button>
       <button class="tab" aria-pressed="false" id="sport-mlb">MLB</button>
@@ -262,6 +268,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
    <div class="panel">
     <h3>GAMES</h3>
     <div id="err" class="err" hidden></div>
+    <div class="confbar" id="confbar" hidden><label for="conf">CONFERENCE</label><select id="conf"></select></div>
     <section><h4>LIVE NOW</h4><div id="list-live"></div></section>
     <section><h4>UP NEXT</h4><div id="list-next"></div></section>
     <section><h4>TEAMS</h4><div class="tgrid" id="teamgrid"></div><div class="tpage" id="teampage" hidden></div></section>
@@ -281,6 +288,12 @@ const SPORTS = {
   nfl: {name: 'NFL', family: 'football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
     hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nfl/']]},
+  // college football (FBS) is the same ESPN football feed as the NFL, so it shares all of the football code. `league` is ESPN's
+  // name for it in image paths; `standings` lists the conferences, each in ESPN's standing order.
+  cfb: {name: 'NCAAF', family: 'football', league: 'college-football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/college-football', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/college-football',
+    standings: 'https://site.web.api.espn.com/apis/v2/sports/football/college-football/standings', board: 'groups=80&limit=500', src: 'ESPN play-by-play',
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+    credits: [['Games, play-by-play, conference standings, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/college-football/']]},
   mlb: {name: 'MLB', family: 'baseball', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
     hosts: ['statsapi.mlb.com', 'www.mlbstatic.com', 'img.mlbstatic.com'],
     credits: [['Games, pitch-by-pitch play-by-play, team schedules, rosters, stats, logos, headshots and game recaps', 'MLB Stats API', 'https://statsapi.mlb.com'],
@@ -311,7 +324,7 @@ const QUIRK = {CLV:'CLE', ARZ:'ARI', BLT:'BAL', HST:'HOU', JAC:'JAX', SL:'LAR', 
 
 const S = {
   sport: 'nfl', events: new Map(), game: null, mode: null, home: null, away: null,
-  roster: {}, over: {}, seen: new Set(), teams: [], extra: new Map(), tview: null, tdata: {}, queue: [], token: 0, pumping: null,
+  roster: {}, over: {}, seen: new Set(), teams: [], confs: [], conf: null, extra: new Map(), tview: null, tdata: {}, queue: [], token: 0, pumping: null,
   actors: [], ball: {x: 50, y: MIDY, h: 0, vis: true}, cam: 50, anim: null, flag: null,
   prevScore: {h: 0, a: 0}, sound: false, voices: false, started: false, speaking: null, field: null
 };
@@ -375,7 +388,9 @@ const isTBD = ev => { const cs = ev?.competitions?.[0]?.competitors || []; retur
 async function loadScoreboard(){
   if (isMLB()) return loadMLBGames();
   const now = new Date(), later = new Date(now.getTime() + 10 * 864e5), earlier = new Date(now.getTime() - 8 * 864e5);
-  const urls = [API + '/scoreboard', API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later), API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now)];
+  // college: every FBS game (`board`), not only ESPN's Top 25 default
+  const q = SPORTS[S.sport].board ? '&' + SPORTS[S.sport].board : '';
+  const urls = [API + '/scoreboard' + (q && '?' + q.slice(1)), API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later) + q, API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now) + q];
   const sport = S.sport, res = await Promise.allSettled(urls.map(getJSON));
   if (sport !== S.sport) return false; // the viewer switched sports while this was loading
   let ok = false;
@@ -388,6 +403,8 @@ async function loadScoreboard(){
     return false;
   }
   showErr('');
+  // a conference picked automatically before the games loaded moves to one with games on, unless its own are on
+  if (S.sport === 'cfb' && S.confAuto && S.confs.length && !sortedGames().live.length && sortedGames(true).live.length) { pickConf(); renderTeams(); }
   renderList();
   return true;
 }
@@ -451,8 +468,13 @@ function gameLine(ev){
   else s = new Date(ev.date).toLocaleString([], {weekday: 'short', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit'});
   return {m: `${t.away.abbr} @ ${t.home.abbr}`, s, st};
 }
-function sortedGames(){
-  const all = [...S.events.values()];
+// college football lists only the games of the conference picked above the lists (a game counts if either team is in it)
+function inConf(ev){
+  const c = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf); if (!c) return true;
+  return ev.competitions[0].competitors.some(x => c.ids.has(String(x.team?.id ?? x.id)));
+}
+function sortedGames(everywhere){
+  const all = [...S.events.values()].filter(ev => everywhere || inConf(ev));
   const live = all.filter(e => stateOf(e) === 'in');
   const next = all.filter(e => stateOf(e) === 'pre').sort((a,b) => new Date(a.date) - new Date(b.date)).slice(0, 12);
   const fin = all.filter(e => stateOf(e) === 'post').sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0, 8);
@@ -472,7 +494,8 @@ function renderList(){
       el.append(b);
     }
   };
-  fill($('list-live'), live, `No ${SPORTS[S.sport].name} games live right now.`);
+  const lg = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf)?.name || SPORTS[S.sport].name;
+  fill($('list-live'), live, `No ${lg} games live right now.`);
   fill($('list-next'), next.slice(0, 8), 'No games scheduled in the next 10 days.');
   markLive();
 }
@@ -532,12 +555,30 @@ function findPlayer(token){
   const pre = m[1].toLowerCase(), last = m[2].toLowerCase();
   for (const t of [S.home, S.away]) {
     for (const p of S.roster[t.id]?.all || []) {
-      if (p.last.toLowerCase().replace(/\s/g,'') === last && p.first.toLowerCase().startsWith(pre)) return {team: t, num: p.num, last: m[2]};
+      if (p.last.toLowerCase().replace(/\s/g,'') === last && p.first.toLowerCase().startsWith(pre)) return {team: t, num: p.num, last: m[2], pos: p.grp};
     }
   }
   return {team: null, num: null, last: m[2]};
 }
 const NAME_RE = /\b[A-Z][A-Za-z']{0,2}\.\s?[A-Z][A-Za-z'\-]+/g;
+// the players a play's text names, in the order it names them (passer, then receiver; kicker, then returner).
+// The NFL feed writes "J.Allen"; college writes full names ("Nico Iamaleava pass complete to Kwazi Gilmer"), found on the rosters.
+function playNames(tx){
+  if (S.sport !== 'cfb') return (tx.match(NAME_RE) || []).map(findPlayer);
+  const hits = [];
+  for (const t of [S.home, S.away]) for (const p of S.roster[t?.id]?.all || []) {
+    if (!p.name || p.name.length < 4) continue;
+    const i = tx.indexOf(p.name); if (i >= 0) hits.push({i, end: i + p.name.length, info: {team: t, num: p.num, last: p.last || p.name.split(' ').slice(-1)[0], pos: p.grp}});
+  }
+  for (const m of tx.matchAll(NAME_RE)) { const f = findPlayer(m[0]); if (f?.team) hits.push({i: m.index, end: m.index + m[0].length, info: f}); }
+  hits.sort((a, b) => a.i - b.i || b.end - a.end);
+  const out = []; let upTo = -1;
+  for (const h of hits) if (h.i >= upTo) { out.push(h.info); upTo = h.end; }
+  // scoring lines put the scorer first: "Kwazi Gilmer 11 Yd pass from Nico Iamaleava", "Kam Kinchens 40 Yd Interception Return"
+  if (/\d+ Yd pass from /i.test(tx)) [out[0], out[1]] = [out[1], out[0]];
+  else if (/^[^(]*\d+ Yd (?:Interception|Fumble|Punt|Kickoff) Return/i.test(tx)) out.unshift(null);
+  return out;
+}
 
 /* ================= field geometry ================= */
 const isHomeId = id => S.home && String(id) === S.home.id;
@@ -585,9 +626,11 @@ function buildField(){
   g.fillRect(X(-10), FT, 140 * PX - 10 * PX - 10 * PX, 2); g.fillRect(X(-10), FB - 2, 120 * PX, 2);
   for (let yd = 0; yd <= 100; yd += 5) g.fillRect(X(yd) - (yd % 50 === 0 && yd % 100 ? 0 : 0), FT, yd === 0 || yd === 100 ? 2 : 1, FB - FT);
   g.fillRect(X(-10), FT, 1, FB - FT); g.fillRect(X(110), FT, 1, FB - FT);
+  // hash marks: the NFL's sit 18'6" apart in the middle; college hashes are 40 feet apart, 60 feet in from each sideline
+  const hashes = S.sport === 'cfb' ? [1.2, 20, 33.3, 52.1] : [1.2, 23.6, 29.7, 52.1];
   for (let yd = 1; yd < 100; yd++) {
     if (yd % 5 === 0) continue;
-    for (const hy of [1.2, 23.6, 29.7, 52.1]) g.fillRect(X(yd), FT + Math.round(hy * SY), 1, 2);
+    for (const hy of hashes) g.fillRect(X(yd), FT + Math.round(hy * SY), 1, 2);
   }
   // yard numbers
   g.font = '8px "Press Start 2P"'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#f4f4ee';
@@ -716,6 +759,11 @@ const CAST = {
     A: {name: 'CHIP RIVERS', tag: 'CHIP', look: {jacket: '#1f3c88', tie: '#c0392b', skin: '#e0ac69', hair: '#5a3825', brow: '#3b2416'}},
     B: {name: 'DUKE HAMMOND', tag: 'DUKE', look: {jacket: '#7a2533', tie: '#f7c948', skin: '#8d5524', hair: '#d8d8d8', brow: '#d8d8d8', bald: true, stache: true, glasses: true}}
   },
+  cfb: {
+    // college football: Beau Calhoun calls the play-by-play; Ray Tillman coached thirty years of Saturdays before moving upstairs
+    A: {name: 'BEAU CALHOUN', tag: 'BEAU', look: {jacket: '#5b2a86', tie: '#f2c14e', skin: '#f1c27d', hair: '#8a5a2b', brow: '#6b4423'}},
+    B: {name: 'RAY TILLMAN', tag: 'RAY', look: {jacket: '#26412f', shirt: '#f2f0e8', skin: '#a0663d', hair: '#cfcfcf', brow: '#bdbdbd', glasses: true, cap: '#7a1f1f', capBrim: '#521414', capLogo: '#f2f0e8'}}
+  },
   mlb: {
     // Nina Alvarez calls the play-by-play; Gus Petrakis caught for fifteen years before moving upstairs
     A: {name: 'NINA ALVAREZ', tag: 'NINA', look: {jacket: '#1d6b5a', shirt: '#f2e6d8', skin: '#c68642', hair: '#2b1a12', brow: '#2b1a12', longHair: true}},
@@ -782,8 +830,8 @@ function sfx(name){
 }
 
 /* ================= voices ================= */
-let VOICES = {nfl: {A: null, B: null}, mlb: {A: null, B: null}, nba: {A: null, B: null}, wnba: {A: null, B: null}};
-const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}, nba: {A: [0.95, 1.12], B: [0.85, 0.95]}, wnba: {A: [1.15, 1.08], B: [0.98, 1.0]}}; // [pitch, rate]
+let VOICES = {nfl: {A: null, B: null}, cfb: {A: null, B: null}, mlb: {A: null, B: null}, nba: {A: null, B: null}, wnba: {A: null, B: null}};
+const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, cfb: {A: [1.0, 1.15], B: [0.78, 0.9]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}, nba: {A: [0.95, 1.12], B: [0.85, 0.95]}, wnba: {A: [1.15, 1.08], B: [0.98, 1.0]}}; // [pitch, rate]
 function pickVoices(){
   const vs = PBC.voices();
   if (!vs.length) return;
@@ -798,6 +846,8 @@ function pickVoices(){
   // basketball: the NBA booth gets the male voices Chip and Duke aren't using where the device has them; the WNBA booth two women's voices
   const male = vs.filter(v => v !== A && v !== B && v !== gus && /Male|Fred|Ralph|Eddy|Reed|Rocko|Guy|Eric|Lee|Oliver|David|Daniel|Alex|Aaron|Tom|Arthur|Ryan|Mark/i.test(v.name));
   VOICES.nba = {A: male[0] || A, B: male[1] || B};
+  // college football: the next two male voices, so Beau and Ray don't sound like Chip and Duke where the device has enough voices
+  VOICES.cfb = {A: male[2] || male[0] || A, B: male[3] || male[1] || B};
   const fem = vs.filter(v => /Samantha|Ava|Allison|Susan|Zira|Jenny|Aria|Karen|Moira|Tessa|Serena|Victoria|Female|Fiona|Kathy|Vicki|Joanna|Salli|Kendra|Libby|Sonia/i.test(v.name));
   VOICES.wnba = {A: fem.find(v => v !== nina) || fem[0] || nina, B: fem.find(v => v !== nina && v !== (fem.find(x => x !== nina) || fem[0])) || nina};
 }
@@ -832,9 +882,11 @@ function teamByAbbr(ab){
 function speechText(t){
   let s = ' ' + t + ' ';
   s = s.replace(/\([^)]*\)/g, ' ');
-  s = s.replace(/\b([A-Z]{2,3})-(?=[A-Z])/g, (m, a) => { const tm = teamByAbbr(a); return tm ? tm.loc + ' ' : m; });
+  s = s.replace(/\b([A-Z]{2,5})-(?=[A-Z])/g, (m, a) => { const tm = teamByAbbr(a); return tm ? tm.loc + ' ' : m; });
   s = s.replace(/\b[A-Z][A-Za-z']{0,2}\.\s?([A-Z][A-Za-z'\-]+)/g, '$1');
-  s = s.replace(/\b([A-Z]{2,3}) (\d{1,2})\b/g, (m, a, n) => { const tm = teamByAbbr(a); return tm ? `the ${tm.loc} ${n}` : m; });
+  // "to BUF 20" (NFL) and "to the UCLA 31" (college) both read "to the Buffalo 20"
+  s = s.replace(/\b(the )?([A-Z]{2,5}) (\d{1,2})\b/g, (m, the, a, n) => { const tm = teamByAbbr(a); return tm ? `the ${tm.loc} ${n}` : m; });
+  s = s.replace(/ ,/g, ',');
   s = s.replace(/\byds?\b/gi, 'yards').replace(/\bNO GOOD\b/g, 'no good').replace(/\bGOOD\b/g, 'good')
        .replace(/\bTOUCHDOWN\b/g, 'touchdown').replace(/\bPENALTY\b/g, 'Penalty').replace(/\bINTERCEPTED\b/g, 'intercepted')
        .replace(/\bFUMBLES\b/g, 'fumbles').replace(/\bRECOVERED\b/g, 'recovered').replace(/\bSAFETY\b/g, 'safety');
@@ -889,7 +941,11 @@ const ASIDES = {
   blowout: ['This one is getting out of hand.', 'The {def} sideline looks stunned.', '{off} is pouring it on now.'],
   close: ['One-score game. Anything can happen.', 'Still a one-score game. Nobody is comfortable.'],
   twoMin: ['Two-minute warning. Clock management time.', 'Under two minutes. This is where legends are made.'],
-  turnover: ['Possession change, and the momentum swings with it.', 'Short field for {def} now. Gotta capitalize.']
+  turnover: ['Possession change, and the momentum swings with it.', 'Short field for {def} now. Gotta capitalize.'],
+  // college football has no two-minute warning, and its overtime starts at the 25 with no kickoff
+  twoMinCFB: ['Under two minutes now, and no two-minute warning in college. Every second counts.', 'Two minutes to go. In college the clock stops on a first down, so watch the chains.'],
+  cfbOT: ['College overtime! Each team gets the ball at the 25. No kickoff, no clock.', 'Overtime, college style. Ball at the 25, score and see if they can answer.'],
+  cfbOT3: ['Third overtime. Now it is a two-point try, every time. Pure drama.', 'Deep into overtime. From here on it is two-point plays only.']
 };
 function pickFresh(list, seed){
   // vary the pick, and skip anything Duke said recently
@@ -927,7 +983,8 @@ function dukeAside(p, plan, before){
   const ctx = {off: offT, def: offT === S.home ? S.away : S.home};
   const say = k => fill(pickFresh(ASIDES[k], p.id + k), Object.assign({}, plan, {off: ctx.off, def: ctx.def}), p.statYardage || 0);
   const per = p.period?.number || 0, secs = /(\d+):(\d+)/.exec(p.clock?.displayValue || '');
-  if ((per === 2 || per === 4) && secs && +secs[1] * 60 + +secs[2] <= 120 && !S.dukeTwoMin?.[per]) { (S.dukeTwoMin ||= {})[per] = true; return say('twoMin'); }
+  if ((per === 2 || per === 4) && secs && +secs[1] * 60 + +secs[2] <= 120 && !S.dukeTwoMin?.[per]) { (S.dukeTwoMin ||= {})[per] = true; return say(S.sport === 'cfb' ? 'twoMinCFB' : 'twoMin'); }
+  if (S.sport === 'cfb' && per >= 5 && !S.dukeTwoMin?.['ot' + Math.min(per, 7)]) { (S.dukeTwoMin ||= {})['ot' + Math.min(per, 7)] = true; if (per === 5 || per === 7) return say(per === 5 ? 'cfbOT' : 'cfbOT3'); }
   if (h !== before.h || a !== before.a) {
     // scoring play: talk about the scoreboard
     const lead = Math.sign(h - a), was = Math.sign(before.h - before.a), lead0 = h === a;
@@ -953,10 +1010,11 @@ function dukeAside(p, plan, before){
 /* ================= play planner ================= */
 function classify(p){
   const ty = (p.type?.text || '').toLowerCase(), tx = p.text || '';
-  if (/kickoff/.test(ty) || /kicks (onside )?\d+ yards/i.test(tx)) return 'kickoff';
-  if (/punt/.test(ty) || /\bpunts \d+/i.test(tx)) return 'punt';
+  // the NFL feed writes "kicks 65 yards", "punts 45 yards"; college writes "kickoff for 65 yds", "punt for 45 yds"
+  if (/kickoff/.test(ty) || /kicks (onside )?\d+ yards|\bkickoff for \d+ yds/i.test(tx)) return 'kickoff';
+  if (/punt/.test(ty) || /\bpunts \d+|\bpunt for \d+ yds/i.test(tx)) return 'punt';
   if (/field goal/.test(ty) || /field goal/i.test(tx)) return 'fg';
-  if (/extra point|two-point|2pt/.test(ty) || /^[^.]*extra point/i.test(tx)) return 'pat';
+  if (/extra point|two-point|two point|2pt/.test(ty) || /^[^.]*extra point/i.test(tx)) return 'pat';
   if (/interception/.test(ty) || /INTERCEPTED/.test(tx)) return 'int';
   if (/sack/.test(ty) || /\bsacked\b/i.test(tx)) return 'sack';
   if (/incomplet/.test(ty) || /\bincomplete\b/i.test(tx)) return 'inc';
@@ -994,8 +1052,15 @@ function makeFormation(off, def, los, kind){
 // where a kick starts and lands, read from the play text: "kicks 55 yards from PIT 35 to CLV 10", "punts 45 yards to PIT 20"
 function spotX(abbr, n){ const tm = teamByAbbr(abbr); if (!tm || n === 50) return 50; return tm === S.home ? n : 100 - n; }
 function kickSpots(tx){
-  const m = /\b(?:kicks|punts)(?: onside)? (\d+) yards?(?: from ([A-Z]{2,3}) (\d{1,2}))? to (?:the )?(?:([A-Z]{2,3}) (\d{1,2})\b|(end ?zone)|(50|midfield)\b)/i.exec(tx);
-  if (!m) return null;
+  const m = /\b(?:kicks|punts)(?: onside)? (\d+) yards?(?: from ([A-Z]{2,5}) (\d{1,2}))? to (?:the )?(?:([A-Z]{2,5}) (\d{1,2})\b|(end ?zone)|(50|midfield)\b)/i.exec(tx);
+  if (!m) {
+    // college: "Gabriel Nwosu kickoff for 65 yds for a touchback", "Ryan Eckley punt for 44 yds, fair catch by X at the UCLA 20"
+    const c = /\b(?:kickoff|punt) for (\d+) yds?(?:.*?\b(?:fair catch by .*? at|downed at|out of bounds at) the ([A-Z]{2,5}) (\d{1,2})\b)?/i.exec(tx);
+    if (!c) return null;
+    const out = {yds: +c[1]};
+    if (c[2] && teamByAbbr(c[2])) out.land = spotX(c[2], +c[3]);
+    return out;
+  }
   const out = {yds: +m[1]};
   if (m[2] && teamByAbbr(m[2])) { out.from = spotX(m[2], +m[3]); out.kicker = teamByAbbr(m[2]); }
   if (m[4] && teamByAbbr(m[4])) out.land = spotX(m[4], +m[5]);
@@ -1044,9 +1109,10 @@ function planPlay(p){
   const runTime = (x0, x1) => Math.max(0.35, Math.abs(x1 - x0) / 8.5);
 
   // jersey numbers from names in the text
-  const names = (tx.match(NAME_RE) || []).map(findPlayer);
+  const names = playNames(tx);
   const tag = (actor, info) => { if (info && info.num != null && actor) { actor.num = info.num; if (info.team) S.over[info.team.id][actor.role] = info.num; } };
-  const tacklers = ((tx.match(/\(([^)]*)\)\s*\.?\s*$/) || [])[1] || '').match(NAME_RE) || [];
+  // the NFL lists tacklers in brackets at the end; college brackets name the kicker of the extra point instead
+  const tacklers = S.sport === 'cfb' ? [] : ((tx.match(/\(([^)]*)\)\s*\.?\s*$/) || [])[1] || '').match(NAME_RE) || [];
 
   const SNAP = 0.35, qb = R('QB0'), c = R('OL2');
   const seg = (t0, t1, s) => plan.segs.push(Object.assign({t0: PRE + t0, t1: PRE + t1}, s));
@@ -1088,7 +1154,7 @@ function planPlay(p){
       plan.carrierName = names[1]?.last;
     } else {
       tag(kicker, names[0]);
-      plan.good = /\bis good\b|\bgood\b/i.test(tx) && !/no good|blocked/i.test(tx);
+      plan.good = (/\bis good\b|\bgood\b/i.test(tx) || /field goal good|extra point good/i.test(p.type?.text || '')) && !/no good|blocked|missed/i.test(tx + ' ' + (p.type?.text || ''));
       const gx = dir > 0 ? 110 : -10, gy = plan.good ? MIDY : MIDY + (hash(p.id) % 2 ? 6 : -6);
       go(kicker, SNAP + 0.7, los - dir * 7.3, MIDY);
       seg(SNAP + 0.35, SNAP + 0.75, {k: 'hold', a: holder});
@@ -1156,8 +1222,8 @@ function planPlay(p){
     plan.sfx.push([PRE + 0.4, 'whistle']);
     tEnd = 1.6;
   } else { // rush
-    tag(qb, /scramble|kneels|sneak/i.test(tx) ? names[0] : null);
-    const scramble = /scramble|kneels|sneak/i.test(tx);
+    tag(qb, /scramble|kneels|sneak/i.test(tx) || names[0]?.pos === 'QB' ? names[0] : null);
+    const scramble = /scramble|kneels|sneak/i.test(tx) || names[0]?.pos === 'QB';
     const rb = scramble ? qb : R('RB0'); if (!scramble) tag(rb, names[0]);
     seg(0, SNAP, {k: 'hold', a: c});
     seg(SNAP, SNAP + 0.15, {k: 'arc', x0: c.track[1][1], y0: MIDY, xa: qb, peak: 2});
@@ -3295,7 +3361,7 @@ function headshotURL(pl){
   if (!pl.id) return '';
   // MLB's cut-out headshots have a see-through background, which the face reader needs
   return isMLB() ? `https://img.mlbstatic.com/mlb-photos/image/upload/w_180,f_png,q_auto:best/v1/people/${pl.id}/headshot/silo/current`
-    : `https://a.espncdn.com/i/headshots/${S.sport}/players/full/${pl.id}.png`;
+    : `https://a.espncdn.com/i/headshots/${SPORTS[S.sport].league || S.sport}/players/full/${pl.id}.png`;
 }
 function loadLooks(pl){
   const url = headshotURL(pl); if (!url) return Promise.resolve(null);
@@ -3683,8 +3749,76 @@ const WNBA_TEAMS = espnTeams('wnba', [[20, 'ATL', 'Atlanta', 'Dream', 'e31837', 
   [9, 'NY', 'New York', 'Liberty', '86cebc', '000000'], [11, 'PHX', 'Phoenix', 'Mercury', '3c286e', 'fa4b0a'], [132052, 'POR', 'Portland', 'Fire', 'cee5eb', '000000'],
   [14, 'SEA', 'Seattle', 'Storm', '2c5235', 'fee11a'], [131935, 'TOR', 'Toronto', 'Tempo', '33476d', '7b1b38'], [16, 'WSH', 'Washington', 'Mystics', 'e03a3e', '002b5c']]);
 const FALLBACK_TEAMS = {nfl: NFL_TEAMS, nba: NBA_TEAMS, wnba: WNBA_TEAMS};
+// College football: ESPN's FBS standings give the conferences, each one's teams in ESPN's standing order (its conference seed,
+// then conference record, then overall record). Colors come from ESPN's team list. If the standings don't load, the teams
+// playing in the games list stand in, alphabetically and without conferences.
+const recOf = (e, k) => e.stats?.find(x => x.type === k || x.name === k);
+const pct = r => { const [w, l, t] = String(r?.summary || r?.displayValue || '').split('-').map(Number); return w + l + (t || 0) ? (w + (t || 0) / 2) / (w + l + (t || 0)) : 0; };
+async function loadCFBTeams(){
+  const [st, tl] = await Promise.allSettled([
+    getJSON(`${SPORTS.cfb.standings}?region=us&lang=en&contentorigin=espn&group=80&season=${seasonYear()}&type=0&level=3`),
+    getJSON(`${API}/teams?limit=1000`)]);
+  const look = new Map();
+  for (const x of tl.value?.sports?.[0]?.leagues?.[0]?.teams || []) if (x.team?.id) look.set(String(x.team.id), x.team);
+  const nodes = [];
+  (function walk(n){ for (const c of n?.children || []) { if (c.isConference || c.standings?.entries) nodes.push(c); else walk(c); } })(st.value);
+  const list = [], confs = [];
+  for (const c of nodes) {
+    const entries = [...(c.standings?.entries || []), ...(c.children || []).flatMap(d => d.standings?.entries || [])].filter(e => e.team?.id);
+    if (!entries.length) continue;
+    const seed = e => +((recOf(e, 'playoffSeed') || recOf(e, 'playoffseed'))?.value || 0) || 999;
+    entries.sort((a, b) => seed(a) - seed(b) || pct(recOf(b, 'vsconf')) - pct(recOf(a, 'vsconf')) || pct(recOf(b, 'total')) - pct(recOf(a, 'total')));
+    const conf = {id: String(c.id), name: c.abbreviation || c.shortName || c.name, full: c.name, ids: new Set()};
+    entries.forEach((e, i) => {
+      const id = String(e.team.id), x = look.get(id) || {};
+      const logo = (e.team.logos?.find(l => l.rel?.includes('default')) || e.team.logos?.[0] || x.logos?.[0])?.href || `https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`;
+      const t = teamObj({...x, ...e.team, color: x.color, alternateColor: x.alternateColor, logo});
+      Object.assign(t, {conf: conf.id, rank: i + 1, rec: recOf(e, 'total')?.displayValue || recOf(e, 'overall')?.displayValue || '', crec: recOf(e, 'vsconf')?.displayValue || ''});
+      conf.ids.add(id); list.push(t);
+    });
+    confs.push(conf);
+  }
+  // independents have no standings to rank, so they go last
+  confs.sort((a, b) => /indep/i.test(a.full) - /indep/i.test(b.full));
+  if (!list.length) {
+    const seen = new Map();
+    for (const ev of S.events.values()) for (const c of ev.competitions[0].competitors) { const t = teamObj(c.team || {}, c.id); if (t.id && !seen.has(t.id)) seen.set(t.id, t); }
+    return {list: [...seen.values()].sort((a, b) => a.loc.localeCompare(b.loc)), confs: []};
+  }
+  return {list, confs};
+}
+// the conference the viewer picked last time, else the one with the most games on right now
+function pickConf(){
+  if (!S.confs.length) { S.conf = null; return; }
+  let saved = null; try { saved = localStorage.getItem('pbc.cfb.conf'); } catch (e) {}
+  if (S.confs.some(c => c.id === saved)) { S.conf = saved; S.confAuto = false; return; }
+  S.confAuto = true;
+  const live = c => [...S.events.values()].filter(ev => stateOf(ev) === 'in' && ev.competitions[0].competitors.some(x => c.ids.has(String(x.team?.id ?? x.id)))).length;
+  S.conf = [...S.confs].sort((a, b) => live(b) - live(a))[0].id;
+}
+function renderConf(){
+  const bar = $('confbar'), sel = $('conf'), on = S.sport === 'cfb' && S.confs?.length > 0;
+  bar.hidden = !on; if (!on) return;
+  const want = S.confs.map(c => c.id).join();
+  if (sel.dataset.ids !== want) {
+    sel.replaceChildren(...S.confs.map(c => { const o = document.createElement('option'); o.value = c.id; o.textContent = c.full; return o; }));
+    sel.dataset.ids = want;
+  }
+  sel.value = S.conf;
+}
+$('conf').onchange = e => {
+  S.conf = e.target.value; try { localStorage.setItem('pbc.cfb.conf', S.conf); } catch (err) {}
+  S.tview = null; renderTeams(); renderList();
+};
 async function loadTeams(){
   const sport = S.sport; let list = [];
+  if (sport === 'cfb') {
+    const r = await loadCFBTeams().catch(() => ({list: [], confs: []}));
+    if (sport !== S.sport) return;
+    S.teams = r.list; S.confs = r.confs; S.teamsFailed = !r.list.length;
+    pickConf(); renderTeams(); renderList();
+    return;
+  }
   try {
     if (isMLB()) {
       const j = await getJSON(`${MLB_API}/v1/teams?sportId=1&season=${seasonYear()}`);
@@ -3704,6 +3838,7 @@ async function loadTeams(){
   renderTeams();
 }
 function renderTeams(){
+  renderConf();
   const grid = $('teamgrid'); grid.hidden = !!S.tview; $('teampage').hidden = !S.tview;
   if (S.tview) return renderTeamPage();
   grid.replaceChildren();
@@ -3712,12 +3847,21 @@ function renderTeams(){
     d.textContent = S.teamsFailed ? `Can't load the ${SPORTS[S.sport].name} teams right now.` : 'Loading teams...';
     grid.append(d); return;
   }
-  for (const t of S.teams) {
+  // college football: only the picked conference, in standing order, with each team's place and record (overall, then in conference)
+  const conf = S.sport === 'cfb' && S.confs?.find(c => c.id === S.conf);
+  for (const t of conf ? S.teams.filter(t => t.conf === conf.id) : S.teams) {
     const b = document.createElement('button'); b.className = 'tbox'; b.dataset.tid = t.id;
-    b.setAttribute('aria-label', `${fullName(t)}: schedule, news, stats and roster`); b.title = fullName(t);
+    b.setAttribute('aria-label', `${conf ? `${t.rank}. ` : ''}${fullName(t)}${t.rec ? `, ${t.rec}` : ''}${t.crec ? ` (${t.crec} in conference)` : ''}: schedule, news, stats and roster`);
+    b.title = fullName(t) + (t.rec ? ` · ${t.rec}${t.crec ? ` (${t.crec} ${conf ? conf.name : 'conf'})` : ''}` : '');
     const cv = document.createElement('canvas'); cv.width = 32; cv.height = 32;
     const s = document.createElement('span'); s.textContent = t.abbr;
-    b.append(cv, s); b.onclick = () => openTeam(t);
+    b.append(cv, s);
+    if (conf) {
+      const rk = document.createElement('i'); rk.className = 'rk'; rk.textContent = t.rank;
+      const rc = document.createElement('small'); rc.textContent = t.rec ? `${t.rec}${t.crec ? ` (${t.crec})` : ''}` : '';
+      b.append(rk, rc);
+    }
+    b.onclick = () => openTeam(t);
     grid.append(b); drawLogo(cv, t);
   }
   markLive();
@@ -3882,9 +4026,12 @@ function renderTeamPage(){
 /* ================= notices ================= */
 function hideBanner(){ $('banner').hidden = true; }
 function showTimeout(p){
-  const m = (p.text || '').match(/by ([A-Z]{2,3})\b/);
+  const m = (p.text || '').match(/by ([A-Z]{2,5})\b/) || (p.text || '').match(/^Timeout ([A-Z]{2,5})\b/);
   // basketball names the team ("Celtics Full timeout")
-  const tm = (m ? teamByAbbr(m[1]) : null) || (isBB() ? [S.home, S.away].find(t => t && (p.text || '').includes(t.nick)) || teamOfId(p.team?.id) : null);
+  const tm = (m ? teamByAbbr(m[1]) : null)
+    // college names the school: "Timeout PENN STATE, clock 05:12"
+    || (S.sport === 'cfb' ? [S.home, S.away].find(t => t && new RegExp('^Timeout (' + [t.abbr, t.loc, t.nick].map(x => x.replace(/[^A-Za-z0-9 &'.]/g, '').replace(/[.]/g, '\\.')).join('|') + ')\\b', 'i').test(p.text || '')) : null)
+    || (isBB() ? [S.home, S.away].find(t => t && (p.text || '').includes(t.nick)) || teamOfId(p.team?.id) : null);
   const n = (p.text || '').match(/#(\d)/);
   $('banner-sub').textContent = tm ? `${tm.nick.toUpperCase()}${n ? ' · TIMEOUT #' + n[1] : ''}` : (/official|tv/i.test(p.text || '') ? 'OFFICIAL TIMEOUT' : '');
   $('banner').hidden = false;
@@ -3919,7 +4066,7 @@ $('btn-start').onclick = () => {
   S.started = true; SND.init(); $('start').hidden = true;
   if (soundMode() === 'off') setSound('voices');
   if (window.speechSynthesis) { pickVoices(); const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u); }
-  if (!S.game) { const {live} = sortedGames(); if (live[0]) selectGame(String(live[0].id), 'live'); else if (S.events.size) showIdle(); }
+  if (!S.game) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); }
   else if (S.mode === 'live') say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
 };
 
@@ -3937,10 +4084,12 @@ async function neutralField(){
 async function openSport(){
   const sport = S.sport, ok = await loadScoreboard();
   if (!ok || sport !== S.sport) return;
-  const {live} = sortedGames();
-  if (live[0]) selectGame(String(live[0].id), 'live');
+  const ev = firstLive();
+  if (ev) selectGame(String(ev.id), 'live');
   else if (S.started) showIdle();
 }
+// the game the broadcast cuts to: a live one in the picked conference, else any live game
+const firstLive = () => sortedGames().live[0] || sortedGames(true).live[0];
 async function switchSport(sp){
   if (sp === S.sport || !SPORTS[sp]) return;
   S.sport = sp; API = SPORTS[sp].api; SITE = SPORTS[sp].site;
@@ -3949,7 +4098,7 @@ async function switchSport(sp){
   S.token++;
   if (window.speechSynthesis) speechSynthesis.cancel();
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
-  Object.assign(S, {events: new Map(), extra: new Map(), teams: [], tview: null, tdata: {}, game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
+  Object.assign(S, {events: new Map(), extra: new Map(), teams: [], confs: [], tview: null, tdata: {}, game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
     rp: null, ri: 0, paused: false, losX: null, fdX: null, flag: null, down: 0, prevScore: {h: 0, a: 0}, replayDone: false});
   $('tline').hidden = true; hideNotice(); hideBanner(); showErr('');
   clearLog('Pick a game to see its play-by-play here.');
