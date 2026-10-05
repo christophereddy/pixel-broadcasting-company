@@ -1,0 +1,589 @@
+[
+ {
+  "location": {
+   "name": "Atlanta",
+   "short": "ATL",
+   "tz": "America/New_York"
+  },
+  "local": [],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 80,
+     "text": "Mostly cloudy, with a high near 80. Calm wind becoming northeast around 5 mph in the afternoon."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 61,
+     "text": "Partly cloudy, with a low around 61. East wind around 5 mph."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 77,
+     "text": "Sunny, with a high near 77. East wind around 10 mph, with gusts as high as 20 mph."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 57,
+     "text": "Mostly clear, with a low around 57."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 80,
+     "text": "Sunny, with a high near 80."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "WABE",
+    "url": "https://www.wabe.org/news/",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=33.749&lon=-84.388",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "atlanta-ga",
+  "goodnews": []
+ },
+ {
+  "location": {
+   "name": "Boston",
+   "short": "BOS",
+   "tz": "America/New_York"
+  },
+  "local": [
+   {
+    "h": "WBUR names its 2026 Makers",
+    "b": "WBUR's 2026 Makers features seven local artists of color whose work explores cultural boundaries.",
+    "date": "2026-10-05"
+   }
+  ],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Sunny, with a high near 66. West wind 5 to 14 mph, with gusts as high as 25 mph."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Clear, with a low around 45. West wind 8 to 10 mph."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 58,
+     "text": "Sunny, with a high near 58. West wind around 11 mph, with gusts as high as 21 mph."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "Clear, with a low around 44. West wind 3 to 6 mph."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 65,
+     "text": "Sunny, with a high near 65. Light southwest wind increasing to 6 to 11 mph in the morning."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "WBUR",
+    "url": "https://www.wbur.org/news",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=42.3601&lon=-71.0589",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "boston-ma",
+  "goodnews": []
+ },
+ {
+  "location": {
+   "name": "Chicago",
+   "short": "CHI",
+   "tz": "America/Chicago"
+  },
+  "local": [
+   {
+    "h": "Unhoused artist Peace Prophet's watercolors prized",
+    "b": "Peace Prophet, a 71-year-old unhoused Chicago artist, paints watercolors collected across the city, some collectors owning hundreds.",
+    "date": "2026-10-04",
+    "more": [
+     "She has lived on the streets since 2000 and turns down offers of housing help, accepting only payment for her work."
+    ]
+   }
+  ],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Sunny, with a high near 62. North northwest wind around 5 mph becoming northeast in the afternoon."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Clear, with a low around 50. East wind around 5 mph becoming south after midnight."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 68,
+     "text": "Sunny, with a high near 68. South southwest wind 10 to 15 mph, with gusts as high as 25 mph."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 57,
+     "text": "Mostly clear, with a low around 57."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 71,
+     "text": "Sunny, with a high near 71."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "WBEZ",
+    "url": "https://www.wbez.org/",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=41.8781&lon=-87.6298",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "chicago-il",
+  "goodnews": []
+ },
+ {
+  "location": {
+   "name": "Denver",
+   "short": "DEN",
+   "tz": "America/Denver"
+  },
+  "local": [
+   {
+    "h": "Denver weighs what to do with empty offices",
+    "b": "About 38% of downtown Denver's offices sit vacant.",
+    "date": "2026-10-05",
+    "more": [
+     "The city faces hard choices about converting or tearing down old office buildings without repeating urban renewal mistakes."
+    ]
+   },
+   {
+    "h": "Hiking Whittier's parks with the 'Lumpers'",
+    "b": "A hiking group of retired women toured Denver's Whittier neighborhood through its parks.",
+    "date": "2026-10-05",
+    "more": [
+     "The walk took in four parks named for Black historical figures, including Madam C.J. Walker."
+    ]
+   }
+  ],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 88,
+     "text": "Sunny, with a high near 88. South southwest wind around 6 mph becoming light and variable."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59. Light and variable wind becoming south southwest around 6 mph in the evening."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 86,
+     "text": "Mostly sunny, with a high near 86. South southwest wind around 6 mph becoming calm."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Partly cloudy, with a low around 58."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 84,
+     "text": "Sunny, with a high near 84."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "Denverite",
+    "url": "https://denverite.com/",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=39.7392&lon=-104.9903",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "denver-co",
+  "goodnews": []
+ },
+ {
+  "location": {
+   "name": "Los Angeles",
+   "short": "LA",
+   "tz": "America/Los_Angeles"
+  },
+  "local": [
+   {
+    "h": "Malibu delays PCH speed camera fines to November",
+    "b": "Malibu pushed its Pacific Coast Highway speed camera program to November, starting with a 60-day warning phase for drivers going 11+ mph over the limit.",
+    "date": "2026-10-04",
+    "more": [
+     "A September test recorded about 100,000 speeding violations in under 10 days.",
+     "Since 2010, more than 60 people have died in collisions on this stretch of PCH."
+    ]
+   },
+   {
+    "h": "How to get free mulch for your yard",
+    "b": "Southern California residents can get free mulch through city programs or services like ChipDrop, which connects arborists with gardeners.",
+    "date": "2026-10-04",
+    "more": [
+     "Los Angeles offers free mulch piles, while Orange County provides scheduled pickups."
+    ]
+   },
+   {
+    "h": "LA mayoral rivals agree homeless agency must go",
+    "b": "At a South LA forum, Karen Bass and Nithya Raman both backed leaving the Los Angeles Homeless Services Authority.",
+    "date": "2026-10-04",
+    "more": [
+     "They split sharply on housing density and short-term rental rules ahead of the 2028 Olympics."
+    ]
+   },
+   {
+    "h": "Could the billionaire tax reach everyone?",
+    "b": "LAist fact-checked opponents' claim that Proposition 40 is a 'Trojan horse' for taxes on regular Californians.",
+    "date": "2026-10-04",
+    "more": [
+     "Legal experts say lawmakers could make some amendments, but the tax's constitutional language limits how far it could expand."
+    ]
+   }
+  ],
+  "weather": {
+   "now": {
+    "temp": 79,
+    "cond": "Clear",
+    "wind": "NNW 4 mph",
+    "humidity": 44,
+    "obs": "Oct 5, 1:25 am PDT"
+   },
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 98,
+     "text": "Sunny and hot, with a high near 98. North northeast wind around 5 mph becoming west southwest in the afternoon."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 73,
+     "text": "Mostly clear, with a low around 73. West southwest wind 5 to 10 mph becoming light and variable in the evening."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 97,
+     "text": "Sunny and hot, with a high near 97. Light and variable wind becoming southwest 5 to 10 mph in the afternoon."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 71,
+     "text": "Clear, with a low around 71. Southwest wind 5 to 10 mph becoming light and variable after midnight."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 97,
+     "text": "Sunny and hot, with a high near 97."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 69,
+     "text": "Clear, with a low around 69."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "LAist",
+    "url": "https://laist.com/news",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=34.0522&lon=-118.2437",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "los-angeles-ca",
+  "goodnews": []
+ },
+ {
+  "location": {
+   "name": "New York City",
+   "short": "NYC",
+   "tz": "America/New_York"
+  },
+  "local": [
+   {
+    "h": "Sixth person dies after falling ill in NYPD custody",
+    "b": "Reginald Newkirk, 54, of Brooklyn died Sunday at Kings County Hospital, at least the sixth person this year to die after a medical crisis in NYPD custody.",
+    "date": "2026-10-04",
+    "more": [
+     "He was arrested Friday for drug possession, hospitalized and cleared, then had another medical emergency Saturday afternoon.",
+     "Public defenders have called for independent Civilian Complaint Review Board investigations of every death in police custody."
+    ]
+   },
+   {
+    "h": "NY prison system staffing crisis drives workers away",
+    "b": "New York's prison system has a 56% vacancy rate among corrections workers.",
+    "date": "2026-10-04",
+    "more": [
+     "New officer training is up 40%, but more than 250 of 660 newly trained officers resigned within a year.",
+     "The state spent over $1 billion deploying the National Guard after about 2,000 guards were fired following a 2025 wildcat strike."
+    ]
+   },
+   {
+    "h": "NJ reports first West Nile Virus death of the year",
+    "b": "New Jersey reported its first West Nile Virus death of 2026, a South Jersey resident over 60.",
+    "date": "2026-10-04",
+    "more": [
+     "As of Thursday the state had confirmed 26 cases, 19 with neurological illness, already above last year's total of 23."
+    ]
+   },
+   {
+    "h": "Banned books and Winnie the Pooh in NYC libraries",
+    "b": "City library branches have a busy October, including banned-book events and NYPL celebrations of Winnie the Pooh's 100th birthday.",
+    "date": "2026-10-04",
+    "more": [
+     "Queens Public Library and Penguin Random House are holding a banned book giveaway at the Hunters Point branch."
+    ]
+   }
+  ],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 69,
+     "text": "Sunny, with a high near 69. Breezy, with a northwest wind 9 to 14 mph increasing to 16 to 21 mph in the afternoon."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Clear, with a low around 50. Northwest wind 13 to 15 mph."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Sunny, with a high near 63. Northwest wind 9 to 11 mph."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Clear, with a low around 50. West wind 3 to 7 mph."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 68,
+     "text": "Sunny, with a high near 68."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "Gothamist",
+    "url": "https://gothamist.com/news",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=40.7128&lon=-74.006",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "new-york-city",
+  "goodnews": [
+   {
+    "h": "Banned books and Pooh at NYC libraries",
+    "b": "NYC libraries mark Banned Books Week this October, with Queens Public Library offering free banned titles.",
+    "date": "2026-10-04",
+    "more": [
+     "NYPL is celebrating Winnie the Pooh's centennial with movies, readings and crafts across the boroughs."
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "paris-france",
+  "location": {
+   "name": "Paris",
+   "short": "PAR",
+   "tz": "Europe/Paris"
+  },
+  "local": [
+   {
+    "h": "Up to 500 French schools to close Monday",
+    "b": "The education minister said up to 500 schools will be fully or partly closed Monday because of protests by teenage pupils.",
+    "date": "2026-10-04",
+    "more": [
+     "Protests disrupted more than 730 schools on Friday, and organisers have urged new rallies."
+    ]
+   },
+   {
+    "h": "Le Pen voices 'complete confidence' in Bardella",
+    "b": "National Rally figure Marine Le Pen said she has complete confidence in party president Jordan Bardella.",
+    "date": "2026-10-04"
+   },
+   {
+    "h": "Shared French-Swiss lake is drying up",
+    "b": "Concern is growing as a lake on the French-Swiss border dries up.",
+    "date": "2026-10-04"
+   }
+  ],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 75,
+     "text": "Beau temps sec et bien ensoleillé (fine, dry, sunny weather), light winds."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "The Local France",
+    "url": "https://www.thelocal.fr/",
+    "desk": "local"
+   },
+   {
+    "name": "Météo-France",
+    "url": "https://meteofrance.com/previsions-meteo-france/paris/75000",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "goodnews": []
+ },
+ {
+  "location": {
+   "name": "Seattle",
+   "short": "SEA",
+   "tz": "America/Los_Angeles"
+  },
+  "local": [],
+  "weather": {
+   "now": null,
+   "periods": [
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Partly sunny, with a high near 66. Light and variable wind."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 54,
+     "text": "Partly cloudy, with a low around 54. Light north northeast wind."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66. North wind 3 to 7 mph."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66."
+    }
+   ]
+  },
+  "sources": [
+   {
+    "name": "KUOW",
+    "url": "https://www.kuow.org/",
+    "desk": "local"
+   },
+   {
+    "name": "National Weather Service",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=47.6062&lon=-122.3321",
+    "desk": "local"
+   }
+  ],
+  "updatedAt": "2026-10-05T10:27:00Z",
+  "slug": "seattle-wa",
+  "goodnews": []
+ }
+]
