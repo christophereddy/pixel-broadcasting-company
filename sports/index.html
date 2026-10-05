@@ -180,7 +180,8 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   <div class="pbc-ctl">
     <nav class="tabs" aria-label="Sport">
       <button class="tab" aria-pressed="true" id="sport-nfl">NFL</button>
-      <button class="tab" disabled>NBA<small>soon</small></button>
+      <button class="tab" aria-pressed="false" id="sport-nba">NBA</button>
+      <button class="tab" aria-pressed="false" id="sport-wnba">WNBA</button>
       <button class="tab" aria-pressed="false" id="sport-mlb">MLB</button>
       <button class="tab" disabled>NHL<small>soon</small></button>
       <button class="tab" disabled>MLS<small>soon</small></button>
@@ -272,19 +273,27 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 <script>
 'use strict';
 /* ================= config ================= */
-// football reads ESPN's feeds; baseball reads MLB's own (statsapi.mlb.com). The NFL and MLB tabs switch between them.
+// football and basketball read ESPN's feeds; baseball reads MLB's own (statsapi.mlb.com). The tabs switch between them.
 // Every sport fills in the same entry and the same parts of the page; tools/ADDING_A_SPORT.md lists them all and
 // tools/check_sports.cjs fails if a sport is missing one. hosts: the only places this sport's data and images come from
 // (one data source per sport).
 const SPORTS = {
-  nfl: {name: 'NFL', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
+  nfl: {name: 'NFL', family: 'football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
     hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nfl/']]},
-  mlb: {name: 'MLB', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
+  mlb: {name: 'MLB', family: 'baseball', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
     hosts: ['statsapi.mlb.com', 'www.mlbstatic.com', 'img.mlbstatic.com'],
     credits: [['Games, pitch-by-pitch play-by-play, team schedules, rosters, stats, logos, headshots and game recaps', 'MLB Stats API', 'https://statsapi.mlb.com'],
-      ['Ballpark fence distances and wall heights', "each park's Wikipedia page", 'https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums']]}
+      ['Ballpark fence distances and wall heights', "each park's Wikipedia page", 'https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums']]},
+  // the NBA and WNBA share ESPN's basketball feed and all of the basketball code
+  nba: {name: 'NBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba', src: 'ESPN play-by-play',
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+    credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nba/']]},
+  wnba: {name: 'WNBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/wnba', src: 'ESPN play-by-play',
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+    credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/wnba/']]}
 };
+const isBB = () => SPORTS[S.sport]?.family === 'basketball';
 // the footer says where this sport's data comes from
 function setCredits(){
   const f = document.getElementById('foot'); if (!f) return;
@@ -326,6 +335,9 @@ function kit(team, isHome){
   return {jersey: '#f2f0e8', num, helmet: c, stripe: a, pants: c};
 }
 
+// each sport dresses its players its own way
+const kitFor = (team, isHome) => isMLB() ? kitMLB(team, isHome) : isBB() ? kitBB(team, isHome) : kit(team, isHome);
+
 /* ================= fetch ================= */
 async function getJSON(url){
   const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 12000);
@@ -358,6 +370,8 @@ function teamsOf(ev){
 }
 const fullName = t => t.loc === t.nick ? t.nick : `${t.loc} ${t.nick}`;
 
+// playoff games whose teams aren't decided yet are left out
+const isTBD = ev => { const cs = ev?.competitions?.[0]?.competitors || []; return cs.length < 2 || cs.some(c => !(c.team?.id ?? c.id) || /^TBD$/i.test(c.team?.abbreviation || '') || /\bTBD\b/i.test(c.team?.displayName || '')); };
 async function loadScoreboard(){
   if (isMLB()) return loadMLBGames();
   const now = new Date(), later = new Date(now.getTime() + 10 * 864e5), earlier = new Date(now.getTime() - 8 * 864e5);
@@ -367,7 +381,7 @@ async function loadScoreboard(){
   let ok = false;
   for (const r of res) {
     if (r.status !== 'fulfilled') continue; ok = true;
-    for (const ev of r.value.events || []) S.events.set(String(ev.id), ev);
+    for (const ev of r.value.events || []) if (!isTBD(ev)) S.events.set(String(ev.id), ev);
   }
   if (!ok) {
     showErr("Can't reach ESPN right now. Retrying every 30 seconds. If you opened this page inside Claude, open the downloaded file in Chrome, Edge or Safari instead.");
@@ -494,9 +508,9 @@ async function loadRoster(team){
     for (const g of d.athletes || []) for (const it of g.items || [g]) {
       // football rosters come in groups (offense, defense, special teams); some baseball rosters are one flat list
       if (!it || !(it.id || it.displayName)) continue;
-      const pos = it.position?.abbreviation || '', grp = isMLB() ? pos : GROUP[pos];
+      const pos = it.position?.abbreviation || '', grp = isMLB() || isBB() ? pos : GROUP[pos];
       if (!it.jersey && !isMLB()) continue;
-      const side = isMLB() ? (MLB_SIDE[pos] || String(g.items ? g.position || '' : it.position?.displayName || 'OTHER').toUpperCase()) : g.position;
+      const side = isMLB() ? (MLB_SIDE[pos] || String(g.items ? g.position || '' : it.position?.displayName || 'OTHER').toUpperCase()) : isBB() ? bbSide(pos) : g.position;
       const p = {num: it.jersey != null && it.jersey !== '' ? Number(it.jersey) : null, first: it.firstName || '', last: it.lastName || '', grp, side,
         id: String(it.id || ''), name: it.displayName || ((it.firstName || '') + ' ' + (it.lastName || '')),
         pos, posName: it.position?.displayName || it.position?.name || '', bats: it.bats?.abbreviation || it.bats?.type || '',
@@ -529,13 +543,15 @@ const NAME_RE = /\b[A-Z][A-Za-z']{0,2}\.\s?[A-Z][A-Za-z'\-]+/g;
 const isHomeId = id => S.home && String(id) === S.home.id;
 const xOf = (teamId, yte) => isHomeId(teamId) ? 100 - yte : yte;
 // football: x in yards along the field, y in yards across it. Baseball: feet, see the MLB section.
-const sxOf = x => isMLB() ? Math.round(mcx(x) - (S.camX - W / 2)) : Math.round((x - S.cam) * PX + W / 2);
-const syOf = y => isMLB() ? Math.round(mcy(y) - (S.camY - H / 2)) : Math.round(FT + clamp(y, -1, 54.3) * SY);
+// basketball: feet on a court that fits the screen, see the basketball section
+const sxOf = x => isBB() ? Math.round(bcx(x)) : isMLB() ? Math.round(mcx(x) - (S.camX - W / 2)) : Math.round((x - S.cam) * PX + W / 2);
+const syOf = y => isBB() ? Math.round(bcy(y)) : isMLB() ? Math.round(mcy(y) - (S.camY - H / 2)) : Math.round(FT + clamp(y, -1, 54.3) * SY);
 
 /* ================= the fixed art: field ================= */
 function mulberry(a){ return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 function buildField(){
   if (isMLB()) return buildDiamond();
+  if (isBB()) return buildCourt();
   const c = document.createElement('canvas'); c.width = 140 * PX; c.height = H;
   const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
   const X = x => (x + 20) * PX;
@@ -593,6 +609,22 @@ function drawPlayer(g, a){
   if (sx < -12 || sx > W + 12) return;
   const k = a.kit, x0 = sx - 5, y0 = sy - 18;
   g.fillStyle = 'rgba(0,0,0,.35)'; g.fillRect(x0 + 1, syOf(a.y) - 1, 9, 2);
+  if (isBB()) {
+    // basketball: no helmet, so skin and hair come from the player's headshot when it can be read (a headband until then)
+    const sk = a.looks?.skin || '#c68642';
+    g.fillStyle = sk; g.fillRect(x0 + 3, y0 + 1, 4, 4); g.fillRect(x0 + 4, y0 + 5, 2, 1);
+    if (a.looks?.hair) { g.fillStyle = a.looks.hair; g.fillRect(x0 + 3, y0, 4, 2); }
+    else if (!a.looks) { g.fillStyle = k.stripe; g.fillRect(x0 + 3, y0 + 1, 4, 1); }
+    g.fillStyle = k.jersey; g.fillRect(x0 + 1, y0 + 6, 8, 6);
+    g.fillStyle = sk; g.fillRect(x0, y0 + 6, 1, 5); g.fillRect(x0 + 9, y0 + 6, 1, 5);
+    const n = a.num;
+    if (n != null && Number.isFinite(n)) { if (n >= 10) { digit(g, Math.floor(n / 10) % 10, x0 + 1, y0 + 6, k.num); digit(g, n % 10, x0 + 6, y0 + 6, k.num); } else digit(g, n, x0 + 3, y0 + 6, k.num); }
+    g.fillStyle = k.pants; g.fillRect(x0 + 1, y0 + 12, 8, 3);
+    const f = a.frame;
+    g.fillStyle = sk; g.fillRect(x0 + 2, y0 + 15, 2, f ? 1 : 2); g.fillRect(x0 + 6, y0 + 15, 2, f ? 2 : 1);
+    g.fillStyle = '#f0f0f0'; g.fillRect(x0 + 2, y0 + (f ? 16 : 17), 2, 1); g.fillRect(x0 + 6, y0 + (f ? 17 : 16), 2, 1);
+    return;
+  }
   if (isMLB()) {
     // ball cap and face; the batter holds a bat until he swings or runs
     g.fillStyle = k.helmet; g.fillRect(x0 + 2, y0, 6, 3); g.fillRect(x0 + 1, y0 + 2, 8, 1);
@@ -625,6 +657,7 @@ function drawBall(g){
   g.fillStyle = 'rgba(0,0,0,.35)'; g.fillRect(sx - 1, gy - 1, 3, 1);
   const y = gy - 9 - b.h;
   if (isMLB()) { g.fillStyle = '#f4f4ee'; g.fillRect(sx - 1, y, 2, 2); return; }
+  if (isBB()) { g.fillStyle = '#e8772e'; g.fillRect(sx - 1, y - 1, 3, 3); g.fillStyle = '#7a3410'; g.fillRect(sx, y - 1, 1, 3); return; }
   g.fillStyle = '#7a3b12'; g.fillRect(sx - 2, y, 4, 2); g.fillStyle = '#fff'; g.fillRect(sx - 1, y, 1, 1);
 }
 function drawPosts(g){
@@ -679,6 +712,16 @@ const CAST = {
     // Nina Alvarez calls the play-by-play; Gus Petrakis caught for fifteen years before moving upstairs
     A: {name: 'NINA ALVAREZ', tag: 'NINA', look: {jacket: '#1d6b5a', shirt: '#f2e6d8', skin: '#c68642', hair: '#2b1a12', brow: '#2b1a12', longHair: true}},
     B: {name: 'GUS PETRAKIS', tag: 'GUS', look: {jacket: '#3a3f4f', tie: '#c0392b', skin: '#f1c27d', hair: '#a8a8a8', brow: '#8a8a8a', stache: true, cap: '#1b2a4a', capBrim: '#121c33', capLogo: '#f2f0e8'}}
+  },
+  nba: {
+    // Lamar Price calls the NBA; Tommy Kessler played center for eleven seasons
+    A: {name: 'LAMAR PRICE', tag: 'LAMAR', look: {jacket: '#2b2d42', tie: '#e09f3e', skin: '#5c3a21', hair: '#1a1110', brow: '#1a1110'}},
+    B: {name: 'TOMMY KESSLER', tag: 'TOMMY', look: {jacket: '#4a5d23', tie: '#1b2a4a', skin: '#f1c27d', hair: '#c9a36b', brow: '#a37f4c'}}
+  },
+  wnba: {
+    // Dana Whitfield calls the WNBA; Keisha Monroe ran the point for a decade
+    A: {name: 'DANA WHITFIELD', tag: 'DANA', look: {jacket: '#7b2d5b', shirt: '#f2e6d8', skin: '#e0ac69', hair: '#6b3e26', brow: '#4a2a18', longHair: true}},
+    B: {name: 'KEISHA MONROE', tag: 'KEISHA', look: {jacket: '#14532d', shirt: '#f2f0e8', skin: '#8d5524', hair: '#1a1110', brow: '#1a1110', longHair: true, glasses: true}}
   }
 };
 const crew = () => CAST[S.sport] || CAST.nfl;
@@ -715,7 +758,10 @@ const SND = {
   fanfare(){ [523, 659, 784, 1046].forEach((f, i) => this.tone('square', f, i * 0.13, 0.22, 0.06)); this.tone('square', 1046, 0.55, 0.5, 0.06); },
   groan(){ this.tone('sawtooth', 220, 0, 0.6, 0.04, 140); },
   crack(){ this.tone('square', 1800, 0, 0.05, 0.07, 500); this.tone('triangle', 420, 0, 0.12, 0.25, 120); },
-  pop(){ this.tone('triangle', 260, 0, 0.08, 0.3, 90); }
+  pop(){ this.tone('triangle', 260, 0, 0.08, 0.3, 90); },
+  swish(){ this.tone('triangle', 1400, 0, 0.12, 0.06, 500); },
+  rim(){ this.tone('square', 330, 0, 0.09, 0.08, 260); this.tone('triangle', 180, 0.02, 0.15, 0.2, 90); },
+  buzzer(){ this.tone('square', 196, 0, 0.7, 0.05); }
 };
 function sfx(name){
   if (!S.started) return;
@@ -723,11 +769,13 @@ function sfx(name){
   else if (name === 'td') SND.fanfare(); // no crowd noise (Chris, 2026-10-05), so 'roar' plays nothing
   else if (name === 'groan') SND.groan();
   else if (name === 'crack') SND.crack(); else if (name === 'pop') SND.pop();
+  else if (name === 'swish') SND.swish(); else if (name === 'rim') SND.rim(); else if (name === 'buzzer') SND.buzzer();
+  else if (name === 'dunk' || name === 'block') SND.thump();
 }
 
 /* ================= voices ================= */
-let VOICES = {nfl: {A: null, B: null}, mlb: {A: null, B: null}};
-const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}}; // [pitch, rate]
+let VOICES = {nfl: {A: null, B: null}, mlb: {A: null, B: null}, nba: {A: null, B: null}, wnba: {A: null, B: null}};
+const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}, nba: {A: [0.95, 1.12], B: [0.85, 0.95]}, wnba: {A: [1.15, 1.08], B: [0.98, 1.0]}}; // [pitch, rate]
 function pickVoices(){
   const vs = PBC.voices();
   if (!vs.length) return;
@@ -739,6 +787,11 @@ function pickVoices(){
   const nina = pref(/Samantha|Ava|Allison|Susan|Zira|Jenny|Aria|Karen|Moira|Tessa|Serena|Victoria|Female|Google UK English Female/i) || B;
   const gus = vs.find(v => v !== A && v !== B && v !== nina && /Fred|Ralph|Eddy|Reed|Rocko|Guy|Eric|Lee|Oliver|Male|David|Daniel|Alex|Aaron/i.test(v.name)) || vs.find(v => v !== nina) || A;
   VOICES.mlb = {A: nina, B: gus};
+  // basketball: the NBA booth gets the male voices Chip and Duke aren't using where the device has them; the WNBA booth two women's voices
+  const male = vs.filter(v => v !== A && v !== B && v !== gus && /Male|Fred|Ralph|Eddy|Reed|Rocko|Guy|Eric|Lee|Oliver|David|Daniel|Alex|Aaron|Tom|Arthur|Ryan|Mark/i.test(v.name));
+  VOICES.nba = {A: male[0] || A, B: male[1] || B};
+  const fem = vs.filter(v => /Samantha|Ava|Allison|Susan|Zira|Jenny|Aria|Karen|Moira|Tessa|Serena|Victoria|Female|Fiona|Kathy|Vicki|Joanna|Salli|Kendra|Libby|Sonia/i.test(v.name));
+  VOICES.wnba = {A: fem.find(v => v !== nina) || fem[0] || nina, B: fem.find(v => v !== nina && v !== (fem.find(x => x !== nina) || fem[0])) || nina};
 }
 if (window.speechSynthesis) { pickVoices(); speechSynthesis.onvoiceschanged = pickVoices; }
 
@@ -1209,7 +1262,7 @@ function teamLogo(t){
   let im = LOGOS[url];
   if (!im) {
     im = LOGOS[url] = new Image();
-    im.onload = () => { im.ok = true; if (isMLB() && (S.home === t || S.away === t)) buildField(); };
+    im.onload = () => { im.ok = true; if ((isMLB() || isBB()) && (S.home === t || S.away === t)) buildField(); };
     im.src = url;
   }
   return im.ok ? im : null;
@@ -1939,6 +1992,564 @@ function buildReplayMLB(plays){
   return {plays, idx, t, total, maxQ: Math.ceil(total / 2), drives, driveOf, scores, mlb: true, half, lab};
 }
 
+/* ================= basketball (NBA, WNBA) ================= */
+// Both leagues read ESPN's basketball feed with the same code; only the quarter length and the three-point line differ.
+// Court coordinates are in feet: x along the court (0 = left baseline, 94 = right), y across it (0 = far sideline,
+// 50 = near sideline). The whole court fits on screen, so there is no camera. The home team shoots at the right basket.
+const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his'}, wnba: {q: 600, arc: 22.15, corner: 22, he: 'she', his: 'her'}};
+const lg = () => BBL[S.sport] || BBL.nba;
+const BC = {X0: 24, Y0: 100, KX: 4.6, KY: 3.06, HOOP: 5.25, RIM: 28};
+const bcx = x => BC.X0 + x * BC.KX, bcy = y => BC.Y0 + y * BC.KY;
+const hoopX = team => team === S.home ? 94 - BC.HOOP : BC.HOOP;   // the basket a team shoots at
+const attackDir = team => team === S.home ? 1 : -1;
+const otherTeam = t => t === S.home ? S.away : t === S.away ? S.home : null;
+const teamOfId = id => id == null ? null : isHomeId(id) ? S.home : S.away?.id === String(id) ? S.away : null;
+const RIM_BALL = BC.RIM - 9;   // the ball's height (drawBall) when it is at the rim
+// benches sit along the far sideline, home to the left of the scorer's table, visitors to the right
+const benchSpot = (team, i) => [(team === S.home ? 29.5 : 51) + (i % 7) * 2.2, -3];
+
+function kitBB(team, isHome){
+  const c = team.color, a = team.alt;
+  // home teams wear white; visitors wear their color (or a dark one when their color is nearly white)
+  if (isHome) return {jersey: '#f2f0e8', num: lum(c) < 0.75 ? c : (lum(a) < 0.75 ? a : '#22222c'), helmet: c, stripe: a, pants: '#f2f0e8'};
+  const j = lum(c) > 0.7 ? (lum(a) < 0.6 ? a : '#22222c') : c, o = j === c ? a : c;
+  const num = lum(j) < 0.55 ? (lum(o) > 0.55 ? o : '#ffffff') : '#14141c';
+  return {jersey: j, num, helmet: j, stripe: o, pants: j};
+}
+const bbSide = pos => /^C(-|$)/.test(pos) ? 'CENTERS' : /^(F|SF|PF)/.test(pos) ? 'FORWARDS' : /^(G|PG|SG)/.test(pos) ? 'GUARDS' : 'OTHER';
+
+/* ---- the court ---- */
+function buildCourt(){
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
+  const L = lg(), home = S.home, away = S.away;
+  g.fillStyle = '#0c0e1c'; g.fillRect(0, 0, W, H);
+  // the crowd behind the benches
+  const rnd = mulberry(1946); // fixed seed: the crowd never changes
+  const crowd = ['#d9a066','#8f563b','#eec39a','#663931','#c9c9d6', home.color, home.alt, away.color, '#3f3f74', '#e7e1cc'];
+  g.fillStyle = '#1b1d33'; g.fillRect(0, 0, W, 66);
+  for (let y = 4; y < 62; y += 5) for (let x = (y / 5 % 2) * 2; x < W; x += 4) {
+    g.fillStyle = crowd[Math.floor(rnd() * crowd.length)]; g.fillRect(x, y, 3, 2);
+    g.fillStyle = '#eec39a'; if (rnd() < 0.8) g.fillRect(x + 1, y - 1, 1, 1);
+  }
+  // floor around the court
+  g.fillStyle = '#2a2433'; g.fillRect(0, 66, W, H - 66);
+  // hardwood
+  const x0 = Math.round(bcx(0)), x1 = Math.round(bcx(94)), y0 = Math.round(bcy(0)), y1 = Math.round(bcy(50));
+  for (let y = y0; y < y1; y++) { g.fillStyle = y % 4 < 2 ? '#c99a63' : '#c2915a'; g.fillRect(x0, y, x1 - x0, 1); }
+  g.fillStyle = '#b5844f'; for (let y = y0; y < y1; y += 2) for (let x = x0 + (y * 37) % 29; x < x1; x += 29) g.fillRect(x, y, 1, 1);
+  const pt = (x, y, col) => { g.fillStyle = col; g.fillRect(Math.round(bcx(x)), Math.round(bcy(y)), 1, 1); };
+  const ring = (cx, cy, r, a0, a1, col) => { for (let a = a0; a <= a1; a += 0.01) pt(cx + r * Math.cos(a), cy + r * Math.sin(a), col); };
+  const disc = (cx, cy, r, col) => { for (let y = -r; y <= r; y += 0.2) { const w = Math.sqrt(Math.max(0, r * r - y * y)); g.fillStyle = col; g.fillRect(Math.round(bcx(cx - w)), Math.round(bcy(cy + y)), Math.round(2 * w * BC.KX), 1); } };
+  const box = (xa, ya, xb, yb, col) => { g.fillStyle = col; g.fillRect(Math.round(bcx(xa)), Math.round(bcy(ya)), Math.round((xb - xa) * BC.KX), Math.round((yb - ya) * BC.KY)); };
+  // the paint and the center circle in the home team's color
+  box(0, 17, 19, 33, home.color); box(75, 17, 94, 33, home.color);
+  disc(47, 25, 6, home.color);
+  // lines
+  const WH = '#f4f4ee';
+  g.fillStyle = WH; g.fillRect(x0, y0, x1 - x0, 1); g.fillRect(x0, y1, x1 - x0, 1); g.fillRect(x0, y0, 1, y1 - y0); g.fillRect(x1, y0, 1, y1 - y0);
+  g.fillRect(Math.round(bcx(47)), y0, 1, y1 - y0);
+  ring(47, 25, 6, 0, Math.PI * 2, WH); ring(47, 25, 2, 0, Math.PI * 2, WH);
+  for (const s of [1, -1]) {
+    const hx = s > 0 ? BC.HOOP : 94 - BC.HOOP, base = s > 0 ? 0 : 94, ft = base + s * 19;
+    for (const yy of [17, 33]) for (let x = 0; x <= 19; x += 0.2) pt(base + s * x, yy, WH);
+    for (let y = 17; y <= 33; y += 0.2) pt(ft, y, WH);
+    if (s > 0) ring(ft, 25, 6, -Math.PI / 2, Math.PI / 2, WH); else ring(ft, 25, 6, Math.PI / 2, Math.PI * 1.5, WH);
+    // three-point line: straight in the corners, then the arc
+    const th = Math.asin(Math.min(1, L.corner / L.arc)), xc = L.arc * Math.cos(th);
+    for (const yy of [25 - L.corner, 25 + L.corner]) for (let x = 0; x <= BC.HOOP + xc; x += 0.2) pt(base + s * x, yy, WH);
+    for (let a = -th; a <= th; a += 0.004) pt(hx + s * L.arc * Math.cos(a), 25 + L.arc * Math.sin(a), WH);
+    for (let a = -Math.PI / 2; a <= Math.PI / 2; a += 0.02) pt(hx + s * 4 * Math.cos(a), 25 + 4 * Math.sin(a), WH); // restricted area
+  }
+  // the home team's logo at center court, and its name on both baselines
+  const img = teamLogo(home);
+  if (img) { g.imageSmoothingEnabled = true; g.drawImage(img, Math.round(bcx(47)) - 11, Math.round(bcy(25)) - 11, 22, 22); g.imageSmoothingEnabled = false; }
+  // benches: chairs in the team colors, and a HOME / AWAY sign with the logo
+  g.font = '8px "Press Start 2P"'; g.textBaseline = 'middle'; g.textAlign = 'center';
+  for (const t of [home, away]) {
+    const [bx] = benchSpot(t, 0), sx = Math.round(bcx(bx)) - 6, sw = Math.round(6 * 2.2 * BC.KX) + 12, by = Math.round(bcy(-3));
+    g.fillStyle = '#05060d'; g.fillRect(sx, by - 14, sw, 9);
+    g.fillStyle = t.color; for (let i = 0; i < 7; i++) g.fillRect(Math.round(bcx(bx + i * 2.2)) - 3, by - 13, 7, 6);
+    g.fillStyle = t.alt; g.fillRect(sx, by - 6, sw, 1);
+    g.fillStyle = '#05060d'; g.fillRect(sx, by - 30, sw, 13); g.fillStyle = t.color; g.fillRect(sx + 1, by - 29, sw - 2, 11);
+    const lim = teamLogo(t);
+    if (lim) { g.imageSmoothingEnabled = true; g.drawImage(lim, sx + 2, by - 29, 11, 11); g.imageSmoothingEnabled = false; }
+    const label = `${t === home ? 'HOME' : 'AWAY'} ${t.abbr}`, tx = sx + sw / 2 + (lim ? 6 : 0);
+    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, by - 22); g.fillStyle = '#f4f4ee'; g.fillText(label, tx, by - 23);
+  }
+  // scorer's table between the benches
+  const tx0 = Math.round(bcx(45)), tx1 = Math.round(bcx(49));
+  g.fillStyle = '#05060d'; g.fillRect(tx0, Math.round(bcy(-3)) - 12, tx1 - tx0, 10); g.fillStyle = '#f2b632'; g.fillRect(tx0, Math.round(bcy(-3)) - 12, tx1 - tx0, 1);
+  // the baskets: stanchion, backboard, rim and net, standing on the baseline
+  for (const s of [1, -1]) {
+    const fx = s > 0 ? 0 : 94, bx = Math.round(bcx(fx + s * 4)), rx = Math.round(bcx(s > 0 ? BC.HOOP : 94 - BC.HOOP)), fy = Math.round(bcy(25)), ry = fy - BC.RIM;
+    const px = Math.round(bcx(fx)) - s * 12;
+    g.fillStyle = '#3a3f4f'; g.fillRect(Math.min(px, px - s * 6), fy - 4, 7, 6);                     // padded base
+    g.fillStyle = '#9a9eab'; g.fillRect(px - (s > 0 ? 0 : 1), ry - 14, 2, fy - ry + 12);          // pole
+    g.fillRect(Math.min(px, bx), ry - 14, Math.abs(bx - px) + 1, 2);                                 // arm
+    g.fillStyle = '#f4f4ee'; g.fillRect(bx - 1, ry - 16, 3, 18); g.fillStyle = '#e5383b'; g.fillRect(bx, ry - 6, 1, 6); // backboard
+    g.fillStyle = '#e8772e'; g.fillRect(Math.min(bx, rx + s * 3), ry, Math.abs(rx + s * 3 - bx) + 1, 1); // rim
+    g.fillStyle = '#e7e1cc'; for (let i = 0; i < 4; i++) g.fillRect(rx - 3 + (i % 2), ry + 1 + i, 7 - (i % 2) * 2, 1); // net
+  }
+  S.field = c;
+}
+
+/* ---- who is who: players, lineups, possession ---- */
+const bbPerson = id => S.bb?.people[String(id)] || null;
+// rosters give names, numbers and positions; the box score adds who started and anyone the roster missed
+function bbPeopleFrom(team){
+  const st = S.bb; if (!st || !team) return;
+  for (const p of S.roster[team.id]?.all || []) if (p.id) st.people[p.id] = {...(st.people[p.id] || {}), id: p.id, team, num: p.num, name: p.name, last: p.last || p.name.split(' ').slice(-1)[0], pos: p.pos, headshot: p.headshot};
+}
+function bbLineups(sum){
+  const st = S.bb; if (!st) return;
+  for (const tb of sum?.boxscore?.players || []) {
+    const team = teamOfId(tb.team?.id); if (!team) continue;
+    const starters = [];
+    for (const a of tb.statistics?.[0]?.athletes || []) {
+      const x = a.athlete || {}; if (!x.id) continue;
+      const id = String(x.id), was = st.people[id] || {};
+      st.people[id] = {...was, id, team, num: x.jersey != null && x.jersey !== '' ? Number(x.jersey) : was.num ?? null, name: x.displayName || was.name || '',
+        last: was.last || String(x.shortDisplayName || x.displayName || '').split(' ').slice(-1)[0], pos: x.position?.abbreviation || was.pos || '', headshot: x.headshot?.href || was.headshot || ''};
+      if (a.starter) starters.push(id);
+    }
+    if (starters.length && !st.starters[team.id]?.length) st.starters[team.id] = starters.slice(0, 5);
+  }
+}
+// back to tip-off: the starters on the floor, nobody with the ball
+function bbReset(){
+  const st = S.bb ||= {people: {}, starters: {}, looks: {}};
+  Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, run: {team: null, pts: 0, said: 0}, said: {}, holder: null});
+  for (const t of [S.home, S.away]) if (t) st.on[t.id] = (st.starters[t.id] || []).slice(0, 5);
+  S.ball.x = 47; S.ball.y = 25; S.ball.h = 0; S.ball.vis = true;
+}
+// what a play is, from ESPN's play type, text and participants (in order: shooter or ball handler, then assister,
+// blocker, stealer or the player fouled; for substitutions, the player coming in and then the one going out)
+function classifyBB(p){
+  const ty = (p.type?.text || '').toLowerCase(), tx = p.text || '', low = tx.toLowerCase(), both = ty + ' ' + low;
+  const ids = (p.participants || []).map(x => String(x.athlete?.id ?? '')).filter(Boolean);
+  const k = {kind: 'admin', ids, team: bbPerson(ids[0])?.team || teamOfId(p.team?.id), made: false};
+  if (/jump ?ball/.test(both)) { k.kind = 'jump'; k.recv = bbPerson(ids[2])?.team || teamOfId(p.team?.id); }
+  else if (/free throw/.test(both)) {
+    k.kind = 'ft'; k.made = !!p.scoringPlay || /\bmakes\b/.test(low);
+    const m = /(\d) of (\d)/.exec(both); k.last = !m || m[1] === m[2]; k.tech = /technical|flagrant/.test(both);
+  } else if (p.shootingPlay || /\b(makes|misses)\b/.test(low)) {
+    k.kind = 'shot'; k.made = !!p.scoringPlay || /\bmakes\b/.test(low);
+    k.three = /three point|3-pt/.test(both) || +p.scoreValue === 3 || +p.pointsAttempted === 3;
+    k.dunk = /dunk/.test(both); k.layup = !k.dunk && /layup|tip ?shot|tip-in|putback|finger roll|alley/.test(both);
+    k.assist = /assists\)/.test(low) ? ids[1] : null; k.block = /blocks\)/.test(low) ? ids[1] : null;
+    const ft = /(\d+)-foot/.exec(low); k.feet = ft ? +ft[1] : null;
+  } else if (/rebound/.test(both)) { k.kind = 'reb'; k.off = /offensive/.test(both); k.team = bbPerson(ids[0])?.team || teamOfId(p.team?.id); }
+  else if (/foul/.test(ty) || /\bfoul\b/.test(low)) { k.kind = 'foul'; k.offFoul = /offensive|charge/.test(both); k.tech = /technical|flagrant|delay/.test(both); }
+  else if (/turnover|traveling|bad pass|lost ball|violation|goaltending|shot clock|out of bounds|3 second|kicked ball|palming|double dribble|backcourt|steals\)/.test(both)) { k.kind = 'to'; k.steal = /steals\)/.test(low) ? ids[1] : null; }
+  else if (/substitution|enters the game/.test(both)) k.kind = 'sub';
+  else if (/timeout/.test(both)) k.kind = 'timeout';
+  else if (/end (of )?(the )?(period|quarter|half|game|\d)/.test(both)) k.kind = 'end';
+  return k;
+}
+// the play's effect on who is on the floor, who has the ball, and runs of points
+function bbStep(p, k, dh, da){
+  const st = S.bb;
+  if (k.kind === 'sub') {
+    const inP = bbPerson(k.ids[0]), outId = k.ids[1], team = inP?.team || bbPerson(outId)?.team || k.team;
+    if (team && k.ids[0]) {
+      const on = st.on[team.id] ||= [];
+      if (!on.includes(k.ids[0])) { const i = on.indexOf(outId); if (i >= 0) on[i] = k.ids[0]; else if (on.length < 5) on.push(k.ids[0]); }
+      else if (outId) { const i = on.indexOf(outId); if (i >= 0) on.splice(i, 1); }
+    }
+    return;
+  }
+  if (k.kind === 'timeout' || k.kind === 'end') { st.huddle = true; st.loose = false; return; }
+  if (k.kind === 'admin') return;
+  st.huddle = false; if (k.kind !== 'jump') st.tip = false;
+  // a starter list can miss someone: anyone in a play is on the floor
+  for (const id of k.ids.slice(0, k.kind === 'foul' ? 2 : 1)) {
+    const pp = bbPerson(id), on = pp?.team && (st.on[pp.team.id] ||= []);
+    if (on && !on.includes(id)) { if (on.length >= 5) on.shift(); on.push(id); }
+  }
+  switch (k.kind) {
+    case 'jump': st.poss = k.recv || st.poss; st.tip = true; st.loose = false; break;
+    case 'shot': st.poss = k.made ? otherTeam(k.team) || st.poss : k.team || st.poss; st.loose = !k.made; break;
+    case 'ft': if (k.last && !k.tech) { st.poss = k.made ? otherTeam(k.team) || st.poss : k.team || st.poss; st.loose = !k.made; } break;
+    case 'reb': st.poss = k.team || st.poss; st.loose = false; break;
+    case 'to': st.poss = otherTeam(k.team) || st.poss; st.loose = false; break;
+    case 'foul': if (!k.tech) st.poss = otherTeam(k.team) || st.poss; st.loose = false; break;
+  }
+  // runs: points in a row by one team
+  if (dh > 0 || da > 0) {
+    const tm = dh > 0 ? S.home : S.away, pts = Math.max(dh, da);
+    if (st.run.team === tm) st.run.pts += pts; else st.run = {team: tm, pts, said: 0};
+  }
+}
+function applyStateBB(p, plan){
+  const dh = p.homeScore != null ? +p.homeScore - S.prevScore.h : 0, da = p.awayScore != null ? +p.awayScore - S.prevScore.a : 0;
+  if (p.homeScore != null) S.prevScore.h = +p.homeScore;
+  if (p.awayScore != null) S.prevScore.a = +p.awayScore;
+  setBoard();
+  const k = p._k || (p._k = classifyBB(p)), per = p.period?.number, clk = p.clock?.displayValue;
+  if (per) $('clock').textContent = `${qName(per)} ${clk || ''}`;
+  bbStep(p, k, dh, da);
+  const pt = S.bb.poss;
+  $('dd').textContent = pt ? `${pt.abbr} BALL` : '';
+  $('possH').classList.toggle('on', pt === S.home); $('possA').classList.toggle('on', !!pt && pt === S.away);
+}
+
+/* ---- formations ---- */
+// rank players so guards bring the ball up and centers play the post
+const bbRank = id => { const pos = bbPerson(id)?.pos || ''; return /^(PG|G)$/.test(pos) ? 0 : /^(SG|G-F)$/.test(pos) ? 1 : /^(SF|F|F-G)$/.test(pos) ? 2 : /^(PF|F-C)$/.test(pos) ? 3 : /^C/.test(pos) ? 4 : 2; };
+// feet out from the basket, feet across; nobody sets up along the far sideline, where the booth covers the left end
+const OFF_SLOTS = [[23, 25], [17, 18], [18, 39], [3, 45], [6, 31]];
+function bbLooks(id){
+  const st = S.bb; if (!st || !id || /-\d$/.test(id)) return null;
+  if (st.looks[id] !== undefined) return st.looks[id];
+  st.looks[id] = null;
+  const pp = bbPerson(id);
+  loadLooks({id, headshot: pp?.headshot || ''}).then(l => { st.looks[id] = l; for (const a of S.actors) if (a.pid === id) a.looks = l; });
+  return null;
+}
+function bbFormation(offIn, mode, first){
+  const st = S.bb, A = []; if (!st || !S.home) return A;
+  const off = offIn || st.poss || S.home, def = otherTeam(off), hx = hoopX(off), d = attackDir(off);
+  const lineup = team => { const ids = (st.on[team.id] || []).slice(0, 5).sort((a, b) => bbRank(a) - bbRank(b)); while (ids.length < 5) ids.push(null); return ids; };
+  const add = (team, id, i, x, y) => {
+    const pid = id || `${team.id}-${i}`, pp = id && bbPerson(id);
+    A.push({team, pid, num: pp?.num ?? null, kit: team.kit, looks: bbLooks(id), x, y, role: 'P' + i, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y});
+  };
+  const offIds = lineup(off), defIds = lineup(def);
+  // the player taking the free throws stands at the line
+  if (first && offIds.includes(first)) { offIds.splice(offIds.indexOf(first), 1); offIds.unshift(first); }
+  if (st.huddle && !mode) { for (const t of [off, def]) lineup(t).forEach((id, i) => add(t, id, i, ...benchSpot(t, i + 1))); return A; }
+  if (mode === 'tip' || (st.tip && !mode)) {
+    // the centers jump at center court; each team stands on the half it defends
+    for (const t of [S.home, S.away]) {
+      const s = t === S.home ? -1 : 1, ids = lineup(t);
+      [[1.5, 25], [10, 12], [10, 38], [4, 7], [4, 43]].forEach(([dx, y], i) => add(t, ids[i === 0 ? 4 : i - 1], i, 47 + s * dx, y));
+    }
+    return A;
+  }
+  if (mode === 'ft') {
+    // free throw: the shooter at the line, the others along the lane
+    const lane = [[7, 16], [7, 34], [10, 16], [10, 34]];
+    offIds.forEach((id, i) => i === 0 ? add(off, id, 0, hx - d * 13.75, 25) : add(off, id, i, hx - d * lane[i - 1][0] - d * 3, lane[i - 1][1] + (lane[i - 1][1] < 25 ? -0.5 : 0.5)));
+    defIds.forEach((id, i) => i < 2 ? add(def, id, i, hx - d * 7 + d * 3.5, i ? 33.5 : 16.5) : add(def, id, i, hx - d * 25, 15 + (i - 2) * 10));
+    return A;
+  }
+  OFF_SLOTS.forEach(([dx, y], i) => {
+    add(off, offIds[i], i, hx - d * dx, y);
+    // each defender stands between their player and the basket
+    add(def, defIds[i], i, hx - d * dx * 0.72, 25 + (y - 25) * 0.82);
+  });
+  return A;
+}
+function bbRest(walk){
+  const st = S.bb; if (!st) return;
+  const F = bbFormation();
+  const holderOf = list => (!st.loose && !st.huddle && !st.tip && st.poss) ? list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
+  if (!walk || !S.actors.length) {
+    S.actors = F; st.holder = holderOf(F);
+    if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
+    return;
+  }
+  // players run to their spots; anyone subbed in comes from the bench, anyone subbed out walks to it
+  const free = S.actors.filter(a => !a.gone), out = [];
+  const take = fn => { const i = free.findIndex(fn); return i < 0 ? null : free.splice(i, 1)[0]; };
+  for (const f of F) {
+    const a = take(b => b.team === f.team && b.pid === f.pid);
+    if (!a) {
+      const [bx, by] = benchSpot(f.team, hash(f.pid) % 7);
+      Object.assign(f, {tx: f.x, ty: f.y, x: bx, y: by, lx: bx, ly: by, entering: true, walkSpeed: 10}); out.push(f); continue;
+    }
+    Object.assign(a, {role: f.role, num: f.num ?? a.num, looks: f.looks || a.looks, tx: f.x, ty: f.y, track: null, chase: false, hop: 0, leaving: false,
+      walkSpeed: st.huddle ? 9 : 14 + hash(a.pid) % 5});
+    out.push(a);
+  }
+  for (const a of free) {
+    const [bx, by] = benchSpot(a.team, hash(a.pid) % 7);
+    Object.assign(a, {tx: bx, ty: by, leaving: true, entering: false, track: null, chase: false, hop: 0, walkSpeed: 8}); out.push(a);
+  }
+  S.actors = out; st.holder = holderOf(out);
+  if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
+}
+
+/* ---- play planner ---- */
+// ESPN's shot spot: x across the court (0-50), y out from the basket, in feet. Free throws and some other plays
+// carry a huge placeholder number instead, so those get no spot.
+function bbSpot(p, team){
+  const c = p.coordinate; if (!c || !team) return null;
+  const x = +c.x, y = +c.y;
+  if (!Number.isFinite(x) || !Number.isFinite(y) || x < -2 || x > 52 || y < -6 || y > 90) return null;
+  return [hoopX(team) - attackDir(team) * y, team === S.home ? x : 50 - x];
+}
+function planBB(p){
+  const k = p._k || (p._k = classifyBB(p)), st = S.bb;
+  const plan = {kind: k.kind, k, dur: 0.4, sfx: [], segs: [], carrier: null, flag: null, static: false};
+  if (!st || !['shot', 'ft', 'reb', 'to', 'foul', 'jump'].includes(k.kind)) { plan.static = true; return plan; }
+  const off = k.kind === 'reb' ? (st.poss || k.team || S.home) : k.kind === 'foul' ? (k.offFoul ? k.team : otherTeam(k.team)) || st.poss || S.home : (k.team || st.poss || S.home);
+  if (k.kind !== 'jump' && st.on && k.ids[0]) {
+    // make sure the player in the play is on the floor (the box score's starters can be incomplete)
+    const pp = bbPerson(k.ids[0]), on = pp?.team && (st.on[pp.team.id] ||= []);
+    if (on && !on.includes(k.ids[0])) { if (on.length >= 5) on.shift(); on.push(k.ids[0]); }
+  }
+  const F = bbFormation(off, k.kind === 'ft' ? 'ft' : k.kind === 'jump' ? 'tip' : 'play', k.kind === 'ft' ? k.ids[0] : null);
+  const used = new Set();
+  const starts = F.map(a => {
+    const prev = S.actors.find(b => !used.has(b) && b.team === a.team && b.pid === a.pid);
+    if (prev) { used.add(prev); a.looks ||= prev.looks; }
+    return prev ? [prev.x, prev.y] : benchSpot(a.team, hash(a.pid) % 7);
+  });
+  const far = Math.max(0, ...F.map((a, i) => Math.hypot(a.x - starts[i][0], a.y - starts[i][1])));
+  const PRE = far > 2 ? clamp(far / 22, 0.25, 1.8) : 0.05;
+  F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; });
+  const who = id => id ? F.find(a => a.pid === String(id)) : null;
+  const last = a => a.track.reduce((m, q) => q[0] >= m[0] ? q : m);
+  const at = a => { const q = last(a); return [q[1], q[2]]; };
+  const go = (a, t, x, y) => { if (a) a.track.push([PRE + t, x, y]); };
+  const hold = (a, t) => { if (a) { const q = last(a); if (PRE + t > q[0]) a.track.push([PRE + t, q[1], q[2]]); } };
+  const seg = (t0, t1, s) => plan.segs.push(Object.assign({t0: PRE + t0, t1: PRE + t1}, s));
+  const sfx = (t, n) => plan.sfx.push([PRE + t, n]);
+  const hx = hoopX(off), d = attackDir(off), r = hash(p.id);
+  const pg = F.find(a => a.team === off && a.role === 'P0');
+  const nearest = (team, x, y, not) => F.filter(a => a.team === team && a !== not).reduce((b, a) => !b || Math.hypot(a.x - x, a.y - y) < Math.hypot(b.x - x, b.y - y) ? a : b, null);
+  // the ball off the rim to a spot near the basket
+  const bounce = (t, team) => {
+    const bxp = hoopX(team) - attackDir(team) * (4 + r % 9), byp = clamp(25 + (r % 21) - 10, 6, 44);
+    seg(t, t + 0.6, {k: 'arc', x0: hoopX(team), y0: 25, x1: bxp, y1: byp, peak: 12, start: RIM_BALL, end: 0});
+    seg(t + 0.6, t + 30, {k: 'spot', x: bxp, y: byp, h: 0}); sfx(t, 'rim');
+    return t + 0.6;
+  };
+  const through = (t, team) => {
+    const x = hoopX(team);
+    seg(t, t + 0.35, {k: 'arc', x0: x, y0: 25, x1: x, y1: 25.5, peak: 0, start: RIM_BALL, end: 2});
+    seg(t + 0.35, t + 30, {k: 'spot', x: x - attackDir(team) * 1.5, y: 26, h: 0}); sfx(t, 'swish');
+  };
+  let tEnd = 1;
+  if (k.kind === 'shot') {
+    const sh = who(k.ids[0]) || pg;
+    let spot = bbSpot(p, off);
+    if (!spot) {
+      const dist = k.feet ?? (k.dunk || k.layup ? 2 : k.three ? 24 : 12), ang = ((r % 140) - 70) * Math.PI / 180;
+      spot = [hx - d * dist * Math.cos(ang), clamp(25 + dist * Math.sin(ang), 1, 49)];
+    }
+    if (k.dunk || k.layup) spot = [hx - d * (k.dunk ? 1.2 : 2.5), 25 + (r % 2 ? 2 : -2)];
+    const as = who(k.assist);
+    let tShot = 0.9;
+    if (as && as !== sh) {
+      // the pass, then the shot
+      seg(0, 0.45, {k: 'hold', a: as});
+      const [ax, ay] = at(as); seg(0.45, 0.85, {k: 'arc', x0: ax, y0: ay, xa: sh, peak: 4, start: 1, end: 1});
+      go(sh, 0.85, spot[0], spot[1]); tShot = 1.05;
+      seg(0.85, tShot, {k: 'hold', a: sh});
+    } else { seg(0, tShot, {k: 'hold', a: sh}); go(sh, tShot - 0.1, spot[0], spot[1]); }
+    // the nearest defender closes out
+    const df = nearest(otherTeam(off), spot[0], spot[1]);
+    if (df) go(df, tShot, spot[0] + d * 2.5, spot[1] + (spot[1] < 25 ? 1 : -1));
+    const blk = who(k.block);
+    if (blk) go(blk, tShot, spot[0] + d * 1.5, spot[1]);
+    const dist = Math.hypot(spot[0] - hx, spot[1] - 25);
+    if (blk) {
+      // blocked: the ball goes back the way it came and drops loose
+      const bx2 = spot[0] + d * 3, by2 = clamp(spot[1] + (r % 2 ? 6 : -6), 3, 47);
+      seg(tShot, tShot + 0.15, {k: 'arc', x0: spot[0], y0: spot[1], x1: spot[0] + d * 1.2, y1: spot[1], peak: 2, start: 10, end: 14});
+      seg(tShot + 0.15, tShot + 0.75, {k: 'arc', x0: spot[0] + d * 1.2, y0: spot[1], x1: bx2 - d * 6, y1: by2, peak: 6, start: 14, end: 0});
+      seg(tShot + 0.75, tShot + 30, {k: 'spot', x: bx2 - d * 6, y: by2, h: 0}); sfx(tShot + 0.15, 'block');
+      tEnd = tShot + 1.1;
+    } else if (k.dunk) {
+      seg(tShot, tShot + 0.25, {k: 'arc', x0: spot[0], y0: spot[1], x1: hx, y1: 25, peak: 4, start: 12, end: RIM_BALL});
+      sh.track.push([PRE + tShot + 0.25, spot[0], spot[1]]); sh.dunk = [PRE + tShot - 0.1, PRE + tShot + 0.5];
+      if (k.made) { through(tShot + 0.25, off); sfx(tShot + 0.25, 'dunk'); } else bounce(tShot + 0.25, off);
+      tEnd = tShot + 1;
+    } else {
+      const air = 0.45 + dist / 42;
+      seg(tShot, tShot + air, {k: 'arc', x0: spot[0], y0: spot[1], x1: hx, y1: 25, peak: 8 + dist * 0.9, start: 12, end: RIM_BALL});
+      sh.shoot = [PRE + tShot - 0.15, PRE + tShot + 0.25];
+      if (k.made) through(tShot + air, off); else bounce(tShot + air, off);
+      tEnd = tShot + air + 0.8;
+    }
+    // everyone else drifts toward the basket for the rebound on a miss
+    if (!k.made) for (const a of F) if (a !== sh && a !== blk && a !== df && hash(a.pid + p.id) % 3 === 0) go(a, tEnd - 0.3, a.x + (hx - a.x) * 0.35, a.y + (25 - a.y) * 0.3);
+  } else if (k.kind === 'ft') {
+    const sh = who(k.ids[0]) || F.find(a => a.team === off && a.role === 'P0');
+    seg(0, 0.7, {k: 'hold', a: sh}); sh.shoot = [PRE + 0.55, PRE + 0.9];
+    seg(0.7, 1.5, {k: 'arc', x0: hx - d * 13.75, y0: 25, x1: hx, y1: 25, peak: 22, start: 12, end: RIM_BALL});
+    if (k.made) through(1.5, off); else bounce(1.5, off);
+    tEnd = 2.2;
+  } else if (k.kind === 'reb') {
+    // whoever rebounds goes to the loose ball
+    const bx = S.ball.x, by = S.ball.y;
+    const rb = who(k.ids[0]) || nearest(k.team || off, bx, by);
+    seg(0, 0.5, {k: 'spot', x: bx, y: by, h: Math.max(0, S.ball.h)});
+    if (rb) { go(rb, 0.5, bx, by); rb.hopAt = PRE + 0.45; seg(0.5, 30, {k: 'hold', a: rb}); }
+    const op = rb && nearest(otherTeam(rb.team), bx, by); if (op) go(op, 0.5, bx + (op.x > bx ? 2 : -2), by + 1.5);
+    tEnd = 0.9;
+  } else if (k.kind === 'to') {
+    const h = who(k.ids[0]) || pg, stl = who(k.steal);
+    seg(0, 0.5, {k: 'hold', a: h});
+    if (stl) { const [x, y] = at(h); go(stl, 0.5, x + d * 1.2, y + 0.8); seg(0.5, 30, {k: 'hold', a: stl}); go(stl, 1.3, x - d * 8, y); tEnd = 1.4; sfx(0.5, 'pop'); }
+    else {
+      const [x, y] = at(h), oy = y < 25 ? -1.5 : 51.5;
+      if (/traveling|violation|3 second|goaltending|backcourt|double dribble|palming|kicked/i.test((p.text || '') + ' ' + (p.type?.text || ''))) { seg(0.5, 30, {k: 'hold', a: h}); sfx(0.4, 'whistle'); tEnd = 1.1; }
+      else { seg(0.5, 1.1, {k: 'arc', x0: x, y0: y, x1: x + d * 3, y1: oy, peak: 6, start: 1, end: 0}); seg(1.1, 30, {k: 'spot', x: x + d * 3, y: oy, h: 0}); sfx(1.1, 'whistle'); tEnd = 1.4; }
+    }
+  } else if (k.kind === 'foul') {
+    const fo = who(k.ids[0]), vi = who(k.ids[1]) || pg;
+    seg(0, 30, {k: 'hold', a: vi || pg});
+    if (fo && vi) { const [x, y] = at(vi); go(fo, 0.45, x + (fo.x > x ? 1.4 : -1.4), y + 0.5); }
+    sfx(0.5, 'whistle'); tEnd = 1.2;
+  } else if (k.kind === 'jump') {
+    // the toss at center court, tipped to a teammate
+    const rcv = who(k.ids[2]) || F.find(a => a.team === (k.recv || S.home) && a.role === 'P1');
+    const j1 = F.find(a => a.team === S.home && a.role === 'P0'), j2 = F.find(a => a.team === S.away && a.role === 'P0');
+    seg(0, 0.6, {k: 'arc', x0: 47, y0: 25, x1: 47, y1: 25, peak: 26, start: 10, end: 30});
+    if (j1) j1.hopAt = PRE + 0.45; if (j2) j2.hopAt = PRE + 0.5;
+    if (rcv) { const [x, y] = at(rcv); seg(0.6, 1.2, {k: 'arc', x0: 47, y0: 25, x1: x, y1: y, peak: 4, start: 30, end: 1}); seg(1.2, 30, {k: 'hold', a: rcv}); }
+    tEnd = 1.4;
+  }
+  plan.segs.sort((a, b) => a.t0 - b.t0);
+  for (let i = 0; i + 1 < plan.segs.length; i++) if (plan.segs[i].t1 > plan.segs[i + 1].t0) plan.segs[i].t1 = plan.segs[i + 1].t0;
+  // players still walking to the bench keep walking while the play goes on
+  for (const a of S.actors) if (a.leaving && !a.gone && !used.has(a)) {
+    const [bx, by] = [a.tx ?? a.x, a.ty ?? a.y], dd = Math.hypot(bx - a.x, by - a.y), sp = a.walkSpeed || 8;
+    F.push(Object.assign(a, {track: [[0, a.x, a.y], [dd / sp, bx, by]], chase: false, shoot: null, dunk: null, hopAt: null}));
+  }
+  plan.actors = F;
+  plan.dur = PRE + tEnd + 0.3;
+  return plan;
+}
+
+/* ---- commentary ---- */
+// {player} the shooter (or rebounder, ball handler), {helper} the passer or stealer, {team} their team, {he}/{his} by league
+const LINES_BB = {
+  three: ['From downtown! Bang!', 'Splash! Three for {player}!', 'Nothing but net from deep.', '{player} lets it fly, and it is good!', 'Long range, and right on the money!',
+    'Catch, rise, fire. Three points.', 'That is a dagger from way out there!', 'Bottoms! {team} from beyond the arc.'],
+  dunk: ['Throws it DOWN!', 'Oh, the rim is still shaking!', 'Slam dunk, {player}!', 'Hammer time! What a finish!', 'Two hands, no doubt about it!'],
+  layup: ['Smooth finish at the rim.', 'Off the glass and in.', '{player} gets to the cup.', 'Easy two. Nobody home in the paint.', 'Kissed it off the window.', 'Beautiful touch around the basket.'],
+  jumper: ['Pull-up, good!', 'Money from the mid-range.', '{player} knocks it down.', 'Rise and fire, and it drops.', 'That is a pure stroke.', 'Elbow jumper, cash.'],
+  assist: ['What a dime from {helper}!', 'Great find by {helper}.', 'Unselfish basketball. The extra pass makes it easy.', 'Beautiful ball movement by {team}.'],
+  miss: ['No good.', 'Rimmed out.', 'Front iron.', 'In and out! So close.', 'Short on that one.', 'Just off the mark.'],
+  block: ['REJECTED!', 'Get that outta here!', 'Sent back! What a block!', 'Denied at the rim!', 'Not in this house!'],
+  steal: ['Picked clean by {helper}!', 'Stolen! {team} is off and running the other way.', 'Jumped the passing lane!', 'Quick hands! That is a takeaway.', 'Swiped it!'],
+  to: ['Turnover.', 'Careless with the ball there.', 'Coughed it up.', 'Giving it right back.', 'That one gets away from {him}.'],
+  oreb: ['Second chance!', 'Crashed the glass!', 'Offensive board. Keep it alive!', 'Hustle play on the boards.'],
+  ofoul: ['Offensive foul! Planted feet.', 'Charge! Took it right in the chest.', 'Offensive foul. The defender held the spot.'],
+  tech: ['Technical foul! Somebody said the wrong thing.', 'T is up! Tempers are flaring.'],
+  ftmiss: ['Left that one at the line.', 'Rattled out from the stripe.', 'Free throws are not free, folks.'],
+  jump: ['And we are underway!', 'Tip-off, here we go!', 'Ball is up!'],
+  period: ['That is the end of the quarter.', 'Horn sounds. Quarter in the books.', 'And that will do it for the period.'],
+  timeout: ['Time out on the floor.', 'Coach wants a word.', 'Huddle up. Good time to regroup.']
+};
+// each league's color analyst has a few lines of their own
+const LINES_OWN = {
+  // Tommy Kessler played center for eleven seasons
+  nba: {block: ['I made a living in the paint. That is how you protect the rim!'], oreb: ['Big man work! Nobody boxed out, and you get punished.'], dunk: ['Back in my day you got hacked for trying that. Beautiful!']},
+  // Keisha Monroe ran the point for a decade
+  wnba: {assist: ['Point guard play right there. Find the open teammate.', 'Great court vision on that pass.'], steal: ['I always said, defense starts with the guards. Look at that!'], three: ['She has been working on that shot, and it shows!']}
+};
+const ASIDES_BB = {
+  lead: ['Lead change! {team} goes in front.', 'And {team} takes the lead!', 'New team on top. {team} goes ahead.'],
+  tie: ['All square!', 'Tie ballgame!', 'We are even again.'],
+  run: ['That is a {run} to nothing run for {team}.', '{team} on a {run} to nothing run!', '{run} straight points for {team}. Somebody call timeout!'],
+  clutch: ['Under two minutes, and this one is tight. Every possession matters.', 'Crunch time, folks.'],
+  blowout: ['{team} has broken this one wide open.', 'Twenty-point game. This one is getting away.']
+};
+const fillB = (t, v) => t.replace(/\{(\w+)\}/g, (m, k) => v[k] ?? '');
+function bbVars(k, extra){
+  const L = lg(), pl = bbPerson(k.ids[0]), helper = bbPerson(k.assist || k.steal || k.ids[1]);
+  return Object.assign({player: pl?.last || k.team?.nick || '', helper: helper?.last || '', team: (k.steal ? otherTeam(k.team) : k.team)?.loc || '', he: L.he, his: L.his, him: L.he === 'she' ? 'her' : 'him'}, extra || {});
+}
+function colorLineBB(p, k){
+  const r = hash(p.id); let key = null;
+  if (k.kind === 'shot') {
+    if (k.block) key = 'block';
+    else if (k.made) key = k.dunk ? 'dunk' : k.three ? 'three' : (k.assist && r % 2) ? 'assist' : r % 3 === 0 ? (k.layup ? 'layup' : 'jumper') : null;
+    else key = r % 5 === 0 ? 'miss' : null;
+  } else if (k.kind === 'ft') key = !k.made && k.last && r % 2 ? 'ftmiss' : null;
+  else if (k.kind === 'reb') key = k.off && r % 2 ? 'oreb' : null;
+  else if (k.kind === 'to') key = k.steal ? 'steal' : r % 3 === 0 ? 'to' : null;
+  else if (k.kind === 'foul') key = k.tech ? 'tech' : k.offFoul ? 'ofoul' : null;
+  else if (k.kind === 'jump') key = 'jump';
+  else if (k.kind === 'end') key = /game/i.test(p.text || p.type?.text || '') ? null : 'period';
+  else if (k.kind === 'timeout') key = 'timeout';
+  if (!key) return null;
+  const list = [...LINES_BB[key], ...((LINES_OWN[S.sport] || {})[key] || [])];
+  return fillB(pickFresh(list, p.id + key), bbVars(k));
+}
+function bbAside(p, k, before){
+  const st = S.bb, h = S.prevScore.h, a = S.prevScore.a, v = x => bbVars(k, x);
+  const say = (key, x) => fillB(pickFresh(ASIDES_BB[key], p.id + key), v(x));
+  const per = +p.period?.number || 0, secs = secsOf(p);
+  if (h !== before.h || a !== before.a) {
+    const scorer = h - before.h > a - before.a ? S.home : S.away;
+    if (h === a) return say('tie', {team: scorer.loc});
+    if (Math.sign(h - a) !== Math.sign(before.h - before.a) && before.h !== before.a) return say('lead', {team: scorer.loc});
+    if (before.h === before.a && before.h > 0) return say('lead', {team: scorer.loc});
+    if (st.run.team === scorer && st.run.pts >= 8 && st.run.pts >= st.run.said + 4) { st.run.said = st.run.pts; return say('run', {team: scorer.loc, run: st.run.pts}); }
+    if (Math.abs(h - a) >= 20 && !st.said.blow) { st.said.blow = true; return say('blowout', {team: (h > a ? S.home : S.away).loc}); }
+  }
+  if (per >= 4 && secs <= 120 && secs > 0 && Math.abs(h - a) <= 5 && !st.said['clutch' + per]) { st.said['clutch' + per] = true; return say('clutch', {}); }
+  return null;
+}
+// the play-by-play line: ESPN's text, with the parts in brackets read out
+function bbSpeech(t){
+  let s = String(t || '').replace(/\(([^)]*)\)/g, (m, x) => {
+    x = x.trim(); let q;
+    if ((q = /^(.+?) assists$/i.exec(x))) return `, ${q[1]} with the assist`;
+    if ((q = /^(.+?) blocks$/i.exec(x))) return `, blocked by ${q[1]}`;
+    if ((q = /^(.+?) steals$/i.exec(x))) return `, stolen by ${q[1]}`;
+    return `, ${x}`;
+  });
+  s = s.replace(/\b(\d+)-foot\b/g, '$1 foot').replace(/\s+,/g, ',').replace(/\s+/g, ' ').trim();
+  if (s && !/[.!?]$/.test(s)) s += '.';
+  return s;
+}
+
+async function runPlayBB(p, fast, tok){
+  if (tok !== S.token) return;
+  if (fast) { addLog(p); applyState(p, null); restFormation(); return; }
+  let plan;
+  try { plan = planBB(p); } catch (e) { console.warn('plan failed', e, p); plan = {kind: 'admin', static: true, k: p._k || classifyBB(p)}; }
+  const k = p._k || plan.k, isTimeout = k.kind === 'timeout';
+  if (!isTimeout) hideBanner();
+  await animate(plan, tok);
+  if (tok !== S.token) return;
+  const before = {...S.prevScore};
+  addLog(p); applyState(p, plan);
+  if (!plan.static || ['sub', 'timeout', 'end'].includes(k.kind)) restFormation(true, plan);
+  if (isTimeout) showTimeout(p);
+  if (k.kind === 'end') sfx('buzzer');
+  const busy = S.mode === 'live' && S.queue.length > 3;
+  const pbp = bbSpeech(p.text || p.type?.text || '');
+  if (pbp) { if (busy) $('caption').textContent = tag('A') + pbp; else await say('A', pbp, tok); }
+  if (tok !== S.token) return;
+  const col = busy ? null : colorLineBB(p, k);
+  if (col) await say('B', col, tok);
+  if (tok !== S.token) return;
+  const aside = busy ? null : bbAside(p, k, before);
+  if (aside) { await sleep(200); await say('B', aside, tok); }
+  await sleep(S.voices ? 150 : 400);
+  if (isTimeout && S.mode === 'replay') { await sleep(2000); if (tok === S.token) hideBanner(); }
+}
+
+/* ---- replay timeline for basketball: one block per quarter, marks where the lead changed ---- */
+function buildReplayBB(plays){
+  if (!plays.length) return null;
+  const idx = new Map(); plays.forEach((p, i) => idx.set(p.id, i));
+  const Q = lg().q, len = n => n <= 4 ? Q : 300, start = n => n <= 4 ? (n - 1) * Q : 4 * Q + (n - 5) * 300;
+  const per = p => +p.period?.number || 1;
+  const maxQ = Math.max(4, ...plays.map(per)), total = start(maxQ) + len(maxQ);
+  const t = plays.map(p => clamp(start(per(p)) + len(per(p)) - Math.min(secsOf(p), len(per(p))), 0, total));
+  for (let i = 1; i < t.length; i++) if (t[i] < t[i - 1]) t[i] = t[i - 1];
+  const drives = [0]; plays.forEach((p, i) => { if (i && per(p) !== per(plays[i - 1])) drives.push(i); });
+  const driveOf = i => { let s = 0; for (const d of drives) if (d <= i) s = d; return s; };
+  const scores = []; let lead = 0, h = 0, a = 0;
+  plays.forEach((p, i) => {
+    h = p.homeScore != null ? +p.homeScore : h; a = p.awayScore != null ? +p.awayScore : a;
+    const L = Math.sign(h - a);
+    if (L && L !== lead) scores.push({i, team: L > 0 ? S.home : S.away, kind: 'LEAD', a, h});
+    if (L) lead = L;
+  });
+  return {plays, idx, t, total, maxQ, drives, driveOf, scores, bb: true, len};
+}
+
 /* ================= animation ================= */
 function trackAt(tr, t){
   if (t <= tr[0][0]) return [tr[0][1], tr[0][2]];
@@ -1995,6 +2606,10 @@ function step(now){
       p.frame = moved ? (Math.floor(now / 110) % 2) : 0; p.moving = moved;
       p.swinging = !!(p.swing && t >= p.swing[0] && t <= p.swing[1]);
       p.hop = (plan.tdT && t > plan.tdT && (p === plan.carrier || (p.team === plan.carrier?.team && Math.abs(p.x - plan.carrier.x) < 8))) ? Math.abs(Math.sin((t - plan.tdT) * 9)) * 4 : 0;
+      // basketball: shooters rise, dunkers rise higher, rebounders and jumpers leap
+      if (p.shoot && t >= p.shoot[0] && t <= p.shoot[1]) p.hop = Math.sin((t - p.shoot[0]) / (p.shoot[1] - p.shoot[0]) * Math.PI) * 4;
+      else if (p.dunk && t >= p.dunk[0] && t <= p.dunk[1]) p.hop = Math.sin((t - p.dunk[0]) / (p.dunk[1] - p.dunk[0]) * Math.PI) * 9;
+      else if (p.hopAt && t >= p.hopAt && t <= p.hopAt + 0.4) p.hop = Math.sin((t - p.hopAt) / 0.4 * Math.PI) * 6;
     }
     ballAt(plan, t);
     for (const [ts, name] of plan.sfx) if (t >= ts && !a.fired.has(ts + name)) { a.fired.add(ts + name); if (name && name !== 'snap') sfx(name); }
@@ -2015,7 +2630,11 @@ function step(now){
   }
   S.lastNow = now;
   if (S.actors.some(p => p.gone)) S.actors = S.actors.filter(p => !p.gone); // back in the dugout
-  if (isMLB()) {
+  if (isBB()) {
+    // the whole court is on screen; between plays the ball handler dribbles
+    const h = !S.anim && S.bb?.holder;
+    if (h && S.actors.includes(h)) { S.ball.x = h.x + 0.7; S.ball.y = h.y + 0.3; S.ball.h = h.moving ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
+  } else if (isMLB()) {
     // the camera sits on the infield and goes with the ball when it's hit deep
     const b = S.ball, follow = S.anim && S.ballSeg !== 'spot' && (b.y > 150 || Math.abs(b.x) > 110);
     const tx = follow ? mcx(b.x) : MB.PLX, ty = follow ? mcy(b.y) - b.h * 0.5 : MB.FH - H / 2;
@@ -2034,6 +2653,13 @@ function step(now){
 const ctx = $('field').getContext('2d'); ctx.imageSmoothingEnabled = false;
 function render(now){
   ctx.fillStyle = '#0c0e1c'; ctx.fillRect(0, 0, W, H);
+  if (isBB()) {
+    if (S.field) ctx.drawImage(S.field, 0, 0);
+    for (const a of [...S.actors].sort((a, b) => a.y - b.y)) drawPlayer(ctx, a);
+    if (S.mode) drawBall(ctx);
+    drawBooth(now);
+    return;
+  }
   if (isMLB()) {
     if (S.field) ctx.drawImage(S.field, Math.round(S.camX - W / 2), Math.round(S.camY - H / 2), W, H, 0, 0, W, H);
     for (const a of [...S.actors].sort((a, b) => b.y - a.y)) drawPlayer(ctx, a);
@@ -2064,9 +2690,10 @@ function setBadge(){
   b.className = 'badge' + (S.mode === 'live' ? ' live' : '');
   b.textContent = S.mode === 'live' ? 'LIVE' : S.mode === 'replay' ? 'REPLAY' : S.mode === 'pre' ? 'PREGAME' : SPORTS[S.sport].name;
 }
-const qName = n => n > 4 ? 'OT' : 'Q' + n;
+const qName = n => n > 5 ? 'OT' + (n - 4) : n > 4 ? 'OT' : 'Q' + n;
 function applyState(p, plan){
   if (isMLB()) return applyStateMLB(p, plan);
+  if (isBB()) return applyStateBB(p, plan);
   if (p.homeScore != null) S.prevScore.h = p.homeScore;
   if (p.awayScore != null) S.prevScore.a = p.awayScore;
   setBoard();
@@ -2090,7 +2717,7 @@ function addLog(p){
   const li = document.createElement('li'); if (p.scoringPlay) li.className = 'score';
   const mlb = isMLB(), o = mlb ? (p._o || (p._o = outcomeMLB(p))) : null;
   if (mlb && o.kind === 'pitch' && !p.scoringPlay) li.className = 'pitch';
-  const tm = mlb ? (o.kind === 'admin' ? '' : S.mlb.batting?.abbr || '') : p.start?.team?.id ? (isHomeId(p.start.team.id) ? S.home.abbr : S.away.abbr) : '';
+  const tm = mlb ? (o.kind === 'admin' ? '' : S.mlb.batting?.abbr || '') : isBB() ? ((p._k || (p._k = classifyBB(p))).team?.abbr || '') : p.start?.team?.id ? (isHomeId(p.start.team.id) ? S.home.abbr : S.away.abbr) : '';
   li.innerHTML = '<span class="t"></span><span class="tm"></span><span class="x"></span>';
   li.children[0].textContent = mlb ? `${mlbLabel(p)} ${S.mlb.outs} OUT` : `${p.period?.number ? qName(p.period.number) : ''} ${p.clock?.displayValue || ''}`;
   li.children[1].textContent = tm; li.children[2].textContent = p.text || p.type?.text || '';
@@ -2104,6 +2731,7 @@ function clearLog(msg){ $('log').innerHTML = ''; const li = document.createEleme
 function restFormation(walk, plan){
   if (!S.home) return;
   if (isMLB()) return mlbRest(walk);
+  if (isBB()) return bbRest(walk);
   let poss = S.offDir === -1 ? S.away : S.home, def = poss === S.home ? S.away : S.home;
   let F;
   if (plan && plan.td) {
@@ -2130,6 +2758,7 @@ function restFormation(walk, plan){
 /* ================= play runner ================= */
 async function runPlay(p, fast, tok){
   if (isMLB()) return runPlayMLB(p, fast, tok);
+  if (isBB()) return runPlayBB(p, fast, tok);
   if (tok !== S.token) return;
   if (fast) { addLog(p); applyState(p, null); restFormation(); return; }
   let plan;
@@ -2173,6 +2802,11 @@ async function pump(){
 function playsOf(summary){
   const out = [], seen = new Set();
   if (isMLB()) return feedPlays(summary);
+  if (isBB()) {
+    // basketball plays come as one list, in game order
+    for (const p of summary.plays || []) { if (p?.id == null || seen.has(String(p.id))) continue; p.id = String(p.id); seen.add(p.id); out.push(p); }
+    return out;
+  }
   const dr = summary.drives || {};
   for (const d of [...(dr.previous || []), ...(dr.current ? [dr.current] : [])]) for (const p of d.plays || []) {
     if (seen.has(p.id)) continue; seen.add(p.id); out.push(p);
@@ -2191,8 +2825,9 @@ async function selectGame(id, mode){
   S.prevScore = {h: 0, a: 0}; S.down = 0; S.flag = null; S.view = null; S.summary = null; S.losX = null; S.fdX = null;
   S.rp = null; S.ri = 0; S.paused = false; $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
   const t = teamsOf(ev); S.home = t.home; S.away = t.away;
-  S.home.kit = isMLB() ? kitMLB(S.home, true) : kit(S.home, true); S.away.kit = isMLB() ? kitMLB(S.away, false) : kit(S.away, false);
+  S.home.kit = kitFor(S.home, true); S.away.kit = kitFor(S.away, false);
   S.lineup = {}; S.people = {}; if (isMLB()) { setPark(ev.competitions?.[0]?.venue?.fullName); mlbReset(); }
+  if (isBB()) { S.bb = null; bbReset(); }
   hideNotice(); hideBanner(); renderList(); setBadge(); setBoard();
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   clearLog('Loading play-by-play...');
@@ -2204,41 +2839,49 @@ async function selectGame(id, mode){
   if (tok !== S.token) return;
   refreshDetail();
   if (isMLB()) { mlbReset(); S.actors = mlbFormation(S.mlb); }
+  else if (isBB()) { bbPeopleFrom(S.home); bbPeopleFrom(S.away); bbReset(); bbRest(false); }
   else { S.ball.x = 35; S.ball.y = MIDY; S.offDir = 1; S.actors = makeFormation(S.home, S.away, 35, 'kickoff'); S.cam = 35; }
-  const start = isMLB() ? 'first pitch' : 'kickoff';
+  const [start, Start, unit] = startWords();
 
   if (mode === 'pre') {
     clearLog(`The play-by-play starts at ${start}.`);
     const when = new Date(ev.date).toLocaleString([], {weekday: 'long', hour: 'numeric', minute: '2-digit'});
     $('clock').textContent = when; $('dd').textContent = ev.competitions[0].venue?.fullName || '';
-    $('caption').textContent = `${tag('A')}${isMLB() ? 'First pitch' : 'Kickoff'} is ${when}. We will go live the moment it starts.`;
+    $('caption').textContent = `${tag('A')}${Start} is ${when}. We will go live the moment it starts.`;
     return;
   }
   let sum;
-  try { sum = await getJSON(gameURL(id)); S.summary = sum; if (isMLB()) { mlbLineups(sum); S.actors = mlbFormation(S.mlb); } refreshDetail(); }
+  try {
+    sum = await getJSON(gameURL(id)); S.summary = sum;
+    if (isMLB()) { mlbLineups(sum); S.actors = mlbFormation(S.mlb); }
+    if (isBB()) { bbLineups(sum); bbReset(); bbRest(false); }
+    refreshDetail();
+  }
   catch (e) { clearLog(`Couldn't load this game's play-by-play from ${isMLB() ? 'MLB' : 'ESPN'}. Retrying shortly.`); return; }
   if (tok !== S.token) return;
   const plays = playsOf(sum);
   if (mode === 'replay') {
-    clearLog(`Replaying from the ${isMLB() ? 'first pitch' : 'opening kickoff'}.`);
+    clearLog(`Replaying from the ${isMLB() ? 'first pitch' : 'opening ' + start}.`);
     $('log').innerHTML = '';
     S.queue = plays.slice(); plays.forEach(p => S.seen.add(p.id));
     S.rp = buildReplay(sum, plays); S.ri = 0; renderTimeline();
-    $('caption').textContent = `${tag('A')}Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : 'opening kick'}!`;
+    $('caption').textContent = `${tag('A')}Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : isBB() ? 'opening tip' : 'opening kick'}!`;
     await sleep(1200); pump();
   } else {
     $('log').innerHTML = '';
     const back = plays.slice(-12);
     for (const p of plays.slice(0, -12)) { S.seen.add(p.id); applyState(p, null); }
     for (const p of back) { S.seen.add(p.id); addLog(p); applyState(p, null); }
-    if (!plays.length) clearLog(`Waiting for the first ${isMLB() ? 'pitch' : 'snap'}...`);
-    restFormation(); if (!isMLB()) S.cam = clamp(S.ball.x, 10, 90);
+    if (!plays.length) clearLog(`Waiting for the first ${unit}...`);
+    restFormation(); if (!isMLB() && !isBB()) S.cam = clamp(S.ball.x, 10, 90);
     $('caption').textContent = `${tag('A')}We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`;
     if (S.started && S.voices) say('A', $('caption').textContent.slice(tag('A').length), tok);
   }
 }
 
-// a game's play-by-play: ESPN's game summary for football, MLB's live game feed for baseball
+// what the start of a game is called: [in a sentence, at the start of one, one play]
+const startWords = () => isMLB() ? ['first pitch', 'First pitch', 'pitch'] : isBB() ? ['tip-off', 'Tip-off', 'play'] : ['kickoff', 'Kickoff', 'snap'];
+// a game's play-by-play: ESPN's game summary for football and basketball, MLB's live game feed for baseball
 const gameURL = id => isMLB() ? `${MLB_API}/v1.1/game/${id}/feed/live` : `${API}/summary?event=${id}`;
 async function pollLive(){
   if (S.mode !== 'live' || !S.game) return;
@@ -2246,7 +2889,7 @@ async function pollLive(){
   try {
     const sum = await getJSON(gameURL(S.game));
     if (tok !== S.token) return;
-    S.summary = sum; if (isMLB()) mlbLineups(sum); refreshDetail();
+    S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail();
     const fresh = playsOf(sum).filter(p => !S.seen.has(p.id));
     fresh.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
     if (fresh.length) pump();
@@ -2258,10 +2901,13 @@ const qStart = n => n <= 4 ? (n - 1) * 900 : 3600 + (n - 5) * 600, qLen = n => n
 function secsOf(p){
   const m = /(\d+):(\d+)/.exec(p.clock?.displayValue || '');
   if (m) return +m[1] * 60 + +m[2];
-  return Number.isFinite(+p.clock?.value) ? +p.clock.value : 0;
+  if (Number.isFinite(+p.clock?.value) && p.clock.value != null) return +p.clock.value;
+  const sec = /^\s*(\d+(?:\.\d+)?)\s*$/.exec(p.clock?.displayValue || ''); // basketball's last minute: "45.3"
+  return sec ? +sec[1] : 0;
 }
 function buildReplay(sum, plays){
   if (isMLB()) return buildReplayMLB(plays);
+  if (isBB()) return buildReplayBB(plays);
   if (!plays.length) return null;
   const idx = new Map(); plays.forEach((p, i) => idx.set(p.id, i));
   const maxQ = Math.max(4, ...plays.map(p => p.period?.number || 1));
@@ -2298,11 +2944,12 @@ function renderTimeline(){
   const qs = $('tl-qs'); qs.innerHTML = '';
   for (let n = 1; n <= R.maxQ; n++) {
     const d = document.createElement('div'); d.className = 'tl-q';
-    d.style.flex = String(R.mlb ? Math.min(2, R.total - (n - 1) * 2) : qLen(n)); d.textContent = R.mlb ? String(n) : qName(n); qs.append(d);
+    d.style.flex = String(R.mlb ? Math.min(2, R.total - (n - 1) * 2) : R.bb ? R.len(n) : qLen(n)); d.textContent = R.mlb ? String(n) : qName(n); qs.append(d);
   }
-  $('tl-prev').innerHTML = R.mlb ? '&lt;&lt; INNING' : '&lt;&lt; DRIVE'; $('tl-next').innerHTML = R.mlb ? 'INNING &gt;&gt;' : 'DRIVE &gt;&gt;';
-  $('tl-prev').title = R.mlb ? 'Back to the start of the half inning' : 'Back to the start of the previous drive';
-  $('tl-next').title = R.mlb ? 'Skip to the next half inning' : 'Skip to the next drive';
+  const U = R.mlb ? 'INNING' : R.bb ? 'QUARTER' : 'DRIVE';
+  $('tl-prev').innerHTML = `&lt;&lt; ${U}`; $('tl-next').innerHTML = `${U} &gt;&gt;`;
+  $('tl-prev').title = R.mlb ? 'Back to the start of the half inning' : R.bb ? 'Back to the start of the quarter' : 'Back to the start of the previous drive';
+  $('tl-next').title = R.mlb ? 'Skip to the next half inning' : R.bb ? 'Skip to the next quarter' : 'Skip to the next drive';
   const marks = $('tl-marks'), list = $('tl-scores'); marks.innerHTML = ''; list.innerHTML = '';
   for (const s of R.scores) {
     const m = document.createElement('div'); m.className = 'tl-mark';
@@ -2310,7 +2957,8 @@ function renderTimeline(){
     const b = document.createElement('button'); b.className = 'tl-sc';
     b.innerHTML = '<i></i><span></span>'; b.firstChild.style.background = s.team.color;
     b.lastChild.textContent = `${playLabel(R.plays[s.i])} ${s.team.abbr} ${s.kind} ${s.a}-${s.h}`;
-    b.title = R.mlb ? 'Watch this scoring inning' : 'Watch this scoring drive'; b.onclick = () => seekTo(R.driveOf(s.i), R.mlb ? 'the scoring inning' : 'the scoring drive');
+    b.title = R.mlb ? 'Watch this scoring inning' : R.bb ? 'Watch the lead change' : 'Watch this scoring drive';
+    b.onclick = () => R.bb ? seekTo(Math.max(R.driveOf(s.i), s.i - 4), 'the lead change') : seekTo(R.driveOf(s.i), R.mlb ? 'the scoring inning' : 'the scoring drive');
     list.append(b);
   }
   updateTimeline();
@@ -2322,7 +2970,7 @@ function updateTimeline(){
   $('tl-fill').style.width = (f * 100) + '%'; $('tl-head').style.left = (f * 100) + '%';
   $('tl-now').textContent = done ? 'FINAL' : playLabel(R.plays[S.ri]);
   $('tline').querySelector('.tl-bar').setAttribute('aria-valuetext', $('tl-now').textContent);
-  if (!S.tlHover) $('tl-hover').textContent = `Click the bar to jump. Squares mark ${R.mlb ? 'runs' : 'scores'}.`;
+  if (!S.tlHover) $('tl-hover').textContent = `Click the bar to jump. Squares mark ${R.mlb ? 'runs' : R.bb ? 'lead changes' : 'scores'}.`;
 }
 function idxAtFrac(f){
   const R = S.rp, target = clamp(f, 0, 1) * R.total;
@@ -2349,13 +2997,17 @@ function seekTo(i, why){
     for (const p of before) { applyState(p, null); }
     const logged = before.slice(-12); $('log').innerHTML = '';
     for (const p of logged) addLog(p);
+  } else if (R.bb) {
+    // back to tip-off, then replay who's on the floor, the score and possession up to here
+    bbReset(); for (const p of before) applyState(p, null);
+    for (const p of before.slice(-12)) addLog(p);
   } else {
     // fast-forward the scoreboard and ball spot; plays with no end spot (timeouts, quarter ends) only move the clock
     for (const p of before) applyState(p, p.end?.team?.id ? null : {static: true});
     for (const p of before.slice(-12)) addLog(p);
   }
   if (!before.length) $('clock').textContent = '--';
-  restFormation(); if (!R.mlb) S.cam = clamp(S.ball.x, 10, 90);
+  restFormation(); if (!R.mlb && !R.bb) S.cam = clamp(S.ball.x, 10, 90);
   S.queue = R.plays.slice(i); S.ri = i; updateTimeline(); renderGamePanel();
   $('caption').textContent = `${tag('A')}Taking you to ${why || playLabel(R.plays[i])}${why ? ', ' + playLabel(R.plays[i]) : ''}.`;
   setTimeout(() => { if (tok === S.token) pump(); }, 700);
@@ -2363,7 +3015,7 @@ function seekTo(i, why){
 function stepDrive(dir){
   const R = S.rp; if (!R) return;
   const cur = Math.min(S.ri, R.plays.length - 1), start = R.driveOf(cur);
-  const unit = R.mlb ? 'half inning' : 'drive';
+  const unit = R.mlb ? 'half inning' : R.bb ? 'quarter' : 'drive';
   if (dir > 0) { const nx = R.drives.find(d => d > cur); if (nx != null) seekTo(nx, 'the next ' + unit); return; }
   // back: restart this drive, or go to the one before if we're right at its start
   const k = R.drives.indexOf(start);
@@ -2395,6 +3047,16 @@ const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&
 function drawHelmet(cv, team){
   const g = cv.getContext('2d'); g.imageSmoothingEnabled = false; g.clearRect(0, 0, cv.width, cv.height);
   const r = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
+  if (isBB()) {
+    // a basketball jersey in team colors
+    r(7, 27, 18, 2, 'rgba(0,0,0,.35)');
+    r(9, 3, 3, 6, team.color); r(20, 3, 3, 6, team.color); r(7, 9, 18, 18, team.color); r(9, 8, 3, 1, team.color); r(20, 8, 3, 1, team.color);
+    g.clearRect(12, 3, 8, 6); g.clearRect(13, 9, 6, 2);
+    r(12, 8, 1, 1, team.alt); r(19, 8, 1, 1, team.alt); r(13, 11, 6, 1, team.alt); r(12, 9, 1, 2, team.alt); r(19, 9, 1, 2, team.alt);
+    r(7, 9, 1, 7, team.alt); r(24, 9, 1, 7, team.alt); r(7, 26, 18, 1, team.alt);
+    r(9, 10, 2, 1, 'rgba(255,255,255,.25)');
+    return;
+  }
   if (isMLB()) {
     // a ball cap in team colors
     r(6, 24, 20, 2, 'rgba(0,0,0,.35)');
@@ -2502,6 +3164,20 @@ function drawFace(g, team, pl, looks){
   const n = pl.num ?? 0;
   if (n >= 10) { digit(g, Math.floor(n / 10) % 10, 12, 26, k.num); digit(g, n % 10, 17, 26, k.num); } else digit(g, n, 14, 26, k.num);
   if (looks) r(13, 20, 6, 4, looks.shade);
+  if (isBB()) {
+    // basketball: the face with nothing on the head
+    if (!looks) { r(10, 6, 12, 15, '#0b0d1a'); r(11, 4, 10, 2, '#0b0d1a'); return; }
+    r(10, 6, 12, 15, looks.skin); r(9, 11, 1, 4, looks.skin); r(22, 11, 1, 4, looks.skin);
+    if (looks.hair) { r(10, 4, 12, 3, looks.hair); r(10, 7, 1, 3, looks.hair); r(21, 7, 1, 3, looks.hair); }
+    r(11, 11, 3, 1, looks.brow); r(18, 11, 3, 1, looks.brow);
+    r(12, 12, 2, 2, '#f4f4f0'); r(18, 12, 2, 2, '#f4f4f0'); r(13, 12, 1, 2, '#14141c'); r(18, 12, 1, 2, '#14141c');
+    r(15, 13, 2, 3, looks.shade);
+    if (looks.full) { r(10, 14, 1, 5, looks.fuzz); r(21, 14, 1, 5, looks.fuzz); }
+    if (looks.beard) r(10, 18, 12, 3, looks.fuzz);
+    if (looks.stache) r(13, 17, 6, 1, looks.fuzz);
+    r(14, 18, 4, 1, '#6b1b22');
+    return;
+  }
   if (isMLB()) {
     // baseball: the face under a ball cap
     if (!looks) r(10, 8, 12, 13, '#0b0d1a');
@@ -2569,6 +3245,8 @@ function renderGamePanel(){
 
 function teamBox(team){ return (S.summary?.boxscore?.teams || []).find(x => String(x.team?.id) === team.id); }
 function playerBox(team){ return (S.summary?.boxscore?.players || []).find(x => String(x.team?.id) === team.id); }
+const BB_TEAM_KEYS = ['fieldGoalsMade-fieldGoalsAttempted', 'fieldGoalPct', 'threePointFieldGoalsMade-threePointFieldGoalsAttempted', 'threePointFieldGoalPct',
+  'freeThrowsMade-freeThrowsAttempted', 'totalRebounds', 'offensiveRebounds', 'assists', 'steals', 'blocks', 'turnovers', 'pointsInPaint', 'fastBreakPoints', 'largestLead'];
 const TEAM_KEYS = ['totalYards', 'netPassingYards', 'rushingYards', 'firstDowns', 'thirdDownEff', 'fourthDownEff', 'turnovers', 'totalPenaltiesYards', 'sacksYardsLost', 'redZoneAttempts', 'possessionTime'];
 
 function renderDetail(){
@@ -2587,6 +3265,12 @@ function renderDetail(){
 }
 function refreshDetail(){ if (S.view) renderDetail(); }
 
+// how a roster is split up: football by unit, baseball and basketball by position
+function rosterGroups(all){
+  if (isMLB()) return [...new Set(all.map(p => p.side))].sort((a, b) => MLB_GROUPS.indexOf(a) - MLB_GROUPS.indexOf(b)).map(x => [x, x]);
+  if (isBB()) return ['GUARDS', 'FORWARDS', 'CENTERS', 'OTHER'].map(x => [x, x]);
+  return [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
+}
 function teamHTML(t){
   let h = `<div class="dhead"><b>${esc(t.loc.toUpperCase())} ${esc(t.nick.toUpperCase())}</b><button class="back">CLOSE</button></div>`;
   const rec = recordOf(t === S.home ? 'home' : 'away');
@@ -2602,13 +3286,12 @@ function teamHTML(t){
       h += `<div class="muted">${esc(String(cat.displayName || cat.name || '').toUpperCase())}</div><div class="kv">` +
         items.map(x => `<span>${esc(x.label || x.displayName || x.abbreviation || x.name)}</span><span>${esc(x.displayValue)}</span>`).join('') + '</div>';
     }
-  } else if (tb?.statistics?.length) {
-    const st = tb.statistics, pickd = TEAM_KEYS.map(k => st.find(x => x.name === k)).filter(Boolean);
+  } else if (tb?.statistics?.length && !(isBB() && S.mode === 'pre')) {
+    const st = tb.statistics, pickd = (isBB() ? BB_TEAM_KEYS : TEAM_KEYS).map(k => st.find(x => x.name === k)).filter(Boolean);
     h += '<div class="kv">' + (pickd.length ? pickd : st.slice(0, 10)).map(x => `<span>${esc(x.label)}</span><span>${esc(x.displayValue)}</span>`).join('') + '</div>';
   } else h += `<div class="muted">Team stats show up once the game starts.</div>`;
   const all = S.roster[t.id]?.all || [];
-  const groups = isMLB() ? [...new Set(all.map(p => p.side))].sort((a, b) => MLB_GROUPS.indexOf(a) - MLB_GROUPS.indexOf(b)).map(x => [x, x])
-    : [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
+  const groups = rosterGroups(all);
   if (!all.length) h += `<h5>ROSTER</h5><div class="muted">Roster not available.</div>`;
   for (const [key, label] of groups) {
     const ps = all.filter(p => p.side === key && p.id).sort((a, b) => (a.num ?? 999) - (b.num ?? 999));
@@ -2649,7 +3332,7 @@ function gameStatsFor(team, p){
   for (const cat of pb.statistics || []) {
     const a = (cat.athletes || []).find(x => String(x.athlete?.id) === p.id);
     if (!a) continue;
-    const name = (cat.name || '').replace(/([A-Z])/g, ' $1').toUpperCase();
+    const name = (cat.name || (isBB() ? 'box score' : '')).replace(/([A-Z])/g, ' $1').toUpperCase();
     h += `<div class="stbl"><table><tr><th>${esc(name)}</th>${(cat.labels || []).map(l => `<th>${esc(l)}</th>`).join('')}</tr><tr><td></td>${(a.stats || []).map(x => `<td>${esc(x)}</td>`).join('')}</tr></table></div>`;
   }
   return h;
@@ -2723,8 +3406,15 @@ async function mlbSeason(p){
 }
 
 /* ================= teams: a logo box per team, each opening that team's page ================= */
-// football seasons run into February, so January to May still belong to last year's season
-const seasonYear = () => { const d = new Date(); return isMLB() || d.getMonth() > 4 ? d.getFullYear() : d.getFullYear() - 1; };
+// football seasons run into February, so January to May still belong to last year's season. ESPN names an NBA
+// season by the year it ends (October 2026 starts the 2027 season); the WNBA plays May to October.
+const seasonYear = () => {
+  const d = new Date(), y = d.getFullYear(), m = d.getMonth();
+  if (isMLB()) return y;
+  if (S.sport === 'nba') return m >= 9 ? y + 1 : y;
+  if (S.sport === 'wnba') return m < 3 ? y - 1 : y;
+  return m > 4 ? y : y - 1;
+};
 // the logo drawn on the dark boxes: ESPN's dark-background logos for football, MLB's cap logos for baseball
 // (simple letter marks, which still read when shrunk to 32 pixels)
 function logoURL(t){
@@ -2764,6 +3454,25 @@ const NFL_TEAMS = [[22, 'ARI', 'Arizona', 'Cardinals', 'a40227', 'ffffff'], [1, 
   [10, 'TEN', 'Tennessee', 'Titans', '4b92db', '002a5c'], [28, 'WSH', 'Washington', 'Commanders', '5a1414', 'ffb612']]
   .map(([id, abbreviation, location, name, color, alternateColor]) => ({id: String(id), abbreviation, location, shortDisplayName: name, color, alternateColor,
     logo: `https://a.espncdn.com/i/teamlogos/nfl/500/${abbreviation.toLowerCase()}.png`}));
+// the NBA and WNBA teams (ESPN ids and colors), for the same reason
+const espnTeams = (league, rows) => rows.map(([id, abbreviation, location, name, color, alternateColor]) => ({id: String(id), abbreviation, location, shortDisplayName: name, color, alternateColor,
+  logo: `https://a.espncdn.com/i/teamlogos/${league}/500/${abbreviation.toLowerCase()}.png`}));
+const NBA_TEAMS = espnTeams('nba', [[1, 'ATL', 'Atlanta', 'Hawks', 'c8102e', 'fdb927'], [2, 'BOS', 'Boston', 'Celtics', '008348', 'ffffff'], [17, 'BKN', 'Brooklyn', 'Nets', '000000', 'ffffff'],
+  [30, 'CHA', 'Charlotte', 'Hornets', '008ca8', '1d1060'], [4, 'CHI', 'Chicago', 'Bulls', 'ce1141', '000000'], [5, 'CLE', 'Cleveland', 'Cavaliers', '860038', 'bc945c'],
+  [6, 'DAL', 'Dallas', 'Mavericks', '0064b1', 'bbc4ca'], [7, 'DEN', 'Denver', 'Nuggets', '0e2240', 'fec524'], [8, 'DET', 'Detroit', 'Pistons', '1d428a', 'c8102e'],
+  [9, 'GS', 'Golden State', 'Warriors', 'fdb927', '1d428a'], [10, 'HOU', 'Houston', 'Rockets', 'ce1141', '000000'], [11, 'IND', 'Indiana', 'Pacers', '0c2340', 'ffd520'],
+  [12, 'LAC', 'LA', 'Clippers', '12173f', 'c8102e'], [13, 'LAL', 'Los Angeles', 'Lakers', '552583', 'fdb927'], [29, 'MEM', 'Memphis', 'Grizzlies', '5d76a9', '12173f'],
+  [14, 'MIA', 'Miami', 'Heat', '98002e', '000000'], [15, 'MIL', 'Milwaukee', 'Bucks', '00471b', 'eee1c6'], [16, 'MIN', 'Minnesota', 'Timberwolves', '266092', '79bc43'],
+  [3, 'NO', 'New Orleans', 'Pelicans', '0a2240', 'b4975a'], [18, 'NY', 'New York', 'Knicks', '1d428a', 'f58426'], [25, 'OKC', 'Oklahoma City', 'Thunder', '007ac1', 'ef3b24'],
+  [19, 'ORL', 'Orlando', 'Magic', '0077c0', 'c4ced4'], [20, 'PHI', 'Philadelphia', '76ers', '1d428a', 'e01234'], [21, 'PHX', 'Phoenix', 'Suns', '29127a', 'e56020'],
+  [22, 'POR', 'Portland', 'Trail Blazers', 'e03a3e', '000000'], [23, 'SAC', 'Sacramento', 'Kings', '5a2d81', '63727a'], [24, 'SA', 'San Antonio', 'Spurs', '000000', 'c4ced4'],
+  [28, 'TOR', 'Toronto', 'Raptors', 'd91244', '000000'], [26, 'UTAH', 'Utah', 'Jazz', '4e008e', '79a3dc'], [27, 'WSH', 'Washington', 'Wizards', '002b5c', 'e31837']]);
+const WNBA_TEAMS = espnTeams('wnba', [[20, 'ATL', 'Atlanta', 'Dream', 'e31837', '5091cc'], [19, 'CHI', 'Chicago', 'Sky', '5091cd', 'ffd520'], [18, 'CON', 'Connecticut', 'Sun', 'f05023', '0a2240'],
+  [3, 'DAL', 'Dallas', 'Wings', '002b5c', 'c4d600'], [129689, 'GS', 'Golden State', 'Valkyries', 'b38fcf', '000000'], [5, 'IND', 'Indiana', 'Fever', '002d62', 'e03a3e'],
+  [17, 'LV', 'Las Vegas', 'Aces', 'a7a8aa', '000000'], [6, 'LA', 'Los Angeles', 'Sparks', '552583', 'fdb927'], [8, 'MIN', 'Minnesota', 'Lynx', '266092', '79bc43'],
+  [9, 'NY', 'New York', 'Liberty', '86cebc', '000000'], [11, 'PHX', 'Phoenix', 'Mercury', '3c286e', 'fa4b0a'], [132052, 'POR', 'Portland', 'Fire', 'cee5eb', '000000'],
+  [14, 'SEA', 'Seattle', 'Storm', '2c5235', 'fee11a'], [131935, 'TOR', 'Toronto', 'Tempo', '33476d', '7b1b38'], [16, 'WSH', 'Washington', 'Mystics', 'e03a3e', '002b5c']]);
+const FALLBACK_TEAMS = {nfl: NFL_TEAMS, nba: NBA_TEAMS, wnba: WNBA_TEAMS};
 async function loadTeams(){
   const sport = S.sport; let list = [];
   try {
@@ -2772,9 +3481,11 @@ async function loadTeams(){
       list = (j.teams || []).filter(t => t.active !== false).map(t => teamObj(mlbTeamOf(t)));
     } else {
       const j = await getJSON(`${API}/teams`).catch(() => null);
-      list = (j?.sports?.[0]?.leagues?.[0]?.teams || []).map(x => x.team).filter(t => t?.id && t.isActive !== false)
+      // teams with no logo are exhibition opponents (ESPN's NBA list includes one), not league teams
+      list = (j?.sports?.[0]?.leagues?.[0]?.teams || []).map(x => x.team).filter(t => t?.id && t.isActive !== false && t.logos?.length)
         .map(t => teamObj({...t, logo: (t.logos?.find(l => l.rel?.includes('default')) || t.logos?.[0])?.href}));
-      if (list.length < 32) list = NFL_TEAMS.map(t => teamObj(t));
+      const fb = FALLBACK_TEAMS[S.sport] || [];
+      if (list.length < fb.length) list = fb.map(t => teamObj(t));
     }
   } catch (e) { list = []; }
   if (sport !== S.sport) return;
@@ -2809,7 +3520,7 @@ function markLive(){
 }
 
 function openTeam(t){
-  t.kit ||= isMLB() ? kitMLB(t, true) : kit(t, true);
+  t.kit ||= kitFor(t, true);
   S.tview = {team: t}; renderTeams(); loadTeamData(t); loadRoster(t).then(() => { if (S.tview?.team === t) renderTeamPage(); });
 }
 // a team's season: every game (for the next game, live game and replays), season stats and news, from the same source as its games
@@ -2845,7 +3556,7 @@ async function loadTeamData(t){
     if (sport !== S.sport) return;
     const seen = new Set();
     for (const r of [s2, s3]) for (const ev of r.value?.events || []) {
-      if (!ev?.id || seen.has(String(ev.id))) continue; seen.add(String(ev.id));
+      if (!ev?.id || seen.has(String(ev.id)) || isTBD(ev)) continue; seen.add(String(ev.id));
       ev.id = String(ev.id); ev.status ||= ev.competitions?.[0]?.status; keep(ev);
     }
     D.record = s2.value?.team?.recordSummary || ''; D.standing = s2.value?.team?.standingSummary || '';
@@ -2854,7 +3565,7 @@ async function loadTeamData(t){
       if (!a.headline || !(a.categories || []).some(c => c.type === 'team' && String(c.teamId) === t.id)) continue;
       D.news.push({title: a.headline, date: a.published, url: a.links?.web?.href || ''});
     }
-    D.stats = nflSeasonTeam(st.value);
+    D.stats = espnSeasonTeam(st.value);
   }
   D.loading = false;
   if (S.tview?.team === t) renderTeamPage();
@@ -2862,13 +3573,20 @@ async function loadTeamData(t){
 const NFL_SEASON_TEAM = [['OFFENSE', [['scoring', 'totalPointsPerGame', 'Points/game'], ['passing', 'netPassingYardsPerGame', 'Pass yds/game'], ['rushing', 'rushingYardsPerGame', 'Rush yds/game'], ['passing', 'passingTouchdowns', 'Pass TD'], ['rushing', 'rushingTouchdowns', 'Rush TD'], ['passing', 'QBRating', 'QB rating'], ['miscellaneous', 'thirdDownConvPct', '3rd down %']]],
   ['DEFENSE', [['defensive', 'sacks', 'Sacks'], ['defensive', 'totalTackles', 'Tackles'], ['defensiveInterceptions', 'interceptions', 'Interceptions'], ['general', 'fumblesRecovered', 'Fumbles recovered']]],
   ['TURNOVERS AND PENALTIES', [['miscellaneous', 'totalTakeaways', 'Takeaways'], ['miscellaneous', 'totalGiveaways', 'Giveaways'], ['miscellaneous', 'turnOverDifferential', 'Turnover margin'], ['miscellaneous', 'totalPenaltyYards', 'Penalty yds']]]];
-function nflSeasonTeam(j){
+const BB_SEASON_TEAM = [['SCORING', [['offensive', 'avgPoints', 'Points/game'], ['offensive', 'fieldGoalPct', 'FG %'], ['offensive', 'threePointFieldGoalPct', '3PT %'], ['offensive', 'freeThrowPct', 'FT %'], ['offensive', 'avgAssists', 'Assists/game'], ['offensive', 'avgTurnovers', 'Turnovers/game']]],
+  ['DEFENSE AND BOARDS', [['general', 'avgRebounds', 'Rebounds/game'], ['offensive', 'avgOffensiveRebounds', 'Off reb/game'], ['defensive', 'avgDefensiveRebounds', 'Def reb/game'], ['defensive', 'avgSteals', 'Steals/game'], ['defensive', 'avgBlocks', 'Blocks/game']]]];
+// a team's season numbers from ESPN; basketball shows the first numbers of each group if the picks above aren't there
+function espnSeasonTeam(j){
   const cats = j?.results?.stats?.categories; if (!cats?.length) return null;
   const val = (c, n) => cats.find(x => String(x.name).toLowerCase() === c.toLowerCase())?.stats?.find(x => x.name === n)?.displayValue;
   let h = '';
-  for (const [label, keys] of NFL_SEASON_TEAM) {
+  for (const [label, keys] of isBB() ? BB_SEASON_TEAM : NFL_SEASON_TEAM) {
     const items = keys.map(([c, n, l]) => [l, val(c, n)]).filter(([, v]) => v != null);
     if (items.length) h += `<div class="muted">${label}</div><div class="kv">` + items.map(([l, v]) => `<span>${esc(l)}</span><span>${esc(v)}</span>`).join('') + '</div>';
+  }
+  if (!h && isBB()) for (const c of cats) {
+    const items = (c.stats || []).filter(x => x.displayValue != null).slice(0, 8);
+    if (items.length) h += `<div class="muted">${esc(String(c.displayName || c.name || '').toUpperCase())}</div><div class="kv">` + items.map(x => `<span>${esc(x.displayName || x.abbreviation || x.name)}</span><span>${esc(x.displayValue)}</span>`).join('') + '</div>';
   }
   return h || null;
 }
@@ -2933,8 +3651,7 @@ function renderTeamPage(){
   else h += `<div class="muted">${D.loading ? 'Loading games...' : 'No finished games this season yet.'}</div>`;
   h += `<h5>SEASON STATS</h5>` + (D.stats || `<div class="muted">${D.loading ? 'Loading stats...' : 'No season stats yet.'}</div>`);
   const all = S.roster[t.id]?.all;
-  const groups = isMLB() ? [...new Set((all || []).map(p => p.side))].sort((a, b) => MLB_GROUPS.indexOf(a) - MLB_GROUPS.indexOf(b)).map(x => [x, x])
-    : [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
+  const groups = rosterGroups(all || []);
   if (!all) h += `<h5>ROSTER</h5><div class="muted">Loading roster...</div>`;
   else if (!all.length) h += `<h5>ROSTER</h5><div class="muted">Roster not available.</div>`;
   for (const [key, label] of all ? groups : []) {
@@ -2955,7 +3672,9 @@ function renderTeamPage(){
 /* ================= notices ================= */
 function hideBanner(){ $('banner').hidden = true; }
 function showTimeout(p){
-  const m = (p.text || '').match(/by ([A-Z]{2,3})\b/), tm = m ? teamByAbbr(m[1]) : null;
+  const m = (p.text || '').match(/by ([A-Z]{2,3})\b/);
+  // basketball names the team ("Celtics Full timeout")
+  const tm = (m ? teamByAbbr(m[1]) : null) || (isBB() ? [S.home, S.away].find(t => t && (p.text || '').includes(t.nick)) || teamOfId(p.team?.id) : null);
   const n = (p.text || '').match(/#(\d)/);
   $('banner-sub').textContent = tm ? `${tm.nick.toUpperCase()}${n ? ' · TIMEOUT #' + n[1] : ''}` : (/official|tv/i.test(p.text || '') ? 'OFFICIAL TIMEOUT' : '');
   $('banner').hidden = false;
@@ -2998,10 +3717,11 @@ $('btn-start').onclick = () => {
 async function neutralField(){
   S.home = {id: 'h', abbr: 'HOME', nick: 'Home', loc: 'Home', color: '#1f3c88', alt: '#f7c948'};
   S.away = {id: 'a', abbr: 'AWAY', nick: 'Away', loc: 'Away', color: '#a8321f', alt: '#ffffff'};
-  S.home.kit = isMLB() ? kitMLB(S.home, true) : kit(S.home, true); S.away.kit = isMLB() ? kitMLB(S.away, false) : kit(S.away, false);
+  S.home.kit = kitFor(S.home, true); S.away.kit = kitFor(S.away, false);
   await (document.fonts?.load('8px "Press Start 2P"').catch(() => {}));
   buildField();
   if (isMLB()) { S.lineup = {}; mlbReset(); S.actors = mlbFormation(S.mlb); }
+  else if (isBB()) { S.bb = null; bbReset(); bbRest(false); }
   else { S.actors = makeFormation(S.home, S.away, 50, 'rush'); S.cam = 50; S.ball.x = 50; S.ball.y = MIDY; S.ball.h = 0; }
 }
 async function openSport(){
@@ -3030,11 +3750,11 @@ async function switchSport(sp){
   await neutralField(); if (sp !== S.sport) return;
   setBoard(); openSport();
 }
-$('sport-nfl').onclick = () => switchSport('nfl');
-$('sport-mlb').onclick = () => switchSport('mlb');
+for (const k of Object.keys(SPORTS)) $('sport-' + k).onclick = () => switchSport(k);
 
 (async function boot(){
-  if (/^#mlb$/i.test(location.hash)) { S.sport = 'mlb'; API = SPORTS.mlb.api; SITE = SPORTS.mlb.site; }
+  const h = location.hash.slice(1).toLowerCase();
+  if (SPORTS[h]) { S.sport = h; API = SPORTS[h].api; SITE = SPORTS[h].site; }
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));
   setBadge(); $('feedsrc').textContent = SPORTS[S.sport].src; setCredits();
   renderTeams(); loadTeams();

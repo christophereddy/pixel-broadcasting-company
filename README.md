@@ -4,7 +4,7 @@ A pixel-art TV channel that runs around the clock, served by GitHub Pages at
 https://christophereddy.github.io/pixel-broadcasting-company/. It has two channels with a NEWS | SPORTS switch at the top.
 
 - **News** (`index.html`): a pixel newsroom with a cast of reporters reading the day's world, national, local, business, science and sports news and the weather, from data that Claude refreshes every 3 hours.
-- **Sports** (`sports/index.html`): Pixel Sports Live, live NFL and MLB games animated from play-by-play data (ESPN for football, MLB's own Stats API for baseball), fetched by the viewer's browser.
+- **Sports** (`sports/index.html`): Pixel Sports Live, live NFL, NBA, WNBA and MLB games animated from play-by-play data (ESPN for football and basketball, MLB's own Stats API for baseball), fetched by the viewer's browser.
 
 ## What lives where
 
