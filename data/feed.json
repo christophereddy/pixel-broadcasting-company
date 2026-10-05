@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-05T19:08:00Z",
+ "updatedAt": "2026-10-05T22:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -341,12 +341,6 @@
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 72,
-    "text": "Mostly sunny, with a high near 72. Northwest wind around 16 mph, with gusts as high as 30 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
     "temp": 50,
@@ -375,6 +369,12 @@
     "kind": "low",
     "temp": 58,
     "text": "Mostly clear, with a low around 58."
+   },
+   {
+    "name": "Thursday",
+    "kind": "high",
+    "temp": 73,
+    "text": "Sunny, with a high near 73."
    }
   ]
  },

@@ -28,12 +28,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 78,
-     "text": "Mostly cloudy, with a high near 78. East wind 5 to 10 mph, with gusts as high as 15 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
@@ -62,6 +56,12 @@
      "kind": "low",
      "temp": 56,
      "text": "Mostly clear, with a low around 56."
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 84,
+     "text": "Sunny, with a high near 84."
     }
    ]
   },
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -110,12 +110,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. West wind around 15 mph, with gusts as high as 28 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
@@ -144,6 +138,12 @@
      "kind": "low",
      "temp": 53,
      "text": "Mostly clear, with a low around 53. Southwest wind around 9 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 71,
+     "text": "Sunny, with a high near 71. Southwest wind 8 to 11 mph. "
     }
    ]
   },
@@ -159,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -243,7 +243,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -333,7 +333,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -436,7 +436,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -511,12 +511,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 72,
-     "text": "Mostly sunny, with a high near 72. Northwest wind around 16 mph, with gusts as high as 30 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
@@ -545,6 +539,12 @@
      "kind": "low",
      "temp": 58,
      "text": "Mostly clear, with a low around 58."
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Sunny, with a high near 73."
     }
    ]
   },
@@ -560,7 +560,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -620,7 +620,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "goodnews": []
  },
  {
@@ -683,7 +683,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T19:08:00Z",
+  "updatedAt": "2026-10-05T22:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
