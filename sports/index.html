@@ -1255,8 +1255,10 @@ const IN_PLAY = ['single', 'double', 'triple', 'hr', 'groundout', 'flyout', 'lin
 function clausesOf(tx){ return tx.replace(/\([^)]*\)/g, '').split(/\s*[,;]\s*|\s+and\s+(?=[A-Z])/).map(s => s.trim().replace(/\.$/, '')).filter(Boolean); }
 const RUNNER_RE = /^(.*?)\s+(scored|to (first|second|third|home)|advanced to (second|third|home)|out at (first|second|third|home)|thrown out at (first|second|third|home)|out stretching at (second|third|home)|stole (second|third|home)|caught stealing (second|third|home)|picked off(?: at| of)? (first|second|third))\b/i;
 function classifyMLB(p){
-  const tx = (p.text || '').trim(), ty = (p.type?.text || '').trim(), t = tx || ty;
+  // ESPN writes pitches as "Pitch 3 : Strike 2 Swinging"; the at-bat result follows as its own play
+  const tx = (p.text || '').trim().replace(/^pitch \d+\s*:\s*/i, ''), ty = (p.type?.text || '').trim(), t = tx || ty;
   if (!t) return {kind: 'admin'};
+  if (/ pitches to /i.test(t)) return {kind: 'admin', atbat: true};
   if (/^(top|bottom|middle|mid|end|start|beginning)\b/i.test(t) && /\b\d+(st|nd|rd|th)\b|inning/i.test(t)) return {kind: 'admin'};
   if (PITCH_RE.test(t) || (!tx && PITCH_RE.test(ty))) {
     const l = t.toLowerCase();
@@ -1737,7 +1739,7 @@ async function runPlayMLB(p, fast, tok){
     await sleep(S.voices ? 150 : 450);
     return;
   }
-  const pbp = speechText(p.text || p.type?.text || '');
+  const pbp = speechText(p.text || ''); // ESPN's empty "End Batter/Pitcher" markers stay silent
   if (pbp) await say('A', pbp, tok);
   if (tok !== S.token) return;
   const col = colorLineMLB(p, o);
@@ -1923,6 +1925,7 @@ function applyState(p, plan){
   S.fdX = S.down && S.toGo != null && S.toGo < 30 ? clamp(S.ball.x + S.offDir * S.toGo, 0, 100) : null;
 }
 function addLog(p){
+  if (isMLB() && !(p.text || '').trim()) return; // skip ESPN's empty end-of-at-bat markers
   const log = $('log'); log.querySelector('.empty')?.remove();
   const li = document.createElement('li'); if (p.scoringPlay) li.className = 'score';
   const mlb = isMLB(), o = mlb ? (p._o || (p._o = outcomeMLB(p))) : null;
@@ -2011,8 +2014,8 @@ function playsOf(summary){
   const out = [], seen = new Set();
   if (isMLB()) {
     // baseball summaries list every pitch and play in one array
+    // keep ESPN's order: baseball sequenceNumbers restart with every at-bat, so sorting by them scrambles the game
     for (const p of summary.plays || []) { if (!p || p.id == null || seen.has(p.id)) continue; seen.add(p.id); out.push(p); }
-    out.sort((a, b) => Number(a.sequenceNumber || 0) - Number(b.sequenceNumber || 0));
     return out;
   }
   const dr = summary.drives || {};
