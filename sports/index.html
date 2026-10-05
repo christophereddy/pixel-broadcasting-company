@@ -544,8 +544,8 @@ const isHomeId = id => S.home && String(id) === S.home.id;
 const xOf = (teamId, yte) => isHomeId(teamId) ? 100 - yte : yte;
 // football: x in yards along the field, y in yards across it. Baseball: feet, see the MLB section.
 // basketball: feet on a court that fits the screen, see the basketball section
-const sxOf = x => isBB() ? Math.round(bcx(x)) : isMLB() ? Math.round(mcx(x) - (S.camX - W / 2)) : Math.round((x - S.cam) * PX + W / 2);
-const syOf = y => isBB() ? Math.round(bcy(y)) : isMLB() ? Math.round(mcy(y) - (S.camY - H / 2)) : Math.round(FT + clamp(y, -1, 54.3) * SY);
+const sxOf = x => isBB() ? Math.round(bcx(x) - (S.camX - W / 2)) : isMLB() ? Math.round(mcx(x) - (S.camX - W / 2)) : Math.round((x - S.cam) * PX + W / 2);
+const syOf = y => isBB() ? Math.round(bcy(y) - (S.camY - H / 2)) : isMLB() ? Math.round(mcy(y) - (S.camY - H / 2)) : Math.round(FT + clamp(y, -1, 54.3) * SY);
 
 /* ================= the fixed art: field ================= */
 function mulberry(a){ return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -1995,10 +1995,13 @@ function buildReplayMLB(plays){
 /* ================= basketball (NBA, WNBA) ================= */
 // Both leagues read ESPN's basketball feed with the same code; only the quarter length and the three-point line differ.
 // Court coordinates are in feet: x along the court (0 = left baseline, 94 = right), y across it (0 = far sideline,
-// 50 = near sideline). The whole court fits on screen, so there is no camera. The home team shoots at the right basket.
+// 50 = near sideline). Like the football field, the court is drawn once onto a big canvas and the camera follows the
+// ball. The home team shoots at the right basket.
 const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his'}, wnba: {q: 600, arc: 22.15, corner: 22, he: 'she', his: 'her'}};
 const lg = () => BBL[S.sport] || BBL.nba;
-const BC = {X0: 24, Y0: 100, KX: 4.6, KY: 3.06, HOOP: 5.25, RIM: 28};
+// The booth covers the top left of the screen and the scoreboard the top right, so the camera keeps the ball low and
+// a little right of center (BALL_SX, BALL_SY), and the arena around the court is wide enough for that at every edge.
+const BC = {X0: 300, Y0: 182, KX: 7.4, KY: 4.6, HOOP: 5.25, RIM: 34, CW: 1296, CH: 510, BALL_SX: 265, BALL_SY: 175};
 const bcx = x => BC.X0 + x * BC.KX, bcy = y => BC.Y0 + y * BC.KY;
 const hoopX = team => team === S.home ? 94 - BC.HOOP : BC.HOOP;   // the basket a team shoots at
 const attackDir = team => team === S.home ? 1 : -1;
@@ -2020,20 +2023,22 @@ const bbSide = pos => /^C(-|$)/.test(pos) ? 'CENTERS' : /^(F|SF|PF)/.test(pos) ?
 
 /* ---- the court ---- */
 function buildCourt(){
-  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const c = document.createElement('canvas'); c.width = BC.CW; c.height = BC.CH;
   const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
   const L = lg(), home = S.home, away = S.away;
-  g.fillStyle = '#0c0e1c'; g.fillRect(0, 0, W, H);
-  // the crowd behind the benches
+  g.fillStyle = '#0c0e1c'; g.fillRect(0, 0, BC.CW, BC.CH);
+  // stands all around; the floor and the court are painted over them
   const rnd = mulberry(1946); // fixed seed: the crowd never changes
   const crowd = ['#d9a066','#8f563b','#eec39a','#663931','#c9c9d6', home.color, home.alt, away.color, '#3f3f74', '#e7e1cc'];
-  g.fillStyle = '#1b1d33'; g.fillRect(0, 0, W, 66);
-  for (let y = 4; y < 62; y += 5) for (let x = (y / 5 % 2) * 2; x < W; x += 4) {
+  g.fillStyle = '#1b1d33'; g.fillRect(0, 0, BC.CW, BC.CH);
+  for (let y = 4; y < BC.CH; y += 5) for (let x = (y / 5 % 2) * 2; x < BC.CW; x += 4) {
     g.fillStyle = crowd[Math.floor(rnd() * crowd.length)]; g.fillRect(x, y, 3, 2);
     g.fillStyle = '#eec39a'; if (rnd() < 0.8) g.fillRect(x + 1, y - 1, 1, 1);
   }
-  // floor around the court
-  g.fillStyle = '#2a2433'; g.fillRect(0, 66, W, H - 66);
+  // floor around the court, with room for the benches and the scorer's table on the far side
+  const ax0 = Math.round(bcx(-7)), ax1 = Math.round(bcx(101)), ay0 = Math.round(bcy(-0)) - 52, ay1 = Math.round(bcy(56));
+  g.fillStyle = '#05060d'; g.fillRect(ax0 - 2, ay0 - 2, ax1 - ax0 + 4, ay1 - ay0 + 4);
+  g.fillStyle = '#2a2433'; g.fillRect(ax0, ay0, ax1 - ax0, ay1 - ay0);
   // hardwood
   const x0 = Math.round(bcx(0)), x1 = Math.round(bcx(94)), y0 = Math.round(bcy(0)), y1 = Math.round(bcy(50));
   for (let y = y0; y < y1; y++) { g.fillStyle = y % 4 < 2 ? '#c99a63' : '#c2915a'; g.fillRect(x0, y, x1 - x0, 1); }
@@ -2063,7 +2068,7 @@ function buildCourt(){
   }
   // the home team's logo at center court, and its name on both baselines
   const img = teamLogo(home);
-  if (img) { g.imageSmoothingEnabled = true; g.drawImage(img, Math.round(bcx(47)) - 11, Math.round(bcy(25)) - 11, 22, 22); g.imageSmoothingEnabled = false; }
+  if (img) { g.imageSmoothingEnabled = true; g.drawImage(img, Math.round(bcx(47)) - 16, Math.round(bcy(25)) - 16, 32, 32); g.imageSmoothingEnabled = false; }
   // benches: chairs in the team colors, and a HOME / AWAY sign with the logo
   g.font = '8px "Press Start 2P"'; g.textBaseline = 'middle'; g.textAlign = 'center';
   for (const t of [home, away]) {
@@ -2122,6 +2127,7 @@ function bbReset(){
   Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, run: {team: null, pts: 0, said: 0}, said: {}, holder: null});
   for (const t of [S.home, S.away]) if (t) st.on[t.id] = (st.starters[t.id] || []).slice(0, 5);
   S.ball.x = 47; S.ball.y = 25; S.ball.h = 0; S.ball.vis = true;
+  S.camX = bcx(47) + W / 2 - BC.BALL_SX; S.camY = bcy(25) + H / 2 - BC.BALL_SY;
 }
 // what a play is, from ESPN's play type, text and participants (in order: shooter or ball handler, then assister,
 // blocker, stealer or the player fouled; for substitutions, the player coming in and then the one going out)
@@ -2197,7 +2203,7 @@ function applyStateBB(p, plan){
 /* ---- formations ---- */
 // rank players so guards bring the ball up and centers play the post
 const bbRank = id => { const pos = bbPerson(id)?.pos || ''; return /^(PG|G)$/.test(pos) ? 0 : /^(SG|G-F)$/.test(pos) ? 1 : /^(SF|F|F-G)$/.test(pos) ? 2 : /^(PF|F-C)$/.test(pos) ? 3 : /^C/.test(pos) ? 4 : 2; };
-// feet out from the basket, feet across; nobody sets up along the far sideline, where the booth covers the left end
+// feet out from the basket, feet across; kept off the far sideline, which sits under the booth when the camera is high
 const OFF_SLOTS = [[23, 25], [17, 18], [18, 39], [3, 45], [6, 31]];
 function bbLooks(id){
   const st = S.bb; if (!st || !id || /-\d$/.test(id)) return null;
@@ -2631,9 +2637,14 @@ function step(now){
   S.lastNow = now;
   if (S.actors.some(p => p.gone)) S.actors = S.actors.filter(p => !p.gone); // back in the dugout
   if (isBB()) {
-    // the whole court is on screen; between plays the ball handler dribbles
+    // between plays the ball handler dribbles; the camera follows the ball, like football's
     const h = !S.anim && S.bb?.holder;
     if (h && S.actors.includes(h)) { S.ball.x = h.x + 0.7; S.ball.y = h.y + 0.3; S.ball.h = h.moving ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
+    // across the court, aim between the ball and the basket the offense is attacking, so the half court stays in view
+    const b = S.ball, poss = S.bb?.poss, aimX = poss && !S.bb.huddle && !S.bb.tip ? b.x + (hoopX(poss) - b.x) * 0.4 : b.x;
+    const tx = bcx(clamp(aimX, -4, 98)) + W / 2 - BC.BALL_SX, ty = bcy(clamp(b.y, -4, 54)) - Math.max(0, b.h) * 0.5 + H / 2 - BC.BALL_SY;
+    S.camX = clamp((S.camX ?? tx) + (tx - S.camX) * (S.anim ? 0.09 : 0.05), W / 2, BC.CW - W / 2);
+    S.camY = clamp((S.camY ?? ty) + (ty - S.camY) * (S.anim ? 0.09 : 0.05), H / 2, BC.CH - H / 2);
   } else if (isMLB()) {
     // the camera sits on the infield and goes with the ball when it's hit deep
     const b = S.ball, follow = S.anim && S.ballSeg !== 'spot' && (b.y > 150 || Math.abs(b.x) > 110);
@@ -2654,7 +2665,7 @@ const ctx = $('field').getContext('2d'); ctx.imageSmoothingEnabled = false;
 function render(now){
   ctx.fillStyle = '#0c0e1c'; ctx.fillRect(0, 0, W, H);
   if (isBB()) {
-    if (S.field) ctx.drawImage(S.field, 0, 0);
+    if (S.field) ctx.drawImage(S.field, Math.round(S.camX - W / 2), Math.round(S.camY - H / 2), W, H, 0, 0, W, H);
     for (const a of [...S.actors].sort((a, b) => a.y - b.y)) drawPlayer(ctx, a);
     if (S.mode) drawBall(ctx);
     drawBooth(now);
