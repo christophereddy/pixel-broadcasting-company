@@ -1999,17 +1999,17 @@ function buildReplayMLB(plays){
 // ball. The home team shoots at the right basket.
 const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his'}, wnba: {q: 600, arc: 22.15, corner: 22, he: 'she', his: 'her'}};
 const lg = () => BBL[S.sport] || BBL.nba;
-// The booth covers the top left of the screen and the scoreboard the top right, so the camera keeps the ball low and
-// a little right of center (BALL_SX, BALL_SY), and the arena around the court is wide enough for that at every edge.
-const BC = {X0: 300, Y0: 182, KX: 7.4, KY: 4.6, HOOP: 5.25, RIM: 34, CW: 1296, CH: 510, BALL_SX: 265, BALL_SY: 175};
+// Like football, the camera only pans left and right with the ball. The court sits low, so its far sideline is just
+// under the booth and the scoreboard, and the benches line the bottom of the screen.
+const BC = {X0: 260, Y0: 126, KX: 7.4, KY: 2.6, HOOP: 5.25, RIM: 34, CW: 1216, CH: 270};
 const bcx = x => BC.X0 + x * BC.KX, bcy = y => BC.Y0 + y * BC.KY;
 const hoopX = team => team === S.home ? 94 - BC.HOOP : BC.HOOP;   // the basket a team shoots at
 const attackDir = team => team === S.home ? 1 : -1;
 const otherTeam = t => t === S.home ? S.away : t === S.away ? S.home : null;
 const teamOfId = id => id == null ? null : isHomeId(id) ? S.home : S.away?.id === String(id) ? S.away : null;
 const RIM_BALL = BC.RIM - 9;   // the ball's height (drawBall) when it is at the rim
-// benches sit along the far sideline, home to the left of the scorer's table, visitors to the right
-const benchSpot = (team, i) => [(team === S.home ? 29.5 : 51) + (i % 7) * 2.2, -3];
+// benches sit along the near sideline (the far one is under the booth), home on the left, visitors on the right
+const benchSpot = (team, i) => [(team === S.home ? 29.5 : 51) + (i % 7) * 2.2, 54];
 
 function kitBB(team, isHome){
   const c = team.color, a = team.alt;
@@ -2035,8 +2035,8 @@ function buildCourt(){
     g.fillStyle = crowd[Math.floor(rnd() * crowd.length)]; g.fillRect(x, y, 3, 2);
     g.fillStyle = '#eec39a'; if (rnd() < 0.8) g.fillRect(x + 1, y - 1, 1, 1);
   }
-  // floor around the court, with room for the benches and the scorer's table on the far side
-  const ax0 = Math.round(bcx(-7)), ax1 = Math.round(bcx(101)), ay0 = Math.round(bcy(-0)) - 52, ay1 = Math.round(bcy(56));
+  // floor around the court, with room for the benches on the near side
+  const ax0 = Math.round(bcx(-7)), ax1 = Math.round(bcx(101)), ay0 = Math.round(bcy(-3)), ay1 = BC.CH;
   g.fillStyle = '#05060d'; g.fillRect(ax0 - 2, ay0 - 2, ax1 - ax0 + 4, ay1 - ay0 + 4);
   g.fillStyle = '#2a2433'; g.fillRect(ax0, ay0, ax1 - ax0, ay1 - ay0);
   // hardwood
@@ -2072,19 +2072,20 @@ function buildCourt(){
   // benches: chairs in the team colors, and a HOME / AWAY sign with the logo
   g.font = '8px "Press Start 2P"'; g.textBaseline = 'middle'; g.textAlign = 'center';
   for (const t of [home, away]) {
-    const [bx] = benchSpot(t, 0), sx = Math.round(bcx(bx)) - 6, sw = Math.round(6 * 2.2 * BC.KX) + 12, by = Math.round(bcy(-3));
-    g.fillStyle = '#05060d'; g.fillRect(sx, by - 14, sw, 9);
-    g.fillStyle = t.color; for (let i = 0; i < 7; i++) g.fillRect(Math.round(bcx(bx + i * 2.2)) - 3, by - 13, 7, 6);
-    g.fillStyle = t.alt; g.fillRect(sx, by - 6, sw, 1);
-    g.fillStyle = '#05060d'; g.fillRect(sx, by - 30, sw, 13); g.fillStyle = t.color; g.fillRect(sx + 1, by - 29, sw - 2, 11);
+    // the chairs along the bottom of the screen, the sign on the floor between them and the sideline
+    const [bx, bny] = benchSpot(t, 0), sx = Math.round(bcx(bx)) - 6, sw = Math.round(6 * 2.2 * BC.KX) + 12, by = Math.round(bcy(bny)), sy = Math.round(bcy(50)) + 1;
+    g.fillStyle = '#05060d'; g.fillRect(sx, by - 3, sw, BC.CH - by + 3);
+    g.fillStyle = t.color; for (let i = 0; i < 7; i++) g.fillRect(Math.round(bcx(bx + i * 2.2)) - 3, by - 2, 7, BC.CH - by + 2);
+    g.fillStyle = t.alt; g.fillRect(sx, by - 3, sw, 1);
+    g.fillStyle = '#05060d'; g.fillRect(sx, sy, sw, 11); g.fillStyle = t.color; g.fillRect(sx + 1, sy + 1, sw - 2, 9);
     const lim = teamLogo(t);
-    if (lim) { g.imageSmoothingEnabled = true; g.drawImage(lim, sx + 2, by - 29, 11, 11); g.imageSmoothingEnabled = false; }
+    if (lim) { g.imageSmoothingEnabled = true; g.drawImage(lim, sx + 2, sy + 1, 9, 9); g.imageSmoothingEnabled = false; }
     const label = `${t === home ? 'HOME' : 'AWAY'} ${t.abbr}`, tx = sx + sw / 2 + (lim ? 6 : 0);
-    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, by - 22); g.fillStyle = '#f4f4ee'; g.fillText(label, tx, by - 23);
+    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, sy + 7); g.fillStyle = '#f4f4ee'; g.fillText(label, tx, sy + 6);
   }
   // scorer's table between the benches
-  const tx0 = Math.round(bcx(45)), tx1 = Math.round(bcx(49));
-  g.fillStyle = '#05060d'; g.fillRect(tx0, Math.round(bcy(-3)) - 12, tx1 - tx0, 10); g.fillStyle = '#f2b632'; g.fillRect(tx0, Math.round(bcy(-3)) - 12, tx1 - tx0, 1);
+  const tx0 = Math.round(bcx(45)), tx1 = Math.round(bcx(49)), ty0 = Math.round(bcy(52));
+  g.fillStyle = '#05060d'; g.fillRect(tx0, ty0, tx1 - tx0, BC.CH - ty0); g.fillStyle = '#f2b632'; g.fillRect(tx0, ty0, tx1 - tx0, 1);
   // the baskets: stanchion, backboard, rim and net, standing on the baseline
   for (const s of [1, -1]) {
     const fx = s > 0 ? 0 : 94, bx = Math.round(bcx(fx + s * 4)), rx = Math.round(bcx(s > 0 ? BC.HOOP : 94 - BC.HOOP)), fy = Math.round(bcy(25)), ry = fy - BC.RIM;
@@ -2127,7 +2128,7 @@ function bbReset(){
   Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, run: {team: null, pts: 0, said: 0}, said: {}, holder: null});
   for (const t of [S.home, S.away]) if (t) st.on[t.id] = (st.starters[t.id] || []).slice(0, 5);
   S.ball.x = 47; S.ball.y = 25; S.ball.h = 0; S.ball.vis = true;
-  S.camX = bcx(47) + W / 2 - BC.BALL_SX; S.camY = bcy(25) + H / 2 - BC.BALL_SY;
+  S.camX = bcx(47); S.camY = H / 2;
 }
 // what a play is, from ESPN's play type, text and participants (in order: shooter or ball handler, then assister,
 // blocker, stealer or the player fouled; for substitutions, the player coming in and then the one going out)
@@ -2249,8 +2250,11 @@ function bbFormation(offIn, mode, first){
 }
 function bbRest(walk){
   const st = S.bb; if (!st) return;
-  const F = bbFormation();
-  const holderOf = list => (!st.loose && !st.huddle && !st.tip && st.poss) ? list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
+  // in a replay the next play is known, so the players head to where it starts instead of a stock formation
+  const nx = walk && S.mode === 'replay' && !st.huddle ? S.queue[0] : null, set = nx && bbSetup(nx);
+  const F = set ? set.F : bbFormation();
+  const holderOf = list => set ? (set.holder && !st.loose ? list.find(a => a.team === set.holder.team && a.pid === set.holder.pid && !a.leaving) || null : null)
+    : (!st.loose && !st.huddle && !st.tip && st.poss) ? list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
   if (!walk || !S.actors.length) {
     S.actors = F; st.holder = holderOf(F);
     if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
@@ -2286,10 +2290,12 @@ function bbSpot(p, team){
   if (!Number.isFinite(x) || !Number.isFinite(y) || x < -2 || x > 52 || y < -6 || y > 90) return null;
   return [hoopX(team) - attackDir(team) * y, team === S.home ? x : 50 - x];
 }
-function planBB(p){
+// Where everyone stands as play p begins: the formation, with the players in the play already moving toward it
+// (the shooter toward the shot, the rebounder toward the ball). planBB starts the play from here, and in replays,
+// where the next play is known, the players walk here while the last play is talked over, so nobody jumps.
+function bbSetup(p){
   const k = p._k || (p._k = classifyBB(p)), st = S.bb;
-  const plan = {kind: k.kind, k, dur: 0.4, sfx: [], segs: [], carrier: null, flag: null, static: false};
-  if (!st || !['shot', 'ft', 'reb', 'to', 'foul', 'jump'].includes(k.kind)) { plan.static = true; return plan; }
+  if (!st || !S.home || !['shot', 'ft', 'reb', 'to', 'foul', 'jump'].includes(k.kind)) return null;
   const off = k.kind === 'reb' ? (st.poss || k.team || S.home) : k.kind === 'foul' ? (k.offFoul ? k.team : otherTeam(k.team)) || st.poss || S.home : (k.team || st.poss || S.home);
   if (k.kind !== 'jump' && st.on && k.ids[0]) {
     // make sure the player in the play is on the floor (the box score's starters can be incomplete)
@@ -2297,6 +2303,42 @@ function planBB(p){
     if (on && !on.includes(k.ids[0])) { if (on.length >= 5) on.shift(); on.push(k.ids[0]); }
   }
   const F = bbFormation(off, k.kind === 'ft' ? 'ft' : k.kind === 'jump' ? 'tip' : 'play', k.kind === 'ft' ? k.ids[0] : null);
+  const who = id => id ? F.find(a => a.pid === String(id)) : null;
+  const pg = F.find(a => a.team === off && a.role === 'P0');
+  const toward = (a, x, y, f) => { if (a) { a.x += (x - a.x) * f; a.y += (y - a.y) * f; a.lx = a.x; a.ly = a.y; } };
+  const hx = hoopX(off), d = attackDir(off), r = hash(p.id);
+  let spot = null, holder = null;
+  if (k.kind === 'shot') {
+    const sh = who(k.ids[0]) || pg;
+    spot = bbSpot(p, off);
+    if (!spot) {
+      const dist = k.feet ?? (k.dunk || k.layup ? 2 : k.three ? 24 : 12), ang = ((r % 140) - 70) * Math.PI / 180;
+      spot = [hx - d * dist * Math.cos(ang), clamp(25 + dist * Math.sin(ang), 1, 49)];
+    }
+    if (k.dunk || k.layup) spot = [hx - d * (k.dunk ? 1.2 : 2.5), 25 + (r % 2 ? 2 : -2)];
+    // the shooter works most of the way to the shot; a drive still starts a step or two out
+    toward(sh, spot[0], spot[1], k.dunk || k.layup ? 0.5 : 0.75);
+    const as = who(k.assist);
+    holder = as && as !== sh ? as : sh;
+  } else if (k.kind === 'reb') {
+    const rb = who(k.ids[0]); toward(rb, S.ball.x, S.ball.y, 0.5);
+  } else if (k.kind === 'to') {
+    const h = who(k.ids[0]) || pg, stl = who(k.steal);
+    if (stl && h) toward(stl, h.x, h.y, 0.4);
+    holder = h;
+  } else if (k.kind === 'foul') {
+    const fo = who(k.ids[0]), vi = who(k.ids[1]) || pg;
+    if (fo && vi && fo.team !== vi.team) toward(fo, vi.x, vi.y, 0.5);
+    holder = vi;
+  } else if (k.kind === 'ft') holder = who(k.ids[0]) || pg;
+  return {k, off, F, spot, holder};
+}
+function planBB(p){
+  const k = p._k || (p._k = classifyBB(p)), st = S.bb;
+  const plan = {kind: k.kind, k, dur: 0.4, sfx: [], segs: [], carrier: null, flag: null, static: false};
+  const set = bbSetup(p);
+  if (!set) { plan.static = true; return plan; }
+  const {off, F} = set;
   const used = new Set();
   const starts = F.map(a => {
     const prev = S.actors.find(b => !used.has(b) && b.team === a.team && b.pid === a.pid);
@@ -2330,13 +2372,7 @@ function planBB(p){
   };
   let tEnd = 1;
   if (k.kind === 'shot') {
-    const sh = who(k.ids[0]) || pg;
-    let spot = bbSpot(p, off);
-    if (!spot) {
-      const dist = k.feet ?? (k.dunk || k.layup ? 2 : k.three ? 24 : 12), ang = ((r % 140) - 70) * Math.PI / 180;
-      spot = [hx - d * dist * Math.cos(ang), clamp(25 + dist * Math.sin(ang), 1, 49)];
-    }
-    if (k.dunk || k.layup) spot = [hx - d * (k.dunk ? 1.2 : 2.5), 25 + (r % 2 ? 2 : -2)];
+    const sh = who(k.ids[0]) || pg, spot = set.spot;
     const as = who(k.assist);
     let tShot = 0.9;
     if (as && as !== sh) {
@@ -2628,8 +2664,10 @@ function step(now){
       p.swinging = false;
       if (p.tx == null) { p.frame = 0; p.moving = false; continue; }
       const dx = p.tx - p.x, dy = p.ty - p.y, d = Math.hypot(dx, dy);
-      if (d < 0.05) { p.x = p.tx; p.y = p.ty; p.tx = null; p.frame = 0; p.entering = false; if (p.leaving) p.gone = true; continue; }
-      const sp = Math.min(d, (p.walkSpeed || 2.5) * dt);
+      if (d < 0.05) { p.x = p.tx; p.y = p.ty; p.tx = null; p.frame = 0; p.spd = 0; p.entering = false; if (p.leaving) p.gone = true; continue; }
+      let sp = Math.min(d, (p.walkSpeed || 2.5) * dt);
+      // basketball players pick up speed and ease into their spot
+      if (isBB()) { const top = p.walkSpeed || 10; p.spd = Math.min(top, 1.5 + d * 2.5, (p.spd || 0) + top * 2.5 * dt); sp = Math.min(d, p.spd * dt); }
       p.x += dx / d * sp; p.y += dy / d * sp; p.lx = p.x; p.ly = p.y;
       p.frame = Math.floor(now / 200) % 2; p.moving = true;
     }
@@ -2640,11 +2678,11 @@ function step(now){
     // between plays the ball handler dribbles; the camera follows the ball, like football's
     const h = !S.anim && S.bb?.holder;
     if (h && S.actors.includes(h)) { S.ball.x = h.x + 0.7; S.ball.y = h.y + 0.3; S.ball.h = h.moving ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
-    // across the court, aim between the ball and the basket the offense is attacking, so the half court stays in view
-    const b = S.ball, poss = S.bb?.poss, aimX = poss && !S.bb.huddle && !S.bb.tip ? b.x + (hoopX(poss) - b.x) * 0.4 : b.x;
-    const tx = bcx(clamp(aimX, -4, 98)) + W / 2 - BC.BALL_SX, ty = bcy(clamp(b.y, -4, 54)) - Math.max(0, b.h) * 0.5 + H / 2 - BC.BALL_SY;
-    S.camX = clamp((S.camX ?? tx) + (tx - S.camX) * (S.anim ? 0.09 : 0.05), W / 2, BC.CW - W / 2);
-    S.camY = clamp((S.camY ?? ty) + (ty - S.camY) * (S.anim ? 0.09 : 0.05), H / 2, BC.CH - H / 2);
+    // the camera pans left and right with the ball; the court's full width is always on screen
+    // and stops with each baseline a little in from the edge of the screen
+    const tx = clamp(bcx(S.ball.x), bcx(0) - 70 + W / 2, bcx(94) + 70 - W / 2);
+    S.camX = clamp((S.camX ?? tx) + (tx - S.camX) * Math.min(1, 0.06 + (S.anim ? 0.05 : 0.02)), W / 2, BC.CW - W / 2);
+    S.camY = H / 2;
   } else if (isMLB()) {
     // the camera sits on the infield and goes with the ball when it's hit deep
     const b = S.ball, follow = S.anim && S.ballSeg !== 'spot' && (b.y > 150 || Math.abs(b.x) > 110);
