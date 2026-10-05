@@ -96,7 +96,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .vs{font-family:var(--display);font-size:13px;color:var(--dim)}
 .tcard{display:grid;justify-items:center;gap:3px;padding:8px 4px;background:var(--panel-2);border:2px solid var(--edge);min-width:0}
 .tcard:hover,.tcard[aria-pressed="true"]{border-color:var(--gold)}
-.tcard canvas{width:64px;height:56px;image-rendering:pixelated;image-rendering:crisp-edges}
+.tcard canvas{width:64px;height:64px;image-rendering:pixelated;image-rendering:crisp-edges}
 .tcard .tn{font-family:var(--display);font-size:13px}
 .tcard .tr{font-size:16px;color:var(--dim)}
 .tcard .ts{font-family:var(--display);font-size:21px;color:var(--gold)}
@@ -133,6 +133,24 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .game .s{font-size:17px;color:var(--dim);text-align:right}
 .game .s.live{color:var(--live)}
 .side .none{padding:4px 12px;color:var(--dim);font-size:18px}
+/* team boxes: every team's logo; each opens that team's page */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px;padding:0 12px}
+.tbox{position:relative;display:grid;justify-items:center;gap:3px;padding:7px 2px 5px;background:var(--panel-2);border:2px solid var(--edge);min-width:0}
+.tbox:hover{border-color:var(--gold)}
+.tbox canvas{width:48px;height:48px;image-rendering:pixelated;image-rendering:crisp-edges}
+.tbox span{font-family:var(--display);font-size:10px}
+.tbox.live{border-color:var(--live)}
+.tbox.live::after{content:'LIVE';position:absolute;top:2px;right:2px;font-family:var(--display);font-size:7px;padding:1px 2px;background:var(--live);color:#fff}
+.tpage{padding:0 12px 6px}
+.thead{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px;align-items:center;margin:4px 0}
+.thead canvas{width:64px;height:64px;image-rendering:pixelated;image-rendering:crisp-edges}
+.thead .pn{font-family:var(--display);font-size:13px;line-height:1.5;color:var(--gold)}
+.thead .pm{font-size:17px;color:var(--dim)}
+.tpage .game{padding:5px 6px}
+.tpage .more{margin-top:6px}
+.news a{display:block;padding:4px 0;border-bottom:1px dashed #2a3060;color:var(--ink);text-decoration:none;font-size:18px;line-height:1.15}
+.news a:hover{color:var(--gold)}
+.news small{display:block;color:var(--dim);font-size:15px}
 .err{font-size:18px;color:#ff9aa5;padding:6px 12px}
 /* where the data comes from, like the newsroom's footer */
 #foot{grid-column:1/-1;color:var(--muted);font-size:17px;line-height:1.35}
@@ -229,11 +247,11 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   <aside class="side">
    <div class="panel" id="gamepanel">
     <h3>THIS GAME <span id="gp-state"></span></h3>
-    <div id="gp-empty" class="none">Pick a game from the list below.</div>
+    <div id="gp-empty" class="none">Pick a game or a team below.</div>
     <div class="teams" id="gp-teams" hidden>
-      <button class="tcard" id="tc-away" aria-label="Away team"><canvas width="32" height="28"></canvas><span class="tn"></span><span class="tr"></span><span class="ts"></span></button>
+      <button class="tcard" id="tc-away" aria-label="Away team"><canvas width="32" height="32"></canvas><span class="tn"></span><span class="tr"></span><span class="ts"></span></button>
       <div class="vs">@</div>
-      <button class="tcard" id="tc-home" aria-label="Home team"><canvas width="32" height="28"></canvas><span class="tn"></span><span class="tr"></span><span class="ts"></span></button>
+      <button class="tcard" id="tc-home" aria-label="Home team"><canvas width="32" height="32"></canvas><span class="tn"></span><span class="tr"></span><span class="ts"></span></button>
     </div>
     <div class="hint" id="gp-hint" hidden>Click a team for stats and roster.</div>
     <div class="detail" id="detail" hidden></div>
@@ -243,7 +261,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     <div id="err" class="err" hidden></div>
     <section><h4>LIVE NOW</h4><div id="list-live"></div></section>
     <section><h4>UP NEXT</h4><div id="list-next"></div></section>
-    <section><h4>RECENT FINALS</h4><div id="list-final"></div></section>
+    <section><h4>TEAMS</h4><div class="tgrid" id="teamgrid"></div><div class="tpage" id="teampage" hidden></div></section>
    </div>
   </aside>
   <footer id="foot"></footer>
@@ -255,9 +273,9 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 // football reads ESPN's feeds; baseball reads MLB's own (statsapi.mlb.com). The NFL and MLB tabs switch between them.
 const SPORTS = {
   nfl: {name: 'NFL', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
-    credits: [['Games, play-by-play, rosters, stats and headshots', 'ESPN', 'https://www.espn.com/nfl/']]},
+    credits: [['Games, play-by-play, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nfl/']]},
   mlb: {name: 'MLB', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
-    credits: [['Games, pitch-by-pitch play-by-play, rosters, stats, logos and headshots', 'MLB Stats API', 'https://statsapi.mlb.com'],
+    credits: [['Games, pitch-by-pitch play-by-play, team schedules, rosters, stats, logos, headshots and game recaps', 'MLB Stats API', 'https://statsapi.mlb.com'],
       ['Ballpark fence distances and wall heights', "each park's Wikipedia page", 'https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums']]}
 };
 // the footer says where this sport's data comes from
@@ -277,7 +295,7 @@ const QUIRK = {CLV:'CLE', ARZ:'ARI', BLT:'BAL', HST:'HOU', JAC:'JAX', SL:'LAR', 
 
 const S = {
   sport: 'nfl', events: new Map(), game: null, mode: null, home: null, away: null,
-  roster: {}, over: {}, seen: new Set(), queue: [], token: 0, pumping: null,
+  roster: {}, over: {}, seen: new Set(), teams: [], extra: new Map(), tview: null, tdata: {}, queue: [], token: 0, pumping: null,
   actors: [], ball: {x: 50, y: MIDY, h: 0, vis: true}, cam: 50, anim: null, flag: null,
   prevScore: {h: 0, a: 0}, sound: false, voices: false, started: false, speaking: null, field: null
 };
@@ -313,20 +331,25 @@ async function getJSON(url){
 function showErr(msg){ const e = $('err'); e.textContent = msg || ''; e.hidden = !msg; }
 const ymd = d => d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
 
+// a team in the shape the page uses. Team schedules leave out colors, so those come from the teams list.
+function teamObj(t, id){
+  const known = S.teams.find(x => x.id === String(t.id || id));
+  return {
+    id: String(t.id || id), abbr: t.abbreviation || known?.abbr || '???',
+    nick: t.shortDisplayName || t.name || known?.nick || t.abbreviation || 'Team',
+    loc: t.location || known?.loc || t.displayName || t.abbreviation || 'Team',
+    color: t.color ? '#' + t.color : known?.color || '#334477', alt: t.alternateColor ? '#' + t.alternateColor : known?.alt || '#ffffff',
+    logo: t.logo || t.logos?.[0]?.href || known?.logo || ''
+  };
+}
+// scoreboards give a score as text, team schedules as {value, displayValue}
+const scoreOf = x => x != null && typeof x === 'object' ? (x.displayValue ?? String(x.value ?? '')) : x;
 function teamsOf(ev){
   const c = ev.competitions[0], m = {};
-  for (const x of c.competitors) {
-    const t = x.team || {};
-    m[x.homeAway] = {
-      id: String(t.id || x.id), abbr: t.abbreviation || '???',
-      nick: t.shortDisplayName || t.name || t.abbreviation || 'Team',
-      loc: t.location || t.displayName || t.abbreviation || 'Team',
-      color: '#' + (t.color || '334477'), alt: '#' + (t.alternateColor || 'ffffff'), score: x.score,
-      logo: t.logo || t.logos?.[0]?.href || ''
-    };
-  }
+  for (const x of c.competitors) m[x.homeAway] = {...teamObj(x.team || {}, x.id), score: scoreOf(x.score)};
   return m;
 }
+const fullName = t => t.loc === t.nick ? t.nick : `${t.loc} ${t.nick}`;
 
 async function loadScoreboard(){
   if (isMLB()) return loadMLBGames();
@@ -375,25 +398,29 @@ async function loadMLBGames(){
   catch (e) { j = null; }
   if (!isMLB()) return false; // the viewer switched sports while this was loading
   if (!j) { showErr("Can't reach MLB's game data right now. Retrying every 30 seconds."); return false; }
-  for (const day of j.dates || []) for (const g of day.games || []) {
-    const ab = g.status?.abstractGameState, det = g.status?.detailedState || '';
-    if (/postponed|cancel|suspended/i.test(det)) continue;
-    const st = ab === 'Final' ? 'post' : ab === 'Live' ? 'in' : 'pre', ls = g.linescore || {};
-    const detail = st === 'in' ? (`${ls.inningState || ''} ${ls.currentInningOrdinal || ''}`.trim() || det) : st === 'post' ? (ls.currentInning > 9 ? `Final/${ls.currentInning}` : 'Final') : det;
-    const side = ha => {
-      const x = g.teams?.[ha] || {}, lr = x.leagueRecord;
-      return {homeAway: ha, team: mlbTeamOf(x.team), score: st === 'pre' ? '' : String(x.score ?? 0), records: lr ? [{summary: `${lr.wins}-${lr.losses}`}] : []};
-    };
-    const status = {type: {state: st, shortDetail: detail, detail: det}};
-    S.events.set(String(g.gamePk), {id: String(g.gamePk), date: g.gameDate, status,
-      competitions: [{competitors: [side('home'), side('away')], venue: {fullName: g.venue?.name || ''}, notes: [{headline: g.seriesDescription || ''}], status}]});
-  }
+  for (const day of j.dates || []) for (const g of day.games || []) { const ev = mlbEvent(g); if (ev) S.events.set(ev.id, ev); }
   showErr('');
   renderList();
   return true;
 }
+// one MLB schedule game, shaped like the game events the rest of the page uses (null for postponed games)
+function mlbEvent(g){
+  const ab = g.status?.abstractGameState, det = g.status?.detailedState || '';
+  if (/postponed|cancel|suspended/i.test(det)) return null;
+  const st = ab === 'Final' ? 'post' : ab === 'Live' ? 'in' : 'pre', ls = g.linescore || {};
+  const detail = st === 'in' ? (`${ls.inningState || ''} ${ls.currentInningOrdinal || ''}`.trim() || det) : st === 'post' ? (ls.currentInning > 9 ? `Final/${ls.currentInning}` : 'Final') : det;
+  const side = ha => {
+    const x = g.teams?.[ha] || {}, lr = x.leagueRecord;
+    return {homeAway: ha, team: mlbTeamOf(x.team), score: st === 'pre' ? '' : String(x.score ?? 0), records: lr ? [{summary: `${lr.wins}-${lr.losses}`}] : []};
+  };
+  const status = {type: {state: st, shortDetail: detail, detail: det}};
+  return {id: String(g.gamePk), date: g.gameDate, status, gameType: g.gameType,
+    competitions: [{competitors: [side('home'), side('away')], venue: {fullName: g.venue?.name || ''}, notes: [{headline: g.seriesDescription || ''}], status}]};
+}
 
 /* ================= game list ================= */
+// games from the scoreboard, or from a team's schedule (opened from its team page)
+const evOf = id => S.events.get(id) || S.extra.get(id);
 function stateOf(ev){ return ev.status?.type?.state || ev.competitions?.[0]?.status?.type?.state || 'pre'; }
 function gameLine(ev){
   const t = teamsOf(ev), st = stateOf(ev), stat = ev.status || ev.competitions[0].status || {};
@@ -411,7 +438,7 @@ function sortedGames(){
   return {live, next, fin};
 }
 function renderList(){
-  const {live, next, fin} = sortedGames();
+  const {live, next} = sortedGames();
   const fill = (el, arr, empty) => {
     el.replaceChildren();
     if (!arr.length) { const d = document.createElement('div'); d.className = 'none'; d.textContent = empty; el.append(d); return; }
@@ -425,8 +452,8 @@ function renderList(){
     }
   };
   fill($('list-live'), live, `No ${SPORTS[S.sport].name} games live right now.`);
-  fill($('list-next'), next, 'No games scheduled in the next 10 days.');
-  fill($('list-final'), fin, 'No recent finals.');
+  fill($('list-next'), next.slice(0, 8), 'No games scheduled in the next 10 days.');
+  markLive();
 }
 
 /* ================= roster / jersey numbers ================= */
@@ -2149,7 +2176,7 @@ function playsOf(summary){
 
 /* ================= selecting a game ================= */
 async function selectGame(id, mode){
-  const ev = S.events.get(id); if (!ev) return;
+  const ev = evOf(id); if (!ev) return;
   S.token++; const tok = S.token;
   if (window.speechSynthesis) speechSynthesis.cancel();
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
@@ -2359,7 +2386,7 @@ function stepDrive(dir){
 const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 
 function drawHelmet(cv, team){
-  const g = cv.getContext('2d'); g.imageSmoothingEnabled = false; g.clearRect(0, 0, 32, 28);
+  const g = cv.getContext('2d'); g.imageSmoothingEnabled = false; g.clearRect(0, 0, cv.width, cv.height);
   const r = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
   if (isMLB()) {
     // a ball cap in team colors
@@ -2509,7 +2536,7 @@ function drawFace(g, team, pl, looks){
 }
 
 function recordOf(side){
-  const ev = S.events.get(S.game); if (!ev) return '';
+  const ev = evOf(S.game); if (!ev) return '';
   const c = ev.competitions[0].competitors.find(x => x.homeAway === side);
   return c?.records?.[0]?.summary || c?.record?.[0]?.summary || '';
 }
@@ -2519,7 +2546,7 @@ function renderGamePanel(){
   if (!has) { $('detail').hidden = true; return; }
   for (const [side, t] of [['away', S.away], ['home', S.home]]) {
     const b = $('tc-' + side);
-    drawHelmet(b.querySelector('canvas'), t);
+    drawLogo(b.querySelector('canvas'), t);
     b.querySelector('.tn').textContent = t.abbr;
     b.querySelector('.tr').textContent = recordOf(side) || t.nick;
     b.querySelector('.ts').textContent = side === 'home' ? S.prevScore.h : S.prevScore.a;
@@ -2617,12 +2644,11 @@ function gameStatsFor(team, p){
   }
   return h;
 }
-function playerHTML(t, p){
+function playerHTML(t, p, inGame = true){
   const bio = [p.posName || p.pos, p.ht, p.wt, p.age ? `Age ${p.age}` : '', p.exp != null ? (p.exp ? `${p.exp} yr pro` : 'Rookie') : ''].filter(Boolean).join(' · ');
   let h = `<div class="dhead"><b>${esc(t.abbr)} ROSTER</b><button class="back">BACK</button></div>`;
   h += `<div class="pcard"><canvas width="32" height="32"></canvas><div><div class="pn">${p.num != null ? '#' + p.num + ' ' : ''}${esc(p.name.toUpperCase())}</div><div class="pm">${esc(bio)}</div>${p.college ? `<div class="pm">${esc(p.college)}</div>` : ''}</div></div>`;
-  const gs = gameStatsFor(t, p);
-  h += `<h5>THIS GAME</h5>` + (gs || `<div class="muted">No stats in this game yet.</div>`);
+  if (inGame) { const gs = gameStatsFor(t, p); h += `<h5>THIS GAME</h5>` + (gs || `<div class="muted">No stats in this game yet.</div>`); }
   const ss = S.pstats?.[p.id];
   h += `<h5>SEASON</h5>`;
   if (ss === undefined || ss === 'loading') h += `<div class="muted">Loading season stats...</div>`;
@@ -2639,6 +2665,7 @@ async function loadSeason(team, p){
     out = await mlbSeason(p);
     S.pstats[p.id] = out;
     if (S.view?.kind === 'player' && S.view.p === p) renderDetail();
+    if (S.tview?.p === p) renderTeamPage();
     return;
   }
   try {
@@ -2653,6 +2680,7 @@ async function loadSeason(team, p){
   } catch (e) { out = null; }
   S.pstats[p.id] = out;
   if (S.view?.kind === 'player' && S.view.p === p) renderDetail();
+  if (S.tview?.p === p) renderTeamPage();
 }
 
 // a baseball player's season and career numbers from MLB
@@ -2682,6 +2710,221 @@ async function mlbSeason(p){
     }
     return h || null;
   } catch (e) { return null; }
+}
+
+/* ================= teams: a logo box per team, each opening that team's page ================= */
+// football seasons run into February, so January to May still belong to last year's season
+const seasonYear = () => { const d = new Date(); return isMLB() || d.getMonth() > 4 ? d.getFullYear() : d.getFullYear() - 1; };
+// the logo drawn on the dark boxes: ESPN's dark-background logos for football, MLB's cap logos for baseball
+// (simple letter marks, which still read when shrunk to 32 pixels)
+function logoURL(t){
+  if (isMLB()) return /^\d+$/.test(t.id) ? `https://www.mlbstatic.com/team-logos/team-cap-on-dark/${t.id}.svg` : '';
+  return (t.logo || '').replace('/500/', '/500-dark/');
+}
+const LOGO_IMG = new Map(); // url -> Promise<Image | null>
+function logoImage(url){
+  if (!LOGO_IMG.has(url)) LOGO_IMG.set(url, new Promise(res => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = url; }));
+  return LOGO_IMG.get(url);
+}
+// the real logo shrunk onto a 32x32 canvas, which the page shows with square pixels; the helmet or cap stays if no logo loads
+async function drawLogo(cv, team){
+  drawHelmet(cv, team); cv.dataset.logo = team.id;
+  for (const url of [logoURL(team), team.logo].filter(Boolean)) {
+    const im = await logoImage(url); if (!im) continue;
+    if (cv.dataset.logo !== team.id) return; // the box shows another team now
+    const g = cv.getContext('2d'), w = cv.width, h = cv.height, iw = im.naturalWidth || 100, ih = im.naturalHeight || 100, k = Math.min((w - 2) / iw, (h - 2) / ih);
+    const dw = Math.round(iw * k), dh = Math.round(ih * k);
+    g.clearRect(0, 0, w, h); g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
+    g.drawImage(im, (w - dw) >> 1, (h - dh) >> 1, dw, dh);
+    return;
+  }
+}
+
+async function loadTeams(){
+  const sport = S.sport; let list = [];
+  try {
+    if (isMLB()) {
+      const j = await getJSON(`${MLB_API}/v1/teams?sportId=1&season=${seasonYear()}`);
+      list = (j.teams || []).filter(t => t.active !== false).map(t => teamObj(mlbTeamOf(t)));
+    } else {
+      const j = await getJSON(`${API}/teams`);
+      list = (j.sports?.[0]?.leagues?.[0]?.teams || []).map(x => x.team).filter(t => t?.id && t.isActive !== false)
+        .map(t => teamObj({...t, logo: (t.logos?.find(l => l.rel?.includes('default')) || t.logos?.[0])?.href}));
+    }
+  } catch (e) { list = []; }
+  if (sport !== S.sport) return;
+  S.teams = list.sort((a, b) => a.loc.localeCompare(b.loc) || a.nick.localeCompare(b.nick));
+  S.teamsFailed = !list.length;
+  renderTeams();
+}
+function renderTeams(){
+  const grid = $('teamgrid'); grid.hidden = !!S.tview; $('teampage').hidden = !S.tview;
+  if (S.tview) return renderTeamPage();
+  grid.replaceChildren();
+  if (!S.teams.length) {
+    const d = document.createElement('div'); d.className = 'none';
+    d.textContent = S.teamsFailed ? `Can't load the ${SPORTS[S.sport].name} teams right now.` : 'Loading teams...';
+    grid.append(d); return;
+  }
+  for (const t of S.teams) {
+    const b = document.createElement('button'); b.className = 'tbox'; b.dataset.tid = t.id;
+    b.setAttribute('aria-label', `${fullName(t)}: schedule, news, stats and roster`); b.title = fullName(t);
+    const cv = document.createElement('canvas'); cv.width = 32; cv.height = 32;
+    const s = document.createElement('span'); s.textContent = t.abbr;
+    b.append(cv, s); b.onclick = () => openTeam(t);
+    grid.append(b); drawLogo(cv, t);
+  }
+  markLive();
+}
+// teams playing right now get a LIVE tag
+function markLive(){
+  const live = new Set();
+  for (const ev of S.events.values()) if (stateOf(ev) === 'in') for (const c of ev.competitions[0].competitors) live.add(String(c.team?.id ?? c.id));
+  document.querySelectorAll('.tbox').forEach(b => b.classList.toggle('live', live.has(b.dataset.tid)));
+}
+
+function openTeam(t){
+  t.kit ||= isMLB() ? kitMLB(t, true) : kit(t, true);
+  S.tview = {team: t}; renderTeams(); loadTeamData(t); loadRoster(t).then(() => { if (S.tview?.team === t) renderTeamPage(); });
+}
+// a team's season: every game (for the next game, live game and replays), season stats and news, from the same source as its games
+async function loadTeamData(t){
+  if (S.tdata[t.id]) return;
+  const sport = S.sport, yr = seasonYear(), D = S.tdata[t.id] = {loading: true, games: [], news: [], stats: null};
+  const keep = ev => { if (!S.events.has(ev.id)) S.extra.set(ev.id, ev); D.games.push(ev); };
+  if (isMLB()) {
+    const [sch, st] = await Promise.allSettled([
+      getJSON(`${MLB_API}/v1/schedule?sportId=1&teamId=${t.id}&startDate=${yr}-02-01&endDate=${yr}-11-30&hydrate=team,linescore`),
+      getJSON(`${MLB_API}/v1/teams/${t.id}/stats?stats=season&group=hitting,pitching&season=${yr}`)]);
+    if (sport !== S.sport) return;
+    // spring training, exhibitions and the All-Star Game aren't this team's season
+    for (const day of sch.value?.dates || []) for (const g of day.games || []) { if (/[SEA]/.test(g.gameType || '')) continue; const ev = mlbEvent(g); if (ev) keep(ev); }
+    // record: from the last regular season game played
+    const reg = sch.value ? (sch.value.dates || []).flatMap(d => d.games || []).filter(g => g.gameType === 'R' && g.status?.abstractGameState === 'Final') : [];
+    const lr = reg.length ? Object.values(reg[reg.length - 1].teams || {}).find(x => String(x.team?.id) === t.id)?.leagueRecord : null;
+    if (lr) D.record = `${lr.wins}-${lr.losses}`;
+    D.stats = mlbSeasonTeam(st.value);
+    // news: MLB's own recaps of this team's latest games
+    const fin = D.games.filter(e => stateOf(e) === 'post').sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+    const cs = await Promise.allSettled(fin.map(e => getJSON(`${MLB_API}/v1/game/${e.id}/content`)));
+    for (const c of cs) {
+      const r = c.value?.editorial?.recap?.mlb; if (!r?.headline) continue;
+      D.news.push({title: r.headline, date: r.date, url: r.slug ? `https://www.mlb.com/news/${r.slug}` : ''});
+    }
+  } else {
+    const [s2, s3, nw, st] = await Promise.allSettled([
+      getJSON(`${API}/teams/${t.id}/schedule?season=${yr}&seasontype=2`),
+      getJSON(`${API}/teams/${t.id}/schedule?season=${yr}&seasontype=3`),
+      getJSON(`${API}/news?team=${t.id}&limit=8`),
+      getJSON(`${API}/teams/${t.id}/statistics`)]);
+    if (sport !== S.sport) return;
+    const seen = new Set();
+    for (const r of [s2, s3]) for (const ev of r.value?.events || []) {
+      if (!ev?.id || seen.has(String(ev.id))) continue; seen.add(String(ev.id));
+      ev.id = String(ev.id); ev.status ||= ev.competitions?.[0]?.status; keep(ev);
+    }
+    D.record = s2.value?.team?.recordSummary || ''; D.standing = s2.value?.team?.standingSummary || '';
+    // only stories ESPN tags with this team
+    for (const a of nw.value?.articles || []) {
+      if (!a.headline || !(a.categories || []).some(c => c.type === 'team' && String(c.teamId) === t.id)) continue;
+      D.news.push({title: a.headline, date: a.published, url: a.links?.web?.href || ''});
+    }
+    D.stats = nflSeasonTeam(st.value);
+  }
+  D.loading = false;
+  if (S.tview?.team === t) renderTeamPage();
+}
+const NFL_SEASON_TEAM = [['OFFENSE', [['scoring', 'totalPointsPerGame', 'Points/game'], ['passing', 'netPassingYardsPerGame', 'Pass yds/game'], ['rushing', 'rushingYardsPerGame', 'Rush yds/game'], ['passing', 'passingTouchdowns', 'Pass TD'], ['rushing', 'rushingTouchdowns', 'Rush TD'], ['passing', 'QBRating', 'QB rating'], ['miscellaneous', 'thirdDownConvPct', '3rd down %']]],
+  ['DEFENSE', [['defensive', 'sacks', 'Sacks'], ['defensive', 'totalTackles', 'Tackles'], ['defensiveInterceptions', 'interceptions', 'Interceptions'], ['general', 'fumblesRecovered', 'Fumbles recovered']]],
+  ['TURNOVERS AND PENALTIES', [['miscellaneous', 'totalTakeaways', 'Takeaways'], ['miscellaneous', 'totalGiveaways', 'Giveaways'], ['miscellaneous', 'turnOverDifferential', 'Turnover margin'], ['miscellaneous', 'totalPenaltyYards', 'Penalty yds']]]];
+function nflSeasonTeam(j){
+  const cats = j?.results?.stats?.categories; if (!cats?.length) return null;
+  const val = (c, n) => cats.find(x => String(x.name).toLowerCase() === c.toLowerCase())?.stats?.find(x => x.name === n)?.displayValue;
+  let h = '';
+  for (const [label, keys] of NFL_SEASON_TEAM) {
+    const items = keys.map(([c, n, l]) => [l, val(c, n)]).filter(([, v]) => v != null);
+    if (items.length) h += `<div class="muted">${label}</div><div class="kv">` + items.map(([l, v]) => `<span>${esc(l)}</span><span>${esc(v)}</span>`).join('') + '</div>';
+  }
+  return h || null;
+}
+const MLB_SEASON_TEAM = {hitting: ['BATTING', [['G', 'gamesPlayed'], ['R', 'runs'], ['H', 'hits'], ['HR', 'homeRuns'], ['SB', 'stolenBases'], ['AVG', 'avg'], ['OBP', 'obp'], ['SLG', 'slg'], ['OPS', 'ops']]],
+  pitching: ['PITCHING', [['ERA', 'era'], ['WHIP', 'whip'], ['SO', 'strikeOuts'], ['BB', 'baseOnBalls'], ['HR allowed', 'homeRuns'], ['SV', 'saves']]]};
+function mlbSeasonTeam(j){
+  let h = '';
+  for (const s of j?.stats || []) {
+    const [label, keys] = MLB_SEASON_TEAM[s.group?.displayName] || [], st = s.splits?.[0]?.stat; if (!keys || !st) continue;
+    const items = keys.filter(([, k]) => st[k] != null);
+    if (items.length) h += `<div class="muted">${label}</div><div class="kv">` + items.map(([l, k]) => `<span>${esc(l)}</span><span>${esc(st[k])}</span>`).join('') + '</div>';
+  }
+  return h || null;
+}
+
+// one game from this team's side: "W 24-17 vs PIT", "@ BUF Sun 1:00 PM"
+function teamGameLine(t, ev){
+  const tm = teamsOf(ev), home = tm.home.id === t.id, us = home ? tm.home : tm.away, them = home ? tm.away : tm.home, st = stateOf(ev);
+  const vs = `${home ? 'vs' : '@'} ${them.abbr}`, day = new Date(ev.date);
+  if (st === 'pre') return {m: vs, s: day.toLocaleString([], {weekday: 'short', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit'}), st};
+  const a = Number(us.score), b = Number(them.score), stat = ev.status || ev.competitions[0].status || {};
+  if (st === 'in') return {m: `${vs} · ${us.score}-${them.score}`, s: stat.type?.shortDetail || 'Live', st};
+  return {m: `${a > b ? 'W' : a < b ? 'L' : 'T'} ${us.score}-${them.score} ${vs}`, s: day.toLocaleDateString([], {month: 'numeric', day: 'numeric'}), st};
+}
+function gameButton(t, ev, mode){
+  const g = teamGameLine(t, ev);
+  return `<button class="game" data-gid="${esc(ev.id)}" data-mode="${mode}"><span class="m">${esc(g.m)}</span><span class="s${g.st === 'in' ? ' live' : ''}">${esc(g.s)}</span></button>`;
+}
+function renderTeamPage(){
+  const pg = $('teampage'), v = S.tview; if (!v) return;
+  const t = v.team, D = S.tdata[t.id] || {loading: true, games: [], news: []};
+  if (v.p) {
+    // a player: same card as during a game, with this game's line only when the team is in the game on screen
+    const gt = [S.home, S.away].find(x => S.game && x?.id === t.id);
+    pg.innerHTML = playerHTML(gt || t, v.p, !!gt);
+    const cv = pg.querySelector('canvas'); if (cv) drawPortrait(cv, gt || t, v.p);
+    pg.querySelector('.back').onclick = () => { S.tview = {team: t}; renderTeamPage(); };
+    return;
+  }
+  // the scoreboard's copy of a game is the freshest (a game that went live since the schedule loaded)
+  const byId = new Map(D.games.map(e => [e.id, e]));
+  for (const ev of S.events.values()) if (ev.competitions[0].competitors.some(c => String(c.team?.id ?? c.id) === t.id)) byId.set(ev.id, ev);
+  const games = [...byId.values()].filter(e => !/[SEA]/.test(e.gameType || '')).sort((a, b) => new Date(a.date) - new Date(b.date));
+  const live = games.filter(e => stateOf(e) === 'in'), next = games.find(e => stateOf(e) === 'pre');
+  const fin = games.filter(e => stateOf(e) === 'post').reverse();
+  let h = `<div class="dhead"><button class="back">&lt; ALL TEAMS</button></div>`;
+  h += `<div class="thead"><canvas width="32" height="32"></canvas><div><div class="pn">${esc(fullName(t).toUpperCase())}</div><div class="pm">${esc([D.record && `Record ${D.record}`, D.standing].filter(Boolean).join(' · '))}</div></div></div>`;
+  if (live.length) h += `<h5>LIVE NOW</h5>` + live.map(e => gameButton(t, e, 'live')).join('');
+  h += `<h5>NEXT GAME</h5>`;
+  if (next) {
+    const note = next.competitions?.[0]?.notes?.[0]?.headline, venue = next.competitions?.[0]?.venue?.fullName;
+    h += gameButton(t, next, 'pre') + ([note, venue].some(Boolean) ? `<div class="muted">${esc([note, venue].filter(Boolean).join(' · '))}</div>` : '');
+  } else h += `<div class="muted">${D.loading ? 'Loading the schedule...' : 'No game on the schedule.'}</div>`;
+  h += `<h5>NEWS</h5>`;
+  if (D.news.length) h += `<div class="news">` + D.news.slice(0, 6).map(n => {
+    const when = n.date ? new Date(n.date).toLocaleDateString([], {month: 'short', day: 'numeric'}) : '';
+    return n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}<small>${esc(when)}</small></a>` : `<a>${esc(n.title)}<small>${esc(when)}</small></a>`;
+  }).join('') + `</div>`;
+  else h += `<div class="muted">${D.loading ? 'Loading news...' : 'No recent stories about this team.'}</div>`;
+  h += `<h5>REPLAY A GAME</h5>`;
+  if (fin.length) h += fin.slice(0, v.all ? fin.length : 8).map(e => gameButton(t, e, 'replay')).join('') + (fin.length > 8 && !v.all ? `<button class="back more">ALL ${fin.length} GAMES</button>` : '');
+  else h += `<div class="muted">${D.loading ? 'Loading games...' : 'No finished games this season yet.'}</div>`;
+  h += `<h5>SEASON STATS</h5>` + (D.stats || `<div class="muted">${D.loading ? 'Loading stats...' : 'No season stats yet.'}</div>`);
+  const all = S.roster[t.id]?.all;
+  const groups = isMLB() ? [...new Set((all || []).map(p => p.side))].sort((a, b) => MLB_GROUPS.indexOf(a) - MLB_GROUPS.indexOf(b)).map(x => [x, x])
+    : [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
+  if (!all) h += `<h5>ROSTER</h5><div class="muted">Loading roster...</div>`;
+  else if (!all.length) h += `<h5>ROSTER</h5><div class="muted">Roster not available.</div>`;
+  for (const [key, label] of all ? groups : []) {
+    const ps = all.filter(p => p.side === key && p.id).sort((a, b) => (a.num ?? 999) - (b.num ?? 999));
+    if (ps.length) h += `<h5>${esc(label)}</h5><div class="plist">` + ps.map(p => `<button class="pl" data-pid="${esc(p.id)}"><span class="n">${p.num != null ? '#' + p.num : ''}</span><span>${esc(p.name)}</span><span class="ps">${esc(p.pos)}</span></button>`).join('') + '</div>';
+  }
+  pg.innerHTML = h;
+  drawLogo(pg.querySelector('.thead canvas'), t);
+  pg.querySelector('.back').onclick = () => { S.tview = null; renderTeams(); $('teamgrid').querySelector(`[data-tid="${t.id}"]`)?.focus(); };
+  const more = pg.querySelector('.more'); if (more) more.onclick = () => { v.all = true; renderTeamPage(); };
+  pg.querySelectorAll('[data-gid]').forEach(b => b.onclick = () => { selectGame(b.dataset.gid, b.dataset.mode); $('stage').scrollIntoView({behavior: 'smooth', block: 'start'}); });
+  pg.querySelectorAll('[data-pid]').forEach(b => b.onclick = () => {
+    const p = all.find(x => x.id === b.dataset.pid);
+    if (p) { S.tview = {team: t, p}; renderTeamPage(); loadSeason(t, p); }
+  });
 }
 
 /* ================= notices ================= */
@@ -2751,13 +2994,14 @@ async function switchSport(sp){
   S.token++;
   if (window.speechSynthesis) speechSynthesis.cancel();
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
-  Object.assign(S, {events: new Map(), game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
+  Object.assign(S, {events: new Map(), extra: new Map(), teams: [], tview: null, tdata: {}, game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
     rp: null, ri: 0, paused: false, losX: null, fdX: null, flag: null, down: 0, prevScore: {h: 0, a: 0}, replayDone: false});
   $('tline').hidden = true; hideNotice(); hideBanner(); showErr('');
   clearLog('Pick a game to see its play-by-play here.');
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
-  setBadge(); renderList(); renderGamePanel(); renderDetail(); $('feedsrc').textContent = SPORTS[sp].src; setCredits();
+  setBadge(); renderList(); renderGamePanel(); renderDetail(); renderTeams(); $('feedsrc').textContent = SPORTS[sp].src; setCredits();
+  loadTeams();
   await neutralField(); if (sp !== S.sport) return;
   setBoard(); openSport();
 }
@@ -2768,12 +3012,13 @@ $('sport-mlb').onclick = () => switchSport('mlb');
   if (/^#mlb$/i.test(location.hash)) { S.sport = 'mlb'; API = SPORTS.mlb.api; SITE = SPORTS.mlb.site; }
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));
   setBadge(); $('feedsrc').textContent = SPORTS[S.sport].src; setCredits();
+  renderTeams(); loadTeams();
   await neutralField();
   requestAnimationFrame(step);
   await openSport();
   setInterval(async () => {
     const had = S.events.size, sport = S.sport; await loadScoreboard(); if (sport !== S.sport) return;
-    if (S.mode === 'pre') { const ev = S.events.get(S.game); if (ev && stateOf(ev) === 'in') selectGame(S.game, 'live'); }
+    if (S.mode === 'pre') { const ev = evOf(S.game); if (ev && stateOf(ev) === 'in') selectGame(S.game, 'live'); }
     if (!S.game && S.started && !had && S.events.size) showIdle();
   }, 30000);
   setInterval(pollLive, 10000);
