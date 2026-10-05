@@ -1,5 +1,5 @@
 # Fetches Chris's approved news sources (tools/sources.json) and saves them as plain text/JSON in OUT_DIR,
-# so the 3-hour refresh reads news from the repo's news-sources branch instead of fetching sites itself.
+# so the 3-hour refresh reads news from the repo's feeds branch instead of fetching sites itself.
 #   python3 tools/fetch_sources.py OUT_DIR
 # Run by .github/workflows/fetch-sources.yml. Standard library only. Never fetches a host that is not in
 # sources.json's allowed_hosts. Writes OUT_DIR/index.json (what was fetched, when, and what failed),
@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else 'news-sources'
+OUT = sys.argv[1] if len(sys.argv) > 1 else 'feeds'
 CFG = json.load(open(f'{HERE}/sources.json'))
 HOSTS = set(CFG['allowed_hosts'])
 NOW = dt.datetime.now(dt.timezone.utc)

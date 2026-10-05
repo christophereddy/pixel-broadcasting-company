@@ -273,10 +273,15 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 'use strict';
 /* ================= config ================= */
 // football reads ESPN's feeds; baseball reads MLB's own (statsapi.mlb.com). The NFL and MLB tabs switch between them.
+// Every sport fills in the same entry and the same parts of the page; tools/ADDING_A_SPORT.md lists them all and
+// tools/check_sports.cjs fails if a sport is missing one. hosts: the only places this sport's data and images come from
+// (one data source per sport).
 const SPORTS = {
   nfl: {name: 'NFL', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nfl/']]},
   mlb: {name: 'MLB', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
+    hosts: ['statsapi.mlb.com', 'www.mlbstatic.com', 'img.mlbstatic.com'],
     credits: [['Games, pitch-by-pitch play-by-play, team schedules, rosters, stats, logos, headshots and game recaps', 'MLB Stats API', 'https://statsapi.mlb.com'],
       ['Ballpark fence distances and wall heights', "each park's Wikipedia page", 'https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums']]}
 };

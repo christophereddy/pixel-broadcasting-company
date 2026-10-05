@@ -1,5 +1,5 @@
 {
-  "_about": "Chris's approved news sources (2026-10-05). The Fetch news sources GitHub Action reads ONLY these URLs (plus article links on the same sites) and saves them to the news-sources branch for the 3-hour refresh. Add or remove a source only when Chris names it. Never add the Christian Science Monitor.",
+  "_about": "Chris's approved news sources (2026-10-05). The Fetch news sources GitHub Action reads ONLY these URLs (plus article links on the same sites) and saves them to the feeds branch for the 3-hour refresh. Add or remove a source only when Chris names it. Never add the Christian Science Monitor.",
   "national": [
     {"id": "democracynow", "name": "Democracy Now!", "url": "https://www.democracynow.org/{Y}/{M}/{D}/headlines", "fallbacks": ["https://www.democracynow.org/headlines"], "for": ["world", "national", "politics"]},
     {"id": "aljazeera", "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/", "for": ["world", "international"]},

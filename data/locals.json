@@ -13,31 +13,25 @@
      "name": "Monday",
      "kind": "high",
      "temp": 80,
-     "text": "Mostly cloudy, with a high near 80. Calm wind becoming northeast around 5 mph in the afternoon."
+     "text": "Mostly cloudy, with a high near 80."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Partly cloudy, with a low around 61. East wind around 5 mph."
+     "text": "Partly cloudy, with a low around 61."
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 77,
-     "text": "Sunny, with a high near 77. East wind around 10 mph, with gusts as high as 20 mph."
+     "text": "Sunny, with a high near 77. Gusts as high as 20 mph."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 57,
      "text": "Mostly clear, with a low around 57."
-    },
-    {
-     "name": "Wednesday",
-     "kind": "high",
-     "temp": 80,
-     "text": "Sunny, with a high near 80."
     }
    ]
   },
@@ -53,7 +47,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -71,37 +65,41 @@
    }
   ],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 58,
+    "cond": "Overcast",
+    "obs": "Oct 5, 1:54 am EDT"
+   },
    "periods": [
     {
      "name": "Monday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66. West wind 5 to 14 mph, with gusts as high as 25 mph."
+     "text": "Sunny, with a high near 66. Southwest wind 6 to 16 mph."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45. West wind 8 to 10 mph."
+     "text": "Clear, with a low around 45."
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 58,
-     "text": "Sunny, with a high near 58. West wind around 11 mph, with gusts as high as 21 mph."
+     "text": "Sunny, with a high near 58. Gusts as high as 21 mph."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Clear, with a low around 44. West wind 3 to 6 mph."
+     "text": "Clear, with a low around 44."
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Light southwest wind increasing to 6 to 11 mph in the morning."
+     "text": "Sunny, with a high near 65."
     }
    ]
   },
@@ -117,7 +115,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -129,62 +127,63 @@
   },
   "local": [
    {
-    "h": "$75 million raised for Bronzeville cultural zone",
-    "b": "The Bronzeville Legacy Collective has raised $75 million toward nine cultural sites, with a long-term goal of $250 million.",
-    "date": "2026-10-05",
-    "more": [
-     "Projects include the National Museum of Gospel Music and the Emmett Till and Mamie Till-Mobley House.",
-     "Several are expected to open between 2027 and 2029."
-    ]
-   },
-   {
-    "h": "Runner set for his 48th Chicago Marathon",
-    "b": "Henry Kozlowski is one of two people who have finished every Chicago Marathon since 1977, and he plans to run in his high school gym shorts.",
+    "h": "Bob Odenkirk heads back to the stage",
+    "b": "The Naperville native is turning to theater, with plans for a production in Champaign.",
     "date": "2026-10-05"
    },
    {
-    "h": "Bob Odenkirk heads back to the stage",
-    "b": "The Naperville native is leaning into theater, with a play in Champaign about an alien invasion up next.",
+    "h": "Runner set for his 48th Chicago Marathon",
+    "b": "A retired systems analyst, one of two people to finish every Chicago Marathon since 1977, will run again in his high school gym shorts.",
     "date": "2026-10-05"
    },
    {
     "h": "Unhoused artist Peace Prophet's watercolors prized",
-    "b": "Her paintings hang in homes across Chicago, but she has turned down offers of help, accepting only payment for her work.",
+    "b": "Her watercolors are collected across Chicago though she has no permanent home, and she accepts only payment for her art.",
     "date": "2026-10-04"
    }
   ],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 57,
+    "cond": "Fair",
+    "obs": "Oct 5, 8:53 am CDT"
+   },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. North northwest wind around 5 mph becoming northeast in the afternoon."
+     "temp": 63,
+     "text": "Sunny, with a high near 63."
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 50,
-     "text": "Clear, with a low around 50. East wind around 5 mph becoming south after midnight."
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51."
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. South southwest wind 10 to 15 mph, with gusts as high as 25 mph."
+     "temp": 71,
+     "text": "Sunny, with a high near 71. Gusts as high as 25 mph."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "Mostly clear, with a low around 57."
+     "temp": 58,
+     "text": "Mostly clear, with a low around 58."
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71."
+     "temp": 74,
+     "text": "Sunny, with a high near 74."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 54,
+     "text": "Partly cloudy, with a low around 54."
     }
    ]
   },
@@ -200,9 +199,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "$75 million raised for Bronzeville cultural zone",
+    "b": "Community leaders raised $75 million to develop nine Bronzeville sites, including a theater and a food hub.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "White Sox go from worst to the playoffs",
+    "b": "Two years after being baseball's worst team, the White Sox are in the playoffs and won their division series opener.",
+    "date": "2026-10-05"
+   }
+  ]
  },
  {
   "location": {
@@ -213,12 +223,12 @@
   "local": [
    {
     "h": "Hiking Whittier's history with the 'Lumpers'",
-    "b": "A hiking group of retired women who have climbed Colorado's highest peaks is now exploring the history of north Denver.",
+    "b": "A retired women's hiking group toured Whittier's parks named for Black historical figures like Madam C.J. Walker.",
     "date": "2026-10-05"
    },
    {
     "h": "Denver weighs what to do with empty offices",
-    "b": "Demolition is treated as a last resort, but buildings like 1300 Logan St. have long outlived their purpose.",
+    "b": "Downtown Denver's office vacancy is 38%, and old buildings are costly to convert or tear down.",
     "date": "2026-10-05"
    }
   ],
@@ -229,31 +239,25 @@
      "name": "Monday",
      "kind": "high",
      "temp": 88,
-     "text": "Sunny, with a high near 88. South southwest wind around 6 mph becoming light and variable."
+     "text": "Sunny, with a high near 88."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59. Light and variable wind becoming south southwest around 6 mph in the evening."
+     "text": "Mostly clear, with a low around 59."
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 86,
-     "text": "Mostly sunny, with a high near 86. South southwest wind around 6 mph becoming calm."
+     "text": "Mostly sunny, with a high near 86."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 58,
      "text": "Partly cloudy, with a low around 58."
-    },
-    {
-     "name": "Wednesday",
-     "kind": "high",
-     "temp": 84,
-     "text": "Sunny, with a high near 84."
     }
    ]
   },
@@ -269,7 +273,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -282,22 +286,25 @@
   "local": [
    {
     "h": "Malibu PCH speed cameras to start with warnings",
-    "b": "Drivers going 11 mph or more over the limit will get warnings for 60 days starting in November; fines come later.",
-    "date": "2026-10-04"
+    "b": "Malibu's speed cameras will issue warnings starting in November, with fines after a 60-day period.",
+    "date": "2026-10-04",
+    "more": [
+     "More than 60 people have died in crashes on the 21-mile stretch since 2010."
+    ]
    },
    {
     "h": "Could the billionaire tax reach everyone?",
-    "b": "Opponents say Prop. 40 opens the door to future wealth taxes on everyday Californians; LAist fact-checks the claim.",
+    "b": "Legal experts say lawmakers could amend Proposition 40's billionaire tax, but only to further its original purpose.",
     "date": "2026-10-04"
    },
    {
     "h": "Bass and Raman spar over housing at South LA forum",
-    "b": "The mayoral candidates agreed a new homelessness system is needed but split on where to allow new housing and how to protect renters.",
+    "b": "Mayoral candidates Karen Bass and Nithya Raman agreed LA's homelessness agency is dysfunctional but split on housing density.",
     "date": "2026-10-04"
    },
    {
     "h": "How to get free mulch for your yard",
-    "b": "Three options are available in Southern California, with varying amounts of work.",
+    "b": "Southern Californians can get free mulch from city piles, the ChipDrop service, or local arborists.",
     "date": "2026-10-04"
    }
   ],
@@ -305,8 +312,6 @@
    "now": {
     "temp": 79,
     "cond": "Clear",
-    "wind": "NNW 4 mph",
-    "humidity": 44,
     "obs": "Oct 5, 1:25 am PDT"
    },
    "periods": [
@@ -314,37 +319,31 @@
      "name": "Monday",
      "kind": "high",
      "temp": 98,
-     "text": "Sunny and hot, with a high near 98. North northeast wind around 5 mph becoming west southwest in the afternoon."
+     "text": "Sunny and hot, with a high near 98. Extreme Heat Warning in effect."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 73,
-     "text": "Mostly clear, with a low around 73. West southwest wind 5 to 10 mph becoming light and variable in the evening."
+     "text": "Mostly clear, with a low around 73."
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 97,
-     "text": "Sunny and hot, with a high near 97. Light and variable wind becoming southwest 5 to 10 mph in the afternoon."
+     "text": "Sunny and hot, with a high near 97."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 71,
-     "text": "Clear, with a low around 71. Southwest wind 5 to 10 mph becoming light and variable after midnight."
+     "text": "Clear, with a low around 71."
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 97,
      "text": "Sunny and hot, with a high near 97."
-    },
-    {
-     "name": "Wednesday Night",
-     "kind": "low",
-     "temp": 69,
-     "text": "Clear, with a low around 69."
     }
    ]
   },
@@ -360,9 +359,15 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Big Bear says goodbye to Jackie the eagle",
+    "b": "Fans are gathering in Big Bear for a 'Wings Over Big Bear' weekend honoring Jackie, the livestream-famous bald eagle who died in August.",
+    "date": "2026-10-04"
+   }
+  ]
  },
  {
   "location": {
@@ -373,36 +378,38 @@
   "local": [
    {
     "h": "Mamdani to clear 10,000 families off childcare waitlist",
-    "b": "The city will move 10,000 low-income families off the waitlist for subsidized childcare, Mayor Mamdani announced.",
+    "b": "The city will clear 10,000 families from the subsidized childcare waitlist after the program ran out of money.",
     "date": "2026-10-05",
     "more": [
-     "More than 16,000 families are waiting for the Child Care Assistance Program, which serves families earning up to $116,000 a year for a family of four.",
-     "Governor Kathy Hochul is putting $475 million toward the backlog that built up since May 2025."
+     "More than 16,000 families are waiting for help."
     ]
    },
    {
     "h": "Two killed in Queens and Brooklyn crashes",
-    "b": "A hit-and-run on Monday killed a 62-year-old man, and a crash involving an impaired driver on Sunday killed a 23-year-old woman, police said.",
+    "b": "A 62-year-old died in a hit-and-run Monday and a 23-year-old died in a crash involving an impaired driver Sunday.",
     "date": "2026-10-05"
    },
    {
     "h": "NY's stockpiled abortion pills have all expired",
-    "b": "In 2023 the state bought 150,000 misoprostol pills, enough for 12,500 doses, for $112,000. Now they are all expired.",
-    "date": "2026-10-05"
+    "b": "New York bought 150,000 misoprostol pills in 2023 for $112,000, and the whole supply has expired.",
+    "date": "2026-10-05",
+    "more": [
+     "The Department of Health plans to destroy the reserve."
+    ]
    },
    {
     "h": "Legionnaires' outbreaks spark NYC water debate",
-    "b": "A group backed by cooling tower companies wants the city to filter all drinking water; experts dispute that it is needed.",
+    "b": "Groups backed by cooling tower companies propose citywide drinking water filtration; some experts doubt it's needed.",
     "date": "2026-10-05"
    },
    {
     "h": "City Council hearing to spotlight AI risks",
-    "b": "Tech workers and whistleblowers will testify to the City Council about the dangers of artificial intelligence.",
+    "b": "The City Council will hear from four tech workers and whistleblowers about the dangers of AI.",
     "date": "2026-10-05"
    },
    {
     "h": "Sixth person dies after falling ill in NYPD custody",
-    "b": "The 54-year-old was hospitalized twice after his arrest Friday, police said.",
+    "b": "A 54-year-old man died after becoming ill following his arrest Friday, the sixth in-custody death this year.",
     "date": "2026-10-04"
    }
   ],
@@ -413,7 +420,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Breezy, with a northwest wind 9 to 14 mph increasing to 16 to 21 mph in the afternoon."
+     "text": "Sunny, with a high near 69. Breezy, with a northwest wind 16 to 21 mph in the afternoon."
     },
     {
      "name": "Monday Night",
@@ -438,12 +445,6 @@
      "kind": "high",
      "temp": 68,
      "text": "Sunny, with a high near 68."
-    },
-    {
-     "name": "Wednesday Night",
-     "kind": "low",
-     "temp": 56,
-     "text": "Mostly clear, with a low around 56."
     }
    ]
   },
@@ -459,16 +460,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
-    "h": "Banned books and Pooh at NYC libraries",
-    "b": "NYC libraries mark Banned Books Week this October, with Queens Public Library offering free banned titles.",
-    "date": "2026-10-04",
-    "more": [
-     "NYPL is celebrating Winnie the Pooh's centennial with movies, readings and crafts across the boroughs."
-    ]
+    "h": "American chestnut returns to the Bronx Zoo",
+    "b": "The Bronx Zoo is getting 25 blight-resistant chestnut saplings to help restore a tree nearly wiped out for over a century.",
+    "date": "2026-10-05"
    }
   ]
  },
@@ -482,30 +480,23 @@
   "local": [
    {
     "h": "Up to 500 French schools to close Monday",
-    "b": "Up to 500 schools across France will be totally or partly closed on Monday because of protests by teenage pupils, the minister said.",
+    "b": "Up to 500 schools were set to close fully or partly Monday as student protests spread, the education minister said.",
     "date": "2026-10-04"
    },
    {
     "h": "Le Pen voices 'complete confidence' in Bardella",
-    "b": "Marine Le Pen says she has complete confidence in Jordan Bardella.",
+    "b": "Marine Le Pen said she has complete confidence in Jordan Bardella.",
     "date": "2026-10-04"
    },
    {
     "h": "Shared French-Swiss lake is drying up",
-    "b": "There is a cry for help as a lake shared by France and Switzerland dries up.",
+    "b": "A lake shared by France and Switzerland is running critically low.",
     "date": "2026-10-04"
    }
   ],
   "weather": {
    "now": null,
-   "periods": [
-    {
-     "name": "Monday",
-     "kind": "high",
-     "temp": 75,
-     "text": "Beau temps sec et bien ensoleillé (fine, dry, sunny weather), light winds."
-    }
-   ]
+   "periods": []
   },
   "sources": [
    {
@@ -519,7 +510,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "goodnews": []
  },
  {
@@ -530,37 +521,47 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 55,
+    "cond": "Fog",
+    "obs": "Oct 5, 8:00 am PDT"
+   },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
-     "temp": 66,
-     "text": "Partly sunny, with a high near 66. Light and variable wind."
+     "temp": 67,
+     "text": "Partly sunny, with a high near 67. Calm wind."
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. Light north northeast wind."
+     "temp": 53,
+     "text": "Increasing clouds, with a low around 53."
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66. North wind 3 to 7 mph."
+     "temp": 65,
+     "text": "Partly sunny, with a high near 65."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52."
+     "temp": 51,
+     "text": "Partly cloudy, with a low around 51."
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 66,
      "text": "Mostly sunny, with a high near 66."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
     }
    ]
   },
@@ -576,7 +577,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T13:32:00Z",
+  "updatedAt": "2026-10-05T17:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
