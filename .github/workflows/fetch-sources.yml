@@ -1,0 +1,42 @@
+# Fetches Chris's approved news sources (tools/sources.json) every hour and saves them to the
+# news-sources branch, so the 3-hour news refresh reads them from the repo instead of fetching
+# sites itself (which asked Chris to approve every site). The branch holds one commit, replaced each run.
+name: Fetch news sources
+
+on:
+  schedule:
+    - cron: '35 * * * *'   # every hour at :35, so each refresh (:05 past 12/3/6/9 ET) reads a copy under an hour old
+  workflow_dispatch:
+  pull_request:            # dry run on changes to the fetcher: fetch everything, publish nothing
+    paths:
+      - 'tools/fetch_sources.py'
+      - 'tools/sources.json'
+      - '.github/workflows/fetch-sources.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-sources
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch approved sources
+        run: python3 tools/fetch_sources.py "$RUNNER_TEMP/news-sources"
+      - name: Show what came back
+        run: python3 -c "import json,sys; i=json.load(open(sys.argv[1])); [print('ok    ', o['id'], o.get('items',''), o.get('articles','')) for o in i['ok']]; [print('FAILED', f['id'], f.get('error','')) for f in i['failed']]" "$RUNNER_TEMP/news-sources/index.json"
+      - name: Publish to the news-sources branch
+        if: github.event_name != 'pull_request'
+        run: |
+          cd "$RUNNER_TEMP/news-sources"
+          git init -q -b news-sources
+          git config user.name "github-actions[bot]"
+          git config user.email "41898341+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "News sources fetched $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" news-sources
