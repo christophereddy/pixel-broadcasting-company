@@ -4,7 +4,7 @@ The newsroom is the repo's root `index.html`, served by GitHub Pages at https://
 
 The old claude.ai artifact (https://claude.ai/artifact/Dt3JUvHUyCHFoMgdrqoDpz) is retired (Chris, 2026-10-05): do not republish it or write its database. Do not delete it unless Chris asks.
 
-Schedule: routine trig_01HbGaCKHMBkhUC9BUvxCL95 runs at midnight Eastern and every 3 hours after (12, 3, 6, 9 AM and PM, America/New_York). The page's "Next news refresh" box computes the same slots.
+Schedule: routine trig_015dGokHMd1Msk935koiC35z runs at midnight Eastern and every 3 hours after (12, 3, 6, 9 AM and PM, America/New_York). The page's "Next news refresh" box computes the same slots.
 
 - `data/feed.json`: world, international, national, politics, business, science, sports and goodnews, plus a copy of the default city's local desk (`local`, `weather`, `localgood`; the default city is the one named in `location`).
 - `data/locals.json`: a list with one desk per city in the picker (`slug`, `location {name, short, tz}`, `local[]`, `goodnews[]`, `weather {now|null, periods[]}`, `sources[]`, `updatedAt`).
