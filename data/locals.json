@@ -5,33 +5,63 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Two killed, dozens hurt at south Georgia party",
+    "b": "Gunfire at a homecoming block party in Vienna, Georgia, early Sunday killed two people and injured nearly three dozen.",
+    "date": "2026-10-05",
+    "more": [
+     "The Dooly County sheriff identified the dead as Jaquevion Jackson, 21, and Macaleb Jackson, 23."
+    ]
+   },
+   {
+    "h": "Hemp THC industry fights looming federal ban",
+    "b": "A $28 billion hemp THC market faces elimination after Congress voted to close the loophole that let it grow.",
+    "date": "2026-10-05"
+   }
+  ],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 72,
+    "cond": "Overcast",
+    "obs": "5 Oct 12:52 pm EDT"
+   },
    "periods": [
     {
-     "name": "Monday",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 80,
-     "text": "Mostly cloudy, with a high near 80."
+     "temp": 78,
+     "text": "Mostly cloudy, with a high near 78. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Partly cloudy, with a low around 61."
+     "text": "Partly cloudy, with a low around 61. East wind around 5 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 77,
-     "text": "Sunny, with a high near 77. Gusts as high as 20 mph."
+     "text": "Sunny, with a high near 77. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly clear, with a low around 57."
+     "text": "Mostly clear, with a low around 57. East wind around 5 mph. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 80,
+     "text": "Sunny, with a high near 80. East wind around 5 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56."
     }
    ]
   },
@@ -47,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -59,47 +89,61 @@
   },
   "local": [
    {
-    "h": "WBUR names its 2026 Makers",
-    "b": "WBUR's annual Makers series looks at borders and the places where cultures meet.",
+    "h": "Healey declares a home 'energy emergency'",
+    "b": "Gov. Healey raised heating aid and ordered cuts to some electric bill charges as heating oil prices rose 73% in a year.",
+    "date": "2026-10-05",
+    "more": [
+     "She said one in five Massachusetts households heat with oil."
+    ]
+   },
+   {
+    "h": "Clergy abuse report puts focus on Beacon Hill",
+    "b": "Attorney General Andrea Campbell urged lawmakers to end the statute of limitations on civil child sex abuse claims.",
     "date": "2026-10-05"
    }
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Overcast",
-    "obs": "Oct 5, 1:54 am EDT"
+    "temp": 70,
+    "cond": "Partly Cloudy",
+    "obs": "5 Oct 12:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. Southwest wind 6 to 16 mph."
+     "temp": 67,
+     "text": "Sunny, with a high near 67. West wind around 15 mph, with gusts as high as 28 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45."
+     "text": "Clear, with a low around 45. West wind 7 to 10 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 58,
-     "text": "Sunny, with a high near 58. Gusts as high as 21 mph."
+     "text": "Sunny, with a high near 58. West wind around 11 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44."
+     "temp": 42,
+     "text": "Clear, with a low around 42. West wind 3 to 6 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65."
+     "text": "Sunny, with a high near 65. Light southwest wind increasing to 6 to 11 mph in the morning. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "Mostly clear, with a low around 53. Southwest wind around 9 mph. "
     }
    ]
   },
@@ -115,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -144,40 +188,40 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Fair",
-    "obs": "Oct 5, 8:53 am CDT"
+    "temp": 66,
+    "cond": "A Few Clouds",
+    "obs": "5 Oct 11:53 am CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 63,
-     "text": "Sunny, with a high near 63."
+     "text": "Sunny, with a high near 63. North northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51."
+     "text": "Mostly clear, with a low around 51. East wind 5 to 10 mph becoming south southeast after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 71,
-     "text": "Sunny, with a high near 71. Gusts as high as 25 mph."
+     "text": "Sunny, with a high near 71. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly clear, with a low around 58."
+     "text": "Mostly clear, with a low around 58. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74."
+     "text": "Sunny, with a high near 74. West northwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -199,7 +243,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -233,31 +277,47 @@
    }
   ],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 80,
+    "cond": "A Few Clouds",
+    "obs": "5 Oct 10:58 am MDT"
+   },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 88,
-     "text": "Sunny, with a high near 88."
+     "text": "Sunny, with a high near 88. Calm wind becoming east southeast around 5 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59."
+     "text": "Mostly clear, with a low around 59. Light and variable wind becoming southwest around 6 mph in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 86,
-     "text": "Mostly sunny, with a high near 86."
+     "text": "Mostly sunny, with a high near 86. South southwest wind 5 to 7 mph becoming calm. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Partly cloudy, with a low around 58."
+     "temp": 57,
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 57. Northeast wind around 5 mph becoming light and variable  after midnight. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 84,
+     "text": "Sunny, with a high near 84. Light and variable wind becoming east 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 57,
+     "text": "Mostly clear, with a low around 57."
     }
    ]
   },
@@ -273,7 +333,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -284,6 +344,21 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Newsom vetoes towed-car money bill",
+    "b": "Newsom vetoed a bill that would have made the DMV hand over leftover proceeds from sales of towed cars to their owners.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Fact check: Newsom's CARE Court numbers",
+    "b": "Newsom said CARE Court helped 10,000+ Californians, but state data shows 1,470 with treatment agreements or plans as of June.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "South LA hears District 9 council candidates",
+    "b": "Candidates Jose Ugarte and Estuardo Mazariegos laid out plans on housing, transit and safety at a forum held in extreme heat.",
+    "date": "2026-10-05"
+   },
    {
     "h": "Malibu PCH speed cameras to start with warnings",
     "b": "Malibu's speed cameras will issue warnings starting in November, with fines after a 60-day period.",
@@ -309,41 +384,43 @@
    }
   ],
   "weather": {
-   "now": {
-    "temp": 79,
-    "cond": "Clear",
-    "obs": "Oct 5, 1:25 am PDT"
-   },
+   "now": null,
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 98,
-     "text": "Sunny and hot, with a high near 98. Extreme Heat Warning in effect."
+     "text": "Sunny and hot, with a high near 98. East northeast wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 73,
-     "text": "Mostly clear, with a low around 73."
+     "text": "Mostly clear, with a low around 73. West southwest wind 5 to 10 mph becoming light and variable  in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 97,
-     "text": "Sunny and hot, with a high near 97."
+     "text": "Sunny and hot, with a high near 97. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 71,
-     "text": "Clear, with a low around 71."
+     "text": "Clear, with a low around 71. Southwest wind 5 to 10 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 97,
-     "text": "Sunny and hot, with a high near 97."
+     "text": "Sunny and hot, with a high near 97. Calm wind becoming west southwest around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 69,
+     "text": "Clear, with a low around 69."
     }
    ]
   },
@@ -359,7 +436,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -376,6 +453,29 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Pressure on Mamdani to fix Hunts Point market",
+    "b": "Advocates want the mayor to revive a $650 million plan to cut diesel pollution at the South Bronx produce market.",
+    "date": "2026-10-05",
+    "more": [
+     "The market supplies up to 60% of the city's fruits and vegetables."
+    ]
+   },
+   {
+    "h": "Cyclist dies after hitting off-leash dog in Central Park",
+    "b": "A 71-year-old cyclist died after colliding with an unleashed dog on East Drive near 84th Street Monday morning, police said.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Two Legionnaires' cases at Queens housing complex",
+    "b": "Two North Shore Towers residents were diagnosed with Legionnaires' disease, and the Health Department is investigating.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Man who shot border officer gets 15 years",
+    "b": "A man who shot an off-duty Customs and Border Protection officer in a botched robbery in Fort Washington Park was sentenced to 15 years.",
+    "date": "2026-10-05"
+   },
    {
     "h": "Mamdani to clear 10,000 families off childcare waitlist",
     "b": "The city will clear 10,000 families from the subsidized childcare waitlist after the program ran out of money.",
@@ -401,50 +501,50 @@
     "h": "Legionnaires' outbreaks spark NYC water debate",
     "b": "Groups backed by cooling tower companies propose citywide drinking water filtration; some experts doubt it's needed.",
     "date": "2026-10-05"
-   },
-   {
-    "h": "City Council hearing to spotlight AI risks",
-    "b": "The City Council will hear from four tech workers and whistleblowers about the dangers of AI.",
-    "date": "2026-10-05"
-   },
-   {
-    "h": "Sixth person dies after falling ill in NYPD custody",
-    "b": "A 54-year-old man died after becoming ill following his arrest Friday, the sixth in-custody death this year.",
-    "date": "2026-10-04"
    }
   ],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 67,
+    "cond": "Mostly Cloudy",
+    "obs": "5 Oct 12:51 pm EDT"
+   },
    "periods": [
     {
-     "name": "Monday",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 69,
-     "text": "Sunny, with a high near 69. Breezy, with a northwest wind 16 to 21 mph in the afternoon."
+     "temp": 72,
+     "text": "Mostly sunny, with a high near 72. Northwest wind around 16 mph, with gusts as high as 30 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Clear, with a low around 50. Northwest wind 13 to 15 mph."
+     "text": "Mostly clear, with a low around 50. Northwest wind 10 to 13 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 63,
-     "text": "Sunny, with a high near 63. Northwest wind 9 to 11 mph."
+     "temp": 65,
+     "text": "Sunny, with a high near 65. Northwest wind 9 to 11 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Clear, with a low around 50. West wind 3 to 7 mph."
+     "text": "Clear, with a low around 50. West wind 3 to 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68."
+     "text": "Sunny, with a high near 68. Light southwest wind becoming south 8 to 13 mph in the morning. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Mostly clear, with a low around 58."
     }
    ]
   },
@@ -460,12 +560,17 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
     "h": "American chestnut returns to the Bronx Zoo",
     "b": "The Bronx Zoo is getting 25 blight-resistant chestnut saplings to help restore a tree nearly wiped out for over a century.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Late-night soccer returns to five NYC parks",
+    "b": "One soccer field in each borough will stay lit until 2 a.m. this fall and next spring, after a summer pilot drew 4,500 players.",
     "date": "2026-10-05"
    }
   ]
@@ -479,19 +584,24 @@
   },
   "local": [
    {
-    "h": "Up to 500 French schools to close Monday",
-    "b": "Up to 500 schools were set to close fully or partly Monday as student protests spread, the education minister said.",
-    "date": "2026-10-04"
+    "h": "Teen protester loses hand to police grenade",
+    "b": "A 15-year-old in Lens lost his hand Monday when a police sting-ball grenade exploded during a school protest.",
+    "date": "2026-10-05"
    },
    {
-    "h": "Le Pen voices 'complete confidence' in Bardella",
-    "b": "Marine Le Pen said she has complete confidence in Jordan Bardella.",
-    "date": "2026-10-04"
+    "h": "Unions call new day of school protests Tuesday",
+    "b": "French unions called strikes and demonstrations for October 6 in support of high school students protesting poor conditions.",
+    "date": "2026-10-05"
    },
    {
-    "h": "Shared French-Swiss lake is drying up",
-    "b": "A lake shared by France and Switzerland is running critically low.",
-    "date": "2026-10-04"
+    "h": "France to suspend licences for phone use at wheel",
+    "b": "Drivers caught using a handheld phone will face licence suspensions nationwide after local pilot schemes.",
+    "date": "2026-10-05"
+   },
+   {
+    "h": "Single train-and-plane ticket extends to Ouigo",
+    "b": "Air France and SNCF's combined Train + Air ticket now covers some low-cost Ouigo trains to Paris-Charles de Gaulle.",
+    "date": "2026-10-05"
    }
   ],
   "weather": {
@@ -510,7 +620,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "goodnews": []
  },
  {
@@ -521,41 +631,37 @@
   },
   "local": [],
   "weather": {
-   "now": {
-    "temp": 55,
-    "cond": "Fog",
-    "obs": "Oct 5, 8:00 am PDT"
-   },
+   "now": null,
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Partly sunny, with a high near 67. Calm wind."
+     "text": "Partly sunny, with a high near 67. Calm wind. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 53,
-     "text": "Increasing clouds, with a low around 53."
+     "text": "Increasing clouds, with a low around 53. Light northeast wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 65,
-     "text": "Partly sunny, with a high near 65."
+     "text": "Partly sunny, with a high near 65. North wind 3 to 7 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Partly cloudy, with a low around 51."
+     "text": "Partly cloudy, with a low around 51. North northeast wind 5 to 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66."
+     "text": "Mostly sunny, with a high near 66. North northeast wind 5 to 8 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -577,7 +683,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-05T17:11:00Z",
+  "updatedAt": "2026-10-05T19:08:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
