@@ -607,8 +607,9 @@ function digit(g, d, x, y, col){ g.fillStyle = col; const m = DIG[d]; for (let i
 function drawPlayer(g, a){
   const sx = sxOf(a.x), sy = syOf(a.y) - (a.hop || 0);
   if (sx < -12 || sx > W + 12) return;
-  const k = a.kit, x0 = sx - 5, y0 = sy - 18;
-  g.fillStyle = 'rgba(0,0,0,.35)'; g.fillRect(x0 + 1, syOf(a.y) - 1, 9, 2);
+  // someone sitting is three pixels shorter, with no shadow (the chair is under them)
+  const k = a.kit, x0 = sx - 5, y0 = sy - 18 + (a.sit ? 3 : 0);
+  if (!a.sit) { g.fillStyle = 'rgba(0,0,0,.35)'; g.fillRect(x0 + 1, syOf(a.y) - 1, 9, 2); }
   if (isBB()) {
     // basketball: no helmet, so skin and hair come from the player's headshot when it can be read (a headband until then)
     const sk = a.looks?.skin || '#c68642';
@@ -616,13 +617,20 @@ function drawPlayer(g, a){
     if (a.looks?.hair) { g.fillStyle = a.looks.hair; g.fillRect(x0 + 3, y0, 4, 2); }
     else if (!a.looks) { g.fillStyle = k.stripe; g.fillRect(x0 + 3, y0 + 1, 4, 1); }
     g.fillStyle = k.jersey; g.fillRect(x0 + 1, y0 + 6, 8, 6);
-    g.fillStyle = sk; g.fillRect(x0, y0 + 6, 1, 5); g.fillRect(x0 + 9, y0 + 6, 1, 5);
+    if (k.ref) { g.fillStyle = '#111'; for (let i = 2; i < 9; i += 2) g.fillRect(x0 + i, y0 + 6, 1, 6); }
+    // arms: at the sides, or a referee's signal (one arm up for a three-point try, both for a three, a fist for a foul)
+    g.fillStyle = sk;
+    const up = a.signal === 'arms' ? [1, 1] : a.signal === 'one' || a.signal === 'fist' ? [0, 1] : [0, 0];
+    up[0] ? g.fillRect(x0, y0 - 3, 1, 9) : g.fillRect(x0, y0 + 6, 1, 5);
+    up[1] ? g.fillRect(x0 + 9, y0 - 3, 1, 9) : g.fillRect(x0 + 9, y0 + 6, 1, 5);
+    if (a.signal === 'fist') g.fillRect(x0 + 8, y0 - 4, 3, 2);
     const n = a.num;
     if (n != null && Number.isFinite(n)) { if (n >= 10) { digit(g, Math.floor(n / 10) % 10, x0 + 1, y0 + 6, k.num); digit(g, n % 10, x0 + 6, y0 + 6, k.num); } else digit(g, n, x0 + 3, y0 + 6, k.num); }
+    if (a.sit) { g.fillStyle = k.pants; g.fillRect(x0 + 1, y0 + 12, 8, 2); g.fillStyle = sk; g.fillRect(x0 + 2, y0 + 14, 2, 1); g.fillRect(x0 + 6, y0 + 14, 2, 1); return; }
     g.fillStyle = k.pants; g.fillRect(x0 + 1, y0 + 12, 8, 3);
     const f = a.frame;
     g.fillStyle = sk; g.fillRect(x0 + 2, y0 + 15, 2, f ? 1 : 2); g.fillRect(x0 + 6, y0 + 15, 2, f ? 2 : 1);
-    g.fillStyle = '#f0f0f0'; g.fillRect(x0 + 2, y0 + (f ? 16 : 17), 2, 1); g.fillRect(x0 + 6, y0 + (f ? 17 : 16), 2, 1);
+    g.fillStyle = k.ref ? '#111' : '#f0f0f0'; g.fillRect(x0 + 2, y0 + (f ? 16 : 17), 2, 1); g.fillRect(x0 + 6, y0 + (f ? 17 : 16), 2, 1);
     return;
   }
   if (isMLB()) {
@@ -2008,8 +2016,19 @@ const attackDir = team => team === S.home ? 1 : -1;
 const otherTeam = t => t === S.home ? S.away : t === S.away ? S.home : null;
 const teamOfId = id => id == null ? null : isHomeId(id) ? S.home : S.away?.id === String(id) ? S.away : null;
 const RIM_BALL = BC.RIM - 9;   // the ball's height (drawBall) when it is at the rim
-// benches sit along the near sideline (the far one is under the booth), home on the left, visitors on the right
-const benchSpot = (team, i) => [(team === S.home ? 29.5 : 51) + (i % 7) * 2.2, 54];
+// benches sit on the far side toward each end (just clear of the booth when the camera is at the left end), eight chairs each
+const BENCH_N = 8, benchSpot = (team, i) => [(team === S.home ? 13 : 65.6) + (i % BENCH_N) * 2.2, -4.5];
+// the chair a player sits in; someone walking off gets a free one and keeps it
+function chairFor(team, pid){
+  const st = S.bb; if (!st || !team?.id) return benchSpot(team, 0);
+  const ch = (st.chairs ||= {})[team.id] ||= Array(BENCH_N).fill(null);
+  let i = ch.indexOf(pid);
+  if (i < 0) { i = ch.indexOf(null); if (i < 0) i = hash(pid) % BENCH_N; ch[i] = pid; }
+  return benchSpot(team, i);
+}
+// three referees in striped shirts
+const REF = {id: 'ref', abbr: 'REF', nick: 'officials', loc: '', color: '#111111', alt: '#eeeeee', kit: {jersey: '#e9e9e9', num: '#111', helmet: '#111', stripe: '#111', pants: '#1b1b1b', ref: true}};
+const REF_LOOKS = [{skin: '#c68642', hair: '#2a1a10'}, {skin: '#8d5524', hair: '#111111'}, {skin: '#e0ac69', hair: '#7a7a7a'}];
 
 function kitBB(team, isHome){
   const c = team.color, a = team.alt;
@@ -2035,8 +2054,8 @@ function buildCourt(){
     g.fillStyle = crowd[Math.floor(rnd() * crowd.length)]; g.fillRect(x, y, 3, 2);
     g.fillStyle = '#eec39a'; if (rnd() < 0.8) g.fillRect(x + 1, y - 1, 1, 1);
   }
-  // floor around the court, with room for the benches on the near side
-  const ax0 = Math.round(bcx(-7)), ax1 = Math.round(bcx(101)), ay0 = Math.round(bcy(-3)), ay1 = BC.CH;
+  // floor around the court, with room for the benches and the scorer's table on the far side
+  const ax0 = Math.round(bcx(-7)), ax1 = Math.round(bcx(101)), ay0 = Math.round(bcy(-9)), ay1 = BC.CH;
   g.fillStyle = '#05060d'; g.fillRect(ax0 - 2, ay0 - 2, ax1 - ax0 + 4, ay1 - ay0 + 4);
   g.fillStyle = '#2a2433'; g.fillRect(ax0, ay0, ax1 - ax0, ay1 - ay0);
   // hardwood
@@ -2069,23 +2088,27 @@ function buildCourt(){
   // the home team's logo at center court, and its name on both baselines
   const img = teamLogo(home);
   if (img) { g.imageSmoothingEnabled = true; g.drawImage(img, Math.round(bcx(47)) - 16, Math.round(bcy(25)) - 16, 32, 32); g.imageSmoothingEnabled = false; }
-  // benches: chairs in the team colors, and a HOME / AWAY sign with the logo
+  // benches on the far side near each end: chairs in the team colors under a HOME / AWAY sign (the players sit in them)
   g.font = '8px "Press Start 2P"'; g.textBaseline = 'middle'; g.textAlign = 'center';
+  const by = Math.round(bcy(benchSpot(home, 0)[1]));
   for (const t of [home, away]) {
-    // the chairs along the bottom of the screen, the sign on the floor between them and the sideline
-    const [bx, bny] = benchSpot(t, 0), sx = Math.round(bcx(bx)) - 6, sw = Math.round(6 * 2.2 * BC.KX) + 12, by = Math.round(bcy(bny)), sy = Math.round(bcy(50)) + 1;
-    g.fillStyle = '#05060d'; g.fillRect(sx, by - 3, sw, BC.CH - by + 3);
-    g.fillStyle = t.color; for (let i = 0; i < 7; i++) g.fillRect(Math.round(bcx(bx + i * 2.2)) - 3, by - 2, 7, BC.CH - by + 2);
-    g.fillStyle = t.alt; g.fillRect(sx, by - 3, sw, 1);
-    g.fillStyle = '#05060d'; g.fillRect(sx, sy, sw, 11); g.fillStyle = t.color; g.fillRect(sx + 1, sy + 1, sw - 2, 9);
+    const [bx] = benchSpot(t, 0), sx = Math.round(bcx(bx)) - 7, sw = Math.round((BENCH_N - 1) * 2.2 * BC.KX) + 14, sy = by - 30;
+    g.fillStyle = '#05060d'; g.fillRect(sx, by - 13, sw, 14);
+    for (let i = 0; i < BENCH_N; i++) {
+      const cx = Math.round(bcx(bx + i * 2.2));
+      g.fillStyle = t.color; g.fillRect(cx - 4, by - 12, 9, 8); g.fillStyle = t.alt; g.fillRect(cx - 4, by - 5, 9, 1);
+      g.fillStyle = '#4a4f5f'; g.fillRect(cx - 3, by - 4, 1, 4); g.fillRect(cx + 3, by - 4, 1, 4);
+    }
+    g.fillStyle = '#05060d'; g.fillRect(sx, sy, sw, 13); g.fillStyle = t.color; g.fillRect(sx + 1, sy + 1, sw - 2, 11);
     const lim = teamLogo(t);
-    if (lim) { g.imageSmoothingEnabled = true; g.drawImage(lim, sx + 2, sy + 1, 9, 9); g.imageSmoothingEnabled = false; }
+    if (lim) { g.imageSmoothingEnabled = true; g.drawImage(lim, sx + 2, sy + 1, 11, 11); g.imageSmoothingEnabled = false; }
     const label = `${t === home ? 'HOME' : 'AWAY'} ${t.abbr}`, tx = sx + sw / 2 + (lim ? 6 : 0);
-    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, sy + 7); g.fillStyle = '#f4f4ee'; g.fillText(label, tx, sy + 6);
+    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, sy + 8); g.fillStyle = '#f4f4ee'; g.fillText(label, tx, sy + 7);
   }
-  // scorer's table between the benches
-  const tx0 = Math.round(bcx(45)), tx1 = Math.round(bcx(49)), ty0 = Math.round(bcy(52));
-  g.fillStyle = '#05060d'; g.fillRect(tx0, ty0, tx1 - tx0, BC.CH - ty0); g.fillStyle = '#f2b632'; g.fillRect(tx0, ty0, tx1 - tx0, 1);
+  // scorer's table at center court
+  const tx0 = Math.round(bcx(43)), tx1 = Math.round(bcx(51));
+  g.fillStyle = '#05060d'; g.fillRect(tx0, by - 10, tx1 - tx0, 11); g.fillStyle = '#2c3350'; g.fillRect(tx0 + 1, by - 9, tx1 - tx0 - 2, 9);
+  g.fillStyle = '#f2b632'; g.fillRect(tx0 + 1, by - 9, tx1 - tx0 - 2, 1);
   // the baskets: stanchion, backboard, rim and net, standing on the baseline
   for (const s of [1, -1]) {
     const fx = s > 0 ? 0 : 94, bx = Math.round(bcx(fx + s * 4)), rx = Math.round(bcx(s > 0 ? BC.HOOP : 94 - BC.HOOP)), fy = Math.round(bcy(25)), ry = fy - BC.RIM;
@@ -2125,7 +2148,7 @@ function bbLineups(sum){
 // back to tip-off: the starters on the floor, nobody with the ball
 function bbReset(){
   const st = S.bb ||= {people: {}, starters: {}, looks: {}};
-  Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, run: {team: null, pts: 0, said: 0}, said: {}, holder: null});
+  Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, run: {team: null, pts: 0, said: 0}, said: {}, holder: null, chairs: {}, sitters: {}, cheer: null});
   for (const t of [S.home, S.away]) if (t) st.on[t.id] = (st.starters[t.id] || []).slice(0, 5);
   S.ball.x = 47; S.ball.y = 25; S.ball.h = 0; S.ball.vis = true;
   S.camX = bcx(47); S.camY = H / 2;
@@ -2214,7 +2237,23 @@ function bbLooks(id){
   loadLooks({id, headshot: pp?.headshot || ''}).then(l => { st.looks[id] = l; for (const a of S.actors) if (a.pid === id) a.looks = l; });
   return null;
 }
+// the referees: the lead under the basket being attacked, the trail at the near sideline, the center across from him
+function refSpots(mode, off){
+  if (mode === 'huddle') return [[43, 52], [47, 52], [51, 52]];
+  if (mode === 'tip') return [[47, 27.5], [31, 52], [63, 0.5]];
+  const hx = hoopX(off), d = attackDir(off);
+  if (mode === 'ft') return [[hx + d * 6.8, 13], [hx - d * 17, 52], [hx - d * 17, 0.5]];
+  return [[hx + d * 6.8, 14], [hx - d * 30, 52], [hx - d * 21, 0.5]];
+}
 function bbFormation(offIn, mode, first){
+  const A = bbFormationPlayers(offIn, mode, first), st = S.bb;
+  if (!A.length) return A;
+  const m = st.huddle && !mode ? 'huddle' : mode === 'tip' || (st.tip && !mode) ? 'tip' : mode === 'ft' ? 'ft' : 'play';
+  refSpots(m, offIn || st.poss || S.home).forEach(([x, y], i) => { x = clamp(x, -3, 97);
+    A.push({team: REF, pid: 'ref' + i, num: null, kit: REF.kit, looks: REF_LOOKS[i], x, y, role: 'R' + i, ref: true, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y}); });
+  return A;
+}
+function bbFormationPlayers(offIn, mode, first){
   const st = S.bb, A = []; if (!st || !S.home) return A;
   const off = offIn || st.poss || S.home, def = otherTeam(off), hx = hoopX(off), d = attackDir(off);
   const lineup = team => { const ids = (st.on[team.id] || []).slice(0, 5).sort((a, b) => bbRank(a) - bbRank(b)); while (ids.length < 5) ids.push(null); return ids; };
@@ -2225,7 +2264,8 @@ function bbFormation(offIn, mode, first){
   const offIds = lineup(off), defIds = lineup(def);
   // the player taking the free throws stands at the line
   if (first && offIds.includes(first)) { offIds.splice(offIds.indexOf(first), 1); offIds.unshift(first); }
-  if (st.huddle && !mode) { for (const t of [off, def]) lineup(t).forEach((id, i) => add(t, id, i, ...benchSpot(t, i + 1))); return A; }
+  // timeouts: each team huddles on the floor in front of its bench
+  if (st.huddle && !mode) { for (const t of [off, def]) lineup(t).forEach((id, i) => add(t, id, i, benchSpot(t, i + 1)[0], 1.5 + (i % 2) * 1.5)); return A; }
   if (mode === 'tip' || (st.tip && !mode)) {
     // the centers jump at center court; each team stands on the half it defends
     for (const t of [S.home, S.away]) {
@@ -2253,7 +2293,7 @@ function bbRest(walk){
   // in a replay the next play is known, so the players head to where it starts instead of a stock formation
   const nx = walk && S.mode === 'replay' && !st.huddle ? S.queue[0] : null, set = nx && bbSetup(nx);
   const F = set ? set.F : bbFormation();
-  const holderOf = list => set ? (set.holder && !st.loose ? list.find(a => a.team === set.holder.team && a.pid === set.holder.pid && !a.leaving) || null : null)
+  const holderOf = list => set ? (set.holder && (!st.loose || nx._caught) ? list.find(a => a.team === set.holder.team && a.pid === set.holder.pid && !a.leaving) || null : null)
     : (!st.loose && !st.huddle && !st.tip && st.poss) ? list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
   if (!walk || !S.actors.length) {
     S.actors = F; st.holder = holderOf(F);
@@ -2265,8 +2305,9 @@ function bbRest(walk){
   const take = fn => { const i = free.findIndex(fn); return i < 0 ? null : free.splice(i, 1)[0]; };
   for (const f of F) {
     const a = take(b => b.team === f.team && b.pid === f.pid);
+    if (!a && f.ref) { out.push(f); continue; }
     if (!a) {
-      const [bx, by] = benchSpot(f.team, hash(f.pid) % 7);
+      const [bx, by] = chairFor(f.team, f.pid);
       Object.assign(f, {tx: f.x, ty: f.y, x: bx, y: by, lx: bx, ly: by, entering: true, walkSpeed: 10}); out.push(f); continue;
     }
     Object.assign(a, {role: f.role, num: f.num ?? a.num, looks: f.looks || a.looks, tx: f.x, ty: f.y, track: null, chase: false, hop: 0, leaving: false,
@@ -2274,11 +2315,35 @@ function bbRest(walk){
     out.push(a);
   }
   for (const a of free) {
-    const [bx, by] = benchSpot(a.team, hash(a.pid) % 7);
+    const [bx, by] = chairFor(a.team, a.pid);
     Object.assign(a, {tx: bx, ty: by, leaving: true, entering: false, track: null, chase: false, hop: 0, walkSpeed: 8}); out.push(a);
   }
   S.actors = out; st.holder = holderOf(out);
   if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
+}
+
+/* ---- the benches: everyone not on the floor sits in a chair; they jump up for a big three or a dunk ---- */
+function drawBench(g, now){
+  const st = S.bb; if (!st || !S.home) return;
+  const walking = new Set(S.actors.filter(a => !a.gone).map(a => a.pid));
+  st.sitters ||= {};
+  for (const t of [S.home, S.away]) {
+    const on = new Set(st.on[t.id] || []), ch = ((st.chairs ||= {})[t.id] ||= Array(BENCH_N).fill(null));
+    // players on the floor give up their chair; the rest of the team fills the empty ones
+    for (let i = 0; i < BENCH_N; i++) if (ch[i] && on.has(ch[i])) ch[i] = null;
+    const team = Object.values(st.people).filter(pp => pp.team === t && !on.has(pp.id) && !ch.includes(pp.id) && !walking.has(pp.id))
+      .sort((a, b) => (a.num ?? 99) - (b.num ?? 99));
+    for (let i = 0; i < BENCH_N && team.length; i++) if (!ch[i]) ch[i] = team.shift().id;
+    const cheer = st.cheer && st.cheer.team === t && now - st.cheer.at < 1800 ? (now - st.cheer.at) / 1000 : null;
+    ch.forEach((pid, i) => {
+      if (!pid || walking.has(pid)) return;
+      const pp = bbPerson(pid), [x, y] = benchSpot(t, i);
+      const o = st.sitters[pid] ||= {team: t, pid, num: pp?.num ?? null, kit: t.kit, looks: bbLooks(pid), frame: 0};
+      o.looks ||= st.looks[pid] || null; o.x = x; o.y = y;
+      o.sit = cheer == null; o.hop = cheer == null ? 0 : Math.abs(Math.sin(cheer * 7 + i)) * 3;
+      drawPlayer(g, o);
+    });
+  }
 }
 
 /* ---- play planner ---- */
@@ -2321,7 +2386,8 @@ function bbSetup(p){
     const as = who(k.assist);
     holder = as && as !== sh ? as : sh;
   } else if (k.kind === 'reb') {
-    const rb = who(k.ids[0]); toward(rb, S.ball.x, S.ball.y, 0.5);
+    const rb = who(k.ids[0]);
+    if (p._caught) holder = rb; else toward(rb, S.ball.x, S.ball.y, 0.5);
   } else if (k.kind === 'to') {
     const h = who(k.ids[0]) || pg, stl = who(k.steal);
     if (stl && h) toward(stl, h.x, h.y, 0.4);
@@ -2343,7 +2409,7 @@ function planBB(p){
   const starts = F.map(a => {
     const prev = S.actors.find(b => !used.has(b) && b.team === a.team && b.pid === a.pid);
     if (prev) { used.add(prev); a.looks ||= prev.looks; }
-    return prev ? [prev.x, prev.y] : benchSpot(a.team, hash(a.pid) % 7);
+    return prev ? [prev.x, prev.y] : a.ref ? [a.x, a.y] : chairFor(a.team, a.pid);
   });
   const far = Math.max(0, ...F.map((a, i) => Math.hypot(a.x - starts[i][0], a.y - starts[i][1])));
   const PRE = far > 2 ? clamp(far / 22, 0.25, 1.8) : 0.05;
@@ -2358,9 +2424,22 @@ function planBB(p){
   const hx = hoopX(off), d = attackDir(off), r = hash(p.id);
   const pg = F.find(a => a.team === off && a.role === 'P0');
   const nearest = (team, x, y, not) => F.filter(a => a.team === team && a !== not).reduce((b, a) => !b || Math.hypot(a.x - x, a.y - y) < Math.hypot(b.x - x, b.y - y) ? a : b, null);
-  // the ball off the rim to a spot near the basket
+  // the next play, when it is already known (always in replays): a miss followed by a rebound is caught in the air,
+  // and a basket followed by a foul or free throws has no inbound pass yet
+  const nx = S.queue[0], nk = nx && (nx._k || (nx._k = classifyBB(nx)));
+  const refs = F.filter(a => a.ref), nearRef = (x, y) => refs.reduce((b, a) => !b || Math.hypot(a.x - x, a.y - y) < Math.hypot(b.x - x, b.y - y) ? a : b, null);
+  const signal = (a, t0, t1, kind) => { if (a) (a.sigs ||= []).push([PRE + t0, PRE + t1, kind]); };
+  // the ball off the rim: into the rebounder's hands, or (when the rebound isn't known yet) to the floor near the basket
   const bounce = (t, team) => {
     const bxp = hoopX(team) - attackDir(team) * (4 + r % 9), byp = clamp(25 + (r % 21) - 10, 6, 44);
+    const catcher = nk?.kind === 'reb' && nk.ids[0] ? who(nk.ids[0]) : null;
+    if (catcher) {
+      nx._caught = true; plan.catcher = catcher;
+      seg(t, t + 0.55, {k: 'arc', x0: hoopX(team), y0: 25, x1: bxp + 0.4, y1: byp, peak: 10, start: RIM_BALL, end: 7});
+      go(catcher, t + 0.5, bxp, byp); catcher.hopAt = PRE + t + 0.35;
+      seg(t + 0.55, t + 30, {k: 'hold', a: catcher}); sfx(t, 'rim');
+      return t + 0.55;
+    }
     seg(t, t + 0.6, {k: 'arc', x0: hoopX(team), y0: 25, x1: bxp, y1: byp, peak: 12, start: RIM_BALL, end: 0});
     seg(t + 0.6, t + 30, {k: 'spot', x: bxp, y: byp, h: 0}); sfx(t, 'rim');
     return t + 0.6;
@@ -2369,6 +2448,26 @@ function planBB(p){
     const x = hoopX(team);
     seg(t, t + 0.35, {k: 'arc', x0: x, y0: 25, x1: x, y1: 25.5, peak: 0, start: RIM_BALL, end: 2});
     seg(t + 0.35, t + 30, {k: 'spot', x: x - attackDir(team) * 1.5, y: 26, h: 0}); sfx(t, 'swish');
+    return inbound(t, team);
+  };
+  const through0 = (t, team) => { const x = hoopX(team);
+    seg(t, t + 0.35, {k: 'arc', x0: x, y0: 25, x1: x, y1: 25.5, peak: 0, start: RIM_BALL, end: 2});
+    seg(t + 0.35, t + 30, {k: 'spot', x: x - attackDir(team) * 1.5, y: 26, h: 0}); sfx(t, 'swish'); };
+  // after a basket the other team takes the ball out under the basket and passes it in to the point guard
+  const inbound = (t, team) => {
+    const nt = otherTeam(team); if (!nt || (nk && ['foul', 'ft'].includes(nk.kind))) return t;
+    const x = hoopX(team), dd = attackDir(team), side = r % 2 ? 1 : -1;
+    const inb = F.filter(a => a.team === nt && a.role !== 'P0').sort((a, b) => Math.hypot(a.x - x, a.y - 25) - Math.hypot(b.x - x, b.y - 25))[0];
+    const rcv = F.find(a => a.team === nt && a.role === 'P0');
+    if (!inb || !rcv) return t;
+    const land = [x - dd * 1.5, 26], ob = [x + dd * 6.6, 25 + side * 5], to = [x - dd * 15, 25 - side * 9];
+    go(inb, t + 0.5, land[0], land[1]); seg(t + 0.5, t + 1.3, {k: 'hold', a: inb});
+    go(inb, t + 1.15, ob[0], ob[1]); hold(inb, t + 1.6); go(inb, t + 2.1, x - dd * 3, ob[1]);
+    go(rcv, t + 1.3, to[0], to[1]);
+    seg(t + 1.3, t + 1.75, {k: 'arc', x0: ob[0], y0: ob[1], xa: rcv, peak: 4, start: 3, end: 1});
+    seg(t + 1.75, t + 30, {k: 'hold', a: rcv});
+    plan.inbound = true;
+    return t + 1.8;
   };
   let tEnd = 1;
   if (k.kind === 'shot') {
@@ -2398,45 +2497,55 @@ function planBB(p){
     } else if (k.dunk) {
       seg(tShot, tShot + 0.25, {k: 'arc', x0: spot[0], y0: spot[1], x1: hx, y1: 25, peak: 4, start: 12, end: RIM_BALL});
       sh.track.push([PRE + tShot + 0.25, spot[0], spot[1]]); sh.dunk = [PRE + tShot - 0.1, PRE + tShot + 0.5];
-      if (k.made) { through(tShot + 0.25, off); sfx(tShot + 0.25, 'dunk'); } else bounce(tShot + 0.25, off);
-      tEnd = tShot + 1;
+      if (k.made) { tEnd = Math.max(tShot + 1, through(tShot + 0.25, off) + 0.2); sfx(tShot + 0.25, 'dunk'); } else { bounce(tShot + 0.25, off); tEnd = tShot + 1; }
     } else {
       const air = 0.45 + dist / 42;
       seg(tShot, tShot + air, {k: 'arc', x0: spot[0], y0: spot[1], x1: hx, y1: 25, peak: 8 + dist * 0.9, start: 12, end: RIM_BALL});
       sh.shoot = [PRE + tShot - 0.15, PRE + tShot + 0.25];
-      if (k.made) through(tShot + air, off); else bounce(tShot + air, off);
-      tEnd = tShot + air + 0.8;
+      if (k.made) {
+        tEnd = Math.max(tShot + air + 0.8, through(tShot + air, off) + 0.2);
+        // a three: the nearest referee raises both arms
+        if (k.three) signal(nearRef(spot[0], spot[1]), tShot + air, tShot + air + 1.4, 'arms');
+      } else { bounce(tShot + air, off); tEnd = tShot + air + 0.8; }
+      if (k.three) signal(nearRef(spot[0], spot[1]), tShot - 0.1, tShot + air - 0.05, 'one');
     }
     // everyone else drifts toward the basket for the rebound on a miss
-    if (!k.made) for (const a of F) if (a !== sh && a !== blk && a !== df && hash(a.pid + p.id) % 3 === 0) go(a, tEnd - 0.3, a.x + (hx - a.x) * 0.35, a.y + (25 - a.y) * 0.3);
+    if (!k.made) for (const a of F) if (a !== sh && a !== blk && a !== df && a !== plan.catcher && !a.ref && hash(a.pid + p.id) % 3 === 0) go(a, tEnd - 0.3, a.x + (hx - a.x) * 0.35, a.y + (25 - a.y) * 0.3);
   } else if (k.kind === 'ft') {
     const sh = who(k.ids[0]) || F.find(a => a.team === off && a.role === 'P0');
     seg(0, 0.7, {k: 'hold', a: sh}); sh.shoot = [PRE + 0.55, PRE + 0.9];
     seg(0.7, 1.5, {k: 'arc', x0: hx - d * 13.75, y0: 25, x1: hx, y1: 25, peak: 22, start: 12, end: RIM_BALL});
-    if (k.made) through(1.5, off); else bounce(1.5, off);
     tEnd = 2.2;
+    if (k.made) { if (k.last && !k.tech) tEnd = Math.max(tEnd, through(1.5, off) + 0.2); else through0(1.5, off); } else bounce(1.5, off);
   } else if (k.kind === 'reb') {
     // whoever rebounds goes to the loose ball
     const bx = S.ball.x, by = S.ball.y;
     const rb = who(k.ids[0]) || nearest(k.team || off, bx, by);
-    seg(0, 0.5, {k: 'spot', x: bx, y: by, h: Math.max(0, S.ball.h)});
-    if (rb) { go(rb, 0.5, bx, by); rb.hopAt = PRE + 0.45; seg(0.5, 30, {k: 'hold', a: rb}); }
-    const op = rb && nearest(otherTeam(rb.team), bx, by); if (op) go(op, 0.5, bx + (op.x > bx ? 2 : -2), by + 1.5);
-    tEnd = 0.9;
+    if (p._caught && rb) {
+      // caught off the rim on the last play: the rebounder brings it down and looks up the floor
+      seg(0, 30, {k: 'hold', a: rb}); tEnd = 0.5;
+    } else {
+      seg(0, 0.5, {k: 'spot', x: bx, y: by, h: Math.max(0, S.ball.h)});
+      if (rb) { go(rb, 0.5, bx, by); rb.hopAt = PRE + 0.45; seg(0.5, 30, {k: 'hold', a: rb}); }
+      const op = rb && nearest(otherTeam(rb.team), bx, by); if (op) go(op, 0.5, bx + (op.x > bx ? 2 : -2), by + 1.5);
+      tEnd = 0.9;
+    }
   } else if (k.kind === 'to') {
     const h = who(k.ids[0]) || pg, stl = who(k.steal);
     seg(0, 0.5, {k: 'hold', a: h});
     if (stl) { const [x, y] = at(h); go(stl, 0.5, x + d * 1.2, y + 0.8); seg(0.5, 30, {k: 'hold', a: stl}); go(stl, 1.3, x - d * 8, y); tEnd = 1.4; sfx(0.5, 'pop'); }
     else {
       const [x, y] = at(h), oy = y < 25 ? -1.5 : 51.5;
-      if (/traveling|violation|3 second|goaltending|backcourt|double dribble|palming|kicked/i.test((p.text || '') + ' ' + (p.type?.text || ''))) { seg(0.5, 30, {k: 'hold', a: h}); sfx(0.4, 'whistle'); tEnd = 1.1; }
+      if (/traveling|violation|3 second|goaltending|backcourt|double dribble|palming|kicked/i.test((p.text || '') + ' ' + (p.type?.text || ''))) { seg(0.5, 30, {k: 'hold', a: h}); sfx(0.4, 'whistle'); signal(nearRef(x, y), 0.4, 1.4, 'fist'); tEnd = 1.4; }
       else { seg(0.5, 1.1, {k: 'arc', x0: x, y0: y, x1: x + d * 3, y1: oy, peak: 6, start: 1, end: 0}); seg(1.1, 30, {k: 'spot', x: x + d * 3, y: oy, h: 0}); sfx(1.1, 'whistle'); tEnd = 1.4; }
     }
   } else if (k.kind === 'foul') {
     const fo = who(k.ids[0]), vi = who(k.ids[1]) || pg;
     seg(0, 30, {k: 'hold', a: vi || pg});
     if (fo && vi) { const [x, y] = at(vi); go(fo, 0.45, x + (fo.x > x ? 1.4 : -1.4), y + 0.5); }
-    sfx(0.5, 'whistle'); tEnd = 1.2;
+    // the closest referee blows the whistle and raises a fist
+    const [fx, fy] = vi ? at(vi) : [hx, 25]; signal(nearRef(fx, fy), 0.45, 1.8, 'fist');
+    sfx(0.5, 'whistle'); tEnd = 1.6;
   } else if (k.kind === 'jump') {
     // the toss at center court, tipped to a teammate
     const rcv = who(k.ids[2]) || F.find(a => a.team === (k.recv || S.home) && a.role === 'P1');
@@ -2555,6 +2664,7 @@ async function runPlayBB(p, fast, tok){
   if (tok !== S.token) return;
   const before = {...S.prevScore};
   addLog(p); applyState(p, plan);
+  if (k.kind === 'shot' && k.made && (k.three || k.dunk) && S.bb) S.bb.cheer = {team: k.team, at: performance.now()};
   if (!plan.static || ['sub', 'timeout', 'end'].includes(k.kind)) restFormation(true, plan);
   if (isTimeout) showTimeout(p);
   if (k.kind === 'end') sfx('buzzer');
@@ -2652,6 +2762,7 @@ function step(now){
       if (p.shoot && t >= p.shoot[0] && t <= p.shoot[1]) p.hop = Math.sin((t - p.shoot[0]) / (p.shoot[1] - p.shoot[0]) * Math.PI) * 4;
       else if (p.dunk && t >= p.dunk[0] && t <= p.dunk[1]) p.hop = Math.sin((t - p.dunk[0]) / (p.dunk[1] - p.dunk[0]) * Math.PI) * 9;
       else if (p.hopAt && t >= p.hopAt && t <= p.hopAt + 0.4) p.hop = Math.sin((t - p.hopAt) / 0.4 * Math.PI) * 6;
+      p.signal = p.sigs ? p.sigs.find(q => t >= q[0] && t <= q[1])?.[2] || null : null;
     }
     ballAt(plan, t);
     for (const [ts, name] of plan.sfx) if (t >= ts && !a.fired.has(ts + name)) { a.fired.add(ts + name); if (name && name !== 'snap') sfx(name); }
@@ -2661,7 +2772,7 @@ function step(now){
     // between plays: players walk back to the line
     const dt = Math.min(0.05, (now - (S.lastNow || now)) / 1000);
     for (const p of S.actors) {
-      p.swinging = false;
+      p.swinging = false; p.signal = null;
       if (p.tx == null) { p.frame = 0; p.moving = false; continue; }
       const dx = p.tx - p.x, dy = p.ty - p.y, d = Math.hypot(dx, dy);
       if (d < 0.05) { p.x = p.tx; p.y = p.ty; p.tx = null; p.frame = 0; p.spd = 0; p.entering = false; if (p.leaving) p.gone = true; continue; }
@@ -2676,8 +2787,13 @@ function step(now){
   if (S.actors.some(p => p.gone)) S.actors = S.actors.filter(p => !p.gone); // back in the dugout
   if (isBB()) {
     // between plays the ball handler dribbles; the camera follows the ball, like football's
-    const h = !S.anim && S.bb?.holder;
-    if (h && S.actors.includes(h)) { S.ball.x = h.x + 0.7; S.ball.y = h.y + 0.3; S.ball.h = h.moving ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
+    const h = !S.anim && S.bb?.holder, bdt = Math.min(0.05, (now - (S.bbLast || now)) / 1000); S.bbLast = now;
+    if (h && S.actors.includes(h)) {
+      const tx = h.x + 0.7, ty = h.y + 0.3, dx = tx - S.ball.x, dy = ty - S.ball.y, d = Math.hypot(dx, dy);
+      // a new ball handler gets a pass rather than the ball jumping to them
+      if (d > 1.5) { const sp = Math.min(d, 42 * bdt); S.ball.x += dx / d * sp; S.ball.y += dy / d * sp; S.ball.h = Math.min(6, 2 + d * 0.4); }
+      else { S.ball.x = tx; S.ball.y = ty; S.ball.h = h.moving ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
+    }
     // the camera pans left and right with the ball; the court's full width is always on screen
     // and stops with each baseline a little in from the edge of the screen
     const tx = clamp(bcx(S.ball.x), bcx(0) - 70 + W / 2, bcx(94) + 70 - W / 2);
@@ -2704,6 +2820,7 @@ function render(now){
   ctx.fillStyle = '#0c0e1c'; ctx.fillRect(0, 0, W, H);
   if (isBB()) {
     if (S.field) ctx.drawImage(S.field, Math.round(S.camX - W / 2), Math.round(S.camY - H / 2), W, H, 0, 0, W, H);
+    if (S.mode) drawBench(ctx, now);
     for (const a of [...S.actors].sort((a, b) => a.y - b.y)) drawPlayer(ctx, a);
     if (S.mode) drawBall(ctx);
     drawBooth(now);
