@@ -902,5 +902,8 @@ fillCities();if(CITIES[$("city").value])applyCity();else setStatus("Showing "+FE
 buildCast();onData();requestAnimationFrame(frame);connect();
 })();
 </script>
-
+<script>
+// Opened on its own (not inside the Pixel Broadcasting switcher): add a way over to sports
+if(window.top===window){var pbc=document.createElement("a");pbc.href="../#sports";pbc.textContent="SPORTS \u25B6";pbc.setAttribute("aria-label","Switch to the sports channel");pbc.style.cssText="position:fixed;top:8px;right:8px;z-index:9999;font:11px 'Press Start 2P',ui-monospace,monospace;padding:8px 10px;background:#f7c948;color:#1a1300;text-decoration:none;border:2px solid #2c3364";document.body.appendChild(pbc)}
+</script>
 </html>
