@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@700&family=Silkscreen&family=VT323&display=swap">
 <style>
-/* Layout: arcade cabinet. Header with sport tabs, 16:9 stage with booth (top-left) and scoreboard (top-right), live feed under it, game list at right. */
+/* Layout: arcade cabinet. Header with sport tabs (NFL and MLB work), 16:9 stage with booth (top-left) and scoreboard (top-right), live feed under it, game list at right. */
 :root{
   --bg:#0a0c18; --panel:#131733; --panel-2:#1a1f45; --ink:#eceefa; --dim:#9ba3cc;
   --gold:#f2b632; --live:#e5383b; --grass:#2e8a3c; --edge:#272d5c; --navy:#1d2766;
@@ -105,6 +105,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 #log li{display:grid;grid-template-columns:7.5em 3.2em minmax(0,1fr);gap:8px;padding:3px 0;border-bottom:1px dashed #2a3060;color:#c9c6b4}
 #log li:first-child{color:var(--ink)}
 #log li.score{color:var(--gold)}
+#log li.pitch{color:var(--dim)}
 #log .t{color:var(--dim);font-variant-numeric:tabular-nums}
 #log .tm{font-weight:bold}
 #log .empty{display:block;color:var(--dim);border:0}
@@ -193,7 +194,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     <nav class="tabs" aria-label="Sport">
       <button class="tab" aria-pressed="true" id="sport-nfl">NFL</button>
       <button class="tab" disabled>NBA<small>soon</small></button>
-      <button class="tab" disabled>MLB<small>soon</small></button>
+      <button class="tab" aria-pressed="false" id="sport-mlb">MLB</button>
       <button class="tab" disabled>NHL<small>soon</small></button>
       <button class="tab" disabled>MLS<small>soon</small></button>
     </nav>
@@ -282,12 +283,17 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 <script>
 'use strict';
 /* ================= config ================= */
-const API = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl';
+// each sport reads its own ESPN feeds; the NFL and MLB tabs switch between them
+const SPORTS = {
+  nfl: {name: 'NFL', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl'},
+  mlb: {name: 'MLB', api: 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb', site: 'https://site.web.api.espn.com/apis/common/v3/sports/baseball/mlb'}
+};
+let API = SPORTS.nfl.api, SITE = SPORTS.nfl.site;
 const W = 480, H = 270, PX = 8, FT = 64, FB = 250, SY = (FB - FT) / 53.3, MIDY = 26.65;
 const QUIRK = {CLV:'CLE', ARZ:'ARI', BLT:'BAL', HST:'HOU', JAC:'JAX', SL:'LAR', LA:'LAR', WAS:'WSH'};
 
 const S = {
-  events: new Map(), game: null, mode: null, home: null, away: null,
+  sport: 'nfl', events: new Map(), game: null, mode: null, home: null, away: null,
   roster: {}, over: {}, seen: new Set(), queue: [], token: 0, pumping: null,
   actors: [], ball: {x: 50, y: MIDY, h: 0, vis: true}, cam: 50, anim: null, flag: null,
   prevScore: {h: 0, a: 0}, sound: false, voices: false, started: false, speaking: null, field: null
@@ -341,7 +347,8 @@ function teamsOf(ev){
 async function loadScoreboard(){
   const now = new Date(), later = new Date(now.getTime() + 10 * 864e5), earlier = new Date(now.getTime() - 8 * 864e5);
   const urls = [API + '/scoreboard', API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later), API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now)];
-  const res = await Promise.allSettled(urls.map(getJSON));
+  const sport = S.sport, res = await Promise.allSettled(urls.map(getJSON));
+  if (sport !== S.sport) return false; // the viewer switched sports while this was loading
   let ok = false;
   for (const r of res) {
     if (r.status !== 'fulfilled') continue; ok = true;
@@ -387,7 +394,7 @@ function renderList(){
       el.append(b);
     }
   };
-  fill($('list-live'), live, 'No NFL games live right now.');
+  fill($('list-live'), live, `No ${SPORTS[S.sport].name} games live right now.`);
   fill($('list-next'), next, 'No games scheduled in the next 10 days.');
   fill($('list-final'), fin, 'No recent finals.');
 }
@@ -397,21 +404,28 @@ const GROUP = {QB:'QB', RB:'RB', FB:'RB', HB:'RB', WR:'WR', TE:'TE', C:'OL', G:'
   DE:'DL', DT:'DL', NT:'DL', DL:'DL', LB:'LB', OLB:'LB', ILB:'LB', MLB:'LB', CB:'CB', S:'S', FS:'S', SS:'S', DB:'S', PK:'K', K:'K', P:'P'};
 const FALLBACK = {QB:[12], RB:[28,32], WR:[11,13,81], TE:[87], OL:[70,71,72,73,74], DL:[90,91,92,93], LB:[50,51,52], CB:[21,24], S:[31,33], K:[3], P:[8]};
 
+// MLB positions, grouped the way a baseball roster reads
+const MLB_SIDE = {SP: 'PITCHERS', RP: 'PITCHERS', P: 'PITCHERS', C: 'CATCHERS', '1B': 'INFIELDERS', '2B': 'INFIELDERS', '3B': 'INFIELDERS', SS: 'INFIELDERS', IF: 'INFIELDERS',
+  LF: 'OUTFIELDERS', CF: 'OUTFIELDERS', RF: 'OUTFIELDERS', OF: 'OUTFIELDERS', DH: 'DESIGNATED HITTERS'};
 async function loadRoster(team){
   if (S.roster[team.id]) return;
-  const pools = {}; const all = [];
+  const pools = {}, all = [], byId = {};
   try {
     const d = await getJSON(`${API}/teams/${team.id}/roster`);
-    for (const g of d.athletes || []) for (const it of g.items || []) {
-      const grp = GROUP[it.position?.abbreviation]; if (!it.jersey) continue;
-      const p = {num: Number(it.jersey), first: it.firstName || '', last: it.lastName || '', grp, side: g.position,
+    for (const g of d.athletes || []) for (const it of g.items || [g]) {
+      // football rosters come in groups (offense, defense, special teams); some baseball rosters are one flat list
+      if (!it || !(it.id || it.displayName)) continue;
+      const pos = it.position?.abbreviation || '', grp = isMLB() ? pos : GROUP[pos];
+      if (!it.jersey && !isMLB()) continue;
+      const side = isMLB() ? (MLB_SIDE[pos] || String(g.items ? g.position || '' : it.position?.displayName || 'OTHER').toUpperCase()) : g.position;
+      const p = {num: it.jersey != null && it.jersey !== '' ? Number(it.jersey) : null, first: it.firstName || '', last: it.lastName || '', grp, side,
         id: String(it.id || ''), name: it.displayName || ((it.firstName || '') + ' ' + (it.lastName || '')),
-        pos: it.position?.abbreviation || '', posName: it.position?.displayName || it.position?.name || '',
+        pos, posName: it.position?.displayName || it.position?.name || '', bats: it.bats?.abbreviation || it.bats?.type || '',
         age: it.age, ht: it.displayHeight, wt: it.displayWeight, exp: it.experience?.years, college: it.college?.name || it.college?.shortName, headshot: it.headshot?.href || ''};
-      all.push(p); if (grp) (pools[grp] ||= []).push(p);
+      all.push(p); if (p.id) byId[p.id] = p; if (grp) (pools[grp] ||= []).push(p);
     }
   } catch (e) { /* fall back to stock numbers */ }
-  S.roster[team.id] = {pools, all}; S.over[team.id] = {};
+  S.roster[team.id] = {pools, all, byId}; S.over[team.id] = {};
 }
 function numFor(team, role){
   const o = S.over[team.id]?.[role]; if (o != null) return o;
@@ -435,12 +449,14 @@ const NAME_RE = /\b[A-Z][A-Za-z']{0,2}\.\s?[A-Z][A-Za-z'\-]+/g;
 /* ================= field geometry ================= */
 const isHomeId = id => S.home && String(id) === S.home.id;
 const xOf = (teamId, yte) => isHomeId(teamId) ? 100 - yte : yte;
-const sxOf = x => Math.round((x - S.cam) * PX + W / 2);
-const syOf = y => Math.round(FT + clamp(y, -1, 54.3) * SY);
+// football: x in yards along the field, y in yards across it. Baseball: feet, see the MLB section.
+const sxOf = x => isMLB() ? Math.round(mcx(x) - (S.camX - W / 2)) : Math.round((x - S.cam) * PX + W / 2);
+const syOf = y => isMLB() ? Math.round(mcy(y) - (S.camY - H / 2)) : Math.round(FT + clamp(y, -1, 54.3) * SY);
 
 /* ================= the fixed art: field ================= */
 function mulberry(a){ return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 function buildField(){
+  if (isMLB()) return buildDiamond();
   const c = document.createElement('canvas'); c.width = 140 * PX; c.height = H;
   const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
   const X = x => (x + 20) * PX;
@@ -498,12 +514,24 @@ function drawPlayer(g, a){
   if (sx < -12 || sx > W + 12) return;
   const k = a.kit, x0 = sx - 5, y0 = sy - 18;
   g.fillStyle = 'rgba(0,0,0,.35)'; g.fillRect(x0 + 1, syOf(a.y) - 1, 9, 2);
-  g.fillStyle = k.helmet; g.fillRect(x0 + 2, y0, 6, 5);
-  g.fillStyle = k.stripe; g.fillRect(x0 + 4, y0, 2, 5);
+  if (isMLB()) {
+    // ball cap and face; the batter holds a bat until he swings or runs
+    g.fillStyle = k.helmet; g.fillRect(x0 + 2, y0, 6, 3); g.fillRect(x0 + 1, y0 + 2, 8, 1);
+    g.fillStyle = '#c68642'; g.fillRect(x0 + 3, y0 + 3, 4, 2);
+    if (a.bat && !a.moving) {
+      g.fillStyle = '#d9b77e';
+      if (a.swinging) g.fillRect(a.x < 0 ? x0 + 6 : x0 - 6, y0 + 8, 10, 1);
+      else g.fillRect(a.x < 0 ? x0 + 9 : x0, y0 - 4, 1, 9);
+    }
+  } else {
+    g.fillStyle = k.helmet; g.fillRect(x0 + 2, y0, 6, 5);
+    g.fillStyle = k.stripe; g.fillRect(x0 + 4, y0, 2, 5);
+  }
   g.fillStyle = k.jersey; g.fillRect(x0, y0 + 5, 10, 3); g.fillRect(x0 + 1, y0 + 8, 8, 4);
   g.fillStyle = '#c68642'; g.fillRect(x0 - 1, y0 + 7, 1, 4); g.fillRect(x0 + 10, y0 + 7, 1, 4);
   const n = a.num;
-  if (n >= 10) { digit(g, Math.floor(n / 10) % 10, x0 + 1, y0 + 6, k.num); digit(g, n % 10, x0 + 6, y0 + 6, k.num); }
+  if (n == null || !Number.isFinite(n)) { /* no number known: plain jersey */ }
+  else if (n >= 10) { digit(g, Math.floor(n / 10) % 10, x0 + 1, y0 + 6, k.num); digit(g, n % 10, x0 + 6, y0 + 6, k.num); }
   else digit(g, n, x0 + 3, y0 + 6, k.num);
   g.fillStyle = k.pants; g.fillRect(x0 + 2, y0 + 12, 6, 3);
   const f = a.frame;
@@ -517,6 +545,7 @@ function drawBall(g){
   const sx = sxOf(b.x), gy = syOf(b.y);
   g.fillStyle = 'rgba(0,0,0,.35)'; g.fillRect(sx - 1, gy - 1, 3, 1);
   const y = gy - 9 - b.h;
+  if (isMLB()) { g.fillStyle = '#f4f4ee'; g.fillRect(sx - 1, y, 2, 2); return; }
   g.fillStyle = '#7a3b12'; g.fillRect(sx - 2, y, 4, 2); g.fillStyle = '#fff'; g.fillRect(sx - 1, y, 1, 1);
 }
 function drawPosts(g){
@@ -590,13 +619,16 @@ const SND = {
   whistle(){ this.tone('square', 2900, 0, 0.12, 0.05); this.tone('square', 2700, 0.14, 0.32, 0.05); },
   thump(){ this.tone('triangle', 160, 0, 0.18, 0.4, 50); },
   fanfare(){ [523, 659, 784, 1046].forEach((f, i) => this.tone('square', f, i * 0.13, 0.22, 0.06)); this.tone('square', 1046, 0.55, 0.5, 0.06); },
-  groan(){ this.tone('sawtooth', 220, 0, 0.6, 0.04, 140); }
+  groan(){ this.tone('sawtooth', 220, 0, 0.6, 0.04, 140); },
+  crack(){ this.tone('square', 1800, 0, 0.05, 0.07, 500); this.tone('triangle', 420, 0, 0.12, 0.25, 120); },
+  pop(){ this.tone('triangle', 260, 0, 0.08, 0.3, 90); }
 };
 function sfx(name){
   if (!S.started) return;
   if (name === 'whistle') SND.whistle(); else if (name === 'kick') SND.thump();
   else if (name === 'td') SND.fanfare(); // no crowd noise (Chris, 2026-10-05), so 'roar' plays nothing
   else if (name === 'groan') SND.groan();
+  else if (name === 'crack') SND.crack(); else if (name === 'pop') SND.pop();
 }
 
 /* ================= voices ================= */
@@ -610,8 +642,8 @@ function pickVoices(){
 }
 if (window.speechSynthesis) { pickVoices(); speechSynthesis.onvoiceschanged = pickVoices; }
 
-function say(who, text, tok){
-  $('caption').textContent = (who === 'A' ? 'CHIP: ' : 'DUKE: ') + text;
+function say(who, text, tok, cap){
+  $('caption').textContent = cap || (who === 'A' ? 'CHIP: ' : 'DUKE: ') + text;
   if (!S.voices || !window.speechSynthesis || !S.started) {
     S.speaking = who;
     return sleep(Math.min(5200, 900 + text.length * 38)).then(() => { if (S.speaking === who) S.speaking = null; });
@@ -996,6 +1028,680 @@ function planPlay(p){
   return plan;
 }
 
+/* ================= baseball (MLB) ================= */
+// Field coordinates are in feet: home plate at (0,0), first base at (63.6,63.6), second at (0,127.3),
+// straightaway center field up the y axis. Like the football field, the park is drawn once onto a big
+// canvas and the camera pans over it.
+const MB = {FW: 960, FH: 500, KX: 1.3, KY: 0.75, PLX: 480, PLY: 470};
+const BASE = [[0, 0], [63.6, 63.6], [0, 127.3], [-63.6, 63.6], [0, 0]];
+const STATION = {P: [0, 58], C: [0, -5], '1B': [70, 86], '2B': [30, 138], SS: [-32, 138], '3B': [-70, 86], LF: [-150, 262], CF: [0, 310], RF: [150, 262]};
+const DEF_POS = ['P', 'C', '1B', '2B', 'SS', '3B', 'LF', 'CF', 'RF'];
+const BASEW = {first: 1, second: 2, third: 3, home: 4};
+const mcx = x => MB.PLX + x * MB.KX, mcy = y => MB.PLY - y * MB.KY;
+const isMLB = () => S.sport === 'mlb';
+// outfield wall distance in feet by angle from straightaway center: 330 down the lines, 375 in the gaps, 400 to center
+function fenceR(deg){ const a = Math.abs(deg); return a >= 45 ? 330 : a >= 22 ? 330 + (45 - a) / 23 * 45 : 375 + (22 - a) / 22 * 25; }
+const polar = (deg, r) => [r * Math.sin(deg * Math.PI / 180), r * Math.cos(deg * Math.PI / 180)];
+// the home team's dugout is on the third-base side, the visitors' on the first-base side
+const dugoutOf = team => team === S.home ? [-105, 22] : [105, 22];
+
+function kitMLB(team, isHome){
+  const c = team.color, a = team.alt;
+  if (isHome) return {jersey: '#f2f0e8', num: lum(c) < 0.7 ? c : (lum(a) < 0.7 ? a : '#22222c'), helmet: c, stripe: a, pants: '#f2f0e8'};
+  return {jersey: '#9a9eab', num: lum(c) < 0.45 ? c : (lum(a) < 0.45 ? a : '#22222c'), helmet: c, stripe: a, pants: '#9a9eab'};
+}
+
+function buildDiamond(){
+  const c = document.createElement('canvas'); c.width = MB.FW; c.height = MB.FH;
+  const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
+  const P = (x, y) => [mcx(x), mcy(y)];
+  g.fillStyle = '#0c0e1c'; g.fillRect(0, 0, MB.FW, MB.FH);
+  // stands everywhere; the field is painted over them
+  g.fillStyle = '#1b1d33'; g.fillRect(0, 14, MB.FW, MB.FH - 14);
+  const rnd = mulberry(1903); // fixed seed: the crowd never changes
+  const crowd = ['#d9a066','#8f563b','#eec39a','#663931','#c9c9d6', S.home.color, S.home.alt, S.away.color, '#3f3f74', '#e7e1cc'];
+  for (let y = 18; y < MB.FH; y += 5) for (let x = (y / 5 % 2) * 2; x < MB.FW; x += 4) {
+    g.fillStyle = crowd[Math.floor(rnd() * crowd.length)]; g.fillRect(x, y, 3, 2);
+    g.fillStyle = '#eec39a'; if (rnd() < 0.8) g.fillRect(x + 1, y - 1, 1, 1);
+  }
+  // the playing field: fair territory out to the wall, plus foul ground beside the lines
+  const fence = []; for (let d = -45; d <= 45; d += 1) fence.push(P(...polar(d, fenceR(d))));
+  const field = () => {
+    g.beginPath(); g.moveTo(...P(...polar(-62, 250)));
+    for (const q of fence) g.lineTo(...q);
+    g.lineTo(...P(...polar(62, 250))); g.lineTo(MB.FW - 70, MB.FH); g.lineTo(70, MB.FH); g.closePath();
+  };
+  g.save(); field(); g.clip();
+  for (let y = 0; y < MB.FH; y += 12) { g.fillStyle = (y / 12) % 2 ? '#2e8a3c' : '#2a7f37'; g.fillRect(0, y, MB.FW, 12); }
+  // warning track along the wall
+  g.fillStyle = '#9a6b45';
+  g.beginPath(); fence.forEach((q, i) => i ? g.lineTo(...q) : g.moveTo(...q));
+  for (let d = 45; d >= -45; d -= 1) g.lineTo(...P(...polar(d, fenceR(d) - 14)));
+  g.closePath(); g.fill();
+  // infield dirt, grass and base paths
+  const ell = (x, y, r, col) => { g.fillStyle = col; g.beginPath(); g.ellipse(mcx(x), mcy(y), r * MB.KX, r * MB.KY, 0, 0, Math.PI * 2); g.fill(); };
+  g.fillStyle = '#b9875a';
+  g.beginPath(); g.moveTo(...P(0, 0)); g.lineTo(...P(...polar(-45, 155))); g.ellipse(mcx(0), mcy(60.5), 95 * MB.KX, 95 * MB.KY, 0, Math.PI * 1.25, Math.PI * 1.75); g.lineTo(...P(...polar(45, 155))); g.closePath(); g.fill();
+  ell(0, 60.5, 95, '#b9875a');
+  g.fillStyle = '#2e8a3c'; g.beginPath();
+  [[0, 8], [52, 63.6], [0, 117], [-52, 63.6]].forEach((q, i) => i ? g.lineTo(...P(...q)) : g.moveTo(...P(...q)));
+  g.closePath(); g.fill();
+  ell(0, 0, 13, '#b9875a'); ell(0, 60.5, 9, '#c4936a');
+  g.fillStyle = '#f4f4ee'; g.fillRect(mcx(0) - 2, mcy(60.5) - 1, 4, 1); // pitching rubber
+  g.restore();
+  // foul lines, chalk boxes, bases
+  g.fillStyle = '#f4f4ee';
+  for (const s of [-1, 1]) for (let r = 4; r < 330; r += 0.6) { const [x, y] = polar(45 * s, r); g.fillRect(Math.round(mcx(x)), Math.round(mcy(y)), 1, 1); }
+  for (const s of [-1, 1]) { const x0 = mcx(s * 3.5), x1 = mcx(s * 7.5); g.fillRect(Math.min(x0, x1), mcy(3), Math.abs(x1 - x0), 1); g.fillRect(Math.min(x0, x1), mcy(-3), Math.abs(x1 - x0), 1); g.fillRect(x0, mcy(3), 1, 5); g.fillRect(x1, mcy(3), 1, 5); }
+  for (const b of [1, 2, 3]) { const [x, y] = P(...BASE[b]); g.fillRect(Math.round(x) - 2, Math.round(y) - 1, 4, 3); }
+  g.fillRect(mcx(0) - 2, mcy(0) - 1, 5, 2); g.fillRect(mcx(0) - 1, mcy(0) + 1, 3, 1); // home plate
+  // the outfield wall, its distance markers and the foul poles
+  for (let d = -45; d <= 45; d += 0.2) {
+    const [x, y] = P(...polar(d, fenceR(d)));
+    g.fillStyle = '#124a2a'; g.fillRect(Math.round(x), Math.round(y) - 12, 2, 12);
+    g.fillStyle = '#f7d038'; g.fillRect(Math.round(x), Math.round(y) - 13, 2, 1);
+  }
+  g.font = '8px "Press Start 2P"'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#f4f4ee';
+  for (const d of [-45, -22, 0, 22, 45]) { const [x, y] = P(...polar(d * 0.97, fenceR(d))); g.fillText(String(Math.round(fenceR(d))), x, y - 6); }
+  g.fillStyle = '#f7d038';
+  for (const s of [-1, 1]) { const [x, y] = P(...polar(45 * s, 330)); g.fillRect(Math.round(x), Math.round(y) - 46, 2, 46); }
+  // dugouts in team colors
+  for (const t of [S.home, S.away]) {
+    const [dx, dy] = dugoutOf(t), x = mcx(dx), y = mcy(dy);
+    g.fillStyle = '#05060d'; g.fillRect(x - 28, y - 3, 56, 9);
+    g.fillStyle = t.color; g.fillRect(x - 28, y - 5, 56, 3);
+  }
+  S.field = c;
+}
+
+/* ---- game state: inning, outs, count, runners ---- */
+function mlbReset(){
+  S.mlb = {half: null, top: true, inning: 0, batting: S.away, fielding: S.home, bases: [null, null, null, null],
+    outs: 0, balls: 0, strikes: 0, batter: null, pitcher: {}, lastPitch: false, fullFor: null};
+  S.camX = MB.PLX; S.camY = MB.FH - H / 2;
+  S.ball.x = 2; S.ball.y = 57; S.ball.h = 2; S.ball.vis = true;
+}
+const rosterById = (team, id) => (id && S.roster[team?.id]?.byId?.[id]) || null;
+function personOf(team, id, name){
+  const r = rosterById(team, id) || (name ? (S.roster[team?.id]?.all || []).find(x => x.name.toLowerCase() === name.toLowerCase()) : null);
+  const nm = r?.name || name || '';
+  return {id: id || r?.id || null, num: r?.num ?? null, name: nm, last: r?.last || nm.split(' ').slice(-1)[0] || '', bats: r?.bats || ''};
+}
+function mlbPerson(p, type, team){
+  const pa = (p.participants || []).find(x => String(x.type || '').toLowerCase() === type);
+  if (!pa?.athlete?.id || !team) return null;
+  const who = personOf(team, String(pa.athlete.id), pa.athlete.displayName || pa.athlete.fullName);
+  const bats = p.bats?.abbreviation || p.bats?.type || (typeof p.bats === 'string' ? p.bats : '');
+  if (type === 'batter' && bats) who.bats = bats;
+  return who;
+}
+// the batting order's fielders: who plays where, from the box score
+function mlbLineups(sum){
+  S.lineup = {};
+  for (const tp of sum?.boxscore?.players || []) {
+    const tid = String(tp.team?.id || ''), m = S.lineup[tid] = {}, team = tid === S.home?.id ? S.home : tid === S.away?.id ? S.away : null;
+    for (const cat of tp.statistics || []) for (const a of cat.athletes || []) {
+      const pos = a.position?.abbreviation, id = String(a.athlete?.id || '');
+      if (!DEF_POS.includes(pos) || (m[pos] && !a.starter) || (m[pos]?.starter)) continue;
+      const who = personOf(team, id, a.athlete?.displayName);
+      if (who.num == null && a.athlete?.jersey != null) who.num = Number(a.athlete.jersey);
+      who.starter = !!a.starter; m[pos] = who;
+    }
+  }
+}
+function mlbNum(team, pos){
+  if (pos === 'P' && S.mlb.pitcher[team.id]) return S.mlb.pitcher[team.id].num;
+  return S.lineup?.[team.id]?.[pos]?.num ?? null;
+}
+// a new half inning clears the bases; returns true when the half changed
+function mlbSyncHalf(p){
+  const st = S.mlb; let top = null, n = Number(p.period?.number) || 0;
+  const ty = String(p.period?.type || p.period?.displayValue || '').toLowerCase();
+  if (/top/.test(ty)) top = true; else if (/bot/.test(ty)) top = false;
+  const m = /\b(top|bottom|bot)\b(?: of)?(?: the)? (\d+)/i.exec(p.text || '');
+  if (top == null && m) { top = /top/i.test(m[1]); n = +m[2]; }
+  if (top == null || !n) return false;
+  const key = (top ? 'T' : 'B') + n;
+  if (key === st.half) return false;
+  Object.assign(st, {half: key, top, inning: n, bases: [null, null, null, null], outs: 0, balls: 0, strikes: 0, batter: null, lastPitch: false,
+    batting: top ? S.away : S.home, fielding: top ? S.home : S.away});
+  return true;
+}
+
+/* ---- reading a play ---- */
+const PITCH_RE = /^(ball\b|strike\b|foul\b|in play|ball in dirt|swinging strike|called strike|foul tip|foul bunt|missed bunt|pitchout|automatic (ball|strike)|intent(ional)? ball|hit by pitch$)/i;
+const BAT_KINDS = [[/homered|home run|grand slam/i, 'hr'], [/tripled/i, 'triple'], [/doubled/i, 'double'], [/singled/i, 'single'],
+  [/hit by (a )?pitch/i, 'hbp'], [/walked/i, 'walk'], [/struck out/i, 'k'], [/double play|triple play/i, 'dp'], [/fielder'?s choice/i, 'fc'],
+  [/\berror\b|reached on/i, 'error'], [/sacrifice|sac fly|sac bunt/i, 'sac'], [/grounded|ground out|groundout|bunted out|forced out/i, 'groundout'],
+  [/flied|fly out|flyout/i, 'flyout'], [/lined (out|into)|lineout|line out/i, 'lineout'], [/popped|pop out|fouled out|foul out/i, 'popout']];
+const RUN_KINDS = [[/caught stealing/i, 'cs'], [/picked off/i, 'pickoff'], [/\bstole\b|\bsteals\b/i, 'sb'], [/wild pitch|passed ball|\bbalk\b|defensive indifference/i, 'wp']];
+const IN_PLAY = ['single', 'double', 'triple', 'hr', 'groundout', 'flyout', 'lineout', 'popout', 'dp', 'fc', 'error', 'sac', 'out'];
+function clausesOf(tx){ return tx.replace(/\([^)]*\)/g, '').split(/\s*[,;]\s*|\s+and\s+(?=[A-Z])/).map(s => s.trim().replace(/\.$/, '')).filter(Boolean); }
+const RUNNER_RE = /^(.*?)\s+(scored|to (first|second|third|home)|advanced to (second|third|home)|out at (first|second|third|home)|thrown out at (first|second|third|home)|out stretching at (second|third|home)|stole (second|third|home)|caught stealing (second|third|home)|picked off(?: at| of)? (first|second|third))\b/i;
+function classifyMLB(p){
+  const tx = (p.text || '').trim(), ty = (p.type?.text || '').trim(), t = tx || ty;
+  if (!t) return {kind: 'admin'};
+  if (/^(top|bottom|middle|mid|end|start|beginning)\b/i.test(t) && /\b\d+(st|nd|rd|th)\b|inning/i.test(t)) return {kind: 'admin'};
+  if (PITCH_RE.test(t) || (!tx && PITCH_RE.test(ty))) {
+    const l = t.toLowerCase();
+    return {kind: 'pitch', sub: /in play/.test(l) ? 'inplay' : /hit by pitch/.test(l) ? 'hbp' : /foul tip/.test(l) ? 'swing' : /foul/.test(l) ? 'foul' : /swing|missed/.test(l) ? 'swing' : /strike/.test(l) ? 'called' : 'ball'};
+  }
+  const first = clausesOf(tx)[0] || '';
+  for (const [re, k] of BAT_KINDS) if (re.test(first)) return {kind: k};
+  if (/pitch(er|ing) change|replaces|lineup change|defensive (switch|sub)|pinch[- ]|mound visit|challenge|review|enters the game|moves to|remains in|warming|ejected|delay/i.test(tx)) return {kind: 'sub'};
+  for (const [re, k] of RUN_KINDS) if (re.test(tx)) return {kind: k};
+  if (RUNNER_RE.test(first)) return {kind: 'adv'};
+  if (/\bout\b/i.test(first)) return {kind: 'out'};
+  return {kind: 'admin'};
+}
+// where a batted ball goes, read from the words in the play
+function hitSpot(cl, kind, tx, seed){
+  const l = (cl || '').toLowerCase(), all = tx.toLowerCase(), rn = n => (hash(seed + n) % 1000) / 1000;
+  let deg = null, pos = null;
+  if (/left field line|down the left/.test(l)) deg = -42; else if (/right field line|down the right/.test(l)) deg = 42;
+  else if (/left[- ]cent/.test(l)) deg = -20; else if (/right[- ]cent/.test(l)) deg = 20;
+  else if (/\b(to|into) (deep |shallow )?left\b|left field/.test(l)) deg = -30;
+  else if (/\b(to|into) (deep |shallow )?right\b|right field/.test(l)) deg = 30;
+  else if (/\bcenter\b/.test(l)) deg = 0;
+  if (deg == null) {
+    if (/\bpitcher\b/.test(l)) pos = 'P'; else if (/\bcatcher\b/.test(l)) pos = 'C'; else if (/shortstop/.test(l)) pos = 'SS';
+    else if (/\bfirst\b/.test(l)) pos = '1B'; else if (/\bsecond\b/.test(l)) pos = '2B'; else if (/\bthird\b/.test(l)) pos = '3B';
+  }
+  const deep = /\bdeep\b/.test(l) ? 40 : /\bshallow\b/.test(l) ? -50 : 0;
+  let traj = /line drive|lined|liner/.test(all) ? 'line' : /fly ball|flied|sac fly|sacrifice fly/.test(all) ? 'fly' : /pop ?up|popped|fouled out/.test(all) ? 'pop' : /ground ball|grounded|grounder|bunt/.test(all) ? 'ground' : null;
+  const out = (x, y, tr, d) => {
+    let best = null, bd = 1e9;
+    for (const ps of DEF_POS) { if ((ps === 'C' || ps === 'P') && ps !== pos) continue; const [sx, sy] = STATION[ps]; const dd = Math.hypot(sx - x, sy - y); if (dd < bd) { bd = dd; best = ps; } }
+    return {x, y, traj: tr, deg: d ?? Math.atan2(x, y) * 180 / Math.PI, pos: pos || best};
+  };
+  if (kind === 'hr') {
+    if (deg == null) deg = Math.round(rn(1) * 70 - 35);
+    const ft = +((/(\d{3}) (feet|ft)/.exec(all) || [])[1]) || fenceR(deg) + 30;
+    return out(...polar(deg, Math.max(ft, fenceR(deg) + 18)), 'hr', deg);
+  }
+  const ground = ['groundout', 'dp', 'fc'].includes(kind) || (kind === 'sac' && /bunt/.test(all)) || (kind === 'error' && traj !== 'fly' && traj !== 'line');
+  if (pos || (ground && deg == null)) {
+    const ps = pos || ['3B', 'SS', '2B', '1B'][hash(seed) % 4];
+    const [sx, sy] = STATION[ps];
+    if (/bunt/.test(all)) return out(ps === '3B' ? -24 : ps === '1B' ? 24 : 0, 28, 'ground');
+    if (traj === 'pop' || kind === 'popout') return out(sx * 0.85, sy * 0.85, 'pop');
+    if (kind === 'single' && !traj) traj = 'ground';
+    return out(sx * 0.95, sy * 0.95, traj === 'line' ? 'line' : 'ground');
+  }
+  if (ground) { const ps = deg < -20 ? '3B' : deg < 0 ? 'SS' : deg < 20 ? '2B' : '1B'; const [sx, sy] = STATION[ps]; pos = ps; return out(sx * 0.95, sy * 0.95, 'ground'); }
+  if (deg == null) deg = Math.round(rn(2) * 60 - 30);
+  if (kind === 'double') return out(...polar(deg, fenceR(deg) - 28 + deep * 0.2), traj || 'line', deg);
+  if (kind === 'triple') { if (Math.abs(deg) < 30) deg = deg < 0 ? -40 : 40; return out(...polar(deg, fenceR(deg) - 14), traj || 'line', deg); }
+  if (kind === 'single') return out(...polar(deg, (traj === 'ground' ? 165 : 185) + deep * 0.5), traj || 'line', deg);
+  if (kind === 'lineout') return out(...polar(deg, 235 + deep), 'line', deg);
+  if (kind === 'popout') return out(...polar(deg, 160 + deep), 'pop', deg);
+  return out(...polar(deg, Math.min(fenceR(deg) - 16, 280 + deep)), traj === 'line' ? 'line' : 'fly', deg); // fly outs, sac flies, errors on fly balls
+}
+function findRunnerBase(pre, name, moved, to, out, at, v){
+  const nm = (name || '').toLowerCase();
+  for (let b = 3; b >= 1; b--) if (pre[b] && !moved.has(b) && pre[b].last && nm.includes(pre[b].last.toLowerCase())) return b;
+  const cands = [3, 2, 1].filter(b => pre[b] && !moved.has(b));
+  if (!cands.length) return null;
+  if (/picked off/.test(v) && at && cands.includes(at)) return at;
+  if (/caught stealing/.test(v) && at && cands.includes(at - 1)) return at - 1;
+  if (to != null) return cands.find(b => b < to) ?? null;
+  if (out && at) return cands.find(b => b < at) ?? cands[cands.length - 1];
+  return cands[0];
+}
+// what a play does: who bats, where everyone ends up, how many outs. Computed once, before the play is shown.
+function outcomeMLB(p){
+  const halfChanged = mlbSyncHalf(p);
+  const st = S.mlb, c = classifyMLB(p), tx = (p.text || '').replace(/\s+/g, ' ').trim();
+  const o = {kind: c.kind, sub: c.sub, halfChanged, moves: [], outsAdd: 0, after: null, atBatOver: false, bDest: 0, runs: 0};
+  const bat = st.batting, fld = st.fielding;
+  o.batter = mlbPerson(p, 'batter', bat);
+  const pit = mlbPerson(p, 'pitcher', fld); if (pit && fld) st.pitcher[fld.id] = pit;
+  if (['pitch', 'admin', 'sub'].includes(c.kind) || !bat) return o;
+  const cls = clausesOf(tx), isBat = IN_PLAY.includes(c.kind) || ['walk', 'hbp', 'k'].includes(c.kind);
+  if (isBat) {
+    o.atBatOver = true;
+    if (!o.batter) {
+      const nm = (/^(.*?)\s+(singled|doubled|tripled|homered|walked|intentionally|struck|grounded|flied|lined|popped|fouled|hit|reached|sacrificed|bunted|out|was|safe)\b/i.exec(cls[0] || '') || [])[1];
+      o.batter = st.batter && (!nm || nm.toLowerCase().includes((st.batter.last || '#').toLowerCase())) ? st.batter : personOf(bat, null, nm || '');
+    }
+    o.spot = IN_PLAY.includes(c.kind) ? hitSpot(cls[0], c.kind, tx, p.id) : null;
+  }
+  const pre = st.bases.slice(), moved = new Set(), moves = [];
+  let bDest = isBat ? ({single: 1, double: 2, triple: 3, hr: 4, walk: 1, hbp: 1, error: 1, fc: 1}[c.kind] ?? -1) : 0;
+  if (c.kind === 'k' && /reached|to first/i.test(tx)) bDest = 1;
+  for (const cl of isBat ? cls.slice(1) : cls) {
+    const m = RUNNER_RE.exec(cl); if (!m) continue;
+    // "shortstop to second to first" describes the throws, not a runner: runners are named people
+    if (!/^[A-Z]/.test(m[1].trim())) continue;
+    const name = m[1], v = m[2].toLowerCase(), word = v.split(' ').pop();
+    let to = null, out = false, at = null;
+    if (v === 'scored') to = 4;
+    else if (/out|caught|picked/.test(v)) { out = true; at = BASEW[word]; }
+    else to = BASEW[word];
+    // the batter can turn up in a later clause ("Soto to second on the throw")
+    if (isBat && o.batter?.last && name.toLowerCase().includes(o.batter.last.toLowerCase()) && !pre.some(r => r && r.last && r.last === o.batter.last)) {
+      if (out) bDest = -1; else if (to) bDest = Math.max(bDest, to);
+      continue;
+    }
+    const b = findRunnerBase(pre, name, moved, to, out, at, v);
+    if (b == null) continue;
+    moved.add(b); moves.push({from: b, to: out ? null : to, out, at: out ? (at || Math.min(4, b + 1)) : null, r: pre[b]});
+  }
+  if (c.kind === 'hr') { for (let b = 1; b <= 3; b++) if (pre[b] && !moved.has(b)) { moved.add(b); moves.push({from: b, to: 4, r: pre[b]}); } }
+  else if (bDest >= 1) {
+    // runners the batter forces ahead of him move up even when the text doesn't say so
+    let occ = Math.min(bDest, 3);
+    for (let b = 1; b <= 3; b++) {
+      if (!pre[b] || moved.has(b) || b > occ) continue;
+      const to = Math.min(4, occ + 1); moved.add(b); moves.push({from: b, to, r: pre[b]}); if (to < 4) occ = to;
+    }
+  }
+  if (c.kind === 'dp' && !moves.some(m => m.out)) { const b = [1, 2, 3].find(x => pre[x] && !moved.has(x)); if (b) { moved.add(b); moves.push({from: b, to: null, out: true, at: b + 1, r: pre[b]}); } }
+  const after = [null, null, null, null];
+  for (let b = 1; b <= 3; b++) if (pre[b] && !moved.has(b)) after[b] = pre[b];
+  for (const mv of moves) if (!mv.out && mv.to >= 1 && mv.to <= 3) after[mv.to] = mv.r;
+  if (bDest >= 1 && bDest <= 3) after[bDest] = o.batter || {id: null, num: null, name: '', last: ''};
+  o.moves = moves; o.after = after; o.bDest = bDest;
+  o.outsAdd = moves.filter(m => m.out).length + (isBat && bDest < 0 ? 1 : 0);
+  o.runs = moves.filter(m => m.to === 4).length + (bDest === 4 ? 1 : 0);
+  return o;
+}
+function mlbApply(p, o){
+  const st = S.mlb;
+  if (o.kind === 'pitch') {
+    if (o.batter) st.batter = o.batter;
+    const rc = p.resultCount;
+    if (rc && Number.isFinite(+rc.balls) && Number.isFinite(+rc.strikes)) { st.balls = +rc.balls; st.strikes = +rc.strikes; }
+    else if (o.sub === 'ball') st.balls = Math.min(4, st.balls + 1);
+    else if (o.sub === 'called' || o.sub === 'swing') st.strikes = Math.min(3, st.strikes + 1);
+    else if (o.sub === 'foul' && st.strikes < 2) st.strikes++;
+    st.lastPitch = true;
+  } else if (o.after) {
+    st.bases = o.after; st.outs = Math.min(3, st.outs + o.outsAdd);
+    if (Number.isFinite(+p.outs) && p.outs !== null && +p.outs > st.outs && +p.outs <= 3) st.outs = +p.outs;
+    if (o.atBatOver) { st.balls = 0; st.strikes = 0; st.batter = null; st.lastPitch = false; }
+    if (st.outs >= 3) { st.bases = [null, null, null, null]; st.batter = null; }
+  }
+  return o.halfChanged;
+}
+const mlbLabel = p => {
+  const n = Number(p.period?.number) || 0, ty = String(p.period?.type || p.period?.displayValue || '');
+  return n ? `${/bot/i.test(ty) ? 'B' : 'T'}${n}` : (S.mlb?.half || '');
+};
+
+/* ---- formations ---- */
+function leadOff(b){ const [x, y] = BASE[b], [nx, ny] = BASE[b + 1], d = Math.hypot(nx - x, ny - y); return [x + (nx - x) / d * 9, y + (ny - y) / d * 9]; }
+function mlbFormation(st){
+  const fld = st.fielding, bat = st.batting, A = [];
+  if (!fld || !bat) return A;
+  const add = (team, role, x, y, num, extra) => A.push(Object.assign({team, role, kit: team.kit, x, y, num, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y}, extra || {}));
+  for (const pos of DEF_POS) { const [x, y] = STATION[pos]; add(fld, pos, x, y, mlbNum(fld, pos)); }
+  for (let b = 1; b <= 3; b++) { const r = st.bases[b]; if (r) { const [x, y] = leadOff(b); add(bat, 'R' + b, x, y, r.num, {pid: r.id || 'r' + b + (r.last || '')}); } }
+  if (st.batter && st.outs < 3) add(bat, 'B', /^L/i.test(st.batter.bats || '') ? 5 : -5, 1, st.batter.num, {pid: st.batter.id || 'b' + (st.batter.last || ''), bat: true});
+  return A;
+}
+function mlbRest(walk){
+  const F = mlbFormation(S.mlb);
+  S.ball.x = 2; S.ball.y = 57; S.ball.h = 2;
+  if (!walk || !S.actors.length) { S.actors = F; return; }
+  // fielders jog back to their spots and runners settle on their bases; a new batter just appears at the plate
+  const free = [...S.actors];
+  const take = fn => { const i = free.findIndex(fn); return i < 0 ? null : free.splice(i, 1)[0]; };
+  const out = [];
+  for (const f of F) {
+    let a = null;
+    if (DEF_POS.includes(f.role)) a = take(b => b.team === f.team && b.role === f.role);
+    else if (f.role === 'B') a = take(b => b.team === f.team && b.role === 'B' && b.pid === f.pid);
+    else a = take(b => b.team === f.team && b.pid && b.pid === f.pid) || take(b => b.team === f.team && b.role !== 'B' && !DEF_POS.includes(b.role) && Math.hypot(b.x - f.x, b.y - f.y) < 30);
+    if (!a) { out.push(f); continue; }
+    Object.assign(a, {role: f.role, num: f.num ?? a.num, pid: f.pid, bat: f.bat, tx: f.x, ty: f.y, track: null, chase: false, hop: 0, swing: null, swinging: false, walkSpeed: 26 + hash(f.role) % 8});
+    out.push(a);
+  }
+  S.actors = out;
+}
+
+/* ---- play planner ---- */
+function planMLB(p){
+  const o = p._o || (p._o = outcomeMLB(p));
+  const st = S.mlb;
+  const plan = {kind: o.kind, o, dur: 0.4, sfx: [], segs: [], carrier: null, flag: null, static: false};
+  const inPlay = IN_PLAY.includes(o.kind) && o.spot;
+  const animated = st.fielding && (inPlay || ['walk', 'hbp', 'k', 'sb', 'cs', 'pickoff', 'wp', 'adv'].includes(o.kind) || (o.kind === 'pitch' && o.sub !== 'inplay'));
+  if (!animated) { plan.static = true; return plan; }
+  const F = mlbFormation(Object.assign({}, st, {batter: o.batter || st.batter}));
+  // tween from where everyone stands now
+  const used = new Set();
+  const starts = F.map(a => {
+    const prev = S.actors.find(b => !used.has(b) && b.team === a.team && (a.pid ? b.pid === a.pid : b.role === a.role)) || (a.pid ? null : S.actors.find(b => !used.has(b) && b.team === a.team && b.role === a.role));
+    if (prev) used.add(prev);
+    return prev ? [prev.x, prev.y] : [a.x, a.y];
+  });
+  const far = Math.max(0, ...F.map((a, i) => Math.hypot(a.x - starts[i][0], a.y - starts[i][1])));
+  const PRE = far > 3 ? clamp(far / 45, 0.3, 1.6) : 0.05;
+  F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; });
+  const A = role => F.find(a => a.role === role);
+  const last = a => a.track.reduce((m, q) => q[0] >= m[0] ? q : m);
+  const go = (a, t, x, y) => { if (a) a.track.push([PRE + t, x, y]); };
+  const hold = (a, t) => { if (a) { const q = last(a); if (PRE + t > q[0]) a.track.push([PRE + t, q[1], q[2]]); } };
+  const seg = (t0, t1, s) => plan.segs.push(Object.assign({t0: PRE + t0, t1: PRE + t1}, s));
+  const sfx = (t, n) => plan.sfx.push([PRE + t, n]);
+  const RUN = 34, TROT = 22;
+  const runBases = (a, from, to, t0, sp) => {
+    if (!a) return t0;
+    hold(a, t0); let t = t0, [, px, py] = last(a);
+    for (let b = from + 1; b <= to; b++) { const [bx, by] = BASE[b]; t += Math.hypot(bx - px, by - py) / sp; go(a, t, bx, by); px = bx; py = by; }
+    return t;
+  };
+  const pit = A('P'), cat = A('C'), bat = A('B');
+  // throw the ball from (x, y) to a base, where a fielder comes over to take it
+  const throwTo = (from, base, recv, t) => {
+    const r = A(recv), [bx, by] = BASE[base], d = Math.hypot(bx - from[0], by - from[1]);
+    if (r) { hold(r, Math.max(0.6, t - 0.9)); go(r, t + 0.05, bx + (base === 1 ? 3 : base === 4 ? 0 : -2), by + (base === 4 ? -2 : 2)); }
+    const ta = t + 0.15 + d / 150;
+    seg(t, ta, {k: 'arc', x0: from[0], y0: from[1], x1: bx, y1: by, peak: d > 150 ? 24 : 8, start: 8, end: 7});
+    seg(ta, ta + 30, r ? {k: 'hold', a: r} : {k: 'spot', x: bx, y: by, h: 6}); sfx(ta, 'pop');
+    return ta;
+  };
+  const pitch = (t0, sub) => {
+    seg(0, t0 + 0.55, {k: 'hold', a: pit});
+    const tr = t0 + 0.55, ta = tr + 0.42, bx = bat ? last(bat)[1] : -5;
+    if (bat && /swing|foul|inplay/.test(sub)) bat.swing = [PRE + ta - 0.12, PRE + ta + 0.3];
+    if (sub === 'hbp') {
+      seg(tr, ta, {k: 'arc', x0: 0, y0: 56, x1: bx, y1: 1, peak: 3, start: 10, end: 9});
+      seg(ta, ta + 0.5, {k: 'arc', x0: bx, y0: 1, x1: bx * 2.5, y1: -8, peak: 5, start: 9, end: 0});
+      seg(ta + 0.5, ta + 30, {k: 'spot', x: bx * 2.5, y: -8, h: 0}); sfx(ta, 'groan');
+      return ta;
+    }
+    seg(tr, ta, {k: 'arc', x0: 0, y0: 56, x1: sub === 'ball' ? (hash(p.id) % 3 - 1) * 3 : 0, y1: sub === 'inplay' || sub === 'foul' ? 1 : -4, peak: 3, start: 10, end: 7});
+    if (sub === 'foul') {
+      const s = hash(p.id + 'f') % 2 ? 1 : -1, fx = s * (30 + hash(p.id) % 50), fy = -15 - hash(p.id) % 30;
+      seg(ta, ta + 0.9, {k: 'arc', x0: 0, y0: 1, x1: fx, y1: fy, peak: 45, start: 7, end: 0});
+      seg(ta + 0.9, ta + 30, {k: 'spot', x: fx, y: fy, h: 0}); sfx(ta, 'crack');
+      return ta;
+    }
+    if (sub === 'inplay') { sfx(ta, 'crack'); return ta; }
+    seg(ta, ta + 30, {k: 'hold', a: cat}); sfx(ta, 'pop');
+    return ta;
+  };
+  let tEnd = 1;
+  if (o.kind === 'pitch') tEnd = pitch(0, o.sub) + 0.5;
+  else if (inPlay) {
+    const tc = pitch(0, 'inplay'), sp = o.spot; let L = [sp.x, sp.y];
+    const dist = Math.hypot(L[0], L[1]), fd = A(sp.pos) || A('SS');
+    const caught = ['flyout', 'lineout', 'popout', 'sac', 'out'].includes(o.kind) && sp.traj !== 'ground';
+    let tBall = null, tCatch = null;
+    hold(fd, tc);
+    if (sp.traj === 'ground') {
+      const tr = dist / 115 + 0.2, q = f => [L[0] * f, L[1] * f];
+      seg(tc, tc + tr * 0.4, {k: 'arc', x0: 0, y0: 1, x1: q(0.4)[0], y1: q(0.4)[1], peak: 10, start: 7, end: 0});
+      seg(tc + tr * 0.4, tc + tr * 0.75, {k: 'arc', x0: q(0.4)[0], y0: q(0.4)[1], x1: q(0.75)[0], y1: q(0.75)[1], peak: 5});
+      seg(tc + tr * 0.75, tc + tr, {k: 'arc', x0: q(0.75)[0], y0: q(0.75)[1], x1: L[0], y1: L[1], peak: 2});
+      go(fd, tc + Math.min(tr - 0.05, 0.9), L[0], L[1]);
+      tBall = tc + tr;
+      if (['single', 'double', 'triple'].includes(o.kind)) {
+        // through the infield: it rolls on to an outfielder
+        const of = A(sp.x < -40 ? 'LF' : sp.x > 40 ? 'RF' : 'CF'), R = [L[0] * 1.6, L[1] * 1.6];
+        seg(tBall, tBall + 1.1, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 3});
+        hold(of, tc); go(of, tBall + 1.2, R[0], R[1]); go(fd, tBall + 0.2, L[0] * 0.95, L[1] * 0.95);
+        tBall += 1.2; L = R; plan.fielder = of;
+      }
+    } else {
+      const air = sp.traj === 'line' ? 0.35 + dist / 170 : sp.traj === 'pop' ? 1.6 + dist / 300 : 0.9 + dist / 120;
+      const peak = sp.traj === 'line' ? 14 : sp.traj === 'pop' ? 120 : sp.traj === 'hr' ? 115 : 85;
+      seg(tc, tc + air, {k: 'arc', x0: 0, y0: 1, x1: L[0], y1: L[1], peak, start: 7, end: caught ? 7 : 0});
+      tBall = tc + air;
+      if (sp.traj === 'hr') {
+        seg(tBall, tBall + 40, {k: 'spot', x: L[0], y: L[1], h: 0});
+        const [wx, wy] = polar(sp.deg, fenceR(sp.deg) - 10); go(fd, tc + air * 0.85, wx, wy);
+        sfx(tBall, 'td'); tBall = null;
+      } else if (caught) { go(fd, tBall - 0.1, L[0], L[1]); sfx(tBall, 'pop'); tCatch = tBall; }
+      else {
+        // a hit: it drops, rolls on, and an outfielder runs it down
+        const cap = fenceR(sp.deg) - 8, r0 = Math.hypot(L[0], L[1]), r1 = Math.min(cap, r0 + 30), R = [L[0] * r1 / r0, L[1] * r1 / r0];
+        seg(tBall, tBall + 0.7, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 6});
+        tBall += 0.8; go(fd, tBall, R[0], R[1]); L = R;
+      }
+    }
+    const holder = plan.fielder || fd;
+    if (tBall != null) {
+      seg(tBall, tBall + 0.25, {k: 'hold', a: holder});
+      const tt = tBall + 0.25, here = [L[0], L[1]];
+      const outMv = o.moves.find(m => m.out), recv2 = ['SS', '3B'].includes(holder.role) ? '2B' : 'SS';
+      if (o.kind === 'dp' && outMv) { const t2 = throwTo(here, outMv.at || 2, outMv.at === 3 ? '3B' : recv2, tt); if (o.bDest < 0) throwTo(BASE[outMv.at || 2], 1, '1B', t2 + 0.2); }
+      else if (o.kind === 'fc' && outMv) throwTo(here, outMv.at || 2, outMv.at === 3 ? '3B' : outMv.at === 4 ? 'C' : recv2, tt);
+      else if (o.bDest < 0 && sp.traj === 'ground') throwTo(here, 1, holder.role === '1B' ? 'P' : '1B', tt);
+      else if (o.kind === 'sac' && o.moves.some(m => m.to === 4) && caught) throwTo(here, 4, 'C', tt);
+      else if (!caught || Math.hypot(...here) > 150) throwTo(here, 2, sp.deg < 0 ? 'SS' : '2B', tt + (caught ? 0.3 : 0));
+      tEnd = Math.max(tEnd, tt + 1.2);
+    } else tEnd = Math.max(tEnd, tc + 3);
+    // the batter runs, and runners move as the play says
+    const tb = tc + 0.2;
+    if (bat) {
+      if (o.bDest >= 1) tEnd = Math.max(tEnd, runBases(bat, 0, o.bDest, tb, o.kind === 'hr' ? TROT : RUN));
+      else if (sp.traj === 'ground') { const t1 = runBases(bat, 0, 1, tb, RUN); go(bat, t1 + 0.5, BASE[1][0] + 14, BASE[1][1] - 12); tEnd = Math.max(tEnd, t1 + 0.5); }
+      else { hold(bat, tb); go(bat, tb + 1.4, 28, 28); }
+    }
+    const tr = caught && tCatch != null ? tCatch : tc + 0.15;
+    for (const mv of o.moves) {
+      const a = A('R' + mv.from); if (!a) continue;
+      const t1 = runBases(a, mv.from, Math.min(4, mv.out ? mv.at : mv.to), tr, o.kind === 'hr' ? TROT : RUN);
+      if (mv.to === 4) go(a, t1 + 1.6, ...dugoutOf(st.batting));
+      tEnd = Math.max(tEnd, t1);
+    }
+    if (o.bDest === 4 && bat) go(bat, tEnd + 1.2, ...dugoutOf(st.batting));
+  } else if (['walk', 'hbp', 'k'].includes(o.kind)) {
+    let t0 = 0.2;
+    if (!st.lastPitch) t0 = pitch(0, o.kind === 'k' ? (/looking|called/i.test(p.text || '') ? 'called' : 'swing') : o.kind === 'hbp' ? 'hbp' : 'ball') + 0.3;
+    else seg(0, 30, {k: 'hold', a: pit});
+    if (o.kind === 'k' || o.bDest < 1) { hold(bat, t0); go(bat, t0 + 2.4, ...dugoutOf(st.batting)); tEnd = t0 + 1.6; }
+    else {
+      tEnd = Math.max(t0 + 1, runBases(bat, 0, o.bDest, t0 + 0.2, TROT));
+      for (const mv of o.moves) { const a = A('R' + mv.from); if (a) tEnd = Math.max(tEnd, runBases(a, mv.from, Math.min(4, mv.to || mv.at || 4), t0 + 0.2, TROT)); }
+    }
+  } else {
+    // steals, pickoffs, wild pitches and other runner moves
+    const ball0 = ['pickoff', 'adv', 'wp'].includes(o.kind) ? pit : cat;
+    seg(0, 0.5, {k: 'hold', a: ball0});
+    let tRun = 0.1;
+    if (o.kind === 'wp') {
+      const s = hash(p.id) % 2 ? 1 : -1;
+      seg(0.5, 1.1, {k: 'arc', x0: 0, y0: 56, x1: s * 22, y1: -30, peak: 6, start: 10, end: 0});
+      seg(1.1, 30, {k: 'spot', x: s * 22, y: -30, h: 0}); hold(cat, 0.6); go(cat, 1.9, s * 20, -27); tRun = 0.6;
+    }
+    let tLast = 1;
+    for (const mv of o.moves) {
+      const a = A('R' + mv.from); if (!a) continue;
+      const dest = mv.out ? mv.at : mv.to;
+      if (o.kind === 'pickoff') { hold(a, 0.5); go(a, 0.9, ...BASE[mv.from]); tLast = Math.max(tLast, 0.9); continue; }
+      tLast = Math.max(tLast, runBases(a, mv.from, Math.min(4, dest || mv.from + 1), tRun, RUN));
+      if (mv.to === 4) go(a, tLast + 1.4, ...dugoutOf(st.batting));
+    }
+    const mv0 = o.moves[0];
+    if (mv0 && (o.kind === 'sb' || o.kind === 'cs')) {
+      const base = Math.min(4, mv0.out ? mv0.at : mv0.to || mv0.from + 1);
+      const d = Math.hypot(BASE[base][0], BASE[base][1] + 4);
+      const tThrow = o.kind === 'cs' ? 0.5 : Math.max(0.5, tLast - (0.15 + d / 150) + 0.3);
+      throwTo([0, -4], base, base === 2 ? (hash(p.id) % 2 ? 'SS' : '2B') : base === 3 ? '3B' : 'C', tThrow);
+    } else if (mv0 && o.kind === 'pickoff') throwTo([0, 58], mv0.from, mv0.from === 1 ? '1B' : mv0.from === 2 ? 'SS' : '3B', 0.5);
+    tEnd = tLast + 0.6;
+  }
+  // one ball: each stretch ends where the next one starts
+  plan.segs.sort((a, b) => a.t0 - b.t0);
+  for (let i = 0; i + 1 < plan.segs.length; i++) if (plan.segs[i].t1 > plan.segs[i + 1].t0) plan.segs[i].t1 = plan.segs[i + 1].t0;
+  plan.actors = F;
+  plan.dur = PRE + Math.min(tEnd, 20) + 0.6;
+  return plan;
+}
+
+/* ---- the scoreboard bug in the corner: bases and outs ---- */
+function drawHud(g){
+  const st = S.mlb; if (!st || !S.game) return;
+  const x = 8, y = H - 32;
+  g.fillStyle = 'rgba(10,12,32,.88)'; g.fillRect(x - 4, y - 16, 50, 42);
+  g.fillStyle = '#e9e4cf'; g.fillRect(x - 4, y - 16, 50, 1); g.fillRect(x - 4, y + 25, 50, 1); g.fillRect(x - 4, y - 16, 1, 42); g.fillRect(x + 45, y - 16, 1, 42);
+  const box = (bx, by, on) => { g.fillStyle = '#05060d'; g.fillRect(bx - 1, by - 1, 9, 9); g.fillStyle = on ? '#f2b632' : '#39418a'; g.fillRect(bx, by, 7, 7); };
+  box(x + 18, y - 12, !!st.bases[2]); box(x + 6, y - 2, !!st.bases[3]); box(x + 30, y - 2, !!st.bases[1]);
+  for (let i = 0; i < 3; i++) { g.fillStyle = i < st.outs ? '#e5383b' : '#39418a'; g.fillRect(x + 8 + i * 9, y + 14, 6, 6); }
+}
+
+/* ---- commentary ---- */
+const LINES_MLB = {
+  hr: ['Swing and a drive, and that ball is GONE!', 'Kiss it goodbye! Home run {bat}!', 'Get up, get up, get outta here!', 'That ball is still climbing! What a shot by {player}!',
+    'Souvenir time! Somebody in the bleachers just got a free baseball.', 'He crushed that one. No doubt from the moment it left the bat.', 'Touch em all, {player}!', 'I have been around this game a long time, and that is a no-doubter.'],
+  triple: ['Into the corner, and he is flying around second! Triple!', 'Three bases! The rarest hit in baseball, folks.', 'Look at those wheels! Stand-up triple for {player}.'],
+  double: ['Into the gap! That is a double.', 'Off the wall! Two bases for {player}.', 'Ripped down the line, and he cruises into second.', 'Extra bases for {bat}! Nice piece of hitting.', 'Split the outfielders. Easy double.'],
+  single: ['Base hit! {player} is aboard.', 'Seeing-eye single. Found a hole.', 'Line drive single. That is a professional at-bat.', 'Base knock! {bat} has a runner.', 'He just put it where they are not.', 'Took what the pitcher gave him. Nice hitting.'],
+  walk: ['Ball four. Take your base.', 'Good eye at the plate. He earned that walk.', 'The pitcher could not find the zone.', 'A free pass. Those always seem to come around to score.'],
+  ibb: ['Intentional walk. They will take their chances with the next guy.', 'Four wide ones. Put him on and set up the force.'],
+  hbp: ['Ouch! He wears one.', 'Plunked! That one is going to leave a bruise.', 'Hit by the pitch. Take your base, and some ice.'],
+  k: ['Strike three! Sit down!', 'Struck him out! Nasty stuff.', 'Punch out! The pitcher wins that battle.', 'He had no chance on that one.', 'Fanned him! That is a big strikeout.'],
+  kl: ['Caught looking! He froze him.', 'Strike three called! He thought it was a ball. The umpire did not.', 'Painted the corner, and he never moved the bat.'],
+  groundout: ['Routine grounder, and they get him at first.', 'Easy play for the infield.', 'Pounded into the ground. That is an out.', 'Smooth work by the {fld} infield.'],
+  flyout: ['Lazy fly ball, and it is caught.', 'Can of corn.', 'Under it, and that is an out.', 'He got under that one. Not enough on it.'],
+  lineout: ['Hit hard, but right at him!', 'Scorched, but caught! Tough luck.', 'A rocket, right into the glove.'],
+  popout: ['Popped up. Easy out.', 'Sky-high pop up, and it comes down in the glove.', 'He missed his pitch. Just got under it.'],
+  dp: ['Two for the price of one! Double play!', 'Tailor-made double play. Turned it beautifully.', 'Around the horn for two! A pitcher\'s best friend.'],
+  fc: ['Fielder\'s choice. They take the lead runner.', 'They get the force, but the batter is aboard.'],
+  error: ['Oh, he booted it! Error.', 'That one goes in the box score as an error.', 'Kicked it! The {fld} defense gives them a gift.'],
+  sac: ['Sacrifice. Doing the little things right.', 'Productive out. That is how you play the game.', 'Unselfish at-bat. He gave himself up for the team.'],
+  sb: ['He stole it! Great jump.', 'Safe! He had that base stolen all the way.', 'Swiped the bag! The catcher had no chance.'],
+  cs: ['Thrown out! What an arm on that catcher!', 'Caught stealing! Gunned down at the bag.', 'Out! Perfect throw, perfect tag.'],
+  pickoff: ['Picked off! Caught leaning the wrong way.', 'The pitcher catches him napping! Picked off!'],
+  wp: ['Ball gets away, and the runners move up.', 'In the dirt and away! Free base.', 'The catcher could not block that one.'],
+  pitchChange: ['Here comes a new arm from the bullpen.', 'The manager has seen enough. Pitching change.', 'Fresh arm. Let us see what he has got.']
+};
+const ASIDES_MLB = {
+  walkoff: ['WALK-OFF! {bat} wins it! Ballgame!', 'They win it! Walk-off for {bat}! What a finish!'],
+  goahead: ['And {bat} takes the lead!', '{bat} goes in front!', 'That puts {bat} on top.'],
+  lead: ['Lead change! What a ballgame!', 'New team on top. {bat} goes ahead!', 'And the lead flips to {bat}!'],
+  tie: ['All tied up!', 'We are knotted up. Buckle up, folks.', 'Even ballgame now!'],
+  blowout: ['This one is getting out of hand.', '{bat} keeps piling on.', 'The {fld} bullpen is going to be busy.'],
+  close: ['One-run game, late. Every pitch matters now.', 'Tight one in the late innings.'],
+  loaded: ['Bases loaded! Ducks on the pond!', 'Bases are juiced. Big spot here.', 'Bases loaded, and the crowd is on its feet.'],
+  risp2: ['Two outs, runner in scoring position. Big at-bat coming up.', 'Two down, and a run is ninety feet or less from home.'],
+  side: ['And that will retire the side.', 'Side retired. Change of sides.', 'That is three outs. We will head to the next half inning.'],
+  full: ['Full count. Here comes the payoff pitch.', 'Three and two. Something has to give.', 'Full count, and the runners will be going.']
+};
+const fillM = (t, p) => t.replace(/\{bat\}/g, S.mlb.batting?.loc || '').replace(/\{fld\}/g, S.mlb.fielding?.loc || '').replace(/\{player\}/g, p._o?.batter?.last || S.mlb.batting?.nick || 'he');
+function colorLineMLB(p, o){
+  let key = o.kind;
+  if (key === 'k' && /looking|called/i.test(p.text || '')) key = 'kl';
+  if (key === 'walk' && /intentional/i.test(p.text || '')) key = 'ibb';
+  if (key === 'sub') key = /pitch(er|ing) change|pitching/i.test(p.text || '') ? 'pitchChange' : null;
+  if (key === 'out') key = o.spot?.traj === 'ground' ? 'groundout' : 'flyout';
+  if (!key || !LINES_MLB[key]) return null;
+  return fillM(pickFresh(LINES_MLB[key], p.id + key), p);
+}
+function dukeAsideMLB(p, o, before){
+  const st = S.mlb, say = k => fillM(pickFresh(ASIDES_MLB[k], p.id + k), p);
+  if (o.kind === 'pitch') {
+    if (st.balls === 3 && st.strikes === 2 && st.fullFor !== (st.batter?.id || st.batter?.last || p.id)) { st.fullFor = st.batter?.id || st.batter?.last || p.id; return say('full'); }
+    return null;
+  }
+  const h = p.homeScore ?? before.h, a = p.awayScore ?? before.a;
+  if (h !== before.h || a !== before.a) {
+    if (!st.top && st.inning >= 9 && h > a && before.h <= before.a) return say('walkoff');
+    if (h === a) return say('tie');
+    if (before.h === before.a) return say('goahead');
+    if (Math.sign(h - a) !== Math.sign(before.h - before.a)) return say('lead');
+    if (Math.abs(h - a) >= 7) return say('blowout');
+    if (st.inning >= 8 && Math.abs(h - a) <= 1) return say('close');
+    return null;
+  }
+  if (o.outsAdd && st.outs >= 3) return say('side');
+  if (!o.after) return null;
+  if (st.bases[1] && st.bases[2] && st.bases[3] && !(before.loaded)) return say('loaded');
+  if (st.outs === 2 && (st.bases[2] || st.bases[3]) && hash(p.id) % 2) return say('risp2');
+  return null;
+}
+const NUMW = ['zero', 'one', 'two', 'three', 'four'];
+function pitchCall(p, o){
+  const t = (p.text || p.type?.text || '').toLowerCase(), n = (t.match(/(?:ball|strike) (\d)/) || [])[1], w = n != null ? (NUMW[n] || n) : null;
+  if (o.sub === 'foul') return pickFresh(['Fouled off.', 'Foul ball.', 'Fouled back.', 'Spoiled that one.', 'Foul, down the line.'], p.id + 'foul');
+  if (o.sub === 'ball') return w ? `Ball ${w}.` : 'Ball.';
+  if (o.sub === 'called') return w ? `Strike ${w}, called.` : 'Called strike.';
+  if (o.sub === 'swing') return w ? `Swing and a miss, strike ${w}.` : 'Swing and a miss.';
+  if (o.sub === 'hbp') return 'Hit by the pitch!';
+  return '';
+}
+const pitchInfo = p => [p.pitchVelocity ? `${p.pitchVelocity} MPH` : '', p.pitchType?.text || ''].filter(Boolean).join(' ');
+
+function applyStateMLB(p, plan){
+  if (p.homeScore != null) S.prevScore.h = p.homeScore;
+  if (p.awayScore != null) S.prevScore.a = p.awayScore;
+  setBoard();
+  const o = p._o || (p._o = outcomeMLB(p));
+  const changed = mlbApply(p, o), st = S.mlb;
+  if (st.inning) $('clock').textContent = `${st.top ? 'TOP' : 'BOT'} ${st.inning}`;
+  $('dd').textContent = st.half ? `${Math.min(st.balls, 3)}-${Math.min(st.strikes, 2)} · ${st.outs} OUT${st.outs === 1 ? '' : 'S'}` : '';
+  $('possH').classList.toggle('on', !!st.half && st.batting === S.home); $('possA').classList.toggle('on', !!st.half && st.batting === S.away);
+  if (changed && plan) mlbRest(false);
+}
+
+async function runPlayMLB(p, fast, tok){
+  if (tok !== S.token) return;
+  if (fast) { addLog(p); applyState(p, null); restFormation(); return; }
+  let plan;
+  try { plan = planMLB(p); } catch (e) { console.warn('plan failed', e, p); plan = {kind: 'admin', static: true, o: p._o || {kind: 'admin'}}; }
+  const o = p._o || plan.o;
+  await animate(plan, tok);
+  if (tok !== S.token) return;
+  const st = S.mlb, before = Object.assign({}, S.prevScore, {loaded: !!(st.bases[1] && st.bases[2] && st.bases[3])});
+  addLog(p); applyState(p, plan);
+  if (!plan.static) restFormation(true, plan);
+  if (o.kind === 'pitch') {
+    const call = pitchCall(p, o), info = pitchInfo(p), busy = S.mode === 'live' && S.queue.length > 2;
+    if (call) {
+      const cap = 'CHIP: ' + call + (info ? ` (${info})` : '');
+      if (busy) $('caption').textContent = cap; else await say('A', call, tok, cap);
+    }
+    if (tok !== S.token) return;
+    const aside = busy ? null : dukeAsideMLB(p, o, before);
+    if (aside) { await sleep(200); await say('B', aside, tok); }
+    await sleep(S.voices ? 150 : 450);
+    return;
+  }
+  const pbp = speechText(p.text || p.type?.text || '');
+  if (pbp) await say('A', pbp, tok);
+  if (tok !== S.token) return;
+  const col = colorLineMLB(p, o);
+  if (col) await say('B', col, tok);
+  if (tok !== S.token) return;
+  const aside = dukeAsideMLB(p, o, before);
+  if (aside) { await sleep(250); await say('B', aside, tok); }
+  await sleep(S.voices ? 350 : 900);
+}
+
+/* ---- replay timeline for baseball: one block per half inning ---- */
+function buildReplayMLB(plays){
+  if (!plays.length) return null;
+  const idx = new Map(); plays.forEach((p, i) => idx.set(p.id, i));
+  let cur = 0;
+  const half = plays.map(p => {
+    const n = Number(p.period?.number) || 0, ty = String(p.period?.type || p.period?.displayValue || '');
+    if (n && /top|bot/i.test(ty)) cur = (n - 1) * 2 + (/bot/i.test(ty) ? 1 : 0);
+    else { const m = /\b(top|bottom|bot)\b(?: of)?(?: the)? (\d+)/i.exec(p.text || ''); if (m) cur = (+m[2] - 1) * 2 + (/top/i.test(m[1]) ? 0 : 1); }
+    return cur;
+  });
+  const total = Math.max(18, ...half.map(h => h + 1));
+  const count = {}, seenIn = {};
+  half.forEach(h => count[h] = (count[h] || 0) + 1);
+  const t = half.map(h => { const k = seenIn[h] = (seenIn[h] ?? -1) + 1; return h + k / count[h]; });
+  const drives = [...new Set(half)].map(h => half.indexOf(h)).sort((a, b) => a - b);
+  const driveOf = i => { let s = 0; for (const d of drives) if (d <= i) s = d; return s; };
+  const scores = []; let hs = 0, as = 0;
+  plays.forEach((p, i) => {
+    const nh = p.homeScore ?? hs, na = p.awayScore ?? as, dh = nh - hs, da = na - as;
+    if (dh > 0 || da > 0) {
+      const pts = Math.max(dh, da), team = dh >= da ? S.home : S.away;
+      scores.push({i, team, kind: /homered|home run|grand slam/i.test(p.text || '') ? 'HR' : `${pts} RUN${pts > 1 ? 'S' : ''}`, a: na, h: nh});
+    }
+    hs = nh; as = na;
+  });
+  const lab = h => `${h % 2 ? 'B' : 'T'}${Math.floor(h / 2) + 1}`;
+  return {plays, idx, t, total, maxQ: Math.ceil(total / 2), drives, driveOf, scores, mlb: true, half, lab};
+}
+
 /* ================= animation ================= */
 function trackAt(tr, t){
   if (t <= tr[0][0]) return [tr[0][1], tr[0][2]];
@@ -1011,7 +1717,7 @@ function ballAt(plan, t){
   let s = plan.segs.find(s => t >= s.t0 && t < s.t1) || plan.segs[plan.segs.length - 1];
   if (!s) return;
   if (t < plan.segs[0]?.t0) s = plan.segs[0];
-  const b = S.ball;
+  const b = S.ball; S.ballSeg = s.k;
   if (s.k === 'hold') { b.x = s.a.x + 0.4; b.y = s.a.y; b.h = 1 + (s.a.hop || 0); }
   else if (s.k === 'spot') { b.x = s.x; b.y = s.y; b.h = s.h || -8; }
   else if (s.k === 'arc') {
@@ -1049,7 +1755,8 @@ function step(now){
         if (d > 2) { p.x += dx / d * 4 * dt; p.y += dy / d * 4 * dt; }
       } else { p.x = x; p.y = y; }
       const moved = Math.hypot(p.x - p.lx, p.y - p.ly) > 0.001; p.lx = p.x; p.ly = p.y;
-      p.frame = moved ? (Math.floor(now / 110) % 2) : 0;
+      p.frame = moved ? (Math.floor(now / 110) % 2) : 0; p.moving = moved;
+      p.swinging = !!(p.swing && t >= p.swing[0] && t <= p.swing[1]);
       p.hop = (plan.tdT && t > plan.tdT && (p === plan.carrier || (p.team === plan.carrier?.team && Math.abs(p.x - plan.carrier.x) < 8))) ? Math.abs(Math.sin((t - plan.tdT) * 9)) * 4 : 0;
     }
     ballAt(plan, t);
@@ -1060,19 +1767,28 @@ function step(now){
     // between plays: players walk back to the line
     const dt = Math.min(0.05, (now - (S.lastNow || now)) / 1000);
     for (const p of S.actors) {
-      if (p.tx == null) { p.frame = 0; continue; }
+      p.swinging = false;
+      if (p.tx == null) { p.frame = 0; p.moving = false; continue; }
       const dx = p.tx - p.x, dy = p.ty - p.y, d = Math.hypot(dx, dy);
       if (d < 0.05) { p.x = p.tx; p.y = p.ty; p.tx = null; p.frame = 0; continue; }
       const sp = Math.min(d, (p.walkSpeed || 2.5) * dt);
       p.x += dx / d * sp; p.y += dy / d * sp; p.lx = p.x; p.ly = p.y;
-      p.frame = Math.floor(now / 200) % 2;
+      p.frame = Math.floor(now / 200) % 2; p.moving = true;
     }
   }
   S.lastNow = now;
-  // camera follows the ball
-  const target = clamp(S.ball.x, 10, 90);
-  S.cam += (target - S.cam) * Math.min(1, 0.06 + (S.anim ? 0.05 : 0.02));
-  S.cam = clamp(S.cam, 10, 90);
+  if (isMLB()) {
+    // the camera sits on the infield and goes with the ball when it's hit deep
+    const b = S.ball, follow = S.anim && S.ballSeg !== 'spot' && (b.y > 150 || Math.abs(b.x) > 110);
+    const tx = follow ? mcx(b.x) : MB.PLX, ty = follow ? mcy(b.y) - b.h * 0.5 : MB.FH - H / 2;
+    S.camX += (tx - S.camX) * 0.07; S.camY += (ty - S.camY) * 0.07;
+    S.camX = clamp(S.camX, W / 2, MB.FW - W / 2); S.camY = clamp(S.camY, H / 2, MB.FH - H / 2);
+  } else {
+    // camera follows the ball
+    const target = clamp(S.ball.x, 10, 90);
+    S.cam += (target - S.cam) * Math.min(1, 0.06 + (S.anim ? 0.05 : 0.02));
+    S.cam = clamp(S.cam, 10, 90);
+  }
   render(now);
   requestAnimationFrame(step);
 }
@@ -1080,6 +1796,13 @@ function step(now){
 const ctx = $('field').getContext('2d'); ctx.imageSmoothingEnabled = false;
 function render(now){
   ctx.fillStyle = '#0c0e1c'; ctx.fillRect(0, 0, W, H);
+  if (isMLB()) {
+    if (S.field) ctx.drawImage(S.field, Math.round(S.camX - W / 2), Math.round(S.camY - H / 2), W, H, 0, 0, W, H);
+    for (const a of [...S.actors].sort((a, b) => b.y - a.y)) drawPlayer(ctx, a);
+    if (S.mode) drawBall(ctx);
+    drawHud(ctx); drawBooth(now);
+    return;
+  }
   if (S.field) ctx.drawImage(S.field, Math.round((S.cam - W / 2 / PX + 20) * PX), 0, W, H, 0, 0, W, H);
   drawLines(ctx);
   drawFlag(ctx, S.anim ? (now - S.anim.t0) / 1000 : 0);
@@ -1101,10 +1824,11 @@ function setBoard(){
 function setBadge(){
   const b = $('badge');
   b.className = 'badge' + (S.mode === 'live' ? ' live' : '');
-  b.textContent = S.mode === 'live' ? 'LIVE' : S.mode === 'replay' ? 'REPLAY' : S.mode === 'pre' ? 'PREGAME' : 'NFL';
+  b.textContent = S.mode === 'live' ? 'LIVE' : S.mode === 'replay' ? 'REPLAY' : S.mode === 'pre' ? 'PREGAME' : SPORTS[S.sport].name;
 }
 const qName = n => n > 4 ? 'OT' : 'Q' + n;
 function applyState(p, plan){
+  if (isMLB()) return applyStateMLB(p, plan);
   if (p.homeScore != null) S.prevScore.h = p.homeScore;
   if (p.awayScore != null) S.prevScore.a = p.awayScore;
   setBoard();
@@ -1125,9 +1849,11 @@ function applyState(p, plan){
 function addLog(p){
   const log = $('log'); log.querySelector('.empty')?.remove();
   const li = document.createElement('li'); if (p.scoringPlay) li.className = 'score';
-  const tm = p.start?.team?.id ? (isHomeId(p.start.team.id) ? S.home.abbr : S.away.abbr) : '';
+  const mlb = isMLB(), o = mlb ? (p._o || (p._o = outcomeMLB(p))) : null;
+  if (mlb && o.kind === 'pitch' && !p.scoringPlay) li.className = 'pitch';
+  const tm = mlb ? (o.kind === 'admin' ? '' : S.mlb.batting?.abbr || '') : p.start?.team?.id ? (isHomeId(p.start.team.id) ? S.home.abbr : S.away.abbr) : '';
   li.innerHTML = '<span class="t"></span><span class="tm"></span><span class="x"></span>';
-  li.children[0].textContent = `${p.period?.number ? qName(p.period.number) : ''} ${p.clock?.displayValue || ''}`;
+  li.children[0].textContent = mlb ? `${mlbLabel(p)} ${S.mlb.outs} OUT` : `${p.period?.number ? qName(p.period.number) : ''} ${p.clock?.displayValue || ''}`;
   li.children[1].textContent = tm; li.children[2].textContent = p.text || p.type?.text || '';
   // newest play goes on top, right under the field
   log.prepend(li);
@@ -1138,6 +1864,7 @@ function clearLog(msg){ $('log').innerHTML = ''; const li = document.createEleme
 
 function restFormation(walk, plan){
   if (!S.home) return;
+  if (isMLB()) return mlbRest(walk);
   let poss = S.offDir === -1 ? S.away : S.home, def = poss === S.home ? S.away : S.home;
   let F;
   if (plan && plan.td) {
@@ -1163,6 +1890,7 @@ function restFormation(walk, plan){
 
 /* ================= play runner ================= */
 async function runPlay(p, fast, tok){
+  if (isMLB()) return runPlayMLB(p, fast, tok);
   if (tok !== S.token) return;
   if (fast) { addLog(p); applyState(p, null); restFormation(); return; }
   let plan;
@@ -1205,6 +1933,12 @@ async function pump(){
 
 function playsOf(summary){
   const out = [], seen = new Set();
+  if (isMLB()) {
+    // baseball summaries list every pitch and play in one array
+    for (const p of summary.plays || []) { if (!p || p.id == null || seen.has(p.id)) continue; seen.add(p.id); out.push(p); }
+    out.sort((a, b) => Number(a.sequenceNumber || 0) - Number(b.sequenceNumber || 0));
+    return out;
+  }
   const dr = summary.drives || {};
   for (const d of [...(dr.previous || []), ...(dr.current ? [dr.current] : [])]) for (const p of d.plays || []) {
     if (seen.has(p.id)) continue; seen.add(p.id); out.push(p);
@@ -1223,7 +1957,8 @@ async function selectGame(id, mode){
   S.prevScore = {h: 0, a: 0}; S.down = 0; S.flag = null; S.view = null; S.summary = null; S.losX = null; S.fdX = null;
   S.rp = null; S.ri = 0; S.paused = false; $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
   const t = teamsOf(ev); S.home = t.home; S.away = t.away;
-  S.home.kit = kit(S.home, true); S.away.kit = kit(S.away, false);
+  S.home.kit = isMLB() ? kitMLB(S.home, true) : kit(S.home, true); S.away.kit = isMLB() ? kitMLB(S.away, false) : kit(S.away, false);
+  S.lineup = {}; if (isMLB()) mlbReset();
   hideNotice(); hideBanner(); renderList(); setBadge(); setBoard();
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   clearLog('Loading play-by-play...');
@@ -1234,35 +1969,36 @@ async function selectGame(id, mode){
   await Promise.all([loadRoster(S.home), loadRoster(S.away)]);
   if (tok !== S.token) return;
   refreshDetail();
-  S.ball.x = 35; S.ball.y = MIDY; S.offDir = 1;
-  S.actors = makeFormation(S.home, S.away, 35, 'kickoff'); S.cam = 35;
+  if (isMLB()) { mlbReset(); S.actors = mlbFormation(S.mlb); }
+  else { S.ball.x = 35; S.ball.y = MIDY; S.offDir = 1; S.actors = makeFormation(S.home, S.away, 35, 'kickoff'); S.cam = 35; }
+  const start = isMLB() ? 'first pitch' : 'kickoff';
 
   if (mode === 'pre') {
-    clearLog('The play-by-play starts at kickoff.');
+    clearLog(`The play-by-play starts at ${start}.`);
     const when = new Date(ev.date).toLocaleString([], {weekday: 'long', hour: 'numeric', minute: '2-digit'});
     $('clock').textContent = when; $('dd').textContent = ev.competitions[0].venue?.fullName || '';
-    $('caption').textContent = `CHIP: Kickoff is ${when}. We will go live the moment it starts.`;
+    $('caption').textContent = `CHIP: ${isMLB() ? 'First pitch' : 'Kickoff'} is ${when}. We will go live the moment it starts.`;
     return;
   }
   let sum;
-  try { sum = await getJSON(`${API}/summary?event=${id}`); S.summary = sum; refreshDetail(); }
+  try { sum = await getJSON(`${API}/summary?event=${id}`); S.summary = sum; if (isMLB()) { mlbLineups(sum); S.actors = mlbFormation(S.mlb); } refreshDetail(); }
   catch (e) { clearLog("Couldn't load this game's play-by-play from ESPN. Retrying shortly."); return; }
   if (tok !== S.token) return;
   const plays = playsOf(sum);
   if (mode === 'replay') {
-    clearLog('Replaying from the opening kickoff.');
+    clearLog(`Replaying from the ${isMLB() ? 'first pitch' : 'opening kickoff'}.`);
     $('log').innerHTML = '';
     S.queue = plays.slice(); plays.forEach(p => S.seen.add(p.id));
     S.rp = buildReplay(sum, plays); S.ri = 0; renderTimeline();
-    $('caption').textContent = `CHIP: Let us relive ${S.away.abbr} at ${S.home.abbr} from the opening kick!`;
+    $('caption').textContent = `CHIP: Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : 'opening kick'}!`;
     await sleep(1200); pump();
   } else {
     $('log').innerHTML = '';
     const back = plays.slice(-12);
     for (const p of plays.slice(0, -12)) { S.seen.add(p.id); applyState(p, null); }
     for (const p of back) { S.seen.add(p.id); addLog(p); applyState(p, null); }
-    if (!plays.length) clearLog('Waiting for the first snap...');
-    restFormation(); S.cam = clamp(S.ball.x, 10, 90);
+    if (!plays.length) clearLog(`Waiting for the first ${isMLB() ? 'pitch' : 'snap'}...`);
+    restFormation(); if (!isMLB()) S.cam = clamp(S.ball.x, 10, 90);
     $('caption').textContent = `CHIP: We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`;
     if (S.started && S.voices) say('A', $('caption').textContent.replace(/^CHIP: /, ''), tok);
   }
@@ -1274,7 +2010,7 @@ async function pollLive(){
   try {
     const sum = await getJSON(`${API}/summary?event=${S.game}`);
     if (tok !== S.token) return;
-    S.summary = sum; refreshDetail();
+    S.summary = sum; if (isMLB()) mlbLineups(sum); refreshDetail();
     const fresh = playsOf(sum).filter(p => !S.seen.has(p.id));
     fresh.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
     if (fresh.length) pump();
@@ -1289,6 +2025,7 @@ function secsOf(p){
   return Number.isFinite(+p.clock?.value) ? +p.clock.value : 0;
 }
 function buildReplay(sum, plays){
+  if (isMLB()) return buildReplayMLB(plays);
   if (!plays.length) return null;
   const idx = new Map(); plays.forEach((p, i) => idx.set(p.id, i));
   const maxQ = Math.max(4, ...plays.map(p => p.period?.number || 1));
@@ -1315,14 +2052,21 @@ function buildReplay(sum, plays){
   });
   return {plays, idx, t, total, maxQ, drives, driveOf, scores};
 }
-function playLabel(p){ return `${p.period?.number ? qName(p.period.number) : ''} ${p.clock?.displayValue || ''}`.trim(); }
+function playLabel(p){
+  if (isMLB()) { const R = S.rp, i = R?.idx?.get(p.id); return R?.mlb && i != null ? R.lab(R.half[i]) : mlbLabel(p); }
+  return `${p.period?.number ? qName(p.period.number) : ''} ${p.clock?.displayValue || ''}`.trim();
+}
 function renderTimeline(){
   const R = S.rp, box = $('tline');
   box.hidden = !R; if (!R) return;
   const qs = $('tl-qs'); qs.innerHTML = '';
   for (let n = 1; n <= R.maxQ; n++) {
-    const d = document.createElement('div'); d.className = 'tl-q'; d.style.flex = String(qLen(n)); d.textContent = qName(n); qs.append(d);
+    const d = document.createElement('div'); d.className = 'tl-q';
+    d.style.flex = String(R.mlb ? Math.min(2, R.total - (n - 1) * 2) : qLen(n)); d.textContent = R.mlb ? String(n) : qName(n); qs.append(d);
   }
+  $('tl-prev').innerHTML = R.mlb ? '&lt;&lt; INNING' : '&lt;&lt; DRIVE'; $('tl-next').innerHTML = R.mlb ? 'INNING &gt;&gt;' : 'DRIVE &gt;&gt;';
+  $('tl-prev').title = R.mlb ? 'Back to the start of the half inning' : 'Back to the start of the previous drive';
+  $('tl-next').title = R.mlb ? 'Skip to the next half inning' : 'Skip to the next drive';
   const marks = $('tl-marks'), list = $('tl-scores'); marks.innerHTML = ''; list.innerHTML = '';
   for (const s of R.scores) {
     const m = document.createElement('div'); m.className = 'tl-mark';
@@ -1330,7 +2074,7 @@ function renderTimeline(){
     const b = document.createElement('button'); b.className = 'tl-sc';
     b.innerHTML = '<i></i><span></span>'; b.firstChild.style.background = s.team.color;
     b.lastChild.textContent = `${playLabel(R.plays[s.i])} ${s.team.abbr} ${s.kind} ${s.a}-${s.h}`;
-    b.title = 'Watch this scoring drive'; b.onclick = () => seekTo(R.driveOf(s.i), 'the scoring drive');
+    b.title = R.mlb ? 'Watch this scoring inning' : 'Watch this scoring drive'; b.onclick = () => seekTo(R.driveOf(s.i), R.mlb ? 'the scoring inning' : 'the scoring drive');
     list.append(b);
   }
   updateTimeline();
@@ -1342,7 +2086,7 @@ function updateTimeline(){
   $('tl-fill').style.width = (f * 100) + '%'; $('tl-head').style.left = (f * 100) + '%';
   $('tl-now').textContent = done ? 'FINAL' : playLabel(R.plays[S.ri]);
   $('tline').querySelector('.tl-bar').setAttribute('aria-valuetext', $('tl-now').textContent);
-  if (!S.tlHover) $('tl-hover').textContent = 'Click the bar to jump. Squares mark scores.';
+  if (!S.tlHover) $('tl-hover').textContent = `Click the bar to jump. Squares mark ${R.mlb ? 'runs' : 'scores'}.`;
 }
 function idxAtFrac(f){
   const R = S.rp, target = clamp(f, 0, 1) * R.total;
@@ -1363,11 +2107,19 @@ function seekTo(i, why){
   $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   $('log').innerHTML = ''; setBoard();
   const before = R.plays.slice(0, i);
-  // fast-forward the scoreboard and ball spot; plays with no end spot (timeouts, quarter ends) only move the clock
-  for (const p of before) applyState(p, p.end?.team?.id ? null : {static: true});
-  for (const p of before.slice(-12)) addLog(p);
+  if (R.mlb) {
+    // replay the bases, outs and count from the first pitch; each play is re-read in order
+    mlbReset(); R.plays.forEach(p => { delete p._o; });
+    for (const p of before) { applyState(p, null); }
+    const logged = before.slice(-12); $('log').innerHTML = '';
+    for (const p of logged) addLog(p);
+  } else {
+    // fast-forward the scoreboard and ball spot; plays with no end spot (timeouts, quarter ends) only move the clock
+    for (const p of before) applyState(p, p.end?.team?.id ? null : {static: true});
+    for (const p of before.slice(-12)) addLog(p);
+  }
   if (!before.length) $('clock').textContent = '--';
-  restFormation(); S.cam = clamp(S.ball.x, 10, 90);
+  restFormation(); if (!R.mlb) S.cam = clamp(S.ball.x, 10, 90);
   S.queue = R.plays.slice(i); S.ri = i; updateTimeline(); renderGamePanel();
   $('caption').textContent = `CHIP: Taking you to ${why || playLabel(R.plays[i])}${why ? ', ' + playLabel(R.plays[i]) : ''}.`;
   setTimeout(() => { if (tok === S.token) pump(); }, 700);
@@ -1375,10 +2127,11 @@ function seekTo(i, why){
 function stepDrive(dir){
   const R = S.rp; if (!R) return;
   const cur = Math.min(S.ri, R.plays.length - 1), start = R.driveOf(cur);
-  if (dir > 0) { const nx = R.drives.find(d => d > cur); if (nx != null) seekTo(nx, 'the next drive'); return; }
+  const unit = R.mlb ? 'half inning' : 'drive';
+  if (dir > 0) { const nx = R.drives.find(d => d > cur); if (nx != null) seekTo(nx, 'the next ' + unit); return; }
   // back: restart this drive, or go to the one before if we're right at its start
   const k = R.drives.indexOf(start);
-  seekTo(cur - start <= 1 && k > 0 ? R.drives[k - 1] : start, 'the start of the drive');
+  seekTo(cur - start <= 1 && k > 0 ? R.drives[k - 1] : start, 'the start of the ' + unit);
 }
 (() => {
   const bar = $('tl-bar');
@@ -1401,12 +2154,20 @@ function stepDrive(dir){
 })();
 
 /* ================= this game panel: teams, rosters, players ================= */
-const SITE = 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl';
 const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 
 function drawHelmet(cv, team){
   const g = cv.getContext('2d'); g.imageSmoothingEnabled = false; g.clearRect(0, 0, 32, 28);
   const r = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
+  if (isMLB()) {
+    // a ball cap in team colors
+    r(6, 24, 20, 2, 'rgba(0,0,0,.35)');
+    r(11, 5, 10, 1, team.color); r(8, 6, 16, 2, team.color); r(6, 8, 20, 8, team.color); r(15, 4, 2, 1, team.alt);
+    r(9, 7, 4, 1, 'rgba(255,255,255,.25)'); r(15, 6, 1, 10, 'rgba(0,0,0,.2)');
+    r(13, 10, 6, 4, team.alt);
+    r(4, 16, 26, 3, team.color); r(4, 19, 24, 1, 'rgba(0,0,0,.35)');
+    return;
+  }
   r(6, 24, 20, 2, 'rgba(0,0,0,.35)');
   const c = team.color;
   r(10, 3, 12, 1, c); r(7, 4, 17, 1, c); r(5, 5, 21, 2, c); r(4, 7, 23, 3, c); r(3, 10, 23, 6, c); r(3, 16, 21, 3, c); r(4, 19, 18, 2, c); r(6, 21, 12, 1, c);
@@ -1421,7 +2182,7 @@ function drawHelmet(cv, team){
 // hair color and facial hair read off the player's real ESPN headshot. The photo itself is never shown.
 // If there's no headshot, or the browser won't let us read it, the face is left as an empty helmet.
 const SHOTS = new Map(); // url -> Promise<looks | null>
-function headshotURL(pl){ return pl.headshot || (pl.id ? `https://a.espncdn.com/i/headshots/nfl/players/full/${pl.id}.png` : ''); }
+function headshotURL(pl){ return pl.headshot || (pl.id ? `https://a.espncdn.com/i/headshots/${S.sport}/players/full/${pl.id}.png` : ''); }
 function loadLooks(pl){
   const url = headshotURL(pl); if (!url) return Promise.resolve(null);
   if (!SHOTS.has(url)) SHOTS.set(url, new Promise(res => {
@@ -1498,6 +2259,24 @@ function drawFace(g, team, pl, looks){
   const n = pl.num ?? 0;
   if (n >= 10) { digit(g, Math.floor(n / 10) % 10, 12, 26, k.num); digit(g, n % 10, 17, 26, k.num); } else digit(g, n, 14, 26, k.num);
   if (looks) r(13, 20, 6, 4, looks.shade);
+  if (isMLB()) {
+    // baseball: the face under a ball cap
+    if (!looks) r(10, 8, 12, 13, '#0b0d1a');
+    else {
+      r(10, 8, 12, 13, looks.skin); r(9, 11, 1, 4, looks.skin); r(22, 11, 1, 4, looks.skin);
+      if (looks.hair) { r(10, 8, 1, 4, looks.hair); r(21, 8, 1, 4, looks.hair); }
+      r(11, 11, 3, 1, looks.brow); r(18, 11, 3, 1, looks.brow);
+      r(12, 12, 2, 2, '#f4f4f0'); r(18, 12, 2, 2, '#f4f4f0'); r(13, 12, 1, 2, '#14141c'); r(18, 12, 1, 2, '#14141c');
+      r(15, 13, 2, 3, looks.shade);
+      if (looks.full) { r(10, 14, 1, 5, looks.fuzz); r(21, 14, 1, 5, looks.fuzz); }
+      if (looks.beard) r(10, 18, 12, 3, looks.fuzz);
+      if (looks.stache) r(13, 17, 6, 1, looks.fuzz);
+      r(14, 18, 4, 1, '#6b1b22');
+    }
+    r(10, 2, 12, 1, k.helmet); r(9, 3, 14, 5, k.helmet); r(15, 1, 2, 1, k.stripe); r(14, 4, 4, 3, k.stripe);
+    r(7, 8, 18, 2, k.helmet); r(7, 10, 18, 1, 'rgba(0,0,0,.3)');
+    return;
+  }
   // helmet shell
   r(9, 2, 14, 1, k.helmet); r(8, 3, 16, 2, k.helmet); r(7, 5, 18, 14, k.helmet); r(8, 19, 3, 2, k.helmet); r(21, 19, 3, 2, k.helmet);
   r(15, 2, 2, 7, k.stripe);
@@ -1568,17 +2347,26 @@ function teamHTML(t){
   if (rec) h += `<div class="muted">Record ${esc(rec)}</div>`;
   const tb = teamBox(t);
   h += `<h5>THIS GAME</h5>`;
-  if (tb?.statistics?.length) {
+  if (tb?.statistics?.length && tb.statistics[0]?.stats) {
+    // baseball box scores group team stats (batting, pitching, fielding)
+    for (const cat of tb.statistics) {
+      const items = (cat.stats || []).filter(x => x.displayValue != null).slice(0, 8);
+      if (!items.length) continue;
+      h += `<div class="muted">${esc(String(cat.displayName || cat.name || '').toUpperCase())}</div><div class="kv">` +
+        items.map(x => `<span>${esc(x.label || x.displayName || x.abbreviation || x.name)}</span><span>${esc(x.displayValue)}</span>`).join('') + '</div>';
+    }
+  } else if (tb?.statistics?.length) {
     const st = tb.statistics, pickd = TEAM_KEYS.map(k => st.find(x => x.name === k)).filter(Boolean);
     h += '<div class="kv">' + (pickd.length ? pickd : st.slice(0, 10)).map(x => `<span>${esc(x.label)}</span><span>${esc(x.displayValue)}</span>`).join('') + '</div>';
   } else h += `<div class="muted">Team stats show up once the game starts.</div>`;
   const all = S.roster[t.id]?.all || [];
-  const groups = [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
+  const groups = isMLB() ? [...new Set(all.map(p => p.side))].sort((a, b) => ['PITCHERS', 'CATCHERS', 'INFIELDERS', 'OUTFIELDERS', 'DESIGNATED HITTERS'].indexOf(a) - ['PITCHERS', 'CATCHERS', 'INFIELDERS', 'OUTFIELDERS', 'DESIGNATED HITTERS'].indexOf(b)).map(x => [x, x])
+    : [['offense', 'OFFENSE'], ['defense', 'DEFENSE'], ['specialTeam', 'SPECIAL TEAMS']];
   if (!all.length) h += `<h5>ROSTER</h5><div class="muted">Roster not available.</div>`;
   for (const [key, label] of groups) {
-    const ps = all.filter(p => p.side === key && p.id).sort((a, b) => a.num - b.num);
+    const ps = all.filter(p => p.side === key && p.id).sort((a, b) => (a.num ?? 999) - (b.num ?? 999));
     if (!ps.length) continue;
-    h += `<h5>${label}</h5><div class="plist">` + ps.map(p => `<button class="pl" data-pid="${esc(p.id)}"><span class="n">#${p.num}</span><span>${esc(p.name)}</span><span class="ps">${esc(p.pos)}</span></button>`).join('') + '</div>';
+    h += `<h5>${esc(label)}</h5><div class="plist">` + ps.map(p => `<button class="pl" data-pid="${esc(p.id)}"><span class="n">${p.num != null ? '#' + p.num : ''}</span><span>${esc(p.name)}</span><span class="ps">${esc(p.pos)}</span></button>`).join('') + '</div>';
   }
   return h;
 }
@@ -1597,7 +2385,7 @@ function gameStatsFor(team, p){
 function playerHTML(t, p){
   const bio = [p.posName || p.pos, p.ht, p.wt, p.age ? `Age ${p.age}` : '', p.exp != null ? (p.exp ? `${p.exp} yr pro` : 'Rookie') : ''].filter(Boolean).join(' · ');
   let h = `<div class="dhead"><b>${esc(t.abbr)} ROSTER</b><button class="back">BACK</button></div>`;
-  h += `<div class="pcard"><canvas width="32" height="32"></canvas><div><div class="pn">#${p.num} ${esc(p.name.toUpperCase())}</div><div class="pm">${esc(bio)}</div>${p.college ? `<div class="pm">${esc(p.college)}</div>` : ''}</div></div>`;
+  h += `<div class="pcard"><canvas width="32" height="32"></canvas><div><div class="pn">${p.num != null ? '#' + p.num + ' ' : ''}${esc(p.name.toUpperCase())}</div><div class="pm">${esc(bio)}</div>${p.college ? `<div class="pm">${esc(p.college)}</div>` : ''}</div></div>`;
   const gs = gameStatsFor(t, p);
   h += `<h5>THIS GAME</h5>` + (gs || `<div class="muted">No stats in this game yet.</div>`);
   const ss = S.pstats?.[p.id];
@@ -1637,7 +2425,7 @@ function showTimeout(p){
 function hideNotice(){ $('notice').hidden = true; }
 function showIdle(){
   const {next, fin} = sortedGames(), n = $('notice'); n.replaceChildren();
-  const h = document.createElement('h2'); h.textContent = 'NO NFL GAMES LIVE RIGHT NOW';
+  const h = document.createElement('h2'); h.textContent = `NO ${SPORTS[S.sport].name} GAMES LIVE RIGHT NOW`;
   const p = document.createElement('p');
   p.textContent = next[0] ? `Next up: ${gameLine(next[0]).m}, ${gameLine(next[0]).s}. Pick any game from the list.` : 'Pick any game from the list.';
   const btns = document.createElement('div'); btns.className = 'btns';
@@ -1682,22 +2470,53 @@ $('btn-start').onclick = () => {
   else if (S.mode === 'live') say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
 };
 
-(async function boot(){
-  // a neutral field while data loads
+// a neutral field or park while data loads
+async function neutralField(){
   S.home = {id: 'h', abbr: 'HOME', nick: 'Home', loc: 'Home', color: '#1f3c88', alt: '#f7c948'};
   S.away = {id: 'a', abbr: 'AWAY', nick: 'Away', loc: 'Away', color: '#a8321f', alt: '#ffffff'};
-  S.home.kit = kit(S.home, true); S.away.kit = kit(S.away, false);
+  S.home.kit = isMLB() ? kitMLB(S.home, true) : kit(S.home, true); S.away.kit = isMLB() ? kitMLB(S.away, false) : kit(S.away, false);
   await (document.fonts?.load('8px "Press Start 2P"').catch(() => {}));
-  buildField(); S.actors = makeFormation(S.home, S.away, 50, 'rush'); S.cam = 50;
+  buildField();
+  if (isMLB()) { S.lineup = {}; mlbReset(); S.actors = mlbFormation(S.mlb); }
+  else { S.actors = makeFormation(S.home, S.away, 50, 'rush'); S.cam = 50; S.ball.x = 50; S.ball.y = MIDY; S.ball.h = 0; }
+}
+async function openSport(){
+  const sport = S.sport, ok = await loadScoreboard();
+  if (!ok || sport !== S.sport) return;
+  const {live} = sortedGames();
+  if (live[0]) selectGame(String(live[0].id), 'live');
+  else if (S.started) showIdle();
+}
+async function switchSport(sp){
+  if (sp === S.sport || !SPORTS[sp]) return;
+  S.sport = sp; API = SPORTS[sp].api; SITE = SPORTS[sp].site;
+  try { history.replaceState(null, '', location.pathname + location.search + (sp === 'nfl' ? '' : '#' + sp)); } catch (e) {}
+  for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === sp));
+  S.token++;
+  if (window.speechSynthesis) speechSynthesis.cancel();
+  if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
+  Object.assign(S, {events: new Map(), game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
+    rp: null, ri: 0, paused: false, losX: null, fdX: null, flag: null, down: 0, prevScore: {h: 0, a: 0}, replayDone: false});
+  $('tline').hidden = true; hideNotice(); hideBanner(); showErr('');
+  clearLog('Pick a game to see its play-by-play here.');
+  $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
+  $('caption').textContent = `CHIP: Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
+  setBadge(); renderList(); renderGamePanel(); renderDetail();
+  await neutralField(); if (sp !== S.sport) return;
+  setBoard(); openSport();
+}
+$('sport-nfl').onclick = () => switchSport('nfl');
+$('sport-mlb').onclick = () => switchSport('mlb');
+
+(async function boot(){
+  if (/^#mlb$/i.test(location.hash)) { S.sport = 'mlb'; API = SPORTS.mlb.api; SITE = SPORTS.mlb.site; }
+  for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));
+  setBadge();
+  await neutralField();
   requestAnimationFrame(step);
-  const ok = await loadScoreboard();
-  if (ok) {
-    const {live} = sortedGames();
-    if (live[0]) selectGame(String(live[0].id), 'live');
-    else if (S.started) showIdle();
-  }
+  await openSport();
   setInterval(async () => {
-    const had = S.events.size; await loadScoreboard();
+    const had = S.events.size, sport = S.sport; await loadScoreboard(); if (sport !== S.sport) return;
     if (S.mode === 'pre') { const ev = S.events.get(S.game); if (ev && stateOf(ev) === 'in') selectGame(S.game, 'live'); }
     if (!S.game && S.started && !had && S.events.size) showIdle();
   }, 30000);
