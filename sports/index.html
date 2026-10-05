@@ -2311,7 +2311,7 @@ function bbRest(walk){
       Object.assign(f, {tx: f.x, ty: f.y, x: bx, y: by, lx: bx, ly: by, entering: true, walkSpeed: 10}); out.push(f); continue;
     }
     Object.assign(a, {role: f.role, num: f.num ?? a.num, looks: f.looks || a.looks, tx: f.x, ty: f.y, track: null, chase: false, hop: 0, leaving: false,
-      walkSpeed: st.huddle ? 9 : 14 + hash(a.pid) % 5});
+      walkSpeed: st.huddle ? 9 : 14 + hash(a.pid) % 5, filler: false});
     out.push(a);
   }
   for (const a of free) {
@@ -2320,6 +2320,41 @@ function bbRest(walk){
   }
   S.actors = out; st.holder = holderOf(out);
   if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
+}
+
+/* ---- live games: the offense keeps working the ball while the next play is on its way ---- */
+// ESPN posts a play every 15 to 20 seconds or so, and the page asks every 10. In between, the team with the ball
+// passes it around, dribbles and cuts, and the defense stays with them. None of this is a play: nobody shoots,
+// scores or loses the ball, and the next real play starts with a pass to whoever really has it (planBB).
+function bbFill(now){
+  const st = S.bb; if (!st) return;
+  const h = st.holder, off = st.poss;
+  if (st.huddle || st.tip || st.loose || !off || !h || !S.actors.includes(h) || S.queue.length) { st.filling = false; return; }
+  // wait until everyone has walked into place after the last play
+  if (S.actors.some(a => a.tx != null && !a.filler)) { st.filling = false; st.fillAt = now + 700; return; }
+  const mates = S.actors.filter(a => a.team === off && !a.leaving && !a.ref), def = otherTeam(off);
+  if (mates.length < 2) return;
+  if (!st.filling) { st.filling = true; st.fillAt = Math.max(st.fillAt || 0, now + 900); }
+  const hx = hoopX(off), d = attackDir(off);
+  if (now >= st.fillAt) {
+    // decoration only, so a coin flip picks it: a pass to a teammate, or someone cuts to another spot
+    const others = mates.filter(a => a !== st.holder);
+    if (Math.random() < 0.55) st.holder = others[Math.floor(Math.random() * others.length)];
+    else {
+      // the cutter heads for one of the two most open spots, so teammates spread the floor instead of bunching up
+      const a = mates[Math.floor(Math.random() * mates.length)], spot = ([dx, y]) => [hx - d * dx, y];
+      const open = OFF_SLOTS.map(sl => [sl, Math.min(...mates.filter(m => m !== a).map(m => Math.hypot((m.tx ?? m.x) - spot(sl)[0], (m.ty ?? m.y) - sl[1])))]).sort((p, q) => q[1] - p[1]);
+      const [dx, y] = open[Math.floor(Math.random() * 2)][0];
+      Object.assign(a, {tx: clamp(hx - d * (dx + Math.random() * 4 - 2), 1, 93), ty: clamp(y + Math.random() * 6 - 3, 2, 48), walkSpeed: a === st.holder ? 7 : 11, filler: true});
+    }
+    st.fillAt = now + 1300 + Math.random() * 1700;
+  }
+  // each defender stays between their player and the basket
+  for (const m of mates) {
+    const df = S.actors.find(a => a.team === def && a.role === m.role && !a.leaving); if (!df) continue;
+    const gx = hx + (m.x - hx) * 0.72, gy = 25 + (m.y - 25) * 0.82;
+    if (Math.hypot(gx - df.x, gy - df.y) > 1.2) Object.assign(df, {tx: gx, ty: gy, walkSpeed: 12, filler: true});
+  }
 }
 
 /* ---- the benches: everyone not on the floor sits in a chair; they jump up for a big three or a dunk ---- */
@@ -2412,7 +2447,15 @@ function planBB(p){
     return prev ? [prev.x, prev.y] : a.ref ? [a.x, a.y] : chairFor(a.team, a.pid);
   });
   const far = Math.max(0, ...F.map((a, i) => Math.hypot(a.x - starts[i][0], a.y - starts[i][1])));
-  const PRE = far > 2 ? clamp(far / 22, 0.25, 1.8) : 0.05;
+  let PRE = far > 2 ? clamp(far / 22, 0.25, 1.8) : 0.05;
+  // the ball may be with someone else (a live game passes it around while waiting for plays): the player who
+  // really has the ball in this play gets a pass first, so the shooter, ball handler or fouled player is always right
+  const h0 = st.holder && S.actors.includes(st.holder) && !st.loose ? set.holder : null, hs = h0 && starts[F.indexOf(h0)];
+  const passD = hs ? Math.hypot(S.ball.x - hs[0], S.ball.y - hs[1]) : 0;
+  if (passD > 2) {
+    PRE = Math.max(PRE, clamp(passD / 40, 0.4, 0.9));
+    plan.segs.push({t0: 0, t1: PRE, k: 'arc', x0: S.ball.x, y0: S.ball.y, xa: h0, peak: 3, start: Math.max(1, S.ball.h), end: 1});
+  }
   F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; });
   const who = id => id ? F.find(a => a.pid === String(id)) : null;
   const last = a => a.track.reduce((m, q) => q[0] >= m[0] ? q : m);
@@ -2787,12 +2830,13 @@ function step(now){
   if (S.actors.some(p => p.gone)) S.actors = S.actors.filter(p => !p.gone); // back in the dugout
   if (isBB()) {
     // between plays the ball handler dribbles; the camera follows the ball, like football's
+    if (S.mode === 'live' && !S.anim) bbFill(now); else if (S.bb) S.bb.filling = false;
     const h = !S.anim && S.bb?.holder, bdt = Math.min(0.05, (now - (S.bbLast || now)) / 1000); S.bbLast = now;
     if (h && S.actors.includes(h)) {
       const tx = h.x + 0.7, ty = h.y + 0.3, dx = tx - S.ball.x, dy = ty - S.ball.y, d = Math.hypot(dx, dy);
       // a new ball handler gets a pass rather than the ball jumping to them
       if (d > 1.5) { const sp = Math.min(d, 42 * bdt); S.ball.x += dx / d * sp; S.ball.y += dy / d * sp; S.ball.h = Math.min(6, 2 + d * 0.4); }
-      else { S.ball.x = tx; S.ball.y = ty; S.ball.h = h.moving ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
+      else { S.ball.x = tx; S.ball.y = ty; S.ball.h = h.moving || S.bb.filling ? (Math.floor(now / 160) % 2 ? -6 : 1) : 1; }
     }
     // the camera pans left and right with the ball; the court's full width is always on screen
     // and stops with each baseline a little in from the edge of the screen
