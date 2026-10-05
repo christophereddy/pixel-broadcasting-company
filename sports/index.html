@@ -3766,7 +3766,7 @@ async function loadCFBTeams(){
   for (const c of nodes) {
     const entries = [...(c.standings?.entries || []), ...(c.children || []).flatMap(d => d.standings?.entries || [])].filter(e => e.team?.id);
     if (!entries.length) continue;
-    const seed = e => +(recOf(e, 'playoffSeed')?.value || 0) || 999;
+    const seed = e => +((recOf(e, 'playoffSeed') || recOf(e, 'playoffseed'))?.value || 0) || 999;
     entries.sort((a, b) => seed(a) - seed(b) || pct(recOf(b, 'vsconf')) - pct(recOf(a, 'vsconf')) || pct(recOf(b, 'total')) - pct(recOf(a, 'total')));
     const conf = {id: String(c.id), name: c.abbreviation || c.shortName || c.name, full: c.name, ids: new Set()};
     entries.forEach((e, i) => {
