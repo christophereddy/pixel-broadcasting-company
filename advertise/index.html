@@ -42,7 +42,8 @@
     <section class="co-card co-hero">
       <h2>THE MARKETING DIVISION</h2>
       <p class="co-lead">Put your brand inside the broadcast.</p>
-      <p>PBC runs news and live sports around the clock in pixel art. Sponsors don't interrupt it: they become part of the world, on the arena boards, the timeout screen, and the newsroom set, spelled out in the same pixel lettering as everything else.</p>
+      <div class="co-herorow"><p>PBC runs news and live sports around the clock in pixel art. Sponsors don't interrupt it: they become part of the world, on the arena boards, the timeout screen, and the newsroom set, spelled out in the same pixel lettering as everything else.</p>
+        <canvas id="cat" class="co-cat" width="36" height="24" aria-label="The newsroom's black cat, napping"></canvas></div>
     </section>
 
     <section class="co-card" id="menu">
@@ -133,16 +134,26 @@
 
     <section class="co-card" id="faq">
       <h2>QUESTIONS</h2>
-      <h3>Can I send a logo, video or banner ad?</h3>
-      <p>Not yet. For now every ad is text, your business name and a short line, set in the channel's pixel lettering so it fits the world.</p>
-      <h3>Can viewers get to my website?</h3>
-      <p>Yes. If you give us your website, a QR code to it appears with your ad during timeouts and commercial breaks.</p>
-      <h3>Will the cast talk about my product?</h3>
-      <p>Only in your sponsor slot, with one fixed line you approve in advance. Never inside a news story.</p>
-      <h3>Do sponsors affect the news?</h3>
-      <p>No. Sponsors never choose or shape coverage. See the <a href="../ad-policy/">Ad Policy</a>.</p>
-      <h3>Can I choose a city or a sport?</h3>
-      <p>Yes. Tell us in the request and we'll say what's open.</p>
+      <div class="co-rep" id="repDesk" hidden>
+        <div class="co-repstage"><canvas id="rep" width="120" height="72" aria-hidden="true"></canvas>
+          <p class="co-repname"><b>DOT DELGADO</b> Head of Sales</p></div>
+        <div class="co-bubble"><p id="bubble" aria-live="polite">Hi, I'm Dot, head of sales. Pick a question and I'll answer it.</p></div>
+      </div>
+      <div class="co-asks" id="asks" role="group" aria-label="Questions for Dot"></div>
+      <!-- Dot's answers: fixed text, edited here. Nothing a visitor types or clicks is sent anywhere. -->
+      <dl class="co-faq" id="faqList">
+        <dt>What kinds of ads do you sell?</dt><dd>Four kinds: arena boards in every sport, the timeout screen, presented-by segments on the News channel, and a spot on the newsroom set. They're all text, in our pixel lettering.</dd>
+        <dt>How much does it cost?</dt><dd>Rates aren't set yet. Send a request and we'll get back to you when booking opens.</dd>
+        <dt>When can my ad start?</dt><dd>Sponsorships open soon. Send a request now with the month you'd like to start, and you'll be near the front of the line.</dd>
+        <dt>Can I send a logo, video or banner ad?</dt><dd>Not yet. For now every ad is text, your business name and a short line, set in the channel's pixel lettering so it fits the world.</dd>
+        <dt>Can viewers get to my website?</dt><dd>Yes. If you give us your website, a QR code to it appears with your ad during timeouts and commercial breaks.</dd>
+        <dt>Will the cast talk about my product?</dt><dd>Only in your sponsor slot, with one fixed line you approve in advance. Never inside a news story.</dd>
+        <dt>Do sponsors affect the news?</dt><dd>No. Sponsors never choose or shape coverage. It's all in our <a href="../ad-policy/">Ad Policy</a>.</dd>
+        <dt>Can I choose a city or a sport?</dt><dd>Yes. Tick the boxes in the request form and we'll tell you what's open.</dd>
+        <dt>Who reads my request?</dt><dd>A person at PBC. Requests never go on air and never go to the AI that writes the news.</dd>
+        <dt>Is the cat for sale?</dt><dd>No. The cat is not for sale, and neither is the cat's nap schedule.</dd>
+      </dl>
+      <p class="co-hint">Something else? Write to sales: <span data-email="advertising"></span></p>
     </section>
   </main>
 
@@ -168,6 +179,7 @@
     </ul></div>
   </aside>
 </div>
+<script src="office.js"></script>
 <script>
 /* Marketing Division: everything that turns on later is read from shared/business.js. */
 (function(){
