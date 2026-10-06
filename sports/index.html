@@ -363,10 +363,16 @@ async function getJSON(url){
 function showErr(msg){ const e = $('err'); e.textContent = msg || ''; e.hidden = !msg; }
 const ymd = d => d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
 
-// a team in the shape the page uses. Team schedules leave out colors, so those come from the teams list.
+// a team in the shape the page uses. Team schedules leave out colors, so those come from the teams list, or from
+// colors already seen for that team (COLORS). A team still without colors is marked noColor and fetched by teamColors().
+const COLORS = new Map(); // sport:id -> [color, alt]
 function teamObj(t, id){
-  const known = S.teams.find(x => x.id === String(t.id || id));
+  let known = S.teams.find(x => x.id === String(t.id || id)); if (known?.noColor) known = {...known, color: null, alt: null};
+  const seen = COLORS.get(S.sport + ':' + String(t.id || id));
+  if (t.color && (t.id || id)) COLORS.set(S.sport + ':' + String(t.id || id), ['#' + t.color, t.alternateColor ? '#' + t.alternateColor : '#ffffff']);
+  if (!t.color && !known?.color && seen) t = {...t, color: seen[0].slice(1), alternateColor: seen[1].slice(1)};
   return {
+    noColor: !t.color && !known?.color,
     id: String(t.id || id), abbr: t.abbreviation || known?.abbr || '???',
     nick: t.shortDisplayName || t.name || known?.nick || t.abbreviation || 'Team',
     loc: t.location || known?.loc || t.displayName || t.abbreviation || 'Team',
@@ -375,6 +381,24 @@ function teamObj(t, id){
   };
 }
 // scoreboards give a score as text, team schedules as {value, displayValue}
+// ESPN's team page carries the colors that its team schedules and standings leave out
+async function teamColors(t){
+  if (!t?.noColor || isMLB() || !/^\d+$/.test(t.id)) return;
+  const key = S.sport + ':' + t.id;
+  if (!COLORS.has(key)) {
+    try { const x = (await getJSON(`${API}/teams/${t.id}`)).team || {}; if (x.color) COLORS.set(key, ['#' + x.color, x.alternateColor ? '#' + x.alternateColor : '#ffffff']); } catch (e) { return; }
+  }
+  const c = COLORS.get(key); if (!c) return;
+  [t.color, t.alt] = c; t.noColor = false; t.kit = null;
+  for (const x of S.teams) if (x.id === t.id && x !== t) { [x.color, x.alt] = c; x.noColor = false; x.kit = null; }
+}
+// two teams whose colors look alike (Alabama and Georgia reds): the away team switches to its second color
+const near = (a, b) => { const [r1, g1, b1] = hexToRgb(a), [r2, g2, b2] = hexToRgb(b); return Math.hypot(r1 - r2, g1 - g2, b1 - b2) < 110; };
+function sideColors(){
+  const h = S.home, a = S.away; if (!h || !a) return;
+  if (near(h.color, a.color) && !near(a.alt, h.color)) [a.color, a.alt] = [a.alt, a.color];
+  h.kit = kitFor(h, true); a.kit = kitFor(a, false);
+}
 const scoreOf = x => x != null && typeof x === 'object' ? (x.displayValue ?? String(x.value ?? '')) : x;
 function teamsOf(ev){
   const c = ev.competitions[0], m = {};
@@ -2958,6 +2982,8 @@ function setBoard(){
   if (!S.home) return;
   $('abA').textContent = S.away.abbr; $('abH').textContent = S.home.abbr;
   $('chipA').style.background = S.away.color; $('chipH').style.background = S.home.color;
+  // the box's border is the team's second color, so a black or navy team still shows on the dark board
+  $('chipA').style.borderColor = S.away.alt; $('chipH').style.borderColor = S.home.alt;
   $('scA').textContent = S.prevScore.a; $('scH').textContent = S.prevScore.h;
   if (S.game) { $('tc-away').querySelector('.ts').textContent = S.prevScore.a; $('tc-home').querySelector('.ts').textContent = S.prevScore.h; }
 }
@@ -3101,14 +3127,16 @@ async function selectGame(id, mode){
   S.prevScore = {h: 0, a: 0}; S.down = 0; S.flag = null; S.view = null; S.summary = null; S.losX = null; S.fdX = null;
   S.rp = null; S.ri = 0; S.paused = false; $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
   const t = teamsOf(ev); S.home = t.home; S.away = t.away;
-  S.home.kit = kitFor(S.home, true); S.away.kit = kitFor(S.away, false);
+  sideColors();
   S.lineup = {}; S.people = {}; if (isMLB()) { setPark(ev.competitions?.[0]?.venue?.fullName); mlbReset(); }
   if (isBB()) { S.bb = null; bbReset(); }
   hideNotice(); hideBanner(); renderList(); setBadge(); setBoard();
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   clearLog('Loading play-by-play...');
   $('caption').textContent = `${tag('A')}Welcome to ${S.home.loc}, where the ${S.away.nick} visit the ${S.home.nick}.`;
-  await (document.fonts?.load('8px "Press Start 2P"').catch(() => {}));
+  await Promise.all([document.fonts?.load('8px "Press Start 2P"').catch(() => {}), teamColors(S.home), teamColors(S.away)]);
+  if (tok !== S.token) return;
+  sideColors(); setBoard();
   buildField();
   renderGamePanel(); renderDetail();
   await Promise.all([loadRoster(S.home), loadRoster(S.away)]);
@@ -3874,6 +3902,7 @@ function markLive(){
 }
 
 function openTeam(t){
+  if (t.noColor) teamColors(t).then(() => { if (S.tview?.team === t) { t.kit = kitFor(t, true); renderTeamPage(); } });
   t.kit ||= kitFor(t, true);
   S.tview = {team: t}; renderTeams(); loadTeamData(t); loadRoster(t).then(() => { if (S.tview?.team === t) renderTeamPage(); });
 }
