@@ -1,5 +1,5 @@
 /* Marketing Division office.
-   The newsroom's black cat naps on a cushion along the bottom of the intro card. Now and then it wakes to stretch or
+   Batty, the newsroom's black cat, naps on a cushion along the bottom of the intro card. Now and then it wakes to stretch or
    wash. If the mouse comes close it sits up, watches it, and swipes a few times before losing interest (a tap does the
    same on a phone). THROW A TOY tosses a ball of yarn across the card; the cat fetches it back to its cushion.
    Dot Delgado, head of sales, answers the questions listed in the page (#faqList), out loud when DOT'S VOICE is on.
