@@ -32,12 +32,12 @@ button:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-
 main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .stage canvas#field{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .win{position:absolute;background:rgba(10,12,32,.92);border:3px solid #e9e4cf;box-shadow:0 0 0 3px #05060d, inset 0 0 0 2px #39418a}
-.booth{top:1.6cqw;left:1.6cqw;width:31cqw;padding:.8cqw}
+.booth{top:.6cqw;left:1.6cqw;width:31cqw;padding:.8cqw}
 .booth canvas{display:block;width:100%;image-rendering:pixelated;image-rendering:crisp-edges;background:#24305e}
 .names{display:flex;justify-content:space-between;font-family:var(--display);font-size:1.44cqw;margin:.6cqw 0 .4cqw;color:var(--dim)}
 .names .on{color:var(--gold)}
 .caption{font-size:2.3cqw;line-height:1.05;min-height:7.2cqw;max-height:9.5cqw;overflow:hidden}
-.board{top:1.6cqw;right:1.6cqw;width:27cqw;padding:.9cqw 1.1cqw;font-family:var(--display);font-size:2cqw}
+.board{top:.6cqw;right:1.6cqw;width:27cqw;padding:.9cqw 1.1cqw;font-family:var(--display);font-size:2cqw}
 .row{display:flex;align-items:center;gap:.9cqw;margin:.35cqw 0}
 .chip{width:1.8cqw;height:1.8cqw;flex:none;border:.25cqw solid #fff}
 .row .ab{flex:1}
@@ -2191,7 +2191,7 @@ const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his'}, wnba: 
 const lg = () => BBL[S.sport] || BBL.nba;
 // Like football, the camera only pans left and right with the ball. The court sits low, so its far sideline is just
 // under the booth and the scoreboard, and the benches line the bottom of the screen.
-const BC = {X0: 260, Y0: 126, KX: 7.4, KY: 2.5, HOOP: 5.25, RIM: 34, CW: 1216, CH: 270};
+const BC = {X0: 260, Y0: 121, KX: 7.4, KY: 2.6, HOOP: 5.25, RIM: 34, CW: 1216, CH: 270};
 const bcx = x => BC.X0 + x * BC.KX, bcy = y => BC.Y0 + y * BC.KY;
 const hoopX = team => team === S.home ? 94 - BC.HOOP : BC.HOOP;   // the basket a team shoots at
 const attackDir = team => team === S.home ? 1 : -1;
