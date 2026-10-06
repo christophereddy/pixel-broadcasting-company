@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-06T07:11:00Z",
+ "updatedAt": "2026-10-06T10:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Secessionist party wins Quebec election",
+   "b": "The Parti Quebecois won the most seats in Quebec's election and will form the province's next government.",
+   "date": "2026-10-06",
+   "more": [
+    "Leader Paul St-Pierre Plamondon, set to become premier, promised a third referendum on leaving Canada in his first term.",
+    "It was not yet clear whether the party reached the 64 seats needed for a majority."
+   ]
+  },
   {
    "h": "Russian plague institute worker dies",
    "b": "A worker at a Siberian anti-plague institute died of what Russia calls pneumonia of unknown cause, fueling plague concerns.",
@@ -51,6 +60,15 @@
   }
  ],
  "national": [
+  {
+   "h": "Televangelist Jim Bakker dies at 86",
+   "b": "Jim Bakker, who built the 'PTL Club' televangelism empire with Tammy Faye before losing it to scandal, has died at 86.",
+   "date": "2026-10-06",
+   "more": [
+    "His wife Lori Bakker announced his death; the cause was not immediately clear.",
+    "He had hosted 'The Jim Bakker Show' near Branson, Missouri, since 2003."
+   ]
+  },
   {
    "h": "Protesters smash Cornell door over rape case",
    "b": "Protesters broke a glass door and spray-painted Cornell's administration building early Monday amid anger over a 2024 gang rape case.",
@@ -175,6 +193,17 @@
    "tz": "Europe/Belgrade"
   },
   {
+   "h": "UN rights council condemns Sudan attacks",
+   "b": "The UN Human Rights Council condemned drone strikes and other attacks on civilians in Sudan and called for a truce.",
+   "date": "2026-10-06",
+   "more": [
+    "It extended its Sudan fact-finding mission by a vote of 28 to 10, with nine abstentions.",
+    "The World Food Programme said an air attack hit a food truck in North Kordofan, killing one person."
+   ],
+   "place": "Geneva, Switzerland",
+   "tz": "Europe/Zurich"
+  },
+  {
    "h": "Ethiopia's Abiy vows Red Sea access at swearing-in",
    "b": "Prime Minister Abiy Ahmed began a new five-year term insisting landlocked Ethiopia must have access to the Red Sea.",
    "date": "2026-10-05",
@@ -194,6 +223,17 @@
    ],
    "place": "Rabat, Morocco",
    "tz": "Africa/Casablanca"
+  },
+  {
+   "h": "Man deported to Eswatini freed after a year",
+   "b": "A Laotian man the US deported to Eswatini was released from a maximum-security prison after more than a year, his lawyer said.",
+   "date": "2026-10-05",
+   "more": [
+    "Phone Chomsavanh was one of five immigrants sent to Eswatini in July 2025 under the third-country deportation program.",
+    "His lawyer says he is now being deported to Laos."
+   ],
+   "place": "Mbabane, Eswatini",
+   "tz": "Africa/Mbabane"
   },
   {
    "h": "Mexico asks US for proof of border shooting",
@@ -395,46 +435,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
+   "temp": 52,
    "cond": "Fair",
-   "obs": "5 Oct 23:51 pm EDT"
+   "obs": "6 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 49,
-    "text": "Clear, with a low around 49. Northwest wind around 15 mph. "
-   },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. Northwest wind 10 to 13 mph. "
+    "text": "Sunny, with a high near 65. Northwest wind 9 to 13 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 49,
-    "text": "Clear, with a low around 49. Northwest wind 3 to 6 mph. "
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47. Northwest wind around 6 mph becoming calm  after midnight. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 69,
-    "text": "Sunny, with a high near 69. South wind 5 to 13 mph. "
+    "temp": 68,
+    "text": "Sunny, with a high near 68. Light southwest wind becoming south 6 to 11 mph in the morning. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 57,
-    "text": "Mostly clear, with a low around 57. Southwest wind around 11 mph. "
+    "temp": 58,
+    "text": "Mostly clear, with a low around 58. Southwest wind 10 to 13 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 77,
-    "text": "Sunny, with a high near 77."
+    "temp": 74,
+    "text": "Sunny, with a high near 74."
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 59,
+    "text": "Mostly clear, with a low around 59."
    }
   ]
  },
