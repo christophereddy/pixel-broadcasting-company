@@ -628,8 +628,47 @@ const xOf = (teamId, yte) => isHomeId(teamId) ? 100 - yte : yte;
 const sxOf = x => isBB() ? Math.round(bcx(x) - (S.camX - W / 2)) : isMLB() ? Math.round(mcx(x) - (S.camX - W / 2)) : Math.round((x - S.cam) * PX + W / 2);
 const syOf = y => isBB() ? Math.round(bcy(y) - (S.camY - H / 2)) : isMLB() ? Math.round(mcy(y) - (S.camY - H / 2)) : Math.round(FT + clamp(y, -1, 54.3) * SY);
 
+
+/* ================= sponsor signs in the world ================= */
+// Invented brands, in the page's own palette, on the surfaces a real broadcast sells: the stands wall in football,
+// the outfield wall in baseball, the courtside boards and scorer's table in basketball. Every board carries a
+// SPONSOR tag so viewers can tell a paid spot from the ballpark's own art. No real company appears anywhere.
+const ADS = [
+  {name: 'PIXL COLA', bg: '#a8321f', fg: '#f7d038'},
+  {name: 'BYTE BURGER', bg: '#f2b632', fg: '#2a1a0c'},
+  {name: 'NOVA MOTORS', bg: '#1f5fa8', fg: '#e7e1cc'},
+  {name: 'HEXA BANK', bg: '#14532d', fg: '#c9c9d6'},
+  {name: 'ATLAS WIRELESS', bg: '#5b2a86', fg: '#f2f0e8'},
+  {name: 'GRID COFFEE', bg: '#5d4a3a', fg: '#eec39a'},
+  {name: 'VOLT ENERGY', bg: '#2c3350', fg: '#79bc43'},
+  {name: 'MESA INSURANCE', bg: '#7a2533', fg: '#e7e1cc'},
+  {name: 'SOLARIS POWER', bg: '#e8772e', fg: '#2a1a0c'},
+  {name: 'TOPO OUTFITTERS', bg: '#1d6b5a', fg: '#f2e6d8'},
+  {name: 'QUARRY HARDWARE', bg: '#3a3f4f', fg: '#f7d038'},
+  {name: 'RETRO RENTALS', bg: '#0e2240', fg: '#5091cd'}
+];
+// the boards change together every so often, like a real rotating board
+const adAt = i => ADS[(i + (S.adPhase || 0)) % ADS.length];
+// one board: dark frame, the brand in pixel type, and the SPONSOR tag under it where there is room
+function adBoard(g, x, y, w, h, ad){
+  x = Math.round(x); y = Math.round(y); w = Math.round(w); h = Math.round(h);
+  g.fillStyle = '#05060d'; g.fillRect(x, y, w, h);
+  g.fillStyle = ad.bg; g.fillRect(x + 1, y + 1, w - 2, h - 2);
+  g.fillStyle = ad.fg; g.fillRect(x + 1, y + 1, w - 2, 1); g.fillRect(x + 1, y + h - 2, w - 2, 1);
+  const tagged = h >= 13, save = [g.font, g.textAlign, g.textBaseline];
+  g.textAlign = 'center'; g.textBaseline = 'middle';
+  let size = Math.min(8, tagged ? 8 : h - 3);
+  for (; size > 4; size--) { g.font = size + 'px "Press Start 2P"'; if (g.measureText(ad.name).width <= w - 6) break; }
+  g.font = size + 'px "Press Start 2P"';
+  g.fillStyle = ad.fg; g.fillText(ad.name, x + w / 2, y + (tagged ? h / 2 - 2 : h / 2));
+  if (tagged) { g.font = '5px "Press Start 2P"'; g.fillStyle = ad.fg; g.globalAlpha = 0.65; g.fillText('SPONSOR', x + w / 2, y + h - 5); g.globalAlpha = 1; }
+  [g.font, g.textAlign, g.textBaseline] = save;
+}
+
 /* ================= the fixed art: field ================= */
 function mulberry(a){ return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+// the boards change on a timer, so one game shows several sponsors; the art is rebuilt in place
+setInterval(() => { if (!S.field || !S.home || document.hidden) return; S.adPhase = (S.adPhase || 0) + 1; buildField(); }, 24000);
 function buildField(){
   if (isMLB()) return buildDiamond();
   if (isBB()) return buildCourt();
@@ -644,12 +683,9 @@ function buildField(){
     g.fillStyle = crowd[Math.floor(rnd() * crowd.length)]; g.fillRect(x, y, 3, 2);
     g.fillStyle = '#eec39a'; if (rnd() < 0.8) g.fillRect(x + 1, y - 1, 1, 1);
   }
-  // wall with ad boards
-  g.fillStyle = '#123a22'; g.fillRect(0, FT - 14, c.width, 10);
-  for (let x = 0; x < c.width; x += 96) {
-    g.fillStyle = (x / 96) % 2 ? '#1f5fa8' : '#a8321f'; g.fillRect(x + 4, FT - 12, 88, 6);
-    g.fillStyle = '#ffffff'; for (let i = 0; i < 8; i++) g.fillRect(x + 12 + i * 9, FT - 10, 5, 2);
-  }
+  // the wall behind the near sideline, carrying the sponsor boards
+  g.fillStyle = '#123a22'; g.fillRect(0, FT - 22, c.width, 18);
+  for (let x = 0, i = 0; x < c.width - 40; x += 112, i++) adBoard(g, x + 6, FT - 20, 100, 14, adAt(i));
   g.fillStyle = '#245f2c'; g.fillRect(0, FT - 4, c.width, 4);
   // grass, 5 yard bands
   for (let yd = -20; yd < 120; yd += 5) { g.fillStyle = (Math.floor((yd + 20) / 5) % 2) ? '#2e8a3c' : '#2a7f37'; g.fillRect(X(yd), FT, 5 * PX, FB - FT); }
@@ -678,9 +714,10 @@ function buildField(){
     const n = String(yd <= 50 ? yd : 100 - yd);
     g.fillText(n, X(yd), FT + 12); g.fillText(n, X(yd), FB - 11);
   }
-  // sideline apron
+  // sideline apron, with a run of sponsor boards along the near sideline
   g.fillStyle = '#245f2c'; g.fillRect(0, FB, c.width, H - FB);
-  g.fillStyle = '#5d4a3a'; for (let x = 6; x < c.width; x += 22) g.fillRect(x, FB + 8, 14, 4);
+  g.fillStyle = '#5d4a3a'; for (let x = 6; x < c.width; x += 22) g.fillRect(x, FB + 2, 14, 3);
+  for (let x = 0, i = 6; x < c.width - 40; x += 128, i++) adBoard(g, x + 8, FB + 7, 116, 13, adAt(i));
   S.field = c;
 }
 
@@ -1431,6 +1468,14 @@ function buildDiamond(){
     g.fillStyle = '#124a2a'; g.fillRect(Math.round(x), Math.round(y) - hp, 2, hp);
     g.fillStyle = '#f7d038'; g.fillRect(Math.round(x), Math.round(y) - hp - 1, 2, 1);
   }
+  // the backstop wall behind home plate, where the camera sits most of the game
+  g.fillStyle = '#123a22'; g.fillRect(60, MB.FH - 20, MB.FW - 120, 18);
+  for (let i = 0; i < 5; i++) adBoard(g, 70 + i * ((MB.FW - 140) / 5), MB.FH - 18, (MB.FW - 140) / 5 - 8, 14, adAt(i + 6));
+  // sponsor boards hung on the outfield wall, between the posted distances
+  [-36, -22, -8, 8, 22, 36].forEach((d, i) => {
+    const [x, y] = P(...polar(d, fenceR(d))), hp = Math.round(6 + wallH(d) * 0.75);
+    adBoard(g, x - 34, y - Math.max(hp - 1, 15), 68, 14, adAt(i));
+  });
   g.font = '8px "Press Start 2P"'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#f4f4ee';
   // posted distances on the wall, as the park shows them
   for (const [d, ft] of S.park.pts) { const [x, y] = P(...polar(d * 0.97, fenceR(d))); g.fillText(String(Math.round(ft)), x, y - 6); }
@@ -2215,6 +2260,11 @@ function buildCourt(){
   const tx0 = Math.round(bcx(43)), tx1 = Math.round(bcx(51));
   g.fillStyle = '#05060d'; g.fillRect(tx0, by - 10, tx1 - tx0, 11); g.fillStyle = '#2c3350'; g.fillRect(tx0 + 1, by - 9, tx1 - tx0 - 2, 9);
   g.fillStyle = '#f2b632'; g.fillRect(tx0 + 1, by - 9, tx1 - tx0 - 2, 1);
+  // courtside sponsor boards along the near sideline, where a real arena puts them
+  const cby = Math.round(bcy(50)) + 2, cbw = Math.round((x1 - x0) / 5);
+  for (let i = 0; i < 5; i++) adBoard(g, x0 + i * cbw + 2, cby, cbw - 4, Math.min(13, BC.CH - cby - 1), adAt(i));
+  // the front of the scorer's table carries one too
+  adBoard(g, tx0 + 1, by - 9, tx1 - tx0 - 2, 9, adAt(5));
   // the baskets: stanchion, backboard, rim and net, standing on the baseline
   for (const s of [1, -1]) {
     const fx = s > 0 ? 0 : 94, bx = Math.round(bcx(fx + s * 4)), rx = Math.round(bcx(s > 0 ? BC.HOOP : 94 - BC.HOOP)), fy = Math.round(bcy(25)), ry = fy - BC.RIM;
