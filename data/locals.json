@@ -19,16 +19,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 75,
-    "cond": "Mostly Cloudy",
-    "obs": "5 Oct 18:52 pm EDT"
+    "temp": 70,
+    "cond": "A Few Clouds",
+    "obs": "5 Oct 22:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 60,
-     "text": "Partly cloudy, with a low around 60. East wind around 5 mph. "
+     "text": "Mostly clear, with a low around 60. East wind around 5 mph. "
     },
     {
      "name": "Tuesday",
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -101,28 +101,28 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "A Few Clouds",
-    "obs": "5 Oct 18:54 pm EDT"
+    "temp": 56,
+    "cond": "Fair",
+    "obs": "5 Oct 22:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45. West wind 7 to 11 mph, with gusts as high as 21 mph. "
+     "text": "Clear, with a low around 45. West wind around 11 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 58,
-     "text": "Sunny, with a high near 58. West wind around 11 mph, with gusts as high as 21 mph. "
+     "text": "Sunny, with a high near 58. West wind around 14 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Clear, with a low around 42. West wind 3 to 6 mph. "
+     "text": "Clear, with a low around 42. West wind 5 to 8 mph. "
     },
     {
      "name": "Wednesday",
@@ -156,7 +156,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -185,28 +185,28 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "A Few Clouds",
-    "obs": "5 Oct 16:53 pm CDT"
+    "temp": 58,
+    "cond": "Fair",
+    "obs": "5 Oct 20:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. East wind around 10 mph becoming south southeast after midnight. "
+     "text": "Mostly clear, with a low around 52. South southeast wind around 10 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 72,
+     "text": "Sunny, with a high near 72. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58. Southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 59,
+     "text": "Partly cloudy, with a low around 59. South southwest wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
@@ -240,7 +240,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -275,16 +275,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 86,
+    "temp": 70,
     "cond": "A Few Clouds",
-    "obs": "5 Oct 16:58 pm MDT"
+    "obs": "5 Oct 19:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 62,
-     "text": "Mostly clear, with a low around 62. Light and variable wind becoming southwest around 6 mph after midnight. "
+     "text": "Mostly clear, with a low around 62. South southwest wind 3 to 6 mph. "
     },
     {
      "name": "Tuesday",
@@ -330,7 +330,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -379,7 +379,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 73,
-     "text": "Mostly clear, with a low around 73. West southwest wind 5 to 10 mph becoming light and variable  in the evening. "
+     "text": "Mostly clear, with a low around 73. West southwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -403,7 +403,7 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 69,
-     "text": "Mostly clear, with a low around 69."
+     "text": "Mostly clear, with a low around 69. Southwest wind 5 to 10 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Thursday",
@@ -425,7 +425,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -485,16 +485,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "5 Oct 18:51 pm EDT"
+    "obs": "5 Oct 22:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49. Northwest wind 14 to 17 mph, with gusts as high as 28 mph. "
+     "text": "Clear, with a low around 49. Northwest wind 14 to 16 mph. "
     },
     {
      "name": "Tuesday",
@@ -540,7 +540,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -600,7 +600,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "goodnews": []
  },
  {
@@ -610,6 +610,14 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Poll: WA trans sports ban measure could pass",
+    "b": "Polling shows a Washington ballot measure banning trans girls from girls' school sports could pass in November.",
+    "date": "2026-10-05",
+    "more": [
+     "Voters decide the measure in the November election."
+    ]
+   },
    {
     "h": "Supreme Court orders new look at WA political maps",
     "b": "The court sent a challenge to Washington's legislative maps back to a lower court; it won't affect next month's election.",
@@ -679,7 +687,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T01:10:00Z",
+  "updatedAt": "2026-10-06T04:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

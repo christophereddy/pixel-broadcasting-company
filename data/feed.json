@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-06T01:10:00Z",
+ "updatedAt": "2026-10-06T04:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -45,7 +45,8 @@
    "b": "Tens of thousands marched in Madrid and other cities over housing, and Prime Minister Pedro Sánchez called elections for November 29.",
    "date": "2026-10-05",
    "more": [
-    "Lawmakers had rejected his housing measures."
+    "Lawmakers had rejected his housing measures.",
+    "Tens of thousands marched; police in Valencia used tear gas and rubber bullets near a real estate summit, after an 87-year-old woman's eviction sparked anger."
    ]
   }
  ],
@@ -111,6 +112,15 @@
  ],
  "politics": [
   {
+   "h": "DOJ files record 40 denaturalisation cases",
+   "b": "The Justice Department filed 40 new cases seeking to strip citizenship from naturalized Americans, a number it calls a record.",
+   "date": "2026-10-06",
+   "more": [
+    "Prosecutors say the targets are accused of crimes such as money laundering, child sexual abuse, visa fraud and tax evasion.",
+    "The petitions were filed from late August through early October."
+   ]
+  },
+  {
    "h": "Tillis calls Hegseth vote his 'biggest regret'",
    "b": "In a new book, GOP Sen. Thom Tillis says his deciding vote to confirm Defense Secretary Pete Hegseth is the biggest regret of his career.",
    "date": "2026-10-05",
@@ -155,6 +165,16 @@
  ],
  "international": [
   {
+   "h": "Kosovo police clash with protesters at parliament",
+   "b": "Police clashed with protesters outside Kosovo's parliament over a bid to curb the Hague war crimes court.",
+   "date": "2026-10-06",
+   "more": [
+    "Parliament ended its session without passing the changes."
+   ],
+   "place": "Pristina, Kosovo",
+   "tz": "Europe/Belgrade"
+  },
+  {
    "h": "Ethiopia's Abiy vows Red Sea access at swearing-in",
    "b": "Prime Minister Abiy Ahmed began a new five-year term insisting landlocked Ethiopia must have access to the Red Sea.",
    "date": "2026-10-05",
@@ -163,6 +183,17 @@
    ],
    "place": "Addis Ababa, Ethiopia",
    "tz": "Africa/Addis_Ababa"
+  },
+  {
+   "h": "Moroccan journalists recount Pegasus spying",
+   "b": "Moroccan journalists described being targeted with Pegasus spyware as Amnesty International makes a new surveillance claim.",
+   "date": "2026-10-06",
+   "more": [
+    "Journalist Omar Radi says Amnesty's Security Lab found Pegasus on his phone in 2020.",
+    "He says he was followed daily while investigating land dispossession; authorities deny the surveillance claims."
+   ],
+   "place": "Rabat, Morocco",
+   "tz": "Africa/Casablanca"
   },
   {
    "h": "Mexico asks US for proof of border shooting",
@@ -185,11 +216,11 @@
    "tz": "Asia/Hebron"
   },
   {
-   "h": "Yemen's government opens offensive on Houthis",
-   "b": "Saudi-backed government forces announced an operation to retake areas including the capital, Sana'a.",
-   "date": "2026-10-05",
+   "h": "Yemen forces reclaim Mocha port from Houthis",
+   "b": "Yemeni government forces say they retook the strategic Red Sea port city of Mocha from the Houthis.",
+   "date": "2026-10-06",
    "more": [
-    "The Houthis answered with missile and drone attacks on Saudi Aramco sites over the weekend."
+    "Turkiye and Pakistan agreed to deploy troops to Saudi Arabia under the Mecca defence pact after Houthi attacks."
    ],
    "place": "Sana'a, Yemen",
    "tz": "Asia/Aden"
@@ -221,13 +252,6 @@
    ],
    "place": "New Delhi, India",
    "tz": "Asia/Kolkata"
-  },
-  {
-   "h": "Singapore turns matchmaker as births fall",
-   "b": "Singapore is launching matchmaking efforts to address its very low birth rate.",
-   "date": "2026-10-05",
-   "place": "Singapore",
-   "tz": "Asia/Singapore"
   }
  ],
  "business": [
@@ -354,16 +378,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 64,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "5 Oct 18:51 pm EDT"
+   "obs": "5 Oct 22:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 49,
-    "text": "Clear, with a low around 49. Northwest wind 14 to 17 mph, with gusts as high as 28 mph. "
+    "text": "Clear, with a low around 49. Northwest wind 14 to 16 mph. "
    },
    {
     "name": "Tuesday",
