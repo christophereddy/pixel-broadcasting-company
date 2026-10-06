@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Silkscreen&family=VT323&display=swap">
 <link rel="stylesheet" href="shared/pbc.css">
 <script src="shared/pbc.js"></script>
+<script src="shared/ads.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -18,6 +19,9 @@
 
 .screen canvas{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .ov{position:absolute;inset:0;pointer-events:none}
+/* the commercial break's big screen can be clicked as well as scanned */
+.adlink{position:absolute;left:24%;top:2%;width:73%;height:50%;z-index:2}
+.adlink[hidden]{display:none}
 .bug{position:absolute;left:2.4cqw;top:2.4cqw;display:flex;align-items:stretch;font-family:var(--f-label);font-size:1.9cqw;line-height:1}
 .bug b{background:var(--gold);color:var(--navy);padding:.45em .5em;font-weight:400}
 .bug .live{background:var(--live);color:#fff;padding:.45em .5em}
@@ -106,6 +110,7 @@ footer a:focus-visible{outline:2px solid var(--gold)}
   <div class="pbc-main">
   <div class="screen pbc-screen" id="screen">
     <canvas id="tv" width="384" height="216" aria-label="Pixel art newsroom broadcast"></canvas>
+    <a class="adlink" id="adlink" href="#" target="_blank" rel="noopener" hidden></a>
     <div class="ov" aria-live="polite">
       <div class="bug"><b>PBC</b><span class="live">LIVE</span></div>
       <div class="seg" id="seg"></div>
@@ -156,7 +161,9 @@ const CAST={
   I:{name:"Teo Marchetti",role:"International Correspondent",look:{skin:"#a8714c",hair:"#1d1612",style:"beard",coat:"#a5835a",shirt:"#e9e4d8",pants:"#3a3530"}},
   L:{name:"Jess Riley",role:"Local Reporter",look:{skin:"#f3caa4",hair:"#e2b84f",style:"pony",coat:"#2b8fb3",shirt:"#f0f4f7",pants:"#24303d"}},
   // Juniper Wilde: an original, field-trip-loving science teacher turned reporter. The lab screen behind her changes with each story's topic.
-  X:{name:"Juniper Wilde",role:"Science Reporter",look:{skin:"#e8b48f",hair:"#7a3fb8",style:"wild",coat:"#1e8c7e",shirt:"#f6e27a",pants:"#2a2230",shoe:"#f2b632",dress:true,earring:"#f6e27a"}}
+  X:{name:"Juniper Wilde",role:"Science Reporter",look:{skin:"#e8b48f",hair:"#7a3fb8",style:"wild",coat:"#1e8c7e",shirt:"#f6e27a",pants:"#2a2230",shoe:"#f2b632",dress:true,earring:"#f6e27a"}},
+  // Dot Delgado, head of sales (the same look as at her desk on the Advertise page, advertise/office.js). She reads the commercial break.
+  D:{name:"Dot Delgado",role:"Head of Sales",look:{skin:"#b97a52",hair:"#1c1418",style:"bob",coat:"#c2417a",shirt:"#f6eef2",pants:"#2a2230",glasses:true,earring:"#f2b632"}}
 };
 const ORDER=["A","B","P","W","S","I","L","X"];
 // Science topics, chosen from words in the headline; they pick the lab screen's graphic.
@@ -169,7 +176,7 @@ function sciTopic(h){h=String(h).toLowerCase();
   if(/brain|cell|gene|dna|virus|vaccin|health|disease|cancer|body|medic/.test(h))return"dna";
   if(/climate|storm|weather|heat|ice|glacier|volcan|quake|earth/.test(h))return"globe";
   return"atom"}
-const VOICE={A:{hz:520,pitch:1.15,rate:1},B:{hz:300,pitch:.8,rate:.95},P:{hz:440,pitch:1,rate:.92},W:{hz:620,pitch:1.35,rate:1.08},S:{hz:360,pitch:.95,rate:1.12},I:{hz:270,pitch:.75,rate:.95},L:{hz:580,pitch:1.25,rate:1.05},X:{hz:500,pitch:1.2,rate:1.1}};
+const VOICE={A:{hz:520,pitch:1.15,rate:1},B:{hz:300,pitch:.8,rate:.95},P:{hz:440,pitch:1,rate:.92},W:{hz:620,pitch:1.35,rate:1.08},S:{hz:360,pitch:.95,rate:1.12},I:{hz:270,pitch:.75,rate:.95},L:{hz:580,pitch:1.25,rate:1.05},X:{hz:500,pitch:1.2,rate:1.1},D:{hz:480,pitch:1.1,rate:1.02}};
 
 /* ---------- time helpers ---------- */
 function safeTz(tz){try{new Intl.DateTimeFormat("en-US",{timeZone:tz});return tz}catch(e){return undefined}}
@@ -625,7 +632,64 @@ function buildBeats(c,cycleStartMs){
   if(good.length){B.push({seg:"Good News",sp:"B",shot:"two",cat:"GOOD NEWS",head:"Some good news",body:"Before we go, Rosa, I hear we found some good news today.",wall:"goodnews"});
     good.forEach((s,i)=>say(B,s,{seg:"Good News",sp:i%2?"B":"A",shot:i%2?"B":"A",cat:"GOOD NEWS",wall:"goodnews"}))}
   B.push({seg:"Sign-off",sp:"B",shot:"wide",cat:"PBC NEWS",head:"That's the news for now.",body:"Pixel Broadcasting Company never signs off. Stay with us for the next round of headlines.",wall:"logo"});
+  breakAds(c).forEach(ad=>B.push(adBeat(ad)));
   return B;
+}
+/* ---------- commercial break: three 10-second ads between the sign-off and the top of the news ----------
+   Dot Delgado, head of sales, stands beside the studio's big screen and reads each one. The ads are the same ones the
+   sports breaks run (shared/ads.js): sold ads from ads/sold.json, the made-up brands when nothing is sold, and PBC's own
+   ad as the third of every break. An ad with a website gets a QR code on the screen. All wording is fixed text. */
+const AD_MS=10000,{HOUSE_AD,DEFAULT_ADS,qrMatrix,pixText,pixWidth}=PBC_ADS;
+let ADS=DEFAULT_ADS;
+PBC_ADS.loadSold("").then(list=>{if(list){ADS=list;onData()}});
+function breakAds(c){return [ADS[(c*2)%ADS.length],ADS[(c*2+1)%ADS.length],HOUSE_AD]}
+const tcase=s=>String(s).toLowerCase().replace(/\b[a-z]/g,x=>x.toUpperCase());
+function adBeat(ad){
+  const line=ad.line?ad.line.charAt(0)+ad.line.slice(1).toLowerCase()+".":"";
+  if(ad.house)return {seg:"Commercial break",sp:"D",scene:"ads",cat:"PBC AD",ad,dur:AD_MS,head:"Want your business on PBC?",body:"Scan the code on the screen to reach me at the sales desk."};
+  return {seg:"Commercial break",sp:"D",scene:"ads",cat:"SPONSOR",ad,dur:AD_MS,head:"Brought to you by "+tcase(ad.name),body:line+(ad.url?" Scan the code on the screen to learn more.":"")};
+}
+const QRS=new Map();
+let backAt=0; // when the top of the news comes back, for the screen's countdown
+function drawAds(t,b,phase){
+  const ad=b.ad,big=(txt,cx,y,sc,col)=>pixText(g,txt,Math.round(cx-pixWidth(txt,true)*sc/2),y,true,col,sc),
+    small=(txt,cx,y,col)=>pixText(g,txt,Math.round(cx-pixWidth(txt,false)/2),y,false,col);
+  // the studio corner: back wall, a light, the floor
+  R("#151b3d",0,0,W,H);for(let x=0;x<W;x+=24)R("#1b2250",x,0,1,150);
+  R("#07091a",0,0,W,12);for(let x=0;x<W;x+=6)R("#1c2146",x,4,3,3);
+  g.globalAlpha=.06;g.fillStyle="#fff2c0";g.beginPath();g.moveTo(44,12);g.lineTo(100,150);g.lineTo(-10,150);g.fill();g.globalAlpha=1;
+  R("#0c1029",0,150,W,66);for(let y=154;y<H;y+=8)R("#10153a",0,y,W,1);
+  // the big screen on its stand
+  const sx=92,sy=20,sw=280,sh=112;
+  R("#05060d",sx+sw/2-14,sy+sh,28,20);R("#1d2238",sx+sw/2-40,sy+sh+18,80,4);
+  R("#05060d",sx-4,sy-4,sw+8,sh+8);R("#23263c",sx-2,sy-2,sw+4,sh+4);
+  R(ad.bg,sx,sy,sw,sh);
+  g.save();g.beginPath();g.rect(sx,sy,Math.round(sw*Math.min(1,phase*AD_MS/450)),sh);g.clip();   // wipes in like a video board
+  // header strip: the top-right corner sits under the clock, so it stays plain
+  R(mix(ad.bg,"#000000",.35),sx,sy,sw,11);
+  pixText(g,"PBC COMMERCIAL BREAK",sx+5,sy+3,false,ad.fg);
+  const left=Math.max(0,Math.ceil((backAt-t)/1000));
+  pixText(g,"NEWS IN 0:"+String(left).padStart(2,"0"),sx+5+pixWidth("PBC COMMERCIAL BREAK",false)+10,sy+3,false,"#ffffff");
+  let tx=sx,tw2=sw;
+  if(ad.url){
+    if(!QRS.has(ad.url))QRS.set(ad.url,qrMatrix(ad.url));
+    const q=QRS.get(ad.url);
+    if(q){const n=q.length,m=2,qs=(n+4)*m,qx=sx+14,qy=sy+14+Math.max(0,(sh-14-qs)>>1);
+      R("#ffffff",qx,qy,qs,qs);g.fillStyle="#05060d";q.forEach((row,y)=>row.forEach((d,x)=>{if(d)g.fillRect(qx+(x+2)*m,qy+(y+2)*m,m,m)}));
+      tx=qx+qs+6;tw2=sx+sw-tx-4}}
+  const cx=tx+tw2/2;
+  small(ad.house?"PIXEL BROADCASTING CO":"BROUGHT TO YOU BY",cx,sy+22,ad.house?"#e7e1cc":ad.fg);
+  const words=ad.name.split(" ");let lines=[ad.name],sc=2;
+  if(pixWidth(ad.name,true)*2>tw2-6){if(words.length>1&&words.every(w=>pixWidth(w,true)*2<=tw2-6)){const h=Math.ceil(words.length/2);lines=[words.slice(0,h).join(" "),words.slice(h).join(" ")]}else sc=1}
+  let y=sy+(lines.length>1?36:44);
+  lines.forEach(l=>{big(l,cx+1,y+1,sc,"rgba(0,0,0,.45)");big(l,cx,y,sc,ad.fg);y+=7*sc+4});
+  if(ad.line)small(ad.line,cx,y+4,ad.house?"#e7e1cc":ad.fg);
+  if(ad.url&&Math.floor(t/600)%2)small(ad.house?"SCAN OR CLICK TO ADVERTISE":"SCAN OR CLICK",cx,sy+sh-18,ad.house?"#8fd3ff":ad.fg);
+  small(ad.house?"PBC HOUSE AD":"SPONSOR",cx,sy+sh-9,ad.fg);
+  g.restore();
+  g.globalAlpha=.12;g.fillStyle="#000000";for(let r=sy+1;r<sy+sh;r+=2)g.fillRect(sx,r,sw,1);g.globalAlpha=1;
+  // Dot, standing beside the screen and pointing at it
+  person(CAST.D.look,g,20,50,4,Object.assign({point:true},anim("D",t,true,phase)));
 }
 const SHOTS={wide:[0,0],two:[74,58],A:[51,62],B:[97,62],P:[149,62],W:[192,34],wwide:[160,22],S:[0,74]};
 
@@ -649,8 +713,10 @@ function buildFoot(){
   f.append("Headlines gathered "+fmt(Date.parse(D.updatedAt),{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"})+" · Local desk: "+D.location.name+" · Sources: ");
   (D.sources||[]).forEach((s,i)=>{if(i)f.append(", ");if(/^https:\/\//.test(s.url)){const a=document.createElement("a");a.href=s.url;a.target="_blank";a.rel="noopener";a.textContent=s.name;f.appendChild(a)}else f.append(s.name)});
 }
-let beatCount=1;
-function onData(){compose();dataVer++;cache=null;beatCount=buildBeats(0,0).length;buildTicker();buildFoot()}
+// Beats are BEAT long unless they say otherwise (the commercial break's ads run 10 seconds each).
+let cycleMs=BEAT;
+function timeline(B){let at=0;B.st=B.map(b=>{const s=at;at+=b.dur||BEAT;return s});B.len=at;return B}
+function onData(){compose();dataVer++;cache=null;cycleMs=timeline(buildBeats(0,0)).len;buildTicker();buildFoot()}
 
 /* ---------- sound ---------- */
 let mode="off",ac=null,lastOpen=false,spokenKey="";
@@ -667,7 +733,7 @@ function speak(b,key){
   // iPhone Safari drops a speak() that comes right after cancel(), so only cancel when something is playing.
   try{const ss=window.speechSynthesis;if(!ss)return;if(ss.speaking||ss.pending)ss.cancel();
     const u=new SpeechSynthesisUtterance(b.cont?b.body:b.head+". "+b.body),v=VOICE[b.sp]||VOICE.A;u.pitch=v.pitch;u.rate=v.rate;u.volume=.9;
-    const vs=PBC.voices();if(vs.length)u.voice=vs[ORDER.indexOf(b.sp)%vs.length];
+    const vs=PBC.voices();if(vs.length)u.voice=b.sp==="D"?(vs.find(x=>/samantha|karen|victoria|zira|moira|tessa|serena|fiona|female|aria|jenny/i.test(x.name))||vs[0]):vs[Math.max(0,ORDER.indexOf(b.sp))%vs.length];
     u.onend=u.onerror=()=>{if(spokenKey===key)talking=false};
     talking=true;talkStart=Date.now();ss.speak(u)}catch(e){talking=false}
 }
@@ -689,7 +755,7 @@ function nextRefresh(now){
   return t;
 }
 let cache=null;
-function beatsFor(c,startMs){if(!cache||cache.c!==c||cache.v!==dataVer)cache={c,v:dataVer,B:buildBeats(c,startMs)};return cache.B}
+function beatsFor(c,startMs){if(!cache||cache.c!==c||cache.v!==dataVer)cache={c,v:dataVer,B:timeline(buildBeats(c,startMs))};return cache.B}
 let lastBeatKey="",lastChars=-1,lastDraw=0,lastRundown=0;
 const BUMP=5000;let pickSeg=null,bump=null,lastNormalKey="",lastRd=null;
 function bumperBeat(p){return {seg:"Change of plans",sp:"A",shot:"wide",cat:"VIEWER'S PICK",wall:"logo",head:"Change of plans: "+p.seg,body:"A viewer wants "+p.seg.toLowerCase()+", so we're breaking away to it now. Stay with us."}}
@@ -703,11 +769,12 @@ function frame(){
   requestAnimationFrame(frame);
   const real=Date.now();if(real-lastDraw<50)return;lastDraw=real;
   let t=real+offset;
-  const cycleLen=beatCount*BEAT,c=Math.floor(t/cycleLen),cycleStart=c*cycleLen;
-  const B=beatsFor(c,cycleStart),idx=Math.floor((t-cycleStart)/BEAT);let b=B[idx]||B[0],phase=((t-cycleStart)%BEAT)/BEAT;
+  const cycleLen=cycleMs,c=Math.floor(t/cycleLen),cycleStart=c*cycleLen;
+  const B=beatsFor(c,cycleStart),into=t-cycleStart;let idx=0;while(idx<B.length-1&&B.st[idx+1]<=into)idx++;
+  let b=B[idx]||B[0],dur=b.dur||BEAT,phase=Math.min(1,(into-B.st[idx])/dur);
   if(mode==="voices"&&talking&&!bump){
     if(real-talkStart>45000||(window.speechSynthesis&&!speechSynthesis.speaking&&!speechSynthesis.pending&&real-talkStart>1500))talking=false;
-    else if(phase>.95){phase=.95;offset=cycleStart+idx*BEAT+.95*BEAT-real;t=real+offset}
+    else if(phase>.95){phase=.95;offset=cycleStart+B.st[idx]+.95*dur-real;t=real+offset}
   }
   // Viewer's pick: when the next story starts, cut to a "change of plans" bumper, then jump to the picked segment.
   const nkey=c+":"+idx;
@@ -717,11 +784,12 @@ function frame(){
   if(bump){
     const el=real-bump.start;
     if(el>=BUMP&&!(mode==="voices"&&talking&&el<20000)){
-      offset=cycleStart+bump.target*BEAT-real;bump=null;talking=false;lastNormalKey="";return}
+      offset=cycleStart+B.st[bump.target]-real;bump=null;talking=false;lastNormalKey="";return}
     b=bumperBeat(bump);phase=Math.min(1,el/BUMP);
   }
+  backAt=cycleStart+cycleLen-offset; // real time the break ends
   const dp=mode==="voices"&&talking?Math.min(phase,.5):phase;
-  if(b.scene==="lab")drawLab(real,b,dp);else if(b.scene==="ots")drawOts(real,b,dp);else if(b.scene==="intl")drawIntl(real,b,dp);else if(b.scene==="wx")drawWx(real,b,dp);else if(b.scene==="local")drawLocal(real,b,dp);else drawStudio(real,b,dp);
+  if(b.scene==="ads")drawAds(real,b,dp);else if(b.scene==="lab")drawLab(real,b,dp);else if(b.scene==="ots")drawOts(real,b,dp);else if(b.scene==="intl")drawIntl(real,b,dp);else if(b.scene==="wx")drawWx(real,b,dp);else if(b.scene==="local")drawLocal(real,b,dp);else drawStudio(real,b,dp);
   if(bump)drawBumper(real);
   const s=b.scene?[0,0,1]:(SHOTS[b.shot]||[0,0]);const z=b.scene||b.shot==="wide"?1:2;
   const lift=18;v.drawImage(scene,s[0],s[1]+lift/z,W/z,(H-lift)/z,0,0,W,H-lift);v.fillStyle="#1d2766";v.fillRect(0,H-lift,W,lift);
@@ -732,6 +800,9 @@ function frame(){
     $("belowHead").textContent=b.head;$("belowSum").textContent=b.body;
     document.querySelectorAll("#cast li").forEach(li=>li.classList.toggle("on",li.dataset.k===b.sp));
     lastRd=[B,cycleStart,cycleLen,idx];renderRundown(B,cycleStart,cycleLen,idx);
+    // the commercial screen is clickable when its ad has a link
+    const al=$("adlink"),ad=b.scene==="ads"&&b.ad;
+    if(ad&&ad.url){al.href=ad.url;al.rel=ad.house?"noopener":"noopener sponsored";al.setAttribute("aria-label",ad.house?"Advertise on PBC":"Visit "+tcase(ad.name));al.hidden=false}else al.hidden=true;
   }
   const n=reduce?b.body.length:Math.min(b.body.length,Math.floor(b.body.length*phase/.6));
   if(n!==lastChars){lastChars=n;$("sum").textContent=b.body.slice(0,n)}
@@ -751,7 +822,7 @@ function frame(){
 function renderRundown(B,cycleStart,cycleLen,idx){
   const segs=[];B.forEach((b,i)=>{const last=segs[segs.length-1];if(!last||last.seg!==b.seg)segs.push({seg:b.seg,start:i,end:i,sp:b.sp});else{last.end=i;if(b.sp!==B[last.start].sp&&!last.field)last.sp2=b.sp}});
   const now=Date.now()+offset; // show time; offset moves when voices run long or a viewer picks a segment
-  const rows=segs.map(s=>{let st=cycleStart+s.start*BEAT,en=cycleStart+(s.end+1)*BEAT;const on=idx>=s.start&&idx<=s.end;if(en<=now&&!on)st+=cycleLen;return Object.assign({st,on},s)}).sort((a,b)=>a.st-b.st);
+  const rows=segs.map(s=>{let st=cycleStart+B.st[s.start],en=cycleStart+B.st[s.end]+(B[s.end].dur||BEAT);const on=idx>=s.start&&idx<=s.end;if(en<=now&&!on)st+=cycleLen;return Object.assign({st,on},s)}).sort((a,b)=>a.st-b.st);
   const ol=$("rundown");ol.textContent="";
   rows.forEach(r=>{const li=document.createElement("li");if(r.on)li.className="now";
     const tm=document.createElement("span");tm.className="tm";tm.textContent=fmt(r.st-offset,{hour:"numeric",minute:"2-digit",second:"2-digit"});
