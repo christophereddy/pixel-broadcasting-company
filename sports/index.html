@@ -52,6 +52,10 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .banner{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);padding:1.4cqw 3cqw;background:#0c0e1c;border:.5cqw solid var(--gold);box-shadow:0 0 0 .5cqw #05060d,.8cqw .8cqw 0 rgba(0,0,0,.5);text-align:center;pointer-events:none}
 .banner .bt{font-family:var(--headline);font-size:5.75cqw;color:var(--gold);text-shadow:.4cqw .4cqw 0 var(--navy);letter-spacing:.3cqw;animation:blink 1.4s steps(2) infinite}
 .banner .bs{font-family:var(--display);font-size:1.88cqw;color:var(--ink);margin-top:1cqw}
+.adcut{right:1.6cqw;bottom:4.8cqw;width:34cqw;padding:0;pointer-events:none}
+.adcut canvas{display:block;width:100%;image-rendering:pixelated;image-rendering:crisp-edges}
+.adcap{font-family:var(--display);font-size:1.25cqw;color:var(--ink);background:#0c0e1c;padding:.5cqw .7cqw;letter-spacing:.06em}
+.stage.cut .banner{left:33%;top:66%}
 .notice{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:min(60cqw,92%);padding:2cqw;text-align:center;font-size:2.6cqw}
 .notice h2{font-family:var(--headline);font-size:2.25cqw;color:var(--gold);margin:0 0 1.2cqw;line-height:1.5}
 .notice p{margin:0 0 1.4cqw}
@@ -218,6 +222,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 
       <div class="win notice" id="notice" hidden></div>
       <div class="banner" id="banner" hidden><div class="bt">TIME OUT</div><div class="bs" id="banner-sub"></div></div>
+      <div class="win adcut" id="adcut" hidden><canvas id="adcut-cv" width="160" height="90"></canvas><div class="adcap" id="adcut-cap"></div></div>
 
       <div class="start" id="start">
         <div class="inner">
@@ -666,12 +671,14 @@ const FONT3 = {A:'010101111101101', B:'110101110101110', C:'011100100100011', D:
   G:'011100101101011', H:'101101111101101', I:'111010010010111', J:'001001001101010', K:'101101110101101', L:'100100100100111',
   M:'101111111101101', N:'110101101101101', O:'010101101101010', P:'110101110100100', Q:'010101101110011', R:'110101110101101',
   S:'011100010001110', T:'111010010010010', U:'101101101101111', V:'101101101101010', W:'101101111111101', X:'101101010101101',
-  Y:'101101010010010', Z:'111001010100111', ' ':'000000000000000'};
+  Y:'101101010010010', Z:'111001010100111', ' ':'000000000000000',
+  '0':'111101101101111', '1':'010110010010111', '2':'111001111100111', '3':'111001111001111', '4':'101101111001001',
+  '5':'111100111001111', '6':'111100111101111', '7':'111001001001001', '8':'111101111101111', '9':'111101111001111'};
 const pixWidth = (txt, big) => txt.length * (big ? 6 : 4) - 1;
-function pixText(g, txt, x, y, big, col){
+function pixText(g, txt, x, y, big, col, sc = 1){
   const F = big ? FONT5 : FONT3, cw = big ? 5 : 3, chh = big ? 7 : 5;
   g.fillStyle = col;
-  [...txt].forEach((ch, k) => { const m = F[ch] || F[' ']; for (let i = 0; i < cw * chh; i++) if (m[i] === '1') g.fillRect(x + k * (cw + 1) + i % cw, y + (i / cw | 0), 1, 1); });
+  [...txt].forEach((ch, k) => { const m = F[ch] || F[' ']; for (let i = 0; i < cw * chh; i++) if (m[i] === '1') g.fillRect(x + (k * (cw + 1) + i % cw) * sc, y + (i / cw | 0) * sc, sc, sc); });
 }
 // a sign's label centered on cx, with a one-pixel drop shadow; the small font when the big one won't fit in w
 function pixLabel(g, txt, cx, y, w, col){
@@ -698,6 +705,130 @@ function adBoard(g, x, y, w, h, ad){
 }
 // the first ad from rotation slot i on whose name fits a board of this width
 function adFitting(i, w){ for (let k = 0; k < ADS.length; k++) { const a = adAt(i + k); if (pixWidth(a.name, false) <= w - 16) return a; } return adAt(i); }
+
+/* ---- timeout cut-in: the camera finds the big screen (or the blimp) and the sponsor on it ----
+   A small window in the corner of the broadcast, so the field, booth, scoreboard and TIME OUT stay on screen.
+   Baseball: the center field video board. Basketball: the center-hung screen. Football: the big screen over the
+   end zone, or the blimp overhead (they take turns). Same invented brands as the boards, always tagged SPONSOR. */
+const CUT_NAME = {jumbo: 'CENTER FIELD SCOREBOARD', center: 'CENTER-HUNG SCREEN', endzone: 'END ZONE SCREEN', blimp: 'BLIMP CAM'};
+function cutKind(){ return isMLB() ? 'jumbo' : isBB() ? 'center' : (S.cutN || 0) % 2 ? 'blimp' : 'endzone'; }
+// the ad as a video board shows it: "TIMEOUT PRESENTED BY", the brand as big as it fits, SPONSOR, LED rows
+function screenAd(g, x, y, w, h, ad, t){
+  g.fillStyle = '#05060d'; g.fillRect(x - 1, y - 1, w + 2, h + 2);
+  g.fillStyle = ad.bg; g.fillRect(x, y, w, h);
+  const reveal = Math.min(1, t / 500);
+  g.save(); g.beginPath(); g.rect(x, y, Math.round(w * reveal), h); g.clip();
+  const by = (isMLB() ? 'BREAK' : 'TIMEOUT') + ' PRESENTED BY';
+  if (h >= 24) pixText(g, by, x + ((w - pixWidth(by, false)) >> 1), y + 3, false, ad.fg);
+  let sc = 3; while (sc > 1 && pixWidth(ad.name, true) * sc > w - 6) sc--;
+  const big = pixWidth(ad.name, true) * sc <= w - 4, nw = pixWidth(ad.name, big) * sc, nh = (big ? 7 : 5) * sc;
+  const ny = y + (h >= 24 ? Math.round((h - nh) / 2) + 1 : 2);
+  pixText(g, ad.name, x + ((w - nw) >> 1) + 1, ny + 1, big, 'rgba(0,0,0,.35)', sc);
+  pixText(g, ad.name, x + ((w - nw) >> 1), ny, big, ad.fg, sc);
+  pixText(g, 'SPONSOR', x + ((w - pixWidth('SPONSOR', false)) >> 1), y + h - 7, false, ad.fg);
+  g.restore();
+  g.fillStyle = 'rgba(0,0,0,.14)'; for (let r = y + 1; r < y + h; r += 2) g.fillRect(x, r, w, 1);
+}
+function crowdRows(g, y0, y1, rnd, dim){
+  const cols = ['#d9a066','#8f563b','#eec39a','#663931','#c9c9d6', S.home?.color || '#a33', S.home?.alt || '#fff', S.away?.color || '#33a', '#3f3f74', '#e7e1cc'];
+  for (let y = y0; y < y1; y += 2) for (let x = (y / 2 & 1); x < 160; x += 2) { g.fillStyle = cols[rnd() * cols.length | 0]; g.globalAlpha = dim; g.fillRect(x, y, 1, 1); }
+  g.globalAlpha = 1;
+}
+function drawCut(kind, ad, t){
+  const g = $('adcut-cv').getContext('2d'), rnd = mulberry(7 + (S.cutN || 0));
+  g.clearRect(0, 0, 160, 90);
+  const hc = S.home?.color || '#a8321f', ac = S.away?.color || '#1f5fa8';
+  if (kind === 'center') {
+    g.fillStyle = '#090a14'; g.fillRect(0, 0, 160, 90);
+    g.strokeStyle = '#1b1f38'; g.lineWidth = 1;                              // roof trusses
+    for (let x = -40; x < 200; x += 16) { g.beginPath(); g.moveTo(x + .5, 0); g.lineTo(x + 20.5, 12); g.lineTo(x + 40.5, 0); g.stroke(); }
+    g.fillStyle = '#1b1f38'; g.fillRect(0, 12, 160, 1);
+    for (let x = 10; x < 160; x += 28) { g.fillStyle = '#fff6c8'; g.fillRect(x, 13, 2, 1); g.fillStyle = 'rgba(255,246,200,.08)'; g.fillRect(x - 3, 14, 8, 3); }
+    crowdRows(g, 64, 90, rnd, .55);                                          // upper bowl
+    g.fillStyle = hc; g.fillRect(0, 62, 160, 2);
+    g.fillStyle = '#3a3f4f'; [42, 118].forEach(x => g.fillRect(x, 0, 1, 15)); // cables
+    g.fillStyle = '#23263c'; g.fillRect(26, 15, 108, 4);                     // top ring
+    const led = Math.floor(t / 180);                                         // LED ribbon chasing in team colors
+    for (let x = 26, k = 0; x < 134; x += 6, k++) { g.fillStyle = (k + led) % 4 < 2 ? hc : ac; g.fillRect(x, 19, 6, 2); }
+    g.fillStyle = '#14162a';                                                 // side faces, seen at an angle
+    g.beginPath(); g.moveTo(26, 21); g.lineTo(31, 22); g.lineTo(31, 55); g.lineTo(26, 51); g.fill();
+    g.beginPath(); g.moveTo(134, 21); g.lineTo(129, 22); g.lineTo(129, 55); g.lineTo(134, 51); g.fill();
+    g.globalAlpha = .45; g.fillStyle = ad.bg;
+    g.beginPath(); g.moveTo(27, 23); g.lineTo(30, 24); g.lineTo(30, 53); g.lineTo(27, 50); g.fill();
+    g.beginPath(); g.moveTo(133, 23); g.lineTo(130, 24); g.lineTo(130, 53); g.lineTo(133, 50); g.fill(); g.globalAlpha = 1;
+    screenAd(g, 32, 22, 96, 33, ad, t);
+    g.fillStyle = '#23263c'; g.fillRect(30, 56, 100, 3);                    // bottom ring and the little under-screen
+    for (let x = 30, k = 0; x < 130; x += 5, k++) { g.fillStyle = (k + led) % 4 < 2 ? ac : hc; g.fillRect(x, 59, 5, 1); }
+    g.fillStyle = '#14162a'; g.fillRect(56, 60, 48, 6); pixText(g, 'TIMEOUT', 80 - (pixWidth('TIMEOUT', false) >> 1), 60, false, '#f7d038');
+  } else if (kind === 'jumbo') {
+    const sky = ['#3d5f9e', '#4a6fae', '#5b80bd', '#6e92c9', '#83a6d5', '#9cbbe0'];
+    sky.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, i * 11, 160, 11); });
+    g.fillStyle = '#2b3550'; [8, 150].forEach(x => { g.fillRect(x, 6, 2, 60); g.fillRect(x - 5, 4, 12, 5); });
+    g.fillStyle = '#fff6c8'; [8, 150].forEach(x => { for (let k = 0; k < 5; k++) g.fillRect(x - 4 + k * 2, 5, 1, 1); });
+    g.fillStyle = '#20263a'; g.fillRect(60, 58, 4, 14); g.fillRect(96, 58, 4, 14); // legs
+    g.fillStyle = '#20263a'; g.fillRect(20, 4, 120, 56);                    // the board
+    g.fillStyle = hc; g.fillRect(22, 6, 116, 7);
+    if (S.home && S.away) {                                                  // the real score on the board's header
+      const sb = `${S.away.abbr} ${S.prevScore?.a ?? 0}   ${S.home.abbr} ${S.prevScore?.h ?? 0}`;
+      pixText(g, sb, 80 - (pixWidth(sb, false) >> 1), 7, false, '#ffffff');
+    }
+    screenAd(g, 25, 16, 110, 40, ad, t);
+    crowdRows(g, 62, 74, rnd, .8);                                           // bleachers
+    g.fillStyle = '#1f5a32'; g.fillRect(0, 74, 160, 6); g.fillStyle = '#f7d038'; g.fillRect(0, 74, 160, 1);
+    for (let x = 0; x < 160; x += 16) { g.fillStyle = (x / 16 & 1) ? '#3c8a3e' : '#45994a'; g.fillRect(x, 80, 16, 10); }
+    g.fillStyle = '#b07a4a'; g.fillRect(0, 80, 160, 2);                      // warning track
+  } else if (kind === 'endzone') {
+    g.fillStyle = '#0b1030'; g.fillRect(0, 0, 160, 90);
+    for (let i = 0; i < 18; i++) { g.fillStyle = 'rgba(255,255,255,.5)'; g.fillRect(rnd() * 160 | 0, rnd() * 20 | 0, 1, 1); }
+    [6, 146].forEach(x => { g.fillStyle = '#2b3550'; g.fillRect(x + 3, 10, 2, 40); g.fillStyle = '#fff6c8'; g.fillRect(x, 6, 8, 4); g.fillStyle = 'rgba(255,246,200,.12)'; g.fillRect(x - 4, 10, 16, 6); });
+    g.fillStyle = '#1d2238'; g.fillRect(22, 2, 116, 48);
+    g.fillStyle = '#05060d'; g.fillRect(22, 46, 116, 4);
+    screenAd(g, 26, 6, 108, 38, ad, t);
+    g.fillStyle = '#1d2238'; g.fillRect(0, 50, 160, 4);                      // upper deck lip
+    crowdRows(g, 54, 72, rnd, .75);
+    g.fillStyle = hc; g.fillRect(0, 72, 160, 4);                             // end zone wall
+    g.fillStyle = '#2f7a35'; g.fillRect(0, 76, 160, 14);
+    g.fillStyle = hc; g.globalAlpha = .55; g.fillRect(0, 79, 160, 11); g.globalAlpha = 1; // painted end zone
+    g.fillStyle = '#f2f0e8'; g.fillRect(0, 78, 160, 1);
+    g.fillStyle = '#f2d53c';                                                 // goalpost in front of the stands
+    g.fillRect(56, 54, 2, 16); g.fillRect(102, 54, 2, 16); g.fillRect(56, 69, 48, 2); g.fillRect(79, 70, 2, 20);
+  } else {                                                                   // blimp
+    const sky = ['#4f86c6', '#5b92cf', '#69a0d8', '#79ade0', '#8bbbe7', '#9fc9ee', '#b4d6f2'];
+    sky.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, i * 13, 160, 13); });
+    g.fillStyle = 'rgba(255,255,255,.75)';                                   // clouds drift by
+    [[20, 14, 26], [110, 22, 34], [60, 58, 22]].forEach(([x, y, w], i) => { const xx = ((x - t / (90 + i * 40)) % 200 + 200) % 200 - 20; g.fillRect(xx, y, w, 3); g.fillRect(xx + 4, y - 2, w - 10, 2); });
+    const bx = Math.round(80 + 6 * Math.sin(t / 2600)), by = Math.round(30 + 1.5 * Math.sin(t / 1400));
+    g.fillStyle = '#7d8294';                                                 // fins
+    g.beginPath(); g.moveTo(bx + 44, by - 3); g.lineTo(bx + 58, by - 14); g.lineTo(bx + 60, by - 2); g.fill();
+    g.beginPath(); g.moveTo(bx + 44, by + 3); g.lineTo(bx + 58, by + 14); g.lineTo(bx + 60, by + 2); g.fill();
+    g.fillStyle = '#b9bdcb'; g.beginPath(); g.ellipse(bx, by, 56, 17, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#d6d9e3'; g.beginPath(); g.ellipse(bx - 4, by - 6, 46, 8, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#9a9eae'; g.beginPath(); g.ellipse(bx, by + 10, 46, 5, 0, 0, Math.PI); g.fill();
+    g.fillStyle = '#4a4f63'; g.fillRect(bx - 10, by + 16, 20, 5); g.fillStyle = '#9fc9ee'; for (let k = 0; k < 4; k++) g.fillRect(bx - 8 + k * 5, by + 17, 3, 2);
+    screenAd(g, bx - 40, by - 9, 80, 19, ad, t);                            // the sign panel on its side
+    g.fillStyle = '#1d2238';                                                 // the stadium rim below
+    g.beginPath(); g.ellipse(80, 100, 110, 26, 0, Math.PI, 0); g.fill();
+    g.fillStyle = '#2f7a35'; g.beginPath(); g.ellipse(80, 100, 70, 14, 0, Math.PI, 0); g.fill();
+    g.fillStyle = '#f2f0e8'; for (let x = 30; x <= 130; x += 10) g.fillRect(x, 88, 1, 2);
+    [14, 146].forEach(x => { g.fillStyle = '#2b3550'; g.fillRect(x, 70, 2, 14); g.fillStyle = '#fff6c8'; g.fillRect(x - 3, 68, 8, 3); });
+  }
+}
+function showAdCut(){
+  if (!S.field || !S.home) return;
+  const kind = cutKind(), ad = adAt(5 + (S.cutN || 0) * 7);
+  S.cut = {kind, ad, at: performance.now()};
+  $('adcut-cap').textContent = 'LIVE · ' + CUT_NAME[kind];
+  $('adcut').hidden = false; $('stage').classList.add('cut');
+  const tick = () => { if (!S.cut || S.cut.ad !== ad) return; drawCut(kind, ad, performance.now() - S.cut.at); setTimeout(() => requestAnimationFrame(tick), 80); };
+  tick();
+}
+function hideAdCut(){
+  if (!S.cut) return;
+  S.cut = null; S.cutN = (S.cutN || 0) + 1;
+  $('adcut').hidden = true; $('stage').classList.remove('cut');
+}
+// a replay holds the timeout long enough for the cut-in to be seen
+const cutHold = () => S.cut ? Math.max(2000, 8000 - (performance.now() - S.cut.at)) : 2000;
 
 /* ================= the fixed art: field ================= */
 function mulberry(a){ return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -2124,9 +2255,10 @@ async function runPlayMLB(p, fast, tok){
   let plan;
   try { plan = planMLB(p); } catch (e) { console.warn('plan failed', e, p); plan = {kind: 'admin', static: true, o: p._o || {kind: 'admin'}}; }
   const o = p._o || plan.o;
+  hideBanner();
   await animate(plan, tok);
   if (tok !== S.token) return;
-  const st = S.mlb, before = Object.assign({}, S.prevScore, {loaded: !!(st.bases[1] && st.bases[2] && st.bases[3])});
+  const st = S.mlb, before = Object.assign({}, S.prevScore, {loaded: !!(st.bases[1] && st.bases[2] && st.bases[3]), outs: st.outs});
   addLog(p); applyState(p, plan);
   if (!plan.static || o.atbat) restFormation(true, plan); // a new batter walks up from the dugout
   if (o.kind === 'pitch') {
@@ -2150,6 +2282,12 @@ async function runPlayMLB(p, fast, tok){
   const aside = dukeAsideMLB(p, o, before);
   if (aside) { await sleep(250); await say('B', aside, tok); }
   await sleep(S.voices ? 350 : 900);
+  // baseball's natural breaks: the side retired, or the manager going to the bullpen
+  const brk = o.outsAdd && st.outs >= 3 && before.outs !== 3 ? 'INNING BREAK' : /pitch(er|ing) change|pitching substitution/i.test(p.text || '') || o.pitcher ? 'PITCHING CHANGE' : null;
+  if (brk && tok === S.token) {
+    showBreak(brk, brk === 'INNING BREAK' && st.inning ? `${st.top ? 'MIDDLE' : 'END'} OF THE ${st.inning}${[, 'ST', 'ND', 'RD'][st.inning % 100 > 10 && st.inning % 100 < 14 ? 0 : st.inning % 10] || 'TH'}` : '');
+    if (S.mode === 'replay') { await sleep(1300); await sleep(cutHold()); if (tok === S.token) hideBanner(); }
+  }
 }
 
 /* ---- replay timeline for baseball: one block per half inning ---- */
@@ -2908,7 +3046,7 @@ async function runPlayBB(p, fast, tok){
   const aside = busy ? null : bbAside(p, k, before);
   if (aside) { await sleep(200); await say('B', aside, tok); }
   await sleep(S.voices ? 150 : 400);
-  if (isTimeout && S.mode === 'replay') { await sleep(2000); if (tok === S.token) hideBanner(); }
+  if (isTimeout && S.mode === 'replay') { await sleep(cutHold()); if (tok === S.token) hideBanner(); }
 }
 
 /* ---- replay timeline for basketball: one block per quarter, marks where the lead changed ---- */
@@ -3179,7 +3317,7 @@ async function runPlay(p, fast, tok){
   const aside = dukeAside(p, plan, before);
   if (aside) { await sleep(250); await say('B', aside, tok); }
   await sleep(S.voices ? 350 : 900);
-  if (isTimeout && S.mode === 'replay') { await sleep(2500); if (tok === S.token) hideBanner(); }
+  if (isTimeout && S.mode === 'replay') { await sleep(Math.max(2500, cutHold())); if (tok === S.token) hideBanner(); }
 }
 async function pump(){
   const tok = S.token; if (S.pumping === tok) return; S.pumping = tok;
@@ -4150,7 +4288,7 @@ function renderTeamPage(){
 }
 
 /* ================= notices ================= */
-function hideBanner(){ $('banner').hidden = true; }
+function hideBanner(){ $('banner').hidden = true; hideAdCut(); clearTimeout(S.cutT); }
 function showTimeout(p){
   const m = (p.text || '').match(/by ([A-Z]{2,5})\b/) || (p.text || '').match(/^Timeout ([A-Z]{2,5})\b/);
   // basketball names the team ("Celtics Full timeout")
@@ -4160,7 +4298,15 @@ function showTimeout(p){
     || (isBB() ? [S.home, S.away].find(t => t && (p.text || '').includes(t.nick)) || teamOfId(p.team?.id) : null);
   const n = (p.text || '').match(/#(\d)/);
   $('banner-sub').textContent = tm ? `${tm.nick.toUpperCase()}${n ? ' · TIMEOUT #' + n[1] : ''}` : (/official|tv/i.test(p.text || '') ? 'OFFICIAL TIMEOUT' : '');
+  $('banner').querySelector('.bt').textContent = 'TIME OUT';
   $('banner').hidden = false;
+  // a beat after TIME OUT comes up, the camera cuts to the big screen
+  clearTimeout(S.cutT); if (!S.cut) S.cutT = setTimeout(showAdCut, 1200);
+}
+function showBreak(title, sub){
+  $('banner').querySelector('.bt').textContent = title; $('banner-sub').textContent = sub;
+  $('banner').hidden = false;
+  clearTimeout(S.cutT); if (!S.cut) S.cutT = setTimeout(showAdCut, 1200);
 }
 function hideNotice(){ $('notice').hidden = true; }
 function showIdle(){
