@@ -10,6 +10,7 @@
 <script src="../shared/pbc.js"></script>
 <script src="../shared/ads.js"></script>
 <script src="f1.js"></script>
+<script src="f1cam.js"></script>
 <style>
 /* Layout: arcade cabinet. Header with sport tabs (NFL and MLB work), 16:9 stage with booth (top-left) and scoreboard (top-right), live feed under it, game list at right. */
 :root{
@@ -123,6 +124,8 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .pl:hover{background:var(--panel-2)}
 .pl .n{color:var(--gold);font-variant-numeric:tabular-nums}
 .pl .ps{color:var(--dim);text-align:right}
+.f1cam{display:flex;align-items:center;gap:8px;padding:6px 12px;font-size:15px;color:var(--gold);letter-spacing:.06em}
+.f1cam select{flex:1;min-width:0;font:inherit;font-size:17px;letter-spacing:0;background:var(--panel-2);color:var(--ink,#f2f0e8);border:1px solid #2a3060;padding:3px 4px}
 .pl.f1r{grid-template-columns:2.4em minmax(0,1fr) auto}
 .pl.f1r .dn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pl.f1r .dn i{display:inline-block;width:.45em;height:.9em;margin-right:.4em;vertical-align:-.1em}
@@ -275,6 +278,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
       <button class="tcard" id="tc-home" aria-label="Home team"><canvas width="32" height="32"></canvas><span class="tn"></span><span class="tr"></span><span class="ts"></span></button>
     </div>
     <div class="gdate" id="gp-date" hidden></div>
+    <label class="f1cam" id="f1cam" hidden>ONBOARD CAMERA <select id="f1cam-sel" aria-label="Pick the car the camera follows"></select></label>
     <div class="hint" id="gp-hint" hidden>Click a team for stats and roster.</div>
     <div class="detail" id="detail" hidden></div>
    </div>
@@ -4445,7 +4449,7 @@ async function switchSport(sp){
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
   Object.assign(S, {events: new Map(), extra: new Map(), teams: [], confs: [], tview: null, tdata: {}, game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
     rp: null, ri: 0, paused: false, losX: null, fdX: null, flag: null, down: 0, prevScore: {h: 0, a: 0}, replayDone: false, f1: {}, f1r: null});
-  $('tline').hidden = true; hideNotice(); hideBanner(); showErr('');
+  $('tline').hidden = true; $('f1cam').hidden = true; hideNotice(); hideBanner(); showErr('');
   clearLog('Pick a game to see its play-by-play here.');
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;

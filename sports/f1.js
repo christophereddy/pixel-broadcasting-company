@@ -17,7 +17,7 @@ const F1_API = 'https://api.openf1.org/v1';
 const isF1 = () => S.sport === 'f1';
 const F1_TEAM_ABBR = {'McLaren': 'MCL', 'Red Bull Racing': 'RBR', 'Ferrari': 'FER', 'Mercedes': 'MER', 'Aston Martin': 'AMR', 'Alpine': 'ALP',
   'Williams': 'WIL', 'Racing Bulls': 'RB', 'RB': 'RB', 'Haas F1 Team': 'HAA', 'Kick Sauber': 'SAU', 'Sauber': 'SAU', 'Audi': 'AUD', 'Cadillac': 'CAD'};
-const F1_BASE = 10, F1_TALK = 3;   // replay speed: ten times real time, slowing to three while the booth talks
+const F1_BASE = 1, F1_TALK = 1;   // replay speed: real time, like the broadcast; the timeline skips ahead
 
 /* ---- fetching: the free tier allows 3 requests a second and 30 a minute, so requests wait their turn ---- */
 let f1Chain = Promise.resolve(); const f1Times = [];
@@ -362,6 +362,7 @@ function f1Inside(tr, f, by){
 
 /* ---- drawing ---- */
 function f1BuildTrack(){
+  S.f1.props = null;   // the trackside boards pick up the new rotation
   const tr = S.f1.track || (S.f1.track = f1Generic()); f1Fit(tr);
   const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d'); g.imageSmoothingEnabled = false;
   const rnd = mulberry(7);
@@ -402,6 +403,7 @@ function f1Render(now){
   ctx.fillStyle = '#0c0e1c'; ctx.fillRect(0, 0, W, H);
   if (S.field) ctx.drawImage(S.field, 0, 0);
   const R = S.f1r, tr = S.f1.track;
+  if (R && tr && S.mode === 'replay' && R.track === tr) { f1Chase(now); drawBooth(now); return; }
   if (R && tr && S.mode === 'replay') {
     const order = R.order || [];
     // the field, back to front so the leader sits on top
@@ -446,7 +448,7 @@ function f1Tick(now){
   if (!R || S.mode !== 'replay' || R.done) return;
   const dt = Math.min(0.1, (now - last) / 1000);
   if (!S.paused) {
-    const sp = R.clock < R.t0 + 20000 ? 2 : R.talking ? F1_TALK : F1_BASE;
+    const sp = R.talking ? F1_TALK : F1_BASE;
     R.clock = Math.min(R.end, R.clock + dt * 1000 * sp);
   }
   while (R.fired < R.events.length && R.events[R.fired].t <= R.clock) f1Fire(R, R.events[R.fired++]);
@@ -543,7 +545,7 @@ async function f1Select(id, mode){
   hideNotice(); hideBanner();
   Object.assign(S, {speaking: null, queue: [], game: id, mode: ev.replay || mode !== 'replay' ? mode : 'pre', replayDone: false, view: null, summary: null, rp: null, ri: 0, paused: false});
   $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
-  S.f1r = null; S.f1.focus = null; S.home = null; S.away = null;
+  S.f1r = null; S.f1.focus = null; S.f1.cam = null; S.f1.lat = null; S.f1.camst = {}; S.home = null; S.away = null;
   renderList(); setBadge();
   $('abA').textContent = '--'; $('abH').textContent = '--'; $('scA').textContent = ''; $('scH').textContent = ''; $('clock').textContent = '--'; $('dd').textContent = '';
   const s = ev.f1, when = new Date(ev.date).toLocaleString([], {weekday: 'long', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'});
@@ -609,7 +611,7 @@ function f1SeekTime(t, why){
   const R = S.f1r; if (!R) return;
   S.token++; if (window.speechSynthesis) speechSynthesis.cancel();
   S.speaking = null; hideBanner();
-  R.clock = clamp(t, R.t0 - 6000, R.end); R.done = false; R.talk = []; R.talking = false;
+  R.clock = clamp(t, R.t0 - 6000, R.end); R.done = false; R.talk = []; R.talking = false; S.f1.lat = null;
   R.fired = R.events.findIndex(e => e.t > R.clock); if (R.fired < 0) R.fired = R.events.length;
   $('log').innerHTML = ''; for (const e of R.events.slice(Math.max(0, R.fired - 12), R.fired)) f1Log(e);
   R.order = f1Order(R, R.clock); f1Board(); f1UpdateTimeline(); f1Panel(true);
@@ -631,6 +633,7 @@ function f1Panel(soft){
   $('gp-state').textContent = S.mode === 'live' ? 'ON TRACK' : S.mode === 'replay' ? 'REPLAY' : S.mode === 'pre' ? 'UPCOMING' : '';
   if (!ev) { $('detail').hidden = true; return; }
   $('gp-date').textContent = `${f1Place(ev.f1)} ${f1SessName(ev.f1)} · ${new Date(ev.date).toLocaleDateString([], {weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'})}`.toUpperCase();
+  f1CamPicker();
   if (soft && S.view) return;  // a driver card stays put while the race runs
   f1Detail();
 }
@@ -649,7 +652,7 @@ function f1Detail(){
     h += `<div class="dhead"><b>THE WEEKEND</b></div><div class="kv">` + same.map(s => `<span>${esc(f1SessName(s))}</span><span>${esc(new Date(s.date_start).toLocaleString([], {weekday: 'short', hour: 'numeric', minute: '2-digit'}))}</span>`).join('') + '</div>';
   }
   d.innerHTML = h; d.scrollTop = keep;
-  d.querySelectorAll('[data-num]').forEach(b => b.onclick = () => { S.view = {kind: 'driver', num: +b.dataset.num}; S.f1.focus = +b.dataset.num; f1Detail(); f1Season().then(() => { if (S.view?.num === +b.dataset.num) f1Detail(); }).catch(() => {}); });
+  d.querySelectorAll('[data-num]').forEach(b => b.onclick = () => { S.view = {kind: 'driver', num: +b.dataset.num}; S.f1.focus = +b.dataset.num; S.f1.cam = +b.dataset.num; f1CamPicker(); f1Detail(); f1Season().then(() => { if (S.view?.num === +b.dataset.num) f1Detail(); }).catch(() => {}); });
 }
 // a driver: this race from its timing, the season from the session results
 function f1DriverHTML(num, inRace){
