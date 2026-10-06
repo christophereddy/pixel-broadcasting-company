@@ -19,13 +19,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 69,
     "cond": "A Few Clouds",
-    "obs": "5 Oct 22:52 pm EDT"
+    "obs": "5 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 60,
      "text": "Mostly clear, with a low around 60. East wind around 5 mph. "
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -101,13 +101,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "5 Oct 22:54 pm EDT"
+    "obs": "5 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 45,
      "text": "Clear, with a low around 45. West wind around 11 mph, with gusts as high as 23 mph. "
@@ -156,7 +156,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -185,9 +185,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "5 Oct 20:53 pm CDT"
+    "obs": "5 Oct 22:53 pm CDT"
    },
    "periods": [
     {
@@ -240,7 +240,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -330,7 +330,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -341,6 +341,15 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Hilton makes GOP pitch at LA Times-LAist forum",
+    "b": "Republican governor candidate Steve Hilton takes questions from LA journalists Tuesday at a forum co-hosted by the LA Times and LAist.",
+    "date": "2026-10-05",
+    "more": [
+     "It streams at 4 p.m. and re-airs on LAist 89.3 FM at 7 p.m.",
+     "Moderators plan to ask about housing, homelessness, climate change and ties with the federal government."
+    ]
+   },
    {
     "h": "FBI arrests Irvine woman in China spying case",
     "b": "The FBI arrested real estate agent Wanying Zhang at LAX, accusing her of spying on Taiwan's president's son for China.",
@@ -425,7 +434,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -485,16 +494,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "5 Oct 22:51 pm EDT"
+    "obs": "5 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49. Northwest wind 14 to 16 mph. "
+     "text": "Clear, with a low around 49. Northwest wind around 15 mph. "
     },
     {
      "name": "Tuesday",
@@ -540,7 +549,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -600,7 +609,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "goodnews": []
  },
  {
@@ -641,31 +650,31 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Partly cloudy, with a low around 54. Light north northeast wind. "
+     "text": "Areas of fog after 5am.  Otherwise, increasing clouds, with a low around 54. Light northeast wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 66. North northwest wind 3 to 6 mph. "
+     "temp": 65,
+     "text": "Areas of fog before 9am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 65. North northwest wind 3 to 7 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Increasing clouds, with a low around 52. North wind around 5 mph. "
+     "text": "Areas of fog after 4am.  Otherwise, mostly cloudy, with a low around 52. North northeast wind around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 67,
-     "text": "Cloudy through mid morning, then gradual clearing, with a high near 67. North wind 5 to 8 mph. "
+     "text": "Areas of fog before 11am.  Otherwise, mostly cloudy, then gradually becoming sunny, with a high near 67. North northeast wind 5 to 7 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. North northeast wind 5 to 7 mph. "
+     "text": "Mostly clear, with a low around 52. North northeast wind 3 to 7 mph. "
     },
     {
      "name": "Thursday",
@@ -687,7 +696,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T04:10:00Z",
+  "updatedAt": "2026-10-06T07:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
