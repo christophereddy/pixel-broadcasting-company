@@ -52,10 +52,10 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .banner{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);padding:1.4cqw 3cqw;background:#0c0e1c;border:.5cqw solid var(--gold);box-shadow:0 0 0 .5cqw #05060d,.8cqw .8cqw 0 rgba(0,0,0,.5);text-align:center;pointer-events:none}
 .banner .bt{font-family:var(--headline);font-size:5.75cqw;color:var(--gold);text-shadow:.4cqw .4cqw 0 var(--navy);letter-spacing:.3cqw;animation:blink 1.4s steps(2) infinite}
 .banner .bs{font-family:var(--display);font-size:1.88cqw;color:var(--ink);margin-top:1cqw}
-.adcut{right:1.6cqw;bottom:4.8cqw;width:34cqw;padding:0;pointer-events:none}
+.adcut{right:1.6cqw;bottom:4.8cqw;width:56cqw;padding:0;pointer-events:none}
+.adhead{font-family:var(--headline);font-size:1.7cqw;color:var(--gold);background:#0c0e1c;padding:.8cqw .9cqw;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .adcut canvas{display:block;width:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .adcap{font-family:var(--display);font-size:1.25cqw;color:var(--ink);background:#0c0e1c;padding:.5cqw .7cqw;letter-spacing:.06em}
-.stage.cut .banner{left:33%;top:66%}
 .notice{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:min(60cqw,92%);padding:2cqw;text-align:center;font-size:2.6cqw}
 .notice h2{font-family:var(--headline);font-size:2.25cqw;color:var(--gold);margin:0 0 1.2cqw;line-height:1.5}
 .notice p{margin:0 0 1.4cqw}
@@ -167,7 +167,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 #foot a{color:var(--text);text-decoration-color:var(--gold)}
 #foot a:focus-visible{outline:2px solid var(--gold)}
 @media (max-width:900px){
-  .booth{width:38cqw}.board{width:33cqw}
+  .booth{width:38cqw}.board{width:33cqw}.adcut{width:50cqw}
   .caption{font-size:2.8cqw;min-height:8.6cqw;max-height:11.5cqw}
 }
 @media (prefers-reduced-motion:reduce){.badge.live,.start .big,.banner .bt{animation:none}}
@@ -222,7 +222,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 
       <div class="win notice" id="notice" hidden></div>
       <div class="banner" id="banner" hidden><div class="bt">TIME OUT</div><div class="bs" id="banner-sub"></div></div>
-      <div class="win adcut" id="adcut" hidden><canvas id="adcut-cv" width="160" height="90"></canvas><div class="adcap" id="adcut-cap"></div></div>
+      <div class="win adcut" id="adcut" hidden><div class="adhead" id="adcut-head"></div><canvas id="adcut-cv" width="240" height="120"></canvas><div class="adcap" id="adcut-cap"></div></div>
 
       <div class="start" id="start">
         <div class="inner">
@@ -639,18 +639,18 @@ const syOf = y => isBB() ? Math.round(bcy(y) - (S.camY - H / 2)) : isMLB() ? Mat
 // the outfield wall in baseball, the courtside boards and scorer's table in basketball. Every board carries a
 // SPONSOR tag so viewers can tell a paid spot from the ballpark's own art. No real company appears anywhere.
 const ADS = [
-  {name: 'PIXL COLA', bg: '#a8321f', fg: '#f7d038'},
-  {name: 'BYTE BURGER', bg: '#f2b632', fg: '#2a1a0c'},
-  {name: 'NOVA MOTORS', bg: '#1f5fa8', fg: '#e7e1cc'},
-  {name: 'HEXA BANK', bg: '#14532d', fg: '#f2f0e8'},
-  {name: 'ATLAS WIRELESS', bg: '#5b2a86', fg: '#f2f0e8'},
-  {name: 'GRID COFFEE', bg: '#4a3526', fg: '#f7d9a8'},
-  {name: 'VOLT ENERGY', bg: '#1d2238', fg: '#9be15d'},
-  {name: 'MESA INSURANCE', bg: '#7a2533', fg: '#e7e1cc'},
-  {name: 'SOLARIS POWER', bg: '#e8772e', fg: '#2a1a0c'},
-  {name: 'TOPO OUTFITTERS', bg: '#1d6b5a', fg: '#f2e6d8'},
-  {name: 'QUARRY HARDWARE', bg: '#3a3f4f', fg: '#f7d038'},
-  {name: 'RETRO RENTALS', bg: '#0e2240', fg: '#8fd3ff'}
+  {name: 'PIXL COLA', line: 'CRISP IN EVERY BIT', bg: '#a8321f', fg: '#f7d038'},
+  {name: 'BYTE BURGER', line: 'STACKED EIGHT BITS HIGH', bg: '#f2b632', fg: '#2a1a0c'},
+  {name: 'NOVA MOTORS', line: 'DRIVE THE NEXT LEVEL', bg: '#1f5fa8', fg: '#e7e1cc'},
+  {name: 'HEXA BANK', line: 'BANKING WITHOUT THE LAG', bg: '#14532d', fg: '#f2f0e8'},
+  {name: 'ATLAS WIRELESS', line: 'FULL BARS COAST TO COAST', bg: '#5b2a86', fg: '#f2f0e8'},
+  {name: 'GRID COFFEE', line: 'FRESH ROAST EVERY ROUND', bg: '#4a3526', fg: '#f7d9a8'},
+  {name: 'VOLT ENERGY', line: 'POWER UP FOR OVERTIME', bg: '#1d2238', fg: '#9be15d'},
+  {name: 'MESA INSURANCE', line: 'COVERED FROM KICKOFF ON', bg: '#7a2533', fg: '#e7e1cc'},
+  {name: 'SOLARIS POWER', line: 'CLEAN ENERGY ALL GAME LONG', bg: '#e8772e', fg: '#2a1a0c'},
+  {name: 'TOPO OUTFITTERS', line: 'GEAR FOR EVERY TRAIL', bg: '#1d6b5a', fg: '#f2e6d8'},
+  {name: 'QUARRY HARDWARE', line: 'BUILT ONE BLOCK AT A TIME', bg: '#3a3f4f', fg: '#f7d038'},
+  {name: 'RETRO RENTALS', line: 'PRESS START ON YOUR TRIP', bg: '#0e2240', fg: '#8fd3ff'}
 ];
 // the boards change together every so often, like a real rotating board
 const adAt = i => ADS[(i + (S.adPhase || 0)) % ADS.length];
@@ -712,111 +712,118 @@ function adFitting(i, w){ for (let k = 0; k < ADS.length; k++) { const a = adAt(
    end zone, or the blimp overhead (they take turns). Same invented brands as the boards, always tagged SPONSOR. */
 const CUT_NAME = {jumbo: 'CENTER FIELD SCOREBOARD', center: 'CENTER-HUNG SCREEN', endzone: 'END ZONE SCREEN', blimp: 'BLIMP CAM'};
 function cutKind(){ return isMLB() ? 'jumbo' : isBB() ? 'center' : (S.cutN || 0) % 2 ? 'blimp' : 'endzone'; }
-// the ad as a video board shows it: "TIMEOUT PRESENTED BY", the brand as big as it fits, SPONSOR, LED rows
+// the ad as a video board shows it: "TIMEOUT PRESENTED BY", the brand as big as it fits, its slogan, SPONSOR, LED rows
 function screenAd(g, x, y, w, h, ad, t){
   g.fillStyle = '#05060d'; g.fillRect(x - 1, y - 1, w + 2, h + 2);
   g.fillStyle = ad.bg; g.fillRect(x, y, w, h);
-  const reveal = Math.min(1, t / 500);
-  g.save(); g.beginPath(); g.rect(x, y, Math.round(w * reveal), h); g.clip();
-  const by = (isMLB() ? 'BREAK' : 'TIMEOUT') + ' PRESENTED BY';
-  if (h >= 24) pixText(g, by, x + ((w - pixWidth(by, false)) >> 1), y + 3, false, ad.fg);
-  let sc = 3; while (sc > 1 && pixWidth(ad.name, true) * sc > w - 6) sc--;
+  g.save(); g.beginPath(); g.rect(x, y, Math.round(w * Math.min(1, t / 500)), h); g.clip();
+  const head = h >= 44, by = (isMLB() ? 'BREAK' : 'TIMEOUT') + ' PRESENTED BY', mid = (a, txt) => x + ((w - a) >> 1);
+  if (head) pixText(g, by, mid(pixWidth(by, false)), y + 4, false, ad.fg);
+  const line = h >= 28 && ad.line && pixWidth(ad.line, false) <= w - 6 ? ad.line : null;
+  const top = y + (head ? 11 : 3), bot = y + h - 9;
+  // the biggest brand that fits across, and above the slogan and the SPONSOR tag
+  let sc = 3; while (sc > 1 && (pixWidth(ad.name, true) * sc > w - 8 || 7 * sc + (line ? 9 : 0) > bot - top)) sc--;
   const big = pixWidth(ad.name, true) * sc <= w - 4, nw = pixWidth(ad.name, big) * sc, nh = (big ? 7 : 5) * sc;
-  const ny = y + (h >= 24 ? Math.round((h - nh) / 2) + 1 : 2);
-  pixText(g, ad.name, x + ((w - nw) >> 1) + 1, ny + 1, big, 'rgba(0,0,0,.35)', sc);
-  pixText(g, ad.name, x + ((w - nw) >> 1), ny, big, ad.fg, sc);
-  pixText(g, 'SPONSOR', x + ((w - pixWidth('SPONSOR', false)) >> 1), y + h - 7, false, ad.fg);
+  const blockH = nh + (line ? 9 : 0), ny = top + Math.max(0, (bot - top - blockH) >> 1);
+  pixText(g, ad.name, mid(nw) + 1, ny + 1, big, 'rgba(0,0,0,.35)', sc);
+  pixText(g, ad.name, mid(nw), ny, big, ad.fg, sc);
+  if (line) pixText(g, line, mid(pixWidth(line, false)), ny + nh + 4, false, ad.fg);
+  pixText(g, 'SPONSOR', mid(pixWidth('SPONSOR', false)), y + h - 7, false, ad.fg);
   g.restore();
   g.fillStyle = 'rgba(0,0,0,.14)'; for (let r = y + 1; r < y + h; r += 2) g.fillRect(x, r, w, 1);
 }
+const CW = 240, CH2 = 120;
 function crowdRows(g, y0, y1, rnd, dim){
   const cols = ['#d9a066','#8f563b','#eec39a','#663931','#c9c9d6', S.home?.color || '#a33', S.home?.alt || '#fff', S.away?.color || '#33a', '#3f3f74', '#e7e1cc'];
-  for (let y = y0; y < y1; y += 2) for (let x = (y / 2 & 1); x < 160; x += 2) { g.fillStyle = cols[rnd() * cols.length | 0]; g.globalAlpha = dim; g.fillRect(x, y, 1, 1); }
+  for (let y = y0; y < y1; y += 2) for (let x = (y / 2 & 1); x < CW; x += 2) { g.fillStyle = cols[rnd() * cols.length | 0]; g.globalAlpha = dim; g.fillRect(x, y, 1, 1); }
   g.globalAlpha = 1;
 }
+const skyBands = (g, cols) => { const bh = Math.ceil(CH2 / cols.length); cols.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, i * bh, CW, bh); }); };
+function lightTower(g, x, y0, y1){ g.fillStyle = '#2b3550'; g.fillRect(x, y0 + 3, 2, y1 - y0 - 3); g.fillRect(x - 6, y0, 14, 5); g.fillStyle = '#fff6c8'; for (let k = 0; k < 6; k++) g.fillRect(x - 5 + k * 2, y0 + 1, 1, 1); g.fillStyle = 'rgba(255,246,200,.1)'; g.fillRect(x - 9, y0 + 5, 20, 6); }
 function drawCut(kind, ad, t){
   const g = $('adcut-cv').getContext('2d'), rnd = mulberry(7 + (S.cutN || 0));
-  g.clearRect(0, 0, 160, 90);
+  g.clearRect(0, 0, CW, CH2);
   const hc = S.home?.color || '#a8321f', ac = S.away?.color || '#1f5fa8';
   if (kind === 'center') {
-    g.fillStyle = '#090a14'; g.fillRect(0, 0, 160, 90);
+    g.fillStyle = '#090a14'; g.fillRect(0, 0, CW, CH2);
     g.strokeStyle = '#1b1f38'; g.lineWidth = 1;                              // roof trusses
-    for (let x = -40; x < 200; x += 16) { g.beginPath(); g.moveTo(x + .5, 0); g.lineTo(x + 20.5, 12); g.lineTo(x + 40.5, 0); g.stroke(); }
-    g.fillStyle = '#1b1f38'; g.fillRect(0, 12, 160, 1);
-    for (let x = 10; x < 160; x += 28) { g.fillStyle = '#fff6c8'; g.fillRect(x, 13, 2, 1); g.fillStyle = 'rgba(255,246,200,.08)'; g.fillRect(x - 3, 14, 8, 3); }
-    crowdRows(g, 64, 90, rnd, .55);                                          // upper bowl
-    g.fillStyle = hc; g.fillRect(0, 62, 160, 2);
-    g.fillStyle = '#3a3f4f'; [42, 118].forEach(x => g.fillRect(x, 0, 1, 15)); // cables
-    g.fillStyle = '#23263c'; g.fillRect(26, 15, 108, 4);                     // top ring
-    const led = Math.floor(t / 180);                                         // LED ribbon chasing in team colors
-    for (let x = 26, k = 0; x < 134; x += 6, k++) { g.fillStyle = (k + led) % 4 < 2 ? hc : ac; g.fillRect(x, 19, 6, 2); }
+    for (let x = -40; x < CW + 40; x += 20) { g.beginPath(); g.moveTo(x + .5, 0); g.lineTo(x + 20.5, 15); g.lineTo(x + 40.5, 0); g.stroke(); }
+    g.fillStyle = '#1b1f38'; g.fillRect(0, 15, CW, 1);
+    for (let x = 12; x < CW; x += 30) { g.fillStyle = '#fff6c8'; g.fillRect(x, 16, 2, 1); g.fillStyle = 'rgba(255,246,200,.08)'; g.fillRect(x - 4, 17, 10, 4); }
+    crowdRows(g, 88, CH2, rnd, .55);                                         // upper bowl
+    g.fillStyle = hc; g.fillRect(0, 86, CW, 2);
+    g.fillStyle = '#3a3f4f'; [62, 178].forEach(x => g.fillRect(x, 0, 1, 21)); // cables
+    g.fillStyle = '#23263c'; g.fillRect(34, 20, 172, 5);                     // top ring
+    const led = Math.floor(t / 180);                                         // LED ribbons chasing in team colors
+    for (let x = 34, k = 0; x < 206; x += 8, k++) { g.fillStyle = (k + led) % 4 < 2 ? hc : ac; g.fillRect(x, 25, 8, 3); }
     g.fillStyle = '#14162a';                                                 // side faces, seen at an angle
-    g.beginPath(); g.moveTo(26, 21); g.lineTo(31, 22); g.lineTo(31, 55); g.lineTo(26, 51); g.fill();
-    g.beginPath(); g.moveTo(134, 21); g.lineTo(129, 22); g.lineTo(129, 55); g.lineTo(134, 51); g.fill();
+    g.beginPath(); g.moveTo(34, 28); g.lineTo(43, 29); g.lineTo(43, 77); g.lineTo(34, 72); g.fill();
+    g.beginPath(); g.moveTo(206, 28); g.lineTo(197, 29); g.lineTo(197, 77); g.lineTo(206, 72); g.fill();
     g.globalAlpha = .45; g.fillStyle = ad.bg;
-    g.beginPath(); g.moveTo(27, 23); g.lineTo(30, 24); g.lineTo(30, 53); g.lineTo(27, 50); g.fill();
-    g.beginPath(); g.moveTo(133, 23); g.lineTo(130, 24); g.lineTo(130, 53); g.lineTo(133, 50); g.fill(); g.globalAlpha = 1;
-    screenAd(g, 32, 22, 96, 33, ad, t);
-    g.fillStyle = '#23263c'; g.fillRect(30, 56, 100, 3);                    // bottom ring and the little under-screen
-    for (let x = 30, k = 0; x < 130; x += 5, k++) { g.fillStyle = (k + led) % 4 < 2 ? ac : hc; g.fillRect(x, 59, 5, 1); }
-    g.fillStyle = '#14162a'; g.fillRect(56, 60, 48, 6); pixText(g, 'TIMEOUT', 80 - (pixWidth('TIMEOUT', false) >> 1), 60, false, '#f7d038');
+    g.beginPath(); g.moveTo(36, 30); g.lineTo(41, 31); g.lineTo(41, 75); g.lineTo(36, 71); g.fill();
+    g.beginPath(); g.moveTo(204, 30); g.lineTo(199, 31); g.lineTo(199, 75); g.lineTo(204, 71); g.fill(); g.globalAlpha = 1;
+    screenAd(g, 45, 30, 150, 47, ad, t);
+    g.fillStyle = '#23263c'; g.fillRect(43, 78, 154, 4);                    // bottom ring and the little under-screen
+    for (let x = 43, k = 0; x < 197; x += 7, k++) { g.fillStyle = (k + led) % 4 < 2 ? ac : hc; g.fillRect(x, 82, 7, 1); }
+    g.fillStyle = '#14162a'; g.fillRect(96, 83, 48, 8); pixText(g, 'TIMEOUT', 120 - (pixWidth('TIMEOUT', false) >> 1), 84, false, '#f7d038');
   } else if (kind === 'jumbo') {
-    const sky = ['#3d5f9e', '#4a6fae', '#5b80bd', '#6e92c9', '#83a6d5', '#9cbbe0'];
-    sky.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, i * 11, 160, 11); });
-    g.fillStyle = '#2b3550'; [8, 150].forEach(x => { g.fillRect(x, 6, 2, 60); g.fillRect(x - 5, 4, 12, 5); });
-    g.fillStyle = '#fff6c8'; [8, 150].forEach(x => { for (let k = 0; k < 5; k++) g.fillRect(x - 4 + k * 2, 5, 1, 1); });
-    g.fillStyle = '#20263a'; g.fillRect(60, 58, 4, 14); g.fillRect(96, 58, 4, 14); // legs
-    g.fillStyle = '#20263a'; g.fillRect(20, 4, 120, 56);                    // the board
-    g.fillStyle = hc; g.fillRect(22, 6, 116, 7);
-    if (S.home && S.away) {                                                  // the real score on the board's header
-      const sb = `${S.away.abbr} ${S.prevScore?.a ?? 0}   ${S.home.abbr} ${S.prevScore?.h ?? 0}`;
-      pixText(g, sb, 80 - (pixWidth(sb, false) >> 1), 7, false, '#ffffff');
+    skyBands(g, ['#3d5f9e', '#4a6fae', '#5b80bd', '#6e92c9', '#83a6d5', '#9cbbe0']);
+    lightTower(g, 10, 6, 86); lightTower(g, 228, 6, 86);
+    g.fillStyle = '#20263a'; g.fillRect(92, 80, 5, 16); g.fillRect(143, 80, 5, 16); // legs
+    g.fillRect(28, 3, 184, 78);                                              // the board
+    g.fillStyle = hc; g.fillRect(31, 6, 178, 14);
+    if (S.home && S.away) {                                                  // the real score along the board's top
+      const sb = `${S.away.abbr} ${S.prevScore?.a ?? 0}    ${S.home.abbr} ${S.prevScore?.h ?? 0}`;
+      pixText(g, sb, 120 - pixWidth(sb, false), 8, false, '#ffffff', 2);
     }
-    screenAd(g, 25, 16, 110, 40, ad, t);
-    crowdRows(g, 62, 74, rnd, .8);                                           // bleachers
-    g.fillStyle = '#1f5a32'; g.fillRect(0, 74, 160, 6); g.fillStyle = '#f7d038'; g.fillRect(0, 74, 160, 1);
-    for (let x = 0; x < 160; x += 16) { g.fillStyle = (x / 16 & 1) ? '#3c8a3e' : '#45994a'; g.fillRect(x, 80, 16, 10); }
-    g.fillStyle = '#b07a4a'; g.fillRect(0, 80, 160, 2);                      // warning track
+    screenAd(g, 33, 23, 174, 54, ad, t);
+    crowdRows(g, 84, 98, rnd, .8);                                           // bleachers
+    g.fillStyle = '#1f5a32'; g.fillRect(0, 98, CW, 8); g.fillStyle = '#f7d038'; g.fillRect(0, 98, CW, 1);
+    g.fillStyle = '#b07a4a'; g.fillRect(0, 106, CW, 3);                      // warning track
+    for (let x = 0; x < CW; x += 20) { g.fillStyle = (x / 20 & 1) ? '#3c8a3e' : '#45994a'; g.fillRect(x, 109, 20, 11); }
   } else if (kind === 'endzone') {
-    g.fillStyle = '#0b1030'; g.fillRect(0, 0, 160, 90);
-    for (let i = 0; i < 18; i++) { g.fillStyle = 'rgba(255,255,255,.5)'; g.fillRect(rnd() * 160 | 0, rnd() * 20 | 0, 1, 1); }
-    [6, 146].forEach(x => { g.fillStyle = '#2b3550'; g.fillRect(x + 3, 10, 2, 40); g.fillStyle = '#fff6c8'; g.fillRect(x, 6, 8, 4); g.fillStyle = 'rgba(255,246,200,.12)'; g.fillRect(x - 4, 10, 16, 6); });
-    g.fillStyle = '#1d2238'; g.fillRect(22, 2, 116, 48);
-    g.fillStyle = '#05060d'; g.fillRect(22, 46, 116, 4);
-    screenAd(g, 26, 6, 108, 38, ad, t);
-    g.fillStyle = '#1d2238'; g.fillRect(0, 50, 160, 4);                      // upper deck lip
-    crowdRows(g, 54, 72, rnd, .75);
-    g.fillStyle = hc; g.fillRect(0, 72, 160, 4);                             // end zone wall
-    g.fillStyle = '#2f7a35'; g.fillRect(0, 76, 160, 14);
-    g.fillStyle = hc; g.globalAlpha = .55; g.fillRect(0, 79, 160, 11); g.globalAlpha = 1; // painted end zone
-    g.fillStyle = '#f2f0e8'; g.fillRect(0, 78, 160, 1);
+    g.fillStyle = '#0b1030'; g.fillRect(0, 0, CW, CH2);
+    for (let i = 0; i < 26; i++) { g.fillStyle = 'rgba(255,255,255,.5)'; g.fillRect(rnd() * CW | 0, rnd() * 26 | 0, 1, 1); }
+    lightTower(g, 10, 4, 66); lightTower(g, 228, 4, 66);
+    g.fillStyle = '#1d2238'; g.fillRect(32, 2, 176, 64);
+    screenAd(g, 37, 7, 166, 54, ad, t);
+    g.fillStyle = '#05060d'; g.fillRect(32, 62, 176, 4);
+    g.fillStyle = '#1d2238'; g.fillRect(0, 66, CW, 5);                       // upper deck lip
+    crowdRows(g, 71, 94, rnd, .75);
+    g.fillStyle = hc; g.fillRect(0, 94, CW, 5);                              // end zone wall
+    g.fillStyle = '#2f7a35'; g.fillRect(0, 99, CW, 21);
+    g.fillStyle = hc; g.globalAlpha = .55; g.fillRect(0, 103, CW, 17); g.globalAlpha = 1; // painted end zone
+    g.fillStyle = '#f2f0e8'; g.fillRect(0, 102, CW, 1);
     g.fillStyle = '#f2d53c';                                                 // goalpost in front of the stands
-    g.fillRect(56, 54, 2, 16); g.fillRect(102, 54, 2, 16); g.fillRect(56, 69, 48, 2); g.fillRect(79, 70, 2, 20);
+    g.fillRect(84, 70, 2, 22); g.fillRect(154, 70, 2, 22); g.fillRect(84, 91, 72, 2); g.fillRect(119, 93, 2, 27);
   } else {                                                                   // blimp
-    const sky = ['#4f86c6', '#5b92cf', '#69a0d8', '#79ade0', '#8bbbe7', '#9fc9ee', '#b4d6f2'];
-    sky.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, i * 13, 160, 13); });
+    skyBands(g, ['#4f86c6', '#5b92cf', '#69a0d8', '#79ade0', '#8bbbe7', '#9fc9ee', '#b4d6f2']);
     g.fillStyle = 'rgba(255,255,255,.75)';                                   // clouds drift by
-    [[20, 14, 26], [110, 22, 34], [60, 58, 22]].forEach(([x, y, w], i) => { const xx = ((x - t / (90 + i * 40)) % 200 + 200) % 200 - 20; g.fillRect(xx, y, w, 3); g.fillRect(xx + 4, y - 2, w - 10, 2); });
-    const bx = Math.round(80 + 6 * Math.sin(t / 2600)), by = Math.round(30 + 1.5 * Math.sin(t / 1400));
+    [[30, 16, 34], [170, 26, 44], [90, 80, 30], [210, 70, 24]].forEach(([x, y, w], i) => { const xx = ((x - t / (90 + i * 40)) % 300 + 300) % 300 - 30; g.fillRect(xx, y, w, 3); g.fillRect(xx + 5, y - 2, w - 12, 2); });
+    const bx = Math.round(118 + 8 * Math.sin(t / 2600)), by = Math.round(44 + 2 * Math.sin(t / 1400));
     g.fillStyle = '#7d8294';                                                 // fins
-    g.beginPath(); g.moveTo(bx + 44, by - 3); g.lineTo(bx + 58, by - 14); g.lineTo(bx + 60, by - 2); g.fill();
-    g.beginPath(); g.moveTo(bx + 44, by + 3); g.lineTo(bx + 58, by + 14); g.lineTo(bx + 60, by + 2); g.fill();
-    g.fillStyle = '#b9bdcb'; g.beginPath(); g.ellipse(bx, by, 56, 17, 0, 0, Math.PI * 2); g.fill();
-    g.fillStyle = '#d6d9e3'; g.beginPath(); g.ellipse(bx - 4, by - 6, 46, 8, 0, 0, Math.PI * 2); g.fill();
-    g.fillStyle = '#9a9eae'; g.beginPath(); g.ellipse(bx, by + 10, 46, 5, 0, 0, Math.PI); g.fill();
-    g.fillStyle = '#4a4f63'; g.fillRect(bx - 10, by + 16, 20, 5); g.fillStyle = '#9fc9ee'; for (let k = 0; k < 4; k++) g.fillRect(bx - 8 + k * 5, by + 17, 3, 2);
-    screenAd(g, bx - 40, by - 9, 80, 19, ad, t);                            // the sign panel on its side
+    g.beginPath(); g.moveTo(bx + 66, by - 4); g.lineTo(bx + 86, by - 20); g.lineTo(bx + 90, by - 3); g.fill();
+    g.beginPath(); g.moveTo(bx + 66, by + 4); g.lineTo(bx + 86, by + 20); g.lineTo(bx + 90, by + 3); g.fill();
+    g.fillStyle = '#b9bdcb'; g.beginPath(); g.ellipse(bx, by, 84, 25, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#d6d9e3'; g.beginPath(); g.ellipse(bx - 6, by - 9, 70, 11, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = '#9a9eae'; g.beginPath(); g.ellipse(bx, by + 15, 70, 7, 0, 0, Math.PI); g.fill();
+    g.fillStyle = '#4a4f63'; g.fillRect(bx - 14, by + 24, 28, 7); g.fillStyle = '#9fc9ee'; for (let k = 0; k < 5; k++) g.fillRect(bx - 12 + k * 5, by + 26, 3, 2);
+    screenAd(g, bx - 64, by - 18, 128, 36, ad, t);                         // the sign panel on its side
     g.fillStyle = '#1d2238';                                                 // the stadium rim below
-    g.beginPath(); g.ellipse(80, 100, 110, 26, 0, Math.PI, 0); g.fill();
-    g.fillStyle = '#2f7a35'; g.beginPath(); g.ellipse(80, 100, 70, 14, 0, Math.PI, 0); g.fill();
-    g.fillStyle = '#f2f0e8'; for (let x = 30; x <= 130; x += 10) g.fillRect(x, 88, 1, 2);
-    [14, 146].forEach(x => { g.fillStyle = '#2b3550'; g.fillRect(x, 70, 2, 14); g.fillStyle = '#fff6c8'; g.fillRect(x - 3, 68, 8, 3); });
+    g.beginPath(); g.ellipse(120, 136, 170, 36, 0, Math.PI, 0); g.fill();
+    g.fillStyle = '#2f7a35'; g.beginPath(); g.ellipse(120, 136, 108, 20, 0, Math.PI, 0); g.fill();
+    g.fillStyle = '#f2f0e8'; for (let x = 40; x <= 200; x += 16) g.fillRect(x, 117, 1, 3);
+    lightTower(g, 18, 92, 112); lightTower(g, 220, 92, 112);
   }
 }
 function showAdCut(){
   if (!S.field || !S.home) return;
   const kind = cutKind(), ad = adAt(5 + (S.cutN || 0) * 7);
   S.cut = {kind, ad, at: performance.now()};
+  // the window takes over from the TIME OUT banner and carries what it said
+  const sub = $('banner-sub').textContent;
+  $('adcut-head').textContent = $('banner').querySelector('.bt').textContent + (sub ? ' · ' + sub : '');
+  $('banner').hidden = true;
   $('adcut-cap').textContent = 'LIVE · ' + CUT_NAME[kind];
   $('adcut').hidden = false; $('stage').classList.add('cut');
   const tick = () => { if (!S.cut || S.cut.ad !== ad) return; drawCut(kind, ad, performance.now() - S.cut.at); setTimeout(() => requestAnimationFrame(tick), 80); };
@@ -826,6 +833,16 @@ function hideAdCut(){
   if (!S.cut) return;
   S.cut = null; S.cutN = (S.cutN || 0) + 1;
   $('adcut').hidden = true; $('stage').classList.remove('cut');
+}
+// the play-by-play voice reads the sponsor on the screen; fixed wording, the brand and slogan exactly as listed
+const titleCase = x => x.toLowerCase().replace(/\b[a-z]/g, c => c.toUpperCase());
+async function sponsorRead(tok){
+  if (tok !== S.token) return;
+  if (!S.cut) { clearTimeout(S.cutT); showAdCut(); }
+  if (!S.cut) return;
+  const ad = S.cut.ad, text = `This break is brought to you by ${titleCase(ad.name)}. ${(ad.line || '').charAt(0)}${(ad.line || '').slice(1).toLowerCase()}.`.replace(/ \.$/, '');
+  if (S.mode === 'live' && S.queue.length > 3) { $('caption').textContent = tag('A') + text; return; }
+  await say('A', text, tok);
 }
 // a replay holds the timeout long enough for the cut-in to be seen
 const cutHold = () => S.cut ? Math.max(2000, 8000 - (performance.now() - S.cut.at)) : 2000;
@@ -2286,7 +2303,8 @@ async function runPlayMLB(p, fast, tok){
   const brk = o.outsAdd && st.outs >= 3 && before.outs !== 3 ? 'INNING BREAK' : /pitch(er|ing) change|pitching substitution/i.test(p.text || '') || o.pitcher ? 'PITCHING CHANGE' : null;
   if (brk && tok === S.token) {
     showBreak(brk, brk === 'INNING BREAK' && st.inning ? `${st.top ? 'MIDDLE' : 'END'} OF THE ${st.inning}${[, 'ST', 'ND', 'RD'][st.inning % 100 > 10 && st.inning % 100 < 14 ? 0 : st.inning % 10] || 'TH'}` : '');
-    if (S.mode === 'replay') { await sleep(1300); await sleep(cutHold()); if (tok === S.token) hideBanner(); }
+    await sleep(1300); await sponsorRead(tok);
+    if (S.mode === 'replay') { await sleep(cutHold()); if (tok === S.token) hideBanner(); }
   }
 }
 
@@ -3045,6 +3063,7 @@ async function runPlayBB(p, fast, tok){
   if (tok !== S.token) return;
   const aside = busy ? null : bbAside(p, k, before);
   if (aside) { await sleep(200); await say('B', aside, tok); }
+  if (isTimeout) await sponsorRead(tok);
   await sleep(S.voices ? 150 : 400);
   if (isTimeout && S.mode === 'replay') { await sleep(cutHold()); if (tok === S.token) hideBanner(); }
 }
@@ -3316,6 +3335,7 @@ async function runPlay(p, fast, tok){
   if (tok !== S.token) return;
   const aside = dukeAside(p, plan, before);
   if (aside) { await sleep(250); await say('B', aside, tok); }
+  if (isTimeout) await sponsorRead(tok);
   await sleep(S.voices ? 350 : 900);
   if (isTimeout && S.mode === 'replay') { await sleep(Math.max(2500, cutHold())); if (tok === S.token) hideBanner(); }
 }
