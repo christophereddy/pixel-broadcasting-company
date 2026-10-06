@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="../shared/pbc.css">
 <script src="../shared/pbc.js"></script>
 <script src="../shared/ads.js"></script>
+<script src="f1.js"></script>
+<script src="f1cam.js"></script>
 <style>
 /* Layout: arcade cabinet. Header with sport tabs (NFL and MLB work), 16:9 stage with booth (top-left) and scoreboard (top-right), live feed under it, game list at right. */
 :root{
@@ -122,6 +124,11 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .pl:hover{background:var(--panel-2)}
 .pl .n{color:var(--gold);font-variant-numeric:tabular-nums}
 .pl .ps{color:var(--dim);text-align:right}
+.f1cam{display:flex;align-items:center;gap:8px;padding:6px 12px;font-size:15px;color:var(--gold);letter-spacing:.06em}
+.f1cam select{flex:1;min-width:0;font:inherit;font-size:17px;letter-spacing:0;background:var(--panel-2);color:var(--ink,#f2f0e8);border:1px solid #2a3060;padding:3px 4px}
+.pl.f1r{grid-template-columns:2.4em minmax(0,1fr) auto}
+.pl.f1r .dn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pl.f1r .dn i{display:inline-block;width:.45em;height:.9em;margin-right:.4em;vertical-align:-.1em}
 .pcard{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;align-items:center}
 .pcard canvas{width:96px;height:96px;image-rendering:pixelated;image-rendering:crisp-edges;border:3px solid #e9e4cf;box-shadow:0 0 0 3px #05060d}
 .pcard .pn{font-family:var(--display);font-size:13px;line-height:1.6}
@@ -196,6 +203,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
       <button class="tab" aria-pressed="false" id="sport-nba">NBA</button>
       <button class="tab" aria-pressed="false" id="sport-wnba">WNBA</button>
       <button class="tab" aria-pressed="false" id="sport-mlb">MLB</button>
+      <button class="tab" aria-pressed="false" id="sport-f1">F1</button>
       <button class="tab" disabled>NHL<small>soon</small></button>
       <button class="tab" disabled>MLS<small>soon</small></button>
     </nav>
@@ -270,6 +278,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
       <button class="tcard" id="tc-home" aria-label="Home team"><canvas width="32" height="32"></canvas><span class="tn"></span><span class="tr"></span><span class="ts"></span></button>
     </div>
     <div class="gdate" id="gp-date" hidden></div>
+    <label class="f1cam" id="f1cam" hidden>ONBOARD CAMERA <select id="f1cam-sel" aria-label="Pick the car the camera follows"></select></label>
     <div class="hint" id="gp-hint" hidden>Click a team for stats and roster.</div>
     <div class="detail" id="detail" hidden></div>
    </div>
@@ -312,7 +321,12 @@ const SPORTS = {
     credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nba/']]},
   wnba: {name: 'WNBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/wnba', src: 'ESPN play-by-play',
     hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
-    credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/wnba/']]}
+    credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/wnba/']]},
+  // Formula 1 reads only OpenF1, whose free tier covers finished sessions: races replay from their real timing (sports/f1.js)
+  f1: {name: 'F1', family: 'racing', api: 'https://api.openf1.org/v1', site: '', src: 'OpenF1 timing',
+    hosts: ['api.openf1.org'],
+    credits: [['Sessions, lap and sector timing, car positions, pit stops, race control and results', 'OpenF1', 'https://openf1.org'],
+      ['OpenF1 data license', 'CC BY-NC-SA 4.0', 'https://creativecommons.org/licenses/by-nc-sa/4.0/']]}
 };
 const isBB = () => SPORTS[S.sport]?.family === 'basketball';
 // the footer says where this sport's data comes from
@@ -334,7 +348,7 @@ const S = {
   sport: 'nfl', events: new Map(), game: null, mode: null, home: null, away: null,
   roster: {}, over: {}, seen: new Set(), teams: [], confs: [], conf: null, extra: new Map(), tview: null, tdata: {}, queue: [], token: 0, pumping: null,
   actors: [], ball: {x: 50, y: MIDY, h: 0, vis: true}, cam: 50, anim: null, flag: null,
-  prevScore: {h: 0, a: 0}, sound: false, voices: false, started: false, speaking: null, field: null
+  prevScore: {h: 0, a: 0}, sound: false, voices: false, started: false, speaking: null, field: null, f1: {}, f1r: null
 };
 
 const $ = id => document.getElementById(id);
@@ -419,6 +433,7 @@ const fullName = t => t.loc === t.nick ? t.nick : `${t.loc} ${t.nick}`;
 const isTBD = ev => { const cs = ev?.competitions?.[0]?.competitors || []; return cs.length < 2 || cs.some(c => !(c.team?.id ?? c.id) || /^TBD$/i.test(c.team?.abbreviation || '') || /\bTBD\b/i.test(c.team?.displayName || '')); };
 async function loadScoreboard(){
   if (isMLB()) return loadMLBGames();
+  if (isF1()) return f1LoadRaces();
   const now = new Date(), later = new Date(now.getTime() + 10 * 864e5), earlier = new Date(now.getTime() - 8 * 864e5);
   // college: every FBS game (`board`), not only ESPN's Top 25 default
   const q = SPORTS[S.sport].board ? '&' + SPORTS[S.sport].board : '';
@@ -509,6 +524,7 @@ function mlbEvent(g){
 const evOf = id => S.events.get(id) || S.extra.get(id);
 function stateOf(ev){ return ev.status?.type?.state || ev.competitions?.[0]?.status?.type?.state || 'pre'; }
 function gameLine(ev){
+  if (isF1()) return f1GameLine(ev);
   const t = teamsOf(ev), st = stateOf(ev), stat = ev.status || ev.competitions[0].status || {};
   let s = '';
   if (st === 'in') s = `${t.away.score}-${t.home.score} · ${stat.type?.shortDetail || 'Live'}`;
@@ -525,7 +541,7 @@ function sortedGames(everywhere){
   const all = [...S.events.values()].filter(ev => everywhere || inConf(ev));
   const live = all.filter(e => stateOf(e) === 'in');
   const next = all.filter(e => stateOf(e) === 'pre').sort((a,b) => new Date(a.date) - new Date(b.date)).slice(0, 12);
-  const fin = all.filter(e => stateOf(e) === 'post').sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0, 8);
+  const fin = all.filter(e => stateOf(e) === 'post' && (!isF1() || e.replay)).sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0, 8);
   return {live, next, fin};
 }
 function renderList(){
@@ -543,8 +559,8 @@ function renderList(){
     }
   };
   const lg = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf)?.name || SPORTS[S.sport].name;
-  fill($('list-live'), live, `No ${lg} games live right now.`);
-  fill($('list-next'), next.slice(0, 8), SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next 10 days.');
+  fill($('list-live'), live, isF1() ? 'No F1 session on track right now.' : `No ${lg} games live right now.`);
+  fill($('list-next'), next.slice(0, 8), isF1() ? 'No sessions on the schedule.' : SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next 10 days.');
   markLive();
 }
 
@@ -565,6 +581,7 @@ function mlbRosterPlayer(x, it){
 }
 async function loadRoster(team){
   if (S.roster[team.id]) return;
+  if (isF1()) return f1Roster(team);
   const pools = {}, all = [], byId = {};
   if (isMLB()) {
     try {
@@ -644,7 +661,7 @@ const syOf = y => isBB() ? Math.round(bcy(y) - (S.camY - H / 2)) : isMLB() ? Mat
 // The twelve default brands, the sold ads and the house ad come from ../shared/ads.js; sold ads take the defaults' place.
 const {DEFAULT_ADS, HOUSE_AD, qrMatrix} = PBC_ADS;
 let ADS = DEFAULT_ADS;
-PBC_ADS.loadSold('../').then(list => { if (list) { ADS = list; if (S.field && S.home) buildField(); } });
+PBC_ADS.loadSold('../').then(list => { if (list) { ADS = list; if (S.field && (S.home || isF1())) buildField(); } });
 // the boards change together every so often, like a real rotating board
 const adAt = i => ADS[(i + (S.adPhase || 0)) % ADS.length];
 // one board: dark frame, the brand in pixel type, and the SPONSOR tag under it where there is room
@@ -720,7 +737,7 @@ function drawCloseUp(g, ad, t){
   g.fillStyle = 'rgba(0,0,0,.10)'; for (let r = 4; r < CH2 - 3; r += 2) g.fillRect(qs + qx + 1, r, CW - qs - qx - 4, 1);
 }
 const CUT_NAME = {jumbo: 'CENTER FIELD SCOREBOARD', center: 'CENTER-HUNG SCREEN', endzone: 'END ZONE SCREEN', blimp: 'BLIMP CAM'};
-function cutKind(){ return isMLB() ? 'jumbo' : isBB() ? 'center' : (S.cutN || 0) % 2 ? 'blimp' : 'endzone'; }
+function cutKind(){ return isF1() ? 'blimp' : isMLB() ? 'jumbo' : isBB() ? 'center' : (S.cutN || 0) % 2 ? 'blimp' : 'endzone'; }
 // the ad as a video board shows it: "TIMEOUT PRESENTED BY", the brand as big as it fits, its slogan, SPONSOR, LED rows
 function screenAd(g, x, y, w, h, ad, t){
   g.fillStyle = '#05060d'; g.fillRect(x - 1, y - 1, w + 2, h + 2);
@@ -826,7 +843,7 @@ function drawCut(kind, ad, t){
   }
 }
 function showAdCut(){
-  if (!S.field || !S.home) return;
+  if (!S.field || (!S.home && !isF1())) return;
   const kind = cutKind(), ad = breakAd(S.cutN || 0);
   S.cut = {kind, ad, at: performance.now()};
   // the window takes over from the TIME OUT banner and carries what it said
@@ -863,8 +880,9 @@ const cutHold = () => S.cut ? Math.max(2000, 8000 - (performance.now() - S.cut.a
 /* ================= the fixed art: field ================= */
 function mulberry(a){ return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 // the boards change on a timer, so one game shows several sponsors; the art is rebuilt in place
-setInterval(() => { if (!S.field || !S.home || document.hidden) return; S.adPhase = (S.adPhase || 0) + 1; buildField(); }, 24000);
+setInterval(() => { if (!S.field || (!S.home && !isF1()) || document.hidden) return; S.adPhase = (S.adPhase || 0) + 1; buildField(); }, 24000);
 function buildField(){
+  if (isF1()) return f1BuildTrack();
   if (isMLB()) return buildDiamond();
   if (isBB()) return buildCourt();
   const c = document.createElement('canvas'); c.width = 140 * PX; c.height = H;
@@ -1049,6 +1067,11 @@ const CAST = {
     // Dana Whitfield calls the WNBA; Keisha Monroe ran the point for a decade
     A: {name: 'DANA WHITFIELD', tag: 'DANA', look: {jacket: '#7b2d5b', shirt: '#f2e6d8', skin: '#e0ac69', hair: '#6b3e26', brow: '#4a2a18', longHair: true}},
     B: {name: 'KEISHA MONROE', tag: 'KEISHA', look: {jacket: '#14532d', shirt: '#f2f0e8', skin: '#8d5524', hair: '#1a1110', brow: '#1a1110', longHair: true, glasses: true}}
+  },
+  f1: {
+    // Colin Pryce calls Formula 1; Sofia Marquez raced for nine seasons before taking the color seat
+    A: {name: 'COLIN PRYCE', tag: 'COLIN', look: {jacket: '#22313f', tie: '#c0392b', skin: '#f1c27d', hair: '#b5651d', brow: '#8a4b14', glasses: true}},
+    B: {name: 'SOFIA MARQUEZ', tag: 'SOFIA', look: {jacket: '#8a1c1c', shirt: '#f2f0e8', skin: '#d29a6a', hair: '#2b1a12', brow: '#2b1a12', longHair: true}}
   }
 };
 const crew = () => CAST[S.sport] || CAST.nfl;
@@ -1101,8 +1124,8 @@ function sfx(name){
 }
 
 /* ================= voices ================= */
-let VOICES = {nfl: {A: null, B: null}, cfb: {A: null, B: null}, mlb: {A: null, B: null}, nba: {A: null, B: null}, wnba: {A: null, B: null}};
-const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, cfb: {A: [1.0, 1.15], B: [0.78, 0.9]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}, nba: {A: [0.95, 1.12], B: [0.85, 0.95]}, wnba: {A: [1.15, 1.08], B: [0.98, 1.0]}}; // [pitch, rate]
+let VOICES = {nfl: {A: null, B: null}, cfb: {A: null, B: null}, mlb: {A: null, B: null}, nba: {A: null, B: null}, wnba: {A: null, B: null}, f1: {A: null, B: null}};
+const VOICE_STYLE = {nfl: {A: [1.05, 1.1], B: [0.72, 0.98]}, cfb: {A: [1.0, 1.15], B: [0.78, 0.9]}, mlb: {A: [1.1, 1.05], B: [0.8, 0.92]}, nba: {A: [0.95, 1.12], B: [0.85, 0.95]}, wnba: {A: [1.15, 1.08], B: [0.98, 1.0]}, f1: {A: [1.0, 1.12], B: [1.05, 1.02]}}; // [pitch, rate]
 function pickVoices(){
   const vs = PBC.voices();
   if (!vs.length) return;
@@ -1121,6 +1144,8 @@ function pickVoices(){
   VOICES.cfb = {A: male[2] || male[0] || A, B: male[3] || male[1] || B};
   const fem = vs.filter(v => /Samantha|Ava|Allison|Susan|Zira|Jenny|Aria|Karen|Moira|Tessa|Serena|Victoria|Female|Fiona|Kathy|Vicki|Joanna|Salli|Kendra|Libby|Sonia/i.test(v.name));
   VOICES.wnba = {A: fem.find(v => v !== nina) || fem[0] || nina, B: fem.find(v => v !== nina && v !== (fem.find(x => x !== nina) || fem[0])) || nina};
+  // Formula 1: a British voice for Colin where the device has one, and a woman's voice for Sofia
+  VOICES.f1 = {A: pref(/UK English Male|Daniel|Arthur|George|Ryan|Oliver/i) || male[0] || A, B: fem.find(v => v !== nina && v !== VOICES.wnba.A) || fem[0] || nina};
 }
 if (window.speechSynthesis) { pickVoices(); speechSynthesis.onvoiceschanged = pickVoices; }
 
@@ -3138,6 +3163,7 @@ function animate(plan, tok){
 }
 
 function step(now){
+  if (isF1()) { f1Tick(now); f1Render(now); S.lastNow = now; requestAnimationFrame(step); return; }
   const a = S.anim;
   if (a) {
     const t = (now - a.t0) / 1000, dt = Math.min(0.05, t - a.last); a.last = t;
@@ -3218,6 +3244,7 @@ function step(now){
 
 const ctx = $('field').getContext('2d'); ctx.imageSmoothingEnabled = false;
 function render(now){
+  if (isF1()) return f1Render(now);
   ctx.fillStyle = '#0c0e1c'; ctx.fillRect(0, 0, W, H);
   if (isBB()) {
     if (S.field) ctx.drawImage(S.field, Math.round(S.camX - W / 2), Math.round(S.camY - H / 2), W, H, 0, 0, W, H);
@@ -3246,6 +3273,7 @@ function render(now){
 
 /* ================= state, scoreboard, transcript ================= */
 function setBoard(){
+  if (isF1()) return f1Board();
   if (!S.home) return;
   $('abA').textContent = S.away.abbr; $('abH').textContent = S.home.abbr;
   $('chipA').style.background = S.away.color; $('chipH').style.background = S.home.color;
@@ -3387,6 +3415,7 @@ function playsOf(summary){
 
 /* ================= selecting a game ================= */
 async function selectGame(id, mode){
+  if (isF1()) return f1Select(id, mode);
   const ev = evOf(id); if (!ev) return;
   S.token++; const tok = S.token;
   if (window.speechSynthesis) speechSynthesis.cancel();
@@ -3456,7 +3485,7 @@ const startWords = () => isMLB() ? ['first pitch', 'First pitch', 'pitch'] : isB
 // a game's play-by-play: ESPN's game summary for football and basketball, MLB's live game feed for baseball
 const gameURL = id => isMLB() ? `${MLB_API}/v1.1/game/${id}/feed/live` : `${API}/summary?event=${id}`;
 async function pollLive(){
-  if (S.mode !== 'live' || !S.game) return;
+  if (S.mode !== 'live' || !S.game || isF1()) return;
   const tok = S.token;
   try {
     const sum = await getJSON(gameURL(S.game));
@@ -3511,6 +3540,7 @@ function playLabel(p){
   return `${p.period?.number ? qName(p.period.number) : ''} ${p.clock?.displayValue || ''}`.trim();
 }
 function renderTimeline(){
+  if (isF1()) return f1RenderTimeline();
   const R = S.rp, box = $('tline');
   box.hidden = !R; if (!R) return;
   const qs = $('tl-qs'); qs.innerHTML = '';
@@ -3536,6 +3566,7 @@ function renderTimeline(){
   updateTimeline();
 }
 function updateTimeline(){
+  if (isF1()) return f1UpdateTimeline();
   const R = S.rp; if (!R) return;
   const n = R.plays.length, done = S.ri >= n;
   const f = done ? 1 : R.t[S.ri] / R.total;
@@ -3585,6 +3616,7 @@ function seekTo(i, why){
   setTimeout(() => { if (tok === S.token) pump(); }, 700);
 }
 function stepDrive(dir){
+  if (isF1()) return f1StepLap(dir);
   const R = S.rp; if (!R) return;
   const cur = Math.min(S.ri, R.plays.length - 1), start = R.driveOf(cur);
   const unit = R.mlb ? 'half inning' : R.bb ? 'quarter' : 'drive';
@@ -3596,14 +3628,16 @@ function stepDrive(dir){
 (() => {
   const bar = $('tl-bar');
   const fracOf = e => { const r = bar.getBoundingClientRect(); return (e.clientX - r.left) / r.width; };
-  bar.addEventListener('click', e => { if (S.rp) seekTo(idxAtFrac(fracOf(e))); });
+  bar.addEventListener('click', e => { if (isF1()) { const R = S.f1r; if (R) f1SeekTime(R.t0 + clamp(fracOf(e), 0, 1) * (R.end - R.t0)); return; } if (S.rp) seekTo(idxAtFrac(fracOf(e))); });
   bar.addEventListener('mousemove', e => {
+    if (isF1()) { S.tlHover = true; return f1Hover(clamp(fracOf(e), 0, 1)); }
     if (!S.rp) return; S.tlHover = true;
     const p = S.rp.plays[idxAtFrac(fracOf(e))];
     $('tl-hover').textContent = `${playLabel(p)}  ${p.text || p.type?.text || ''}`;
   });
   bar.addEventListener('mouseleave', () => { S.tlHover = false; updateTimeline(); });
   bar.addEventListener('keydown', e => {
+    if (isF1() && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); return f1StepLap(e.key === 'ArrowLeft' ? -1 : 1); }
     if (!S.rp) return;
     if (e.key === 'ArrowLeft') { e.preventDefault(); seekTo(Math.min(S.ri, S.rp.plays.length) - 1); }
     else if (e.key === 'ArrowRight') { e.preventDefault(); seekTo(S.ri + 1); }
@@ -3617,6 +3651,7 @@ function stepDrive(dir){
 const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 
 function drawHelmet(cv, team){
+  if (isF1()) return f1Badge(cv, team);
   const g = cv.getContext('2d'); g.imageSmoothingEnabled = false; g.clearRect(0, 0, cv.width, cv.height);
   const r = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
   if (isBB()) {
@@ -3796,6 +3831,7 @@ function recordOf(side){
   return c?.records?.[0]?.summary || c?.record?.[0]?.summary || '';
 }
 function renderGamePanel(){
+  if (isF1()) return f1Panel();
   const has = !!(S.game && S.home?.kit);
   $('gp-empty').hidden = has; $('gp-teams').hidden = !has; $('gp-hint').hidden = !has; $('gp-date').hidden = !has;
   if (!has) { $('detail').hidden = true; return; }
@@ -3822,6 +3858,7 @@ const BB_TEAM_KEYS = ['fieldGoalsMade-fieldGoalsAttempted', 'fieldGoalPct', 'thr
 const TEAM_KEYS = ['totalYards', 'netPassingYards', 'rushingYards', 'firstDowns', 'thirdDownEff', 'fourthDownEff', 'turnovers', 'totalPenaltiesYards', 'sacksYardsLost', 'redZoneAttempts', 'possessionTime'];
 
 function renderDetail(){
+  if (isF1()) return f1Detail();
   const d = $('detail'), v = S.view;
   if (!v) { d.hidden = true; d.replaceChildren(); return; }
   const keep = d.scrollTop; d.hidden = false;
@@ -4108,6 +4145,7 @@ $('conf').onchange = e => {
 };
 async function loadTeams(){
   const sport = S.sport; let list = [];
+  if (isF1()) return f1LoadTeams();
   if (sport === 'cfb') {
     const r = await loadCFBTeams().catch(() => ({list: [], confs: []}));
     if (sport !== S.sport) return;
@@ -4145,14 +4183,16 @@ function renderTeams(){
   }
   // college football: only the picked conference, in standing order, with each team's place and record (overall, then in conference)
   const conf = S.sport === 'cfb' && S.confs?.find(c => c.id === S.conf);
+  // F1: the constructors in championship order, with their points
+  const ranked = conf || (isF1() && S.teams.some(t => t.rank));
   for (const t of conf ? S.teams.filter(t => t.conf === conf.id) : S.teams) {
     const b = document.createElement('button'); b.className = 'tbox'; b.dataset.tid = t.id;
-    b.setAttribute('aria-label', `${conf ? `${t.rank}. ` : ''}${fullName(t)}${t.rec ? `, ${t.rec}` : ''}${t.crec ? ` (${t.crec} in conference)` : ''}: schedule, news, stats and roster`);
+    b.setAttribute('aria-label', `${ranked ? `${t.rank}. ` : ''}${fullName(t)}${t.rec ? `, ${t.rec}` : ''}${t.crec ? ` (${t.crec} in conference)` : ''}: schedule, news, stats and roster`);
     b.title = fullName(t) + (t.rec ? ` · ${t.rec}${t.crec ? ` (${t.crec} ${conf ? conf.name : 'conf'})` : ''}` : '');
     const cv = document.createElement('canvas'); cv.width = 32; cv.height = 32;
     const s = document.createElement('span'); s.textContent = t.abbr;
     b.append(cv, s);
-    if (conf) {
+    if (ranked) {
       const rk = document.createElement('i'); rk.className = 'rk'; rk.textContent = t.rank;
       const rc = document.createElement('small'); rc.textContent = t.rec ? `${t.rec}${t.crec ? ` (${t.crec})` : ''}` : '';
       b.append(rk, rc);
@@ -4176,6 +4216,7 @@ function openTeam(t){
 }
 // a team's season: every game (for the next game, live game and replays), season stats and news, from the same source as its games
 async function loadTeamData(t){
+  if (isF1()) return f1TeamData(t);
   if (S.tdata[t.id]) return;
   const sport = S.sport, yr = seasonYear(), D = S.tdata[t.id] = {loading: true, games: [], news: [], stats: null};
   const keep = ev => { if (!S.events.has(ev.id)) S.extra.set(ev.id, ev); D.games.push(ev); };
@@ -4267,6 +4308,7 @@ function gameButton(t, ev, mode){
   return `<button class="game" data-gid="${esc(ev.id)}" data-mode="${mode}"><span class="m">${esc(g.m)}</span><span class="s${g.st === 'in' ? ' live' : ''}">${esc(g.s)}</span></button>`;
 }
 function renderTeamPage(){
+  if (isF1()) return f1TeamPage();
   const pg = $('teampage'), v = S.tview; if (!v) return;
   const t = v.team, D = S.tdata[t.id] || {loading: true, games: [], news: []};
   if (v.p) {
@@ -4344,16 +4386,17 @@ function showBreak(title, sub){
 function hideNotice(){ $('notice').hidden = true; }
 function showIdle(){
   const {next, fin} = sortedGames(), n = $('notice'); n.replaceChildren();
-  const h = document.createElement('h2'); h.textContent = `NO ${SPORTS[S.sport].name} GAMES LIVE RIGHT NOW`;
+  const h = document.createElement('h2'); h.textContent = `NO ${SPORTS[S.sport].name} ${isF1() ? 'RACE' : 'GAMES'} LIVE RIGHT NOW`;
   const p = document.createElement('p');
-  p.textContent = next[0] ? `Next up: ${gameLine(next[0]).m}, ${gameLine(next[0]).s}. Pick any game from the list.` : 'Pick any game from the list.';
+  const pick = `Pick any ${isF1() ? 'session' : 'game'} from the list.`;
+  p.textContent = next[0] ? `Next up: ${gameLine(next[0]).m}, ${gameLine(next[0]).s}. ${pick}` : pick;
   const btns = document.createElement('div'); btns.className = 'btns';
   if (fin[0]) {
     const b = document.createElement('button'); b.className = 'big'; b.textContent = `WATCH ${gameLine(fin[0]).m} REPLAY`;
     b.onclick = () => selectGame(String(fin[0].id), 'replay'); btns.append(b);
   }
   if (next[0]) {
-    const b = document.createElement('button'); b.className = 'big alt'; b.textContent = 'WAIT FOR NEXT GAME';
+    const b = document.createElement('button'); b.className = 'big alt'; b.textContent = isF1() ? 'SEE THE NEXT SESSION' : 'WAIT FOR NEXT GAME';
     b.onclick = () => selectGame(String(next[0].id), 'pre'); btns.append(b);
   }
   n.append(h, p, btns); n.hidden = false;
@@ -4372,11 +4415,12 @@ $('btn-start').onclick = () => {
   if (soundMode() === 'off') setSound('voices');
   if (window.speechSynthesis) { pickVoices(); const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u); }
   if (!S.game) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); }
-  else if (S.mode === 'live') say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
+  else if (S.mode === 'live' && !isF1()) say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
 };
 
 // a neutral field or park while data loads
 async function neutralField(){
+  if (isF1()) return f1Neutral();
   S.home = {id: 'h', abbr: 'HOME', nick: 'Home', loc: 'Home', color: '#1f3c88', alt: '#f7c948'};
   S.away = {id: 'a', abbr: 'AWAY', nick: 'Away', loc: 'Away', color: '#a8321f', alt: '#ffffff'};
   S.home.kit = kitFor(S.home, true); S.away.kit = kitFor(S.away, false);
@@ -4394,7 +4438,7 @@ async function openSport(){
   else if (S.started) showIdle();
 }
 // the game the broadcast cuts to: a live one in the picked conference, else any live game
-const firstLive = () => sortedGames().live[0] || sortedGames(true).live[0];
+const firstLive = () => isF1() ? null : sortedGames().live[0] || sortedGames(true).live[0];
 async function switchSport(sp){
   if (sp === S.sport || !SPORTS[sp]) return;
   S.sport = sp; API = SPORTS[sp].api; SITE = SPORTS[sp].site;
@@ -4404,8 +4448,8 @@ async function switchSport(sp){
   if (window.speechSynthesis) speechSynthesis.cancel();
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
   Object.assign(S, {events: new Map(), extra: new Map(), teams: [], confs: [], tview: null, tdata: {}, game: null, mode: null, queue: [], speaking: null, roster: {}, over: {}, pstats: {}, view: null, summary: null,
-    rp: null, ri: 0, paused: false, losX: null, fdX: null, flag: null, down: 0, prevScore: {h: 0, a: 0}, replayDone: false});
-  $('tline').hidden = true; hideNotice(); hideBanner(); showErr('');
+    rp: null, ri: 0, paused: false, losX: null, fdX: null, flag: null, down: 0, prevScore: {h: 0, a: 0}, replayDone: false, f1: {}, f1r: null});
+  $('tline').hidden = true; $('f1cam').hidden = true; hideNotice(); hideBanner(); showErr('');
   clearLog('Pick a game to see its play-by-play here.');
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
