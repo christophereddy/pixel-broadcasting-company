@@ -31,10 +31,8 @@ window.PBC_BUSINESS = {
   //   payLink: a payment link (e.g. a Stripe Payment Link) sent after Chris approves an ad.
   //            Empty hides the pay button. Only fill this in once paid ads are allowed to run.
   packages: {
-    boards:   { price: "", payLink: "" },
-    timeout:  { price: "", payLink: "" },
-    segment:  { price: "", payLink: "" },
-    desk:     { price: "", payLink: "" }
+    sports: { price: "", payLink: "" },   // arena boards + the big screen during breaks in play
+    news:   { price: "", payLink: "" }    // "This section presented by" + the full-screen ad in commercial breaks
   },
 
   // Audience numbers for advertisers, e.g. [["Monthly viewers", "12,400"], ["Average watch time", "18 min"]].

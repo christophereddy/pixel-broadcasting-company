@@ -42,7 +42,7 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 /* Marketing Division: ad menu cards, steps, form */
 .co-banner{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;border:2px solid var(--gold);background:#2a2208;padding:10px 14px}
 .co-banner b{font-family:var(--f-label);font-weight:400;font-size:12px;letter-spacing:.08em;background:var(--gold);color:var(--navy);padding:4px 6px;white-space:nowrap}
-.co-menu{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.co-menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
 .co-item{display:flex;flex-direction:column;gap:8px;background:var(--room);border:2px solid var(--line);padding:10px;min-width:0}
 .co-item svg{display:block;width:100%;height:auto;image-rendering:pixelated;shape-rendering:crispEdges;background:#000;border:2px solid #2c3364}
 .co-item h3{margin:2px 0 0;font-size:21px}
@@ -85,10 +85,12 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 .co-group>p{margin:4px 0 2px;font-family:var(--f-label);font-size:11px;letter-spacing:.08em;color:var(--muted)}
 
 /* Marketing Division office: the napping cat in the intro, and Dot at the sales desk answering questions */
-.co-herorow{display:flex;align-items:flex-end;gap:16px}
-.co-herorow p{flex:1;min-width:0;margin:0}
-.co-cat{flex:none;width:180px;height:120px;image-rendering:pixelated;image-rendering:crisp-edges;margin:-34px -8px -12px 0;cursor:pointer;touch-action:manipulation}
-@media (max-width:640px){.co-herorow{flex-direction:column;align-items:flex-end}.co-cat{width:144px;height:96px;margin:-8px -6px -10px 0}}
+.co-floor{position:relative;margin:10px -6px -8px}
+.co-floor canvas{display:block;width:100%;height:88px;image-rendering:pixelated;image-rendering:crisp-edges;cursor:pointer;touch-action:manipulation}
+.co-floor .pbc-btn{position:absolute;left:6px;top:4px;height:30px;font-size:11px;padding:0 10px}
+.co-previews{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.co-voice{height:30px;font-size:11px;padding:0 10px;margin-top:8px}
+.co-city{margin-top:8px;max-width:420px}
 .co-rep{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:14px;align-items:center;margin-bottom:12px}
 .co-repstage canvas{display:block;width:100%;height:auto;aspect-ratio:120/72;image-rendering:pixelated;image-rendering:crisp-edges;border:4px solid #2c3364;box-shadow:0 0 0 4px #05060d;box-sizing:border-box}
 .co-repname{margin:8px 0 0;color:var(--muted);font-size:18px}

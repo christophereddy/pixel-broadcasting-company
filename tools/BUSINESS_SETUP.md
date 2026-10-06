@@ -11,7 +11,7 @@ Every switch is one setting in `shared/business.js`. While a setting is empty, i
 | `email.*` | Email links on Contact, Corrections, Accessibility, Privacy and the Marketing Division's "Talk to sales" card. Any empty one falls back to `email.general`. | A business email on your own domain |
 | `adFormEndpoint` | Where the Marketing Division's request form sends its answers | A form service (for example Formspree, Basin or Web3Forms). Make a form, copy its endpoint URL, and set the service to email you. |
 | `salesOpen` | Set to `true` to take requests. It also hides the OPENING SOON banner. The form only sends when this is `true` **and** `adFormEndpoint` is set. | Your call |
-| `packages.<id>.price` | The price shown on each ad card (`boards`, `timeout`, `segment`, `desk`). Empty shows RATES COMING SOON. | Your rates |
+| `packages.<id>.price` | The price shown on each ad card (`sports`, `news`). Empty shows RATES COMING SOON. | Your rates |
 | `packages.<id>.payLink` | A PAY button on that card, shown only while `salesOpen` is `true` | A payment link (for example a Stripe Payment Link). Or leave these empty and email each approved advertiser a link instead, so nobody can pay before you approve. |
 | `audience` | The "Who's watching" numbers | From the analytics below, once there is data |
 | `analytics` | Loads a privacy-friendly analytics script on every page | For example GoatCounter, Plausible or Cloudflare Web Analytics. Update the Analytics section of the Privacy page at the same time. |
