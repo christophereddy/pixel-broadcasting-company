@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-06T10:09:00Z",
+ "updatedAt": "2026-10-06T13:21:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -70,6 +70,23 @@
    ]
   },
   {
+   "h": "Disney, ABC take on Trump's FCC in court",
+   "b": "Disney and the FCC face off in a Washington federal court Tuesday over how far First Amendment protections reach.",
+   "date": "2026-10-06",
+   "more": [
+    "Trump has repeatedly called for ABC to fire late-night host Jimmy Kimmel and has attacked 'The View.'"
+   ]
+  },
+  {
+   "h": "FBI spy-hunting squads hit with deep cuts",
+   "b": "FBI counterintelligence squads have been sharply cut nationwide even as espionage threats grow, five people familiar told NPR.",
+   "date": "2026-10-06",
+   "more": [
+    "In many of the FBI's 56 field offices, only 50% to 60% of counterintelligence positions are filled.",
+    "In several offices the number of these squads has been cut in half."
+   ]
+  },
+  {
    "h": "Protesters smash Cornell door over rape case",
    "b": "Protesters broke a glass door and spray-painted Cornell's administration building early Monday amid anger over a 2024 gang rape case.",
    "date": "2026-10-05"
@@ -125,7 +142,10 @@
   {
    "h": "Search ends for six aboard crashed medical jet",
    "b": "The Coast Guard suspended its search for six people aboard a medical jet that crashed on a flight from Bermuda to Boston.",
-   "date": "2026-10-05"
+   "date": "2026-10-05",
+   "more": [
+    "The passengers were a Bermudian mother and son; the four crew members were Canadian."
+   ]
   }
  ],
  "politics": [
@@ -136,6 +156,15 @@
    "more": [
     "Prosecutors say the targets are accused of crimes such as money laundering, child sexual abuse, visa fraud and tax evasion.",
     "The petitions were filed from late August through early October."
+   ]
+  },
+  {
+   "h": "Musk, Luckey Pentagon roles raise ethics worries",
+   "b": "A new Pentagon study of AI-powered weapons led by Elon Musk and Palmer Luckey is raising conflict-of-interest concerns.",
+   "date": "2026-10-06",
+   "more": [
+    "Hegseth announced 'Project Meridian: The Future of Warfare' last week; Newt Gingrich also leads it.",
+    "The study is expected to take 120 days."
    ]
   },
   {
@@ -260,7 +289,8 @@
    "b": "Yemeni government forces say they retook the strategic Red Sea port city of Mocha from the Houthis.",
    "date": "2026-10-06",
    "more": [
-    "Turkiye and Pakistan agreed to deploy troops to Saudi Arabia under the Mecca defence pact after Houthi attacks."
+    "Turkiye and Pakistan agreed to deploy troops to Saudi Arabia under the Mecca defence pact after Houthi attacks.",
+    "Al Jazeera reports Houthi targets were bombed in Yemen and people were injured in attacks on Saudi airports."
    ],
    "place": "Sana'a, Yemen",
    "tz": "Asia/Aden"
@@ -295,6 +325,24 @@
   }
  ],
  "business": [
+  {
+   "h": "Paramount, Warner Bros. merge into Skydance",
+   "b": "The $111 billion merger of Paramount and Warner Bros. Discovery is set to close Tuesday, creating a company called Skydance.",
+   "date": "2026-10-06",
+   "more": [
+    "David Ellison becomes CEO, backed by his father Larry Ellison and investors from Saudi Arabia, Qatar and elsewhere.",
+    "The deal survived months of protests and legal and regulatory challenges in the US and Europe."
+   ]
+  },
+  {
+   "h": "EPA rollback could hide data center plans",
+   "b": "A proposed EPA rollback could end public notice requirements for many data centers before they are built.",
+   "date": "2026-10-06",
+   "more": [
+    "The rule targets 'minor sources' of pollution, which many data centers fall under.",
+    "Critics say communities could be left in the dark about new air quality risks."
+   ]
+  },
   {
    "h": "Dollar hits its strongest level in 18 months",
    "b": "The US dollar is at its strongest since April 2025, driven by high government debt and borrowing for data centers, Marketplace reports.",
@@ -333,6 +381,15 @@
   }
  ],
  "science": [
+  {
+   "h": "Neutrino hunter Francis Halzen wins Nobel",
+   "b": "Francis Halzen won the Nobel Prize in physics for the IceCube Neutrino Observatory and finding high-energy neutrinos from space.",
+   "date": "2026-10-06",
+   "more": [
+    "The Nobel committee said his work paved the way for a new kind of astronomy.",
+    "Halzen said the news was 'a great surprise.'"
+   ]
+  },
   {
    "h": "First miniature quasar aimed at Earth spotted",
    "b": "Astronomers report finding microblazars, small versions of blazars that point at Earth.",
@@ -392,6 +449,22 @@
    "date": "2026-10-05"
   },
   {
+   "h": "Relief for NYC tenants losing rent vouchers",
+   "b": "Nearly 6,300 NYC households losing federal rental aid may get to replace their vouchers and stay in their apartments.",
+   "date": "2026-10-06",
+   "more": [
+    "HUD issued new guidance after letting the earlier aid expire caused fear among tenants and landlords."
+   ]
+  },
+  {
+   "h": "Blind man cut from grand jury can sue NY",
+   "b": "A judge ruled a blind man dismissed from a Brooklyn grand jury can sue New York for discrimination.",
+   "date": "2026-10-06",
+   "more": [
+    "Albert Elia, 52, says the judge barred him from voting on cases with visual evidence and denied accommodations."
+   ]
+  },
+  {
    "h": "Gatorade recall reaches New York and New Jersey",
    "b": "More than 122,000 cases of Gatorade in 37 states are recalled because some bottles may contain unlisted food dyes.",
    "date": "2026-10-05"
@@ -423,31 +496,23 @@
    "h": "Man who shot border officer gets 15 years",
    "b": "A man who shot an off-duty Customs and Border Protection officer in a botched robbery in Fort Washington Park was sentenced to 15 years.",
    "date": "2026-10-05"
-  },
-  {
-   "h": "Mamdani to clear 10,000 families off childcare waitlist",
-   "b": "The city will clear 10,000 families from the subsidized childcare waitlist after the program ran out of money.",
-   "date": "2026-10-05",
-   "more": [
-    "More than 16,000 families are waiting for help."
-   ]
   }
  ],
  "weather": {
   "now": {
-   "temp": 52,
+   "temp": 50,
    "cond": "Fair",
-   "obs": "6 Oct 02:51 am EDT"
+   "obs": "6 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tuesday",
+    "name": "Today",
     "kind": "high",
     "temp": 65,
     "text": "Sunny, with a high near 65. Northwest wind 9 to 13 mph. "
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 47,
     "text": "Mostly clear, with a low around 47. Northwest wind around 6 mph becoming calm  after midnight. "
@@ -468,7 +533,7 @@
     "name": "Thursday",
     "kind": "high",
     "temp": 74,
-    "text": "Sunny, with a high near 74."
+    "text": "Sunny, with a high near 74. West wind 9 to 11 mph. "
    },
    {
     "name": "Thursday Night",

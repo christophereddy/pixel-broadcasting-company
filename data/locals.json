@@ -19,19 +19,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "A Few Clouds",
-    "obs": "6 Oct 02:52 am EDT"
+    "temp": 64,
+    "cond": " Fog/Mist",
+    "obs": "6 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
      "text": "Sunny, with a high near 77. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Mostly clear, with a low around 57. East wind around 5 mph. "
@@ -52,7 +52,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 83,
-     "text": "Sunny, with a high near 83."
+     "text": "Sunny, with a high near 83. Calm wind becoming north around 5 mph. "
     },
     {
      "name": "Thursday Night",
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -85,6 +85,24 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "All six lost in Nantucket air ambulance named",
+    "b": "Officials identified the six people aboard the air ambulance that crashed off Nantucket on a flight from Bermuda to Boston.",
+    "date": "2026-10-06",
+    "more": [
+     "Passengers were Marilyn Lavonne Bean, 66, and her son Sergio Wayne Lottimore, 41, of Bermuda; the four crew were Canadian.",
+     "The Coast Guard suspended its search Sunday after 66 hours."
+    ]
+   },
+   {
+    "h": "Jury selection begins in Birchmore murder trial",
+    "b": "Jury selection starts in the trial of former Stoughton detective Matthew Farwell, accused of killing Sandra Birchmore in 2021.",
+    "date": "2026-10-06",
+    "more": [
+     "Prosecutors say he abused her from age 15 in a police youth program, then killed her to keep her from reporting it.",
+     "Farwell has pleaded not guilty and maintains she took her own life."
+    ]
+   },
    {
     "h": "Healey declares a home 'energy emergency'",
     "b": "Gov. Healey raised heating aid and ordered cuts to some electric bill charges as heating oil prices rose 73% in a year.",
@@ -101,19 +119,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Fair",
-    "obs": "6 Oct 02:54 am EDT"
+    "temp": 48,
+    "cond": "A Few Clouds",
+    "obs": "6 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 58,
      "text": "Sunny, with a high near 58. West wind around 11 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Clear, with a low around 43. West wind around 5 mph becoming calm  in the evening. "
@@ -156,7 +174,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -185,25 +203,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Fair",
-    "obs": "6 Oct 00:53 am CDT"
+    "temp": 52,
+    "cond": "A Few Clouds",
+    "obs": "6 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54. South southeast wind around 10 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Sunny, with a high near 72. South southwest wind 10 to 15 mph, with gusts as high as 30 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Partly cloudy, with a low around 59. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
@@ -224,7 +236,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66."
+     "text": "Mostly sunny, with a high near 66. Northwest wind 5 to 10 mph. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
     }
    ]
   },
@@ -240,7 +258,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -274,26 +292,16 @@
    }
   ],
   "weather": {
-   "now": {
-    "temp": 64,
-    "cond": "A Few Clouds",
-    "obs": "5 Oct 22:58 pm MDT"
-   },
+   "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 61,
-     "text": "Mostly clear, with a low around 61. Southwest wind 3 to 5 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 87,
      "text": "Mostly sunny, with a high near 87. Light and variable wind becoming east northeast 5 to 7 mph in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Mostly cloudy, with a low around 59. Northeast wind around 6 mph becoming light and variable  after midnight. "
@@ -308,13 +316,19 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Partly cloudy, with a low around 56. Southwest wind 3 to 7 mph. "
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 56. Southwest wind 3 to 7 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 83,
-     "text": "Sunny, with a high near 83."
+     "text": "Sunny, with a high near 83. Calm wind becoming east around 6 mph in the afternoon. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 55,
+     "text": "Mostly clear, with a low around 55."
     }
    ]
   },
@@ -330,7 +344,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -385,12 +399,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 73,
-     "text": "Mostly clear, with a low around 73. North northeast wind around 5 mph becoming calm. "
-    },
-    {
      "name": "Tuesday",
      "kind": "high",
      "temp": 97,
@@ -419,6 +427,12 @@
      "kind": "high",
      "temp": 95,
      "text": "Sunny, with a high near 95."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 69,
+     "text": "Mostly clear, with a low around 69."
     }
    ]
   },
@@ -434,7 +448,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -449,6 +463,22 @@
     "h": "Hochul declares measles 'disaster emergency'",
     "b": "Gov. Hochul declared a disaster emergency as measles spreads across rural upstate New York.",
     "date": "2026-10-05"
+   },
+   {
+    "h": "Relief for NYC tenants losing rent vouchers",
+    "b": "Nearly 6,300 NYC households losing federal rental aid may get to replace their vouchers and stay in their apartments.",
+    "date": "2026-10-06",
+    "more": [
+     "HUD issued new guidance after letting the earlier aid expire caused fear among tenants and landlords."
+    ]
+   },
+   {
+    "h": "Blind man cut from grand jury can sue NY",
+    "b": "A judge ruled a blind man dismissed from a Brooklyn grand jury can sue New York for discrimination.",
+    "date": "2026-10-06",
+    "more": [
+     "Albert Elia, 52, says the judge barred him from voting on cases with visual evidence and denied accommodations."
+    ]
    },
    {
     "h": "Gatorade recall reaches New York and New Jersey",
@@ -482,31 +512,23 @@
     "h": "Man who shot border officer gets 15 years",
     "b": "A man who shot an off-duty Customs and Border Protection officer in a botched robbery in Fort Washington Park was sentenced to 15 years.",
     "date": "2026-10-05"
-   },
-   {
-    "h": "Mamdani to clear 10,000 families off childcare waitlist",
-    "b": "The city will clear 10,000 families from the subsidized childcare waitlist after the program ran out of money.",
-    "date": "2026-10-05",
-    "more": [
-     "More than 16,000 families are waiting for help."
-    ]
    }
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 50,
     "cond": "Fair",
-    "obs": "6 Oct 02:51 am EDT"
+    "obs": "6 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
      "text": "Sunny, with a high near 65. Northwest wind 9 to 13 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 47,
      "text": "Mostly clear, with a low around 47. Northwest wind around 6 mph becoming calm  after midnight. "
@@ -527,7 +549,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74."
+     "text": "Sunny, with a high near 74. West wind 9 to 11 mph. "
     },
     {
      "name": "Thursday Night",
@@ -549,7 +571,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -573,13 +595,26 @@
   },
   "local": [
    {
-    "h": "Teen protester loses hand to police grenade",
-    "b": "A 15-year-old in Lens lost his hand Monday when a police sting-ball grenade exploded during a school protest.",
-    "date": "2026-10-05"
+    "h": "Students march across Paris in school protests",
+    "b": "High school students march in Paris Tuesday from Place de la Republique to Place de la Nation in a third national day of protests.",
+    "date": "2026-10-06",
+    "more": [
+     "Students protest teacher shortages, scarce resources and crumbling school buildings.",
+     "Roads and some Metro stations along Boulevard Voltaire are closed."
+    ]
    },
    {
-    "h": "Unions call new day of school protests Tuesday",
-    "b": "French unions called strikes and demonstrations for October 6 in support of high school students protesting poor conditions.",
+    "h": "French unions call nationwide strike Nov. 5",
+    "b": "French unions called a day of cross-sector strikes and protests on Thursday, November 5th.",
+    "date": "2026-10-06",
+    "more": [
+     "The CFDT, CGT, FO, Unsa and FSU unions back the call 'for wages, public services, employment and industry.'",
+     "The government faces growing opposition to its draft 2027 budget."
+    ]
+   },
+   {
+    "h": "Teen protester loses hand to police grenade",
+    "b": "A 15-year-old in Lens lost his hand Monday when a police sting-ball grenade exploded during a school protest.",
     "date": "2026-10-05"
    },
    {
@@ -609,7 +644,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "goodnews": []
  },
  {
@@ -647,12 +682,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 57,
-     "text": "Areas of fog after 5am.  Otherwise, increasing clouds, with a steady temperature around 57. Light northeast wind. "
-    },
-    {
      "name": "Tuesday",
      "kind": "high",
      "temp": 65,
@@ -681,6 +710,12 @@
      "kind": "high",
      "temp": 70,
      "text": "Sunny, with a high near 70."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "Partly cloudy, with a low around 53."
     }
    ]
   },
@@ -696,7 +731,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T10:09:00Z",
+  "updatedAt": "2026-10-06T13:21:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
