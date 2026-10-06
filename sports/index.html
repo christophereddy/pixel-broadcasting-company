@@ -53,6 +53,8 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .banner .bt{font-family:var(--headline);font-size:5.75cqw;color:var(--gold);text-shadow:.4cqw .4cqw 0 var(--navy);letter-spacing:.3cqw;animation:blink 1.4s steps(2) infinite}
 .banner .bs{font-family:var(--display);font-size:1.88cqw;color:var(--ink);margin-top:1cqw}
 .adcut{right:1.6cqw;bottom:4.8cqw;width:56cqw;padding:0;pointer-events:none}
+.adlink{position:absolute;inset:0;pointer-events:auto}
+.adlink[hidden]{display:none}
 .adhead{font-family:var(--headline);font-size:1.7cqw;color:var(--gold);background:#0c0e1c;padding:.8cqw .9cqw;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .adcut canvas{display:block;width:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .adcap{font-family:var(--display);font-size:1.25cqw;color:var(--ink);background:#0c0e1c;padding:.5cqw .7cqw;letter-spacing:.06em}
@@ -222,7 +224,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 
       <div class="win notice" id="notice" hidden></div>
       <div class="banner" id="banner" hidden><div class="bt">TIME OUT</div><div class="bs" id="banner-sub"></div></div>
-      <div class="win adcut" id="adcut" hidden><div class="adhead" id="adcut-head"></div><canvas id="adcut-cv" width="240" height="120"></canvas><div class="adcap" id="adcut-cap"></div></div>
+      <div class="win adcut" id="adcut" hidden><div class="adhead" id="adcut-head"></div><canvas id="adcut-cv" width="240" height="120"></canvas><a class="adlink" id="adcut-link" href="#" target="_blank" rel="noopener" hidden aria-label="Advertise on Pixel Broadcasting"></a><div class="adcap" id="adcut-cap"></div></div>
 
       <div class="start" id="start">
         <div class="inner">
@@ -638,7 +640,8 @@ const syOf = y => isBB() ? Math.round(bcy(y) - (S.camY - H / 2)) : isMLB() ? Mat
 // Invented brands, in the page's own palette, on the surfaces a real broadcast sells: the stands wall in football,
 // the outfield wall in baseball, the courtside boards and scorer's table in basketball. Every board carries a
 // SPONSOR tag so viewers can tell a paid spot from the ballpark's own art. No real company appears anywhere.
-const ADS = [
+// These twelve are the default fill: sold ads listed in ads/sold.json take their place (see ads/README.md).
+const DEFAULT_ADS = [
   {name: 'PIXL COLA', line: 'CRISP IN EVERY BIT', bg: '#a8321f', fg: '#f7d038'},
   {name: 'BYTE BURGER', line: 'STACKED EIGHT BITS HIGH', bg: '#f2b632', fg: '#2a1a0c'},
   {name: 'NOVA MOTORS', line: 'DRIVE THE NEXT LEVEL', bg: '#1f5fa8', fg: '#e7e1cc'},
@@ -652,6 +655,21 @@ const ADS = [
   {name: 'QUARRY HARDWARE', line: 'BUILT ONE BLOCK AT A TIME', bg: '#3a3f4f', fg: '#f7d038'},
   {name: 'RETRO RENTALS', line: 'PRESS START ON YOUR TRIP', bg: '#0e2240', fg: '#8fd3ff'}
 ];
+let ADS = DEFAULT_ADS;
+// Sold ads come from a fixed file Chris edits, never from the news refresh or Claude. Only the characters the sign
+// fonts can draw are accepted, and an entry that doesn't fit the rules is left out rather than shown wrong.
+async function loadSoldAds(){
+  if (location.protocol === 'file:') return; // opened from disk: browsers block the read, keep the default fill
+  try {
+    const r = await fetch('../ads/sold.json', {cache: 'no-cache'}); if (!r.ok) return;
+    const j = await r.json(), hex = /^#[0-9a-f]{6}$/i;
+    const list = (Array.isArray(j.ads) ? j.ads : []).filter(a => a && /^[A-Z0-9 &.-]{1,16}$/.test(a.name || '')
+      && (a.line == null || /^[A-Z0-9 ]{0,26}$/.test(a.line)) && hex.test(a.bg || '') && hex.test(a.fg || ''))
+      .slice(0, 24).map(a => ({name: a.name, line: a.line || '', bg: a.bg, fg: a.fg}));
+    if (list.length) { ADS = list; if (S.field && S.home) buildField(); }
+  } catch (e) { /* no sold ads: the default fill stays */ }
+}
+loadSoldAds();
 // the boards change together every so often, like a real rotating board
 const adAt = i => ADS[(i + (S.adPhase || 0)) % ADS.length];
 // one board: dark frame, the brand in pixel type, and the SPONSOR tag under it where there is room
@@ -710,6 +728,103 @@ function adFitting(i, w){ for (let k = 0; k < ADS.length; k++) { const a = adAt(
    A small window in the corner of the broadcast, so the field, booth, scoreboard and TIME OUT stay on screen.
    Baseball: the center field video board. Basketball: the center-hung screen. Football: the big screen over the
    end zone, or the blimp overhead (they take turns). Same invented brands as the boards, always tagged SPONSOR. */
+/* ---- the PBC house ad: always in the break rotation, never replaced by a sold ad ----
+   It sells the ad space itself: a QR code to the Advertise page, which a viewer can also click. */
+const ADVERTISE_URL = 'https://christophereddy.github.io/pixel-broadcasting-company/advertise/';
+const HOUSE_AD = {house: true, name: 'ADVERTISE ON PBC', line: 'SCAN TO PUT YOUR BRAND HERE', bg: '#0c0e1c', fg: '#f2b632', url: ADVERTISE_URL};
+// every third break goes to the house ad; the rest rotate through the sold (or default) ads
+const breakAd = n => n % 3 === 0 ? HOUSE_AD : adAt(5 + n * 7);
+// A small QR code encoder (byte mode, error correction level M, versions 1-6), so the code is drawn in the page's own
+// pixels with no outside library. Follows the QR standard (ISO/IEC 18004) step by step.
+function qrMatrix(text){
+  const bytes = [...new TextEncoder().encode(text)];
+  const T = {1: [10, [16]], 2: [16, [28]], 3: [26, [44]], 4: [18, [32, 32]], 5: [24, [43, 43]], 6: [16, [27, 27, 27, 27]]};
+  let v = 1; while (v <= 6 && 4 + 8 + bytes.length * 8 > T[v][1].reduce((a, b) => a + b) * 8) v++;
+  if (v > 6) return null;
+  const [ecLen, blocks] = T[v], cap = blocks.reduce((a, b) => a + b) * 8, size = 17 + 4 * v;
+  // data bits: mode, length, bytes, terminator, then pad bytes
+  const bits = []; const put = (val, n) => { for (let i = n - 1; i >= 0; i--) bits.push(val >>> i & 1); };
+  put(4, 4); put(bytes.length, 8); bytes.forEach(b => put(b, 8)); put(0, Math.min(4, cap - bits.length));
+  while (bits.length % 8) bits.push(0);
+  for (let p = 0xEC; bits.length < cap; p ^= 0xEC ^ 0x11) put(p, 8);
+  const data = []; for (let i = 0; i < bits.length; i += 8) data.push(bits.slice(i, i + 8).reduce((a, b) => a << 1 | b, 0));
+  // Reed-Solomon error correction over GF(256)
+  const mul = (x, y) => { let z = 0; for (let i = 7; i >= 0; i--) { z = z << 1 ^ (z >>> 7) * 0x11D; z ^= (y >>> i & 1) * x; } return z; };
+  const div = [...Array(ecLen - 1).fill(0), 1]; let root = 1;
+  for (let i = 0; i < ecLen; i++) { for (let j = 0; j < ecLen; j++) { div[j] = mul(div[j], root); if (j + 1 < ecLen) div[j] ^= div[j + 1]; } root = mul(root, 2); }
+  const ecc = d => { const r = div.map(() => 0); d.forEach(b => { const f = b ^ r.shift(); r.push(0); div.forEach((c, i) => r[i] ^= mul(c, f)); }); return r; };
+  const dBlocks = []; let k = 0; blocks.forEach(n => { dBlocks.push(data.slice(k, k + n)); k += n; });
+  const eBlocks = dBlocks.map(ecc), words = [];
+  for (let i = 0; i < Math.max(...blocks); i++) dBlocks.forEach(b => { if (i < b.length) words.push(b[i]); });
+  for (let i = 0; i < ecLen; i++) eBlocks.forEach(b => words.push(b[i]));
+  // the fixed patterns
+  const M = [...Array(size)].map(() => Array(size).fill(false)), F = [...Array(size)].map(() => Array(size).fill(false));
+  const set = (x, y, d) => { if (x >= 0 && y >= 0 && x < size && y < size) { M[y][x] = d; F[y][x] = true; } };
+  const finder = (cx, cy) => { for (let dy = -4; dy <= 4; dy++) for (let dx = -4; dx <= 4; dx++) { const d = Math.max(Math.abs(dx), Math.abs(dy)); set(cx + dx, cy + dy, d !== 2 && d !== 4); } };
+  for (let i = 0; i < size; i++) { set(6, i, i % 2 === 0); set(i, 6, i % 2 === 0); }
+  finder(3, 3); finder(size - 4, 3); finder(3, size - 4);
+  if (v > 1) { const c = size - 7; for (let dy = -2; dy <= 2; dy++) for (let dx = -2; dx <= 2; dx++) set(c + dx, c + dy, Math.max(Math.abs(dx), Math.abs(dy)) !== 1); }
+  const format = mask => {
+    const d = mask; let r = d; for (let i = 0; i < 10; i++) r = r << 1 ^ (r >>> 9) * 0x537;   // level M is 00
+    const b = (d << 10 | r) ^ 0x5412, bit = i => (b >>> i & 1) === 1;
+    for (let i = 0; i <= 5; i++) set(8, i, bit(i));
+    set(8, 7, bit(6)); set(8, 8, bit(7)); set(7, 8, bit(8));
+    for (let i = 9; i < 15; i++) set(14 - i, 8, bit(i));
+    for (let i = 0; i < 8; i++) set(size - 1 - i, 8, bit(i));
+    for (let i = 8; i < 15; i++) set(8, size - 15 + i, bit(i));
+    set(8, size - 8, true);
+  };
+  format(0);
+  // the codewords, in the standard zigzag
+  let i = 0;
+  for (let right = size - 1; right >= 1; right -= 2) {
+    if (right === 6) right = 5;
+    for (let vert = 0; vert < size; vert++) for (let j = 0; j < 2; j++) {
+      const x = right - j, y = (right + 1 & 2) === 0 ? size - 1 - vert : vert;
+      if (!F[y][x] && i < words.length * 8) { M[y][x] = (words[i >>> 3] >>> 7 - (i & 7) & 1) === 1; i++; }
+    }
+  }
+  // try all eight masks and keep the one a scanner reads most easily
+  const masks = [(x, y) => (x + y) % 2 === 0, (x, y) => y % 2 === 0, x => x % 3 === 0, (x, y) => (x + y) % 3 === 0,
+    (x, y) => (Math.floor(x / 3) + Math.floor(y / 2)) % 2 === 0, (x, y) => x * y % 2 + x * y % 3 === 0,
+    (x, y) => (x * y % 2 + x * y % 3) % 2 === 0, (x, y) => ((x + y) % 2 + x * y % 3) % 2 === 0];
+  const apply = m => { for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) if (!F[y][x] && masks[m](x, y)) M[y][x] = !M[y][x]; };
+  const penalty = () => {
+    let p = 0, dark = 0;
+    const lines = []; for (let a = 0; a < size; a++) { lines.push(M[a].map(Number).join('')); lines.push(M.map(r => +r[a]).join('')); }
+    lines.forEach(l => { (l.match(/0{5,}|1{5,}/g) || []).forEach(r => p += r.length - 2); p += 40 * ((l.match(/(?=10111010000|00001011101)/g) || []).length); });
+    for (let y = 0; y < size - 1; y++) for (let x = 0; x < size - 1; x++) { const c = M[y][x]; if (c === M[y][x + 1] && c === M[y + 1][x] && c === M[y + 1][x + 1]) p += 3; }
+    M.forEach(r => r.forEach(c => dark += c)); p += Math.floor(Math.abs(dark * 20 - size * size * 10) / (size * size)) * 10;
+    return p;
+  };
+  let best = 0, bestP = Infinity;
+  for (let m = 0; m < 8; m++) { apply(m); format(m); const p = penalty(); if (p < bestP) { bestP = p; best = m; } apply(m); }
+  apply(best); format(best);
+  return M;
+}
+let QR_HOUSE = null;
+// the house ad fills the window: the camera zooms all the way in on the screen
+function drawHouseAd(g, ad, t){
+  g.fillStyle = '#05060d'; g.fillRect(0, 0, CW, CH2);
+  g.fillStyle = ad.bg; g.fillRect(3, 3, CW - 6, CH2 - 6);
+  QR_HOUSE = QR_HOUSE || qrMatrix(ad.url);
+  const q = QR_HOUSE, n = q ? q.length : 0, m = 2, qs = (n + 8) * m, qx = 10, qy = (CH2 - qs) >> 1;
+  if (q) {
+    g.fillStyle = '#ffffff'; g.fillRect(qx, qy, qs, qs); g.fillStyle = '#05060d';
+    q.forEach((row, y) => row.forEach((d, x) => { if (d) g.fillRect(qx + (x + 4) * m, qy + (y + 4) * m, m, m); }));
+  }
+  const tx = qx + qs + 8, tw = CW - tx - 8, c = x => tx + ((tw - x) >> 1);
+  const blink = Math.floor(t / 600) % 2;
+  pixText(g, 'PIXEL BROADCASTING CO', c(pixWidth('PIXEL BROADCASTING CO', false)), 16, false, '#e7e1cc');
+  pixText(g, 'ADVERTISE', c(pixWidth('ADVERTISE', true) * 2) + 1, 31, true, 'rgba(0,0,0,.5)', 2);
+  pixText(g, 'ADVERTISE', c(pixWidth('ADVERTISE', true) * 2), 30, true, ad.fg, 2);
+  pixText(g, 'ON PBC', c(pixWidth('ON PBC', true) * 2), 48, true, ad.fg, 2);
+  pixText(g, 'YOUR BRAND ON THIS SCREEN', c(pixWidth('YOUR BRAND ON THIS SCREEN', false)), 70, false, '#e7e1cc');
+  pixText(g, 'AND THE BOARDS AROUND IT', c(pixWidth('AND THE BOARDS AROUND IT', false)), 78, false, '#e7e1cc');
+  if (blink) { const s = 'SCAN OR CLICK'; pixText(g, s, c(pixWidth(s, true)), 92, true, '#8fd3ff'); }
+  pixText(g, 'PBC HOUSE AD', c(pixWidth('PBC HOUSE AD', false)), CH2 - 12, false, ad.fg);
+  g.fillStyle = 'rgba(0,0,0,.10)'; for (let r = 4; r < CH2 - 3; r += 2) g.fillRect(qs + qx + 1, r, CW - qs - qx - 4, 1);
+}
 const CUT_NAME = {jumbo: 'CENTER FIELD SCOREBOARD', center: 'CENTER-HUNG SCREEN', endzone: 'END ZONE SCREEN', blimp: 'BLIMP CAM'};
 function cutKind(){ return isMLB() ? 'jumbo' : isBB() ? 'center' : (S.cutN || 0) % 2 ? 'blimp' : 'endzone'; }
 // the ad as a video board shows it: "TIMEOUT PRESENTED BY", the brand as big as it fits, its slogan, SPONSOR, LED rows
@@ -818,15 +933,17 @@ function drawCut(kind, ad, t){
 }
 function showAdCut(){
   if (!S.field || !S.home) return;
-  const kind = cutKind(), ad = adAt(5 + (S.cutN || 0) * 7);
+  const kind = cutKind(), ad = breakAd(S.cutN || 0);
   S.cut = {kind, ad, at: performance.now()};
   // the window takes over from the TIME OUT banner and carries what it said
   const sub = $('banner-sub').textContent;
   $('adcut-head').textContent = $('banner').querySelector('.bt').textContent + (sub ? ' · ' + sub : '');
   $('banner').hidden = true;
-  $('adcut-cap').textContent = 'LIVE · ' + CUT_NAME[kind];
+  $('adcut-cap').textContent = 'LIVE · ' + CUT_NAME[kind] + (ad.house ? ' · CLOSE-UP' : '');
+  const link = $('adcut-link'); link.hidden = !ad.house; if (ad.house) link.href = ad.url;
   $('adcut').hidden = false; $('stage').classList.add('cut');
-  const tick = () => { if (!S.cut || S.cut.ad !== ad) return; drawCut(kind, ad, performance.now() - S.cut.at); setTimeout(() => requestAnimationFrame(tick), 80); };
+  const draw = (t) => ad.house ? drawHouseAd($('adcut-cv').getContext('2d'), ad, t) : drawCut(kind, ad, t);
+  const tick = () => { if (!S.cut || S.cut.ad !== ad) return; draw(performance.now() - S.cut.at); setTimeout(() => requestAnimationFrame(tick), 80); };
   tick();
 }
 function hideAdCut(){
@@ -840,7 +957,7 @@ async function sponsorRead(tok){
   if (tok !== S.token) return;
   if (!S.cut) { clearTimeout(S.cutT); showAdCut(); }
   if (!S.cut) return;
-  const ad = S.cut.ad, text = `This break is brought to you by ${titleCase(ad.name)}. ${(ad.line || '').charAt(0)}${(ad.line || '').slice(1).toLowerCase()}.`.replace(/ \.$/, '');
+  const ad = S.cut.ad, text = ad.house ? 'Want your brand up there? Scan the code to advertise with us.' : `This break is brought to you by ${titleCase(ad.name)}. ${(ad.line || '').charAt(0)}${(ad.line || '').slice(1).toLowerCase()}.`.replace(/ \.$/, '');
   if (S.mode === 'live' && S.queue.length > 3) { $('caption').textContent = tag('A') + text; return; }
   await say('A', text, tok);
 }
