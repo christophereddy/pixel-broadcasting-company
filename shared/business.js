@@ -15,8 +15,6 @@ window.PBC_BUSINESS = {
   // Where the ad request form posts. A form service URL such as "https://formspree.io/f/xxxxxxxx".
   // Empty: the form can be filled in to try it, but SEND only explains that requests open soon.
   adFormEndpoint: "",
-  // Allow a logo file upload on the form (only if the form service plan accepts files).
-  adFormUploads: false,
 
   // Email addresses shown on the Contact page and around the site. Empty shows "coming soon".
   email: {
@@ -36,8 +34,7 @@ window.PBC_BUSINESS = {
     boards:   { price: "", payLink: "" },
     timeout:  { price: "", payLink: "" },
     segment:  { price: "", payLink: "" },
-    desk:     { price: "", payLink: "" },
-    founding: { price: "", payLink: "" }
+    desk:     { price: "", payLink: "" }
   },
 
   // Audience numbers for advertisers, e.g. [["Monthly viewers", "12,400"], ["Average watch time", "18 min"]].

@@ -81,3 +81,5 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 #formStatus.warn{color:var(--gold)}
 #formStatus.err{color:#ff8a8c}
 @media (max-width:640px){.co-form{grid-template-columns:minmax(0,1fr)}.co-card{padding:14px}}
+.co-group+.co-group{margin-top:8px}
+.co-group>p{margin:4px 0 2px;font-family:var(--f-label);font-size:11px;letter-spacing:.08em;color:var(--muted)}
