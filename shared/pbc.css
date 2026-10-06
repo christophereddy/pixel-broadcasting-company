@@ -63,3 +63,12 @@ body.theater-on .pbc-btns{position:fixed;top:10px;right:10px;z-index:101;width:a
 body.theater-on .pbc-btns .pbc-btn{flex:none;padding:0 14px;background:#0b0e24cc}
 body.theater-on.idle .pbc-btns{opacity:0}
 body.theater-on.idle{cursor:none}
+
+/* Company footer under every page (built by pbc.js): links to About, Advertise, Contact and the legal pages */
+.pbc-sitefoot{box-sizing:border-box;max-width:1400px;margin:0 auto;padding:14px 16px 28px;border-top:2px solid var(--line);color:var(--muted);font-size:17px;line-height:1.35}
+.pbc-sitefoot nav{display:flex;flex-wrap:wrap;gap:4px 18px;margin-bottom:8px}
+.pbc-sitefoot a{font-family:var(--f-label);font-size:12px;letter-spacing:.06em;color:var(--text);text-decoration:none;padding:4px 0}
+.pbc-sitefoot a:hover,.pbc-sitefoot a[aria-current="page"]{color:var(--gold)}
+.pbc-sitefoot a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.pbc-sitefoot p{margin:0}
+body.theater-on .pbc-sitefoot{display:none}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accessibility · Pixel Broadcasting Company</title>
+<meta name="description" content="How the Pixel Broadcasting Company works with keyboards, screen readers and sound settings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Silkscreen&family=VT323&display=swap">
+<link rel="stylesheet" href="../shared/pbc.css">
+<link rel="stylesheet" href="../shared/company.css">
+<!-- Plug-in settings (email, form service, payment links, analytics) all live in shared/business.js -->
+<script src="../shared/business.js"></script>
+<script src="../shared/pbc.js"></script>
+<script src="../shared/company.js"></script>
+</head>
+<body>
+
+<div class="pbc-page">
+  <div class="pbc-top">
+  <header class="pbc-mast">
+    <div class="pbc-brand">
+      <span class="pbc-mark" aria-hidden="true">PBC</span>
+      <div><h1>Pixel Broadcasting Company</h1><p>Accessibility</p></div>
+    </div>
+    <div class="pbc-side">
+      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR 24 HOURS</div>
+    </div>
+  </header>
+  <div class="pbc-ctl">
+    <div class="co-dept">THE COMPANY <span>· ACCESSIBILITY</span></div>
+    <div class="pbc-btns"><a class="pbc-btn" href="../">BACK TO THE BROADCAST</a></div>
+  </div>
+  </div>
+
+  <main class="pbc-main">
+
+    <section class="co-card co-hero">
+      <h2>ACCESSIBILITY</h2>
+      <p class="co-lead">The broadcast is pixel art, but the news is real text.</p>
+    </section>
+
+    <section class="co-card">
+      <h2>WHAT WORKS TODAY</h2>
+      <ul class="co-list">
+        <li>Headlines and story summaries are on-screen text that screen readers announce as they change.</li>
+        <li>Sound is off by default. SOUND switches between off, short blips, and your device's own speech voice reading the stories.</li>
+        <li>Every button, menu and rundown item works with a keyboard and shows a gold focus outline.</li>
+        <li>The blinking ON AIR light stops if your device is set to reduce motion.</li>
+        <li>FULL SCREEN can be left with the Escape key.</li>
+      </ul>
+    </section>
+
+    <section class="co-card">
+      <h2>KNOWN GAPS</h2>
+      <ul class="co-list">
+        <li>The pixel animation itself (the newsroom set, the players' movements) has no text description.</li>
+        <li>Some small labels inside the broadcast are low contrast at phone sizes.</li>
+      </ul>
+      <p>If something gets in your way, tell us at <span data-email="accessibility"></span>.</p>
+    </section>
+  </main>
+
+  <aside class="side co-side">
+    <div class="co-card"><h2>THE COMPANY</h2><ul class="co-dir">
+      <li><a href="../about/">About</a></li>
+      <li><a href="../advertise/">Marketing Division</a></li>
+      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../sources/">Sources & Credits</a></li>
+      <li><a href="../corrections/">Corrections</a></li>
+      <li><a href="../accessibility/" aria-current="page">Accessibility</a></li>
+      <li><a href="../ad-policy/">Ad Policy</a></li>
+      <li><a href="../privacy/">Privacy Policy</a></li>
+      <li><a href="../terms/">Terms of Use</a></li>
+    </ul></div>
+  </aside>
+</div>
+</body>
+</html>
