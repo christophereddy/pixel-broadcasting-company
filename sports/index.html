@@ -414,8 +414,24 @@ async function loadScoreboard(){
   const now = new Date(), later = new Date(now.getTime() + 10 * 864e5), earlier = new Date(now.getTime() - 8 * 864e5);
   // college: every FBS game (`board`), not only ESPN's Top 25 default
   const q = SPORTS[S.sport].board ? '&' + SPORTS[S.sport].board : '';
-  const urls = [API + '/scoreboard' + (q && '?' + q.slice(1)), API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later) + q, API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now) + q];
-  const sport = S.sport, res = await Promise.allSettled(urls.map(getJSON));
+  const sport = S.sport;
+  let res;
+  if (SPORTS[sport].family === 'football') {
+    // ESPN's football scoreboards turn down date ranges (HTTP 400) and go by week, so: this week, then the weeks either side.
+    // After the last regular season week the next one is week 1 of the postseason.
+    const cur = await getJSON(API + '/scoreboard' + (q && '?' + q.slice(1))).then(v => ({status: 'fulfilled', value: v}), () => ({status: 'rejected'}));
+    res = [cur];
+    const wk = cur.value?.week?.number, ty = cur.value?.season?.type, yr = cur.value?.season?.year;
+    if (wk && ty && yr) {
+      const wkURL = (t, w) => API + `/scoreboard?dates=${yr}&seasontype=${t}&week=${w}` + q;
+      const [next, prev] = await Promise.allSettled([getJSON(wkURL(ty, wk + 1)), wk > 1 ? getJSON(wkURL(ty, wk - 1)) : Promise.reject()]);
+      res.push(next, prev);
+      if (ty === 2 && next.status === 'fulfilled' && !next.value.events?.length) res.push(...await Promise.allSettled([getJSON(wkURL(3, 1))]));
+    }
+  } else {
+    const urls = [API + '/scoreboard' + (q && '?' + q.slice(1)), API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later) + q, API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now) + q];
+    res = await Promise.allSettled(urls.map(getJSON));
+  }
   if (sport !== S.sport) return false; // the viewer switched sports while this was loading
   let ok = false;
   for (const r of res) {
@@ -520,7 +536,7 @@ function renderList(){
   };
   const lg = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf)?.name || SPORTS[S.sport].name;
   fill($('list-live'), live, `No ${lg} games live right now.`);
-  fill($('list-next'), next.slice(0, 8), 'No games scheduled in the next 10 days.');
+  fill($('list-next'), next.slice(0, 8), SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next 10 days.');
   markLive();
 }
 
