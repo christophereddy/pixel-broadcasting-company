@@ -32,7 +32,7 @@ window.PBC_BUSINESS = {
   //            Empty hides the pay button. Only fill this in once paid ads are allowed to run.
   packages: {
     sports: { price: "", payLink: "" },   // arena boards + the big screen during breaks in play
-    news:   { price: "", payLink: "" }    // "This section presented by" + the full-screen ad in commercial breaks
+    news:   { price: "", payLink: "" }    // Dot reads the ad on the big screen in news commercial breaks
   },
 
   // Audience numbers for advertisers, e.g. [["Monthly viewers", "12,400"], ["Average watch time", "18 min"]].
