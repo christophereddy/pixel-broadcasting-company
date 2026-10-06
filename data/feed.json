@@ -1,11 +1,28 @@
 {
- "updatedAt": "2026-10-05T22:10:00Z",
+ "updatedAt": "2026-10-06T01:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Russian plague institute worker dies",
+   "b": "A worker at a Siberian anti-plague institute died of what Russia calls pneumonia of unknown cause, fueling plague concerns.",
+   "date": "2026-10-05",
+   "more": [
+    "A local official earlier said she died 'possibly from plague.'",
+    "Secretary of State Rubio said it's not cause for alarm but is 'cause for focus,' and Trump offered US help."
+   ]
+  },
+  {
+   "h": "Ship sinks in Romanian waters; Kyiv blames Russian drone",
+   "b": "Romania said two people died and 11 were rescued when a grain ship caught fire and sank in its Black Sea waters.",
+   "date": "2026-10-05",
+   "more": [
+    "Ukraine's President Zelenskyy blamed a Russian drone attack."
+   ]
+  },
   {
    "h": "Brazil's presidential race heads to a runoff",
    "b": "Flávio Bolsonaro took 47% and President Lula 45% in Sunday's first round, so the two meet in a runoff on October 25.",
@@ -24,31 +41,20 @@
    ]
   },
   {
-   "h": "US pulls B-1 bombers from British base",
-   "b": "The US moved all 12 B-1 bombers out of RAF Fairford after new warnings of an Iranian-backed plot.",
-   "date": "2026-10-04",
-   "more": [
-    "British police arrested five men near the base the week before."
-   ]
-  },
-  {
    "h": "Spain calls snap election amid housing protests",
    "b": "Tens of thousands marched in Madrid and other cities over housing, and Prime Minister Pedro Sánchez called elections for November 29.",
    "date": "2026-10-05",
    "more": [
     "Lawmakers had rejected his housing measures."
    ]
-  },
-  {
-   "h": "Hundreds of French high schools shut by protests",
-   "b": "About 500 French high schools are closed as students protest teacher shortages, crowded classrooms and run-down buildings.",
-   "date": "2026-10-05",
-   "more": [
-    "Authorities have arrested more than 5,000 people since the protests began, about 85% of them minors."
-   ]
   }
  ],
  "national": [
+  {
+   "h": "Protesters smash Cornell door over rape case",
+   "b": "Protesters broke a glass door and spray-painted Cornell's administration building early Monday amid anger over a 2024 gang rape case.",
+   "date": "2026-10-05"
+  },
   {
    "h": "Supreme Court hears Boulder climate damages case",
    "b": "On the first day of its new term, the Supreme Court heard Boulder County's case seeking damages from oil and gas companies for climate-linked disasters.",
@@ -105,6 +111,19 @@
  ],
  "politics": [
   {
+   "h": "Tillis calls Hegseth vote his 'biggest regret'",
+   "b": "In a new book, GOP Sen. Thom Tillis says his deciding vote to confirm Defense Secretary Pete Hegseth is the biggest regret of his career.",
+   "date": "2026-10-05",
+   "more": [
+    "He also writes that he 'should've stopped' Robert F. Kennedy Jr. from becoming health secretary."
+   ]
+  },
+  {
+   "h": "Trump blames refineries, not Iran war, for gas prices",
+   "b": "Trump blamed Democrats and Ukraine's strikes on Russian refineries for high US fuel prices, not the war with Iran.",
+   "date": "2026-10-05"
+  },
+  {
    "h": "Obama to rally with El-Sayed in Detroit",
    "b": "Former President Obama will campaign with Michigan Senate candidate Abdul El-Sayed at an October 24 rally in Detroit.",
    "date": "2026-10-05",
@@ -132,14 +151,39 @@
    "h": "KKK tries to rebrand as the 'Knights Party'",
    "b": "The hate group is trying to rebrand itself as the Knights Party to grow its base, Al Jazeera reports.",
    "date": "2026-10-05"
-  },
-  {
-   "h": "Despair fuels political anxiety among students",
-   "b": "College students' worry about the future is fueling restlessness with a political system they fear can't improve, PBS reports.",
-   "date": "2026-10-04"
   }
  ],
  "international": [
+  {
+   "h": "Ethiopia's Abiy vows Red Sea access at swearing-in",
+   "b": "Prime Minister Abiy Ahmed began a new five-year term insisting landlocked Ethiopia must have access to the Red Sea.",
+   "date": "2026-10-05",
+   "more": [
+    "His forces are pushing back Eritrea-backed opposition fighters in Tigray."
+   ],
+   "place": "Addis Ababa, Ethiopia",
+   "tz": "Africa/Addis_Ababa"
+  },
+  {
+   "h": "Mexico asks US for proof of border shooting",
+   "b": "President Claudia Sheinbaum asked for evidence of shots the US says came from Mexico, which led to a US troop deployment.",
+   "date": "2026-10-05",
+   "more": [
+    "She said Mexico's forces detected no shots fired from Mexican territory."
+   ],
+   "place": "Mexico City",
+   "tz": "America/Mexico_City"
+  },
+  {
+   "h": "Israeli troops kill one near Hebron",
+   "b": "Troops fired on a car near Bani Naim, killing one Palestinian and seriously injuring two, Palestinian officials said.",
+   "date": "2026-10-05",
+   "more": [
+    "Israel's military said the car had rammed one of its vehicles."
+   ],
+   "place": "Hebron, West Bank",
+   "tz": "Asia/Hebron"
+  },
   {
    "h": "Yemen's government opens offensive on Houthis",
    "b": "Saudi-backed government forces announced an operation to retake areas including the capital, Sana'a.",
@@ -168,16 +212,6 @@
    "tz": "Asia/Yangon"
   },
   {
-   "h": "Gaza airstrike kills at least five",
-   "b": "An Israeli airstrike on a Gaza City apartment building killed at least five Palestinians, including four women.",
-   "date": "2026-10-04",
-   "more": [
-    "About 1,400 Palestinians have been killed in Gaza since last October's ceasefire, Democracy Now! reports."
-   ],
-   "place": "Gaza City",
-   "tz": "Asia/Gaza"
-  },
-  {
    "h": "India's 'Cockroach' youth movement protests",
    "b": "Police detained at least 700 people in Delhi as the youth-led movement demanded the chief election commissioner resign.",
    "date": "2026-10-05",
@@ -189,13 +223,6 @@
    "tz": "Asia/Kolkata"
   },
   {
-   "h": "Imran Khan supporters march on Islamabad",
-   "b": "Supporters of jailed former Prime Minister Imran Khan began a mass march after talks with the government failed.",
-   "date": "2026-10-04",
-   "place": "Islamabad, Pakistan",
-   "tz": "Asia/Karachi"
-  },
-  {
    "h": "Singapore turns matchmaker as births fall",
    "b": "Singapore is launching matchmaking efforts to address its very low birth rate.",
    "date": "2026-10-05",
@@ -204,6 +231,29 @@
   }
  ],
  "business": [
+  {
+   "h": "Dollar hits its strongest level in 18 months",
+   "b": "The US dollar is at its strongest since April 2025, driven by high government debt and borrowing for data centers, Marketplace reports.",
+   "date": "2026-10-05"
+  },
+  {
+   "h": "Diesel costs drive electric box truck sales",
+   "b": "With diesel averaging $6.32 a gallon, FedEx ordered 2,000 all-electric trucks from Harbinger Motors.",
+   "date": "2026-10-05",
+   "more": [
+    "California has committed $1 billion to electric truck rebates through 2030."
+   ]
+  },
+  {
+   "h": "US trade deficit jumps 11% to $133 billion",
+   "b": "An early estimate shows the trade deficit rose 11% in August, partly on chip imports for the AI build-out.",
+   "date": "2026-10-05"
+  },
+  {
+   "h": "Investors uneasy ahead of Treasury auctions",
+   "b": "The Treasury sells 3-year notes Tuesday, 10-year notes Wednesday and 30-year bonds Thursday after weak demand at recent auctions.",
+   "date": "2026-10-05"
+  },
   {
    "h": "Americans warming to driverless cars, survey says",
    "b": "A Cox Automotive survey found about one in five people have ridden in a robotaxi, and 83% of riders said their view improved.",
@@ -216,11 +266,6 @@
    "h": "Makerspaces help launch small businesses",
    "b": "MakerSpace NYC, one of at least 2,000 US community workshops, rents tools to freelancers building their own businesses, Marketplace reports.",
    "date": "2026-10-05"
-  },
-  {
-   "h": "OPEC+ keeps oil output steady for November",
-   "b": "Seven major oil exporters, including Saudi Arabia and Russia, agreed to keep production steady in November as Brent crude stayed above $100 a barrel.",
-   "date": "2026-10-04"
   }
  ],
  "science": [
@@ -256,33 +301,25 @@
    "h": "Brewers take 2-0 lead over Padres",
    "b": "Milwaukee beat San Diego 4-3 on Sunday for a 2-0 lead in their NL Division Series.",
    "date": "2026-10-04"
-  },
-  {
-   "h": "White Sox and Rays take ALDS openers",
-   "b": "The White Sox blanked Cleveland 3-0 and Tampa Bay edged the Yankees 1-0 in Saturday's AL Division Series openers.",
-   "date": "2026-10-03"
   }
  ],
- "goodnews": [
-  {
-   "h": "Man catches child who fell from balcony in Egypt",
-   "b": "Video shows a man in Egypt rushing to catch a young boy who fell from a second-floor balcony.",
-   "date": "2026-10-04",
-   "more": [
-    "The child hit a washing line on the way down, giving the man crucial extra time to reach him."
-   ]
-  },
-  {
-   "h": "Dakar neighbours clean up school for new year",
-   "b": "Students, teachers and volunteers in Dakar, Senegal, cleaned Medina Gounass Elementary School on Saturday ahead of the new academic year.",
-   "date": "2026-10-04",
-   "more": [
-    "They swept classrooms, cleared drains and removed plastic and household waste.",
-    "Organizers said the effort also aimed to raise awareness about protecting the environment."
-   ]
-  }
- ],
+ "goodnews": [],
  "local": [
+  {
+   "h": "Hochul declares measles 'disaster emergency'",
+   "b": "Gov. Hochul declared a disaster emergency as measles spreads across rural upstate New York.",
+   "date": "2026-10-05"
+  },
+  {
+   "h": "Gatorade recall reaches New York and New Jersey",
+   "b": "More than 122,000 cases of Gatorade in 37 states are recalled because some bottles may contain unlisted food dyes.",
+   "date": "2026-10-05"
+  },
+  {
+   "h": "NYPD detective forced out over false statements",
+   "b": "A Brooklyn detective who admitted giving false information in an investigation was forced to retire after 18 years.",
+   "date": "2026-10-05"
+  },
   {
    "h": "Pressure on Mamdani to fix Hunts Point market",
    "b": "Advocates want the mayor to revive a $650 million plan to cut diesel pollution at the South Bronx produce market.",
@@ -313,68 +350,50 @@
    "more": [
     "More than 16,000 families are waiting for help."
    ]
-  },
-  {
-   "h": "Two killed in Queens and Brooklyn crashes",
-   "b": "A 62-year-old died in a hit-and-run Monday and a 23-year-old died in a crash involving an impaired driver Sunday.",
-   "date": "2026-10-05"
-  },
-  {
-   "h": "NY's stockpiled abortion pills have all expired",
-   "b": "New York bought 150,000 misoprostol pills in 2023 for $112,000, and the whole supply has expired.",
-   "date": "2026-10-05",
-   "more": [
-    "The Department of Health plans to destroy the reserve."
-   ]
-  },
-  {
-   "h": "Legionnaires' outbreaks spark NYC water debate",
-   "b": "Groups backed by cooling tower companies propose citywide drinking water filtration; some experts doubt it's needed.",
-   "date": "2026-10-05"
   }
  ],
  "weather": {
   "now": {
-   "temp": 67,
-   "cond": "Mostly Cloudy",
-   "obs": "5 Oct 12:51 pm EDT"
+   "temp": 64,
+   "cond": "Fair",
+   "obs": "5 Oct 18:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly clear, with a low around 50. Northwest wind 10 to 13 mph, with gusts as high as 25 mph. "
+    "temp": 49,
+    "text": "Clear, with a low around 49. Northwest wind 14 to 17 mph, with gusts as high as 28 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. Northwest wind 9 to 11 mph. "
+    "text": "Sunny, with a high near 65. Northwest wind 10 to 13 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Clear, with a low around 50. West wind 3 to 7 mph. "
+    "temp": 49,
+    "text": "Clear, with a low around 49. Northwest wind 3 to 6 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 68,
-    "text": "Sunny, with a high near 68. Light southwest wind becoming south 8 to 13 mph in the morning. "
+    "temp": 69,
+    "text": "Sunny, with a high near 69. South wind 5 to 13 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 58,
-    "text": "Mostly clear, with a low around 58."
+    "temp": 57,
+    "text": "Mostly clear, with a low around 57. Southwest wind around 11 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 73,
-    "text": "Sunny, with a high near 73."
+    "temp": 77,
+    "text": "Sunny, with a high near 77."
    }
   ]
  },
