@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sources & Credits · Pixel Broadcasting Company</title>
+<meta name="description" content="Where the Pixel Broadcasting Company's news, weather and sports data comes from.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Silkscreen&family=VT323&display=swap">
+<link rel="stylesheet" href="../shared/pbc.css">
+<link rel="stylesheet" href="../shared/company.css">
+<!-- Plug-in settings (email, form service, payment links, analytics) all live in shared/business.js -->
+<script src="../shared/business.js"></script>
+<script src="../shared/pbc.js"></script>
+<script src="../shared/company.js"></script>
+</head>
+<body>
+
+<div class="pbc-page">
+  <div class="pbc-top">
+  <header class="pbc-mast">
+    <div class="pbc-brand">
+      <span class="pbc-mark" aria-hidden="true">PBC</span>
+      <div><h1>Pixel Broadcasting Company</h1><p>Sources & credits</p></div>
+    </div>
+    <div class="pbc-side">
+      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR 24 HOURS</div>
+    </div>
+  </header>
+  <div class="pbc-ctl">
+    <div class="co-dept">THE COMPANY <span>· SOURCES</span></div>
+    <div class="pbc-btns"><a class="pbc-btn" href="../">BACK TO THE BROADCAST</a></div>
+  </div>
+  </div>
+
+  <main class="pbc-main">
+
+    <section class="co-card co-hero">
+      <h2>SOURCES &amp; CREDITS</h2>
+      <p class="co-lead">Everything on air comes from somewhere real. Here is where.</p>
+      <p>Each channel also credits the sources behind what is on screen right now, at the bottom of the broadcast.</p>
+    </section>
+
+    <section class="co-card">
+      <h2>NEWS</h2>
+      <ul class="co-list" id="national"><li class="co-muted">Loading the source list…</li></ul>
+      <h3>City desks</h3>
+      <ul class="co-list" id="locals"></ul>
+      <h3>Weather</h3>
+      <p>Forecasts for US cities come from the <a href="https://www.weather.gov/" rel="noopener">National Weather Service</a>. The Paris desk uses <a href="https://meteofrance.com/" rel="noopener">Météo-France</a>. PBC weather is not an official warning service; follow your local weather service during severe weather.</p>
+    </section>
+
+    <section class="co-card">
+      <h2>SPORTS</h2>
+      <p>Each sport uses exactly one data source.</p>
+      <ul class="co-list">
+        <li><b>NFL, college football, NBA and WNBA:</b> <a href="https://www.espn.com/" rel="noopener">ESPN</a> (scores, play-by-play, schedules, rosters, team logos and colors)</li>
+        <li><b>MLB:</b> the <a href="https://statsapi.mlb.com/" rel="noopener">MLB Stats API</a> (© MLB Advanced Media, L.P.)</li>
+        <li><b>Ballpark dimensions:</b> Wikipedia</li>
+      </ul>
+      <p class="co-muted">Team names, logos and marks belong to their owners. PBC is not affiliated with or endorsed by any league, team or data provider.</p>
+    </section>
+
+    <section class="co-card">
+      <h2>MADE WITH</h2>
+      <ul class="co-list">
+        <li>Fonts: Pixelify Sans, Silkscreen and VT323, via Google Fonts (SIL Open Font License)</li>
+        <li>News scripts written with Claude, by Anthropic</li>
+        <li>Hosted on GitHub Pages</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside class="side co-side">
+    <div class="co-card"><h2>THE COMPANY</h2><ul class="co-dir">
+      <li><a href="../about/">About</a></li>
+      <li><a href="../advertise/">Marketing Division</a></li>
+      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../sources/" aria-current="page">Sources & Credits</a></li>
+      <li><a href="../corrections/">Corrections</a></li>
+      <li><a href="../accessibility/">Accessibility</a></li>
+      <li><a href="../ad-policy/">Ad Policy</a></li>
+      <li><a href="../privacy/">Privacy Policy</a></li>
+      <li><a href="../terms/">Terms of Use</a></li>
+    </ul></div>
+  </aside>
+</div>
+<script>
+/* The news list comes straight from tools/sources.json, the same list the newsroom reads, so it never goes stale. */
+(async () => {
+  const add = (ul, name, url, extra) => {
+    const li = document.createElement("li");
+    if (/^https:\/\//.test(url)) { const a = document.createElement("a"); a.href = new URL(url).origin + "/"; a.rel = "noopener"; a.textContent = name; li.appendChild(a); }
+    else li.append(name);
+    if (extra) li.append(" · " + extra);
+    ul.appendChild(li);
+  };
+  const nat = document.getElementById("national"), loc = document.getElementById("locals");
+  try {
+    const r = await fetch("../tools/sources.json", { cache: "no-store" }); const S = await r.json();
+    nat.textContent = "";
+    (S.national || []).forEach(s => add(nat, s.name, s.url, (s.for || []).join(", ")));
+    Object.entries(S.local || {}).forEach(([slug, s]) => add(loc, s.name, s.url,
+      slug.split("-").filter(w => w.length > 2 || w === "la").map(w => w[0].toUpperCase() + w.slice(1)).join(" ")));
+  } catch (e) { nat.innerHTML = "<li>The source list didn't load. Each broadcast still credits its sources on screen.</li>"; }
+})();
+</script>
+</body>
+</html>

@@ -23,6 +23,8 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `tools/ADDING_A_SPORT.md` | The checklist every sport on Pixel Sports Live follows | When the shared sports structure changes |
 | `tools/check_sports.cjs` | Checks that every sport has every part, in the same place, from its one data source | Code changes |
 | `news/index.html` | Redirect for old `/news/` links | Leave as is |
+| `about/`, `advertise/`, `contact/`, `sources/`, `corrections/`, `accessibility/`, `ad-policy/`, `privacy/`, `terms/` | The company pages linked from the footer on every page. `advertise/` is the Marketing Division ad page with the request form. | Code changes |
+| `shared/business.js` | Plug-in settings for the business side: form service, payment links, emails, analytics. Empty means switched off. See `tools/BUSINESS_SETUP.md`. | Chris, when each service is set up |
 
 ## Rules
 
