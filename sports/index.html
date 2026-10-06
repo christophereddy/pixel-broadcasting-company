@@ -664,8 +664,10 @@ async function loadSoldAds(){
     const r = await fetch('../ads/sold.json', {cache: 'no-cache'}); if (!r.ok) return;
     const j = await r.json(), hex = /^#[0-9a-f]{6}$/i;
     const list = (Array.isArray(j.ads) ? j.ads : []).filter(a => a && /^[A-Z0-9 &.-]{1,16}$/.test(a.name || '')
-      && (a.line == null || /^[A-Z0-9 ]{0,26}$/.test(a.line)) && hex.test(a.bg || '') && hex.test(a.fg || ''))
-      .slice(0, 24).map(a => ({name: a.name, line: a.line || '', bg: a.bg, fg: a.fg}));
+      && (a.line == null || /^[A-Z0-9 ]{0,26}$/.test(a.line)) && hex.test(a.bg || '') && hex.test(a.fg || '')
+      // a website is optional; when given it must be a plain https address short enough for the QR code
+      && (a.website == null || /^https:\/\/[A-Za-z0-9.-]+\.[A-Za-z]{2,}(\/[A-Za-z0-9\-._~\/?#=&%+]*)?$/.test(a.website) && a.website.length <= 100))
+      .slice(0, 24).map(a => ({name: a.name, line: a.line || '', bg: a.bg, fg: a.fg, url: a.website || null}));
     if (list.length) { ADS = list; if (S.field && S.home) buildField(); }
   } catch (e) { /* no sold ads: the default fill stays */ }
 }
@@ -802,27 +804,39 @@ function qrMatrix(text){
   apply(best); format(best);
   return M;
 }
-let QR_HOUSE = null;
-// the house ad fills the window: the camera zooms all the way in on the screen
-function drawHouseAd(g, ad, t){
+const QR_CACHE = new Map();
+// An ad with a website (the house ad, or a sold ad that lists one) gets the close-up: the camera zooms all the way in
+// on the screen, a QR code to the site on the left and the ad on the right. Viewers can also click it.
+function drawCloseUp(g, ad, t){
   g.fillStyle = '#05060d'; g.fillRect(0, 0, CW, CH2);
   g.fillStyle = ad.bg; g.fillRect(3, 3, CW - 6, CH2 - 6);
-  QR_HOUSE = QR_HOUSE || qrMatrix(ad.url);
-  const q = QR_HOUSE, n = q ? q.length : 0, m = 2, qs = (n + 8) * m, qx = 10, qy = (CH2 - qs) >> 1;
+  if (!QR_CACHE.has(ad.url)) QR_CACHE.set(ad.url, qrMatrix(ad.url));
+  const q = QR_CACHE.get(ad.url), n = q ? q.length : 0, m = 2, qs = (n + 8) * m, qx = 10, qy = (CH2 - qs) >> 1;
   if (q) {
     g.fillStyle = '#ffffff'; g.fillRect(qx, qy, qs, qs); g.fillStyle = '#05060d';
     q.forEach((row, y) => row.forEach((d, x) => { if (d) g.fillRect(qx + (x + 4) * m, qy + (y + 4) * m, m, m); }));
   }
   const tx = qx + qs + 8, tw = CW - tx - 8, c = x => tx + ((tw - x) >> 1);
-  const blink = Math.floor(t / 600) % 2;
-  pixText(g, 'PIXEL BROADCASTING CO', c(pixWidth('PIXEL BROADCASTING CO', false)), 16, false, '#e7e1cc');
-  pixText(g, 'ADVERTISE', c(pixWidth('ADVERTISE', true) * 2) + 1, 31, true, 'rgba(0,0,0,.5)', 2);
-  pixText(g, 'ADVERTISE', c(pixWidth('ADVERTISE', true) * 2), 30, true, ad.fg, 2);
-  pixText(g, 'ON PBC', c(pixWidth('ON PBC', true) * 2), 48, true, ad.fg, 2);
-  pixText(g, 'YOUR BRAND ON THIS SCREEN', c(pixWidth('YOUR BRAND ON THIS SCREEN', false)), 70, false, '#e7e1cc');
-  pixText(g, 'AND THE BOARDS AROUND IT', c(pixWidth('AND THE BOARDS AROUND IT', false)), 78, false, '#e7e1cc');
-  if (blink) { const s = 'SCAN OR CLICK'; pixText(g, s, c(pixWidth(s, true)), 92, true, '#8fd3ff'); }
-  pixText(g, 'PBC HOUSE AD', c(pixWidth('PBC HOUSE AD', false)), CH2 - 12, false, ad.fg);
+  const small = (txt, y, col) => pixText(g, txt, c(pixWidth(txt, false)), y, false, col);
+  const big = (txt, y) => {                                                  // as large as fits the text column
+    let sc = 2; while (sc > 1 && pixWidth(txt, true) * sc > tw) sc--;
+    const isBig = pixWidth(txt, true) * sc <= tw, w = pixWidth(txt, isBig) * sc;
+    pixText(g, txt, c(w) + 1, y + 1, isBig, 'rgba(0,0,0,.5)', sc); pixText(g, txt, c(w), y, isBig, ad.fg, sc);
+    return (isBig ? 7 : 5) * sc;
+  };
+  if (ad.house) {
+    small('PIXEL BROADCASTING CO', 16, '#e7e1cc');
+    big('ADVERTISE', 30); big('ON PBC', 48);
+    small('YOUR BRAND ON THIS SCREEN', 70, '#e7e1cc'); small('AND THE BOARDS AROUND IT', 78, '#e7e1cc');
+  } else {
+    small(isMLB() ? 'THIS BREAK BROUGHT TO YOU BY' : 'THIS TIMEOUT BROUGHT TO YOU BY', 16, ad.fg);
+    const words = ad.name.split(' '), half = Math.ceil(words.length / 2);
+    const lines = pixWidth(ad.name, true) * 2 <= tw || words.length < 2 ? [ad.name] : [words.slice(0, half).join(' '), words.slice(half).join(' ')];
+    let y = lines.length > 1 ? 28 : 36; lines.forEach(l => { y += big(l, y) + 4; });
+    if (ad.line) small(ad.line, Math.max(y + 4, 70), ad.fg);
+  }
+  if (Math.floor(t / 600) % 2) { const s = 'SCAN OR CLICK'; pixText(g, s, c(pixWidth(s, true)), 92, true, ad.house ? '#8fd3ff' : ad.fg); }
+  small(ad.house ? 'PBC HOUSE AD' : 'SPONSOR', CH2 - 12, ad.fg);
   g.fillStyle = 'rgba(0,0,0,.10)'; for (let r = 4; r < CH2 - 3; r += 2) g.fillRect(qs + qx + 1, r, CW - qs - qx - 4, 1);
 }
 const CUT_NAME = {jumbo: 'CENTER FIELD SCOREBOARD', center: 'CENTER-HUNG SCREEN', endzone: 'END ZONE SCREEN', blimp: 'BLIMP CAM'};
@@ -939,10 +953,10 @@ function showAdCut(){
   const sub = $('banner-sub').textContent;
   $('adcut-head').textContent = $('banner').querySelector('.bt').textContent + (sub ? ' · ' + sub : '');
   $('banner').hidden = true;
-  $('adcut-cap').textContent = 'LIVE · ' + CUT_NAME[kind] + (ad.house ? ' · CLOSE-UP' : '');
-  const link = $('adcut-link'); link.hidden = !ad.house; if (ad.house) link.href = ad.url;
+  $('adcut-cap').textContent = 'LIVE · ' + CUT_NAME[kind] + (ad.url ? ' · CLOSE-UP' : '');
+  const link = $('adcut-link'); link.hidden = !ad.url; if (ad.url) { link.href = ad.url; link.rel = ad.house ? 'noopener' : 'noopener sponsored'; link.setAttribute('aria-label', ad.house ? 'Advertise on Pixel Broadcasting' : 'Visit ' + titleCase(ad.name)); }
   $('adcut').hidden = false; $('stage').classList.add('cut');
-  const draw = (t) => ad.house ? drawHouseAd($('adcut-cv').getContext('2d'), ad, t) : drawCut(kind, ad, t);
+  const draw = (t) => ad.url ? drawCloseUp($('adcut-cv').getContext('2d'), ad, t) : drawCut(kind, ad, t);
   const tick = () => { if (!S.cut || S.cut.ad !== ad) return; draw(performance.now() - S.cut.at); setTimeout(() => requestAnimationFrame(tick), 80); };
   tick();
 }
@@ -960,6 +974,8 @@ async function sponsorRead(tok){
   const ad = S.cut.ad, text = ad.house ? 'Want your brand up there? Scan the code to advertise with us.' : `This break is brought to you by ${titleCase(ad.name)}. ${(ad.line || '').charAt(0)}${(ad.line || '').slice(1).toLowerCase()}.`.replace(/ \.$/, '');
   if (S.mode === 'live' && S.queue.length > 3) { $('caption').textContent = tag('A') + text; return; }
   await say('A', text, tok);
+  // a sold ad with a website gets one more line, on its own so the caption box shows all of it
+  if (ad.url && !ad.house && tok === S.token) await say('A', 'Scan the code on screen to learn more.', tok);
 }
 // a replay holds the timeout long enough for the cut-in to be seen
 const cutHold = () => S.cut ? Math.max(2000, 8000 - (performance.now() - S.cut.at)) : 2000;
