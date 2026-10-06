@@ -660,7 +660,8 @@ const FONT5 = {A:'01110100011000111111100011000110001', B:'111101000110001111101
   P:'11110100011000111110100001000010000', Q:'01110100011000110001101011001001101', R:'11110100011000111110101001001010001',
   S:'01111100001000001110000010000111110', T:'11111001000010000100001000010000100', U:'10001100011000110001100011000101110',
   V:'10001100011000110001100010101000100', W:'10001100011000110101101011010101010', X:'10001100010101000100010101000110001',
-  Y:'10001100010101000100001000010000100', Z:'11111000010001000100010001000011111', ' ':'00000000000000000000000000000000000'};
+  Y:'10001100010101000100001000010000100', Z:'11111000010001000100010001000011111', ' ':'00000000000000000000000000000000000',
+  '0':'01110100011001110101110011000101110', '1':'00100011000010000100001000010001110', '2':'01110100010000100010001000100011111', '3':'11110000010000101110000010000111110', '4':'00010001100101010010111110001000010', '5':'11111100001111000001000011000101110', '6':'00110010001000011110100011000101110', '7':'11111000010001000100010000100001000', '8':'01110100011000101110100011000101110', '9':'01110100011000101111000010001001100', '&':'01100100101010001000101011001001101', '-':'00000000000000011111000000000000000', '.':'00000000000000000000000000110001100'};
 const FONT3 = {A:'010101111101101', B:'110101110101110', C:'011100100100011', D:'110101101101110', E:'111100110100111', F:'111100110100100',
   G:'011100101101011', H:'101101111101101', I:'111010010010111', J:'001001001101010', K:'101101110101101', L:'100100100100111',
   M:'101111111101101', N:'110101101101101', O:'010101101101010', P:'110101110100100', Q:'010101101110011', R:'110101110101101',
@@ -671,6 +672,11 @@ function pixText(g, txt, x, y, big, col){
   const F = big ? FONT5 : FONT3, cw = big ? 5 : 3, chh = big ? 7 : 5;
   g.fillStyle = col;
   [...txt].forEach((ch, k) => { const m = F[ch] || F[' ']; for (let i = 0; i < cw * chh; i++) if (m[i] === '1') g.fillRect(x + k * (cw + 1) + i % cw, y + (i / cw | 0), 1, 1); });
+}
+// a sign's label centered on cx, with a one-pixel drop shadow; the small font when the big one won't fit in w
+function pixLabel(g, txt, cx, y, w, col){
+  const big = pixWidth(txt, true) <= w, x = Math.round(cx - pixWidth(txt, big) / 2), yy = y + (big ? 0 : 1);
+  pixText(g, txt, x + 1, yy + 1, big, '#05060d'); pixText(g, txt, x, yy, big, col);
 }
 // one board: dark frame, the brand in pixel capitals, and a SPONSOR tag under it (16 pixels tall or more), or a
 // small AD tab at its left end on the low boards
@@ -1521,10 +1527,8 @@ function buildDiamond(){
     g.fillStyle = t.color; g.fillRect(x - 42, y - 21, 84, 11);
     const img = teamLogo(t);
     if (img) g.drawImage(img, x - 41, y - 21, 11, 11);
-    g.font = '8px "Press Start 2P"'; g.textAlign = 'center'; g.textBaseline = 'middle';
-    const tx = x + (img ? 6 : 0), label = `${t === S.home ? 'HOME' : 'AWAY'} ${t.abbr}`;
-    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, y - 14);
-    g.fillStyle = '#f4f4ee'; g.fillText(label, tx, y - 15);
+    const tx = x + (img ? 6 : 0), label = `${t === S.home ? 'HOME' : 'AWAY'} ${t.abbr.toUpperCase()}`;
+    pixLabel(g, label, tx, y - 19, img ? 70 : 80, '#f4f4ee');
   }
   S.field = c;
 }
@@ -2187,7 +2191,7 @@ const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his'}, wnba: 
 const lg = () => BBL[S.sport] || BBL.nba;
 // Like football, the camera only pans left and right with the ball. The court sits low, so its far sideline is just
 // under the booth and the scoreboard, and the benches line the bottom of the screen.
-const BC = {X0: 260, Y0: 126, KX: 7.4, KY: 2.6, HOOP: 5.25, RIM: 34, CW: 1216, CH: 270};
+const BC = {X0: 260, Y0: 126, KX: 7.4, KY: 2.5, HOOP: 5.25, RIM: 34, CW: 1216, CH: 270};
 const bcx = x => BC.X0 + x * BC.KX, bcy = y => BC.Y0 + y * BC.KY;
 const hoopX = team => team === S.home ? 94 - BC.HOOP : BC.HOOP;   // the basket a team shoots at
 const attackDir = team => team === S.home ? 1 : -1;
@@ -2280,16 +2284,16 @@ function buildCourt(){
     g.fillStyle = '#05060d'; g.fillRect(sx, sy, sw, 13); g.fillStyle = t.color; g.fillRect(sx + 1, sy + 1, sw - 2, 11);
     const lim = teamLogo(t);
     if (lim) { g.imageSmoothingEnabled = true; g.drawImage(lim, sx + 2, sy + 1, 11, 11); g.imageSmoothingEnabled = false; }
-    const label = `${t === home ? 'HOME' : 'AWAY'} ${t.abbr}`, tx = sx + sw / 2 + (lim ? 6 : 0);
-    g.fillStyle = '#05060d'; g.fillText(label, tx + 1, sy + 8); g.fillStyle = '#f4f4ee'; g.fillText(label, tx, sy + 7);
+    const label = `${t === home ? 'HOME' : 'AWAY'} ${t.abbr.toUpperCase()}`, tx = sx + sw / 2 + (lim ? 6 : 0);
+    pixLabel(g, label, tx, sy + 3, sw - (lim ? 16 : 4), '#f4f4ee');
   }
   // scorer's table at center court
   const tx0 = Math.round(bcx(43)), tx1 = Math.round(bcx(51));
   g.fillStyle = '#05060d'; g.fillRect(tx0, by - 10, tx1 - tx0, 11); g.fillStyle = '#2c3350'; g.fillRect(tx0 + 1, by - 9, tx1 - tx0 - 2, 9);
   g.fillStyle = '#f2b632'; g.fillRect(tx0 + 1, by - 9, tx1 - tx0 - 2, 1);
   // courtside sponsor boards along the near sideline, where a real arena puts them
-  const cby = Math.round(bcy(50)) + 2, cbw = Math.round((x1 - x0) / 5);
-  for (let i = 0; i < 5; i++) adBoard(g, x0 + i * cbw + 2, cby, cbw - 4, Math.min(13, BC.CH - cby - 1), adAt(i));
+  const cby = Math.round(bcy(50)) + 1, cbw = Math.round((x1 - x0) / 5);
+  for (let i = 0; i < 5; i++) adBoard(g, x0 + i * cbw + 2, cby, cbw - 4, Math.min(16, BC.CH - cby - 1), adAt(i));
   // the front of the scorer's table carries one too
   adBoard(g, tx0 + 1, by - 9, tx1 - tx0 - 2, 9, adFitting(5, tx1 - tx0 - 2));
   // the baskets: stanchion, backboard, rim and net, standing on the baseline
