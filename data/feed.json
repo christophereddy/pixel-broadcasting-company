@@ -1,11 +1,38 @@
 {
- "updatedAt": "2026-10-06T16:13:00Z",
+ "updatedAt": "2026-10-06T19:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "France suspends high school classes for week",
+   "b": "France's prime minister suspended high school classes nationwide for the rest of the week as protesters clashed with police.",
+   "date": "2026-10-06",
+   "more": [
+    "Authorities counted about 250,000 protesters Tuesday; organizers said closer to half a million.",
+    "Students are protesting crowded classrooms, teacher shortages and run-down buildings."
+   ]
+  },
+  {
+   "h": "Drones hit two ships off Bulgaria, one sinks",
+   "b": "Sea and aerial drones hit two commercial ships in the Black Sea off Bulgaria, sinking one and wounding several people.",
+   "date": "2026-10-06",
+   "more": [
+    "Prime Minister Rumen Radev called the attack 'absolutely unacceptable.'",
+    "Bulgaria is searching for missing crew about 70 nautical miles off its coast."
+   ]
+  },
+  {
+   "h": "Ebola deaths in Congo top 4,000",
+   "b": "The Ebola death toll in the Democratic Republic of Congo has passed 4,000 in what Democracy Now! calls the fastest-growing outbreak on record.",
+   "date": "2026-10-06",
+   "more": [
+    "Health officials believe it began in January but was not detected until May.",
+    "Democracy Now! reports that Trump's USAID cuts have fueled the outbreak."
+   ]
+  },
   {
    "h": "Secessionist party wins Quebec election",
    "b": "The Parti Quebecois won the most seats in Quebec's election and will form the province's next government.",
@@ -150,12 +177,38 @@
  ],
  "politics": [
   {
+   "h": "Trump draws criticism for 'take out LA' remark",
+   "b": "At a Nebraska rally, Trump said Iran could 'take out' Los Angeles and San Diego, calling it 'a very small price to pay.'",
+   "date": "2026-10-06",
+   "more": [
+    "The crowd laughed and cheered; Gov. Gavin Newsom was among the critics.",
+    "The White House said he meant he wants to stop Iran from having that capability."
+   ]
+  },
+  {
    "h": "DOJ files record 40 denaturalisation cases",
    "b": "The Justice Department filed 40 new cases seeking to strip citizenship from naturalized Americans, a number it calls a record.",
    "date": "2026-10-06",
    "more": [
     "Prosecutors say the targets are accused of crimes such as money laundering, child sexual abuse, visa fraud and tax evasion.",
     "The petitions were filed from late August through early October."
+   ]
+  },
+  {
+   "h": "Alito 'not pleased' with Trump's rhetoric",
+   "b": "Justice Samuel Alito said the Supreme Court can do little to slow the surge in emergency appeals under Trump.",
+   "date": "2026-10-06",
+   "more": [
+    "Emergency applications now rival the number of fully briefed cases the court hears each year."
+   ]
+  },
+  {
+   "h": "Abrego Garcia back in court over Liberia deportation",
+   "b": "Kilmar Abrego Garcia returns to federal court as the government tries to lift an order blocking his deportation to Liberia.",
+   "date": "2026-10-06",
+   "more": [
+    "His case began when he was mistakenly deported to El Salvador last year.",
+    "His lawyers want Judge Paula Xinis to make the injunction permanent."
    ]
   },
   {
@@ -211,6 +264,17 @@
   }
  ],
  "international": [
+  {
+   "h": "UK arrests 7th suspect in RAF Fairford case",
+   "b": "British police arrested a 22-year-old on suspicion of preparing terrorist acts near RAF Fairford, a base hosting US warplanes.",
+   "date": "2026-10-06",
+   "more": [
+    "It is the seventh arrest tied to the September 27 incident, which remains largely unexplained.",
+    "Police found petrol but no explosives in vans linked to five earlier suspects."
+   ],
+   "place": "Fairford, England",
+   "tz": "Europe/London"
+  },
   {
    "h": "Kosovo police clash with protesters at parliament",
    "b": "Police clashed with protesters outside Kosovo's parliament over a bid to curb the Hague war crimes court.",
@@ -290,7 +354,8 @@
    "date": "2026-10-06",
    "more": [
     "Turkiye and Pakistan agreed to deploy troops to Saudi Arabia under the Mecca defence pact after Houthi attacks.",
-    "Al Jazeera reports Houthi targets were bombed in Yemen and people were injured in attacks on Saudi airports."
+    "Al Jazeera reports Houthi targets were bombed in Yemen and people were injured in attacks on Saudi airports.",
+    "Saudi-led forces say they shot down a Houthi missile as fighting rages in Yemen."
    ],
    "place": "Sana'a, Yemen",
    "tz": "Asia/Aden"
@@ -454,6 +519,24 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Loophole helps Hochul, Blakeman raise millions",
+   "b": "Gov. Kathy Hochul and GOP challenger Bruce Blakeman are using a quirk in state law to raise millions of dollars.",
+   "date": "2026-10-06"
+  },
+  {
+   "h": "Police name suspects in off-duty cop stabbing",
+   "b": "Commissioner Jessica Tisch identified two men police believe stabbed an off-duty NYPD officer in a Bronx robbery last week.",
+   "date": "2026-10-06",
+   "more": [
+    "Police named D'Angelo Caraballo, 25, and Sneider Mejia, 24."
+   ]
+  },
+  {
+   "h": "NYC fears migrants will skip health care",
+   "b": "City health officials worry green card rule changes will lead some immigrants to avoid Medicaid and other benefits.",
+   "date": "2026-10-06"
+  },
+  {
    "h": "Hochul declares measles 'disaster emergency'",
    "b": "Gov. Hochul declared a disaster emergency as measles spreads across rural upstate New York.",
    "date": "2026-10-05"
@@ -491,38 +574,20 @@
    "h": "NYPD detective forced out over false statements",
    "b": "A Brooklyn detective who admitted giving false information in an investigation was forced to retire after 18 years.",
    "date": "2026-10-05"
-  },
-  {
-   "h": "Pressure on Mamdani to fix Hunts Point market",
-   "b": "Advocates want the mayor to revive a $650 million plan to cut diesel pollution at the South Bronx produce market.",
-   "date": "2026-10-05",
-   "more": [
-    "The market supplies up to 60% of the city's fruits and vegetables."
-   ]
-  },
-  {
-   "h": "Cyclist dies after hitting off-leash dog in Central Park",
-   "b": "A 71-year-old cyclist died after colliding with an unleashed dog on East Drive near 84th Street Monday morning, police said.",
-   "date": "2026-10-05"
-  },
-  {
-   "h": "Two Legionnaires' cases at Queens housing complex",
-   "b": "Two North Shore Towers residents were diagnosed with Legionnaires' disease, and the Health Department is investigating.",
-   "date": "2026-10-05"
   }
  ],
  "weather": {
   "now": {
-   "temp": 50,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "6 Oct 08:51 am EDT"
+   "obs": "6 Oct 12:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. Northwest wind 10 to 13 mph. "
+    "text": "Sunny, with a high near 65. Northwest wind around 11 mph. "
    },
    {
     "name": "Tonight",
