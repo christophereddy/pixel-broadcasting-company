@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-06T19:10:00Z",
+ "updatedAt": "2026-10-06T22:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -29,8 +29,17 @@
    "b": "The Ebola death toll in the Democratic Republic of Congo has passed 4,000 in what Democracy Now! calls the fastest-growing outbreak on record.",
    "date": "2026-10-06",
    "more": [
+    "Kenya confirmed its first case: a man who returned from Congo by way of Uganda died in Nairobi.",
     "Health officials believe it began in January but was not detected until May.",
     "Democracy Now! reports that Trump's USAID cuts have fueled the outbreak."
+   ]
+  },
+  {
+   "h": "Puigdemont cleared to return to Spain",
+   "b": "A Spanish judge lifted the arrest warrant for self-exiled Catalan separatist leader Carles Puigdemont, clearing his way home.",
+   "date": "2026-10-06",
+   "more": [
+    "Spain's Constitutional Court ruled the separatist amnesty law covers his embezzlement charges."
    ]
   },
   {
@@ -48,7 +57,8 @@
    "date": "2026-10-05",
    "more": [
     "A local official earlier said she died 'possibly from plague.'",
-    "Secretary of State Rubio said it's not cause for alarm but is 'cause for focus,' and Trump offered US help."
+    "Secretary of State Rubio said it's not cause for alarm but is 'cause for focus,' and Trump offered US help.",
+    "Russia now denies imposing anti-plague measures after the death of the 28-year-old lab technician."
    ]
   },
   {
@@ -87,6 +97,15 @@
   }
  ],
  "national": [
+  {
+   "h": "Christa Pike awake after failed execution",
+   "b": "Christa Pike, who survived Tennessee's attempt to execute her, is conscious and speaking in a hospital, her attorneys said.",
+   "date": "2026-10-06",
+   "more": [
+    "Her lawyers say she suffered severe damage to her arms and is still shackled to her bed.",
+    "They called her recovery 'medically unprecedented' and expect a long one."
+   ]
+  },
   {
    "h": "Televangelist Jim Bakker dies at 86",
    "b": "Jim Bakker, who built the 'PTL Club' televangelism empire with Tammy Faye before losing it to scandal, has died at 86.",
@@ -159,11 +178,11 @@
    ]
   },
   {
-   "h": "Cornell president backs independent probe",
-   "b": "Cornell President Michael Kotlikoff welcomed an independent law firm investigation into a 2024 gang rape case.",
-   "date": "2026-10-05",
+   "h": "Cornell taps Sally Yates for rape case review",
+   "b": "Cornell named former acting US attorney general Sally Yates to lead an independent review of how it handled a former student's rape allegations.",
+   "date": "2026-10-06",
    "more": [
-    "The New York attorney general is also running a criminal investigation."
+    "The school faces outrage on campus and nationally over the case."
    ]
   },
   {
@@ -274,6 +293,16 @@
    ],
    "place": "Fairford, England",
    "tz": "Europe/London"
+  },
+  {
+   "h": "Tuareg rebels pull out of Mali's Kidal",
+   "b": "Mali's Tuareg rebels say they are withdrawing from the strategic northern town of Kidal, six months after capturing it.",
+   "date": "2026-10-06",
+   "more": [
+    "The Azawad Liberation Front called it a 'controlled withdrawal' amid air strikes by Mali's military and Russian fighters."
+   ],
+   "place": "Kidal, Mali",
+   "tz": "Africa/Bamako"
   },
   {
    "h": "Kosovo police clash with protesters at parliament",
@@ -391,6 +420,30 @@
   }
  ],
  "business": [
+  {
+   "h": "2 million young adults could lose Medicaid",
+   "b": "More than 2 million people ages 19 to 24 could lose Medicaid as work requirements and more frequent checks phase in.",
+   "date": "2026-10-06",
+   "more": [
+    "Starting Jan. 1, many states will require 80 hours a month of work, volunteering or school, or an exemption."
+   ]
+  },
+  {
+   "h": "Emmys move to Prime Video in 2027",
+   "b": "The Emmy Awards will stream on Prime Video starting in 2027, ending seven decades on broadcast TV.",
+   "date": "2026-10-06",
+   "more": [
+    "The six-year deal ends the rotation among ABC, CBS, Fox and NBC."
+   ]
+  },
+  {
+   "h": "Anduril plans $3.7B sub parts plant in Baltimore",
+   "b": "Trump highlighted a $3.7 billion Anduril investment to build nuclear submarine components at a Baltimore-area shipyard.",
+   "date": "2026-10-06",
+   "more": [
+    "It's one of a series of factory events as high gas prices and inflation weigh on his approval ratings."
+   ]
+  },
   {
    "h": "Paramount, Warner Bros. merge into Skydance",
    "b": "The $111 billion merger of Paramount and Warner Bros. Discovery is set to close Tuesday, creating a company called Skydance.",
@@ -519,6 +572,14 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Mamdani names Rikers oversight board chair",
+   "b": "Mayor Zohran Mamdani named re-entry advocate Christopher Watler to chair the city's jail oversight board.",
+   "date": "2026-10-06",
+   "more": [
+    "Watler has spent decades building re-entry and diversion programs."
+   ]
+  },
+  {
    "h": "Loophole helps Hochul, Blakeman raise millions",
    "b": "Gov. Kathy Hochul and GOP challenger Bruce Blakeman are using a quirk in state law to raise millions of dollars.",
    "date": "2026-10-06"
@@ -530,6 +591,19 @@
    "more": [
     "Police named D'Angelo Caraballo, 25, and Sneider Mejia, 24."
    ]
+  },
+  {
+   "h": "NYC weighs expanding Cannonsville Reservoir",
+   "b": "The city may expand the Cannonsville Reservoir, its third-largest drinking water source, after a drought two years ago.",
+   "date": "2026-10-06",
+   "more": [
+    "The drought cut the city's water supply to worryingly low levels."
+   ]
+  },
+  {
+   "h": "Legionella found in Staten Island complex",
+   "b": "Legionella bacteria were found in a Staten Island apartment complex's water system after two residents got sick.",
+   "date": "2026-10-06"
   },
   {
    "h": "NYC fears migrants will skip health care",
@@ -556,44 +630,20 @@
    "more": [
     "HUD issued new guidance after letting the earlier aid expire caused fear among tenants and landlords."
    ]
-  },
-  {
-   "h": "Blind man cut from grand jury can sue NY",
-   "b": "A judge ruled a blind man dismissed from a Brooklyn grand jury can sue New York for discrimination.",
-   "date": "2026-10-06",
-   "more": [
-    "Albert Elia, 52, says the judge barred him from voting on cases with visual evidence and denied accommodations."
-   ]
-  },
-  {
-   "h": "Gatorade recall reaches New York and New Jersey",
-   "b": "More than 122,000 cases of Gatorade in 37 states are recalled because some bottles may contain unlisted food dyes.",
-   "date": "2026-10-05"
-  },
-  {
-   "h": "NYPD detective forced out over false statements",
-   "b": "A Brooklyn detective who admitted giving false information in an investigation was forced to retire after 18 years.",
-   "date": "2026-10-05"
   }
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "6 Oct 12:51 pm EDT"
+   "obs": "6 Oct 16:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 65,
-    "text": "Sunny, with a high near 65. Northwest wind around 11 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 47,
-    "text": "Mostly clear, with a low around 47. Northwest wind around 6 mph becoming calm  after midnight. "
+    "temp": 48,
+    "text": "Clear, with a low around 48. Northwest wind 5 to 8 mph becoming calm  after midnight. "
    },
    {
     "name": "Wednesday",
@@ -604,20 +654,26 @@
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 58,
-    "text": "Mostly clear, with a low around 58. Southwest wind 10 to 13 mph. "
+    "temp": 59,
+    "text": "Mostly clear, with a low around 59. Southwest wind 10 to 13 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 74,
-    "text": "Sunny, with a high near 74. West wind 9 to 11 mph. "
+    "temp": 75,
+    "text": "Sunny, with a high near 75. West wind 9 to 13 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "Mostly clear, with a low around 59."
+    "temp": 58,
+    "text": "Mostly clear, with a low around 58. Northwest wind 7 to 9 mph. "
+   },
+   {
+    "name": "Friday",
+    "kind": "high",
+    "temp": 70,
+    "text": "Sunny, with a high near 70."
    }
   ]
  },

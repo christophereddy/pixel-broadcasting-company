@@ -27,28 +27,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 74,
+    "temp": 77,
     "cond": "A Few Clouds",
-    "obs": "6 Oct 12:52 pm EDT"
+    "obs": "6 Oct 16:52 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 77,
-     "text": "Sunny, with a high near 77. East wind around 10 mph, with gusts as high as 20 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Clear, with a low around 57. East wind around 5 mph. "
+     "temp": 56,
+     "text": "Clear, with a low around 56. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 79,
-     "text": "Sunny, with a high near 79. East wind around 5 mph. "
+     "temp": 81,
+     "text": "Sunny, with a high near 81. East wind around 5 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -59,14 +53,20 @@
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 83,
-     "text": "Sunny, with a high near 83. Calm wind becoming north around 5 mph. "
+     "temp": 85,
+     "text": "Sunny, with a high near 85. Calm wind becoming north around 5 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 60,
-     "text": "Partly cloudy, with a low around 60."
+     "temp": 61,
+     "text": "Partly cloudy, with a low around 61. Calm wind. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 83,
+     "text": "Partly sunny, with a high near 83."
     }
    ]
   },
@@ -82,7 +82,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -112,6 +112,23 @@
     ]
    },
    {
+    "h": "Question 9 puts Mass. gun law to voters",
+    "b": "Massachusetts voters will decide whether to keep or repeal the state's 2024 gun law.",
+    "date": "2026-10-06",
+    "more": [
+     "Gov. Healey called it the state's most significant gun safety law in a decade.",
+     "It set the state's first rules on untraceable 'ghost guns.'"
+    ]
+   },
+   {
+    "h": "Question 6 would fund nature conservation",
+    "b": "Question 6 asks voters to dedicate existing sales tax on outdoor gear to a 'Nature for All' land conservation fund.",
+    "date": "2026-10-06",
+    "more": [
+     "Massachusetts aims to protect 30% of its land and waters by 2030."
+    ]
+   },
+   {
     "h": "Healey declares a home 'energy emergency'",
     "b": "Gov. Healey raised heating aid and ordered cuts to some electric bill charges as heating oil prices rose 73% in a year.",
     "date": "2026-10-05",
@@ -127,22 +144,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Fair",
-    "obs": "6 Oct 12:54 pm EDT"
+    "temp": 61,
+    "cond": "Fair and Breezy",
+    "obs": "6 Oct 16:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 63,
-     "text": "Sunny, with a high near 63. West wind around 16 mph, with gusts as high as 26 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Clear, with a low around 43. West wind 6 to 9 mph. "
+     "text": "Clear, with a low around 43. West wind 6 to 13 mph. "
     },
     {
      "name": "Wednesday",
@@ -160,13 +171,19 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 72,
-     "text": "A slight chance of showers after 11am.  Sunny, with a high near 72. Southwest wind 9 to 11 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of showers after 11am.  Mostly sunny, with a high near 72. Southwest wind 9 to 11 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 50,
      "text": "Mostly clear, with a low around 50. West wind around 6 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 65,
+     "text": "Sunny, with a high near 65. West wind 7 to 11 mph, with gusts as high as 21 mph. "
     }
    ]
   },
@@ -182,7 +199,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -230,46 +247,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 74,
     "cond": "A Few Clouds",
-    "obs": "6 Oct 10:53 am CDT"
+    "obs": "6 Oct 15:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 72,
-     "text": "Sunny, with a high near 72. South southwest wind around 15 mph, with gusts as high as 30 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Partly cloudy, with a low around 59. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 59. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 75,
-     "text": "Mostly sunny, with a high near 75. West wind around 10 mph. "
+     "temp": 76,
+     "text": "Sunny, with a high near 76. West southwest wind 5 to 10 mph becoming northwest in the afternoon. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Partly cloudy, with a low around 55. West northwest wind 5 to 10 mph. "
+     "temp": 56,
+     "text": "Partly cloudy, with a low around 56. West wind 5 to 10 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Northwest wind 5 to 10 mph. "
+     "text": "Mostly sunny, with a high near 66. North northwest wind around 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52."
+     "text": "Mostly clear, with a low around 52. North northwest wind around 5 mph becoming west after midnight. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Sunny, with a high near 67."
     }
    ]
   },
@@ -285,7 +302,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -320,46 +337,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 73,
+    "temp": 86,
     "cond": "Mostly Cloudy",
-    "obs": "6 Oct 09:58 am MDT"
+    "obs": "6 Oct 14:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 87,
-     "text": "Mostly sunny, with a high near 87. Light and variable wind becoming east northeast 5 to 7 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 87. Northeast wind around 6 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. Northeast wind around 6 mph becoming light and variable  after midnight. "
+     "temp": 58,
+     "text": "Mostly cloudy, with a low around 58. Northeast wind around 6 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 84,
-     "text": "Sunny, with a high near 84. Light and variable wind becoming north northeast 5 to 8 mph in the afternoon. "
+     "temp": 83,
+     "text": "Mostly sunny, with a high near 83. Light and variable wind becoming southeast 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 56. Southwest wind 3 to 7 mph. "
+     "text": "Partly cloudy, with a low around 56. South southeast wind 5 to 7 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 83,
-     "text": "Sunny, with a high near 83. Calm wind becoming east around 6 mph in the afternoon. "
+     "temp": 84,
+     "text": "Sunny, with a high near 84. Calm wind becoming east around 6 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a low around 55."
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56."
     }
    ]
   },
@@ -375,7 +392,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -438,10 +455,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 100,
-     "text": "Sunny and hot, with a high near 100. East northeast wind 5 to 10 mph becoming west southwest in the afternoon. "
+     "text": "Sunny and hot, with a high near 100. West southwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -464,8 +481,8 @@
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 95,
-     "text": "Sunny, with a high near 95. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
+     "temp": 96,
+     "text": "Sunny and hot, with a high near 96. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
@@ -487,7 +504,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -498,6 +515,14 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Mamdani names Rikers oversight board chair",
+    "b": "Mayor Zohran Mamdani named re-entry advocate Christopher Watler to chair the city's jail oversight board.",
+    "date": "2026-10-06",
+    "more": [
+     "Watler has spent decades building re-entry and diversion programs."
+    ]
+   },
    {
     "h": "Loophole helps Hochul, Blakeman raise millions",
     "b": "Gov. Kathy Hochul and GOP challenger Bruce Blakeman are using a quirk in state law to raise millions of dollars.",
@@ -510,6 +535,19 @@
     "more": [
      "Police named D'Angelo Caraballo, 25, and Sneider Mejia, 24."
     ]
+   },
+   {
+    "h": "NYC weighs expanding Cannonsville Reservoir",
+    "b": "The city may expand the Cannonsville Reservoir, its third-largest drinking water source, after a drought two years ago.",
+    "date": "2026-10-06",
+    "more": [
+     "The drought cut the city's water supply to worryingly low levels."
+    ]
+   },
+   {
+    "h": "Legionella found in Staten Island complex",
+    "b": "Legionella bacteria were found in a Staten Island apartment complex's water system after two residents got sick.",
+    "date": "2026-10-06"
    },
    {
     "h": "NYC fears migrants will skip health care",
@@ -536,44 +574,20 @@
     "more": [
      "HUD issued new guidance after letting the earlier aid expire caused fear among tenants and landlords."
     ]
-   },
-   {
-    "h": "Blind man cut from grand jury can sue NY",
-    "b": "A judge ruled a blind man dismissed from a Brooklyn grand jury can sue New York for discrimination.",
-    "date": "2026-10-06",
-    "more": [
-     "Albert Elia, 52, says the judge barred him from voting on cases with visual evidence and denied accommodations."
-    ]
-   },
-   {
-    "h": "Gatorade recall reaches New York and New Jersey",
-    "b": "More than 122,000 cases of Gatorade in 37 states are recalled because some bottles may contain unlisted food dyes.",
-    "date": "2026-10-05"
-   },
-   {
-    "h": "NYPD detective forced out over false statements",
-    "b": "A Brooklyn detective who admitted giving false information in an investigation was forced to retire after 18 years.",
-    "date": "2026-10-05"
    }
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "6 Oct 12:51 pm EDT"
+    "obs": "6 Oct 16:51 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. Northwest wind around 11 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 47,
-     "text": "Mostly clear, with a low around 47. Northwest wind around 6 mph becoming calm  after midnight. "
+     "temp": 48,
+     "text": "Clear, with a low around 48. Northwest wind 5 to 8 mph becoming calm  after midnight. "
     },
     {
      "name": "Wednesday",
@@ -584,20 +598,26 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58. Southwest wind 10 to 13 mph. "
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59. Southwest wind 10 to 13 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 74,
-     "text": "Sunny, with a high near 74. West wind 9 to 11 mph. "
+     "temp": 75,
+     "text": "Sunny, with a high near 75. West wind 9 to 13 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly clear, with a low around 59."
+     "temp": 58,
+     "text": "Mostly clear, with a low around 58. Northwest wind 7 to 9 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 70,
+     "text": "Sunny, with a high near 70."
     }
    ]
   },
@@ -613,7 +633,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -686,7 +706,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "goodnews": []
  },
  {
@@ -732,40 +752,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 65,
-     "text": "Partly sunny, with a high near 65. North northwest wind 5 to 7 mph. "
+     "text": "Mostly sunny, with a high near 65. North northwest wind around 7 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Areas of fog after 4am.  Otherwise, mostly cloudy, with a low around 52. North northeast wind around 5 mph. "
+     "text": "Partly cloudy, with a low around 52. North northeast wind around 6 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 67,
-     "text": "Areas of fog before 11am.  Otherwise, mostly cloudy, then gradually becoming sunny, with a high near 67. North northeast wind 5 to 7 mph. "
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66. North northeast wind 5 to 7 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. North northeast wind 3 to 7 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. North wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70. North northeast wind 3 to 6 mph. "
+     "text": "Mostly sunny, with a high near 70. Calm wind becoming north around 5 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Partly cloudy, with a low around 53."
+     "temp": 54,
+     "text": "Partly cloudy, with a low around 54."
     }
    ]
   },
@@ -781,7 +801,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-06T19:10:00Z",
+  "updatedAt": "2026-10-06T22:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
