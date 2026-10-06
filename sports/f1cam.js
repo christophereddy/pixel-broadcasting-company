@@ -195,6 +195,7 @@ function f1Chase(now){
   const gl = f1WSide(w, 0, -w.tw * 0.75), gr = f1WSide(w, 0, w.tw * 0.75), pl = f1Project(cx, cy, th, ...gl), prr = f1Project(cx, cy, th, ...gr);
   if (pl && prr) spr.push({z: (pl.z + prr.z) / 2, gantry: [pl, prr]});
   spr.sort((a, b) => b.z - a.z);
+  const tags = [];
   for (const s of spr) {
     if (s.prop) {
       const ww = s.prop.ww * s.k, hh = s.prop.wh * s.k, lift = s.prop.lift * s.k; if (ww < 3) continue;
@@ -214,7 +215,9 @@ function f1Chase(now){
       const c = s.car, wpx = F1C.carW * s.k, braking = c.parked || c.o.fin;
       if (c === me) continue;
       f1CarSprite(ctx, s.sx, s.sy, wpx, c.d.color, braking);
-      if (s.k > 2.2 && s.sy > F1C.hor + 4) pixText(ctx, c.d.code, Math.round(s.sx - pixWidth(c.d.code, false) / 2), Math.round(s.sy - wpx * 0.7) - 7, false, '#ffffff');
+      // name tags on the nearer cars, skipping one that would print on top of another
+      const lx = Math.round(s.sx - pixWidth(c.d.code, false) / 2), ly = Math.round(s.sy - wpx * 0.7) - 7;
+      if (s.k > 2.2 && s.sy > F1C.hor + 4 && !tags.some(([x, y]) => Math.abs(x - lx) < 14 && Math.abs(y - ly) < 7)) { tags.push([lx, ly]); pixText(ctx, c.d.code, lx, ly, false, '#ffffff'); }
     }
   }
   // our car last, so nothing draws over it
