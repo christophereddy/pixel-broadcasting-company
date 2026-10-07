@@ -86,9 +86,11 @@ async function deskStart(tuneIn = true){
 // the loop: every sport in turn, then the commercial break, then round again. A segment the viewer picks in the
 // rundown goes next, the way the newsroom's rundown works.
 const DESK_SEGS = [...DESK_ORDER, 'break'];
-const deskNext = () => SHOW.pick || DESK_SEGS[(DESK_SEGS.indexOf(SHOW.seg) + 1) % DESK_SEGS.length];
+// a game live right now (shared/live.js) goes next, unless the viewer picked something in the rundown
+const deskLive = () => { const lg = window.PBC_LIVE && PBC_LIVE.current; return lg && DESK_ORDER.includes(lg.sport) ? lg.sport : null; };
+const deskNext = () => SHOW.pick || (deskLive() !== SHOW.seg && deskLive()) || DESK_SEGS[(DESK_SEGS.indexOf(SHOW.seg) + 1) % DESK_SEGS.length];
 async function deskRun(tok){
-  let sg = DESK_SEGS[0];
+  let sg = deskLive() || DESK_SEGS[0];
   while (deskAlive(tok)) {
     SHOW.seg = sg; SHOW.t0 = Date.now(); if (SHOW.pick === sg) SHOW.pick = null;
     if (sg === 'break') { await deskBreak(tok); SHOW.loop++; }
@@ -101,6 +103,7 @@ async function deskRun(tok){
 // Bo's hand-off names whatever really comes next, the viewer's pick included
 function deskOutro(sp){
   const nx = deskNext();
+  if (nx === deskLive() && !SHOW.pick) return `That is ${deskLg(sp)}. We have ${deskLg(nx)} live right now, so that is where we go next.`;
   return `That is ${deskLg(sp)}. ${nx === 'break' ? 'A quick break, and we go round again.' : deskLgCap(nx) + ' is next.'}`;
 }
 
@@ -134,7 +137,7 @@ function deskTimes(order){
 function deskOrder(){
   const cur = Math.max(0, DESK_SEGS.indexOf(SHOW.seg)), n = DESK_SEGS.length;
   const rest = []; for (let k = 1; k < n; k++) rest.push(DESK_SEGS[(cur + k) % n]);
-  const p = SHOW.pick && rest.includes(SHOW.pick) ? [SHOW.pick] : [];
+  const nx = SHOW.pick || deskLive(), p = nx && rest.includes(nx) ? [nx] : [];
   return [DESK_SEGS[cur], ...p, ...rest.filter(x => !p.includes(x))];
 }
 // once a second: only the times change, so the buttons stay put under the viewer's pointer

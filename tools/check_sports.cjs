@@ -47,15 +47,19 @@ for (const width of WIDTHS) {
   const page = await browser.newPage({ viewport: { width, height: 900 } });
   const errors = [], hostsSeen = [];
   page.on('pageerror', e => errors.push(e.message));
-  // no live data: every outside request is recorded, then refused
+  // no live data: every outside request is recorded, then refused. The LIVE NOW watcher (shared/live.js) polls each
+  // sport's own scoreboard, so its addresses are left out of the one-source-per-sport count.
+  let liveURLs = [];
   await page.route('**/*', r => {
     const u = new URL(r.request().url());
     if (u.hostname === '127.0.0.1') return r.continue();
-    hostsSeen.push(u.hostname); return r.abort();
+    if (!liveURLs.includes(u.href)) hostsSeen.push(u.hostname);
+    return r.abort();
   });
   // the bare address opens the Sports Desk, so open the first sport by name: that is the page every sport is compared to
   await page.goto(`${base}/sports/`, { waitUntil: 'load' });
   const sports = await page.evaluate(() => Object.keys(SPORTS));
+  liveURLs = await page.evaluate(() => PBC_LIVE.urls()); hostsSeen.length = 0;
   await page.goto(`${base}/sports/#${sports[0]}`, { waitUntil: 'load' });
   await page.reload({ waitUntil: 'load' });
   await page.waitForTimeout(800);
