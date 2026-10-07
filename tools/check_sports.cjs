@@ -53,9 +53,12 @@ for (const width of WIDTHS) {
     if (u.hostname === '127.0.0.1') return r.continue();
     hostsSeen.push(u.hostname); return r.abort();
   });
+  // the bare address opens the Sports Desk, so open the first sport by name: that is the page every sport is compared to
   await page.goto(`${base}/sports/`, { waitUntil: 'load' });
-  await page.waitForTimeout(800);
   const sports = await page.evaluate(() => Object.keys(SPORTS));
+  await page.goto(`${base}/sports/#${sports[0]}`, { waitUntil: 'load' });
+  await page.reload({ waitUntil: 'load' });
+  await page.waitForTimeout(800);
   const lines = [];
   let first = null;
   for (const sp of sports) {

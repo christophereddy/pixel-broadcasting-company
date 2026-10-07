@@ -43,9 +43,11 @@ async function loadSold(base){
 // Returns a square array of rows, true for a dark module, or null if the text is too long.
 function qrMatrix(text){
   const bytes = [...new TextEncoder().encode(text)];
-  const T = {1: [10, [16]], 2: [16, [28]], 3: [26, [44]], 4: [18, [32, 32]], 5: [24, [43, 43]], 6: [16, [27, 27, 27, 27]]};
-  let v = 1; while (v <= 6 && 4 + 8 + bytes.length * 8 > T[v][1].reduce((a, b) => a + b) * 8) v++;
-  if (v > 6) return null;
+  // level M, versions 1-9 (up to 180 bytes, enough for a long article address): [error words per block, data words per block]
+  const T = {1: [10, [16]], 2: [16, [28]], 3: [26, [44]], 4: [18, [32, 32]], 5: [24, [43, 43]], 6: [16, [27, 27, 27, 27]],
+    7: [18, [31, 31, 31, 31]], 8: [22, [38, 38, 39, 39]], 9: [22, [36, 36, 36, 37, 37]]};
+  let v = 1; while (v <= 9 && 4 + 8 + bytes.length * 8 > T[v][1].reduce((a, b) => a + b) * 8) v++;
+  if (v > 9) return null;
   const [ecLen, blocks] = T[v], cap = blocks.reduce((a, b) => a + b) * 8, size = 17 + 4 * v;
   // data bits: mode, length, bytes, terminator, then pad bytes
   const bits = []; const put = (val, n) => { for (let i = n - 1; i >= 0; i--) bits.push(val >>> i & 1); };
@@ -68,7 +70,16 @@ function qrMatrix(text){
   const finder = (cx, cy) => { for (let dy = -4; dy <= 4; dy++) for (let dx = -4; dx <= 4; dx++) { const d = Math.max(Math.abs(dx), Math.abs(dy)); set(cx + dx, cy + dy, d !== 2 && d !== 4); } };
   for (let i = 0; i < size; i++) { set(6, i, i % 2 === 0); set(i, 6, i % 2 === 0); }
   finder(3, 3); finder(size - 4, 3); finder(3, size - 4);
-  if (v > 1) { const c = size - 7; for (let dy = -2; dy <= 2; dy++) for (let dx = -2; dx <= 2; dx++) set(c + dx, c + dy, Math.max(Math.abs(dx), Math.abs(dy)) !== 1); }
+  const al = v < 2 ? [] : v < 7 ? [6, size - 7] : [6, (6 + size - 7) / 2, size - 7];   // alignment pattern centres
+  al.forEach(cy => al.forEach(cx => {
+    if ((cx === 6 && cy === 6) || (cx === 6 && cy === size - 7) || (cx === size - 7 && cy === 6)) return;   // under a finder
+    for (let dy = -2; dy <= 2; dy++) for (let dx = -2; dx <= 2; dx++) set(cx + dx, cy + dy, Math.max(Math.abs(dx), Math.abs(dy)) !== 1);
+  }));
+  if (v >= 7) {   // version information, next to the two upper finders
+    let r = v; for (let i = 0; i < 12; i++) r = r << 1 ^ (r >>> 11) * 0x1F25;
+    const vb = v << 12 | r;
+    for (let i = 0; i < 18; i++) { const d = (vb >>> i & 1) === 1, a = size - 11 + i % 3, b = Math.floor(i / 3); set(a, b, d); set(b, a, d); }
+  }
   const format = mask => {
     const d = mask; let r = d; for (let i = 0; i < 10; i++) r = r << 1 ^ (r >>> 9) * 0x537;   // level M is 00
     const b = (d << 10 | r) ^ 0x5412, bit = i => (b >>> i & 1) === 1;
