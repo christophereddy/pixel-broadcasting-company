@@ -4517,7 +4517,7 @@ $('btn-start').onclick = () => {
   pressStart();
   // PRESS START opens the sports desk, unless the address names a sport (#nfl, #mlb...), which goes straight to it
   if (!S.game && S.deskEntry) deskStart();
-  else if (!S.game) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); }
+  else if (!S.game) { if (!openWanted()) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); } }
   else if (S.mode === 'live' && !isF1()) say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
 };
 
@@ -4537,10 +4537,21 @@ async function openSport(){
   const sport = S.sport, ok = await loadScoreboard();
   if (!ok || sport !== S.sport) return ok;
   if (SHOW.on) return ok; // the sports desk decides what goes on screen while the show is running
+  if (openWanted()) return ok;
   const ev = firstLive();
   if (ev) selectGame(String(ev.id), 'live');
   else if (S.started) showIdle();
   return ok;
+}
+// a game named in the address (#mlb/776543, from the newsroom's LIVE NOW chip) opens once its sport's games are in:
+// live if it still is, its replay if it has just ended. The address then goes back to naming only the sport.
+function openWanted(){
+  const id = S.wantGame, ev = id && evOf(id); if (!ev) return false;
+  const st = stateOf(ev); if (st === 'pre') return false;
+  S.wantGame = null;
+  try { history.replaceState(null, '', location.pathname + location.search + (S.sport === 'nfl' ? '' : '#' + S.sport)); } catch (e) {}
+  selectGame(id, st === 'in' ? 'live' : 'replay');
+  return true;
 }
 // the game the broadcast cuts to: a live one in the picked conference, else any live game
 const firstLive = () => isF1() ? null : sortedGames().live[0] || sortedGames(true).live[0];
@@ -4571,7 +4582,8 @@ $('show-res').onclick = () => setHideRes(!HIDE_RES);
 setHideRes(HIDE_RES);
 
 (async function boot(){
-  const h = location.hash.slice(1).toLowerCase();
+  const [h, gid] = location.hash.slice(1).toLowerCase().split('/');
+  if (SPORTS[h] && gid && !isNaN(gid)) S.wantGame = gid;
   if (SPORTS[h]) { S.sport = h; API = SPORTS[h].api; SITE = SPORTS[h].site; }
   else S.deskEntry = true; // no sport in the address: PRESS START opens the sports desk
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));

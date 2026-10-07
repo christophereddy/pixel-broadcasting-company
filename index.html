@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="newsroom/story-card.css">
 <script src="newsroom/story-card.js"></script>
 <script src="shared/music.js"></script>
+<script src="teases.js"></script>
+<script src="shared/live.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -30,6 +32,19 @@
 .bug .live{background:var(--live);color:#fff;padding:.45em .5em}
 .seg{position:absolute;left:2.4cqw;top:6.4cqw;font-family:var(--f-label);font-size:1.5cqw;color:#fff;background:#0b0e24cc;padding:.35em .55em;letter-spacing:.06em}
 .clock{position:absolute;right:2.4cqw;top:2.4cqw;font-family:var(--f-label);font-size:1.7cqw;background:#0b0e24d9;color:#fff;padding:.5em .6em;font-variant-numeric:tabular-nums}
+/* LIVE NOW: a game on PBC Sports, under the clock; it opens the sports page on that game (shared/live.js). It sits above the
+   first-visit Tune in screen (z-index 5) so it can be clicked straight away. */
+.livenow{position:absolute;right:2.4cqw;top:6.4cqw;z-index:6;pointer-events:auto;display:flex;align-items:stretch;max-width:46cqw;font-family:var(--f-label);font-size:max(10px,1.5cqw);line-height:1;text-decoration:none;color:#fff;border:.2cqw solid var(--live)}
+.livenow[hidden]{display:none}
+.livenow b{display:flex;align-items:center;gap:.4em;background:var(--live);padding:.45em .55em;font-weight:400;white-space:nowrap}
+.livenow b::before{content:"";width:.55em;height:.55em;background:#fff;animation:lnblink 1s steps(1) infinite}
+.livenow span{background:#0b0e24e6;padding:.45em .55em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.livenow i,.livenow em{font-style:normal}
+@container (max-width:600px){.livenow{max-width:64cqw}.livenow i{display:none}}
+.livenow:hover span,.livenow:focus-visible span{color:var(--gold)}
+.livenow:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@keyframes lnblink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.livenow b::before{animation:none}}
 .third{position:absolute;left:2.4cqw;right:2.4cqw;bottom:6.6cqw;display:flex;flex-direction:column;align-items:flex-start}
 .plate{display:flex;font-family:var(--f-label);font-size:1.45cqw;line-height:1}
 .plate span{padding:.45em .6em}
@@ -118,6 +133,7 @@ footer a:focus-visible{outline:2px solid var(--gold)}
       <div class="bug"><b>PBC</b><span class="live">LIVE</span></div>
       <div class="seg" id="seg"></div>
       <div class="clock" id="clock"></div>
+      <a class="livenow" id="livenow" href="sports/" hidden><b>LIVE NOW</b><span><i id="liveLeague"></i><em id="liveTitle"></em></span></a>
       <div class="third">
         <div class="plate"><span id="pname"></span><span id="prole"></span></div>
         <div class="hl"><span class="chip" id="chip"></span><span id="head"></span></div>
@@ -595,7 +611,7 @@ function drawWx(t,b,phase){
 /* ---------- rundown ---------- */
 function pick(list,k,c){const out=[];if(!list||!list.length)return out;k=Math.min(k,list.length);for(let i=0;i<k;i++)out.push(list[(c*k+i)%list.length]);return out}
 function say(B,s,base){
-  B.push(Object.assign({},base,{head:s.h,body:s.b,story:s}));
+  B.push(Object.assign({},base,{head:s.h,body:s.b,story:s})); // story: the teases (teases.js) and the Current story card (newsroom/story-card.js)
   (Array.isArray(s.more)?s.more:[]).slice(0,4).forEach(m=>{if(typeof m==="string"&&m)B.push(Object.assign({},base,{head:s.h,body:m,cont:true,story:s}))});
 }
 function hasGood(){return [].concat(D.goodnews||[],D.localgood||[]).some(s=>s&&s.h&&s.b)}
@@ -629,15 +645,19 @@ function buildBeats(c,cycleStartMs){
     sci.forEach(s=>say(B,s,{seg:"Science",sp:"X",scene:"lab",cat:"SCIENCE",topic:sciTopic(s.h)}));
     B.push({seg:"Science",sp:"X",scene:"lab",cat:"SCIENCE",head:"That's science for now!",body:"Stay curious, ask big questions, and go find out for yourself.",topic:"atom"})}
   const spo=pick(D.sports,99,c);
-  if(spo.length){B.push({seg:"Sports",sp:"A",shot:"two",cat:"SPORTS",head:"Sports with Bo Kowalski",body:"Bo, what's the latest?",wall:"sports"});
+  // a game live on PBC Sports: Bo opens the segment by sending viewers to it (fixed words around the feed's team names)
+  const lg=PBC_LIVE.current;
+  if(spo.length){B.push(lg?{seg:"Sports",sp:"S",shot:"S",cat:"LIVE ON PBC SPORTS",head:lg.title+" is live right now on PBC Sports",body:"Look for LIVE NOW in the corner of the screen to watch it with us. Here's the rest of the latest.",wall:"sports"}
+      :{seg:"Sports",sp:"A",shot:"two",cat:"SPORTS",head:"Sports with Bo Kowalski",body:"Bo, what's the latest?",wall:"sports"});
     spo.forEach(s=>say(B,s,{seg:"Sports",sp:"S",shot:"S",cat:"SPORTS",wall:"sports"}))}
   // Good News only airs when a refresh found some.
   const good=[].concat(D.goodnews||[],D.localgood||[]).filter(s=>s&&s.h&&s.b);
   if(good.length){B.push({seg:"Good News",sp:"B",shot:"two",cat:"GOOD NEWS",head:"Some good news",body:"Before we go, Rosa, I hear we found some good news today.",wall:"goodnews"});
     good.forEach((s,i)=>say(B,s,{seg:"Good News",sp:i%2?"B":"A",shot:i%2?"B":"A",cat:"GOOD NEWS",wall:"goodnews"}))}
-  B.push({seg:"Sign-off",sp:"B",shot:"wide",cat:"PBC NEWS",head:"That's the news for now.",body:"Pixel Broadcasting Company never signs off. Stay with us for the next round of headlines.",wall:"logo"});
+  // The sign-off teases the top of the next loop (teases.js fills it in on air).
+  B.push({seg:"Sign-off",sp:"B",shot:"wide",cat:"PBC NEWS",head:"Stay with us, top of the news is next.",body:"After the break, the latest headlines.",wall:"logo",tease:"break"});
   breakAds(c).forEach(ad=>B.push(adBeat(ad)));
-  return B;
+  return PBC_TEASE.add(B,c);
 }
 /* ---------- commercial break: three 10-second ads between the sign-off and the top of the news ----------
    Dot Delgado, head of sales, stands beside the studio's big screen and reads each one. The ads are the same ones the
@@ -778,13 +798,16 @@ function frame(){
   const cycleLen=cycleMs,c=Math.floor(t/cycleLen),cycleStart=c*cycleLen;
   const B=beatsFor(c,cycleStart),into=t-cycleStart;let idx=0;while(idx<B.length-1&&B.st[idx+1]<=into)idx++;
   let b=B[idx]||B[0],dur=b.dur||BEAT,phase=Math.min(1,(into-B.st[idx])/dur);
+  // A tease names whatever is really next, including a viewer's pick; its key changes with the pick so the voice re-reads it.
+  const tk=b.tease&&pickSeg?":p"+pickSeg.start:"";
+  if(b.tease)b=PBC_TEASE.resolve(B,idx,pickSeg?pickSeg.start:null,{CAST,loc:D.location.name});
   if(mode==="voices"&&talking&&!bump){
     if(real-talkStart>45000||(window.speechSynthesis&&!speechSynthesis.speaking&&!speechSynthesis.pending&&real-talkStart>1500))talking=false;
     else if(phase>.95){phase=.95;offset=cycleStart+B.st[idx]+.95*dur-real;t=real+offset}
   }
   // Viewer's pick: when the next story starts, cut to a "change of plans" bumper, then jump to the picked segment.
   const nkey=c+":"+idx;
-  if(pickSeg&&!bump&&lastNormalKey&&nkey!==lastNormalKey&&!b.cont){
+  if(pickSeg&&!bump&&lastNormalKey&&nkey!==lastNormalKey&&!b.cont&&!b.tease){
     bump={start:real,target:pickSeg.start,seg:pickSeg.seg,c};pickSeg=null;if(mode==="voices")talking=false}
   lastNormalKey=nkey;
   if(bump){
@@ -799,7 +822,7 @@ function frame(){
   if(bump)drawBumper(real);
   const s=b.scene?[0,0,1]:(SHOTS[b.shot]||[0,0]);const z=b.scene||b.shot==="wide"?1:2;
   const lift=18;v.drawImage(scene,s[0],s[1]+lift/z,W/z,(H-lift)/z,0,0,W,H-lift);v.fillStyle="#1d2766";v.fillRect(0,H-lift,W,lift);
-  const key=bump?"bump"+bump.start:c+":"+idx;
+  const key=bump?"bump"+bump.start:c+":"+idx+tk;
   if(key!==lastBeatKey){lastBeatKey=key;lastChars=-1;
     $("pname").textContent=CAST[b.sp].name.toUpperCase();$("prole").textContent=CAST[b.sp].role.toUpperCase();
     $("chip").textContent=b.cat;$("head").textContent=b.head;$("seg").textContent=b.seg.toUpperCase();
@@ -829,7 +852,7 @@ function frame(){
   tt.style.transform=reduce?"none":"translateX("+(-((real/1000*Math.max(26,wrap/15))%half))+"px)";
 }
 function renderRundown(B,cycleStart,cycleLen,idx){
-  const segs=[];B.forEach((b,i)=>{const last=segs[segs.length-1];if(!last||last.seg!==b.seg)segs.push({seg:b.seg,start:i,end:i,sp:b.sp});else{last.end=i;if(b.sp!==B[last.start].sp&&!last.field)last.sp2=b.sp}});
+  const segs=[];B.forEach((b,i)=>{const last=segs[segs.length-1];if(!last||last.seg!==b.seg)segs.push({seg:b.seg,start:i,end:i,sp:b.sp});else{last.end=i;if(b.sp!==B[last.start].sp&&!last.field&&!b.tease)last.sp2=b.sp}});
   const now=Date.now()+offset; // show time; offset moves when voices run long or a viewer picks a segment
   const rows=segs.map(s=>{let st=cycleStart+B.st[s.start],en=cycleStart+B.st[s.end]+(B[s.end].dur||BEAT);const on=idx>=s.start&&idx<=s.end;if(en<=now&&!on)st+=cycleLen;return Object.assign({st,on},s)}).sort((a,b)=>a.st-b.st);
   const ol=$("rundown");ol.textContent="";
@@ -868,6 +891,15 @@ $("city").addEventListener("change",()=>{pickSlug=$("city").value;try{localStora
 setInterval(async()=>{try{const[f,l]=await Promise.all([getJSON("data/feed.json"),getJSON("data/locals.json")]);
   if(!valid(f)||f.updatedAt===FEED.updatedAt)return;FEED=f;setCities(l);fillCities();applyCity()}catch(e){}},5*60000);
 fillCities();applyCity();
+
+/* ---------- live games on PBC Sports ---------- */
+// The LIVE NOW chip shows while a game is live and Bo's sports segment opens with it. The beats keep their count,
+// so the show doesn't jump when a game starts or ends.
+PBC_LIVE.watch(lg=>{
+  const a=$("livenow");a.hidden=!lg;
+  if(lg){a.href=lg.href;$("liveLeague").textContent=lg.league+" · ";$("liveTitle").textContent=lg.title;a.setAttribute("aria-label","Live now on PBC Sports: "+lg.title+". Watch it.")}
+  dataVer++;cache=null;lastBeatKey="";
+});
 
 buildCast();onData();requestAnimationFrame(frame);
 })();
