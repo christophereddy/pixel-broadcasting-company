@@ -28,6 +28,10 @@ In `sports/index.html`:
 11. **Replays.** `buildReplay()` and the timeline: periods along the bar, scoring marks, and skip buttons by the sport's natural unit (drive, inning, period).
 12. **Footer and labels.** `setCredits()` picks the credits up automatically. Check that the live feed label and footer read right.
 
+In `sports/show.js` (the Sports Desk, the channel's entry point):
+
+13. **Desk slot.** Add the sport's key to `DESK_ORDER` so Bo's loop reaches it, and check `deskClips()` picks sensible highlights for it (the scoring plays its `buildReplay()` marks) and `deskStatRows()` names a few of its box-score keys. The guest in the booth is the sport's own `CAST` pair, so nothing else is needed.
+
 ## Before opening the pull request
 
 Run both checks. In a Claude cloud session, put `NODE_PATH=$(npm root -g)` in front of each command.
