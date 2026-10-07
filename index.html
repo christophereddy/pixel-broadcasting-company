@@ -420,7 +420,8 @@ function drawStudio(t,b,phase){
   txtC("PBC",193,150,"#ffffff",2);
   R("#07091a",114,169,158,2);
   // the newsroom cat roams the anchor desk
-  if(b.bit==="batty"||b.bit==="batty-after")drawBattyBit(t,b);else drawCat(t);
+  // Rosa's coffee mug lives at her end of the desk; Batty's running bit knocks it (or something else) off
+  if(b.bit==="batty"||b.bit==="batty-after")drawBattyBit(t,b);else{deskProp("mug",PROP_X,125);drawCat(t)}
   // standing team
   person(CAST.S.look,g,22,119,1,anim("S",t,sp==="S",phase));
   person(CAST.W.look,g,296,118,1,Object.assign({point:sp==="W"},anim("W",t,sp==="W",phase)));
@@ -519,7 +520,7 @@ function drawBattyBit(t,b){
   const el=bitTime(t,b),walk=2400;
   let x=stop,mode="s",px=PROP_X,py=y;
   if(el<walk){x=CAT_BED+(stop-CAT_BED)*el/walk;mode="w"}
-  const push=el-walk-900;   // she stares at it first
+  const push=el-walk-900;   // he stares at it first
   if(push>0){px=PROP_X-Math.min(push,300)/300*6;
     if(push>300){const f=(push-300)/1000;px-=f*14;py=y+Math.round(240*f*f)}}
   if(py<y+60)deskProp(b.prop,Math.round(px),py);

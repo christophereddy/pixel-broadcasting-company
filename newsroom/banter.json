@@ -84,8 +84,8 @@
        "lines": [{"who": "A", "say": "Batty, no. Batty, that is my coffee. Batty, don't you dare."},
                  {"who": "B", "say": "And that's the third mug this week. We'll get you a new one, Rosa."}]},
       {"title": "Batty strikes again", "prop": "pens",
-       "lines": [{"who": "B", "say": "Oh. She's eyeing the pencil cup. Here we go."},
-                 {"who": "A", "say": "Every single pencil. She looked right at the camera, too."}]},
+       "lines": [{"who": "B", "say": "Oh. He's eyeing the pencil cup. Here we go."},
+                 {"who": "A", "say": "Every single pencil. He looked right at the camera, too."}]},
       {"title": "Batty strikes again", "prop": "papers",
        "lines": [{"who": "A", "say": "Batty, those are my script pages. Batty. Batty."},
                  {"who": "B", "say": "Luckily, Rosa knows the whole show by heart. Right, Rosa?"}]},
@@ -113,7 +113,7 @@
     {"who": "L", "date": "05-09", "reply": "Thanks, team! If you see a cupcake in the news van, that one's mine."},
     {"who": "X", "date": "07-20", "reply": "Same day as the first moon landing! I'll be taking the whole lab on a trip. To the moon. In spirit."},
     {"name": "Dot Delgado", "first": "Dot", "date": "08-12", "by": "A", "reply": "Dot runs our sales desk, so of course she already sold the cake. Happy birthday, Dot!"},
-    {"name": "Batty", "first": "Batty", "date": "10-31", "by": "B", "reply": "Of course it's on Halloween. She's asked for no singing and a lot of tuna."},
+    {"name": "Batty", "first": "Batty", "date": "10-31", "by": "B", "reply": "Of course it's on Halloween. He's asked for no singing and a lot of tuna."},
     {"name": "Pip", "first": "Pip", "date": "02-02", "by": "X", "reply": "He's getting a brand new rock for his tank. He's been staring at it all day."}
   ],
   "birthdayOpeners": [
@@ -127,6 +127,6 @@
     {"name": "Juniper Wilde", "first": "Juniper", "date": "2026-10-03", "by": ["A", "X"],
      "lines": ["Today marks {years} {yearWord} since Juniper Wilde joined us on the science desk.", "And {years} {yearWord} of glitter in the lab, Rosa. Thank you all!"]},
     {"name": "Batty", "first": "Batty", "date": "2026-10-06", "by": ["B", "A"],
-     "lines": ["It's been {years} {yearWord} since our desk cat got her name. Happy Batty day, everyone.", "She celebrated by sitting on my script."]}
+     "lines": ["It's been {years} {yearWord} since our desk cat got his name. Happy Batty day, everyone.", "He celebrated by sitting on my script."]}
   ]
 }
