@@ -221,8 +221,8 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   </header>
   <div class="pbc-ctl">
     <nav class="tabs" aria-label="Sport">
-      <button class="tab" aria-pressed="false" id="tab-desk" title="Bo Kowalski's sports desk: recaps, highlights and stats from every sport, and live games as they start">DESK</button>
-      <button class="tab" aria-pressed="true" id="sport-nfl">NFL</button>
+      <button class="tab" aria-pressed="true" id="tab-desk" title="Bo Kowalski's sports desk: recaps, highlights and stats from every sport, and live games as they start">DESK</button>
+      <button class="tab" aria-pressed="false" id="sport-nfl">NFL</button>
       <button class="tab" aria-pressed="false" id="sport-cfb">NCAAF</button>
       <button class="tab" aria-pressed="false" id="sport-nba">NBA</button>
       <button class="tab" aria-pressed="false" id="sport-wnba">WNBA</button>
@@ -4515,6 +4515,9 @@ function pressStart(){
 }
 $('btn-start').onclick = () => {
   pressStart();
+  // the sports desk is already running silently behind this screen: PRESS START just turns the sound on, so the show
+  // carries on from where it is instead of starting over
+  if (SHOW.on) return;
   // PRESS START opens the sports desk, unless the address names a sport (#nfl, #mlb...), which goes straight to it
   if (!S.game && S.deskEntry) deskStart();
   else if (!S.game) { if (!openWanted()) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); } }
@@ -4556,11 +4559,11 @@ function openWanted(){
 // the game the broadcast cuts to: a live one in the picked conference, else any live game
 const firstLive = () => isF1() ? null : sortedGames().live[0] || sortedGames(true).live[0];
 async function switchSport(sp){
-  if (sp === S.sport || !SPORTS[sp]) return;
-  if (!SHOW.driving) deskStop(); // a viewer picking a sport takes over from the sports desk
+  if (!SPORTS[sp] || (sp === S.sport && !SHOW.on)) return;
+  if (!SHOW.driving) { deskStop(); S.deskEntry = false; } // a viewer picking a sport takes over from the sports desk
   S.sport = sp; API = SPORTS[sp].api; SITE = SPORTS[sp].site;
   // the show moves between sports on its own, so it doesn't rewrite the address bar as it goes
-  if (!SHOW.on) try { history.replaceState(null, '', location.pathname + location.search + (sp === 'nfl' ? '' : '#' + sp)); } catch (e) {}
+  if (!SHOW.on) try { history.replaceState(null, '', location.pathname + location.search + ('#' + sp)); } catch (e) {}
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === sp));
   S.token++;
   if (window.speechSynthesis) speechSynthesis.cancel();
@@ -4585,13 +4588,15 @@ setHideRes(HIDE_RES);
   const [h, gid] = location.hash.slice(1).toLowerCase().split('/');
   if (SPORTS[h] && gid && !isNaN(gid)) S.wantGame = gid;
   if (SPORTS[h]) { S.sport = h; API = SPORTS[h].api; SITE = SPORTS[h].site; }
-  else S.deskEntry = true; // no sport in the address: PRESS START opens the sports desk
-  for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));
+  else S.deskEntry = true; // no explicit sport in the address: open the sports desk
+  $('tab-desk').setAttribute('aria-pressed', String(!!S.deskEntry));
+  for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(!S.deskEntry && k === S.sport));
   setBadge(); $('feedsrc').textContent = SPORTS[S.sport].src; setCredits();
   renderTeams(); loadTeams();
   await neutralField();
   requestAnimationFrame(step);
-  await openSport();
+  if (S.deskEntry) deskStart(false); // begin the desk silently; PRESS START still unlocks audio
+  else await openSport();
   setInterval(async () => {
     const had = S.events.size, sport = S.sport; await loadScoreboard(); if (sport !== S.sport) return;
     if (S.mode === 'pre') { const ev = evOf(S.game); if (ev && stateOf(ev) === 'in') selectGame(S.game, 'live'); }

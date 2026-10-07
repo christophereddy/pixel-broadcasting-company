@@ -72,9 +72,11 @@ function deskStop(){
   deskAdLink(null);
   deskTabs();
 }
-async function deskStart(){
+async function deskStart(tuneIn = true){
   deskStop();
-  pressStart();                                  // the DESK tab turns the broadcast on, the same as PRESS START
+  if (tuneIn) pressStart();                      // a viewer tap unlocks audio; automatic entry stays silent
+  S.deskEntry = true;
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
   SHOW.on = true; SHOW.everOn = true; SHOW.loop = 0; SHOW.tok++; SHOW.seg = null; SHOW.pick = null;
   const tok = SHOW.tok;
   hideNotice(); hideBanner(); deskTabs();
