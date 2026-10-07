@@ -1,0 +1,134 @@
+{
+  "_about": [
+    "Desk banter for the newsroom: short exchanges between segments, the running bits with Batty and Pip, and cast birthdays and anniversaries.",
+    "Everything here is fixed text. Nothing is written live by an AI, and the news refresh never touches this file.",
+    "who: A Rosa, B Marcus, P Evelyn, W Sunny, S Bo, I Teo, L Jess, X Juniper. Every exchange has two lines.",
+    "{name} and {first} fill in the person a birthday is for. In anniversaries, {years} {yearWord} reads like \"2 years\". by: who says each line.",
+    "battyEveryLoops: Batty knocks something off the desk in one loop out of this many (a loop is about 33 minutes, so 12 is about every 6 to 7 hours).",
+    "Banter is skipped next to a serious story: any segment listed in alwaysSerious, or any story with one of the seriousWords in it (a word ending in * also matches longer forms: injur* matches injured and injuries)."
+  ],
+  "perLoop": 3,
+  "battyEveryLoops": 12,
+  "alwaysSerious": ["World headlines", "International report", "National news", "Politics desk"],
+  "seriousWords": [
+    "kill*", "dead", "death*", "dies", "died", "dying", "murder*", "shooting*", "shooter*", "gunman", "gunmen",
+    "gunfire", "war", "wars", "wartime", "attack*", "bomb*", "terror*", "abuse*", "assault*", "rape*", "crash*",
+    "collapse*", "disaster*", "hurricane*", "tornado*", "earthquake*", "flood*", "wildfire*", "blaze", "famine",
+    "ebola", "outbreak*", "epidemic*", "pandemic*", "overdos*", "suicid*", "victim*", "hostage*", "massacre*",
+    "genocid*", "execution*", "funeral*", "mourn*", "traged*", "missing", "injur*", "wounded", "evacuat*", "emergenc*",
+    "warning*", "advisory", "advisories", "severe", "layoff*", "laid off", "bankrupt*", "cancer", "arrest*", "charged",
+    "sentenc*", "deport*", "refugee*", "starv*", "riot*", "clash*", "violen*", "explosion*", "sinks", "sank",
+    "sinking", "drown*", "buried", "grave", "graves", "memorial*", "fatal*", "stabb*", "abduct*", "kidnap*",
+    "hate crime*", "racis*", "evict*", "homeless*", "poverty", "lose medicaid", "lose coverage"
+  ],
+
+  "before": {
+    "Local desk": [
+      {"lines": [{"who": "A", "say": "Jess has been out since the early shift. I'm told she's on her third coffee."},
+                 {"who": "L", "say": "Fourth, Rosa. But who's counting? Besides the barista."}]},
+      {"lines": [{"who": "B", "say": "Rosa, did Jess ever find a parking spot?"},
+                 {"who": "A", "say": "She says she found one. She also says she's not telling us where."}]},
+      {"lines": [{"who": "L", "say": "Quick note for the desk: somebody left a sandwich in the news van. It's been there a while."},
+                 {"who": "A", "say": "That would be Marcus. We'll deal with it after the show."}]}
+    ],
+    "Weather": [
+      {"lines": [{"who": "B", "say": "Sunny, before you start: I wore a coat today. Was that the right call?"},
+                 {"who": "W", "say": "Marcus, you wear a coat every day. You wore one in July."}]},
+      {"lines": [{"who": "W", "say": "I've got a brand new map today. Well, it's the old map. I cleaned it."},
+                 {"who": "B", "say": "It does look very clean, Sunny."}]},
+      {"lines": [{"who": "B", "say": "Sunny, is it true you name every cloud on the map?"},
+                 {"who": "W", "say": "Only the nice ones. The grumpy ones know who they are."}]}
+    ],
+    "Science": [
+      {"lines": [{"who": "A", "say": "Juniper, you have goggles on. Should we be worried?"},
+                 {"who": "X", "say": "Not worried, Rosa. Curious! There's a big difference."}]},
+      {"lines": [{"who": "X", "say": "Rosa, I brought a volcano model to share with the desk."},
+                 {"who": "A", "say": "Let's keep it in the lab this time, Juniper. The carpet still remembers last time."}]},
+      {"lines": [{"who": "A", "say": "Juniper, how's the field trip bus holding up?"},
+                 {"who": "X", "say": "Wonderfully! It only made one strange noise this week, and that was a duck."}]}
+    ],
+    "Sports": [
+      {"lines": [{"who": "A", "say": "Bo, I hear you've been practicing your own highlight voice."},
+                 {"who": "S", "say": "And he takes the mug. Fakes left. Sips. What a play, folks."}]},
+      {"lines": [{"who": "S", "say": "Rosa, I've got a stat for you: this desk has never lost a coin toss."},
+                 {"who": "A", "say": "Bo, this desk has never done a coin toss."}]},
+      {"lines": [{"who": "A", "say": "Bo is wearing his lucky tie again."},
+                 {"who": "S", "say": "It's undefeated, Rosa. Mostly because it doesn't play."}]}
+    ],
+    "Good News": [
+      {"lines": [{"who": "A", "say": "Marcus, I think you saved the best part of the day for last."},
+                 {"who": "B", "say": "I always do. Just like the last cookie."}]},
+      {"lines": [{"who": "B", "say": "I've been waiting all show for this part."},
+                 {"who": "A", "say": "He really has. He's been humming."}]}
+    ],
+    "Sign-off": [
+      {"lines": [{"who": "P", "say": "Marcus, you've been very quiet over there."},
+                 {"who": "B", "say": "I'm saving my voice, Evelyn. Long night ahead. It's always a long night ahead."}]},
+      {"lines": [{"who": "A", "say": "Evelyn, did you finish the crossword during the commercial break again?"},
+                 {"who": "P", "say": "In pen, Rosa. Nine across was a good one."}]},
+      {"lines": [{"who": "B", "say": "Evelyn, how many rounds of the news have you sat through today?"},
+                 {"who": "P", "say": "Enough to know Marcus clears his throat right before every story."}]}
+    ]
+  },
+
+  "anytime": [
+    {"lines": [{"who": "B", "say": "Rosa, someone moved my chair up an inch again."},
+               {"who": "A", "say": "It wasn't me, Marcus. I think it was the cat."}]},
+    {"lines": [{"who": "A", "say": "Marcus, is that a new pair of glasses?"},
+               {"who": "B", "say": "Same glasses, Rosa. I cleaned them. The whole world looks new."}]},
+    {"lines": [{"who": "P", "say": "For the record, I'd like it noted that the desk snacks are gone."},
+               {"who": "B", "say": "Noted, Evelyn. And no, I don't know anything about it."}]}
+  ],
+
+  "bits": {
+    "batty": [
+      {"title": "Batty strikes again", "prop": "mug",
+       "lines": [{"who": "A", "say": "Batty, no. Batty, that is my coffee. Batty, don't you dare."},
+                 {"who": "B", "say": "And that's the third mug this week. We'll get you a new one, Rosa."}]},
+      {"title": "Batty strikes again", "prop": "pens",
+       "lines": [{"who": "B", "say": "Oh. He's eyeing the pencil cup. Here we go."},
+                 {"who": "A", "say": "Every single pencil. He looked right at the camera, too."}]},
+      {"title": "Batty strikes again", "prop": "papers",
+       "lines": [{"who": "A", "say": "Batty, those are my script pages. Batty. Batty."},
+                 {"who": "B", "say": "Luckily, Rosa knows the whole show by heart. Right, Rosa?"}]},
+      {"title": "Batty strikes again", "prop": "plant",
+       "lines": [{"who": "A", "say": "Not the plant, Batty. We just got that plant."},
+                 {"who": "B", "say": "It was nice while it lasted. Someone get a broom out to the desk, please."}]}
+    ],
+    "pip": [
+      {"title": "We have a visitor",
+       "lines": [{"who": "W", "say": "And moving in from the south, we have... Pip? Pip, you're on the map!"},
+                 {"who": "X", "say": "Sorry, Sunny! He loves a low pressure system. Come back to the lab, Pip."}]},
+      {"title": "We have a visitor",
+       "lines": [{"who": "W", "say": "That pink spot on the map is not a heat wave, folks. That's Pip."},
+                 {"who": "X", "say": "He wanted to see where the rain comes from. It's educational!"}]}
+    ]
+  },
+
+  "birthdays": [
+    {"who": "A", "date": "03-14", "reply": "Thank you, everyone. Marcus, I know you planned something. I can hear it in the hallway."},
+    {"who": "B", "date": "11-02", "reply": "Please, no singing. I mean it. Okay, a little singing."},
+    {"who": "P", "date": "01-27", "reply": "Thank you. I'll accept the cake, but I'm still not telling anyone my age."},
+    {"who": "W", "date": "06-21", "reply": "Thank you! The longest day of the year, and I've got the forecast to prove it."},
+    {"who": "S", "date": "04-05", "reply": "Right in time for opening week. Best present a guy could ask for."},
+    {"who": "I", "date": "09-18", "reply": "Thank you, Rosa! They're celebrating with me here, too. Well, they're celebrating something."},
+    {"who": "L", "date": "05-09", "reply": "Thanks, team! If you see a cupcake in the news van, that one's mine."},
+    {"who": "X", "date": "07-20", "reply": "Same day as the first moon landing! I'll be taking the whole lab on a trip. To the moon. In spirit."},
+    {"name": "Dot Delgado", "first": "Dot", "date": "08-12", "by": "A", "reply": "Dot runs our sales desk, so of course she already sold the cake. Happy birthday, Dot!"},
+    {"name": "Batty", "first": "Batty", "date": "10-31", "by": "B", "reply": "Of course it's on Halloween. He's asked for no singing and a lot of tuna."},
+    {"name": "Pip", "first": "Pip", "date": "02-02", "by": "X", "reply": "He's getting a brand new rock for his tank. He's been staring at it all day."}
+  ],
+  "birthdayOpeners": [
+    {"who": "A", "say": "Before we go on, the whole desk wants to wish {name} a very happy birthday."},
+    {"who": "B", "say": "A quick note from the desk: today is {first}'s birthday. Happy birthday, {first}!"}
+  ],
+
+  "anniversaries": [
+    {"name": "Pixel Broadcasting Company", "date": "2026-10-02", "by": ["A", "B"],
+     "lines": ["{years} {yearWord} ago today, Pixel Broadcasting Company went on the air.", "And we haven't signed off since. Thank you for watching."]},
+    {"name": "Juniper Wilde", "first": "Juniper", "date": "2026-10-03", "by": ["A", "X"],
+     "lines": ["Today marks {years} {yearWord} since Juniper Wilde joined us on the science desk.", "And {years} {yearWord} of glitter in the lab, Rosa. Thank you all!"]},
+    {"name": "Batty", "first": "Batty", "date": "2026-10-06", "by": ["B", "A"],
+     "lines": ["It's been {years} {yearWord} since our desk cat got his name. Happy Batty day, everyone.", "He celebrated by sitting on my script."]}
+  ]
+}
