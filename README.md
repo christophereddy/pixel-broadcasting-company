@@ -15,6 +15,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `data/locals.json` | One local desk (news, Good News, weather, sources) per city in the picker | The 3-hour refresh |
 | `sports/index.html` | Pixel Sports Live | Code changes only; the refresh never touches it |
 | `shared/pbc.css`, `shared/pbc.js` | What both channels share: page grid, masthead, NEWS/SPORTS switch, ON AIR, FULL SCREEN, SOUND, the broadcast frame and full-screen mode | Code changes |
+| `shared/music.js` | The newsroom's chiptune theme, segment stings, commercial-break bed and first-visit TUNE IN, all made with WebAudio (news only) | Code changes |
 | `tools/REFRESH.md` | Step-by-step instructions the 3-hour refresh follows | When sources or rules change |
 | `tools/sources.json`, `tools/fetch_sources.py`, `.github/workflows/fetch-sources.yml` | Chris's approved news sources, and the hourly Action that saves them (plus recent article text and each desk's forecast) to the `feeds` branch for the refresh to read | `sources.json` only when Chris names a source |
 | `tools/merge.py` | Merges a refresh's gathered stories into `data/`, applying the age rules | Code changes |
