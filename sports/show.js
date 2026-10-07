@@ -26,7 +26,8 @@ const SHOW = {
   head: '', note: '', rows: [],
   seg: null,        // the rundown segment on air: a sport key, or 'break'
   steps: [], step: 0, // that segment's parts (scoreboard, each highlight, stats), shown under it in the rundown
-  pick: null        // a segment the viewer picked in the rundown, played after the current one
+  pick: null,       // a segment the viewer picked in the rundown, played after the current one
+  t0: 0             // when the segment on air started (Date.now), for the rundown's clock times
 };
 
 // Bo and Dot in the booth's own style, drawn by drawAnnouncer. Their colours follow the newsroom's cast
@@ -88,10 +89,11 @@ const deskNext = () => SHOW.pick || DESK_SEGS[(DESK_SEGS.indexOf(SHOW.seg) + 1) 
 async function deskRun(tok){
   let sg = DESK_SEGS[0];
   while (deskAlive(tok)) {
-    SHOW.seg = sg; if (SHOW.pick === sg) SHOW.pick = null;
+    SHOW.seg = sg; SHOW.t0 = Date.now(); if (SHOW.pick === sg) SHOW.pick = null;
     if (sg === 'break') { await deskBreak(tok); SHOW.loop++; }
     else if (await deskSport(sg, tok) === 'live') return;  // a live game has the broadcast now
     if (!deskAlive(tok)) return;
+    deskLenSave(sg, Date.now() - SHOW.t0);
     sg = deskNext(); SHOW.pick = null;
   }
 }
@@ -101,7 +103,51 @@ function deskOutro(sp){
   return `That is ${deskLg(sp)}. ${nx === 'break' ? 'A quick break, and we go round again.' : deskLgCap(nx) + ' is next.'}`;
 }
 
-/* ---- the rundown in the side column: every segment of the loop, the one on air first, with its parts ---- */
+/* ---- the rundown in the side column: every segment of the loop, the one on air first, with its parts ----
+   Like the newsroom's, each segment shows the clock time it starts and how long it runs. A desk segment's length
+   depends on the games and the voices, so it is the length that segment last ran on this device (until it has run
+   once, a typical length), and the times move along if the segment on air runs long. */
+const DESK_EST = {break: 36000, f1: 150000};            // typical lengths before a segment has run here
+const DESK_EST_SPORT = 180000;
+let DESK_LENS = {};
+try { DESK_LENS = JSON.parse(localStorage.getItem('pbc-desk-lens') || '{}') || {}; } catch (e) {}
+function deskLenSave(sg, ms){
+  if (!(ms > 5000 && ms < 30 * 60000)) return;
+  DESK_LENS[sg] = Math.round(ms);
+  try { localStorage.setItem('pbc-desk-lens', JSON.stringify(DESK_LENS)); } catch (e) {}
+}
+const deskLen = sg => Number(DESK_LENS[sg]) || DESK_EST[sg] || DESK_EST_SPORT;
+const deskClock = t => new Date(t).toLocaleTimeString([], {hour: 'numeric', minute: '2-digit', second: '2-digit'});
+const deskDur = ms => { const s = Math.round(ms / 1000); return s < 60 ? s + 's' : Math.floor(s / 60) + 'm ' + String(s % 60).padStart(2, '0') + 's'; };
+const deskTm = t => deskClock(t.st) + ' · ' + deskDur(t.len);   // "3:42:03 PM · 3m 00s": when it starts, how long it runs
+// start time and length of every row, in rundown order (the segment on air first, then the picked one, then the rest)
+function deskTimes(order){
+  const now = Date.now(), out = [];
+  let at = SHOW.t0 || now;
+  for (const sg of order) {
+    let len = deskLen(sg);
+    if (sg === SHOW.seg) len = Math.max(len, now - at + 5000);   // running long: everything after it moves back
+    out.push({st: at, len}); at += len;
+  }
+  return out;
+}
+function deskOrder(){
+  const cur = Math.max(0, DESK_SEGS.indexOf(SHOW.seg)), n = DESK_SEGS.length;
+  const rest = []; for (let k = 1; k < n; k++) rest.push(DESK_SEGS[(cur + k) % n]);
+  const p = SHOW.pick && rest.includes(SHOW.pick) ? [SHOW.pick] : [];
+  return [DESK_SEGS[cur], ...p, ...rest.filter(x => !p.includes(x))];
+}
+// once a second: only the times change, so the buttons stay put under the viewer's pointer
+function deskTick(){
+  if (!SHOW.on) return;
+  const rows = $('deskrd')?.children; if (!rows) return;
+  const ts = deskTimes(deskOrder());
+  for (let k = 0; k < rows.length && k < ts.length; k++) {
+    const tm = rows[k].querySelector('.tm');
+    if (tm) tm.textContent = deskTm(ts[k]);
+  }
+}
+setInterval(deskTick, 1000);
 function deskSteps(list, k){ SHOW.steps = list; SHOW.step = k || 0; deskRundown(); }
 function deskStep(k){ SHOW.step = k; deskRundown(); }
 function deskRundown(){
@@ -109,11 +155,12 @@ function deskRundown(){
   pan.hidden = !SHOW.on;
   if (!SHOW.on) return;
   const ol = $('deskrd'); ol.replaceChildren();
-  const cur = Math.max(0, DESK_SEGS.indexOf(SHOW.seg)), n = DESK_SEGS.length;
-  for (let k = 0; k < n; k++) {
-    const sg = DESK_SEGS[(cur + k) % n], on = SHOW.seg === sg;
+  const cur = Math.max(0, DESK_SEGS.indexOf(SHOW.seg)), order = deskOrder(), ts = deskTimes(order);
+  for (const [k, sg] of order.entries()) {
+    const on = SHOW.seg === sg;
     const li = document.createElement('li');
     if (on) li.className = 'now'; else if (SHOW.pick === sg) li.className = 'picked';
+    const tm = document.createElement('span'); tm.className = 'tm'; tm.textContent = deskTm(ts[k]);
     const label = sg === 'break' ? 'COMMERCIAL BREAK' : SPORTS[sg].name + ' RECAP';
     let nm;
     if (on) { nm = document.createElement('span'); nm.textContent = label; }
@@ -123,10 +170,10 @@ function deskRundown(){
       nm.onclick = () => { SHOW.pick = SHOW.pick === sg ? null : sg; deskRundown(); };
     }
     // the guest for this segment: the role swaps each time round, and segments before this one come round next loop
-    const role = (SHOW.loop + (on || (cur + k) % n > cur ? 0 : 1)) % 2 ? 'A' : 'B';
+    const role = (SHOW.loop + (on || DESK_SEGS.indexOf(sg) > cur ? 0 : 1)) % 2 ? 'A' : 'B';
     const who = document.createElement('span'); who.className = 'who';
     who.textContent = sg === 'break' ? 'Dot Delgado' : 'Bo Kowalski with ' + deskName(((CAST[sg] || CAST.nfl)[on ? SHOW.guestRole : role]).name);
-    li.append(nm, who);
+    li.append(tm, nm, who);
     if (on && SHOW.steps.length) {
       const sub = document.createElement('ul'); sub.className = 'parts';
       SHOW.steps.forEach((t, j) => { const p = document.createElement('li'); p.textContent = t; if (j === SHOW.step) p.className = 'on'; else if (j < SHOW.step) p.className = 'done'; sub.appendChild(p); });

@@ -112,10 +112,11 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 #deskrd{list-style:none;margin:6px 0 8px;padding:0}
 #deskrd>li{padding:4px 12px;display:flex;flex-direction:column;font-size:18px}
 #deskrd>li.now{background:var(--navy)}
-#deskrd>li.now>span:first-child{color:var(--gold)}
-#deskrd>li.now>span:first-child::after{content:" NOW";font-family:var(--display);font-size:10px;color:var(--live)}
+#deskrd .tm{color:var(--dim);font-size:16px;line-height:1.1;white-space:nowrap;font-variant-numeric:tabular-nums}
+#deskrd>li.now .tm{color:var(--gold)}
+#deskrd>li.now .tm::after{content:" NOW";font-family:var(--display);font-size:10px;color:var(--live)}
 #deskrd>li.picked{background:#3a1420}
-#deskrd>li.picked .pk::after{content:" NEXT";font-family:var(--display);font-size:10px;color:var(--gold)}
+#deskrd>li.picked .tm::after{content:" NEXT";font-family:var(--display);font-size:10px;color:var(--gold)}
 #deskrd .who{color:var(--dim);font-size:15px}
 #deskrd .pk{all:unset;cursor:pointer;text-decoration:underline dotted 1px;text-underline-offset:3px}
 #deskrd .pk:hover{color:var(--gold)}
