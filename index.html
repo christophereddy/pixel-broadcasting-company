@@ -11,6 +11,7 @@
 <script src="shared/pbc.js"></script>
 <script src="shared/ads.js"></script>
 <script src="shared/music.js"></script>
+<script src="teases.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -592,7 +593,7 @@ function drawWx(t,b,phase){
 /* ---------- rundown ---------- */
 function pick(list,k,c){const out=[];if(!list||!list.length)return out;k=Math.min(k,list.length);for(let i=0;i<k;i++)out.push(list[(c*k+i)%list.length]);return out}
 function say(B,s,base){
-  B.push(Object.assign({},base,{head:s.h,body:s.b}));
+  B.push(Object.assign({},base,{head:s.h,body:s.b,story:1}));
   (Array.isArray(s.more)?s.more:[]).slice(0,4).forEach(m=>{if(typeof m==="string"&&m)B.push(Object.assign({},base,{head:s.h,body:m,cont:true}))});
 }
 function hasGood(){return [].concat(D.goodnews||[],D.localgood||[]).some(s=>s&&s.h&&s.b)}
@@ -632,9 +633,10 @@ function buildBeats(c,cycleStartMs){
   const good=[].concat(D.goodnews||[],D.localgood||[]).filter(s=>s&&s.h&&s.b);
   if(good.length){B.push({seg:"Good News",sp:"B",shot:"two",cat:"GOOD NEWS",head:"Some good news",body:"Before we go, Rosa, I hear we found some good news today.",wall:"goodnews"});
     good.forEach((s,i)=>say(B,s,{seg:"Good News",sp:i%2?"B":"A",shot:i%2?"B":"A",cat:"GOOD NEWS",wall:"goodnews"}))}
-  B.push({seg:"Sign-off",sp:"B",shot:"wide",cat:"PBC NEWS",head:"That's the news for now.",body:"Pixel Broadcasting Company never signs off. Stay with us for the next round of headlines.",wall:"logo"});
+  // The sign-off teases the top of the next loop (teases.js fills it in on air).
+  B.push({seg:"Sign-off",sp:"B",shot:"wide",cat:"PBC NEWS",head:"Stay with us, top of the news is next.",body:"After the break, the latest headlines.",wall:"logo",tease:"break"});
   breakAds(c).forEach(ad=>B.push(adBeat(ad)));
-  return B;
+  return PBC_TEASE.add(B,c);
 }
 /* ---------- commercial break: three 10-second ads between the sign-off and the top of the news ----------
    Dot Delgado, head of sales, stands beside the studio's big screen and reads each one. The ads are the same ones the
@@ -775,13 +777,16 @@ function frame(){
   const cycleLen=cycleMs,c=Math.floor(t/cycleLen),cycleStart=c*cycleLen;
   const B=beatsFor(c,cycleStart),into=t-cycleStart;let idx=0;while(idx<B.length-1&&B.st[idx+1]<=into)idx++;
   let b=B[idx]||B[0],dur=b.dur||BEAT,phase=Math.min(1,(into-B.st[idx])/dur);
+  // A tease names whatever is really next, including a viewer's pick; its key changes with the pick so the voice re-reads it.
+  const tk=b.tease&&pickSeg?":p"+pickSeg.start:"";
+  if(b.tease)b=PBC_TEASE.resolve(B,idx,pickSeg?pickSeg.start:null,{CAST,loc:D.location.name});
   if(mode==="voices"&&talking&&!bump){
     if(real-talkStart>45000||(window.speechSynthesis&&!speechSynthesis.speaking&&!speechSynthesis.pending&&real-talkStart>1500))talking=false;
     else if(phase>.95){phase=.95;offset=cycleStart+B.st[idx]+.95*dur-real;t=real+offset}
   }
   // Viewer's pick: when the next story starts, cut to a "change of plans" bumper, then jump to the picked segment.
   const nkey=c+":"+idx;
-  if(pickSeg&&!bump&&lastNormalKey&&nkey!==lastNormalKey&&!b.cont){
+  if(pickSeg&&!bump&&lastNormalKey&&nkey!==lastNormalKey&&!b.cont&&!b.tease){
     bump={start:real,target:pickSeg.start,seg:pickSeg.seg,c};pickSeg=null;if(mode==="voices")talking=false}
   lastNormalKey=nkey;
   if(bump){
@@ -796,7 +801,7 @@ function frame(){
   if(bump)drawBumper(real);
   const s=b.scene?[0,0,1]:(SHOTS[b.shot]||[0,0]);const z=b.scene||b.shot==="wide"?1:2;
   const lift=18;v.drawImage(scene,s[0],s[1]+lift/z,W/z,(H-lift)/z,0,0,W,H-lift);v.fillStyle="#1d2766";v.fillRect(0,H-lift,W,lift);
-  const key=bump?"bump"+bump.start:c+":"+idx;
+  const key=bump?"bump"+bump.start:c+":"+idx+tk;
   if(key!==lastBeatKey){lastBeatKey=key;lastChars=-1;
     $("pname").textContent=CAST[b.sp].name.toUpperCase();$("prole").textContent=CAST[b.sp].role.toUpperCase();
     $("chip").textContent=b.cat;$("head").textContent=b.head;$("seg").textContent=b.seg.toUpperCase();
@@ -825,7 +830,7 @@ function frame(){
   tt.style.transform=reduce?"none":"translateX("+(-((real/1000*Math.max(26,wrap/15))%half))+"px)";
 }
 function renderRundown(B,cycleStart,cycleLen,idx){
-  const segs=[];B.forEach((b,i)=>{const last=segs[segs.length-1];if(!last||last.seg!==b.seg)segs.push({seg:b.seg,start:i,end:i,sp:b.sp});else{last.end=i;if(b.sp!==B[last.start].sp&&!last.field)last.sp2=b.sp}});
+  const segs=[];B.forEach((b,i)=>{const last=segs[segs.length-1];if(!last||last.seg!==b.seg)segs.push({seg:b.seg,start:i,end:i,sp:b.sp});else{last.end=i;if(b.sp!==B[last.start].sp&&!last.field&&!b.tease)last.sp2=b.sp}});
   const now=Date.now()+offset; // show time; offset moves when voices run long or a viewer picks a segment
   const rows=segs.map(s=>{let st=cycleStart+B.st[s.start],en=cycleStart+B.st[s.end]+(B[s.end].dur||BEAT);const on=idx>=s.start&&idx<=s.end;if(en<=now&&!on)st+=cycleLen;return Object.assign({st,on},s)}).sort((a,b)=>a.st-b.st);
   const ol=$("rundown");ol.textContent="";
