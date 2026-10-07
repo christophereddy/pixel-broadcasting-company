@@ -104,7 +104,7 @@ function deskOutro(sp){
 }
 
 /* ---- the rundown in the side column: every segment of the loop, the one on air first, with its parts ----
-   Like the newsroom's, each segment shows the clock time it starts and how long it runs. A desk segment's length
+   Like the newsroom's, each segment shows the clock time it starts. A desk segment's length
    depends on the games and the voices, so it is the length that segment last ran on this device (until it has run
    once, a typical length), and the times move along if the segment on air runs long. */
 const DESK_EST = {break: 36000, f1: 150000};            // typical lengths before a segment has run here
@@ -118,8 +118,7 @@ function deskLenSave(sg, ms){
 }
 const deskLen = sg => Number(DESK_LENS[sg]) || DESK_EST[sg] || DESK_EST_SPORT;
 const deskClock = t => new Date(t).toLocaleTimeString([], {hour: 'numeric', minute: '2-digit', second: '2-digit'});
-const deskDur = ms => { const s = Math.round(ms / 1000); return s < 60 ? s + 's' : Math.floor(s / 60) + 'm ' + String(s % 60).padStart(2, '0') + 's'; };
-const deskTm = t => deskClock(t.st) + ' · ' + deskDur(t.len);   // "3:42:03 PM · 3m 00s": when it starts, how long it runs
+const deskTm = t => deskClock(t.st);                 // start times only, matching the newsroom's rundown (Chris)
 // start time and length of every row, in rundown order (the segment on air first, then the picked one, then the rest)
 function deskTimes(order){
   const now = Date.now(), out = [];
