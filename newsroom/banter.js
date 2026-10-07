@@ -66,7 +66,7 @@ function beatsOf(ex,seg,beat){
 
 // Every exchange that could fill the hand-off from one segment to the next, before skipping repeats.
 function base(prev,next){const bits=DATA.bits||{},L=x=>(Array.isArray(x)?x:[]).filter(okEx);
-  return [].concat(L(DATA.before&&DATA.before[next]),L(DATA.anytime),L(bits.batty),prev==="Weather"?L(bits.pip):[])}
+  return [].concat(L(DATA.before&&DATA.before[next]),L(DATA.anytime),prev==="Weather"?L(bits.pip):[])}
 
 /* B: the loop's beats in order. ctx: {c (loop number), now (when the loop starts), tz, beat (one story's length), cast}. */
 function weave(B,ctx){
@@ -91,17 +91,19 @@ function weave(B,ctx){
   chosen.sort((a,b)=>a.at-b.at);
   // fill them: today's birthdays and anniversaries first, then banter from the pools
   const sp=specials(ctx.now||Date.now(),ctx.tz,ctx.cast||{}),bits=DATA.bits||{},used=new Set(),r=rng(c*7919+13);
-  let batty=false;
+  // Batty's bit is rare: one loop in every battyEveryLoops, and then just once.
+  const every=Math.max(1,Math.floor(+DATA.battyEveryLoops||12)),battyPool=(Array.isArray(bits.batty)?bits.batty:[]).filter(okEx);
+  let batty=c%every!==every-1||!battyPool.length;
   const exs=chosen.map(s=>{
     if(sp.length)return sp.shift();
     const pool=[];
     const add=(list,bit,w)=>(Array.isArray(list)?list:[]).forEach(e=>{if(okEx(e)&&!used.has(e))for(let i=0;i<w;i++)pool.push({e,bit})});
     add(DATA.before&&DATA.before[s.next],null,3);
     add(DATA.anytime,null,1);
-    if(!batty)add(bits.batty,"batty",1);
+    if(!batty){batty=true;return Object.assign({},battyPool[Math.floor(c/every)%battyPool.length],{bit:"batty"})}
     if(s.prev==="Weather")add(bits.pip,"pip",6);
-    if(!pool.length){const e=base(s.prev,s.next)[c%base(s.prev,s.next).length];return Object.assign({},e,{bit:(bits.pip||[]).includes(e)?"pip":(bits.batty||[]).includes(e)?"batty":null})}
-    const p=pool[Math.floor(r()*pool.length)];used.add(p.e);if(p.bit==="batty")batty=true;
+    if(!pool.length){const e=base(s.prev,s.next)[c%base(s.prev,s.next).length];return Object.assign({},e,{bit:(bits.pip||[]).includes(e)?"pip":null})}
+    const p=pool[Math.floor(r()*pool.length)];used.add(p.e);
     return Object.assign({},p.e,{bit:p.bit})});
   const out=B.slice();
   for(let i=chosen.length-1;i>=0;i--)out.splice(chosen[i].at,0,...beatsOf(exs[i],chosen[i].prev,ctx.beat||13000));

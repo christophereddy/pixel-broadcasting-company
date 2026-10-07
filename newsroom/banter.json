@@ -4,9 +4,11 @@
     "Everything here is fixed text. Nothing is written live by an AI, and the news refresh never touches this file.",
     "who: A Rosa, B Marcus, P Evelyn, W Sunny, S Bo, I Teo, L Jess, X Juniper. Every exchange has two lines.",
     "{name} and {first} fill in the person a birthday is for. In anniversaries, {years} {yearWord} reads like \"2 years\". by: who says each line.",
+    "battyEveryLoops: Batty knocks something off the desk in one loop out of this many (a loop is about 33 minutes, so 12 is about every 6 to 7 hours).",
     "Banter is skipped next to a serious story: any segment listed in alwaysSerious, or any story with one of the seriousWords in it (a word ending in * also matches longer forms: injur* matches injured and injuries)."
   ],
   "perLoop": 3,
+  "battyEveryLoops": 12,
   "alwaysSerious": ["World headlines", "International report", "National news", "Politics desk"],
   "seriousWords": [
     "kill*", "dead", "death*", "dies", "died", "dying", "murder*", "shooting*", "shooter*", "gunman", "gunmen",
