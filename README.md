@@ -13,6 +13,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `index.html` | The newsroom page: drawing, cast, rundown, sound, city picker. Holds no news itself. | Code changes, through pull requests |
 | `data/feed.json` | The national desks (world, international, national, politics, business, science, sports, Good News) and the default city's local desk | The 3-hour refresh |
 | `data/locals.json` | One local desk (news, Good News, weather, sources) per city in the picker | The 3-hour refresh |
+| `news/visuals.js`, `news/places.js`, `news/world-map.bin` | Story visuals on the newsroom's video wall: a pixel map with a pin for world, international and national stories (from a story's `place`, or a country, state or city its text names), and category art for every desk story. Works from the built-in place list and map; no map service. | `visuals.js` through pull requests; `places.js` and `world-map.bin` only by re-running `tools/build_story_map.py` |
 | `sports/index.html` | Pixel Sports Live | Code changes only; the refresh never touches it |
 | `shared/pbc.css`, `shared/pbc.js` | What both channels share: page grid, masthead, NEWS/SPORTS switch, ON AIR, FULL SCREEN, SOUND, the broadcast frame and full-screen mode | Code changes |
 | `shared/music.js` | The newsroom's chiptune theme, segment stings, commercial-break bed and first-visit TUNE IN, all made with WebAudio (news only) | Code changes |

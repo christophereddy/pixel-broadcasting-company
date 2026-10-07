@@ -15,6 +15,8 @@
 <script src="shared/music.js"></script>
 <script src="teases.js"></script>
 <script src="shared/live.js"></script>
+<script src="news/places.js"></script>
+<script src="news/visuals.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -321,7 +323,9 @@ function wxKind(text,name){
 }
 
 /* ---------- studio set ---------- */
-function videoWall(x,y,w,h,kind,t){
+function videoWall(x,y,w,h,kind,t,vis,phase){
+  // a story with a place or a category shows its map or art (news/visuals.js); otherwise the desk's usual wall
+  if(vis&&PBC_VIS.wall(g,x,y,w,h,vis,t,txt,phase)){R("#05071a",Math.round(x+w/2),y,1,h);R("#05071a",x,Math.round(y+h/2),w,1);return}
   R("#05071a",x-3,y-3,w+6,h+6);
   const cx=x+w/2,cy=y+h/2;
   if(kind==="world"){
@@ -418,7 +422,7 @@ function drawStudio(t,b,phase){
   R("#07091a",0,0,W,12);for(let x=0;x<W;x+=6)R("#1c2146",x,4,3,3);
   windowView(8,22,96,48,t);
   sportsMonitor(52,84,48,30,t);
-  videoWall(128,20,128,72,b.wall||"logo",t);
+  videoWall(128,20,128,72,b.wall||"logo",t,b.vis,phase);
   weatherWall(284,26,92,110,t);
   // floor
   R("#0c1029",0,152,W,64);
@@ -453,7 +457,7 @@ function drawStudio(t,b,phase){
 function drawOts(t,b,phase){
   R("#151b3d",0,0,W,H);for(let x=0;x<W;x+=24)R("#1b2250",x,0,1,H);
   g.globalAlpha=.06;g.fillStyle="#fff2c0";g.fillRect(0,0,150,H);g.globalAlpha=1;
-  videoWall(166,24,200,104,b.wall||"logo",t);
+  videoWall(166,24,200,104,b.wall||"logo",t,b.vis,phase);
   person(CAST[b.sp].look,g,30,40,5,Object.assign({seated:true},anim(b.sp,t,true,phase)));
   R("#e3e7f0",0,146,W,4);R("#b9bfd0",0,150,W,2);R("#1d2766",0,152,W,64);R("#f2b632",0,170,W,3);
 }
@@ -570,6 +574,7 @@ function drawIntl(t,b,phase){
   const bxp=((t/55)%(W+60))-40;R("#7a3b22",bxp,166,30,5);R("#7a3b22",bxp+3,171,24,2);R("#f4efe6",bxp+12,146,1,20);R("#f4efe6",bxp+13,148,10,14);
   R(night?"#4a4450":"#a09080",0,186,W,30);for(let x=0;x<W;x+=16)R(night?"#3f3a45":"#8a7a68",x,186,1,30);R(night?"#3a3540":"#7a6a58",0,186,W,2);
   person(CAST.I.look,g,218,54,5,Object.assign({mic:true},anim("I",t,true,phase)));
+  PBC_VIS.inset(g,10,62,96,56,b.vis,t,txt);
 }
 function drawLocal(t,b,phase){
   const hr=hourIn(D.location.tz),night=isNight(hr);
@@ -611,8 +616,11 @@ function drawWx(t,b,phase){
 /* ---------- rundown ---------- */
 function pick(list,k,c){const out=[];if(!list||!list.length)return out;k=Math.min(k,list.length);for(let i=0;i<k;i++)out.push(list[(c*k+i)%list.length]);return out}
 function say(B,s,base){
-  B.push(Object.assign({},base,{head:s.h,body:s.b,story:s})); // story: the teases (teases.js) and the Current story card (newsroom/story-card.js)
-  (Array.isArray(s.more)?s.more:[]).slice(0,4).forEach(m=>{if(typeof m==="string"&&m)B.push(Object.assign({},base,{head:s.h,body:m,cont:true,story:s}))});
+  // story: the teases (teases.js) and the Current story card (newsroom/story-card.js)
+  // vis: a story with a map or art (news/visuals.js) opens on the over-the-shoulder shot, so the video wall is in frame
+  const vis=PBC_VIS.forStory(s,base);
+  B.push(Object.assign({},base,vis&&!base.scene?{scene:"ots"}:{},{head:s.h,body:s.b,story:s,vis}));
+  (Array.isArray(s.more)?s.more:[]).slice(0,4).forEach(m=>{if(typeof m==="string"&&m)B.push(Object.assign({},base,{head:s.h,body:m,cont:true,story:s,vis}))});
 }
 function hasGood(){return [].concat(D.goodnews||[],D.localgood||[]).some(s=>s&&s.h&&s.b)}
 function buildBeats(c,cycleStartMs){

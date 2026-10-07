@@ -55,6 +55,7 @@ def clean(lst, hours=24, need_place=False, fresh=False):
         m = [t for t in m if isinstance(t, str) and len(t.strip()) > 2][:3]
         if m: x['more'] = m
         if need_place: x['place'] = s['place']; x['tz'] = s['tz']
+        elif isinstance(s.get('place'), str) and s['place'].strip(): x['place'] = s['place'].strip()[:60]  # pinned on the news wall's map
         article(s, x, fresh)
         out.append(x)
     return out
