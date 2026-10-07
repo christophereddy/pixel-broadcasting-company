@@ -11,6 +11,7 @@
 <script src="../shared/ads.js"></script>
 <script src="f1.js"></script>
 <script src="f1cam.js"></script>
+<script src="show.js"></script>
 <style>
 /* Layout: arcade cabinet. Header with sport tabs (NFL and MLB work), 16:9 stage with booth (top-left) and scoreboard (top-right), live feed under it, game list at right. */
 :root{
@@ -57,6 +58,8 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .banner .bs{font-family:var(--display);font-size:1.88cqw;color:var(--ink);margin-top:1cqw}
 .adcut{right:1.6cqw;bottom:4.8cqw;width:56cqw;padding:0;pointer-events:none}
 .adlink{position:absolute;inset:0;pointer-events:auto}
+/* the sports desk's break: the screen itself is clickable, like the newsroom's */
+.deskad{position:absolute;left:3%;right:3%;top:50%;bottom:3%;z-index:4;cursor:pointer}
 .adlink[hidden]{display:none}
 .adhead{font-family:var(--headline);font-size:1.7cqw;color:var(--gold);background:#0c0e1c;padding:.8cqw .9cqw;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .adcut canvas{display:block;width:100%;image-rendering:pixelated;image-rendering:crisp-edges}
@@ -75,6 +78,9 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .feed{background:var(--panel);border:2px solid var(--edge);min-width:0}
 .feed h3,.side h3,.tline h3{font-family:var(--display);font-size:13px;margin:0;padding:12px 12px 4px;background:none;color:var(--gold);letter-spacing:.1em;font-weight:400;display:flex;justify-content:space-between;gap:8px}
 .feed h3 span,.tline h3 span{color:var(--dim)}
+.feed h3 #feedtitle{color:var(--gold)}
+.showres{font-family:var(--display);font-size:10px;padding:5px 8px;background:var(--panel-2);color:var(--gold);border:2px solid var(--gold);letter-spacing:.06em}
+.showres[aria-pressed="true"]{background:var(--gold);color:var(--navy)}
 #log{list-style:none;margin:0;padding:6px 12px;height:190px;overflow-y:auto;font-size:20px}
 #log li{display:grid;grid-template-columns:7.5em 3.2em minmax(0,1fr);gap:8px;padding:3px 0;border-bottom:1px dashed #2a3060;color:#c9c6b4}
 #log li:first-child{color:var(--ink)}
@@ -95,10 +101,27 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .tl-head{position:absolute;top:-5px;bottom:-5px;left:0;width:4px;margin-left:-2px;background:var(--gold);box-shadow:0 0 0 2px #05060d;pointer-events:none}
 .tl-hover{font-size:18px;color:var(--dim);padding:4px 12px;min-height:1.5em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tl-scores{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 10px}
-.tl-sc{font-size:17px;padding:2px 8px;background:var(--panel-2);border:2px solid var(--edge);display:flex;gap:6px;align-items:center;font-variant-numeric:tabular-nums}
-.tl-sc:hover{border-color:var(--gold)}
+.tl-sc{font-size:17px;padding:3px 6px 3px 8px;background:var(--panel-2);border:2px solid var(--edge);display:flex;gap:6px;align-items:center;font-variant-numeric:tabular-nums}
 .tl-sc i{width:10px;height:10px;border:2px solid #fff;flex:none}
+.tl-go{font-family:var(--display);font-size:9px;padding:4px 5px;background:var(--navy);color:var(--ink);border:2px solid var(--edge);white-space:nowrap}
+.tl-go:hover{border-color:var(--gold);color:var(--gold)}
 .side{display:flex;flex-direction:column;gap:12px}
+/* the Sports Desk rundown: the same card, sizes and colours as the newsroom's rundown (index.html), so the two match */
+#rdpanel{padding:14px 16px}
+#rdpanel[hidden]{display:none}
+#rdpanel h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--gold);margin:0 0 10px}
+#rdpanel .rdhint{margin:0 0 6px;color:var(--muted);font-size:16px}
+#deskrd{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+#deskrd li{display:flex;flex-direction:column;gap:0;padding:4px 8px;font-size:20px;font-variant-numeric:tabular-nums}
+#deskrd li .tm{color:var(--muted);white-space:nowrap;font-size:16px;line-height:1.1}
+#deskrd li.now{background:var(--navy)}
+#deskrd li.now .tm{color:var(--gold)}
+#deskrd li.now .tm::after{content:" NOW";font-family:var(--f-label);font-size:10px;color:var(--live)}
+#deskrd .pk{all:unset;cursor:pointer;color:var(--text);text-decoration:underline dotted 1px;text-underline-offset:3px;min-width:0}
+#deskrd .pk:hover{color:var(--gold)}
+#deskrd .pk:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+#deskrd li.picked{background:#3a1420}
+#deskrd li.picked .tm::after{content:" NEXT";font-family:var(--f-label);font-size:10px;color:var(--gold)}
 .panel{background:var(--panel);border:2px solid var(--edge);min-width:0}
 .panel h3 span{color:var(--live)}
 .teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:10px 10px 4px}
@@ -198,6 +221,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   </header>
   <div class="pbc-ctl">
     <nav class="tabs" aria-label="Sport">
+      <button class="tab" aria-pressed="false" id="tab-desk" title="Bo Kowalski's sports desk: recaps, highlights and stats from every sport, and live games as they start">DESK</button>
       <button class="tab" aria-pressed="true" id="sport-nfl">NFL</button>
       <button class="tab" aria-pressed="false" id="sport-cfb">NCAAF</button>
       <button class="tab" aria-pressed="false" id="sport-nba">NBA</button>
@@ -231,6 +255,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
         <div class="dd" id="dd"></div>
       </div>
 
+      <a class="adlink deskad" id="deskad" href="#" target="_blank" rel="noopener" hidden aria-label="Advertise on Pixel Broadcasting"></a>
       <div class="win notice" id="notice" hidden></div>
       <div class="banner" id="banner" hidden><div class="bt">TIME OUT</div><div class="bs" id="banner-sub"></div></div>
       <div class="win adcut" id="adcut" hidden><div class="adhead" id="adcut-head"></div><canvas id="adcut-cv" width="240" height="120"></canvas><a class="adlink" id="adcut-link" href="#" target="_blank" rel="noopener" hidden aria-label="Advertise on Pixel Broadcasting"></a><div class="adcap" id="adcut-cap"></div></div>
@@ -245,7 +270,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     </div>
 
     <div class="feed">
-      <h3>LIVE FEED <span id="feedsrc">ESPN play-by-play</span></h3>
+      <h3><span id="feedtitle">LIVE FEED</span> <span id="feedsrc">ESPN play-by-play</span></h3>
       <ul id="log"><li class="empty">Pick a game to see its play-by-play here.</li></ul>
     </div>
 
@@ -269,6 +294,11 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   </main>
 
   <aside class="side">
+   <div class="panel" id="rdpanel" hidden>
+    <h2>RUNDOWN</h2>
+    <p class="rdhint">Pick a segment to jump to it after the current one.</p>
+    <ol id="deskrd"></ol>
+   </div>
    <div class="panel" id="gamepanel">
     <h3>THIS GAME <span id="gp-state"></span></h3>
     <div id="gp-empty" class="none">Pick a game or a team below.</div>
@@ -283,7 +313,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     <div class="detail" id="detail" hidden></div>
    </div>
    <div class="panel">
-    <h3>GAMES</h3>
+    <h3>GAMES <button class="showres" id="show-res" type="button" aria-pressed="false" title="Results are hidden until a replay reaches them. Show final scores, scoring markers, box scores and the F1 winner now">SHOW RESULTS</button></h3>
     <div id="err" class="err" hidden></div>
     <div class="confbar" id="confbar" hidden><label for="conf">CONFERENCE</label><select id="conf"></select></div>
     <section><h4>LIVE NOW</h4><div id="list-live"></div></section>
@@ -356,6 +386,24 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
 const pick = (arr, seed) => arr[hash(seed) % arr.length];
+
+/* ---- spoiler-free by default: results stay hidden (SHOW RESULTS reveals them) and keep a finished game's outcome out of sight until the replay reaches it ----
+   It hides final scores in the game lists, the scoring markers ahead of the playhead, the box-score stats and the
+   F1 camera's "race winner" default. Hidden is the default (Chris, 2026-10-07); a viewer who presses SHOW RESULTS keeps
+   that choice in this browser (localStorage), so it survives a reload. */
+let HIDE_RES = true;
+try { HIDE_RES = localStorage.getItem('pbc-hide-results') !== '0'; } catch (e) {}
+const hideRes = () => HIDE_RES;
+// stats and markers come back once the replay has played out, so the end of a game isn't hidden from itself
+const hidden = () => HIDE_RES && S.mode === 'replay' && !(S.replayDone || S.f1r?.done);
+function setHideRes(on){
+  HIDE_RES = !!on;
+  try { localStorage.setItem('pbc-hide-results', on ? '1' : '0'); } catch (e) {}
+  const b = $('show-res'); b.setAttribute('aria-pressed', String(!HIDE_RES)); b.textContent = HIDE_RES ? 'SHOW RESULTS' : 'HIDE RESULTS';
+  renderList(); refreshDetail(); if (S.tview) renderTeamPage();
+  if (isF1()) { if (S.f1r) { S.f1r.shown = -1; f1RenderTimeline(); } $('f1cam-sel').dataset.race = ''; f1CamPicker(); }
+  else if (S.rp) { S.rp.shown = -1; renderTimeline(); }
+}
 
 /* ================= colors ================= */
 function hexToRgb(h){ h = h.replace('#',''); if (h.length === 3) h = h.split('').map(c => c + c).join(''); const n = parseInt(h, 16) || 0; return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
@@ -528,7 +576,8 @@ function gameLine(ev){
   const t = teamsOf(ev), st = stateOf(ev), stat = ev.status || ev.competitions[0].status || {};
   let s = '';
   if (st === 'in') s = `${t.away.score}-${t.home.score} · ${stat.type?.shortDetail || 'Live'}`;
-  else if (st === 'post') s = `${t.away.score}-${t.home.score} ${stat.type?.shortDetail || 'Final'}`;
+  // HIDE RESULTS: a finished game is listed without its score, so picking a replay doesn't give the ending away
+  else if (st === 'post') s = hideRes() ? (stat.type?.shortDetail || 'Final') : `${t.away.score}-${t.home.score} ${stat.type?.shortDetail || 'Final'}`;
   else s = new Date(ev.date).toLocaleString([], {weekday: 'short', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit'});
   return {m: `${t.away.abbr} @ ${t.home.abbr}`, s, st};
 }
@@ -1074,7 +1123,8 @@ const CAST = {
     B: {name: 'SOFIA MARQUEZ', tag: 'SOFIA', look: {jacket: '#8a1c1c', shirt: '#f2f0e8', skin: '#d29a6a', hair: '#2b1a12', brow: '#2b1a12', longHair: true}}
   }
 };
-const crew = () => CAST[S.sport] || CAST.nfl;
+// while the sports desk is on air the booth is Bo Kowalski and that sport's guest commentator (show.js)
+const crew = () => (SHOW.on ? deskCrew() : null) || CAST[S.sport] || CAST.nfl;
 const tag = who => crew()[who].tag + ': ';
 function drawBooth(now){
   const g = booth; g.fillStyle = '#24305e'; g.fillRect(0, 0, 76, 38);
@@ -1083,7 +1133,8 @@ function drawBooth(now){
   const cr = crew();
   drawAnnouncer(g, 1, cr.A.look, S.speaking === 'A', mouth, blink);
   drawAnnouncer(g, 40, cr.B.look, S.speaking === 'B', mouth, (now + 1700) % 5100 < 140);
-  if ($('nameA').textContent !== cr.A.name) { $('nameA').textContent = cr.A.name; $('nameB').textContent = cr.B.name; }
+  if ($('nameA').textContent !== cr.A.name) $('nameA').textContent = cr.A.name;
+  if ($('nameB').textContent !== cr.B.name) $('nameB').textContent = cr.B.name;
   g.fillStyle = '#5b3a1e'; g.fillRect(0, 33, 76, 5); g.fillStyle = '#7d5230'; g.fillRect(0, 33, 76, 1);
   $('nameA').className = S.speaking === 'A' ? 'on' : ''; $('nameB').className = S.speaking === 'B' ? 'on' : '';
 }
@@ -1146,10 +1197,17 @@ function pickVoices(){
   VOICES.wnba = {A: fem.find(v => v !== nina) || fem[0] || nina, B: fem.find(v => v !== nina && v !== (fem.find(x => x !== nina) || fem[0])) || nina};
   // Formula 1: a British voice for Colin where the device has one, and a woman's voice for Sofia
   VOICES.f1 = {A: pref(/UK English Male|Daniel|Arthur|George|Ryan|Oliver/i) || male[0] || A, B: fem.find(v => v !== nina && v !== VOICES.wnba.A) || fem[0] || nina};
+  // the sports desk: Bo hosts, Dot Delgado reads the commercial break (the same pair of voices the newsroom gives them)
+  VOICES.desk = deskVoices(vs, {A, B, male, fem, nina});
 }
 if (window.speechSynthesis) { pickVoices(); speechSynthesis.onvoiceschanged = pickVoices; }
 
 function say(who, text, tok, cap){
+  // on the sports desk the show decides which booth seat a line comes from, and in whose voice (show.js)
+  const slot = SHOW.on ? deskSlot(who) : who;
+  if (!slot) return Promise.resolve();
+  const vp = SHOW.on ? deskVoice(who) : null;
+  who = slot;
   $('caption').textContent = cap || tag(who) + text;
   if (!S.voices || !window.speechSynthesis || !S.started) {
     S.speaking = who;
@@ -1157,7 +1215,7 @@ function say(who, text, tok, cap){
   }
   return new Promise(res => {
     const u = new SpeechSynthesisUtterance(text);
-    const vo = VOICES[S.sport] || VOICES.nfl, st = (VOICE_STYLE[S.sport] || VOICE_STYLE.nfl)[who];
+    const vo = vp ? {[who]: vp.v} : (VOICES[S.sport] || VOICES.nfl), st = vp ? vp.st : (VOICE_STYLE[S.sport] || VOICE_STYLE.nfl)[who];
     if (vo[who]) u.voice = vo[who];
     u.pitch = st[0]; u.rate = st[1]; u.volume = 1;
     let done = false;
@@ -3163,6 +3221,8 @@ function animate(plan, tok){
 }
 
 function step(now){
+  // the sports desk's own screens (scores, stats, what's next, the commercial break) take over the broadcast
+  if (SHOW.scene) { deskRender(now); drawBooth(now); S.lastNow = now; requestAnimationFrame(step); return; }
   if (isF1()) { f1Tick(now); f1Render(now); S.lastNow = now; requestAnimationFrame(step); return; }
   const a = S.anim;
   if (a) {
@@ -3286,6 +3346,11 @@ function setBadge(){
   const b = $('badge');
   b.className = 'badge' + (S.mode === 'live' ? ' live' : '');
   b.textContent = S.mode === 'live' ? 'LIVE' : S.mode === 'replay' ? 'REPLAY' : S.mode === 'pre' ? 'PREGAME' : SPORTS[S.sport].name;
+  setFeedTitle();
+}
+// the feed's heading says what it is carrying: an archived game's plays are a REPLAY FEED, not a live one
+function setFeedTitle(){
+  $('feedtitle').textContent = (typeof SHOW === 'object' && SHOW.on) ? 'SPORTS DESK' : S.mode === 'replay' ? 'REPLAY FEED' : 'LIVE FEED';
 }
 const qName = n => n > 5 ? 'OT' + (n - 4) : n > 4 ? 'OT' : 'Q' + n;
 function applyState(p, plan){
@@ -3393,7 +3458,9 @@ async function pump(){
   if (S.pumping === tok) S.pumping = null;
   if (tok === S.token && S.mode === 'replay' && !S.queue.length && S.replayDone === false) {
     S.replayDone = true; if (S.rp) { S.ri = S.rp.plays.length; updateTimeline(); }
-    $('caption').textContent = tag('B') + 'And that is the ballgame! Thanks for watching.';
+    refreshDetail(); // the box score comes back when HIDE RESULTS was holding it
+    if (!SHOW.on) $('caption').textContent = tag('B') + 'And that is the ballgame! Thanks for watching.';
+    deskResume(); // the sports desk picks the show back up where it left off
   }
 }
 
@@ -3415,6 +3482,7 @@ function playsOf(summary){
 
 /* ================= selecting a game ================= */
 async function selectGame(id, mode){
+  if (!SHOW.driving) deskStop(); // a viewer picking a game takes over from the sports desk
   if (isF1()) return f1Select(id, mode);
   const ev = evOf(id); if (!ev) return;
   S.token++; const tok = S.token;
@@ -3467,6 +3535,8 @@ async function selectGame(id, mode){
     S.queue = plays.slice(); plays.forEach(p => S.seen.add(p.id));
     S.rp = buildReplay(sum, plays); S.ri = 0; renderTimeline();
     $('caption').textContent = `${tag('A')}Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : isBB() ? 'opening tip' : 'opening kick'}!`;
+    // during the sports desk's recap the show picks the clips, so the replay waits to be told where to start
+    if (SHOW.on) return;
     await sleep(1200); pump();
   } else {
     $('log').innerHTML = '';
@@ -3553,21 +3623,40 @@ function renderTimeline(){
   $('tl-prev').title = R.mlb ? 'Back to the start of the half inning' : R.bb ? 'Back to the start of the quarter' : 'Back to the start of the previous drive';
   $('tl-next').title = R.mlb ? 'Skip to the next half inning' : R.bb ? 'Skip to the next quarter' : 'Skip to the next drive';
   const marks = $('tl-marks'), list = $('tl-scores'); marks.innerHTML = ''; list.innerHTML = '';
+  // what the markers are called: each one says where it takes you, and offers the scoring play on its own
+  const unit = R.mlb ? 'SCORING INNING' : R.bb ? 'LEAD CHANGE' : 'SCORING DRIVE';
+  const why = R.mlb ? 'the scoring inning' : R.bb ? 'the lead change' : 'the scoring drive';
+  let shown = 0;
   for (const s of R.scores) {
+    if (hidden() && s.i > S.ri) continue; // HIDE RESULTS: a marker appears once the replay reaches it
+    shown++;
     const m = document.createElement('div'); m.className = 'tl-mark';
     m.style.left = (R.t[s.i] / R.total * 100) + '%'; m.style.background = s.team.color; marks.append(m);
-    const b = document.createElement('button'); b.className = 'tl-sc';
-    b.innerHTML = '<i></i><span></span>'; b.firstChild.style.background = s.team.color;
-    b.lastChild.textContent = `${playLabel(R.plays[s.i])} ${s.team.abbr} ${s.kind} ${s.a}-${s.h}`;
-    b.title = R.mlb ? 'Watch this scoring inning' : R.bb ? 'Watch the lead change' : 'Watch this scoring drive';
-    b.onclick = () => R.bb ? seekTo(Math.max(R.driveOf(s.i), s.i - 4), 'the lead change') : seekTo(R.driveOf(s.i), R.mlb ? 'the scoring inning' : 'the scoring drive');
-    list.append(b);
+    const from = R.bb ? Math.max(R.driveOf(s.i), s.i - 4) : R.driveOf(s.i);
+    const row = document.createElement('div'); row.className = 'tl-sc';
+    row.innerHTML = '<i></i><span class="lb"></span><button class="tl-go"></button><button class="tl-go"></button>';
+    row.firstChild.style.background = s.team.color;
+    row.querySelector('.lb').textContent = `${playLabel(R.plays[s.i])} ${s.team.abbr} ${s.kind} ${s.a}-${s.h}`;
+    const [b1, b2] = row.querySelectorAll('.tl-go');
+    b1.textContent = 'WATCH ' + unit;
+    b1.title = `Start from the top of ${why}, at ${playLabel(R.plays[from])}`;
+    b1.onclick = () => seekTo(from, why);
+    b2.textContent = 'JUMP TO PLAY';
+    b2.title = `Go straight to the play itself, at ${playLabel(R.plays[s.i])}`;
+    b2.onclick = () => seekTo(s.i, 'the scoring play');
+    list.append(row);
   }
+  R.shown = shown;
   updateTimeline();
 }
 function updateTimeline(){
   if (isF1()) return f1UpdateTimeline();
   const R = S.rp; if (!R) return;
+  // HIDE RESULTS: markers come in as the replay passes them, so the list is redrawn when one is due
+  if (R.scores && R.shown != null) {
+    const due = hidden() ? R.scores.filter(s => s.i <= S.ri).length : R.scores.length;
+    if (due !== R.shown) return renderTimeline();
+  }
   const n = R.plays.length, done = S.ri >= n;
   const f = done ? 1 : R.t[S.ri] / R.total;
   $('tl-fill').style.width = (f * 100) + '%'; $('tl-head').style.left = (f * 100) + '%';
@@ -3886,7 +3975,9 @@ function teamHTML(t){
   if (rec) h += `<div class="muted">Record ${esc(rec)}</div>`;
   const tb = isMLB() ? null : teamBox(t);
   h += `<h5>THIS GAME</h5>`;
-  if (isMLB()) h += mlbTeamStats(t);
+  // HIDE RESULTS: a box score is the whole ending, so it waits until the replay has played out
+  if (hidden()) h += `<div class="muted">Hidden while HIDE RESULTS is on. The box score is here once the replay reaches the end.</div>`;
+  else if (isMLB()) h += mlbTeamStats(t);
   else if (tb?.statistics?.length && tb.statistics[0]?.stats) {
     // baseball box scores group team stats (batting, pitching, fielding)
     for (const cat of tb.statistics) {
@@ -3950,7 +4041,10 @@ function playerHTML(t, p, inGame = true){
   const bio = [p.posName || p.pos, p.ht, p.wt, p.age ? `Age ${p.age}` : '', p.exp != null ? (p.exp ? `${p.exp} yr pro` : 'Rookie') : ''].filter(Boolean).join(' · ');
   let h = `<div class="dhead"><b>${esc(t.abbr)} ROSTER</b><button class="back">BACK</button></div>`;
   h += `<div class="pcard"><canvas width="32" height="32"></canvas><div><div class="pn">${p.num != null ? '#' + p.num + ' ' : ''}${esc(p.name.toUpperCase())}</div><div class="pm">${esc(bio)}</div>${p.college ? `<div class="pm">${esc(p.college)}</div>` : ''}</div></div>`;
-  if (inGame) { const gs = gameStatsFor(t, p); h += `<h5>THIS GAME</h5>` + (gs || `<div class="muted">No stats in this game yet.</div>`); }
+  if (inGame) {
+    const gs = hidden() ? '' : gameStatsFor(t, p);
+    h += `<h5>THIS GAME</h5>` + (gs || `<div class="muted">${hidden() ? 'Hidden while HIDE RESULTS is on. This line is here once the replay reaches the end.' : 'No stats in this game yet.'}</div>`);
+  }
   const ss = S.pstats?.[p.id];
   h += `<h5>SEASON</h5>`;
   if (ss === undefined || ss === 'loading') h += `<div class="muted">Loading season stats...</div>`;
@@ -4301,6 +4395,8 @@ function teamGameLine(t, ev){
   if (st === 'pre') return {m: vs, s: day.toLocaleString([], {weekday: 'short', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit'}), st};
   const a = Number(us.score), b = Number(them.score), stat = ev.status || ev.competitions[0].status || {};
   if (st === 'in') return {m: `${vs} · ${us.score}-${them.score}`, s: stat.type?.shortDetail || 'Live', st};
+  // HIDE RESULTS: no W/L and no score on a finished game
+  if (hideRes()) return {m: vs, s: day.toLocaleDateString([], {month: 'numeric', day: 'numeric'}), st};
   return {m: `${a > b ? 'W' : a < b ? 'L' : 'T'} ${us.score}-${them.score} ${vs}`, s: day.toLocaleDateString([], {month: 'numeric', day: 'numeric'}), st};
 }
 function gameButton(t, ev, mode){
@@ -4410,11 +4506,18 @@ const SOUND = PBC.sound(m => {
 });
 const setSound = m => SOUND.set(m), soundMode = () => SOUND.mode;
 PBC.fullScreen($('stage'));
-$('btn-start').onclick = () => {
+// turning the broadcast on: the viewer's click is what lets the browser speak, so both PRESS START and the DESK tab do this
+function pressStart(){
+  if (S.started) return;
   S.started = true; SND.init(); $('start').hidden = true;
   if (soundMode() === 'off') setSound('voices');
   if (window.speechSynthesis) { pickVoices(); const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u); }
-  if (!S.game) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); }
+}
+$('btn-start').onclick = () => {
+  pressStart();
+  // PRESS START opens the sports desk, unless the address names a sport (#nfl, #mlb...), which goes straight to it
+  if (!S.game && S.deskEntry) deskStart();
+  else if (!S.game) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); }
   else if (S.mode === 'live' && !isF1()) say('A', `We are live! ${S.away.loc} ${S.prevScore.a}, ${S.home.loc} ${S.prevScore.h}.`, S.token);
 };
 
@@ -4432,17 +4535,21 @@ async function neutralField(){
 }
 async function openSport(){
   const sport = S.sport, ok = await loadScoreboard();
-  if (!ok || sport !== S.sport) return;
+  if (!ok || sport !== S.sport) return ok;
+  if (SHOW.on) return ok; // the sports desk decides what goes on screen while the show is running
   const ev = firstLive();
   if (ev) selectGame(String(ev.id), 'live');
   else if (S.started) showIdle();
+  return ok;
 }
 // the game the broadcast cuts to: a live one in the picked conference, else any live game
 const firstLive = () => isF1() ? null : sortedGames().live[0] || sortedGames(true).live[0];
 async function switchSport(sp){
   if (sp === S.sport || !SPORTS[sp]) return;
+  if (!SHOW.driving) deskStop(); // a viewer picking a sport takes over from the sports desk
   S.sport = sp; API = SPORTS[sp].api; SITE = SPORTS[sp].site;
-  try { history.replaceState(null, '', location.pathname + location.search + (sp === 'nfl' ? '' : '#' + sp)); } catch (e) {}
+  // the show moves between sports on its own, so it doesn't rewrite the address bar as it goes
+  if (!SHOW.on) try { history.replaceState(null, '', location.pathname + location.search + (sp === 'nfl' ? '' : '#' + sp)); } catch (e) {}
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === sp));
   S.token++;
   if (window.speechSynthesis) speechSynthesis.cancel();
@@ -4452,17 +4559,21 @@ async function switchSport(sp){
   $('tline').hidden = true; $('f1cam').hidden = true; hideNotice(); hideBanner(); showErr('');
   clearLog('Pick a game to see its play-by-play here.');
   $('clock').textContent = '--'; $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
-  $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
+  if (!SHOW.on) $('caption').textContent = `${tag('A')}Welcome to Pixel Sports Live! Let us see what is on in the ${SPORTS[sp].name}.`;
   setBadge(); renderList(); renderGamePanel(); renderDetail(); renderTeams(); $('feedsrc').textContent = SPORTS[sp].src; setCredits();
   loadTeams();
   await neutralField(); if (sp !== S.sport) return;
-  setBoard(); openSport();
+  setBoard(); return openSport();
 }
 for (const k of Object.keys(SPORTS)) $('sport-' + k).onclick = () => switchSport(k);
+$('tab-desk').onclick = () => deskStart();
+$('show-res').onclick = () => setHideRes(!HIDE_RES);
+setHideRes(HIDE_RES);
 
 (async function boot(){
   const h = location.hash.slice(1).toLowerCase();
   if (SPORTS[h]) { S.sport = h; API = SPORTS[h].api; SITE = SPORTS[h].site; }
+  else S.deskEntry = true; // no sport in the address: PRESS START opens the sports desk
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(k === S.sport));
   setBadge(); $('feedsrc').textContent = SPORTS[S.sport].src; setCredits();
   renderTeams(); loadTeams();
@@ -4472,7 +4583,8 @@ for (const k of Object.keys(SPORTS)) $('sport-' + k).onclick = () => switchSport
   setInterval(async () => {
     const had = S.events.size, sport = S.sport; await loadScoreboard(); if (sport !== S.sport) return;
     if (S.mode === 'pre') { const ev = evOf(S.game); if (ev && stateOf(ev) === 'in') selectGame(S.game, 'live'); }
-    if (!S.game && S.started && !had && S.events.size) showIdle();
+    if (!S.game && S.started && !had && S.events.size && !SHOW.on) showIdle();
+    deskWatch(); // a live game the desk cut to is over: back to the desk
   }, 30000);
   setInterval(pollLive, 10000);
 })();

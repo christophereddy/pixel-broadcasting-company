@@ -587,20 +587,38 @@ function f1RenderTimeline(){
   $('tl-prev').innerHTML = '&lt;&lt; LAP'; $('tl-next').innerHTML = 'LAP &gt;&gt;';
   $('tl-prev').title = 'Back one lap'; $('tl-next').title = 'Forward one lap';
   const marks = $('tl-marks'), list = $('tl-scores'); marks.innerHTML = ''; list.innerHTML = '';
+  let shown = 0;
   for (const e of R.events) {
     if (!['lead', 'sc', 'vsc', 'red', 'win'].includes(e.kind)) continue;
+    if (hidden() && e.t > R.clock) continue; // HIDE RESULTS: a marker appears once the replay reaches it
+    shown++;
     const col = R.D.get(e.num)?.color || '#f2b632';
     const m = document.createElement('div'); m.className = 'tl-mark'; m.style.left = (f1FracOf(R, e.t) * 100) + '%'; m.style.background = col; marks.append(m);
-    const b = document.createElement('button'); b.className = 'tl-sc'; b.innerHTML = '<i></i><span></span>'; b.firstChild.style.background = col;
-    b.lastChild.textContent = `L${e.lap} ${e.kind === 'lead' ? R.D.get(e.num).code + ' LEADS' : e.kind === 'win' ? R.D.get(e.num).code + ' WINS' : e.kind === 'red' ? 'RED FLAG' : e.kind === 'vsc' ? 'VSC' : 'SAFETY CAR'}`;
-    b.title = 'Watch from just before this'; b.onclick = () => f1SeekTime(e.t - 12000, 'lap ' + e.lap);
-    list.append(b);
+    const what = e.kind === 'lead' ? R.D.get(e.num).code + ' LEADS' : e.kind === 'win' ? R.D.get(e.num).code + ' WINS' : e.kind === 'red' ? 'RED FLAG' : e.kind === 'vsc' ? 'VSC' : 'SAFETY CAR';
+    const row = document.createElement('div'); row.className = 'tl-sc';
+    row.innerHTML = '<i></i><span class="lb"></span><button class="tl-go"></button><button class="tl-go"></button>';
+    row.firstChild.style.background = col;
+    row.querySelector('.lb').textContent = `L${e.lap} ${what}`;
+    const [b1, b2] = row.querySelectorAll('.tl-go');
+    // the markers say where they take you: the run-up to the moment, or the moment itself
+    b1.textContent = 'WATCH FROM LAP ' + e.lap; b1.title = `Start twelve seconds before it, on lap ${e.lap}`;
+    b1.onclick = () => f1SeekTime(e.t - 12000, 'lap ' + e.lap);
+    b2.textContent = 'JUMP TO MOMENT'; b2.title = 'Go straight to the moment itself';
+    b2.onclick = () => f1SeekTime(e.t - 1500, what.toLowerCase());
+    list.append(row);
   }
+  R.shown = shown;
   f1UpdateTimeline();
 }
 const f1FracOf = (R, t) => clamp((t - R.t0) / (R.end - R.t0), 0, 1);
 function f1UpdateTimeline(){
   const R = S.f1r; if (!R) return;
+  // HIDE RESULTS: markers come in as the race passes them, so the list is redrawn when one is due
+  if (R.shown != null) {
+    const marked = R.events.filter(e => ['lead', 'sc', 'vsc', 'red', 'win'].includes(e.kind));
+    const due = hidden() ? marked.filter(e => e.t <= R.clock).length : marked.length;
+    if (due !== R.shown) return f1RenderTimeline();
+  }
   const f = f1FracOf(R, R.clock);
   $('tl-fill').style.width = (f * 100) + '%'; $('tl-head').style.left = (f * 100) + '%';
   $('tl-now').textContent = R.done ? 'FINAL' : R.clock < R.t0 ? 'GRID' : `LAP ${f1LeadLap(R, R.clock)}`;
@@ -722,7 +740,8 @@ function f1TeamPage(){
   h += `<h5>NEWS</h5><div class="muted">OpenF1 carries timing, not news, so there are no stories here.</div>`;
   h += `<h5>REPLAY A RACE</h5>`;
   if (fin.length) h += fin.slice(0, v.all ? fin.length : 8).map(e => {
-    const rs = (t.results?.get(+e.id) || []).map(r => r.position ? 'P' + r.position : r.dnf ? 'DNF' : '').filter(Boolean).join(', ');
+    // HIDE RESULTS: the race is listed by date only, so the finishing positions don't give it away
+    const rs = hideRes() ? '' : (t.results?.get(+e.id) || []).map(r => r.position ? 'P' + r.position : r.dnf ? 'DNF' : '').filter(Boolean).join(', ');
     return `<button class="game" data-gid="${esc(e.id)}" data-mode="replay"><span class="m">${esc(f1GameLine(e).m)}</span><span class="s">${esc(rs || f1GameLine(e).s)}</span></button>`;
   }).join('') + (fin.length > 8 && !v.all ? `<button class="back more">ALL ${fin.length} RACES</button>` : '');
   else h += `<div class="muted">${D.loading ? 'Loading races...' : 'No finished races this season yet.'}</div>`;

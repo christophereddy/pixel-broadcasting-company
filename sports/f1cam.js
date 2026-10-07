@@ -115,7 +115,8 @@ function f1CarSpots(R, w){
 }
 // the car the camera rides with: the viewer's pick, else the race winner, else the leader
 function f1CamCar(R){
-  const want = S.f1.cam ?? R.win?.driver_number;
+  // HIDE RESULTS: with no pick of their own the camera follows whoever leads right now, not the eventual winner
+  const want = S.f1.cam ?? (hideRes() ? R.order?.[0]?.d.num : R.win?.driver_number);
   const o = (R.order || []).find(r => r.d.num === want && !r.out) || (R.order || []).find(r => r.d.num === R.win?.driver_number && !r.out) || R.order?.[0];
   return o?.d.num;
 }
@@ -283,12 +284,14 @@ function f1CamPicker(){
   const on = isF1() && S.mode === 'replay' && !!R; box.hidden = !on; if (!on) return;
   if (sel.dataset.race !== String(R.k)) {
     sel.dataset.race = String(R.k); sel.replaceChildren();
-    const win = R.D.get(R.win?.driver_number);
+    // HIDE RESULTS: no "race winner" default and no result order in the list, so the picker doesn't name the winner
+    const win = hideRes() ? null : R.D.get(R.win?.driver_number);
     const o0 = document.createElement('option'); o0.value = ''; o0.textContent = win ? `Race winner (${win.code})` : 'Race leader'; sel.append(o0);
     const teams = new Map(); for (const d of R.cars) { if (!teams.has(d.team)) teams.set(d.team, []); teams.get(d.team).push(d); }
     for (const [team, ds] of [...teams].sort((a, b) => a[0].localeCompare(b[0]))) {
       const og = document.createElement('optgroup'); og.label = team;
-      for (const d of ds.sort((a, b) => (a.res?.position || 99) - (b.res?.position || 99))) { const o = document.createElement('option'); o.value = String(d.num); o.textContent = `${d.code} · ${d.name}`; og.append(o); }
+      const order = hideRes() ? [...ds].sort((a, b) => a.num - b.num) : [...ds].sort((a, b) => (a.res?.position || 99) - (b.res?.position || 99));
+      for (const d of order) { const o = document.createElement('option'); o.value = String(d.num); o.textContent = `${d.code} · ${d.name}`; og.append(o); }
       sel.append(og);
     }
     sel.onchange = () => { S.f1.cam = sel.value ? +sel.value : null; S.f1.camst = {}; };
