@@ -28,7 +28,7 @@ Schedule: routine trig_015dGokHMd1Msk935koiC35z runs at midnight Eastern and eve
    - Blocked or useless: BBC, Reuters, AP, The Guardian, DW, France 24, Politico, The Verge, ESPN, NPR sports (stale), api.weather.gov, Open-Meteo, wttr.in, timeanddate, WAMU, Houston Public Media (stale).
 2. Aim for depth: every list carries 4 to 8 stories, and most stories get a `more` array (a JSON list of separate sentence strings, never one string) of 1 to 3 extra sentences of detail from the article itself (open the article with WebFetch for names, numbers and context). Every story airs once per loop, so a full loop runs about 20 to 25 minutes.
    Give every story a `date` (the source's publish date, `YYYY-MM-DD`).
-   Write short, plain, factual items: `h` under ~60 characters; `b` one or two sentences that only state what the source says. International items need `place` and an IANA `tz`.
+   Write short, plain, factual items: `h` under ~60 characters; `b` one or two sentences that only state what the source says. International items need `place` and an IANA `tz`. World and national items get a `place` too when the story happens in one place (a country, US state or city, like `Phoenix, Arizona`), and none when it doesn't; the newsroom pins it on the video wall's map.
 2a. The article behind each story (Chris, 2026-10-07: the newsroom's "Current story" card shows it, with a QR code). Give every story, local and Good News included, these fields from the feeds files:
    - `publisher`: the outlet's name as it appears in `tools/sources.json` (e.g. "PBS NewsHour", "Gothamist").
    - `url`: the article's own https address (the feed item's `link` or the article's `url`), not the source's front page. Leave it out if you only have the front page.
