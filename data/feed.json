@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-07T10:10:00Z",
+ "updatedAt": "2026-10-07T13:21:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Israelis weigh reports Netanyahu was warned",
+   "b": "As Israel marks three years since the Oct. 7 attacks, four people with direct knowledge told NPR that Netanyahu was personally warned about a potential Hamas attack.",
+   "date": "2026-10-07",
+   "more": [
+    "Haaretz, The New York Times and The Atlantic first reported the warnings from regional allies.",
+    "Netanyahu has denied he was warned."
+   ]
+  },
   {
    "h": "Three years since the Oct. 7 attack",
    "b": "Israelis gathered to mourn the Oct. 7, 2023, Hamas-led attack that killed 1,200 people and saw 251 taken hostage.",
@@ -62,6 +71,33 @@
   }
  ],
  "national": [
+  {
+   "h": "Over 1,000 children buried at youth detention sites",
+   "b": "NPR reports Georgetown University researchers are working to identify children who died at 40 reform schools and youth detention centers across the country.",
+   "date": "2026-10-07",
+   "more": [
+    "Researchers have linked 16 families to children who died at a reform school in Cheltenham, Maryland.",
+    "The work is part of the Forgotten Children Initiative, underway since February."
+   ]
+  },
+  {
+   "h": "Flu season is starting unusually early",
+   "b": "Flu activity began picking up in early September, NPR reports, earlier than the usual October or November start.",
+   "date": "2026-10-07",
+   "more": [
+    "Positive flu tests in the West have risen steadily since about the start of September, says Johns Hopkins epidemiologist Caitlin Rivers.",
+    "Emergency department visits for flu have also been rising for weeks."
+   ]
+  },
+  {
+   "h": "Phoenix poet becomes hotline for homeless families",
+   "b": "ProPublica reports 26-year-old advocate Austin Davis' AZ Hugs has become the unofficial emergency shelter hotline for homeless families in Maricopa County.",
+   "date": "2026-10-07",
+   "more": [
+    "Most callers say they first tried 211, only to learn shelter could be months away.",
+    "Teachers, caseworkers, police and hospital workers have called asking for his help."
+   ]
+  },
   {
    "h": "Ex-CIA official pleads guilty in $40M gold case",
    "b": "Former senior CIA official David Rush pleaded guilty to abusing his position to acquire Florida real estate and gold bars worth over $40 million.",
@@ -280,6 +316,14 @@
  ],
  "business": [
   {
+   "h": "Mortgage rates hit near three-year high",
+   "b": "Mortgage rates have reached their highest level in almost three years, NPR reports, making home buying harder while prices are already high.",
+   "date": "2026-10-07",
+   "more": [
+    "Borrowing for a car has also become more expensive."
+   ]
+  },
+  {
    "h": "2 million young adults could lose Medicaid",
    "b": "More than 2 million people ages 19 to 24 could lose Medicaid as work requirements and more frequent checks phase in.",
    "date": "2026-10-06",
@@ -381,6 +425,14 @@
  "goodnews": [],
  "local": [
   {
+   "h": "ICE arrests near 40,000 across NY and NJ",
+   "b": "ICE has made more than 19,500 arrests in New York state and nearly 18,000 in New Jersey during Trump's second term, Gothamist reports from new government data.",
+   "date": "2026-10-07",
+   "more": [
+    "The arrests are largely of Latin American immigrant men without criminal histories."
+   ]
+  },
+  {
    "h": "Mamdani names Rikers oversight board chair",
    "b": "Mayor Zohran Mamdani named re-entry advocate Christopher Watler to chair the city's jail oversight board.",
    "date": "2026-10-06",
@@ -440,7 +492,7 @@
   "now": {
    "temp": 49,
    "cond": "Fair",
-   "obs": "7 Oct 04:51 am EDT"
+   "obs": "7 Oct 05:51 am EDT"
   },
   "periods": [
    {
@@ -504,6 +556,14 @@
   {
    "name": "PBS NewsHour",
    "url": "https://www.pbs.org/newshour/"
+  },
+  {
+   "name": "ProPublica",
+   "url": "https://www.propublica.org/"
+  },
+  {
+   "name": "NPR via KUOW",
+   "url": "https://www.kuow.org/latest"
   },
   {
    "name": "Science News",
