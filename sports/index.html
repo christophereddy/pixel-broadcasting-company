@@ -4515,6 +4515,9 @@ function pressStart(){
 }
 $('btn-start').onclick = () => {
   pressStart();
+  // the sports desk is already running silently behind this screen: PRESS START just turns the sound on, so the show
+  // carries on from where it is instead of starting over
+  if (SHOW.on) return;
   // PRESS START opens the sports desk, unless the address names a sport (#nfl, #mlb...), which goes straight to it
   if (!S.game && S.deskEntry) deskStart();
   else if (!S.game) { const ev = firstLive(); if (ev) selectGame(String(ev.id), 'live'); else if (S.events.size) showIdle(); }
