@@ -46,12 +46,15 @@ class Page(HTMLParser):
     def __init__(self, base):
         super().__init__(convert_charrefs=True)
         self.base, self.skip, self.text, self.links, self.dates, self.title, self._a, self._t = base, 0, [], [], [], '', None, False
+        self.published, self.updated = [], []  # the same dates, split by kind, for the Current story card
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag in SKIP: self.skip += 1
         if tag == 'title': self._t = True
         if tag == 'meta' and (a.get('property') or a.get('name') or '') in ('article:published_time', 'og:updated_time', 'date', 'pubdate', 'parsely-pub-date', 'article:modified_time'):
             self.dates.append(a.get('content') or '')
+            kind = a.get('property') or a.get('name')
+            (self.updated if kind in ('og:updated_time', 'article:modified_time') else self.published).append(a.get('content') or '')
         if tag == 'time' and a.get('datetime'): self.dates.append(a['datetime'])
         if tag == 'a' and a.get('href'): self._a = [urljoin(self.base, a['href']).split('#')[0], '']; self.text.append(' ')
         if tag in BLOCK: self.text.append('\n')
@@ -131,7 +134,9 @@ def looks_like_article(u, src_url):
 
 def fetch_article(u):
     p = parse_page(u, get(u))
-    return {'url': u, 'title': ' '.join(p.title.split()), 'dates': sorted({when(d) for d in p.dates if d})[:4], 'text': page_text(p, ARTICLE_CHARS)}
+    first = lambda ds: next((w for w in map(when, ds) if re.match(r'\d{4}-\d\d-\d\dT', w)), '')
+    return {'url': u, 'title': ' '.join(p.title.split()), 'dates': sorted({when(d) for d in p.dates if d})[:4],
+            'published': first(p.published), 'updated': first(p.updated), 'text': page_text(p, ARTICLE_CHARS)}
 
 def fetch_source(src):
     out = {'name': src['name'], 'url': src['url'], 'fetchedAt': NOW.strftime('%Y-%m-%dT%H:%M:%SZ')}

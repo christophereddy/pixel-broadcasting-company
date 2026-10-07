@@ -17,6 +17,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `shared/pbc.css`, `shared/pbc.js` | What both channels share: page grid, masthead, NEWS/SPORTS switch, ON AIR, FULL SCREEN, SOUND, the broadcast frame and full-screen mode | Code changes |
 | `tools/REFRESH.md` | Step-by-step instructions the 3-hour refresh follows | When sources or rules change |
 | `tools/sources.json`, `tools/fetch_sources.py`, `.github/workflows/fetch-sources.yml` | Chris's approved news sources, and the hourly Action that saves them (plus recent article text and each desk's forecast) to the `feeds` branch for the refresh to read | `sources.json` only when Chris names a source |
+| `newsroom/story-card.js`, `newsroom/story-card.css` | The "Current story" card above the news rundown: the article behind the story on air (publisher, published and gathered times, link, QR code) | Code changes |
 | `tools/merge.py` | Merges a refresh's gathered stories into `data/`, applying the age rules | Code changes |
 | `tools/cities.py` | The places a city desk can be opened for (name, short code, time zone, lat/lon) | When Chris names a city that is missing |
 | `tools/check_layout.cjs` | Checks that the shared controls sit in the same place on both channels | Code changes |

@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="shared/pbc.css">
 <script src="shared/pbc.js"></script>
 <script src="shared/ads.js"></script>
+<link rel="stylesheet" href="newsroom/story-card.css">
+<script src="newsroom/story-card.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -128,6 +130,7 @@ footer a:focus-visible{outline:2px solid var(--gold)}
   </div>
 
   <aside class="side">
+    <div class="card" id="storyCard" aria-live="polite"></div>
     <div class="card"><h2>RUNDOWN</h2><p class="rdhint">Pick a segment to jump to it after the current story.</p><ol id="rundown"></ol></div>
     <div class="card"><h2>ON THE DESK</h2><ul id="cast"></ul></div>
   </aside>
@@ -591,8 +594,8 @@ function drawWx(t,b,phase){
 /* ---------- rundown ---------- */
 function pick(list,k,c){const out=[];if(!list||!list.length)return out;k=Math.min(k,list.length);for(let i=0;i<k;i++)out.push(list[(c*k+i)%list.length]);return out}
 function say(B,s,base){
-  B.push(Object.assign({},base,{head:s.h,body:s.b}));
-  (Array.isArray(s.more)?s.more:[]).slice(0,4).forEach(m=>{if(typeof m==="string"&&m)B.push(Object.assign({},base,{head:s.h,body:m,cont:true}))});
+  B.push(Object.assign({},base,{head:s.h,body:s.b,story:s}));
+  (Array.isArray(s.more)?s.more:[]).slice(0,4).forEach(m=>{if(typeof m==="string"&&m)B.push(Object.assign({},base,{head:s.h,body:m,cont:true,story:s}))});
 }
 function hasGood(){return [].concat(D.goodnews||[],D.localgood||[]).some(s=>s&&s.h&&s.b)}
 function buildBeats(c,cycleStartMs){
@@ -800,6 +803,7 @@ function frame(){
     $("belowHead").textContent=b.head;$("belowSum").textContent=b.body;
     document.querySelectorAll("#cast li").forEach(li=>li.classList.toggle("on",li.dataset.k===b.sp));
     lastRd=[B,cycleStart,cycleLen,idx];renderRundown(B,cycleStart,cycleLen,idx);
+    PBC_STORY.show(b,D.location.tz); // the article behind the story on air (newsroom/story-card.js)
     // the commercial screen is clickable when its ad has a link
     const al=$("adlink"),ad=b.scene==="ads"&&b.ad;
     if(ad&&ad.url){al.href=ad.url;al.rel=ad.house?"noopener":"noopener sponsored";al.setAttribute("aria-label",ad.house?"Advertise on PBC":"Visit "+tcase(ad.name));al.hidden=false}else al.hidden=true;
