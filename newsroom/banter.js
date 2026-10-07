@@ -1,5 +1,5 @@
 /* Pixel Broadcasting Company: desk banter between news segments.
-   The words live in news/banter.json (short exchanges, the Batty and Pip running bits, cast birthdays and anniversaries),
+   The words live in newsroom/banter.json (short exchanges, the Batty and Pip running bits, cast birthdays and anniversaries),
    a fixed file Chris edits. Nothing here is written live: the page only picks from that file.
    weave() takes the newsroom's list of beats and slips a two-line exchange in where one segment ends and the next begins,
    at most perLoop times a loop, and never next to a serious story. Each exchange takes exactly one story's time,
@@ -14,7 +14,7 @@ const okEx=e=>e&&Array.isArray(e.lines)&&e.lines.length>=1&&e.lines.slice(0,2).e
 
 async function load(){
   if(location.protocol==="file:")return false;
-  try{const r=await fetch("news/banter.json",{cache:"no-cache"});if(!r.ok)return false;
+  try{const r=await fetch("newsroom/banter.json",{cache:"no-cache"});if(!r.ok)return false;
     const j=await r.json();if(!j||typeof j!=="object")return false;
     DATA=j;
     WORDS=new RegExp("\\b("+(Array.isArray(j.seriousWords)?j.seriousWords:[]).filter(ok)
@@ -80,8 +80,10 @@ function weave(B,ctx){
     if(prev.seg==="Commercial break"||next.seg==="Commercial break"||!base(prev.seg,next.seg).length)continue;
     if(seriousSeg(prev.seg)||seriousSeg(next.seg))continue;
     // the whole segment just finished, and the next segment's opening and first story
-    if(B.slice(prev.from,prev.to+1).some(seriousText)||B.slice(next.from,Math.min(next.to,next.from+1)+1).some(seriousText))continue;
-    slots.push({at:next.from,prev:prev.seg,next:next.seg});
+    if(B.slice(prev.from,prev.to+1).some(b=>!b.tease&&seriousText(b))||B.slice(next.from,Math.min(next.to,next.from+1)+1).some(seriousText))continue;
+    // banter goes before the segment's "Up next" tease (teases.js), so the tease still leads straight into the next segment
+    let at=next.from;while(at-1>prev.from&&B[at-1].tease)at--;
+    slots.push({at,prev:prev.seg,next:next.seg});
   }
   if(!slots.length)return B;
   const n=Math.min(per,slots.length),c=Math.max(0,ctx.c|0),first=c%slots.length,chosen=[];

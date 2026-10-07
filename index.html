@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="shared/pbc.css">
 <script src="shared/pbc.js"></script>
 <script src="shared/ads.js"></script>
-<script src="news/banter.js"></script>
+<script src="newsroom/banter.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -500,7 +500,7 @@ function drawPip(t){
   f(21,140,1,1,E);f(23,140,1,1,E);                                 // eyes
   f(8+step*2,146,2,1,G);f(14-step*2,146,2,1,G);                    // feet
 }
-/* ---------- running bits (news/banter.json) ----------
+/* ---------- running bits (newsroom/banter.json) ----------
    Batty walks down the desk and knocks something off the end; Pip wanders across the weather map.
    Both play from the start of their banter line, timed in real milliseconds so a held voice line doesn't freeze them. */
 let bitB=null,bitT=0;
@@ -671,7 +671,7 @@ function buildBeats(c,cycleStartMs){
     good.forEach((s,i)=>say(B,s,{seg:"Good News",sp:i%2?"B":"A",shot:i%2?"B":"A",cat:"GOOD NEWS",wall:"goodnews"}))}
   B.push({seg:"Sign-off",sp:"B",shot:"wide",cat:"PBC NEWS",head:"That's the news for now.",body:"Pixel Broadcasting Company never signs off. Stay with us for the next round of headlines.",wall:"logo"});
   breakAds(c).forEach(ad=>B.push(adBeat(ad)));
-  // Desk banter between segments (news/banter.js): fixed lines, skipped next to serious stories.
+  // Desk banter between segments (newsroom/banter.js): fixed lines, skipped next to serious stories.
   return PBC_BANTER.weave(B,{c,now:cycleStartMs||Date.now(),tz:D.location.tz,beat:BEAT,cast:CAST});
 }
 /* ---------- commercial break: three 10-second ads between the sign-off and the top of the news ----------
