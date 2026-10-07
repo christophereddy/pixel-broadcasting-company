@@ -1,0 +1,40 @@
+/* The newsroom's "Current story" card (newsroom/story-card.js), above the rundown.
+   Phones lead with a big READ THE ARTICLE button and drop the QR code; laptops, desktops and TVs show the QR code,
+   larger on wide screens, since a code on a television is read with a phone across the room. */
+#storyCard{display:flex;flex-direction:column;gap:6px}
+#storyCard h2{margin:0}
+#storyCard p{margin:0}
+#storyCard.cs-off .cs-body{display:none}
+#storyCard:not(.cs-off) .cs-idle{display:none}
+.cs-idle{color:var(--muted);font-size:17px;line-height:1.2}
+.cs-seg{font-family:var(--f-label);font-size:10px;letter-spacing:.08em;color:var(--live)}
+.cs-head{font-family:var(--f-display);font-weight:700;font-size:19px;line-height:1.12;margin-top:2px!important}
+.cs-meta{margin:6px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:4px 10px}
+.cs-meta div{min-width:0}
+.cs-meta div[hidden]{display:none}
+.cs-meta dt,.cs-lbl{font-family:var(--f-label);font-size:9px;letter-spacing:.08em;color:var(--gold)}
+.cs-meta dd{margin:0;font-size:16px;line-height:1.1;overflow-wrap:anywhere}
+.cs-ago{color:var(--muted)}
+.cs-unk{color:var(--muted);font-style:italic}
+.cs-link{display:flex;align-items:flex-start;gap:10px;margin-top:6px}
+.cs-art{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.cs-art a{color:var(--text);font-size:17px;line-height:1.15;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px;overflow-wrap:anywhere}
+.cs-art a:hover{color:var(--gold)}
+.cs-art a:focus-visible,.cs-read:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.cs-qr{flex:none;display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none}
+.cs-qr canvas{width:104px;height:104px;image-rendering:pixelated;image-rendering:crisp-edges;background:#fff;padding:4px;box-sizing:content-box}
+.cs-qr span{font-family:var(--f-label);font-size:9px;letter-spacing:.06em;color:var(--muted)}
+.cs-read{display:none}
+
+/* TV and wide screens: the QR code is the main way in */
+@media (min-width:1600px){
+  .cs-qr canvas{width:132px;height:132px}
+  .cs-head{font-size:21px}
+}
+/* Phones: the link is the main way in; a code on the phone's own screen can't be scanned */
+@media (max-width:640px){
+  .cs-qr{display:none!important}
+  .cs-read{display:block;margin-top:6px;text-align:center;font-family:var(--f-label);font-size:14px;letter-spacing:.06em;padding:12px;background:var(--gold);color:var(--navy);text-decoration:none}
+  .cs-read[hidden]{display:none}
+  .cs-head{font-size:21px}
+}

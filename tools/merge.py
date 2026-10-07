@@ -23,9 +23,31 @@ def ok(s, hours):
     except Exception: return False
     return now - d <= dt.timedelta(hours=hours + 24)  # date-only: allow the whole publish day
 
-def clean(lst, hours=24, need_place=False):
+def iso(v):
+    """An ISO 8601 time as UTC 'YYYY-MM-DDTHH:MM:SSZ', or None when it isn't one (date-only values are not times)."""
+    if not isinstance(v, str) or not re.match(r'\d{4}-\d\d-\d\dT\d\d:\d\d', v): return None
+    try: t = dt.datetime.fromisoformat(v.strip().replace('Z', '+00:00'))
+    except ValueError: return None
+    return (t if t.tzinfo else t.replace(tzinfo=dt.timezone.utc)).astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+# The article behind each story, for the newsroom's Current story card. All optional; a missing one shows as unknown.
+# gathered is when PBC first gathered the article: kept from an earlier refresh when the same article comes back,
+# otherwise the gatherer's value, otherwise this refresh (only for stories gathered this time, never for carried-over ones).
+FIRST = {}
+def article(s, x, gathered_now):
+    if isinstance(s.get('publisher'), str) and s['publisher'].strip(): x['publisher'] = s['publisher'].strip()[:80]
+    if isinstance(s.get('title'), str) and s['title'].strip(): x['title'] = ' '.join(s['title'].split())[:200]
+    if isinstance(s.get('url'), str) and re.match(r'^https://[^\s"<>]+$', s['url']) and len(s['url']) <= 500: x['url'] = s['url']
+    for k in ('published', 'updated'):
+        if iso(s.get(k)): x[k] = iso(s.get(k))
+    got = [g for g in (FIRST.get(x.get('url')), FIRST.get(x['h']), iso(s.get('gathered'))) if g]
+    if got: x['gathered'] = min(got)
+    elif gathered_now: x['gathered'] = NOW
+
+def clean(lst, hours=24, need_place=False, fresh=False):
     out = []
     for s in lst or []:
+        if isinstance(s, dict) and not s.get('date') and iso(s.get('published')): s = dict(s, date=iso(s['published'])[:10])
         if not (isinstance(s, dict) and s.get('h') and s.get('b') and ok(s, hours)): continue
         if need_place and not (s.get('place') and s.get('tz')): continue
         x = {'h': s['h'], 'b': s['b'], 'date': s['date']}
@@ -33,11 +55,12 @@ def clean(lst, hours=24, need_place=False):
         m = [t for t in m if isinstance(t, str) and len(t.strip()) > 2][:3]
         if m: x['more'] = m
         if need_place: x['place'] = s['place']; x['tz'] = s['tz']
+        article(s, x, fresh)
         out.append(x)
     return out
 
 def pick(new, prev, hours=24, need_place=False):
-    return clean(new, hours, need_place) or clean(prev, hours, need_place)
+    return clean(new, hours, need_place, fresh=True) or clean(prev, hours, need_place)
 
 def wx(new):
     if new and isinstance(new.get('periods'), list) and (new.get('now') or new['periods']):
@@ -49,6 +72,12 @@ loc = {}
 for f in sorted(glob.glob(f'{R}/locals_*.json')): loc.update(json.load(open(f)))
 old = json.load(open(FEED))
 desks = {d['slug']: d for d in json.load(open(LOCALS))}
+for lst in [v for v in old.values() if isinstance(v, list)] + [d.get(k) or [] for d in desks.values() for k in ('local', 'goodnews')]:
+    for s in lst:
+        g = isinstance(s, dict) and iso(s.get('gathered'))
+        if not g: continue
+        for k in (s.get('url'), s.get('h')):
+            if k and (k not in FIRST or g < FIRST[k]): FIRST[k] = g
 
 # National desks
 feed = {'updatedAt': NOW, 'location': old['location']}
