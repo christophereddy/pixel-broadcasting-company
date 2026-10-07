@@ -512,9 +512,10 @@ function deskProp(kind,x,y){
   else if(kind==="plant"){R("#b5523a",x,y-4,6,4);R("#3f8f3a",x+1,y-8,1,4);R("#5fbf6f",x-1,y-9,3,2);R("#5fbf6f",x+3,y-10,3,2);R("#3f8f3a",x+3,y-8,1,4)}
   else{R("#f4f5fb",x,y-5,5,5);R("#6b3a1e",x+1,y-5,3,1);R("#f4f5fb",x+5,y-4,1,1);R("#f4f5fb",x+6,y-3,1,2);R("#f4f5fb",x+5,y-1,1,1)}
 }
+const bang=(x,y)=>{R("#f2b632",x,y,1,3);R("#f2b632",x,y+4,1,1)};   // the pixel font has no "!"
 function drawBattyBit(t,b){
   const y=125,stop=PROP_X+8;
-  if(b.bit==="batty-after"){drawCat(t,{x:stop,dir:-1,mode:"s"});if(Math.floor(t/900)%4===0)txt("!",stop+6,y-22,"#f2b632");return}
+  if(b.bit==="batty-after"){drawCat(t,{x:stop,dir:-1,mode:"s"});if(Math.floor(t/900)%4===0)bang(stop+7,y-22);return}
   const el=bitTime(t,b),walk=2400;
   let x=stop,mode="s",px=PROP_X,py=y;
   if(el<walk){x=CAT_BED+(stop-CAT_BED)*el/walk;mode="w"}
@@ -524,7 +525,7 @@ function drawBattyBit(t,b){
   if(py<y+60)deskProp(b.prop,Math.round(px),py);
   drawCat(t,{x:Math.round(x),dir:-1,mode});
   if(push>0&&push<300)R("#121218",x-2,y-5,3,1);   // the paw
-  if(push>420&&push<1800)txtC(b.prop==="papers"?"FLUTTER!":"CLANK!",96,y-24-(Math.floor(push/120)%2),"#f2b632");
+  if(push>420&&push<1800){const w=b.prop==="papers"?"FLUTTER":"CLANK",hy=y-30-(Math.floor(push/120)%2);txtC(w,PROP_X+2,hy,"#f2b632");bang(PROP_X+2+(tw(w)>>1)+2,hy)}
 }
 function drawPipCameo(t,b){
   const el=bitTime(t,b),x=Math.round(Math.max(232,384-el/22)),y=126,s=2,step=Math.floor(t/220)%2,P="#f4a0b8",G="#e5607f",E="#1b1b25";
