@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-07T07:13:00Z",
+ "updatedAt": "2026-10-07T10:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Three years since the Oct. 7 attack",
+   "b": "Israelis gathered to mourn the Oct. 7, 2023, Hamas-led attack that killed 1,200 people and saw 251 taken hostage.",
+   "date": "2026-10-07",
+   "more": [
+    "The war it sparked has killed at least 74,000 Palestinians in Gaza, including 21,000 children, Al Jazeera reports.",
+    "A ceasefire took effect Oct. 10, 2025, but attacks and killings have continued."
+   ]
+  },
   {
    "h": "France suspends high school classes for week",
    "b": "France's prime minister suspended high school classes nationwide for the rest of the week as protesters clashed with police.",
@@ -53,6 +62,14 @@
   }
  ],
  "national": [
+  {
+   "h": "Ex-CIA official pleads guilty in $40M gold case",
+   "b": "Former senior CIA official David Rush pleaded guilty to abusing his position to acquire Florida real estate and gold bars worth over $40 million.",
+   "date": "2026-10-06",
+   "more": [
+    "Prosecutors say he invented a 'highly classified' program to justify buying luxury property he planned to resell."
+   ]
+  },
   {
    "h": "Christa Pike awake after failed execution",
    "b": "Christa Pike, who survived Tennessee's attempt to execute her, is conscious and speaking in a hospital, her attorneys said.",
@@ -154,6 +171,16 @@
  ],
  "international": [
   {
+   "h": "Oman rescues crew of tanker hit in Hormuz",
+   "b": "Oman's air force evacuated 10 crew members from a Panamanian-flagged tanker attacked in the Strait of Hormuz.",
+   "date": "2026-10-06",
+   "more": [
+    "The On Peace was struck about 17km off the Omani port of Limah, setting it on fire."
+   ],
+   "place": "Strait of Hormuz, off Oman",
+   "tz": "Asia/Muscat"
+  },
+  {
    "h": "UK arrests 7th suspect in RAF Fairford case",
    "b": "British police arrested a 22-year-old on suspicion of preparing terrorist acts near RAF Fairford, a base hosting US warplanes.",
    "date": "2026-10-06",
@@ -163,6 +190,16 @@
    ],
    "place": "Fairford, England",
    "tz": "Europe/London"
+  },
+  {
+   "h": "Libya's parliament ousts speaker after 12 years",
+   "b": "Libya's eastern-based House of Representatives replaced Speaker Aguila Saleh after 12 years amid growing discontent.",
+   "date": "2026-10-06",
+   "more": [
+    "Lawmakers elected Al-Salhin Abdelnabi al-Obeidi to replace him."
+   ],
+   "place": "Libya",
+   "tz": "Africa/Tripoli"
   },
   {
    "h": "Sudan's al-Burhan rejects talks with RSF",
@@ -218,13 +255,12 @@
    "tz": "Africa/Casablanca"
   },
   {
-   "h": "Yemen forces reclaim Mocha port from Houthis",
-   "b": "Yemeni government forces say they retook the strategic Red Sea port city of Mocha from the Houthis.",
+   "h": "Yemen forces push on Houthi-held Taiz district",
+   "b": "Yemeni government forces launched an offensive to retake the Houthi-held al-Waziiya district in Taiz, part of a push toward the Red Sea coast.",
    "date": "2026-10-06",
    "more": [
-    "Turkiye and Pakistan agreed to deploy troops to Saudi Arabia under the Mecca defence pact after Houthi attacks.",
-    "Al Jazeera reports Houthi targets were bombed in Yemen and people were injured in attacks on Saudi airports.",
-    "Al Jazeera reports Houthi missiles hit Aden airport and another was shot down over Riyadh."
+    "Houthi missiles hit Aden airport, and Saudi Arabia intercepted others aimed at Riyadh and Khamis Mushait.",
+    "Government forces retook the port city of Mocha earlier this week."
    ],
    "place": "Sana'a, Yemen",
    "tz": "Asia/Aden"
@@ -402,46 +438,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
+   "temp": 49,
    "cond": "Fair",
-   "obs": "6 Oct 23:51 pm EDT"
+   "obs": "7 Oct 04:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 48,
-    "text": "Clear, with a low around 48. Light northwest wind. "
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "kind": "high",
-    "temp": 68,
-    "text": "Sunny, with a high near 68. Light southwest wind becoming south 6 to 11 mph in the morning. "
+    "temp": 69,
+    "text": "Sunny, with a high near 69. Calm wind becoming southwest 5 to 9 mph in the morning. "
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 59,
-    "text": "Mostly clear, with a low around 59. Southwest wind 10 to 13 mph. "
+    "temp": 58,
+    "text": "Mostly clear, with a low around 58. Southwest wind around 8 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 75,
-    "text": "Sunny, with a high near 75. West wind 9 to 13 mph. "
+    "text": "Mostly sunny, with a high near 75. Southwest wind 8 to 13 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 58,
-    "text": "Mostly clear, with a low around 58. Northwest wind 7 to 9 mph. "
+    "temp": 57,
+    "text": "Mostly clear, with a low around 57. Northwest wind around 8 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 70,
-    "text": "Sunny, with a high near 70."
+    "temp": 71,
+    "text": "Sunny, with a high near 71. West wind 7 to 11 mph. "
+   },
+   {
+    "name": "Friday Night",
+    "kind": "low",
+    "temp": 57,
+    "text": "Mostly clear, with a low around 57."
    }
   ]
  },
