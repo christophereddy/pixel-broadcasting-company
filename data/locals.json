@@ -17,13 +17,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
-    "cond": "Fair",
-    "obs": "6 Oct 20:52 pm EDT"
+    "temp": 64,
+    "cond": "A Few Clouds",
+    "obs": "6 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 56,
      "text": "Clear, with a low around 56. East wind around 5 mph. "
@@ -72,7 +72,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -121,16 +121,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "6 Oct 20:54 pm EDT"
+    "obs": "6 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 43,
-     "text": "Clear, with a low around 43. West wind 6 to 8 mph. "
+     "text": "Clear, with a low around 43. West wind around 7 mph. "
     },
     {
      "name": "Wednesday",
@@ -176,7 +176,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -209,9 +209,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "Fair",
-    "obs": "6 Oct 19:53 pm CDT"
+    "temp": 65,
+    "cond": "A Few Clouds",
+    "obs": "6 Oct 22:53 pm CDT"
    },
    "periods": [
     {
@@ -264,7 +264,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -277,16 +277,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 79,
-    "cond": "A Few Clouds",
-    "obs": "6 Oct 18:58 pm MDT"
+    "temp": 69,
+    "cond": "Mostly Cloudy",
+    "obs": "6 Oct 20:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly cloudy, with a low around 58. North wind around 6 mph becoming light and variable  after midnight. "
+     "text": "Mostly cloudy, with a low around 58. Southwest wind 3 to 6 mph. "
     },
     {
      "name": "Wednesday",
@@ -332,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -367,7 +367,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 71,
-     "text": "Mostly clear, with a low around 71. West wind 5 to 10 mph becoming east after midnight. "
+     "text": "Mostly clear, with a low around 71. West wind around 5 mph becoming east in the evening. "
     },
     {
      "name": "Wednesday",
@@ -413,7 +413,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -482,16 +482,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 50,
     "cond": "Fair",
-    "obs": "6 Oct 20:51 pm EDT"
+    "obs": "6 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 48,
-     "text": "Clear, with a low around 48. Northwest wind around 6 mph becoming calm  after midnight. "
+     "text": "Clear, with a low around 48. Light northwest wind. "
     },
     {
      "name": "Wednesday",
@@ -537,7 +537,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -584,7 +584,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "goodnews": []
  },
  {
@@ -682,7 +682,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T04:10:00Z",
+  "updatedAt": "2026-10-07T07:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
