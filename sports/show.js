@@ -23,7 +23,10 @@ const SHOW = {
   scene: null,      // 'panel' or 'ad' while a desk screen is up; null during a highlight clip
   guestRole: 'B',   // which of the sport's two commentators is the guest this time round
   loop: 0, brk: false, everOn: false, resume: false, timer: null, ad: null, adEnd: 0,
-  head: '', note: '', rows: []
+  head: '', note: '', rows: [],
+  seg: null,        // the rundown segment on air: a sport key, or 'break'
+  steps: [], step: 0, // that segment's parts (scoreboard, each highlight, stats), shown under it in the rundown
+  pick: null        // a segment the viewer picked in the rundown, played after the current one
 };
 
 // Bo and Dot in the booth's own style, drawn by drawAnnouncer. Their colours follow the newsroom's cast
@@ -61,6 +64,7 @@ function deskTabs(){
   $('tab-desk').setAttribute('aria-pressed', String(SHOW.on));
   for (const k of Object.keys(SPORTS)) $('sport-' + k)?.setAttribute('aria-pressed', String(!SHOW.on && k === S.sport));
   setFeedTitle();
+  deskRundown();
 }
 function deskStop(){
   SHOW.tok++; SHOW.on = false; SHOW.scene = null; SHOW.resume = false; SHOW.brk = false; SHOW.ad = null;
@@ -71,22 +75,64 @@ function deskStop(){
 async function deskStart(){
   deskStop();
   pressStart();                                  // the DESK tab turns the broadcast on, the same as PRESS START
-  SHOW.on = true; SHOW.everOn = true; SHOW.loop = 0; SHOW.tok++;
+  SHOW.on = true; SHOW.everOn = true; SHOW.loop = 0; SHOW.tok++; SHOW.seg = null; SHOW.pick = null;
   const tok = SHOW.tok;
   hideNotice(); hideBanner(); deskTabs();
   deskPanel('PBC SPORTS DESK', [], 'Bo Kowalski has the scores, the highlights and the stats.');
   try { await deskRun(tok); } catch (e) { console.warn('sports desk stopped', e); }
 }
-// the loop: every sport in turn, then the commercial break, then round again
+// the loop: every sport in turn, then the commercial break, then round again. A segment the viewer picks in the
+// rundown goes next, the way the newsroom's rundown works.
+const DESK_SEGS = [...DESK_ORDER, 'break'];
+const deskNext = () => SHOW.pick || DESK_SEGS[(DESK_SEGS.indexOf(SHOW.seg) + 1) % DESK_SEGS.length];
 async function deskRun(tok){
+  let sg = DESK_SEGS[0];
   while (deskAlive(tok)) {
-    for (const sp of DESK_ORDER) {
-      if (!deskAlive(tok)) return;
-      if (await deskSport(sp, tok) === 'live') return;  // a live game has the broadcast now
-    }
+    SHOW.seg = sg; if (SHOW.pick === sg) SHOW.pick = null;
+    if (sg === 'break') { await deskBreak(tok); SHOW.loop++; }
+    else if (await deskSport(sg, tok) === 'live') return;  // a live game has the broadcast now
     if (!deskAlive(tok)) return;
-    await deskBreak(tok);
-    SHOW.loop++;
+    sg = deskNext(); SHOW.pick = null;
+  }
+}
+// Bo's hand-off names whatever really comes next, the viewer's pick included
+function deskOutro(sp){
+  const nx = deskNext();
+  return `That is ${deskLg(sp)}. ${nx === 'break' ? 'A quick break, and we go round again.' : deskLgCap(nx) + ' is next.'}`;
+}
+
+/* ---- the rundown in the side column: every segment of the loop, the one on air first, with its parts ---- */
+function deskSteps(list, k){ SHOW.steps = list; SHOW.step = k || 0; deskRundown(); }
+function deskStep(k){ SHOW.step = k; deskRundown(); }
+function deskRundown(){
+  const pan = $('rdpanel'); if (!pan) return;
+  pan.hidden = !SHOW.on;
+  if (!SHOW.on) return;
+  const ol = $('deskrd'); ol.replaceChildren();
+  const cur = Math.max(0, DESK_SEGS.indexOf(SHOW.seg)), n = DESK_SEGS.length;
+  for (let k = 0; k < n; k++) {
+    const sg = DESK_SEGS[(cur + k) % n], on = SHOW.seg === sg;
+    const li = document.createElement('li');
+    if (on) li.className = 'now'; else if (SHOW.pick === sg) li.className = 'picked';
+    const label = sg === 'break' ? 'COMMERCIAL BREAK' : SPORTS[sg].name + ' RECAP';
+    let nm;
+    if (on) { nm = document.createElement('span'); nm.textContent = label; }
+    else {
+      nm = document.createElement('button'); nm.type = 'button'; nm.className = 'pk'; nm.textContent = label;
+      nm.setAttribute('aria-label', 'Go to the ' + label.toLowerCase() + ' next');
+      nm.onclick = () => { SHOW.pick = SHOW.pick === sg ? null : sg; deskRundown(); };
+    }
+    // the guest for this segment: the role swaps each time round, and segments before this one come round next loop
+    const role = (SHOW.loop + (on || (cur + k) % n > cur ? 0 : 1)) % 2 ? 'A' : 'B';
+    const who = document.createElement('span'); who.className = 'who';
+    who.textContent = sg === 'break' ? 'Dot Delgado' : 'Bo Kowalski with ' + deskName(((CAST[sg] || CAST.nfl)[on ? SHOW.guestRole : role]).name);
+    li.append(nm, who);
+    if (on && SHOW.steps.length) {
+      const sub = document.createElement('ul'); sub.className = 'parts';
+      SHOW.steps.forEach((t, j) => { const p = document.createElement('li'); p.textContent = t; if (j === SHOW.step) p.className = 'on'; else if (j < SHOW.step) p.className = 'done'; sub.appendChild(p); });
+      li.appendChild(sub);
+    }
+    ol.appendChild(li);
   }
 }
 
@@ -94,6 +140,7 @@ async function deskRun(tok){
 async function deskSport(sp, tok){
   const name = SPORTS[sp].name;
   SHOW.guestRole = SHOW.loop % 2 ? 'A' : 'B';
+  deskSteps(['Getting the latest']);
   deskPanel(name + ' DESK', [], 'Getting the latest from ' + SPORTS[sp].src + '.');
   SHOW.driving = true;
   try { if (S.sport !== sp) await switchSport(sp); else await loadScoreboard(); }
@@ -106,6 +153,7 @@ async function deskSport(sp, tok){
   // a live game wins: the desk sends the broadcast there and stands down until it is over
   if (live.length) {
     const ev = live[0];
+    deskSteps(['Live game']);
     deskPanel(name + ' LIVE NOW', [deskRow(ev, 'live')], 'Taking you there now.');
     await deskSay('H', `We have ${deskLg(sp)} live right now. Let us get you straight there.`, tok);
     if (!deskAlive(tok)) return;
@@ -115,21 +163,22 @@ async function deskSport(sp, tok){
     deskTabs();
     return 'live';
   }
-  // HIDE RESULTS is on: a recap would give every ending away, so the desk previews what is coming instead
-  if (hideRes()) return deskPreview(sp, next, fin, tok);
   if (!fin.length) {
+    deskSteps(['Coming up']);
     deskPanel(name + ' DESK', next.slice(0, 5).map(ev => deskRow(ev, 'next')), next.length ? 'Nothing has finished in the last few days.' : 'No games to show.');
     await deskSay('H', `Nothing to recap in ${deskLg(sp)} just yet.` + (next[0] ? ` Next up, ${deskWho(next[0])}.` : ''), tok);
     await deskHold(3500, tok);
     return;
   }
   const guest = (CAST[sp] || CAST.nfl)[SHOW.guestRole];
+  deskSteps(['Scoreboard', sp === 'f1' ? 'The winner' : 'The result', 'Highlights', sp === 'f1' ? 'Classification' : 'Team stats']);
   deskPanel(name + ' SCOREBOARD', fin.slice(0, 5).map(ev => deskRow(ev, 'fin')), 'Scores from ' + SPORTS[sp].src + '.');
   await deskSay('H', `${SHOW.loop ? 'Still with you at' : 'Welcome to'} the PBC sports desk. I am Bo Kowalski, and ${deskName(guest.name)} is alongside me for ${deskLg(sp)}.`, tok);
   if (!deskAlive(tok)) return;
   if (sp === 'f1') return deskF1(sp, fin, tok);
 
   const ev = fin[0];
+  deskStep(1);
   await deskSay(SHOW.guestRole, deskResult(ev), tok);
   if (!deskAlive(tok)) return;
   await deskSay('H', 'Let us look at how it happened.', tok);
@@ -139,20 +188,22 @@ async function deskSport(sp, tok){
   if (!deskAlive(tok)) return;
   deskTabs();
   const clips = deskClips();
+  deskSteps(['Scoreboard', 'The result', ...deskClipSteps(clips), 'Team stats'], 2);
   if (!clips.length) await deskSay('H', 'The play-by-play has no highlight to cut to, so here is the top of the game.', tok);
-  for (const c of clips) {
+  for (const [k, c] of clips.entries()) {
     if (!deskAlive(tok)) break;
+    deskStep(2 + k);
     SHOW.scene = null;                                   // back to the field for the clip itself
     await deskSay('H', c.intro, tok);
     await deskClip(c, tok);
   }
   if (!deskAlive(tok)) return;
   const rows = deskStatRows();
+  deskStep(SHOW.steps.length - 1);
   deskPanel(name + ' TEAM STATS', rows, S.away && S.home ? `${S.away.abbr} at ${S.home.abbr} · ${SPORTS[sp].src}` : SPORTS[sp].src);
   await deskSay(SHOW.guestRole, deskStatLine(rows), tok);
   if (!deskAlive(tok)) return;
-  const nx = DESK_ORDER[(DESK_ORDER.indexOf(sp) + 1) % DESK_ORDER.length];
-  await deskSay('H', `That is ${deskLg(sp)}. ${sp === DESK_ORDER[DESK_ORDER.length - 1] ? 'A quick break, and we go round again.' : deskLgCap(nx) + ' is next.'}`, tok);
+  await deskSay('H', deskOutro(sp), tok);
   await deskHold(1200, tok);
 }
 
@@ -168,35 +219,27 @@ async function deskF1(sp, fin, tok){
   const R = S.f1r;
   if (!R) { await deskSay('H', 'The timing for that race will not load, so we move on.', tok); return; }
   const win = R.D.get(R.win?.driver_number);
+  const clips = deskClips();
+  deskSteps(['Scoreboard', 'The winner', ...deskClipSteps(clips), 'Classification'], 1);
   if (win) await deskSay(SHOW.guestRole, `${win.name} won it for ${win.team}.`, tok);
-  for (const c of deskClips()) {
+  for (const [k, c] of clips.entries()) {
     if (!deskAlive(tok)) break;
+    deskStep(2 + k);
     SHOW.scene = null;
     await deskSay('H', c.intro, tok);
     await deskClip(c, tok);
   }
   if (!deskAlive(tok)) return;
   const rows = (R.order || []).slice(0, 5).map((o, i) => ({c: o.d.color, l: 'P' + (i + 1) + ' ' + o.d.code, r: o.d.team}));
+  deskStep(SHOW.steps.length - 1);
   deskPanel('F1 CLASSIFICATION', rows, 'OpenF1 timing.');
-  await deskSay('H', 'A break, and we go round again.', tok);
+  await deskSay('H', deskOutro(sp), tok);
   await deskHold(1500, tok);
 }
 
-// spoiler-free mode: no scores, no highlights, just what is on next
-async function deskPreview(sp, next, fin, tok){
-  const name = SPORTS[sp].name;
-  const rows = next.slice(0, 3).map(ev => deskRow(ev, 'next'));
-  // the finished games are listed by date only, as replays to pick, with no hint of how they ended
-  for (const ev of fin.slice(0, 3)) rows.push({l: deskRow(ev, 'next').l, r: 'REPLAY ' + new Date(ev.date).toLocaleDateString([], {month: 'numeric', day: 'numeric'})});
-  deskPanel(name + ' COMING UP', rows, 'HIDE RESULTS is on, so the desk leaves the endings alone.');
-  await deskSay('H', `Spoiler-free mode is on, so no results from ${deskLg(sp)} out of me. Here is what is coming up.`, tok);
-  if (!deskAlive(tok)) return;
-  if (next[0]) await deskSay('H', `${deskWho(next[0])}.`, tok);
-  if (fin.length) await deskSay('H', `There ${fin.length === 1 ? 'is one replay' : 'are ' + fin.length + ' replays'} in the list whenever you want one, and I will not say a word about ${fin.length === 1 ? 'it' : 'them'}.`, tok);
-  await deskHold(8000, tok);
-}
-
 /* ---- highlight clips, cut from the replay the sport's own code built ---- */
+// the rundown names each clip by where it sits in the game ("Highlight: the first quarter"), never by its outcome
+const deskClipSteps = clips => clips.map(c => 'Highlight: ' + c.why);
 function deskClips(){
   const out = [];
   if (isF1()) {
@@ -263,9 +306,11 @@ function deskAdLink(ad){
 async function deskBreak(tok){
   const n = ADS.length, c = SHOW.loop;
   const ads = [ADS[(c * 2) % n], ADS[(c * 2 + 1) % n], HOUSE_AD];
+  deskSteps(ads.map(a => a.house ? 'PBC house ad' : deskTcase(a.name)));
   SHOW.brk = true;
   await deskSay('H', 'We will be right back with more from the sports desk.', tok);
   for (let k = 0; k < ads.length && deskAlive(tok); k++) {
+    deskStep(k);
     SHOW.ad = ads[k]; SHOW.adEnd = Date.now() + DESK_AD_MS * (ads.length - k); SHOW.scene = 'ad';
     deskAdLink(ads[k]);
     const [head, body] = deskAdWords(ads[k]);
