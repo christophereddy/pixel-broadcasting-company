@@ -17,16 +17,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 76,
-    "cond": "A Few Clouds",
-    "obs": "6 Oct 17:52 pm EDT"
+    "temp": 69,
+    "cond": "Fair",
+    "obs": "6 Oct 20:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Clear, with a low around 56. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Clear, with a low around 56. East wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -72,7 +72,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -121,16 +121,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "6 Oct 17:54 pm EDT"
+    "obs": "6 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Clear, with a low around 43. West wind 6 to 13 mph. "
+     "text": "Clear, with a low around 43. West wind 6 to 8 mph. "
     },
     {
      "name": "Wednesday",
@@ -176,7 +176,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -209,28 +209,28 @@
   ],
   "weather": {
    "now": {
-    "temp": 74,
-    "cond": "A Few Clouds",
-    "obs": "6 Oct 15:53 pm CDT"
+    "temp": 68,
+    "cond": "Fair",
+    "obs": "6 Oct 19:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 59. Southwest wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. West southwest wind 5 to 10 mph becoming northwest in the afternoon. Winds could gust as high as 15 mph. "
+     "text": "Sunny, with a high near 76. West southwest wind around 10 mph becoming north in the afternoon. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Partly cloudy, with a low around 56. West wind 5 to 10 mph. "
+     "text": "Partly cloudy, with a low around 56. West wind 5 to 15 mph. "
     },
     {
      "name": "Thursday",
@@ -264,7 +264,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -277,16 +277,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 86,
-    "cond": "Mostly Cloudy",
-    "obs": "6 Oct 14:58 pm MDT"
+    "temp": 79,
+    "cond": "A Few Clouds",
+    "obs": "6 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly cloudy, with a low around 58. Northeast wind around 6 mph becoming light and variable  after midnight. "
+     "text": "Mostly cloudy, with a low around 58. North wind around 6 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Wednesday",
@@ -310,7 +310,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56."
+     "text": "Mostly clear, with a low around 56. East wind around 6 mph becoming southwest in the evening. "
     },
     {
      "name": "Friday",
@@ -332,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -343,6 +343,14 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LAUSD at high risk of insolvency, state finds",
+    "b": "California's school finance watchdog says LA Unified is at high risk of insolvency by 2028.",
+    "date": "2026-10-06",
+    "more": [
+     "The agency cited overspending, falling enrollment and rising costs."
+    ]
+   },
    {
     "h": "Trump remark on Iran hitting LA draws fire",
     "b": "Trump mused at a Nebraska rally that Iran could 'take out' Los Angeles and San Diego, drawing criticism.",
@@ -383,7 +391,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 68,
-     "text": "Mostly clear, with a low around 68."
+     "text": "Mostly clear, with a low around 68. West southwest wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Friday",
@@ -405,7 +413,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -474,16 +482,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "6 Oct 17:51 pm EDT"
+    "obs": "6 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Clear, with a low around 48. Northwest wind 5 to 8 mph becoming calm  after midnight. "
+     "text": "Clear, with a low around 48. Northwest wind around 6 mph becoming calm  after midnight. "
     },
     {
      "name": "Wednesday",
@@ -529,7 +537,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -576,7 +584,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "goodnews": []
  },
  {
@@ -586,6 +594,32 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Ferry sick-out strands thousands of riders",
+    "b": "Thousands of Puget Sound ferry riders were stranded Monday as major routes and dozens of sailings were canceled.",
+    "date": "2026-10-06",
+    "more": [
+     "Nearly two dozen engine room workers called out sick and backup crews declined to fill in.",
+     "Their union blamed Washington State Ferries' failure to hire more staff."
+    ]
+   },
+   {
+    "h": "Bellingham man charged with aiding BC shooter",
+    "b": "A Bellingham resident is charged with helping the shooter who killed eight people at Tumbler Ridge, British Columbia, in February.",
+    "date": "2026-10-06",
+    "more": [
+     "Federal prosecutors in Seattle announced the arrest with the FBI and RCMP."
+    ]
+   },
+   {
+    "h": "Orca mom J31 carries dead calf again",
+    "b": "Endangered southern resident orca J31 was seen carrying a dead newborn on her nose in the Strait of Juan de Fuca.",
+    "date": "2026-10-06",
+    "more": [
+     "She did the same in 2016 and has lost at least eight other offspring.",
+     "She has one living daughter, now 7."
+    ]
+   },
    {
     "h": "Mayor Wilson explains budget without tax hike",
     "b": "Seattle Mayor Katie Wilson explained why she relied on cuts, not a JumpStart payroll tax increase, to close a roughly $175 million gap.",
@@ -648,7 +682,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T01:09:00Z",
+  "updatedAt": "2026-10-07T04:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-07T01:09:00Z",
+ "updatedAt": "2026-10-07T04:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -63,6 +63,14 @@
    ]
   },
   {
+   "h": "Oscar winner Eva Marie Saint dies at 102",
+   "b": "Eva Marie Saint, star of 'On the Waterfront' and 'North by Northwest,' died Tuesday at 102.",
+   "date": "2026-10-06",
+   "more": [
+    "'On the Waterfront' was her first film, opposite Marlon Brando."
+   ]
+  },
+  {
    "h": "Televangelist Jim Bakker dies at 86",
    "b": "Jim Bakker, who built the 'PTL Club' televangelism empire with Tammy Faye before losing it to scandal, has died at 86.",
    "date": "2026-10-06",
@@ -73,10 +81,11 @@
   },
   {
    "h": "Disney, ABC take on Trump's FCC in court",
-   "b": "Disney and the FCC face off in a Washington federal court Tuesday over how far First Amendment protections reach.",
+   "b": "ABC asked a federal judge to block the FCC's early review of its broadcast licenses, calling it unconstitutional retaliation.",
    "date": "2026-10-06",
    "more": [
-    "Trump has repeatedly called for ABC to fire late-night host Jimmy Kimmel and has attacked 'The View.'"
+    "Judge Loren AliKhan did not immediately rule.",
+    "A government lawyer argued the court lacks jurisdiction over the case."
    ]
   },
   {
@@ -156,6 +165,17 @@
    "tz": "Europe/London"
   },
   {
+   "h": "Sudan's al-Burhan rejects talks with RSF",
+   "b": "Sudan's army chief Abdel Fattah al-Burhan vowed to retake 'every inch' held by the Rapid Support Forces and rejected negotiations.",
+   "date": "2026-10-06",
+   "more": [
+    "The war has lasted three and a half years.",
+    "He spoke a day after the UN rights council called for a truce."
+   ],
+   "place": "Merowe, Sudan",
+   "tz": "Africa/Khartoum"
+  },
+  {
    "h": "Tuareg rebels pull out of Mali's Kidal",
    "b": "Mali's Tuareg rebels say they are withdrawing from the strategic northern town of Kidal, six months after capturing it.",
    "date": "2026-10-06",
@@ -204,7 +224,7 @@
    "more": [
     "Turkiye and Pakistan agreed to deploy troops to Saudi Arabia under the Mecca defence pact after Houthi attacks.",
     "Al Jazeera reports Houthi targets were bombed in Yemen and people were injured in attacks on Saudi airports.",
-    "Saudi-led forces say they shot down a Houthi missile as fighting rages in Yemen."
+    "Yemeni government forces also claim control of a strategic mountain peak in Taiz."
    ],
    "place": "Sana'a, Yemen",
    "tz": "Asia/Aden"
@@ -287,6 +307,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "Dodgers top Braves, one win from NLCS",
+   "b": "The Dodgers beat the Braves 3-1 in NLDS Game 3 to take a 2-1 series lead.",
+   "date": "2026-10-06",
+   "more": [
+    "Enrique Hernandez and Freddie Freeman homered, and Yoshinobu Yamamoto dominated again.",
+    "Braves ace Chris Sale pitched well but took the loss."
+   ]
+  },
   {
    "h": "White Sox, Rays both take 2-0 ALDS leads",
    "b": "The White Sox beat the Guardians 4-3 and the Rays beat the Yankees 5-2 in Game 2 of the AL Division Series.",
@@ -373,16 +402,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 56,
    "cond": "Fair",
-   "obs": "6 Oct 17:51 pm EDT"
+   "obs": "6 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 48,
-    "text": "Clear, with a low around 48. Northwest wind 5 to 8 mph becoming calm  after midnight. "
+    "text": "Clear, with a low around 48. Northwest wind around 6 mph becoming calm  after midnight. "
    },
    {
     "name": "Wednesday",
