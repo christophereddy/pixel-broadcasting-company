@@ -17,9 +17,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "A Few Clouds",
-    "obs": "7 Oct 05:52 am EDT"
+    "temp": 61,
+    "cond": "Fair",
+    "obs": "7 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -72,7 +72,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -121,16 +121,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Fair",
-    "obs": "7 Oct 05:54 am EDT"
+    "temp": 53,
+    "cond": "A Few Clouds",
+    "obs": "7 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64. Light west wind becoming southwest 5 to 10 mph in the morning. "
+     "text": "Sunny, with a high near 64. Light southwest wind increasing to 5 to 10 mph in the morning. "
     },
     {
      "name": "Tonight",
@@ -142,7 +142,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 72,
-     "text": "A slight chance of showers after 11am.  Partly sunny, then gradually becoming sunny, with a high near 72. Southwest wind 8 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of showers after 11am.  Mostly sunny, with a high near 72. Southwest wind 8 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Thursday Night",
@@ -176,7 +176,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -209,16 +209,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "Fair",
-    "obs": "7 Oct 04:53 am CDT"
+    "temp": 59,
+    "cond": "A Few Clouds",
+    "obs": "7 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. West southwest wind 10 to 15 mph becoming northwest in the afternoon. Winds could gust as high as 20 mph. "
+     "text": "Sunny, with a high near 75. Northwest wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -264,7 +264,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -278,15 +278,15 @@
   "weather": {
    "now": {
     "temp": 60,
-    "cond": "Partly Cloudy",
-    "obs": "7 Oct 03:58 am MDT"
+    "cond": "A Few Clouds",
+    "obs": "7 Oct 04:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 84,
-     "text": "Mostly sunny, with a high near 84. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
+     "text": "Sunny, with a high near 84. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -332,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -343,6 +343,22 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Suits seek air data after Lineage warehouse fire",
+    "b": "Advocacy groups sued the EPA and the city of Los Angeles for records on possible toxic emissions from the Lineage warehouse fire in Boyle Heights, LAist reports.",
+    "date": "2026-10-07",
+    "more": [
+     "California Communities Against Toxics says large amounts of ammonia have leaked since the fire destroyed the refrigeration system."
+    ]
+   },
+   {
+    "h": "LA food bank strains as CalFresh cuts bite",
+    "b": "Community Space Food Bank now sees 30 to 40 new people a day, up from two to 10, as CalFresh benefits are cut or end, LAist reports.",
+    "date": "2026-10-07",
+    "more": [
+     "Founders Gaines and Hang Newborn are raising money to keep it open and buy its building."
+    ]
+   },
    {
     "h": "LAUSD at high risk of insolvency, state finds",
     "b": "California's school finance watchdog says LA Unified is at high risk of insolvency by 2028.",
@@ -364,13 +380,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 98,
      "text": "Sunny and hot, with a high near 98. Light and variable wind becoming west southwest 5 to 10 mph in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 70,
      "text": "Clear, with a low around 70. West southwest wind around 5 mph becoming calm  in the evening. "
@@ -391,7 +407,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 90,
-     "text": "Sunny, with a high near 90."
+     "text": "Sunny, with a high near 90. Calm wind becoming southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
@@ -413,7 +429,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -430,6 +446,22 @@
     "date": "2026-10-07",
     "more": [
      "The arrests are largely of Latin American immigrant men without criminal histories."
+    ]
+   },
+   {
+    "h": "Crashes pile up on Central Park's car-free loop",
+    "b": "Three people have died in crashes on Central Park's 6-mile loop since June as more than 100,000 people use the park each day, Gothamist reports.",
+    "date": "2026-10-07",
+    "more": [
+     "On Monday a 71-year-old cyclist fell near 84th Street while avoiding an off-leash dog."
+    ]
+   },
+   {
+    "h": "NYC to spend $9M on youth gender-affirming care",
+    "b": "New York City plans to spend nearly $9 million on local groups providing gender-affirming care to minors, part of a $15 million Mamdani administration pledge.",
+    "date": "2026-10-07",
+    "more": [
+     "It follows deals by NYU Langone and Mount Sinai with the Trump administration to stop such care for minors."
     ]
    },
    {
@@ -490,16 +522,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 52,
     "cond": "Fair",
-    "obs": "7 Oct 05:51 am EDT"
+    "obs": "7 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Calm wind becoming southwest 5 to 9 mph in the morning. "
+     "text": "Sunny, with a high near 69. Light southwest wind increasing to 5 to 9 mph in the morning. "
     },
     {
      "name": "Tonight",
@@ -545,7 +577,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -557,6 +589,14 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Drought leaves 94,000 in France without tap water",
+    "b": "France's environment ministry says 94,000 people are on emergency drinking water supplies due to severe drought, up from 64,000 in early September.",
+    "date": "2026-10-07",
+    "more": [
+     "Another 6.4 million residents are on water systems placed on alert."
+    ]
+   },
    {
     "h": "France suspends stun grenades at school protests",
     "b": "France suspended police use of stun grenades at high school protests after a teenager lost his hand to one.",
@@ -601,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "goodnews": []
  },
  {
@@ -650,13 +690,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 66,
      "text": "Mostly cloudy, then gradually becoming sunny, with a high near 66. North northwest wind around 6 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Increasing clouds, with a low around 51. Light north northeast wind. "
@@ -671,13 +711,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Partly cloudy, with a low around 54. Light and variable wind. "
+     "text": "Increasing clouds, with a low around 54. Light and variable wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 63,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 63."
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 63. South wind 6 to 13 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Friday Night",
@@ -699,7 +739,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T13:21:00Z",
+  "updatedAt": "2026-10-07T16:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
