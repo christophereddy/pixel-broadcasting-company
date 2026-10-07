@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="shared/pbc.css">
 <script src="shared/pbc.js"></script>
 <script src="shared/ads.js"></script>
+<script src="shared/music.js"></script>
 <style>
 /* Layout: a broadcast monitor in a dark control room, rundown and cast cards below. Single dark look by design. */
 .side{display:flex;flex-direction:column;gap:12px}
@@ -737,13 +738,15 @@ function speak(b,key){
     u.onend=u.onerror=()=>{if(spokenKey===key)talking=false};
     talking=true;talkStart=Date.now();ss.speak(u)}catch(e){talking=false}
 }
-PBC.sound(next=>{
+const SND=PBC.sound(next=>{
   mode=next;talking=false;spokenKey="";
   if(next!=="off"&&!ac){try{ac=new (window.AudioContext||window.webkitAudioContext)()}catch(e){ac=null}}
   if(ac&&ac.state==="suspended")ac.resume().catch(()=>{});
+  PBCMusic.enable(ac,next); // theme, stings and the break bed (shared/music.js)
   // iPhone and iPad only allow speech that starts inside a tap, so start the current story right here.
   if(next==="voices"&&curBeat)speak(curBeat,curKey);
 });
+PBCMusic.tuneIn($("screen"),SND);
 
 /* A feed can override the schedule with refresh: {tz, everyHours}. */
 function nextRefresh(now){
@@ -800,6 +803,7 @@ function frame(){
     $("belowHead").textContent=b.head;$("belowSum").textContent=b.body;
     document.querySelectorAll("#cast li").forEach(li=>li.classList.toggle("on",li.dataset.k===b.sp));
     lastRd=[B,cycleStart,cycleLen,idx];renderRundown(B,cycleStart,cycleLen,idx);
+    PBCMusic.cue(b.seg,b.scene,!bump&&idx===0);
     // the commercial screen is clickable when its ad has a link
     const al=$("adlink"),ad=b.scene==="ads"&&b.ad;
     if(ad&&ad.url){al.href=ad.url;al.rel=ad.house?"noopener":"noopener sponsored";al.setAttribute("aria-label",ad.house?"Advertise on PBC":"Visit "+tcase(ad.name));al.hidden=false}else al.hidden=true;
@@ -808,6 +812,7 @@ function frame(){
   if(n!==lastChars){lastChars=n;$("sum").textContent=b.body.slice(0,n)}
   if(mode==="blips"){const o=anim(b.sp,real,true,phase).open;if(o&&!lastOpen)blip(b.sp);lastOpen=o}
   else if(mode==="voices")speak(b,key);
+  PBCMusic.duck(mode==="voices"&&talking);
   curBeat=b;curKey=key;
   if(real-lastRundown>1000){lastRundown=real;
     const hr=hourIn(D.location.tz);
