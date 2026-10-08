@@ -5,19 +5,31 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Court: family can't try US over FBI raid",
+    "b": "An appeals court ruled an Atlanta family cannot take the government to trial over a mistaken 2017 FBI raid, but can seek to hold the agent who led the SWAT team liable.",
+    "date": "2026-10-08",
+    "publisher": "WABE",
+    "title": "Appeals court: Atlanta family can't take government to trial for mistaken FBI raid",
+    "url": "https://www.wabe.org/appeals-court-says-atlanta-family-cannot-take-the-government-to-trial-for-a-mistaken-fbi-raid/",
+    "published": "2026-10-08T14:22:53Z",
+    "updated": "2026-10-08T14:22:56Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 78,
     "cond": "Partly Cloudy",
-    "obs": "8 Oct 08:52 am EDT"
+    "obs": "8 Oct 11:52 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 86,
-     "text": "Mostly sunny, with a high near 86. Calm wind becoming north around 5 mph. "
+     "text": "Mostly sunny, with a high near 86. North wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -28,26 +40,26 @@
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 79,
-     "text": "Partly sunny, with a high near 79. East wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "temp": 76,
+     "text": "Mostly cloudy, with a high near 76. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Showers likely, mainly after 2am.  Mostly cloudy, with a low around 61. East wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 60%."
+     "text": "Showers likely, mainly after 2am.  Cloudy, with a low around 61. East wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 70,
-     "text": "Showers, with thunderstorms also possible after 5pm.  High near 70. Windy, with an east wind 20 to 25 mph, with gusts as high as 40 mph.  Chance of precipitation is 100%."
+     "text": "Showers, with thunderstorms also possible after 2pm.  High near 70. Windy, with an east wind 20 to 25 mph, with gusts as high as 45 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 63,
-     "text": "Showers and possibly a thunderstorm.  Low around 63. Chance of precipitation is 90%."
+     "temp": 64,
+     "text": "Showers and possibly a thunderstorm.  Low around 64. Chance of precipitation is 90%."
     }
    ]
   },
@@ -63,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,16 +88,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 62,
-    "cond": "Mostly Cloudy",
-    "obs": "8 Oct 08:54 am EDT"
+    "temp": 70,
+    "cond": "A Few Clouds",
+    "obs": "8 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 71,
-     "text": "A chance of showers, mainly before noon.  Mostly sunny, with a high near 71. West wind around 11 mph, with gusts as high as 26 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A slight chance of showers before 1pm.  Sunny, with a high near 71. West wind around 11 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Tonight",
@@ -131,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -142,6 +154,45 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Villegas González family seeks damages",
+    "b": "The family of Silverio Villegas González, shot dead by an ICE agent during Operation Midway Blitz, filed a complaint seeking compensation from the federal government.",
+    "date": "2026-10-08",
+    "more": [
+     "The claim under the Federal Tort Claims Act is the first step toward a lawsuit."
+    ],
+    "publisher": "WBEZ",
+    "title": "Family of Silverio Villegas González seeks damages over fatal ICE shooting near Chicago",
+    "url": "https://www.wbez.org/immigration/2026/10/08/family-of-silverio-villegas-gonzalez-seeks-damages-over-fatal-ice-shooting-near-chicago",
+    "published": "2026-10-08T16:30:40Z",
+    "updated": "2026-10-08T16:30:40Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   },
+   {
+    "h": "Obama Center workers move to unionize",
+    "b": "More than 250 Obama Foundation and Presidential Center workers are organizing a union with AFSCME Council 31.",
+    "date": "2026-10-08",
+    "more": [
+     "They cite increasing workloads and benefit rollbacks."
+    ],
+    "publisher": "WBEZ",
+    "title": "Obama Foundation and Presidential Center workers to unionize: ‘We don't even have a seat at the table’",
+    "url": "https://www.wbez.org/arts-culture/2026/10/08/obama-foundation-and-center-workers-unionize-open-letter-afscme",
+    "published": "2026-10-08T14:42:28Z",
+    "updated": "2026-10-08T14:42:28Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   },
+   {
+    "h": "Chicago Marathon expects record field",
+    "b": "Organizers expect the largest field ever for the 48th Chicago Marathon this weekend.",
+    "date": "2026-10-08",
+    "publisher": "WBEZ",
+    "title": "The Chicago Marathon is this weekend. Here’s why it’s distinctive and attracts runners",
+    "url": "https://www.wbez.org/sports/2026/10/08/chicago-marathon-why-runners-participate",
+    "published": "2026-10-08T16:12:36Z",
+    "updated": "2026-10-08T16:12:36Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   },
    {
     "h": "Mary Todd Lincoln's cape goes on view",
     "b": "The bloodstained cape Mary Todd Lincoln wore the night of Lincoln's assassination is part of a new Chicago History Museum exhibit on presidential artifacts.",
@@ -166,16 +217,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 67,
     "cond": "Mostly Cloudy",
-    "obs": "8 Oct 07:53 am CDT"
+    "obs": "8 Oct 10:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. West northwest wind 5 to 10 mph. "
+     "text": "Sunny, with a high near 69. North northwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -221,7 +272,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -234,9 +285,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 65,
     "cond": "A Few Clouds",
-    "obs": "8 Oct 06:58 am MDT"
+    "obs": "8 Oct 08:58 am MDT"
    },
    "periods": [
     {
@@ -289,7 +340,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -352,7 +403,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 96,
-     "text": "Sunny and hot, with a high near 96. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
+     "text": "Sunny and hot, with a high near 96. West northwest wind 5 to 10 mph becoming southwest in the morning. "
     },
     {
      "name": "Tonight",
@@ -398,7 +449,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -409,6 +460,29 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Man charged in fatal Queens park stabbing",
+    "b": "Police arrested 53-year-old Abdullah Spencerel on murder charges in a fatal stabbing in Major Mark Park in Queens.",
+    "date": "2026-10-08",
+    "more": [
+     "A witness pointed officers to him three blocks away; police are still working to identify the victim."
+    ],
+    "publisher": "Gothamist",
+    "title": "Bronx man arrested for allegedly stabbing Queens man to death in a public park",
+    "url": "https://gothamist.com/news/bronx-man-arrested-for-stabbing-queens-man-to-death-in-a-public-park",
+    "published": "2026-10-08T14:33:00Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   },
+   {
+    "h": "Data centers stir NY governor race",
+    "b": "Gothamist's Jimmy Vielkind writes that the New York governor race pits an old immigration playbook against new outrage over data centers.",
+    "date": "2026-10-08",
+    "publisher": "Gothamist",
+    "title": "NY gov race pits old immigration playbook against new outrage over data centers",
+    "url": "https://gothamist.com/news/ny-gov-race-pits-old-immigration-playbook-against-new-outrage-over-data-centers",
+    "published": "2026-10-08T15:00:55Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   },
    {
     "h": "Arrest in deadly Bronx balcony push",
     "b": "Police arrested the man they say pushed a 23-year-old mother and their 8-month-old daughter from a Bronx balcony, killing the woman; he faces a murder charge.",
@@ -426,7 +500,7 @@
     "publisher": "Gothamist",
     "title": "15-year-old shot and killed and 1 man wounded in Harlem as NYPD questions teen suspect",
     "url": "https://gothamist.com/news/15-year-old-shot-and-killed-and-1-man-wounded-in-harlem-as-nypd-questions-teen-suspect",
-    "published": "2026-10-08T12:57:54Z",
+    "published": "2026-10-08T12:57:00Z",
     "gathered": "2026-10-08T13:12:27Z"
    },
    {
@@ -446,15 +520,17 @@
     "publisher": "Gothamist",
     "title": "Mayor Mamdani attends Oct. 7 vigil amid protests in Union Square",
     "url": "https://gothamist.com/news/pro-israel-pro-palestinian-crowds-converge-on-union-square-for-oct-7-vigil",
-    "published": "2026-10-07T23:33:00Z",
-    "updated": "2026-10-08T01:00:00Z",
+    "published": "2026-10-08T01:00:00Z",
     "gathered": "2026-10-08T02:11:30Z"
    },
    {
     "h": "Queens pharmacist charged in $31M Medicaid fraud",
     "b": "The owner of two Jackson Heights pharmacies was arrested on charges of a $31 million Medicaid drug-buyback scheme involving HIV prescriptions, the state attorney general said.",
     "date": "2026-10-07",
+    "publisher": "Gothamist",
+    "title": "Queens pharmacy owner charged in alleged $31M Medicaid drugs fraud",
     "url": "https://gothamist.com/news/queens-pharmacy-owner-charged-in-alleged-31m-medicaid-drugs-fraud",
+    "published": "2026-10-07T21:15:19Z",
     "gathered": "2026-10-07T22:13:04Z"
    },
    {
@@ -464,7 +540,10 @@
     "more": [
      "The probe into Motor Vehicle Commission registration errors began in July."
     ],
+    "publisher": "Gothamist",
+    "title": "NJ probe finds about 1,100 more problematic voter registrations",
     "url": "https://gothamist.com/news/nj-probe-finds-about-1100-more-problematic-voter-registrations",
+    "published": "2026-10-07T21:32:00Z",
     "gathered": "2026-10-07T22:13:04Z"
    },
    {
@@ -474,7 +553,10 @@
     "more": [
      "Officials say the gates have proven highly effective against fare evasion."
     ],
+    "publisher": "Gothamist",
+    "title": "MTA moves ahead with $1.1B plan to put modern fare gates at 150 subway stations",
     "url": "https://gothamist.com/news/mta-moves-ahead-with-11b-plan-to-put-modern-fare-gates-at-150-subway-stations",
+    "published": "2026-10-07T18:59:56Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -484,7 +566,10 @@
     "more": [
      "D'Angelo Caraballo, 25, and Sneider Mejia, 24, were arrested by fugitive task force detectives."
     ],
+    "publisher": "Gothamist",
+    "title": "Suspects in off-duty NYPD detective's stabbing found hiding in Massachusetts basement",
     "url": "https://gothamist.com/news/suspects-in-off-duty-nypd-detectives-stabbing-found-hiding-in-massachusetts-basement",
+    "published": "2026-10-07T14:36:34Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -494,7 +579,10 @@
     "more": [
      "The judge cited his conditions and more than 200 days in detention."
     ],
+    "publisher": "Gothamist",
+    "title": "NJ immigrant at the center of Delaney Hall protests released from ICE custody",
     "url": "https://gothamist.com/news/nj-immigrant-at-the-center-of-delaney-hall-protests-released-from-ice-custody",
+    "published": "2026-10-07T20:38:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -504,7 +592,10 @@
     "more": [
      "He was first arrested in July, days after Elizabeth Baron died."
     ],
+    "publisher": "Gothamist",
+    "title": "NYPD says unlicensed doc has been charged with murder in 27-year-old patient death",
     "url": "https://gothamist.com/news/nypd-says-unlicensed-doc-has-been-charged-with-murder-in-27-year-old-patient-death",
+    "published": "2026-10-07T13:39:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -514,7 +605,10 @@
     "more": [
      "The arrests are largely of Latin American immigrant men without criminal histories."
     ],
+    "publisher": "Gothamist",
+    "title": "Nearly 40K and counting: Here’s where ICE arrested immigrants across NY and NJ",
     "url": "https://gothamist.com/news/nearly-40k-and-counting-heres-where-ice-arrested-immigrants-across-ny-and-nj",
+    "published": "2026-10-07T10:00:54Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -524,7 +618,10 @@
     "more": [
      "On Monday a 71-year-old cyclist fell near 84th Street while avoiding an off-leash dog."
     ],
+    "publisher": "Gothamist",
+    "title": "Central Park's car-free loop is busier than ever. Crashes keep piling up.",
     "url": "https://gothamist.com/news/central-parks-car-free-loop-is-busier-than-ever-crashes-keep-piling-up",
+    "published": "2026-10-07T11:30:57Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -534,22 +631,25 @@
     "more": [
      "It follows deals by NYU Langone and Mount Sinai with the Trump administration to stop such care for minors."
     ],
+    "publisher": "Gothamist",
+    "title": "NYC moves to spend nearly $9M of gender-affirming care fund for minors",
     "url": "https://gothamist.com/news/nyc-moves-to-spend-nearly-9m-of-gender-affirming-care-fund-for-minors",
+    "published": "2026-10-07T10:30:55Z",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "A Few Clouds",
-    "obs": "8 Oct 08:51 am EDT"
+    "temp": 69,
+    "cond": "Fair",
+    "obs": "8 Oct 11:51 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 73,
-     "text": "Sunny, with a high near 73. West wind 11 to 14 mph, with gusts as high as 24 mph. "
+     "text": "Sunny, with a high near 73. West wind around 14 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Tonight",
@@ -595,7 +695,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -608,14 +708,24 @@
   },
   "local": [
    {
+    "h": "Lescure: Brexit impact \"irrevocable\"",
+    "b": "Finance Minister Roland Lescure said he would welcome the UK back in the EU but warned Brexit had irrevocable consequences.",
+    "date": "2026-10-08",
+    "more": [
+     "He said a return would mean taking \"the whole thing,\" not special terms."
+    ],
+    "publisher": "The Local France",
+    "title": "French finance minister warns of 'irrevocable' Brexit impact",
+    "url": "https://www.thelocal.fr/20261008/french-finance-minister-warns-of-irrevocable-brexit-impact",
+    "published": "2026-10-08T15:55:25Z",
+    "updated": "2026-10-08T15:55:27Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   },
+   {
     "h": "TotalEnergies strike shuts some fuel stations",
     "b": "TotalEnergies workers are on strike Thursday, blocking shipments from refineries near Le Havre, at Donges and at La Mède, and closing some petrol stations.",
     "date": "2026-10-08",
-    "publisher": "The Local France",
-    "title": "Fuel stations close as French TotalEnergies workers strike",
     "url": "https://www.thelocal.fr/20261008/service-stations-close-as-french-totalenergies-workers-strike",
-    "published": "2026-10-08T08:05:47Z",
-    "updated": "2026-10-08T08:05:49Z",
     "gathered": "2026-10-08T09:20:13Z"
    },
    {
@@ -646,11 +756,7 @@
     "more": [
      "The government wants students and staff to use the days for 'internal democracy', an idea many have rejected."
     ],
-    "publisher": "The Local France",
-    "title": "What to expect from French student protests and strikes on Thursday",
     "url": "https://www.thelocal.fr/20261007/what-to-expect-from-french-student-protests-and-strikes-on-thursday",
-    "published": "2026-10-07T14:32:40Z",
-    "updated": "2026-10-07T14:32:41Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -692,8 +798,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
-  "goodnews": []
+  "updatedAt": "2026-10-08T17:11:00Z",
+  "goodnews": [
+   {
+    "h": "Viral vegetarian wolf becomes a toy",
+    "b": "Intermarché will sell 700,000 plush versions of the vegetarian wolf from its viral Christmas advert at the end of November.",
+    "date": "2026-10-08",
+    "publisher": "The Local France",
+    "title": "French viral vegetarian wolf is finally appearing in toy form",
+    "url": "https://www.thelocal.fr/20261008/french-viral-vegetarian-wolf-is-finally-appearing-in-toy-form",
+    "published": "2026-10-08T14:57:40Z",
+    "updated": "2026-10-08T14:57:41Z",
+    "gathered": "2026-10-08T16:48:15Z"
+   }
+  ]
  },
  {
   "location": {
@@ -766,7 +884,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T13:23:00Z",
+  "updatedAt": "2026-10-08T17:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
