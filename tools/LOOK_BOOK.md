@@ -43,7 +43,7 @@ PBC is square and hard-edged, like a game screen.
 
 - Always a **16:9** `<div class="pbc-screen">`. It sets `container-type:inline-size`, so anything over it is sized in **`cqw`** (1cqw = 1% of the screen's width) and scales with the screen.
 - **The picture** is a small canvas drawn at its own low resolution and scaled up with `image-rendering:pixelated` (News draws at **384×216**, Sports at **480×270**, both 16:9). Draw at that resolution; never draw at screen resolution.
-- **Graphics over the picture** are HTML on top of the canvas, laid out in `cqw`:
+- **Graphics over the picture** are HTML on top of the canvas, laid out in `cqw`. The bug, segment tag and lower third are shared (`.pbc-bug`, `.pbc-seg`, `.pbc-third` in `shared/pbc.css`), so News and the Sports Desk show the same ones:
   - corner bug: gold `PBC` plate with a red `LIVE` plate, `2.4cqw` in from the top left
   - segment tag under it and the clock top right, on `var(--overlay)` captions
   - lower third: a name plate (gold name, navy role), then a red category chip and the headline on `var(--paper)` in Pixelify 700, then the summary on `var(--overlay-90)`
@@ -69,12 +69,12 @@ PBC is square and hard-edged, like a game screen.
 
 There are two drawing styles for people, plus sprites for players. **A new person uses one of these; don't invent a third style.** A character keeps the same colors in every style they appear in (Bo's green jacket and Dot's pink one are the same on News, the Sports Desk and the Marketing Division page).
 
-### Newsroom cast: `person(look, ctx, x, y, scale, state)` in `index.html`
+### Newsroom cast: `person(look, ctx, x, y, scale, state)` in `shared/people.js`
 
 A full figure on a **14 × 32 pixel grid** (head 0–11, body 12–21, legs 22–32), drawn at scale 1 on the wide shot and larger in close-ups.
 
 - **`look`**: `skin`, `hair`, `style`, `coat`, `shirt`, `pants`, and optionally `tie`, `shoe`, `dress`, `glasses`, `earring` (all colors).
-- **Hair styles:** `short`, `long`, `bob`, `curly`, `pony`, `beard`, `wild`.
+- **Hair styles:** `short`, `long`, `bob`, `curly`, `pony`, `beard`, `wild`, `bald` (a fringe at the sides). Extras: `stache`, and `cap` with `capBrim` and `capLogo` for the sports guests who wear one.
 - **States:** `seated` (no legs, hands on the desk), `headOnly`, `point` (arm out to the weather wall), `mic` (field reporter), and from `anim()`: `blink` (130ms every ~3.7s), `open` mouth (flaps every 105ms while speaking, with pauses), `bob` (head moves up 1px every few beats).
 - Face: skin block with a 12% darker jaw line, 1px dark eyes, a 2px mouth; glasses are thin dark frames with a pale blue glint.
 
@@ -99,7 +99,7 @@ A head-and-shoulders bust **36 pixels wide**, two to a **76 × 38** booth (seats
 - **`look`**: `jacket`, `shirt`, `tie`, `skin`, `hair`, `brow`, and optionally `longHair`, `bald`, `cap` (+ `capBrim`, `capLogo`), `glasses`, `stache`.
 - The booth wall is `#24305e` with `#2f3d78` stripes every 8px; the desk is `#5b3a1e` with a `#7d5230` top edge.
 - Mouths flap every 120ms while talking; each announcer blinks on their own timer.
-- **Every sport has its own pair** (`CAST.<sport>.A` play-by-play, `.B` color) and booths are never shared. On the Sports Desk, Bo Kowalski hosts with one of that sport's pair as the guest, and Dot reads the break, both drawn in this booth style with their newsroom colors (`DESK_BO`, `DESK_DOT` in `sports/show.js`).
+- **Every sport has its own pair** (`CAST.<sport>.A` play-by-play, `.B` color) and booths are never shared. On the Sports Desk, Bo Kowalski hosts with one of that sport's pair as the guest, and Dot reads the break. In the booth window (during replays) they are drawn in this style (`DESK_BO`, `DESK_DOT` in `sports/show.js`); at the studio desk they are drawn with `person()`, Bo and Dot exactly as the newsroom draws them and the guests through `deskPerson()`, which turns a booth look into a newsroom look (jacket to coat, `longHair` to `long`, `bald`, `stache`, `cap` kept).
 
 ### Players: `drawPlayer()` in `sports/index.html`
 
@@ -135,7 +135,7 @@ Every studio is built from the same parts, so a new desk or channel looks like i
 
 Other newsroom scenes reuse the same parts: the over-the-shoulder shot (`drawOts`), the science lab (`drawLab`), field reports (`drawIntl`, `drawLocal`), the weather center (`drawWx`) and the commercial break (`drawAds`).
 
-**The Sports Desk** (`deskWall()` and `deskDrawPanel()` in `sports/show.js`): the same studio wall, ceiling and light, a dark desk front `#0c1130` with a `#2a3a7a` edge, the show's name in gold lettering between the booth and the scoreboard, and an information panel: `#101743` with a `#1f2a66` heading bar in gold, rows alternating `#121848`/`#141c4e`, gold headings, `#f2f0e8` text, green `#9be15d` numbers.
+**The Sports Desk** (`deskSet()`, `deskAnchors()` and `deskDrawPanel()` in `sports/show.js`, 480×270): a studio shot built from the palette above. The back wall with a `#10153a` baseboard and gold rule, four ceiling lights with cones, SPORTS DESK in gold lettering (scale 2) on the wall, Bo and the guest seated at the newsroom's anchor desk on the left (`person()` at scale 3, desk top at y=150, a football between them), and the big screen on the right (x 214–466, y 36–176, on a dark mount) holding the information panel or the break's ad: `#101743` with a `#1f2a66` heading bar in gold, rows alternating `#121848`/`#141c4e`, gold headings, `#f2f0e8` text, green `#9be15d` numbers. Over it, the newsroom's graphics: a `PBC` `SPORTS` bug, the rundown segment as the tag (NFL RECAP, COMMERCIAL BREAK), and a lower third with the speaker, the screen's heading as the red category, a headline, and the line being read. The booth and scoreboard windows are put away while the studio is on screen and come back only for replays and live games.
 
 **Stadiums and courts** (`buildField()`, `buildDiamond()`, `buildCourt()`, `f1BuildTrack()`): drawn once per game into an off-screen canvas. A seeded crowd in mixed skin tones and the two teams' colors, a wall of sponsor boards, then the playing surface in its real proportions (football: 8 pixels a yard, 5-yard bands alternating `#2e8a3c`/`#2a7f37`, end zones in team colors with the team name).
 

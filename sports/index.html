@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="../shared/pbc.css">
 <script src="../shared/pbc.js"></script>
 <script src="../shared/ads.js"></script>
+<script src="../shared/people.js"></script>
 <script src="../shared/live.js"></script>
 <script src="f1.js"></script>
 <script src="f1cam.js"></script>
@@ -52,6 +53,12 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .banner{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);padding:1.4cqw 3cqw;background:var(--banner-bg);border:.5cqw solid var(--gold);box-shadow:0 0 0 .5cqw var(--shadow),.8cqw .8cqw 0 var(--drop);text-align:center;pointer-events:none}
 .banner .bt{font-family:var(--f-display);font-weight:700;font-size:5.75cqw;color:var(--gold);text-shadow:.4cqw .4cqw 0 var(--navy);letter-spacing:.3cqw;animation:blink 1.4s steps(2) infinite}
 .banner .bs{font-family:var(--f-label);font-size:1.88cqw;color:var(--text);margin-top:1cqw}
+/* the Sports Desk's studio shot (show.js): the booth and scoreboard windows are put away until a replay runs,
+   and the LIVE NOW chip and the break's clickable screen move to the studio's own places */
+.studio-ov{position:absolute;inset:0;pointer-events:none}
+.stage.studio .booth,.stage.studio .board{display:none}
+.stage.studio .livenow{top:2.4cqw;right:2.4cqw}
+.stage.studio .deskad{left:44.6%;right:2.9%;top:13.3%;bottom:34.8%}
 .adcut{right:1.6cqw;bottom:4.8cqw;width:56cqw;padding:0;pointer-events:none}
 .adlink{position:absolute;inset:0;pointer-events:auto}
 /* the sports desk's break: the screen itself is clickable, like the newsroom's */
@@ -228,6 +235,18 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
   <main>
     <div class="stage pbc-screen" id="stage">
       <canvas id="field" width="480" height="270"></canvas>
+
+      <!-- the Sports Desk's studio shot: the newsroom's on-air graphics (shared/pbc.css), filled in by deskStudio in show.js -->
+      <div class="studio-ov" id="studio" hidden>
+        <div class="pbc-bug"><b>PBC</b><span>SPORTS</span></div>
+        <div class="pbc-seg" id="dseg"></div>
+        <div class="pbc-third">
+          <div class="pbc-plate"><span id="dname"></span><span id="drole"></span></div>
+          <div class="pbc-hl"><span class="pbc-cat" id="dcat"></span><span class="pbc-head" id="dhead"></span></div>
+          <p class="pbc-sum" id="dsum" aria-hidden="true"></p>
+          <span class="sr" id="dline" aria-live="polite"></span>
+        </div>
+      </div>
 
       <div class="win booth" aria-live="polite">
         <canvas id="booth" width="76" height="38"></canvas>
@@ -1201,6 +1220,7 @@ function say(who, text, tok, cap){
   const vp = SHOW.on ? deskVoice(who) : null;
   who = slot;
   $('caption').textContent = cap || tag(who) + text;
+  if (SHOW.on) deskLine(who, text);
   if (!S.voices || !window.speechSynthesis || !S.started) {
     S.speaking = who;
     return sleep(Math.min(5200, 900 + text.length * 38)).then(() => { if (S.speaking === who) S.speaking = null; });
@@ -3214,6 +3234,7 @@ function animate(plan, tok){
 
 function step(now){
   // the sports desk's own screens (scores, stats, what's next, the commercial break) take over the broadcast
+  deskStudio(now);
   if (SHOW.scene) { deskRender(now); drawBooth(now); S.lastNow = now; requestAnimationFrame(step); return; }
   if (isF1()) { f1Tick(now); f1Render(now); S.lastNow = now; requestAnimationFrame(step); return; }
   const a = S.anim;

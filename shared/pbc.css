@@ -123,6 +123,30 @@ body.theater-on.idle{cursor:none}
 .pbc-rundown li.picked{background:var(--picked)}
 .pbc-rundown li.picked .tm::after{content:" NEXT";font-family:var(--f-label);font-size:10px;color:var(--gold)}
 
+/* On-air graphics over a broadcast picture: one look for every channel and desk (News, the Sports Desk). Markup:
+   <div class="pbc-bug"><b>PBC</b><span>LIVE</span></div>   corner bug, top left
+   <div class="pbc-seg">SEGMENT</div>                       segment tag under it
+   <div class="pbc-third">                                  lower third (add pbc-third-up when a ticker runs under it)
+     <div class="pbc-plate"><span>NAME</span><span>ROLE</span></div>
+     <div class="pbc-hl"><span class="pbc-cat">CATEGORY</span><span class="pbc-head">Headline</span></div>
+     <p class="pbc-sum">What is being said</p></div> */
+.pbc-bug{position:absolute;left:2.4cqw;top:2.4cqw;display:flex;align-items:stretch;font-family:var(--f-label);font-size:1.9cqw;line-height:1}
+.pbc-bug b{background:var(--gold);color:var(--navy);padding:.45em .5em;font-weight:400}
+.pbc-bug span{background:var(--live);color:var(--white);padding:.45em .5em}
+.pbc-seg{position:absolute;left:2.4cqw;top:6.4cqw;font-family:var(--f-label);font-size:1.5cqw;color:var(--white);background:var(--overlay);padding:.35em .55em;letter-spacing:.06em}
+.pbc-seg:empty{display:none}
+.pbc-third{position:absolute;left:2.4cqw;right:2.4cqw;bottom:2.4cqw;display:flex;flex-direction:column;align-items:flex-start}
+.pbc-third-up{bottom:6.6cqw} /* sits above a 4.6cqw ticker (News) */
+.pbc-plate{display:flex;font-family:var(--f-label);font-size:1.45cqw;line-height:1}
+.pbc-plate span{padding:.45em .6em}
+.pbc-plate span:first-child{background:var(--gold);color:var(--navy)}
+.pbc-plate span+span{background:var(--navy);color:var(--white)}
+.pbc-hl{display:flex;align-items:stretch;background:var(--paper);color:var(--paper-ink);width:100%;min-width:0}
+.pbc-cat{font-family:var(--f-label);font-size:1.45cqw;background:var(--live);color:var(--white);padding:.7em .7em;display:flex;align-items:center;white-space:nowrap;letter-spacing:.04em}
+.pbc-head{font-family:var(--f-display);font-weight:700;font-size:2.6cqw;padding:.22em .5em;line-height:1.1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.pbc-sum{margin:0;background:var(--overlay-90);color:var(--caption-text);font-family:var(--f-body);font-size:2.35cqw;line-height:1.12;padding:.25em .6em .35em;width:100%;min-height:2.6em}
+@container (max-width:600px){.pbc-sum{display:none}.pbc-head{font-size:3.6cqw}}
+
 /* LIVE NOW chip over the broadcast (built by shared/live.js). Each page places it with its own .livenow{position...} rule. */
 .livenow[hidden]{display:none}
 .livenow b{display:flex;align-items:center;gap:.4em;background:var(--live);padding:.45em .55em;font-weight:400;white-space:nowrap}

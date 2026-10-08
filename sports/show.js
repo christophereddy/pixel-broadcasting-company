@@ -23,7 +23,8 @@ const SHOW = {
   scene: null,      // 'panel' or 'ad' while a desk screen is up; null during a highlight clip
   guestRole: 'B',   // which of the sport's two commentators is the guest this time round
   loop: 0, brk: false, everOn: false, resume: false, timer: null, ad: null, adEnd: 0,
-  head: '', note: '', rows: [],
+  head: '', note: '', title: '', rows: [],
+  line: null,       // the line being read: {who: booth seat 'A' or 'B', text, at}, for the lower third
   seg: null,        // the rundown segment on air: a sport key, or 'break'
   pick: null,       // a segment the viewer picked in the rundown, played next
   cut: false,       // cut the segment on air short (a rundown pick, or a game that just went live)
@@ -213,7 +214,7 @@ async function deskSport(sp, tok){
     return;
   }
   const guest = (CAST[sp] || CAST.nfl)[SHOW.guestRole];
-  deskPanel(name + ' SCOREBOARD', fin.slice(0, 5).map(ev => deskRow(ev, 'fin')), 'Scores from ' + SPORTS[sp].src + '.');
+  deskPanel(name + ' SCOREBOARD', fin.slice(0, 5).map(ev => deskRow(ev, 'fin')), 'Scores from ' + SPORTS[sp].src + '.', sp === 'f1' ? '' : deskResult(fin[0]));
   await deskSay('H', `${SHOW.loop ? 'Still with you at' : 'Welcome to'} the PBC sports desk. I am Bo Kowalski, and ${deskName(guest.name)} is alongside me for ${deskLg(sp)}.`, tok);
   if (!deskGo(tok)) return;
   if (sp === 'f1') return deskF1(sp, fin, tok);
@@ -237,7 +238,8 @@ async function deskSport(sp, tok){
   }
   if (!deskGo(tok)) return;
   const rows = deskStatRows();
-  deskPanel(name + ' TEAM STATS', rows, S.away && S.home ? `${S.away.abbr} at ${S.home.abbr} · ${SPORTS[sp].src}` : SPORTS[sp].src);
+  deskPanel(name + ' TEAM STATS', rows, S.away && S.home ? `${S.away.abbr} at ${S.home.abbr} · ${SPORTS[sp].src}` : SPORTS[sp].src,
+    S.away && S.home ? `${fullName(S.away)} at ${fullName(S.home)}, by the numbers` : '');
   await deskSay(SHOW.guestRole, deskStatLine(rows), tok);
   if (!deskGo(tok)) return;
   await deskSay('H', deskOutro(sp), tok);
@@ -266,7 +268,7 @@ async function deskF1(sp, fin, tok){
   }
   if (!deskGo(tok)) return;
   const rows = (R.order || []).slice(0, 5).map((o, i) => ({c: o.d.color, l: 'P' + (i + 1) + ' ' + o.d.code, r: o.d.team}));
-  deskPanel('F1 CLASSIFICATION', rows, 'OpenF1 timing.');
+  deskPanel('F1 CLASSIFICATION', rows, 'OpenF1 timing.', win ? `${win.name} wins for ${win.team}` : '');
   await deskSay('H', deskOutro(sp), tok);
   await deskHold(1500, tok);
 }
@@ -392,8 +394,9 @@ function deskResume(){
 const {pixText: dPix, pixWidth: dWide, qrMatrix: dQR} = PBC_ADS;
 // the sign fonts draw capitals, digits, space, & - . and nothing else, so every line is squared up first
 const deskTxt = s => String(s == null ? '' : s).toUpperCase().replace(/@/g, 'AT ').replace(/[:/]/g, '.').replace(/[^A-Z0-9 &.-]/g, '');
-function deskPanel(head, rows, note){
-  SHOW.head = head; SHOW.rows = rows || []; SHOW.note = note || ''; SHOW.scene = 'panel';
+// head: the screen's heading (and the lower third's red category); title: the lower third's headline, the note when left out
+function deskPanel(head, rows, note, title){
+  SHOW.head = head; SHOW.rows = rows || []; SHOW.note = note || ''; SHOW.title = title || ''; SHOW.scene = 'panel';
   SHOW.at = performance.now();
 }
 // a score, an upcoming game or a stat line, as one row of the screen
@@ -463,39 +466,95 @@ function deskResult(ev){
   return `The ${fullName(w)} beat the ${fullName(l)}, ${Math.max(a, h)} to ${Math.min(a, h)}.`;
 }
 
-/* ---- drawing the screens ---- */
-// the clear part of the broadcast: below the booth and the scoreboard, which sit in the same places as always
-function deskBox(){
-  const cov = typeof f1Covers === 'function' ? f1Covers() : [];
-  const booth = cov[0] || {x1: 160, y1: 138}, board = cov[1] || {x0: 340, y1: 66};
-  const y0 = Math.min(Math.round(Math.max(booth.y1, board.y1)) + 8, H - 96);
-  return {x0: 14, x1: W - 14, y0, y1: H - 12, hx0: Math.round(booth.x1) + 8, hx1: Math.round(board.x0) - 8};
+/* ---- drawing the screens ----
+   While a desk screen is up the broadcast is a studio shot, built from the newsroom's parts (tools/LOOK_BOOK.md, section 6):
+   Bo and his guest seated at a PBC anchor desk on the left, the screen with the scores, stats or the ad on the right,
+   and the newsroom's on-air graphics over it (corner bug, segment tag, lower third). The booth and scoreboard windows
+   only come back for the replays themselves (deskStudio). */
+const DESK_SCREEN = {x0: 214, y0: 36, x1: 466, y1: 176};        // the studio's big screen, in broadcast pixels
+const DESK_TOP = 150;                                             // the anchor desk's top edge
+const DESK_SEATS = [44, 134];                                     // where Bo and the guest sit
+// a booth look (drawAnnouncer) in the newsroom's style (person in shared/people.js): same people, same colours
+function deskPerson(c){
+  return {skin: c.skin, hair: c.hair, coat: c.jacket, shirt: c.shirt || '#f2f0e8', tie: c.tie, glasses: c.glasses,
+    style: c.longHair ? 'long' : c.bald ? 'bald' : 'short', stache: c.stache, cap: c.cap, capBrim: c.capBrim, capLogo: c.capLogo,
+    earring: c.earring, pants: '#2b2f3a'};
 }
+// Bo and Dot as the newsroom draws them (CAST.S and CAST.D in index.html)
+const DESK_LOOKS = {
+  BO: {skin: '#f1c6a0', hair: '#c4582b', style: 'short', coat: '#1f7a52', shirt: '#ffffff', pants: '#2b2f3a'},
+  DOT: {skin: '#b97a52', hair: '#1c1418', style: 'bob', coat: '#c2417a', shirt: '#f6eef2', pants: '#2a2230', glasses: true, earring: '#f2b632'}
+};
+const deskLook = c => DESK_LOOKS[c.tag] || deskPerson(c.look);
 function deskRender(now){
-  const g = ctx, b = deskBox();
-  deskWall(g, now);
-  // the show's name across the gap between the booth and the scoreboard
-  const title = SHOW.brk ? 'PBC COMMERCIAL BREAK' : 'PBC SPORTS DESK';
-  const room = Math.max(40, b.hx1 - b.hx0);
-  let sc = 2; while (sc > 1 && dWide(title, true) * sc > room) sc--;
-  const tw = dWide(title, true) * sc, tx = b.hx0 + ((room - tw) >> 1);
-  g.fillStyle = 'rgba(8,10,26,.85)'; g.fillRect(tx - 5, 12, tw + 10, 7 * sc + 8);
-  dPix(g, title, tx + 1, 17, true, '#05060d', sc); dPix(g, title, tx, 16, true, '#f2b632', sc);
-  if (SHOW.scene === 'ad') return deskDrawAd(g, b, now);
-  deskDrawPanel(g, b, now);
+  const g = ctx, b = DESK_SCREEN;
+  deskSet(g, now);
+  if (SHOW.scene === 'ad') deskDrawAd(g, b, now); else deskDrawPanel(g, b, now);
+  deskAnchors(g, now);
 }
-// the studio wall behind the graphics: panelled back wall, a light from the left, a dark desk front along the bottom
-function deskWall(g, now){
+// the room: the newsroom's back wall, ceiling, lights and floor, and the show's name on the wall behind the desk
+function deskSet(g, now){
   const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
-  R('#151b3d', 0, 0, W, H);
-  for (let x = 0; x < W; x += 30) R('#1b2250', x, 0, 1, H - 40);   // the newsroom's panels: 1/16 of the screen apart
-  R('#07091a', 0, 0, W, 10);
-  for (let x = 0; x < W; x += 8) R('#1c2146', x, 3, 4, 4);
-  g.globalAlpha = 0.06; g.fillStyle = '#fff2c0';
-  g.beginPath(); g.moveTo(60, 10); g.lineTo(150, H - 40); g.lineTo(-20, H - 40); g.fill(); g.globalAlpha = 1;
-  R('#0c1130', 0, H - 40, W, 40); R('#2a3a7a', 0, H - 40, W, 2);   // the desk front
-  R('#0a0e26', 0, H - 8, W, 8);
+  R('#151b3d', 0, 0, W, 196);
+  for (let x = 0; x < W; x += 30) R('#1b2250', x, 12, 1, 170);    // the newsroom's panels: 1/16 of the screen apart
+  R('#10153a', 0, 182, W, 14); R('#f2b632', 0, 182, W, 1);
+  R('#07091a', 0, 0, W, 12); for (let x = 0; x < W; x += 6) R('#1c2146', x, 4, 3, 3);
+  R('#0c1029', 0, 196, W, H - 196);
+  for (let y = 200; y < H; y += 8) R('#10153a', 0, y, W, 1);
+  const cans = [60, 180, 300, 420];
+  g.globalAlpha = 0.045; g.fillStyle = '#fff2c0';
+  for (const lx of cans) { g.beginPath(); g.moveTo(lx - 2, 12); g.lineTo(lx + 2, 12); g.lineTo(lx + 50, 182); g.lineTo(lx - 50, 182); g.closePath(); g.fill(); }
+  g.globalAlpha = 1;
+  for (const lx of cans) { R('#2a2f55', lx - 4, 9, 9, 4); R('#fff2c0', lx - 3, 13, 7, 1); }
+  // the show's name on the wall over the anchors
+  const t = 'SPORTS DESK', cx = (DESK_SEATS[0] + DESK_SEATS[1] + 42) >> 1, tw = dWide(t, true) * 2, tx = cx - (tw >> 1);
+  dPix(g, t, tx + 1, 57, true, '#05060d', 2); dPix(g, t, tx, 56, true, '#f2b632', 2);
+  R('#f2b632', tx, 74, tw, 1);
+  // the screen hangs on a dark mount
+  R('#05071a', ((DESK_SCREEN.x0 + DESK_SCREEN.x1) >> 1) - 12, DESK_SCREEN.y1 + 3, 24, 182 - DESK_SCREEN.y1 - 3);
 }
+// Bo and the guest (or Dot, in the break) at the anchor desk, with the newsroom's desk in front of them
+function deskAnchors(g, now){
+  const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
+  const cr = crew(), {person, anim} = PBC_PEOPLE, sc = 3;
+  [['A', cr.A], ['B', cr.B]].forEach(([seat, c], i) => {
+    const talk = S.speaking === seat, st = anim(c.tag, now, talk, 0);
+    person(deskLook(c), g, DESK_SEATS[i], DESK_TOP - 20 * sc, sc, Object.assign({seated: true}, st));
+  });
+  const x0 = 20, x1 = 202, w = x1 - x0;
+  R('#e3e7f0', x0 - 4, DESK_TOP, w + 8, 4); R('#b9bfd0', x0 - 4, DESK_TOP + 4, w + 8, 1);
+  R('#1d2766', x0, DESK_TOP + 5, w, 42); R('#253282', x0, DESK_TOP + 5, w, 3);
+  R('#f2b632', x0, DESK_TOP + 18, w, 2);
+  const lg = 'PBC', lw = dWide(lg, true) * 2;
+  dPix(g, lg, x0 + ((w - lw) >> 1), DESK_TOP + 24, true, '#ffffff', 2);
+  R('#07091a', x0 + 2, DESK_TOP + 47, w - 4, 2);
+  // a football on the desk between them
+  const fx = ((DESK_SEATS[0] + DESK_SEATS[1] + 42) >> 1) - 6, fy = DESK_TOP - 5;
+  R('#7a4423', fx + 2, fy, 8, 1); R('#8b4f2a', fx, fy + 1, 12, 3); R('#7a4423', fx + 2, fy + 4, 8, 1);
+  R('#ffffff', fx + 3, fy + 2, 6, 1); R('#ffffff', fx + 4, fy + 1, 1, 1); R('#ffffff', fx + 7, fy + 1, 1, 1);
+}
+// the on-air graphics over the studio (sports/index.html #studio), and the booth and scoreboard windows put away.
+// Called every frame; the page only changes when something on it does.
+function deskStudio(now){
+  const on = !!SHOW.scene;
+  if (on !== deskStudio.on) { deskStudio.on = on; $('stage').classList.toggle('studio', on); $('studio').hidden = !on; }
+  if (!on) return;
+  const set = (id, t) => { const el = $(id); if (el.textContent !== t) el.textContent = t; };
+  const cr = crew(), ln = SHOW.line, who = ln && cr[ln.who] ? ln.who : 'A';
+  set('dname', cr[who].name);
+  set('drole', who === 'A' ? 'SPORTS DESK' : SHOW.brk ? 'HEAD OF SALES' : (SPORTS[S.sport]?.name || '') + (SHOW.guestRole === 'A' ? ' PLAY-BY-PLAY' : ' ANALYST'));
+  set('dseg', SHOW.seg === 'break' ? 'COMMERCIAL BREAK' : SHOW.seg && SPORTS[SHOW.seg] ? SPORTS[SHOW.seg].name + ' RECAP' : 'PBC SPORTS DESK');
+  const ad = SHOW.scene === 'ad' && SHOW.ad;
+  set('dcat', ad ? (ad.house ? 'PBC' : 'SPONSOR') : SHOW.head);
+  set('dhead', ad ? (ad.house ? 'Advertise on PBC' : deskTcase(ad.name)) : (SHOW.title || SHOW.note).replace(/\.$/, ''));
+  // the line types out as it is read, as the newsroom's summary does
+  const text = ln ? ln.text : '', n = DESK_CALM.matches ? text.length : Math.min(text.length, Math.floor((now - (ln?.at || 0)) / 30));
+  set('dsum', text.slice(0, n));
+  set('dline', text);
+}
+const DESK_CALM = matchMedia('(prefers-reduced-motion: reduce)');
+// say() hands every line here while the show is on, so the lower third can show who is talking and what they said
+function deskLine(who, text){ SHOW.line = {who, text, at: performance.now()}; }
 function deskDrawPanel(g, b, now){
   const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
   const w = b.x1 - b.x0, h = b.y1 - b.y0;
@@ -565,7 +624,8 @@ function deskDrawAd(g, b, now){
   names.forEach(l => { y += big(l, y) + 4; });
   if (foot) small(foot, y + 2, ad.house ? '#e7e1cc' : ad.fg);
   if (Math.floor(now / 600) % 2 && ad.url) small('SCAN OR CLICK', b.y1 - 20, ad.house ? '#8fd3ff' : ad.fg);
-  small(ad.house ? 'PBC HOUSE AD' : 'SPONSOR', b.y1 - 10, ad.fg);
-  dPix(g, clock, b.x1 - 6 - dWide(clock, false), b.y0 + 8, false, ad.fg);
+  // along the bottom: the sponsor tag on the left and the clock back to the desk on the right
+  dPix(g, ad.house ? 'PBC HOUSE AD' : 'SPONSOR', tx, b.y1 - 10, false, ad.fg);
+  dPix(g, clock, b.x1 - 6 - dWide(clock, false), b.y1 - 10, false, ad.fg);
   g.fillStyle = 'rgba(0,0,0,.10)'; for (let r = b.y0 + 1; r < b.y1; r += 2) g.fillRect(b.x0, r, w, 1);
 }

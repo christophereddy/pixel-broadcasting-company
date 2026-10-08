@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="shared/pbc.css">
 <script src="shared/pbc.js"></script>
 <script src="shared/ads.js"></script>
+<script src="shared/people.js"></script>
 <link rel="stylesheet" href="newsroom/story-card.css">
 <script src="newsroom/story-card.js"></script>
 <script src="shared/music.js"></script>
@@ -30,24 +31,11 @@
 /* the commercial break's big screen can be clicked as well as scanned */
 .adlink{position:absolute;left:24%;top:2%;width:73%;height:50%;z-index:2}
 .adlink[hidden]{display:none}
-.bug{position:absolute;left:2.4cqw;top:2.4cqw;display:flex;align-items:stretch;font-family:var(--f-label);font-size:1.9cqw;line-height:1}
-.bug b{background:var(--gold);color:var(--navy);padding:.45em .5em;font-weight:400}
-.bug .live{background:var(--live);color:var(--white);padding:.45em .5em}
-.seg{position:absolute;left:2.4cqw;top:6.4cqw;font-family:var(--f-label);font-size:1.5cqw;color:var(--white);background:var(--overlay);padding:.35em .55em;letter-spacing:.06em}
 .clock{position:absolute;right:2.4cqw;top:2.4cqw;font-family:var(--f-label);font-size:1.7cqw;background:var(--overlay-85);color:var(--white);padding:.5em .6em;font-variant-numeric:tabular-nums}
 /* LIVE NOW: a game on PBC Sports, under the clock; it opens the sports page on that game (shared/live.js). It sits above the
    first-visit Tune in screen (z-index 5) so it can be clicked straight away. */
 .livenow{position:absolute;right:2.4cqw;top:6.4cqw;z-index:6;pointer-events:auto;display:flex;align-items:stretch;max-width:46cqw;font-family:var(--f-label);font-size:max(10px,1.5cqw);line-height:1;text-decoration:none;color:var(--white);border:.2cqw solid var(--live)}
 @container (max-width:600px){.livenow{max-width:64cqw}}
-.third{position:absolute;left:2.4cqw;right:2.4cqw;bottom:6.6cqw;display:flex;flex-direction:column;align-items:flex-start}
-.plate{display:flex;font-family:var(--f-label);font-size:1.45cqw;line-height:1}
-.plate span{padding:.45em .6em}
-#pname{background:var(--gold);color:var(--navy)}
-#prole{background:var(--navy);color:var(--white)}
-.hl{display:flex;align-items:stretch;background:var(--paper);color:var(--paper-ink);width:100%;min-width:0}
-.chip{font-family:var(--f-label);font-size:1.45cqw;background:var(--live);color:var(--white);padding:.7em .7em;display:flex;align-items:center;white-space:nowrap;letter-spacing:.04em}
-#head{font-family:var(--f-display);font-weight:700;font-size:2.6cqw;padding:.22em .5em;line-height:1.1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.sum{margin:0;background:var(--overlay-90);color:var(--caption-text);font-family:var(--f-body);font-size:2.35cqw;line-height:1.12;padding:.25em .6em .35em;width:100%;min-height:2.6em}
 .ticker{position:absolute;left:0;right:0;bottom:0;height:4.6cqw;display:flex;background:var(--navy);border-top:.3cqw solid var(--gold)}
 .tlabel{font-family:var(--f-label);font-size:1.45cqw;background:var(--gold);color:var(--navy);display:flex;align-items:center;padding:0 1em;white-space:nowrap;z-index:1}
 .tw{position:relative;flex:1;overflow:hidden}
@@ -55,10 +43,6 @@
 .tt i{font-style:normal;color:var(--gold);padding:0 .8em}
 .below{display:none;margin:0;background:var(--panel);border:2px solid var(--line);padding:10px 12px;font-size:19px}
 .below b{font-family:var(--f-display);font-weight:700;display:block;font-size:20px;margin-bottom:4px}
-@container (max-width:600px){
-  .sum{display:none}
-  #head{font-size:3.6cqw}
-}
 @media (max-width:640px){ .below{display:block} }
 
 .edline{display:flex;align-items:center;gap:6px;flex-wrap:nowrap;height:27px;white-space:nowrap;min-width:0}
@@ -110,14 +94,14 @@ footer a:focus-visible{outline:2px solid var(--gold)}
     <canvas id="tv" width="384" height="216" aria-label="Pixel art newsroom broadcast"></canvas>
     <a class="adlink" id="adlink" href="#" target="_blank" rel="noopener" hidden></a>
     <div class="ov" aria-live="polite">
-      <div class="bug"><b>PBC</b><span class="live">LIVE</span></div>
-      <div class="seg" id="seg"></div>
+      <div class="pbc-bug"><b>PBC</b><span>LIVE</span></div>
+      <div class="pbc-seg" id="seg"></div>
       <div class="clock" id="clock"></div>
       <a class="livenow" id="livenow" href="sports/" hidden><b>LIVE NOW</b><span><i id="liveLeague"></i><em id="liveTitle"></em></span></a>
-      <div class="third">
-        <div class="plate"><span id="pname"></span><span id="prole"></span></div>
-        <div class="hl"><span class="chip" id="chip"></span><span id="head"></span></div>
-        <p class="sum" id="sum"></p>
+      <div class="pbc-third pbc-third-up">
+        <div class="pbc-plate"><span id="pname"></span><span id="prole"></span></div>
+        <div class="pbc-hl"><span class="pbc-cat" id="chip"></span><span class="pbc-head" id="head"></span></div>
+        <p class="pbc-sum" id="sum"></p>
       </div>
       <div class="ticker"><span class="tlabel">HEADLINES</span><div class="tw" id="tw"><div class="tt" id="tt"></div></div></div>
     </div>
@@ -204,65 +188,8 @@ function txt(s,x,y,c,sc){PBC_ADS.pixText(g,String(s).toUpperCase(),Math.round(x)
 function tw(s,sc){return (String(s).length*4-1)*(sc||1)}
 function txtC(s,cx,y,c,sc){txt(s,Math.round(cx-tw(s,sc)/2),y,c,sc)}
 
-/* ---------- characters ---------- */
-function person(look,ctx,x,y,s,st){
-  st=st||{};
-  const r=(col,px,py,w,h)=>{ctx.fillStyle=col;ctx.fillRect(x+px*s,y+py*s,w*s,h*s)};
-  const Y=st.bob?-1:0, h=look.hair, sh="#15151c";
-  if(!st.seated&&!st.headOnly){
-    r(look.pants,3,22,4,8);r(look.pants,7,22,4,8);
-    r(look.shoe||sh,2,30,5,2);r(look.shoe||sh,7,30,5,2);
-  }
-  if(!st.headOnly){
-    r(look.coat,1,12,12,10);
-    if(look.dress){r(look.coat,2,22,10,4)}
-    r(mix(look.coat,"#000000",.25),1,12,1,10);
-    r(look.shirt,5,12,4,2);r(look.shirt,6,14,2,1);
-    if(look.tie)r(look.tie,6,13,2,6);
-    r(look.coat,0,13,1,8);r(look.skin,0,21,1,1);
-    if(st.point){r(look.coat,13,12,6,2);r(look.skin,19,12,2,2)}
-    else if(st.mic){r(look.coat,12,13,2,4);r(look.coat,11,12,2,2);r(look.skin,10,10,2,2);r("#2a2a33",10,8,2,2);r("#c9ccd6",10,7,2,1);r("#f2b632",9,9,1,1)}
-    else{r(look.coat,13,13,1,8);r(look.skin,13,21,1,1)}
-    if(st.seated){r(look.skin,3,20,2,1);r(look.skin,9,20,2,1)}
-  }
-  r(look.skin,6,10,2,2);
-  // back hair
-  if(look.style==="long")r(h,1,2+Y,12,11);
-  if(look.style==="curly"){r(h,1,1+Y,12,8);r(h,0,3+Y,14,5)}
-  if(look.style==="bob")r(h,2,2+Y,10,8);
-  if(look.style==="pony"){r(h,11,3+Y,3,3);r(h,12,6+Y,2,5)}
-  if(look.style==="wild"){r(h,0,-1+Y,14,12);r(h,-1,1+Y,16,8);r(h,1,-2+Y,4,1);r(h,9,-2+Y,4,1);r(h,-2,4+Y,1,3);r(h,15,3+Y,1,4);r(h,1,11+Y,2,2);r(h,11,11+Y,2,2)}
-  // face
-  r(look.skin,3,2+Y,8,9);r(look.skin,2,5+Y,1,2);r(look.skin,11,5+Y,1,2);
-  r(mix(look.skin,"#000000",.12),3,10+Y,8,1);
-  // eyes
-  if(!st.blink){r("#1b1b25",5,5+Y,1,1);r("#1b1b25",8,5+Y,1,1)}else{r(mix(look.skin,"#000000",.3),5,5+Y,1,1);r(mix(look.skin,"#000000",.3),8,5+Y,1,1)}
-  // glasses: thin dark frames around each eye with a bridge, and a faint lens glint
-  if(look.glasses){const fr="#3a3440";r(fr,4,4+Y,2,1);r(fr,8,4+Y,2,1);r(fr,4,5+Y,1,1);r(fr,6,5+Y,2,1);r(fr,9,5+Y,1,1);r(fr,4,6+Y,2,1);r(fr,8,6+Y,2,1);
-    if(!st.blink){r("#9fb8d8",5,6+Y,1,1);r("#9fb8d8",8,6+Y,1,1)}}
-  // front hair
-  if(look.style==="short"||look.style==="beard"||look.style==="pony"){r(h,3,1+Y,8,2);r(h,2,2+Y,1,3);r(h,11,2+Y,1,3);r(h,3,3+Y,1,1);r(h,10,3+Y,1,1)}
-  if(look.style==="pony")r(h,3,3+Y,4,1);
-  if(look.style==="long"){r(h,3,1+Y,8,2);r(h,2,2+Y,1,5);r(h,11,2+Y,1,5);r(h,3,3+Y,3,1)}
-  if(look.style==="curly"){r(h,2,0+Y,10,2);r(h,3,2+Y,8,1);r(mix(h,"#ffffff",.15),4,0+Y,1,1);r(mix(h,"#ffffff",.15),9,1+Y,1,1)}
-  if(look.style==="wild"){r(h,3,0+Y,8,2);r(h,2,2+Y,2,4);r(h,10,2+Y,2,4);r(h,4,2+Y,2,1);r(h,8,2+Y,1,1);r(mix(h,"#ffffff",.25),5,0+Y,1,1);r(mix(h,"#ffffff",.25),1,4+Y,1,1);r(mix(h,"#ffffff",.25),12,6+Y,1,1)}
-  if(look.earring){r(look.earring,2,8+Y,1,1);r(look.earring,11,8+Y,1,1)}
-  if(look.style==="bob"){r(h,3,1+Y,8,2);r(h,3,3+Y,8,1);r(h,2,2+Y,1,8);r(h,11,2+Y,1,8)}
-  if(look.style==="beard"){r(h,3,8+Y,1,3);r(h,10,8+Y,1,3);r(h,3,10+Y,8,1);r(h,5,7+Y,4,1)}
-  // mouth
-  if(st.open)r("#4a1418",6,8+Y,2,2);else r(mix(look.skin,"#5a1a1a",.55),6,8+Y,2,1);
-}
-function anim(key,t,speaking,phase){
-  const seed=key.charCodeAt(0)*977;
-  const blink=((t+seed)%3700)<130;
-  let open=false,bob=false;
-  if(speaking&&phase<.9){
-    const pause=Math.sin(t/650+seed)>.82;
-    open=!pause&&((Math.floor(t/105)*7+seed)%5)>1;
-    bob=Math.floor((t+seed)/900)%3===0;
-  }
-  return {blink,open,bob};
-}
+/* ---------- characters: person() and anim() live in shared/people.js ---------- */
+const {person,anim}=PBC_PEOPLE;
 
 /* ---------- sky + scenery ---------- */
 const SKY=[[0,"#070a1f","#141a3d"],[5,"#0b1030","#2a2350"],[6.5,"#3b4a8a","#f39a6b"],[8,"#5aa7e0","#bfe3f5"],[16.5,"#4f9ad8","#c8e6f5"],[18.6,"#4a4f9a","#f08a5d"],[20,"#1a1d4a","#5a3a6a"],[21.5,"#0a0d26","#1b2045"],[24,"#070a1f","#141a3d"]];
