@@ -129,6 +129,8 @@ body.theater-on.idle{cursor:none}
 .livenow b::before{content:"";width:.55em;height:.55em;background:var(--white);animation:lnblink 1s steps(1) infinite}
 .livenow span{background:var(--overlay-90);padding:.45em .55em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .livenow i,.livenow em{font-style:normal}
+.livenow:hover span,.livenow:focus-visible span{color:var(--gold)}
+.livenow:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 @keyframes lnblink{50%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.livenow b::before{animation:none}}
 @container (max-width:600px){.livenow i{display:none}}

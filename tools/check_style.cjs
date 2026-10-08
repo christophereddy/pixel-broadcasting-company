@@ -71,6 +71,7 @@ function checkCss(file, text, css, base, { isSource = false, selectors = true } 
         else if (COLOR_LITERAL.test(val) || /["']/.test(val)) say(file, where, `${prop} defines its own color or font. Add it to the :root block in ${SOURCE} instead.`);
         continue;
       }
+      if (prop === 'font-family' && /--f-label/.test(val) && /(^|[\s>+~,])(h[1-6]|b|strong|th)\b[^\s>+~,]*\s*$/i.test(sel) && !/font-weight\s*:\s*(400|normal)/.test(body)) say(file, where, `${sel} is a heading in the label font but bold by default. Add font-weight:400 (Silkscreen is never bold).`);
       if (prop === "font-family" && !FONT_OK.test(val.replace(/\s*!important$/, ""))) say(file, where, `font-family: ${val}. Use var(--f-display), var(--f-label) or var(--f-body).`);
       if (prop === 'font' && !/^(inherit|unset|initial)$/.test(val) && !/var\(--f-(display|label|body)\)/.test(val)) say(file, where, `font: ${val}. Name the font with var(--f-display), var(--f-label) or var(--f-body).`);
       if (COLOR_PROPS.test(prop) && COLOR_LITERAL.test(val.replace(/var\([^)]*\)/g, ''))) say(file, where, `${prop}: ${val}. Use a color from ${SOURCE} (var(--gold), var(--panel)...), or add one there.`);

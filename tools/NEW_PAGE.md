@@ -29,7 +29,7 @@ Three fonts, each with one job. Use the name, never the font itself.
 | Name | Font | Use it for | Weight |
 | --- | --- | --- | --- |
 | `var(--f-display)` | Pixelify Sans | headlines, names, big titles on the broadcast | always write `font-weight:700` (or `500` for a name in a list, like ON THE DESK) |
-| `var(--f-label)` | Silkscreen | labels, card titles, buttons, tabs, chips, NOW/NEXT, LIVE | `font-weight:400` |
+| `var(--f-label)` | Silkscreen | labels, card titles, buttons, tabs, chips, NOW/NEXT, LIVE | always `font-weight:400`, also on `h2`-`h6` and `b`, which are bold by default (the check catches this) |
 | `var(--f-body)` | VT323 | everything else: body text, times, lists, captions | normal |
 
 The body already uses `--f-body` at 20px, so plain text needs nothing. Every page loads the fonts with this exact line (the check compares it character for character):
@@ -114,7 +114,7 @@ The masthead, NEWS \| SPORTS switch, ON AIR, control row, broadcast and right co
 
 ## Shared parts (use these, don't rebuild them)
 
-**Cards.** Every box in the right column is `<div class="pbc-card"><h2>TITLE</h2> ...</div>`. Titles are short capitals.
+**Cards.** Every box in the right column is `<div class="pbc-card"><h2>TITLE</h2> ...</div>`. Card titles are short capitals in `--f-label`, 14px, gold, `letter-spacing:.1em`, on every page.
 
 **The rundown.** One look for every channel and desk:
 
