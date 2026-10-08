@@ -1,0 +1,25 @@
+{
+ "slug": "warm-spiced-cider",
+ "name": "Warm Spiced Cider",
+ "summary": "Apple cider simmered with cinnamon, cloves and orange.",
+ "role": "drink",
+ "cuisine": "American",
+ "occasions": ["holiday", "party"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 6,
+ "time": {"prep": 5, "cook": 15, "total": 20},
+ "allergens": [],
+ "ingredients": [
+  {"id": "apple-cider", "qty": 6, "unit": "cup", "form": "whole"},
+  {"id": "cinnamon", "qty": 2, "unit": "piece", "form": "whole", "note": "sticks"},
+  {"id": "cloves", "qty": 6, "unit": "piece", "form": "whole"},
+  {"id": "orange", "qty": 1, "unit": "piece", "form": "sliced"}
+ ],
+ "steps": [
+  {"do": "Slice the orange.", "uses": [{"id": "orange", "qty": 1, "unit": "piece"}], "tool": "knife", "help": true},
+  {"do": "Put the cider, cinnamon sticks, cloves and orange in a pot.", "uses": [{"id": "apple-cider", "qty": 6, "unit": "cup"}, {"id": "cinnamon", "qty": 2, "unit": "piece"}, {"id": "cloves", "qty": 6, "unit": "piece"}]},
+  {"do": "Simmer for 15 minutes.", "tool": "stove", "heat": "low", "timer": 15, "cue": "steaming and fragrant", "help": true},
+  {"do": "Ladle into mugs, leaving the spices behind.", "tool": "stove", "heat": "low", "help": true}
+ ]
+}

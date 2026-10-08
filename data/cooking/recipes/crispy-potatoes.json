@@ -1,0 +1,25 @@
+{
+ "slug": "crispy-potatoes",
+ "name": "Crispy Roast Potatoes",
+ "summary": "Potatoes roasted until crunchy with rosemary.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["family-dinner"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 45, "total": 55},
+ "allergens": [],
+ "ingredients": [
+  {"id": "potatoes", "qty": 2, "unit": "lb", "form": "cubed"},
+  {"id": "olive-oil", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "rosemary", "qty": 2, "unit": "sprig", "form": "chopped"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 425°F.", "tool": "oven", "oven_f": 425},
+  {"do": "Cut the potatoes into 1 inch chunks.", "uses": [{"id": "potatoes", "qty": 2, "unit": "lb"}], "tool": "knife"},
+  {"do": "Toss with the oil, salt and rosemary on a sheet pan.", "uses": [{"id": "olive-oil", "qty": 3, "unit": "tbsp"}, {"id": "salt", "qty": 1, "unit": "tsp"}, {"id": "rosemary", "qty": 2, "unit": "sprig"}]},
+  {"do": "Roast for 45 minutes, turning halfway.", "tool": "oven", "oven_f": 425, "timer": 45, "cue": "crisp and golden"}
+ ]
+}

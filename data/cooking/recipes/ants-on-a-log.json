@@ -1,0 +1,23 @@
+{
+ "slug": "ants-on-a-log",
+ "name": "Ants on a Log",
+ "summary": "Celery, peanut butter and raisin 'ants'.",
+ "role": "snack",
+ "cuisine": "American",
+ "occasions": ["lunchbox", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 0, "total": 5},
+ "allergens": ["peanut"],
+ "ingredients": [
+  {"id": "celery", "qty": 3, "unit": "stalk", "form": "whole"},
+  {"id": "peanut-butter", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "raisins", "qty": 2, "unit": "tbsp", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Cut each celery stalk into 3 pieces.", "uses": [{"id": "celery", "qty": 3, "unit": "stalk"}], "tool": "knife", "help": true},
+  {"do": "Fill the groove of each piece with peanut butter.", "uses": [{"id": "peanut-butter", "qty": 3, "unit": "tbsp"}]},
+  {"do": "Line raisins along the top.", "uses": [{"id": "raisins", "qty": 2, "unit": "tbsp"}]}
+ ]
+}

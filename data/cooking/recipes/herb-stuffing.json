@@ -1,0 +1,33 @@
+{
+ "slug": "herb-stuffing",
+ "name": "Herb Stuffing",
+ "summary": "Crisp-topped bread stuffing with celery, onion and sage.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["holiday"],
+ "difficulty": "medium",
+ "tags": ["vegetarian"],
+ "serves": 8,
+ "time": {"prep": 20, "cook": 45, "total": 65},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "bread", "qty": 12, "unit": "slice", "form": "cubed", "note": "day-old"},
+  {"id": "butter", "qty": 6, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "celery", "qty": 3, "unit": "stalk", "form": "diced"},
+  {"id": "sage", "qty": 8, "unit": "leaf", "form": "chopped"},
+  {"id": "thyme", "qty": 3, "unit": "sprig", "form": "chopped"},
+  {"id": "vegetable-stock", "qty": 2, "unit": "cup", "form": "whole"},
+  {"id": "egg", "qty": 1, "unit": "piece", "form": "beaten"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 350°F and butter a baking dish.", "uses": [{"id": "butter", "qty": 1, "unit": "tbsp"}], "tool": "oven", "oven_f": 350},
+  {"do": "Cube the bread and dice the onion and celery.", "uses": [{"id": "bread", "qty": 12, "unit": "slice"}, {"id": "onion", "qty": 1, "unit": "piece"}, {"id": "celery", "qty": 3, "unit": "stalk"}], "tool": "knife"},
+  {"do": "Cook the onion and celery in the rest of the butter for 8 minutes.", "uses": [{"id": "butter", "qty": 5, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 8, "cue": "soft"},
+  {"do": "Stir in the sage, thyme and salt.", "uses": [{"id": "sage", "qty": 8, "unit": "leaf"}, {"id": "thyme", "qty": 3, "unit": "sprig"}, {"id": "salt", "qty": 1, "unit": "tsp"}]},
+  {"do": "Toss with the bread, stock and egg, and spread in the dish.", "uses": [{"id": "vegetable-stock", "qty": 2, "unit": "cup"}, {"id": "egg", "qty": 1, "unit": "piece"}]},
+  {"do": "Cover and bake for 25 minutes.", "tool": "oven", "oven_f": 350, "timer": 25},
+  {"do": "Uncover and bake 20 minutes more, until crisp on top and 165°F in the middle.", "tool": "oven", "oven_f": 350, "timer": 20, "temp_f": 165, "cue": "crisp top"}
+ ]
+}

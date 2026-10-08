@@ -1,0 +1,36 @@
+{
+ "slug": "homemade-pizza",
+ "name": "Homemade Pizza",
+ "summary": "Make the dough, then everyone tops their own.",
+ "role": "main",
+ "cuisine": "Italian-American",
+ "occasions": ["party", "family-dinner"],
+ "difficulty": "medium",
+ "tags": ["kid"],
+ "serves": 4,
+ "time": {"prep": 20, "cook": 15, "total": 90},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "flour", "qty": 3, "unit": "cup", "form": "whole"},
+  {"id": "yeast", "qty": 2.25, "unit": "tsp", "form": "whole"},
+  {"id": "sugar", "qty": 1, "unit": "tsp", "form": "whole"},
+  {"id": "salt", "qty": 1.5, "unit": "tsp", "form": "ground"},
+  {"id": "water", "qty": 1, "unit": "cup", "form": "warm"},
+  {"id": "olive-oil", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "canned-tomatoes", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "dried-oregano", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "mozzarella", "qty": 2, "unit": "cup", "form": "shredded"},
+  {"id": "pepperoni", "qty": 24, "unit": "slice", "form": "sliced"},
+  {"id": "basil", "qty": 6, "unit": "leaf", "form": "torn"}
+ ],
+ "steps": [
+  {"do": "Mix the flour, yeast, sugar and 1 tsp salt. Stir in the warm water and 2 tbsp oil.", "uses": [{"id": "flour", "qty": 3, "unit": "cup"}, {"id": "yeast", "qty": 2.25, "unit": "tsp"}, {"id": "sugar", "qty": 1, "unit": "tsp"}, {"id": "salt", "qty": 1, "unit": "tsp"}, {"id": "water", "qty": 1, "unit": "cup"}, {"id": "olive-oil", "qty": 2, "unit": "tbsp"}]},
+  {"do": "Knead for 5 minutes, until smooth.", "timer": 5, "cue": "smooth and stretchy"},
+  {"do": "Cover and let it rise for 1 hour.", "timer": 60, "cue": "doubled in size"},
+  {"do": "Preheat the oven to 475°F. Stir the oregano and the rest of the salt into the tomatoes.", "uses": [{"id": "canned-tomatoes", "qty": 1, "unit": "cup"}, {"id": "dried-oregano", "qty": 1, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}], "tool": "oven", "oven_f": 475, "help": true},
+  {"do": "Split the dough in 2 and stretch each into a round on an oiled sheet.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}]},
+  {"do": "Spread the sauce, then add mozzarella and pepperoni.", "uses": [{"id": "mozzarella", "qty": 2, "unit": "cup"}, {"id": "pepperoni", "qty": 24, "unit": "slice"}]},
+  {"do": "Bake for 12 minutes, until the crust is golden and the cheese bubbles.", "tool": "oven", "oven_f": 475, "timer": 12, "cue": "bubbling cheese", "help": true},
+  {"do": "Top with basil and cut into slices.", "uses": [{"id": "basil", "qty": 6, "unit": "leaf"}], "tool": "knife", "help": true}
+ ]
+}

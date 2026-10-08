@@ -1,0 +1,30 @@
+{
+ "slug": "pan-seared-steak",
+ "name": "Pan-Seared Steak",
+ "summary": "A crusty steak basted with garlic butter.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["date-night"],
+ "difficulty": "hard",
+ "tags": [],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 15, "total": 30},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "steak", "qty": 2, "unit": "piece", "form": "whole", "note": "1 inch thick strip steaks"},
+  {"id": "salt", "qty": 1.5, "unit": "tsp", "form": "ground"},
+  {"id": "pepper", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "vegetable-oil", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "garlic", "qty": 2, "unit": "clove", "form": "whole"},
+  {"id": "thyme", "qty": 2, "unit": "sprig", "form": "sprig"}
+ ],
+ "steps": [
+  {"do": "Pat the steaks dry and season well with salt and pepper.", "uses": [{"id": "steak", "qty": 2, "unit": "piece"}, {"id": "salt", "qty": 1.5, "unit": "tsp"}, {"id": "pepper", "qty": 1, "unit": "tsp"}]},
+  {"do": "Heat the oil in a heavy pan until it shimmers.", "uses": [{"id": "vegetable-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "high"},
+  {"do": "Sear the steaks for 4 minutes without moving them.", "tool": "stove", "heat": "high", "timer": 4, "cue": "deep brown crust"},
+  {"do": "Flip, add the butter, garlic and thyme, and spoon the butter over the steaks for 4 minutes.", "uses": [{"id": "butter", "qty": 2, "unit": "tbsp"}, {"id": "garlic", "qty": 2, "unit": "clove"}, {"id": "thyme", "qty": 2, "unit": "sprig"}], "tool": "stove", "heat": "medium", "timer": 4},
+  {"do": "Check the middle: 145°F for medium.", "tool": "stove", "heat": "medium", "temp_f": 145},
+  {"do": "Rest for 5 minutes, then slice against the grain.", "tool": "knife", "timer": 5}
+ ]
+}

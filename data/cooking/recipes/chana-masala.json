@@ -1,0 +1,38 @@
+{
+ "slug": "chana-masala",
+ "name": "Chana Masala",
+ "summary": "Chickpeas simmered in a spiced tomato and onion gravy.",
+ "role": "main",
+ "cuisine": "India",
+ "occasions": ["weeknight", "family-dinner"],
+ "difficulty": "medium",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 15, "cook": 35, "total": 50},
+ "allergens": [],
+ "ingredients": [
+  {"id": "vegetable-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "garlic", "qty": 3, "unit": "clove", "form": "minced"},
+  {"id": "ginger", "qty": 1, "unit": "tbsp", "form": "grated"},
+  {"id": "cumin", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "coriander", "qty": 2, "unit": "tsp", "form": "ground"},
+  {"id": "turmeric", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "chili-powder", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "canned-tomatoes", "qty": 1.5, "unit": "cup", "form": "whole"},
+  {"id": "chickpeas", "qty": 2, "unit": "can", "form": "drained", "note": "15 oz cans"},
+  {"id": "water", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "garam-masala", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "lemon", "qty": 0.5, "unit": "piece", "form": "juiced"},
+  {"id": "cilantro", "qty": 2, "unit": "tbsp", "form": "chopped"}
+ ],
+ "steps": [
+  {"do": "Dice the onion, mince the garlic and grate the ginger.", "uses": [{"id": "onion", "qty": 1, "unit": "piece"}, {"id": "garlic", "qty": 3, "unit": "clove"}, {"id": "ginger", "qty": 1, "unit": "tbsp"}], "tool": "knife"},
+  {"do": "Cook the onion in the oil for 8 minutes, until golden.", "uses": [{"id": "vegetable-oil", "qty": 2, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 8, "cue": "golden"},
+  {"do": "Add the garlic, ginger, cumin, coriander, turmeric and chili powder for 1 minute.", "uses": [{"id": "cumin", "qty": 1, "unit": "tsp"}, {"id": "coriander", "qty": 2, "unit": "tsp"}, {"id": "turmeric", "qty": 0.5, "unit": "tsp"}, {"id": "chili-powder", "qty": 1, "unit": "tsp"}], "tool": "stove", "heat": "medium", "timer": 1},
+  {"do": "Add the tomatoes and cook for 5 minutes.", "uses": [{"id": "canned-tomatoes", "qty": 1.5, "unit": "cup"}], "tool": "stove", "heat": "medium", "timer": 5},
+  {"do": "Add the chickpeas, water and salt. Simmer for 15 minutes.", "uses": [{"id": "chickpeas", "qty": 2, "unit": "can"}, {"id": "water", "qty": 0.5, "unit": "cup"}, {"id": "salt", "qty": 1, "unit": "tsp"}], "tool": "stove", "heat": "low", "timer": 15, "cue": "thick gravy"},
+  {"do": "Stir in the garam masala and lemon juice, and top with cilantro.", "uses": [{"id": "garam-masala", "qty": 1, "unit": "tsp"}, {"id": "lemon", "qty": 0.5, "unit": "piece"}, {"id": "cilantro", "qty": 2, "unit": "tbsp"}]}
+ ]
+}

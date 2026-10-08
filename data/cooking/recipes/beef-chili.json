@@ -1,0 +1,37 @@
+{
+ "slug": "beef-chili",
+ "name": "Beef and Bean Chili",
+ "summary": "Hearty beef chili with kidney beans and all the toppings.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["game-day", "comfort"],
+ "difficulty": "medium",
+ "tags": [],
+ "serves": 6,
+ "time": {"prep": 15, "cook": 60, "total": 75},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "olive-oil", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "bell-pepper", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "garlic", "qty": 3, "unit": "clove", "form": "minced"},
+  {"id": "ground-beef", "qty": 1.5, "unit": "lb", "form": "ground"},
+  {"id": "chili-powder", "qty": 3, "unit": "tbsp", "form": "ground"},
+  {"id": "cumin", "qty": 2, "unit": "tsp", "form": "ground"},
+  {"id": "smoked-paprika", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 1.5, "unit": "tsp", "form": "ground"},
+  {"id": "canned-tomatoes", "qty": 1, "unit": "can", "form": "whole", "note": "28 oz can"},
+  {"id": "kidney-beans", "qty": 2, "unit": "can", "form": "drained", "note": "15 oz cans"},
+  {"id": "beef-stock", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "cheddar", "qty": 1, "unit": "cup", "form": "shredded"},
+  {"id": "sour-cream", "qty": 0.5, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Dice the onion and pepper and mince the garlic.", "uses": [{"id": "onion", "qty": 1, "unit": "piece"}, {"id": "bell-pepper", "qty": 1, "unit": "piece"}, {"id": "garlic", "qty": 3, "unit": "clove"}], "tool": "knife"},
+  {"do": "Cook them in the oil for 5 minutes.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 5},
+  {"do": "Add the beef and brown it for 8 minutes, breaking it up.", "uses": [{"id": "ground-beef", "qty": 1.5, "unit": "lb"}], "tool": "stove", "heat": "medium-high", "timer": 8, "cue": "no pink left"},
+  {"do": "Stir in the chili powder, cumin, paprika and salt for 1 minute.", "uses": [{"id": "chili-powder", "qty": 3, "unit": "tbsp"}, {"id": "cumin", "qty": 2, "unit": "tsp"}, {"id": "smoked-paprika", "qty": 1, "unit": "tsp"}, {"id": "salt", "qty": 1.5, "unit": "tsp"}], "tool": "stove", "heat": "medium", "timer": 1},
+  {"do": "Add the tomatoes, beans and stock. Simmer for 45 minutes, stirring now and then.", "uses": [{"id": "canned-tomatoes", "qty": 1, "unit": "can"}, {"id": "kidney-beans", "qty": 2, "unit": "can"}, {"id": "beef-stock", "qty": 1, "unit": "cup"}], "tool": "stove", "heat": "low", "timer": 45, "cue": "thick"},
+  {"do": "Check it reads 160°F, then serve topped with cheddar and sour cream.", "uses": [{"id": "cheddar", "qty": 1, "unit": "cup"}, {"id": "sour-cream", "qty": 0.5, "unit": "cup"}], "temp_f": 160}
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "slug": "banana-smoothie",
+ "name": "Banana Smoothie",
+ "summary": "Thick, creamy banana smoothie.",
+ "role": "drink",
+ "cuisine": "American",
+ "occasions": ["breakfast", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 0, "total": 5},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "banana", "qty": 2, "unit": "piece", "form": "sliced"},
+  {"id": "milk", "qty": 1, "unit": "cup", "form": "cold"},
+  {"id": "yogurt", "qty": 0.5, "unit": "cup", "form": "cold"},
+  {"id": "honey", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "ice", "qty": 1, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Peel the bananas and break them into chunks.", "uses": [{"id": "banana", "qty": 2, "unit": "piece"}]},
+  {"do": "Put the bananas, milk, yogurt, honey and ice in the blender.", "uses": [{"id": "milk", "qty": 1, "unit": "cup"}, {"id": "yogurt", "qty": 0.5, "unit": "cup"}, {"id": "honey", "qty": 1, "unit": "tbsp"}, {"id": "ice", "qty": 1, "unit": "cup"}]},
+  {"do": "Blend until smooth and pour into glasses.", "tool": "blender"}
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "slug": "roast-turkey-breast",
+ "name": "Herb Roast Turkey Breast",
+ "summary": "A juicy bone-in turkey breast with sage butter.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["holiday", "family-dinner"],
+ "difficulty": "hard",
+ "tags": [],
+ "serves": 6,
+ "time": {"prep": 15, "cook": 105, "total": 135},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "turkey-breast", "qty": 5, "unit": "lb", "form": "whole", "note": "bone-in"},
+  {"id": "butter", "qty": 4, "unit": "tbsp", "form": "softened"},
+  {"id": "sage", "qty": 6, "unit": "leaf", "form": "chopped"},
+  {"id": "thyme", "qty": 4, "unit": "sprig", "form": "chopped"},
+  {"id": "garlic", "qty": 3, "unit": "clove", "form": "minced"},
+  {"id": "salt", "qty": 2, "unit": "tsp", "form": "ground"},
+  {"id": "pepper", "qty": 1, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 350°F.", "tool": "oven", "oven_f": 350},
+  {"do": "Chop the sage and thyme leaves and mince the garlic. Mash them into the butter with the salt and pepper.", "uses": [{"id": "sage", "qty": 6, "unit": "leaf"}, {"id": "thyme", "qty": 4, "unit": "sprig"}, {"id": "garlic", "qty": 3, "unit": "clove"}, {"id": "butter", "qty": 4, "unit": "tbsp"}, {"id": "salt", "qty": 2, "unit": "tsp"}, {"id": "pepper", "qty": 1, "unit": "tsp"}], "tool": "knife"},
+  {"do": "Pat the turkey dry and rub the butter under and over the skin.", "uses": [{"id": "turkey-breast", "qty": 5, "unit": "lb"}]},
+  {"do": "Roast for 105 minutes, basting halfway.", "tool": "oven", "oven_f": 350, "timer": 105, "cue": "golden skin"},
+  {"do": "Check the thickest part: 165°F.", "tool": "oven", "oven_f": 350, "temp_f": 165},
+  {"do": "Rest for 20 minutes, then carve.", "tool": "knife", "timer": 20}
+ ]
+}

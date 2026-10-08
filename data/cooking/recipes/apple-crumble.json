@@ -1,0 +1,30 @@
+{
+ "slug": "apple-crumble",
+ "name": "Apple Crumble",
+ "summary": "Soft cinnamon apples under a crunchy oat topping.",
+ "role": "dessert",
+ "cuisine": "British",
+ "occasions": ["family-dinner", "baking"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 6,
+ "time": {"prep": 20, "cook": 40, "total": 60},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "apples", "qty": 6, "unit": "piece", "form": "sliced"},
+  {"id": "lemon", "qty": 0.5, "unit": "piece", "form": "juiced"},
+  {"id": "sugar", "qty": 0.25, "unit": "cup", "form": "whole"},
+  {"id": "cinnamon", "qty": 1.5, "unit": "tsp", "form": "ground"},
+  {"id": "flour", "qty": 0.75, "unit": "cup", "form": "whole"},
+  {"id": "oats", "qty": 0.75, "unit": "cup", "form": "dry"},
+  {"id": "brown-sugar", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "butter", "qty": 6, "unit": "tbsp", "form": "cold"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 375°F.", "tool": "oven", "oven_f": 375},
+  {"do": "Peel and slice the apples. Toss with the lemon, sugar and 1 tsp cinnamon in a baking dish.", "uses": [{"id": "apples", "qty": 6, "unit": "piece"}, {"id": "lemon", "qty": 0.5, "unit": "piece"}, {"id": "sugar", "qty": 0.25, "unit": "cup"}, {"id": "cinnamon", "qty": 1, "unit": "tsp"}], "tool": "knife"},
+  {"do": "Rub the flour, oats, brown sugar, the rest of the cinnamon and the cold butter together into crumbs.", "uses": [{"id": "flour", "qty": 0.75, "unit": "cup"}, {"id": "oats", "qty": 0.75, "unit": "cup"}, {"id": "brown-sugar", "qty": 0.5, "unit": "cup"}, {"id": "cinnamon", "qty": 0.5, "unit": "tsp"}, {"id": "butter", "qty": 6, "unit": "tbsp"}]},
+  {"do": "Scatter the crumbs over the apples."},
+  {"do": "Bake for 40 minutes, until bubbling and golden.", "tool": "oven", "oven_f": 375, "timer": 40, "cue": "bubbling at the edges"}
+ ]
+}

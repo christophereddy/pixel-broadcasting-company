@@ -1,0 +1,25 @@
+{
+ "slug": "monster-green-smoothie",
+ "name": "Monster Green Smoothie",
+ "summary": "A spooky-green spinach, banana and pineapple smoothie.",
+ "role": "drink",
+ "cuisine": "American",
+ "occasions": ["party", "breakfast", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 0, "total": 5},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "spinach", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "banana", "qty": 1, "unit": "piece", "form": "frozen"},
+  {"id": "pineapple", "qty": 1, "unit": "cup", "form": "frozen"},
+  {"id": "milk", "qty": 1, "unit": "cup", "form": "cold"},
+  {"id": "yogurt", "qty": 0.5, "unit": "cup", "form": "cold"}
+ ],
+ "steps": [
+  {"do": "Put the spinach, banana, pineapple, milk and yogurt in the blender.", "uses": [{"id": "spinach", "qty": 1, "unit": "cup"}, {"id": "banana", "qty": 1, "unit": "piece"}, {"id": "pineapple", "qty": 1, "unit": "cup"}, {"id": "milk", "qty": 1, "unit": "cup"}, {"id": "yogurt", "qty": 0.5, "unit": "cup"}]},
+  {"do": "Blend until smooth and bright green.", "tool": "blender"},
+  {"do": "Pour into glasses."}
+ ]
+}

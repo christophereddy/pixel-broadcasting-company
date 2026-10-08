@@ -1,0 +1,28 @@
+{
+ "slug": "scrambled-eggs-on-toast",
+ "name": "Soft Scrambled Eggs on Toast",
+ "summary": "Slow, creamy scrambled eggs on buttered toast.",
+ "role": "breakfast",
+ "cuisine": "American",
+ "occasions": ["breakfast"],
+ "difficulty": "easy",
+ "tags": ["quick", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 2, "cook": 8, "total": 10},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "egg", "qty": 4, "unit": "piece", "form": "beaten"},
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "bread", "qty": 2, "unit": "slice", "form": "toasted"},
+  {"id": "chives", "qty": 1, "unit": "tbsp", "form": "chopped"},
+  {"id": "salt", "unit": "to-taste", "form": "ground"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Beat the eggs with a pinch of salt.", "uses": [{"id": "egg", "qty": 4, "unit": "piece"}, {"id": "salt", "unit": "to-taste"}]},
+  {"do": "Melt 1 tbsp butter in a pan over low heat and pour in the eggs.", "uses": [{"id": "butter", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "low"},
+  {"do": "Stir slowly for 5 minutes, until softly set.", "tool": "stove", "heat": "low", "timer": 5, "cue": "softly set, no runny egg"},
+  {"do": "Toast the bread and butter it with the rest of the butter.", "uses": [{"id": "bread", "qty": 2, "unit": "slice"}, {"id": "butter", "qty": 1, "unit": "tbsp"}]},
+  {"do": "Spoon the eggs onto the toast and top with chives and pepper.", "uses": [{"id": "chives", "qty": 1, "unit": "tbsp"}, {"id": "pepper", "unit": "to-taste"}]}
+ ]
+}

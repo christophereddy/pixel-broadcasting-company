@@ -1,0 +1,28 @@
+{
+ "slug": "chocolate-mousse",
+ "name": "Chocolate Mousse",
+ "summary": "Light, rich chocolate mousse made with whipped cream.",
+ "role": "dessert",
+ "cuisine": "French",
+ "occasions": ["date-night", "party"],
+ "difficulty": "medium",
+ "tags": ["vegetarian", "make-ahead"],
+ "serves": 4,
+ "time": {"prep": 15, "cook": 5, "total": 140},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "dark-chocolate", "qty": 6, "unit": "oz", "form": "chopped"},
+  {"id": "cream", "qty": 1.5, "unit": "cup", "form": "cold"},
+  {"id": "sugar", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "vanilla", "qty": 1, "unit": "tsp", "form": "whole"},
+  {"id": "salt", "qty": 1, "unit": "pinch", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Chop the chocolate.", "uses": [{"id": "dark-chocolate", "qty": 6, "unit": "oz"}], "tool": "knife"},
+  {"do": "Warm 1/2 cup cream until steaming, about 3 minutes.", "uses": [{"id": "cream", "qty": 0.5, "unit": "cup"}], "tool": "stove", "heat": "medium-low", "timer": 3, "cue": "steaming, not boiling"},
+  {"do": "Pour it over the chocolate, wait 1 minute, then stir until smooth.", "timer": 1},
+  {"do": "Whip the rest of the cream with the sugar, vanilla and salt to soft peaks.", "uses": [{"id": "cream", "qty": 1, "unit": "cup"}, {"id": "sugar", "qty": 2, "unit": "tbsp"}, {"id": "vanilla", "qty": 1, "unit": "tsp"}, {"id": "salt", "qty": 1, "unit": "pinch"}], "cue": "soft peaks"},
+  {"do": "Fold the whipped cream into the chocolate in 3 parts."},
+  {"do": "Spoon into glasses and chill for 2 hours.", "timer": 120, "cue": "set"}
+ ]
+}

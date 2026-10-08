@@ -1,0 +1,27 @@
+{
+ "slug": "cumin-rice",
+ "name": "Cumin Rice",
+ "summary": "Fluffy basmati-style rice toasted with cumin seeds.",
+ "role": "side",
+ "cuisine": "India",
+ "occasions": ["weeknight", "family-dinner"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 20, "total": 30},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "rice", "qty": 1.5, "unit": "cup", "form": "rinsed"},
+  {"id": "butter", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "cumin", "qty": 1, "unit": "tsp", "form": "whole", "note": "seeds"},
+  {"id": "water", "qty": 2.25, "unit": "cup", "form": "whole"},
+  {"id": "salt", "qty": 0.75, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Rinse the rice until the water runs clear.", "uses": [{"id": "rice", "qty": 1.5, "unit": "cup"}]},
+  {"do": "Melt the butter and fry the cumin seeds for 1 minute.", "uses": [{"id": "butter", "qty": 1, "unit": "tbsp"}, {"id": "cumin", "qty": 1, "unit": "tsp"}], "tool": "stove", "heat": "medium", "timer": 1, "cue": "fragrant"},
+  {"do": "Add the rice, water and salt and bring to a boil.", "uses": [{"id": "water", "qty": 2.25, "unit": "cup"}, {"id": "salt", "qty": 0.75, "unit": "tsp"}], "tool": "stove", "heat": "high"},
+  {"do": "Cover and cook for 15 minutes.", "tool": "stove", "heat": "low", "timer": 15},
+  {"do": "Rest for 5 minutes, then fluff with a fork.", "timer": 5}
+ ]
+}

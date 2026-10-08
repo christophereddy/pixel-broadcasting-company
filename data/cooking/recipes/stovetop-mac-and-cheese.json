@@ -1,0 +1,31 @@
+{
+ "slug": "stovetop-mac-and-cheese",
+ "name": "Stovetop Mac and Cheese",
+ "summary": "Creamy cheddar mac and cheese made in one pot.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["weeknight", "comfort"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 20, "total": 25},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "pasta", "qty": 8, "unit": "oz", "form": "dry"},
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "flour", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "milk", "qty": 2, "unit": "cup", "form": "whole"},
+  {"id": "cheddar", "qty": 2, "unit": "cup", "form": "shredded"},
+  {"id": "mustard-powder", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "water", "qty": 8, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Bring the water and 1/2 tsp salt to a boil.", "uses": [{"id": "water", "qty": 8, "unit": "cup"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}], "tool": "stove", "heat": "high", "help": true},
+  {"do": "Cook the pasta for 7 minutes, then drain.", "uses": [{"id": "pasta", "qty": 8, "unit": "oz"}], "tool": "stove", "heat": "high", "timer": 7, "cue": "tender with a little bite", "help": true},
+  {"do": "Melt the butter in the pot, stir in the flour and cook for 1 minute.", "uses": [{"id": "butter", "qty": 2, "unit": "tbsp"}, {"id": "flour", "qty": 2, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 1, "help": true},
+  {"do": "Whisk in the milk a little at a time and cook for 4 minutes, until thick.", "uses": [{"id": "milk", "qty": 2, "unit": "cup"}], "tool": "stove", "heat": "medium", "timer": 4, "cue": "coats the spoon", "help": true},
+  {"do": "Take off the heat and stir in the cheddar, mustard powder and the rest of the salt.", "uses": [{"id": "cheddar", "qty": 2, "unit": "cup"}, {"id": "mustard-powder", "qty": 0.5, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Stir the pasta back in."}
+ ]
+}

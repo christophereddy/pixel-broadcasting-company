@@ -1,0 +1,24 @@
+{
+ "slug": "grilled-cheese-croutons",
+ "name": "Grilled Cheese Croutons",
+ "summary": "Little grilled cheese squares to float on soup.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["comfort", "weeknight"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 8, "total": 15},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "bread", "qty": 4, "unit": "slice", "form": "whole"},
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "softened"},
+  {"id": "cheddar", "qty": 4, "unit": "slice", "form": "sliced"}
+ ],
+ "steps": [
+  {"do": "Butter one side of each slice of bread.", "uses": [{"id": "bread", "qty": 4, "unit": "slice"}, {"id": "butter", "qty": 2, "unit": "tbsp"}], "tool": "knife", "help": true},
+  {"do": "Make 2 sandwiches with the cheddar inside and the butter outside.", "uses": [{"id": "cheddar", "qty": 4, "unit": "slice"}]},
+  {"do": "Cook for 4 minutes a side, until golden and melted.", "tool": "stove", "heat": "medium", "timer": 4, "cue": "golden, cheese melted", "help": true},
+  {"do": "Cut each sandwich into 16 small squares.", "tool": "knife", "help": true}
+ ]
+}

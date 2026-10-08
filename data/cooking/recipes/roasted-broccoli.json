@@ -1,0 +1,27 @@
+{
+ "slug": "roasted-broccoli",
+ "name": "Roasted Broccoli",
+ "summary": "Crispy-edged broccoli with lemon.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["weeknight"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 20, "total": 25},
+ "allergens": [],
+ "ingredients": [
+  {"id": "broccoli", "qty": 4, "unit": "cup", "form": "chopped", "note": "florets"},
+  {"id": "olive-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"},
+  {"id": "lemon", "qty": 0.5, "unit": "piece", "form": "juiced"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 425°F.", "tool": "oven", "oven_f": 425, "help": true},
+  {"do": "Cut the broccoli into florets.", "uses": [{"id": "broccoli", "qty": 4, "unit": "cup"}], "tool": "knife", "help": true},
+  {"do": "Toss with olive oil, salt and pepper on a baking sheet.", "uses": [{"id": "olive-oil", "qty": 2, "unit": "tbsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}, {"id": "pepper", "unit": "to-taste"}]},
+  {"do": "Roast for 20 minutes, until the edges are browned.", "tool": "oven", "oven_f": 425, "timer": 20, "cue": "browned edges", "help": true},
+  {"do": "Squeeze lemon over the top.", "uses": [{"id": "lemon", "qty": 0.5, "unit": "piece"}]}
+ ]
+}

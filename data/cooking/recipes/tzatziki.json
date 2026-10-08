@@ -1,0 +1,28 @@
+{
+ "slug": "tzatziki",
+ "name": "Tzatziki",
+ "summary": "Cool Greek yogurt sauce with cucumber, garlic and dill.",
+ "role": "sauce",
+ "cuisine": "Greece",
+ "occasions": ["party", "picnic", "weeknight"],
+ "difficulty": "easy",
+ "tags": ["quick", "vegetarian"],
+ "serves": 6,
+ "time": {"prep": 10, "cook": 0, "total": 10},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "cucumber", "qty": 1, "unit": "piece", "form": "grated"},
+  {"id": "greek-yogurt", "qty": 1.5, "unit": "cup", "form": "cold"},
+  {"id": "garlic", "qty": 1, "unit": "clove", "form": "minced"},
+  {"id": "dill", "qty": 1, "unit": "tbsp", "form": "chopped"},
+  {"id": "lemon", "qty": 0.5, "unit": "piece", "form": "juiced"},
+  {"id": "olive-oil", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Grate the cucumber and squeeze out the water.", "uses": [{"id": "cucumber", "qty": 1, "unit": "piece"}]},
+  {"do": "Mince the garlic and chop the dill.", "uses": [{"id": "garlic", "qty": 1, "unit": "clove"}, {"id": "dill", "qty": 1, "unit": "tbsp"}], "tool": "knife"},
+  {"do": "Stir everything into the yogurt with the lemon and salt.", "uses": [{"id": "greek-yogurt", "qty": 1.5, "unit": "cup"}, {"id": "lemon", "qty": 0.5, "unit": "piece"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Drizzle with olive oil.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}]}
+ ]
+}

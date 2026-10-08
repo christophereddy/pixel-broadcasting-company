@@ -4,4 +4,5 @@ Read `README.md` first. Before building or changing any page, channel, desk or c
 fonts, colors and shared parts (masthead, control row, cards, the rundown) come only from `shared/pbc.css`, by name.
 Never write a font name, a `#hex`/`rgb()` color or a second name for a shared color in a page's CSS. A new color goes
 in the `:root` block of `shared/pbc.css` with a comment. Run `node tools/check_style.cjs` before every pull request
-(GitHub runs it too), plus `tools/check_layout.cjs` for layout changes and `tools/check_sports.cjs` for Sports.
+(GitHub runs it too), plus `tools/check_layout.cjs` for layout changes, `tools/check_sports.cjs` for Sports and `tools/check_recipes.cjs` for
+anything in `data/cooking/` (recipes follow `tools/COOKING.md`).

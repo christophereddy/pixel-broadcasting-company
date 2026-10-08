@@ -1,0 +1,24 @@
+{
+ "slug": "honey-yogurt-walnuts",
+ "name": "Greek Yogurt with Honey and Walnuts",
+ "summary": "Thick yogurt with warm honey and toasted walnuts.",
+ "role": "dessert",
+ "cuisine": "Greece",
+ "occasions": ["party", "snack", "breakfast"],
+ "difficulty": "easy",
+ "tags": ["quick", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 3, "total": 8},
+ "allergens": ["milk", "tree-nut"],
+ "ingredients": [
+  {"id": "greek-yogurt", "qty": 2, "unit": "cup", "form": "cold"},
+  {"id": "walnuts", "qty": 0.5, "unit": "cup", "form": "toasted"},
+  {"id": "honey", "qty": 4, "unit": "tbsp", "form": "whole"},
+  {"id": "cinnamon", "qty": 1, "unit": "pinch", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Toast the walnuts in a dry pan for 3 minutes.", "uses": [{"id": "walnuts", "qty": 0.5, "unit": "cup"}], "tool": "stove", "heat": "medium", "timer": 3, "cue": "fragrant"},
+  {"do": "Spoon the yogurt into bowls.", "uses": [{"id": "greek-yogurt", "qty": 2, "unit": "cup"}]},
+  {"do": "Top with walnuts, a drizzle of honey and a pinch of cinnamon.", "uses": [{"id": "honey", "qty": 4, "unit": "tbsp"}, {"id": "cinnamon", "qty": 1, "unit": "pinch"}]}
+ ]
+}

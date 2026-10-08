@@ -1,0 +1,39 @@
+{
+ "slug": "spaghetti-and-meatballs",
+ "name": "Spaghetti and Meatballs",
+ "summary": "Tender meatballs simmered in tomato sauce over spaghetti.",
+ "role": "main",
+ "cuisine": "Italian-American",
+ "occasions": ["family-dinner", "comfort"],
+ "difficulty": "medium",
+ "tags": [],
+ "serves": 4,
+ "time": {"prep": 20, "cook": 40, "total": 60},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "ground-beef", "qty": 1, "unit": "lb", "form": "ground"},
+  {"id": "breadcrumbs", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "egg", "qty": 1, "unit": "piece", "form": "beaten"},
+  {"id": "parmesan", "qty": 0.75, "unit": "cup", "form": "grated"},
+  {"id": "garlic", "qty": 3, "unit": "clove", "form": "minced"},
+  {"id": "parsley", "qty": 2, "unit": "tbsp", "form": "chopped"},
+  {"id": "salt", "qty": 1.5, "unit": "tsp", "form": "ground"},
+  {"id": "pepper", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "olive-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "canned-tomatoes", "qty": 1, "unit": "can", "form": "whole", "note": "28 oz can"},
+  {"id": "basil", "qty": 6, "unit": "leaf", "form": "torn"},
+  {"id": "spaghetti", "qty": 1, "unit": "lb", "form": "dry"},
+  {"id": "water", "qty": 16, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Mince 2 cloves of garlic for the meatballs and the last one for the sauce. Dice the onion.", "uses": [{"id": "garlic", "qty": 3, "unit": "clove"}, {"id": "onion", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Mix the beef, breadcrumbs, egg, 1/2 cup parmesan, parsley, 1 tsp salt and the pepper. Roll into 16 balls.", "uses": [{"id": "ground-beef", "qty": 1, "unit": "lb"}, {"id": "breadcrumbs", "qty": 0.5, "unit": "cup"}, {"id": "egg", "qty": 1, "unit": "piece"}, {"id": "parmesan", "qty": 0.5, "unit": "cup"}, {"id": "parsley", "qty": 2, "unit": "tbsp"}, {"id": "salt", "qty": 1, "unit": "tsp"}, {"id": "pepper", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Brown the meatballs in the oil for 6 minutes, turning, then lift them out.", "uses": [{"id": "olive-oil", "qty": 2, "unit": "tbsp"}], "tool": "stove", "heat": "medium-high", "timer": 6, "cue": "browned all over"},
+  {"do": "Cook the onion in the same pan for 4 minutes.", "tool": "stove", "heat": "medium", "timer": 4},
+  {"do": "Add the tomatoes, return the meatballs, cover and simmer for 20 minutes.", "uses": [{"id": "canned-tomatoes", "qty": 1, "unit": "can"}], "tool": "stove", "heat": "low", "timer": 20},
+  {"do": "Check a meatball: 160°F inside.", "tool": "stove", "heat": "low", "temp_f": 160, "cue": "no pink in the middle"},
+  {"do": "Meanwhile, boil the water with the rest of the salt and cook the spaghetti for 9 minutes. Drain.", "uses": [{"id": "water", "qty": 16, "unit": "cup"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}, {"id": "spaghetti", "qty": 1, "unit": "lb"}], "tool": "stove", "heat": "high", "timer": 9, "cue": "al dente"},
+  {"do": "Stir the basil into the sauce and serve over the spaghetti with the rest of the parmesan.", "uses": [{"id": "basil", "qty": 6, "unit": "leaf"}, {"id": "parmesan", "qty": 0.25, "unit": "cup"}]}
+ ]
+}

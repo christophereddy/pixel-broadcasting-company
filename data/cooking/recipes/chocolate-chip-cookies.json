@@ -1,0 +1,33 @@
+{
+ "slug": "chocolate-chip-cookies",
+ "name": "Chocolate Chip Cookies",
+ "summary": "Chewy cookies with crisp edges.",
+ "role": "dessert",
+ "cuisine": "American",
+ "occasions": ["baking", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 24,
+ "time": {"prep": 15, "cook": 11, "total": 30},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "butter", "qty": 0.5, "unit": "cup", "form": "softened"},
+  {"id": "sugar", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "brown-sugar", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "egg", "qty": 1, "unit": "piece", "form": "whole"},
+  {"id": "vanilla", "qty": 1, "unit": "tsp", "form": "whole"},
+  {"id": "flour", "qty": 1.5, "unit": "cup", "form": "whole"},
+  {"id": "baking-soda", "qty": 0.5, "unit": "tsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "chocolate-chips", "qty": 1, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 350°F.", "tool": "oven", "oven_f": 350, "help": true},
+  {"do": "Beat the butter, sugar and brown sugar until fluffy.", "uses": [{"id": "butter", "qty": 0.5, "unit": "cup"}, {"id": "sugar", "qty": 0.5, "unit": "cup"}, {"id": "brown-sugar", "qty": 0.5, "unit": "cup"}]},
+  {"do": "Beat in the egg and vanilla.", "uses": [{"id": "egg", "qty": 1, "unit": "piece"}, {"id": "vanilla", "qty": 1, "unit": "tsp"}]},
+  {"do": "Stir in the flour, baking soda and salt, then the chocolate chips.", "uses": [{"id": "flour", "qty": 1.5, "unit": "cup"}, {"id": "baking-soda", "qty": 0.5, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}, {"id": "chocolate-chips", "qty": 1, "unit": "cup"}]},
+  {"do": "Scoop tablespoon balls onto a lined sheet, 2 inches apart."},
+  {"do": "Bake for 11 minutes, until the edges are golden.", "tool": "oven", "oven_f": 350, "timer": 11, "cue": "golden edges, soft middle", "help": true},
+  {"do": "Cool on the sheet for 5 minutes.", "timer": 5}
+ ]
+}

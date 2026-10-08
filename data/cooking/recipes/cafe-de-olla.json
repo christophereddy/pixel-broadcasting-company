@@ -1,0 +1,26 @@
+{
+ "slug": "cafe-de-olla",
+ "name": "Café de Olla",
+ "summary": "Mexican coffee brewed with cinnamon and brown sugar.",
+ "role": "drink",
+ "cuisine": "Mexico",
+ "occasions": ["breakfast", "brunch"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 2, "cook": 13, "total": 15},
+ "allergens": [],
+ "ingredients": [
+  {"id": "water", "qty": 4, "unit": "cup", "form": "whole"},
+  {"id": "cinnamon", "qty": 1, "unit": "piece", "form": "whole", "note": "stick"},
+  {"id": "brown-sugar", "qty": 0.25, "unit": "cup", "form": "whole"},
+  {"id": "orange", "qty": 1, "unit": "piece", "form": "zested", "note": "a strip of peel"},
+  {"id": "ground-coffee", "qty": 0.25, "unit": "cup", "form": "whole", "note": "coarse"}
+ ],
+ "steps": [
+  {"do": "Bring the water, cinnamon, brown sugar and orange peel to a boil.", "uses": [{"id": "water", "qty": 4, "unit": "cup"}, {"id": "cinnamon", "qty": 1, "unit": "piece"}, {"id": "brown-sugar", "qty": 0.25, "unit": "cup"}, {"id": "orange", "qty": 1, "unit": "piece"}], "tool": "stove", "heat": "high"},
+  {"do": "Simmer for 5 minutes.", "tool": "stove", "heat": "low", "timer": 5},
+  {"do": "Stir in the coffee, take it off the heat and steep for 5 minutes.", "uses": [{"id": "ground-coffee", "qty": 0.25, "unit": "cup"}], "timer": 5},
+  {"do": "Strain into mugs."}
+ ]
+}

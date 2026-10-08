@@ -1,0 +1,33 @@
+{
+ "slug": "tomato-soup",
+ "name": "Creamy Tomato Soup",
+ "summary": "A smooth, gently creamy tomato soup for dunking.",
+ "role": "starter",
+ "cuisine": "American",
+ "occasions": ["lunch", "comfort"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 25, "total": 35},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "chopped"},
+  {"id": "garlic", "qty": 2, "unit": "clove", "form": "minced"},
+  {"id": "canned-tomatoes", "qty": 2, "unit": "can", "form": "whole", "note": "28 oz cans"},
+  {"id": "vegetable-stock", "qty": 2, "unit": "cup", "form": "whole"},
+  {"id": "sugar", "qty": 1, "unit": "tsp", "form": "whole"},
+  {"id": "cream", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "basil", "qty": 4, "unit": "leaf", "form": "torn"},
+  {"id": "salt", "unit": "to-taste", "form": "ground"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Chop the onion and mince the garlic.", "uses": [{"id": "onion", "qty": 1, "unit": "piece"}, {"id": "garlic", "qty": 2, "unit": "clove"}], "tool": "knife", "help": true},
+  {"do": "Melt the butter in a pot and cook the onion for 5 minutes, until soft.", "uses": [{"id": "butter", "qty": 2, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 5, "cue": "onion soft", "help": true},
+  {"do": "Add the garlic and cook for 1 minute.", "tool": "stove", "heat": "medium", "timer": 1, "help": true},
+  {"do": "Add the tomatoes, stock and sugar. Simmer for 15 minutes.", "uses": [{"id": "canned-tomatoes", "qty": 2, "unit": "can"}, {"id": "vegetable-stock", "qty": 2, "unit": "cup"}, {"id": "sugar", "qty": 1, "unit": "tsp"}], "tool": "stove", "heat": "medium-low", "timer": 15, "help": true},
+  {"do": "Blend until smooth. A grown-up holds the lid down with a towel.", "tool": "blender", "help": true},
+  {"do": "Stir in the cream and basil, then season with salt and pepper.", "uses": [{"id": "cream", "qty": 0.5, "unit": "cup"}, {"id": "basil", "qty": 4, "unit": "leaf"}, {"id": "salt", "unit": "to-taste"}, {"id": "pepper", "unit": "to-taste"}], "tool": "stove", "heat": "low", "help": true}
+ ]
+}

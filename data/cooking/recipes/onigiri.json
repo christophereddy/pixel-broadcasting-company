@@ -1,0 +1,30 @@
+{
+ "slug": "onigiri",
+ "name": "Tuna Mayo Onigiri",
+ "summary": "Rice balls with a tuna mayo filling, wrapped in nori.",
+ "role": "main",
+ "cuisine": "Japan",
+ "occasions": ["lunchbox", "picnic"],
+ "difficulty": "easy",
+ "tags": ["kid"],
+ "serves": 6,
+ "time": {"prep": 15, "cook": 35, "total": 50},
+ "allergens": ["egg", "fish"],
+ "ingredients": [
+  {"id": "sushi-rice", "qty": 2, "unit": "cup", "form": "dry"},
+  {"id": "water", "qty": 2.25, "unit": "cup", "form": "whole"},
+  {"id": "tuna", "qty": 1, "unit": "can", "form": "drained"},
+  {"id": "mayonnaise", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "nori", "qty": 3, "unit": "sheet", "form": "whole", "note": "cut in half"}
+ ],
+ "steps": [
+  {"do": "Rinse the rice until the water runs clear.", "uses": [{"id": "sushi-rice", "qty": 2, "unit": "cup"}]},
+  {"do": "Cook the rice in the water, covered, for 15 minutes.", "uses": [{"id": "water", "qty": 2.25, "unit": "cup"}], "tool": "stove", "heat": "low", "timer": 15, "help": true},
+  {"do": "Rest it, still covered, for 10 minutes.", "timer": 10, "cue": "soft and sticky"},
+  {"do": "Mix the tuna with the mayonnaise.", "uses": [{"id": "tuna", "qty": 1, "unit": "can"}, {"id": "mayonnaise", "qty": 2, "unit": "tbsp"}]},
+  {"do": "Wet your hands, rub on a little salt and press a handful of rice flat.", "uses": [{"id": "salt", "qty": 1, "unit": "tsp"}]},
+  {"do": "Put a spoon of tuna in the middle, close the rice around it and press into a triangle."},
+  {"do": "Wrap the bottom in a strip of nori.", "uses": [{"id": "nori", "qty": 3, "unit": "sheet"}]}
+ ]
+}

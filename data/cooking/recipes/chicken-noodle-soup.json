@@ -1,0 +1,36 @@
+{
+ "slug": "chicken-noodle-soup",
+ "name": "Chicken Noodle Soup",
+ "summary": "Classic soup with chicken, vegetables and egg noodles.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["comfort", "weeknight"],
+ "difficulty": "medium",
+ "tags": [],
+ "serves": 6,
+ "time": {"prep": 15, "cook": 35, "total": 50},
+ "allergens": ["egg", "wheat"],
+ "ingredients": [
+  {"id": "olive-oil", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "carrots", "qty": 2, "unit": "piece", "form": "sliced"},
+  {"id": "celery", "qty": 2, "unit": "stalk", "form": "sliced"},
+  {"id": "chicken-thighs", "qty": 1, "unit": "lb", "form": "whole", "note": "boneless, skinless"},
+  {"id": "chicken-stock", "qty": 8, "unit": "cup", "form": "whole"},
+  {"id": "thyme", "qty": 3, "unit": "sprig", "form": "sprig"},
+  {"id": "bay-leaf", "qty": 1, "unit": "leaf", "form": "whole"},
+  {"id": "egg-noodles", "qty": 3, "unit": "cup", "form": "dry"},
+  {"id": "parsley", "qty": 2, "unit": "tbsp", "form": "chopped"},
+  {"id": "salt", "unit": "to-taste", "form": "ground"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Dice the onion and slice the carrots and celery.", "uses": [{"id": "onion", "qty": 1, "unit": "piece"}, {"id": "carrots", "qty": 2, "unit": "piece"}, {"id": "celery", "qty": 2, "unit": "stalk"}], "tool": "knife"},
+  {"do": "Cook the vegetables in the oil for 5 minutes.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 5},
+  {"do": "Add the chicken, stock, thyme and bay leaf. Simmer for 20 minutes.", "uses": [{"id": "chicken-thighs", "qty": 1, "unit": "lb"}, {"id": "chicken-stock", "qty": 8, "unit": "cup"}, {"id": "thyme", "qty": 3, "unit": "sprig"}, {"id": "bay-leaf", "qty": 1, "unit": "leaf"}], "tool": "stove", "heat": "medium-low", "timer": 20},
+  {"do": "Lift out the chicken and check it reads 165°F, then shred it with two forks.", "temp_f": 165, "cue": "shreds easily"},
+  {"do": "Add the noodles and cook for 7 minutes.", "uses": [{"id": "egg-noodles", "qty": 3, "unit": "cup"}], "tool": "stove", "heat": "medium", "timer": 7},
+  {"do": "Return the chicken, take out the bay leaf and thyme stems, and season.", "uses": [{"id": "salt", "unit": "to-taste"}, {"id": "pepper", "unit": "to-taste"}]},
+  {"do": "Top with parsley.", "uses": [{"id": "parsley", "qty": 2, "unit": "tbsp"}]}
+ ]
+}
