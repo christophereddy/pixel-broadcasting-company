@@ -333,7 +333,7 @@ function menuJson() {
   for (const r of RECIPES) {
     const byId = new Map(r.ingredients.map(i => [i.id, i]));
     recipes[r.slug] = {name: r.name, summary: r.summary, role: r.role, cuisine: r.cuisine, serves: r.serves, time: r.time, difficulty: r.difficulty,
-      tags: r.tags, allergens: r.allergens,
+      tags: r.tags, allergens: r.allergens, ...(r.plate ? {plate: r.plate} : {}),
       ingredients: r.ingredients.map(i => ({id: i.id, group: LIB.ingredients[i.id].group, qty: i.qty, unit: i.unit, form: i.form, line: line(i)})),
       steps: r.steps.map(st => {
         const o = {do: st.do};

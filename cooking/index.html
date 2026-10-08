@@ -17,6 +17,7 @@
 <script src="kitchen.js"></script>
 <script src="food.js"></script>
 <script src="scenes.js"></script>
+<script src="dishes.js"></script>
 <style>
 /* PBC Cooking: the kitchen broadcast, with the recipe's card and timer over the picture; the current recipe, the menu,
    the cooks and the rundown in the right column. Every amount, timer and temperature comes from cooking/menu.json. */
@@ -335,7 +336,7 @@ let camX=0,camKey="";
 function draw(real,A){
   const {S,b,el}=A,show=S.show,r=b.recipe?MENU.recipes[b.recipe]:null,phase=Math.min(1,el/b.dur);
   if(b.kind==="ad"){const n=A.cycle?A.cycle.n:0;K.adBreak(rg,real,{ad:adFor(n+S.B.indexOf(b),b.ad),phase,left:Math.ceil((b.dur*(P.ADS-b.ad)-el)/1000)});v.drawImage(room,0,0,W,H,0,0,W,H);return}
-  if(b.kind==="table"){K.table(rg,real,{pair:S.pair,speak:b.sp,phase,country:show.country,dishes:show.recipes.map(s=>{const x=MENU.recipes[s];return {role:x.role,cols:x.ingredients.slice(0,3).map(i=>PBC_FOOD.color(i.id))}})});v.drawImage(room,0,0,W,H,0,0,W,H);return}
+  if(b.kind==="table"){K.table(rg,real,{pair:S.pair,speak:b.sp,phase,country:show.country,dishes:S.dishes||(S.dishes=show.recipes.map(s=>PBC_DISHES.plating(Object.assign({slug:s},MENU.recipes[s]))))});v.drawImage(room,0,0,W,H,0,0,W,H);return}
   // cut in close: the counter for "You'll need" and prep steps, the cooktop for stove steps, once the cook is in place.
   // Oven steps and the step where something spills stay on the wide shot.
   const st=b.st||{},close=b.kind==="need"?"counter":(b.kind==="step"||b.kind==="ff")&&!b.spill&&(b.kind==="ff"||el>=(b.station==="stove"?3000:4000))?({prep:"counter",stove:"stove"}[b.station]||null):null;
