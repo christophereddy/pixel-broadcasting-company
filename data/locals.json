@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 63,
     "cond": "Partly Cloudy",
-    "obs": "8 Oct 04:52 am EDT"
+    "obs": "8 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -29,7 +29,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 79,
-     "text": "Partly sunny, with a high near 79. East wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Partly sunny, with a high near 79. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday Night",
@@ -41,7 +41,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 70,
-     "text": "Showers, with thunderstorms also possible after 5pm.  High near 70. Windy, with an east wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 100%."
+     "text": "Showers, with thunderstorms also possible after 5pm.  High near 70. Windy, with an east wind 20 to 25 mph, with gusts as high as 40 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Saturday Night",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,16 +76,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Partly Cloudy",
-    "obs": "8 Oct 04:54 am EDT"
+    "temp": 62,
+    "cond": "Mostly Cloudy",
+    "obs": "8 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 71,
-     "text": "A chance of showers between 9am and 1pm.  Increasing clouds, with a high near 71. West wind 9 to 11 mph, with gusts as high as 26 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A chance of showers, mainly before noon.  Mostly sunny, with a high near 71. West wind around 11 mph, with gusts as high as 26 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -143,23 +143,32 @@
   },
   "local": [
    {
+    "h": "Mary Todd Lincoln's cape goes on view",
+    "b": "The bloodstained cape Mary Todd Lincoln wore the night of Lincoln's assassination is part of a new Chicago History Museum exhibit on presidential artifacts.",
+    "date": "2026-10-08",
+    "publisher": "WBEZ",
+    "title": "Mary Todd Lincoln’s blood-soaked cape goes on view in new Chicago History Museum exhibit about presidential artifacts",
+    "url": "https://www.wbez.org/museums/2026/10/08/chicago-history-museum-exhibit-threads-of-a-nation-mary-todd-lincoln",
+    "published": "2026-10-08T10:35:00Z",
+    "updated": "2026-10-08T10:35:04Z",
+    "gathered": "2026-10-08T13:12:27Z"
+   },
+   {
     "h": "Judge blocks Illinois prediction market rules",
     "b": "A federal judge blocked Illinois' new rules on prediction markets, a win for the app Kalshi, WBEZ reports.",
     "date": "2026-10-07",
     "more": [
      "The ruling left open the state potentially taxing transaction fees on the app."
     ],
-    "publisher": "WBEZ",
-    "title": "Illinois dealt blow in legal fight with app Kalshi",
     "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/07/illinois-dealt-blow-in-legal-fight-with-app-kalshi",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Fair",
-    "obs": "8 Oct 03:53 am CDT"
+    "temp": 55,
+    "cond": "Mostly Cloudy",
+    "obs": "8 Oct 07:53 am CDT"
    },
    "periods": [
     {
@@ -212,7 +221,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -226,24 +235,18 @@
   "weather": {
    "now": {
     "temp": 58,
-    "cond": "Partly Cloudy",
-    "obs": "8 Oct 01:58 am MDT"
+    "cond": "A Few Clouds",
+    "obs": "8 Oct 06:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 56,
-     "text": "Mostly clear, with a low around 56. South southwest wind around 5 mph. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 85,
      "text": "Sunny, with a high near 85. Calm wind becoming east around 6 mph in the afternoon. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 55,
      "text": "Mostly clear, with a low around 55. South southwest wind around 6 mph. "
@@ -258,13 +261,19 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. Southwest wind 7 to 9 mph, with gusts as high as 16 mph. "
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 56. Southwest wind 7 to 9 mph, with gusts as high as 16 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 83,
-     "text": "Sunny, with a high near 83."
+     "text": "Sunny, with a high near 83. South wind 7 to 9 mph, with gusts as high as 16 mph. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Partly cloudy, with a low around 58."
     }
    ]
   },
@@ -280,7 +289,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -313,7 +322,6 @@
     "title": "US Department of Education announces enforcement action against LAUSD",
     "url": "https://laist.com/news/education/us-department-of-education-action-against-lausd",
     "published": "2026-10-07T18:30:00Z",
-    "updated": "2026-10-07T18:30:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -323,11 +331,7 @@
     "more": [
      "California Communities Against Toxics says large amounts of ammonia have leaked since the fire destroyed the refrigeration system."
     ],
-    "publisher": "LAist",
-    "title": "What was in the air after the Lineage fire? New lawsuits are demanding information",
     "url": "https://laist.com/news/health/what-was-in-the-air-after-lineage-fire-lawsuits",
-    "published": "2026-10-07T12:00:00Z",
-    "updated": "2026-10-07T15:50:53Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -337,11 +341,7 @@
     "more": [
      "Founders Gaines and Hang Newborn are raising money to keep it open and buy its building."
     ],
-    "publisher": "LAist",
-    "title": "Local food bank under pressure to expand as cuts to food services fuels demand",
     "url": "https://laist.com/news/housing-homelessness/local-food-bank-under-pressure-la",
-    "published": "2026-10-07T12:00:00Z",
-    "updated": "2026-10-07T15:52:17Z",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
@@ -349,19 +349,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 70,
-     "text": "Clear, with a low around 70. Calm wind. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 96,
      "text": "Sunny and hot, with a high near 96. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 69,
      "text": "Increasing clouds, with a low around 69. West southwest wind around 5 mph becoming calm  after midnight. "
@@ -376,13 +370,19 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 66,
-     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 66. Southwest wind 5 to 10 mph becoming south southeast after midnight. "
+     "text": "Patchy fog after 11pm.  Otherwise, increasing clouds, with a low around 66. Southwest wind 5 to 10 mph becoming south southeast after midnight. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 79,
-     "text": "Patchy fog before 11am.  Otherwise, mostly cloudy, with a high near 79."
+     "text": "Patchy fog before 11am.  Otherwise, mostly cloudy, with a high near 79. Calm wind becoming south southwest around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 64,
+     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 64."
     }
    ]
   },
@@ -398,7 +398,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -409,6 +409,36 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Arrest in deadly Bronx balcony push",
+    "b": "Police arrested the man they say pushed a 23-year-old mother and their 8-month-old daughter from a Bronx balcony, killing the woman; he faces a murder charge.",
+    "date": "2026-10-08",
+    "publisher": "Gothamist",
+    "title": "Man who pushed his baby and her mother from a Bronx balcony arrested for murder, NYPD says",
+    "url": "https://gothamist.com/news/man-who-pushed-his-baby-and-her-mother-from-a-bronx-balcony-arrested-for-murder-nypd-says",
+    "published": "2026-10-08T12:11:00Z",
+    "gathered": "2026-10-08T13:12:27Z"
+   },
+   {
+    "h": "Teen, 15, shot dead in Harlem",
+    "b": "A 15-year-old was shot and killed and a man was wounded at NYCHA's Martin Luther King Jr. Towers in Harlem; police are questioning a teen.",
+    "date": "2026-10-08",
+    "publisher": "Gothamist",
+    "title": "15-year-old shot and killed and 1 man wounded in Harlem as NYPD questions teen suspect",
+    "url": "https://gothamist.com/news/15-year-old-shot-and-killed-and-1-man-wounded-in-harlem-as-nypd-questions-teen-suspect",
+    "published": "2026-10-08T12:57:54Z",
+    "gathered": "2026-10-08T13:12:27Z"
+   },
+   {
+    "h": "Audit questions Newark school spending",
+    "b": "An audit questioning how millions were spent in Newark's public schools led to a referral to state prosecutors, Gothamist reports.",
+    "date": "2026-10-08",
+    "publisher": "Gothamist",
+    "title": "Audit questions how millions were spent in Newark schools. GOP says it's no surprise.",
+    "url": "https://gothamist.com/news/audit-questions-how-millions-were-spent-in-newark-schools-gop-says-its-no-surprise",
+    "published": "2026-10-08T13:00:55Z",
+    "gathered": "2026-10-08T13:12:27Z"
+   },
    {
     "h": "Mamdani joins Oct. 7 vigil amid Union Square protests",
     "b": "Mayor Zohran Mamdani attended a vigil marking the Oct. 7 attack as demonstrators waving Israeli and Palestinian flags filled Union Square under heavy police presence.",
@@ -424,10 +454,7 @@
     "h": "Queens pharmacist charged in $31M Medicaid fraud",
     "b": "The owner of two Jackson Heights pharmacies was arrested on charges of a $31 million Medicaid drug-buyback scheme involving HIV prescriptions, the state attorney general said.",
     "date": "2026-10-07",
-    "publisher": "Gothamist",
-    "title": "Queens pharmacy owner charged in alleged $31M Medicaid drugs fraud",
     "url": "https://gothamist.com/news/queens-pharmacy-owner-charged-in-alleged-31m-medicaid-drugs-fraud",
-    "published": "2026-10-07T21:15:19Z",
     "gathered": "2026-10-07T22:13:04Z"
    },
    {
@@ -437,11 +464,7 @@
     "more": [
      "The probe into Motor Vehicle Commission registration errors began in July."
     ],
-    "publisher": "Gothamist",
-    "title": "NJ probe finds about 1,100 more problematic voter registrations",
     "url": "https://gothamist.com/news/nj-probe-finds-about-1100-more-problematic-voter-registrations",
-    "published": "2026-10-07T20:53:00Z",
-    "updated": "2026-10-07T21:32:00Z",
     "gathered": "2026-10-07T22:13:04Z"
    },
    {
@@ -451,23 +474,7 @@
     "more": [
      "Officials say the gates have proven highly effective against fare evasion."
     ],
-    "publisher": "Gothamist",
-    "title": "MTA moves ahead with $1.1B plan to put modern fare gates at 150 subway stations",
     "url": "https://gothamist.com/news/mta-moves-ahead-with-11b-plan-to-put-modern-fare-gates-at-150-subway-stations",
-    "published": "2026-10-07T18:59:56Z",
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Baby pushed from Bronx balcony now stable",
-    "b": "An 8-month-old girl pushed from a 15th-floor Bronx balcony with her mother is in stable condition, and police have identified a man wanted in the case.",
-    "date": "2026-10-07",
-    "more": [
-     "Her mother, 23-year-old Nathaly Ramirez, was killed Tuesday."
-    ],
-    "publisher": "Gothamist",
-    "title": "NYPD identifies man wanted in connection with deadly Bronx balcony push",
-    "url": "https://gothamist.com/news/nypd-identifies-man-wanted-in-connection-with-deadly-bronx-balcony-push",
-    "published": "2026-10-07T18:45:57Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -477,10 +484,7 @@
     "more": [
      "D'Angelo Caraballo, 25, and Sneider Mejia, 24, were arrested by fugitive task force detectives."
     ],
-    "publisher": "Gothamist",
-    "title": "Suspects in off-duty NYPD detective's stabbing found hiding in Massachusetts basement",
     "url": "https://gothamist.com/news/suspects-in-off-duty-nypd-detectives-stabbing-found-hiding-in-massachusetts-basement",
-    "published": "2026-10-07T14:36:34Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -490,11 +494,7 @@
     "more": [
      "The judge cited his conditions and more than 200 days in detention."
     ],
-    "publisher": "Gothamist",
-    "title": "NJ immigrant at the center of Delaney Hall protests released from ICE custody",
     "url": "https://gothamist.com/news/nj-immigrant-at-the-center-of-delaney-hall-protests-released-from-ice-custody",
-    "published": "2026-10-07T15:36:00Z",
-    "updated": "2026-10-07T20:38:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -504,10 +504,7 @@
     "more": [
      "He was first arrested in July, days after Elizabeth Baron died."
     ],
-    "publisher": "Gothamist",
-    "title": "NYPD says unlicensed doc has been charged with murder in 27-year-old patient death",
     "url": "https://gothamist.com/news/nypd-says-unlicensed-doc-has-been-charged-with-murder-in-27-year-old-patient-death",
-    "published": "2026-10-07T13:39:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -517,10 +514,7 @@
     "more": [
      "The arrests are largely of Latin American immigrant men without criminal histories."
     ],
-    "publisher": "Gothamist",
-    "title": "Nearly 40K and counting: Here’s where ICE arrested immigrants across NY and NJ",
     "url": "https://gothamist.com/news/nearly-40k-and-counting-heres-where-ice-arrested-immigrants-across-ny-and-nj",
-    "published": "2026-10-07T10:00:54Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -530,10 +524,7 @@
     "more": [
      "On Monday a 71-year-old cyclist fell near 84th Street while avoiding an off-leash dog."
     ],
-    "publisher": "Gothamist",
-    "title": "Central Park's car-free loop is busier than ever. Crashes keep piling up.",
     "url": "https://gothamist.com/news/central-parks-car-free-loop-is-busier-than-ever-crashes-keep-piling-up",
-    "published": "2026-10-07T11:30:57Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -543,18 +534,15 @@
     "more": [
      "It follows deals by NYU Langone and Mount Sinai with the Trump administration to stop such care for minors."
     ],
-    "publisher": "Gothamist",
-    "title": "NYC moves to spend nearly $9M of gender-affirming care fund for minors",
     "url": "https://gothamist.com/news/nyc-moves-to-spend-nearly-9m-of-gender-affirming-care-fund-for-minors",
-    "published": "2026-10-07T10:30:55Z",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Fair",
-    "obs": "8 Oct 04:51 am EDT"
+    "temp": 59,
+    "cond": "A Few Clouds",
+    "obs": "8 Oct 08:51 am EDT"
    },
    "periods": [
     {
@@ -607,7 +595,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -648,11 +636,7 @@
     "more": [
      "He laid out areas for improvement in the education system."
     ],
-    "publisher": "The Local France",
-    "title": "LATEST: French high school students hold new protests after PM vows response",
     "url": "https://www.thelocal.fr/20261007/latest-france-cannot-be-indifferent-to-the-demands-of-student-protesters-says-pm",
-    "published": "2026-10-07T17:31:27Z",
-    "updated": "2026-10-08T06:56:01Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -708,7 +692,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "goodnews": []
  },
  {
@@ -733,19 +717,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Mostly cloudy, with a steady temperature around 54. Calm wind. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Partly sunny, with a high near 69. Calm wind. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "Rain likely after 5am.  Increasing clouds, with a low around 54. Light and variable wind becoming south southwest 5 to 10 mph after midnight.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -753,8 +731,8 @@
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 61,
-     "text": "Rain, mainly before 10am.  High near 61. South southwest wind 6 to 13 mph becoming east in the afternoon. Winds could gust as high as 21 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 58,
+     "text": "Rain, mainly before 10am.  Steady temperature around 58. South southwest wind 6 to 13 mph becoming east in the afternoon. Winds could gust as high as 21 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
@@ -766,7 +744,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 59,
-     "text": "A 20 percent chance of rain before 11am.  Partly sunny, with a high near 59."
+     "text": "A 20 percent chance of rain before 11am.  Partly sunny, with a high near 59. Calm wind becoming north 5 to 7 mph in the afternoon. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 47,
+     "text": "Mostly clear, with a low around 47."
     }
    ]
   },
@@ -782,7 +766,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T10:10:00Z",
+  "updatedAt": "2026-10-08T13:23:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
