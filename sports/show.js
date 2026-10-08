@@ -14,8 +14,7 @@
    switchSport stop the show, pump brings it back when a replay ends. */
 'use strict';
 
-const DESK_AD_MS = 10000;
-const DESK_CLIP_MS = 20000;                     // the longest a highlight clip runs                       // a break ad holds the screen for ten seconds, same as the newsroom's
+const DESK_AD_MS = 10000;                       // a break ad holds the screen for ten seconds, same as the newsroom's
 const DESK_ORDER = ['nfl', 'cfb', 'nba', 'wnba', 'mlb', 'f1'];
 const SHOW = {
   on: false,        // the show is running (the booth is Bo and a guest, and the desk drives the page)
@@ -118,8 +117,8 @@ function deskOutro(sp){
    Like the newsroom's, each segment shows the clock time it starts. A desk segment's length
    depends on the games and the voices, so it is the length that segment last ran on this device (until it has run
    once, a typical length), and the times move along if the segment on air runs long. */
-const DESK_EST = {break: 36000, f1: 75000};             // typical lengths before a segment has run here
-const DESK_EST_SPORT = 90000;
+const DESK_EST = {break: 36000, f1: 150000};            // typical lengths before a segment has run here
+const DESK_EST_SPORT = 180000;
 let DESK_LENS = {};
 try { DESK_LENS = JSON.parse(localStorage.getItem('pbc-desk-lens') || '{}') || {}; } catch (e) {}
 function deskLenSave(sg, ms){
@@ -281,8 +280,9 @@ function deskClips(){
     const start = ev.find(e => e.kind === 'start');
     const lead = ev.filter(e => e.kind === 'lead')[0];
     const end = ev.find(e => e.kind === 'win') || ev.filter(e => e.kind === 'fin').pop();
-    if (start) out.push({t: start.t - 4000, secs: 16, why: 'the start', intro: 'We start at the lights.'});
-    if (end) out.push({t: end.t - 12000, secs: 16, why: 'the finish', intro: 'And the run to the flag.'});
+    if (start) out.push({t: start.t - 4000, secs: 24, why: 'the start', intro: 'We start at the lights.'});
+    if (lead) out.push({t: lead.t - 10000, secs: 24, why: 'lap ' + lead.lap, intro: `The lead changed hands on lap ${lead.lap}.`});
+    if (end) out.push({t: end.t - 16000, secs: 26, why: 'the finish', intro: 'And the run to the flag.'});
     return out;
   }
   const R = S.rp; if (!R || !R.plays?.length) return out;
@@ -291,17 +291,17 @@ function deskClips(){
   const where = i => at(i).replace(/^in /, '');              // "the first quarter", for the seek caption
   if (R.mlb) {
     const hr = sc.filter(s => s.kind === 'HR');
-    const picks = (hr.length ? hr : sc).slice(0, 1);
+    const picks = (hr.length ? hr : sc).slice(0, 2);
     for (const s of picks) out.push({i0: Math.max(R.driveOf(s.i), s.i - 4), i1: s.i, why: where(s.i),
       intro: `${s.team.loc}, ${deskKind(s.kind)} ${at(s.i)}.`});
   } else if (R.bb) {
     const hits = [];
     R.plays.forEach((p, i) => { const t = (p.text || '').toLowerCase(); if (/(three point|dunk)/.test(t) && /(makes|made)/.test(t)) hits.push(i); });
-    const picks = hits.length ? [hits[Math.floor(hits.length * 0.5)]] : [];
+    const picks = hits.length > 2 ? [hits[Math.floor(hits.length * 0.3)], hits[Math.floor(hits.length * 0.75)]] : hits.slice(0, 2);
     for (const i of picks) out.push({i0: Math.max(0, i - 1), i1: i, why: where(i), intro: `A basket ${at(i)}.`});
     out.push({i0: Math.max(0, n - 3), i1: n - 1, why: 'the finish', intro: 'And the finish.'});
   } else {
-    const picks = sc.length <= 2 ? sc.slice() : [sc[Math.floor(sc.length / 2)], sc[sc.length - 1]];
+    const picks = sc.length <= 3 ? sc.slice() : [sc[0], sc[Math.floor(sc.length / 2)], sc[sc.length - 1]];
     for (const s of picks) out.push({i0: Math.max(R.driveOf(s.i), s.i - 2), i1: s.i, why: where(s.i),
       intro: `${s.team.loc}, ${deskKind(s.kind)} ${at(s.i)}.`});
   }
@@ -316,8 +316,7 @@ async function deskClip(c, tok){
   S.queue = S.rp.plays.slice(c.i0, c.i1 + 1);            // seekTo queues the rest of the game; the clip stops at i1
   await deskHold(1000, tok);
   const t0 = Date.now();
-  // a clip gets about twenty seconds; a long drive is cut there so one sport never holds the desk for long
-  while (deskGo(tok) && Date.now() - t0 < DESK_CLIP_MS && (S.queue.length || S.pumping != null || S.anim)) await sleep(200);
+  while (deskGo(tok) && Date.now() - t0 < 120000 && (S.queue.length || S.pumping != null || S.anim)) await sleep(200);
   if (deskAlive(tok)) S.queue = [];
   await deskHold(600, tok);
 }
