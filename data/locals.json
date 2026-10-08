@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 78,
+    "temp": 80,
     "cond": "Partly Cloudy",
-    "obs": "8 Oct 11:52 am EDT"
+    "obs": "8 Oct 12:52 pm EDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
      "temp": 86,
-     "text": "Mostly sunny, with a high near 86. North wind around 5 mph. "
+     "text": "Partly sunny, with a high near 86. North wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,16 +88,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 72,
     "cond": "A Few Clouds",
-    "obs": "8 Oct 11:54 am EDT"
+    "obs": "8 Oct 12:54 pm EDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
      "temp": 71,
-     "text": "A slight chance of showers before 1pm.  Sunny, with a high near 71. West wind around 11 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
+     "text": "Sunny, with a high near 71. West wind around 11 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -143,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -217,13 +217,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 69,
     "cond": "Mostly Cloudy",
-    "obs": "8 Oct 10:53 am CDT"
+    "obs": "8 Oct 11:53 am CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
      "text": "Sunny, with a high near 69. North northwest wind 5 to 10 mph. "
@@ -272,7 +272,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -340,7 +340,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -449,7 +449,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -484,6 +484,19 @@
     "gathered": "2026-10-08T16:48:15Z"
    },
    {
+    "h": "Survey: NYC parents split on childcare needs",
+    "b": "A New America survey of NYC families with young children found working parents need more weekend childcare, and most want to be the main caregiver in a child's first year.",
+    "date": "2026-10-08",
+    "more": [
+     "Parents in higher-income areas near Manhattan more often prefer formal preschool for 2-year-olds than parents in the Bronx and parts of Queens."
+    ],
+    "publisher": "Gothamist",
+    "title": "NYC parents want affordable childcare. But they don't all want the same thing.",
+    "url": "https://gothamist.com/news/nyc-parents-want-affordable-childcare-but-they-dont-all-want-the-same-thing",
+    "published": "2026-10-08T17:00:53Z",
+    "gathered": "2026-10-08T17:12:14Z"
+   },
+   {
     "h": "Arrest in deadly Bronx balcony push",
     "b": "Police arrested the man they say pushed a 23-year-old mother and their 8-month-old daughter from a Bronx balcony, killing the woman; he faces a murder charge.",
     "date": "2026-10-08",
@@ -498,9 +511,10 @@
     "b": "A 15-year-old was shot and killed and a man was wounded at NYCHA's Martin Luther King Jr. Towers in Harlem; police are questioning a teen.",
     "date": "2026-10-08",
     "publisher": "Gothamist",
-    "title": "15-year-old shot and killed and 1 man wounded in Harlem as NYPD questions teen suspect",
+    "title": "Harlem community of murdered 15-year-old mourns as NYPD questions teen tied to incident",
     "url": "https://gothamist.com/news/15-year-old-shot-and-killed-and-1-man-wounded-in-harlem-as-nypd-questions-teen-suspect",
     "published": "2026-10-08T12:57:00Z",
+    "updated": "2026-10-08T16:59:00Z",
     "gathered": "2026-10-08T13:12:27Z"
    },
    {
@@ -640,9 +654,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 72,
     "cond": "Fair",
-    "obs": "8 Oct 11:51 am EDT"
+    "obs": "8 Oct 12:51 pm EDT"
    },
    "periods": [
     {
@@ -695,7 +709,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -798,7 +812,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "goodnews": [
    {
     "h": "Viral vegetarian wolf becomes a toy",
@@ -884,7 +898,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T17:11:00Z",
+  "updatedAt": "2026-10-08T19:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
