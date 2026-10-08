@@ -334,10 +334,11 @@ function menuJson() {
     const byId = new Map(r.ingredients.map(i => [i.id, i]));
     recipes[r.slug] = {name: r.name, summary: r.summary, role: r.role, cuisine: r.cuisine, serves: r.serves, time: r.time, difficulty: r.difficulty,
       tags: r.tags, allergens: r.allergens,
-      ingredients: r.ingredients.map(i => ({id: i.id, group: LIB.ingredients[i.id].group, line: line(i)})),
+      ingredients: r.ingredients.map(i => ({id: i.id, group: LIB.ingredients[i.id].group, qty: i.qty, unit: i.unit, form: i.form, line: line(i)})),
       steps: r.steps.map(st => {
         const o = {do: st.do};
-        if (st.uses) o.uses = st.uses.map(u => ({id: u.id, group: LIB.ingredients[u.id].group, line: line(Object.assign({}, byId.get(u.id), u, {note: undefined}))}));
+        if (st.uses) o.uses = st.uses.map(u => ({id: u.id, group: LIB.ingredients[u.id].group, qty: u.qty, unit: u.unit, form: byId.get(u.id).form,
+          line: line(Object.assign({}, byId.get(u.id), u, {note: undefined}))}));
         for (const k of ['tool', 'heat', 'oven_f', 'timer', 'temp_f', 'cue', 'help']) if (st[k] !== undefined) o[k] = st[k];
         return o;
       })};

@@ -7,8 +7,8 @@
    - adBreak(g, t, k)   the commercial break: Dot Delgado beside the big screen, as on News
    - CAST, pairFor()    the cooks and which pair cooks a show
    The window shows the Amalfi Coast, or the country of an Around the world show, with the sky for that place's own hour.
-   Ingredients on the island are simple tinted shapes by ingredient group until the ingredient art is drawn; amounts are
-   never read from the picture, the captions carry them. Baldur sleeps in his bed, and in about one show in four something
+   On the wide shot the food on the island is small blocks in each ingredient's color; the close-ups (scenes.js) show the
+   ingredient art and the exact amounts. Baldur sleeps in his bed, and in about one show in four something
    drops off the island and he gets up to lick it. Which show, which step and when are fixed by the show itself, never a
    dice roll on the viewer's screen, so every viewer and every clip sees the same thing. */
 (function(){
@@ -180,8 +180,9 @@ function emptyBed(){
 }
 function sleeping(t){
   const br = Math.floor(t / 1400) % 2;   // breathing: the back rises a pixel
-  sprite(BED, BED_X, BED_Y + 9 - 9, false, 9, BED.length);
+  sprite(BED, BED_X, BED_Y, false, 9, BED.length);
   sprite(BED, BED_X, BED_Y - br, false, 0, 9);
+  if (br) sprite(BED, BED_X, BED_Y, false, 8, 9);   // when his back rises, the row above the bed stretches to fill the gap
   if (Math.floor(t / 1800) % 3 === 0) txt("Z", BED_X + 50, BED_Y - 8 - (Math.floor(t / 600) % 3), "#9fb2ff");
 }
 // standing, walking (legs swap) or licking (head down, tongue out); x is his left edge, feet on the floor at y 146
@@ -213,10 +214,12 @@ function drops(spill, el){
   const n = Math.ceil(4 * left); [[0, -1, 6, 2], [6, 0, 3, 1], [-3, 0, 3, 1], [2, -2, 2, 1]].slice(0, n).forEach(([dx, dy, w, h]) => R(spill.color, spill.x + dx, 145 + dy, w, h));
 }
 
-/* ---------- ingredient shapes (placeholders until the ingredient art: one color per group) ---------- */
+/* ---------- ingredient colors on the wide shot (the close-ups draw the ingredient art, food.js) ---------- */
 const GROUP = {vegetable: "#5fbf6f", fruit: "#f6c744", herb: "#3f8f3a", protein: "#e8a090", dairy: "#f4efe6", bread: "#d9a05b", grain: "#e8d6a8",
   baking: "#f4f1e8", spice: "#b5523a", pantry: "#c98a3a", drink: "#8fd3ff", nut: "#a0703a"};
 const tint = grp => GROUP[grp] || "#c9ccd6";
+// an ingredient's own color from the ingredient art, or its group's when the art isn't loaded
+const foodCol = u => u && u.id && window.PBC_FOOD ? PBC_FOOD.color(u.id) : tint((u || {}).group);
 
 /* ---------- the room ---------- */
 const ISLAND = [40, 252], TOP = 98;          // the prep island: left, right, and its worktop line
@@ -282,20 +285,20 @@ function work(x, tool, t, uses){
   const chop = Math.floor(t / 150) % 2;
   if (tool === "knife") {
     R("#c08a52", x - 2, TOP - 4, 32, 3); R("#8b5a2b", x - 2, TOP - 1, 32, 1);
-    (uses || []).slice(0, 4).forEach((u, i) => R(tint(u.group), x + 2 + i * 5, TOP - 6, 4, 2));
+    (uses || []).slice(0, 4).forEach((u, i) => R(foodCol(u), x + 2 + i * 5, TOP - 6, 4, 2));
     R("#c9ccd6", x + 18, TOP - 9 + chop * 2, 10, 2); R("#2a2f3a", x + 26, TOP - 9 + chop * 2, 4, 2);
   } else if (tool === "blender") {
     R("#2a2f3a", x + 4, TOP - 6, 14, 6); R("#bfe8ff", x + 5, TOP - 26, 12, 20); R("#2a2f3a", x + 4, TOP - 28, 14, 3);
-    const col = tint(((uses || [])[0] || {}).group); R(col, x + 6, TOP - 18 + (Math.floor(t / 90) % 3), 10, 10);
+    const col = foodCol((uses || [])[0]); R(col, x + 6, TOP - 18 + (Math.floor(t / 90) % 3), 10, 10);
   } else {
     R("#e3e7f0", x + 2, TOP - 8, 24, 8); R("#c9cdd8", x + 3, TOP - 1, 22, 1);
-    (uses || []).slice(0, 3).forEach((u, i) => R(tint(u.group), x + 6 + i * 5, TOP - 10 + (Math.floor(t / 300 + i) % 2), 5, 3));
+    (uses || []).slice(0, 3).forEach((u, i) => R(foodCol(u), x + 6 + i * 5, TOP - 10 + (Math.floor(t / 300 + i) % 2), 5, 3));
     R("#c9ccd6", x + 14 + Math.round(Math.sin(t / 160) * 3), TOP - 16, 2, 9);
   }
 }
 function stoveTop(k, t){
   const on = k.station === "stove" && k.heat, lvl = {low: 1, "medium-low": 1, medium: 2, "medium-high": 3, high: 3}[k.heat] || 0;
-  const px = RANGE + 48, col = tint(((k.uses || [])[0] || {}).group);
+  const px = RANGE + 48, col = foodCol((k.uses || [])[0]);
   R("#7a8090", px, 74, 30, 14); R("#9aa8b0", px, 74, 30, 2); R("#5a6070", px - 4, 77, 4, 2); R("#5a6070", px + 30, 77, 4, 2);
   if (k.station === "stove") R(col, px + 2, 74, 26, 2);
   if (on) {
@@ -310,7 +313,7 @@ function ovens(k, t){
   if (!on) { txt("OFF", OVENS + 8, 27, "#5a6070"); return; }
   txt(k.oven_f + "°F", OVENS + 8, 27, "#f2b632");
   g.globalAlpha = .55 + (Math.floor(t / 600) % 2) * .1; R("#ff9a3a", OVENS + 10, 40, 38, 22); g.globalAlpha = 1;
-  R("#5a6070", OVENS + 12, 54, 34, 2); R(tint(((k.uses || [])[0] || {}).group), OVENS + 16, 50, 26, 4);
+  R("#5a6070", OVENS + 12, 54, 34, 2); R(foodCol((k.uses || [])[0]), OVENS + 16, 50, 26, 4);
 }
 function island(k){
   R("#e3e7f0", ISLAND[0], TOP, ISLAND[1] - ISLAND[0], 3); R("#b9bfd0", ISLAND[0], TOP + 3, ISLAND[1] - ISLAND[0], 1);
@@ -322,7 +325,7 @@ function island(k){
 // everything laid out on the island while the cooks read what you'll need
 function needBowls(list){
   const n = Math.min(list.length, 12), step = Math.floor((ISLAND[1] - ISLAND[0] - 16) / Math.max(1, n));
-  list.slice(0, n).forEach((it, i) => { const x = ISLAND[0] + 8 + i * step; R("#e3e7f0", x, TOP - 5, 12, 5); R("#c9cdd8", x + 1, TOP - 1, 10, 1); R(tint(it.group), x + 2, TOP - 7, 8, 3); });
+  list.slice(0, n).forEach((it, i) => { const x = ISLAND[0] + 8 + i * step; R("#e3e7f0", x, TOP - 5, 12, 5); R("#c9cdd8", x + 1, TOP - 1, 10, 1); R(foodCol(it), x + 2, TOP - 7, 8, 3); });
 }
 
 function kitchen(ctx, t, k){

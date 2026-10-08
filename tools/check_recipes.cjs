@@ -10,6 +10,7 @@
 //   - the allergens listed differ from the ones its ingredients carry
 //   - a kid recipe is Hard or has a knife, stove or oven step without "Grown-up helps"; a quick recipe takes over 15 minutes;
 //     a vegetarian recipe has meat or fish in it
+//   - an ingredient in the library has no pixel art in cooking/food.js, or its art names a shape that isn't drawn
 //   - a show lists a recipe that doesn't exist, a recipe is in no show, an Around the world show has no country,
 //     or a section holds less than two cycles of airtime, or the channel's schedule (cooking/schedule.js) would air
 //     a show or a recipe twice within 6 hours at any point in the next 60 days
@@ -155,6 +156,14 @@ function checkRecipe(file) {
 const files = fs.readdirSync(path.join(DIR, 'recipes')).filter(f => f.endsWith('.json')).sort();
 const recipes = new Map();
 for (const f of files) { const x = checkRecipe(f); if (x) recipes.set(x.slug, x); }
+
+// every library ingredient has art, so the counter and stove can draw anything a recipe uses
+const FOOD = require(path.join(ROOT, 'cooking', 'food.js'));
+for (const id of Object.keys(LIB.ingredients)) {
+  if (!FOOD.ART[id]) err('cooking/food.js', `"${id}" is in the ingredient library but has no art in ART`);
+  else if (!FOOD.SHAPES[FOOD.ART[id][0]]) err('cooking/food.js', `"${id}" is drawn as "${FOOD.ART[id][0]}", which isn't one of the SHAPES`);
+}
+for (const id of Object.keys(FOOD.ART)) if (!LIB.ingredients[id]) err('cooking/food.js', `"${id}" has art but isn't in the ingredient library`);
 
 // the shows and the rundown's sections
 const inShow = new Set();

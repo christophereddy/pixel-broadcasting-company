@@ -7,6 +7,7 @@ The COOKING channel (`cooking/`) cooks AI-written recipes in a pixel kitchen, an
 | `data/cooking/ingredients.json` | The ingredient library: every ingredient a recipe may use, its group, allergens and food-safety facts. Every ingredient here gets pixel art. |
 | `data/cooking/recipes/<slug>.json` | One recipe per file |
 | `data/cooking/shows.json` | The shows: which recipes each one cooks, for which occasion, in which rundown section, and who cooks it |
+| `cooking/food.js` | The pixel art for every library ingredient (`ART`), and the measuring tools the channel shows amounts in |
 | `tools/check_recipes.cjs` | Checks all of the above. Runs on every pull request. |
 | `tools/build_recipes.cjs` | Builds the recipe site from all of the above: `recipes/` (the search page, `index.json` and one page per recipe), `sitemap.xml` and `robots.txt`, plus `cooking/menu.json`, what the channel plays |
 | `cooking/schedule.js` | The channel's running order and pacing, which the checker uses too |
@@ -19,7 +20,7 @@ Recipes are written by AI, not tested in a kitchen, and people will cook along b
 
 ## The ingredient library
 
-A recipe may only use ingredients in `data/cooking/ingredients.json`, because the channel has to draw every one of them. To use something new, add it to the library first. The art comes with it in the same pull request once the channel exists.
+A recipe may only use ingredients in `data/cooking/ingredients.json`, because the channel has to draw every one of them. To use something new, add it to the library first, with its art in the same pull request: an `ART` entry in `cooking/food.js` naming one of its shapes and three colors (skin, flesh or contents, accent). The check fails for a library ingredient without art.
 
 Each ingredient has a `name` and a `group`, plus:
 - `allergens`: from milk, egg, wheat, soy, peanut, tree-nut, fish, shellfish, sesame (the US major allergens)
@@ -91,4 +92,4 @@ A show cooks one or more recipes for an occasion. It doesn't have to be starter,
 
 **No repeats within 6 hours:** each section must hold at least two cycles' worth of airtime, and the checker plays the schedule 60 days forward to make sure no show or recipe airs twice within 6 hours. Every recipe has to be in at least one show.
 
-**On screen:** every amount, heat level, oven temperature and inside temperature the channel shows comes from the recipe's own fields, written out the same way the recipe page writes it. A timer is set to the step's exact time and starts; the next beat fast-forwards it (or, for 20 minutes or more, jumps ahead with a "20 MINUTES LATER" card), always showing the real time left.
+**On screen:** every amount, heat level, oven temperature and inside temperature the channel shows comes from the recipe's own fields, written out the same way the recipe page writes it. A timer is set to the step's exact time and starts; the next beat fast-forwards it (or, for 20 minutes or more, jumps ahead with a "20 MINUTES LATER" card), always showing the real time left. The close-ups show each amount in the measuring tools that add up to it exactly (two 1-cup measures and a 1/4 cup for 2 1/4 cups, 4-cup jugs for bigger amounts, a scale for weights, and exactly as many eggs, cloves or slices as the recipe says), so the picture never shows a different amount from the caption.
