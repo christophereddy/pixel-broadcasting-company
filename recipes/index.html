@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recipes · Pixel Broadcasting Company</title>
+<meta name="description" content="Search 57 AI-written recipes from PBC Cooking by name, ingredient, course, occasion, difficulty and time, with kid-friendly, quick and vegetarian picks.">
+<link rel="canonical" href="https://christophereddy.github.io/pixel-broadcasting-company/recipes/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap">
+<link rel="stylesheet" href="../shared/pbc.css">
+<link rel="stylesheet" href="../shared/company.css">
+<script src="../shared/business.js"></script>
+<script src="../shared/pbc.js"></script>
+<script src="search.js" defer></script>
+</head>
+<body>
+<!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
+<div class="pbc-page">
+  <div class="pbc-top">
+  <header class="pbc-mast">
+    <div class="pbc-brand">
+      <span class="pbc-mark" aria-hidden="true">PBC</span>
+      <div><h1>Pixel Broadcasting Company</h1><p>PBC Cooking recipes</p></div>
+    </div>
+    <div class="pbc-side">
+      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR 24 HOURS</div>
+    </div>
+  </header>
+  <div class="pbc-ctl">
+    <div class="co-dept">PBC COOKING <span>· THE RECIPE BOX</span></div>
+    <div class="pbc-btns"><a class="pbc-btn" href="../">BACK TO THE BROADCAST</a></div>
+  </div>
+  </div>
+
+  <main class="pbc-main">
+    <section class="co-card co-hero">
+      <h2>THE PBC RECIPE BOX</h2>
+      <p class="co-lead">Every recipe cooked on PBC Cooking, from a two-minute smoothie to Thanksgiving dinner.</p>
+      <p>Search by name or ingredient, or narrow it down by course, occasion, difficulty and time. Kids can make anything tagged <b>kid-friendly</b>, with a grown-up on the hot and sharp steps.</p>
+    </section>
+
+    <section class="co-card" id="find">
+      <h2>FIND A RECIPE</h2>
+      <form class="co-searchform" role="search" action="./" onsubmit="return false">
+        <div class="co-search">
+          <label class="co-hp" for="q">Search recipes</label>
+          <input type="search" id="q" name="q" placeholder="Try lemon, pancakes or chicken" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="co-filters">
+          <div><label for="role">COURSE</label><select id="role" name="role"><option value="">Any course</option><option value="breakfast">Breakfast</option><option value="starter">Starter</option><option value="main">Main</option><option value="side">Side</option><option value="dessert">Dessert</option><option value="drink">Drink</option><option value="snack">Snack</option><option value="sauce">Sauce</option></select></div>
+          <div><label for="occ">OCCASION</label><select id="occ" name="occ"><option value="">Any occasion</option><option value="breakfast">Breakfast</option><option value="brunch">Brunch</option><option value="lunch">Lunch</option><option value="lunchbox">Lunchbox</option><option value="weeknight">Weeknight dinner</option><option value="family-dinner">Family dinner</option><option value="comfort">Comfort food</option><option value="date-night">Date night</option><option value="party">Party</option><option value="game-day">Game day</option><option value="picnic">Picnic</option><option value="snack">Snack</option><option value="baking">Baking</option><option value="holiday">Holiday</option><option value="leftovers">Leftovers</option></select></div>
+          <div><label for="level">DIFFICULTY</label><select id="level" name="level"><option value="">Any level</option><option value="easy">Easy</option><option value="medium">Medium and easier</option><option value="hard">Any, including hard</option></select></div>
+          <div><label for="time">TIME</label><select id="time" name="time"><option value="">Any time</option><option value="15">15 min or less</option><option value="30">30 min or less</option><option value="60">1 hour or less</option></select></div>
+          <fieldset><legend>SHOW ONLY</legend><div class="co-checks">
+            <label><input type="checkbox" id="kid" name="kid" value="1"> Kid-friendly</label>
+            <label><input type="checkbox" id="quick" name="quick" value="1"> Quick</label>
+            <label><input type="checkbox" id="veg" name="veg" value="1"> Vegetarian</label>
+          </div></fieldset>
+          <fieldset><legend>LEAVE OUT</legend><div class="co-checks">
+            <label><input type="checkbox" name="no" value="milk"> Milk</label>
+            <label><input type="checkbox" name="no" value="egg"> Egg</label>
+            <label><input type="checkbox" name="no" value="wheat"> Wheat</label>
+            <label><input type="checkbox" name="no" value="soy"> Soy</label>
+            <label><input type="checkbox" name="no" value="peanut"> Peanuts</label>
+            <label><input type="checkbox" name="no" value="tree-nut"> Tree nuts</label>
+            <label><input type="checkbox" name="no" value="fish"> Fish</label>
+            <label><input type="checkbox" name="no" value="shellfish"> Shellfish</label>
+            <label><input type="checkbox" name="no" value="sesame"> Sesame</label>
+          </div></fieldset>
+        </div>
+      </form>
+      <p class="co-count" id="count" aria-live="polite">57 recipes</p>
+    </section>
+
+    <section class="co-card" aria-label="Recipes">
+      <ul class="co-results" id="results">
+        <li class="co-result" data-slug="ants-on-a-log"><h3><a href="ants-on-a-log/">Ants on a Log</a></h3><p>Celery, peanut butter and raisin 'ants'.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">5 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="apple-cinnamon-muffins"><h3><a href="apple-cinnamon-muffins/">Apple Cinnamon Muffins</a></h3><p>Soft muffins full of apple and cinnamon.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">40 min · serves 12 · American</p></li>
+        <li class="co-result" data-slug="apple-crumble"><h3><a href="apple-crumble/">Apple Crumble</a></h3><p>Soft cinnamon apples under a crunchy oat topping.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">1 hr · serves 6 · British</p></li>
+        <li class="co-result" data-slug="banana-smoothie"><h3><a href="banana-smoothie/">Banana Smoothie</a></h3><p>Thick, creamy banana smoothie.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">5 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="beef-chili"><h3><a href="beef-chili/">Beef and Bean Chili</a></h3><p>Hearty beef chili with kidney beans and all the toppings.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">1 hr 15 min · serves 6 · American</p></li>
+        <li class="co-result" data-slug="berry-fruit-salad"><h3><a href="berry-fruit-salad/">Berry Fruit Salad</a></h3><p>Bright berries with honey, lime and mint.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">10 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="bibimbap"><h3><a href="bibimbap/">Bibimbap</a></h3><p>Rice bowl with seasoned beef, vegetables, a fried egg and gochujang.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">55 min · serves 4 · South Korea</p></li>
+        <li class="co-result" data-slug="blt-sandwich"><h3><a href="blt-sandwich/">BLT</a></h3><p>Crispy bacon, crunchy lettuce and ripe tomato on toast.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span></div><p class="co-meta">15 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="butternut-squash-soup"><h3><a href="butternut-squash-soup/">Butternut Squash Soup</a></h3><p>Velvety roasted squash soup with a hint of nutmeg.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">1 hr · serves 4 · American</p></li>
+        <li class="co-result" data-slug="caesar-salad"><h3><a href="caesar-salad/">Caesar Salad</a></h3><p>Crisp romaine with a creamy garlic-parmesan dressing and croutons.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">25 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="cafe-de-olla"><h3><a href="cafe-de-olla/">Café de Olla</a></h3><p>Mexican coffee brewed with cinnamon and brown sugar.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">15 min · serves 4 · Mexico</p></li>
+        <li class="co-result" data-slug="caprese-salad"><h3><a href="caprese-salad/">Caprese Salad</a></h3><p>Tomato, fresh mozzarella and basil with good olive oil.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">10 min · serves 4 · Italy</p></li>
+        <li class="co-result" data-slug="caramel-apples"><h3><a href="caramel-apples/">Caramel Apples</a></h3><p>Crisp apples dipped in homemade caramel.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">1 hr · serves 6 · American</p></li>
+        <li class="co-result" data-slug="chana-masala"><h3><a href="chana-masala/">Chana Masala</a></h3><p>Chickpeas simmered in a spiced tomato and onion gravy.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">50 min · serves 4 · India</p></li>
+        <li class="co-result" data-slug="chicken-noodle-soup"><h3><a href="chicken-noodle-soup/">Chicken Noodle Soup</a></h3><p>Classic soup with chicken, vegetables and egg noodles.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">50 min · serves 6 · American</p></li>
+        <li class="co-result" data-slug="chicken-souvlaki-pitas"><h3><a href="chicken-souvlaki-pitas/">Chicken Souvlaki Pitas</a></h3><p>Lemon-garlic chicken skewers wrapped in warm pita.</p><div class="co-tags"><span class="co-tag level">EASY</span></div><p class="co-meta">1 hr 10 min · serves 4 · Greece</p></li>
+        <li class="co-result" data-slug="chicken-tacos"><h3><a href="chicken-tacos/">Chicken Tacos</a></h3><p>Spiced chicken thighs in warm tortillas.</p><div class="co-tags"><span class="co-tag level">EASY</span></div><p class="co-meta">30 min · serves 4 · Mexican-American</p></li>
+        <li class="co-result" data-slug="chilaquiles"><h3><a href="chilaquiles/">Chilaquiles Rojos</a></h3><p>Crispy tortillas in red salsa, topped with fried eggs.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">35 min · serves 4 · Mexico</p></li>
+        <li class="co-result" data-slug="chocolate-chip-cookies"><h3><a href="chocolate-chip-cookies/">Chocolate Chip Cookies</a></h3><p>Chewy cookies with crisp edges.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">30 min · serves 24 · American</p></li>
+        <li class="co-result" data-slug="chocolate-mousse"><h3><a href="chocolate-mousse/">Chocolate Mousse</a></h3><p>Light, rich chocolate mousse made with whipped cream.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">2 hr 20 min · serves 4 · French</p></li>
+        <li class="co-result" data-slug="cornbread"><h3><a href="cornbread/">Skillet Cornbread</a></h3><p>Golden, slightly sweet cornbread.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">32 min · serves 8 · American</p></li>
+        <li class="co-result" data-slug="cranberry-sauce"><h3><a href="cranberry-sauce/">Cranberry Sauce</a></h3><p>Fresh cranberries cooked down with orange.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">20 min · serves 8 · American</p></li>
+        <li class="co-result" data-slug="crispy-potatoes"><h3><a href="crispy-potatoes/">Crispy Roast Potatoes</a></h3><p>Potatoes roasted until crunchy with rosemary.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">55 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="croque-monsieur"><h3><a href="croque-monsieur/">Croque Monsieur</a></h3><p>A toasted ham and Gruyère sandwich under creamy béchamel.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">35 min · serves 4 · France</p></li>
+        <li class="co-result" data-slug="cumin-rice"><h3><a href="cumin-rice/">Cumin Rice</a></h3><p>Fluffy basmati-style rice toasted with cumin seeds.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">30 min · serves 4 · India</p></li>
+        <li class="co-result" data-slug="fluffy-pancakes"><h3><a href="fluffy-pancakes/">Fluffy Pancakes</a></h3><p>Tall, soft pancakes with maple syrup.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">25 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="garlic-bread"><h3><a href="garlic-bread/">Garlic Bread</a></h3><p>Crispy, buttery garlic bread.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">15 min · serves 6 · Italian-American</p></li>
+        <li class="co-result" data-slug="garlic-green-beans"><h3><a href="garlic-green-beans/">Garlic Green Beans</a></h3><p>Snappy green beans with garlic butter and almonds.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">15 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="grilled-cheese-croutons"><h3><a href="grilled-cheese-croutons/">Grilled Cheese Croutons</a></h3><p>Little grilled cheese squares to float on soup.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">15 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="grilled-cheese"><h3><a href="grilled-cheese/">Grilled Cheese</a></h3><p>Golden, buttery bread around melted cheddar.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">15 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="guacamole"><h3><a href="guacamole/">Guacamole</a></h3><p>Chunky avocado dip with lime and cilantro.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">10 min · serves 4 · Mexican</p></li>
+        <li class="co-result" data-slug="herb-stuffing"><h3><a href="herb-stuffing/">Herb Stuffing</a></h3><p>Crisp-topped bread stuffing with celery, onion and sage.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">1 hr 5 min · serves 8 · American</p></li>
+        <li class="co-result" data-slug="homemade-pizza"><h3><a href="homemade-pizza/">Homemade Pizza</a></h3><p>Make the dough, then everyone tops their own.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag kid">KID-FRIENDLY</span></div><p class="co-meta">1 hr 30 min · serves 4 · Italian-American</p></li>
+        <li class="co-result" data-slug="honey-yogurt-walnuts"><h3><a href="honey-yogurt-walnuts/">Greek Yogurt with Honey and Walnuts</a></h3><p>Thick yogurt with warm honey and toasted walnuts.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">8 min · serves 4 · Greece</p></li>
+        <li class="co-result" data-slug="leftover-turkey-sandwich"><h3><a href="leftover-turkey-sandwich/">The Day-After Turkey Sandwich</a></h3><p>Leftover turkey, cranberry and Swiss on sourdough.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span></div><p class="co-meta">10 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="lemon-ricotta-cake"><h3><a href="lemon-ricotta-cake/">Lemon Ricotta Cake</a></h3><p>A moist, tender cake with ricotta and lemon.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">1 hr 15 min · serves 8 · Italy</p></li>
+        <li class="co-result" data-slug="mango-lassi"><h3><a href="mango-lassi/">Mango Lassi</a></h3><p>Cool mango and yogurt drink with cardamom.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">5 min · serves 2 · India</p></li>
+        <li class="co-result" data-slug="mashed-potatoes"><h3><a href="mashed-potatoes/">Mashed Potatoes</a></h3><p>Smooth, buttery mashed potatoes.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">30 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="miso-soup"><h3><a href="miso-soup/">Miso Soup</a></h3><p>Light dashi broth with miso, tofu and seaweed.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span></div><p class="co-meta">15 min · serves 4 · Japan</p></li>
+        <li class="co-result" data-slug="monster-green-smoothie"><h3><a href="monster-green-smoothie/">Monster Green Smoothie</a></h3><p>A spooky-green spinach, banana and pineapple smoothie.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">5 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="mummy-hot-dogs"><h3><a href="mummy-hot-dogs/">Mummy Hot Dogs</a></h3><p>Hot dogs wrapped in puff pastry bandages with mustard eyes.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span></div><p class="co-meta">35 min · serves 8 · American</p></li>
+        <li class="co-result" data-slug="onigiri"><h3><a href="onigiri/">Tuna Mayo Onigiri</a></h3><p>Rice balls with a tuna mayo filling, wrapped in nori.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span></div><p class="co-meta">50 min · serves 6 · Japan</p></li>
+        <li class="co-result" data-slug="pan-seared-steak"><h3><a href="pan-seared-steak/">Pan-Seared Steak</a></h3><p>A crusty steak basted with garlic butter.</p><div class="co-tags"><span class="co-tag level">HARD</span></div><p class="co-meta">30 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="peanut-butter-toast"><h3><a href="peanut-butter-toast/">Peanut Butter Banana Toast</a></h3><p>Toast with peanut butter, banana and a drizzle of honey.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">8 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="pumpkin-pie"><h3><a href="pumpkin-pie/">Pumpkin Pie</a></h3><p>Silky spiced pumpkin pie.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">3 hr 10 min · serves 8 · American</p></li>
+        <li class="co-result" data-slug="roast-chicken"><h3><a href="roast-chicken/">Lemon Herb Roast Chicken</a></h3><p>A whole chicken roasted with lemon, garlic and thyme.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">1 hr 40 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="roast-turkey-breast"><h3><a href="roast-turkey-breast/">Herb Roast Turkey Breast</a></h3><p>A juicy bone-in turkey breast with sage butter.</p><div class="co-tags"><span class="co-tag level">HARD</span></div><p class="co-meta">2 hr 15 min · serves 6 · American</p></li>
+        <li class="co-result" data-slug="roasted-broccoli"><h3><a href="roasted-broccoli/">Roasted Broccoli</a></h3><p>Crispy-edged broccoli with lemon.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">25 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="scrambled-eggs-on-toast"><h3><a href="scrambled-eggs-on-toast/">Soft Scrambled Eggs on Toast</a></h3><p>Slow, creamy scrambled eggs on buttered toast.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">10 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="spaghetti-al-limone"><h3><a href="spaghetti-al-limone/">Spaghetti al Limone</a></h3><p>Spaghetti in a silky lemon, butter and parmesan sauce.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">20 min · serves 4 · Italy</p></li>
+        <li class="co-result" data-slug="spaghetti-and-meatballs"><h3><a href="spaghetti-and-meatballs/">Spaghetti and Meatballs</a></h3><p>Tender meatballs simmered in tomato sauce over spaghetti.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span></div><p class="co-meta">1 hr · serves 4 · Italian-American</p></li>
+        <li class="co-result" data-slug="stovetop-mac-and-cheese"><h3><a href="stovetop-mac-and-cheese/">Stovetop Mac and Cheese</a></h3><p>Creamy cheddar mac and cheese made in one pot.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">25 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="sweet-crepes"><h3><a href="sweet-crepes/">Sweet Crêpes</a></h3><p>Thin crêpes with sugar and lemon or jam.</p><div class="co-tags"><span class="co-tag level">MEDIUM</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">35 min · serves 4 · France</p></li>
+        <li class="co-result" data-slug="tomato-soup"><h3><a href="tomato-soup/">Creamy Tomato Soup</a></h3><p>A smooth, gently creamy tomato soup for dunking.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">35 min · serves 4 · American</p></li>
+        <li class="co-result" data-slug="turkey-cheese-pinwheels"><h3><a href="turkey-cheese-pinwheels/">Turkey and Cheese Pinwheels</a></h3><p>Rolled-up tortilla spirals for the lunchbox.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag quick">QUICK</span></div><p class="co-meta">10 min · serves 2 · American</p></li>
+        <li class="co-result" data-slug="tzatziki"><h3><a href="tzatziki/">Tzatziki</a></h3><p>Cool Greek yogurt sauce with cucumber, garlic and dill.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag quick">QUICK</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">10 min · serves 6 · Greece</p></li>
+        <li class="co-result" data-slug="warm-spiced-cider"><h3><a href="warm-spiced-cider/">Warm Spiced Cider</a></h3><p>Apple cider simmered with cinnamon, cloves and orange.</p><div class="co-tags"><span class="co-tag level">EASY</span><span class="co-tag kid">KID-FRIENDLY</span><span class="co-tag veg">VEGETARIAN</span></div><p class="co-meta">20 min · serves 6 · American</p></li>
+      </ul>
+    </section>
+
+    <section class="co-card">
+      <h2>ABOUT THESE RECIPES</h2>
+      <p class="co-note">Every PBC recipe is written by AI (Claude, made by Anthropic) and checked against our recipe rules: amounts that add up, timers and temperatures as written, and safe cooking temperatures for meat, poultry and fish. They are not tested in a kitchen, so use your judgment, check allergens, and use a thermometer for meat.</p>
+    </section>
+  </main>
+
+  <aside class="side co-side">
+    <div class="co-card"><h2>QUICK PICKS</h2><ul class="co-dir">
+      <li><a href="./?kid=1">Kid-friendly</a></li>
+      <li><a href="./?quick=1">Quick (15 min or less)</a></li>
+      <li><a href="./?veg=1">Vegetarian</a></li>
+      <li><a href="./?occ=breakfast">Breakfast</a></li>
+      <li><a href="./?role=dessert">Desserts</a></li>
+      <li><a href="./?occ=holiday">Holidays</a></li>
+    </ul></div>
+    <div class="co-card"><h2>THE COMPANY</h2><ul class="co-dir">
+      <li><a href="../about/">About</a></li>
+      <li><a href="../advertise/">Marketing Division</a></li>
+      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../corrections/">Corrections</a></li>
+      <li><a href="../privacy/">Privacy Policy</a></li>
+      <li><a href="../terms/">Terms of Use</a></li>
+    </ul></div>
+  </aside>
+</div>
+</body>
+</html>

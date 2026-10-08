@@ -110,3 +110,42 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 .co-faq dd{margin:0}
 #faq>.co-hint{margin-top:12px}
 @media (max-width:640px){.co-rep{grid-template-columns:minmax(0,1fr)}.co-bubble::before{left:30px;top:-15px;border:6px solid transparent;border-bottom:9px solid var(--gold)}}
+
+/* Recipes (recipes/): the search box and its filters, result cards, and a recipe's facts, ingredients and steps */
+.co-search{display:flex;gap:8px}
+.co-search input[type=search]{flex:1;min-width:0;box-sizing:border-box;font-family:var(--f-body);font-size:22px;background:var(--room);color:var(--text);border:2px solid var(--line);padding:6px 10px;border-radius:0}
+.co-search input[type=search]:focus-visible{outline:none;border-color:var(--gold)}
+.co-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 12px;margin-top:12px}
+.co-filters label{display:block;font-family:var(--f-label);font-size:12px;letter-spacing:.06em;color:var(--gold);margin-bottom:5px}
+.co-filters select{box-sizing:border-box;width:100%;font-family:var(--f-body);font-size:19px;background:var(--room);color:var(--text);border:2px solid var(--line);padding:4px 6px;border-radius:0}
+.co-filters select:focus-visible{outline:none;border-color:var(--gold)}
+.co-filters fieldset{grid-column:1/-1;border:2px solid var(--line);margin:0;padding:6px 12px 8px;min-width:0}
+.co-filters legend{font-family:var(--f-label);font-size:12px;letter-spacing:.06em;color:var(--gold);padding:0 4px}
+.co-filters input[type=checkbox]{width:18px;height:18px;accent-color:var(--gold);flex:none}
+.co-count{margin:10px 0 0;color:var(--muted)}
+.co-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.co-result{display:flex;flex-direction:column;gap:6px;background:var(--room);border:2px solid var(--line);padding:10px 12px;min-width:0}
+.co-result[hidden]{display:none}
+@media (hover:hover){.co-result:hover{border-color:var(--gold)}}
+.co-result h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:21px;line-height:1.1}
+.co-result h3 a{color:var(--text);text-decoration:none}
+.co-result h3 a:hover{color:var(--gold)}
+.co-result h3 a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.co-result p{margin:0;font-size:18px;line-height:1.2}
+.co-result .co-meta{margin-top:auto;padding-top:6px;border-top:2px dotted var(--line);color:var(--muted);font-size:17px}
+.co-tags{display:flex;flex-wrap:wrap;gap:4px}
+.co-tag.kid,.co-tag.quick,.co-tag.veg{background:var(--navy);color:var(--gold)}
+.co-tag.level{background:var(--line);color:var(--text)}
+.co-ingredients{list-style:none;margin:0;padding:0}
+.co-ingredients li{padding:5px 0;border-bottom:1px dashed var(--rule)}
+.co-ingredients li:last-child{border-bottom:0}
+.co-ingredients b{font-family:var(--f-display);font-weight:500;font-size:19px}
+.co-method{counter-reset:m;list-style:none;margin:0;padding:0}
+.co-method>li{counter-increment:m;position:relative;padding:8px 0 10px 40px;border-bottom:1px dashed var(--rule)}
+.co-method>li:last-child{border-bottom:0}
+.co-method>li::before{content:counter(m);position:absolute;left:0;top:9px;font-family:var(--f-label);font-size:12px;background:var(--gold);color:var(--navy);padding:3px 7px}
+.co-badges{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.co-badge{display:inline-block;font-family:var(--f-label);font-size:11px;letter-spacing:.06em;line-height:1;padding:4px 6px;background:var(--panel-2);color:var(--text);border:1px solid var(--line)}
+.co-badge.help{background:var(--live);color:var(--white);border-color:var(--live)}
+.co-badge.temp{border-color:var(--gold);color:var(--gold)}
+.co-done{display:block;margin-top:4px;color:var(--muted);font-size:18px}

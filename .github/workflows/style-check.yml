@@ -1,5 +1,6 @@
 # Fails a pull request when a page writes its own fonts or colors instead of using shared/pbc.css
-# (see tools/NEW_PAGE.md), or when a cooking recipe breaks the rules in tools/COOKING.md.
+# (see tools/NEW_PAGE.md), or when a cooking recipe breaks the rules in tools/COOKING.md
+# or the recipe site in recipes/ is out of date with data/cooking/.
 # Plain Node, no packages, a few seconds.
 name: Style check
 
@@ -21,3 +22,4 @@ jobs:
           node-version: 20
       - run: node tools/check_style.cjs
       - run: node tools/check_recipes.cjs
+      - run: node tools/build_recipes.cjs --check
