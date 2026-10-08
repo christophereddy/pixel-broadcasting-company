@@ -17,6 +17,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `sports/index.html` | Pixel Sports Live | Code changes only; the refresh never touches it |
 | `shared/pbc.css`, `shared/pbc.js` | The one source for every page's fonts and colors (the `:root` block), plus what all pages share: page grid, masthead, NEWS/SPORTS switch, ON AIR, FULL SCREEN, SOUND, the broadcast frame, full-screen mode, cards and the rundown | Code changes |
 | `tools/NEW_PAGE.md` | How to build a new channel, desk or company page so it matches the rest | When a shared part changes |
+| `tools/LOOK_BOOK.md`, `tools/look/` | The whole PBC look: spacing, borders, the broadcast screen, pixel-art rules, how characters and sets are drawn, the cast's colors | With every new character, set or look change |
 | `tools/check_style.cjs` | Fails when a page writes its own fonts or colors, or restyles a shared part (runs on every pull request) | Code changes |
 | `shared/music.js` | The newsroom's chiptune theme, segment stings, commercial-break bed and first-visit TUNE IN, all made with WebAudio (news only) | Code changes |
 | `tools/REFRESH.md` | Step-by-step instructions the 3-hour refresh follows | When sources or rules change |

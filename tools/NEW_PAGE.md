@@ -2,6 +2,8 @@
 
 Every PBC page looks like one company: the same fonts, the same colors, the same masthead, the same control row, the same cards and the same rundown. This guide is how to build something new without anyone having to correct those details afterwards. If a rule here and a page disagree, the rule wins and the page gets fixed.
 
+**The whole look** (spacing, borders, the broadcast screen, how characters and sets are drawn) is in `tools/LOOK_BOOK.md`. Read it before drawing anything.
+
 **The one rule:** fonts, colors and shared parts are written once, in `shared/pbc.css`. A page uses them by name and never writes its own. `tools/check_style.cjs` enforces this and runs on every pull request.
 
 ## What are you building?
