@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../shared/pbc.css">
 <script src="../shared/pbc.js"></script>
 <script src="../shared/ads.js"></script>
+<script src="../shared/live.js"></script>
 <script src="f1.js"></script>
 <script src="f1cam.js"></script>
 <script src="show.js"></script>
@@ -71,6 +72,21 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .big{font-family:var(--display);font-size:1.75cqw;padding:1.1cqw 1.6cqw;background:var(--gold);color:var(--navy);border:0;box-shadow:.4cqw .4cqw 0 var(--navy)}
 .big.alt{background:var(--panel-2);color:var(--ink);border-color:var(--edge);box-shadow:0 .5cqw 0 #05060d}
 .start{position:absolute;inset:0;display:grid;place-items:center;background:rgba(6,7,18,.78);z-index:5}
+.start[hidden]{display:none}
+.start .nosnd{all:unset;cursor:pointer;color:var(--dim);font-family:var(--body);font-size:max(14px,2.3cqw);text-decoration:underline;text-underline-offset:.2em}
+.start .nosnd:hover{color:var(--ink)}
+.start .nosnd:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+/* LIVE NOW: a game on right now, the same chip the newsroom shows (shared/live.js); it takes the viewer to that game.
+   It sits above the PRESS START screen (z-index 5) so it can be clicked straight away. */
+.livenow{position:absolute;right:1.6cqw;top:15.5cqw;z-index:6;display:flex;align-items:stretch;max-width:46cqw;font-family:var(--display);font-size:max(7px,1.5cqw);line-height:1;text-decoration:none;color:#fff;border:max(1px,.2cqw) solid var(--live)}
+.livenow[hidden]{display:none}
+.livenow b{display:flex;align-items:center;gap:.4em;background:var(--live);padding:.45em .55em;font-weight:400;white-space:nowrap}
+.livenow b::before{content:"";width:.55em;height:.55em;background:#fff;animation:lnblink 1s steps(1) infinite}
+.livenow span{background:#0b0e24e6;padding:.45em .55em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.livenow i,.livenow em{font-style:normal}
+@keyframes lnblink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.livenow b::before{animation:none}}
+@container (max-width:600px){.livenow i{display:none}}
 .start .inner{text-align:center}
 .start .t{font-family:var(--headline);font-size:4.25cqw;color:var(--gold);text-shadow:.4cqw .4cqw 0 var(--navy);margin-bottom:3cqw;line-height:1.4}
 .start .big{font-size:2cqw;animation:blink 1s steps(2) infinite}
@@ -255,6 +271,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
         <div class="dd" id="dd"></div>
       </div>
 
+      <a class="livenow" id="livenow" href="#" hidden><b>LIVE NOW</b><span><i id="liveLeague"></i><em id="liveTitle"></em></span></a>
       <a class="adlink deskad" id="deskad" href="#" target="_blank" rel="noopener" hidden aria-label="Advertise on Pixel Broadcasting"></a>
       <div class="win notice" id="notice" hidden></div>
       <div class="banner" id="banner" hidden><div class="bt">TIME OUT</div><div class="bs" id="banner-sub"></div></div>
@@ -265,6 +282,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
           <div class="t">PIXEL SPORTS<br>LIVE</div>
           <button class="big" id="btn-start">PRESS START</button>
           <p>Turns on the announcer voices. SOUND changes it.</p>
+          <button class="nosnd" id="btn-quiet" type="button">Watch without sound</button>
         </div>
       </div>
     </div>
@@ -318,6 +336,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     <div class="confbar" id="confbar" hidden><label for="conf">CONFERENCE</label><select id="conf"></select></div>
     <section><h4>LIVE NOW</h4><div id="list-live"></div></section>
     <section><h4>UP NEXT</h4><div id="list-next"></div></section>
+    <section><h4>FINAL</h4><div id="list-fin"></div></section>
     <section><h4>TEAMS</h4><div class="tgrid" id="teamgrid"></div><div class="tpage" id="teampage" hidden></div></section>
    </div>
   </aside>
@@ -594,7 +613,7 @@ function sortedGames(everywhere){
   return {live, next, fin};
 }
 function renderList(){
-  const {live, next} = sortedGames();
+  const {live, next, fin} = sortedGames();
   const fill = (el, arr, empty) => {
     el.replaceChildren();
     if (!arr.length) { const d = document.createElement('div'); d.className = 'none'; d.textContent = empty; el.append(d); return; }
@@ -610,6 +629,8 @@ function renderList(){
   const lg = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf)?.name || SPORTS[S.sport].name;
   fill($('list-live'), live, isF1() ? 'No F1 session on track right now.' : `No ${lg} games live right now.`);
   fill($('list-next'), next.slice(0, 8), isF1() ? 'No sessions on the schedule.' : SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next 10 days.');
+  // finished games, newest first, to pick a replay from; their scores follow SHOW RESULTS / HIDE RESULTS (gameLine)
+  fill($('list-fin'), fin, isF1() ? 'No race replays yet.' : `No ${lg} games finished in the last week.`);
   markLive();
 }
 
@@ -3554,13 +3575,33 @@ async function selectGame(id, mode){
 const startWords = () => isMLB() ? ['first pitch', 'First pitch', 'pitch'] : isBB() ? ['tip-off', 'Tip-off', 'play'] : ['kickoff', 'Kickoff', 'snap'];
 // a game's play-by-play: ESPN's game summary for football and basketball, MLB's live game feed for baseball
 const gameURL = id => isMLB() ? `${MLB_API}/v1.1/game/${id}/feed/live` : `${API}/summary?event=${id}`;
+// The games list takes the live game's score from the same feed as the plays, every ten seconds, instead of waiting for
+// the next schedule pull (every 30 seconds, and the schedule can trail the play feed), so the list keeps up with the game.
+function syncScore(sum){
+  const ev = evOf(S.game); if (!ev || stateOf(ev) !== 'in') return;
+  let a, h, det = '';
+  if (isMLB()) {
+    const ls = sum?.liveData?.linescore; a = ls?.teams?.away?.runs; h = ls?.teams?.home?.runs;
+    det = `${ls?.inningState || ''} ${ls?.currentInningOrdinal || ''}`.trim();
+  } else {
+    const cs = sum?.header?.competitions?.[0]?.competitors || [];
+    a = cs.find(c => c.homeAway === 'away')?.score; h = cs.find(c => c.homeAway === 'home')?.score;
+    det = sum?.header?.competitions?.[0]?.status?.type?.shortDetail || '';
+  }
+  if (a == null || h == null) return;
+  const cs = ev.competitions[0].competitors, A = cs.find(c => c.homeAway === 'away'), H = cs.find(c => c.homeAway === 'home');
+  const st = ev.status || ev.competitions[0].status;
+  if (String(A.score) === String(a) && String(H.score) === String(h) && (!det || st?.type?.shortDetail === det)) return;
+  A.score = String(a); H.score = String(h); if (det && st?.type) st.type.shortDetail = det;
+  renderList();
+}
 async function pollLive(){
   if (S.mode !== 'live' || !S.game || isF1()) return;
   const tok = S.token;
   try {
     const sum = await getJSON(gameURL(S.game));
     if (tok !== S.token) return;
-    S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail();
+    S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail(); syncScore(sum);
     const fresh = playsOf(sum).filter(p => !S.seen.has(p.id));
     fresh.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
     if (fresh.length) pump();
@@ -4500,21 +4541,27 @@ function showIdle(){
 
 /* ================= boot ================= */
 // SOUND and FULL SCREEN work the same as the newsroom's (../shared/pbc.js): off, blips (game sounds), voices (blips and announcers)
+// the viewer's sound choice is kept under the same key as the newsroom's (shared/music.js), so it carries between the two
+const SOUND_KEY = 'pbc-sound';
+const soundStored = () => { try { return localStorage.getItem(SOUND_KEY); } catch (e) { return null; } };
+const soundStore = m => { try { localStorage.setItem(SOUND_KEY, m); } catch (e) {} };
 const SOUND = PBC.sound(m => {
+  soundStore(m);
   S.sound = m !== 'off'; S.voices = m === 'voices';
   if (S.sound) SND.init(); SND.setOn(S.sound);
 });
 const setSound = m => SOUND.set(m), soundMode = () => SOUND.mode;
 PBC.fullScreen($('stage'));
 // turning the broadcast on: the viewer's click is what lets the browser speak, so both PRESS START and the DESK tab do this
-function pressStart(){
+// mode: the sound to turn on ('voices' unless the viewer chose otherwise before; 'off' keeps it off)
+function pressStart(mode){
   if (S.started) return;
   S.started = true; SND.init(); $('start').hidden = true;
-  if (soundMode() === 'off') setSound('voices');
+  if (mode !== 'off' && soundMode() === 'off') setSound(mode === 'blips' ? 'blips' : 'voices');
   if (window.speechSynthesis) { pickVoices(); const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u); }
 }
 $('btn-start').onclick = () => {
-  pressStart();
+  pressStart('voices');
   // the sports desk is already running silently behind this screen: PRESS START just turns the sound on, so the show
   // carries on from where it is instead of starting over
   if (SHOW.on) return;
@@ -4543,7 +4590,7 @@ async function openSport(){
   if (openWanted()) return ok;
   const ev = firstLive();
   if (ev) selectGame(String(ev.id), 'live');
-  else if (S.started) showIdle();
+  else if (tunedIn()) showIdle();
   return ok;
 }
 // a game named in the address (#mlb/776543, from the newsroom's LIVE NOW chip) opens once its sport's games are in:
@@ -4552,7 +4599,7 @@ function openWanted(){
   const id = S.wantGame, ev = id && evOf(id); if (!ev) return false;
   const st = stateOf(ev); if (st === 'pre') return false;
   S.wantGame = null;
-  try { history.replaceState(null, '', location.pathname + location.search + (S.sport === 'nfl' ? '' : '#' + S.sport)); } catch (e) {}
+  try { history.replaceState(null, '', location.pathname + location.search + '#' + S.sport); } catch (e) {}
   selectGame(id, st === 'in' ? 'live' : 'replay');
   return true;
 }
@@ -4584,6 +4631,47 @@ $('tab-desk').onclick = () => deskStart();
 $('show-res').onclick = () => setHideRes(!HIDE_RES);
 setHideRes(HIDE_RES);
 
+// The broadcast runs on its own, like the newsroom's. A first visit gets the PRESS START screen over it (sound on, or
+// watch without). After that there is no screen: the viewer's last sound choice comes back on their first tap anywhere,
+// since browsers only play sound that starts inside a tap (shared/music.js does the same for the news).
+const tunedIn = () => S.started || $('start').hidden;
+function tuneIn(){
+  $('btn-quiet').onclick = () => { soundStore('off'); pressStart('off'); };
+  $('snd').addEventListener('click', () => pressStart('off')); // using SOUND instead counts as an answer too
+  const was = soundStored();
+  if (!was) return;
+  $('start').hidden = true;
+  const evs = ['click', 'touchend', 'keydown'];
+  const back = e => {
+    evs.forEach(t => document.removeEventListener(t, back, true));
+    // a tap on SOUND picks its own mode; any other tap brings back the last choice
+    pressStart(e.target && e.target.closest && e.target.closest('#snd') ? 'off' : was);
+  };
+  evs.forEach(t => document.addEventListener(t, back, true));
+}
+// LIVE NOW: the same live-game watcher as the newsroom's (shared/live.js). The chip shows whenever a game is live and the
+// viewer isn't already watching it; the sports desk also goes to that game after the segment it is on (show.js).
+function liveOn(lg){ return lg && S.mode === 'live' && S.sport === lg.sport && String(S.game) === String(lg.id); }
+function liveChip(){
+  const a = $('livenow');
+  const draw = () => { const lg = PBC_LIVE.current; a.hidden = !lg || liveOn(lg); };
+  PBC_LIVE.watch(lg => {
+    if (lg) { a.href = '#' + lg.sport + '/' + lg.id; $('liveLeague').textContent = lg.league + ' · '; $('liveTitle').textContent = lg.title;
+      a.setAttribute('aria-label', 'Live now: ' + lg.title + '. Watch it.'); }
+    draw(); deskRundown();
+    // a game has just gone live: the desk cuts away from the segment on air and goes straight there
+    if (lg && SHOW.on && SHOW.seg !== lg.sport) SHOW.cut = true;
+  });
+  setInterval(draw, 1000);
+  a.onclick = async e => {
+    e.preventDefault();
+    const lg = PBC_LIVE.current; if (!lg) return;
+    pressStart(soundStored() || 'voices');
+    deskStop(); S.deskEntry = false; S.wantGame = String(lg.id);
+    if (S.sport !== lg.sport) await switchSport(lg.sport); else await openSport();
+  };
+}
+
 (async function boot(){
   const [h, gid] = location.hash.slice(1).toLowerCase().split('/');
   if (SPORTS[h] && gid && !isNaN(gid)) S.wantGame = gid;
@@ -4595,12 +4683,14 @@ setHideRes(HIDE_RES);
   renderTeams(); loadTeams();
   await neutralField();
   requestAnimationFrame(step);
-  if (S.deskEntry) deskStart(false); // begin the desk silently; PRESS START still unlocks audio
+  tuneIn();
+  liveChip();
+  if (S.deskEntry) deskStart(false); // the desk starts on its own; sound waits for the viewer's first tap
   else await openSport();
   setInterval(async () => {
     const had = S.events.size, sport = S.sport; await loadScoreboard(); if (sport !== S.sport) return;
     if (S.mode === 'pre') { const ev = evOf(S.game); if (ev && stateOf(ev) === 'in') selectGame(S.game, 'live'); }
-    if (!S.game && S.started && !had && S.events.size && !SHOW.on) showIdle();
+    if (!S.game && tunedIn() && !had && S.events.size && !SHOW.on) showIdle();
     deskWatch(); // a live game the desk cut to is over: back to the desk
   }, 30000);
   setInterval(pollLive, 10000);

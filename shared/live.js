@@ -5,7 +5,8 @@
    PBC_LIVE.watch(onChange)  Starts watching. onChange(game) runs when the promoted game changes; game is null when
                              nothing is live, else {sport, league, id, away, home, title, href}.
    PBC_LIVE.current          The promoted game, or null.
-   PBC_LIVE.pickLive(lists)  Picks the game to promote from {sport: [games]} (exposed for tests). */
+   PBC_LIVE.pickLive(lists)  Picks the game to promote from {sport: [games]} (exposed for tests).
+   PBC_LIVE.urls()           The feed addresses it polls (tools/check_sports.cjs tells these apart from a sport's own fetches). */
 window.PBC_LIVE = (function(){
   "use strict";
   const ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
@@ -89,5 +90,5 @@ window.PBC_LIVE = (function(){
     timer = setInterval(() => { if (!document.hidden) poll(); }, EVERY);
     document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - lastPoll > EVERY) poll(); });
   }
-  return {watch, pickLive, get current(){ return current; }};
+  return {watch, pickLive, urls: () => FEEDS.map(f => f.url()), get current(){ return current; }};
 })();
