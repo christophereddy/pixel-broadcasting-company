@@ -356,16 +356,6 @@ function kitchen(ctx, t, k){
 
 /* ---------- the table ---------- */
 const TABLE = 114;   // the tabletop line
-// one dish, drawn at 2x from the recipe's role and the colors of its first ingredients; x is its center
-function dish(cx, role, cols){
-  const c0 = cols[0] || "#c9ccd6", c1 = cols[1] || c0, c2 = cols[2] || c1, y = TABLE;
-  const P = (c, dx, dy, w, h) => R(c, cx + dx * 2, y + dy * 2, w * 2, h * 2);
-  if (role === "drink") { P("#d8ecf0", -4, -12, 8, 12); P(c0, -3, -9, 6, 8); P("#ffffff", -2, -11, 1, 9); return; }
-  if (role === "dessert") { P("#f4f5fb", -8, -2, 16, 2); P(c0, -5, -7, 10, 5); P(c1, -5, -7, 10, 1); P("#e5383b", -1, -9, 2, 2); return; }
-  if (role === "sauce" || role === "side" || role === "starter" || role === "snack") { P("#e3e7f0", -7, -5, 14, 5); P("#c9cdd8", -6, -1, 12, 1); P(c0, -6, -6, 12, 2); P(c1, -2, -7, 4, 1); return; }
-  P("#f4f5fb", -10, -2, 20, 2); P("#c9cdd8", -9, 0, 18, 1);
-  P(c0, -7, -5, 14, 3); P(c1, -5, -7, 5, 2); P(c2, 1, -7, 5, 2);
-}
 function table(ctx, t, k){
   g = ctx;
   R("#151b3d", 0, 0, W, TABLE); for (let x = 0; x < W; x += 24) R("#1b2250", x, 12, 1, TABLE - 12);
@@ -378,8 +368,9 @@ function table(ctx, t, k){
   // the cloth and the meal, and Baldur peeking over the edge for a crumb
   R("#e3e7f0", 0, TABLE, W, 3); R("#b8283e", 0, TABLE + 3, W, H - TABLE - 3); for (let x = 0; x < W; x += 16) R("#a52436", x, TABLE + 3, 8, H - TABLE - 3);
   g.globalAlpha = .08; g.fillStyle = "#fff2c0"; g.fillRect(96, TABLE, 192, H - TABLE); g.globalAlpha = 1;
-  const n = k.dishes.length, gap = Math.min(64, Math.floor((W - 96) / Math.max(1, n)));
-  k.dishes.forEach((d, i) => dish(Math.round(W / 2 - (n - 1) * gap / 2 + i * gap), d.role, d.cols));
+  const n = k.dishes.length, gap = Math.min(88, Math.floor((W - 72) / Math.max(1, n)));
+  // the dishes, built from parts by dishes.js, standing on the cloth
+  k.dishes.forEach((d, i) => PBC_DISHES.draw(g, Math.round(W / 2 - (n > 3 ? 14 : 0) - (n - 1) * gap / 2 + i * gap), TABLE + 22, d, t));
   sprite(STAND.map(r => r.slice(18)), 340, TABLE - 7, true, 0, 7);
 }
 

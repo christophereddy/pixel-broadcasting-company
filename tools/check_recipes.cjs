@@ -11,6 +11,7 @@
 //   - a kid recipe is Hard or has a knife, stove or oven step without "Grown-up helps"; a quick recipe takes over 15 minutes;
 //     a vegetarian recipe has meat or fish in it
 //   - an ingredient in the library has no pixel art in cooking/food.js, or its art names a shape that isn't drawn
+//   - a recipe's "plate" names a dish or vessel cooking/dishes.js can't draw
 //   - a show lists a recipe that doesn't exist, a recipe is in no show, an Around the world show has no country,
 //     or a section holds less than two cycles of airtime, or the channel's schedule (cooking/schedule.js) would air
 //     a show or a recipe twice within 6 hours at any point in the next 60 days
@@ -55,6 +56,12 @@ const FOOD = require(path.join(ROOT, 'cooking', 'food.js'));
 for (const id of Object.keys(LIB.ingredients)) {
   if (!FOOD.ART[id]) err('cooking/food.js', `"${id}" is in the ingredient library but has no art in ART`);
   else if (!FOOD.SHAPES[FOOD.ART[id][0]]) err('cooking/food.js', `"${id}" is drawn as "${FOOD.ART[id][0]}", which isn't one of the SHAPES`);
+}
+// a recipe that chooses how it's served must name a dish and vessel the table can draw
+const DISHES = require(path.join(ROOT, 'cooking', 'dishes.js'));
+for (const [slug, {r}] of recipes) if (r.plate) {
+  if (r.plate.kind && !DISHES.FOODS.includes(r.plate.kind)) err(`data/cooking/recipes/${slug}.json`, `plate.kind "${r.plate.kind}" isn't one of ${DISHES.FOODS.join(', ')}`);
+  if (r.plate.vessel && !DISHES.VESSELS.includes(r.plate.vessel)) err(`data/cooking/recipes/${slug}.json`, `plate.vessel "${r.plate.vessel}" isn't one of ${DISHES.VESSELS.join(', ')}`);
 }
 for (const id of Object.keys(FOOD.ART)) if (!LIB.ingredients[id]) err('cooking/food.js', `"${id}" has art but isn't in the ingredient library`);
 

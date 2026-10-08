@@ -60,6 +60,8 @@ The group says which forms an ingredient can take in a recipe (whole, chopped, s
 }
 ```
 
+A recipe can also set `plate` (optional): how the finished dish is served on the table, `{"kind": "soup", "vessel": "bowl"}`. Leave it out and the table works it out from the recipe's name and role (`cooking/dishes.js`).
+
 A step can carry:
 - `uses`: the ingredients that go in at this step, with the amount (`{"id": "butter", "qty": 1, "unit": "tbsp"}`). Count each ingredient where it is measured out or added, once.
 - `tool`: knife, stove, oven, blender, or none

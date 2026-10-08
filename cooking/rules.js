@@ -165,7 +165,7 @@ function menuRecipe(r, LIB){
   const line = i => { const l = ingredientLine(i, LIB); return (l.qty ? l.qty + " " : "") + l.text; };
   const byId = new Map(r.ingredients.map(i => [i.id, i]));
   return {name: r.name, summary: r.summary, role: r.role, cuisine: r.cuisine, serves: r.serves, time: r.time, difficulty: r.difficulty,
-    tags: r.tags, allergens: r.allergens,
+    tags: r.tags, allergens: r.allergens, ...(r.plate ? {plate: r.plate} : {}),
     ingredients: r.ingredients.map(i => ({id: i.id, group: LIB.ingredients[i.id].group, qty: i.qty, unit: i.unit, form: i.form, line: line(i)})),
     steps: r.steps.map(st => {
       const o = {do: st.do};
