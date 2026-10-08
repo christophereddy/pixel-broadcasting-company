@@ -20,17 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 80,
-    "cond": "Partly Cloudy",
-    "obs": "8 Oct 12:52 pm EDT"
+    "temp": 83,
+    "cond": "Mostly Cloudy",
+    "obs": "8 Oct 14:52 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 86,
-     "text": "Partly sunny, with a high near 86. North wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -60,6 +54,12 @@
      "kind": "low",
      "temp": 64,
      "text": "Showers and possibly a thunderstorm.  Low around 64. Chance of precipitation is 90%."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 76,
+     "text": "Showers likely and possibly a thunderstorm before 8am, then a chance of showers.  Partly sunny, with a high near 76. Chance of precipitation is 60%."
     }
    ]
   },
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,46 +88,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 72,
-    "cond": "A Few Clouds",
-    "obs": "8 Oct 12:54 pm EDT"
+    "temp": 73,
+    "cond": "Partly Cloudy",
+    "obs": "8 Oct 14:54 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71. West wind around 11 mph, with gusts as high as 25 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Clear, with a low around 52. West wind around 7 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. West wind 5 to 9 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66. West wind 7 to 13 mph. "
+     "text": "Sunny, with a high near 66. West wind 7 to 15 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 47,
-     "text": "Clear, with a low around 47. West wind 3 to 8 mph. "
+     "temp": 45,
+     "text": "Clear, with a low around 45. West wind 5 to 8 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 63,
-     "text": "Sunny, with a high near 63. Northwest wind 5 to 7 mph. "
+     "temp": 64,
+     "text": "Sunny, with a high near 64. Northwest wind 5 to 8 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Partly cloudy, with a low around 50. Calm wind. "
+     "temp": 49,
+     "text": "Partly cloudy, with a low around 49. Calm wind. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Partly sunny, with a high near 67. Light southwest wind increasing to 5 to 10 mph in the morning. "
     }
    ]
   },
@@ -143,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -197,11 +197,7 @@
     "h": "Mary Todd Lincoln's cape goes on view",
     "b": "The bloodstained cape Mary Todd Lincoln wore the night of Lincoln's assassination is part of a new Chicago History Museum exhibit on presidential artifacts.",
     "date": "2026-10-08",
-    "publisher": "WBEZ",
-    "title": "Mary Todd Lincoln’s blood-soaked cape goes on view in new Chicago History Museum exhibit about presidential artifacts",
     "url": "https://www.wbez.org/museums/2026/10/08/chicago-history-museum-exhibit-threads-of-a-nation-mary-todd-lincoln",
-    "published": "2026-10-08T10:35:00Z",
-    "updated": "2026-10-08T10:35:04Z",
     "gathered": "2026-10-08T13:12:27Z"
    },
    {
@@ -217,46 +213,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
-    "cond": "Mostly Cloudy",
-    "obs": "8 Oct 11:53 am CDT"
+    "temp": 71,
+    "cond": "Partly Cloudy",
+    "obs": "8 Oct 13:53 pm CDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. North northwest wind 5 to 10 mph. "
+     "text": "Sunny, with a high near 69. North wind around 5 mph, with gusts as high as 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54. Southeast wind around 5 mph becoming calm  in the evening. "
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56. East southeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 70,
-     "text": "A chance of showers, with thunderstorms also possible after 4pm.  Partly sunny, with a high near 70. Southeast wind 5 to 10 mph.  Chance of precipitation is 40%."
+     "temp": 69,
+     "text": "Scattered showers, with thunderstorms also possible after 4pm.  Mostly cloudy, with a high near 69. South southeast wind 5 to 10 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 62,
-     "text": "Mostly clear, with a low around 62. South wind 10 to 15 mph. "
+     "temp": 61,
+     "text": "A 10 percent chance of showers and thunderstorms before 7pm.  Mostly cloudy, then gradually becoming clear, with a low around 61. Southeast wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 79,
-     "text": "Mostly sunny, with a high near 79. South wind 10 to 15 mph. "
+     "temp": 80,
+     "text": "Mostly sunny, with a high near 80. South wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 62,
-     "text": "A 20 percent chance of showers after 1am.  Mostly cloudy, with a low around 62."
+     "temp": 61,
+     "text": "A 20 percent chance of showers after 1am.  Mostly cloudy, with a low around 61."
     }
    ]
   },
@@ -272,7 +268,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -285,16 +281,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 81,
     "cond": "A Few Clouds",
-    "obs": "8 Oct 08:58 am MDT"
+    "obs": "8 Oct 11:58 am MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 85,
-     "text": "Sunny, with a high near 85. Calm wind becoming east around 6 mph in the afternoon. "
+     "text": "Sunny, with a high near 85. East northeast wind 3 to 6 mph. "
     },
     {
      "name": "Tonight",
@@ -340,7 +336,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -351,6 +347,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Free safety training, boots for day laborers",
+    "b": "The National Day Laborer Organizing Network will offer free OSHA training Oct. 13 to 16 in Los Angeles, Palmdale, Riverside and Pasadena.",
+    "date": "2026-10-08",
+    "publisher": "LAist",
+    "title": "LA’s day laborers can take free health and safety training —and pickup free work boots",
+    "url": "https://laist.com/news/osha-health-safety-training-free-work-boots-los-angeles-palmdale-pasadena-riverside",
+    "published": "2026-10-08T17:17:42Z",
+    "updated": "2026-10-08T17:17:42Z",
+    "gathered": "2026-10-08T19:10:32Z"
+   },
    {
     "h": "Dodgers clinch NLDS in Atlanta",
     "b": "The Dodgers beat the Braves 4-1 to take the series 3-1 and move on to the NLCS, chasing a third straight World Series title.",
@@ -400,40 +407,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 96,
-     "text": "Sunny and hot, with a high near 96. West northwest wind 5 to 10 mph becoming southwest in the morning. "
+     "text": "Sunny and hot, with a high near 96. West southwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 69,
-     "text": "Increasing clouds, with a low around 69. West southwest wind around 5 mph becoming calm  after midnight. "
+     "temp": 66,
+     "text": "Increasing clouds, with a low around 66. West southwest wind 5 to 10 mph becoming south in the evening. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 90,
-     "text": "Patchy fog before 11am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 90. Calm wind becoming southwest around 5 mph in the afternoon. "
+     "text": "Patchy fog before 11am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 90. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 66,
-     "text": "Patchy fog after 11pm.  Otherwise, increasing clouds, with a low around 66. Southwest wind 5 to 10 mph becoming south southeast after midnight. "
+     "temp": 65,
+     "text": "Patchy fog after 11pm.  Otherwise, increasing clouds, with a low around 65. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 79,
-     "text": "Patchy fog before 11am.  Otherwise, mostly cloudy, with a high near 79. Calm wind becoming south southwest around 5 mph in the afternoon. "
+     "temp": 84,
+     "text": "Patchy fog before 11am.  Otherwise, mostly cloudy, with a high near 84. Calm wind becoming southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 64,
-     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 64."
+     "text": "A 20 percent chance of showers before 11pm.  Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 64."
     }
    ]
   },
@@ -449,7 +456,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -460,6 +467,39 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Bronx exempt from Medicaid work rule",
+    "b": "Because of high unemployment, Bronx residents will be exempt from Medicaid work requirements when new federal rules take effect in January, the state health department said.",
+    "date": "2026-10-08",
+    "publisher": "Gothamist",
+    "title": "Bronx residents will be exempt from new Medicaid work rule, state officials say",
+    "url": "https://gothamist.com/news/bronx-residents-will-be-exempt-from-new-medicaid-work-rule-state-officials-say",
+    "published": "2026-10-08T18:02:40Z",
+    "gathered": "2026-10-08T19:10:32Z"
+   },
+   {
+    "h": "MTA chief says Byford went \"full MAGA\"",
+    "b": "MTA Chair Janno Lieber accused Andy Byford, who leads Amtrak's Penn Station rebuild, of going \"full MAGA.\"",
+    "date": "2026-10-08",
+    "more": [
+     "President Trump took control of the project from the MTA last year."
+    ],
+    "publisher": "Gothamist",
+    "title": "MTA chair accuses Andy Byford, who's leading Penn Station rebuild, of going 'full MAGA'",
+    "url": "https://gothamist.com/news/mta-chair-accuses-andy-byford-whos-leading-penn-station-rebuild-of-going-full-maga",
+    "published": "2026-10-08T17:55:19Z",
+    "gathered": "2026-10-08T19:10:32Z"
+   },
+   {
+    "h": "Jersey City shakes up staff amid $255M gap",
+    "b": "Jersey City Mayor James Solomon announced the resignations of the city's finance director and deputy mayor for housing amid a $255 million budget gap.",
+    "date": "2026-10-08",
+    "publisher": "Gothamist",
+    "title": "Jersey City mayor shakes up staff amid $255M budget gap",
+    "url": "https://gothamist.com/news/jersey-city-mayor-shakes-up-staff-amid-255m-budget-gap",
+    "published": "2026-10-08T18:40:28Z",
+    "gathered": "2026-10-08T19:10:32Z"
+   },
    {
     "h": "Man charged in fatal Queens park stabbing",
     "b": "Police arrested 53-year-old Abdullah Spencerel on murder charges in a fatal stabbing in Major Mark Park in Queens.",
@@ -513,8 +553,7 @@
     "publisher": "Gothamist",
     "title": "Harlem community of murdered 15-year-old mourns as NYPD questions teen tied to incident",
     "url": "https://gothamist.com/news/15-year-old-shot-and-killed-and-1-man-wounded-in-harlem-as-nypd-questions-teen-suspect",
-    "published": "2026-10-08T12:57:00Z",
-    "updated": "2026-10-08T16:59:00Z",
+    "published": "2026-10-08T16:59:00Z",
     "gathered": "2026-10-08T13:12:27Z"
    },
    {
@@ -654,46 +693,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 72,
+    "temp": 71,
     "cond": "Fair",
-    "obs": "8 Oct 12:51 pm EDT"
+    "obs": "8 Oct 14:51 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 73,
-     "text": "Sunny, with a high near 73. West wind around 14 mph, with gusts as high as 24 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly clear, with a low around 57. West wind around 8 mph. "
+     "text": "Clear, with a low around 57. West wind 6 to 11 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 70,
-     "text": "Sunny, with a high near 70. West wind 7 to 13 mph, with gusts as high as 23 mph. "
+     "temp": 71,
+     "text": "Sunny, with a high near 71. Northwest wind 7 to 14 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54. Northwest wind 6 to 8 mph. "
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52. West wind 5 to 7 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny, with a high near 68. Calm wind becoming south around 6 mph in the afternoon. "
+     "temp": 69,
+     "text": "Increasing clouds, with a high near 69. Light and variable wind becoming south around 6 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 60,
-     "text": "Mostly cloudy, with a low around 60."
+     "temp": 61,
+     "text": "Mostly cloudy, with a low around 61. South wind 3 to 7 mph. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 68,
+     "text": "Showers likely after 2pm.  Mostly cloudy, with a high near 68. Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -709,7 +748,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -746,11 +785,7 @@
     "h": "Le Pen proposes tax on hiring non-EU workers",
     "b": "Marine Le Pen's counter-budget includes an extra €1,000 a year per worker for companies that employ non-EU nationals.",
     "date": "2026-10-08",
-    "publisher": "The Local France",
-    "title": "Le Pen proposes new tax on companies in France that employ foreign workers",
     "url": "https://www.thelocal.fr/20261008/le-pen-proposes-new-tax-on-companies-in-france-that-employ-foreign-workers",
-    "published": "2026-10-08T09:10:37Z",
-    "updated": "2026-10-08T09:10:38Z",
     "gathered": "2026-10-08T09:20:13Z"
    },
    {
@@ -812,7 +847,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "goodnews": [
    {
     "h": "Viral vegetarian wolf becomes a toy",
@@ -834,6 +869,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Engine-room sick-out halted WA ferries",
+    "b": "Twenty-three Washington State Ferries engine-room workers called out sick this week over labor concerns, leaving only six of 18 boats running on Monday.",
+    "date": "2026-10-08",
+    "publisher": "KUOW",
+    "title": "What we know about underlying labor issues that halted WA’s ferry system",
+    "url": "https://www.kuow.org/economy/2026-10-08/what-we-know-about-underlying-labor-issues-that-halted-was-ferry-system",
+    "published": "2026-10-08T19:11:46Z",
+    "updated": "2026-10-08T19:11:46Z",
+    "gathered": "2026-10-08T19:10:32Z"
+   },
    {
     "h": "Internment survivors begin march to ICE center",
     "b": "Japanese American survivors of WWII incarceration began a four-day pilgrimage from Seattle to the Northwest ICE Processing Center in Tacoma to protest mass deportations.",
@@ -858,19 +904,19 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Rain likely after 5am.  Increasing clouds, with a low around 54. Light and variable wind becoming south southwest 5 to 10 mph after midnight.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 30 percent chance of rain after 5am.  Increasing clouds, with a low around 54. Calm wind becoming south 5 to 8 mph after midnight. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 58,
-     "text": "Rain, mainly before 10am.  Steady temperature around 58. South southwest wind 6 to 13 mph becoming east in the afternoon. Winds could gust as high as 21 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 57,
+     "text": "Rain, mainly before 10am.  Steady temperature around 57. South southwest wind 5 to 13 mph becoming north northeast in the morning. Winds could gust as high as 21 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "A 40 percent chance of rain.  Mostly cloudy, with a low around 49. East northeast wind around 6 mph becoming south after midnight. "
+     "temp": 48,
+     "text": "A 40 percent chance of rain, mainly between 7pm and midnight.  Mostly cloudy, with a low around 48. Light and variable wind becoming southeast around 6 mph in the evening. "
     },
     {
      "name": "Saturday",
@@ -898,7 +944,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T19:10:00Z",
+  "updatedAt": "2026-10-08T22:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
