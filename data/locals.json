@@ -5,22 +5,12 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Decatur Book Festival cuts ties with bookstore",
-    "b": "The Decatur Book Festival broke ties with Kiss and Tale Romance Bookshop after a festival-goer alleged racism on social media.",
-    "date": "2026-10-06",
-    "more": [
-     "The 21st annual festival was held Oct. 2-3 in downtown Decatur."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 78,
+    "temp": 79,
     "cond": "A Few Clouds",
-    "obs": "7 Oct 15:52 pm EDT"
+    "obs": "7 Oct 17:52 pm EDT"
    },
    "periods": [
     {
@@ -73,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -83,52 +73,12 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "All six lost in Nantucket air ambulance named",
-    "b": "Officials identified the six people aboard the air ambulance that crashed off Nantucket on a flight from Bermuda to Boston.",
-    "date": "2026-10-06",
-    "more": [
-     "Passengers were Marilyn Lavonne Bean, 66, and her son Sergio Wayne Lottimore, 41, of Bermuda; the four crew were Canadian.",
-     "The Coast Guard suspended its search Sunday after 66 hours."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Jury selection begins in Birchmore murder trial",
-    "b": "Jury selection starts in the trial of former Stoughton detective Matthew Farwell, accused of killing Sandra Birchmore in 2021.",
-    "date": "2026-10-06",
-    "more": [
-     "Prosecutors say he abused her from age 15 in a police youth program, then killed her to keep her from reporting it.",
-     "Farwell has pleaded not guilty and maintains she took her own life."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Question 9 puts Mass. gun law to voters",
-    "b": "Massachusetts voters will decide whether to keep or repeal the state's 2024 gun law.",
-    "date": "2026-10-06",
-    "more": [
-     "Gov. Healey called it the state's most significant gun safety law in a decade.",
-     "It set the state's first rules on untraceable 'ghost guns.'"
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Question 6 would fund nature conservation",
-    "b": "Question 6 asks voters to dedicate existing sales tax on outdoor gear to a 'Nature for All' land conservation fund.",
-    "date": "2026-10-06",
-    "more": [
-     "Massachusetts aims to protect 30% of its land and waters by 2030."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 64,
     "cond": "A Few Clouds",
-    "obs": "7 Oct 15:54 pm EDT"
+    "obs": "7 Oct 16:54 pm EDT"
    },
    "periods": [
     {
@@ -181,20 +131,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "boston-ma",
-  "goodnews": [
-   {
-    "h": "Boston plans first Indigenous monument",
-    "b": "Franklin Park's Scarboro Hill will become home to the White Pine Gathering Place, a monument designed by and for the Wampanoag people.",
-    "date": "2026-10-06",
-    "more": [
-     "City officials say it will be Boston's first permanent monument dedicated to an Indigenous community.",
-     "Organizers say it will give tribal communities a space for ceremony and healing."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -210,37 +149,24 @@
     "more": [
      "The ruling left open the state potentially taxing transaction fees on the app."
     ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Pritzker lost 80 pounds with GLP-1 drug",
-    "b": "Illinois Gov. JB Pritzker says he lost 80 pounds since spring 2024 with help from a GLP-1 medication.",
-    "date": "2026-10-06",
-    "more": [
-     "He was diagnosed with prediabetes, then Type 2 diabetes.",
-     "GLP-1s can treat more than diabetes and obesity but carry risks."
-    ],
+    "publisher": "WBEZ",
+    "title": "Illinois dealt blow in legal fight with app Kalshi",
+    "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/07/illinois-dealt-blow-in-legal-fight-with-app-kalshi",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 79,
-    "cond": "A Few Clouds",
-    "obs": "7 Oct 14:53 pm CDT"
+    "temp": 78,
+    "cond": "Partly Cloudy",
+    "obs": "7 Oct 16:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 75,
-     "text": "Sunny, with a high near 75. North northeast wind around 10 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. West northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 56. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
@@ -264,7 +190,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Mostly clear, with a low around 62."
+     "text": "Mostly clear, with a low around 62. South wind 10 to 15 mph, with gusts as high as 20 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 78,
+     "text": "Sunny, with a high near 78."
     }
    ]
   },
@@ -280,7 +212,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -293,17 +225,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 76,
+    "temp": 81,
     "cond": "A Few Clouds",
-    "obs": "7 Oct 12:58 pm MDT"
+    "obs": "7 Oct 14:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 83,
-     "text": "Mostly sunny, with a high near 83. East northeast wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -332,7 +258,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly clear, with a low around 57."
+     "text": "Mostly clear, with a low around 57. Southwest wind 6 to 9 mph, with gusts as high as 15 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 84,
+     "text": "Sunny, with a high near 84."
     }
    ]
   },
@@ -348,7 +280,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -366,6 +298,11 @@
     "more": [
      "It cites alleged violations of federal student privacy laws including FERPA."
     ],
+    "publisher": "LAist",
+    "title": "US Department of Education announces enforcement action against LAUSD",
+    "url": "https://laist.com/news/education/us-department-of-education-action-against-lausd",
+    "published": "2026-10-07T18:30:00Z",
+    "updated": "2026-10-07T18:30:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -375,6 +312,11 @@
     "more": [
      "California Communities Against Toxics says large amounts of ammonia have leaked since the fire destroyed the refrigeration system."
     ],
+    "publisher": "LAist",
+    "title": "What was in the air after the Lineage fire? New lawsuits are demanding information",
+    "url": "https://laist.com/news/health/what-was-in-the-air-after-lineage-fire-lawsuits",
+    "published": "2026-10-07T12:00:00Z",
+    "updated": "2026-10-07T15:50:53Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -384,36 +326,17 @@
     "more": [
      "Founders Gaines and Hang Newborn are raising money to keep it open and buy its building."
     ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "LAUSD at high risk of insolvency, state finds",
-    "b": "California's school finance watchdog says LA Unified is at high risk of insolvency by 2028.",
-    "date": "2026-10-06",
-    "more": [
-     "The agency cited overspending, falling enrollment and rising costs."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Trump remark on Iran hitting LA draws fire",
-    "b": "Trump mused at a Nebraska rally that Iran could 'take out' Los Angeles and San Diego, drawing criticism.",
-    "date": "2026-10-06",
-    "more": [
-     "The White House said he meant he wants to keep Iran from having that capability."
-    ],
+    "publisher": "LAist",
+    "title": "Local food bank under pressure to expand as cuts to food services fuels demand",
+    "url": "https://laist.com/news/housing-homelessness/local-food-bank-under-pressure-la",
+    "published": "2026-10-07T12:00:00Z",
+    "updated": "2026-10-07T15:52:17Z",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 98,
-     "text": "Sunny and hot, with a high near 98. West southwest wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -443,6 +366,12 @@
      "kind": "low",
      "temp": 66,
      "text": "Partly cloudy, with a low around 66."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 81,
+     "text": "Mostly sunny, with a high near 81."
     }
    ]
   },
@@ -458,7 +387,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -470,12 +399,37 @@
   },
   "local": [
    {
+    "h": "Queens pharmacist charged in $31M Medicaid fraud",
+    "b": "The owner of two Jackson Heights pharmacies was arrested on charges of a $31 million Medicaid drug-buyback scheme involving HIV prescriptions, the state attorney general said.",
+    "date": "2026-10-07",
+    "publisher": "Gothamist",
+    "url": "https://gothamist.com/news/queens-pharmacy-owner-charged-in-alleged-31m-medicaid-drugs-fraud",
+    "published": "2026-10-07T21:15:19Z",
+    "gathered": "2026-10-07T22:13:04Z"
+   },
+   {
+    "h": "NJ finds 1,100 more flawed voter registrations",
+    "b": "Gov. Mikie Sherrill said her administration found about 1,100 more problematic voter registrations in its probe of the state's automatic voter registration system.",
+    "date": "2026-10-07",
+    "more": [
+     "The probe into Motor Vehicle Commission registration errors began in July."
+    ],
+    "publisher": "Gothamist",
+    "url": "https://gothamist.com/news/nj-probe-finds-about-1100-more-problematic-voter-registrations",
+    "published": "2026-10-07T20:53:00Z",
+    "updated": "2026-10-07T21:32:00Z",
+    "gathered": "2026-10-07T22:13:04Z"
+   },
+   {
     "h": "MTA to put new fare gates at 150 stations",
     "b": "The MTA is moving ahead with a $1.1 billion rollout of modern sliding-door fare gates after testing them at 20 subway stations over the past year.",
     "date": "2026-10-07",
     "more": [
      "Officials say the gates have proven highly effective against fare evasion."
     ],
+    "publisher": "Gothamist",
+    "url": "https://gothamist.com/news/mta-moves-ahead-with-11b-plan-to-put-modern-fare-gates-at-150-subway-stations",
+    "published": "2026-10-07T18:59:56Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -485,6 +439,9 @@
     "more": [
      "Her mother, 23-year-old Nathaly Ramirez, was killed Tuesday."
     ],
+    "publisher": "Gothamist",
+    "url": "https://gothamist.com/news/nypd-identifies-man-wanted-in-connection-with-deadly-bronx-balcony-push",
+    "published": "2026-10-07T18:45:57Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -494,6 +451,10 @@
     "more": [
      "D'Angelo Caraballo, 25, and Sneider Mejia, 24, were arrested by fugitive task force detectives."
     ],
+    "publisher": "Gothamist",
+    "title": "Suspects in off-duty NYPD detective's stabbing found hiding in Massachusetts basement",
+    "url": "https://gothamist.com/news/suspects-in-off-duty-nypd-detectives-stabbing-found-hiding-in-massachusetts-basement",
+    "published": "2026-10-07T14:36:34Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -503,6 +464,10 @@
     "more": [
      "The judge cited his conditions and more than 200 days in detention."
     ],
+    "publisher": "Gothamist",
+    "url": "https://gothamist.com/news/nj-immigrant-at-the-center-of-delaney-hall-protests-released-from-ice-custody",
+    "published": "2026-10-07T15:36:00Z",
+    "updated": "2026-10-07T20:38:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -512,6 +477,10 @@
     "more": [
      "He was first arrested in July, days after Elizabeth Baron died."
     ],
+    "publisher": "Gothamist",
+    "title": "NYPD says unlicensed doc has been charged with murder in 27-year-old patient death",
+    "url": "https://gothamist.com/news/nypd-says-unlicensed-doc-has-been-charged-with-murder-in-27-year-old-patient-death",
+    "published": "2026-10-07T13:39:00Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -521,6 +490,10 @@
     "more": [
      "The arrests are largely of Latin American immigrant men without criminal histories."
     ],
+    "publisher": "Gothamist",
+    "title": "Nearly 40K and counting: Here’s where ICE arrested immigrants across NY and NJ",
+    "url": "https://gothamist.com/news/nearly-40k-and-counting-heres-where-ice-arrested-immigrants-across-ny-and-nj",
+    "published": "2026-10-07T10:00:54Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -530,6 +503,10 @@
     "more": [
      "On Monday a 71-year-old cyclist fell near 84th Street while avoiding an off-leash dog."
     ],
+    "publisher": "Gothamist",
+    "title": "Central Park's car-free loop is busier than ever. Crashes keep piling up.",
+    "url": "https://gothamist.com/news/central-parks-car-free-loop-is-busier-than-ever-crashes-keep-piling-up",
+    "published": "2026-10-07T11:30:57Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -539,59 +516,18 @@
     "more": [
      "It follows deals by NYU Langone and Mount Sinai with the Trump administration to stop such care for minors."
     ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Mamdani names Rikers oversight board chair",
-    "b": "Mayor Zohran Mamdani named re-entry advocate Christopher Watler to chair the city's jail oversight board.",
-    "date": "2026-10-06",
-    "more": [
-     "Watler has spent decades building re-entry and diversion programs."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Loophole helps Hochul, Blakeman raise millions",
-    "b": "Gov. Kathy Hochul and GOP challenger Bruce Blakeman are using a quirk in state law to raise millions of dollars.",
-    "date": "2026-10-06",
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "NYC weighs expanding Cannonsville Reservoir",
-    "b": "The city may expand the Cannonsville Reservoir, its third-largest drinking water source, after a drought two years ago.",
-    "date": "2026-10-06",
-    "more": [
-     "The drought cut the city's water supply to worryingly low levels."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Legionella found in Staten Island complex",
-    "b": "Legionella bacteria were found in a Staten Island apartment complex's water system after two residents got sick.",
-    "date": "2026-10-06",
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "NYC fears migrants will skip health care",
-    "b": "City health officials worry green card rule changes will lead some immigrants to avoid Medicaid and other benefits.",
-    "date": "2026-10-06",
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Relief for NYC tenants losing rent vouchers",
-    "b": "Nearly 6,300 NYC households losing federal rental aid may get to replace their vouchers and stay in their apartments.",
-    "date": "2026-10-06",
-    "more": [
-     "HUD issued new guidance after letting the earlier aid expire caused fear among tenants and landlords."
-    ],
+    "publisher": "Gothamist",
+    "title": "NYC moves to spend nearly $9M of gender-affirming care fund for minors",
+    "url": "https://gothamist.com/news/nyc-moves-to-spend-nearly-9m-of-gender-affirming-care-fund-for-minors",
+    "published": "2026-10-07T10:30:55Z",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "7 Oct 15:51 pm EDT"
+    "obs": "7 Oct 17:51 pm EDT"
    },
    "periods": [
     {
@@ -644,7 +580,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -663,6 +599,11 @@
     "more": [
      "He laid out areas for improvement in the education system."
     ],
+    "publisher": "The Local France",
+    "title": "LATEST: France 'cannot be indifferent' to the demands of student protesters, says PM",
+    "url": "https://www.thelocal.fr/20261007/latest-france-cannot-be-indifferent-to-the-demands-of-student-protesters-says-pm",
+    "published": "2026-10-07T17:31:27Z",
+    "updated": "2026-10-07T17:31:29Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -672,6 +613,11 @@
     "more": [
      "The government wants students and staff to use the days for 'internal democracy', an idea many have rejected."
     ],
+    "publisher": "The Local France",
+    "title": "What to expect from French student protests and strikes on Thursday",
+    "url": "https://www.thelocal.fr/20261007/what-to-expect-from-french-student-protests-and-strikes-on-thursday",
+    "published": "2026-10-07T14:32:40Z",
+    "updated": "2026-10-07T14:32:41Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -681,6 +627,11 @@
     "more": [
      "Another 6.4 million residents are on water systems placed on alert."
     ],
+    "publisher": "The Local France",
+    "title": "94,000 people without tap water in France due to drought",
+    "url": "https://www.thelocal.fr/20261007/94000-people-without-tap-water-in-france-due-to-drought",
+    "published": "2026-10-07T13:16:49Z",
+    "updated": "2026-10-07T13:16:51Z",
     "gathered": "2026-10-07T22:09:00Z"
    },
    {
@@ -691,26 +642,8 @@
      "Many high schools stay closed for the rest of the week.",
      "Student leaders plan an 'act four' of protests on Thursday."
     ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "France halts high school classes amid protests",
-    "b": "Prime Minister Sebastien Lecornu suspended high school classes for the rest of the week as protesters clashed with police, including in Paris.",
-    "date": "2026-10-06",
-    "more": [
-     "Officials counted about 250,000 protesters nationwide; organizers said about half a million.",
-     "Lecornu said 'burning down a high school does not improve the state of high school buildings.'"
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "French unions call nationwide strike Nov. 5",
-    "b": "French unions called a day of cross-sector strikes and protests on Thursday, November 5th.",
-    "date": "2026-10-06",
-    "more": [
-     "The CFDT, CGT, FO, Unsa and FSU unions back the call 'for wages, public services, employment and industry.'",
-     "The government faces growing opposition to its draft 2027 budget."
-    ],
+    "publisher": "The Local France",
+    "url": "https://www.thelocal.fr/20261007/latest-france-suspends-use-of-stun-grenades-at-student-protests-as-schools-remain-closed",
     "gathered": "2026-10-07T22:09:00Z"
    }
   ],
@@ -730,7 +663,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "goodnews": []
  },
  {
@@ -739,60 +672,15 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [
-   {
-    "h": "Ferry sick-out strands thousands of riders",
-    "b": "Thousands of Puget Sound ferry riders were stranded Monday as major routes and dozens of sailings were canceled.",
-    "date": "2026-10-06",
-    "more": [
-     "Nearly two dozen engine room workers called out sick and backup crews declined to fill in.",
-     "Their union blamed Washington State Ferries' failure to hire more staff."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Bellingham man charged with aiding BC shooter",
-    "b": "A Bellingham resident is charged with helping the shooter who killed eight people at Tumbler Ridge, British Columbia, in February.",
-    "date": "2026-10-06",
-    "more": [
-     "Federal prosecutors in Seattle announced the arrest with the FBI and RCMP."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Orca mom J31 carries dead calf again",
-    "b": "Endangered southern resident orca J31 was seen carrying a dead newborn on her nose in the Strait of Juan de Fuca.",
-    "date": "2026-10-06",
-    "more": [
-     "She did the same in 2016 and has lost at least eight other offspring.",
-     "She has one living daughter, now 7."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   },
-   {
-    "h": "Mayor Wilson explains budget without tax hike",
-    "b": "Seattle Mayor Katie Wilson explained why she relied on cuts, not a JumpStart payroll tax increase, to close a roughly $175 million gap.",
-    "date": "2026-10-06",
-    "more": [
-     "Her $9.1 billion budget proposal is now before the City Council, which will amend it."
-    ],
-    "gathered": "2026-10-07T22:09:00Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 66,
-     "text": "Partly sunny early, then becoming sunny, with a high near 66. North northwest wind around 6 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Increasing clouds, with a low around 51. Light north wind. "
+     "text": "Increasing clouds, with a low around 51. North northwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Thursday",
@@ -816,7 +704,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 49,
-     "text": "A 40 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 49."
+     "text": "A 40 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 49. South wind 6 to 8 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 59,
+     "text": "Mostly sunny, with a high near 59."
     }
    ]
   },
@@ -832,7 +726,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-07T22:09:00Z",
+  "updatedAt": "2026-10-08T01:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
