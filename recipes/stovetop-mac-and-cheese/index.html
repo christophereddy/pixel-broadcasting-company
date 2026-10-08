@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Stovetop Mac and Cheese","description":"Creamy cheddar mac and cheese made in one pot.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/stovetop-mac-and-cheese/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Main","keywords":"Weeknight dinner, Comfort food, kid, vegetarian","recipeYield":"4 servings","prepTime":"PT5M","cookTime":"PT20M","totalTime":"PT25M","recipeIngredient":["8 oz elbow pasta","2 tbsp butter","2 tbsp all-purpose flour","2 cups milk","2 cups cheddar, shredded","½ tsp mustard powder","1 tsp salt","8 cups water"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Bring the water and 1/2 tsp salt to a boil."},{"@type":"HowToStep","position":2,"text":"Cook the pasta for 7 minutes, then drain."},{"@type":"HowToStep","position":3,"text":"Melt the butter in the pot, stir in the flour and cook for 1 minute."},{"@type":"HowToStep","position":4,"text":"Whisk in the milk a little at a time and cook for 4 minutes, until thick."},{"@type":"HowToStep","position":5,"text":"Take off the heat and stir in the cheddar, mustard powder and the rest of the salt."},{"@type":"HowToStep","position":6,"text":"Stir the pasta back in."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>25 min</b>total time</div>
         <div><b>5 min</b>prep</div>
         <div><b>20 min</b>cooking</div>
-        <div><b>4</b>servings</div>
+        <div id="serves-tile"><b>4</b>servings</div>
       </div>
       <p class="co-hint">Good for: weeknight dinner, comfort food.</p>
       <p><b>Contains:</b> Milk, Wheat.</p>
@@ -57,22 +58,30 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="4" data-stove="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="4" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 4</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>8 oz</b> elbow pasta</li>
-        <li><b>2 tbsp</b> butter</li>
-        <li><b>2 tbsp</b> all-purpose flour</li>
-        <li><b>2 cups</b> milk</li>
-        <li><b>2 cups</b> cheddar, shredded</li>
-        <li><b>½ tsp</b> mustard powder</li>
-        <li><b>1 tsp</b> salt</li>
-        <li><b>8 cups</b> water</li>
+        <li data-q="8" data-u="oz"><b>8 oz</b> elbow pasta</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> butter</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> all-purpose flour</li>
+        <li data-q="2" data-u="cup"><b>2 cups</b> milk</li>
+        <li data-q="2" data-u="cup"><b>2 cups</b> cheddar, shredded</li>
+        <li data-q="0.5" data-u="tsp"><b>½ tsp</b> mustard powder</li>
+        <li data-q="1" data-u="tsp"><b>1 tsp</b> salt</li>
+        <li data-q="8" data-u="cup"><b>8 cups</b> water</li>
       </ul>
     </section>
 
     <section class="co-card" id="method">
       <h2>METHOD</h2>
       <ol class="co-method">
-        <li>Bring the water and 1/2 tsp salt to a boil.<div class="co-badges"><span class="co-badge">HIGH HEAT</span><span class="co-badge help">GROWN-UP HELPS</span></div></li>
+        <li>Bring the water and <span class="co-amt" data-q="0.5" data-u="tsp">1/2 tsp</span> salt to a boil.<div class="co-badges"><span class="co-badge">HIGH HEAT</span><span class="co-badge help">GROWN-UP HELPS</span></div></li>
         <li>Cook the pasta for 7 minutes, then drain.<span class="co-done">Done when: tender with a little bite.</span><div class="co-badges"><span class="co-badge">TIMER 7 MIN</span><span class="co-badge">HIGH HEAT</span><span class="co-badge help">GROWN-UP HELPS</span></div></li>
         <li>Melt the butter in the pot, stir in the flour and cook for 1 minute.<div class="co-badges"><span class="co-badge">TIMER 1 MIN</span><span class="co-badge">MEDIUM HEAT</span><span class="co-badge help">GROWN-UP HELPS</span></div></li>
         <li>Whisk in the milk a little at a time and cook for 4 minutes, until thick.<span class="co-done">Done when: coats the spoon.</span><div class="co-badges"><span class="co-badge">TIMER 4 MIN</span><span class="co-badge">MEDIUM HEAT</span><span class="co-badge help">GROWN-UP HELPS</span></div></li>

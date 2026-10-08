@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Crispy Roast Potatoes","description":"Potatoes roasted until crunchy with rosemary.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/crispy-potatoes/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Side","keywords":"Family dinner, vegetarian","recipeYield":"4 servings","prepTime":"PT10M","cookTime":"PT45M","totalTime":"PT55M","recipeIngredient":["2 lb potatoes, cubed","3 tbsp olive oil","1 tsp salt","2 sprigs rosemary, chopped"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Preheat the oven to 425°F."},{"@type":"HowToStep","position":2,"text":"Cut the potatoes into 1 inch chunks."},{"@type":"HowToStep","position":3,"text":"Toss with the oil, salt and rosemary on a sheet pan."},{"@type":"HowToStep","position":4,"text":"Roast for 45 minutes, turning halfway."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>55 min</b>total time</div>
         <div><b>10 min</b>prep</div>
         <div><b>45 min</b>cooking</div>
-        <div><b>4</b>servings</div>
+        <div id="serves-tile"><b>4</b>servings</div>
       </div>
       <p class="co-hint">Good for: family dinner.</p>
       <p><b>Contains:</b> none of the major allergens.</p>
@@ -57,11 +58,19 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="4" data-oven="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="4" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 4</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>2 lb</b> potatoes, cubed</li>
-        <li><b>3 tbsp</b> olive oil</li>
-        <li><b>1 tsp</b> salt</li>
-        <li><b>2 sprigs</b> rosemary, chopped</li>
+        <li data-q="2" data-u="lb"><b>2 lb</b> potatoes, cubed</li>
+        <li data-q="3" data-u="tbsp"><b>3 tbsp</b> olive oil</li>
+        <li data-q="1" data-u="tsp"><b>1 tsp</b> salt</li>
+        <li data-q="2" data-u="sprig"><b>2 sprigs</b> rosemary, chopped</li>
       </ul>
     </section>
 

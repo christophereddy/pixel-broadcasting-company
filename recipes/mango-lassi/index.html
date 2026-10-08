@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Mango Lassi","description":"Cool mango and yogurt drink with cardamom.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/mango-lassi/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"India","recipeCategory":"Drink","keywords":"Weeknight dinner, Snack, kid, quick, vegetarian","recipeYield":"2 servings","prepTime":"PT5M","cookTime":"PT0M","totalTime":"PT5M","recipeIngredient":["1 cup mango, cubed","1 cup plain yogurt, cold","½ cup milk, cold","1 tbsp sugar","1 pinch cardamom"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Put the mango, yogurt, milk, sugar and cardamom in the blender."},{"@type":"HowToStep","position":2,"text":"Blend until smooth and pour into glasses."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>5 min</b>total time</div>
         <div><b>5 min</b>prep</div>
         <div><b>0 min</b>cooking</div>
-        <div><b>2</b>servings</div>
+        <div id="serves-tile"><b>2</b>servings</div>
       </div>
       <p class="co-hint">Good for: weeknight dinner, snack.</p>
       <p><b>Contains:</b> Milk.</p>
@@ -57,12 +58,20 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="2" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="2" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 2</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>1 cup</b> mango, cubed</li>
-        <li><b>1 cup</b> plain yogurt, cold</li>
-        <li><b>½ cup</b> milk, cold</li>
-        <li><b>1 tbsp</b> sugar</li>
-        <li><b>1 pinch</b> cardamom</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> mango, cubed</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> plain yogurt, cold</li>
+        <li data-q="0.5" data-u="cup"><b>½ cup</b> milk, cold</li>
+        <li data-q="1" data-u="tbsp"><b>1 tbsp</b> sugar</li>
+        <li data-q="1" data-u="pinch"><b>1 pinch</b> cardamom</li>
       </ul>
     </section>
 

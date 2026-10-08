@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Mummy Hot Dogs","description":"Hot dogs wrapped in puff pastry bandages with mustard eyes.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/mummy-hot-dogs/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Snack","keywords":"Party, Holiday, kid","recipeYield":"8 servings","prepTime":"PT15M","cookTime":"PT18M","totalTime":"PT35M","recipeIngredient":["1 sheet puff pastry (thawed)","8 hot dogs","1 egg, beaten","1 tbsp yellow mustard"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Preheat the oven to 400°F."},{"@type":"HowToStep","position":2,"text":"Cut the pastry into thin strips with a pizza cutter."},{"@type":"HowToStep","position":3,"text":"Wrap the strips around each hot dog like bandages, leaving a gap for the face."},{"@type":"HowToStep","position":4,"text":"Brush the pastry with beaten egg."},{"@type":"HowToStep","position":5,"text":"Bake for 18 minutes, until puffed and golden."},{"@type":"HowToStep","position":6,"text":"Dot on 2 mustard eyes."}]}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>35 min</b>total time</div>
         <div><b>15 min</b>prep</div>
         <div><b>18 min</b>cooking</div>
-        <div><b>8</b>servings</div>
+        <div id="serves-tile"><b>8</b>servings</div>
       </div>
       <p class="co-hint">Good for: party, holiday.</p>
       <p><b>Contains:</b> Milk, Egg, Wheat.</p>
@@ -57,11 +58,19 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="8" data-oven="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="8" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 8</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>1 sheet</b> puff pastry (thawed)</li>
-        <li><b>8</b> hot dogs</li>
-        <li><b>1</b> egg, beaten</li>
-        <li><b>1 tbsp</b> yellow mustard</li>
+        <li data-q="1" data-u="sheet"><b>1 sheet</b> puff pastry (thawed)</li>
+        <li data-q="8" data-u="piece" data-one="hot dogs" data-many="hot dogs"><b>8</b> hot dogs</li>
+        <li data-q="1" data-u="piece" data-one="egg, beaten" data-many="eggs, beaten"><b>1</b> egg, beaten</li>
+        <li data-q="1" data-u="tbsp"><b>1 tbsp</b> yellow mustard</li>
       </ul>
     </section>
 

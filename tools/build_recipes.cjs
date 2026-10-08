@@ -61,6 +61,31 @@ function ingredientLine(i) {
 }
 const minutes = m => m < 60 ? m + ' min' : Math.floor(m / 60) + ' hr' + (m % 60 ? ' ' + (m % 60) + ' min' : '');
 const iso = m => 'PT' + (m >= 60 ? Math.floor(m / 60) + 'H' : '') + (m % 60 || m === 0 ? (m % 60) + 'M' : '');
+// The SERVINGS control on each recipe page (recipes/servings.js) rescales these amounts in the browser. It has to write an
+// unscaled amount exactly the way this file does, so check that here, once, for every amount in every recipe.
+const SERVINGS = require(path.join(ROOT, 'recipes', 'servings.js'));
+if (JSON.stringify(SERVINGS.UNIT) !== JSON.stringify(UNIT)) throw new Error('recipes/servings.js has different unit words from UNIT in this file');
+for (const r of RECIPES) for (const i of r.ingredients) if (i.unit !== 'to-taste') {
+  const l = ingredientLine(i), s = SERVINGS.scale(i.qty, i.unit, 1);
+  if (SERVINGS.measure(s.q, s.u) !== l.qty) throw new Error(`recipes/servings.js writes ${r.slug}'s ${i.id} as "${SERVINGS.measure(s.q, s.u)}", this file as "${l.qty}"`);
+}
+// An amount written into a step ("toss with 2 tbsp olive oil") that is one of the step's own uses, so it scales too.
+// Amounts that aren't a use ("1/4 cup of batter per pancake", "2 slices of ham each") stay as written.
+const FRAC_TEXT = {'1/8': 0.125, '1/4': 0.25, '1/3': 1 / 3, '1/2': 0.5, '2/3': 2 / 3, '3/4': 0.75};
+function stepText(s) {
+  const left = (s.uses || []).filter(u => u.unit !== 'piece' && u.unit !== 'to-taste');
+  let out = '', at = 0;
+  for (const m of s.do.matchAll(/\b(?:(\d+) )?(?:(\d\/\d)|(\d+(?:\.\d+)?)) (tsp|tbsp|cups?|oz|lb|g|ml)\b/g)) {
+    const q = (m[3] !== undefined ? +m[3] : (+m[1] || 0) + (FRAC_TEXT[m[2]] || NaN)), unit = m[4].replace(/s$/, '');
+    const k = left.findIndex(u => u.unit === unit && Math.abs(u.qty - q) < 0.01);
+    if (k < 0) continue;
+    left.splice(k, 1);
+    out += esc(s.do.slice(at, m.index)) + `<span class="co-amt" data-q="${q}" data-u="${unit}">${esc(m[0])}</span>`;
+    at = m.index + m[0].length;
+  }
+  return out + esc(s.do.slice(at));
+}
+const HALVES = new Set(['vegetable', 'fruit', 'herb']);   // pieces a cook can halve: half an onion, half a lemon
 const timerLabel = t => t < 1 ? Math.round(t * 60) + ' SEC' : t >= 60 && t % 60 === 0 ? t / 60 + ' HR' : t + ' MIN';
 
 /* ---------- the shared page frame (tools/NEW_PAGE.md skeleton, company-page style) ---------- */
@@ -133,6 +158,17 @@ function tagsHtml(r) {
 }
 
 /* ---------- one recipe ---------- */
+// What recipes/servings.js needs to rescale one ingredient line: its amount and unit, and for pieces the name both ways
+function ingredientData(i) {
+  if (i.unit === 'to-taste') return '';
+  let d = ` data-q="${i.qty}" data-u="${i.unit}"`;
+  if (i.unit === 'piece') {
+    d += ` data-one="${esc(ingredientLine({...i, qty: 1}).text)}" data-many="${esc(ingredientLine({...i, qty: 2}).text)}"`;
+    if (HALVES.has(LIB.ingredients[i.id].group)) d += ' data-half';
+  }
+  return d;
+}
+
 function recipePage(r) {
   const url = SITE + 'recipes/' + r.slug + '/';
   const show = SHOW_OF.get(r.slug);
@@ -147,7 +183,7 @@ function recipePage(r) {
     recipeInstructions: r.steps.map((s, i) => ({'@type': 'HowToStep', position: i + 1, text: s.do}))
   };
   if (r.tags.includes('vegetarian')) ld.suitableForDiet = 'https://schema.org/VegetarianDiet';
-  const head = `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`;
+  const head = `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n<script src="../servings.js" defer></script>\n`;
   const steps = r.steps.map(s => {
     const b = [];
     if (s.timer !== undefined) b.push(`<span class="co-badge">TIMER ${timerLabel(s.timer)}</span>`);
@@ -155,7 +191,7 @@ function recipePage(r) {
     if (s.oven_f) b.push(`<span class="co-badge">OVEN ${s.oven_f}°F / ${celsius(s.oven_f)}°C</span>`);
     if (s.temp_f) b.push(`<span class="co-badge temp">CHECK ${s.temp_f}°F / ${celsius(s.temp_f)}°C INSIDE</span>`);
     if (s.help) b.push('<span class="co-badge help">GROWN-UP HELPS</span>');
-    return `        <li>${esc(s.do)}${s.cue ? `<span class="co-done">Done when: ${esc(s.cue)}.</span>` : ''}${b.length ? `<div class="co-badges">${b.join('')}</div>` : ''}</li>`;
+    return `        <li>${stepText(s)}${s.cue ? `<span class="co-done">Done when: ${esc(s.cue)}.</span>` : ''}${b.length ? `<div class="co-badges">${b.join('')}</div>` : ''}</li>`;
   }).join('\n');
   const allergens = r.allergens.length ? r.allergens.map(a => ALLERGEN[a]).join(', ') : 'none of the major allergens';
   const sameShow = show ? show.recipes.filter(s => s !== r.slug).map(s => BY.get(s)).filter(Boolean) : [];
@@ -172,7 +208,7 @@ function recipePage(r) {
         <div><b>${minutes(r.time.total)}</b>total time</div>
         <div><b>${minutes(r.time.prep)}</b>prep</div>
         <div><b>${minutes(r.time.cook)}</b>cooking</div>
-        <div><b>${r.serves}</b>${r.serves === 1 ? 'serving' : 'servings'}</div>
+        <div id="serves-tile"><b>${r.serves}</b>${r.serves === 1 ? 'serving' : 'servings'}</div>
       </div>
       <p class="co-hint">Good for: ${r.occasions.map(o => OCC[o].toLowerCase()).join(', ')}.</p>
       <p><b>Contains:</b> ${esc(allergens)}.</p>
@@ -180,8 +216,16 @@ function recipePage(r) {
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="${r.serves}"${r.steps.some(s => s.tool === 'oven') ? ' data-oven="1"' : ''}${r.steps.some(s => s.tool === 'stove') ? ' data-stove="1"' : ''} hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="${Math.max(24, r.serves * 2)}" step="1" value="${r.serves}" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO ${r.serves}</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-${lines.map(l => `        <li>${l.qty ? `<b>${esc(l.qty)}</b> ` : ''}${esc(l.text)}</li>`).join('\n')}
+${lines.map((l, k) => `        <li${ingredientData(r.ingredients[k])}>${l.qty ? `<b>${esc(l.qty)}</b> ` : ''}${esc(l.text)}</li>`).join('\n')}
       </ul>
     </section>
 

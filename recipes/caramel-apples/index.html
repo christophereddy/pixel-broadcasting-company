@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Caramel Apples","description":"Crisp apples dipped in homemade caramel.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/caramel-apples/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Dessert","keywords":"Party, Holiday, kid, vegetarian","recipeYield":"6 servings","prepTime":"PT10M","cookTime":"PT15M","totalTime":"PT1H","recipeIngredient":["6 apples (small, with sticks)","1 cup sugar","¼ cup water","4 tbsp butter","½ cup heavy cream, warm","1 tsp vanilla extract","½ tsp salt","½ cup peanuts, chopped"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Push a stick into the top of each apple and line a tray with parchment."},{"@type":"HowToStep","position":2,"text":"Chop the peanuts."},{"@type":"HowToStep","position":3,"text":"Cook the sugar and water without stirring for 10 minutes, until amber. A grown-up does this part: it's very hot."},{"@type":"HowToStep","position":4,"text":"Off the heat, whisk in the butter, then the warm cream, vanilla and salt."},{"@type":"HowToStep","position":5,"text":"Cool the caramel for 5 minutes."},{"@type":"HowToStep","position":6,"text":"Dip each apple, let it drip, then roll the bottom in peanuts."},{"@type":"HowToStep","position":7,"text":"Set on the tray for 30 minutes."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>1 hr</b>total time</div>
         <div><b>10 min</b>prep</div>
         <div><b>15 min</b>cooking</div>
-        <div><b>6</b>servings</div>
+        <div id="serves-tile"><b>6</b>servings</div>
       </div>
       <p class="co-hint">Good for: party, holiday.</p>
       <p><b>Contains:</b> Milk, Peanuts.</p>
@@ -57,15 +58,23 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="6" data-stove="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="6" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 6</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>6</b> apples (small, with sticks)</li>
-        <li><b>1 cup</b> sugar</li>
-        <li><b>¼ cup</b> water</li>
-        <li><b>4 tbsp</b> butter</li>
-        <li><b>½ cup</b> heavy cream, warm</li>
-        <li><b>1 tsp</b> vanilla extract</li>
-        <li><b>½ tsp</b> salt</li>
-        <li><b>½ cup</b> peanuts, chopped</li>
+        <li data-q="6" data-u="piece" data-one="apples (small, with sticks)" data-many="apples (small, with sticks)" data-half><b>6</b> apples (small, with sticks)</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> sugar</li>
+        <li data-q="0.25" data-u="cup"><b>¼ cup</b> water</li>
+        <li data-q="4" data-u="tbsp"><b>4 tbsp</b> butter</li>
+        <li data-q="0.5" data-u="cup"><b>½ cup</b> heavy cream, warm</li>
+        <li data-q="1" data-u="tsp"><b>1 tsp</b> vanilla extract</li>
+        <li data-q="0.5" data-u="tsp"><b>½ tsp</b> salt</li>
+        <li data-q="0.5" data-u="cup"><b>½ cup</b> peanuts, chopped</li>
       </ul>
     </section>
 

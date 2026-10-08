@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Caesar Salad","description":"Crisp romaine with a creamy garlic-parmesan dressing and croutons.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/caesar-salad/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Starter","keywords":"Date night, Lunch","recipeYield":"2 servings","prepTime":"PT15M","cookTime":"PT10M","totalTime":"PT25M","recipeIngredient":["1 romaine, torn (1 head)","2 slices sandwich bread, cubed","3 tbsp olive oil","3 tbsp mayonnaise","½ lemon, juiced","1 clove garlic, minced","1 tsp dijon mustard","2 anchovy fillets, minced","½ cup parmesan, grated","Black pepper, to taste"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Preheat the oven to 375°F."},{"@type":"HowToStep","position":2,"text":"Cube the bread and toss it with 2 tbsp olive oil."},{"@type":"HowToStep","position":3,"text":"Bake the cubes for 10 minutes, until crunchy."},{"@type":"HowToStep","position":4,"text":"Mince the garlic and anchovies, then whisk them with the mayonnaise, lemon, mustard, the rest of the oil and half the parmesan."},{"@type":"HowToStep","position":5,"text":"Toss the romaine with the dressing and croutons."},{"@type":"HowToStep","position":6,"text":"Top with the rest of the parmesan and pepper."}]}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>25 min</b>total time</div>
         <div><b>15 min</b>prep</div>
         <div><b>10 min</b>cooking</div>
-        <div><b>2</b>servings</div>
+        <div id="serves-tile"><b>2</b>servings</div>
       </div>
       <p class="co-hint">Good for: date night, lunch.</p>
       <p><b>Contains:</b> Milk, Egg, Wheat, Fish.</p>
@@ -57,16 +58,24 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="2" data-oven="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="2" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 2</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>1</b> romaine, torn (1 head)</li>
-        <li><b>2 slices</b> sandwich bread, cubed</li>
-        <li><b>3 tbsp</b> olive oil</li>
-        <li><b>3 tbsp</b> mayonnaise</li>
-        <li><b>½</b> lemon, juiced</li>
-        <li><b>1 clove</b> garlic, minced</li>
-        <li><b>1 tsp</b> dijon mustard</li>
-        <li><b>2</b> anchovy fillets, minced</li>
-        <li><b>½ cup</b> parmesan, grated</li>
+        <li data-q="1" data-u="piece" data-one="romaine, torn (1 head)" data-many="romaines, torn (1 head)" data-half><b>1</b> romaine, torn (1 head)</li>
+        <li data-q="2" data-u="slice"><b>2 slices</b> sandwich bread, cubed</li>
+        <li data-q="3" data-u="tbsp"><b>3 tbsp</b> olive oil</li>
+        <li data-q="3" data-u="tbsp"><b>3 tbsp</b> mayonnaise</li>
+        <li data-q="0.5" data-u="piece" data-one="lemon, juiced" data-many="lemons, juiced" data-half><b>½</b> lemon, juiced</li>
+        <li data-q="1" data-u="clove"><b>1 clove</b> garlic, minced</li>
+        <li data-q="1" data-u="tsp"><b>1 tsp</b> dijon mustard</li>
+        <li data-q="2" data-u="piece" data-one="anchovy fillets, minced" data-many="anchovy fillets, minced"><b>2</b> anchovy fillets, minced</li>
+        <li data-q="0.5" data-u="cup"><b>½ cup</b> parmesan, grated</li>
         <li>Black pepper, to taste</li>
       </ul>
     </section>
@@ -75,7 +84,7 @@
       <h2>METHOD</h2>
       <ol class="co-method">
         <li>Preheat the oven to 375°F.<div class="co-badges"><span class="co-badge">OVEN 375°F / 191°C</span></div></li>
-        <li>Cube the bread and toss it with 2 tbsp olive oil.</li>
+        <li>Cube the bread and toss it with <span class="co-amt" data-q="2" data-u="tbsp">2 tbsp</span> olive oil.</li>
         <li>Bake the cubes for 10 minutes, until crunchy.<span class="co-done">Done when: golden croutons.</span><div class="co-badges"><span class="co-badge">TIMER 10 MIN</span><span class="co-badge">OVEN 375°F / 191°C</span></div></li>
         <li>Mince the garlic and anchovies, then whisk them with the mayonnaise, lemon, mustard, the rest of the oil and half the parmesan.</li>
         <li>Toss the romaine with the dressing and croutons.</li>

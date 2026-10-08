@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Herb Roast Turkey Breast","description":"A juicy bone-in turkey breast with sage butter.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/roast-turkey-breast/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Main","keywords":"Holiday, Family dinner","recipeYield":"6 servings","prepTime":"PT15M","cookTime":"PT1H45M","totalTime":"PT2H15M","recipeIngredient":["5 lb turkey breast (bone-in)","4 tbsp butter, softened","6 leaves sage, chopped","4 sprigs thyme, chopped","3 cloves garlic, minced","2 tsp salt","1 tsp black pepper"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Preheat the oven to 350°F."},{"@type":"HowToStep","position":2,"text":"Chop the sage and thyme leaves and mince the garlic. Mash them into the butter with the salt and pepper."},{"@type":"HowToStep","position":3,"text":"Pat the turkey dry and rub the butter under and over the skin."},{"@type":"HowToStep","position":4,"text":"Roast for 105 minutes, basting halfway."},{"@type":"HowToStep","position":5,"text":"Check the thickest part: 165°F."},{"@type":"HowToStep","position":6,"text":"Rest for 20 minutes, then carve."}]}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>2 hr 15 min</b>total time</div>
         <div><b>15 min</b>prep</div>
         <div><b>1 hr 45 min</b>cooking</div>
-        <div><b>6</b>servings</div>
+        <div id="serves-tile"><b>6</b>servings</div>
       </div>
       <p class="co-hint">Good for: holiday, family dinner.</p>
       <p><b>Contains:</b> Milk.</p>
@@ -57,14 +58,22 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="6" data-oven="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="6" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 6</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>5 lb</b> turkey breast (bone-in)</li>
-        <li><b>4 tbsp</b> butter, softened</li>
-        <li><b>6 leaves</b> sage, chopped</li>
-        <li><b>4 sprigs</b> thyme, chopped</li>
-        <li><b>3 cloves</b> garlic, minced</li>
-        <li><b>2 tsp</b> salt</li>
-        <li><b>1 tsp</b> black pepper</li>
+        <li data-q="5" data-u="lb"><b>5 lb</b> turkey breast (bone-in)</li>
+        <li data-q="4" data-u="tbsp"><b>4 tbsp</b> butter, softened</li>
+        <li data-q="6" data-u="leaf"><b>6 leaves</b> sage, chopped</li>
+        <li data-q="4" data-u="sprig"><b>4 sprigs</b> thyme, chopped</li>
+        <li data-q="3" data-u="clove"><b>3 cloves</b> garlic, minced</li>
+        <li data-q="2" data-u="tsp"><b>2 tsp</b> salt</li>
+        <li data-q="1" data-u="tsp"><b>1 tsp</b> black pepper</li>
       </ul>
     </section>
 
