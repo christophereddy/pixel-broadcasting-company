@@ -8,6 +8,7 @@ The COOKING channel (`cooking/`) cooks AI-written recipes in a pixel kitchen, an
 | `data/cooking/recipes/<slug>.json` | One recipe per file |
 | `data/cooking/shows.json` | The shows: which recipes each one cooks, for which occasion, in which rundown section, and who cooks it |
 | `cooking/food.js` | The pixel art for every library ingredient (`ART`), and the measuring tools the channel shows amounts in |
+| `cooking/rules.js` | The rules for one recipe, shared by the checker, the builder and My Kitchen, so a viewer's recipe is checked exactly like ours |
 | `tools/check_recipes.cjs` | Checks all of the above. Runs on every pull request. |
 | `tools/build_recipes.cjs` | Builds the recipe site from all of the above: `recipes/` (the search page, `index.json` and one page per recipe), `sitemap.xml` and `robots.txt`, plus `cooking/menu.json`, what the channel plays |
 | `cooking/schedule.js` | The channel's running order and pacing, which the checker uses too |
@@ -17,6 +18,10 @@ Run `node tools/check_recipes.cjs` after any change to `data/cooking/`, then `no
 ## Why so strict
 
 Recipes are written by AI, not tested in a kitchen, and people will cook along by watching. Everything the channel shows (amounts, timers, oven temperatures, heat levels) is generated from the recipe data, so the data has to be right. The checker refuses a recipe rather than letting a wrong number reach the screen.
+
+## My Kitchen: viewers' own recipes
+
+`cooking/my-kitchen/` lets a viewer write a recipe of their own from the same ingredient library, checked in their browser by `cooking/rules.js` (the same rules as below), and watch the channel cook it at `cooking/?recipe=mine-<slug>`. Their recipes are kept in their browser (`cooking/mine.js`) and never sent to PBC. A saved recipe is in exactly the format of `data/cooking/recipes/<slug>.json`, so a later SUBMIT button can send it in as is, to be checked and added like any other recipe.
 
 ## The ingredient library
 
