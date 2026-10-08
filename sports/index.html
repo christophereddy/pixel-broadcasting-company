@@ -336,6 +336,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
     <div class="confbar" id="confbar" hidden><label for="conf">CONFERENCE</label><select id="conf"></select></div>
     <section><h4>LIVE NOW</h4><div id="list-live"></div></section>
     <section><h4>UP NEXT</h4><div id="list-next"></div></section>
+    <section><h4>FINAL</h4><div id="list-fin"></div></section>
     <section><h4>TEAMS</h4><div class="tgrid" id="teamgrid"></div><div class="tpage" id="teampage" hidden></div></section>
    </div>
   </aside>
@@ -612,7 +613,7 @@ function sortedGames(everywhere){
   return {live, next, fin};
 }
 function renderList(){
-  const {live, next} = sortedGames();
+  const {live, next, fin} = sortedGames();
   const fill = (el, arr, empty) => {
     el.replaceChildren();
     if (!arr.length) { const d = document.createElement('div'); d.className = 'none'; d.textContent = empty; el.append(d); return; }
@@ -628,6 +629,8 @@ function renderList(){
   const lg = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf)?.name || SPORTS[S.sport].name;
   fill($('list-live'), live, isF1() ? 'No F1 session on track right now.' : `No ${lg} games live right now.`);
   fill($('list-next'), next.slice(0, 8), isF1() ? 'No sessions on the schedule.' : SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next 10 days.');
+  // finished games, newest first, to pick a replay from; their scores follow SHOW RESULTS / HIDE RESULTS (gameLine)
+  fill($('list-fin'), fin, isF1() ? 'No race replays yet.' : `No ${lg} games finished in the last week.`);
   markLive();
 }
 
@@ -3572,13 +3575,33 @@ async function selectGame(id, mode){
 const startWords = () => isMLB() ? ['first pitch', 'First pitch', 'pitch'] : isBB() ? ['tip-off', 'Tip-off', 'play'] : ['kickoff', 'Kickoff', 'snap'];
 // a game's play-by-play: ESPN's game summary for football and basketball, MLB's live game feed for baseball
 const gameURL = id => isMLB() ? `${MLB_API}/v1.1/game/${id}/feed/live` : `${API}/summary?event=${id}`;
+// The games list takes the live game's score from the same feed as the plays, every ten seconds, instead of waiting for
+// the next schedule pull (every 30 seconds, and the schedule can trail the play feed), so the list keeps up with the game.
+function syncScore(sum){
+  const ev = evOf(S.game); if (!ev || stateOf(ev) !== 'in') return;
+  let a, h, det = '';
+  if (isMLB()) {
+    const ls = sum?.liveData?.linescore; a = ls?.teams?.away?.runs; h = ls?.teams?.home?.runs;
+    det = `${ls?.inningState || ''} ${ls?.currentInningOrdinal || ''}`.trim();
+  } else {
+    const cs = sum?.header?.competitions?.[0]?.competitors || [];
+    a = cs.find(c => c.homeAway === 'away')?.score; h = cs.find(c => c.homeAway === 'home')?.score;
+    det = sum?.header?.competitions?.[0]?.status?.type?.shortDetail || '';
+  }
+  if (a == null || h == null) return;
+  const cs = ev.competitions[0].competitors, A = cs.find(c => c.homeAway === 'away'), H = cs.find(c => c.homeAway === 'home');
+  const st = ev.status || ev.competitions[0].status;
+  if (String(A.score) === String(a) && String(H.score) === String(h) && (!det || st?.type?.shortDetail === det)) return;
+  A.score = String(a); H.score = String(h); if (det && st?.type) st.type.shortDetail = det;
+  renderList();
+}
 async function pollLive(){
   if (S.mode !== 'live' || !S.game || isF1()) return;
   const tok = S.token;
   try {
     const sum = await getJSON(gameURL(S.game));
     if (tok !== S.token) return;
-    S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail();
+    S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail(); syncScore(sum);
     const fresh = playsOf(sum).filter(p => !S.seen.has(p.id));
     fresh.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
     if (fresh.length) pump();
@@ -4636,8 +4659,8 @@ function liveChip(){
     if (lg) { a.href = '#' + lg.sport + '/' + lg.id; $('liveLeague').textContent = lg.league + ' · '; $('liveTitle').textContent = lg.title;
       a.setAttribute('aria-label', 'Live now: ' + lg.title + '. Watch it.'); }
     draw(); deskRundown();
-    // the page has only just opened on the desk: go straight to the live game rather than finish the first segment
-    if (lg && SHOW.on && SHOW.seg !== lg.sport && Date.now() - SHOW.t0 < 20000) deskStart(false);
+    // a game has just gone live: the desk cuts away from the segment on air and goes straight there
+    if (lg && SHOW.on && SHOW.seg !== lg.sport) SHOW.cut = true;
   });
   setInterval(draw, 1000);
   a.onclick = async e => {
