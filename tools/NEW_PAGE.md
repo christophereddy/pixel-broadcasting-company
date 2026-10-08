@@ -42,7 +42,7 @@ The body already uses `--f-body` at 20px, so plain text needs nothing. Every pag
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap">
 ```
 
-Press Start 2P is only for small numbers drawn on sports canvases (jersey numbers). Never use it in CSS.
+Press Start 2P is only for markings painted on the sports fields (end-zone names, yard numbers). Never use it in CSS. All other lettering on a canvas is PBC's one pixel font, `PBC_ADS.pixText()` (see `tools/LOOK_BOOK.md`).
 
 ### Colors
 
@@ -62,7 +62,7 @@ All in the `:root` block of `shared/pbc.css`, each with a comment saying what it
 | `--overlay`, `--overlay-85`, `--overlay-90` | captions over the broadcast picture |
 | `--paper`, `--paper-ink` | white lower-thirds and speech bubbles, and their text |
 | `--frame`, `--shadow` | the monitor bezel and the hard pixel shadows |
-| `--ok`, `--err`, `--err-soft` | form and load messages |
+| `--ok`, `--err` | form and load messages (one red for every error) |
 
 **Need a color that isn't there?** First look again: most "new" colors are one of these. If it really is new, add it to the `:root` block in `shared/pbc.css` with a comment saying what it's for, in the same pull request. Never write `#hex`, `rgb()` or a color word in a page's CSS, and never give a shared color a second name (`--ink:var(--text)`): that's how the Sports page drifted before.
 

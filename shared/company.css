@@ -4,12 +4,14 @@
 .co-dept span{color:var(--muted)}
 a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
 
-.co-card{background:var(--panel);border:2px solid var(--line);padding:16px 20px;min-width:0}
+.co-card{background:var(--panel);border:2px solid var(--line);padding:14px 16px;min-width:0}
 .co-card h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--gold);margin:0 0 10px}
 .co-card h3{font-family:var(--f-display);font-weight:700;font-size:22px;line-height:1.15;margin:18px 0 6px}
 .co-card h3:first-of-type{margin-top:6px}
 .co-card p{margin:0 0 10px}
 .co-card p:last-child{margin-bottom:0}
+/* a bold word inside text is set in the headline font (like the cast names on News), never a thickened body font */
+.co-card :is(p,li,dd,td)>:is(b,strong){font-family:var(--f-display);font-weight:500;font-size:19px}
 .co-card ul.co-list,.co-card ol.co-list{margin:0 0 10px;padding-left:22px;display:block}
 .co-card .co-list li{margin:0 0 6px}
 .co-card a{color:var(--text);text-decoration-color:var(--gold);text-underline-offset:3px}
@@ -80,7 +82,7 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 #formStatus.ok{color:var(--ok)}
 #formStatus.warn{color:var(--gold)}
 #formStatus.err{color:var(--err)}
-@media (max-width:640px){.co-form{grid-template-columns:minmax(0,1fr)}.co-card{padding:14px}}
+@media (max-width:640px){.co-form{grid-template-columns:minmax(0,1fr)}}
 .co-group+.co-group{margin-top:8px}
 .co-group>p{margin:4px 0 2px;font-family:var(--f-label);font-size:11px;letter-spacing:.08em;color:var(--muted)}
 

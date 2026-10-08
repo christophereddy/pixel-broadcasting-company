@@ -166,9 +166,8 @@ if (rep && list) {
   const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
   const mix = (a, b, k) => { const A = hex(a), B = hex(b); return "#" + A.map((x, i) => Math.round(x + (B[i] - x) * k).toString(16).padStart(2, "0")).join(""); };
   const R = (col, x, y, w, h) => { c.fillStyle = col; c.fillRect(x, y, w, h); };
-  // 3x5 pixel letters, the same font as the newsroom's signs
-  const F = { S:"011100010001110", A:"010101111101101", L:"100100100100111", E:"111100110100111", P:"110101110100100", B:"110101110101110", C:"011100100100011", " ":"000000000000000" };
-  const txt = (s, x, y, col) => { c.fillStyle = col; [...s].forEach((ch, i) => { const m = F[ch] || F[" "]; for (let k = 0; k < 15; k++) if (m[k] === "1") c.fillRect(x + i * 4 + k % 3, y + Math.floor(k / 3), 1, 1); }); };
+  // PBC's one pixel lettering (FONT3 in shared/ads.js)
+  const txt = (s, x, y, col) => PBC_ADS.pixText(c, s, x, y, false, col);
 
   // The same pixel person the newsroom cast is drawn with (index.html, person()), trimmed to what Dot needs.
   function person(look, x, y, s, st){

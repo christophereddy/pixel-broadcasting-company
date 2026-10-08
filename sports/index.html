@@ -79,31 +79,31 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .start .big{font-size:2cqw;animation:blink 1s steps(2) infinite}
 .start p{font-size:2.2cqw;color:var(--muted);margin:2.6cqw 0 0}
 .feed{background:var(--panel);border:2px solid var(--line);min-width:0}
-.feed h3,.side h3,.tline h3{font-family:var(--f-label);font-size:14px;margin:0;padding:12px 12px 4px;background:none;color:var(--gold);letter-spacing:.1em;font-weight:400;display:flex;justify-content:space-between;gap:8px}
+.feed h3,.side h3,.tline h3{font-family:var(--f-label);font-size:14px;margin:0;padding:14px 16px 4px;background:none;color:var(--gold);letter-spacing:.1em;font-weight:400;display:flex;justify-content:space-between;gap:8px}
 .feed h3 span,.tline h3 span{color:var(--muted)}
 .feed h3 #feedtitle{color:var(--gold)}
 .showres{font-family:var(--f-label);font-size:10px;padding:5px 8px;background:var(--panel-2);color:var(--gold);border:2px solid var(--gold);letter-spacing:.06em}
 .showres[aria-pressed="true"]{background:var(--gold);color:var(--navy)}
-#log{list-style:none;margin:0;padding:6px 12px;height:190px;overflow-y:auto;font-size:20px}
+#log{list-style:none;margin:0;padding:6px 16px;height:190px;overflow-y:auto;font-size:20px}
 #log li{display:grid;grid-template-columns:7.5em 3.2em minmax(0,1fr);gap:8px;padding:3px 0;border-bottom:1px dashed var(--rule);color:var(--feed-text)}
 #log li:first-child{color:var(--text)}
 #log li.score{color:var(--gold)}
 #log li.pitch{color:var(--muted)}
 #log .t{color:var(--muted);font-variant-numeric:tabular-nums}
-#log .tm{font-weight:bold}
+#log .tm{font-family:var(--f-display);font-weight:500;font-size:19px}
 #log .empty{display:block;color:var(--muted);border:0}
 .tline{background:var(--panel);border:2px solid var(--line);min-width:0}
-.tl-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:8px 12px 0}
+.tl-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:8px 16px 0}
 .tl-top .ctrl{font-size:8px}
-.tl-bar{position:relative;height:34px;margin:8px 12px 0;background:var(--track);border:2px solid var(--line);cursor:pointer;touch-action:manipulation}
+.tl-bar{position:relative;height:34px;margin:8px 16px 0;background:var(--track);border:2px solid var(--line);cursor:pointer;touch-action:manipulation}
 .tl-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--grass-50)}
 .tl-qs{position:absolute;inset:0;display:flex}
 .tl-q{border-right:2px solid var(--line);font-family:var(--f-label);font-size:10px;color:var(--muted);padding:3px 4px}
 .tl-q:last-child{border-right:0}
 .tl-mark{position:absolute;bottom:3px;width:10px;height:10px;margin-left:-5px;border:2px solid var(--white);pointer-events:none}
 .tl-head{position:absolute;top:-5px;bottom:-5px;left:0;width:4px;margin-left:-2px;background:var(--gold);box-shadow:0 0 0 2px var(--shadow);pointer-events:none}
-.tl-hover{font-size:18px;color:var(--muted);padding:4px 12px;min-height:1.5em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tl-scores{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 10px}
+.tl-hover{font-size:18px;color:var(--muted);padding:4px 16px;min-height:1.5em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tl-scores{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
 .tl-sc{font-size:17px;padding:3px 6px 3px 8px;background:var(--panel-2);border:2px solid var(--line);display:flex;gap:6px;align-items:center;font-variant-numeric:tabular-nums}
 .tl-sc i{width:10px;height:10px;border:2px solid var(--white);flex:none}
 .tl-go{font-family:var(--f-label);font-size:9px;padding:4px 5px;background:var(--navy);color:var(--text);border:2px solid var(--line);white-space:nowrap}
@@ -111,7 +111,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .side{display:flex;flex-direction:column;gap:12px}
 .panel{background:var(--panel);border:2px solid var(--line);min-width:0}
 .panel h3 span{color:var(--live)}
-.teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:10px 10px 4px}
+.teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:10px 16px 4px}
 .vs{font-family:var(--f-label);font-size:13px;color:var(--muted)}
 .tcard{display:grid;justify-items:center;gap:3px;padding:8px 4px;background:var(--panel-2);border:2px solid var(--line);min-width:0}
 .tcard:hover,.tcard[aria-pressed="true"]{border-color:var(--gold)}
@@ -121,7 +121,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .tcard .ts{font-family:var(--f-label);font-size:21px;color:var(--gold)}
 .gdate{font-family:var(--f-label);font-size:11px;color:var(--gold);text-align:center;padding:4px 10px 2px;line-height:1.6}
 .hint{font-size:16px;color:var(--muted);text-align:center;padding:2px 10px 8px}
-.detail{border-top:2px dashed var(--line);padding:8px 12px 12px;max-height:620px;overflow-y:auto}
+.detail{border-top:2px dashed var(--line);padding:8px 16px 12px;max-height:620px;overflow-y:auto}
 .dhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
 .dhead b{font-family:var(--f-label);font-weight:400;font-size:13px;color:var(--gold);line-height:1.5}
 .back{font-family:var(--f-label);font-size:10px;padding:6px 8px;background:var(--panel-2);border:2px solid var(--line)}
@@ -134,7 +134,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .pl:hover{background:var(--panel-2)}
 .pl .n{color:var(--gold);font-variant-numeric:tabular-nums}
 .pl .ps{color:var(--muted);text-align:right}
-.f1cam{display:flex;align-items:center;gap:8px;padding:6px 12px;font-size:15px;color:var(--gold);letter-spacing:.06em}
+.f1cam{display:flex;align-items:center;gap:8px;padding:6px 16px;font-size:15px;color:var(--gold);letter-spacing:.06em}
 .f1cam select{flex:1;min-width:0;font:inherit;font-size:17px;letter-spacing:0;background:var(--panel-2);color:var(--text);border:1px solid var(--rule);padding:3px 4px}
 .pl.f1r{grid-template-columns:2.4em minmax(0,1fr) auto}
 .pl.f1r .dn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -150,28 +150,28 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .stbl th:first-child,.stbl td:first-child{text-align:left;padding-left:0}
 .muted{color:var(--muted);font-size:17px}
 .side section{padding:4px 0 10px}
-.side h4{font-family:var(--f-label);font-weight:400;font-size:12px;color:var(--muted);margin:12px 12px 6px}
+.side h4{font-family:var(--f-label);font-weight:400;font-size:12px;color:var(--muted);margin:12px 16px 6px}
 .game{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;width:100%;text-align:left;padding:7px 12px;background:none;border:0;border-left:4px solid transparent}
 .game:hover{background:var(--panel-2)}
 .game[aria-current="true"]{background:var(--panel-2);border-left-color:var(--gold)}
 .game .m{font-size:21px}
 .game .s{font-size:17px;color:var(--muted);text-align:right}
 .game .s.live{color:var(--live)}
-.side .none{padding:4px 12px;color:var(--muted);font-size:18px}
+.side .none{padding:4px 16px;color:var(--muted);font-size:18px}
 /* team boxes: every team's logo; each opens that team's page */
-.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px;padding:0 12px}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px;padding:0 16px}
 .tbox{position:relative;display:grid;justify-items:center;gap:3px;padding:7px 2px 5px;background:var(--panel-2);border:2px solid var(--line);min-width:0}
 .tbox:hover{border-color:var(--gold)}
 .tbox canvas{width:48px;height:48px;image-rendering:pixelated;image-rendering:crisp-edges}
 .tbox span{font-family:var(--f-label);font-size:10px}
 .tbox .rk{position:absolute;top:2px;left:3px;font-family:var(--f-label);font-size:8px;color:var(--gold)}
 .tbox small{font-size:14px;line-height:1;color:var(--muted)}
-.confbar{display:flex;align-items:center;gap:8px;margin:10px 12px 0}
+.confbar{display:flex;align-items:center;gap:8px;margin:10px 16px 0}
 .confbar label{font-family:var(--f-label);font-size:10px;color:var(--muted)}
 .confbar select{flex:1;min-width:0;font-family:var(--f-label);font-size:11px;padding:6px 4px;background:var(--panel-2);color:var(--text);border:2px solid var(--line);border-radius:0}
 .tbox.live{border-color:var(--live)}
 .tbox.live::after{content:'LIVE';position:absolute;top:2px;right:2px;font-family:var(--f-label);font-size:7px;padding:1px 2px;background:var(--live);color:var(--white)}
-.tpage{padding:0 12px 6px}
+.tpage{padding:0 16px 6px}
 .thead{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px;align-items:center;margin:4px 0}
 .thead canvas{width:64px;height:64px;image-rendering:pixelated;image-rendering:crisp-edges}
 .thead .pn{font-family:var(--f-label);font-size:13px;line-height:1.5;color:var(--gold)}
@@ -181,7 +181,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .news a{display:block;padding:4px 0;border-bottom:1px dashed var(--rule);color:var(--text);text-decoration:none;font-size:18px;line-height:1.15}
 .news a:hover{color:var(--gold)}
 .news small{display:block;color:var(--muted);font-size:15px}
-.err{font-size:18px;color:var(--err-soft);padding:6px 12px}
+.err{font-size:18px;color:var(--err);padding:6px 16px}
 /* where the data comes from, like the newsroom's footer */
 #foot{grid-column:1/-1;color:var(--muted);font-size:17px;line-height:1.35}
 #foot a{color:var(--text);text-decoration-color:var(--gold)}
@@ -975,8 +975,8 @@ function buildField(){
 }
 
 /* ================= sprites ================= */
-const DIG = ['111101101101111','010110010010111','111001111100111','111001111001111','101101111001001','111100111001111','111100111101111','111001001001001','111101111101111','111101111001111'];
-function digit(g, d, x, y, col){ g.fillStyle = col; const m = DIG[d]; for (let i = 0; i < 15; i++) if (m[i] === '1') g.fillRect(x + i % 3, y + (i / 3 | 0), 1, 1); }
+// jersey and car numbers in PBC's one 3x5 font (FONT3 in ../shared/ads.js)
+function digit(g, d, x, y, col){ pixText(g, String(d), x, y, false, col); }
 function drawPlayer(g, a){
   const sx = sxOf(a.x), sy = syOf(a.y) - (a.hop || 0);
   if (sx < -12 || sx > W + 12) return;

@@ -21,7 +21,7 @@
   --navy:#1d2766;    /* text on gold, the current rundown row */
   --picked:#3a1420;  /* the rundown row a viewer picked (NEXT) */
   --white:#fff; --black:#000;
-  --ok:#7ee2a8; --err:#ff8a8c; --err-soft:#ff9aa5; /* form and load messages */
+  --ok:#7ee2a8; --err:#ff8a8c; /* form and load messages */
 
   /* The broadcast monitor and graphics drawn over it */
   --frame:#2c3364;   /* monitor bezel */

@@ -29,6 +29,8 @@ PBC is square and hard-edged, like a game screen.
 - **No rounded corners** anywhere (`border-radius` is never used; form fields set it to 0).
 - **No soft shadows or CSS gradients.** Depth comes from hard pixel shadows: a solid offset with no blur, like `box-shadow:3px 3px 0 var(--navy)` on the PBC mark and `.4cqw .4cqw 0 var(--navy)` on big gold buttons.
 - **Cards and buttons:** `2px solid var(--line)` on `var(--panel)`. Hover and the selected state turn the border gold.
+- **Inside every card: 14px top, 16px sides** (`.pbc-card`, `.co-card`, and the Sports panels, whose titles and rows are inset 16px). One padding on every page and every screen size.
+- **A bold word inside text** is set in Pixelify Sans 500 at 19px, the way News shows the cast names (`.co-card` text, the Sports play feed). The body font is never thickened.
 - **The broadcast monitor:** a `4px` bezel in `var(--frame)` plus a `4px` outer ring in `var(--shadow)` (`.pbc-screen`). Pictures inside the page (Dot's desk, the ad previews) use the same `4px` bezel or `2px` for small ones.
 - **Windows over the sports broadcast** (booth, scoreboard): `3px` cream border `var(--win-edge)`, a `3px` dark ring outside and a `2px` blue line inside (`.win`).
 - **Focus rings:** gold outline, 2px or 3px, 2px away from the element.
@@ -46,7 +48,7 @@ PBC is square and hard-edged, like a game screen.
   - segment tag under it and the clock top right, on `var(--overlay)` captions
   - lower third: a name plate (gold name, navy role), then a red category chip and the headline on `var(--paper)` in Pixelify 700, then the summary on `var(--overlay-90)`
   - ticker: `4.6cqw` tall along the bottom, navy with a gold top rule, a gold HEADLINES label and gold diamonds between items
-  - LIVE NOW chip (`shared/live.js`) under the clock
+  - LIVE NOW chip (`shared/live.js`) under the clock. On Sports it may shrink to 7px text on a phone so the whole score fits; on News it stops at 10px (Chris's call)
   - Sports keeps the same vocabulary inside its windows: Silkscreen labels, gold scores, `1.6cqw` insets
 - **Full screen** is the same screen letterboxed in black with FULL SCREEN and SOUND floating top right; they fade after 3 seconds without movement. It comes from `PBC.fullScreen()`.
 - **First visit:** a TUNE IN (News) or PRESS START (Sports) card over a dimmed picture, gold button with a navy pixel shadow, and a "Watch without sound" link.
@@ -55,7 +57,7 @@ PBC is square and hard-edged, like a game screen.
 
 1. **Rectangles on whole pixels only.** Draw with `fillRect` at rounded coordinates (every file has a small `R(color, x, y, w, h)` helper). No lines, arcs or anti-aliased shapes; circles are built from rows (`disc()` in `index.html`).
 2. **No smoothing:** `ctx.imageSmoothingEnabled = false` and `image-rendering:pixelated; image-rendering:crisp-edges` on the canvas element.
-3. **Text on a canvas is pixel lettering, not canvas fonts.** Use `PBC_ADS.pixText()` from `shared/ads.js` (FONT5: 5×7 capitals for names and headings, FONT3: 3×5 for tags and small print) for anything new. Older code has its own copies (`txt()` with a 3×5 font in `index.html`, `digit()` for jersey numbers in Sports); match them when editing that code. The only canvas font is Press Start 2P, for small numbers on the sports fields.
+3. **Text on a canvas is PBC's one pixel lettering, never canvas fonts.** Everything is drawn with `PBC_ADS.pixText()` from `shared/ads.js`: FONT3 (3×5) for clocks, labels, tags and jersey numbers, FONT5 (5×7) for brand names and big headings, scaled up by whole pixels when it needs to be bigger. News (`txt()`), Sports (`digit()`), the Sports Desk and the Marketing Division all call it. A missing character is added to FONT3/FONT5 there, never drawn from a font of a page's own; the style check fails on a second font table. The only canvas font is Press Start 2P, for markings painted on the sports fields (end-zone names, yard and court numbers).
 4. **Lettering gets a 1px dark drop shadow** (`#05060d`, drawn 1px right and down first) whenever it sits on a busy picture.
 5. **Shading by mixing, not new colors:** a side or shadow is the base color mixed 25% toward black (`mix(color, "#000000", .25)`); a highlight is 15–25% toward white. Light from a lamp is a pale yellow (`#fff2c0`) shape at 4–6% opacity.
 6. **Random but fixed.** Crowds, skylines, stars and freckles use a seeded random generator (`rng(seed)`, `mulberry(seed)`) so the same scene draws the same way every frame and every visit.
@@ -104,7 +106,7 @@ A head-and-shoulders bust **36 pixels wide**, two to a **76 × 38** booth (seats
 Sprites **10 × 18 pixels**, with a 9×2 shadow (`rgba(0,0,0,.35)`) under anyone standing.
 - Football: helmet with a center stripe. Baseball: cap and a bat. Basketball: no helmet; skin and hair come from the player's headshot when it can be read.
 - Colors come from the team's data through `kit()` (football), `kitMLB()` and `kitBB()`: home teams wear their color, away teams wear white `#f2f0e8` with their color as trim; the number color is picked for contrast.
-- Jersey numbers are drawn with the 3×5 `digit()` font. Legs alternate between two frames to walk.
+- Jersey numbers are drawn in the shared 3×5 lettering (`digit()` calls `pixText()`). Legs alternate between two frames to walk.
 - Benches and dugouts: players walk on and off from their own bench; a sitting player is 3px shorter with no shadow.
 
 ### Animals
@@ -122,7 +124,7 @@ Every studio is built from the same parts, so a new desk or channel looks like i
 
 | Part | Color |
 | --- | --- |
-| back wall | `#151b3d`, with vertical panel lines `#1b2250` (every 24px in the newsroom, 30px on the Sports Desk) |
+| back wall | `#151b3d`, with 1px vertical panel lines `#1b2250` every 1/16 of the picture's width (24px of the newsroom's 384, 30px of the Sports Desk's 480: the same on screen) |
 | ceiling strip | `#07091a`, with a row of `#1c2146` light blocks |
 | studio lights | `#2a2f55` cans with a `#fff2c0` lens; light cones in `#fff2c0` at 4–6% opacity |
 | floor | `#0c1029` with `#10153a` lines every 8px |

@@ -9,6 +9,7 @@
 //   - a page's CSS restyles a shared part (a .pbc-* class, the rundown, the LIVE NOW chip's insides)
 //   - a page is missing the shared head (the one Google Fonts link, shared/pbc.css, shared/pbc.js) or the shared
 //     masthead and control row (.pbc-page, .pbc-mast, .pbc-mark, .pbc-chan, .pbc-onair, .pbc-ctl, .pbc-btns)
+//   - a file other than shared/ads.js carries its own pixel font (tables of 3x5 or 5x7 glyph bitmaps); PBC has one
 //   - a rundown isn't the shared one (<div class="pbc-card"><h2>RUNDOWN</h2>... <ol class="pbc-rundown">)
 // Pictures are exempt: canvas drawing (fillStyle, team colors) and SVG fill="" attributes are pixel art, not page style.
 // Exit code 1 lists every problem with its file and line.
@@ -16,7 +17,7 @@ const fs = require('node:fs'), path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SOURCE = 'shared/pbc.css';
-// The one Google Fonts link every page loads. Press Start 2P is only for small numbers drawn on sports canvases.
+// The one Google Fonts link every page loads. Press Start 2P is only for markings painted on the sports fields.
 const FONTS_LINK = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap">';
 const SKELETON = ['pbc-page', 'pbc-top', 'pbc-mast', 'pbc-brand', 'pbc-mark', 'pbc-side', 'pbc-chan', 'pbc-onair', 'pbc-ctl', 'pbc-btns'];
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'data', 'tools', '.github']);
@@ -79,7 +80,15 @@ function checkCss(file, text, css, base, { isSource = false, selectors = true } 
   }
 }
 
+function checkLettering(file, text) {
+  if (file !== 'shared/ads.js') {
+    const glyphs = text.match(/["'`](?:[01]{15}|[01]{35})["'`]/g) || [];
+    if (glyphs.length >= 5) say(file, lineAt(text, text.search(/["'`](?:[01]{15}|[01]{35})["'`]/)), `has its own pixel font. Draw lettering with PBC_ADS.pixText() from shared/ads.js and add any missing character there.`);
+  }
+}
+
 function checkHtml(file, text) {
+  checkLettering(file, text);
   for (const m of text.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)) checkCss(file, text, m[1], m.index + m[0].indexOf('>') + 1);
   for (const m of text.matchAll(/\sstyle="([^"]*)"/g)) checkCss(file, text, m[1], m.index, { selectors: false });
   if (/http-equiv="refresh"/i.test(text)) return; // a redirect, never seen
@@ -100,6 +109,7 @@ function checkHtml(file, text) {
 
 // CSS written inside JS strings ("color:#fff;..."), and inline styles set from JS (el.style.color = "#fff")
 function checkJs(file, text) {
+  checkLettering(file, text);
   const code = text.replace(/\/\*[\s\S]*?\*\//g, m => m.replace(/[^\n]/g, ' ')).replace(/(^|[^:\\])\/\/[^\n]*/g, (m, a) => a + ' '.repeat(m.length - a.length));
   for (const m of code.matchAll(/(["'`])((?:\\.|(?!\1)[^\\\n])*)\1/g)) {
     const s = m[2];
