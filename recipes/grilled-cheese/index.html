@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Grilled Cheese","description":"Golden, buttery bread around melted cheddar.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/grilled-cheese/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Main","keywords":"Lunch, Comfort food, kid, vegetarian","recipeYield":"2 servings","prepTime":"PT5M","cookTime":"PT8M","totalTime":"PT15M","recipeIngredient":["4 slices sandwich bread","2 tbsp butter, softened","4 slices cheddar, sliced"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Spread butter on one side of every slice of bread."},{"@type":"HowToStep","position":2,"text":"Lay 2 slices butter side down and put 2 slices of cheddar on each. Top with the other bread, butter side up."},{"@type":"HowToStep","position":3,"text":"Cook in a pan for 4 minutes, until the bottom is golden."},{"@type":"HowToStep","position":4,"text":"Flip with a spatula and cook the other side for 4 minutes, until the cheese melts."},{"@type":"HowToStep","position":5,"text":"Cut each sandwich in half."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>15 min</b>total time</div>
         <div><b>5 min</b>prep</div>
         <div><b>8 min</b>cooking</div>
-        <div><b>2</b>servings</div>
+        <div id="serves-tile"><b>2</b>servings</div>
       </div>
       <p class="co-hint">Good for: lunch, comfort food.</p>
       <p><b>Contains:</b> Milk, Wheat.</p>
@@ -57,10 +58,18 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="2" data-stove="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="2" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 2</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>4 slices</b> sandwich bread</li>
-        <li><b>2 tbsp</b> butter, softened</li>
-        <li><b>4 slices</b> cheddar, sliced</li>
+        <li data-q="4" data-u="slice"><b>4 slices</b> sandwich bread</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> butter, softened</li>
+        <li data-q="4" data-u="slice"><b>4 slices</b> cheddar, sliced</li>
       </ul>
     </section>
 

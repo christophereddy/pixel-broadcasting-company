@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Tuna Mayo Onigiri","description":"Rice balls with a tuna mayo filling, wrapped in nori.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/onigiri/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"Japan","recipeCategory":"Main","keywords":"Lunchbox, Picnic, kid","recipeYield":"6 servings","prepTime":"PT15M","cookTime":"PT35M","totalTime":"PT50M","recipeIngredient":["2 cups short-grain rice","2¼ cups water","1 can canned tuna, drained","2 tbsp mayonnaise","1 tsp salt","3 sheets nori sheets (cut in half)"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Rinse the rice until the water runs clear."},{"@type":"HowToStep","position":2,"text":"Cook the rice in the water, covered, for 15 minutes."},{"@type":"HowToStep","position":3,"text":"Rest it, still covered, for 10 minutes."},{"@type":"HowToStep","position":4,"text":"Mix the tuna with the mayonnaise."},{"@type":"HowToStep","position":5,"text":"Wet your hands, rub on a little salt and press a handful of rice flat."},{"@type":"HowToStep","position":6,"text":"Put a spoon of tuna in the middle, close the rice around it and press into a triangle."},{"@type":"HowToStep","position":7,"text":"Wrap the bottom in a strip of nori."}]}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>50 min</b>total time</div>
         <div><b>15 min</b>prep</div>
         <div><b>35 min</b>cooking</div>
-        <div><b>6</b>servings</div>
+        <div id="serves-tile"><b>6</b>servings</div>
       </div>
       <p class="co-hint">Good for: lunchbox, picnic.</p>
       <p><b>Contains:</b> Egg, Fish.</p>
@@ -57,13 +58,21 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="6" data-stove="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="6" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 6</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>2 cups</b> short-grain rice</li>
-        <li><b>2¼ cups</b> water</li>
-        <li><b>1 can</b> canned tuna, drained</li>
-        <li><b>2 tbsp</b> mayonnaise</li>
-        <li><b>1 tsp</b> salt</li>
-        <li><b>3 sheets</b> nori sheets (cut in half)</li>
+        <li data-q="2" data-u="cup"><b>2 cups</b> short-grain rice</li>
+        <li data-q="2.25" data-u="cup"><b>2¼ cups</b> water</li>
+        <li data-q="1" data-u="can"><b>1 can</b> canned tuna, drained</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> mayonnaise</li>
+        <li data-q="1" data-u="tsp"><b>1 tsp</b> salt</li>
+        <li data-q="3" data-u="sheet"><b>3 sheets</b> nori sheets (cut in half)</li>
       </ul>
     </section>
 

@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Croque Monsieur","description":"A toasted ham and Gruyère sandwich under creamy béchamel.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/croque-monsieur/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"France","recipeCategory":"Main","keywords":"Lunch, Brunch","recipeYield":"4 servings","prepTime":"PT15M","cookTime":"PT20M","totalTime":"PT35M","recipeIngredient":["2 tbsp butter","2 tbsp all-purpose flour","1 cup milk","1 pinch nutmeg","¼ tsp salt","8 slices sandwich bread","2 tbsp dijon mustard","8 slices sliced ham, sliced","1½ cups gruyère, grated"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Preheat the oven to 425°F."},{"@type":"HowToStep","position":2,"text":"Melt the butter, stir in the flour, then whisk in the milk for 4 minutes, until thick."},{"@type":"HowToStep","position":3,"text":"Stir in the nutmeg, salt and 1/2 cup Gruyère."},{"@type":"HowToStep","position":4,"text":"Spread mustard on 4 slices of bread, add 2 slices of ham each, then close the sandwiches."},{"@type":"HowToStep","position":5,"text":"Spoon the sauce over the tops and scatter on the rest of the Gruyère."},{"@type":"HowToStep","position":6,"text":"Bake for 12 minutes, until bubbling and browned."}]}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>35 min</b>total time</div>
         <div><b>15 min</b>prep</div>
         <div><b>20 min</b>cooking</div>
-        <div><b>4</b>servings</div>
+        <div id="serves-tile"><b>4</b>servings</div>
       </div>
       <p class="co-hint">Good for: lunch, brunch.</p>
       <p><b>Contains:</b> Milk, Wheat.</p>
@@ -57,16 +58,24 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="4" data-oven="1" data-stove="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="4" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 4</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>2 tbsp</b> butter</li>
-        <li><b>2 tbsp</b> all-purpose flour</li>
-        <li><b>1 cup</b> milk</li>
-        <li><b>1 pinch</b> nutmeg</li>
-        <li><b>¼ tsp</b> salt</li>
-        <li><b>8 slices</b> sandwich bread</li>
-        <li><b>2 tbsp</b> dijon mustard</li>
-        <li><b>8 slices</b> sliced ham, sliced</li>
-        <li><b>1½ cups</b> gruyère, grated</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> butter</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> all-purpose flour</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> milk</li>
+        <li data-q="1" data-u="pinch"><b>1 pinch</b> nutmeg</li>
+        <li data-q="0.25" data-u="tsp"><b>¼ tsp</b> salt</li>
+        <li data-q="8" data-u="slice"><b>8 slices</b> sandwich bread</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> dijon mustard</li>
+        <li data-q="8" data-u="slice"><b>8 slices</b> sliced ham, sliced</li>
+        <li data-q="1.5" data-u="cup"><b>1½ cups</b> gruyère, grated</li>
       </ul>
     </section>
 
@@ -75,7 +84,7 @@
       <ol class="co-method">
         <li>Preheat the oven to 425°F.<div class="co-badges"><span class="co-badge">OVEN 425°F / 218°C</span></div></li>
         <li>Melt the butter, stir in the flour, then whisk in the milk for 4 minutes, until thick.<span class="co-done">Done when: thick sauce.</span><div class="co-badges"><span class="co-badge">TIMER 4 MIN</span><span class="co-badge">MEDIUM HEAT</span></div></li>
-        <li>Stir in the nutmeg, salt and 1/2 cup Gruyère.</li>
+        <li>Stir in the nutmeg, salt and <span class="co-amt" data-q="0.5" data-u="cup">1/2 cup</span> Gruyère.</li>
         <li>Spread mustard on 4 slices of bread, add 2 slices of ham each, then close the sandwiches.</li>
         <li>Spoon the sauce over the tops and scatter on the rest of the Gruyère.</li>
         <li>Bake for 12 minutes, until bubbling and browned.<span class="co-done">Done when: bubbling, browned.</span><div class="co-badges"><span class="co-badge">TIMER 12 MIN</span><span class="co-badge">OVEN 425°F / 218°C</span></div></li>

@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Soft Scrambled Eggs on Toast","description":"Slow, creamy scrambled eggs on buttered toast.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/scrambled-eggs-on-toast/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Breakfast","keywords":"Breakfast, quick, vegetarian","recipeYield":"2 servings","prepTime":"PT2M","cookTime":"PT8M","totalTime":"PT10M","recipeIngredient":["4 eggs, beaten","2 tbsp butter","2 slices sandwich bread, toasted","1 tbsp chives, chopped","Salt, to taste","Black pepper, to taste"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Beat the eggs with a pinch of salt."},{"@type":"HowToStep","position":2,"text":"Melt 1 tbsp butter in a pan over low heat and pour in the eggs."},{"@type":"HowToStep","position":3,"text":"Stir slowly for 5 minutes, until softly set."},{"@type":"HowToStep","position":4,"text":"Toast the bread and butter it with the rest of the butter."},{"@type":"HowToStep","position":5,"text":"Spoon the eggs onto the toast and top with chives and pepper."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>10 min</b>total time</div>
         <div><b>2 min</b>prep</div>
         <div><b>8 min</b>cooking</div>
-        <div><b>2</b>servings</div>
+        <div id="serves-tile"><b>2</b>servings</div>
       </div>
       <p class="co-hint">Good for: breakfast.</p>
       <p><b>Contains:</b> Milk, Egg, Wheat.</p>
@@ -57,11 +58,19 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="2" data-stove="1" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="2" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 2</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>4</b> eggs, beaten</li>
-        <li><b>2 tbsp</b> butter</li>
-        <li><b>2 slices</b> sandwich bread, toasted</li>
-        <li><b>1 tbsp</b> chives, chopped</li>
+        <li data-q="4" data-u="piece" data-one="egg, beaten" data-many="eggs, beaten"><b>4</b> eggs, beaten</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> butter</li>
+        <li data-q="2" data-u="slice"><b>2 slices</b> sandwich bread, toasted</li>
+        <li data-q="1" data-u="tbsp"><b>1 tbsp</b> chives, chopped</li>
         <li>Salt, to taste</li>
         <li>Black pepper, to taste</li>
       </ul>
@@ -71,7 +80,7 @@
       <h2>METHOD</h2>
       <ol class="co-method">
         <li>Beat the eggs with a pinch of salt.</li>
-        <li>Melt 1 tbsp butter in a pan over low heat and pour in the eggs.<div class="co-badges"><span class="co-badge">LOW HEAT</span></div></li>
+        <li>Melt <span class="co-amt" data-q="1" data-u="tbsp">1 tbsp</span> butter in a pan over low heat and pour in the eggs.<div class="co-badges"><span class="co-badge">LOW HEAT</span></div></li>
         <li>Stir slowly for 5 minutes, until softly set.<span class="co-done">Done when: softly set, no runny egg.</span><div class="co-badges"><span class="co-badge">TIMER 5 MIN</span><span class="co-badge">LOW HEAT</span></div></li>
         <li>Toast the bread and butter it with the rest of the butter.</li>
         <li>Spoon the eggs onto the toast and top with chives and pepper.</li>

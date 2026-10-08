@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Monster Green Smoothie","description":"A spooky-green spinach, banana and pineapple smoothie.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/monster-green-smoothie/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Drink","keywords":"Party, Breakfast, Snack, kid, quick, vegetarian","recipeYield":"2 servings","prepTime":"PT5M","cookTime":"PT0M","totalTime":"PT5M","recipeIngredient":["1 cup spinach","1 banana, frozen","1 cup pineapple, frozen","1 cup milk, cold","½ cup plain yogurt, cold"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Put the spinach, banana, pineapple, milk and yogurt in the blender."},{"@type":"HowToStep","position":2,"text":"Blend until smooth and bright green."},{"@type":"HowToStep","position":3,"text":"Pour into glasses."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>5 min</b>total time</div>
         <div><b>5 min</b>prep</div>
         <div><b>0 min</b>cooking</div>
-        <div><b>2</b>servings</div>
+        <div id="serves-tile"><b>2</b>servings</div>
       </div>
       <p class="co-hint">Good for: party, breakfast, snack.</p>
       <p><b>Contains:</b> Milk.</p>
@@ -57,12 +58,20 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="2" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="2" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 2</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>1 cup</b> spinach</li>
-        <li><b>1</b> banana, frozen</li>
-        <li><b>1 cup</b> pineapple, frozen</li>
-        <li><b>1 cup</b> milk, cold</li>
-        <li><b>½ cup</b> plain yogurt, cold</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> spinach</li>
+        <li data-q="1" data-u="piece" data-one="banana, frozen" data-many="bananas, frozen" data-half><b>1</b> banana, frozen</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> pineapple, frozen</li>
+        <li data-q="1" data-u="cup"><b>1 cup</b> milk, cold</li>
+        <li data-q="0.5" data-u="cup"><b>½ cup</b> plain yogurt, cold</li>
       </ul>
     </section>
 

@@ -14,6 +14,7 @@
 <script src="../../shared/business.js"></script>
 <script src="../../shared/pbc.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Recipe","name":"Ants on a Log","description":"Celery, peanut butter and raisin 'ants'.","url":"https://christophereddy.github.io/pixel-broadcasting-company/recipes/ants-on-a-log/","author":{"@type":"Organization","name":"Pixel Broadcasting Company","url":"https://christophereddy.github.io/pixel-broadcasting-company/"},"recipeCuisine":"American","recipeCategory":"Snack","keywords":"Lunchbox, Snack, kid, quick, vegetarian","recipeYield":"2 servings","prepTime":"PT5M","cookTime":"PT0M","totalTime":"PT5M","recipeIngredient":["3 stalks celery","3 tbsp peanut butter","2 tbsp raisins"],"recipeInstructions":[{"@type":"HowToStep","position":1,"text":"Cut each celery stalk into 3 pieces."},{"@type":"HowToStep","position":2,"text":"Fill the groove of each piece with peanut butter."},{"@type":"HowToStep","position":3,"text":"Line raisins along the top."}],"suitableForDiet":"https://schema.org/VegetarianDiet"}</script>
+<script src="../servings.js" defer></script>
 </head>
 <body>
 <!-- Built by tools/build_recipes.cjs from data/cooking/. Edit the data or the builder, not this file. -->
@@ -49,7 +50,7 @@
         <div><b>5 min</b>total time</div>
         <div><b>5 min</b>prep</div>
         <div><b>0 min</b>cooking</div>
-        <div><b>2</b>servings</div>
+        <div id="serves-tile"><b>2</b>servings</div>
       </div>
       <p class="co-hint">Good for: lunchbox, snack.</p>
       <p><b>Contains:</b> Peanuts.</p>
@@ -57,10 +58,18 @@
 
     <section class="co-card" id="ingredients">
       <h2>INGREDIENTS</h2>
+      <div class="co-servings" id="servings" data-serves="2" hidden>
+        <label for="serves-n">SERVINGS</label>
+        <button type="button" data-d="-1" aria-label="Fewer servings">−</button>
+        <input type="number" id="serves-n" min="1" max="24" step="1" value="2" inputmode="numeric">
+        <button type="button" data-d="1" aria-label="More servings">+</button>
+        <button type="button" id="serves-reset" hidden>BACK TO 2</button>
+      </div>
+      <p class="co-hint" id="serves-note" aria-live="polite" hidden></p>
       <ul class="co-ingredients">
-        <li><b>3 stalks</b> celery</li>
-        <li><b>3 tbsp</b> peanut butter</li>
-        <li><b>2 tbsp</b> raisins</li>
+        <li data-q="3" data-u="stalk"><b>3 stalks</b> celery</li>
+        <li data-q="3" data-u="tbsp"><b>3 tbsp</b> peanut butter</li>
+        <li data-q="2" data-u="tbsp"><b>2 tbsp</b> raisins</li>
       </ul>
     </section>
 

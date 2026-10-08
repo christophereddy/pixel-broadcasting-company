@@ -136,6 +136,18 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 .co-tags{display:flex;flex-wrap:wrap;gap:4px}
 .co-tag.kid,.co-tag.quick,.co-tag.veg{background:var(--navy);color:var(--gold)}
 .co-tag.level{background:var(--line);color:var(--text)}
+.co-servings{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 10px}
+.co-servings[hidden]{display:none}
+.co-servings label{font-family:var(--f-label);font-weight:400;font-size:12px;letter-spacing:.06em;color:var(--gold);margin-right:4px}
+.co-servings button{font-family:var(--f-label);font-weight:400;font-size:13px;height:36px;min-width:36px;padding:0 10px;background:var(--room);color:var(--text);border:2px solid var(--line);border-radius:0;cursor:pointer}
+@media (hover:hover){.co-servings button:hover:not(:disabled){border-color:var(--gold)}}
+.co-servings button:disabled{color:var(--muted);cursor:default}
+.co-servings button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.co-servings button[hidden]{display:none}
+.co-servings input{box-sizing:border-box;width:64px;height:36px;font-family:var(--f-display);font-weight:700;font-size:22px;text-align:center;background:var(--room);color:var(--gold);border:2px solid var(--line);padding:0 4px;border-radius:0;appearance:textfield;-moz-appearance:textfield}
+.co-servings input::-webkit-inner-spin-button,.co-servings input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.co-servings input:focus-visible{outline:none;border-color:var(--gold)}
+.co-servings+.co-hint{margin:0 0 10px}
 .co-ingredients{list-style:none;margin:0;padding:0}
 .co-ingredients li{padding:5px 0;border-bottom:1px dashed var(--rule)}
 .co-ingredients li:last-child{border-bottom:0}
