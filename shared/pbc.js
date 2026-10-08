@@ -69,7 +69,7 @@ window.PBC = (function(){
   try { root = new URL("..", document.currentScript.src).href; } catch (e) {}
 
   const LINKS = [
-    ["about/", "About"], ["advertise/", "Advertise"], ["contact/", "Contact"], ["sources/", "Sources & Credits"],
+    ["recipes/", "Recipes"], ["about/", "About"], ["advertise/", "Advertise"], ["contact/", "Contact"], ["sources/", "Sources & Credits"],
     ["corrections/", "Corrections"], ["accessibility/", "Accessibility"], ["ad-policy/", "Ad Policy"],
     ["privacy/", "Privacy"], ["terms/", "Terms"]
   ];

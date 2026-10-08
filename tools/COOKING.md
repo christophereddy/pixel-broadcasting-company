@@ -8,8 +8,9 @@ The COOKING channel cooks AI-written recipes in a pixel kitchen, and the recipe 
 | `data/cooking/recipes/<slug>.json` | One recipe per file |
 | `data/cooking/shows.json` | The shows: which recipes each one cooks, for which occasion, in which rundown section, and who cooks it |
 | `tools/check_recipes.cjs` | Checks all of the above. Runs on every pull request. |
+| `tools/build_recipes.cjs` | Builds the recipe site from all of the above: `recipes/` (the search page, `index.json` and one page per recipe), `sitemap.xml` and `robots.txt` |
 
-Run `node tools/check_recipes.cjs` after any change to `data/cooking/`.
+Run `node tools/check_recipes.cjs` after any change to `data/cooking/`, then `node tools/build_recipes.cjs` to rebuild the site. GitHub runs `node tools/build_recipes.cjs --check` and fails if the site is out of date. Never edit the generated pages by hand.
 
 ## Why so strict
 
