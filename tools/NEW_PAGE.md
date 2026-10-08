@@ -19,10 +19,11 @@ Every PBC page looks like one company: the same fonts, the same colors, the same
 
 | File | What's in it | Who uses it |
 | --- | --- | --- |
-| `shared/pbc.css` | **All fonts and colors** (the `:root` block), the page grid, masthead, NEWS \| SPORTS switch, ON AIR, control row, FULL SCREEN and SOUND buttons, the broadcast frame, full-screen mode, cards (`.pbc-card`), the rundown (`.pbc-rundown`), the LIVE NOW chip, the company footer | every page |
+| `shared/pbc.css` | **All fonts and colors** (the `:root` block), the page grid, masthead, NEWS \| SPORTS switch, ON AIR, control row, FULL SCREEN and SOUND buttons, the broadcast frame, full-screen mode, cards (`.pbc-card`), the rundown (`.pbc-rundown`), the on-air graphics (`.pbc-bug`, `.pbc-seg`, `.pbc-third`), the LIVE NOW chip, the company footer | every page |
 | `shared/pbc.js` | SOUND, FULL SCREEN, voices, the company footer, business settings | every page |
 | `shared/company.css` | Text cards, directory, steps, stats, menu, forms, tags (`co-*` classes) | company pages |
 | `shared/live.js`, `shared/music.js`, `shared/ads.js` | LIVE NOW, the theme music and TUNE IN, the ad copy | channels |
+| `shared/people.js` | `PBC_PEOPLE.person()` and `anim()`: the newsroom's way of drawing people | News, the Sports Desk |
 
 ### Fonts
 
