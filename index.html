@@ -6,7 +6,7 @@
 <title>Pixel Broadcasting Company</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Silkscreen&family=VT323&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap">
 <link rel="stylesheet" href="shared/pbc.css">
 <script src="shared/pbc.js"></script>
 <script src="shared/ads.js"></script>
@@ -32,35 +32,28 @@
 .adlink[hidden]{display:none}
 .bug{position:absolute;left:2.4cqw;top:2.4cqw;display:flex;align-items:stretch;font-family:var(--f-label);font-size:1.9cqw;line-height:1}
 .bug b{background:var(--gold);color:var(--navy);padding:.45em .5em;font-weight:400}
-.bug .live{background:var(--live);color:#fff;padding:.45em .5em}
-.seg{position:absolute;left:2.4cqw;top:6.4cqw;font-family:var(--f-label);font-size:1.5cqw;color:#fff;background:#0b0e24cc;padding:.35em .55em;letter-spacing:.06em}
-.clock{position:absolute;right:2.4cqw;top:2.4cqw;font-family:var(--f-label);font-size:1.7cqw;background:#0b0e24d9;color:#fff;padding:.5em .6em;font-variant-numeric:tabular-nums}
+.bug .live{background:var(--live);color:var(--white);padding:.45em .5em}
+.seg{position:absolute;left:2.4cqw;top:6.4cqw;font-family:var(--f-label);font-size:1.5cqw;color:var(--white);background:var(--overlay);padding:.35em .55em;letter-spacing:.06em}
+.clock{position:absolute;right:2.4cqw;top:2.4cqw;font-family:var(--f-label);font-size:1.7cqw;background:var(--overlay-85);color:var(--white);padding:.5em .6em;font-variant-numeric:tabular-nums}
 /* LIVE NOW: a game on PBC Sports, under the clock; it opens the sports page on that game (shared/live.js). It sits above the
    first-visit Tune in screen (z-index 5) so it can be clicked straight away. */
-.livenow{position:absolute;right:2.4cqw;top:6.4cqw;z-index:6;pointer-events:auto;display:flex;align-items:stretch;max-width:46cqw;font-family:var(--f-label);font-size:max(10px,1.5cqw);line-height:1;text-decoration:none;color:#fff;border:.2cqw solid var(--live)}
-.livenow[hidden]{display:none}
-.livenow b{display:flex;align-items:center;gap:.4em;background:var(--live);padding:.45em .55em;font-weight:400;white-space:nowrap}
-.livenow b::before{content:"";width:.55em;height:.55em;background:#fff;animation:lnblink 1s steps(1) infinite}
-.livenow span{background:#0b0e24e6;padding:.45em .55em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.livenow i,.livenow em{font-style:normal}
-@container (max-width:600px){.livenow{max-width:64cqw}.livenow i{display:none}}
+.livenow{position:absolute;right:2.4cqw;top:6.4cqw;z-index:6;pointer-events:auto;display:flex;align-items:stretch;max-width:46cqw;font-family:var(--f-label);font-size:max(10px,1.5cqw);line-height:1;text-decoration:none;color:var(--white);border:.2cqw solid var(--live)}
+@container (max-width:600px){.livenow{max-width:64cqw}}
 .livenow:hover span,.livenow:focus-visible span{color:var(--gold)}
 .livenow:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-@keyframes lnblink{50%{opacity:0}}
-@media (prefers-reduced-motion:reduce){.livenow b::before{animation:none}}
 .third{position:absolute;left:2.4cqw;right:2.4cqw;bottom:6.6cqw;display:flex;flex-direction:column;align-items:flex-start}
 .plate{display:flex;font-family:var(--f-label);font-size:1.45cqw;line-height:1}
 .plate span{padding:.45em .6em}
 #pname{background:var(--gold);color:var(--navy)}
-#prole{background:var(--navy);color:#fff}
-.hl{display:flex;align-items:stretch;background:#f4f5fb;color:#11163a;width:100%;min-width:0}
-.chip{font-family:var(--f-label);font-size:1.45cqw;background:var(--live);color:#fff;padding:.7em .7em;display:flex;align-items:center;white-space:nowrap;letter-spacing:.04em}
+#prole{background:var(--navy);color:var(--white)}
+.hl{display:flex;align-items:stretch;background:var(--paper);color:var(--paper-ink);width:100%;min-width:0}
+.chip{font-family:var(--f-label);font-size:1.45cqw;background:var(--live);color:var(--white);padding:.7em .7em;display:flex;align-items:center;white-space:nowrap;letter-spacing:.04em}
 #head{font-family:var(--f-display);font-weight:700;font-size:2.6cqw;padding:.22em .5em;line-height:1.1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.sum{margin:0;background:#0b0e24e6;color:#eef0fb;font-family:var(--f-body);font-size:2.35cqw;line-height:1.12;padding:.25em .6em .35em;width:100%;min-height:2.6em}
+.sum{margin:0;background:var(--overlay-90);color:var(--caption-text);font-family:var(--f-body);font-size:2.35cqw;line-height:1.12;padding:.25em .6em .35em;width:100%;min-height:2.6em}
 .ticker{position:absolute;left:0;right:0;bottom:0;height:4.6cqw;display:flex;background:var(--navy);border-top:.3cqw solid var(--gold)}
 .tlabel{font-family:var(--f-label);font-size:1.45cqw;background:var(--gold);color:var(--navy);display:flex;align-items:center;padding:0 1em;white-space:nowrap;z-index:1}
 .tw{position:relative;flex:1;overflow:hidden}
-.tt{position:absolute;top:0;bottom:0;left:0;display:flex;align-items:center;white-space:nowrap;font-family:var(--f-body);font-size:2.5cqw;color:#fff;will-change:transform}
+.tt{position:absolute;top:0;bottom:0;left:0;display:flex;align-items:center;white-space:nowrap;font-family:var(--f-body);font-size:2.5cqw;color:var(--white);will-change:transform}
 .tt i{font-style:normal;color:var(--gold);padding:0 .8em}
 .below{display:none;margin:0;background:var(--panel);border:2px solid var(--line);padding:10px 12px;font-size:19px}
 .below b{font-family:var(--f-display);font-weight:700;display:block;font-size:20px;margin-bottom:4px}
@@ -74,24 +67,10 @@
 #city{flex:0 1 auto;min-width:0;height:27px;font-family:var(--f-body);font-size:19px;line-height:1.1;max-width:100%;background:var(--room);color:var(--text);border:2px solid var(--line);padding:1px 4px;cursor:pointer}
 #city:hover{border-color:var(--gold)}
 #city:focus-visible{outline:none;border-color:var(--gold)}
-.card{background:var(--panel);border:2px solid var(--line);padding:14px 16px;min-width:0}
 h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--gold);margin:0 0 10px}
 ol,ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
-#rundown li{display:flex;flex-direction:column;gap:0;padding:4px 8px;font-variant-numeric:tabular-nums}
-#rundown li .tm{color:var(--muted);white-space:nowrap}
-#rundown li .who{display:none}
-#rundown li.now{background:var(--navy)}
-#rundown li.now .tm{color:var(--gold)}
-#rundown li .tm{font-size:16px;line-height:1.1}
-#rundown li.now .tm::after{content:" NOW";font-family:var(--f-label);font-size:10px;color:var(--live)}
-#rundown .pk{all:unset;cursor:pointer;color:var(--text);text-decoration:underline dotted 1px;text-underline-offset:3px;min-width:0}
-#rundown .pk:hover{color:var(--gold)}
-#rundown .pk:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-#rundown li.picked{background:#3a1420}
-#rundown li.picked .tm::after{content:" NEXT";font-family:var(--f-label);font-size:10px;color:var(--gold)}
-.rdhint{margin:0 0 6px;color:var(--muted);font-size:16px}
 #cast li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:center;padding:3px 4px}
-#cast canvas{width:42px;height:36px;image-rendering:pixelated;background:#1d2350}
+#cast canvas{width:42px;height:36px;image-rendering:pixelated;background:var(--well)}
 #cast li.on canvas{outline:2px solid var(--live)}
 #cast .nm{display:block;font-family:var(--f-display);font-weight:500;font-size:19px;line-height:1.1}
 #cast .rl{color:var(--muted);font-size:17px}
@@ -150,9 +129,9 @@ footer a:focus-visible{outline:2px solid var(--gold)}
   </div>
 
   <aside class="side">
-    <div class="card" id="storyCard" aria-live="polite"></div>
-    <div class="card"><h2>RUNDOWN</h2><p class="rdhint">Pick a segment to jump to it after the current story.</p><ol id="rundown"></ol></div>
-    <div class="card"><h2>ON THE DESK</h2><ul id="cast"></ul></div>
+    <div class="pbc-card" id="storyCard" aria-live="polite"></div>
+    <div class="pbc-card"><h2>RUNDOWN</h2><p class="pbc-rdhint">Pick a segment to jump to it after the current story.</p><ol id="rundown" class="pbc-rundown"></ol></div>
+    <div class="pbc-card"><h2>ON THE DESK</h2><ul id="cast"></ul></div>
   </aside>
 </div>
 

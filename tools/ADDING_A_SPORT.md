@@ -34,9 +34,10 @@ In `sports/show.js` (the Sports Desk, the channel's entry point):
 
 ## Before opening the pull request
 
-Run both checks. In a Claude cloud session, put `NODE_PATH=$(npm root -g)` in front of each command.
+Fonts, colors and anything on screen follow `tools/NEW_PAGE.md`. Run the checks. In a Claude cloud session, put `NODE_PATH=$(npm root -g)` in front of each command.
 
 ```
+node tools/check_style.cjs    # fonts and colors come from shared/pbc.css
 node tools/check_layout.cjs   # News and Sports controls in the same place
 node tools/check_sports.cjs   # every sport has every part, in the same place, from its own source
 ```
