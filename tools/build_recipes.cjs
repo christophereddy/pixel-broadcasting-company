@@ -311,7 +311,11 @@ ${cards}
       <li><a href="./?occ=breakfast">Breakfast</a></li>
       <li><a href="./?role=dessert">Desserts</a></li>
       <li><a href="./?occ=holiday">Holidays</a></li>
-    </ul></div>`;
+    </ul></div>
+    <div class="co-card"><h2>MY KITCHEN</h2>
+      <p>Write down a recipe of your own and watch the PBC Cooking kitchen make it. It stays in your browser.</p>
+      <p><a class="co-watch" href="../cooking/my-kitchen/">WRITE A RECIPE</a></p>
+    </div>`;
   return page({up: '../', title: 'Recipes', description: `Search ${RECIPES.length} AI-written recipes from PBC Cooking by name, ingredient, course, occasion, difficulty and time, with kid-friendly, quick and vegetarian picks.`,
     canonical: SITE + 'recipes/', dept: 'THE RECIPE BOX', main, side, head: '<script src="search.js" defer></script>\n'});
 }
@@ -343,6 +347,11 @@ function menuJson() {
         return o;
       })};
   }
+  // My Kitchen (cooking/my-kitchen/) writes a viewer's own recipe for the channel with cooking/rules.js in the browser,
+  // so check here that it writes every PBC recipe exactly the way this file does.
+  const RULES = require(path.join(ROOT, 'cooking', 'rules.js'));
+  for (const r of RECIPES) if (JSON.stringify(RULES.menuRecipe(r, LIB)) !== JSON.stringify(recipes[r.slug]))
+    throw new Error(`cooking/rules.js writes ${r.slug} for the channel differently from this file`);
   const shows = SHOWS.shows.map(s => Object.fromEntries(Object.entries(s)));
   return '{"sections":' + JSON.stringify(SHOWS.sections) + ',\n"shows":[\n' + shows.map(x => JSON.stringify(x)).join(',\n') + '\n],\n"recipes":{\n' +
     Object.entries(recipes).map(([k, v]) => JSON.stringify(k) + ':' + JSON.stringify(v)).join(',\n') + '\n}}\n';

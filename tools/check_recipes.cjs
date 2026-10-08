@@ -24,15 +24,6 @@ const DIR = path.join(ROOT, 'data', 'cooking');
 const LIB = JSON.parse(fs.readFileSync(path.join(DIR, 'ingredients.json'), 'utf8'));
 const SHOWS = JSON.parse(fs.readFileSync(path.join(DIR, 'shows.json'), 'utf8'));
 
-const ROLES = ['breakfast', 'starter', 'main', 'side', 'dessert', 'drink', 'snack', 'sauce'];
-const OCCASIONS = ['breakfast', 'brunch', 'lunch', 'lunchbox', 'weeknight', 'family-dinner', 'comfort', 'date-night', 'party',
-  'game-day', 'picnic', 'snack', 'baking', 'holiday', 'leftovers'];
-const LEVELS = ['easy', 'medium', 'hard'];
-const TAGS = ['kid', 'quick', 'vegetarian', 'make-ahead'];
-const UNITS = ['tsp', 'tbsp', 'cup', 'ml', 'l', 'g', 'kg', 'oz', 'lb', 'piece', 'slice', 'clove', 'sprig', 'leaf', 'pinch',
-  'can', 'sheet', 'stalk', 'bunch', 'to-taste'];
-const TOOLS = ['knife', 'stove', 'oven', 'blender', 'none'];
-const HEATS = ['low', 'medium-low', 'medium', 'medium-high', 'high'];
 const COOKS = ['two-adults', 'parent-child', 'two-elders', 'grandparent-grandchild'];
 const KID_COOKS = ['parent-child', 'grandparent-grandchild'];
 // The channel's own running order and pacing, so the airtime added up here is what really airs.
@@ -41,21 +32,10 @@ const CYCLE_MIN = SCHEDULE.CYCLE / 60000;
 
 const errors = [];
 const err = (where, msg) => errors.push(`${where}: ${msg}`);
-const near = (a, b) => Math.abs(a - b) < 0.011;
-const isNum = x => typeof x === 'number' && isFinite(x) && x > 0;
-
-// minutes a step's text gives ("8 minutes", "8 to 10 minutes", "1 hour", "30 seconds"), each number converted
-function timesIn(text) {
-  const out = [];
-  const re = /(\d+(?:\.\d+)?)(?:\s*(?:to|-|–)\s*(\d+(?:\.\d+)?))?\s*(seconds?|secs?|minutes?|mins?|hours?|hrs?)\b/gi;
-  let m;
-  while ((m = re.exec(text))) {
-    const k = /^s/i.test(m[3]) ? 1 / 60 : /^h/i.test(m[3]) ? 60 : 1;
-    out.push(+m[1] * k); if (m[2]) out.push(+m[2] * k);
-  }
-  return out;
-}
-const fahrenheitIn = text => [...text.matchAll(/(\d{2,3})\s*°\s*F/g)].map(m => +m[1]);
+// The rules for one recipe live in cooking/rules.js, so My Kitchen (cooking/my-kitchen/) checks a viewer's own recipe
+// with exactly the same rules in the browser.
+const RULES = require(path.join(ROOT, 'cooking', 'rules.js'));
+const OCCASIONS = RULES.OCCASIONS;
 
 function checkRecipe(file) {
   const where = 'data/cooking/recipes/' + file;
@@ -63,94 +43,7 @@ function checkRecipe(file) {
   try { r = JSON.parse(fs.readFileSync(path.join(DIR, 'recipes', file), 'utf8')); } catch (e) { err(where, 'not valid JSON: ' + e.message); return null; }
   const slug = file.replace(/\.json$/, '');
   if (r.slug !== slug) err(where, `slug "${r.slug}" must match the file name "${slug}"`);
-  for (const k of ['name', 'summary', 'cuisine']) if (typeof r[k] !== 'string' || !r[k].trim()) err(where, `needs a ${k}`);
-  if (!ROLES.includes(r.role)) err(where, `role must be one of ${ROLES.join(', ')}`);
-  if (!Array.isArray(r.occasions) || !r.occasions.length || r.occasions.some(o => !OCCASIONS.includes(o))) err(where, `occasions must come from ${OCCASIONS.join(', ')}`);
-  if (!LEVELS.includes(r.difficulty)) err(where, `difficulty must be one of ${LEVELS.join(', ')}`);
-  const tags = r.tags || [];
-  for (const t of tags) if (!TAGS.includes(t)) err(where, `unknown tag "${t}"`);
-  if (!Number.isInteger(r.serves) || r.serves < 1) err(where, 'serves must be a whole number');
-  const t = r.time || {};
-  for (const k of ['prep', 'cook', 'total']) if (!Number.isInteger(t[k]) || t[k] < 0) err(where, `time.${k} must be whole minutes`);
-  if (t.total < t.prep + t.cook) err(where, `time.total (${t.total}) is less than prep + cook (${t.prep + t.cook})`);
-  if (tags.includes('quick') && t.total > 15) err(where, `tagged quick but takes ${t.total} minutes (quick is 15 or less)`);
-
-  // the ingredient list
-  const list = new Map();
-  for (const [i, ing] of (r.ingredients || []).entries()) {
-    const w = `${where} ingredient ${i + 1}`;
-    const lib = LIB.ingredients[ing.id];
-    if (!lib) { err(w, `"${ing.id}" is not in data/cooking/ingredients.json (add it there, with art, before using it)`); continue; }
-    if (list.has(ing.id)) err(w, `"${ing.id}" is listed twice; list it once with the full amount`);
-    list.set(ing.id, ing);
-    if (!LIB.groups[lib.group].forms.includes(ing.form)) err(w, `"${ing.id}" can't be "${ing.form}"; forms for ${lib.group}: ${LIB.groups[lib.group].forms.join(', ')}`);
-    if (!UNITS.includes(ing.unit)) err(w, `unknown unit "${ing.unit}"`);
-    if (ing.unit === 'to-taste') { if (ing.qty !== undefined) err(w, 'a to-taste ingredient has no qty'); }
-    else if (!isNum(ing.qty)) err(w, `"${ing.id}" needs a qty above 0`);
-  }
-  if (!list.size) err(where, 'has no ingredients');
-
-  // the steps: what they use, their timers, heat and temperatures
-  const used = new Map();
-  const steps = r.steps || [];
-  if (!steps.length) err(where, 'has no steps');
-  let timers = 0;
-  steps.forEach((s, i) => {
-    const w = `${where} step ${i + 1}`;
-    if (typeof s.do !== 'string' || !s.do.trim()) err(w, 'needs its instruction in "do"');
-    const tool = s.tool || 'none';
-    if (!TOOLS.includes(tool)) err(w, `tool must be one of ${TOOLS.join(', ')}`);
-    for (const u of s.uses || []) {
-      const ing = list.get(u.id);
-      if (!ing) { err(w, `uses "${u.id}", which is not in the ingredient list`); continue; }
-      if (u.unit !== ing.unit) { err(w, `uses ${u.id} in "${u.unit}" but the list gives it in "${ing.unit}"`); continue; }
-      if (ing.unit === 'to-taste') { used.set(u.id, 0); continue; }
-      if (!isNum(u.qty)) { err(w, `uses ${u.id} without an amount`); continue; }
-      used.set(u.id, (used.get(u.id) || 0) + u.qty);
-    }
-    const said = timesIn(s.do || '');
-    if (said.length && s.timer === undefined) err(w, `mentions ${said.join(' / ')} min but sets no timer`);
-    if (s.timer !== undefined) {
-      if (!isNum(s.timer)) err(w, 'timer must be minutes above 0');
-      else if (said.length && !said.some(x => near(x, s.timer))) err(w, `timer is ${s.timer} min but the step says ${said.join(' / ')} min`);
-      timers++;
-    }
-    if (tool === 'stove' && !HEATS.includes(s.heat)) err(w, `a stove step needs heat: ${HEATS.join(', ')}`);
-    if (tool !== 'stove' && s.heat !== undefined) err(w, 'heat is only for stove steps');
-    if (tool === 'oven' && !(Number.isInteger(s.oven_f) && s.oven_f >= 200 && s.oven_f <= 550)) err(w, 'an oven step needs oven_f (200 to 550)');
-    if (tool !== 'oven' && s.oven_f !== undefined) err(w, 'oven_f is only for oven steps');
-    for (const f of fahrenheitIn(s.do || '')) if (f !== s.oven_f && f !== s.temp_f) err(w, `says ${f}°F but the step's oven_f/temp_f don't match`);
-    if (s.temp_f !== undefined && !Number.isInteger(s.temp_f)) err(w, 'temp_f must be whole degrees F');
-    if (tags.includes('kid') && ['knife', 'stove', 'oven'].includes(tool) && s.help !== true) err(w, `kid recipe: a ${tool} step needs "help": true (Grown-up helps)`);
-  });
-  for (const [id, ing] of list) {
-    if (!used.has(id)) { err(where, `"${id}" is listed but no step uses it`); continue; }
-    if (ing.unit !== 'to-taste' && !near(used.get(id), ing.qty)) err(where, `steps use ${+used.get(id).toFixed(3)} ${ing.unit} of ${id} but the list says ${ing.qty}`);
-  }
-
-  // food safety
-  for (const [id] of list) {
-    const lib = LIB.ingredients[id];
-    if (lib.safe_f && !steps.some(s => s.temp_f >= lib.safe_f)) err(where, `${id} must be checked at ${lib.safe_f}°F inside: add temp_f to the step that checks it`);
-    if (lib.must_cook) {
-      const first = steps.findIndex(s => (s.uses || []).some(u => u.id === id));
-      if (first >= 0 && !steps.slice(first).some(s => s.tool === 'stove' || s.tool === 'oven')) err(where, `${id} goes in but is never cooked (stove or oven) afterwards`);
-    }
-  }
-
-  // allergens and tags that follow from the ingredients
-  const want = new Set();
-  for (const [id] of list) for (const a of LIB.ingredients[id].allergens || []) want.add(a);
-  const have = new Set(r.allergens || []);
-  for (const a of have) if (!LIB.allergens.includes(a)) err(where, `unknown allergen "${a}"`);
-  const missing = [...want].filter(a => !have.has(a)), extra = [...have].filter(a => !want.has(a));
-  if (missing.length) err(where, `allergens must include ${missing.join(', ')} (from its ingredients)`);
-  if (extra.length) err(where, `allergens lists ${extra.join(', ')}, which none of its ingredients carry`);
-  if (tags.includes('kid') && r.difficulty === 'hard') err(where, 'a kid recipe cannot be hard');
-  if (tags.includes('vegetarian')) for (const [id] of list) {
-    const lib = LIB.ingredients[id];
-    if ((lib.group === 'protein' && !['egg', 'tofu'].includes(id)) || (lib.allergens || []).some(a => a === 'fish' || a === 'shellfish')) err(where, `tagged vegetarian but uses ${id}`);
-  }
+  for (const p of RULES.check(r, LIB)) err(where + (p.at ? ' ' + p.at : ''), p.msg);
   return {slug, r};
 }
 

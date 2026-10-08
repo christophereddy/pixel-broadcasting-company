@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Kitchen · Pixel Broadcasting Company</title>
+<meta name="description" content="Write down a recipe of your own and watch the PBC Cooking kitchen make it, step by step. Your recipes stay in your browser.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap">
+<link rel="stylesheet" href="../../shared/pbc.css">
+<link rel="stylesheet" href="../../shared/company.css">
+<script src="../../shared/business.js"></script>
+<script src="../../shared/pbc.js"></script>
+<script src="../rules.js"></script>
+<script src="../mine.js"></script>
+<script src="my-kitchen.js" defer></script>
+</head>
+<body>
+<div class="pbc-page">
+  <div class="pbc-top">
+  <header class="pbc-mast">
+    <div class="pbc-brand">
+      <span class="pbc-mark" aria-hidden="true">PBC</span>
+      <div><h1>Pixel Broadcasting Company</h1><p>PBC Cooking · My Kitchen</p></div>
+    </div>
+    <div class="pbc-side">
+      <nav class="pbc-chan" aria-label="Channel"><a href="../../">NEWS</a><a href="../../sports/">SPORTS</a><a href="../">COOKING</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR<span class="pbc-24"> 24 HOURS</span></div>
+    </div>
+  </header>
+  <div class="pbc-ctl">
+    <div class="co-dept">PBC COOKING <span>· MY KITCHEN</span></div>
+    <div class="pbc-btns"><a class="pbc-btn" href="../">BACK TO THE BROADCAST</a></div>
+  </div>
+  </div>
+
+  <main class="pbc-main">
+    <section class="co-card co-hero">
+      <h2>My Kitchen</h2>
+      <p class="co-lead">Write down a recipe of your own, and the PBC Cooking kitchen will make it for you, step by step.</p>
+      <p>Pick your ingredients, write the steps, and say what goes in at each one. The recipe check below makes sure the amounts add up and the timers, heat and temperatures are all there, the same check every PBC recipe passes. Then press <b>WATCH IT MADE</b>.</p>
+      <p class="co-note">Your recipes are saved in this browser, on this device. Nothing is sent to PBC and nobody else can see them. Clearing your browser's data deletes them, so use DOWNLOAD to keep a copy.</p>
+    </section>
+
+    <p class="co-card co-kit-err" id="loadErr" role="alert" hidden>The ingredient list didn't load. Try reloading the page.</p>
+
+    <form class="co-kit" id="kit" novalidate hidden>
+    <section class="co-card" id="about">
+      <h2>YOUR RECIPE</h2>
+      <div class="co-form">
+        <div class="wide"><label for="k-name">Name</label><input id="k-name" type="text" maxlength="60" placeholder="Grandma's Sunday Pancakes" required></div>
+        <div class="wide"><label for="k-sum">In one line</label><input id="k-sum" type="text" maxlength="120" placeholder="What it is and why it's good" required></div>
+        <div><label for="k-role">Course</label><select id="k-role"></select></div>
+        <div><label for="k-cuisine">Cuisine <i>(or the country it's from)</i></label><input id="k-cuisine" type="text" maxlength="30" placeholder="Home cooking"></div>
+        <div><label for="k-level">Difficulty</label><select id="k-level"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></div>
+        <div><label for="k-serves">Serves</label><input id="k-serves" type="number" min="1" max="48" step="1" inputmode="numeric"></div>
+        <fieldset class="wide"><legend>Time <i>(minutes)</i></legend><div class="co-kit-time">
+          <div><label for="k-prep">Prep</label><input id="k-prep" type="number" min="0" step="1" inputmode="numeric"></div>
+          <div><label for="k-cook">Cooking</label><input id="k-cook" type="number" min="0" step="1" inputmode="numeric"></div>
+          <div><label for="k-total">Total <i>(with resting or chilling)</i></label><input id="k-total" type="number" min="0" step="1" inputmode="numeric"></div>
+        </div></fieldset>
+        <fieldset class="wide"><legend>Good for</legend><div class="co-checks" id="k-occ"></div></fieldset>
+        <fieldset class="wide"><legend>Tags</legend><div class="co-checks">
+          <label><input type="checkbox" name="tag" value="kid"> Kid-friendly</label>
+          <label><input type="checkbox" name="tag" value="quick"> Quick (15 min or less)</label>
+          <label><input type="checkbox" name="tag" value="vegetarian"> Vegetarian</label>
+          <label><input type="checkbox" name="tag" value="make-ahead"> Make ahead</label>
+        </div></fieldset>
+        <p class="wide co-hint" id="k-allergens"></p>
+      </div>
+    </section>
+
+    <section class="co-card" id="ingredients">
+      <h2>INGREDIENTS</h2>
+      <p>The kitchen can draw <b id="libCount">200</b> ingredients. Type one to add it, then give its amount.</p>
+      <div class="co-search co-kit-add">
+        <label class="co-hp" for="k-find">Add an ingredient</label>
+        <input type="search" id="k-find" list="k-lib" placeholder="Try butter, eggs or chicken breast" autocomplete="off" spellcheck="false">
+        <button class="pbc-btn" type="button" id="k-add">ADD</button>
+      </div>
+      <datalist id="k-lib"></datalist>
+      <p class="co-hint" id="k-findmsg" aria-live="polite"></p>
+      <ul class="co-kit-ings" id="k-ings"></ul>
+    </section>
+
+    <section class="co-card" id="steps">
+      <h2>STEPS</h2>
+      <p>One thing per step, the way you'd say it out loud. Tick what goes in at each step: every ingredient has to go in somewhere, and the amounts have to add up to the list.</p>
+      <ol class="co-kit-steps" id="k-steps"></ol>
+      <button class="pbc-btn" type="button" id="k-addstep">+ ADD A STEP</button>
+    </section>
+
+    <section class="co-card" id="check">
+      <h2>RECIPE CHECK</h2>
+      <p id="k-verdict" aria-live="polite"></p>
+      <ul class="co-kit-probs" id="k-probs"></ul>
+      <div class="co-send">
+        <button class="pbc-btn" type="button" id="k-save">SAVE</button>
+        <a class="co-watch" id="k-watch" href="../" aria-disabled="true">▶ WATCH IT MADE</a>
+        <span id="formStatus" role="status" aria-live="polite"></span>
+      </div>
+    </section>
+    </form>
+  </main>
+
+  <aside class="side co-side">
+    <div class="co-card"><h2>MY RECIPES</h2>
+      <ul class="co-kit-mine" id="k-mine"></ul>
+      <p class="co-hint" id="k-none">No recipes yet. Your first one will show here when you save it.</p>
+      <p><button class="pbc-btn co-kit-wide" type="button" id="k-new">NEW RECIPE</button></p>
+    </div>
+    <div class="co-card"><h2>START FROM A PBC RECIPE</h2>
+      <p>Copy one of ours and make it yours: swap an ingredient, change the amounts, add a step.</p>
+      <div class="co-filters co-kit-from"><label for="k-from">PBC RECIPE</label><select id="k-from"><option value="">Pick a recipe</option></select></div>
+    </div>
+    <div class="co-card"><h2>KEEP A COPY</h2>
+      <p>DOWNLOAD saves the recipe you're writing as a file. LOAD opens one you saved, on this device or another.</p>
+      <p class="co-kit-row"><button class="pbc-btn" type="button" id="k-down">DOWNLOAD</button><label class="pbc-btn" for="k-file">LOAD</label><input class="co-hp" type="file" id="k-file" accept=".json,application/json"></p>
+    </div>
+    <div class="co-card"><h2>THE COMPANY</h2><ul class="co-dir">
+      <li><a href="../../recipes/">The recipe box</a></li>
+      <li><a href="../../about/">About</a></li>
+      <li><a href="../../contact/">Contact</a></li>
+      <li><a href="../../privacy/">Privacy Policy</a></li>
+      <li><a href="../../terms/">Terms of Use</a></li>
+    </ul></div>
+  </aside>
+</div>
+</body>
+</html>

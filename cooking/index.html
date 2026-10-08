@@ -18,6 +18,7 @@
 <script src="food.js"></script>
 <script src="scenes.js"></script>
 <script src="dishes.js"></script>
+<script src="mine.js"></script>
 <style>
 /* PBC Cooking: the kitchen broadcast, with the recipe's card and timer over the picture; the current recipe, the menu,
    the cooks and the rundown in the right column. Every amount, timer and temperature comes from cooking/menu.json. */
@@ -89,6 +90,7 @@ h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em
 .rc-qr canvas{width:104px;height:104px;image-rendering:pixelated;image-rendering:crisp-edges;background:var(--white);padding:4px;box-sizing:content-box}
 .rc-qr span{font-family:var(--f-label);font-size:9px;letter-spacing:.06em;color:var(--muted)}
 .rc-open{display:none}
+.rc-qr[hidden]{display:none!important}
 .rc-idle{color:var(--muted);font-size:17px;line-height:1.2}
 @media (min-width:1600px){ .rc-qr canvas{width:132px;height:132px} }
 @media (max-width:640px){
@@ -119,7 +121,7 @@ h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em
   <header class="pbc-mast">
     <div class="pbc-brand">
       <span class="pbc-mark" aria-hidden="true">PBC</span>
-      <div><h1>Pixel Broadcasting Company</h1><p>PBC Cooking · <a class="note" href="../recipes/">the recipe box</a></p></div>
+      <div><h1>Pixel Broadcasting Company</h1><p>PBC Cooking · <a class="note" href="../recipes/">the recipe box</a> · <a class="note" href="my-kitchen/">my kitchen</a></p></div>
     </div>
     <div class="pbc-side">
       <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a><a href="./" aria-current="page">COOKING</a></nav>
@@ -195,6 +197,8 @@ const K=PBC_KITCHEN,P=PBC_COOK,{person,anim}=PBC_PEOPLE;
 let MENU=null;
 try{const r=await fetch("menu.json",{cache:"no-cache"});if(r.ok)MENU=await r.json()}catch(e){}
 if(!MENU||!MENU.shows||!MENU.recipes){$("head").textContent="We'll be right back";$("sum").textContent="The kitchen didn't load. Try reloading the page.";return}
+// a viewer's own recipe from My Kitchen (cooking/mine.js), saved on this device: cooking/?recipe=mine-<slug> plays it as a clip
+PBC_MINE.inject(MENU,new URLSearchParams(location.search).get("recipe"));
 
 /* ---------- words: fixed sentences around the recipe's own fields ---------- */
 const ROLE={breakfast:"Breakfast",starter:"Starter",main:"Main",side:"Side",dessert:"Dessert",drink:"Drink",snack:"Snack",sauce:"Sauce"};
@@ -205,7 +209,7 @@ const celsius=f=>Math.round((f-32)*5/9);
 const minutes=m=>m<60?m+" min":Math.floor(m/60)+" hr"+(m%60?" "+(m%60)+" min":"");
 const timerWords=t=>t<1?Math.round(t*60)+" seconds":t>=60&&t%60===0?(t/60)+(t===60?" hour":" hours"):t+(t===1?" minute":" minutes");
 const and=a=>a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1];
-const RECIPE_URL=s=>new URL("recipes/"+s+"/",PBC.root).href;
+const RECIPE_URL=s=>new URL(PBC_MINE.isMine(s)?"cooking/my-kitchen/?edit="+encodeURIComponent(PBC_MINE.slugOf(s)):"recipes/"+s+"/",PBC.root).href;
 const VOICE={adult:{hz:420,pitch:1,rate:1},elder:{hz:300,pitch:.82,rate:.92},kid:{hz:660,pitch:1.45,rate:1.08},dot:{hz:480,pitch:1.1,rate:1.02}};
 
 const stationOf=(b,r)=>(b.kind==="step"||b.kind==="ff")?({stove:"stove",oven:"oven"}[r.steps[b.step].tool]||"prep"):"prep";
@@ -392,12 +396,14 @@ function recipeCard(b,S){
   $("rcBody").hidden=!slug;$("rcIdle").hidden=!!slug;
   if(!slug){$("rcIdle").textContent="Commercial break. The next show's first recipe will show here when it starts.";return}
   const r=MENU.recipes[slug],url=RECIPE_URL(slug),sec=MENU.sections[S.show.section];
-  $("rcSeg").textContent=((sec?sec.name:"")+" · "+S.show.name).toUpperCase();
+  $("rcSeg").textContent=((sec?sec.name+" · ":"")+S.show.name).toUpperCase();
   $("rcName").textContent=r.name;$("rcRole").textContent=ROLE[r.role]||"";$("rcServes").textContent=r.serves;
   $("rcTime").textContent=minutes(r.time.total);$("rcLevel").textContent=r.difficulty.charAt(0).toUpperCase()+r.difficulty.slice(1);
   ["rcLink","rcQr","rcOpen"].forEach(id=>$(id).href=url);
-  $("rcLink").textContent=r.name+": the full recipe on the PBC recipe box";
-  const M=PBC_ADS.qrMatrix(url),c=$("rcQrC");$("rcQr").hidden=!M;
+  const mine=PBC_MINE.isMine(slug);
+  $("rcLink").textContent=r.name+(mine?": your recipe in My Kitchen":": the full recipe on the PBC recipe box");
+  // a viewer's own recipe is only on this device, so there's no code to scan for it
+  const M=mine?null:PBC_ADS.qrMatrix(url),c=$("rcQrC");$("rcQr").hidden=!M;
   if(M){const n=M.length,q=2,px=4,size=(n+2*q)*px;c.width=c.height=size;const x=c.getContext("2d");x.fillStyle="#ffffff";x.fillRect(0,0,size,size);x.fillStyle="#05060d";
     M.forEach((row,y)=>row.forEach((d,i)=>{if(d)x.fillRect((i+q)*px,(y+q)*px,px,px)}))}
 }

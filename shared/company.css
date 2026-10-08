@@ -164,3 +164,67 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 .co-watch{display:inline-block;font-family:var(--f-label);font-size:14px;letter-spacing:.06em;background:var(--gold);color:var(--navy);text-decoration:none;padding:10px 14px;box-shadow:3px 3px 0 var(--navy)}
 .co-watch:hover{background:var(--gold-hi)}
 .co-watch:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* My Kitchen (cooking/my-kitchen/): a viewer writes their own recipe, ingredient by ingredient and step by step, with the
+   recipe check underneath. The fields look like the co-form fields; the steps are boxes like co-item. */
+.co-kit{display:flex;flex-direction:column;gap:12px}
+.co-kit[hidden]{display:none}
+.co-kit :is(input[type=text],input[type=number],input[type=search],select,textarea){box-sizing:border-box;font-family:var(--f-body);font-size:20px;background:var(--room);color:var(--text);border:2px solid var(--line);padding:4px 8px;border-radius:0;min-width:0}
+.co-kit :is(input,select,textarea):focus-visible{outline:none;border-color:var(--gold)}
+.co-kit textarea{width:100%;min-height:64px;resize:vertical}
+.co-kit .co-form input[type=number]{width:100%}
+.co-kit-time{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px}
+.co-kit-time input{width:100%}
+.co-kit-add{margin:10px 0 0}
+.co-kit-add .pbc-btn{flex:none}
+.co-kit-ings{list-style:none;margin:10px 0 0;padding:0}
+.co-kit-ings>li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--rule)}
+.co-kit-ings>li:last-child{border-bottom:0}
+.co-kit-ings>li>b{font-family:var(--f-display);font-weight:500;font-size:19px}
+.co-kit-amt{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.co-kit-amt input{width:72px}
+.co-kit-amt input[hidden]{display:none}
+.co-kit-tally{grid-column:1/-1;margin:0}
+.co-kit-tally.co-kit-off{color:var(--gold)}
+.co-kit-x{font-family:var(--f-label);font-size:12px;height:32px;min-width:32px;padding:0 8px;background:var(--room);color:var(--text);border:2px solid var(--line);border-radius:0;cursor:pointer}
+@media (hover:hover){.co-kit-x:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}}
+.co-kit-x:disabled{color:var(--muted);cursor:default}
+.co-kit-x:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.co-kit-steps{list-style:none;margin:10px 0 12px;padding:0;display:flex;flex-direction:column;gap:12px}
+.co-kit-steps>li{display:flex;flex-direction:column;gap:8px;background:var(--room);border:2px solid var(--line);padding:10px 12px}
+.co-kit-steps>li :is(input[type=text],select,textarea){background:var(--panel)}
+.co-kit-stephead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.co-kit-n{font-family:var(--f-label);font-size:12px;background:var(--gold);color:var(--navy);padding:3px 7px}
+.co-kit-move{display:flex;gap:4px}
+.co-kit-field label{display:block;font-family:var(--f-label);font-size:11px;letter-spacing:.06em;color:var(--gold);margin-bottom:4px}
+.co-kit-field[hidden]{display:none}
+.co-kit-field :is(input,select){width:100%}
+.co-kit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 10px}
+.co-kit-goes{margin:4px 0 0!important;font-family:var(--f-label);font-size:11px;letter-spacing:.06em;color:var(--gold)}
+.co-kit-uses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2px 12px}
+.co-kit-uses li{display:flex;align-items:center;gap:8px;min-height:34px}
+.co-kit-uses label{display:flex;gap:8px;align-items:center;cursor:pointer;min-width:0}
+.co-kit-useq{display:flex;align-items:center;gap:4px;color:var(--muted);white-space:nowrap}
+.co-kit-useq[hidden]{display:none}
+.co-kit-useq input{width:64px}
+.co-kit input[type=checkbox]{width:18px;height:18px;accent-color:var(--gold);flex:none}
+.co-kit-probs{margin:0 0 12px;padding-left:22px}
+.co-kit-probs li{margin:0 0 4px}
+.co-kit-ok{color:var(--ok)}
+.co-kit-err{color:var(--err)}
+.co-kit .co-send a[aria-disabled=true]{opacity:.6}
+.co-kit-mine{list-style:none;margin:0 0 10px;padding:0}
+.co-kit-mine li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;padding:6px 8px;border-bottom:1px dashed var(--rule)}
+.co-kit-mine li.on{background:var(--navy)}
+.co-kit-mine li:last-child{border-bottom:0}
+.co-kit-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;width:100%}
+.co-kit-row a{font-family:var(--f-label);font-size:12px;letter-spacing:.06em;color:var(--gold);text-decoration:none}
+.co-kit-link{all:unset;cursor:pointer;color:var(--text);text-decoration:underline dotted 1px;text-underline-offset:3px}
+.co-kit-row .co-kit-link{font-family:var(--f-label);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+.co-kit-link:hover{color:var(--gold)}
+.co-kit-link:focus-visible,.co-kit-row a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.co-kit-mine li>.co-kit-link{font-family:var(--f-display);font-weight:500;font-size:19px;flex:1;min-width:0}
+.co-kit-wide{width:100%}
+.co-kit-from select{width:100%}
+label.pbc-btn{cursor:pointer}
+@media (max-width:640px){.co-kit-time{grid-template-columns:minmax(0,1fr)}.co-kit-ings>li{grid-template-columns:minmax(0,1fr)}.co-kit-amt{justify-content:flex-start}}
