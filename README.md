@@ -30,6 +30,8 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `tools/check_sports.cjs` | Checks that every sport has every part, in the same place, from its one data source | Code changes |
 | `news/index.html` | Redirect for old `/news/` links | Leave as is |
 | `about/`, `advertise/`, `contact/`, `sources/`, `corrections/`, `accessibility/`, `ad-policy/`, `privacy/`, `terms/` | The company pages linked from the footer on every page. `advertise/` is the Marketing Division ad page with the request form. | Code changes |
+| `data/cooking/ingredients.json`, `data/cooking/recipes/`, `data/cooking/shows.json` | The cooking channel's ingredient library, its AI-written recipes (one file each) and the shows that cook them. The COOKING channel and the recipe site are built on these. | Through pull requests; `tools/check_recipes.cjs` must pass |
+| `tools/COOKING.md`, `tools/check_recipes.cjs` | How recipes are written, and the check that enforces it (amounts add up, timers and temperatures match the words, food safety, allergens). Runs on every pull request. | Code changes |
 | `shared/business.js` | Plug-in settings for the business side: form service, payment links, emails, analytics. Empty means switched off. See `tools/BUSINESS_SETUP.md`. | Chris, when each service is set up |
 
 ## Rules
@@ -37,6 +39,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 - Every page takes its fonts, colors and shared parts from `shared/pbc.css`, by name. Before building a new channel, desk or page, follow `tools/NEW_PAGE.md`, and run `node tools/check_style.cjs` before every pull request.
 - News and Sports must look like one channel: banner, NEWS | SPORTS, ON AIR, FULL SCREEN, SOUND and the broadcast sit in the same place on both. Change shared parts in `shared/`, not in one page. After any layout change, run the layout check at phone, laptop and wide widths:
   `node tools/check_layout.cjs` (in a Claude cloud session: `NODE_PATH=$(npm root -g) node tools/check_layout.cjs`).
+- Every recipe follows `tools/COOKING.md`: ingredients only from the library, amounts that add up, timers and temperatures as written, safe cooking temperatures. Run `node tools/check_recipes.cjs` after changing `data/cooking/`.
 - Every sport on Pixel Sports Live is built the same way, from one data source per sport. Before adding or changing a sport, follow `tools/ADDING_A_SPORT.md` and run `node tools/check_sports.cjs`.
 - The refresh commits only `data/feed.json` and `data/locals.json`, straight to `main`. Everything else goes through a pull request.
 - Never invent news; outdated stories are dropped, not kept (see `tools/REFRESH.md`).

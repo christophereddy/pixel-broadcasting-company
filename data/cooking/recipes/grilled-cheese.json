@@ -1,0 +1,25 @@
+{
+ "slug": "grilled-cheese",
+ "name": "Grilled Cheese",
+ "summary": "Golden, buttery bread around melted cheddar.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["lunch", "comfort"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 8, "total": 15},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "bread", "qty": 4, "unit": "slice", "form": "whole"},
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "softened"},
+  {"id": "cheddar", "qty": 4, "unit": "slice", "form": "sliced"}
+ ],
+ "steps": [
+  {"do": "Spread butter on one side of every slice of bread.", "uses": [{"id": "bread", "qty": 4, "unit": "slice"}, {"id": "butter", "qty": 2, "unit": "tbsp"}], "tool": "knife", "help": true},
+  {"do": "Lay 2 slices butter side down and put 2 slices of cheddar on each. Top with the other bread, butter side up.", "uses": [{"id": "cheddar", "qty": 4, "unit": "slice"}]},
+  {"do": "Cook in a pan for 4 minutes, until the bottom is golden.", "tool": "stove", "heat": "medium", "timer": 4, "cue": "golden underneath", "help": true},
+  {"do": "Flip with a spatula and cook the other side for 4 minutes, until the cheese melts.", "tool": "stove", "heat": "medium", "timer": 4, "cue": "cheese melted", "help": true},
+  {"do": "Cut each sandwich in half.", "tool": "knife", "help": true}
+ ]
+}

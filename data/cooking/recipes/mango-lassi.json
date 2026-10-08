@@ -1,0 +1,24 @@
+{
+ "slug": "mango-lassi",
+ "name": "Mango Lassi",
+ "summary": "Cool mango and yogurt drink with cardamom.",
+ "role": "drink",
+ "cuisine": "India",
+ "occasions": ["weeknight", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 0, "total": 5},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "mango", "qty": 1, "unit": "cup", "form": "cubed"},
+  {"id": "yogurt", "qty": 1, "unit": "cup", "form": "cold"},
+  {"id": "milk", "qty": 0.5, "unit": "cup", "form": "cold"},
+  {"id": "sugar", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "cardamom", "qty": 1, "unit": "pinch", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Put the mango, yogurt, milk, sugar and cardamom in the blender.", "uses": [{"id": "mango", "qty": 1, "unit": "cup"}, {"id": "yogurt", "qty": 1, "unit": "cup"}, {"id": "milk", "qty": 0.5, "unit": "cup"}, {"id": "sugar", "qty": 1, "unit": "tbsp"}, {"id": "cardamom", "qty": 1, "unit": "pinch"}]},
+  {"do": "Blend until smooth and pour into glasses.", "tool": "blender"}
+ ]
+}

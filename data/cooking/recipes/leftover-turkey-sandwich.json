@@ -1,0 +1,27 @@
+{
+ "slug": "leftover-turkey-sandwich",
+ "name": "The Day-After Turkey Sandwich",
+ "summary": "Leftover turkey, cranberry and Swiss on sourdough.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["leftovers", "lunch"],
+ "difficulty": "easy",
+ "tags": ["quick"],
+ "serves": 2,
+ "time": {"prep": 10, "cook": 0, "total": 10},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "sourdough", "qty": 4, "unit": "slice", "form": "toasted"},
+  {"id": "mayonnaise", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "cooked-turkey", "qty": 6, "unit": "oz", "form": "sliced"},
+  {"id": "cranberry-sauce", "qty": 4, "unit": "tbsp", "form": "whole"},
+  {"id": "swiss", "qty": 2, "unit": "slice", "form": "sliced"},
+  {"id": "lettuce", "qty": 2, "unit": "leaf", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Toast the sourdough.", "uses": [{"id": "sourdough", "qty": 4, "unit": "slice"}]},
+  {"do": "Spread mayonnaise on 2 slices and cranberry sauce on the other 2.", "uses": [{"id": "mayonnaise", "qty": 2, "unit": "tbsp"}, {"id": "cranberry-sauce", "qty": 4, "unit": "tbsp"}]},
+  {"do": "Layer the turkey, Swiss and lettuce.", "uses": [{"id": "cooked-turkey", "qty": 6, "unit": "oz"}, {"id": "swiss", "qty": 2, "unit": "slice"}, {"id": "lettuce", "qty": 2, "unit": "leaf"}]},
+  {"do": "Close the sandwiches and cut them in half.", "tool": "knife"}
+ ]
+}

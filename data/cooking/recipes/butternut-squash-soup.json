@@ -1,0 +1,33 @@
+{
+ "slug": "butternut-squash-soup",
+ "name": "Butternut Squash Soup",
+ "summary": "Velvety roasted squash soup with a hint of nutmeg.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["weeknight", "comfort"],
+ "difficulty": "medium",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 15, "cook": 45, "total": 60},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "butternut-squash", "qty": 1, "unit": "piece", "form": "cubed", "note": "about 3 lb"},
+  {"id": "olive-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "onion", "qty": 1, "unit": "piece", "form": "chopped"},
+  {"id": "garlic", "qty": 2, "unit": "clove", "form": "minced"},
+  {"id": "vegetable-stock", "qty": 4, "unit": "cup", "form": "whole"},
+  {"id": "cream", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "nutmeg", "qty": 0.25, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 400°F.", "tool": "oven", "oven_f": 400},
+  {"do": "Peel the squash, scoop out the seeds and cut it into cubes.", "uses": [{"id": "butternut-squash", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Toss the squash with 1 tbsp oil and roast for 30 minutes.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}], "tool": "oven", "oven_f": 400, "timer": 30, "cue": "soft and caramelised"},
+  {"do": "Chop the onion and mince the garlic.", "uses": [{"id": "onion", "qty": 1, "unit": "piece"}, {"id": "garlic", "qty": 2, "unit": "clove"}], "tool": "knife"},
+  {"do": "Cook the onion and garlic in the rest of the oil for 5 minutes.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 5},
+  {"do": "Add the squash and stock and simmer for 10 minutes.", "uses": [{"id": "vegetable-stock", "qty": 4, "unit": "cup"}], "tool": "stove", "heat": "medium-low", "timer": 10},
+  {"do": "Blend until smooth, then stir in the cream, nutmeg, salt and pepper.", "uses": [{"id": "cream", "qty": 0.5, "unit": "cup"}, {"id": "nutmeg", "qty": 0.25, "unit": "tsp"}, {"id": "salt", "qty": 1, "unit": "tsp"}, {"id": "pepper", "unit": "to-taste"}], "tool": "blender"}
+ ]
+}

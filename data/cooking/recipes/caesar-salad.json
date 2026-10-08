@@ -1,0 +1,33 @@
+{
+ "slug": "caesar-salad",
+ "name": "Caesar Salad",
+ "summary": "Crisp romaine with a creamy garlic-parmesan dressing and croutons.",
+ "role": "starter",
+ "cuisine": "American",
+ "occasions": ["date-night", "lunch"],
+ "difficulty": "medium",
+ "tags": [],
+ "serves": 2,
+ "time": {"prep": 15, "cook": 10, "total": 25},
+ "allergens": ["milk", "egg", "wheat", "fish"],
+ "ingredients": [
+  {"id": "romaine", "qty": 1, "unit": "piece", "form": "torn", "note": "1 head"},
+  {"id": "bread", "qty": 2, "unit": "slice", "form": "cubed"},
+  {"id": "olive-oil", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "mayonnaise", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "lemon", "qty": 0.5, "unit": "piece", "form": "juiced"},
+  {"id": "garlic", "qty": 1, "unit": "clove", "form": "minced"},
+  {"id": "mustard", "qty": 1, "unit": "tsp", "form": "whole"},
+  {"id": "anchovies", "qty": 2, "unit": "piece", "form": "minced"},
+  {"id": "parmesan", "qty": 0.5, "unit": "cup", "form": "grated"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 375°F.", "tool": "oven", "oven_f": 375},
+  {"do": "Cube the bread and toss it with 2 tbsp olive oil.", "uses": [{"id": "bread", "qty": 2, "unit": "slice"}, {"id": "olive-oil", "qty": 2, "unit": "tbsp"}], "tool": "knife"},
+  {"do": "Bake the cubes for 10 minutes, until crunchy.", "tool": "oven", "oven_f": 375, "timer": 10, "cue": "golden croutons"},
+  {"do": "Mince the garlic and anchovies, then whisk them with the mayonnaise, lemon, mustard, the rest of the oil and half the parmesan.", "uses": [{"id": "garlic", "qty": 1, "unit": "clove"}, {"id": "anchovies", "qty": 2, "unit": "piece"}, {"id": "mayonnaise", "qty": 3, "unit": "tbsp"}, {"id": "lemon", "qty": 0.5, "unit": "piece"}, {"id": "mustard", "qty": 1, "unit": "tsp"}, {"id": "olive-oil", "qty": 1, "unit": "tbsp"}, {"id": "parmesan", "qty": 0.25, "unit": "cup"}], "tool": "knife"},
+  {"do": "Toss the romaine with the dressing and croutons.", "uses": [{"id": "romaine", "qty": 1, "unit": "piece"}]},
+  {"do": "Top with the rest of the parmesan and pepper.", "uses": [{"id": "parmesan", "qty": 0.25, "unit": "cup"}, {"id": "pepper", "unit": "to-taste"}]}
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "slug": "caprese-salad",
+ "name": "Caprese Salad",
+ "summary": "Tomato, fresh mozzarella and basil with good olive oil.",
+ "role": "starter",
+ "cuisine": "Italy",
+ "occasions": ["family-dinner", "lunch", "picnic"],
+ "difficulty": "easy",
+ "tags": ["quick", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 0, "total": 10},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "tomato", "qty": 3, "unit": "piece", "form": "sliced"},
+  {"id": "fresh-mozzarella", "qty": 8, "unit": "oz", "form": "sliced"},
+  {"id": "basil", "qty": 12, "unit": "leaf", "form": "whole"},
+  {"id": "olive-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "pepper", "unit": "to-taste", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Slice the tomatoes and mozzarella.", "uses": [{"id": "tomato", "qty": 3, "unit": "piece"}, {"id": "fresh-mozzarella", "qty": 8, "unit": "oz"}], "tool": "knife"},
+  {"do": "Overlap them on a plate with a basil leaf between each.", "uses": [{"id": "basil", "qty": 12, "unit": "leaf"}]},
+  {"do": "Drizzle with olive oil and season with salt and pepper.", "uses": [{"id": "olive-oil", "qty": 2, "unit": "tbsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}, {"id": "pepper", "unit": "to-taste"}]}
+ ]
+}

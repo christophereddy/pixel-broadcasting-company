@@ -1,0 +1,27 @@
+{
+ "slug": "blt-sandwich",
+ "name": "BLT",
+ "summary": "Crispy bacon, crunchy lettuce and ripe tomato on toast.",
+ "role": "main",
+ "cuisine": "American",
+ "occasions": ["lunch"],
+ "difficulty": "easy",
+ "tags": ["quick"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 10, "total": 15},
+ "allergens": ["egg", "wheat"],
+ "ingredients": [
+  {"id": "bacon", "qty": 6, "unit": "slice", "form": "whole"},
+  {"id": "bread", "qty": 4, "unit": "slice", "form": "toasted"},
+  {"id": "mayonnaise", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "lettuce", "qty": 4, "unit": "leaf", "form": "whole"},
+  {"id": "tomato", "qty": 1, "unit": "piece", "form": "sliced"}
+ ],
+ "steps": [
+  {"do": "Cook the bacon in a pan for 8 minutes, turning now and then, until crisp.", "uses": [{"id": "bacon", "qty": 6, "unit": "slice"}], "tool": "stove", "heat": "medium", "timer": 8, "cue": "crisp and browned"},
+  {"do": "Drain the bacon on a paper towel. Toast the bread meanwhile."},
+  {"do": "Slice the tomato.", "uses": [{"id": "tomato", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Spread mayonnaise on the toast.", "uses": [{"id": "bread", "qty": 4, "unit": "slice"}, {"id": "mayonnaise", "qty": 2, "unit": "tbsp"}]},
+  {"do": "Layer lettuce, tomato and 3 slices of bacon on 2 slices of toast, top with the rest and cut in half.", "uses": [{"id": "lettuce", "qty": 4, "unit": "leaf"}], "tool": "knife"}
+ ]
+}

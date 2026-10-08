@@ -1,0 +1,26 @@
+{
+ "slug": "garlic-bread",
+ "name": "Garlic Bread",
+ "summary": "Crispy, buttery garlic bread.",
+ "role": "side",
+ "cuisine": "Italian-American",
+ "occasions": ["family-dinner"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 6,
+ "time": {"prep": 5, "cook": 10, "total": 15},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "baguette", "qty": 1, "unit": "piece", "form": "whole"},
+  {"id": "butter", "qty": 4, "unit": "tbsp", "form": "softened"},
+  {"id": "garlic", "qty": 3, "unit": "clove", "form": "minced"},
+  {"id": "parsley", "qty": 1, "unit": "tbsp", "form": "chopped"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 400°F.", "tool": "oven", "oven_f": 400},
+  {"do": "Mince the garlic and mix it into the butter with the parsley.", "uses": [{"id": "garlic", "qty": 3, "unit": "clove"}, {"id": "butter", "qty": 4, "unit": "tbsp"}, {"id": "parsley", "qty": 1, "unit": "tbsp"}], "tool": "knife"},
+  {"do": "Split the baguette lengthwise and spread the butter over the cut sides.", "uses": [{"id": "baguette", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Bake for 10 minutes, until golden.", "tool": "oven", "oven_f": 400, "timer": 10, "cue": "golden and crisp"},
+  {"do": "Slice and serve.", "tool": "knife"}
+ ]
+}

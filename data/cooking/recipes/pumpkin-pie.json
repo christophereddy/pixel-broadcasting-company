@@ -1,0 +1,31 @@
+{
+ "slug": "pumpkin-pie",
+ "name": "Pumpkin Pie",
+ "summary": "Silky spiced pumpkin pie.",
+ "role": "dessert",
+ "cuisine": "American",
+ "occasions": ["holiday", "baking"],
+ "difficulty": "medium",
+ "tags": ["vegetarian", "make-ahead"],
+ "serves": 8,
+ "time": {"prep": 15, "cook": 55, "total": 190},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "pie-crust", "qty": 1, "unit": "piece", "form": "whole", "note": "unbaked 9 inch crust"},
+  {"id": "pumpkin-puree", "qty": 15, "unit": "oz", "form": "whole"},
+  {"id": "evaporated-milk", "qty": 12, "unit": "oz", "form": "whole"},
+  {"id": "egg", "qty": 2, "unit": "piece", "form": "beaten"},
+  {"id": "brown-sugar", "qty": 0.75, "unit": "cup", "form": "whole"},
+  {"id": "cinnamon", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "ground-ginger", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "nutmeg", "qty": 0.25, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 425°F and set the crust in a pie dish.", "uses": [{"id": "pie-crust", "qty": 1, "unit": "piece"}], "tool": "oven", "oven_f": 425},
+  {"do": "Whisk the pumpkin, evaporated milk, eggs, brown sugar, spices and salt.", "uses": [{"id": "pumpkin-puree", "qty": 15, "unit": "oz"}, {"id": "evaporated-milk", "qty": 12, "unit": "oz"}, {"id": "egg", "qty": 2, "unit": "piece"}, {"id": "brown-sugar", "qty": 0.75, "unit": "cup"}, {"id": "cinnamon", "qty": 1, "unit": "tsp"}, {"id": "ground-ginger", "qty": 0.5, "unit": "tsp"}, {"id": "nutmeg", "qty": 0.25, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Pour into the crust and bake for 15 minutes.", "tool": "oven", "oven_f": 425, "timer": 15},
+  {"do": "Lower the oven to 350°F and bake 40 minutes more.", "tool": "oven", "oven_f": 350, "timer": 40, "cue": "edges set, centre barely wobbles"},
+  {"do": "Cool for 2 hours before slicing.", "timer": 120}
+ ]
+}

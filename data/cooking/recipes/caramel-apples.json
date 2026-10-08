@@ -1,0 +1,32 @@
+{
+ "slug": "caramel-apples",
+ "name": "Caramel Apples",
+ "summary": "Crisp apples dipped in homemade caramel.",
+ "role": "dessert",
+ "cuisine": "American",
+ "occasions": ["party", "holiday"],
+ "difficulty": "medium",
+ "tags": ["kid", "vegetarian"],
+ "serves": 6,
+ "time": {"prep": 10, "cook": 15, "total": 60},
+ "allergens": ["milk", "peanut"],
+ "ingredients": [
+  {"id": "apples", "qty": 6, "unit": "piece", "form": "whole", "note": "small, with sticks"},
+  {"id": "sugar", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "water", "qty": 0.25, "unit": "cup", "form": "whole"},
+  {"id": "butter", "qty": 4, "unit": "tbsp", "form": "whole"},
+  {"id": "cream", "qty": 0.5, "unit": "cup", "form": "warm"},
+  {"id": "vanilla", "qty": 1, "unit": "tsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "peanuts", "qty": 0.5, "unit": "cup", "form": "chopped"}
+ ],
+ "steps": [
+  {"do": "Push a stick into the top of each apple and line a tray with parchment.", "uses": [{"id": "apples", "qty": 6, "unit": "piece"}]},
+  {"do": "Chop the peanuts.", "uses": [{"id": "peanuts", "qty": 0.5, "unit": "cup"}], "tool": "knife", "help": true},
+  {"do": "Cook the sugar and water without stirring for 10 minutes, until amber. A grown-up does this part: it's very hot.", "uses": [{"id": "sugar", "qty": 1, "unit": "cup"}, {"id": "water", "qty": 0.25, "unit": "cup"}], "tool": "stove", "heat": "medium", "timer": 10, "cue": "deep amber", "help": true},
+  {"do": "Off the heat, whisk in the butter, then the warm cream, vanilla and salt.", "uses": [{"id": "butter", "qty": 4, "unit": "tbsp"}, {"id": "cream", "qty": 0.5, "unit": "cup"}, {"id": "vanilla", "qty": 1, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}], "tool": "stove", "heat": "low", "help": true},
+  {"do": "Cool the caramel for 5 minutes.", "timer": 5},
+  {"do": "Dip each apple, let it drip, then roll the bottom in peanuts."},
+  {"do": "Set on the tray for 30 minutes.", "timer": 30, "cue": "caramel set"}
+ ]
+}

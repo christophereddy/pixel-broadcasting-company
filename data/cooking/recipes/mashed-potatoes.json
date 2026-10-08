@@ -1,0 +1,26 @@
+{
+ "slug": "mashed-potatoes",
+ "name": "Mashed Potatoes",
+ "summary": "Smooth, buttery mashed potatoes.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["date-night", "family-dinner", "holiday"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 20, "total": 30},
+ "allergens": ["milk"],
+ "ingredients": [
+  {"id": "potatoes", "qty": 2, "unit": "lb", "form": "cubed"},
+  {"id": "water", "qty": 10, "unit": "cup", "form": "whole"},
+  {"id": "butter", "qty": 4, "unit": "tbsp", "form": "whole"},
+  {"id": "milk", "qty": 0.75, "unit": "cup", "form": "warm"},
+  {"id": "salt", "qty": 1.5, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Peel and cube the potatoes.", "uses": [{"id": "potatoes", "qty": 2, "unit": "lb"}], "tool": "knife"},
+  {"do": "Cover with the water, add 1 tsp salt and boil for 15 minutes.", "uses": [{"id": "water", "qty": 10, "unit": "cup"}, {"id": "salt", "qty": 1, "unit": "tsp"}], "tool": "stove", "heat": "high", "timer": 15, "cue": "a knife slides in easily"},
+  {"do": "Drain and mash with the butter.", "uses": [{"id": "butter", "qty": 4, "unit": "tbsp"}]},
+  {"do": "Stir in the warm milk and the rest of the salt.", "uses": [{"id": "milk", "qty": 0.75, "unit": "cup"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]}
+ ]
+}

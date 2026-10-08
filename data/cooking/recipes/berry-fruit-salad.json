@@ -1,0 +1,27 @@
+{
+ "slug": "berry-fruit-salad",
+ "name": "Berry Fruit Salad",
+ "summary": "Bright berries with honey, lime and mint.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["breakfast", "brunch", "picnic"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 0, "total": 10},
+ "allergens": [],
+ "ingredients": [
+  {"id": "strawberries", "qty": 2, "unit": "cup", "form": "sliced"},
+  {"id": "blueberries", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "raspberries", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "honey", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "lime", "qty": 1, "unit": "piece", "form": "juiced"},
+  {"id": "mint", "qty": 6, "unit": "leaf", "form": "chopped"}
+ ],
+ "steps": [
+  {"do": "Slice the strawberries.", "uses": [{"id": "strawberries", "qty": 2, "unit": "cup"}], "tool": "knife", "help": true},
+  {"do": "Put the strawberries, blueberries and raspberries in a bowl.", "uses": [{"id": "blueberries", "qty": 1, "unit": "cup"}, {"id": "raspberries", "qty": 1, "unit": "cup"}]},
+  {"do": "Squeeze the lime and stir the juice with the honey.", "uses": [{"id": "lime", "qty": 1, "unit": "piece"}, {"id": "honey", "qty": 1, "unit": "tbsp"}]},
+  {"do": "Pour over the berries, add the mint and toss gently.", "uses": [{"id": "mint", "qty": 6, "unit": "leaf"}], "tool": "knife", "help": true}
+ ]
+}

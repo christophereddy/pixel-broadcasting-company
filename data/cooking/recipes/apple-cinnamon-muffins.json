@@ -1,0 +1,34 @@
+{
+ "slug": "apple-cinnamon-muffins",
+ "name": "Apple Cinnamon Muffins",
+ "summary": "Soft muffins full of apple and cinnamon.",
+ "role": "breakfast",
+ "cuisine": "American",
+ "occasions": ["baking", "breakfast", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 12,
+ "time": {"prep": 15, "cook": 22, "total": 40},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "flour", "qty": 2, "unit": "cup", "form": "whole"},
+  {"id": "sugar", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "brown-sugar", "qty": 0.25, "unit": "cup", "form": "whole"},
+  {"id": "baking-powder", "qty": 2, "unit": "tsp", "form": "whole"},
+  {"id": "cinnamon", "qty": 2, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "egg", "qty": 2, "unit": "piece", "form": "beaten"},
+  {"id": "milk", "qty": 0.75, "unit": "cup", "form": "whole"},
+  {"id": "butter", "qty": 0.5, "unit": "cup", "form": "melted"},
+  {"id": "apples", "qty": 2, "unit": "piece", "form": "diced"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 375°F and line a 12-cup muffin tin.", "tool": "oven", "oven_f": 375, "help": true},
+  {"do": "Peel and dice the apples.", "uses": [{"id": "apples", "qty": 2, "unit": "piece"}], "tool": "knife", "help": true},
+  {"do": "Whisk the flour, sugar, baking powder, salt and 1 1/2 tsp cinnamon.", "uses": [{"id": "flour", "qty": 2, "unit": "cup"}, {"id": "sugar", "qty": 0.5, "unit": "cup"}, {"id": "baking-powder", "qty": 2, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}, {"id": "cinnamon", "qty": 1.5, "unit": "tsp"}]},
+  {"do": "Whisk the eggs, milk and butter, then stir them into the flour until just mixed.", "uses": [{"id": "egg", "qty": 2, "unit": "piece"}, {"id": "milk", "qty": 0.75, "unit": "cup"}, {"id": "butter", "qty": 0.5, "unit": "cup"}]},
+  {"do": "Fold in the apples and fill the cups."},
+  {"do": "Mix the brown sugar with the rest of the cinnamon and sprinkle on top.", "uses": [{"id": "brown-sugar", "qty": 0.25, "unit": "cup"}, {"id": "cinnamon", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Bake for 22 minutes, until a toothpick comes out clean.", "tool": "oven", "oven_f": 375, "timer": 22, "cue": "toothpick comes out clean", "help": true}
+ ]
+}

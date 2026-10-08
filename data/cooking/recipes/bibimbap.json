@@ -1,0 +1,39 @@
+{
+ "slug": "bibimbap",
+ "name": "Bibimbap",
+ "summary": "Rice bowl with seasoned beef, vegetables, a fried egg and gochujang.",
+ "role": "main",
+ "cuisine": "South Korea",
+ "occasions": ["weeknight", "family-dinner"],
+ "difficulty": "medium",
+ "tags": [],
+ "serves": 4,
+ "time": {"prep": 25, "cook": 30, "total": 55},
+ "allergens": ["egg", "wheat", "soy", "sesame"],
+ "ingredients": [
+  {"id": "rice", "qty": 1.5, "unit": "cup", "form": "rinsed"},
+  {"id": "water", "qty": 2.25, "unit": "cup", "form": "whole"},
+  {"id": "ground-beef", "qty": 0.5, "unit": "lb", "form": "ground"},
+  {"id": "soy-sauce", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "sugar", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "garlic", "qty": 2, "unit": "clove", "form": "minced"},
+  {"id": "sesame-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "spinach", "qty": 4, "unit": "cup", "form": "whole"},
+  {"id": "carrots", "qty": 2, "unit": "piece", "form": "shredded"},
+  {"id": "zucchini", "qty": 1, "unit": "piece", "form": "sliced"},
+  {"id": "bean-sprouts", "qty": 2, "unit": "cup", "form": "whole"},
+  {"id": "vegetable-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "egg", "qty": 4, "unit": "piece", "form": "whole"},
+  {"id": "gochujang", "qty": 4, "unit": "tbsp", "form": "whole"},
+  {"id": "sesame-seeds", "qty": 1, "unit": "tbsp", "form": "toasted"}
+ ],
+ "steps": [
+  {"do": "Cook the rice in the water, covered, for 15 minutes, then rest it.", "uses": [{"id": "rice", "qty": 1.5, "unit": "cup"}, {"id": "water", "qty": 2.25, "unit": "cup"}], "tool": "stove", "heat": "low", "timer": 15},
+  {"do": "Mince the garlic, shred the carrots and slice the zucchini.", "uses": [{"id": "garlic", "qty": 2, "unit": "clove"}, {"id": "carrots", "qty": 2, "unit": "piece"}, {"id": "zucchini", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Cook the beef with the soy sauce, sugar and garlic for 6 minutes, breaking it up. It should reach 160°F.", "uses": [{"id": "ground-beef", "qty": 0.5, "unit": "lb"}, {"id": "soy-sauce", "qty": 3, "unit": "tbsp"}, {"id": "sugar", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium-high", "timer": 6, "temp_f": 160, "cue": "browned, no pink"},
+  {"do": "Stir-fry each vegetable in a little vegetable oil for 2 minutes, one at a time.", "uses": [{"id": "spinach", "qty": 4, "unit": "cup"}, {"id": "bean-sprouts", "qty": 2, "unit": "cup"}, {"id": "vegetable-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium-high", "timer": 2},
+  {"do": "Fry the eggs in the rest of the oil for 3 minutes.", "uses": [{"id": "egg", "qty": 4, "unit": "piece"}, {"id": "vegetable-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 3, "cue": "whites set, yolk runny"},
+  {"do": "Fill bowls with rice, arrange the beef and vegetables on top, then the egg."},
+  {"do": "Add gochujang, a drizzle of sesame oil and sesame seeds.", "uses": [{"id": "gochujang", "qty": 4, "unit": "tbsp"}, {"id": "sesame-oil", "qty": 2, "unit": "tbsp"}, {"id": "sesame-seeds", "qty": 1, "unit": "tbsp"}]}
+ ]
+}

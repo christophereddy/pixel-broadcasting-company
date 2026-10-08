@@ -1,0 +1,25 @@
+{
+ "slug": "cranberry-sauce",
+ "name": "Cranberry Sauce",
+ "summary": "Fresh cranberries cooked down with orange.",
+ "role": "sauce",
+ "cuisine": "American",
+ "occasions": ["holiday"],
+ "difficulty": "easy",
+ "tags": ["vegetarian", "make-ahead"],
+ "serves": 8,
+ "time": {"prep": 5, "cook": 12, "total": 20},
+ "allergens": [],
+ "ingredients": [
+  {"id": "cranberries", "qty": 12, "unit": "oz", "form": "whole"},
+  {"id": "sugar", "qty": 0.75, "unit": "cup", "form": "whole"},
+  {"id": "orange", "qty": 1, "unit": "piece", "form": "juiced"},
+  {"id": "water", "qty": 0.5, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Zest and juice the orange.", "uses": [{"id": "orange", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Put the cranberries, sugar, orange and water in a pot.", "uses": [{"id": "cranberries", "qty": 12, "unit": "oz"}, {"id": "sugar", "qty": 0.75, "unit": "cup"}, {"id": "water", "qty": 0.5, "unit": "cup"}]},
+  {"do": "Simmer for 12 minutes, until most berries pop.", "tool": "stove", "heat": "medium", "timer": 12, "cue": "berries burst, sauce thick"},
+  {"do": "Cool. It thickens as it cools."}
+ ]
+}

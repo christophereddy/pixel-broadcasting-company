@@ -1,0 +1,28 @@
+{
+ "slug": "guacamole",
+ "name": "Guacamole",
+ "summary": "Chunky avocado dip with lime and cilantro.",
+ "role": "side",
+ "cuisine": "Mexican",
+ "occasions": ["party", "snack", "weeknight"],
+ "difficulty": "easy",
+ "tags": ["quick", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 0, "total": 10},
+ "allergens": [],
+ "ingredients": [
+  {"id": "avocado", "qty": 3, "unit": "piece", "form": "mashed"},
+  {"id": "lime", "qty": 1, "unit": "piece", "form": "juiced"},
+  {"id": "red-onion", "qty": 0.25, "unit": "cup", "form": "diced"},
+  {"id": "tomato", "qty": 1, "unit": "piece", "form": "diced"},
+  {"id": "cilantro", "qty": 2, "unit": "tbsp", "form": "chopped"},
+  {"id": "jalapeno", "qty": 1, "unit": "piece", "form": "minced", "note": "seeds removed"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Dice the onion and tomato and mince the jalapeño.", "uses": [{"id": "red-onion", "qty": 0.25, "unit": "cup"}, {"id": "tomato", "qty": 1, "unit": "piece"}, {"id": "jalapeno", "qty": 1, "unit": "piece"}], "tool": "knife"},
+  {"do": "Halve the avocados, scoop them into a bowl and mash with a fork.", "uses": [{"id": "avocado", "qty": 3, "unit": "piece"}], "tool": "knife"},
+  {"do": "Stir in the lime juice and salt.", "uses": [{"id": "lime", "qty": 1, "unit": "piece"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Fold in the onion, tomato, jalapeño and cilantro.", "uses": [{"id": "cilantro", "qty": 2, "unit": "tbsp"}]}
+ ]
+}

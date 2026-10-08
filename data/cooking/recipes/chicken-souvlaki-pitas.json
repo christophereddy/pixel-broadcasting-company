@@ -1,0 +1,34 @@
+{
+ "slug": "chicken-souvlaki-pitas",
+ "name": "Chicken Souvlaki Pitas",
+ "summary": "Lemon-garlic chicken skewers wrapped in warm pita.",
+ "role": "main",
+ "cuisine": "Greece",
+ "occasions": ["weeknight", "party", "picnic"],
+ "difficulty": "easy",
+ "tags": [],
+ "serves": 4,
+ "time": {"prep": 15, "cook": 15, "total": 70},
+ "allergens": ["wheat"],
+ "ingredients": [
+  {"id": "chicken-breast", "qty": 1.5, "unit": "lb", "form": "cubed"},
+  {"id": "olive-oil", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "lemon", "qty": 1, "unit": "piece", "form": "juiced"},
+  {"id": "garlic", "qty": 3, "unit": "clove", "form": "minced"},
+  {"id": "dried-oregano", "qty": 2, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "pita", "qty": 4, "unit": "piece", "form": "whole"},
+  {"id": "tomato", "qty": 2, "unit": "piece", "form": "sliced"},
+  {"id": "red-onion", "qty": 0.5, "unit": "piece", "form": "sliced"},
+  {"id": "lettuce", "qty": 2, "unit": "cup", "form": "shredded"}
+ ],
+ "steps": [
+  {"do": "Cube the chicken and mince the garlic.", "uses": [{"id": "chicken-breast", "qty": 1.5, "unit": "lb"}, {"id": "garlic", "qty": 3, "unit": "clove"}], "tool": "knife"},
+  {"do": "Mix the chicken with 2 tbsp oil, the lemon, garlic, oregano and salt. Marinate for 30 minutes.", "uses": [{"id": "olive-oil", "qty": 2, "unit": "tbsp"}, {"id": "lemon", "qty": 1, "unit": "piece"}, {"id": "dried-oregano", "qty": 2, "unit": "tsp"}, {"id": "salt", "qty": 1, "unit": "tsp"}], "timer": 30},
+  {"do": "Thread onto skewers and cook in a grill pan for 10 minutes, turning.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium-high", "timer": 10, "cue": "charred edges"},
+  {"do": "Check a piece: 165°F inside.", "tool": "stove", "heat": "medium-high", "temp_f": 165},
+  {"do": "Warm the pitas in the pan for 1 minute.", "uses": [{"id": "pita", "qty": 4, "unit": "piece"}], "tool": "stove", "heat": "medium", "timer": 1},
+  {"do": "Slice the tomato and onion.", "uses": [{"id": "tomato", "qty": 2, "unit": "piece"}, {"id": "red-onion", "qty": 0.5, "unit": "piece"}], "tool": "knife"},
+  {"do": "Fill the pitas with chicken, lettuce, tomato and onion.", "uses": [{"id": "lettuce", "qty": 2, "unit": "cup"}]}
+ ]
+}

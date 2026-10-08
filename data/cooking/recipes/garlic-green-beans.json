@@ -1,0 +1,27 @@
+{
+ "slug": "garlic-green-beans",
+ "name": "Garlic Green Beans",
+ "summary": "Snappy green beans with garlic butter and almonds.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["family-dinner", "holiday"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 10, "total": 15},
+ "allergens": ["milk", "tree-nut"],
+ "ingredients": [
+  {"id": "green-beans", "qty": 1, "unit": "lb", "form": "whole", "note": "trimmed"},
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "garlic", "qty": 2, "unit": "clove", "form": "sliced"},
+  {"id": "almonds", "qty": 0.25, "unit": "cup", "form": "toasted"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "water", "qty": 8, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Boil the green beans in the water for 4 minutes, then drain.", "uses": [{"id": "water", "qty": 8, "unit": "cup"}, {"id": "green-beans", "qty": 1, "unit": "lb"}], "tool": "stove", "heat": "high", "timer": 4, "cue": "bright green, still crisp"},
+  {"do": "Slice the garlic.", "uses": [{"id": "garlic", "qty": 2, "unit": "clove"}], "tool": "knife"},
+  {"do": "Melt the butter in a pan and cook the garlic for 1 minute.", "uses": [{"id": "butter", "qty": 2, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "timer": 1},
+  {"do": "Toss in the beans, almonds and salt.", "uses": [{"id": "almonds", "qty": 0.25, "unit": "cup"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}], "tool": "stove", "heat": "medium"}
+ ]
+}

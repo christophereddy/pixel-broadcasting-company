@@ -1,0 +1,31 @@
+{
+ "slug": "spaghetti-al-limone",
+ "name": "Spaghetti al Limone",
+ "summary": "Spaghetti in a silky lemon, butter and parmesan sauce.",
+ "role": "main",
+ "cuisine": "Italy",
+ "occasions": ["weeknight", "date-night"],
+ "difficulty": "medium",
+ "tags": ["vegetarian"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 15, "total": 20},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "spaghetti", "qty": 1, "unit": "lb", "form": "dry"},
+  {"id": "water", "qty": 16, "unit": "cup", "form": "whole"},
+  {"id": "salt", "qty": 1, "unit": "tbsp", "form": "ground"},
+  {"id": "butter", "qty": 4, "unit": "tbsp", "form": "whole"},
+  {"id": "lemon", "qty": 2, "unit": "piece", "form": "zested", "note": "zest and juice"},
+  {"id": "parmesan", "qty": 1, "unit": "cup", "form": "grated"},
+  {"id": "olive-oil", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "pepper", "qty": 0.5, "unit": "tsp", "form": "ground"}
+ ],
+ "steps": [
+  {"do": "Boil the water with the salt and cook the spaghetti for 9 minutes.", "uses": [{"id": "water", "qty": 16, "unit": "cup"}, {"id": "salt", "qty": 1, "unit": "tbsp"}, {"id": "spaghetti", "qty": 1, "unit": "lb"}], "tool": "stove", "heat": "high", "timer": 9, "cue": "al dente"},
+  {"do": "Zest and juice the lemons.", "uses": [{"id": "lemon", "qty": 2, "unit": "piece"}], "tool": "knife"},
+  {"do": "Save 1 cup of pasta water, then drain.", "tool": "stove", "heat": "high"},
+  {"do": "Melt the butter with the oil in the pot, add the lemon and a splash of pasta water.", "uses": [{"id": "butter", "qty": 4, "unit": "tbsp"}, {"id": "olive-oil", "qty": 2, "unit": "tbsp"}], "tool": "stove", "heat": "low"},
+  {"do": "Toss in the spaghetti and parmesan for 2 minutes, adding pasta water until glossy.", "uses": [{"id": "parmesan", "qty": 1, "unit": "cup"}], "tool": "stove", "heat": "low", "timer": 2, "cue": "glossy sauce"},
+  {"do": "Finish with black pepper.", "uses": [{"id": "pepper", "qty": 0.5, "unit": "tsp"}]}
+ ]
+}

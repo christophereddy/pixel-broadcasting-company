@@ -1,0 +1,36 @@
+{
+ "slug": "chicken-tacos",
+ "name": "Chicken Tacos",
+ "summary": "Spiced chicken thighs in warm tortillas.",
+ "role": "main",
+ "cuisine": "Mexican-American",
+ "occasions": ["weeknight", "party"],
+ "difficulty": "easy",
+ "tags": [],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 20, "total": 30},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "chicken-thighs", "qty": 1.5, "unit": "lb", "form": "whole", "note": "boneless, skinless"},
+  {"id": "olive-oil", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "chili-powder", "qty": 2, "unit": "tsp", "form": "ground"},
+  {"id": "cumin", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "garlic-powder", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "salt", "qty": 1, "unit": "tsp", "form": "ground"},
+  {"id": "lime", "qty": 1, "unit": "piece", "form": "juiced"},
+  {"id": "tortilla", "qty": 8, "unit": "piece", "form": "whole", "note": "small"},
+  {"id": "lettuce", "qty": 2, "unit": "cup", "form": "shredded"},
+  {"id": "cheddar", "qty": 1, "unit": "cup", "form": "shredded"},
+  {"id": "sour-cream", "qty": 0.5, "unit": "cup", "form": "whole"},
+  {"id": "cilantro", "qty": 0.25, "unit": "cup", "form": "chopped"}
+ ],
+ "steps": [
+  {"do": "Rub the chicken with the chili powder, cumin, garlic powder and salt.", "uses": [{"id": "chicken-thighs", "qty": 1.5, "unit": "lb"}, {"id": "chili-powder", "qty": 2, "unit": "tsp"}, {"id": "cumin", "qty": 1, "unit": "tsp"}, {"id": "garlic-powder", "qty": 0.5, "unit": "tsp"}, {"id": "salt", "qty": 1, "unit": "tsp"}]},
+  {"do": "Heat the oil in a pan and cook the chicken for 6 minutes a side.", "uses": [{"id": "olive-oil", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium-high", "timer": 6},
+  {"do": "Check the thickest piece: it should read 165°F inside.", "tool": "stove", "heat": "medium-high", "temp_f": 165, "cue": "no pink inside"},
+  {"do": "Rest the chicken for 5 minutes, then slice it.", "tool": "knife", "timer": 5},
+  {"do": "Squeeze the lime over the chicken.", "uses": [{"id": "lime", "qty": 1, "unit": "piece"}]},
+  {"do": "Warm the tortillas in a dry pan, 30 seconds a side.", "uses": [{"id": "tortilla", "qty": 8, "unit": "piece"}], "tool": "stove", "heat": "medium", "timer": 0.5},
+  {"do": "Fill with chicken, lettuce, cheddar, sour cream and cilantro.", "uses": [{"id": "lettuce", "qty": 2, "unit": "cup"}, {"id": "cheddar", "qty": 1, "unit": "cup"}, {"id": "sour-cream", "qty": 0.5, "unit": "cup"}, {"id": "cilantro", "qty": 0.25, "unit": "cup"}]}
+ ]
+}

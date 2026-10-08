@@ -1,0 +1,30 @@
+{
+ "slug": "cornbread",
+ "name": "Skillet Cornbread",
+ "summary": "Golden, slightly sweet cornbread.",
+ "role": "side",
+ "cuisine": "American",
+ "occasions": ["game-day", "family-dinner"],
+ "difficulty": "easy",
+ "tags": ["vegetarian"],
+ "serves": 8,
+ "time": {"prep": 10, "cook": 22, "total": 32},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "cornmeal", "qty": 1, "unit": "cup", "form": "dry"},
+  {"id": "flour", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "sugar", "qty": 0.25, "unit": "cup", "form": "whole"},
+  {"id": "baking-powder", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "milk", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "egg", "qty": 2, "unit": "piece", "form": "beaten"},
+  {"id": "butter", "qty": 6, "unit": "tbsp", "form": "melted"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 400°F with a buttered skillet inside.", "uses": [{"id": "butter", "qty": 1, "unit": "tbsp"}], "tool": "oven", "oven_f": 400},
+  {"do": "Whisk the cornmeal, flour, sugar, baking powder and salt.", "uses": [{"id": "cornmeal", "qty": 1, "unit": "cup"}, {"id": "flour", "qty": 1, "unit": "cup"}, {"id": "sugar", "qty": 0.25, "unit": "cup"}, {"id": "baking-powder", "qty": 1, "unit": "tbsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "Whisk in the milk, eggs and the rest of the melted butter.", "uses": [{"id": "milk", "qty": 1, "unit": "cup"}, {"id": "egg", "qty": 2, "unit": "piece"}, {"id": "butter", "qty": 5, "unit": "tbsp"}]},
+  {"do": "Pour into the hot skillet and bake for 22 minutes.", "tool": "oven", "oven_f": 400, "timer": 22, "cue": "golden, springs back"},
+  {"do": "Cut into wedges.", "tool": "knife"}
+ ]
+}

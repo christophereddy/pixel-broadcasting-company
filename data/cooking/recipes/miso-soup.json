@@ -1,0 +1,28 @@
+{
+ "slug": "miso-soup",
+ "name": "Miso Soup",
+ "summary": "Light dashi broth with miso, tofu and seaweed.",
+ "role": "starter",
+ "cuisine": "Japan",
+ "occasions": ["lunch", "lunchbox"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick"],
+ "serves": 4,
+ "time": {"prep": 5, "cook": 10, "total": 15},
+ "allergens": ["soy", "fish"],
+ "ingredients": [
+  {"id": "dashi", "qty": 4, "unit": "cup", "form": "whole"},
+  {"id": "wakame", "qty": 1, "unit": "tbsp", "form": "whole"},
+  {"id": "tofu", "qty": 7, "unit": "oz", "form": "cubed"},
+  {"id": "miso", "qty": 3, "unit": "tbsp", "form": "whole"},
+  {"id": "green-onion", "qty": 2, "unit": "piece", "form": "sliced"}
+ ],
+ "steps": [
+  {"do": "Soak the wakame in water for 5 minutes, then drain.", "uses": [{"id": "wakame", "qty": 1, "unit": "tbsp"}], "timer": 5},
+  {"do": "Cut the tofu into small cubes and slice the green onions.", "uses": [{"id": "tofu", "qty": 7, "unit": "oz"}, {"id": "green-onion", "qty": 2, "unit": "piece"}], "tool": "knife", "help": true},
+  {"do": "Heat the dashi until steaming.", "uses": [{"id": "dashi", "qty": 4, "unit": "cup"}], "tool": "stove", "heat": "medium", "help": true},
+  {"do": "Add the tofu and wakame for 2 minutes.", "tool": "stove", "heat": "low", "timer": 2, "help": true},
+  {"do": "Whisk the miso with a ladle of broth, then stir it back in. Don't let it boil.", "uses": [{"id": "miso", "qty": 3, "unit": "tbsp"}], "tool": "stove", "heat": "low", "help": true},
+  {"do": "Top with green onion."}
+ ]
+}

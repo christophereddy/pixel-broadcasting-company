@@ -1,0 +1,32 @@
+{
+ "slug": "fluffy-pancakes",
+ "name": "Fluffy Pancakes",
+ "summary": "Tall, soft pancakes with maple syrup.",
+ "role": "breakfast",
+ "cuisine": "American",
+ "occasions": ["breakfast", "brunch"],
+ "difficulty": "easy",
+ "tags": ["kid", "vegetarian"],
+ "serves": 4,
+ "time": {"prep": 10, "cook": 15, "total": 25},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "flour", "qty": 1.5, "unit": "cup", "form": "whole"},
+  {"id": "sugar", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "baking-powder", "qty": 2, "unit": "tsp", "form": "whole"},
+  {"id": "salt", "qty": 0.5, "unit": "tsp", "form": "ground"},
+  {"id": "milk", "qty": 1.25, "unit": "cup", "form": "whole"},
+  {"id": "egg", "qty": 1, "unit": "piece", "form": "beaten"},
+  {"id": "butter", "qty": 4, "unit": "tbsp", "form": "melted"},
+  {"id": "maple-syrup", "qty": 0.5, "unit": "cup", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Whisk the flour, sugar, baking powder and salt in a big bowl.", "uses": [{"id": "flour", "qty": 1.5, "unit": "cup"}, {"id": "sugar", "qty": 2, "unit": "tbsp"}, {"id": "baking-powder", "qty": 2, "unit": "tsp"}, {"id": "salt", "qty": 0.5, "unit": "tsp"}]},
+  {"do": "In another bowl, whisk the milk, egg and 3 tbsp of the melted butter.", "uses": [{"id": "milk", "qty": 1.25, "unit": "cup"}, {"id": "egg", "qty": 1, "unit": "piece"}, {"id": "butter", "qty": 3, "unit": "tbsp"}]},
+  {"do": "Pour the wet into the dry and stir until just mixed. Small lumps are fine."},
+  {"do": "Brush a pan with the last of the butter. Pour in 1/4 cup of batter per pancake.", "uses": [{"id": "butter", "qty": 1, "unit": "tbsp"}], "tool": "stove", "heat": "medium", "help": true},
+  {"do": "Cook for 2 minutes, until bubbles pop on top.", "tool": "stove", "heat": "medium", "timer": 2, "cue": "bubbles on top", "help": true},
+  {"do": "Flip and cook 1 minute more, until golden.", "tool": "stove", "heat": "medium", "timer": 1, "cue": "golden both sides", "help": true},
+  {"do": "Serve warm with maple syrup.", "uses": [{"id": "maple-syrup", "qty": 0.5, "unit": "cup"}]}
+ ]
+}

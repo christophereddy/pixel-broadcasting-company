@@ -1,0 +1,27 @@
+{
+ "slug": "mummy-hot-dogs",
+ "name": "Mummy Hot Dogs",
+ "summary": "Hot dogs wrapped in puff pastry bandages with mustard eyes.",
+ "role": "snack",
+ "cuisine": "American",
+ "occasions": ["party", "holiday"],
+ "difficulty": "easy",
+ "tags": ["kid"],
+ "serves": 8,
+ "time": {"prep": 15, "cook": 18, "total": 35},
+ "allergens": ["milk", "egg", "wheat"],
+ "ingredients": [
+  {"id": "puff-pastry", "qty": 1, "unit": "sheet", "form": "whole", "note": "thawed"},
+  {"id": "hot-dogs", "qty": 8, "unit": "piece", "form": "whole"},
+  {"id": "egg", "qty": 1, "unit": "piece", "form": "beaten"},
+  {"id": "yellow-mustard", "qty": 1, "unit": "tbsp", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 400°F.", "tool": "oven", "oven_f": 400, "help": true},
+  {"do": "Cut the pastry into thin strips with a pizza cutter.", "uses": [{"id": "puff-pastry", "qty": 1, "unit": "sheet"}], "tool": "knife", "help": true},
+  {"do": "Wrap the strips around each hot dog like bandages, leaving a gap for the face.", "uses": [{"id": "hot-dogs", "qty": 8, "unit": "piece"}]},
+  {"do": "Brush the pastry with beaten egg.", "uses": [{"id": "egg", "qty": 1, "unit": "piece"}]},
+  {"do": "Bake for 18 minutes, until puffed and golden.", "tool": "oven", "oven_f": 400, "timer": 18, "cue": "puffed and golden", "help": true},
+  {"do": "Dot on 2 mustard eyes.", "uses": [{"id": "yellow-mustard", "qty": 1, "unit": "tbsp"}]}
+ ]
+}

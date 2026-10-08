@@ -1,0 +1,38 @@
+{
+ "_about": "The cooking channel's shows: each one cooks one or more recipes from data/cooking/recipes/ for an occasion. The 3-hour rundown takes about half its time from Popular and a quarter each from In season and Around the world (tools/COOKING.md).",
+ "sections": {
+  "popular": {"name": "Popular", "share": 0.5},
+  "season": {"name": "In season", "share": 0.25},
+  "world": {"name": "Around the world", "share": 0.25}
+ },
+ "shows": [
+  {"slug": "soup-and-a-sandwich", "name": "Soup and a Sandwich", "section": "popular", "occasion": "lunch", "cooks": "parent-child", "recipes": ["tomato-soup", "grilled-cheese"]},
+  {"slug": "the-blt", "name": "The BLT", "section": "popular", "occasion": "lunch", "cooks": "two-adults", "recipes": ["blt-sandwich"]},
+  {"slug": "saturday-pancakes", "name": "Saturday Pancakes", "section": "popular", "occasion": "breakfast", "cooks": "parent-child", "recipes": ["fluffy-pancakes", "berry-fruit-salad"]},
+  {"slug": "eggs-on-toast", "name": "Eggs on Toast", "section": "popular", "occasion": "breakfast", "cooks": "two-elders", "recipes": ["scrambled-eggs-on-toast"]},
+  {"slug": "smoothie-and-toast", "name": "Smoothie and Toast", "section": "popular", "occasion": "breakfast", "cooks": "parent-child", "recipes": ["banana-smoothie", "peanut-butter-toast"]},
+  {"slug": "lunchbox-pinwheels", "name": "Lunchbox Pinwheels", "section": "popular", "occasion": "lunchbox", "cooks": "grandparent-grandchild", "recipes": ["turkey-cheese-pinwheels", "ants-on-a-log"]},
+  {"slug": "mac-and-cheese-night", "name": "Mac and Cheese Night", "section": "popular", "occasion": "weeknight", "cooks": "parent-child", "recipes": ["stovetop-mac-and-cheese", "roasted-broccoli"]},
+  {"slug": "taco-tuesday", "name": "Taco Tuesday", "section": "popular", "occasion": "weeknight", "cooks": "two-adults", "recipes": ["guacamole", "chicken-tacos"]},
+  {"slug": "spaghetti-and-meatballs", "name": "Spaghetti and Meatballs", "section": "popular", "occasion": "family-dinner", "cooks": "two-elders", "recipes": ["spaghetti-and-meatballs", "garlic-bread"]},
+  {"slug": "pizza-night", "name": "Pizza Night", "section": "popular", "occasion": "party", "cooks": "parent-child", "recipes": ["homemade-pizza"]},
+  {"slug": "sunday-roast", "name": "Sunday Roast", "section": "popular", "occasion": "family-dinner", "cooks": "two-elders", "recipes": ["roast-chicken", "crispy-potatoes", "garlic-green-beans", "apple-crumble"]},
+  {"slug": "chicken-noodle-soup", "name": "Chicken Noodle Soup", "section": "popular", "occasion": "comfort", "cooks": "grandparent-grandchild", "recipes": ["chicken-noodle-soup"]},
+  {"slug": "cookie-day", "name": "Cookie Day", "section": "popular", "occasion": "baking", "cooks": "parent-child", "recipes": ["chocolate-chip-cookies"]},
+  {"slug": "date-night-steak", "name": "Date Night Steak", "section": "popular", "occasion": "date-night", "cooks": "two-adults", "recipes": ["caesar-salad", "pan-seared-steak", "mashed-potatoes", "chocolate-mousse"]},
+  {"slug": "squash-soup-supper", "name": "Squash Soup Supper", "section": "season", "season": "autumn", "occasion": "weeknight", "cooks": "two-adults", "recipes": ["butternut-squash-soup", "grilled-cheese-croutons"]},
+  {"slug": "halloween-party-bites", "name": "Halloween Party Bites", "section": "season", "season": "halloween", "occasion": "party", "cooks": "parent-child", "recipes": ["mummy-hot-dogs", "monster-green-smoothie"]},
+  {"slug": "apple-day", "name": "Apple Day", "section": "season", "season": "autumn", "occasion": "baking", "cooks": "grandparent-grandchild", "recipes": ["apple-cinnamon-muffins", "warm-spiced-cider"]},
+  {"slug": "game-day-chili", "name": "Game Day Chili", "section": "season", "season": "autumn", "occasion": "game-day", "cooks": "two-adults", "recipes": ["beef-chili", "cornbread"]},
+  {"slug": "thanksgiving-dinner", "name": "Thanksgiving Dinner", "section": "season", "season": "thanksgiving", "occasion": "holiday", "cooks": "two-elders", "recipes": ["pumpkin-pie", "cranberry-sauce", "roast-turkey-breast", "herb-stuffing"]},
+  {"slug": "the-day-after-sandwich", "name": "The Day-After Sandwich", "section": "season", "season": "thanksgiving", "occasion": "leftovers", "cooks": "two-adults", "recipes": ["leftover-turkey-sandwich"]},
+  {"slug": "caramel-apples", "name": "Caramel Apples", "section": "season", "season": "autumn", "occasion": "party", "cooks": "parent-child", "recipes": ["caramel-apples"]},
+  {"slug": "lemons-of-amalfi", "name": "Lemons of Amalfi", "section": "world", "country": "Italy", "occasion": "family-dinner", "cooks": "two-elders", "recipes": ["caprese-salad", "spaghetti-al-limone", "lemon-ricotta-cake"]},
+  {"slug": "a-tokyo-lunchbox", "name": "A Tokyo Lunchbox", "section": "world", "country": "Japan", "occasion": "lunchbox", "cooks": "parent-child", "recipes": ["onigiri", "miso-soup"]},
+  {"slug": "breakfast-in-mexico-city", "name": "Breakfast in Mexico City", "section": "world", "country": "Mexico", "occasion": "breakfast", "cooks": "two-adults", "recipes": ["cafe-de-olla", "chilaquiles"]},
+  {"slug": "a-delhi-dinner", "name": "A Delhi Dinner", "section": "world", "country": "India", "occasion": "family-dinner", "cooks": "two-adults", "recipes": ["cumin-rice", "chana-masala", "mango-lassi"]},
+  {"slug": "lunch-in-paris", "name": "Lunch in Paris", "section": "world", "country": "France", "occasion": "lunch", "cooks": "grandparent-grandchild", "recipes": ["croque-monsieur", "sweet-crepes"]},
+  {"slug": "seoul-bowls", "name": "Seoul Bowls", "section": "world", "country": "South Korea", "occasion": "weeknight", "cooks": "two-adults", "recipes": ["bibimbap"]},
+  {"slug": "greek-taverna-night", "name": "Greek Taverna Night", "section": "world", "country": "Greece", "occasion": "party", "cooks": "two-elders", "recipes": ["tzatziki", "chicken-souvlaki-pitas", "honey-yogurt-walnuts"]}
+ ]
+}

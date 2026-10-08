@@ -1,0 +1,25 @@
+{
+ "slug": "peanut-butter-toast",
+ "name": "Peanut Butter Banana Toast",
+ "summary": "Toast with peanut butter, banana and a drizzle of honey.",
+ "role": "breakfast",
+ "cuisine": "American",
+ "occasions": ["breakfast", "snack"],
+ "difficulty": "easy",
+ "tags": ["kid", "quick", "vegetarian"],
+ "serves": 2,
+ "time": {"prep": 5, "cook": 3, "total": 8},
+ "allergens": ["wheat", "peanut"],
+ "ingredients": [
+  {"id": "bread", "qty": 2, "unit": "slice", "form": "toasted"},
+  {"id": "peanut-butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "banana", "qty": 1, "unit": "piece", "form": "sliced"},
+  {"id": "honey", "qty": 1, "unit": "tsp", "form": "whole"}
+ ],
+ "steps": [
+  {"do": "Toast the bread.", "uses": [{"id": "bread", "qty": 2, "unit": "slice"}]},
+  {"do": "Spread the peanut butter on the toast.", "uses": [{"id": "peanut-butter", "qty": 2, "unit": "tbsp"}]},
+  {"do": "Slice the banana with a butter knife and lay it on top.", "uses": [{"id": "banana", "qty": 1, "unit": "piece"}], "tool": "knife", "help": true},
+  {"do": "Drizzle with honey.", "uses": [{"id": "honey", "qty": 1, "unit": "tsp"}]}
+ ]
+}

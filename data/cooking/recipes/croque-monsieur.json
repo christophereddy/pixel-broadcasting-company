@@ -1,0 +1,32 @@
+{
+ "slug": "croque-monsieur",
+ "name": "Croque Monsieur",
+ "summary": "A toasted ham and Gruyère sandwich under creamy béchamel.",
+ "role": "main",
+ "cuisine": "France",
+ "occasions": ["lunch", "brunch"],
+ "difficulty": "medium",
+ "tags": [],
+ "serves": 4,
+ "time": {"prep": 15, "cook": 20, "total": 35},
+ "allergens": ["milk", "wheat"],
+ "ingredients": [
+  {"id": "butter", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "flour", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "milk", "qty": 1, "unit": "cup", "form": "whole"},
+  {"id": "nutmeg", "qty": 1, "unit": "pinch", "form": "ground"},
+  {"id": "salt", "qty": 0.25, "unit": "tsp", "form": "ground"},
+  {"id": "bread", "qty": 8, "unit": "slice", "form": "whole"},
+  {"id": "mustard", "qty": 2, "unit": "tbsp", "form": "whole"},
+  {"id": "ham", "qty": 8, "unit": "slice", "form": "sliced"},
+  {"id": "gruyere", "qty": 1.5, "unit": "cup", "form": "grated"}
+ ],
+ "steps": [
+  {"do": "Preheat the oven to 425°F.", "tool": "oven", "oven_f": 425},
+  {"do": "Melt the butter, stir in the flour, then whisk in the milk for 4 minutes, until thick.", "uses": [{"id": "butter", "qty": 2, "unit": "tbsp"}, {"id": "flour", "qty": 2, "unit": "tbsp"}, {"id": "milk", "qty": 1, "unit": "cup"}], "tool": "stove", "heat": "medium", "timer": 4, "cue": "thick sauce"},
+  {"do": "Stir in the nutmeg, salt and 1/2 cup Gruyère.", "uses": [{"id": "nutmeg", "qty": 1, "unit": "pinch"}, {"id": "salt", "qty": 0.25, "unit": "tsp"}, {"id": "gruyere", "qty": 0.5, "unit": "cup"}]},
+  {"do": "Spread mustard on 4 slices of bread, add 2 slices of ham each, then close the sandwiches.", "uses": [{"id": "bread", "qty": 8, "unit": "slice"}, {"id": "mustard", "qty": 2, "unit": "tbsp"}, {"id": "ham", "qty": 8, "unit": "slice"}]},
+  {"do": "Spoon the sauce over the tops and scatter on the rest of the Gruyère.", "uses": [{"id": "gruyere", "qty": 1, "unit": "cup"}]},
+  {"do": "Bake for 12 minutes, until bubbling and browned.", "tool": "oven", "oven_f": 425, "timer": 12, "cue": "bubbling, browned"}
+ ]
+}
