@@ -1,11 +1,14 @@
 # Merges one refresh's gathered stories into data/feed.json and data/locals.json, in place.
-#   python3 tools/merge.py SCRATCH_DIR
+#   python3 tools/merge.py SCRATCH_DIR [FEEDS_DIR]
 # SCRATCH_DIR holds the gatherers' output: news.json (world, international, national, politics, goodnews, sources),
 # bss.json (business, science, sports, goodnews, sources) and any number of locals_*.json files shaped
 # {slug: {local, weather, goodnews, sources}}. See tools/REFRESH.md.
 # It applies the age rules, falls back to still-fresh previous stories when a source came back empty,
 # and opens a new city desk when a locals_* file names a slug from cities.py that has no desk yet.
-import json, glob, os, re, sys, datetime as dt
+# FEEDS_DIR is a checkout of the feeds branch (default: a `feeds` folder next to SCRATCH_DIR, then /tmp/feeds, then the
+# branch itself via git). A story that names its article `url` gets the publisher, title and times from there.
+import json, glob, os, re, sys, subprocess, datetime as dt
+from urllib.parse import urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from cities import places
 
@@ -34,7 +37,44 @@ def iso(v):
 # gathered is when PBC first gathered the article: kept from an earlier refresh when the same article comes back,
 # otherwise the gatherer's value, otherwise this refresh (only for stories gathered this time, never for carried-over ones).
 FIRST = {}
+
+def ukey(u):
+    try: p = urlparse(u.strip()); return (p.hostname or '').lower().removeprefix('www.') + p.path.rstrip('/')
+    except Exception: return ''
+
+def feed_files():
+    """(name, json) for each source file of the feeds branch."""
+    for d in [sys.argv[2]] if len(sys.argv) > 2 else [os.path.join(os.path.dirname(os.path.abspath(R)), 'feeds'), '/tmp/feeds']:
+        if os.path.exists(f'{d}/index.json'):
+            return [(f, json.load(open(f))) for f in glob.glob(f'{d}/*.json') if not f.endswith('index.json')]
+    try:
+        g = lambda *a: subprocess.run(['git', '-C', REPO, *a], capture_output=True, text=True, timeout=60)
+        g('fetch', '-q', '--depth', '1', 'origin', '+feeds:refs/remotes/origin/feeds')
+        names = [n for n in g('ls-tree', '--name-only', 'origin/feeds').stdout.split() if n.endswith('.json') and n != 'index.json']
+        return [(n, json.loads(g('show', f'origin/feeds:{n}').stdout)) for n in names]
+    except Exception: return []
+
+# What the feeds know about each article: url key -> publisher, title, published, updated, gathered
+KNOWN = {}
+for _, f in feed_files():
+    if not isinstance(f, dict): continue
+    pub, got = f.get('name'), iso(f.get('fetchedAt'))
+    for a in f.get('articles') or []:
+        t = ' '.join(str(a.get('title', '')).split()); m = re.search(r'\s+[|\u2013\u2014:-]\s+([^|\u2013\u2014:-]{2,40})$', t)
+        if m and set(re.findall(r'[a-z]{3,}', m[1].lower())) & set(re.findall(r'[a-z]{3,}', str(pub).lower())): t = t[:m.start()]  # drop " | Site name"
+        if len(re.findall(r'[a-z][A-Z]', t)) >= 3: t = ''  # menu and icon labels run together (feeds fetched before fetch_sources.py took the page's own title)
+        KNOWN.setdefault(ukey(a.get('url', '')), {'publisher': pub, 'title': t, 'published': a.get('published'), 'updated': a.get('updated'), 'gathered': got})
+    for i in f.get('items') or []:
+        KNOWN.setdefault(ukey(i.get('link', '')), {'publisher': pub, 'title': i.get('title'), 'published': i.get('date'), 'gathered': got})
+KNOWN.pop('', None)
+for k in KNOWN.values():   # a publish day with no time came through as midnight UTC before the same fix: not a real time
+    for f in ('published', 'updated'):
+        if str(k.get(f) or '').endswith('T00:00:00Z'): k[f] = None
+MISSING = []
+
 def article(s, x, gathered_now):
+    k = KNOWN.get(ukey(s['url'])) if isinstance(s.get('url'), str) else None
+    if k: s = dict({a: b for a, b in k.items() if b}, **{a: b for a, b in s.items() if b})  # the story's own values win
     if isinstance(s.get('publisher'), str) and s['publisher'].strip(): x['publisher'] = s['publisher'].strip()[:80]
     if isinstance(s.get('title'), str) and s['title'].strip(): x['title'] = ' '.join(s['title'].split())[:200]
     if isinstance(s.get('url'), str) and re.match(r'^https://[^\s"<>]+$', s['url']) and len(s['url']) <= 500: x['url'] = s['url']
@@ -43,6 +83,7 @@ def article(s, x, gathered_now):
     got = [g for g in (FIRST.get(x.get('url')), FIRST.get(x['h']), iso(s.get('gathered'))) if g]
     if got: x['gathered'] = min(got)
     elif gathered_now: x['gathered'] = NOW
+    if gathered_now and 'url' not in x: MISSING.append(x['h'])
 
 def clean(lst, hours=24, need_place=False, fresh=False):
     out = []
@@ -128,3 +169,7 @@ feed['sources'] = src
 json.dump(feed, open(FEED, 'w'), ensure_ascii=False, indent=1)
 json.dump(sorted(desks.values(), key=lambda d: d['slug']), open(LOCALS, 'w'), ensure_ascii=False, indent=1)
 print({k: len(v) for k, v in feed.items() if isinstance(v, list)}); print(report)
+print(f'article details from the feeds for {len(KNOWN)} links')
+if MISSING:
+    print(f'WARNING: {len(set(MISSING))} new stories have no article url, so the Current story card shows no publisher, time or link for them.'
+          ' Give every story the `url` of the article it came from (tools/REFRESH.md step 2a). First few:', sorted(set(MISSING))[:5])
