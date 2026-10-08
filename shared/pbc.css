@@ -1,6 +1,6 @@
-/* Pixel Broadcasting Company: what News and Sports share. The page grid, the masthead
-   (PBC mark, NEWS|SPORTS switch, ON AIR), the control row with FULL SCREEN and SOUND,
-   the broadcast frame and full-screen mode. Change it here and both channels follow.
+/* Pixel Broadcasting Company: what News, Sports and Cooking share. The page grid, the masthead
+   (PBC mark, NEWS|SPORTS|COOKING switch, ON AIR), the control row with FULL SCREEN and SOUND,
+   the broadcast frame and full-screen mode. Change it here and every channel follows.
    Each page keeps only what is its own (the newsroom, the stadium, the right column's cards). */
 :root{
   /* THE ONE PLACE fonts and colors are defined. Every page, desk and channel uses these names;
@@ -83,7 +83,9 @@ body{margin:0;background:var(--room);color:var(--text);font-family:var(--f-body)
 .pbc-chan a:focus-visible,.pbc-btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 
 @media (max-width:640px){
+  /* phones: the three channels and ON AIR share one row, so ON AIR drops "24 HOURS" and the tabs pad less */
   .pbc-side{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+  .pbc-chan a{padding:6px 8px}.pbc-24{display:none}
   .pbc-btns{width:100%}.pbc-btn{flex:1 1 0;padding:10px 8px}
 }
 @media (prefers-reduced-motion:reduce){.pbc-dot{animation:none}}

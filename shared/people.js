@@ -3,7 +3,8 @@
    scale; anim() gives the blink, mouth and head-bob for a moment in time. News draws its whole cast with these, and the
    Sports Desk seats Bo and his guests at its anchor desk with them (tools/LOOK_BOOK.md, section 5).
    look: skin, hair, style (short, long, bob, curly, pony, beard, wild, bald), coat, shirt, pants, and optionally tie, shoe,
-   dress, glasses, earring, stache, cap (+ capBrim, capLogo). state: seated, headOnly, point, mic, blink, open, bob. */
+   dress, glasses, earring, stache, cap (+ capBrim, capLogo), kid (a child: the same head on a shorter body and legs, 28 pixels
+   tall, so draw them 4 pixels lower to stand on the same floor). state: seated, headOnly, point, mic, blink, open, bob. */
 (function(){
 "use strict";
 function hex(c){return [parseInt(c.slice(1,3),16),parseInt(c.slice(3,5),16),parseInt(c.slice(5,7),16)]}
@@ -12,21 +13,22 @@ function person(look,ctx,x,y,s,st){
   st=st||{};
   const r=(col,px,py,w,h)=>{ctx.fillStyle=col;ctx.fillRect(x+px*s,y+py*s,w*s,h*s)};
   const Y=st.bob?-1:0, h=look.hair, sh="#15151c";
+  const bh=look.kid?8:10, lg=look.kid?6:8, hy=12+bh-1;   // body height, leg length, the row the hands hang at
   if(!st.seated&&!st.headOnly){
-    r(look.pants,3,22,4,8);r(look.pants,7,22,4,8);
-    r(look.shoe||sh,2,30,5,2);r(look.shoe||sh,7,30,5,2);
+    r(look.pants,3,12+bh,4,lg);r(look.pants,7,12+bh,4,lg);
+    r(look.shoe||sh,2,12+bh+lg,5,2);r(look.shoe||sh,7,12+bh+lg,5,2);
   }
   if(!st.headOnly){
-    r(look.coat,1,12,12,10);
-    if(look.dress){r(look.coat,2,22,10,4)}
-    r(mix(look.coat,"#000000",.25),1,12,1,10);
+    r(look.coat,1,12,12,bh);
+    if(look.dress){r(look.coat,2,12+bh,10,look.kid?3:4)}
+    r(mix(look.coat,"#000000",.25),1,12,1,bh);
     r(look.shirt,5,12,4,2);r(look.shirt,6,14,2,1);
     if(look.tie)r(look.tie,6,13,2,6);
-    r(look.coat,0,13,1,8);r(look.skin,0,21,1,1);
+    r(look.coat,0,13,1,bh-2);r(look.skin,0,hy,1,1);
     if(st.point){r(look.coat,13,12,6,2);r(look.skin,19,12,2,2)}
     else if(st.mic){r(look.coat,12,13,2,4);r(look.coat,11,12,2,2);r(look.skin,10,10,2,2);r("#2a2a33",10,8,2,2);r("#c9ccd6",10,7,2,1);r("#f2b632",9,9,1,1)}
-    else{r(look.coat,13,13,1,8);r(look.skin,13,21,1,1)}
-    if(st.seated){r(look.skin,3,20,2,1);r(look.skin,9,20,2,1)}
+    else{r(look.coat,13,13,1,bh-2);r(look.skin,13,hy,1,1)}
+    if(st.seated){r(look.skin,3,hy-1,2,1);r(look.skin,9,hy-1,2,1)}
   }
   r(look.skin,6,10,2,2);
   // back hair

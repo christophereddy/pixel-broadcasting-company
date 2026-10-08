@@ -1,13 +1,13 @@
 /* Pixel Broadcasting Company: the newsroom's music, all made live with WebAudio like the voice blips (no audio files).
    PBCMusic.enable(ac, mode)   Called from the SOUND button's tap with the page's AudioContext and the new mode
                                (off / blips / voices). Music plays whenever sound is on, and the choice is remembered.
-   PBCMusic.cue(seg, scene, first)  Called when a new beat airs: the theme at the top of the news, a short sting when
-                               the segment changes, and a soft bed under the commercial break.
+   PBCMusic.cue(seg, scene, first)  Called when a new beat airs: the theme at the top of the news (or of a cooking show),
+                               a short sting when the segment changes, and a soft bed under the commercial break.
    PBCMusic.duck(on)           True while a voice is reading, so the music always sits under the voices.
    PBCMusic.tuneIn(screen, snd)  First visit: a one-tap TUNE IN over the broadcast that turns on voices and music
                                (iPhone only plays sound that starts inside a tap). Later visits skip the prompt and
                                bring back the last sound choice on the first tap anywhere on the page.
-   News only: the sports page doesn't load this file. */
+   News and Cooking; the sports page doesn't load this file. */
 window.PBCMusic = (function(){
   "use strict";
   const KEY = "pbc-sound";
@@ -113,7 +113,7 @@ window.PBCMusic = (function(){
     if (!on || !ac) return;
     if (scene === "ads") { bedStart(); return; }
     bedStop();
-    if (first && seg === "Top of the news") theme();
+    if (first) theme();
     else if (prev && seg !== prev) sting();
   }
   let ducked = false;

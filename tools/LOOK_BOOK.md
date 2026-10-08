@@ -15,9 +15,9 @@ Fonts and page colors are in the `:root` block of `shared/pbc.css` and are liste
 | Space between everything (masthead, control row, screen, cards) | **12px**, always | `gap:12px` on `.pbc-page`, `.pbc-top`, `.pbc-main`, `.side` |
 | Right column | 300px | `.pbc-page` grid |
 | Below 900px wide | one column: masthead, broadcast, then the right column underneath | `.pbc-page` |
-| Below 640px (phones) | ON AIR and the switch share a row; FULL SCREEN and SOUND split the full width | `.pbc-side`, `.pbc-btns` |
+| Below 640px (phones) | ON AIR and the switch share a row (ON AIR drops "24 HOURS" and the tabs pad 8px to fit); FULL SCREEN and SOUND split the full width | `.pbc-side`, `.pbc-btns` |
 | Control row | 36px tall: the page's own control on the left, FULL SCREEN and SOUND on the right | `.pbc-ctl`, `.pbc-btn` |
-| Masthead | the gold PBC mark with a 3px navy pixel shadow, "Pixel Broadcasting Company" in Pixelify 700, a subtitle line in muted body text, then NEWS \| SPORTS and ON AIR on the right | `.pbc-mast` |
+| Masthead | the gold PBC mark with a 3px navy pixel shadow, "Pixel Broadcasting Company" in Pixelify 700, a subtitle line in muted body text, then NEWS \| SPORTS \| COOKING and ON AIR on the right | `.pbc-mast` |
 | Company footer | under every page, built by `shared/pbc.js` | `.pbc-sitefoot` |
 
 Spacing inside things uses a small set of steps: **2, 4, 6, 8, 10, 12, 14, 16, 20px**. Reuse one of those rather than inventing 13 or 15.
@@ -92,6 +92,26 @@ A full figure on a **14 × 32 pixel grid** (head 0–11, body 12–21, legs 22�
 
 The source of truth is `CAST` in `index.html`; update this table when it changes.
 
+**Children** use the same `person()` with `kid: true` in their look: the same head on a body two rows shorter and legs two rows shorter (28 pixels tall instead of 32), drawn 4 pixels lower to stand on the same floor. At a counter they stand on a little step stool.
+
+**The PBC Cooking cast** (`CAST` in `cooking/kitchen.js`), drawn with `person()` at scale 2 in the kitchen and 3 at the table, each in an apron over their clothes. They are families, so a parent cooks with their own child and a grandparent with their own grandchild; a show's `cooks` picks the kind of pair, and the show itself picks which pair. The grown-up of a pair does every "Grown-up helps" step.
+
+| Name | Kind | Skin | Hair (style) | Clothes | Apron | Extras |
+| --- | --- | --- | --- | --- | --- | --- |
+| Gia Romano | adult | `#e0ac80` | `#2a1810` long | `#2b8fb3` | `#f4efe6` | |
+| Sam Okoro | adult | `#7a4a2c` | `#16110f` short | `#c4582b` | `#f2b632` | |
+| Lena Park | adult | `#ecc39a` | `#1c1418` bob | `#5e2d78` | `#f4efe6` | glasses |
+| Marco Diaz | adult | `#b07a50` | `#241a14` beard | `#1f7a52` | `#e3e7f0` | |
+| Bea Romano | elder (Mia's grandmother) | `#f1cfb0` | `#e3e3e8` bob | `#b8283e` | `#f6e27a` | glasses, gold earrings |
+| Walt Okoro | elder (Theo's grandfather) | `#6a4128` | `#d8d8d8` bald | `#253282` | `#e3e7f0` | glasses, mustache |
+| June Park | elder (Ava's grandmother) | `#e8c09a` | `#c3c6d0` curly | `#1e8c7e` | `#f4efe6` | |
+| Eli Diaz | elder | `#c08a5e` | `#e0e0e0` beard | `#a5835a` | `#f2b632` | |
+| Mia Romano | kid (Gia's daughter) | `#e0ac80` | `#2a1810` pony | `#f2b632` | `#e5607f` | |
+| Theo Okoro | kid (Sam's son) | `#7a4a2c` | `#16110f` short | `#2b8fb3` | `#5fbf6f` | |
+| Ava Park | kid (Lena's daughter) | `#ecc39a` | `#1c1418` bob | `#e5607f` | `#f2b632` | |
+
+Dot Delgado reads PBC Cooking's commercial breaks too, in her newsroom look.
+
 ### Sports booth: `drawAnnouncer(g, x, look, talking, mouthOpen, blink)` in `sports/index.html`
 
 A head-and-shoulders bust **36 pixels wide**, two to a **76 × 38** booth (seats at x=1 and x=40) behind a wooden desk, with a dark headset and mic.
@@ -113,6 +133,7 @@ Sprites **10 × 18 pixels**, with a 9×2 shadow (`rgba(0,0,0,.35)`) under anyone
 
 - **Batty**, the newsroom's black cat: about 14 pixels long, black `#121218` with a `#2c2c3a` highlight and yellow eyes `#f2d14a`. Poses: curled asleep (breathing, with a floating Z), walking, sitting with a swishing tail. Sleeps in a red cushion `#7a2a3a`/`#9c3a4c` at the end of the anchor desk (`drawCat()` in `index.html`), and on the Marketing Division page at 4 screen pixels per pixel (`advertise/office.js`).
 - **Pip** the axolotl, Juniper's lab companion (`drawPip()` in `index.html`).
+- **Baldur**, the PBC Cooking kitchen dog, drawn from Chris's photos: tan `#b4824c` body with a darker `#8c6034` belly line, a black `#2a221e` saddle and tail top, a dark `#3e332c` mask with a grey `#b9b2a6` muzzle, black nose, tan eyebrow spots, floppy ears, a white `#ece6da` chest and white toes, and a pink `#d8707e` tongue. About 32 × 20 pixels standing (`STAND` in `cooking/kitchen.js`, traced from the sketch). He sleeps in a round grey donut bed (`#9a95a2`/`#7d7884`, `#5f5a68` underneath) on the kitchen floor, breathing with a floating Z. In about one show in four, something drops off the island during the first prep step: he wakes, walks over, licks it up and goes back to bed. At the table he peeks over the edge.
 
 ## 6. Sets
 
@@ -136,6 +157,8 @@ Every studio is built from the same parts, so a new desk or channel looks like i
 Other newsroom scenes reuse the same parts: the over-the-shoulder shot (`drawOts`), the science lab (`drawLab`), field reports (`drawIntl`, `drawLocal`), the weather center (`drawWx`) and the commercial break (`drawAds`).
 
 **The Sports Desk** (`deskSet()`, `deskAnchors()` and `deskDrawPanel()` in `sports/show.js`, 480×270): a studio shot built from the palette above. The back wall with a `#10153a` baseboard and gold rule, four ceiling lights with cones, SPORTS DESK in gold lettering (scale 2) on the wall, Bo and the guest seated at the newsroom's anchor desk on the left (`person()` at scale 3, desk top at y=150, a football between them), and the big screen on the right (x 214–466, y 36–176, on a dark mount) holding the information panel or the break's ad: `#101743` with a `#1f2a66` heading bar in gold, rows alternating `#121848`/`#141c4e`, gold headings, `#f2f0e8` text, green `#9be15d` numbers. Over it, the newsroom's graphics: a `PBC` `SPORTS` bug, the rundown segment as the tag (NFL RECAP, COMMERCIAL BREAK), and a lower third with the speaker, the screen's heading as the red category, a headline, and the line being read. The booth and scoreboard windows are put away while the studio is on screen and come back only for replays and live games.
+
+**The PBC Cooking kitchen** (`kitchen()` in `cooking/kitchen.js`, 768×216, two screens wide): the studio back wall, ceiling lights and floor, with navy tiles behind the counters, navy cabinets with gold handles and pale `#e3e7f0` worktops. Left to right: a window over the back counter showing the Amalfi Coast (cliffs of stacked pastel houses, the sea, a lemon tree) or, for an Around the world show, that country's scene built from the same parts (Greece, Japan, Mexico, India, France, South Korea), with the sky for that place's own hour; the prep island in front, its navy front lettered PBC with a gold stripe; Baldur's bed; the fridge with drawings on it; a PBC COOKING sign; the range with its hood, flames sized to the step's heat and steam from the pot; the wall ovens, whose display shows the step's oven temperature and whose window glows while it's on; and the sink run with a shelf of jars. The camera shows one 384-pixel screen at a time, sits on the island, and pans in whole pixels (or cuts, with reduced motion) to follow the cook to the stove and the ovens. Ingredients are simple shapes tinted by ingredient group until the ingredient art is drawn. **The table** (`table()`): the cooks seated at scale 3 behind a red cloth with the finished dishes, under a lamp, the window behind them. The kitchen's commercial break is the newsroom's: Dot beside the big screen.
 
 **Stadiums and courts** (`buildField()`, `buildDiamond()`, `buildCourt()`, `f1BuildTrack()`): drawn once per game into an off-screen canvas. A seeded crowd in mixed skin tones and the two teams' colors, a wall of sponsor boards, then the playing surface in its real proportions (football: 8 pixels a yard, 5-yard bands alternating `#2e8a3c`/`#2a7f37`, end zones in team colors with the team name).
 

@@ -1,6 +1,6 @@
 # The cooking channel's recipes
 
-The COOKING channel cooks AI-written recipes in a pixel kitchen, and the recipe site lists them for searching. This file covers the recipe data: what a recipe is made of, the rules every recipe follows, and how to add one. The channel and the site are built on top of it later. The plan behind all of this is in the project's `ideas/cooking-channel.md`.
+The COOKING channel (`cooking/`) cooks AI-written recipes in a pixel kitchen, and the recipe site (`recipes/`) lists them for searching. This file covers the recipe data: what a recipe is made of, the rules every recipe follows, and how to add one. The plan behind all of this is in the project's `ideas/cooking-channel.md`.
 
 | File | What it is |
 | --- | --- |
@@ -8,7 +8,8 @@ The COOKING channel cooks AI-written recipes in a pixel kitchen, and the recipe 
 | `data/cooking/recipes/<slug>.json` | One recipe per file |
 | `data/cooking/shows.json` | The shows: which recipes each one cooks, for which occasion, in which rundown section, and who cooks it |
 | `tools/check_recipes.cjs` | Checks all of the above. Runs on every pull request. |
-| `tools/build_recipes.cjs` | Builds the recipe site from all of the above: `recipes/` (the search page, `index.json` and one page per recipe), `sitemap.xml` and `robots.txt` |
+| `tools/build_recipes.cjs` | Builds the recipe site from all of the above: `recipes/` (the search page, `index.json` and one page per recipe), `sitemap.xml` and `robots.txt`, plus `cooking/menu.json`, what the channel plays |
+| `cooking/schedule.js` | The channel's running order and pacing, which the checker uses too |
 
 Run `node tools/check_recipes.cjs` after any change to `data/cooking/`, then `node tools/build_recipes.cjs` to rebuild the site. GitHub runs `node tools/build_recipes.cjs --check` and fails if the site is out of date. Never edit the generated pages by hand.
 
@@ -86,4 +87,8 @@ A show cooks one or more recipes for an occasion. It doesn't have to be starter,
 
 `cooks` picks the pair in the kitchen: `two-adults`, `parent-child`, `two-elders` or `grandparent-grandchild`. A show made only of kid recipes is cooked by a parent and child or a grandparent and grandchild.
 
-**No repeats within 6 hours:** each section must hold at least two cycles' worth of airtime. Until the channel exists, the checker estimates airtime like this: 3 minutes a show (the opening and the table), plus for each recipe 1 minute of introduction, 1 minute a step and half a minute for every timer it skips. The channel's real pacing replaces that estimate when it is built. Every recipe has to be in at least one show.
+**Airtime** is the channel's own pacing (`cooking/schedule.js`): 3 minutes a show (half a minute of welcome, half a minute for the menu, a minute at the table and a minute of commercials), plus for each recipe a minute to introduce it and lay out what you'll need, a minute a step, and half a minute more for every timer (the fast-forward or time jump). Cycles run back to back, each section picking up where it left off, so every viewer sees the same show at the same time.
+
+**No repeats within 6 hours:** each section must hold at least two cycles' worth of airtime, and the checker plays the schedule 60 days forward to make sure no show or recipe airs twice within 6 hours. Every recipe has to be in at least one show.
+
+**On screen:** every amount, heat level, oven temperature and inside temperature the channel shows comes from the recipe's own fields, written out the same way the recipe page writes it. A timer is set to the step's exact time and starts; the next beat fast-forwards it (or, for 20 minutes or more, jumps ahead with a "20 MINUTES LATER" card), always showing the real time left.

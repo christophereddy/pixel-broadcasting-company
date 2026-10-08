@@ -10,7 +10,7 @@ Every PBC page looks like one company: the same fonts, the same colors, the same
 
 | You're adding | It looks like | Start from | Also read |
 | --- | --- | --- | --- |
-| **A channel** (a new tab in NEWS \| SPORTS, a full broadcast) | `index.html` (News) and `sports/index.html` (Sports) | the skeleton below, with a `.pbc-screen` broadcast in `.pbc-main` | "Channels" below |
+| **A channel** (a new tab in NEWS \| SPORTS \| COOKING, a full broadcast) | `index.html` (News), `sports/index.html` (Sports) and `cooking/index.html` (Cooking) | the skeleton below, with a `.pbc-screen` broadcast in `.pbc-main` | "Channels" below |
 | **A desk** (a hosted show inside a channel, like the Sports Desk) | `sports/show.js` and its rundown | the channel's own page; the desk adds a rundown card and drives the broadcast | "Desks" below |
 | **A sport** on Pixel Sports Live | the other sports | `tools/ADDING_A_SPORT.md` | this guide for anything visual |
 | **A company or info page** (About, Advertise, a new department) | `advertise/` (Marketing Division) and `about/` | the skeleton below, with `shared/company.css` cards in `.pbc-main` | "Company pages" below |
@@ -19,7 +19,7 @@ Every PBC page looks like one company: the same fonts, the same colors, the same
 
 | File | What's in it | Who uses it |
 | --- | --- | --- |
-| `shared/pbc.css` | **All fonts and colors** (the `:root` block), the page grid, masthead, NEWS \| SPORTS switch, ON AIR, control row, FULL SCREEN and SOUND buttons, the broadcast frame, full-screen mode, cards (`.pbc-card`), the rundown (`.pbc-rundown`), the on-air graphics (`.pbc-bug`, `.pbc-seg`, `.pbc-third`), the LIVE NOW chip, the company footer | every page |
+| `shared/pbc.css` | **All fonts and colors** (the `:root` block), the page grid, masthead, NEWS \| SPORTS \| COOKING switch, ON AIR, control row, FULL SCREEN and SOUND buttons, the broadcast frame, full-screen mode, cards (`.pbc-card`), the rundown (`.pbc-rundown`), the on-air graphics (`.pbc-bug`, `.pbc-seg`, `.pbc-third`), the LIVE NOW chip, the company footer | every page |
 | `shared/pbc.js` | SOUND, FULL SCREEN, voices, the company footer, business settings | every page |
 | `shared/company.css` | Text cards, directory, steps, stats, menu, forms, tags (`co-*` classes) | company pages |
 | `shared/live.js`, `shared/music.js`, `shared/ads.js` | LIVE NOW, the theme music and TUNE IN, the ad copy | channels |
@@ -97,8 +97,8 @@ Every page starts with this. Copy it exactly; only the three marked lines change
       <div><h1>Pixel Broadcasting Company</h1><p>SUBTITLE</p></div>  <!-- 2 -->
     </div>
     <div class="pbc-side">
-      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a></nav>
-      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR 24 HOURS</div>
+      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a><a href="../cooking/">COOKING</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR<span class="pbc-24"> 24 HOURS</span></div>
     </div>
   </header>
   <div class="pbc-ctl">
@@ -113,7 +113,7 @@ Every page starts with this. Copy it exactly; only the three marked lines change
 </html>
 ```
 
-The masthead, NEWS \| SPORTS switch, ON AIR, control row, broadcast and right column must sit in exactly the same place on every page. On the current channel's page, add `aria-current="page"` to its link in `.pbc-chan`.
+The masthead, NEWS \| SPORTS \| COOKING switch, ON AIR, control row, broadcast and right column must sit in exactly the same place on every page. On the current channel's page, add `aria-current="page"` to its link in `.pbc-chan`.
 
 ## Shared parts (use these, don't rebuild them)
 
@@ -144,9 +144,9 @@ Write a new `co-*` part in `shared/company.css` only when none of these fits, us
 ## Channels
 
 - The broadcast is a `<div class="pbc-screen">` 16:9 monitor in `.pbc-main`. Everything drawn over it sizes in `cqw` units so it scales with the monitor.
-- Graphics over the picture use the same vocabulary as News and Sports: gold label plates in `--f-label`, headlines in `--f-display` at weight 700, captions on `--overlay`, lower-thirds on `--paper`.
+- Graphics over the picture use the same vocabulary as News, Sports and Cooking: gold label plates in `--f-label`, headlines in `--f-display` at weight 700, captions on `--overlay`, lower-thirds on `--paper`.
 - Wire up `PBC.sound(...)` and `PBC.fullScreen(screen)` from `shared/pbc.js`; don't write your own.
-- Add the channel to the `.pbc-chan` switch on **every** page in the same pull request, and add its two selectors to `SHARED` in `tools/check_layout.cjs` so its controls are checked against News.
+- Add the channel to the `.pbc-chan` switch on **every** page in the same pull request, and add it to `PAGES` (with its selectors in `SHARED`) in `tools/check_layout.cjs` so its controls are checked against News. On a phone the switch and ON AIR share one row, so check a fourth tab still fits at 390px.
 
 ## Desks
 
@@ -162,7 +162,7 @@ Run all three (in a Claude cloud session, put `NODE_PATH=$(npm root -g)` in fron
 
 ```
 node tools/check_style.cjs    # fonts, colors and shared parts come from shared/pbc.css
-node tools/check_layout.cjs   # shared controls sit in the same place on News and Sports
+node tools/check_layout.cjs   # shared controls sit in the same place on News, Sports and Cooking
 node tools/check_sports.cjs   # only when Sports changed
 ```
 
