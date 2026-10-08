@@ -180,8 +180,9 @@ function emptyBed(){
 }
 function sleeping(t){
   const br = Math.floor(t / 1400) % 2;   // breathing: the back rises a pixel
-  sprite(BED, BED_X, BED_Y + 9 - 9, false, 9, BED.length);
+  sprite(BED, BED_X, BED_Y, false, 9, BED.length);
   sprite(BED, BED_X, BED_Y - br, false, 0, 9);
+  if (br) sprite(BED, BED_X, BED_Y, false, 8, 9);   // when his back rises, the row above the bed stretches to fill the gap
   if (Math.floor(t / 1800) % 3 === 0) txt("Z", BED_X + 50, BED_Y - 8 - (Math.floor(t / 600) % 3), "#9fb2ff");
 }
 // standing, walking (legs swap) or licking (head down, tongue out); x is his left edge, feet on the floor at y 146
