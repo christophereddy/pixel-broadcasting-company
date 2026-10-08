@@ -22,7 +22,7 @@
 .cs-art a:hover{color:var(--gold)}
 .cs-art a:focus-visible,.cs-read:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .cs-qr{flex:none;display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none}
-.cs-qr canvas{width:104px;height:104px;image-rendering:pixelated;image-rendering:crisp-edges;background:#fff;padding:4px;box-sizing:content-box}
+.cs-qr canvas{width:104px;height:104px;image-rendering:pixelated;image-rendering:crisp-edges;background:var(--white);padding:4px;box-sizing:content-box}
 .cs-qr span{font-family:var(--f-label);font-size:9px;letter-spacing:.06em;color:var(--muted)}
 .cs-read{display:none}
 

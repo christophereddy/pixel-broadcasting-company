@@ -140,10 +140,10 @@ window.PBCMusic = (function(){
     }
     const css = document.createElement("style");
     css.textContent =
-      ".tunein{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;background:#0a0c18b3}" +
+      ".tunein{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;background:var(--scrim)}" +
       ".tunein .box{display:flex;flex-direction:column;align-items:center;gap:1.4cqw;background:var(--panel);border:.5cqw solid var(--gold);box-shadow:.8cqw .8cqw 0 var(--navy);padding:2.6cqw 4cqw 2cqw}" +
       ".tunein .go{font-family:var(--f-label);font-size:4cqw;letter-spacing:.06em;background:var(--gold);color:var(--navy);border:0;padding:.55em 1.1em;cursor:pointer;box-shadow:.5cqw .5cqw 0 var(--navy)}" +
-      ".tunein .go:hover{background:#ffd35c}.tunein .go:focus-visible,.tunein .no:focus-visible{outline:.4cqw solid #fff;outline-offset:.4cqw}" +
+      ".tunein .go:hover{background:var(--gold-hi)}.tunein .go:focus-visible,.tunein .no:focus-visible{outline:.4cqw solid var(--white);outline-offset:.4cqw}" +
       ".tunein .what{margin:0;color:var(--text);font-family:var(--f-body);font-size:2.6cqw}" +
       ".tunein .no{all:unset;cursor:pointer;color:var(--muted);font-family:var(--f-body);font-size:2.3cqw;text-decoration:underline;text-underline-offset:.2em}" +
       ".tunein .no:hover{color:var(--text)}" +

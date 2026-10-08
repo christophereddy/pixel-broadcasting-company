@@ -528,7 +528,7 @@ function f1Board(){
   const R = S.f1r;
   if (!R || S.mode !== 'replay') return;
   const o = R.order || [], a = o[0], b = o[1];
-  const row = (k, r, label) => { if (!r) return; $('ab' + k).textContent = r.d.code; $('chip' + k).style.background = r.d.color; $('chip' + k).style.borderColor = '#ffffff'; $('sc' + k).textContent = label; };
+  const row = (k, r, label) => { if (!r) return; $('ab' + k).textContent = r.d.code; $('chip' + k).style.background = r.d.color; $('chip' + k).style.borderColor = 'var(--white)'; $('sc' + k).textContent = label; };
   row('A', a, 'P1'); row('H', b, b?.gap && b.gap !== 'OUT' ? b.gap : 'P2');
   $('possA').classList.remove('on'); $('possH').classList.remove('on');
   const lap = f1LeadLap(R, R.clock);
@@ -758,7 +758,7 @@ async function f1Neutral(){
   S.home = null; S.away = null; S.f1r = null;
   S.f1.track = f1Generic(); buildField();
   $('abA').textContent = '--'; $('abH').textContent = '--'; $('scA').textContent = ''; $('scH').textContent = '';
-  $('chipA').style.background = '#334477'; $('chipH').style.background = '#334477';
+  $('chipA').style.background = 'var(--no-team)'; $('chipH').style.background = 'var(--no-team)';
 }
 // the circuit refits when the window changes size (the booth and scoreboard cover different parts of it)
 let f1Resize = 0;

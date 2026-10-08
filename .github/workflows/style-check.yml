@@ -1,0 +1,21 @@
+# Fails a pull request when a page writes its own fonts or colors instead of using shared/pbc.css
+# (see tools/NEW_PAGE.md). Plain Node, no packages, a few seconds.
+name: Style check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tools/check_style.cjs

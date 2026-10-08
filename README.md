@@ -15,7 +15,10 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 | `data/locals.json` | One local desk (news, Good News, weather, sources) per city in the picker | The 3-hour refresh |
 | `news/visuals.js`, `news/places.js`, `news/world-map.bin` | Story visuals on the newsroom's video wall: a pixel map with a pin for world, international and national stories (from a story's `place`, or a country, state or city its text names), and category art for every desk story. Works from the built-in place list and map; no map service. | `visuals.js` through pull requests; `places.js` and `world-map.bin` only by re-running `tools/build_story_map.py` |
 | `sports/index.html` | Pixel Sports Live | Code changes only; the refresh never touches it |
-| `shared/pbc.css`, `shared/pbc.js` | What both channels share: page grid, masthead, NEWS/SPORTS switch, ON AIR, FULL SCREEN, SOUND, the broadcast frame and full-screen mode | Code changes |
+| `shared/pbc.css`, `shared/pbc.js` | The one source for every page's fonts and colors (the `:root` block), plus what all pages share: page grid, masthead, NEWS/SPORTS switch, ON AIR, FULL SCREEN, SOUND, the broadcast frame, full-screen mode, cards and the rundown | Code changes |
+| `tools/NEW_PAGE.md` | How to build a new channel, desk or company page so it matches the rest | When a shared part changes |
+| `tools/LOOK_BOOK.md`, `tools/look/` | The whole PBC look: spacing, borders, the broadcast screen, pixel-art rules, how characters and sets are drawn, the cast's colors | With every new character, set or look change |
+| `tools/check_style.cjs` | Fails when a page writes its own fonts or colors, or restyles a shared part (runs on every pull request) | Code changes |
 | `shared/music.js` | The newsroom's chiptune theme, segment stings, commercial-break bed and first-visit TUNE IN, all made with WebAudio (news only) | Code changes |
 | `tools/REFRESH.md` | Step-by-step instructions the 3-hour refresh follows | When sources or rules change |
 | `tools/sources.json`, `tools/fetch_sources.py`, `.github/workflows/fetch-sources.yml` | Chris's approved news sources, and the hourly Action that saves them (plus recent article text and each desk's forecast) to the `feeds` branch for the refresh to read | `sources.json` only when Chris names a source |
@@ -31,6 +34,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has two channe
 
 ## Rules
 
+- Every page takes its fonts, colors and shared parts from `shared/pbc.css`, by name. Before building a new channel, desk or page, follow `tools/NEW_PAGE.md`, and run `node tools/check_style.cjs` before every pull request.
 - News and Sports must look like one channel: banner, NEWS | SPORTS, ON AIR, FULL SCREEN, SOUND and the broadcast sit in the same place on both. Change shared parts in `shared/`, not in one page. After any layout change, run the layout check at phone, laptop and wide widths:
   `node tools/check_layout.cjs` (in a Claude cloud session: `NODE_PATH=$(npm root -g) node tools/check_layout.cjs`).
 - Every sport on Pixel Sports Live is built the same way, from one data source per sport. Before adding or changing a sport, follow `tools/ADDING_A_SPORT.md` and run `node tools/check_sports.cjs`.

@@ -488,7 +488,7 @@ function deskRender(now){
 function deskWall(g, now){
   const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
   R('#151b3d', 0, 0, W, H);
-  for (let x = 0; x < W; x += 30) R('#1b2250', x, 0, 2, H - 40);
+  for (let x = 0; x < W; x += 30) R('#1b2250', x, 0, 1, H - 40);   // the newsroom's panels: 1/16 of the screen apart
   R('#07091a', 0, 0, W, 10);
   for (let x = 0; x < W; x += 8) R('#1c2146', x, 3, 4, 4);
   g.globalAlpha = 0.06; g.fillStyle = '#fff2c0';
