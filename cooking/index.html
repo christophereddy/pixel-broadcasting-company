@@ -15,6 +15,8 @@
 <script src="../shared/music.js"></script>
 <script src="schedule.js"></script>
 <script src="kitchen.js"></script>
+<script src="food.js"></script>
+<script src="scenes.js"></script>
 <style>
 /* PBC Cooking: the kitchen broadcast, with the recipe's card and timer over the picture; the current recipe, the menu,
    the cooks and the rundown in the right column. Every amount, timer and temperature comes from cooking/menu.json. */
@@ -26,6 +28,16 @@
 .backlive:hover{background:var(--gold-hi)}
 .backlive:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .backlive[hidden],.nowref[hidden]{display:none}
+/* step controls: back a step, pause, next step (they turn the live show into a clip of the recipe on air) */
+.stepctl{display:flex;gap:10px}
+.stepctl[hidden],.stepctl.under{display:none}
+#steps{list-style:none;margin:0;padding:0;counter-reset:st}
+#steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:6px;padding:4px 6px;font-size:17px;line-height:1.15}
+#steps li::before{counter-increment:st;content:counter(st);font-family:var(--f-label);font-size:11px;color:var(--gold);padding-top:3px}
+#steps li.on{background:var(--navy)}
+#steps button{all:unset;cursor:pointer;color:var(--text);text-decoration:underline dotted 1px;text-underline-offset:3px;min-width:0}
+#steps button:hover,#steps li.on button{color:var(--gold)}
+#steps button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
 .screen canvas{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
 .ov{position:absolute;inset:0;pointer-events:none}
@@ -56,7 +68,8 @@
 .below{display:none;margin:0;background:var(--panel);border:2px solid var(--line);padding:10px 12px;font-size:19px}
 .below b{font-family:var(--f-display);font-weight:700;display:block;font-size:20px;margin-bottom:4px}
 .below ul{list-style:none;margin:6px 0 0;padding:6px 0 0;border-top:1px dashed var(--rule);display:flex;flex-direction:column;gap:2px}
-@media (max-width:640px){ .below{display:block} .nowref{width:100%} }
+@media (max-width:640px){ .below{display:block} .nowref{width:100%} .pbc-ctl .stepctl{display:none} .stepctl.under:not([hidden]){display:flex} }
+/* on phones the step controls sit under the picture, so the picture stays where every channel has it */
 
 h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--gold);margin:0 0 10px}
 .side ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
@@ -115,6 +128,7 @@ h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em
   <div class="pbc-ctl">
     <div class="nowref" id="nowRef"><span class="nlabel">NOW COOKING</span><span id="nowShow"></span></div>
     <button class="backlive" id="backLive" type="button" hidden>◀ BACK TO LIVE</button>
+    <div class="stepctl" hidden><button class="pbc-btn st-prev" type="button">◀ BACK A STEP</button><button class="pbc-btn st-pause" type="button">PAUSE</button><button class="pbc-btn st-next" type="button">NEXT STEP ▶</button></div>
     <div class="pbc-btns">
       <button class="pbc-btn" id="fs" type="button">FULL SCREEN</button>
       <button class="pbc-btn" id="snd" type="button" aria-label="Sound">SOUND: OFF</button>
@@ -143,6 +157,7 @@ h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em
       </div>
     </div>
   </div>
+  <div class="stepctl under" hidden><button class="pbc-btn st-prev" type="button">◀ BACK</button><button class="pbc-btn st-pause" type="button">PAUSE</button><button class="pbc-btn st-next" type="button">NEXT ▶</button></div>
   <div class="below" id="below"><b id="belowHead"></b><span id="belowSum"></span><ul id="belowList" hidden></ul></div>
   <p class="note">Every recipe on PBC Cooking is written by AI and checked against our recipe rules (amounts that add up, timers and temperatures as written, safe cooking temperatures), but none is tested in a kitchen. Amounts, timers and temperatures on screen come straight from the recipe. Search them all in the <a href="../recipes/">PBC recipe box</a>.</p>
   </div>
@@ -165,6 +180,7 @@ h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em
       <p class="rc-idle" id="rcIdle" hidden></p>
     </div>
     <div class="pbc-card"><h2>ON THE MENU</h2><ul id="menuList"></ul></div>
+    <div class="pbc-card"><h2>STEPS</h2><p class="pbc-rdhint" id="stepsHint">Pick a step to watch it, or watch it again.</p><ol id="steps"></ol></div>
     <div class="pbc-card"><h2>RUNDOWN</h2><p class="pbc-rdhint">Pick a show to jump to it after the current step.</p><ol id="rundown" class="pbc-rundown"></ol></div>
     <div class="pbc-card"><h2>IN THE KITCHEN</h2><ul id="crew"></ul></div>
   </aside>
@@ -224,7 +240,14 @@ function showOf(show){
     else if(b.kind==="ff"){const st=r.steps[b.step];b.st=st;b.jump=st.timer>=20;b.cat=b.jump?"TIME JUMP":"FAST FORWARD";b.head=r.name;
       b.body="The timer is set to "+timerWords(st.timer)+". "+(b.jump?"We're jumping ahead to when it's done.":"We're fast-forwarding, and the timer shows the real time left.")+(st.cue?" Done when: "+st.cue+".":"")+(st.temp_f?" Check it reads "+st.temp_f+"°F ("+celsius(st.temp_f)+"°C) inside.":"")}
     else if(b.kind==="table"){b.cat="TIME TO EAT";b.head=show.name+" is ready";b.body=and(names)+". Find every recipe on the PBC recipe box. Thanks for cooking with us on PBC Cooking."}
-    if(i===spillAt){const st=r.steps[b.step],u=(st.uses||[])[0]||r.ingredients[0];b.spill={x:206,color:K.tint(u.group)}}
+    if(r&&(b.kind==="step"||b.kind==="ff")&&b.station==="stove"){
+      // what's in the pan: everything earlier stove steps of this recipe put in, or what the steps since the last one made
+      const before=r.steps.slice(0,b.step),stoveUses=before.filter(x=>x.tool==="stove").flatMap(x=>x.uses||[]);
+      let pan=stoveUses;if(!pan.length&&!(r.steps[b.step].uses||[]).length){const last=before.map(x=>x.tool).lastIndexOf("stove");pan=before.slice(last+1).flatMap(x=>x.uses||[])}
+      const all=pan.concat(r.steps[b.step].uses||[]);
+      b.pan=pan;b.pot=/boil|simmer|soup|stock|broth/i.test(r.steps.slice(0,b.step+1).filter(x=>x.tool==="stove").map(x=>x.do).join(" "))||all.some(u=>/stock|water|dashi|canned-tomatoes|milk|cream|apple-cider/.test(u.id)&&u.unit==="cup")}
+    if(r&&b.kind==="step"&&b.station==="prep"&&!(r.steps[b.step].uses||[]).length)b.carry=r.steps.slice(0,b.step).flatMap(x=>x.uses||[]).slice(-4);
+    if(i===spillAt){const st=r.steps[b.step],u=(st.uses||[])[0]||r.ingredients[0];b.spill={x:206,color:PBC_FOOD.color(u.id)}}
   });
   return SHOWS[show.slug]={B,pair,show};
 }
@@ -242,25 +265,67 @@ function adWords(ad){
 /* ---------- where we are: live from the schedule, or a "watch it made" clip ---------- */
 const params=new URLSearchParams(location.search);
 let clip=null;
-(function(){const slug=params.get("recipe");if(!slug||!MENU.recipes[slug])return;
-  const show=MENU.shows.find(s=>s.recipes.includes(slug));if(!show)return;
+function makeClip(slug){
+  const show=MENU.shows.find(s=>s.recipes.includes(slug));if(!show)return null;
   const S=showOf(show),idx=S.B.map((b,i)=>b.recipe===slug?i:-1).filter(i=>i>=0);
-  clip={slug,S,from:idx[0],to:idx[idx.length-1],start:Date.now()};
-})();
+  return {slug,S,from:idx[0],to:idx[idx.length-1],start:Date.now(),paused:null};
+}
+if(MENU.recipes[params.get("recipe")])clip=makeClip(params.get("recipe"));
+// where the clip is, in ms into its show; paused clips stay put
+function clipT(){return clip.paused!==null?clip.paused:Date.now()-clip.start+clip.S.B[clip.from].at}
+function seekT(T){clip.start=Date.now()-(T-clip.S.B[clip.from].at);if(clip.paused!==null)clip.paused=T;spokenKey="";lastChars=-1}
 let offset=0,pick=null;
 function liveNow(){return Date.now()+offset}
 // the beat on air: {S, idx, b, el, entry, cycle}
 function onAir(){
-  if(clip){const B=clip.S.B,t=Date.now()-clip.start+B[clip.from].at,end=B[clip.to].at+B[clip.to].dur;
-    if(t>=end){endClip();return onAir()}
+  if(clip){const B=clip.S.B,end=B[clip.to].at+B[clip.to].dur;let t=clipT();
+    if(t>=end){if(clip.paused!==null){t=end-1;clip.paused=t}else{endClip();return onAir()}}
     let i=clip.from;while(i<clip.to&&B[i+1].at<=t)i++;return {S:clip.S,idx:i,b:B[i],el:t-B[i].at,clip:true}}
   const now=liveNow(),c=P.cycleAt(MENU,now),e=c.shows.find(x=>now>=x.start&&now<x.start+x.len)||c.shows[0];
   const S=showOf(e.show),t=now-e.start;let i=0;while(i<S.B.length-1&&S.B[i+1].at<=t)i++;
   return {S,idx:i,b:S.B[i],el:t-S.B[i].at,entry:e,cycle:c};
 }
-function endClip(){clip=null;history.replaceState(null,"",location.pathname);$("backLive").hidden=true;$("nowRef").hidden=false;$("bugLive").textContent="LIVE";lastKey="";lastShowKey=""}
+function endClip(){clip=null;history.replaceState(null,"",location.pathname);$("backLive").hidden=true;$("nowRef").hidden=false;$("bugLive").textContent="LIVE";pauseText("PAUSE");lastKey="";lastShowKey="";stepsKey=""}
+function enterClip(){$("backLive").hidden=false;$("nowRef").hidden=true;$("bugLive").textContent="CLIP";lastKey="";lastShowKey="";stepsKey="";
+  history.replaceState(null,"",location.pathname+"?recipe="+encodeURIComponent(clip.slug))}
 $("backLive").addEventListener("click",endClip);
-if(clip){$("backLive").hidden=false;$("nowRef").hidden=true;$("bugLive").textContent="CLIP"}
+/* ---------- step controls: back a step, pause, next step, or pick a step from the list ----------
+   On live, any of them turns the recipe on air into a clip from that point, so the viewer can cook at their own pace. */
+function clipOf(A){
+  if(!clip){if(!A.b.recipe)return false;const at=A.b.at+A.el;clip=makeClip(A.b.recipe);if(!clip)return false;seekT(at);enterClip()}
+  return true;
+}
+const stepBeat=(si)=>clip.S.B.findIndex(b=>b.recipe===clip.slug&&b.kind==="step"&&b.step===si);
+function watchStep(slug,si){
+  if(clip&&clip.slug!==slug)endClip();
+  if(!clip){clip=makeClip(slug);if(!clip)return;enterClip()}
+  const i=stepBeat(si);if(i>=0)seekT(clip.S.B[i].at);
+}
+const each=(cls,fn)=>document.querySelectorAll(cls).forEach(el=>el.addEventListener("click",fn));
+const pauseText=t=>document.querySelectorAll(".st-pause").forEach(el=>el.textContent=t);
+each(".st-prev",()=>{const A=onAir();if(!clipOf(A))return;const b=A.b;
+  if(b.kind==="step"||b.kind==="ff"){const back=b.kind==="step"&&A.el<4000;const si=back?b.step-1:b.step;
+    if(si>=0)seekT(clip.S.B[stepBeat(si)].at);else seekT(clip.S.B[clip.from].at)}
+  else seekT(clip.S.B[clip.from].at)});
+each(".st-next",()=>{const A=onAir();if(!clipOf(A))return;const b=A.b,r=MENU.recipes[clip.slug];
+  const si=(b.kind==="step"||b.kind==="ff")?b.step+1:0;
+  if(si<r.steps.length)seekT(clip.S.B[stepBeat(si)].at);else seekT(clip.S.B[clip.to].at)});
+each(".st-pause",()=>{const A=onAir();if(!clipOf(A))return;
+  if(clip.paused===null){clip.paused=clipT();pauseText("PLAY")}
+  else{const T=clip.paused;clip.paused=null;seekT(T);pauseText("PAUSE")}});
+// the STEPS card: the recipe on air, its steps as links, the one on screen marked
+let stepsKey="";
+function stepsCard(A){
+  const b=A.b,slug=b.recipe||null,on=(b.kind==="step"||b.kind==="ff")?b.step:-1,key=slug+":"+on;
+  document.querySelectorAll(".stepctl").forEach(el=>el.hidden=!slug);
+  if(key===stepsKey)return;stepsKey=key;
+  const ol=$("steps");ol.textContent="";
+  if(!slug){$("stepsHint").textContent="The steps of each recipe show here while it's cooking.";return}
+  $("stepsHint").textContent=MENU.recipes[slug].name+": pick a step to watch it, or watch it again.";
+  MENU.recipes[slug].steps.forEach((st,i)=>{const li=document.createElement("li");if(i===on)li.className="on";
+    const bt=document.createElement("button");bt.type="button";bt.textContent=st.do;bt.setAttribute("aria-label","Watch step "+(i+1)+": "+st.do);
+    bt.addEventListener("click",()=>watchStep(slug,i));li.appendChild(bt);ol.appendChild(li)});
+}
 
 /* ---------- drawing ---------- */
 const room=document.createElement("canvas");room.width=K.RW;room.height=H;const rg=room.getContext("2d");
@@ -270,8 +335,14 @@ let camX=0,camKey="";
 function draw(real,A){
   const {S,b,el}=A,show=S.show,r=b.recipe?MENU.recipes[b.recipe]:null,phase=Math.min(1,el/b.dur);
   if(b.kind==="ad"){const n=A.cycle?A.cycle.n:0;K.adBreak(rg,real,{ad:adFor(n+S.B.indexOf(b),b.ad),phase,left:Math.ceil((b.dur*(P.ADS-b.ad)-el)/1000)});v.drawImage(room,0,0,W,H,0,0,W,H);return}
-  if(b.kind==="table"){K.table(rg,real,{pair:S.pair,speak:b.sp,phase,country:show.country,dishes:show.recipes.map(s=>{const x=MENU.recipes[s];return {role:x.role,cols:x.ingredients.slice(0,3).map(i=>K.tint(i.group))}})});v.drawImage(room,0,0,W,H,0,0,W,H);return}
-  const st=b.st||{},target=K.kitchen(rg,real,{pair:S.pair,speak:b.sp,phase,el,kind:b.kind,station:b.station,prevStation:b.prevStation,worker:b.worker,
+  if(b.kind==="table"){K.table(rg,real,{pair:S.pair,speak:b.sp,phase,country:show.country,dishes:show.recipes.map(s=>{const x=MENU.recipes[s];return {role:x.role,cols:x.ingredients.slice(0,3).map(i=>PBC_FOOD.color(i.id))}})});v.drawImage(room,0,0,W,H,0,0,W,H);return}
+  // cut in close: the counter for "You'll need" and prep steps, the cooktop for stove steps, once the cook is in place.
+  // Oven steps and the step where something spills stay on the wide shot.
+  const st=b.st||{},close=b.kind==="need"?"counter":(b.kind==="step"||b.kind==="ff")&&!b.spill&&(b.kind==="ff"||el>=(b.station==="stove"?3000:4000))?({prep:"counter",stove:"stove"}[b.station]||null):null;
+  if(close){const ks={kind:b.kind==="need"?"need":"step",ff:b.kind==="ff",phase:b.kind==="ff"?1:phase,uses:st.uses||[],need:b.kind==="need"?r.ingredients:null,tool:st.tool,heat:st.heat,
+      cook:S.pair[b.worker],pan:b.pan,pot:b.pot,carry:b.carry,text:st.do||""};
+    PBC_SCENES[close](rg,real,ks);v.drawImage(room,0,0,W,H,0,0,W,H);return}
+  const target=K.kitchen(rg,real,{pair:S.pair,speak:b.sp,phase,el,kind:b.kind,station:b.station,prevStation:b.prevStation,worker:b.worker,
     tool:st.tool,heat:st.heat,oven_f:st.oven_f,uses:st.uses||(r?r.ingredients.slice(0,1):[]),need:b.kind==="need"?r.ingredients:null,spill:b.spill,country:show.country});
   const key=show.slug;
   if(key!==camKey||reduce){camX=target;camKey=key}else camX+=Math.max(-4,Math.min(4,target-camX));
@@ -402,7 +473,7 @@ function frame(){
     const sec=MENU.sections[S.show.section];
     $("seg").textContent=(A.clip?"WATCH IT MADE · ":"")+(b.kind==="ad"?"COMMERCIAL BREAK":(sec?sec.name+" · ":"")+S.show.name).toUpperCase();
     $("belowHead").textContent=w.head;$("belowSum").textContent=w.body;
-    fillCard(b,r);recipeCard(b,S);menuCard(S,b);crewCard(S,b);
+    fillCard(b,r);recipeCard(b,S);menuCard(S,b);crewCard(S,b);stepsCard(A);
     const sk=S.show.slug+":"+(A.entry?A.entry.start:"");
     if(sk!==lastShowKey){lastShowKey=sk;$("nowShow").textContent=S.show.name;rundown(A)}
     PBCMusic.cue(b.kind==="ad"?"Commercial break":S.show.name,b.kind==="ad"?"ads":"kitchen",A.idx===0);
@@ -421,6 +492,7 @@ function frame(){
   if(real-lastSlow>1000){lastSlow=real;$("clock").textContent=fmt(real,{hour:"numeric",minute:"2-digit",timeZoneName:"short"})}
 }
 let curBody="";
+if(clip)enterClip();
 requestAnimationFrame(frame);
 })();
 </script>
