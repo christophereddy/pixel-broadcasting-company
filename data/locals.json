@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 79,
+    "temp": 69,
     "cond": "A Few Clouds",
-    "obs": "7 Oct 17:52 pm EDT"
+    "obs": "7 Oct 21:52 pm EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,22 +76,22 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 56,
     "cond": "A Few Clouds",
-    "obs": "7 Oct 16:54 pm EDT"
+    "obs": "7 Oct 21:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55. Southwest wind 11 to 14 mph. "
+     "text": "Mostly clear, with a low around 55. Southwest wind around 11 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 74,
-     "text": "A chance of showers between 9am and 2pm.  Mostly cloudy, then gradually becoming sunny, with a high near 74. West wind 11 to 14 mph, with gusts as high as 25 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A chance of showers between 9am and 2pm.  Mostly cloudy, then gradually becoming sunny, with a high near 74. West wind 11 to 14 mph, with gusts as high as 26 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday Night",
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -157,9 +157,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 78,
-    "cond": "Partly Cloudy",
-    "obs": "7 Oct 16:53 pm CDT"
+    "temp": 67,
+    "cond": "Fair",
+    "obs": "7 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -212,7 +212,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -225,16 +225,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 81,
+    "temp": 67,
     "cond": "A Few Clouds",
-    "obs": "7 Oct 14:58 pm MDT"
+    "obs": "7 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Partly cloudy, with a low around 56. East northeast wind around 6 mph becoming southwest in the evening. "
+     "text": "Partly cloudy, with a low around 56. South southwest wind around 6 mph. "
     },
     {
      "name": "Thursday",
@@ -280,7 +280,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -291,6 +291,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Dodgers clinch NLDS in Atlanta",
+    "b": "The Dodgers beat the Braves 4-1 to take the series 3-1 and move on to the NLCS, chasing a third straight World Series title.",
+    "date": "2026-10-07",
+    "publisher": "LAist",
+    "title": "Dodgers beat Braves 4-1 to clinch NL Division Series",
+    "url": "https://laist.com/news/dodgers-beat-braves-4-1-to-clinch-nl-division-series",
+    "published": "2026-10-08T01:34:11Z",
+    "updated": "2026-10-08T01:38:15Z",
+    "gathered": "2026-10-08T02:11:30Z"
+   },
    {
     "h": "US Education Dept. targets LAUSD gender policy",
     "b": "The U.S. Department of Education launched an enforcement action against LAUSD, alleging its gender policies keep students' gender identities from parents.",
@@ -365,13 +376,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 66,
-     "text": "Partly cloudy, with a low around 66."
+     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 66. Southwest wind 5 to 10 mph becoming south southeast after midnight. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 81,
-     "text": "Mostly sunny, with a high near 81."
+     "text": "Patchy fog before 11am.  Otherwise, partly sunny, with a high near 81."
     }
    ]
   },
@@ -387,7 +398,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -399,10 +410,22 @@
   },
   "local": [
    {
+    "h": "Mamdani joins Oct. 7 vigil amid Union Square protests",
+    "b": "Mayor Zohran Mamdani attended a vigil marking the Oct. 7 attack as demonstrators waving Israeli and Palestinian flags filled Union Square under heavy police presence.",
+    "date": "2026-10-07",
+    "publisher": "Gothamist",
+    "title": "Mayor Mamdani attends Oct. 7 vigil amid protests in Union Square",
+    "url": "https://gothamist.com/news/pro-israel-pro-palestinian-crowds-converge-on-union-square-for-oct-7-vigil",
+    "published": "2026-10-07T23:33:00Z",
+    "updated": "2026-10-08T01:00:00Z",
+    "gathered": "2026-10-08T02:11:30Z"
+   },
+   {
     "h": "Queens pharmacist charged in $31M Medicaid fraud",
     "b": "The owner of two Jackson Heights pharmacies was arrested on charges of a $31 million Medicaid drug-buyback scheme involving HIV prescriptions, the state attorney general said.",
     "date": "2026-10-07",
     "publisher": "Gothamist",
+    "title": "Queens pharmacy owner charged in alleged $31M Medicaid drugs fraud",
     "url": "https://gothamist.com/news/queens-pharmacy-owner-charged-in-alleged-31m-medicaid-drugs-fraud",
     "published": "2026-10-07T21:15:19Z",
     "gathered": "2026-10-07T22:13:04Z"
@@ -415,6 +438,7 @@
      "The probe into Motor Vehicle Commission registration errors began in July."
     ],
     "publisher": "Gothamist",
+    "title": "NJ probe finds about 1,100 more problematic voter registrations",
     "url": "https://gothamist.com/news/nj-probe-finds-about-1100-more-problematic-voter-registrations",
     "published": "2026-10-07T20:53:00Z",
     "updated": "2026-10-07T21:32:00Z",
@@ -428,6 +452,7 @@
      "Officials say the gates have proven highly effective against fare evasion."
     ],
     "publisher": "Gothamist",
+    "title": "MTA moves ahead with $1.1B plan to put modern fare gates at 150 subway stations",
     "url": "https://gothamist.com/news/mta-moves-ahead-with-11b-plan-to-put-modern-fare-gates-at-150-subway-stations",
     "published": "2026-10-07T18:59:56Z",
     "gathered": "2026-10-07T22:09:00Z"
@@ -440,6 +465,7 @@
      "Her mother, 23-year-old Nathaly Ramirez, was killed Tuesday."
     ],
     "publisher": "Gothamist",
+    "title": "NYPD identifies man wanted in connection with deadly Bronx balcony push",
     "url": "https://gothamist.com/news/nypd-identifies-man-wanted-in-connection-with-deadly-bronx-balcony-push",
     "published": "2026-10-07T18:45:57Z",
     "gathered": "2026-10-07T22:09:00Z"
@@ -465,6 +491,7 @@
      "The judge cited his conditions and more than 200 days in detention."
     ],
     "publisher": "Gothamist",
+    "title": "NJ immigrant at the center of Delaney Hall protests released from ICE custody",
     "url": "https://gothamist.com/news/nj-immigrant-at-the-center-of-delaney-hall-protests-released-from-ice-custody",
     "published": "2026-10-07T15:36:00Z",
     "updated": "2026-10-07T20:38:00Z",
@@ -525,16 +552,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 59,
     "cond": "Fair",
-    "obs": "7 Oct 17:51 pm EDT"
+    "obs": "7 Oct 21:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 60,
-     "text": "Mostly clear, with a low around 60. Southwest wind 11 to 13 mph. "
+     "text": "Mostly clear, with a low around 60. Southwest wind around 13 mph. "
     },
     {
      "name": "Thursday",
@@ -580,7 +607,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -663,7 +690,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "goodnews": []
  },
  {
@@ -672,7 +699,22 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Internment survivors begin march to ICE center",
+    "b": "Japanese American survivors of WWII incarceration began a four-day pilgrimage from Seattle to the Northwest ICE Processing Center in Tacoma to protest mass deportations.",
+    "date": "2026-10-07",
+    "more": [
+     "About 20 people, including Tule Lake camp survivor Satsuki Ina, started in the International District."
+    ],
+    "publisher": "KUOW",
+    "title": "Japanese Americans in Seattle embark on 4-day pilgrimage to immigrant detention sites",
+    "url": "https://www.kuow.org/immigration/2026-10-07/japanese-americans-in-seattle-embark-on-4-day-pilgrimage-to-immigrant-detention-sites",
+    "published": "2026-10-08T00:48:40Z",
+    "updated": "2026-10-08T00:50:47Z",
+    "gathered": "2026-10-08T02:11:30Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
@@ -680,7 +722,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Increasing clouds, with a low around 51. North northwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Increasing clouds, with a low around 51. Light north wind. "
     },
     {
      "name": "Thursday",
@@ -726,7 +768,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-08T01:10:00Z",
+  "updatedAt": "2026-10-08T04:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
