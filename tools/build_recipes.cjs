@@ -5,6 +5,8 @@
 //   recipes/index.html          the searchable recipe box (search runs in the visitor's browser, recipes/search.js)
 //   recipes/index.json          the small index that search reads: names, tags and ingredient names, no steps
 //   recipes/<slug>/index.html   one page per recipe, with Google's recipe markup (schema.org Recipe)
+//   cooking/menu.json           everything the COOKING channel airs: the shows and their recipes, with every amount already
+//                               written out the same way the recipe pages write it (cooking/index.html reads it)
 //   sitemap.xml, robots.txt     so search engines find every page
 // Every amount, time and temperature on a page comes straight from the recipe data, never retyped.
 'use strict';
@@ -89,13 +91,13 @@ ${head}</head>
       <div><h1>Pixel Broadcasting Company</h1><p>PBC Cooking recipes</p></div>
     </div>
     <div class="pbc-side">
-      <nav class="pbc-chan" aria-label="Channel"><a href="${up}">NEWS</a><a href="${up}sports/">SPORTS</a></nav>
-      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR 24 HOURS</div>
+      <nav class="pbc-chan" aria-label="Channel"><a href="${up}">NEWS</a><a href="${up}sports/">SPORTS</a><a href="${up}cooking/">COOKING</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR<span class="pbc-24"> 24 HOURS</span></div>
     </div>
   </header>
   <div class="pbc-ctl">
     <div class="co-dept">PBC COOKING <span>· ${esc(dept)}</span></div>
-    <div class="pbc-btns"><a class="pbc-btn" href="${up}">BACK TO THE BROADCAST</a></div>
+    <div class="pbc-btns"><a class="pbc-btn" href="${up}cooking/">BACK TO THE BROADCAST</a></div>
   </div>
   </div>
 
@@ -197,7 +199,7 @@ ${steps}
     </section>`;
   const side = `    <div class="co-card"><h2>ON PBC COOKING</h2>
       ${show ? `<p>Cooked in <b>${esc(show.name)}</b>, in the ${esc(SHOWS.sections[show.section].name)} part of the show${show.country ? ', from ' + esc(show.country) : ''}.</p>` : ''}
-      <p><span class="co-tag soon">WATCH IT MADE: COMING SOON</span></p>
+      ${show ? `<p><a class="co-watch" href="../../cooking/?recipe=${r.slug}">▶ WATCH IT MADE</a></p><p class="co-hint">Plays this recipe's part of the show on PBC Cooking.</p>` : ''}
       ${sameShow.length ? `<p>Also in this show:</p><ul class="co-dir">${sameShow.map(o => `<li><a href="../${o.slug}/">${esc(o.name)}</a></li>`).join('')}</ul>` : ''}
     </div>
     <div class="co-card"><h2>MORE RECIPES</h2><ul class="co-dir">
@@ -279,8 +281,30 @@ function indexJson() {
   return '[\n' + rows.map(x => JSON.stringify(x)).join(',\n') + '\n]\n';
 }
 
+// The channel's copy of the data: shows, sections and every recipe, with ingredient lines written out by ingredientLine()
+// so the screen and the recipe page always say the same amount.
+function menuJson() {
+  const line = i => { const l = ingredientLine(i); return (l.qty ? l.qty + ' ' : '') + l.text; };
+  const recipes = {};
+  for (const r of RECIPES) {
+    const byId = new Map(r.ingredients.map(i => [i.id, i]));
+    recipes[r.slug] = {name: r.name, summary: r.summary, role: r.role, cuisine: r.cuisine, serves: r.serves, time: r.time, difficulty: r.difficulty,
+      tags: r.tags, allergens: r.allergens,
+      ingredients: r.ingredients.map(i => ({id: i.id, group: LIB.ingredients[i.id].group, line: line(i)})),
+      steps: r.steps.map(st => {
+        const o = {do: st.do};
+        if (st.uses) o.uses = st.uses.map(u => ({id: u.id, group: LIB.ingredients[u.id].group, line: line(Object.assign({}, byId.get(u.id), u, {note: undefined}))}));
+        for (const k of ['tool', 'heat', 'oven_f', 'timer', 'temp_f', 'cue', 'help']) if (st[k] !== undefined) o[k] = st[k];
+        return o;
+      })};
+  }
+  const shows = SHOWS.shows.map(s => Object.fromEntries(Object.entries(s)));
+  return '{"sections":' + JSON.stringify(SHOWS.sections) + ',\n"shows":[\n' + shows.map(x => JSON.stringify(x)).join(',\n') + '\n],\n"recipes":{\n' +
+    Object.entries(recipes).map(([k, v]) => JSON.stringify(k) + ':' + JSON.stringify(v)).join(',\n') + '\n}}\n';
+}
+
 function sitemap() {
-  const pages = ['', 'sports/', 'recipes/', 'about/', 'advertise/', 'contact/', 'sources/', 'corrections/', 'accessibility/', 'ad-policy/', 'privacy/', 'terms/']
+  const pages = ['', 'sports/', 'cooking/', 'recipes/', 'about/', 'advertise/', 'contact/', 'sources/', 'corrections/', 'accessibility/', 'ad-policy/', 'privacy/', 'terms/']
     .concat(RECIPES.map(r => 'recipes/' + r.slug + '/'));
   return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     pages.map(p => `  <url><loc>${SITE}${p}</loc></url>`).join('\n') + '\n</urlset>\n';
@@ -291,6 +315,7 @@ const out = new Map();
 out.set('recipes/index.html', indexPage());
 out.set('recipes/index.json', indexJson());
 for (const r of RECIPES) out.set(`recipes/${r.slug}/index.html`, recipePage(r));
+out.set('cooking/menu.json', menuJson());
 out.set('sitemap.xml', sitemap());
 out.set('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE}sitemap.xml\n`);
 

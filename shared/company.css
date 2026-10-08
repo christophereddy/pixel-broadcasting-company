@@ -149,3 +149,6 @@ a.pbc-btn{box-sizing:border-box;display:inline-flex;align-items:center;justify-c
 .co-badge.help{background:var(--live);color:var(--white);border-color:var(--live)}
 .co-badge.temp{border-color:var(--gold);color:var(--gold)}
 .co-done{display:block;margin-top:4px;color:var(--muted);font-size:18px}
+.co-watch{display:inline-block;font-family:var(--f-label);font-size:14px;letter-spacing:.06em;background:var(--gold);color:var(--navy);text-decoration:none;padding:10px 14px;box-shadow:3px 3px 0 var(--navy)}
+.co-watch:hover{background:var(--gold-hi)}
+.co-watch:focus-visible{outline:3px solid var(--gold);outline-offset:2px}

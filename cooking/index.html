@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PBC Cooking · Pixel Broadcasting Company</title>
+<meta name="description" content="PBC Cooking: a pixel-art kitchen cooking AI-written recipes around the clock, with every amount, timer and oven temperature shown exactly as the recipe says.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap">
+<link rel="stylesheet" href="../shared/pbc.css">
+<script src="../shared/pbc.js"></script>
+<script src="../shared/ads.js"></script>
+<script src="../shared/people.js"></script>
+<script src="../shared/music.js"></script>
+<script src="schedule.js"></script>
+<script src="kitchen.js"></script>
+<style>
+/* PBC Cooking: the kitchen broadcast, with the recipe's card and timer over the picture; the current recipe, the menu,
+   the cooks and the rundown in the right column. Every amount, timer and temperature comes from cooking/menu.json. */
+.side{display:flex;flex-direction:column;gap:12px}
+.nowref{box-sizing:border-box;display:flex;align-items:center;gap:10px;height:36px;min-width:0;white-space:nowrap;border:2px solid var(--line);background:var(--panel);padding:5px 12px;line-height:1.1}
+.nlabel{font-family:var(--f-label);font-size:11px;letter-spacing:.08em;color:var(--gold)}
+#nowShow{font-size:19px;color:var(--text);min-width:0;overflow:hidden;text-overflow:ellipsis}
+.backlive{box-sizing:border-box;height:36px;font-family:var(--f-label);font-size:13px;letter-spacing:.08em;background:var(--gold);color:var(--navy);border:0;padding:0 14px;cursor:pointer}
+.backlive:hover{background:var(--gold-hi)}
+.backlive:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.backlive[hidden],.nowref[hidden]{display:none}
+
+.screen canvas{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
+.ov{position:absolute;inset:0;pointer-events:none}
+.clock{position:absolute;right:2.4cqw;top:2.4cqw;font-family:var(--f-label);font-size:1.7cqw;background:var(--overlay-85);color:var(--white);padding:.5em .6em;font-variant-numeric:tabular-nums}
+/* the recipe card over the picture: what goes in, the heat, the oven, the timer */
+.ck{position:absolute;right:2.4cqw;top:6.6cqw;width:31cqw;max-height:52cqw;overflow:hidden;background:var(--overlay-90);border-top:.3cqw solid var(--gold);padding:1cqw 1.3cqw 1.2cqw;display:flex;flex-direction:column;gap:.6cqw}
+.ck[hidden]{display:none}
+.ck-l{font-family:var(--f-label);font-size:1.4cqw;letter-spacing:.08em;color:var(--gold)}
+.ck-x{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.15cqw;font-family:var(--f-body);font-size:2.05cqw;line-height:1.05;color:var(--caption-text)}
+.ck-x b{font-family:var(--f-label);font-weight:400;font-size:1.25cqw;color:var(--gold);margin-right:.5em}
+.ck-x.two{display:grid;grid-template-columns:1fr 1fr;column-gap:1cqw;font-size:1.75cqw}
+.ck-tags{display:flex;flex-wrap:wrap;gap:.4cqw}
+.ck-tags span{font-family:var(--f-label);font-size:1.25cqw;letter-spacing:.05em;padding:.35em .5em;background:var(--navy);color:var(--white)}
+.ck-tags .help{background:var(--live)}
+.ck-tags .temp{background:var(--gold);color:var(--navy)}
+.ck-timer{display:flex;align-items:center;gap:1cqw;background:var(--shadow);padding:.6cqw .9cqw}
+.ck-timer[hidden]{display:none}
+.ck-timer .lbl{font-family:var(--f-label);font-size:1.2cqw;color:var(--muted);line-height:1.2}
+.ck-timer .dig{font-family:var(--f-display);font-weight:700;font-size:4.2cqw;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
+.ck-timer .ff{font-family:var(--f-label);font-size:1.2cqw;color:var(--live)}
+.ck-timer.done .dig{color:var(--ok)}
+.jump{position:absolute;left:0;right:0;top:30%;display:flex;justify-content:center}
+.jump span{font-family:var(--f-label);font-size:3.6cqw;letter-spacing:.06em;background:var(--gold);color:var(--navy);padding:.5em 1em;box-shadow:.5cqw .5cqw 0 var(--navy)}
+.jump[hidden]{display:none}
+@container (max-width:600px){.ck{width:40cqw}.ck-x{font-size:2.8cqw}.ck-x b,.ck-tags span,.ck-l{font-size:1.9cqw}.ck-x.two{grid-template-columns:1fr}.ck-timer .dig{font-size:5.5cqw}.ck-timer .lbl,.ck-timer .ff{font-size:1.8cqw}}
+
+/* under the picture on phones, where the caption is hidden: the line being read and the card's list */
+.below{display:none;margin:0;background:var(--panel);border:2px solid var(--line);padding:10px 12px;font-size:19px}
+.below b{font-family:var(--f-display);font-weight:700;display:block;font-size:20px;margin-bottom:4px}
+.below ul{list-style:none;margin:6px 0 0;padding:6px 0 0;border-top:1px dashed var(--rule);display:flex;flex-direction:column;gap:2px}
+@media (max-width:640px){ .below{display:block} .nowref{width:100%} }
+
+h2{font-family:var(--f-label);font-weight:400;font-size:14px;letter-spacing:.1em;color:var(--gold);margin:0 0 10px}
+.side ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+/* CURRENT RECIPE: the recipe on the stove, with a QR code to its page on the recipe site */
+#recipeCard p{margin:0}
+.rc-seg{font-family:var(--f-label);font-size:10px;letter-spacing:.08em;color:var(--live)}
+.rc-name{font-family:var(--f-display);font-weight:700;font-size:21px;line-height:1.1;margin-top:2px!important}
+.rc-meta{margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:4px 10px}
+.rc-meta dt{font-family:var(--f-label);font-size:9px;letter-spacing:.08em;color:var(--gold)}
+.rc-meta dd{margin:0;font-size:17px;line-height:1.1}
+.rc-link{display:flex;align-items:flex-start;gap:10px;margin-top:8px}
+.rc-link>a:first-child{flex:1;min-width:0;color:var(--text);font-size:18px;line-height:1.15;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
+.rc-link>a:first-child:hover{color:var(--gold)}
+.rc-link a:focus-visible,.rc-open:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.rc-qr{flex:none;display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none}
+.rc-qr canvas{width:104px;height:104px;image-rendering:pixelated;image-rendering:crisp-edges;background:var(--white);padding:4px;box-sizing:content-box}
+.rc-qr span{font-family:var(--f-label);font-size:9px;letter-spacing:.06em;color:var(--muted)}
+.rc-open{display:none}
+.rc-idle{color:var(--muted);font-size:17px;line-height:1.2}
+@media (min-width:1600px){ .rc-qr canvas{width:132px;height:132px} }
+@media (max-width:640px){
+  .rc-qr{display:none!important}
+  .rc-open{display:block;margin-top:8px;text-align:center;font-family:var(--f-label);font-size:14px;letter-spacing:.06em;padding:12px;background:var(--gold);color:var(--navy);text-decoration:none}
+}
+#menuList li{padding:4px 6px;font-size:19px;line-height:1.15}
+#menuList li.on{background:var(--navy)}
+#menuList li.on a{color:var(--gold)}
+#menuList a{color:var(--text);text-decoration:underline dotted 1px;text-underline-offset:3px}
+#menuList a:hover{color:var(--gold)}
+#menuList a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+#menuList .rl{display:block;color:var(--muted);font-size:16px}
+#crew li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:center;padding:3px 4px}
+#crew canvas{width:42px;height:36px;image-rendering:pixelated;background:var(--well)}
+#crew li.on canvas{outline:2px solid var(--live)}
+#crew .nm{display:block;font-family:var(--f-display);font-weight:500;font-size:19px;line-height:1.1}
+#crew .rl{color:var(--muted);font-size:17px}
+#crew li.on .rl::after{content:" · on air";color:var(--live)}
+.note{color:var(--muted);font-size:17px;line-height:1.35;margin:0}
+.note a{color:var(--text);text-decoration-color:var(--gold)}
+</style>
+</head>
+<body>
+
+<div class="pbc-page">
+  <div class="pbc-top">
+  <header class="pbc-mast">
+    <div class="pbc-brand">
+      <span class="pbc-mark" aria-hidden="true">PBC</span>
+      <div><h1>Pixel Broadcasting Company</h1><p>PBC Cooking · <a class="note" href="../recipes/">the recipe box</a></p></div>
+    </div>
+    <div class="pbc-side">
+      <nav class="pbc-chan" aria-label="Channel"><a href="../">NEWS</a><a href="../sports/">SPORTS</a><a href="./" aria-current="page">COOKING</a></nav>
+      <div class="pbc-onair"><span class="pbc-dot"></span>ON AIR<span class="pbc-24"> 24 HOURS</span></div>
+    </div>
+  </header>
+  <div class="pbc-ctl">
+    <div class="nowref" id="nowRef"><span class="nlabel">NOW COOKING</span><span id="nowShow"></span></div>
+    <button class="backlive" id="backLive" type="button" hidden>◀ BACK TO LIVE</button>
+    <div class="pbc-btns">
+      <button class="pbc-btn" id="fs" type="button">FULL SCREEN</button>
+      <button class="pbc-btn" id="snd" type="button" aria-label="Sound">SOUND: OFF</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="pbc-main">
+  <div class="screen pbc-screen" id="screen">
+    <canvas id="tv" width="384" height="216" aria-label="Pixel art kitchen broadcast"></canvas>
+    <div class="ov" aria-live="polite">
+      <div class="pbc-bug"><b>PBC</b><span id="bugLive">LIVE</span></div>
+      <div class="pbc-seg" id="seg"></div>
+      <div class="clock" id="clock"></div>
+      <div class="ck" id="ck" hidden>
+        <span class="ck-l" id="ckLabel"></span>
+        <div class="ck-timer" id="ckTimer" hidden><span class="dig" id="ckDig"></span><span><span class="lbl" id="ckSet"></span><br><span class="ff" id="ckFf"></span></span></div>
+        <div class="ck-tags" id="ckTags"></div>
+        <ul class="ck-x" id="ckList"></ul>
+      </div>
+      <div class="jump" id="jump" hidden><span id="jumpText"></span></div>
+      <div class="pbc-third">
+        <div class="pbc-plate"><span id="pname"></span><span id="prole"></span></div>
+        <div class="pbc-hl"><span class="pbc-cat" id="chip"></span><span class="pbc-head" id="head"></span></div>
+        <p class="pbc-sum" id="sum"></p>
+      </div>
+    </div>
+  </div>
+  <div class="below" id="below"><b id="belowHead"></b><span id="belowSum"></span><ul id="belowList" hidden></ul></div>
+  <p class="note">Every recipe on PBC Cooking is written by AI and checked against our recipe rules (amounts that add up, timers and temperatures as written, safe cooking temperatures), but none is tested in a kitchen. Amounts, timers and temperatures on screen come straight from the recipe. Search them all in the <a href="../recipes/">PBC recipe box</a>.</p>
+  </div>
+
+  <aside class="side">
+    <div class="pbc-card" id="recipeCard" aria-live="polite">
+      <h2>CURRENT RECIPE</h2>
+      <div id="rcBody">
+        <p class="rc-seg" id="rcSeg"></p>
+        <p class="rc-name" id="rcName"></p>
+        <dl class="rc-meta">
+          <div><dt>COURSE</dt><dd id="rcRole"></dd></div>
+          <div><dt>SERVES</dt><dd id="rcServes"></dd></div>
+          <div><dt>TIME</dt><dd id="rcTime"></dd></div>
+          <div><dt>LEVEL</dt><dd id="rcLevel"></dd></div>
+        </dl>
+        <div class="rc-link"><a id="rcLink" target="_blank" rel="noopener">The full recipe on the PBC recipe box</a><a class="rc-qr" id="rcQr" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><canvas id="rcQrC"></canvas><span>SCAN FOR THE RECIPE</span></a></div>
+        <a class="rc-open" id="rcOpen" target="_blank" rel="noopener">OPEN THE RECIPE ▸</a>
+      </div>
+      <p class="rc-idle" id="rcIdle" hidden></p>
+    </div>
+    <div class="pbc-card"><h2>ON THE MENU</h2><ul id="menuList"></ul></div>
+    <div class="pbc-card"><h2>RUNDOWN</h2><p class="pbc-rdhint">Pick a show to jump to it after the current step.</p><ol id="rundown" class="pbc-rundown"></ol></div>
+    <div class="pbc-card"><h2>IN THE KITCHEN</h2><ul id="crew"></ul></div>
+  </aside>
+</div>
+
+<script>
+(async function(){
+"use strict";
+const W=384,H=216,$=id=>document.getElementById(id);
+const K=PBC_KITCHEN,P=PBC_COOK,{person,anim}=PBC_PEOPLE;
+let MENU=null;
+try{const r=await fetch("menu.json",{cache:"no-cache"});if(r.ok)MENU=await r.json()}catch(e){}
+if(!MENU||!MENU.shows||!MENU.recipes){$("head").textContent="We'll be right back";$("sum").textContent="The kitchen didn't load. Try reloading the page.";return}
+
+/* ---------- words: fixed sentences around the recipe's own fields ---------- */
+const ROLE={breakfast:"Breakfast",starter:"Starter",main:"Main",side:"Side",dessert:"Dessert",drink:"Drink",snack:"Snack",sauce:"Sauce"};
+const OCC={breakfast:"for breakfast",brunch:"for brunch",lunch:"for lunch",lunchbox:"for the lunchbox",weeknight:"for a weeknight dinner","family-dinner":"for a family dinner",comfort:"for some comfort food","date-night":"for date night",party:"for a party","game-day":"for game day",picnic:"for a picnic",snack:"for a snack",baking:"for a baking day",holiday:"for the holiday",leftovers:"for the leftovers"};
+const SEASON={autumn:"autumn",halloween:"Halloween",thanksgiving:"Thanksgiving",winter:"winter",spring:"spring",summer:"summer"};
+const HEAT={low:"LOW HEAT","medium-low":"MEDIUM-LOW HEAT",medium:"MEDIUM HEAT","medium-high":"MEDIUM-HIGH HEAT",high:"HIGH HEAT"};
+const celsius=f=>Math.round((f-32)*5/9);
+const minutes=m=>m<60?m+" min":Math.floor(m/60)+" hr"+(m%60?" "+(m%60)+" min":"");
+const timerWords=t=>t<1?Math.round(t*60)+" seconds":t>=60&&t%60===0?(t/60)+(t===60?" hour":" hours"):t+(t===1?" minute":" minutes");
+const and=a=>a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1];
+const RECIPE_URL=s=>new URL("recipes/"+s+"/",PBC.root).href;
+const VOICE={adult:{hz:420,pitch:1,rate:1},elder:{hz:300,pitch:.82,rate:.92},kid:{hz:660,pitch:1.45,rate:1.08},dot:{hz:480,pitch:1.1,rate:1.02}};
+
+const stationOf=(b,r)=>(b.kind==="step"||b.kind==="ff")?({stove:"stove",oven:"oven"}[r.steps[b.step].tool]||"prep"):"prep";
+function speakerOf(b,r){
+  if(b.kind==="open"||b.kind==="table")return 0;
+  if(b.kind==="menu")return 1;
+  if(b.kind==="intro")return b.ri%2;
+  if(b.kind==="need")return 1-b.ri%2;
+  if(b.kind==="step"||b.kind==="ff"){const st=r.steps[b.step];return st.help?0:(b.step+b.ri)%2}
+  return -1;
+}
+const SHOWS={};
+// a show's beats, with who speaks, where they stand and what the screen says
+function showOf(show){
+  if(SHOWS[show.slug])return SHOWS[show.slug];
+  const B=P.showBeats(show,MENU.recipes),pair=K.pairFor(show),names=show.recipes.map(s=>MENU.recipes[s].name);
+  const kidShow=show.recipes.every(s=>MENU.recipes[s].tags.includes("kid"));
+  // about one show in four, something drops off the island during its first prep step and Baldur cleans it up
+  const spillAt=K.hash(show.slug)%4===1?B.findIndex(b=>b.kind==="step"&&stationOf(b,MENU.recipes[b.recipe])==="prep"):-1;
+  B.forEach((b,i)=>{
+    const r=b.recipe?MENU.recipes[b.recipe]:null;
+    b.sp=speakerOf(b,r);b.station=r?stationOf(b,r):"prep";b.worker=b.sp<0?0:b.sp;
+    const prev=B[i-1];b.prevStation=prev&&prev.recipe&&prev.kind!=="intro"?prev.station:"prep";
+    if(prev&&prev.worker!==b.worker&&b.prevStation!=="prep")b.prevStation="prep";
+    if(b.kind==="open"){b.cat="PBC COOKING";b.head="Welcome to PBC Cooking";
+      b.body="I'm "+pair[0].name+", and this is "+pair[1].name+". Today it's "+show.name+", "+(OCC[show.occasion]||"")+"."+(show.country?" We're cooking from "+show.country+", and that's the view out our window today.":"")+(show.season&&SEASON[show.season]?" Just right for "+SEASON[show.season]+".":"")}
+    else if(b.kind==="menu"){b.cat="ON THE MENU";b.head=and(names);
+      b.body=(names.length>1?"That's "+names.length+" recipes today.":"One recipe today.")+" Every one is on the PBC recipe box: scan the code beside the show to cook along."+(kidShow?" Kids can make "+(names.length>1?"all of these":"this one")+", with a grown-up on the sharp and hot steps.":"")}
+    else if(b.kind==="intro"){b.cat=(ROLE[r.role]||"RECIPE").toUpperCase();b.head=r.name;
+      b.body=r.summary+" Serves "+r.serves+", ready in "+minutes(r.time.total)+". "+r.difficulty.charAt(0).toUpperCase()+r.difficulty.slice(1)+"."}
+    else if(b.kind==="need"){b.cat="YOU'LL NEED";b.head=r.name+": "+r.ingredients.length+" ingredients";b.body=r.ingredients.map(x=>x.line).join("; ")+".";b.list=r.ingredients.map(x=>x.line)}
+    else if(b.kind==="step"){const st=r.steps[b.step];b.cat="STEP "+(b.step+1)+" OF "+r.steps.length;b.head=r.name;b.body=st.do;b.st=st;b.list=(st.uses||[]).map(u=>u.line)}
+    else if(b.kind==="ff"){const st=r.steps[b.step];b.st=st;b.jump=st.timer>=20;b.cat=b.jump?"TIME JUMP":"FAST FORWARD";b.head=r.name;
+      b.body="The timer is set to "+timerWords(st.timer)+". "+(b.jump?"We're jumping ahead to when it's done.":"We're fast-forwarding, and the timer shows the real time left.")+(st.cue?" Done when: "+st.cue+".":"")+(st.temp_f?" Check it reads "+st.temp_f+"°F ("+celsius(st.temp_f)+"°C) inside.":"")}
+    else if(b.kind==="table"){b.cat="TIME TO EAT";b.head=show.name+" is ready";b.body=and(names)+". Find every recipe on the PBC recipe box. Thanks for cooking with us on PBC Cooking."}
+    if(i===spillAt){const st=r.steps[b.step],u=(st.uses||[])[0]||r.ingredients[0];b.spill={x:206,color:K.tint(u.group)}}
+  });
+  return SHOWS[show.slug]={B,pair,show};
+}
+
+/* ---------- the commercial break: three 20-second ads at the end of every show (shared/ads.js) ---------- */
+let ADS=PBC_ADS.DEFAULT_ADS;
+PBC_ADS.loadSold("../").then(list=>{if(list)ADS=list});
+const tcase=s=>String(s).toLowerCase().replace(/\b[a-z]/g,x=>x.toUpperCase());
+function adFor(n,i){return i===2?PBC_ADS.HOUSE_AD:ADS[(n*2+i)%ADS.length]}
+function adWords(ad){
+  if(ad.house)return {cat:"PBC AD",head:"Want your business on PBC?",body:"Scan the code on the screen to reach me at the sales desk."};
+  return {cat:"SPONSOR",head:"Brought to you by "+tcase(ad.name),body:(ad.line?ad.line.charAt(0)+ad.line.slice(1).toLowerCase()+".":"")+(ad.url?" Scan the code on the screen to learn more.":"")};
+}
+
+/* ---------- where we are: live from the schedule, or a "watch it made" clip ---------- */
+const params=new URLSearchParams(location.search);
+let clip=null;
+(function(){const slug=params.get("recipe");if(!slug||!MENU.recipes[slug])return;
+  const show=MENU.shows.find(s=>s.recipes.includes(slug));if(!show)return;
+  const S=showOf(show),idx=S.B.map((b,i)=>b.recipe===slug?i:-1).filter(i=>i>=0);
+  clip={slug,S,from:idx[0],to:idx[idx.length-1],start:Date.now()};
+})();
+let offset=0,pick=null;
+function liveNow(){return Date.now()+offset}
+// the beat on air: {S, idx, b, el, entry, cycle}
+function onAir(){
+  if(clip){const B=clip.S.B,t=Date.now()-clip.start+B[clip.from].at,end=B[clip.to].at+B[clip.to].dur;
+    if(t>=end){endClip();return onAir()}
+    let i=clip.from;while(i<clip.to&&B[i+1].at<=t)i++;return {S:clip.S,idx:i,b:B[i],el:t-B[i].at,clip:true}}
+  const now=liveNow(),c=P.cycleAt(MENU,now),e=c.shows.find(x=>now>=x.start&&now<x.start+x.len)||c.shows[0];
+  const S=showOf(e.show),t=now-e.start;let i=0;while(i<S.B.length-1&&S.B[i+1].at<=t)i++;
+  return {S,idx:i,b:S.B[i],el:t-S.B[i].at,entry:e,cycle:c};
+}
+function endClip(){clip=null;history.replaceState(null,"",location.pathname);$("backLive").hidden=true;$("nowRef").hidden=false;$("bugLive").textContent="LIVE";lastKey="";lastShowKey=""}
+$("backLive").addEventListener("click",endClip);
+if(clip){$("backLive").hidden=false;$("nowRef").hidden=true;$("bugLive").textContent="CLIP"}
+
+/* ---------- drawing ---------- */
+const room=document.createElement("canvas");room.width=K.RW;room.height=H;const rg=room.getContext("2d");
+const tv=$("tv"),v=tv.getContext("2d");v.imageSmoothingEnabled=false;
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+let camX=0,camKey="";
+function draw(real,A){
+  const {S,b,el}=A,show=S.show,r=b.recipe?MENU.recipes[b.recipe]:null,phase=Math.min(1,el/b.dur);
+  if(b.kind==="ad"){const n=A.cycle?A.cycle.n:0;K.adBreak(rg,real,{ad:adFor(n+S.B.indexOf(b),b.ad),phase,left:Math.ceil((b.dur*(P.ADS-b.ad)-el)/1000)});v.drawImage(room,0,0,W,H,0,0,W,H);return}
+  if(b.kind==="table"){K.table(rg,real,{pair:S.pair,speak:b.sp,phase,country:show.country,dishes:show.recipes.map(s=>{const x=MENU.recipes[s];return {role:x.role,cols:x.ingredients.slice(0,3).map(i=>K.tint(i.group))}})});v.drawImage(room,0,0,W,H,0,0,W,H);return}
+  const st=b.st||{},target=K.kitchen(rg,real,{pair:S.pair,speak:b.sp,phase,el,kind:b.kind,station:b.station,prevStation:b.prevStation,worker:b.worker,
+    tool:st.tool,heat:st.heat,oven_f:st.oven_f,uses:st.uses||(r?r.ingredients.slice(0,1):[]),need:b.kind==="need"?r.ingredients:null,spill:b.spill,country:show.country});
+  const key=show.slug;
+  if(key!==camKey||reduce){camX=target;camKey=key}else camX+=Math.max(-4,Math.min(4,target-camX));
+  v.drawImage(room,camX,0,W,H,0,0,W,H);
+}
+
+/* ---------- the recipe card and timer over the picture ---------- */
+const mmss=s=>{s=Math.max(0,Math.ceil(s));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+":"+String(m).padStart(2,"0"):m)+":"+String(x).padStart(2,"0")};
+const TSTART=3000;   // the timer is set and started once the cook is in place
+function timerLeft(b,el,B,idx){
+  // seconds left on the kitchen timer: it runs at real speed during the step, then the fast-forward beat runs it down to 0
+  const T=b.st.timer*60;
+  if(b.kind==="step")return Math.max(0,T-Math.max(0,el-TSTART)/1000);
+  const rest=Math.max(0,T-(B[idx-1].dur-TSTART)/1000);
+  if(b.jump)return el<2500?rest:0;
+  return Math.max(0,rest*(1-Math.min(1,el/(b.dur*.8))));
+}
+function fillCard(b,r){
+  const ck=$("ck"),list=$("ckList"),tags=$("ckTags");list.textContent="";tags.textContent="";list.className="ck-x";
+  const bl=$("belowList");bl.textContent="";
+  const add=(text,lbl)=>{const li=document.createElement("li");if(lbl){const s=document.createElement("b");s.textContent=lbl;li.appendChild(s)}li.append(text);list.appendChild(li);
+    const l2=document.createElement("li");l2.textContent=(lbl?lbl+" ":"")+text;bl.appendChild(l2)};
+  const tag=(text,cls)=>{const s=document.createElement("span");s.textContent=text;if(cls)s.className=cls;tags.appendChild(s);const l2=document.createElement("li");l2.textContent=text;bl.appendChild(l2)};
+  $("ckTimer").hidden=true;
+  if(b.kind==="need"){$("ckLabel").textContent="YOU'LL NEED · SERVES "+r.serves;if(b.list.length>7)list.className="ck-x two";b.list.forEach(x=>add(x))}
+  else if(b.kind==="step"||b.kind==="ff"){const st=b.st;
+    $("ckLabel").textContent=(b.kind==="ff"?b.cat+" · ":"")+"STEP "+(b.step+1)+" OF "+r.steps.length;
+    if(st.heat)tag(HEAT[st.heat]);
+    if(st.oven_f)tag("OVEN "+st.oven_f+"°F / "+celsius(st.oven_f)+"°C");
+    if(st.temp_f)tag("CHECK "+st.temp_f+"°F / "+celsius(st.temp_f)+"°C INSIDE","temp");
+    if(st.help)tag("GROWN-UP HELPS","help");
+    if(b.kind==="step")(st.uses||[]).forEach(u=>add(u.line,"ADD"));
+    if(b.kind==="ff"&&st.cue)add("Done when: "+st.cue+".");
+    if(st.timer!==undefined){$("ckTimer").hidden=false;$("ckSet").textContent="TIMER SET: "+timerWords(st.timer).toUpperCase();const l2=document.createElement("li");l2.textContent="Timer: "+timerWords(st.timer);bl.appendChild(l2)}
+  }
+  else if(b.kind==="intro"){$("ckLabel").textContent=(ROLE[r.role]||"").toUpperCase()+" · "+r.difficulty.toUpperCase();add(minutes(r.time.total),"TIME");add(String(r.serves),"SERVES");if(r.time.prep)add(minutes(r.time.prep),"PREP");if(r.time.cook)add(minutes(r.time.cook),"COOK")}
+  else{ck.hidden=true;bl.hidden=true;return}
+  ck.hidden=false;bl.hidden=!bl.children.length;
+}
+
+/* ---------- CURRENT RECIPE, ON THE MENU, IN THE KITCHEN ---------- */
+let rcSlug=null;
+function recipeCard(b,S){
+  const slug=b.kind==="ad"?null:(b.recipe||(b.kind==="table"?S.show.recipes[S.show.recipes.length-1]:S.show.recipes[0]));
+  if(slug===rcSlug)return;rcSlug=slug;
+  $("rcBody").hidden=!slug;$("rcIdle").hidden=!!slug;
+  if(!slug){$("rcIdle").textContent="Commercial break. The next show's first recipe will show here when it starts.";return}
+  const r=MENU.recipes[slug],url=RECIPE_URL(slug),sec=MENU.sections[S.show.section];
+  $("rcSeg").textContent=((sec?sec.name:"")+" · "+S.show.name).toUpperCase();
+  $("rcName").textContent=r.name;$("rcRole").textContent=ROLE[r.role]||"";$("rcServes").textContent=r.serves;
+  $("rcTime").textContent=minutes(r.time.total);$("rcLevel").textContent=r.difficulty.charAt(0).toUpperCase()+r.difficulty.slice(1);
+  ["rcLink","rcQr","rcOpen"].forEach(id=>$(id).href=url);
+  $("rcLink").textContent=r.name+": the full recipe on the PBC recipe box";
+  const M=PBC_ADS.qrMatrix(url),c=$("rcQrC");$("rcQr").hidden=!M;
+  if(M){const n=M.length,q=2,px=4,size=(n+2*q)*px;c.width=c.height=size;const x=c.getContext("2d");x.fillStyle="#ffffff";x.fillRect(0,0,size,size);x.fillStyle="#05060d";
+    M.forEach((row,y)=>row.forEach((d,i)=>{if(d)x.fillRect((i+q)*px,(y+q)*px,px,px)}))}
+}
+function menuCard(S,b){
+  const ul=$("menuList");ul.textContent="";
+  S.show.recipes.forEach(s=>{const r=MENU.recipes[s],li=document.createElement("li");if(s===b.recipe)li.className="on";
+    const a=document.createElement("a");a.href=RECIPE_URL(s);a.textContent=r.name;const rl=document.createElement("span");rl.className="rl";rl.textContent=(ROLE[r.role]||"")+" · "+minutes(r.time.total)+" · serves "+r.serves;
+    li.append(a,rl);ul.appendChild(li)});
+}
+function crewCard(S,b){
+  const ul=$("crew");ul.textContent="";
+  const row=(c,name,role,on)=>{const li=document.createElement("li");if(on)li.className="on";const cv=document.createElement("canvas");cv.width=14;cv.height=12;K.portrait(c,cv);
+    const d=document.createElement("div"),n=document.createElement("span");n.className="nm";n.textContent=name;const r=document.createElement("span");r.className="rl";r.textContent=role;d.append(n,r);li.append(cv,d);ul.appendChild(li)};
+  if(b.kind==="ad"){row(K.DOT,K.DOT.name,K.DOT.role,true);return}
+  S.pair.forEach((c,i)=>row(c,c.name,c.role,b.sp===i));
+  row("baldur","Baldur","The kitchen dog",false);
+}
+
+/* ---------- rundown: this cycle's shows ---------- */
+function fmt(t,o){return new Intl.DateTimeFormat("en-US",o).format(new Date(t))}
+function rundown(A){
+  const ol=$("rundown");ol.textContent="";
+  if(clip||!A.cycle){const li=document.createElement("li");li.className="now";const tm=document.createElement("span");tm.className="tm";tm.textContent="WATCH IT MADE";const nm=document.createElement("span");nm.textContent=MENU.recipes[clip.slug].name+", from "+A.S.show.name;li.append(tm,nm);ol.appendChild(li);return}
+  const rows=A.cycle.shows.concat(P.nextOf(MENU,A.cycle).shows.slice(0,3));
+  rows.forEach(x=>{if(x.start+x.len<=liveNow())return;const li=document.createElement("li"),on=x===A.entry;if(on)li.className="now";
+    if(pick&&pick.start===x.start&&!on)li.className="picked";
+    const tm=document.createElement("span");tm.className="tm";tm.textContent=fmt(x.start-offset,{hour:"numeric",minute:"2-digit"})+" · "+MENU.sections[x.section].name;
+    let nm;if(on){nm=document.createElement("span");nm.textContent=x.show.name}
+    else{nm=document.createElement("button");nm.type="button";nm.className="pk";nm.textContent=x.show.name;nm.setAttribute("aria-label","Jump to "+x.show.name+" after the current step");
+      nm.addEventListener("click",()=>{pick=pick&&pick.start===x.start?null:{start:x.start};rundown(A)})}
+    li.append(tm,nm);ol.appendChild(li)});
+}
+
+/* ---------- sound ---------- */
+let mode="off",ac=null,lastOpen=false,spokenKey="",curB=null,curKey="";
+function voiceOf(b,S){return b.kind==="ad"?VOICE.dot:VOICE[(S.pair[b.sp]||S.pair[0]).kind]||VOICE.adult}
+function blip(vc){if(!ac)return;const t0=ac.currentTime,o=ac.createOscillator(),gn=ac.createGain();o.type="square";o.frequency.value=vc.hz*(0.9+Math.random()*0.25);
+  gn.gain.setValueAtTime(0.0001,t0);gn.gain.exponentialRampToValueAtTime(0.035,t0+0.008);gn.gain.exponentialRampToValueAtTime(0.0001,t0+0.07);o.connect(gn).connect(ac.destination);o.start(t0);o.stop(t0+0.08)}
+function speak(b,S,key){
+  if(spokenKey===key)return;spokenKey=key;
+  try{const ss=window.speechSynthesis;if(!ss)return;if(ss.speaking||ss.pending)ss.cancel();
+    const text=b.kind==="step"?b.cat.charAt(0)+b.cat.slice(1).toLowerCase()+". "+b.body:b.kind==="need"?"You'll need: "+b.body:b.head+". "+b.body;
+    const u=new SpeechSynthesisUtterance(text.replace(/°F/g," degrees Fahrenheit").replace(/°C/g," Celsius")),vc=voiceOf(b,S);u.pitch=vc.pitch;u.rate=vc.rate;u.volume=.9;
+    const vs=PBC.voices();if(vs.length)u.voice=vs[(b.kind==="ad"?7:K.hash((S.pair[b.sp]||S.pair[0]).key))%vs.length];
+    ss.speak(u)}catch(e){}
+}
+const SND=PBC.sound(next=>{
+  mode=next;spokenKey="";
+  if(next!=="off"&&!ac){try{ac=new (window.AudioContext||window.webkitAudioContext)()}catch(e){ac=null}}
+  if(ac&&ac.state==="suspended")ac.resume().catch(()=>{});
+  PBCMusic.enable(ac,next);
+  if(next==="voices"&&curB)speak(curB.b,curB.S,curKey);
+});
+PBCMusic.tuneIn($("screen"),SND);
+PBC.fullScreen($("screen"));
+
+/* ---------- the loop ---------- */
+let lastKey="",lastShowKey="",lastChars=-1,lastDraw=0,lastSlow=0;
+function frame(){
+  requestAnimationFrame(frame);
+  const real=Date.now();if(real-lastDraw<50)return;lastDraw=real;
+  let A=onAir();
+  const key=(A.clip?"clip:":"")+A.S.show.slug+":"+(A.entry?A.entry.start:"")+":"+A.idx;
+  // a viewer's pick takes over when the next beat starts
+  if(pick&&key!==lastKey&&lastKey){offset+=pick.start-liveNow();pick=null;A=onAir()}
+  const b=A.b,S=A.S,r=b.recipe?MENU.recipes[b.recipe]:null,phase=Math.min(1,A.el/b.dur);
+  draw(real,A);
+  const k2=(A.clip?"clip:":"")+S.show.slug+":"+(A.entry?A.entry.start:"")+":"+A.idx;
+  if(k2!==lastKey){lastKey=k2;lastChars=-1;
+    const w=b.kind==="ad"?adWords(adFor(A.cycle?A.cycle.n+S.B.indexOf(b):0,b.ad)):b;
+    const who=b.kind==="ad"?K.DOT:(S.pair[b.sp]||S.pair[0]);
+    $("pname").textContent=who.name.toUpperCase();$("prole").textContent=(b.kind==="ad"?K.DOT.role:who.role).toUpperCase();
+    $("chip").textContent=w.cat;$("head").textContent=w.head;curBody=w.body;
+    const sec=MENU.sections[S.show.section];
+    $("seg").textContent=(A.clip?"WATCH IT MADE · ":"")+(b.kind==="ad"?"COMMERCIAL BREAK":(sec?sec.name+" · ":"")+S.show.name).toUpperCase();
+    $("belowHead").textContent=w.head;$("belowSum").textContent=w.body;
+    fillCard(b,r);recipeCard(b,S);menuCard(S,b);crewCard(S,b);
+    const sk=S.show.slug+":"+(A.entry?A.entry.start:"");
+    if(sk!==lastShowKey){lastShowKey=sk;$("nowShow").textContent=S.show.name;rundown(A)}
+    PBCMusic.cue(b.kind==="ad"?"Commercial break":S.show.name,b.kind==="ad"?"ads":"kitchen",A.idx===0);
+    curB={b:Object.assign({},b,w),S};curKey=k2;
+  }
+  const n=reduce?curBody.length:Math.min(curBody.length,Math.floor(curBody.length*phase/.35));
+  if(n!==lastChars){lastChars=n;$("sum").textContent=curBody.slice(0,n)}
+  // the kitchen timer
+  if(b.st&&b.st.timer!==undefined){const left=timerLeft(b,A.el,S.B,A.idx),ff=b.kind==="ff"&&!b.jump&&left>0;
+    $("ckDig").textContent=mmss(left);$("ckTimer").classList.toggle("done",left<=0);
+    $("ckFf").textContent=left<=0?"DONE":ff?"⏩ FAST FORWARD":b.kind==="step"&&A.el<TSTART?"SET":"RUNNING"}
+  const jumping=b.kind==="ff"&&b.jump&&A.el<2500;$("jump").hidden=!jumping;
+  if(jumping)$("jumpText").textContent=timerWords(b.st.timer).toUpperCase()+" LATER";
+  if(mode==="blips"&&b.sp>=0||mode==="blips"&&b.kind==="ad"){const o=anim(b.kind==="ad"?"D":(S.pair[b.sp]||S.pair[0]).key,real,true,phase).open;if(o&&!lastOpen)blip(voiceOf(b,S));lastOpen=o}
+  else if(mode==="voices")speak(curB.b,S,curKey);
+  if(real-lastSlow>1000){lastSlow=real;$("clock").textContent=fmt(real,{hour:"numeric",minute:"2-digit",timeZoneName:"short"})}
+}
+let curBody="";
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

@@ -1,23 +1,26 @@
-// Checks that News and Sports keep the shared controls in the same place, at phone, laptop and wide widths.
+// Checks that News, Sports and Cooking keep the shared controls in the same place, at phone, laptop and wide widths.
 //   node tools/check_layout.cjs
 // Needs Node with the playwright package and a Chromium (in a Claude cloud session: NODE_PATH=$(npm root -g) node tools/check_layout.cjs).
-// It serves the repo on a local port, opens / and /sports/, and compares where each shared element sits.
-// Exit code 1 means something moved, the page scrolls sideways, or News threw a script error.
+// It serves the repo on a local port, opens /, /sports/ and /cooking/, and compares where each shared element sits on
+// Sports and Cooking with where it sits on News.
+// Exit code 1 means something moved, a page scrolls sideways, or News or Cooking threw a script error.
 const http = require('node:http'), fs = require('node:fs'), path = require('node:path');
 const { chromium } = require('playwright');
 
 const ROOT = path.resolve(__dirname, '..');
 const WIDTHS = [390, 1280, 1700];
 const TYPES = { '.html': 'text/html', '.json': 'application/json', '.js': 'text/javascript', '.css': 'text/css', '.mjs': 'text/javascript' };
-// The same element on each page (News selector, Sports selector).
+// The channels, News first: the others are measured against it.
+const PAGES = [['News', '/'], ['Sports', '/sports/'], ['Cooking', '/cooking/']];
+// The same element on each page (News, Sports, Cooking selector).
 const SHARED = {
-  'PBC mark': ['.pbc-mark', '.pbc-mark'],
-  'NEWS|SPORTS switch': ['.pbc-chan', '.pbc-chan'],
-  'ON AIR': ['.pbc-onair', '.pbc-onair'],
-  'FULL SCREEN': ['#fs', '#fs'],
-  'SOUND': ['#snd', '#snd'],
-  'broadcast': ['.pbc-screen', '.pbc-screen'],
-  'right column': ['.side', '.side'],
+  'PBC mark': ['.pbc-mark', '.pbc-mark', '.pbc-mark'],
+  'channel switch': ['.pbc-chan', '.pbc-chan', '.pbc-chan'],
+  'ON AIR': ['.pbc-onair', '.pbc-onair', '.pbc-onair'],
+  'FULL SCREEN': ['#fs', '#fs', '#fs'],
+  'SOUND': ['#snd', '#snd', '#snd'],
+  'broadcast': ['.pbc-screen', '.pbc-screen', '.pbc-screen'],
+  'right column': ['.side', '.side', '.side'],
 };
 
 const server = http.createServer((req, res) => {
@@ -52,20 +55,23 @@ async function measure(url, width, which) {
 }
 
 for (const w of WIDTHS) {
-  const news = await measure(`${base}/`, w, 0), sports = await measure(`${base}/sports/`, w, 1);
-  const lines = [];
-  for (const name of Object.keys(SHARED)) {
-    const a = news.boxes[name], b = sports.boxes[name];
-    if (!a || !b) { lines.push(`  ${name}: missing on ${!a ? 'News' : 'Sports'}`); continue; }
-    // Heights of the broadcast area and right column follow their content. On a phone the column
-    // sits below everything else, so only its left edge and width have to match there.
-    const keys = name === 'broadcast' ? ['x', 'y', 'width'] : name === 'right column' ? (w > 900 ? ['x', 'y', 'width'] : ['x', 'width']) : ['x', 'y', 'width', 'height'];
-    const off = keys.filter(k => Math.abs(a[k] - b[k]) > 1);
-    if (off.length) lines.push(`  ${name}: News ${JSON.stringify(a)} vs Sports ${JSON.stringify(b)}`);
+  const got = [];
+  for (const [i, [, url]] of PAGES.entries()) got.push(await measure(`${base}${url}`, w, i));
+  const lines = [], news = got[0];
+  for (const [i, [name]] of PAGES.entries()) {
+    const m = got[i];
+    if (i) for (const part of Object.keys(SHARED)) {
+      const a = news.boxes[part], b = m.boxes[part];
+      if (!a || !b) { lines.push(`  ${part}: missing on ${!a ? 'News' : name}`); continue; }
+      // Heights of the broadcast area and right column follow their content. On a phone the column
+      // sits below everything else, so only its left edge and width have to match there.
+      const keys = part === 'broadcast' ? ['x', 'y', 'width'] : part === 'right column' ? (w > 900 ? ['x', 'y', 'width'] : ['x', 'width']) : ['x', 'y', 'width', 'height'];
+      const off = keys.filter(k => Math.abs(a[k] - b[k]) > 1);
+      if (off.length) lines.push(`  ${part}: News ${JSON.stringify(a)} vs ${name} ${JSON.stringify(b)}`);
+    }
+    if (m.sideways) lines.push(`  ${name} scrolls sideways`);
+    if (name !== 'Sports') m.errors.forEach(e => lines.push(`  ${name} script error: ${e}`));
   }
-  if (news.sideways) lines.push('  News scrolls sideways');
-  if (sports.sideways) lines.push('  Sports scrolls sideways');
-  news.errors.forEach(e => lines.push(`  News script error: ${e}`));
   console.log(`${w}px: ${lines.length ? 'PROBLEMS' : 'ok'}`);
   lines.forEach(l => console.log(l));
   bad += lines.length;
