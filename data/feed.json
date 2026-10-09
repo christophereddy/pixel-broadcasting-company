@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-09T04:10:00Z",
+ "updatedAt": "2026-10-09T07:19:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,12 +7,20 @@
  },
  "world": [
   {
+   "h": "IRGC says it targets \"violating\" ships nightly",
+   "b": "Iran's Revolutionary Guard says it targets \"violating\" ships in the Strait of Hormuz every night, Al Jazeera reports.",
+   "date": "2026-10-09",
+   "place": "Strait of Hormuz",
+   "publisher": "Al Jazeera",
+   "title": "IRGC targets ‘violating’ ships nightly, Trump says no attack before vote",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait",
+   "gathered": "2026-10-09T04:10:12Z"
+  },
+  {
    "h": "Trump: no attack on Iran before US elections",
    "b": "President Trump said there will be no attack on Iran before the US elections and that talks are productive and ongoing, Al Jazeera reports.",
    "date": "2026-10-08",
    "place": "Iran",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: Trump says no attack before vote; talks ongoing",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/8/yemen-war-live-yemeni-forces-claim-key-heights-as-houthi-attacks-go-on",
    "gathered": "2026-10-08T19:10:32Z"
   },
@@ -35,11 +43,7 @@
     "Maduro was already charged with taking part in a conspiracy to send cocaine into the US."
    ],
    "place": "Venezuela",
-   "publisher": "KUOW",
-   "title": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture",
    "url": "https://www.kuow.org/npr-news/2026-10-08/new-u-s-indictment-charges-former-venezuelan-president-nicolas-maduro-with-torture",
-   "published": "2026-10-08T16:05:37Z",
-   "updated": "2026-10-08T16:12:51Z",
    "gathered": "2026-10-08T16:48:15Z"
   },
   {
@@ -66,8 +70,6 @@
     "UKMTO reports a recent rise in attacks on ships in the Strait of Hormuz."
    ],
    "place": "Qatar",
-   "publisher": "Al Jazeera",
-   "title": "Tanker hit by multiple projectiles off north coast of Qatar, UKMTO says",
    "url": "https://www.aljazeera.com/news/2026/10/8/tanker-hit-by-multiple-projectiles-off-north-coast-of-qatar-ukmto-says",
    "gathered": "2026-10-08T09:20:13Z"
   },
@@ -109,6 +111,16 @@
   }
  ],
  "national": [
+  {
+   "h": "Mamdani: ICE agent shot man in car with child",
+   "b": "Mayor Zohran Mamdani said an ICE agent shot a man in Marble Hill after agents surrounded him and a five-year-old child in his car, calling it \"unconscionable.\"",
+   "date": "2026-10-09",
+   "place": "New York City",
+   "publisher": "Al Jazeera",
+   "title": "ICE agent shoots man in car with five-year-old child in New York: Mayor",
+   "url": "https://www.aljazeera.com/news/2026/10/9/ice-agent-shoots-man-in-car-with-five-year-old-child-in-new-york-mayor",
+   "gathered": "2026-10-09T04:10:12Z"
+  },
   {
    "h": "Army finds systemic failures in DC midair crash",
    "b": "An Army report found failures in air traffic control, helicopter routes, training and safety practices behind last year's collision of an American Airlines jet and a Black Hawk near Washington.",
@@ -268,6 +280,15 @@
  ],
  "politics": [
   {
+   "h": "El-Sayed, Rogers meet in Michigan Senate debate",
+   "b": "Democrat Abdul El-Sayed and Republican Mike Rogers faced off in their first televised debate in Michigan's toss-up Senate race.",
+   "date": "2026-10-09",
+   "publisher": "Al Jazeera",
+   "title": "Key takeaways from US Senate debate in Michigan between El-Sayed, Rogers",
+   "url": "https://www.aljazeera.com/news/2026/10/9/key-takeaways-from-us-senate-debate-in-michigan-between-el-sayed-rogers",
+   "gathered": "2026-10-09T04:10:12Z"
+  },
+  {
    "h": "House Democrats seek Guilfoyle records",
    "b": "House Oversight Democrats asked Ambassador to Greece Kimberly Guilfoyle for financial records after a report she sought $100,000 from a Trump donor before her confirmation hearing.",
    "date": "2026-10-08",
@@ -284,8 +305,6 @@
    "h": "DNC sues Trump over taxpayer-funded ads",
    "b": "The Democratic National Committee sued Trump over publicly funded TV ads it says promote his policies ahead of the Nov. 3 midterms.",
    "date": "2026-10-08",
-   "publisher": "Al Jazeera",
-   "title": "Democrats sue US President Trump over taxpayer-funded ad campaign",
    "url": "https://www.aljazeera.com/news/2026/10/8/democrats-sue-us-president-trump-over-taxpayer-funded-ad-campaign",
    "gathered": "2026-10-08T09:20:13Z"
   },
@@ -310,6 +329,31 @@
  ],
  "international": [
   {
+   "h": "UN extends Darfur arms embargo",
+   "b": "The UN Security Council extended the Darfur arms embargo until December 11 but did not agree to a US plan to widen it to all of Sudan, after Russia and China objected.",
+   "date": "2026-10-09",
+   "place": "Darfur, Sudan",
+   "tz": "Africa/Khartoum",
+   "publisher": "Al Jazeera",
+   "title": "UN extends Darfur arms embargo, blocks broader Sudan sanctions proposal",
+   "url": "https://www.aljazeera.com/news/2026/10/9/un-extends-darfur-arms-embargo-blocks-broader-sudan-sanctions-proposal",
+   "gathered": "2026-10-09T04:10:12Z"
+  },
+  {
+   "h": "Police probe Sinn Fein over parade protest",
+   "b": "Northern Ireland police contacted Sinn Fein representatives in an investigation into a protest that blocked a Protestant parade through a Catholic area, the party said.",
+   "date": "2026-10-09",
+   "more": [
+    "The DUP, which shares power with Sinn Fein, has called for its lawmakers to be prosecuted."
+   ],
+   "place": "Portadown, Northern Ireland",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "Northern Ireland’s Sinn Fein faces police probe as protest tensions fester",
+   "url": "https://www.aljazeera.com/news/2026/10/9/northern-irelands-sinn-fein-faces-police-probe-as-protest-tensions-fester",
+   "gathered": "2026-10-09T04:10:12Z"
+  },
+  {
    "h": "South Korea tests first homegrown hypersonic arm",
    "b": "South Korea flight-tested its first domestically developed hypersonic weapon, designed to fly at least five times the speed of sound, with President Lee Jae Myung attending.",
    "date": "2026-10-08",
@@ -327,8 +371,6 @@
    "date": "2026-10-08",
    "place": "Suva, Fiji",
    "tz": "Pacific/Fiji",
-   "publisher": "Al Jazeera",
-   "title": "US bars Fiji-based man over corruption tied to China",
    "url": "https://www.aljazeera.com/news/2026/10/8/us-bars-fiji-based-man-over-corruption-tied-to-china",
    "gathered": "2026-10-08T13:12:27Z"
   },
@@ -338,8 +380,6 @@
    "date": "2026-10-08",
    "place": "Maiduguri, Nigeria",
    "tz": "Africa/Lagos",
-   "publisher": "Al Jazeera",
-   "title": "How kidnappings are hitting Nigeria’s Borno families hard",
    "url": "https://www.aljazeera.com/news/2026/10/8/how-kidnappings-are-hitting-nigerias-borno-families-hard",
    "gathered": "2026-10-08T13:12:27Z"
   },
@@ -349,8 +389,6 @@
    "date": "2026-10-08",
    "place": "Taiz, Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Yemeni government forces claim 1,860 Houthis ‘neutralised’",
    "url": "https://www.aljazeera.com/news/2026/10/8/yemeni-government-forces-claim-1860-houthis-neutralised",
    "gathered": "2026-10-08T09:20:13Z"
   },
@@ -360,8 +398,6 @@
    "date": "2026-10-08",
    "place": "Seoul, South Korea",
    "tz": "Asia/Seoul",
-   "publisher": "Al Jazeera",
-   "title": "South Korea pledges legal action over alleged fuel exports to Russia",
    "url": "https://www.aljazeera.com/news/2026/10/8/south-korea-pledges-legal-action-over-alleged-fuel-exports-to-russia",
    "gathered": "2026-10-08T09:20:13Z"
   }
@@ -392,8 +428,6 @@
    "h": "Stocks slide as Treasury yields hit 20-year high",
    "b": "Wall Street closed lower Wednesday as Treasury yields reached their highest in over 20 years and oil swung on renewed Iran war fears, Al Jazeera reports.",
    "date": "2026-10-08",
-   "publisher": "Al Jazeera",
-   "title": "US stocks slide as oil prices fluctuate over renewed Iran war fears",
    "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears",
    "gathered": "2026-10-08T09:20:13Z"
   },
@@ -422,7 +456,7 @@
    "b": "Tampa Bay beat the Yankees 4-3 to win their AL Division Series 3-0 and eliminate New York.",
    "date": "2026-10-07",
    "publisher": "CBS Sports",
-   "title": "2026 MLB playoff bracket: Schedule, scores, how to watch White Sox vs. Guardians Game 4",
+   "title": "2026 MLB playoff bracket: Schedule, scores as Guardians force Game 5 vs. White Sox in ALDS",
    "url": "https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/",
    "gathered": "2026-10-08T04:09:12Z"
   },
@@ -453,10 +487,10 @@
    "b": "A person was shot during an encounter involving federal law enforcement agents in Marble Hill on Thursday afternoon, the NYPD said.",
    "date": "2026-10-08",
    "publisher": "Gothamist",
-   "title": "ICE agent shoots, injures immigrant man in NYC's Marble Hill, DHS says",
+   "title": "ICE agent fires 7 rounds, shoots man in neck in NYC's Marble Hill, NYPD says",
    "url": "https://gothamist.com/news/person-shot-during-encounter-with-federal-agents-in-nycs-marble-hill-nypd-says",
    "published": "2026-10-08T21:33:00Z",
-   "updated": "2026-10-09T01:16:00Z",
+   "updated": "2026-10-09T03:48:00Z",
    "gathered": "2026-10-08T22:18:27Z"
   },
   {
@@ -561,13 +595,13 @@
  ],
  "weather": {
   "now": {
-   "temp": 62,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "8 Oct 21:51 pm EDT"
+   "obs": "8 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 59,
     "text": "Clear, with a low around 59. West wind around 9 mph. "
