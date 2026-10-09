@@ -1,11 +1,30 @@
 {
- "updatedAt": "2026-10-09T19:11:00Z",
+ "updatedAt": "2026-10-09T22:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Putin, Trump discuss Iran",
+   "b": "Russian diesel is set to hit global markets as Vladimir Putin and Donald Trump discussed Iran, Al Jazeera reports.",
+   "date": "2026-10-09",
+   "publisher": "Al Jazeera",
+   "title": "Russian diesel to hit global markets; Putin, Trump discuss Iran",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait",
+   "gathered": "2026-10-09T04:10:12Z"
+  },
+  {
+   "h": "Ukraine pushes Russia back in Donetsk",
+   "b": "Russian forces continue to retreat in Ukraine's Donetsk region, losing villages south of Lyman, a Kremlin-aligned channel said.",
+   "date": "2026-10-09",
+   "place": "Donetsk, Ukraine",
+   "publisher": "Al Jazeera",
+   "title": "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar",
+   "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
   {
    "h": "Navi Pillay wins Nobel Peace Prize",
    "b": "South African jurist Navi Pillay, who led the UN inquiry that concluded Israel committed genocide in Gaza, won the 2026 Nobel Peace Prize.",
@@ -18,16 +37,6 @@
    "title": "Navi Pillay, South African Jurist, Wins Nobel Peace Prize in “Stinging Rebuke to Donald Trump”",
    "url": "https://www.democracynow.org/2026/10/9/navi_pillay_2026_nobel_peace_prize",
    "gathered": "2026-10-09T16:27:04Z"
-  },
-  {
-   "h": "IRGC says it hit tanker crossing Hormuz",
-   "b": "Iran's Revolutionary Guard says it hit an LPG tanker it said was illegally transiting the Strait of Hormuz, causing a massive fire, Al Jazeera reports.",
-   "date": "2026-10-09",
-   "place": "Strait of Hormuz",
-   "publisher": "Al Jazeera",
-   "title": "IRGC says it hit tanker ‘illegally’ crossing Hormuz, causing ‘massive’ fire",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait",
-   "gathered": "2026-10-09T04:10:12Z"
   },
   {
    "h": "Trump: no attack on Iran before US elections",
@@ -125,14 +134,34 @@
  ],
  "national": [
   {
+   "h": "Pentagon gave firm tied to official $281M deal",
+   "b": "ProPublica reports the Pentagon signed a no-bid $281 million consulting contract with a firm tied to senior defense official George Kollitides.",
+   "date": "2026-10-09",
+   "publisher": "ProPublica",
+   "title": "The Pentagon Gave $350 Million in Contracts to a Firm Closely Tied to a Senior Defense Department Official",
+   "url": "https://www.propublica.org/article/george-kollitides-pentagon-contracts-alvarez-marsal",
+   "published": "2026-10-09T16:45:00Z",
+   "updated": "2026-10-09T16:45:14Z",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
+  {
+   "h": "NY proposes tighter sports betting rules",
+   "b": "New York gambling regulators formally proposed two rules aimed at curbing gambling addiction in the country's largest sports betting market.",
+   "date": "2026-10-09",
+   "place": "New York",
+   "publisher": "ProPublica",
+   "title": "New York Plans Stronger Sports Betting Regulation to Curb Gambling Addiction",
+   "url": "https://www.propublica.org/article/new-york-gaming-commission-sports-betting-regulation",
+   "published": "2026-10-09T20:14:42Z",
+   "updated": "2026-10-09T20:14:45Z",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
+  {
    "h": "ICE says officers feared for lives in NYC shooting",
    "b": "A senior ICE official said officers shot Oscar Belgal, 28, in New York after he drove his car into their vehicles; he was shot superficially in the neck.",
    "date": "2026-10-09",
    "place": "New York City",
-   "publisher": "PBS NewsHour",
-   "title": "ICE official says officers shot a man in New York because they believed they were in danger",
    "url": "https://www.pbs.org/newshour/politics/ice-official-says-officers-shot-a-man-in-new-york-because-they-believed-they-were-in-danger",
-   "published": "2026-10-09T15:47:46Z",
    "gathered": "2026-10-09T16:27:04Z"
   },
   {
@@ -143,20 +172,14 @@
     "The suit says the project skipped the full review process."
    ],
    "place": "Arlington, Virginia",
-   "publisher": "PBS NewsHour",
-   "title": "Trump's memorial arch faces a new lawsuit from Arlington County, Virginia",
    "url": "https://www.pbs.org/newshour/nation/trumps-memorial-arch-faces-a-new-lawsuit-from-arlington-county-virginia",
-   "published": "2026-10-09T16:12:34Z",
    "gathered": "2026-10-09T16:27:04Z"
   },
   {
    "h": "Plague still found in US and Africa yearly",
    "b": "The plague never went away: the US averages about seven human cases a year, mostly in the rural West, the CDC says. It is now easily treated with antibiotics.",
    "date": "2026-10-09",
-   "publisher": "PBS NewsHour",
-   "title": "The plague never went away. Cases are reported in parts of Africa and the U.S. nearly every year",
    "url": "https://www.pbs.org/newshour/health/the-plague-never-went-away-cases-are-reported-in-parts-of-africa-and-the-u-s-nearly-every-year",
-   "published": "2026-10-09T15:54:08Z",
    "gathered": "2026-10-09T16:27:04Z"
   },
   {
@@ -171,7 +194,7 @@
    "title": "Ken Paxton’s Security for Travel Cost Taxpayers Millions. Just 1 in 6 of His Trips Had a Stated Business Purpose.",
    "url": "https://www.propublica.org/article/ken-paxton-travel-security-costs",
    "published": "2026-10-09T10:00:00Z",
-   "updated": "2026-10-09T10:00:09Z",
+   "updated": "2026-10-09T18:42:54Z",
    "gathered": "2026-10-09T10:10:23Z"
   },
   {
@@ -215,8 +238,6 @@
    "b": "Mayor Zohran Mamdani said an ICE agent shot a man in Marble Hill after agents surrounded him and a five-year-old child in his car, calling it \"unconscionable.\"",
    "date": "2026-10-09",
    "place": "New York City",
-   "publisher": "Al Jazeera",
-   "title": "ICE shooting of New York man in car with five-year-old sparks protests",
    "url": "https://www.aljazeera.com/news/2026/10/9/ice-agent-shoots-man-in-car-with-five-year-old-child-in-new-york-mayor",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -255,7 +276,7 @@
    "title": "Kemp issues Georgia state of emergency ahead of Hurricane Isaias",
    "url": "https://www.wabe.org/georgia-gov-brian-kemp-issues-state-of-emergency-ahead-of-hurricane-isaias/",
    "published": "2026-10-08T19:21:00Z",
-   "updated": "2026-10-08T22:44:14Z",
+   "updated": "2026-10-09T17:04:09Z",
    "gathered": "2026-10-08T22:18:27Z"
   },
   {
@@ -333,7 +354,7 @@
    "title": "Club Med, a Disney Cruise and an Exploding Starship: SpaceX Used Bystander Videos to Track Falling Debris",
    "url": "https://www.propublica.org/article/spacex-starship-caribbean-explosion-report",
    "published": "2026-10-08T10:00:00Z",
-   "updated": "2026-10-08T10:00:09Z",
+   "updated": "2026-10-09T18:43:50Z",
    "gathered": "2026-10-08T13:12:27Z"
   },
   {
@@ -355,7 +376,6 @@
    "title": "American Academy of Pediatrics Renews Call for Ban on Raw Milk",
    "url": "https://www.propublica.org/article/raw-milk-ban-children-pediatricians-health-safety-parents",
    "published": "2026-10-08T09:00:00Z",
-   "updated": "2026-10-08T09:00:17Z",
    "gathered": "2026-10-08T09:20:13Z"
   },
   {
@@ -369,11 +389,19 @@
  ],
  "politics": [
   {
+   "h": "Trump forms panel to probe Fed's Lisa Cook",
+   "b": "President Trump set up a \"committee of inquiry\" into mortgage allegations against Fed Governor Lisa Cook, with a private White House hearing Nov. 5.",
+   "date": "2026-10-09",
+   "publisher": "PBS NewsHour",
+   "title": "Trump establishes committee to investigate Federal Reserve's Lisa Cook in latest effort to fire her",
+   "url": "https://www.pbs.org/newshour/politics/trump-establishes-committee-to-investigate-federal-reserves-lisa-cook-in-latest-effort-to-fire-her",
+   "published": "2026-10-09T20:33:22Z",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
+  {
    "h": "El-Sayed, Rogers meet in Michigan Senate debate",
    "b": "Democrat Abdul El-Sayed and Republican Mike Rogers faced off in their first televised debate in Michigan's toss-up Senate race.",
    "date": "2026-10-09",
-   "publisher": "Al Jazeera",
-   "title": "Key takeaways from US Senate debate in Michigan between El-Sayed, Rogers",
    "url": "https://www.aljazeera.com/news/2026/10/9/key-takeaways-from-us-senate-debate-in-michigan-between-el-sayed-rogers",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -418,6 +446,28 @@
  ],
  "international": [
   {
+   "h": "Ethiopia, Eritrea trade war accusations",
+   "b": "Ethiopia accused Eritrea of an \"all-out invasion\" in a letter to the UN Security Council, while Eritrea says it faces a \"war of aggression.\"",
+   "date": "2026-10-09",
+   "place": "Northern Ethiopia",
+   "tz": "Africa/Addis_Ababa",
+   "publisher": "Al Jazeera",
+   "title": "Ethiopia and Eritrea accuse one another of launching war",
+   "url": "https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
+  {
+   "h": "Clashes at Brussels anti-austerity rally",
+   "b": "Thousands rallied in Brussels against the government's austerity plans, and a smaller group clashed with police near Central station.",
+   "date": "2026-10-09",
+   "place": "Brussels, Belgium",
+   "tz": "Europe/Brussels",
+   "publisher": "Al Jazeera",
+   "title": "Thousands rally for anti-austerity protest in Brussels amid clashes",
+   "url": "https://www.aljazeera.com/news/2026/10/9/thousands-rally-for-anti-austerity-protest-in-brussels-amid-clashes",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
+  {
    "h": "Ethiopian forces enter Tigray capital",
    "b": "Ethiopian federal forces entered Mekelle after nearly two weeks of fighting, as rebel forces including the TPLF withdrew.",
    "date": "2026-10-09",
@@ -427,8 +477,6 @@
    ],
    "place": "Mekelle, Ethiopia",
    "tz": "Africa/Addis_Ababa",
-   "publisher": "Al Jazeera",
-   "title": "Will Ethiopia’s neighbours intervene as Tigray war escalates?",
    "url": "https://www.aljazeera.com/news/2026/10/9/will-ethiopias-neighbours-intervene-as-tigray-war-escalates",
    "gathered": "2026-10-09T09:28:01Z"
   },
@@ -451,8 +499,6 @@
    "date": "2026-10-09",
    "place": "Darfur, Sudan",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "UN extends Darfur arms embargo, blocks broader Sudan sanctions proposal",
    "url": "https://www.aljazeera.com/news/2026/10/9/un-extends-darfur-arms-embargo-blocks-broader-sudan-sanctions-proposal",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -465,8 +511,6 @@
    ],
    "place": "Portadown, Northern Ireland",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "Northern Ireland’s Sinn Fein faces police probe as protest tensions fester",
    "url": "https://www.aljazeera.com/news/2026/10/9/northern-irelands-sinn-fein-faces-police-probe-as-protest-tensions-fester",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -575,6 +619,8 @@
    "h": "Florida power bills up as much as 70%",
    "b": "Energy bills in Florida have jumped by as much as 70% over the past 10 years, according to reporting by WUSF in Tampa.",
    "date": "2026-10-08",
+   "publisher": "Marketplace",
+   "title": "The cost of power in Florida",
    "url": "https://www.marketplace.org/story/2026/10/08/why-are-energy-bills-so-high-in-florida",
    "gathered": "2026-10-08T16:48:15Z"
   }
@@ -585,8 +631,6 @@
    "h": "Mike Ditka dies at 86",
    "b": "Mike Ditka, the Hall of Fame tight end who coached the Bears to their only Super Bowl title, has died at 86, his family said.",
    "date": "2026-10-09",
-   "publisher": "CBS Sports",
-   "title": "Mike Ditka, Hall of Fame tight end and Bears' Super Bowl-winning coach, dies at age 86",
    "url": "https://www.cbssports.com/nfl/news/mike-ditka-bears-super-bowl-winning-coach-dies-at-age-86/",
    "gathered": "2026-10-09T16:27:04Z"
   },
@@ -631,6 +675,16 @@
   }
  ],
  "local": [
+  {
+   "h": "DA fights dismissal of Mangione charges",
+   "b": "The Manhattan DA argued a judge should not dismiss state charges against Luigi Mangione.",
+   "date": "2026-10-09",
+   "publisher": "Gothamist",
+   "title": "Manhattan DA argues judge shouldn't dismiss state charges against Luigi Mangione",
+   "url": "https://gothamist.com/news/manhattan-da-argues-judge-shouldnt-dismiss-state-charges-against-luigi-mangione",
+   "published": "2026-10-09T19:44:00Z",
+   "gathered": "2026-10-09T21:07:22Z"
+  },
   {
    "h": "Judge: ICE lied after mistaken Bronx arrests",
    "b": "A federal judge ruled ICE agents mistakenly arrested two men in the Bronx and then lied in sworn testimony to cover it up.",
@@ -796,46 +850,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 67,
+   "temp": 68,
    "cond": "Fair",
-   "obs": "9 Oct 11:51 am EDT"
+   "obs": "9 Oct 16:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 71,
-    "text": "Sunny, with a high near 71. West wind around 15 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 55,
-    "text": "Mostly cloudy, with a low around 55. Northwest wind 3 to 7 mph. "
+    "temp": 54,
+    "text": "Mostly cloudy, with a low around 54. Northwest wind 5 to 10 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 69,
-    "text": "Partly sunny, with a high near 69. Light and variable wind becoming southeast around 6 mph in the afternoon. "
+    "temp": 70,
+    "text": "Partly sunny, with a high near 70. North wind around 6 mph becoming southeast in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "Mostly cloudy, with a low around 59. East wind around 7 mph. "
+    "temp": 58,
+    "text": "Mostly cloudy, with a low around 58. East wind 3 to 5 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 67,
-    "text": "Showers.  High near 67. Southeast wind 9 to 14 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 66,
+    "text": "Periods of rain, mainly after 2pm.  High near 66. East wind 6 to 11 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 66,
-    "text": "Showers.  Steady temperature around 66. Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
+    "temp": 61,
+    "text": "Periods of rain before 11pm, then periods of rain and possibly a thunderstorm between 11pm and 2am, then a chance of rain and thunderstorms after 2am.  Low around 61. East wind 13 to 17 mph, with gusts as high as 30 mph.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+   },
+   {
+    "name": "Columbus Day",
+    "kind": "high",
+    "temp": 70,
+    "text": "A 30 percent chance of rain before 8am.  Cloudy, then gradually becoming mostly sunny, with a high near 70."
    }
   ]
  },
