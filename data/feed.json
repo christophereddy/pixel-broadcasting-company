@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-09T13:25:00Z",
+ "updatedAt": "2026-10-09T16:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,12 +7,12 @@
  },
  "world": [
   {
-   "h": "Three Saudis killed in Riyadh airport attacks",
-   "b": "Three Saudi citizens were killed in Thursday's attacks on Riyadh airport, Al Jazeera reports.",
+   "h": "IRGC says it hit tanker crossing Hormuz",
+   "b": "Iran's Revolutionary Guard says it hit an LPG tanker it said was illegally transiting the Strait of Hormuz, causing a massive fire, Al Jazeera reports.",
    "date": "2026-10-09",
-   "place": "Riyadh, Saudi Arabia",
+   "place": "Strait of Hormuz",
    "publisher": "Al Jazeera",
-   "title": "Three Saudi citizens killed in Thursday’s attacks on Riyadh airport",
+   "title": "IRGC says it hit tanker ‘illegally’ crossing Hormuz, causing ‘massive’ fire",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -474,6 +474,18 @@
  ],
  "business": [
   {
+   "h": "Visa crackdown hits Microsoft, Adobe",
+   "b": "The Trump administration barred Microsoft, Adobe and a handful of other companies from sponsoring foreign workers for green cards for now, and proposed a big fee increase for students' OPT work visas.",
+   "date": "2026-10-09",
+   "more": [
+    "It also announced an investigation into nine universities over the J-1 student visa program."
+   ],
+   "publisher": "Marketplace",
+   "title": "International students could see a massive fee increase for OPT work visa",
+   "url": "https://www.marketplace.org/story/2026/10/09/international-students-workers-could-be-hurt-by-proposed-70000-opt-fee",
+   "gathered": "2026-10-09T13:25:36Z"
+  },
+  {
    "h": "UPS hiring 100,000-plus for holidays",
    "b": "UPS is hiring more than 100,000 seasonal workers for the holiday peak, fewer than in prior years as it leans more on automation and AI.",
    "date": "2026-10-08",
@@ -552,6 +564,29 @@
   }
  ],
  "local": [
+  {
+   "h": "Five arrested at ICE shooting protest",
+   "b": "Police said five people were taken into custody as protests swelled Thursday night after ICE officers shot a man in northern Manhattan.",
+   "date": "2026-10-09",
+   "more": [
+    "All were charged with obstructing governmental administration."
+   ],
+   "publisher": "Gothamist",
+   "title": "Several arrested in wake of ICE protest where Manhattan man was shot in the neck",
+   "url": "https://gothamist.com/news/several-arrested-in-wake-of-ice-protest-where-manhattan-man-was-shot-in-the-neck",
+   "published": "2026-10-09T11:24:21Z",
+   "gathered": "2026-10-09T13:25:36Z"
+  },
+  {
+   "h": "Bronx homeowners seek foreclosure help",
+   "b": "Gothamist reports on Bronx homeowners facing foreclosure and looking for assistance.",
+   "date": "2026-10-09",
+   "publisher": "Gothamist",
+   "title": "Bronx homeowners facing foreclosure are in the market for assistance",
+   "url": "https://gothamist.com/news/bronx-homeowners-facing-foreclosure-are-in-the-market-for-assistance",
+   "published": "2026-10-09T10:30:56Z",
+   "gathered": "2026-10-09T13:25:36Z"
+  },
   {
    "h": "Cornell students warned of fraternity abuse",
    "b": "Cornell's student government says it warned administrators about sexual assault and drugging in fraternities two years before the Jane Doe gang rape report.",
@@ -675,16 +710,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "9 Oct 05:51 am EDT"
+   "obs": "9 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 71,
-    "text": "Sunny, with a high near 71. West wind 7 to 15 mph. "
+    "text": "Sunny, with a high near 71. West wind 8 to 15 mph. "
    },
    {
     "name": "Tonight",
