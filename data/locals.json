@@ -17,7 +17,7 @@
     "title": "Kemp issues Georgia state of emergency ahead of Hurricane Isaias",
     "url": "https://www.wabe.org/georgia-gov-brian-kemp-issues-state-of-emergency-ahead-of-hurricane-isaias/",
     "published": "2026-10-08T19:21:00Z",
-    "updated": "2026-10-08T20:24:32Z",
+    "updated": "2026-10-08T22:44:14Z",
     "gathered": "2026-10-08T22:18:27Z"
    },
    {
@@ -30,13 +30,24 @@
     "published": "2026-10-08T14:22:53Z",
     "updated": "2026-10-08T14:22:56Z",
     "gathered": "2026-10-08T16:48:15Z"
+   },
+   {
+    "h": "UPS to hire 100,000 seasonal workers",
+    "b": "UPS is hiring more than 100,000 seasonal workers nationwide for the holidays, fewer than in past years as it uses more AI.",
+    "date": "2026-10-08",
+    "publisher": "WABE",
+    "title": "UPS will lean on AI and seasonal workers during the holidays",
+    "url": "https://www.wabe.org/ups-expects-to-lean-on-ai-and-seasonal-workers-during-the-holidays/",
+    "published": "2026-10-08T23:26:00Z",
+    "updated": "2026-10-08T23:51:45Z",
+    "gathered": "2026-10-09T02:25:28Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 82,
-    "cond": "Mostly Cloudy",
-    "obs": "8 Oct 16:52 pm EDT"
+    "temp": 72,
+    "cond": "Overcast",
+    "obs": "8 Oct 21:52 pm EDT"
    },
    "periods": [
     {
@@ -89,7 +100,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -102,16 +113,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "A Few Clouds",
-    "obs": "8 Oct 17:54 pm EDT"
+    "temp": 63,
+    "cond": "Fair",
+    "obs": "8 Oct 21:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51. West wind 5 to 9 mph, with gusts as high as 28 mph. "
+     "text": "Mostly clear, with a low around 51. West wind 5 to 7 mph. "
     },
     {
      "name": "Friday",
@@ -157,7 +168,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -200,22 +211,14 @@
     "more": [
      "They cite increasing workloads and benefit rollbacks."
     ],
-    "publisher": "WBEZ",
-    "title": "Obama Foundation and Presidential Center workers to unionize: ‘We don't even have a seat at the table’",
     "url": "https://www.wbez.org/arts-culture/2026/10/08/obama-foundation-and-center-workers-unionize-open-letter-afscme",
-    "published": "2026-10-08T14:42:28Z",
-    "updated": "2026-10-08T14:42:28Z",
     "gathered": "2026-10-08T16:48:15Z"
    },
    {
     "h": "Chicago Marathon expects record field",
     "b": "Organizers expect the largest field ever for the 48th Chicago Marathon this weekend.",
     "date": "2026-10-08",
-    "publisher": "WBEZ",
-    "title": "The Chicago Marathon is this weekend. Here’s why it’s distinctive and attracts runners",
     "url": "https://www.wbez.org/sports/2026/10/08/chicago-marathon-why-runners-participate",
-    "published": "2026-10-08T16:12:36Z",
-    "updated": "2026-10-08T16:12:36Z",
     "gathered": "2026-10-08T16:48:15Z"
    },
    {
@@ -228,16 +231,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 62,
     "cond": "A Few Clouds",
-    "obs": "8 Oct 16:53 pm CDT"
+    "obs": "8 Oct 20:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. East southeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Partly cloudy, with a low around 56. South wind around 5 mph. "
     },
     {
      "name": "Friday",
@@ -283,7 +286,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -296,16 +299,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 83,
-    "cond": "Partly Cloudy",
-    "obs": "8 Oct 14:58 pm MDT"
+    "temp": 72,
+    "cond": "Mostly Cloudy",
+    "obs": "8 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 55. West wind 5 to 7 mph becoming south southwest in the evening. "
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 55. South southwest wind around 6 mph. "
     },
     {
      "name": "Friday",
@@ -329,7 +332,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly cloudy, with a low around 59."
+     "text": "Mostly cloudy, with a low around 59. Southwest wind 6 to 8 mph, with gusts as high as 16 mph. "
     },
     {
      "name": "Sunday",
@@ -351,7 +354,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -405,7 +408,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 64,
-     "text": "A 20 percent chance of showers before 11pm.  Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 64."
+     "text": "A 20 percent chance of showers before 11pm.  Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 64. West southwest wind 5 to 10 mph becoming north after midnight. "
     },
     {
      "name": "Sunday",
@@ -427,7 +430,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -443,10 +446,10 @@
     "b": "A person was shot during an encounter involving federal law enforcement agents in Marble Hill on Thursday afternoon, the NYPD said.",
     "date": "2026-10-08",
     "publisher": "Gothamist",
-    "title": "Person shot during encounter with federal agents in NYC's Marble Hill, NYPD says",
+    "title": "ICE agent shoots, injures immigrant man in NYC's Marble Hill, DHS says",
     "url": "https://gothamist.com/news/person-shot-during-encounter-with-federal-agents-in-nycs-marble-hill-nypd-says",
     "published": "2026-10-08T21:33:00Z",
-    "updated": "2026-10-08T22:09:00Z",
+    "updated": "2026-10-09T01:16:00Z",
     "gathered": "2026-10-08T22:18:27Z"
    },
    {
@@ -551,34 +554,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
-    "cond": "Mostly Cloudy",
-    "obs": "8 Oct 16:51 pm EDT"
+    "temp": 62,
+    "cond": "Fair",
+    "obs": "8 Oct 21:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Clear, with a low around 57. West wind 6 to 11 mph, with gusts as high as 22 mph. "
+     "temp": 59,
+     "text": "Clear, with a low around 59. West wind around 9 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 71,
-     "text": "Sunny, with a high near 71. Northwest wind 7 to 14 mph. "
+     "text": "Sunny, with a high near 71. West wind 8 to 16 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. West wind 5 to 7 mph. "
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56. West wind 7 to 10 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 69,
-     "text": "Increasing clouds, with a high near 69. Light and variable wind becoming south around 6 mph in the afternoon. "
+     "text": "Increasing clouds, with a high near 69. North wind 5 to 8 mph becoming light and variable. "
     },
     {
      "name": "Saturday Night",
@@ -606,7 +609,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -674,7 +677,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "goodnews": [
    {
     "h": "Viral vegetarian wolf becomes a toy",
@@ -696,6 +699,20 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "11,000 WA immigrants lose Medicaid",
+    "b": "About 11,000 refugees, asylum seekers and other lawfully present immigrants in Washington lost Medicaid coverage this month, including 4,000 in King County.",
+    "date": "2026-10-08",
+    "more": [
+     "Councilmember Teresa Mosqueda called the federal cuts a betrayal."
+    ],
+    "publisher": "KUOW",
+    "title": "King County Councilmember Mosqueda calls federal Medicaid cuts to WA immigrants a ‘betrayal’",
+    "url": "https://www.kuow.org/governing/2026-10-08/king-county-councilmember-mosqueda-calls-federal-medicaid-cuts-to-wa-immigrants-a-betrayal",
+    "published": "2026-10-08T22:44:40Z",
+    "updated": "2026-10-08T22:44:40Z",
+    "gathered": "2026-10-09T02:25:28Z"
+   },
    {
     "h": "WA voters to weigh millionaires tax",
     "b": "A yes vote on Initiative 645 this November would repeal Washington's new 9.9% tax on household income over $1 million.",
@@ -775,7 +792,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-09T01:10:00Z",
+  "updatedAt": "2026-10-09T04:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
