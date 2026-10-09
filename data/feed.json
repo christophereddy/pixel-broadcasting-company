@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-09T07:19:00Z",
+ "updatedAt": "2026-10-09T10:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,12 +7,12 @@
  },
  "world": [
   {
-   "h": "IRGC says it targets \"violating\" ships nightly",
-   "b": "Iran's Revolutionary Guard says it targets \"violating\" ships in the Strait of Hormuz every night, Al Jazeera reports.",
+   "h": "Three Saudis killed in Riyadh airport attacks",
+   "b": "Three Saudi citizens were killed in Thursday's attacks on Riyadh airport, Al Jazeera reports.",
    "date": "2026-10-09",
-   "place": "Strait of Hormuz",
+   "place": "Riyadh, Saudi Arabia",
    "publisher": "Al Jazeera",
-   "title": "IRGC targets ‘violating’ ships nightly, Trump says no attack before vote",
+   "title": "Three Saudi citizens killed in Thursday’s attacks on Riyadh airport",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -112,12 +112,42 @@
  ],
  "national": [
   {
+   "h": "Isaias strengthens to Category 2",
+   "b": "Isaias strengthened into a Category 2 hurricane as it headed for the Gulf Coast, with landfall expected late Friday or early Saturday.",
+   "date": "2026-10-08",
+   "more": [
+    "Dangerous conditions are forecast for the Florida Panhandle, southern Alabama and southern Mississippi."
+   ],
+   "place": "Gulf Coast",
+   "publisher": "KUOW",
+   "title": "Isaias strengthens into Category 2 hurricane on collision course with the Gulf Coast",
+   "url": "https://www.kuow.org/npr-news/2026-10-08/isaias-strengthens-into-category-2-hurricane-on-collision-course-with-the-gulf-coast",
+   "published": "2026-10-09T05:20:03Z",
+   "updated": "2026-10-09T05:29:37Z",
+   "gathered": "2026-10-09T09:28:01Z"
+  },
+  {
+   "h": "Fort Hood shooter execution to be livestreamed",
+   "b": "The Pentagon said the Dec. 3 firing squad execution of Fort Hood shooter Nidal Hasan will be livestreamed.",
+   "date": "2026-10-08",
+   "more": [
+    "It would be the first military execution in more than 65 years."
+   ],
+   "place": "Fort Hood, Texas",
+   "publisher": "KUOW",
+   "title": "Pentagon says the firing squad execution of Fort Hood shooter will be livestreamed",
+   "url": "https://www.kuow.org/npr-news/2026-10-08/pentagon-says-the-firing-squad-execution-of-fort-hood-shooter-will-be-livestreamed",
+   "published": "2026-10-09T05:35:41Z",
+   "updated": "2026-10-09T06:19:05Z",
+   "gathered": "2026-10-09T09:28:01Z"
+  },
+  {
    "h": "Mamdani: ICE agent shot man in car with child",
    "b": "Mayor Zohran Mamdani said an ICE agent shot a man in Marble Hill after agents surrounded him and a five-year-old child in his car, calling it \"unconscionable.\"",
    "date": "2026-10-09",
    "place": "New York City",
    "publisher": "Al Jazeera",
-   "title": "ICE agent shoots man in car with five-year-old child in New York: Mayor",
+   "title": "ICE shooting of New York man in car with five-year-old sparks protests",
    "url": "https://www.aljazeera.com/news/2026/10/9/ice-agent-shoots-man-in-car-with-five-year-old-child-in-new-york-mayor",
    "gathered": "2026-10-09T04:10:12Z"
   },
@@ -221,11 +251,7 @@
     "Defense Secretary Pete Hegseth gave the crew the Presidential Unit Citation on Wednesday."
    ],
    "place": "San Diego, California",
-   "publisher": "KUOW",
-   "title": "The long-deployed USS Lincoln is returning home to San Diego",
    "url": "https://www.kuow.org/npr-news/2026-10-08/the-long-deployed-uss-lincoln-is-returning-home-to-san-diego",
-   "published": "2026-10-08T16:18:20Z",
-   "updated": "2026-10-08T16:20:31Z",
    "gathered": "2026-10-08T16:48:15Z"
   },
   {
@@ -328,6 +354,21 @@
   }
  ],
  "international": [
+  {
+   "h": "Ethiopian forces enter Tigray capital",
+   "b": "Ethiopian federal forces entered Mekelle after nearly two weeks of fighting, as rebel forces including the TPLF withdrew.",
+   "date": "2026-10-09",
+   "more": [
+    "The fighting has effectively ended the 2022 Pretoria ceasefire.",
+    "There are reports of Eritrean troops entering northern Tigrayan towns."
+   ],
+   "place": "Mekelle, Ethiopia",
+   "tz": "Africa/Addis_Ababa",
+   "publisher": "Al Jazeera",
+   "title": "Will Ethiopia’s neighbours intervene as Tigray war escalates?",
+   "url": "https://www.aljazeera.com/news/2026/10/9/will-ethiopias-neighbours-intervene-as-tigray-war-escalates",
+   "gathered": "2026-10-09T09:28:01Z"
+  },
   {
    "h": "UN extends Darfur arms embargo",
    "b": "The UN Security Council extended the Darfur arms embargo until December 11 but did not agree to a US plan to widen it to all of Sudan, after Russia and China objected.",
@@ -595,46 +636,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 56,
    "cond": "Fair",
-   "obs": "8 Oct 23:51 pm EDT"
+   "obs": "9 Oct 04:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 59,
-    "text": "Clear, with a low around 59. West wind around 9 mph. "
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 71,
-    "text": "Sunny, with a high near 71. West wind 8 to 16 mph, with gusts as high as 28 mph. "
+    "text": "Sunny, with a high near 71. West wind 7 to 15 mph. "
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 56,
-    "text": "Mostly clear, with a low around 56. West wind 7 to 10 mph. "
+    "temp": 55,
+    "text": "Mostly cloudy, with a low around 55. Northwest wind 3 to 7 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 69,
-    "text": "Increasing clouds, with a high near 69. North wind 5 to 8 mph becoming light and variable. "
+    "text": "Partly sunny, with a high near 69. Light and variable wind becoming southeast around 6 mph in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 61,
-    "text": "Mostly cloudy, with a low around 61. South wind 3 to 7 mph. "
+    "temp": 59,
+    "text": "Mostly cloudy, with a low around 59. East wind around 7 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 68,
-    "text": "Showers likely after 2pm.  Mostly cloudy, with a high near 68. Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 67,
+    "text": "Showers.  High near 67. Southeast wind 9 to 14 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+   },
+   {
+    "name": "Sunday Night",
+    "kind": "low",
+    "temp": 66,
+    "text": "Showers.  Steady temperature around 66. Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
    }
   ]
  },
