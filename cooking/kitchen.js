@@ -131,44 +131,7 @@ function windowView(x, y, w, h, country, t){
 }
 
 /* ---------- Baldur, from Chris's photos (cooking-channel/baldur-sketch.png in the project) ---------- */
-const DOG = {K: "#2a221e", D: "#3e332c", T: "#b4824c", E: "#1b1b25", G: "#b9b2a6", N: "#121218", B: "#8c6034", P: "#d8707e", W: "#ece6da", L: "#4a3a30", m: "#9a95a2", n: "#7d7884", q: "#5f5a68"};
-const STAND = [
-  "....................KKKKKKKK....",
-  "....................DDDKKKTK....",
-  "KK..................DDDKKEKK....",
-  "KK..................DDDKKKGGGGNN",
-  ".KK................TDDDKGGGGGGNN",
-  ".KK................TDDDKGGGGGGG.",
-  "..BBKKDDDDDDDDDDDDKTDDDKKKKK....",
-  "..BTKKKKKKKKKKKKKKKTTTT.........",
-  "...TKKKKKKKKKKKKKKKTTTT.........",
-  "...TTTTTTTTTTTTTTTTTTTT.........",
-  "...TTTTTTTTTTTTTTTTTTWWW........",
-  "...TTTTTTTTTTTTTTTTTTWWW........",
-  "...TTTTTTTTTTTTTTTTTTWWW........",
-  "...TTTTTTTTTTTTTTTTTTWWW........",
-  "...BBBBBBBBBBBBBBBBBBWWW........"];
-const BED = [
-  "..............KKKDDDDDDDDDDDDDDKKKKK...................",
-  ".............TKKKKKKKKKKKKKKKKKKKKKKT..................",
-  ".............TKKKKKKKKKKKKKKKKKKKKKKT..KKKTKKKTK.......",
-  "...........TTTTTTTTTTTTTTTTTTTTTTTTTTTTDDDKKKKKK.......",
-  "...........TTTTTTTTTTTTTTTTTTTTTTTTTTTTDDDKKLLKK.......",
-  "...........TTTTTTTTTTTTTTTTTTTTTTTTTTTTDDDKKKGGGGGNN...",
-  "...........TTTTTTTTTTTTTTTTTTTTTTTTTTTTDDDKKKGGGGGNN...",
-  "...mmmmmmmmTTTTTTTTTTTTTTTTTTTTTTTTTTTTDDDKKKGGGGGGmm..",
-  "...mmmmmmmmTTTTTTTTTTTTTTTTTTTTTTTTTTTTDDDKKKKKKmmmmm..",
-  ".mmmmmmmmBBBBBBBBBBTTTTTTTTTTTTTTTTTTTTTTmmmmmmmmmmmmmm",
-  ".mmnnnnKKKKBBBBBBBBTTWWWWTWWWWTTTTTTTTTTTnnnnnnnnnnnnmm",
-  ".mmnnnnKKKKBBBBBBBBTTWWWWTWWWWTTTTTTTTTTTnnnnnnnnnnnnmm",
-  ".mmnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnmm",
-  ".mmnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnmm",
-  ".mmnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnmm",
-  ".nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
-  ".nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
-  ".nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
-  ".nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
-  "...qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq.."];
+const {DOG, STAND, BED} = PBC_BALDUR;   // the one drawing of him, shared with the Sports Desk (shared/baldur.js)
 function sprite(rows, x, y, flip, from, to){
   const w = rows[0].length;
   for (let r = from || 0; r < (to || rows.length); r++) for (let c = 0; c < w; c++) { const ch = rows[r][c]; if (ch !== ".") R(DOG[ch], x + (flip ? w - 1 - c : c), y + r, 1, 1); }
@@ -186,16 +149,7 @@ function sleeping(t){
   if (Math.floor(t / 1800) % 3 === 0) txt("Z", BED_X + 50, BED_Y - 8 - (Math.floor(t / 600) % 3), "#9fb2ff");
 }
 // standing, walking (legs swap) or licking (head down, tongue out); x is his left edge, feet on the floor at y 146
-function dog(x, flip, mode, t){
-  const y = 146 - 20, leg = mode === "walk" ? Math.floor(t / 160) % 2 : 0;
-  if (mode === "lick") { sprite(STAND, x, y + 5, flip, 6, 15); const hx = flip ? x : x; sprite(STAND.map(r => r.slice(18)), hx + (flip ? 0 : 18), y + 9, flip, 0, 6);
-    if (Math.floor(t / 250) % 2) R(DOG.P, flip ? x + 1 : x + 30, y + 15, 2, 2); }
-  else sprite(STAND, x, y + 5, flip);
-  // legs: back pair and front pair, the darker leg of each behind
-  const L = (lx, c, dx) => R(c, flip ? x + 31 - lx - 1 - dx : x + lx + dx, y + 20, 2, 5);
-  L(4, DOG.T, leg); L(7, DOG.B, -leg); L(17, DOG.T, -leg); L(20, DOG.B, leg);
-  R(DOG.W, flip ? x + 31 - 6 : x + 4 + leg, y + 24, 2, 1); R(DOG.W, flip ? x + 31 - 19 : x + 17 - leg, y + 24, 2, 1);
-}
+function dog(x, flip, mode, t){ PBC_BALDUR.dog(R, x, 146 - 20, flip, mode, t); }
 // the spill: a few drops land in front of the island at drop; he wakes, trots over, licks it up and goes back to bed
 const SPILL = {drop: 9000, wake: 11500, go: 13000, there: 19000, done: 24000, home: 30000};
 function baldur(t, el, spill){

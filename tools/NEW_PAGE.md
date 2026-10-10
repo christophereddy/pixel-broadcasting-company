@@ -24,6 +24,7 @@ Every PBC page looks like one company: the same fonts, the same colors, the same
 | `shared/company.css` | Text cards, directory, steps, stats, menu, forms, tags (`co-*` classes) | company pages |
 | `shared/live.js`, `shared/music.js`, `shared/ads.js` | LIVE NOW, the theme music and TUNE IN, the ad copy | channels |
 | `shared/people.js` | `PBC_PEOPLE.person()` and `anim()`: the newsroom's way of drawing people | News, the Sports Desk |
+| `shared/baldur.js` | `PBC_BALDUR`: Baldur the dog, one drawing (standing, walking, asleep in his bed) | Cooking, the Sports Desk |
 
 ### Fonts
 
