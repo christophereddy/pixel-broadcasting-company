@@ -55,6 +55,13 @@
   color-scheme:dark;
 }
 html{scrollbar-gutter:stable}
+/* A fraction (⅓) is shown as small stacked VT323 digits, the same in every font around it. shared/pbc.js wraps the
+   character in .pbc-frac with data-n and data-d; the character stays in the text (for copy and screen readers) at size 0. */
+.pbc-frac{font-family:var(--f-body);font-weight:400;white-space:nowrap}
+.pbc-frac>span{font-size:0}
+.pbc-frac::before,.pbc-frac::after{font-size:.7em;line-height:0}
+.pbc-frac::before{content:attr(data-n);vertical-align:.4em}
+.pbc-frac::after{content:"/" attr(data-d);vertical-align:-.1em}
 body{margin:0;background:var(--room);color:var(--text);font-family:var(--f-body);font-size:20px;line-height:1.25}
 [hidden]{display:none!important}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
