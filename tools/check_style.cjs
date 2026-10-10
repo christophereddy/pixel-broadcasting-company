@@ -11,6 +11,8 @@
 //     masthead and control row (.pbc-page, .pbc-mast, .pbc-mark, .pbc-chan, .pbc-onair, .pbc-ctl, .pbc-btns)
 //   - a file other than shared/ads.js carries its own pixel font (tables of 3x5 or 5x7 glyph bitmaps); PBC has one
 //   - a rundown isn't the shared one (<div class="pbc-card"><h2>RUNDOWN</h2>... <ol class="pbc-rundown">)
+//   - shared/pbc.css restyles a kind of rundown row's time line (.pbc-rundown li.x .tm{font-family/font-size/color});
+//     every row keeps the same time line, and a kind of row gets its marker with .tm::after, like NOW and NEXT
 // Pictures are exempt: canvas drawing (fillStyle, team colors) and SVG fill="" attributes are pixel art, not page style.
 // Exit code 1 lists every problem with its file and line.
 const fs = require('node:fs'), path = require('node:path');
@@ -28,6 +30,10 @@ const COLOR_WORDS = 'white|black|red|green|blue|yellow|orange|purple|pink|gray|g
 const COLOR_LITERAL = new RegExp(String.raw`#[0-9a-fA-F]{3,8}\b|\b(?:rgba?|hsla?|hwb|lab|lch|oklab|oklch)\(|(?<![\w-])(?:${COLOR_WORDS})(?![\w-])`, 'i');
 // Properties whose values can hold a color
 const COLOR_PROPS = /^(color|background(-color|-image)?|border(-(top|right|bottom|left|block|inline))?(-color)?|outline(-color)?|box-shadow|text-shadow|text-decoration(-color)?|caret-color|accent-color|fill|stroke|column-rule(-color)?|scrollbar-color|filter|drop-shadow)$/i;
+// The rundown's time line: one look for every row. Only these rules may set its font or color; a new kind of row
+// gets its marker with .tm::after (tools/NEW_PAGE.md).
+const RUNDOWN_TM = /\.pbc-rundown\b.*\.tm(?![\w-])(?!.*::?(after|before)\s*$)/;
+const RUNDOWN_TM_OK = new Set(['.pbc-rundown li .tm', '.pbc-rundown li.now .tm']);
 const FONT_OK = /^(var\(--f-(display|label|body)\)|inherit|unset|initial)$/;
 
 const problems = [];
@@ -64,6 +70,10 @@ function checkCss(file, text, css, base, { isSource = false, selectors = true } 
       }
     }
     const body = b.body.replace(/\/\*[\s\S]*?\*\//g, m => ' '.repeat(m.length));
+    if (isSource && /(^|;)\s*(font|font-family|font-size|color)\s*:/.test(body)) {
+      for (const one of sel.split(',').map(s => s.trim().replace(/\s+/g, ' ')))
+        if (RUNDOWN_TM.test(one) && !RUNDOWN_TM_OK.has(one)) say(file, ln, `restyles a rundown row's time line: "${one}". Every row keeps the same .tm; give a new kind of row its marker with .tm::after, like NOW and NEXT (tools/NEW_PAGE.md).`);
+    }
     for (const m of body.matchAll(decl)) {
       const prop = m[1].toLowerCase(), val = m[2].trim();
       const where = lineAt(text, base + b.at + m.index);
