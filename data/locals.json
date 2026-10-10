@@ -42,9 +42,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
-    "cond": "Overcast",
-    "obs": "9 Oct 17:52 pm EDT"
+    "temp": 65,
+    "cond": " Light Rain",
+    "obs": "9 Oct 19:52 pm EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 63,
-     "text": "Rain and thunderstorms before 2am, then a chance of showers, mainly between 2am and 5am.  Low around 63. Southeast wind around 15 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%."
+     "text": "Rain and thunderstorms before 2am, then a chance of showers, mainly between 2am and 5am.  Low around 63. Southeast wind around 15 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%. New rainfall amounts between three quarters and one inch possible. "
     },
     {
      "name": "Sunday",
@@ -75,7 +75,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Partly cloudy, with a low around 62."
+     "text": "Partly cloudy, with a low around 62. West wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Columbus Day",
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -127,16 +127,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 60,
     "cond": "A Few Clouds",
-    "obs": "9 Oct 17:54 pm EDT"
+    "obs": "9 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Mostly clear, with a low around 45. West wind 7 to 10 mph, with gusts as high as 26 mph. "
+     "text": "Mostly clear, with a low around 45. West wind 7 to 9 mph. "
     },
     {
      "name": "Saturday",
@@ -182,7 +182,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -193,6 +193,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "CPS probe of board president candidate may end soon",
+    "b": "CPS' inspector general reopened an investigation into whether candidate Hilario Dominguez acted inappropriately with a 17-year-old in 2017. Dominguez denies any wrongdoing.",
+    "date": "2026-10-09",
+    "publisher": "WBEZ",
+    "title": "Reopened probe into CPS Board president candidate’s alleged inappropriate contact with teen could end soon",
+    "url": "https://www.wbez.org/education/2026/10/09/reopened-probe-into-cps-board-president-candidates-alleged-inappropriate-contact-with-teen-could-end-soon",
+    "published": "2026-10-10T00:36:02Z",
+    "updated": "2026-10-10T00:36:02Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
    {
     "h": "Bears legend Mike Ditka dies at 86",
     "b": "Mike Ditka, who played on the Bears' 1963 title team and coached them to their only Super Bowl win, died Friday morning surrounded by family.",
@@ -220,9 +231,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 68,
     "cond": "Mostly Cloudy",
-    "obs": "9 Oct 16:53 pm CDT"
+    "obs": "9 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -247,13 +258,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 68,
-     "text": "Partly sunny, with a high near 68. East northeast wind around 5 mph. "
+     "text": "Cloudy through mid morning, then gradual clearing, with a high near 68. East northeast wind around 5 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 60,
-     "text": "Partly cloudy, with a low around 60."
+     "text": "Partly cloudy, with a low around 60. East wind around 5 mph becoming south southwest after midnight. Winds could gust as high as 10 mph. "
     },
     {
      "name": "Columbus Day",
@@ -275,7 +286,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -288,16 +299,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 86,
+    "temp": 79,
     "cond": "A Few Clouds",
-    "obs": "9 Oct 14:58 pm MDT"
+    "obs": "9 Oct 17:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. West northwest wind around 7 mph becoming south southwest after midnight. "
+     "text": "Mostly clear, with a low around 56. West wind around 7 mph becoming south southwest after midnight. "
     },
     {
      "name": "Saturday",
@@ -343,7 +354,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -354,6 +365,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "SoCal gets rain and a big cooldown",
+    "b": "Tropical Storm Rachel is bringing rain and cooler weather to Southern California this weekend, along with elevated sea levels, coastal erosion and dangerous surf.",
+    "date": "2026-10-09",
+    "publisher": "LAist",
+    "title": "Weather whiplash: SoCal gets a huge cooldown, some rain and more coastal damage",
+    "url": "https://laist.com/news/climate-environment/weather-whiplash-socal-rain-cooldown-tides-waves",
+    "published": "2026-10-09T23:02:47Z",
+    "updated": "2026-10-09T23:02:47Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
    {
     "h": "Waves break Peninsula boardwalk in Long Beach",
     "b": "City inspectors declared several Peninsula buildings unsafe after Hurricane Rachel's high surf and tides tore apart a section of the wooden bulkhead, flooding streets.",
@@ -419,7 +441,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 58,
-     "text": "A 50 percent chance of showers, mainly after 11pm.  Mostly cloudy, with a low around 58."
+     "text": "A 50 percent chance of showers, mainly after 11pm.  Mostly cloudy, with a low around 58. South wind 5 to 15 mph, with gusts as high as 20 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Columbus Day",
@@ -441,7 +463,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -452,6 +474,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "DSA urges Mamdani to fire NYPD commissioner",
+    "b": "The city's Democratic Socialists of America chapter is pressuring Mayor Zohran Mamdani to fire his police commissioner if ICE doesn't leave New York City.",
+    "date": "2026-10-09",
+    "publisher": "Gothamist",
+    "title": "DSA to Mamdani: Fire NYPD commissioner if ICE doesn't leave NYC",
+    "url": "https://gothamist.com/news/dsa-to-mamdani-fire-nypd-commissioner-if-ice-doesnt-leave-nyc",
+    "published": "2026-10-09T22:31:00Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
+   {
+    "h": "Two killed in Bronx vehicle crash",
+    "b": "Two people died and several were injured when a car rear-ended four vehicles on Allerton Avenue in the Bronx on Friday, police said.",
+    "date": "2026-10-09",
+    "publisher": "Gothamist",
+    "title": "Two people killed in Bronx vehicle crash",
+    "url": "https://gothamist.com/news/three-people-critically-injured-in-bronx-vehicle-crash",
+    "published": "2026-10-09T22:25:00Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
    {
     "h": "NY will opt in to Trump school choice program",
     "b": "Gov. Kathy Hochul said New York will join the Trump administration's school choice program despite teachers unions' fears it will divert money from public schools.",
@@ -528,16 +570,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "9 Oct 17:51 pm EDT"
+    "obs": "9 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly cloudy, with a low around 54. Northwest wind 5 to 10 mph. "
+     "text": "Mostly cloudy, with a low around 54. West wind around 6 mph. "
     },
     {
      "name": "Saturday",
@@ -583,7 +625,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -630,7 +672,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "goodnews": []
  },
  {
@@ -640,6 +682,39 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Microsoft workers stunned by visa fraud claim",
+    "b": "Vice President JD Vance accused Microsoft of fraud and suspended it from a program that moves H-1B workers toward permanent residency. Microsoft says the administration misinterpreted its use of the program.",
+    "date": "2026-10-09",
+    "publisher": "KUOW",
+    "title": "Microsoft workers stunned by federal accusations of visa fraud",
+    "url": "https://www.kuow.org/technology/2026-10-09/microsoft-workers-stunned-by-federal-accusations-of-visa-fraud",
+    "published": "2026-10-10T00:49:37Z",
+    "updated": "2026-10-10T00:49:37Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
+   {
+    "h": "Sen. Murray says AI is denying care to WA seniors",
+    "b": "Doctors and Democratic lawmakers criticized a federal Medicare pilot in six states, including Washington, that uses artificial intelligence to evaluate some claims.",
+    "date": "2026-10-09",
+    "publisher": "KUOW",
+    "title": "The feds are using AI to deny care to WA seniors, Sen. Murray says",
+    "url": "https://www.kuow.org/health/2026-10-09/the-feds-are-using-ai-to-deny-care-to-wa-seniors-sen-murray-says",
+    "published": "2026-10-09T23:45:40Z",
+    "updated": "2026-10-09T23:45:40Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
+   {
+    "h": "Kirkland and Kraken plan new iceplex",
+    "b": "Kirkland and the Seattle Kraken plan an 80,000-square-foot iceplex and community center at a former park-and-ride, which the city hopes to open around this time next year.",
+    "date": "2026-10-09",
+    "publisher": "KUOW",
+    "title": "Kirkland releases the Kraken with plans for new iceplex",
+    "url": "https://www.kuow.org/sports/2026-10-09/kirkland-releases-the-kraken-with-plans-for-new-iceplex",
+    "published": "2026-10-09T23:24:28Z",
+    "updated": "2026-10-10T00:43:52Z",
+    "gathered": "2026-10-10T01:10:35Z"
+   },
    {
     "h": "Gluesenkamp Perez, Braun hold first debate",
     "b": "Rep. Marie Gluesenkamp Perez and state Sen. John Braun split over voter ID and immigration enforcement in their first debate for Washington's 3rd District.",
@@ -659,7 +734,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "A 10 percent chance of rain before 7pm.  Mostly cloudy, with a low around 48. Light and variable wind becoming south southeast around 6 mph in the evening. "
+     "text": "A 20 percent chance of rain before 7pm.  Mostly cloudy, with a low around 48. Light and variable wind becoming south southeast around 6 mph in the evening. "
     },
     {
      "name": "Saturday",
@@ -683,7 +758,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45."
+     "text": "Clear, with a low around 45. North wind 5 to 8 mph becoming calm  in the evening. "
     },
     {
      "name": "Columbus Day",
@@ -705,7 +780,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T01:09:00Z",
+  "updatedAt": "2026-10-10T04:09:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
