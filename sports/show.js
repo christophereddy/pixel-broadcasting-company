@@ -304,7 +304,8 @@ function deskClips(){
     out.push({i0: Math.max(0, n - 3), i1: n - 1, why: 'the finish', intro: 'And the finish.'});
   } else {
     const picks = sc.length <= 3 ? sc.slice() : [sc[0], sc[Math.floor(sc.length / 2)], sc[sc.length - 1]];
-    for (const s of picks) out.push({i0: Math.max(R.driveOf(s.i), s.i - 2), i1: s.i, why: where(s.i),
+    // a touchdown's clip runs through the try after it (s.end)
+    for (const s of picks) out.push({i0: Math.max(R.driveOf(s.i), s.i - 2), i1: s.end ?? s.i, why: where(s.i),
       intro: `${s.team.loc}, ${deskKind(s.kind)} ${at(s.i)}.`});
   }
   return out.filter(c => c.i1 >= c.i0);

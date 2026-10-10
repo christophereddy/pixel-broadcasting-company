@@ -626,8 +626,48 @@ function renderList(){
 
 /* ================= roster / jersey numbers ================= */
 const GROUP = {QB:'QB', RB:'RB', FB:'RB', HB:'RB', WR:'WR', TE:'TE', C:'OL', G:'OL', OG:'OL', OT:'OL', T:'OL', OL:'OL',
-  DE:'DL', DT:'DL', NT:'DL', DL:'DL', LB:'LB', OLB:'LB', ILB:'LB', MLB:'LB', CB:'CB', S:'S', FS:'S', SS:'S', DB:'S', PK:'K', K:'K', P:'P'};
-const FALLBACK = {QB:[12], RB:[28,32], WR:[11,13,81], TE:[87], OL:[70,71,72,73,74], DL:[90,91,92,93], LB:[50,51,52], CB:[21,24], S:[31,33], K:[3], P:[8]};
+  DE:'DL', DT:'DL', NT:'DL', DL:'DL', LB:'LB', OLB:'LB', ILB:'LB', MLB:'LB', CB:'CB', S:'S', FS:'S', SS:'S', DB:'S', PK:'K', K:'K', P:'P', LS:'LS'};
+// stock numbers when a roster doesn't load. ST is the special teams pool (kick coverage and return blockers), RET the returners.
+const FALLBACK = {QB:[12], RB:[28,32], WR:[11,13,81,17], TE:[87,88,89], OL:[70,71,72,73,74,75,76], DL:[90,91,92,93,94,95], LB:[50,51,52,53,54], CB:[21,24,25], S:[31,33,36], K:[3], P:[8], LS:[46],
+  ST:[45,47,48,49,55,56,38,39,29,27,26,85,84], RET:[17,23]};
+// Football units come from each team's depth chart: starters play offense and defense, the backups behind them cover kicks
+// and block on returns (ST), and returners (RET) are the backs, receivers and corners just behind the starters.
+// A player the play-by-play names always takes the field for that play (tag in planPlay), and keeps his spot after it.
+function footballPools(team){
+  const R = S.roster[team.id]; if (!R || isMLB() || isBB()) return;
+  const rank = p => R.rank?.[p.id] ?? (R.played?.has(p.id) ? 50 : 99);
+  for (const g of Object.keys(R.pools)) if (!['ST', 'RET'].includes(g)) R.pools[g] = R.base[g].slice().sort((a, b) => rank(a) - rank(b));
+  const from = (g, k) => (R.pools[g] || []).slice(k);
+  const mix = lists => { const out = []; for (let i = 0; lists.some(l => i < l.length); i++) for (const l of lists) if (l[i]) out.push(l[i]); return out; };
+  R.pools.ST = mix([from('LB', 3), from('S', 2), from('CB', 2), from('RB', 1), from('TE', 1), from('WR', 3)]);
+  R.pools.RET = mix([from('WR', 3), from('RB', 1), from('CB', 2)]);
+}
+// ESPN's depth chart: each formation lists its positions with the players in order (first is the starter).
+// Shapes differ between ESPN's endpoints, so read any athlete id we can find; a player's rank is his best slot.
+async function loadDepth(team){
+  const R = S.roster[team.id]; if (!R || R.rank) return;
+  R.rank = {};
+  try {
+    const d = await getJSON(`${API}/teams/${team.id}/depthcharts`);
+    for (const f of d.depthchart || d.items || d.depthCharts || []) for (const pos of Object.values(f.positions || {})) {
+      (pos.athletes || []).forEach((a, i) => {
+        const id = String(a.id ?? a.athlete?.id ?? (/athletes\/(\d+)/.exec(a.athlete?.$ref || a.$ref || '') || [])[1] ?? '');
+        if (id && (R.rank[id] == null || i < R.rank[id])) R.rank[id] = i;
+      });
+    }
+  } catch (e) { /* no depth chart: ESPN's roster order, with players from the box score first */ }
+  footballPools(team);
+}
+// a finished or running game's box score names who actually played; they go ahead of the rest of the roster
+function footballPlayed(sum){
+  if (isMLB() || isBB() || !sum?.boxscore?.players) return;
+  for (const t of sum.boxscore.players) {
+    const R = S.roster[t.team?.id]; if (!R) continue;
+    R.played = new Set();
+    for (const st of t.statistics || []) for (const a of st.athletes || []) if (a.athlete?.id) R.played.add(String(a.athlete.id));
+    footballPools(t.team.id === S.home.id ? S.home : S.away);
+  }
+}
 
 // MLB positions, grouped the way a baseball roster reads
 const MLB_SIDE = {SP: 'PITCHERS', RP: 'PITCHERS', P: 'PITCHERS', C: 'CATCHERS', '1B': 'INFIELDERS', '2B': 'INFIELDERS', '3B': 'INFIELDERS', SS: 'INFIELDERS', IF: 'INFIELDERS',
@@ -666,14 +706,29 @@ async function loadRoster(team){
       all.push(p); if (p.id) byId[p.id] = p; if (grp) (pools[grp] ||= []).push(p);
     }
   } catch (e) { /* fall back to stock numbers */ }
-  S.roster[team.id] = {pools, all, byId}; S.over[team.id] = {};
+  const base = {}; for (const g of Object.keys(pools)) base[g] = pools[g].slice();
+  S.roster[team.id] = {pools, all, byId, base}; S.over[team.id] = {};
+  if (!isBB()) footballPools(team);
 }
-function numFor(team, role){
-  const o = S.over[team.id]?.[role]; if (o != null) return o;
-  const base = role.replace(/\d+$/, ''), idx = Number(role.match(/\d+$/)?.[0] || 0);
-  const pool = S.roster[team.id]?.pools?.[base];
-  if (pool && idx < pool.length) return pool[idx].num;
-  const fb = FALLBACK[base] || [0]; return fb[idx % fb.length];
+// role names: OL0, QB0... on offense and defense; ST and RT are kick coverage and return blockers, KR and PR the returners
+const POOL_OF = {RT: 'ST', KR: 'RET', PR: 'RET'};
+// a role's jersey number. `used` holds the numbers a lineup has already given out, so one player never shows up twice.
+function numFor(team, role, used){
+  const o = S.over[team.id]?.[role]; if (o != null && !used?.has(o)) return o;
+  const b = role.replace(/\d+$/, ''), base = POOL_OF[b] || b, idx = Number(role.match(/\d+$/)?.[0] || 0);
+  const pool = S.roster[team.id]?.pools?.[base], free = n => n != null && !used?.has(n);
+  if (pool?.length) { for (let k = idx; k < pool.length; k++) if (free(pool[k].num)) return pool[k].num; }
+  // the pool ran out: any backup on the roster who isn't a quarterback or kicker, before stock numbers
+  const R = S.roster[team.id];
+  if (R?.all?.length) {
+    const spare = R.all.filter(p => free(p.num) && !['QB', 'K', 'P', 'LS'].includes(p.grp));
+    const backup = spare.find(p => (R.rank?.[p.id] ?? 1) > 0) || spare[0];
+    if (backup) return backup.num;
+  }
+  const fb = FALLBACK[base] || [0];
+  for (let k = 0; k < fb.length; k++) if (free(fb[(idx + k) % fb.length])) return fb[(idx + k) % fb.length];
+  for (let n = 1; n < 100; n++) if (free(n)) return n;
+  return fb[0];
 }
 function findPlayer(token){
   const m = token.match(/^([A-Za-z']{1,3})\.\s?([A-Za-z'\-]+)/); if (!m) return null;
@@ -1247,7 +1302,7 @@ function teamByAbbr(ab){
 }
 function speechText(t){
   let s = ' ' + t + ' ';
-  s = s.replace(/\([^)]*\)/g, ' ');
+  s = s.replace(/\([^)]*\)/g, ' ').replace(/,?\s*(?:Center|Holder)-(?:[A-Z][A-Za-z']{0,2}\.\s?)?[A-Z][A-Za-z'\-]+/g, ' '); // "Center-R.Ferguson, Holder-S.Martin" isn't read out
   s = s.replace(/\b([A-Z]{2,5})-(?=[A-Z])/g, (m, a) => { const tm = teamByAbbr(a); return tm ? tm.loc + ' ' : m; });
   s = s.replace(/\b[A-Z][A-Za-z']{0,2}\.\s?([A-Z][A-Za-z'\-]+)/g, '$1');
   // "to BUF 20" (NFL) and "to the UCLA 31" (college) both read "to the Buffalo 20"
@@ -1290,6 +1345,9 @@ const LINES = {
   fg: ['Splits the uprights!', 'Three points on the board.', 'Right down the middle, money!', 'Kickers are people too, folks. Give him a hand!', 'Never a doubt. Pure as the driven snow.', 'Three points. You take them when you can get them.'],
   fgmiss: ['No good! He will want that one back.', 'Wide! The kicker can not believe it.', 'Doinked! Oh, that is a tough one.', 'No good, and points left on the field.'],
   pat: ['And the extra point is good.', 'Point after is good.', 'Tack on the extra point.'],
+  patMiss: ['Oh, he missed the extra point! That could come back to haunt them.', 'No good! You do not see that every day.', 'The kick is no good. Leaves a point on the table.'],
+  two: ['They go for two, and they get it!', 'Two-point try is good! Gutsy call.', 'Going for two and cashing in!'],
+  twoMiss: ['They went for two and came up short.', 'Two-point try fails. The defense holds.', 'Gamble does not pay off on the conversion.'],
   pen: ['Yellow laundry on the field.', 'Self-inflicted wound right there.', 'The refs want a word.', 'Flag on the play. Discipline, folks.', 'Back in my day, we got away with that. Not anymore!', 'That one is going to cost them.', 'You can not do that. The officials saw it plain as day.'],
   timeout: ['Time out on the field. Let us catch our breath.', 'Strategy session on the sideline.', 'Good time to get everybody on the same page.', 'Huddle up, coach has something to say.'],
   period: ['That will do it for the quarter.', 'And we will change ends of the field.', 'End of the quarter. Grab a hot dog, folks.', 'Quarter is in the books.'],
@@ -1328,7 +1386,7 @@ function colorLine(p, plan){
     case 'kickoff': key = /touchback/i.test(p.text) ? 'touchback' : 'kickoff'; break;
     case 'punt': key = 'punt'; break;
     case 'fg': key = plan.good ? 'fg' : 'fgmiss'; break;
-    case 'pat': key = 'pat'; break;
+    case 'pat': key = plan.good ? 'pat' : 'patMiss'; break;
     case 'inc': key = 'inc'; break;
     case 'sack': key = 'sack'; break;
     case 'int': key = 'int'; break;
@@ -1337,6 +1395,7 @@ function colorLine(p, plan){
     default: key = y >= 15 ? 'big' : y < 0 ? 'loss' : y <= 2 ? 'short' : (p.end?.down === 1 && (p.start?.down || 0) > 1) ? 'first' : 'gain';
   }
   if (plan.td) key = 'td';
+  if (plan.two) key = twoPoint(p)?.good ? 'two' : 'twoMiss';
   if (/fumble/i.test(p.text) && plan.kind !== 'admin') key = /recovered by/i.test(p.text) ? 'fumble' : key;
   if (!key) return null;
   return fill(pickFresh(LINES[key], p.id + key), plan, y);
@@ -1375,6 +1434,10 @@ function dukeAside(p, plan, before){
 
 /* ================= play planner ================= */
 function classify(p){
+  // the try after a touchdown, split off the touchdown's entry by playsOf: a kick, or a two-point pass or run
+  if (p._try) return p._try.two ? (p._try.two === 'pass' ? (p._try.good ? 'pass' : 'inc') : 'rush') : 'pat';
+  // a two-point play on its own entry (college overtime from the third period on): a pass or a run from the 3
+  const tp = twoPoint(p); if (tp) return tp.two === 'pass' ? (tp.good ? 'pass' : 'inc') : 'rush';
   const ty = (p.type?.text || '').toLowerCase(), tx = p.text || '';
   // the NFL feed writes "kicks 65 yards", "punts 45 yards"; college writes "kickoff for 65 yds", "punt for 45 yds"
   if (/kickoff/.test(ty) || /kicks (onside )?\d+ yards|\bkickoff for \d+ yds/i.test(tx)) return 'kickoff';
@@ -1391,27 +1454,84 @@ function classify(p){
   return 'admin';
 }
 
+// The NFL kickoff changed in 2024: the coverage team lines up at the receiving team's 40, the return team sets up between
+// its own 30 and 35, one or two returners wait in the landing zone, and nobody but the kicker and returners moves until
+// the ball lands. College football, and NFL games from before 2024, keep the old kickoff.
+function newKickoff(){
+  if (S.sport !== 'nfl') return false;
+  const d = new Date(evOf(S.game)?.date || Date.now());
+  return d.getFullYear() > 2024 || (d.getFullYear() === 2024 && d.getMonth() >= 6);
+}
+// each team's sideline, where players come on and go off: the home bench on the near side, the visitors' on the far side
+const benchY = team => team === S.home ? 54.6 : -1.3;
+const benchX = x => clamp(x, 28, 72);
+// Who's on the field depends on the play: the offense and defense, the punt and punt return units, the field goal unit,
+// or the kickoff and kick return units. Each role gets its player from the team's depth chart (numFor).
+// a two-point try: split off a touchdown (p._try), or an entry of its own
+function twoPoint(p){
+  if (p._try) return p._try.two ? p._try : null;
+  const tx = (p.type?.text || '') + ' ' + (p.text || '');
+  if (!/two-point|two point|2pt/i.test(tx) || /touchdown|kick/i.test(tx)) return null;
+  return {two: /\bpass\b/i.test(tx) ? 'pass' : 'rush', good: /succeeds|\bgood\b|conversion (?:pass|run) good/i.test(tx) || (!/fail|no good|incomplete|intercept/i.test(tx) && !!p.scoringPlay)};
+}
 function makeFormation(off, def, los, kind){
   const dir = off === S.home ? 1 : -1, A = [];
-  const add = (team, role, x, y) => A.push({team, role, kit: team.kit, x, y, num: numFor(team, role), frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y});
-  if (kind === 'kickoff') {
-    for (let i = 0; i < 10; i++) add(off, i < 5 ? 'LB' + i : 'S' + (i - 5), los - dir * 1, 5 + i * 4.8 + (i > 4 ? 1.5 : 0));
+  const add = (team, role, x, y) => A.push({team, role, kit: team.kit, x, y, num: null, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y});
+  if (kind === 'kickoff' && newKickoff()) {
+    const recv40 = dir > 0 ? 60 : 40, setup = dir > 0 ? 65 : 35, land = dir > 0 ? 94 : 6;
+    add(off, 'K0', los - dir * 1.5, MIDY);
+    for (let i = 0; i < 10; i++) add(off, 'ST' + i, recv40, 4 + i * 5.05 + (i > 4 ? 1.4 : 0));
+    for (let i = 0; i < 7; i++) add(def, 'RT' + i, setup, 8 + i * 6.2);
+    add(def, 'RT7', setup + dir * 4, MIDY - 9); add(def, 'RT8', setup + dir * 4, MIDY + 9);
+    add(def, 'KR0', land, MIDY - 3); add(def, 'KR1', land, MIDY + 3);
+  } else if (kind === 'kickoff') {
+    for (let i = 0; i < 10; i++) add(off, 'ST' + i, los - dir * 1, 5 + i * 4.8 + (i > 4 ? 1.5 : 0));
     add(off, 'K0', los - dir * 5, MIDY);
     const ret = los + dir * 55;
-    for (let i = 0; i < 5; i++) add(def, 'OL' + i, los + dir * 12, 10 + i * 8.3);
-    for (let i = 0; i < 4; i++) add(def, ['WR0','TE0','RB1','WR1'][i], los + dir * 30, 14 + i * 8.5);
-    add(def, 'WR2', clamp(ret, -8, 108), MIDY - 4); add(def, 'RB0', clamp(ret, -8, 108), MIDY + 4);
-    return A;
+    for (let i = 0; i < 5; i++) add(def, 'RT' + i, los + dir * 12, 10 + i * 8.3);
+    for (let i = 0; i < 4; i++) add(def, 'RT' + (i + 5), los + dir * 30, 14 + i * 8.5);
+    add(def, 'KR0', clamp(ret, -8, 108), MIDY - 4); add(def, 'KR1', clamp(ret, -8, 108), MIDY + 4);
+  } else if (kind === 'punt') {
+    // long snapper, four linemen, two wings, the personal protector, two gunners split wide and the punter
+    add(off, 'LS0', los - dir * 1, MIDY);
+    [-4, -2, 2, 4].forEach((d, i) => add(off, 'ST' + i, los - dir * 1, MIDY + d));
+    add(off, 'ST4', los - dir * 2, MIDY - 6); add(off, 'ST5', los - dir * 2, MIDY + 6);
+    add(off, 'ST6', los - dir * 5, MIDY + 1);
+    add(off, 'ST7', los - dir * 1, 5); add(off, 'ST8', los - dir * 1, 48);
+    add(off, 'P0', los - dir * 13, MIDY);
+    // the return team: six on the line, two on the gunners, one back to block and the returner deep
+    [-6, -3.5, -1.2, 1.2, 3.5, 6].forEach((d, i) => add(def, 'RT' + i, los + dir * 1.2, MIDY + d));
+    add(def, 'RT6', los + dir * 2, 7); add(def, 'RT7', los + dir * 2, 46);
+    add(def, 'RT8', los + dir * 12, MIDY);
+    add(def, 'PR0', clamp(los + dir * 42, -8, 108), MIDY);
+  } else if (kind === 'fg' || kind === 'pat') {
+    // field goal unit: nine on the line with the long snapper in the middle, the holder (the punter) and the kicker
+    [['TE1', -8], ['OL5', -6], ['OL0', -4], ['OL1', -2], ['LS0', 0], ['OL3', 2], ['OL4', 4], ['OL6', 6], ['TE2', 8]].forEach(([r, d]) => add(off, r, los - dir * 1, MIDY + d));
+    add(off, 'P0', los - dir * 7, MIDY);
+    add(off, 'K0', los - dir * 9.5, MIDY - 1.5);
+    // the defense stays on to rush the kick
+    [-4.5, -1.5, 1.5, 4.5].forEach((d, i) => add(def, 'DL' + i, los + dir * 1.2, MIDY + d));
+    [-7, 0, 7].forEach((d, i) => add(def, 'LB' + i, los + dir * 1.6, MIDY + d));
+    add(def, 'CB0', los + dir * 1.4, MIDY - 10); add(def, 'CB1', los + dir * 1.4, MIDY + 10);
+    add(def, 'S0', los + dir * 8, MIDY - 6); add(def, 'S1', los + dir * 8, MIDY + 6);
+  } else {
+    [-4, -2, 0, 2, 4].forEach((d, i) => add(off, 'OL' + i, los - dir * 1, MIDY + d));
+    add(off, 'QB0', los - dir * 5, MIDY);
+    add(off, 'RB0', los - dir * 7, MIDY + 1.5);
+    add(off, 'WR0', los - dir * 1, 6); add(off, 'WR1', los - dir * 1.5, 47); add(off, 'WR2', los - dir * 1.5, 13); add(off, 'TE0', los - dir * 1, MIDY + 6.5);
+    [-4.5, -1.5, 1.5, 4.5].forEach((d, i) => add(def, 'DL' + i, los + dir * 1.2, MIDY + d));
+    [-6, 0, 6].forEach((d, i) => add(def, 'LB' + i, los + dir * 5, MIDY + d));
+    add(def, 'CB0', los + dir * 6, 7); add(def, 'CB1', los + dir * 6, 46);
+    add(def, 'S0', los + dir * 12, 18); add(def, 'S1', los + dir * 12, 35);
   }
-  [-4, -2, 0, 2, 4].forEach((d, i) => add(off, 'OL' + i, los - dir * 1, MIDY + d));
-  add(off, 'QB0', los - dir * (kind === 'punt' ? 13 : kind === 'fg' || kind === 'pat' ? 7 : 5), MIDY);
-  add(off, 'RB0', los - dir * (kind === 'fg' || kind === 'pat' ? 9.5 : 7), MIDY + (kind === 'fg' || kind === 'pat' ? -1.5 : 1.5));
-  add(off, 'WR0', los - dir * 1, 6); add(off, 'WR1', los - dir * 1.5, 47); add(off, 'WR2', los - dir * 1.5, 13); add(off, 'TE0', los - dir * 1, MIDY + 6.5);
-  [-4.5, -1.5, 1.5, 4.5].forEach((d, i) => add(def, 'DL' + i, los + dir * 1.2, MIDY + d));
-  [-6, 0, 6].forEach((d, i) => add(def, 'LB' + i, los + dir * 5, MIDY + d));
-  add(def, 'CB0', los + dir * 6, 7); add(def, 'CB1', los + dir * 6, 46);
-  add(def, 'S0', los + dir * 12, 18); add(def, 'S1', los + dir * 12, 35);
-  if (kind === 'punt') { const r = A.find(a => a.role === 'S1'); r.x = clamp(los + dir * 42, -8, 108); r.y = MIDY; }
+  // jersey numbers: players the play-by-play put in a role keep it, then everyone else in depth chart order, no one twice
+  // kickers, snappers and returners first: there's only one of each, and the coverage units come out of the same backups
+  const first = r => /^(K|P|LS|KR|PR)\d/.test(r) ? 0 : 1;
+  for (const team of [off, def]) {
+    const used = new Set(), mine = A.filter(a => a.team === team).sort((a, b) => first(a.role) - first(b.role));
+    for (const a of mine) { const o = S.over[team.id]?.[a.role]; if (o != null && !used.has(o)) { a.num = o; used.add(o); } }
+    for (const a of mine) if (a.num == null) { a.num = numFor(team, a.role, used); used.add(a.num); }
+  }
   return A;
 }
 
@@ -1440,73 +1560,116 @@ function kickLand(ks, los, dir, dflt){
   if (ks?.endzone) return dir > 0 ? 104 : -4;
   return clamp(los + dir * (ks?.yds || dflt), -9, 109);
 }
-function planPlay(p){
-  const kind0 = classify(p), tx = p.text || '';
-  const st = p.start || {}, en = p.end || {};
-  let offId = st.team?.id || en.team?.id || S.home.id;
-  const ks = kind0 === 'kickoff' || kind0 === 'punt' ? kickSpots(tx) : null;
+// where a play lines up and who has the ball: used to plan the play, and between plays to line up for the next one
+function lineOf(p){
+  const kind = classify(p), tx = p.text || '', st = p.start || {};
+  let offId = st.team?.id || p.end?.team?.id || S.home.id;
+  const ks = kind === 'kickoff' || kind === 'punt' ? kickSpots(tx) : null;
   // a kickoff is kicked from the kicking team's own side ("from PIT 35"), whatever team the feed puts on the play
-  if (kind0 === 'kickoff' && ks?.kicker) offId = ks.kicker.id;
+  if (kind === 'kickoff' && ks?.kicker) offId = ks.kicker.id;
   const off = isHomeId(offId) ? S.home : S.away, def = off === S.home ? S.away : S.home, dir = off === S.home ? 1 : -1;
-  let kind = kind0;
-  let los = kind0 === 'kickoff' && ks?.from != null ? ks.from : st.yardsToEndzone != null ? xOf(offId, st.yardsToEndzone) : S.ball.x;
+  let los = kind === 'kickoff' && ks?.from != null ? ks.from : st.yardsToEndzone != null ? xOf(offId, st.yardsToEndzone) : S.ball.x;
   if (kind === 'pat' && st.yardsToEndzone == null) los = dir > 0 ? 85 : 15;
+  if (kind === 'kickoff' && ks?.from == null && st.yardsToEndzone == null) los = dir > 0 ? 35 : 65;
+  return {kind, off, def, dir, los, ks, offId};
+}
+// pass depth from the text: the NFL writes "short" (under 15 yards in the air) or "deep"
+// (college doesn't say, so a long gain counts as a deep ball)
+const airYards = (tx, gain, id) => /\bdeep\b/i.test(tx) || (!/\bshort\b/i.test(tx) && gain >= 25) ? Math.max(15, Math.min(gain, 16 + hash(id) % 14)) : Math.min(Math.max(gain, -3), 4 + hash(id) % 7);
+function planPlay(p){
+  const tx = p.text || '', st = p.start || {}, en = p.end || {};
+  const {kind: kind0, off, def, dir, los, ks, offId} = lineOf(p);
+  let kind = kind0;
   let endX = (en.team?.id && en.yardsToEndzone != null) ? xOf(en.team.id, en.yardsToEndzone) : los + dir * (p.statYardage || 0);
   const dh = (p.homeScore ?? S.prevScore.h) - S.prevScore.h, da = (p.awayScore ?? S.prevScore.a) - S.prevScore.a;
   const td = /touchdown/i.test(tx + ' ' + (p.type?.text || '')) && (dh >= 6 || da >= 6 || p.scoringPlay);
   if (td) endX = (dh >= 6 ? true : da >= 6 ? false : off === S.home) ? 104 : -4;
-  const plan = {kind, off, def, dir, los, endX, td, dur: 1, sfx: [], segs: [], carrier: null, carrierName: null, good: false, flag: null};
+  const tp = twoPoint(p);
+  if (tp && !p._try) endX = tp.good ? (dir > 0 ? 102 : -2) : los + dir * 1;
+  const plan = {kind, off, def, dir, los, endX, td, dur: 1, sfx: [], segs: [], carrier: null, carrierName: null, good: false, flag: null, two: !!tp};
   if (kind === 'admin') { plan.dur = 0.4; plan.endX = S.ball.x; plan.static = true; return plan; }
 
-  // build formation and tween from where players are now
+  // build formation and tween from where players are now. A player is the same player if he wears the same number for
+  // the same team; anyone new to the play runs on from his sideline, and anyone not in it runs off (sendOff, below).
   const F = makeFormation(off, def, los, kind);
-  const used = new Set();
+  const used = new Set(), here = S.actors.filter(b => !b.leaving);
   const starts = F.map(a => {
-    const prev = S.actors.find(b => !used.has(b) && b.team === a.team && b.num === a.num) || S.actors.find(b => !used.has(b) && b.team === a.team && b.role === a.role);
-    if (prev) used.add(prev);
-    return prev ? [prev.x, prev.y] : [a.x, a.y];
+    a.n0 = a.num;
+    const prev = here.find(b => !used.has(b) && b.team === a.team && b.num === a.num);
+    if (prev) { used.add(prev); return [prev.x, prev.y]; }
+    return [benchX(a.x), benchY(a.team)];
   });
   const far = Math.max(0, ...F.map((a, i) => Math.hypot(a.x - starts[i][0], a.y - starts[i][1])));
   const PRE = clamp(far / 7, 0.8, 2.4);
-  F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; });
+  F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; a.lx = sx; a.ly = sy; });
   const R = role => F.find(a => a.role === role && a.team === off) || F[0];
   const D = role => F.find(a => a.role === role && a.team === def) || F[F.length - 1];
   const go = (a, t, x, y) => a.track.push([PRE + t, x, y]);
   const runTime = (x0, x1) => Math.max(0.35, Math.abs(x1 - x0) / 8.5);
 
-  // jersey numbers from names in the text
+  // jersey numbers from names in the text. A named player takes the role; whoever had his number in this lineup swaps.
   const names = playNames(tx);
-  const tag = (actor, info) => { if (info && info.num != null && actor) { actor.num = info.num; if (info.team) S.over[info.team.id][actor.role] = info.num; } };
+  // A role he plays keeps him there for the next plays too (a returner, the running back), but a receiver who lined up
+  // at tight end this once doesn't become the tight end.
+  const grpOf = role => { const b = role.replace(/\d+$/, ''); return POOL_OF[b] || b; };
+  const tag = (actor, info) => {
+    if (!info || info.num == null || !actor) return;
+    if (info.team && info.team !== actor.team) return; // the text named a player of the other team: not this role
+    const twin = F.find(b => b !== actor && b.team === actor.team && b.num === info.num);
+    if (twin) twin.num = actor.num;
+    actor.num = info.num;
+    if (!info.pos || ['RET', 'ST'].includes(grpOf(actor.role)) || grpOf(actor.role) === info.pos) S.over[actor.team.id][actor.role] = info.num;
+  };
+  // the player the text names: already in this lineup, he is the one; otherwise he takes the given role
+  const cast = (actor, info) => {
+    const on = info?.num != null && actor && F.find(b => b.team === actor.team && b.num === info.num && (!info.team || info.team === b.team));
+    if (on) return on;
+    tag(actor, info); return actor;
+  };
   // the NFL lists tacklers in brackets at the end; college brackets name the kicker of the extra point instead
   const tacklers = S.sport === 'cfb' ? [] : ((tx.match(/\(([^)]*)\)\s*\.?\s*$/) || [])[1] || '').match(NAME_RE) || [];
 
-  const SNAP = 0.35, qb = R('QB0'), c = R('OL2');
+  const special = kind === 'punt' || kind === 'fg' || kind === 'pat';
+  const SNAP = 0.35, c = R(special ? 'LS0' : 'OL2');
+  let qb = R(special ? 'P0' : 'QB0');
   const seg = (t0, t1, s) => plan.segs.push(Object.assign({t0: PRE + t0, t1: PRE + t1}, s));
   const side = /\bleft\b/i.test(tx) ? -dir : /\bright\b/i.test(tx) ? dir : 0;
   const depth = /\bdeep\b/i.test(tx) ? 15 : 8;
   let carrier = null, tEnd = 2;
+  // the NFL names the long snapper and holder on kicks: "Center-R.Ferguson, Holder-S.Martin"
+  const credit = k => { const m = new RegExp(k + '-(' + NAME_RE.source + ')').exec(tx); return m ? findPlayer(m[1]) : null; };
 
   if (kind === 'kickoff') {
-    const k = F.find(a => a.team === off && a.role === 'K0'); tag(k, names[0]);
+    const k = cast(F.find(a => a.team === off && a.role === 'K0'), names[0]);
     const land = kickLand(ks, los, dir, 60), yds = Math.abs(land - los);
-    const ret = F.find(a => a.team === def && a.role === 'WR2'); tag(ret, names[1]);
+    const ret = cast(F.find(a => a.team === def && a.role === 'KR0'), names[1]);
     ret.track[1][1] = clamp(land, -8, 108); ret.track[1][2] = MIDY;
+    const other = F.find(a => a.team === def && /^KR/.test(a.role) && a !== ret);
+    if (other && Math.hypot(other.track[1][1] - ret.track[1][1], other.track[1][2] - MIDY) < 3) other.track[1][2] = MIDY + 6;
     go(k, 0.6, los, MIDY);
     seg(0, 0.6, {k: 'spot', x: los, y: MIDY}); plan.sfx.push([PRE + 0.6, 'kick']);
     const air = 0.6 + yds / 28; seg(0.6, air, {k: 'arc', x0: los, y0: MIDY, x1: land, y1: MIDY, peak: 60});
     if (/touchback/i.test(tx) || Math.abs(endX - land) < 1) { seg(air, air + 0.8, {k: 'hold', a: ret}); tEnd = air + 0.9; }
     else { go(ret, air, land, MIDY); go(ret, air + runTime(land, endX), endX, MIDY + 3); seg(air, air + 9, {k: 'hold', a: ret}); carrier = ret; tEnd = air + runTime(land, endX); }
-    for (const a of F) if (a.team === off && a !== k) { go(a, 0.6, a.track[1][1], a.track[1][2]); a.chase = PRE + 0.9; }
-    for (const a of F) if (a.team === def && a !== ret) { a.chase = PRE + air - 0.6; }
+    if (newKickoff()) {
+      // nobody but the kicker and the returners moves until the ball comes down
+      for (const a of F) if (a.team === off && a !== k) a.chase = PRE + air;
+      for (const a of F) if (a.team === def && a !== ret) a.chase = PRE + air + 0.2;
+      go(k, air, los + dir * 8, MIDY); k.chase = PRE + air + 0.5;
+    } else {
+      for (const a of F) if (a.team === off && a !== k) { go(a, 0.6, a.track[1][1], a.track[1][2]); a.chase = PRE + 0.9; }
+      for (const a of F) if (a.team === def && a !== ret) { a.chase = PRE + air - 0.6; }
+    }
     plan.carrierName = names[1]?.last;
-  } else if (kind === 'punt' || kind === 'fg' || kind === 'pat') {
-    const holder = qb, kicker = kind === 'punt' ? qb : R('RB0');
+  } else if (special) {
+    const holder = qb; let kicker = kind === 'punt' ? qb : R('K0');
+    tag(c, credit('Center')); if (kind !== 'punt') tag(holder, credit('Holder'));
     seg(0, SNAP, {k: 'hold', a: c});
     seg(SNAP, SNAP + 0.35, {k: 'arc', x0: c.track[1][1], y0: MIDY, xa: holder, peak: 3});
     plan.sfx.push([PRE + SNAP + 0.75, 'kick']);
     if (kind === 'punt') {
-      tag(kicker, names[0]);
-      const land = kickLand(ks, los, dir, 40), yds = Math.abs(land - los), ret = D('S1'); tag(ret, names[1]);
+      kicker = cast(kicker, names[0]);
+      const land = kickLand(ks, los, dir, 40), yds = Math.abs(land - los), ret = cast(D('PR0'), names[1]);
       ret.track[1][1] = land; ret.track[1][2] = MIDY;
       seg(SNAP + 0.35, SNAP + 0.75, {k: 'hold', a: kicker});
       const air = SNAP + 0.75 + 0.6 + yds / 30;
@@ -1519,7 +1682,7 @@ function planPlay(p){
       for (const a of F) if (a.team === def && a !== ret) a.chase = PRE + air - 0.3;
       plan.carrierName = names[1]?.last;
     } else {
-      tag(kicker, names[0]);
+      kicker = cast(kicker, names[0]);
       plan.good = (/\bis good\b|\bgood\b/i.test(tx) || /field goal good|extra point good/i.test(p.type?.text || '')) && !/no good|blocked|missed/i.test(tx + ' ' + (p.type?.text || ''));
       const gx = dir > 0 ? 110 : -10, gy = plan.good ? MIDY : MIDY + (hash(p.id) % 2 ? 6 : -6);
       go(kicker, SNAP + 0.7, los - dir * 7.3, MIDY);
@@ -1532,19 +1695,23 @@ function planPlay(p){
       if (kind === 'fg' && !plan.good) plan.endX = endX;
     }
   } else if (kind === 'pass' || kind === 'inc' || kind === 'int') {
-    tag(qb, names[0]);
+    qb = cast(qb, names[0]);
     seg(0, SNAP, {k: 'hold', a: c});
     seg(SNAP, SNAP + 0.15, {k: 'arc', x0: c.track[1][1], y0: MIDY, xa: qb, peak: 2});
     const drop = los - dir * 7; go(qb, SNAP + 0.6, drop, MIDY);
-    const yac = Number(p.yardsAfterCatch || 0);
-    let catchX = kind === 'pass' ? endX - dir * Math.min(yac, Math.abs(endX - los)) : los + dir * depth;
-    if (td && kind === 'pass') catchX = endX - dir * Math.min(yac, 8);
+    // where the ball is caught: ESPN's yards after the catch when it sends them, otherwise the pass depth in the text,
+    // and the receiver runs the rest of the way
+    const gain = (endX - los) * dir, yac = Number(p.yardsAfterCatch || 0);
+    let catchX = kind === 'pass' ? los + dir * (yac > 0 ? gain - Math.min(yac, gain) : Math.min(gain, airYards(tx, gain, p.id))) : los + dir * (/\bdeep\b/i.test(tx) ? 16 + hash(p.id) % 14 : depth);
+    if (td && kind === 'pass') catchX = clamp(catchX, Math.min(endX, endX - dir * 30), Math.max(endX, endX - dir * 30));
     const catchY = clamp(MIDY + side * (depth === 15 ? 16 : 10) + (hash(p.id) % 5 - 2), 4, 49);
-    const wrs = F.filter(a => a.team === off && /WR|TE/.test(a.role));
-    const tgt = wrs.reduce((b, a) => Math.abs(a.y - catchY) < Math.abs(b.y - catchY) ? a : b, wrs[0]);
-    if (kind !== 'int') tag(tgt, names[1]);
+    // the target: the named receiver if he's in the lineup, else the nearest receiver who plays his position
+    const rcv = kind !== 'int' ? names[1] : null, near = list => list.reduce((b, a) => Math.abs(a.y - catchY) < Math.abs(b.y - catchY) ? a : b, list[0]);
+    const all = F.filter(a => a.team === off && /WR|TE|RB/.test(a.role)), wrs = all.filter(a => /WR|TE/.test(a.role));
+    const mine = all.filter(a => rcv?.pos && grpOf(a.role) === rcv.pos);
+    const tgt = cast(mine.length ? near(mine) : near(wrs), rcv);
     const throwT = SNAP + 0.9, air = 0.35 + Math.abs(catchX - drop) / 38, catchT = throwT + air;
-    for (const w of wrs) if (w !== tgt) go(w, catchT, w.track[1][1] + dir * 9, w.y + (w.y < MIDY ? 3 : -3));
+    for (const w of wrs) if (w !== tgt && w !== qb) go(w, catchT, w.track[1][1] + dir * 9, w.y + (w.y < MIDY ? 3 : -3));
     go(tgt, catchT, catchX, catchY);
     seg(SNAP + 0.15, throwT, {k: 'hold', a: qb});
     if (kind === 'inc') {
@@ -1552,11 +1719,11 @@ function planPlay(p){
       seg(catchT, catchT + 0.4, {k: 'arc', x0: catchX + dir * 1.5, y0: catchY + 1, x1: catchX + dir * 3, y1: catchY + 1.5, peak: 3, start: 6, end: -8});
       seg(catchT + 0.4, catchT + 2, {k: 'spot', x: catchX + dir * 3, y: catchY + 1.5, h: -8});
       tEnd = catchT + 0.9; plan.endX = los; plan.sfx.push([PRE + catchT + 0.3, 'whistle']);
-      const cb = D(catchY < MIDY ? (dir > 0 ? 'CB0' : 'CB0') : 'CB1'); go(cb, catchT, catchX + dir * 0.5, catchY + 1);
+      const cb = D(catchY < MIDY ? 'CB0' : 'CB1'); go(cb, catchT, catchX + dir * 0.5, catchY + 1);
       for (const a of F) if (a.team === def && a !== cb) a.chase = null;
       for (const a of F) if (a.team === def && a.role.startsWith('DL')) go(a, throwT + 0.2, drop + dir * 1, a.y * 0.5 + MIDY * 0.5);
     } else if (kind === 'int') {
-      const pk = D(catchY < MIDY ? 'CB0' : 'CB1'); tag(pk, names[1] || names[2]);
+      const pk = cast(D(catchY < MIDY ? 'CB0' : 'CB1'), [names[1], names[2]].find(n => n?.team === def));
       go(pk, catchT, catchX, catchY); go(pk, catchT + runTime(catchX, endX), endX, catchY);
       seg(throwT, catchT, {k: 'arc', x0: drop, y0: MIDY, x1: catchX, y1: catchY, peak: 18});
       seg(catchT, catchT + 20, {k: 'hold', a: pk}); carrier = pk; tEnd = catchT + runTime(catchX, endX);
@@ -1573,12 +1740,12 @@ function planPlay(p){
     }
     for (const a of F) if (a.team === off && a.role.startsWith('OL')) go(a, SNAP + 0.8, a.track[1][1] - dir * 1.5, a.y);
   } else if (kind === 'sack') {
-    tag(qb, names[0]);
+    qb = cast(qb, names[0]);
     seg(0, SNAP, {k: 'hold', a: c});
     seg(SNAP, SNAP + 0.15, {k: 'arc', x0: c.track[1][1], y0: MIDY, xa: qb, peak: 2});
     seg(SNAP + 0.15, 30, {k: 'hold', a: qb});
     go(qb, SNAP + 0.7, los - dir * 7, MIDY); go(qb, SNAP + 1.8, endX, MIDY + 1);
-    const rusher = D('DL1'); tag(rusher, names[1]);
+    const rusher = cast(D('DL1'), names[1]);
     go(rusher, SNAP + 1.8, endX + dir * 0.8, MIDY);
     for (const a of F) if (a.team === def && a !== rusher) a.chase = PRE + SNAP + 0.2;
     carrier = qb; tEnd = SNAP + 1.9;
@@ -1588,12 +1755,14 @@ function planPlay(p){
     plan.sfx.push([PRE + 0.4, 'whistle']);
     tEnd = 1.6;
   } else { // rush
-    tag(qb, /scramble|kneels|sneak/i.test(tx) || names[0]?.pos === 'QB' ? names[0] : null);
     const scramble = /scramble|kneels|sneak/i.test(tx) || names[0]?.pos === 'QB';
-    const rb = scramble ? qb : R('RB0'); if (!scramble) tag(rb, names[0]);
+    if (scramble) qb = cast(qb, names[0]);
+    const rb = scramble ? qb : cast(R('RB0'), names[0]);
     seg(0, SNAP, {k: 'hold', a: c});
     seg(SNAP, SNAP + 0.15, {k: 'arc', x0: c.track[1][1], y0: MIDY, xa: qb, peak: 2});
-    const lane = clamp(MIDY + side * (/end|tackle/i.test(tx) ? 6 : 3), 5, 48);
+    // the hole: "up the middle", or left or right guard, tackle or end
+    const gap = /\b(?:left|right) end\b/i.test(tx) ? 7 : /\b(?:left|right) tackle\b/i.test(tx) ? 4.5 : /\b(?:left|right) guard\b/i.test(tx) ? 2 : /\bup the middle\b/i.test(tx) ? 0 : 3;
+    const lane = clamp(MIDY + side * gap, 5, 48);
     if (!scramble) {
       seg(SNAP + 0.15, SNAP + 0.5, {k: 'hold', a: qb});
       go(rb, SNAP + 0.5, los - dir * 5, MIDY + 1);
@@ -1607,19 +1776,47 @@ function planPlay(p){
     carrier = rb; tEnd = t2; plan.carrierName = names[0]?.last;
   }
 
-  // tacklers wear the right numbers
-  if (tacklers.length && carrier) {
-    const chasers = F.filter(a => a.team !== carrier.team).sort((a, b) => Math.hypot(a.x - carrier.x, a.y - carrier.y) - Math.hypot(b.x - carrier.x, b.y - carrier.y));
-    tacklers.forEach((tk, i) => { const info = findPlayer(tk); if (chasers[i] && info?.num != null) { chasers[i].num = info.num; } });
+  // the tacklers the NFL names in brackets: a defender who plays that position (or the nearest one) runs to the spot
+  // where the play ends and makes the hit, instead of a random chaser
+  if (tacklers.length && carrier && !td) {
+    const [, ex, ey] = carrier.track[carrier.track.length - 1];
+    const left = F.filter(a => a.team !== carrier.team && a !== carrier);
+    tacklers.slice(0, 2).forEach((tk, i) => {
+      const info = findPlayer(tk); if (!info) return;
+      const near = (a, b) => Math.hypot(a.track[1][1] - ex, a.track[1][2] - ey) - Math.hypot(b.track[1][1] - ex, b.track[1][2] - ey);
+      const grp = r => (POOL_OF[r.replace(/\d+$/, '')] || r.replace(/\d+$/, ''));
+      const pool = left.filter(a => info.pos && grp(a.role) === info.pos), pick = (pool.length ? pool : left).sort(near)[0];
+      if (!pick) return;
+      left.splice(left.indexOf(pick), 1);
+      if (info.num != null) { const twin = F.find(b => b !== pick && b.team === pick.team && b.num === info.num); if (twin) twin.num = pick.num; pick.num = info.num; }
+      pick.track = pick.track.filter(q => q[0] <= PRE).concat([[PRE + Math.max(0.4, tEnd - 0.05 - i * 0.1), ex + dir * (0.9 + i * 0.6), ey + (i ? 1.2 : 0)]]);
+      pick.chase = false; pick.escort = false;
+    });
+  }
+  // a player the text named takes the field from where he is (or from his sideline), not from the spot of the player he replaced
+  for (const a of F) if (a.num !== a.n0) {
+    const prev = here.find(b => b.team === a.team && b.num === a.num), [x0, y0] = prev ? [prev.x, prev.y] : [benchX(a.track[1][1]), benchY(a.team)];
+    a.track[0] = [0, x0, y0]; a.x = a.lx = x0; a.y = a.ly = y0;
   }
   plan.carrier = carrier;
-  plan.actors = F;
+  plan.actors = F.concat(sendOff(F, PRE));
   plan.dur = PRE + tEnd + (td ? 1.6 : 0.5);
   plan.sfx.push([PRE + SNAP, 'snap']);
   plan.sfx.push([PRE + tEnd, td ? 'td' : (kind === 'pen' ? '' : 'whistle')]);
   if (td) plan.tdT = PRE + tEnd;
   if ((p.statYardage || 0) >= 20 && !td) plan.sfx.push([PRE + tEnd - 0.6, 'roar']);
   return plan;
+}
+// players on the field who aren't in this play's lineup jog to their sideline while it lines up, then leave
+function sendOff(F, PRE){
+  const out = [];
+  for (const b of S.actors) {
+    if (F.some(a => a.team === b.team && a.num === b.num) && !b.leaving) continue;
+    const tx = b.leaving ? b.tx ?? b.x : benchX(b.x), ty = benchY(b.team);
+    const t = Math.max(PRE, Math.hypot(tx - b.x, ty - b.y) / 7);
+    out.push(Object.assign(b, {track: [[0, b.x, b.y], [t, tx, ty]], chase: false, escort: false, hop: 0, leaving: true, benched: true}));
+  }
+  return out;
 }
 
 /* ================= baseball (MLB) ================= */
@@ -3403,31 +3600,53 @@ function addLog(p){
 }
 function clearLog(msg){ $('log').innerHTML = ''; const li = document.createElement('li'); li.className = 'empty'; li.textContent = msg; $('log').append(li); }
 
+// Between plays the players walk to where the next play lines up. When the next play is already in the queue (always in
+// a replay) the lineup is that play's own: the punt unit, the field goal unit after a touchdown, or the kickoff units after
+// the try, so players coming on run in from their sideline and players going off run to it while the booth talks.
 function restFormation(walk, plan){
   if (!S.home) return;
   if (isMLB()) return mlbRest(walk);
   if (isBB()) return bbRest(walk);
   let poss = S.offDir === -1 ? S.away : S.home, def = poss === S.home ? S.away : S.home;
   let F;
-  if (plan && plan.td) {
+  const nx = S.queue.slice(0, 3).find(q => classify(q) !== 'admin');
+  if (nx) {
+    const L = lineOf(nx);
+    if (L.kind === 'kickoff') S.ball.x = L.los; // the ball goes on the tee: the camera follows it up the field
+    F = makeFormation(L.off, L.def, L.los, ['kickoff', 'punt', 'fg', 'pat'].includes(L.kind) ? L.kind : 'rush');
+  } else if (plan && plan.td) {
     // after a touchdown, line up for the extra point
     poss = plan.endX > 50 ? S.home : S.away; def = poss === S.home ? S.away : S.home;
     S.ball.x = poss === S.home ? 85 : 15; S.offDir = poss === S.home ? 1 : -1;
     F = makeFormation(poss, def, S.ball.x, 'pat');
+  } else if (plan && (plan.kind === 'pat' || plan.two || (plan.kind === 'fg' && plan.good))) {
+    // after the try or a field goal, the scoring team kicks off from its own 35
+    S.ball.x = plan.off === S.home ? 35 : 65;
+    F = makeFormation(plan.off, plan.def, S.ball.x, 'kickoff');
   } else F = makeFormation(poss, def, S.ball.x, S.down ? 'rush' : 'kickoff');
   if (!walk || !S.actors.length) { S.actors = F; return; }
-  // players jog back to their spots: keep each player (same team and number) where possible
-  const free = [...S.actors];
-  const take = fn => { const i = free.findIndex(fn); return i < 0 ? null : free.splice(i, 1)[0]; };
-  const out = [];
+  // the same player (team and number) walks to his new spot; thirty yards or more up the field means he leaves and comes back on
+  const free = S.actors.filter(b => !b.leaving), out = [];
   for (const f of F) {
-    const a = take(b => b.team === f.team && b.num === f.num) || take(b => b.team === f.team && b.role === f.role) || take(b => b.team === f.team);
-    if (!a) { out.push(f); continue; }
-    a.role = f.role; a.num = f.num; a.tx = f.x; a.ty = f.y; a.track = null; a.chase = false; a.hop = 0;
-    a.walkSpeed = 2.2 + (hash(f.role + f.team.id) % 10) / 10;
-    out.push(a);
+    const i = free.findIndex(b => b.team === f.team && b.num === f.num), a = i < 0 ? null : free.splice(i, 1)[0];
+    if (a && Math.abs(a.x - f.x) < 30) {
+      a.role = f.role; a.tx = f.x; a.ty = f.y; a.track = null; a.chase = false; a.hop = 0; a.entering = false;
+      a.walkSpeed = 2.2 + (hash(f.role + f.team.id) % 10) / 10;
+      out.push(a); continue;
+    }
+    if (a) free.push(a);
+    Object.assign(f, {tx: f.x, ty: f.y, x: benchX(f.x), y: benchY(f.team), lx: benchX(f.x), ly: benchY(f.team), entering: true, walkSpeed: 6.5 + (hash(f.role) % 10) / 10});
+    out.push(f);
+  }
+  for (const b of free.concat(S.actors.filter(b => b.leaving))) {
+    if (!b.leaving) Object.assign(b, {tx: benchX(b.x), ty: benchY(b.team), leaving: true, entering: false, track: null, chase: false, hop: 0, walkSpeed: 6.5});
+    out.push(b);
   }
   S.actors = out;
+}
+// players still running on or off: the next snap waits for them (a few seconds at most) unless a live game is catching up
+async function subsDone(tok){
+  for (let w = 0; w < 45 && S.actors.some(a => (a.entering || a.leaving) && a.tx != null); w++) { await sleep(100); if (tok !== S.token) return; }
 }
 
 /* ================= play runner ================= */
@@ -3436,12 +3655,15 @@ async function runPlay(p, fast, tok){
   if (isBB()) return runPlayBB(p, fast, tok);
   if (tok !== S.token) return;
   if (fast) { addLog(p); applyState(p, null); restFormation(); return; }
+  if (S.mode === 'replay' || S.queue.length <= 2) await subsDone(tok);
+  if (tok !== S.token) return;
   let plan;
   try { plan = planPlay(p); } catch (e) { console.warn('plan failed', e, p); plan = {kind: 'admin', static: true, off: S.home, def: S.away, endX: S.ball.x}; }
   const isTimeout = plan.kind === 'admin' && /time ?out/i.test((p.text || '') + ' ' + (p.type?.text || ''));
   if (!isTimeout) hideBanner();
   await animate(plan, tok);
   if (tok !== S.token) return;
+  S.actors = S.actors.filter(a => !a.benched); // the players who ran off during the play are on the sideline now
   const before = {...S.prevScore};
   addLog(p); applyState(p, plan);
   if (!plan.static) restFormation(true, plan);
@@ -3490,7 +3712,52 @@ function playsOf(summary){
     if (seen.has(p.id)) continue; seen.add(p.id); out.push(p);
   }
   out.sort((a, b) => Number(a.sequenceNumber || 0) - Number(b.sequenceNumber || 0));
-  return out;
+  // ESPN writes the try after a touchdown into the touchdown's own entry ("...TOUCHDOWN. T.Bass extra point is GOOD"),
+  // with the score after the kick. It becomes an entry of its own, so the touchdown counts six and the kick is played.
+  const full = []; let h = 0, a = 0;
+  for (const [i, p] of out.entries()) {
+    full.push(p);
+    // a feed that already sends the try as its own entry (right after, in the same period, with the touchdown counting
+    // six) is left alone
+    const nx = out[i + 1], six = Math.max((p.homeScore ?? h) - h, (p.awayScore ?? a) - a) === 6;
+    const own = six && nx && nx.period?.number === p.period?.number && /extra point|two-point|two point|2pt|\bpat\b/i.test(nx.type?.text || '');
+    const t = own ? null : splitTry(p, h, a); if (t) full.push(t);
+    h = p.homeScore ?? h; a = p.awayScore ?? a;
+    if (t) { h = t.homeScore; a = t.awayScore; }
+  }
+  return full;
+}
+// the try in a touchdown's entry: NFL "T.Bass extra point is GOOD, Center-R.Ferguson, Holder-S.Martin." or
+// "TWO-POINT CONVERSION ATTEMPT. J.Allen pass to K.Coleman is complete. ATTEMPT SUCCEEDS."; college "(Will Reichard Kick)".
+// The touchdown keeps its own words; the try gets the rest and the score after it. Anything else is left as it is.
+function splitTry(p, h, a){
+  const tx = p.text || '';
+  if (p._try || !/touchdown/i.test(tx + ' ' + (p.type?.text || '')) || /DEFENSIVE TWO-POINT|NULLIFIED|REVERSED/i.test(tx)) return null;
+  const nh = p.homeScore ?? h, na = p.awayScore ?? a, dh = nh - h, da = na - a;
+  if (Math.max(dh, da) < 6 || Math.min(dh, da) !== 0) return null;
+  const home = dh >= 6, team = home ? S.home : S.away;
+  let td, rest, two = null, good;
+  const m = /TOUCHDOWN[.!]?\s+/.exec(tx);
+  if (m && /extra point|TWO-POINT CONVERSION/i.test(tx.slice(m.index + m[0].length))) {
+    td = tx.slice(0, m.index) + 'TOUCHDOWN.'; rest = tx.slice(m.index + m[0].length).trim();
+    if (/TWO-POINT CONVERSION/i.test(rest)) { two = /\bpass\b/i.test(rest) ? 'pass' : 'rush'; good = /ATTEMPT SUCCEEDS/i.test(rest); }
+    else good = /extra point is GOOD/i.test(rest);
+  } else {
+    const c = /\s*\(([^()]*?\b(?:kick|two-point|pat)\b[^()]*)\)\s*$/i.exec(tx);
+    if (!c) return null;
+    td = tx.slice(0, c.index).trim(); const k = c[1].trim();
+    if (/two-point/i.test(k)) { two = /\bpass\b/i.test(k) ? 'pass' : 'rush'; good = !/fail|no good/i.test(k); rest = k; }
+    else { good = !/fail|miss|block|no good/i.test(k); const who = k.replace(/\s*(?:pat\s*)?kick.*$/i, '').trim(); rest = (who ? who + ' extra point is ' : 'Extra point is ') + (good ? 'GOOD' : 'NO GOOD') + '.'; }
+  }
+  const pts = good ? (two ? 2 : 1) : 0, total = home ? dh : da;
+  // ESPN's score on the entry counts the try when it was good; if it doesn't, the try adds it
+  const after = total === 6 + pts ? {h: nh, a: na} : {h: nh + (home ? pts : 0), a: na + (home ? 0 : pts)};
+  p.text = td; p.homeScore = after.h - (home ? pts : 0); p.awayScore = after.a - (home ? 0 : pts);
+  return {id: p.id + '-try', sequenceNumber: String(Number(p.sequenceNumber || 0) + 0.5), _try: {two, good, tdId: p.id},
+    type: {text: two ? 'Two-Point Conversion' : good ? 'Extra Point Good' : 'Extra Point Missed'}, text: rest,
+    period: p.period, clock: p.clock, homeScore: after.h, awayScore: after.a, scoringPlay: pts > 0,
+    start: {team: {id: team.id}, yardsToEndzone: two ? 2 : 15, down: 0},
+    end: {team: {id: team.id}, yardsToEndzone: two ? (good ? -2 : 1) : 15, down: 0}};
 }
 
 /* ================= selecting a game ================= */
@@ -3518,6 +3785,7 @@ async function selectGame(id, mode){
   buildField();
   renderGamePanel(); renderDetail();
   await Promise.all([loadRoster(S.home), loadRoster(S.away)]);
+  if (SPORTS[S.sport].family === 'football') await Promise.all([loadDepth(S.home), loadDepth(S.away)]);
   if (tok !== S.token) return;
   refreshDetail();
   if (isMLB()) { mlbReset(); S.actors = mlbFormation(S.mlb); }
@@ -3534,7 +3802,7 @@ async function selectGame(id, mode){
   }
   let sum;
   try {
-    sum = await getJSON(gameURL(id)); S.summary = sum;
+    sum = await getJSON(gameURL(id)); S.summary = sum; footballPlayed(sum);
     if (isMLB()) { mlbLineups(sum); S.actors = mlbFormation(S.mlb); }
     if (isBB()) { bbLineups(sum); bbReset(); bbRest(false); }
     refreshDetail();
@@ -3546,6 +3814,7 @@ async function selectGame(id, mode){
     clearLog(`Replaying from the ${isMLB() ? 'first pitch' : 'opening ' + start}.`);
     $('log').innerHTML = '';
     S.queue = plays.slice(); plays.forEach(p => S.seen.add(p.id));
+    if (!isMLB() && !isBB()) { restFormation(); S.cam = clamp(S.ball.x, 10, 90); } // line up for the opening kickoff as it really was
     S.rp = buildReplay(sum, plays); S.ri = 0; renderTimeline();
     $('caption').textContent = `${tag('A')}Let us relive ${S.away.abbr} at ${S.home.abbr} from the ${isMLB() ? 'first pitch' : isBB() ? 'opening tip' : 'opening kick'}!`;
     // during the sports desk's recap the show picks the clips, so the replay waits to be told where to start
@@ -3594,7 +3863,9 @@ async function pollLive(){
     const sum = await getJSON(gameURL(S.game));
     if (tok !== S.token) return;
     S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail(); syncScore(sum);
-    const fresh = playsOf(sum).filter(p => !S.seen.has(p.id));
+    // a try ESPN adds to a touchdown it already sent comes in as a new entry; once a later play is in, it's too late to show
+    const all = playsOf(sum), last = Math.max(0, ...all.filter(p => S.seen.has(p.id) && !p._try).map(p => Number(p.sequenceNumber) || 0));
+    const fresh = all.filter(p => !S.seen.has(p.id) && !(p._try && Number(p.sequenceNumber) < last));
     fresh.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
     if (fresh.length) pump();
   } catch (e) { /* try again next tick */ }
@@ -3632,7 +3903,8 @@ function buildReplay(sum, plays){
     if (dh > 0 || da > 0) {
       const pts = Math.max(dh, da), team = dh >= da ? S.home : S.away;
       const kind = pts >= 6 ? 'TD' : pts === 3 ? 'FG' : pts === 2 && /safety/i.test((p.text || '') + (p.type?.text || '')) ? 'SAFETY' : null;
-      if (kind) scores.push({i, team, kind, a: na, h: nh});
+      const t = plays[i + 1]?._try?.tdId === p.id ? plays[i + 1] : null; // the touchdown's try follows it
+      if (kind) scores.push({i, team, kind, a: t ? t.awayScore : na, h: t ? t.homeScore : nh, end: t ? i + 1 : i});
     }
     h = nh; a = na;
   });
@@ -3732,8 +4004,9 @@ function seekTo(i, why){
     for (const p of before.slice(-12)) addLog(p);
   }
   if (!before.length) $('clock').textContent = '--';
+  S.queue = R.plays.slice(i); // queued first, so the lineup is the next play's own
   restFormation(); if (!R.mlb && !R.bb) S.cam = clamp(S.ball.x, 10, 90);
-  S.queue = R.plays.slice(i); S.ri = i; updateTimeline(); renderGamePanel();
+  S.ri = i; updateTimeline(); renderGamePanel();
   $('caption').textContent = `${tag('A')}Taking you to ${why || playLabel(R.plays[i])}${why ? ', ' + playLabel(R.plays[i]) : ''}.`;
   setTimeout(() => { if (tok === S.token) pump(); }, 700);
 }
