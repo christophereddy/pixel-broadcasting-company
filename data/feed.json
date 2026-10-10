@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T16:10:00Z",
+ "updatedAt": "2026-10-10T19:08:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Putin relays Iran's terms for ending war to Trump",
-   "b": "Russian President Vladimir Putin relayed Iran's terms for ending the war to President Trump, according to Al Jazeera's live coverage.",
+   "h": "Saudis confirm another attack on Riyadh airport",
+   "b": "Saudi authorities confirmed another attack on Riyadh's airport, according to Al Jazeera's live coverage of the Iran war.",
    "date": "2026-10-10",
    "publisher": "Al Jazeera",
-   "title": "Putin relays Iran’s terms for ending war to Trump",
+   "title": "Attack on Riyadh airport causes injuries, forces closure: Saudi authorities",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -45,6 +45,28 @@
   }
  ],
  "national": [
+  {
+   "h": "Hurricane Isaias kills at least 2 on Gulf Coast",
+   "b": "Isaias hit the Gulf Coast as a Category 2 storm Friday night with 105 mph winds, snapping trees and cutting power in Florida and Alabama. Flash flood threats persist inland.",
+   "date": "2026-10-10",
+   "publisher": "KUOW",
+   "title": "At least 2 deaths attributed to Isaias after hurricane bashes Florida and Alabama",
+   "url": "https://www.kuow.org/npr-news/2026-10-10/at-least-2-deaths-attributed-to-isaias-after-hurricane-bashes-florida-and-alabama",
+   "published": "2026-10-10T17:14:03Z",
+   "updated": "2026-10-10T17:19:33Z",
+   "gathered": "2026-10-10T18:46:44Z"
+  },
+  {
+   "h": "Kennedy Center names new artistic director",
+   "b": "The Kennedy Center named talent manager Rick Canny its new artistic director despite staff complaints about his business practices as a consultant. The center has been closed since September.",
+   "date": "2026-10-10",
+   "publisher": "KUOW",
+   "title": "The Kennedy Center names new artistic director, amid concerns",
+   "url": "https://www.kuow.org/npr-news/2026-10-10/the-kennedy-center-names-new-artistic-director-amid-concerns",
+   "published": "2026-10-10T18:17:12Z",
+   "updated": "2026-10-10T18:24:33Z",
+   "gathered": "2026-10-10T18:46:44Z"
+  },
   {
    "h": "DHS surveils border tribe as wall advances",
    "b": "ProPublica found DHS surveilled an ongoing border prayer ceremony of Arizona's Tohono O'odham Nation and questioned tribal members, after promising to engage in good faith.",
@@ -200,7 +222,7 @@
    "place": "Zaporizhzhia, Ukraine",
    "tz": "Europe/Kyiv",
    "publisher": "Al Jazeera",
-   "title": "Russia kills 15 in Ukraine as US hosts ‘productive’ talks to end war",
+   "title": "Russia kills 20 in Ukraine as US hosts ‘productive’ talks to end war",
    "url": "https://www.aljazeera.com/news/2026/10/10/us-hosts-productive-trilateral-talks-to-end-russia-ukraine-war",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -211,7 +233,7 @@
    "place": "Gaza",
    "tz": "Asia/Gaza",
    "publisher": "Al Jazeera",
-   "title": "Child among seven killed by Israel in Gaza on ‘ceasefire’ anniversary",
+   "title": "Child among eight killed by Israel on Gaza ‘ceasefire’ anniversary",
    "url": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -377,6 +399,15 @@
  "science": [],
  "sports": [
   {
+   "h": "Warriors extend Podziemski for $110 million",
+   "b": "The Golden State Warriors and Brandin Podziemski agreed to a five-year, $110 million extension, according to multiple reports.",
+   "date": "2026-10-10",
+   "publisher": "CBS Sports",
+   "title": "With Brandin Podziemski's extension, Warriors maintain flexibility for one last title pursuit with Steph Curry",
+   "url": "https://www.cbssports.com/nba/news/brandin-podziemski-contract-extension-warriors-steph-curry/",
+   "gathered": "2026-10-10T18:46:44Z"
+  },
+  {
    "h": "Valkyries sweep Aces to reach WNBA Finals",
    "b": "The second-year Golden State Valkyries beat the reigning champion Las Vegas Aces 87-77 in overtime to finish a semifinal sweep and reach their first WNBA Finals.",
    "date": "2026-10-10",
@@ -400,7 +431,7 @@
    "publisher": "Gothamist",
    "title": "What we know about the ICE shooting in NYC",
    "url": "https://gothamist.com/news/what-we-know-about-the-ice-shooting-in-nyc",
-   "published": "2026-10-10T10:00:56Z",
+   "published": "2026-10-10T10:00:00Z",
    "gathered": "2026-10-10T10:09:32Z"
   },
   {
@@ -499,16 +530,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 67,
    "cond": "Fair",
-   "obs": "10 Oct 08:51 am EDT"
+   "obs": "10 Oct 13:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 68,
-    "text": "Partly sunny, with a high near 68. North wind around 7 mph becoming southeast in the afternoon. "
+    "text": "Partly sunny, with a high near 68. Southeast wind around 6 mph. "
    },
    {
     "name": "Tonight",
