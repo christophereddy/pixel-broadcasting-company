@@ -2,6 +2,12 @@
    (PBC mark, NEWS|SPORTS|COOKING switch, ON AIR), the control row with FULL SCREEN and SOUND,
    the broadcast frame and full-screen mode. Change it here and every channel follows.
    Each page keeps only what is its own (the newsroom, the stadium, the right column's cards). */
+/* The digits 0-9 (and ¼ ½ ¾) of VT323, the body font, for numbers inside headlines and labels (see the Fonts note in :root).
+   The file is the VT323 file the shared Google Fonts link already loads, so it comes from the browser's cache.
+   size-adjust sets the digits to the height of the capitals around them; one weight for all, so they are never
+   thickened. These are the only @font-face rules on the site (tools/check_style.cjs). */
+@font-face{font-family:"PBC Digits";src:url(https://fonts.gstatic.com/s/vt323/v18/pxiKyp0ihIEF2isfFJU.woff2) format("woff2");unicode-range:U+0030-0039,U+00BC-00BE;font-weight:100 900;font-display:swap;size-adjust:115%}
+@font-face{font-family:"PBC Label Digits";src:url(https://fonts.gstatic.com/s/vt323/v18/pxiKyp0ihIEF2isfFJU.woff2) format("woff2");unicode-range:U+0030-0039,U+00BC-00BE;font-weight:100 900;font-display:swap;size-adjust:120%}
 :root{
   /* THE ONE PLACE fonts and colors are defined. Every page, desk and channel uses these names;
      tools/check_style.cjs fails if a page writes its own font name or color in its CSS.
@@ -40,9 +46,11 @@
   --grass:#2e8a3c; --grass-50:rgba(46,138,60,.5);
   --feed-text:#c9c6b4;
 
-  /* Fonts: display = headlines and names, label = pixel caps for labels and buttons, body = everything else */
-  --f-display:"Pixelify Sans", "Trebuchet MS", system-ui, sans-serif;
-  --f-label:"Silkscreen", "Courier New", monospace;
+  /* Fonts: display = headlines and names, label = pixel caps for labels and buttons, body = everything else.
+     Every number on the site is drawn in VT323, whatever font the words around it use: the two digit faces below
+     come first in --f-display and --f-label, so 0-9 always read the same (Pixelify's 5 reads as an 8). */
+  --f-display:"PBC Digits", "Pixelify Sans", "Trebuchet MS", system-ui, sans-serif;
+  --f-label:"PBC Label Digits", "Silkscreen", "Courier New", monospace;
   --f-body:"VT323", "Courier New", ui-monospace, monospace;
   color-scheme:dark;
 }
