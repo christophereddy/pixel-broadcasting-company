@@ -1991,7 +1991,7 @@ function mlbReset(){
   S.mlb = {half: null, top: true, inning: 0, batting: S.away, fielding: S.home, bases: [null, null, null, null],
     outs: 0, balls: 0, strikes: 0, batter: null, pitcher: {}, lastPitch: false, fullFor: null};
   S.camX = MB.PLX; S.camY = MB.FH - H / 2;
-  S.ball.x = 2; S.ball.y = 57; S.ball.h = 2; S.ball.vis = true;
+  S.ball.x = 2; S.ball.y = 57; S.ball.h = 2; S.ball.vis = true; S.mlbRet = null;
 }
 /* ---- MLB's live game feed, turned into the page's list of plays ---- */
 // Each at-bat in the feed becomes: "Now batting", one item per pitch, one per runner play (steals, wild pitches,
@@ -2249,32 +2249,36 @@ function mlbFormation(st){
   const fld = st.fielding, bat = st.batting, A = [];
   if (!fld || !bat) return A;
   const add = (team, role, x, y, num, extra) => A.push(Object.assign({team, role, kit: team.kit, x, y, num, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y}, extra || {}));
-  for (const pos of DEF_POS) { const [x, y] = STATION[pos]; add(fld, pos, x, y, mlbNum(fld, pos)); }
+  for (const pos of DEF_POS) { const [x, y] = STATION[pos]; add(fld, pos, x, y, mlbNum(fld, pos), pos === 'P' ? {pp: st.pitcher?.[fld.id]?.id ?? null} : null); }
   for (let b = 1; b <= 3; b++) { const r = st.bases[b]; if (r) { const [x, y] = leadOff(b); add(bat, 'R' + b, x, y, r.num, {pid: r.id || 'r' + b + (r.last || '')}); } }
   if (st.batter && st.outs < 3) add(bat, 'B', /^L/i.test(st.batter.bats || '') ? 5 : -5, 1, st.batter.num, {pid: st.batter.id || 'b' + (st.batter.last || ''), bat: true});
   return A;
 }
-function mlbRest(walk){
-  const F = mlbFormation(S.mlb);
-  S.ball.x = 2; S.ball.y = 57; S.ball.h = 2;
-  if (!walk || !S.actors.length) { S.actors = F; return; }
+function mlbRest(walk, plan, st){
+  const F = mlbFormation(st || S.mlb);
+  if (!walk || !S.actors.length) { S.actors = F; S.mlbRet = null; S.ball.x = 2; S.ball.y = 57; S.ball.h = 2; S.ball.vis = true; return; }
+  mlbBallBack(plan);
   // fielders jog back to their spots and runners settle on their bases; anyone new walks out of their dugout,
   // and anyone no longer needed (an out, a run scored, the side retired) walks back to it
   const WALK = 17, JOG = 24;
   const free = S.actors.filter(a => !a.gone);
   const take = fn => { const i = free.findIndex(fn); return i < 0 ? null : free.splice(i, 1)[0]; };
-  const out = [];
+  const out = [], onField = new Set(free.filter(a => DEF_POS.includes(a.role) && !a.leaving).map(a => a.team));
   for (const f of F) {
     let a = null;
-    if (DEF_POS.includes(f.role)) a = take(b => b.team === f.team && b.role === f.role);
+    // a new pitcher is a new player: the old one walks off and the reliever comes in
+    if (f.role === 'P') a = take(b => b.team === f.team && b.role === 'P' && !b.leaving && (!f.pp || !b.pp || b.pp === f.pp));
+    else if (DEF_POS.includes(f.role)) a = take(b => b.team === f.team && b.role === f.role);
     else if (f.role === 'B') a = take(b => b.team === f.team && b.role === 'B' && b.pid === f.pid);
     else a = take(b => b.team === f.team && b.pid && b.pid === f.pid) || take(b => b.team === f.team && b.role !== 'B' && !DEF_POS.includes(b.role) && Math.hypot(b.x - f.x, b.y - f.y) < 30);
     if (!a) {
-      const [dx, dy] = dugoutOf(f.team);
-      Object.assign(f, {tx: f.x, ty: f.y, x: dx, y: dy, lx: dx, ly: dy, entering: true, walkSpeed: DEF_POS.includes(f.role) ? JOG + hash(f.role) % 5 : WALK});
+      // a reliever jogs in from the bullpen beyond the wall; everyone else comes out of the dugout
+      const pen = f.role === 'P' && onField.has(f.team), bd = f.team === S.home ? -34 : 34;
+      const [dx, dy] = pen ? polar(bd, fenceR(bd) + 14) : dugoutOf(f.team);
+      Object.assign(f, {tx: f.x, ty: f.y, x: dx, y: dy, lx: dx, ly: dy, entering: true, walkSpeed: pen ? 30 : DEF_POS.includes(f.role) ? JOG + hash(f.role) % 5 : WALK});
       out.push(f); continue;
     }
-    Object.assign(a, {role: f.role, num: f.num ?? a.num, pid: f.pid, bat: f.bat, tx: f.x, ty: f.y, track: null, chase: false, hop: 0, swing: null, swinging: false, leaving: false,
+    Object.assign(a, {role: f.role, num: f.num ?? a.num, pid: f.pid, pp: f.role === 'P' ? f.pp ?? a.pp : undefined, bat: f.bat, tx: f.x, ty: f.y, track: null, chase: false, hop: 0, swing: null, swinging: false, leaving: false,
       walkSpeed: a.entering ? a.walkSpeed : 26 + hash(f.role) % 8});
     out.push(a);
   }
@@ -2284,6 +2288,25 @@ function mlbRest(walk){
     out.push(a);
   }
   S.actors = out;
+}
+
+// Between plays the ball goes back to the pitcher: thrown by whoever has it, or a new ball from the plate umpire after a
+// foul or a home run. step() flies it; when the pitcher is still on his way to the mound it goes to the mound.
+function mlbBallBack(plan){
+  const b = S.ball, dead = !!plan?.o && (plan.o.sub === 'foul' || plan.o.kind === 'hr');
+  if (S.mlbRet && !S.mlbRet.done && !dead) return;
+  S.mlbRet = dead ? {x0: 0, y0: -7, h0: 5, t: 0, wait: 0.9, dead: true} : {x0: b.x, y0: b.y, h0: b.h, t: 0, wait: 0.15};
+}
+function mlbBallStep(dt){
+  const r = S.mlbRet, b = S.ball; if (!r) return;
+  const p = S.actors.find(a => a.role === 'P' && a.team === S.mlb.fielding && !a.leaving && !a.gone), set = p && !p.entering;
+  const tx = set ? p.x + 0.4 : 2, ty = set ? p.y : 57, th = set ? 1 : 0;
+  r.t += dt;
+  if (r.t < r.wait) { if (r.dead) b.vis = false; return; } // the dead ball is gone; the umpire digs out a new one
+  b.vis = true;
+  const d = Math.hypot(tx - r.x0, ty - r.y0), u = clamp((r.t - r.wait) / Math.max(0.35, d / 70), 0, 1);
+  b.x = r.x0 + (tx - r.x0) * u; b.y = r.y0 + (ty - r.y0) * u; b.h = r.h0 + (th - r.h0) * u + Math.min(12, 3 + d / 15) * 4 * u * (1 - u);
+  if (u >= 1) r.done = true;
 }
 
 /* ---- play planner ---- */
@@ -2298,12 +2321,12 @@ function planMLB(p){
   // tween from where everyone stands now
   const used = new Set();
   const starts = F.map(a => {
-    const prev = S.actors.find(b => !used.has(b) && b.team === a.team && (a.pid ? b.pid === a.pid : b.role === a.role)) || (a.pid ? null : S.actors.find(b => !used.has(b) && b.team === a.team && b.role === a.role));
+    const prev = S.actors.find(b => !used.has(b) && !b.leaving && b.team === a.team && (a.pid ? b.pid === a.pid : b.role === a.role)) || (a.pid ? null : S.actors.find(b => !used.has(b) && !b.leaving && b.team === a.team && b.role === a.role));
     if (prev) used.add(prev);
     return prev ? [prev.x, prev.y] : [a.x, a.y];
   });
   const far = Math.max(0, ...F.map((a, i) => Math.hypot(a.x - starts[i][0], a.y - starts[i][1])));
-  const PRE = far > 3 ? clamp(far / 45, 0.3, 1.6) : 0.05;
+  const PRE = far > 3 ? clamp(far / 28, 0.3, 3) : 0.05;
   F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; });
   const A = role => F.find(a => a.role === role);
   const last = a => a.track.reduce((m, q) => q[0] >= m[0] ? q : m);
@@ -2311,7 +2334,12 @@ function planMLB(p){
   const hold = (a, t) => { if (a) { const q = last(a); if (PRE + t > q[0]) a.track.push([PRE + t, q[1], q[2]]); } };
   const seg = (t0, t1, s) => plan.segs.push(Object.assign({t0: PRE + t0, t1: PRE + t1}, s));
   const sfx = (t, n) => plan.sfx.push([PRE + t, n]);
-  const RUN = 34, TROT = 22;
+  const RUN = 34, TROT = 22, SPRINT = 28;
+  // a fielder runs to (x, y) to be there by time t, or as soon after it as he can get there
+  const reach = (a, t, x, y) => { if (!a) return t; const [lt, lx, ly] = last(a), ta = Math.max(t, lt - PRE + Math.hypot(x - lx, y - ly) / SPRINT); go(a, ta, x, y); return ta; };
+  const reachT = (a, x, y) => { if (!a) return 0; const [lt, lx, ly] = last(a); return lt - PRE + Math.hypot(x - lx, y - ly) / SPRINT; };
+  // a runner who scores, or a batter who is out, jogs off to his dugout
+  const offTo = (a, t, sp) => { if (!a) return; hold(a, t); const [, lx, ly] = last(a), [dx, dy] = dugoutOf(st.batting); go(a, t + Math.hypot(dx - lx, dy - ly) / (sp || 15), dx, dy); };
   const runBases = (a, from, to, t0, sp) => {
     if (!a) return t0;
     hold(a, t0); let t = t0, [, px, py] = last(a);
@@ -2321,9 +2349,18 @@ function planMLB(p){
   const pit = A('P'), cat = A('C'), bat = A('B');
   // throw the ball from (x, y) to a base, where a fielder comes over to take it
   const throwTo = (from, base, recv, t) => {
-    const r = A(recv), [bx, by] = BASE[base], d = Math.hypot(bx - from[0], by - from[1]);
-    if (r) { hold(r, Math.max(0.6, t - 0.9)); go(r, t + 0.05, bx + (base === 1 ? 3 : base === 4 ? 0 : -2), by + (base === 4 ? -2 : 2)); }
-    const ta = t + 0.15 + d / 150;
+    let r = A(recv); const [bx, by] = BASE[base], d = Math.hypot(bx - from[0], by - from[1]), fly = 0.15 + d / 150;
+    // nobody throws to himself: when the fielder with the ball is the one who'd cover, his partner takes it
+    if (r && Math.hypot(last(r)[1] - from[0], last(r)[2] - from[1]) < 4) r = A({SS: '2B', '2B': 'SS', '1B': 'P', '3B': 'SS', C: 'P'}[recv]) || r;
+    if (r) {
+      // the fielder taking the throw breaks for the bag in time to be there first; if he can't be, the throw waits for him
+      const sx = bx + (base === 1 ? 3 : base === 4 ? 0 : -2), sy = by + (base === 4 ? -2 : 2), [lt, lx, ly] = last(r);
+      const need = Math.hypot(sx - lx, sy - ly) / SPRINT, free = Math.max(0, lt - PRE);
+      t = Math.max(t, free + need + 0.05 - fly);
+      const tArr = t + fly - 0.05;
+      hold(r, Math.max(free, Math.min(Math.max(0.6, t - 0.9), tArr - need))); go(r, tArr, sx, sy);
+    }
+    const ta = t + fly;
     seg(t, ta, {k: 'arc', x0: from[0], y0: from[1], x1: bx, y1: by, peak: d > 150 ? 24 : 8, start: 8, end: 7});
     seg(ta, ta + 30, r ? {k: 'hold', a: r} : {k: 'spot', x: bx, y: by, h: 6}); sfx(ta, 'pop');
     return ta;
@@ -2358,39 +2395,45 @@ function planMLB(p){
     let tBall = null, tCatch = null;
     hold(fd, tc);
     if (sp.traj === 'ground') {
-      const tr = dist / 115 + 0.2, q = f => [L[0] * f, L[1] * f];
+      const through = ['single', 'double', 'triple'].includes(o.kind) && dist < 150;
+      // a ground ball he fields rolls slower if he needs longer to get there
+      const tr = through ? dist / 115 + 0.2 : Math.max(dist / 115 + 0.2, reachT(fd, L[0], L[1]) - tc + 0.05), q = f => [L[0] * f, L[1] * f];
       seg(tc, tc + tr * 0.4, {k: 'arc', x0: 0, y0: 1, x1: q(0.4)[0], y1: q(0.4)[1], peak: 10, start: 7, end: 0});
       seg(tc + tr * 0.4, tc + tr * 0.75, {k: 'arc', x0: q(0.4)[0], y0: q(0.4)[1], x1: q(0.75)[0], y1: q(0.75)[1], peak: 5});
       seg(tc + tr * 0.75, tc + tr, {k: 'arc', x0: q(0.75)[0], y0: q(0.75)[1], x1: L[0], y1: L[1], peak: 2});
-      go(fd, tc + Math.min(tr - 0.05, 0.9), L[0], L[1]);
       tBall = tc + tr;
-      if (['single', 'double', 'triple'].includes(o.kind) && dist < 150) {
-        // through the infield: it rolls on to an outfielder
-        const of = A(sp.x < -40 ? 'LF' : sp.x > 40 ? 'RF' : 'CF'), R = [L[0] * 1.6, L[1] * 1.6];
-        seg(tBall, tBall + 1.1, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 3});
-        hold(of, tc); go(of, tBall + 1.2, R[0], R[1]); go(fd, tBall + 0.2, L[0] * 0.95, L[1] * 0.95);
-        tBall += 1.2; L = R; plan.fielder = of;
-      }
+      if (through) {
+        // through the infield: the infielder dives for it and misses, and it rolls on to where an outfielder cuts it off
+        const [, fx, fy] = last(fd), u = Math.min(1, (tr * SPRINT) / Math.max(1, Math.hypot(L[0] - fx, L[1] - fy)));
+        go(fd, tBall + 0.2, fx + (L[0] * 0.95 - fx) * u, fy + (L[1] * 0.95 - fy) * u);
+        const of = A(sp.x < -40 ? 'LF' : sp.x > 40 ? 'RF' : 'CF'), ux = L[0] / dist, uy = L[1] / dist, [, ox, oy] = of ? last(of) : [0, L[0] * 1.6, L[1] * 1.6];
+        const along = clamp((ox - L[0]) * ux + (oy - L[1]) * uy, 25, fenceR(sp.deg ?? 0) - 10 - dist), R = [L[0] + ux * along, L[1] + uy * along];
+        hold(of, tc); const tMeet = Math.max(tBall + along / 60, reachT(of, R[0], R[1]));
+        seg(tBall, tMeet, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 3}); go(of, tMeet, R[0], R[1]);
+        tBall = tMeet; L = R; plan.fielder = of;
+      } else reach(fd, tBall - 0.05, L[0], L[1]);
     } else {
-      const air = sp.traj === 'line' ? 0.35 + dist / 170 : sp.traj === 'pop' ? 1.6 + dist / 300 : 0.9 + dist / 120;
+      let air = sp.traj === 'line' ? 0.35 + dist / 170 : sp.traj === 'pop' ? 1.6 + dist / 300 : 0.9 + dist / 120;
+      if (caught) air = Math.max(air, reachT(fd, L[0], L[1]) - tc + 0.1); // hangs up long enough for him to get under it
       const peak = sp.traj === 'line' ? 14 : sp.traj === 'pop' ? 120 : sp.traj === 'hr' ? 115 : 85;
       seg(tc, tc + air, {k: 'arc', x0: 0, y0: 1, x1: L[0], y1: L[1], peak, start: 7, end: caught ? 7 : 0});
       tBall = tc + air;
       if (sp.traj === 'hr') {
         seg(tBall, tBall + 40, {k: 'spot', x: L[0], y: L[1], h: 0});
-        const [wx, wy] = polar(sp.deg, fenceR(sp.deg) - 10); go(fd, tc + air * 0.85, wx, wy);
+        const [wx, wy] = polar(sp.deg, fenceR(sp.deg) - 10); reach(fd, tc + air * 0.85, wx, wy);
         sfx(tBall, 'td'); tBall = null;
       } else if (caught) { go(fd, tBall - 0.1, L[0], L[1]); sfx(tBall, 'pop'); tCatch = tBall; }
       else {
         // a hit: it drops, rolls on, and an outfielder runs it down
         const cap = fenceR(sp.deg) - 8, r0 = Math.hypot(L[0], L[1]), r1 = Math.min(cap, r0 + 30), R = [L[0] * r1 / r0, L[1] * r1 / r0];
-        seg(tBall, tBall + 0.7, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 6});
-        tBall += 0.8; go(fd, tBall, R[0], R[1]); L = R;
+        const tMeet = Math.max(tBall + 0.8, reachT(fd, R[0], R[1]));
+        seg(tBall, tMeet, {k: 'arc', x0: L[0], y0: L[1], x1: R[0], y1: R[1], peak: 6});
+        tBall = tMeet; go(fd, tBall, R[0], R[1]); L = R;
       }
     }
     const holder = plan.fielder || fd;
     if (tBall != null) {
-      seg(tBall, tBall + 0.25, {k: 'hold', a: holder});
+      seg(tBall, tBall + 30, {k: 'hold', a: holder});
       const tt = tBall + 0.25, here = [L[0], L[1]];
       const outMv = o.moves.find(m => m.out), recv2 = ['SS', '3B'].includes(holder.role) ? '2B' : 'SS';
       if (o.kind === 'dp' && outMv) { const t2 = throwTo(here, outMv.at || 2, outMv.at === 3 ? '3B' : recv2, tt); if (o.bDest < 0) throwTo(BASE[outMv.at || 2], 1, '1B', t2 + 0.2); }
@@ -2411,15 +2454,15 @@ function planMLB(p){
     for (const mv of o.moves) {
       const a = A('R' + mv.from); if (!a) continue;
       const t1 = runBases(a, mv.from, Math.min(4, mv.out ? mv.at : mv.to), tr, o.kind === 'hr' ? TROT : RUN);
-      if (mv.to === 4) go(a, t1 + 1.6, ...dugoutOf(st.batting));
+      if (mv.to === 4) offTo(a, t1 + 0.4);
       tEnd = Math.max(tEnd, t1);
     }
-    if (o.bDest === 4 && bat) go(bat, tEnd + 1.2, ...dugoutOf(st.batting));
+    if (o.bDest === 4 && bat) offTo(bat, tEnd + 0.4);
   } else if (['walk', 'hbp', 'k'].includes(o.kind)) {
     let t0 = 0.2;
     if (!st.lastPitch) t0 = pitch(0, o.kind === 'k' ? (o.looking ? 'called' : 'swing') : o.kind === 'hbp' ? 'hbp' : 'ball') + 0.3;
     else seg(0, 30, {k: 'hold', a: pit});
-    if (o.kind === 'k' || o.bDest < 1) { hold(bat, t0); go(bat, t0 + 2.4, ...dugoutOf(st.batting)); tEnd = t0 + 1.6; }
+    if (o.kind === 'k' || o.bDest < 1) { offTo(bat, t0 + 0.3, 12); tEnd = t0 + 1.6; }
     else {
       tEnd = Math.max(t0 + 1, runBases(bat, 0, o.bDest, t0 + 0.2, TROT));
       for (const mv of o.moves) { const a = A('R' + mv.from); if (a) tEnd = Math.max(tEnd, runBases(a, mv.from, Math.min(4, mv.to || mv.at || 4), t0 + 0.2, TROT)); }
@@ -2427,7 +2470,9 @@ function planMLB(p){
   } else {
     // steals, pickoffs, wild pitches and other runner moves
     const ball0 = ['pickoff', 'adv', 'wp'].includes(o.kind) ? pit : cat;
-    seg(0, 0.5, {k: 'hold', a: ball0});
+    // a steal starts on the pitch: the ball goes from the pitcher to the catcher first
+    if (ball0 === cat && pit) { seg(0, 0.1, {k: 'hold', a: pit}); seg(0.1, 0.5, {k: 'arc', x0: 0, y0: 56, x1: 0, y1: -4, peak: 3, start: 10, end: 7}); seg(0.5, 30, {k: 'hold', a: cat}); }
+    else seg(0, 30, {k: 'hold', a: ball0});
     let tRun = 0.1;
     if (o.kind === 'wp') {
       const s = hash(p.id) % 2 ? 1 : -1;
@@ -2440,7 +2485,7 @@ function planMLB(p){
       const dest = mv.out ? mv.at : mv.to;
       if (o.kind === 'pickoff') { hold(a, 0.5); go(a, 0.9, ...BASE[mv.from]); tLast = Math.max(tLast, 0.9); continue; }
       tLast = Math.max(tLast, runBases(a, mv.from, Math.min(4, dest || mv.from + 1), tRun, RUN));
-      if (mv.to === 4) go(a, tLast + 1.4, ...dugoutOf(st.batting));
+      if (mv.to === 4) offTo(a, tLast + 0.4);
     }
     const mv0 = o.moves[0];
     if (mv0 && (o.kind === 'sb' || o.kind === 'cs')) {
@@ -2572,8 +2617,10 @@ function applyStateMLB(p, plan){
 async function runPlayMLB(p, fast, tok){
   if (tok !== S.token) return;
   if (fast) { addLog(p); applyState(p, null); restFormation(); return; }
-  // let anyone walking out of the dugout reach their spot first
-  for (let w = 0; w < 120 && S.queue.length <= 2 && S.actors.some(a => a.entering && a.tx != null); w++) { await sleep(100); if (tok !== S.token) return; }
+  // let anyone walking out of the dugout or the bullpen reach their spot first, and the ball get back to the pitcher
+  const settle = S.mode === 'replay' || S.queue.length <= 2;
+  for (let w = 0; w < 120 && settle && S.actors.some(a => a.entering && a.tx != null); w++) { await sleep(100); if (tok !== S.token) return; }
+  for (let w = 0; w < 30 && S.mlbRet && !S.mlbRet.done; w++) { await sleep(100); if (tok !== S.token) return; }
   let plan;
   try { plan = planMLB(p); } catch (e) { console.warn('plan failed', e, p); plan = {kind: 'admin', static: true, o: p._o || {kind: 'admin'}}; }
   const o = p._o || plan.o;
@@ -2582,7 +2629,7 @@ async function runPlayMLB(p, fast, tok){
   if (tok !== S.token) return;
   const st = S.mlb, before = Object.assign({}, S.prevScore, {loaded: !!(st.bases[1] && st.bases[2] && st.bases[3]), outs: st.outs});
   addLog(p); applyState(p, plan);
-  if (!plan.static || o.atbat) restFormation(true, plan); // a new batter walks up from the dugout
+  if (!plan.static || o.atbat || p.f?.pitcher) restFormation(true, plan); // a new batter walks up from the dugout, a reliever from the bullpen
   if (o.kind === 'pitch') {
     const call = pitchCall(p, o), info = pitchInfo(p), busy = S.mode === 'live' && S.queue.length > 2;
     if (call) {
@@ -2606,6 +2653,10 @@ async function runPlayMLB(p, fast, tok){
   await sleep(S.voices ? 350 : 900);
   // baseball's natural breaks: the side retired, or the manager going to the bullpen
   const brk = o.outsAdd && st.outs >= 3 && before.outs !== 3 ? 'INNING BREAK' : /pitch(er|ing) change|pitching substitution/i.test(p.text || '') || o.pitcher ? 'PITCHING CHANGE' : null;
+  if (brk === 'INNING BREAK' && S.queue.some(q => mlbLabel(q) && mlbLabel(q) !== st.half)) {
+    // the side is retired: the fielders jog in and the other team takes the field during the break
+    mlbRest(true, null, Object.assign({}, st, {top: !st.top, batting: st.fielding, fielding: st.batting, bases: [null, null, null, null], outs: 0, batter: null}));
+  }
   if (brk && tok === S.token) {
     showBreak(brk, brk === 'INNING BREAK' && st.inning ? `${st.top ? 'MIDDLE' : 'END'} OF THE ${st.inning}${[, 'ST', 'ND', 'RD'][st.inning % 100 > 10 && st.inning % 100 < 14 ? 0 : st.inning % 10] || 'TH'}` : '');
     await sleep(1300); await sponsorRead(tok);
@@ -2936,10 +2987,11 @@ function bbFormationPlayers(offIn, mode, first){
   });
   return A;
 }
-function bbRest(walk){
+function bbRest(walk, breakHuddle){
   const st = S.bb; if (!st) return;
   // in a replay the next play is known, so the players head to where it starts instead of a stock formation
-  const nx = walk && S.mode === 'replay' && !st.huddle ? S.queue[0] : null, set = nx && bbSetup(nx);
+  // (after a timeout, once the huddle breaks)
+  const nx = walk && S.mode === 'replay' && (!st.huddle || breakHuddle) ? S.queue[0] : null, set = nx && bbSetup(nx);
   const F = set ? set.F : bbFormation();
   const holderOf = list => set ? (set.holder && (!st.loose || nx._caught) ? list.find(a => a.team === set.holder.team && a.pid === set.holder.pid && !a.leaving) || null : null)
     : (!st.loose && !st.huddle && !st.tip && st.poss) ? list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
@@ -2967,7 +3019,13 @@ function bbRest(walk){
     Object.assign(a, {tx: bx, ty: by, leaving: true, entering: false, track: null, chase: false, hop: 0, walkSpeed: 8}); out.push(a);
   }
   S.actors = out; st.holder = holderOf(out);
-  if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
+  // nobody on the floor has the ball (a timeout, the end of a quarter, a jump ball coming up): a referee goes and
+  // gets it rather than the ball jumping to center court; the next play starts with a pass from wherever it is
+  if (!st.holder && !st.loose) {
+    const gx = st.tip ? 47 : S.ball.x, gy = st.tip ? 25 : S.ball.y;
+    const far = a => Math.hypot((a.tx ?? a.x) - gx, (a.ty ?? a.y) - gy);
+    st.holder = out.filter(a => a.ref).sort((a, b) => far(a) - far(b))[0] || null;
+  }
 }
 
 /* ---- live games: the offense keeps working the ball while the next play is on its way ---- */
@@ -3098,11 +3156,15 @@ function planBB(p){
   let PRE = far > 2 ? clamp(far / 22, 0.25, 1.8) : 0.05;
   // the ball may be with someone else (a live game passes it around while waiting for plays): the player who
   // really has the ball in this play gets a pass first, so the shooter, ball handler or fouled player is always right
-  const h0 = st.holder && S.actors.includes(st.holder) && !st.loose ? set.holder : null, hs = h0 && starts[F.indexOf(h0)];
+  const h0 = !st.loose ? set.holder : null, hs = h0 && starts[F.indexOf(h0)];
   const passD = hs ? Math.hypot(S.ball.x - hs[0], S.ball.y - hs[1]) : 0;
   if (passD > 2) {
     PRE = Math.max(PRE, clamp(passD / 40, 0.4, 0.9));
     plan.segs.push({t0: 0, t1: PRE, k: 'arc', x0: S.ball.x, y0: S.ball.y, xa: h0, peak: 3, start: Math.max(1, S.ball.h), end: 1});
+  } else if (k.kind === 'jump' && Math.hypot(S.ball.x - 47, S.ball.y - 25) > 1) {
+    // the referee brings the ball to center court for the toss
+    PRE = Math.max(PRE, 0.4);
+    plan.segs.push({t0: 0, t1: PRE, k: 'arc', x0: S.ball.x, y0: S.ball.y, x1: 47, y1: 25, peak: 1, start: Math.max(1, S.ball.h), end: 10});
   }
   F.forEach((a, i) => { const [sx, sy] = starts[i]; a.track = [[0, sx, sy], [PRE, a.x, a.y]]; a.x = sx; a.y = sy; });
   const who = id => id ? F.find(a => a.pid === String(id)) : null;
@@ -3371,6 +3433,13 @@ async function runPlayBB(p, fast, tok){
   if (isTimeout) await sponsorRead(tok);
   await sleep(S.voices ? 150 : 400);
   if (isTimeout && S.mode === 'replay') { await sleep(cutHold()); if (tok === S.token) hideBanner(); }
+  // a replay knows the next play: once the timeout (and any subs) are done, the huddle breaks and everyone walks
+  // out to where it starts, so nobody sprints the length of the floor when it begins
+  const nx = S.queue[0], nk = nx && (nx._k || (nx._k = classifyBB(nx)));
+  if (S.mode === 'replay' && S.bb?.huddle && tok === S.token && nk && !['sub', 'timeout', 'end', 'admin'].includes(nk.kind)) {
+    bbRest(true, true);
+    for (let w = 0; w < 60 && S.actors.some(a => a.tx != null); w++) { await sleep(100); if (tok !== S.token) return; }
+  }
 }
 
 /* ---- replay timeline for basketball: one block per quarter, marks where the lead changed ---- */
@@ -3406,7 +3475,9 @@ function trackAt(tr, t){
 function sortTrack(a){ a.track.sort((p, q) => p[0] - q[0]); }
 
 function ballAt(plan, t){
-  let s = plan.segs.find(s => t >= s.t0 && t < s.t1) || plan.segs[plan.segs.length - 1];
+  // in a gap between two stretches the ball stays where the one that started last left it
+  const gap = () => plan.segs.some(q => q.t0 > t) && plan.segs.reduce((m, q) => q.t0 <= t && (!m || q.t0 >= m.t0) ? q : m, null);
+  let s = plan.segs.find(s => t >= s.t0 && t < s.t1) || gap() || plan.segs[plan.segs.length - 1];
   if (!s) return;
   if (t < plan.segs[0]?.t0) s = plan.segs[0];
   const b = S.ball; S.ballSeg = s.k;
@@ -3424,7 +3495,7 @@ function animate(plan, tok){
   return new Promise(res => {
     if (plan.static) return res();
     plan.actors.forEach(sortTrack);
-    S.actors = plan.actors; S.flag = plan.flag;
+    S.actors = plan.actors; S.flag = plan.flag; S.mlbRet = null; S.ball.vis = true;
     S.anim = {plan, t0: performance.now(), res, tok, fired: new Set(), last: 0};
   });
 }
@@ -3497,6 +3568,8 @@ function step(now){
     S.camX = clamp((S.camX ?? tx) + (tx - S.camX) * Math.min(1, 0.06 + (S.anim ? 0.05 : 0.02)), W / 2, BC.CW - W / 2);
     S.camY = H / 2;
   } else if (isMLB()) {
+    if (!S.anim) mlbBallStep(Math.min(0.05, (now - (S.mlbLast || now)) / 1000));
+    S.mlbLast = now;
     // the camera sits on the infield and goes with the ball when it's hit deep
     const b = S.ball, follow = S.anim && S.ballSeg !== 'spot' && (b.y > 150 || Math.abs(b.x) > 110);
     const tx = follow ? mcx(b.x) : MB.PLX, ty = follow ? mcy(b.y) - b.h * 0.5 : MB.FH - H / 2;
@@ -3605,7 +3678,7 @@ function clearLog(msg){ $('log').innerHTML = ''; const li = document.createEleme
 // the try, so players coming on run in from their sideline and players going off run to it while the booth talks.
 function restFormation(walk, plan){
   if (!S.home) return;
-  if (isMLB()) return mlbRest(walk);
+  if (isMLB()) return mlbRest(walk, plan);
   if (isBB()) return bbRest(walk);
   let poss = S.offDir === -1 ? S.away : S.home, def = poss === S.home ? S.away : S.home;
   let F;
