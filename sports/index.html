@@ -1395,7 +1395,7 @@ function colorLine(p, plan){
     default: key = y >= 15 ? 'big' : y < 0 ? 'loss' : y <= 2 ? 'short' : (p.end?.down === 1 && (p.start?.down || 0) > 1) ? 'first' : 'gain';
   }
   if (plan.td) key = 'td';
-  if (plan.two) key = p._try.good ? 'two' : 'twoMiss';
+  if (plan.two) key = twoPoint(p)?.good ? 'two' : 'twoMiss';
   if (/fumble/i.test(p.text) && plan.kind !== 'admin') key = /recovered by/i.test(p.text) ? 'fumble' : key;
   if (!key) return null;
   return fill(pickFresh(LINES[key], p.id + key), plan, y);
@@ -1436,6 +1436,8 @@ function dukeAside(p, plan, before){
 function classify(p){
   // the try after a touchdown, split off the touchdown's entry by playsOf: a kick, or a two-point pass or run
   if (p._try) return p._try.two ? (p._try.two === 'pass' ? (p._try.good ? 'pass' : 'inc') : 'rush') : 'pat';
+  // a two-point play on its own entry (college overtime from the third period on): a pass or a run from the 3
+  const tp = twoPoint(p); if (tp) return tp.two === 'pass' ? (tp.good ? 'pass' : 'inc') : 'rush';
   const ty = (p.type?.text || '').toLowerCase(), tx = p.text || '';
   // the NFL feed writes "kicks 65 yards", "punts 45 yards"; college writes "kickoff for 65 yds", "punt for 45 yds"
   if (/kickoff/.test(ty) || /kicks (onside )?\d+ yards|\bkickoff for \d+ yds/i.test(tx)) return 'kickoff';
@@ -1465,6 +1467,13 @@ const benchY = team => team === S.home ? 54.6 : -1.3;
 const benchX = x => clamp(x, 28, 72);
 // Who's on the field depends on the play: the offense and defense, the punt and punt return units, the field goal unit,
 // or the kickoff and kick return units. Each role gets its player from the team's depth chart (numFor).
+// a two-point try: split off a touchdown (p._try), or an entry of its own
+function twoPoint(p){
+  if (p._try) return p._try.two ? p._try : null;
+  const tx = (p.type?.text || '') + ' ' + (p.text || '');
+  if (!/two-point|two point|2pt/i.test(tx) || /touchdown|kick/i.test(tx)) return null;
+  return {two: /\bpass\b/i.test(tx) ? 'pass' : 'rush', good: /succeeds|\bgood\b|conversion (?:pass|run) good/i.test(tx) || (!/fail|no good|incomplete|intercept/i.test(tx) && !!p.scoringPlay)};
+}
 function makeFormation(off, def, los, kind){
   const dir = off === S.home ? 1 : -1, A = [];
   const add = (team, role, x, y) => A.push({team, role, kit: team.kit, x, y, num: null, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y});
@@ -1565,7 +1574,8 @@ function lineOf(p){
   return {kind, off, def, dir, los, ks, offId};
 }
 // pass depth from the text: the NFL writes "short" (under 15 yards in the air) or "deep"
-const airYards = (tx, gain, id) => /\bdeep\b/i.test(tx) ? Math.max(15, Math.min(gain, 16 + hash(id) % 14)) : Math.min(Math.max(gain, -3), 4 + hash(id) % 7);
+// (college doesn't say, so a long gain counts as a deep ball)
+const airYards = (tx, gain, id) => /\bdeep\b/i.test(tx) || (!/\bshort\b/i.test(tx) && gain >= 25) ? Math.max(15, Math.min(gain, 16 + hash(id) % 14)) : Math.min(Math.max(gain, -3), 4 + hash(id) % 7);
 function planPlay(p){
   const tx = p.text || '', st = p.start || {}, en = p.end || {};
   const {kind: kind0, off, def, dir, los, ks, offId} = lineOf(p);
@@ -1574,7 +1584,9 @@ function planPlay(p){
   const dh = (p.homeScore ?? S.prevScore.h) - S.prevScore.h, da = (p.awayScore ?? S.prevScore.a) - S.prevScore.a;
   const td = /touchdown/i.test(tx + ' ' + (p.type?.text || '')) && (dh >= 6 || da >= 6 || p.scoringPlay);
   if (td) endX = (dh >= 6 ? true : da >= 6 ? false : off === S.home) ? 104 : -4;
-  const plan = {kind, off, def, dir, los, endX, td, dur: 1, sfx: [], segs: [], carrier: null, carrierName: null, good: false, flag: null, two: !!p._try?.two};
+  const tp = twoPoint(p);
+  if (tp && !p._try) endX = tp.good ? (dir > 0 ? 102 : -2) : los + dir * 1;
+  const plan = {kind, off, def, dir, los, endX, td, dur: 1, sfx: [], segs: [], carrier: null, carrierName: null, good: false, flag: null, two: !!tp};
   if (kind === 'admin') { plan.dur = 0.4; plan.endX = S.ball.x; plan.static = true; return plan; }
 
   // build formation and tween from where players are now. A player is the same player if he wears the same number for
@@ -3703,9 +3715,13 @@ function playsOf(summary){
   // ESPN writes the try after a touchdown into the touchdown's own entry ("...TOUCHDOWN. T.Bass extra point is GOOD"),
   // with the score after the kick. It becomes an entry of its own, so the touchdown counts six and the kick is played.
   const full = []; let h = 0, a = 0;
-  for (const p of out) {
+  for (const [i, p] of out.entries()) {
     full.push(p);
-    const t = splitTry(p, h, a); if (t) full.push(t);
+    // a feed that already sends the try as its own entry (right after, in the same period, with the touchdown counting
+    // six) is left alone
+    const nx = out[i + 1], six = Math.max((p.homeScore ?? h) - h, (p.awayScore ?? a) - a) === 6;
+    const own = six && nx && nx.period?.number === p.period?.number && /extra point|two-point|two point|2pt|\bpat\b/i.test(nx.type?.text || '');
+    const t = own ? null : splitTry(p, h, a); if (t) full.push(t);
     h = p.homeScore ?? h; a = p.awayScore ?? a;
     if (t) { h = t.homeScore; a = t.awayScore; }
   }
