@@ -130,7 +130,7 @@ The masthead, NEWS \| SPORTS \| COOKING switch, ON AIR, control row, broadcast a
 </div>
 ```
 
-Your script fills the list with one `<li>` per segment: `<span class="tm">` with the clock time, then the name. The row on air is `li.now` with its name in a plain `<span>`; other rows have their name in `<button class="pk">`; the row a viewer picked is `li.picked`. NOW and NEXT are added by the CSS. Copy `deskRundown()` in `sports/show.js` or `renderRundown()` in `index.html`.
+Your script fills the list with one `<li>` per segment: `<span class="tm">` with the clock time, then the name. The row on air is `li.now` with its name in a plain `<span>`; other rows have their name in `<button class="pk">`; the row a viewer picked is `li.picked`. NOW and NEXT are added by the CSS. Copy `deskRundown()` in `sports/show.js` or `renderRundown()` in `index.html`. The row on air is always first. **A new kind of row** (like the Sports Desk's live game, `li.live`) keeps the same two lines, `.tm` in the body font and the name as a `.pk` button, and gets its marker the way NOW and NEXT do: a `.tm::after` rule in `shared/pbc.css`, Silkscreen at 10px. Never restyle `.tm` itself or put a row above the one on air. Before opening the pull request, screenshot the new row next to the News rundown and compare them; the style check only checks that fonts and colors are used by name, not that a row looks like its neighbours.
 
 **LIVE NOW chip.** Built by `shared/live.js`. A page only places it, with one `.livenow{position:absolute;right:...;top:...}` rule.
 
