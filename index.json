@@ -1,0 +1,158 @@
+{
+ "fetchedAt": "2026-10-10T16:10:13Z",
+ "ok": [
+  {
+   "id": "democracynow",
+   "file": "democracynow.json",
+   "url": "https://www.democracynow.org/2026/10/9/headlines",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "aljazeera",
+   "file": "aljazeera.json",
+   "url": "https://www.aljazeera.com/news/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "pbs",
+   "file": "pbs.json",
+   "url": "https://www.pbs.org/newshour/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "propublica",
+   "file": "propublica.json",
+   "url": "https://www.propublica.org/feeds/propublica/main",
+   "items": 20,
+   "articles": 7
+  },
+  {
+   "id": "marketplace",
+   "file": "marketplace.json",
+   "url": "https://www.marketplace.org/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "npr-business",
+   "file": "npr-business.json",
+   "url": "https://www.npr.org/sections/business/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "sciencenews",
+   "file": "sciencenews.json",
+   "url": "https://www.sciencenews.org/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "cbssports",
+   "file": "cbssports.json",
+   "url": "https://www.cbssports.com/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "local:new-york-city",
+   "file": "local-new-york-city.json",
+   "url": "https://gothamist.com/feed",
+   "items": 40,
+   "articles": 8
+  },
+  {
+   "id": "local:los-angeles-ca",
+   "file": "local-los-angeles-ca.json",
+   "url": "https://laist.com/index.atom",
+   "items": 33,
+   "articles": 8
+  },
+  {
+   "id": "local:chicago-il",
+   "file": "local-chicago-il.json",
+   "url": "https://www.wbez.org/news",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "local:seattle-wa",
+   "file": "local-seattle-wa.json",
+   "url": "https://www.kuow.org/latest",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "local:atlanta-ga",
+   "file": "local-atlanta-ga.json",
+   "url": "https://www.wabe.org/category/news/feed/",
+   "items": 10,
+   "articles": 6
+  },
+  {
+   "id": "local:denver-co",
+   "file": "local-denver-co.json",
+   "url": "https://denverite.com/feed/",
+   "items": 10,
+   "articles": 0
+  },
+  {
+   "id": "local:boston-ma",
+   "file": "local-boston-ma.json",
+   "url": "https://www.wbur.org/news",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "local:paris-france",
+   "file": "local-paris-france.json",
+   "url": "https://www.thelocal.fr/",
+   "items": 0,
+   "articles": 8
+  },
+  {
+   "id": "weather:atlanta-ga",
+   "file": "weather/atlanta-ga.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=33.749&lon=-84.388&FcstType=json"
+  },
+  {
+   "id": "weather:boston-ma",
+   "file": "weather/boston-ma.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=42.3601&lon=-71.0589&FcstType=json"
+  },
+  {
+   "id": "weather:chicago-il",
+   "file": "weather/chicago-il.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=41.8781&lon=-87.6298&FcstType=json"
+  },
+  {
+   "id": "weather:denver-co",
+   "file": "weather/denver-co.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=39.7392&lon=-104.9903&FcstType=json"
+  },
+  {
+   "id": "weather:los-angeles-ca",
+   "file": "weather/los-angeles-ca.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=34.0522&lon=-118.2437&FcstType=json"
+  },
+  {
+   "id": "weather:new-york-city",
+   "file": "weather/new-york-city.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=40.7128&lon=-74.006&FcstType=json"
+  },
+  {
+   "id": "weather:paris-france",
+   "file": "weather/paris-france.json",
+   "url": "https://meteofrance.com/previsions-meteo-france/paris/75000"
+  },
+  {
+   "id": "weather:seattle-wa",
+   "file": "weather/seattle-wa.json",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=47.6062&lon=-122.3321&FcstType=json"
+  }
+ ],
+ "failed": []
+}
