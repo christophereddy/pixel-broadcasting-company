@@ -301,7 +301,11 @@ function deskClips(){
     R.plays.forEach((p, i) => { const t = (p.text || '').toLowerCase(); if (/(three point|dunk)/.test(t) && /(makes|made)/.test(t)) hits.push(i); });
     const picks = hits.length > 2 ? [hits[Math.floor(hits.length * 0.3)], hits[Math.floor(hits.length * 0.75)]] : hits.slice(0, 2);
     for (const i of picks) out.push({i0: Math.max(0, i - 1), i1: i, why: where(i), intro: `A basket ${at(i)}.`});
-    out.push({i0: Math.max(0, n - 3), i1: n - 1, why: 'the finish', intro: 'And the finish.'});
+    // the finish is the last three real plays, not the end-of-game, timeout and substitution lines after them
+    const idle = i => /substitution|enters the game|timeout|end (of )?(the )?(period|quarter|half|game|\d)/.test(((R.plays[i].type?.text || '') + ' ' + (R.plays[i].text || '')).toLowerCase());
+    let i1 = n - 1; while (i1 > 0 && idle(i1)) i1--;
+    let i0 = i1; for (let k = 0; k < 2 && i0 > 0; ) { i0--; if (!idle(i0)) k++; }
+    out.push({i0, i1, why: 'the finish', intro: 'And the finish.'});
   } else {
     const picks = sc.length <= 3 ? sc.slice() : [sc[0], sc[Math.floor(sc.length / 2)], sc[sc.length - 1]];
     // a touchdown's clip runs through the try after it (s.end)
