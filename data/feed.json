@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-10T07:09:00Z",
+ "updatedAt": "2026-10-10T10:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Allies and UN back ICC against new US sanctions",
+   "b": "European states, Canada, Japan and the UN condemned new US sanctions on the International Criminal Court after Secretary of State Marco Rubio banned transactions with the court.",
+   "date": "2026-10-09",
+   "publisher": "Al Jazeera",
+   "title": "European states, Canada, Japan and UN back ICC against US sanctions",
+   "url": "https://www.aljazeera.com/news/2026/10/9/european-states-canada-japan-and-un-back-icc-against-us-sanctions",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
   {
    "h": "Putin, Trump discuss Iran",
    "b": "Russian diesel is set to hit global markets as Vladimir Putin and Donald Trump discussed Iran, Al Jazeera reports.",
@@ -154,6 +163,15 @@
  ],
  "politics": [
   {
+   "h": "Katie Zacharia picked as White House press secretary",
+   "b": "President Trump confirmed conservative commentator Katie Zacharia as his next press secretary.",
+   "date": "2026-10-09",
+   "publisher": "Al Jazeera",
+   "title": "Katie Zacharia selected to be next White House press secretary",
+   "url": "https://www.aljazeera.com/news/2026/10/9/katie-zacharia-offered-position-as-white-house-press-secretary",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
+  {
    "h": "Trump forms panel to probe Fed's Lisa Cook",
    "b": "President Trump set up a \"committee of inquiry\" into mortgage allegations against Fed Governor Lisa Cook, with a private White House hearing Nov. 5.",
    "date": "2026-10-09",
@@ -172,6 +190,39 @@
   }
  ],
  "international": [
+  {
+   "h": "7.7 quake hits Panama, tsunami warnings issued",
+   "b": "A magnitude 7.7 earthquake struck southern Panama, prompting tsunami warnings for Panama, Colombia, Ecuador, Nicaragua and Guatemala, and from Chile.",
+   "date": "2026-10-09",
+   "place": "Panama",
+   "tz": "America/Panama",
+   "publisher": "Al Jazeera",
+   "title": "Tsunami warnings across Latin America after 7.7 magnitude earthquake hits",
+   "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
+  {
+   "h": "UN envoy: Yemen back in 'full-scale war'",
+   "b": "UN envoy Hans Grundberg told the Security Council that Yemen has slid back into full-scale war, with civilians bearing the brunt, and urged dialogue.",
+   "date": "2026-10-09",
+   "place": "Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "UN envoy warns Yemen has returned to ‘full-scale war’, urges dialogue",
+   "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
+  {
+   "h": "UAE: Flydubai co-pilot plotted attack on Israel",
+   "b": "Emirati authorities say the co-pilot who tried to seize a Flydubai plane on Sept. 30 meant to crash it at Israel's Ben Gurion airport.",
+   "date": "2026-10-09",
+   "place": "United Arab Emirates",
+   "tz": "Asia/Dubai",
+   "publisher": "Al Jazeera",
+   "title": "Flydubai co-pilot plotted ‘suicide’ attack on Israel, UAE says",
+   "url": "https://www.aljazeera.com/news/2026/10/9/flydubai-co-pilot-plotted-suicide-attack-on-israel-uae-says",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
   {
    "h": "Ethiopia, Eritrea trade war accusations",
    "b": "Ethiopia accused Eritrea of an \"all-out invasion\" in a letter to the UN Security Council, while Eritrea says it faces a \"war of aggression.\"",
@@ -209,11 +260,7 @@
    "date": "2026-10-09",
    "place": "Paris, France",
    "tz": "Europe/Paris",
-   "publisher": "The Local France",
-   "title": "France students plan more protests as UN voices ‘concern’ over violence",
    "url": "https://www.thelocal.fr/20261009/france-students-plan-more-protests-as-un-voices-concern-over-violence",
-   "published": "2026-10-09T14:29:57Z",
-   "updated": "2026-10-09T14:29:59Z",
    "gathered": "2026-10-09T16:27:04Z"
   },
   {
@@ -239,6 +286,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Fuel costs cut Delta profit outlook",
+   "b": "Atlanta-based Delta Air Lines lowered its profit forecast despite strong demand, saying it expects annual fuel costs to jump by $6 billion.",
+   "date": "2026-10-09",
+   "publisher": "Al Jazeera",
+   "title": "Rising fuel costs slashed Delta’s profit outlook despite strong demand",
+   "url": "https://www.aljazeera.com/economy/2026/10/9/rising-fuel-costs-slashed-deltas-profit-outlook-despite-strong-demand",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
   {
    "h": "Fired OpenAI workers question safety commitment",
    "b": "Three former OpenAI employees allege they were fired for being outspoken about safety. OpenAI disputes that and says they mishandled sensitive information.",
@@ -272,6 +328,15 @@
  ],
  "science": [],
  "sports": [
+  {
+   "h": "Valkyries sweep Aces to reach WNBA Finals",
+   "b": "The second-year Golden State Valkyries beat the reigning champion Las Vegas Aces 87-77 in overtime to finish a semifinal sweep and reach their first WNBA Finals.",
+   "date": "2026-10-10",
+   "publisher": "CBS Sports",
+   "title": "Golden State Valkyries reach WNBA Finals: How second-year franchise made unprecedented run",
+   "url": "https://www.cbssports.com/wnba/news/golden-state-valkyries-reach-wnba-finals-second-year-unprecedented-run/",
+   "gathered": "2026-10-10T07:34:30Z"
+  },
   {
    "h": "Mike Ditka dies at 86",
    "b": "Mike Ditka, the Hall of Fame tight end who coached the Bears to their only Super Bowl title, has died at 86, his family said.",
@@ -378,46 +443,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "9 Oct 23:51 pm EDT"
+   "obs": "10 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 54,
-    "text": "Mostly cloudy, with a low around 54. Northwest wind around 5 mph. "
-   },
-   {
     "name": "Saturday",
     "kind": "high",
-    "temp": 70,
-    "text": "Partly sunny, with a high near 70. North wind around 6 mph becoming southeast in the afternoon. "
+    "temp": 68,
+    "text": "Partly sunny, with a high near 68. North wind around 7 mph becoming southeast in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 58,
-    "text": "Mostly cloudy, with a low around 58. East wind 3 to 5 mph. "
+    "temp": 60,
+    "text": "Increasing clouds, with a low around 60. East wind 6 to 8 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 66,
-    "text": "Periods of rain, mainly after 2pm.  High near 66. East wind 6 to 11 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 67,
+    "text": "Rain, mainly after 11am.  High near 67. East wind 10 to 15 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 61,
-    "text": "Periods of rain before 11pm, then periods of rain and possibly a thunderstorm between 11pm and 2am, then a chance of rain and thunderstorms after 2am.  Low around 61. East wind 13 to 17 mph, with gusts as high as 30 mph.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+    "temp": 63,
+    "text": "Rain and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am.  Low around 63. East wind 11 to 18 mph, with gusts as high as 29 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Columbus Day",
     "kind": "high",
     "temp": 70,
-    "text": "A 30 percent chance of rain before 8am.  Cloudy, then gradually becoming mostly sunny, with a high near 70."
+    "text": "A 30 percent chance of rain before 8am.  Cloudy through mid morning, then gradual clearing, with a high near 70."
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 61,
+    "text": "Partly cloudy, with a low around 61."
    }
   ]
  },
