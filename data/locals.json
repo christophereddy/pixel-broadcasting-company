@@ -42,16 +42,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": " Light Rain",
-    "obs": "9 Oct 19:52 pm EDT"
+    "temp": 62,
+    "cond": " Light Rain and Breezy",
+    "obs": "9 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 61,
-     "text": "Rain, with thunderstorms also possible after 2am. Some of the storms could produce heavy rainfall.  Low around 61. Northeast wind 15 to 20 mph, with gusts as high as 40 mph.  Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible. "
+     "text": "Rain, with thunderstorms also possible after 2am. Some of the storms could produce heavy rainfall.  Low around 61. Northeast wind around 20 mph, with gusts as high as 40 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -128,15 +128,15 @@
   "weather": {
    "now": {
     "temp": 60,
-    "cond": "A Few Clouds",
-    "obs": "9 Oct 20:54 pm EDT"
+    "cond": "Partly Cloudy",
+    "obs": "9 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 45,
-     "text": "Mostly clear, with a low around 45. West wind 7 to 9 mph. "
+     "text": "Mostly clear, with a low around 45. West wind around 7 mph. "
     },
     {
      "name": "Saturday",
@@ -182,7 +182,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -231,9 +231,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "Mostly Cloudy",
-    "obs": "9 Oct 19:53 pm CDT"
+    "temp": 67,
+    "cond": "Partly Cloudy",
+    "obs": "9 Oct 22:53 pm CDT"
    },
    "periods": [
     {
@@ -286,7 +286,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -296,19 +296,40 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "DOJ sues Denver over law enforcement mask ban",
+    "b": "The Trump Justice Department sued Denver over its mask ban for law enforcement, calling the law unconstitutional. Mayor Mike Johnston says he \"will fight to the very end.\"",
+    "date": "2026-10-09",
+    "publisher": "Denverite",
+    "title": "Trump’s DOJ sues Denver over its mask ban for law enforcement",
+    "url": "https://denverite.com/2026/10/09/trump-department-of-justice-sues-denver-mask-ban/",
+    "published": "2026-10-09T19:20:33Z",
+    "gathered": "2026-10-10T04:09:19Z"
+   },
+   {
+    "h": "Rupert the one-horned rhino dies at Denver Zoo",
+    "b": "Rupert, the Denver Zoo's 12-year-old greater one-horned rhino, has died. His body will go to the Denver Museum of Nature and Science.",
+    "date": "2026-10-09",
+    "publisher": "Denverite",
+    "title": "Rupert, a one-horned rhino, has died at the Denver Zoo",
+    "url": "https://denverite.com/2026/10/09/rupert-a-one-horned-rhino-has-died-at-the-denver-zoo/",
+    "published": "2026-10-09T21:15:48Z",
+    "gathered": "2026-10-10T04:09:19Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 79,
+    "temp": 71,
     "cond": "A Few Clouds",
-    "obs": "9 Oct 17:58 pm MDT"
+    "obs": "9 Oct 20:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. West wind around 7 mph becoming south southwest after midnight. "
+     "text": "Mostly clear, with a low around 56. South southwest wind around 7 mph. "
     },
     {
      "name": "Saturday",
@@ -354,7 +375,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -417,7 +438,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 67,
-     "text": "Increasing clouds, with a low around 67. West southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Increasing clouds, with a low around 67. South southwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Saturday",
@@ -463,7 +484,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -570,16 +591,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "9 Oct 20:51 pm EDT"
+    "obs": "9 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly cloudy, with a low around 54. West wind around 6 mph. "
+     "text": "Mostly cloudy, with a low around 54. Northwest wind around 5 mph. "
     },
     {
      "name": "Saturday",
@@ -625,7 +646,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -672,7 +693,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "goodnews": []
  },
  {
@@ -734,7 +755,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "A 20 percent chance of rain before 7pm.  Mostly cloudy, with a low around 48. Light and variable wind becoming south southeast around 6 mph in the evening. "
+     "text": "Mostly cloudy, with a low around 48. South southeast wind around 6 mph. "
     },
     {
      "name": "Saturday",
@@ -780,7 +801,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T04:09:00Z",
+  "updatedAt": "2026-10-10T07:09:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
