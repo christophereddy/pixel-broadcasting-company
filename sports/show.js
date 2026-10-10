@@ -171,16 +171,6 @@ function deskRundown(){
   pan.hidden = !SHOW.on;
   if (!SHOW.on) return;
   const ol = $('deskrd'); ol.replaceChildren();
-  // a viewer who chose the desk gets the live game as a row at the top, to go to whenever they like (as LIVE NOW does)
-  const lg = SHOW.stay && window.PBC_LIVE && PBC_LIVE.current;
-  if (lg) {
-    const li = document.createElement('li'); li.className = 'live';
-    const tm = document.createElement('span'); tm.className = 'tm'; tm.textContent = lg.league + ' · LIVE NOW';
-    const go = document.createElement('button'); go.type = 'button'; go.className = 'pk'; go.textContent = lg.title;
-    go.setAttribute('aria-label', 'Watch ' + lg.title + ', live now');
-    go.onclick = () => $('livenow').click();
-    li.append(tm, go); ol.appendChild(li);
-  }
   const order = deskOrder(), ts = deskTimes(order);
   for (const [k, sg] of order.entries()) {
     const on = SHOW.seg === sg;
@@ -197,6 +187,17 @@ function deskRundown(){
     }
     li.append(tm, nm);
     ol.appendChild(li);
+  }
+  // a viewer who chose the desk gets the live game as a row under the one on air, in the same style as every other row
+  // (the time line says "On now", marked LIVE the way the on-air row is marked NOW), to go to whenever they like
+  const lg = SHOW.stay && window.PBC_LIVE && PBC_LIVE.current;
+  if (lg) {
+    const li = document.createElement('li'); li.className = 'live';
+    const tm = document.createElement('span'); tm.className = 'tm'; tm.textContent = 'On now';
+    const go = document.createElement('button'); go.type = 'button'; go.className = 'pk'; go.textContent = `${lg.league}: ${lg.title}`;
+    go.setAttribute('aria-label', 'Watch ' + lg.title + ', live now');
+    go.onclick = () => $('livenow').click();
+    li.append(tm, go); ol.insertBefore(li, ol.children[1] || null);
   }
 }
 
