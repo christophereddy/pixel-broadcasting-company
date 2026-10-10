@@ -25,6 +25,7 @@ const SHOW = {
   guestRole: 'B',   // which of the sport's two commentators is the guest this time round
   loop: 0, brk: false, everOn: false, resume: false, timer: null, ad: null, adEnd: 0,
   head: '', note: '', title: '', rows: [],
+  match: null,      // a game shown as a matchup card on the big screen (a feature's setup, a quick hit), else null
   line: null,       // the line being read: {who: booth seat 'A' or 'B', text, at}, for the lower third
   seg: null,        // the rundown segment on air: a sport key, or 'break'
   pick: null,       // a segment the viewer picked in the rundown, played next
@@ -260,7 +261,7 @@ async function deskSport(sp, tok){
 // a feature: set up at the desk, the highlights, then back to the desk for the result, the records and the stats
 async function deskFeature(sp, ev, k, tok){
   const name = SPORTS[sp].name, t = teamsOf(ev);
-  deskPanel(name + ' FEATURE', deskIntroRows(ev), SPORTS[sp].src, `${fullName(t.away)} at ${fullName(t.home)}`);
+  deskPanel(name + ' FEATURE', [], SPORTS[sp].src, `${fullName(t.away)} at ${fullName(t.home)}`); SHOW.match = ev;
   await deskSay('H', deskIntro(ev, k), tok);
   if (!deskGo(tok)) return;
   await deskSay('G', deskStory(ev, sp), tok);
@@ -292,7 +293,7 @@ async function deskFeature(sp, ev, k, tok){
 // a quick hit: where and when, the play that won it, and the final. Bo and the guest take turns.
 async function deskQuick(sp, ev, k, list, tok){
   const name = SPORTS[sp].name, t = teamsOf(ev), a = k % 2 ? 'G' : 'H', b = k % 2 ? 'H' : 'G';
-  deskPanel('AROUND THE ' + name, list.map((x, i) => deskMatchRow(x, i === k ? 'NOW' : '')), deskWhere(ev) || SPORTS[sp].src, `${fullName(t.away)} at ${fullName(t.home)}`);
+  deskPanel('AROUND THE ' + name, [], SPORTS[sp].src, `${fullName(t.away)} at ${fullName(t.home)}`); SHOW.match = ev;
   await deskSay(a, deskQuickIntro(ev), tok);
   if (!deskGo(tok)) return;
   SHOW.driving = true;
@@ -379,14 +380,6 @@ function deskStory(ev, sp){
     : s.close ? (isMLB() ? 'It came down to the late innings.' : fam === 'football' ? 'This one came down to the last few drives.' : 'This one came down to the final minutes.')
     : s.rout ? 'One side took control of this one early.' : 'There were a few big moments in this one, so let us get right to them.';
   return set + tease;
-}
-// the screen while a feature is set up: the two teams, when and where, and no score
-function deskIntroRows(ev){
-  const t = teamsOf(ev), rows = [{c: t.away.color, l: fullName(t.away), r: 'AWAY'}, {c: t.home.color, l: fullName(t.home), r: 'HOME'},
-    {l: 'PLAYED', r: deskDayShort(ev.date)}];
-  const v = ev.competitions[0].venue?.fullName; if (v) rows.push({l: 'AT', r: v});
-  const note = deskNote(ev); if (note) rows.push({l: note});
-  return rows;
 }
 // a game on the list without its score: the matchup and the day, or a tag such as FEATURE or NOW
 function deskMatchRow(ev, tag){
@@ -586,7 +579,7 @@ const {pixText: dPix, pixWidth: dWide, qrMatrix: dQR} = PBC_ADS;
 const deskTxt = s => String(s == null ? '' : s).toUpperCase().replace(/@/g, 'AT ').replace(/[:/]/g, '.').replace(/[^A-Z0-9 &.-]/g, '');
 // head: the screen's heading (and the lower third's red category); title: the lower third's headline, the note when left out
 function deskPanel(head, rows, note, title){
-  SHOW.head = head; SHOW.rows = rows || []; SHOW.note = note || ''; SHOW.title = title || ''; SHOW.scene = 'panel';
+  SHOW.head = head; SHOW.rows = rows || []; SHOW.note = note || ''; SHOW.title = title || ''; SHOW.scene = 'panel'; SHOW.match = null;
   SHOW.at = performance.now();
 }
 // a score, an upcoming game or a stat line, as one row of the screen
@@ -729,7 +722,7 @@ function deskAnchors(g, now){
    then (about once in twenty minutes) he trots over to the end of the desk for a pat from whoever is in the guest's seat,
    then goes back to bed. Both are set by the clock, not a dice roll, so every viewer sees him do the same thing, and a
    visit that falls during a highlight is skipped: he is only ever up while the studio is on screen. */
-const DESK_DOG = {bedX: 232, floor: 194, deskX: 207, nap: 180000, visit: 10 * 60000};   // a visit in about half of each ten minutes
+const DESK_DOG = {bedX: 232, floor: 194, deskX: 198, nap: 180000, visit: 10 * 60000};   // a visit in about half of each ten minutes
 const DESK_VISIT = {wake: 1200, go: 4200, pet: 10200, back: 13200, done: 14400};   // ms into a visit
 const deskHash = n => { let h = (n | 0) ^ 0x9e3779b9; h = Math.imul(h ^ (h >>> 16), 0x45d9f3b); h = Math.imul(h ^ (h >>> 16), 0x45d9f3b); return (h ^ (h >>> 16)) >>> 0; };
 // what he is doing at wall-clock time t: asleep, a stretch in his bed, or a visit to the desk (with the ms into it)
@@ -743,13 +736,11 @@ function deskDogAt(t){
 function deskBaldur(g, now){
   const B = window.PBC_BALDUR; if (!B) return;
   const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), w, h); };
-  const {bedX, floor, deskX} = DESK_DOG, bedY = floor - B.BED.length + 1, top = floor - 25;
+  const {bedX, floor, deskX} = DESK_DOG, bedY = floor - B.BED.length + 1;
   let st = deskDogAt(Date.now());
   // a visit only plays if the studio was on screen when it began; one that started during a highlight is skipped
   if (st.mode === 'visit') { if (!deskBaldur.seen || deskBaldur.seen < st.from - 500) st = {mode: 'sleep'}; }
   if (st.mode !== 'visit') deskBaldur.seen = Date.now();
-  const bed = () => { R(B.DOG.m, bedX + 3, bedY + 7, 50, 3);
-    for (let r = 9; r < B.BED.length; r++) for (let c = 0; c < B.BED[r].length; c++) { const ch = B.BED[r][c]; if (ch !== '.') R(B.DOG[/[mnq]/.test(ch) ? ch : 'n'], bedX + c, bedY + r, 1, 1); } };
   if (st.mode === 'sleep') {
     const br = Math.floor(now / 1400) % 2;                       // breathing: his back rises a pixel
     B.sprite(R, B.BED, bedX, bedY, false, 9, B.BED.length);
@@ -758,24 +749,32 @@ function deskBaldur(g, now){
     if (Math.floor(now / 1800) % 3 === 0) dPix(g, 'Z', bedX + 50, bedY - 8 - (Math.floor(now / 600) % 3), false, '#9fb2ff');
     return;
   }
-  bed();
+  R(B.DOG.m, bedX + 3, bedY + 7, 50, 3);                          // the empty bed
+  for (let r = 9; r < B.BED.length; r++) for (let c = 0; c < B.BED[r].length; c++) { const ch = B.BED[r][c]; if (ch !== '.') R(B.DOG[/[mnq]/.test(ch) ? ch : 'n'], bedX + c, bedY + r, 1, 1); }
+  // he is drawn at scale s with his feet on the floor: 1 by his bed against the back wall, growing to 2 as he walks
+  // forward to the desk, where he stands beside the anchors at his real size (a big dog, about 70 pounds)
+  const dog = (x, s, flip, mode) => {
+    const X = x, Y = floor - 25 * s;
+    B.dog((c, px, py, w, h) => { const x0 = Math.round(X + px * s), y0 = Math.round(Y + py * s);
+      g.fillStyle = c; g.fillRect(x0, y0, Math.round(X + (px + w) * s) - x0, Math.round(Y + (py + h) * s) - y0); }, 0, 0, flip, mode, now);
+  };
   const home = bedX + 12;
-  if (st.mode === 'stretch') { B.dog(R, home, top, st.el > 2000, 'stand', now); return; }   // up, a look round, and back down
+  if (st.mode === 'stretch') { dog(home, 1, st.el > 2000, 'stand'); return; }   // up, a look round, and back down
   const V = DESK_VISIT, e = st.el;
-  if (e < V.wake) { B.dog(R, home, top, true, 'stand', now); return; }
-  if (e < V.go) { const k = (e - V.wake) / (V.go - V.wake); B.dog(R, home + (deskX - home) * k, top, true, 'walk', now); return; }
-  if (e < V.pet) { B.dog(R, deskX, top, true, 'stand', now); deskPat(g, R, now, e - V.go); return; }
-  if (e < V.back) { const k = (e - V.pet) / (V.back - V.pet); B.dog(R, deskX + (home - deskX) * k, top, false, 'walk', now); return; }
-  B.dog(R, home, top, false, 'stand', now);
+  if (e < V.wake) { dog(home, 1, true, 'stand'); return; }
+  if (e < V.go) { const k = (e - V.wake) / (V.go - V.wake); dog(home + (deskX - home) * k, 1 + k, true, 'walk'); return; }
+  if (e < V.pet) { dog(deskX, 2, true, 'stand'); deskPat(g, R, now, e - V.go); return; }
+  if (e < V.back) { const k = (e - V.pet) / (V.back - V.pet); dog(deskX + (home - deskX) * k, 2 - k, false, 'walk'); return; }
+  dog(home, 1, false, 'stand');
 }
 // the guest leans over the end of the desk and pats his head, and a little heart floats up
 function deskPat(g, R, now, el){
-  const c = deskLook(crew().B), x0 = DESK_SEATS[1] + 42, y0 = DESK_TOP - 21;     // the guest's right shoulder
-  for (let k = 0; k < 11; k++) R(c.coat, x0 + k * 3, y0 + k * 3, 5, 5);          // the arm, reaching down past the desk
-  const pat = Math.floor(now / 260) % 2;
-  R(c.skin, x0 + 32, y0 + 32 + pat, 4, 4);
-  const rise = Math.floor(el / 120) % 18, hx = DESK_DOG.deskX + 6, hy = DESK_DOG.floor - 32 - rise;
-  if (el > 1200) [[1, 0, 1], [3, 0, 1], [0, 1, 5], [1, 2, 3], [2, 3, 1]].forEach(([dx, dy, w]) => R('#d8707e', hx + dx, hy + dy, w, 1));
+  const c = deskLook(crew().B), x0 = DESK_SEATS[1] + 39, y0 = DESK_TOP - 21;     // the guest's right shoulder
+  const hx = DESK_DOG.deskX + 12, hy = DESK_DOG.floor - 45;                       // his head, at twice the size
+  for (let k = 0; k <= 10; k++) R(c.coat, x0 + (hx - x0) * k / 10, y0 + (hy - 4 - y0) * k / 10, 5, 5);   // the arm, over the end of the desk
+  R(c.skin, hx, hy - 3 + Math.floor(now / 260) % 2 * 2, 6, 5);
+  const rise = Math.floor(el / 120) % 18, ex = DESK_DOG.deskX + 30, ey = hy - 10 - rise;
+  if (el > 1200) [[1, 0, 1], [3, 0, 1], [0, 1, 5], [1, 2, 3], [2, 3, 1]].forEach(([dx, dy, w]) => R('#d8707e', ex + dx, ey + dy, w, 1));
 }
 // the on-air graphics over the studio (sports/index.html #studio), and the booth and scoreboard windows put away.
 // Called every frame; the page only changes when something on it does.
@@ -801,6 +800,7 @@ const DESK_CALM = matchMedia('(prefers-reduced-motion: reduce)');
 function deskLine(who, text){ SHOW.line = {who, text, at: performance.now()}; }
 function deskDrawPanel(g, b, now){
   const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
+  if (SHOW.match) return deskDrawMatch(g, b, SHOW.match);
   const w = b.x1 - b.x0, h = b.y1 - b.y0;
   R('#05060d', b.x0 - 2, b.y0 - 2, w + 4, h + 4);
   R('#101743', b.x0, b.y0, w, h);
@@ -825,6 +825,40 @@ function deskDrawPanel(g, b, now){
   }
   const n = deskTxt(SHOW.note || '');
   if (n) dPix(g, n, b.x0 + 6, b.y1 - 8, false, '#6f78a8');
+}
+// the matchup card: both teams' logos (the same 32-pixel logos as the game card in the side column), their names and
+// records, AT between them, and when and where along the bottom. No score: this is the setup, before the highlights.
+const DESK_LOGOS = new Map();          // sport:team id -> its 32 x 32 logo canvas, drawn by drawLogo in index.html
+function deskLogo(t){
+  const k = S.sport + ':' + t.id;
+  if (!DESK_LOGOS.has(k)) { const cv = document.createElement('canvas'); cv.width = cv.height = 32; DESK_LOGOS.set(k, cv); drawLogo(cv, t); }
+  return DESK_LOGOS.get(k);
+}
+function deskDrawMatch(g, b, ev){
+  const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(x, y, w, h); };
+  const w = b.x1 - b.x0, h = b.y1 - b.y0, t = teamsOf(ev), cs = ev.competitions[0].competitors, half = w >> 1;
+  R('#05060d', b.x0 - 2, b.y0 - 2, w + 4, h + 4);
+  R('#101743', b.x0, b.y0, w, h);
+  R('#1f2a66', b.x0, b.y0, w, 13);
+  dPix(g, deskTxt(SHOW.head), b.x0 + 5, b.y0 + 4, true, '#f2b632');
+  const rec = side => { const c = cs.find(x => x.homeAway === side); return c?.records?.[0]?.summary || c?.record?.[0]?.summary || ''; };
+  [['away', t.away, 0], ['home', t.home, 1]].forEach(([side, tm, i]) => {
+    const cx = b.x0 + half * i + (half >> 1), top = b.y0 + 20;
+    R(i ? '#141c4e' : '#121848', b.x0 + 3 + half * i, top - 3, half - 6, h - 37);
+    R(tm.color || '#334477', b.x0 + 3 + half * i, top - 3, half - 6, 3);                    // the team's colour along the top
+    g.imageSmoothingEnabled = false; g.drawImage(deskLogo(tm), cx - 24, top + 2, 48, 48);
+    const ab = deskTxt(tm.abbr), aw = dWide(ab, true) * 2;
+    dPix(g, ab, cx - (aw >> 1), top + 55, true, '#f2f0e8', 2);
+    const nk = deskTxt(tm.nick).slice(0, 16), nw = dWide(nk, true);
+    dPix(g, nk, cx - (nw >> 1), top + 72, true, '#9be15d');
+    const r = deskTxt([rec(side), side.toUpperCase()].filter(Boolean).join('  ')), rw = dWide(r, false);
+    dPix(g, r, cx - (rw >> 1), top + 82, false, '#9ba3cc');
+  });
+  const at = 'AT', atw = dWide(at, true) * 2;
+  R('#101743', b.x0 + half - atw / 2 - 3, b.y0 + 44, atw + 6, 18);
+  dPix(g, at, b.x0 + half - (atw >> 1), b.y0 + 47, true, '#f2b632', 2);
+  const foot = deskTxt([deskDayShort(ev.date), ev.competitions[0].venue?.fullName, deskNote(ev)].filter(Boolean).join('  -  '));
+  dPix(g, foot, b.x0 + ((w - dWide(foot, false)) >> 1), b.y1 - 9, false, '#c9c6b4');
 }
 // the break: the studio's big screen with the ad on it, a QR code where the ad has a website, and the clock back to the desk
 function deskDrawAd(g, b, now){
