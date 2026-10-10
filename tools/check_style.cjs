@@ -5,6 +5,8 @@
 //   - a font name or a color (#hex, rgb(), hsl(), a color word) is written anywhere in CSS except the :root block
 //     of shared/pbc.css. That covers .css files, <style> blocks, style="" attributes and CSS written inside JS.
 //     Use the shared names instead: var(--f-display), var(--f-label), var(--f-body), var(--gold), var(--panel)...
+//   - a font comes from anywhere but shared/pbc.css: an @font-face outside it, an SVG font-family="" attribute, or a
+//     canvas font (ctx.font = ...) other than Press Start 2P for sports field markings. Canvas lettering is pixText().
 //   - a page gives a shared font or color a second name (like --ink:var(--text)); one name per thing, everywhere
 //   - a page's CSS restyles a shared part (a .pbc-* class, the rundown, the LIVE NOW chip's insides)
 //   - a page is missing the shared head (the one Google Fonts link, shared/pbc.css, shared/pbc.js) or the shared
@@ -57,6 +59,7 @@ function checkCss(file, text, css, base, { isSource = false, selectors = true } 
     if (b.at >= skip[0] && b.at < skip[1]) continue;
     const sel = b.sel.replace(/\/\*[\s\S]*?\*\//g, '').trim();
     const ln = lineAt(text, base + b.at);
+    if (/^@font-face$/i.test(sel)) { if (!isSource) say(file, ln, `has its own @font-face. Fonts are defined only in ${SOURCE}.`); continue; }
     if (sel && !isSource && !file.startsWith('shared/')) {
       for (const one of sel.split(',').map(s => s.trim()).filter(Boolean)) {
         if (/^@/.test(one)) continue;
@@ -87,8 +90,15 @@ function checkLettering(file, text) {
   }
 }
 
+// Fonts set outside CSS: SVG lettering and canvas text. One set of fonts, so every number and word looks the same.
+function checkFonts(file, text) {
+  for (const m of text.matchAll(/<(svg|text|tspan|g)\b[^>]*\sfont-family="([^"]*)"/g)) say(file, lineAt(text, m.index), `SVG font-family="${m[2]}". Use style="font-family:var(--f-label)" (or --f-display, --f-body).`);
+  for (const m of text.matchAll(/\.font\s*=\s*(["'`])((?:(?!\1).)*)\1/g)) if (!/Press Start 2P/.test(m[2])) say(file, lineAt(text, m.index), `canvas font "${m[2]}". Letter a canvas with PBC_ADS.pixText() from shared/ads.js (Press Start 2P is only for sports field markings).`);
+}
+
 function checkHtml(file, text) {
   checkLettering(file, text);
+  checkFonts(file, text);
   for (const m of text.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)) checkCss(file, text, m[1], m.index + m[0].indexOf('>') + 1);
   for (const m of text.matchAll(/\sstyle="([^"]*)"/g)) checkCss(file, text, m[1], m.index, { selectors: false });
   if (/http-equiv="refresh"/i.test(text)) return; // a redirect, never seen
@@ -110,6 +120,7 @@ function checkHtml(file, text) {
 // CSS written inside JS strings ("color:#fff;..."), and inline styles set from JS (el.style.color = "#fff")
 function checkJs(file, text) {
   checkLettering(file, text);
+  checkFonts(file, text);
   const code = text.replace(/\/\*[\s\S]*?\*\//g, m => m.replace(/[^\n]/g, ' ')).replace(/(^|[^:\\])\/\/[^\n]*/g, (m, a) => a + ' '.repeat(m.length - a.length));
   for (const m of code.matchAll(/(["'`])((?:\\.|(?!\1)[^\\\n])*)\1/g)) {
     const s = m[2];
