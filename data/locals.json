@@ -64,17 +64,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": " Light Rain",
-    "obs": "10 Oct 13:52 pm EDT"
+    "temp": 67,
+    "cond": "Overcast",
+    "obs": "10 Oct 14:52 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 74,
-     "text": "Showers likely, mainly after 4pm.  Cloudy, with a high near 74. Windy, with an east wind 20 to 25 mph, with gusts as high as 40 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -104,6 +98,12 @@
      "kind": "low",
      "temp": 61,
      "text": "Clear, with a low around 61."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 86,
+     "text": "Sunny, with a high near 86."
     }
    ]
   },
@@ -119,7 +119,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -151,15 +151,9 @@
    "now": {
     "temp": 61,
     "cond": "Mostly Cloudy",
-    "obs": "10 Oct 13:54 pm EDT"
+    "obs": "10 Oct 14:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. Northwest wind 5 to 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -182,13 +176,19 @@
      "name": "Columbus Day",
      "kind": "high",
      "temp": 65,
-     "text": "A slight chance of showers before 10am.  Mostly cloudy, with a high near 65. North wind 7 to 9 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of showers before 10am.  Cloudy, then gradually becoming mostly sunny, with a high near 65. North wind 7 to 9 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 53,
      "text": "Partly cloudy, with a low around 53. Light northwest wind. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 63,
+     "text": "A chance of showers, mainly after 1pm.  Mostly cloudy, with a high near 63. East wind 6 to 11 mph.  Chance of precipitation is 50%."
     }
    ]
   },
@@ -204,7 +204,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -288,14 +288,14 @@
    "now": {
     "temp": 79,
     "cond": "Mostly Cloudy",
-    "obs": "10 Oct 12:53 pm CDT"
+    "obs": "10 Oct 13:53 pm CDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
      "temp": 76,
-     "text": "Partly sunny, with a high near 76. South wind around 15 mph, with gusts as high as 20 mph. "
+     "text": "Partly sunny, with a high near 76. South southeast wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -341,7 +341,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -383,38 +383,38 @@
     {
      "name": "This Afternoon",
      "kind": "high",
-     "temp": 85,
-     "text": "Mostly sunny, with a high near 85. South wind 5 to 7 mph becoming west. "
+     "temp": 84,
+     "text": "A 20 percent chance of showers after 3pm.  Partly sunny, with a high near 84. West wind around 7 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Increasing clouds, with a low around 59. West wind around 6 mph becoming south after midnight. "
+     "text": "Mostly cloudy, with a low around 59. West wind around 6 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 83,
-     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 83. Light south wind increasing to 5 to 9 mph in the afternoon. Winds could gust as high as 21 mph. "
+     "text": "Partly sunny, with a high near 83. Light south wind increasing to 5 to 9 mph in the afternoon. Winds could gust as high as 21 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly clear, with a low around 57. West wind 5 to 9 mph becoming south southeast in the evening. Winds could gust as high as 20 mph. "
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 57. South wind 8 to 10 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Columbus Day",
      "kind": "high",
-     "temp": 82,
-     "text": "Sunny, with a high near 82. Light and variable wind becoming east northeast 5 to 10 mph in the morning. Winds could gust as high as 20 mph. "
+     "temp": 81,
+     "text": "Sunny, with a high near 81. South southwest wind 7 to 9 mph becoming east southeast in the afternoon. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52."
+     "temp": 53,
+     "text": "Mostly clear, with a low around 53."
     }
    ]
   },
@@ -430,7 +430,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -497,7 +497,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 82,
      "text": "A 20 percent chance of showers.  Cloudy, with a high near 82. West southwest wind 5 to 10 mph. "
@@ -546,7 +546,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -663,17 +663,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 68,
     "cond": "Fair",
-    "obs": "10 Oct 13:51 pm EDT"
+    "obs": "10 Oct 14:51 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 68,
-     "text": "Partly sunny, with a high near 68. Southeast wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -702,7 +696,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Partly cloudy, with a low around 61."
+     "text": "Partly cloudy, with a low around 61. Northwest wind around 7 mph. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 71,
+     "text": "A 30 percent chance of showers after 2pm.  Mostly sunny, with a high near 71."
     }
    ]
   },
@@ -718,7 +718,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -783,7 +783,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "goodnews": []
  },
  {
@@ -826,10 +826,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly sunny, with a high near 58. Calm wind becoming north northwest 5 to 7 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 58. Calm wind becoming north northwest 5 to 7 mph. "
     },
     {
      "name": "Tonight",
@@ -875,7 +875,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T19:08:00Z",
+  "updatedAt": "2026-10-10T22:09:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

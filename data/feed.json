@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T19:08:00Z",
+ "updatedAt": "2026-10-10T22:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,8 +7,8 @@
  },
  "world": [
   {
-   "h": "Saudis confirm another attack on Riyadh airport",
-   "b": "Saudi authorities confirmed another attack on Riyadh's airport, according to Al Jazeera's live coverage of the Iran war.",
+   "h": "Attack on Riyadh airport injures people, shuts it",
+   "b": "Saudi authorities say an attack on Riyadh's airport caused injuries and forced its closure, according to Al Jazeera's live coverage of the Iran war.",
    "date": "2026-10-10",
    "publisher": "Al Jazeera",
    "title": "Attack on Riyadh airport causes injuries, forces closure: Saudi authorities",
@@ -530,17 +530,11 @@
  ],
  "weather": {
   "now": {
-   "temp": 67,
+   "temp": 68,
    "cond": "Fair",
-   "obs": "10 Oct 13:51 pm EDT"
+   "obs": "10 Oct 14:51 pm EDT"
   },
   "periods": [
-   {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 68,
-    "text": "Partly sunny, with a high near 68. Southeast wind around 6 mph. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
@@ -569,7 +563,13 @@
     "name": "Monday Night",
     "kind": "low",
     "temp": 61,
-    "text": "Partly cloudy, with a low around 61."
+    "text": "Partly cloudy, with a low around 61. Northwest wind around 7 mph. "
+   },
+   {
+    "name": "Tuesday",
+    "kind": "high",
+    "temp": 71,
+    "text": "A 30 percent chance of showers after 2pm.  Mostly sunny, with a high near 71."
    }
   ]
  },
