@@ -1,7 +1,8 @@
 /* Pixel Broadcasting Company: the Sports Desk.
-   The channel's entry point. Bo Kowalski hosts a loop that works its way through every sport: the recent finals,
-   highlights cut from the real play-by-play, the team stats, then the next sport, and a commercial break at the end
-   of the loop. A live game always wins: when one is on, the desk hands the broadcast straight over to it.
+   The channel's entry point. Bo Kowalski hosts a loop that works its way through every sport: every team's latest
+   final, the best two or three as features (set up at the desk, highlights cut from the real play-by-play, then the
+   result, the records and the team stats) and the rest as quick hits (the play that decided it, and the final), then
+   the next sport, and a commercial break at the end of the loop. Baldur, the kitchen dog, naps in the studio. A live game always wins: when one is on, the desk hands the broadcast straight over to it.
 
    Everything the desk says comes from the data already on the page: scores and stats from the game feeds, highlight
    clips from the replay the sport's own code builds. Bo's and the guests' linking lines are written here, in this
@@ -41,9 +42,9 @@ function deskCrew(){
   const guest = (CAST[S.sport] || CAST.nfl)[SHOW.guestRole] || CAST.nfl.B;
   return {A: DESK_BO, B: SHOW.brk ? DESK_DOT : guest};
 }
-// which booth seat a line comes from: Bo hosts from the left, the guest (or Dot) answers from the right.
+// which booth seat a line comes from: Bo ('H') hosts from the left, the guest ('G') or Dot ('D') answers from the right.
 // A play-by-play line ('A') is the guest reading the play; the colour line ('B') is left out, so clips stay tight.
-const deskSlot = who => who === 'H' ? 'A' : who === 'D' ? 'B' : who === 'A' ? 'B' : null;
+const deskSlot = who => who === 'H' ? 'A' : who === 'D' || who === 'G' || who === 'A' ? 'B' : null;
 function deskVoice(who){
   if (who === 'H') return {v: VOICES.desk?.H || null, st: [0.95, 1.06]};
   if (who === 'D') return {v: VOICES.desk?.D || null, st: [1.12, 1.04]};
@@ -119,7 +120,7 @@ function deskOutro(sp){
    depends on the games and the voices, so it is the length that segment last ran on this device (until it has run
    once, a typical length), and the times move along if the segment on air runs long. */
 const DESK_EST = {break: 36000, f1: 150000};            // typical lengths before a segment has run here
-const DESK_EST_SPORT = 180000;
+const DESK_EST_SPORT = 600000;                         // a sport works through every team's latest game
 let DESK_LENS = {};
 try { DESK_LENS = JSON.parse(localStorage.getItem('pbc-desk-lens') || '{}') || {}; } catch (e) {}
 function deskLenSave(sg, ms){
@@ -182,7 +183,12 @@ function deskRundown(){
   }
 }
 
-/* ---- one sport's slot ---- */
+/* ---- one sport's slot ----
+   Every team's latest final gets on air, the way a real desk works through a slate. The best two or three games are
+   features: Bo and the guest set the game up at the desk (who, when, where, what was on the line), the highlights run,
+   and they come back for the result, the records and the team stats. Every other game is a quick hit: where and when,
+   the play that won it, and the final. Anything past that is read off the board at the end. */
+const DESK_QUICK_MAX = 6;                          // quick hits with a highlight; the rest are read off the board
 async function deskSport(sp, tok){
   const name = SPORTS[sp].name;
   SHOW.guestRole = SHOW.loop % 2 ? 'A' : 'B';
@@ -214,13 +220,50 @@ async function deskSport(sp, tok){
     return;
   }
   const guest = (CAST[sp] || CAST.nfl)[SHOW.guestRole];
-  deskPanel(name + ' SCOREBOARD', fin.slice(0, 5).map(ev => deskRow(ev, 'fin')), 'Scores from ' + SPORTS[sp].src + '.', sp === 'f1' ? '' : deskResult(fin[0]));
-  await deskSay('H', `${SHOW.loop ? 'Still with you at' : 'Welcome to'} the PBC sports desk. I am Bo Kowalski, and ${deskName(guest.name)} is alongside me for ${deskLg(sp)}.`, tok);
-  if (!deskGo(tok)) return;
-  if (sp === 'f1') return deskF1(sp, fin, tok);
+  const hello = `${SHOW.loop ? 'Still with you at' : 'Welcome to'} the PBC sports desk. I am Bo Kowalski, and ${deskName(guest.name)} is alongside me for ${deskLg(sp)}.`;
+  if (sp === 'f1') {
+    deskPanel(name + ' SCOREBOARD', fin.slice(0, 5).map(ev => deskRow(ev, 'fin')), 'Scores from ' + SPORTS[sp].src + '.');
+    await deskSay('H', hello, tok);
+    if (!deskGo(tok)) return;
+    return deskF1(sp, fin, tok);
+  }
 
-  const ev = fin[0];
-  await deskSay(SHOW.guestRole, deskResult(ev), tok);
+  const slate = deskSlate(); if (!slate.length) slate.push(fin[0]);
+  const feats = deskFeatures(slate);
+  const others = slate.filter(ev => !feats.includes(ev)), quick = others.slice(0, DESK_QUICK_MAX), board = others.slice(DESK_QUICK_MAX);
+  // the open: what is coming up, with no scores on the screen yet
+  deskPanel(name + ' ON THE DESK', [...feats.map(ev => deskMatchRow(ev, 'FEATURE')), ...quick.slice(0, 6 - feats.length).map(ev => deskMatchRow(ev))],
+    `${slate.length} ${slate.length === 1 ? 'game' : 'games'} · ${SPORTS[sp].src}`, `${slate.length} ${name} ${slate.length === 1 ? 'game' : 'games'} to get through`);
+  await deskSay('H', hello + (slate.length > 1 ? ` We have ${deskCount(slate.length)} games to get through, starting with ${feats.length > 1 ? 'our featured games' : 'our featured game'}.` : ''), tok);
+  for (const [k, ev] of feats.entries()) {
+    if (!deskGo(tok)) return;
+    await deskFeature(sp, ev, k, tok);
+  }
+  if (!deskGo(tok)) return;
+  if (quick.length) {
+    deskPanel('AROUND THE ' + name, quick.map(ev => deskMatchRow(ev)), SPORTS[sp].src, `Around ${deskLg(sp)}`);
+    await deskSay('H', `Around ${deskLg(sp)} now, with the play that decided each one.`, tok);
+    for (const [k, ev] of quick.entries()) {
+      if (!deskGo(tok)) return;
+      await deskQuick(sp, ev, k, quick, tok);
+    }
+  }
+  if (!deskGo(tok)) return;
+  if (board.length) {
+    deskPanel('MORE ' + name + ' FINALS', board.slice(0, 8).map(ev => deskRow(ev, 'fin')), 'Scores from ' + SPORTS[sp].src + '.', `More ${name} finals`);
+    await deskSay('G', 'And the rest of the scores. ' + board.slice(0, 6).map(deskScoreLine).join('. ') + '.', tok);
+    if (!deskGo(tok)) return;
+  }
+  await deskSay('H', deskOutro(sp), tok);
+  await deskHold(1200, tok);
+}
+// a feature: set up at the desk, the highlights, then back to the desk for the result, the records and the stats
+async function deskFeature(sp, ev, k, tok){
+  const name = SPORTS[sp].name, t = teamsOf(ev);
+  deskPanel(name + ' FEATURE', deskIntroRows(ev), SPORTS[sp].src, `${fullName(t.away)} at ${fullName(t.home)}`);
+  await deskSay('H', deskIntro(ev, k), tok);
+  if (!deskGo(tok)) return;
+  await deskSay('G', deskStory(ev, sp), tok);
   if (!deskGo(tok)) return;
   await deskSay('H', 'Let us look at how it happened.', tok);
   if (!deskGo(tok)) return;
@@ -228,7 +271,7 @@ async function deskSport(sp, tok){
   try { await selectGame(String(ev.id), 'replay'); } finally { SHOW.driving = false; }
   if (!deskGo(tok)) return;
   deskTabs();
-  const clips = deskClips();
+  const clips = deskClips(ev);
   if (!clips.length) await deskSay('H', 'The play-by-play has no highlight to cut to, so here is the top of the game.', tok);
   for (const c of clips) {
     if (!deskGo(tok)) break;
@@ -237,13 +280,141 @@ async function deskSport(sp, tok){
     await deskClip(c, tok);
   }
   if (!deskGo(tok)) return;
+  deskPanel(name + ' FINAL', [deskRow(ev, 'fin')], deskWhere(ev) || SPORTS[sp].src, deskResult(ev));
+  await deskSay('G', (deskResult(ev) + ' ' + deskRecords(ev)).trim(), tok);
+  if (!deskGo(tok)) return;
   const rows = deskStatRows();
   deskPanel(name + ' TEAM STATS', rows, S.away && S.home ? `${S.away.abbr} at ${S.home.abbr} · ${SPORTS[sp].src}` : SPORTS[sp].src,
     S.away && S.home ? `${fullName(S.away)} at ${fullName(S.home)}, by the numbers` : '');
-  await deskSay(SHOW.guestRole, deskStatLine(rows), tok);
+  await deskSay('G', deskStatLine(rows), tok);
+  await deskHold(800, tok);
+}
+// a quick hit: where and when, the play that won it, and the final. Bo and the guest take turns.
+async function deskQuick(sp, ev, k, list, tok){
+  const name = SPORTS[sp].name, t = teamsOf(ev), a = k % 2 ? 'G' : 'H', b = k % 2 ? 'H' : 'G';
+  deskPanel('AROUND THE ' + name, list.map((x, i) => deskMatchRow(x, i === k ? 'NOW' : '')), deskWhere(ev) || SPORTS[sp].src, `${fullName(t.away)} at ${fullName(t.home)}`);
+  await deskSay(a, deskQuickIntro(ev), tok);
   if (!deskGo(tok)) return;
-  await deskSay('H', deskOutro(sp), tok);
-  await deskHold(1200, tok);
+  SHOW.driving = true;
+  try { await selectGame(String(ev.id), 'replay'); } finally { SHOW.driving = false; }
+  if (!deskGo(tok)) return;
+  deskTabs();
+  const [c] = deskClips(ev, true);
+  if (c) { SHOW.scene = null; await deskSay(a, c.intro, tok); await deskClip(c, tok); }
+  if (!deskGo(tok)) return;
+  deskPanel('AROUND THE ' + name, list.map((x, i) => i <= k ? deskRow(x, 'fin') : deskMatchRow(x)), deskWhere(ev) || SPORTS[sp].src, deskResult(ev));
+  await deskSay(b, deskResult(ev), tok);
+  await deskHold(500, tok);
+}
+
+/* ---- which games: every team's latest final, and the ones worth a feature ---- */
+const deskIds = ev => ev.competitions[0].competitors.map(c => String(c.team?.id ?? c.id));
+const deskRank = ev => Math.min(...ev.competitions[0].competitors.map(c => c.curatedRank?.current || 99));
+// finals from the last eight days, newest first, keeping a game while it is the latest for either of its teams.
+// College football is every FBS game, so there it is the games with a ranked team in them.
+function deskSlate(){
+  let fin = [...S.events.values()].filter(e => stateOf(e) === 'post' && Date.now() - new Date(e.date) < 8 * 864e5)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (S.sport === 'cfb') { const top = fin.filter(e => deskRank(e) <= 25); fin = top.length ? top : fin.slice(0, 8); }
+  const seen = new Set(), out = [];
+  for (const ev of fin) {
+    const ids = deskIds(ev);
+    if (ids.some(id => !seen.has(id))) out.push(ev);
+    ids.forEach(id => seen.add(id));
+  }
+  return out;
+}
+// the final's margin and whether it needed extra time, from the score and the status line
+function deskShape(ev){
+  const t = teamsOf(ev), m = Math.abs(Number(t.away.score) - Number(t.home.score));
+  const det = (ev.status || ev.competitions[0].status || {}).type?.shortDetail || '';
+  const fam = SPORTS[S.sport].family, ot = /OT|\/(1\d|[2-9]\d)\b/.test(det);
+  const close = fam === 'football' ? m <= 7 : isMLB() ? m <= 1 : m <= 5;
+  const rout = fam === 'football' ? m >= 21 : isMLB() ? m >= 6 : m >= 20;
+  return {m, ot, close: Number.isFinite(m) && close, rout: Number.isFinite(m) && rout};
+}
+const deskNote = ev => { const n = ev.competitions[0].notes?.[0]?.headline || ''; return /regular season/i.test(n) ? '' : n; };
+// two features, three on a big slate: overtime, close games, ranked teams and playoff games first
+function deskFeatures(slate){
+  const score = (ev, i) => { const s = deskShape(ev), r = deskRank(ev);
+    return (s.ot ? 3 : 0) + (s.close ? 2 : 0) - (s.rout ? 1 : 0) + (r <= 25 ? (26 - r) / 5 : 0) + (deskNote(ev) ? 3 : 0) + (i === 0 ? 1 : 0); };
+  const n = slate.length >= 10 ? 3 : 2;
+  return slate.map((ev, i) => ({ev, s: score(ev, i)})).sort((a, b) => b.s - a.s).slice(0, n).map(x => x.ev);
+}
+
+/* ---- the words around each game ---- */
+const DESK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// when it was played, the way a host says it: "earlier today", "last night", "on Sunday", "on October 2"
+function deskDay(date){
+  const d = new Date(date), now = new Date(), day = x => new Date(x.getFullYear(), x.getMonth(), x.getDate()).getTime();
+  const ago = Math.round((day(now) - day(d)) / 864e5);
+  if (ago <= 0) return 'earlier today';
+  if (ago === 1) return d.getHours() >= 17 ? 'last night' : 'yesterday';
+  if (ago < 7) return 'on ' + DESK_DAYS[d.getDay()];
+  return 'on ' + d.toLocaleDateString('en-US', {month: 'long', day: 'numeric'});
+}
+const deskDayShort = date => new Date(date).toLocaleDateString('en-US', {weekday: 'short', month: 'numeric', day: 'numeric'});
+// the ground and its town, as the feed gives them
+function deskWhere(ev){
+  const v = ev.competitions[0].venue || {}, city = v.address?.city;
+  return v.fullName ? v.fullName + (city && !v.fullName.includes(city) ? ' in ' + city : '') : city || '';
+}
+const deskCount = n => ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'][n] || String(n);
+const DESK_LEADS = ['Our first feature', 'Our next feature', 'And one more feature'];
+function deskIntro(ev, k){
+  const t = teamsOf(ev), where = deskWhere(ev), neutral = ev.competitions[0].neutralSite;
+  const who = neutral ? `the ${fullName(t.away)} and the ${fullName(t.home)} met` : `the ${fullName(t.away)} visited the ${fullName(t.home)}`;
+  return `${DESK_LEADS[k] || DESK_LEADS[1]}: ${who} ${deskDay(ev.date)}${where ? ', at ' + where : ''}.`;
+}
+// what was on the line and how it went, told without the score: a playoff note or the rankings, then the shape of it
+function deskStory(ev, sp){
+  const t = teamsOf(ev), s = deskShape(ev), note = deskNote(ev), cs = ev.competitions[0].competitors;
+  const rk = side => cs.find(c => c.homeAway === side)?.curatedRank?.current || 99, ra = rk('away'), rh = rk('home');
+  let set = '';
+  if (note) set = `${note.replace(/\.$/, '')}, so there was plenty on the line. `;
+  else if (ra <= 25 && rh <= 25) set = `A top 25 meeting: number ${ra} ${t.away.loc} against number ${rh} ${t.home.loc}. `;
+  else if (ra <= 25 || rh <= 25) { const r = Math.min(ra, rh), x = ra < rh ? t.away : t.home; set = `Number ${r} ${x.loc} ${x === t.away ? 'on the road' : 'at home'} here. `; }
+  const fam = SPORTS[sp].family;
+  const tease = s.ot ? (isMLB() ? 'Nine innings was not enough to settle this one.' : 'Regulation was not enough to settle this one.')
+    : s.close ? (isMLB() ? 'It came down to the late innings.' : fam === 'football' ? 'This one came down to the last few drives.' : 'This one came down to the final minutes.')
+    : s.rout ? 'One side took control of this one early.' : 'There were a few big moments in this one, so let us get right to them.';
+  return set + tease;
+}
+// the screen while a feature is set up: the two teams, when and where, and no score
+function deskIntroRows(ev){
+  const t = teamsOf(ev), rows = [{c: t.away.color, l: fullName(t.away), r: 'AWAY'}, {c: t.home.color, l: fullName(t.home), r: 'HOME'},
+    {l: 'PLAYED', r: deskDayShort(ev.date)}];
+  const v = ev.competitions[0].venue?.fullName; if (v) rows.push({l: 'AT', r: v});
+  const note = deskNote(ev); if (note) rows.push({l: note});
+  return rows;
+}
+// a game on the list without its score: the matchup and the day, or a tag such as FEATURE or NOW
+function deskMatchRow(ev, tag){
+  const t = teamsOf(ev);
+  return {c: tag === 'NOW' ? '#f2b632' : null, l: `${t.away.abbr} @ ${t.home.abbr}`, r: tag || deskDayShort(ev.date)};
+}
+function deskQuickIntro(ev){
+  const t = teamsOf(ev), v = ev.competitions[0].venue || {}, place = v.address?.city || v.fullName || '';
+  if (ev.competitions[0].neutralSite) return `The ${fullName(t.away)} and the ${fullName(t.home)} met ${deskDay(ev.date)}${place ? ' in ' + place : ''}.`;
+  const pre = v.address?.city ? 'In ' + v.address.city + ' ' : v.fullName ? 'At ' + v.fullName + ' ' : '';
+  const when = pre ? deskDay(ev.date) : deskDay(ev.date).replace(/^./, x => x.toUpperCase());
+  return `${pre}${when}, the ${t.home.nick} hosted the ${t.away.nick}.`;
+}
+// the season records after the game, from the scoreboard: "That puts the Chiefs at 5 and 1 and the Bills at 4 and 2."
+function deskRecords(ev){
+  const t = teamsOf(ev), cs = ev.competitions[0].competitors;
+  const rec = side => { const c = cs.find(x => x.homeAway === side), s = c?.records?.[0]?.summary || c?.record?.[0]?.summary || '';
+    const p = s.split('-').filter(x => /^\d+$/.test(x)); return p.length >= 2 ? (p.length > 2 ? p.slice(0, -1).join(', ') + ' and ' + p[p.length - 1] : p.join(' and ')) : ''; };
+  const ra = rec('away'), rh = rec('home');
+  if (!ra || !rh) return '';
+  const a = Number(t.away.score), h = Number(t.home.score), [w, rw, l, rl] = a >= h ? [t.away, ra, t.home, rh] : [t.home, rh, t.away, ra];
+  return `That puts the ${w.nick} at ${rw} and the ${l.nick} at ${rl}.`;
+}
+// "Detroit 24, Green Bay 17": a final as it is read off the board, the winner first
+function deskScoreLine(ev){
+  const t = teamsOf(ev), a = Number(t.away.score), h = Number(t.home.score);
+  const [w, l] = a >= h ? [t.away, t.home] : [t.home, t.away];
+  return `${w.loc} ${w.score}, ${l.loc} ${l.score}`;
 }
 
 // Formula 1: the race has to load before anyone can say who won it, so the result line comes after the replay opens
@@ -259,7 +430,7 @@ async function deskF1(sp, fin, tok){
   if (!R) { await deskSay('H', 'The timing for that race will not load, so we move on.', tok); return; }
   const win = R.D.get(R.win?.driver_number);
   const clips = deskClips();
-  if (win) await deskSay(SHOW.guestRole, `${win.name} won it for ${win.team}.`, tok);
+  if (win) await deskSay('G', `${win.name} won it for ${win.team}.`, tok);
   for (const c of clips) {
     if (!deskGo(tok)) break;
     SHOW.scene = null;
@@ -274,7 +445,8 @@ async function deskF1(sp, fin, tok){
 }
 
 /* ---- highlight clips, cut from the replay the sport's own code built ---- */
-function deskClips(){
+// the clips for the game on screen: a feature's two or three moments, or with quick set, the one play that decided it
+function deskClips(ev, quick){
   const out = [];
   if (isF1()) {
     const R = S.f1r; if (!R) return out;
@@ -291,6 +463,12 @@ function deskClips(){
   const n = R.plays.length, sc = R.scores || [];
   const at = i => deskWhen(playLabel(R.plays[i]));          // "in the first quarter"
   const where = i => at(i).replace(/^in /, '');              // "the first quarter", for the seek caption
+  if (quick) {
+    const s = deskDecider(sc, ev); if (!s) return out;
+    const i0 = R.bb ? Math.max(0, s.i - 2) : Math.max(R.driveOf(s.i), s.i - (R.mlb ? 4 : 2));
+    out.push({i0, i1: s.end ?? s.i, why: where(s.i), intro: `The play that decided it: ${s.team.loc}, ${deskKind(s.kind)} ${at(s.i)}.`});
+    return out.filter(c => c.i1 >= c.i0);
+  }
   if (R.mlb) {
     const hr = sc.filter(s => s.kind === 'HR');
     const picks = (hr.length ? hr : sc).slice(0, 2);
@@ -313,6 +491,13 @@ function deskClips(){
       intro: `${s.team.loc}, ${deskKind(s.kind)} ${at(s.i)}.`});
   }
   return out.filter(c => c.i1 >= c.i0);
+}
+// the score that put the winner ahead for good (the last one, in a tie)
+function deskDecider(sc, ev){
+  const t = teamsOf(ev), homeWon = Number(t.home.score) > Number(t.away.score), tie = Number(t.home.score) === Number(t.away.score);
+  let pick = null, ahead = false;
+  if (!tie) for (const s of sc) { const up = homeWon ? s.h > s.a : s.a > s.h; if (up && !ahead) pick = s; ahead = up; }
+  return pick || sc[sc.length - 1] || null;
 }
 // plays one clip: the replay seeks to its start, the queue is cut to the clip, and the show waits for it to finish
 async function deskClip(c, tok){
@@ -476,7 +661,7 @@ function deskResult(ev){
    Bo and his guest seated at a PBC anchor desk on the left, the screen with the scores, stats or the ad on the right,
    and the newsroom's on-air graphics over it (corner bug, segment tag, lower third). The booth and scoreboard windows
    only come back for the replays themselves (deskStudio). */
-const DESK_SCREEN = {x0: 214, y0: 36, x1: 466, y1: 176};        // the studio's big screen, in broadcast pixels
+const DESK_SCREEN = {x0: 214, y0: 36, x1: 466, y1: 166};        // the studio's big screen, in broadcast pixels (Baldur's bed is under it)
 const DESK_TOP = 150;                                             // the anchor desk's top edge
 const DESK_SEATS = [44, 134];                                     // where Bo and the guest sit
 // a booth look (drawAnnouncer) in the newsroom's style (person in shared/people.js): same people, same colours
@@ -496,6 +681,7 @@ function deskRender(now){
   deskSet(g, now);
   if (SHOW.scene === 'ad') deskDrawAd(g, b, now); else deskDrawPanel(g, b, now);
   deskAnchors(g, now);
+  deskBaldur(g, now);
 }
 // the room: the newsroom's back wall, ceiling, lights and floor, and the show's name on the wall behind the desk
 function deskSet(g, now){
@@ -537,6 +723,59 @@ function deskAnchors(g, now){
   const fx = ((DESK_SEATS[0] + DESK_SEATS[1] + 42) >> 1) - 6, fy = DESK_TOP - 5;
   R('#7a4423', fx + 2, fy, 8, 1); R('#8b4f2a', fx, fy + 1, 12, 3); R('#7a4423', fx + 2, fy + 4, 8, 1);
   R('#ffffff', fx + 3, fy + 2, 6, 1); R('#ffffff', fx + 4, fy + 1, 1, 1); R('#ffffff', fx + 7, fy + 1, 1, 1);
+}
+/* ---- Baldur, the kitchen dog, visiting the studio (shared/baldur.js: the same drawing as in the kitchen) ----
+   He sleeps in his bed under the big screen. Every few minutes he gets up, turns round and settles again, and now and
+   then (about once in twenty minutes) he trots over to the end of the desk for a pat from whoever is in the guest's seat,
+   then goes back to bed. Both are set by the clock, not a dice roll, so every viewer sees him do the same thing, and a
+   visit that falls during a highlight is skipped: he is only ever up while the studio is on screen. */
+const DESK_DOG = {bedX: 232, floor: 194, deskX: 207, nap: 180000, visit: 10 * 60000};   // a visit in about half of each ten minutes
+const DESK_VISIT = {wake: 1200, go: 4200, pet: 10200, back: 13200, done: 14400};   // ms into a visit
+const deskHash = n => { let h = (n | 0) ^ 0x9e3779b9; h = Math.imul(h ^ (h >>> 16), 0x45d9f3b); h = Math.imul(h ^ (h >>> 16), 0x45d9f3b); return (h ^ (h >>> 16)) >>> 0; };
+// what he is doing at wall-clock time t: asleep, a stretch in his bed, or a visit to the desk (with the ms into it)
+function deskDogAt(t){
+  const v = Math.floor(t / DESK_DOG.visit), vAt = v * DESK_DOG.visit + (deskHash(v) % (DESK_DOG.visit - 60000));
+  if (deskHash(v + 7) % 2 === 0 && t >= vAt && t < vAt + DESK_VISIT.done) return {mode: 'visit', el: t - vAt, from: vAt};
+  const s = Math.floor(t / DESK_DOG.nap), sAt = s * DESK_DOG.nap + (deskHash(s + 101) % (DESK_DOG.nap - 10000));
+  if (t >= sAt && t < sAt + 4000) return {mode: 'stretch', el: t - sAt};
+  return {mode: 'sleep'};
+}
+function deskBaldur(g, now){
+  const B = window.PBC_BALDUR; if (!B) return;
+  const R = (c, x, y, w, h) => { g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), w, h); };
+  const {bedX, floor, deskX} = DESK_DOG, bedY = floor - B.BED.length + 1, top = floor - 25;
+  let st = deskDogAt(Date.now());
+  // a visit only plays if the studio was on screen when it began; one that started during a highlight is skipped
+  if (st.mode === 'visit') { if (!deskBaldur.seen || deskBaldur.seen < st.from - 500) st = {mode: 'sleep'}; }
+  if (st.mode !== 'visit') deskBaldur.seen = Date.now();
+  const bed = () => { R(B.DOG.m, bedX + 3, bedY + 7, 50, 3);
+    for (let r = 9; r < B.BED.length; r++) for (let c = 0; c < B.BED[r].length; c++) { const ch = B.BED[r][c]; if (ch !== '.') R(B.DOG[/[mnq]/.test(ch) ? ch : 'n'], bedX + c, bedY + r, 1, 1); } };
+  if (st.mode === 'sleep') {
+    const br = Math.floor(now / 1400) % 2;                       // breathing: his back rises a pixel
+    B.sprite(R, B.BED, bedX, bedY, false, 9, B.BED.length);
+    B.sprite(R, B.BED, bedX, bedY - br, false, 0, 9);
+    if (br) B.sprite(R, B.BED, bedX, bedY, false, 8, 9);
+    if (Math.floor(now / 1800) % 3 === 0) dPix(g, 'Z', bedX + 50, bedY - 8 - (Math.floor(now / 600) % 3), false, '#9fb2ff');
+    return;
+  }
+  bed();
+  const home = bedX + 12;
+  if (st.mode === 'stretch') { B.dog(R, home, top, st.el > 2000, 'stand', now); return; }   // up, a look round, and back down
+  const V = DESK_VISIT, e = st.el;
+  if (e < V.wake) { B.dog(R, home, top, true, 'stand', now); return; }
+  if (e < V.go) { const k = (e - V.wake) / (V.go - V.wake); B.dog(R, home + (deskX - home) * k, top, true, 'walk', now); return; }
+  if (e < V.pet) { B.dog(R, deskX, top, true, 'stand', now); deskPat(g, R, now, e - V.go); return; }
+  if (e < V.back) { const k = (e - V.pet) / (V.back - V.pet); B.dog(R, deskX + (home - deskX) * k, top, false, 'walk', now); return; }
+  B.dog(R, home, top, false, 'stand', now);
+}
+// the guest leans over the end of the desk and pats his head, and a little heart floats up
+function deskPat(g, R, now, el){
+  const c = deskLook(crew().B), x0 = DESK_SEATS[1] + 42, y0 = DESK_TOP - 21;     // the guest's right shoulder
+  for (let k = 0; k < 11; k++) R(c.coat, x0 + k * 3, y0 + k * 3, 5, 5);          // the arm, reaching down past the desk
+  const pat = Math.floor(now / 260) % 2;
+  R(c.skin, x0 + 32, y0 + 32 + pat, 4, 4);
+  const rise = Math.floor(el / 120) % 18, hx = DESK_DOG.deskX + 6, hy = DESK_DOG.floor - 32 - rise;
+  if (el > 1200) [[1, 0, 1], [3, 0, 1], [0, 1, 5], [1, 2, 3], [2, 3, 1]].forEach(([dx, dy, w]) => R('#d8707e', hx + dx, hy + dy, w, 1));
 }
 // the on-air graphics over the studio (sports/index.html #studio), and the booth and scoreboard windows put away.
 // Called every frame; the page only changes when something on it does.
