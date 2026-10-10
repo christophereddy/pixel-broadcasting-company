@@ -43,27 +43,27 @@
   "weather": {
    "now": {
     "temp": 60,
-    "cond": " Rain Fog/Mist and Breezy",
-    "obs": "10 Oct 02:52 am EDT"
+    "cond": " Heavy Rain Fog/Mist and Windy",
+    "obs": "10 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 74,
      "text": "Showers and possibly a thunderstorm. Some of the storms could produce heavy rainfall.  High near 74. Windy, with an east wind 20 to 25 mph, with gusts as high as 45 mph.  Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 62,
-     "text": "Showers and thunderstorms before 11pm, then a chance of showers between 11pm and 2am. Some of the storms could produce heavy rainfall.  Low around 62. Southeast wind 10 to 15 mph becoming south after midnight. Winds could gust as high as 35 mph.  Chance of precipitation is 80%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Showers and thunderstorms before 11pm, then a chance of showers between 11pm and 2am. Some of the storms could produce heavy rainfall.  Low around 62. Southeast wind 10 to 15 mph becoming south after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 74,
-     "text": "Partly sunny, with a high near 74. West wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Partly sunny, with a high near 74. Southwest wind 10 to 15 mph becoming west in the afternoon. Winds could gust as high as 30 mph. "
     },
     {
      "name": "Sunday Night",
@@ -75,7 +75,7 @@
      "name": "Columbus Day",
      "kind": "high",
      "temp": 84,
-     "text": "Sunny, with a high near 84."
+     "text": "Sunny, with a high near 84. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Monday Night",
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -127,19 +127,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Partly Cloudy",
-    "obs": "10 Oct 02:54 am EDT"
+    "temp": 50,
+    "cond": "A Few Clouds",
+    "obs": "10 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 62,
      "text": "Sunny, with a high near 62. Northwest wind 5 to 8 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Partly cloudy, with a low around 48. Calm wind. "
@@ -154,7 +154,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Showers, mainly after 8pm.  Low around 55. East wind 3 to 7 mph.  Chance of precipitation is 100%."
+     "text": "Showers, mainly after 8pm.  Low around 55. East wind 3 to 7 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Columbus Day",
@@ -182,7 +182,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -193,6 +193,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago Bungalow Association leader dies at 71",
+    "b": "Mary Ellen Guest, who led the Chicago Bungalow Association from 2008, refocused its mission on the people living in the city's bungalows. She died at 71.",
+    "date": "2026-10-10",
+    "publisher": "WBEZ",
+    "title": "Mary Ellen Guest, who headed the Chicago Bungalow Association, dies at 71",
+    "url": "https://www.wbez.org/obituary/2026/10/10/mary-ellen-guest-who-headed-the-chicago-bungalow-association-dies-at-71",
+    "published": "2026-10-10T09:30:00Z",
+    "updated": "2026-10-10T09:30:01Z",
+    "gathered": "2026-10-10T10:09:32Z"
+   },
    {
     "h": "CPS probe of board president candidate may end soon",
     "b": "CPS' inspector general reopened an investigation into whether candidate Hilario Dominguez acted inappropriately with a 17-year-old in 2017. Dominguez denies any wrongdoing.",
@@ -231,25 +242,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "A Few Clouds",
-    "obs": "10 Oct 01:53 am CDT"
+    "temp": 64,
+    "cond": "Fair",
+    "obs": "10 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 61,
-     "text": "Clear, with a low around 61. South wind around 10 mph, with gusts as high as 15 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 76,
      "text": "Increasing clouds, with a high near 76. South wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 60,
      "text": "Mostly cloudy, with a low around 60. South southeast wind 5 to 15 mph, with gusts as high as 20 mph. "
@@ -264,13 +269,19 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Partly cloudy, with a low around 62. South wind 5 to 10 mph. "
+     "text": "Increasing clouds, with a low around 62. South wind 5 to 10 mph. "
     },
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 86,
-     "text": "Mostly sunny, with a high near 86."
+     "text": "Mostly sunny, with a high near 86. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 64,
+     "text": "A 40 percent chance of showers and thunderstorms.  Partly cloudy, with a low around 64."
     }
    ]
   },
@@ -286,7 +297,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -320,25 +331,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "A Few Clouds",
-    "obs": "9 Oct 23:58 pm MDT"
+    "temp": 57,
+    "cond": "Fair",
+    "obs": "10 Oct 01:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 56,
-     "text": "Mostly clear, with a low around 56. South southwest wind around 7 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 85,
      "text": "Sunny, with a high near 85. South southwest wind 5 to 8 mph becoming west in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Increasing clouds, with a low around 59. West wind around 6 mph becoming south after midnight. "
@@ -359,7 +364,13 @@
      "name": "Columbus Day",
      "kind": "high",
      "temp": 82,
-     "text": "Sunny, with a high near 82."
+     "text": "Sunny, with a high near 82. Light and variable wind becoming east northeast 5 to 10 mph in the morning. Winds could gust as high as 20 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
     }
    ]
   },
@@ -375,7 +386,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -435,12 +446,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 67,
-     "text": "Mostly cloudy, with a low around 67. Southeast wind around 5 mph becoming calm. "
-    },
-    {
      "name": "Saturday",
      "kind": "high",
      "temp": 82,
@@ -469,6 +474,12 @@
      "kind": "high",
      "temp": 66,
      "text": "Showers likely.  Mostly cloudy, with a high near 66. Chance of precipitation is 70%."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "A 40 percent chance of showers, mainly before 11pm.  Partly cloudy, with a low around 52."
     }
    ]
   },
@@ -484,7 +495,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -495,6 +506,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "What we know about the ICE shooting in NYC",
+    "b": "Police said a federal immigration officer shot and wounded 28-year-old Oscar Belgal in Marble Hill while his 5-year-old son was in the backseat, setting off anger across the city.",
+    "date": "2026-10-10",
+    "publisher": "Gothamist",
+    "title": "What we know about the ICE shooting in NYC",
+    "url": "https://gothamist.com/news/what-we-know-about-the-ice-shooting-in-nyc",
+    "published": "2026-10-10T10:00:56Z",
+    "gathered": "2026-10-10T10:09:32Z"
+   },
    {
     "h": "DSA urges Mamdani to fire NYPD commissioner",
     "b": "The city's Democratic Socialists of America chapter is pressuring Mayor Zohran Mamdani to fire his police commissioner if ICE doesn't leave New York City.",
@@ -591,19 +612,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "10 Oct 02:51 am EDT"
+    "obs": "10 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
      "text": "Partly sunny, with a high near 68. North wind around 7 mph becoming southeast in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 60,
      "text": "Increasing clouds, with a low around 60. East wind 6 to 8 mph. "
@@ -624,7 +645,7 @@
      "name": "Columbus Day",
      "kind": "high",
      "temp": 70,
-     "text": "A 30 percent chance of rain before 8am.  Cloudy through mid morning, then gradual clearing, with a high near 70."
+     "text": "A chance of rain and thunderstorms before 8am, then a slight chance of rain between 8am and 2pm.  Cloudy through mid morning, then gradual clearing, with a high near 70. North wind 10 to 14 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Monday Night",
@@ -646,7 +667,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -658,6 +679,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Student protests spread across France",
+    "b": "High school students have joined a nationwide protest movement over learning conditions, including a demonstration at Place de la Bastille in Paris on Oct. 8.",
+    "date": "2026-10-10",
+    "publisher": "The Local France",
+    "title": "Inside France: Burning bins and smart slogans at French student protests",
+    "url": "https://www.thelocal.fr/20261010/inside-france-burning-bins-and-smart-slogans-at-french-student-protests",
+    "published": "2026-10-10T09:15:13Z",
+    "updated": "2026-10-10T09:15:18Z",
+    "gathered": "2026-10-10T10:09:32Z"
+   },
    {
     "h": "Students plan more protests; UN concerned",
     "b": "French students were largely back in class Friday after days of protests, but plan more, as the UN voiced concern over violent clashes with police.",
@@ -689,7 +721,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "goodnews": []
  },
  {
@@ -736,11 +768,7 @@
     "h": "Gluesenkamp Perez, Braun hold first debate",
     "b": "Rep. Marie Gluesenkamp Perez and state Sen. John Braun split over voter ID and immigration enforcement in their first debate for Washington's 3rd District.",
     "date": "2026-10-09",
-    "publisher": "KUOW",
-    "title": "Gluesenkamp Perez and Braun meet in first debate for Southwest Washington’s battleground House district",
     "url": "https://www.kuow.org/elections/2026-10-09/gluesenkamp-perez-and-braun-meet-in-first-debate-for-southwest-washingtons-battleground-house-district",
-    "published": "2026-10-09T19:57:58Z",
-    "updated": "2026-10-09T19:57:58Z",
     "gathered": "2026-10-09T21:07:22Z"
    }
   ],
@@ -748,40 +776,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48. Southeast wind around 5 mph. "
-    },
-    {
      "name": "Saturday",
      "kind": "high",
-     "temp": 58,
-     "text": "Mostly sunny, with a high near 58. Calm wind becoming north northwest 5 to 7 mph in the afternoon. "
+     "temp": 57,
+     "text": "A 30 percent chance of showers before 9am.  Mostly cloudy, then gradually becoming sunny, with a high near 57. Calm wind becoming north northwest 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Mostly clear, with a low around 46. North northeast wind 3 to 6 mph. "
+     "temp": 45,
+     "text": "Mostly clear, with a low around 45. North northeast wind 3 to 6 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. North northeast wind 6 to 10 mph. "
+     "temp": 61,
+     "text": "Sunny, with a high near 61. North northeast wind 6 to 10 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44. North wind 5 to 8 mph becoming calm  in the evening. "
+     "temp": 42,
+     "text": "Clear, with a low around 42. North wind 5 to 8 mph becoming calm  in the evening. "
     },
     {
      "name": "Columbus Day",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62."
+     "temp": 63,
+     "text": "Sunny, with a high near 63."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "Mostly clear, with a low around 44."
     }
    ]
   },
@@ -797,7 +825,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T10:09:00Z",
+  "updatedAt": "2026-10-10T13:10:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

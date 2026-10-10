@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T10:09:00Z",
+ "updatedAt": "2026-10-10T13:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -191,6 +191,19 @@
  ],
  "international": [
   {
+   "h": "India detains thousands at youth protests",
+   "b": "Authorities in New Delhi detained thousands as the youth 'Cockroach' movement protested a contentious voter list revision and demanded the election chief's resignation.",
+   "date": "2026-10-10",
+   "place": "New Delhi, India",
+   "tz": "Asia/Kolkata",
+   "publisher": "KUOW",
+   "title": "India cracks down on youth protests as anger grows against Modi and election chief",
+   "url": "https://www.kuow.org/npr-news/2026-10-10/india-cracks-down-on-youth-protests-as-anger-grows-against-modi-and-election-chief",
+   "published": "2026-10-10T08:31:28Z",
+   "updated": "2026-10-10T08:44:02Z",
+   "gathered": "2026-10-10T10:09:32Z"
+  },
+  {
    "h": "7.7 quake hits Panama, tsunami warnings issued",
    "b": "A magnitude 7.7 earthquake struck southern Panama, prompting tsunami warnings for Panama, Colombia, Ecuador, Nicaragua and Guatemala, and from Chile.",
    "date": "2026-10-09",
@@ -348,6 +361,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "What we know about the ICE shooting in NYC",
+   "b": "Police said a federal immigration officer shot and wounded 28-year-old Oscar Belgal in Marble Hill while his 5-year-old son was in the backseat, setting off anger across the city.",
+   "date": "2026-10-10",
+   "publisher": "Gothamist",
+   "title": "What we know about the ICE shooting in NYC",
+   "url": "https://gothamist.com/news/what-we-know-about-the-ice-shooting-in-nyc",
+   "published": "2026-10-10T10:00:56Z",
+   "gathered": "2026-10-10T10:09:32Z"
+  },
+  {
    "h": "DSA urges Mamdani to fire NYPD commissioner",
    "b": "The city's Democratic Socialists of America chapter is pressuring Mayor Zohran Mamdani to fire his police commissioner if ICE doesn't leave New York City.",
    "date": "2026-10-09",
@@ -443,19 +466,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "10 Oct 02:51 am EDT"
+   "obs": "10 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
     "temp": 68,
     "text": "Partly sunny, with a high near 68. North wind around 7 mph becoming southeast in the afternoon. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 60,
     "text": "Increasing clouds, with a low around 60. East wind 6 to 8 mph. "
@@ -476,7 +499,7 @@
     "name": "Columbus Day",
     "kind": "high",
     "temp": 70,
-    "text": "A 30 percent chance of rain before 8am.  Cloudy through mid morning, then gradual clearing, with a high near 70."
+    "text": "A chance of rain and thunderstorms before 8am, then a slight chance of rain between 8am and 2pm.  Cloudy through mid morning, then gradual clearing, with a high near 70. North wind 10 to 14 mph.  Chance of precipitation is 30%."
    },
    {
     "name": "Monday Night",
