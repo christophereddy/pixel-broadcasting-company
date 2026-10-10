@@ -4966,7 +4966,7 @@ async function switchSport(sp){
   setBoard(); return openSport();
 }
 for (const k of Object.keys(SPORTS)) $('sport-' + k).onclick = () => switchSport(k);
-$('tab-desk').onclick = () => deskStart();
+$('tab-desk').onclick = () => deskStart(true, true); // the viewer chose the desk: it stays, live games wait in the rundown
 $('show-res').onclick = () => setHideRes(!HIDE_RES);
 setHideRes(HIDE_RES);
 
@@ -4998,8 +4998,9 @@ function liveChip(){
     if (lg) { a.href = '#' + lg.sport + '/' + lg.id; $('liveLeague').textContent = lg.league + ' · '; $('liveTitle').textContent = lg.title;
       a.setAttribute('aria-label', 'Live now: ' + lg.title + '. Watch it.'); }
     draw(); deskRundown();
-    // a game has just gone live: the desk cuts away from the segment on air and goes straight there
-    if (lg && SHOW.on && SHOW.seg !== lg.sport) SHOW.cut = true;
+    // a game has just gone live: the desk cuts away from the segment on air and goes straight there, unless the viewer
+    // chose the desk (then it waits at the top of the rundown)
+    if (lg && SHOW.on && !SHOW.stay && SHOW.seg !== lg.sport) SHOW.cut = true;
   });
   setInterval(draw, 1000);
   a.onclick = async e => {

@@ -124,6 +124,7 @@ body.theater-on.idle{cursor:none}
 .pbc-rundown .pk:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .pbc-rundown li.picked{background:var(--picked)}
 .pbc-rundown li.picked .tm::after{content:" NEXT";font-family:var(--f-label);font-size:10px;color:var(--gold)}
+.pbc-rundown li.live .tm::after{content:" LIVE";font-family:var(--f-label);font-size:10px;color:var(--live)} /* a live game to go to (Sports Desk) */
 
 /* On-air graphics over a broadcast picture: one look for every channel and desk (News, the Sports Desk). Markup:
    <div class="pbc-bug"><b>PBC</b><span>LIVE</span></div>   corner bug, top left

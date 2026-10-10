@@ -30,6 +30,7 @@ const SHOW = {
   seg: null,        // the rundown segment on air: a sport key, or 'break'
   pick: null,       // a segment the viewer picked in the rundown, played next
   cut: false,       // cut the segment on air short (a rundown pick, or a game that just went live)
+  stay: false,      // the viewer chose the desk: live games wait in the rundown instead of taking over
   t0: 0             // when the segment on air started (Date.now), for the rundown's clock times
 };
 
@@ -79,12 +80,13 @@ function deskStop(){
   deskAdLink(null);
   deskTabs();
 }
-async function deskStart(tuneIn = true){
+// stay: the viewer pressed DESK (or GO NOW), so a live game is offered in the rundown rather than cut to
+async function deskStart(tuneIn = true, stay = false){
   deskStop();
   if (tuneIn) pressStart();                      // a viewer tap unlocks audio; automatic entry stays silent
   S.deskEntry = true;
   try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
-  SHOW.on = true; SHOW.everOn = true; SHOW.loop = 0; SHOW.tok++; SHOW.seg = null; SHOW.pick = null;
+  SHOW.on = true; SHOW.everOn = true; SHOW.loop = 0; SHOW.tok++; SHOW.seg = null; SHOW.pick = null; SHOW.stay = stay;
   const tok = SHOW.tok;
   hideNotice(); hideBanner(); deskTabs();
   deskPanel('PBC SPORTS DESK', [], 'Bo Kowalski has the scores, the highlights and the stats.');
@@ -93,11 +95,14 @@ async function deskStart(tuneIn = true){
 // the loop: every sport in turn, then the commercial break, then round again. A segment the viewer picks in the
 // rundown goes next, the way the newsroom's rundown works.
 const DESK_SEGS = [...DESK_ORDER, 'break'];
-// a game live right now (shared/live.js) goes next, unless the viewer picked something in the rundown
+// a game live right now (shared/live.js) goes next, unless the viewer picked something in the rundown or chose the desk
 const deskLive = () => { const lg = window.PBC_LIVE && PBC_LIVE.current; return lg && DESK_ORDER.includes(lg.sport) ? lg.sport : null; };
-const deskNext = () => SHOW.pick || (deskLive() !== SHOW.seg && deskLive()) || DESK_SEGS[(DESK_SEGS.indexOf(SHOW.seg) + 1) % DESK_SEGS.length];
+const deskCutLive = () => SHOW.stay ? null : deskLive();
+const deskNext = () => SHOW.pick || (deskCutLive() !== SHOW.seg && deskCutLive()) || DESK_SEGS[(DESK_SEGS.indexOf(SHOW.seg) + 1) % DESK_SEGS.length];
 async function deskRun(tok){
-  let sg = deskLive() || DESK_SEGS[0];
+  let sg = deskCutLive() || DESK_SEGS[0];
+  const lg = SHOW.stay && window.PBC_LIVE && PBC_LIVE.current;
+  if (lg) await deskSay('H', `${lg.title} is live right now. It is at the top of the rundown whenever you want it, and we will stay right here at the desk.`, tok);
   while (deskAlive(tok)) {
     SHOW.seg = sg; SHOW.t0 = Date.now(); SHOW.cut = false; if (SHOW.pick === sg) SHOW.pick = null;
     if (sg === 'break') { await deskBreak(tok); SHOW.loop++; }
@@ -112,7 +117,7 @@ async function deskRun(tok){
 // Bo's hand-off names whatever really comes next, the viewer's pick included
 function deskOutro(sp){
   const nx = deskNext();
-  if (nx === deskLive() && !SHOW.pick) return `That is ${deskLg(sp)}. We have ${deskLg(nx)} live right now, so that is where we go next.`;
+  if (nx === deskCutLive() && !SHOW.pick) return `That is ${deskLg(sp)}. We have ${deskLg(nx)} live right now, so that is where we go next.`;
   return `That is ${deskLg(sp)}. ${nx === 'break' ? 'A quick break, and we go round again.' : deskLgCap(nx) + ' is next.'}`;
 }
 
@@ -146,13 +151,14 @@ function deskTimes(order){
 function deskOrder(){
   const cur = Math.max(0, DESK_SEGS.indexOf(SHOW.seg)), n = DESK_SEGS.length;
   const rest = []; for (let k = 1; k < n; k++) rest.push(DESK_SEGS[(cur + k) % n]);
-  const nx = SHOW.pick || deskLive(), p = nx && rest.includes(nx) ? [nx] : [];
+  const nx = SHOW.pick || deskCutLive(), p = nx && rest.includes(nx) ? [nx] : [];
   return [DESK_SEGS[cur], ...p, ...rest.filter(x => !p.includes(x))];
 }
 // once a second: only the times change, so the buttons stay put under the viewer's pointer
 function deskTick(){
   if (!SHOW.on) return;
-  const rows = $('deskrd')?.children; if (!rows) return;
+  const ol = $('deskrd'); if (!ol) return;
+  const rows = [...ol.children].filter(r => !r.classList.contains('live'));   // the LIVE row has no start time
   const ts = deskTimes(deskOrder());
   for (let k = 0; k < rows.length && k < ts.length; k++) {
     const tm = rows[k].querySelector('.tm');
@@ -182,6 +188,17 @@ function deskRundown(){
     li.append(tm, nm);
     ol.appendChild(li);
   }
+  // a viewer who chose the desk gets the live game as a row under the one on air, in the same style as every other row
+  // (the time line says "On now", marked LIVE the way the on-air row is marked NOW), to go to whenever they like
+  const lg = SHOW.stay && window.PBC_LIVE && PBC_LIVE.current;
+  if (lg) {
+    const li = document.createElement('li'); li.className = 'live';
+    const tm = document.createElement('span'); tm.className = 'tm'; tm.textContent = 'On now';
+    const go = document.createElement('button'); go.type = 'button'; go.className = 'pk'; go.textContent = `${lg.league}: ${lg.title}`;
+    go.setAttribute('aria-label', 'Watch ' + lg.title + ', live now');
+    go.onclick = () => $('livenow').click();
+    li.append(tm, go); ol.insertBefore(li, ol.children[1] || null);
+  }
 }
 
 /* ---- one sport's slot ----
@@ -202,9 +219,16 @@ async function deskSport(sp, tok){
   deskTabs();
   const {live, next, fin} = sortedGames(true);
 
-  // a live game wins: the desk sends the broadcast there and stands down until it is over
-  if (live.length) {
-    const ev = live[0];
+  // a live game wins: the desk sends the broadcast there and stands down until it is over. It is the game LIVE NOW
+  // promotes when that one is in this sport (shared/live.js picks it), else the top-ranked one in college football.
+  // A viewer who chose the desk stays: Bo mentions the game, and it waits in the rundown.
+  if (live.length && SHOW.stay) {
+    const ev = deskLiveGame(sp, live);
+    deskPanel(name + ' LIVE NOW', [deskRow(ev, 'live')], 'Live now. It is at the top of the rundown.');
+    await deskSay('H', `${deskWho(ev)} is live right now, and it is at the top of the rundown whenever you want it.` + (fin.length ? ` First, the recaps.` : ''), tok);
+    if (!deskGo(tok)) return;
+  } else if (live.length) {
+    const ev = deskLiveGame(sp, live);
     deskPanel(name + ' LIVE NOW', [deskRow(ev, 'live')], 'Taking you there now.');
     await deskSay('H', `We have ${deskLg(sp)} live right now. Let us get you straight there.`, tok);
     if (!deskGo(tok)) return;
@@ -308,9 +332,15 @@ async function deskQuick(sp, ev, k, list, tok){
   await deskHold(500, tok);
 }
 
+// the live game to cut to in this sport: the one LIVE NOW promotes, else the top-ranked one (college), else ESPN's first
+function deskLiveGame(sp, live){
+  const lg = window.PBC_LIVE && PBC_LIVE.current;
+  return (lg && lg.sport === sp && live.find(e => String(e.id) === lg.id)) || live.slice().sort((a, b) => deskRank(a) - deskRank(b))[0];
+}
+
 /* ---- which games: every team's latest final, and the ones worth a feature ---- */
 const deskIds = ev => ev.competitions[0].competitors.map(c => String(c.team?.id ?? c.id));
-const deskRank = ev => Math.min(...ev.competitions[0].competitors.map(c => c.curatedRank?.current || 99));
+const deskRank = ev => Math.min(99, ...(ev.competitions?.[0]?.competitors || []).map(c => c.curatedRank?.current || 99));
 // finals from the last eight days, newest first, keeping a game while it is the latest for either of its teams.
 // College football is every FBS game, so there it is the games with a ranked team in them.
 function deskSlate(){
@@ -560,7 +590,7 @@ function deskResume(){
     const p = document.createElement('p'); p.textContent = `Bo picks the show back up in ${left} second${left === 1 ? '' : 's'}.`;
     const btns = document.createElement('div'); btns.className = 'btns';
     const go = document.createElement('button'); go.className = 'big'; go.textContent = 'GO NOW';
-    go.onclick = () => { stop(); hideNotice(); deskStart(); };
+    go.onclick = () => { stop(); hideNotice(); deskStart(true, true); };
     const stay = document.createElement('button'); stay.className = 'big alt'; stay.textContent = 'STAY HERE';
     stay.onclick = () => { stop(); hideNotice(); };
     btns.append(go, stay); n.append(h, p, btns); n.hidden = false;
