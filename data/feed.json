@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T13:10:00Z",
+ "updatedAt": "2026-10-10T16:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,22 +7,20 @@
  },
  "world": [
   {
+   "h": "Putin relays Iran's terms for ending war to Trump",
+   "b": "Russian President Vladimir Putin relayed Iran's terms for ending the war to President Trump, according to Al Jazeera's live coverage.",
+   "date": "2026-10-10",
+   "publisher": "Al Jazeera",
+   "title": "Putin relays Iran’s terms for ending war to Trump",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal",
+   "gathered": "2026-10-10T13:57:01Z"
+  },
+  {
    "h": "Allies and UN back ICC against new US sanctions",
    "b": "European states, Canada, Japan and the UN condemned new US sanctions on the International Criminal Court after Secretary of State Marco Rubio banned transactions with the court.",
    "date": "2026-10-09",
-   "publisher": "Al Jazeera",
-   "title": "European states, Canada, Japan and UN back ICC against US sanctions",
    "url": "https://www.aljazeera.com/news/2026/10/9/european-states-canada-japan-and-un-back-icc-against-us-sanctions",
    "gathered": "2026-10-10T07:34:30Z"
-  },
-  {
-   "h": "Putin, Trump discuss Iran",
-   "b": "Russian diesel is set to hit global markets as Vladimir Putin and Donald Trump discussed Iran, Al Jazeera reports.",
-   "date": "2026-10-09",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: Saudi-led coalition hits Houthis; Putin, Trump talk Iran",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait",
-   "gathered": "2026-10-09T04:10:12Z"
   },
   {
    "h": "Ukraine pushes Russia back in Donetsk",
@@ -48,17 +46,24 @@
  ],
  "national": [
   {
+   "h": "DHS surveils border tribe as wall advances",
+   "b": "ProPublica found DHS surveilled an ongoing border prayer ceremony of Arizona's Tohono O'odham Nation and questioned tribal members, after promising to engage in good faith.",
+   "date": "2026-10-10",
+   "publisher": "ProPublica",
+   "title": "As Trump’s Wall Closes in, DHS Intimidates a Border Tribe With Surveillance, Masked Agents and Drones",
+   "url": "https://www.propublica.org/article/tohono-oodham-nation-arizona-border-wall",
+   "published": "2026-10-10T10:00:00Z",
+   "updated": "2026-10-10T10:00:10Z",
+   "gathered": "2026-10-10T13:57:01Z"
+  },
+  {
    "h": "Trump says U.S. will get diesel from Russia",
    "b": "President Trump said he struck a deal with Vladimir Putin for Russian diesel, reversing years of U.S. pressure on Moscow as fuel prices stay high before the midterms.",
    "date": "2026-10-09",
    "more": [
     "Trump said Russia will immediately supply more than 300,000 tons of diesel, with an additional 500,000 tons in November."
    ],
-   "publisher": "KUOW",
-   "title": "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms",
    "url": "https://www.kuow.org/npr-news/2026-10-09/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
-   "published": "2026-10-09T21:24:13Z",
-   "updated": "2026-10-09T21:28:15Z",
    "gathered": "2026-10-09T22:09:37Z"
   },
   {
@@ -166,8 +171,6 @@
    "h": "Katie Zacharia picked as White House press secretary",
    "b": "President Trump confirmed conservative commentator Katie Zacharia as his next press secretary.",
    "date": "2026-10-09",
-   "publisher": "Al Jazeera",
-   "title": "Katie Zacharia selected to be next White House press secretary",
    "url": "https://www.aljazeera.com/news/2026/10/9/katie-zacharia-offered-position-as-white-house-press-secretary",
    "gathered": "2026-10-10T07:34:30Z"
   },
@@ -191,6 +194,50 @@
  ],
  "international": [
   {
+   "h": "Russian strikes kill 15 in Zaporizhzhia",
+   "b": "Russian air attacks killed at least 15 people in Zaporizhzhia, Ukraine's prosecutor's office said, as the US hosted talks it called productive on ending the war.",
+   "date": "2026-10-10",
+   "place": "Zaporizhzhia, Ukraine",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Russia kills 15 in Ukraine as US hosts ‘productive’ talks to end war",
+   "url": "https://www.aljazeera.com/news/2026/10/10/us-hosts-productive-trilateral-talks-to-end-russia-ukraine-war",
+   "gathered": "2026-10-10T13:57:01Z"
+  },
+  {
+   "h": "Seven killed in Gaza on 'ceasefire' anniversary",
+   "b": "At least seven people, including an 8-year-old girl, were killed in Israeli attacks across Gaza, medical sources said, a year after the US-backed ceasefire took effect.",
+   "date": "2026-10-10",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Child among seven killed by Israel in Gaza on ‘ceasefire’ anniversary",
+   "url": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child",
+   "gathered": "2026-10-10T13:57:01Z"
+  },
+  {
+   "h": "Brazil police rescue 13 kindergarten hostages",
+   "b": "Police in Curitiba rescued 13 children taken hostage at a kindergarten after killing the suspect, who had threatened to set the building on fire. At least one child was hurt.",
+   "date": "2026-10-10",
+   "place": "Curitiba, Brazil",
+   "tz": "America/Sao_Paulo",
+   "publisher": "Al Jazeera",
+   "title": "Suspect killed after 13 kindergarteners taken hostage, beaten in Brazil",
+   "url": "https://www.aljazeera.com/news/2026/10/10/suspect-killed-after-13-kindergarteners-taken-hostage-beaten-in-brazil",
+   "gathered": "2026-10-10T13:57:01Z"
+  },
+  {
+   "h": "Journalist shot dead in Oaxaca, Mexico",
+   "b": "Hamurabi Huesca Manzano, owner of the news site Pinotepa Comunica, was killed by an armed group. Article 19 says he is the ninth journalist killed in Mexico this year.",
+   "date": "2026-10-10",
+   "place": "Oaxaca, Mexico",
+   "tz": "America/Mexico_City",
+   "publisher": "Al Jazeera",
+   "title": "Journalist Hamurabi Huesca Manzano killed in Mexico’s Oaxaca",
+   "url": "https://www.aljazeera.com/news/2026/10/10/journalist-killed-in-mexico-ninth-this-year-ngo",
+   "gathered": "2026-10-10T13:57:01Z"
+  },
+  {
    "h": "India detains thousands at youth protests",
    "b": "Authorities in New Delhi detained thousands as the youth 'Cockroach' movement protested a contentious voter list revision and demanded the election chief's resignation.",
    "date": "2026-10-10",
@@ -209,8 +256,6 @@
    "date": "2026-10-09",
    "place": "Panama",
    "tz": "America/Panama",
-   "publisher": "Al Jazeera",
-   "title": "Tsunami warnings across Latin America after 7.7 magnitude earthquake hits",
    "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits",
    "gathered": "2026-10-10T07:34:30Z"
   },
@@ -220,8 +265,6 @@
    "date": "2026-10-09",
    "place": "Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "UN envoy warns Yemen has returned to ‘full-scale war’, urges dialogue",
    "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue",
    "gathered": "2026-10-10T07:34:30Z"
   },
@@ -231,8 +274,6 @@
    "date": "2026-10-09",
    "place": "United Arab Emirates",
    "tz": "Asia/Dubai",
-   "publisher": "Al Jazeera",
-   "title": "Flydubai co-pilot plotted ‘suicide’ attack on Israel, UAE says",
    "url": "https://www.aljazeera.com/news/2026/10/9/flydubai-co-pilot-plotted-suicide-attack-on-israel-uae-says",
    "gathered": "2026-10-10T07:34:30Z"
   },
@@ -303,8 +344,6 @@
    "h": "Fuel costs cut Delta profit outlook",
    "b": "Atlanta-based Delta Air Lines lowered its profit forecast despite strong demand, saying it expects annual fuel costs to jump by $6 billion.",
    "date": "2026-10-09",
-   "publisher": "Al Jazeera",
-   "title": "Rising fuel costs slashed Delta’s profit outlook despite strong demand",
    "url": "https://www.aljazeera.com/economy/2026/10/9/rising-fuel-costs-slashed-deltas-profit-outlook-despite-strong-demand",
    "gathered": "2026-10-10T07:34:30Z"
   },
@@ -312,11 +351,7 @@
    "h": "Fired OpenAI workers question safety commitment",
    "b": "Three former OpenAI employees allege they were fired for being outspoken about safety. OpenAI disputes that and says they mishandled sensitive information.",
    "date": "2026-10-09",
-   "publisher": "KUOW",
-   "title": "Fired OpenAI employees question the company's commitment to safety",
    "url": "https://www.kuow.org/npr-news/2026-10-09/fired-openai-employees-question-the-companys-commitment-to-safety",
-   "published": "2026-10-09T21:28:09Z",
-   "updated": "2026-10-09T21:33:33Z",
    "gathered": "2026-10-09T22:09:37Z"
   },
   {
@@ -345,8 +380,6 @@
    "h": "Valkyries sweep Aces to reach WNBA Finals",
    "b": "The second-year Golden State Valkyries beat the reigning champion Las Vegas Aces 87-77 in overtime to finish a semifinal sweep and reach their first WNBA Finals.",
    "date": "2026-10-10",
-   "publisher": "CBS Sports",
-   "title": "Golden State Valkyries reach WNBA Finals: How second-year franchise made unprecedented run",
    "url": "https://www.cbssports.com/wnba/news/golden-state-valkyries-reach-wnba-finals-second-year-unprecedented-run/",
    "gathered": "2026-10-10T07:34:30Z"
   },
@@ -468,7 +501,7 @@
   "now": {
    "temp": 57,
    "cond": "Fair",
-   "obs": "10 Oct 05:51 am EDT"
+   "obs": "10 Oct 08:51 am EDT"
   },
   "periods": [
    {
