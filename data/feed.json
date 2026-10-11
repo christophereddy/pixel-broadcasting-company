@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11T13:09:00Z",
+ "updatedAt": "2026-10-11T16:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,23 +7,41 @@
  },
  "world": [
   {
-   "h": "Saudi-led coalition vows to respond to Riyadh attack",
-   "b": "Saudi-led forces vowed a 'decisive' response to the Houthi attack on Riyadh's airport that killed 12 people, according to Al Jazeera's live coverage.",
+   "h": "Projectile hits Riyadh airport terminal",
+   "b": "A projectile hit a passenger terminal at Riyadh's airport, according to Al Jazeera's live coverage of the regional war.",
    "date": "2026-10-11",
    "publisher": "Al Jazeera",
-   "title": "Saudi-led forces vow ‘decisive’ response to Houthi attack on Riyadh airport",
+   "title": "‘Projectile’ hits passenger terminal at Riyadh airport",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis",
    "gathered": "2026-10-11T09:11:02Z"
+  },
+  {
+   "h": "Pope Leo XIV to have lung surgery this week",
+   "b": "Pope Leo XIV said he will have surgery this week to remove a \"localized nodule\" in his lung, found at a \"very early stage.\" The operation is set for Rome's Gemelli Hospital, and the Vatican expects a weeklong recovery.",
+   "date": "2026-10-11",
+   "publisher": "KUOW",
+   "title": "Pope Leo XIV to undergo lung surgery this week",
+   "url": "https://www.kuow.org/npr-news/2026-10-11/pope-leo-xiv-to-undergo-lung-surgery-this-week",
+   "published": "2026-10-11T12:54:25Z",
+   "updated": "2026-10-11T13:04:34Z",
+   "gathered": "2026-10-11T15:53:23Z"
+  },
+  {
+   "h": "Hurricane Simon nears Mexico at 155 mph",
+   "b": "Hurricane Simon strengthened to 155 mph, just below Category 5, off Mexico's Pacific coast and was expected to move inland Sunday. It could bring 10 to 20 inches of rain to parts of southwestern Mexico.",
+   "date": "2026-10-11",
+   "publisher": "KUOW",
+   "title": "Hurricane Simon nears Mexico with 155 mph winds and flooding fears",
+   "url": "https://www.kuow.org/npr-news/2026-10-11/hurricane-simon-nears-mexico-with-155-mph-winds-and-flooding-fears",
+   "published": "2026-10-11T12:10:54Z",
+   "updated": "2026-10-11T13:04:31Z",
+   "gathered": "2026-10-11T15:53:23Z"
   },
   {
    "h": "Trump weighs joining Saudi strikes on Houthis",
    "b": "President Trump said he is evaluating whether the U.S. should join Saudi strikes on Yemen's Houthi rebels after Riyadh's international airport was attacked again Saturday.",
    "date": "2026-10-10",
-   "publisher": "KUOW",
-   "title": "Trump weighs joining the fight against Houthis after Riyadh airport attack",
    "url": "https://www.kuow.org/npr-news/2026-10-10/trump-weighs-joining-the-fight-against-houthis-after-riyadh-airport-attack",
-   "published": "2026-10-10T21:32:53Z",
-   "updated": "2026-10-10T21:40:03Z",
    "gathered": "2026-10-10T22:49:36Z"
   }
  ],
@@ -50,22 +68,14 @@
    "h": "Hurricane Isaias kills at least 2 on Gulf Coast",
    "b": "Isaias hit the Gulf Coast as a Category 2 storm Friday night with 105 mph winds, snapping trees and cutting power in Florida and Alabama. Flash flood threats persist inland.",
    "date": "2026-10-10",
-   "publisher": "KUOW",
-   "title": "At least 2 deaths attributed to Isaias after hurricane bashes Florida and Alabama",
    "url": "https://www.kuow.org/npr-news/2026-10-10/at-least-2-deaths-attributed-to-isaias-after-hurricane-bashes-florida-and-alabama",
-   "published": "2026-10-10T17:14:03Z",
-   "updated": "2026-10-10T17:19:33Z",
    "gathered": "2026-10-10T18:46:44Z"
   },
   {
    "h": "Kennedy Center names new artistic director",
    "b": "The Kennedy Center named talent manager Rick Canny its new artistic director despite staff complaints about his business practices as a consultant. The center has been closed since September.",
    "date": "2026-10-10",
-   "publisher": "KUOW",
-   "title": "The Kennedy Center names new artistic director, amid concerns",
    "url": "https://www.kuow.org/npr-news/2026-10-10/the-kennedy-center-names-new-artistic-director-amid-concerns",
-   "published": "2026-10-10T18:17:12Z",
-   "updated": "2026-10-10T18:24:33Z",
    "gathered": "2026-10-10T18:46:44Z"
   },
   {
@@ -82,6 +92,28 @@
  ],
  "politics": [],
  "international": [
+  {
+   "h": "139 dead as migrant boat capsizes off Djibouti",
+   "b": "At least 139 people, including 15 children, died and 84 are missing after a boat capsized in the Gulf of Aden off Djibouti, the UN migration agency said.",
+   "date": "2026-10-11",
+   "place": "Djibouti",
+   "tz": "Africa/Djibouti",
+   "publisher": "Al Jazeera",
+   "title": "At least 139 dead, 84 missing as migrant boat capsizes off Djibouti",
+   "url": "https://www.aljazeera.com/news/2026/10/11/at-least-109-dead-over-100-missing-as-migrant-boat-capsizes-off-djibouti",
+   "gathered": "2026-10-11T15:53:23Z"
+  },
+  {
+   "h": "Poland probes alleged plot to kill PM Tusk",
+   "b": "Polish police received information about a possible plot to assassinate Prime Minister Donald Tusk and Defence Minister Wladyslaw Kosiniak-Kamysz. The Interior Ministry ordered action on the matter.",
+   "date": "2026-10-11",
+   "place": "Warsaw, Poland",
+   "tz": "Europe/Warsaw",
+   "publisher": "Al Jazeera",
+   "title": "Polish police probe alleged plot to assassinate PM Tusk, defence minister",
+   "url": "https://www.aljazeera.com/news/2026/10/11/poland-police-probe-alleged-plot-to-assassinate-pm-tusk-defence-minister",
+   "gathered": "2026-10-11T15:53:23Z"
+  },
   {
    "h": "Drone attack shuts Yandex data center",
    "b": "A Yandex data center in the Russian city of Vladimir, east of Moscow, was shut down after a drone attack. The company said no injuries were reported.",
@@ -110,8 +142,6 @@
    "date": "2026-10-11",
    "place": "Taiz, Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Taiz hospitals near collapse as Houthis tighten siege: Yemen government",
    "url": "https://www.aljazeera.com/news/2026/10/11/taiz-hospitals-near-collapse-as-houthis-tighten-siege-yemen-government",
    "gathered": "2026-10-11T09:11:02Z"
   },
@@ -186,6 +216,15 @@
  "science": [],
  "sports": [
   {
+   "h": "Georgia still SEC's king after Week 6",
+   "b": "CBS Sports' Week 6 overreactions: Kirby Smart's Georgia silenced Bryant-Denny Stadium, and Saturday delivered dramatic upsets and a shifted Big Ten hierarchy.",
+   "date": "2026-10-11",
+   "publisher": "CBS Sports",
+   "title": "Week 6 Overreactions: Shorthanded Georgia still sport's king, Mike Elko bites the hand that feeds him",
+   "url": "https://www.cbssports.com/college-football/news/college-football-week-6-scores-takes-georgia-texas-a-m-lsu-texas/",
+   "gathered": "2026-10-11T15:53:23Z"
+  },
+  {
    "h": "Oklahoma upsets No. 1 Texas in Red River",
    "b": "Oklahoma beat top-ranked Texas 27-24 in Dallas as Arch Manning's late interceptions and special teams breakdowns caught up with the previously unbeaten Longhorns.",
    "date": "2026-10-10",
@@ -224,6 +263,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NJ Transit faces 5 weeks of disruptions",
+   "b": "Starting Sunday, NJ Transit rail lines will see cancellations, new departure times and stopping changes as crews move the final track to the new $2.3 billion Portal North Bridge.",
+   "date": "2026-10-11",
+   "publisher": "Gothamist",
+   "title": "NJ Transit riders face 5 weeks of schedule disruptions starting Sunday",
+   "url": "https://gothamist.com/news/nj-transit-riders-face-5-weeks-of-schedule-disruptions-starting-sunday",
+   "published": "2026-10-11T14:00:45Z",
+   "gathered": "2026-10-11T15:53:23Z"
+  },
+  {
    "h": "What we know about the ICE shooting in NYC",
    "b": "Police said a federal immigration officer shot and wounded 28-year-old Oscar Belgal in Marble Hill while his 5-year-old son was in the backseat, setting off anger across the city.",
    "date": "2026-10-10",
@@ -238,21 +287,21 @@
  "weather": {
   "now": {
    "temp": 58,
-   "cond": "Fair",
-   "obs": "11 Oct 05:51 am EDT"
+   "cond": " Light Rain Fog/Mist",
+   "obs": "11 Oct 11:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 66,
-    "text": "Rain, mainly after 11am.  High near 66. East wind 10 to 16 mph, with gusts as high as 26 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+    "text": "Rain.  High near 66. East wind 14 to 17 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 61,
-    "text": "Rain and possibly a thunderstorm, mainly before 2am, then a chance of rain and thunderstorms after 2am.  Low around 61. Northeast wind 15 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+    "text": "Rain likely and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am.  Cloudy, with a low around 61. Northeast wind 15 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Columbus Day",

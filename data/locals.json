@@ -31,16 +31,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Overcast",
-    "obs": "11 Oct 05:52 am EDT"
+    "temp": 63,
+    "cond": " Light Drizzle",
+    "obs": "11 Oct 11:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly cloudy, with a high near 72. West wind 10 to 15 mph, with gusts as high as 30 mph. "
+     "text": "A slight chance of drizzle.  Mostly cloudy, with a high near 72. West wind around 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Tonight",
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,19 +96,29 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Brigham nurses postpone strike to vote on offer",
+    "b": "Brigham and Women's Hospital nurses postponed a strike planned for Wednesday after a 13-hour bargaining session. Negotiators will bring the hospital's latest offer to all 4,000 union members.",
+    "date": "2026-10-11",
+    "publisher": "WBUR",
+    "title": "Brigham nurses postpone strike to vote on hospital's offer",
+    "url": "https://www.wbur.org/news/2026/10/11/brigham-nurses-postpone-strike-to-vote-on-hospitals-offer",
+    "gathered": "2026-10-11T15:53:23Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 55,
     "cond": "Mostly Cloudy",
-    "obs": "11 Oct 05:54 am EDT"
+    "obs": "11 Oct 10:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 62,
-     "text": "A chance of showers after 5pm.  Mostly cloudy, with a high near 62. Calm wind becoming south 5 to 7 mph in the morning.  Chance of precipitation is 30%."
+     "text": "A chance of showers after 5pm.  Cloudy, with a high near 62. South wind around 7 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -154,7 +164,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -165,6 +175,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Serbian Orthodox church heads toward landmark status",
+    "b": "St. Simeon Mirotočivi Serbian Orthodox Church at 3737 E. 114th St., built in 1969 as a faithful interpretation of an ancient Serbian church, is heading toward city landmark status.",
+    "date": "2026-10-11",
+    "publisher": "WBEZ",
+    "title": "Orthodox church modeled after 15th century monastery heads toward landmark status",
+    "url": "https://www.wbez.org/architecture/2026/10/11/orthodox-church-15th-century-monastery-landmark-status",
+    "published": "2026-10-11T12:33:41Z",
+    "updated": "2026-10-11T12:33:41Z",
+    "gathered": "2026-10-11T15:53:23Z"
+   },
+   {
+    "h": "Youth conference honors Rev. Jesse Jackson",
+    "b": "Omega Psi Phi's 10th District hosted a youth leadership and STEM event at Rainbow PUSH Coalition on Jackson's birthday weekend, honoring the late civil rights leader.",
+    "date": "2026-10-11",
+    "publisher": "WBEZ",
+    "title": "Omega Psi Phi Fraternity, Rainbow PUSH celebrate Rev. Jesse Jackson’s birthday with youth conference",
+    "url": "https://www.wbez.org/education/2026/10/11/omega-psi-phi-fraternity-rainbow-push-celebrate-rev-jesse-jacksons-birthday-with-youth-conference",
+    "published": "2026-10-11T10:30:00Z",
+    "updated": "2026-10-11T10:30:11Z",
+    "gathered": "2026-10-11T15:53:23Z"
+   },
    {
     "h": "Chicago remembers Bears 'titan' Mike Ditka",
     "b": "Mayor Brandon Johnson, President Trump and Barack Obama paid tribute to Mike Ditka, whose death was announced Friday. Willis Tower's antennas were set to light up in Bears colors.",
@@ -201,22 +233,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Mostly Cloudy",
-    "obs": "11 Oct 04:53 am CDT"
+    "temp": 65,
+    "cond": "A Few Clouds",
+    "obs": "11 Oct 09:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 73,
-     "text": "Sunny, with a high near 73. East southeast wind around 5 mph. "
+     "temp": 70,
+     "text": "Sunny, with a high near 70. South southeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 63,
-     "text": "Increasing clouds, with a low around 63. South southwest wind 5 to 10 mph. "
+     "text": "Increasing clouds, with a low around 63. South wind 5 to 10 mph. "
     },
     {
      "name": "Columbus Day",
@@ -228,13 +260,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 70,
-     "text": "Mostly clear, with a low around 70. Southwest wind around 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 70. Southwest wind around 15 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 79,
-     "text": "Sunny, with a high near 79. Southwest wind 10 to 15 mph becoming northwest in the afternoon. "
+     "text": "Sunny, with a high near 79. West southwest wind 10 to 15 mph becoming northwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -256,7 +288,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -269,19 +301,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 63,
     "cond": "Mostly Cloudy",
-    "obs": "11 Oct 02:58 am MDT"
+    "obs": "11 Oct 08:58 am MDT"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 83,
-     "text": "Partly sunny, with a high near 83. Light south wind increasing to 5 to 9 mph in the afternoon. Winds could gust as high as 20 mph. "
+     "text": "Partly sunny, with a high near 83. Light south southwest wind becoming south 5 to 9 mph in the afternoon. Winds could gust as high as 20 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Partly cloudy, with a low around 57. South wind 8 to 10 mph, with gusts as high as 23 mph. "
@@ -302,7 +334,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70."
+     "text": "Sunny, with a high near 70. Light north wind becoming northeast 5 to 10 mph in the morning. Winds could gust as high as 21 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -324,7 +356,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -335,6 +367,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Long Beach residents fight high surf to save homes",
+    "b": "Waves fueled by Tropical Storm Rachel are slamming the Peninsula's bulkhead in Long Beach, where crews and residents have reinforced defenses with boards and braces.",
+    "date": "2026-10-11",
+    "publisher": "LAist",
+    "title": "Long Beach Peninsula residents join scramble to save homes from high surf",
+    "url": "https://laist.com/news/climate-environment/long-beach-peninsula-residents-join-scramble-to-save-homes-from-high-surf",
+    "published": "2026-10-11T13:18:31Z",
+    "updated": "2026-10-11T13:25:58Z",
+    "gathered": "2026-10-11T15:53:23Z"
+   },
    {
     "h": "Long Beach orders Peninsula evacuations",
     "b": "Long Beach ordered some Peninsula residents to evacuate Friday night as Tropical Storm Rachel's surf tore apart part of the boardwalk, and fast-tracked plans to rebuild the beach.",
@@ -351,13 +394,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Showers, mainly before 11am.  High near 72. North northwest wind 5 to 15 mph becoming south southwest in the afternoon. Winds could gust as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers, mainly before 11am.  High near 72. West wind 5 to 15 mph becoming south southwest in the afternoon. Winds could gust as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 60,
      "text": "Showers likely, mainly after 11pm.  Mostly cloudy, with a low around 60. South southwest wind 5 to 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -378,7 +421,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72."
+     "text": "Sunny, with a high near 72. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -400,7 +443,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -411,6 +454,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NJ Transit faces 5 weeks of disruptions",
+    "b": "Starting Sunday, NJ Transit rail lines will see cancellations, new departure times and stopping changes as crews move the final track to the new $2.3 billion Portal North Bridge.",
+    "date": "2026-10-11",
+    "publisher": "Gothamist",
+    "title": "NJ Transit riders face 5 weeks of schedule disruptions starting Sunday",
+    "url": "https://gothamist.com/news/nj-transit-riders-face-5-weeks-of-schedule-disruptions-starting-sunday",
+    "published": "2026-10-11T14:00:45Z",
+    "gathered": "2026-10-11T15:53:23Z"
+   },
    {
     "h": "What we know about the ICE shooting in NYC",
     "b": "Police said a federal immigration officer shot and wounded 28-year-old Oscar Belgal in Marble Hill while his 5-year-old son was in the backseat, setting off anger across the city.",
@@ -426,21 +479,21 @@
   "weather": {
    "now": {
     "temp": 58,
-    "cond": "Fair",
-    "obs": "11 Oct 05:51 am EDT"
+    "cond": " Light Rain Fog/Mist",
+    "obs": "11 Oct 11:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 66,
-     "text": "Rain, mainly after 11am.  High near 66. East wind 10 to 16 mph, with gusts as high as 26 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Rain.  High near 66. East wind 14 to 17 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Rain and possibly a thunderstorm, mainly before 2am, then a chance of rain and thunderstorms after 2am.  Low around 61. Northeast wind 15 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Rain likely and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am.  Cloudy, with a low around 61. Northeast wind 15 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Columbus Day",
@@ -480,7 +533,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -492,6 +545,28 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Macron's popularity hits record low",
+    "b": "Just 15 percent of respondents held a favourable view of President Macron in an Ipsos BVA-Cesi poll, the lowest score of his presidency.",
+    "date": "2026-10-11",
+    "publisher": "The Local France",
+    "title": "French President Macron's popularity lowest since taking office: poll",
+    "url": "https://www.thelocal.fr/20261011/french-president-macrons-popularity-lowest-since-taking-office-poll",
+    "published": "2026-10-11T10:27:57Z",
+    "updated": "2026-10-11T10:28:00Z",
+    "gathered": "2026-10-11T15:53:23Z"
+   },
+   {
+    "h": "Ireland proposes €140bn cut to EU budget",
+    "b": "Ireland, holding the EU presidency, suggested cutting the bloc's next proposed budget by 140 billion euros to bridge divisions and reach a deal by year's end.",
+    "date": "2026-10-11",
+    "publisher": "The Local France",
+    "title": "Proposed EU budget cut back in search for Christmas deal",
+    "url": "https://www.thelocal.fr/20261011/proposed-eu-budget-cut-back-in-search-for-christmas-deal",
+    "published": "2026-10-11T15:17:41Z",
+    "updated": "2026-10-11T15:17:44Z",
+    "gathered": "2026-10-11T15:53:23Z"
+   },
    {
     "h": "France and Germany clash over EU budget",
     "b": "France and Germany are at loggerheads over whether to make deep cuts in the EU's next seven-year budget, a fight expected to run past the end of the year.",
@@ -523,7 +598,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "goodnews": []
  },
  {
@@ -537,13 +612,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59. Light northeast wind becoming north 5 to 9 mph in the morning. "
+     "text": "Sunny, with a high near 59. Northeast wind 5 to 9 mph becoming north northwest in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Clear, with a low around 44. North wind around 5 mph becoming calm  in the evening. "
@@ -558,13 +633,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46. Calm wind. "
+     "text": "Increasing clouds, with a low around 46. Calm wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 62,
-     "text": "Partly sunny, with a high near 62."
+     "text": "Partly sunny, with a high near 62. Calm wind. "
     },
     {
      "name": "Tuesday Night",
@@ -586,7 +661,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T13:09:00Z",
+  "updatedAt": "2026-10-11T16:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
