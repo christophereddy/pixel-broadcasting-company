@@ -5135,8 +5135,9 @@ function tuneIn(){
   evs.forEach(t => document.addEventListener(t, back, true));
 }
 // LIVE NOW: the same live-game watcher as the newsroom's (shared/live.js). The chip shows whenever a game is live and the
-// viewer isn't already watching it; the sports desk also goes to that game after the segment it is on (show.js).
-function liveOn(lg){ return lg && S.mode === 'live' && S.sport === lg.sport && String(S.game) === String(lg.id); }
+// viewer isn't already watching a live game (any of them: pointing at another one mid-game only confuses); the sports
+// desk also goes to that game after the segment it is on (show.js).
+function liveOn(lg){ return lg && S.mode === 'live' && !(typeof SHOW === 'object' && SHOW.on); }
 function liveChip(){
   const a = $('livenow');
   const draw = () => { const lg = PBC_LIVE.current; a.hidden = !lg || liveOn(lg); };
