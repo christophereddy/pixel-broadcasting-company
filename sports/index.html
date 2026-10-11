@@ -44,7 +44,7 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .chip{width:1.8cqw;height:1.8cqw;flex:none;border:.25cqw solid var(--white)}
 .row .ab{flex:1}
 .row .sc{font-size:2.4cqw;color:var(--gold);font-variant-numeric:tabular-nums}
-/* basketball: timeouts left, one bar each */
+/* basketball and football: timeouts left, one bar each */
 .tos{display:flex;gap:.3cqw}
 .tos i{width:.45cqw;height:1.3cqw;background:var(--gold)}
 .poss{width:0;height:0;border-top:.6cqw solid transparent;border-bottom:.6cqw solid transparent;border-left:.9cqw solid var(--gold);visibility:hidden}
@@ -372,6 +372,7 @@ const SPORTS = {
       ['OpenF1 data license', 'CC BY-NC-SA 4.0', 'https://creativecommons.org/licenses/by-nc-sa/4.0/']]}
 };
 const isBB = () => SPORTS[S.sport]?.family === 'basketball';
+const isFootball = () => SPORTS[S.sport]?.family === 'football';
 // the footer says where this sport's data comes from
 function setCredits(){
   const f = document.getElementById('foot'); if (!f) return;
@@ -1487,6 +1488,21 @@ function newKickoff(){
   const d = new Date(evOf(S.game)?.date || Date.now());
   return d.getFullYear() > 2024 || (d.getFullYear() === 2024 && d.getMonth() >= 6);
 }
+// 2026 (NFL rule 6-1-3, adopted April 2026): the return team needs only five on its 35, and up to four "floaters" stand
+// off the line in the setup zone, never more than two in one third of the field and one outside each hash
+function kickoff2026(){
+  const d = new Date(evOf(S.game)?.date || Date.now());
+  return newKickoff() && (d.getFullYear() > 2026 || (d.getFullYear() === 2026 && d.getMonth() >= 6));
+}
+// the kicker and returner a kick's text names ("H.Butker kicks 64 yards from KC 35 to BUF 1. B.Codrington to BUF 27"):
+// they take the kicker's and returner's spots before the lineup is made, so the returner isn't left in the setup zone
+// as a blocker while someone else waits for the ball
+function kickNames(L, tx){
+  if (L.kind !== 'kickoff' && L.kind !== 'punt') return;
+  const names = playNames(tx), k = names.find(n => n?.team === L.off), r = names.find(n => n?.team === L.def);
+  if (k?.num != null) S.over[L.off.id][L.kind === 'punt' ? 'P0' : 'K0'] = k.num;
+  if (r?.num != null) S.over[L.def.id][L.kind === 'punt' ? 'PR0' : 'KR0'] = r.num;
+}
 // each team's sideline, where players come on and go off: the home bench on the near side, the visitors' on the far side
 const benchY = team => team === S.home ? 54.6 : -1.3;
 const benchX = x => clamp(x, 28, 72);
@@ -1499,16 +1515,27 @@ function twoPoint(p){
   if (!/two-point|two point|2pt/i.test(tx) || /touchdown|kick/i.test(tx)) return null;
   return {two: /\bpass\b/i.test(tx) ? 'pass' : 'rush', good: /succeeds|\bgood\b|conversion (?:pass|run) good/i.test(tx) || (!/fail|no good|incomplete|intercept/i.test(tx) && !!p.scoringPlay)};
 }
+// yards the kicker starts behind the ball, and the seconds his run-up takes
+const KICK_RUN = 6, KICK_T = 0.9;
 function makeFormation(off, def, los, kind){
   const dir = off === S.home ? 1 : -1, A = [];
   const add = (team, role, x, y) => A.push({team, role, kit: team.kit, x, y, num: null, frame: 0, track: null, chase: false, hop: 0, lx: x, ly: y});
   if (kind === 'kickoff' && newKickoff()) {
-    const recv40 = dir > 0 ? 60 : 40, setup = dir > 0 ? 65 : 35, land = dir > 0 ? 94 : 6;
-    add(off, 'K0', los - dir * 1.5, MIDY);
+    // the ball is on the tee at the kicking team's 35; the kicker takes his run-up from a few yards behind it
+    const recv40 = dir > 0 ? 60 : 40, setup = dir > 0 ? 65 : 35, land = dir > 0 ? 96 : 4;
+    add(off, 'K0', los - dir * KICK_RUN, MIDY - 2.5);
+    // ten on the receiving team's 40, five on each side of the ball, across the field
     for (let i = 0; i < 10; i++) add(off, 'ST' + i, recv40, 4 + i * 5.05 + (i > 4 ? 1.4 : 0));
-    for (let i = 0; i < 7; i++) add(def, 'RT' + i, setup, 8 + i * 6.2);
-    add(def, 'RT7', setup + dir * 4, MIDY - 9); add(def, 'RT8', setup + dir * 4, MIDY + 9);
-    add(def, 'KR0', land, MIDY - 3); add(def, 'KR1', land, MIDY + 3);
+    // the return team: front feet on its own 35, the rest in the setup zone (the 35 to the 30), two returners deep
+    // (hashes are 23.6 yards in from each sideline)
+    if (kickoff2026()) {
+      [6, 16.5, MIDY, 36.8, 47.3].forEach((y, i) => add(def, 'RT' + i, setup, y));
+      [[3.5, 11], [3.5, 42.3], [3, 20], [3, 33.3]].forEach(([d, y], i) => add(def, 'RT' + (i + 5), setup + dir * d, y));
+    } else {
+      for (let i = 0; i < 7; i++) add(def, 'RT' + i, setup, 8 + i * 6.2);
+      add(def, 'RT7', setup + dir * 4, MIDY - 9); add(def, 'RT8', setup + dir * 4, MIDY + 9);
+    }
+    add(def, 'KR0', land, MIDY - 4); add(def, 'KR1', land, MIDY + 4);
   } else if (kind === 'kickoff') {
     for (let i = 0; i < 10; i++) add(off, 'ST' + i, los - dir * 1, 5 + i * 4.8 + (i > 4 ? 1.5 : 0));
     add(off, 'K0', los - dir * 5, MIDY);
@@ -1616,8 +1643,10 @@ function planPlay(p){
 
   // build formation and tween from where players are now. A player is the same player if he wears the same number for
   // the same team; anyone new to the play runs on from his sideline, and anyone not in it runs off (sendOff, below).
+  kickNames({kind, off, def}, tx);
   const F = makeFormation(off, def, los, kind);
-  const used = new Set(), here = S.actors.filter(b => !b.leaving);
+  // a player still on his way off who is in this lineup turns round: he is never on the field twice
+  const used = new Set(), here = S.actors.filter(b => !b.gone).sort((a, b) => !!a.leaving - !!b.leaving);
   const starts = F.map(a => {
     a.n0 = a.num;
     const prev = here.find(b => !used.has(b) && b.team === a.team && b.num === a.num);
@@ -1665,27 +1694,27 @@ function planPlay(p){
   const credit = k => { const m = new RegExp(k + '-(' + NAME_RE.source + ')').exec(tx); return m ? findPlayer(m[1]) : null; };
 
   if (kind === 'kickoff') {
+    S.tee = newKickoff() ? dir : 0;
     const k = cast(F.find(a => a.team === off && a.role === 'K0'), names[0]);
     const land = kickLand(ks, los, dir, 60), yds = Math.abs(land - los);
-    const ret = cast(F.find(a => a.team === def && a.role === 'KR0'), names[1]);
-    ret.track[1][1] = clamp(land, -8, 108); ret.track[1][2] = MIDY;
-    const other = F.find(a => a.team === def && /^KR/.test(a.role) && a !== ret);
-    if (other && Math.hypot(other.track[1][1] - ret.track[1][1], other.track[1][2] - MIDY) < 3) other.track[1][2] = MIDY + 6;
-    go(k, 0.6, los, MIDY);
-    seg(0, 0.6, {k: 'spot', x: los, y: MIDY}); plan.sfx.push([PRE + 0.6, 'kick']);
-    const air = 0.6 + yds / 28; seg(0.6, air, {k: 'arc', x0: los, y0: MIDY, x1: land, y1: MIDY, peak: 60});
-    if (/touchback/i.test(tx) || Math.abs(endX - land) < 1) { seg(air, air + 0.8, {k: 'hold', a: ret}); tEnd = air + 0.9; }
-    else { go(ret, air, land, MIDY); go(ret, air + runTime(land, endX), endX, MIDY + 3); seg(air, air + 9, {k: 'hold', a: ret}); carrier = ret; tEnd = air + runTime(land, endX); }
+    // the returners wait at their spots and the one the text names goes to the ball while it's in the air
+    const ret = cast(F.find(a => a.team === def && a.role === 'KR0'), names.find(n => n?.team === def));
+    const catchX = clamp(land, -8, 108);
+    go(k, KICK_T, los, MIDY);
+    seg(0, KICK_T, {k: 'spot', x: los, y: MIDY}); plan.sfx.push([PRE + KICK_T, 'kick']);
+    const air = KICK_T + yds / 28; seg(KICK_T, air, {k: 'arc', x0: los, y0: MIDY, x1: land, y1: MIDY, peak: 60});
+    if (/touchback/i.test(tx) || Math.abs(endX - land) < 1) { go(ret, air, catchX, MIDY); seg(air, air + 0.8, {k: 'hold', a: ret}); tEnd = air + 0.9; }
+    else { go(ret, air, catchX, MIDY); go(ret, air + runTime(land, endX), endX, MIDY + 3); seg(air, air + 9, {k: 'hold', a: ret}); carrier = ret; tEnd = air + runTime(land, endX); }
     if (newKickoff()) {
       // nobody but the kicker and the returners moves until the ball comes down
       for (const a of F) if (a.team === off && a !== k) a.chase = PRE + air;
       for (const a of F) if (a.team === def && a !== ret) a.chase = PRE + air + 0.2;
       go(k, air, los + dir * 8, MIDY); k.chase = PRE + air + 0.5;
     } else {
-      for (const a of F) if (a.team === off && a !== k) { go(a, 0.6, a.track[1][1], a.track[1][2]); a.chase = PRE + 0.9; }
+      for (const a of F) if (a.team === off && a !== k) { go(a, KICK_T, a.track[1][1], a.track[1][2]); a.chase = PRE + KICK_T + 0.3; }
       for (const a of F) if (a.team === def && a !== ret) { a.chase = PRE + air - 0.6; }
     }
-    plan.carrierName = names[1]?.last;
+    plan.carrierName = names.find(n => n?.team === def)?.last;
   } else if (special) {
     const holder = qb; let kicker = kind === 'punt' ? qb : R('K0');
     tag(c, credit('Center')); if (kind !== 'punt') tag(holder, credit('Holder'));
@@ -1694,18 +1723,17 @@ function planPlay(p){
     plan.sfx.push([PRE + SNAP + 0.75, 'kick']);
     if (kind === 'punt') {
       kicker = cast(kicker, names[0]);
-      const land = kickLand(ks, los, dir, 40), yds = Math.abs(land - los), ret = cast(D('PR0'), names[1]);
-      ret.track[1][1] = land; ret.track[1][2] = MIDY;
+      const land = kickLand(ks, los, dir, 40), yds = Math.abs(land - los), ret = cast(D('PR0'), names.find(n => n?.team === def));
       seg(SNAP + 0.35, SNAP + 0.75, {k: 'hold', a: kicker});
       const air = SNAP + 0.75 + 0.6 + yds / 30;
       seg(SNAP + 0.75, air, {k: 'arc', x0: los - dir * 13, y0: MIDY, x1: land, y1: MIDY, peak: 70});
       const fair = /fair catch|downed|out of bounds|touchback/i.test(tx);
       if (!fair && Math.abs(endX - land) > 1) { go(ret, air, land, MIDY); go(ret, air + runTime(land, endX), endX, MIDY - 3); carrier = ret; tEnd = air + runTime(land, endX); }
-      else tEnd = air + 0.5;
+      else { go(ret, air, land, MIDY); tEnd = air + 0.5; }
       seg(air, air + 9, {k: 'hold', a: ret});
       for (const a of F) if (a.team === off && a !== kicker) a.chase = PRE + SNAP + 0.5;
       for (const a of F) if (a.team === def && a !== ret) a.chase = PRE + air - 0.3;
-      plan.carrierName = names[1]?.last;
+      plan.carrierName = names.find(n => n?.team === def)?.last;
     } else {
       kicker = cast(kicker, names[0]);
       plan.good = (/\bis good\b|\bgood\b/i.test(tx) || /field goal good|extra point good/i.test(p.type?.text || '')) && !/no good|blocked|missed/i.test(tx + ' ' + (p.type?.text || ''));
@@ -1824,7 +1852,7 @@ function planPlay(p){
     a.track[0] = [0, x0, y0]; a.x = a.lx = x0; a.y = a.ly = y0;
   }
   plan.carrier = carrier;
-  plan.actors = F.concat(sendOff(F, PRE));
+  plan.actors = F.concat(sendOff(used, PRE));
   plan.dur = PRE + tEnd + (td ? 1.6 : 0.5);
   plan.sfx.push([PRE + SNAP, 'snap']);
   plan.sfx.push([PRE + tEnd, td ? 'td' : (kind === 'pen' ? '' : 'whistle')]);
@@ -1833,10 +1861,10 @@ function planPlay(p){
   return plan;
 }
 // players on the field who aren't in this play's lineup jog to their sideline while it lines up, then leave
-function sendOff(F, PRE){
+function sendOff(used, PRE){
   const out = [];
   for (const b of S.actors) {
-    if (F.some(a => a.team === b.team && a.num === b.num) && !b.leaving) continue;
+    if (used.has(b) || b.gone) continue;
     const tx = b.leaving ? b.tx ?? b.x : benchX(b.x), ty = benchY(b.team);
     const t = Math.max(PRE, Math.hypot(tx - b.x, ty - b.y) / 7);
     out.push(Object.assign(b, {track: [[0, b.x, b.y], [t, tx, ty]], chase: false, escort: false, hop: 0, leaving: true, benched: true}));
@@ -2878,7 +2906,7 @@ function bbReset(){
   Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, ft: null, got: null, tos: [], per: 1, secs: lg().q, run: {team: null, pts: 0, said: 0}, said: {}, holder: null, chairs: {}, sitters: {}, cheer: null});
   for (const t of [S.home, S.away]) if (t) st.on[t.id] = (st.starters[t.id] || []).slice(0, 5);
   S.ball.x = 47; S.ball.y = 25; S.ball.h = 0; S.ball.vis = true;
-  bbTimeoutsBoard();
+  timeoutsBoard();
   S.camX = bcx(47); S.camY = H / 2;
 }
 // what a play is, from ESPN's play type, text and participants (in order: shooter or ball handler, then assister,
@@ -2957,7 +2985,7 @@ function applyStateBB(p, plan){
   const pt = S.bb.poss;
   $('dd').textContent = pt ? `${pt.abbr} BALL` : '';
   $('possH').classList.toggle('on', pt === S.home); $('possA').classList.toggle('on', !!pt && pt === S.away);
-  bbTimeoutsBoard();
+  timeoutsBoard();
 }
 // timeouts left, under the league's limits for the fourth quarter, its last three minutes and overtime
 function bbTimeoutsLeft(team){
@@ -2968,12 +2996,12 @@ function bbTimeoutsLeft(team){
   if (per === 4 && st.secs <= 180) n = Math.min(n, R.late - used(o => o.per === 4 && o.secs <= 180));
   return Math.max(0, n);
 }
-// one small bar per timeout left, beside each team's score, like a TV scoreboard
-function bbTimeoutsBoard(){
+// one small bar per timeout left, beside each team's score, like a TV scoreboard (basketball and football)
+function timeoutsBoard(){
   for (const [id, t] of [['tosA', S.away], ['tosH', S.home]]) {
-    const n = isBB() && S.bb?.tos && t ? bbTimeoutsLeft(t) : 0;
-    $(id).replaceChildren(...Array.from({length: n}, () => document.createElement('i')));
-    $(id).title = isBB() && t ? `${n} timeout${n === 1 ? '' : 's'} left` : '';
+    const n = !t ? null : isBB() && S.bb?.tos ? bbTimeoutsLeft(t) : isFootball() && S.fbTos ? fbTimeoutsLeft(t) : null;
+    $(id).replaceChildren(...Array.from({length: n || 0}, () => document.createElement('i')));
+    $(id).title = n == null ? '' : `${n} timeout${n === 1 ? '' : 's'} left`;
   }
 }
 
@@ -3658,8 +3686,10 @@ function step(now){
     S.camX += (tx - S.camX) * 0.07; S.camY += (ty - S.camY) * 0.07;
     S.camX = clamp(S.camX, W / 2, MB.FW - W / 2); S.camY = clamp(S.camY, H / 2, MB.FH - H / 2);
   } else {
-    // camera follows the ball
-    const target = clamp(S.ball.x, 10, 90);
+    // camera follows the ball. A kickoff under the 2024 rules is framed from the tee to the return team's setup zone
+    // until the ball is kicked, so both teams' lines are on screen
+    const tee = S.tee && (!S.anim || (S.anim.plan.kind === 'kickoff' && S.ballSeg === 'spot')) ? S.tee * 17 : 0;
+    const target = clamp(S.ball.x + tee, 10, 90);
     S.cam += (target - S.cam) * Math.min(1, 0.06 + (S.anim ? 0.05 : 0.02));
     S.cam = clamp(S.cam, 10, 90);
   }
@@ -3698,7 +3728,7 @@ function render(now){
 
 /* ================= state, scoreboard, transcript ================= */
 function setBoard(){
-  if (isF1()) { bbTimeoutsBoard(); return f1Board(); }
+  if (isF1()) { timeoutsBoard(); return f1Board(); }
   if (!S.home) return;
   $('abA').textContent = S.away.abbr; $('abH').textContent = S.home.abbr;
   $('chipA').style.background = S.away.color; $('chipH').style.background = S.home.color;
@@ -3706,7 +3736,7 @@ function setBoard(){
   $('chipA').style.borderColor = S.away.alt; $('chipH').style.borderColor = S.home.alt;
   $('scA').textContent = S.prevScore.a; $('scH').textContent = S.prevScore.h;
   if (S.game) { $('tc-away').querySelector('.ts').textContent = S.prevScore.a; $('tc-home').querySelector('.ts').textContent = S.prevScore.h; }
-  bbTimeoutsBoard();
+  timeoutsBoard();
 }
 function setBadge(){
   const b = $('badge');
@@ -3719,9 +3749,28 @@ function setFeedTitle(){
   $('feedtitle').textContent = (typeof SHOW === 'object' && SHOW.on) ? 'SPORTS DESK' : S.mode === 'replay' ? 'REPLAY FEED' : 'LIVE FEED';
 }
 const qName = n => n > 5 ? 'OT' + (n - 4) : n > 4 ? 'OT' : 'Q' + n;
+// Football timeouts: three a half in the NFL and in college. NFL overtime gives two in a regular-season game and, in the
+// playoffs, three for each pair of overtime periods; college gives one each overtime period. ESPN numbers a team's
+// timeouts in the half ("Timeout #2 by BUF at 01:58."), and a lost challenge costs one ("KC challenged ... (Timeout #2.)").
+const fbPlayoff = () => evOf(S.game)?.season?.type === 3;
+const fbHalf = per => per <= 2 ? 'h1' : per <= 4 ? 'h2' : S.sport === 'cfb' ? 'ot' + per : fbPlayoff() ? 'ot' + Math.floor((per - 5) / 2) : 'ot';
+const fbAllowed = per => per <= 4 ? 3 : S.sport === 'cfb' ? 1 : fbPlayoff() ? 3 : 2;
+function fbTimeoutStep(p){
+  const per = p.period?.number; if (per) S.fbTos.per = per;
+  const tx = p.text || '', all = tx + ' ' + (p.type?.text || '');
+  if (!/time ?out/i.test(all)) return;
+  // official, injury and TV timeouts don't count against a team
+  const lost = /\b([A-Z]{2,5}) challenged\b/.exec(tx);
+  const tm = lost ? (/\(Timeout #\d/i.test(tx) ? teamByAbbr(lost[1]) : null) : /official|injury|tv timeout|media/i.test(all) ? null : timeoutTeam(p);
+  if (!tm) return;
+  const used = (S.fbTos[fbHalf(S.fbTos.per)] ||= {}), n = /Timeout #(\d)/i.exec(tx);
+  used[tm.id] = n ? Math.max(used[tm.id] || 0, +n[1]) : (used[tm.id] || 0) + 1;
+}
+const fbTimeoutsLeft = team => Math.max(0, fbAllowed(S.fbTos.per) - (S.fbTos[fbHalf(S.fbTos.per)]?.[team.id] || 0));
 function applyState(p, plan){
   if (isMLB()) return applyStateMLB(p, plan);
   if (isBB()) return applyStateBB(p, plan);
+  if (S.fbTos) fbTimeoutStep(p);
   if (p.homeScore != null) S.prevScore.h = p.homeScore;
   if (p.awayScore != null) S.prevScore.a = p.awayScore;
   setBoard();
@@ -3764,11 +3813,13 @@ function restFormation(walk, plan){
   if (isMLB()) return mlbRest(walk, plan);
   if (isBB()) return bbRest(walk);
   let poss = S.offDir === -1 ? S.away : S.home, def = poss === S.home ? S.away : S.home;
-  let F;
+  let F; S.tee = 0;
   const nx = S.queue.slice(0, 3).find(q => classify(q) !== 'admin');
   if (nx) {
     const L = lineOf(nx);
     if (L.kind === 'kickoff') S.ball.x = L.los; // the ball goes on the tee: the camera follows it up the field
+    S.tee = L.kind === 'kickoff' && newKickoff() ? L.dir : 0;
+    kickNames(L, nx.text || '');
     F = makeFormation(L.off, L.def, L.los, ['kickoff', 'punt', 'fg', 'pat'].includes(L.kind) ? L.kind : 'rush');
   } else if (plan && plan.td) {
     // after a touchdown, line up for the extra point
@@ -3777,24 +3828,25 @@ function restFormation(walk, plan){
     F = makeFormation(poss, def, S.ball.x, 'pat');
   } else if (plan && (plan.kind === 'pat' || plan.two || (plan.kind === 'fg' && plan.good))) {
     // after the try or a field goal, the scoring team kicks off from its own 35
-    S.ball.x = plan.off === S.home ? 35 : 65;
+    S.ball.x = plan.off === S.home ? 35 : 65; S.tee = newKickoff() ? plan.dir : 0;
     F = makeFormation(plan.off, plan.def, S.ball.x, 'kickoff');
   } else F = makeFormation(poss, def, S.ball.x, S.down ? 'rush' : 'kickoff');
   if (!walk || !S.actors.length) { S.actors = F; return; }
-  // the same player (team and number) walks to his new spot; thirty yards or more up the field means he leaves and comes back on
-  const free = S.actors.filter(b => !b.leaving), out = [];
+  // the same player (team and number) walks to his new spot, and jogs there when it's thirty yards or more up the field
+  // or he was on his way off: one player is never on the field twice
+  const free = S.actors.filter(b => !b.gone).sort((a, b) => !!a.leaving - !!b.leaving), out = [];
   for (const f of F) {
     const i = free.findIndex(b => b.team === f.team && b.num === f.num), a = i < 0 ? null : free.splice(i, 1)[0];
-    if (a && Math.abs(a.x - f.x) < 30) {
-      a.role = f.role; a.tx = f.x; a.ty = f.y; a.track = null; a.chase = false; a.hop = 0; a.entering = false;
-      a.walkSpeed = 2.2 + (hash(f.role + f.team.id) % 10) / 10;
+    if (a) {
+      const jog = a.leaving || Math.abs(a.x - f.x) >= 30;
+      a.role = f.role; a.tx = f.x; a.ty = f.y; a.track = null; a.chase = false; a.hop = 0; a.leaving = false; a.entering = jog;
+      a.walkSpeed = jog ? 6.5 + (hash(f.role) % 10) / 10 : 2.2 + (hash(f.role + f.team.id) % 10) / 10;
       out.push(a); continue;
     }
-    if (a) free.push(a);
     Object.assign(f, {tx: f.x, ty: f.y, x: benchX(f.x), y: benchY(f.team), lx: benchX(f.x), ly: benchY(f.team), entering: true, walkSpeed: 6.5 + (hash(f.role) % 10) / 10});
     out.push(f);
   }
-  for (const b of free.concat(S.actors.filter(b => b.leaving))) {
+  for (const b of free) {
     if (!b.leaving) Object.assign(b, {tx: benchX(b.x), ty: benchY(b.team), leaving: true, entering: false, track: null, chase: false, hop: 0, walkSpeed: 6.5});
     out.push(b);
   }
@@ -3819,7 +3871,9 @@ async function runPlay(p, fast, tok){
   if (!isTimeout) hideBanner();
   await animate(plan, tok);
   if (tok !== S.token) return;
-  S.actors = S.actors.filter(a => !a.benched); // the players who ran off during the play are on the sideline now
+  // the players who ran off during the play are on the sideline now; one still on his way keeps walking off
+  S.actors = S.actors.filter(a => !a.benched || Math.abs(a.y - benchY(a.team)) > 1.5);
+  for (const a of S.actors) if (a.benched) Object.assign(a, {benched: false, track: null, tx: benchX(a.x), ty: benchY(a.team), walkSpeed: 6.5});
   const before = {...S.prevScore};
   addLog(p); applyState(p, plan);
   if (!plan.static) restFormation(true, plan);
@@ -3926,6 +3980,7 @@ async function selectGame(id, mode){
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
   S.speaking = null; S.queue = []; S.seen = new Set(); S.dukeTwoMin = {}; S.game = id; S.mode = mode; S.replayDone = false;
   S.prevScore = {h: 0, a: 0}; S.down = 0; S.flag = null; S.view = null; S.summary = null; S.losX = null; S.fdX = null;
+  S.fbTos = isFootball() ? {per: 1} : null;
   S.rp = null; S.ri = 0; S.paused = false; $('tline').hidden = true; $('tl-pause').textContent = 'PAUSE';
   const t = teamsOf(ev); S.home = t.home; S.away = t.away;
   sideColors();
@@ -4145,6 +4200,7 @@ function seekTo(i, why){
   if (S.anim) { const r = S.anim.res; S.anim = null; r(); }
   S.speaking = null; S.replayDone = false; S.flag = null; hideBanner();
   S.prevScore = {h: 0, a: 0}; S.down = 0; S.losX = null; S.fdX = null; S.ball.x = 35; S.ball.h = 0; S.offDir = 1;
+  S.fbTos = isFootball() ? {per: 1} : null;
   $('dd').textContent = ''; $('possH').classList.remove('on'); $('possA').classList.remove('on');
   $('log').innerHTML = ''; setBoard();
   const before = R.plays.slice(0, i);
@@ -4926,13 +4982,17 @@ function renderTeamPage(){
 
 /* ================= notices ================= */
 function hideBanner(){ $('banner').hidden = true; hideAdCut(); clearTimeout(S.cutT); }
-function showTimeout(p){
+// the team that called a timeout
+function timeoutTeam(p){
   const m = (p.text || '').match(/by ([A-Z]{2,5})\b/) || (p.text || '').match(/^Timeout ([A-Z]{2,5})\b/);
   // basketball names the team ("Celtics Full timeout")
-  const tm = (m ? teamByAbbr(m[1]) : null)
+  return (m ? teamByAbbr(m[1]) : null)
     // college names the school: "Timeout PENN STATE, clock 05:12"
     || (S.sport === 'cfb' ? [S.home, S.away].find(t => t && new RegExp('^Timeout (' + [t.abbr, t.loc, t.nick].map(x => x.replace(/[^A-Za-z0-9 &'.]/g, '').replace(/[.]/g, '\\.')).join('|') + ')\\b', 'i').test(p.text || '')) : null)
     || (isBB() ? [S.home, S.away].find(t => t && (p.text || '').includes(t.nick)) || teamOfId(p.team?.id) : null);
+}
+function showTimeout(p){
+  const tm = timeoutTeam(p);
   const n = (p.text || '').match(/#(\d)/);
   $('banner-sub').textContent = tm ? `${tm.nick.toUpperCase()}${n ? ' · TIMEOUT #' + n[1] : ''}` : (/official|tv/i.test(p.text || '') ? 'OFFICIAL TIMEOUT' : '');
   $('banner').querySelector('.bt').textContent = 'TIME OUT';
