@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11T10:10:00Z",
+ "updatedAt": "2026-10-11T13:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -29,11 +29,20 @@
  ],
  "national": [
   {
+   "h": "Dhillon reshapes DOJ's civil rights division",
+   "b": "Over 18 months, Harmeet Dhillon has pushed out hundreds of longtime attorneys from the Justice Department's Civil Rights Division and replaced many with inexperienced ideological allies, NPR reports.",
+   "date": "2026-10-11",
+   "publisher": "KUOW",
+   "title": "Reshaped civil rights mission at Justice Department transforms its work, workforce",
+   "url": "https://www.kuow.org/npr-news/2026-10-11/reshaped-civil-rights-mission-at-justice-department-transforms-its-work-workforce",
+   "published": "2026-10-11T09:00:00Z",
+   "updated": "2026-10-11T09:36:37Z",
+   "gathered": "2026-10-11T10:10:18Z"
+  },
+  {
    "h": "DOJ probes TV networks over Trump coverage halt",
    "b": "The Justice Department is investigating whether TV networks violated antitrust laws by halting coverage of President Trump after the White House pulled reporters' credentials.",
    "date": "2026-10-11",
-   "publisher": "Al Jazeera",
-   "title": "US opens antitrust probe into TV networks for halting Trump coverage",
    "url": "https://www.aljazeera.com/news/2026/10/11/us-opens-antitrust-probe-into-tv-networks-halting-trump-coverage",
    "gathered": "2026-10-11T09:11:02Z"
   },
@@ -73,6 +82,17 @@
  ],
  "politics": [],
  "international": [
+  {
+   "h": "Drone attack shuts Yandex data center",
+   "b": "A Yandex data center in the Russian city of Vladimir, east of Moscow, was shut down after a drone attack. The company said no injuries were reported.",
+   "date": "2026-10-11",
+   "place": "Vladimir, Russia",
+   "tz": "Europe/Moscow",
+   "publisher": "Al Jazeera",
+   "title": "Russia’s Yandex says data centre shut down after drone attack",
+   "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack",
+   "gathered": "2026-10-11T10:10:18Z"
+  },
   {
    "h": "Pakistan imposes emergency rule in Khyber Pakhtunkhwa",
    "b": "Pakistan declared a state of emergency in Khyber Pakhtunkhwa, effectively suspending the provincial government run by jailed former Prime Minister Imran Khan's PTI party.",
@@ -143,6 +163,17 @@
  ],
  "business": [
   {
+   "h": "Job hunts are taking longer",
+   "b": "In a sluggish hiring environment, unemployed workers are taking longer to find new jobs, and in many cases their unemployment benefits run out first.",
+   "date": "2026-10-11",
+   "publisher": "KUOW",
+   "title": "It's taking longer to find a new job after losing one",
+   "url": "https://www.kuow.org/npr-news/2026-10-11/its-taking-longer-to-find-a-new-job-after-losing-one",
+   "published": "2026-10-11T09:00:00Z",
+   "updated": "2026-10-11T09:36:55Z",
+   "gathered": "2026-10-11T10:10:18Z"
+  },
+  {
    "h": "Musk vows affordable Starlink in India",
    "b": "Elon Musk said he would price Starlink affordably in India to take on Mukesh Ambani's Reliance Jio, days before Jio's parent launches India's largest-ever IPO.",
    "date": "2026-10-11",
@@ -206,9 +237,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "11 Oct 04:51 am EDT"
+   "obs": "11 Oct 05:51 am EDT"
   },
   "periods": [
    {
