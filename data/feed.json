@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11T01:09:00Z",
+ "updatedAt": "2026-10-11T04:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Riyadh airport attack kills 12, injures 309",
-   "b": "Saudi authorities say 12 people were killed and 309 injured in an attack on Riyadh's airport, according to Al Jazeera's live coverage of the Iran war.",
+   "h": "Riyadh airport attack kills 12",
+   "b": "Saudi authorities say 12 people were killed in an attack on Riyadh's airport, according to Al Jazeera's live coverage of the Iran war.",
    "date": "2026-10-10",
    "publisher": "Al Jazeera",
-   "title": "12 killed, 309 injured in attack on Riyadh airport, Saudi authorities say",
+   "title": "Iran war updates: 12 killed in attack on Riyadh airport – Saudi authorities",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -122,11 +122,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Oklahoma upsets No. 1 Texas in Red River",
+   "b": "Oklahoma beat top-ranked Texas 27-24 in Dallas as Arch Manning's late interceptions and special teams breakdowns caught up with the previously unbeaten Longhorns.",
+   "date": "2026-10-10",
+   "publisher": "CBS Sports",
+   "title": "Texas spent weeks escaping its flaws, and Oklahoma exposed all of them in Red River",
+   "url": "https://www.cbssports.com/college-football/news/texas-flaws-oklahoma-exposed-red-river/",
+   "gathered": "2026-10-11T02:04:12Z"
+  },
+  {
    "h": "Indiana rallies past Nebraska",
    "b": "Quarterback Josh Hoover rallied the defending national champion Hoosiers from a double-digit fourth-quarter deficit to escape Nebraska's upset bid.",
    "date": "2026-10-10",
-   "publisher": "CBS Sports",
-   "title": "Josh Hoover gets his Fernando Mendoza moment as Indiana escapes Nebraska's upset bid",
    "url": "https://www.cbssports.com/college-football/news/josh-hoover-fernando-mendoza-moment-indiana-nebraska/",
    "gathered": "2026-10-10T22:49:36Z"
   },
@@ -168,16 +175,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 62,
+   "temp": 61,
    "cond": "Fair",
-   "obs": "10 Oct 17:51 pm EDT"
+   "obs": "10 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 57,
-    "text": "Mostly cloudy, with a low around 57. East wind 6 to 9 mph. "
+    "temp": 60,
+    "text": "Mostly cloudy, with a steady temperature around 60. East wind around 7 mph. "
    },
    {
     "name": "Sunday",
