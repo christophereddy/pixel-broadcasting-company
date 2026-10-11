@@ -2936,7 +2936,7 @@ function bbStep(p, k, dh, da){
     case 'jump': st.poss = k.recv || st.poss; st.tip = false; st.loose = false; break;
     case 'shot': st.poss = k.made ? otherTeam(k.team) || st.poss : k.team || st.poss; st.loose = !k.made; break;
     case 'ft': if (k.last && !k.tech) { st.poss = k.made ? otherTeam(k.team) || st.poss : k.team || st.poss; st.loose = !k.made; } break;
-    case 'reb': st.poss = k.team || st.poss; st.loose = false; break;
+    case 'reb': st.poss = k.team || (k.off ? st.poss : otherTeam(st.poss)) || st.poss; st.loose = false; break; // a team rebound names no team
     case 'to': st.poss = otherTeam(k.team) || st.poss; st.loose = false; break;
     case 'foul': if (!k.tech) st.poss = otherTeam(k.team) || st.poss; st.loose = false; break;
   }
@@ -3159,6 +3159,9 @@ function bbSpot(p, team){
 function bbSetup(p){
   const k = p._k || (p._k = classifyBB(p)), st = S.bb;
   if (!st || !S.home || !['shot', 'ft', 'reb', 'to', 'foul', 'jump'].includes(k.kind)) return null;
+  // a team rebound ("Defensive Rebound", no player or team named) goes to the side the word says: a defensive one to
+  // the team that didn't shoot, an offensive one back to the shooters
+  if (k.kind === 'reb' && !k.team && st.poss) k.team = k.off ? st.poss : otherTeam(st.poss) || st.poss;
   const off = k.kind === 'reb' ? (st.poss || k.team || S.home) : k.kind === 'foul' ? (k.offFoul ? k.team : otherTeam(k.team)) || st.poss || S.home : (k.team || st.poss || S.home);
   if (k.kind !== 'jump' && st.on && k.ids[0]) {
     // make sure the player in the play is on the floor (the box score's starters can be incomplete)
