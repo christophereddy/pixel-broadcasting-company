@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11T07:09:00Z",
+ "updatedAt": "2026-10-11T10:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,13 @@
  },
  "world": [
   {
-   "h": "Riyadh airport attack kills 12",
-   "b": "Saudi authorities say 12 people were killed in an attack on Riyadh's airport, according to Al Jazeera's live coverage of the Iran war.",
-   "date": "2026-10-10",
+   "h": "Saudi-led coalition vows to respond to Riyadh attack",
+   "b": "Saudi-led forces vowed a 'decisive' response to the Houthi attack on Riyadh's airport that killed 12 people, according to Al Jazeera's live coverage.",
+   "date": "2026-10-11",
    "publisher": "Al Jazeera",
-   "title": "Iran war updates: 12 killed in attack on Riyadh airport – Saudi authorities",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/10/iran-war-live-kremlin-says-trump-welcomed-russia-effort-in-iran-deal",
-   "gathered": "2026-10-10T13:57:01Z"
+   "title": "Saudi-led forces vow ‘decisive’ response to Houthi attack on Riyadh airport",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis",
+   "gathered": "2026-10-11T09:11:02Z"
   },
   {
    "h": "Trump weighs joining Saudi strikes on Houthis",
@@ -28,6 +28,15 @@
   }
  ],
  "national": [
+  {
+   "h": "DOJ probes TV networks over Trump coverage halt",
+   "b": "The Justice Department is investigating whether TV networks violated antitrust laws by halting coverage of President Trump after the White House pulled reporters' credentials.",
+   "date": "2026-10-11",
+   "publisher": "Al Jazeera",
+   "title": "US opens antitrust probe into TV networks for halting Trump coverage",
+   "url": "https://www.aljazeera.com/news/2026/10/11/us-opens-antitrust-probe-into-tv-networks-halting-trump-coverage",
+   "gathered": "2026-10-11T09:11:02Z"
+  },
   {
    "h": "Hurricane Isaias kills at least 2 on Gulf Coast",
    "b": "Isaias hit the Gulf Coast as a Category 2 storm Friday night with 105 mph winds, snapping trees and cutting power in Florida and Alabama. Flash flood threats persist inland.",
@@ -65,13 +74,33 @@
  "politics": [],
  "international": [
   {
+   "h": "Pakistan imposes emergency rule in Khyber Pakhtunkhwa",
+   "b": "Pakistan declared a state of emergency in Khyber Pakhtunkhwa, effectively suspending the provincial government run by jailed former Prime Minister Imran Khan's PTI party.",
+   "date": "2026-10-11",
+   "place": "Khyber Pakhtunkhwa, Pakistan",
+   "tz": "Asia/Karachi",
+   "publisher": "Al Jazeera",
+   "title": "Pakistan imposes emergency rule in ​province governed by Imran Khan’s party",
+   "url": "https://www.aljazeera.com/news/2026/10/11/pakistan-imposes-emergency-rule-in-khyber-pakhtunkhwa",
+   "gathered": "2026-10-11T09:11:02Z"
+  },
+  {
+   "h": "Taiz hospitals near collapse under Houthi siege",
+   "b": "Yemen's government warned of an imminent health catastrophe in besieged Taiz, saying medicines, IV fluids and fuel at health facilities are nearly gone.",
+   "date": "2026-10-11",
+   "place": "Taiz, Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Taiz hospitals near collapse as Houthis tighten siege: Yemen government",
+   "url": "https://www.aljazeera.com/news/2026/10/11/taiz-hospitals-near-collapse-as-houthis-tighten-siege-yemen-government",
+   "gathered": "2026-10-11T09:11:02Z"
+  },
+  {
    "h": "Russian strikes kill 15 in Zaporizhzhia",
    "b": "Russian air attacks killed at least 15 people in Zaporizhzhia, Ukraine's prosecutor's office said, as the US hosted talks it called productive on ending the war.",
    "date": "2026-10-10",
    "place": "Zaporizhzhia, Ukraine",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Russia kills 20 in Ukraine as US hosts ‘productive’ talks to end war",
    "url": "https://www.aljazeera.com/news/2026/10/10/us-hosts-productive-trilateral-talks-to-end-russia-ukraine-war",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -81,8 +110,6 @@
    "date": "2026-10-10",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Child among eight killed by Israel on Gaza ‘ceasefire’ anniversary",
    "url": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -92,8 +119,6 @@
    "date": "2026-10-10",
    "place": "Curitiba, Brazil",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Suspect killed after 13 kindergarteners taken hostage, beaten in Brazil",
    "url": "https://www.aljazeera.com/news/2026/10/10/suspect-killed-after-13-kindergarteners-taken-hostage-beaten-in-brazil",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -103,8 +128,6 @@
    "date": "2026-10-10",
    "place": "Oaxaca, Mexico",
    "tz": "America/Mexico_City",
-   "publisher": "Al Jazeera",
-   "title": "Journalist Hamurabi Huesca Manzano killed in Mexico’s Oaxaca",
    "url": "https://www.aljazeera.com/news/2026/10/10/journalist-killed-in-mexico-ninth-this-year-ngo",
    "gathered": "2026-10-10T13:57:01Z"
   },
@@ -118,15 +141,23 @@
    "gathered": "2026-10-10T10:09:32Z"
   }
  ],
- "business": [],
+ "business": [
+  {
+   "h": "Musk vows affordable Starlink in India",
+   "b": "Elon Musk said he would price Starlink affordably in India to take on Mukesh Ambani's Reliance Jio, days before Jio's parent launches India's largest-ever IPO.",
+   "date": "2026-10-11",
+   "publisher": "Al Jazeera",
+   "title": "Musk vows ‘affordable’ Starlink in India as he escalates feud with Ambani",
+   "url": "https://www.aljazeera.com/economy/2026/10/11/musk-vows-affordable-starlink-in-india-as-he-escalates-feud-with-ambani",
+   "gathered": "2026-10-11T09:11:02Z"
+  }
+ ],
  "science": [],
  "sports": [
   {
    "h": "Oklahoma upsets No. 1 Texas in Red River",
    "b": "Oklahoma beat top-ranked Texas 27-24 in Dallas as Arch Manning's late interceptions and special teams breakdowns caught up with the previously unbeaten Longhorns.",
    "date": "2026-10-10",
-   "publisher": "CBS Sports",
-   "title": "Texas spent weeks escaping its flaws, and Oklahoma exposed all of them in Red River",
    "url": "https://www.cbssports.com/college-football/news/texas-flaws-oklahoma-exposed-red-river/",
    "gathered": "2026-10-11T02:04:12Z"
   },
@@ -175,46 +206,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 61,
+   "temp": 59,
    "cond": "Fair",
-   "obs": "10 Oct 20:51 pm EDT"
+   "obs": "11 Oct 04:51 am EDT"
   },
   "periods": [
    {
+    "name": "Today",
+    "kind": "high",
+    "temp": 66,
+    "text": "Rain, mainly after 11am.  High near 66. East wind 10 to 16 mph, with gusts as high as 26 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+   },
+   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 60,
-    "text": "Mostly cloudy, with a steady temperature around 60. East wind around 7 mph. "
-   },
-   {
-    "name": "Sunday",
-    "kind": "high",
-    "temp": 62,
-    "text": "Periods of rain, mainly after 11am.  High near 62. East wind 10 to 16 mph, with gusts as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
-   },
-   {
-    "name": "Sunday Night",
-    "kind": "low",
-    "temp": 62,
-    "text": "Periods of rain and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am. Some of the storms could produce heavy rainfall.  Steady temperature around 62. North wind 14 to 17 mph, with gusts as high as 34 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
+    "temp": 61,
+    "text": "Rain and possibly a thunderstorm, mainly before 2am, then a chance of rain and thunderstorms after 2am.  Low around 61. Northeast wind 15 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Columbus Day",
     "kind": "high",
-    "temp": 69,
-    "text": "A 30 percent chance of rain before 8am.  Cloudy through mid morning, then gradual clearing, with a high near 69. North wind 10 to 14 mph. "
+    "temp": 70,
+    "text": "A chance of rain and thunderstorms before 8am, then a slight chance of showers between 8am and 11am.  Cloudy through mid morning, then gradual clearing, with a high near 70. North wind 10 to 15 mph.  Chance of precipitation is 30%."
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 61,
-    "text": "Mostly clear, with a low around 61. Northwest wind around 7 mph. "
+    "temp": 60,
+    "text": "Mostly clear, with a low around 60. North wind 5 to 7 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 69,
-    "text": "Mostly sunny, with a high near 69."
+    "temp": 70,
+    "text": "Mostly sunny, with a high near 70. Northeast wind 5 to 10 mph becoming south in the afternoon. "
+   },
+   {
+    "name": "Tuesday Night",
+    "kind": "low",
+    "temp": 65,
+    "text": "Partly cloudy, with a low around 65."
    }
   ]
  },
