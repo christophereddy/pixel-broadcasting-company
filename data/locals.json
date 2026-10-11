@@ -27,53 +27,20 @@
     "published": "2026-10-10T16:00:21Z",
     "updated": "2026-10-10T16:00:24Z",
     "gathered": "2026-10-10T18:46:44Z"
-   },
-   {
-    "h": "Cancellations mount as Isaias nears Georgia",
-    "b": "Metro Atlanta events are being canceled as Hurricane Isaias approaches Georgia.",
-    "date": "2026-10-09",
-    "publisher": "WABE",
-    "title": "Metro Atlanta cancellations mount as Hurricane Isaias approaches Georgia",
-    "url": "https://www.wabe.org/metro-atlanta-cancellations-mount-as-hurricane-isaias-approaches-georgia/",
-    "published": "2026-10-09T17:19:12Z",
-    "updated": "2026-10-10T13:33:47Z",
-    "gathered": "2026-10-09T21:07:22Z"
-   },
-   {
-    "h": "Waffle House Index gauges storm severity",
-    "b": "If a Waffle House stays open in a storm, Southerners and FEMA take it as a sign of how severe conditions are.",
-    "date": "2026-10-09",
-    "publisher": "WABE",
-    "title": "Waffle House Index helps Southerners gauge a storm's severity",
-    "url": "https://www.wabe.org/the-waffle-house-index-helps-southerners-and-fema-gauge-a-storms-severity/",
-    "published": "2026-10-09T17:31:47Z",
-    "updated": "2026-10-09T17:31:50Z",
-    "gathered": "2026-10-09T21:07:22Z"
-   },
-   {
-    "h": "Turner family asks Jackson to drop ads",
-    "b": "The family of Secoriea Turner, 8, killed in Atlanta in 2020, urged GOP governor candidate Rick Jackson to stop using her name and image in campaign ads.",
-    "date": "2026-10-09",
-    "publisher": "WABE",
-    "title": "Secoriea Turner's family urges Jackson to stop using her in ads",
-    "url": "https://www.wabe.org/secoriea-turners-family-urges-jackson-to-stop-using-her-in-campaign-ads/",
-    "published": "2026-10-09T14:12:32Z",
-    "updated": "2026-10-09T14:12:38Z",
-    "gathered": "2026-10-09T16:27:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Overcast",
-    "obs": "10 Oct 14:52 pm EDT"
+    "temp": 66,
+    "cond": " Light Rain Fog/Mist",
+    "obs": "10 Oct 17:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Showers, mainly before 10pm.  Low around 61. East wind around 10 mph becoming south after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Showers, mainly before 10pm.  Low around 61. East wind 10 to 15 mph becoming south after midnight. Winds could gust as high as 35 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -97,7 +64,7 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Clear, with a low around 61."
+     "text": "Clear, with a low around 61. Northwest wind around 5 mph. "
     },
     {
      "name": "Tuesday",
@@ -119,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -129,66 +96,49 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Trial opens for ex-cop in Birchmore death",
-    "b": "Opening statements wrapped up in the trial of former Stoughton detective Matthew Farwell, accused of killing 23-year-old Sandra Birchmore and staging it as suicide.",
-    "date": "2026-10-09",
-    "publisher": "WBUR",
-    "title": "Trial begins for former Stoughton cop charged with killing Sandra Birchmore",
-    "url": "https://www.wbur.org/news/2026/10/09/sandra-birchmore-trial-matthew-farwell",
-    "gathered": "2026-10-09T21:07:22Z"
-   },
-   {
-    "h": "Cambridge studio goes analog for a week",
-    "b": "Q Division Studios in Cambridge set its computers aside for an \"Analog Tape Week\" so musicians could record on reel-to-reel tape.",
-    "date": "2026-10-09",
-    "url": "https://www.wbur.org/news/2026/10/09/q-division-studios-reel-to-reel-tape-analog-week",
-    "gathered": "2026-10-09T09:28:01Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 60,
     "cond": "Mostly Cloudy",
-    "obs": "10 Oct 14:54 pm EDT"
+    "obs": "10 Oct 17:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48. Calm wind. "
+     "temp": 43,
+     "text": "Partly cloudy, with a low around 43. Calm wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 63,
-     "text": "Mostly cloudy, with a high near 63. Calm wind becoming south 5 to 8 mph in the afternoon. "
+     "temp": 64,
+     "text": "Increasing clouds, with a high near 64. Calm wind becoming south 5 to 8 mph in the morning. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Showers, mainly after 8pm.  Low around 55. East wind 3 to 7 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Showers, mainly before 5am.  Patchy fog after 9pm. Low around 55. Light and variable wind becoming northeast 5 to 7 mph after midnight.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Columbus Day",
      "kind": "high",
-     "temp": 65,
-     "text": "A slight chance of showers before 10am.  Cloudy, then gradually becoming mostly sunny, with a high near 65. North wind 7 to 9 mph.  Chance of precipitation is 20%."
+     "temp": 66,
+     "text": "A chance of showers, mainly before 7am.  Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 66. North wind 5 to 7 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 53,
-     "text": "Partly cloudy, with a low around 53. Light northwest wind. "
+     "text": "Partly cloudy, with a low around 53. Calm wind becoming northeast 5 to 8 mph after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 63,
-     "text": "A chance of showers, mainly after 1pm.  Mostly cloudy, with a high near 63. East wind 6 to 11 mph.  Chance of precipitation is 50%."
+     "temp": 61,
+     "text": "A chance of showers, mainly after 4pm.  Mostly cloudy, with a high near 61. East wind around 9 mph.  Chance of precipitation is 30%."
     }
    ]
   },
@@ -204,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -247,61 +197,20 @@
     "published": "2026-10-10T09:30:00Z",
     "updated": "2026-10-10T09:30:01Z",
     "gathered": "2026-10-10T10:09:32Z"
-   },
-   {
-    "h": "CPS probe of board president candidate may end soon",
-    "b": "CPS' inspector general reopened an investigation into whether candidate Hilario Dominguez acted inappropriately with a 17-year-old in 2017. Dominguez denies any wrongdoing.",
-    "date": "2026-10-09",
-    "publisher": "WBEZ",
-    "title": "Reopened probe into CPS Board president candidate’s alleged inappropriate contact with teen could end soon",
-    "url": "https://www.wbez.org/education/2026/10/09/reopened-probe-into-cps-board-president-candidates-alleged-inappropriate-contact-with-teen-could-end-soon",
-    "published": "2026-10-10T00:36:02Z",
-    "updated": "2026-10-10T00:36:02Z",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "Bears legend Mike Ditka dies at 86",
-    "b": "Mike Ditka, who played on the Bears' 1963 title team and coached them to their only Super Bowl win, died Friday morning surrounded by family.",
-    "date": "2026-10-09",
-    "url": "https://www.wbez.org/obituary/2026/10/09/mike-ditka-who-coached-the-bears-to-their-only-super-bowl-championship-has-died",
-    "gathered": "2026-10-09T16:27:04Z"
-   },
-   {
-    "h": "College covers Flock cameras after refusal",
-    "b": "Elgin Community College covered its Flock license-plate cameras with trash bags after the company refused to remove them, to protect immigrant students.",
-    "date": "2026-10-09",
-    "more": [
-     "Records show federal immigration authorities accessed Flock data at other Illinois colleges."
-    ],
-    "url": "https://www.wbez.org/education/2026/10/09/to-protect-immigrant-students-a-chicago-area-college-told-flock-to-remove-its-cameras-the-company-refused",
-    "gathered": "2026-10-09T13:25:36Z"
-   },
-   {
-    "h": "Protesters urge DePaul to reopen art museum",
-    "b": "More than 130 students, faculty and neighbors held a silent demonstration urging DePaul University to reopen its art museum, closed since June 30.",
-    "date": "2026-10-09",
-    "url": "https://www.wbez.org/museums/2026/10/09/students-faculty-and-neighbors-press-depaul-university-to-reopen-its-art-museum",
-    "gathered": "2026-10-09T13:25:36Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 79,
+    "temp": 78,
     "cond": "Mostly Cloudy",
-    "obs": "10 Oct 13:53 pm CDT"
+    "obs": "10 Oct 16:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 76,
-     "text": "Partly sunny, with a high near 76. South southeast wind around 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 60,
-     "text": "Partly cloudy, with a low around 60. South southeast wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly cloudy, with a low around 60. South southeast wind 5 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday",
@@ -325,7 +234,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 68,
-     "text": "Partly cloudy, with a low around 68."
+     "text": "Partly cloudy, with a low around 68. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 78,
+     "text": "Mostly sunny, with a high near 78."
     }
    ]
   },
@@ -341,7 +256,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -351,41 +266,14 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [
-   {
-    "h": "DOJ sues Denver over law enforcement mask ban",
-    "b": "The Trump Justice Department sued Denver over its mask ban for law enforcement, calling the law unconstitutional. Mayor Mike Johnston says he \"will fight to the very end.\"",
-    "date": "2026-10-09",
-    "publisher": "Denverite",
-    "title": "Trump’s DOJ sues Denver over its mask ban for law enforcement",
-    "url": "https://denverite.com/2026/10/09/trump-department-of-justice-sues-denver-mask-ban/",
-    "published": "2026-10-09T19:20:33Z",
-    "gathered": "2026-10-10T04:09:19Z"
-   },
-   {
-    "h": "Rupert the one-horned rhino dies at Denver Zoo",
-    "b": "Rupert, the Denver Zoo's 12-year-old greater one-horned rhino, has died. His body will go to the Denver Museum of Nature and Science.",
-    "date": "2026-10-09",
-    "publisher": "Denverite",
-    "title": "Rupert, a one-horned rhino, has died at the Denver Zoo",
-    "url": "https://denverite.com/2026/10/09/rupert-a-one-horned-rhino-has-died-at-the-denver-zoo/",
-    "published": "2026-10-09T21:15:48Z",
-    "gathered": "2026-10-10T04:09:19Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 80,
-    "cond": "Partly Cloudy",
-    "obs": "10 Oct 11:58 am MDT"
+    "temp": 81,
+    "cond": "Mostly Cloudy",
+    "obs": "10 Oct 15:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 84,
-     "text": "A 20 percent chance of showers after 3pm.  Partly sunny, with a high near 84. West wind around 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -415,6 +303,12 @@
      "kind": "low",
      "temp": 53,
      "text": "Mostly clear, with a low around 53."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Sunny, with a high near 73."
     }
    ]
   },
@@ -430,7 +324,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -451,57 +345,11 @@
     "published": "2026-10-10T13:14:17Z",
     "updated": "2026-10-10T14:21:18Z",
     "gathered": "2026-10-10T13:57:01Z"
-   },
-   {
-    "h": "SoCal gets rain and a big cooldown",
-    "b": "Tropical Storm Rachel is bringing rain and cooler weather to Southern California this weekend, along with elevated sea levels, coastal erosion and dangerous surf.",
-    "date": "2026-10-09",
-    "url": "https://laist.com/news/climate-environment/weather-whiplash-socal-rain-cooldown-tides-waves",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "Waves break Peninsula boardwalk in Long Beach",
-    "b": "City inspectors declared several Peninsula buildings unsafe after Hurricane Rachel's high surf and tides tore apart a section of the wooden bulkhead, flooding streets.",
-    "date": "2026-10-09",
-    "publisher": "LAist",
-    "title": "Strong waves severely damage homes, flood streets after breaking through Peninsula’s boardwalk",
-    "url": "https://laist.com/news/climate-environment/strong-waves-severely-damage-homes-flood-streets-after-breaking-through-peninsulas-boardwalk",
-    "published": "2026-10-09T22:05:08Z",
-    "updated": "2026-10-09T22:05:08Z",
-    "gathered": "2026-10-09T22:09:37Z"
-   },
-   {
-    "h": "Metrolink plans major service cuts",
-    "b": "Metrolink's board voted to advance a $420 million budget that would cut 29% of weekday and 40% of weekend trains, possibly as soon as next month.",
-    "date": "2026-10-09",
-    "publisher": "LAist",
-    "title": "OC, Antelope Valley Metrolink riders could face major service cuts as soon as next month",
-    "url": "https://laist.com/news/transportation/oc-antelope-valley-metrolink-riders-service-cuts-as-soon-as-next-month",
-    "published": "2026-10-09T21:28:23Z",
-    "updated": "2026-10-09T21:28:23Z",
-    "gathered": "2026-10-09T22:09:37Z"
-   },
-   {
-    "h": "3 new California e-bike safety laws",
-    "b": "Deadly e-bike crashes shaped three new California safety laws, CalMatters reports.",
-    "date": "2026-10-09",
-    "publisher": "LAist",
-    "title": "Deadly e-bike crashes shaped 3 new California safety laws. Here’s what they do",
-    "url": "https://laist.com/news/transportation/deadly-e-bike-crashes-shaped-3-new-california-safety-laws",
-    "published": "2026-10-09T17:30:00Z",
-    "updated": "2026-10-09T17:30:00Z",
-    "gathered": "2026-10-09T21:07:22Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 82,
-     "text": "A 20 percent chance of showers.  Cloudy, with a high near 82. West southwest wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -531,6 +379,12 @@
      "kind": "low",
      "temp": 52,
      "text": "A 40 percent chance of showers, mainly before 11pm.  Partly cloudy, with a low around 52."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 71,
+     "text": "Sunny, with a high near 71."
     }
    ]
   },
@@ -546,7 +400,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -565,144 +419,52 @@
     "title": "What we know about the ICE shooting in NYC",
     "url": "https://gothamist.com/news/what-we-know-about-the-ice-shooting-in-nyc",
     "published": "2026-10-10T10:00:00Z",
+    "updated": "2026-10-10T21:00:00Z",
     "gathered": "2026-10-10T10:09:32Z"
-   },
-   {
-    "h": "DSA urges Mamdani to fire NYPD commissioner",
-    "b": "The city's Democratic Socialists of America chapter is pressuring Mayor Zohran Mamdani to fire his police commissioner if ICE doesn't leave New York City.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "DSA to Mamdani: Fire NYPD commissioner if ICE doesn't leave NYC",
-    "url": "https://gothamist.com/news/dsa-to-mamdani-fire-nypd-commissioner-if-ice-doesnt-leave-nyc",
-    "published": "2026-10-09T22:31:00Z",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "Two killed in Bronx vehicle crash",
-    "b": "Two people died and several were injured when a car rear-ended four vehicles on Allerton Avenue in the Bronx on Friday, police said.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "Two people killed in Bronx vehicle crash",
-    "url": "https://gothamist.com/news/three-people-critically-injured-in-bronx-vehicle-crash",
-    "published": "2026-10-09T22:25:00Z",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "NY will opt in to Trump school choice program",
-    "b": "Gov. Kathy Hochul said New York will join the Trump administration's school choice program despite teachers unions' fears it will divert money from public schools.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "NY will opt in Trump’s school choice program, Hochul says",
-    "url": "https://gothamist.com/news/ny-will-opt-in-trumps-school-choice-program-hochul-says",
-    "published": "2026-10-09T22:02:34Z",
-    "gathered": "2026-10-09T22:09:37Z"
-   },
-   {
-    "h": "DA fights dismissal of Mangione charges",
-    "b": "The Manhattan DA argued a judge should not dismiss state charges against Luigi Mangione.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "Manhattan DA argues judge shouldn't dismiss state charges against Luigi Mangione",
-    "url": "https://gothamist.com/news/manhattan-da-argues-judge-shouldnt-dismiss-state-charges-against-luigi-mangione",
-    "published": "2026-10-09T19:44:00Z",
-    "gathered": "2026-10-09T21:07:22Z"
-   },
-   {
-    "h": "Judge: ICE lied after mistaken Bronx arrests",
-    "b": "A federal judge ruled ICE agents mistakenly arrested two men in the Bronx and then lied in sworn testimony to cover it up.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "ICE mistakenly arrested 2 men in the Bronx, then mounted cover-up, US judge rules",
-    "url": "https://gothamist.com/news/ice-mistakenly-arrested-2-men-in-the-bronx-then-mounted-cover-up-us-judge-rules",
-    "published": "2026-10-09T15:05:26Z",
-    "gathered": "2026-10-09T16:27:04Z"
-   },
-   {
-    "h": "Council wants paper tests back",
-    "b": "City Council members are calling on education officials to let students return to paper tests as the state mandates screens.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "Pencils down: NYC lawmakers want to switch back to paper tests as state mandates screens",
-    "url": "https://gothamist.com/news/pencils-down-nyc-lawmakers-want-to-switch-back-to-paper-tests-as-state-mandates-screens",
-    "published": "2026-10-09T15:32:21Z",
-    "gathered": "2026-10-09T16:27:04Z"
-   },
-   {
-    "h": "Five arrested at ICE shooting protest",
-    "b": "Police said five people were taken into custody as protests swelled Thursday night after ICE officers shot a man in northern Manhattan.",
-    "date": "2026-10-09",
-    "more": [
-     "All were charged with obstructing governmental administration."
-    ],
-    "publisher": "Gothamist",
-    "title": "Several arrested in wake of ICE protest where Manhattan man was shot in the neck",
-    "url": "https://gothamist.com/news/several-arrested-in-wake-of-ice-protest-where-manhattan-man-was-shot-in-the-neck",
-    "published": "2026-10-09T11:24:00Z",
-    "gathered": "2026-10-09T13:25:36Z"
-   },
-   {
-    "h": "Bronx homeowners seek foreclosure help",
-    "b": "Gothamist reports on Bronx homeowners facing foreclosure and looking for assistance.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "Bronx homeowners facing foreclosure are in the market for assistance",
-    "url": "https://gothamist.com/news/bronx-homeowners-facing-foreclosure-are-in-the-market-for-assistance",
-    "published": "2026-10-09T10:30:56Z",
-    "gathered": "2026-10-09T13:25:36Z"
-   },
-   {
-    "h": "Cornell students warned of fraternity abuse",
-    "b": "Cornell's student government says it warned administrators about sexual assault and drugging in fraternities two years before the Jane Doe gang rape report.",
-    "date": "2026-10-09",
-    "publisher": "Gothamist",
-    "title": "Cornell students warned of fraternity 'rape culture' years before Jane Doe case",
-    "url": "https://gothamist.com/news/cornell-students-warned-of-fraternity-rape-culture-years-before-jane-doe-case",
-    "published": "2026-10-09T10:00:00Z",
-    "gathered": "2026-10-09T10:10:23Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "10 Oct 14:51 pm EDT"
+    "obs": "10 Oct 17:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 60,
-     "text": "Increasing clouds, with a low around 60. East wind 6 to 8 mph. "
+     "temp": 57,
+     "text": "Mostly cloudy, with a low around 57. East wind 6 to 9 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 67,
-     "text": "Rain, mainly after 11am.  High near 67. East wind 10 to 15 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 62,
+     "text": "Periods of rain, mainly after 11am.  High near 62. East wind 10 to 16 mph, with gusts as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 63,
-     "text": "Rain and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am.  Low around 63. East wind 11 to 18 mph, with gusts as high as 29 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "temp": 62,
+     "text": "Periods of rain and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am. Some of the storms could produce heavy rainfall.  Steady temperature around 62. North wind 14 to 17 mph, with gusts as high as 34 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Columbus Day",
      "kind": "high",
-     "temp": 70,
-     "text": "A chance of rain and thunderstorms before 8am, then a slight chance of rain between 8am and 2pm.  Cloudy through mid morning, then gradual clearing, with a high near 70. North wind 10 to 14 mph.  Chance of precipitation is 30%."
+     "temp": 69,
+     "text": "A 30 percent chance of rain before 8am.  Cloudy through mid morning, then gradual clearing, with a high near 69. North wind 10 to 14 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Partly cloudy, with a low around 61. Northwest wind around 7 mph. "
+     "text": "Mostly clear, with a low around 61. Northwest wind around 7 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 71,
-     "text": "A 30 percent chance of showers after 2pm.  Mostly sunny, with a high near 71."
+     "temp": 69,
+     "text": "Mostly sunny, with a high near 69."
     }
    ]
   },
@@ -718,7 +480,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -751,20 +513,6 @@
     "published": "2026-10-10T09:15:13Z",
     "updated": "2026-10-10T09:15:18Z",
     "gathered": "2026-10-10T10:09:32Z"
-   },
-   {
-    "h": "Students plan more protests; UN concerned",
-    "b": "French students were largely back in class Friday after days of protests, but plan more, as the UN voiced concern over violent clashes with police.",
-    "date": "2026-10-09",
-    "url": "https://www.thelocal.fr/20261009/france-students-plan-more-protests-as-un-voices-concern-over-violence",
-    "gathered": "2026-10-09T16:27:04Z"
-   },
-   {
-    "h": "Philippe vows to halve legal migration",
-    "b": "Centrist presidential candidate Edouard Philippe said he wants to halve legal migration, laying out his 2027 programme in a TV interview.",
-    "date": "2026-10-09",
-    "url": "https://www.thelocal.fr/20261009/french-centrist-presidential-candidate-vows-to-halve-legal-migration",
-    "gathered": "2026-10-09T09:28:01Z"
    }
   ],
   "weather": {
@@ -783,7 +531,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "goodnews": []
  },
  {
@@ -792,50 +540,15 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [
-   {
-    "h": "Microsoft workers stunned by visa fraud claim",
-    "b": "Vice President JD Vance accused Microsoft of fraud and suspended it from a program that moves H-1B workers toward permanent residency. Microsoft says the administration misinterpreted its use of the program.",
-    "date": "2026-10-09",
-    "url": "https://www.kuow.org/technology/2026-10-09/microsoft-workers-stunned-by-federal-accusations-of-visa-fraud",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "Sen. Murray says AI is denying care to WA seniors",
-    "b": "Doctors and Democratic lawmakers criticized a federal Medicare pilot in six states, including Washington, that uses artificial intelligence to evaluate some claims.",
-    "date": "2026-10-09",
-    "url": "https://www.kuow.org/health/2026-10-09/the-feds-are-using-ai-to-deny-care-to-wa-seniors-sen-murray-says",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "Kirkland and Kraken plan new iceplex",
-    "b": "Kirkland and the Seattle Kraken plan an 80,000-square-foot iceplex and community center at a former park-and-ride, which the city hopes to open around this time next year.",
-    "date": "2026-10-09",
-    "url": "https://www.kuow.org/sports/2026-10-09/kirkland-releases-the-kraken-with-plans-for-new-iceplex",
-    "gathered": "2026-10-10T01:10:35Z"
-   },
-   {
-    "h": "Gluesenkamp Perez, Braun hold first debate",
-    "b": "Rep. Marie Gluesenkamp Perez and state Sen. John Braun split over voter ID and immigration enforcement in their first debate for Washington's 3rd District.",
-    "date": "2026-10-09",
-    "url": "https://www.kuow.org/elections/2026-10-09/gluesenkamp-perez-and-braun-meet-in-first-debate-for-southwest-washingtons-battleground-house-district",
-    "gathered": "2026-10-09T21:07:22Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 58,
-     "text": "Mostly sunny, with a high near 58. Calm wind becoming north northwest 5 to 7 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46. North northeast wind 3 to 6 mph. "
+     "text": "Mostly clear, with a low around 46. North wind around 6 mph becoming light and variable  in the evening. "
     },
     {
      "name": "Sunday",
@@ -859,7 +572,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Partly cloudy, with a low around 46."
+     "text": "Partly cloudy, with a low around 46. Calm wind. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 61,
+     "text": "Partly sunny, with a high near 61."
     }
    ]
   },
@@ -875,16 +594,8 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-10T22:09:00Z",
+  "updatedAt": "2026-10-11T01:09:00Z",
   "slug": "seattle-wa",
-  "goodnews": [
-   {
-    "h": "Bellingham to get Coast Salish center",
-    "b": "The Indigenous-led nonprofit Setting Sun Circle is building a 17,000-square-foot home for Coast Salish culture in downtown Bellingham, expected to open in summer 2027.",
-    "date": "2026-10-09",
-    "url": "https://www.kuow.org/arts-life/2026-10-09/coming-soon-bellinghams-new-home-for-coast-salish-culture-and-history",
-    "gathered": "2026-10-09T16:27:04Z"
-   }
-  ]
+  "goodnews": []
  }
 ]
