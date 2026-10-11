@@ -615,7 +615,7 @@ function deskPanel(head, rows, note, title){
 // a score, an upcoming game or a stat line, as one row of the screen
 function deskRow(ev, kind){
   if (isF1()) { const g = f1GameLine(ev); return {l: g.m, r: g.s}; }
-  const t = teamsOf(ev), g = gameLine(ev);
+  const t = teamsOf(ev), g = gameLine(ev, true); // the desk's own scores screen shows live scores either way
   if (kind === 'fin') return {c: (Number(t.away.score) > Number(t.home.score) ? t.away : t.home).color,
     l: `${t.away.abbr} ${t.away.score}  ${t.home.abbr} ${t.home.score}`, r: 'FINAL'};
   if (kind === 'live') return {c: '#e04a4a', l: g.m, r: g.s};

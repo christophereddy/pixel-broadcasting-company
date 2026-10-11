@@ -44,6 +44,9 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 .chip{width:1.8cqw;height:1.8cqw;flex:none;border:.25cqw solid var(--white)}
 .row .ab{flex:1}
 .row .sc{font-size:2.4cqw;color:var(--gold);font-variant-numeric:tabular-nums}
+/* basketball: timeouts left, one bar each */
+.tos{display:flex;gap:.3cqw}
+.tos i{width:.45cqw;height:1.3cqw;background:var(--gold)}
 .poss{width:0;height:0;border-top:.6cqw solid transparent;border-bottom:.6cqw solid transparent;border-left:.9cqw solid var(--gold);visibility:hidden}
 .poss.on{visibility:visible}
 .meta{display:flex;justify-content:space-between;gap:.6cqw;margin-top:.6cqw;font-size:1.25cqw;color:var(--muted)}
@@ -256,8 +259,8 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
       </div>
 
       <div class="win board">
-        <div class="row"><span class="poss" id="possA"></span><span class="chip" id="chipA"></span><span class="ab" id="abA">AWAY</span><span class="sc" id="scA">0</span></div>
-        <div class="row"><span class="poss" id="possH"></span><span class="chip" id="chipH"></span><span class="ab" id="abH">HOME</span><span class="sc" id="scH">0</span></div>
+        <div class="row"><span class="poss" id="possA"></span><span class="chip" id="chipA"></span><span class="ab" id="abA">AWAY</span><span class="tos" id="tosA"></span><span class="sc" id="scA">0</span></div>
+        <div class="row"><span class="poss" id="possH"></span><span class="chip" id="chipH"></span><span class="ab" id="abH">HOME</span><span class="tos" id="tosH"></span><span class="sc" id="scH">0</span></div>
         <div class="meta"><span id="clock">--</span><span class="badge" id="badge">NFL</span></div>
         <div class="dd" id="dd"></div>
       </div>
@@ -398,7 +401,7 @@ const hash = s => { let h = 2166136261; for (const c of String(s)) { h ^= c.char
 const pick = (arr, seed) => arr[hash(seed) % arr.length];
 
 /* ---- spoiler-free by default: results stay hidden (SHOW RESULTS reveals them) and keep a finished game's outcome out of sight until the replay reaches it ----
-   It hides final scores in the game lists, the scoring markers ahead of the playhead, the box-score stats and the
+   It hides final scores, and the scores of live games other than the one on screen, in the game lists, the scoring markers ahead of the playhead, the box-score stats and the
    F1 camera's "race winner" default. Hidden is the default (Chris, 2026-10-07); a viewer who presses SHOW RESULTS keeps
    that choice in this browser (localStorage), so it survives a reload. */
 let HIDE_RES = true;
@@ -510,8 +513,17 @@ async function loadScoreboard(){
       if (ty === 2 && next.status === 'fulfilled' && !next.value.events?.length) res.push(...await Promise.allSettled([getJSON(wkURL(3, 1))]));
     }
   } else {
-    const urls = [API + '/scoreboard' + (q && '?' + q.slice(1)), API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later) + q, API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now) + q];
+    // a date range comes back short unless it asks for a big enough page
+    const lim = q.includes('limit=') ? '' : '&limit=300';
+    const urls = [API + '/scoreboard' + (q && '?' + q.slice(1)), API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later) + lim + q, API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now) + lim + q];
     res = await Promise.allSettled(urls.map(getJSON));
+    // no finished games in the range: ask for each of the last eight days one by one (once a day per sport), so the
+    // FINAL list still fills when the range query leaves games out
+    const key = sport + ymd(now), past = res[2].status === 'fulfilled' && (res[2].value.events || []).some(e => stateOf(e) === 'post');
+    if (!past && S.pastDays !== key) {
+      S.pastDays = key;
+      res.push(...await Promise.allSettled(Array.from({length: 8}, (_, i) => getJSON(API + '/scoreboard?dates=' + ymd(new Date(now.getTime() - (i + 1) * 864e5)) + q))));
+    }
   }
   if (sport !== S.sport) return false; // the viewer switched sports while this was loading
   let ok = false;
@@ -581,11 +593,15 @@ function mlbEvent(g){
 // games from the scoreboard, or from a team's schedule (opened from its team page)
 const evOf = id => S.events.get(id) || S.extra.get(id);
 function stateOf(ev){ return ev.status?.type?.state || ev.competitions?.[0]?.status?.type?.state || 'pre'; }
-function gameLine(ev){
+function gameLine(ev, scores){
   if (isF1()) return f1GameLine(ev);
   const t = teamsOf(ev), st = stateOf(ev), stat = ev.status || ev.competitions[0].status || {};
   let s = '';
-  if (st === 'in') s = `${t.away.score}-${t.home.score} · ${stat.type?.shortDetail || 'Live'}`;
+  // the game on screen shows the broadcast's own score and clock, so the list never gets ahead of the animation
+  const clk = $('clock').textContent.trim();
+  if (st === 'in' && S.mode === 'live' && S.game === String(ev.id) && S.home) s = `${S.prevScore.a}-${S.prevScore.h} · ${clk && clk !== '--' ? clk : 'Live'}`;
+  // HIDE RESULTS: other live games show just their clock, not the score
+  else if (st === 'in') s = hideRes() && !scores ? (stat.type?.shortDetail || 'Live') : `${t.away.score}-${t.home.score} · ${stat.type?.shortDetail || 'Live'}`;
   // HIDE RESULTS: a finished game is listed without its score, so picking a replay doesn't give the ending away
   else if (st === 'post') s = hideRes() ? (stat.type?.shortDetail || 'Final') : `${t.away.score}-${t.home.score} ${stat.type?.shortDetail || 'Final'}`;
   else s = new Date(ev.date).toLocaleString([], {weekday: 'short', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit'});
@@ -624,6 +640,14 @@ function renderList(){
   fill($('list-fin'), fin, isF1() ? 'No race replays yet.' : `No ${lg} games finished in the last week.`);
   markLive();
 }
+
+// keep the watched game's line in step with the scoreboard on screen as each play lands
+function watchLine(){
+  if (S.mode !== 'live' || !S.game || isF1()) return;
+  const ev = evOf(S.game), b = ev && $('list-live').querySelector('button.game[aria-current="true"] .s');
+  if (b) b.textContent = gameLine(ev).s;
+}
+for (const id of ['clock', 'scA', 'scH']) new MutationObserver(watchLine).observe($(id), {childList: true, characterData: true, subtree: true});
 
 /* ================= roster / jersey numbers ================= */
 const GROUP = {QB:'QB', RB:'RB', FB:'RB', HB:'RB', WR:'WR', TE:'TE', C:'OL', G:'OL', OG:'OL', OT:'OL', T:'OL', OL:'OL',
@@ -2700,7 +2724,10 @@ function buildReplayMLB(plays){
 // Court coordinates are in feet: x along the court (0 = left baseline, 94 = right), y across it (0 = far sideline,
 // 50 = near sideline). Like the football field, the court is drawn once onto a big canvas and the camera follows the
 // ball. The home team shoots at the right basket.
-const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his'}, wnba: {q: 600, arc: 22.15, corner: 22, he: 'she', his: 'her'}};
+// to: team timeouts. NBA (2017 rules, pr.nba.com): 7 a game, at most 4 left for the fourth quarter, 2 after its three-minute
+// mark, 2 each overtime. WNBA (2024 rules, pr.nba.com): 5 a game, 2 after the fourth's three-minute mark, 2 each overtime.
+const BBL = {nba: {q: 720, arc: 23.75, corner: 22, he: 'he', his: 'his', to: {game: 7, q4: 4, late: 2, ot: 2}},
+  wnba: {q: 600, arc: 22.15, corner: 22, he: 'she', his: 'her', to: {game: 5, q4: null, late: 2, ot: 2}}};
 const lg = () => BBL[S.sport] || BBL.nba;
 // Like football, the camera only pans left and right with the ball. The court sits low, so its far sideline is just
 // under the booth and the scoreboard, and the benches line the bottom of the screen.
@@ -2848,9 +2875,10 @@ function bbLineups(sum){
 // back to tip-off: the starters on the floor, nobody with the ball
 function bbReset(){
   const st = S.bb ||= {people: {}, starters: {}, looks: {}};
-  Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, run: {team: null, pts: 0, said: 0}, said: {}, holder: null, chairs: {}, sitters: {}, cheer: null});
+  Object.assign(st, {on: {}, poss: null, loose: false, huddle: false, tip: true, ft: null, got: null, tos: [], per: 1, secs: lg().q, run: {team: null, pts: 0, said: 0}, said: {}, holder: null, chairs: {}, sitters: {}, cheer: null});
   for (const t of [S.home, S.away]) if (t) st.on[t.id] = (st.starters[t.id] || []).slice(0, 5);
   S.ball.x = 47; S.ball.y = 25; S.ball.h = 0; S.ball.vis = true;
+  bbTimeoutsBoard();
   S.camX = bcx(47); S.camY = H / 2;
 }
 // what a play is, from ESPN's play type, text and participants (in order: shooter or ball handler, then assister,
@@ -2889,16 +2917,23 @@ function bbStep(p, k, dh, da){
     }
     return;
   }
+  if (p.period?.number) { st.per = +p.period.number; st.secs = secsOf(p); }
+  // a team's own timeout counts against it; official and TV timeouts don't
+  if (k.kind === 'timeout' && k.team && !/official|tv timeout|media/i.test((p.type?.text || '') + ' ' + (p.text || ''))) st.tos.push({team: k.team, per: st.per, secs: st.secs});
   if (k.kind === 'timeout' || k.kind === 'end') { st.huddle = true; st.loose = false; return; }
   if (k.kind === 'admin') return;
   st.huddle = false; if (k.kind !== 'jump') st.tip = false;
+  // free throws come in sets: between shots everyone stays lined up, with the ball back to the shooter
+  st.ft = k.kind === 'ft' && !k.last && k.ids[0] ? {off: k.team || st.poss, id: k.ids[0]} : null;
+  st.got = k.kind === 'jump' ? k.ids[2] || null : null;
   // a starter list can miss someone: anyone in a play is on the floor
   for (const id of k.ids.slice(0, k.kind === 'foul' ? 2 : 1)) {
     const pp = bbPerson(id), on = pp?.team && (st.on[pp.team.id] ||= []);
     if (on && !on.includes(id)) { if (on.length >= 5) on.shift(); on.push(id); }
   }
   switch (k.kind) {
-    case 'jump': st.poss = k.recv || st.poss; st.tip = true; st.loose = false; break;
+    // the tip is won: whoever caught it has the ball and the team heads up the floor
+    case 'jump': st.poss = k.recv || st.poss; st.tip = false; st.loose = false; break;
     case 'shot': st.poss = k.made ? otherTeam(k.team) || st.poss : k.team || st.poss; st.loose = !k.made; break;
     case 'ft': if (k.last && !k.tech) { st.poss = k.made ? otherTeam(k.team) || st.poss : k.team || st.poss; st.loose = !k.made; } break;
     case 'reb': st.poss = k.team || st.poss; st.loose = false; break;
@@ -2922,6 +2957,24 @@ function applyStateBB(p, plan){
   const pt = S.bb.poss;
   $('dd').textContent = pt ? `${pt.abbr} BALL` : '';
   $('possH').classList.toggle('on', pt === S.home); $('possA').classList.toggle('on', !!pt && pt === S.away);
+  bbTimeoutsBoard();
+}
+// timeouts left, under the league's limits for the fourth quarter, its last three minutes and overtime
+function bbTimeoutsLeft(team){
+  const st = S.bb, R = lg().to, per = st.per || 1, used = f => st.tos.filter(o => o.team === team && f(o)).length;
+  if (per > 4) return Math.max(0, R.ot - used(o => o.per === per));
+  let n = R.game - used(o => o.per <= 4);
+  if (per === 4 && R.q4) n = Math.min(n, R.q4 - used(o => o.per === 4));
+  if (per === 4 && st.secs <= 180) n = Math.min(n, R.late - used(o => o.per === 4 && o.secs <= 180));
+  return Math.max(0, n);
+}
+// one small bar per timeout left, beside each team's score, like a TV scoreboard
+function bbTimeoutsBoard(){
+  for (const [id, t] of [['tosA', S.away], ['tosH', S.home]]) {
+    const n = isBB() && S.bb?.tos && t ? bbTimeoutsLeft(t) : 0;
+    $(id).replaceChildren(...Array.from({length: n}, () => document.createElement('i')));
+    $(id).title = isBB() && t ? `${n} timeout${n === 1 ? '' : 's'} left` : '';
+  }
 }
 
 /* ---- formations ---- */
@@ -2946,7 +2999,9 @@ function refSpots(mode, off){
   return [[hx + d * 6.8, 14], [hx - d * 30, 52], [hx - d * 21, 0.5]];
 }
 function bbFormation(offIn, mode, first){
-  const A = bbFormationPlayers(offIn, mode, first), st = S.bb;
+  const st = S.bb;
+  if (!mode && st?.ft && !st.huddle) { offIn = st.ft.off; mode = 'ft'; first = st.ft.id; } // between free throws in a set
+  const A = bbFormationPlayers(offIn, mode, first);
   if (!A.length) return A;
   const m = st.huddle && !mode ? 'huddle' : mode === 'tip' || (st.tip && !mode) ? 'tip' : mode === 'ft' ? 'ft' : 'play';
   refSpots(m, offIn || st.poss || S.home).forEach(([x, y], i) => { x = clamp(x, -3, 97);
@@ -2990,12 +3045,13 @@ function bbFormationPlayers(offIn, mode, first){
 }
 function bbRest(walk, breakHuddle){
   const st = S.bb; if (!st) return;
-  // in a replay the next play is known, so the players head to where it starts instead of a stock formation
-  // (after a timeout, once the huddle breaks)
-  const nx = walk && S.mode === 'replay' && (!st.huddle || breakHuddle) ? S.queue[0] : null, set = nx && bbSetup(nx);
+  // when the next play is known (always in a replay; in a live game when plays arrive together, like a miss and its
+  // rebound) the players head to where it starts instead of a stock formation (after a timeout, once the huddle breaks)
+  const nx = walk && S.mode !== 'pre' && (!st.huddle || breakHuddle) ? S.queue[0] : null, set = nx && bbSetup(nx);
   const F = set ? set.F : bbFormation();
   const holderOf = list => set ? (set.holder && (!st.loose || nx._caught) ? list.find(a => a.team === set.holder.team && a.pid === set.holder.pid && !a.leaving) || null : null)
-    : (!st.loose && !st.huddle && !st.tip && st.poss) ? list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
+    : st.ft && !st.huddle ? list.find(a => a.pid === st.ft.id && !a.leaving) || null
+    : (!st.loose && !st.huddle && !st.tip && st.poss) ? (st.got && list.find(a => a.pid === st.got && a.team === st.poss && !a.leaving)) || list.find(a => a.team === st.poss && a.role === 'P0' && !a.leaving) || null : null;
   if (!walk || !S.actors.length) {
     S.actors = F; st.holder = holderOf(F);
     if (!st.holder && !st.loose) { S.ball.x = 47; S.ball.y = 25; S.ball.h = st.tip ? 10 : 0; }
@@ -3036,7 +3092,7 @@ function bbRest(walk, breakHuddle){
 function bbFill(now){
   const st = S.bb; if (!st) return;
   const h = st.holder, off = st.poss;
-  if (st.huddle || st.tip || st.loose || !off || !h || !S.actors.includes(h) || S.queue.length) { st.filling = false; return; }
+  if (st.huddle || st.tip || st.loose || st.ft || !off || !h || !S.actors.includes(h) || S.queue.length) { st.filling = false; return; }
   // wait until everyone has walked into place after the last play
   if (S.actors.some(a => a.tx != null && !a.filler)) { st.filling = false; st.fillAt = now + 700; return; }
   const mates = S.actors.filter(a => a.team === off && !a.leaving && !a.ref), def = otherTeam(off);
@@ -3617,7 +3673,7 @@ function render(now){
 
 /* ================= state, scoreboard, transcript ================= */
 function setBoard(){
-  if (isF1()) return f1Board();
+  if (isF1()) { bbTimeoutsBoard(); return f1Board(); }
   if (!S.home) return;
   $('abA').textContent = S.away.abbr; $('abH').textContent = S.home.abbr;
   $('chipA').style.background = S.away.color; $('chipH').style.background = S.home.color;
@@ -3625,6 +3681,7 @@ function setBoard(){
   $('chipA').style.borderColor = S.away.alt; $('chipH').style.borderColor = S.home.alt;
   $('scA').textContent = S.prevScore.a; $('scH').textContent = S.prevScore.h;
   if (S.game) { $('tc-away').querySelector('.ts').textContent = S.prevScore.a; $('tc-home').querySelector('.ts').textContent = S.prevScore.h; }
+  bbTimeoutsBoard();
 }
 function setBadge(){
   const b = $('badge');
@@ -3939,8 +3996,12 @@ async function pollLive(){
     S.summary = sum; if (isMLB()) mlbLineups(sum); if (isBB()) bbLineups(sum); refreshDetail(); syncScore(sum);
     // a try ESPN adds to a touchdown it already sent comes in as a new entry; once a later play is in, it's too late to show
     const all = playsOf(sum), last = Math.max(0, ...all.filter(p => S.seen.has(p.id) && !p._try).map(p => Number(p.sequenceNumber) || 0));
-    const fresh = all.filter(p => !S.seen.has(p.id) && !(p._try && Number(p.sequenceNumber) < last));
-    fresh.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
+    // a play ESPN adds or corrects well behind the action (a 10:00 turnover posted at 4:18) is too late to show as well
+    const gameT = p => (Number(p.period?.number) || 0) * 1e5 - secsOf(p);
+    const now = Math.max(0, ...all.filter(p => S.seen.has(p.id) && p.period?.number).map(gameT));
+    const late = p => !isMLB() && p.period?.number && p.clock?.displayValue && gameT(p) < now - 20;
+    const novel = all.filter(p => !S.seen.has(p.id)), fresh = novel.filter(p => !(p._try && Number(p.sequenceNumber) < last) && !late(p));
+    novel.forEach(p => S.seen.add(p.id)); S.queue.push(...fresh);
     if (fresh.length) pump();
   } catch (e) { /* try again next tick */ }
 }
