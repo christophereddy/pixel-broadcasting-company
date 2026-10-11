@@ -31,9 +31,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": " Light Drizzle",
-    "obs": "11 Oct 11:52 am EDT"
+    "temp": 61,
+    "cond": " Light Drizzle Fog/Mist",
+    "obs": "11 Oct 09:52 am EDT"
    },
    "periods": [
     {
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -109,13 +109,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Mostly Cloudy",
-    "obs": "11 Oct 10:54 am EDT"
+    "temp": 57,
+    "cond": "Overcast",
+    "obs": "11 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 62,
      "text": "A chance of showers after 5pm.  Cloudy, with a high near 62. South wind around 7 mph.  Chance of precipitation is 30%."
@@ -164,7 +164,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -233,9 +233,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 67,
     "cond": "A Few Clouds",
-    "obs": "11 Oct 09:53 am CDT"
+    "obs": "11 Oct 10:53 am CDT"
    },
    "periods": [
     {
@@ -288,7 +288,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -356,7 +356,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -375,7 +375,7 @@
     "title": "Long Beach Peninsula residents join scramble to save homes from high surf",
     "url": "https://laist.com/news/climate-environment/long-beach-peninsula-residents-join-scramble-to-save-homes-from-high-surf",
     "published": "2026-10-11T13:18:31Z",
-    "updated": "2026-10-11T13:25:58Z",
+    "updated": "2026-10-11T15:55:08Z",
     "gathered": "2026-10-11T15:53:23Z"
    },
    {
@@ -397,7 +397,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Showers, mainly before 11am.  High near 72. West wind 5 to 15 mph becoming south southwest in the afternoon. Winds could gust as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers, mainly before 11am.  High near 72. West wind 5 to 15 mph becoming south southwest in the afternoon. Winds could gust as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -443,7 +443,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -484,10 +484,10 @@
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 66,
-     "text": "Rain.  High near 66. East wind 14 to 17 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain.  High near 66. East wind 15 to 17 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -533,7 +533,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -598,7 +598,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "goodnews": []
  },
  {
@@ -661,7 +661,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-11T16:11:00Z",
+  "updatedAt": "2026-10-11T19:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
