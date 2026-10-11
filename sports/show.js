@@ -607,6 +607,16 @@ function deskResume(){
 const {pixText: dPix, pixWidth: dWide, qrMatrix: dQR} = PBC_ADS;
 // the sign fonts draw capitals, digits, space, & - . and nothing else, so every line is squared up first
 const deskTxt = s => String(s == null ? '' : s).toUpperCase().replace(/@/g, 'AT ').replace(/[:/]/g, '.').replace(/[^A-Z0-9 &.-]/g, '');
+// a line of the sign fonts broken into lines no wider than w pixels (a word too long for a line of its own is cut to fit)
+function deskWrap(t, w, big){
+  const lines = [];
+  for (let word of t.split(' ').filter(Boolean)) {
+    while (dWide(word, big) > w) word = word.slice(0, -1);
+    const last = lines[lines.length - 1], joined = last == null ? word : last + ' ' + word;
+    if (last != null && dWide(joined, big) <= w) lines[lines.length - 1] = joined; else lines.push(word);
+  }
+  return lines;
+}
 // head: the screen's heading (and the lower third's red category); title: the lower third's headline, the note when left out
 function deskPanel(head, rows, note, title){
   SHOW.head = head; SHOW.rows = rows || []; SHOW.note = note || ''; SHOW.title = title || ''; SHOW.scene = 'panel'; SHOW.match = null;
@@ -848,12 +858,16 @@ function deskDrawPanel(g, b, now){
     if (r.m != null) { const t = deskTxt(r.m); dPix(g, t, b.x0 + ((w - dWide(t, true)) >> 1), y, true, num); }
     if (r.r != null) { const t = deskTxt(r.r); dPix(g, t, b.x1 - 6 - dWide(t, true), y, true, r.m != null ? num : '#9ba3cc'); }
   });
+  // the note stays inside the screen: centred in the big letters, wrapped over as many lines as it needs (the small
+  // letters when it would take more than three), and a single line of small letters under a list
   if (!rows.length) {
-    const t = deskTxt(SHOW.note || ''); const tw = dWide(t, true);
-    dPix(g, t, b.x0 + ((w - tw) >> 1), b.y0 + (h >> 1) - 3, true, '#c9c6b4');
+    const t = deskTxt(SHOW.note || ''); let big = true, lines = deskWrap(t, w - 12, true);
+    if (lines.length > 3) { big = false; lines = deskWrap(t, w - 12, false); }
+    const lh = big ? 11 : 8, y = b.y0 + 7 + ((h - 7 - lines.length * lh) >> 1);
+    lines.forEach((ln, i) => dPix(g, ln, b.x0 + ((w - dWide(ln, big)) >> 1), y + i * lh, big, '#c9c6b4'));
     return;
   }
-  const n = deskTxt(SHOW.note || '');
+  const n = deskWrap(deskTxt(SHOW.note || ''), w - 12, false)[0];
   if (n) dPix(g, n, b.x0 + 6, b.y1 - 8, false, '#6f78a8');
 }
 // the matchup card: both teams' logos (the same 32-pixel logos as the game card in the side column), their names and
