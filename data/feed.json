@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11T19:09:00Z",
+ "updatedAt": "2026-10-11T22:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,17 @@
  },
  "world": [
   {
-   "h": "Projectile hits Riyadh airport terminal",
-   "b": "A projectile hit a passenger terminal at Riyadh's airport, according to Al Jazeera's live coverage of the regional war.",
+   "h": "Projectile hits Riyadh airport a day after deadly strike",
+   "b": "A projectile struck a passenger terminal at Riyadh's international airport Sunday, causing injuries, a day after a missile hit the same terminal and killed 12 people, the Saudi-led coalition said. The Houthis claimed responsibility.",
    "date": "2026-10-11",
-   "publisher": "Al Jazeera",
-   "title": "‘Projectile’ hits passenger terminal at Riyadh airport",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis",
-   "gathered": "2026-10-11T09:11:02Z"
+   "more": [
+    "The airport was still closed Sunday."
+   ],
+   "publisher": "PBS NewsHour",
+   "title": "Riyadh airport hit by projectile a day after deadly missile strike",
+   "url": "https://www.pbs.org/newshour/world/riyadh-airport-hit-by-projectile-a-day-after-deadly-missile-strike",
+   "published": "2026-10-11T19:49:13Z",
+   "gathered": "2026-10-11T20:29:26Z"
   },
   {
    "h": "Pope Leo XIV to have lung surgery this week",
@@ -90,7 +94,18 @@
    "gathered": "2026-10-10T13:57:01Z"
   }
  ],
- "politics": [],
+ "politics": [
+  {
+   "h": "Senators urge Trump to drop Russian diesel deal",
+   "b": "A bipartisan group of six senators called on the Trump administration to \"immediately reverse course\" on a plan to buy diesel from Russia to lower fuel prices.",
+   "date": "2026-10-11",
+   "publisher": "PBS NewsHour",
+   "title": "Bipartisan group of senators calls on Trump to 'reverse course' on Russian diesel plan",
+   "url": "https://www.pbs.org/newshour/politics/bipartisan-group-of-senators-calls-on-trump-to-reverse-course-on-russian-diesel-plan",
+   "published": "2026-10-11T20:18:14Z",
+   "gathered": "2026-10-11T20:29:26Z"
+  }
+ ],
  "international": [
   {
    "h": "139 dead as migrant boat capsizes off Djibouti",
@@ -182,13 +197,16 @@
    "gathered": "2026-10-10T13:57:01Z"
   },
   {
-   "h": "India detains thousands at youth protests",
-   "b": "Authorities in New Delhi detained thousands as the youth 'Cockroach' movement protested a contentious voter list revision and demanded the election chief's resignation.",
-   "date": "2026-10-10",
+   "h": "India's 'Cockroach' protest leaders freed, vow more",
+   "b": "Leaders of India's Cockroach Janata Party youth movement were released from detention and pledged more protests over the removal of more than 130 million voters from the rolls.",
+   "date": "2026-10-11",
    "place": "New Delhi, India",
    "tz": "Asia/Kolkata",
-   "url": "https://www.kuow.org/npr-news/2026-10-10/india-cracks-down-on-youth-protests-as-anger-grows-against-modi-and-election-chief",
-   "gathered": "2026-10-10T10:09:32Z"
+   "publisher": "PBS NewsHour",
+   "title": "Leaders from India's 'Cockroach' movement released from detention, pledge to hold more protests",
+   "url": "https://www.pbs.org/newshour/world/leaders-from-indias-cockroach-movement-released-from-detention-pledge-to-hold-more-protests",
+   "published": "2026-10-11T19:08:28Z",
+   "gathered": "2026-10-11T20:29:26Z"
   }
  ],
  "business": [
@@ -215,6 +233,24 @@
  ],
  "science": [],
  "sports": [
+  {
+   "h": "Eagles' Sirianni takes blame for London loss",
+   "b": "The Eagles lost their third straight, 19-17 to the Jaguars in London, after a controversial decision with eight seconds left. Coach Nick Sirianni accepted the blame.",
+   "date": "2026-10-11",
+   "publisher": "CBS Sports",
+   "title": "Nick Sirianni's seat getting warmer? Eagles coach accepts blame for London loss to Jaguars",
+   "url": "https://www.cbssports.com/nfl/news/nick-sirianni-accepts-blame-for-eagles-london-loss-to-jaguars/",
+   "gathered": "2026-10-11T20:29:26Z"
+  },
+  {
+   "h": "Oregon gets an 'F' after 7-turnover loss",
+   "b": "Oregon committed seven turnovers in a 17-15 loss to UCLA, earning an 'F' on CBS Sports' Week 6 report card for contenders. Ohio State got a 'C+'.",
+   "date": "2026-10-11",
+   "publisher": "CBS Sports",
+   "title": "College football grades: Oregon earns 'F' mark for total implosion, Ohio State gets 'C+' on Week 6 report card",
+   "url": "https://www.cbssports.com/college-football/news/college-football-grades-oregon-ohio-state-week-6-report-card/",
+   "gathered": "2026-10-11T20:29:26Z"
+  },
   {
    "h": "Georgia still SEC's king after Week 6",
    "b": "CBS Sports' Week 6 overreactions: Kirby Smart's Georgia silenced Bryant-Denny Stadium, and Saturday delivered dramatic upsets and a shifted Big Ten hierarchy.",
@@ -263,6 +299,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Mamdani: ICE agent looked like a mass shooter",
+   "b": "Mayor Zohran Mamdani said the plainclothes ICE agent with a long gun who shot a Dominican immigrant in the Bronx could easily have been mistaken for a mass shooter.",
+   "date": "2026-10-11",
+   "publisher": "Gothamist",
+   "title": "Plainclothes ICE agent with long gun looked like mass shooter, Mayor Mamdani says",
+   "url": "https://gothamist.com/news/plainclothes-ice-agent-with-long-gun-looked-like-mass-shooter-mayor-mamdani-says",
+   "published": "2026-10-11T17:49:02Z",
+   "gathered": "2026-10-11T20:29:26Z"
+  },
+  {
    "h": "NJ Transit faces 5 weeks of disruptions",
    "b": "Starting Sunday, NJ Transit rail lines will see cancellations, new departure times and stopping changes as crews move the final track to the new $2.3 billion Portal North Bridge.",
    "date": "2026-10-11",
@@ -286,46 +332,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 59,
    "cond": " Light Rain Fog/Mist",
-   "obs": "11 Oct 11:51 am EDT"
+   "obs": "11 Oct 15:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 66,
-    "text": "Rain.  High near 66. East wind 15 to 17 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 61,
-    "text": "Rain likely and possibly a thunderstorm before 2am, then a chance of rain and thunderstorms after 2am.  Cloudy, with a low around 61. Northeast wind 15 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible. "
+    "temp": 62,
+    "text": "Rain before 8pm, then rain and possibly a thunderstorm between 8pm and 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Columbus Day",
     "kind": "high",
-    "temp": 70,
-    "text": "A chance of rain and thunderstorms before 8am, then a slight chance of showers between 8am and 11am.  Cloudy through mid morning, then gradual clearing, with a high near 70. North wind 10 to 15 mph.  Chance of precipitation is 30%."
+    "temp": 72,
+    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 72. North wind 9 to 14 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 60,
-    "text": "Mostly clear, with a low around 60. North wind 5 to 7 mph. "
+    "temp": 59,
+    "text": "Mostly clear, with a low around 59. Northwest wind 5 to 7 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 70,
-    "text": "Mostly sunny, with a high near 70. Northeast wind 5 to 10 mph becoming south in the afternoon. "
+    "temp": 72,
+    "text": "Mostly sunny, with a high near 72. Light and variable wind becoming south 6 to 11 mph in the morning. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 65,
-    "text": "Partly cloudy, with a low around 65."
+    "temp": 66,
+    "text": "Partly cloudy, with a low around 66."
+   },
+   {
+    "name": "Wednesday",
+    "kind": "high",
+    "temp": 78,
+    "text": "Sunny, with a high near 78."
    }
   ]
  },
