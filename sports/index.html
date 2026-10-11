@@ -3216,7 +3216,8 @@ function planBB(p){
   let PRE = far > 2 ? clamp(far / 22, 0.25, 1.8) : 0.05;
   // the ball may be with someone else (a live game passes it around while waiting for plays): the player who
   // really has the ball in this play gets a pass first, so the shooter, ball handler or fouled player is always right
-  const h0 = !st.loose ? set.holder : null, hs = h0 && starts[F.indexOf(h0)];
+  // (a foul while the ball is loose, after a miss nobody rebounded yet: the fouled player picks it up)
+  const h0 = !st.loose || k.kind === 'foul' ? set.holder : null, hs = h0 && starts[F.indexOf(h0)];
   const passD = hs ? Math.hypot(S.ball.x - hs[0], S.ball.y - hs[1]) : 0;
   if (passD > 2) {
     PRE = Math.max(PRE, clamp(passD / 40, 0.4, 0.9));
@@ -3354,11 +3355,32 @@ function planBB(p){
     }
   } else if (k.kind === 'foul') {
     const fo = who(k.ids[0]), vi = who(k.ids[1]) || pg;
-    seg(0, 30, {k: 'hold', a: vi || pg});
     if (fo && vi) { const [x, y] = at(vi); go(fo, 0.45, x + (fo.x > x ? 1.4 : -1.4), y + 0.5); }
     // the closest referee blows the whistle and raises a fist
-    const [fx, fy] = vi ? at(vi) : [hx, 25]; signal(nearRef(fx, fy), 0.45, 1.8, 'fist');
+    const [fx, fy] = vi ? at(vi) : [hx, 25], ref = nearRef(fx, fy); signal(ref, 0.45, 1.8, 'fist');
     sfx(0.5, 'whistle'); tEnd = 1.6;
+    // no free throws coming: the ball is dead, the referee takes it and hands it to a player of the team that gets it
+    // on the nearest sideline, who passes it in to the point guard
+    const nt = otherTeam(k.team) || off, shooting = /shooting/i.test((p.text || '') + ' ' + (p.type?.text || ''));
+    if (!k.tech && !shooting && nk?.kind !== 'ft' && ref) {
+      const sy = fy < 25 ? -1.5 : 51.5, sx = clamp(fx, 8, 86), inY = fy < 25 ? 1 : -1;
+      const rcv = F.find(a => a.team === nt && a.role === 'P0');
+      const inb = F.filter(a => a.team === nt && a !== rcv && !a.ref).sort((a, b) => Math.hypot(at(a)[0] - sx, at(a)[1] - sy) - Math.hypot(at(b)[0] - sx, at(b)[1] - sy))[0];
+      if (inb && rcv) {
+        const [rx, ry] = at(ref), [ix] = at(inb);
+        seg(0, 1.0, {k: 'hold', a: vi || pg});
+        seg(1.0, 1.4, {k: 'arc', x0: fx, y0: fy, x1: rx, y1: ry, peak: 2, start: 3, end: 3});
+        seg(1.4, 1.9, {k: 'spot', x: rx, y: ry, h: 3});
+        hold(inb, 0.6); go(inb, 1.9, sx, sy); hold(inb, 2.6); go(inb, 3.2, (sx + ix) / 2, sy + inY * 6);
+        seg(1.9, 2.2, {k: 'arc', x0: rx, y0: ry, xa: inb, peak: 1, start: 3, end: 2});
+        seg(2.2, 2.5, {k: 'hold', a: inb});
+        hold(rcv, 0.8); go(rcv, 2.5, clamp(sx + attackDir(nt) * 6, 6, 88), sy + inY * 12);
+        seg(2.5, 2.95, {k: 'arc', x0: sx, y0: sy, xa: rcv, peak: 4, start: 3, end: 1});
+        seg(2.95, 30, {k: 'hold', a: rcv});
+        plan.inbound = true; tEnd = 3.2;
+      }
+    }
+    if (!plan.inbound) seg(0, 30, {k: 'hold', a: vi || pg});
   } else if (k.kind === 'jump') {
     // the toss at center court, tipped to a teammate
     const rcv = who(k.ids[2]) || F.find(a => a.team === (k.recv || S.home) && a.role === 'P1');
