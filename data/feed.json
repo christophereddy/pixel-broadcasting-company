@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T10:09:00Z",
+ "updatedAt": "2026-10-12T13:34:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -73,11 +73,7 @@
    "h": "Dhillon reshapes DOJ's civil rights division",
    "b": "Over 18 months, Harmeet Dhillon has pushed out hundreds of longtime attorneys from the Justice Department's Civil Rights Division and replaced many with inexperienced ideological allies, NPR reports.",
    "date": "2026-10-11",
-   "publisher": "KUOW",
-   "title": "Reshaped civil rights mission at Justice Department transforms its work, workforce",
    "url": "https://www.kuow.org/npr-news/2026-10-11/reshaped-civil-rights-mission-at-justice-department-transforms-its-work-workforce",
-   "published": "2026-10-11T09:00:00Z",
-   "updated": "2026-10-11T09:36:37Z",
    "gathered": "2026-10-11T10:10:18Z"
   },
   {
@@ -169,11 +165,7 @@
    "h": "Job hunts are taking longer",
    "b": "In a sluggish hiring environment, unemployed workers are taking longer to find new jobs, and in many cases their unemployment benefits run out first.",
    "date": "2026-10-11",
-   "publisher": "KUOW",
-   "title": "It's taking longer to find a new job after losing one",
    "url": "https://www.kuow.org/npr-news/2026-10-11/its-taking-longer-to-find-a-new-job-after-losing-one",
-   "published": "2026-10-11T09:00:00Z",
-   "updated": "2026-10-11T09:36:55Z",
    "gathered": "2026-10-11T10:10:18Z"
   },
   {
@@ -266,6 +258,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NYPD Bomb Squad contractor faced LI scrutiny",
+   "b": "A company that won a $23 million contract to build an NYPD Bomb Squad building in the Bronx was flagged in a 2020 Nassau County inspector general report for not disclosing who ran the business.",
+   "date": "2026-10-12",
+   "publisher": "Gothamist",
+   "title": "Company that won $23M NYPD building contract was investigated by LI watchdog",
+   "url": "https://gothamist.com/news/company-that-won-23m-nypd-building-contract-was-investigated-by-li-watchdog",
+   "published": "2026-10-12T10:00:56Z",
+   "gathered": "2026-10-12T10:09:47Z"
+  },
+  {
    "h": "Mamdani: ICE agent looked like a mass shooter",
    "b": "Mayor Zohran Mamdani said the plainclothes ICE agent with a long gun who shot a Dominican immigrant in the Bronx could easily have been mistaken for a mass shooter.",
    "date": "2026-10-11",
@@ -288,19 +290,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
-   "cond": "Overcast",
-   "obs": "12 Oct 02:51 am EDT"
+   "temp": 55,
+   "cond": "Partly Cloudy",
+   "obs": "12 Oct 05:51 am EDT"
   },
   "periods": [
    {
     "name": "Columbus Day",
     "kind": "high",
     "temp": 71,
-    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 71. North wind 8 to 15 mph. "
+    "text": "A 20 percent chance of showers and thunderstorms before 8am.  Mostly cloudy, then gradually becoming sunny, with a high near 71. North wind 8 to 15 mph. "
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 61,
     "text": "Mostly clear, with a low around 61. Northwest wind 5 to 9 mph becoming light north  after midnight. "
@@ -321,7 +323,7 @@
     "name": "Wednesday",
     "kind": "high",
     "temp": 76,
-    "text": "Mostly sunny, with a high near 76."
+    "text": "Mostly sunny, with a high near 76. West wind around 11 mph. "
    },
    {
     "name": "Wednesday Night",
