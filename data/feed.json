@@ -1,11 +1,31 @@
 {
- "updatedAt": "2026-10-11T22:09:00Z",
+ "updatedAt": "2026-10-12T01:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Trump says Russia, Ukraine agree to energy truce",
+   "b": "President Trump said Russia and Ukraine agreed to an immediate \"energy ceasefire\" but gave no details. Zelenskyy welcomed it, while saying Russia was still hitting energy sites in Kyiv and Kharkiv.",
+   "date": "2026-10-11",
+   "publisher": "PBS NewsHour",
+   "title": "Trump claims Russia and Ukraine agree to 'energy ceasefire' despite continued attacks",
+   "url": "https://www.pbs.org/newshour/world/trump-claims-russia-and-ukraine-agree-to-energy-ceasefire-despite-continued-attacks",
+   "published": "2026-10-11T21:25:24Z",
+   "gathered": "2026-10-11T23:50:37Z"
+  },
+  {
+   "h": "Iran calls latest US peace proposal 'insufficient'",
+   "b": "The head of Iran's Supreme National Security Council said the latest US response on ending the war is \"insufficient\" and warned of attacks on regional data centers and cables if fighting intensifies.",
+   "date": "2026-10-11",
+   "publisher": "PBS NewsHour",
+   "title": "Iran calls latest U.S. proposal to end war 'insufficient' as Netanyahu's corruption trial resumes",
+   "url": "https://www.pbs.org/newshour/world/iran-calls-latest-u-s-proposal-to-end-war-insufficient-as-netanyahus-corruption-trial-resumes",
+   "published": "2026-10-11T21:43:11Z",
+   "gathered": "2026-10-11T23:50:37Z"
+  },
   {
    "h": "Projectile hits Riyadh airport a day after deadly strike",
    "b": "A projectile struck a passenger terminal at Riyadh's international airport Sunday, causing injuries, a day after a missile hit the same terminal and killed 12 people, the Saudi-led coalition said. The Houthis claimed responsibility.",
@@ -40,16 +60,19 @@
    "published": "2026-10-11T12:10:54Z",
    "updated": "2026-10-11T13:04:31Z",
    "gathered": "2026-10-11T15:53:23Z"
-  },
-  {
-   "h": "Trump weighs joining Saudi strikes on Houthis",
-   "b": "President Trump said he is evaluating whether the U.S. should join Saudi strikes on Yemen's Houthi rebels after Riyadh's international airport was attacked again Saturday.",
-   "date": "2026-10-10",
-   "url": "https://www.kuow.org/npr-news/2026-10-10/trump-weighs-joining-the-fight-against-houthis-after-riyadh-airport-attack",
-   "gathered": "2026-10-10T22:49:36Z"
   }
  ],
  "national": [
+  {
+   "h": "Isaias moves north as Rachel batters SoCal coast",
+   "b": "Isaias's remnants brought flood risks to the central Appalachians and mid-Atlantic after sweeping the Florida Panhandle, while waves from former tropical storm Rachel battered Southern California.",
+   "date": "2026-10-11",
+   "publisher": "PBS NewsHour",
+   "title": "Isaias moves north as Rachel batters Southern California",
+   "url": "https://www.pbs.org/newshour/nation/isaias-moves-north-as-rachel-batters-southern-california",
+   "published": "2026-10-11T20:44:46Z",
+   "gathered": "2026-10-11T23:50:37Z"
+  },
   {
    "h": "Dhillon reshapes DOJ's civil rights division",
    "b": "Over 18 months, Harmeet Dhillon has pushed out hundreds of longtime attorneys from the Justice Department's Civil Rights Division and replaced many with inexperienced ideological allies, NPR reports.",
@@ -67,31 +90,6 @@
    "date": "2026-10-11",
    "url": "https://www.aljazeera.com/news/2026/10/11/us-opens-antitrust-probe-into-tv-networks-halting-trump-coverage",
    "gathered": "2026-10-11T09:11:02Z"
-  },
-  {
-   "h": "Hurricane Isaias kills at least 2 on Gulf Coast",
-   "b": "Isaias hit the Gulf Coast as a Category 2 storm Friday night with 105 mph winds, snapping trees and cutting power in Florida and Alabama. Flash flood threats persist inland.",
-   "date": "2026-10-10",
-   "url": "https://www.kuow.org/npr-news/2026-10-10/at-least-2-deaths-attributed-to-isaias-after-hurricane-bashes-florida-and-alabama",
-   "gathered": "2026-10-10T18:46:44Z"
-  },
-  {
-   "h": "Kennedy Center names new artistic director",
-   "b": "The Kennedy Center named talent manager Rick Canny its new artistic director despite staff complaints about his business practices as a consultant. The center has been closed since September.",
-   "date": "2026-10-10",
-   "url": "https://www.kuow.org/npr-news/2026-10-10/the-kennedy-center-names-new-artistic-director-amid-concerns",
-   "gathered": "2026-10-10T18:46:44Z"
-  },
-  {
-   "h": "DHS surveils border tribe as wall advances",
-   "b": "ProPublica found DHS surveilled an ongoing border prayer ceremony of Arizona's Tohono O'odham Nation and questioned tribal members, after promising to engage in good faith.",
-   "date": "2026-10-10",
-   "publisher": "ProPublica",
-   "title": "As Trump’s Wall Closes in, DHS Intimidates a Border Tribe With Surveillance, Masked Agents and Drones",
-   "url": "https://www.propublica.org/article/tohono-oodham-nation-arizona-border-wall",
-   "published": "2026-10-10T10:00:00Z",
-   "updated": "2026-10-10T10:00:10Z",
-   "gathered": "2026-10-10T13:57:01Z"
   }
  ],
  "politics": [
@@ -161,51 +159,12 @@
    "gathered": "2026-10-11T09:11:02Z"
   },
   {
-   "h": "Russian strikes kill 15 in Zaporizhzhia",
-   "b": "Russian air attacks killed at least 15 people in Zaporizhzhia, Ukraine's prosecutor's office said, as the US hosted talks it called productive on ending the war.",
-   "date": "2026-10-10",
-   "place": "Zaporizhzhia, Ukraine",
-   "tz": "Europe/Kyiv",
-   "url": "https://www.aljazeera.com/news/2026/10/10/us-hosts-productive-trilateral-talks-to-end-russia-ukraine-war",
-   "gathered": "2026-10-10T13:57:01Z"
-  },
-  {
-   "h": "Seven killed in Gaza on 'ceasefire' anniversary",
-   "b": "At least seven people, including an 8-year-old girl, were killed in Israeli attacks across Gaza, medical sources said, a year after the US-backed ceasefire took effect.",
-   "date": "2026-10-10",
-   "place": "Gaza",
-   "tz": "Asia/Gaza",
-   "url": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child",
-   "gathered": "2026-10-10T13:57:01Z"
-  },
-  {
-   "h": "Brazil police rescue 13 kindergarten hostages",
-   "b": "Police in Curitiba rescued 13 children taken hostage at a kindergarten after killing the suspect, who had threatened to set the building on fire. At least one child was hurt.",
-   "date": "2026-10-10",
-   "place": "Curitiba, Brazil",
-   "tz": "America/Sao_Paulo",
-   "url": "https://www.aljazeera.com/news/2026/10/10/suspect-killed-after-13-kindergarteners-taken-hostage-beaten-in-brazil",
-   "gathered": "2026-10-10T13:57:01Z"
-  },
-  {
-   "h": "Journalist shot dead in Oaxaca, Mexico",
-   "b": "Hamurabi Huesca Manzano, owner of the news site Pinotepa Comunica, was killed by an armed group. Article 19 says he is the ninth journalist killed in Mexico this year.",
-   "date": "2026-10-10",
-   "place": "Oaxaca, Mexico",
-   "tz": "America/Mexico_City",
-   "url": "https://www.aljazeera.com/news/2026/10/10/journalist-killed-in-mexico-ninth-this-year-ngo",
-   "gathered": "2026-10-10T13:57:01Z"
-  },
-  {
    "h": "India's 'Cockroach' protest leaders freed, vow more",
    "b": "Leaders of India's Cockroach Janata Party youth movement were released from detention and pledged more protests over the removal of more than 130 million voters from the rolls.",
    "date": "2026-10-11",
    "place": "New Delhi, India",
    "tz": "Asia/Kolkata",
-   "publisher": "PBS NewsHour",
-   "title": "Leaders from India's 'Cockroach' movement released from detention, pledge to hold more protests",
    "url": "https://www.pbs.org/newshour/world/leaders-from-indias-cockroach-movement-released-from-detention-pledge-to-hold-more-protests",
-   "published": "2026-10-11T19:08:28Z",
    "gathered": "2026-10-11T20:29:26Z"
   }
  ],
@@ -234,11 +193,27 @@
  "science": [],
  "sports": [
   {
+   "h": "Commanders, Giants tie 27-27 after OT meltdown",
+   "b": "Washington ran out of time at the end of overtime with no timeouts, leaving the NFL's first tie of the season after Jayden Daniels went down with eight seconds left.",
+   "date": "2026-10-11",
+   "publisher": "CBS Sports",
+   "title": "Commanders-Giants tie: Washington delivers disastrous end-of-game sequence following Cam Skattebo fumble",
+   "url": "https://www.cbssports.com/nfl/news/commanders-giants-ends-tie-overtime-clock-management-2026/",
+   "gathered": "2026-10-11T23:50:37Z"
+  },
+  {
+   "h": "Cardinals trade Marvin Harrison Jr. to Texans",
+   "b": "Houston sent a 2027 second-round pick and a 2027 sixth-rounder to Arizona for the 24-year-old receiver and a 2027 seventh-round pick.",
+   "date": "2026-10-11",
+   "publisher": "CBS Sports",
+   "title": "Marvin Harrison Jr. trade grades: Cardinals extract near-max value from Texans for former top-5 pick",
+   "url": "https://www.cbssports.com/nfl/news/marvin-harrison-jr-trade-grades-cardinals-texans/",
+   "gathered": "2026-10-11T23:50:37Z"
+  },
+  {
    "h": "Eagles' Sirianni takes blame for London loss",
    "b": "The Eagles lost their third straight, 19-17 to the Jaguars in London, after a controversial decision with eight seconds left. Coach Nick Sirianni accepted the blame.",
    "date": "2026-10-11",
-   "publisher": "CBS Sports",
-   "title": "Nick Sirianni's seat getting warmer? Eagles coach accepts blame for London loss to Jaguars",
    "url": "https://www.cbssports.com/nfl/news/nick-sirianni-accepts-blame-for-eagles-london-loss-to-jaguars/",
    "gathered": "2026-10-11T20:29:26Z"
   },
@@ -246,8 +221,6 @@
    "h": "Oregon gets an 'F' after 7-turnover loss",
    "b": "Oregon committed seven turnovers in a 17-15 loss to UCLA, earning an 'F' on CBS Sports' Week 6 report card for contenders. Ohio State got a 'C+'.",
    "date": "2026-10-11",
-   "publisher": "CBS Sports",
-   "title": "College football grades: Oregon earns 'F' mark for total implosion, Ohio State gets 'C+' on Week 6 report card",
    "url": "https://www.cbssports.com/college-football/news/college-football-grades-oregon-ohio-state-week-6-report-card/",
    "gathered": "2026-10-11T20:29:26Z"
   },
@@ -255,8 +228,6 @@
    "h": "Georgia still SEC's king after Week 6",
    "b": "CBS Sports' Week 6 overreactions: Kirby Smart's Georgia silenced Bryant-Denny Stadium, and Saturday delivered dramatic upsets and a shifted Big Ten hierarchy.",
    "date": "2026-10-11",
-   "publisher": "CBS Sports",
-   "title": "Week 6 Overreactions: Shorthanded Georgia still sport's king, Mike Elko bites the hand that feeds him",
    "url": "https://www.cbssports.com/college-football/news/college-football-week-6-scores-takes-georgia-texas-a-m-lsu-texas/",
    "gathered": "2026-10-11T15:53:23Z"
   },
@@ -287,13 +258,6 @@
    "date": "2026-10-10",
    "url": "https://www.cbssports.com/wnba/news/golden-state-valkyries-reach-wnba-finals-second-year-unprecedented-run/",
    "gathered": "2026-10-10T07:34:30Z"
-  },
-  {
-   "h": "Mike Ditka dies at 86",
-   "b": "Mike Ditka, the Hall of Fame tight end who coached the Bears to their only Super Bowl title, has died at 86, his family said.",
-   "date": "2026-10-09",
-   "url": "https://www.cbssports.com/nfl/news/mike-ditka-bears-super-bowl-winning-coach-dies-at-age-86/",
-   "gathered": "2026-10-09T16:27:04Z"
   }
  ],
  "goodnews": [],
@@ -317,31 +281,20 @@
    "url": "https://gothamist.com/news/nj-transit-riders-face-5-weeks-of-schedule-disruptions-starting-sunday",
    "published": "2026-10-11T14:00:45Z",
    "gathered": "2026-10-11T15:53:23Z"
-  },
-  {
-   "h": "What we know about the ICE shooting in NYC",
-   "b": "Police said a federal immigration officer shot and wounded 28-year-old Oscar Belgal in Marble Hill while his 5-year-old son was in the backseat, setting off anger across the city.",
-   "date": "2026-10-10",
-   "publisher": "Gothamist",
-   "title": "What we know about the ICE shooting in NYC",
-   "url": "https://gothamist.com/news/what-we-know-about-the-ice-shooting-in-nyc",
-   "published": "2026-10-10T10:00:00Z",
-   "updated": "2026-10-10T21:00:00Z",
-   "gathered": "2026-10-10T10:09:32Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 59,
-   "cond": " Light Rain Fog/Mist",
-   "obs": "11 Oct 15:51 pm EDT"
+   "temp": 58,
+   "cond": " Rain Fog/Mist",
+   "obs": "11 Oct 18:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 62,
-    "text": "Rain before 8pm, then rain and possibly a thunderstorm between 8pm and 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
+    "text": "Rain before 8pm, then rain and possibly a thunderstorm between 8pm and 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Columbus Day",
@@ -365,7 +318,7 @@
     "name": "Tuesday Night",
     "kind": "low",
     "temp": 66,
-    "text": "Partly cloudy, with a low around 66."
+    "text": "Partly cloudy, with a low around 66. Southwest wind 11 to 13 mph. "
    },
    {
     "name": "Wednesday",
