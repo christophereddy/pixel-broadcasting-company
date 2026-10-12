@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 72,
+    "temp": 77,
     "cond": "A Few Clouds",
-    "obs": "12 Oct 10:52 am EDT"
+    "obs": "12 Oct 11:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -93,16 +93,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Mostly Cloudy",
-    "obs": "12 Oct 10:54 am EDT"
+    "temp": 59,
+    "cond": "Partly Cloudy",
+    "obs": "12 Oct 11:54 am EDT"
    },
    "periods": [
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 69,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 69. Northwest wind around 6 mph. "
+     "text": "Mostly sunny, with a high near 69. Northwest wind around 6 mph. "
     },
     {
      "name": "Tonight",
@@ -148,7 +148,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -204,7 +204,7 @@
      "name": "Columbus Day",
      "kind": "high",
      "temp": 84,
-     "text": "Sunny, with a high near 84. South southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "text": "Sunny, with a high near 84. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -250,7 +250,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -318,7 +318,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -405,7 +405,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -488,7 +488,7 @@
      "name": "Columbus Day",
      "kind": "high",
      "temp": 71,
-     "text": "Sunny, with a high near 71. Northwest wind 8 to 11 mph. "
+     "text": "Sunny, with a high near 71. Northwest wind 8 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -534,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -572,14 +572,22 @@
     "h": "Fire destroys Paris's oldest covered market",
     "b": "An overnight fire destroyed the Marché Couvert des Enfants Rouges in the Marais, a street food venue that has stood in the same space since 1615, authorities said.",
     "date": "2026-10-12",
+    "publisher": "The Local France",
+    "title": "Flames ravage oldest covered food market in Paris",
     "url": "https://www.thelocal.fr/20261012/flames-ravage-oldest-covered-food-market-in-paris",
+    "published": "2026-10-12T07:49:57Z",
+    "updated": "2026-10-12T07:49:59Z",
     "gathered": "2026-10-12T10:09:47Z"
    },
    {
     "h": "Glucksmann wins centre-left presidential primary",
     "b": "Euro MP Raphaël Glucksmann won 66 percent of the 120,787 votes in the centre-left primary, becoming its candidate for next year's French presidential election. Socialist leader Olivier Faure was second with 14 percent.",
     "date": "2026-10-12",
+    "publisher": "The Local France",
+    "title": "Raphaël Glucksmann elected centre-left French presidential candidate",
     "url": "https://www.thelocal.fr/20261012/raphael-glucksmann-elected-centre-left-french-presidential-candidate",
+    "published": "2026-10-12T06:50:42Z",
+    "updated": "2026-10-12T06:50:43Z",
     "gathered": "2026-10-12T07:22:49Z"
    },
    {
@@ -613,7 +621,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "goodnews": []
  },
  {
@@ -688,7 +696,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T16:12:00Z",
+  "updatedAt": "2026-10-12T19:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
