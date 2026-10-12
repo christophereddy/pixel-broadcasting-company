@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T19:09:00Z",
+ "updatedAt": "2026-10-12T22:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,21 +7,28 @@
  },
  "world": [
   {
+   "h": "NATO commander: alliance 'ready to fight tonight'",
+   "b": "NATO's top military commander said the alliance is ready to fight if attacked, as European officials warn Russia could test its defenses with covert attacks or a limited incursion.",
+   "date": "2026-10-12",
+   "publisher": "PBS NewsHour",
+   "title": "NATO commander says alliance does not want war but is 'ready to fight tonight'",
+   "url": "https://www.pbs.org/newshour/world/nato-commander-says-alliance-does-not-want-war-but-is-ready-to-fight-tonight",
+   "published": "2026-10-12T17:43:33Z",
+   "gathered": "2026-10-12T19:10:00Z"
+  },
+  {
    "h": "Zelenskyy: Russia still hitting energy sites",
    "b": "Zelenskyy said Russia kept striking Ukraine's energy facilities after Trump announced an energy ceasefire. He said Ukraine would honor such a deal if Moscow did the same.",
    "date": "2026-10-12",
-   "publisher": "PBS NewsHour",
-   "title": "Zelenskyy says Russia strikes energy facilities despite Trump claim of an energy ceasefire",
    "url": "https://www.pbs.org/newshour/world/zelenskyy-says-russia-strikes-energy-facilities-despite-trump-claim-of-an-energy-ceasefire",
-   "published": "2026-10-12T16:07:13Z",
    "gathered": "2026-10-12T16:13:05Z"
   },
   {
-   "h": "Iran: Yemen escalation benefits 'only' Israel",
-   "b": "Tehran said the escalating war in Yemen benefits only Israel, according to Al Jazeera's live coverage of the regional conflict.",
+   "h": "Saudis down more Houthi missiles aimed at Riyadh",
+   "b": "Saudi Arabia shot down more Houthi missiles as Riyadh was targeted again, according to Al Jazeera's live coverage of the regional war.",
    "date": "2026-10-12",
    "publisher": "Al Jazeera",
-   "title": "Iran says escalation in Yemen benefits ‘only’ Israel",
+   "title": "Saudi Arabia shoots down more Houthi missiles as Riyadh targeted again",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate",
    "gathered": "2026-10-12T15:54:11Z"
   },
@@ -29,8 +36,6 @@
    "h": "Iran targets US-backed oil shuttle in Hormuz",
    "b": "Iran signalled it intends to disrupt an Arab-operated, US-assisted shuttle system that has moved more energy exports through the Strait of Hormuz during the war.",
    "date": "2026-10-12",
-   "publisher": "Al Jazeera",
-   "title": "Iran sets crosshairs on ‘US-UAE’ oil shuttle out of Strait of Hormuz",
    "url": "https://www.aljazeera.com/economy/2026/10/12/iran-sets-crosshairs-on-us-uae-oil-shuttle-out-of-strait-of-hormuz",
    "gathered": "2026-10-12T15:54:11Z"
   },
@@ -62,11 +67,7 @@
    "h": "Pope Leo XIV to have lung surgery this week",
    "b": "Pope Leo XIV said he will have surgery this week to remove a \"localized nodule\" in his lung, found at a \"very early stage.\" The operation is set for Rome's Gemelli Hospital, and the Vatican expects a weeklong recovery.",
    "date": "2026-10-11",
-   "publisher": "KUOW",
-   "title": "Pope Leo XIV to undergo lung surgery this week",
    "url": "https://www.kuow.org/npr-news/2026-10-11/pope-leo-xiv-to-undergo-lung-surgery-this-week",
-   "published": "2026-10-11T12:54:25Z",
-   "updated": "2026-10-11T13:04:34Z",
    "gathered": "2026-10-11T15:53:23Z"
   },
   {
@@ -78,6 +79,16 @@
   }
  ],
  "national": [
+  {
+   "h": "Judge orders Trump to cancel taxpayer-funded TV ads",
+   "b": "A federal judge in New York ordered the administration to cancel remaining TV ads paid for with taxpayer money to promote Trump's political message, siding with Common Cause and others.",
+   "date": "2026-10-12",
+   "publisher": "PBS NewsHour",
+   "title": "Judge orders the Trump administration to cancel taxpayer-funded TV ads",
+   "url": "https://www.pbs.org/newshour/politics/judge-orders-the-trump-administration-to-cancel-taxpayer-funded-tv-ads",
+   "published": "2026-10-12T19:00:14Z",
+   "gathered": "2026-10-12T19:10:00Z"
+  },
   {
    "h": "Isaias moves north as Rachel batters SoCal coast",
    "b": "Isaias's remnants brought flood risks to the central Appalachians and mid-Atlantic after sweeping the Florida Panhandle, while waves from former tropical storm Rachel battered Southern California.",
@@ -105,20 +116,14 @@
    "h": "Musk is biggest known midterm donor",
    "b": "Elon Musk has given more than $276 million since July to try to save Republican majorities in Congress, including $158 million to the Senate Leadership Fund, his super PAC confirmed.",
    "date": "2026-10-12",
-   "publisher": "PBS NewsHour",
-   "title": "Elon Musk quietly becomes biggest known donor in midterm contests as he tries to save Republicans",
    "url": "https://www.pbs.org/newshour/politics/elon-musk-quietly-becomes-biggest-known-donor-in-midterm-contests-as-he-tries-to-save-republicans",
-   "published": "2026-10-12T15:56:40Z",
    "gathered": "2026-10-12T16:13:05Z"
   },
   {
    "h": "Federal agents search Rep. Ilhan Omar's home",
    "b": "Homeland Security Investigations agents searched the Minnesota Democrat's home as part of a criminal investigation, the AP reported, citing two people familiar with the matter. Details were not immediately clear.",
    "date": "2026-10-12",
-   "publisher": "PBS NewsHour",
-   "title": "AP report: Federal agents search Rep. Ilhan Omar's home as part of a criminal investigation",
    "url": "https://www.pbs.org/newshour/politics/ap-report-federal-agents-search-rep-ilhan-omars-home-as-part-of-a-criminal-investigation",
-   "published": "2026-10-12T14:31:52Z",
    "gathered": "2026-10-12T15:54:11Z"
   },
   {
@@ -131,13 +136,44 @@
  ],
  "international": [
   {
+   "h": "UK blames Iran for RAF airbase plot",
+   "b": "Prime Minister Andy Burnham said a suspected plot targeting RAF Fairford was \"almost certainly\" directed by Iran's Revolutionary Guard. Britain sanctioned two Iranian nationals; Tehran denies involvement.",
+   "date": "2026-10-12",
+   "place": "London, UK",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK blames Iran for airbase plot, sanctions two Iranian nationals",
+   "url": "https://www.aljazeera.com/news/2026/10/12/uk-blames-iran-for-airbase-plot-sanctions-two-iranian-nationals",
+   "gathered": "2026-10-12T19:10:00Z"
+  },
+  {
+   "h": "Ethiopian forces enter Tigray town of Adwa",
+   "b": "Federal forces and an allied militia entered Adwa without a fight, residents said, a day after Tigray People's Liberation Front fighters withdrew.",
+   "date": "2026-10-12",
+   "place": "Adwa, Ethiopia",
+   "tz": "Africa/Addis_Ababa",
+   "publisher": "Al Jazeera",
+   "title": "Ethiopian forces enter strategic Tigray town of Adwa, witnesses say",
+   "url": "https://www.aljazeera.com/news/2026/10/12/ethiopian-troops-capture-adwa-without-a-fight-witnesses-say",
+   "gathered": "2026-10-12T19:10:00Z"
+  },
+  {
+   "h": "Stolen Renoirs found behind wall in France",
+   "b": "Two Renoir paintings stolen from a French museum last month were found damaged behind a false wall after six arrests, prosecutors said, ahead of a planned second heist.",
+   "date": "2026-10-12",
+   "place": "Marseille, France",
+   "tz": "Europe/Paris",
+   "publisher": "Al Jazeera",
+   "title": "Stolen Renoir paintings found behind wall in France following arrests",
+   "url": "https://www.aljazeera.com/news/2026/10/12/stolen-renoir-paintings-found-behind-wall-in-france-following-arrests",
+   "gathered": "2026-10-12T19:10:00Z"
+  },
+  {
    "h": "Explosion in northern Israel kills teen on school trip",
    "b": "A 15-year-old on a school trip was killed and 19 others were injured in an explosion near the Lebanese border, officials said. The cause is under investigation.",
    "date": "2026-10-12",
    "place": "Northern Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Northern Israel explosion kills at least 1 person, injures 19",
    "url": "https://www.aljazeera.com/news/2026/10/12/explosion-in-northern-israel-students-and-teachers-injured",
    "gathered": "2026-10-12T15:54:11Z"
   },
@@ -211,8 +247,6 @@
    "h": "Big bank earnings to show Fed hike's impact",
    "b": "JPMorgan Chase, Goldman Sachs, Wells Fargo and Citigroup report third-quarter results Tuesday, offering a first look at how the Fed's rate hike is working through the economy.",
    "date": "2026-10-12",
-   "publisher": "Marketplace",
-   "title": "Bank earnings this week could offer clues to impact of Fed's rate hike",
    "url": "https://www.marketplace.org/story/2026/10/12/big-bank-earnings-to-offer-clues-to-impact-of-fed-rate-hike",
    "gathered": "2026-10-12T15:54:11Z"
   },
@@ -234,11 +268,18 @@
  "science": [],
  "sports": [
   {
+   "h": "UCLA QB Iamaleava likely out for season",
+   "b": "UCLA quarterback Nico Iamaleava is expected to miss the rest of the season with a knee injury suffered in Saturday's 17-15 win over Oregon, CBS Sports reports.",
+   "date": "2026-10-12",
+   "publisher": "CBS Sports",
+   "title": "UCLA QB Nico Iamaleava expected to miss remainder of season after knee injury",
+   "url": "https://www.cbssports.com/college-football/news/ucla-qb-nico-iamaleava-knee-injury-season/",
+   "gathered": "2026-10-12T19:10:00Z"
+  },
+  {
    "h": "LSU's latest loss puts Kiffin on the spot",
    "b": "Lane Kiffin harped on officiating after LSU's second loss in six games, but CBS Sports says questionable late-game decisions start with the coach.",
    "date": "2026-10-12",
-   "publisher": "CBS Sports",
-   "title": "Lane Kiffin has plenty of complaints, but LSU's latest loss starts with the man in charge",
    "url": "https://www.cbssports.com/college-football/news/lane-kiffin-complaints-lsu-latest-loss/",
    "gathered": "2026-10-12T15:54:11Z"
   },
@@ -342,7 +383,8 @@
    "publisher": "Gothamist",
    "title": "Mayor Mamdani orders review of NYPD use of force policies",
    "url": "https://gothamist.com/news/mayor-mamdani-orders-review-of-nypd-use-of-force-policies",
-   "published": "2026-10-12T10:00:57Z",
+   "published": "2026-10-12T10:00:00Z",
+   "updated": "2026-10-12T17:00:00Z",
    "gathered": "2026-10-12T15:54:11Z"
   },
   {
@@ -352,7 +394,8 @@
    "publisher": "Gothamist",
    "title": "Company that won $23M NYPD building contract was investigated by LI watchdog",
    "url": "https://gothamist.com/news/company-that-won-23m-nypd-building-contract-was-investigated-by-li-watchdog",
-   "published": "2026-10-12T10:00:56Z",
+   "published": "2026-10-12T10:00:00Z",
+   "updated": "2026-10-12T17:01:00Z",
    "gathered": "2026-10-12T10:09:47Z"
   },
   {
@@ -378,46 +421,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 65,
-   "cond": "Partly Cloudy",
-   "obs": "12 Oct 11:51 am EDT"
+   "temp": 69,
+   "cond": "Overcast",
+   "obs": "12 Oct 14:51 pm EDT"
   },
   "periods": [
-   {
-    "name": "Columbus Day",
-    "kind": "high",
-    "temp": 71,
-    "text": "Sunny, with a high near 71. Northwest wind 8 to 10 mph. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 61,
-    "text": "Mostly clear, with a low around 61. Northwest wind 5 to 9 mph becoming light north  after midnight. "
+    "text": "Patchy fog after 5am.  Otherwise, partly cloudy, with a low around 61. Northwest wind 5 to 9 mph becoming light west  after midnight. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 72,
-    "text": "Mostly sunny, with a high near 72. Light and variable wind becoming south 6 to 11 mph in the morning. "
+    "text": "Patchy fog before 11am.  Otherwise, mostly sunny, with a high near 72. Light southeast wind becoming south 6 to 11 mph in the morning. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 71,
-    "text": "Mostly cloudy, then gradually becoming mostly clear, with a steady temperature around 71. Southwest wind 11 to 13 mph. "
+    "temp": 69,
+    "text": "Mostly clear, with a low around 69. South wind 11 to 13 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 76,
-    "text": "Mostly sunny, with a high near 76. West wind around 11 mph. "
+    "temp": 77,
+    "text": "Increasing clouds, with a high near 77. West wind around 11 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 62,
-    "text": "Mostly cloudy, with a low around 62."
+    "temp": 61,
+    "text": "Mostly cloudy, with a low around 61. North wind 9 to 11 mph. "
+   },
+   {
+    "name": "Thursday",
+    "kind": "high",
+    "temp": 63,
+    "text": "Sunny, with a steady temperature around 63."
    }
   ]
  },

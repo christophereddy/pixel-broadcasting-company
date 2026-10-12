@@ -8,22 +8,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 77,
+    "temp": 82,
     "cond": "A Few Clouds",
-    "obs": "12 Oct 11:52 am EDT"
+    "obs": "12 Oct 13:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Columbus Day",
-     "kind": "high",
-     "temp": 84,
-     "text": "Sunny, with a high near 84. Northwest wind around 10 mph, with gusts as high as 20 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 60,
-     "text": "Clear, with a low around 60. Northwest wind around 5 mph becoming calm. "
+     "temp": 61,
+     "text": "Clear, with a low around 61. Northwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Tuesday",
@@ -34,8 +28,8 @@
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 61,
-     "text": "Clear, with a low around 61. Calm wind. "
+     "temp": 62,
+     "text": "Clear, with a low around 62. Calm wind. "
     },
     {
      "name": "Wednesday",
@@ -48,6 +42,12 @@
      "kind": "low",
      "temp": 63,
      "text": "Clear, with a low around 63."
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 87,
+     "text": "Sunny, with a high near 87."
     }
    ]
   },
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -93,46 +93,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Partly Cloudy",
-    "obs": "12 Oct 11:54 am EDT"
+    "temp": 70,
+    "cond": "A Few Clouds",
+    "obs": "12 Oct 14:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Columbus Day",
-     "kind": "high",
-     "temp": 69,
-     "text": "Mostly sunny, with a high near 69. Northwest wind around 6 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 53,
-     "text": "Increasing clouds, with a low around 53. Light and variable wind becoming northeast 5 to 8 mph after midnight. "
+     "temp": 52,
+     "text": "A slight chance of showers after 2am.  Patchy fog after 1am.  Otherwise, increasing clouds, with a low around 52. Light and variable wind becoming northeast 5 to 9 mph after midnight.  Chance of precipitation is 20%."
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 64,
-     "text": "A chance of showers.  Patchy fog after 10am.  Otherwise, cloudy, with a high near 64. East wind around 8 mph becoming southeast in the afternoon.  Chance of precipitation is 50%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 63,
+     "text": "A chance of showers.  Patchy fog.  Otherwise, cloudy, with a high near 63. East wind around 9 mph becoming south in the afternoon.  Chance of precipitation is 50%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Showers and thunderstorms likely before 2am, then a slight chance of showers between 2am and 3am.  Mostly cloudy, with a low around 58. Southwest wind around 8 mph.  Chance of precipitation is 60%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+     "temp": 59,
+     "text": "Showers and thunderstorms likely before 11pm, then a slight chance of showers between 11pm and 1am.  Patchy fog before 1am.  Otherwise, cloudy, then gradually becoming partly cloudy, with a low around 59. South wind 6 to 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 70,
-     "text": "Mostly sunny, with a high near 70. West wind 8 to 10 mph. "
+     "temp": 74,
+     "text": "Mostly sunny, with a high near 74. West wind 8 to 10 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Partly cloudy, with a low around 53. Northwest wind around 6 mph. "
+     "temp": 52,
+     "text": "Partly cloudy, with a low around 52. Northwest wind 6 to 8 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 61,
+     "text": "Sunny, with a high near 61. Northwest wind 8 to 11 mph. "
     }
    ]
   },
@@ -148,7 +148,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -195,46 +195,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 79,
+    "temp": 86,
     "cond": "Partly Cloudy",
-    "obs": "12 Oct 10:53 am CDT"
+    "obs": "12 Oct 13:53 pm CDT"
    },
    "periods": [
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 84,
-     "text": "Sunny, with a high near 84. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "text": "Mostly sunny, with a high near 84. South southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 71,
-     "text": "Mostly clear, with a low around 71. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "temp": 72,
+     "text": "Partly cloudy, with a low around 72. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 83,
-     "text": "Sunny, with a high near 83. West wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 81,
+     "text": "Sunny, with a high near 81. West wind 10 to 15 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 63,
-     "text": "A chance of showers and thunderstorms before 1am, then showers and possibly a thunderstorm between 1am and 4am, then showers after 4am.  Low around 63. North northeast wind around 5 mph.  Chance of precipitation is 80%."
+     "temp": 64,
+     "text": "A chance of showers and thunderstorms before midnight, then showers likely and possibly a thunderstorm between midnight and 4am, then a chance of showers after 4am.  Increasing clouds, with a low around 64. Southwest wind around 5 mph becoming northeast in the evening.  Chance of precipitation is 70%."
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 68,
-     "text": "A 50 percent chance of showers.  Mostly cloudy, with a high near 68. North northeast wind 10 to 15 mph. "
+     "temp": 67,
+     "text": "A 30 percent chance of showers before 1pm.  Mostly cloudy, with a high near 67. North northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "A 30 percent chance of showers after 1am.  Mostly cloudy, with a low around 57."
+     "temp": 60,
+     "text": "Mostly cloudy, with a low around 60."
     }
    ]
   },
@@ -250,9 +250,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Open House Chicago returns Oct. 17-18",
+    "b": "Open House Chicago returns for its 16th year, offering behind-the-scenes access to notable buildings that usually aren't open to the public.",
+    "date": "2026-10-12",
+    "publisher": "WBEZ",
+    "title": "Get behind-the-scenes access to architectural gems at Open House Chicago",
+    "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/12/get-behind-the-scenes-access-to-architectural-gems-at-open-house-chicago",
+    "gathered": "2026-10-12T19:10:00Z"
+   }
+  ]
  },
  {
   "location": {
@@ -263,46 +273,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 75,
     "cond": "A Few Clouds",
-    "obs": "12 Oct 08:58 am MDT"
+    "obs": "12 Oct 11:58 am MDT"
    },
    "periods": [
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 81,
-     "text": "Sunny, with a high near 81. South southwest wind 8 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 81. South southwest wind 8 to 11 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Mostly clear, with a low around 49. South southwest wind 5 to 10 mph becoming north northeast after midnight. Winds could gust as high as 22 mph. "
+     "text": "Mostly clear, with a low around 49. South southwest wind 5 to 10 mph becoming north after midnight. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Light north northeast wind becoming northeast 5 to 9 mph in the morning. Winds could gust as high as 20 mph. "
+     "temp": 65,
+     "text": "Partly sunny, with a high near 65. Northeast wind 5 to 8 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Showers likely, mainly after midnight.  Mostly cloudy, with a low around 45. North northeast wind around 9 mph, with gusts as high as 18 mph.  Chance of precipitation is 70%."
+     "text": "A slight chance of showers and thunderstorms, then a chance of showers after 9pm.  Mostly cloudy, with a low around 45. Northeast wind around 8 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 50,
-     "text": "Showers.  High near 50. North northeast wind 8 to 10 mph, with gusts as high as 21 mph.  Chance of precipitation is 80%."
+     "temp": 49,
+     "text": "Showers.  High near 49. Northeast wind around 8 mph, with gusts as high as 15 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Showers likely, mainly before midnight.  Mostly cloudy, with a low around 40. Chance of precipitation is 70%."
+     "temp": 41,
+     "text": "Showers.  Low around 41. Chance of precipitation is 80%."
     }
    ]
   },
@@ -318,7 +328,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -329,6 +339,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Bass, Raman set for only live TV mayoral debate",
+    "b": "Mayor Karen Bass and Councilmember Nithya Raman will face off in the only live televised debate of the Los Angeles mayoral race.",
+    "date": "2026-10-12",
+    "publisher": "LAist",
+    "title": "Bass, Raman to face off in only live televised LA mayoral debate",
+    "url": "https://laist.com/news/politics/bass-raman-to-face-off-in-only-live-televised-la-mayoral-debate",
+    "published": "2026-10-12T16:54:47Z",
+    "updated": "2026-10-12T17:11:37Z",
+    "gathered": "2026-10-12T19:10:00Z"
+   },
+   {
+    "h": "Long Beach Peninsula faces urgent repairs",
+    "b": "After the bulkhead failed, waves from Tropical Storm Rachel flooded and destroyed several homes on the Peninsula. Conditions are expected to improve through Tuesday.",
+    "date": "2026-10-12",
+    "publisher": "LAist",
+    "title": "Extensive damage, unsteady homes and urgent repairs: What’s next for Long Beach?",
+    "url": "https://laist.com/news/climate-environment/extensive-damage-unsteady-homes-and-urgent-repairs-whats-next-for-the-peninsula",
+    "published": "2026-10-12T16:46:37Z",
+    "updated": "2026-10-12T17:56:38Z",
+    "gathered": "2026-10-12T19:10:00Z"
+   },
    {
     "h": "LA plans Olympics watch parties",
     "b": "Building on its free World Cup watch parties, Los Angeles will host watch parties for the 2028 Olympic Games.",
@@ -344,11 +376,7 @@
     "h": "Long Beach residents fight high surf to save homes",
     "b": "Waves fueled by Tropical Storm Rachel are slamming the Peninsula's bulkhead in Long Beach, where crews and residents have reinforced defenses with boards and braces.",
     "date": "2026-10-11",
-    "publisher": "LAist",
-    "title": "Long Beach Peninsula residents join scramble to save homes from high surf",
     "url": "https://laist.com/news/climate-environment/long-beach-peninsula-residents-join-scramble-to-save-homes-from-high-surf",
-    "published": "2026-10-11T13:18:31Z",
-    "updated": "2026-10-11T16:23:30Z",
     "gathered": "2026-10-11T15:53:23Z"
    }
   ],
@@ -358,14 +386,14 @@
     {
      "name": "Columbus Day",
      "kind": "high",
-     "temp": 63,
-     "text": "Showers likely.  Mostly cloudy, with a high near 63. Southwest wind 5 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 65,
+     "text": "A 50 percent chance of showers.  Partly sunny, with a high near 65. Southwest wind around 10 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "A 20 percent chance of showers before 11pm.  Partly cloudy, with a low around 55. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
+     "text": "A 20 percent chance of showers before 11pm.  Mostly clear, with a low around 55. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -376,20 +404,20 @@
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "Clear, with a low around 57. West southwest wind 5 to 10 mph becoming north after midnight. "
+     "temp": 58,
+     "text": "Clear, with a low around 58. West southwest wind 5 to 10 mph becoming north after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 79,
-     "text": "Sunny, with a high near 79. North wind around 5 mph becoming west northwest in the morning. "
+     "text": "Sunny, with a high near 79. North wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Clear, with a low around 59."
+     "temp": 60,
+     "text": "Clear, with a low around 60."
     }
    ]
   },
@@ -405,7 +433,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -443,7 +471,8 @@
     "publisher": "Gothamist",
     "title": "Mayor Mamdani orders review of NYPD use of force policies",
     "url": "https://gothamist.com/news/mayor-mamdani-orders-review-of-nypd-use-of-force-policies",
-    "published": "2026-10-12T10:00:57Z",
+    "published": "2026-10-12T10:00:00Z",
+    "updated": "2026-10-12T17:00:00Z",
     "gathered": "2026-10-12T15:54:11Z"
    },
    {
@@ -453,7 +482,8 @@
     "publisher": "Gothamist",
     "title": "Company that won $23M NYPD building contract was investigated by LI watchdog",
     "url": "https://gothamist.com/news/company-that-won-23m-nypd-building-contract-was-investigated-by-li-watchdog",
-    "published": "2026-10-12T10:00:56Z",
+    "published": "2026-10-12T10:00:00Z",
+    "updated": "2026-10-12T17:01:00Z",
     "gathered": "2026-10-12T10:09:47Z"
    },
    {
@@ -479,46 +509,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "Partly Cloudy",
-    "obs": "12 Oct 11:51 am EDT"
+    "temp": 69,
+    "cond": "Overcast",
+    "obs": "12 Oct 14:51 pm EDT"
    },
    "periods": [
-    {
-     "name": "Columbus Day",
-     "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71. Northwest wind 8 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Mostly clear, with a low around 61. Northwest wind 5 to 9 mph becoming light north  after midnight. "
+     "text": "Patchy fog after 5am.  Otherwise, partly cloudy, with a low around 61. Northwest wind 5 to 9 mph becoming light west  after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly sunny, with a high near 72. Light and variable wind becoming south 6 to 11 mph in the morning. "
+     "text": "Patchy fog before 11am.  Otherwise, mostly sunny, with a high near 72. Light southeast wind becoming south 6 to 11 mph in the morning. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 71,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a steady temperature around 71. Southwest wind 11 to 13 mph. "
+     "temp": 69,
+     "text": "Mostly clear, with a low around 69. South wind 11 to 13 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 76,
-     "text": "Mostly sunny, with a high near 76. West wind around 11 mph. "
+     "temp": 77,
+     "text": "Increasing clouds, with a high near 77. West wind around 11 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 62,
-     "text": "Mostly cloudy, with a low around 62."
+     "temp": 61,
+     "text": "Mostly cloudy, with a low around 61. North wind 9 to 11 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Sunny, with a steady temperature around 63."
     }
    ]
   },
@@ -534,7 +564,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -561,33 +591,21 @@
     "h": "Headmaster, teacher shot at school near Marseille",
     "b": "A 14-year-old was arrested after a headmaster and teacher were shot with a hunting rifle at a middle school in Aubagne. Police said their lives were not in danger.",
     "date": "2026-10-12",
-    "publisher": "The Local France",
-    "title": "Headmaster and teacher shot inside French secondary school",
     "url": "https://www.thelocal.fr/20261012/headmaster-shot-in-french-school-teen-arrested",
-    "published": "2026-10-12T10:23:32Z",
-    "updated": "2026-10-12T10:23:33Z",
     "gathered": "2026-10-12T15:54:11Z"
    },
    {
     "h": "Fire destroys Paris's oldest covered market",
     "b": "An overnight fire destroyed the Marché Couvert des Enfants Rouges in the Marais, a street food venue that has stood in the same space since 1615, authorities said.",
     "date": "2026-10-12",
-    "publisher": "The Local France",
-    "title": "Flames ravage oldest covered food market in Paris",
     "url": "https://www.thelocal.fr/20261012/flames-ravage-oldest-covered-food-market-in-paris",
-    "published": "2026-10-12T07:49:57Z",
-    "updated": "2026-10-12T07:49:59Z",
     "gathered": "2026-10-12T10:09:47Z"
    },
    {
     "h": "Glucksmann wins centre-left presidential primary",
     "b": "Euro MP Raphaël Glucksmann won 66 percent of the 120,787 votes in the centre-left primary, becoming its candidate for next year's French presidential election. Socialist leader Olivier Faure was second with 14 percent.",
     "date": "2026-10-12",
-    "publisher": "The Local France",
-    "title": "Raphaël Glucksmann elected centre-left French presidential candidate",
     "url": "https://www.thelocal.fr/20261012/raphael-glucksmann-elected-centre-left-french-presidential-candidate",
-    "published": "2026-10-12T06:50:42Z",
-    "updated": "2026-10-12T06:50:43Z",
     "gathered": "2026-10-12T07:22:49Z"
    },
    {
@@ -621,7 +639,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "goodnews": []
  },
  {
@@ -631,6 +649,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Everett weighs folding its buses into Community Transit",
+    "b": "Everett, the only Puget Sound city running its own transit, is considering merging into Community Transit. Officials say it would raise bus service in the city by 50%.",
+    "date": "2026-10-12",
+    "publisher": "KUOW",
+    "title": "Should Everett give away its bus service?",
+    "url": "https://www.kuow.org/governing/2026-10-12/should-everett-give-away-its-bus-service",
+    "published": "2026-10-12T18:53:17Z",
+    "updated": "2026-10-12T18:53:17Z",
+    "gathered": "2026-10-12T19:10:00Z"
+   },
    {
     "h": "Scammers used AI to impersonate KUOW reporter",
     "b": "KUOW's Katie Campbell describes scam emails sent in her name and how to avoid AI impersonation traps.",
@@ -655,26 +684,26 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 46,
-     "text": "Increasing clouds, with a low around 46. Light and variable wind. "
+     "temp": 47,
+     "text": "Increasing clouds, with a low around 47. Calm wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 62,
-     "text": "Partly sunny, with a high near 62. Light south wind. "
+     "temp": 61,
+     "text": "Partly sunny, with a high near 61. Light south wind. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Mostly cloudy, with a low around 51. Calm wind becoming south southeast around 5 mph after midnight. "
+     "temp": 52,
+     "text": "Mostly cloudy, with a low around 52. Calm wind becoming south southeast around 5 mph after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 64,
-     "text": "Partly sunny, with a high near 64. South southeast wind around 5 mph becoming calm  in the morning. "
+     "temp": 63,
+     "text": "Partly sunny, with a high near 63. South southeast wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Wednesday Night",
@@ -696,7 +725,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T19:09:00Z",
+  "updatedAt": "2026-10-12T22:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
