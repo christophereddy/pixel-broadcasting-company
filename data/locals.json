@@ -8,16 +8,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Mostly Cloudy",
-    "obs": "11 Oct 18:52 pm EDT"
+    "temp": 64,
+    "cond": "Partly Cloudy",
+    "obs": "11 Oct 20:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 60,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 60. West wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 60. West wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Columbus Day",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,16 +86,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 52,
     "cond": " Heavy Rain Fog/Mist",
-    "obs": "11 Oct 18:54 pm EDT"
+    "obs": "11 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 53,
-     "text": "Showers, mainly before 5am.  Patchy fog after 8pm. Low around 53. Light and variable wind becoming northeast 5 to 7 mph after midnight.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+     "temp": 54,
+     "text": "Rain before 2am, then showers likely, mainly between 2am and 5am.  Patchy fog. Low around 54. Light and variable wind becoming northeast 5 to 7 mph after midnight.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Columbus Day",
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -177,9 +177,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 77,
-    "cond": "A Few Clouds",
-    "obs": "11 Oct 17:53 pm CDT"
+    "temp": 69,
+    "cond": "Fair",
+    "obs": "11 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -232,7 +232,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -245,9 +245,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 84,
+    "temp": 80,
     "cond": "Mostly Cloudy",
-    "obs": "11 Oct 16:58 pm MDT"
+    "obs": "11 Oct 17:58 pm MDT"
    },
    "periods": [
     {
@@ -300,7 +300,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -354,7 +354,7 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 58,
-     "text": "Clear, with a low around 58."
+     "text": "Clear, with a low around 58. Southwest wind 5 to 10 mph becoming north northeast after midnight. "
     },
     {
      "name": "Wednesday",
@@ -376,7 +376,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -410,16 +410,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": " Rain Fog/Mist",
-    "obs": "11 Oct 18:51 pm EDT"
+    "temp": 56,
+    "cond": " Light Rain Fog/Mist",
+    "obs": "11 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 62,
-     "text": "Rain before 8pm, then rain and possibly a thunderstorm between 8pm and 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Rain and possibly a thunderstorm before 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Columbus Day",
@@ -465,7 +465,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -516,7 +516,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "goodnews": []
  },
  {
@@ -579,7 +579,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T01:09:00Z",
+  "updatedAt": "2026-10-12T04:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

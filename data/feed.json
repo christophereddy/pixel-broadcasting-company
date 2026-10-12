@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T01:09:00Z",
+ "updatedAt": "2026-10-12T04:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -193,11 +193,18 @@
  "science": [],
  "sports": [
   {
+   "h": "No NFC East team wins in Week 5",
+   "b": "CBS Sports' Week 5 grades give the Patriots and Packers an 'A+', while all four NFC East teams went winless, including the Cowboys' 24-16 loss to the Buccaneers.",
+   "date": "2026-10-11",
+   "publisher": "CBS Sports",
+   "title": "NFL Week 5 grades for every team: Patriots, Packers earn 'A+' while two teams get failing marks",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-5-grades-for-every-team-patriots-packers-bears/",
+   "gathered": "2026-10-12T01:09:37Z"
+  },
+  {
    "h": "Commanders, Giants tie 27-27 after OT meltdown",
    "b": "Washington ran out of time at the end of overtime with no timeouts, leaving the NFL's first tie of the season after Jayden Daniels went down with eight seconds left.",
    "date": "2026-10-11",
-   "publisher": "CBS Sports",
-   "title": "Commanders-Giants tie: Washington delivers disastrous end-of-game sequence following Cam Skattebo fumble",
    "url": "https://www.cbssports.com/nfl/news/commanders-giants-ends-tie-overtime-clock-management-2026/",
    "gathered": "2026-10-11T23:50:37Z"
   },
@@ -285,16 +292,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
-   "cond": " Rain Fog/Mist",
-   "obs": "11 Oct 18:51 pm EDT"
+   "temp": 56,
+   "cond": " Light Rain Fog/Mist",
+   "obs": "11 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 62,
-    "text": "Rain before 8pm, then rain and possibly a thunderstorm between 8pm and 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+    "text": "Rain and possibly a thunderstorm before 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Columbus Day",
