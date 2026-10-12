@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T04:09:00Z",
+ "updatedAt": "2026-10-12T07:22:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -54,11 +54,7 @@
    "h": "Hurricane Simon nears Mexico at 155 mph",
    "b": "Hurricane Simon strengthened to 155 mph, just below Category 5, off Mexico's Pacific coast and was expected to move inland Sunday. It could bring 10 to 20 inches of rain to parts of southwestern Mexico.",
    "date": "2026-10-11",
-   "publisher": "KUOW",
-   "title": "Hurricane Simon nears Mexico with 155 mph winds and flooding fears",
    "url": "https://www.kuow.org/npr-news/2026-10-11/hurricane-simon-nears-mexico-with-155-mph-winds-and-flooding-fears",
-   "published": "2026-10-11T12:10:54Z",
-   "updated": "2026-10-11T13:04:31Z",
    "gathered": "2026-10-11T15:53:23Z"
   }
  ],
@@ -292,22 +288,22 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
-   "cond": " Light Rain Fog/Mist",
-   "obs": "11 Oct 20:51 pm EDT"
+   "temp": 54,
+   "cond": "Overcast",
+   "obs": "12 Oct 01:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 62,
-    "text": "Rain and possibly a thunderstorm before 11pm, then a chance of rain and thunderstorms after 11pm.  Steady temperature around 62. Northeast wind 16 to 18 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "temp": 59,
+    "text": "A 50 percent chance of rain and thunderstorms.  Cloudy, with a low around 59. Northeast wind around 16 mph. "
    },
    {
     "name": "Columbus Day",
     "kind": "high",
     "temp": 72,
-    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 72. North wind 9 to 14 mph. "
+    "text": "A 30 percent chance of rain before 8am.  Mostly cloudy, then gradually becoming sunny, with a high near 72. North wind 9 to 14 mph. "
    },
    {
     "name": "Monday Night",
