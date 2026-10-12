@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T13:34:00Z",
+ "updatedAt": "2026-10-12T16:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,28 @@
  },
  "world": [
   {
+   "h": "Iran: Yemen escalation benefits 'only' Israel",
+   "b": "Tehran said the escalating war in Yemen benefits only Israel, according to Al Jazeera's live coverage of the regional conflict.",
+   "date": "2026-10-12",
+   "publisher": "Al Jazeera",
+   "title": "Iran says escalation in Yemen benefits ‘only’ Israel",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
+   "h": "Iran targets US-backed oil shuttle in Hormuz",
+   "b": "Iran signalled it intends to disrupt an Arab-operated, US-assisted shuttle system that has moved more energy exports through the Strait of Hormuz during the war.",
+   "date": "2026-10-12",
+   "publisher": "Al Jazeera",
+   "title": "Iran sets crosshairs on ‘US-UAE’ oil shuttle out of Strait of Hormuz",
+   "url": "https://www.aljazeera.com/economy/2026/10/12/iran-sets-crosshairs-on-us-uae-oil-shuttle-out-of-strait-of-hormuz",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
    "h": "Trump says Russia, Ukraine agree to energy truce",
    "b": "President Trump said Russia and Ukraine agreed to an immediate \"energy ceasefire\" but gave no details. Zelenskyy welcomed it, while saying Russia was still hitting energy sites in Kyiv and Kharkiv.",
    "date": "2026-10-11",
-   "publisher": "PBS NewsHour",
-   "title": "Trump claims Russia and Ukraine agree to 'energy ceasefire' despite continued attacks",
    "url": "https://www.pbs.org/newshour/world/trump-claims-russia-and-ukraine-agree-to-energy-ceasefire-despite-continued-attacks",
-   "published": "2026-10-11T21:25:24Z",
    "gathered": "2026-10-11T23:50:37Z"
   },
   {
@@ -33,10 +48,7 @@
    "more": [
     "The airport was still closed Sunday."
    ],
-   "publisher": "PBS NewsHour",
-   "title": "Riyadh airport hit by projectile a day after deadly missile strike",
    "url": "https://www.pbs.org/newshour/world/riyadh-airport-hit-by-projectile-a-day-after-deadly-missile-strike",
-   "published": "2026-10-11T19:49:13Z",
    "gathered": "2026-10-11T20:29:26Z"
   },
   {
@@ -63,10 +75,7 @@
    "h": "Isaias moves north as Rachel batters SoCal coast",
    "b": "Isaias's remnants brought flood risks to the central Appalachians and mid-Atlantic after sweeping the Florida Panhandle, while waves from former tropical storm Rachel battered Southern California.",
    "date": "2026-10-11",
-   "publisher": "PBS NewsHour",
-   "title": "Isaias moves north as Rachel batters Southern California",
    "url": "https://www.pbs.org/newshour/nation/isaias-moves-north-as-rachel-batters-southern-california",
-   "published": "2026-10-11T20:44:46Z",
    "gathered": "2026-10-11T23:50:37Z"
   },
   {
@@ -86,25 +95,41 @@
  ],
  "politics": [
   {
+   "h": "Federal agents search Rep. Ilhan Omar's home",
+   "b": "Homeland Security Investigations agents searched the Minnesota Democrat's home as part of a criminal investigation, the AP reported, citing two people familiar with the matter. Details were not immediately clear.",
+   "date": "2026-10-12",
+   "publisher": "PBS NewsHour",
+   "title": "AP report: Federal agents search Rep. Ilhan Omar's home as part of a criminal investigation",
+   "url": "https://www.pbs.org/newshour/politics/ap-report-federal-agents-search-rep-ilhan-omars-home-as-part-of-a-criminal-investigation",
+   "published": "2026-10-12T14:31:52Z",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
    "h": "Senators urge Trump to drop Russian diesel deal",
    "b": "A bipartisan group of six senators called on the Trump administration to \"immediately reverse course\" on a plan to buy diesel from Russia to lower fuel prices.",
    "date": "2026-10-11",
-   "publisher": "PBS NewsHour",
-   "title": "Bipartisan group of senators calls on Trump to 'reverse course' on Russian diesel plan",
    "url": "https://www.pbs.org/newshour/politics/bipartisan-group-of-senators-calls-on-trump-to-reverse-course-on-russian-diesel-plan",
-   "published": "2026-10-11T20:18:14Z",
    "gathered": "2026-10-11T20:29:26Z"
   }
  ],
  "international": [
+  {
+   "h": "Explosion in northern Israel kills teen on school trip",
+   "b": "A 15-year-old on a school trip was killed and 19 others were injured in an explosion near the Lebanese border, officials said. The cause is under investigation.",
+   "date": "2026-10-12",
+   "place": "Northern Israel",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Northern Israel explosion kills at least 1 person, injures 19",
+   "url": "https://www.aljazeera.com/news/2026/10/12/explosion-in-northern-israel-students-and-teachers-injured",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
   {
    "h": "139 dead as migrant boat capsizes off Djibouti",
    "b": "At least 139 people, including 15 children, died and 84 are missing after a boat capsized in the Gulf of Aden off Djibouti, the UN migration agency said.",
    "date": "2026-10-11",
    "place": "Djibouti",
    "tz": "Africa/Djibouti",
-   "publisher": "Al Jazeera",
-   "title": "At least 139 dead, 84 missing as migrant boat capsizes off Djibouti",
    "url": "https://www.aljazeera.com/news/2026/10/11/at-least-109-dead-over-100-missing-as-migrant-boat-capsizes-off-djibouti",
    "gathered": "2026-10-11T15:53:23Z"
   },
@@ -114,8 +139,6 @@
    "date": "2026-10-11",
    "place": "Warsaw, Poland",
    "tz": "Europe/Warsaw",
-   "publisher": "Al Jazeera",
-   "title": "Polish police probe alleged plot to assassinate PM Tusk, defence minister",
    "url": "https://www.aljazeera.com/news/2026/10/11/poland-police-probe-alleged-plot-to-assassinate-pm-tusk-defence-minister",
    "gathered": "2026-10-11T15:53:23Z"
   },
@@ -125,8 +148,6 @@
    "date": "2026-10-11",
    "place": "Vladimir, Russia",
    "tz": "Europe/Moscow",
-   "publisher": "Al Jazeera",
-   "title": "Russia’s Yandex says data centre shut down after drone attack",
    "url": "https://www.aljazeera.com/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack",
    "gathered": "2026-10-11T10:10:18Z"
   },
@@ -136,8 +157,6 @@
    "date": "2026-10-11",
    "place": "Khyber Pakhtunkhwa, Pakistan",
    "tz": "Asia/Karachi",
-   "publisher": "Al Jazeera",
-   "title": "Pakistan imposes emergency rule in ​province governed by Imran Khan’s party",
    "url": "https://www.aljazeera.com/news/2026/10/11/pakistan-imposes-emergency-rule-in-khyber-pakhtunkhwa",
    "gathered": "2026-10-11T09:11:02Z"
   },
@@ -162,6 +181,25 @@
  ],
  "business": [
   {
+   "h": "Two Americans win economics Nobel",
+   "b": "Robert E. Hall and Michael Woodford won the Nobel in economics for models that help governments and central banks manage shocks like energy crises and inflation.",
+   "date": "2026-10-12",
+   "publisher": "PBS NewsHour",
+   "title": "WATCH: 2 American economists win Nobel for studying how to deal with economic shocks",
+   "url": "https://www.pbs.org/newshour/economy/watch-2-american-economists-win-nobel-for-studying-how-to-deal-with-economic-shocks",
+   "published": "2026-10-12T13:26:30Z",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
+   "h": "Big bank earnings to show Fed hike's impact",
+   "b": "JPMorgan Chase, Goldman Sachs, Wells Fargo and Citigroup report third-quarter results Tuesday, offering a first look at how the Fed's rate hike is working through the economy.",
+   "date": "2026-10-12",
+   "publisher": "Marketplace",
+   "title": "Bank earnings this week could offer clues to impact of Fed's rate hike",
+   "url": "https://www.marketplace.org/story/2026/10/12/big-bank-earnings-to-offer-clues-to-impact-of-fed-rate-hike",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
    "h": "Job hunts are taking longer",
    "b": "In a sluggish hiring environment, unemployed workers are taking longer to find new jobs, and in many cases their unemployment benefits run out first.",
    "date": "2026-10-11",
@@ -172,14 +210,21 @@
    "h": "Musk vows affordable Starlink in India",
    "b": "Elon Musk said he would price Starlink affordably in India to take on Mukesh Ambani's Reliance Jio, days before Jio's parent launches India's largest-ever IPO.",
    "date": "2026-10-11",
-   "publisher": "Al Jazeera",
-   "title": "Musk vows ‘affordable’ Starlink in India as he escalates feud with Ambani",
    "url": "https://www.aljazeera.com/economy/2026/10/11/musk-vows-affordable-starlink-in-india-as-he-escalates-feud-with-ambani",
    "gathered": "2026-10-11T09:11:02Z"
   }
  ],
  "science": [],
  "sports": [
+  {
+   "h": "LSU's latest loss puts Kiffin on the spot",
+   "b": "Lane Kiffin harped on officiating after LSU's second loss in six games, but CBS Sports says questionable late-game decisions start with the coach.",
+   "date": "2026-10-12",
+   "publisher": "CBS Sports",
+   "title": "Lane Kiffin has plenty of complaints, but LSU's latest loss starts with the man in charge",
+   "url": "https://www.cbssports.com/college-football/news/lane-kiffin-complaints-lsu-latest-loss/",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
   {
    "h": "No NFC East team wins in Week 5",
    "b": "CBS Sports' Week 5 grades give the Patriots and Packers an 'A+', while all four NFC East teams went winless, including the Cowboys' 24-16 loss to the Buccaneers.",
@@ -200,8 +245,6 @@
    "h": "Cardinals trade Marvin Harrison Jr. to Texans",
    "b": "Houston sent a 2027 second-round pick and a 2027 sixth-rounder to Arizona for the 24-year-old receiver and a 2027 seventh-round pick.",
    "date": "2026-10-11",
-   "publisher": "CBS Sports",
-   "title": "Marvin Harrison Jr. trade grades: Cardinals extract near-max value from Texans for former top-5 pick",
    "url": "https://www.cbssports.com/nfl/news/marvin-harrison-jr-trade-grades-cardinals-texans/",
    "gathered": "2026-10-11T23:50:37Z"
   },
@@ -258,6 +301,36 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Hochul declares measles 'disaster' emergency",
+   "b": "Gov. Kathy Hochul declared a disaster emergency over the spread of measles in New York.",
+   "date": "2026-10-12",
+   "publisher": "Gothamist",
+   "title": "NY measles spread prompts 'disaster' emergency. It didn't have to be this way, health commissioner says.",
+   "url": "https://gothamist.com/news/ny-measles-spread-prompts-disaster-emergency-it-didnt-have-to-be-this-way-health-commissioner-says",
+   "published": "2026-10-12T15:00:58Z",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
+   "h": "Man shot by ICE still has bullet in neck",
+   "b": "The man shot by ICE agents in New York City last week remained in solitary confinement at a Brooklyn federal lockup with a bullet lodged in his neck, his attorneys said.",
+   "date": "2026-10-12",
+   "publisher": "Gothamist",
+   "title": "Man shot by ICE in NYC still has bullet lodged in neck, attorneys say",
+   "url": "https://gothamist.com/news/man-shot-by-ice-in-nyc-still-has-bullet-lodged-in-neck-attorneys-say",
+   "published": "2026-10-12T15:37:10Z",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
+   "h": "Mamdani orders review of NYPD force policies",
+   "b": "Facing criticism from the left over his approach to policing, Mayor Mamdani announced a comprehensive review of the NYPD's use of force policies.",
+   "date": "2026-10-12",
+   "publisher": "Gothamist",
+   "title": "Mayor Mamdani orders review of NYPD use of force policies",
+   "url": "https://gothamist.com/news/mayor-mamdani-orders-review-of-nypd-use-of-force-policies",
+   "published": "2026-10-12T10:00:57Z",
+   "gathered": "2026-10-12T15:54:11Z"
+  },
+  {
    "h": "NYPD Bomb Squad contractor faced LI scrutiny",
    "b": "A company that won a $23 million contract to build an NYPD Bomb Squad building in the Bronx was flagged in a 2020 Nassau County inspector general report for not disclosing who ran the business.",
    "date": "2026-10-12",
@@ -290,16 +363,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 65,
    "cond": "Partly Cloudy",
-   "obs": "12 Oct 05:51 am EDT"
+   "obs": "12 Oct 11:51 am EDT"
   },
   "periods": [
    {
     "name": "Columbus Day",
     "kind": "high",
     "temp": 71,
-    "text": "A 20 percent chance of showers and thunderstorms before 8am.  Mostly cloudy, then gradually becoming sunny, with a high near 71. North wind 8 to 15 mph. "
+    "text": "Sunny, with a high near 71. Northwest wind 8 to 11 mph. "
    },
    {
     "name": "Tonight",

@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Fair",
-    "obs": "12 Oct 05:52 am EDT"
+    "temp": 72,
+    "cond": "A Few Clouds",
+    "obs": "12 Oct 10:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,27 +75,34 @@
   },
   "local": [
    {
+    "h": "Court tosses lobstermen's suit against aquarium",
+    "b": "A federal appeals court sided with the Monterey Bay Aquarium in a defamation suit by Maine lobstermen over its Seafood Watch advice not to buy lobster.",
+    "date": "2026-10-12",
+    "publisher": "WBUR",
+    "title": "Appeals court dismisses Maine lobstermen defamation case against California aquarium",
+    "url": "https://www.wbur.org/news/2026/10/12/maine-lobstermen-defamation-lawsuit-california-aquarium-dismissed",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
+   {
     "h": "Brigham nurses postpone strike to vote on offer",
     "b": "Brigham and Women's Hospital nurses postponed a strike planned for Wednesday after a 13-hour bargaining session. Negotiators will bring the hospital's latest offer to all 4,000 union members.",
     "date": "2026-10-11",
-    "publisher": "WBUR",
-    "title": "Brigham nurses postpone strike to vote on hospital's offer",
     "url": "https://www.wbur.org/news/2026/10/11/brigham-nurses-postpone-strike-to-vote-on-hospitals-offer",
     "gathered": "2026-10-11T15:53:23Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": " Fog/Mist",
-    "obs": "12 Oct 05:54 am EDT"
+    "temp": 57,
+    "cond": "Mostly Cloudy",
+    "obs": "12 Oct 10:54 am EDT"
    },
    "periods": [
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 69,
-     "text": "Patchy fog before 10am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 69. Northwest wind 5 to 8 mph. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 69. Northwest wind around 6 mph. "
     },
     {
      "name": "Tonight",
@@ -141,7 +148,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -152,6 +159,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Birds of prey adapt to Chicago's poles and towers",
+    "b": "Raptors are using street lights, electric poles and cell towers to survive and in some cases thrive in the Chicago region, a sign some are back from the brink.",
+    "date": "2026-10-12",
+    "publisher": "WBEZ",
+    "title": "Many birds of prey are finding utility in lamp posts, electric poles and cell towers in Chicago region",
+    "url": "https://www.wbez.org/animals-wildlife/2026/10/12/birds-of-prey-adapting-chicago-illinois-raptors-utility-poles-cellular-towers-eagles-hawks-osprey",
+    "published": "2026-10-12T12:02:00Z",
+    "updated": "2026-10-12T13:17:36Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
    {
     "h": "Serbian Orthodox church heads toward landmark status",
     "b": "St. Simeon Mirotočivi Serbian Orthodox Church at 3737 E. 114th St., built in 1969 as a faithful interpretation of an ancient Serbian church, is heading toward city landmark status.",
@@ -177,16 +195,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "Mostly Cloudy",
-    "obs": "12 Oct 03:53 am CDT"
+    "temp": 79,
+    "cond": "Partly Cloudy",
+    "obs": "12 Oct 10:53 am CDT"
    },
    "periods": [
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 84,
-     "text": "Mostly sunny, with a high near 84. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Sunny, with a high near 84. South southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -232,7 +250,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -245,9 +263,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 68,
     "cond": "A Few Clouds",
-    "obs": "12 Oct 01:58 am MDT"
+    "obs": "12 Oct 08:58 am MDT"
    },
    "periods": [
     {
@@ -300,7 +318,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -311,6 +329,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LA plans Olympics watch parties",
+    "b": "Building on its free World Cup watch parties, Los Angeles will host watch parties for the 2028 Olympic Games.",
+    "date": "2026-10-12",
+    "publisher": "LAist",
+    "title": "LA will host Olympics watch parties. Here’s where they might be",
+    "url": "https://laist.com/news/olympics-watch-parties-los-angeles-planning-la28",
+    "published": "2026-10-12T12:00:00Z",
+    "updated": "2026-10-12T11:59:59Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
    {
     "h": "Long Beach residents fight high surf to save homes",
     "b": "Waves fueled by Tropical Storm Rachel are slamming the Peninsula's bulkhead in Long Beach, where crews and residents have reinforced defenses with boards and braces.",
@@ -333,7 +362,7 @@
      "text": "Showers likely.  Mostly cloudy, with a high near 63. Southwest wind 5 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 55,
      "text": "A 20 percent chance of showers before 11pm.  Partly cloudy, with a low around 55. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
@@ -354,7 +383,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 79,
-     "text": "Sunny, with a high near 79."
+     "text": "Sunny, with a high near 79. North wind around 5 mph becoming west northwest in the morning. "
     },
     {
      "name": "Wednesday Night",
@@ -376,7 +405,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -387,6 +416,36 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Hochul declares measles 'disaster' emergency",
+    "b": "Gov. Kathy Hochul declared a disaster emergency over the spread of measles in New York.",
+    "date": "2026-10-12",
+    "publisher": "Gothamist",
+    "title": "NY measles spread prompts 'disaster' emergency. It didn't have to be this way, health commissioner says.",
+    "url": "https://gothamist.com/news/ny-measles-spread-prompts-disaster-emergency-it-didnt-have-to-be-this-way-health-commissioner-says",
+    "published": "2026-10-12T15:00:58Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
+   {
+    "h": "Man shot by ICE still has bullet in neck",
+    "b": "The man shot by ICE agents in New York City last week remained in solitary confinement at a Brooklyn federal lockup with a bullet lodged in his neck, his attorneys said.",
+    "date": "2026-10-12",
+    "publisher": "Gothamist",
+    "title": "Man shot by ICE in NYC still has bullet lodged in neck, attorneys say",
+    "url": "https://gothamist.com/news/man-shot-by-ice-in-nyc-still-has-bullet-lodged-in-neck-attorneys-say",
+    "published": "2026-10-12T15:37:10Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
+   {
+    "h": "Mamdani orders review of NYPD force policies",
+    "b": "Facing criticism from the left over his approach to policing, Mayor Mamdani announced a comprehensive review of the NYPD's use of force policies.",
+    "date": "2026-10-12",
+    "publisher": "Gothamist",
+    "title": "Mayor Mamdani orders review of NYPD use of force policies",
+    "url": "https://gothamist.com/news/mayor-mamdani-orders-review-of-nypd-use-of-force-policies",
+    "published": "2026-10-12T10:00:57Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
    {
     "h": "NYPD Bomb Squad contractor faced LI scrutiny",
     "b": "A company that won a $23 million contract to build an NYPD Bomb Squad building in the Bronx was flagged in a 2020 Nassau County inspector general report for not disclosing who ran the business.",
@@ -420,16 +479,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 65,
     "cond": "Partly Cloudy",
-    "obs": "12 Oct 05:51 am EDT"
+    "obs": "12 Oct 11:51 am EDT"
    },
    "periods": [
     {
      "name": "Columbus Day",
      "kind": "high",
      "temp": 71,
-     "text": "A 20 percent chance of showers and thunderstorms before 8am.  Mostly cloudy, then gradually becoming sunny, with a high near 71. North wind 8 to 15 mph. "
+     "text": "Sunny, with a high near 71. Northwest wind 8 to 11 mph. "
     },
     {
      "name": "Tonight",
@@ -475,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -488,47 +547,53 @@
   },
   "local": [
    {
+    "h": "Cyberattack forces supermarket fridge shutdowns",
+    "b": "E. Leclerc, Intermarché and Coopérative U said a cyberattack caused refrigerators to defrost in hundreds of stores, forcing spoiled food to be thrown away.",
+    "date": "2026-10-12",
+    "publisher": "The Local France",
+    "title": "French supermarkets suffer refrigerator shutdown after 'unprecedented' cyberattack",
+    "url": "https://www.thelocal.fr/20261012/french-supermarket-chains-say-cyberattack-forced-refrigerator-shutdown/",
+    "published": "2026-10-12T12:03:17Z",
+    "updated": "2026-10-12T12:03:19Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
+   {
+    "h": "Headmaster, teacher shot at school near Marseille",
+    "b": "A 14-year-old was arrested after a headmaster and teacher were shot with a hunting rifle at a middle school in Aubagne. Police said their lives were not in danger.",
+    "date": "2026-10-12",
+    "publisher": "The Local France",
+    "title": "Headmaster and teacher shot inside French secondary school",
+    "url": "https://www.thelocal.fr/20261012/headmaster-shot-in-french-school-teen-arrested",
+    "published": "2026-10-12T10:23:32Z",
+    "updated": "2026-10-12T10:23:33Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   },
+   {
     "h": "Fire destroys Paris's oldest covered market",
     "b": "An overnight fire destroyed the Marché Couvert des Enfants Rouges in the Marais, a street food venue that has stood in the same space since 1615, authorities said.",
     "date": "2026-10-12",
-    "publisher": "The Local France",
-    "title": "Flames ravage oldest covered food market in Paris",
     "url": "https://www.thelocal.fr/20261012/flames-ravage-oldest-covered-food-market-in-paris",
-    "published": "2026-10-12T07:49:57Z",
-    "updated": "2026-10-12T07:49:59Z",
     "gathered": "2026-10-12T10:09:47Z"
    },
    {
     "h": "Glucksmann wins centre-left presidential primary",
     "b": "Euro MP Raphaël Glucksmann won 66 percent of the 120,787 votes in the centre-left primary, becoming its candidate for next year's French presidential election. Socialist leader Olivier Faure was second with 14 percent.",
     "date": "2026-10-12",
-    "publisher": "The Local France",
-    "title": "Raphaël Glucksmann elected centre-left French presidential candidate",
     "url": "https://www.thelocal.fr/20261012/raphael-glucksmann-elected-centre-left-french-presidential-candidate",
-    "published": "2026-10-12T06:50:42Z",
-    "updated": "2026-10-12T06:50:43Z",
     "gathered": "2026-10-12T07:22:49Z"
    },
    {
     "h": "Macron's popularity hits record low",
     "b": "Just 15 percent of respondents held a favourable view of President Macron in an Ipsos BVA-Cesi poll, the lowest score of his presidency.",
     "date": "2026-10-11",
-    "publisher": "The Local France",
-    "title": "French President Macron's popularity lowest since taking office: poll",
     "url": "https://www.thelocal.fr/20261011/french-president-macrons-popularity-lowest-since-taking-office-poll",
-    "published": "2026-10-11T10:27:57Z",
-    "updated": "2026-10-11T10:28:00Z",
     "gathered": "2026-10-11T15:53:23Z"
    },
    {
     "h": "Ireland proposes €140bn cut to EU budget",
     "b": "Ireland, holding the EU presidency, suggested cutting the bloc's next proposed budget by 140 billion euros to bridge divisions and reach a deal by year's end.",
     "date": "2026-10-11",
-    "publisher": "The Local France",
-    "title": "Proposed EU budget cut back in search for Christmas deal",
     "url": "https://www.thelocal.fr/20261011/proposed-eu-budget-cut-back-in-search-for-christmas-deal",
-    "published": "2026-10-11T15:17:41Z",
-    "updated": "2026-10-11T15:17:44Z",
     "gathered": "2026-10-11T15:53:23Z"
    }
   ],
@@ -548,7 +613,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "goodnews": []
  },
  {
@@ -557,7 +622,19 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Scammers used AI to impersonate KUOW reporter",
+    "b": "KUOW's Katie Campbell describes scam emails sent in her name and how to avoid AI impersonation traps.",
+    "date": "2026-10-12",
+    "publisher": "KUOW",
+    "title": "Scammers used AI to impersonate me, a KUOW reporter. Here’s how to avoid such traps",
+    "url": "https://www.kuow.org/technology/2026-10-12/scammers-used-ai-to-impersonate-me-a-kuow-reporter-heres-how-to-avoid-such-traps",
+    "published": "2026-10-12T14:00:00Z",
+    "updated": "2026-10-12T14:00:10Z",
+    "gathered": "2026-10-12T15:54:11Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
@@ -568,7 +645,7 @@
      "text": "Sunny, with a high near 61. Calm wind. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Increasing clouds, with a low around 46. Light and variable wind. "
@@ -589,7 +666,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 64,
-     "text": "Partly sunny, with a high near 64."
+     "text": "Partly sunny, with a high near 64. South southeast wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Wednesday Night",
@@ -611,7 +688,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-12T13:34:00Z",
+  "updatedAt": "2026-10-12T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
