@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-12T07:22:00Z",
+ "updatedAt": "2026-10-12T10:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -290,26 +290,20 @@
   "now": {
    "temp": 54,
    "cond": "Overcast",
-   "obs": "12 Oct 01:51 am EDT"
+   "obs": "12 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 59,
-    "text": "A 50 percent chance of rain and thunderstorms.  Cloudy, with a low around 59. Northeast wind around 16 mph. "
-   },
-   {
     "name": "Columbus Day",
     "kind": "high",
-    "temp": 72,
-    "text": "A 30 percent chance of rain before 8am.  Mostly cloudy, then gradually becoming sunny, with a high near 72. North wind 9 to 14 mph. "
+    "temp": 71,
+    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 71. North wind 8 to 15 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "Mostly clear, with a low around 59. Northwest wind 5 to 7 mph. "
+    "temp": 61,
+    "text": "Mostly clear, with a low around 61. Northwest wind 5 to 9 mph becoming light north  after midnight. "
    },
    {
     "name": "Tuesday",
@@ -320,14 +314,20 @@
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 66,
-    "text": "Partly cloudy, with a low around 66. Southwest wind 11 to 13 mph. "
+    "temp": 71,
+    "text": "Mostly cloudy, then gradually becoming mostly clear, with a steady temperature around 71. Southwest wind 11 to 13 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 78,
-    "text": "Sunny, with a high near 78."
+    "temp": 76,
+    "text": "Mostly sunny, with a high near 76."
+   },
+   {
+    "name": "Wednesday Night",
+    "kind": "low",
+    "temp": 62,
+    "text": "Mostly cloudy, with a low around 62."
    }
   ]
  },
