@@ -38,28 +38,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 80,
+    "temp": 85,
     "cond": "Fair",
-    "obs": "13 Oct 11:52 am EDT"
+    "obs": "13 Oct 14:52 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 86,
-     "text": "Sunny, with a high near 86. Northwest wind around 5 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 62,
-     "text": "Clear, with a low around 62. Calm wind. "
+     "temp": 61,
+     "text": "Clear, with a low around 61. Calm wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 87,
-     "text": "Sunny, with a high near 87. Calm wind becoming west around 5 mph. "
+     "text": "Sunny, with a high near 87. Calm wind becoming northwest around 5 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -76,8 +70,14 @@
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 65,
-     "text": "Clear, with a low around 65."
+     "temp": 64,
+     "text": "Clear, with a low around 64."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 84,
+     "text": "Sunny, with a high near 84."
     }
    ]
   },
@@ -93,7 +93,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -121,17 +121,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "obs": "13 Oct 10:54 am EDT"
+    "temp": 57,
+    "cond": " Light Rain",
+    "obs": "13 Oct 14:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 59,
-     "text": "A slight chance of showers.  Patchy fog before 2pm.  Otherwise, cloudy, with a high near 59. Southeast wind around 7 mph.  Chance of precipitation is 20%."
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -161,6 +155,12 @@
      "kind": "low",
      "temp": 48,
      "text": "A chance of showers, mainly after 5am.  Mostly cloudy, with a low around 48. Calm wind.  Chance of precipitation is 30%."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Showers, mainly after 8am.  Patchy fog before 9am. High near 63. Southeast wind 7 to 11 mph, with gusts as high as 23 mph.  Chance of precipitation is 90%."
     }
    ]
   },
@@ -176,7 +176,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -202,56 +202,52 @@
     "h": "Birds of prey adapt to Chicago's poles and towers",
     "b": "Raptors are using street lights, electric poles and cell towers to survive and in some cases thrive in the Chicago region, a sign some are back from the brink.",
     "date": "2026-10-12",
-    "publisher": "WBEZ",
-    "title": "Many birds of prey are finding utility in lamp posts, electric poles and cell towers in Chicago region",
     "url": "https://www.wbez.org/animals-wildlife/2026/10/12/birds-of-prey-adapting-chicago-illinois-raptors-utility-poles-cellular-towers-eagles-hawks-osprey",
-    "published": "2026-10-12T12:02:00Z",
-    "updated": "2026-10-12T13:17:36Z",
     "gathered": "2026-10-12T15:54:11Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 73,
+    "temp": 77,
     "cond": "Mostly Cloudy",
-    "obs": "13 Oct 10:53 am CDT"
+    "obs": "13 Oct 13:53 pm CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 76,
-     "text": "Mostly sunny, with a high near 76. West wind 5 to 10 mph becoming north northeast in the afternoon. Winds could gust as high as 15 mph. "
+     "text": "Sunny, with a high near 76. North northeast wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 62,
-     "text": "Showers and thunderstorms likely, mainly between 10pm and 4am.  Increasing clouds, with a low around 62. East wind around 5 mph becoming north after midnight.  Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "A chance of showers and thunderstorms before midnight, then showers likely and possibly a thunderstorm between midnight and 4am, then a chance of showers and thunderstorms after 4am.  Increasing clouds, with a low around 62. East wind around 5 mph becoming north northeast after midnight.  Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 63,
-     "text": "A chance of showers and thunderstorms before 10am, then a slight chance of showers between 10am and 1pm.  Mostly cloudy, with a high near 63. North northeast wind 10 to 15 mph.  Chance of precipitation is 30%."
+     "temp": 66,
+     "text": "A chance of showers and thunderstorms before 7am, then a slight chance of showers between 7am and 3pm.  Mostly cloudy, with a high near 66. North northeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "A 20 percent chance of rain after 1am.  Mostly cloudy, with a low around 58. North northeast wind around 15 mph, with gusts as high as 20 mph. "
+     "temp": 57,
+     "text": "Mostly cloudy, with a low around 57. North northeast wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 61,
-     "text": "Rain likely, then rain and possibly a thunderstorm after 1pm.  High near 61. East wind 10 to 15 mph.  Chance of precipitation is 90%."
+     "text": "A chance of showers and thunderstorms, then showers and possibly a thunderstorm after 7am.  High near 61. East southeast wind 10 to 15 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Rain likely before 1am.  Cloudy, with a low around 50. Chance of precipitation is 60%."
+     "text": "Showers and possibly a thunderstorm before 1am, then a slight chance of showers.  Low around 50. Breezy.  Chance of precipitation is 80%."
     }
    ]
   },
@@ -267,15 +263,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Open House Chicago returns Oct. 17-18",
     "b": "Open House Chicago returns for its 16th year, offering behind-the-scenes access to notable buildings that usually aren't open to the public.",
     "date": "2026-10-12",
-    "publisher": "WBEZ",
-    "title": "Get behind-the-scenes access to architectural gems at Open House Chicago",
     "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/12/get-behind-the-scenes-access-to-architectural-gems-at-open-house-chicago",
     "gathered": "2026-10-12T19:10:00Z"
    }
@@ -290,46 +284,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Overcast",
-    "obs": "13 Oct 08:58 am MDT"
+    "temp": 61,
+    "cond": "Mostly Cloudy",
+    "obs": "13 Oct 12:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 65,
-     "text": "Areas of drizzle before noon.  Patchy fog before noon.  Otherwise, mostly cloudy, with a high near 65. Northeast wind 6 to 8 mph, with gusts as high as 15 mph. "
+     "temp": 61,
+     "text": "A 20 percent chance of showers after 3pm.  Mostly cloudy, with a high near 61. North northeast wind around 8 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 44,
-     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 44. North northeast wind 6 to 8 mph. "
+     "temp": 43,
+     "text": "Showers.  Low around 43. Northeast wind 5 to 8 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 49,
-     "text": "Showers likely.  Cloudy, with a high near 49. Northeast wind 8 to 10 mph, with gusts as high as 18 mph.  Chance of precipitation is 70%."
+     "text": "Showers.  High near 49. Northeast wind 8 to 10 mph, with gusts as high as 16 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Showers.  Low around 40. North wind 5 to 7 mph, with gusts as high as 16 mph.  Chance of precipitation is 90%."
+     "temp": 38,
+     "text": "Rain.  Low around 38. North wind 6 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 54,
-     "text": "Showers.  High near 54. Breezy, with a north wind 7 to 17 mph, with gusts as high as 33 mph.  Chance of precipitation is 80%."
+     "temp": 50,
+     "text": "Rain likely.  Mostly cloudy, with a high near 50. Breezy, with a north wind 9 to 14 mph increasing to 15 to 20 mph in the afternoon. Winds could gust as high as 34 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 34,
-     "text": "A 30 percent chance of showers, mainly before midnight.  Partly cloudy, with a low around 34."
+     "text": "A 20 percent chance of showers before midnight.  Partly cloudy, with a low around 34."
     }
    ]
   },
@@ -345,7 +339,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -364,7 +358,7 @@
     "title": "Hollywood Burbank Airport’s shiny new terminal is open for business",
     "url": "https://laist.com/news/transportation/hollywood-burbank-airport-terminal-open",
     "published": "2026-10-13T12:00:00Z",
-    "updated": "2026-10-13T12:00:01Z",
+    "updated": "2026-10-13T17:11:21Z",
     "gathered": "2026-10-13T12:03:04Z"
    },
    {
@@ -415,10 +409,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. North northwest wind 5 to 10 mph becoming southwest in the afternoon. "
+     "text": "Sunny, with a high near 72. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -429,26 +423,26 @@
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 80,
-     "text": "Sunny, with a high near 80. North wind around 5 mph becoming west southwest in the afternoon. "
+     "temp": 81,
+     "text": "Sunny, with a high near 81. North wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Clear, with a low around 59. West southwest wind 5 to 10 mph becoming north northeast after midnight. "
+     "temp": 61,
+     "text": "Clear, with a low around 61. West southwest wind 5 to 10 mph becoming north northeast after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 88,
-     "text": "Sunny, with a high near 88. North northeast wind 5 to 15 mph. "
+     "temp": 89,
+     "text": "Sunny, with a high near 89. North northeast wind 5 to 15 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 68,
-     "text": "Clear, with a low around 68."
+     "temp": 69,
+     "text": "Clear, with a low around 69."
     }
    ]
   },
@@ -464,7 +458,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -510,10 +504,9 @@
     "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
     "date": "2026-10-13",
     "publisher": "Gothamist",
-    "title": "NYC's taxi union teams with Uber, hedge fund demand healthcare after 4 driver deaths",
+    "title": "NYC's taxi union teams with Uber, private equity firm to demand healthcare after 4 driver deaths",
     "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
-    "published": "2026-10-13T10:00:00Z",
-    "updated": "2026-10-13T15:18:00Z",
+    "published": "2026-10-13T19:27:00Z",
     "gathered": "2026-10-13T12:03:04Z"
    },
    {
@@ -559,46 +552,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 69,
     "cond": "Fair",
-    "obs": "13 Oct 11:51 am EDT"
+    "obs": "13 Oct 14:51 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 73,
-     "text": "Mostly sunny, with a high near 73. South wind 9 to 11 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 72,
-     "text": "Partly cloudy, with a steady temperature around 72. Southwest wind 11 to 13 mph. "
+     "text": "Mostly clear, with a steady temperature around 72. Southwest wind 10 to 13 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 78,
-     "text": "Mostly sunny, with a high near 78. Southwest wind around 11 mph. "
+     "temp": 81,
+     "text": "Mostly sunny, with a high near 81. West wind around 11 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 62,
-     "text": "Mostly cloudy, with a low around 62. Northwest wind 9 to 13 mph. "
+     "temp": 60,
+     "text": "Partly cloudy, with a low around 60. Northwest wind 10 to 13 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. North wind 7 to 10 mph. "
+     "temp": 62,
+     "text": "Sunny, with a steady temperature around 62. North wind 6 to 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Showers after 2am.  Low around 59. Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 62,
+     "text": "Showers, mainly after 2am.  Steady temperature around 62. Southeast wind 8 to 13 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 72,
+     "text": "Showers.  High near 72. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     }
    ]
   },
@@ -614,7 +607,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -710,7 +703,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "goodnews": []
  },
  {
@@ -728,7 +721,7 @@
     "title": "Court watchers have eyes on races to reshape Washington Supreme Court",
     "url": "https://www.kuow.org/elections/2026-10-13/court-watchers-have-eyes-on-races-to-reshape-washington-supreme-court",
     "published": "2026-10-13T12:00:00Z",
-    "updated": "2026-10-13T12:00:08Z",
+    "updated": "2026-10-13T17:54:01Z",
     "gathered": "2026-10-13T12:03:04Z"
    },
    {
@@ -750,40 +743,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 60,
-     "text": "Mostly cloudy, with a high near 60. Light south southeast wind. "
+     "text": "Mostly cloudy, with a high near 60. South wind 3 to 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly cloudy, with a low around 52. Calm wind becoming south around 6 mph after midnight. "
+     "temp": 54,
+     "text": "Mostly cloudy, with a low around 54. South southeast wind 3 to 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 64,
-     "text": "Partly sunny, with a high near 64. South southeast wind around 5 mph becoming calm  in the morning. "
+     "temp": 65,
+     "text": "A 10 percent chance of rain before 7am.  Cloudy, then gradually becoming mostly sunny, with a high near 65. South southeast wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Partly cloudy, with a low around 50. Light north wind. "
+     "temp": 51,
+     "text": "Partly cloudy, with a low around 51. Light and variable wind. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 69,
-     "text": "Mostly sunny, with a high near 69. North northeast wind 3 to 5 mph. "
+     "text": "Mostly sunny, with a high near 69. North wind 3 to 5 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Mostly clear, with a low around 53."
+     "temp": 54,
+     "text": "Mostly clear, with a low around 54."
     }
    ]
   },
@@ -799,7 +792,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T19:10:00Z",
+  "updatedAt": "2026-10-13T22:09:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
