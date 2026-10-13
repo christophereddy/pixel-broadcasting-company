@@ -1,11 +1,29 @@
 {
- "updatedAt": "2026-10-13T07:15:00Z",
+ "updatedAt": "2026-10-13T10:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Iran war: Qatar urges securing Gulf sea routes",
+   "b": "Al Jazeera live updates: Qatar's emir urges stronger efforts to secure Gulf maritime routes as the Iran war continues.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "Qatar’s emir urges stronger efforts to secure Gulf maritime routes",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/13/iran-war-live-trump-says-houthis-misbehaving-as-riyadh-flights-halted",
+   "gathered": "2026-10-13T07:15:48Z"
+  },
+  {
+   "h": "Trump hedges on Netanyahu as Israel vote nears",
+   "b": "Despite years of policies that buoyed Prime Minister Benjamin Netanyahu, President Trump is hedging ahead of Israel's election.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears",
+   "url": "https://www.aljazeera.com/news/2026/10/13/despite-long-history-with-netanyahu-trump-hedges-as-israel-vote-nears",
+   "gathered": "2026-10-13T07:15:48Z"
+  },
   {
    "h": "Sudan's famine risk worsens, monitor warns",
    "b": "Conflict and El Niño-linked drought are worsening food insecurity across Darfur and Kordofan, including areas at risk of famine, the IPC food crisis monitor said.",
@@ -34,8 +52,6 @@
    "h": "Iran war: Saudi downs Houthi missiles",
    "b": "Al Jazeera live updates: Saudi Arabia intercepts Houthi missiles as deadly attacks continue in the Iran war.",
    "date": "2026-10-12",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: Saudi downs Houthi missiles during ongoing deadly attacks",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate",
    "gathered": "2026-10-12T15:54:11Z"
   },
@@ -94,6 +110,28 @@
  ],
  "international": [
   {
+   "h": "Cyberattack spoils food at French supermarkets",
+   "b": "A cyberattack on refrigeration systems at hundreds of French supermarkets pushed fridge temperatures as high as 50C (122F), spoiling food and causing fires. Intermarche, Cooperative U and E Leclerc confirmed the attack.",
+   "date": "2026-10-13",
+   "place": "France",
+   "tz": "Europe/Paris",
+   "publisher": "Al Jazeera",
+   "title": "Hundreds of supermarkets in France hit by ‘unprecedented’ cyberattack",
+   "url": "https://www.aljazeera.com/news/2026/10/13/unprecedented-cyberattack-hits-french-supermarkets-causing-food-losses",
+   "gathered": "2026-10-13T07:15:48Z"
+  },
+  {
+   "h": "100+ foreign trekkers stranded by Nepal floods",
+   "b": "More than 100 foreign trekkers are stranded in Nepal's Gorkha district after flash floods washed away bridges, hiking trails and hundreds of homes, a local official said.",
+   "date": "2026-10-13",
+   "place": "Gorkha, Nepal",
+   "tz": "Asia/Kathmandu",
+   "publisher": "Al Jazeera",
+   "title": "More than 100 foreign trekkers stranded by floods in Nepal’s Gorkha region",
+   "url": "https://www.aljazeera.com/news/2026/10/13/more-than-100-foreign-trekkers-stranded-by-floods-in-nepals-gorkha-region",
+   "gathered": "2026-10-13T07:15:48Z"
+  },
+  {
    "h": "UK blames Iran for RAF airbase plot",
    "b": "Prime Minister Andy Burnham said a suspected plot targeting RAF Fairford was \"almost certainly\" directed by Iran's Revolutionary Guard. Britain sanctioned two Iranian nationals; Tehran denies involvement.",
    "date": "2026-10-12",
@@ -110,8 +148,6 @@
    "date": "2026-10-12",
    "place": "Adwa, Ethiopia",
    "tz": "Africa/Addis_Ababa",
-   "publisher": "Al Jazeera",
-   "title": "Ethiopian forces enter strategic Tigray town of Adwa, witnesses say",
    "url": "https://www.aljazeera.com/news/2026/10/12/ethiopian-troops-capture-adwa-without-a-fight-witnesses-say",
    "gathered": "2026-10-12T19:10:00Z"
   },
@@ -155,8 +191,27 @@
    "gathered": "2026-10-12T15:54:11Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "Anthropic: small AI may soon self-replicate",
+   "b": "Anthropic researchers said in a report Monday that small AI models may be months away from being able to self-replicate on consumer devices such as smart TVs and fridges, without a data centre.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "AI could self-replicate on home devices within ‘months’, Anthropic says",
+   "url": "https://www.aljazeera.com/economy/2026/10/13/ai-could-self-replicate-on-home-devices-within-months-anthropic-says",
+   "gathered": "2026-10-13T07:15:48Z"
+  }
+ ],
  "sports": [
+  {
+   "h": "Bills beat Rams 37-34 in OT; punch thrown after",
+   "b": "Buffalo beat the Rams 37-34 in overtime Monday night. Afterward, Rams lineman Alaric Jackson threw an apparent punch at Bills pass-rusher Bradley Chubb.",
+   "date": "2026-10-13",
+   "publisher": "CBS Sports",
+   "title": "Rams left tackle throws punch at Bills' Bradley Chubb following Buffalo's stunning Monday night win",
+   "url": "https://www.cbssports.com/nfl/news/rams-left-tackle-punches-bills-bradley-chubb-mnf/",
+   "gathered": "2026-10-13T07:15:48Z"
+  },
   {
    "h": "Brewers beat Dodgers 7-4 in NLCS Game 2",
    "b": "Milwaukee topped Los Angeles 7-4 in Game 2 of the National League Championship Series.",
@@ -172,8 +227,6 @@
    "h": "SEC adopts uniform NIL and revenue-share contracts",
    "b": "SEC presidents voted Monday to adopt standardized NIL and revenue-share contracts, effective immediately, making the SEC the second power conference to do so after the Big Ten.",
    "date": "2026-10-12",
-   "publisher": "CBS Sports",
-   "title": "SEC adopts standardized NIL contracts in latest step toward self-governance",
    "url": "https://www.cbssports.com/college-football/news/sec-standardized-nil-contracts-self-governance/",
    "gathered": "2026-10-13T03:45:06Z"
   },
@@ -181,8 +234,6 @@
    "h": "UCLA QB Iamaleava likely out for season",
    "b": "UCLA quarterback Nico Iamaleava is expected to miss the rest of the season with a knee injury suffered in Saturday's 17-15 win over Oregon, CBS Sports reports.",
    "date": "2026-10-12",
-   "publisher": "CBS Sports",
-   "title": "UCLA QB Nico Iamaleava expected to miss remainder of season after knee injury",
    "url": "https://www.cbssports.com/college-football/news/ucla-qb-nico-iamaleava-knee-injury-season/",
    "gathered": "2026-10-12T19:10:00Z"
   },
@@ -283,46 +334,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 61,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "12 Oct 23:51 pm EDT"
+   "obs": "13 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 61,
-    "text": "Patchy fog after 5am.  Otherwise, partly cloudy, with a low around 61. Northwest wind 3 to 5 mph. "
-   },
-   {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 72,
-    "text": "Patchy fog before 11am.  Otherwise, mostly sunny, with a high near 72. Light southeast wind becoming south 6 to 11 mph in the morning. "
+    "temp": 73,
+    "text": "Mostly sunny, with a high near 73. Light south wind increasing to 6 to 11 mph in the morning. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 69,
-    "text": "Mostly clear, with a low around 69. South wind 11 to 13 mph. "
+    "temp": 72,
+    "text": "Partly cloudy, with a steady temperature around 72. Southwest wind 11 to 13 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 77,
-    "text": "Increasing clouds, with a high near 77. West wind around 11 mph. "
+    "temp": 78,
+    "text": "Mostly sunny, with a high near 78. Southwest wind around 11 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 61,
-    "text": "Mostly cloudy, with a low around 61. North wind 9 to 11 mph. "
+    "temp": 62,
+    "text": "Mostly cloudy, with a low around 62. Northwest wind 9 to 13 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 63,
-    "text": "Sunny, with a steady temperature around 63."
+    "temp": 66,
+    "text": "Sunny, with a high near 66."
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 59,
+    "text": "Showers after 2am.  Low around 59. Chance of precipitation is 80%."
    }
   ]
  },
