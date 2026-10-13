@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T16:13:00Z",
+ "updatedAt": "2026-10-13T19:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,20 +7,27 @@
  },
  "world": [
   {
-   "h": "Iran war: Houthis, Saudi coalition trade threats",
-   "b": "Al Jazeera live updates: the Houthis and the Saudi-led coalition exchange threats over attacks on each other's capitals.",
+   "h": "Iran war: Blasts in Sanaa as Houthis warn Saudis",
+   "b": "Al Jazeera live updates: blasts are heard in Sanaa as the Houthis threaten Saudi Arabia with a harsh response.",
    "date": "2026-10-13",
    "publisher": "Al Jazeera",
-   "title": "Houthis and Saudi-led coalition exchange threats over attacks on capitals",
+   "title": "Blasts heard in Sanaa as Houthis threaten Saudi Arabia with harsh response",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/13/iran-war-live-trump-says-houthis-misbehaving-as-riyadh-flights-halted",
    "gathered": "2026-10-13T07:15:48Z"
+  },
+  {
+   "h": "Houthis threaten Saudi Aramco sites and airports",
+   "b": "Houthi spokesman Yahya Saree called Saudi Aramco facilities and airports 'a legitimate target' after the Saudi-led coalition ordered civilians to evacuate an oil station in Sanaa.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
+   "url": "https://www.aljazeera.com/news/2026/10/13/houthis-threaten-saudi-arabias-aramco-facilities-and-airports",
+   "gathered": "2026-10-13T16:13:43Z"
   },
   {
    "h": "Ex-DR Congo leader Kabila joins M23 in coalition",
    "b": "Former Congolese President Joseph Kabila launched a new political and military coalition that includes the Rwanda-backed M23 armed group, which has captured vast areas of eastern DR Congo.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "Former DR Congo President Kabila joins M23 rebels in a new coalition",
    "url": "https://www.aljazeera.com/news/2026/10/13/former-dr-congo-president-kabila-joins-m23-rebels-in-a-new-coalition",
    "gathered": "2026-10-13T12:03:04Z"
   },
@@ -37,8 +44,6 @@
    "h": "Trump hedges on Netanyahu as Israel vote nears",
    "b": "Despite years of policies that buoyed Prime Minister Benjamin Netanyahu, President Trump is hedging ahead of Israel's election.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "Despite long history with Netanyahu, Trump hedges as Israel vote nears",
    "url": "https://www.aljazeera.com/news/2026/10/13/despite-long-history-with-netanyahu-trump-hedges-as-israel-vote-nears",
    "gathered": "2026-10-13T07:15:48Z"
   },
@@ -46,10 +51,7 @@
    "h": "Sudan's famine risk worsens, monitor warns",
    "b": "Conflict and El Niño-linked drought are worsening food insecurity across Darfur and Kordofan, including areas at risk of famine, the IPC food crisis monitor said.",
    "date": "2026-10-12",
-   "publisher": "PBS NewsHour",
-   "title": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says",
    "url": "https://www.pbs.org/newshour/world/sudans-famine-risk-worsened-by-conflict-drought-and-funding-shortages-report-says",
-   "published": "2026-10-12T21:30:57Z",
    "gathered": "2026-10-12T23:08:16Z"
   },
   {
@@ -108,10 +110,7 @@
    "h": "Erie mass shooting gunman and victims named",
    "b": "The Erie County coroner named Matthew Stone Sr., 45, as the gunman who killed eight people, including seven relatives, at a Pennsylvania home Friday before taking his own life.",
    "date": "2026-10-12",
-   "publisher": "PBS NewsHour",
-   "title": "Authorities name the gunman and most of the 8 victims in last week's Erie mass shooting",
    "url": "https://www.pbs.org/newshour/nation/authorities-name-the-gunman-and-most-of-the-8-victims-in-last-weeks-erie-mass-shooting",
-   "published": "2026-10-12T21:15:45Z",
    "gathered": "2026-10-12T23:08:16Z"
   },
   {
@@ -134,6 +133,25 @@
  ],
  "politics": [
   {
+   "h": "Guilfoyle resigns as ambassador to Greece",
+   "b": "Kimberly Guilfoyle resigned amid misconduct allegations, including claims she offered a donor access to officials for money. The White House said it had asked her to resign.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "US ambassador to Greece resigns amid misconduct allegations",
+   "url": "https://www.aljazeera.com/news/2026/10/13/trumps-ambassador-to-greece-asked-to-resign-amid-misconduct-allegations",
+   "gathered": "2026-10-13T16:13:43Z"
+  },
+  {
+   "h": "Supreme Court sides with Trump on DOGE records",
+   "b": "The Supreme Court intervened for a second time in CREW's lawsuit seeking records from Elon Musk's Department of Government Efficiency, siding with the administration.",
+   "date": "2026-10-13",
+   "publisher": "PBS NewsHour",
+   "title": "Supreme Court sides with Trump administration in lawsuit seeking records on Elon Musk’s DOGE",
+   "url": "https://www.pbs.org/newshour/politics/supreme-court-sides-with-trump-administration-in-lawsuit-seeking-records-on-elon-musks-doge",
+   "published": "2026-10-13T15:32:32Z",
+   "gathered": "2026-10-13T16:13:43Z"
+  },
+  {
    "h": "Musk is biggest known midterm donor",
    "b": "Elon Musk has given more than $276 million since July to try to save Republican majorities in Congress, including $158 million to the Senate Leadership Fund, his super PAC confirmed.",
    "date": "2026-10-12",
@@ -150,13 +168,33 @@
  ],
  "international": [
   {
+   "h": "Yemen government strikes Houthi positions",
+   "b": "Yemen's internationally recognised government said it carried out nine air strikes on Houthi positions in Taiz governorate on Tuesday.",
+   "date": "2026-10-13",
+   "place": "Taiz, Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Yemeni government launches air strikes on Houthi positions",
+   "url": "https://www.aljazeera.com/news/2026/10/13/yemeni-government-launches-air-strikes-on-houthi-positions",
+   "gathered": "2026-10-13T16:13:43Z"
+  },
+  {
+   "h": "Sweden's Andersson fails again to form government",
+   "b": "Social Democrat leader Magdalena Andersson said talks with the left-wing bloc hit an impasse, prolonging deadlock a month after elections.",
+   "date": "2026-10-13",
+   "place": "Stockholm, Sweden",
+   "tz": "Europe/Stockholm",
+   "publisher": "Al Jazeera",
+   "title": "Sweden’s centre-left leader fails in second bid to form government",
+   "url": "https://www.aljazeera.com/news/2026/10/13/swedens-centre-left-leader-fails-in-second-bid-to-form-government",
+   "gathered": "2026-10-13T16:13:43Z"
+  },
+  {
    "h": "Israeli forces raid Palestinian NGOs in West Bank",
    "b": "Israeli forces raided the offices of the Union of Palestinian Women's Committees and the Addameer prisoner rights group, and the courtyard of the Palestine Medical Complex.",
    "date": "2026-10-13",
    "place": "Ramallah, West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Israeli forces raid Palestinian NGOs in occupied West Bank",
    "url": "https://www.aljazeera.com/news/2026/10/13/israeli-forces-raid-palestinian-ngos-and-hospital-in-occupied-west-bank",
    "gathered": "2026-10-13T12:03:04Z"
   },
@@ -166,8 +204,6 @@
    "date": "2026-10-13",
    "place": "New Delhi, India",
    "tz": "Asia/Kolkata",
-   "publisher": "Al Jazeera",
-   "title": "Police detain leaders of India’s ‘cockroach’ movement at New Delhi protest",
    "url": "https://www.aljazeera.com/news/2026/10/13/police-detain-leaders-of-indias-cockroach-movement-at-new-delhi-protest",
    "gathered": "2026-10-13T12:03:04Z"
   },
@@ -239,13 +275,19 @@
  ],
  "business": [
   {
+   "h": "Social Security raise announced Wednesday",
+   "b": "The Social Security Administration announces next year's cost-of-living adjustment Wednesday morning. AARP predicts a 3.6% increase for 2027.",
+   "date": "2026-10-13",
+   "publisher": "Marketplace",
+   "title": "Social Security payments to increase — slightly",
+   "url": "https://www.marketplace.org/story/2026/10/13/social-security-payments-to-increase-slightly",
+   "gathered": "2026-10-13T16:13:43Z"
+  },
+  {
    "h": "Two Americans win economics Nobel",
    "b": "Robert E. Hall and Michael Woodford won the Nobel in economics for models that help governments and central banks manage shocks like energy crises and inflation.",
    "date": "2026-10-12",
-   "publisher": "PBS NewsHour",
-   "title": "WATCH: 2 American economists win Nobel for studying how to deal with economic shocks",
    "url": "https://www.pbs.org/newshour/economy/watch-2-american-economists-win-nobel-for-studying-how-to-deal-with-economic-shocks",
-   "published": "2026-10-12T13:26:30Z",
    "gathered": "2026-10-12T15:54:11Z"
   },
   {
@@ -280,11 +322,18 @@
  ],
  "sports": [
   {
+   "h": "Dream, Valkyries set for WNBA Finals",
+   "b": "Atlanta and Golden State, neither of which has won a WNBA title, meet in the Finals starting Oct. 17. The Dream are 5-0 in the playoffs.",
+   "date": "2026-10-13",
+   "publisher": "CBS Sports",
+   "title": "2026 WNBA playoffs bracket, schedule: Valkyries and Dream advance to WNBA Finals with semifinal sweeps",
+   "url": "https://www.cbssports.com/wnba/news/2026-wnba-playoffs-bracket-schedule/",
+   "gathered": "2026-10-13T16:13:43Z"
+  },
+  {
    "h": "Wembanyama tops NBA's top 100 players",
    "b": "CBS Sports' annual ranking of the NBA's top 100 players puts Victor Wembanyama at No. 1 entering the 2026-27 season.",
    "date": "2026-10-13",
-   "publisher": "CBS Sports",
-   "title": "Ranking the NBA's top 100 players: Victor Wembanyama enters 2026-27 season at No. 1",
    "url": "https://www.cbssports.com/nba/news/ranking-nba-top-100-players-2026-27-season/",
    "gathered": "2026-10-13T13:28:19Z"
   },
@@ -292,8 +341,6 @@
    "h": "Bills beat Rams 37-34 in OT; punch thrown after",
    "b": "Buffalo beat the Rams 37-34 in overtime Monday night. Afterward, Rams lineman Alaric Jackson threw an apparent punch at Bills pass-rusher Bradley Chubb.",
    "date": "2026-10-13",
-   "publisher": "CBS Sports",
-   "title": "Rams left tackle throws punch at Bills' Bradley Chubb following Buffalo's stunning Monday night win",
    "url": "https://www.cbssports.com/nfl/news/rams-left-tackle-punches-bills-bradley-chubb-mnf/",
    "gathered": "2026-10-13T07:15:48Z"
   },
@@ -409,9 +456,10 @@
    "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
    "date": "2026-10-13",
    "publisher": "Gothamist",
-   "title": "NYC's taxi union teams with Uber, hedge fund to demand healthcare after 4 driver deaths",
+   "title": "NYC's taxi union teams with Uber, hedge fund demand healthcare after 4 driver deaths",
    "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
    "published": "2026-10-13T10:00:00Z",
+   "updated": "2026-10-13T15:18:00Z",
    "gathered": "2026-10-13T12:03:04Z"
   },
   {
@@ -457,16 +505,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 63,
+   "temp": 68,
    "cond": "Fair",
-   "obs": "13 Oct 08:51 am EDT"
+   "obs": "13 Oct 11:51 am EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 73,
-    "text": "Mostly sunny, with a high near 73. South wind 5 to 11 mph. "
+    "text": "Mostly sunny, with a high near 73. South wind 9 to 11 mph. "
    },
    {
     "name": "Tonight",
