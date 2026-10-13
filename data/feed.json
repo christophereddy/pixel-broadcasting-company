@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T10:11:00Z",
+ "updatedAt": "2026-10-13T13:28:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,31 @@
  },
  "world": [
   {
-   "h": "Iran war: Qatar urges securing Gulf sea routes",
-   "b": "Al Jazeera live updates: Qatar's emir urges stronger efforts to secure Gulf maritime routes as the Iran war continues.",
+   "h": "Iran war: Houthis kill 5 civilians in Taiz",
+   "b": "Al Jazeera live updates: a child is among five civilians killed by Houthis in Yemen's Taiz province.",
    "date": "2026-10-13",
    "publisher": "Al Jazeera",
-   "title": "Qatar’s emir urges stronger efforts to secure Gulf maritime routes",
+   "title": "Child among five civilians killed by Houthis in Yemen’s Taiz province",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/13/iran-war-live-trump-says-houthis-misbehaving-as-riyadh-flights-halted",
    "gathered": "2026-10-13T07:15:48Z"
+  },
+  {
+   "h": "Ex-DR Congo leader Kabila joins M23 in coalition",
+   "b": "Former Congolese President Joseph Kabila launched a new political and military coalition that includes the Rwanda-backed M23 armed group, which has captured vast areas of eastern DR Congo.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "Former DR Congo President Kabila joins M23 rebels in a new coalition",
+   "url": "https://www.aljazeera.com/news/2026/10/13/former-dr-congo-president-kabila-joins-m23-rebels-in-a-new-coalition",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
+   "h": "Drone attack sinks ship off Bulgaria's coast",
+   "b": "Two ships were hit in drone attacks off Bulgaria's Black Sea coast and one sank, Prime Minister Rumen Radev said. One was the Ukrainian-owned, Maltese-flagged Chelsea 3.",
+   "date": "2026-10-13",
+   "publisher": "Al Jazeera",
+   "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
+   "url": "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says",
+   "gathered": "2026-10-13T12:03:04Z"
   },
   {
    "h": "Trump hedges on Netanyahu as Israel vote nears",
@@ -65,6 +83,28 @@
  ],
  "national": [
   {
+   "h": "Scammers drain SNAP cards; Congress won't fund fix",
+   "b": "ProPublica: organized gangs are stealing SNAP benefits with card skimmers. Most theft could be blocked by chip cards, but Congress won't fund the switch.",
+   "date": "2026-10-13",
+   "publisher": "ProPublica",
+   "title": "Scammers Are Stealing Millions From Food Stamp Recipients. Congress Could Fix It — but Won’t.",
+   "url": "https://www.propublica.org/article/food-stamp-snap-benefits-theft-skimmers-fraud",
+   "published": "2026-10-13T10:00:00Z",
+   "updated": "2026-10-13T10:00:08Z",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
+   "h": "Pennsylvania inmates wait years on lawyers",
+   "b": "ProPublica: underfunded, flat-fee post-conviction lawyers in Pennsylvania fell months or years behind, some leaving clients waiting as long as a decade.",
+   "date": "2026-10-13",
+   "publisher": "ProPublica",
+   "title": "He Waited Nine Years in Prison for His Lawyer to File a Single Brief. In This State, There’s No Rule Against It.",
+   "url": "https://www.propublica.org/article/post-conviction-legal-delays-pennsylvania",
+   "published": "2026-10-13T09:00:00Z",
+   "updated": "2026-10-13T09:00:14Z",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
    "h": "Erie mass shooting gunman and victims named",
    "b": "The Erie County coroner named Matthew Stone Sr., 45, as the gunman who killed eight people, including seven relatives, at a Pennsylvania home Friday before taking his own life.",
    "date": "2026-10-12",
@@ -110,13 +150,44 @@
  ],
  "international": [
   {
+   "h": "Israeli forces raid Palestinian NGOs in West Bank",
+   "b": "Israeli forces raided the offices of the Union of Palestinian Women's Committees and the Addameer prisoner rights group, and the courtyard of the Palestine Medical Complex.",
+   "date": "2026-10-13",
+   "place": "Ramallah, West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israeli forces raid Palestinian NGOs in occupied West Bank",
+   "url": "https://www.aljazeera.com/news/2026/10/13/israeli-forces-raid-palestinian-ngos-and-hospital-in-occupied-west-bank",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
+   "h": "India detains 'cockroach' movement leaders",
+   "b": "Delhi police detained leaders of the youth-led 'cockroach' movement after they jumped barricades at a protest site, demanding the chief election commissioner resign over voter list revisions.",
+   "date": "2026-10-13",
+   "place": "New Delhi, India",
+   "tz": "Asia/Kolkata",
+   "publisher": "Al Jazeera",
+   "title": "Police detain leaders of India’s ‘cockroach’ movement at New Delhi protest",
+   "url": "https://www.aljazeera.com/news/2026/10/13/police-detain-leaders-of-indias-cockroach-movement-at-new-delhi-protest",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
+   "h": "Imran Khan's PTI to fight Khyber takeover",
+   "b": "Jailed ex-PM Imran Khan's party is preparing to fight Pakistan's emergency rule in Khyber Pakhtunkhwa, which suspended the PTI-led provincial government.",
+   "date": "2026-10-13",
+   "place": "Islamabad, Pakistan",
+   "tz": "Asia/Karachi",
+   "publisher": "Al Jazeera",
+   "title": "Imran Khan’s PTI braces to fight federal takeover of Khyber Pakhtunkhwa",
+   "url": "https://www.aljazeera.com/news/2026/10/13/imran-khans-pti-braces-to-fight-federal-takeover-of-khyber-pakhtunkhwa",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
    "h": "Cyberattack spoils food at French supermarkets",
    "b": "A cyberattack on refrigeration systems at hundreds of French supermarkets pushed fridge temperatures as high as 50C (122F), spoiling food and causing fires. Intermarche, Cooperative U and E Leclerc confirmed the attack.",
    "date": "2026-10-13",
    "place": "France",
    "tz": "Europe/Paris",
-   "publisher": "Al Jazeera",
-   "title": "Hundreds of supermarkets in France hit by ‘unprecedented’ cyberattack",
    "url": "https://www.aljazeera.com/news/2026/10/13/unprecedented-cyberattack-hits-french-supermarkets-causing-food-losses",
    "gathered": "2026-10-13T07:15:48Z"
   },
@@ -126,8 +197,6 @@
    "date": "2026-10-13",
    "place": "Gorkha, Nepal",
    "tz": "Asia/Kathmandu",
-   "publisher": "Al Jazeera",
-   "title": "More than 100 foreign trekkers stranded by floods in Nepal’s Gorkha region",
    "url": "https://www.aljazeera.com/news/2026/10/13/more-than-100-foreign-trekkers-stranded-by-floods-in-nepals-gorkha-region",
    "gathered": "2026-10-13T07:15:48Z"
   },
@@ -137,8 +206,6 @@
    "date": "2026-10-12",
    "place": "London, UK",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK blames Iran for airbase plot, sanctions two Iranian nationals",
    "url": "https://www.aljazeera.com/news/2026/10/12/uk-blames-iran-for-airbase-plot-sanctions-two-iranian-nationals",
    "gathered": "2026-10-12T19:10:00Z"
   },
@@ -193,11 +260,20 @@
  ],
  "science": [
   {
+   "h": "Seabirds help keep coral reefs healthy",
+   "b": "At Palmyra Atoll in the Pacific, scientists have found a surprising link between seabirds and the health of surrounding coral reefs.",
+   "date": "2026-10-13",
+   "publisher": "KUOW",
+   "title": "One way to protect coral reefs? Bring back seabirds",
+   "url": "https://www.kuow.org/npr-news/2026-10-13/one-way-to-protect-coral-reefs-bring-back-seabirds",
+   "published": "2026-10-13T09:00:00Z",
+   "updated": "2026-10-13T09:11:10Z",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
    "h": "Anthropic: small AI may soon self-replicate",
    "b": "Anthropic researchers said in a report Monday that small AI models may be months away from being able to self-replicate on consumer devices such as smart TVs and fridges, without a data centre.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "AI could self-replicate on home devices within ‘months’, Anthropic says",
    "url": "https://www.aljazeera.com/economy/2026/10/13/ai-could-self-replicate-on-home-devices-within-months-anthropic-says",
    "gathered": "2026-10-13T07:15:48Z"
   }
@@ -290,6 +366,26 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Hochul, Blakeman meet in lone governor debate",
+   "b": "With the election three weeks away, Gov. Kathy Hochul and Republican Bruce Blakeman face off in their only debate.",
+   "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "With election 3 weeks away, Hochul and Blakeman to square off in lone NY governor debate",
+   "url": "https://gothamist.com/news/with-election-3-weeks-away-hochul-and-blakeman-to-square-off-in-lone-ny-governor-debate",
+   "published": "2026-10-13T10:30:46Z",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
+   "h": "Taxi union, Uber seek driver healthcare",
+   "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
+   "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "NYC's taxi union teams with Uber, hedge fund to demand healthcare 4 driver deaths",
+   "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
+   "published": "2026-10-13T10:00:57Z",
+   "gathered": "2026-10-13T12:03:04Z"
+  },
+  {
    "h": "Hochul declares measles 'disaster' emergency",
    "b": "Gov. Kathy Hochul declared a disaster emergency over the spread of measles in New York.",
    "date": "2026-10-12",
@@ -336,17 +432,17 @@
   "now": {
    "temp": 60,
    "cond": "Fair",
-   "obs": "13 Oct 02:51 am EDT"
+   "obs": "13 Oct 07:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tuesday",
+    "name": "Today",
     "kind": "high",
     "temp": 73,
     "text": "Mostly sunny, with a high near 73. Light south wind increasing to 6 to 11 mph in the morning. "
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 72,
     "text": "Partly cloudy, with a steady temperature around 72. Southwest wind 11 to 13 mph. "
@@ -367,13 +463,13 @@
     "name": "Thursday",
     "kind": "high",
     "temp": 66,
-    "text": "Sunny, with a high near 66."
+    "text": "Sunny, with a high near 66. North wind 7 to 10 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
     "temp": 59,
-    "text": "Showers after 2am.  Low around 59. Chance of precipitation is 80%."
+    "text": "Showers after 2am.  Low around 59. Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
    }
   ]
  },
