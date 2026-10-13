@@ -29,9 +29,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "cond": "A Few Clouds",
-    "obs": "13 Oct 06:52 am EDT"
+    "temp": 67,
+    "cond": "Fair",
+    "obs": "13 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -84,7 +84,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -116,16 +116,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 55,
     "cond": "Overcast",
-    "obs": "13 Oct 07:54 am EDT"
+    "obs": "13 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Patchy drizzle before 9am, then a slight chance of showers after 9am.  Patchy fog before 2pm.  Otherwise, cloudy, with a high near 59. Southeast wind 6 to 9 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of showers.  Patchy fog before 2pm.  Otherwise, cloudy, with a high near 59. Southeast wind 6 to 9 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Tonight",
@@ -171,7 +171,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -209,14 +209,14 @@
    "now": {
     "temp": 71,
     "cond": "A Few Clouds",
-    "obs": "13 Oct 06:53 am CDT"
+    "obs": "13 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 78,
-     "text": "Sunny, with a high near 78. West wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 78. West wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
@@ -262,7 +262,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -285,9 +285,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 50,
     "cond": "Mostly Cloudy",
-    "obs": "13 Oct 04:58 am MDT"
+    "obs": "13 Oct 05:58 am MDT"
    },
    "periods": [
     {
@@ -340,7 +340,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -459,7 +459,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -470,6 +470,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NY Public Radio CEO steps down after 8 months",
+    "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
+    "date": "2026-10-13",
+    "publisher": "Gothamist",
+    "title": "New York Public Radio CEO steps down after 8 months on job",
+    "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
+    "published": "2026-10-13T13:03:00Z",
+    "gathered": "2026-10-13T13:28:19Z"
+   },
+   {
+    "h": "Cyclist killed by ambulance on Staten Island",
+    "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
+    "date": "2026-10-13",
+    "publisher": "Gothamist",
+    "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
+    "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
+    "published": "2026-10-13T12:28:16Z",
+    "gathered": "2026-10-13T13:28:19Z"
+   },
    {
     "h": "Hochul, Blakeman meet in lone governor debate",
     "b": "With the election three weeks away, Gov. Kathy Hochul and Republican Bruce Blakeman face off in their only debate.",
@@ -485,9 +505,9 @@
     "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
     "date": "2026-10-13",
     "publisher": "Gothamist",
-    "title": "NYC's taxi union teams with Uber, hedge fund to demand healthcare 4 driver deaths",
+    "title": "NYC's taxi union teams with Uber, hedge fund to demand healthcare after 4 driver deaths",
     "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
-    "published": "2026-10-13T10:00:57Z",
+    "published": "2026-10-13T10:00:00Z",
     "gathered": "2026-10-13T12:03:04Z"
    },
    {
@@ -517,8 +537,7 @@
     "publisher": "Gothamist",
     "title": "Mayor Mamdani orders review of NYPD use of force policies",
     "url": "https://gothamist.com/news/mayor-mamdani-orders-review-of-nypd-use-of-force-policies",
-    "published": "2026-10-12T10:00:00Z",
-    "updated": "2026-10-12T17:00:00Z",
+    "published": "2026-10-12T17:00:00Z",
     "gathered": "2026-10-12T15:54:11Z"
    },
    {
@@ -528,23 +547,22 @@
     "publisher": "Gothamist",
     "title": "Company that won $23M NYPD building contract was investigated by LI watchdog",
     "url": "https://gothamist.com/news/company-that-won-23m-nypd-building-contract-was-investigated-by-li-watchdog",
-    "published": "2026-10-12T10:00:00Z",
-    "updated": "2026-10-12T17:01:00Z",
+    "published": "2026-10-12T17:01:00Z",
     "gathered": "2026-10-12T10:09:47Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "13 Oct 07:51 am EDT"
+    "obs": "13 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 73,
-     "text": "Mostly sunny, with a high near 73. Light south wind increasing to 6 to 11 mph in the morning. "
+     "text": "Mostly sunny, with a high near 73. South wind 5 to 11 mph. "
     },
     {
      "name": "Tonight",
@@ -590,7 +608,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -683,7 +701,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "goodnews": []
  },
  {
@@ -772,7 +790,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-13T13:28:00Z",
+  "updatedAt": "2026-10-13T16:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

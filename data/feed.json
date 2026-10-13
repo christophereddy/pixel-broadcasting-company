@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T13:28:00Z",
+ "updatedAt": "2026-10-13T16:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Iran war: Houthis kill 5 civilians in Taiz",
-   "b": "Al Jazeera live updates: a child is among five civilians killed by Houthis in Yemen's Taiz province.",
+   "h": "Iran war: Houthis, Saudi coalition trade threats",
+   "b": "Al Jazeera live updates: the Houthis and the Saudi-led coalition exchange threats over attacks on each other's capitals.",
    "date": "2026-10-13",
    "publisher": "Al Jazeera",
-   "title": "Child among five civilians killed by Houthis in Yemen’s Taiz province",
+   "title": "Houthis and Saudi-led coalition exchange threats over attacks on capitals",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/13/iran-war-live-trump-says-houthis-misbehaving-as-riyadh-flights-halted",
    "gathered": "2026-10-13T07:15:48Z"
   },
@@ -280,6 +280,15 @@
  ],
  "sports": [
   {
+   "h": "Wembanyama tops NBA's top 100 players",
+   "b": "CBS Sports' annual ranking of the NBA's top 100 players puts Victor Wembanyama at No. 1 entering the 2026-27 season.",
+   "date": "2026-10-13",
+   "publisher": "CBS Sports",
+   "title": "Ranking the NBA's top 100 players: Victor Wembanyama enters 2026-27 season at No. 1",
+   "url": "https://www.cbssports.com/nba/news/ranking-nba-top-100-players-2026-27-season/",
+   "gathered": "2026-10-13T13:28:19Z"
+  },
+  {
    "h": "Bills beat Rams 37-34 in OT; punch thrown after",
    "b": "Buffalo beat the Rams 37-34 in overtime Monday night. Afterward, Rams lineman Alaric Jackson threw an apparent punch at Bills pass-rusher Bradley Chubb.",
    "date": "2026-10-13",
@@ -366,6 +375,26 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NY Public Radio CEO steps down after 8 months",
+   "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
+   "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "New York Public Radio CEO steps down after 8 months on job",
+   "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
+   "published": "2026-10-13T13:03:00Z",
+   "gathered": "2026-10-13T13:28:19Z"
+  },
+  {
+   "h": "Cyclist killed by ambulance on Staten Island",
+   "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
+   "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
+   "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
+   "published": "2026-10-13T12:28:16Z",
+   "gathered": "2026-10-13T13:28:19Z"
+  },
+  {
    "h": "Hochul, Blakeman meet in lone governor debate",
    "b": "With the election three weeks away, Gov. Kathy Hochul and Republican Bruce Blakeman face off in their only debate.",
    "date": "2026-10-13",
@@ -380,9 +409,9 @@
    "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
    "date": "2026-10-13",
    "publisher": "Gothamist",
-   "title": "NYC's taxi union teams with Uber, hedge fund to demand healthcare 4 driver deaths",
+   "title": "NYC's taxi union teams with Uber, hedge fund to demand healthcare after 4 driver deaths",
    "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
-   "published": "2026-10-13T10:00:57Z",
+   "published": "2026-10-13T10:00:00Z",
    "gathered": "2026-10-13T12:03:04Z"
   },
   {
@@ -412,8 +441,7 @@
    "publisher": "Gothamist",
    "title": "Mayor Mamdani orders review of NYPD use of force policies",
    "url": "https://gothamist.com/news/mayor-mamdani-orders-review-of-nypd-use-of-force-policies",
-   "published": "2026-10-12T10:00:00Z",
-   "updated": "2026-10-12T17:00:00Z",
+   "published": "2026-10-12T17:00:00Z",
    "gathered": "2026-10-12T15:54:11Z"
   },
   {
@@ -423,23 +451,22 @@
    "publisher": "Gothamist",
    "title": "Company that won $23M NYPD building contract was investigated by LI watchdog",
    "url": "https://gothamist.com/news/company-that-won-23m-nypd-building-contract-was-investigated-by-li-watchdog",
-   "published": "2026-10-12T10:00:00Z",
-   "updated": "2026-10-12T17:01:00Z",
+   "published": "2026-10-12T17:01:00Z",
    "gathered": "2026-10-12T10:09:47Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 63,
    "cond": "Fair",
-   "obs": "13 Oct 07:51 am EDT"
+   "obs": "13 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 73,
-    "text": "Mostly sunny, with a high near 73. Light south wind increasing to 6 to 11 mph in the morning. "
+    "text": "Mostly sunny, with a high near 73. South wind 5 to 11 mph. "
    },
    {
     "name": "Tonight",
