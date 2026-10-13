@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-13T04:10:00Z",
+ "updatedAt": "2026-10-13T07:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -283,16 +283,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 63,
+   "temp": 61,
    "cond": "Fair",
-   "obs": "12 Oct 22:51 pm EDT"
+   "obs": "12 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 61,
-    "text": "Patchy fog after 5am.  Otherwise, partly cloudy, with a low around 61. Northwest wind 3 to 6 mph. "
+    "text": "Patchy fog after 5am.  Otherwise, partly cloudy, with a low around 61. Northwest wind 3 to 5 mph. "
    },
    {
     "name": "Tuesday",
