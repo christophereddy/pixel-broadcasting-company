@@ -27,19 +27,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "14 Oct 03:52 am EDT"
+    "obs": "14 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 87,
      "text": "Sunny, with a high near 87. Calm wind becoming west around 5 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 63,
      "text": "Clear, with a low around 63. Calm wind. "
@@ -60,7 +60,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 84,
-     "text": "Sunny, with a high near 84."
+     "text": "Sunny, with a high near 84. West wind 5 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday Night",
@@ -82,7 +82,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -103,19 +103,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": " Fog/Mist",
-    "obs": "14 Oct 01:54 am EDT"
+    "temp": 62,
+    "cond": "Overcast",
+    "obs": "14 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 75,
      "text": "A chance of showers after 3pm.  Partly sunny, with a high near 75. West wind 7 to 10 mph, with gusts as high as 23 mph.  Chance of precipitation is 30%."
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 50,
      "text": "Mostly clear, with a low around 50. Northwest wind 8 to 10 mph. "
@@ -130,7 +130,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 47,
-     "text": "A chance of showers, mainly after 4am.  Partly cloudy, with a low around 47. Light south wind.  Chance of precipitation is 30%."
+     "text": "A chance of showers, mainly after 4am.  Increasing clouds, with a low around 47. Light south wind.  Chance of precipitation is 30%."
     },
     {
      "name": "Friday",
@@ -142,7 +142,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 43. West wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%."
+     "text": "Showers likely and possibly a thunderstorm before 1am, then a chance of showers.  Mostly cloudy, with a low around 43. West wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%."
     }
    ]
   },
@@ -158,7 +158,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -200,21 +200,15 @@
   "weather": {
    "now": {
     "temp": 66,
-    "cond": "Overcast",
-    "obs": "14 Oct 02:53 am CDT"
+    "cond": " Fog/Mist",
+    "obs": "14 Oct 04:53 am CDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 62,
-     "text": "Showers likely and possibly a thunderstorm before 4am, then a chance of showers and thunderstorms after 4am.  Cloudy, with a low around 62. North northeast wind around 5 mph.  Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 62,
-     "text": "A 30 percent chance of showers, mainly before 10am.  Mostly cloudy, with a temperature falling to around 60 by 5pm. North northeast wind 10 to 15 mph. "
+     "text": "A chance of showers and thunderstorms before 10am, then a slight chance of showers between 10am and 1pm.  Mostly cloudy, with a temperature falling to around 60 by 5pm. North northeast wind 10 to 15 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Wednesday Night",
@@ -239,6 +233,12 @@
      "kind": "high",
      "temp": 56,
      "text": "A 30 percent chance of rain, mainly before 1pm.  Partly sunny, with a high near 56. Breezy. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "Partly cloudy, with a low around 44. Breezy. "
     }
    ]
   },
@@ -254,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -267,17 +267,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Mostly Cloudy",
-    "obs": "13 Oct 22:58 pm MDT"
+    "temp": 48,
+    "cond": "Overcast",
+    "obs": "14 Oct 02:58 am MDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Showers.  Low around 43. East northeast wind around 7 mph.  Chance of precipitation is 80%."
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -307,6 +301,12 @@
      "kind": "high",
      "temp": 61,
      "text": "Sunny, with a high near 61."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34."
     }
    ]
   },
@@ -322,7 +322,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -393,12 +393,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58. North northeast wind around 5 mph. "
-    },
-    {
      "name": "Wednesday",
      "kind": "high",
      "temp": 81,
@@ -427,6 +421,12 @@
      "kind": "high",
      "temp": 92,
      "text": "Sunny, with a high near 92."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 70,
+     "text": "Mostly clear, with a low around 70."
     }
    ]
   },
@@ -442,7 +442,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -500,65 +500,54 @@
     "publisher": "Gothamist",
     "title": "NYC Council, Mayor Mamdani agree to end Central Park's carriage horse industry",
     "url": "https://gothamist.com/news/nyc-council-set-to-ban-central-parks-carriage-horse-industry",
-    "published": "2026-10-14T01:04:00Z",
+    "published": "2026-10-13T18:37:00Z",
+    "updated": "2026-10-14T01:04:00Z",
     "gathered": "2026-10-13T19:27:05Z"
    },
    {
     "h": "22 NYC food pantries to offer pet food",
     "b": "Starting Monday, 22 city-funded food pantries will provide dog and cat food using about $500,000 in city funding.",
     "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "22 New York City food pantries to start offering pet food",
     "url": "https://gothamist.com/news/22-nyc-food-pantries-to-start-offering-pet-food",
-    "published": "2026-10-13T18:01:00Z",
     "gathered": "2026-10-13T19:27:05Z"
    },
    {
     "h": "NY Public Radio CEO steps down after 8 months",
     "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
     "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "New York Public Radio CEO steps down after 8 months on job",
     "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
-    "published": "2026-10-13T13:03:00Z",
     "gathered": "2026-10-13T13:28:19Z"
    },
    {
     "h": "Cyclist killed by ambulance on Staten Island",
     "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
     "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
     "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
-    "published": "2026-10-13T12:28:16Z",
     "gathered": "2026-10-13T13:28:19Z"
    },
    {
     "h": "Taxi union, Uber seek driver healthcare",
     "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
     "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "NYC's taxi union teams with Uber, private equity firm to demand healthcare after 4 driver deaths",
     "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
-    "published": "2026-10-13T19:27:00Z",
     "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 67,
     "cond": "Fair",
-    "obs": "14 Oct 03:51 am EDT"
+    "obs": "14 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 78,
      "text": "A slight chance of showers between 11am and 2pm.  Mostly sunny, with a high near 78. West wind 7 to 10 mph.  Chance of precipitation is 20%."
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 59. North wind 11 to 14 mph. "
@@ -579,13 +568,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 73,
-     "text": "Showers.  High near 73. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers, with thunderstorms also possible after 5pm.  High near 73. Southwest wind 13 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Showers, mainly before 8pm.  Low around 48. Breezy.  Chance of precipitation is 80%."
+     "text": "Showers, mainly before 8pm.  Low around 48. Breezy.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -601,7 +590,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -613,6 +602,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "France passes gender-violence bill",
+    "b": "The National Assembly overwhelmingly passed a comprehensive bill against gender-based and sexual violence. It now goes to the more conservative Senate.",
+    "date": "2026-10-13",
+    "publisher": "The Local France",
+    "title": "'Prison for d**k pics' - France passes wide-ranging gender-violence bill",
+    "url": "https://www.thelocal.fr/20261014/prison-for-dk-pics-france-passes-wide-ranging-gender-violence-bill",
+    "published": "2026-10-14T09:10:35Z",
+    "updated": "2026-10-14T09:10:37Z",
+    "gathered": "2026-10-14T10:10:11Z"
+   },
    {
     "h": "Lescure denies France in debt 'snowball'",
     "b": "Economy Minister Roland Lescure denied France is trapped in a debt 'snowball' as he pressed opposition parties to pass the 2027 budget.",
@@ -680,7 +680,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "goodnews": []
  },
  {
@@ -694,11 +694,7 @@
     "h": "Record 2 million green crabs caught in WA",
     "b": "More than 2 million invasive European green crabs were trapped in Washington from July 2025 to June 2026, more than all previous years combined.",
     "date": "2026-10-13",
-    "publisher": "KUOW",
-    "title": "Two million invasive green crabs captured along Washington state shorelines",
     "url": "https://www.kuow.org/environment/2026-10-13/two-million-invasive-green-crabs-captured-along-washington-state-shorelines",
-    "published": "2026-10-14T00:41:00Z",
-    "updated": "2026-10-14T00:57:58Z",
     "gathered": "2026-10-14T02:04:20Z"
    },
    {
@@ -712,12 +708,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Mostly cloudy, with a low around 54. South southeast wind around 7 mph. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -747,6 +737,12 @@
      "kind": "high",
      "temp": 73,
      "text": "Mostly sunny, with a high near 73."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 55,
+     "text": "A 20 percent chance of rain after 11pm.  Mostly cloudy, with a low around 55."
     }
    ]
   },
@@ -762,7 +758,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T10:10:00Z",
+  "updatedAt": "2026-10-14T13:19:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

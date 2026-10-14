@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T10:10:00Z",
+ "updatedAt": "2026-10-14T13:19:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,31 @@
  },
  "world": [
   {
-   "h": "Iran war: Saudi coalition hits Houthi sites",
-   "b": "Al Jazeera live updates: the Saudi-led coalition hits key Houthi sites, and an Aramco building is struck in Dhahran.",
+   "h": "Iran war: Saudis intercept missile aimed at Riyadh",
+   "b": "Al Jazeera live updates: Saudi Arabia intercepts a Houthi missile targeting Riyadh.",
    "date": "2026-10-14",
    "publisher": "Al Jazeera",
-   "title": "Saudi coalition hits key Houthi sites; Aramco building struck in Dhahran",
+   "title": "Saudi Arabia intercepts Houthi missile targeting Riyadh",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east",
    "gathered": "2026-10-14T07:54:55Z"
+  },
+  {
+   "h": "Russian strikes kill 6 in Ukraine, cut power",
+   "b": "Russian air attacks killed at least six people and left hundreds of thousands without power, days after Trump announced an 'energy ceasefire'.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "‘Massive’ Russian attack on Ukraine kills at least six, damages power sites",
+   "url": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv",
+   "gathered": "2026-10-14T10:10:11Z"
+  },
+  {
+   "h": "Trump: Greenland oil, gas exploration to begin",
+   "b": "Trump said on Truth Social that 'massive' oil, gas and mineral exploration is set to begin in Greenland, a self-governing Danish territory.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "Trump says oil, gas and mineral exploration to begin in Greenland",
+   "url": "https://www.aljazeera.com/news/2026/10/14/trump-says-oil-gas-and-mineral-exploration-to-begin-in-greenland",
+   "gathered": "2026-10-14T10:10:11Z"
   },
   {
    "h": "Pope Leo diagnosed with lung cancer",
@@ -26,8 +44,6 @@
    "h": "UN sees 'window' for peace in eastern DR Congo",
    "b": "UN Great Lakes envoy Huang Xia told the Security Council that US- and Qatar-led peace processes have made 'notable progress' in eastern DR Congo.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "UN official says ‘window of opportunity’ for peace in DR Congo",
    "url": "https://www.aljazeera.com/news/2026/10/14/un-official-says-window-of-opportunity-for-peace-in-dr-congo",
    "gathered": "2026-10-14T04:10:35Z"
   },
@@ -42,8 +58,6 @@
    "h": "Cholera cases triple in Yemen, WHO warns",
    "b": "Suspected cholera cases in Yemen tripled in three weeks, from 217 to 647 a week, as fighting drove more than 200,000 people into unsanitary camps, the WHO said.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "Cholera cases surge in Yemen as conflict intensifies, WHO says",
    "url": "https://www.aljazeera.com/news/2026/10/13/cholera-cases-surge-in-yemen-as-conflict-intensifies-who-says",
    "gathered": "2026-10-13T19:27:05Z"
   },
@@ -170,13 +184,22 @@
  ],
  "international": [
   {
+   "h": "Namibia meat markets hit by cattle disease",
+   "b": "A cattle disease outbreak has emptied stalls at Windhoek's largest meat market as the EU suspends several Namibian meat imports.",
+   "date": "2026-10-14",
+   "place": "Windhoek, Namibia",
+   "tz": "Africa/Windhoek",
+   "publisher": "Al Jazeera",
+   "title": "Namibia battles cattle disease outbreak as EU suspends several meat imports",
+   "url": "https://www.aljazeera.com/news/2026/10/14/namibia-battles-cattle-disease-outbreak-as-eu-suspends-several-meat-imports",
+   "gathered": "2026-10-14T10:10:11Z"
+  },
+  {
    "h": "China, North Korea to open Yalu River bridge",
    "b": "The New Yalu River Bridge opens to traffic Thursday, Xinhua reports. China finished its side in 2014, but North Korea left its side unfinished for years.",
    "date": "2026-10-14",
    "place": "Dandong, China",
    "tz": "Asia/Shanghai",
-   "publisher": "Al Jazeera",
-   "title": "China and North Korea to open New Yalu River Bridge, state media reports",
    "url": "https://www.aljazeera.com/news/2026/10/14/china-and-north-korea-to-open-new-yalu-river-bridge-state-media-reports",
    "gathered": "2026-10-14T07:54:55Z"
   },
@@ -186,8 +209,6 @@
    "date": "2026-10-14",
    "place": "Jabal al-Baba, West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "‘Like we don’t exist’: Palestinians in West Bank denied say in Israel vote",
    "url": "https://www.aljazeera.com/features/2026/10/14/like-we-dont-exist-palestinians-in-west-bank-denied-say-in-israel-vote",
    "gathered": "2026-10-14T07:54:55Z"
   },
@@ -345,8 +366,6 @@
    "h": "Singapore economy grows 5.4% on AI boom",
    "b": "Singapore's GDP grew 5.4% year-on-year in the third quarter, down from 6.2% in the second, advance estimates showed.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "Singapore’s economy grows more than 5 percent amid AI boom",
    "url": "https://www.aljazeera.com/economy/2026/10/14/singapores-economy-grows-more-than-5-percent-amid-ai-boom",
    "gathered": "2026-10-14T07:54:55Z"
   },
@@ -524,65 +543,54 @@
    "publisher": "Gothamist",
    "title": "NYC Council, Mayor Mamdani agree to end Central Park's carriage horse industry",
    "url": "https://gothamist.com/news/nyc-council-set-to-ban-central-parks-carriage-horse-industry",
-   "published": "2026-10-14T01:04:00Z",
+   "published": "2026-10-13T18:37:00Z",
+   "updated": "2026-10-14T01:04:00Z",
    "gathered": "2026-10-13T19:27:05Z"
   },
   {
    "h": "22 NYC food pantries to offer pet food",
    "b": "Starting Monday, 22 city-funded food pantries will provide dog and cat food using about $500,000 in city funding.",
    "date": "2026-10-13",
-   "publisher": "Gothamist",
-   "title": "22 New York City food pantries to start offering pet food",
    "url": "https://gothamist.com/news/22-nyc-food-pantries-to-start-offering-pet-food",
-   "published": "2026-10-13T18:01:00Z",
    "gathered": "2026-10-13T19:27:05Z"
   },
   {
    "h": "NY Public Radio CEO steps down after 8 months",
    "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
    "date": "2026-10-13",
-   "publisher": "Gothamist",
-   "title": "New York Public Radio CEO steps down after 8 months on job",
    "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
-   "published": "2026-10-13T13:03:00Z",
    "gathered": "2026-10-13T13:28:19Z"
   },
   {
    "h": "Cyclist killed by ambulance on Staten Island",
    "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
    "date": "2026-10-13",
-   "publisher": "Gothamist",
-   "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
    "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
-   "published": "2026-10-13T12:28:16Z",
    "gathered": "2026-10-13T13:28:19Z"
   },
   {
    "h": "Taxi union, Uber seek driver healthcare",
    "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
    "date": "2026-10-13",
-   "publisher": "Gothamist",
-   "title": "NYC's taxi union teams with Uber, private equity firm to demand healthcare after 4 driver deaths",
    "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
-   "published": "2026-10-13T19:27:00Z",
    "gathered": "2026-10-13T12:03:04Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 69,
+   "temp": 67,
    "cond": "Fair",
-   "obs": "14 Oct 03:51 am EDT"
+   "obs": "14 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Wednesday",
+    "name": "Today",
     "kind": "high",
     "temp": 78,
     "text": "A slight chance of showers between 11am and 2pm.  Mostly sunny, with a high near 78. West wind 7 to 10 mph.  Chance of precipitation is 20%."
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 59,
     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 59. North wind 11 to 14 mph. "
@@ -603,13 +611,13 @@
     "name": "Friday",
     "kind": "high",
     "temp": 73,
-    "text": "Showers.  High near 73. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "text": "Showers, with thunderstorms also possible after 5pm.  High near 73. Southwest wind 13 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 48,
-    "text": "Showers, mainly before 8pm.  Low around 48. Breezy.  Chance of precipitation is 80%."
+    "text": "Showers, mainly before 8pm.  Low around 48. Breezy.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
    }
   ]
  },
