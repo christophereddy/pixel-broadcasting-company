@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T13:19:00Z",
+ "updatedAt": "2026-10-14T16:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,20 +7,29 @@
  },
  "world": [
   {
-   "h": "Iran war: Saudis intercept missile aimed at Riyadh",
-   "b": "Al Jazeera live updates: Saudi Arabia intercepts a Houthi missile targeting Riyadh.",
+   "h": "Iran war: Hunger surges in Yemen",
+   "b": "Al Jazeera reports hunger is surging in Yemen as heavy fighting overwhelms hospitals.",
    "date": "2026-10-14",
    "publisher": "Al Jazeera",
-   "title": "Saudi Arabia intercepts Houthi missile targeting Riyadh",
+   "title": "Hunger surging in Yemen as heavy fighting overwhelms hospitals",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east",
    "gathered": "2026-10-14T07:54:55Z"
+  },
+  {
+   "h": "Israeli strike kills woman in Gaza City",
+   "b": "An Israeli air strike on an apartment block in Gaza City's Al-Rimal neighbourhood killed Reem Asaad Awad, 33, and wounded two others early Wednesday, hospital officials said.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "Israeli air strike kills Palestinian woman in Gaza City",
+   "url": "https://www.aljazeera.com/news/2026/10/14/israeli-air-strike-kills-palestinian-woman-in-gaza-city",
+   "gathered": "2026-10-14T13:56:42Z"
   },
   {
    "h": "Russian strikes kill 6 in Ukraine, cut power",
    "b": "Russian air attacks killed at least six people and left hundreds of thousands without power, days after Trump announced an 'energy ceasefire'.",
    "date": "2026-10-14",
    "publisher": "Al Jazeera",
-   "title": "‘Massive’ Russian attack on Ukraine kills at least six, damages power sites",
+   "title": "‘Massive’ Russian attack on Ukraine kills at least 9, damages power sites",
    "url": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv",
    "gathered": "2026-10-14T10:10:11Z"
   },
@@ -99,6 +108,28 @@
  ],
  "national": [
   {
+   "h": "ICE detained domestic violence victims",
+   "b": "ProPublica reports that women who said they were victims, not abusers, were held for months at an immigration detention center in west Michigan as protections for abuse victims eroded.",
+   "date": "2026-10-14",
+   "publisher": "ProPublica",
+   "title": "These Women Were Trying to Escape Domestic Abuse. ICE Detained Them Instead.",
+   "url": "https://www.propublica.org/article/domestic-violence-immigrant-victims-ice-detention",
+   "published": "2026-10-14T11:42:43Z",
+   "updated": "2026-10-14T13:06:55Z",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
+   "h": "Data centers clash with NM, El Paso climate plans",
+   "b": "Data center projects in New Mexico and El Paso are moving forward even though both places recently adopted plans to sharply cut greenhouse gas emissions, ProPublica reports.",
+   "date": "2026-10-14",
+   "publisher": "ProPublica",
+   "title": "New Mexico and El Paso Spent Millions on Climate Plans. Three New Data Centers Could Undo Them.",
+   "url": "https://www.propublica.org/article/data-centers-texas-new-mexico-greenhouse-gas-emissions",
+   "published": "2026-10-14T10:00:00Z",
+   "updated": "2026-10-14T10:00:03Z",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
    "h": "CVS to pay $315M to settle opioid case",
    "b": "CVS agreed to pay $315 million to settle a 2024 Justice Department lawsuit over medically unnecessary opioid prescriptions.",
    "date": "2026-10-13",
@@ -153,11 +184,7 @@
    "h": "Judge blocks White House press ban for now",
    "b": "A federal judge ruled Trump cannot bar more than 70 journalists from CNN, MS NOW and Politico from the White House over their coverage, at least until a trial.",
    "date": "2026-10-13",
-   "publisher": "KUOW",
-   "title": "CNN, MS NOW and Politico prevail against White House — for now",
    "url": "https://www.kuow.org/npr-news/2026-10-14/cnn-ms-now-and-politico-prevail-against-white-house-for-now",
-   "published": "2026-10-14T07:16:02Z",
-   "updated": "2026-10-14T07:26:37Z",
    "gathered": "2026-10-14T07:54:55Z"
   },
   {
@@ -184,13 +211,33 @@
  ],
  "international": [
   {
+   "h": "Iraq PM vows no attacks on Saudis from Iraq",
+   "b": "On his first visit to Riyadh since taking office in May, Iraqi PM Ali Faleh al-Zaidi assured Crown Prince Mohammed bin Salman that Iraqi territory will not be used to launch attacks on Saudi Arabia.",
+   "date": "2026-10-14",
+   "place": "Riyadh",
+   "tz": "Asia/Riyadh",
+   "publisher": "Al Jazeera",
+   "title": "Iraq’s PM tells Saudi crown prince Iraqi territory will not be used for attacks",
+   "url": "https://www.aljazeera.com/news/2026/10/14/iraq-pm-tells-saudi-crown-prince-iraqi-territory-wont-be-used-for-attacks",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
+   "h": "Settlers set fire to West Bank mosque",
+   "b": "Israeli settlers set fire to a mosque, an olive tree and a vehicle while raiding the village of Mikhmas early Wednesday, Wafa reported, as Israeli forces raided villages across the territory.",
+   "date": "2026-10-14",
+   "place": "Mikhmas, West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Settlers set fire to mosque in West Bank as Israeli forces raid villages",
+   "url": "https://www.aljazeera.com/news/2026/10/14/settlers-set-fire-to-mosque-in-west-bank-as-israeli-forces-raid-villages",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
    "h": "Namibia meat markets hit by cattle disease",
    "b": "A cattle disease outbreak has emptied stalls at Windhoek's largest meat market as the EU suspends several Namibian meat imports.",
    "date": "2026-10-14",
    "place": "Windhoek, Namibia",
    "tz": "Africa/Windhoek",
-   "publisher": "Al Jazeera",
-   "title": "Namibia battles cattle disease outbreak as EU suspends several meat imports",
    "url": "https://www.aljazeera.com/news/2026/10/14/namibia-battles-cattle-disease-outbreak-as-eu-suspends-several-meat-imports",
    "gathered": "2026-10-14T10:10:11Z"
   },
@@ -218,8 +265,6 @@
    "date": "2026-10-14",
    "place": "Hamburg, Germany",
    "tz": "Europe/Berlin",
-   "publisher": "Al Jazeera",
-   "title": "Ukrainian ex-officer goes on trial in Germany over Nord Stream blasts",
    "url": "https://www.aljazeera.com/news/2026/10/14/ukrainian-ex-officer-goes-on-trial-in-germany-over-nord-stream-blasts",
    "gathered": "2026-10-14T04:10:35Z"
   },
@@ -247,8 +292,6 @@
    "date": "2026-10-14",
    "place": "Bogotá, Colombia",
    "tz": "America/Bogota",
-   "publisher": "Al Jazeera",
-   "title": "Colombia peace tribunal charges ex-FARC members with anti-Indigenous crimes",
    "url": "https://www.aljazeera.com/news/2026/10/14/colombia-peace-tribunal-charges-ex-farc-members-with-anti-indigenous-crimes",
    "gathered": "2026-10-14T02:04:20Z"
   },
@@ -363,6 +406,16 @@
  ],
  "business": [
   {
+   "h": "Inflation rises to 3.7% in September",
+   "b": "Consumer prices rose 3.7% from a year earlier, up from 3.4% in August, with a 0.6% monthly jump, the biggest in five months, as the Iran war keeps gas prices high.",
+   "date": "2026-10-14",
+   "publisher": "PBS NewsHour",
+   "title": "Inflation worsened last month to 3.7% as midterm elections near",
+   "url": "https://www.pbs.org/newshour/economy/inflation-worsened-last-month-to-3-7-as-midterm-elections-near",
+   "published": "2026-10-14T13:37:33Z",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
    "h": "Singapore economy grows 5.4% on AI boom",
    "b": "Singapore's GDP grew 5.4% year-on-year in the third quarter, down from 6.2% in the second, advance estimates showed.",
    "date": "2026-10-14",
@@ -380,8 +433,6 @@
    "h": "Big banks open earnings season mixed",
    "b": "JPMorgan Chase missed expectations as JPMorgan, Wells Fargo, Goldman Sachs and Citigroup reported. Bank of America and Morgan Stanley report Wednesday.",
    "date": "2026-10-13",
-   "publisher": "Marketplace",
-   "title": "\"Can't go to the moon every quarter\": Big banks' bumpy start to earning season",
    "url": "https://www.marketplace.org/story/2026/10/13/big-banks-kick-off-thirdquarter-earnings-season",
    "gathered": "2026-10-13T23:22:46Z"
   },
@@ -389,8 +440,6 @@
    "h": "UnitedHealth profits rise as revenue falls",
    "b": "UnitedHealth's third-quarter revenue declined after losing Medicaid and employer plan members, but its profits went up.",
    "date": "2026-10-13",
-   "publisher": "Marketplace",
-   "title": "UnitedHealth stopped insuring some people. Its profits rose.",
    "url": "https://www.marketplace.org/story/2026/10/13/people-lost-insurance-unitedhealths-profits-rose",
    "gathered": "2026-10-13T23:22:46Z"
   },
@@ -398,8 +447,6 @@
    "h": "Social Security raise announced Wednesday",
    "b": "The Social Security Administration announces next year's cost-of-living adjustment Wednesday morning. AARP predicts a 3.6% increase for 2027.",
    "date": "2026-10-13",
-   "publisher": "Marketplace",
-   "title": "Social Security payments to increase — slightly",
    "url": "https://www.marketplace.org/story/2026/10/13/social-security-payments-to-increase-slightly",
    "gathered": "2026-10-13T16:13:43Z"
   }
@@ -497,6 +544,36 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Hit-and-run suspect caught fleeing to Uzbekistan",
+   "b": "Police arrested Sobirjon Abdurazakov, 22, at the airport as he tried to leave the country after a deadly Brooklyn crash, the NYPD says.",
+   "date": "2026-10-14",
+   "publisher": "Gothamist",
+   "title": "Hit-and-run driver arrested trying to flee to Uzbekistan after deadly crash, NYPD says",
+   "url": "https://gothamist.com/news/hit-and-run-driver-arrested-trying-to-flee-to-uzbekistan-after-deadly-crash-nypd-says",
+   "published": "2026-10-14T12:25:21Z",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
+   "h": "Measles outbreak bigger than state count",
+   "b": "Health officials in Otsego and Seneca counties say many more measles cases are going unreported than the state dashboard shows.",
+   "date": "2026-10-14",
+   "publisher": "Gothamist",
+   "title": "NY measles outbreak more widespread than official count, health officials say",
+   "url": "https://gothamist.com/news/ny-measles-outbreak-more-widespread-than-official-count-health-officials-say",
+   "published": "2026-10-14T12:00:56Z",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
+   "h": "Bronx casino to anchor Ferry Point Park makeover",
+   "b": "Bally's Bronx will sit in the middle of a $160 million Ferry Point Park makeover with new playgrounds and athletic fields; the community board weighs in Thursday.",
+   "date": "2026-10-14",
+   "publisher": "Gothamist",
+   "title": "The Bronx is getting a new casino and a reimagined Ferry Point Park, too",
+   "url": "https://gothamist.com/news/the-bronx-is-getting-a-new-casino-and-a-reimagined-ferry-point-park-too",
+   "published": "2026-10-14T10:30:54Z",
+   "gathered": "2026-10-14T13:56:42Z"
+  },
+  {
    "h": "Hochul, Blakeman spar in governor debate",
    "b": "Gov. Kathy Hochul and Republican Bruce Blakeman clashed over immigration, Trump and the cost of living in their 60-minute debate Tuesday night.",
    "date": "2026-10-13",
@@ -543,51 +620,62 @@
    "publisher": "Gothamist",
    "title": "NYC Council, Mayor Mamdani agree to end Central Park's carriage horse industry",
    "url": "https://gothamist.com/news/nyc-council-set-to-ban-central-parks-carriage-horse-industry",
-   "published": "2026-10-13T18:37:00Z",
-   "updated": "2026-10-14T01:04:00Z",
+   "published": "2026-10-14T01:04:00Z",
    "gathered": "2026-10-13T19:27:05Z"
   },
   {
    "h": "22 NYC food pantries to offer pet food",
    "b": "Starting Monday, 22 city-funded food pantries will provide dog and cat food using about $500,000 in city funding.",
    "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "22 New York City food pantries to start offering pet food",
    "url": "https://gothamist.com/news/22-nyc-food-pantries-to-start-offering-pet-food",
+   "published": "2026-10-13T18:01:00Z",
    "gathered": "2026-10-13T19:27:05Z"
   },
   {
    "h": "NY Public Radio CEO steps down after 8 months",
    "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
    "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "New York Public Radio CEO steps down after 8 months on job",
    "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
+   "published": "2026-10-13T13:03:00Z",
    "gathered": "2026-10-13T13:28:19Z"
   },
   {
    "h": "Cyclist killed by ambulance on Staten Island",
    "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
    "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
    "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
+   "published": "2026-10-13T12:28:16Z",
    "gathered": "2026-10-13T13:28:19Z"
   },
   {
    "h": "Taxi union, Uber seek driver healthcare",
    "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
    "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "NYC's taxi union teams with Uber, private equity firm to demand healthcare after 4 driver deaths",
    "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
+   "published": "2026-10-13T19:27:00Z",
    "gathered": "2026-10-13T12:03:04Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 67,
+   "temp": 71,
    "cond": "Fair",
-   "obs": "14 Oct 05:51 am EDT"
+   "obs": "14 Oct 09:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 78,
-    "text": "A slight chance of showers between 11am and 2pm.  Mostly sunny, with a high near 78. West wind 7 to 10 mph.  Chance of precipitation is 20%."
+    "text": "A slight chance of showers between 11am and 2pm.  Partly sunny, with a high near 78. West wind 8 to 10 mph.  Chance of precipitation is 20%."
    },
    {
     "name": "Tonight",

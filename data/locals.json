@@ -27,9 +27,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 73,
     "cond": "Fair",
-    "obs": "14 Oct 05:52 am EDT"
+    "obs": "14 Oct 09:52 am EDT"
    },
    "periods": [
     {
@@ -82,7 +82,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -103,16 +103,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "cond": "Overcast",
-    "obs": "14 Oct 05:54 am EDT"
+    "temp": 71,
+    "cond": "A Few Clouds",
+    "obs": "14 Oct 09:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 75,
-     "text": "A chance of showers after 3pm.  Partly sunny, with a high near 75. West wind 7 to 10 mph, with gusts as high as 23 mph.  Chance of precipitation is 30%."
+     "text": "A chance of showers after 3pm.  Partly sunny, with a high near 75. West wind around 10 mph, with gusts as high as 23 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -158,7 +158,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -170,11 +170,22 @@
   },
   "local": [
    {
+    "h": "Woman reports assault at UChicago frat party",
+    "b": "A 21-year-old woman told police she was sexually assaulted during a party at the Alpha Epsilon Pi house near campus; two friends said they intervened.",
+    "date": "2026-10-14",
+    "publisher": "WBEZ",
+    "title": "Group cheered as woman was sexually assaulted at University of Chicago frat house, police report says",
+    "url": "https://www.wbez.org/crime/2026/10/14/university-of-chicago-sexual-assault-alpha-epsilon-pi",
+    "published": "2026-10-14T13:54:58Z",
+    "updated": "2026-10-14T13:54:58Z",
+    "gathered": "2026-10-14T13:56:42Z"
+   },
+   {
     "h": "Pritzker, Bailey meet in only debate",
     "b": "Gov. JB Pritzker and Republican Darren Bailey faced off Tuesday night in their only debate before their Nov. 3 rematch.",
     "date": "2026-10-13",
     "publisher": "WBEZ",
-    "title": "The only gubernatorial debate between Gov. Pritzker and Darren Bailey is tonight. Here's how to watch.",
+    "title": "6 takeaways from the only gubernatorial debate between Gov. Pritzker and Darren Bailey",
     "url": "https://www.wbez.org/government-politics/elections/2026/10/13/watch-illinois-gov-debate-jb-pritzker-darren-bailey-takeaways",
     "published": "2026-10-14T01:15:07Z",
     "updated": "2026-10-14T01:15:07Z",
@@ -184,8 +195,6 @@
     "h": "Hotel workers strike; thousands may join",
     "b": "Workers at six Chicago hotels walked off the job days before the Chicago Marathon, and workers at 40 more UNITE HERE Local 1 hotels have authorized a strike.",
     "date": "2026-10-13",
-    "publisher": "WBEZ",
-    "title": "Hundreds of Chicago's hotel workers are on strike. Thousands poised to join",
     "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/13/hundreds-of-chicagos-hotel-workers-are-on-strike-thousands-poised-to-join",
     "gathered": "2026-10-13T19:27:05Z"
    },
@@ -199,19 +208,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": " Fog/Mist",
-    "obs": "14 Oct 04:53 am CDT"
+    "temp": 63,
+    "cond": "Overcast",
+    "obs": "14 Oct 08:53 am CDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
-     "temp": 62,
-     "text": "A chance of showers and thunderstorms before 10am, then a slight chance of showers between 10am and 1pm.  Mostly cloudy, with a temperature falling to around 60 by 5pm. North northeast wind 10 to 15 mph.  Chance of precipitation is 30%."
+     "temp": 64,
+     "text": "A 40 percent chance of showers, mainly before 11am.  Mostly cloudy, with a temperature falling to around 61 by 4pm. North northeast wind around 15 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 58,
      "text": "A 20 percent chance of rain after 4am.  Mostly cloudy, with a low around 58. Breezy, with a north northeast wind 15 to 20 mph. "
@@ -220,7 +229,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 60,
-     "text": "Rain likely, then rain and possibly a thunderstorm after 1pm.  High near 60. East southeast wind 10 to 15 mph.  Chance of precipitation is 100%."
+     "text": "Rain likely, then rain and possibly a thunderstorm after 1pm.  High near 60. East southeast wind 10 to 15 mph.  Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday Night",
@@ -232,7 +241,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 56,
-     "text": "A 30 percent chance of rain, mainly before 1pm.  Partly sunny, with a high near 56. Breezy. "
+     "text": "A 30 percent chance of rain, mainly before 1pm.  Partly sunny, with a high near 56. Breezy, with a northwest wind 20 to 25 mph, with gusts as high as 40 mph. "
     },
     {
      "name": "Friday Night",
@@ -254,7 +263,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -267,19 +276,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Overcast",
-    "obs": "14 Oct 02:58 am MDT"
+    "temp": 45,
+    "cond": " Light Drizzle Fog/Mist",
+    "obs": "14 Oct 06:58 am MDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 49,
      "text": "Showers.  High near 49. East northeast wind 7 to 9 mph, with gusts as high as 16 mph.  Chance of precipitation is 100%."
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Rain, mainly before midnight.  Low around 39. North wind 7 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%."
@@ -300,7 +309,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. Calm wind becoming southeast around 5 mph. "
     },
     {
      "name": "Friday Night",
@@ -322,7 +331,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -370,11 +379,7 @@
     "h": "465 Orange County workers go on strike",
     "b": "More than 465 Orange County workers from Teamsters Local 952 walked off the job, which could delay road and flood channel maintenance and landfill operations.",
     "date": "2026-10-13",
-    "publisher": "LAist",
-    "title": "Hundreds of Orange County workers are on strike starting today. Here’s what we know",
     "url": "https://laist.com/news/orange-county-workers-strike",
-    "published": "2026-10-13T16:32:02Z",
-    "updated": "2026-10-13T18:11:59Z",
     "gathered": "2026-10-13T19:27:05Z"
    },
    {
@@ -393,13 +398,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 81,
      "text": "Sunny, with a high near 81. North wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 61,
      "text": "Clear, with a low around 61. West southwest wind 5 to 10 mph becoming north northeast after midnight. "
@@ -420,7 +425,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 92,
-     "text": "Sunny, with a high near 92."
+     "text": "Sunny, with a high near 92. North northeast wind 10 to 15 mph. "
     },
     {
      "name": "Friday Night",
@@ -442,7 +447,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -453,6 +458,36 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Hit-and-run suspect caught fleeing to Uzbekistan",
+    "b": "Police arrested Sobirjon Abdurazakov, 22, at the airport as he tried to leave the country after a deadly Brooklyn crash, the NYPD says.",
+    "date": "2026-10-14",
+    "publisher": "Gothamist",
+    "title": "Hit-and-run driver arrested trying to flee to Uzbekistan after deadly crash, NYPD says",
+    "url": "https://gothamist.com/news/hit-and-run-driver-arrested-trying-to-flee-to-uzbekistan-after-deadly-crash-nypd-says",
+    "published": "2026-10-14T12:25:21Z",
+    "gathered": "2026-10-14T13:56:42Z"
+   },
+   {
+    "h": "Measles outbreak bigger than state count",
+    "b": "Health officials in Otsego and Seneca counties say many more measles cases are going unreported than the state dashboard shows.",
+    "date": "2026-10-14",
+    "publisher": "Gothamist",
+    "title": "NY measles outbreak more widespread than official count, health officials say",
+    "url": "https://gothamist.com/news/ny-measles-outbreak-more-widespread-than-official-count-health-officials-say",
+    "published": "2026-10-14T12:00:56Z",
+    "gathered": "2026-10-14T13:56:42Z"
+   },
+   {
+    "h": "Bronx casino to anchor Ferry Point Park makeover",
+    "b": "Bally's Bronx will sit in the middle of a $160 million Ferry Point Park makeover with new playgrounds and athletic fields; the community board weighs in Thursday.",
+    "date": "2026-10-14",
+    "publisher": "Gothamist",
+    "title": "The Bronx is getting a new casino and a reimagined Ferry Point Park, too",
+    "url": "https://gothamist.com/news/the-bronx-is-getting-a-new-casino-and-a-reimagined-ferry-point-park-too",
+    "published": "2026-10-14T10:30:54Z",
+    "gathered": "2026-10-14T13:56:42Z"
+   },
    {
     "h": "Hochul, Blakeman spar in governor debate",
     "b": "Gov. Kathy Hochul and Republican Bruce Blakeman clashed over immigration, Trump and the cost of living in their 60-minute debate Tuesday night.",
@@ -500,51 +535,62 @@
     "publisher": "Gothamist",
     "title": "NYC Council, Mayor Mamdani agree to end Central Park's carriage horse industry",
     "url": "https://gothamist.com/news/nyc-council-set-to-ban-central-parks-carriage-horse-industry",
-    "published": "2026-10-13T18:37:00Z",
-    "updated": "2026-10-14T01:04:00Z",
+    "published": "2026-10-14T01:04:00Z",
     "gathered": "2026-10-13T19:27:05Z"
    },
    {
     "h": "22 NYC food pantries to offer pet food",
     "b": "Starting Monday, 22 city-funded food pantries will provide dog and cat food using about $500,000 in city funding.",
     "date": "2026-10-13",
+    "publisher": "Gothamist",
+    "title": "22 New York City food pantries to start offering pet food",
     "url": "https://gothamist.com/news/22-nyc-food-pantries-to-start-offering-pet-food",
+    "published": "2026-10-13T18:01:00Z",
     "gathered": "2026-10-13T19:27:05Z"
    },
    {
     "h": "NY Public Radio CEO steps down after 8 months",
     "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
     "date": "2026-10-13",
+    "publisher": "Gothamist",
+    "title": "New York Public Radio CEO steps down after 8 months on job",
     "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
+    "published": "2026-10-13T13:03:00Z",
     "gathered": "2026-10-13T13:28:19Z"
    },
    {
     "h": "Cyclist killed by ambulance on Staten Island",
     "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
     "date": "2026-10-13",
+    "publisher": "Gothamist",
+    "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
     "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
+    "published": "2026-10-13T12:28:16Z",
     "gathered": "2026-10-13T13:28:19Z"
    },
    {
     "h": "Taxi union, Uber seek driver healthcare",
     "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
     "date": "2026-10-13",
+    "publisher": "Gothamist",
+    "title": "NYC's taxi union teams with Uber, private equity firm to demand healthcare after 4 driver deaths",
     "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
+    "published": "2026-10-13T19:27:00Z",
     "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 71,
     "cond": "Fair",
-    "obs": "14 Oct 05:51 am EDT"
+    "obs": "14 Oct 09:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 78,
-     "text": "A slight chance of showers between 11am and 2pm.  Mostly sunny, with a high near 78. West wind 7 to 10 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of showers between 11am and 2pm.  Partly sunny, with a high near 78. West wind 8 to 10 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Tonight",
@@ -590,7 +636,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -606,33 +652,21 @@
     "h": "France passes gender-violence bill",
     "b": "The National Assembly overwhelmingly passed a comprehensive bill against gender-based and sexual violence. It now goes to the more conservative Senate.",
     "date": "2026-10-13",
-    "publisher": "The Local France",
-    "title": "'Prison for d**k pics' - France passes wide-ranging gender-violence bill",
     "url": "https://www.thelocal.fr/20261014/prison-for-dk-pics-france-passes-wide-ranging-gender-violence-bill",
-    "published": "2026-10-14T09:10:35Z",
-    "updated": "2026-10-14T09:10:37Z",
     "gathered": "2026-10-14T10:10:11Z"
    },
    {
     "h": "Lescure denies France in debt 'snowball'",
     "b": "Economy Minister Roland Lescure denied France is trapped in a debt 'snowball' as he pressed opposition parties to pass the 2027 budget.",
     "date": "2026-10-13",
-    "publisher": "The Local France",
-    "title": "French economy minister denies country caught in debt 'snowball'",
     "url": "https://www.thelocal.fr/20261014/french-economy-minister-denies-country-caught-in-debt-snowball",
-    "published": "2026-10-14T07:32:58Z",
-    "updated": "2026-10-14T07:33:00Z",
     "gathered": "2026-10-14T07:54:55Z"
    },
    {
     "h": "160,000 join student protests, officials say",
     "b": "Official estimates put Tuesday's turnout for protests backing French lycée students at about 160,000, just over half the previous week's.",
     "date": "2026-10-13",
-    "publisher": "The Local France",
-    "title": "French authorities say 161,500 turned out for Tuesday's student demos",
     "url": "https://www.thelocal.fr/20261013/french-authorities-say-161500-turned-out-for-tuesdays-student-demos",
-    "published": "2026-10-13T16:07:57Z",
-    "updated": "2026-10-13T16:07:58Z",
     "gathered": "2026-10-13T16:13:43Z"
    },
    {
@@ -680,8 +714,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
-  "goodnews": []
+  "updatedAt": "2026-10-14T16:12:00Z",
+  "goodnews": [
+   {
+    "h": "Chef sets 2.78m pâté en croûte record",
+    "b": "Laurent Bouilloud, owner of a restaurant near Grenoble, was declared world record holder for a 2.78m pâté en croûte verified by a court official.",
+    "date": "2026-10-14",
+    "publisher": "The Local France",
+    "title": "Frenchman breaks world record with 2.78m-long pâté en croûte",
+    "url": "https://www.thelocal.fr/20261014/frenchman-breaks-world-record-with-2-78m-long-pate-en-croute",
+    "published": "2026-10-14T13:13:54Z",
+    "updated": "2026-10-14T13:13:55Z",
+    "gathered": "2026-10-14T13:56:42Z"
+   }
+  ]
  },
  {
   "location": {
@@ -709,13 +755,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
      "text": "Cloudy through mid morning, then gradual clearing, with a high near 65. South southeast wind around 5 mph becoming calm  in the morning. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 50,
      "text": "Increasing clouds, with a low around 50. Light north northeast wind. "
@@ -736,7 +782,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 73,
-     "text": "Mostly sunny, with a high near 73."
+     "text": "Mostly sunny, with a high near 73. Light and variable wind. "
     },
     {
      "name": "Friday Night",
@@ -758,7 +804,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T13:19:00Z",
+  "updatedAt": "2026-10-14T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
