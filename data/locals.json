@@ -27,22 +27,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 65,
     "cond": "Fair",
-    "obs": "13 Oct 23:52 pm EDT"
+    "obs": "14 Oct 03:52 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 61,
-     "text": "Clear, with a low around 61. Calm wind. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 87,
-     "text": "Sunny, with a high near 87. Calm wind becoming northwest around 5 mph. "
+     "text": "Sunny, with a high near 87. Calm wind becoming west around 5 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -67,6 +61,12 @@
      "kind": "high",
      "temp": 84,
      "text": "Sunny, with a high near 84."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Mostly clear, with a low around 50."
     }
    ]
   },
@@ -82,7 +82,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -105,44 +105,44 @@
    "now": {
     "temp": 60,
     "cond": " Fog/Mist",
-    "obs": "13 Oct 23:54 pm EDT"
+    "obs": "14 Oct 01:54 am EDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "A chance of showers and thunderstorms, mainly before 1am.  Mostly cloudy early, then becoming mostly clear, with a low around 59. Southwest wind around 8 mph.  Chance of precipitation is 30%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
-    },
-    {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 76,
-     "text": "Patchy fog before 9am.  Otherwise, mostly sunny, with a high near 76. West wind 8 to 11 mph, with gusts as high as 22 mph. "
+     "temp": 75,
+     "text": "A chance of showers after 3pm.  Partly sunny, with a high near 75. West wind 7 to 10 mph, with gusts as high as 23 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Mostly clear, with a low around 51. Northwest wind 6 to 9 mph. "
+     "temp": 50,
+     "text": "Mostly clear, with a low around 50. Northwest wind 8 to 10 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. Northwest wind 5 to 10 mph. "
+     "temp": 60,
+     "text": "Sunny, with a high near 60. North wind 5 to 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "A chance of showers, mainly after 4am.  Mostly cloudy, with a low around 48. Light south wind.  Chance of precipitation is 30%."
+     "temp": 47,
+     "text": "A chance of showers, mainly after 4am.  Partly cloudy, with a low around 47. Light south wind.  Chance of precipitation is 30%."
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 64,
-     "text": "Showers, with thunderstorms also possible after 5pm.  High near 64. Southeast wind 9 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 100%."
+     "temp": 65,
+     "text": "Showers, mainly after 8am.  High near 65. Southeast wind 8 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 100%."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 43. West wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%."
     }
    ]
   },
@@ -158,7 +158,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,46 +199,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 66,
     "cond": "Overcast",
-    "obs": "13 Oct 22:53 pm CDT"
+    "obs": "14 Oct 02:53 am CDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 62,
-     "text": "A chance of showers and thunderstorms before 1am, then showers likely and possibly a thunderstorm between 1am and 4am, then a chance of showers and thunderstorms after 4am.  Mostly cloudy, with a low around 62. Northeast wind around 5 mph.  Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers likely and possibly a thunderstorm before 4am, then a chance of showers and thunderstorms after 4am.  Cloudy, with a low around 62. North northeast wind around 5 mph.  Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 66,
-     "text": "A chance of showers and thunderstorms before 7am, then a slight chance of showers between 7am and 3pm.  Mostly cloudy, with a high near 66. North northeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 30%."
+     "temp": 62,
+     "text": "A 30 percent chance of showers, mainly before 10am.  Mostly cloudy, with a temperature falling to around 60 by 5pm. North northeast wind 10 to 15 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "Mostly cloudy, with a low around 57. North northeast wind around 15 mph, with gusts as high as 20 mph. "
+     "temp": 58,
+     "text": "A 20 percent chance of rain after 4am.  Mostly cloudy, with a low around 58. Breezy, with a north northeast wind 15 to 20 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 61,
-     "text": "A chance of showers and thunderstorms, then showers and possibly a thunderstorm after 7am.  High near 61. East southeast wind 10 to 15 mph.  Chance of precipitation is 90%."
+     "temp": 60,
+     "text": "Rain likely, then rain and possibly a thunderstorm after 1pm.  High near 60. East southeast wind 10 to 15 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Showers and possibly a thunderstorm before 1am, then a slight chance of showers.  Low around 50. Breezy, with an east southeast wind 10 to 15 mph becoming northwest 20 to 25 mph after midnight.  Chance of precipitation is 80%."
+     "temp": 51,
+     "text": "Rain and possibly a thunderstorm before 1am, then a chance of rain.  Low around 51. Southwest wind 5 to 10 mph becoming northwest 10 to 15 mph after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 57,
-     "text": "Partly sunny, with a high near 57. Breezy. "
+     "temp": 56,
+     "text": "A 30 percent chance of rain, mainly before 1pm.  Partly sunny, with a high near 56. Breezy. "
     }
    ]
   },
@@ -254,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -267,46 +267,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 52,
     "cond": "Mostly Cloudy",
-    "obs": "13 Oct 20:58 pm MDT"
+    "obs": "13 Oct 22:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 43,
-     "text": "Showers.  Low around 43. Northeast wind 5 to 8 mph.  Chance of precipitation is 80%."
+     "text": "Showers.  Low around 43. East northeast wind around 7 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 49,
-     "text": "Showers.  High near 49. Northeast wind 8 to 10 mph, with gusts as high as 16 mph.  Chance of precipitation is 100%."
+     "text": "Showers.  High near 49. East northeast wind 7 to 9 mph, with gusts as high as 16 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 38,
-     "text": "Rain.  Low around 38. North wind 6 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%."
+     "temp": 39,
+     "text": "Rain, mainly before midnight.  Low around 39. North wind 7 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 50,
-     "text": "Rain likely.  Mostly cloudy, with a high near 50. Breezy, with a north wind 9 to 14 mph increasing to 15 to 20 mph in the afternoon. Winds could gust as high as 34 mph.  Chance of precipitation is 70%."
+     "temp": 52,
+     "text": "Rain likely, mainly before 10am.  Mostly cloudy, with a high near 52. Breezy, with a north wind 10 to 20 mph, with gusts as high as 36 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "A 20 percent chance of showers before midnight.  Partly cloudy, with a low around 34. North wind 6 to 11 mph becoming light and variable  in the evening. Winds could gust as high as 23 mph. "
+     "temp": 32,
+     "text": "Mostly clear, with a low around 32. North wind 5 to 8 mph becoming calm  in the evening. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62."
+     "temp": 61,
+     "text": "Sunny, with a high near 61."
     }
    ]
   },
@@ -322,7 +322,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -333,6 +333,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Bass, Raman clash in mayoral debate",
+    "b": "Mayor Karen Bass and Councilmember Nithya Raman met in a tense, hour-long televised debate Tuesday night, three weeks before Election Day.",
+    "date": "2026-10-13",
+    "publisher": "LAist",
+    "title": "3 takeaways from Bass and Raman’s live televised mayoral debate",
+    "url": "https://laist.com/news/politics/3-takeaways-from-bass-and-ramans-live-televised-mayoral-debate",
+    "published": "2026-10-14T05:19:20Z",
+    "updated": "2026-10-14T05:57:00Z",
+    "gathered": "2026-10-14T07:54:55Z"
+   },
    {
     "h": "LA County to take over homeless count",
     "b": "A homelessness planning body voted Tuesday to move the region's annual homeless count and federal funding applications from LAHSA to LA County, pending a federal judge's approval.",
@@ -382,10 +393,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly clear, with a low around 58. West northwest wind around 5 mph becoming north in the evening. "
+     "text": "Mostly clear, with a low around 58. North northeast wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -408,8 +419,8 @@
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 69,
-     "text": "Clear, with a low around 69. North northeast wind around 10 mph. "
+     "temp": 68,
+     "text": "Clear, with a low around 68. North northeast wind around 10 mph. "
     },
     {
      "name": "Friday",
@@ -431,7 +442,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -537,44 +548,44 @@
    "now": {
     "temp": 69,
     "cond": "Fair",
-    "obs": "13 Oct 23:51 pm EDT"
+    "obs": "14 Oct 03:51 am EDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 69,
-     "text": "Clear, with a low around 69. Southwest wind around 13 mph. "
-    },
-    {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 81,
-     "text": "Mostly sunny, with a high near 81. West wind around 11 mph, with gusts as high as 21 mph. "
+     "temp": 78,
+     "text": "A slight chance of showers between 11am and 2pm.  Mostly sunny, with a high near 78. West wind 7 to 10 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 60,
-     "text": "Partly cloudy, with a low around 60. Northwest wind 10 to 13 mph. "
+     "temp": 59,
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 59. North wind 11 to 14 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 62,
-     "text": "Sunny, with a steady temperature around 62. North wind 6 to 10 mph. "
+     "text": "Sunny, with a steady temperature around 62. North wind 6 to 11 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 62,
-     "text": "Showers, mainly after 2am.  Steady temperature around 62. Southeast wind 8 to 13 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 59,
+     "text": "Showers after 2am.  Low around 59. Southeast wind 7 to 11 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 72,
-     "text": "Showers.  High near 72. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 73,
+     "text": "Showers.  High near 73. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "Showers, mainly before 8pm.  Low around 48. Breezy.  Chance of precipitation is 80%."
     }
    ]
   },
@@ -590,7 +601,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -602,6 +613,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Lescure denies France in debt 'snowball'",
+    "b": "Economy Minister Roland Lescure denied France is trapped in a debt 'snowball' as he pressed opposition parties to pass the 2027 budget.",
+    "date": "2026-10-13",
+    "publisher": "The Local France",
+    "title": "French economy minister denies country caught in debt 'snowball'",
+    "url": "https://www.thelocal.fr/20261014/french-economy-minister-denies-country-caught-in-debt-snowball",
+    "published": "2026-10-14T07:32:58Z",
+    "updated": "2026-10-14T07:33:00Z",
+    "gathered": "2026-10-14T07:54:55Z"
+   },
    {
     "h": "160,000 join student protests, officials say",
     "b": "Official estimates put Tuesday's turnout for protests backing French lycée students at about 160,000, just over half the previous week's.",
@@ -658,7 +680,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "goodnews": []
  },
  {
@@ -683,11 +705,7 @@
     "h": "Five races could reshape WA Supreme Court",
     "b": "A majority of Washington Supreme Court seats are on the ballot, and the five nonpartisan races are drawing national attention.",
     "date": "2026-10-13",
-    "publisher": "KUOW",
-    "title": "Court watchers have eyes on races to reshape Washington Supreme Court",
     "url": "https://www.kuow.org/elections/2026-10-13/court-watchers-have-eyes-on-races-to-reshape-washington-supreme-court",
-    "published": "2026-10-13T12:00:00Z",
-    "updated": "2026-10-13T17:54:01Z",
     "gathered": "2026-10-13T12:03:04Z"
    }
   ],
@@ -695,34 +713,34 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly cloudy, with a low around 54. South southeast wind 3 to 7 mph. "
+     "text": "Mostly cloudy, with a low around 54. South southeast wind around 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 65,
-     "text": "A 10 percent chance of rain before 7am.  Cloudy, then gradually becoming mostly sunny, with a high near 65. South southeast wind around 5 mph becoming calm  in the morning. "
+     "text": "Cloudy through mid morning, then gradual clearing, with a high near 65. South southeast wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Partly cloudy, with a low around 51. Light and variable wind. "
+     "temp": 50,
+     "text": "Increasing clouds, with a low around 50. Light north northeast wind. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 69,
-     "text": "Mostly sunny, with a high near 69. North wind 3 to 5 mph. "
+     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 69. North wind 3 to 5 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54. Light east northeast wind. "
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52. Light and variable wind. "
     },
     {
      "name": "Friday",
@@ -744,7 +762,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T07:16:00Z",
+  "updatedAt": "2026-10-14T10:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
