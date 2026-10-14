@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T01:10:00Z",
+ "updatedAt": "2026-10-14T04:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -20,7 +20,7 @@
    "b": "Al Jazeera live updates: the Houthis fire a missile barrage at Saudi Arabia, and an Aramco building is hit.",
    "date": "2026-10-13",
    "publisher": "Al Jazeera",
-   "title": "Houthis fire missile barrage at Saudi Arabia; Aramco building hit",
+   "title": "Iran war updates: Houthis fire missiles at Saudi Arabia",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/13/iran-war-live-trump-says-houthis-misbehaving-as-riyadh-flights-halted",
    "gathered": "2026-10-13T07:15:48Z"
   },
@@ -37,8 +37,6 @@
    "h": "MI5 chief: Iran targeting UK military bases",
    "b": "MI5 Director-General Ken McCallum said Iran is stepping up attempts to strike harder targets like military sites in Britain. Tehran denies involvement.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "UK spy chief says Iran is stepping up targeting of military bases",
    "url": "https://www.aljazeera.com/news/2026/10/13/uk-spy-chief-says-iran-is-stepping-up-targeting-of-military-bases",
    "gathered": "2026-10-13T19:27:05Z"
   },
@@ -127,8 +125,6 @@
    "h": "Poll: Most say Trump puts his wealth first",
    "b": "An AP-NORC poll found over half of US adults say Trump's second term serves his own business interests 'a lot'; only 11% say he represents regular Americans.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "Majority in US say Trump prioritises personal wealth over all else: Poll",
    "url": "https://www.aljazeera.com/news/2026/10/13/majority-in-us-say-trump-prioritises-personal-wealth-over-all-else-poll",
    "gathered": "2026-10-13T23:22:46Z"
   },
@@ -149,13 +145,44 @@
  ],
  "international": [
   {
+   "h": "Jamaica takes first third-country US deportees",
+   "b": "Twenty-two deportees from the US arrived in Kingston on Tuesday, Jamaica's first third-country deportations under expanding Trump administration agreements.",
+   "date": "2026-10-14",
+   "place": "Kingston, Jamaica",
+   "tz": "America/Jamaica",
+   "publisher": "Al Jazeera",
+   "title": "Jamaica accepts first flight of third-country deportations from US",
+   "url": "https://www.aljazeera.com/news/2026/10/14/jamaica-accepts-first-flight-of-third-country-deportations-from-us",
+   "gathered": "2026-10-14T02:04:20Z"
+  },
+  {
+   "h": "Colombia tribunal charges 10 ex-FARC rebels",
+   "b": "Colombia's transitional justice tribunal charged 10 former FARC members with war crimes and crimes against humanity against Indigenous people between 1996 and 2016.",
+   "date": "2026-10-14",
+   "place": "Bogotá, Colombia",
+   "tz": "America/Bogota",
+   "publisher": "Al Jazeera",
+   "title": "Colombia peace tribunal charges ex-FARC members with anti-Indigenous crimes",
+   "url": "https://www.aljazeera.com/news/2026/10/14/colombia-peace-tribunal-charges-ex-farc-members-with-anti-indigenous-crimes",
+   "gathered": "2026-10-14T02:04:20Z"
+  },
+  {
+   "h": "Israeli strike kills one in Gaza City",
+   "b": "An Israeli air strike on a vehicle in Gaza City's Tuffah neighbourhood killed one person, and journalists were wounded in the occupied West Bank.",
+   "date": "2026-10-14",
+   "place": "Gaza City",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Israeli attacks kill one in Gaza, wound journalists in occupied West Bank",
+   "url": "https://www.aljazeera.com/news/2026/10/14/israeli-attacks-kill-one-in-gaza-wound-journalists-in-occupied-west-bank",
+   "gathered": "2026-10-14T02:04:20Z"
+  },
+  {
    "h": "Mauritius imposes curfew after unrest",
    "b": "Prime Minister Navin Ramgoolam announced an overnight curfew in parts of Mauritius after a police officer's shooting of a woman sparked unrest.",
    "date": "2026-10-13",
    "place": "Port Louis, Mauritius",
    "tz": "Indian/Mauritius",
-   "publisher": "Al Jazeera",
-   "title": "Mauritius imposes curfew after night of unrest over police shooting",
    "url": "https://www.aljazeera.com/news/2026/10/13/mauritius-imposes-curfew-after-night-of-unrest-over-police-shooting",
    "gathered": "2026-10-13T23:22:46Z"
   },
@@ -165,8 +192,6 @@
    "date": "2026-10-13",
    "place": "Tirana, Albania",
    "tz": "Europe/Tirane",
-   "publisher": "Al Jazeera",
-   "title": "Albanian police fire tear gas at protesters as Education Ministry attacked",
    "url": "https://www.aljazeera.com/news/2026/10/13/albanian-police-fire-tear-gas-at-protesters-as-education-ministry-attacked",
    "gathered": "2026-10-13T23:22:46Z"
   },
@@ -255,6 +280,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Bank of America fined $1.2B by Treasury",
+   "b": "The US Treasury imposed more than $1.21 billion in penalties on Bank of America for anti-money laundering and sanctions violations.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "US fines Bank of America $1.2bn for money laundering, sanctions violations",
+   "url": "https://www.aljazeera.com/news/2026/10/14/us-fines-bank-of-america-1-2bn-for-money-laundering-sanctions-violations",
+   "gathered": "2026-10-14T02:04:20Z"
+  },
   {
    "h": "Big banks open earnings season mixed",
    "b": "JPMorgan Chase missed expectations as JPMorgan, Wells Fargo, Goldman Sachs and Citigroup reported. Bank of America and Morgan Stanley report Wednesday.",
@@ -380,6 +414,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Hochul, Blakeman spar in governor debate",
+   "b": "Gov. Kathy Hochul and Republican Bruce Blakeman clashed over immigration, Trump and the cost of living in their 60-minute debate Tuesday night.",
+   "date": "2026-10-13",
+   "publisher": "Gothamist",
+   "title": "NY Gov. Kathy Hochul, Bruce Blakeman spar over immigration, cost of living in debate",
+   "url": "https://gothamist.com/news/ny-gov-kathy-hochul-bruce-blakeman-spar-over-immigration-cost-of-living-in-debate",
+   "published": "2026-10-14T01:05:08Z",
+   "gathered": "2026-10-14T02:04:20Z"
+  },
+  {
    "h": "Port Authority bus terminal work starts Thursday",
    "b": "A decade of disruptions for Midtown Bus Terminal commuters begins Thursday as the Port Authority starts its next construction phase.",
    "date": "2026-10-13",
@@ -414,10 +458,9 @@
    "b": "Council Speaker Julie Menin said the City Council will vote Oct. 22 on banning Central Park's carriage horse industry.",
    "date": "2026-10-13",
    "publisher": "Gothamist",
-   "title": "NYC Council set to ban Central Park's carriage horse industry",
+   "title": "NYC Council, Mayor Mamdani agree to end Central Park's carriage horse industry",
    "url": "https://gothamist.com/news/nyc-council-set-to-ban-central-parks-carriage-horse-industry",
-   "published": "2026-10-13T18:37:00Z",
-   "updated": "2026-10-13T21:00:00Z",
+   "published": "2026-10-14T01:04:00Z",
    "gathered": "2026-10-13T19:27:05Z"
   },
   {
@@ -451,16 +494,6 @@
    "gathered": "2026-10-13T13:28:19Z"
   },
   {
-   "h": "Hochul, Blakeman meet in lone governor debate",
-   "b": "With the election three weeks away, Gov. Kathy Hochul and Republican Bruce Blakeman face off in their only debate.",
-   "date": "2026-10-13",
-   "publisher": "Gothamist",
-   "title": "With election 3 weeks away, Hochul and Blakeman to square off in lone NY governor debate",
-   "url": "https://gothamist.com/news/with-election-3-weeks-away-hochul-and-blakeman-to-square-off-in-lone-ny-governor-debate",
-   "published": "2026-10-13T10:30:00Z",
-   "gathered": "2026-10-13T12:03:04Z"
-  },
-  {
    "h": "Taxi union, Uber seek driver healthcare",
    "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
    "date": "2026-10-13",
@@ -473,16 +506,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 67,
+   "temp": 70,
    "cond": "Fair",
-   "obs": "13 Oct 18:51 pm EDT"
+   "obs": "13 Oct 21:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 72,
-    "text": "Mostly clear, with a steady temperature around 72. Southwest wind 11 to 13 mph. "
+    "temp": 69,
+    "text": "Mostly clear, with a low around 69. Southwest wind around 13 mph. "
    },
    {
     "name": "Wednesday",
