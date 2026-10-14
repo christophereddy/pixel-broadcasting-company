@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T19:09:00Z",
+ "updatedAt": "2026-10-14T22:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -237,6 +237,17 @@
  ],
  "international": [
   {
+   "h": "Ex-Shin Bet chief sues Netanyahu for defamation",
+   "b": "Ronen Bar accused Netanyahu of lying to cover himself over the October 7 attack, filing suit ahead of Israel's October 27 election.",
+   "date": "2026-10-14",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Israel’s former security chief sues Netanyahu for October 7 defamation",
+   "url": "https://www.aljazeera.com/news/2026/10/14/israels-former-security-chief-sues-netanyahu-for-october-7-defamation",
+   "gathered": "2026-10-14T19:10:03Z"
+  },
+  {
    "h": "Kenya confirms second Ebola case",
    "b": "A 39-year-old man, a close relative of Kenya's first Ebola patient, fell ill while already in quarantine, the Health Ministry said.",
    "date": "2026-10-14",
@@ -253,8 +264,6 @@
    "date": "2026-10-14",
    "place": "Jerusalem",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Colombia inaugurates embassy to Israel in Jerusalem",
    "url": "https://www.aljazeera.com/news/2026/10/14/colombia-inaugurates-embassy-to-israel-in-jerusalem",
    "gathered": "2026-10-14T18:48:09Z"
   },
@@ -452,6 +461,16 @@
  ],
  "business": [
   {
+   "h": "IMF chief urges wealthy nations to cut debt",
+   "b": "Kristalina Georgieva said growth alone cannot fix US debt of more than $40 trillion, speaking at the IMF-World Bank meetings in Bangkok.",
+   "date": "2026-10-14",
+   "publisher": "PBS NewsHour",
+   "title": "IMF chief urges wealthy nations to rein in debt to ease global economic pressure",
+   "url": "https://www.pbs.org/newshour/world/imf-chief-urges-wealthy-nations-to-rein-in-debt-to-ease-global-economic-pressure",
+   "published": "2026-10-14T18:59:04Z",
+   "gathered": "2026-10-14T19:10:03Z"
+  },
+  {
    "h": "Inflation rises to 3.7% in September",
    "b": "Consumer prices rose 3.7% from a year earlier, up from 3.4% in August, with a 0.6% monthly jump, the biggest in five months, as the Iran war keeps gas prices high.",
    "date": "2026-10-14",
@@ -596,6 +615,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Suspects in detective stabbing plead not guilty",
+   "b": "Sneider Mejia, 24, and D'Angelo Caraballo, 25, pleaded not guilty to charges including attempted murder of an off-duty NYPD detective in the Bronx.",
+   "date": "2026-10-14",
+   "publisher": "Gothamist",
+   "title": "2 men accused of stabbing off-duty NYPD detective in the Bronx plead not guilty",
+   "url": "https://gothamist.com/news/2-men-accused-of-stabbing-off-duty-nypd-detective-in-the-bronx-plead-not-guilty",
+   "published": "2026-10-14T18:40:03Z",
+   "gathered": "2026-10-14T19:10:03Z"
+  },
+  {
    "h": "Gas leaks cost New Yorkers $300M a year",
    "b": "Nearly 2% of the natural gas city customers pay for escapes into the air, Columbia University researchers found.",
    "date": "2026-10-14",
@@ -735,12 +764,6 @@
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 78,
-    "text": "Partly sunny, with a high near 78. West wind around 11 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
     "temp": 58,
@@ -769,6 +792,12 @@
     "kind": "low",
     "temp": 50,
     "text": "Showers likely, mainly between 8pm and 2am.  Mostly cloudy, with a low around 50. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+   },
+   {
+    "name": "Saturday",
+    "kind": "high",
+    "temp": 53,
+    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 53. Breezy. "
    }
   ]
  },
