@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T04:10:00Z",
+ "updatedAt": "2026-10-14T07:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,10 +10,17 @@
    "h": "Pope Leo diagnosed with lung cancer",
    "b": "The Vatican said Pope Leo XIV was diagnosed with lung adenocarcinoma after surgery to remove the lower lobe of his right lung. It gave no details on treatment or outlook.",
    "date": "2026-10-13",
-   "publisher": "Al Jazeera",
-   "title": "Pope Leo diagnosed with cancer after surgery to remove part of lung",
    "url": "https://www.aljazeera.com/news/2026/10/13/pope-leo-diagnosed-with-cancer-after-surgery-to-remove-part-of-lung",
    "gathered": "2026-10-13T23:22:46Z"
+  },
+  {
+   "h": "UN sees 'window' for peace in eastern DR Congo",
+   "b": "UN Great Lakes envoy Huang Xia told the Security Council that US- and Qatar-led peace processes have made 'notable progress' in eastern DR Congo.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "UN official says ‘window of opportunity’ for peace in DR Congo",
+   "url": "https://www.aljazeera.com/news/2026/10/14/un-official-says-window-of-opportunity-for-peace-in-dr-congo",
+   "gathered": "2026-10-14T04:10:35Z"
   },
   {
    "h": "Iran war: Houthi missiles hit Aramco building",
@@ -145,13 +152,33 @@
  ],
  "international": [
   {
+   "h": "Nord Stream sabotage trial opens in Germany",
+   "b": "A Ukrainian former military officer went on trial in Hamburg, accused of organising the 2022 blasts on the Nord Stream gas pipelines. The trial is expected to run into February.",
+   "date": "2026-10-14",
+   "place": "Hamburg, Germany",
+   "tz": "Europe/Berlin",
+   "publisher": "Al Jazeera",
+   "title": "Ukrainian ex-officer goes on trial in Germany over Nord Stream blasts",
+   "url": "https://www.aljazeera.com/news/2026/10/14/ukrainian-ex-officer-goes-on-trial-in-germany-over-nord-stream-blasts",
+   "gathered": "2026-10-14T04:10:35Z"
+  },
+  {
+   "h": "Israel returns 22 stolen artefacts to Greece",
+   "b": "Israel returned 22 ancient artefacts stolen from Greece. Officials gave no details on how they were found.",
+   "date": "2026-10-14",
+   "place": "Athens, Greece",
+   "tz": "Europe/Athens",
+   "publisher": "Al Jazeera",
+   "title": "Israel returns 22 stolen ancient artefacts to Greece",
+   "url": "https://www.aljazeera.com/news/2026/10/14/israel-returns-22-stolen-ancient-artefacts-to-greece",
+   "gathered": "2026-10-14T04:10:35Z"
+  },
+  {
    "h": "Jamaica takes first third-country US deportees",
    "b": "Twenty-two deportees from the US arrived in Kingston on Tuesday, Jamaica's first third-country deportations under expanding Trump administration agreements.",
    "date": "2026-10-14",
    "place": "Kingston, Jamaica",
    "tz": "America/Jamaica",
-   "publisher": "Al Jazeera",
-   "title": "Jamaica accepts first flight of third-country deportations from US",
    "url": "https://www.aljazeera.com/news/2026/10/14/jamaica-accepts-first-flight-of-third-country-deportations-from-us",
    "gathered": "2026-10-14T02:04:20Z"
   },
@@ -172,8 +199,6 @@
    "date": "2026-10-14",
    "place": "Gaza City",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Israeli attacks kill one in Gaza, wound journalists in occupied West Bank",
    "url": "https://www.aljazeera.com/news/2026/10/14/israeli-attacks-kill-one-in-gaza-wound-journalists-in-occupied-west-bank",
    "gathered": "2026-10-14T02:04:20Z"
   },
@@ -506,16 +531,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 70,
+   "temp": 69,
    "cond": "Fair",
-   "obs": "13 Oct 21:51 pm EDT"
+   "obs": "13 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 69,
-    "text": "Mostly clear, with a low around 69. Southwest wind around 13 mph. "
+    "text": "Clear, with a low around 69. Southwest wind around 13 mph. "
    },
    {
     "name": "Wednesday",
