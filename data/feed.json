@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-14T16:12:00Z",
+ "updatedAt": "2026-10-14T19:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,20 +7,36 @@
  },
  "world": [
   {
-   "h": "Iran war: Hunger surges in Yemen",
-   "b": "Al Jazeera reports hunger is surging in Yemen as heavy fighting overwhelms hospitals.",
+   "h": "Iran war: Cargo ships sunk in Hormuz Strait",
+   "b": "Al Jazeera reports cargo vessels have been sunk in the Strait of Hormuz during ongoing Iranian attacks.",
    "date": "2026-10-14",
    "publisher": "Al Jazeera",
-   "title": "Hunger surging in Yemen as heavy fighting overwhelms hospitals",
+   "title": "Cargo vessels sunk in Hormuz Strait during ongoing Iran attacks",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east",
    "gathered": "2026-10-14T07:54:55Z"
+  },
+  {
+   "h": "Ukraine accuses SpaceX of throttling Starlink",
+   "b": "A Zelenskyy adviser said Starlink service was limited overnight for terminals moving over 100mph, curbing Ukraine's ability to fly drones that rely on satellite internet.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "Ukraine accuses Elon Musk’s SpaceX of throttling Starlink terminals",
+   "url": "https://www.aljazeera.com/news/2026/10/14/ukraine-accuses-elon-musks-spacex-of-throttling-starlink-terminals",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
+  {
+   "h": "UN warns of food crisis as Hormuz plan stalls",
+   "b": "UN official Jorge Moreira da Silva said Iran and the US must agree within weeks on a plan to move fertiliser through the Strait of Hormuz or parts of Asia and Africa could face a food crisis.",
+   "date": "2026-10-14",
+   "publisher": "Al Jazeera",
+   "title": "UN official warns of looming food crisis as Hormuz fertiliser plan stalls",
+   "url": "https://www.aljazeera.com/news/2026/10/14/un-official-warns-of-looming-food-crisis-as-hormuz-fertiliser-plan-stalls",
+   "gathered": "2026-10-14T18:48:09Z"
   },
   {
    "h": "Israeli strike kills woman in Gaza City",
    "b": "An Israeli air strike on an apartment block in Gaza City's Al-Rimal neighbourhood killed Reem Asaad Awad, 33, and wounded two others early Wednesday, hospital officials said.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "Israeli air strike kills Palestinian woman in Gaza City",
    "url": "https://www.aljazeera.com/news/2026/10/14/israeli-air-strike-kills-palestinian-woman-in-gaza-city",
    "gathered": "2026-10-14T13:56:42Z"
   },
@@ -28,8 +44,6 @@
    "h": "Russian strikes kill 6 in Ukraine, cut power",
    "b": "Russian air attacks killed at least six people and left hundreds of thousands without power, days after Trump announced an 'energy ceasefire'.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "‘Massive’ Russian attack on Ukraine kills at least 9, damages power sites",
    "url": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv",
    "gathered": "2026-10-14T10:10:11Z"
   },
@@ -37,8 +51,6 @@
    "h": "Trump: Greenland oil, gas exploration to begin",
    "b": "Trump said on Truth Social that 'massive' oil, gas and mineral exploration is set to begin in Greenland, a self-governing Danish territory.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "Trump says oil, gas and mineral exploration to begin in Greenland",
    "url": "https://www.aljazeera.com/news/2026/10/14/trump-says-oil-gas-and-mineral-exploration-to-begin-in-greenland",
    "gathered": "2026-10-14T10:10:11Z"
   },
@@ -108,6 +120,16 @@
  ],
  "national": [
   {
+   "h": "Iowa water quality, cancer rates now campaign issue",
+   "b": "Nitrate pollution from farm runoff, long a taboo topic in Iowa politics, is now the focus of debates and ads from candidates of both parties.",
+   "date": "2026-10-14",
+   "publisher": "PBS NewsHour",
+   "title": "Iowa's water quality and cancer rates forced into forefront of state politics",
+   "url": "https://www.pbs.org/newshour/politics/iowas-water-quality-and-cancer-rates-forced-into-forefront-of-state-politics",
+   "published": "2026-10-14T17:48:43Z",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
+  {
    "h": "ICE detained domestic violence victims",
    "b": "ProPublica reports that women who said they were victims, not abusers, were held for months at an immigration detention center in west Michigan as protections for abuse victims eroded.",
    "date": "2026-10-14",
@@ -133,20 +155,14 @@
    "h": "CVS to pay $315M to settle opioid case",
    "b": "CVS agreed to pay $315 million to settle a 2024 Justice Department lawsuit over medically unnecessary opioid prescriptions.",
    "date": "2026-10-13",
-   "publisher": "PBS NewsHour",
-   "title": "CVS agrees to pay $315 million to settle Justice Department case over opioid prescriptions",
    "url": "https://www.pbs.org/newshour/nation/cvs-agrees-to-pay-315-million-to-settle-justice-department-case-over-opioid-prescriptions",
-   "published": "2026-10-13T21:02:04Z",
    "gathered": "2026-10-13T23:22:46Z"
   },
   {
    "h": "Florida carries out 17th execution of the year",
    "b": "Florida executed a prisoner who killed his cellmate in hopes of getting a death sentence.",
    "date": "2026-10-13",
-   "publisher": "PBS NewsHour",
-   "title": "Florida executed a prisoner who killed his cellmate in hopes of getting a death sentence. It's the state's 17th execution of the year",
    "url": "https://www.pbs.org/newshour/nation/florida-executes-a-prisoner-who-killed-his-cellmate-in-hopes-of-getting-a-death-sentence-its-the-states-17th-execution-of-the-year",
-   "published": "2026-10-13T22:27:55Z",
    "gathered": "2026-10-13T23:22:46Z"
   },
   {
@@ -164,7 +180,7 @@
    "title": "Scammers Are Stealing Millions From Food Stamp Recipients. Congress Could Fix It — but Won’t.",
    "url": "https://www.propublica.org/article/food-stamp-snap-benefits-theft-skimmers-fraud",
    "published": "2026-10-13T10:00:00Z",
-   "updated": "2026-10-13T10:00:08Z",
+   "updated": "2026-10-14T17:47:48Z",
    "gathered": "2026-10-13T12:03:04Z"
   },
   {
@@ -180,6 +196,16 @@
   }
  ],
  "politics": [
+  {
+   "h": "GOP super PAC pulls out of four House races",
+   "b": "The Congressional Leadership Fund canceled spending in four races and boosted 16 others, while Democrats eye openings in Republican-held districts.",
+   "date": "2026-10-14",
+   "publisher": "PBS NewsHour",
+   "title": "Republicans retreat from battleground districts as lines shift in House races",
+   "url": "https://www.pbs.org/newshour/politics/republicans-retreat-from-battleground-districts-as-lines-shift-in-house-races",
+   "published": "2026-10-14T17:30:08Z",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
   {
    "h": "Judge blocks White House press ban for now",
    "b": "A federal judge ruled Trump cannot bar more than 70 journalists from CNN, MS NOW and Politico from the White House over their coverage, at least until a trial.",
@@ -211,13 +237,33 @@
  ],
  "international": [
   {
+   "h": "Kenya confirms second Ebola case",
+   "b": "A 39-year-old man, a close relative of Kenya's first Ebola patient, fell ill while already in quarantine, the Health Ministry said.",
+   "date": "2026-10-14",
+   "place": "Nairobi",
+   "tz": "Africa/Nairobi",
+   "publisher": "Al Jazeera",
+   "title": "Kenya’s Health Ministry confirms second Ebola case",
+   "url": "https://www.aljazeera.com/news/2026/10/14/kenyas-health-ministry-confirms-second-ebola-case",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
+  {
+   "h": "Colombia opens embassy to Israel in Jerusalem",
+   "b": "Colombia inaugurated an embassy in Jerusalem, joining a small group of countries backing Israel's claim to the city; Palestinian officials denounced the move.",
+   "date": "2026-10-14",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Colombia inaugurates embassy to Israel in Jerusalem",
+   "url": "https://www.aljazeera.com/news/2026/10/14/colombia-inaugurates-embassy-to-israel-in-jerusalem",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
+  {
    "h": "Iraq PM vows no attacks on Saudis from Iraq",
    "b": "On his first visit to Riyadh since taking office in May, Iraqi PM Ali Faleh al-Zaidi assured Crown Prince Mohammed bin Salman that Iraqi territory will not be used to launch attacks on Saudi Arabia.",
    "date": "2026-10-14",
    "place": "Riyadh",
    "tz": "Asia/Riyadh",
-   "publisher": "Al Jazeera",
-   "title": "Iraq’s PM tells Saudi crown prince Iraqi territory will not be used for attacks",
    "url": "https://www.aljazeera.com/news/2026/10/14/iraq-pm-tells-saudi-crown-prince-iraqi-territory-wont-be-used-for-attacks",
    "gathered": "2026-10-14T13:56:42Z"
   },
@@ -227,8 +273,6 @@
    "date": "2026-10-14",
    "place": "Mikhmas, West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Settlers set fire to mosque in West Bank as Israeli forces raid villages",
    "url": "https://www.aljazeera.com/news/2026/10/14/settlers-set-fire-to-mosque-in-west-bank-as-israeli-forces-raid-villages",
    "gathered": "2026-10-14T13:56:42Z"
   },
@@ -314,13 +358,15 @@
    "gathered": "2026-10-13T23:22:46Z"
   },
   {
-   "h": "Albanian police tear-gas student protesters",
-   "b": "Riot police in Tirana fired tear gas and water cannons at student protesters who hurled bricks at the Education Ministry and demanded PM Edi Rama resign.",
-   "date": "2026-10-13",
+   "h": "Fire hits Albania Education Ministry in protests",
+   "b": "Protesters broke into Albania's Education Ministry in Tirana overnight and lit a fire, police said, with 16 arrests, as student protests demanding PM Edi Rama's resignation entered a third day.",
+   "date": "2026-10-14",
    "place": "Tirana, Albania",
    "tz": "Europe/Tirane",
-   "url": "https://www.aljazeera.com/news/2026/10/13/albanian-police-fire-tear-gas-at-protesters-as-education-ministry-attacked",
-   "gathered": "2026-10-13T23:22:46Z"
+   "publisher": "Al Jazeera",
+   "title": "Fire erupts at Albania’s Education Ministry as protests enter third day",
+   "url": "https://www.aljazeera.com/news/2026/10/14/fire-erupts-at-albanias-education-ministry-as-protests-enter-third-day",
+   "gathered": "2026-10-14T18:48:09Z"
   },
   {
    "h": "Russia arrests Japanese reporter as spy",
@@ -409,10 +455,7 @@
    "h": "Inflation rises to 3.7% in September",
    "b": "Consumer prices rose 3.7% from a year earlier, up from 3.4% in August, with a 0.6% monthly jump, the biggest in five months, as the Iran war keeps gas prices high.",
    "date": "2026-10-14",
-   "publisher": "PBS NewsHour",
-   "title": "Inflation worsened last month to 3.7% as midterm elections near",
    "url": "https://www.pbs.org/newshour/economy/inflation-worsened-last-month-to-3-7-as-midterm-elections-near",
-   "published": "2026-10-14T13:37:33Z",
    "gathered": "2026-10-14T13:56:42Z"
   },
   {
@@ -483,6 +526,15 @@
  ],
  "sports": [
   {
+   "h": "ALCS Game 3 moved to 1 p.m. for rain",
+   "b": "MLB moved Thursday's Rays-Guardians Game 3 in Cleveland up from 6 p.m. to 1 p.m. ET because of forecast rain; the series is tied 1-1.",
+   "date": "2026-10-14",
+   "publisher": "CBS Sports",
+   "title": "Rays vs. Guardians ALCS Game 3 start time moved up to 1 p.m. due to inclement weather",
+   "url": "https://www.cbssports.com/mlb/news/rays-guardians-alcs-game-3-start-time-cleveland-weather/",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
+  {
    "h": "Rams cut kicker Mevis after loss to Bills",
    "b": "The Rams are releasing Harrison Mevis, who missed two field goals including a 48-yard overtime try, and signing Blake Grupe off the Jets' practice squad.",
    "date": "2026-10-13",
@@ -544,6 +596,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Gas leaks cost New Yorkers $300M a year",
+   "b": "Nearly 2% of the natural gas city customers pay for escapes into the air, Columbia University researchers found.",
+   "date": "2026-10-14",
+   "publisher": "Gothamist",
+   "title": "New Yorkers are paying $300 million for natural gas they don't even use",
+   "url": "https://gothamist.com/news/new-yorkers-are-paying-300-million-for-natural-gas-they-dont-even-use",
+   "published": "2026-10-14T14:00:57Z",
+   "gathered": "2026-10-14T18:48:09Z"
+  },
+  {
    "h": "Hit-and-run suspect caught fleeing to Uzbekistan",
    "b": "Police arrested Sobirjon Abdurazakov, 22, at the airport as he tried to leave the country after a deadly Brooklyn crash, the NYPD says.",
    "date": "2026-10-14",
@@ -560,7 +622,8 @@
    "publisher": "Gothamist",
    "title": "NY measles outbreak more widespread than official count, health officials say",
    "url": "https://gothamist.com/news/ny-measles-outbreak-more-widespread-than-official-count-health-officials-say",
-   "published": "2026-10-14T12:00:56Z",
+   "published": "2026-10-14T12:00:00Z",
+   "updated": "2026-10-14T18:10:00Z",
    "gathered": "2026-10-14T13:56:42Z"
   },
   {
@@ -666,46 +729,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 71,
+   "temp": 73,
    "cond": "Fair",
-   "obs": "14 Oct 09:51 am EDT"
+   "obs": "14 Oct 13:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 78,
-    "text": "A slight chance of showers between 11am and 2pm.  Partly sunny, with a high near 78. West wind 8 to 10 mph.  Chance of precipitation is 20%."
+    "text": "Partly sunny, with a high near 78. West wind around 11 mph. "
    },
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 59,
-    "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 59. North wind 11 to 14 mph. "
+    "temp": 58,
+    "text": "Partly cloudy, with a low around 58. North wind 10 to 14 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 62,
-    "text": "Sunny, with a steady temperature around 62. North wind 6 to 11 mph. "
+    "temp": 64,
+    "text": "Sunny, with a high near 64. North wind 6 to 10 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "Showers after 2am.  Low around 59. Southeast wind 7 to 11 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+    "temp": 60,
+    "text": "Showers after 2am.  Low around 60. Southeast wind 7 to 11 mph.  Chance of precipitation is 80%."
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 73,
-    "text": "Showers, with thunderstorms also possible after 5pm.  High near 73. Southwest wind 13 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "temp": 74,
+    "text": "Showers, with thunderstorms also possible after 5pm.  High near 74. Southwest wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Showers, mainly before 8pm.  Low around 48. Breezy.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+    "temp": 50,
+    "text": "Showers likely, mainly between 8pm and 2am.  Mostly cloudy, with a low around 50. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
    }
   ]
  },
