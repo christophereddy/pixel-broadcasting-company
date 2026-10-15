@@ -16,31 +16,13 @@
     "published": "2026-10-14T14:26:37Z",
     "updated": "2026-10-14T14:26:44Z",
     "gathered": "2026-10-14T18:48:09Z"
-   },
-   {
-    "h": "500 on hunger strike at Folkston ICE center",
-    "b": "About 500 people at a coastal Georgia immigration detention center are on a hunger strike over conditions and alleged asylum violations, family and lawyers say.",
-    "date": "2026-10-13",
-    "publisher": "WABE",
-    "title": "500 on hunger strike at Georgia immigration detention center",
-    "url": "https://www.wabe.org/500-people-on-hunger-strike-at-georgia-immigration-detention-center/",
-    "published": "2026-10-13T15:49:42Z",
-    "updated": "2026-10-13T15:49:48Z",
-    "gathered": "2026-10-13T16:13:43Z"
-   },
-   {
-    "h": "One dead in Six Flags rollercoaster incident",
-    "b": "One person died and several were hurt Monday in a rollercoaster incident at the Six Flags park about 15 miles northwest of Atlanta.",
-    "date": "2026-10-13",
-    "url": "https://www.aljazeera.com/news/2026/10/13/one-dead-after-roller-coaster-incident-in-george-us",
-    "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 85,
+    "temp": 78,
     "cond": "Fair",
-    "obs": "14 Oct 13:52 pm EDT"
+    "obs": "14 Oct 19:52 pm EDT"
    },
    "periods": [
     {
@@ -71,7 +53,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Partly cloudy, with a low around 51."
+     "text": "Partly cloudy, with a low around 51. Northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Saturday",
@@ -93,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -121,33 +103,26 @@
     "title": "Mass. teachers report widespread anxiety and depression among students, survey finds",
     "url": "https://www.wbur.org/news/2026/10/14/massachusetts-public-school-teachers-student-mental-health",
     "gathered": "2026-10-14T18:48:09Z"
-   },
-   {
-    "h": "3-day dangerous driving crackdown starts",
-    "b": "A three-day police crackdown on dangerous driving begins Tuesday on highways across New England.",
-    "date": "2026-10-13",
-    "url": "https://www.wbur.org/news/2026/10/13/police-traffic-operation-wicked-safe-ma-nh-highways",
-    "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 75,
-    "cond": "Mostly Cloudy",
-    "obs": "14 Oct 13:54 pm EDT"
+    "temp": 67,
+    "cond": "A Few Clouds",
+    "obs": "14 Oct 19:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Mostly clear, with a low around 50. Northwest wind 7 to 9 mph, with gusts as high as 21 mph. "
+     "text": "Partly cloudy, with a low around 50. Northwest wind 8 to 10 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. North wind 5 to 10 mph, with gusts as high as 23 mph. "
+     "text": "Sunny, with a high near 60. Northwest wind 6 to 13 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday Night",
@@ -159,7 +134,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 66,
-     "text": "Showers, mainly before 5pm.  Patchy fog before 2pm. High near 66. Southeast wind 8 to 11 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%."
+     "text": "Showers, mainly before 5pm.  Patchy fog before 2pm. High near 66. Southeast wind 8 to 11 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
@@ -187,7 +162,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,83 +174,55 @@
   },
   "local": [
    {
+    "h": "Metra shows off battery-powered train",
+    "b": "The first battery-powered train built for North America, which could run by 2028, is on display at LaSalle Street Station through 6 p.m. Thursday.",
+    "date": "2026-10-14",
+    "publisher": "WBEZ",
+    "title": "Public gets first peek at Metra's future battery-powered trains, a North American first",
+    "url": "https://www.wbez.org/transportation/2026/10/14/metra-battery-powered-train-stadler-lasalle-station",
+    "published": "2026-10-14T21:59:52Z",
+    "updated": "2026-10-14T21:59:52Z",
+    "gathered": "2026-10-15T00:44:13Z"
+   },
+   {
     "h": "Endeavor Health to merge with Rush",
     "b": "Endeavor Health plans to merge under Rush University System for Health, creating a 12-hospital system if regulators approve.",
     "date": "2026-10-14",
-    "publisher": "WBEZ",
-    "title": "Endeavor Health, Rush announce proposed merged healthcare system",
     "url": "https://www.wbez.org/health-medicine/2026/10/14/endeavor-health-rush-announce-proposed-merged-healthcare-system",
-    "published": "2026-10-14T14:31:00Z",
-    "updated": "2026-10-14T14:31:00Z",
     "gathered": "2026-10-14T18:48:09Z"
    },
    {
     "h": "Woman reports assault at UChicago frat party",
     "b": "A 21-year-old woman told police she was sexually assaulted during a party at the Alpha Epsilon Pi house near campus; two friends said they intervened.",
     "date": "2026-10-14",
-    "publisher": "WBEZ",
-    "title": "Group cheered as woman was sexually assaulted at University of Chicago frat house, police report says",
     "url": "https://www.wbez.org/crime/2026/10/14/university-of-chicago-sexual-assault-alpha-epsilon-pi",
-    "published": "2026-10-14T13:54:58Z",
-    "updated": "2026-10-14T13:54:58Z",
     "gathered": "2026-10-14T13:56:42Z"
-   },
-   {
-    "h": "Pritzker, Bailey meet in only debate",
-    "b": "Gov. JB Pritzker and Republican Darren Bailey faced off Tuesday night in their only debate before their Nov. 3 rematch.",
-    "date": "2026-10-13",
-    "publisher": "WBEZ",
-    "title": "6 takeaways from the only gubernatorial debate between Gov. Pritzker and Darren Bailey",
-    "url": "https://www.wbez.org/government-politics/elections/2026/10/13/watch-illinois-gov-debate-jb-pritzker-darren-bailey-takeaways",
-    "published": "2026-10-14T01:15:07Z",
-    "updated": "2026-10-14T15:58:51Z",
-    "gathered": "2026-10-14T02:04:20Z"
-   },
-   {
-    "h": "Hotel workers strike; thousands may join",
-    "b": "Workers at six Chicago hotels walked off the job days before the Chicago Marathon, and workers at 40 more UNITE HERE Local 1 hotels have authorized a strike.",
-    "date": "2026-10-13",
-    "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/13/hundreds-of-chicagos-hotel-workers-are-on-strike-thousands-poised-to-join",
-    "gathered": "2026-10-13T19:27:05Z"
-   },
-   {
-    "h": "Elected CPS board may skip property tax hike",
-    "b": "Chicago's school board has long raised property taxes every year, but the newly elected board may not, even as CPS started the school year facing a $730 million deficit.",
-    "date": "2026-10-13",
-    "url": "https://www.wbez.org/education/chicago-school-board/2026/10/13/long-a-foregone-conclusion-property-tax-hikes-will-no-longer-be-a-given-under-elected-cps-board",
-    "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 61,
     "cond": "Overcast",
-    "obs": "14 Oct 12:53 pm CDT"
+    "obs": "14 Oct 18:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 61,
-     "text": "Mostly cloudy, with a steady temperature around 61. North northeast wind around 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "A 10 percent chance of showers after 5am.  Mostly cloudy, with a low around 58. North northeast wind around 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly cloudy, with a low around 58. North northeast wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 61,
-     "text": "Showers and thunderstorms likely before noon, then showers likely between noon and 1pm, then showers and possibly a thunderstorm after 1pm.  High near 61. East southeast wind 10 to 15 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Showers, with thunderstorms also possible after 4pm.  High near 61. East southeast wind 10 to 15 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Showers and possibly a thunderstorm before 2am, then a chance of showers.  Low around 52. Breezy, with an east southeast wind 10 to 15 mph becoming northwest 15 to 20 mph after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 80%."
+     "text": "Showers likely and possibly a thunderstorm.  Cloudy, with a low around 52. Breezy, with an east southeast wind 10 to 15 mph becoming northwest 15 to 20 mph after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Friday",
@@ -287,7 +234,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 47,
-     "text": "A 20 percent chance of showers before 1am.  Mostly cloudy, with a low around 47. Windy. "
+     "text": "A 20 percent chance of showers before 1am.  Mostly cloudy, with a low around 47. Windy, with a north wind 25 to 30 mph decreasing to 15 to 20 mph after midnight. Winds could gust as high as 40 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 57,
+     "text": "Sunny, with a high near 57."
     }
    ]
   },
@@ -303,7 +256,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -316,17 +269,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": " Light Drizzle Fog/Mist",
-    "obs": "14 Oct 11:58 am MDT"
+    "temp": 49,
+    "cond": " Light Drizzle",
+    "obs": "14 Oct 17:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 49,
-     "text": "Rain.  High near 49. North northeast wind around 9 mph, with gusts as high as 15 mph.  Chance of precipitation is 100%."
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -355,7 +302,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Clear, with a low around 34."
+     "text": "Clear, with a low around 34. Calm wind becoming southwest around 5 mph after midnight. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 75,
+     "text": "Sunny, with a high near 75."
     }
    ]
   },
@@ -371,7 +324,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -382,6 +335,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Red flag warning for LA County starts Thursday",
+    "b": "Heat, strong Santa Ana winds, low humidity and dry brush bring a risk of extreme fire behavior starting 6 a.m. Thursday.",
+    "date": "2026-10-14",
+    "publisher": "LAist",
+    "title": "LA County red flag warning starts Thursday for ‘extreme fire risk’ potential",
+    "url": "https://laist.com/news/climate-environment/la-county-red-flag-warning-santa-ana-winds-extreme-fire-risk",
+    "published": "2026-10-14T20:28:44Z",
+    "updated": "2026-10-14T21:56:13Z",
+    "gathered": "2026-10-15T00:44:13Z"
+   },
+   {
+    "h": "DOJ threatens California over voter rolls",
+    "b": "The Justice Department warned of legal action over what it says are noncitizens sent mail ballots in LA County for next month's election.",
+    "date": "2026-10-14",
+    "publisher": "LAist",
+    "title": "Justice Department threatens California with legal action over claim of noncitizens on voter rolls",
+    "url": "https://laist.com/news/politics/justice-department-threatens-california-with-legal-action-over-claim-of-noncitizens-on-voter-rolls",
+    "published": "2026-10-14T20:30:00Z",
+    "updated": "2026-10-14T20:30:00Z",
+    "gathered": "2026-10-15T00:44:13Z"
+   },
    {
     "h": "Ohtani in Dodgers lineup for NLCS Game 3",
     "b": "Manager Dave Roberts said Shohei Ohtani will play in Game 3 against the Milwaukee Brewers tonight.",
@@ -397,70 +372,13 @@
     "h": "Puente Hills Mall data center fight hits snag",
     "b": "Residents are fighting plans to turn the largely vacant mall in the City of Industry into warehouses, a bus station and a 10-megawatt data center.",
     "date": "2026-10-14",
-    "publisher": "LAist",
-    "title": "San Gabriel Valley residents fighting data centers hit a 12-mile-long snag",
     "url": "https://laist.com/news/climate-environment/san-gabriel-valley-residents-fighting-data-centers-hit-a-12-mile-long-snag",
-    "published": "2026-10-14T17:30:00Z",
-    "updated": "2026-10-14T17:30:00Z",
     "gathered": "2026-10-14T18:48:09Z"
-   },
-   {
-    "h": "Bass, Raman clash in mayoral debate",
-    "b": "Mayor Karen Bass and Councilmember Nithya Raman met in a tense, hour-long televised debate Tuesday night, three weeks before Election Day.",
-    "date": "2026-10-13",
-    "publisher": "LAist",
-    "title": "3 takeaways from Bass and Raman’s live televised mayoral debate",
-    "url": "https://laist.com/news/politics/3-takeaways-from-bass-and-ramans-live-televised-mayoral-debate",
-    "published": "2026-10-14T05:19:20Z",
-    "updated": "2026-10-14T05:57:00Z",
-    "gathered": "2026-10-14T07:54:55Z"
-   },
-   {
-    "h": "LA County to take over homeless count",
-    "b": "A homelessness planning body voted Tuesday to move the region's annual homeless count and federal funding applications from LAHSA to LA County, pending a federal judge's approval.",
-    "date": "2026-10-13",
-    "publisher": "LAist",
-    "title": "LA County to take over homeless count from LA Homeless Services Authority",
-    "url": "https://laist.com/news/housing-homelessness/la-county-homeless-count-homeless-services-authority",
-    "published": "2026-10-14T01:20:20Z",
-    "updated": "2026-10-14T01:31:50Z",
-    "gathered": "2026-10-14T02:04:20Z"
-   },
-   {
-    "h": "Keffe D gets 40 to life for Tupac murder",
-    "b": "Duane 'Keffe D' Davis was sentenced Tuesday to 40 years to life for orchestrating the 1996 killing of Tupac Shakur.",
-    "date": "2026-10-13",
-    "url": "https://laist.com/news/criminal-justice/duane-davis-sentence-40-years-to-life-orchestrating-tupac-shakur-murder",
-    "gathered": "2026-10-13T23:22:46Z"
-   },
-   {
-    "h": "465 Orange County workers go on strike",
-    "b": "More than 465 Orange County workers from Teamsters Local 952 walked off the job, which could delay road and flood channel maintenance and landfill operations.",
-    "date": "2026-10-13",
-    "url": "https://laist.com/news/orange-county-workers-strike",
-    "gathered": "2026-10-13T19:27:05Z"
-   },
-   {
-    "h": "Burbank Airport's new terminal opens",
-    "b": "After more than a decade and $1.3 billion, Hollywood Burbank Airport's new terminal opens to passengers Tuesday with the same 14 gates and much more room.",
-    "date": "2026-10-13",
-    "publisher": "LAist",
-    "title": "Hollywood Burbank Airport’s shiny new terminal is open for business",
-    "url": "https://laist.com/news/transportation/hollywood-burbank-airport-terminal-open",
-    "published": "2026-10-13T12:00:00Z",
-    "updated": "2026-10-13T20:50:47Z",
-    "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 81,
-     "text": "Sunny, with a high near 81. Northeast wind around 5 mph becoming west southwest in the afternoon. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -470,8 +388,8 @@
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 90,
-     "text": "Sunny, with a high near 90. North northeast wind 5 to 15 mph. "
+     "temp": 89,
+     "text": "Sunny, with a high near 89. North northeast wind 5 to 15 mph. "
     },
     {
      "name": "Thursday Night",
@@ -489,7 +407,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 70,
-     "text": "Mostly clear, with a low around 70."
+     "text": "Mostly clear, with a low around 70. East wind 5 to 10 mph becoming north in the evening. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 90,
+     "text": "Sunny, with a high near 90."
     }
    ]
   },
@@ -505,7 +429,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -516,6 +440,27 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Man shot by ICE says agents never identified selves",
+    "b": "The man wounded by immigration agents in Marble Hill last week says he did not know they were ICE until he woke up in the hospital.",
+    "date": "2026-10-14",
+    "publisher": "Gothamist",
+    "title": "Man shot by ICE in NYC's Marble Hill said federal officers never identified themselves",
+    "url": "https://gothamist.com/news/man-shot-by-ice-in-nycs-marble-hill-said-federal-officers-never-identified-themselves",
+    "published": "2026-10-14T21:26:00Z",
+    "updated": "2026-10-14T22:55:00Z",
+    "gathered": "2026-10-15T00:44:13Z"
+   },
+   {
+    "h": "National Grid gas bills to rise this winter",
+    "b": "About 1.2 million customers in Brooklyn, Queens and Staten Island will pay an average $87 more over five winter months.",
+    "date": "2026-10-14",
+    "publisher": "Gothamist",
+    "title": "National Grid customers in NYC will see higher gas bills this winter",
+    "url": "https://gothamist.com/news/national-grid-customers-in-nyc-will-see-higher-gas-bills-this-winter",
+    "published": "2026-10-14T20:25:00Z",
+    "gathered": "2026-10-15T00:44:13Z"
+   },
    {
     "h": "Suspects in detective stabbing plead not guilty",
     "b": "Sneider Mejia, 24, and D'Angelo Caraballo, 25, pleaded not guilty to charges including attempted murder of an off-duty NYPD detective in the Bronx.",
@@ -553,8 +498,7 @@
     "publisher": "Gothamist",
     "title": "NY measles outbreak more widespread than official count, health officials say",
     "url": "https://gothamist.com/news/ny-measles-outbreak-more-widespread-than-official-count-health-officials-say",
-    "published": "2026-10-14T12:00:00Z",
-    "updated": "2026-10-14T18:10:00Z",
+    "published": "2026-10-14T18:10:00Z",
     "gathered": "2026-10-14T13:56:42Z"
    },
    {
@@ -566,116 +510,26 @@
     "url": "https://gothamist.com/news/the-bronx-is-getting-a-new-casino-and-a-reimagined-ferry-point-park-too",
     "published": "2026-10-14T10:30:54Z",
     "gathered": "2026-10-14T13:56:42Z"
-   },
-   {
-    "h": "Hochul, Blakeman spar in governor debate",
-    "b": "Gov. Kathy Hochul and Republican Bruce Blakeman clashed over immigration, Trump and the cost of living in their 60-minute debate Tuesday night.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "NY Gov. Kathy Hochul, Bruce Blakeman spar over immigration, cost of living in debate",
-    "url": "https://gothamist.com/news/ny-gov-kathy-hochul-bruce-blakeman-spar-over-immigration-cost-of-living-in-debate",
-    "published": "2026-10-14T01:05:08Z",
-    "gathered": "2026-10-14T02:04:20Z"
-   },
-   {
-    "h": "Port Authority bus terminal work starts Thursday",
-    "b": "A decade of disruptions for Midtown Bus Terminal commuters begins Thursday as the Port Authority starts its next construction phase.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "Years of bus headaches start Thursday as Port Authority advances Midtown terminal work",
-    "url": "https://gothamist.com/news/years-of-bus-headaches-start-thursday-as-port-authority-advances-midtown-terminal-work",
-    "published": "2026-10-13T20:47:00Z",
-    "gathered": "2026-10-13T23:22:46Z"
-   },
-   {
-    "h": "Dolan hosts Blakeman fundraiser at Knicks game",
-    "b": "Knicks owner James Dolan is hosting a Republican fundraiser for Bruce Blakeman at Thursday's preseason game against the Raptors.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "Dolan's offer: Donations to Blakeman for Knicks tickets",
-    "url": "https://gothamist.com/news/dolans-offer-donations-to-blakeman-for-knicks-tickets",
-    "published": "2026-10-13T20:34:07Z",
-    "gathered": "2026-10-13T23:22:46Z"
-   },
-   {
-    "h": "Officials urge Target boycott over ICE staging",
-    "b": "City officials urged a Target boycott after reports that ICE agents used its Marble Hill store's parking lot as a staging area.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "NYC officials call for Target boycott, say ICE staged at Marble Hill lot before shooting",
-    "url": "https://gothamist.com/news/nyc-officials-call-for-target-boycott-say-ice-staged-at-marble-hill-lot-before-shooting",
-    "published": "2026-10-13T19:23:16Z",
-    "gathered": "2026-10-13T19:27:05Z"
-   },
-   {
-    "h": "Council to vote on carriage horse ban Oct. 22",
-    "b": "Council Speaker Julie Menin said the City Council will vote Oct. 22 on banning Central Park's carriage horse industry.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "NYC Council, Mayor Mamdani agree to end Central Park's carriage horse industry",
-    "url": "https://gothamist.com/news/nyc-council-set-to-ban-central-parks-carriage-horse-industry",
-    "published": "2026-10-14T01:04:00Z",
-    "gathered": "2026-10-13T19:27:05Z"
-   },
-   {
-    "h": "22 NYC food pantries to offer pet food",
-    "b": "Starting Monday, 22 city-funded food pantries will provide dog and cat food using about $500,000 in city funding.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "22 New York City food pantries to start offering pet food",
-    "url": "https://gothamist.com/news/22-nyc-food-pantries-to-start-offering-pet-food",
-    "published": "2026-10-13T18:01:00Z",
-    "gathered": "2026-10-13T19:27:05Z"
-   },
-   {
-    "h": "NY Public Radio CEO steps down after 8 months",
-    "b": "Christy Tanner, who took over New York Public Radio in February, is stepping down. The organization gave no reason.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "New York Public Radio CEO steps down after 8 months on job",
-    "url": "https://gothamist.com/news/new-york-public-radio-ceo-steps-down-after-8-months-on-job",
-    "published": "2026-10-13T13:03:00Z",
-    "gathered": "2026-10-13T13:28:19Z"
-   },
-   {
-    "h": "Cyclist killed by ambulance on Staten Island",
-    "b": "A cyclist riding the wrong way on Richmond Ave in Bulls Head was fatally struck by a turning ambulance Monday night, the NYPD said. The ambulance was not carrying a patient.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "Cyclist dies in wrong-way crash with an ambulance on Staten Island",
-    "url": "https://gothamist.com/news/cyclist-dies-in-wrong-way-crash-with-an-ambulance-on-staten-island",
-    "published": "2026-10-13T12:28:16Z",
-    "gathered": "2026-10-13T13:28:19Z"
-   },
-   {
-    "h": "Taxi union, Uber seek driver healthcare",
-    "b": "NYC's taxi union has teamed with Uber and a hedge fund to demand healthcare for drivers after four driver deaths.",
-    "date": "2026-10-13",
-    "publisher": "Gothamist",
-    "title": "NYC's taxi union teams with Uber, private equity firm to demand healthcare after 4 driver deaths",
-    "url": "https://gothamist.com/news/nycs-taxi-union-teams-with-uber-hedge-fund-to-demand-healthcare-4-driver-deaths",
-    "published": "2026-10-13T19:27:00Z",
-    "gathered": "2026-10-13T12:03:04Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 73,
     "cond": "Fair",
-    "obs": "14 Oct 13:51 pm EDT"
+    "obs": "14 Oct 19:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Partly cloudy, with a low around 58. North wind 10 to 14 mph. "
+     "text": "Partly cloudy, with a low around 58. North wind 14 to 16 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64. North wind 6 to 10 mph. "
+     "text": "Sunny, with a high near 64. North wind 9 to 13 mph. "
     },
     {
      "name": "Thursday Night",
@@ -693,13 +547,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Showers likely, mainly between 8pm and 2am.  Mostly cloudy, with a low around 50. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers and thunderstorms likely.  Mostly cloudy, with a low around 50. West wind around 17 mph becoming northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 53,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 53. Breezy. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 10am. Breezy. "
     }
    ]
   },
@@ -715,7 +569,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -737,55 +591,6 @@
     "published": "2026-10-14T14:20:08Z",
     "updated": "2026-10-14T14:20:09Z",
     "gathered": "2026-10-14T18:48:09Z"
-   },
-   {
-    "h": "France passes gender-violence bill",
-    "b": "The National Assembly overwhelmingly passed a comprehensive bill against gender-based and sexual violence. It now goes to the more conservative Senate.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261014/prison-for-dk-pics-france-passes-wide-ranging-gender-violence-bill",
-    "gathered": "2026-10-14T10:10:11Z"
-   },
-   {
-    "h": "Lescure denies France in debt 'snowball'",
-    "b": "Economy Minister Roland Lescure denied France is trapped in a debt 'snowball' as he pressed opposition parties to pass the 2027 budget.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261014/french-economy-minister-denies-country-caught-in-debt-snowball",
-    "gathered": "2026-10-14T07:54:55Z"
-   },
-   {
-    "h": "160,000 join student protests, officials say",
-    "b": "Official estimates put Tuesday's turnout for protests backing French lycée students at about 160,000, just over half the previous week's.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261013/french-authorities-say-161500-turned-out-for-tuesdays-student-demos",
-    "gathered": "2026-10-13T16:13:43Z"
-   },
-   {
-    "h": "Airports demand EES rethink over delays",
-    "b": "Europe's airports and airlines are demanding changes to the EU's Entry/Exit System, citing 'unacceptable' delays.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261013/europes-airports-and-airlines-demand-ees-rethink-as-unacceptable-delays-continue/",
-    "gathered": "2026-10-13T12:03:04Z"
-   },
-   {
-    "h": "Paris protest marches set for Tuesday",
-    "b": "Students, teachers and unions are expected to march in Paris on Tuesday, October 13th. Several metro stations will close starting at 9am.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261013/map-what-are-the-routes-for-tuesdays-paris-protest-marches",
-    "gathered": "2026-10-13T07:15:48Z"
-   },
-   {
-    "h": "France braces for new student demonstrations",
-    "b": "France readied Tuesday for fresh nationwide demonstrations backing students who have protested poor classroom conditions for weeks, amid fears of further violence.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261013/france-braces-for-fresh-nationwide-student-demonstrations",
-    "gathered": "2026-10-13T07:15:48Z"
-   },
-   {
-    "h": "Glucksmann: 'battle begins' to unite the left",
-    "b": "Presidential candidate Raphael Glucksmann launched a bid to unite France's fragmented left ahead of next year's election, hours after a protester flour-bombed him.",
-    "date": "2026-10-13",
-    "url": "https://www.thelocal.fr/20261013/french-presidential-hopeful-glucksmann-says-battle-begins-to-revive-divided-left",
-    "gathered": "2026-10-13T07:15:48Z"
    }
   ],
   "weather": {
@@ -804,7 +609,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "goodnews": [
    {
     "h": "Chef sets 2.78m pâté en croûte record",
@@ -827,29 +632,31 @@
   },
   "local": [
    {
-    "h": "Record 2 million green crabs caught in WA",
-    "b": "More than 2 million invasive European green crabs were trapped in Washington from July 2025 to June 2026, more than all previous years combined.",
-    "date": "2026-10-13",
-    "url": "https://www.kuow.org/environment/2026-10-13/two-million-invasive-green-crabs-captured-along-washington-state-shorelines",
-    "gathered": "2026-10-14T02:04:20Z"
+    "h": "Fall City teen to be tried as adult in killings",
+    "b": "A judge ruled the teen accused of killing his parents and three siblings two years ago will face trial in adult court.",
+    "date": "2026-10-14",
+    "publisher": "KUOW",
+    "title": "Fall City teen accused of murdering parents, siblings will be tried as adult",
+    "url": "https://www.kuow.org/crime/2026-10-14/fall-city-teen-accused-of-murdering-parents-siblings-will-be-tried-as-adult",
+    "published": "2026-10-14T23:01:50Z",
+    "updated": "2026-10-14T23:01:50Z",
+    "gathered": "2026-10-15T00:44:13Z"
    },
    {
-    "h": "Five races could reshape WA Supreme Court",
-    "b": "A majority of Washington Supreme Court seats are on the ballot, and the five nonpartisan races are drawing national attention.",
-    "date": "2026-10-13",
-    "url": "https://www.kuow.org/elections/2026-10-13/court-watchers-have-eyes-on-races-to-reshape-washington-supreme-court",
-    "gathered": "2026-10-13T12:03:04Z"
+    "h": "Mayor Wilson pushes gun violence plan",
+    "b": "After shootings over four days killed two, Mayor Katie Wilson said she is moving as fast as possible on her gun violence plan.",
+    "date": "2026-10-14",
+    "publisher": "KUOW",
+    "title": "Seattle Mayor Wilson says she’s working ‘as fast as possible’ to implement gun violence plan",
+    "url": "https://www.kuow.org/crime/2026-10-14/seattle-mayor-wilson-says-shes-working-as-fast-as-possible-to-implement-gun-violence-plan",
+    "published": "2026-10-14T21:21:21Z",
+    "updated": "2026-10-14T21:21:21Z",
+    "gathered": "2026-10-15T00:44:13Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 65,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 65. Light and variable wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -878,7 +685,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 56,
-     "text": "A 40 percent chance of rain after 11pm.  Mostly cloudy, with a low around 56."
+     "text": "A 40 percent chance of rain after 11pm.  Mostly cloudy, with a low around 56. Light south southwest wind becoming south 8 to 13 mph in the evening. Winds could gust as high as 21 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 61,
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 61. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -894,7 +707,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-14T22:09:00Z",
+  "updatedAt": "2026-10-15T01:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
