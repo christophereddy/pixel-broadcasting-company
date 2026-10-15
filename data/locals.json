@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 78,
+    "temp": 71,
     "cond": "Fair",
-    "obs": "14 Oct 19:52 pm EDT"
+    "obs": "15 Oct 01:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 64,
-     "text": "Mostly clear, with a low around 64. Calm wind. "
+     "text": "Clear, with a low around 64. Calm wind. "
     },
     {
      "name": "Thursday",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -107,46 +107,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "A Few Clouds",
-    "obs": "14 Oct 19:54 pm EDT"
+    "temp": 58,
+    "cond": "Partly Cloudy",
+    "obs": "15 Oct 01:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 50,
-     "text": "Partly cloudy, with a low around 50. Northwest wind 8 to 10 mph, with gusts as high as 23 mph. "
+     "temp": 51,
+     "text": "Clear, with a low around 51. Northwest wind around 11 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. Northwest wind 6 to 13 mph, with gusts as high as 25 mph. "
+     "text": "Sunny, with a high near 60. North wind 5 to 13 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "A chance of showers, mainly after 5am.  Increasing clouds, with a low around 48. Light south wind.  Chance of precipitation is 30%."
+     "temp": 46,
+     "text": "Partly cloudy, with a low around 46. Calm wind becoming south around 5 mph after midnight. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 66,
-     "text": "Showers, mainly before 5pm.  Patchy fog before 2pm. High near 66. Southeast wind 8 to 11 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 68,
+     "text": "Showers, mainly before 4pm.  Patchy fog before 8am, then patchy fog after 9am. High near 68. Southeast wind 8 to 13 mph, with gusts as high as 29 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Showers, mainly before 4am.  Patchy fog between 8pm and 1am. Low around 45. Southwest wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%."
+     "temp": 44,
+     "text": "Showers likely, mainly between 9pm and 2am.  Mostly cloudy, with a low around 44. Southwest wind around 10 mph becoming northwest after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 50,
-     "text": "Partly sunny, with a high near 50. Northwest wind 15 to 18 mph, with gusts as high as 32 mph. "
+     "text": "A chance of showers, mainly before 7am.  Partly sunny, with a high near 50. Northwest wind around 14 mph, with gusts as high as 31 mph.  Chance of precipitation is 30%."
     }
    ]
   },
@@ -162,7 +162,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -214,14 +214,14 @@
    "now": {
     "temp": 61,
     "cond": "Overcast",
-    "obs": "14 Oct 18:53 pm CDT"
+    "obs": "14 Oct 23:53 pm CDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly cloudy, with a low around 58. North northeast wind around 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly cloudy, with a low around 58. East northeast wind around 15 mph. "
     },
     {
      "name": "Thursday",
@@ -267,7 +267,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -280,16 +280,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": " Light Drizzle",
-    "obs": "14 Oct 17:58 pm MDT"
+    "temp": 44,
+    "cond": " Fog",
+    "obs": "14 Oct 23:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 39,
-     "text": "Rain, mainly before midnight.  Low around 39. North wind 6 to 10 mph, with gusts as high as 16 mph.  Chance of precipitation is 90%."
+     "temp": 44,
+     "text": "A 50 percent chance of rain.  Cloudy, with a steady temperature around 44. North wind 6 to 10 mph, with gusts as high as 16 mph. "
     },
     {
      "name": "Thursday",
@@ -335,7 +335,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -346,6 +346,15 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Dodgers on brink after 6-2 loss to Brewers",
+    "b": "Blake Snell struck out nine but gave up back-to-back homers after being sent out for the seventh in NLCS Game 3.",
+    "date": "2026-10-14",
+    "publisher": "CBS Sports",
+    "title": "Dodgers manager Dave Roberts explains leaving Blake Snell in before costly back-to-back home runs in Game 3",
+    "url": "https://www.cbssports.com/mlb/news/dodgers-blake-snell-dave-roberts-home-runs-brewers-nlcs-game-3/",
+    "gathered": "2026-10-15T06:14:29Z"
+   },
    {
     "h": "Red flag warning for LA County starts Thursday",
     "b": "Heat, strong Santa Ana winds, low humidity and dry brush bring a risk of extreme fire behavior starting 6 a.m. Thursday.",
@@ -394,7 +403,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Clear, with a low around 61. West southwest wind 5 to 10 mph becoming north northeast after midnight. "
+     "text": "Clear, with a low around 61. North northeast wind 5 to 10 mph. "
     },
     {
      "name": "Thursday",
@@ -440,7 +449,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -525,46 +534,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 73,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "14 Oct 19:51 pm EDT"
+    "obs": "15 Oct 01:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 58,
-     "text": "Partly cloudy, with a low around 58. North wind 14 to 16 mph. "
+     "temp": 57,
+     "text": "Partly cloudy, with a low around 57. North wind around 10 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64. North wind 9 to 13 mph. "
+     "text": "Mostly sunny, with a high near 64. North wind 6 to 11 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 60,
-     "text": "Showers after 2am.  Low around 60. Southeast wind 7 to 11 mph.  Chance of precipitation is 80%."
+     "temp": 59,
+     "text": "Showers, mainly after 5am.  Low around 59. Southeast wind 8 to 10 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 74,
-     "text": "Showers, with thunderstorms also possible after 5pm.  High near 74. Southwest wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers before 11am, then a slight chance of thunderstorms after 5pm.  High near 74. Southwest wind around 14 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Showers and thunderstorms likely.  Mostly cloudy, with a low around 50. West wind around 17 mph becoming northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers likely and possibly a thunderstorm.  Mostly cloudy, with a low around 50. West wind 14 to 18 mph becoming northwest after midnight.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 53,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 10am. Breezy. "
+     "temp": 52,
+     "text": "A 30 percent chance of showers before 8am.  Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 9am. Breezy. "
     }
    ]
   },
@@ -580,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -620,7 +629,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "goodnews": [
    {
     "h": "Chef sets 2.78m pâté en croûte record",
@@ -729,7 +738,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T04:09:00Z",
+  "updatedAt": "2026-10-15T07:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

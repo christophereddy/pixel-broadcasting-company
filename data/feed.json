@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-15T04:09:00Z",
+ "updatedAt": "2026-10-15T07:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "North Korea tests submarine-launched missiles",
+   "b": "North Korea test-fired two types of submarine-launched strategic cruise missiles off its east coast on Wednesday, state media KCNA reported.",
+   "date": "2026-10-15",
+   "publisher": "Al Jazeera",
+   "title": "North Korea tests two submarine-launched missiles, state media reports",
+   "url": "https://www.aljazeera.com/news/2026/10/15/north-korea-tests-two-submarine-launched-missiles-state-media-reports",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
   {
    "h": "Iran war: Ships sunk in Hormuz, Houthis hit Riyadh",
    "b": "Al Jazeera reports cargo ships sunk in the Strait of Hormuz and a Houthi claim of an attack on Riyadh.",
@@ -19,8 +28,6 @@
    "h": "Ukraine accuses SpaceX of throttling Starlink",
    "b": "A Zelenskyy adviser said Starlink service was limited overnight for terminals moving over 100mph, curbing Ukraine's ability to fly drones that rely on satellite internet.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "Musk says US military controls Starlink’s limits after Ukraine outcry",
    "url": "https://www.aljazeera.com/news/2026/10/14/ukraine-accuses-elon-musks-spacex-of-throttling-starlink-terminals",
    "gathered": "2026-10-14T18:48:09Z"
   },
@@ -62,11 +69,18 @@
  ],
  "national": [
   {
+   "h": "OpenAI bugging suspect booked one-way flight",
+   "b": "Prosecutors say former OpenAI engineer Abdulrahman Alfozan, accused of bugging the company's headquarters, had booked a one-way flight to Saudi Arabia before his arrest.",
+   "date": "2026-10-15",
+   "publisher": "Al Jazeera",
+   "title": "OpenAI bugging suspect allegedly booked one-way trip to Saudi Arabia",
+   "url": "https://www.aljazeera.com/economy/2026/10/15/openai-bugging-suspect-allegedly-booked-one-way-trip-to-saudi-arabia",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
    "h": "ICE rejects call for auto-recording body cameras",
    "b": "ICE rejected a Government Accountability Office report recommending its agents wear body cameras that activate automatically.",
    "date": "2026-10-14",
-   "publisher": "Al Jazeera",
-   "title": "ICE rejects recommendation for body cameras that automatically record",
    "url": "https://www.aljazeera.com/news/2026/10/14/ice-pushes-back-on-report-suggesting-body-cameras-that-automatically-record",
    "gathered": "2026-10-15T00:44:13Z"
   },
@@ -102,6 +116,24 @@
  ],
  "politics": [
   {
+   "h": "Administration seeks to strip Omar's citizenship",
+   "b": "The Trump administration is investigating Rep. Ilhan Omar to revoke her citizenship and eventually deport her, the Wall Street Journal reported, with grand jury subpoenas issued to relatives.",
+   "date": "2026-10-15",
+   "publisher": "Al Jazeera",
+   "title": "Trump administration seeks to strip Ilhan Omar of US citizenship: WSJ",
+   "url": "https://www.aljazeera.com/news/2026/10/15/trump-administration-seeks-to-strip-ilhan-omar-of-us-citizenship-wsj",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
+   "h": "Trump says leakers \"should be shot\"",
+   "b": "At a rally in Bullhead City, Arizona, Trump said people who leak government information to the media should be shot.",
+   "date": "2026-10-15",
+   "publisher": "Al Jazeera",
+   "title": "Trump suggests those who leak government information should ‘be shot’",
+   "url": "https://www.aljazeera.com/news/2026/10/15/trump-suggests-those-who-leak-government-information-should-be-shot",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
    "h": "Lisa Cook's lawyers call White House hearing biased",
    "b": "Fed Governor Lisa Cook won't attend a Nov. 5 hearing before a White House panel; her lawyer said the earliest she could appear is after the Fed's Dec. 8-9 meeting.",
    "date": "2026-10-14",
@@ -121,6 +153,28 @@
  ],
  "international": [
   {
+   "h": "Teen dies as heavy rain floods Istanbul",
+   "b": "A 14-year-old boy was electrocuted after stepping into a puddle in Istanbul's Fatih district as heavy rain caved in roads and snarled traffic.",
+   "date": "2026-10-15",
+   "place": "Istanbul",
+   "tz": "Europe/Istanbul",
+   "publisher": "Al Jazeera",
+   "title": "Teenager dies as heavy rain floods Istanbul",
+   "url": "https://www.aljazeera.com/news/2026/10/15/teenager-dies-as-heavy-rain-floods-istanbul",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
+   "h": "Israel has detained 2,000+ Palestinian children",
+   "b": "The Palestinian Prisoner's Society says Israel has detained more than 2,000 Palestinian children since October 2023, with at least 350 now in Israeli prisons.",
+   "date": "2026-10-15",
+   "place": "Ramallah",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israel has detained more than 2,000 Palestinian children since 2023: report",
+   "url": "https://www.aljazeera.com/news/2026/10/15/israel-has-detained-more-than-2000-palestinian-children-since-2023-report",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
    "h": "Costa Rica opens 5,100-bed mega-prison",
    "b": "President Laura Fernandez opened a high-security prison for organised crime amid near-record homicides, as Bukele-style crackdowns spread across Latin America.",
    "date": "2026-10-14",
@@ -137,8 +191,6 @@
    "date": "2026-10-14",
    "place": "Mexico City",
    "tz": "America/Mexico_City",
-   "publisher": "Al Jazeera",
-   "title": "Mexico to force Meta, TikTok, and X to better protect minors on platform",
    "url": "https://www.aljazeera.com/news/2026/10/14/mexico-to-force-meta-tiktok-and-x-to-better-protect-minors-on-platform",
    "gathered": "2026-10-15T00:44:13Z"
   },
@@ -148,8 +200,6 @@
    "date": "2026-10-14",
    "place": "Jerusalem",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Israel’s former security chief sues Netanyahu for October 7 defamation",
    "url": "https://www.aljazeera.com/news/2026/10/14/israels-former-security-chief-sues-netanyahu-for-october-7-defamation",
    "gathered": "2026-10-14T19:10:03Z"
   },
@@ -304,6 +354,15 @@
  "science": [],
  "sports": [
   {
+   "h": "Brewers beat Dodgers 6-2, lead NLCS",
+   "b": "Milwaukee rallied after Blake Snell was left in for the seventh inning, pushing the Dodgers to the brink of elimination.",
+   "date": "2026-10-14",
+   "publisher": "CBS Sports",
+   "title": "Dodgers manager Dave Roberts explains leaving Blake Snell in before costly back-to-back home runs in Game 3",
+   "url": "https://www.cbssports.com/mlb/news/dodgers-blake-snell-dave-roberts-home-runs-brewers-nlcs-game-3/",
+   "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
    "h": "Real Madrid edges Roma 4-3 in Mourinho return",
    "b": "Jose Mourinho's Real Madrid rallied for a late 4-3 Champions League win at Roma, while PSG routed Manchester City.",
    "date": "2026-10-14",
@@ -426,46 +485,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 73,
+   "temp": 62,
    "cond": "Fair",
-   "obs": "14 Oct 19:51 pm EDT"
+   "obs": "15 Oct 01:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 58,
-    "text": "Partly cloudy, with a low around 58. North wind 14 to 16 mph. "
+    "temp": 57,
+    "text": "Partly cloudy, with a low around 57. North wind around 10 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 64,
-    "text": "Sunny, with a high near 64. North wind 9 to 13 mph. "
+    "text": "Mostly sunny, with a high near 64. North wind 6 to 11 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 60,
-    "text": "Showers after 2am.  Low around 60. Southeast wind 7 to 11 mph.  Chance of precipitation is 80%."
+    "temp": 59,
+    "text": "Showers, mainly after 5am.  Low around 59. Southeast wind 8 to 10 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 74,
-    "text": "Showers, with thunderstorms also possible after 5pm.  High near 74. Southwest wind 10 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "text": "Showers before 11am, then a slight chance of thunderstorms after 5pm.  High near 74. Southwest wind around 14 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 50,
-    "text": "Showers and thunderstorms likely.  Mostly cloudy, with a low around 50. West wind around 17 mph becoming northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "text": "Showers likely and possibly a thunderstorm.  Mostly cloudy, with a low around 50. West wind 14 to 18 mph becoming northwest after midnight.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 53,
-    "text": "Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 10am. Breezy. "
+    "temp": 52,
+    "text": "A 30 percent chance of showers before 8am.  Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 9am. Breezy. "
    }
   ]
  },
