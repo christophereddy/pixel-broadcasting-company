@@ -20,19 +20,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 66,
     "cond": "Fair",
-    "obs": "15 Oct 02:52 am EDT"
+    "obs": "15 Oct 07:52 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 88,
      "text": "Sunny, with a high near 88. Calm wind. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 65,
      "text": "Mostly clear, with a low around 65. Calm wind. "
@@ -53,7 +53,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64."
+     "text": "Sunny, with a high near 64. North wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Saturday Night",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,6 +86,15 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "New rules tighten nursing home owner scrutiny",
+    "b": "The Public Health Council approved rules requiring enhanced suitability reviews of nursing home operators, expected to take effect in early November.",
+    "date": "2026-10-15",
+    "publisher": "WBUR",
+    "title": "New rules let state scrutinize nursing home owners’ finances, records",
+    "url": "https://www.wbur.org/news/2026/10/15/nursing-home-new-licenses-care-regulations",
+    "gathered": "2026-10-15T11:55:55Z"
+   },
    {
     "h": "State moves to revoke RegalCare nursing home licenses",
     "b": "Mass. public health officials issued notice to revoke the nursing home licenses of RegalCare CEO Eli Mirlis, citing serious quality and safety concerns.",
@@ -99,27 +108,25 @@
     "h": "Teachers report widespread student anxiety",
     "b": "A survey found Massachusetts teachers seeing widespread anxiety and depression among students.",
     "date": "2026-10-14",
-    "publisher": "WBUR",
-    "title": "Mass. teachers report widespread anxiety and depression among students, survey finds",
     "url": "https://www.wbur.org/news/2026/10/14/massachusetts-public-school-teachers-student-mental-health",
     "gathered": "2026-10-14T18:48:09Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 55,
     "cond": "A Few Clouds",
-    "obs": "15 Oct 02:54 am EDT"
+    "obs": "15 Oct 07:54 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 60,
      "text": "Sunny, with a high near 60. North wind 5 to 13 mph, with gusts as high as 24 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Partly cloudy, with a low around 46. Calm wind becoming south around 5 mph after midnight. "
@@ -134,7 +141,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Showers likely, mainly between 9pm and 2am.  Mostly cloudy, with a low around 44. Southwest wind around 10 mph becoming northwest after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 70%."
+     "text": "Showers likely, mainly between 9pm and 2am.  Mostly cloudy, with a low around 44. Southwest wind around 10 mph becoming northwest after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -162,7 +169,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -173,6 +180,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Obama's lookalike tan suit from HBO sketch is missing",
+    "b": "The stand-in tan suit Obama wore in a Larry David HBO sketch can't be located for now, and the original isn't in the new Obama museum either.",
+    "date": "2026-10-15",
+    "publisher": "WBEZ",
+    "title": "Lookalike tan suit Barack Obama wore on Larry David's HBO show is missing",
+    "url": "https://www.wbez.org/movies-tv/2026/10/15/obama-tan-suit-lookalike-missing-larry-david-show-hbo",
+    "published": "2026-10-15T11:40:23Z",
+    "updated": "2026-10-15T11:40:23Z",
+    "gathered": "2026-10-15T11:55:55Z"
+   },
    {
     "h": "CPS board president hopefuls spar at forum",
     "b": "Hilario Dominguez, Victor Henderson and Jessica Biggs laid out differing views on school ratings, closings and finances, three weeks before Election Day.",
@@ -212,34 +230,28 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 60,
     "cond": "Overcast",
-    "obs": "15 Oct 01:53 am CDT"
+    "obs": "15 Oct 06:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 57,
-     "text": "Mostly cloudy, with a low around 57. East wind around 15 mph, with gusts as high as 20 mph. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
-     "temp": 64,
-     "text": "Patchy drizzle with scattered showers before 1pm, then showers with patchy drizzle after 1pm.  High near 64. East southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 62,
+     "text": "Showers, mainly after 1pm.  High near 62. East southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Showers with patchy drizzle before 10pm, then patchy drizzle with scattered showers between 10pm and 1am.  Low around 52. Breezy, with a south southeast wind 10 to 20 mph becoming west northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Showers, mainly before 10pm.  Low around 52. Breezy, with a south southeast wind 10 to 20 mph becoming west northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 53,
-     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 53. Windy, with a west northwest wind 20 to 25 mph increasing to 25 to 30 mph in the afternoon. Winds could gust as high as 40 mph.  Chance of precipitation is 60%."
+     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 53. Windy, with a west northwest wind 20 to 25 mph increasing to 25 to 30 mph in the afternoon. Winds could gust as high as 40 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
@@ -251,7 +263,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 55,
-     "text": "Sunny, with a high near 55."
+     "text": "Sunny, with a high near 55. North wind 5 to 10 mph becoming west southwest in the afternoon. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Clear, with a low around 45."
     }
    ]
   },
@@ -267,7 +285,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -280,17 +298,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
-    "cond": " Fog",
-    "obs": "14 Oct 23:58 pm MDT"
+    "temp": 42,
+    "cond": "Overcast",
+    "obs": "15 Oct 04:58 am MDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "A 40 percent chance of showers.  Patchy fog.  Otherwise, cloudy, with a steady temperature around 44. North wind 6 to 8 mph. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
@@ -320,6 +332,12 @@
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42."
     }
    ]
   },
@@ -335,7 +353,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -400,19 +418,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 61,
-     "text": "Clear, with a low around 61. North northeast wind 5 to 10 mph. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 90,
      "text": "Sunny, with a high near 90. North northeast wind 5 to 15 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 69,
      "text": "Clear, with a low around 69. North wind 5 to 10 mph. "
@@ -433,7 +445,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 90,
-     "text": "Sunny, with a high near 90."
+     "text": "Sunny, with a high near 90. North northeast wind around 5 mph becoming south in the afternoon. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 67,
+     "text": "Mostly clear, with a low around 67."
     }
    ]
   },
@@ -449,7 +467,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -460,6 +478,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Police investigate death of 5-year-old in Queens",
+    "b": "Police found the girl unconscious after an apparent assault at a Richmond Hill home Wednesday evening, after her mother called 911.",
+    "date": "2026-10-15",
+    "publisher": "Gothamist",
+    "title": "NYPD investigating after 5-year-old Queens girl found dead",
+    "url": "https://gothamist.com/news/nypd-investigating-after-5-year-old-queens-girl-found-dead",
+    "published": "2026-10-15T11:10:08Z",
+    "gathered": "2026-10-15T11:55:55Z"
+   },
    {
     "h": "Man shot by ICE says agents never identified selves",
     "b": "The man wounded by immigration agents in Marble Hill last week says he did not know they were ICE until he woke up in the hospital.",
@@ -534,19 +562,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "15 Oct 02:51 am EDT"
+    "obs": "15 Oct 07:51 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
-     "text": "Mostly sunny, with a high near 64. North wind 6 to 11 mph. "
+     "text": "Sunny, with a high near 64. North wind 6 to 11 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Showers, mainly after 5am.  Low around 59. Southeast wind 8 to 10 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
@@ -567,7 +595,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 52,
-     "text": "A 30 percent chance of showers before 8am.  Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 9am. Breezy. "
+     "text": "A 30 percent chance of showers before 8am.  Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 9am. Breezy, with a north wind 17 to 20 mph. "
     },
     {
      "name": "Saturday Night",
@@ -589,7 +617,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -602,14 +630,32 @@
   },
   "local": [
    {
+    "h": "Paris taxi drivers stage airport blockades",
+    "b": "About 2,000 taxi drivers planned rolling roadblocks toward Charles de Gaulle on Thursday to protest competition from ride-hail drivers, with action possible through Saturday.",
+    "date": "2026-10-15",
+    "publisher": "The Local France",
+    "title": "Paris taxi drivers to stage blockades at airports",
+    "url": "https://www.thelocal.fr/20261015/paris-taxi-drivers-to-stage-blockades-at-airports",
+    "published": "2026-10-15T09:13:13Z",
+    "updated": "2026-10-15T09:13:14Z",
+    "gathered": "2026-10-15T11:55:55Z"
+   },
+   {
+    "h": "12 million French homes at risk of drought cracks",
+    "b": "About a third of French houses sit on clay soils that shrink and swell, a risk worsened by the record 2026 drought.",
+    "date": "2026-10-15",
+    "publisher": "The Local France",
+    "title": "12 million French homes at risk of cracks after record-breaking 2026 drought",
+    "url": "https://www.thelocal.fr/20261015/12-million-french-homes-at-risk-of-cracks-after-record-breaking-2026-drought",
+    "published": "2026-10-15T09:35:20Z",
+    "updated": "2026-10-15T09:35:21Z",
+    "gathered": "2026-10-15T11:55:55Z"
+   },
+   {
     "h": "Louvre chief warns of closure without overhaul",
     "b": "Christophe Leribault told Le Figaro the Louvre will eventually have to close to the public unless lawmakers approve a major renovation.",
     "date": "2026-10-14",
-    "publisher": "The Local France",
-    "title": "Louvre boss warns of closure risk without major renovations",
     "url": "https://www.thelocal.fr/20261014/louvre-boss-warns-of-closure-risk-without-major-renovations",
-    "published": "2026-10-14T14:20:08Z",
-    "updated": "2026-10-14T14:20:09Z",
     "gathered": "2026-10-14T18:48:09Z"
    }
   ],
@@ -629,17 +675,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "goodnews": [
    {
     "h": "Chef sets 2.78m pâté en croûte record",
     "b": "Laurent Bouilloud, owner of a restaurant near Grenoble, was declared world record holder for a 2.78m pâté en croûte verified by a court official.",
     "date": "2026-10-14",
-    "publisher": "The Local France",
-    "title": "Frenchman breaks world record with 2.78m-long pâté en croûte",
     "url": "https://www.thelocal.fr/20261014/frenchman-breaks-world-record-with-2-78m-long-pate-en-croute",
-    "published": "2026-10-14T13:13:54Z",
-    "updated": "2026-10-14T13:13:55Z",
     "gathered": "2026-10-14T13:56:42Z"
    }
   ]
@@ -677,23 +719,13 @@
     "h": "Mayor Wilson pushes gun violence plan",
     "b": "After shootings over four days killed two, Mayor Katie Wilson said she is moving as fast as possible on her gun violence plan.",
     "date": "2026-10-14",
-    "publisher": "KUOW",
-    "title": "Seattle Mayor Wilson says she’s working ‘as fast as possible’ to implement gun violence plan",
     "url": "https://www.kuow.org/crime/2026-10-14/seattle-mayor-wilson-says-shes-working-as-fast-as-possible-to-implement-gun-violence-plan",
-    "published": "2026-10-14T21:21:21Z",
-    "updated": "2026-10-14T21:21:21Z",
     "gathered": "2026-10-15T00:44:13Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. North wind 3 to 5 mph. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
@@ -723,6 +755,12 @@
      "kind": "high",
      "temp": 61,
      "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 61. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 47,
+     "text": "Partly cloudy, with a low around 47."
     }
    ]
   },
@@ -738,7 +776,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T10:10:00Z",
+  "updatedAt": "2026-10-15T13:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
