@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-15T13:18:00Z",
+ "updatedAt": "2026-10-15T16:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -14,6 +14,16 @@
    "title": "North Korea tests two submarine-launched missiles, state media reports",
    "url": "https://www.aljazeera.com/news/2026/10/15/north-korea-tests-two-submarine-launched-missiles-state-media-reports",
    "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
+   "h": "Pope Leo's lung recovering well after surgery",
+   "b": "Doctors said a chest X-ray showed good recovery and post-operative tests are normal; the Vatican said Leo has resumed working from the hospital.",
+   "date": "2026-10-15",
+   "publisher": "PBS NewsHour",
+   "title": "Doctors say Pope Leo's lung has recovered well from surgery and say his post-operative tests normal",
+   "url": "https://www.pbs.org/newshour/nation/doctors-say-pope-leos-lung-has-recovered-well-from-surgery-and-say-his-post-operative-tests-normal",
+   "published": "2026-10-15T13:11:05Z",
+   "gathered": "2026-10-15T13:18:34Z"
   },
   {
    "h": "Pakistan school roof collapse kills at least 29",
@@ -90,6 +100,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Some cut from ACA rolls are being added back",
+   "b": "After the administration dropped 760,000 people from Affordable Care Act plans citing fraud, CMS has reinstated a small number whose coverage should not have been canceled, KFF Health News reports.",
+   "date": "2026-10-15",
+   "publisher": "KUOW",
+   "title": "After booting 760K off ACA health plans, the Trump administration adds some people back",
+   "url": "https://www.kuow.org/npr-news/2026-10-15/after-booting-760k-off-aca-health-plans-the-trump-administration-adds-some-people-back",
+   "published": "2026-10-15T11:06:21Z",
+   "updated": "2026-10-15T12:22:33Z",
+   "gathered": "2026-10-15T13:18:34Z"
+  },
   {
    "h": "Abbott keeps Texas border emergency going",
    "b": "Texas Gov. Greg Abbott has renewed or amended his border disaster proclamation at least 69 times, 21 under Trump, even as the administration reports historic lows in crossings.",
@@ -463,13 +484,23 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Comptroller backs off pension investment in Israel bonds",
+   "b": "NYC Comptroller Mark Levine said he won't invest city pension funds in Israel bonds.",
+   "date": "2026-10-15",
+   "publisher": "Gothamist",
+   "title": "Early Addition: NYC comptroller backs off investing city pension funds in Israel bonds",
+   "url": "https://gothamist.com/news/early-addition-nyc-comptroller-backs-off-investing-city-pension-funds-in-israel-bonds",
+   "published": "2026-10-15T12:34:38Z",
+   "gathered": "2026-10-15T13:18:34Z"
+  },
+  {
    "h": "Police investigate death of 5-year-old in Queens",
    "b": "Police found the girl unconscious after an apparent assault at a Richmond Hill home Wednesday evening, after her mother called 911.",
    "date": "2026-10-15",
    "publisher": "Gothamist",
    "title": "NYPD investigating after 5-year-old Queens girl found dead",
    "url": "https://gothamist.com/news/nypd-investigating-after-5-year-old-queens-girl-found-dead",
-   "published": "2026-10-15T11:10:08Z",
+   "published": "2026-10-15T11:10:00Z",
    "gathered": "2026-10-15T11:55:55Z"
   },
   {
@@ -546,16 +577,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "15 Oct 07:51 am EDT"
+   "obs": "15 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 64,
-    "text": "Sunny, with a high near 64. North wind 6 to 11 mph. "
+    "text": "Sunny, with a high near 64. East wind 6 to 11 mph. "
    },
    {
     "name": "Tonight",

@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Fair",
-    "obs": "15 Oct 07:52 am EDT"
+    "temp": 70,
+    "cond": "A Few Clouds",
+    "obs": "15 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,8 +99,6 @@
     "h": "State moves to revoke RegalCare nursing home licenses",
     "b": "Mass. public health officials issued notice to revoke the nursing home licenses of RegalCare CEO Eli Mirlis, citing serious quality and safety concerns.",
     "date": "2026-10-14",
-    "publisher": "WBUR",
-    "title": "Mass. moves to strip licenses from a dozen RegalCare nursing homes",
     "url": "https://www.wbur.org/news/2026/10/14/massachusetts-regalcare-nursing-home-license-globe",
     "gathered": "2026-10-14T18:48:09Z"
    },
@@ -114,16 +112,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "A Few Clouds",
-    "obs": "15 Oct 07:54 am EDT"
+    "temp": 56,
+    "cond": "A Few Clouds and Breezy",
+    "obs": "15 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. North wind 5 to 13 mph, with gusts as high as 24 mph. "
+     "text": "Sunny, with a high near 60. North wind 5 to 13 mph. "
     },
     {
      "name": "Tonight",
@@ -169,7 +167,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -232,7 +230,7 @@
    "now": {
     "temp": 60,
     "cond": "Overcast",
-    "obs": "15 Oct 06:53 am CDT"
+    "obs": "15 Oct 07:53 am CDT"
    },
    "periods": [
     {
@@ -285,7 +283,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -300,17 +298,17 @@
    "now": {
     "temp": 42,
     "cond": "Overcast",
-    "obs": "15 Oct 04:58 am MDT"
+    "obs": "15 Oct 05:58 am MDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 54,
      "text": "A 50 percent chance of showers before 3pm.  Cloudy, then gradually becoming mostly sunny, with a high near 54. Breezy, with a north wind 9 to 17 mph, with gusts as high as 28 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 31,
      "text": "Mostly clear, with a low around 31. North wind 5 to 7 mph becoming calm  in the evening. "
@@ -331,7 +329,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76."
+     "text": "Sunny, with a high near 76. South southwest wind 5 to 7 mph becoming calm  in the morning. "
     },
     {
      "name": "Saturday Night",
@@ -353,7 +351,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -364,6 +362,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LAUSD starts making case for school closures",
+    "b": "With 40% fewer students than in the early 2000s but nearly as many schools, the district is beginning community meetings on closures and consolidation.",
+    "date": "2026-10-15",
+    "publisher": "LAist",
+    "title": "LAUSD begins to make the case for school closures, with many questions yet to be answered",
+    "url": "https://laist.com/news/education/lausd-community-meetings-school-closures-consolidation",
+    "published": "2026-10-15T12:00:00Z",
+    "updated": "2026-10-15T12:00:08Z",
+    "gathered": "2026-10-15T13:18:34Z"
+   },
+   {
+    "h": "Pilot offers nearly free daytime electricity",
+    "b": "A new California pilot tests whether nearly free power during sunny hours can shift use toward surplus solar energy.",
+    "date": "2026-10-15",
+    "publisher": "LAist",
+    "title": "A new pilot offers essentially free electricity during the day. Will it change people's behavior?",
+    "url": "https://laist.com/news/climate-environment/pilot-program-free-electricity-during-the-day",
+    "published": "2026-10-15T12:00:00Z",
+    "updated": "2026-10-15T12:00:05Z",
+    "gathered": "2026-10-15T13:18:34Z"
+   },
    {
     "h": "Dodgers on brink after 6-2 loss to Brewers",
     "b": "Blake Snell struck out nine but gave up back-to-back homers after being sent out for the seventh in NLCS Game 3.",
@@ -399,11 +419,7 @@
     "h": "Ohtani in Dodgers lineup for NLCS Game 3",
     "b": "Manager Dave Roberts said Shohei Ohtani will play in Game 3 against the Milwaukee Brewers tonight.",
     "date": "2026-10-14",
-    "publisher": "LAist",
-    "title": "Shohei Ohtani will be in Dodgers’ Game 3 lineup against Brewers",
     "url": "https://laist.com/news/shohei-ohtani-dodgers-game-3-lineup-against-brewers",
-    "published": "2026-10-14T17:21:57Z",
-    "updated": "2026-10-14T17:21:57Z",
     "gathered": "2026-10-14T19:10:03Z"
    },
    {
@@ -467,7 +483,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -479,13 +495,23 @@
   },
   "local": [
    {
+    "h": "Comptroller backs off pension investment in Israel bonds",
+    "b": "NYC Comptroller Mark Levine said he won't invest city pension funds in Israel bonds.",
+    "date": "2026-10-15",
+    "publisher": "Gothamist",
+    "title": "Early Addition: NYC comptroller backs off investing city pension funds in Israel bonds",
+    "url": "https://gothamist.com/news/early-addition-nyc-comptroller-backs-off-investing-city-pension-funds-in-israel-bonds",
+    "published": "2026-10-15T12:34:38Z",
+    "gathered": "2026-10-15T13:18:34Z"
+   },
+   {
     "h": "Police investigate death of 5-year-old in Queens",
     "b": "Police found the girl unconscious after an apparent assault at a Richmond Hill home Wednesday evening, after her mother called 911.",
     "date": "2026-10-15",
     "publisher": "Gothamist",
     "title": "NYPD investigating after 5-year-old Queens girl found dead",
     "url": "https://gothamist.com/news/nypd-investigating-after-5-year-old-queens-girl-found-dead",
-    "published": "2026-10-15T11:10:08Z",
+    "published": "2026-10-15T11:10:00Z",
     "gathered": "2026-10-15T11:55:55Z"
    },
    {
@@ -562,16 +588,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "15 Oct 07:51 am EDT"
+    "obs": "15 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64. North wind 6 to 11 mph. "
+     "text": "Sunny, with a high near 64. East wind 6 to 11 mph. "
     },
     {
      "name": "Tonight",
@@ -617,7 +643,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -675,7 +701,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "goodnews": [
    {
     "h": "Chef sets 2.78m pâté en croûte record",
@@ -708,11 +734,7 @@
     "h": "Fall City teen to be tried as adult in killings",
     "b": "A judge ruled the teen accused of killing his parents and three siblings two years ago will face trial in adult court.",
     "date": "2026-10-14",
-    "publisher": "KUOW",
-    "title": "Fall City teen accused of murdering parents, siblings will be tried as adult",
     "url": "https://www.kuow.org/crime/2026-10-14/fall-city-teen-accused-of-murdering-parents-siblings-will-be-tried-as-adult",
-    "published": "2026-10-14T23:01:50Z",
-    "updated": "2026-10-14T23:01:50Z",
     "gathered": "2026-10-15T00:44:13Z"
    },
    {
@@ -727,13 +749,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Sunny, with a high near 69. Light and variable wind becoming north northwest around 5 mph in the afternoon. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Mostly clear, with a low around 52. Light and variable wind. "
@@ -748,13 +770,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 55,
-     "text": "A 30 percent chance of rain after 11pm.  Mostly cloudy, with a low around 55. Light south wind increasing to 8 to 13 mph in the evening. Winds could gust as high as 20 mph. "
+     "text": "A 30 percent chance of rain after 11pm.  Increasing clouds, with a low around 55. Light south wind increasing to 8 to 13 mph in the evening. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 61,
-     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 61. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 61. South southwest wind 6 to 11 mph becoming west in the afternoon. Winds could gust as high as 20 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday Night",
@@ -776,7 +798,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-15T13:18:00Z",
+  "updatedAt": "2026-10-15T16:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
