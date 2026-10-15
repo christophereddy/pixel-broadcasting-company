@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-15T07:11:00Z",
+ "updatedAt": "2026-10-15T10:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -16,13 +16,13 @@
    "gathered": "2026-10-15T06:14:29Z"
   },
   {
-   "h": "Iran war: Ships sunk in Hormuz, Houthis hit Riyadh",
-   "b": "Al Jazeera reports cargo ships sunk in the Strait of Hormuz and a Houthi claim of an attack on Riyadh.",
-   "date": "2026-10-14",
+   "h": "Iran vows to fight on as ships sink in Hormuz",
+   "b": "Al Jazeera's live coverage: Tehran vows to keep fighting until the US accepts its demands as more ships sink in the Strait of Hormuz.",
+   "date": "2026-10-15",
    "publisher": "Al Jazeera",
-   "title": "Iran war updates: Cargo ships sunk in Hormuz, Houthis claim Riyadh attack",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east",
-   "gathered": "2026-10-14T07:54:55Z"
+   "title": "Iran vows to fight until US accepts demands; ships sink in Hormuz",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/15/iran-war-live-tehran-vows-to-fight-until-us-yields-as-ships-sink-in-hormuz",
+   "gathered": "2026-10-15T07:11:22Z"
   },
   {
    "h": "Ukraine accuses SpaceX of throttling Starlink",
@@ -180,8 +180,6 @@
    "date": "2026-10-14",
    "place": "Costa Rica",
    "tz": "America/Costa_Rica",
-   "publisher": "Al Jazeera",
-   "title": "Costa Rica opens mega-prison as Bukele model embraced across Latin America",
    "url": "https://www.aljazeera.com/news/2026/10/15/costa-rica-opens-mega-prison-as-bukele-model-embraced-across-latin-america",
    "gathered": "2026-10-15T00:44:13Z"
   },
@@ -485,17 +483,11 @@
  ],
  "weather": {
   "now": {
-   "temp": 62,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "15 Oct 01:51 am EDT"
+   "obs": "15 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 57,
-    "text": "Partly cloudy, with a low around 57. North wind around 10 mph. "
-   },
    {
     "name": "Thursday",
     "kind": "high",
@@ -525,6 +517,12 @@
     "kind": "high",
     "temp": 52,
     "text": "A 30 percent chance of showers before 8am.  Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 9am. Breezy. "
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 43,
+    "text": "Mostly clear, with a low around 43."
    }
   ]
  },
