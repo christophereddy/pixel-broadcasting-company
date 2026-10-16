@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T01:10:00Z",
+ "updatedAt": "2026-10-16T04:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,13 +35,13 @@
    "gathered": "2026-10-15T11:55:55Z"
   },
   {
-   "h": "Iran war: Houthi attack on Aden palace kills 5",
-   "b": "Al Jazeera's live coverage: five people were killed and 16 wounded in a Houthi attack on the presidential palace in Aden.",
-   "date": "2026-10-15",
+   "h": "Iran war: Saudi blasts Houthi \"war crimes\"",
+   "b": "Al Jazeera's live coverage: Saudi Arabia accuses the Houthis of war crimes, and the US issues a warning on Saudi airports.",
+   "date": "2026-10-16",
    "publisher": "Al Jazeera",
-   "title": "Five killed and 16 wounded in Houthi attack on presidential palace in Aden",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/15/iran-war-live-tehran-vows-to-fight-until-us-yields-as-ships-sink-in-hormuz",
-   "gathered": "2026-10-15T07:11:22Z"
+   "title": "Saudi blasts Houthi ‘war crimes’; US warns on Saudi airports",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports",
+   "gathered": "2026-10-16T01:34:42Z"
   }
  ],
  "national": [
@@ -50,10 +50,10 @@
    "b": "Officials told AP that five people are believed dead, including children, after a shooting at Silver Rail Elementary in Bend; police say the suspect is dead.",
    "date": "2026-10-15",
    "publisher": "KUOW",
-   "title": "5 people believed dead following shooting at Oregon elementary school, authorities say",
+   "title": "3 children, 1 teacher dead after shooting at Bend elementary school",
    "url": "https://www.kuow.org/crime/2026-10-15/2-hospitalized-after-bend-elementary-school-shooting-and-shooter-is-dead-police-say",
    "published": "2026-10-15T22:47:39Z",
-   "updated": "2026-10-15T23:09:58Z",
+   "updated": "2026-10-16T01:00:58Z",
    "gathered": "2026-10-15T23:11:21Z"
   },
   {
@@ -101,20 +101,14 @@
    "h": "AP-NORC poll: Voters frustrated, want change",
    "b": "Less than four weeks before Election Day, Democrats are more enthusiastic than Republicans and more voters want Democrats to control Congress.",
    "date": "2026-10-15",
-   "publisher": "PBS NewsHour",
-   "title": "Frustrated with Trump, voters overwhelmingly want change, AP-NORC poll finds",
    "url": "https://www.pbs.org/newshour/politics/frustrated-with-trump-voters-overwhelmingly-want-change-ap-norc-poll-finds",
-   "published": "2026-10-15T22:27:33Z",
    "gathered": "2026-10-15T23:11:21Z"
   },
   {
    "h": "Wisconsin issues guidance on federal agents at polls",
    "b": "The state elections commission sent clerks guidance on handling federal agents at polling places, over one Republican commissioner's objection.",
    "date": "2026-10-15",
-   "publisher": "PBS NewsHour",
-   "title": "Wisconsin elections officials issue guidance for handling federal agents at polls",
    "url": "https://www.pbs.org/newshour/politics/wisconsin-elections-officials-issue-guidance-for-handling-federal-agents-at-polls",
-   "published": "2026-10-15T21:37:21Z",
    "gathered": "2026-10-15T23:11:21Z"
   },
   {
@@ -146,8 +140,6 @@
    "h": "Administration seeks to strip Omar's citizenship",
    "b": "The Trump administration is investigating Rep. Ilhan Omar to revoke her citizenship and eventually deport her, the Wall Street Journal reported, with grand jury subpoenas issued to relatives.",
    "date": "2026-10-15",
-   "publisher": "Al Jazeera",
-   "title": "Trump administration seeks to strip Ilhan Omar of US citizenship: WSJ",
    "url": "https://www.aljazeera.com/news/2026/10/15/trump-administration-seeks-to-strip-ilhan-omar-of-us-citizenship-wsj",
    "gathered": "2026-10-15T06:14:29Z"
   },
@@ -160,6 +152,41 @@
   }
  ],
  "international": [
+  {
+   "h": "Iraq parliament completes al-Zaidi's cabinet",
+   "b": "Lawmakers approved 11 remaining portfolios and three deputy prime ministers, one of them under US sanctions, completing Prime Minister Ali al-Zaidi's government.",
+   "date": "2026-10-16",
+   "place": "Baghdad",
+   "tz": "Asia/Baghdad",
+   "publisher": "Al Jazeera",
+   "title": "Iraq parliament approves al-Zaidi’s cabinet amid growing economic concerns",
+   "url": "https://www.aljazeera.com/news/2026/10/16/iraq-parliament-approves-al-zaidis-cabinet-amid-growing-economic-concerns",
+   "gathered": "2026-10-16T01:34:42Z"
+  },
+  {
+   "h": "Drone strike on tanker in Romanian waters",
+   "b": "A drone hit the chemical tanker Wine Trader about 13 nautical miles off Sulina. Five people were rescued and seven are missing. President Nicusor Dan promised \"a reaction from the Romanian state.\"",
+   "date": "2026-10-16",
+   "place": "Sulina",
+   "tz": "Europe/Bucharest",
+   "publisher": "PBS NewsHour",
+   "title": "Drone strike on ship in Romanian waters raises fear that war in Ukraine is spreading",
+   "url": "https://www.pbs.org/newshour/world/drone-strike-on-ship-in-romanian-waters-raises-fear-that-war-in-ukraine-is-spreading",
+   "published": "2026-10-15T23:38:56Z",
+   "gathered": "2026-10-16T01:34:42Z"
+  },
+  {
+   "h": "Saudi says Iran is encouraging Houthi attacks",
+   "b": "Saudi diplomat Rayed Krimly said Iran is encouraging the Houthi escalation. At least 19 people have been killed in more than a week of attacks, and Riyadh's King Khalid airport has been targeted 20 times this month.",
+   "date": "2026-10-16",
+   "place": "Riyadh",
+   "tz": "Asia/Riyadh",
+   "publisher": "PBS NewsHour",
+   "title": "Saudi diplomat says Iran is encouraging Houthi escalation of attacks on the kingdom",
+   "url": "https://www.pbs.org/newshour/world/saudi-diplomat-says-iran-is-encouraging-houthi-escalation-of-attacks-on-the-kingdom",
+   "published": "2026-10-15T23:16:23Z",
+   "gathered": "2026-10-16T01:34:42Z"
+  },
   {
    "h": "Poll: Flavio Bolsonaro edges Lula before run-off",
    "b": "A Quaest poll has Bolsonaro at 46% to Lula's 44%, within the margin of error, ahead of Brazil's October 25 run-off.",
@@ -188,8 +215,6 @@
    "date": "2026-10-15",
    "place": "Belfast",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "Northern Ireland ex-DUP leader Donaldson sentenced to 15 years for child sex crimes",
    "url": "https://www.aljazeera.com/news/2026/10/15/northern-ireland-ex-dup-leader-donaldson-sentenced-to-15-years-for-child-sex-crimes",
    "gathered": "2026-10-15T20:28:26Z"
   },
@@ -210,8 +235,6 @@
    "date": "2026-10-15",
    "place": "Istanbul",
    "tz": "Europe/Istanbul",
-   "publisher": "Al Jazeera",
-   "title": "Teenager dies as heavy rain floods Istanbul",
    "url": "https://www.aljazeera.com/news/2026/10/15/teenager-dies-as-heavy-rain-floods-istanbul",
    "gathered": "2026-10-15T06:14:29Z"
   },
@@ -223,6 +246,18 @@
    "tz": "Asia/Hebron",
    "url": "https://www.aljazeera.com/news/2026/10/15/israel-has-detained-more-than-2000-palestinian-children-since-2023-report",
    "gathered": "2026-10-15T06:14:29Z"
+  },
+  {
+   "h": "Harry and Meghan make first joint UK appearances",
+   "b": "The Duke and Duchess of Sussex visited a youth recording studio and a food bank in Nottingham, their first joint appearances since returning to the UK.",
+   "date": "2026-10-16",
+   "place": "Nottingham",
+   "tz": "Europe/London",
+   "publisher": "PBS NewsHour",
+   "title": "Prince Harry and Meghan make first joint appearances since returning to UK",
+   "url": "https://www.pbs.org/newshour/world/prince-harry-and-meghan-make-first-joint-appearances-since-returning-to-uk",
+   "published": "2026-10-15T23:57:09Z",
+   "gathered": "2026-10-16T01:34:42Z"
   }
  ],
  "business": [
@@ -230,10 +265,7 @@
    "h": "Retail sales up 0.8%, boosted by gas spending",
    "b": "September retail sales beat forecasts of 0.3%, but sales rose just 0.2% excluding gas stations, where business jumped 6.4%.",
    "date": "2026-10-15",
-   "publisher": "PBS NewsHour",
-   "title": "Retail sales saw 0.8% bump in September, but big chunk of spending went to paying for gas",
    "url": "https://www.pbs.org/newshour/economy/retail-sales-saw-0-8-bump-in-september-but-big-chunk-of-spending-went-to-paying-for-gas",
-   "published": "2026-10-15T21:49:18Z",
    "gathered": "2026-10-15T23:11:21Z"
   },
   {
@@ -247,8 +279,6 @@
    "h": "Virginia's Data Center Alley may be hitting a limit",
    "b": "Loudoun County, home to the world's highest concentration of data centers, faces questions about what happens if growth slows.",
    "date": "2026-10-15",
-   "publisher": "Marketplace",
-   "title": "\"Data Center Alley\" in suburban Virginia may be hitting a dead end",
    "url": "https://www.marketplace.org/story/2026/10/15/what-happens-if-data-center-alley-slows-down",
    "gathered": "2026-10-15T11:55:55Z"
   }
@@ -263,6 +293,25 @@
   }
  ],
  "sports": [
+  {
+   "h": "Infantino apologizes to FIFA Council",
+   "b": "FIFA president Gianni Infantino apologized over this year's World Cup controversies, but European delegates said \"no satisfactory answers were provided.\"",
+   "date": "2026-10-16",
+   "publisher": "PBS NewsHour",
+   "title": "Infantino apologizes to FIFA Council for World Cup furor but leaves critics unhappy",
+   "url": "https://www.pbs.org/newshour/world/infantino-apologizes-to-fifa-council-for-world-cup-furor-but-leaves-critics-unhappy",
+   "published": "2026-10-16T00:20:13Z",
+   "gathered": "2026-10-16T01:34:42Z"
+  },
+  {
+   "h": "Caleb Williams pushes back on injury reports",
+   "b": "The Bears quarterback is on track for a possible Week 6 return from his hamstring injury but said he still doesn't know if he'll play Sunday against Atlanta.",
+   "date": "2026-10-16",
+   "publisher": "CBS Sports",
+   "title": "Caleb Williams responds to critics after hamstring injury: 'My character's been attacked'",
+   "url": "https://www.cbssports.com/nfl/news/caleb-williams-injury-update-hamstring-tear-return-timeline/",
+   "gathered": "2026-10-16T01:34:42Z"
+  },
   {
    "h": "Josh Jacobs sues to block release of video",
    "b": "The Packers running back filed suit against a Wisconsin police department to keep evidence from his criminal case, including an alleged video, from being released.",
@@ -301,6 +350,16 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "Judge tosses Trump suit over NYC sanctuary laws",
+   "b": "A federal judge dismissed the administration's lawsuit challenging the city's limits on cooperating with immigration authorities.",
+   "date": "2026-10-16",
+   "publisher": "Gothamist",
+   "title": "Federal judge tosses Trump administration lawsuit challenging NYC sanctuary laws",
+   "url": "https://gothamist.com/news/federal-judge-tosses-trump-administration-lawsuit-challenging-nyc-sanctuary-laws",
+   "published": "2026-10-16T01:13:00Z",
+   "gathered": "2026-10-16T01:34:42Z"
+  },
   {
    "h": "2 charged in fentanyl death of NYC college student",
    "b": "Federal prosecutors unsealed an indictment over the fatal fentanyl poisoning and alleged rape of a student and the near-fatal poisoning of another at a Manhattan residence hall.",
@@ -354,9 +413,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 59,
    "cond": "Fair",
-   "obs": "15 Oct 18:51 pm EDT"
+   "obs": "15 Oct 20:51 pm EDT"
   },
   "periods": [
    {
