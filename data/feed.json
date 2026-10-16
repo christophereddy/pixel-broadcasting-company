@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T19:09:00Z",
+ "updatedAt": "2026-10-16T22:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,11 +35,11 @@
    "gathered": "2026-10-15T11:55:55Z"
   },
   {
-   "h": "Iran war: Tehran vows swift response on energy",
-   "b": "Al Jazeera's live coverage: Iran says it will respond \"immediately\" to any US threats to its energy facilities.",
+   "h": "Iran war: Strikes hit Houthis in Taiz",
+   "b": "Al Jazeera's live coverage: strikes target Houthi positions in Taiz, and the Saudi-led coalition says it intercepted drones and missiles.",
    "date": "2026-10-16",
    "publisher": "Al Jazeera",
-   "title": "Iran will respond ‘immediately’ to any US threats to its energy facilities",
+   "title": "Strikes target Houthis in Taiz, coalition says intercepted drones, missiles",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports",
    "gathered": "2026-10-16T01:34:42Z"
   }
@@ -49,10 +49,7 @@
    "h": "Teen gunman kills 4 at Oregon elementary school",
    "b": "A 16-year-old shot his way into Silver Rail Elementary in Bend, killing three children and a teacher, before being shot by a person who followed him inside, police said.",
    "date": "2026-10-16",
-   "publisher": "PBS NewsHour",
-   "title": "Teen shooter kills 4 at Oregon elementary school before being shot by a witness",
    "url": "https://www.pbs.org/newshour/nation/teen-shooter-kills-4-at-oregon-elementary-school-before-being-shot-by-a-witness",
-   "published": "2026-10-16T13:23:55Z",
    "gathered": "2026-10-16T16:51:46Z"
   },
   {
@@ -104,34 +101,33 @@
  ],
  "politics": [
   {
+   "h": "Press secretary Zacharia out after five days",
+   "b": "The White House says Katie Zacharia is \"transitioning out.\" Trump had told her to \"reconsider\" staying and said there was no rush to name a replacement.",
+   "date": "2026-10-16",
+   "publisher": "Al Jazeera",
+   "title": "White House press secretary Katie Zacharia fired after five days on the job",
+   "url": "https://www.aljazeera.com/news/2026/10/16/white-house-press-secretary-katie-zacharia-fired-after-five-days-on-the-job",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
+  {
    "h": "Trump rallies Georgia Republicans",
    "b": "The president is visiting battleground Georgia to boost GOP enthusiasm despite party divisions in the state.",
    "date": "2026-10-16",
-   "publisher": "PBS NewsHour",
-   "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
    "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
-   "published": "2026-10-16T14:57:37Z",
    "gathered": "2026-10-16T16:51:46Z"
   },
   {
    "h": "Talarico casts Texas Senate race as David vs. Goliath",
    "b": "The Democrat told supporters \"you are my slingshot\" after Republicans invested more than $158 million against him.",
    "date": "2026-10-16",
-   "publisher": "PBS NewsHour",
-   "title": "Talarico compares his campaign to David and Goliath after GOP invests over $158M against him",
    "url": "https://www.pbs.org/newshour/politics/talarico-compares-his-campaign-to-david-and-goliath-after-gop-invests-over-158m-against-him",
-   "published": "2026-10-16T14:44:21Z",
    "gathered": "2026-10-16T16:51:46Z"
   },
   {
    "h": "Court weighs who owns the president's papers",
    "b": "Administration lawyers argue before a federal appeals court Friday that White House papers belong to Donald Trump, not the public, after the Justice Department moved to invalidate the Presidential Records Act.",
    "date": "2026-10-16",
-   "publisher": "KUOW",
-   "title": "Do Americans own the president's papers? Appeals court to weigh in",
    "url": "https://www.kuow.org/npr-news/2026-10-16/do-americans-own-the-presidents-papers-appeals-court-to-weigh-in",
-   "published": "2026-10-16T09:00:00Z",
-   "updated": "2026-10-16T09:12:34Z",
    "gathered": "2026-10-16T11:46:32Z"
   },
   {
@@ -190,13 +186,57 @@
  ],
  "international": [
   {
+   "h": "Carney: outsiders \"working to break\" Canada",
+   "b": "At a Calgary rally, the prime minister warned against Alberta's vote on whether to start a path toward a separation referendum.",
+   "date": "2026-10-16",
+   "place": "Calgary",
+   "tz": "America/Edmonton",
+   "publisher": "PBS NewsHour",
+   "title": "Prime Minister Mark Carney says U.S. is trying to break Canada as Alberta votes on separation path",
+   "url": "https://www.pbs.org/newshour/world/prime-minister-mark-carney-says-u-s-is-trying-to-break-canada-as-alberta-votes-on-separation-path",
+   "published": "2026-10-16T18:07:28Z",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
+  {
+   "h": "Russia strikes 9 Ukrainian regions",
+   "b": "The attacks came amid fears that strained ties between Kyiv and Washington leave Ukraine more exposed to aerial assaults on its power grid before winter.",
+   "date": "2026-10-16",
+   "place": "Kyiv",
+   "tz": "Europe/Kyiv",
+   "publisher": "PBS NewsHour",
+   "title": "Russia strikes 9 Ukrainian regions as strain grows between Zelenskyy and Trump",
+   "url": "https://www.pbs.org/newshour/world/russia-strikes-9-ukrainian-regions-as-strain-grows-between-zelenskyy-and-trump",
+   "published": "2026-10-16T17:55:44Z",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
+  {
+   "h": "Kenya records third Ebola case",
+   "b": "A 65-year-old woman, a close relative of the first two cases, tested positive after being quarantined since Oct. 6, the Health Ministry said.",
+   "date": "2026-10-16",
+   "place": "Nairobi",
+   "tz": "Africa/Nairobi",
+   "publisher": "Al Jazeera",
+   "title": "Kenya records third Ebola case, linked to first patient who died",
+   "url": "https://www.aljazeera.com/news/2026/10/16/kenya-reports-third-bundibugyo-strain-ebola-case",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
+  {
+   "h": "Pope Leo to appear in public Sunday",
+   "b": "The 71-year-old pope, who had part of his right lung removed Tuesday, can now carry out daily activities independently, his doctors said.",
+   "date": "2026-10-16",
+   "place": "Vatican City",
+   "tz": "Europe/Rome",
+   "publisher": "Al Jazeera",
+   "title": "Pope Leo to make public appearance Sunday, first since cancer surgery",
+   "url": "https://www.aljazeera.com/news/2026/10/16/pope-leo-to-make-public-appearance-sunday-first-since-cancer-surgery",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
+  {
    "h": "Settlers attack olive pickers, US journalist",
    "b": "Israeli settlers beat Palestinian olive pickers and a Washington Post photojournalist in the occupied West Bank and set olive groves ablaze.",
    "date": "2026-10-16",
    "place": "West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Palestinians, US journalist attacked in West Bank pogrom: What we know",
    "url": "https://www.aljazeera.com/news/2026/10/16/palestinians-us-journalist-attacked-in-west-bank-pogrom-what-we-know",
    "gathered": "2026-10-16T16:51:46Z"
   },
@@ -228,8 +268,6 @@
    "date": "2026-10-16",
    "place": "Khyber Pakhtunkhwa",
    "tz": "Asia/Karachi",
-   "publisher": "Al Jazeera",
-   "title": "Pakistan orders school inspections following deadly roof collapse",
    "url": "https://www.aljazeera.com/news/2026/10/16/pakistan-orders-school-inspections-following-deadly-roof-collapse",
    "gathered": "2026-10-16T16:51:46Z"
   },
@@ -239,8 +277,6 @@
    "date": "2026-10-16",
    "place": "Mekelle",
    "tz": "Africa/Addis_Ababa",
-   "publisher": "Al Jazeera",
-   "title": "Ethiopia announces instalment of interim government in Tigray",
    "url": "https://www.aljazeera.com/news/2026/10/16/ethiopia-announces-instalment-of-interim-government-in-tigray",
    "gathered": "2026-10-16T16:51:46Z"
   },
@@ -250,8 +286,6 @@
    "date": "2026-10-16",
    "place": "Split",
    "tz": "Europe/Zagreb",
-   "publisher": "Al Jazeera",
-   "title": "Pro-Nazi chants before Ajax match slammed by Croatia leaders",
    "url": "https://www.aljazeera.com/sports/2026/10/16/pro-nazi-chants-ahead-of-ajax-match-slammed-by-croatia-leaders",
    "gathered": "2026-10-16T16:51:46Z"
   },
@@ -378,11 +412,7 @@
    "date": "2026-10-16",
    "place": "London",
    "tz": "Europe/London",
-   "publisher": "KUOW",
-   "title": "Sally Rooney's books will no longer be sold in U.K. after Palestinian Action support",
    "url": "https://www.kuow.org/npr-news/2026-10-16/sally-rooneys-books-will-no-longer-be-sold-in-u-k-after-palestinian-action-support",
-   "published": "2026-10-16T11:30:31Z",
-   "updated": "2026-10-16T11:49:04Z",
    "gathered": "2026-10-16T13:12:51Z"
   }
  ],
@@ -391,8 +421,6 @@
    "h": "AI borrowing slows as debt jitters hit tech",
    "b": "Morgan Stanley data show debt issuance for AI projects slowed last month from a June record, and CoreWeave bonds fell sharply as stocks slumped on borrowing-cost fears.",
    "date": "2026-10-16",
-   "publisher": "Marketplace",
-   "title": "AI borrowing slowdown raises questions about investor exposure",
    "url": "https://www.marketplace.org/episode/2026/10/16/ai-borrowing-slowdown-raises-questions-about-investor-exposure",
    "gathered": "2026-10-16T13:12:51Z"
   },
@@ -414,11 +442,24 @@
    "h": "Virginia's Data Center Alley may be hitting a limit",
    "b": "Loudoun County, home to the world's highest concentration of data centers, faces questions about what happens if growth slows.",
    "date": "2026-10-15",
+   "publisher": "Marketplace",
+   "title": "\"Data Center Alley\" in suburban Virginia may be hitting a dead end",
    "url": "https://www.marketplace.org/story/2026/10/15/what-happens-if-data-center-alley-slows-down",
    "gathered": "2026-10-15T11:55:55Z"
   }
  ],
  "science": [
+  {
+   "h": "OB-GYNs update menopause treatment guidance",
+   "b": "ACOG updated its guidelines for the first time since 2014, recommending hormone therapy alongside antidepressants and nonhormonal options for symptoms like hot flashes and insomnia.",
+   "date": "2026-10-16",
+   "publisher": "KUOW",
+   "title": "Hot flashes, night sweats, insomnia – OB-GYNS set new rules for menopause treatment",
+   "url": "https://www.kuow.org/npr-news/2026-10-16/hot-flashes-night-sweats-insomnia-ob-gyns-set-new-rules-for-menopause-treatment",
+   "published": "2026-10-16T17:45:16Z",
+   "updated": "2026-10-16T18:49:07Z",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
   {
    "h": "New type of sunscreen hits US store shelves",
    "b": "The first US sunscreens with BEMT, approved in June, offer broad protection without white streaking and have decades of safety data, dermatologists say.",
@@ -432,8 +473,6 @@
    "h": "Broncos edge Seahawks 17-14 in overtime",
    "b": "Wil Lutz's field goal won it after a Sam Darnold interception. Analyst Ryan Fitzpatrick ripped Bo Nix, who threw for 107 yards.",
    "date": "2026-10-16",
-   "publisher": "CBS Sports",
-   "title": "Ryan Fitzpatrick rips Broncos' Bo Nix after ugly 'TNF' game: 'He's not playing competitive football right now'",
    "url": "https://www.cbssports.com/nfl/news/ryan-fitzpatrick-rips-bo-nix-broncos-seahawks-overtime/",
    "gathered": "2026-10-16T16:51:46Z"
   },
@@ -504,6 +543,16 @@
   }
  ],
  "local": [
+  {
+   "h": "Pfizer Building fix: 1/64th of an inch at a time",
+   "b": "Engineering plans for the city's largest office-to-housing conversion show crews will jack sagging floors up about 7 inches in tiny increments.",
+   "date": "2026-10-16",
+   "publisher": "Gothamist",
+   "title": "Inside the plan to fix the nearly collapsed Pfizer Building, 1/64th of an inch at a time",
+   "url": "https://gothamist.com/news/inside-the-plan-to-fix-the-nearly-collapsed-pfizer-building-164th-of-an-inch-at-a-time",
+   "published": "2026-10-16T17:54:17Z",
+   "gathered": "2026-10-16T20:01:14Z"
+  },
   {
    "h": "Storms, wind and chill hit NYC weather",
    "b": "Temperatures drop from near 80 Thursday to the 50s by Saturday, with potentially dangerous storms Friday evening, the NWS says.",
@@ -597,46 +646,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 66,
-   "cond": "Overcast",
-   "obs": "16 Oct 12:51 pm EDT"
+   "temp": 70,
+   "cond": "Fair",
+   "obs": "16 Oct 15:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 74,
-    "text": "A slight chance of showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 11 to 13 mph.  Chance of precipitation is 80%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 51,
-    "text": "Showers and possibly a thunderstorm before 11pm, then a chance of showers.  Low around 51. West wind 13 to 18 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "temp": 50,
+    "text": "Showers and possibly a thunderstorm before 11pm, then a slight chance of showers between 11pm and 2am, then a chance of rain after 2am.  Low around 50. Breezy, with a northwest wind 14 to 23 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 52,
-    "text": "Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 11am. Breezy, with a north wind 17 to 20 mph. "
+    "text": "A 30 percent chance of rain, mainly before 8am.  Cloudy, then gradually becoming mostly sunny, with a temperature falling to around 50 by 11am. Breezy, with a north wind around 22 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
     "temp": 42,
-    "text": "Mostly clear, with a low around 42. North wind 11 to 15 mph. "
+    "text": "Mostly clear, with a low around 42. North wind around 16 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 56,
-    "text": "Sunny, with a high near 56. North wind 7 to 9 mph. "
+    "temp": 54,
+    "text": "Sunny, with a high near 54. Northeast wind 8 to 11 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 47,
-    "text": "Mostly clear, with a low around 47."
+    "temp": 46,
+    "text": "Mostly clear, with a low around 46."
+   },
+   {
+    "name": "Monday",
+    "kind": "high",
+    "temp": 58,
+    "text": "Mostly sunny, with a high near 58."
    }
   ]
  },
