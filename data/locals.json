@@ -42,16 +42,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 76,
+    "temp": 72,
     "cond": "Fair",
-    "obs": "15 Oct 20:52 pm EDT"
+    "obs": "15 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 65,
-     "text": "Mostly clear, with a low around 65. South wind around 5 mph becoming calm. "
+     "text": "Mostly clear, with a low around 65. Calm wind becoming southwest around 5 mph. "
     },
     {
      "name": "Friday",
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -118,13 +118,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Fair",
-    "obs": "15 Oct 20:54 pm EDT"
+    "temp": 52,
+    "cond": "Mostly Cloudy",
+    "obs": "15 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 46,
      "text": "Mostly cloudy, with a low around 46. South wind 5 to 7 mph. "
@@ -150,14 +150,14 @@
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 36,
-     "text": "Mostly clear, with a low around 36. Northwest wind 6 to 8 mph. "
+     "temp": 33,
+     "text": "Patchy frost after 2am.  Otherwise, mostly clear, with a low around 33. Northwest wind 5 to 15 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 55,
-     "text": "Sunny, with a high near 55. Northwest wind 6 to 8 mph. "
+     "text": "Patchy frost before 9am.  Otherwise, sunny, with a high near 55. Northwest wind 5 to 7 mph. "
     }
    ]
   },
@@ -173,7 +173,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -227,16 +227,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Overcast",
-    "obs": "15 Oct 19:53 pm CDT"
+    "temp": 63,
+    "cond": " Light Rain",
+    "obs": "15 Oct 22:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "A 50 percent chance of showers, mainly before 10pm.  Cloudy, with a low around 50. Breezy, with a southwest wind 10 to 15 mph becoming west 15 to 20 mph after midnight. Winds could gust as high as 30 mph. "
+     "text": "A 20 percent chance of showers before 1am.  Cloudy, with a low around 50. Breezy, with a west wind 15 to 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Friday",
@@ -282,7 +282,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -297,14 +297,14 @@
    "now": {
     "temp": 44,
     "cond": "A Few Clouds",
-    "obs": "15 Oct 18:58 pm MDT"
+    "obs": "15 Oct 20:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 32,
-     "text": "Mostly clear, with a low around 32. North northeast wind around 6 mph becoming calm  after midnight. "
+     "text": "Mostly clear, with a low around 32. East wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Friday",
@@ -350,7 +350,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -362,14 +362,25 @@
   },
   "local": [
    {
+    "h": "Brewers sweep Dodgers out of the NLCS",
+    "b": "Garrett Mitchell's go-ahead homer in the sixth lifted Milwaukee to a 6-4 Game 4 win and its first World Series trip since 1982.",
+    "date": "2026-10-16",
+    "publisher": "LAist",
+    "title": "Brewers sweep the Dodgers in the NLCS to reach the World Series for the first time since 1982",
+    "url": "https://laist.com/news/brewers-sweep-the-dodgers-in-the-nlcs-to-reach-the-world-series-for-the-first-time-since-1982",
+    "published": "2026-10-16T03:43:06Z",
+    "updated": "2026-10-16T03:44:29Z",
+    "gathered": "2026-10-16T04:10:10Z"
+   },
+   {
     "h": "Bryson Fire forces Malibu evacuations",
     "b": "Residents near Kanan Dume and Encinal Canyon roads were ordered to evacuate. The fire had grown to 80 acres as of 6:15 p.m. Thursday.",
     "date": "2026-10-16",
     "publisher": "LAist",
-    "title": "Bryson Fire prompts evacuation warnings in Malibu",
+    "title": "Bryson Fire prompts evacuation orders in Malibu",
     "url": "https://laist.com/news/climate-environment/bryson-fire-malibu-oct-2026",
     "published": "2026-10-16T01:09:52Z",
-    "updated": "2026-10-16T01:14:19Z",
+    "updated": "2026-10-16T03:34:35Z",
     "gathered": "2026-10-16T01:34:42Z"
    },
    {
@@ -377,10 +388,10 @@
     "b": "The fire burned more than 1,100 acres, forcing evacuations on parts of the base and closing the 5 between Oceanside and Basilone Road. CHP began reopening it.",
     "date": "2026-10-16",
     "publisher": "LAist",
-    "title": "Henderson Fire has shut down the 5 Freeway near the OC-San Diego County line",
+    "title": "Henderson Fire shut down 5 Freeway near the OC-San Diego County line briefly",
     "url": "https://laist.com/news/climate-environment/henderson-fire-camp-pendleton-october-2026",
     "published": "2026-10-16T00:52:33Z",
-    "updated": "2026-10-16T01:30:49Z",
+    "updated": "2026-10-16T02:08:06Z",
     "gathered": "2026-10-16T01:34:42Z"
    },
    {
@@ -448,7 +459,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 69,
-     "text": "Clear, with a low around 69. North northeast wind 5 to 10 mph. "
+     "text": "Clear, with a low around 69. North wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
@@ -494,7 +505,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -569,15 +580,15 @@
   "weather": {
    "now": {
     "temp": 59,
-    "cond": "Fair",
-    "obs": "15 Oct 20:51 pm EDT"
+    "cond": "Mostly Cloudy",
+    "obs": "15 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 60,
-     "text": "Showers, mainly after 5am.  Low around 60. Southeast wind 8 to 10 mph.  Chance of precipitation is 80%."
+     "text": "Showers, mainly after 5am.  Temperature rising to around 63 by 4am. Southeast wind around 10 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Friday",
@@ -623,7 +634,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -699,7 +710,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "goodnews": []
  },
  {
@@ -750,7 +761,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 53,
-     "text": "Mostly clear, with a low around 53. Light and variable wind. "
+     "text": "Mostly clear, with a low around 53. Light north northeast wind. "
     },
     {
      "name": "Friday",
@@ -796,7 +807,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T04:10:00Z",
+  "updatedAt": "2026-10-16T07:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

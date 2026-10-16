@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T04:10:00Z",
+ "updatedAt": "2026-10-16T07:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,11 +35,11 @@
    "gathered": "2026-10-15T11:55:55Z"
   },
   {
-   "h": "Iran war: Saudi blasts Houthi \"war crimes\"",
-   "b": "Al Jazeera's live coverage: Saudi Arabia accuses the Houthis of war crimes, and the US issues a warning on Saudi airports.",
+   "h": "Iran war: Trump says ground troops unlikely",
+   "b": "Al Jazeera's live coverage: Trump says US ground troops are unlikely in Iran, and Saudi Arabia downs a drone.",
    "date": "2026-10-16",
    "publisher": "Al Jazeera",
-   "title": "Saudi blasts Houthi ‘war crimes’; US warns on Saudi airports",
+   "title": "Trump says ground troops unlikely in Iran; Saudi downs drone",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports",
    "gathered": "2026-10-16T01:34:42Z"
   }
@@ -153,13 +153,33 @@
  ],
  "international": [
   {
+   "h": "China tells Israel to stop West Bank settlements",
+   "b": "Foreign Minister Wang Yi told Israeli President Isaac Herzog that Israel should stop and reverse its \"forced establishment\" of settlements, China's foreign ministry said.",
+   "date": "2026-10-16",
+   "place": "Beijing",
+   "tz": "Asia/Shanghai",
+   "publisher": "Al Jazeera",
+   "title": "China tells Israel to stop ‘forced establishment’ of West Bank settlements",
+   "url": "https://www.aljazeera.com/news/2026/10/16/china-tells-israel-to-stop-forced-establishment-of-west-bank-settlements",
+   "gathered": "2026-10-16T04:10:10Z"
+  },
+  {
+   "h": "Argentine students protest Milei cuts",
+   "b": "Students at the University of Buenos Aires covered a faculty hall with banners against President Javier Milei's spending cuts and called an assembly to announce an occupation.",
+   "date": "2026-10-16",
+   "place": "Buenos Aires",
+   "tz": "America/Argentina/Buenos_Aires",
+   "publisher": "Al Jazeera",
+   "title": "Argentine students protest on campus over Milei’s austerity",
+   "url": "https://www.aljazeera.com/news/2026/10/16/argentine-students-protest-on-campus-over-mileis-austerity",
+   "gathered": "2026-10-16T04:10:10Z"
+  },
+  {
    "h": "Iraq parliament completes al-Zaidi's cabinet",
    "b": "Lawmakers approved 11 remaining portfolios and three deputy prime ministers, one of them under US sanctions, completing Prime Minister Ali al-Zaidi's government.",
    "date": "2026-10-16",
    "place": "Baghdad",
    "tz": "Asia/Baghdad",
-   "publisher": "Al Jazeera",
-   "title": "Iraq parliament approves al-Zaidi’s cabinet amid growing economic concerns",
    "url": "https://www.aljazeera.com/news/2026/10/16/iraq-parliament-approves-al-zaidis-cabinet-amid-growing-economic-concerns",
    "gathered": "2026-10-16T01:34:42Z"
   },
@@ -204,8 +224,6 @@
    "date": "2026-10-15",
    "place": "Aksum",
    "tz": "Africa/Addis_Ababa",
-   "publisher": "Al Jazeera",
-   "title": "Ethiopian forces expand control in Tigray as militia claims Eritrean losses",
    "url": "https://www.aljazeera.com/news/2026/10/15/ethiopian-forces-expand-control-in-tigray-as-militia-claims-eritrean-losses",
    "gathered": "2026-10-15T20:28:26Z"
   },
@@ -224,8 +242,6 @@
    "date": "2026-10-15",
    "place": "Mogadishu",
    "tz": "Africa/Mogadishu",
-   "publisher": "Al Jazeera",
-   "title": "Somalia says it will hold elections in 2027",
    "url": "https://www.aljazeera.com/news/2026/10/15/somalia-says-it-will-hold-elections-in-2027",
    "gathered": "2026-10-15T20:28:26Z"
   },
@@ -258,6 +274,17 @@
    "url": "https://www.pbs.org/newshour/world/prince-harry-and-meghan-make-first-joint-appearances-since-returning-to-uk",
    "published": "2026-10-15T23:57:09Z",
    "gathered": "2026-10-16T01:34:42Z"
+  },
+  {
+   "h": "Myanmar's leader wins back neighbours",
+   "b": "Min Aung Hlaing, whose 2021 power grab triggered a civil war, received a red-carpet welcome with an honour guard in Kuala Lumpur last week.",
+   "date": "2026-10-16",
+   "place": "Kuala Lumpur",
+   "tz": "Asia/Kuala_Lumpur",
+   "publisher": "Al Jazeera",
+   "title": "Myanmar’s coup leader-turned-president wins back neighbours despite war",
+   "url": "https://www.aljazeera.com/news/2026/10/16/as-war-rages-myanmars-coup-leader-turned-president-wins-back-neighbours",
+   "gathered": "2026-10-16T04:10:10Z"
   }
  ],
  "business": [
@@ -294,6 +321,15 @@
  ],
  "sports": [
   {
+   "h": "Brewers sweep Dodgers, reach World Series",
+   "b": "Milwaukee won Game 4 6-4 to complete the NLCS sweep. Jake Bauers, with six RBI in the series, was named NLCS MVP.",
+   "date": "2026-10-16",
+   "publisher": "CBS Sports",
+   "title": "Jake Bauers named NLCS MVP as Brewers advance to World Series after sweeping Dodgers",
+   "url": "https://www.cbssports.com/mlb/news/brewers-jake-bauers-nlcs-mvp/",
+   "gathered": "2026-10-16T04:10:10Z"
+  },
+  {
    "h": "Infantino apologizes to FIFA Council",
    "b": "FIFA president Gianni Infantino apologized over this year's World Cup controversies, but European delegates said \"no satisfactory answers were provided.\"",
    "date": "2026-10-16",
@@ -307,8 +343,6 @@
    "h": "Caleb Williams pushes back on injury reports",
    "b": "The Bears quarterback is on track for a possible Week 6 return from his hamstring injury but said he still doesn't know if he'll play Sunday against Atlanta.",
    "date": "2026-10-16",
-   "publisher": "CBS Sports",
-   "title": "Caleb Williams responds to critics after hamstring injury: 'My character's been attacked'",
    "url": "https://www.cbssports.com/nfl/news/caleb-williams-injury-update-hamstring-tear-return-timeline/",
    "gathered": "2026-10-16T01:34:42Z"
   },
@@ -414,15 +448,15 @@
  "weather": {
   "now": {
    "temp": 59,
-   "cond": "Fair",
-   "obs": "15 Oct 20:51 pm EDT"
+   "cond": "Mostly Cloudy",
+   "obs": "15 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 60,
-    "text": "Showers, mainly after 5am.  Low around 60. Southeast wind 8 to 10 mph.  Chance of precipitation is 80%."
+    "text": "Showers, mainly after 5am.  Temperature rising to around 63 by 4am. Southeast wind around 10 mph.  Chance of precipitation is 80%."
    },
    {
     "name": "Friday",
