@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T16:10:00Z",
+ "updatedAt": "2026-10-16T19:09:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,25 +35,31 @@
    "gathered": "2026-10-15T11:55:55Z"
   },
   {
-   "h": "Iran war: Pezeshkian warns of environmental toll",
-   "b": "Al Jazeera's live coverage: Iranian President Masoud Pezeshkian says the war's environmental damage threatens future generations.",
+   "h": "Iran war: Tehran vows swift response on energy",
+   "b": "Al Jazeera's live coverage: Iran says it will respond \"immediately\" to any US threats to its energy facilities.",
    "date": "2026-10-16",
    "publisher": "Al Jazeera",
-   "title": "‘War’s environmental damage threatens future generations’, says Pezeshkian",
+   "title": "Iran will respond ‘immediately’ to any US threats to its energy facilities",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports",
    "gathered": "2026-10-16T01:34:42Z"
   }
  ],
  "national": [
   {
+   "h": "Teen gunman kills 4 at Oregon elementary school",
+   "b": "A 16-year-old shot his way into Silver Rail Elementary in Bend, killing three children and a teacher, before being shot by a person who followed him inside, police said.",
+   "date": "2026-10-16",
+   "publisher": "PBS NewsHour",
+   "title": "Teen shooter kills 4 at Oregon elementary school before being shot by a witness",
+   "url": "https://www.pbs.org/newshour/nation/teen-shooter-kills-4-at-oregon-elementary-school-before-being-shot-by-a-witness",
+   "published": "2026-10-16T13:23:55Z",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
    "h": "5 believed dead in Oregon elementary school shooting",
    "b": "Officials told AP that five people are believed dead, including children, after a shooting at Silver Rail Elementary in Bend; police say the suspect is dead.",
    "date": "2026-10-15",
-   "publisher": "KUOW",
-   "title": "3 children, 1 teacher dead after shooting at Bend elementary school",
    "url": "https://www.kuow.org/crime/2026-10-15/2-hospitalized-after-bend-elementary-school-shooting-and-shooter-is-dead-police-say",
-   "published": "2026-10-15T22:47:39Z",
-   "updated": "2026-10-16T01:00:58Z",
    "gathered": "2026-10-15T23:11:21Z"
   },
   {
@@ -97,6 +103,26 @@
   }
  ],
  "politics": [
+  {
+   "h": "Trump rallies Georgia Republicans",
+   "b": "The president is visiting battleground Georgia to boost GOP enthusiasm despite party divisions in the state.",
+   "date": "2026-10-16",
+   "publisher": "PBS NewsHour",
+   "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
+   "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
+   "published": "2026-10-16T14:57:37Z",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
+   "h": "Talarico casts Texas Senate race as David vs. Goliath",
+   "b": "The Democrat told supporters \"you are my slingshot\" after Republicans invested more than $158 million against him.",
+   "date": "2026-10-16",
+   "publisher": "PBS NewsHour",
+   "title": "Talarico compares his campaign to David and Goliath after GOP invests over $158M against him",
+   "url": "https://www.pbs.org/newshour/politics/talarico-compares-his-campaign-to-david-and-goliath-after-gop-invests-over-158m-against-him",
+   "published": "2026-10-16T14:44:21Z",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
   {
    "h": "Court weighs who owns the president's papers",
    "b": "Administration lawyers argue before a federal appeals court Friday that White House papers belong to Donald Trump, not the public, after the Justice Department moved to invalidate the Presidential Records Act.",
@@ -164,13 +190,77 @@
  ],
  "international": [
   {
+   "h": "Settlers attack olive pickers, US journalist",
+   "b": "Israeli settlers beat Palestinian olive pickers and a Washington Post photojournalist in the occupied West Bank and set olive groves ablaze.",
+   "date": "2026-10-16",
+   "place": "West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Palestinians, US journalist attacked in West Bank pogrom: What we know",
+   "url": "https://www.aljazeera.com/news/2026/10/16/palestinians-us-journalist-attacked-in-west-bank-pogrom-what-we-know",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
+   "h": "Gaza starvation at 'catastrophic' levels",
+   "b": "At least 466 Palestinians have died of malnutrition and starvation since 2024, a third of them children, the Gaza Health Ministry said on World Food Day.",
+   "date": "2026-10-16",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Gaza malnutrition and starvation at ‘catastrophic’ levels: Health Ministry",
+   "url": "https://www.aljazeera.com/news/2026/10/16/gaza-malnutrition-and-starvation-at-catastrophic-levels-health-ministry",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
+   "h": "EU leaders rally behind Ukraine",
+   "b": "At a Brussels summit attended by Zelenskyy, top EU officials stressed keeping up arms for Ukraine and sanctions on Russia. \"This is no time to withdraw support,\" said Antonio Costa.",
+   "date": "2026-10-16",
+   "place": "Brussels",
+   "tz": "Europe/Brussels",
+   "publisher": "Al Jazeera",
+   "title": "EU rallies in support of Ukraine amid Trump standoff",
+   "url": "https://www.aljazeera.com/news/2026/10/16/eu-rallies-in-support-of-ukraine-amid-trump-standoff",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
+   "h": "Pakistan orders school checks after roof collapse",
+   "b": "At least 34 students aged 13 or younger and a teacher were killed when a roof collapsed at Al-Khair school in Khyber Pakhtunkhwa.",
+   "date": "2026-10-16",
+   "place": "Khyber Pakhtunkhwa",
+   "tz": "Asia/Karachi",
+   "publisher": "Al Jazeera",
+   "title": "Pakistan orders school inspections following deadly roof collapse",
+   "url": "https://www.aljazeera.com/news/2026/10/16/pakistan-orders-school-inspections-following-deadly-roof-collapse",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
+   "h": "Ethiopia installs interim government in Tigray",
+   "b": "The move follows the military pushing back an uprising the TPLF launched last month. Free elections were pledged to follow.",
+   "date": "2026-10-16",
+   "place": "Mekelle",
+   "tz": "Africa/Addis_Ababa",
+   "publisher": "Al Jazeera",
+   "title": "Ethiopia announces instalment of interim government in Tigray",
+   "url": "https://www.aljazeera.com/news/2026/10/16/ethiopia-announces-instalment-of-interim-government-in-tigray",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
+   "h": "Croatia leaders condemn pro-Nazi chants",
+   "b": "Hajduk Split fans marched through Split chanting pro-Nazi and antisemitic slogans before Thursday's match against Ajax.",
+   "date": "2026-10-16",
+   "place": "Split",
+   "tz": "Europe/Zagreb",
+   "publisher": "Al Jazeera",
+   "title": "Pro-Nazi chants before Ajax match slammed by Croatia leaders",
+   "url": "https://www.aljazeera.com/sports/2026/10/16/pro-nazi-chants-ahead-of-ajax-match-slammed-by-croatia-leaders",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
    "h": "China tells Israel to stop West Bank settlements",
    "b": "Foreign Minister Wang Yi told Israeli President Isaac Herzog that Israel should stop and reverse its \"forced establishment\" of settlements, China's foreign ministry said.",
    "date": "2026-10-16",
    "place": "Beijing",
    "tz": "Asia/Shanghai",
-   "publisher": "Al Jazeera",
-   "title": "China tells Israel to stop ‘forced establishment’ of West Bank settlements",
    "url": "https://www.aljazeera.com/news/2026/10/16/china-tells-israel-to-stop-forced-establishment-of-west-bank-settlements",
    "gathered": "2026-10-16T04:10:10Z"
   },
@@ -180,8 +270,6 @@
    "date": "2026-10-16",
    "place": "Buenos Aires",
    "tz": "America/Argentina/Buenos_Aires",
-   "publisher": "Al Jazeera",
-   "title": "Argentine students protest on campus over Milei’s austerity",
    "url": "https://www.aljazeera.com/news/2026/10/16/argentine-students-protest-on-campus-over-mileis-austerity",
    "gathered": "2026-10-16T04:10:10Z"
   },
@@ -200,10 +288,7 @@
    "date": "2026-10-16",
    "place": "Sulina",
    "tz": "Europe/Bucharest",
-   "publisher": "PBS NewsHour",
-   "title": "Drone strike on ship in Romanian waters raises fear that war in Ukraine is spreading",
    "url": "https://www.pbs.org/newshour/world/drone-strike-on-ship-in-romanian-waters-raises-fear-that-war-in-ukraine-is-spreading",
-   "published": "2026-10-15T23:38:56Z",
    "gathered": "2026-10-16T01:34:42Z"
   },
   {
@@ -212,10 +297,7 @@
    "date": "2026-10-16",
    "place": "Riyadh",
    "tz": "Asia/Riyadh",
-   "publisher": "PBS NewsHour",
-   "title": "Saudi diplomat says Iran is encouraging Houthi escalation of attacks on the kingdom",
    "url": "https://www.pbs.org/newshour/world/saudi-diplomat-says-iran-is-encouraging-houthi-escalation-of-attacks-on-the-kingdom",
-   "published": "2026-10-15T23:16:23Z",
    "gathered": "2026-10-16T01:34:42Z"
   },
   {
@@ -224,8 +306,6 @@
    "date": "2026-10-15",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Poll shows Bolsonaro with slight lead over Lula ahead of Brazilian run-off",
    "url": "https://www.aljazeera.com/news/2026/10/15/poll-shows-bolsonaro-with-slight-lead-over-lula-ahead-of-brazilian-run-off",
    "gathered": "2026-10-15T20:28:26Z"
   },
@@ -280,10 +360,7 @@
    "date": "2026-10-16",
    "place": "Nottingham",
    "tz": "Europe/London",
-   "publisher": "PBS NewsHour",
-   "title": "Prince Harry and Meghan make first joint appearances since returning to UK",
    "url": "https://www.pbs.org/newshour/world/prince-harry-and-meghan-make-first-joint-appearances-since-returning-to-uk",
-   "published": "2026-10-15T23:57:09Z",
    "gathered": "2026-10-16T01:34:42Z"
   },
   {
@@ -292,8 +369,6 @@
    "date": "2026-10-16",
    "place": "Kuala Lumpur",
    "tz": "Asia/Kuala_Lumpur",
-   "publisher": "Al Jazeera",
-   "title": "Myanmar’s coup leader-turned-president wins back neighbours despite war",
    "url": "https://www.aljazeera.com/news/2026/10/16/as-war-rages-myanmars-coup-leader-turned-president-wins-back-neighbours",
    "gathered": "2026-10-16T04:10:10Z"
   },
@@ -354,11 +429,18 @@
  ],
  "sports": [
   {
+   "h": "Broncos edge Seahawks 17-14 in overtime",
+   "b": "Wil Lutz's field goal won it after a Sam Darnold interception. Analyst Ryan Fitzpatrick ripped Bo Nix, who threw for 107 yards.",
+   "date": "2026-10-16",
+   "publisher": "CBS Sports",
+   "title": "Ryan Fitzpatrick rips Broncos' Bo Nix after ugly 'TNF' game: 'He's not playing competitive football right now'",
+   "url": "https://www.cbssports.com/nfl/news/ryan-fitzpatrick-rips-bo-nix-broncos-seahawks-overtime/",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
+  {
    "h": "Brewers sweep Dodgers, reach World Series",
    "b": "Milwaukee won Game 4 6-4 to complete the NLCS sweep. Jake Bauers, with six RBI in the series, was named NLCS MVP.",
    "date": "2026-10-16",
-   "publisher": "CBS Sports",
-   "title": "Jake Bauers named NLCS MVP as Brewers advance to World Series after sweeping Dodgers",
    "url": "https://www.cbssports.com/mlb/news/brewers-jake-bauers-nlcs-mvp/",
    "gathered": "2026-10-16T04:10:10Z"
   },
@@ -366,10 +448,7 @@
    "h": "Infantino apologizes to FIFA Council",
    "b": "FIFA president Gianni Infantino apologized over this year's World Cup controversies, but European delegates said \"no satisfactory answers were provided.\"",
    "date": "2026-10-16",
-   "publisher": "PBS NewsHour",
-   "title": "Infantino apologizes to FIFA Council for World Cup furor but leaves critics unhappy",
    "url": "https://www.pbs.org/newshour/world/infantino-apologizes-to-fifa-council-for-world-cup-furor-but-leaves-critics-unhappy",
-   "published": "2026-10-16T00:20:13Z",
    "gathered": "2026-10-16T01:34:42Z"
   },
   {
@@ -420,15 +499,21 @@
    "h": "Barn owls nest in Manhattan",
    "b": "A family of barn owls nested in a water tower near Central Park, the first documented barn owl nest in Manhattan in modern history, drawing nightly crowds.",
    "date": "2026-10-16",
-   "publisher": "KUOW",
-   "title": "A rare family of barn owls moved into Manhattan's Upper West Side. New Yorkers are captivated",
    "url": "https://www.kuow.org/npr-news/2026-10-15/a-rare-family-of-barn-owls-moved-into-manhattans-upper-west-side-new-yorkers-are-captivated",
-   "published": "2026-10-16T06:27:30Z",
-   "updated": "2026-10-16T06:36:33Z",
    "gathered": "2026-10-16T07:10:31Z"
   }
  ],
  "local": [
+  {
+   "h": "Storms, wind and chill hit NYC weather",
+   "b": "Temperatures drop from near 80 Thursday to the 50s by Saturday, with potentially dangerous storms Friday evening, the NWS says.",
+   "date": "2026-10-16",
+   "publisher": "Gothamist",
+   "title": "NYC’s whiplash weather continues into weekend with heavy winds, chilly temps, NWS says",
+   "url": "https://gothamist.com/news/nycs-whiplash-weather-continues-into-weekend-with-heavy-winds-chilly-temps-nws-says",
+   "published": "2026-10-16T14:22:00Z",
+   "gathered": "2026-10-16T16:51:46Z"
+  },
   {
    "h": "Mamdani urges parking lots to ban ICE",
    "b": "The mayor and more than 100 elected officials asked lot and garage owners not to make their property available to ICE as a staging ground.",
@@ -486,7 +571,7 @@
    "publisher": "Gothamist",
    "title": "Citi Bike finishes expansion into 7 areas, including parts of North Bronx, Eastern Brooklyn",
    "url": "https://gothamist.com/news/citi-bike-finishes-expansion-into-7-areas-including-parts-of-north-bronx-eastern-brooklyn",
-   "published": "2026-10-15T15:53:46Z",
+   "published": "2026-10-16T14:24:00Z",
    "gathered": "2026-10-15T17:15:51Z"
   },
   {
@@ -500,28 +585,28 @@
    "gathered": "2026-10-15T13:18:34Z"
   },
   {
-   "h": "Police investigate death of 5-year-old in Queens",
-   "b": "Police found the girl unconscious after an apparent assault at a Richmond Hill home Wednesday evening, after her mother called 911.",
-   "date": "2026-10-15",
+   "h": "Queens mother charged in 5-year-old's death",
+   "b": "Police charged Francis Cabello, 32, with murder in the death of her daughter Fabiana in Richmond Hill, a day after she called 911.",
+   "date": "2026-10-16",
    "publisher": "Gothamist",
-   "title": "Queens mother told police 'I killed my daughter' on 911 call, NYPD says",
-   "url": "https://gothamist.com/news/nypd-investigating-after-5-year-old-queens-girl-found-dead",
-   "published": "2026-10-15T16:57:00Z",
-   "gathered": "2026-10-15T11:55:55Z"
+   "title": "Queens mother charged with murder in death of 5-year-old daughter, NYPD says",
+   "url": "https://gothamist.com/news/queens-mother-charged-with-murder-in-death-of-5-year-old-daughter-nypd-says",
+   "published": "2026-10-16T15:57:52Z",
+   "gathered": "2026-10-16T16:51:46Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 62,
-   "cond": " Light Rain Fog/Mist",
-   "obs": "16 Oct 08:51 am EDT"
+   "temp": 66,
+   "cond": "Overcast",
+   "obs": "16 Oct 12:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 74,
-    "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 10 to 13 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "text": "A slight chance of showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 11 to 13 mph.  Chance of precipitation is 80%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Tonight",
