@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T07:10:00Z",
+ "updatedAt": "2026-10-16T10:10:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -382,7 +382,19 @@
    "gathered": "2026-10-14T18:48:09Z"
   }
  ],
- "goodnews": [],
+ "goodnews": [
+  {
+   "h": "Barn owls nest in Manhattan",
+   "b": "A family of barn owls nested in a water tower near Central Park, the first documented barn owl nest in Manhattan in modern history, drawing nightly crowds.",
+   "date": "2026-10-16",
+   "publisher": "KUOW",
+   "title": "A rare family of barn owls moved into Manhattan's Upper West Side. New Yorkers are captivated",
+   "url": "https://www.kuow.org/npr-news/2026-10-15/a-rare-family-of-barn-owls-moved-into-manhattans-upper-west-side-new-yorkers-are-captivated",
+   "published": "2026-10-16T06:27:30Z",
+   "updated": "2026-10-16T06:36:33Z",
+   "gathered": "2026-10-16T07:10:31Z"
+  }
+ ],
  "local": [
   {
    "h": "Judge tosses Trump suit over NYC sanctuary laws",
@@ -447,46 +459,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
-   "cond": "Mostly Cloudy",
-   "obs": "15 Oct 23:51 pm EDT"
+   "temp": 60,
+   "cond": "Overcast",
+   "obs": "16 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 60,
-    "text": "Showers, mainly after 5am.  Temperature rising to around 63 by 4am. Southeast wind around 10 mph.  Chance of precipitation is 80%."
-   },
-   {
     "name": "Friday",
     "kind": "high",
-    "temp": 75,
-    "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 75. Southwest wind around 14 mph.  Chance of precipitation is 90%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+    "temp": 74,
+    "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 10 to 13 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Showers and possibly a thunderstorm.  Low around 50. West wind 13 to 18 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+    "temp": 51,
+    "text": "Showers and possibly a thunderstorm before 11pm, then a chance of showers.  Low around 51. West wind 13 to 18 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 52,
-    "text": "Cloudy through mid morning, then gradual clearing, with a temperature falling to around 50 by 10am. Breezy, with a north wind 18 to 20 mph. "
+    "text": "Mostly cloudy, then gradually becoming sunny, with a temperature falling to around 50 by 11am. Breezy, with a north wind 17 to 20 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 43,
-    "text": "Mostly clear, with a low around 43. North wind 9 to 15 mph. "
+    "temp": 42,
+    "text": "Mostly clear, with a low around 42. North wind 11 to 15 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 57,
-    "text": "Sunny, with a high near 57."
+    "temp": 56,
+    "text": "Sunny, with a high near 56."
+   },
+   {
+    "name": "Sunday Night",
+    "kind": "low",
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47."
    }
   ]
  },
