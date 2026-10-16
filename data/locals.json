@@ -42,9 +42,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 65,
     "cond": "A Few Clouds",
-    "obs": "16 Oct 06:52 am EDT"
+    "obs": "16 Oct 07:52 am EDT"
    },
    "periods": [
     {
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -127,16 +127,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Overcast",
-    "obs": "16 Oct 06:54 am EDT"
+    "temp": 52,
+    "cond": " Heavy Rain Fog/Mist",
+    "obs": "16 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Showers, mainly before 4pm.  High near 69. South wind 11 to 15 mph, with gusts as high as 28 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers, mainly before 1pm.  High near 69. Southwest wind 11 to 14 mph, with gusts as high as 28 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -182,7 +182,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -201,7 +201,7 @@
     "title": "Bridgeport, Chinatown residents tell us what they think about Amtrak rail yard development plans",
     "url": "https://www.wbez.org/environment/2026/10/16/amtrak-bridgeport-chinatown-justin-ishbia-white-sox",
     "published": "2026-10-16T10:35:00Z",
-    "updated": "2026-10-16T10:35:01Z",
+    "updated": "2026-10-16T11:53:05Z",
     "gathered": "2026-10-16T11:46:32Z"
    },
    {
@@ -247,16 +247,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 51,
     "cond": "Overcast",
-    "obs": "16 Oct 05:53 am CDT"
+    "obs": "16 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 55,
-     "text": "Showers likely, mainly after 2pm.  Cloudy, with a high near 55. Windy, with a west northwest wind 15 to 20 mph increasing to 25 to 30 mph in the afternoon. Winds could gust as high as 45 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Showers likely, mainly after 2pm.  Cloudy, with a high near 55. Windy, with a north northwest wind 15 to 20 mph increasing to 25 to 30 mph in the afternoon. Winds could gust as high as 45 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -302,7 +302,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -315,19 +315,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 35,
-    "cond": "Partly Cloudy",
-    "obs": "16 Oct 04:58 am MDT"
+    "temp": 33,
+    "cond": "Fair",
+    "obs": "16 Oct 05:58 am MDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "Sunny, with a high near 59. South wind around 6 mph becoming light and variable  in the afternoon. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 35,
      "text": "Clear, with a low around 35. Calm wind becoming south southwest around 5 mph after midnight. "
@@ -348,7 +348,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 75,
-     "text": "Mostly sunny, with a high near 75."
+     "text": "Mostly sunny, with a high near 75. Light and variable wind becoming east northeast 5 to 7 mph in the afternoon. Winds could gust as high as 16 mph. "
     },
     {
      "name": "Sunday Night",
@@ -370,7 +370,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -385,11 +385,7 @@
     "h": "Brewers sweep Dodgers out of the NLCS",
     "b": "Garrett Mitchell's go-ahead homer in the sixth lifted Milwaukee to a 6-4 Game 4 win and its first World Series trip since 1982.",
     "date": "2026-10-16",
-    "publisher": "LAist",
-    "title": "Brewers sweep the Dodgers in the NLCS to reach the World Series for the first time since 1982",
     "url": "https://laist.com/news/brewers-sweep-the-dodgers-in-the-nlcs-to-reach-the-world-series-for-the-first-time-since-1982",
-    "published": "2026-10-16T03:43:06Z",
-    "updated": "2026-10-16T03:44:29Z",
     "gathered": "2026-10-16T04:10:10Z"
    },
    {
@@ -407,22 +403,14 @@
     "h": "Henderson Fire closes 5 Freeway near Camp Pendleton",
     "b": "The fire burned more than 1,100 acres, forcing evacuations on parts of the base and closing the 5 between Oceanside and Basilone Road. CHP began reopening it.",
     "date": "2026-10-16",
-    "publisher": "LAist",
-    "title": "Henderson Fire shut down 5 Freeway near the OC-San Diego County line briefly",
     "url": "https://laist.com/news/climate-environment/henderson-fire-camp-pendleton-october-2026",
-    "published": "2026-10-16T00:52:33Z",
-    "updated": "2026-10-16T02:08:06Z",
     "gathered": "2026-10-16T01:34:42Z"
    },
    {
     "h": "Peak Fire near Azusa prompts evacuations",
     "b": "The brush fire north of San Gabriel Canyon Road has burned about 22 acres and threatens structures, amid a red flag warning.",
     "date": "2026-10-15",
-    "publisher": "LAist",
-    "title": "Firefighters stop progress of Peak Fire near Azusa; evacuation order lifted",
     "url": "https://laist.com/news/climate-environment/peak-fire-azusa",
-    "published": "2026-10-15T21:25:49Z",
-    "updated": "2026-10-15T23:34:11Z",
     "gathered": "2026-10-15T23:11:21Z"
    },
    {
@@ -470,19 +458,30 @@
     "published": "2026-10-15T23:19:17Z",
     "updated": "2026-10-15T23:19:50Z",
     "gathered": "2026-10-16T01:34:42Z"
+   },
+   {
+    "h": "Rancho Palos Verdes eyes resort tax for landslides",
+    "b": "Measure RS would raise the overnight tax at Terranea Resort. The city expects to have spent about $75 million on landslide damage by mid-2027.",
+    "date": "2026-10-16",
+    "publisher": "LAist",
+    "title": "Rancho Palos Verdes turns to its best known attraction to help pay for landslide damages",
+    "url": "https://laist.com/news/politics/rancho-palos-verdes-terranea-overnight-tax-landslide-damages",
+    "published": "2026-10-16T12:00:00Z",
+    "updated": "2026-10-16T12:00:00Z",
+    "gathered": "2026-10-16T13:12:51Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 94,
      "text": "Sunny, with a high near 94. East wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 69,
      "text": "Partly cloudy, with a low around 69. North northeast wind around 10 mph. "
@@ -503,7 +502,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 86,
-     "text": "Sunny, with a high near 86."
+     "text": "Sunny, with a high near 86. North northeast wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -525,7 +524,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -553,7 +552,7 @@
     "publisher": "Gothamist",
     "title": "NYC ambulance response times have grown 41% as life-threatening calls rise",
     "url": "https://gothamist.com/news/nyc-ambulance-response-times-have-grown-41-as-life-threatening-calls-rise",
-    "published": "2026-10-16T10:30:45Z",
+    "published": "2026-10-16T10:30:00Z",
     "gathered": "2026-10-16T11:46:32Z"
    },
    {
@@ -619,16 +618,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Overcast",
-    "obs": "16 Oct 06:51 am EDT"
+    "temp": 62,
+    "cond": " Light Rain Fog/Mist",
+    "obs": "16 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 74,
-     "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 9 to 13 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 10 to 13 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Tonight",
@@ -674,7 +673,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -771,7 +770,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "goodnews": []
  },
  {
@@ -860,7 +859,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-16T13:12:00Z",
+  "updatedAt": "2026-10-16T16:10:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
