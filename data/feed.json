@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T10:10:00Z",
+ "updatedAt": "2026-10-16T13:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,11 +35,11 @@
    "gathered": "2026-10-15T11:55:55Z"
   },
   {
-   "h": "Iran war: Trump says ground troops unlikely",
-   "b": "Al Jazeera's live coverage: Trump says US ground troops are unlikely in Iran, and Saudi Arabia downs a drone.",
+   "h": "Iran war: Pezeshkian warns of environmental toll",
+   "b": "Al Jazeera's live coverage: Iranian President Masoud Pezeshkian says the war's environmental damage threatens future generations.",
    "date": "2026-10-16",
    "publisher": "Al Jazeera",
-   "title": "Trump says ground troops unlikely in Iran; Saudi downs drone",
+   "title": "‘War’s environmental damage threatens future generations’, says Pezeshkian",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports",
    "gathered": "2026-10-16T01:34:42Z"
   }
@@ -97,6 +97,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Court weighs who owns the president's papers",
+   "b": "Administration lawyers argue before a federal appeals court Friday that White House papers belong to Donald Trump, not the public, after the Justice Department moved to invalidate the Presidential Records Act.",
+   "date": "2026-10-16",
+   "publisher": "KUOW",
+   "title": "Do Americans own the president's papers? Appeals court to weigh in",
+   "url": "https://www.kuow.org/npr-news/2026-10-16/do-americans-own-the-presidents-papers-appeals-court-to-weigh-in",
+   "published": "2026-10-16T09:00:00Z",
+   "updated": "2026-10-16T09:12:34Z",
+   "gathered": "2026-10-16T11:46:32Z"
+  },
   {
    "h": "AP-NORC poll: Voters frustrated, want change",
    "b": "Less than four weeks before Election Day, Democrats are more enthusiastic than Republicans and more voters want Democrats to control Congress.",
@@ -397,6 +408,26 @@
  ],
  "local": [
   {
+   "h": "Mamdani urges parking lots to ban ICE",
+   "b": "The mayor and more than 100 elected officials asked lot and garage owners not to make their property available to ICE as a staging ground.",
+   "date": "2026-10-16",
+   "publisher": "Gothamist",
+   "title": "Mamdani and 100+ NY officials urge parking lot owners to ban ICE",
+   "url": "https://gothamist.com/news/mamdani-and-100-ny-officials-urge-parking-lot-owners-to-ban-ice",
+   "published": "2026-10-16T10:30:44Z",
+   "gathered": "2026-10-16T11:46:32Z"
+  },
+  {
+   "h": "NYC ambulance response times up 41%",
+   "b": "A city comptroller's report found EMS teams are taking longer to reach people even as life-threatening emergencies rise.",
+   "date": "2026-10-16",
+   "publisher": "Gothamist",
+   "title": "NYC ambulance response times have grown 41% as life-threatening calls rise",
+   "url": "https://gothamist.com/news/nyc-ambulance-response-times-have-grown-41-as-life-threatening-calls-rise",
+   "published": "2026-10-16T10:30:45Z",
+   "gathered": "2026-10-16T11:46:32Z"
+  },
+  {
    "h": "Judge tosses Trump suit over NYC sanctuary laws",
    "b": "A federal judge dismissed the administration's lawsuit challenging the city's limits on cooperating with immigration authorities.",
    "date": "2026-10-16",
@@ -459,19 +490,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 61,
    "cond": "Overcast",
-   "obs": "16 Oct 02:51 am EDT"
+   "obs": "16 Oct 06:51 am EDT"
   },
   "periods": [
    {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 74,
-    "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 10 to 13 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "text": "Showers before 2pm, then showers and possibly a thunderstorm after 5pm.  High near 74. Southwest wind 9 to 13 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 51,
     "text": "Showers and possibly a thunderstorm before 11pm, then a chance of showers.  Low around 51. West wind 13 to 18 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
@@ -492,7 +523,7 @@
     "name": "Sunday",
     "kind": "high",
     "temp": 56,
-    "text": "Sunny, with a high near 56."
+    "text": "Sunny, with a high near 56. North wind 7 to 9 mph. "
    },
    {
     "name": "Sunday Night",
