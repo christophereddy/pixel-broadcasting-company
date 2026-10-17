@@ -38,34 +38,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
-    "cond": "Mostly Cloudy and Windy",
-    "obs": "16 Oct 20:52 pm EDT"
+    "temp": 56,
+    "cond": "Mostly Cloudy and Breezy",
+    "obs": "17 Oct 01:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 50,
-     "text": "Partly cloudy, with a low around 50. Northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
+     "text": "Partly cloudy, with a low around 50. Northwest wind around 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66. North wind around 15 mph, with gusts as high as 30 mph. "
+     "text": "Sunny, with a high near 66. North wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45. North wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Clear, with a low around 45. North wind 5 to 10 mph becoming east after midnight. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64. Northeast wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Sunny, with a high near 64. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Sunday Night",
@@ -93,7 +93,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -116,16 +116,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 60,
     "cond": "Mostly Cloudy",
-    "obs": "16 Oct 20:54 pm EDT"
+    "obs": "17 Oct 01:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 47,
-     "text": "Showers likely and possibly a thunderstorm before 5am, then a chance of showers.  Cloudy, with a low around 47. Northwest wind 10 to 15 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+     "text": "A chance of showers, mainly after 5am.  Cloudy, with a low around 47. Northwest wind 13 to 15 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -171,7 +171,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -182,6 +182,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "4 Chicago-area congressional offices get suspicious letters",
+    "b": "Reps. Brad Schneider, Mike Quigley, Robin Kelly and Jan Schakowsky reported letters amid a national wave of threats before Election Day.",
+    "date": "2026-10-17",
+    "publisher": "WBEZ",
+    "title": "4 Chicago area congressional offices receive suspicious letters amid wave of preelection threats",
+    "url": "https://www.wbez.org/news/2026/10/16/4-chicago-area-congressional-offices-receive-suspicious-letters-amid-wave-of-preelection-threats",
+    "published": "2026-10-17T04:03:33Z",
+    "updated": "2026-10-17T04:03:33Z",
+    "gathered": "2026-10-17T05:56:05Z"
+   },
+   {
+    "h": "Chicago bids to host 2031 Women's World Cup",
+    "b": "Mayor Johnson sent a letter supporting the bid to U.S. Soccer. The city passed twice on hosting the men's World Cup over taxpayer costs.",
+    "date": "2026-10-17",
+    "publisher": "WBEZ",
+    "title": "Chicago puts in bid to host 2031 FIFA Women's World Cup",
+    "url": "https://www.wbez.org/news/2026/10/16/chicago-puts-in-bid-to-host-2031-fifa-womens-world-cup",
+    "published": "2026-10-17T04:08:54Z",
+    "updated": "2026-10-17T04:08:54Z",
+    "gathered": "2026-10-17T05:56:05Z"
+   },
    {
     "h": "Big money floods Chicago school board races",
     "b": "Groups backed by wealthy, often suburban donors have outraised the Chicago Teachers Union 5 to 1 ahead of the Nov. 3 election.",
@@ -208,22 +230,14 @@
     "h": "Johnson signs order on seniors' rights",
     "b": "The executive order spells out seniors' rights to housing, health care and services and creates a Mayor's Office on Aging.",
     "date": "2026-10-16",
-    "publisher": "WBEZ",
-    "title": "Mayor Johnson signs executive order to protect the rights of adults 60 years and older",
     "url": "https://www.wbez.org/government-politics/2026/10/16/mayor-brandon-johnson-signs-executive-order-to-protect-seniors",
-    "published": "2026-10-16T20:34:49Z",
-    "updated": "2026-10-16T20:34:49Z",
     "gathered": "2026-10-16T22:57:13Z"
    },
    {
     "h": "Johnson's campaign cash dips below $380,000",
     "b": "Mayor Brandon Johnson raised $122,980 from July to September, while frontrunner Alexi Giannoulias has $19 million, new filings show.",
     "date": "2026-10-16",
-    "publisher": "WBEZ",
-    "title": "Mayor Johnson’s campaign cash dips below $380,000, while front-runner Giannoulias has $19 million",
     "url": "https://www.wbez.org/government-politics/2026/10/16/brandon-johnson-alexi-giannoulias-campaign-cash-chicago-mayor",
-    "published": "2026-10-16T17:57:13Z",
-    "updated": "2026-10-16T17:57:13Z",
     "gathered": "2026-10-16T20:01:14Z"
    },
    {
@@ -232,50 +246,61 @@
     "date": "2026-10-16",
     "url": "https://www.wbez.org/environment/2026/10/16/amtrak-bridgeport-chinatown-justin-ishbia-white-sox",
     "gathered": "2026-10-16T11:46:32Z"
+   },
+   {
+    "h": "Suits say delivery robots collect biometric data",
+    "b": "Proposed class actions accuse Coco Robotics and Serve Robotics of scanning customers' faces and hands without consent. Both companies deny it.",
+    "date": "2026-10-17",
+    "publisher": "WBEZ",
+    "title": "Lawsuits accuse Chicago delivery robot companies of collecting biometric data",
+    "url": "https://www.wbez.org/news/2026/10/16/lawsuits-accuse-chicago-delivery-robot-companies-of-collecting-biometric-data",
+    "published": "2026-10-17T04:09:36Z",
+    "updated": "2026-10-17T04:09:36Z",
+    "gathered": "2026-10-17T05:56:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Mostly Cloudy",
-    "obs": "16 Oct 19:53 pm CDT"
+    "temp": 44,
+    "cond": "A Few Clouds",
+    "obs": "17 Oct 00:53 am CDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly cloudy, with a low around 43. Breezy, with a north wind 20 to 25 mph decreasing to 15 to 20 mph after midnight. Winds could gust as high as 40 mph. "
+     "temp": 42,
+     "text": "A 20 percent chance of showers before 1am.  Partly cloudy, with a low around 42. Breezy, with a north wind 15 to 25 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. North wind 5 to 10 mph becoming south southwest in the afternoon. "
+     "temp": 56,
+     "text": "Sunny, with a high near 56. North northwest wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44. South southwest wind around 10 mph. "
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. South southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 62,
+     "text": "Sunny, with a high near 62. South southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46. South wind 5 to 10 mph. "
+     "text": "Clear, with a low around 46. South wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 64,
-     "text": "Sunny, with a high near 64."
+     "temp": 65,
+     "text": "Sunny, with a high near 65."
     }
    ]
   },
@@ -291,7 +316,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -304,16 +329,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 42,
     "cond": "Fair",
-    "obs": "16 Oct 18:58 pm MDT"
+    "obs": "16 Oct 22:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 36,
-     "text": "Clear, with a low around 36. Calm wind becoming south southwest around 5 mph after midnight. "
+     "text": "Clear, with a low around 36. South southwest wind 3 to 5 mph. "
     },
     {
      "name": "Saturday",
@@ -359,7 +384,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -386,10 +411,10 @@
     "b": "The fire near San Clemente spread to 465 acres Friday, burning at least four homes and prompting evacuations in San Clemente and San Juan Capistrano.",
     "date": "2026-10-16",
     "publisher": "LAist",
-    "title": "At least four homes burn in South Orange County as Norte Fire grows",
+    "title": "Norte Fire burns 6 homes in South Orange County",
     "url": "https://laist.com/news/climate-environment/norte-fire-san-clemente",
     "published": "2026-10-16T20:44:12Z",
-    "updated": "2026-10-16T21:58:28Z",
+    "updated": "2026-10-17T02:12:45Z",
     "gathered": "2026-10-16T22:57:13Z"
    },
    {
@@ -422,10 +447,10 @@
     "b": "Residents near Kanan Dume and Encinal Canyon roads were ordered to evacuate. The fire had grown to 80 acres as of 6:15 p.m. Thursday.",
     "date": "2026-10-16",
     "publisher": "LAist",
-    "title": "Bryson Fire prompts evacuation orders in Malibu. Containment grows to 17% overnight",
+    "title": "Bryson Fire prompts evacuation orders in Malibu. Containment grows to 39%",
     "url": "https://laist.com/news/climate-environment/bryson-fire-malibu-oct-2026",
     "published": "2026-10-16T01:09:52Z",
-    "updated": "2026-10-16T19:40:15Z",
+    "updated": "2026-10-17T02:15:49Z",
     "gathered": "2026-10-16T01:34:42Z"
    },
    {
@@ -477,7 +502,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 66,
-     "text": "Mostly clear, with a low around 66. Southwest wind 5 to 10 mph becoming east northeast in the evening. "
+     "text": "Partly cloudy, with a low around 66. Southwest wind 5 to 10 mph becoming east northeast in the evening. "
     },
     {
      "name": "Sunday",
@@ -489,7 +514,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 66,
-     "text": "Clear, with a low around 66. Southwest wind 5 to 10 mph becoming east northeast after midnight. Winds could gust as high as 15 mph. "
+     "text": "Mostly clear, with a low around 66. Southwest wind 5 to 10 mph becoming east northeast after midnight. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Monday",
@@ -511,7 +536,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -586,16 +611,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Partly Cloudy",
-    "obs": "16 Oct 20:51 pm EDT"
+    "temp": 58,
+    "cond": "Overcast",
+    "obs": "17 Oct 01:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 50,
-     "text": "Showers likely and possibly a thunderstorm before 11pm, then a slight chance of showers between 11pm and 2am, then a chance of rain after 2am.  Mostly cloudy, with a low around 50. Breezy, with a northwest wind 14 to 23 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+     "text": "A slight chance of showers before 2am, then a chance of rain after 2am.  Cloudy, with a low around 50. Breezy, with a northwest wind 20 to 23 mph.  Chance of precipitation is 40%."
     },
     {
      "name": "Saturday",
@@ -641,7 +666,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -717,7 +742,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "goodnews": []
  },
  {
@@ -764,7 +789,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "A 50 percent chance of rain, mainly after 2am.  Increasing clouds, with a low around 56. Light south wind increasing to 9 to 14 mph in the evening. Winds could gust as high as 22 mph. "
+     "text": "A 50 percent chance of rain, mainly after 2am.  Increasing clouds, with a low around 56. South wind 9 to 14 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Saturday",
@@ -810,7 +835,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T04:12:00Z",
+  "updatedAt": "2026-10-17T07:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
