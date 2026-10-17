@@ -38,19 +38,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Mostly Cloudy",
-    "obs": "17 Oct 02:52 am EDT"
+    "temp": 55,
+    "cond": "A Few Clouds",
+    "obs": "17 Oct 09:52 am EDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 67,
      "text": "Sunny, with a high near 67. North wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 45,
      "text": "Clear, with a low around 45. North wind 5 to 10 mph becoming east after midnight. Winds could gust as high as 20 mph. "
@@ -71,7 +71,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68."
+     "text": "Sunny, with a high near 68. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday Night",
@@ -93,7 +93,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -116,34 +116,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Overcast",
-    "obs": "17 Oct 06:54 am EDT"
+    "temp": 48,
+    "cond": "Mostly Cloudy",
+    "obs": "17 Oct 09:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 48,
-     "text": "A slight chance of showers between 9am and 10am.  Mostly cloudy, then gradually becoming sunny, with a high near 48. Northwest wind 13 to 16 mph, with gusts as high as 29 mph.  Chance of precipitation is 20%."
+     "temp": 51,
+     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 51. Northwest wind around 16 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 33,
-     "text": "Patchy frost after 11pm.  Otherwise, clear, with a low around 33. Northwest wind 6 to 9 mph, with gusts as high as 20 mph. "
+     "temp": 34,
+     "text": "Areas of frost after 3am.  Otherwise, clear, with a low around 34. North wind 7 to 13 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 53,
-     "text": "Areas of frost before 9am.  Otherwise, sunny, with a high near 53. Light and variable wind becoming east around 5 mph in the afternoon. "
+     "text": "Areas of frost before 9am.  Otherwise, sunny, with a high near 53. Northwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 39,
-     "text": "Clear, with a low around 39. Light south wind. "
+     "temp": 40,
+     "text": "Clear, with a low around 40. Southeast wind around 6 mph becoming calm  after midnight. "
     },
     {
      "name": "Monday",
@@ -171,7 +171,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -182,6 +182,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Rising rates and prices sideline Chicago buyers",
+    "b": "Hopeful buyers packed North Side open houses over the summer, but agents now report thinner crowds and fewer offers as mortgage rates rise and inventory stays tight, even in hot markets like Lincoln Park.",
+    "date": "2026-10-17",
+    "publisher": "WBEZ",
+    "title": "Rising mortgage rates and home prices sidelining buyers but now is the time to purchase, report says",
+    "url": "https://www.wbez.org/housing/2026/10/17/mortgage-rates-home-prices-sidelining-buyers-purchase-redfin-report",
+    "published": "2026-10-17T11:05:00Z",
+    "updated": "2026-10-17T11:05:00Z",
+    "gathered": "2026-10-17T14:19:29Z"
+   },
+   {
+    "h": "Old Town School teacher Ted Johnson dies at 98",
+    "b": "Johnson taught at the Old Town School of Folk Music from the day it opened in 1957, spending more than 40 years as an instructor and nearly 20 more as a student. Colleagues called him a 'role model' for the school.",
+    "date": "2026-10-17",
+    "publisher": "WBEZ",
+    "title": "Old Town School of Folk teacher Ted Johnson, who shared ‘magic’ of music with decades of students, has died",
+    "url": "https://www.wbez.org/obituary/2026/10/17/old-town-school-of-folk-teacher-ted-johnson-obituary-music-chicago-history",
+    "published": "2026-10-17T10:30:00Z",
+    "updated": "2026-10-17T10:30:01Z",
+    "gathered": "2026-10-17T14:19:29Z"
+   },
    {
     "h": "4 Chicago-area congressional offices get suspicious letters",
     "b": "Reps. Brad Schneider, Mike Quigley, Robin Kelly and Jan Schakowsky reported letters amid a national wave of threats before Election Day.",
@@ -258,18 +280,18 @@
   "weather": {
    "now": {
     "temp": 44,
-    "cond": "A Few Clouds",
-    "obs": "17 Oct 00:53 am CDT"
+    "cond": "Mostly Cloudy",
+    "obs": "17 Oct 08:53 am CDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
      "text": "Sunny, with a high near 56. North northwest wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
      "text": "Mostly clear, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
@@ -290,7 +312,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65."
+     "text": "Sunny, with a high near 65. South southwest wind around 5 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Partly cloudy, with a low around 50."
     }
    ]
   },
@@ -306,7 +334,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -319,19 +347,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 41,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "16 Oct 23:58 pm MDT"
+    "obs": "17 Oct 07:58 am MDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
      "text": "Sunny, with a high near 77. South southwest wind around 6 mph becoming calm  in the morning. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Clear, with a low around 43. North wind around 5 mph becoming light and variable. "
@@ -352,7 +380,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly sunny, with a high near 72."
+     "text": "Mostly sunny, with a high near 72. Calm wind becoming east northeast around 6 mph in the afternoon. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 46,
+     "text": "Mostly clear, with a low around 46."
     }
    ]
   },
@@ -368,7 +402,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -379,6 +413,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Secret comedy shows pop up in WWII huts",
+    "b": "Don't Tell Comedy is staging secret shows in unexpected spots around Los Angeles, including a surfer-themed bar in a WWII-style Quonset hut at Boardroom Brewery in El Segundo.",
+    "date": "2026-10-17",
+    "publisher": "LAist",
+    "title": "Comedians are holding secret shows in World War II training huts and other random places",
+    "url": "https://laist.com/news/los-angeles-activities/comedians-are-holding-secret-shows-in-world-war-ii-training-huts-and-other-random-places",
+    "published": "2026-10-17T12:00:00Z",
+    "updated": "2026-10-17T12:00:00Z",
+    "gathered": "2026-10-17T14:19:29Z"
+   },
    {
     "h": "Lawmakers: little progress at Adelanto ICE facility",
     "b": "Members of Congress who toured the facility Friday described unsanitary showers and kitchens, inedible food and poor medical care.",
@@ -395,10 +440,10 @@
     "b": "The fire near San Clemente spread to 465 acres Friday, burning at least four homes and prompting evacuations in San Clemente and San Juan Capistrano.",
     "date": "2026-10-16",
     "publisher": "LAist",
-    "title": "Norte Fire burns 6 homes in South Orange County",
+    "title": "Norte Fire burns 6 homes in South Orange County, grew to 570 acres",
     "url": "https://laist.com/news/climate-environment/norte-fire-san-clemente",
     "published": "2026-10-16T20:44:12Z",
-    "updated": "2026-10-17T02:12:45Z",
+    "updated": "2026-10-17T14:07:37Z",
     "gathered": "2026-10-16T22:57:13Z"
    },
    {
@@ -431,10 +476,9 @@
     "b": "Residents near Kanan Dume and Encinal Canyon roads were ordered to evacuate. The fire had grown to 80 acres as of 6:15 p.m. Thursday.",
     "date": "2026-10-16",
     "publisher": "LAist",
-    "title": "Bryson Fire prompts evacuation orders in Malibu. Containment grows to 39%",
+    "title": "Bryson Fire prompts evacuation orders in Malibu. Containment grows to 52%",
     "url": "https://laist.com/news/climate-environment/bryson-fire-malibu-oct-2026",
     "published": "2026-10-16T01:09:52Z",
-    "updated": "2026-10-17T02:15:49Z",
     "gathered": "2026-10-16T01:34:42Z"
    },
    {
@@ -448,22 +492,14 @@
     "h": "Case dismissed for OC woman whose dog voted",
     "b": "Laura Lee Yourex, 64, of Costa Mesa won't serve time but must pay for four anti-voter-fraud billboards featuring her dog.",
     "date": "2026-10-16",
-    "publisher": "LAist",
-    "title": "Case dismissed against OC woman who registered her dog to vote and cast ballots in two elections",
     "url": "https://laist.com/news/criminal-justice/case-dismissed-against-oc-woman-who-registered-her-dog-to-vote-and-cast-ballots-in-two-elections",
-    "published": "2026-10-15T23:19:17Z",
-    "updated": "2026-10-15T23:19:50Z",
     "gathered": "2026-10-16T01:34:42Z"
    },
    {
     "h": "Rancho Palos Verdes eyes resort tax for landslides",
     "b": "Measure RS would raise the overnight tax at Terranea Resort. The city expects to have spent about $75 million on landslide damage by mid-2027.",
     "date": "2026-10-16",
-    "publisher": "LAist",
-    "title": "Rancho Palos Verdes turns to its best known attraction to help pay for landslide damages",
     "url": "https://laist.com/news/politics/rancho-palos-verdes-terranea-overnight-tax-landslide-damages",
-    "published": "2026-10-16T12:00:00Z",
-    "updated": "2026-10-16T12:00:00Z",
     "gathered": "2026-10-16T13:12:51Z"
    }
   ],
@@ -520,9 +556,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "South Pasadena finally has a bookstore",
+    "b": "Outpost Books opened in September in a cozy, just-under-1,000-square-foot space styled like a trading post, with a 'Kids Corral' that plans weekly story readings.",
+    "date": "2026-10-17",
+    "publisher": "LAist",
+    "title": "South Pasadena finally has a bookstore. Step inside Outpost Books",
+    "url": "https://laist.com/news/los-angeles-activities/south-pasadena-outpost-books-bookstore",
+    "published": "2026-10-17T12:00:00Z",
+    "updated": "2026-10-17T12:42:39Z",
+    "gathered": "2026-10-17T14:19:29Z"
+   }
+  ]
  },
  {
   "location": {
@@ -531,6 +579,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Knicks fans adjust to life as champions",
+    "b": "After winning the 2026 NBA Championship, the Knicks will raise their first championship banner at Madison Square Garden in 50 years as they open their season.",
+    "date": "2026-10-17",
+    "publisher": "Gothamist",
+    "title": "Being reigning champions is weird for Knicks fans. We could get used to this.",
+    "url": "https://gothamist.com/news/being-reigning-champions-is-weird-for-knicks-fans-we-could-get-used-to-this",
+    "published": "2026-10-17T14:00:57Z",
+    "gathered": "2026-10-17T14:19:29Z"
+   },
    {
     "h": "Tompkins Square Park makeover splits regulars",
     "b": "A community board committee backed renovating the basketball courts, kids' pool and 1990s outdoor fitness area. Some park users say it goes too far.",
@@ -598,26 +656,25 @@
     "publisher": "Gothamist",
     "title": "Death of Queens girl may be due to asphyxia, DA says",
     "url": "https://gothamist.com/news/queens-mother-charged-with-murder-in-death-of-5-year-old-daughter-nypd-says",
-    "published": "2026-10-16T15:57:00Z",
-    "updated": "2026-10-16T22:01:00Z",
+    "published": "2026-10-16T22:01:00Z",
     "gathered": "2026-10-16T16:51:46Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Overcast",
-    "obs": "17 Oct 01:51 am EDT"
+    "temp": 50,
+    "cond": "Fair",
+    "obs": "17 Oct 09:51 am EDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
-     "temp": 52,
-     "text": "A 30 percent chance of showers before 8am.  Cloudy through mid morning, then gradual clearing, with a temperature falling to around 50 by 11am. North wind around 16 mph, with gusts as high as 28 mph. "
+     "temp": 54,
+     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 54. North wind around 16 mph, with gusts as high as 28 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 40,
      "text": "Mostly clear, with a low around 40. North wind 11 to 14 mph. "
@@ -638,7 +695,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 61,
-     "text": "Mostly sunny, with a high near 61."
+     "text": "Mostly sunny, with a high near 61. Northeast wind around 10 mph. "
     },
     {
      "name": "Monday Night",
@@ -660,7 +717,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -691,10 +748,10 @@
     "b": "Paris banned protests in the city centre ahead of Saturday's cost-of-living rallies, which authorities fear could turn violent.",
     "date": "2026-10-17",
     "publisher": "The Local France",
-    "title": "Macron calls for calm amid fears of violence at France protests",
+    "title": "LATEST: Clashes erupt in France on nationwide day of protests",
     "url": "https://www.thelocal.fr/20261017/macron-calls-for-calm-amid-fears-of-violence-at-france-protests",
     "published": "2026-10-17T09:33:19Z",
-    "updated": "2026-10-17T09:33:22Z",
+    "updated": "2026-10-17T14:11:02Z",
     "gathered": "2026-10-17T11:03:03Z"
    },
    {
@@ -728,7 +785,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "goodnews": []
  },
  {
@@ -753,11 +810,7 @@
     "h": "Social housing agency plans Central District units",
     "b": "Seattle's social housing developer will build 20 units, mostly for families, next to the Central District library, aiming to open by 2028.",
     "date": "2026-10-16",
-    "publisher": "KUOW",
-    "title": "Seattle’s social housing agency unveils plans for 20-unit project in Central District",
     "url": "https://www.kuow.org/governing/2026-10-16/seattles-social-housing-agency-unveils-plans-for-20-unit-project-in-central-district",
-    "published": "2026-10-16T20:48:14Z",
-    "updated": "2026-10-16T20:50:04Z",
     "gathered": "2026-10-16T22:57:13Z"
    },
    {
@@ -772,13 +825,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 61,
      "text": "A 40 percent chance of rain, mainly before 11am.  Cloudy, then gradually becoming mostly sunny, with a high near 61. South wind 5 to 9 mph becoming light and variable. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Increasing clouds, with a low around 46. Northeast wind 3 to 6 mph. "
@@ -799,7 +852,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly cloudy, with a high near 57."
+     "text": "Mostly cloudy, with a high near 57. Light and variable wind. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Mostly cloudy, with a low around 45."
     }
    ]
   },
@@ -815,7 +874,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T13:12:00Z",
+  "updatedAt": "2026-10-17T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

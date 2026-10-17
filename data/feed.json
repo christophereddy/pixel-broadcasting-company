@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-17T13:12:00Z",
+ "updatedAt": "2026-10-17T16:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,20 @@
  },
  "world": [
   {
-   "h": "Iran war: IRGC says Hormuz 'closed'",
-   "b": "Al Jazeera's live coverage: Iran's Revolutionary Guard warns the Strait of Hormuz is \"closed\" as three tankers are reported hit.",
+   "h": "US and Iran both claim control of Hormuz",
+   "b": "Washington and Tehran each say they control the Strait of Hormuz amid attacks on vessels. UK maritime monitor UKMTO says it is struggling to count attacks because most targeted ships refuse to report them.",
    "date": "2026-10-17",
    "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC warns Strait of Hormuz ‘closed’ as 3 tankers reported hit",
+   "title": "US and Iran both claim control of Strait of Hormuz amid attacks on vessels",
+   "url": "https://www.aljazeera.com/news/2026/10/17/us-and-iran-both-claim-control-of-strait-of-hormuz-amid-attacks-on-vessels",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
+   "h": "Iran war: IRGC says Hormuz 'closed'",
+   "b": "Al Jazeera's live coverage: Iran's Revolutionary Guard warns the Strait of Hormuz is 'closed' as four tankers are reported hit.",
+   "date": "2026-10-17",
+   "publisher": "Al Jazeera",
+   "title": "Iran’s IRGC warns Strait of Hormuz is ‘closed’ as 4 tankers reported hit",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2",
    "gathered": "2026-10-17T05:56:05Z"
   }
@@ -99,13 +108,79 @@
  ],
  "international": [
   {
+   "h": "Protesters clash with police across France",
+   "b": "Riot police used tear gas against hooded, masked protesters in Paris as nationwide demonstrations spread, with dozens reportedly detained around Place de la Republique. In Marseille, local media said protesters breached the town hall.",
+   "date": "2026-10-17",
+   "place": "Paris",
+   "tz": "Europe/Paris",
+   "publisher": "Al Jazeera",
+   "title": "Protesters clash with police during nationwide demonstrations in France",
+   "url": "https://www.aljazeera.com/news/2026/10/17/france-wave-of-nationwide-protests",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
+   "h": "Settlers injure child, four women in West Bank",
+   "b": "Israeli settlers attacked residents of Ma'in village in Masafer Yatta, south of Hebron, injuring six people including four women and a child, the Palestine Red Crescent said. Elsewhere, Israeli forces fired on olive-picking farmers near Ramallah, Wafa reported.",
+   "date": "2026-10-17",
+   "place": "Hebron",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Child, four women among Palestinians injured in West Bank pogroms",
+   "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
+   "h": "Israeli rabbi's olive ruling sparks uproar",
+   "b": "Prominent rabbi Dov Lior issued a religious ruling permitting settlers to take olives from Palestinian orchards in the occupied West Bank, arguing landowners blocked from their harvests had been 'compensated' in earlier years.",
+   "date": "2026-10-17",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Hardline Israeli rabbi ruling on stolen Palestinian olives prompts uproar",
+   "url": "https://www.aljazeera.com/news/2026/10/17/hardline-israeli-rabbi-ruling-on-stolen-palestinian-olives-sparks-uproar",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
+   "h": "Egypt's Sisi offers defence help to Saudi Arabia",
+   "b": "Speaking at an Egyptian Military Academy graduation, President el-Sisi said Egypt is ready to 'carry out any measure to protect' Saudi Arabia if Riyadh asks, and is seeking authorisation for defence assistance.",
+   "date": "2026-10-17",
+   "place": "Cairo",
+   "tz": "Africa/Cairo",
+   "publisher": "Al Jazeera",
+   "title": "Egypt’s Sisi seeks authorisation for defence assistance to Saudi Arabia",
+   "url": "https://www.aljazeera.com/economy/2026/10/17/egypts-sisi-seeks-authorisation-for-defence-assistance-to-saudi-arabia",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
+   "h": "Solar booms in Philippines as Iran war lifts power bills",
+   "b": "Electricity prices have soared since the US-Israel war on Iran began in February, pushing a growing number of Filipino households to install rooftop solar panels to cut their bills.",
+   "date": "2026-10-17",
+   "place": "Manila",
+   "tz": "Asia/Manila",
+   "publisher": "Al Jazeera",
+   "title": "Solar power booms in Philippines as war on Iran spikes energy costs",
+   "url": "https://www.aljazeera.com/news/2026/10/17/solar-power-booms-in-philippines-as-war-on-iran-spikes-energy-costs",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
+   "h": "South Africans seek justice for apartheid crimes",
+   "b": "Decades after apartheid ended, families of victims, including those killed when police opened fire on protesters on March 21, 1960, are still pressing for accountability in a neglected township near Johannesburg.",
+   "date": "2026-10-17",
+   "place": "Johannesburg",
+   "tz": "Africa/Johannesburg",
+   "publisher": "KUOW",
+   "title": "Decades after apartheid, South Africans seek justice for crimes of the past",
+   "url": "https://www.kuow.org/npr-news/2026-10-17/decades-after-apartheid-south-africans-seek-justice-for-crimes-of-the-past",
+   "published": "2026-10-17T11:00:00Z",
+   "updated": "2026-10-17T14:01:34Z",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
    "h": "Russian attacks kill 8, cut power to 1 million",
    "b": "Strikes on nine Ukrainian regions hit two shopping centres. In Kharkiv, two people were killed and 12 wounded, the governor said.",
    "date": "2026-10-17",
    "place": "Kharkiv",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Russian attacks in Ukraine kill at least 8, cut power to 1 million",
    "url": "https://www.aljazeera.com/news/2026/10/17/russian-attacks-in-ukraine-kill-at-least-8-cut-power-to-1-million",
    "gathered": "2026-10-17T11:03:03Z"
   },
@@ -115,8 +190,6 @@
    "date": "2026-10-17",
    "place": "Nyala",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack",
    "url": "https://www.aljazeera.com/news/2026/10/17/2550",
    "gathered": "2026-10-17T11:03:03Z"
   },
@@ -126,8 +199,6 @@
    "date": "2026-10-17",
    "place": "Bangkok",
    "tz": "Asia/Bangkok",
-   "publisher": "Al Jazeera",
-   "title": "IMF urges support for poorer nations facing high inflation, war spillovers",
    "url": "https://www.aljazeera.com/economy/2026/10/17/war-spillovers-debt-threaten-low-income-nations-imf-chief-warns",
    "gathered": "2026-10-17T11:03:03Z"
   },
@@ -137,8 +208,6 @@
    "date": "2026-10-17",
    "place": "Tel Aviv",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "The Israeli politicians seeking to replace Netanyahu",
    "url": "https://www.aljazeera.com/news/2026/10/17/the-israeli-politicians-seeking-to-replace-netanyahu",
    "gathered": "2026-10-17T07:12:39Z"
   },
@@ -425,6 +494,16 @@
  ],
  "local": [
   {
+   "h": "Knicks fans adjust to life as champions",
+   "b": "After winning the 2026 NBA Championship, the Knicks will raise their first championship banner at Madison Square Garden in 50 years as they open their season.",
+   "date": "2026-10-17",
+   "publisher": "Gothamist",
+   "title": "Being reigning champions is weird for Knicks fans. We could get used to this.",
+   "url": "https://gothamist.com/news/being-reigning-champions-is-weird-for-knicks-fans-we-could-get-used-to-this",
+   "published": "2026-10-17T14:00:57Z",
+   "gathered": "2026-10-17T14:19:29Z"
+  },
+  {
    "h": "Tompkins Square Park makeover splits regulars",
    "b": "A community board committee backed renovating the basketball courts, kids' pool and 1990s outdoor fitness area. Some park users say it goes too far.",
    "date": "2026-10-17",
@@ -491,26 +570,25 @@
    "publisher": "Gothamist",
    "title": "Death of Queens girl may be due to asphyxia, DA says",
    "url": "https://gothamist.com/news/queens-mother-charged-with-murder-in-death-of-5-year-old-daughter-nypd-says",
-   "published": "2026-10-16T15:57:00Z",
-   "updated": "2026-10-16T22:01:00Z",
+   "published": "2026-10-16T22:01:00Z",
    "gathered": "2026-10-16T16:51:46Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 58,
-   "cond": "Overcast",
-   "obs": "17 Oct 01:51 am EDT"
+   "temp": 50,
+   "cond": "Fair",
+   "obs": "17 Oct 09:51 am EDT"
   },
   "periods": [
    {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
-    "temp": 52,
-    "text": "A 30 percent chance of showers before 8am.  Cloudy through mid morning, then gradual clearing, with a temperature falling to around 50 by 11am. North wind around 16 mph, with gusts as high as 28 mph. "
+    "temp": 54,
+    "text": "Cloudy, then gradually becoming mostly sunny, with a high near 54. North wind around 16 mph, with gusts as high as 28 mph. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 40,
     "text": "Mostly clear, with a low around 40. North wind 11 to 14 mph. "
@@ -531,7 +609,7 @@
     "name": "Monday",
     "kind": "high",
     "temp": 61,
-    "text": "Mostly sunny, with a high near 61."
+    "text": "Mostly sunny, with a high near 61. Northeast wind around 10 mph. "
    },
    {
     "name": "Monday Night",
