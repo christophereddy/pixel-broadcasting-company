@@ -38,9 +38,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 78,
-    "cond": "Mostly Cloudy",
-    "obs": "16 Oct 18:52 pm EDT"
+    "temp": 71,
+    "cond": "Mostly Cloudy and Windy",
+    "obs": "16 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -93,7 +93,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -116,16 +116,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "Partly Cloudy",
-    "obs": "16 Oct 18:54 pm EDT"
+    "temp": 67,
+    "cond": "Mostly Cloudy",
+    "obs": "16 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Showers and possibly a thunderstorm before 5am, then a chance of showers.  Patchy fog before 9pm. Low around 47. Southwest wind 10 to 15 mph becoming northwest after midnight.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers likely and possibly a thunderstorm before 5am, then a chance of showers.  Cloudy, with a low around 47. Northwest wind 10 to 15 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Saturday",
@@ -171,7 +171,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -182,6 +182,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Big money floods Chicago school board races",
+    "b": "Groups backed by wealthy, often suburban donors have outraised the Chicago Teachers Union 5 to 1 ahead of the Nov. 3 election.",
+    "date": "2026-10-17",
+    "publisher": "WBEZ",
+    "title": "Cash floods CPS School Board races, with big money groups outraising the Chicago Teachers Union 5 to 1",
+    "url": "https://www.wbez.org/education/2026/10/16/cash-floods-cps-school-board-races-with-big-money-groups-outraising-the-chicago-teachers-union-5-to-1",
+    "published": "2026-10-17T00:02:53Z",
+    "updated": "2026-10-17T00:02:53Z",
+    "gathered": "2026-10-17T01:25:30Z"
+   },
    {
     "h": "Metra plan would add crosstown, frequent trains",
     "b": "The $9 billion plan would run trains every 15 to 30 minutes and connect the south and west suburbs directly to O'Hare for the first time.",
@@ -225,16 +236,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Mostly Cloudy and Breezy",
-    "obs": "16 Oct 17:53 pm CDT"
+    "temp": 49,
+    "cond": "Mostly Cloudy",
+    "obs": "16 Oct 19:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Isolated showers before 8pm.  Mostly cloudy, with a low around 43. Windy, with a north wind 25 to 30 mph decreasing to 15 to 20 mph after midnight. Winds could gust as high as 40 mph.  Chance of precipitation is 20%."
+     "text": "Mostly cloudy, with a low around 43. Breezy, with a north wind 20 to 25 mph decreasing to 15 to 20 mph after midnight. Winds could gust as high as 40 mph. "
     },
     {
      "name": "Saturday",
@@ -280,7 +291,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -293,9 +304,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "16 Oct 15:58 pm MDT"
+    "obs": "16 Oct 18:58 pm MDT"
    },
    "periods": [
     {
@@ -348,7 +359,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -359,6 +370,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Lawmakers: little progress at Adelanto ICE facility",
+    "b": "Members of Congress who toured the facility Friday described unsanitary showers and kitchens, inedible food and poor medical care.",
+    "date": "2026-10-17",
+    "publisher": "LAist",
+    "title": "Reps say Adelanto has made little progress on unsanitary conditions",
+    "url": "https://laist.com/news/politics/reps-say-adelanto-has-made-little-progress-on-unsanitary-conditions",
+    "published": "2026-10-16T23:07:07Z",
+    "updated": "2026-10-16T23:07:07Z",
+    "gathered": "2026-10-17T01:25:30Z"
+   },
    {
     "h": "Norte Fire burns homes in South Orange County",
     "b": "The fire near San Clemente spread to 465 acres Friday, burning at least four homes and prompting evacuations in San Clemente and San Juan Capistrano.",
@@ -378,17 +400,14 @@
     "title": "LA city controller subpoenas LA28, demanding financial documents",
     "url": "https://laist.com/news/la-city-controller-subpoenas-la28",
     "published": "2026-10-16T21:33:37Z",
-    "updated": "2026-10-16T21:50:48Z",
+    "updated": "2026-10-16T23:54:28Z",
     "gathered": "2026-10-16T22:57:13Z"
    },
    {
     "h": "LA fire survivors to lose case managers",
     "b": "About 1,400 households hit by the 2025 fires will lose disaster case managers by the end of October amid a California-FEMA funding standoff.",
     "date": "2026-10-16",
-    "publisher": "PBS NewsHour",
-    "title": "LA fire survivors set to lose case managers as California and FEMA's standoff drags on",
     "url": "https://www.pbs.org/newshour/politics/la-fire-survivors-set-to-lose-case-managers-as-california-and-femas-standoff-drags-on",
-    "published": "2026-10-16T19:43:10Z",
     "gathered": "2026-10-16T20:01:14Z"
    },
    {
@@ -470,7 +489,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 66,
-     "text": "Clear, with a low around 66."
+     "text": "Clear, with a low around 66. Southwest wind 5 to 10 mph becoming east northeast after midnight. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Monday",
@@ -492,7 +511,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -567,16 +586,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
-    "cond": "Mostly Cloudy",
-    "obs": "16 Oct 18:51 pm EDT"
+    "temp": 63,
+    "cond": "Partly Cloudy",
+    "obs": "16 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Showers and possibly a thunderstorm before 11pm, then a slight chance of showers between 11pm and 2am, then a chance of rain after 2am.  Low around 50. Breezy, with a northwest wind 14 to 23 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers likely and possibly a thunderstorm before 11pm, then a slight chance of showers between 11pm and 2am, then a chance of rain after 2am.  Mostly cloudy, with a low around 50. Breezy, with a northwest wind 14 to 23 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Saturday",
@@ -622,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -698,7 +717,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "goodnews": []
  },
  {
@@ -708,6 +727,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Renton may let its Flock camera contract lapse",
+    "b": "The city's license plate cameras have been off since May, and its nearly $170,000 contract expires Nov. 2.",
+    "date": "2026-10-17",
+    "publisher": "KUOW",
+    "title": "After fierce debate, why Renton might let its Flock contract expire",
+    "url": "https://www.kuow.org/governing/2026-10-16/after-fierce-debate-why-renton-might-let-its-flock-contract-expire",
+    "published": "2026-10-16T22:58:09Z",
+    "updated": "2026-10-17T00:13:48Z",
+    "gathered": "2026-10-17T01:25:30Z"
+   },
    {
     "h": "Social housing agency plans Central District units",
     "b": "Seattle's social housing developer will build 20 units, mostly for families, next to the Central District library, aiming to open by 2028.",
@@ -780,7 +810,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T01:12:00Z",
+  "updatedAt": "2026-10-17T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

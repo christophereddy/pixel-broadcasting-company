@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-17T01:12:00Z",
+ "updatedAt": "2026-10-17T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -9,9 +9,9 @@
   {
    "h": "Iran war: Strikes hit Houthis in Taiz",
    "b": "Al Jazeera's live coverage: strikes target Houthi positions in Taiz, and the Saudi-led coalition says it intercepted drones and missiles.",
-   "date": "2026-10-16",
+   "date": "2026-10-17",
    "publisher": "Al Jazeera",
-   "title": "Strikes target Houthis in Taiz, coalition says intercepted drones, missiles",
+   "title": "Iran war updates: Strikes hit Houthis in Taiz, coalition intercepts attacks",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/16/iran-war-live-saudi-blasts-houthi-war-crimes-us-warns-on-saudi-airports",
    "gathered": "2026-10-16T01:34:42Z"
   }
@@ -26,6 +26,16 @@
   }
  ],
  "politics": [
+  {
+   "h": "DOJ warns California officials on ballots",
+   "b": "A Justice Department letter says officials who process mail ballots from suspected noncitizens risk prosecution, a day after the administration sued the state.",
+   "date": "2026-10-17",
+   "publisher": "PBS NewsHour",
+   "title": "DOJ says California officials who process ballots from suspected noncitizens risk prosecution",
+   "url": "https://www.pbs.org/newshour/politics/doj-says-california-officials-who-process-ballots-from-suspected-noncitizens-risk-prosecution",
+   "published": "2026-10-16T23:30:20Z",
+   "gathered": "2026-10-17T01:25:30Z"
+  },
   {
    "h": "Democrats: Trump's drugmaker stocks grew",
    "b": "A Joint Economic Committee minority report says Trump's pharma holdings rose to as much as $56.2 million, including up to $39.1 million in firms that got Medicare negotiation exemptions.",
@@ -260,6 +270,16 @@
  ],
  "science": [
   {
+   "h": "Nature funding falls short before UN summit",
+   "b": "Countries are behind on raising $200 billion a year for biodiversity as the COP17 talks open Monday to review the 2022 \"30x30\" targets.",
+   "date": "2026-10-17",
+   "publisher": "PBS NewsHour",
+   "title": "Fundraising to protect key natural sites falls short ahead of UN biodiversity summit",
+   "url": "https://www.pbs.org/newshour/world/fundraising-to-protect-key-natural-sites-falls-short-ahead-of-un-biodiversity-summit",
+   "published": "2026-10-16T23:58:48Z",
+   "gathered": "2026-10-17T01:25:30Z"
+  },
+  {
    "h": "OB-GYNs update menopause treatment guidance",
    "b": "ACOG updated its guidelines for the first time since 2014, recommending hormone therapy alongside antidepressants and nonhormonal options for symptoms like hot flashes and insomnia.",
    "date": "2026-10-16",
@@ -389,16 +409,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 71,
-   "cond": "Mostly Cloudy",
-   "obs": "16 Oct 18:51 pm EDT"
+   "temp": 63,
+   "cond": "Partly Cloudy",
+   "obs": "16 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 50,
-    "text": "Showers and possibly a thunderstorm before 11pm, then a slight chance of showers between 11pm and 2am, then a chance of rain after 2am.  Low around 50. Breezy, with a northwest wind 14 to 23 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "text": "Showers likely and possibly a thunderstorm before 11pm, then a slight chance of showers between 11pm and 2am, then a chance of rain after 2am.  Mostly cloudy, with a low around 50. Breezy, with a northwest wind 14 to 23 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Saturday",
