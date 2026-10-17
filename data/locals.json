@@ -93,7 +93,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -116,46 +116,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 49,
     "cond": "Overcast",
-    "obs": "17 Oct 02:54 am EDT"
+    "obs": "17 Oct 06:54 am EDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
-     "temp": 50,
-     "text": "Cloudy through mid morning, then gradual clearing, with a high near 50. Northwest wind 15 to 17 mph, with gusts as high as 29 mph. "
+     "temp": 48,
+     "text": "A slight chance of showers between 9am and 10am.  Mostly cloudy, then gradually becoming sunny, with a high near 48. Northwest wind 13 to 16 mph, with gusts as high as 29 mph.  Chance of precipitation is 20%."
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 33,
-     "text": "Patchy frost after midnight.  Otherwise, clear, with a low around 33. North wind 3 to 7 mph. "
+     "text": "Patchy frost after 11pm.  Otherwise, clear, with a low around 33. Northwest wind 6 to 9 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 51,
-     "text": "Sunny, with a high near 51. Light and variable wind becoming southwest around 6 mph in the morning. "
+     "temp": 53,
+     "text": "Areas of frost before 9am.  Otherwise, sunny, with a high near 53. Light and variable wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. East wind around 5 mph becoming calm  in the evening. "
+     "temp": 39,
+     "text": "Clear, with a low around 39. Light south wind. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 56,
-     "text": "Mostly sunny, with a high near 56. Northeast wind 6 to 10 mph. "
+     "temp": 57,
+     "text": "Mostly sunny, with a high near 57. Light and variable wind becoming east 5 to 8 mph in the morning. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly cloudy, with a low around 45. North wind around 9 mph. "
+     "temp": 43,
+     "text": "Mostly cloudy, with a low around 43. North wind around 6 mph. "
     }
    ]
   },
@@ -171,7 +171,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -219,11 +219,7 @@
     "h": "Metra plan would add crosstown, frequent trains",
     "b": "The $9 billion plan would run trains every 15 to 30 minutes and connect the south and west suburbs directly to O'Hare for the first time.",
     "date": "2026-10-16",
-    "publisher": "WBEZ",
-    "title": "The Rundown: Metra’s plan to offer more frequent trains",
     "url": "https://www.wbez.org/wbez-newsletter/2026/10/16/the-rundown-metras-plan-to-offer-more-frequent-trains",
-    "published": "2026-10-16T20:45:00Z",
-    "updated": "2026-10-16T20:45:00Z",
     "gathered": "2026-10-16T22:57:13Z"
    },
    {
@@ -266,12 +262,6 @@
     "obs": "17 Oct 00:53 am CDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 45,
-     "text": "Partly cloudy, with a steady temperature around 45. Breezy, with a north wind 15 to 20 mph, with gusts as high as 25 mph. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -316,7 +306,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -334,12 +324,6 @@
     "obs": "16 Oct 23:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 35,
-     "text": "Clear, with a low around 35. South southwest wind 3 to 5 mph. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -384,7 +368,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -487,19 +471,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 69,
-     "text": "Mostly clear, with a low around 69. North northeast wind around 5 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 91,
      "text": "Mostly sunny, with a high near 91. Northeast wind around 5 mph becoming south southeast in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 66,
      "text": "Partly cloudy, with a low around 66. Southwest wind 5 to 10 mph becoming east northeast in the evening. "
@@ -520,7 +498,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 82,
-     "text": "Sunny, with a high near 82."
+     "text": "Sunny, with a high near 82. Calm wind becoming south southwest around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 61,
+     "text": "Partly cloudy, with a low around 61."
     }
    ]
   },
@@ -536,7 +520,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -547,6 +531,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Tompkins Square Park makeover splits regulars",
+    "b": "A community board committee backed renovating the basketball courts, kids' pool and 1990s outdoor fitness area. Some park users say it goes too far.",
+    "date": "2026-10-17",
+    "publisher": "Gothamist",
+    "title": "Tompkins Square Park is getting a makeover. Some say it's too much.",
+    "url": "https://gothamist.com/news/tompkins-square-park-is-getting-a-makeover-some-say-its-too-much",
+    "published": "2026-10-17T11:00:57Z",
+    "gathered": "2026-10-17T11:03:03Z"
+   },
    {
     "h": "Pfizer Building fix: 1/64th of an inch at a time",
     "b": "Engineering plans for the city's largest office-to-housing conversion show crews will jack sagging floors up about 7 inches in tiny increments.",
@@ -666,7 +660,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -693,11 +687,15 @@
     "gathered": "2026-10-16T16:51:46Z"
    },
    {
-    "h": "Paris braces for cost-of-living protest Saturday",
-    "b": "Authorities expect 20,000 to 40,000 marchers in Paris, but police banned the planned routes over security concerns.",
-    "date": "2026-10-16",
-    "url": "https://www.thelocal.fr/20261016/map-what-are-the-routes-for-saturdays-paris-protest",
-    "gathered": "2026-10-16T11:46:32Z"
+    "h": "Macron urges calm before nationwide protests",
+    "b": "Paris banned protests in the city centre ahead of Saturday's cost-of-living rallies, which authorities fear could turn violent.",
+    "date": "2026-10-17",
+    "publisher": "The Local France",
+    "title": "Macron calls for calm amid fears of violence at France protests",
+    "url": "https://www.thelocal.fr/20261017/macron-calls-for-calm-amid-fears-of-violence-at-france-protests",
+    "published": "2026-10-17T09:33:19Z",
+    "updated": "2026-10-17T09:33:22Z",
+    "gathered": "2026-10-17T11:03:03Z"
    },
    {
     "h": "French rugby players stranded at UK airport",
@@ -730,7 +728,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "goodnews": []
  },
  {
@@ -773,12 +771,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Rain likely, mainly between 2am and 4am.  Mostly cloudy, with a steady temperature around 59. South wind around 14 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -823,7 +815,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-17T10:12:00Z",
+  "updatedAt": "2026-10-17T13:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
