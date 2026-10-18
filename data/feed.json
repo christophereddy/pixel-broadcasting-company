@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-18T07:12:00Z",
+ "updatedAt": "2026-10-18T10:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Iran says two tankers hit mines in Hormuz",
+   "b": "Two tankers caught fire after hitting mines in the Strait of Hormuz, Iran's IRGC and the IRNA news agency said. IRNA said the vessels had switched off their positioning and radar systems; their names were not released.",
+   "date": "2026-10-18",
+   "publisher": "Al Jazeera",
+   "title": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+   "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz",
+   "gathered": "2026-10-18T09:47:43Z"
+  },
   {
    "h": "US and Iran both claim control of Hormuz",
    "b": "Washington and Tehran each say they control the Strait of Hormuz amid attacks on vessels. UK maritime monitor UKMTO says it is struggling to count attacks because most targeted ships refuse to report them.",
@@ -14,13 +23,13 @@
    "gathered": "2026-10-17T14:19:29Z"
   },
   {
-   "h": "Iran war: Five tankers reported hit in Hormuz",
-   "b": "Al Jazeera's live coverage: five tankers are reported hit in the Strait of Hormuz and drones are intercepted over Riyadh.",
-   "date": "2026-10-17",
+   "h": "Iran war: Ships attacked off UAE and Yemen",
+   "b": "Al Jazeera's live coverage: ships are attacked off the UAE and Yemen as Iran appoints a new defence chief.",
+   "date": "2026-10-18",
    "publisher": "Al Jazeera",
-   "title": "Iran war updates: Tankers reported hit in Hormuz; drones downed near Riyadh",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/17/draft-2",
-   "gathered": "2026-10-17T05:56:05Z"
+   "title": "Ships attacked off UAE and Yemen; Iran appoints new defence chief",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats",
+   "gathered": "2026-10-18T09:47:43Z"
   }
  ],
  "national": [
@@ -98,13 +107,33 @@
  ],
  "international": [
   {
+   "h": "Deadly incident and fire at Alberta military base",
+   "b": "Canada's defence minister David McGuinty said an incident at CFB Wainwright caused fatalities and injuries, as fierce winds pushed flames beyond the base into the surrounding rural area.",
+   "date": "2026-10-18",
+   "place": "Wainwright",
+   "tz": "America/Edmonton",
+   "publisher": "Al Jazeera",
+   "title": "‘Serious incident’ at Canada military base causes deaths, injuries",
+   "url": "https://www.aljazeera.com/news/2026/10/18/deaths-injuries-after-fire-at-alberta-military-base-canada-minister",
+   "gathered": "2026-10-18T09:47:43Z"
+  },
+  {
+   "h": "Former Guatemalan prosecutor shot dead",
+   "b": "Former prosecutor Foppa and another man were killed in an attack at the Campo Marte sports complex in Guatemala City. Police said they arrested two men and seized a firearm and a motorcycle.",
+   "date": "2026-10-18",
+   "place": "Guatemala City",
+   "tz": "America/Guatemala",
+   "publisher": "Al Jazeera",
+   "title": "Guatemalan former prosecutor shot dead at sports centre",
+   "url": "https://www.aljazeera.com/news/2026/10/18/guatemalan-former-prosecutor-shot-dead-at-sports-centre",
+   "gathered": "2026-10-18T09:47:43Z"
+  },
+  {
    "h": "Kenya confirms four more Ebola cases",
    "b": "Kenya's Ebola total has risen to seven. Three of the new cases are health workers who treated the country's first patient, and the fourth is a relative of that patient, who died, the Ministry of Health said.",
    "date": "2026-10-17",
    "place": "Nairobi",
    "tz": "Africa/Nairobi",
-   "publisher": "Al Jazeera",
-   "title": "Kenya confirms four more Ebola cases, bringing total to seven",
    "url": "https://www.aljazeera.com/news/2026/10/17/kenya-confirms-four-more-ebola-cases-bringing-total-to-seven",
    "gathered": "2026-10-17T19:37:31Z"
   },
@@ -135,8 +164,6 @@
    "date": "2026-10-17",
    "place": "Tunis",
    "tz": "Africa/Tunis",
-   "publisher": "Al Jazeera",
-   "title": "Thousands rally for biggest protest in years against Tunisia’s Saied",
    "url": "https://www.aljazeera.com/news/2026/10/17/thousands-rally-for-biggest-protest-in-years-against-tunisias-saied",
    "gathered": "2026-10-17T17:26:36Z"
   },
@@ -155,8 +182,6 @@
    "date": "2026-10-17",
    "place": "Paris",
    "tz": "Europe/Paris",
-   "publisher": "Al Jazeera",
-   "title": "Tear gas and unrest as hundreds of thousands protest for reforms in France",
    "url": "https://www.aljazeera.com/news/2026/10/17/france-wave-of-nationwide-protests",
    "gathered": "2026-10-17T14:19:29Z"
   },
@@ -166,8 +191,6 @@
    "date": "2026-10-17",
    "place": "Hebron",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Israeli settlers attack European diplomats during West Bank olive harvest",
    "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom",
    "gathered": "2026-10-17T14:19:29Z"
   },
@@ -186,8 +209,6 @@
    "date": "2026-10-17",
    "place": "Cairo",
    "tz": "Africa/Cairo",
-   "publisher": "Al Jazeera",
-   "title": "Egypt’s Sisi seeks authorisation for defence assistance to Saudi Arabia",
    "url": "https://www.aljazeera.com/economy/2026/10/17/egypts-sisi-seeks-authorisation-for-defence-assistance-to-saudi-arabia",
    "gathered": "2026-10-17T14:19:29Z"
   },
@@ -299,6 +320,15 @@
  ],
  "sports": [
   {
+   "h": "Big 12 admits clock error in BYU-Notre Dame finish",
+   "b": "The Big 12 said Notre Dame should have had one second left for another play after CJ Carr's final heave fell incomplete and BYU fans stormed the field.",
+   "date": "2026-10-18",
+   "publisher": "CBS Sports",
+   "title": "Big 12 rules Notre Dame should have been allowed another play after officiating error in loss to BYU",
+   "url": "https://www.cbssports.com/college-football/news/notre-dame-byu-officials-mistake-error-big-12/",
+   "gathered": "2026-10-18T09:47:43Z"
+  },
+  {
    "h": "BYU makes case for No. 1 after beating Notre Dame",
    "b": "In a chaotic Week 7, No. 8 BYU beat No. 2 Notre Dame while No. 1 Georgia lost to unranked Auburn and Texas fell to unranked Florida, setting up a shake-up atop the rankings.",
    "date": "2026-10-18",
@@ -367,8 +397,6 @@
    "h": "Eagles place Jalen Hurts on injured reserve",
    "b": "Hurts, dealing with a superficial blood clot, will miss at least four weeks, including games against the Panthers, Cowboys, Commanders and Giants. Tanner McKee will lead the offense.",
    "date": "2026-10-17",
-   "publisher": "CBS Sports",
-   "title": "Eagles place Jalen Hurts on IR, as he deals with superficial blood clot",
    "url": "https://www.cbssports.com/nfl/news/eagles-not-planning-to-place-jalen-hurts-on-ir/",
    "gathered": "2026-10-18T00:12:56Z"
   }
@@ -419,46 +447,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 44,
+   "temp": 42,
    "cond": "Fair",
-   "obs": "18 Oct 00:51 am EDT"
+   "obs": "18 Oct 04:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 39,
-    "text": "Clear, with a low around 39. North wind around 11 mph. "
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "kind": "high",
-    "temp": 59,
-    "text": "Sunny, with a high near 59. North wind 6 to 9 mph. "
+    "temp": 58,
+    "text": "Sunny, with a high near 58. North wind 6 to 10 mph. "
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 44,
-    "text": "Clear, with a low around 44. Light and variable wind becoming north 5 to 7 mph after midnight. "
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47. North wind 5 to 7 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 63,
-    "text": "Mostly sunny, with a high near 63. Northeast wind around 10 mph. "
+    "text": "Increasing clouds, with a high near 63. Northeast wind around 10 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly cloudy, with a low around 50. North wind 9 to 16 mph. "
+    "temp": 54,
+    "text": "Mostly cloudy, with a low around 54. North wind 10 to 17 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 66,
-    "text": "Mostly sunny, with a high near 66."
+    "temp": 65,
+    "text": "Mostly sunny, with a high near 65. North wind 15 to 17 mph. "
+   },
+   {
+    "name": "Tuesday Night",
+    "kind": "low",
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51. Breezy. "
    }
   ]
  },
