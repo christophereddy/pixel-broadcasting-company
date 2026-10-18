@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-18T04:11:00Z",
+ "updatedAt": "2026-10-18T07:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -299,11 +299,18 @@
  ],
  "sports": [
   {
+   "h": "BYU makes case for No. 1 after beating Notre Dame",
+   "b": "In a chaotic Week 7, No. 8 BYU beat No. 2 Notre Dame while No. 1 Georgia lost to unranked Auburn and Texas fell to unranked Florida, setting up a shake-up atop the rankings.",
+   "date": "2026-10-18",
+   "publisher": "CBS Sports",
+   "title": "Tomorrow's Top 25 Today: BYU to No. 1? Cougars make strong case after milestone win over Notre Dame",
+   "url": "https://www.cbssports.com/college-football/news/college-football-rankings-tomorrows-top-25-ap-poll-byu-no-1/",
+   "gathered": "2026-10-18T04:56:54Z"
+  },
+  {
    "h": "Auburn stuns No. 1 Georgia on walk-off field goal",
    "b": "Alex McPherson's field goal as time expired gave Auburn a 27-24 win after Georgia led 14-0, snapping the Bulldogs' 54-game winning streak against unranked teams.",
    "date": "2026-10-17",
-   "publisher": "CBS Sports",
-   "title": "Auburn takes down Georgia: Tigers score massive upset over No. 1 Bulldogs on walk-off FG",
    "url": "https://www.cbssports.com/college-football/news/auburn-georgia-upset-over-no-1-walk-of-fg/",
    "gathered": "2026-10-18T00:12:56Z"
   },
@@ -311,8 +318,6 @@
    "h": "Ohio State edges Indiana 19-15",
    "b": "Ohio State ended Indiana's 22-game win streak when a late fourth-down catch by Nick Marsh landed out of bounds, but quarterback Julian Sayin's injury may shape the Buckeyes' season.",
    "date": "2026-10-17",
-   "publisher": "CBS Sports",
-   "title": "Ohio State survived Indiana, but Julian Sayin's injury may decide the Buckeyes' season",
    "url": "https://www.cbssports.com/college-football/news/ohio-state-survived-indiana-julian-sayin-injury-decide-season/",
    "gathered": "2026-10-18T00:12:56Z"
   },
@@ -414,16 +419,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 47,
+   "temp": 44,
    "cond": "Fair",
-   "obs": "17 Oct 20:51 pm EDT"
+   "obs": "18 Oct 00:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 39,
-    "text": "Clear, with a low around 39. North wind 10 to 15 mph. "
+    "text": "Clear, with a low around 39. North wind around 11 mph. "
    },
    {
     "name": "Sunday",
