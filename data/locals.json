@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 49,
     "cond": "Fair",
-    "obs": "18 Oct 04:52 am EDT"
+    "obs": "18 Oct 05:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,9 +76,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 37,
+    "temp": 38,
     "cond": "Fair",
-    "obs": "18 Oct 04:54 am EDT"
+    "obs": "18 Oct 05:54 am EDT"
    },
    "periods": [
     {
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -220,7 +220,7 @@
    "now": {
     "temp": 43,
     "cond": "Fair",
-    "obs": "18 Oct 03:53 am CDT"
+    "obs": "18 Oct 04:53 am CDT"
    },
    "periods": [
     {
@@ -273,7 +273,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -304,12 +304,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "Mostly clear, with a low around 44. Southwest wind around 5 mph. "
-    },
-    {
      "name": "Sunday",
      "kind": "high",
      "temp": 74,
@@ -338,6 +332,12 @@
      "kind": "high",
      "temp": 72,
      "text": "Sunny, with a high near 72."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 49,
+     "text": "Mostly clear, with a low around 49."
     }
    ]
   },
@@ -353,7 +353,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -391,12 +391,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 66,
-     "text": "Mostly clear, with a low around 66. Northeast wind around 5 mph. "
-    },
-    {
      "name": "Sunday",
      "kind": "high",
      "temp": 87,
@@ -425,6 +419,12 @@
      "kind": "high",
      "temp": 77,
      "text": "Patchy fog before 11am.  Otherwise, mostly sunny, with a high near 77."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 60,
+     "text": "A 20 percent chance of showers after 11pm.  Partly cloudy, with a low around 60."
     }
    ]
   },
@@ -440,7 +440,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -509,7 +509,7 @@
    "now": {
     "temp": 42,
     "cond": "Fair",
-    "obs": "18 Oct 04:51 am EDT"
+    "obs": "18 Oct 05:51 am EDT"
    },
    "periods": [
     {
@@ -562,7 +562,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -579,10 +579,10 @@
     "b": "Saturday's protests brought clashes, street blazes and widespread looting, with masked crowds stripping stores. Prosecutors said more than 500 people were held in custody.",
     "date": "2026-10-18",
     "publisher": "The Local France",
-    "title": "IN PICTURES: 'Record' 855 people arrested over Paris protest violence: police",
+    "title": "IN PICTURES: France counts cost of violent protests, 1,800 arrested",
     "url": "https://www.thelocal.fr/20261018/record-855-people-arrested-over-paris-protest-violence-police",
     "published": "2026-10-18T09:07:17Z",
-    "updated": "2026-10-18T09:07:18Z",
+    "updated": "2026-10-18T09:02:55Z",
     "gathered": "2026-10-18T09:47:43Z"
    },
    {
@@ -638,7 +638,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "goodnews": []
  },
  {
@@ -659,12 +659,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 49,
-     "text": "Mostly clear, with a steady temperature around 49. Northeast wind 3 to 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -694,6 +688,12 @@
      "kind": "high",
      "temp": 59,
      "text": "Mostly sunny, with a high near 59."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Mostly clear, with a low around 45."
     }
    ]
   },
@@ -709,7 +709,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T10:12:00Z",
+  "updatedAt": "2026-10-18T13:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
