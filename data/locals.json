@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 50,
     "cond": "Fair",
-    "obs": "18 Oct 05:52 am EDT"
+    "obs": "18 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,16 +76,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 38,
-    "cond": "Fair",
-    "obs": "18 Oct 05:54 am EDT"
+    "temp": 47,
+    "cond": "A Few Clouds",
+    "obs": "18 Oct 09:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 55,
-     "text": "Patchy frost before 8am.  Otherwise, sunny, with a high near 55. Northwest wind around 5 mph becoming calm  in the morning. "
+     "text": "Sunny, with a high near 55. Light and variable wind. "
     },
     {
      "name": "Tonight",
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -179,11 +179,7 @@
     "h": "4 Chicago-area congressional offices get suspicious letters",
     "b": "Reps. Brad Schneider, Mike Quigley, Robin Kelly and Jan Schakowsky reported letters amid a national wave of threats before Election Day.",
     "date": "2026-10-17",
-    "publisher": "WBEZ",
-    "title": "4 Chicago area congressional offices receive suspicious letters amid wave of preelection threats",
     "url": "https://www.wbez.org/news/2026/10/16/4-chicago-area-congressional-offices-receive-suspicious-letters-amid-wave-of-preelection-threats",
-    "published": "2026-10-17T04:03:33Z",
-    "updated": "2026-10-17T04:03:33Z",
     "gathered": "2026-10-17T05:56:05Z"
    },
    {
@@ -218,9 +214,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 48,
     "cond": "Fair",
-    "obs": "18 Oct 04:53 am CDT"
+    "obs": "18 Oct 08:53 am CDT"
    },
    "periods": [
     {
@@ -273,7 +269,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -298,19 +294,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Fair",
-    "obs": "18 Oct 02:58 am MDT"
+    "temp": 48,
+    "cond": "A Few Clouds",
+    "obs": "18 Oct 06:58 am MDT"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 74,
      "text": "Mostly sunny, with a high near 74. Calm wind becoming east northeast 5 to 7 mph in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Partly cloudy, with a low around 46. East northeast wind around 5 mph becoming calm  in the evening. "
@@ -331,7 +327,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72."
+     "text": "Sunny, with a high near 72. Calm wind becoming northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -353,7 +349,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -364,6 +360,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Pitch decks are LA singles' new matchmaker",
+    "b": "At Pitch-A-Friend Los Angeles, about 300 people pack a Koreatown bar as friends present slideshow pitches to find dates for the singles in their lives.",
+    "date": "2026-10-18",
+    "publisher": "LAist",
+    "title": "Forget swiping: How pitch decks are saving LA’s exhausted singles",
+    "url": "https://laist.com/news/los-angeles-activities/forget-swiping-how-pitch-decks-are-saving-las-exhausted-singles",
+    "published": "2026-10-18T12:00:00Z",
+    "updated": "2026-10-18T12:00:03Z",
+    "gathered": "2026-10-18T14:06:08Z"
+   },
    {
     "h": "Secret comedy shows pop up in WWII huts",
     "b": "Don't Tell Comedy is staging secret shows in unexpected spots around Los Angeles, including a surfer-themed bar in a WWII-style Quonset hut at Boardroom Brewery in El Segundo.",
@@ -383,7 +390,6 @@
     "title": "Reps say Adelanto has made little progress on unsanitary conditions",
     "url": "https://laist.com/news/politics/reps-say-adelanto-has-made-little-progress-on-unsanitary-conditions",
     "published": "2026-10-16T23:07:07Z",
-    "updated": "2026-10-16T23:07:07Z",
     "gathered": "2026-10-17T01:25:30Z"
    }
   ],
@@ -391,13 +397,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 87,
      "text": "Sunny, with a high near 87. North northeast wind around 5 mph becoming southwest in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 64,
      "text": "Mostly clear, with a low around 64. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
@@ -412,13 +418,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 61. Southwest wind 5 to 10 mph becoming south southeast after midnight. "
+     "text": "Patchy fog after 11pm.  Otherwise, increasing clouds, with a low around 61. Southwest wind 5 to 10 mph becoming south southeast after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 77,
-     "text": "Patchy fog before 11am.  Otherwise, mostly sunny, with a high near 77."
+     "text": "Patchy fog before 11am.  Otherwise, mostly sunny, with a high near 77. Southeast wind 5 to 10 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -440,9 +446,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
+   {
+    "h": "LA's fall showstopper: the Chinese flame tree",
+    "b": "Chinese flame trees are brightening Los Angeles with yellow fall blooms that give way to pink or reddish capsules reminiscent of paper lanterns.",
+    "date": "2026-10-18",
+    "publisher": "LAist",
+    "title": "Move over, jacaranda. LA’s fall showstopper is the Chinese flame tree",
+    "url": "https://laist.com/news/los-angeles-activities/chinese-flame-tree-los-angeles",
+    "published": "2026-10-18T12:00:00Z",
+    "updated": "2026-10-18T12:00:00Z",
+    "gathered": "2026-10-18T14:06:08Z"
+   },
    {
     "h": "South Pasadena finally has a bookstore",
     "b": "Outpost Books opened in September in a cozy, just-under-1,000-square-foot space styled like a trading post, with a 'Kids Corral' that plans weekly story readings.",
@@ -463,6 +480,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Bail reform still central in NY governor's race",
+    "b": "Seven years after it became law, bail reform remains a major issue in the governor's race, with opponents pointing to cases like a Rochester man who fired at an officer while out on bail.",
+    "date": "2026-10-18",
+    "publisher": "Gothamist",
+    "title": "Bail reform remains major issue in NY governor's race, 7 years after it became law",
+    "url": "https://gothamist.com/news/bail-reform-remains-major-issue-in-ny-governors-race-7-years-after-it-became-law",
+    "published": "2026-10-18T11:00:46Z",
+    "gathered": "2026-10-18T14:06:08Z"
+   },
    {
     "h": "Man shot near Midtown subway station",
     "b": "A man was shot Saturday afternoon near the 53rd Street and 7th Avenue station, which serves the B, D and E lines, the NYPD said. Police released no other details, and his condition was unclear.",
@@ -507,16 +534,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "18 Oct 05:51 am EDT"
+    "obs": "18 Oct 09:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 58,
-     "text": "Sunny, with a high near 58. North wind 6 to 10 mph. "
+     "text": "Sunny, with a high near 58. North wind 6 to 8 mph. "
     },
     {
      "name": "Tonight",
@@ -562,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -579,10 +606,10 @@
     "b": "Saturday's protests brought clashes, street blazes and widespread looting, with masked crowds stripping stores. Prosecutors said more than 500 people were held in custody.",
     "date": "2026-10-18",
     "publisher": "The Local France",
-    "title": "IN PICTURES: France counts cost of violent protests, 1,800 arrested",
+    "title": "IN PICTURES: 'Like we had a war': France counts cost of violent protests",
     "url": "https://www.thelocal.fr/20261018/record-855-people-arrested-over-paris-protest-violence-police",
     "published": "2026-10-18T09:07:17Z",
-    "updated": "2026-10-18T09:02:55Z",
+    "updated": "2026-10-18T13:19:23Z",
     "gathered": "2026-10-18T09:47:43Z"
    },
    {
@@ -638,7 +665,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "goodnews": []
  },
  {
@@ -660,13 +687,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 58,
      "text": "Mostly sunny, with a high near 58. Calm wind becoming north 5 to 8 mph in the morning. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 47,
      "text": "Mostly cloudy, with a low around 47. North wind around 5 mph becoming calm  in the evening. "
@@ -681,13 +708,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly cloudy, with a low around 46. North wind 3 to 5 mph. "
+     "text": "Cloudy, then gradually becoming partly cloudy, with a low around 46. North wind 3 to 5 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59."
+     "text": "Mostly sunny, with a high near 59. North northeast wind 6 to 9 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -709,7 +736,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-18T13:12:00Z",
+  "updatedAt": "2026-10-18T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
