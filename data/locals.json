@@ -8,46 +8,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 67,
     "cond": "Fair",
-    "obs": "19 Oct 12:52 pm EDT"
+    "obs": "19 Oct 14:52 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Sunny, with a high near 70. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 43,
-     "text": "Clear, with a low around 43. Calm wind. "
+     "temp": 45,
+     "text": "Clear, with a low around 45. Calm wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 74,
-     "text": "Sunny, with a high near 74. Calm wind. "
+     "temp": 76,
+     "text": "Sunny, with a high near 76. Calm wind. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "Mostly clear, with a low around 48. Calm wind. "
+     "temp": 49,
+     "text": "Mostly clear, with a low around 49. Calm wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 74,
-     "text": "Sunny, with a high near 74. East wind around 5 mph becoming calm  in the afternoon. "
+     "temp": 76,
+     "text": "Sunny, with a high near 76. East wind around 5 mph becoming calm  in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 49,
      "text": "Clear, with a low around 49."
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 77,
+     "text": "Sunny, with a high near 77."
     }
    ]
   },
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,15 +88,9 @@
    "now": {
     "temp": 55,
     "cond": "A Few Clouds",
-    "obs": "19 Oct 12:54 pm EDT"
+    "obs": "19 Oct 14:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 59,
-     "text": "Mostly sunny, with a high near 59. East wind 6 to 8 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -126,6 +120,12 @@
      "kind": "low",
      "temp": 44,
      "text": "Mostly cloudy, with a low around 44. North wind around 8 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Mostly sunny, with a high near 62. North wind around 8 mph. "
     }
    ]
   },
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -167,56 +167,52 @@
     "h": "3 girls hospitalized after 'unknown substance'",
     "b": "Three 6-year-old girls at Henry O. Tanner Elementary in Grand Crossing were taken to Comer Children's Hospital in fair condition with abdominal pain after ingesting an undisclosed substance, officials said.",
     "date": "2026-10-18",
-    "publisher": "WBEZ",
-    "title": "3 kids hospitalized after ingesting 'unknown substance' at South Side school",
     "url": "https://www.wbez.org/news/2026/10/18/3-kids-hospitalized-after-ingesting-unknown-substance-at-south-side-school",
-    "published": "2026-10-18T06:05:27Z",
-    "updated": "2026-10-18T06:05:27Z",
     "gathered": "2026-10-18T09:47:43Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 66,
     "cond": "A Few Clouds",
-    "obs": "19 Oct 11:53 am CDT"
+    "obs": "19 Oct 13:53 pm CDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. South southwest wind around 5 mph becoming east. "
+     "temp": 64,
+     "text": "Sunny, with a high near 64. Calm wind. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Partly cloudy, with a low around 52. East wind around 5 mph. "
+     "temp": 50,
+     "text": "Patchy fog after 1am.  Otherwise, partly cloudy, with a low around 50. East wind around 5 mph becoming calm. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. Calm wind becoming east around 5 mph in the afternoon. "
+     "temp": 64,
+     "text": "Patchy fog before 10am.  Otherwise, sunny, with a high near 64. Calm wind becoming east northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. East northeast wind around 5 mph becoming south after midnight. "
+     "temp": 48,
+     "text": "Mostly clear, with a low around 48. East northeast wind around 5 mph becoming south after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66. South wind around 5 mph becoming calm  in the morning. "
+     "text": "Sunny, with a high near 66. South wind around 5 mph becoming calm. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54."
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
     }
    ]
   },
@@ -232,7 +228,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -240,7 +236,7 @@
     "b": "Yido on the Near West Side brews makgeolli, an unfiltered, naturally fermented rice wine described as creamy, tart and sweet.",
     "date": "2026-10-19",
     "publisher": "WBEZ",
-    "title": "A new Chicago brewery is creating Korea’s oldest alcoholic drink",
+    "title": "A new Chicago brewery is making Korea’s oldest alcoholic drink",
     "url": "https://www.wbez.org/food-drink/2026/10/19/yido-makgeolli-brewery-chicago-peter-chung",
     "published": "2026-10-19T12:28:12Z",
     "updated": "2026-10-19T13:37:45Z",
@@ -257,16 +253,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 61,
     "cond": "A Few Clouds",
-    "obs": "19 Oct 10:58 am MDT"
+    "obs": "19 Oct 11:58 am MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70. East northeast wind 3 to 6 mph. "
+     "text": "Sunny, with a high near 70. East northeast wind 5 to 7 mph. "
     },
     {
      "name": "Tonight",
@@ -277,20 +273,20 @@
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 74,
-     "text": "Sunny, with a high near 74. Calm wind becoming north northeast around 6 mph in the afternoon. "
+     "temp": 75,
+     "text": "Mostly sunny, with a high near 75. Calm wind becoming north northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 49. Light and variable wind. "
+     "temp": 47,
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 47. Light and variable wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 77,
-     "text": "Mostly sunny, with a high near 77. Calm wind becoming east 5 to 7 mph in the afternoon. Winds could gust as high as 17 mph. "
+     "temp": 78,
+     "text": "Mostly sunny, with a high near 78. Light and variable wind becoming east 5 to 7 mph in the afternoon. Winds could gust as high as 16 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -312,7 +308,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -350,40 +346,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 83,
-     "text": "Sunny, with a high near 83. Southeast wind 5 to 10 mph becoming southwest in the afternoon. "
+     "temp": 84,
+     "text": "Sunny, with a high near 84. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 62,
-     "text": "Mostly clear, with a low around 62. Southwest wind around 5 mph becoming calm  in the evening. "
+     "temp": 61,
+     "text": "Mostly clear, with a low around 61. Southwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 77,
-     "text": "Mostly sunny, with a high near 77. East wind 5 to 10 mph becoming south southwest in the afternoon. "
+     "temp": 80,
+     "text": "Sunny, with a high near 80. East wind 5 to 10 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 61,
-     "text": "Partly cloudy, with a low around 61. South southeast wind around 5 mph. "
+     "temp": 60,
+     "text": "Mostly cloudy, with a low around 60. South southeast wind around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 73,
-     "text": "Showers likely, mainly after 11am.  Mostly cloudy, with a high near 73. South wind 5 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 70,
+     "text": "Showers likely after 11am.  Mostly cloudy, with a high near 70. South wind 5 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "Showers and possibly a thunderstorm.  Low around 57. Chance of precipitation is 90%."
+     "temp": 58,
+     "text": "Showers and possibly a thunderstorm.  Low around 58. Chance of precipitation is 100%."
     }
    ]
   },
@@ -399,7 +395,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -459,7 +455,7 @@
     "publisher": "Gothamist",
     "title": "NYC Council to consider earlier Legionella reporting after deadly outbreaks",
     "url": "https://gothamist.com/news/nyc-council-to-consider-earlier-legionella-reporting-after-deadly-outbreaks",
-    "published": "2026-10-18T23:36:00Z",
+    "published": "2026-10-19T18:03:00Z",
     "gathered": "2026-10-19T00:22:00Z"
    },
    {
@@ -485,46 +481,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 61,
     "cond": "Fair",
-    "obs": "19 Oct 12:51 pm EDT"
+    "obs": "19 Oct 13:51 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 64,
-     "text": "Sunny, with a high near 64. Northeast wind around 10 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. North wind 8 to 15 mph. "
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52. North wind 6 to 13 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 65,
-     "text": "Partly sunny, with a high near 65. North wind 14 to 17 mph. "
+     "temp": 68,
+     "text": "Sunny, with a high near 68. North wind 14 to 16 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. North wind 15 to 17 mph. "
+     "temp": 49,
+     "text": "Mostly clear, with a low around 49. North wind 15 to 17 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. Northeast wind 11 to 17 mph. "
+     "temp": 63,
+     "text": "Sunny, with a high near 63. Northeast wind 13 to 16 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48."
+     "temp": 51,
+     "text": "Partly cloudy, with a low around 51. North wind 10 to 14 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Sunny, with a high near 67."
     }
    ]
   },
@@ -540,7 +536,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -575,6 +571,17 @@
   },
   "local": [
    {
+    "h": "Curfew in parts of Paris, protests banned",
+    "b": "Police imposed an 11 p.m. to 6 a.m. curfew around Place de la République and Les Halles and banned demonstrations in several neighbourhoods overnight.",
+    "date": "2026-10-19",
+    "publisher": "The Local France",
+    "title": "France announces curfew in Paris and ban on protests",
+    "url": "https://www.thelocal.fr/20261019/france-announces-curfew-in-paris-and-ban-on-protests",
+    "published": "2026-10-19T18:19:20Z",
+    "updated": "2026-10-19T18:19:22Z",
+    "gathered": "2026-10-19T19:12:25Z"
+   },
+   {
     "h": "Storm and flood warnings for southern France",
     "b": "Météo-France put Hérault, Gard, Var, Lozère and Bouches-du-Rhône on orange alert for violent Mediterranean storms, with up to 200mm of rain possible.",
     "date": "2026-10-19",
@@ -589,7 +596,11 @@
     "h": "Protesters block the Louvre amid unrest",
     "b": "Protesters blocked the Louvre entrance on Monday after weekend cost-of-living demonstrations turned violent. Macron ordered a security review.",
     "date": "2026-10-19",
+    "publisher": "The Local France",
+    "title": "Louvre blocked as France grapples with unrest",
     "url": "https://www.thelocal.fr/20261019/protesters-block-louvre-museum-to-back-student-campaign",
+    "published": "2026-10-19T10:05:26Z",
+    "updated": "2026-10-19T10:05:28Z",
     "gathered": "2026-10-19T11:04:45Z"
    },
    {
@@ -637,7 +648,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "goodnews": []
  },
  {
@@ -651,7 +662,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 60,
      "text": "Partly sunny, with a high near 60. Light and variable wind. "
@@ -660,31 +671,31 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Mostly cloudy, with a low around 47. North northeast wind around 6 mph. "
+     "text": "Mostly cloudy, with a low around 47. North northeast wind 5 to 7 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 60,
-     "text": "Partly sunny, then gradually becoming sunny, with a high near 60. North wind 6 to 9 mph. "
+     "temp": 61,
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 61. North northeast wind 7 to 9 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly clear, with a low around 45. North wind 5 to 7 mph becoming calm  in the evening. "
+     "temp": 46,
+     "text": "Mostly clear, with a low around 46. North wind around 6 mph becoming calm  in the evening. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 64,
-     "text": "Sunny, with a high near 64. Light north northwest wind. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. Calm wind. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Partly cloudy, with a low around 46."
+     "temp": 47,
+     "text": "Partly cloudy, with a low around 47."
     }
    ]
   },
@@ -700,7 +711,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T19:12:00Z",
+  "updatedAt": "2026-10-19T22:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

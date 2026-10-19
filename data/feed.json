@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19T19:12:00Z",
+ "updatedAt": "2026-10-19T22:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -46,6 +46,15 @@
  ],
  "national": [
   {
+   "h": "Prosecutors: OpenAI bugging suspect had Saudi backing",
+   "b": "US prosecutors say Abdulrahman Alfozan, accused of planting a device in an OpenAI conference room, was in frequent contact with a member of the Saudi royal family.",
+   "date": "2026-10-19",
+   "publisher": "Al Jazeera",
+   "title": "Ex-OpenAI employee accused of planting device has Saudi backing: Prosecutor",
+   "url": "https://www.aljazeera.com/economy/2026/10/19/ex-openai-employee-accused-of-planting-device-has-saudi-backing-prosecutor",
+   "gathered": "2026-10-19T19:12:25Z"
+  },
+  {
    "h": "Noah Adams, longtime NPR host, has died",
    "b": "Adams, a longtime host of NPR's All Things Considered, covered events from the fall of the Berlin Wall to 9/11, but colleagues remembered him most for thoughtful features from trains and small towns.",
    "date": "2026-10-18",
@@ -55,13 +64,19 @@
  ],
  "politics": [
   {
+   "h": "Schumer urges FCC to block AI robocalls",
+   "b": "Schumer asked the FCC to reject a Club for Growth petition to allow AI-generated robocalls before the midterms, warning campaigns could fake opponents' voices.",
+   "date": "2026-10-19",
+   "publisher": "Al Jazeera",
+   "title": "Chuck Schumer urges FCC to block AI robocalls before elections",
+   "url": "https://www.aljazeera.com/economy/2026/10/19/chuck-schumer-urges-fcc-to-block-ai-robocalls-before-elections",
+   "gathered": "2026-10-19T19:12:25Z"
+  },
+  {
    "h": "Over two dozen charged in California voter sweep",
    "b": "Federal authorities arrested more than two dozen foreign nationals in California, accusing them of illegally registering and voting, as the voter roll fight with the state escalates.",
    "date": "2026-10-19",
-   "publisher": "PBS NewsHour",
-   "title": "Justice Department charges more than 2 dozen foreign nationals in California sweep targeting noncitizen voters",
    "url": "https://www.pbs.org/newshour/politics/justice-department-charges-more-than-2-dozen-foreign-nationals-in-california-sweep-targeting-noncitizen-voters",
-   "published": "2026-10-19T16:53:36Z",
    "gathered": "2026-10-19T17:39:06Z"
   },
   {
@@ -106,15 +121,46 @@
  ],
  "international": [
   {
+   "h": "Haitian gangs attack foreign troops",
+   "b": "Gangs hit an armored vehicle with explosives in Port-au-Prince, and four Salvadoran soldiers are missing in the biggest attack since the international force began operations.",
+   "date": "2026-10-19",
+   "place": "Port-au-Prince",
+   "tz": "America/Port-au-Prince",
+   "publisher": "PBS NewsHour",
+   "title": "Haitian gangs target foreign troops in biggest attack since force began operations",
+   "url": "https://www.pbs.org/newshour/world/haitian-gangs-target-foreign-troops-in-biggest-attack-since-force-began-operations",
+   "published": "2026-10-19T17:45:11Z",
+   "gathered": "2026-10-19T19:12:25Z"
+  },
+  {
+   "h": "Kenyan cult leader convicted of murdering 191",
+   "b": "A Mombasa court convicted pastor Paul Mackenzie and 28 associates over a doomsday sect whose followers starved themselves and their children in the Shakahola Forest.",
+   "date": "2026-10-19",
+   "place": "Mombasa",
+   "tz": "Africa/Nairobi",
+   "publisher": "Al Jazeera",
+   "title": "Kenyan court convicts starvation cult leader of murdering 191 people",
+   "url": "https://www.aljazeera.com/news/2026/10/19/kenyan-court-convicts-starvation-cult-leader-for-murder-of-191-people",
+   "gathered": "2026-10-19T19:12:25Z"
+  },
+  {
+   "h": "Benny Gantz drops out of Israel’s election",
+   "b": "Gantz said his Blue and White party will not run in the October 27 vote. Polls had shown it below the threshold to enter parliament.",
+   "date": "2026-10-19",
+   "place": "Tel Aviv",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Benny Gantz drops out of Israel’s election race",
+   "url": "https://www.aljazeera.com/news/2026/10/19/benny-gantz-drops-out-of-israels-election-race",
+   "gathered": "2026-10-19T19:12:25Z"
+  },
+  {
    "h": "Israel arrests 10 over West Bank settler attacks",
    "b": "Israeli police arrested 10 people after weekend settler attacks on a Washington Post photographer and European diplomats in the occupied West Bank.",
    "date": "2026-10-19",
    "place": "West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "PBS NewsHour",
-   "title": "Israeli police arrest 10 following weekend attacks by West Bank settlers on journalist and diplomats",
    "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
-   "published": "2026-10-19T14:39:39Z",
    "gathered": "2026-10-19T17:39:06Z"
   },
   {
@@ -132,8 +178,6 @@
    "date": "2026-10-19",
    "place": "Wangaratta",
    "tz": "Australia/Melbourne",
-   "publisher": "Al Jazeera",
-   "title": "Australian MP Helen Haines critically injured in ‘deliberate’ car ramming",
    "url": "https://www.aljazeera.com/news/2026/10/19/australian-mp-helen-haines-critically-injured-in-deliberate-car-ramming",
    "gathered": "2026-10-19T13:24:19Z"
   },
@@ -143,10 +187,7 @@
    "date": "2026-10-19",
    "place": "Shabwa",
    "tz": "Asia/Aden",
-   "publisher": "PBS NewsHour",
-   "title": "Iran-backed Houthi rebels strike Yemen's government forces with ballistic missiles, killing at least 53",
    "url": "https://www.pbs.org/newshour/world/iran-backed-houthi-rebels-strike-yemens-government-forces-with-ballistic-missiles-killing-at-least-53",
-   "published": "2026-10-19T15:29:43Z",
    "gathered": "2026-10-19T17:39:06Z"
   },
   {
@@ -277,6 +318,16 @@
   }
  ],
  "business": [
+  {
+   "h": "Shoppers uneasy as retailers adopt AI pricing",
+   "b": "Consumer concerns are growing as retailers use AI-assisted pricing tools, with talk of surveillance pricing fueling worries that people pay different prices for the same product.",
+   "date": "2026-10-19",
+   "publisher": "PBS NewsHour",
+   "title": "Consumer concerns grow as retailers adopt AI-assisted pricing tools",
+   "url": "https://www.pbs.org/newshour/economy/consumer-concerns-grow-as-retailers-adopt-ai-assisted-pricing-tools",
+   "published": "2026-10-19T18:35:22Z",
+   "gathered": "2026-10-19T19:12:25Z"
+  },
   {
    "h": "China's economy grows 4.5% in Q3, beating forecasts",
    "b": "China's GDP grew 4.5 percent in July-September from a year earlier, up from 4.3 percent in the second quarter and ahead of most analysts' forecasts, official figures showed.",
@@ -451,7 +502,7 @@
    "publisher": "Gothamist",
    "title": "NYC Council to consider earlier Legionella reporting after deadly outbreaks",
    "url": "https://gothamist.com/news/nyc-council-to-consider-earlier-legionella-reporting-after-deadly-outbreaks",
-   "published": "2026-10-18T23:36:00Z",
+   "published": "2026-10-19T18:03:00Z",
    "gathered": "2026-10-19T00:22:00Z"
   },
   {
@@ -477,46 +528,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 61,
    "cond": "Fair",
-   "obs": "19 Oct 12:51 pm EDT"
+   "obs": "19 Oct 13:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 64,
-    "text": "Sunny, with a high near 64. Northeast wind around 10 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 54,
-    "text": "Partly cloudy, with a low around 54. North wind 8 to 15 mph. "
+    "temp": 52,
+    "text": "Mostly clear, with a low around 52. North wind 6 to 13 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 65,
-    "text": "Partly sunny, with a high near 65. North wind 14 to 17 mph. "
+    "temp": 68,
+    "text": "Sunny, with a high near 68. North wind 14 to 16 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 52,
-    "text": "Mostly clear, with a low around 52. North wind 15 to 17 mph. "
+    "temp": 49,
+    "text": "Mostly clear, with a low around 49. North wind 15 to 17 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 62,
-    "text": "Sunny, with a high near 62. Northeast wind 11 to 17 mph. "
+    "temp": 63,
+    "text": "Sunny, with a high near 63. Northeast wind 13 to 16 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Partly cloudy, with a low around 48."
+    "temp": 51,
+    "text": "Partly cloudy, with a low around 51. North wind 10 to 14 mph. "
+   },
+   {
+    "name": "Thursday",
+    "kind": "high",
+    "temp": 67,
+    "text": "Sunny, with a high near 67."
    }
   ]
  },
