@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19T10:13:00Z",
+ "updatedAt": "2026-10-19T13:24:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -28,11 +28,11 @@
    "gathered": "2026-10-18T09:47:43Z"
   },
   {
-   "h": "Iran war: Tehran says Netanyahu seeks more war",
+   "h": "Iran war: Qatar to announce defence partnership",
    "b": "Al Jazeera's live coverage: Iran claims Netanyahu is seeking more war as fighting flares in Yemen.",
-   "date": "2026-10-18",
+   "date": "2026-10-19",
    "publisher": "Al Jazeera",
-   "title": "Iran claims Netanyahu seeks more war; Yemen fighting flares",
+   "title": "Qatar to announce regional defence partnership amid regional unrest",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares",
    "gathered": "2026-10-19T00:22:00Z"
   }
@@ -51,6 +51,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Officials fear CISA weakened before midterms",
+   "b": "ProPublica reports election officials say Trump administration attacks on the cybersecurity agency CISA have left them to solve security issues on their own as the midterms approach.",
+   "date": "2026-10-19",
+   "publisher": "ProPublica",
+   "title": "This Cybersecurity Agency Is Supposed to Protect U.S. Elections. Officials Fear It’s Been Compromised by Trump.",
+   "url": "https://www.propublica.org/article/cisa-election-security-donald-trump",
+   "published": "2026-10-19T09:00:00Z",
+   "updated": "2026-10-19T09:00:18Z",
+   "gathered": "2026-10-19T11:04:45Z"
+  },
   {
    "h": "Trump defends Russia sanctions waivers",
    "b": "On Truth Social, Trump said he blocked sanctions on Russia to keep Moscow at the bargaining table, and accused Ukraine's Zelenskyy of not wanting to end the war.",
@@ -103,8 +114,6 @@
    "date": "2026-10-18",
    "place": "Manama",
    "tz": "Asia/Bahrain",
-   "publisher": "Al Jazeera",
-   "title": "GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies",
    "url": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies",
    "gathered": "2026-10-19T01:12:34Z"
   },
@@ -114,8 +123,6 @@
    "date": "2026-10-18",
    "place": "Sofia",
    "tz": "Europe/Sofia",
-   "publisher": "Al Jazeera",
-   "title": "Flight from Israel makes emergency landing in Bulgaria after bomb threat",
    "url": "https://www.aljazeera.com/news/2026/10/18/flight-from-israel-makes-emergency-landing-in-bulgaria-after-bomb-threat",
    "gathered": "2026-10-19T00:22:00Z"
   },
@@ -223,16 +230,37 @@
  ],
  "business": [
   {
+   "h": "China's economy grows 4.5% in Q3, beating forecasts",
+   "b": "China's GDP grew 4.5 percent in July-September from a year earlier, up from 4.3 percent in the second quarter and ahead of most analysts' forecasts, official figures showed.",
+   "date": "2026-10-19",
+   "publisher": "Al Jazeera",
+   "title": "China’s economy grows 4.5 percent in Q3, beating forecasts",
+   "url": "https://www.aljazeera.com/economy/2026/10/19/chinas-economy-grows-4-5-percent-in-q3-beating-forecasts",
+   "gathered": "2026-10-19T11:04:45Z"
+  },
+  {
    "h": "Anthropic pledges 5% of shares to public fund",
    "b": "Anthropic, the maker of the AI assistant Claude, announced an Anthropic Public Benefit Fund with 5 percent of its shares, with plans to raise the contribution as its market value grows.",
    "date": "2026-10-19",
    "publisher": "Al Jazeera",
-   "title": "AI firm Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+   "title": "AI giant Anthropic commits 5% of shares to ‘public benefit’ fund",
    "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund",
    "gathered": "2026-10-19T05:05:40Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "Kelvin wave raised West Coast sea levels",
+   "b": "An ocean Kelvin wave lifted sea levels along the West Coast, and more are coming. The waves can develop along the equator in El Niño years.",
+   "date": "2026-10-19",
+   "publisher": "KUOW",
+   "title": "A Kelvin wave raised sea levels on the West Coast. More are coming",
+   "url": "https://www.kuow.org/npr-news/2026-10-19/a-kelvin-wave-raised-sea-levels-on-the-west-coast-more-are-coming",
+   "published": "2026-10-19T09:00:00Z",
+   "updated": "2026-10-19T09:11:33Z",
+   "gathered": "2026-10-19T11:04:45Z"
+  }
+ ],
  "sports": [
   {
    "h": "Cardinals stun Rams 18-16 in season’s biggest upset",
@@ -349,6 +377,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NYC sues law firm over bogus trip-and-fall claims",
+   "b": "The city's law department is going after Lower Manhattan firm Asher & Associates over lawsuits it says were fraudulent, including a $1 million sidewalk claim.",
+   "date": "2026-10-19",
+   "publisher": "Gothamist",
+   "title": "NYC sues personal injury law firm accused of bogus trip-and-fall claims",
+   "url": "https://gothamist.com/news/nyc-sues-personal-injury-law-firm-accused-of-bogus-trip-and-fall-claims",
+   "published": "2026-10-19T10:00:56Z",
+   "gathered": "2026-10-19T11:04:45Z"
+  },
+  {
    "h": "Council weighs earlier Legionella reporting",
    "b": "After two deadly Legionnaires' outbreaks this summer on the Upper East Side and in the Bronx, a City Council bill would require building owners to report lower levels of Legionella in cooling towers.",
    "date": "2026-10-18",
@@ -381,40 +419,40 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
+   "temp": 48,
    "cond": "Fair",
-   "obs": "19 Oct 00:51 am EDT"
+   "obs": "19 Oct 06:51 am EDT"
   },
   "periods": [
    {
-    "name": "Monday",
+    "name": "Today",
     "kind": "high",
-    "temp": 65,
-    "text": "Sunny, with a high near 65. Northeast wind around 10 mph. "
+    "temp": 64,
+    "text": "Sunny, with a high near 64. Northeast wind 8 to 10 mph. "
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 51,
-    "text": "Partly cloudy, with a low around 51. North wind 9 to 16 mph. "
+    "temp": 54,
+    "text": "Partly cloudy, with a low around 54. North wind 8 to 15 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 65,
-    "text": "Mostly cloudy, then becoming sunny during the afternoon, with a high near 65. North wind 15 to 17 mph. "
+    "text": "Partly sunny, with a high near 65. North wind 14 to 17 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
     "temp": 52,
-    "text": "Mostly clear, with a low around 52. North wind 16 to 18 mph. "
+    "text": "Mostly clear, with a low around 52. North wind 15 to 17 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
     "temp": 62,
-    "text": "Sunny, with a high near 62."
+    "text": "Sunny, with a high near 62. Northeast wind 11 to 17 mph. "
    },
    {
     "name": "Wednesday Night",
@@ -424,7 +462,18 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "New NYC site helps find mental health care",
+   "b": "NYC Mental Health Connect lists more than 600 behavioral health providers across the five boroughs, searchable by service, symptoms, age, location and insurance.",
+   "date": "2026-10-19",
+   "publisher": "Gothamist",
+   "title": "Need help with mental health or addiction services? NYC has a new tool.",
+   "url": "https://gothamist.com/news/need-help-with-mental-health-or-addiction-services-nyc-has-a-new-tool",
+   "published": "2026-10-19T10:30:56Z",
+   "gathered": "2026-10-19T11:04:45Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",
