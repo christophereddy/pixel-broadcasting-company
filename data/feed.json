@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19T16:14:00Z",
+ "updatedAt": "2026-10-19T19:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,10 +10,7 @@
    "h": "Zelenskyy: no warning as Russia hits power grid",
    "b": "Zelenskyy said Ukraine got no early warning from partners as Russia struck its power grid again, and cited Starlink limits and a shortage of Patriot air defenses.",
    "date": "2026-10-19",
-   "publisher": "PBS NewsHour",
-   "title": "Zelenskyy says Ukraine got no early warning from partners as Russia hits the power grid again",
    "url": "https://www.pbs.org/newshour/world/zelenskyy-says-ukraine-got-no-early-warning-from-partners-as-russia-hits-the-power-grid-again",
-   "published": "2026-10-19T12:25:53Z",
    "gathered": "2026-10-19T13:24:19Z"
   },
   {
@@ -38,11 +35,11 @@
    "gathered": "2026-10-18T09:47:43Z"
   },
   {
-   "h": "Iran war: Yemeni forces target Houthis near Taiz",
+   "h": "Iran war: Houthis kill 50+ Yemeni army recruits",
    "b": "Al Jazeera's live coverage: Iran claims Netanyahu is seeking more war as fighting flares in Yemen.",
    "date": "2026-10-19",
    "publisher": "Al Jazeera",
-   "title": "Yemeni forces say Houthi fighters, equipment targeted around Taiz",
+   "title": "More than 50 army recruits killed in Houthi missile strikes in Yemen",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares",
    "gathered": "2026-10-19T00:22:00Z"
   }
@@ -58,6 +55,16 @@
  ],
  "politics": [
   {
+   "h": "Over two dozen charged in California voter sweep",
+   "b": "Federal authorities arrested more than two dozen foreign nationals in California, accusing them of illegally registering and voting, as the voter roll fight with the state escalates.",
+   "date": "2026-10-19",
+   "publisher": "PBS NewsHour",
+   "title": "Justice Department charges more than 2 dozen foreign nationals in California sweep targeting noncitizen voters",
+   "url": "https://www.pbs.org/newshour/politics/justice-department-charges-more-than-2-dozen-foreign-nationals-in-california-sweep-targeting-noncitizen-voters",
+   "published": "2026-10-19T16:53:36Z",
+   "gathered": "2026-10-19T17:39:06Z"
+  },
+  {
    "h": "Officials fear CISA weakened before midterms",
    "b": "ProPublica reports election officials say Trump administration attacks on the cybersecurity agency CISA have left them to solve security issues on their own as the midterms approach.",
    "date": "2026-10-19",
@@ -65,7 +72,7 @@
    "title": "This Cybersecurity Agency Is Supposed to Protect U.S. Elections. Officials Fear It’s Been Compromised by Trump.",
    "url": "https://www.propublica.org/article/cisa-election-security-donald-trump",
    "published": "2026-10-19T09:00:00Z",
-   "updated": "2026-10-19T09:00:18Z",
+   "updated": "2026-10-19T13:50:12Z",
    "gathered": "2026-10-19T11:04:45Z"
   },
   {
@@ -99,15 +106,24 @@
  ],
  "international": [
   {
+   "h": "Israel arrests 10 over West Bank settler attacks",
+   "b": "Israeli police arrested 10 people after weekend settler attacks on a Washington Post photographer and European diplomats in the occupied West Bank.",
+   "date": "2026-10-19",
+   "place": "West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "PBS NewsHour",
+   "title": "Israeli police arrest 10 following weekend attacks by West Bank settlers on journalist and diplomats",
+   "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
+   "published": "2026-10-19T14:39:39Z",
+   "gathered": "2026-10-19T17:39:06Z"
+  },
+  {
    "h": "French PM calls for city curfews after riots",
    "b": "PM Lecornu called for localized curfews in some cities to curb rioting and looting after weekend protests, saying it was a miracle no one was killed.",
    "date": "2026-10-19",
    "place": "Paris",
    "tz": "Europe/Paris",
-   "publisher": "PBS NewsHour",
-   "title": "French Prime Minister Lecornu calls for localized curfews in cities to curb rioting and looting",
    "url": "https://www.pbs.org/newshour/world/french-prime-minister-lecornu-calls-for-localized-curfews-in-cities-to-curb-rioting-and-looting",
-   "published": "2026-10-19T12:07:59Z",
    "gathered": "2026-10-19T13:24:19Z"
   },
   {
@@ -122,15 +138,16 @@
    "gathered": "2026-10-19T13:24:19Z"
   },
   {
-   "h": "Houthi missile attack kills 18 at Yemen camp",
-   "b": "At least 18 people were killed when the Houthis fired ballistic missiles at a military camp in Shabwa during a training exercise, Yemeni government officials said.",
+   "h": "Houthi missiles kill at least 53 at Yemen camp",
+   "b": "Houthi ballistic missiles struck a Yemeni government military camp in Shabwa during a training exercise, killing at least 53. The rebels acknowledged targeting the camp.",
    "date": "2026-10-19",
    "place": "Shabwa",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "At least 18 killed in Houthi attack on military camp in Yemen’s Shabwa",
-   "url": "https://www.aljazeera.com/news/2026/10/19/at-least-18-killed-in-houthi-attack-on-military-camp-in-yemens-shabwa",
-   "gathered": "2026-10-19T13:24:19Z"
+   "publisher": "PBS NewsHour",
+   "title": "Iran-backed Houthi rebels strike Yemen's government forces with ballistic missiles, killing at least 53",
+   "url": "https://www.pbs.org/newshour/world/iran-backed-houthi-rebels-strike-yemens-government-forces-with-ballistic-missiles-killing-at-least-53",
+   "published": "2026-10-19T15:29:43Z",
+   "gathered": "2026-10-19T17:39:06Z"
   },
   {
    "h": "Lula and Flavio Bolsonaro trade insults in debate",
@@ -293,8 +310,6 @@
    "h": "Cardinals stun Rams 18-16 in season’s biggest upset",
    "b": "Chad Ryland's 43-yard field goal as time expired gave 13.5-point underdog Arizona an 18-16 win, without scoring a touchdown. The Rams fall to 2-4.",
    "date": "2026-10-18",
-   "publisher": "CBS Sports",
-   "title": "Meltdown in LA: What went wrong for Rams as Cardinals earn largest upset of the season",
    "url": "https://www.cbssports.com/nfl/news/what-went-wrong-rams-vs-cardinals-biggest-upset-of-season/",
    "gathered": "2026-10-19T01:12:34Z"
   },
@@ -309,8 +324,6 @@
    "h": "Rodgers calls for NFL to examine Bucs' field",
    "b": "Aaron Rodgers called the Tampa surface 'one of the worst playing surfaces in the league,' saying he has been injured on it twice before and player safety should come first.",
    "date": "2026-10-18",
-   "publisher": "CBS Sports",
-   "title": "Aaron Rodgers calls for NFL to examine Buccaneers' field over player-safety concerns",
    "url": "https://www.cbssports.com/nfl/news/steelers-aaron-rodgers-buccaneers-playing-surface/",
    "gathered": "2026-10-19T00:22:00Z"
   },
@@ -318,8 +331,6 @@
    "h": "Browns take control of the AFC North",
    "b": "Cleveland won its fourth game and now holds tiebreakers over two rivals atop the division, while the Giants fell 34-27 to the Saints amid quarterback and running back turmoil.",
    "date": "2026-10-18",
-   "publisher": "CBS Sports",
-   "title": "NFL Week 6 winners and losers: Giants face QB, RB turmoil while Browns take control of AFC North",
    "url": "https://www.cbssports.com/nfl/news/nfl-week-6-winners-losers-giants-browns-travis-hunter/",
    "gathered": "2026-10-19T00:22:00Z"
   },
@@ -404,6 +415,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NYC team to help residents keep SNAP, Medicaid",
+   "b": "Mayor Mamdani launched a Health and Affordability Resource Team of outreach workers to help New Yorkers keep benefits as federal eligibility rules change.",
+   "date": "2026-10-19",
+   "publisher": "Gothamist",
+   "title": "Mamdani launches new team to help NYers keep SNAP, Medicaid benefits",
+   "url": "https://gothamist.com/news/mamdani-launches-new-team-to-help-nyers-keep-snap-medicaid-benefits",
+   "published": "2026-10-19T16:43:29Z",
+   "gathered": "2026-10-19T17:39:06Z"
+  },
+  {
    "h": "Ex-buildings chief Eric Ulrich goes on trial",
    "b": "Eric Ulrich, Eric Adams' former buildings commissioner, heads to trial three years after his arrest on charges of taking more than $150,000 in bribes.",
    "date": "2026-10-19",
@@ -420,7 +441,7 @@
    "publisher": "Gothamist",
    "title": "NYC sues personal injury law firm accused of bogus trip-and-fall claims",
    "url": "https://gothamist.com/news/nyc-sues-personal-injury-law-firm-accused-of-bogus-trip-and-fall-claims",
-   "published": "2026-10-19T10:00:56Z",
+   "published": "2026-10-19T10:00:00Z",
    "gathered": "2026-10-19T11:04:45Z"
   },
   {
@@ -456,16 +477,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "19 Oct 08:51 am EDT"
+   "obs": "19 Oct 12:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 64,
-    "text": "Sunny, with a high near 64. Northeast wind 8 to 10 mph. "
+    "text": "Sunny, with a high near 64. Northeast wind around 10 mph. "
    },
    {
     "name": "Tonight",
@@ -500,6 +521,17 @@
   ]
  },
  "localgood": [
+  {
+   "h": "Free 2-K expands to the Bronx and Staten Island",
+   "b": "Every school district in the Bronx and Staten Island will offer free preschool seats for 2-year-olds next fall, as the city adds 10,000 seats.",
+   "date": "2026-10-19",
+   "publisher": "Gothamist",
+   "title": "These are the NYC neighborhoods that will get free 2-K next fall",
+   "url": "https://gothamist.com/news/these-are-the-nyc-neighborhoods-that-will-get-free-2-k-next-fall",
+   "published": "2026-10-19T15:00:00Z",
+   "updated": "2026-10-19T16:00:00Z",
+   "gathered": "2026-10-19T17:39:06Z"
+  },
   {
    "h": "New NYC site helps find mental health care",
    "b": "NYC Mental Health Connect lists more than 600 behavioral health providers across the five boroughs, searchable by service, symptoms, age, location and insurance.",

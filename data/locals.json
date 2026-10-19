@@ -8,13 +8,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "19 Oct 08:52 am EDT"
+    "obs": "19 Oct 12:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 70,
      "text": "Sunny, with a high near 70. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
@@ -29,7 +29,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74. Calm wind becoming north around 5 mph. "
+     "text": "Sunny, with a high near 74. Calm wind. "
     },
     {
      "name": "Tuesday Night",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,46 +86,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Partly Cloudy",
-    "obs": "19 Oct 08:54 am EDT"
+    "temp": 55,
+    "cond": "A Few Clouds",
+    "obs": "19 Oct 12:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59. East wind 5 to 10 mph. "
+     "text": "Mostly sunny, with a high near 59. East wind 6 to 8 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Partly cloudy, with a low around 44. East wind 5 to 8 mph becoming north after midnight. "
+     "text": "Partly cloudy, with a low around 44. North wind 3 to 5 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 61,
-     "text": "Partly sunny, with a high near 61. North wind around 15 mph, with gusts as high as 28 mph. "
+     "text": "Partly sunny, with a high near 61. Northeast wind 8 to 14 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Partly cloudy, with a low around 46. North wind 13 to 15 mph. "
+     "text": "Partly cloudy, with a low around 46. Northeast wind 7 to 11 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 54,
-     "text": "Partly sunny, with a high near 54. Northeast wind 13 to 15 mph, with gusts as high as 26 mph. "
+     "temp": 55,
+     "text": "Partly sunny, with a high near 55. Northeast wind 11 to 14 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "A slight chance of showers before 2am, then a slight chance of showers after 5am.  Mostly cloudy, with a low around 43. North wind around 9 mph.  Chance of precipitation is 20%."
+     "temp": 44,
+     "text": "Mostly cloudy, with a low around 44. North wind around 8 mph. "
     }
    ]
   },
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -152,6 +152,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "City Colleges reach deal hours before strike",
+    "b": "City Colleges of Chicago and its faculty union reached a four-year tentative contract at 3:45 a.m., hours before a strike was set to begin Monday.",
+    "date": "2026-10-19",
+    "publisher": "WBEZ",
+    "title": "City Colleges of Chicago reach late-night tentative contract agreement to avoid strike",
+    "url": "https://www.wbez.org/education/2026/10/19/city-colleges-of-chicago-reach-late-night-tentative-contract-agreement-to-avoid-strike",
+    "published": "2026-10-19T14:19:43Z",
+    "updated": "2026-10-19T14:19:43Z",
+    "gathered": "2026-10-19T17:39:06Z"
+   },
    {
     "h": "3 girls hospitalized after 'unknown substance'",
     "b": "Three 6-year-old girls at Henry O. Tanner Elementary in Grand Crossing were taken to Comer Children's Hospital in fair condition with abdominal pain after ingesting an undisclosed substance, officials said.",
@@ -166,16 +177,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 63,
     "cond": "A Few Clouds",
-    "obs": "19 Oct 07:53 am CDT"
+    "obs": "19 Oct 11:53 am CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. South southwest wind around 5 mph becoming east in the afternoon. "
+     "text": "Sunny, with a high near 65. South southwest wind around 5 mph becoming east. "
     },
     {
      "name": "Tonight",
@@ -221,7 +232,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -232,7 +243,7 @@
     "title": "A new Chicago brewery is creating Korea’s oldest alcoholic drink",
     "url": "https://www.wbez.org/food-drink/2026/10/19/yido-makgeolli-brewery-chicago-peter-chung",
     "published": "2026-10-19T12:28:12Z",
-    "updated": "2026-10-19T12:28:12Z",
+    "updated": "2026-10-19T13:37:45Z",
     "gathered": "2026-10-19T13:24:19Z"
    }
   ]
@@ -246,16 +257,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Mostly Cloudy",
-    "obs": "19 Oct 06:58 am MDT"
+    "temp": 58,
+    "cond": "A Few Clouds",
+    "obs": "19 Oct 10:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70. Calm wind becoming east around 6 mph in the afternoon. "
+     "text": "Sunny, with a high near 70. East northeast wind 3 to 6 mph. "
     },
     {
      "name": "Tonight",
@@ -301,7 +312,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -312,6 +323,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Long Beach neighbors confront ICE after arrest",
+    "b": "Residents say they blocked federal agents from detaining Ricardo Gonzalez, a U.S. citizen, after an agent tackled him off an e-bike and broke his arm.",
+    "date": "2026-10-19",
+    "publisher": "LAist",
+    "title": "Long Beach neighbors rush to defend man after ICE agents break his arm, witnesses say",
+    "url": "https://laist.com/news/politics/long-beach-neighbors-rush-to-defend-man-after-ice-agents-break-his-arm-witnesses-say",
+    "published": "2026-10-19T17:30:00Z",
+    "updated": "2026-10-19T17:29:59Z",
+    "gathered": "2026-10-19T17:39:06Z"
+   },
    {
     "h": "Pitch decks are LA singles' new matchmaker",
     "b": "At Pitch-A-Friend Los Angeles, about 300 people pack a Koreatown bar as friends present slideshow pitches to find dates for the singles in their lives.",
@@ -331,7 +353,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 83,
-     "text": "Sunny, with a high near 83. East wind 5 to 10 mph becoming southwest in the afternoon. "
+     "text": "Sunny, with a high near 83. Southeast wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -377,7 +399,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -401,6 +423,16 @@
   },
   "local": [
    {
+    "h": "NYC team to help residents keep SNAP, Medicaid",
+    "b": "Mayor Mamdani launched a Health and Affordability Resource Team of outreach workers to help New Yorkers keep benefits as federal eligibility rules change.",
+    "date": "2026-10-19",
+    "publisher": "Gothamist",
+    "title": "Mamdani launches new team to help NYers keep SNAP, Medicaid benefits",
+    "url": "https://gothamist.com/news/mamdani-launches-new-team-to-help-nyers-keep-snap-medicaid-benefits",
+    "published": "2026-10-19T16:43:29Z",
+    "gathered": "2026-10-19T17:39:06Z"
+   },
+   {
     "h": "Ex-buildings chief Eric Ulrich goes on trial",
     "b": "Eric Ulrich, Eric Adams' former buildings commissioner, heads to trial three years after his arrest on charges of taking more than $150,000 in bribes.",
     "date": "2026-10-19",
@@ -417,7 +449,7 @@
     "publisher": "Gothamist",
     "title": "NYC sues personal injury law firm accused of bogus trip-and-fall claims",
     "url": "https://gothamist.com/news/nyc-sues-personal-injury-law-firm-accused-of-bogus-trip-and-fall-claims",
-    "published": "2026-10-19T10:00:56Z",
+    "published": "2026-10-19T10:00:00Z",
     "gathered": "2026-10-19T11:04:45Z"
    },
    {
@@ -453,16 +485,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "19 Oct 08:51 am EDT"
+    "obs": "19 Oct 12:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64. Northeast wind 8 to 10 mph. "
+     "text": "Sunny, with a high near 64. Northeast wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -508,9 +540,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Free 2-K expands to the Bronx and Staten Island",
+    "b": "Every school district in the Bronx and Staten Island will offer free preschool seats for 2-year-olds next fall, as the city adds 10,000 seats.",
+    "date": "2026-10-19",
+    "publisher": "Gothamist",
+    "title": "These are the NYC neighborhoods that will get free 2-K next fall",
+    "url": "https://gothamist.com/news/these-are-the-nyc-neighborhoods-that-will-get-free-2-k-next-fall",
+    "published": "2026-10-19T15:00:00Z",
+    "updated": "2026-10-19T16:00:00Z",
+    "gathered": "2026-10-19T17:39:06Z"
+   },
    {
     "h": "New NYC site helps find mental health care",
     "b": "NYC Mental Health Connect lists more than 600 behavioral health providers across the five boroughs, searchable by service, symptoms, age, location and insurance.",
@@ -546,11 +589,7 @@
     "h": "Protesters block the Louvre amid unrest",
     "b": "Protesters blocked the Louvre entrance on Monday after weekend cost-of-living demonstrations turned violent. Macron ordered a security review.",
     "date": "2026-10-19",
-    "publisher": "The Local France",
-    "title": "Louvre blocked as France grapples with unrest",
     "url": "https://www.thelocal.fr/20261019/protesters-block-louvre-museum-to-back-student-campaign",
-    "published": "2026-10-19T10:05:26Z",
-    "updated": "2026-10-19T10:05:28Z",
     "gathered": "2026-10-19T11:04:45Z"
    },
    {
@@ -598,7 +637,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "goodnews": []
  },
  {
@@ -615,7 +654,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 60. Light and variable wind. "
+     "text": "Partly sunny, with a high near 60. Light and variable wind. "
     },
     {
      "name": "Tonight",
@@ -661,7 +700,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T16:14:00Z",
+  "updatedAt": "2026-10-19T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
