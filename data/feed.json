@@ -1,11 +1,21 @@
 {
- "updatedAt": "2026-10-19T13:24:00Z",
+ "updatedAt": "2026-10-19T16:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Zelenskyy: no warning as Russia hits power grid",
+   "b": "Zelenskyy said Ukraine got no early warning from partners as Russia struck its power grid again, and cited Starlink limits and a shortage of Patriot air defenses.",
+   "date": "2026-10-19",
+   "publisher": "PBS NewsHour",
+   "title": "Zelenskyy says Ukraine got no early warning from partners as Russia hits the power grid again",
+   "url": "https://www.pbs.org/newshour/world/zelenskyy-says-ukraine-got-no-early-warning-from-partners-as-russia-hits-the-power-grid-again",
+   "published": "2026-10-19T12:25:53Z",
+   "gathered": "2026-10-19T13:24:19Z"
+  },
   {
    "h": "Ukrainian drones hit St Petersburg, killing 1",
    "b": "Firefighters battled blazes at the St Petersburg oil terminal, the Ruchi oil depot and industrial warehouses, and several residential buildings were hit. The attack disrupted flights at the city's main airport.",
@@ -28,11 +38,11 @@
    "gathered": "2026-10-18T09:47:43Z"
   },
   {
-   "h": "Iran war: Qatar to announce defence partnership",
+   "h": "Iran war: Yemeni forces target Houthis near Taiz",
    "b": "Al Jazeera's live coverage: Iran claims Netanyahu is seeking more war as fighting flares in Yemen.",
    "date": "2026-10-19",
    "publisher": "Al Jazeera",
-   "title": "Qatar to announce regional defence partnership amid regional unrest",
+   "title": "Yemeni forces say Houthi fighters, equipment targeted around Taiz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares",
    "gathered": "2026-10-19T00:22:00Z"
   }
@@ -42,11 +52,7 @@
    "h": "Noah Adams, longtime NPR host, has died",
    "b": "Adams, a longtime host of NPR's All Things Considered, covered events from the fall of the Berlin Wall to 9/11, but colleagues remembered him most for thoughtful features from trains and small towns.",
    "date": "2026-10-18",
-   "publisher": "KUOW",
-   "title": "Noah Adams, longtime host of NPR's All Things Considered, has died",
    "url": "https://www.kuow.org/npr-news/2026-10-18/noah-adams-longtime-host-of-nprs-all-things-considered-has-died",
-   "published": "2026-10-18T16:30:00Z",
-   "updated": "2026-10-18T18:48:35Z",
    "gathered": "2026-10-18T21:45:34Z"
   }
  ],
@@ -66,8 +72,6 @@
    "h": "Trump defends Russia sanctions waivers",
    "b": "On Truth Social, Trump said he blocked sanctions on Russia to keep Moscow at the bargaining table, and accused Ukraine's Zelenskyy of not wanting to end the war.",
    "date": "2026-10-19",
-   "publisher": "Al Jazeera",
-   "title": "Trump defends Russian sanctions relief, lashes out at Zelenskyy",
    "url": "https://www.aljazeera.com/news/2026/10/19/trump-defends-russian-sanctions-relief-lashes-out-at-zelenskyy",
    "gathered": "2026-10-19T05:05:40Z"
   },
@@ -75,10 +79,7 @@
    "h": "Jackson doesn't regret telling Collins to 'shut up'",
    "b": "Maine Democrat Troy Jackson said he had no idea who the protester was after Sen. Susan Collins called the person one of his supporters during their final debate, prompting his retort.",
    "date": "2026-10-18",
-   "publisher": "PBS NewsHour",
-   "title": "Jackson doesn't regret telling Collins to 'shut up' after protester interrupted Maine Senate debate",
    "url": "https://www.pbs.org/newshour/politics/jackson-doesnt-regret-telling-collins-to-shut-up-after-protester-interrupted-maine-senate-debate",
-   "published": "2026-10-18T18:01:07Z",
    "gathered": "2026-10-18T21:45:34Z"
   },
   {
@@ -98,13 +99,45 @@
  ],
  "international": [
   {
+   "h": "French PM calls for city curfews after riots",
+   "b": "PM Lecornu called for localized curfews in some cities to curb rioting and looting after weekend protests, saying it was a miracle no one was killed.",
+   "date": "2026-10-19",
+   "place": "Paris",
+   "tz": "Europe/Paris",
+   "publisher": "PBS NewsHour",
+   "title": "French Prime Minister Lecornu calls for localized curfews in cities to curb rioting and looting",
+   "url": "https://www.pbs.org/newshour/world/french-prime-minister-lecornu-calls-for-localized-curfews-in-cities-to-curb-rioting-and-looting",
+   "published": "2026-10-19T12:07:59Z",
+   "gathered": "2026-10-19T13:24:19Z"
+  },
+  {
+   "h": "Australian MP Helen Haines hurt in car ramming",
+   "b": "Independent MP Helen Haines, 65, was critically injured when an SUV struck her outside her office in Wangaratta. PM Albanese called it a deliberate act.",
+   "date": "2026-10-19",
+   "place": "Wangaratta",
+   "tz": "Australia/Melbourne",
+   "publisher": "Al Jazeera",
+   "title": "Australian MP Helen Haines critically injured in ‘deliberate’ car ramming",
+   "url": "https://www.aljazeera.com/news/2026/10/19/australian-mp-helen-haines-critically-injured-in-deliberate-car-ramming",
+   "gathered": "2026-10-19T13:24:19Z"
+  },
+  {
+   "h": "Houthi missile attack kills 18 at Yemen camp",
+   "b": "At least 18 people were killed when the Houthis fired ballistic missiles at a military camp in Shabwa during a training exercise, Yemeni government officials said.",
+   "date": "2026-10-19",
+   "place": "Shabwa",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "At least 18 killed in Houthi attack on military camp in Yemen’s Shabwa",
+   "url": "https://www.aljazeera.com/news/2026/10/19/at-least-18-killed-in-houthi-attack-on-military-camp-in-yemens-shabwa",
+   "gathered": "2026-10-19T13:24:19Z"
+  },
+  {
    "h": "Lula and Flavio Bolsonaro trade insults in debate",
    "b": "Brazil's President Lula and right-wing Senator Flavio Bolsonaro called each other liars and traded corruption accusations in their first debate, a week before a tight presidential run-off.",
    "date": "2026-10-19",
    "place": "São Paulo",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Lula and Bolsonaro spar in Brazil’s fiery first presidential run-off debate",
    "url": "https://www.aljazeera.com/news/2026/10/19/lula-and-bolsonaro-spar-in-brazils-fiery-first-presidential-run-off-debate",
    "gathered": "2026-10-19T05:05:40Z"
   },
@@ -141,8 +174,6 @@
    "date": "2026-10-18",
    "place": "Paris",
    "tz": "Europe/Paris",
-   "publisher": "Al Jazeera",
-   "title": "‘Anger and shame’: Macron denounces France’s nationwide rioting, looting",
    "url": "https://www.aljazeera.com/news/2026/10/18/macron-denounces-frances-nationwide-rioting-looting",
    "gathered": "2026-10-18T21:45:34Z"
   },
@@ -233,8 +264,6 @@
    "h": "China's economy grows 4.5% in Q3, beating forecasts",
    "b": "China's GDP grew 4.5 percent in July-September from a year earlier, up from 4.3 percent in the second quarter and ahead of most analysts' forecasts, official figures showed.",
    "date": "2026-10-19",
-   "publisher": "Al Jazeera",
-   "title": "China’s economy grows 4.5 percent in Q3, beating forecasts",
    "url": "https://www.aljazeera.com/economy/2026/10/19/chinas-economy-grows-4-5-percent-in-q3-beating-forecasts",
    "gathered": "2026-10-19T11:04:45Z"
   },
@@ -242,8 +271,6 @@
    "h": "Anthropic pledges 5% of shares to public fund",
    "b": "Anthropic, the maker of the AI assistant Claude, announced an Anthropic Public Benefit Fund with 5 percent of its shares, with plans to raise the contribution as its market value grows.",
    "date": "2026-10-19",
-   "publisher": "Al Jazeera",
-   "title": "AI giant Anthropic commits 5% of shares to ‘public benefit’ fund",
    "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund",
    "gathered": "2026-10-19T05:05:40Z"
   }
@@ -377,6 +404,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Ex-buildings chief Eric Ulrich goes on trial",
+   "b": "Eric Ulrich, Eric Adams' former buildings commissioner, heads to trial three years after his arrest on charges of taking more than $150,000 in bribes.",
+   "date": "2026-10-19",
+   "publisher": "Gothamist",
+   "title": "Eric Adams' NYC buildings boss Eric Ulrich heads to trial, 3 years after arrest",
+   "url": "https://gothamist.com/news/eric-adams-nyc-buildings-boss-eric-ulrich-heads-to-trial-3-years-after-arrest",
+   "published": "2026-10-19T12:01:17Z",
+   "gathered": "2026-10-19T13:24:19Z"
+  },
+  {
    "h": "NYC sues law firm over bogus trip-and-fall claims",
    "b": "The city's law department is going after Lower Manhattan firm Asher & Associates over lawsuits it says were fraudulent, including a $1 million sidewalk claim.",
    "date": "2026-10-19",
@@ -419,9 +456,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 48,
+   "temp": 51,
    "cond": "Fair",
-   "obs": "19 Oct 06:51 am EDT"
+   "obs": "19 Oct 08:51 am EDT"
   },
   "periods": [
    {

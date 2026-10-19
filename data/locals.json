@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 48,
     "cond": "Fair",
-    "obs": "19 Oct 06:52 am EDT"
+    "obs": "19 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,34 +86,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "A Few Clouds",
-    "obs": "19 Oct 06:54 am EDT"
+    "temp": 49,
+    "cond": "Partly Cloudy",
+    "obs": "19 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 58,
-     "text": "Sunny, with a high near 58. Calm wind becoming east 5 to 8 mph in the afternoon. "
+     "temp": 59,
+     "text": "Sunny, with a high near 59. East wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly cloudy, with a low around 45. North wind 5 to 7 mph. "
+     "temp": 44,
+     "text": "Partly cloudy, with a low around 44. East wind 5 to 8 mph becoming north after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 60,
-     "text": "Partly sunny, with a high near 60. North wind 9 to 14 mph, with gusts as high as 24 mph. "
+     "temp": 61,
+     "text": "Partly sunny, with a high near 61. North wind around 15 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Partly cloudy, with a low around 46. Northeast wind 8 to 11 mph. "
+     "text": "Partly cloudy, with a low around 46. North wind 13 to 15 mph. "
     },
     {
      "name": "Wednesday",
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -166,16 +166,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 44,
-    "cond": "Fair",
-    "obs": "19 Oct 05:53 am CDT"
+    "temp": 45,
+    "cond": "A Few Clouds",
+    "obs": "19 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Southwest wind around 5 mph becoming east in the afternoon. "
+     "text": "Sunny, with a high near 65. South southwest wind around 5 mph becoming east in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -221,9 +221,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Chicago brewery makes Korea's oldest drink",
+    "b": "Yido on the Near West Side brews makgeolli, an unfiltered, naturally fermented rice wine described as creamy, tart and sweet.",
+    "date": "2026-10-19",
+    "publisher": "WBEZ",
+    "title": "A new Chicago brewery is creating Korea’s oldest alcoholic drink",
+    "url": "https://www.wbez.org/food-drink/2026/10/19/yido-makgeolli-brewery-chicago-peter-chung",
+    "published": "2026-10-19T12:28:12Z",
+    "updated": "2026-10-19T12:28:12Z",
+    "gathered": "2026-10-19T13:24:19Z"
+   }
+  ]
  },
  {
   "location": {
@@ -234,9 +246,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "A Few Clouds",
-    "obs": "19 Oct 04:58 am MDT"
+    "temp": 43,
+    "cond": "Mostly Cloudy",
+    "obs": "19 Oct 06:58 am MDT"
    },
    "periods": [
     {
@@ -289,7 +301,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -365,7 +377,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -388,6 +400,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Ex-buildings chief Eric Ulrich goes on trial",
+    "b": "Eric Ulrich, Eric Adams' former buildings commissioner, heads to trial three years after his arrest on charges of taking more than $150,000 in bribes.",
+    "date": "2026-10-19",
+    "publisher": "Gothamist",
+    "title": "Eric Adams' NYC buildings boss Eric Ulrich heads to trial, 3 years after arrest",
+    "url": "https://gothamist.com/news/eric-adams-nyc-buildings-boss-eric-ulrich-heads-to-trial-3-years-after-arrest",
+    "published": "2026-10-19T12:01:17Z",
+    "gathered": "2026-10-19T13:24:19Z"
+   },
    {
     "h": "NYC sues law firm over bogus trip-and-fall claims",
     "b": "The city's law department is going after Lower Manhattan firm Asher & Associates over lawsuits it says were fraudulent, including a $1 million sidewalk claim.",
@@ -431,9 +453,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "19 Oct 06:51 am EDT"
+    "obs": "19 Oct 08:51 am EDT"
    },
    "periods": [
     {
@@ -486,7 +508,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -509,6 +531,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Storm and flood warnings for southern France",
+    "b": "Météo-France put Hérault, Gard, Var, Lozère and Bouches-du-Rhône on orange alert for violent Mediterranean storms, with up to 200mm of rain possible.",
+    "date": "2026-10-19",
+    "publisher": "The Local France",
+    "title": "Storm and flood warnings for south of France",
+    "url": "https://www.thelocal.fr/20261019/storm-and-flood-warnings-for-south-of-france",
+    "published": "2026-10-19T13:10:23Z",
+    "updated": "2026-10-19T13:10:25Z",
+    "gathered": "2026-10-19T13:24:19Z"
+   },
    {
     "h": "Protesters block the Louvre amid unrest",
     "b": "Protesters blocked the Louvre entrance on Monday after weekend cost-of-living demonstrations turned violent. Macron ordered a security review.",
@@ -565,7 +598,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "goodnews": []
  },
  {
@@ -628,7 +661,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T13:24:00Z",
+  "updatedAt": "2026-10-19T16:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
