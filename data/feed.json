@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19T01:12:00Z",
+ "updatedAt": "2026-10-19T04:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -77,6 +77,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Gulf states back Saudi Arabia over Houthi attacks",
+   "b": "The GCC condemned repeated Houthi attacks on Saudi Arabia after a foreign ministers' meeting in Manama, saying an attack on any member affects all six and invoking their joint defence agreement.",
+   "date": "2026-10-18",
+   "place": "Manama",
+   "tz": "Asia/Bahrain",
+   "publisher": "Al Jazeera",
+   "title": "GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies",
+   "url": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies",
+   "gathered": "2026-10-19T01:12:34Z"
+  },
   {
    "h": "Israel flight lands in Bulgaria after bomb threat",
    "b": "A flight from Israel made an emergency landing in Sofia after the crew received a bomb threat near the Romanian border. A Bulgarian MiG-29 escorted the plane, which carried six crew and 51 passengers.",
@@ -200,11 +211,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Cardinals stun Rams 18-16 in season’s biggest upset",
+   "b": "Chad Ryland's 43-yard field goal as time expired gave 13.5-point underdog Arizona an 18-16 win, without scoring a touchdown. The Rams fall to 2-4.",
+   "date": "2026-10-18",
+   "publisher": "CBS Sports",
+   "title": "Meltdown in LA: What went wrong for Rams as Cardinals earn largest upset of the season",
+   "url": "https://www.cbssports.com/nfl/news/what-went-wrong-rams-vs-cardinals-biggest-upset-of-season/",
+   "gathered": "2026-10-19T01:12:34Z"
+  },
+  {
    "h": "Ben Simmons tears Achilles before comeback",
    "b": "Simmons, who signed a one-year deal with Sacramento last month after sitting out last season, was expected to start on opening night against the Clippers before the injury.",
    "date": "2026-10-18",
-   "publisher": "CBS Sports",
-   "title": "Ben Simmons' comeback ends before it began: Kings guard suffers torn Achilles, likely to miss season",
    "url": "https://www.cbssports.com/nba/news/ben-simmons-injury-achilles-kings-comeback-season/",
    "gathered": "2026-10-19T00:22:00Z"
   },
@@ -341,14 +359,14 @@
   "now": {
    "temp": 52,
    "cond": "Fair",
-   "obs": "18 Oct 19:51 pm EDT"
+   "obs": "18 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 47,
-    "text": "Clear, with a low around 47. Southeast wind 5 to 7 mph becoming northeast after midnight. "
+    "text": "Clear, with a low around 47. Southeast wind around 7 mph becoming northeast after midnight. "
    },
    {
     "name": "Monday",

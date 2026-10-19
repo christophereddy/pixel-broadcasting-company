@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 58,
     "cond": "Fair",
-    "obs": "18 Oct 19:52 pm EDT"
+    "obs": "18 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,9 +76,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "A Few Clouds",
-    "obs": "18 Oct 19:54 pm EDT"
+    "temp": 46,
+    "cond": "Fair",
+    "obs": "18 Oct 20:54 pm EDT"
    },
    "periods": [
     {
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -156,9 +156,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "18 Oct 18:53 pm CDT"
+    "obs": "18 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -211,7 +211,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -224,16 +224,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 62,
     "cond": "Mostly Cloudy",
-    "obs": "18 Oct 17:58 pm MDT"
+    "obs": "18 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly cloudy, with a low around 43. East northeast wind around 6 mph becoming calm  after midnight. "
+     "text": "Mostly cloudy, with a low around 43. East northeast wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Monday",
@@ -279,7 +279,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -355,7 +355,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -413,14 +413,14 @@
    "now": {
     "temp": 52,
     "cond": "Fair",
-    "obs": "18 Oct 19:51 pm EDT"
+    "obs": "18 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Clear, with a low around 47. Southeast wind 5 to 7 mph becoming northeast after midnight. "
+     "text": "Clear, with a low around 47. Southeast wind around 7 mph becoming northeast after midnight. "
     },
     {
      "name": "Monday",
@@ -466,7 +466,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -539,7 +539,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "goodnews": []
  },
  {
@@ -602,7 +602,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T01:12:00Z",
+  "updatedAt": "2026-10-19T04:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
