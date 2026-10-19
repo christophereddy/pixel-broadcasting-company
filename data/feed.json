@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-19T04:13:00Z",
+ "updatedAt": "2026-10-19T07:18:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -52,6 +52,15 @@
  ],
  "politics": [
   {
+   "h": "Trump defends Russia sanctions waivers",
+   "b": "On Truth Social, Trump said he blocked sanctions on Russia to keep Moscow at the bargaining table, and accused Ukraine's Zelenskyy of not wanting to end the war.",
+   "date": "2026-10-19",
+   "publisher": "Al Jazeera",
+   "title": "Trump defends Russian sanctions relief, lashes out at Zelenskyy",
+   "url": "https://www.aljazeera.com/news/2026/10/19/trump-defends-russian-sanctions-relief-lashes-out-at-zelenskyy",
+   "gathered": "2026-10-19T05:05:40Z"
+  },
+  {
    "h": "Jackson doesn't regret telling Collins to 'shut up'",
    "b": "Maine Democrat Troy Jackson said he had no idea who the protester was after Sen. Susan Collins called the person one of his supporters during their final debate, prompting his retort.",
    "date": "2026-10-18",
@@ -77,6 +86,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Lula and Flavio Bolsonaro trade insults in debate",
+   "b": "Brazil's President Lula and right-wing Senator Flavio Bolsonaro called each other liars and traded corruption accusations in their first debate, a week before a tight presidential run-off.",
+   "date": "2026-10-19",
+   "place": "São Paulo",
+   "tz": "America/Sao_Paulo",
+   "publisher": "Al Jazeera",
+   "title": "Lula and Bolsonaro spar in Brazil’s fiery first presidential run-off debate",
+   "url": "https://www.aljazeera.com/news/2026/10/19/lula-and-bolsonaro-spar-in-brazils-fiery-first-presidential-run-off-debate",
+   "gathered": "2026-10-19T05:05:40Z"
+  },
   {
    "h": "Gulf states back Saudi Arabia over Houthi attacks",
    "b": "The GCC condemned repeated Houthi attacks on Saudi Arabia after a foreign ministers' meeting in Manama, saying an attack on any member affects all six and invoking their joint defence agreement.",
@@ -105,8 +125,6 @@
    "date": "2026-10-18",
    "place": "Caracas",
    "tz": "America/Caracas",
-   "publisher": "Al Jazeera",
-   "title": "Venezuela opposition renews support for Maria Corina Machado as leader",
    "url": "https://www.aljazeera.com/news/2026/10/18/venezuela-opposition-renews-support-for-maria-corina-machado-as-leader",
    "gathered": "2026-10-19T00:22:00Z"
   },
@@ -127,8 +145,6 @@
    "date": "2026-10-18",
    "place": "Brussels",
    "tz": "Europe/Brussels",
-   "publisher": "Al Jazeera",
-   "title": "EU condemns Israeli settler attack on diplomats in occupied West Bank",
    "url": "https://www.aljazeera.com/news/2026/10/18/eu-condemns-israeli-settler-attack-on-diplomats-in-occupied-west-bank",
    "gathered": "2026-10-18T21:45:34Z"
   },
@@ -138,8 +154,6 @@
    "date": "2026-10-18",
    "place": "Tirana",
    "tz": "Europe/Tirane",
-   "publisher": "Al Jazeera",
-   "title": "Tirana sees sixth day of violent protests as Albania’s PM refuses to resign",
    "url": "https://www.aljazeera.com/news/2026/10/18/chaos-in-tirana-demonstrators-determined-to-not-give-up-so-easily",
    "gathered": "2026-10-18T21:45:34Z"
   },
@@ -207,7 +221,17 @@
    "gathered": "2026-10-18T09:47:43Z"
   }
  ],
- "business": [],
+ "business": [
+  {
+   "h": "Anthropic pledges 5% of shares to public fund",
+   "b": "Anthropic, the maker of the AI assistant Claude, announced an Anthropic Public Benefit Fund with 5 percent of its shares, with plans to raise the contribution as its market value grows.",
+   "date": "2026-10-19",
+   "publisher": "Al Jazeera",
+   "title": "AI firm Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+   "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund",
+   "gathered": "2026-10-19T05:05:40Z"
+  }
+ ],
  "science": [],
  "sports": [
   {
@@ -357,16 +381,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
+   "temp": 50,
    "cond": "Fair",
-   "obs": "18 Oct 20:51 pm EDT"
+   "obs": "19 Oct 00:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 47,
-    "text": "Clear, with a low around 47. Southeast wind around 7 mph becoming northeast after midnight. "
+    "text": "Clear, with a low around 47. Northeast wind around 7 mph. "
    },
    {
     "name": "Monday",
