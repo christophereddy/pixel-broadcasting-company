@@ -14,12 +14,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 46,
-     "text": "Clear, with a low around 46. East wind around 10 mph, with gusts as high as 20 mph. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 70,
@@ -48,6 +42,12 @@
      "kind": "high",
      "temp": 75,
      "text": "Sunny, with a high near 75."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "Clear, with a low around 48."
     }
    ]
   },
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -81,12 +81,6 @@
     "obs": "19 Oct 00:54 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 40,
-     "text": "Clear, with a low around 40. Calm wind. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -116,6 +110,12 @@
      "kind": "high",
      "temp": 55,
      "text": "Partly sunny, with a high near 55. Northeast wind 13 to 15 mph, with gusts as high as 26 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Mostly cloudy, with a low around 43. North wind around 9 mph. "
     }
    ]
   },
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -211,7 +211,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -279,7 +279,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -355,7 +355,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -417,12 +417,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 47,
-     "text": "Clear, with a low around 47. Northeast wind around 7 mph. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 65,
@@ -451,6 +445,12 @@
      "kind": "high",
      "temp": 62,
      "text": "Sunny, with a high near 62."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "Partly cloudy, with a low around 48."
     }
    ]
   },
@@ -466,7 +466,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -539,7 +539,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "goodnews": []
  },
  {
@@ -602,7 +602,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-19T07:18:00Z",
+  "updatedAt": "2026-10-19T10:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
