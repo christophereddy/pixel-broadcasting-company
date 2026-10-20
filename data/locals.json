@@ -8,19 +8,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 50,
     "cond": "Fair",
-    "obs": "20 Oct 02:52 am EDT"
+    "obs": "20 Oct 06:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76. Calm wind becoming northeast around 5 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Mostly clear, with a low around 49. Calm wind. "
@@ -41,7 +41,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 77,
-     "text": "Sunny, with a high near 77."
+     "text": "Sunny, with a high near 77. Northwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Thursday Night",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,28 +75,39 @@
   },
   "local": [
    {
+    "h": "Poll: 3 Mass. ballot questions in virtual tie",
+    "b": "A Suffolk University/Boston Globe poll of 500 registered voters found three of the nine ballot questions, including all-party primaries, in a virtual tie two weeks before Election Day.",
+    "date": "2026-10-20",
+    "publisher": "WBUR",
+    "title": "A new poll shows a virtual tie for 3 Mass. ballot question contests",
+    "url": "https://www.wbur.org/news/2026/10/20/massachusetts-ballot-questions-poll-suffolk-globe",
+    "gathered": "2026-10-20T11:56:55Z"
+   },
+   {
     "h": "Shawn Oliver quits lieutenant governor race",
     "b": "The New Bedford city councilor suspended his GOP campaign for lieutenant governor after an OUI charge, hours after running mate Mike Minogue called on him to step aside.",
     "date": "2026-10-19",
+    "publisher": "WBUR",
+    "title": "Shawn Oliver suspends campaign for lieutenant governor after OUI charge",
     "url": "https://www.wbur.org/news/2026/10/19/shawn-oliver-suspends-campaign-lieutenant-governor-oui-arrest",
     "gathered": "2026-10-19T11:04:45Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "A Few Clouds",
-    "obs": "20 Oct 02:54 am EDT"
+    "temp": 48,
+    "cond": "Partly Cloudy",
+    "obs": "20 Oct 07:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 60,
      "text": "Sunny, with a high near 60. Northeast wind 8 to 14 mph, with gusts as high as 28 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 47,
      "text": "Partly cloudy, with a low around 47. Northeast wind 7 to 11 mph, with gusts as high as 21 mph. "
@@ -139,7 +150,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -150,6 +161,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Endangered Species Act changes threaten Illinois species",
+    "b": "Trump administration changes to how the law is interpreted could put 24 endangered and 12 threatened species in Illinois at greater risk.",
+    "date": "2026-10-20",
+    "publisher": "WBEZ",
+    "title": "Trump is gutting the Endangered Species Act, putting dozens of Illinois species at risk",
+    "url": "https://www.wbez.org/environment/2026/10/20/trump-endangered-species-act-illinois-species-at-risk",
+    "published": "2026-10-20T11:00:00Z",
+    "updated": "2026-10-20T11:00:10Z",
+    "gathered": "2026-10-20T11:56:55Z"
+   },
    {
     "h": "Early voting opens in all 50 Chicago wards",
     "b": "Expanded in-person early voting for the Nov. 3 general election began Monday at sites in every ward across the city.",
@@ -165,44 +187,34 @@
     "h": "City Colleges reach deal hours before strike",
     "b": "City Colleges of Chicago and its faculty union reached a four-year tentative contract at 3:45 a.m., hours before a strike was set to begin Monday.",
     "date": "2026-10-19",
-    "publisher": "WBEZ",
-    "title": "City Colleges of Chicago avoid strike after late-night tentative contract deal",
     "url": "https://www.wbez.org/education/2026/10/19/city-colleges-of-chicago-reach-late-night-tentative-contract-agreement-to-avoid-strike",
-    "published": "2026-10-19T14:19:43Z",
-    "updated": "2026-10-19T14:19:43Z",
     "gathered": "2026-10-19T17:39:06Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Fair",
-    "obs": "20 Oct 01:53 am CDT"
+    "temp": 46,
+    "cond": "A Few Clouds",
+    "obs": "20 Oct 06:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 53,
-     "text": "Patchy fog.  Otherwise, mostly clear, with a steady temperature around 53. Calm wind becoming east around 5 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Patchy fog before 10am.  Otherwise, sunny, with a high near 65. Calm wind becoming east northeast around 5 mph in the afternoon. "
+     "text": "Patchy dense fog before 8am.  Otherwise, sunny, with a high near 65. Calm wind becoming east northeast around 5 mph in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48. East northeast wind around 5 mph becoming south after midnight. "
+     "text": "Patchy dense fog after 4am.  Otherwise, mostly clear, with a low around 48. East northeast wind around 5 mph becoming south after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66. South southwest wind around 5 mph becoming calm. "
+     "text": "Patchy dense fog before 8am.  Otherwise, mostly sunny, with a high near 66. South southwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Wednesday Night",
@@ -214,7 +226,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66."
+     "text": "Sunny, with a high near 66. Calm wind becoming northeast around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
     }
    ]
   },
@@ -230,7 +248,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -252,24 +270,18 @@
   "weather": {
    "now": {
     "temp": 51,
-    "cond": "Partly Cloudy",
-    "obs": "19 Oct 22:58 pm MDT"
+    "cond": "Fair",
+    "obs": "20 Oct 02:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Calm wind. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 74,
      "text": "Mostly sunny, with a high near 74. Calm wind becoming north northeast around 6 mph in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Mostly clear, with a low around 48. North wind around 5 mph becoming light and variable  in the evening. "
@@ -290,7 +302,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 75,
-     "text": "Mostly cloudy, with a high near 75."
+     "text": "Mostly cloudy, with a high near 75. Calm wind becoming southwest around 6 mph in the afternoon. Winds could gust as high as 16 mph. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 55,
+     "text": "Mostly cloudy, with a low around 55."
     }
    ]
   },
@@ -306,7 +324,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -333,19 +351,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 62,
-     "text": "Partly cloudy, with a low around 62. East southeast wind around 5 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 82,
      "text": "Mostly sunny, with a high near 82. East wind 5 to 10 mph becoming south southwest in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 61,
      "text": "Mostly cloudy, with a low around 61. Southeast wind around 5 mph. "
@@ -366,7 +378,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 69,
-     "text": "Showers and possibly a thunderstorm.  High near 69. Chance of precipitation is 90%."
+     "text": "Showers and possibly a thunderstorm.  High near 69. Southeast wind around 5 mph becoming west southwest in the afternoon.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "A 20 percent chance of showers before 11pm.  Partly cloudy, with a low around 56."
     }
    ]
   },
@@ -382,7 +400,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -446,19 +464,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "20 Oct 02:51 am EDT"
+    "obs": "20 Oct 07:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
      "text": "Sunny, with a high near 68. North wind 13 to 15 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Mostly clear, with a low around 52. North wind 13 to 15 mph. "
@@ -479,7 +497,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 67,
-     "text": "Sunny, with a high near 67."
+     "text": "Sunny, with a high near 67. North wind around 14 mph. "
     },
     {
      "name": "Thursday Night",
@@ -501,7 +519,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -511,8 +529,7 @@
     "publisher": "Gothamist",
     "title": "These are the NYC neighborhoods that will get free 2-K next fall",
     "url": "https://gothamist.com/news/these-are-the-nyc-neighborhoods-that-will-get-free-2-k-next-fall",
-    "published": "2026-10-19T15:00:00Z",
-    "updated": "2026-10-19T16:00:00Z",
+    "published": "2026-10-19T16:00:00Z",
     "gathered": "2026-10-19T17:39:06Z"
    },
    {
@@ -539,11 +556,7 @@
     "h": "Curfew in parts of Paris, protests banned",
     "b": "Police imposed an 11 p.m. to 6 a.m. curfew around Place de la République and Les Halles and banned demonstrations in several neighbourhoods overnight.",
     "date": "2026-10-19",
-    "publisher": "The Local France",
-    "title": "France announces curfew in Paris and ban on protests",
     "url": "https://www.thelocal.fr/20261019/france-announces-curfew-in-paris-and-ban-on-protests",
-    "published": "2026-10-19T18:19:20Z",
-    "updated": "2026-10-19T18:19:22Z",
     "gathered": "2026-10-19T19:12:25Z"
    },
    {
@@ -561,12 +574,19 @@
     "h": "Protesters block the Louvre amid unrest",
     "b": "Protesters blocked the Louvre entrance on Monday after weekend cost-of-living demonstrations turned violent. Macron ordered a security review.",
     "date": "2026-10-19",
-    "publisher": "The Local France",
-    "title": "Louvre blocked as France grapples with unrest",
     "url": "https://www.thelocal.fr/20261019/protesters-block-louvre-museum-to-back-student-campaign",
-    "published": "2026-10-19T10:05:26Z",
-    "updated": "2026-10-19T10:05:28Z",
     "gathered": "2026-10-19T11:04:45Z"
+   },
+   {
+    "h": "Arrest, anti-terror probe over Limoges town hall fire",
+    "b": "Police arrested a man believed linked to the ultra-left and called in anti-terror investigators over the fire that collapsed the 1883 town hall's roof and belfry during weekend rioting.",
+    "date": "2026-10-20",
+    "publisher": "The Local France",
+    "title": "France arrests suspect and calls in anti-terror police over Limoges town hall fire",
+    "url": "https://www.thelocal.fr/20261020/france-arrests-man-and-calls-in-anti-terror-police-over-town-hall-fire",
+    "published": "2026-10-20T10:58:04Z",
+    "updated": "2026-10-20T10:58:06Z",
+    "gathered": "2026-10-20T11:56:55Z"
    }
   ],
   "weather": {
@@ -585,7 +605,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "goodnews": []
  },
  {
@@ -599,19 +619,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 50,
-     "text": "Partly cloudy, with a steady temperature around 50. North northeast wind around 7 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 61,
      "text": "Sunny, with a high near 61. North wind 6 to 8 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 45,
      "text": "Mostly clear, with a low around 45. North wind around 5 mph becoming calm  in the evening. "
@@ -632,7 +646,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly cloudy, with a high near 58."
+     "text": "Mostly cloudy, with a high near 58. Northeast wind around 5 mph becoming calm. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "A 40 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 45."
     }
    ]
   },
@@ -648,18 +668,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T10:13:00Z",
+  "updatedAt": "2026-10-20T13:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "Medicaid to help people leaving King County jail",
     "b": "New federal, state and local efforts will use Medicaid to connect people leaving jail with medications and care, a lifeline many have never had.",
     "date": "2026-10-19",
-    "publisher": "KUOW",
-    "title": "People leaving King County jail need ‘a lifeline.’ Now Medicaid will pay for one",
     "url": "https://www.kuow.org/health/2026-10-19/people-leaving-king-county-jail-need-a-lifeline-now-medicaid-will-pay-for-one",
-    "published": "2026-10-19T21:26:23Z",
-    "updated": "2026-10-19T21:27:13Z",
     "gathered": "2026-10-19T22:33:45Z"
    }
   ]
