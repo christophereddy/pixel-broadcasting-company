@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T07:15:00Z",
+ "updatedAt": "2026-10-20T10:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -278,6 +278,17 @@
  ],
  "sports": [
   {
+   "h": "Rays beat Guardians, will face Brewers in World Series",
+   "b": "Yandy Díaz and Junior Caminero each hit two-run homers as Tampa Bay won ALCS Game 6 7-3. The Series will produce a first-time champion.",
+   "date": "2026-10-19",
+   "publisher": "KUOW",
+   "title": "Rays will face Brewers in World Series to produce a first-time champion",
+   "url": "https://www.kuow.org/npr-news/2026-10-19/rays-will-face-brewers-in-world-series-to-produce-a-first-time-champion",
+   "published": "2026-10-20T06:28:10Z",
+   "updated": "2026-10-20T06:34:32Z",
+   "gathered": "2026-10-20T07:15:29Z"
+  },
+  {
    "h": "Reese scores 30 as Dream even WNBA Finals",
    "b": "Angel Reese had 30 points and 16 rebounds as Atlanta beat Golden State 79-65 in Game 2, tying the series 1-1.",
    "date": "2026-10-19",
@@ -414,15 +425,9 @@
   "now": {
    "temp": 51,
    "cond": "Fair",
-   "obs": "20 Oct 01:51 am EDT"
+   "obs": "20 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 52,
-    "text": "Clear, with a low around 52. North wind around 11 mph. "
-   },
    {
     "name": "Tuesday",
     "kind": "high",
@@ -452,6 +457,12 @@
     "kind": "high",
     "temp": 67,
     "text": "Sunny, with a high near 67."
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 49,
+    "text": "Mostly clear, with a low around 49."
    }
   ]
  },
