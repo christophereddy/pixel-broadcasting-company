@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-10-20T13:12:00Z",
+ "updatedAt": "2026-10-20T16:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Zelenskyy holds Ukraine talks in Oslo with Witkoff",
+   "b": "Zelenskyy is meeting US envoy Steve Witkoff and European officials in Oslo, with Jared Kushner joining remotely, as Trump publicly accuses him of not wanting to end the war.",
+   "date": "2026-10-20",
+   "publisher": "Al Jazeera",
+   "title": "Zelenskyy to hold talks on Russia-Ukraine war with Witkoff, Europeans",
+   "url": "https://www.aljazeera.com/news/2026/10/20/zelenskyy-to-hold-peace-talks-in-oslo-with-witkoff-kushner-attending",
+   "gathered": "2026-10-20T13:13:07Z"
+  },
   {
    "h": "Zelenskyy: no warning as Russia hits power grid",
    "b": "Zelenskyy said Ukraine got no early warning from partners as Russia struck its power grid again, and cited Starlink limits and a shortage of Patriot air defenses.",
@@ -39,8 +48,6 @@
    "h": "Supreme Court to hear school admissions race case",
    "b": "The court will consider parents' claims of discrimination over admissions to four Montgomery County, Maryland, magnet schools after lower courts dismissed the case.",
    "date": "2026-10-20",
-   "publisher": "Al Jazeera",
-   "title": "US Supreme Court to hear case on race in school admissions",
    "url": "https://www.aljazeera.com/news/2026/10/20/us-supreme-court-to-hear-case-on-race-in-school-admissions",
    "gathered": "2026-10-20T06:21:49Z"
   },
@@ -120,6 +127,17 @@
  ],
  "international": [
   {
+   "h": "UK to send Typhoon jets to defend Saudi Arabia",
+   "b": "Britain will fly defensive counter-air missions with RAF Typhoons to protect Saudi cities and infrastructure from Houthi attacks, but will not strike the group.",
+   "date": "2026-10-20",
+   "place": "London",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK to deploy Typhoon jets to help defend Saudi Arabia from Houthi attacks",
+   "url": "https://www.aljazeera.com/news/2026/10/20/uk-to-deploy-raf-fighter-jets-to-defend-saudi-arabia-from-houthi-attacks",
+   "gathered": "2026-10-20T13:13:07Z"
+  },
+  {
    "h": "Alberta rejects move toward independence",
    "b": "About 76% of Alberta voters backed staying in Canada in a referendum that could have started a path to separation, a win for PM Mark Carney.",
    "date": "2026-10-20",
@@ -138,8 +156,6 @@
    "date": "2026-10-20",
    "place": "Valencia",
    "tz": "Europe/Madrid",
-   "publisher": "Al Jazeera",
-   "title": "Four dead as torrential rain batters eastern Spain",
    "url": "https://www.aljazeera.com/news/2026/10/20/four-dead-as-torrential-rain-batters-eastern-spain",
    "gathered": "2026-10-20T06:21:49Z"
   },
@@ -149,8 +165,6 @@
    "date": "2026-10-19",
    "place": "Jerusalem",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Hegseth meets Netanyahu on unannounced Israel visit",
    "url": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit",
    "gathered": "2026-10-20T01:15:39Z"
   },
@@ -169,8 +183,6 @@
    "date": "2026-10-19",
    "place": "Darfur",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Drone attacks across Sudan escalate, 160 people reported killed",
    "url": "https://www.aljazeera.com/news/2026/10/19/160-reported-killed-in-escalating-drone-attacks-across-sudan",
    "gathered": "2026-10-19T22:33:45Z"
   },
@@ -252,8 +264,6 @@
    "h": "Saudi Arabia cancels 'Davos in the Desert'",
    "b": "The Future Investment Initiative, set for Oct. 26-29, was called off amid deadly Houthi strikes on the kingdom, with a new date to be announced.",
    "date": "2026-10-20",
-   "publisher": "Al Jazeera",
-   "title": "Saudi Arabia cancels 2026 ‘Davos in the Desert’ amid Houthi attacks",
    "url": "https://www.aljazeera.com/news/2026/10/20/saudi-arabia-cancels-2026-davos-in-the-desert-amid-houthi-attacks",
    "gathered": "2026-10-20T06:21:49Z"
   },
@@ -445,16 +455,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "20 Oct 07:51 am EDT"
+   "obs": "20 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 68,
-    "text": "Sunny, with a high near 68. North wind 13 to 15 mph. "
+    "text": "Sunny, with a high near 68. Northeast wind 13 to 15 mph. "
    },
    {
     "name": "Tonight",

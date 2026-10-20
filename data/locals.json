@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "20 Oct 06:52 am EDT"
+    "obs": "20 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -79,7 +79,7 @@
     "b": "A Suffolk University/Boston Globe poll of 500 registered voters found three of the nine ballot questions, including all-party primaries, in a virtual tie two weeks before Election Day.",
     "date": "2026-10-20",
     "publisher": "WBUR",
-    "title": "A new poll shows a virtual tie for 3 Mass. ballot question contests",
+    "title": "3 Mass. ballot question races are locked in virtual ties, new poll suggests",
     "url": "https://www.wbur.org/news/2026/10/20/massachusetts-ballot-questions-poll-suffolk-globe",
     "gathered": "2026-10-20T11:56:55Z"
    },
@@ -87,24 +87,22 @@
     "h": "Shawn Oliver quits lieutenant governor race",
     "b": "The New Bedford city councilor suspended his GOP campaign for lieutenant governor after an OUI charge, hours after running mate Mike Minogue called on him to step aside.",
     "date": "2026-10-19",
-    "publisher": "WBUR",
-    "title": "Shawn Oliver suspends campaign for lieutenant governor after OUI charge",
     "url": "https://www.wbur.org/news/2026/10/19/shawn-oliver-suspends-campaign-lieutenant-governor-oui-arrest",
     "gathered": "2026-10-19T11:04:45Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 49,
     "cond": "Partly Cloudy",
-    "obs": "20 Oct 07:54 am EDT"
+    "obs": "20 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. Northeast wind 8 to 14 mph, with gusts as high as 28 mph. "
+     "text": "Sunny, with a high near 60. Northeast wind 10 to 14 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Tonight",
@@ -150,7 +148,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -161,6 +159,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago mayoral hopefuls file petition stacks",
+    "b": "Candidates wheeled in thousands of nominating petitions at the start of a weeklong filing period for the February election. They need 12,500 valid signatures.",
+    "date": "2026-10-20",
+    "publisher": "WBEZ",
+    "title": "Race for Chicago mayor revs up with candidates lugging stacks of nominating petitions to elections board",
+    "url": "https://www.wbez.org/government-politics/elections/2026/10/20/mayor-race-candidates-stacks-nominating-petitions-chicago-board-of-elections",
+    "published": "2026-10-20T12:26:00Z",
+    "updated": "2026-10-20T12:26:00Z",
+    "gathered": "2026-10-20T13:13:07Z"
+   },
    {
     "h": "Endangered Species Act changes threaten Illinois species",
     "b": "Trump administration changes to how the law is interpreted could put 24 endangered and 12 threatened species in Illinois at greater risk.",
@@ -176,11 +185,7 @@
     "h": "Early voting opens in all 50 Chicago wards",
     "b": "Expanded in-person early voting for the Nov. 3 general election began Monday at sites in every ward across the city.",
     "date": "2026-10-19",
-    "publisher": "WBEZ",
-    "title": "Early voting kicks off in all 50 wards",
     "url": "https://www.wbez.org/government-politics/elections/2026/10/19/early-voting-general-election-50-wards",
-    "published": "2026-10-19T23:54:13Z",
-    "updated": "2026-10-19T23:54:13Z",
     "gathered": "2026-10-20T01:15:39Z"
    },
    {
@@ -193,16 +198,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 47,
     "cond": "A Few Clouds",
-    "obs": "20 Oct 06:53 am CDT"
+    "obs": "20 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Patchy dense fog before 8am.  Otherwise, sunny, with a high near 65. Calm wind becoming east northeast around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 65. Calm wind becoming east northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -248,7 +253,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -269,9 +274,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Fair",
-    "obs": "20 Oct 02:58 am MDT"
+    "temp": 48,
+    "cond": "Mostly Cloudy",
+    "obs": "20 Oct 05:58 am MDT"
    },
    "periods": [
     {
@@ -324,7 +329,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -336,6 +341,17 @@
   },
   "local": [
    {
+    "h": "LA County emergency official sues over Eaton Fire",
+    "b": "Nicholas Vaquero of the Office of Emergency Management alleges retaliation after he complained the county failed to properly staff its response to the deadly Eaton Fire.",
+    "date": "2026-10-20",
+    "publisher": "LAist",
+    "title": "Emergency manager sues LA County, alleging retaliation over Eaton Fire whistleblower complaints",
+    "url": "https://laist.com/news/climate-environment/emergency-manager-sues-la-county-alleging-retaliation-eaton-fire",
+    "published": "2026-10-20T12:00:00Z",
+    "updated": "2026-10-20T12:00:00Z",
+    "gathered": "2026-10-20T13:13:07Z"
+   },
+   {
     "h": "Long Beach neighbors confront ICE after arrest",
     "b": "Residents say they blocked federal agents from detaining Ricardo Gonzalez, a U.S. citizen, after an agent tackled him off an e-bike and broke his arm.",
     "date": "2026-10-19",
@@ -343,7 +359,6 @@
     "title": "Long Beach neighbors rush to defend man after ICE agents break his arm, witnesses say",
     "url": "https://laist.com/news/politics/long-beach-neighbors-rush-to-defend-man-after-ice-agents-break-his-arm-witnesses-say",
     "published": "2026-10-19T17:30:00Z",
-    "updated": "2026-10-19T17:29:59Z",
     "gathered": "2026-10-19T17:39:06Z"
    }
   ],
@@ -400,7 +415,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -464,16 +479,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "20 Oct 07:51 am EDT"
+    "obs": "20 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. North wind 13 to 15 mph. "
+     "text": "Sunny, with a high near 68. Northeast wind 13 to 15 mph. "
     },
     {
      "name": "Tonight",
@@ -519,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -563,11 +578,7 @@
     "h": "Storm and flood warnings for southern France",
     "b": "Météo-France put Hérault, Gard, Var, Lozère and Bouches-du-Rhône on orange alert for violent Mediterranean storms, with up to 200mm of rain possible.",
     "date": "2026-10-19",
-    "publisher": "The Local France",
-    "title": "Seven départements in south-east France remain on orange weather alert",
     "url": "https://www.thelocal.fr/20261019/storm-and-flood-warnings-for-south-of-france",
-    "published": "2026-10-19T13:10:23Z",
-    "updated": "2026-10-20T07:01:05Z",
     "gathered": "2026-10-19T13:24:19Z"
    },
    {
@@ -605,7 +616,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "goodnews": []
  },
  {
@@ -668,7 +679,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T13:12:00Z",
+  "updatedAt": "2026-10-20T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
