@@ -8,16 +8,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Fair",
-    "obs": "20 Oct 08:52 am EDT"
+    "temp": 71,
+    "cond": "A Few Clouds",
+    "obs": "20 Oct 12:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. Calm wind becoming northeast around 5 mph. "
+     "text": "Sunny, with a high near 76. Northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -34,20 +34,20 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "Clear, with a low around 48. Calm wind becoming northwest around 5 mph. "
+     "temp": 50,
+     "text": "Clear, with a low around 50. Calm wind becoming northwest around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 77,
-     "text": "Sunny, with a high near 77. Northwest wind around 5 mph becoming calm. "
+     "temp": 76,
+     "text": "Sunny, with a high near 76. Northwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Clear, with a low around 50."
+     "temp": 51,
+     "text": "Clear, with a low around 51."
     }
    ]
   },
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -93,46 +93,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Partly Cloudy",
-    "obs": "20 Oct 08:54 am EDT"
+    "temp": 60,
+    "cond": "Fair",
+    "obs": "20 Oct 12:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. Northeast wind 10 to 14 mph, with gusts as high as 28 mph. "
+     "temp": 61,
+     "text": "Sunny, with a high near 61. Northeast wind around 15 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Northeast wind 7 to 11 mph, with gusts as high as 21 mph. "
+     "temp": 45,
+     "text": "Mostly clear, with a low around 45. Northeast wind 8 to 15 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 53,
-     "text": "Mostly cloudy, with a high near 53. Northeast wind 11 to 14 mph, with gusts as high as 25 mph. "
+     "temp": 52,
+     "text": "Mostly cloudy, with a high near 52. Northeast wind around 14 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Mostly cloudy, with a low around 44. North wind around 8 mph. "
+     "text": "A slight chance of showers between 11pm and midnight.  Mostly cloudy, with a low around 44. Northeast wind around 11 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 61,
-     "text": "Mostly sunny, with a high near 61. North wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly sunny, with a high near 61. North wind around 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. North wind 10 to 13 mph, with gusts as high as 25 mph. "
+     "temp": 37,
+     "text": "Mostly clear, with a low around 37. North wind 9 to 11 mph, with gusts as high as 22 mph. "
     }
    ]
   },
@@ -148,7 +148,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -159,6 +159,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "SEIU backs Giannoulias in Chicago mayor's race",
+    "b": "SEIU Locals 1 and 73, which gave over $4.5 million to Mayor Johnson's 2023 campaign, endorsed Secretary of State Alexi Giannoulias.",
+    "date": "2026-10-20",
+    "publisher": "WBEZ",
+    "title": "Feud between progressive unions that put Mayor Johnson in office yields Giannoulias key endorsement",
+    "url": "https://www.wbez.org/government-politics/elections/2026/10/20/seiu-endorses-alexi-giannoulias-mayoral-race-brandon-johnson",
+    "published": "2026-10-20T15:12:08Z",
+    "updated": "2026-10-20T15:12:08Z",
+    "gathered": "2026-10-20T17:26:05Z"
+   },
    {
     "h": "Chicago mayoral hopefuls file petition stacks",
     "b": "Candidates wheeled in thousands of nominating petitions at the start of a weeklong filing period for the February election. They need 12,500 valid signatures.",
@@ -198,16 +209,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "A Few Clouds",
-    "obs": "20 Oct 07:53 am CDT"
+    "temp": 65,
+    "cond": "Fair",
+    "obs": "20 Oct 11:53 am CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Calm wind becoming east northeast around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 65. East northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -253,7 +264,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -274,16 +285,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 61,
     "cond": "Mostly Cloudy",
-    "obs": "20 Oct 05:58 am MDT"
+    "obs": "20 Oct 10:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 74,
-     "text": "Mostly sunny, with a high near 74. Calm wind becoming north northeast around 6 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 74. North northeast wind 3 to 6 mph. "
     },
     {
      "name": "Tonight",
@@ -329,7 +340,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -348,7 +359,7 @@
     "title": "Emergency manager sues LA County, alleging retaliation over Eaton Fire whistleblower complaints",
     "url": "https://laist.com/news/climate-environment/emergency-manager-sues-la-county-alleging-retaliation-eaton-fire",
     "published": "2026-10-20T12:00:00Z",
-    "updated": "2026-10-20T12:00:00Z",
+    "updated": "2026-10-20T14:51:00Z",
     "gathered": "2026-10-20T13:13:07Z"
    },
    {
@@ -369,7 +380,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 82,
-     "text": "Mostly sunny, with a high near 82. East wind 5 to 10 mph becoming south southwest in the afternoon. "
+     "text": "Mostly sunny, with a high near 82. Southeast wind 5 to 10 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -415,7 +426,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -426,6 +437,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYC proposes rules for AI customer service bots",
+    "b": "A proposed rule would require businesses to disclose AI chatbots and let customers talk to a person instead. The city says it is the first of its kind.",
+    "date": "2026-10-20",
+    "publisher": "Gothamist",
+    "title": "NYC proposes crackdown down on AI customer service chatbots",
+    "url": "https://gothamist.com/news/nyc-proposes-crackdown-down-on-ai-customer-service-chatbots",
+    "published": "2026-10-20T16:04:50Z",
+    "gathered": "2026-10-20T17:26:05Z"
+   },
    {
     "h": "MTA train yards in disrepair, watchdog says",
     "b": "Plants grow through holes in the roof of the Bronx East 180th Street yard, where 2 and 5 trains are serviced, and water drips onto electrical equipment.",
@@ -479,16 +500,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 65,
     "cond": "Fair",
-    "obs": "20 Oct 08:51 am EDT"
+    "obs": "20 Oct 12:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. Northeast wind 13 to 15 mph. "
+     "temp": 65,
+     "text": "Sunny, with a steady temperature around 65. Northeast wind around 13 mph. "
     },
     {
      "name": "Tonight",
@@ -534,7 +555,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -571,7 +592,11 @@
     "h": "Curfew in parts of Paris, protests banned",
     "b": "Police imposed an 11 p.m. to 6 a.m. curfew around Place de la République and Les Halles and banned demonstrations in several neighbourhoods overnight.",
     "date": "2026-10-19",
+    "publisher": "The Local France",
+    "title": "New Paris curfew ordered on Tuesday for parts of city",
     "url": "https://www.thelocal.fr/20261019/france-announces-curfew-in-paris-and-ban-on-protests",
+    "published": "2026-10-19T18:19:20Z",
+    "updated": "2026-10-20T15:53:26Z",
     "gathered": "2026-10-19T19:12:25Z"
    },
    {
@@ -616,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "goodnews": []
  },
  {
@@ -633,7 +658,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. North wind 6 to 8 mph. "
+     "text": "Sunny, with a high near 61. North wind around 8 mph. "
     },
     {
      "name": "Tonight",
@@ -679,7 +704,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T16:12:00Z",
+  "updatedAt": "2026-10-20T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

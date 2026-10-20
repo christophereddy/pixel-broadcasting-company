@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T16:12:00Z",
+ "updatedAt": "2026-10-20T19:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -23,11 +23,11 @@
    "gathered": "2026-10-19T13:24:19Z"
   },
   {
-   "h": "Iran war: Two tankers on fire in Hormuz",
-   "b": "Al Jazeera's live coverage: two tankers are on fire in the Strait of Hormuz, and air strikes target Houthi positions in Yemen.",
+   "h": "Iran war: Netanyahu vows to eliminate Iran regime",
+   "b": "Al Jazeera's live coverage: Netanyahu says he and Trump are committed to 'eliminating' the regime in Iran.",
    "date": "2026-10-20",
    "publisher": "Al Jazeera",
-   "title": "Two tankers on fire in Hormuz; air strikes target Houthi positions in Yemen",
+   "title": "Netanyahu says he and Trump committed to ‘eliminating regime’ in Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/20/draft-3",
    "gathered": "2026-10-20T06:21:49Z"
   }
@@ -75,6 +75,25 @@
  ],
  "politics": [
   {
+   "h": "Vance declines to endorse Netanyahu",
+   "b": "\"I'm not getting involved in Israeli elections,\" Vance said while campaigning for North Carolina Senate nominee Michael Whatley.",
+   "date": "2026-10-20",
+   "publisher": "PBS NewsHour",
+   "title": "JD Vance declines to endorse Netanyahu for reelection, says he's focusing on midterms",
+   "url": "https://www.pbs.org/newshour/politics/jd-vance-declines-to-endorse-netanyahu-for-reelection-says-hes-focusing-on-midterms",
+   "published": "2026-10-20T14:01:59Z",
+   "gathered": "2026-10-20T17:26:05Z"
+  },
+  {
+   "h": "California voters weigh billionaire wealth tax",
+   "b": "Prop 40 would impose a one-time 5% tax on about 250 billionaires holding an estimated $2.3 trillion. Supporters say it could raise up to $100 billion, mostly for healthcare.",
+   "date": "2026-10-20",
+   "publisher": "Democracy Now!",
+   "title": "A Wealth Tax on Billionaires? California Voters to Decide Prop 40",
+   "url": "https://www.democracynow.org/2026/10/20/california_billionaire_tax",
+   "gathered": "2026-10-20T17:26:05Z"
+  },
+  {
    "h": "ProPublica: FBI purge ended Graham, Clyburn probe",
    "b": "ProPublica reports Trump's FBI purge helped end a bribery investigation tied to defense contractor Navatek, which committed $40,000 in donations for a meeting with Lindsey Graham.",
    "date": "2026-10-20",
@@ -82,7 +101,7 @@
    "title": "How Trump’s FBI Purge Saved Lindsey Graham and James Clyburn From a Bribery Investigation",
    "url": "https://www.propublica.org/article/navatek-lindsey-graham-jim-clyburn-fbi-anti-corruption-bribery",
    "published": "2026-10-20T09:00:00Z",
-   "updated": "2026-10-20T10:25:15Z",
+   "updated": "2026-10-20T15:56:47Z",
    "gathered": "2026-10-20T11:56:55Z"
   },
   {
@@ -127,6 +146,17 @@
  ],
  "international": [
   {
+   "h": "Over 250,000 displaced in Yemen as fighting grows",
+   "b": "UNHCR said more than 250,000 people have been displaced since fighting escalated, with Taiz accounting for 76 percent of departures.",
+   "date": "2026-10-20",
+   "place": "Taiz",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "More than 250,000 displaced in Yemen since fighting escalated: UNHCR",
+   "url": "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr",
+   "gathered": "2026-10-20T17:26:05Z"
+  },
+  {
    "h": "UK to send Typhoon jets to defend Saudi Arabia",
    "b": "Britain will fly defensive counter-air missions with RAF Typhoons to protect Saudi cities and infrastructure from Houthi attacks, but will not strike the group.",
    "date": "2026-10-20",
@@ -143,11 +173,7 @@
    "date": "2026-10-20",
    "place": "Edmonton",
    "tz": "America/Edmonton",
-   "publisher": "KUOW",
-   "title": "Alberta voters reject a move toward independence in referendum backing Canadian unity",
    "url": "https://www.kuow.org/npr-news/2026-10-19/alberta-voters-reject-a-move-toward-independence-in-referendum-backing-canadian-unity",
-   "published": "2026-10-20T06:02:40Z",
-   "updated": "2026-10-20T06:06:33Z",
    "gathered": "2026-10-20T06:21:49Z"
   },
   {
@@ -232,13 +258,16 @@
    "gathered": "2026-10-19T13:24:19Z"
   },
   {
-   "h": "Australian MP Helen Haines hurt in car ramming",
-   "b": "Independent MP Helen Haines, 65, was critically injured when an SUV struck her outside her office in Wangaratta. PM Albanese called it a deliberate act.",
-   "date": "2026-10-19",
+   "h": "Driver charged over car ramming of MP Helen Haines",
+   "b": "Brendan Nugent of Tarrawingee was charged with intentionally causing serious injury to Haines, who was struck outside her Wangaratta office. Bystanders subdued him.",
+   "date": "2026-10-20",
    "place": "Wangaratta",
    "tz": "Australia/Melbourne",
-   "url": "https://www.aljazeera.com/news/2026/10/19/australian-mp-helen-haines-critically-injured-in-deliberate-car-ramming",
-   "gathered": "2026-10-19T13:24:19Z"
+   "publisher": "PBS NewsHour",
+   "title": "Driver charged with intentionally injuring Australian federal lawmaker",
+   "url": "https://www.pbs.org/newshour/world/driver-charged-with-intentionally-injuring-australian-federal-lawmaker",
+   "published": "2026-10-20T17:08:08Z",
+   "gathered": "2026-10-20T17:26:05Z"
   },
   {
    "h": "Houthi missiles kill at least 53 at Yemen camp",
@@ -260,6 +289,15 @@
   }
  ],
  "business": [
+  {
+   "h": "AI now among Americans’ top 10 fears",
+   "b": "Chapman University's survey of fears found AI harming the political process ranked No. 3 and AI hurting the economy No. 7, the first time AI made the top 10.",
+   "date": "2026-10-20",
+   "publisher": "Marketplace",
+   "title": "AI is high on the list of what Americans fear most",
+   "url": "https://www.marketplace.org/story/2026/10/20/americans-increasingly-fear-ai-new-survey-finds",
+   "gathered": "2026-10-20T17:26:05Z"
+  },
   {
    "h": "Saudi Arabia cancels 'Davos in the Desert'",
    "b": "The Future Investment Initiative, set for Oct. 26-29, was called off amid deadly Houthi strikes on the kingdom, with a new date to be announced.",
@@ -294,10 +332,7 @@
    "h": "Japan launches mission to Mars moon Phobos",
    "b": "JAXA launched a spacecraft from Tanegashima to collect samples from Phobos, which no mission has visited. If it succeeds, samples arrive on Earth in 2031.",
    "date": "2026-10-19",
-   "publisher": "PBS NewsHour",
-   "title": "Japan launches spacecraft to Mars' moon in mission to bring back soil samples",
    "url": "https://www.pbs.org/newshour/science/japan-launches-spacecraft-to-mars-moon-in-mission-to-bring-back-soil-samples",
-   "published": "2026-10-19T20:54:50Z",
    "gathered": "2026-10-19T22:33:45Z"
   },
   {
@@ -310,22 +345,25 @@
  ],
  "sports": [
   {
+   "h": "Titans release DT Jordan Elliott after 'incident'",
+   "b": "Tennessee released defensive tackle Jordan Elliott after reviewing an Oct. 15 incident at the team facility and said it would not comment further.",
+   "date": "2026-10-20",
+   "publisher": "CBS Sports",
+   "title": "Titans release DT Jordan Elliott after 'incident' at team facility",
+   "url": "https://www.cbssports.com/nfl/news/titans-release-jordan-elliott-after-incident/",
+   "gathered": "2026-10-20T17:26:05Z"
+  },
+  {
    "h": "Rays beat Guardians, will face Brewers in World Series",
    "b": "Yandy Díaz and Junior Caminero each hit two-run homers as Tampa Bay won ALCS Game 6 7-3. The Series will produce a first-time champion.",
    "date": "2026-10-19",
-   "publisher": "KUOW",
-   "title": "Rays will face Brewers in World Series to produce a first-time champion",
    "url": "https://www.kuow.org/npr-news/2026-10-19/rays-will-face-brewers-in-world-series-to-produce-a-first-time-champion",
-   "published": "2026-10-20T06:28:10Z",
-   "updated": "2026-10-20T06:34:32Z",
    "gathered": "2026-10-20T07:15:29Z"
   },
   {
    "h": "Reese scores 30 as Dream even WNBA Finals",
    "b": "Angel Reese had 30 points and 16 rebounds as Atlanta beat Golden State 79-65 in Game 2, tying the series 1-1.",
    "date": "2026-10-19",
-   "publisher": "CBS Sports",
-   "title": "'I need the ball': Inside what fueled Angel Reese to one of the best performances in WNBA Finals history",
    "url": "https://www.cbssports.com/wnba/news/angel-reese-demanded-the-ball-dream-wnba-finals-history/",
    "gathered": "2026-10-20T06:21:49Z"
   },
@@ -403,6 +441,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NYC proposes rules for AI customer service bots",
+   "b": "A proposed rule would require businesses to disclose AI chatbots and let customers talk to a person instead. The city says it is the first of its kind.",
+   "date": "2026-10-20",
+   "publisher": "Gothamist",
+   "title": "NYC proposes crackdown down on AI customer service chatbots",
+   "url": "https://gothamist.com/news/nyc-proposes-crackdown-down-on-ai-customer-service-chatbots",
+   "published": "2026-10-20T16:04:50Z",
+   "gathered": "2026-10-20T17:26:05Z"
+  },
+  {
    "h": "MTA train yards in disrepair, watchdog says",
    "b": "Plants grow through holes in the roof of the Bronx East 180th Street yard, where 2 and 5 trains are serviced, and water drips onto electrical equipment.",
    "date": "2026-10-19",
@@ -455,16 +503,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 65,
    "cond": "Fair",
-   "obs": "20 Oct 08:51 am EDT"
+   "obs": "20 Oct 12:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
-    "temp": 68,
-    "text": "Sunny, with a high near 68. Northeast wind 13 to 15 mph. "
+    "temp": 65,
+    "text": "Sunny, with a steady temperature around 65. Northeast wind around 13 mph. "
    },
    {
     "name": "Tonight",
