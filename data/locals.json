@@ -8,17 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 75,
     "cond": "A Few Clouds",
-    "obs": "20 Oct 12:52 pm EDT"
+    "obs": "20 Oct 15:52 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 76,
-     "text": "Sunny, with a high near 76. Northeast wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -47,7 +41,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Clear, with a low around 51."
+     "text": "Clear, with a low around 51. Northwest wind around 5 mph becoming calm. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 72,
+     "text": "Sunny, with a high near 72."
     }
    ]
   },
@@ -63,9 +63,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "atlanta-ga",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Emory offers free AI course for faith groups",
+    "b": "Emory staff created a free online course to help faith communities navigate artificial intelligence and the spiritual questions it raises.",
+    "date": "2026-10-20",
+    "publisher": "WABE",
+    "title": "Emory staff create free online course to help faith communities navigate AI landscape",
+    "url": "https://www.wabe.org/emory-staff-create-free-online-course-to-help-faith-communities-navigate-ai-landscape/",
+    "published": "2026-10-20T19:49:00Z",
+    "updated": "2026-10-20T20:15:58Z",
+    "gathered": "2026-10-20T20:47:25Z"
+   }
+  ]
  },
  {
   "location": {
@@ -93,17 +105,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "Fair",
-    "obs": "20 Oct 12:54 pm EDT"
+    "temp": 61,
+    "cond": "A Few Clouds",
+    "obs": "20 Oct 15:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. Northeast wind around 15 mph, with gusts as high as 26 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -126,13 +132,19 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 61,
-     "text": "Mostly sunny, with a high near 61. North wind around 10 mph. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 61. North wind around 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 37,
      "text": "Mostly clear, with a low around 37. North wind 9 to 11 mph, with gusts as high as 22 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 51,
+     "text": "Sunny, with a high near 51. North wind 9 to 13 mph. "
     }
    ]
   },
@@ -148,7 +160,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -174,22 +186,14 @@
     "h": "Chicago mayoral hopefuls file petition stacks",
     "b": "Candidates wheeled in thousands of nominating petitions at the start of a weeklong filing period for the February election. They need 12,500 valid signatures.",
     "date": "2026-10-20",
-    "publisher": "WBEZ",
-    "title": "Race for Chicago mayor revs up with candidates lugging stacks of nominating petitions to elections board",
     "url": "https://www.wbez.org/government-politics/elections/2026/10/20/mayor-race-candidates-stacks-nominating-petitions-chicago-board-of-elections",
-    "published": "2026-10-20T12:26:00Z",
-    "updated": "2026-10-20T12:26:00Z",
     "gathered": "2026-10-20T13:13:07Z"
    },
    {
     "h": "Endangered Species Act changes threaten Illinois species",
     "b": "Trump administration changes to how the law is interpreted could put 24 endangered and 12 threatened species in Illinois at greater risk.",
     "date": "2026-10-20",
-    "publisher": "WBEZ",
-    "title": "Trump is gutting the Endangered Species Act, putting dozens of Illinois species at risk",
     "url": "https://www.wbez.org/environment/2026/10/20/trump-endangered-species-act-illinois-species-at-risk",
-    "published": "2026-10-20T11:00:00Z",
-    "updated": "2026-10-20T11:00:10Z",
     "gathered": "2026-10-20T11:56:55Z"
    },
    {
@@ -209,34 +213,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 67,
     "cond": "Fair",
-    "obs": "20 Oct 11:53 am CDT"
+    "obs": "20 Oct 13:53 pm CDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. East northeast wind around 5 mph. "
+     "temp": 66,
+     "text": "Sunny, with a high near 66. East northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 48,
-     "text": "Patchy dense fog after 4am.  Otherwise, mostly clear, with a low around 48. East northeast wind around 5 mph becoming south after midnight. "
+     "temp": 49,
+     "text": "Patchy fog after 3am.  Otherwise, mostly clear, with a low around 49. East northeast wind around 5 mph becoming south after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Patchy dense fog before 8am.  Otherwise, mostly sunny, with a high near 66. South southwest wind around 5 mph becoming calm. "
+     "temp": 67,
+     "text": "Patchy fog before 8am.  Otherwise, sunny, with a high near 67. Calm wind becoming east southeast around 5 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Partly cloudy, with a low around 52. Calm wind. "
+     "text": "Partly cloudy, with a low around 52. East southeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Thursday",
@@ -264,7 +268,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -285,46 +289,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 66,
     "cond": "Mostly Cloudy",
-    "obs": "20 Oct 10:58 am MDT"
+    "obs": "20 Oct 13:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 74,
-     "text": "Mostly sunny, with a high near 74. North northeast wind 3 to 6 mph. "
+     "temp": 76,
+     "text": "Sunny, with a high near 76. Northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48. North wind around 5 mph becoming light and variable  in the evening. "
+     "text": "Mostly clear, with a low around 48. Calm wind becoming southwest around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 78,
-     "text": "Sunny, with a high near 78. Calm wind becoming east southeast around 6 mph in the afternoon. Winds could gust as high as 15 mph. "
+     "temp": 79,
+     "text": "Mostly sunny, with a high near 79. Calm wind becoming east southeast around 6 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly cloudy, with a low around 54. South southwest wind 5 to 7 mph becoming calm  after midnight. Winds could gust as high as 15 mph. "
+     "temp": 52,
+     "text": "Increasing clouds, with a low around 52. South southwest wind 5 to 7 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 75,
-     "text": "Mostly cloudy, with a high near 75. Calm wind becoming southwest around 6 mph in the afternoon. Winds could gust as high as 16 mph. "
+     "text": "A 20 percent chance of showers after 3pm.  Mostly cloudy, with a high near 75. Calm wind becoming west southwest 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly cloudy, with a low around 55."
+     "temp": 53,
+     "text": "Mostly cloudy, with a low around 53."
     }
    ]
   },
@@ -340,7 +344,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -352,6 +356,17 @@
   },
   "local": [
    {
+    "h": "$125M settlement approved for Garden Grove tank",
+    "b": "GKN Aerospace will fund up to $100 million in claims for residents and businesses forced out when about 50,000 people evacuated over the failing chemical tank.",
+    "date": "2026-10-20",
+    "publisher": "LAist",
+    "title": "$125M settlement approved for Garden Grove chemical tank incident",
+    "url": "https://laist.com/news/garden-grove-chemical-tank-settlement-approved",
+    "published": "2026-10-20T20:17:08Z",
+    "updated": "2026-10-20T20:17:08Z",
+    "gathered": "2026-10-20T20:47:25Z"
+   },
+   {
     "h": "LA County emergency official sues over Eaton Fire",
     "b": "Nicholas Vaquero of the Office of Emergency Management alleges retaliation after he complained the county failed to properly staff its response to the deadly Eaton Fire.",
     "date": "2026-10-20",
@@ -359,17 +374,14 @@
     "title": "Emergency manager sues LA County, alleging retaliation over Eaton Fire whistleblower complaints",
     "url": "https://laist.com/news/climate-environment/emergency-manager-sues-la-county-alleging-retaliation-eaton-fire",
     "published": "2026-10-20T12:00:00Z",
-    "updated": "2026-10-20T14:51:00Z",
+    "updated": "2026-10-20T17:55:24Z",
     "gathered": "2026-10-20T13:13:07Z"
    },
    {
     "h": "Long Beach neighbors confront ICE after arrest",
     "b": "Residents say they blocked federal agents from detaining Ricardo Gonzalez, a U.S. citizen, after an agent tackled him off an e-bike and broke his arm.",
     "date": "2026-10-19",
-    "publisher": "LAist",
-    "title": "Long Beach neighbors rush to defend man after ICE agents break his arm, witnesses say",
     "url": "https://laist.com/news/politics/long-beach-neighbors-rush-to-defend-man-after-ice-agents-break-his-arm-witnesses-say",
-    "published": "2026-10-19T17:30:00Z",
     "gathered": "2026-10-19T17:39:06Z"
    }
   ],
@@ -377,10 +389,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 82,
-     "text": "Mostly sunny, with a high near 82. Southeast wind 5 to 10 mph becoming south southwest in the afternoon. "
+     "temp": 81,
+     "text": "Mostly sunny, with a high near 81. South southwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -391,26 +403,26 @@
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 72,
-     "text": "Showers likely after 11am.  Mostly cloudy, with a high near 72. Southeast wind 5 to 10 mph becoming south southwest in the afternoon.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 73,
+     "text": "Rain likely after 11am.  Mostly cloudy, with a high near 73. East southeast wind 5 to 10 mph becoming south southwest in the afternoon. Winds could gust as high as 20 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Showers, with thunderstorms also possible after 11pm.  Low around 59. East southeast wind 5 to 10 mph.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "text": "Rain, with thunderstorms also possible after 11pm.  Low around 59. East southeast wind 5 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 69,
-     "text": "Showers and possibly a thunderstorm.  High near 69. Southeast wind around 5 mph becoming west southwest in the afternoon.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Rain and possibly a thunderstorm.  High near 69. Southeast wind around 5 mph becoming west southwest in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 56,
-     "text": "A 20 percent chance of showers before 11pm.  Partly cloudy, with a low around 56."
+     "text": "A 30 percent chance of showers before 11pm.  Partly cloudy, with a low around 56."
     }
    ]
   },
@@ -426,7 +438,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -500,46 +512,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 66,
     "cond": "Fair",
-    "obs": "20 Oct 12:51 pm EDT"
+    "obs": "20 Oct 15:51 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a steady temperature around 65. Northeast wind around 13 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. North wind 13 to 15 mph. "
+     "temp": 49,
+     "text": "Clear, with a low around 49. North wind 11 to 14 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63. Northeast wind 13 to 15 mph. "
+     "text": "Sunny, with a high near 63. North wind 14 to 17 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Partly cloudy, with a low around 51. North wind 10 to 14 mph. "
+     "temp": 48,
+     "text": "Partly cloudy, with a low around 48. North wind around 15 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. North wind around 14 mph. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. North wind around 13 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Mostly clear, with a low around 49."
+     "temp": 47,
+     "text": "Clear, with a low around 47. North wind 13 to 18 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 57,
+     "text": "Sunny, with a high near 57."
     }
    ]
   },
@@ -555,9 +567,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Coney Island's 1890s lighthouse may be landmarked",
+    "b": "The Landmarks Preservation Commission voted to hold a hearing on the 70-foot lighthouse, which has guided boats for more than 135 years, and its keeper's house.",
+    "date": "2026-10-20",
+    "publisher": "Gothamist",
+    "title": "Coney Island's small, 1890s lighthouse may be landmarked by the city",
+    "url": "https://gothamist.com/news/coney-islands-small-1890s-lighthouse-may-be-landmarked-by-the-city",
+    "published": "2026-10-20T20:41:00Z",
+    "gathered": "2026-10-20T20:47:25Z"
+   },
    {
     "h": "Free 2-K expands to the Bronx and Staten Island",
     "b": "Every school district in the Bronx and Staten Island will offer free preschool seats for 2-year-olds next fall, as the city adds 10,000 seats.",
@@ -641,7 +663,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "goodnews": []
  },
  {
@@ -650,45 +672,57 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "250,000 in Washington could lose Medicaid",
+    "b": "New Medicaid work requirements for low-income adults start in January, and up to 250,000 Washington residents could lose coverage.",
+    "date": "2026-10-20",
+    "publisher": "KUOW",
+    "title": "Why 250,000 WA residents might lose their Medicaid next year",
+    "url": "https://www.kuow.org/health/2026-10-20/why-250-000-wa-residents-might-lose-their-medicaid-next-year",
+    "published": "2026-10-20T17:41:15Z",
+    "updated": "2026-10-20T17:41:15Z",
+    "gathered": "2026-10-20T20:47:25Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. North wind around 8 mph. "
+     "text": "Sunny, with a high near 61. North wind around 9 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly clear, with a low around 45. North wind around 5 mph becoming calm  in the evening. "
+     "temp": 46,
+     "text": "Clear, with a low around 46. North wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Light and variable wind. "
+     "text": "Sunny, with a high near 65. Calm wind. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Partly cloudy, with a low around 46. North northwest wind around 5 mph becoming northeast in the evening. "
+     "temp": 47,
+     "text": "Mostly cloudy, with a low around 47. Calm wind. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly cloudy, with a high near 58. Northeast wind around 5 mph becoming calm. "
+     "text": "Partly sunny, with a high near 58. Light and variable wind. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "A 40 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 45."
+     "temp": 46,
+     "text": "A 20 percent chance of rain before 11pm.  Mostly cloudy, with a low around 46."
     }
    ]
   },
@@ -704,7 +738,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T19:12:00Z",
+  "updatedAt": "2026-10-20T22:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
