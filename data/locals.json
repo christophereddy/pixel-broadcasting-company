@@ -8,16 +8,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "19 Oct 17:52 pm EDT"
+    "obs": "19 Oct 20:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45. Northeast wind around 5 mph becoming calm. "
+     "text": "Clear, with a low around 45. Calm wind. "
     },
     {
      "name": "Tuesday",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -84,16 +84,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "A Few Clouds",
-    "obs": "19 Oct 17:54 pm EDT"
+    "temp": 48,
+    "cond": "Fair",
+    "obs": "19 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Partly cloudy, with a low around 44. North wind 3 to 5 mph. "
+     "text": "Mostly cloudy, with a low around 44. North wind 3 to 5 mph. "
     },
     {
      "name": "Tuesday",
@@ -139,7 +139,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -150,6 +150,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Early voting opens in all 50 Chicago wards",
+    "b": "Expanded in-person early voting for the Nov. 3 general election began Monday at sites in every ward across the city.",
+    "date": "2026-10-19",
+    "publisher": "WBEZ",
+    "title": "Early voting kicks off in all 50 wards",
+    "url": "https://www.wbez.org/government-politics/elections/2026/10/19/early-voting-general-election-50-wards",
+    "published": "2026-10-19T23:54:13Z",
+    "updated": "2026-10-19T23:54:13Z",
+    "gathered": "2026-10-20T01:15:39Z"
+   },
    {
     "h": "City Colleges reach deal hours before strike",
     "b": "City Colleges of Chicago and its faculty union reached a four-year tentative contract at 3:45 a.m., hours before a strike was set to begin Monday.",
@@ -164,9 +175,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Partly Cloudy",
-    "obs": "19 Oct 16:53 pm CDT"
+    "temp": 58,
+    "cond": "Mostly Cloudy",
+    "obs": "19 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -219,18 +230,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Chicago brewery makes Korea's oldest drink",
     "b": "Yido on the Near West Side brews makgeolli, an unfiltered, naturally fermented rice wine described as creamy, tart and sweet.",
     "date": "2026-10-19",
-    "publisher": "WBEZ",
-    "title": "A new Chicago brewery is making Korea’s oldest alcoholic drink",
     "url": "https://www.wbez.org/food-drink/2026/10/19/yido-makgeolli-brewery-chicago-peter-chung",
-    "published": "2026-10-19T12:28:12Z",
-    "updated": "2026-10-19T13:37:45Z",
     "gathered": "2026-10-19T13:24:19Z"
    }
   ]
@@ -244,16 +251,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 74,
+    "temp": 60,
     "cond": "A Few Clouds",
-    "obs": "19 Oct 15:58 pm MDT"
+    "obs": "19 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46. Northeast wind around 6 mph becoming calm  in the evening. "
+     "text": "Partly cloudy, with a low around 46. North wind around 6 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -299,7 +306,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -353,7 +360,7 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 58,
-     "text": "Showers and possibly a thunderstorm.  Low around 58. Chance of precipitation is 100%."
+     "text": "Showers and possibly a thunderstorm.  Low around 58. South southwest wind 5 to 10 mph becoming east southeast after midnight.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thursday",
@@ -375,7 +382,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -439,16 +446,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "19 Oct 17:51 pm EDT"
+    "obs": "19 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. North wind 6 to 13 mph. "
+     "text": "Mostly clear, with a low around 52. North wind 7 to 13 mph. "
     },
     {
      "name": "Tuesday",
@@ -494,7 +501,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -578,7 +585,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "goodnews": []
  },
  {
@@ -641,7 +648,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-20T01:12:00Z",
+  "updatedAt": "2026-10-20T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T01:12:00Z",
+ "updatedAt": "2026-10-20T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -14,11 +14,11 @@
    "gathered": "2026-10-19T13:24:19Z"
   },
   {
-   "h": "Iran war: Tehran vows 'forceful' response to US",
+   "h": "Iran war: Houthi attacks kill 58 Yemeni recruits",
    "b": "Al Jazeera's live coverage: Iran claims Netanyahu is seeking more war as fighting flares in Yemen.",
    "date": "2026-10-19",
    "publisher": "Al Jazeera",
-   "title": "High-level diplomacy surges as Iran vows ‘forceful’ response if US attacks",
+   "title": "Iran war updates: 58 recruits killed, 200 hurt in Houthi attacks in Yemen",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tehran-says-netanyahu-seeks-more-war-yemen-fighting-flares",
    "gathered": "2026-10-19T00:22:00Z"
   }
@@ -28,8 +28,6 @@
    "h": "Trump launches women's health division at NIH",
    "b": "Trump signed an order creating a women's health division at the NIH and the White House. Melania Trump called it a new standard for women's health.",
    "date": "2026-10-19",
-   "publisher": "Al Jazeera",
-   "title": "Trump signs order launching women’s health division at NIH, White House",
    "url": "https://www.aljazeera.com/news/2026/10/19/trump-signs-order-launching-womens-health-division-at-nih-white-house",
    "gathered": "2026-10-19T22:33:45Z"
   },
@@ -37,8 +35,6 @@
    "h": "Florida issues warrant for Raúl Castro",
    "b": "Florida's attorney general said the warrant stems from charges over Castro's alleged role in the 1996 shootdown of two Brothers to the Rescue aircraft.",
    "date": "2026-10-19",
-   "publisher": "Al Jazeera",
-   "title": "Florida issues arrest warrant for Cuban leader Raul Castro",
    "url": "https://www.aljazeera.com/news/2026/10/19/florida-issues-arrest-warrant-for-cuban-leader-raul-castro",
    "gathered": "2026-10-19T22:33:45Z"
   },
@@ -46,8 +42,6 @@
    "h": "Prosecutors: OpenAI bugging suspect had Saudi backing",
    "b": "US prosecutors say Abdulrahman Alfozan, accused of planting a device in an OpenAI conference room, was in frequent contact with a member of the Saudi royal family.",
    "date": "2026-10-19",
-   "publisher": "Al Jazeera",
-   "title": "Ex-OpenAI employee accused of planting device has Saudi backing: Prosecutor",
    "url": "https://www.aljazeera.com/economy/2026/10/19/ex-openai-employee-accused-of-planting-device-has-saudi-backing-prosecutor",
    "gathered": "2026-10-19T19:12:25Z"
   }
@@ -96,6 +90,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Hegseth meets Netanyahu in unannounced visit",
+   "b": "US Defense Secretary Pete Hegseth met Netanyahu in Israel on Monday, Axios reported, as the Israeli leader faces a knife-edge election.",
+   "date": "2026-10-19",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Hegseth meets Netanyahu in unannounced Israel visit",
+   "url": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit",
+   "gathered": "2026-10-20T01:15:39Z"
+  },
+  {
+   "h": "Exiled Kagame critic found beheaded in Uganda",
+   "b": "Police said the body of Robert Kabera, a former Rwandan army sergeant who turned against President Kagame, was found in a village near Kampala.",
+   "date": "2026-10-19",
+   "place": "Kampala",
+   "tz": "Africa/Kampala",
+   "publisher": "Al Jazeera",
+   "title": "Exiled critic of Rwandan president found beheaded in Uganda",
+   "url": "https://www.aljazeera.com/news/2026/10/20/exiled-critic-of-rwandan-president-found-beheaded-in-uganda",
+   "gathered": "2026-10-20T01:15:39Z"
+  },
   {
    "h": "Drone attacks kill 160 across Sudan",
    "b": "More than 160 people were reported killed in western Sudan since Friday in drone attacks blamed on both the RSF and government forces.",
@@ -218,11 +234,7 @@
    "h": "Kelvin wave raised West Coast sea levels",
    "b": "An ocean Kelvin wave lifted sea levels along the West Coast, and more are coming. The waves can develop along the equator in El Niño years.",
    "date": "2026-10-19",
-   "publisher": "KUOW",
-   "title": "A Kelvin wave raised sea levels on the West Coast. More are coming",
    "url": "https://www.kuow.org/npr-news/2026-10-19/a-kelvin-wave-raised-sea-levels-on-the-west-coast-more-are-coming",
-   "published": "2026-10-19T09:00:00Z",
-   "updated": "2026-10-19T09:11:33Z",
    "gathered": "2026-10-19T11:04:45Z"
   }
  ],
@@ -353,16 +365,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 54,
    "cond": "Fair",
-   "obs": "19 Oct 17:51 pm EDT"
+   "obs": "19 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 52,
-    "text": "Mostly clear, with a low around 52. North wind 6 to 13 mph. "
+    "text": "Mostly clear, with a low around 52. North wind 7 to 13 mph. "
    },
    {
     "name": "Tuesday",
