@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-21T04:12:00Z",
+ "updatedAt": "2026-10-21T07:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -24,6 +24,15 @@
   }
  ],
  "national": [
+  {
+   "h": "Smuggler gets 30 years over deadly Texas truck",
+   "b": "A federal judge sentenced Guatemalan Rigoberto Ramon Miranda-Orozco, 39, to 30 years in prison over a smuggling operation behind one of the deadliest such incidents on the US-Mexico border.",
+   "date": "2026-10-21",
+   "publisher": "Al Jazeera",
+   "title": "US jails Guatemalan man for 30 years over deadly smuggling operation",
+   "url": "https://www.aljazeera.com/news/2026/10/21/us-jails-guatemalan-man-for-30-years-over-deadly-smuggling-operation",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
   {
    "h": "Florida carries out 18th execution of the year",
    "b": "Florida executed a 77-year-old man convicted of the 1986 shooting death of Indian River County sheriff's deputy Richard Raczkoski.",
@@ -50,6 +59,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Some on DOJ \"noncitizen\" list appear US-born",
+   "b": "California and local officials told a court the Justice Department's list of 20,000 \"likely\" noncitizen voters looks unreliable, with some people on it recorded as born in the US.",
+   "date": "2026-10-21",
+   "publisher": "KUOW",
+   "title": "Some on DOJ's 20,000 \"likely\" noncitizen list in Calif. appear to be U.S.-born",
+   "url": "https://www.kuow.org/npr-news/2026-10-20/some-on-dojs-20-000-likely-noncitizen-list-in-calif-appear-to-be-u-s-born",
+   "published": "2026-10-21T02:15:50Z",
+   "updated": "2026-10-21T02:24:04Z",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
   {
    "h": "Vance declines to endorse Netanyahu",
    "b": "\"I'm not getting involved in Israeli elections,\" Vance said while campaigning for North Carolina Senate nominee Michael Whatley.",
@@ -80,13 +100,55 @@
  ],
  "international": [
   {
+   "h": "Italy approves troops, tougher protest penalties",
+   "b": "The Italian cabinet approved sending 500 troops to Milan, a new offence for violent participation in demonstrations, tougher penalties for rioters and financial liability for parents of children who join looting.",
+   "date": "2026-10-21",
+   "place": "Rome",
+   "tz": "Europe/Rome",
+   "publisher": "Al Jazeera",
+   "title": "Italy approves sweeping security measures in response to protests",
+   "url": "https://www.aljazeera.com/news/2026/10/21/italy-approves-sweeping-security-measures-in-response-to-protests",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
+   "h": "Portugal protesters return to cleared camps",
+   "b": "Cost-of-living protesters in Lisbon and Porto moved back into sit-in camps police had cleared, arresting 55 people. They want the government to withdraw a bill easing evictions and ending rent caps on new leases.",
+   "date": "2026-10-21",
+   "place": "Lisbon",
+   "tz": "Europe/Lisbon",
+   "publisher": "Al Jazeera",
+   "title": "Portugal cost-of-living protesters pour back into camps cleared by police",
+   "url": "https://www.aljazeera.com/news/2026/10/21/portugal-cost-of-living-protesters-pour-back-into-camps-cleared-by-police",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
+   "h": "UN experts urge India to stop excessive force",
+   "b": "Independent UN experts called for an impartial investigation into Indian authorities' handling of protests, saying demonstrators were injured and some reported ill-treatment.",
+   "date": "2026-10-21",
+   "place": "New Delhi",
+   "tz": "Asia/Kolkata",
+   "publisher": "Al Jazeera",
+   "title": "UN experts call on India to stop using ‘excessive force’ against protesters",
+   "url": "https://www.aljazeera.com/news/2026/10/21/un-experts-call-on-india-to-stop-using-excessive-force-against-protesters",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
+   "h": "King Charles hosts Oman's sultan on state visit",
+   "b": "Sultan Haitham bin Tariq was welcomed at Windsor Castle and said Oman has chosen diplomacy in a region rife with conflict, as the King praised its peace efforts.",
+   "date": "2026-10-21",
+   "place": "Windsor",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "King Charles welcomes Omani sultan, hails peace efforts in UK state visit",
+   "url": "https://www.aljazeera.com/news/2026/10/21/king-charles-welcomes-omani-sultan-hails-peace-efforts-in-uk-state-visit",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
    "h": "NATO sends more patrol planes to Black Sea",
    "b": "Allies are sending maritime patrol aircraft, radar, drones and intelligence staff to the Black Sea after drone attacks, NATO said.",
    "date": "2026-10-20",
    "place": "Brussels",
    "tz": "Europe/Brussels",
-   "publisher": "Al Jazeera",
-   "title": "NATO to send additional patrol planes to Black Sea after drone attacks",
    "url": "https://www.aljazeera.com/news/2026/10/20/nato-to-send-additional-patrol-planes-to-black-sea-after-drone-attacks",
    "gathered": "2026-10-21T00:01:47Z"
   },
@@ -96,8 +158,6 @@
    "date": "2026-10-20",
    "place": "Abuja",
    "tz": "Africa/Lagos",
-   "publisher": "Al Jazeera",
-   "title": "Nigeria confirms first Ebola case amid concerns about continental spread",
    "url": "https://www.aljazeera.com/news/2026/10/20/kenya-confirms-ninth-ebola-case",
    "gathered": "2026-10-20T20:47:25Z"
   },
@@ -185,11 +245,18 @@
  "science": [],
  "sports": [
   {
+   "h": "LeBron's 76ers debut spoils Knicks' ring night",
+   "b": "The 76ers beat the Knicks 106-100 at Madison Square Garden on the defending champions' banner night. LeBron James had 14 points, nine rebounds and seven assists.",
+   "date": "2026-10-21",
+   "publisher": "CBS Sports",
+   "title": "Grading LeBron James' 76ers debut: The King gets sterling marks as Philly spoils Knicks' title celebration",
+   "url": "https://www.cbssports.com/nba/news/lebron-james-76ers-debut-grades-knicks-banner-rings-nba-opening-night/",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
    "h": "Ohio State QB Julian Sayin out indefinitely",
    "b": "Coach Ryan Day said Sayin may miss the rest of the season, a blow to the No. 3 Buckeyes' title hopes. Luke Fahey and Tavien St. Clair will share first-team snaps.",
    "date": "2026-10-20",
-   "publisher": "CBS Sports",
-   "title": "Ohio State QB Julian Sayin out 'indefinitely' in blow to Buckeyes' CFP, national title hopes",
    "url": "https://www.cbssports.com/college-football/news/ohio-state-qb-julian-sayin-ryan-day-cfp/",
    "gathered": "2026-10-21T01:14:03Z"
   },
@@ -225,6 +292,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Schools chancellor offers no integration plan",
+   "b": "Chancellor Kamar Samuels said the Mamdani administration is committed to integrating NYC public schools but declined to share a specific plan, drawing groans from a frustrated crowd.",
+   "date": "2026-10-21",
+   "publisher": "Gothamist",
+   "title": "Parents grumble as NYC schools chancellor dodges calls for NYC schools integration plan",
+   "url": "https://gothamist.com/news/parents-grumble-as-nyc-schools-chancellor-dodges-calls-for-nyc-schools-integration-plan",
+   "published": "2026-10-21T02:01:01Z",
+   "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
    "h": "Driver found shot after George Washington Bridge crash",
    "b": "Port Authority police found a driver with an apparent gunshot wound to the head after a single-vehicle crash on the bridge Tuesday night.",
    "date": "2026-10-20",
@@ -232,6 +309,7 @@
    "title": "Driver found with apparent gunshot wound on George Washington Bridge, officials say",
    "url": "https://gothamist.com/news/driver-found-with-apparent-gunshot-wound-after-george-washington-bridge-crash-officials-say",
    "published": "2026-10-21T00:54:00Z",
+   "updated": "2026-10-21T01:15:00Z",
    "gathered": "2026-10-21T01:14:03Z"
   },
   {
@@ -247,16 +325,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 55,
    "cond": "Fair",
-   "obs": "20 Oct 20:51 pm EDT"
+   "obs": "21 Oct 00:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 49,
-    "text": "Clear, with a low around 49. North wind 11 to 13 mph, with gusts as high as 26 mph. "
+    "text": "Clear, with a low around 49. North wind around 13 mph, with gusts as high as 24 mph. "
    },
    {
     "name": "Wednesday",
