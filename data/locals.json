@@ -30,9 +30,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 63,
     "cond": "A Few Clouds",
-    "obs": "20 Oct 19:52 pm EDT"
+    "obs": "20 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -85,7 +85,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -122,14 +122,14 @@
    "now": {
     "temp": 52,
     "cond": "Fair",
-    "obs": "20 Oct 19:54 pm EDT"
+    "obs": "20 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Mostly clear, with a low around 45. Northeast wind 7 to 11 mph, with gusts as high as 22 mph. "
+     "text": "Mostly clear, with a low around 45. Northeast wind 8 to 11 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Wednesday",
@@ -175,7 +175,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -225,16 +225,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 58,
     "cond": "Fair",
-    "obs": "20 Oct 18:53 pm CDT"
+    "obs": "20 Oct 19:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Patchy fog after 3am.  Otherwise, mostly clear, with a low around 49. East northeast wind around 5 mph becoming south after midnight. "
+     "text": "Patchy fog after 3am.  Otherwise, mostly clear, with a low around 49. East wind around 5 mph becoming south after midnight. "
     },
     {
      "name": "Wednesday",
@@ -280,7 +280,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -293,9 +293,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 66,
     "cond": "A Few Clouds",
-    "obs": "20 Oct 16:58 pm MDT"
+    "obs": "20 Oct 18:58 pm MDT"
    },
    "periods": [
     {
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -364,10 +364,10 @@
     "b": "After record heat waves, Mayor Bass asked LADWP to pause residential shutoffs for nonpayment through year's end. The utility says it takes effect immediately.",
     "date": "2026-10-20",
     "publisher": "LAist",
-    "title": "LA mayor calls for pause to utility shutoffs after record-breaking heat waves",
+    "title": "Can't pay your LADWP bill? LA mayor announces a pause on utility shutoffs",
     "url": "https://laist.com/news/climate-environment/la-mayor-calls-for-pause-to-dwp-utility-shutoffs",
     "published": "2026-10-20T22:48:19Z",
-    "updated": "2026-10-20T22:48:19Z",
+    "updated": "2026-10-21T00:49:32Z",
     "gathered": "2026-10-21T00:01:47Z"
    },
    {
@@ -446,7 +446,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -457,6 +457,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Driver found shot after George Washington Bridge crash",
+    "b": "Port Authority police found a driver with an apparent gunshot wound to the head after a single-vehicle crash on the bridge Tuesday night.",
+    "date": "2026-10-20",
+    "publisher": "Gothamist",
+    "title": "Driver found with apparent gunshot wound on George Washington Bridge, officials say",
+    "url": "https://gothamist.com/news/driver-found-with-apparent-gunshot-wound-after-george-washington-bridge-crash-officials-say",
+    "published": "2026-10-21T00:54:00Z",
+    "gathered": "2026-10-21T01:14:03Z"
+   },
    {
     "h": "NYC proposes rules for AI customer service bots",
     "b": "A proposed rule would require businesses to disclose AI chatbots and let customers talk to a person instead. The city says it is the first of its kind.",
@@ -470,9 +480,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "20 Oct 19:51 pm EDT"
+    "obs": "20 Oct 20:51 pm EDT"
    },
    "periods": [
     {
@@ -525,7 +535,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -553,7 +563,11 @@
     "h": "Arrest, anti-terror probe over Limoges town hall fire",
     "b": "Police arrested a man believed linked to the ultra-left and called in anti-terror investigators over the fire that collapsed the 1883 town hall's roof and belfry during weekend rioting.",
     "date": "2026-10-20",
+    "publisher": "The Local France",
+    "title": "France arrests suspect and calls in anti-terror police over Limoges town hall fire",
     "url": "https://www.thelocal.fr/20261020/france-arrests-man-and-calls-in-anti-terror-police-over-town-hall-fire",
+    "published": "2026-10-20T10:58:04Z",
+    "updated": "2026-10-20T10:58:06Z",
     "gathered": "2026-10-20T11:56:55Z"
    }
   ],
@@ -573,7 +587,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "goodnews": []
  },
  {
@@ -659,7 +673,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T01:13:00Z",
+  "updatedAt": "2026-10-21T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

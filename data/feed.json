@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-21T01:13:00Z",
+ "updatedAt": "2026-10-21T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -14,16 +14,26 @@
    "gathered": "2026-10-20T13:13:07Z"
   },
   {
-   "h": "Iran war: Tehran warns of region-wide damage",
-   "b": "Al Jazeera's live coverage: Iran warns a new US war would mean 'destruction and damage' across the entire Middle East.",
-   "date": "2026-10-20",
+   "h": "Iran war: US says peace deal \"extremely difficult\"",
+   "b": "Al Jazeera's live coverage: the US says a peace deal with Iran is extremely difficult amid attacks on ships in the Strait of Hormuz.",
+   "date": "2026-10-21",
    "publisher": "Al Jazeera",
-   "title": "Iran warns new US war means ‘destruction and damage’ to entire Middle East",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/20/draft-3",
-   "gathered": "2026-10-20T06:21:49Z"
+   "title": "US says peace deal with Iran extremely difficult amid Hormuz ship attacks",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult",
+   "gathered": "2026-10-21T01:14:03Z"
   }
  ],
  "national": [
+  {
+   "h": "Florida carries out 18th execution of the year",
+   "b": "Florida executed a 77-year-old man convicted of the 1986 shooting death of Indian River County sheriff's deputy Richard Raczkoski.",
+   "date": "2026-10-20",
+   "publisher": "PBS NewsHour",
+   "title": "Florida puts 77-year-old man to death, carrying out its 18th execution of the year",
+   "url": "https://www.pbs.org/newshour/nation/florida-puts-77-year-old-man-to-death-carrying-out-its-18th-execution-of-the-year",
+   "published": "2026-10-21T00:20:44Z",
+   "gathered": "2026-10-21T01:14:03Z"
+  },
   {
    "h": "TikTok staff raised child safety alarms, records show",
    "b": "Court depositions show TikTok employees repeatedly warned about risks to children, including sexual exploitation and suicide content, and were frustrated by leadership's response.",
@@ -97,8 +107,6 @@
    "date": "2026-10-20",
    "place": "Taiz",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "More than 250,000 displaced in Yemen since fighting escalated: UNHCR",
    "url": "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr",
    "gathered": "2026-10-20T17:26:05Z"
   },
@@ -177,6 +185,15 @@
  "science": [],
  "sports": [
   {
+   "h": "Ohio State QB Julian Sayin out indefinitely",
+   "b": "Coach Ryan Day said Sayin may miss the rest of the season, a blow to the No. 3 Buckeyes' title hopes. Luke Fahey and Tavien St. Clair will share first-team snaps.",
+   "date": "2026-10-20",
+   "publisher": "CBS Sports",
+   "title": "Ohio State QB Julian Sayin out 'indefinitely' in blow to Buckeyes' CFP, national title hopes",
+   "url": "https://www.cbssports.com/college-football/news/ohio-state-qb-julian-sayin-ryan-day-cfp/",
+   "gathered": "2026-10-21T01:14:03Z"
+  },
+  {
    "h": "Commanders' Terry McLaurin out for season",
    "b": "The wide receiver hurt his knee in the first quarter of Monday night's loss to the 49ers, and tests on Tuesday confirmed a season-ending injury.",
    "date": "2026-10-20",
@@ -208,6 +225,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Driver found shot after George Washington Bridge crash",
+   "b": "Port Authority police found a driver with an apparent gunshot wound to the head after a single-vehicle crash on the bridge Tuesday night.",
+   "date": "2026-10-20",
+   "publisher": "Gothamist",
+   "title": "Driver found with apparent gunshot wound on George Washington Bridge, officials say",
+   "url": "https://gothamist.com/news/driver-found-with-apparent-gunshot-wound-after-george-washington-bridge-crash-officials-say",
+   "published": "2026-10-21T00:54:00Z",
+   "gathered": "2026-10-21T01:14:03Z"
+  },
+  {
    "h": "NYC proposes rules for AI customer service bots",
    "b": "A proposed rule would require businesses to disclose AI chatbots and let customers talk to a person instead. The city says it is the first of its kind.",
    "date": "2026-10-20",
@@ -220,9 +247,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 62,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "20 Oct 19:51 pm EDT"
+   "obs": "20 Oct 20:51 pm EDT"
   },
   "periods": [
    {
