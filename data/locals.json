@@ -7,6 +7,28 @@
   },
   "local": [
    {
+    "h": "Ballot measure would create fund for 911 upgrades",
+    "b": "A proposed constitutional amendment would create a dedicated fund lawmakers could use to modernize Georgia's 911 system, though it would not allocate any money itself.",
+    "date": "2026-10-21",
+    "publisher": "WABE",
+    "title": "Ballot amendment would pave the way for dedicated funding to upgrade Georgia’s 911 system",
+    "url": "https://www.wabe.org/ballot-amendment-would-pave-the-way-for-dedicated-funding-to-upgrade-georgias-911-system/",
+    "published": "2026-10-21T14:16:27Z",
+    "updated": "2026-10-21T14:16:33Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
+    "h": "Georgia tackles rural maternal health crisis",
+    "b": "With labor and delivery units closing in rural Georgia, some expectant mothers face long drives to give birth.",
+    "date": "2026-10-21",
+    "publisher": "WABE",
+    "title": "Georgia gears up to solve rural maternal health crisis",
+    "url": "https://www.wabe.org/new-arrivals-in-the-er-georgia-gears-up-to-solve-rural-maternal-health-crisis/",
+    "published": "2026-10-21T14:43:35Z",
+    "updated": "2026-10-21T14:46:56Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
     "h": "Georgia daycares keep high ratings despite violations",
     "b": "An AJC investigation found daycares where children were hurt or put at risk kept or improved their state quality ratings, and some still get taxpayer funding.",
     "date": "2026-10-20",
@@ -25,21 +47,22 @@
     "title": "'Hot potato-ing a building': Atlanta City Council advances jail sale despite pushback",
     "url": "https://www.wabe.org/hot-potato-ing-a-building-atlanta-city-council-advances-jail-sale-despite-pushback/",
     "published": "2026-10-20T21:04:37Z",
+    "updated": "2026-10-21T13:58:30Z",
     "gathered": "2026-10-21T00:01:47Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "A Few Clouds",
-    "obs": "21 Oct 05:52 am EDT"
+    "temp": 64,
+    "cond": "Fair",
+    "obs": "21 Oct 10:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. Calm wind becoming east around 5 mph. "
+     "text": "Sunny, with a high near 75. East wind around 5 mph becoming calm  in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -85,7 +108,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -118,16 +141,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "obs": "21 Oct 05:54 am EDT"
+    "temp": 52,
+    "cond": "Mostly Cloudy",
+    "obs": "21 Oct 10:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 52,
-     "text": "Mostly cloudy, with a high near 52. Northeast wind 11 to 15 mph, with gusts as high as 26 mph. "
+     "text": "Mostly cloudy, with a high near 52. Northeast wind around 15 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Tonight",
@@ -173,7 +196,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -184,6 +207,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Johnson budget would reopen mental health clinic",
+    "b": "Mayor Brandon Johnson's 2027 budget would reopen a city mental health clinic and spend $5 million to make the CARE crisis response program permanent.",
+    "date": "2026-10-21",
+    "publisher": "WBEZ",
+    "title": "Mayor Johnson budget seeks to reopen city mental health clinic next year",
+    "url": "https://www.wbez.org/health-medicine/2026/10/21/mayor-johnson-budget-seeks-to-reopen-city-mental-health-clinic-next-year",
+    "published": "2026-10-21T10:30:00Z",
+    "updated": "2026-10-21T10:30:05Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
+    "h": "Fearing ICE, some immigrants shift life to night",
+    "b": "Some Chicago immigrants now wait until nighttime to do laundry, shop and work to avoid immigration enforcement.",
+    "date": "2026-10-21",
+    "publisher": "WBEZ",
+    "title": "Fearing ICE, some Chicago immigrants shift work, daily life to nighttime hours",
+    "url": "https://www.wbez.org/immigration/2026/10/21/fearing-ice-some-chicago-immigrants-shift-work-daily-life-to-nighttime-hours",
+    "published": "2026-10-21T10:35:00Z",
+    "updated": "2026-10-21T10:35:00Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
    {
     "h": "What a stressed grid means for Illinois customers",
     "b": "WBEZ's Curious City looks at the strain on Illinois' electric grid and what it could mean for consumers.",
@@ -210,11 +255,7 @@
     "h": "SEIU backs Giannoulias in Chicago mayor's race",
     "b": "SEIU Locals 1 and 73, which gave over $4.5 million to Mayor Johnson's 2023 campaign, endorsed Secretary of State Alexi Giannoulias.",
     "date": "2026-10-20",
-    "publisher": "WBEZ",
-    "title": "Feud between progressive unions that put Mayor Johnson in office yields Giannoulias key endorsement",
     "url": "https://www.wbez.org/government-politics/elections/2026/10/20/seiu-endorses-alexi-giannoulias-mayoral-race-brandon-johnson",
-    "published": "2026-10-20T15:12:08Z",
-    "updated": "2026-10-20T15:12:08Z",
     "gathered": "2026-10-20T17:26:05Z"
    },
    {
@@ -234,22 +275,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 59,
     "cond": "Fair",
-    "obs": "21 Oct 04:53 am CDT"
+    "obs": "21 Oct 09:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Patchy dense fog before 8am.  Otherwise, sunny, with a high near 69. South wind 5 to 10 mph becoming east in the afternoon. "
+     "text": "Sunny, with a high near 69. South wind 5 to 10 mph becoming east southeast in the afternoon. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. East wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 52. East southeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Thursday",
@@ -289,7 +330,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -303,8 +344,8 @@
   "weather": {
    "now": {
     "temp": 49,
-    "cond": "Fair",
-    "obs": "21 Oct 03:58 am MDT"
+    "cond": "Partly Cloudy",
+    "obs": "21 Oct 07:58 am MDT"
    },
    "periods": [
     {
@@ -357,7 +398,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -368,6 +409,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Experts: don't panic over DOJ voter fraud suit",
+    "b": "Election experts told LAist the federal lawsuit seeking to remove alleged noncitizens from California's rolls is unlikely to succeed and voters should fill out ballots as normal.",
+    "date": "2026-10-21",
+    "publisher": "LAist",
+    "title": "Feds are suing California over voter fraud allegations. Experts tell voters: Don’t freak out",
+    "url": "https://laist.com/news/politics/voter-fraud-allegations-explained",
+    "published": "2026-10-21T12:00:00Z",
+    "updated": "2026-10-21T12:00:00Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
    {
     "h": "Bass seeks pause on DWP shutoffs through 2026",
     "b": "After record heat waves, Mayor Bass asked LADWP to pause residential shutoffs for nonpayment through year's end. The utility says it takes effect immediately.",
@@ -398,7 +450,6 @@
     "title": "Emergency manager sues LA County, alleging retaliation over Eaton Fire whistleblower complaints",
     "url": "https://laist.com/news/climate-environment/emergency-manager-sues-la-county-alleging-retaliation-eaton-fire",
     "published": "2026-10-20T12:00:00Z",
-    "updated": "2026-10-20T17:55:24Z",
     "gathered": "2026-10-20T13:13:07Z"
    }
   ],
@@ -406,13 +457,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Showers likely, mainly after 11am.  Mostly cloudy, with a high near 72. East southeast wind 5 to 10 mph becoming south southwest in the afternoon.  Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Showers likely, mainly after 11am.  Mostly cloudy, with a high near 72. South southwest wind 5 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Showers, with thunderstorms also possible after 11pm.  Low around 59. South wind 5 to 15 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
@@ -433,7 +484,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 73,
-     "text": "Sunny, with a high near 73."
+     "text": "Sunny, with a high near 73. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
@@ -455,7 +506,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -467,6 +518,37 @@
   },
   "local": [
    {
+    "h": "Brad Lander freed after West Bank detention",
+    "b": "Brad Lander, Democratic nominee for NY-10, said Israeli forces detained him while he helped Palestinian farmers pick olives, then released him Wednesday morning.",
+    "date": "2026-10-21",
+    "publisher": "Gothamist",
+    "title": "Brad Lander says he's released after Israeli forces detained him during olive harvest",
+    "url": "https://gothamist.com/news/brad-lander-says-israeli-forces-detained-him-during-a-west-bank-olive-harvest",
+    "published": "2026-10-21T12:24:00Z",
+    "updated": "2026-10-21T13:54:00Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
+    "h": "3,000 families get childcare vouchers off waitlist",
+    "b": "The Mamdani administration is notifying 3,000 families that they can get subsidized childcare vouchers. Nearly 30,000 are on the waitlist.",
+    "date": "2026-10-21",
+    "publisher": "Gothamist",
+    "title": "NYC’s subsidized childcare waitlist is moving, starting with 3K families",
+    "url": "https://gothamist.com/news/nycs-subsidized-childcare-waitlist-is-moving-starting-with-3k-families",
+    "published": "2026-10-21T15:00:56Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
+    "h": "Musk spends $500K to re-elect Rep. Mike Lawler",
+    "b": "Elon Musk has spent more than $500,000 backing Lawler in his competitive Hudson Valley race against Democrat Cait Conley.",
+    "date": "2026-10-21",
+    "publisher": "Gothamist",
+    "title": "Elon Musk drops $500K on NY Rep. Mike Lawler's re-election bid",
+    "url": "https://gothamist.com/news/elon-musk-drops-500k-on-ny-rep-mike-lawlers-reelection-bid",
+    "published": "2026-10-21T14:21:00Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
     "h": "Schools chancellor offers no integration plan",
     "b": "Chancellor Kamar Samuels said the Mamdani administration is committed to integrating NYC public schools but declined to share a specific plan, drawing groans from a frustrated crowd.",
     "date": "2026-10-21",
@@ -477,15 +559,14 @@
     "gathered": "2026-10-21T05:08:55Z"
    },
    {
-    "h": "Driver found shot after George Washington Bridge crash",
-    "b": "Port Authority police found a driver with an apparent gunshot wound to the head after a single-vehicle crash on the bridge Tuesday night.",
-    "date": "2026-10-20",
+    "h": "GWB shooting victim dies; no arrests yet",
+    "b": "A 46-year-old man shot while driving on the George Washington Bridge has died. Police say it appears to stem from road rage and no arrests have been made. All lanes reopened Wednesday.",
+    "date": "2026-10-21",
     "publisher": "Gothamist",
-    "title": "Driver found with apparent gunshot wound on George Washington Bridge, officials say",
-    "url": "https://gothamist.com/news/driver-found-with-apparent-gunshot-wound-after-george-washington-bridge-crash-officials-say",
-    "published": "2026-10-21T00:54:00Z",
-    "updated": "2026-10-21T01:15:00Z",
-    "gathered": "2026-10-21T01:14:03Z"
+    "title": "George Washington Bridge reopens after fatal shooting; no arrests made",
+    "url": "https://gothamist.com/news/george-washington-bridge-reopens-after-fatal-shooting-no-arrests-made",
+    "published": "2026-10-21T12:07:00Z",
+    "gathered": "2026-10-21T15:29:44Z"
    },
    {
     "h": "NYC proposes rules for AI customer service bots",
@@ -500,16 +581,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "21 Oct 05:51 am EDT"
+    "obs": "21 Oct 10:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 61,
-     "text": "Mostly sunny, with a high near 61. Northeast wind 15 to 17 mph, with gusts as high as 29 mph. "
+     "temp": 64,
+     "text": "Mostly sunny, with a high near 64. Northeast wind 16 to 18 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Tonight",
@@ -555,7 +636,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -565,8 +646,7 @@
     "publisher": "Gothamist",
     "title": "Coney Island's small, 1890s lighthouse may be landmarked by the city",
     "url": "https://gothamist.com/news/coney-islands-small-1890s-lighthouse-may-be-landmarked-by-the-city",
-    "published": "2026-10-20T20:41:00Z",
-    "updated": "2026-10-20T21:47:00Z",
+    "published": "2026-10-20T21:47:00Z",
     "gathered": "2026-10-20T20:47:25Z"
    }
   ]
@@ -579,6 +659,28 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "French government websites down after hacking alert",
+    "b": "Tax and préfecture websites went down and Météo France took its sites offline after a critical vulnerability was found in the PHP programming language.",
+    "date": "2026-10-21",
+    "publisher": "The Local France",
+    "title": "French government websites down after hacking alert",
+    "url": "https://www.thelocal.fr/20261021/french-government-websites-down-after-hacking-alert",
+    "published": "2026-10-21T15:08:22Z",
+    "updated": "2026-10-21T15:08:23Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
+   {
+    "h": "Orange hit by nationwide phone and internet outage",
+    "b": "Orange said a nationwide incident was severely disrupting calls, texts and mobile internet, with thousands of reports logged by midday.",
+    "date": "2026-10-21",
+    "publisher": "The Local France",
+    "title": "France's Orange network hit by phone and internet outage",
+    "url": "https://www.thelocal.fr/20261021/frances-orange-network-hit-by-phone-and-internet-outage",
+    "published": "2026-10-21T12:51:40Z",
+    "updated": "2026-10-21T12:51:41Z",
+    "gathered": "2026-10-21T15:29:44Z"
+   },
    {
     "h": "Arrest, anti-terror probe over Limoges town hall fire",
     "b": "Police arrested a man believed linked to the ultra-left and called in anti-terror investigators over the fire that collapsed the 1883 town hall's roof and belfry during weekend rioting.",
@@ -603,7 +705,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "goodnews": []
  },
  {
@@ -639,13 +741,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
      "text": "Sunny, with a high near 64. Light and variable wind. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 47,
      "text": "Partly cloudy, with a low around 47. Northeast wind 3 to 5 mph. "
@@ -666,7 +768,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 56,
-     "text": "Partly sunny, with a high near 56."
+     "text": "Partly sunny, with a high near 56. Light and variable wind. "
     },
     {
      "name": "Friday Night",
@@ -688,7 +790,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T13:18:00Z",
+  "updatedAt": "2026-10-21T16:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

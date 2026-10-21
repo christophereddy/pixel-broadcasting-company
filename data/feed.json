@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-21T13:18:00Z",
+ "updatedAt": "2026-10-21T16:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -14,11 +14,11 @@
    "gathered": "2026-10-20T13:13:07Z"
   },
   {
-   "h": "Iran war: US says peace deal \"extremely difficult\"",
-   "b": "Al Jazeera's live coverage: the US says a peace deal with Iran is extremely difficult amid attacks on ships in the Strait of Hormuz.",
+   "h": "Iran war: Araghchi says Iran ready to defend itself",
+   "b": "Al Jazeera's live coverage: Iranian Foreign Minister Abbas Araghchi says Iran favors diplomacy but is \"fully prepared to defend ourselves.\"",
    "date": "2026-10-21",
    "publisher": "Al Jazeera",
-   "title": "US says peace deal with Iran extremely difficult amid Hormuz ship attacks",
+   "title": "Araghchi says Iran for diplomacy but ‘fully prepared to defend ourselves’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult",
    "gathered": "2026-10-21T01:14:03Z"
   }
@@ -54,7 +54,7 @@
    "title": "Town Leaders Chided Residents for Warning of Flash Floods. Then, the River Took Two Children.",
    "url": "https://www.propublica.org/article/wildfire-flood-risk-ruidoso-new-mexico",
    "published": "2026-10-21T10:00:00Z",
-   "updated": "2026-10-21T10:00:04Z",
+   "updated": "2026-10-21T15:13:41Z",
    "gathered": "2026-10-21T10:27:29Z"
   },
   {
@@ -127,15 +127,40 @@
  ],
  "international": [
   {
-   "h": "Witkoff in Russia for Putin talks on Ukraine",
-   "b": "US envoy Steve Witkoff began talks with Vladimir Putin in Saint Petersburg on ending the Ukraine war, after \"positive\" talks with Zelenskyy in Norway.",
+   "h": "Israel detains about 80 at West Bank olive harvest",
+   "b": "Israeli forces detained about 80 American and Israeli rabbis and activists helping Palestinians harvest olives near Nahalin, including US congressional nominee Brad Lander, who was later released.",
+   "date": "2026-10-21",
+   "place": "Nahalin",
+   "tz": "Asia/Hebron",
+   "publisher": "KUOW",
+   "title": "Israel detains dozens of Americans, including a congressional candidate, in West Bank",
+   "url": "https://www.kuow.org/npr-news/2026-10-21/israel-detains-dozens-of-americans-including-a-congressional-candidate-in-west-bank",
+   "published": "2026-10-21T13:28:04Z",
+   "updated": "2026-10-21T13:45:36Z",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
+  {
+   "h": "UK approves Jackdaw gas field in North Sea",
+   "b": "The UK government approved the Jackdaw gas project east of Aberdeen, saying it would raise UK gas production by about 6% at its peak and boost energy security.",
+   "date": "2026-10-21",
+   "place": "London",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK approves development of Jackdaw gasfield in North Sea",
+   "url": "https://www.aljazeera.com/news/2026/10/21/uk-approves-development-of-jackdaw-gasfield-in-north-sea",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
+  {
+   "h": "Putin agrees to resume Ukraine talks with US",
+   "b": "After meeting US envoy Steve Witkoff in Saint Petersburg, Putin agreed in principle to resume trilateral talks with Washington and Kyiv after Nov. 10, a Kremlin adviser said.",
    "date": "2026-10-21",
    "place": "Saint Petersburg",
    "tz": "Europe/Moscow",
-   "publisher": "Al Jazeera",
-   "title": "Witkoff in Russia for Putin meeting after ‘positive’ talks with Zelenskyy",
-   "url": "https://www.aljazeera.com/news/2026/10/21/witkoff-in-russia-for-putin-meeting-after-positive-talks-with-zelenskyy",
-   "gathered": "2026-10-21T10:27:29Z"
+   "publisher": "PBS NewsHour",
+   "title": "Putin agrees to resume trilateral Russia-Ukraine-U.S. talks next month",
+   "url": "https://www.pbs.org/newshour/world/putin-agrees-to-resume-trilateral-russia-ukraine-u-s-talks-next-month",
+   "published": "2026-10-21T13:56:19Z",
+   "gathered": "2026-10-21T15:29:44Z"
   },
   {
    "h": "Drone attack kills at least 153 in Abyei",
@@ -143,8 +168,6 @@
    "date": "2026-10-21",
    "place": "Abyei",
    "tz": "Africa/Juba",
-   "publisher": "Al Jazeera",
-   "title": "Drone attack in disputed Sudan-South Sudan border region kills at least 153",
    "url": "https://www.aljazeera.com/news/2026/10/21/drone-attack-in-disputed-sudan-south-sudan-border-region-kills-at-least-153",
    "gathered": "2026-10-21T10:27:29Z"
   },
@@ -187,11 +210,7 @@
    "date": "2026-10-21",
    "place": "Oslo",
    "tz": "Europe/Oslo",
-   "publisher": "KUOW",
-   "title": "Zelenskyy says early warning system for Russian missile attacks resumes",
    "url": "https://www.kuow.org/npr-news/2026-10-20/zelenskyy-says-early-warning-system-for-russian-missile-attacks-resumes",
-   "published": "2026-10-21T05:43:24Z",
-   "updated": "2026-10-21T05:49:34Z",
    "gathered": "2026-10-21T07:15:07Z"
   },
   {
@@ -290,13 +309,20 @@
    "date": "2026-10-21",
    "place": "Wangaratta",
    "tz": "Australia/Melbourne",
-   "publisher": "Al Jazeera",
-   "title": "Australian MP loses both legs in vehicle attack as suspect appears in court",
    "url": "https://www.aljazeera.com/news/2026/10/21/australian-mp-loses-both-legs-in-vehicle-attack-as-suspect-appears-in-court",
    "gathered": "2026-10-21T10:27:29Z"
   }
  ],
  "business": [
+  {
+   "h": "Midterms could be costliest election ever",
+   "b": "Midterm election spending could be the most expensive in history, with campaigns saving ad money for a final push in the last weeks before the vote.",
+   "date": "2026-10-21",
+   "publisher": "Marketplace",
+   "title": "Midterm election spending could be the most expensive in history",
+   "url": "https://www.marketplace.org/story/2026/10/21/midterm-election-spending-could-be-the-most-expensive-in-history",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
   {
    "h": "Anthropic posts $80bn first-half loss: WSJ",
    "b": "The Wall Street Journal reported Anthropic lost $80bn in the first half of 2026, mostly from $72bn in accounting charges tied to convertible notes, ahead of an expected IPO.",
@@ -345,15 +371,20 @@
    "h": "UN report: US climate pollution rose sharply",
    "b": "A UN report finds the US was the only major economy whose planet-warming emissions rose dramatically last year, tying Russia for the highest per-capita emissions in the G20. Global emissions were roughly flat.",
    "date": "2026-10-21",
-   "publisher": "KUOW",
-   "title": "United Nations report highlights significant increase in U.S. climate pollution",
    "url": "https://www.kuow.org/npr-news/2026-10-20/united-nations-report-highlights-significant-increase-in-u-s-climate-pollution",
-   "published": "2026-10-21T05:00:00Z",
-   "updated": "2026-10-21T05:16:04Z",
    "gathered": "2026-10-21T07:15:07Z"
   }
  ],
  "sports": [
+  {
+   "h": "Brewers address 'Timeless Ticket' World Series mix-up",
+   "b": "The Brewers said they erred in handling fans cashing in $1,000 Timeless Tickets for World Series seats, after some were unhappy with their seat locations.",
+   "date": "2026-10-21",
+   "publisher": "CBS Sports",
+   "title": "Brewers address $1,000 'Timeless Ticket' debacle as fans try to cash in for World Series",
+   "url": "https://www.cbssports.com/mlb/news/brewers-world-series-timeless-ticket/",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
   {
    "h": "LeBron's 76ers debut spoils Knicks' ring night",
    "b": "The 76ers beat the Knicks 106-100 at Madison Square Garden on the defending champions' banner night. LeBron James had 14 points, nine rebounds and seven assists.",
@@ -400,6 +431,37 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Brad Lander freed after West Bank detention",
+   "b": "Brad Lander, Democratic nominee for NY-10, said Israeli forces detained him while he helped Palestinian farmers pick olives, then released him Wednesday morning.",
+   "date": "2026-10-21",
+   "publisher": "Gothamist",
+   "title": "Brad Lander says he's released after Israeli forces detained him during olive harvest",
+   "url": "https://gothamist.com/news/brad-lander-says-israeli-forces-detained-him-during-a-west-bank-olive-harvest",
+   "published": "2026-10-21T12:24:00Z",
+   "updated": "2026-10-21T13:54:00Z",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
+  {
+   "h": "3,000 families get childcare vouchers off waitlist",
+   "b": "The Mamdani administration is notifying 3,000 families that they can get subsidized childcare vouchers. Nearly 30,000 are on the waitlist.",
+   "date": "2026-10-21",
+   "publisher": "Gothamist",
+   "title": "NYC’s subsidized childcare waitlist is moving, starting with 3K families",
+   "url": "https://gothamist.com/news/nycs-subsidized-childcare-waitlist-is-moving-starting-with-3k-families",
+   "published": "2026-10-21T15:00:56Z",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
+  {
+   "h": "Musk spends $500K to re-elect Rep. Mike Lawler",
+   "b": "Elon Musk has spent more than $500,000 backing Lawler in his competitive Hudson Valley race against Democrat Cait Conley.",
+   "date": "2026-10-21",
+   "publisher": "Gothamist",
+   "title": "Elon Musk drops $500K on NY Rep. Mike Lawler's re-election bid",
+   "url": "https://gothamist.com/news/elon-musk-drops-500k-on-ny-rep-mike-lawlers-reelection-bid",
+   "published": "2026-10-21T14:21:00Z",
+   "gathered": "2026-10-21T15:29:44Z"
+  },
+  {
    "h": "Schools chancellor offers no integration plan",
    "b": "Chancellor Kamar Samuels said the Mamdani administration is committed to integrating NYC public schools but declined to share a specific plan, drawing groans from a frustrated crowd.",
    "date": "2026-10-21",
@@ -410,15 +472,14 @@
    "gathered": "2026-10-21T05:08:55Z"
   },
   {
-   "h": "Driver found shot after George Washington Bridge crash",
-   "b": "Port Authority police found a driver with an apparent gunshot wound to the head after a single-vehicle crash on the bridge Tuesday night.",
-   "date": "2026-10-20",
+   "h": "GWB shooting victim dies; no arrests yet",
+   "b": "A 46-year-old man shot while driving on the George Washington Bridge has died. Police say it appears to stem from road rage and no arrests have been made. All lanes reopened Wednesday.",
+   "date": "2026-10-21",
    "publisher": "Gothamist",
-   "title": "Driver found with apparent gunshot wound on George Washington Bridge, officials say",
-   "url": "https://gothamist.com/news/driver-found-with-apparent-gunshot-wound-after-george-washington-bridge-crash-officials-say",
-   "published": "2026-10-21T00:54:00Z",
-   "updated": "2026-10-21T01:15:00Z",
-   "gathered": "2026-10-21T01:14:03Z"
+   "title": "George Washington Bridge reopens after fatal shooting; no arrests made",
+   "url": "https://gothamist.com/news/george-washington-bridge-reopens-after-fatal-shooting-no-arrests-made",
+   "published": "2026-10-21T12:07:00Z",
+   "gathered": "2026-10-21T15:29:44Z"
   },
   {
    "h": "NYC proposes rules for AI customer service bots",
@@ -433,16 +494,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 54,
    "cond": "Fair",
-   "obs": "21 Oct 05:51 am EDT"
+   "obs": "21 Oct 10:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
-    "temp": 61,
-    "text": "Mostly sunny, with a high near 61. Northeast wind 15 to 17 mph, with gusts as high as 29 mph. "
+    "temp": 64,
+    "text": "Mostly sunny, with a high near 64. Northeast wind 16 to 18 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Tonight",
@@ -484,8 +545,7 @@
    "publisher": "Gothamist",
    "title": "Coney Island's small, 1890s lighthouse may be landmarked by the city",
    "url": "https://gothamist.com/news/coney-islands-small-1890s-lighthouse-may-be-landmarked-by-the-city",
-   "published": "2026-10-20T20:41:00Z",
-   "updated": "2026-10-20T21:47:00Z",
+   "published": "2026-10-20T21:47:00Z",
    "gathered": "2026-10-20T20:47:25Z"
   }
  ],
