@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-21T07:14:00Z",
+ "updatedAt": "2026-10-21T10:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -99,6 +99,19 @@
   }
  ],
  "international": [
+  {
+   "h": "Zelenskyy: US missile warnings have resumed",
+   "b": "Ukraine is again receiving early warnings of Russian ballistic missile attacks after talks with US officials including Secretary of State Marco Rubio, Zelenskyy said on a visit to Norway.",
+   "date": "2026-10-21",
+   "place": "Oslo",
+   "tz": "Europe/Oslo",
+   "publisher": "KUOW",
+   "title": "Zelenskyy says early warning system for Russian missile attacks resumes",
+   "url": "https://www.kuow.org/npr-news/2026-10-20/zelenskyy-says-early-warning-system-for-russian-missile-attacks-resumes",
+   "published": "2026-10-21T05:43:24Z",
+   "updated": "2026-10-21T05:49:34Z",
+   "gathered": "2026-10-21T07:15:07Z"
+  },
   {
    "h": "Italy approves troops, tougher protest penalties",
    "b": "The Italian cabinet approved sending 500 troops to Milan, a new offence for violent participation in demonstrations, tougher penalties for rioters and financial liability for parents of children who join looting.",
@@ -242,14 +255,24 @@
    "gathered": "2026-10-20T06:21:49Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "UN report: US climate pollution rose sharply",
+   "b": "A UN report finds the US was the only major economy whose planet-warming emissions rose dramatically last year, tying Russia for the highest per-capita emissions in the G20. Global emissions were roughly flat.",
+   "date": "2026-10-21",
+   "publisher": "KUOW",
+   "title": "United Nations report highlights significant increase in U.S. climate pollution",
+   "url": "https://www.kuow.org/npr-news/2026-10-20/united-nations-report-highlights-significant-increase-in-u-s-climate-pollution",
+   "published": "2026-10-21T05:00:00Z",
+   "updated": "2026-10-21T05:16:04Z",
+   "gathered": "2026-10-21T07:15:07Z"
+  }
+ ],
  "sports": [
   {
    "h": "LeBron's 76ers debut spoils Knicks' ring night",
    "b": "The 76ers beat the Knicks 106-100 at Madison Square Garden on the defending champions' banner night. LeBron James had 14 points, nine rebounds and seven assists.",
    "date": "2026-10-21",
-   "publisher": "CBS Sports",
-   "title": "Grading LeBron James' 76ers debut: The King gets sterling marks as Philly spoils Knicks' title celebration",
    "url": "https://www.cbssports.com/nba/news/lebron-james-76ers-debut-grades-knicks-banner-rings-nba-opening-night/",
    "gathered": "2026-10-21T05:08:55Z"
   },
@@ -325,46 +348,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "21 Oct 00:51 am EDT"
+   "obs": "21 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 49,
-    "text": "Clear, with a low around 49. North wind around 13 mph, with gusts as high as 24 mph. "
-   },
-   {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 63,
-    "text": "Sunny, with a high near 63. North wind 14 to 17 mph, with gusts as high as 29 mph. "
+    "temp": 61,
+    "text": "Mostly sunny, with a high near 61. Northeast wind 15 to 17 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Partly cloudy, with a low around 48. North wind around 15 mph. "
+    "temp": 51,
+    "text": "Mostly cloudy, with a low around 51. North wind 13 to 16 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 65,
-    "text": "Sunny, with a high near 65. North wind around 13 mph. "
+    "temp": 64,
+    "text": "Sunny, with a high near 64. North wind 16 to 18 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 47,
-    "text": "Clear, with a low around 47. North wind 13 to 18 mph. "
+    "temp": 48,
+    "text": "Mostly clear, with a low around 48. Breezy, with a north wind 9 to 14 mph increasing to 15 to 20 mph after midnight. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 57,
     "text": "Sunny, with a high near 57."
+   },
+   {
+    "name": "Friday Night",
+    "kind": "low",
+    "temp": 45,
+    "text": "Mostly clear, with a low around 45."
    }
   ]
  },
