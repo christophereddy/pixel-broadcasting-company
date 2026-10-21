@@ -53,16 +53,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 67,
     "cond": "Fair",
-    "obs": "21 Oct 10:52 am EDT"
+    "obs": "21 Oct 11:52 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. East wind around 5 mph becoming calm  in the afternoon. "
+     "text": "Sunny, with a high near 75. East wind around 5 mph becoming calm. "
     },
     {
      "name": "Tonight",
@@ -108,7 +108,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -143,11 +143,11 @@
    "now": {
     "temp": 52,
     "cond": "Mostly Cloudy",
-    "obs": "21 Oct 10:54 am EDT"
+    "obs": "21 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 52,
      "text": "Mostly cloudy, with a high near 52. Northeast wind around 15 mph, with gusts as high as 26 mph. "
@@ -196,7 +196,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -207,6 +207,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Stratton, Tracy clash in only Senate debate",
+    "b": "Democrat Juliana Stratton and Republican Don Tracy split on the minimum wage, immigration and tariffs in their only debate for Dick Durbin's Senate seat.",
+    "date": "2026-10-21",
+    "publisher": "WBEZ",
+    "title": "Key takeaways from the only Senate debate between Juliana Stratton and Don Tracy",
+    "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
+    "published": "2026-10-21T15:39:33Z",
+    "updated": "2026-10-21T15:39:33Z",
+    "gathered": "2026-10-21T16:14:38Z"
+   },
    {
     "h": "Johnson budget would reopen mental health clinic",
     "b": "Mayor Brandon Johnson's 2027 budget would reopen a city mental health clinic and spend $5 million to make the CARE crisis response program permanent.",
@@ -275,16 +286,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "21 Oct 09:53 am CDT"
+    "obs": "21 Oct 10:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. South wind 5 to 10 mph becoming east southeast in the afternoon. "
+     "text": "Sunny, with a high near 69. South southwest wind 5 to 10 mph becoming east southeast in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -330,7 +341,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -340,12 +351,24 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Audit: marijuana regulators missed contamination",
+    "b": "A state audit found Colorado's Marijuana Enforcement Division missed inspections and delayed public warnings, letting potentially contaminated products stay on shelves for months.",
+    "date": "2026-10-21",
+    "publisher": "ProPublica",
+    "title": "Colorado Marijuana Regulators Failed to Protect Consumers From Potential Contamination, Audit Finds",
+    "url": "https://www.propublica.org/article/colorado-marijuana-enforcement-division-audit-findings",
+    "published": "2026-10-21T15:35:00Z",
+    "updated": "2026-10-21T15:35:14Z",
+    "gathered": "2026-10-21T16:14:38Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 62,
     "cond": "Partly Cloudy",
-    "obs": "21 Oct 07:58 am MDT"
+    "obs": "21 Oct 09:58 am MDT"
    },
    "periods": [
     {
@@ -398,7 +421,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -506,7 +529,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -581,16 +604,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "21 Oct 10:51 am EDT"
+    "obs": "21 Oct 11:51 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "Mostly sunny, with a high near 64. Northeast wind 16 to 18 mph, with gusts as high as 29 mph. "
+     "text": "Mostly sunny, with a high near 64. Northeast wind 16 to 18 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Tonight",
@@ -636,7 +659,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -705,7 +728,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "goodnews": []
  },
  {
@@ -790,7 +813,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-21T16:14:00Z",
+  "updatedAt": "2026-10-21T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

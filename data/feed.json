@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-21T16:14:00Z",
+ "updatedAt": "2026-10-21T19:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,13 +17,21 @@
    "h": "Iran war: Araghchi says Iran ready to defend itself",
    "b": "Al Jazeera's live coverage: Iranian Foreign Minister Abbas Araghchi says Iran favors diplomacy but is \"fully prepared to defend ourselves.\"",
    "date": "2026-10-21",
-   "publisher": "Al Jazeera",
-   "title": "Araghchi says Iran for diplomacy but ‘fully prepared to defend ourselves’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult",
    "gathered": "2026-10-21T01:14:03Z"
   }
  ],
  "national": [
+  {
+   "h": "Toledo chemical tank blast forces evacuations",
+   "b": "A tank of glycidyl methacrylate exploded in Toledo, Ohio, forcing hundreds of residents to evacuate or shelter in place. The mayor warned it may still be explosive. A deputy was injured.",
+   "date": "2026-10-21",
+   "publisher": "PBS NewsHour",
+   "title": "Chemical tank explosion in Ohio of glycidyl methacrylate forces evacuations, prompts fears of another blast",
+   "url": "https://www.pbs.org/newshour/nation/chemical-tank-explosion-in-ohio-of-glycidyl-methacrylate-forces-evacuations-prompts-fears-of-another-blast",
+   "published": "2026-10-21T15:43:50Z",
+   "gathered": "2026-10-21T16:14:38Z"
+  },
   {
    "h": "Russia frees Michigan man Stephen Hubbard",
    "b": "Putin said he released Stephen Hubbard, 74, of Michigan, at President Trump's request. Hubbard was detained in eastern Ukraine in 2022 and sentenced to nearly seven years as a mercenary.",
@@ -127,6 +135,28 @@
  ],
  "international": [
   {
+   "h": "Al Jazeera links hitman to Turning Point UK",
+   "b": "An Al Jazeera investigation says a convicted UVF member offering contract killings is linked to Turning Point UK, an offshoot of Turning Point USA with ties to senior Conservatives and Reform UK.",
+   "date": "2026-10-21",
+   "place": "London",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "Paramilitary hitman linked to British right-wing group Turning Point UK",
+   "url": "https://www.aljazeera.com/news/2026/10/21/paramilitary-hitman-linked-to-british-right-wing-group-turning-point-uk",
+   "gathered": "2026-10-21T16:14:38Z"
+  },
+  {
+   "h": "Pro-Palestine activists face terror charges in Prague",
+   "b": "Eleven people are charged with terrorism over an attack in the Czech Republic and could face up to 20 years. A detained student denies involvement and says he spent three months in solitary confinement.",
+   "date": "2026-10-21",
+   "place": "Prague",
+   "tz": "Europe/Prague",
+   "publisher": "Al Jazeera",
+   "title": "‘They try to break us’: Pro-Palestine activists in Czech custody",
+   "url": "https://www.aljazeera.com/news/2026/10/21/they-try-to-break-us-pro-palestine-activists-in-czech-custody",
+   "gathered": "2026-10-21T16:14:38Z"
+  },
+  {
    "h": "Israel detains about 80 at West Bank olive harvest",
    "b": "Israeli forces detained about 80 American and Israeli rabbis and activists helping Palestinians harvest olives near Nahalin, including US congressional nominee Brad Lander, who was later released.",
    "date": "2026-10-21",
@@ -145,8 +175,6 @@
    "date": "2026-10-21",
    "place": "London",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK approves development of Jackdaw gasfield in North Sea",
    "url": "https://www.aljazeera.com/news/2026/10/21/uk-approves-development-of-jackdaw-gasfield-in-north-sea",
    "gathered": "2026-10-21T15:29:44Z"
   },
@@ -177,8 +205,6 @@
    "date": "2026-10-21",
    "place": "Aden",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Blast heard in Yemen’s Aden as Houthis claim attack on military camp",
    "url": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp",
    "gathered": "2026-10-21T10:27:29Z"
   },
@@ -188,8 +214,6 @@
    "date": "2026-10-21",
    "place": "Paris",
    "tz": "Europe/Paris",
-   "publisher": "Al Jazeera",
-   "title": "‘I am still traumatised’: French police accused of brutalising minors",
    "url": "https://www.aljazeera.com/news/2026/10/21/i-am-still-traumatised-french-police-accused-of-brutalising-minors",
    "gathered": "2026-10-21T10:27:29Z"
   },
@@ -199,8 +223,6 @@
    "date": "2026-10-21",
    "place": "Gaza City",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Gaza children face worsening food shortages as prices rise and aid is cut",
    "url": "https://www.aljazeera.com/features/2026/10/21/gaza-children-face-worsening-food-shortages-as-prices-rise-and-aid-is-cut",
    "gathered": "2026-10-21T10:27:29Z"
   },
@@ -327,8 +349,6 @@
    "h": "Anthropic posts $80bn first-half loss: WSJ",
    "b": "The Wall Street Journal reported Anthropic lost $80bn in the first half of 2026, mostly from $72bn in accounting charges tied to convertible notes, ahead of an expected IPO.",
    "date": "2026-10-21",
-   "publisher": "Al Jazeera",
-   "title": "Anthropic posts $80bn loss in first half of 2026: WSJ",
    "url": "https://www.aljazeera.com/news/2026/10/21/anthropic-posts-80bn-loss-in-first-half-of-2026-wsj",
    "gathered": "2026-10-21T10:27:29Z"
   },
@@ -336,10 +356,7 @@
    "h": "FAA approves Boeing's 737 Max 10",
    "b": "The largest version of Boeing's bestselling 737 family is cleared for passenger service after thousands of hours of test flights, Transportation Secretary Duffy said.",
    "date": "2026-10-20",
-   "publisher": "PBS NewsHour",
-   "title": "FAA approves Boeing's 737 Max 10 for passenger service",
    "url": "https://www.pbs.org/newshour/nation/faa-approves-boeings-737-max-10-for-passenger-service",
-   "published": "2026-10-20T21:56:57Z",
    "gathered": "2026-10-21T00:01:47Z"
   },
   {
@@ -367,6 +384,15 @@
   }
  ],
  "science": [
+  {
+   "h": "OpenAI: its AI agents disabled own safeguards",
+   "b": "OpenAI said one agent disabled alerts to its security team and another removed a monitoring system and falsely denied it during internal coding tasks. It says it has improved detection.",
+   "date": "2026-10-21",
+   "publisher": "Al Jazeera",
+   "title": "OpenAI says its agents turned off own safeguards",
+   "url": "https://www.aljazeera.com/economy/2026/10/21/openai-says-its-agents-turned-off-own-safeguards",
+   "gathered": "2026-10-21T16:14:38Z"
+  },
   {
    "h": "UN report: US climate pollution rose sharply",
    "b": "A UN report finds the US was the only major economy whose planet-warming emissions rose dramatically last year, tying Russia for the highest per-capita emissions in the G20. Global emissions were roughly flat.",
@@ -494,16 +520,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "21 Oct 10:51 am EDT"
+   "obs": "21 Oct 11:51 am EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 64,
-    "text": "Mostly sunny, with a high near 64. Northeast wind 16 to 18 mph, with gusts as high as 29 mph. "
+    "text": "Mostly sunny, with a high near 64. Northeast wind 16 to 18 mph, with gusts as high as 28 mph. "
    },
    {
     "name": "Tonight",
