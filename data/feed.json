@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T07:15:00Z",
+ "updatedAt": "2026-10-22T10:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Iran war: IRGC vows 'offensive' defence, invasion",
-   "b": "Al Jazeera's live coverage: Iran's Revolutionary Guard says its defence doctrine is turning \"offensive\" and threatens invasion.",
+   "h": "Iran war: IRGC threatens US bases over Hormuz",
+   "b": "Al Jazeera's live coverage: Iran's Revolutionary Guard threatens US bases if \"illegal\" tankers keep moving through the Strait of Hormuz.",
    "date": "2026-10-22",
    "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC shifts to ‘offensive’ defence doctrine, threatens invasion",
+   "title": "IRGC threatens US bases if ‘illegal’ tankers continue routes through Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/22/iran-war-live-irgc-vows-invasion-as-defence-doctrine-turns-offensive",
    "gathered": "2026-10-22T01:42:06Z"
   }
@@ -151,6 +151,41 @@
  ],
  "international": [
   {
+   "h": "North Korea to resume propaganda broadcasts",
+   "b": "Kim Yo Jong said the North will resume anti-Seoul loudspeaker broadcasts along the border as tensions rise after land mine blasts injured three South Korean soldiers.",
+   "date": "2026-10-22",
+   "place": "Pyongyang",
+   "tz": "Asia/Pyongyang",
+   "publisher": "KUOW",
+   "title": "North Korea says it will resume propaganda broadcasts across border into South Korea",
+   "url": "https://www.kuow.org/npr-news/2026-10-21/north-korea-says-it-will-resume-propaganda-broadcasts-across-border-into-south-korea",
+   "published": "2026-10-22T06:36:07Z",
+   "updated": "2026-10-22T06:42:02Z",
+   "gathered": "2026-10-22T07:51:19Z"
+  },
+  {
+   "h": "Bukele threatens Haitian gangs over soldiers",
+   "b": "El Salvador's President Nayib Bukele warned Haitian gangs holding four abducted Salvadoran soldiers that \"we can finish with you too.\"",
+   "date": "2026-10-22",
+   "place": "San Salvador",
+   "tz": "America/El_Salvador",
+   "publisher": "Al Jazeera",
+   "title": "El Salvador’s Bukele threatens Haitian gangs over abducted soldiers",
+   "url": "https://www.aljazeera.com/news/2026/10/22/el-salvadors-bukele-threatens-haitian-gangs-over-abducted-soldiers",
+   "gathered": "2026-10-22T07:51:19Z"
+  },
+  {
+   "h": "Rubio: Ukraine Starlink access is up to Musk",
+   "b": "Secretary of State Marco Rubio said decisions on Ukraine's Starlink access rest with SpaceX and Elon Musk, not the White House.",
+   "date": "2026-10-22",
+   "place": "Washington",
+   "tz": "America/New_York",
+   "publisher": "Al Jazeera",
+   "title": "Ukraine’s access to Starlink a decision for Elon Musk, Rubio says",
+   "url": "https://www.aljazeera.com/news/2026/10/22/ukraines-access-to-starlink-a-decision-for-elon-musk-rubio-says",
+   "gathered": "2026-10-22T07:51:19Z"
+  },
+  {
    "h": "Qatar, France urge open Hormuz, Gaza ceasefire",
    "b": "After Macron met Qatar's emir in Doha, the two leaders called for freedom of navigation in the Strait of Hormuz \"without constraints or fees\" and implementation of the Gaza ceasefire.",
    "date": "2026-10-22",
@@ -167,8 +202,6 @@
    "date": "2026-10-22",
    "place": "Washington",
    "tz": "America/New_York",
-   "publisher": "Al Jazeera",
-   "title": "World leaders warn of security flaws found in PHP programming language",
    "url": "https://www.aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming",
    "gathered": "2026-10-22T01:42:06Z"
   },
@@ -557,34 +590,28 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 51,
    "cond": "Fair",
-   "obs": "21 Oct 23:51 pm EDT"
+   "obs": "22 Oct 03:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 50,
-    "text": "Mostly cloudy, with a low around 50. North wind around 17 mph. "
-   },
-   {
     "name": "Thursday",
     "kind": "high",
-    "temp": 66,
-    "text": "Sunny, with a high near 66. North wind 15 to 17 mph. "
+    "temp": 65,
+    "text": "Sunny, with a high near 65. North wind around 15 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 51,
-    "text": "Clear, with a low around 51. Breezy, with a north wind 16 to 21 mph. "
+    "temp": 49,
+    "text": "Clear, with a low around 49. North wind 8 to 17 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 59,
-    "text": "Sunny, with a high near 59. North wind 8 to 14 mph. "
+    "text": "Sunny, with a high near 59. North wind 8 to 13 mph. "
    },
    {
     "name": "Friday Night",
@@ -595,8 +622,14 @@
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 60,
-    "text": "Sunny, with a high near 60."
+    "temp": 61,
+    "text": "Sunny, with a high near 61."
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 46,
+    "text": "Clear, with a low around 46."
    }
   ]
  },
