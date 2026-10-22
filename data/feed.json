@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T13:15:00Z",
+ "updatedAt": "2026-10-22T16:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,6 +17,17 @@
   }
  ],
  "national": [
+  {
+   "h": "DOE keeps fighting sick Hanford workers' claims",
+   "b": "Despite a Washington law meant to help, the Energy Department has spent nearly $12 million on lawyers and experts fighting compensation claims from Hanford nuclear workers, ProPublica reports.",
+   "date": "2026-10-22",
+   "publisher": "ProPublica",
+   "title": "Nuclear Weapons Waste Made Workers Sick. Despite a Law Meant to Help, the DOE Keeps Fighting Their Claims.",
+   "url": "https://www.propublica.org/article/hanford-nuclear-workers-compensation-washington-doe",
+   "published": "2026-10-22T12:00:00Z",
+   "updated": "2026-10-22T12:00:08Z",
+   "gathered": "2026-10-22T14:00:06Z"
+  },
   {
    "h": "Education Dept. civil rights probes fell sharply",
    "b": "ProPublica found the department's Office for Civil Rights opened about 100 investigations a month under Trump, down from 310 a month in 2024.",
@@ -84,6 +95,17 @@
  ],
  "politics": [
   {
+   "h": "Ballot rejections soared after USPS service cuts",
+   "b": "ProPublica found mail ballot rejections rose in rural counties after the Postal Service reduced service. In one Washington county, more than 500 ballots arrived too late in the primary.",
+   "date": "2026-10-22",
+   "publisher": "ProPublica",
+   "title": "Ballot Rejections Soared in Rural Counties After USPS Reduced Mail Service",
+   "url": "https://www.propublica.org/article/mail-ballot-delays-postal-service-midterms",
+   "published": "2026-10-22T10:00:00Z",
+   "updated": "2026-10-22T13:34:24Z",
+   "gathered": "2026-10-22T14:00:06Z"
+  },
+  {
    "h": "AIPAC halts endorsements and candidate donations",
    "b": "AIPAC said it will no longer endorse candidates, make direct PAC contributions or earmark funds, after mounting criticism this midterm cycle.",
    "date": "2026-10-22",
@@ -144,6 +166,16 @@
    "date": "2026-10-21",
    "url": "https://www.kuow.org/npr-news/2026-10-20/some-on-dojs-20-000-likely-noncitizen-list-in-calif-appear-to-be-u-s-born",
    "gathered": "2026-10-21T05:08:55Z"
+  },
+  {
+   "h": "El-Sayed, Rogers question loyalties in final debate",
+   "b": "Michigan Senate candidates Abdul El-Sayed and Mike Rogers met in a final debate that was less heated than their first but kept returning to attacks on each other's loyalties.",
+   "date": "2026-10-22",
+   "publisher": "PBS NewsHour",
+   "title": "In final Michigan Senate debate, El-Sayed and Rogers question each other's loyalties",
+   "url": "https://www.pbs.org/newshour/politics/in-final-michigan-senate-debate-el-sayed-and-rogers-question-each-others-loyalties",
+   "published": "2026-10-22T13:54:17Z",
+   "gathered": "2026-10-22T14:00:06Z"
   }
  ],
  "international": [
@@ -165,7 +197,7 @@
    "place": "Taiz",
    "tz": "Asia/Aden",
    "publisher": "Al Jazeera",
-   "title": "Fighting rages in Yemen’s Taiz as UN warns nearly 260,000 now displaced",
+   "title": "Fighting rages in Yemen’s Taiz as UN warns nearly 260,000 displaced",
    "url": "https://www.aljazeera.com/news/2026/10/22/fighting-rages-in-yemens-taiz-as-un-warns-nearly-260000-now-displaced",
    "gathered": "2026-10-22T10:12:34Z"
   },
@@ -428,10 +460,7 @@
    "h": "Meta ordered to pay New Mexico $25bn",
    "b": "A judge ordered Meta to pay $25 billion, its biggest fine ever, after it was found liable for deceiving Facebook users about privacy.",
    "date": "2026-10-21",
-   "publisher": "PBS NewsHour",
-   "title": "Meta must pay New Mexico $25 billion, its biggest fine ever, for deceiving users about Facebook privacy",
    "url": "https://www.pbs.org/newshour/nation/meta-must-pay-new-mexico-25-billion-its-biggest-fine-ever-for-deceiving-users-about-facebook-privacy",
-   "published": "2026-10-21T19:49:58Z",
    "gathered": "2026-10-21T22:35:54Z"
   },
   {
@@ -455,7 +484,7 @@
    "b": "A livestock virus never before seen in humans was detected in a severely immunocompromised patient who died. Officials say there is no risk to the public.",
    "date": "2026-10-22",
    "publisher": "The Local France",
-   "title": "France reports first human Shamonda virus case, says no health risk",
+   "title": "France reports first human Shamonda virus case",
    "url": "https://www.thelocal.fr/20261022/france-reports-first-human-shamonda-virus-case-says-no-health-risk",
    "published": "2026-10-22T10:10:10Z",
    "updated": "2026-10-22T10:10:12Z",
@@ -477,6 +506,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "MLB heads toward a likely lockout",
+   "b": "Players and owners are sparring over a possible salary cap as the labor deal nears expiration, raising the odds of a work stoppage that would affect free agency and 2027.",
+   "date": "2026-10-22",
+   "publisher": "CBS Sports",
+   "title": "MLB Lockout 101: In-depth guide to likely work stoppage and what it means for free agency, 2027 season, more",
+   "url": "https://www.cbssports.com/mlb/news/mlb-lockout-logistics-cba-negotiations-free-agency-2027-season/",
+   "gathered": "2026-10-22T14:00:06Z"
+  },
   {
    "h": "Goodell open to review of Eagles' Hurts handling",
    "b": "Roger Goodell said the NFL welcomes a review of how the Eagles handled Jalen Hurts' blood clots, while saying the protocols were followed.",
@@ -535,14 +573,41 @@
    "h": "Pope Leo needs no more cancer treatment",
    "b": "Final tests after Pope Leo's lung surgery show his cancer was localized and he needs no further treatment, his doctors said.",
    "date": "2026-10-21",
-   "publisher": "PBS NewsHour",
-   "title": "Pope Leo's tests show he needs no further treatment for lung cancer, his doctors say",
    "url": "https://www.pbs.org/newshour/politics/pope-leos-tests-show-he-needs-no-further-treatment-for-lung-cancer-his-doctors-say",
-   "published": "2026-10-21T20:44:10Z",
    "gathered": "2026-10-21T22:35:54Z"
   }
  ],
  "local": [
+  {
+   "h": "Fatal motorcycle crash closes GWB lanes",
+   "b": "All upper-level lanes into New York on the George Washington Bridge closed during the morning rush after a motorcyclist was struck by a tractor-trailer.",
+   "date": "2026-10-22",
+   "publisher": "Gothamist",
+   "title": "Fatal motorcycle crash on George Washington Bridge disrupts morning commute",
+   "url": "https://gothamist.com/news/fatal-motorcycle-crash-closes-upper-lanes-to-ny-on-george-washington-bridge",
+   "published": "2026-10-22T11:28:00Z",
+   "gathered": "2026-10-22T14:00:06Z"
+  },
+  {
+   "h": "Council set to give nonprofits first shot at buildings",
+   "b": "The City Council is poised to approve the Community Opportunity to Purchase Act, letting nonprofits bid on dilapidated buildings before they hit the open market.",
+   "date": "2026-10-22",
+   "publisher": "Gothamist",
+   "title": "Mamdani-backed housing bill will give nonprofits head start on buying NYC apartments",
+   "url": "https://gothamist.com/news/mamdani-backed-housing-bill-will-give-nonprofits-head-start-on-buying-nyc-apartments",
+   "published": "2026-10-22T12:00:58Z",
+   "gathered": "2026-10-22T14:00:06Z"
+  },
+  {
+   "h": "Ballot asks NYC to ease outdoor dining, bike lanes",
+   "b": "Five proposed charter amendments on the November ballot could expand outdoor dining and speed up new bike and bus lanes.",
+   "date": "2026-10-22",
+   "publisher": "Gothamist",
+   "title": "Ballot questions ask NYC voters whether to cut red tape on outdoor dining, bike lanes",
+   "url": "https://gothamist.com/news/ballot-questions-ask-nyc-voters-whether-to-cut-red-tape-on-outdoor-dining-bike-lanes",
+   "published": "2026-10-22T10:30:55Z",
+   "gathered": "2026-10-22T14:00:06Z"
+  },
   {
    "h": "NYPD seized mom's Christmas gifts, never returned them",
    "b": "Police arrested a single mother on Christmas Eve 2024 and took the presents she bought for her five children. She never got them back.",
@@ -570,8 +635,7 @@
    "publisher": "Gothamist",
    "title": "Port Authority eyes $117M fix to Manhattan roadway where falling debris smashed cars",
    "url": "https://gothamist.com/news/port-authority-eyes-117m-fix-to-manhattan-roadway-where-falling-debris-smashed-cars",
-   "published": "2026-10-21T19:50:00Z",
-   "updated": "2026-10-21T20:53:00Z",
+   "published": "2026-10-21T20:53:00Z",
    "gathered": "2026-10-21T22:35:54Z"
   },
   {
@@ -648,16 +712,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 49,
+   "temp": 54,
    "cond": "Fair",
-   "obs": "22 Oct 05:51 am EDT"
+   "obs": "22 Oct 09:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. North wind 14 to 16 mph. "
+    "text": "Sunny, with a high near 65. North wind around 15 mph. "
    },
    {
     "name": "Tonight",
