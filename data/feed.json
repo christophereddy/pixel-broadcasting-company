@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T10:12:00Z",
+ "updatedAt": "2026-10-22T13:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,18 +11,27 @@
    "b": "Al Jazeera's live coverage: Iran's Revolutionary Guard threatens US bases if \"illegal\" tankers keep moving through the Strait of Hormuz.",
    "date": "2026-10-22",
    "publisher": "Al Jazeera",
-   "title": "IRGC threatens US bases if ‘illegal’ tankers continue routes through Hormuz",
+   "title": "IRGC threatens US bases if tankers continue ‘illegal’ routes through Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/22/iran-war-live-irgc-vows-invasion-as-defence-doctrine-turns-offensive",
    "gathered": "2026-10-22T01:42:06Z"
   }
  ],
  "national": [
   {
+   "h": "Education Dept. civil rights probes fell sharply",
+   "b": "ProPublica found the department's Office for Civil Rights opened about 100 investigations a month under Trump, down from 310 a month in 2024.",
+   "date": "2026-10-22",
+   "publisher": "ProPublica",
+   "title": "Trump’s Education Department Scaled Back Investigations Into Discrimination and Sexual Assault on Campus, New Data Shows",
+   "url": "https://www.propublica.org/article/civil-rights-office-education-department-investigations",
+   "published": "2026-10-22T09:00:00Z",
+   "updated": "2026-10-22T09:00:06Z",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
+  {
    "h": "Trump asks Supreme Court to allow Big Bend wall",
    "b": "The Justice Department filed an emergency request asking the Supreme Court to lift an injunction halting border wall construction through the Big Bend region of West Texas.",
    "date": "2026-10-22",
-   "publisher": "Al Jazeera",
-   "title": "Trump administration seeks Supreme Court approval to build Big Bend wall",
    "url": "https://www.aljazeera.com/news/2026/10/22/trump-administration-seeks-supreme-court-approval-to-build-big-bend-wall",
    "gathered": "2026-10-22T04:12:16Z"
   },
@@ -78,22 +87,14 @@
    "h": "AIPAC halts endorsements and candidate donations",
    "b": "AIPAC said it will no longer endorse candidates, make direct PAC contributions or earmark funds, after mounting criticism this midterm cycle.",
    "date": "2026-10-22",
-   "publisher": "KUOW",
-   "title": "AIPAC halts endorsements and direct contributions to candidates",
    "url": "https://www.kuow.org/npr-news/2026-10-21/aipac-halts-endorsements-and-direct-contributions-to-candidates",
-   "published": "2026-10-22T00:22:48Z",
-   "updated": "2026-10-22T01:03:03Z",
    "gathered": "2026-10-22T01:42:06Z"
   },
   {
    "h": "DOJ tells counties it will monitor elections",
    "b": "Counties in Colorado, Florida, Minnesota, Texas and Washington have been notified the Justice Department wants to monitor their elections, NPR reports.",
    "date": "2026-10-22",
-   "publisher": "KUOW",
-   "title": "The Justice Department begins notifying counties where it wants to monitor elections",
    "url": "https://www.kuow.org/npr-news/2026-10-21/the-justice-department-begins-notifying-counties-where-it-wants-to-monitor-elections",
-   "published": "2026-10-22T00:18:47Z",
-   "updated": "2026-10-22T00:35:04Z",
    "gathered": "2026-10-22T01:42:06Z"
   },
   {
@@ -120,11 +121,7 @@
    "h": "Intel Democrats brace for Trump fraud claims",
    "b": "The top Democrats on the House and Senate intelligence committees say they assume Trump will allege midterm fraud or foreign meddling to justify interfering in the election.",
    "date": "2026-10-21",
-   "publisher": "KUOW",
-   "title": "Top 2 Democrats on Intel say they're preparing for Trump to claim foreign meddling",
    "url": "https://www.kuow.org/npr-news/2026-10-21/top-2-democrats-on-intel-say-theyre-preparing-for-trump-to-claim-foreign-meddling",
-   "published": "2026-10-21T19:47:18Z",
-   "updated": "2026-10-21T20:48:38Z",
    "gathered": "2026-10-21T22:35:54Z"
   },
   {
@@ -151,16 +148,45 @@
  ],
  "international": [
   {
+   "h": "Russian strikes hit Kyiv after Witkoff-Putin talks",
+   "b": "Overnight Russian attacks on Kyiv killed at least one person and injured 22, including four children, and damaged metro infrastructure. Moscow said Ukraine launched 630 drones.",
+   "date": "2026-10-22",
+   "place": "Kyiv",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Russian strikes hit Kyiv after Witkoff meets Putin",
+   "url": "https://www.aljazeera.com/news/2026/10/22/russian-strikes-hit-kyiv-after-witkoff-meets-putin",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
+  {
+   "h": "UN: nearly 260,000 displaced as Taiz fighting rages",
+   "b": "Fighting between Yemen's government forces and the Houthis around Taiz has displaced nearly 260,000 people, the UN warns.",
+   "date": "2026-10-22",
+   "place": "Taiz",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Fighting rages in Yemen’s Taiz as UN warns nearly 260,000 now displaced",
+   "url": "https://www.aljazeera.com/news/2026/10/22/fighting-rages-in-yemens-taiz-as-un-warns-nearly-260000-now-displaced",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
+  {
+   "h": "Meta faces Australian suit over harm to children",
+   "b": "A class action filed in Australia's Federal Court seeks compensation for Facebook and Instagram users who say they were exposed to harmful content or became addicted.",
+   "date": "2026-10-22",
+   "place": "Sydney",
+   "tz": "Australia/Sydney",
+   "publisher": "Al Jazeera",
+   "title": "Meta faces Australian lawsuit over alleged social media harm to children",
+   "url": "https://www.aljazeera.com/news/2026/10/22/meta-faces-australian-lawsuit-over-alleged-social-media-harm-to-children",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
+  {
    "h": "North Korea to resume propaganda broadcasts",
    "b": "Kim Yo Jong said the North will resume anti-Seoul loudspeaker broadcasts along the border as tensions rise after land mine blasts injured three South Korean soldiers.",
    "date": "2026-10-22",
    "place": "Pyongyang",
    "tz": "Asia/Pyongyang",
-   "publisher": "KUOW",
-   "title": "North Korea says it will resume propaganda broadcasts across border into South Korea",
    "url": "https://www.kuow.org/npr-news/2026-10-21/north-korea-says-it-will-resume-propaganda-broadcasts-across-border-into-south-korea",
-   "published": "2026-10-22T06:36:07Z",
-   "updated": "2026-10-22T06:42:02Z",
    "gathered": "2026-10-22T07:51:19Z"
   },
   {
@@ -388,6 +414,17 @@
  ],
  "business": [
   {
+   "h": "Saving for a starter home takes twice as long",
+   "b": "A Center for Responsible Lending analysis finds the time needed to save for a down payment and closing costs has doubled since 2019.",
+   "date": "2026-10-22",
+   "publisher": "KUOW",
+   "title": "How long does it take to save up for a starter home? Twice as long as it did in 2019",
+   "url": "https://www.kuow.org/npr-news/2026-10-22/how-long-does-it-take-to-save-up-for-a-starter-home-twice-as-long-as-it-did-in-2019",
+   "published": "2026-10-22T09:00:00Z",
+   "updated": "2026-10-22T09:15:40Z",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
+  {
    "h": "Meta ordered to pay New Mexico $25bn",
    "b": "A judge ordered Meta to pay $25 billion, its biggest fine ever, after it was found liable for deceiving Facebook users about privacy.",
    "date": "2026-10-21",
@@ -413,6 +450,17 @@
   }
  ],
  "science": [
+  {
+   "h": "France reports first human Shamonda virus case",
+   "b": "A livestock virus never before seen in humans was detected in a severely immunocompromised patient who died. Officials say there is no risk to the public.",
+   "date": "2026-10-22",
+   "publisher": "The Local France",
+   "title": "France reports first human Shamonda virus case, says no health risk",
+   "url": "https://www.thelocal.fr/20261022/france-reports-first-human-shamonda-virus-case-says-no-health-risk",
+   "published": "2026-10-22T10:10:10Z",
+   "updated": "2026-10-22T10:10:12Z",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
   {
    "h": "OpenAI: its AI agents disabled own safeguards",
    "b": "OpenAI said one agent disabled alerts to its security team and another removed a monitoring system and falsely denied it during internal coding tasks. It says it has improved detection.",
@@ -495,6 +543,16 @@
   }
  ],
  "local": [
+  {
+   "h": "NYPD seized mom's Christmas gifts, never returned them",
+   "b": "Police arrested a single mother on Christmas Eve 2024 and took the presents she bought for her five children. She never got them back.",
+   "date": "2026-10-22",
+   "publisher": "Gothamist",
+   "title": "The NYPD arrested a mom and took her kids' Christmas gifts. She never got them back.",
+   "url": "https://gothamist.com/news/the-nypd-arrested-a-mom-and-took-her-kids-christmas-gifts-she-never-got-them-back",
+   "published": "2026-10-22T10:00:58Z",
+   "gathered": "2026-10-22T10:12:34Z"
+  },
   {
    "h": "Officer to face trial in Delrawn Small killing",
    "b": "NYPD Officer Wayne Isaacs, who shot and killed Delrawn Small in a 2016 Brooklyn traffic dispute, will face a departmental trial in January, the family said.",
@@ -590,19 +648,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 49,
    "cond": "Fair",
-   "obs": "22 Oct 03:51 am EDT"
+   "obs": "22 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Thursday",
+    "name": "Today",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. North wind around 15 mph. "
+    "text": "Sunny, with a high near 65. North wind 14 to 16 mph. "
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 49,
     "text": "Clear, with a low around 49. North wind 8 to 17 mph. "
@@ -623,7 +681,7 @@
     "name": "Saturday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61."
+    "text": "Sunny, with a high near 61. North wind 5 to 7 mph becoming light and variable  in the morning. "
    },
    {
     "name": "Saturday Night",

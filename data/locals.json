@@ -42,19 +42,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "22 Oct 02:52 am EDT"
+    "obs": "22 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76. North wind around 5 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Clear, with a low around 51. Northwest wind around 5 mph becoming east after midnight. "
@@ -75,7 +75,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69."
+     "text": "Sunny, with a high near 69. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -110,19 +110,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Mostly Cloudy",
-    "obs": "22 Oct 02:54 am EDT"
+    "temp": 47,
+    "cond": "Overcast",
+    "obs": "22 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 61,
      "text": "Cloudy through mid morning, then gradual clearing, with a high near 61. North wind 11 to 14 mph, with gusts as high as 26 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 40,
      "text": "Mostly clear, with a low around 40. North wind 9 to 14 mph. "
@@ -165,7 +165,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -236,25 +236,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 52,
     "cond": "Fair",
-    "obs": "22 Oct 01:53 am CDT"
+    "obs": "22 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 51,
-     "text": "Clear, with a low around 51. Calm wind becoming west around 5 mph. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 66,
      "text": "Sunny, with a high near 66. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Mostly clear, with a low around 52. East northeast wind around 5 mph. "
@@ -275,7 +269,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68."
+     "text": "Mostly sunny, with a high near 68. South wind 5 to 10 mph. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "Partly cloudy, with a low around 53."
     }
    ]
   },
@@ -291,7 +291,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -316,17 +316,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Mostly Cloudy",
-    "obs": "22 Oct 00:58 am MDT"
+    "temp": 62,
+    "cond": "Partly Cloudy",
+    "obs": "22 Oct 02:58 am MDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 53,
-     "text": "Mostly cloudy, with a low around 53. South southwest wind 3 to 8 mph. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
@@ -356,6 +350,12 @@
      "kind": "high",
      "temp": 58,
      "text": "A 20 percent chance of showers.  Mostly cloudy, with a high near 58."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "Showers likely.  Cloudy, with a low around 40. Chance of precipitation is 70%."
     }
    ]
   },
@@ -371,7 +371,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -431,12 +431,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Showers and possibly a thunderstorm.  Low around 59. South southeast wind 5 to 10 mph.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
-    },
-    {
      "name": "Thursday",
      "kind": "high",
      "temp": 69,
@@ -465,6 +459,12 @@
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59."
     }
    ]
   },
@@ -480,7 +480,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -491,6 +491,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYPD seized mom's Christmas gifts, never returned them",
+    "b": "Police arrested a single mother on Christmas Eve 2024 and took the presents she bought for her five children. She never got them back.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "The NYPD arrested a mom and took her kids' Christmas gifts. She never got them back.",
+    "url": "https://gothamist.com/news/the-nypd-arrested-a-mom-and-took-her-kids-christmas-gifts-she-never-got-them-back",
+    "published": "2026-10-22T10:00:58Z",
+    "gathered": "2026-10-22T10:12:34Z"
+   },
    {
     "h": "Officer to face trial in Delrawn Small killing",
     "b": "NYPD Officer Wayne Isaacs, who shot and killed Delrawn Small in a 2016 Brooklyn traffic dispute, will face a departmental trial in January, the family said.",
@@ -586,19 +596,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 49,
     "cond": "Fair",
-    "obs": "22 Oct 03:51 am EDT"
+    "obs": "22 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. North wind around 15 mph. "
+     "text": "Sunny, with a high near 65. North wind 14 to 16 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Clear, with a low around 49. North wind 8 to 17 mph. "
@@ -619,7 +629,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. North wind 5 to 7 mph becoming light and variable  in the morning. "
     },
     {
      "name": "Saturday Night",
@@ -641,7 +651,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -653,6 +663,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Four dead as storms lash south of France",
+    "b": "Storms brought high winds, heavy rain and flooding to the south coast. Three people died in Bouches-du-Rhône, where officials reported major damage.",
+    "date": "2026-10-22",
+    "publisher": "The Local France",
+    "title": "Four dead as storms lash south of France",
+    "url": "https://www.thelocal.fr/20261022/four-dead-as-storms-lash-south-of-france",
+    "published": "2026-10-22T08:56:36Z",
+    "updated": "2026-10-22T08:56:37Z",
+    "gathered": "2026-10-22T10:12:34Z"
+   },
    {
     "h": "Protests banned in parts of Paris Thursday",
     "b": "Rallies are banned from 8am to 8pm near the Elysée, parliament, the Louvre, the Champs-Elysées, Bastille, République and Châtelet-Les Halles.",
@@ -668,11 +689,7 @@
     "h": "Two killed in French fighter jet crash",
     "b": "A Mirage 2000D crashed during a training flight near its air base outside Nancy, killing its 27-year-old pilot and 44-year-old navigator.",
     "date": "2026-10-22",
-    "publisher": "The Local France",
-    "title": "French fighter jet crashes during training leaves two killed",
     "url": "https://www.thelocal.fr/20261022/french-fighter-jet-crashes-during-training-leaves-two-killed",
-    "published": "2026-10-22T06:24:45Z",
-    "updated": "2026-10-22T06:24:47Z",
     "gathered": "2026-10-22T07:51:19Z"
    },
    {
@@ -710,7 +727,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "goodnews": []
  },
  {
@@ -724,22 +741,14 @@
     "h": "Wilson expands World Cup homeless plan citywide",
     "b": "Mayor Katie Wilson said a program that moved Pioneer Square homeless residents into housing before the World Cup will expand across Seattle at no extra cost.",
     "date": "2026-10-22",
-    "publisher": "KUOW",
-    "title": "Seattle Mayor Wilson wants to expand World Cup homeless plan to entire city",
     "url": "https://www.kuow.org/governing/2026-10-21/wilson-wants-to-emulate-denver-houston-with-new-homelessness-strategy",
-    "published": "2026-10-21T23:49:55Z",
-    "updated": "2026-10-21T23:54:37Z",
     "gathered": "2026-10-22T01:42:06Z"
    },
    {
     "h": "Amazon worker sues over assault complaint",
     "b": "A Seattle-based Amazon employee says the company failed to protect her after she reported being raped by a senior manager, and made her keep working with him.",
     "date": "2026-10-21",
-    "publisher": "KUOW",
-    "title": "Amazon sued for failing to protect employee who accused a manager of sexual assault",
     "url": "https://www.kuow.org/technology/2026-10-21/amazon-sued-for-failing-to-protect-employee-who-accused-her-manager-of-rape",
-    "published": "2026-10-21T21:48:51Z",
-    "updated": "2026-10-21T22:43:37Z",
     "gathered": "2026-10-21T22:35:54Z"
    },
    {
@@ -760,12 +769,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48. Calm wind becoming northeast around 5 mph. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
@@ -795,6 +798,12 @@
      "kind": "high",
      "temp": 55,
      "text": "Mostly cloudy, with a high near 55."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "A 30 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 44."
     }
    ]
   },
@@ -810,7 +819,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T10:12:00Z",
+  "updatedAt": "2026-10-22T13:15:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
