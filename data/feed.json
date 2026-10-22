@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T01:12:00Z",
+ "updatedAt": "2026-10-22T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,13 @@
  },
  "world": [
   {
-   "h": "Iran war: Araghchi says Iran ready to defend itself",
-   "b": "Al Jazeera's live coverage: Iranian Foreign Minister Abbas Araghchi says Iran favors diplomacy but is \"fully prepared to defend ourselves.\"",
-   "date": "2026-10-21",
+   "h": "Iran war: IRGC vows 'offensive' defence, invasion",
+   "b": "Al Jazeera's live coverage: Iran's Revolutionary Guard says its defence doctrine is turning \"offensive\" and threatens invasion.",
+   "date": "2026-10-22",
    "publisher": "Al Jazeera",
-   "title": "Araghchi says Iran for diplomacy but ‘fully prepared to defend ourselves’",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult",
-   "gathered": "2026-10-21T01:14:03Z"
+   "title": "Iran’s IRGC shifts to ‘offensive’ defence doctrine, threatens invasion",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/22/iran-war-live-irgc-vows-invasion-as-defence-doctrine-turns-offensive",
+   "gathered": "2026-10-22T01:42:06Z"
   }
  ],
  "national": [
@@ -21,10 +21,7 @@
    "h": "New Mexico sues Epstein's lawyer and accountant",
    "b": "New Mexico's attorney general accused Darren Indyke and Richard Kahn of concealing Epstein's sex trafficking at his Santa Fe-area ranch and seeks to block their payments from his estate.",
    "date": "2026-10-21",
-   "publisher": "PBS NewsHour",
-   "title": "New Mexico attorney general sues Epstein's attorney and accountant, claiming abuse cover-up at ranch",
    "url": "https://www.pbs.org/newshour/nation/new-mexico-attorney-general-sues-epsteins-attorney-and-accountant-claiming-abuse-cover-up-at-ranch",
-   "published": "2026-10-21T19:09:22Z",
    "gathered": "2026-10-21T19:28:23Z"
   },
   {
@@ -68,6 +65,38 @@
   }
  ],
  "politics": [
+  {
+   "h": "AIPAC halts endorsements and candidate donations",
+   "b": "AIPAC said it will no longer endorse candidates, make direct PAC contributions or earmark funds, after mounting criticism this midterm cycle.",
+   "date": "2026-10-22",
+   "publisher": "KUOW",
+   "title": "AIPAC halts endorsements and direct contributions to candidates",
+   "url": "https://www.kuow.org/npr-news/2026-10-21/aipac-halts-endorsements-and-direct-contributions-to-candidates",
+   "published": "2026-10-22T00:22:48Z",
+   "updated": "2026-10-22T01:03:03Z",
+   "gathered": "2026-10-22T01:42:06Z"
+  },
+  {
+   "h": "DOJ tells counties it will monitor elections",
+   "b": "Counties in Colorado, Florida, Minnesota, Texas and Washington have been notified the Justice Department wants to monitor their elections, NPR reports.",
+   "date": "2026-10-22",
+   "publisher": "KUOW",
+   "title": "The Justice Department begins notifying counties where it wants to monitor elections",
+   "url": "https://www.kuow.org/npr-news/2026-10-21/the-justice-department-begins-notifying-counties-where-it-wants-to-monitor-elections",
+   "published": "2026-10-22T00:18:47Z",
+   "updated": "2026-10-22T00:35:04Z",
+   "gathered": "2026-10-22T01:42:06Z"
+  },
+  {
+   "h": "Pollster says most of its data was fabricated",
+   "b": "Wedgewood Polling, cited by national outlets, said most of its data was fake, calling it an experiment to expose vulnerabilities in political polling.",
+   "date": "2026-10-22",
+   "publisher": "PBS NewsHour",
+   "title": "A company says its polls were fake. Here’s what happened",
+   "url": "https://www.pbs.org/newshour/politics/a-company-says-its-polls-were-fake-heres-what-happened",
+   "published": "2026-10-21T22:50:18Z",
+   "gathered": "2026-10-22T01:42:06Z"
+  },
   {
    "h": "Trump super PAC spends $277M in midterm blitz",
    "b": "MAGA Inc. has spent nearly $277 million since September to boost Republicans, including $200 million moved to an affiliated ad group, filings show.",
@@ -113,6 +142,17 @@
  ],
  "international": [
   {
+   "h": "NSA warns of PHP flaws, urges sites offline",
+   "b": "Newly found vulnerabilities in the PHP programming language prompted a rare NSA warning advising organizations to take websites offline if they cannot update immediately.",
+   "date": "2026-10-22",
+   "place": "Washington",
+   "tz": "America/New_York",
+   "publisher": "Al Jazeera",
+   "title": "World leaders warn of security flaws found in PHP programming language",
+   "url": "https://www.aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming",
+   "gathered": "2026-10-22T01:42:06Z"
+  },
+  {
    "h": "Mexico charges ex-prosecutor with treason",
    "b": "Mexico charged a former state prosecutor with treason, alleging he let US agents take part in a drug raid on Mexican territory.",
    "date": "2026-10-21",
@@ -129,8 +169,6 @@
    "date": "2026-10-21",
    "place": "Havana",
    "tz": "America/Havana",
-   "publisher": "Al Jazeera",
-   "title": "Cuba accuses US of threatening countries ahead of UN embargo vote",
    "url": "https://www.aljazeera.com/news/2026/10/21/cuba-accuses-us-of-threatening-countries-ahead-of-un-embargo-vote",
    "gathered": "2026-10-21T22:35:54Z"
   },
@@ -140,8 +178,6 @@
    "date": "2026-10-21",
    "place": "Riyadh",
    "tz": "Asia/Riyadh",
-   "publisher": "Al Jazeera",
-   "title": "Macron makes surprise Saudi visit as France secures extra diesel supplies",
    "url": "https://www.aljazeera.com/news/2026/10/21/macron-makes-surprise-saudi-visit-as-france-secures-extra-diesel-supplies",
    "gathered": "2026-10-21T19:28:23Z"
   },
@@ -151,8 +187,6 @@
    "date": "2026-10-21",
    "place": "Athens",
    "tz": "Europe/Athens",
-   "publisher": "Al Jazeera",
-   "title": "Thousands march for school funding in Greece",
    "url": "https://www.aljazeera.com/news/2026/10/21/thousands-march-for-school-funding-in-greece",
    "gathered": "2026-10-21T19:28:23Z"
   },
@@ -507,16 +541,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "21 Oct 17:51 pm EDT"
+   "obs": "21 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 50,
-    "text": "Mostly cloudy, with a low around 50. North wind 13 to 17 mph. "
+    "text": "Mostly cloudy, with a low around 50. North wind around 17 mph. "
    },
    {
     "name": "Thursday",
