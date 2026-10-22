@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T04:12:00Z",
+ "updatedAt": "2026-10-22T07:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,6 +17,15 @@
   }
  ],
  "national": [
+  {
+   "h": "Trump asks Supreme Court to allow Big Bend wall",
+   "b": "The Justice Department filed an emergency request asking the Supreme Court to lift an injunction halting border wall construction through the Big Bend region of West Texas.",
+   "date": "2026-10-22",
+   "publisher": "Al Jazeera",
+   "title": "Trump administration seeks Supreme Court approval to build Big Bend wall",
+   "url": "https://www.aljazeera.com/news/2026/10/22/trump-administration-seeks-supreme-court-approval-to-build-big-bend-wall",
+   "gathered": "2026-10-22T04:12:16Z"
+  },
   {
    "h": "New Mexico sues Epstein's lawyer and accountant",
    "b": "New Mexico's attorney general accused Darren Indyke and Richard Kahn of concealing Epstein's sex trafficking at his Santa Fe-area ranch and seeks to block their payments from his estate.",
@@ -142,6 +151,17 @@
  ],
  "international": [
   {
+   "h": "Qatar, France urge open Hormuz, Gaza ceasefire",
+   "b": "After Macron met Qatar's emir in Doha, the two leaders called for freedom of navigation in the Strait of Hormuz \"without constraints or fees\" and implementation of the Gaza ceasefire.",
+   "date": "2026-10-22",
+   "place": "Doha",
+   "tz": "Asia/Qatar",
+   "publisher": "Al Jazeera",
+   "title": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
+   "url": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation",
+   "gathered": "2026-10-22T04:12:16Z"
+  },
+  {
    "h": "NSA warns of PHP flaws, urges sites offline",
    "b": "Newly found vulnerabilities in the PHP programming language prompted a rare NSA warning advising organizations to take websites offline if they cannot update immediately.",
    "date": "2026-10-22",
@@ -158,8 +178,6 @@
    "date": "2026-10-21",
    "place": "Mexico City",
    "tz": "America/Mexico_City",
-   "publisher": "Al Jazeera",
-   "title": "Mexico charges prosecutor with treason over US involvement in drug raid",
    "url": "https://www.aljazeera.com/news/2026/10/21/mexico-charges-prosecutor-with-treason-over-us-involvement-in-drug-raid",
    "gathered": "2026-10-21T22:35:54Z"
   },
@@ -331,8 +349,6 @@
    "date": "2026-10-21",
    "place": "London",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "Actors, writers condemn UK anti-terror law targeting Sally Rooney",
    "url": "https://www.aljazeera.com/news/2026/10/21/actors-writers-condemn-uk-anti-terror-law-targeting-sally-rooney",
    "gathered": "2026-10-21T19:28:23Z"
   }
@@ -541,13 +557,13 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 54,
    "cond": "Fair",
-   "obs": "21 Oct 20:51 pm EDT"
+   "obs": "21 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 50,
     "text": "Mostly cloudy, with a low around 50. North wind around 17 mph. "
