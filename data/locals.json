@@ -42,16 +42,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "A Few Clouds",
-    "obs": "22 Oct 09:52 am EDT"
+    "temp": 74,
+    "cond": "Fair",
+    "obs": "22 Oct 13:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 76,
-     "text": "Sunny, with a high near 76. North wind around 5 mph. "
+     "temp": 78,
+     "text": "Sunny, with a high near 78. North wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -62,26 +62,26 @@
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "temp": 72,
+     "text": "Sunny, with a high near 72. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49. East wind around 5 mph, with gusts as high as 15 mph. "
+     "text": "Clear, with a low around 49. East wind around 5 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 69,
-     "text": "Sunny, with a high near 69. East wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 70,
+     "text": "Sunny, with a high near 70. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 47,
-     "text": "Clear, with a low around 47."
+     "temp": 48,
+     "text": "Clear, with a low around 48."
     }
    ]
   },
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -107,49 +107,68 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Red Line to speed up to 50 mph south of JFK",
+    "b": "The MBTA will raise Red Line speeds between North Quincy and JFK/UMass to 50 mph in the next few weeks, shortening trips to Braintree.",
+    "date": "2026-10-22",
+    "publisher": "WBUR",
+    "title": "The T plans to increase Red Line speeds between JFK and North Quincy",
+    "url": "https://www.wbur.org/news/2026/10/22/mbta-red-line-speeds-north-quincy-jfk",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
+   {
+    "h": "Clancy judge denies hearing on holdout juror",
+    "b": "A judge rejected the defense's request for an evidentiary hearing on the lone juror in Lindsay Clancy's trial, which ended in a mistrial.",
+    "date": "2026-10-22",
+    "publisher": "WBUR",
+    "title": "Clancy judge denies request for hearing on holdout juror",
+    "url": "https://www.wbur.org/news/2026/10/22/judge-sullivan-lindsay-clancy-lone-juror-defense-denial",
+    "gathered": "2026-10-22T18:43:19Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 62,
     "cond": "Mostly Cloudy",
-    "obs": "22 Oct 09:54 am EDT"
+    "obs": "22 Oct 13:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 61,
-     "text": "Mostly sunny, with a high near 61. North wind 11 to 14 mph, with gusts as high as 26 mph. "
+     "temp": 62,
+     "text": "Mostly sunny, with a high near 62. North wind 11 to 13 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 40,
-     "text": "Mostly clear, with a low around 40. North wind 9 to 14 mph. "
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42. North wind 9 to 14 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 53,
-     "text": "Sunny, with a high near 53. North wind 8 to 10 mph. "
+     "temp": 55,
+     "text": "Sunny, with a high near 55. North wind 8 to 10 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Patchy frost after 3am.  Otherwise, clear, with a low around 35. Light north wind. "
+     "temp": 38,
+     "text": "Clear, with a low around 38. Light north wind. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 57,
-     "text": "Patchy frost before 9am.  Otherwise, sunny, with a high near 57. Light northwest wind. "
+     "temp": 58,
+     "text": "Sunny, with a high near 58. Light west wind. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Patchy frost after 4am.  Otherwise, clear, with a low around 35. Calm wind. "
+     "temp": 40,
+     "text": "Clear, with a low around 40. Calm wind. "
     }
    ]
   },
@@ -165,7 +184,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -177,25 +196,28 @@
   },
   "local": [
    {
+    "h": "ComEd data center hookups could hit households",
+    "b": "ComEd expects to spend over $3 billion connecting data centers but has collected only about a quarter from developers, consumer groups warn.",
+    "date": "2026-10-22",
+    "publisher": "WBEZ",
+    "title": "Data centers will cost ComEd $3 billion but consumer groups worry Illinois households will be on the hook",
+    "url": "https://www.wbez.org/wbez-investigations/2026/10/22/data-centers-comed-3-billion-icc-consumer-groups-cub-illinois-households",
+    "published": "2026-10-22T16:48:11Z",
+    "updated": "2026-10-22T16:48:11Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
+   {
     "h": "Illinois doula law is failing families",
     "b": "An Illinois law meant to help new parents pay for doula care is falling short, families say.",
     "date": "2026-10-22",
-    "publisher": "WBEZ",
-    "title": "This Illinois law was supposed to help families. It’s failing them instead.",
     "url": "https://www.wbez.org/health-medicine/2026/10/22/this-illinois-law-was-supposed-to-help-families-its-failing-them-instead",
-    "published": "2026-10-22T10:30:00Z",
-    "updated": "2026-10-22T10:30:21Z",
     "gathered": "2026-10-22T14:00:06Z"
    },
    {
     "h": "Johnson revives corporate head tax in budget",
     "b": "Mayor Brandon Johnson's $17.6 billion budget resurrects his failed corporate head tax and proposes another increase in the cloud computing tax.",
     "date": "2026-10-21",
-    "publisher": "WBEZ",
-    "title": "Mayor Johnson renews fight for his failed corporate head tax",
     "url": "https://www.wbez.org/city-hall/2026/10/21/mayor-brandon-johnson-failed-corporate-head-tax-resurrected-proposed-budget",
-    "published": "2026-10-21T21:08:01Z",
-    "updated": "2026-10-21T21:08:01Z",
     "gathered": "2026-10-21T22:35:54Z"
    },
    {
@@ -243,46 +265,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 71,
     "cond": "Fair",
-    "obs": "22 Oct 08:53 am CDT"
+    "obs": "22 Oct 12:53 pm CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. Calm wind becoming northeast around 5 mph in the afternoon. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. East northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. East northeast wind around 5 mph. "
+     "temp": 54,
+     "text": "Mostly clear, with a low around 54. East northeast wind around 5 mph becoming southeast after midnight. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 67,
-     "text": "Mostly sunny, with a high near 67. South wind around 5 mph. "
+     "temp": 66,
+     "text": "Sunny, with a high near 66. Light south southeast wind becoming east southeast 5 to 10 mph in the morning. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Partly cloudy, with a low around 52. South southeast wind around 10 mph. "
+     "temp": 54,
+     "text": "Partly cloudy, with a low around 54. South southeast wind 5 to 10 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny, with a high near 68. South wind 5 to 10 mph. "
+     "temp": 69,
+     "text": "Mostly sunny, with a high near 69. South southeast wind around 10 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Partly cloudy, with a low around 53."
+     "temp": 56,
+     "text": "Partly cloudy, with a low around 56."
     }
    ]
   },
@@ -298,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -335,16 +357,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Partly Cloudy",
-    "obs": "22 Oct 06:58 am MDT"
+    "temp": 66,
+    "cond": "Mostly Cloudy",
+    "obs": "22 Oct 11:58 am MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 75,
-     "text": "A 30 percent chance of showers after 3pm.  Mostly cloudy, with a high near 75. Calm wind becoming south southwest around 5 mph in the afternoon. "
+     "text": "A 30 percent chance of showers after 3pm.  Mostly cloudy, with a high near 75. Calm wind becoming south southwest around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -390,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -445,37 +467,37 @@
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Showers and possibly a thunderstorm.  High near 69. Southeast wind 5 to 10 mph becoming southwest in the morning.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers likely and possibly a thunderstorm.  Mostly cloudy, with a high near 69. West southwest wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 60%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "A 30 percent chance of showers, mainly before 11pm.  Mostly cloudy, with a low around 56. Southwest wind around 5 mph becoming east northeast after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 20 percent chance of showers.  Mostly cloudy, with a low around 56. Southwest wind around 5 mph becoming east in the evening. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. Calm wind becoming southwest around 5 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 72. East northeast wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55. West southwest wind around 5 mph becoming north northeast after midnight. "
+     "text": "Clear, with a low around 55. West southwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. Calm wind becoming west southwest around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 76. Light and variable wind becoming west southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59."
+     "text": "Clear, with a low around 59."
     }
    ]
   },
@@ -491,7 +513,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -502,6 +524,46 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "MTA pulls bus fare enforcement teams",
+    "b": "The MTA is temporarily shutting down its EAGLE bus fare teams after a Brooklyn school dean was roughed up by agents, Chair Janno Lieber said.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "MTA suspending bus fare enforcement teams after altercations emerge",
+    "url": "https://gothamist.com/news/mta-suspending-bus-fare-enforcement-teams-after-altercations-emerge",
+    "published": "2026-10-22T16:50:54Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
+   {
+    "h": "Ex-Adams aide accused of $120K in kickbacks",
+    "b": "Anthony Herbert faces new federal charges that he took kickbacks from a nonprofit meant to fund community programs.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "Ex-Adams aide accused of pocketing kickbacks from community program funds",
+    "url": "https://gothamist.com/news/ex-adams-aide-accused-of-pocketing-kickbacks-from-community-program-funds",
+    "published": "2026-10-22T17:32:00Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
+   {
+    "h": "A and C lines get $1.9B signal upgrade",
+    "b": "The MTA will start a six-year project next month to install modern train signals on the A and C lines in Brooklyn and Queens.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "MTA to begin 6-year project to upgrade signal tech on A and C lines in Brooklyn and Queens",
+    "url": "https://gothamist.com/news/mta-to-begin-6-year-project-to-upgrade-signal-tech-on-a-and-c-lines-in-brooklyn-and-queens",
+    "published": "2026-10-22T16:59:51Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
+   {
+    "h": "Council to probe collapsed Hunts Point market deal",
+    "b": "The City Council will hold a hearing on why a $650 million deal to modernize the Hunts Point Produce Market fell apart.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "NYC Council to grill Mamdani officials on collapsed Hunts Point Produce Market deal",
+    "url": "https://gothamist.com/news/nyc-council-to-grill-mamdani-officials-on-collapsed-hunts-point-produce-market-deal",
+    "published": "2026-10-22T18:16:06Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
    {
     "h": "Fatal motorcycle crash closes GWB lanes",
     "b": "All upper-level lanes into New York on the George Washington Bridge closed during the morning rush after a motorcyclist was struck by a tractor-trailer.",
@@ -519,7 +581,7 @@
     "publisher": "Gothamist",
     "title": "Mamdani-backed housing bill will give nonprofits head start on buying NYC apartments",
     "url": "https://gothamist.com/news/mamdani-backed-housing-bill-will-give-nonprofits-head-start-on-buying-nyc-apartments",
-    "published": "2026-10-22T12:00:58Z",
+    "published": "2026-10-22T12:00:00Z",
     "gathered": "2026-10-22T14:00:06Z"
    },
    {
@@ -529,7 +591,7 @@
     "publisher": "Gothamist",
     "title": "Ballot questions ask NYC voters whether to cut red tape on outdoor dining, bike lanes",
     "url": "https://gothamist.com/news/ballot-questions-ask-nyc-voters-whether-to-cut-red-tape-on-outdoor-dining-bike-lanes",
-    "published": "2026-10-22T10:30:55Z",
+    "published": "2026-10-22T10:30:00Z",
     "gathered": "2026-10-22T14:00:06Z"
    },
    {
@@ -539,7 +601,7 @@
     "publisher": "Gothamist",
     "title": "The NYPD arrested a mom and took her kids' Christmas gifts. She never got them back.",
     "url": "https://gothamist.com/news/the-nypd-arrested-a-mom-and-took-her-kids-christmas-gifts-she-never-got-them-back",
-    "published": "2026-10-22T10:00:58Z",
+    "published": "2026-10-22T10:00:00Z",
     "gathered": "2026-10-22T10:12:34Z"
    },
    {
@@ -623,29 +685,39 @@
     "gathered": "2026-10-21T05:08:55Z"
    },
    {
-    "h": "Retired NYPD detective charged in GWB shooting",
-    "b": "A retired NYPD detective was arrested and charged with murder in the fatal shooting of a Rockland County man on the George Washington Bridge, police said.",
-    "date": "2026-10-21",
+    "h": "Ex-detective held on $1M bail in GWB shooting",
+    "b": "The former NYPD detective accused of killing a driver in a road rage shooting on the George Washington Bridge was held on $1 million bail at his arraignment.",
+    "date": "2026-10-22",
     "publisher": "Gothamist",
-    "title": "Retired NYPD detective charged with murder in George Washington Bridge shooting",
-    "url": "https://gothamist.com/news/former-nypd-detective-in-custody-after-george-washington-bridge-shooting",
-    "published": "2026-10-21T20:26:00Z",
-    "updated": "2026-10-21T21:43:00Z",
-    "gathered": "2026-10-21T22:35:54Z"
+    "title": "Former NYPD detective held on $1M bail after police say he shot driver on GWB",
+    "url": "https://gothamist.com/news/former-cop-who-fatally-shot-a-man-on-the-george-washington-bridge-held-on-1-million-bail",
+    "published": "2026-10-22T16:58:00Z",
+    "updated": "2026-10-22T18:12:00Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
+   {
+    "h": "Teen arrested in fatal Midtown subway shooting",
+    "b": "A 17-year-old was charged with murder in the fatal shooting of a Bronx man at a Midtown subway station on Saturday, police said.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "NYPD arrests 17-year-old in fatal Midtown subway platform shooting",
+    "url": "https://gothamist.com/news/nypd-arrests-17-year-old-in-fatal-midtown-subway-platform-shooting",
+    "published": "2026-10-22T18:16:00Z",
+    "gathered": "2026-10-22T18:43:19Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 64,
     "cond": "Fair",
-    "obs": "22 Oct 09:51 am EDT"
+    "obs": "22 Oct 13:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. North wind around 15 mph. "
+     "text": "Sunny, with a high near 65. North wind around 14 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Tonight",
@@ -691,7 +763,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -703,6 +775,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Storm warnings as 140km/h winds hit Brittany",
+    "b": "Météo France put Brittany on orange alert for winds up to 140km/h, with alerts extending to northern France and parts of the Paris region on Friday.",
+    "date": "2026-10-22",
+    "publisher": "The Local France",
+    "title": "Storm warnings as 140km/h winds forecast for Brittany",
+    "url": "https://www.thelocal.fr/20261022/storm-warnings-at-140km-h-winds-forecast-for-brittany",
+    "published": "2026-10-22T14:59:52Z",
+    "updated": "2026-10-22T14:59:53Z",
+    "gathered": "2026-10-22T18:43:19Z"
+   },
    {
     "h": "France moves to ban or curb Saturday protests",
     "b": "Macron said curfews and bans on protests by \"groups without legitimacy\" will be imposed for Oct. 24, though officially organised events including a Paris demo are allowed.",
@@ -777,7 +860,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "goodnews": []
  },
  {
@@ -823,37 +906,37 @@
      "name": "Today",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly sunny, with a high near 58. Light and variable wind becoming north around 6 mph in the afternoon. "
+     "text": "Partly sunny, with a high near 58. Calm wind becoming north around 6 mph in the afternoon. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly cloudy, with a low around 45. Light northeast wind. "
+     "temp": 46,
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 46. Light northeast wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 56,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 56. Calm wind becoming northwest around 5 mph. "
+     "temp": 57,
+     "text": "Mostly sunny, with a high near 57. Light north northwest wind. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Partly cloudy, with a low around 41. Light and variable wind. "
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42. Calm wind. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 55,
-     "text": "Mostly cloudy, with a high near 55. Light and variable wind. "
+     "temp": 56,
+     "text": "Partly sunny, with a high near 56. Light and variable wind. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "A 30 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 44."
+     "temp": 45,
+     "text": "A 40 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 45."
     }
    ]
   },
@@ -869,7 +952,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T16:13:00Z",
+  "updatedAt": "2026-10-22T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
