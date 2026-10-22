@@ -48,12 +48,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 78,
-     "text": "Sunny, with a high near 78. North wind around 5 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
@@ -82,6 +76,12 @@
      "kind": "low",
      "temp": 48,
      "text": "Clear, with a low around 48."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 69,
+     "text": "Sunny, with a high near 69."
     }
    ]
   },
@@ -97,7 +97,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -135,12 +135,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 62,
-     "text": "Mostly sunny, with a high near 62. North wind 11 to 13 mph, with gusts as high as 23 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
@@ -169,6 +163,12 @@
      "kind": "low",
      "temp": 40,
      "text": "Clear, with a low around 40. Calm wind. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Sunny, with a high near 62. Light southwest wind. "
     }
    ]
   },
@@ -184,7 +184,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -200,7 +200,7 @@
     "b": "ComEd expects to spend over $3 billion connecting data centers but has collected only about a quarter from developers, consumer groups warn.",
     "date": "2026-10-22",
     "publisher": "WBEZ",
-    "title": "Data centers will cost ComEd $3 billion but consumer groups worry Illinois households will be on the hook",
+    "title": "Data centers will cost ComEd $3 billion, but consumer groups worry Illinois households will be on the hook",
     "url": "https://www.wbez.org/wbez-investigations/2026/10/22/data-centers-comed-3-billion-icc-consumer-groups-cub-illinois-households",
     "published": "2026-10-22T16:48:11Z",
     "updated": "2026-10-22T16:48:11Z",
@@ -320,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -365,38 +365,38 @@
     {
      "name": "This Afternoon",
      "kind": "high",
-     "temp": 75,
-     "text": "A 30 percent chance of showers after 3pm.  Mostly cloudy, with a high near 75. Calm wind becoming south southwest around 5 mph. "
+     "temp": 72,
+     "text": "A 30 percent chance of showers, mainly after 3pm.  Mostly cloudy, with a high near 72. Calm wind becoming south southwest 5 to 7 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "A 30 percent chance of showers, mainly before 9pm.  Mostly cloudy, with a low around 56. South wind 5 to 10 mph, with gusts as high as 16 mph. "
+     "text": "A 30 percent chance of showers between midnight and 3am.  Cloudy, with a low around 56. South wind 6 to 9 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 81,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 81. Breezy, with a south southwest wind 10 to 16 mph, with gusts as high as 25 mph. "
+     "temp": 78,
+     "text": "Cloudy through mid morning, then gradual clearing, with a high near 78. Breezy, with a south wind 9 to 16 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Partly cloudy, with a low around 48. South southwest wind 6 to 11 mph becoming light and variable  after midnight. Winds could gust as high as 18 mph. "
+     "text": "Partly cloudy, with a low around 48. South southwest wind 8 to 13 mph becoming light and variable  in the evening. Winds could gust as high as 21 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 58,
-     "text": "A 20 percent chance of showers.  Mostly cloudy, with a high near 58. Light north wind becoming north northeast 6 to 11 mph in the morning. Winds could gust as high as 20 mph. "
+     "temp": 57,
+     "text": "Partly sunny, with a high near 57. Light northeast wind becoming north northeast 5 to 10 mph in the morning. Winds could gust as high as 21 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Showers likely.  Cloudy, with a low around 40. Chance of precipitation is 70%."
+     "temp": 41,
+     "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 41."
     }
    ]
   },
@@ -412,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -513,7 +513,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -714,12 +714,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. North wind around 14 mph, with gusts as high as 24 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
@@ -748,6 +742,12 @@
      "kind": "low",
      "temp": 46,
      "text": "Clear, with a low around 46."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Sunny, with a high near 63."
     }
    ]
   },
@@ -763,9 +763,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Forest Hills Stadium keeps concerts in neighbor deal",
+    "b": "A settlement ends years of litigation between the Queens venue and neighbors over noise, letting concerts continue for the foreseeable future.",
+    "date": "2026-10-22",
+    "publisher": "Gothamist",
+    "title": "Forest Hills Stadium can keep its concerts under deal with neighbors",
+    "url": "https://gothamist.com/news/forest-hills-stadium-can-keep-its-concerts-under-deal-with-neighbors",
+    "published": "2026-10-22T18:49:06Z",
+    "gathered": "2026-10-22T19:12:53Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -801,11 +812,7 @@
     "h": "2027 Tour de France routes revealed",
     "b": "The men's Tour will start in Edinburgh, and the women's race will finish atop a volcano in central France.",
     "date": "2026-10-22",
-    "publisher": "The Local France",
-    "title": "MAPS: Routes revealed for the 2027 Tour de France races",
     "url": "https://www.thelocal.fr/20261022/maps-routes-revealed-for-the-2027-tour-de-france-races",
-    "published": "2026-10-22T11:13:58Z",
-    "updated": "2026-10-22T11:21:04Z",
     "gathered": "2026-10-22T14:00:06Z"
    },
    {
@@ -860,7 +867,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "goodnews": []
  },
  {
@@ -952,7 +959,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T19:12:00Z",
+  "updatedAt": "2026-10-22T22:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

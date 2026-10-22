@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T19:12:00Z",
+ "updatedAt": "2026-10-22T22:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -514,11 +514,7 @@
    "h": "Saving for a starter home takes twice as long",
    "b": "A Center for Responsible Lending analysis finds the time needed to save for a down payment and closing costs has doubled since 2019.",
    "date": "2026-10-22",
-   "publisher": "KUOW",
-   "title": "How long does it take to save up for a starter home? Twice as long as it did in 2019",
    "url": "https://www.kuow.org/npr-news/2026-10-22/how-long-does-it-take-to-save-up-for-a-starter-home-twice-as-long-as-it-did-in-2019",
-   "published": "2026-10-22T09:00:00Z",
-   "updated": "2026-10-22T09:15:40Z",
    "gathered": "2026-10-22T10:12:34Z"
   },
   {
@@ -824,12 +820,6 @@
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 65,
-    "text": "Sunny, with a high near 65. North wind around 14 mph, with gusts as high as 24 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
     "temp": 49,
@@ -858,10 +848,27 @@
     "kind": "low",
     "temp": 46,
     "text": "Clear, with a low around 46."
+   },
+   {
+    "name": "Sunday",
+    "kind": "high",
+    "temp": 63,
+    "text": "Sunny, with a high near 63."
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "Forest Hills Stadium keeps concerts in neighbor deal",
+   "b": "A settlement ends years of litigation between the Queens venue and neighbors over noise, letting concerts continue for the foreseeable future.",
+   "date": "2026-10-22",
+   "publisher": "Gothamist",
+   "title": "Forest Hills Stadium can keep its concerts under deal with neighbors",
+   "url": "https://gothamist.com/news/forest-hills-stadium-can-keep-its-concerts-under-deal-with-neighbors",
+   "published": "2026-10-22T18:49:06Z",
+   "gathered": "2026-10-22T19:12:53Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",
