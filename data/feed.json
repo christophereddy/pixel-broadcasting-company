@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T04:12:00Z",
+ "updatedAt": "2026-10-23T07:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -145,6 +145,17 @@
  ],
  "international": [
   {
+   "h": "Venezuelans hold first national protest in two years",
+   "b": "Protesters demanded a date for elections to choose a successor to Nicolas Maduro, who was captured by US forces in January. Acting President Delcy Rodriguez has promised a vote.",
+   "date": "2026-10-23",
+   "place": "Caracas",
+   "tz": "America/Caracas",
+   "publisher": "Al Jazeera",
+   "title": "Venezuelans demand elections in first national protest in nearly two years",
+   "url": "https://www.aljazeera.com/news/2026/10/23/venezuelans-demand-elections-in-first-national-protest-in-nearly-two-years",
+   "gathered": "2026-10-23T04:12:39Z"
+  },
+  {
    "h": "Thousands protest Poland abortion ban",
    "b": "Demonstrators across Poland marked six years since the near-total abortion ban, calling for free and legal access.",
    "date": "2026-10-23",
@@ -172,8 +183,6 @@
    "date": "2026-10-22",
    "place": "Nagqu",
    "tz": "Asia/Shanghai",
-   "publisher": "Al Jazeera",
-   "title": "Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
    "url": "https://www.aljazeera.com/news/2026/10/22/magnitude-7-earthquake-kills-16-people-in-chinas-tibet-xinhua-reports",
    "gathered": "2026-10-22T22:37:55Z"
   },
@@ -315,6 +324,15 @@
  ],
  "business": [
   {
+   "h": "Tech stocks tumble on AI spending worries",
+   "b": "Tech stocks posted their steepest drop since June and the S&P 500 slid 1.21%, its biggest fall since late July, as investors fretted over AI spending.",
+   "date": "2026-10-23",
+   "publisher": "Al Jazeera",
+   "title": "US tech stocks tumble as investors fret over AI spending",
+   "url": "https://www.aljazeera.com/economy/2026/10/23/us-tech-stocks-tumble-as-investors-fret-over-ai-spending",
+   "gathered": "2026-10-23T04:12:39Z"
+  },
+  {
    "h": "Jobless claims fall to 194,000, lowest since July",
    "b": "Weekly applications for unemployment benefits fell to 194,000, and the four-week average dipped to 197,750.",
    "date": "2026-10-22",
@@ -340,11 +358,18 @@
  ],
  "sports": [
   {
+   "h": "Bears flagged for rare illegal forward handing",
+   "b": "The Bears became the first team in 16 years to be called for illegal forward handing, on a trick play against the Patriots that lost five yards.",
+   "date": "2026-10-23",
+   "publisher": "CBS Sports",
+   "title": "Rare NFL penalty: Bears become first team in 16 years to get flagged for illegal forward handoff",
+   "url": "https://www.cbssports.com/nfl/news/what-is-illegal-forward-handing-bears-patriots-nfl-penalty/",
+   "gathered": "2026-10-23T04:12:39Z"
+  },
+  {
    "h": "Utah DT Jamal Wallace suspended after arrest",
    "b": "Utah suspended Wallace indefinitely after his arrest on suspicion of distributing intimate images. A woman also accused him of rape, an affidavit shows.",
    "date": "2026-10-23",
-   "publisher": "CBS Sports",
-   "title": "Utah DT Jamal Wallace suspended indefinitely amid arrest for distributing intimate images, rape accusation",
    "url": "https://www.cbssports.com/college-football/news/jamal-wallace-utah-football-arrest-rape-accusation/",
    "gathered": "2026-10-23T01:45:14Z"
   },
@@ -492,15 +517,15 @@
  "weather": {
   "now": {
    "temp": 58,
-   "cond": "Fair",
-   "obs": "22 Oct 20:51 pm EDT"
+   "cond": "Partly Cloudy",
+   "obs": "22 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 49,
-    "text": "Clear, with a low around 49. North wind 9 to 14 mph. "
+    "text": "Clear, with a low around 49. North wind around 14 mph. "
    },
    {
     "name": "Friday",
