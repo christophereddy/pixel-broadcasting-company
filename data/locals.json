@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 74,
+    "temp": 64,
     "cond": "Fair",
-    "obs": "22 Oct 17:52 pm EDT"
+    "obs": "22 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,8 +96,8 @@
   "weather": {
    "now": {
     "temp": 57,
-    "cond": "A Few Clouds",
-    "obs": "22 Oct 17:54 pm EDT"
+    "cond": "Overcast",
+    "obs": "22 Oct 20:54 pm EDT"
    },
    "periods": [
     {
@@ -150,7 +150,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -161,6 +161,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "CPS approves $300K for family of bullied girl",
+    "b": "The school board approved a settlement for the mother of a Black student who endured more than two years of racist bullying at a Northwest Side school.",
+    "date": "2026-10-23",
+    "publisher": "WBEZ",
+    "title": "CPS approves $300,000 for family of girl who endured years of racist bullying",
+    "url": "https://www.wbez.org/education/2026/10/22/cps-approves-300-000-for-family-of-girl-who-endured-years-of-racist-bullying",
+    "published": "2026-10-23T00:58:34Z",
+    "updated": "2026-10-23T00:58:34Z",
+    "gathered": "2026-10-23T01:45:14Z"
+   },
+   {
+    "h": "CPS lunchroom workers win raises, avert strike",
+    "b": "The board approved a new contract for about 1,500 lunchroom workers that raises wage floors after more than a year of talks.",
+    "date": "2026-10-23",
+    "publisher": "WBEZ",
+    "title": "CPS board approves new lunchroom workers contract that raises wages",
+    "url": "https://www.wbez.org/education/2026/10/22/cps-board-approves-new-lunchroom-workers-contract-that-raises-wages",
+    "published": "2026-10-22T22:46:43Z",
+    "updated": "2026-10-22T22:46:43Z",
+    "gathered": "2026-10-23T01:45:14Z"
+   },
    {
     "h": "Chicago Shakespeare chief Kimberly Motes to leave",
     "b": "Motes will step down in November after three years as executive director to lead Hennepin Arts in Minneapolis.",
@@ -189,16 +211,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "22 Oct 16:53 pm CDT"
+    "obs": "22 Oct 19:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. East northeast wind around 5 mph becoming southeast after midnight. "
+     "text": "Mostly clear, with a low around 54. Southeast wind around 5 mph. "
     },
     {
      "name": "Friday",
@@ -244,7 +266,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -276,9 +298,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 74,
+    "temp": 62,
     "cond": "Mostly Cloudy",
-    "obs": "22 Oct 15:58 pm MDT"
+    "obs": "22 Oct 18:58 pm MDT"
    },
    "periods": [
     {
@@ -309,7 +331,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 41."
+     "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 41. East northeast wind 5 to 7 mph becoming calm  in the evening. "
     },
     {
      "name": "Sunday",
@@ -331,7 +353,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -396,7 +418,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Clear, with a low around 59."
+     "text": "Clear, with a low around 59. West wind around 5 mph becoming north northeast in the evening. "
     },
     {
      "name": "Sunday",
@@ -418,7 +440,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -534,16 +556,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 58,
     "cond": "Fair",
-    "obs": "22 Oct 17:51 pm EDT"
+    "obs": "22 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49. North wind 8 to 14 mph. "
+     "text": "Clear, with a low around 49. North wind 9 to 14 mph. "
     },
     {
      "name": "Friday",
@@ -589,7 +611,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -679,7 +701,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "goodnews": []
  },
  {
@@ -761,8 +783,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T01:12:00Z",
+  "updatedAt": "2026-10-23T04:12:00Z",
   "slug": "seattle-wa",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Bass drummer hired to drown out street preacher",
+    "b": "A Seattle resident paid a drummer to follow a megaphone-wielding street preacher for over an hour, and the clips went viral on Reddit.",
+    "date": "2026-10-23",
+    "publisher": "KUOW",
+    "title": "Can’t beat them, join them. Bass drummer hired to ‘drown out’ Seattle street preachers",
+    "url": "https://www.kuow.org/news-stories/2026-10-22/cant-beat-them-join-them-bass-drummer-hired-to-drown-out-seattle-street-preachers",
+    "published": "2026-10-22T23:32:06Z",
+    "updated": "2026-10-22T23:36:37Z",
+    "gathered": "2026-10-23T01:45:14Z"
+   }
+  ]
  }
 ]
