@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T07:13:00Z",
+ "updatedAt": "2026-10-23T10:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Iran war: Trump hints at new strikes",
-   "b": "Al Jazeera's live coverage: Trump signals new air strikes and says the US has \"knocked the hell out of\" Iran.",
+   "h": "Ministers meet in Istanbul over Hormuz",
+   "b": "Al Jazeera's live coverage: European and Middle East foreign ministers are in Istanbul for talks on the Strait of Hormuz and regional security.",
    "date": "2026-10-23",
    "publisher": "Al Jazeera",
-   "title": "Trump signals new air strikes, says US knocked ‘hell out’ of Iran",
+   "title": "European, Middle East ministers in Istanbul for talks over Hormuz, security",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/23/trump-hints-new-strikes-says-us-knocked-hell-out-of-iran",
    "gathered": "2026-10-23T01:45:14Z"
   }
@@ -145,6 +145,17 @@
  ],
  "international": [
   {
+   "h": "Gunmen attack Israeli troops near Telem",
+   "b": "The Israeli military said it killed two gunmen who attacked a reserve battalion near the Telem settlement in the occupied West Bank. At least six soldiers were injured, two of them critically.",
+   "date": "2026-10-23",
+   "place": "Hebron",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israeli military kills 2 in Hebron gun battle as tension soars in West Bank",
+   "url": "https://www.aljazeera.com/news/2026/10/23/israel-arrests-36-palestinians-in-the-west-bank-attacks-on-farmers-ramp-up",
+   "gathered": "2026-10-23T07:50:21Z"
+  },
+  {
    "h": "Venezuelans hold first national protest in two years",
    "b": "Protesters demanded a date for elections to choose a successor to Nicolas Maduro, who was captured by US forces in January. Acting President Delcy Rodriguez has promised a vote.",
    "date": "2026-10-23",
@@ -161,8 +172,6 @@
    "date": "2026-10-23",
    "place": "Warsaw",
    "tz": "Europe/Warsaw",
-   "publisher": "Al Jazeera",
-   "title": "Thousands protest across Poland for access to free and legal abortions",
    "url": "https://www.aljazeera.com/news/2026/10/23/thousands-protest-across-poland-for-access-to-free-and-legal-abortions",
    "gathered": "2026-10-23T01:45:14Z"
   },
@@ -320,6 +329,17 @@
    "tz": "America/New_York",
    "url": "https://www.aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming",
    "gathered": "2026-10-22T01:42:06Z"
+  },
+  {
+   "h": "Grenade drill sparked deadly Alberta base fire",
+   "b": "Canada's army says a grenade launcher exercise sparked the fire that killed four people at the Wainwright base in Alberta, and high winds spread the flames.",
+   "date": "2026-10-23",
+   "place": "Wainwright",
+   "tz": "America/Edmonton",
+   "publisher": "Al Jazeera",
+   "title": "Grenade exercise sparked deadly fire at Canada military base, army says",
+   "url": "https://www.aljazeera.com/news/2026/10/23/grenade-exercise-sparked-deadly-fire-at-canada-military-base-army-says",
+   "gathered": "2026-10-23T07:50:21Z"
   }
  ],
  "business": [
@@ -516,46 +536,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
-   "cond": "Partly Cloudy",
-   "obs": "22 Oct 23:51 pm EDT"
+   "temp": 54,
+   "cond": "Fair",
+   "obs": "23 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 49,
-    "text": "Clear, with a low around 49. North wind around 14 mph. "
-   },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 60,
-    "text": "Sunny, with a high near 60. North wind 7 to 10 mph. "
+    "text": "Sunny, with a high near 60. Northeast wind 8 to 13 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 44,
-    "text": "Mostly clear, with a low around 44. North wind around 7 mph. "
+    "temp": 46,
+    "text": "Mostly clear, with a low around 46. North wind around 7 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 63,
-    "text": "Sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable  in the afternoon. "
+    "temp": 61,
+    "text": "Mostly sunny, with a high near 61. North wind 5 to 7 mph becoming light and variable  in the morning. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 47,
-    "text": "Mostly clear, with a low around 47. Light and variable wind. "
+    "temp": 45,
+    "text": "Mostly clear, with a low around 45. West wind 3 to 5 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 64,
     "text": "Sunny, with a high near 64."
+   },
+   {
+    "name": "Sunday Night",
+    "kind": "low",
+    "temp": 48,
+    "text": "Clear, with a low around 48."
    }
   ]
  },
