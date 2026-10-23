@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T16:13:00Z",
+ "updatedAt": "2026-10-23T19:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,9 +7,11 @@
  },
  "world": [
   {
-   "h": "Netanyahu orders West Bank lockdown",
-   "b": "Al Jazeera's live coverage: Netanyahu announces a 'full lockdown' of the occupied West Bank after a shooting in Hebron.",
+   "h": "Israel plans biggest West Bank operation in decades",
+   "b": "Al Jazeera's live coverage: Netanyahu says the Israeli army is preparing its biggest operation in the occupied West Bank in decades.",
    "date": "2026-10-23",
+   "publisher": "Al Jazeera",
+   "title": "Netanyahu says army preparing for biggest operation in West Bank in decades",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/23/trump-hints-new-strikes-says-us-knocked-hell-out-of-iran",
    "gathered": "2026-10-23T01:45:14Z"
   }
@@ -23,7 +25,7 @@
    "title": "Bird Flu Is Raging on a Mink Farm. It Could Spark a Human Pandemic, Experts Say, but Officials Won’t Act.",
    "url": "https://www.propublica.org/article/bird-flu-mink-farm-utah-human-risk",
    "published": "2026-10-23T09:00:00Z",
-   "updated": "2026-10-23T09:00:05Z",
+   "updated": "2026-10-23T16:22:39Z",
    "gathered": "2026-10-23T10:14:33Z"
   },
   {
@@ -61,17 +63,45 @@
    "date": "2026-10-22",
    "url": "https://www.aljazeera.com/news/2026/10/22/trump-administration-seeks-supreme-court-approval-to-build-big-bend-wall",
    "gathered": "2026-10-22T04:12:16Z"
+  },
+  {
+   "h": "USDA moves to fight SNAP card theft",
+   "b": "The USDA issued a proposed rule Friday to fight theft from outdated SNAP benefit cards, after ProPublica reported on millions in stolen benefits. The rule had been in the works since 2023.",
+   "date": "2026-10-23",
+   "publisher": "ProPublica",
+   "title": "After Millions in Stolen SNAP Benefits, Trump Administration Moves to Fight Theft",
+   "url": "https://www.propublica.org/article/snap-theft-chip-cards-trump-rule",
+   "published": "2026-10-23T17:45:00Z",
+   "updated": "2026-10-23T17:45:24Z",
+   "gathered": "2026-10-23T18:36:56Z"
   }
  ],
  "politics": [
   {
+   "h": "2 ex-FBI officials charged over Hunter Biden laptop",
+   "b": "Nikki Floris and Bradley Benavides, former leaders of a disbanded foreign election interference task force, are charged with making false statements. They appeared in federal court in Washington.",
+   "date": "2026-10-23",
+   "publisher": "PBS NewsHour",
+   "title": "2 ex-FBI officials charged with making false statements about Hunter Biden's laptop",
+   "url": "https://www.pbs.org/newshour/politics/2-ex-fbi-officials-charged-with-making-false-statements-about-hunter-bidens-laptop",
+   "published": "2026-10-23T15:19:31Z",
+   "gathered": "2026-10-23T18:36:56Z"
+  },
+  {
+   "h": "Supreme Court lets N.H. bar student IDs for voting",
+   "b": "The Supreme Court allowed New Hampshire to fully ban student IDs as voter identification in the midterms, citing the principle against changing rules close to Election Day. Justice Jackson dissented.",
+   "date": "2026-10-23",
+   "publisher": "PBS NewsHour",
+   "title": "Supreme Court allows New Hampshire to fully ban student IDs for voting in midterms",
+   "url": "https://www.pbs.org/newshour/politics/supreme-court-allows-new-hampshire-to-fully-ban-student-ids-for-voting-in-midterms",
+   "published": "2026-10-23T15:41:49Z",
+   "gathered": "2026-10-23T18:36:56Z"
+  },
+  {
    "h": "RFK Jr. adviser Calley Means resigns",
    "b": "Means stepped down amid growing MAHA discontent over what backers call slow progress on food and glyphosate.",
    "date": "2026-10-23",
-   "publisher": "PBS NewsHour",
-   "title": "RFK Jr. adviser Calley Means resigns amid growing MAHA discontent over lack of progress",
    "url": "https://www.pbs.org/newshour/politics/rfk-jr-adviser-calley-means-resigns-amid-growing-maha-discontent-over-lack-of-progress",
-   "published": "2026-10-23T00:51:44Z",
    "gathered": "2026-10-23T01:45:14Z"
   },
   {
@@ -134,10 +164,7 @@
    "h": "Omar to move out of DC home after search",
    "b": "Rep. Ilhan Omar said she will move out of her Washington home after a federal search and is \"confident\" she did nothing wrong, as prosecutors probe her family's immigration paperwork.",
    "date": "2026-10-23",
-   "publisher": "PBS NewsHour",
-   "title": "Rep. Ilhan Omar says she will move out of her Washington, DC, home after federal search",
    "url": "https://www.pbs.org/newshour/politics/rep-ilhan-omar-says-she-will-move-out-of-her-washington-dc-home-after-federal-search",
-   "published": "2026-10-23T00:25:01Z",
    "gathered": "2026-10-23T01:45:14Z"
   },
   {
@@ -150,13 +177,34 @@
  ],
  "international": [
   {
+   "h": "Gunmen kill 7 at church funeral in Jordan",
+   "b": "Gunmen opened fire at a church during a funeral in Karak, killing seven and wounding 34. The government said investigations are under way and did not say whether any attackers were caught.",
+   "date": "2026-10-23",
+   "place": "Karak",
+   "tz": "Asia/Amman",
+   "publisher": "PBS NewsHour",
+   "title": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 34",
+   "url": "https://www.pbs.org/newshour/world/gunmen-open-fire-at-a-church-during-a-funeral-in-jordan-killing-7-and-wounding-34",
+   "published": "2026-10-23T18:20:06Z",
+   "gathered": "2026-10-23T18:36:56Z"
+  },
+  {
+   "h": "Greece bans social media for under-15s",
+   "b": "Greece's governing New Democracy party used its majority to pass a ban on social media for children under 15, with no other party backing it. It takes effect January 1, 2027.",
+   "date": "2026-10-23",
+   "place": "Athens",
+   "tz": "Europe/Athens",
+   "publisher": "Al Jazeera",
+   "title": "Greece joins push to ban social media for minors",
+   "url": "https://www.aljazeera.com/news/2026/10/23/greece-joins-push-to-ban-social-media-for-minors",
+   "gathered": "2026-10-23T18:36:56Z"
+  },
+  {
    "h": "South Korea invites North to border talks",
    "b": "Seoul invited Pyongyang to military talks to confirm the land demarcation line, restore military communication lines and prevent accidental clashes, as border activity increases.",
    "date": "2026-10-23",
    "place": "Seoul",
    "tz": "Asia/Seoul",
-   "publisher": "Al Jazeera",
-   "title": "South Korea invites North for military talks over border",
    "url": "https://www.aljazeera.com/news/2026/10/23/south-korea-invites-north-for-military-talks-over-border",
    "gathered": "2026-10-23T13:42:44Z"
   },
@@ -361,11 +409,18 @@
  ],
  "business": [
   {
+   "h": "Employer health premiums climb again",
+   "b": "Premiums for employer-sponsored insurance rose 9% this year on average, a KFF survey finds, and are on track to rise again as open enrollment begins.",
+   "date": "2026-10-23",
+   "publisher": "Marketplace",
+   "title": "Open enrollment is here and the cost of employer health plans is going up — again",
+   "url": "https://www.marketplace.org/story/2026/10/23/employersponsored-health-insurance-costs-are-climbing-again",
+   "gathered": "2026-10-23T18:36:56Z"
+  },
+  {
    "h": "IEA chief warns of hard winter for Europe",
    "b": "IEA head Fatih Birol warned Europe is particularly vulnerable to Hormuz energy disruptions and will likely face rising LNG costs in the coming months, even if peace returns to the Gulf.",
    "date": "2026-10-23",
-   "publisher": "Al Jazeera",
-   "title": "‘Life will not be easy for Europe this year,’ IEA chief warns",
    "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns",
    "gathered": "2026-10-23T13:42:44Z"
   },
@@ -373,11 +428,7 @@
    "h": "Holiday airfares soar with jet fuel near record",
    "b": "Experts expect holiday airfares to be the highest in years as airlines scramble to cover jet fuel costs that are close to an all-time high in the U.S.",
    "date": "2026-10-23",
-   "publisher": "KUOW",
-   "title": "With jet fuel prices near a record, holiday airfares soar higher",
    "url": "https://www.kuow.org/npr-news/2026-10-23/with-jet-fuel-prices-near-a-record-holiday-airfares-soar-higher",
-   "published": "2026-10-23T09:00:00Z",
-   "updated": "2026-10-23T09:17:58Z",
    "gathered": "2026-10-23T10:14:33Z"
   },
   {
@@ -464,6 +515,16 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "Countdown clocks coming to NYC bus stops",
+   "b": "The city transportation department struck a deal to bring countdown clocks to more bus stops, so riders across the five boroughs can see how long they'll wait.",
+   "date": "2026-10-23",
+   "publisher": "Gothamist",
+   "title": "Countdown clocks are coming to an NYC bus stop near you",
+   "url": "https://gothamist.com/news/countdown-clocks-are-coming-to-an-nyc-bus-stop-near-you",
+   "published": "2026-10-23T14:59:08Z",
+   "gathered": "2026-10-23T18:36:56Z"
+  },
   {
    "h": "MTA pulls bus fare enforcement teams",
    "b": "The MTA is temporarily shutting down its EAGLE bus fare teams after a Brooklyn school dean was roughed up by agents, Chair Janno Lieber said.",
@@ -561,53 +622,52 @@
    "publisher": "Gothamist",
    "title": "NYPD arrests 17-year-old in fatal Midtown subway platform shooting",
    "url": "https://gothamist.com/news/nypd-arrests-17-year-old-in-fatal-midtown-subway-platform-shooting",
-   "published": "2026-10-22T18:16:00Z",
-   "updated": "2026-10-22T22:07:00Z",
+   "published": "2026-10-23T15:33:00Z",
    "gathered": "2026-10-22T18:43:19Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "23 Oct 08:51 am EDT"
+   "obs": "23 Oct 13:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
-    "temp": 59,
-    "text": "Sunny, with a high near 59. Northeast wind 8 to 15 mph. "
+    "temp": 62,
+    "text": "Sunny, with a high near 62. Northeast wind around 9 mph. "
    },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 43,
-    "text": "Mostly clear, with a low around 43. East wind around 7 mph becoming north after midnight. "
+    "text": "Increasing clouds, with a low around 43. East wind around 8 mph becoming north after midnight. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 61,
-    "text": "Mostly sunny, with a high near 61. North wind 5 to 7 mph becoming light and variable  in the morning. "
+    "temp": 64,
+    "text": "Partly sunny, with a high near 64. North wind 5 to 7 mph becoming light and variable  in the morning. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 45,
-    "text": "Mostly clear, with a low around 45. West wind 3 to 5 mph. "
+    "temp": 42,
+    "text": "Mostly clear, with a low around 42. Light and variable wind becoming northwest around 5 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 64,
-    "text": "Sunny, with a high near 64. Northwest wind around 5 mph becoming calm  in the morning. "
+    "temp": 68,
+    "text": "Sunny, with a high near 68. Light and variable wind. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Clear, with a low around 48."
+    "temp": 46,
+    "text": "Clear, with a low around 46."
    }
   ]
  },
