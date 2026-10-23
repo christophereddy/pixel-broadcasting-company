@@ -8,9 +8,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 58,
     "cond": "Fair",
-    "obs": "23 Oct 05:52 am EDT"
+    "obs": "23 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,11 +75,18 @@
   },
   "local": [
    {
+    "h": "Hasbro CEO explains move to Boston",
+    "b": "Hasbro CEO Chris Cocks spoke with WBUR about relocating the toymaker to Boston's Seaport after more than 100 years in Rhode Island.",
+    "date": "2026-10-23",
+    "publisher": "WBUR",
+    "title": "Hasbro's CEO on the company's relocation to Boston",
+    "url": "https://www.wbur.org/news/2026/10/23/hasbro-chris-cocks-pawtucket-seaport-relocation",
+    "gathered": "2026-10-23T13:42:44Z"
+   },
+   {
     "h": "Harvard Book Store opening downtown Boston shop",
     "b": "Harvard Book Store plans to open a second location at 33 Union St. in downtown Boston this fall. The Cambridge store will remain the flagship.",
     "date": "2026-10-23",
-    "publisher": "WBUR",
-    "title": "Harvard Book Store to open second location in downtown Boston",
     "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
     "gathered": "2026-10-23T10:14:33Z"
    },
@@ -100,40 +107,40 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Fair",
-    "obs": "23 Oct 05:54 am EDT"
+    "temp": 47,
+    "cond": "A Few Clouds",
+    "obs": "23 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 55,
-     "text": "Sunny, with a high near 55. North wind 10 to 14 mph. "
+     "temp": 58,
+     "text": "Sunny, with a high near 58. North wind 9 to 13 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 37,
-     "text": "Clear, with a low around 37. Northwest wind 3 to 6 mph. "
+     "temp": 40,
+     "text": "Clear, with a low around 40. North wind 5 to 8 mph becoming calm  after midnight. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 58,
-     "text": "Sunny, with a high near 58. Light west wind. "
+     "temp": 60,
+     "text": "Sunny, with a high near 60. Northwest wind around 6 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Patchy frost after 2am.  Otherwise, clear, with a low around 35. Calm wind. "
+     "temp": 42,
+     "text": "Clear, with a low around 42. West wind 3 to 5 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 62,
-     "text": "Patchy frost before 7am.  Otherwise, sunny, with a high near 62. Calm wind becoming southwest around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 62. Calm wind becoming southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -155,7 +162,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -166,6 +173,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Kennedy Expressway delays persist",
+    "b": "A WBEZ and Sun-Times analysis of 22 years of drive-time data finds Kennedy Expressway delays persist a year after the three-year construction project ended.",
+    "date": "2026-10-23",
+    "publisher": "WBEZ",
+    "title": "3 years later, Kennedy Expressway traffic nightmare lives on",
+    "url": "https://www.wbez.org/transportation/2026/10/23/kennedy-expressway-construction-commuters-illinois-department-transportation-pritzker",
+    "published": "2026-10-23T11:34:40Z",
+    "updated": "2026-10-23T11:34:40Z",
+    "gathered": "2026-10-23T13:42:44Z"
+   },
    {
     "h": "CPS approves $300K for family of bullied girl",
     "b": "The school board approved a settlement for the mother of a Black student who endured more than two years of racist bullying at a Northwest Side school.",
@@ -192,11 +210,7 @@
     "h": "Chicago Shakespeare chief Kimberly Motes to leave",
     "b": "Motes will step down in November after three years as executive director to lead Hennepin Arts in Minneapolis.",
     "date": "2026-10-22",
-    "publisher": "WBEZ",
-    "title": "Chicago Shakespeare Theater chief Kimberly Motes to step down",
     "url": "https://www.wbez.org/theater/2026/10/22/chicago-shakespeare-theater-kimberly-motes-stepping-down",
-    "published": "2026-10-22T19:49:44Z",
-    "updated": "2026-10-22T19:50:09Z",
     "gathered": "2026-10-22T22:37:55Z"
    },
    {
@@ -218,14 +232,14 @@
    "now": {
     "temp": 51,
     "cond": "Fair",
-    "obs": "23 Oct 04:53 am CDT"
+    "obs": "23 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. South southeast wind around 5 mph. "
+     "text": "Sunny, with a high near 68. East wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -271,18 +285,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Why Illinois is America's pumpkin capital",
     "b": "Farmers in downstate Morton, the self-proclaimed pumpkin capital, explain how Illinois grows more pumpkins than anywhere else.",
     "date": "2026-10-22",
-    "publisher": "WBEZ",
-    "title": "Illinois is America’s pumpkin capital; here's why",
     "url": "https://www.wbez.org/food-drink/2026/10/22/illinois-pumpkin-capital-united-states-morton-libby",
-    "published": "2026-10-22T21:07:07Z",
-    "updated": "2026-10-22T21:11:15Z",
     "gathered": "2026-10-22T22:37:55Z"
    },
    {
@@ -303,16 +313,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Mostly Cloudy and Breezy",
-    "obs": "23 Oct 02:58 am MDT"
+    "temp": 61,
+    "cond": "Mostly Cloudy",
+    "obs": "23 Oct 06:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 78,
-     "text": "Cloudy through mid morning, then gradual clearing, with a high near 78. Breezy, with a south wind 9 to 16 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 78. Breezy, with a south southwest wind 9 to 16 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -358,7 +368,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -369,6 +379,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Inglewood breaks ground on stadium shuttle",
+    "b": "Inglewood broke ground on the $287.5 million Inglewood Transit Connector, which will link the Metro K Line to the city's stadium district. Officials hope it revives the Market Street corridor.",
+    "date": "2026-10-23",
+    "publisher": "LAist",
+    "title": "Inglewood breaks ground on a new $287.5M stadium shuttle network",
+    "url": "https://laist.com/news/transportation/inglewood-breaks-ground-on-a-new-287-5m-stadium-shuttle-network",
+    "published": "2026-10-23T12:00:00Z",
+    "updated": "2026-10-23T11:59:59Z",
+    "gathered": "2026-10-23T13:42:44Z"
+   },
    {
     "h": "LA in mediation over $1.4B sidewalk settlement",
     "b": "Monitors say the city may be breaching a settlement to fix sidewalks and build curb ramps as repair requests pile up.",
@@ -384,11 +405,7 @@
     "h": "California cities move to ban data centers",
     "b": "Local communities are pushing beyond new state disclosure laws, with some cities banning new data centers.",
     "date": "2026-10-22",
-    "publisher": "LAist",
-    "title": "California cities pull the plug on data centers after state regulations don’t scale up fast enough",
     "url": "https://laist.com/news/politics/california-data-centers-bans",
-    "published": "2026-10-22T20:30:00Z",
-    "updated": "2026-10-22T20:30:00Z",
     "gathered": "2026-10-22T22:37:55Z"
    }
   ],
@@ -396,13 +413,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
      "text": "Mostly sunny, with a high near 72. East northeast wind around 5 mph becoming southwest in the afternoon. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 55,
      "text": "Mostly clear, with a low around 55. West southwest wind around 5 mph becoming calm  in the evening. "
@@ -423,7 +440,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 78,
-     "text": "Sunny, with a high near 78."
+     "text": "Sunny, with a high near 78. Calm wind becoming west around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -445,7 +462,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -543,8 +560,7 @@
     "publisher": "Gothamist",
     "title": "Former NYPD detective held on $1M bail after police say he shot driver on GWB",
     "url": "https://gothamist.com/news/former-cop-who-fatally-shot-a-man-on-the-george-washington-bridge-held-on-1-million-bail",
-    "published": "2026-10-22T16:58:00Z",
-    "updated": "2026-10-22T18:12:00Z",
+    "published": "2026-10-22T18:12:00Z",
     "gathered": "2026-10-22T18:43:19Z"
    },
    {
@@ -563,20 +579,20 @@
    "now": {
     "temp": 51,
     "cond": "Fair",
-    "obs": "23 Oct 05:51 am EDT"
+    "obs": "23 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. Northeast wind 8 to 14 mph. "
+     "temp": 59,
+     "text": "Sunny, with a high near 59. Northeast wind 8 to 15 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 46,
-     "text": "Mostly clear, with a low around 46. North wind around 7 mph. "
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43. East wind around 7 mph becoming north after midnight. "
     },
     {
      "name": "Saturday",
@@ -616,7 +632,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -640,14 +656,25 @@
   },
   "local": [
    {
+    "h": "EU approves new rights for travellers",
+    "b": "The European Parliament gave final approval to new passenger safeguards, including full refunds for cancelled flights booked through travel agents or online platforms. It passed 652 to 2.",
+    "date": "2026-10-23",
+    "publisher": "The Local France",
+    "title": "EU parliament approves more safeguards for travellers in Europe",
+    "url": "https://www.thelocal.fr/20261023/eu-parliament-approves-more-safeguards-for-travellers-in-europe",
+    "published": "2026-10-23T12:49:21Z",
+    "updated": "2026-10-23T12:49:27Z",
+    "gathered": "2026-10-23T13:42:44Z"
+   },
+   {
     "h": "Gunman kills one, wounds four near Paris",
     "b": "A man opened fire from a vehicle in Trappes and then La Verrière on Friday morning before being arrested in nearby Coignières. One person died; the motive is not known.",
     "date": "2026-10-23",
     "publisher": "The Local France",
-    "title": "Gunman kills one and wounds four in town outside Paris",
+    "title": "Gunman kills one and wounds four in suspected terror attack in town outside Paris",
     "url": "https://www.thelocal.fr/20261023/gunman-kills-one-and-wounds-four-in-town-outside-paris",
     "published": "2026-10-23T10:01:38Z",
-    "updated": "2026-10-23T10:01:40Z",
+    "updated": "2026-10-23T13:32:48Z",
     "gathered": "2026-10-23T10:14:33Z"
    },
    {
@@ -669,11 +696,13 @@
     "gathered": "2026-10-23T10:14:33Z"
    },
    {
-    "h": "France moves to ban or curb Saturday protests",
-    "b": "Macron said curfews and bans on protests by \"groups without legitimacy\" will be imposed for Oct. 24, though officially organised events including a Paris demo are allowed.",
-    "date": "2026-10-22",
-    "url": "https://www.thelocal.fr/20261022/french-authorities-seek-to-ban-or-curb-october-24th-protests",
-    "gathered": "2026-10-22T14:00:06Z"
+    "h": "France tightens security before weekend protests",
+    "b": "Macron was due to meet his defence council and security forces Friday as cities limited gatherings and public transport. Only union demonstrations will be authorised this weekend, drawing criticism from student groups.",
+    "date": "2026-10-23",
+    "publisher": "Al Jazeera",
+    "title": "France tightens security in anticipation of weekend protests",
+    "url": "https://www.aljazeera.com/news/2026/10/23/france-tightens-security-in-anticipation-of-weekend-protests",
+    "gathered": "2026-10-23T13:42:44Z"
    },
    {
     "h": "2027 Tour de France routes revealed",
@@ -720,7 +749,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "goodnews": []
  },
  {
@@ -749,13 +778,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Mostly sunny, with a high near 56. Light and variable wind becoming northwest around 5 mph. "
+     "text": "Mostly sunny, with a high near 56. Calm wind becoming northwest around 5 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
      "text": "Mostly clear, with a low around 42. Light and variable wind. "
@@ -776,7 +805,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 57,
-     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 57. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 57. Light and variable wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday Night",
@@ -798,7 +827,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T13:22:00Z",
+  "updatedAt": "2026-10-23T16:13:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T13:22:00Z",
+ "updatedAt": "2026-10-23T16:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Netanyahu orders West Bank lockdown",
    "b": "Al Jazeera's live coverage: Netanyahu announces a 'full lockdown' of the occupied West Bank after a shooting in Hebron.",
    "date": "2026-10-23",
-   "publisher": "Al Jazeera",
-   "title": "Netanyahu announces ‘full lockdown’ of West Bank after shooting in Hebron",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/23/trump-hints-new-strikes-says-us-knocked-hell-out-of-iran",
    "gathered": "2026-10-23T01:45:14Z"
   }
@@ -152,13 +150,22 @@
  ],
  "international": [
   {
+   "h": "South Korea invites North to border talks",
+   "b": "Seoul invited Pyongyang to military talks to confirm the land demarcation line, restore military communication lines and prevent accidental clashes, as border activity increases.",
+   "date": "2026-10-23",
+   "place": "Seoul",
+   "tz": "Asia/Seoul",
+   "publisher": "Al Jazeera",
+   "title": "South Korea invites North for military talks over border",
+   "url": "https://www.aljazeera.com/news/2026/10/23/south-korea-invites-north-for-military-talks-over-border",
+   "gathered": "2026-10-23T13:42:44Z"
+  },
+  {
    "h": "Haredi draft dominates Israel's election",
    "b": "Whether Israel's ultra-Orthodox minority should serve in the military has come to dominate the campaign ahead of the October 27 election. An estimated 80,000 Haredi men aged 18 to 24 are avoiding service.",
    "date": "2026-10-23",
    "place": "Jerusalem",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Ultra-Orthodox conscription debate ignites Israel’s election battleground",
    "url": "https://www.aljazeera.com/news/2026/10/23/ultra-orthodox-conscription-debate-ignites-israels-election-battleground",
    "gathered": "2026-10-23T10:14:33Z"
   },
@@ -168,8 +175,6 @@
    "date": "2026-10-23",
    "place": "Hebron",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Israel preparing full lockdown of occupied West Bank after Hebron gunfight",
    "url": "https://www.aljazeera.com/news/2026/10/23/israel-arrests-36-palestinians-in-the-west-bank-attacks-on-farmers-ramp-up",
    "gathered": "2026-10-23T07:50:21Z"
   },
@@ -179,8 +184,6 @@
    "date": "2026-10-23",
    "place": "Caracas",
    "tz": "America/Caracas",
-   "publisher": "Al Jazeera",
-   "title": "Venezuelans demand elections in first national protest in nearly two years",
    "url": "https://www.aljazeera.com/news/2026/10/23/venezuelans-demand-elections-in-first-national-protest-in-nearly-two-years",
    "gathered": "2026-10-23T04:12:39Z"
   },
@@ -352,13 +355,20 @@
    "date": "2026-10-23",
    "place": "Wainwright",
    "tz": "America/Edmonton",
-   "publisher": "Al Jazeera",
-   "title": "Grenade exercise sparked deadly fire at Canada military base, army says",
    "url": "https://www.aljazeera.com/news/2026/10/23/grenade-exercise-sparked-deadly-fire-at-canada-military-base-army-says",
    "gathered": "2026-10-23T07:50:21Z"
   }
  ],
  "business": [
+  {
+   "h": "IEA chief warns of hard winter for Europe",
+   "b": "IEA head Fatih Birol warned Europe is particularly vulnerable to Hormuz energy disruptions and will likely face rising LNG costs in the coming months, even if peace returns to the Gulf.",
+   "date": "2026-10-23",
+   "publisher": "Al Jazeera",
+   "title": "‘Life will not be easy for Europe this year,’ IEA chief warns",
+   "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns",
+   "gathered": "2026-10-23T13:42:44Z"
+  },
   {
    "h": "Holiday airfares soar with jet fuel near record",
    "b": "Experts expect holiday airfares to be the highest in years as airlines scramble to cover jet fuel costs that are close to an all-time high in the U.S.",
@@ -374,8 +384,6 @@
    "h": "Tech stocks tumble on AI spending worries",
    "b": "Tech stocks posted their steepest drop since June and the S&P 500 slid 1.21%, its biggest fall since late July, as investors fretted over AI spending.",
    "date": "2026-10-23",
-   "publisher": "Al Jazeera",
-   "title": "US tech stocks tumble as investors fret over AI spending",
    "url": "https://www.aljazeera.com/economy/2026/10/23/us-tech-stocks-tumble-as-investors-fret-over-ai-spending",
    "gathered": "2026-10-23T04:12:39Z"
   },
@@ -408,8 +416,6 @@
    "h": "Bears flagged for rare illegal forward handing",
    "b": "The Bears became the first team in 16 years to be called for illegal forward handing, on a trick play against the Patriots that lost five yards.",
    "date": "2026-10-23",
-   "publisher": "CBS Sports",
-   "title": "Rare NFL penalty: Bears become first team in 16 years to get flagged for illegal forward handoff",
    "url": "https://www.cbssports.com/nfl/news/what-is-illegal-forward-handing-bears-patriots-nfl-penalty/",
    "gathered": "2026-10-23T04:12:39Z"
   },
@@ -545,8 +551,7 @@
    "publisher": "Gothamist",
    "title": "Former NYPD detective held on $1M bail after police say he shot driver on GWB",
    "url": "https://gothamist.com/news/former-cop-who-fatally-shot-a-man-on-the-george-washington-bridge-held-on-1-million-bail",
-   "published": "2026-10-22T16:58:00Z",
-   "updated": "2026-10-22T18:12:00Z",
+   "published": "2026-10-22T18:12:00Z",
    "gathered": "2026-10-22T18:43:19Z"
   },
   {
@@ -565,20 +570,20 @@
   "now": {
    "temp": 51,
    "cond": "Fair",
-   "obs": "23 Oct 05:51 am EDT"
+   "obs": "23 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
-    "temp": 60,
-    "text": "Sunny, with a high near 60. Northeast wind 8 to 14 mph. "
+    "temp": 59,
+    "text": "Sunny, with a high near 59. Northeast wind 8 to 15 mph. "
    },
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 46,
-    "text": "Mostly clear, with a low around 46. North wind around 7 mph. "
+    "temp": 43,
+    "text": "Mostly clear, with a low around 43. East wind around 7 mph becoming north after midnight. "
    },
    {
     "name": "Saturday",
