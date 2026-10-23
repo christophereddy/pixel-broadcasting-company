@@ -5,46 +5,12 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "FBI probes firebomb at Atlanta ICE office",
-    "b": "The FBI is investigating a Molotov cocktail-style device thrown at the downtown ICE Atlanta Field Office Tuesday night. It caused minor damage.",
-    "date": "2026-10-21",
-    "publisher": "WABE",
-    "title": "FBI investigates reported attack on Atlanta ICE office",
-    "url": "https://www.wabe.org/fbi-investigates-attack-on-atlanta-ice-office/",
-    "published": "2026-10-21T21:39:00Z",
-    "updated": "2026-10-22T13:33:26Z",
-    "gathered": "2026-10-21T22:35:54Z"
-   },
-   {
-    "h": "Ballot measure would create fund for 911 upgrades",
-    "b": "A proposed constitutional amendment would create a dedicated fund lawmakers could use to modernize Georgia's 911 system, though it would not allocate any money itself.",
-    "date": "2026-10-21",
-    "publisher": "WABE",
-    "title": "Ballot amendment would pave the way for dedicated funding to upgrade Georgia’s 911 system",
-    "url": "https://www.wabe.org/ballot-amendment-would-pave-the-way-for-dedicated-funding-to-upgrade-georgias-911-system/",
-    "published": "2026-10-21T14:16:27Z",
-    "updated": "2026-10-21T14:16:33Z",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "Georgia tackles rural maternal health crisis",
-    "b": "With labor and delivery units closing in rural Georgia, some expectant mothers face long drives to give birth.",
-    "date": "2026-10-21",
-    "publisher": "WABE",
-    "title": "Georgia gears up to solve rural maternal health crisis",
-    "url": "https://www.wabe.org/new-arrivals-in-the-er-georgia-gears-up-to-solve-rural-maternal-health-crisis/",
-    "published": "2026-10-21T14:43:35Z",
-    "updated": "2026-10-21T14:46:56Z",
-    "gathered": "2026-10-21T15:29:44Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
     "temp": 74,
     "cond": "Fair",
-    "obs": "22 Oct 13:52 pm EDT"
+    "obs": "22 Oct 17:52 pm EDT"
    },
    "periods": [
     {
@@ -75,7 +41,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Clear, with a low around 48."
+     "text": "Clear, with a low around 48. East wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday",
@@ -97,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -129,9 +95,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "cond": "Mostly Cloudy",
-    "obs": "22 Oct 13:54 pm EDT"
+    "temp": 57,
+    "cond": "A Few Clouds",
+    "obs": "22 Oct 17:54 pm EDT"
    },
    "periods": [
     {
@@ -184,7 +150,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -196,14 +162,21 @@
   },
   "local": [
    {
+    "h": "Chicago Shakespeare chief Kimberly Motes to leave",
+    "b": "Motes will step down in November after three years as executive director to lead Hennepin Arts in Minneapolis.",
+    "date": "2026-10-22",
+    "publisher": "WBEZ",
+    "title": "Chicago Shakespeare Theater chief Kimberly Motes to step down",
+    "url": "https://www.wbez.org/theater/2026/10/22/chicago-shakespeare-theater-kimberly-motes-stepping-down",
+    "published": "2026-10-22T19:49:44Z",
+    "updated": "2026-10-22T19:50:09Z",
+    "gathered": "2026-10-22T22:37:55Z"
+   },
+   {
     "h": "ComEd data center hookups could hit households",
     "b": "ComEd expects to spend over $3 billion connecting data centers but has collected only about a quarter from developers, consumer groups warn.",
     "date": "2026-10-22",
-    "publisher": "WBEZ",
-    "title": "Data centers will cost ComEd $3 billion, but consumer groups worry Illinois households will be on the hook",
     "url": "https://www.wbez.org/wbez-investigations/2026/10/22/data-centers-comed-3-billion-icc-consumer-groups-cub-illinois-households",
-    "published": "2026-10-22T16:48:11Z",
-    "updated": "2026-10-22T16:48:11Z",
     "gathered": "2026-10-22T18:43:19Z"
    },
    {
@@ -212,70 +185,15 @@
     "date": "2026-10-22",
     "url": "https://www.wbez.org/health-medicine/2026/10/22/this-illinois-law-was-supposed-to-help-families-its-failing-them-instead",
     "gathered": "2026-10-22T14:00:06Z"
-   },
-   {
-    "h": "Johnson revives corporate head tax in budget",
-    "b": "Mayor Brandon Johnson's $17.6 billion budget resurrects his failed corporate head tax and proposes another increase in the cloud computing tax.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/city-hall/2026/10/21/mayor-brandon-johnson-failed-corporate-head-tax-resurrected-proposed-budget",
-    "gathered": "2026-10-21T22:35:54Z"
-   },
-   {
-    "h": "Second woman says she was drugged at UChicago frat",
-    "b": "A woman told police she feared she was drugged before a sexual assault at a University of Chicago fraternity house in February. She has sued Alpha Delta Phi.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/crime/2026/10/21/university-chicago-sexual-assault",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Gary residents still plagued by blackouts",
-    "b": "Months after an August storm, Gary residents report frequent power outages whenever it rains or gets windy.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/weather/2026/10/21/storm-gary-residents-blackouts-nipsco",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Stratton, Tracy clash in only Senate debate",
-    "b": "Democrat Juliana Stratton and Republican Don Tracy split on the minimum wage, immigration and tariffs in their only debate for Dick Durbin's Senate seat.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/government-politics/elections/2026/10/21/takeaways-senate-debate-juliana-stratton-don-tracy-midterm-election",
-    "gathered": "2026-10-21T16:14:38Z"
-   },
-   {
-    "h": "Johnson budget would reopen mental health clinic",
-    "b": "Mayor Brandon Johnson's 2027 budget would reopen a city mental health clinic and spend $5 million to make the CARE crisis response program permanent.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/health-medicine/2026/10/21/mayor-johnson-budget-seeks-to-reopen-city-mental-health-clinic-next-year",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "Fearing ICE, some immigrants shift life to night",
-    "b": "Some Chicago immigrants now wait until nighttime to do laundry, shop and work to avoid immigration enforcement.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/immigration/2026/10/21/fearing-ice-some-chicago-immigrants-shift-work-daily-life-to-nighttime-hours",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "What a stressed grid means for Illinois customers",
-    "b": "WBEZ's Curious City looks at the strain on Illinois' electric grid and what it could mean for consumers.",
-    "date": "2026-10-21",
-    "url": "https://www.wbez.org/curious-city/2026/10/21/illinois-electric-grid-is-under-a-lot-of-stress-what-does-that-mean-for-consumers",
-    "gathered": "2026-10-21T10:27:29Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 70,
     "cond": "Fair",
-    "obs": "22 Oct 12:53 pm CDT"
+    "obs": "22 Oct 16:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. East northeast wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -304,7 +222,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Partly cloudy, with a low around 56."
+     "text": "Partly cloudy, with a low around 56. South southeast wind 5 to 10 mph. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 74,
+     "text": "Mostly sunny, with a high near 74."
     }
    ]
   },
@@ -320,18 +244,25 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Why Illinois is America's pumpkin capital",
+    "b": "Farmers in downstate Morton, the self-proclaimed pumpkin capital, explain how Illinois grows more pumpkins than anywhere else.",
+    "date": "2026-10-22",
+    "publisher": "WBEZ",
+    "title": "Illinois is America’s pumpkin capital; here's why",
+    "url": "https://www.wbez.org/food-drink/2026/10/22/illinois-pumpkin-capital-united-states-morton-libby",
+    "published": "2026-10-22T21:07:07Z",
+    "updated": "2026-10-22T21:11:15Z",
+    "gathered": "2026-10-22T22:37:55Z"
+   },
    {
     "h": "Arts in the Dark parade lights up Columbus Drive",
     "b": "The 12th annual Halloween parade brings a fire-breathing dragon, giant puppets, drumlines and dance troupes to Columbus Drive on Saturday night.",
     "date": "2026-10-22",
-    "publisher": "WBEZ",
-    "title": "Giant puppets, a fire-breathing dragon and dozens of dancers will fuel Chicago’s Arts in the Dark parade this weekend",
     "url": "https://www.wbez.org/arts-culture/2026/10/22/arts-in-the-dark-halloween-parade-artists-puppets-dancers-columbus-drive",
-    "published": "2026-10-22T10:35:00Z",
-    "updated": "2026-10-22T10:35:00Z",
     "gathered": "2026-10-22T14:00:06Z"
    }
   ]
@@ -342,32 +273,14 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [
-   {
-    "h": "Audit: marijuana regulators missed contamination",
-    "b": "A state audit found Colorado's Marijuana Enforcement Division missed inspections and delayed public warnings, letting potentially contaminated products stay on shelves for months.",
-    "date": "2026-10-21",
-    "publisher": "ProPublica",
-    "title": "Colorado Marijuana Regulators Failed to Protect Consumers From Potential Contamination, Audit Finds",
-    "url": "https://www.propublica.org/article/colorado-marijuana-enforcement-division-audit-findings",
-    "published": "2026-10-21T15:35:00Z",
-    "updated": "2026-10-21T15:35:14Z",
-    "gathered": "2026-10-21T16:14:38Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 74,
     "cond": "Mostly Cloudy",
-    "obs": "22 Oct 11:58 am MDT"
+    "obs": "22 Oct 15:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 72,
-     "text": "A 30 percent chance of showers, mainly after 3pm.  Mostly cloudy, with a high near 72. Calm wind becoming south southwest 5 to 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -397,6 +310,12 @@
      "kind": "low",
      "temp": 41,
      "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 41."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 56,
+     "text": "A 30 percent chance of showers, mainly before noon.  Partly sunny, with a high near 56."
     }
    ]
   },
@@ -412,7 +331,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -424,51 +343,31 @@
   },
   "local": [
    {
-    "h": "Parents charged after teen dies in e-moto crash",
-    "b": "The father of a 13-year-old who died driving an e-motorcycle at more than 40 mph faces a felony child endangerment charge, Orange County prosecutors said.",
-    "date": "2026-10-21",
-    "url": "https://laist.com/news/transportation/oc-parents-child-endangerment-charges-teen-death-e-motorcycle-crash",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Eaton Fire homeowners can get free soil cleanup",
-    "b": "A county pilot program will test and clean up potentially contaminated soil for eligible Altadena and unincorporated Pasadena homeowners.",
-    "date": "2026-10-21",
+    "h": "LA in mediation over $1.4B sidewalk settlement",
+    "b": "Monitors say the city may be breaching a settlement to fix sidewalks and build curb ramps as repair requests pile up.",
+    "date": "2026-10-22",
     "publisher": "LAist",
-    "title": "Eaton Fire homeowners can now apply for free soil testing and cleanup. Here's how.",
-    "url": "https://laist.com/news/climate-environment/eaton-fire-homeowners-soil-testing-cleanup-free",
-    "published": "2026-10-21T19:00:00Z",
-    "updated": "2026-10-21T18:59:59Z",
-    "gathered": "2026-10-21T19:28:23Z"
+    "title": "LA in mediation over $1.4 billion sidewalk settlement as repair requests continue to mount",
+    "url": "https://laist.com/news/transportation/los-angeles-mediation-willits-sidewalk",
+    "published": "2026-10-22T21:17:09Z",
+    "updated": "2026-10-22T21:17:09Z",
+    "gathered": "2026-10-22T22:37:55Z"
    },
    {
-    "h": "Long Beach plans sandbag giveaways for El Niño",
-    "b": "Drive-through sandbag giveaways will be held at Long Beach City College on Oct. 24 and Nov. 7 ahead of an expected strong El Niño season.",
-    "date": "2026-10-21",
-    "url": "https://laist.com/news/climate-environment/drive-through-sandbag-giveaways-long-beach-el-nino-storms",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Experts: don't panic over DOJ voter fraud suit",
-    "b": "Election experts told LAist the federal lawsuit seeking to remove alleged noncitizens from California's rolls is unlikely to succeed and voters should fill out ballots as normal.",
-    "date": "2026-10-21",
+    "h": "California cities move to ban data centers",
+    "b": "Local communities are pushing beyond new state disclosure laws, with some cities banning new data centers.",
+    "date": "2026-10-22",
     "publisher": "LAist",
-    "title": "Feds are suing California over voter fraud allegations. Experts tell voters: Don’t freak out",
-    "url": "https://laist.com/news/politics/voter-fraud-allegations-explained",
-    "published": "2026-10-21T12:00:00Z",
-    "updated": "2026-10-22T00:30:04Z",
-    "gathered": "2026-10-21T15:29:44Z"
+    "title": "California cities pull the plug on data centers after state regulations don’t scale up fast enough",
+    "url": "https://laist.com/news/politics/california-data-centers-bans",
+    "published": "2026-10-22T20:30:00Z",
+    "updated": "2026-10-22T20:30:00Z",
+    "gathered": "2026-10-22T22:37:55Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 69,
-     "text": "Showers likely and possibly a thunderstorm.  Mostly cloudy, with a high near 69. West southwest wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 60%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -498,6 +397,12 @@
      "kind": "low",
      "temp": 59,
      "text": "Clear, with a low around 59."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 79,
+     "text": "Sunny, with a high near 79."
     }
    ]
   },
@@ -513,7 +418,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -531,7 +436,7 @@
     "publisher": "Gothamist",
     "title": "MTA suspending bus fare enforcement teams after altercations emerge",
     "url": "https://gothamist.com/news/mta-suspending-bus-fare-enforcement-teams-after-altercations-emerge",
-    "published": "2026-10-22T16:50:54Z",
+    "published": "2026-10-22T16:50:00Z",
     "gathered": "2026-10-22T18:43:19Z"
    },
    {
@@ -605,86 +510,6 @@
     "gathered": "2026-10-22T10:12:34Z"
    },
    {
-    "h": "Officer to face trial in Delrawn Small killing",
-    "b": "NYPD Officer Wayne Isaacs, who shot and killed Delrawn Small in a 2016 Brooklyn traffic dispute, will face a departmental trial in January, the family said.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "NYPD officer faces disciplinary trial 10 years after killing Delrawn Small",
-    "url": "https://gothamist.com/news/nypd-officer-faces-disciplinary-trial-10-years-after-killing-delrawn-small",
-    "published": "2026-10-21T20:24:00Z",
-    "gathered": "2026-10-21T22:35:54Z"
-   },
-   {
-    "h": "Port Authority plans $117M fix for GWB approach",
-    "b": "The Port Authority plans to rehab a Manhattan approach to the George Washington Bridge where large debris fell from the ceiling onto cars.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "Port Authority eyes $117M fix to Manhattan roadway where falling debris smashed cars",
-    "url": "https://gothamist.com/news/port-authority-eyes-117m-fix-to-manhattan-roadway-where-falling-debris-smashed-cars",
-    "published": "2026-10-21T20:53:00Z",
-    "gathered": "2026-10-21T22:35:54Z"
-   },
-   {
-    "h": "Bronx couple indicted in starvation of toddler",
-    "b": "A Bronx couple is charged with starving their 3-year-old daughter to death and severely malnourishing her brother, prosecutors said.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "Bronx couple starved their 3-year-old to death, indictment says",
-    "url": "https://gothamist.com/news/bronx-couple-starved-their-3-year-old-to-death-indictment-says",
-    "published": "2026-10-21T18:10:05Z",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Marble Hill protester charged with assaulting agent",
-    "b": "Federal prosecutors accuse Liberty Martin, 42, of assaulting a Homeland Security agent at a protest after an ICE shooting in Marble Hill.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "Marble Hill protester accused of attacking federal agent faces assault charge",
-    "url": "https://gothamist.com/news/marble-hill-protester-accused-of-attacking-federal-agent-faces-assault-charge",
-    "published": "2026-10-21T16:53:00Z",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Brad Lander freed after West Bank detention",
-    "b": "Brad Lander, Democratic nominee for NY-10, said Israeli forces detained him while he helped Palestinian farmers pick olives, then released him Wednesday morning.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "Brad Lander says he's released after Israeli forces detained him during olive harvest",
-    "url": "https://gothamist.com/news/brad-lander-says-israeli-forces-detained-him-during-a-west-bank-olive-harvest",
-    "published": "2026-10-21T16:41:00Z",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "3,000 families get childcare vouchers off waitlist",
-    "b": "The Mamdani administration is notifying 3,000 families that they can get subsidized childcare vouchers. Nearly 30,000 are on the waitlist.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "NYC’s subsidized childcare waitlist is moving, starting with 3K families",
-    "url": "https://gothamist.com/news/nycs-subsidized-childcare-waitlist-is-moving-starting-with-3k-families",
-    "published": "2026-10-21T15:00:56Z",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "Musk spends $500K to re-elect Rep. Mike Lawler",
-    "b": "Elon Musk has spent more than $500,000 backing Lawler in his competitive Hudson Valley race against Democrat Cait Conley.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "Elon Musk drops $500K on NY Rep. Mike Lawler's re-election bid",
-    "url": "https://gothamist.com/news/elon-musk-drops-500k-on-ny-rep-mike-lawlers-reelection-bid",
-    "published": "2026-10-21T14:21:00Z",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "Schools chancellor offers no integration plan",
-    "b": "Chancellor Kamar Samuels said the Mamdani administration is committed to integrating NYC public schools but declined to share a specific plan, drawing groans from a frustrated crowd.",
-    "date": "2026-10-21",
-    "publisher": "Gothamist",
-    "title": "Parents grumble as NYC schools chancellor dodges calls for NYC schools integration plan",
-    "url": "https://gothamist.com/news/parents-grumble-as-nyc-schools-chancellor-dodges-calls-for-nyc-schools-integration-plan",
-    "published": "2026-10-21T02:01:01Z",
-    "gathered": "2026-10-21T05:08:55Z"
-   },
-   {
     "h": "Ex-detective held on $1M bail in GWB shooting",
     "b": "The former NYPD detective accused of killing a driver in a road rage shooting on the George Washington Bridge was held on $1 million bail at his arraignment.",
     "date": "2026-10-22",
@@ -703,6 +528,7 @@
     "title": "NYPD arrests 17-year-old in fatal Midtown subway platform shooting",
     "url": "https://gothamist.com/news/nypd-arrests-17-year-old-in-fatal-midtown-subway-platform-shooting",
     "published": "2026-10-22T18:16:00Z",
+    "updated": "2026-10-22T22:07:00Z",
     "gathered": "2026-10-22T18:43:19Z"
    }
   ],
@@ -710,44 +536,44 @@
    "now": {
     "temp": 64,
     "cond": "Fair",
-    "obs": "22 Oct 13:51 pm EDT"
+    "obs": "22 Oct 17:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49. North wind 8 to 17 mph. "
+     "text": "Clear, with a low around 49. North wind 8 to 14 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. North wind 8 to 13 mph. "
+     "temp": 60,
+     "text": "Sunny, with a high near 60. North wind 7 to 10 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Mostly clear, with a low around 46. North wind around 7 mph. "
+     "temp": 44,
+     "text": "Mostly clear, with a low around 44. North wind around 7 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. North wind 5 to 7 mph becoming light and variable  in the morning. "
+     "temp": 63,
+     "text": "Sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Clear, with a low around 46."
+     "temp": 47,
+     "text": "Mostly clear, with a low around 47. Light and variable wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 63,
-     "text": "Sunny, with a high near 63."
+     "temp": 64,
+     "text": "Sunny, with a high near 64."
     }
    ]
   },
@@ -763,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -835,20 +661,6 @@
     "date": "2026-10-22",
     "url": "https://www.thelocal.fr/20261022/french-fighter-jet-crashes-during-training-leaves-two-killed",
     "gathered": "2026-10-22T07:51:19Z"
-   },
-   {
-    "h": "French government websites down after hacking alert",
-    "b": "Tax and préfecture websites went down and Météo France took its sites offline after a critical vulnerability was found in the PHP programming language.",
-    "date": "2026-10-21",
-    "url": "https://www.thelocal.fr/20261021/french-government-websites-down-after-hacking-alert",
-    "gathered": "2026-10-21T15:29:44Z"
-   },
-   {
-    "h": "Orange hit by nationwide phone and internet outage",
-    "b": "Orange said a nationwide incident was severely disrupting calls, texts and mobile internet, with thousands of reports logged by midday.",
-    "date": "2026-10-21",
-    "url": "https://www.thelocal.fr/20261021/frances-orange-network-hit-by-phone-and-internet-outage",
-    "gathered": "2026-10-21T15:29:44Z"
    }
   ],
   "weather": {
@@ -867,7 +679,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "goodnews": []
  },
  {
@@ -878,48 +690,32 @@
   },
   "local": [
    {
+    "h": "Chemical safety at WA pulp mills hard to learn",
+    "b": "After a deadly implosion at a Longview mill, information about hazardous chemicals at Washington pulp mills remains hard to come by despite right-to-know laws.",
+    "date": "2026-10-22",
+    "publisher": "KUOW",
+    "title": "What we know (and don’t) about chemical safety at Washington’s pulp mills following deadly implosion",
+    "url": "https://www.kuow.org/environment/2026-10-22/after-deadly-implosion-are-washington-pulp-mills-safe",
+    "published": "2026-10-22T21:21:02Z",
+    "updated": "2026-10-22T21:25:33Z",
+    "gathered": "2026-10-22T22:37:55Z"
+   },
+   {
     "h": "Wilson expands World Cup homeless plan citywide",
     "b": "Mayor Katie Wilson said a program that moved Pioneer Square homeless residents into housing before the World Cup will expand across Seattle at no extra cost.",
     "date": "2026-10-22",
     "url": "https://www.kuow.org/governing/2026-10-21/wilson-wants-to-emulate-denver-houston-with-new-homelessness-strategy",
     "gathered": "2026-10-22T01:42:06Z"
-   },
-   {
-    "h": "Amazon worker sues over assault complaint",
-    "b": "A Seattle-based Amazon employee says the company failed to protect her after she reported being raped by a senior manager, and made her keep working with him.",
-    "date": "2026-10-21",
-    "url": "https://www.kuow.org/technology/2026-10-21/amazon-sued-for-failing-to-protect-employee-who-accused-her-manager-of-rape",
-    "gathered": "2026-10-21T22:35:54Z"
-   },
-   {
-    "h": "Bite of Seattle shooting suspect, 15, released",
-    "b": "A judge released the 15-year-old to his family, saying no recovered evidence ties him to the deaths or injuries at the July festival.",
-    "date": "2026-10-21",
-    "url": "https://www.kuow.org/law/2026-10-21/15-year-old-bite-of-seattle-shooting-suspect-released-to-his-family",
-    "gathered": "2026-10-21T19:28:23Z"
-   },
-   {
-    "h": "Council restricts overnight RV parking",
-    "b": "The Seattle City Council passed a package limiting RVs to two hours of street parking starting next year and aiming to steer vehicle residents into shelter and services.",
-    "date": "2026-10-21",
-    "url": "https://www.kuow.org/governing/2026-10-20/seattle-city-council-restricts-overnight-rv-parking-adds-shelter-space",
-    "gathered": "2026-10-21T05:08:55Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "Today",
-     "kind": "high",
-     "temp": 58,
-     "text": "Partly sunny, with a high near 58. Calm wind becoming north around 6 mph in the afternoon. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 46. Light northeast wind. "
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 46. North wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Friday",
@@ -943,7 +739,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 45,
-     "text": "A 40 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 45."
+     "text": "A 40 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 45. Light and variable wind. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 58,
+     "text": "A 50 percent chance of rain.  Partly sunny, with a high near 58."
     }
    ]
   },
@@ -959,7 +761,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-22T22:12:00Z",
+  "updatedAt": "2026-10-23T01:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
