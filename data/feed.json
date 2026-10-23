@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T10:14:00Z",
+ "updatedAt": "2026-10-23T13:22:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,25 +7,32 @@
  },
  "world": [
   {
-   "h": "Ministers meet in Istanbul over Hormuz",
-   "b": "Al Jazeera's live coverage: European and Middle East foreign ministers are in Istanbul for talks on the Strait of Hormuz and regional security.",
+   "h": "Netanyahu orders West Bank lockdown",
+   "b": "Al Jazeera's live coverage: Netanyahu announces a 'full lockdown' of the occupied West Bank after a shooting in Hebron.",
    "date": "2026-10-23",
    "publisher": "Al Jazeera",
-   "title": "European, Middle East ministers in Istanbul for talks over Hormuz, security",
+   "title": "Netanyahu announces ‘full lockdown’ of West Bank after shooting in Hebron",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/23/trump-hints-new-strikes-says-us-knocked-hell-out-of-iran",
    "gathered": "2026-10-23T01:45:14Z"
   }
  ],
  "national": [
   {
+   "h": "Bird flu rages on Utah mink farm",
+   "b": "ProPublica reports bird flu is spreading on a mink farm, which experts say could help the virus adapt to humans. Officials declined to test workers despite CDC guidance urging monitoring.",
+   "date": "2026-10-23",
+   "publisher": "ProPublica",
+   "title": "Bird Flu Is Raging on a Mink Farm. It Could Spark a Human Pandemic, Experts Say, but Officials Won’t Act.",
+   "url": "https://www.propublica.org/article/bird-flu-mink-farm-utah-human-risk",
+   "published": "2026-10-23T09:00:00Z",
+   "updated": "2026-10-23T09:00:05Z",
+   "gathered": "2026-10-23T10:14:33Z"
+  },
+  {
    "h": "Actor Tom Skerritt dies at 93",
    "b": "Skerritt, known for Alien, Top Gun, M*A*S*H and an Emmy-winning role on Picket Fences, died of natural causes, his representative said.",
    "date": "2026-10-22",
-   "publisher": "KUOW",
-   "title": "Actor Tom Skerritt, who played dads, cops and commanding officers, has died",
    "url": "https://www.kuow.org/npr-news/2026-10-22/actor-tom-skerritt-who-played-dads-cops-and-commanding-officers-has-died",
-   "published": "2026-10-22T20:12:52Z",
-   "updated": "2026-10-22T23:19:54Z",
    "gathered": "2026-10-22T22:37:55Z"
   },
   {
@@ -145,13 +152,24 @@
  ],
  "international": [
   {
+   "h": "Haredi draft dominates Israel's election",
+   "b": "Whether Israel's ultra-Orthodox minority should serve in the military has come to dominate the campaign ahead of the October 27 election. An estimated 80,000 Haredi men aged 18 to 24 are avoiding service.",
+   "date": "2026-10-23",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Ultra-Orthodox conscription debate ignites Israel’s election battleground",
+   "url": "https://www.aljazeera.com/news/2026/10/23/ultra-orthodox-conscription-debate-ignites-israels-election-battleground",
+   "gathered": "2026-10-23T10:14:33Z"
+  },
+  {
    "h": "Gunmen attack Israeli troops near Telem",
    "b": "The Israeli military said it killed two gunmen who attacked a reserve battalion near the Telem settlement in the occupied West Bank. At least six soldiers were injured, two of them critically.",
    "date": "2026-10-23",
    "place": "Hebron",
    "tz": "Asia/Hebron",
    "publisher": "Al Jazeera",
-   "title": "Israeli military kills 2 in Hebron gun battle as tension soars in West Bank",
+   "title": "Israel preparing full lockdown of occupied West Bank after Hebron gunfight",
    "url": "https://www.aljazeera.com/news/2026/10/23/israel-arrests-36-palestinians-in-the-west-bank-attacks-on-farmers-ramp-up",
    "gathered": "2026-10-23T07:50:21Z"
   },
@@ -181,8 +199,6 @@
    "date": "2026-10-23",
    "place": "Tunis",
    "tz": "Africa/Tunis",
-   "publisher": "Al Jazeera",
-   "title": "Rare unrest flares in Tunisian capital as police clash with protesters",
    "url": "https://www.aljazeera.com/news/2026/10/23/rare-unrest-flares-in-tunisian-capital-as-police-clash-with-protesters",
    "gathered": "2026-10-23T01:45:14Z"
   },
@@ -343,6 +359,17 @@
   }
  ],
  "business": [
+  {
+   "h": "Holiday airfares soar with jet fuel near record",
+   "b": "Experts expect holiday airfares to be the highest in years as airlines scramble to cover jet fuel costs that are close to an all-time high in the U.S.",
+   "date": "2026-10-23",
+   "publisher": "KUOW",
+   "title": "With jet fuel prices near a record, holiday airfares soar higher",
+   "url": "https://www.kuow.org/npr-news/2026-10-23/with-jet-fuel-prices-near-a-record-holiday-airfares-soar-higher",
+   "published": "2026-10-23T09:00:00Z",
+   "updated": "2026-10-23T09:17:58Z",
+   "gathered": "2026-10-23T10:14:33Z"
+  },
   {
    "h": "Tech stocks tumble on AI spending worries",
    "b": "Tech stocks posted their steepest drop since June and the S&P 500 slid 1.21%, its biggest fall since late July, as investors fretted over AI spending.",
@@ -536,19 +563,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 51,
    "cond": "Fair",
-   "obs": "23 Oct 02:51 am EDT"
+   "obs": "23 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 60,
-    "text": "Sunny, with a high near 60. Northeast wind 8 to 13 mph. "
+    "text": "Sunny, with a high near 60. Northeast wind 8 to 14 mph. "
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 46,
     "text": "Mostly clear, with a low around 46. North wind around 7 mph. "
@@ -569,7 +596,7 @@
     "name": "Sunday",
     "kind": "high",
     "temp": 64,
-    "text": "Sunny, with a high near 64."
+    "text": "Sunny, with a high near 64. Northwest wind around 5 mph becoming calm  in the morning. "
    },
    {
     "name": "Sunday Night",

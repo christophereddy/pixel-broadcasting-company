@@ -8,19 +8,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "23 Oct 02:52 am EDT"
+    "obs": "23 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
      "text": "Sunny, with a high near 72. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Clear, with a low around 49. East wind around 5 mph. "
@@ -41,7 +41,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69."
+     "text": "Sunny, with a high near 69. Northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday Night",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,11 +75,18 @@
   },
   "local": [
    {
+    "h": "Harvard Book Store opening downtown Boston shop",
+    "b": "Harvard Book Store plans to open a second location at 33 Union St. in downtown Boston this fall. The Cambridge store will remain the flagship.",
+    "date": "2026-10-23",
+    "publisher": "WBUR",
+    "title": "Harvard Book Store to open second location in downtown Boston",
+    "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
+    "gathered": "2026-10-23T10:14:33Z"
+   },
+   {
     "h": "Red Line to speed up to 50 mph south of JFK",
     "b": "The MBTA will raise Red Line speeds between North Quincy and JFK/UMass to 50 mph in the next few weeks, shortening trips to Braintree.",
     "date": "2026-10-22",
-    "publisher": "WBUR",
-    "title": "The T plans to increase Red Line speeds between JFK and North Quincy",
     "url": "https://www.wbur.org/news/2026/10/22/mbta-red-line-speeds-north-quincy-jfk",
     "gathered": "2026-10-22T18:43:19Z"
    },
@@ -87,27 +94,25 @@
     "h": "Clancy judge denies hearing on holdout juror",
     "b": "A judge rejected the defense's request for an evidentiary hearing on the lone juror in Lindsay Clancy's trial, which ended in a mistrial.",
     "date": "2026-10-22",
-    "publisher": "WBUR",
-    "title": "Clancy judge denies request for hearing on holdout juror",
     "url": "https://www.wbur.org/news/2026/10/22/judge-sullivan-lindsay-clancy-lone-juror-defense-denial",
     "gathered": "2026-10-22T18:43:19Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "A Few Clouds",
-    "obs": "23 Oct 02:54 am EDT"
+    "temp": 45,
+    "cond": "Fair",
+    "obs": "23 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 55,
      "text": "Sunny, with a high near 55. North wind 10 to 14 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 37,
      "text": "Clear, with a low around 37. Northwest wind 3 to 6 mph. "
@@ -121,14 +126,14 @@
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Clear, with a low around 40. Calm wind. "
+     "temp": 35,
+     "text": "Patchy frost after 2am.  Otherwise, clear, with a low around 35. Calm wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 62,
-     "text": "Sunny, with a high near 62. Calm wind becoming southwest around 5 mph in the afternoon. "
+     "text": "Patchy frost before 7am.  Otherwise, sunny, with a high near 62. Calm wind becoming southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -150,7 +155,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -211,25 +216,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "23 Oct 01:53 am CDT"
+    "obs": "23 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. Southeast wind around 5 mph. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
      "text": "Sunny, with a high near 68. South southeast wind around 5 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Partly cloudy, with a low around 52. South southeast wind 5 to 10 mph. "
@@ -250,7 +249,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly sunny, with a high near 72."
+     "text": "Mostly sunny, with a high near 72. South wind around 5 mph. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 55,
+     "text": "Partly cloudy, with a low around 55."
     }
    ]
   },
@@ -266,7 +271,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -298,25 +303,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 63,
     "cond": "Mostly Cloudy and Breezy",
-    "obs": "23 Oct 00:58 am MDT"
+    "obs": "23 Oct 02:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "A 30 percent chance of showers before 3am.  Cloudy, with a steady temperature around 59. South wind around 9 mph, with gusts as high as 15 mph. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 78,
      "text": "Cloudy through mid morning, then gradual clearing, with a high near 78. Breezy, with a south wind 9 to 16 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Partly cloudy, with a low around 48. South southwest wind 6 to 11 mph becoming light and variable  after midnight. Winds could gust as high as 18 mph. "
@@ -337,7 +336,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 59,
-     "text": "A 20 percent chance of showers.  Mostly cloudy, with a high near 59."
+     "text": "A 20 percent chance of showers.  Mostly cloudy, with a high near 59. Calm wind becoming north northeast 5 to 8 mph in the afternoon. Winds could gust as high as 16 mph. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 41,
+     "text": "Showers likely, mainly after midnight.  Mostly cloudy, with a low around 41. Chance of precipitation is 60%."
     }
    ]
   },
@@ -353,7 +358,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -391,12 +396,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 56,
-     "text": "A 30 percent chance of showers.  Mostly cloudy, with a low around 56. Southeast wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
      "name": "Friday",
      "kind": "high",
      "temp": 72,
@@ -425,6 +424,12 @@
      "kind": "high",
      "temp": 78,
      "text": "Sunny, with a high near 78."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 60,
+     "text": "Mostly clear, with a low around 60."
     }
    ]
   },
@@ -440,7 +445,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -556,19 +561,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "23 Oct 02:51 am EDT"
+    "obs": "23 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. Northeast wind 8 to 13 mph. "
+     "text": "Sunny, with a high near 60. Northeast wind 8 to 14 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Mostly clear, with a low around 46. North wind around 7 mph. "
@@ -589,7 +594,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 64,
-     "text": "Sunny, with a high near 64."
+     "text": "Sunny, with a high near 64. Northwest wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Sunday Night",
@@ -611,7 +616,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -635,36 +640,39 @@
   },
   "local": [
    {
+    "h": "Gunman kills one, wounds four near Paris",
+    "b": "A man opened fire from a vehicle in Trappes and then La Verrière on Friday morning before being arrested in nearby Coignières. One person died; the motive is not known.",
+    "date": "2026-10-23",
+    "publisher": "The Local France",
+    "title": "Gunman kills one and wounds four in town outside Paris",
+    "url": "https://www.thelocal.fr/20261023/gunman-kills-one-and-wounds-four-in-town-outside-paris",
+    "published": "2026-10-23T10:01:38Z",
+    "updated": "2026-10-23T10:01:40Z",
+    "gathered": "2026-10-23T10:14:33Z"
+   },
+   {
     "h": "France jails 217 in fast-track riot trials",
     "b": "French courts have jailed 217 people over the rioting, out of about 2,700 detained since Saturday, Justice Minister Gérald Darmanin said.",
     "date": "2026-10-23",
-    "publisher": "The Local France",
-    "title": "France hands out swift verdicts in fast-track justice after riots",
     "url": "https://www.thelocal.fr/20261023/france-hands-out-swift-verdicts-in-fast-track-justice-after-riots",
-    "published": "2026-10-23T06:43:43Z",
-    "updated": "2026-10-23T06:43:46Z",
     "gathered": "2026-10-23T07:50:21Z"
    },
    {
-    "h": "Storm warnings as 140km/h winds hit Brittany",
-    "b": "Météo France put Brittany on orange alert for winds up to 140km/h, with alerts extending to northern France and parts of the Paris region on Friday.",
-    "date": "2026-10-22",
+    "h": "Storm Austen cuts power to 161,000 homes",
+    "b": "Storm Austen hit Brittany with gusts up to 140km/h, disrupting trains and closing roads in Brittany and Normandy. Much of northern and central France, including the Paris region, is on alert as it moves east.",
+    "date": "2026-10-23",
     "publisher": "The Local France",
-    "title": "Storm warnings as 140km/h winds forecast for Brittany",
-    "url": "https://www.thelocal.fr/20261022/storm-warnings-at-140km-h-winds-forecast-for-brittany",
-    "published": "2026-10-22T14:59:52Z",
-    "updated": "2026-10-22T14:59:53Z",
-    "gathered": "2026-10-22T18:43:19Z"
+    "title": "Transport disruption and electricity blackouts as storms hit western France",
+    "url": "https://www.thelocal.fr/20261023/transport-disruption-and-electricity-blackouts-as-storms-hit-western-france",
+    "published": "2026-10-23T08:46:28Z",
+    "updated": "2026-10-23T08:46:30Z",
+    "gathered": "2026-10-23T10:14:33Z"
    },
    {
     "h": "France moves to ban or curb Saturday protests",
     "b": "Macron said curfews and bans on protests by \"groups without legitimacy\" will be imposed for Oct. 24, though officially organised events including a Paris demo are allowed.",
     "date": "2026-10-22",
-    "publisher": "The Local France",
-    "title": "French authorities seek to ban or curb October 24th protests",
     "url": "https://www.thelocal.fr/20261022/french-authorities-seek-to-ban-or-curb-october-24th-protests",
-    "published": "2026-10-22T13:39:42Z",
-    "updated": "2026-10-22T13:39:43Z",
     "gathered": "2026-10-22T14:00:06Z"
    },
    {
@@ -712,7 +720,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "goodnews": []
  },
  {
@@ -726,11 +734,7 @@
     "h": "Chemical safety at WA pulp mills hard to learn",
     "b": "After a deadly implosion at a Longview mill, information about hazardous chemicals at Washington pulp mills remains hard to come by despite right-to-know laws.",
     "date": "2026-10-22",
-    "publisher": "KUOW",
-    "title": "What we know (and don’t) about chemical safety at Washington’s pulp mills following deadly implosion",
     "url": "https://www.kuow.org/environment/2026-10-22/after-deadly-implosion-are-washington-pulp-mills-safe",
-    "published": "2026-10-22T21:21:02Z",
-    "updated": "2026-10-22T21:25:33Z",
     "gathered": "2026-10-22T22:37:55Z"
    },
    {
@@ -744,12 +748,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 46,
-     "text": "Mostly clear, with a low around 46. Light northeast wind. "
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -779,6 +777,12 @@
      "kind": "high",
      "temp": 57,
      "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 57. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 46,
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 46."
     }
    ]
   },
@@ -794,18 +798,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T10:14:00Z",
+  "updatedAt": "2026-10-23T13:22:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "Bass drummer hired to drown out street preacher",
     "b": "A Seattle resident paid a drummer to follow a megaphone-wielding street preacher for over an hour, and the clips went viral on Reddit.",
     "date": "2026-10-23",
-    "publisher": "KUOW",
-    "title": "Can’t beat them, join them. Bass drummer hired to ‘drown out’ Seattle street preachers",
     "url": "https://www.kuow.org/news-stories/2026-10-22/cant-beat-them-join-them-bass-drummer-hired-to-drown-out-seattle-street-preachers",
-    "published": "2026-10-22T23:32:06Z",
-    "updated": "2026-10-22T23:36:37Z",
     "gathered": "2026-10-23T01:45:14Z"
    }
   ]
