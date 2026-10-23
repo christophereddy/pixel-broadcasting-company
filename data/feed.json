@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T19:12:00Z",
+ "updatedAt": "2026-10-23T22:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,6 +17,16 @@
   }
  ],
  "national": [
+  {
+   "h": "Minnesota: feds stopped sharing Good, Pretti evidence",
+   "b": "Minnesota officials say the Trump administration stopped sharing evidence in the killings of Renee Good and Alex Pretti during the Minneapolis immigration crackdown. The state still seeks officers' phones and key recordings.",
+   "date": "2026-10-23",
+   "publisher": "PBS NewsHour",
+   "title": "Trump administration stopped sharing evidence in Good and Pretti killings, Minnesota officials say",
+   "url": "https://www.pbs.org/newshour/nation/trump-administration-stopped-sharing-evidence-in-good-and-pretti-killings-minnesota-officials-say",
+   "published": "2026-10-23T18:56:29Z",
+   "gathered": "2026-10-23T19:13:00Z"
+  },
   {
    "h": "Bird flu rages on Utah mink farm",
    "b": "ProPublica reports bird flu is spreading on a mink farm, which experts say could help the virus adapt to humans. Officials declined to test workers despite CDC guidance urging monitoring.",
@@ -78,13 +88,32 @@
  ],
  "politics": [
   {
+   "h": "Trump administration sues over Alaska Senate race",
+   "b": "The administration filed a lawsuit to block certification if Sen. Dan Sullivan loses to Democrat Mary Peltola while another candidate with the same name is on the ballot.",
+   "date": "2026-10-23",
+   "publisher": "WABE",
+   "title": "Trump administration files lawsuit to block possible Democratic win",
+   "url": "https://www.wabe.org/trump-administration-files-lawsuit-to-block-possible-democratic-win-in-alaska-senate-race/",
+   "published": "2026-10-23T15:17:59Z",
+   "updated": "2026-10-23T15:21:31Z",
+   "gathered": "2026-10-23T19:13:00Z"
+  },
+  {
+   "h": "Paxton trust gave $600K to convicted fraudster's firm",
+   "b": "ProPublica finds Ken Paxton's trust was far from blind, investing $600,000 in a company built by Scott Sherman, according to previously unreleased impeachment records.",
+   "date": "2026-10-23",
+   "publisher": "ProPublica",
+   "title": "Ken Paxton’s Trust Gave a $600,000 Infusion to a Convicted Fraudster’s Company",
+   "url": "https://www.propublica.org/article/ken-paxton-investment-scott-sherman-wildcatter",
+   "published": "2026-10-23T16:00:00Z",
+   "updated": "2026-10-23T16:00:09Z",
+   "gathered": "2026-10-23T19:13:00Z"
+  },
+  {
    "h": "2 ex-FBI officials charged over Hunter Biden laptop",
    "b": "Nikki Floris and Bradley Benavides, former leaders of a disbanded foreign election interference task force, are charged with making false statements. They appeared in federal court in Washington.",
    "date": "2026-10-23",
-   "publisher": "PBS NewsHour",
-   "title": "2 ex-FBI officials charged with making false statements about Hunter Biden's laptop",
    "url": "https://www.pbs.org/newshour/politics/2-ex-fbi-officials-charged-with-making-false-statements-about-hunter-bidens-laptop",
-   "published": "2026-10-23T15:19:31Z",
    "gathered": "2026-10-23T18:36:56Z"
   },
   {
@@ -176,6 +205,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Ministers warn US against new Iran attacks",
+   "b": "Foreign ministers from the UK, France, Germany, Turkiye, Saudi Arabia, Pakistan, Egypt and Italy met in Turkiye on the Strait of Hormuz and cautioned the US against further attacks on Iran.",
+   "date": "2026-10-23",
+   "place": "Istanbul",
+   "tz": "Europe/Istanbul",
+   "publisher": "Al Jazeera",
+   "title": "European, Middle East ministers urge US-Iran diplomacy, not new attacks",
+   "url": "https://www.aljazeera.com/news/2026/10/23/european-middle-east-ministers-urge-us-iran-diplomacy-not-new-attacks",
+   "gathered": "2026-10-23T19:13:00Z"
+  },
+  {
+   "h": "White House: Melania Trump secured Oleshky truce",
+   "b": "The White House says Melania Trump secured a ceasefire in Russian-occupied Oleshky. A Ukrainian official said it would be established soon, and the Kremlin said the military was coordinating the timing.",
+   "date": "2026-10-23",
+   "place": "Oleshky",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Melania Trump ‘secured ceasefire’ in Ukrainian city of Oleshky: White House",
+   "url": "https://www.aljazeera.com/news/2026/10/23/white-house-says-melania-trump-secured-a-ceasefire-in-ukraines-oleshky",
+   "gathered": "2026-10-23T19:13:00Z"
+  },
   {
    "h": "Gunmen kill 7 at church funeral in Jordan",
    "b": "Gunmen opened fire at a church during a funeral in Karak, killing seven and wounding 34. The government said investigations are under way and did not say whether any attackers were caught.",
@@ -628,22 +679,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "23 Oct 13:51 pm EDT"
+   "obs": "23 Oct 14:51 pm EDT"
   },
   "periods": [
-   {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 62,
-    "text": "Sunny, with a high near 62. Northeast wind around 9 mph. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 43,
-    "text": "Increasing clouds, with a low around 43. East wind around 8 mph becoming north after midnight. "
+    "text": "Increasing clouds, with a low around 43. North wind around 8 mph. "
    },
    {
     "name": "Saturday",
@@ -667,7 +712,13 @@
     "name": "Sunday Night",
     "kind": "low",
     "temp": 46,
-    "text": "Clear, with a low around 46."
+    "text": "Clear, with a low around 46. West wind around 6 mph. "
+   },
+   {
+    "name": "Monday",
+    "kind": "high",
+    "temp": 69,
+    "text": "Sunny, with a high near 69."
    }
   ]
  },
