@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Fair",
-    "obs": "24 Oct 06:52 am EDT"
+    "temp": 56,
+    "cond": "A Few Clouds",
+    "obs": "24 Oct 09:52 am EDT"
    },
    "periods": [
     {
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -90,6 +90,8 @@
     "h": "Fields Corner Post Office will stay open",
     "b": "In a last-minute reversal, USPS secured a lease extension for the Fields Corner Post Office in Dorchester, which was set to close Monday.",
     "date": "2026-10-23",
+    "publisher": "WBUR",
+    "title": "In last-minute reversal, Fields Corner Post Office will stay open",
     "url": "https://www.wbur.org/news/2026/10/23/fields-corner-dorchester-post-office-will-stay-open",
     "gathered": "2026-10-23T18:36:56Z"
    },
@@ -110,16 +112,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 38,
-    "cond": "Fair",
-    "obs": "24 Oct 06:54 am EDT"
+    "temp": 46,
+    "cond": "A Few Clouds",
+    "obs": "24 Oct 09:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. Northwest wind around 5 mph becoming calm  in the morning. "
+     "text": "Sunny, with a high near 61. Light north wind. "
     },
     {
      "name": "Tonight",
@@ -165,7 +167,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -244,16 +246,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Partly Cloudy",
-    "obs": "24 Oct 05:53 am CDT"
+    "temp": 54,
+    "cond": "Mostly Cloudy",
+    "obs": "24 Oct 08:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68. South wind 5 to 10 mph. "
+     "text": "Mostly sunny, with a high near 68. South southeast wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -299,7 +301,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -323,13 +325,17 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 48,
+    "cond": "Mostly Cloudy",
+    "obs": "24 Oct 07:58 am MDT"
+   },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 52,
-     "text": "A 40 percent chance of showers, mainly after 3pm.  Mostly cloudy, with a steady temperature around 52. North wind 6 to 11 mph, with gusts as high as 18 mph. "
+     "temp": 55,
+     "text": "A 40 percent chance of showers, mainly after 3pm.  Mostly cloudy, with a high near 55. Northeast wind 7 to 11 mph, with gusts as high as 18 mph. "
     },
     {
      "name": "Tonight",
@@ -375,7 +381,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -386,6 +392,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "CSU faculty union seeks strike authority",
+    "b": "The California Faculty Association is asking members to authorize a strike after declaring an impasse this summer following 16 months of talks with the CSU system.",
+    "date": "2026-10-24",
+    "publisher": "LAist",
+    "title": "CSU faculty union seeks strike authority as contract talks stall",
+    "url": "https://laist.com/news/education/csu-faculty-union-seeks-strike-authority-as-contract-talks-stall",
+    "published": "2026-10-24T13:33:36Z",
+    "updated": "2026-10-24T13:33:36Z",
+    "gathered": "2026-10-24T14:45:15Z"
+   },
    {
     "h": "Metrolink halts Oceanside service for high tides",
     "b": "Metrolink will suspend Orange County Line service between Laguna Niguel/Mission Viejo and Oceanside Oct. 26 to 30 amid a coastal flood warning. No buses will replace it.",
@@ -458,18 +475,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "Pershing Square station renamed for Biddy Mason",
     "b": "Metro's board voted unanimously to rename the downtown station after Biddy Mason, who went from enslavement to owning much of what is now downtown Los Angeles.",
     "date": "2026-10-23",
-    "publisher": "LAist",
-    "title": "Metro votes to rename Pershing Square station after pioneering Black Angeleno Biddy Mason",
     "url": "https://laist.com/news/transportation/pershing-square-metro-station-renamed-after-biddy-mason",
-    "published": "2026-10-23T18:56:24Z",
-    "updated": "2026-10-23T22:05:41Z",
     "gathered": "2026-10-24T00:57:23Z"
    }
   ]
@@ -481,6 +494,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYPD officer shoots woman with knife in Queens",
+    "b": "An officer shot and wounded a woman who approached police with a knife during a home invasion and stabbing call on 149th Street Friday night. She is in stable condition.",
+    "date": "2026-10-24",
+    "publisher": "Gothamist",
+    "title": "NYPD: Officer shot, injured knife-wielding woman during ‘chaotic’ night at Queens home",
+    "url": "https://gothamist.com/news/nypd-officer-shot-injured-knife-wielding-woman-during-chaotic-night-at-queens-home",
+    "published": "2026-10-24T12:35:00Z",
+    "gathered": "2026-10-24T14:45:15Z"
+   },
    {
     "h": "5 men charged in 2 Manhattan manhole cases",
     "b": "Police arrested five men on trespassing and other charges in two separate manhole cases in Upper Manhattan. Two told police they went into the sewer looking for jewelry.",
@@ -515,16 +538,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "24 Oct 06:51 am EDT"
+    "obs": "24 Oct 09:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable  in the afternoon. "
+     "text": "Mostly sunny, with a high near 63. North wind around 5 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -570,7 +593,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -582,6 +605,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Yellow Vests call new protests for Oct. 31",
+    "b": "The Yellow Vest movement called for rallies and a sit-in outside parliament and city halls on October 31, as another day of nationwide protests began Saturday under tight security.",
+    "date": "2026-10-24",
+    "publisher": "The Local France",
+    "title": "France's Yellow Vest movement calls new protests for October 31st",
+    "url": "https://www.thelocal.fr/20261024/frances-yellow-vest-movement-calls-new-protests-for-october-31st",
+    "published": "2026-10-24T11:44:22Z",
+    "updated": "2026-10-24T11:44:24Z",
+    "gathered": "2026-10-24T14:45:15Z"
+   },
    {
     "h": "MEPs urge EU probe of social media in protests",
     "b": "More than 30 European lawmakers asked the EU's tech chief to use digital content rules to question platforms about their role in the student protests, with blocking access as a last resort.",
@@ -601,11 +635,15 @@
     "gathered": "2026-10-23T13:42:44Z"
    },
    {
-    "h": "Trappes shooting probed as possibly Islamophobic",
-    "b": "A 39-year-old suspect is in custody after shootings in Trappes and La Verrière that killed one person. The interior minister said he fired at a children's playground, a fuel station and a medical centre.",
-    "date": "2026-10-23",
-    "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris",
-    "gathered": "2026-10-23T18:36:56Z"
+    "h": "Macron calls Trappes shooting racist terror attack",
+    "b": "Prosecutors extended the detention of the 39-year-old suspect, arrested with a submachine gun and tear-gas grenades. The anti-terror prosecutor is handling the case; one person was killed and five wounded.",
+    "date": "2026-10-24",
+    "publisher": "The Local France",
+    "title": "France extends detention of suspected racist shooter",
+    "url": "https://www.thelocal.fr/20261024/france-extends-detention-of-suspected-racist-shooter",
+    "published": "2026-10-24T13:34:02Z",
+    "updated": "2026-10-24T13:34:04Z",
+    "gathered": "2026-10-24T14:45:15Z"
    },
    {
     "h": "France jails 217 in fast-track riot trials",
@@ -626,10 +664,10 @@
     "b": "Interior Minister Laurent Nunez said about 70,000 security personnel will deploy Saturday, warning that calls for violence and looting are circulating online after last weekend's unrest.",
     "date": "2026-10-24",
     "publisher": "The Local France",
-    "title": "Police fire tear gas as new French demonstrations kick off",
+    "title": "French protests kick off amid heavy security blanket",
     "url": "https://www.thelocal.fr/20261024/france-to-deploy-70000-police-for-fresh-weekend-protests",
     "published": "2026-10-24T06:43:14Z",
-    "updated": "2026-10-24T10:52:04Z",
+    "updated": "2026-10-24T13:18:48Z",
     "gathered": "2026-10-24T07:12:49Z"
    }
   ],
@@ -649,7 +687,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "goodnews": []
  },
  {
@@ -663,11 +701,7 @@
     "h": "DOJ sending election monitors to King County",
     "b": "The Justice Department says it will send monitors to King County for the Nov. 3 midterms and that they only observe. Washington votes almost entirely by mail.",
     "date": "2026-10-23",
-    "publisher": "KUOW",
-    "title": "DOJ sending election monitors to WA’s King County",
     "url": "https://www.kuow.org/elections/2026-10-23/doj-sending-election-monitors-to-was-king-county",
-    "published": "2026-10-24T00:00:10Z",
-    "updated": "2026-10-24T00:00:10Z",
     "gathered": "2026-10-24T00:57:23Z"
    }
   ],
@@ -724,7 +758,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T13:12:00Z",
+  "updatedAt": "2026-10-24T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
