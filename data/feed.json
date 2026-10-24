@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T04:12:00Z",
+ "updatedAt": "2026-10-24T07:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,16 +7,27 @@
  },
  "world": [
   {
-   "h": "Israel launches 'targeted' Hebron operation",
-   "b": "Al Jazeera's live coverage: Israel says it has begun a 'targeted' operation in Hebron after two soldiers were killed in an attack.",
-   "date": "2026-10-23",
+   "h": "Saudi forces destroy Houthi missile aimed at Riyadh",
+   "b": "Al Jazeera's live coverage: Saudi forces say they destroyed a Houthi ballistic missile launched towards Riyadh.",
+   "date": "2026-10-24",
    "publisher": "Al Jazeera",
-   "title": "Israel says ‘targeted’ operation begun in Hebron after two soldiers killed",
+   "title": "Saudi forces destroy Houthi ballistic missile launched towards Riyadh",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack",
    "gathered": "2026-10-24T00:57:23Z"
   }
  ],
  "national": [
+  {
+   "h": "Severe flooding hits Four Corners region",
+   "b": "Historic flooding along the San Juan River forced evacuations and rooftop rescues, with more rain expected through the weekend.",
+   "date": "2026-10-24",
+   "publisher": "KUOW",
+   "title": "Severe flooding hits Four Corners region, more expected through the weekend",
+   "url": "https://www.kuow.org/npr-news/2026-10-23/severe-flooding-hits-four-corners-region-more-expected-through-the-weekend",
+   "published": "2026-10-24T00:40:42Z",
+   "updated": "2026-10-24T01:36:32Z",
+   "gathered": "2026-10-24T06:15:56Z"
+  },
   {
    "h": "Kirk case defense says it needs years to prepare",
    "b": "Defense attorneys for Tyler Robinson, charged with aggravated murder in Charlie Kirk's killing, say they need years to prepare for trial. A judge scheduled a hearing to set a trial date.",
@@ -58,6 +69,15 @@
   }
  ],
  "politics": [
+  {
+   "h": "Pentagon calls Confucius Institutes a security threat",
+   "b": "Defense Secretary Hegseth said the Pentagon added the Chinese-backed Confucius Institutes to its list of institutions that threaten national security.",
+   "date": "2026-10-24",
+   "publisher": "Al Jazeera",
+   "title": "Pentagon designates Confucius Institutes a national security threat",
+   "url": "https://www.aljazeera.com/news/2026/10/24/pentagon-designates-confucius-institutes-a-national-security-threat",
+   "gathered": "2026-10-24T06:15:56Z"
+  },
   {
    "h": "Trump eases Canada tariffs as Collins seeks help",
    "b": "Trump exempted some Canadian imports from his 50% tariffs. Sen. Susan Collins, in a tight race with Troy Jackson, said she had raised the toll on Maine farmers and businesses with top trade officials.",
@@ -121,13 +141,35 @@
  ],
  "international": [
   {
+   "h": "Israeli raids hit 15 West Bank towns",
+   "b": "Israeli forces raided at least 15 towns in the northern West Bank, including Nablus, Jenin, Tubas and Qalqilya, detaining dozens of Palestinians after a Hebron attack killed two soldiers.",
+   "date": "2026-10-24",
+   "place": "Nablus",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israel raids towns, detains dozens of Palestinians in occupied West Bank",
+   "url": "https://www.aljazeera.com/news/2026/10/24/israel-raids-towns-detains-dozens-of-palestinians-in-occupied-west-bank",
+   "gathered": "2026-10-24T06:15:56Z"
+  },
+  {
+   "h": "Argentine judge drops Milei crypto probe",
+   "b": "Judge Marcelo Martinez de Giorgi ended an inquiry into President Milei's role in the launch of the $Libra token, ruling the events were not a criminal offence.",
+   "date": "2026-10-24",
+   "place": "Buenos Aires",
+   "tz": "America/Argentina/Buenos_Aires",
+   "publisher": "Al Jazeera",
+   "title": "Argentinian judge drops fraud investigation into Milei over crypto scandal",
+   "url": "https://www.aljazeera.com/news/2026/10/24/argentinian-judge-drops-fraud-investigation-into-milei-over-crypto-scandal",
+   "gathered": "2026-10-24T06:15:56Z"
+  },
+  {
    "h": "Typhoon Champi kills 1, injures 350 in Taiwan",
    "b": "Typhoon Champi cut power to thousands of households in Taiwan and forced more than 4,300 people to evacuate. It is heading toward China and Japan, cancelling hundreds of flights.",
    "date": "2026-10-23",
    "place": "Taipei",
    "tz": "Asia/Taipei",
    "publisher": "Al Jazeera",
-   "title": "Typhoon Champi hits Taiwan, killing one and injuring 350",
+   "title": "Typhoon Champi hits Taiwan, killing one and injuring hundreds",
    "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
    "gathered": "2026-10-24T00:57:23Z"
   },
@@ -313,8 +355,6 @@
    "h": "WHO starts Ebola vaccine trial in DR Congo",
    "b": "The WHO says participants in a clinical trial were vaccinated with the Ervebo vaccine in Bunia, in Ituri province, the epicentre of the Ebola outbreak.",
    "date": "2026-10-23",
-   "publisher": "Al Jazeera",
-   "title": "WHO announces start of Ebola vaccine clinical trial in DR Congo",
    "url": "https://www.aljazeera.com/news/2026/10/24/who-announces-start-of-ebola-vaccine-clinical-trial-in-dr-congo",
    "gathered": "2026-10-24T01:12:44Z"
   }
@@ -354,13 +394,13 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
+   "temp": 47,
    "cond": "Fair",
-   "obs": "23 Oct 20:51 pm EDT"
+   "obs": "24 Oct 01:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 43,
     "text": "Partly cloudy, with a low around 43. North wind around 7 mph. "

@@ -20,13 +20,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "23 Oct 20:52 pm EDT"
+    "obs": "24 Oct 01:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 49,
      "text": "Clear, with a low around 49. East wind around 5 mph. "
@@ -35,25 +35,25 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70. Northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 70. Northeast wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Mostly clear, with a low around 50. East wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 50. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70. Northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 70. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49. Northeast wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Clear, with a low around 49. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -90,8 +90,6 @@
     "h": "Fields Corner Post Office will stay open",
     "b": "In a last-minute reversal, USPS secured a lease extension for the Fields Corner Post Office in Dorchester, which was set to close Monday.",
     "date": "2026-10-23",
-    "publisher": "WBUR",
-    "title": "In last-minute reversal, Fields Corner Post Office will stay open",
     "url": "https://www.wbur.org/news/2026/10/23/fields-corner-dorchester-post-office-will-stay-open",
     "gathered": "2026-10-23T18:36:56Z"
    },
@@ -99,8 +97,6 @@
     "h": "Hasbro CEO explains move to Boston",
     "b": "Hasbro CEO Chris Cocks spoke with WBUR about relocating the toymaker to Boston's Seaport after more than 100 years in Rhode Island.",
     "date": "2026-10-23",
-    "publisher": "WBUR",
-    "title": "Hasbro's CEO on the company's relocation to Boston",
     "url": "https://www.wbur.org/news/2026/10/23/hasbro-chris-cocks-pawtucket-seaport-relocation",
     "gathered": "2026-10-23T13:42:44Z"
    },
@@ -114,16 +110,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 42,
     "cond": "Fair",
-    "obs": "23 Oct 20:54 pm EDT"
+    "obs": "24 Oct 01:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 40,
-     "text": "Clear, with a low around 40. North wind 5 to 8 mph becoming calm  after midnight. "
+     "text": "Mostly clear, with a low around 40. Light north wind. "
     },
     {
      "name": "Saturday",
@@ -169,7 +165,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -180,6 +176,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Calls to demolish funeral home where 55 bodies found",
+    "b": "As city inspectors visited the South Side funeral home where 55 decomposing bodies were found in August, activists and an affected family called for its demolition.",
+    "date": "2026-10-24",
+    "publisher": "WBEZ",
+    "title": "City inspects funeral home where 55 decaying bodies were found amid calls for its demolition",
+    "url": "https://www.wbez.org/grave-injustice/2026/10/23/city-inspects-funeral-home-where-55-decaying-bodies-were-found-amid-calls-for-its-demolition",
+    "published": "2026-10-24T02:35:19Z",
+    "updated": "2026-10-24T02:35:19Z",
+    "gathered": "2026-10-24T06:15:56Z"
+   },
    {
     "h": "DOJ joins suit against Evanston reparations",
     "b": "A federal judge let the Justice Department join a Judicial Watch class-action challenge to Evanston's reparations program for Black residents, which launched in 2021.",
@@ -206,11 +213,7 @@
     "h": "Kennedy Expressway delays persist",
     "b": "A WBEZ and Sun-Times analysis of 22 years of drive-time data finds Kennedy Expressway delays persist a year after the three-year construction project ended.",
     "date": "2026-10-23",
-    "publisher": "WBEZ",
-    "title": "3 years after Kennedy Expressway rehab, traffic is still a nightmare",
     "url": "https://www.wbez.org/transportation/2026/10/23/kennedy-expressway-construction-commuters-illinois-department-transportation-pritzker",
-    "published": "2026-10-23T11:34:40Z",
-    "updated": "2026-10-23T11:34:40Z",
     "gathered": "2026-10-23T13:42:44Z"
    },
    {
@@ -230,16 +233,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Partly Cloudy",
-    "obs": "23 Oct 19:53 pm CDT"
+    "temp": 58,
+    "cond": "Mostly Cloudy",
+    "obs": "24 Oct 00:53 am CDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. South southeast wind 5 to 10 mph. "
+     "text": "Mostly clear, with a low around 54. South southeast wind around 10 mph. "
     },
     {
      "name": "Saturday",
@@ -285,7 +288,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -310,16 +313,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 71,
-    "cond": "Partly Cloudy and Breezy",
-    "obs": "23 Oct 17:58 pm MDT"
+    "temp": 60,
+    "cond": "Partly Cloudy",
+    "obs": "23 Oct 22:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Southwest wind 6 to 11 mph becoming light and variable  after midnight. Winds could gust as high as 18 mph. "
+     "text": "Partly cloudy, with a low around 47. West wind around 5 mph becoming light and variable. "
     },
     {
      "name": "Saturday",
@@ -365,7 +368,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -402,7 +405,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. West southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Clear, with a low around 56. Calm wind becoming north northeast around 5 mph. "
     },
     {
      "name": "Saturday",
@@ -448,7 +451,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -505,13 +508,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "23 Oct 20:51 pm EDT"
+    "obs": "24 Oct 01:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 43,
      "text": "Partly cloudy, with a low around 43. North wind around 7 mph. "
@@ -560,7 +563,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -576,19 +579,13 @@
     "h": "EU approves new rights for travellers",
     "b": "The European Parliament gave final approval to new passenger safeguards, including full refunds for cancelled flights booked through travel agents or online platforms. It passed 652 to 2.",
     "date": "2026-10-23",
-    "publisher": "The Local France",
-    "title": "EU parliament approves more safeguards for travellers in Europe",
     "url": "https://www.thelocal.fr/20261023/eu-parliament-approves-more-safeguards-for-travellers-in-europe",
-    "published": "2026-10-23T12:49:21Z",
-    "updated": "2026-10-23T12:49:27Z",
     "gathered": "2026-10-23T13:42:44Z"
    },
    {
     "h": "Trappes shooting probed as possibly Islamophobic",
     "b": "A 39-year-old suspect is in custody after shootings in Trappes and La Verrière that killed one person. The interior minister said he fired at a children's playground, a fuel station and a medical centre.",
     "date": "2026-10-23",
-    "publisher": "Al Jazeera",
-    "title": "One person killed in suspected ‘Islamophobic’ shooting near Paris",
     "url": "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris",
     "gathered": "2026-10-23T18:36:56Z"
    },
@@ -630,7 +627,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "goodnews": []
  },
  {
@@ -705,7 +702,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-24T04:12:00Z",
+  "updatedAt": "2026-10-24T07:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
