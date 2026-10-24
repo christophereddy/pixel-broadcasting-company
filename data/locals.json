@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 72,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "23 Oct 14:52 pm EDT"
+    "obs": "23 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -53,7 +53,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Clear, with a low around 49."
+     "text": "Clear, with a low around 49. Northeast wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -110,34 +110,20 @@
     "date": "2026-10-23",
     "url": "https://www.wbur.org/news/2026/10/23/harvard-book-store-downtown-boston",
     "gathered": "2026-10-23T10:14:33Z"
-   },
-   {
-    "h": "Red Line to speed up to 50 mph south of JFK",
-    "b": "The MBTA will raise Red Line speeds between North Quincy and JFK/UMass to 50 mph in the next few weeks, shortening trips to Braintree.",
-    "date": "2026-10-22",
-    "url": "https://www.wbur.org/news/2026/10/22/mbta-red-line-speeds-north-quincy-jfk",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "Clancy judge denies hearing on holdout juror",
-    "b": "A judge rejected the defense's request for an evidentiary hearing on the lone juror in Lindsay Clancy's trial, which ended in a mistrial.",
-    "date": "2026-10-22",
-    "url": "https://www.wbur.org/news/2026/10/22/judge-sullivan-lindsay-clancy-lone-juror-defense-denial",
-    "gathered": "2026-10-22T18:43:19Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "A Few Clouds",
-    "obs": "23 Oct 14:54 pm EDT"
+    "temp": 48,
+    "cond": "Fair",
+    "obs": "23 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "Clear, with a low around 40. Northeast wind 5 to 8 mph becoming calm  after midnight. "
+     "text": "Clear, with a low around 40. North wind 5 to 8 mph becoming calm  after midnight. "
     },
     {
      "name": "Saturday",
@@ -183,7 +169,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -194,6 +180,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "DOJ joins suit against Evanston reparations",
+    "b": "A federal judge let the Justice Department join a Judicial Watch class-action challenge to Evanston's reparations program for Black residents, which launched in 2021.",
+    "date": "2026-10-23",
+    "publisher": "WBEZ",
+    "title": "DOJ allowed to join lawsuit against Evanston reparations program for Black residents",
+    "url": "https://www.wbez.org/race-class-communities/2026/10/23/doj-allowed-to-join-lawsuit-against-evanston-reparations-program-for-black-residents",
+    "published": "2026-10-23T22:50:10Z",
+    "updated": "2026-10-23T22:50:10Z",
+    "gathered": "2026-10-24T00:57:23Z"
+   },
+   {
+    "h": "Salt Shed owners eye amphitheater expansion",
+    "b": "A zoning application seeks to expand Salt Shed's entertainment holdings onto a plot at 1401-59 N. Magnolia Ave. across from the West Town venue.",
+    "date": "2026-10-23",
+    "publisher": "WBEZ",
+    "title": "Salt Shed owners eye amphitheater expansion across from popular West Town venue",
+    "url": "https://www.wbez.org/real-estate-development/2026/10/23/salt-shed-owners-amphitheater-expansion-west-town-venue",
+    "published": "2026-10-23T22:45:02Z",
+    "updated": "2026-10-23T22:45:02Z",
+    "gathered": "2026-10-24T00:57:23Z"
+   },
    {
     "h": "Kennedy Expressway delays persist",
     "b": "A WBEZ and Sun-Times analysis of 22 years of drive-time data finds Kennedy Expressway delays persist a year after the three-year construction project ended.",
@@ -209,11 +217,7 @@
     "h": "CPS approves $300K for family of bullied girl",
     "b": "The school board approved a settlement for the mother of a Black student who endured more than two years of racist bullying at a Northwest Side school.",
     "date": "2026-10-23",
-    "publisher": "WBEZ",
-    "title": "CPS approves $300,000 for family of girl who endured years of racist bullying",
     "url": "https://www.wbez.org/education/2026/10/22/cps-approves-300-000-for-family-of-girl-who-endured-years-of-racist-bullying",
-    "published": "2026-10-23T00:58:34Z",
-    "updated": "2026-10-23T00:58:34Z",
     "gathered": "2026-10-23T01:45:14Z"
    },
    {
@@ -222,42 +226,15 @@
     "date": "2026-10-23",
     "url": "https://www.wbez.org/education/2026/10/22/cps-board-approves-new-lunchroom-workers-contract-that-raises-wages",
     "gathered": "2026-10-23T01:45:14Z"
-   },
-   {
-    "h": "Chicago Shakespeare chief Kimberly Motes to leave",
-    "b": "Motes will step down in November after three years as executive director to lead Hennepin Arts in Minneapolis.",
-    "date": "2026-10-22",
-    "url": "https://www.wbez.org/theater/2026/10/22/chicago-shakespeare-theater-kimberly-motes-stepping-down",
-    "gathered": "2026-10-22T22:37:55Z"
-   },
-   {
-    "h": "ComEd data center hookups could hit households",
-    "b": "ComEd expects to spend over $3 billion connecting data centers but has collected only about a quarter from developers, consumer groups warn.",
-    "date": "2026-10-22",
-    "url": "https://www.wbez.org/wbez-investigations/2026/10/22/data-centers-comed-3-billion-icc-consumer-groups-cub-illinois-households",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "Illinois doula law is failing families",
-    "b": "An Illinois law meant to help new parents pay for doula care is falling short, families say.",
-    "date": "2026-10-22",
-    "url": "https://www.wbez.org/health-medicine/2026/10/22/this-illinois-law-was-supposed-to-help-families-its-failing-them-instead",
-    "gathered": "2026-10-22T14:00:06Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 70,
-    "cond": "Fair",
-    "obs": "23 Oct 13:53 pm CDT"
+    "temp": 61,
+    "cond": "Partly Cloudy",
+    "obs": "23 Oct 19:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. East wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -286,7 +263,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly cloudy, with a low around 56."
+     "text": "Mostly cloudy, with a low around 56. South wind around 5 mph becoming west northwest after midnight. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Partly sunny, with a high near 62."
     }
    ]
   },
@@ -302,24 +285,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "Why Illinois is America's pumpkin capital",
-    "b": "Farmers in downstate Morton, the self-proclaimed pumpkin capital, explain how Illinois grows more pumpkins than anywhere else.",
-    "date": "2026-10-22",
-    "url": "https://www.wbez.org/food-drink/2026/10/22/illinois-pumpkin-capital-united-states-morton-libby",
-    "gathered": "2026-10-22T22:37:55Z"
-   },
-   {
-    "h": "Arts in the Dark parade lights up Columbus Drive",
-    "b": "The 12th annual Halloween parade brings a fire-breathing dragon, giant puppets, drumlines and dance troupes to Columbus Drive on Saturday night.",
-    "date": "2026-10-22",
-    "url": "https://www.wbez.org/arts-culture/2026/10/22/arts-in-the-dark-halloween-parade-artists-puppets-dancers-columbus-drive",
-    "gathered": "2026-10-22T14:00:06Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -330,22 +298,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 77,
-    "cond": "A Few Clouds and Breezy",
-    "obs": "23 Oct 12:58 pm MDT"
+    "temp": 71,
+    "cond": "Partly Cloudy and Breezy",
+    "obs": "23 Oct 17:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 79,
-     "text": "Sunny, with a high near 79. Breezy, with a south southwest wind 14 to 16 mph, with gusts as high as 25 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Southwest wind 6 to 11 mph becoming light and variable  after midnight. Winds could gust as high as 18 mph. "
+     "text": "Partly cloudy, with a low around 47. Southwest wind 5 to 9 mph becoming light and variable  after midnight. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Saturday",
@@ -369,7 +331,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 41."
+     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 41. North wind 5 to 10 mph becoming light  after midnight. Winds could gust as high as 21 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 60,
+     "text": "A 20 percent chance of showers before noon.  Partly sunny, with a high near 60."
     }
    ]
   },
@@ -385,7 +353,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -397,44 +365,27 @@
   },
   "local": [
    {
+    "h": "Metrolink halts Oceanside service for high tides",
+    "b": "Metrolink will suspend Orange County Line service between Laguna Niguel/Mission Viejo and Oceanside Oct. 26 to 30 amid a coastal flood warning. No buses will replace it.",
+    "date": "2026-10-23",
+    "publisher": "LAist",
+    "title": "Metrolink cancels service to Oceanside next week as south OC braces for high tides",
+    "url": "https://laist.com/news/transportation/metrolink-cancels-oceanside-service-october",
+    "published": "2026-10-23T20:43:09Z",
+    "updated": "2026-10-23T20:43:09Z",
+    "gathered": "2026-10-24T00:57:23Z"
+   },
+   {
     "h": "Inglewood breaks ground on stadium shuttle",
     "b": "Inglewood broke ground on the $287.5 million Inglewood Transit Connector, which will link the Metro K Line to the city's stadium district. Officials hope it revives the Market Street corridor.",
     "date": "2026-10-23",
-    "publisher": "LAist",
-    "title": "Inglewood breaks ground on a new $287.5M stadium shuttle network",
     "url": "https://laist.com/news/transportation/inglewood-breaks-ground-on-a-new-287-5m-stadium-shuttle-network",
-    "published": "2026-10-23T12:00:00Z",
-    "updated": "2026-10-23T11:59:59Z",
     "gathered": "2026-10-23T13:42:44Z"
-   },
-   {
-    "h": "LA in mediation over $1.4B sidewalk settlement",
-    "b": "Monitors say the city may be breaching a settlement to fix sidewalks and build curb ramps as repair requests pile up.",
-    "date": "2026-10-22",
-    "publisher": "LAist",
-    "title": "LA in mediation over $1.4 billion sidewalk settlement as repair requests continue to mount",
-    "url": "https://laist.com/news/transportation/los-angeles-mediation-willits-sidewalk",
-    "published": "2026-10-22T21:17:09Z",
-    "updated": "2026-10-22T21:17:09Z",
-    "gathered": "2026-10-22T22:37:55Z"
-   },
-   {
-    "h": "California cities move to ban data centers",
-    "b": "Local communities are pushing beyond new state disclosure laws, with some cities banning new data centers.",
-    "date": "2026-10-22",
-    "url": "https://laist.com/news/politics/california-data-centers-bans",
-    "gathered": "2026-10-22T22:37:55Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 72,
-     "text": "Mostly sunny, with a high near 72. Southwest wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -463,7 +414,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59."
+     "text": "Mostly clear, with a low around 59. West southwest wind around 5 mph becoming north northeast after midnight. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 81,
+     "text": "Sunny, with a high near 81."
     }
    ]
   },
@@ -479,9 +436,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Pershing Square station renamed for Biddy Mason",
+    "b": "Metro's board voted unanimously to rename the downtown station after Biddy Mason, who went from enslavement to owning much of what is now downtown Los Angeles.",
+    "date": "2026-10-23",
+    "publisher": "LAist",
+    "title": "Metro votes to rename Pershing Square station after pioneering Black Angeleno Biddy Mason",
+    "url": "https://laist.com/news/transportation/pershing-square-metro-station-renamed-after-biddy-mason",
+    "published": "2026-10-23T18:56:24Z",
+    "updated": "2026-10-23T22:05:41Z",
+    "gathered": "2026-10-24T00:57:23Z"
+   }
+  ]
  },
  {
   "location": {
@@ -491,6 +460,17 @@
   },
   "local": [
    {
+    "h": "Mamdani extends ban on new street fairs",
+    "b": "The administration is extending a decades-old moratorium on new street fairs through 2027, citing NYPD overtime. Fairs held this year can still renew.",
+    "date": "2026-10-23",
+    "publisher": "Gothamist",
+    "title": "Mamdani extends ban on permits for new street fairs due to NYPD overtime",
+    "url": "https://gothamist.com/news/mamdani-extends-ban-on-permits-for-new-street-fairs-due-to-nypd-overtime",
+    "published": "2026-10-23T20:24:00Z",
+    "updated": "2026-10-23T23:08:00Z",
+    "gathered": "2026-10-24T00:57:23Z"
+   },
+   {
     "h": "Countdown clocks coming to NYC bus stops",
     "b": "The city transportation department struck a deal to bring countdown clocks to more bus stops, so riders across the five boroughs can see how long they'll wait.",
     "date": "2026-10-23",
@@ -499,120 +479,20 @@
     "url": "https://gothamist.com/news/countdown-clocks-are-coming-to-an-nyc-bus-stop-near-you",
     "published": "2026-10-23T14:59:08Z",
     "gathered": "2026-10-23T18:36:56Z"
-   },
-   {
-    "h": "MTA pulls bus fare enforcement teams",
-    "b": "The MTA is temporarily shutting down its EAGLE bus fare teams after a Brooklyn school dean was roughed up by agents, Chair Janno Lieber said.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "MTA suspending bus fare enforcement teams after altercations emerge",
-    "url": "https://gothamist.com/news/mta-suspending-bus-fare-enforcement-teams-after-altercations-emerge",
-    "published": "2026-10-22T16:50:00Z",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "Ex-Adams aide accused of $120K in kickbacks",
-    "b": "Anthony Herbert faces new federal charges that he took kickbacks from a nonprofit meant to fund community programs.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "Ex-Adams aide accused of pocketing kickbacks from community program funds",
-    "url": "https://gothamist.com/news/ex-adams-aide-accused-of-pocketing-kickbacks-from-community-program-funds",
-    "published": "2026-10-22T17:32:00Z",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "A and C lines get $1.9B signal upgrade",
-    "b": "The MTA will start a six-year project next month to install modern train signals on the A and C lines in Brooklyn and Queens.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "MTA to begin 6-year project to upgrade signal tech on A and C lines in Brooklyn and Queens",
-    "url": "https://gothamist.com/news/mta-to-begin-6-year-project-to-upgrade-signal-tech-on-a-and-c-lines-in-brooklyn-and-queens",
-    "published": "2026-10-22T16:59:51Z",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "Council to probe collapsed Hunts Point market deal",
-    "b": "The City Council will hold a hearing on why a $650 million deal to modernize the Hunts Point Produce Market fell apart.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "NYC Council to grill Mamdani officials on collapsed Hunts Point Produce Market deal",
-    "url": "https://gothamist.com/news/nyc-council-to-grill-mamdani-officials-on-collapsed-hunts-point-produce-market-deal",
-    "published": "2026-10-22T18:16:06Z",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "Fatal motorcycle crash closes GWB lanes",
-    "b": "All upper-level lanes into New York on the George Washington Bridge closed during the morning rush after a motorcyclist was struck by a tractor-trailer.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "Fatal motorcycle crash on George Washington Bridge disrupts morning commute",
-    "url": "https://gothamist.com/news/fatal-motorcycle-crash-closes-upper-lanes-to-ny-on-george-washington-bridge",
-    "published": "2026-10-22T11:28:00Z",
-    "gathered": "2026-10-22T14:00:06Z"
-   },
-   {
-    "h": "Council set to give nonprofits first shot at buildings",
-    "b": "The City Council is poised to approve the Community Opportunity to Purchase Act, letting nonprofits bid on dilapidated buildings before they hit the open market.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "Mamdani-backed housing bill will give nonprofits head start on buying NYC apartments",
-    "url": "https://gothamist.com/news/mamdani-backed-housing-bill-will-give-nonprofits-head-start-on-buying-nyc-apartments",
-    "published": "2026-10-22T12:00:00Z",
-    "gathered": "2026-10-22T14:00:06Z"
-   },
-   {
-    "h": "Ballot asks NYC to ease outdoor dining, bike lanes",
-    "b": "Five proposed charter amendments on the November ballot could expand outdoor dining and speed up new bike and bus lanes.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "Ballot questions ask NYC voters whether to cut red tape on outdoor dining, bike lanes",
-    "url": "https://gothamist.com/news/ballot-questions-ask-nyc-voters-whether-to-cut-red-tape-on-outdoor-dining-bike-lanes",
-    "published": "2026-10-22T10:30:00Z",
-    "gathered": "2026-10-22T14:00:06Z"
-   },
-   {
-    "h": "NYPD seized mom's Christmas gifts, never returned them",
-    "b": "Police arrested a single mother on Christmas Eve 2024 and took the presents she bought for her five children. She never got them back.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "The NYPD arrested a mom and took her kids' Christmas gifts. She never got them back.",
-    "url": "https://gothamist.com/news/the-nypd-arrested-a-mom-and-took-her-kids-christmas-gifts-she-never-got-them-back",
-    "published": "2026-10-22T10:00:00Z",
-    "gathered": "2026-10-22T10:12:34Z"
-   },
-   {
-    "h": "Ex-detective held on $1M bail in GWB shooting",
-    "b": "The former NYPD detective accused of killing a driver in a road rage shooting on the George Washington Bridge was held on $1 million bail at his arraignment.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "Former NYPD detective held on $1M bail after police say he shot driver on GWB",
-    "url": "https://gothamist.com/news/former-cop-who-fatally-shot-a-man-on-the-george-washington-bridge-held-on-1-million-bail",
-    "published": "2026-10-22T18:12:00Z",
-    "gathered": "2026-10-22T18:43:19Z"
-   },
-   {
-    "h": "Teen arrested in fatal Midtown subway shooting",
-    "b": "A 17-year-old was charged with murder in the fatal shooting of a Bronx man at a Midtown subway station on Saturday, police said.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "NYPD arrests 17-year-old in fatal Midtown subway platform shooting",
-    "url": "https://gothamist.com/news/nypd-arrests-17-year-old-in-fatal-midtown-subway-platform-shooting",
-    "published": "2026-10-23T15:33:00Z",
-    "gathered": "2026-10-22T18:43:19Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 52,
     "cond": "Fair",
-    "obs": "23 Oct 14:51 pm EDT"
+    "obs": "23 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Increasing clouds, with a low around 43. North wind around 8 mph. "
+     "text": "Partly cloudy, with a low around 43. North wind around 7 mph. "
     },
     {
      "name": "Saturday",
@@ -658,20 +538,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Forest Hills Stadium keeps concerts in neighbor deal",
-    "b": "A settlement ends years of litigation between the Queens venue and neighbors over noise, letting concerts continue for the foreseeable future.",
-    "date": "2026-10-22",
-    "publisher": "Gothamist",
-    "title": "Forest Hills Stadium can keep its concerts under deal with neighbors",
-    "url": "https://gothamist.com/news/forest-hills-stadium-can-keep-its-concerts-under-deal-with-neighbors",
-    "published": "2026-10-22T18:49:06Z",
-    "gathered": "2026-10-22T19:12:53Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -721,34 +590,6 @@
     "date": "2026-10-23",
     "url": "https://www.aljazeera.com/news/2026/10/23/france-tightens-security-in-anticipation-of-weekend-protests",
     "gathered": "2026-10-23T13:42:44Z"
-   },
-   {
-    "h": "2027 Tour de France routes revealed",
-    "b": "The men's Tour will start in Edinburgh, and the women's race will finish atop a volcano in central France.",
-    "date": "2026-10-22",
-    "url": "https://www.thelocal.fr/20261022/maps-routes-revealed-for-the-2027-tour-de-france-races",
-    "gathered": "2026-10-22T14:00:06Z"
-   },
-   {
-    "h": "Four dead as storms lash south of France",
-    "b": "Storms brought high winds, heavy rain and flooding to the south coast. Three people died in Bouches-du-Rhône, where officials reported major damage.",
-    "date": "2026-10-22",
-    "url": "https://www.thelocal.fr/20261022/four-dead-as-storms-lash-south-of-france",
-    "gathered": "2026-10-22T10:12:34Z"
-   },
-   {
-    "h": "Protests banned in parts of Paris Thursday",
-    "b": "Rallies are banned from 8am to 8pm near the Elysée, parliament, the Louvre, the Champs-Elysées, Bastille, République and Châtelet-Les Halles.",
-    "date": "2026-10-22",
-    "url": "https://www.thelocal.fr/20261022/protests-banned-in-parts-of-paris-on-thursday",
-    "gathered": "2026-10-22T07:51:19Z"
-   },
-   {
-    "h": "Two killed in French fighter jet crash",
-    "b": "A Mirage 2000D crashed during a training flight near its air base outside Nancy, killing its 27-year-old pilot and 44-year-old navigator.",
-    "date": "2026-10-22",
-    "url": "https://www.thelocal.fr/20261022/french-fighter-jet-crashes-during-training-leaves-two-killed",
-    "gathered": "2026-10-22T07:51:19Z"
    }
   ],
   "weather": {
@@ -767,7 +608,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "goodnews": []
  },
  {
@@ -778,29 +619,20 @@
   },
   "local": [
    {
-    "h": "Chemical safety at WA pulp mills hard to learn",
-    "b": "After a deadly implosion at a Longview mill, information about hazardous chemicals at Washington pulp mills remains hard to come by despite right-to-know laws.",
-    "date": "2026-10-22",
-    "url": "https://www.kuow.org/environment/2026-10-22/after-deadly-implosion-are-washington-pulp-mills-safe",
-    "gathered": "2026-10-22T22:37:55Z"
-   },
-   {
-    "h": "Wilson expands World Cup homeless plan citywide",
-    "b": "Mayor Katie Wilson said a program that moved Pioneer Square homeless residents into housing before the World Cup will expand across Seattle at no extra cost.",
-    "date": "2026-10-22",
-    "url": "https://www.kuow.org/governing/2026-10-21/wilson-wants-to-emulate-denver-houston-with-new-homelessness-strategy",
-    "gathered": "2026-10-22T01:42:06Z"
+    "h": "DOJ sending election monitors to King County",
+    "b": "The Justice Department says it will send monitors to King County for the Nov. 3 midterms and that they only observe. Washington votes almost entirely by mail.",
+    "date": "2026-10-23",
+    "publisher": "KUOW",
+    "title": "DOJ sending election monitors to WA’s King County",
+    "url": "https://www.kuow.org/elections/2026-10-23/doj-sending-election-monitors-to-was-king-county",
+    "published": "2026-10-24T00:00:10Z",
+    "updated": "2026-10-24T00:00:10Z",
+    "gathered": "2026-10-24T00:57:23Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Sunny, with a high near 56. Light northwest wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -829,7 +661,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 46,
-     "text": "A 40 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 46."
+     "text": "A 40 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 46. Light north northeast wind. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 57,
+     "text": "A 20 percent chance of rain before 11am.  Partly sunny, with a high near 57."
     }
    ]
   },
@@ -845,9 +683,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-23T22:13:00Z",
+  "updatedAt": "2026-10-24T01:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
+   {
+    "h": "Redmond startup's solar robot pulls weeds",
+    "b": "Aigen's solar-powered robot uses metal arms to pluck weeds as it rolls through farm plots, aiming to weed crops without diesel or herbicide spraying.",
+    "date": "2026-10-23",
+    "publisher": "KUOW",
+    "title": "Redmond-based startup develops new robot weeder using AI technology",
+    "url": "https://www.kuow.org/technology/2026-10-23/redmond-based-startup-develops-new-robot-weeder-using-ai-technology",
+    "published": "2026-10-24T00:07:18Z",
+    "updated": "2026-10-24T00:20:04Z",
+    "gathered": "2026-10-24T00:57:23Z"
+   },
    {
     "h": "Bass drummer hired to drown out street preacher",
     "b": "A Seattle resident paid a drummer to follow a megaphone-wielding street preacher for over an hour, and the clips went viral on Reddit.",
