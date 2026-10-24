@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T16:12:00Z",
+ "updatedAt": "2026-10-24T19:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "2,200 Palestinians forced from Hebron homes",
-   "b": "Al Jazeera's live coverage: 2,200 Palestinians have been forced to evacuate their homes in Hebron amid Israeli raids.",
+   "h": "Houthis fire ballistic missile at Yemen's Aden",
+   "b": "Al Jazeera's live coverage: the Houthis have launched a ballistic missile attack on Yemen's southern city of Aden.",
    "date": "2026-10-24",
    "publisher": "Al Jazeera",
-   "title": "2,200 Palestinians forced to evacuate Hebron homes amid Israeli raids",
+   "title": "Houthis launch ballistic missile attack on Yemen’s Aden",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack",
    "gathered": "2026-10-24T00:57:23Z"
   }
@@ -43,10 +43,7 @@
    "h": "Kirk case defense says it needs years to prepare",
    "b": "Defense attorneys for Tyler Robinson, charged with aggravated murder in Charlie Kirk's killing, say they need years to prepare for trial. A judge scheduled a hearing to set a trial date.",
    "date": "2026-10-23",
-   "publisher": "PBS NewsHour",
-   "title": "Defense attorneys in case over Charlie Kirk's killing say they need years to prepare for trial",
    "url": "https://www.pbs.org/newshour/nation/defense-attorneys-in-case-over-charlie-kirks-killing-say-they-need-years-to-prepare-for-trial",
-   "published": "2026-10-23T22:03:01Z",
    "gathered": "2026-10-24T00:57:23Z"
   },
   {
@@ -81,6 +78,16 @@
  ],
  "politics": [
   {
+   "h": "US cuts staff at 4 Mideast embassies over Iran threats",
+   "b": "The U.S. is reducing staffing at four Middle East embassies after a memo warned Iranian plotting against U.S. citizens had reached advanced stages.",
+   "date": "2026-10-24",
+   "publisher": "PBS NewsHour",
+   "title": "U.S. is reducing staffing at 4 Middle East embassies over increased threats from Iran",
+   "url": "https://www.pbs.org/newshour/politics/u-s-is-reducing-staffing-at-4-middle-east-embassies-over-increased-threats-from-iran",
+   "published": "2026-10-24T15:09:20Z",
+   "gathered": "2026-10-24T18:18:06Z"
+  },
+  {
    "h": "Pentagon calls Confucius Institutes a security threat",
    "b": "Defense Secretary Hegseth said the Pentagon added the Chinese-backed Confucius Institutes to its list of institutions that threaten national security.",
    "date": "2026-10-24",
@@ -91,10 +98,7 @@
    "h": "Trump eases Canada tariffs as Collins seeks help",
    "b": "Trump exempted some Canadian imports from his 50% tariffs. Sen. Susan Collins, in a tight race with Troy Jackson, said she had raised the toll on Maine farmers and businesses with top trade officials.",
    "date": "2026-10-23",
-   "publisher": "PBS NewsHour",
-   "title": "Seeking to help Collins in Maine, Trump exempts some Canadian imports from his 50% tariffs",
    "url": "https://www.pbs.org/newshour/politics/seeking-to-help-collins-in-maine-trump-exempts-some-canadian-imports-from-his-50-tariffs",
-   "published": "2026-10-23T22:48:08Z",
    "gathered": "2026-10-24T00:57:23Z"
   },
   {
@@ -141,6 +145,17 @@
    "gathered": "2026-10-23T01:45:14Z"
   },
   {
+   "h": "DOJ orders California counties to verify ballots",
+   "b": "Federal prosecutors sent letters to county registrars across California demanding they set aside and verify ballots the Justice Department says may belong to noncitizens, within 48 hours.",
+   "date": "2026-10-24",
+   "publisher": "LAist",
+   "title": "DOJ orders some California counties to verify ballots in 48 hours",
+   "url": "https://laist.com/news/politics/doj-orders-some-california-counties-to-verify-ballots-in-48-hours",
+   "published": "2026-10-24T15:23:59Z",
+   "updated": "2026-10-24T15:41:02Z",
+   "gathered": "2026-10-24T18:18:06Z"
+  },
+  {
    "h": "Omar to move out of DC home after search",
    "b": "Rep. Ilhan Omar said she will move out of her Washington home after a federal search and is \"confident\" she did nothing wrong, as prosecutors probe her family's immigration paperwork.",
    "date": "2026-10-23",
@@ -149,6 +164,28 @@
   }
  ],
  "international": [
+  {
+   "h": "About 25,000 rally in Madrid for state pensions",
+   "b": "Protesters from across Spain marched in Madrid in support of the state pension scheme ahead of next month's general election, citing pressure from an ageing population and stagnant wages.",
+   "date": "2026-10-24",
+   "place": "Madrid",
+   "tz": "Europe/Madrid",
+   "publisher": "Al Jazeera",
+   "title": "About 25,000 rally in Madrid in support of Spain’s state pension scheme",
+   "url": "https://www.aljazeera.com/news/2026/10/24/about-25000-rally-in-madrid-in-support-of-spains-state-pension-scheme",
+   "gathered": "2026-10-24T18:18:06Z"
+  },
+  {
+   "h": "Soldiers deploy as protesters rally in Milan",
+   "b": "Hundreds of soldiers spread across Milan and luxury boutiques were boarded up as protesters marched, a week after demonstrations spiralled into clashes and looting.",
+   "date": "2026-10-24",
+   "place": "Milan",
+   "tz": "Europe/Rome",
+   "publisher": "Al Jazeera",
+   "title": "Hundreds of soldiers deploy as protesters rally in Italy’s Milan",
+   "url": "https://www.aljazeera.com/news/2026/10/24/security-forces-deploy-as-milan-braces-for-another-day-of-protests",
+   "gathered": "2026-10-24T18:18:06Z"
+  },
   {
    "h": "Ukraine says Starlink access restored",
    "b": "Defence Minister Yevhenii Khmara said Starlink and Starshield connections are stable again, crediting talks with Washington and Zelenskyy's diplomacy, as attacks continue in Russia and Ukraine.",
@@ -177,8 +214,6 @@
    "date": "2026-10-24",
    "place": "China",
    "tz": "Asia/Shanghai",
-   "publisher": "Al Jazeera",
-   "title": "North Korea’s Kim Jong Un visits China via newly opened bridge",
    "url": "https://www.aljazeera.com/news/2026/10/24/north-koreas-kim-jong-un-arrives-in-china-south-korean-media-says",
    "gathered": "2026-10-24T11:25:45Z"
   },
@@ -188,8 +223,6 @@
    "date": "2026-10-24",
    "place": "Havana",
    "tz": "America/Havana",
-   "publisher": "Al Jazeera",
-   "title": "Rubio calls on Cubans to partner with CIA ‘to create positive change’",
    "url": "https://www.aljazeera.com/news/2026/10/24/rubio-calls-on-cubans-to-partner-with-cia-to-create-positive-change",
    "gathered": "2026-10-24T11:25:45Z"
   },
@@ -316,8 +349,6 @@
    "date": "2026-10-24",
    "place": "São Paulo",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Brazil’s Lula and Bolsonaro debate policy proposals before run-off",
    "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-and-bolsonaro-debate-policy-proposals-before-run-off",
    "gathered": "2026-10-24T11:25:45Z"
   },
@@ -354,10 +385,7 @@
    "h": "Treasury proposes curbs on tech investment in China",
    "b": "Treasury proposed a rule expanding limits on U.S. investments in sensitive technologies in China and other adversaries, including Russia, Iran, North Korea and Cuba.",
    "date": "2026-10-23",
-   "publisher": "PBS NewsHour",
-   "title": "Treasury proposes rule to curb high-tech investments in China and other adversaries",
    "url": "https://www.pbs.org/newshour/politics/treasury-proposes-rule-to-curb-high-tech-investments-in-china-and-other-adversaries",
-   "published": "2026-10-23T23:19:32Z",
    "gathered": "2026-10-24T00:57:23Z"
   },
   {
@@ -476,16 +504,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "24 Oct 09:51 am EDT"
+   "obs": "24 Oct 13:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 63,
-    "text": "Mostly sunny, with a high near 63. North wind around 5 mph becoming light and variable  in the afternoon. "
+    "text": "Mostly sunny, with a high near 63. Light west wind. "
    },
    {
     "name": "Tonight",
