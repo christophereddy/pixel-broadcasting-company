@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T07:12:00Z",
+ "updatedAt": "2026-10-24T10:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Saudi forces destroy Houthi missile aimed at Riyadh",
-   "b": "Al Jazeera's live coverage: Saudi forces say they destroyed a Houthi ballistic missile launched towards Riyadh.",
+   "h": "Iran warns US military away from the Gulf",
+   "b": "Al Jazeera's live coverage: Iran says the US military is not allowed to enter the Gulf 'under any circumstances'.",
    "date": "2026-10-24",
    "publisher": "Al Jazeera",
-   "title": "Saudi forces destroy Houthi ballistic missile launched towards Riyadh",
+   "title": "Iran says US military not allowed to enter Gulf ‘under any circumstances’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack",
    "gathered": "2026-10-24T00:57:23Z"
   }
@@ -273,6 +273,17 @@
    "tz": "America/Edmonton",
    "url": "https://www.aljazeera.com/news/2026/10/23/grenade-exercise-sparked-deadly-fire-at-canada-military-base-army-says",
    "gathered": "2026-10-23T07:50:21Z"
+  },
+  {
+   "h": "Taiz hospital warns of collapse within days",
+   "b": "A dialysis centre treating 270 patients in Yemen's government-held city of Taiz says medical supplies and fuel are critically low under the renewed Houthi siege.",
+   "date": "2026-10-24",
+   "place": "Taiz, Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Hospital in Yemen’s Taiz warns of collapse in days because of Houthi siege",
+   "url": "https://www.aljazeera.com/features/2026/10/24/hospital-yemen-taiz-warns-collapse-houthi-siege",
+   "gathered": "2026-10-24T07:12:49Z"
   }
  ],
  "business": [
@@ -328,6 +339,15 @@
  ],
  "science": [],
  "sports": [
+  {
+   "h": "Brewers win World Series Game 1, 3-2",
+   "b": "Milwaukee beat the Rays 3-2 in Game 1 at American Family Field after a week off. Christian Yelich tripled home Jackson Chourio in a two-run first inning.",
+   "date": "2026-10-24",
+   "publisher": "CBS Sports",
+   "title": "Rust? What rust? Brewers open World Series refreshed and ready thanks to all that winning",
+   "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rested-rays/",
+   "gathered": "2026-10-24T07:12:49Z"
+  },
   {
    "h": "Bears flagged for rare illegal forward handing",
    "b": "The Bears became the first team in 16 years to be called for illegal forward handing, on a trick play against the Patriots that lost five yards.",
@@ -396,44 +416,44 @@
   "now": {
    "temp": 47,
    "cond": "Fair",
-   "obs": "24 Oct 01:51 am EDT"
+   "obs": "24 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 43,
-    "text": "Partly cloudy, with a low around 43. North wind around 7 mph. "
-   },
-   {
     "name": "Saturday",
     "kind": "high",
-    "temp": 64,
-    "text": "Partly sunny, with a high near 64. North wind 5 to 7 mph becoming light and variable  in the morning. "
+    "temp": 63,
+    "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable  in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 42,
-    "text": "Mostly clear, with a low around 42. Light and variable wind becoming northwest around 5 mph. "
+    "temp": 44,
+    "text": "Clear, with a low around 44. Light and variable wind becoming northwest around 5 mph after midnight. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 68,
-    "text": "Sunny, with a high near 68. Light and variable wind. "
+    "temp": 66,
+    "text": "Sunny, with a high near 66. Northwest wind around 5 mph becoming calm  in the morning. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 46,
-    "text": "Clear, with a low around 46. West wind around 6 mph. "
+    "temp": 48,
+    "text": "Clear, with a low around 48. West wind around 6 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
-    "temp": 69,
-    "text": "Sunny, with a high near 69."
+    "temp": 68,
+    "text": "Sunny, with a high near 68."
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 53,
+    "text": "Clear, with a low around 53."
    }
   ]
  },
