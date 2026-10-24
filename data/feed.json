@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T19:12:00Z",
+ "updatedAt": "2026-10-24T22:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,16 +7,26 @@
  },
  "world": [
   {
-   "h": "Houthis fire ballistic missile at Yemen's Aden",
-   "b": "Al Jazeera's live coverage: the Houthis have launched a ballistic missile attack on Yemen's southern city of Aden.",
+   "h": "Houthi missile debris falls on Mecca, Jeddah",
+   "b": "Al Jazeera's live coverage: the Houthis attacked Yemen's Aden, and missile debris fell on the Saudi cities of Mecca and Jeddah.",
    "date": "2026-10-24",
    "publisher": "Al Jazeera",
-   "title": "Houthis launch ballistic missile attack on Yemen’s Aden",
+   "title": "Houthis attack Yemen’s Aden, missile debris falls on Mecca, Jeddah",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack",
    "gathered": "2026-10-24T00:57:23Z"
   }
  ],
  "national": [
+  {
+   "h": "N.Y. woman charged with voting says she didn't know she wasn't a citizen",
+   "b": "A 66-year-old Syracuse woman faces a federal charge of voting by an alien. She says she only learned of her German birth certificate while searching for her biological mother.",
+   "date": "2026-10-24",
+   "publisher": "PBS NewsHour",
+   "title": "New York state woman charged with voting illegally says she recently learned she wasn’t a citizen",
+   "url": "https://www.pbs.org/newshour/politics/new-york-state-woman-charged-with-voting-illegally-says-she-recently-learned-she-wasnt-a-citizen",
+   "published": "2026-10-24T18:07:33Z",
+   "gathered": "2026-10-24T21:04:19Z"
+  },
   {
    "h": "U.S. birth rate drops to record low",
    "b": "The U.S. birth rate has fallen to a record low, though older women are having more babies, NPR reports.",
@@ -32,11 +42,7 @@
    "h": "Severe flooding hits Four Corners region",
    "b": "Historic flooding along the San Juan River forced evacuations and rooftop rescues, with more rain expected through the weekend.",
    "date": "2026-10-24",
-   "publisher": "KUOW",
-   "title": "Severe flooding hits Four Corners region, more expected through the weekend",
    "url": "https://www.kuow.org/npr-news/2026-10-23/severe-flooding-hits-four-corners-region-more-expected-through-the-weekend",
-   "published": "2026-10-24T00:40:42Z",
-   "updated": "2026-10-24T01:36:32Z",
    "gathered": "2026-10-24T06:15:56Z"
   },
   {
@@ -61,7 +67,6 @@
    "title": "Bird Flu Is Raging on a Mink Farm. It Could Spark a Human Pandemic, Experts Say, but Officials Won’t Act.",
    "url": "https://www.propublica.org/article/bird-flu-mink-farm-utah-human-risk",
    "published": "2026-10-23T09:00:00Z",
-   "updated": "2026-10-23T16:22:39Z",
    "gathered": "2026-10-23T10:14:33Z"
   },
   {
@@ -81,10 +86,7 @@
    "h": "US cuts staff at 4 Mideast embassies over Iran threats",
    "b": "The U.S. is reducing staffing at four Middle East embassies after a memo warned Iranian plotting against U.S. citizens had reached advanced stages.",
    "date": "2026-10-24",
-   "publisher": "PBS NewsHour",
-   "title": "U.S. is reducing staffing at 4 Middle East embassies over increased threats from Iran",
    "url": "https://www.pbs.org/newshour/politics/u-s-is-reducing-staffing-at-4-middle-east-embassies-over-increased-threats-from-iran",
-   "published": "2026-10-24T15:09:20Z",
    "gathered": "2026-10-24T18:18:06Z"
   },
   {
@@ -165,6 +167,17 @@
  ],
  "international": [
   {
+   "h": "Thousands of Israelis rally against Netanyahu",
+   "b": "Thousands rallied days before Israel's election at a protest organised by the October Council, founded by families of captives taken to Gaza, demanding accountability for the failure to prevent the Hamas attack.",
+   "date": "2026-10-24",
+   "place": "Tel Aviv",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Thousands of Israelis rally against Netanyahu gov’t days before election",
+   "url": "https://www.aljazeera.com/news/2026/10/24/thousands-of-israelis-rally-against-netanyahu-govt-days-before-election",
+   "gathered": "2026-10-24T21:04:19Z"
+  },
+  {
    "h": "About 25,000 rally in Madrid for state pensions",
    "b": "Protesters from across Spain marched in Madrid in support of the state pension scheme ahead of next month's general election, citing pressure from an ageing population and stagnant wages.",
    "date": "2026-10-24",
@@ -182,7 +195,7 @@
    "place": "Milan",
    "tz": "Europe/Rome",
    "publisher": "Al Jazeera",
-   "title": "Hundreds of soldiers deploy as protesters rally in Italy’s Milan",
+   "title": "Hundreds of Italian soldiers deployed as thousands protest in Milan",
    "url": "https://www.aljazeera.com/news/2026/10/24/security-forces-deploy-as-milan-braces-for-another-day-of-protests",
    "gathered": "2026-10-24T18:18:06Z"
   },
@@ -203,8 +216,6 @@
    "date": "2026-10-24",
    "place": "Berchtesgaden",
    "tz": "Europe/Berlin",
-   "publisher": "Al Jazeera",
-   "title": "German police detain suspect after fire engulfs Hitler’s Eagle’s Nest",
    "url": "https://www.aljazeera.com/news/2026/10/24/german-police-detain-suspect-after-fire-engulfs-hitlers-eagles-nest",
    "gathered": "2026-10-24T14:45:15Z"
   },
@@ -272,13 +283,15 @@
    "gathered": "2026-10-23T19:13:00Z"
   },
   {
-   "h": "Gunmen kill 7 at church funeral in Jordan",
-   "b": "Gunmen opened fire at a church during a funeral in Karak, killing seven and wounding 34. The government said investigations are under way and did not say whether any attackers were caught.",
-   "date": "2026-10-23",
+   "h": "Jordan's king orders firm response to church attack",
+   "b": "King Abdullah ordered a firm response after gunmen killed seven at a church funeral in Karak. Security has been increased at malls and embassies as authorities search for the attackers.",
+   "date": "2026-10-24",
    "place": "Karak",
    "tz": "Asia/Amman",
-   "url": "https://www.pbs.org/newshour/world/gunmen-open-fire-at-a-church-during-a-funeral-in-jordan-killing-7-and-wounding-34",
-   "gathered": "2026-10-23T18:36:56Z"
+   "publisher": "Al Jazeera",
+   "title": "Jordan’s King Abdullah orders firm response after deadly church attack",
+   "url": "https://www.aljazeera.com/news/2026/10/24/jordans-king-abdullah-orders-firm-response-after-deadly-church-attack",
+   "gathered": "2026-10-24T21:04:19Z"
   },
   {
    "h": "Greece bans social media for under-15s",
@@ -422,6 +435,15 @@
  "science": [],
  "sports": [
   {
+   "h": "Petr Yan outduels Dvalishvili to keep UFC title",
+   "b": "Petr Yan retained his bantamweight title against Merab Dvalishvili at UFC 333 in a Fight of the Year contender.",
+   "date": "2026-10-24",
+   "publisher": "CBS Sports",
+   "title": "UFC 333 results: Petr Yan outduels Merab Dvalishvili to retain title in Fight of the Year contender",
+   "url": "https://www.cbssports.com/ufc/news/ufc-333-petr-yan-merab-dvalishvili-results-bantamweight-title-fight-of-the-year-contender/",
+   "gathered": "2026-10-24T21:04:19Z"
+  },
+  {
    "h": "Brewers win World Series Game 1, 3-2",
    "b": "Milwaukee beat the Rays 3-2 in Game 1 at American Family Field after a week off. Christian Yelich tripled home Jackson Chourio in a two-run first inning.",
    "date": "2026-10-24",
@@ -504,46 +526,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "24 Oct 13:51 pm EDT"
+   "obs": "24 Oct 16:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 63,
-    "text": "Mostly sunny, with a high near 63. Light west wind. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 44,
-    "text": "Clear, with a low around 44. Light and variable wind becoming northwest around 5 mph after midnight. "
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51. Calm wind becoming west around 5 mph after midnight. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 66,
-    "text": "Sunny, with a high near 66. Northwest wind around 5 mph becoming calm  in the morning. "
+    "temp": 65,
+    "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming light and variable  in the morning. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Clear, with a low around 48. West wind around 6 mph. "
+    "temp": 55,
+    "text": "Clear, with a low around 55. West wind around 6 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 68,
-    "text": "Sunny, with a high near 68. West wind around 7 mph. "
+    "text": "Sunny, with a high near 68. West wind 6 to 9 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 53,
-    "text": "Clear, with a low around 53."
+    "temp": 54,
+    "text": "Mostly clear, with a low around 54. West wind 9 to 11 mph. "
+   },
+   {
+    "name": "Tuesday",
+    "kind": "high",
+    "temp": 61,
+    "text": "Sunny, with a high near 61."
    }
   ]
  },
