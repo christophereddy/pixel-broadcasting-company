@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-24T10:12:00Z",
+ "updatedAt": "2026-10-24T13:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Iran warns US military away from the Gulf",
-   "b": "Al Jazeera's live coverage: Iran says the US military is not allowed to enter the Gulf 'under any circumstances'.",
+   "h": "Hundreds of families displaced in Hebron raids",
+   "b": "Al Jazeera's live coverage: hundreds of families have been displaced in Hebron amid ongoing Israeli army raids.",
    "date": "2026-10-24",
    "publisher": "Al Jazeera",
-   "title": "Iran says US military not allowed to enter Gulf ‘under any circumstances’",
+   "title": "Hundreds of families displaced in Hebron amid ongoing Israeli army raids",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack",
    "gathered": "2026-10-24T00:57:23Z"
   }
@@ -73,8 +73,6 @@
    "h": "Pentagon calls Confucius Institutes a security threat",
    "b": "Defense Secretary Hegseth said the Pentagon added the Chinese-backed Confucius Institutes to its list of institutions that threaten national security.",
    "date": "2026-10-24",
-   "publisher": "Al Jazeera",
-   "title": "Pentagon designates Confucius Institutes a national security threat",
    "url": "https://www.aljazeera.com/news/2026/10/24/pentagon-designates-confucius-institutes-a-national-security-threat",
    "gathered": "2026-10-24T06:15:56Z"
   },
@@ -141,13 +139,35 @@
  ],
  "international": [
   {
+   "h": "Kim Jong Un visits China via new bridge",
+   "b": "North Korean leader Kim Jong Un crossed into China over the newly opened border bridge and met Chinese Premier Li Qiang, a day before the anniversary of China joining the Korean War.",
+   "date": "2026-10-24",
+   "place": "China",
+   "tz": "Asia/Shanghai",
+   "publisher": "Al Jazeera",
+   "title": "North Korea’s Kim Jong Un visits China via newly opened bridge",
+   "url": "https://www.aljazeera.com/news/2026/10/24/north-koreas-kim-jong-un-arrives-in-china-south-korean-media-says",
+   "gathered": "2026-10-24T11:25:45Z"
+  },
+  {
+   "h": "Rubio urges Cubans to partner with CIA",
+   "b": "Secretary of State Marco Rubio called on Cubans to partner with the CIA 'to create positive change,' after months of US officials hinting at intervention in Cuba.",
+   "date": "2026-10-24",
+   "place": "Havana",
+   "tz": "America/Havana",
+   "publisher": "Al Jazeera",
+   "title": "Rubio calls on Cubans to partner with CIA ‘to create positive change’",
+   "url": "https://www.aljazeera.com/news/2026/10/24/rubio-calls-on-cubans-to-partner-with-cia-to-create-positive-change",
+   "gathered": "2026-10-24T11:25:45Z"
+  },
+  {
    "h": "Israeli raids hit 15 West Bank towns",
    "b": "Israeli forces raided at least 15 towns in the northern West Bank, including Nablus, Jenin, Tubas and Qalqilya, detaining dozens of Palestinians after a Hebron attack killed two soldiers.",
    "date": "2026-10-24",
    "place": "Nablus",
    "tz": "Asia/Hebron",
    "publisher": "Al Jazeera",
-   "title": "Israel raids towns, detains dozens of Palestinians in occupied West Bank",
+   "title": "Israel raids towns, arrests dozens of Palestinians in occupied West Bank",
    "url": "https://www.aljazeera.com/news/2026/10/24/israel-raids-towns-detains-dozens-of-palestinians-in-occupied-west-bank",
    "gathered": "2026-10-24T06:15:56Z"
   },
@@ -157,8 +177,6 @@
    "date": "2026-10-24",
    "place": "Buenos Aires",
    "tz": "America/Argentina/Buenos_Aires",
-   "publisher": "Al Jazeera",
-   "title": "Argentinian judge drops fraud investigation into Milei over crypto scandal",
    "url": "https://www.aljazeera.com/news/2026/10/24/argentinian-judge-drops-fraud-investigation-into-milei-over-crypto-scandal",
    "gathered": "2026-10-24T06:15:56Z"
   },
@@ -179,8 +197,6 @@
    "date": "2026-10-23",
    "place": "Istanbul",
    "tz": "Europe/Istanbul",
-   "publisher": "Al Jazeera",
-   "title": "European, Middle East ministers urge US-Iran diplomacy, not new attacks",
    "url": "https://www.aljazeera.com/news/2026/10/23/european-middle-east-ministers-urge-us-iran-diplomacy-not-new-attacks",
    "gathered": "2026-10-23T19:13:00Z"
   },
@@ -264,6 +280,17 @@
    "tz": "Africa/Tunis",
    "url": "https://www.aljazeera.com/news/2026/10/23/rare-unrest-flares-in-tunisian-capital-as-police-clash-with-protesters",
    "gathered": "2026-10-23T01:45:14Z"
+  },
+  {
+   "h": "Lula, Bolsonaro spar over economy before run-off",
+   "b": "In a debate two days before Brazil's run-off, the candidates clashed over the economy, infrastructure and regional development, with Lula attacking his rival's 'chainsaw' spending plan.",
+   "date": "2026-10-24",
+   "place": "São Paulo",
+   "tz": "America/Sao_Paulo",
+   "publisher": "Al Jazeera",
+   "title": "Brazil’s Lula and Bolsonaro debate policy proposals before run-off",
+   "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-and-bolsonaro-debate-policy-proposals-before-run-off",
+   "gathered": "2026-10-24T11:25:45Z"
   },
   {
    "h": "Grenade drill sparked deadly Alberta base fire",
@@ -414,19 +441,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 47,
+   "temp": 45,
    "cond": "Fair",
-   "obs": "24 Oct 02:51 am EDT"
+   "obs": "24 Oct 06:51 am EDT"
   },
   "periods": [
    {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
     "temp": 63,
     "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable  in the afternoon. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 44,
     "text": "Clear, with a low around 44. Light and variable wind becoming northwest around 5 mph after midnight. "
@@ -447,7 +474,7 @@
     "name": "Monday",
     "kind": "high",
     "temp": 68,
-    "text": "Sunny, with a high near 68."
+    "text": "Sunny, with a high near 68. West wind around 7 mph. "
    },
    {
     "name": "Monday Night",
