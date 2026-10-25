@@ -40,17 +40,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "A Few Clouds",
-    "obs": "25 Oct 01:52 am EDT"
+    "temp": 54,
+    "cond": "Fair",
+    "obs": "25 Oct 02:52 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. Northeast wind around 10 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -80,6 +74,12 @@
      "kind": "high",
      "temp": 75,
      "text": "Sunny, with a high near 75."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Partly cloudy, with a low around 50."
     }
    ]
   },
@@ -95,7 +95,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -108,17 +108,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 43,
     "cond": "Fair",
-    "obs": "25 Oct 01:54 am EDT"
+    "obs": "25 Oct 02:54 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. Calm wind. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -148,6 +142,12 @@
      "kind": "high",
      "temp": 53,
      "text": "Sunny, with a high near 53. North wind 5 to 8 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 34,
+     "text": "Patchy frost after 2am.  Otherwise, clear, with a low around 34. Light north wind. "
     }
    ]
   },
@@ -163,7 +163,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -201,7 +201,7 @@
    "now": {
     "temp": 57,
     "cond": "Mostly Cloudy",
-    "obs": "25 Oct 00:53 am CDT"
+    "obs": "25 Oct 01:53 am CDT"
    },
    "periods": [
     {
@@ -254,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -271,32 +271,32 @@
     {
      "name": "Overnight",
      "kind": "low",
-     "temp": 44,
-     "text": "Cloudy, with a steady temperature around 44. Light southeast wind. "
+     "temp": 43,
+     "text": "Mostly cloudy, with a steady temperature around 43. Calm wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 60,
-     "text": "A 20 percent chance of showers after 3pm.  Partly sunny, with a high near 60. Calm wind becoming north 5 to 9 mph in the afternoon. Winds could gust as high as 17 mph. "
+     "temp": 59,
+     "text": "A 20 percent chance of showers after 3pm.  Partly sunny, with a high near 59. Calm wind becoming north 5 to 8 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Showers likely and possibly a thunderstorm.  Mostly cloudy, with a low around 43. North wind 5 to 9 mph becoming light  after midnight. Winds could gust as high as 17 mph.  Chance of precipitation is 60%."
+     "temp": 45,
+     "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 45. North wind 3 to 8 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 63,
-     "text": "Partly sunny, then gradually becoming sunny, with a high near 63. Calm wind becoming southeast around 5 mph in the afternoon. "
+     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 63. Light and variable wind becoming east northeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38. East northeast wind around 6 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 38. East northeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -318,7 +318,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -345,7 +345,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 57,
      "text": "Clear, with a low around 57. East wind around 5 mph. "
@@ -394,7 +394,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -437,46 +437,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "25 Oct 01:51 am EDT"
+    "obs": "25 Oct 02:51 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 51,
-     "text": "Clear, with a low around 51. Northwest wind around 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming light and variable  in the morning. "
+     "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Clear, with a low around 55. West wind around 6 mph. "
+     "temp": 51,
+     "text": "Clear, with a low around 51. Southwest wind around 6 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. West wind 6 to 9 mph. "
+     "text": "Sunny, with a high near 68. West wind 6 to 8 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. West wind 9 to 11 mph. "
+     "text": "Mostly clear, with a low around 54. West wind around 10 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 61,
      "text": "Sunny, with a high near 61."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 47,
+     "text": "Mostly clear, with a low around 47."
     }
    ]
   },
@@ -492,7 +492,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -518,22 +518,14 @@
     "h": "Yellow Vests call new protests for Oct. 31",
     "b": "The Yellow Vest movement called for rallies and a sit-in outside parliament and city halls on October 31, as another day of nationwide protests began Saturday under tight security.",
     "date": "2026-10-24",
-    "publisher": "The Local France",
-    "title": "France's Yellow Vest movement calls new protests for October 31st",
     "url": "https://www.thelocal.fr/20261024/frances-yellow-vest-movement-calls-new-protests-for-october-31st",
-    "published": "2026-10-24T11:44:22Z",
-    "updated": "2026-10-24T11:44:24Z",
     "gathered": "2026-10-24T14:45:15Z"
    },
    {
     "h": "MEPs urge EU probe of social media in protests",
     "b": "More than 30 European lawmakers asked the EU's tech chief to use digital content rules to question platforms about their role in the student protests, with blocking access as a last resort.",
     "date": "2026-10-24",
-    "publisher": "The Local France",
-    "title": "Lawmakers say EU must probe social media role in protests",
     "url": "https://www.thelocal.fr/20261024/lawmakers-say-eu-must-probe-social-media-role-in-protests",
-    "published": "2026-10-24T07:49:48Z",
-    "updated": "2026-10-24T07:50:46Z",
     "gathered": "2026-10-24T11:25:45Z"
    },
    {
@@ -575,7 +567,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "goodnews": []
  },
  {
@@ -589,7 +581,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 48,
      "text": "Rain likely, mainly after 5am.  Mostly cloudy, with a steady temperature around 48. Calm wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -638,7 +630,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T07:12:00Z",
+  "updatedAt": "2026-10-25T10:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

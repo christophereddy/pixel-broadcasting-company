@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T07:12:00Z",
+ "updatedAt": "2026-10-25T10:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Trump weighs Sunday Iran attack or a deal",
-   "b": "Al Jazeera's live coverage: Trump says the US is considering a possible attack on Iran on Sunday, or reaching a deal.",
+   "h": "Saudi Arabia downs missile over Riyadh",
+   "b": "Al Jazeera's live coverage: Saudi Arabia downed a missile over Riyadh, and the Houthis warned that airports are unsafe.",
    "date": "2026-10-25",
    "publisher": "Al Jazeera",
-   "title": "Trump says US considers possible Sunday attack on Iran or to reach deal",
+   "title": "Saudi Arabia downs missile over Riyadh; Houthis warn airports unsafe",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
    "gathered": "2026-10-25T01:30:35Z"
   }
@@ -320,46 +320,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 48,
+   "temp": 47,
    "cond": "Fair",
-   "obs": "25 Oct 01:51 am EDT"
+   "obs": "25 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 51,
-    "text": "Clear, with a low around 51. Northwest wind around 5 mph. "
-   },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming light and variable  in the morning. "
+    "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming calm  in the morning. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 55,
-    "text": "Clear, with a low around 55. West wind around 6 mph. "
+    "temp": 51,
+    "text": "Clear, with a low around 51. Southwest wind around 6 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 68,
-    "text": "Sunny, with a high near 68. West wind 6 to 9 mph. "
+    "text": "Sunny, with a high near 68. West wind 6 to 8 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
     "temp": 54,
-    "text": "Mostly clear, with a low around 54. West wind 9 to 11 mph. "
+    "text": "Mostly clear, with a low around 54. West wind around 10 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 61,
     "text": "Sunny, with a high near 61."
+   },
+   {
+    "name": "Tuesday Night",
+    "kind": "low",
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47."
    }
   ]
  },
