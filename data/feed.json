@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T10:12:00Z",
+ "updatedAt": "2026-10-25T13:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Saudi Arabia downs missile over Riyadh",
-   "b": "Al Jazeera's live coverage: Saudi Arabia downed a missile over Riyadh, and the Houthis warned that airports are unsafe.",
+   "h": "Iran tells US to 'extricate' itself from war",
+   "b": "Al Jazeera's live coverage: Iran chides the US over a war 'quagmire' and says it must 'extricate' itself.",
    "date": "2026-10-25",
    "publisher": "Al Jazeera",
-   "title": "Saudi Arabia downs missile over Riyadh; Houthis warn airports unsafe",
+   "title": "Iran chides US over war ‘quagmire’, says it must ‘extricate’ itself",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
    "gathered": "2026-10-25T01:30:35Z"
   }
@@ -42,11 +42,7 @@
    "h": "U.S. birth rate drops to record low",
    "b": "The U.S. birth rate has fallen to a record low, though older women are having more babies, NPR reports.",
    "date": "2026-10-24",
-   "publisher": "KUOW",
-   "title": "U.S. birth rate drops to record low, but older women are having more babies",
    "url": "https://www.kuow.org/npr-news/2026-10-24/u-s-birth-rate-drops-to-record-low-but-older-women-are-having-more-babies",
-   "published": "2026-10-24T10:00:00Z",
-   "updated": "2026-10-24T14:12:33Z",
    "gathered": "2026-10-24T14:45:15Z"
   },
   {
@@ -62,8 +58,6 @@
    "h": "Obama slams Trump's 'cruelty and corruption' in Ohio",
    "b": "At a rally for Ohio Democrats, Barack Obama said Trump started 'an unnecessary war that nobody asked for' and urged voters to reject the Republican administration.",
    "date": "2026-10-24",
-   "publisher": "Al Jazeera",
-   "title": "Obama slams Trump’s ‘cruelty and corruption’ as he rallies Democrats",
    "url": "https://www.aljazeera.com/news/2026/10/25/obama-slams-trumps-cruelty-and-corruption-at-ohio-rally-for-democrats",
    "gathered": "2026-10-25T01:30:35Z"
   },
@@ -105,13 +99,44 @@
  ],
  "international": [
   {
+   "h": "Brazil votes in tight Lula-Bolsonaro run-off",
+   "b": "Al Jazeera's live coverage: Lula and Bolsonaro face off in Brazil's presidential run-off in a tight race.",
+   "date": "2026-10-25",
+   "place": "Brasília",
+   "tz": "America/Sao_Paulo",
+   "publisher": "Al Jazeera",
+   "title": "Brazil’s Lula and Bolsonaro face off in presidential election run-off",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/brazil-election-2026-live-lula-and-bolsonaro-in-tight-race",
+   "gathered": "2026-10-25T12:41:40Z"
+  },
+  {
+   "h": "Algeria's senate approves troops for Niger",
+   "b": "Algeria's upper house approved a troop deployment to Niger in an emergency session. If the lower house agrees, it would be Algeria's first mission abroad since 1973.",
+   "date": "2026-10-25",
+   "place": "Algiers",
+   "tz": "Africa/Algiers",
+   "publisher": "Al Jazeera",
+   "title": "Algerian parliament’s upper house approves troop deployment to Niger",
+   "url": "https://www.aljazeera.com/news/2026/10/25/algerian-parliaments-upper-house-approves-troop-deployment-to-niger",
+   "gathered": "2026-10-25T12:41:40Z"
+  },
+  {
+   "h": "Israeli troops turn Hebron homes into posts",
+   "b": "Israeli forces took over homes in southern Hebron as barracks and observation posts amid a lockdown and hundreds of raids since Friday's attack, Wafa reported.",
+   "date": "2026-10-25",
+   "place": "Hebron",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israeli forces turn Hebron homes into military posts amid lockdown",
+   "url": "https://www.aljazeera.com/news/2026/10/25/israeli-forces-turn-hebron-homes-into-military-posts-amid-lockdown",
+   "gathered": "2026-10-25T12:41:40Z"
+  },
+  {
    "h": "Iran blames US for deal failure, urges new try",
    "b": "President Pezeshkian blamed the US for the failed deal but said both sides should return and conclude it, amid fears military action could resume as soon as this weekend.",
    "date": "2026-10-24",
    "place": "Tehran",
    "tz": "Asia/Tehran",
-   "publisher": "Al Jazeera",
-   "title": "Iran blames US for deal failure, urges new try amid fear of new attacks",
    "url": "https://www.aljazeera.com/news/2026/10/24/iran-blames-us-for-deal-failure-urges-new-try-amid-fear-of-new-attacks",
    "gathered": "2026-10-24T23:32:35Z"
   },
@@ -289,11 +314,19 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Rural hospital cuts become NY governor race issue",
+   "b": "Candidates for governor are trading blame as rural hospitals face cuts, including Albany Med's plan to curtail services at Columbia Memorial Health in Hudson.",
+   "date": "2026-10-25",
+   "publisher": "Gothamist",
+   "title": "Cuts to rural healthcare become key issue for upstate votes in race for NY governor",
+   "url": "https://gothamist.com/news/cuts-to-rural-healthcare-become-key-issue-for-upstate-votes-in-race-for-ny-governor",
+   "published": "2026-10-25T12:00:54Z",
+   "gathered": "2026-10-25T12:41:40Z"
+  },
+  {
    "h": "NY Archdiocese agrees to pay $800M to abuse survivors",
    "b": "The Archdiocese of New York agreed to pay $800 million to 1,300 people who say they were sexually abused by clergy, lay leaders and teachers. The deal is set to be signed the first week of November.",
    "date": "2026-10-25",
-   "publisher": "Al Jazeera",
-   "title": "New York Archdiocese agrees to pay $800m to 1,300 sexual abuse survivors",
    "url": "https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors",
    "gathered": "2026-10-25T06:35:44Z"
   },
@@ -320,19 +353,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 47,
+   "temp": 43,
    "cond": "Fair",
-   "obs": "25 Oct 02:51 am EDT"
+   "obs": "25 Oct 07:51 am EDT"
   },
   "periods": [
    {
-    "name": "Sunday",
+    "name": "Today",
     "kind": "high",
     "temp": 65,
     "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming calm  in the morning. "
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 51,
     "text": "Clear, with a low around 51. Southwest wind around 6 mph. "
@@ -353,7 +386,7 @@
     "name": "Tuesday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61."
+    "text": "Sunny, with a high near 61. North wind 8 to 13 mph. "
    },
    {
     "name": "Tuesday Night",

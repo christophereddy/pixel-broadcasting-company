@@ -40,19 +40,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 52,
     "cond": "Fair",
-    "obs": "25 Oct 02:52 am EDT"
+    "obs": "25 Oct 07:52 am EDT"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 70,
      "text": "Sunny, with a high near 70. Northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Mostly clear, with a low around 51. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
@@ -73,7 +73,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75."
+     "text": "Sunny, with a high near 75. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -95,7 +95,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -108,34 +108,34 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 44,
     "cond": "Fair",
-    "obs": "25 Oct 02:54 am EDT"
+    "obs": "25 Oct 07:54 am EDT"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
-     "temp": 64,
-     "text": "Sunny, with a high near 64. Light and variable wind. "
+     "temp": 67,
+     "text": "Sunny, with a high near 67. Light and variable wind becoming south 5 to 7 mph in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 41,
-     "text": "Clear, with a low around 41. Southwest wind around 5 mph. "
+     "temp": 45,
+     "text": "Clear, with a low around 45. South wind around 8 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. West wind 5 to 7 mph. "
+     "temp": 70,
+     "text": "Sunny, with a high near 70. West wind around 9 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Mostly clear, with a low around 44. North wind 5 to 7 mph. "
+     "temp": 46,
+     "text": "Partly cloudy, with a low around 46. North wind 7 to 10 mph. "
     },
     {
      "name": "Tuesday",
@@ -163,7 +163,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,25 +199,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 53,
     "cond": "Mostly Cloudy",
-    "obs": "25 Oct 01:53 am CDT"
+    "obs": "25 Oct 06:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "Partly cloudy, with a low around 52. South wind around 5 mph. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
      "text": "Mostly sunny, with a high near 72. South southwest wind around 5 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "Partly cloudy, with a low around 54. South wind around 5 mph becoming north northwest after midnight. "
@@ -238,7 +232,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly cloudy, with a high near 66."
+     "text": "Mostly cloudy, with a high near 66. Southeast wind around 10 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 55,
+     "text": "Mostly cloudy, with a low around 55."
     }
    ]
   },
@@ -254,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -266,22 +266,20 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 40,
+    "cond": "Partly Cloudy",
+    "obs": "25 Oct 05:58 am MDT"
+   },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Mostly cloudy, with a steady temperature around 43. Calm wind. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "A 20 percent chance of showers after 3pm.  Partly sunny, with a high near 59. Calm wind becoming north 5 to 8 mph in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 45,
      "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 45. North wind 3 to 8 mph. "
@@ -302,7 +300,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69."
+     "text": "Sunny, with a high near 69. Calm wind becoming northeast 5 to 8 mph in the afternoon. Winds could gust as high as 16 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "Mostly clear, with a low around 40."
     }
    ]
   },
@@ -318,7 +322,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -329,6 +333,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "100 Houdini items go up for auction in LA",
+    "b": "A collection built over five decades goes up for auction, including Houdini's handcuffs, a signed portrait of him in chains and a pocket watch from his wife Bess.",
+    "date": "2026-10-25",
+    "publisher": "LAist",
+    "title": "100 items from renowned Houdini collection go up for auction in LA",
+    "url": "https://laist.com/news/los-angeles-activities/houdini-collection-auction-los-angeles",
+    "published": "2026-10-25T12:00:00Z",
+    "updated": "2026-10-25T12:00:04Z",
+    "gathered": "2026-10-25T12:41:40Z"
+   },
    {
     "h": "CSU faculty union seeks strike authority",
     "b": "The California Faculty Association is asking members to authorize a strike after declaring an impasse this summer following 16 months of talks with the CSU system.",
@@ -345,19 +360,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 57,
-     "text": "Clear, with a low around 57. East wind around 5 mph. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
      "text": "Sunny, with a high near 77. East northeast wind 5 to 10 mph becoming west southwest in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Partly cloudy, with a low around 57. West southwest wind around 5 mph becoming northeast after midnight. "
@@ -372,13 +381,19 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. West southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 56. West southwest wind around 5 mph becoming east southeast in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75."
+     "text": "Sunny, with a high near 75. East wind around 5 mph becoming south southwest in the afternoon. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 57,
+     "text": "Partly cloudy, with a low around 57."
     }
    ]
   },
@@ -394,7 +409,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -406,11 +421,19 @@
   },
   "local": [
    {
+    "h": "Rural hospital cuts become NY governor race issue",
+    "b": "Candidates for governor are trading blame as rural hospitals face cuts, including Albany Med's plan to curtail services at Columbia Memorial Health in Hudson.",
+    "date": "2026-10-25",
+    "publisher": "Gothamist",
+    "title": "Cuts to rural healthcare become key issue for upstate votes in race for NY governor",
+    "url": "https://gothamist.com/news/cuts-to-rural-healthcare-become-key-issue-for-upstate-votes-in-race-for-ny-governor",
+    "published": "2026-10-25T12:00:54Z",
+    "gathered": "2026-10-25T12:41:40Z"
+   },
+   {
     "h": "NY Archdiocese agrees to pay $800M to abuse survivors",
     "b": "The Archdiocese of New York agreed to pay $800 million to 1,300 people who say they were sexually abused by clergy, lay leaders and teachers. The deal is set to be signed the first week of November.",
     "date": "2026-10-25",
-    "publisher": "Al Jazeera",
-    "title": "New York Archdiocese agrees to pay $800m to 1,300 sexual abuse survivors",
     "url": "https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors",
     "gathered": "2026-10-25T06:35:44Z"
    },
@@ -437,19 +460,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 43,
     "cond": "Fair",
-    "obs": "25 Oct 02:51 am EDT"
+    "obs": "25 Oct 07:51 am EDT"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
      "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming calm  in the morning. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Clear, with a low around 51. Southwest wind around 6 mph. "
@@ -470,7 +493,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. North wind 8 to 13 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -492,7 +515,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -533,10 +556,10 @@
     "b": "Prosecutors extended the detention of the 39-year-old suspect, arrested with a submachine gun and tear-gas grenades. The anti-terror prosecutor is handling the case; one person was killed and five wounded.",
     "date": "2026-10-24",
     "publisher": "The Local France",
-    "title": "France extends detention of suspected racist shooter",
+    "title": "Suspected racist shooter put in French police psychiatric unit",
     "url": "https://www.thelocal.fr/20261024/france-extends-detention-of-suspected-racist-shooter",
     "published": "2026-10-24T13:34:02Z",
-    "updated": "2026-10-24T13:34:04Z",
+    "updated": "2026-10-25T10:29:14Z",
     "gathered": "2026-10-24T14:45:15Z"
    },
    {
@@ -544,10 +567,10 @@
     "b": "Interior Minister Laurent Nunez said about 70,000 security personnel will deploy Saturday, warning that calls for violence and looting are circulating online after last weekend's unrest.",
     "date": "2026-10-24",
     "publisher": "The Local France",
-    "title": "French protests latest: Marches end calmly, tension in some towns",
+    "title": "Fresh clashes at protests, but France avoids second day of widespread violence",
     "url": "https://www.thelocal.fr/20261024/france-to-deploy-70000-police-for-fresh-weekend-protests",
     "published": "2026-10-24T06:43:14Z",
-    "updated": "2026-10-24T16:10:11Z",
+    "updated": "2026-10-25T09:49:34Z",
     "gathered": "2026-10-24T07:12:49Z"
    }
   ],
@@ -567,7 +590,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "goodnews": []
  },
  {
@@ -580,12 +603,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 48,
-     "text": "Rain likely, mainly after 5am.  Mostly cloudy, with a steady temperature around 48. Calm wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -615,6 +632,12 @@
      "kind": "high",
      "temp": 56,
      "text": "A 20 percent chance of rain before 11am.  Mostly cloudy, with a high near 56."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Rain likely, mainly after 11pm.  Mostly cloudy, with a low around 45. Chance of precipitation is 70%."
     }
    ]
   },
@@ -630,7 +653,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T10:12:00Z",
+  "updatedAt": "2026-10-25T13:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
