@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T01:12:00Z",
+ "updatedAt": "2026-10-25T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,13 @@
  },
  "world": [
   {
-   "h": "Houthi missile debris falls on Mecca, Jeddah",
-   "b": "Al Jazeera's live coverage: the Houthis attacked Yemen's Aden, and missile debris fell on the Saudi cities of Mecca and Jeddah.",
-   "date": "2026-10-24",
+   "h": "Trump weighs Sunday Iran attack or a deal",
+   "b": "Al Jazeera's live coverage: Trump says the US is considering a possible attack on Iran on Sunday, or reaching a deal.",
+   "date": "2026-10-25",
    "publisher": "Al Jazeera",
-   "title": "Houthis attack Yemen’s Aden, missile debris falls on Mecca, Jeddah",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack",
-   "gathered": "2026-10-24T00:57:23Z"
+   "title": "Trump says US considers possible Sunday attack on Iran or to reach deal",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
+   "gathered": "2026-10-25T01:30:35Z"
   }
  ],
  "national": [
@@ -47,6 +47,15 @@
   }
  ],
  "politics": [
+  {
+   "h": "Obama slams Trump's 'cruelty and corruption' in Ohio",
+   "b": "At a rally for Ohio Democrats, Barack Obama said Trump started 'an unnecessary war that nobody asked for' and urged voters to reject the Republican administration.",
+   "date": "2026-10-24",
+   "publisher": "Al Jazeera",
+   "title": "Obama slams Trump’s ‘cruelty and corruption’ at Ohio rally for Democrats",
+   "url": "https://www.aljazeera.com/news/2026/10/25/obama-slams-trumps-cruelty-and-corruption-at-ohio-rally-for-democrats",
+   "gathered": "2026-10-25T01:30:35Z"
+  },
   {
    "h": "Trump casts his midterm ballot early in Florida",
    "b": "Trump voted early in person in Florida and said he voted the party line. He again defended Vivek Ramaswamy's ad featuring Amy Acton's estranged mother.",
@@ -112,8 +121,6 @@
    "date": "2026-10-24",
    "place": "Madrid",
    "tz": "Europe/Madrid",
-   "publisher": "Al Jazeera",
-   "title": "About 25,000 rally in Madrid in support of Spain’s state pension scheme",
    "url": "https://www.aljazeera.com/news/2026/10/24/about-25000-rally-in-madrid-in-support-of-spains-state-pension-scheme",
    "gathered": "2026-10-24T18:18:06Z"
   },
@@ -186,8 +193,6 @@
    "date": "2026-10-24",
    "place": "Karak",
    "tz": "Asia/Amman",
-   "publisher": "Al Jazeera",
-   "title": "Jordan’s King Abdullah orders firm response after deadly church attack",
    "url": "https://www.aljazeera.com/news/2026/10/24/jordans-king-abdullah-orders-firm-response-after-deadly-church-attack",
    "gathered": "2026-10-24T21:04:19Z"
   },
@@ -214,6 +219,15 @@
  "science": [],
  "sports": [
   {
+   "h": "Upsets throw Big 12 playoff picture into chaos",
+   "b": "Cincinnati snapped Texas Tech's nine-game Big 12 winning streak and UCF held off BYU, a week after the Cougars rose to No. 2.",
+   "date": "2026-10-24",
+   "publisher": "CBS Sports",
+   "title": "Big 12 College Football Playoff picture thrown into chaos: BYU, Texas Tech upset losses alter landscape",
+   "url": "https://www.cbssports.com/college-football/news/cincinnatis-upset-texas-tech-big-12-college-football-playoff-picture-teams/",
+   "gathered": "2026-10-25T01:30:35Z"
+  },
+  {
    "h": "NC State fires coach Dave Doeren",
    "b": "NC State fired Dave Doeren in his 14th season after a loss to Stanford dropped the Wolfpack to 3-4.",
    "date": "2026-10-24",
@@ -226,8 +240,6 @@
    "h": "WNBA Finals Game 6 venue up in the air",
    "b": "Game 6 of the Dream-Valkyries Finals is listed as TBD because the Hawks are scheduled to host the Cavaliers at State Farm Arena the same night.",
    "date": "2026-10-24",
-   "publisher": "CBS Sports",
-   "title": "2026 WNBA Finals: Game 6 venue up in the air for Dream vs. Valkyries with State Farm Arena already booked",
    "url": "https://www.cbssports.com/wnba/news/2026-wnba-finals-game-6-venue-state-farm-arena-dream-valkyries/",
    "gathered": "2026-10-24T23:32:35Z"
   },
@@ -297,14 +309,14 @@
   "now": {
    "temp": 55,
    "cond": "Fair",
-   "obs": "24 Oct 18:51 pm EDT"
+   "obs": "24 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 51,
-    "text": "Mostly clear, with a low around 51. Calm wind becoming west around 5 mph after midnight. "
+    "text": "Clear, with a low around 51. Calm wind becoming west around 5 mph after midnight. "
    },
    {
     "name": "Sunday",

@@ -40,16 +40,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "A Few Clouds",
-    "obs": "24 Oct 18:52 pm EDT"
+    "temp": 62,
+    "cond": "Fair",
+    "obs": "24 Oct 20:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Clear, with a low around 50. East wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Clear, with a low around 50. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday",
@@ -95,7 +95,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -108,16 +108,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "24 Oct 18:54 pm EDT"
+    "obs": "24 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Clear, with a low around 42. Light and variable wind. "
+     "text": "Clear, with a low around 42. Light west wind. "
     },
     {
      "name": "Sunday",
@@ -163,7 +163,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,9 +199,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 62,
     "cond": "Mostly Cloudy",
-    "obs": "24 Oct 17:53 pm CDT"
+    "obs": "24 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -254,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -267,16 +267,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": " Light Rain",
-    "obs": "24 Oct 16:58 pm MDT"
+    "temp": 43,
+    "cond": "Overcast",
+    "obs": "24 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "Showers likely, mainly before 9pm.  Cloudy, with a low around 40. East northeast wind around 6 mph becoming calm  in the evening.  Chance of precipitation is 60%."
+     "text": "Showers likely, mainly before 9pm.  Cloudy, with a low around 40. East northeast wind around 5 mph becoming calm  in the evening.  Chance of precipitation is 60%."
     },
     {
      "name": "Sunday",
@@ -294,13 +294,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63. Calm wind becoming southeast around 5 mph in the afternoon. "
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 63. Calm wind becoming southeast around 5 mph in the afternoon. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38."
+     "text": "Mostly clear, with a low around 38. East northeast wind around 6 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -322,7 +322,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -376,7 +376,7 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59."
+     "text": "Mostly clear, with a low around 59. West southwest wind around 5 mph becoming east southeast in the evening. "
     },
     {
      "name": "Tuesday",
@@ -398,7 +398,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -444,14 +444,14 @@
    "now": {
     "temp": 55,
     "cond": "Fair",
-    "obs": "24 Oct 18:51 pm EDT"
+    "obs": "24 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51. Calm wind becoming west around 5 mph after midnight. "
+     "text": "Clear, with a low around 51. Calm wind becoming west around 5 mph after midnight. "
     },
     {
      "name": "Sunday",
@@ -497,7 +497,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -580,7 +580,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "goodnews": []
  },
  {
@@ -643,7 +643,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T01:12:00Z",
+  "updatedAt": "2026-10-25T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
