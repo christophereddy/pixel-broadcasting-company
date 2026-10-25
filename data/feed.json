@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T16:11:00Z",
+ "updatedAt": "2026-10-25T19:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Iran tells US to 'extricate' itself from war",
-   "b": "Al Jazeera's live coverage: Iran chides the US over a war 'quagmire' and says it must 'extricate' itself.",
+   "h": "Trump rules out immediate attack on Iran",
+   "b": "Al Jazeera's live coverage: Trump rules out an immediate attack on Iran as Qatari mediators visit Tehran.",
    "date": "2026-10-25",
    "publisher": "Al Jazeera",
-   "title": "Iran chides US over war ‘quagmire’, says it must ‘extricate’ itself",
+   "title": "Trump rules out immediate attack on Iran; Qatar mediators in Tehran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
    "gathered": "2026-10-25T01:30:35Z"
   }
@@ -32,10 +32,7 @@
    "h": "N.Y. woman says she didn't know she wasn't a citizen",
    "b": "A 66-year-old Syracuse woman faces a federal charge of voting by an alien. She says she only learned of her German birth certificate while searching for her biological mother.",
    "date": "2026-10-24",
-   "publisher": "PBS NewsHour",
-   "title": "New York state woman charged with voting illegally says she recently learned she wasn’t a citizen",
    "url": "https://www.pbs.org/newshour/politics/new-york-state-woman-charged-with-voting-illegally-says-she-recently-learned-she-wasnt-a-citizen",
-   "published": "2026-10-24T18:07:33Z",
    "gathered": "2026-10-24T21:04:19Z"
   },
   {
@@ -65,10 +62,7 @@
    "h": "Trump casts his midterm ballot early in Florida",
    "b": "Trump voted early in person in Florida and said he voted the party line. He again defended Vivek Ramaswamy's ad featuring Amy Acton's estranged mother.",
    "date": "2026-10-24",
-   "publisher": "PBS NewsHour",
-   "title": "Trump casts his midterm ballot early in Florida",
    "url": "https://www.pbs.org/newshour/politics/trump-casts-his-midterm-ballot-early-in-florida",
-   "published": "2026-10-24T21:29:15Z",
    "gathered": "2026-10-24T23:32:35Z"
   },
   {
@@ -99,13 +93,36 @@
  ],
  "international": [
   {
+   "h": "Machado returns to Venezuela after exile",
+   "b": "Opposition leader María Corina Machado returned to Venezuela after months in exile, writing 'I am here. With you.' Edmundo González said he would join her soon.",
+   "date": "2026-10-25",
+   "place": "Caracas",
+   "tz": "America/Caracas",
+   "publisher": "PBS NewsHour",
+   "title": "Venezuela's opposition leader Machado returns after months in exile",
+   "url": "https://www.pbs.org/newshour/world/venezuelas-opposition-leader-machado-returns-after-months-in-exile",
+   "published": "2026-10-25T16:58:58Z",
+   "gathered": "2026-10-25T17:10:32Z"
+  },
+  {
+   "h": "Burnham open to EU freedom of movement talks",
+   "b": "UK Prime Minister Andy Burnham told The Sunday Times he wants to discuss a return to EU freedom of movement as he rethinks ties with Brussels.",
+   "date": "2026-10-25",
+   "place": "London",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK PM Burnham says he wants to discuss a return to EU freedom of movement",
+   "url": "https://www.aljazeera.com/news/2026/10/25/uk-pm-burnham-says-he-wants-to-discuss-a-return-to-eu-freedom-of-movement",
+   "gathered": "2026-10-25T17:10:32Z"
+  },
+  {
    "h": "Brazil votes in tight Lula-Bolsonaro run-off",
    "b": "Al Jazeera's live coverage: Lula and Bolsonaro face off in Brazil's presidential run-off in a tight race.",
    "date": "2026-10-25",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
    "publisher": "Al Jazeera",
-   "title": "Brazil’s Lula and Bolsonaro face off in presidential election run-off",
+   "title": "Voters take to the polls in Brazil’s presidential elections",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/brazil-election-2026-live-lula-and-bolsonaro-in-tight-race",
    "gathered": "2026-10-25T12:41:40Z"
   },
@@ -222,13 +239,26 @@
    "gathered": "2026-10-24T06:15:56Z"
   },
   {
-   "h": "Jordan's king orders firm response to church attack",
-   "b": "King Abdullah ordered a firm response after gunmen killed seven at a church funeral in Karak. Security has been increased at malls and embassies as authorities search for the attackers.",
-   "date": "2026-10-24",
+   "h": "Thousands mourn victims of Jordan church attack",
+   "b": "Nine people were killed and dozens wounded in the rare attack on Jordan's Christian minority, prompting three days of national mourning.",
+   "date": "2026-10-25",
    "place": "Karak",
    "tz": "Asia/Amman",
-   "url": "https://www.aljazeera.com/news/2026/10/24/jordans-king-abdullah-orders-firm-response-after-deadly-church-attack",
-   "gathered": "2026-10-24T21:04:19Z"
+   "publisher": "Al Jazeera",
+   "title": "Thousands mourn victims of deadly Jordan church attack",
+   "url": "https://www.aljazeera.com/news/2026/10/25/thousands-mourn-victims-of-deadly-jordan-church-attack",
+   "gathered": "2026-10-25T17:10:32Z"
+  },
+  {
+   "h": "Police clear Lisbon housing protest camp, arrest 25",
+   "b": "Portuguese police moved in on the camp in Rossio Square early Sunday, where protesters had pitched more than 100 tents, arresting 25.",
+   "date": "2026-10-25",
+   "place": "Lisbon",
+   "tz": "Europe/Lisbon",
+   "publisher": "Al Jazeera",
+   "title": "Portuguese police clear Lisbon housing protest camp, arrest 25",
+   "url": "https://www.aljazeera.com/economy/2026/10/25/portuguese-police-clear-lisbon-housing-protest-camp-arrest-25",
+   "gathered": "2026-10-25T17:10:32Z"
   },
   {
    "h": "Lula, Bolsonaro spar over economy before run-off",
@@ -253,11 +283,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Baylor fires coach Dave Aranda",
+   "b": "Baylor fired Dave Aranda, who won the 2021 Big 12 title but posted four losing records in six full seasons.",
+   "date": "2026-10-25",
+   "publisher": "CBS Sports",
+   "title": "Baylor fires Dave Aranda: Lincoln Riley, Spencer Danielson among candidates to replace 7th-year coach",
+   "url": "https://www.cbssports.com/college-football/news/baylor-fires-dave-aranda-disappointing-loss-to-kansas/",
+   "gathered": "2026-10-25T17:10:32Z"
+  },
+  {
    "h": "Brewers rally past Rays 5-4 in World Series",
    "b": "The Rays scored four runs in the first inning, but Milwaukee chipped away and took the lead in the bottom of the seventh. The Brewers are 9-1 this postseason.",
    "date": "2026-10-24",
-   "publisher": "CBS Sports",
-   "title": "The Rays are making too many mistakes to stand a chance against the relentless Brewers",
    "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rays-mistakes/",
    "gathered": "2026-10-25T06:35:44Z"
   },
@@ -314,6 +351,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Ex-NYPD detective in GWB killing out on bail",
+   "b": "Victor Romero, 62, charged with manslaughter in the shooting death of ConEd worker Koran Irvine on the George Washington Bridge, posted $1 million bail.",
+   "date": "2026-10-25",
+   "publisher": "Gothamist",
+   "title": "Retired NYPD detective charged in George Washington Bridge killing out on $1M bail",
+   "url": "https://gothamist.com/news/retired-nypd-detective-charged-in-george-washington-bridge-killing-out-on-1m-bail",
+   "published": "2026-10-25T14:25:09Z",
+   "gathered": "2026-10-25T17:10:32Z"
+  },
+  {
    "h": "Rural hospital cuts become NY governor race issue",
    "b": "Candidates for governor are trading blame as rural hospitals face cuts, including Albany Med's plan to curtail services at Columbia Memorial Health in Hudson.",
    "date": "2026-10-25",
@@ -353,16 +400,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 47,
+   "temp": 61,
    "cond": "Fair",
-   "obs": "25 Oct 08:51 am EDT"
+   "obs": "25 Oct 12:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 65,
-    "text": "Sunny, with a high near 65. Light and variable wind. "
+    "text": "Sunny, with a high near 65. Light southwest wind. "
    },
    {
     "name": "Tonight",
@@ -396,7 +443,18 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "NYC suicide deaths decline",
+   "b": "Suicide deaths in New York City fell from a peak of 601 in 2022 to 535 in 2024, health department data shows, though inequities persist across groups.",
+   "date": "2026-10-25",
+   "publisher": "Gothamist",
+   "title": "Suicides decline in NYC, but inequities persist across groups",
+   "url": "https://gothamist.com/news/suicides-decline-in-nyc-but-inequities-persist-across-groups",
+   "published": "2026-10-25T14:00:56Z",
+   "gathered": "2026-10-25T17:10:32Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",

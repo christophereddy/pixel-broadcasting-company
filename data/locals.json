@@ -10,10 +10,7 @@
     "h": "Rick Jackson walks Trump tightrope in governor race",
     "b": "Republican billionaire Rick Jackson, who spent his early years in foster homes, is pouring his own money into his bid to lead Georgia while balancing his ties to Trump.",
     "date": "2026-10-24",
-    "publisher": "PBS NewsHour",
-    "title": "Republican billionaire Rick Jackson is walking a Trump tightrope in his quest to lead Georgia",
     "url": "https://www.pbs.org/newshour/politics/republican-billionaire-rick-jackson-is-walking-a-trump-tightrope-in-his-quest-to-lead-georgia",
-    "published": "2026-10-24T19:04:00Z",
     "gathered": "2026-10-24T21:04:19Z"
    },
    {
@@ -31,22 +28,19 @@
     "h": "Six Flags to add seat belts after Goliath death",
     "b": "Six Flags says it will add seat belts on the Goliath coaster at Six Flags Over Georgia and similar rides after a rider was ejected and killed Oct. 12. Goliath remains shut down.",
     "date": "2026-10-24",
-    "publisher": "PBS NewsHour",
-    "title": "Six Flags says it will install seat belts on Georgia roller coaster after rider's death",
     "url": "https://www.pbs.org/newshour/nation/six-flags-says-it-will-install-seat-belts-on-georgia-roller-coaster-after-riders-death",
-    "published": "2026-10-24T17:32:10Z",
     "gathered": "2026-10-24T18:18:06Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Fair",
-    "obs": "25 Oct 08:52 am EDT"
+    "temp": 67,
+    "cond": "A Few Clouds",
+    "obs": "25 Oct 12:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 70,
      "text": "Sunny, with a high near 70. Northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
@@ -55,19 +49,19 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 51. Northeast wind around 5 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Sunny, with a high near 72. Northeast wind around 5 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Northeast wind around 5 mph becoming calm. "
+     "text": "Partly cloudy, with a low around 47. Calm wind. "
     },
     {
      "name": "Tuesday",
@@ -95,7 +89,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -108,16 +102,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 59,
     "cond": "Fair",
-    "obs": "25 Oct 08:54 am EDT"
+    "obs": "25 Oct 12:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 67,
-     "text": "Sunny, with a high near 67. Light and variable wind becoming south 5 to 7 mph in the afternoon. "
+     "text": "Sunny, with a high near 67. South wind around 7 mph. "
     },
     {
      "name": "Tonight",
@@ -163,7 +157,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,16 +193,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 68,
     "cond": "Mostly Cloudy",
-    "obs": "25 Oct 07:53 am CDT"
+    "obs": "25 Oct 11:53 am CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly sunny, with a high near 72. South southwest wind around 5 mph. "
+     "text": "Mostly sunny, with a high near 72. South southeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -254,7 +248,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -267,16 +261,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 40,
-    "cond": "Partly Cloudy",
-    "obs": "25 Oct 05:58 am MDT"
+    "temp": 47,
+    "cond": "A Few Clouds",
+    "obs": "25 Oct 10:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "A 20 percent chance of showers after 3pm.  Mostly sunny, with a high near 59. Calm wind becoming north 5 to 8 mph in the afternoon. "
+     "text": "A 20 percent chance of showers after 3pm.  Mostly sunny, with a high near 59. North northeast wind 3 to 8 mph. "
     },
     {
      "name": "Tonight",
@@ -322,7 +316,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -409,7 +403,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -420,6 +414,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Ex-NYPD detective in GWB killing out on bail",
+    "b": "Victor Romero, 62, charged with manslaughter in the shooting death of ConEd worker Koran Irvine on the George Washington Bridge, posted $1 million bail.",
+    "date": "2026-10-25",
+    "publisher": "Gothamist",
+    "title": "Retired NYPD detective charged in George Washington Bridge killing out on $1M bail",
+    "url": "https://gothamist.com/news/retired-nypd-detective-charged-in-george-washington-bridge-killing-out-on-1m-bail",
+    "published": "2026-10-25T14:25:09Z",
+    "gathered": "2026-10-25T17:10:32Z"
+   },
    {
     "h": "Rural hospital cuts become NY governor race issue",
     "b": "Candidates for governor are trading blame as rural hospitals face cuts, including Albany Med's plan to curtail services at Columbia Memorial Health in Hudson.",
@@ -460,16 +464,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 61,
     "cond": "Fair",
-    "obs": "25 Oct 08:51 am EDT"
+    "obs": "25 Oct 12:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Light and variable wind. "
+     "text": "Sunny, with a high near 65. Light southwest wind. "
     },
     {
      "name": "Tonight",
@@ -515,9 +519,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "NYC suicide deaths decline",
+    "b": "Suicide deaths in New York City fell from a peak of 601 in 2022 to 535 in 2024, health department data shows, though inequities persist across groups.",
+    "date": "2026-10-25",
+    "publisher": "Gothamist",
+    "title": "Suicides decline in NYC, but inequities persist across groups",
+    "url": "https://gothamist.com/news/suicides-decline-in-nyc-but-inequities-persist-across-groups",
+    "published": "2026-10-25T14:00:56Z",
+    "gathered": "2026-10-25T17:10:32Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -531,10 +546,7 @@
     "h": "410,000 protest across France as Paris clashes erupt",
     "b": "The Interior Ministry put turnout at 410,000, including 110,000 in Paris, where police used tear gas and water cannons. Clashes were also reported in Lyon, Marseille, Nice and Nantes.",
     "date": "2026-10-24",
-    "publisher": "PBS NewsHour",
-    "title": "More than 400,000 protest across France, challenging Macron as Paris clashes erupt",
     "url": "https://www.pbs.org/newshour/world/more-than-400000-protest-across-france-challenging-macron-as-paris-clashes-erupt",
-    "published": "2026-10-24T16:51:55Z",
     "gathered": "2026-10-24T18:18:06Z"
    },
    {
@@ -561,6 +573,17 @@
     "published": "2026-10-24T13:34:02Z",
     "updated": "2026-10-25T10:29:14Z",
     "gathered": "2026-10-24T14:45:15Z"
+   },
+   {
+    "h": "Storms Boelo and Austen batter Europe",
+    "b": "Nearly 60,000 homes in France, 10,000 in Germany and 82,000 in Britain lost power as two storms hit within 24 hours, cancelling hundreds of flights. At Austen's peak, 288,000 French homes were without power.",
+    "date": "2026-10-25",
+    "publisher": "The Local France",
+    "title": "Storms batter Europe hitting power supplies, flights and phones",
+    "url": "https://www.thelocal.fr/20261025/storms-batter-europe-hitting-power-supplies-flights-and-phones",
+    "published": "2026-10-25T16:15:06Z",
+    "updated": "2026-10-25T16:15:09Z",
+    "gathered": "2026-10-25T17:10:32Z"
    },
    {
     "h": "France deploys 70,000 police for weekend protests",
@@ -590,7 +613,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "goodnews": []
  },
  {
@@ -607,7 +630,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 55,
-     "text": "Rain, mainly before 1pm.  High near 55. Light and variable wind.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly before 1pm.  Cloudy, with a high near 55. Light east southeast wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -653,7 +676,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T16:11:00Z",
+  "updatedAt": "2026-10-25T19:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
