@@ -40,9 +40,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "25 Oct 07:52 am EDT"
+    "obs": "25 Oct 08:52 am EDT"
    },
    "periods": [
     {
@@ -95,7 +95,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -108,9 +108,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 46,
     "cond": "Fair",
-    "obs": "25 Oct 07:54 am EDT"
+    "obs": "25 Oct 08:54 am EDT"
    },
    "periods": [
     {
@@ -163,7 +163,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,9 +199,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 54,
     "cond": "Mostly Cloudy",
-    "obs": "25 Oct 06:53 am CDT"
+    "obs": "25 Oct 07:53 am CDT"
    },
    "periods": [
     {
@@ -254,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -276,7 +276,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "A 20 percent chance of showers after 3pm.  Partly sunny, with a high near 59. Calm wind becoming north 5 to 8 mph in the afternoon. "
+     "text": "A 20 percent chance of showers after 3pm.  Mostly sunny, with a high near 59. Calm wind becoming north 5 to 8 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -322,7 +322,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -409,7 +409,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -460,16 +460,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "25 Oct 07:51 am EDT"
+    "obs": "25 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Northwest wind around 5 mph becoming calm  in the morning. "
+     "text": "Sunny, with a high near 65. Light and variable wind. "
     },
     {
      "name": "Tonight",
@@ -515,7 +515,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -590,7 +590,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "goodnews": []
  },
  {
@@ -604,13 +604,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 55,
      "text": "Rain, mainly before 1pm.  High near 55. Light and variable wind.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "A 30 percent chance of rain, mainly between 11pm and 5am.  Mostly cloudy, with a low around 46. Calm wind. "
@@ -631,13 +631,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 56,
-     "text": "A 20 percent chance of rain before 11am.  Mostly cloudy, with a high near 56."
+     "text": "A 20 percent chance of rain before 11am.  Mostly cloudy, with a high near 56. South southwest wind 5 to 8 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Rain likely, mainly after 11pm.  Mostly cloudy, with a low around 45. Chance of precipitation is 70%."
+     "text": "Rain likely, mainly after 11pm.  Mostly cloudy, with a low around 45. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -653,7 +653,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T13:12:00Z",
+  "updatedAt": "2026-10-25T16:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
