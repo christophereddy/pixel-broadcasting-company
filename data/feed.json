@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25T04:12:00Z",
+ "updatedAt": "2026-10-25T07:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,6 +17,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Texas cop's ICE work tore his town apart",
+   "b": "ProPublica profiles Jaron Alexander of Ingram, Texas, one of more than 29,000 local officers on the front lines of the Trump administration's deportation campaign.",
+   "date": "2026-10-25",
+   "publisher": "ProPublica",
+   "title": "The Small-Town Cop Who Helped ICE Deport His Neighbors",
+   "url": "https://www.propublica.org/article/deportations-ingram-texas-287g-jaron-alexander",
+   "published": "2026-10-25T04:00:00Z",
+   "updated": "2026-10-25T04:00:02Z",
+   "gathered": "2026-10-25T06:35:44Z"
+  },
   {
    "h": "N.Y. woman says she didn't know she wasn't a citizen",
    "b": "A 66-year-old Syracuse woman faces a federal charge of voting by an alien. She says she only learned of her German birth certificate while searching for her biological mother.",
@@ -52,7 +63,7 @@
    "b": "At a rally for Ohio Democrats, Barack Obama said Trump started 'an unnecessary war that nobody asked for' and urged voters to reject the Republican administration.",
    "date": "2026-10-24",
    "publisher": "Al Jazeera",
-   "title": "Obama slams Trump’s ‘cruelty and corruption’ at Ohio rally for Democrats",
+   "title": "Obama slams Trump’s ‘cruelty and corruption’ as he rallies Democrats",
    "url": "https://www.aljazeera.com/news/2026/10/25/obama-slams-trumps-cruelty-and-corruption-at-ohio-rally-for-democrats",
    "gathered": "2026-10-25T01:30:35Z"
   },
@@ -110,8 +121,6 @@
    "date": "2026-10-24",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Thousands of Israelis rally against Netanyahu gov’t days before election",
    "url": "https://www.aljazeera.com/news/2026/10/24/thousands-of-israelis-rally-against-netanyahu-govt-days-before-election",
    "gathered": "2026-10-24T21:04:19Z"
   },
@@ -219,11 +228,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Brewers rally past Rays 5-4 in World Series",
+   "b": "The Rays scored four runs in the first inning, but Milwaukee chipped away and took the lead in the bottom of the seventh. The Brewers are 9-1 this postseason.",
+   "date": "2026-10-24",
+   "publisher": "CBS Sports",
+   "title": "The Rays are making too many mistakes to stand a chance against the relentless Brewers",
+   "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rays-mistakes/",
+   "gathered": "2026-10-25T06:35:44Z"
+  },
+  {
    "h": "Upsets throw Big 12 playoff picture into chaos",
    "b": "Cincinnati snapped Texas Tech's nine-game Big 12 winning streak and Scott Frost's Knights held off BYU, a week after the Cougars rose to No. 2.",
    "date": "2026-10-24",
-   "publisher": "CBS Sports",
-   "title": "Big 12 College Football Playoff picture thrown into chaos: BYU, Texas Tech upset losses alter landscape",
    "url": "https://www.cbssports.com/college-football/news/cincinnatis-upset-texas-tech-big-12-college-football-playoff-picture-teams/",
    "gathered": "2026-10-25T01:30:35Z"
   },
@@ -231,8 +247,6 @@
    "h": "NC State fires coach Dave Doeren",
    "b": "NC State fired Dave Doeren in his 14th season after a loss to Stanford dropped the Wolfpack to 3-4.",
    "date": "2026-10-24",
-   "publisher": "CBS Sports",
-   "title": "NC State fires Dave Doeren: Wolfpack coach out amid 14th season after brutal loss to Stanford",
    "url": "https://www.cbssports.com/college-football/news/nc-state-fires-dave-doeren-head-football-coach/",
    "gathered": "2026-10-24T23:32:35Z"
   },
@@ -275,14 +289,13 @@
  "goodnews": [],
  "local": [
   {
-   "h": "NY Archdiocese nears $800M abuse settlement",
+   "h": "NY Archdiocese agrees to pay $800M to abuse survivors",
    "b": "The Archdiocese of New York is close to an $800 million settlement with 1,300 people alleging sexual abuse. Archbishop Ronald Hicks said it is set to be signed the first week of November.",
-   "date": "2026-10-24",
-   "publisher": "Gothamist",
-   "title": "NY Archdiocese will soon settle $800M clergy sexual abuse claims",
-   "url": "https://gothamist.com/news/ny-archdiocese-will-soon-settle-800m-clergy-sexual-abuse-claims",
-   "published": "2026-10-24T22:31:58Z",
-   "gathered": "2026-10-24T23:32:35Z"
+   "date": "2026-10-25",
+   "publisher": "Al Jazeera",
+   "title": "New York Archdiocese agrees to pay $800m to 1,300 sexual abuse survivors",
+   "url": "https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors",
+   "gathered": "2026-10-25T06:35:44Z"
   },
   {
    "h": "Chinatown residents sue over jail night work",
@@ -307,16 +320,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 48,
    "cond": "Fair",
-   "obs": "24 Oct 20:51 pm EDT"
+   "obs": "25 Oct 01:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 51,
-    "text": "Clear, with a low around 51. Calm wind becoming west around 5 mph after midnight. "
+    "text": "Clear, with a low around 51. Northwest wind around 5 mph. "
    },
    {
     "name": "Sunday",
