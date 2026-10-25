@@ -34,17 +34,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 70,
     "cond": "A Few Clouds",
-    "obs": "25 Oct 12:52 pm EDT"
+    "obs": "25 Oct 14:52 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Sunny, with a high near 70. Northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -60,20 +54,26 @@
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Calm wind. "
+     "temp": 48,
+     "text": "Partly cloudy, with a low around 48. Calm wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 75,
-     "text": "Sunny, with a high near 75. Calm wind becoming east around 5 mph in the afternoon. "
+     "temp": 74,
+     "text": "Sunny, with a high near 74. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Partly cloudy, with a low around 50."
+     "temp": 51,
+     "text": "Partly cloudy, with a low around 51."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 72,
+     "text": "Partly sunny, with a high near 72."
     }
    ]
   },
@@ -89,7 +89,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -102,46 +102,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "25 Oct 12:54 pm EDT"
+    "obs": "25 Oct 14:54 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. South wind around 7 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "Clear, with a low around 45. South wind around 8 mph. "
+     "temp": 44,
+     "text": "Clear, with a low around 44. South wind 5 to 7 mph becoming west after midnight. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 70,
-     "text": "Sunny, with a high near 70. West wind around 9 mph. "
+     "temp": 68,
+     "text": "Sunny, with a high near 68. West wind 6 to 8 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Partly cloudy, with a low around 46. North wind 7 to 10 mph. "
+     "temp": 47,
+     "text": "Mostly clear, with a low around 47. North wind 6 to 10 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 53,
-     "text": "Sunny, with a high near 53. North wind 5 to 8 mph. "
+     "temp": 55,
+     "text": "Sunny, with a high near 55. North wind 5 to 8 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Patchy frost after 2am.  Otherwise, clear, with a low around 34. Light north wind. "
+     "temp": 35,
+     "text": "Clear, with a low around 35. Light north wind. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 56,
+     "text": "Sunny, with a high near 56. Light and variable wind. "
     }
    ]
   },
@@ -157,7 +157,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -168,6 +168,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "CTA Green, Pink line reroutes extended two days",
+    "b": "Lake Street bridge repairs over the Chicago River are two days behind schedule, so Green and Pink line trains won't resume normal routes until Wednesday at 4 a.m., CDOT said Sunday.",
+    "date": "2026-10-25",
+    "publisher": "WBEZ",
+    "title": "Lake Street bridge closure for CTA Green, Pink lines extended 2 days",
+    "url": "https://www.wbez.org/transportation/2026/10/25/lake-street-bridge-closure-cta-green-pink-lines-reroute",
+    "published": "2026-10-25T17:56:53Z",
+    "updated": "2026-10-25T17:56:53Z",
+    "gathered": "2026-10-25T19:52:04Z"
+   },
    {
     "h": "Jury trial set over Henry Darger's art",
     "b": "A federal judge set a March 8, 2027 jury trial to decide who owns the works of outsider artist Henry Darger, estimated to be worth millions of dollars.",
@@ -193,46 +204,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 73,
     "cond": "Mostly Cloudy",
-    "obs": "25 Oct 11:53 am CDT"
+    "obs": "25 Oct 13:53 pm CDT"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
-     "temp": 72,
-     "text": "Mostly sunny, with a high near 72. South southeast wind around 5 mph. "
+     "temp": 70,
+     "text": "Mostly sunny, with a high near 70. South wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Partly cloudy, with a low around 54. South wind around 5 mph becoming north northwest after midnight. "
+     "text": "Partly cloudy, with a low around 54. South wind around 5 mph becoming west northwest after midnight. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 61,
-     "text": "Mostly cloudy, with a high near 61. North northeast wind 5 to 15 mph. "
+     "temp": 60,
+     "text": "Patchy fog before 9am.  Otherwise, mostly cloudy, with a high near 60. North northeast wind 10 to 15 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly cloudy, with a low around 52. Northeast wind 10 to 15 mph. "
+     "text": "Mostly cloudy, with a low around 52. North northeast wind around 15 mph becoming east after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly cloudy, with a high near 66. Southeast wind around 10 mph. "
+     "temp": 64,
+     "text": "Mostly cloudy, with a high near 64. Southeast wind 10 to 15 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly cloudy, with a low around 55."
+     "temp": 57,
+     "text": "Mostly cloudy, with a low around 57."
     }
    ]
   },
@@ -248,9 +259,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Arts in the Dark parade draws 100,000",
+    "b": "The 12th annual Arts in the Dark Halloween Parade stepped off on Balbo Street Saturday with a fire-breathing dragon, giant alebrijes and a 60-foot glow worm, drawing an estimated 100,000 attendees.",
+    "date": "2026-10-25",
+    "publisher": "WBEZ",
+    "title": "Arts in the Dark Halloween Parade returns for its 12th year",
+    "url": "https://www.wbez.org/art/2026/10/25/arts-in-the-dark-halloween-parade",
+    "published": "2026-10-25T19:33:12Z",
+    "updated": "2026-10-25T19:33:12Z",
+    "gathered": "2026-10-25T19:52:04Z"
+   }
+  ]
  },
  {
   "location": {
@@ -261,46 +284,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 51,
     "cond": "A Few Clouds",
-    "obs": "25 Oct 10:58 am MDT"
+    "obs": "25 Oct 12:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 59,
-     "text": "A 20 percent chance of showers after 3pm.  Mostly sunny, with a high near 59. North northeast wind 3 to 8 mph. "
+     "temp": 57,
+     "text": "A 20 percent chance of showers after 5pm.  Mostly sunny, with a high near 57. North northeast wind 5 to 8 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 45. North wind 3 to 8 mph. "
+     "temp": 44,
+     "text": "A 50 percent chance of showers, mainly after 7pm.  Patchy fog after midnight.  Otherwise, cloudy, with a low around 44. North northwest wind 5 to 8 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 63,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 63. Light and variable wind becoming east northeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
+     "temp": 62,
+     "text": "Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 62. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38. East northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 38. Northeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Calm wind becoming northeast 5 to 8 mph in the afternoon. Winds could gust as high as 16 mph. "
+     "text": "Sunny, with a high near 69. Calm wind becoming east northeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Mostly clear, with a low around 40."
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39."
     }
    ]
   },
@@ -316,7 +339,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -327,6 +350,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "California election officials rattled by DOJ demand",
+    "b": "County registrars are confused and frustrated by Justice Department letters, sent Friday, demanding they sequester ballots it believes went to noncitizens and seeking Social Security numbers on roughly 20,000 voters.",
+    "date": "2026-10-25",
+    "publisher": "LAist",
+    "title": "California election officials frustrated, rattled by DOJ demand to sequester ‘noncitizen’ ballots",
+    "url": "https://laist.com/news/politics/california-election-officials-frustrated-rattled-by-doj-demand-to-sequester-noncitizen-ballots",
+    "published": "2026-10-25T17:12:08Z",
+    "updated": "2026-10-25T17:48:02Z",
+    "gathered": "2026-10-25T19:52:04Z"
+   },
    {
     "h": "100 Houdini items go up for auction in LA",
     "b": "A collection built over five decades goes up for auction, including Houdini's handcuffs, a signed portrait of him in chains and a pocket watch from his wife Bess.",
@@ -354,16 +388,16 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 77,
-     "text": "Sunny, with a high near 77. East northeast wind 5 to 10 mph becoming west southwest in the afternoon. "
+     "text": "Sunny, with a high near 77. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "Partly cloudy, with a low around 57. West southwest wind around 5 mph becoming northeast after midnight. "
+     "text": "Mostly clear, with a low around 57. West southwest wind 5 to 10 mph becoming light and variable  in the evening. "
     },
     {
      "name": "Monday",
@@ -374,14 +408,14 @@
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 56,
-     "text": "Mostly clear, with a low around 56. West southwest wind around 5 mph becoming east southeast in the evening. "
+     "temp": 57,
+     "text": "Mostly clear, with a low around 57. West southwest wind 5 to 10 mph becoming east southeast after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. East wind around 5 mph becoming south southwest in the afternoon. "
+     "text": "Sunny, with a high near 75. East southeast wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -403,7 +437,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -414,6 +448,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Serbians wait hours to vote at NYC consulate",
+    "b": "Serbian immigrants from across the Northeast lined up down West 45th Street on Sunday to vote at the consulate near Bryant Park in the Balkan nation's parliamentary election.",
+    "date": "2026-10-25",
+    "publisher": "Gothamist",
+    "title": "Serbians forced to wait hours to vote at NYC consulate as Balkan nation holds election",
+    "url": "https://gothamist.com/news/serbians-forced-to-wait-hours-to-vote-at-nyc-consulate-as-balkan-nation-holds-election",
+    "published": "2026-10-25T18:57:39Z",
+    "gathered": "2026-10-25T19:52:04Z"
+   },
    {
     "h": "Ex-NYPD detective in GWB killing out on bail",
     "b": "Victor Romero, 62, charged with manslaughter in the shooting death of ConEd worker Koran Irvine on the George Washington Bridge, posted $1 million bail.",
@@ -464,46 +508,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "25 Oct 12:51 pm EDT"
+    "obs": "25 Oct 15:51 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. Light southwest wind. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 51,
-     "text": "Clear, with a low around 51. Southwest wind around 6 mph. "
+     "temp": 50,
+     "text": "Clear, with a low around 50. West wind around 6 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. West wind 6 to 8 mph. "
+     "temp": 69,
+     "text": "Sunny, with a high near 69. West wind around 8 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54. West wind around 10 mph. "
+     "temp": 55,
+     "text": "Mostly clear, with a low around 55. West wind 8 to 10 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. North wind 8 to 13 mph. "
+     "temp": 62,
+     "text": "Sunny, with a high near 62. North wind 7 to 11 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 47,
-     "text": "Mostly clear, with a low around 47."
+     "temp": 50,
+     "text": "Mostly clear, with a low around 50. North wind around 8 mph. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Mostly sunny, with a high near 62."
     }
    ]
   },
@@ -519,7 +563,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -613,7 +657,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "goodnews": []
  },
  {
@@ -627,40 +671,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 55,
-     "text": "Rain likely, mainly before 1pm.  Cloudy, with a high near 55. Light east southeast wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 4pm.  Mostly cloudy, with a high near 55. Southeast wind 3 to 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 46,
-     "text": "A 30 percent chance of rain, mainly between 11pm and 5am.  Mostly cloudy, with a low around 46. Calm wind. "
+     "temp": 47,
+     "text": "A 50 percent chance of rain after 4am.  Mostly cloudy, with a low around 47. Calm wind. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 56,
-     "text": "A chance of rain before 10am, then a slight chance of rain after 4pm.  Mostly cloudy, with a high near 56. Calm wind.  Chance of precipitation is 30%."
+     "temp": 55,
+     "text": "A 30 percent chance of rain, mainly after 5pm.  Cloudy, then gradually becoming mostly sunny, with a high near 55. Calm wind. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 47,
-     "text": "A 30 percent chance of rain after 11pm.  Mostly cloudy, with a low around 47. Calm wind becoming south around 5 mph after midnight. "
+     "text": "A chance of rain before 2am, then a chance of rain after 3am.  Mostly cloudy, with a low around 47. Calm wind becoming south around 5 mph after midnight.  Chance of precipitation is 50%."
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 56,
-     "text": "A 20 percent chance of rain before 11am.  Mostly cloudy, with a high near 56. South southwest wind 5 to 8 mph. "
+     "text": "A 20 percent chance of rain.  Mostly cloudy, with a high near 56. South southwest wind 5 to 9 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Rain likely, mainly after 11pm.  Mostly cloudy, with a low around 45. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 46,
+     "text": "Rain.  Low around 46. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -676,7 +720,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T19:11:00Z",
+  "updatedAt": "2026-10-25T22:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
