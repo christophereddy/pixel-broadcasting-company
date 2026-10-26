@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T10:16:00Z",
+ "updatedAt": "2026-10-26T13:41:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,16 +7,38 @@
  },
  "world": [
   {
-   "h": "Saudi, Pakistani, Turkish officials due in Tehran",
-   "b": "Al Jazeera's live coverage: Saudi, Pakistani and Turkish defence officials are due in Tehran for security talks with Iran.",
+   "h": "US-Israel 'aggression' tops agenda of Iran talks",
+   "b": "Al Jazeera's live coverage: US-Israel 'aggression' is high on the agenda as Iran hosts high-level talks with Saudi, Pakistani and Turkish officials.",
    "date": "2026-10-26",
    "publisher": "Al Jazeera",
-   "title": "Iran to hold security talks with Saudi Arabia, Turkiye and Pakistan",
+   "title": "US-Israel ‘aggression’ high on agenda for high-level talks in Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/26/iran-war-live-trump-rules-out-strikes-today-israeli-forces-raid-hebron",
    "gathered": "2026-10-26T06:44:48Z"
   }
  ],
  "national": [
+  {
+   "h": "Visa ban leaves immigrant families stuck abroad",
+   "b": "A court ruling has not ended the wait for thousands of immigrants caught by the Trump administration's January ban on processing immigrant visas for citizens of 75 countries, including some whose visas were already approved.",
+   "date": "2026-10-26",
+   "publisher": "KUOW",
+   "title": "Court ruling fails to end wait for thousands of immigrants stuck abroad without visas",
+   "url": "https://www.kuow.org/npr-news/2026-10-26/court-ruling-fails-to-end-wait-for-thousands-of-immigrants-stuck-abroad-without-visas",
+   "published": "2026-10-26T09:00:00Z",
+   "updated": "2026-10-26T09:12:33Z",
+   "gathered": "2026-10-26T10:16:57Z"
+  },
+  {
+   "h": "Cybersecurity CEO indicted in ransomware scheme",
+   "b": "Zohar Pinhasi of Florida-based MonsterCloud is accused of telling ransomware victims he could recover their files without paying hackers, when he actually paid the ransom and charged them a hefty fee on top.",
+   "date": "2026-10-26",
+   "publisher": "ProPublica",
+   "title": "Cybersecurity CEO Indicted for Allegedly Scamming Millions From Ransomware Victims",
+   "url": "https://www.propublica.org/article/zohar-pinhasi-monstercloud-ransomware-indictment",
+   "published": "2026-10-26T09:00:00Z",
+   "updated": "2026-10-26T09:00:13Z",
+   "gathered": "2026-10-26T10:16:57Z"
+  },
   {
    "h": "U.S. measles cases top double last year's total",
    "b": "CDC data show more than 4,580 measles cases nationwide this year, more than double the total for all of 2025. Ninety-six percent of those infected were unvaccinated or of unknown status.",
@@ -45,8 +67,6 @@
    "h": "Appeals court sceptical of Trump's California suit",
    "b": "A Trump-appointed judge on a three-judge panel voiced doubt that the administration's lawsuit over California voter rolls would hold up, citing the Constitution's Elections Clause after a rare weekend argument.",
    "date": "2026-10-25",
-   "publisher": "Al Jazeera",
-   "title": "US appeals court sceptical of Trump’s lawsuit over California voter rolls",
    "url": "https://www.aljazeera.com/news/2026/10/26/us-appeals-court-sceptical-of-trumps-lawsuit-over-california-voter-rolls",
    "gathered": "2026-10-26T06:44:48Z"
   },
@@ -247,7 +267,19 @@
    "gathered": "2026-10-25T22:44:10Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "AI models are transforming hurricane forecasts",
+   "b": "Google DeepMind's AI model correctly predicted Hurricane Isaias would hit the western Florida Panhandle when conventional models pointed toward Louisiana. Meteorologist Michael Lowry calls it the best-performing model ever seen.",
+   "date": "2026-10-26",
+   "publisher": "KUOW",
+   "title": "How AI is transforming hurricane forecasts",
+   "url": "https://www.kuow.org/npr-news/2026-10-26/how-ai-is-transforming-hurricane-forecasts",
+   "published": "2026-10-26T09:00:00Z",
+   "updated": "2026-10-26T09:12:51Z",
+   "gathered": "2026-10-26T10:16:57Z"
+  }
+ ],
  "sports": [
   {
    "h": "Thunder's Jalen Williams leaves on stretcher",
@@ -334,6 +366,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NYers face higher health costs as enrollment opens",
+   "b": "New Yorkers without employer coverage can shop for 2027 plans on the state marketplace starting Nov. 1, and many will feel the effects of federal health spending cuts, including reduced eligibility for the Essential Plan.",
+   "date": "2026-10-26",
+   "publisher": "Gothamist",
+   "title": "What NYers can expect as open enrollment for health insurance begins",
+   "url": "https://gothamist.com/news/what-nyers-can-expect-as-open-enrollment-for-health-insurance-begins",
+   "published": "2026-10-26T10:00:56Z",
+   "gathered": "2026-10-26T10:16:57Z"
+  },
+  {
    "h": "State urges New Yorkers to protect bats",
    "b": "With Bat Week under way, New York officials are urging outdoor adventurers to stay out of caves and mines this winter to avoid waking hibernating bats so they survive to spring.",
    "date": "2026-10-25",
@@ -384,19 +426,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
+   "temp": 50,
    "cond": "Fair",
-   "obs": "26 Oct 02:51 am EDT"
+   "obs": "26 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Monday",
+    "name": "Today",
     "kind": "high",
     "temp": 69,
     "text": "Sunny, with a high near 69. West wind 7 to 9 mph. "
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 51,
     "text": "Mostly clear, with a low around 51. West wind 8 to 10 mph becoming north after midnight. "
@@ -417,7 +459,7 @@
     "name": "Wednesday",
     "kind": "high",
     "temp": 63,
-    "text": "Sunny, with a high near 63."
+    "text": "Sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable. "
    },
    {
     "name": "Wednesday Night",

@@ -8,19 +8,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "26 Oct 02:52 am EDT"
+    "obs": "26 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. Northeast wind 5 to 10 mph. "
+     "text": "Sunny, with a high near 72. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Partly cloudy, with a low around 48. Calm wind. "
@@ -41,7 +41,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 73,
-     "text": "Partly sunny, with a high near 73."
+     "text": "Partly sunny, with a high near 73. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,19 +76,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 48,
     "cond": "Fair",
-    "obs": "26 Oct 02:54 am EDT"
+    "obs": "26 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
      "text": "Increasing clouds, with a high near 68. West wind 6 to 8 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Mostly cloudy, with a low around 44. North wind 6 to 9 mph. "
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -169,23 +169,17 @@
    "now": {
     "temp": 55,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 01:53 am CDT"
+    "obs": "26 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 55,
-     "text": "Partly cloudy, with a low around 55. Southwest wind around 5 mph becoming north northwest. "
-    },
-    {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Patchy fog before 9am.  Otherwise, mostly cloudy, with a high near 60. North northeast wind around 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly cloudy, with a high near 60. North northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Mostly cloudy, with a low around 52. North northeast wind 10 to 15 mph becoming east after midnight. Winds could gust as high as 20 mph. "
@@ -206,7 +200,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 70,
-     "text": "Partly sunny, with a high near 70."
+     "text": "Partly sunny, with a high near 70. South wind 5 to 10 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Partly cloudy, with a low around 58."
     }
    ]
   },
@@ -222,7 +222,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -248,21 +248,15 @@
   "weather": {
    "now": {
     "temp": 44,
-    "cond": " Fog",
-    "obs": "25 Oct 23:58 pm MDT"
+    "cond": " Light Rain",
+    "obs": "26 Oct 01:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 46,
-     "text": "Showers likely.  Patchy fog.  Otherwise, cloudy, with a steady temperature around 46. North northwest wind around 6 mph.  Chance of precipitation is 70%."
-    },
-    {
      "name": "Monday",
      "kind": "high",
-     "temp": 61,
-     "text": "Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 61. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
+     "temp": 56,
+     "text": "Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 56. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Monday Night",
@@ -287,6 +281,12 @@
      "kind": "high",
      "temp": 70,
      "text": "Mostly sunny, with a high near 70."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "Partly cloudy, with a low around 40."
     }
    ]
   },
@@ -302,7 +302,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -340,12 +340,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 57,
-     "text": "Partly cloudy, with a low around 57. Northwest wind around 5 mph becoming calm. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 77,
@@ -374,6 +368,12 @@
      "kind": "high",
      "temp": 73,
      "text": "Partly sunny, with a high near 73."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 59,
+     "text": "Mostly cloudy, with a low around 59."
     }
    ]
   },
@@ -389,7 +389,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -400,6 +400,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYers face higher health costs as enrollment opens",
+    "b": "New Yorkers without employer coverage can shop for 2027 plans on the state marketplace starting Nov. 1, and many will feel the effects of federal health spending cuts, including reduced eligibility for the Essential Plan.",
+    "date": "2026-10-26",
+    "publisher": "Gothamist",
+    "title": "What NYers can expect as open enrollment for health insurance begins",
+    "url": "https://gothamist.com/news/what-nyers-can-expect-as-open-enrollment-for-health-insurance-begins",
+    "published": "2026-10-26T10:00:56Z",
+    "gathered": "2026-10-26T10:16:57Z"
+   },
    {
     "h": "State urges New Yorkers to protect bats",
     "b": "With Bat Week under way, New York officials are urging outdoor adventurers to stay out of caves and mines this winter to avoid waking hibernating bats so they survive to spring.",
@@ -451,19 +461,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 50,
     "cond": "Fair",
-    "obs": "26 Oct 02:51 am EDT"
+    "obs": "26 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Sunny, with a high near 69. West wind 7 to 9 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Mostly clear, with a low around 51. West wind 8 to 10 mph becoming north after midnight. "
@@ -484,7 +494,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 63,
-     "text": "Sunny, with a high near 63."
+     "text": "Sunny, with a high near 63. North wind 5 to 7 mph becoming light and variable. "
     },
     {
      "name": "Wednesday Night",
@@ -506,7 +516,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -529,6 +539,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Lecornu, ministers to meet student leaders",
+    "b": "Prime Minister Lecornu and education ministers Edouard Geffray and Philippe Baptiste meet student leaders Monday at Matignon after another weekend of protests over lycée conditions and the cost of living.",
+    "date": "2026-10-26",
+    "publisher": "The Local France",
+    "title": "France's PM and key ministers to meet student leaders on Monday",
+    "url": "https://www.thelocal.fr/20261026/frances-pm-and-key-ministers-to-meet-student-leaders-monday",
+    "published": "2026-10-26T07:58:58Z",
+    "updated": "2026-10-26T07:59:00Z",
+    "gathered": "2026-10-26T10:16:57Z"
+   },
    {
     "h": "Storms Boelo and Austen batter Europe",
     "b": "Nearly 60,000 homes in France, 10,000 in Germany and 82,000 in Britain lost power as two storms hit within 24 hours, cancelling hundreds of flights. At Austen's peak, 288,000 French homes were without power.",
@@ -557,7 +578,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "goodnews": []
  },
  {
@@ -566,16 +587,22 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Loggers say Roadless Rule repeal won't fix woes",
+    "b": "With the 25-year-old rule's formal repeal expected early next year, Northwest timber workers say their problems are bigger than forest access, starting with record-high diesel prices.",
+    "date": "2026-10-26",
+    "publisher": "KUOW",
+    "title": "Loggers say Roadless Rule repeal won't solve their biggest challenges",
+    "url": "https://www.kuow.org/npr-news/2026-10-26/loggers-say-roadless-rule-repeal-wont-solve-their-biggest-challenges",
+    "published": "2026-10-26T09:00:00Z",
+    "updated": "2026-10-26T09:12:12Z",
+    "gathered": "2026-10-26T10:16:57Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 50,
-     "text": "A 40 percent chance of rain.  Mostly cloudy, with a steady temperature around 50. Light north northeast wind. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -605,6 +632,12 @@
      "kind": "high",
      "temp": 53,
      "text": "Rain, mainly after 11am.  High near 53. Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Rain.  Low around 42. Chance of precipitation is 90%."
     }
    ]
   },
@@ -620,7 +653,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T10:16:00Z",
+  "updatedAt": "2026-10-26T13:41:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
