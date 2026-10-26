@@ -5,19 +5,31 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Senators seek probe of Folkston ICE center",
+    "b": "After another detainee death, Sens. Raphael Warnock and Jon Ossoff asked DHS to investigate whether officers retaliated against hunger strikers at the South Georgia facility, including placing at least 13 in solitary confinement.",
+    "date": "2026-10-26",
+    "publisher": "WABE",
+    "title": "Another death at Georgia ICE facility as hunger continues",
+    "url": "https://www.wabe.org/warnock-ossoff-call-for-investigation-at-south-georgia-ice-facility-as-hunger-strike-said-to-continue/",
+    "published": "2026-10-26T14:25:26Z",
+    "updated": "2026-10-26T14:29:48Z",
+    "gathered": "2026-10-26T14:28:24Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Fair",
-    "obs": "26 Oct 05:52 am EDT"
+    "temp": 59,
+    "cond": "Partly Cloudy",
+    "obs": "26 Oct 09:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Sunny, with a high near 72. Northeast wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -63,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,16 +88,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Fair",
-    "obs": "26 Oct 05:54 am EDT"
+    "temp": 57,
+    "cond": "A Few Clouds",
+    "obs": "26 Oct 09:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Increasing clouds, with a high near 68. West wind 6 to 8 mph. "
+     "text": "Mostly sunny, with a high near 68. West wind 6 to 8 mph. "
     },
     {
      "name": "Tonight",
@@ -131,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -167,16 +179,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 58,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 04:53 am CDT"
+    "obs": "26 Oct 08:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Mostly cloudy, with a high near 60. North northeast wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly cloudy, with a high near 60. North northeast wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -222,9 +234,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Music fans rally for Waco Brothers' Schlabowske",
+    "b": "Chicago music fans are rallying to support Dean Schlabowske of the Waco Brothers, who faces six-figure medical costs after an acute myeloid leukemia diagnosis.",
+    "date": "2026-10-26",
+    "publisher": "WBEZ",
+    "title": "Music fans rally to support Dean Schlabowske of the Waco Brothers after leukemia diagnosis",
+    "url": "https://www.wbez.org/music/2026/10/26/music-fans-rally-to-support-dean-schlabowske-of-the-waco-brothers-after-leukemia-diagnosis",
+    "published": "2026-10-26T13:49:47Z",
+    "updated": "2026-10-26T13:50:01Z",
+    "gathered": "2026-10-26T14:28:24Z"
+   },
    {
     "h": "Arts in the Dark parade draws 100,000",
     "b": "The 12th annual Arts in the Dark Halloween Parade stepped off on Balbo Street Saturday with a fire-breathing dragon, giant alebrijes and a 60-foot glow worm, drawing an estimated 100,000 attendees.",
@@ -247,19 +270,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
-    "cond": " Light Rain",
-    "obs": "26 Oct 01:58 am MDT"
+    "temp": 41,
+    "cond": "Overcast",
+    "obs": "26 Oct 07:58 am MDT"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 56. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
+     "text": "Patchy fog before 9am.  Otherwise, mostly cloudy, then gradually becoming sunny, with a high near 56. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 38,
      "text": "Mostly clear, with a low around 38. East northeast wind around 5 mph becoming calm  in the evening. "
@@ -280,7 +303,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 70,
-     "text": "Mostly sunny, with a high near 70."
+     "text": "Mostly sunny, with a high near 70. Light and variable wind becoming east 5 to 7 mph in the afternoon. Winds could gust as high as 17 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -302,7 +325,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -340,13 +363,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
      "text": "Sunny, with a high near 77. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Mostly clear, with a low around 57. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
@@ -367,7 +390,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 73,
-     "text": "Partly sunny, with a high near 73."
+     "text": "Partly sunny, with a high near 73. East wind around 5 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
@@ -389,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -461,9 +484,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 54,
     "cond": "Fair",
-    "obs": "26 Oct 05:51 am EDT"
+    "obs": "26 Oct 09:51 am EDT"
    },
    "periods": [
     {
@@ -516,9 +539,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "East Brooklyn NYCHA homes get $636M upgrade",
+    "b": "Nearly 3,000 residents of the Reid & Park Rock developments now live in renovated apartments with new kitchens, bathrooms and modernized heating and ventilation, NYCHA said.",
+    "date": "2026-10-26",
+    "publisher": "Gothamist",
+    "title": "In East Brooklyn, aging NYCHA homes get a $636M upgrade",
+    "url": "https://gothamist.com/news/in-east-brooklyn-aging-nycha-homes-get-a-636m-upgrade",
+    "published": "2026-10-26T10:30:56Z",
+    "gathered": "2026-10-26T14:28:24Z"
+   },
    {
     "h": "NYC suicide deaths decline",
     "b": "Suicide deaths in New York City fell from a peak of 601 in 2022 to 535 in 2024, health department data shows, though inequities persist across groups.",
@@ -540,6 +573,28 @@
   },
   "local": [
    {
+    "h": "Paris extends summer café terraces a month",
+    "b": "Summer terraces can stay until the end of November instead of coming down Oct. 31, at no extra charge, to support cafés, bars and restaurants hit by protest violence on Oct. 17 and 18.",
+    "date": "2026-10-26",
+    "publisher": "The Local France",
+    "title": "Paris extends summer café terraces for another month",
+    "url": "https://www.thelocal.fr/20261026/paris-extends-summer-cafe-terraces-for-another-month",
+    "published": "2026-10-26T13:25:58Z",
+    "updated": "2026-10-26T13:26:00Z",
+    "gathered": "2026-10-26T14:28:24Z"
+   },
+   {
+    "h": "French rail unions join November 5 strike",
+    "b": "Four main rail unions will join Thursday, Nov. 5's cross-sector strike over the draft 2027 budget, wages, jobs and public services.",
+    "date": "2026-10-26",
+    "publisher": "The Local France",
+    "title": "French rail workers join November strike",
+    "url": "https://www.thelocal.fr/20261026/french-rail-workers-join-november-strike",
+    "published": "2026-10-26T10:57:34Z",
+    "updated": "2026-10-26T10:57:36Z",
+    "gathered": "2026-10-26T14:28:24Z"
+   },
+   {
     "h": "Lecornu, ministers to meet student leaders",
     "b": "Prime Minister Lecornu and education ministers Edouard Geffray and Philippe Baptiste meet student leaders Monday at Matignon after another weekend of protests over lycée conditions and the cost of living.",
     "date": "2026-10-26",
@@ -554,11 +609,7 @@
     "h": "Storms Boelo and Austen batter Europe",
     "b": "Nearly 60,000 homes in France, 10,000 in Germany and 82,000 in Britain lost power as two storms hit within 24 hours, cancelling hundreds of flights. At Austen's peak, 288,000 French homes were without power.",
     "date": "2026-10-25",
-    "publisher": "The Local France",
-    "title": "Storms batter Europe hitting power supplies, flights and phones",
     "url": "https://www.thelocal.fr/20261025/storms-batter-europe-hitting-power-supplies-flights-and-phones",
-    "published": "2026-10-25T16:15:06Z",
-    "updated": "2026-10-25T16:15:09Z",
     "gathered": "2026-10-25T17:10:32Z"
    }
   ],
@@ -578,7 +629,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "goodnews": []
  },
  {
@@ -604,13 +655,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 55,
      "text": "A chance of rain before 11am, then a chance of rain after 5pm.  Mostly cloudy, with a high near 55. Northeast wind around 5 mph becoming calm  in the morning.  Chance of precipitation is 40%."
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 47,
      "text": "Rain likely, mainly between 2am and 3am.  Mostly cloudy, with a low around 47. Calm wind becoming south southwest around 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -631,13 +682,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 53,
-     "text": "Rain, mainly after 11am.  High near 53. Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain, mainly after 11am.  High near 53. South southwest wind around 7 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Rain.  Low around 42. Chance of precipitation is 90%."
+     "text": "Rain.  Low around 42. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -653,7 +704,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T13:41:00Z",
+  "updatedAt": "2026-10-26T16:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

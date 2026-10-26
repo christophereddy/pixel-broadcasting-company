@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T13:41:00Z",
+ "updatedAt": "2026-10-26T16:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "Al Jazeera's live coverage: US-Israel 'aggression' is high on the agenda as Iran hosts high-level talks with Saudi, Pakistani and Turkish officials.",
    "date": "2026-10-26",
    "publisher": "Al Jazeera",
-   "title": "US-Israel ‘aggression’ high on agenda for high-level talks in Iran",
+   "title": "US-Israel ‘aggression’ tops agenda for high-level talks in Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/26/iran-war-live-trump-rules-out-strikes-today-israeli-forces-raid-hebron",
    "gathered": "2026-10-26T06:44:48Z"
   }
@@ -43,11 +43,7 @@
    "h": "U.S. measles cases top double last year's total",
    "b": "CDC data show more than 4,580 measles cases nationwide this year, more than double the total for all of 2025. Ninety-six percent of those infected were unvaccinated or of unknown status.",
    "date": "2026-10-25",
-   "publisher": "KUOW",
-   "title": "U.S. measles cases more than double what they were last year as outbreak spreads",
    "url": "https://www.kuow.org/npr-news/2026-10-25/u-s-measles-cases-more-than-double-what-they-were-last-year-as-outbreak-spreads",
-   "published": "2026-10-25T20:35:35Z",
-   "updated": "2026-10-25T20:53:07Z",
    "gathered": "2026-10-25T22:44:10Z"
   },
   {
@@ -74,20 +70,14 @@
    "h": "Judge asked to force release of Kennedy Center texts",
    "b": "Lawyers for Rep. Joyce Beatty are seeking a court order for the administration to turn over emails and texts about Kennedy Center plans that it has withheld as privileged presidential communications.",
    "date": "2026-10-25",
-   "publisher": "PBS NewsHour",
-   "title": "Judge asked to compel Trump administration to disclose emails and texts about Kennedy Center plans",
    "url": "https://www.pbs.org/newshour/politics/judge-asked-to-compel-trump-administration-to-disclose-emails-and-texts-about-kennedy-center-plans",
-   "published": "2026-10-25T19:49:52Z",
    "gathered": "2026-10-25T22:44:10Z"
   },
   {
    "h": "Peltola and family hurt in minor car crash",
    "b": "Another vehicle crashed into the one carrying Alaska Democratic Senate candidate Mary Peltola and her family on the way to the Alaska Federation of Natives banquet; they suffered minor injuries, the campaign said.",
    "date": "2026-10-25",
-   "publisher": "PBS NewsHour",
-   "title": "Alaska Democratic Senate candidate Mary Peltola and her family suffer minor injuries in car crash",
    "url": "https://www.pbs.org/newshour/politics/alaska-democratic-senate-candidate-mary-peltola-and-her-family-suffer-minor-injuries-in-car-crash",
-   "published": "2026-10-25T20:11:03Z",
    "gathered": "2026-10-25T22:44:10Z"
   },
   {
@@ -109,6 +99,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Saudi-led coalition says it hit Houthi missile sites",
+   "b": "Coalition spokesman Turki al-Maliki said its forces destroyed four ballistic missile launchers and five tunnels the Houthis used to store missiles, as the group claimed attacks on infrastructure in Saudi Arabia and Yemen.",
+   "date": "2026-10-26",
+   "place": "Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Saudi-led coalition says it struck Houthi missile facilities",
+   "url": "https://www.aljazeera.com/news/2026/10/26/saudi-led-coalition-says-it-struck-houthi-missile-facilities",
+   "gathered": "2026-10-26T14:28:24Z"
+  },
   {
    "h": "US says it helped move 1.5 billion barrels via Hormuz",
    "b": "The US military said more than 3,000 commercial vessels transited the Strait of Hormuz with its support over six months, helping Gulf states export 1.5 billion barrels of oil despite Iranian threats.",
@@ -196,13 +197,16 @@
    "gathered": "2026-10-25T17:10:32Z"
   },
   {
-   "h": "Lula wins Brazil run-off, holding off far right",
-   "b": "Brazil's Superior Electoral Court called the presidential run-off for Lula, who won more than 51 percent of the vote to Flávio Bolsonaro's 48 percent, a margin of more than 4 million votes.",
-   "date": "2026-10-25",
+   "h": "Bolsonaro rejects Lula's Brazil election win",
+   "b": "Lula was declared winner with 51.8% of the vote, but Flávio Bolsonaro refused to concede and asked for the results to be annulled after a chaotic evening at some polling places following a last-minute two-hour voting extension.",
+   "date": "2026-10-26",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
-   "url": "https://www.aljazeera.com/news/2026/10/26/lula-holds-off-far-right-with-victory-in-brazil-presidential-election",
-   "gathered": "2026-10-26T01:29:39Z"
+   "publisher": "PBS NewsHour",
+   "title": "Incumbent Lula is declared winner of Brazil's election as Bolsonaro rejects results",
+   "url": "https://www.pbs.org/newshour/world/incumbent-lula-is-declared-winner-of-brazils-election-as-bolsonaro-rejects-results",
+   "published": "2026-10-26T13:19:24Z",
+   "gathered": "2026-10-26T14:28:24Z"
   },
   {
    "h": "Algeria's senate approves troops for Niger",
@@ -257,6 +261,15 @@
  ],
  "business": [
   {
+   "h": "RadioShack leans into retro tech",
+   "b": "The electronics retailer is betting on a return to retro and analog tech ahead of the holiday shopping season, managing director Kevin Hamann told Marketplace.",
+   "date": "2026-10-26",
+   "publisher": "Marketplace",
+   "title": "RadioShack leans into retro tech to revitalize the brand",
+   "url": "https://www.marketplace.org/story/2026/10/26/radioshack-leans-into-retro-tech-to-revitalize-the-brand",
+   "gathered": "2026-10-26T14:28:24Z"
+  },
+  {
    "h": "Home sellers cut prices in a stagnant market",
    "b": "Sellers who can are pulling listings, while others are lowering asking prices and paying thousands toward buyers' costs as surging mortgage rates stall the housing market, real estate agents say.",
    "date": "2026-10-25",
@@ -285,8 +298,6 @@
    "h": "Thunder's Jalen Williams leaves on stretcher",
    "b": "Williams suffered a gruesome lower left leg injury late in Oklahoma City's win over the Clippers. Coach Mark Daigneault said the team had no immediate update on his status.",
    "date": "2026-10-25",
-   "publisher": "CBS Sports",
-   "title": "Thunder star Jalen Williams leaves on stretcher after gruesome leg injury vs. Clippers",
    "url": "https://www.cbssports.com/nba/news/jalen-williams-leg-injury-thunder-star/",
    "gathered": "2026-10-26T06:44:48Z"
   },
@@ -426,9 +437,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
+   "temp": 54,
    "cond": "Fair",
-   "obs": "26 Oct 05:51 am EDT"
+   "obs": "26 Oct 09:51 am EDT"
   },
   "periods": [
    {
@@ -470,6 +481,16 @@
   ]
  },
  "localgood": [
+  {
+   "h": "East Brooklyn NYCHA homes get $636M upgrade",
+   "b": "Nearly 3,000 residents of the Reid & Park Rock developments now live in renovated apartments with new kitchens, bathrooms and modernized heating and ventilation, NYCHA said.",
+   "date": "2026-10-26",
+   "publisher": "Gothamist",
+   "title": "In East Brooklyn, aging NYCHA homes get a $636M upgrade",
+   "url": "https://gothamist.com/news/in-east-brooklyn-aging-nycha-homes-get-a-636m-upgrade",
+   "published": "2026-10-26T10:30:56Z",
+   "gathered": "2026-10-26T14:28:24Z"
+  },
   {
    "h": "NYC suicide deaths decline",
    "b": "Suicide deaths in New York City fell from a peak of 601 in 2022 to 535 in 2024, health department data shows, though inequities persist across groups.",
