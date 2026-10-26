@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 66,
     "cond": "Partly Cloudy",
-    "obs": "26 Oct 09:52 am EDT"
+    "obs": "26 Oct 11:52 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. Northeast wind 5 to 10 mph. "
+     "text": "Mostly sunny, with a high near 72. Northeast wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,16 +88,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "A Few Clouds",
-    "obs": "26 Oct 09:54 am EDT"
+    "temp": 64,
+    "cond": "Partly Cloudy",
+    "obs": "26 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68. West wind 6 to 8 mph. "
+     "text": "Mostly sunny, with a high near 68. West wind around 8 mph. "
     },
     {
      "name": "Tonight",
@@ -143,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -179,9 +179,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 61,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 08:53 am CDT"
+    "obs": "26 Oct 10:53 am CDT"
    },
    "periods": [
     {
@@ -234,7 +234,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -270,16 +270,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 41,
+    "temp": 44,
     "cond": "Overcast",
-    "obs": "26 Oct 07:58 am MDT"
+    "obs": "26 Oct 09:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Patchy fog before 9am.  Otherwise, mostly cloudy, then gradually becoming sunny, with a high near 56. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 56. East northeast wind 3 to 6 mph. "
     },
     {
      "name": "Tonight",
@@ -325,7 +325,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -378,25 +378,25 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. East southeast wind 5 to 10 mph becoming southwest in the afternoon. "
+     "text": "Increasing clouds, with a high near 75. East southeast wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly cloudy, with a low around 57. Southwest wind around 5 mph becoming east southeast after midnight. "
+     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 57. Southwest wind around 5 mph becoming east southeast after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 73,
-     "text": "Partly sunny, with a high near 73. East wind around 5 mph becoming south southwest in the afternoon. "
+     "text": "Patchy fog before 11am.  Otherwise, partly sunny, with a high near 73. East wind around 5 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59."
+     "temp": 57,
+     "text": "Mostly cloudy, with a low around 57."
     }
    ]
   },
@@ -412,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -423,6 +423,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Council to weigh juvenile jail changes",
+    "b": "The NYC Council will consider changes to juvenile detention as assaults and overcrowding rise. A mother says her son was attacked by other teens while held at Horizon in the Bronx.",
+    "date": "2026-10-26",
+    "publisher": "Gothamist",
+    "title": "NYC Council to weigh changes to juvenile jails as assaults and overcrowding rise",
+    "url": "https://gothamist.com/news/nyc-council-to-weigh-changes-to-juvenile-jails-as-assaults-and-overcrowding-rise",
+    "published": "2026-10-26T16:10:23Z",
+    "gathered": "2026-10-26T16:17:54Z"
+   },
    {
     "h": "NYers face higher health costs as enrollment opens",
     "b": "New Yorkers without employer coverage can shop for 2027 plans on the state marketplace starting Nov. 1, and many will feel the effects of federal health spending cuts, including reduced eligibility for the Essential Plan.",
@@ -484,13 +494,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "26 Oct 09:51 am EDT"
+    "obs": "26 Oct 11:51 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
      "text": "Sunny, with a high near 69. West wind 7 to 9 mph. "
@@ -539,7 +549,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -572,6 +582,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Protesters plan Halloween sit-ins in France",
+    "b": "Organisers of 'Act III - Halloween' plan sit-ins outside town halls and the Assemblée Nationale on Oct. 31, though no demonstrations have yet been declared to Paris police.",
+    "date": "2026-10-26",
+    "publisher": "The Local France",
+    "title": "Protests in France: What to expect on October 31st",
+    "url": "https://www.thelocal.fr/20261026/protests-in-france-what-to-expect-on-october-31st",
+    "published": "2026-10-26T15:50:40Z",
+    "updated": "2026-10-26T15:50:42Z",
+    "gathered": "2026-10-26T16:17:54Z"
+   },
    {
     "h": "Paris extends summer café terraces a month",
     "b": "Summer terraces can stay until the end of November instead of coming down Oct. 31, at no extra charge, to support cafés, bars and restaurants hit by protest violence on Oct. 17 and 18.",
@@ -629,7 +650,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "goodnews": []
  },
  {
@@ -658,7 +679,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 55,
-     "text": "A chance of rain before 11am, then a chance of rain after 5pm.  Mostly cloudy, with a high near 55. Northeast wind around 5 mph becoming calm  in the morning.  Chance of precipitation is 40%."
+     "text": "A chance of rain before 11am, then a chance of rain after 5pm.  Mostly cloudy, with a high near 55. Light and variable wind.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -704,7 +725,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T16:14:00Z",
+  "updatedAt": "2026-10-26T19:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
