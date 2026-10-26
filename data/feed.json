@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T07:21:00Z",
+ "updatedAt": "2026-10-26T10:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -95,8 +95,6 @@
    "date": "2026-10-25",
    "place": "Strait of Hormuz",
    "tz": "Asia/Dubai",
-   "publisher": "Al Jazeera",
-   "title": "US military says it helped Gulf states export 1.5 billion barrels of oil",
    "url": "https://www.aljazeera.com/economy/2026/10/26/us-military-says-it-helped-gulf-states-export-1-5-billion-barrels-of-oil",
    "gathered": "2026-10-26T06:44:48Z"
   },
@@ -205,13 +203,15 @@
    "gathered": "2026-10-25T12:41:40Z"
   },
   {
-   "h": "Thousands mourn victims of Jordan church attack",
-   "b": "Nine people were killed and dozens wounded in the rare attack on Jordan's Christian minority, prompting three days of national mourning.",
-   "date": "2026-10-25",
+   "h": "Jordan arrests three suspects in church attack",
+   "b": "Security forces arrested three suspects in the deadly attack on a church in Karak after they were found hiding in an abandoned house and refused to surrender, wounding them in a firefight, Jordan's Public Security Directorate said.",
+   "date": "2026-10-26",
    "place": "Karak",
    "tz": "Asia/Amman",
-   "url": "https://www.aljazeera.com/news/2026/10/25/thousands-mourn-victims-of-deadly-jordan-church-attack",
-   "gathered": "2026-10-25T17:10:32Z"
+   "publisher": "Al Jazeera",
+   "title": "Jordan arrests three suspects in deadly church attack",
+   "url": "https://www.aljazeera.com/news/2026/10/26/jordan-arrests-three-suspects-in-deadly-church-attack",
+   "gathered": "2026-10-26T07:21:48Z"
   },
   {
    "h": "Serbia's Vucic concedes defeat to student movement",
@@ -386,44 +386,44 @@
   "now": {
    "temp": 52,
    "cond": "Fair",
-   "obs": "26 Oct 01:51 am EDT"
+   "obs": "26 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 50,
-    "text": "Clear, with a low around 50. West wind around 6 mph. "
-   },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 69,
-    "text": "Sunny, with a high near 69. West wind around 8 mph. "
+    "text": "Sunny, with a high near 69. West wind 7 to 9 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 55,
-    "text": "Mostly clear, with a low around 55. West wind 8 to 10 mph. "
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51. West wind 8 to 10 mph becoming north after midnight. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 62,
-    "text": "Sunny, with a high near 62. North wind 7 to 11 mph. "
+    "text": "Sunny, with a high near 62. North wind 7 to 13 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly clear, with a low around 50. North wind around 8 mph. "
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47. Northeast wind around 7 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 62,
-    "text": "Mostly sunny, with a high near 62."
+    "temp": 63,
+    "text": "Sunny, with a high near 63."
+   },
+   {
+    "name": "Wednesday Night",
+    "kind": "low",
+    "temp": 53,
+    "text": "Partly cloudy, with a low around 53."
    }
   ]
  },

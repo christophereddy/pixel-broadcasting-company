@@ -8,17 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "26 Oct 01:52 am EDT"
+    "obs": "26 Oct 02:52 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 51,
-     "text": "Mostly clear, with a low around 51. Northeast wind around 5 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -34,20 +28,26 @@
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 74,
-     "text": "Sunny, with a high near 74. Calm wind becoming east around 5 mph in the afternoon. "
+     "temp": 75,
+     "text": "Sunny, with a high near 75. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Partly cloudy, with a low around 51. East wind around 5 mph. "
+     "temp": 50,
+     "text": "Partly cloudy, with a low around 50. East wind around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 72,
-     "text": "Partly sunny, with a high near 72."
+     "temp": 73,
+     "text": "Partly sunny, with a high near 73."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 54,
+     "text": "Partly cloudy, with a low around 54."
     }
    ]
   },
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,17 +76,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "26 Oct 01:54 am EDT"
+    "obs": "26 Oct 02:54 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44. Southwest wind around 6 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -116,6 +110,12 @@
      "kind": "high",
      "temp": 57,
      "text": "Patchy frost before 9am.  Otherwise, sunny, with a high near 57. Light and variable wind. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43. Southwest wind 3 to 5 mph. "
     }
    ]
   },
@@ -131,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -167,9 +167,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Partly Cloudy",
-    "obs": "26 Oct 00:53 am CDT"
+    "temp": 55,
+    "cond": "Mostly Cloudy",
+    "obs": "26 Oct 01:53 am CDT"
    },
    "periods": [
     {
@@ -222,7 +222,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -255,38 +255,38 @@
     {
      "name": "Overnight",
      "kind": "low",
-     "temp": 48,
-     "text": "A 40 percent chance of showers.  Patchy fog.  Otherwise, cloudy, with a steady temperature around 48. North northwest wind around 6 mph. "
+     "temp": 46,
+     "text": "Showers likely.  Patchy fog.  Otherwise, cloudy, with a steady temperature around 46. North northwest wind around 6 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 62,
-     "text": "Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 62. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
+     "temp": 61,
+     "text": "Patchy fog before 9am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 61. Light and variable wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38. Northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 38. East northeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Calm wind becoming east northeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
+     "text": "Sunny, with a high near 69. Calm wind becoming northeast 5 to 8 mph in the afternoon. Winds could gust as high as 16 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39. East northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 39. Northeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70."
+     "text": "Mostly sunny, with a high near 70."
     }
    ]
   },
@@ -302,7 +302,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -340,7 +340,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 57,
      "text": "Partly cloudy, with a low around 57. Northwest wind around 5 mph becoming calm. "
@@ -389,7 +389,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -453,44 +453,44 @@
    "now": {
     "temp": 52,
     "cond": "Fair",
-    "obs": "26 Oct 01:51 am EDT"
+    "obs": "26 Oct 02:51 am EDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 50,
-     "text": "Clear, with a low around 50. West wind around 6 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. West wind around 8 mph. "
+     "text": "Sunny, with a high near 69. West wind 7 to 9 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a low around 55. West wind 8 to 10 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. West wind 8 to 10 mph becoming north after midnight. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 62,
-     "text": "Sunny, with a high near 62. North wind 7 to 11 mph. "
+     "text": "Sunny, with a high near 62. North wind 7 to 13 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. North wind around 8 mph. "
+     "temp": 47,
+     "text": "Mostly clear, with a low around 47. Northeast wind around 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 62,
-     "text": "Mostly sunny, with a high near 62."
+     "temp": 63,
+     "text": "Sunny, with a high near 63."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "Partly cloudy, with a low around 53."
     }
    ]
   },
@@ -506,7 +506,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -557,7 +557,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "goodnews": []
  },
  {
@@ -571,10 +571,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 50,
-     "text": "A 40 percent chance of rain, mainly after midnight.  Mostly cloudy, with a steady temperature around 50. Light north northeast wind. "
+     "text": "A 40 percent chance of rain.  Mostly cloudy, with a steady temperature around 50. Light north northeast wind. "
     },
     {
      "name": "Monday",
@@ -620,7 +620,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T07:21:00Z",
+  "updatedAt": "2026-10-26T10:16:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
