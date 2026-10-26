@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T01:13:00Z",
+ "updatedAt": "2026-10-26T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "Al Jazeera's live coverage: Trump rules out an immediate attack on Iran as Qatari mediators visit Tehran.",
    "date": "2026-10-25",
    "publisher": "Al Jazeera",
-   "title": "Trump rules out immediate attack on Iran; Qatar mediators visit Tehran",
+   "title": "Iran war updates: Trump says no strike today; Qatari mediators visit Tehran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/iran-war-live-trump-hints-at-possible-sunday-iran-attack-or-deal-reached",
    "gathered": "2026-10-25T01:30:35Z"
   }
@@ -81,6 +81,17 @@
  ],
  "international": [
   {
+   "h": "Thousands protest Czech public media funding bill",
+   "b": "Protesters in Prague demanded the withdrawal of legislation to abolish household licence fees for public radio and television and fund them from the state budget instead, after the lower house fast-tracked the bill in an overnight vote.",
+   "date": "2026-10-25",
+   "place": "Prague",
+   "tz": "Europe/Prague",
+   "publisher": "Al Jazeera",
+   "title": "Thousands protest in Prague against public media funding reforms",
+   "url": "https://www.aljazeera.com/news/2026/10/25/thousands-protest-in-prague-against-public-media-funding-reforms",
+   "gathered": "2026-10-26T01:29:39Z"
+  },
+  {
    "h": "Le Pen launches campaign vowing French 'renaissance'",
    "b": "Marine Le Pen launched her presidential campaign before thousands of supporters in Orleans on Sunday, against a backdrop of mass demonstrations and widespread social and economic discontent.",
    "date": "2026-10-25",
@@ -142,15 +153,15 @@
    "gathered": "2026-10-25T17:10:32Z"
   },
   {
-   "h": "Brazil counts votes in Lula-Bolsonaro run-off",
-   "b": "Al Jazeera's live coverage: Polls have closed and vote counting has begun in Brazil's tight presidential run-off between Lula and Bolsonaro.",
+   "h": "Lula wins Brazil run-off, holding off far right",
+   "b": "Brazil's Superior Electoral Court called the presidential run-off for Lula, who won more than 51 percent of the vote to Flávio Bolsonaro's 48 percent, a margin of more than 4 million votes.",
    "date": "2026-10-25",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
    "publisher": "Al Jazeera",
-   "title": "Brazil awaits results in tight presidential run-off election",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/25/brazil-election-results-2026-live-polls-close-in-lula-bolsonaro-face-off",
-   "gathered": "2026-10-25T22:44:10Z"
+   "title": "Lula holds off far right with victory in Brazil presidential election",
+   "url": "https://www.aljazeera.com/news/2026/10/26/lula-holds-off-far-right-with-victory-in-brazil-presidential-election",
+   "gathered": "2026-10-26T01:29:39Z"
   },
   {
    "h": "Algeria's senate approves troops for Niger",
@@ -216,11 +227,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Watson's late drive keeps Browns in first place",
+   "b": "Deshaun Watson engineered another fourth-quarter game-winning drive in Cleveland's 27-24 win over Tennessee, his fifth this season, as the Browns sit in first place in their division.",
+   "date": "2026-10-25",
+   "publisher": "CBS Sports",
+   "title": "NFL Week 7 grades: Falcons earn solid 'A' mark, while Panthers flop with a resounding 'F'",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-grades-falcons-buccaneers-giants-panthers/",
+   "gathered": "2026-10-26T01:29:39Z"
+  },
+  {
    "h": "McCarthy, Skattebo lift surprising Giants",
    "b": "J.J. McCarthy impressed in his first start for New York after his trade from the Vikings, and Cam Skattebo responded emphatically to his Week 6 benching as John Harbaugh's Giants keep rolling.",
    "date": "2026-10-25",
-   "publisher": "CBS Sports",
-   "title": "J.J. McCarthy, Cam Skattebo seize second chances as John Harbaugh's surprising Giants keep rolling",
    "url": "https://www.cbssports.com/nfl/news/giants-overtime-win-john-harbaugh-j-j-mccarthy-cam-skattebo/",
    "gathered": "2026-10-25T22:44:10Z"
   },
@@ -290,7 +308,7 @@
    "publisher": "Gothamist",
    "title": "Why New Yorkers should care about bats beyond spooky season",
    "url": "https://gothamist.com/news/why-new-yorkers-should-care-about-bats-beyond-spooky-season",
-   "published": "2026-10-25T22:44:02Z",
+   "published": "2026-10-25T22:44:00Z",
    "gathered": "2026-10-25T22:44:10Z"
   },
   {
@@ -334,9 +352,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 56,
    "cond": "Fair",
-   "obs": "25 Oct 17:51 pm EDT"
+   "obs": "25 Oct 20:51 pm EDT"
   },
   "periods": [
    {
