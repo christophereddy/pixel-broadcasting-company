@@ -5,45 +5,19 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Rick Jackson walks Trump tightrope in governor race",
-    "b": "Republican billionaire Rick Jackson, who spent his early years in foster homes, is pouring his own money into his bid to lead Georgia while balancing his ties to Trump.",
-    "date": "2026-10-24",
-    "url": "https://www.pbs.org/newshour/politics/republican-billionaire-rick-jackson-is-walking-a-trump-tightrope-in-his-quest-to-lead-georgia",
-    "gathered": "2026-10-24T21:04:19Z"
-   },
-   {
-    "h": "Man charged with Molotov attack on Atlanta ICE building",
-    "b": "Inique Hinton, 31, of Douglasville was charged with attempted arson of a federal building after allegedly throwing a Molotov cocktail at the downtown Atlanta ICE building Tuesday night.",
-    "date": "2026-10-24",
-    "publisher": "WABE",
-    "title": "GA man charged with throwing Molotov cocktail at ICE building",
-    "url": "https://www.wabe.org/georgia-man-charged-with-throwing-molotov-cocktail-at-atlanta-ice-building/",
-    "published": "2026-10-24T16:21:53Z",
-    "updated": "2026-10-24T16:21:56Z",
-    "gathered": "2026-10-24T18:18:06Z"
-   },
-   {
-    "h": "Six Flags to add seat belts after Goliath death",
-    "b": "Six Flags says it will add seat belts on the Goliath coaster at Six Flags Over Georgia and similar rides after a rider was ejected and killed Oct. 12. Goliath remains shut down.",
-    "date": "2026-10-24",
-    "url": "https://www.pbs.org/newshour/nation/six-flags-says-it-will-install-seat-belts-on-georgia-roller-coaster-after-riders-death",
-    "gathered": "2026-10-24T18:18:06Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 68,
     "cond": "A Few Clouds",
-    "obs": "25 Oct 14:52 pm EDT"
+    "obs": "25 Oct 17:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51. Northeast wind around 5 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 51. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday",
@@ -67,7 +41,7 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Partly cloudy, with a low around 51."
+     "text": "Partly cloudy, with a low around 51. Calm wind becoming east around 5 mph after midnight. "
     },
     {
      "name": "Wednesday",
@@ -89,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -102,9 +76,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "25 Oct 14:54 pm EDT"
+    "obs": "25 Oct 17:54 pm EDT"
    },
    "periods": [
     {
@@ -157,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -178,48 +152,20 @@
     "published": "2026-10-25T17:56:53Z",
     "updated": "2026-10-25T17:56:53Z",
     "gathered": "2026-10-25T19:52:04Z"
-   },
-   {
-    "h": "Jury trial set over Henry Darger's art",
-    "b": "A federal judge set a March 8, 2027 jury trial to decide who owns the works of outsider artist Henry Darger, estimated to be worth millions of dollars.",
-    "date": "2026-10-24",
-    "publisher": "WBEZ",
-    "title": "A jury set to decide who owns the work of Henry Darger, Chicago’s most famous outsider artist",
-    "url": "https://www.wbez.org/arts/2026/10/24/a-jury-set-to-decide-who-owns-the-work-of-henry-darger-chicagos-most-famous-outsider-artist",
-    "published": "2026-10-24T10:30:00Z",
-    "updated": "2026-10-24T10:30:01Z",
-    "gathered": "2026-10-24T11:25:45Z"
-   },
-   {
-    "h": "Calls to demolish funeral home where 55 bodies found",
-    "b": "As city inspectors visited the South Side funeral home where 55 decomposing bodies were found in August, activists and an affected family called for its demolition.",
-    "date": "2026-10-24",
-    "publisher": "WBEZ",
-    "title": "City inspects funeral home where 55 decaying bodies were found amid calls for its demolition",
-    "url": "https://www.wbez.org/grave-injustice/2026/10/23/city-inspects-funeral-home-where-55-decaying-bodies-were-found-amid-calls-for-its-demolition",
-    "published": "2026-10-24T02:35:19Z",
-    "updated": "2026-10-24T02:35:19Z",
-    "gathered": "2026-10-24T06:15:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 73,
-    "cond": "Mostly Cloudy",
-    "obs": "25 Oct 13:53 pm CDT"
+    "temp": 72,
+    "cond": "A Few Clouds",
+    "obs": "25 Oct 16:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Mostly sunny, with a high near 70. South wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Partly cloudy, with a low around 54. South wind around 5 mph becoming west northwest after midnight. "
+     "text": "Partly cloudy, with a low around 54. South southeast wind around 5 mph becoming west northwest after midnight. "
     },
     {
      "name": "Monday",
@@ -243,7 +189,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly cloudy, with a low around 57."
+     "text": "Mostly cloudy, with a low around 57. Southeast wind 5 to 10 mph. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 68,
+     "text": "Mostly sunny, with a high near 68."
     }
    ]
   },
@@ -259,7 +211,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -284,17 +236,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "A Few Clouds",
-    "obs": "25 Oct 12:58 pm MDT"
+    "temp": 54,
+    "cond": "Mostly Cloudy",
+    "obs": "25 Oct 15:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 57,
-     "text": "A 20 percent chance of showers after 5pm.  Mostly sunny, with a high near 57. North northeast wind 5 to 8 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -324,6 +270,12 @@
      "kind": "low",
      "temp": 39,
      "text": "Mostly clear, with a low around 39."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 70,
+     "text": "Sunny, with a high near 70."
     }
    ]
   },
@@ -339,7 +291,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -371,28 +323,11 @@
     "published": "2026-10-25T12:00:00Z",
     "updated": "2026-10-25T12:00:04Z",
     "gathered": "2026-10-25T12:41:40Z"
-   },
-   {
-    "h": "CSU faculty union seeks strike authority",
-    "b": "The California Faculty Association is asking members to authorize a strike after declaring an impasse this summer following 16 months of talks with the CSU system.",
-    "date": "2026-10-24",
-    "publisher": "LAist",
-    "title": "CSU faculty union seeks strike authority as contract talks stall",
-    "url": "https://laist.com/news/education/csu-faculty-union-seeks-strike-authority-as-contract-talks-stall",
-    "published": "2026-10-24T13:33:36Z",
-    "updated": "2026-10-24T13:33:36Z",
-    "gathered": "2026-10-24T14:45:15Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 77,
-     "text": "Sunny, with a high near 77. Southwest wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -422,6 +357,12 @@
      "kind": "low",
      "temp": 57,
      "text": "Partly cloudy, with a low around 57."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Mostly sunny, with a high near 73."
     }
    ]
   },
@@ -437,7 +378,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -449,13 +390,24 @@
   },
   "local": [
    {
+    "h": "State urges New Yorkers to protect bats",
+    "b": "With Bat Week under way, New York officials are urging outdoor adventurers to stay out of caves and mines this winter to avoid waking hibernating bats so they survive to spring.",
+    "date": "2026-10-25",
+    "publisher": "Gothamist",
+    "title": "Why New Yorkers should care about bats beyond spooky season",
+    "url": "https://gothamist.com/news/why-new-yorkers-should-care-about-bats-beyond-spooky-season",
+    "published": "2026-10-25T22:44:02Z",
+    "gathered": "2026-10-25T22:44:10Z"
+   },
+   {
     "h": "Serbians wait hours to vote at NYC consulate",
     "b": "Serbian immigrants from across the Northeast lined up down West 45th Street on Sunday to vote at the consulate near Bryant Park in the Balkan nation's parliamentary election.",
     "date": "2026-10-25",
     "publisher": "Gothamist",
     "title": "Serbians forced to wait hours to vote at NYC consulate as Balkan nation holds election",
     "url": "https://gothamist.com/news/serbians-forced-to-wait-hours-to-vote-at-nyc-consulate-as-balkan-nation-holds-election",
-    "published": "2026-10-25T18:57:39Z",
+    "published": "2026-10-25T18:57:00Z",
+    "updated": "2026-10-25T20:59:00Z",
     "gathered": "2026-10-25T19:52:04Z"
    },
    {
@@ -484,33 +436,13 @@
     "date": "2026-10-25",
     "url": "https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors",
     "gathered": "2026-10-25T06:35:44Z"
-   },
-   {
-    "h": "Chinatown residents sue over jail night work",
-    "b": "Residents and advocacy groups sued the city over plans to allow after-hours construction on the new Chinatown jail, citing sleep disruption and dust.",
-    "date": "2026-10-24",
-    "publisher": "Gothamist",
-    "title": "Chinatown residents file lawsuit against after-hours construction on new 'mega jail'",
-    "url": "https://gothamist.com/news/chinatown-residents-file-lawsuit-against-after-hours-construction-on-new-mega-jail",
-    "published": "2026-10-24T21:25:00Z",
-    "gathered": "2026-10-24T23:32:35Z"
-   },
-   {
-    "h": "NYPD officer shoots woman with knife in Queens",
-    "b": "An officer shot and wounded a woman who approached police with a knife during a home invasion and stabbing call on 149th Street Friday night. She is in stable condition.",
-    "date": "2026-10-24",
-    "publisher": "Gothamist",
-    "title": "NYPD: Officer shot, injured knife-wielding woman during ‘chaotic’ night at Queens home",
-    "url": "https://gothamist.com/news/nypd-officer-shot-injured-knife-wielding-woman-during-chaotic-night-at-queens-home",
-    "published": "2026-10-24T12:35:00Z",
-    "gathered": "2026-10-24T14:45:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "25 Oct 15:51 pm EDT"
+    "obs": "25 Oct 17:51 pm EDT"
    },
    "periods": [
     {
@@ -563,7 +495,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -587,38 +519,6 @@
   },
   "local": [
    {
-    "h": "410,000 protest across France as Paris clashes erupt",
-    "b": "The Interior Ministry put turnout at 410,000, including 110,000 in Paris, where police used tear gas and water cannons. Clashes were also reported in Lyon, Marseille, Nice and Nantes.",
-    "date": "2026-10-24",
-    "url": "https://www.pbs.org/newshour/world/more-than-400000-protest-across-france-challenging-macron-as-paris-clashes-erupt",
-    "gathered": "2026-10-24T18:18:06Z"
-   },
-   {
-    "h": "Yellow Vests call new protests for Oct. 31",
-    "b": "The Yellow Vest movement called for rallies and a sit-in outside parliament and city halls on October 31, as another day of nationwide protests began Saturday under tight security.",
-    "date": "2026-10-24",
-    "url": "https://www.thelocal.fr/20261024/frances-yellow-vest-movement-calls-new-protests-for-october-31st",
-    "gathered": "2026-10-24T14:45:15Z"
-   },
-   {
-    "h": "MEPs urge EU probe of social media in protests",
-    "b": "More than 30 European lawmakers asked the EU's tech chief to use digital content rules to question platforms about their role in the student protests, with blocking access as a last resort.",
-    "date": "2026-10-24",
-    "url": "https://www.thelocal.fr/20261024/lawmakers-say-eu-must-probe-social-media-role-in-protests",
-    "gathered": "2026-10-24T11:25:45Z"
-   },
-   {
-    "h": "Macron calls Trappes shooting racist terror attack",
-    "b": "Prosecutors extended the detention of the 39-year-old suspect, arrested with a submachine gun and tear-gas grenades. The anti-terror prosecutor is handling the case; one person was killed and five wounded.",
-    "date": "2026-10-24",
-    "publisher": "The Local France",
-    "title": "Suspected racist shooter put in French police psychiatric unit",
-    "url": "https://www.thelocal.fr/20261024/france-extends-detention-of-suspected-racist-shooter",
-    "published": "2026-10-24T13:34:02Z",
-    "updated": "2026-10-25T10:29:14Z",
-    "gathered": "2026-10-24T14:45:15Z"
-   },
-   {
     "h": "Storms Boelo and Austen batter Europe",
     "b": "Nearly 60,000 homes in France, 10,000 in Germany and 82,000 in Britain lost power as two storms hit within 24 hours, cancelling hundreds of flights. At Austen's peak, 288,000 French homes were without power.",
     "date": "2026-10-25",
@@ -628,17 +528,6 @@
     "published": "2026-10-25T16:15:06Z",
     "updated": "2026-10-25T16:15:09Z",
     "gathered": "2026-10-25T17:10:32Z"
-   },
-   {
-    "h": "France deploys 70,000 police for weekend protests",
-    "b": "Interior Minister Laurent Nunez said about 70,000 security personnel will deploy Saturday, warning that calls for violence and looting are circulating online after last weekend's unrest.",
-    "date": "2026-10-24",
-    "publisher": "The Local France",
-    "title": "Fresh clashes at protests, but France avoids second day of widespread violence",
-    "url": "https://www.thelocal.fr/20261024/france-to-deploy-70000-police-for-fresh-weekend-protests",
-    "published": "2026-10-24T06:43:14Z",
-    "updated": "2026-10-25T09:49:34Z",
-    "gathered": "2026-10-24T07:12:49Z"
    }
   ],
   "weather": {
@@ -657,7 +546,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "goodnews": []
  },
  {
@@ -670,12 +559,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 55,
-     "text": "Rain likely, mainly before 4pm.  Mostly cloudy, with a high near 55. Southeast wind 3 to 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -705,6 +588,12 @@
      "kind": "low",
      "temp": 46,
      "text": "Rain.  Low around 46. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 53,
+     "text": "A chance of rain, then showers and possibly a thunderstorm after 11am.  High near 53. Chance of precipitation is 80%."
     }
    ]
   },
@@ -720,7 +609,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-25T22:13:00Z",
+  "updatedAt": "2026-10-26T01:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
