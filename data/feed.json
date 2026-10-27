@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T22:13:00Z",
+ "updatedAt": "2026-10-27T01:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -41,26 +41,19 @@
    "published": "2026-10-26T09:00:00Z",
    "updated": "2026-10-26T09:00:13Z",
    "gathered": "2026-10-26T10:16:57Z"
-  },
-  {
-   "h": "U.S. measles cases top double last year's total",
-   "b": "CDC data show more than 4,580 measles cases nationwide this year, more than double the total for all of 2025. Ninety-six percent of those infected were unvaccinated or of unknown status.",
-   "date": "2026-10-25",
-   "url": "https://www.kuow.org/npr-news/2026-10-25/u-s-measles-cases-more-than-double-what-they-were-last-year-as-outbreak-spreads",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Texas cop's ICE work tore his town apart",
-   "b": "ProPublica profiles Jaron Alexander of Ingram, Texas, one of more than 29,000 local officers on the front lines of the Trump administration's deportation campaign.",
-   "date": "2026-10-25",
-   "publisher": "ProPublica",
-   "title": "A Texas Cop Signed on to Help ICE Deport His Neighbors. It Tore the Town Apart.",
-   "url": "https://www.propublica.org/article/deportations-ingram-texas-287g-jaron-alexander",
-   "published": "2026-10-25T04:00:00Z",
-   "gathered": "2026-10-25T06:35:44Z"
   }
  ],
  "politics": [
+  {
+   "h": "Comey charged for a third time",
+   "b": "Newly unsealed court documents revealed new Justice Department charges against former FBI director James Comey, a longtime Trump critic. Comey called it 'an appalling abuse' of the department.",
+   "date": "2026-10-26",
+   "publisher": "PBS NewsHour",
+   "title": "Trump administration charges former FBI Director James Comey for the third time",
+   "url": "https://www.pbs.org/newshour/politics/trump-administration-charges-former-fbi-director-james-comey-for-the-third-time",
+   "published": "2026-10-26T22:01:32Z",
+   "gathered": "2026-10-26T23:59:43Z"
+  },
   {
    "h": "Judge: DOJ illegally fired Comey's daughter",
    "b": "A federal judge ruled Monday that the Justice Department unlawfully fired the daughter of former FBI director Comey, a longtime Manhattan prosecutor who argued she was dismissed because of her father.",
@@ -76,49 +69,34 @@
    "h": "Six citizens sue Trump over White House media bans",
    "b": "The Knight First Amendment Institute filed suit in federal court in New York arguing that barring journalists violates the public's right to independent reporting about its government.",
    "date": "2026-10-26",
-   "publisher": "PBS NewsHour",
-   "title": "6 citizens sue Trump over media ban, saying it deprives them of news as audience stakeholders",
    "url": "https://www.pbs.org/newshour/politics/6-citizens-sue-trump-over-media-ban-saying-it-deprives-them-of-news-as-audience-stakeholders",
-   "published": "2026-10-26T19:36:22Z",
    "gathered": "2026-10-26T20:03:43Z"
-  },
-  {
-   "h": "Appeals court sceptical of Trump's California suit",
-   "b": "A Trump-appointed judge on a three-judge panel voiced doubt that the administration's lawsuit over California voter rolls would hold up, citing the Constitution's Elections Clause after a rare weekend argument.",
-   "date": "2026-10-25",
-   "url": "https://www.aljazeera.com/news/2026/10/26/us-appeals-court-sceptical-of-trumps-lawsuit-over-california-voter-rolls",
-   "gathered": "2026-10-26T06:44:48Z"
-  },
-  {
-   "h": "Judge asked to force release of Kennedy Center texts",
-   "b": "Lawyers for Rep. Joyce Beatty are seeking a court order for the administration to turn over emails and texts about Kennedy Center plans that it has withheld as privileged presidential communications.",
-   "date": "2026-10-25",
-   "url": "https://www.pbs.org/newshour/politics/judge-asked-to-compel-trump-administration-to-disclose-emails-and-texts-about-kennedy-center-plans",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Peltola and family hurt in minor car crash",
-   "b": "Another vehicle crashed into the one carrying Alaska Democratic Senate candidate Mary Peltola and her family on the way to the Alaska Federation of Natives banquet; they suffered minor injuries, the campaign said.",
-   "date": "2026-10-25",
-   "url": "https://www.pbs.org/newshour/politics/alaska-democratic-senate-candidate-mary-peltola-and-her-family-suffer-minor-injuries-in-car-crash",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Trump escalates attacks on El-Sayed in Michigan",
-   "b": "At a Port Huron rally, Trump again attacked Democratic Senate candidate Abdul El-Sayed's faith. El-Sayed, a former public health official, has repeatedly said he is loyal to the U.S. and disavowed the Muslim Brotherhood.",
-   "date": "2026-10-25",
-   "url": "https://www.pbs.org/newshour/politics/trump-escalates-rhetoric-against-el-sayed-as-he-tries-to-undermine-democrat-in-michigan-senate-race",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Blanche defends DOJ suit over Alaska Senate race",
-   "b": "Pressed on CNN, Blanche denied that the Justice Department's lawsuit to stop Alaska from automatically certifying its Senate result if the Republican incumbent loses is setting the stage for Trump to challenge the midterms.",
-   "date": "2026-10-25",
-   "url": "https://www.pbs.org/newshour/politics/blanche-says-trump-isnt-trying-to-meddle-with-alaska-election-results-by-suing-over-senate-race",
-   "gathered": "2026-10-25T19:52:04Z"
   }
  ],
  "international": [
+  {
+   "h": "Pope Leo to proceed with Latin America trip",
+   "b": "After a post-surgery checkup, the Vatican confirmed the pope will keep his ambitious trip program unchanged. His physician said there is no medical reason to prevent the trip.",
+   "date": "2026-10-26",
+   "place": "Vatican City",
+   "tz": "Europe/Vatican",
+   "publisher": "PBS NewsHour",
+   "title": "Following post-surgery checkup, Pope Leo will proceed with Latin America trip, Vatican confirms",
+   "url": "https://www.pbs.org/newshour/world/following-post-surgery-checkup-pope-leo-will-proceed-with-latin-america-trip-vatican-confirms",
+   "published": "2026-10-26T20:54:31Z",
+   "gathered": "2026-10-26T23:59:43Z"
+  },
+  {
+   "h": "Jordan strikes Syria after deadly church attack",
+   "b": "Jordan's armed forces said Monday's air strikes targeted groups in southeastern Syria linked to the gunmen who killed nine people at a church in Karak, killing and wounding many of their members.",
+   "date": "2026-10-26",
+   "place": "Syria",
+   "tz": "Asia/Damascus",
+   "publisher": "Al Jazeera",
+   "title": "Jordan launches air strikes in Syria in response to a fatal church shooting",
+   "url": "https://www.aljazeera.com/news/2026/10/26/jordan-launches-air-strikes-in-syria-in-response-to-a-fatal-church-shooting",
+   "gathered": "2026-10-26T23:59:43Z"
+  },
   {
    "h": "Saudi-led coalition says it hit Houthi missile sites",
    "b": "Coalition spokesman Turki al-Maliki said its forces destroyed four ballistic missile launchers and five tunnels the Houthis used to store missiles, as the group claimed attacks on infrastructure in Saudi Arabia and Yemen.",
@@ -131,87 +109,13 @@
    "gathered": "2026-10-26T14:28:24Z"
   },
   {
-   "h": "US says it helped move 1.5 billion barrels via Hormuz",
-   "b": "The US military said more than 3,000 commercial vessels transited the Strait of Hormuz with its support over six months, helping Gulf states export 1.5 billion barrels of oil despite Iranian threats.",
-   "date": "2026-10-25",
-   "place": "Strait of Hormuz",
-   "tz": "Asia/Dubai",
-   "url": "https://www.aljazeera.com/economy/2026/10/26/us-military-says-it-helped-gulf-states-export-1-5-billion-barrels-of-oil",
-   "gathered": "2026-10-26T06:44:48Z"
-  },
-  {
    "h": "China's Communist Party elite open plenum",
    "b": "Roughly 300 Central Committee members began a closed-door plenum Monday as Xi Jinping pushes for greater loyalty from officials, about a year before he is widely expected to secure a fourth term as party leader.",
    "date": "2026-10-26",
    "place": "China",
    "tz": "Asia/Shanghai",
-   "publisher": "Al Jazeera",
-   "title": "China’s political elite gather for talks on Communist Party discipline",
    "url": "https://www.aljazeera.com/news/2026/10/26/chinas-political-elite-gather-for-talks-on-communist-party-discipline",
    "gathered": "2026-10-26T06:44:48Z"
-  },
-  {
-   "h": "Thousands protest Czech public media funding bill",
-   "b": "Protesters in Prague demanded the withdrawal of legislation to abolish household licence fees for public radio and television and fund them from the state budget instead, after the lower house fast-tracked the bill in an overnight vote.",
-   "date": "2026-10-25",
-   "place": "Prague",
-   "tz": "Europe/Prague",
-   "url": "https://www.aljazeera.com/news/2026/10/25/thousands-protest-in-prague-against-public-media-funding-reforms",
-   "gathered": "2026-10-26T01:29:39Z"
-  },
-  {
-   "h": "Le Pen launches campaign vowing French 'renaissance'",
-   "b": "Marine Le Pen launched her presidential campaign before thousands of supporters in Orleans on Sunday, against a backdrop of mass demonstrations and widespread social and economic discontent.",
-   "date": "2026-10-25",
-   "place": "Orleans",
-   "tz": "Europe/Paris",
-   "url": "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Bulgaria's presidential race heads to runoff",
-   "b": "Record low turnout sent the race to a runoff between incumbent leftist President Iliana Yotova and Andrey Gyurov, candidate of the pro-Western reformist opposition.",
-   "date": "2026-10-25",
-   "place": "Sofia",
-   "tz": "Europe/Sofia",
-   "url": "https://www.pbs.org/newshour/world/presidential-race-in-bulgaria-heads-to-runoff-due-to-record-low-turnout",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Uganda orders Ebola quarantine for DR Congo returnees",
-   "b": "Health Minister Chris Baryomunsi announced a 21-day quarantine for citizens returning from DR Congo, as Ebola cases in Kenya and Nigeria raise questions about travellers. Uganda says it has no active infections.",
-   "date": "2026-10-25",
-   "place": "Kampala",
-   "tz": "Africa/Kampala",
-   "url": "https://www.aljazeera.com/news/2026/10/25/uganda-orders-21-day-ebola-quarantine-for-citizens-returning-from-dr-congo",
-   "gathered": "2026-10-25T19:52:04Z"
-  },
-  {
-   "h": "Israeli attacks kill eight in Gaza, hit university",
-   "b": "At least eight Palestinians were killed across Gaza on Sunday, including three security guards in an Israeli air strike on the Islamic University campus in Gaza City, the second attack on the institution within a few hours.",
-   "date": "2026-10-25",
-   "place": "Gaza City",
-   "tz": "Asia/Gaza",
-   "url": "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites",
-   "gathered": "2026-10-25T19:52:04Z"
-  },
-  {
-   "h": "Machado returns to Venezuela after exile",
-   "b": "Opposition leader María Corina Machado returned to Venezuela after months in exile, writing 'I am here. With you.' Edmundo González said he would join her soon.",
-   "date": "2026-10-25",
-   "place": "Caracas",
-   "tz": "America/Caracas",
-   "url": "https://www.pbs.org/newshour/world/venezuelas-opposition-leader-machado-returns-after-months-in-exile",
-   "gathered": "2026-10-25T17:10:32Z"
-  },
-  {
-   "h": "Burnham open to EU freedom of movement talks",
-   "b": "UK Prime Minister Andy Burnham told The Sunday Times he wants to discuss a return to EU freedom of movement as he rethinks ties with Brussels.",
-   "date": "2026-10-25",
-   "place": "London",
-   "tz": "Europe/London",
-   "url": "https://www.aljazeera.com/news/2026/10/25/uk-pm-burnham-says-he-wants-to-discuss-a-return-to-eu-freedom-of-movement",
-   "gathered": "2026-10-25T17:10:32Z"
   },
   {
    "h": "Bolsonaro rejects Lula's Brazil election win",
@@ -223,51 +127,13 @@
    "gathered": "2026-10-26T14:28:24Z"
   },
   {
-   "h": "Algeria's senate approves troops for Niger",
-   "b": "Algeria's upper house approved a troop deployment to Niger in an emergency session. If the lower house agrees, it would be Algeria's first mission abroad since 1973.",
-   "date": "2026-10-25",
-   "place": "Algiers",
-   "tz": "Africa/Algiers",
-   "url": "https://www.aljazeera.com/news/2026/10/25/algerian-parliaments-upper-house-approves-troop-deployment-to-niger",
-   "gathered": "2026-10-25T12:41:40Z"
-  },
-  {
-   "h": "Israeli troops turn Hebron homes into posts",
-   "b": "Israeli forces took over homes in southern Hebron as barracks and observation posts amid a lockdown and hundreds of raids since Friday's attack, Wafa reported.",
-   "date": "2026-10-25",
-   "place": "Hebron",
-   "tz": "Asia/Hebron",
-   "url": "https://www.aljazeera.com/news/2026/10/25/israeli-forces-turn-hebron-homes-into-military-posts-amid-lockdown",
-   "gathered": "2026-10-25T12:41:40Z"
-  },
-  {
    "h": "Jordan arrests three suspects in church attack",
    "b": "Security forces arrested three suspects in the deadly attack on a church in Karak after they were found hiding in an abandoned house and refused to surrender, wounding them in a firefight, Jordan's Public Security Directorate said.",
    "date": "2026-10-26",
    "place": "Karak",
    "tz": "Asia/Amman",
-   "publisher": "Al Jazeera",
-   "title": "Jordan arrests three suspects in deadly church attack",
    "url": "https://www.aljazeera.com/news/2026/10/26/jordan-arrests-three-suspects-in-deadly-church-attack",
    "gathered": "2026-10-26T07:21:48Z"
-  },
-  {
-   "h": "Serbia's Vucic concedes defeat to student movement",
-   "b": "Aleksandar Vucic, who led Serbia with virtually absolute power for 14 years, conceded defeat Sunday in an election against a diverse student-led opposition movement that spent two years protesting his government.",
-   "date": "2026-10-25",
-   "place": "Belgrade",
-   "tz": "Europe/Belgrade",
-   "url": "https://www.pbs.org/newshour/world/serbias-strongman-leader-vucic-concedes-defeat-to-student-led-movement-in-seismic-political-shift",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Police clear Lisbon housing protest camp, arrest 25",
-   "b": "Portuguese police moved in on the camp in Rossio Square early Sunday, where protesters had pitched more than 100 tents, arresting 25.",
-   "date": "2026-10-25",
-   "place": "Lisbon",
-   "tz": "Europe/Lisbon",
-   "url": "https://www.aljazeera.com/economy/2026/10/25/portuguese-police-clear-lisbon-housing-protest-camp-arrest-25",
-   "gathered": "2026-10-25T17:10:32Z"
   }
  ],
  "business": [
@@ -295,17 +161,8 @@
    "h": "RadioShack leans into retro tech",
    "b": "The electronics retailer is betting on a return to retro and analog tech ahead of the holiday shopping season, managing director Kevin Hamann told Marketplace.",
    "date": "2026-10-26",
-   "publisher": "Marketplace",
-   "title": "RadioShack leans into retro tech to revitalize the brand",
    "url": "https://www.marketplace.org/story/2026/10/26/radioshack-leans-into-retro-tech-to-revitalize-the-brand",
    "gathered": "2026-10-26T14:28:24Z"
-  },
-  {
-   "h": "Home sellers cut prices in a stagnant market",
-   "b": "Sellers who can are pulling listings, while others are lowering asking prices and paying thousands toward buyers' costs as surging mortgage rates stall the housing market, real estate agents say.",
-   "date": "2026-10-25",
-   "url": "https://www.pbs.org/newshour/economy/home-sellers-are-lowering-their-prices-and-helping-buyers-to-make-a-deal-in-a-stagnant-market",
-   "gathered": "2026-10-25T22:44:10Z"
   }
  ],
  "science": [
@@ -322,8 +179,6 @@
    "h": "Ohio State stays No. 1 as upsets shake rankings",
    "b": "Ohio State remains atop CBS Sports' Power Rankings over Miami. Top-10 teams have lost 11 times in three weeks, tied for the most in any three-week regular-season stretch since the AP poll began in 1936.",
    "date": "2026-10-26",
-   "publisher": "CBS Sports",
-   "title": "College Football Power Rankings: Ohio State remains No. 1 over Miami as chaos creates shakeup elsewhere",
    "url": "https://www.cbssports.com/college-football/news/college-football-power-rankings-week-9-ohio-state-miami/",
    "gathered": "2026-10-26T16:17:54Z"
   },
@@ -363,46 +218,13 @@
    "gathered": "2026-10-25T17:10:32Z"
   },
   {
-   "h": "Brewers rally past Rays 5-4 in World Series",
-   "b": "The Rays scored four runs in the first inning, but Milwaukee chipped away and took the lead in the bottom of the seventh. The Brewers are 9-1 this postseason.",
-   "date": "2026-10-24",
-   "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rays-mistakes/",
-   "gathered": "2026-10-25T06:35:44Z"
-  },
-  {
-   "h": "Upsets throw Big 12 playoff picture into chaos",
-   "b": "Cincinnati snapped Texas Tech's nine-game Big 12 winning streak and Scott Frost's Knights held off BYU, a week after the Cougars rose to No. 2.",
-   "date": "2026-10-24",
-   "url": "https://www.cbssports.com/college-football/news/cincinnatis-upset-texas-tech-big-12-college-football-playoff-picture-teams/",
-   "gathered": "2026-10-25T01:30:35Z"
-  },
-  {
-   "h": "NC State fires coach Dave Doeren",
-   "b": "NC State fired Dave Doeren in his 14th season after a loss to Stanford dropped the Wolfpack to 3-4.",
-   "date": "2026-10-24",
-   "url": "https://www.cbssports.com/college-football/news/nc-state-fires-dave-doeren-head-football-coach/",
-   "gathered": "2026-10-24T23:32:35Z"
-  },
-  {
-   "h": "WNBA Finals Game 6 venue up in the air",
-   "b": "Game 6 of the Dream-Valkyries Finals is listed as TBD because the Hawks are scheduled to host the Cavaliers at State Farm Arena the same night.",
-   "date": "2026-10-24",
-   "url": "https://www.cbssports.com/wnba/news/2026-wnba-finals-game-6-venue-state-farm-arena-dream-valkyries/",
-   "gathered": "2026-10-24T23:32:35Z"
-  },
-  {
-   "h": "Petr Yan outduels Dvalishvili to keep UFC title",
-   "b": "Petr Yan retained his bantamweight title against Merab Dvalishvili at UFC 333 in a Fight of the Year contender.",
-   "date": "2026-10-24",
-   "url": "https://www.cbssports.com/ufc/news/ufc-333-petr-yan-merab-dvalishvili-results-bantamweight-title-fight-of-the-year-contender/",
-   "gathered": "2026-10-24T21:04:19Z"
-  },
-  {
-   "h": "Brewers win World Series Game 1, 3-2",
-   "b": "Milwaukee beat the Rays 3-2 in Game 1 at American Family Field after a week off. Christian Yelich tripled home Jackson Chourio in a two-run first inning.",
-   "date": "2026-10-24",
-   "url": "https://www.cbssports.com/mlb/news/2026-world-series-brewers-rested-rays/",
-   "gathered": "2026-10-24T07:12:49Z"
+   "h": "WNBA sets Finals Game 6 for Thursday lunchtime",
+   "b": "Game 6 will be played at State Farm Arena at 12:30 p.m. ET on Thursday, Oct. 29, a decision announced just hours before Game 5 tipped off.",
+   "date": "2026-10-26",
+   "publisher": "CBS Sports",
+   "title": "WNBA Finals' Game 6 scheduling debacle is an embarrassing end to a historic season",
+   "url": "https://www.cbssports.com/wnba/news/wnba-finals-game-6-venue-schedule-embarrassing-dream-valkyries/",
+   "gathered": "2026-10-26T23:59:43Z"
   }
  ],
  "goodnews": [],
@@ -414,7 +236,7 @@
    "publisher": "Gothamist",
    "title": "Pressure grows on Mamdani to reform admissions to NYC specialized high schools",
    "url": "https://gothamist.com/news/pressure-grows-on-mamdani-to-reform-admissions-to-nyc-specialized-high-schools",
-   "published": "2026-10-26T20:03:21Z",
+   "published": "2026-10-26T20:03:00Z",
    "gathered": "2026-10-26T20:03:43Z"
   },
   {
@@ -438,58 +260,21 @@
    "gathered": "2026-10-26T10:16:57Z"
   },
   {
-   "h": "State urges New Yorkers to protect bats",
-   "b": "With Bat Week under way, New York officials are urging outdoor adventurers to stay out of caves and mines this winter to avoid waking hibernating bats so they survive to spring.",
-   "date": "2026-10-25",
+   "h": "Judge halts overnight work at Chinatown jail site",
+   "b": "A Manhattan Supreme Court judge temporarily halted after-hours construction on the new Chinatown jail after residents sued over sleep disruption, another setback for the city's plan to replace Rikers Island.",
+   "date": "2026-10-26",
    "publisher": "Gothamist",
-   "title": "Why New Yorkers should care about bats beyond spooky season",
-   "url": "https://gothamist.com/news/why-new-yorkers-should-care-about-bats-beyond-spooky-season",
-   "published": "2026-10-25T22:44:00Z",
-   "gathered": "2026-10-25T22:44:10Z"
-  },
-  {
-   "h": "Serbians wait hours to vote at NYC consulate",
-   "b": "Serbian immigrants from across the Northeast lined up down West 45th Street on Sunday to vote at the consulate near Bryant Park in the Balkan nation's parliamentary election.",
-   "date": "2026-10-25",
-   "publisher": "Gothamist",
-   "title": "Serbians forced to wait hours to vote at NYC consulate as Balkan nation holds election",
-   "url": "https://gothamist.com/news/serbians-forced-to-wait-hours-to-vote-at-nyc-consulate-as-balkan-nation-holds-election",
-   "published": "2026-10-25T20:59:00Z",
-   "gathered": "2026-10-25T19:52:04Z"
-  },
-  {
-   "h": "Ex-NYPD detective in GWB killing out on bail",
-   "b": "Victor Romero, 62, charged with manslaughter in the shooting death of ConEd worker Koran Irvine on the George Washington Bridge, posted $1 million bail.",
-   "date": "2026-10-25",
-   "publisher": "Gothamist",
-   "title": "Retired NYPD detective charged in George Washington Bridge killing out on $1M bail",
-   "url": "https://gothamist.com/news/retired-nypd-detective-charged-in-george-washington-bridge-killing-out-on-1m-bail",
-   "published": "2026-10-25T14:25:09Z",
-   "gathered": "2026-10-25T17:10:32Z"
-  },
-  {
-   "h": "Rural hospital cuts become NY governor race issue",
-   "b": "Candidates for governor are trading blame as rural hospitals face cuts, including Albany Med's plan to curtail services at Columbia Memorial Health in Hudson.",
-   "date": "2026-10-25",
-   "publisher": "Gothamist",
-   "title": "Cuts to rural healthcare become key issue for upstate votes in race for NY governor",
-   "url": "https://gothamist.com/news/cuts-to-rural-healthcare-become-key-issue-for-upstate-votes-in-race-for-ny-governor",
-   "published": "2026-10-25T12:00:54Z",
-   "gathered": "2026-10-25T12:41:40Z"
-  },
-  {
-   "h": "NY Archdiocese agrees to pay $800M to abuse survivors",
-   "b": "The Archdiocese of New York agreed to pay $800 million to 1,300 people who say they were sexually abused by clergy, lay leaders and teachers. The deal is set to be signed the first week of November.",
-   "date": "2026-10-25",
-   "url": "https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors",
-   "gathered": "2026-10-25T06:35:44Z"
+   "title": "Judge temporarily halts overnight construction at NYC’s Chinatown jail",
+   "url": "https://gothamist.com/news/judge-temporarily-halts-overnight-construction-at-nycs-chinatown-jail",
+   "published": "2026-10-26T23:08:00Z",
+   "gathered": "2026-10-26T23:59:43Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 68,
+   "temp": 64,
    "cond": "Fair",
-   "obs": "26 Oct 15:51 pm EDT"
+   "obs": "26 Oct 19:51 pm EDT"
   },
   "periods": [
    {
@@ -550,16 +335,6 @@
    "url": "https://gothamist.com/news/in-east-brooklyn-aging-nycha-homes-get-a-636m-upgrade",
    "published": "2026-10-26T10:30:56Z",
    "gathered": "2026-10-26T14:28:24Z"
-  },
-  {
-   "h": "NYC suicide deaths decline",
-   "b": "Suicide deaths in New York City fell from a peak of 601 in 2022 to 535 in 2024, health department data shows, though inequities persist across groups.",
-   "date": "2026-10-25",
-   "publisher": "Gothamist",
-   "title": "Suicides decline in NYC, but inequities persist across groups",
-   "url": "https://gothamist.com/news/suicides-decline-in-nyc-but-inequities-persist-across-groups",
-   "published": "2026-10-25T14:00:56Z",
-   "gathered": "2026-10-25T17:10:32Z"
   }
  ],
  "sources": [

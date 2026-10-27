@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 66,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 15:52 pm EDT"
+    "obs": "26 Oct 19:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Partly cloudy, with a low around 49. Northeast wind around 5 mph becoming calm. "
+     "text": "Partly cloudy, with a low around 49. Calm wind. "
     },
     {
      "name": "Tuesday",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -90,18 +90,15 @@
     "h": "Mass. voters to decide on 2024 gun law",
     "b": "Question 9 asks whether to uphold a law requiring all firearms to be serialized and registered with the state and broadening the ban on 'assault-style' guns. Opponents forced the referendum by petition.",
     "date": "2026-10-26",
-    "publisher": "PBS NewsHour",
-    "title": "Massachusetts and Idaho put guns on the ballot. One to restrict them, the other to honor them",
     "url": "https://www.pbs.org/newshour/nation/massachusetts-and-idaho-put-guns-on-the-ballot-one-to-restrict-them-the-other-to-honor-them",
-    "published": "2026-10-26T18:27:19Z",
     "gathered": "2026-10-26T20:03:43Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 72,
+    "temp": 67,
     "cond": "A Few Clouds",
-    "obs": "26 Oct 15:54 pm EDT"
+    "obs": "26 Oct 19:54 pm EDT"
    },
    "periods": [
     {
@@ -154,7 +151,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -164,44 +161,19 @@
    "short": "CHI",
    "tz": "America/Chicago"
   },
-  "local": [
-   {
-    "h": "1 critically wounded in Little Village shooting",
-    "b": "A 23-year-old man with a concealed carry license fired at two people who approached him on West Cermak Road Sunday morning, critically wounding one, police said.",
-    "date": "2026-10-25",
-    "publisher": "WBEZ",
-    "title": "1 critically wounded in Little Village shooting",
-    "url": "https://www.wbez.org/crime/2026/10/25/1-critically-wounded-in-little-village-shooting",
-    "published": "2026-10-26T04:25:02Z",
-    "updated": "2026-10-26T04:25:02Z",
-    "gathered": "2026-10-26T06:44:48Z"
-   },
-   {
-    "h": "CTA Green, Pink line reroutes extended two days",
-    "b": "Lake Street bridge repairs over the Chicago River are two days behind schedule, so Green and Pink line trains won't resume normal routes until Wednesday at 4 a.m., CDOT said Sunday.",
-    "date": "2026-10-25",
-    "url": "https://www.wbez.org/transportation/2026/10/25/lake-street-bridge-closure-cta-green-pink-lines-reroute",
-    "gathered": "2026-10-25T19:52:04Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 57,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 14:53 pm CDT"
+    "obs": "26 Oct 18:53 pm CDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 60,
-     "text": "Mostly sunny, with a high near 60. North northeast wind around 15 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 56,
-     "text": "Partly cloudy, with a steady temperature around 56. North northeast wind 10 to 15 mph becoming east after midnight. "
+     "temp": 55,
+     "text": "Partly cloudy, with a low around 55. North northeast wind 10 to 15 mph becoming east after midnight. "
     },
     {
      "name": "Tuesday",
@@ -225,7 +197,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Partly cloudy, with a low around 59."
+     "text": "Partly cloudy, with a low around 59. South wind around 10 mph, with gusts as high as 15 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 74,
+     "text": "A 20 percent chance of showers before 1pm.  Partly sunny, with a high near 74."
     }
    ]
   },
@@ -241,7 +219,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -254,13 +232,6 @@
     "published": "2026-10-26T13:49:47Z",
     "updated": "2026-10-26T13:50:01Z",
     "gathered": "2026-10-26T14:28:24Z"
-   },
-   {
-    "h": "Arts in the Dark parade draws 100,000",
-    "b": "The 12th annual Arts in the Dark Halloween Parade stepped off on Balbo Street Saturday with a fire-breathing dragon, giant alebrijes and a 60-foot glow worm, drawing an estimated 100,000 attendees.",
-    "date": "2026-10-25",
-    "url": "https://www.wbez.org/art/2026/10/25/arts-in-the-dark-halloween-parade",
-    "gathered": "2026-10-25T19:52:04Z"
    }
   ]
  },
@@ -273,17 +244,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 56,
     "cond": "A Few Clouds",
-    "obs": "26 Oct 12:58 pm MDT"
+    "obs": "26 Oct 16:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 55,
-     "text": "Mostly sunny, with a high near 55. East northeast wind 3 to 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -312,7 +277,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40."
+     "text": "Mostly clear, with a low around 40. East wind 5 to 7 mph becoming calm  in the evening. Winds could gust as high as 15 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 69,
+     "text": "Mostly sunny, with a high near 69."
     }
    ]
   },
@@ -328,7 +299,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -347,7 +318,7 @@
     "title": "Walter Koenig, Ensign Chekov on original 'Star Trek' series, dies at 90",
     "url": "https://laist.com/news/arts-and-entertainment/walter-koenig-ensign-chekov-on-original-star-trek-series-dies-at-90",
     "published": "2026-10-26T17:39:32Z",
-    "updated": "2026-10-26T17:50:52Z",
+    "updated": "2026-10-26T20:10:43Z",
     "gathered": "2026-10-26T20:03:43Z"
    },
    {
@@ -360,34 +331,11 @@
     "published": "2026-10-26T18:31:34Z",
     "updated": "2026-10-26T18:40:34Z",
     "gathered": "2026-10-26T20:03:43Z"
-   },
-   {
-    "h": "California election officials rattled by DOJ demand",
-    "b": "County registrars are confused and frustrated by Justice Department letters, sent Friday, demanding they sequester ballots it believes went to noncitizens and seeking Social Security numbers on roughly 20,000 voters.",
-    "date": "2026-10-25",
-    "url": "https://laist.com/news/politics/california-election-officials-frustrated-rattled-by-doj-demand-to-sequester-noncitizen-ballots",
-    "gathered": "2026-10-25T19:52:04Z"
-   },
-   {
-    "h": "100 Houdini items go up for auction in LA",
-    "b": "A collection built over five decades goes up for auction, including Houdini's handcuffs, a signed portrait of him in chains and a pocket watch from his wife Bess.",
-    "date": "2026-10-25",
-    "publisher": "LAist",
-    "title": "100 items from renowned Houdini collection go up for auction in LA",
-    "url": "https://laist.com/news/los-angeles-activities/houdini-collection-auction-los-angeles",
-    "published": "2026-10-25T12:00:00Z",
-    "gathered": "2026-10-25T12:41:40Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 80,
-     "text": "Sunny, with a high near 80. Southwest wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -410,13 +358,19 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 76,
-     "text": "Patchy fog before 11am.  Otherwise, partly sunny, with a high near 76. East wind around 5 mph becoming south southwest in the afternoon. "
+     "text": "Patchy fog before 11am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 76. East wind around 5 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly cloudy, with a low around 57."
+     "text": "Mostly cloudy, with a low around 57. South southwest wind around 5 mph becoming calm  in the evening. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 74,
+     "text": "Mostly cloudy, with a high near 74."
     }
    ]
   },
@@ -432,7 +386,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -450,7 +404,7 @@
     "publisher": "Gothamist",
     "title": "Pressure grows on Mamdani to reform admissions to NYC specialized high schools",
     "url": "https://gothamist.com/news/pressure-grows-on-mamdani-to-reform-admissions-to-nyc-specialized-high-schools",
-    "published": "2026-10-26T20:03:21Z",
+    "published": "2026-10-26T20:03:00Z",
     "gathered": "2026-10-26T20:03:43Z"
    },
    {
@@ -474,58 +428,21 @@
     "gathered": "2026-10-26T10:16:57Z"
    },
    {
-    "h": "State urges New Yorkers to protect bats",
-    "b": "With Bat Week under way, New York officials are urging outdoor adventurers to stay out of caves and mines this winter to avoid waking hibernating bats so they survive to spring.",
-    "date": "2026-10-25",
+    "h": "Judge halts overnight work at Chinatown jail site",
+    "b": "A Manhattan Supreme Court judge temporarily halted after-hours construction on the new Chinatown jail after residents sued over sleep disruption, another setback for the city's plan to replace Rikers Island.",
+    "date": "2026-10-26",
     "publisher": "Gothamist",
-    "title": "Why New Yorkers should care about bats beyond spooky season",
-    "url": "https://gothamist.com/news/why-new-yorkers-should-care-about-bats-beyond-spooky-season",
-    "published": "2026-10-25T22:44:00Z",
-    "gathered": "2026-10-25T22:44:10Z"
-   },
-   {
-    "h": "Serbians wait hours to vote at NYC consulate",
-    "b": "Serbian immigrants from across the Northeast lined up down West 45th Street on Sunday to vote at the consulate near Bryant Park in the Balkan nation's parliamentary election.",
-    "date": "2026-10-25",
-    "publisher": "Gothamist",
-    "title": "Serbians forced to wait hours to vote at NYC consulate as Balkan nation holds election",
-    "url": "https://gothamist.com/news/serbians-forced-to-wait-hours-to-vote-at-nyc-consulate-as-balkan-nation-holds-election",
-    "published": "2026-10-25T20:59:00Z",
-    "gathered": "2026-10-25T19:52:04Z"
-   },
-   {
-    "h": "Ex-NYPD detective in GWB killing out on bail",
-    "b": "Victor Romero, 62, charged with manslaughter in the shooting death of ConEd worker Koran Irvine on the George Washington Bridge, posted $1 million bail.",
-    "date": "2026-10-25",
-    "publisher": "Gothamist",
-    "title": "Retired NYPD detective charged in George Washington Bridge killing out on $1M bail",
-    "url": "https://gothamist.com/news/retired-nypd-detective-charged-in-george-washington-bridge-killing-out-on-1m-bail",
-    "published": "2026-10-25T14:25:09Z",
-    "gathered": "2026-10-25T17:10:32Z"
-   },
-   {
-    "h": "Rural hospital cuts become NY governor race issue",
-    "b": "Candidates for governor are trading blame as rural hospitals face cuts, including Albany Med's plan to curtail services at Columbia Memorial Health in Hudson.",
-    "date": "2026-10-25",
-    "publisher": "Gothamist",
-    "title": "Cuts to rural healthcare become key issue for upstate votes in race for NY governor",
-    "url": "https://gothamist.com/news/cuts-to-rural-healthcare-become-key-issue-for-upstate-votes-in-race-for-ny-governor",
-    "published": "2026-10-25T12:00:54Z",
-    "gathered": "2026-10-25T12:41:40Z"
-   },
-   {
-    "h": "NY Archdiocese agrees to pay $800M to abuse survivors",
-    "b": "The Archdiocese of New York agreed to pay $800 million to 1,300 people who say they were sexually abused by clergy, lay leaders and teachers. The deal is set to be signed the first week of November.",
-    "date": "2026-10-25",
-    "url": "https://www.aljazeera.com/news/2026/10/25/new-york-archdiocese-agrees-to-pay-800m-to-1300-sexual-abuse-survivors",
-    "gathered": "2026-10-25T06:35:44Z"
+    "title": "Judge temporarily halts overnight construction at NYC’s Chinatown jail",
+    "url": "https://gothamist.com/news/judge-temporarily-halts-overnight-construction-at-nycs-chinatown-jail",
+    "published": "2026-10-26T23:08:00Z",
+    "gathered": "2026-10-26T23:59:43Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 64,
     "cond": "Fair",
-    "obs": "26 Oct 15:51 pm EDT"
+    "obs": "26 Oct 19:51 pm EDT"
    },
    "periods": [
     {
@@ -578,7 +495,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -600,16 +517,6 @@
     "url": "https://gothamist.com/news/in-east-brooklyn-aging-nycha-homes-get-a-636m-upgrade",
     "published": "2026-10-26T10:30:56Z",
     "gathered": "2026-10-26T14:28:24Z"
-   },
-   {
-    "h": "NYC suicide deaths decline",
-    "b": "Suicide deaths in New York City fell from a peak of 601 in 2022 to 535 in 2024, health department data shows, though inequities persist across groups.",
-    "date": "2026-10-25",
-    "publisher": "Gothamist",
-    "title": "Suicides decline in NYC, but inequities persist across groups",
-    "url": "https://gothamist.com/news/suicides-decline-in-nyc-but-inequities-persist-across-groups",
-    "published": "2026-10-25T14:00:56Z",
-    "gathered": "2026-10-25T17:10:32Z"
    }
   ]
  },
@@ -628,8 +535,8 @@
     "publisher": "The Local France",
     "title": "Protests in France: What to expect on October 31st",
     "url": "https://www.thelocal.fr/20261026/protests-in-france-what-to-expect-on-october-31st",
-    "published": "2026-10-26T15:50:40Z",
-    "updated": "2026-10-26T15:50:42Z",
+    "published": "2026-10-26T16:50:40Z",
+    "updated": "2026-10-26T16:50:42Z",
     "gathered": "2026-10-26T16:17:54Z"
    },
    {
@@ -639,8 +546,8 @@
     "publisher": "The Local France",
     "title": "Paris extends summer café terraces for another month",
     "url": "https://www.thelocal.fr/20261026/paris-extends-summer-cafe-terraces-for-another-month",
-    "published": "2026-10-26T13:25:58Z",
-    "updated": "2026-10-26T13:26:00Z",
+    "published": "2026-10-26T14:25:58Z",
+    "updated": "2026-10-26T14:26:00Z",
     "gathered": "2026-10-26T14:28:24Z"
    },
    {
@@ -650,8 +557,8 @@
     "publisher": "The Local France",
     "title": "French rail workers join November strike",
     "url": "https://www.thelocal.fr/20261026/french-rail-workers-join-november-strike",
-    "published": "2026-10-26T10:57:34Z",
-    "updated": "2026-10-26T10:57:36Z",
+    "published": "2026-10-26T11:57:34Z",
+    "updated": "2026-10-26T11:57:36Z",
     "gathered": "2026-10-26T14:28:24Z"
    },
    {
@@ -661,16 +568,9 @@
     "publisher": "The Local France",
     "title": "France's PM and key ministers to meet student leaders on Monday",
     "url": "https://www.thelocal.fr/20261026/frances-pm-and-key-ministers-to-meet-student-leaders-monday",
-    "published": "2026-10-26T07:58:58Z",
-    "updated": "2026-10-26T07:59:00Z",
+    "published": "2026-10-26T08:58:58Z",
+    "updated": "2026-10-26T08:59:00Z",
     "gathered": "2026-10-26T10:16:57Z"
-   },
-   {
-    "h": "Storms Boelo and Austen batter Europe",
-    "b": "Nearly 60,000 homes in France, 10,000 in Germany and 82,000 in Britain lost power as two storms hit within 24 hours, cancelling hundreds of flights. At Austen's peak, 288,000 French homes were without power.",
-    "date": "2026-10-25",
-    "url": "https://www.thelocal.fr/20261025/storms-batter-europe-hitting-power-supplies-flights-and-phones",
-    "gathered": "2026-10-25T17:10:32Z"
    }
   ],
   "weather": {
@@ -689,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "goodnews": []
  },
  {
@@ -699,6 +599,27 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Council moves to restore fire overtime",
+    "b": "Seattle City Council members are coordinating to restore about $7 million in Seattle Fire Department overtime that Mayor Wilson proposed cutting, among a flood of budget adds.",
+    "date": "2026-10-26",
+    "publisher": "KUOW",
+    "title": "Seattle City Council wants to restore fire department overtime, among flood of budget adds",
+    "url": "https://www.kuow.org/governing/2026-10-26/seattle-city-council-wants-to-restore-fire-department-overtime-among-flood-of-budget-adds",
+    "published": "2026-10-26T23:25:22Z",
+    "updated": "2026-10-26T23:25:22Z",
+    "gathered": "2026-10-26T23:59:43Z"
+   },
+   {
+    "h": "DOJ asks Washington to set aside 400 ballots",
+    "b": "The Justice Department asked the state to hold ballots from 400 people it says may be noncitizens until their eligibility is confirmed. Secretary of State Steve Hobbs is reviewing the demand.",
+    "date": "2026-10-26",
+    "publisher": "PBS NewsHour",
+    "title": "Trump administration asks Washington state to set aside ballots from 400 voters it says may be noncitizens",
+    "url": "https://www.pbs.org/newshour/politics/trump-administration-asks-washington-state-to-set-aside-ballots-from-400-voters-it-says-may-be-noncitizens",
+    "published": "2026-10-26T21:52:57Z",
+    "gathered": "2026-10-26T23:59:43Z"
+   },
    {
     "h": "Microsoft offers buyouts to a quarter of workforce",
     "b": "The Redmond company is offering voluntary exit packages to about 60,000 employees at the vice president level and below, comparable to its standard severance, as it further reduces headcount.",
@@ -721,12 +642,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 55,
-     "text": "A 30 percent chance of rain after 5pm.  Partly sunny, with a high near 55. Light northwest wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -756,6 +671,12 @@
      "kind": "low",
      "temp": 42,
      "text": "Rain.  Low around 42. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 51,
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 51. Chance of precipitation is 70%."
     }
    ]
   },
@@ -771,7 +692,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-26T22:13:00Z",
+  "updatedAt": "2026-10-27T01:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
