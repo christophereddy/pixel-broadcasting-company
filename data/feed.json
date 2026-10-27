@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T07:18:00Z",
+ "updatedAt": "2026-10-27T10:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -58,11 +58,7 @@
    "h": "Judge: DOJ illegally fired Comey's daughter",
    "b": "A federal judge ruled Monday that the Justice Department unlawfully fired the daughter of former FBI director Comey, a longtime Manhattan prosecutor who argued she was dismissed because of her father.",
    "date": "2026-10-26",
-   "publisher": "KUOW",
-   "title": "Judge says DOJ illegally fired the daughter of former FBI director Comey",
    "url": "https://www.kuow.org/npr-news/2026-10-26/judge-says-doj-illegally-fired-the-daughter-of-former-fbi-director-comey",
-   "published": "2026-10-26T18:38:01Z",
-   "updated": "2026-10-26T18:40:33Z",
    "gathered": "2026-10-26T20:03:43Z"
   },
   {
@@ -194,6 +190,28 @@
  ],
  "sports": [
   {
+   "h": "Jay-Z to headline Super Bowl halftime show",
+   "b": "The NFL, Apple Music and Roc Nation announced Monday night that Jay-Z will perform at halftime on Feb. 14 at SoFi Stadium in Inglewood, California.",
+   "date": "2026-10-26",
+   "publisher": "KUOW",
+   "title": "Jay-Z picks himself to headline the Super Bowl halftime show in Southern California",
+   "url": "https://www.kuow.org/npr-news/2026-10-26/jay-z-picks-himself-to-headline-the-super-bowl-halftime-show-in-southern-california",
+   "published": "2026-10-27T05:46:18Z",
+   "updated": "2026-10-27T05:51:04Z",
+   "gathered": "2026-10-27T07:21:47Z"
+  },
+  {
+   "h": "Harry Kane wins Ballon d'Or",
+   "b": "Kane is the first Englishman in 25 years to win the award after scoring 73 goals for club and country last season, setting records for Bayern Munich and captaining England to third at the World Cup.",
+   "date": "2026-10-26",
+   "publisher": "KUOW",
+   "title": "Harry Kane becomes first Englishman in 25 years to win Ballon d'Or",
+   "url": "https://www.kuow.org/npr-news/2026-10-26/harry-kane-becomes-first-englishman-in-25-years-to-win-ballon-dor",
+   "published": "2026-10-27T06:30:54Z",
+   "updated": "2026-10-27T06:37:32Z",
+   "gathered": "2026-10-27T07:21:47Z"
+  },
+  {
    "h": "Brewers rout Rays 10-1 in World Series Game 3",
    "b": "Jackson Chourio led a 16-hit attack as the Brewers improved to 7-0 in the NLCS and World Series. A Game 4 win would make them the first team to go 8-0 in those rounds.",
    "date": "2026-10-26",
@@ -297,46 +315,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "27 Oct 00:51 am EDT"
+   "obs": "27 Oct 02:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 54,
-    "text": "Mostly clear, with a low around 54. North wind around 10 mph. "
-   },
-   {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 62,
-    "text": "Sunny, with a high near 62. North wind 7 to 11 mph. "
+    "temp": 60,
+    "text": "Sunny, with a high near 60. North wind 7 to 11 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 44,
-    "text": "Mostly clear, with a low around 44. Northeast wind around 6 mph. "
+    "temp": 50,
+    "text": "Mostly clear, with a low around 50. North wind around 6 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 63,
-    "text": "Mostly sunny, with a high near 63. Light and variable wind becoming south 5 to 7 mph in the afternoon. "
+    "temp": 62,
+    "text": "Increasing clouds, with a high near 62. Light and variable wind becoming southeast 5 to 7 mph in the afternoon. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 54,
-    "text": "Mostly cloudy, with a low around 54. South wind 5 to 7 mph becoming southwest after midnight. "
+    "temp": 53,
+    "text": "Cloudy during the early evening, then gradual clearing, with a low around 53. South wind 5 to 7 mph becoming light and variable  after midnight. "
    },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 68,
     "text": "Sunny, with a high near 68."
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 58,
+    "text": "Mostly clear, with a low around 58."
    }
   ]
  },
