@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T04:12:00Z",
+ "updatedAt": "2026-10-27T07:18:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -75,6 +75,28 @@
  ],
  "international": [
   {
+   "h": "Israel votes as Netanyahu faces tough test",
+   "b": "Al Jazeera's live coverage: Israelis vote in a high-stakes election as Prime Minister Benjamin Netanyahu faces a tough battle.",
+   "date": "2026-10-27",
+   "place": "Israel",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Netanyahu faces tough battle as Israel votes in high-stakes election",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls",
+   "gathered": "2026-10-27T05:24:04Z"
+  },
+  {
+   "h": "Russia pauses Kherson strikes for Oleshky truce",
+   "b": "A localised ceasefire took effect Tuesday ahead of a US-led humanitarian mission to the Russian-occupied town of Oleshky, which faces acute shortages of food and medicine, the Russian Defence Ministry said.",
+   "date": "2026-10-27",
+   "place": "Kherson",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Russia halts strikes on Ukraine’s Kherson as Oleshky ceasefire takes effect",
+   "url": "https://www.aljazeera.com/news/2026/10/27/russia-halts-strikes-on-ukraines-kherson-as-oleshky-ceasefire-takes-effect",
+   "gathered": "2026-10-27T05:24:04Z"
+  },
+  {
    "h": "Pope Leo to proceed with Latin America trip",
    "b": "After a post-surgery checkup, the Vatican confirmed the pope will keep his ambitious trip program unchanged. His physician said there is no medical reason to prevent the trip.",
    "date": "2026-10-26",
@@ -103,8 +125,6 @@
    "date": "2026-10-26",
    "place": "Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Saudi-led coalition says it struck Houthi missile facilities",
    "url": "https://www.aljazeera.com/news/2026/10/26/saudi-led-coalition-says-it-struck-houthi-missile-facilities",
    "gathered": "2026-10-26T14:28:24Z"
   },
@@ -118,13 +138,15 @@
    "gathered": "2026-10-26T06:44:48Z"
   },
   {
-   "h": "Bolsonaro rejects Lula's Brazil election win",
-   "b": "Lula was declared winner with 51.8% of the vote, but Flávio Bolsonaro refused to concede and asked for the results to be annulled after a chaotic evening at some polling places following a last-minute two-hour voting extension.",
+   "h": "Bolsonaro's party accepts Brazil election result",
+   "b": "Liberal Party leader Valdemar Costa Neto said the party recognises Lula's victory but wants issues raised about the vote clarified. Flávio Bolsonaro, who lost by more than 4.4 million votes, has yet to formally concede.",
    "date": "2026-10-26",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
-   "url": "https://www.pbs.org/newshour/world/incumbent-lula-is-declared-winner-of-brazils-election-as-bolsonaro-rejects-results",
-   "gathered": "2026-10-26T14:28:24Z"
+   "publisher": "Al Jazeera",
+   "title": "Bolsonaro’s party accepts Brazil election after Trump calls vote ‘rigged’",
+   "url": "https://www.aljazeera.com/news/2026/10/27/bolsonaros-party-accepts-result-after-trump-suggests-vote-was",
+   "gathered": "2026-10-27T05:24:04Z"
   },
   {
    "h": "Jordan arrests three suspects in church attack",
@@ -172,6 +194,15 @@
  ],
  "sports": [
   {
+   "h": "Brewers rout Rays 10-1 in World Series Game 3",
+   "b": "Jackson Chourio led a 16-hit attack as Milwaukee improved to 7-0 in the NLCS and World Series. A Game 4 win would make the Brewers the first team to go 8-0 in those rounds.",
+   "date": "2026-10-26",
+   "publisher": "CBS Sports",
+   "title": "Jackson Chourio just showing off now as the face of the Brewers as Crew creeps closer to World Series title",
+   "url": "https://www.cbssports.com/mlb/news/jackson-chourio-brewers-world-series-face-of-the-franchise/",
+   "gathered": "2026-10-27T05:24:04Z"
+  },
+  {
    "h": "Ohio State stays No. 1 as upsets shake rankings",
    "b": "Ohio State remains atop CBS Sports' Power Rankings over Miami. Top-10 teams have lost 11 times in three weeks, tied for the most in any three-week regular-season stretch since the AP poll began in 1936.",
    "date": "2026-10-26",
@@ -217,8 +248,6 @@
    "h": "WNBA sets Finals Game 6 for Thursday lunchtime",
    "b": "Game 6 will be played at State Farm Arena at 12:30 p.m. ET on Thursday, Oct. 29, a decision announced just hours before Game 5 tipped off.",
    "date": "2026-10-26",
-   "publisher": "CBS Sports",
-   "title": "WNBA Finals' Game 6 scheduling debacle is an embarrassing end to a historic season",
    "url": "https://www.cbssports.com/wnba/news/wnba-finals-game-6-venue-schedule-embarrassing-dream-valkyries/",
    "gathered": "2026-10-26T23:59:43Z"
   }
@@ -268,16 +297,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 63,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "26 Oct 20:51 pm EDT"
+   "obs": "27 Oct 00:51 am EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 54,
-    "text": "Mostly clear, with a low around 54. West wind around 10 mph becoming north after midnight. "
+    "text": "Mostly clear, with a low around 54. North wind around 10 mph. "
    },
    {
     "name": "Tuesday",

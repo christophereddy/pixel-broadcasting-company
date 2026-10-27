@@ -20,13 +20,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 57,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 20:52 pm EDT"
+    "obs": "27 Oct 00:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 49,
      "text": "Partly cloudy, with a low around 49. Calm wind. "
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,46 +96,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 57,
     "cond": "Partly Cloudy",
-    "obs": "26 Oct 20:54 pm EDT"
+    "obs": "27 Oct 00:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. North wind 7 to 9 mph, with gusts as high as 21 mph. "
+     "temp": 44,
+     "text": "Mostly clear, with a low around 44. North wind around 8 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 53,
-     "text": "Sunny, with a high near 53. North wind 6 to 9 mph. "
+     "temp": 54,
+     "text": "Sunny, with a high near 54. North wind 5 to 7 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Clear, with a low around 34. Light northwest wind. "
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39. Light and variable wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 57,
-     "text": "Sunny, with a high near 57. Light and variable wind. "
+     "text": "Increasing clouds, with a high near 57. Light and variable wind. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43. Southwest wind around 5 mph. "
+     "temp": 45,
+     "text": "Mostly clear, with a low around 45. Southwest wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 67,
-     "text": "Sunny, with a high near 67. Southwest wind 7 to 10 mph. "
+     "text": "Sunny, with a high near 67. Southwest wind 7 to 11 mph. "
     }
    ]
   },
@@ -151,7 +151,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -166,20 +166,20 @@
    "now": {
     "temp": 57,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 19:53 pm CDT"
+    "obs": "26 Oct 23:53 pm CDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 55,
-     "text": "Partly cloudy, with a low around 55. North northeast wind 10 to 15 mph becoming east after midnight. "
+     "temp": 54,
+     "text": "Mostly cloudy, with a low around 54. East southeast wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 65,
-     "text": "Partly sunny, with a high near 65. East southeast wind 5 to 10 mph. "
+     "text": "Partly sunny, with a high near 65. Southeast wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -219,7 +219,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -244,16 +244,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Partly Cloudy",
-    "obs": "26 Oct 18:58 pm MDT"
+    "temp": 43,
+    "cond": "A Few Clouds",
+    "obs": "26 Oct 21:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Patchy fog after midnight.  Otherwise, increasing clouds, with a low around 39. East northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Patchy fog after midnight.  Otherwise, mostly cloudy, with a low around 39. Calm wind. "
     },
     {
      "name": "Tuesday",
@@ -299,7 +299,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -340,7 +340,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly clear, with a low around 57. Southwest wind 5 to 10 mph becoming light and variable  in the evening. "
+     "text": "Mostly clear, with a low around 57. Southwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Tuesday",
@@ -386,7 +386,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -440,16 +440,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "26 Oct 20:51 pm EDT"
+    "obs": "27 Oct 00:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. West wind around 10 mph becoming north after midnight. "
+     "text": "Mostly clear, with a low around 54. North wind around 10 mph. "
     },
     {
      "name": "Tuesday",
@@ -495,7 +495,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -589,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "goodnews": []
  },
  {
@@ -635,11 +635,7 @@
     "h": "Microsoft offers buyouts to a quarter of workforce",
     "b": "The Redmond company is offering voluntary exit packages to about 60,000 employees at the vice president level and below, comparable to its standard severance, as it further reduces headcount.",
     "date": "2026-10-26",
-    "publisher": "KUOW",
-    "title": "Microsoft offers voluntary buyouts to a quarter of its workforce",
     "url": "https://www.kuow.org/technology/2026-10-26/microsoft-offers-voluntary-buyouts-to-a-quarter-of-its-workforce",
-    "published": "2026-10-26T17:16:19Z",
-    "updated": "2026-10-26T17:48:31Z",
     "gathered": "2026-10-26T20:03:43Z"
    },
    {
@@ -656,8 +652,8 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 47,
-     "text": "Rain likely, mainly between 2am and 3am.  Mostly cloudy, with a low around 47. Calm wind becoming south southwest around 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 50,
+     "text": "Rain likely, mainly between 2am and 3am.  Mostly cloudy, with a steady temperature around 50. Calm wind becoming south southwest around 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tuesday",
@@ -703,7 +699,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T04:12:00Z",
+  "updatedAt": "2026-10-27T07:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
