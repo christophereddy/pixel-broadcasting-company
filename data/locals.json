@@ -20,22 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 74,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 11:52 am EDT"
+    "obs": "27 Oct 16:52 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 75,
-     "text": "Sunny, with a high near 75. East wind around 5 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 51,
-     "text": "Mostly clear, with a low around 51. East wind around 5 mph. "
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52. East wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -46,8 +40,8 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. East wind around 5 mph. "
+     "temp": 55,
+     "text": "Partly cloudy, with a low around 55. East wind around 5 mph. "
     },
     {
      "name": "Thursday",
@@ -58,8 +52,14 @@
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a low around 55."
+     "temp": 54,
+     "text": "Mostly clear, with a low around 54. East wind around 5 mph becoming calm. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 78,
+     "text": "Sunny, with a high near 78."
     }
    ]
   },
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,6 +86,15 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Farwell's twin testifies against him in Birchmore trial",
+    "b": "William Farwell testified in the federal trial of his brother Matthew, accused of killing 23-year-old Sandra Birchmore in her Canton apartment in 2021 and staging it as a suicide. Matthew Farwell has pleaded not guilty.",
+    "date": "2026-10-27",
+    "publisher": "WBUR",
+    "title": "Matthew Farwell’s twin testifies against his brother over the death of Sandra Birchmore",
+    "url": "https://www.wbur.org/news/2026/10/27/matthew-farwell-trial-william-sandra-birchmore-death",
+    "gathered": "2026-10-27T21:26:22Z"
+   },
    {
     "h": "Mass. voters to decide on 2024 gun law",
     "b": "Question 9 asks whether to uphold a law requiring all firearms to be serialized and registered with the state and broadening the ban on 'assault-style' guns. Opponents forced the referendum by petition.",
@@ -98,44 +107,44 @@
    "now": {
     "temp": 51,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 11:54 am EDT"
+    "obs": "27 Oct 16:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Sunny, with a high near 56. Northeast wind around 9 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 38,
-     "text": "Clear, with a low around 38. South wind 5 to 9 mph becoming light and variable  after midnight. "
+     "text": "Mostly clear, with a low around 38. Southeast wind 5 to 8 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 57,
-     "text": "Increasing clouds, with a high near 57. Northwest wind 6 to 9 mph becoming south in the afternoon. "
+     "temp": 56,
+     "text": "Increasing clouds, with a high near 56. Northwest wind 6 to 8 mph becoming south in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Partly cloudy, with a low around 43. Southwest wind around 9 mph. "
+     "text": "Mostly clear, with a low around 43. Southwest wind around 9 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 67,
-     "text": "Sunny, with a high near 67. Southwest wind 7 to 11 mph. "
+     "text": "Sunny, with a high near 67. Southwest wind 8 to 11 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Mostly clear, with a low around 53. Southwest wind around 8 mph. "
+     "temp": 55,
+     "text": "Mostly clear, with a low around 55. Southwest wind 7 to 9 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 69,
+     "text": "Sunny, with a high near 69. West wind 7 to 11 mph. "
     }
    ]
   },
@@ -151,7 +160,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -164,46 +173,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "Mostly Cloudy",
-    "obs": "27 Oct 10:53 am CDT"
+    "temp": 69,
+    "cond": "Overcast",
+    "obs": "27 Oct 15:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 65,
-     "text": "Mostly cloudy, with a high near 65. Southeast wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, with a low around 55. South wind 5 to 10 mph. "
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 55. Southeast wind 5 to 10 mph becoming south southwest after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 69,
-     "text": "Mostly sunny, with a high near 69. South wind 5 to 10 mph. "
+     "temp": 72,
+     "text": "Sunny, with a high near 72. South southwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 60,
-     "text": "Partly cloudy, with a low around 60. South wind 10 to 15 mph. "
+     "temp": 61,
+     "text": "A 20 percent chance of showers after 1am.  Mostly clear, with a low around 61. South wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 72,
-     "text": "A 30 percent chance of showers.  Partly sunny, with a high near 72. South southwest wind 10 to 15 mph. "
+     "temp": 66,
+     "text": "A 30 percent chance of showers before 1pm.  Mostly sunny, with a high near 66. South southwest wind 10 to 15 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly cloudy, with a low around 54."
+     "text": "Mostly clear, with a low around 54. North northwest wind around 5 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 62,
+     "text": "A 20 percent chance of showers after 1pm.  Partly sunny, with a high near 62."
     }
    ]
   },
@@ -219,9 +228,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "North Lawndale mural park to open next summer",
+    "b": "West Edge Arts, with a community center, garden and performance space, will open on a former auto parts shop site on West Ogden Avenue, featuring artists including Dorian Sylvain and Bob Faust.",
+    "date": "2026-10-27",
+    "publisher": "WBEZ",
+    "title": "A new West Side mural park is set to open next summer, with a community center, garden and performance space",
+    "url": "https://www.wbez.org/arts/2026/10/27/west-edge-arts-north-lawndale-mural-park-public-art-bob-faust-dorian-sylvain",
+    "published": "2026-10-27T20:49:42Z",
+    "updated": "2026-10-27T20:49:42Z",
+    "gathered": "2026-10-27T21:26:22Z"
+   },
    {
     "h": "Soul Train Awards come home to Chicago",
     "b": "For the first time in its nearly 40-year history, the ceremony will be held in Chicago, at the Harris Theater on Nov. 5. Chaka Khan will receive the Classic Soul Honor.",
@@ -237,11 +257,7 @@
     "h": "Music fans rally for Waco Brothers' Schlabowske",
     "b": "Music fans are rallying to support Dean Schlabowske of the Waco Brothers, who faces six-figure medical costs after an acute myeloid leukemia diagnosis.",
     "date": "2026-10-26",
-    "publisher": "WBEZ",
-    "title": "Music fans rally to support Dean Schlabowske of the Waco Brothers after leukemia diagnosis",
     "url": "https://www.wbez.org/music/2026/10/26/music-fans-rally-to-support-dean-schlabowske-of-the-waco-brothers-after-leukemia-diagnosis",
-    "published": "2026-10-26T13:49:47Z",
-    "updated": "2026-10-26T13:50:01Z",
     "gathered": "2026-10-26T14:28:24Z"
    }
   ]
@@ -255,16 +271,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 66,
     "cond": "Partly Cloudy",
-    "obs": "27 Oct 09:58 am MDT"
+    "obs": "27 Oct 14:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 66,
-     "text": "Patchy fog before 11am.  Otherwise, sunny, with a high near 66. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. Northeast wind around 7 mph. "
     },
     {
      "name": "Tonight",
@@ -281,20 +297,20 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. East northeast wind 5 to 7 mph becoming calm  in the evening. Winds could gust as high as 18 mph. "
+     "temp": 40,
+     "text": "Mostly clear, with a low around 40. Northeast wind 5 to 8 mph becoming calm  in the evening. Winds could gust as high as 17 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 69,
-     "text": "Mostly sunny, with a high near 69. Calm wind becoming east around 6 mph in the afternoon. "
+     "temp": 65,
+     "text": "Mostly sunny, with a high near 65. Calm wind becoming east around 6 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly cloudy, with a low around 43."
+     "temp": 42,
+     "text": "Partly cloudy, with a low around 42."
     }
    ]
   },
@@ -310,7 +326,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -321,6 +337,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Court won't block California counting 20,000 ballots",
+    "b": "A 2-1 appeals panel declined to stop California from counting about 20,000 ballots the Justice Department says likely belong to noncitizens, setting up another hearing Tuesday before the Nov. 3 election.",
+    "date": "2026-10-27",
+    "publisher": "LAist",
+    "title": "Appeals court declines to block California from counting 20,000 disputed ballots",
+    "url": "https://laist.com/news/politics/appeals-court-declines-block-california-from-counting-20-000-disputed-ballots",
+    "published": "2026-10-27T19:11:43Z",
+    "updated": "2026-10-27T19:11:43Z",
+    "gathered": "2026-10-27T21:26:22Z"
+   },
    {
     "h": "Childcare costs push families into card debt",
     "b": "In LA County, childcare eats up nearly 20% of median household income, and families say they're shifting more of the cost onto credit cards.",
@@ -355,40 +382,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 77,
-     "text": "Sunny, with a high near 77. Southeast wind 5 to 10 mph becoming southwest in the afternoon. "
+     "text": "Mostly sunny, with a high near 77. Southwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Patchy fog after 11pm.  Otherwise, increasing clouds, with a low around 57. Southwest wind around 5 mph becoming east southeast after midnight. "
+     "temp": 58,
+     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 58. Southwest wind 5 to 10 mph becoming east southeast after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 76,
-     "text": "Patchy fog before 11am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 76. East wind around 5 mph becoming south southwest in the afternoon. "
+     "temp": 77,
+     "text": "Patchy fog before 11am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 77. Calm wind becoming south southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "Mostly cloudy, with a low around 57. South southwest wind around 5 mph becoming calm  in the evening. "
+     "temp": 59,
+     "text": "Mostly cloudy, with a low around 59. Southwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 74,
-     "text": "Partly sunny, with a high near 74. Calm wind becoming south southwest around 5 mph in the afternoon. "
+     "temp": 75,
+     "text": "Partly sunny, with a high near 75. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 60,
-     "text": "Mostly cloudy, with a low around 60."
+     "temp": 59,
+     "text": "A 20 percent chance of showers after 11pm.  Mostly cloudy, with a low around 59."
     }
    ]
   },
@@ -404,7 +431,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -415,6 +442,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "1 killed, 4 hurt in Elizabeth vigil shooting",
+    "b": "Shots rang out during a candlelight vigil in Elizabeth, New Jersey, Monday night. No arrests have been made, Union County prosecutors said.",
+    "date": "2026-10-27",
+    "publisher": "Gothamist",
+    "title": "1 killed, 4 others injured at Elizabeth, NJ vigil shooting",
+    "url": "https://gothamist.com/news/1-killed-4-others-injured-at-elizabeth-nj-vigil-shooting",
+    "published": "2026-10-27T18:45:02Z",
+    "gathered": "2026-10-27T21:26:22Z"
+   },
    {
     "h": "Man charged in Queens stabbings",
     "b": "Rashaun Donovan, 48, faces attempted murder charges after a night of violence at a Southeast Queens home that ended with an NYPD officer shooting and injuring a woman.",
@@ -476,58 +513,68 @@
     "gathered": "2026-10-26T10:16:57Z"
    },
    {
+    "h": "Ex-detective again faces murder charge in GWB killing",
+    "b": "A grand jury indicted Victor Romero, 62, on second-degree murder in the road-rage shooting death of Koran Irvine on the George Washington Bridge, after prosecutors had downgraded the charge to manslaughter.",
+    "date": "2026-10-27",
+    "publisher": "Gothamist",
+    "title": "Ex-NYPD officer again faces murder charge in George Washington Bridge shooting",
+    "url": "https://gothamist.com/news/ex-nypd-officer-again-faces-murder-charge-in-george-washington-bridge-shooting",
+    "published": "2026-10-27T20:35:00Z",
+    "gathered": "2026-10-27T21:26:22Z"
+   },
+   {
     "h": "Judge halts overnight work at Chinatown jail site",
     "b": "A Manhattan Supreme Court judge temporarily halted after-hours construction on the new Chinatown jail after residents sued over sleep disruption, another setback for the city's plan to replace Rikers Island.",
     "date": "2026-10-26",
     "publisher": "Gothamist",
     "title": "Judge temporarily halts overnight construction at NYC’s Chinatown jail",
     "url": "https://gothamist.com/news/judge-temporarily-halts-overnight-construction-at-nycs-chinatown-jail",
-    "published": "2026-10-26T23:08:00Z",
+    "published": "2026-10-27T20:12:00Z",
     "gathered": "2026-10-26T23:59:43Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 58,
     "cond": "Fair",
-    "obs": "27 Oct 11:51 am EDT"
+    "obs": "27 Oct 16:51 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. Northeast wind 7 to 9 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. North wind around 6 mph. "
+     "temp": 49,
+     "text": "Partly cloudy, with a low around 49. Northeast wind around 6 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 62,
-     "text": "Increasing clouds, with a high near 62. Light and variable wind becoming southeast 5 to 7 mph in the afternoon. "
+     "temp": 63,
+     "text": "Partly sunny, with a high near 63. Light and variable wind becoming south 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Cloudy during the early evening, then gradual clearing, with a low around 53. South wind 5 to 7 mph becoming light and variable  after midnight. "
+     "temp": 54,
+     "text": "Cloudy during the early evening, then gradual clearing, with a low around 54. South wind around 6 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. Light southwest wind increasing to 5 to 9 mph in the morning. "
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 68. Calm wind becoming southwest 5 to 9 mph in the morning. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58."
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59. Southwest wind 7 to 9 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 71,
+     "text": "Sunny, with a high near 71."
     }
    ]
   },
@@ -543,7 +590,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -665,7 +712,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "goodnews": []
  },
  {
@@ -683,7 +730,7 @@
     "title": "ICE arrests surge at Seattle-area Home Depot parking lots. Neighbors are on the lookout",
     "url": "https://www.kuow.org/immigration/2026-10-27/ice-arrests-surge-at-seattle-area-home-depot-parking-lots",
     "published": "2026-10-27T15:00:00Z",
-    "updated": "2026-10-27T15:00:04Z",
+    "updated": "2026-10-27T17:06:57Z",
     "gathered": "2026-10-27T16:47:44Z"
    },
    {
@@ -704,10 +751,7 @@
     "h": "DOJ asks Washington to set aside 400 ballots",
     "b": "The Justice Department asked the state to hold ballots from 400 people it says may be noncitizens until their eligibility is confirmed. Secretary of State Steve Hobbs is reviewing the demand.",
     "date": "2026-10-26",
-    "publisher": "PBS NewsHour",
-    "title": "Trump administration asks Washington state to set aside ballots from 400 voters it says may be noncitizens",
     "url": "https://www.pbs.org/newshour/politics/trump-administration-asks-washington-state-to-set-aside-ballots-from-400-voters-it-says-may-be-noncitizens",
-    "published": "2026-10-26T21:52:57Z",
     "gathered": "2026-10-26T23:59:43Z"
    },
    {
@@ -729,40 +773,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 56,
-     "text": "A 30 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a high near 56. Light south wind becoming south southwest 6 to 11 mph in the morning. "
+     "text": "A 40 percent chance of rain, mainly before 5pm.  Partly sunny, with a high near 56. South southwest wind 8 to 11 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "Rain.  Low around 45. South southwest wind 10 to 14 mph, with gusts as high as 22 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 46,
+     "text": "Rain, mainly before 1am.  Low around 46. South southwest wind 10 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 54,
-     "text": "Rain likely, mainly after noon.  Mostly cloudy, with a high near 54. South southwest wind around 9 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 49,
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a steady temperature around 49. South southwest wind 8 to 10 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Rain.  Low around 42. South southeast wind around 7 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A chance of rain before 9pm, then a chance of rain after 2am.  Mostly cloudy, with a low around 42. South southeast wind 5 to 7 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 52,
-     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 52. Southeast wind 3 to 5 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 30 percent chance of rain before 11am.  Mostly cloudy, with a high near 52. Light and variable wind. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Rain likely.  Mostly cloudy, with a low around 41. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 42,
+     "text": "A 50 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 42."
     }
    ]
   },
@@ -778,7 +822,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T19:12:00Z",
+  "updatedAt": "2026-10-27T22:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

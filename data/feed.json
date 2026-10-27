@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T19:12:00Z",
+ "updatedAt": "2026-10-27T22:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,6 +17,16 @@
   }
  ],
  "national": [
+  {
+   "h": "Ted Bundy tied to 1974 killing of Utah teen",
+   "b": "DNA evidence led investigators to conclude Bundy killed 17-year-old Melissa Ann Smith, a long-cold case, Summit County Attorney Margaret Olson said.",
+   "date": "2026-10-27",
+   "publisher": "PBS NewsHour",
+   "title": "Authorities say serial killer Ted Bundy is responsible for the 1974 murder of another Utah teenage girl",
+   "url": "https://www.pbs.org/newshour/nation/authorities-say-serial-killer-ted-bundy-is-responsible-for-the-1974-murder-of-another-utah-teenage-girl",
+   "published": "2026-10-27T20:01:11Z",
+   "gathered": "2026-10-27T21:26:22Z"
+  },
   {
    "h": "Oklahoma let oil firm linked to 1,000 incidents off",
    "b": "ProPublica found Oklahoma regulators allowed Citation Oil & Gas, linked to 1,000 pollution incidents and other violations, to restart operations without consequence after staff built a case to punish it.",
@@ -50,7 +60,6 @@
    "title": "Cybersecurity CEO Indicted for Allegedly Scamming Millions From Ransomware Victims",
    "url": "https://www.propublica.org/article/zohar-pinhasi-monstercloud-ransomware-indictment",
    "published": "2026-10-26T09:00:00Z",
-   "updated": "2026-10-26T09:00:13Z",
    "gathered": "2026-10-26T10:16:57Z"
   }
  ],
@@ -69,10 +78,7 @@
    "h": "Comey charged for a third time",
    "b": "Newly unsealed court documents revealed new Justice Department charges against former FBI director James Comey, a longtime Trump critic. Comey called it 'an appalling abuse' of the department.",
    "date": "2026-10-26",
-   "publisher": "PBS NewsHour",
-   "title": "Trump administration charges former FBI Director James Comey for the third time",
    "url": "https://www.pbs.org/newshour/politics/trump-administration-charges-former-fbi-director-james-comey-for-the-third-time",
-   "published": "2026-10-26T22:01:32Z",
    "gathered": "2026-10-26T23:59:43Z"
   },
   {
@@ -92,13 +98,33 @@
  ],
  "international": [
   {
+   "h": "Russia jails IT worker 13 years for Ukraine donation",
+   "b": "A court sentenced Yuri Belenkiy, a former IT director, to three years in prison followed by 10 in a strict-regime penal colony for donating money to Ukraine. He was detained after flying to Moscow last year.",
+   "date": "2026-10-27",
+   "place": "Moscow",
+   "tz": "Europe/Moscow",
+   "publisher": "Al Jazeera",
+   "title": "Russia jails IT worker for 13 years for donating money to Ukraine",
+   "url": "https://www.aljazeera.com/news/2026/10/27/russia-jails-it-worker-for-13-years-for-donating-money-to-ukraine",
+   "gathered": "2026-10-27T21:26:22Z"
+  },
+  {
+   "h": "Protesters storm pro-Vucic TV station in Serbia",
+   "b": "About 30 people entered the Informer TV newsroom Monday evening and surrounded its owner and editor-in-chief, Dragan Vucicevic, after Vucic's election defeat, live footage showed.",
+   "date": "2026-10-27",
+   "place": "Serbia",
+   "tz": "Europe/Belgrade",
+   "publisher": "Al Jazeera",
+   "title": "Protesters storm Serbian pro-Vucic TV station after his loss at polls",
+   "url": "https://www.aljazeera.com/news/2026/10/27/protesters-storm-serbian-pro-vucic-tv-station-after-his-loss-at-polls",
+   "gathered": "2026-10-27T21:26:22Z"
+  },
+  {
    "h": "Russian strikes hit Kyiv's South Bridge",
    "b": "Overnight attacks on Kyiv included 16 ballistic missiles and more than 280 drones, and Russian forces struck again as crews dealt with the aftermath, Zelenskyy said, calling it a serious escalation.",
    "date": "2026-10-27",
    "place": "Kyiv",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Russia targets Kyiv as Finnish, Norwegian leaders hold rare call with Putin",
    "url": "https://www.aljazeera.com/news/2026/10/27/russia-targets-kyiv-as-finnish-norwegian-leaders-hold-rare-call-with-putin",
    "gathered": "2026-10-27T16:47:44Z"
   },
@@ -108,8 +134,6 @@
    "date": "2026-10-27",
    "place": "DR Congo",
    "tz": "Africa/Kinshasa",
-   "publisher": "Al Jazeera",
-   "title": "Ebola cases in DR Congo surpass 10,000 in fastest-growing outbreak",
    "url": "https://www.aljazeera.com/news/2026/10/27/ebola-cases-in-dr-congo-surpass-10000-in-fastest-growing-outbreak",
    "gathered": "2026-10-27T16:47:44Z"
   },
@@ -141,15 +165,15 @@
    "gathered": "2026-10-27T13:22:01Z"
   },
   {
-   "h": "Israel election sees record turnout",
-   "b": "Al Jazeera's live coverage: Turnout is the highest in 50 years as voting continues, and Netanyahu is accused of 'fearmongering.'",
+   "h": "Anti-Netanyahu bloc leads Israel exit polls",
+   "b": "Al Jazeera's live coverage: Exit polls show the anti-Netanyahu bloc leading in Israel's election but short of a majority, after the highest turnout in 50 years.",
    "date": "2026-10-27",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
    "publisher": "Al Jazeera",
-   "title": "Netanyahu accused of ‘fearmongering’ as Israel election sees record turnout",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls",
-   "gathered": "2026-10-27T05:24:04Z"
+   "title": "Anti-Netanyahu bloc leads in Israel election, short of majority: Exit polls",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
+   "gathered": "2026-10-27T21:26:22Z"
   },
   {
    "h": "Russia pauses Kherson strikes for Oleshky truce",
@@ -197,13 +221,16 @@
    "gathered": "2026-10-26T06:44:48Z"
   },
   {
-   "h": "Bolsonaro's party accepts Brazil election result",
-   "b": "Liberal Party leader Valdemar Costa Neto said the party recognises Lula's victory but wants issues raised about the vote clarified. Flávio Bolsonaro, who lost by more than 4.4 million votes, has yet to formally concede.",
-   "date": "2026-10-26",
+   "h": "Flávio Bolsonaro leaves Brazil for the US",
+   "b": "Bolsonaro, who refused to concede his presidential loss to Lula, left Brazil for the United States, according to multiple media reports. Trump suggested Monday, without evidence, that the election was 'rigged.'",
+   "date": "2026-10-27",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
-   "url": "https://www.aljazeera.com/news/2026/10/27/bolsonaros-party-accepts-result-after-trump-suggests-vote-was",
-   "gathered": "2026-10-27T05:24:04Z"
+   "publisher": "PBS NewsHour",
+   "title": "Brazil's Flávio Bolsonaro leaves Brazil for the United States after presidential loss, according to multiple media reports",
+   "url": "https://www.pbs.org/newshour/world/brazils-flavio-bolsonaro-leaves-brazil-for-the-united-states-after-presidential-loss-according-to-multiple-media-reports",
+   "published": "2026-10-27T19:44:42Z",
+   "gathered": "2026-10-27T21:26:22Z"
   },
   {
    "h": "Jordan arrests three suspects in church attack",
@@ -266,6 +293,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "Colts trade DeForest Buckner to 49ers",
+   "b": "Indianapolis is sending the defensive tackle back to the team that drafted him for a 2027 fourth-round pick, according to ESPN. The Colts also dealt Quenton Nelson to the Seahawks.",
+   "date": "2026-10-27",
+   "publisher": "CBS Sports",
+   "title": "DeForest Buckner trade: Colts send DT to 49ers in exchange for 2027 fourth-round pick, per report",
+   "url": "https://www.cbssports.com/nfl/news/deforest-buckner-trade-colts-49ers/",
+   "gathered": "2026-10-27T21:26:22Z"
+  },
   {
    "h": "Jay-Z to headline Super Bowl halftime show",
    "b": "The NFL, Apple Music and Roc Nation announced Monday night that Jay-Z will perform at halftime on Feb. 14 at SoFi Stadium in Inglewood, California.",
@@ -340,6 +376,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "1 killed, 4 hurt in Elizabeth vigil shooting",
+   "b": "Shots rang out during a candlelight vigil in Elizabeth, New Jersey, Monday night. No arrests have been made, Union County prosecutors said.",
+   "date": "2026-10-27",
+   "publisher": "Gothamist",
+   "title": "1 killed, 4 others injured at Elizabeth, NJ vigil shooting",
+   "url": "https://gothamist.com/news/1-killed-4-others-injured-at-elizabeth-nj-vigil-shooting",
+   "published": "2026-10-27T18:45:02Z",
+   "gathered": "2026-10-27T21:26:22Z"
+  },
+  {
    "h": "Man charged in Queens stabbings",
    "b": "Rashaun Donovan, 48, faces attempted murder charges after a night of violence at a Southeast Queens home that ended with an NYPD officer shooting and injuring a woman.",
    "date": "2026-10-27",
@@ -400,58 +446,68 @@
    "gathered": "2026-10-26T10:16:57Z"
   },
   {
+   "h": "Ex-detective again faces murder charge in GWB killing",
+   "b": "A grand jury indicted Victor Romero, 62, on second-degree murder in the road-rage shooting death of Koran Irvine on the George Washington Bridge, after prosecutors had downgraded the charge to manslaughter.",
+   "date": "2026-10-27",
+   "publisher": "Gothamist",
+   "title": "Ex-NYPD officer again faces murder charge in George Washington Bridge shooting",
+   "url": "https://gothamist.com/news/ex-nypd-officer-again-faces-murder-charge-in-george-washington-bridge-shooting",
+   "published": "2026-10-27T20:35:00Z",
+   "gathered": "2026-10-27T21:26:22Z"
+  },
+  {
    "h": "Judge halts overnight work at Chinatown jail site",
    "b": "A Manhattan Supreme Court judge temporarily halted after-hours construction on the new Chinatown jail after residents sued over sleep disruption, another setback for the city's plan to replace Rikers Island.",
    "date": "2026-10-26",
    "publisher": "Gothamist",
    "title": "Judge temporarily halts overnight construction at NYC’s Chinatown jail",
    "url": "https://gothamist.com/news/judge-temporarily-halts-overnight-construction-at-nycs-chinatown-jail",
-   "published": "2026-10-26T23:08:00Z",
+   "published": "2026-10-27T20:12:00Z",
    "gathered": "2026-10-26T23:59:43Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 56,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "27 Oct 11:51 am EDT"
+   "obs": "27 Oct 16:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 60,
-    "text": "Sunny, with a high near 60. Northeast wind 7 to 9 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly clear, with a low around 50. North wind around 6 mph. "
+    "temp": 49,
+    "text": "Partly cloudy, with a low around 49. Northeast wind around 6 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 62,
-    "text": "Increasing clouds, with a high near 62. Light and variable wind becoming southeast 5 to 7 mph in the afternoon. "
+    "temp": 63,
+    "text": "Partly sunny, with a high near 63. Light and variable wind becoming south 5 to 7 mph in the afternoon. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 53,
-    "text": "Cloudy during the early evening, then gradual clearing, with a low around 53. South wind 5 to 7 mph becoming light and variable  after midnight. "
+    "temp": 54,
+    "text": "Cloudy during the early evening, then gradual clearing, with a low around 54. South wind around 6 mph becoming light and variable  after midnight. "
    },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 68,
-    "text": "Sunny, with a high near 68. Light southwest wind increasing to 5 to 9 mph in the morning. "
+    "text": "Partly sunny, then gradually becoming sunny, with a high near 68. Calm wind becoming southwest 5 to 9 mph in the morning. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 58,
-    "text": "Mostly clear, with a low around 58."
+    "temp": 59,
+    "text": "Mostly clear, with a low around 59. Southwest wind 7 to 9 mph. "
+   },
+   {
+    "name": "Friday",
+    "kind": "high",
+    "temp": 71,
+    "text": "Sunny, with a high near 71."
    }
   ]
  },
