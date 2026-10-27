@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T13:18:00Z",
+ "updatedAt": "2026-10-27T16:18:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Iran says US 'not serious' about talks",
-   "b": "Al Jazeera's live coverage: Iran says the US is 'not serious' about talks, and a vessel is on fire off Iraq's coast.",
+   "h": "Putin hosts Qatar's emir, Iran's president",
+   "b": "Al Jazeera's live coverage: Putin is hosting talks with Qatar's emir and Iran's president at a gas summit in Moscow.",
    "date": "2026-10-27",
    "publisher": "Al Jazeera",
-   "title": "Iran says US ‘not serious’ about talks; vessel on fire off Iraq’s coast",
+   "title": "Putin hosting talks with Qatar’s emir, Iran president at Moscow gas summit",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/iran-war-live-iran-says-us-not-serious-on-talks-ship-on-fire-off-iraq",
    "gathered": "2026-10-27T01:12:41Z"
   }
@@ -60,7 +60,7 @@
    "b": "A PBS News/NPR/Marist poll finds independents break for Democrats by 13 points, and likely voters say 2-to-1 that their midterm ballot is a vote against Trump rather than for him.",
    "date": "2026-10-27",
    "publisher": "PBS NewsHour",
-   "title": "Poll: Likely voters favor Democrats as Trump disapproval drives early turnout",
+   "title": "What our final poll before Election Day says about midterms and Trump",
    "url": "https://www.pbs.org/newshour/politics/poll-likely-voters-favor-democrats-as-trump-disapproval-drives-early-turnout",
    "published": "2026-10-27T09:00:33Z",
    "gathered": "2026-10-27T10:47:50Z"
@@ -92,13 +92,46 @@
  ],
  "international": [
   {
-   "h": "High early turnout as Israel votes",
-   "b": "Al Jazeera's live coverage: Turnout is high early in Israel's high-stakes election, as Netanyahu faces a tough battle.",
+   "h": "Drone strike on Nyala market kills 21",
+   "b": "At least 21 people were killed and more than 40 injured in a drone strike on a market in Nyala, the de facto capital of Sudan's paramilitary RSF, a hospital medic said.",
+   "date": "2026-10-27",
+   "place": "Nyala",
+   "tz": "Africa/Khartoum",
+   "publisher": "Al Jazeera",
+   "title": "Drone strike in Sudan’s Nyala kills at least 21, injures 40",
+   "url": "https://www.aljazeera.com/news/2026/10/27/drone-strike-kills-at-least-21-and-injures-40-in-sudans-nyala",
+   "gathered": "2026-10-27T13:22:01Z"
+  },
+  {
+   "h": "India evacuates thousands as Cyclone Arnab nears",
+   "b": "The 'very severe' cyclone is expected to cross the Andhra Pradesh coast Wednesday with winds of 115-125km/h. More than 12 million people live along its projected path.",
+   "date": "2026-10-27",
+   "place": "Visakhapatnam",
+   "tz": "Asia/Kolkata",
+   "publisher": "Al Jazeera",
+   "title": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
+   "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
+   "gathered": "2026-10-27T13:22:01Z"
+  },
+  {
+   "h": "UK charges two after RAF Fairford incident",
+   "b": "Mohmed Abdulkarim and Nouman Essghir, both 24, were charged under the National Security Act over an incident at the airbase used by the United States, the Crown Prosecution Service said.",
+   "date": "2026-10-27",
+   "place": "England",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK prosecutors charge two after RAF Fairford incident",
+   "url": "https://www.aljazeera.com/news/2026/10/27/uk-prosecutors-charge-two-after-raf-fairford-incident",
+   "gathered": "2026-10-27T13:22:01Z"
+  },
+  {
+   "h": "High turnout as Israel votes in historic election",
+   "b": "Al Jazeera's live coverage: Turnout is high in Israel's historic election, as Netanyahu faces a tough battle.",
    "date": "2026-10-27",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
    "publisher": "Al Jazeera",
-   "title": "High turnout early as Israel votes in high-stakes election",
+   "title": "High turnout as Israel votes in historic election",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls",
    "gathered": "2026-10-27T05:24:04Z"
   },
@@ -108,8 +141,6 @@
    "date": "2026-10-27",
    "place": "Kherson",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Russia halts strikes on Ukraine’s Kherson as Oleshky ceasefire takes effect",
    "url": "https://www.aljazeera.com/news/2026/10/27/russia-halts-strikes-on-ukraines-kherson-as-oleshky-ceasefire-takes-effect",
    "gathered": "2026-10-27T05:24:04Z"
   },
@@ -131,8 +162,6 @@
    "date": "2026-10-26",
    "place": "Syria",
    "tz": "Asia/Damascus",
-   "publisher": "Al Jazeera",
-   "title": "Jordan strikes Syria after church attack, killing at least seven people",
    "url": "https://www.aljazeera.com/news/2026/10/26/jordan-launches-air-strikes-in-syria-in-response-to-a-fatal-church-shooting",
    "gathered": "2026-10-26T23:59:43Z"
   },
@@ -210,6 +239,15 @@
   }
  ],
  "science": [
+  {
+   "h": "OpenAI says AI made math and physics discoveries",
+   "b": "Among the results, AI models proved the local smoothing conjecture, a central proposition of harmonic analysis, in every spatial dimension for the first time, OpenAI says. It had previously only been proved in three.",
+   "date": "2026-10-27",
+   "publisher": "Al Jazeera",
+   "title": "AI makes discoveries in mathematics, computer science, physics, OpenAI says",
+   "url": "https://www.aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says",
+   "gathered": "2026-10-27T13:22:01Z"
+  },
   {
    "h": "AI models are transforming hurricane forecasts",
    "b": "Google DeepMind's AI model correctly predicted Hurricane Isaias would hit the western Florida Panhandle when conventional models pointed toward Louisiana. Meteorologist Michael Lowry calls it the best-performing model ever seen.",
@@ -299,6 +337,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Woman found in shallow grave in Queens",
+   "b": "Seraphina Pereira, 35, was found shot in the head and buried near a cricket field in Edgemere. Her ex-boyfriend is in custody with charges pending, police said.",
+   "date": "2026-10-27",
+   "publisher": "Gothamist",
+   "title": "Woman found in shallow grave in Queens; her ex-boyfriend is in custody, NYPD says",
+   "url": "https://gothamist.com/news/woman-found-in-shallow-grave-in-queens-her-ex-boyfriend-is-in-custody-nypd-says",
+   "published": "2026-10-27T12:29:00Z",
+   "gathered": "2026-10-27T13:22:01Z"
+  },
+  {
    "h": "NJ activists frustrated over ICE warehouse response",
    "b": "Immigration activists and a Dover council member say state officials have been lukewarm since ICE admitted using a warehouse in Roxbury to process detainees.",
    "date": "2026-10-27",
@@ -351,16 +399,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "27 Oct 05:51 am EDT"
+   "obs": "27 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 60,
-    "text": "Sunny, with a high near 60. North wind 7 to 13 mph. "
+    "text": "Sunny, with a high near 60. Northeast wind 7 to 11 mph. "
    },
    {
     "name": "Tonight",

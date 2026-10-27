@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 56,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 05:52 am EDT"
+    "obs": "27 Oct 08:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. Calm wind becoming east around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 75. East wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,9 +96,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "A Few Clouds",
-    "obs": "27 Oct 05:54 am EDT"
+    "temp": 48,
+    "cond": "Partly Cloudy",
+    "obs": "27 Oct 08:54 am EDT"
    },
    "periods": [
     {
@@ -151,7 +151,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -165,15 +165,15 @@
   "weather": {
    "now": {
     "temp": 55,
-    "cond": "Mostly Cloudy",
-    "obs": "27 Oct 04:53 am CDT"
+    "cond": " Fog/Mist",
+    "obs": "27 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Partly sunny, with a high near 65. Southeast wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly cloudy, with a high near 65. Southeast wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
@@ -219,7 +219,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -244,16 +244,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 38,
+    "temp": 32,
     "cond": " Fog",
-    "obs": "27 Oct 03:58 am MDT"
+    "obs": "27 Oct 05:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 66,
-     "text": "Areas of fog before 11am.  Otherwise, mostly sunny, with a high near 66. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
+     "text": "Areas of dense fog before 11am.  Otherwise, mostly sunny, with a high near 66. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -299,7 +299,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -310,6 +310,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Childcare costs push families into card debt",
+    "b": "In LA County, childcare eats up nearly 20% of median household income, and families say they're shifting more of the cost onto credit cards.",
+    "date": "2026-10-27",
+    "publisher": "LAist",
+    "title": "For many California parents, paying for childcare means racking up credit card debt",
+    "url": "https://laist.com/news/education/early-childhood-education-pre-k/california-families-childcare-costs-credit-card-debt",
+    "published": "2026-10-27T12:00:00Z",
+    "updated": "2026-10-27T12:00:00Z",
+    "gathered": "2026-10-27T13:22:01Z"
+   },
    {
     "h": "Walter Koenig, Star Trek's Chekov, dies at 90",
     "b": "Koenig, who played Ensign Chekov on the original 'Star Trek' series and several movies, died Monday at his home in North Hollywood, his agent said.",
@@ -337,13 +348,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
      "text": "Sunny, with a high near 77. East southeast wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Patchy fog after 11pm.  Otherwise, increasing clouds, with a low around 57. Southwest wind around 5 mph becoming east southeast after midnight. "
@@ -364,7 +375,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 74,
-     "text": "Partly sunny, with a high near 74."
+     "text": "Partly sunny, with a high near 74. Calm wind becoming south southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
@@ -386,7 +397,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -397,6 +408,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Woman found in shallow grave in Queens",
+    "b": "Seraphina Pereira, 35, was found shot in the head and buried near a cricket field in Edgemere. Her ex-boyfriend is in custody with charges pending, police said.",
+    "date": "2026-10-27",
+    "publisher": "Gothamist",
+    "title": "Woman found in shallow grave in Queens; her ex-boyfriend is in custody, NYPD says",
+    "url": "https://gothamist.com/news/woman-found-in-shallow-grave-in-queens-her-ex-boyfriend-is-in-custody-nypd-says",
+    "published": "2026-10-27T12:29:00Z",
+    "gathered": "2026-10-27T13:22:01Z"
+   },
    {
     "h": "NJ activists frustrated over ICE warehouse response",
     "b": "Immigration activists and a Dover council member say state officials have been lukewarm since ICE admitted using a warehouse in Roxbury to process detainees.",
@@ -450,16 +471,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 53,
     "cond": "Fair",
-    "obs": "27 Oct 05:51 am EDT"
+    "obs": "27 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. North wind 7 to 13 mph. "
+     "text": "Sunny, with a high near 60. Northeast wind 7 to 11 mph. "
     },
     {
      "name": "Tonight",
@@ -505,7 +526,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -538,6 +559,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Senate debates France's 'rioters pay' bill",
+    "b": "The casseurs-payeurs bill would make people pay for damage caused during public gatherings. It gained renewed attention after the Oct. 17 protest violence.",
+    "date": "2026-10-27",
+    "publisher": "The Local France",
+    "title": "Casseurs-payeurs: France's 'rioters pay' bill explained",
+    "url": "https://www.thelocal.fr/20261027/casseurs-payeurs-frances-rioters-pay-bill-explained",
+    "published": "2026-10-27T12:17:07Z",
+    "updated": "2026-10-27T12:17:07Z",
+    "gathered": "2026-10-27T13:22:01Z"
+   },
    {
     "h": "Anti-racism rallies follow deadly Trappes attack",
     "b": "Thousands rallied in Paris, Lyon and Marseille Monday after a gunman killed a 26-year-old man and wounded five in Trappes and La Verrière in an attack anti-terror police say appears racist.",
@@ -575,11 +607,7 @@
     "h": "Paris extends summer café terraces a month",
     "b": "Summer terraces can stay until the end of November instead of coming down Oct. 31, at no extra charge, to support cafés, bars and restaurants hit by protest violence on Oct. 17 and 18.",
     "date": "2026-10-26",
-    "publisher": "The Local France",
-    "title": "Paris extends summer café terraces for another month",
     "url": "https://www.thelocal.fr/20261026/paris-extends-summer-cafe-terraces-for-another-month",
-    "published": "2026-10-26T14:25:58Z",
-    "updated": "2026-10-26T14:26:00Z",
     "gathered": "2026-10-26T14:28:24Z"
    },
    {
@@ -613,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "goodnews": []
  },
  {
@@ -666,13 +694,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "A chance of rain before 8am, then a chance of rain after noon.  Mostly cloudy, with a high near 56. Light south wind becoming south southwest 6 to 11 mph in the morning.  Chance of precipitation is 30%."
+     "text": "A chance of rain before 8am, then a chance of rain after noon.  Mostly cloudy, with a high near 56. Light south southeast wind becoming south southwest 6 to 11 mph in the morning.  Chance of precipitation is 30%."
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 45,
      "text": "Rain.  Low around 45. South southwest wind 10 to 14 mph, with gusts as high as 22 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -693,13 +721,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 52,
-     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 52. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 52. Southeast wind 3 to 5 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 41,
-     "text": "Rain likely.  Mostly cloudy, with a low around 41. Chance of precipitation is 70%."
+     "text": "Rain likely.  Mostly cloudy, with a low around 41. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -715,7 +743,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T13:18:00Z",
+  "updatedAt": "2026-10-27T16:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
