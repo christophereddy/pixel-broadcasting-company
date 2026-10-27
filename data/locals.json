@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 63,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 19:52 pm EDT"
+    "obs": "26 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,16 +96,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "A Few Clouds",
-    "obs": "26 Oct 19:54 pm EDT"
+    "temp": 66,
+    "cond": "Partly Cloudy",
+    "obs": "26 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. North wind 6 to 9 mph, with gusts as high as 21 mph. "
+     "text": "Mostly clear, with a low around 43. North wind 7 to 9 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Tuesday",
@@ -151,7 +151,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -166,7 +166,7 @@
    "now": {
     "temp": 57,
     "cond": "Mostly Cloudy",
-    "obs": "26 Oct 18:53 pm CDT"
+    "obs": "26 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -219,7 +219,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -244,9 +244,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "A Few Clouds",
-    "obs": "26 Oct 16:58 pm MDT"
+    "temp": 48,
+    "cond": "Partly Cloudy",
+    "obs": "26 Oct 18:58 pm MDT"
    },
    "periods": [
     {
@@ -299,7 +299,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -386,7 +386,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -440,9 +440,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 63,
     "cond": "Fair",
-    "obs": "26 Oct 19:51 pm EDT"
+    "obs": "26 Oct 20:51 pm EDT"
    },
    "periods": [
     {
@@ -495,7 +495,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -589,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "goodnews": []
  },
  {
@@ -600,6 +600,17 @@
   },
   "local": [
    {
+    "h": "Seattle schools weigh merging at least 6 schools",
+    "b": "Families at Orca K-8, Martin Luther King Jr., Sacajawea, John Rogers, View Ridge and Decatur were emailed Oct. 23 about proposed mergers for the 2027-28 school year, two years after a plan to close four schools died.",
+    "date": "2026-10-26",
+    "publisher": "KUOW",
+    "title": "Seattle Public Schools weighs mergers for at least 6 schools",
+    "url": "https://www.kuow.org/education/2026-10-26/seattle-public-schools-weighs-school-mergers-for-at-least-six-schools",
+    "published": "2026-10-27T00:19:08Z",
+    "updated": "2026-10-27T00:57:04Z",
+    "gathered": "2026-10-27T01:12:41Z"
+   },
+   {
     "h": "Council moves to restore fire overtime",
     "b": "Seattle City Council members are coordinating to restore about $7 million in Seattle Fire Department overtime that Mayor Wilson proposed cutting, among a flood of budget adds.",
     "date": "2026-10-26",
@@ -607,7 +618,7 @@
     "title": "Seattle City Council wants to restore fire department overtime, among flood of budget adds",
     "url": "https://www.kuow.org/governing/2026-10-26/seattle-city-council-wants-to-restore-fire-department-overtime-among-flood-of-budget-adds",
     "published": "2026-10-26T23:25:22Z",
-    "updated": "2026-10-26T23:25:22Z",
+    "updated": "2026-10-27T00:07:26Z",
     "gathered": "2026-10-26T23:59:43Z"
    },
    {
@@ -670,13 +681,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Rain.  Low around 42. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain.  Low around 42. West southwest wind around 6 mph becoming south southeast in the evening.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 51,
-     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 51. Chance of precipitation is 70%."
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 51. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -692,7 +703,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T01:12:00Z",
+  "updatedAt": "2026-10-27T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
