@@ -20,13 +20,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 66,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 08:52 am EDT"
+    "obs": "27 Oct 11:52 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 75,
      "text": "Sunny, with a high near 75. East wind around 5 mph. "
@@ -41,19 +41,19 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 73,
-     "text": "Mostly sunny, with a high near 73. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Partly sunny, with a high near 73. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Partly cloudy, with a low around 54. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Partly cloudy, with a low around 54. East wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly sunny, with a high near 76. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Thursday Night",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,16 +96,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Partly Cloudy",
-    "obs": "27 Oct 08:54 am EDT"
+    "temp": 51,
+    "cond": "A Few Clouds",
+    "obs": "27 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 56,
-     "text": "Sunny, with a high near 56. Northeast wind 8 to 10 mph. "
+     "text": "Sunny, with a high near 56. Northeast wind around 9 mph. "
     },
     {
      "name": "Tonight",
@@ -151,7 +151,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -164,28 +164,28 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": " Fog/Mist",
-    "obs": "27 Oct 07:53 am CDT"
+    "temp": 60,
+    "cond": "Mostly Cloudy",
+    "obs": "27 Oct 10:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly cloudy, with a high near 65. Southeast wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly cloudy, with a high near 65. Southeast wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Mostly cloudy, with a low around 57. South wind 5 to 10 mph. "
+     "temp": 55,
+     "text": "Mostly cloudy, with a low around 55. South wind 5 to 10 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 72,
-     "text": "Mostly sunny, with a high near 72. South wind 5 to 10 mph. "
+     "temp": 69,
+     "text": "Mostly sunny, with a high near 69. South wind 5 to 10 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -219,9 +219,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Soul Train Awards come home to Chicago",
+    "b": "For the first time in its nearly 40-year history, the ceremony will be held in Chicago, at the Harris Theater on Nov. 5. Chaka Khan will receive the Classic Soul Honor.",
+    "date": "2026-10-27",
+    "publisher": "WBEZ",
+    "title": "The Soul Train Awards are coming ‘home’ to Chicago for the first time",
+    "url": "https://www.wbez.org/movies-tv/2026/10/27/soul-train-awards-chicago-november-chaka-khan-bet",
+    "published": "2026-10-27T14:26:59Z",
+    "updated": "2026-10-27T14:26:59Z",
+    "gathered": "2026-10-27T16:47:44Z"
+   },
    {
     "h": "Music fans rally for Waco Brothers' Schlabowske",
     "b": "Music fans are rallying to support Dean Schlabowske of the Waco Brothers, who faces six-figure medical costs after an acute myeloid leukemia diagnosis.",
@@ -244,16 +255,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 32,
-    "cond": " Fog",
-    "obs": "27 Oct 05:58 am MDT"
+    "temp": 44,
+    "cond": "Partly Cloudy",
+    "obs": "27 Oct 09:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 66,
-     "text": "Areas of dense fog before 11am.  Otherwise, mostly sunny, with a high near 66. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
+     "text": "Patchy fog before 11am.  Otherwise, sunny, with a high near 66. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -299,7 +310,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -318,18 +329,14 @@
     "title": "For many California parents, paying for childcare means racking up credit card debt",
     "url": "https://laist.com/news/education/early-childhood-education-pre-k/california-families-childcare-costs-credit-card-debt",
     "published": "2026-10-27T12:00:00Z",
-    "updated": "2026-10-27T12:00:00Z",
+    "updated": "2026-10-27T15:55:25Z",
     "gathered": "2026-10-27T13:22:01Z"
    },
    {
     "h": "Walter Koenig, Star Trek's Chekov, dies at 90",
     "b": "Koenig, who played Ensign Chekov on the original 'Star Trek' series and several movies, died Monday at his home in North Hollywood, his agent said.",
     "date": "2026-10-26",
-    "publisher": "LAist",
-    "title": "Walter Koenig, Ensign Chekov on original 'Star Trek' series, dies at 90",
     "url": "https://laist.com/news/arts-and-entertainment/walter-koenig-ensign-chekov-on-original-star-trek-series-dies-at-90",
-    "published": "2026-10-26T17:39:32Z",
-    "updated": "2026-10-26T20:10:43Z",
     "gathered": "2026-10-26T20:03:43Z"
    },
    {
@@ -351,7 +358,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 77,
-     "text": "Sunny, with a high near 77. East southeast wind 5 to 10 mph becoming southwest in the afternoon. "
+     "text": "Sunny, with a high near 77. Southeast wind 5 to 10 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -397,7 +404,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -409,11 +416,21 @@
   },
   "local": [
    {
+    "h": "Man charged in Queens stabbings",
+    "b": "Rashaun Donovan, 48, faces attempted murder charges after a night of violence at a Southeast Queens home that ended with an NYPD officer shooting and injuring a woman.",
+    "date": "2026-10-27",
+    "publisher": "Gothamist",
+    "title": "Police arrest man in Queens stabbings that ended with officer shooting woman",
+    "url": "https://gothamist.com/news/police-arrest-man-in-queens-stabbings-that-ended-with-officer-shooting-woman",
+    "published": "2026-10-27T16:06:00Z",
+    "gathered": "2026-10-27T16:47:44Z"
+   },
+   {
     "h": "Woman found in shallow grave in Queens",
     "b": "Seraphina Pereira, 35, was found shot in the head and buried near a cricket field in Edgemere. Her ex-boyfriend is in custody with charges pending, police said.",
     "date": "2026-10-27",
     "publisher": "Gothamist",
-    "title": "Woman found in shallow grave in Queens; her ex-boyfriend is in custody, NYPD says",
+    "title": "Ex-boyfriend of woman found in shallow grave in Queens charged with murder, NYPD says",
     "url": "https://gothamist.com/news/woman-found-in-shallow-grave-in-queens-her-ex-boyfriend-is-in-custody-nypd-says",
     "published": "2026-10-27T12:29:00Z",
     "gathered": "2026-10-27T13:22:01Z"
@@ -471,16 +488,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "27 Oct 08:51 am EDT"
+    "obs": "27 Oct 11:51 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. Northeast wind 7 to 11 mph. "
+     "text": "Sunny, with a high near 60. Northeast wind 7 to 9 mph. "
     },
     {
      "name": "Tonight",
@@ -526,7 +543,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -559,6 +576,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "€5 fees coming on small non-EU packages",
+    "b": "From Nov. 1, a new €2 handling fee on online orders under €150 from non-EU sites adds to the existing €3 EU tax. Gifts are exempt.",
+    "date": "2026-10-27",
+    "publisher": "The Local France",
+    "title": "French customers to pay €5 fees on small non-EU packages",
+    "url": "https://www.thelocal.fr/20261027/french-customers-to-pay-e5-fees-on-small-non-eu-packages",
+    "published": "2026-10-27T16:20:52Z",
+    "updated": "2026-10-27T16:20:53Z",
+    "gathered": "2026-10-27T16:47:44Z"
+   },
    {
     "h": "Senate debates France's 'rioters pay' bill",
     "b": "The casseurs-payeurs bill would make people pay for damage caused during public gatherings. It gained renewed attention after the Oct. 17 protest violence.",
@@ -596,11 +624,7 @@
     "h": "Protesters plan Halloween sit-ins in France",
     "b": "Organisers of 'Act III - Halloween' plan sit-ins outside town halls and the Assemblée Nationale on Oct. 31, though no demonstrations have yet been declared to Paris police.",
     "date": "2026-10-26",
-    "publisher": "The Local France",
-    "title": "Protests in France: What to expect on October 31st",
     "url": "https://www.thelocal.fr/20261026/protests-in-france-what-to-expect-on-october-31st",
-    "published": "2026-10-26T16:50:40Z",
-    "updated": "2026-10-26T16:50:42Z",
     "gathered": "2026-10-26T16:17:54Z"
    },
    {
@@ -641,7 +665,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "goodnews": []
  },
  {
@@ -651,6 +675,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "ICE arrests surge at Seattle-area Home Depots",
+    "b": "Since August, Home Depot parking lots where day laborers wait for work have become hotspots for immigration arrests around Seattle.",
+    "date": "2026-10-27",
+    "publisher": "KUOW",
+    "title": "ICE arrests surge at Seattle-area Home Depot parking lots. Neighbors are on the lookout",
+    "url": "https://www.kuow.org/immigration/2026-10-27/ice-arrests-surge-at-seattle-area-home-depot-parking-lots",
+    "published": "2026-10-27T15:00:00Z",
+    "updated": "2026-10-27T15:00:04Z",
+    "gathered": "2026-10-27T16:47:44Z"
+   },
    {
     "h": "Seattle schools weigh merging at least 6 schools",
     "b": "Families at Orca K-8, Martin Luther King Jr., Sacajawea, John Rogers, View Ridge and Decatur were emailed Oct. 23 about proposed mergers for the 2027-28 school year, two years after a plan to close four schools died.",
@@ -697,7 +732,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "A chance of rain before 8am, then a chance of rain after noon.  Mostly cloudy, with a high near 56. Light south southeast wind becoming south southwest 6 to 11 mph in the morning.  Chance of precipitation is 30%."
+     "text": "A 30 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a high near 56. Light south wind becoming south southwest 6 to 11 mph in the morning. "
     },
     {
      "name": "Tonight",
@@ -743,7 +778,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T16:18:00Z",
+  "updatedAt": "2026-10-27T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

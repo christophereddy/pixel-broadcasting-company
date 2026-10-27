@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-27T16:18:00Z",
+ "updatedAt": "2026-10-27T19:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -92,13 +92,33 @@
  ],
  "international": [
   {
+   "h": "Russian strikes hit Kyiv's South Bridge",
+   "b": "Overnight attacks on Kyiv included 16 ballistic missiles and more than 280 drones, and Russian forces struck again as crews dealt with the aftermath, Zelenskyy said, calling it a serious escalation.",
+   "date": "2026-10-27",
+   "place": "Kyiv",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Russia targets Kyiv as Finnish, Norwegian leaders hold rare call with Putin",
+   "url": "https://www.aljazeera.com/news/2026/10/27/russia-targets-kyiv-as-finnish-norwegian-leaders-hold-rare-call-with-putin",
+   "gathered": "2026-10-27T16:47:44Z"
+  },
+  {
+   "h": "DR Congo Ebola cases surpass 10,000",
+   "b": "Nearly half of the 10,060 confirmed cases have died in the fastest-growing and deadliest Ebola outbreak in the country's history, according to its health ministry.",
+   "date": "2026-10-27",
+   "place": "DR Congo",
+   "tz": "Africa/Kinshasa",
+   "publisher": "Al Jazeera",
+   "title": "Ebola cases in DR Congo surpass 10,000 in fastest-growing outbreak",
+   "url": "https://www.aljazeera.com/news/2026/10/27/ebola-cases-in-dr-congo-surpass-10000-in-fastest-growing-outbreak",
+   "gathered": "2026-10-27T16:47:44Z"
+  },
+  {
    "h": "Drone strike on Nyala market kills 21",
    "b": "At least 21 people were killed and more than 40 injured in a drone strike on a market in Nyala, the de facto capital of Sudan's paramilitary RSF, a hospital medic said.",
    "date": "2026-10-27",
    "place": "Nyala",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Drone strike in Sudan’s Nyala kills at least 21, injures 40",
    "url": "https://www.aljazeera.com/news/2026/10/27/drone-strike-kills-at-least-21-and-injures-40-in-sudans-nyala",
    "gathered": "2026-10-27T13:22:01Z"
   },
@@ -108,8 +128,6 @@
    "date": "2026-10-27",
    "place": "Visakhapatnam",
    "tz": "Asia/Kolkata",
-   "publisher": "Al Jazeera",
-   "title": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
    "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
    "gathered": "2026-10-27T13:22:01Z"
   },
@@ -119,19 +137,17 @@
    "date": "2026-10-27",
    "place": "England",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK prosecutors charge two after RAF Fairford incident",
    "url": "https://www.aljazeera.com/news/2026/10/27/uk-prosecutors-charge-two-after-raf-fairford-incident",
    "gathered": "2026-10-27T13:22:01Z"
   },
   {
-   "h": "High turnout as Israel votes in historic election",
-   "b": "Al Jazeera's live coverage: Turnout is high in Israel's historic election, as Netanyahu faces a tough battle.",
+   "h": "Israel election sees record turnout",
+   "b": "Al Jazeera's live coverage: Turnout is the highest in 50 years as voting continues, and Netanyahu is accused of 'fearmongering.'",
    "date": "2026-10-27",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
    "publisher": "Al Jazeera",
-   "title": "High turnout as Israel votes in historic election",
+   "title": "Netanyahu accused of ‘fearmongering’ as Israel election sees record turnout",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls",
    "gathered": "2026-10-27T05:24:04Z"
   },
@@ -150,10 +166,7 @@
    "date": "2026-10-26",
    "place": "Vatican City",
    "tz": "Europe/Vatican",
-   "publisher": "PBS NewsHour",
-   "title": "Following post-surgery checkup, Pope Leo will proceed with Latin America trip, Vatican confirms",
    "url": "https://www.pbs.org/newshour/world/following-post-surgery-checkup-pope-leo-will-proceed-with-latin-america-trip-vatican-confirms",
-   "published": "2026-10-26T20:54:31Z",
    "gathered": "2026-10-26T23:59:43Z"
   },
   {
@@ -189,8 +202,6 @@
    "date": "2026-10-26",
    "place": "Brasília",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Bolsonaro’s party accepts Brazil election after Trump calls vote ‘rigged’",
    "url": "https://www.aljazeera.com/news/2026/10/27/bolsonaros-party-accepts-result-after-trump-suggests-vote-was",
    "gathered": "2026-10-27T05:24:04Z"
   },
@@ -243,8 +254,6 @@
    "h": "OpenAI says AI made math and physics discoveries",
    "b": "Among the results, AI models proved the local smoothing conjecture, a central proposition of harmonic analysis, in every spatial dimension for the first time, OpenAI says. It had previously only been proved in three.",
    "date": "2026-10-27",
-   "publisher": "Al Jazeera",
-   "title": "AI makes discoveries in mathematics, computer science, physics, OpenAI says",
    "url": "https://www.aljazeera.com/economy/2026/10/27/ai-makes-discoveries-in-mathematics-computer-science-physics-openai-says",
    "gathered": "2026-10-27T13:22:01Z"
   },
@@ -268,19 +277,13 @@
    "h": "Harry Kane wins Ballon d'Or",
    "b": "Kane is the first Englishman in 25 years to win the award after scoring 73 goals for club and country last season, setting records for Bayern Munich and captaining England to third at the World Cup.",
    "date": "2026-10-26",
-   "publisher": "KUOW",
-   "title": "Harry Kane becomes first Englishman in 25 years to win Ballon d'Or",
    "url": "https://www.kuow.org/npr-news/2026-10-26/harry-kane-becomes-first-englishman-in-25-years-to-win-ballon-dor",
-   "published": "2026-10-27T06:30:54Z",
-   "updated": "2026-10-27T06:37:32Z",
    "gathered": "2026-10-27T07:21:47Z"
   },
   {
    "h": "Brewers rout Rays 10-1 in World Series Game 3",
    "b": "Jackson Chourio led a 16-hit attack as the Brewers improved to 7-0 in the NLCS and World Series. A Game 4 win would make them the first team to go 8-0 in those rounds.",
    "date": "2026-10-26",
-   "publisher": "CBS Sports",
-   "title": "Jackson Chourio just showing off now as the face of the Brewers as Crew creeps closer to World Series title",
    "url": "https://www.cbssports.com/mlb/news/jackson-chourio-brewers-world-series-face-of-the-franchise/",
    "gathered": "2026-10-27T05:24:04Z"
   },
@@ -337,11 +340,21 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Man charged in Queens stabbings",
+   "b": "Rashaun Donovan, 48, faces attempted murder charges after a night of violence at a Southeast Queens home that ended with an NYPD officer shooting and injuring a woman.",
+   "date": "2026-10-27",
+   "publisher": "Gothamist",
+   "title": "Police arrest man in Queens stabbings that ended with officer shooting woman",
+   "url": "https://gothamist.com/news/police-arrest-man-in-queens-stabbings-that-ended-with-officer-shooting-woman",
+   "published": "2026-10-27T16:06:00Z",
+   "gathered": "2026-10-27T16:47:44Z"
+  },
+  {
    "h": "Woman found in shallow grave in Queens",
    "b": "Seraphina Pereira, 35, was found shot in the head and buried near a cricket field in Edgemere. Her ex-boyfriend is in custody with charges pending, police said.",
    "date": "2026-10-27",
    "publisher": "Gothamist",
-   "title": "Woman found in shallow grave in Queens; her ex-boyfriend is in custody, NYPD says",
+   "title": "Ex-boyfriend of woman found in shallow grave in Queens charged with murder, NYPD says",
    "url": "https://gothamist.com/news/woman-found-in-shallow-grave-in-queens-her-ex-boyfriend-is-in-custody-nypd-says",
    "published": "2026-10-27T12:29:00Z",
    "gathered": "2026-10-27T13:22:01Z"
@@ -399,16 +412,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
+   "temp": 56,
    "cond": "Fair",
-   "obs": "27 Oct 08:51 am EDT"
+   "obs": "27 Oct 11:51 am EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 60,
-    "text": "Sunny, with a high near 60. Northeast wind 7 to 11 mph. "
+    "text": "Sunny, with a high near 60. Northeast wind 7 to 9 mph. "
    },
    {
     "name": "Tonight",
