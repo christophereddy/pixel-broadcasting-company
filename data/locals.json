@@ -10,14 +10,14 @@
    "now": {
     "temp": 64,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 19:52 pm EDT"
+    "obs": "27 Oct 20:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. East wind around 5 mph. "
+     "text": "Partly cloudy, with a low around 52. East wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,14 +88,14 @@
    "now": {
     "temp": 45,
     "cond": "Fair",
-    "obs": "27 Oct 19:54 pm EDT"
+    "obs": "27 Oct 20:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38. Southeast wind 5 to 8 mph becoming light and variable  after midnight. "
+     "text": "Mostly clear, with a low around 38. South wind 5 to 7 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Wednesday",
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -152,6 +152,15 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Magnificent Mile sees retail revival",
+    "b": "The North Michigan Avenue shopping stretch is seeing an abundance of new store openings, with many big-name brands planning locations within the next year.",
+    "date": "2026-10-27",
+    "publisher": "WBEZ",
+    "title": "The Magnificent Mile’s renaissance is happening",
+    "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/27/the-magnificent-miles-renaissance-is-happening",
+    "gathered": "2026-10-28T01:14:52Z"
+   },
    {
     "h": "Northwestern launches transplant institute",
     "b": "The Northwestern Medicine Transplant Institute, which has raised about $26 million in philanthropic funding, brings together four existing programs and about 300 staff.",
@@ -166,9 +175,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 66,
     "cond": "Overcast",
-    "obs": "27 Oct 17:53 pm CDT"
+    "obs": "27 Oct 19:53 pm CDT"
    },
    "periods": [
     {
@@ -221,7 +230,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -253,16 +262,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 49,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 16:58 pm MDT"
+    "obs": "27 Oct 18:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40. North northeast wind 5 to 7 mph becoming calm. "
+     "text": "Mostly clear, with a low around 40. North northeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Wednesday",
@@ -308,7 +317,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -417,7 +426,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -494,7 +503,7 @@
    "now": {
     "temp": 53,
     "cond": "Fair",
-    "obs": "27 Oct 19:51 pm EDT"
+    "obs": "27 Oct 20:51 pm EDT"
    },
    "periods": [
     {
@@ -547,7 +556,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -620,7 +629,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "goodnews": []
  },
  {
@@ -696,19 +705,19 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 52,
-     "text": "A 30 percent chance of rain before 11am.  Mostly cloudy, with a high near 52. Light and variable wind. "
+     "text": "A 30 percent chance of rain before 11am.  Cloudy, then gradually becoming mostly sunny, with a high near 52. Light and variable wind. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 42,
-     "text": "A 50 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 42."
+     "text": "A 50 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 42. Light north wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 52,
-     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 52. Chance of precipitation is 60%."
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 52. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -724,7 +733,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T01:14:00Z",
+  "updatedAt": "2026-10-28T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
