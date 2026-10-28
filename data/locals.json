@@ -19,13 +19,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 67,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 09:52 am EDT"
+    "obs": "28 Oct 11:52 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 73,
      "text": "Mostly sunny, with a high near 73. East wind around 10 mph, with gusts as high as 15 mph. "
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -104,16 +104,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 51,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 09:54 am EDT"
+    "obs": "28 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 56,
-     "text": "Partly sunny, with a high near 56. Light and variable wind. "
+     "text": "Partly sunny, with a high near 56. Light south wind. "
     },
     {
      "name": "Tonight",
@@ -159,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -202,16 +202,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 08:53 am CDT"
+    "temp": 68,
+    "cond": "Fair",
+    "obs": "28 Oct 10:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74. South wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 74. South wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -257,7 +257,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -300,16 +300,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 48,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 06:58 am MDT"
+    "obs": "28 Oct 08:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Partly sunny, with a high near 69. Calm wind becoming east 5 to 7 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 69. Calm wind becoming east 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -355,7 +355,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -413,7 +413,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 76,
-     "text": "Patchy fog before 11am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 76. Calm wind becoming south southwest around 5 mph in the afternoon. "
+     "text": "Patchy fog before 11am.  Otherwise, cloudy early, then becoming mostly sunny, with a high near 76. Calm wind becoming south southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -459,7 +459,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -470,6 +470,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYPD promises tight NYC Marathon security",
+    "b": "Drones, dogs, horses and helicopters will watch the race; Commissioner Jessica Tisch said there are \"no known specific credible threats.\"",
+    "date": "2026-10-28",
+    "publisher": "Gothamist",
+    "title": "60K runners, 2.5 million fans: NYPD promises tight security for NYC Marathon",
+    "url": "https://gothamist.com/news/60k-runners-25-million-fans-nypd-promises-tight-security-for-nyc-marathon",
+    "published": "2026-10-28T14:30:00Z",
+    "gathered": "2026-10-28T16:19:28Z"
+   },
    {
     "h": "Brooklyn's Third Avenue to get safety redesign",
     "b": "The city will replace traffic lanes with bike lanes and shorten crossings on 2.1 miles of Third Avenue in Sunset Park, two months after nurse Jiayi Zheng was killed by a hit-and-run driver.",
@@ -541,20 +551,30 @@
     "published": "2026-10-27T20:35:00Z",
     "updated": "2026-10-27T22:17:00Z",
     "gathered": "2026-10-27T21:26:22Z"
+   },
+   {
+    "h": "Board delays vote on Tompkins Square overhaul",
+    "b": "Community Board 3 put off its vote on the $10 million Tompkins Square Park update until next month after preservationists protested over the park's pull-up bars.",
+    "date": "2026-10-28",
+    "publisher": "Gothamist",
+    "title": "'If this is what you want': East Village board halts vote on Tompkins Square overhaul",
+    "url": "https://gothamist.com/news/if-this-is-what-you-want-east-village-board-halts-vote-on-tompkins-square-overhaul",
+    "published": "2026-10-28T14:54:11Z",
+    "gathered": "2026-10-28T16:19:28Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "28 Oct 09:51 am EDT"
+    "obs": "28 Oct 11:51 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 63,
-     "text": "Partly sunny, with a high near 63. Northeast wind 5 to 8 mph becoming south in the afternoon. "
+     "text": "Partly sunny, with a high near 63. East wind 5 to 8 mph becoming south. "
     },
     {
      "name": "Tonight",
@@ -600,7 +620,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -616,22 +636,14 @@
     "h": "Yellow Vests plan third Paris march Oct. 31",
     "b": "The Yellow Vests and the CGT union have requested routes starting at Place de la Bastille for another day of cost-of-living protests on Saturday.",
     "date": "2026-10-28",
-    "publisher": "The Local France",
-    "title": "MAP: The routes for the Paris protest march on October 31st",
     "url": "https://www.thelocal.fr/20261028/map-the-route-for-the-paris-protest-march-on-october-31st",
-    "published": "2026-10-28T11:05:33Z",
-    "updated": "2026-10-28T11:05:34Z",
     "gathered": "2026-10-28T14:18:50Z"
    },
    {
     "h": "Most fake riot posts came from abroad, minister says",
     "b": "Foreign Minister Jean-Noël Barrot said two-thirds of social media content linking the October 17th looting to immigration came from abroad.",
     "date": "2026-10-28",
-    "publisher": "The Local France",
-    "title": "Two thirds of fake news about French riots came from abroad, says minister",
     "url": "https://www.thelocal.fr/20261028/two-thirds-of-fake-news-about-french-riots-came-from-abroad-says-minister",
-    "published": "2026-10-28T11:06:20Z",
-    "updated": "2026-10-28T11:06:20Z",
     "gathered": "2026-10-28T14:18:50Z"
    },
    {
@@ -686,7 +698,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "goodnews": []
  },
  {
@@ -732,7 +744,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 53,
-     "text": "A chance of rain, mainly between 10am and 2pm, then a chance of showers and thunderstorms after 2pm.  Mostly cloudy, with a high near 53. South southwest wind 9 to 11 mph.  Chance of precipitation is 50%."
+     "text": "A chance of rain, mainly between 10am and 2pm, then a chance of showers and thunderstorms after 2pm.  Partly sunny, with a high near 53. South southwest wind 9 to 11 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Tonight",
@@ -778,7 +790,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T16:19:00Z",
+  "updatedAt": "2026-10-28T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
