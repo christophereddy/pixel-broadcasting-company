@@ -19,46 +19,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 72,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 11:52 am EDT"
+    "obs": "28 Oct 14:52 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 73,
-     "text": "Mostly sunny, with a high near 73. East wind around 10 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Partly cloudy, with a low around 55. East wind around 5 mph, with gusts as high as 15 mph. "
+     "text": "Partly cloudy, with a low around 55. East wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 77,
-     "text": "Mostly sunny, with a high near 77. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly sunny, with a high near 77. Northeast wind 5 to 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Mostly clear, with a low around 53. Calm wind. "
+     "temp": 54,
+     "text": "Mostly clear, with a low around 54. Calm wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 78,
-     "text": "Sunny, with a high near 78. Calm wind becoming east around 5 mph in the afternoon. "
+     "temp": 79,
+     "text": "Mostly sunny, with a high near 79. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59."
+     "temp": 60,
+     "text": "Mostly cloudy, with a low around 60."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Mostly cloudy, with a high near 73."
     }
    ]
   },
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -106,20 +106,14 @@
    "now": {
     "temp": 51,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 11:54 am EDT"
+    "obs": "28 Oct 14:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Partly sunny, with a high near 56. Light south wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly cloudy during the early evening, then gradual clearing, with a low around 43. Southwest wind around 5 mph. "
+     "text": "Mostly cloudy during the early evening, then gradual clearing, with a low around 43. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Thursday",
@@ -144,6 +138,12 @@
      "kind": "low",
      "temp": 42,
      "text": "Clear, with a low around 42. Northwest wind around 7 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 56,
+     "text": "Sunny, with a high near 56. Northwest wind 7 to 9 mph. "
     }
    ]
   },
@@ -159,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -171,6 +171,17 @@
   },
   "local": [
    {
+    "h": "Firm pitches domed Bears stadium at Sox site",
+    "b": "Skidmore, Owings and Merrill released renderings of a domed Bears stadium and mixed-use district at Bridgeport's Rate Field, presented by Sterling Bay.",
+    "date": "2026-10-28",
+    "publisher": "WBEZ",
+    "title": "Bridgeport Bears? Chicago firm releases plans for glitzy new domed stadium at Sox park site",
+    "url": "https://www.wbez.org/sports/2026/10/28/bridgeport-bears-domed-stadium-proposal-sox-rate-field",
+    "published": "2026-10-28T19:29:25Z",
+    "updated": "2026-10-28T19:29:25Z",
+    "gathered": "2026-10-28T19:45:42Z"
+   },
+   {
     "h": "Magnificent Mile sees retail revival",
     "b": "The North Michigan Avenue shopping stretch is seeing an abundance of new store openings, with many big-name brands planning locations within the next year.",
     "date": "2026-10-27",
@@ -181,67 +192,59 @@
     "h": "Northwestern launches transplant institute",
     "b": "The Northwestern Medicine Transplant Institute, which has raised about $26 million in philanthropic funding, brings together four existing programs and about 300 staff.",
     "date": "2026-10-27",
-    "publisher": "WBEZ",
-    "title": "Newly launched Northwestern Medicine Transplant Institute aims to lead way for transplant innovation",
     "url": "https://www.wbez.org/health-medicine/2026/10/27/northwestern-medicine-transplant-institute",
-    "published": "2026-10-27T22:26:23Z",
-    "updated": "2026-10-27T22:26:23Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
     "h": "Lake Street bridge delay extends CTA disruptions",
     "b": "CTA service across the Lake Street bridge on the Green and Pink lines, expected to resume Wednesday, has been put off until \"later this week.\"",
     "date": "2026-10-27",
-    "publisher": "WBEZ",
-    "title": "Resumption of CTA train service across Lake Street bridge delayed yet again",
     "url": "https://www.wbez.org/transportation/2026/10/27/lake-street-bridge-work-completion-delayed-cta-green-pink",
-    "published": "2026-10-28T02:20:01Z",
-    "updated": "2026-10-28T02:20:01Z",
     "gathered": "2026-10-28T04:12:36Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 75,
     "cond": "Fair",
-    "obs": "28 Oct 10:53 am CDT"
+    "obs": "28 Oct 13:53 pm CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74. South wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 74. South wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 61,
-     "text": "Partly cloudy, with a low around 61. South wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "temp": 59,
+     "text": "Increasing clouds, with a low around 59. South wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 68,
-     "text": "A 20 percent chance of showers before 2pm.  Partly sunny, with a high near 68. Southwest wind 10 to 15 mph becoming west northwest in the afternoon. "
+     "temp": 62,
+     "text": "A 40 percent chance of showers and thunderstorms, mainly between 10am and 4pm.  Mostly cloudy, then gradually becoming sunny, with a high near 62. Southwest wind 10 to 15 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. North northwest wind 5 to 10 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. North northwest wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 61,
-     "text": "Partly sunny, with a high near 61. East northeast wind 5 to 10 mph. "
+     "temp": 59,
+     "text": "Mostly sunny, with a high near 59. North northeast wind 5 to 10 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 53,
-     "text": "A 30 percent chance of showers, mainly after 1am.  Cloudy, with a low around 53."
+     "text": "A 50 percent chance of showers and thunderstorms, mainly after 1am.  Mostly cloudy, with a low around 53."
     }
    ]
   },
@@ -257,7 +260,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -265,7 +268,7 @@
     "b": "WBEZ and the Sun-Times received more than 50 submissions, from movie scenes to a fire-breathing dragon, and chose three favorites.",
     "date": "2026-10-28",
     "publisher": "WBEZ",
-    "title": "We received more than 50 submissions of Chicago’s best Halloween displays. And the winner is…",
+    "title": "We received more than 50 submissions of Chicago’s best Halloween displays. And the winner is …",
     "url": "https://www.wbez.org/arts-culture/2026/10/28/chicago-best-halloween-displays",
     "published": "2026-10-28T10:35:00Z",
     "updated": "2026-10-28T10:35:05Z",
@@ -275,11 +278,7 @@
     "h": "North Lawndale mural park to open next summer",
     "b": "West Edge Arts, with a community center, garden and performance space, will open on a former auto parts shop site on West Ogden Avenue, featuring artists including Dorian Sylvain and Bob Faust.",
     "date": "2026-10-27",
-    "publisher": "WBEZ",
-    "title": "A new West Side mural park is set to open next summer, with a community center, garden and performance space",
     "url": "https://www.wbez.org/arts/2026/10/27/west-edge-arts-north-lawndale-mural-park-public-art-bob-faust-dorian-sylvain",
-    "published": "2026-10-27T20:49:42Z",
-    "updated": "2026-10-27T20:49:42Z",
     "gathered": "2026-10-27T21:26:22Z"
    },
    {
@@ -299,47 +298,43 @@
   },
   "local": [],
   "weather": {
-   "now": {
-    "temp": 48,
-    "cond": "Mostly Cloudy",
-    "obs": "28 Oct 08:58 am MDT"
-   },
+   "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 69,
-     "text": "Mostly sunny, with a high near 69. Calm wind becoming east 5 to 7 mph in the afternoon. "
+     "temp": 68,
+     "text": "Mostly sunny, with a high near 68. East wind 5 to 8 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Partly cloudy, with a low around 39. East northeast wind 5 to 7 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 39. East northeast wind 5 to 7 mph becoming calm  in the evening. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 67,
-     "text": "Mostly sunny, with a high near 67. Calm wind becoming east northeast around 6 mph in the afternoon. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. Calm wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Partly cloudy, with a low around 41. North northeast wind around 6 mph becoming calm  in the evening. "
+     "temp": 43,
+     "text": "Partly cloudy, with a low around 43. North northeast wind around 6 mph becoming calm  in the evening. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 65,
-     "text": "Partly sunny, with a high near 65. Calm wind becoming east northeast around 6 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 65. Calm wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43."
+     "temp": 44,
+     "text": "Partly cloudy, with a low around 44."
     }
    ]
   },
@@ -355,7 +350,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -381,10 +376,7 @@
     "h": "'Bunnyhenge' park fight shapes Newport Beach race",
     "b": "A proposal to build a new police headquarters and jail on parkland around the Newport Beach Civic Center has become a top issue in the November City Council race.",
     "date": "2026-10-27",
-    "publisher": "LAist",
-    "title": "In this OC election, fight over 'Bunnyhenge' and new police station looms large",
     "url": "https://laist.com/news/politics/newport-beach-election-bunnyhenge-police-headquarters-proposal",
-    "published": "2026-10-27T21:37:48Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
@@ -398,11 +390,7 @@
     "h": "Childcare costs push families into card debt",
     "b": "In LA County, childcare eats up nearly 20% of median household income, and families say they're shifting more of the cost onto credit cards.",
     "date": "2026-10-27",
-    "publisher": "LAist",
-    "title": "For many California parents, paying for childcare means racking up credit card debt",
     "url": "https://laist.com/news/education/early-childhood-education-pre-k/california-families-childcare-costs-credit-card-debt",
-    "published": "2026-10-27T12:00:00Z",
-    "updated": "2026-10-28T05:09:33Z",
     "gathered": "2026-10-27T13:22:01Z"
    }
   ],
@@ -410,16 +398,16 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 76,
-     "text": "Patchy fog before 11am.  Otherwise, cloudy early, then becoming mostly sunny, with a high near 76. Calm wind becoming south southwest around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 76. South southwest wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 58,
-     "text": "Mostly cloudy, with a low around 58. Southwest wind around 5 mph becoming calm  in the evening. "
+     "temp": 61,
+     "text": "Increasing clouds, with a low around 61. Southwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Thursday",
@@ -430,20 +418,20 @@
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. South wind 5 to 10 mph. "
+     "temp": 62,
+     "text": "A 20 percent chance of showers after 11pm.  Mostly cloudy, with a low around 62. South southeast wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 71,
-     "text": "Partly sunny, with a high near 71. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
+     "temp": 72,
+     "text": "Mostly cloudy, with a high near 72. Light and variable wind becoming south southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 57,
-     "text": "Mostly cloudy, with a low around 57."
+     "temp": 61,
+     "text": "Mostly cloudy, with a low around 61."
     }
    ]
   },
@@ -459,7 +447,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -470,6 +458,17 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "E-bike battery caused fatal Bronx fire, FDNY says",
+    "b": "The fire at the Patterson Houses in Mott Haven killed an 11-year-old boy and critically injured four other people early Wednesday.",
+    "date": "2026-10-28",
+    "publisher": "Gothamist",
+    "title": "Lithium-ion battery caused Bronx fire that killed 11-year-old, FDNY says",
+    "url": "https://gothamist.com/news/lithium-ion-battery-caused-bronx-fire-that-killed-11-year-old-fdny-says",
+    "published": "2026-10-28T17:54:00Z",
+    "updated": "2026-10-28T18:11:00Z",
+    "gathered": "2026-10-28T19:45:42Z"
+   },
    {
     "h": "NYPD promises tight NYC Marathon security",
     "b": "Drones, dogs, horses and helicopters will watch the race; Commissioner Jessica Tisch said there are \"no known specific credible threats.\"",
@@ -497,8 +496,7 @@
     "publisher": "Gothamist",
     "title": "NJ Gov. Sherrill: Election is secure, noncitizens taken off voter rolls",
     "url": "https://gothamist.com/news/nj-gov-sherrill-election-is-secure-noncitizens-taken-off-voter-rolls",
-    "published": "2026-10-27T23:42:00Z",
-    "updated": "2026-10-28T03:14:00Z",
+    "published": "2026-10-28T03:14:00Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
@@ -548,8 +546,7 @@
     "publisher": "Gothamist",
     "title": "Ex-NYPD officer again faces murder charge in George Washington Bridge shooting",
     "url": "https://gothamist.com/news/ex-nypd-officer-again-faces-murder-charge-in-george-washington-bridge-shooting",
-    "published": "2026-10-27T20:35:00Z",
-    "updated": "2026-10-27T22:17:00Z",
+    "published": "2026-10-27T22:17:00Z",
     "gathered": "2026-10-27T21:26:22Z"
    },
    {
@@ -565,46 +562,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 61,
     "cond": "Fair",
-    "obs": "28 Oct 11:51 am EDT"
+    "obs": "28 Oct 14:51 pm EDT"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 63,
-     "text": "Partly sunny, with a high near 63. East wind 5 to 8 mph becoming south. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 53,
-     "text": "Partly cloudy, with a low around 53. South wind 5 to 7 mph becoming light and variable  after midnight. "
+     "temp": 54,
+     "text": "Mostly cloudy during the early evening, then gradual clearing, with a low around 54. South wind 5 to 8 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. Light west wind becoming southwest 5 to 9 mph in the morning. "
+     "text": "Sunny, with a high near 68. Light and variable wind becoming southwest 5 to 9 mph in the morning. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59. Southwest wind 8 to 10 mph. "
+     "text": "Partly cloudy, with a low around 59. Southwest wind 9 to 11 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 70,
-     "text": "Sunny, with a high near 70. Northwest wind 9 to 11 mph, with gusts as high as 22 mph. "
+     "temp": 69,
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 69. Northwest wind 9 to 15 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52."
+     "text": "Mostly clear, with a low around 52. Northwest wind 10 to 14 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 61,
+     "text": "Sunny, with a high near 61."
     }
    ]
   },
@@ -620,7 +617,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -698,7 +695,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "goodnews": []
  },
  {
@@ -741,40 +738,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 53,
-     "text": "A chance of rain, mainly between 10am and 2pm, then a chance of showers and thunderstorms after 2pm.  Partly sunny, with a high near 53. South southwest wind 9 to 11 mph.  Chance of precipitation is 50%."
+     "text": "A chance of showers and thunderstorms before 5pm, then a chance of rain and thunderstorms after 5pm.  Partly sunny, with a high near 53. South southwest wind around 10 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 41,
-     "text": "Rain likely, mainly after 1am.  Mostly cloudy, with a low around 41. Southeast wind 5 to 9 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 42,
+     "text": "Rain likely, mainly after 11pm.  Increasing clouds, with a low around 42. South wind 6 to 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 52,
-     "text": "A chance of rain before 11am, then a slight chance of rain after 4pm.  Cloudy, then gradually becoming mostly sunny, with a high near 52. Southeast wind around 6 mph becoming calm  in the afternoon.  Chance of precipitation is 40%."
+     "temp": 53,
+     "text": "A chance of rain before 4pm, then a chance of rain after 5pm.  Partly sunny, with a high near 53. South southeast wind around 5 mph becoming calm  in the morning.  Chance of precipitation is 30%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 40 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 41. West northwest wind around 5 mph becoming calm  in the evening. "
+     "text": "A chance of rain before 3am, then a slight chance of rain after 4am.  Partly cloudy, with a low around 41. Calm wind.  Chance of precipitation is 30%."
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 51,
-     "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 51. Calm wind becoming south around 6 mph in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 52,
+     "text": "A 30 percent chance of rain, mainly before 11am.  Partly sunny, with a high near 52. Calm wind. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 39,
-     "text": "A 30 percent chance of rain before 11pm.  Mostly cloudy, with a low around 39."
+     "temp": 40,
+     "text": "Mostly cloudy, with a low around 40."
     }
    ]
   },
@@ -790,7 +787,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T19:12:00Z",
+  "updatedAt": "2026-10-28T22:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
