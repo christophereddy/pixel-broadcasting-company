@@ -5,24 +5,12 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Senators seek probe of Folkston ICE center",
-    "b": "After another detainee death, Sens. Raphael Warnock and Jon Ossoff asked DHS to investigate whether officers retaliated against hunger strikers at the South Georgia facility, including placing at least 13 in solitary confinement.",
-    "date": "2026-10-26",
-    "publisher": "WABE",
-    "title": "Another death at Georgia ICE facility as hunger continues",
-    "url": "https://www.wabe.org/warnock-ossoff-call-for-investigation-at-south-georgia-ice-facility-as-hunger-strike-said-to-continue/",
-    "published": "2026-10-26T14:25:26Z",
-    "updated": "2026-10-26T14:29:48Z",
-    "gathered": "2026-10-26T14:28:24Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 74,
+    "temp": 64,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 16:52 pm EDT"
+    "obs": "27 Oct 19:52 pm EDT"
    },
    "periods": [
     {
@@ -75,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -94,20 +82,13 @@
     "title": "Matthew Farwell’s twin testifies against his brother over the death of Sandra Birchmore",
     "url": "https://www.wbur.org/news/2026/10/27/matthew-farwell-trial-william-sandra-birchmore-death",
     "gathered": "2026-10-27T21:26:22Z"
-   },
-   {
-    "h": "Mass. voters to decide on 2024 gun law",
-    "b": "Question 9 asks whether to uphold a law requiring all firearms to be serialized and registered with the state and broadening the ban on 'assault-style' guns. Opponents forced the referendum by petition.",
-    "date": "2026-10-26",
-    "url": "https://www.pbs.org/newshour/nation/massachusetts-and-idaho-put-guns-on-the-ballot-one-to-restrict-them-the-other-to-honor-them",
-    "gathered": "2026-10-26T20:03:43Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "A Few Clouds",
-    "obs": "27 Oct 16:54 pm EDT"
+    "temp": 45,
+    "cond": "Fair",
+    "obs": "27 Oct 19:54 pm EDT"
    },
    "periods": [
     {
@@ -160,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -170,37 +151,49 @@
    "short": "CHI",
    "tz": "America/Chicago"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Northwestern launches transplant institute",
+    "b": "The Northwestern Medicine Transplant Institute, which has raised about $26 million in philanthropic funding, brings together four existing programs and about 300 staff.",
+    "date": "2026-10-27",
+    "publisher": "WBEZ",
+    "title": "Newly launched Northwestern Medicine Transplant Institute aims to lead way for transplant innovation",
+    "url": "https://www.wbez.org/health-medicine/2026/10/27/northwestern-medicine-transplant-institute",
+    "published": "2026-10-27T22:26:23Z",
+    "updated": "2026-10-27T22:26:23Z",
+    "gathered": "2026-10-28T00:39:28Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 68,
     "cond": "Overcast",
-    "obs": "27 Oct 15:53 pm CDT"
+    "obs": "27 Oct 17:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 55. Southeast wind 5 to 10 mph becoming south southwest after midnight. "
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 55. South wind around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 72,
-     "text": "Sunny, with a high near 72. South southwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Sunny, with a high near 72. South wind 5 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 61,
-     "text": "A 20 percent chance of showers after 1am.  Mostly clear, with a low around 61. South wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "A 20 percent chance of showers after 1am.  Mostly clear, with a low around 61. South wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 66,
-     "text": "A 30 percent chance of showers before 1pm.  Mostly sunny, with a high near 66. South southwest wind 10 to 15 mph becoming west northwest in the afternoon. "
+     "text": "A 30 percent chance of showers before 1pm.  Mostly sunny, with a high near 66. Southwest wind 10 to 15 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Thursday Night",
@@ -228,7 +221,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -246,19 +239,8 @@
     "h": "Soul Train Awards come home to Chicago",
     "b": "For the first time in its nearly 40-year history, the ceremony will be held in Chicago, at the Harris Theater on Nov. 5. Chaka Khan will receive the Classic Soul Honor.",
     "date": "2026-10-27",
-    "publisher": "WBEZ",
-    "title": "The Soul Train Awards are coming ‘home’ to Chicago for the first time",
     "url": "https://www.wbez.org/movies-tv/2026/10/27/soul-train-awards-chicago-november-chaka-khan-bet",
-    "published": "2026-10-27T14:26:59Z",
-    "updated": "2026-10-27T14:26:59Z",
     "gathered": "2026-10-27T16:47:44Z"
-   },
-   {
-    "h": "Music fans rally for Waco Brothers' Schlabowske",
-    "b": "Music fans are rallying to support Dean Schlabowske of the Waco Brothers, who faces six-figure medical costs after an acute myeloid leukemia diagnosis.",
-    "date": "2026-10-26",
-    "url": "https://www.wbez.org/music/2026/10/26/music-fans-rally-to-support-dean-schlabowske-of-the-waco-brothers-after-leukemia-diagnosis",
-    "gathered": "2026-10-26T14:28:24Z"
    }
   ]
  },
@@ -271,17 +253,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Partly Cloudy",
-    "obs": "27 Oct 14:58 pm MDT"
+    "temp": 63,
+    "cond": "A Few Clouds",
+    "obs": "27 Oct 16:58 pm MDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. Northeast wind around 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -310,7 +286,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Partly cloudy, with a low around 42."
+     "text": "Partly cloudy, with a low around 42. North northeast wind around 6 mph becoming calm  in the evening. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Partly sunny, with a high near 63."
     }
    ]
   },
@@ -326,7 +308,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -337,6 +319,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Record high tides flood Southern California coast",
+    "b": "The San Pedro tide gauge read 8.18 feet Tuesday, its highest since records began more than a century ago, as high water spilled over seawalls along L.A. and Orange County coasts.",
+    "date": "2026-10-27",
+    "publisher": "LAist",
+    "title": "Record-breaking tides and coastal flooding are 'a preview' of what’s coming, scientists say",
+    "url": "https://laist.com/news/climate-environment/tides-coastal-flooding-el-nino",
+    "published": "2026-10-27T22:52:18Z",
+    "updated": "2026-10-27T23:38:02Z",
+    "gathered": "2026-10-28T00:39:28Z"
+   },
+   {
+    "h": "'Bunnyhenge' park fight shapes Newport Beach race",
+    "b": "A proposal to build a new police headquarters and jail on parkland around the Newport Beach Civic Center has become a top issue in the November City Council race.",
+    "date": "2026-10-27",
+    "publisher": "LAist",
+    "title": "In this OC election, fight over 'Bunnyhenge' and new police station looms large",
+    "url": "https://laist.com/news/politics/newport-beach-election-bunnyhenge-police-headquarters-proposal",
+    "published": "2026-10-27T21:37:48Z",
+    "updated": "2026-10-28T00:04:11Z",
+    "gathered": "2026-10-28T00:39:28Z"
+   },
    {
     "h": "Court won't block California counting 20,000 ballots",
     "b": "A 2-1 appeals panel declined to stop California from counting about 20,000 ballots the Justice Department says likely belong to noncitizens, setting up another hearing Tuesday before the Nov. 3 election.",
@@ -356,37 +360,13 @@
     "title": "For many California parents, paying for childcare means racking up credit card debt",
     "url": "https://laist.com/news/education/early-childhood-education-pre-k/california-families-childcare-costs-credit-card-debt",
     "published": "2026-10-27T12:00:00Z",
-    "updated": "2026-10-27T15:55:25Z",
+    "updated": "2026-10-27T23:51:07Z",
     "gathered": "2026-10-27T13:22:01Z"
-   },
-   {
-    "h": "Walter Koenig, Star Trek's Chekov, dies at 90",
-    "b": "Koenig, who played Ensign Chekov on the original 'Star Trek' series and several movies, died Monday at his home in North Hollywood, his agent said.",
-    "date": "2026-10-26",
-    "url": "https://laist.com/news/arts-and-entertainment/walter-koenig-ensign-chekov-on-original-star-trek-series-dies-at-90",
-    "gathered": "2026-10-26T20:03:43Z"
-   },
-   {
-    "h": "LA speed cameras begin issuing warnings",
-    "b": "Twenty-six of the city's 125 speed cameras are now live, issuing warnings for 60 days before fines start at $50 for going 11 mph over the limit.",
-    "date": "2026-10-26",
-    "publisher": "LAist",
-    "title": "Start watching your speed, LA speed cameras go online today",
-    "url": "https://laist.com/news/transportation/start-watching-your-speed-la-speed-cameras-go-online-today",
-    "published": "2026-10-26T18:31:34Z",
-    "updated": "2026-10-26T18:40:34Z",
-    "gathered": "2026-10-26T20:03:43Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 77,
-     "text": "Mostly sunny, with a high near 77. Southwest wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -415,7 +395,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 59,
-     "text": "A 20 percent chance of showers after 11pm.  Mostly cloudy, with a low around 59."
+     "text": "A 20 percent chance of showers after 11pm.  Mostly cloudy, with a low around 59. South wind 5 to 10 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Partly sunny, with a high near 73."
     }
    ]
   },
@@ -431,7 +417,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -442,6 +428,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Sherrill says NJ election is secure",
+    "b": "Gov. Mikie Sherrill said noncitizens have been taken off voter rolls after a software issue wrongly registered up to 6,600 at the Motor Vehicle Commission in 2023 and 2024.",
+    "date": "2026-10-27",
+    "publisher": "Gothamist",
+    "title": "NJ Gov. Sherrill: Election is secure, noncitizens taken off voter rolls",
+    "url": "https://gothamist.com/news/nj-gov-sherrill-election-is-secure-noncitizens-taken-off-voter-rolls",
+    "published": "2026-10-27T23:42:19Z",
+    "gathered": "2026-10-28T00:39:28Z"
+   },
    {
     "h": "1 killed, 4 hurt in Elizabeth vigil shooting",
     "b": "Shots rang out during a candlelight vigil in Elizabeth, New Jersey, Monday night. No arrests have been made, Union County prosecutors said.",
@@ -483,36 +479,6 @@
     "gathered": "2026-10-27T10:47:50Z"
    },
    {
-    "h": "Pressure grows on Mamdani over specialized schools",
-    "b": "Former schools chancellor David Banks, Public Advocate Jumaane Williams and three borough presidents are expected to call Tuesday for admissions reform at the city's specialized high schools.",
-    "date": "2026-10-26",
-    "publisher": "Gothamist",
-    "title": "Pressure grows on Mamdani to reform admissions to NYC specialized high schools",
-    "url": "https://gothamist.com/news/pressure-grows-on-mamdani-to-reform-admissions-to-nyc-specialized-high-schools",
-    "published": "2026-10-26T20:03:00Z",
-    "gathered": "2026-10-26T20:03:43Z"
-   },
-   {
-    "h": "Council to weigh juvenile jail changes",
-    "b": "The NYC Council will consider changes to juvenile detention as assaults and overcrowding rise. A mother says her son was attacked by other teens while held at Horizon in the Bronx.",
-    "date": "2026-10-26",
-    "publisher": "Gothamist",
-    "title": "NYC Council to weigh changes to juvenile jails as assaults and overcrowding rise",
-    "url": "https://gothamist.com/news/nyc-council-to-weigh-changes-to-juvenile-jails-as-assaults-and-overcrowding-rise",
-    "published": "2026-10-26T16:10:00Z",
-    "gathered": "2026-10-26T16:17:54Z"
-   },
-   {
-    "h": "NYers face higher health costs as enrollment opens",
-    "b": "New Yorkers without employer coverage can shop for 2027 plans on the state marketplace starting Nov. 1, and many will feel the effects of federal health spending cuts, including reduced eligibility for the Essential Plan.",
-    "date": "2026-10-26",
-    "publisher": "Gothamist",
-    "title": "What NYers can expect as open enrollment for health insurance begins",
-    "url": "https://gothamist.com/news/what-nyers-can-expect-as-open-enrollment-for-health-insurance-begins",
-    "published": "2026-10-26T10:00:56Z",
-    "gathered": "2026-10-26T10:16:57Z"
-   },
-   {
     "h": "Ex-detective again faces murder charge in GWB killing",
     "b": "A grand jury indicted Victor Romero, 62, on second-degree murder in the road-rage shooting death of Koran Irvine on the George Washington Bridge, after prosecutors had downgraded the charge to manslaughter.",
     "date": "2026-10-27",
@@ -520,31 +486,22 @@
     "title": "Ex-NYPD officer again faces murder charge in George Washington Bridge shooting",
     "url": "https://gothamist.com/news/ex-nypd-officer-again-faces-murder-charge-in-george-washington-bridge-shooting",
     "published": "2026-10-27T20:35:00Z",
+    "updated": "2026-10-27T22:17:00Z",
     "gathered": "2026-10-27T21:26:22Z"
-   },
-   {
-    "h": "Judge halts overnight work at Chinatown jail site",
-    "b": "A Manhattan Supreme Court judge temporarily halted after-hours construction on the new Chinatown jail after residents sued over sleep disruption, another setback for the city's plan to replace Rikers Island.",
-    "date": "2026-10-26",
-    "publisher": "Gothamist",
-    "title": "Judge temporarily halts overnight construction at NYC’s Chinatown jail",
-    "url": "https://gothamist.com/news/judge-temporarily-halts-overnight-construction-at-nycs-chinatown-jail",
-    "published": "2026-10-27T20:12:00Z",
-    "gathered": "2026-10-26T23:59:43Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 53,
     "cond": "Fair",
-    "obs": "27 Oct 16:51 pm EDT"
+    "obs": "27 Oct 19:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Partly cloudy, with a low around 49. Northeast wind around 6 mph. "
+     "text": "Partly cloudy, with a low around 49. Northeast wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -590,30 +547,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Rockefeller tree is a 76-foot upstate spruce",
-    "b": "The Norway spruce from West Edmeston will be cut Nov. 5, arrive Nov. 7 and be lit Dec. 2 with more than 50,000 LED lights and a Swarovski star.",
-    "date": "2026-10-26",
-    "publisher": "Gothamist",
-    "title": "Rockefeller Center's 2026 Christmas tree is a 76-foot spruce from Upstate New York",
-    "url": "https://gothamist.com/news/rockefeller-centers-2026-christmas-tree-is-a-76-foot-spruce-from-upstate-new-york",
-    "published": "2026-10-26T18:45:00Z",
-    "gathered": "2026-10-26T20:03:43Z"
-   },
-   {
-    "h": "East Brooklyn NYCHA homes get $636M upgrade",
-    "b": "Nearly 3,000 residents of the Reid & Park Rock developments now live in renovated apartments with new kitchens, bathrooms and modernized heating and ventilation, NYCHA said.",
-    "date": "2026-10-26",
-    "publisher": "Gothamist",
-    "title": "In East Brooklyn, aging NYCHA homes get a $636M upgrade",
-    "url": "https://gothamist.com/news/in-east-brooklyn-aging-nycha-homes-get-a-636m-upgrade",
-    "published": "2026-10-26T10:30:56Z",
-    "gathered": "2026-10-26T14:28:24Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -666,34 +602,6 @@
     "published": "2026-10-27T08:54:15Z",
     "updated": "2026-10-27T08:54:15Z",
     "gathered": "2026-10-27T10:47:50Z"
-   },
-   {
-    "h": "Protesters plan Halloween sit-ins in France",
-    "b": "Organisers of 'Act III - Halloween' plan sit-ins outside town halls and the Assemblée Nationale on Oct. 31, though no demonstrations have yet been declared to Paris police.",
-    "date": "2026-10-26",
-    "url": "https://www.thelocal.fr/20261026/protests-in-france-what-to-expect-on-october-31st",
-    "gathered": "2026-10-26T16:17:54Z"
-   },
-   {
-    "h": "Paris extends summer café terraces a month",
-    "b": "Summer terraces can stay until the end of November instead of coming down Oct. 31, at no extra charge, to support cafés, bars and restaurants hit by protest violence on Oct. 17 and 18.",
-    "date": "2026-10-26",
-    "url": "https://www.thelocal.fr/20261026/paris-extends-summer-cafe-terraces-for-another-month",
-    "gathered": "2026-10-26T14:28:24Z"
-   },
-   {
-    "h": "French rail unions join November 5 strike",
-    "b": "Four main rail unions will join Thursday, Nov. 5's cross-sector strike over the draft 2027 budget, wages, jobs and public services.",
-    "date": "2026-10-26",
-    "url": "https://www.thelocal.fr/20261026/french-rail-workers-join-november-strike",
-    "gathered": "2026-10-26T14:28:24Z"
-   },
-   {
-    "h": "Lecornu, ministers to meet student leaders",
-    "b": "Prime Minister Lecornu and education ministers Edouard Geffray and Philippe Baptiste meet student leaders Monday at Matignon after another weekend of protests over lycée conditions and the cost of living.",
-    "date": "2026-10-26",
-    "url": "https://www.thelocal.fr/20261026/frances-pm-and-key-ministers-to-meet-student-leaders-monday",
-    "gathered": "2026-10-26T10:16:57Z"
    }
   ],
   "weather": {
@@ -712,7 +620,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "goodnews": []
  },
  {
@@ -723,61 +631,49 @@
   },
   "local": [
    {
+    "h": "National Guard to help secure WA election",
+    "b": "Guard members will supplement election security in Clark, Island, King, Pierce, Snohomish and Thurston counties ahead of Nov. 3; Spokane County declined the offer.",
+    "date": "2026-10-27",
+    "publisher": "KUOW",
+    "title": "National Guard and DOJ expected around Washington's 2026 midterm election",
+    "url": "https://www.kuow.org/elections/2026-10-27/national-guard-and-doj-expected-around-washingtons-2026-midterm-election",
+    "published": "2026-10-28T00:05:58Z",
+    "updated": "2026-10-28T00:06:41Z",
+    "gathered": "2026-10-28T00:39:28Z"
+   },
+   {
+    "h": "Canadian woman dies amid WA voter fraud case",
+    "b": "Paige Adamson, 61, a permanent legal resident facing U.S. voter fraud allegations, died Oct. 18 in Point Roberts after a fall; her son says she feared leaving home for medical care.",
+    "date": "2026-10-27",
+    "publisher": "KUOW",
+    "title": "'An innocent mistake.' Canadian woman dies in border town amid deportation fears in WA voter fraud case",
+    "url": "https://www.kuow.org/immigration/2026-10-27/an-innocent-mistake-canadian-woman-dies-in-border-town-amid-deportation-fears-in-wa-voter-fraud-case",
+    "published": "2026-10-27T22:29:37Z",
+    "updated": "2026-10-27T22:39:48Z",
+    "gathered": "2026-10-28T00:39:28Z"
+   },
+   {
     "h": "ICE arrests surge at Seattle-area Home Depots",
     "b": "Since August, Home Depot parking lots where day laborers wait for work have become hotspots for immigration arrests around Seattle.",
     "date": "2026-10-27",
-    "publisher": "KUOW",
-    "title": "ICE arrests surge at Seattle-area Home Depot parking lots. Neighbors are on the lookout",
     "url": "https://www.kuow.org/immigration/2026-10-27/ice-arrests-surge-at-seattle-area-home-depot-parking-lots",
-    "published": "2026-10-27T15:00:00Z",
-    "updated": "2026-10-27T17:06:57Z",
     "gathered": "2026-10-27T16:47:44Z"
    },
    {
-    "h": "Seattle schools weigh merging at least 6 schools",
-    "b": "Families at Orca K-8, Martin Luther King Jr., Sacajawea, John Rogers, View Ridge and Decatur were emailed Oct. 23 about proposed mergers for the 2027-28 school year, two years after a plan to close four schools died.",
-    "date": "2026-10-26",
-    "url": "https://www.kuow.org/education/2026-10-26/seattle-public-schools-weighs-school-mergers-for-at-least-six-schools",
-    "gathered": "2026-10-27T01:12:41Z"
-   },
-   {
-    "h": "Council moves to restore fire overtime",
-    "b": "Seattle City Council members are coordinating to restore about $7 million in Seattle Fire Department overtime that Mayor Wilson proposed cutting, among a flood of budget adds.",
-    "date": "2026-10-26",
-    "url": "https://www.kuow.org/governing/2026-10-26/seattle-city-council-wants-to-restore-fire-department-overtime-among-flood-of-budget-adds",
-    "gathered": "2026-10-26T23:59:43Z"
-   },
-   {
-    "h": "DOJ asks Washington to set aside 400 ballots",
-    "b": "The Justice Department asked the state to hold ballots from 400 people it says may be noncitizens until their eligibility is confirmed. Secretary of State Steve Hobbs is reviewing the demand.",
-    "date": "2026-10-26",
-    "url": "https://www.pbs.org/newshour/politics/trump-administration-asks-washington-state-to-set-aside-ballots-from-400-voters-it-says-may-be-noncitizens",
-    "gathered": "2026-10-26T23:59:43Z"
-   },
-   {
-    "h": "Microsoft offers buyouts to a quarter of workforce",
-    "b": "The Redmond company is offering voluntary exit packages to about 60,000 employees at the vice president level and below, comparable to its standard severance, as it further reduces headcount.",
-    "date": "2026-10-26",
-    "url": "https://www.kuow.org/technology/2026-10-26/microsoft-offers-voluntary-buyouts-to-a-quarter-of-its-workforce",
-    "gathered": "2026-10-26T20:03:43Z"
-   },
-   {
-    "h": "Loggers say Roadless Rule repeal won't fix woes",
-    "b": "With the 25-year-old rule's formal repeal expected early next year, people who make a living in the forests say their problems are bigger than forest access, starting with record-high diesel prices.",
-    "date": "2026-10-26",
-    "url": "https://www.kuow.org/npr-news/2026-10-26/loggers-say-roadless-rule-repeal-wont-solve-their-biggest-challenges",
-    "gathered": "2026-10-26T10:16:57Z"
+    "h": "Seattle confirms 21 schools up for possible merger",
+    "b": "Seattle Public Schools confirmed the schools that could be merged ahead of the 2027-28 school year; meetings with families will take place in November and December.",
+    "date": "2026-10-27",
+    "publisher": "KUOW",
+    "title": "Seattle Public Schools confirms 21 schools are up for potential merger",
+    "url": "https://www.kuow.org/education/2026-10-27/seattle-public-schools-confirms-21-schools-are-up-for-potential-merger",
+    "published": "2026-10-27T23:44:12Z",
+    "updated": "2026-10-27T23:44:12Z",
+    "gathered": "2026-10-28T00:39:28Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "A 40 percent chance of rain, mainly before 5pm.  Partly sunny, with a high near 56. South southwest wind 8 to 11 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -807,6 +703,12 @@
      "kind": "low",
      "temp": 42,
      "text": "A 50 percent chance of rain, mainly after 11pm.  Mostly cloudy, with a low around 42."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 52,
+     "text": "Rain likely, mainly before 11am.  Mostly cloudy, with a high near 52. Chance of precipitation is 60%."
     }
    ]
   },
@@ -822,7 +724,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-27T22:13:00Z",
+  "updatedAt": "2026-10-28T01:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
