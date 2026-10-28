@@ -5,22 +5,33 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "UPS raises full-year outlook ahead of holidays",
+    "b": "CEO Carol Tomé told investors 70% of packages will be processed through centers using robotics and AI, and expects daily volume to rise 25% over the next three months.",
+    "date": "2026-10-28",
+    "publisher": "WABE",
+    "title": "UPS raises full year outlook ahead of holiday surge",
+    "url": "https://www.wabe.org/ups-raises-full-year-outlook-ahead-of-holiday-surge/",
+    "published": "2026-10-28T10:00:00Z",
+    "gathered": "2026-10-28T10:12:48Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 02:52 am EDT"
+    "temp": 55,
+    "cond": "Mostly Cloudy",
+    "obs": "28 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 73,
      "text": "Partly sunny, with a high near 73. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 55,
      "text": "Partly cloudy, with a low around 55. East wind around 5 mph, with gusts as high as 15 mph. "
@@ -41,7 +52,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 78,
-     "text": "Sunny, with a high near 78."
+     "text": "Sunny, with a high near 78. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
@@ -63,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,57 +86,64 @@
   },
   "local": [
    {
+    "h": "Mass. Lottery tries scented scratch tickets",
+    "b": "Peppermint-scented Candy Cane Cash Blowout tickets are the first scented holiday tickets, as scratch ticket sales are down 6% this fiscal year.",
+    "date": "2026-10-28",
+    "publisher": "WBUR",
+    "title": "Scratch and sniff: Scented offering eyed to lift sagging scratch ticket sales",
+    "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
+    "gathered": "2026-10-28T10:12:48Z"
+   },
+   {
     "h": "Farwell's twin testifies against him in Birchmore trial",
     "b": "William Farwell testified in the federal trial of his brother Matthew, accused of killing 23-year-old Sandra Birchmore in her Canton apartment in 2021 and staging it as a suicide. Matthew Farwell has pleaded not guilty.",
     "date": "2026-10-27",
-    "publisher": "WBUR",
-    "title": "Matthew Farwell’s twin testifies against his brother over the death of Sandra Birchmore",
     "url": "https://www.wbur.org/news/2026/10/27/matthew-farwell-trial-william-sandra-birchmore-death",
     "gathered": "2026-10-27T21:26:22Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 40,
-    "cond": "A Few Clouds",
-    "obs": "28 Oct 02:54 am EDT"
+    "temp": 38,
+    "cond": "Fair",
+    "obs": "28 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Increasing clouds, with a high near 56. Northwest wind 6 to 8 mph becoming south in the afternoon. "
+     "text": "Increasing clouds, with a high near 56. Light and variable wind. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. Southwest wind around 9 mph. "
+     "text": "Mostly cloudy during the early evening, then gradual clearing, with a low around 43. Southwest wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. Southwest wind 8 to 11 mph. "
+     "temp": 68,
+     "text": "Sunny, with a high near 68. Southwest wind 6 to 10 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a low around 55. Southwest wind 7 to 9 mph. "
+     "temp": 54,
+     "text": "Mostly clear, with a low around 54. Southwest wind around 8 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 69,
-     "text": "Sunny, with a high near 69. West wind 7 to 11 mph. "
+     "temp": 68,
+     "text": "Sunny, with a high near 68. West wind 7 to 11 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. Northwest wind 6 to 8 mph. "
+     "temp": 42,
+     "text": "Clear, with a low around 42. Northwest wind around 7 mph. "
     }
    ]
   },
@@ -141,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -186,25 +204,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 58,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 01:53 am CDT"
+    "obs": "28 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 56,
-     "text": "Partly cloudy, with a low around 56. South wind around 5 mph. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 74,
      "text": "Sunny, with a high near 74. South wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 61,
      "text": "Partly cloudy, with a low around 61. South wind 10 to 15 mph, with gusts as high as 25 mph. "
@@ -224,8 +236,14 @@
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 62,
-     "text": "Partly sunny, with a high near 62."
+     "temp": 61,
+     "text": "Partly sunny, with a high near 61. East northeast wind 5 to 10 mph. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "A 30 percent chance of showers, mainly after 1am.  Cloudy, with a low around 53."
     }
    ]
   },
@@ -241,7 +259,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -273,25 +291,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Fair",
-    "obs": "28 Oct 00:58 am MDT"
+    "temp": 42,
+    "cond": "Partly Cloudy",
+    "obs": "28 Oct 03:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 40,
-     "text": "Mostly clear, with a low around 40. South southwest wind 3 to 5 mph. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Partly sunny, with a high near 69. Calm wind becoming east 5 to 7 mph in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Partly cloudy, with a low around 39. East northeast wind 5 to 7 mph becoming calm  in the evening. "
@@ -312,7 +324,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 65,
-     "text": "Partly sunny, with a high near 65."
+     "text": "Partly sunny, with a high near 65. Calm wind becoming east northeast around 6 mph in the afternoon. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Partly cloudy, with a low around 43."
     }
    ]
   },
@@ -328,7 +346,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -388,12 +406,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 58,
-     "text": "Mostly cloudy, with a low around 58. East southeast wind around 5 mph. "
-    },
-    {
      "name": "Wednesday",
      "kind": "high",
      "temp": 76,
@@ -422,6 +434,12 @@
      "kind": "high",
      "temp": 71,
      "text": "Partly sunny, with a high near 71."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 57,
+     "text": "Mostly cloudy, with a low around 57."
     }
    ]
   },
@@ -437,7 +455,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -448,6 +466,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Brooklyn's Third Avenue to get safety redesign",
+    "b": "The city will replace traffic lanes with bike lanes and shorten crossings on 2.1 miles of Third Avenue in Sunset Park, two months after nurse Jiayi Zheng was killed by a hit-and-run driver.",
+    "date": "2026-10-28",
+    "publisher": "Gothamist",
+    "title": "Mamdani plans redesign of Brooklyn's Third Avenue after nurse killed in hit-and-run",
+    "url": "https://gothamist.com/news/mamdani-plans-redesign-of-brooklyns-third-avenue-after-nurse-killed-in-hit-and-run",
+    "published": "2026-10-28T08:00:55Z",
+    "gathered": "2026-10-28T10:12:48Z"
+   },
    {
     "h": "Sherrill says NJ election is secure",
     "b": "Gov. Mikie Sherrill said noncitizens have been taken off voter rolls after a software issue wrongly registered up to 6,600 at the Motor Vehicle Commission in 2023 and 2024.",
@@ -513,19 +541,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 46,
     "cond": "Fair",
-    "obs": "28 Oct 02:51 am EDT"
+    "obs": "28 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63. North wind 5 to 8 mph becoming south in the afternoon. "
+     "text": "Mostly sunny, with a high near 63. Northeast wind 5 to 8 mph becoming south in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 53,
      "text": "Partly cloudy, with a low around 53. South wind 5 to 7 mph becoming light and variable  after midnight. "
@@ -546,7 +574,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 70,
-     "text": "Sunny, with a high near 70."
+     "text": "Sunny, with a high near 70. Northwest wind 9 to 11 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Friday Night",
@@ -568,7 +596,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -580,6 +608,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "BHV department store seeks bankruptcy protection",
+    "b": "The landmark store opposite Paris City Hall, which employs 700 people, will remain open; the company called the procedure part of its relaunch, not its failure.",
+    "date": "2026-10-28",
+    "publisher": "The Local France",
+    "title": "Historic Paris department store seeks bankruptcy protection",
+    "url": "https://www.thelocal.fr/20261028/historic-paris-department-store-seeks-bankruptcy-protection",
+    "published": "2026-10-28T08:01:16Z",
+    "updated": "2026-10-28T08:01:16Z",
+    "gathered": "2026-10-28T10:12:48Z"
+   },
    {
     "h": "€5 fees coming on small non-EU packages",
     "b": "From Nov. 1, a new €2 handling fee on online orders under €150 from non-EU sites adds to the existing €3 EU tax. Gifts are exempt.",
@@ -606,22 +645,14 @@
     "h": "Anti-racism rallies follow deadly Trappes attack",
     "b": "Thousands rallied in Paris, Lyon and Marseille Monday after a gunman killed a 26-year-old man and wounded five in Trappes and La Verrière in an attack anti-terror police say appears racist.",
     "date": "2026-10-27",
-    "publisher": "The Local France",
-    "title": "IN PICTURES: France holds anti-racism rallies after deadly gun attack outside Paris",
     "url": "https://www.thelocal.fr/20261027/in-pictures-france-holds-anti-racism-rallies-after-deadly-gun-attack-outside-paris",
-    "published": "2026-10-27T09:32:54Z",
-    "updated": "2026-10-27T09:32:54Z",
     "gathered": "2026-10-27T10:47:50Z"
    },
    {
     "h": "France announces education reforms",
     "b": "After meeting lycée student leaders, the government announced reforms including changes to Parcoursup and more teachers, but unions urged students to keep protesting.",
     "date": "2026-10-27",
-    "publisher": "The Local France",
-    "title": "France announces education reforms, but students to continue protests",
     "url": "https://www.thelocal.fr/20261027/france-announces-education-reforms-but-students-to-continue-protests",
-    "published": "2026-10-27T08:54:15Z",
-    "updated": "2026-10-27T08:54:15Z",
     "gathered": "2026-10-27T10:47:50Z"
    }
   ],
@@ -641,7 +672,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "goodnews": []
  },
  {
@@ -655,22 +686,14 @@
     "h": "National Guard to help secure WA election",
     "b": "Guard members will supplement election security in Clark, Island, King, Pierce, Snohomish and Thurston counties ahead of Nov. 3; Spokane County declined the offer.",
     "date": "2026-10-27",
-    "publisher": "KUOW",
-    "title": "National Guard and DOJ expected around Washington's 2026 midterm election",
     "url": "https://www.kuow.org/elections/2026-10-27/national-guard-and-doj-expected-around-washingtons-2026-midterm-election",
-    "published": "2026-10-28T00:05:58Z",
-    "updated": "2026-10-28T00:06:41Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
     "h": "Canadian woman dies amid WA voter fraud case",
     "b": "Paige Adamson, 61, a permanent legal resident facing U.S. voter fraud allegations, died Oct. 18 in Point Roberts after a fall; her son says she feared leaving home for medical care.",
     "date": "2026-10-27",
-    "publisher": "KUOW",
-    "title": "'An innocent mistake.' Canadian woman dies in border town amid deportation fears in WA voter fraud case",
     "url": "https://www.kuow.org/immigration/2026-10-27/an-innocent-mistake-canadian-woman-dies-in-border-town-amid-deportation-fears-in-wa-voter-fraud-case",
-    "published": "2026-10-27T22:29:37Z",
-    "updated": "2026-10-27T22:39:48Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
@@ -684,23 +707,13 @@
     "h": "Seattle confirms 21 schools up for possible merger",
     "b": "Seattle Public Schools confirmed the schools that could be merged ahead of the 2027-28 school year; meetings with families will take place in November and December.",
     "date": "2026-10-27",
-    "publisher": "KUOW",
-    "title": "Seattle Public Schools confirms 21 schools are up for potential merger",
     "url": "https://www.kuow.org/education/2026-10-27/seattle-public-schools-confirms-21-schools-are-up-for-potential-merger",
-    "published": "2026-10-27T23:44:12Z",
-    "updated": "2026-10-27T23:44:12Z",
     "gathered": "2026-10-28T00:39:28Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 49,
-     "text": "Rain likely, mainly before 4am.  Mostly cloudy, with a steady temperature around 49. South southwest wind 9 to 13 mph, with gusts as high as 22 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -730,6 +743,12 @@
      "kind": "high",
      "temp": 51,
      "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 51. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 39,
+     "text": "A 30 percent chance of rain before 11pm.  Mostly cloudy, with a low around 39."
     }
    ]
   },
@@ -745,7 +764,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T10:12:00Z",
+  "updatedAt": "2026-10-28T13:28:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
