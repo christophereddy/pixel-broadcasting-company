@@ -19,16 +19,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 61,
     "cond": "Mostly Cloudy",
-    "obs": "28 Oct 05:52 am EDT"
+    "obs": "28 Oct 09:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 73,
-     "text": "Partly sunny, with a high near 73. East wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly sunny, with a high near 73. East wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -104,16 +104,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 38,
-    "cond": "Fair",
-    "obs": "28 Oct 05:54 am EDT"
+    "temp": 47,
+    "cond": "Mostly Cloudy",
+    "obs": "28 Oct 09:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Increasing clouds, with a high near 56. Light and variable wind. "
+     "text": "Partly sunny, with a high near 56. Light and variable wind. "
     },
     {
      "name": "Tonight",
@@ -159,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -174,8 +174,6 @@
     "h": "Magnificent Mile sees retail revival",
     "b": "The North Michigan Avenue shopping stretch is seeing an abundance of new store openings, with many big-name brands planning locations within the next year.",
     "date": "2026-10-27",
-    "publisher": "WBEZ",
-    "title": "The Magnificent Mile’s renaissance is happening",
     "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/10/27/the-magnificent-miles-renaissance-is-happening",
     "gathered": "2026-10-28T01:14:52Z"
    },
@@ -204,9 +202,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Mostly Cloudy",
-    "obs": "28 Oct 04:53 am CDT"
+    "temp": 59,
+    "cond": "Partly Cloudy",
+    "obs": "28 Oct 08:53 am CDT"
    },
    "periods": [
     {
@@ -259,9 +257,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Chicago's best Halloween displays picked",
+    "b": "WBEZ and the Sun-Times received more than 50 submissions, from movie scenes to a fire-breathing dragon, and chose three favorites.",
+    "date": "2026-10-28",
+    "publisher": "WBEZ",
+    "title": "We received more than 50 submissions of Chicago’s best Halloween displays. And the winner is…",
+    "url": "https://www.wbez.org/arts-culture/2026/10/28/chicago-best-halloween-displays",
+    "published": "2026-10-28T10:35:00Z",
+    "updated": "2026-10-28T10:35:05Z",
+    "gathered": "2026-10-28T14:18:50Z"
+   },
    {
     "h": "North Lawndale mural park to open next summer",
     "b": "West Edge Arts, with a community center, garden and performance space, will open on a former auto parts shop site on West Ogden Avenue, featuring artists including Dorian Sylvain and Bob Faust.",
@@ -291,9 +300,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 03:58 am MDT"
+    "temp": 44,
+    "cond": "Mostly Cloudy",
+    "obs": "28 Oct 06:58 am MDT"
    },
    "periods": [
     {
@@ -346,7 +355,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -376,18 +385,13 @@
     "title": "In this OC election, fight over 'Bunnyhenge' and new police station looms large",
     "url": "https://laist.com/news/politics/newport-beach-election-bunnyhenge-police-headquarters-proposal",
     "published": "2026-10-27T21:37:48Z",
-    "updated": "2026-10-28T00:04:11Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
     "h": "Court won't block California counting 20,000 ballots",
     "b": "A 2-1 appeals panel declined to stop California from counting about 20,000 ballots the Justice Department says likely belong to noncitizens, setting up another hearing Tuesday before the Nov. 3 election.",
     "date": "2026-10-27",
-    "publisher": "LAist",
-    "title": "Appeals court declines to block California from counting 20,000 disputed ballots",
     "url": "https://laist.com/news/politics/appeals-court-declines-block-california-from-counting-20-000-disputed-ballots",
-    "published": "2026-10-27T19:11:43Z",
-    "updated": "2026-10-27T19:11:43Z",
     "gathered": "2026-10-27T21:26:22Z"
    },
    {
@@ -406,13 +410,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 76,
      "text": "Patchy fog before 11am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 76. Calm wind becoming south southwest around 5 mph in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 58,
      "text": "Mostly cloudy, with a low around 58. Southwest wind around 5 mph becoming calm  in the evening. "
@@ -433,7 +437,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 71,
-     "text": "Partly sunny, with a high near 71."
+     "text": "Partly sunny, with a high near 71. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
@@ -455,7 +459,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -541,16 +545,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "28 Oct 05:51 am EDT"
+    "obs": "28 Oct 09:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63. Northeast wind 5 to 8 mph becoming south in the afternoon. "
+     "text": "Partly sunny, with a high near 63. Northeast wind 5 to 8 mph becoming south in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -596,7 +600,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -609,36 +613,46 @@
   },
   "local": [
    {
+    "h": "Yellow Vests plan third Paris march Oct. 31",
+    "b": "The Yellow Vests and the CGT union have requested routes starting at Place de la Bastille for another day of cost-of-living protests on Saturday.",
+    "date": "2026-10-28",
+    "publisher": "The Local France",
+    "title": "MAP: The routes for the Paris protest march on October 31st",
+    "url": "https://www.thelocal.fr/20261028/map-the-route-for-the-paris-protest-march-on-october-31st",
+    "published": "2026-10-28T11:05:33Z",
+    "updated": "2026-10-28T11:05:34Z",
+    "gathered": "2026-10-28T14:18:50Z"
+   },
+   {
+    "h": "Most fake riot posts came from abroad, minister says",
+    "b": "Foreign Minister Jean-Noël Barrot said two-thirds of social media content linking the October 17th looting to immigration came from abroad.",
+    "date": "2026-10-28",
+    "publisher": "The Local France",
+    "title": "Two thirds of fake news about French riots came from abroad, says minister",
+    "url": "https://www.thelocal.fr/20261028/two-thirds-of-fake-news-about-french-riots-came-from-abroad-says-minister",
+    "published": "2026-10-28T11:06:20Z",
+    "updated": "2026-10-28T11:06:20Z",
+    "gathered": "2026-10-28T14:18:50Z"
+   },
+   {
     "h": "BHV department store seeks bankruptcy protection",
     "b": "The landmark store opposite Paris City Hall, which employs 700 people, will remain open; the company called the procedure part of its relaunch, not its failure.",
     "date": "2026-10-28",
-    "publisher": "The Local France",
-    "title": "Historic Paris department store seeks bankruptcy protection",
     "url": "https://www.thelocal.fr/20261028/historic-paris-department-store-seeks-bankruptcy-protection",
-    "published": "2026-10-28T08:01:16Z",
-    "updated": "2026-10-28T08:01:16Z",
     "gathered": "2026-10-28T10:12:48Z"
    },
    {
     "h": "€5 fees coming on small non-EU packages",
     "b": "From Nov. 1, a new €2 handling fee on online orders under €150 from non-EU sites adds to the existing €3 EU tax. Gifts are exempt.",
     "date": "2026-10-27",
-    "publisher": "The Local France",
-    "title": "French customers to pay €5 fees on small non-EU packages",
     "url": "https://www.thelocal.fr/20261027/french-customers-to-pay-e5-fees-on-small-non-eu-packages",
-    "published": "2026-10-27T16:20:52Z",
-    "updated": "2026-10-27T16:20:53Z",
     "gathered": "2026-10-27T16:47:44Z"
    },
    {
     "h": "Senate debates France's 'rioters pay' bill",
     "b": "The casseurs-payeurs bill would make people pay for damage caused during public gatherings. It gained renewed attention after the Oct. 17 protest violence.",
     "date": "2026-10-27",
-    "publisher": "The Local France",
-    "title": "Casseurs-payeurs: France's 'rioters pay' bill explained",
     "url": "https://www.thelocal.fr/20261027/casseurs-payeurs-frances-rioters-pay-bill-explained",
-    "published": "2026-10-27T12:17:07Z",
-    "updated": "2026-10-27T12:17:07Z",
     "gathered": "2026-10-27T13:22:01Z"
    },
    {
@@ -672,7 +686,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "goodnews": []
  },
  {
@@ -715,13 +729,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 53,
      "text": "A chance of rain, mainly between 10am and 2pm, then a chance of showers and thunderstorms after 2pm.  Mostly cloudy, with a high near 53. South southwest wind 9 to 11 mph.  Chance of precipitation is 50%."
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 41,
      "text": "Rain likely, mainly after 1am.  Mostly cloudy, with a low around 41. Southeast wind 5 to 9 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -742,7 +756,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 51,
-     "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 51. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 51. Calm wind becoming south around 6 mph in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
@@ -764,7 +778,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T13:28:00Z",
+  "updatedAt": "2026-10-28T16:19:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
