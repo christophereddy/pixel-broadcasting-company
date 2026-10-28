@@ -8,13 +8,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 59,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 20:52 pm EDT"
+    "obs": "27 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 52,
      "text": "Partly cloudy, with a low around 52. East wind around 5 mph. "
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,16 +86,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Fair",
-    "obs": "27 Oct 20:54 pm EDT"
+    "temp": 46,
+    "cond": "A Few Clouds",
+    "obs": "27 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38. South wind 5 to 7 mph becoming light and variable  after midnight. "
+     "text": "Mostly clear, with a low around 38. Northwest wind 3 to 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -171,26 +171,37 @@
     "published": "2026-10-27T22:26:23Z",
     "updated": "2026-10-27T22:26:23Z",
     "gathered": "2026-10-28T00:39:28Z"
+   },
+   {
+    "h": "Lake Street bridge delay extends CTA disruptions",
+    "b": "CTA service across the Lake Street bridge on the Green and Pink lines, expected to resume Wednesday, has been put off until \"later this week.\"",
+    "date": "2026-10-27",
+    "publisher": "WBEZ",
+    "title": "Resumption of CTA train service across Lake Street bridge delayed yet again",
+    "url": "https://www.wbez.org/transportation/2026/10/27/lake-street-bridge-work-completion-delayed-cta-green-pink",
+    "published": "2026-10-28T02:20:01Z",
+    "updated": "2026-10-28T02:20:01Z",
+    "gathered": "2026-10-28T04:12:36Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Overcast",
-    "obs": "27 Oct 19:53 pm CDT"
+    "temp": 61,
+    "cond": "A Few Clouds",
+    "obs": "27 Oct 22:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 55. South wind around 5 mph. "
+     "temp": 56,
+     "text": "Mostly cloudy, with a low around 56. South wind around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 72,
-     "text": "Sunny, with a high near 72. South wind 5 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 73,
+     "text": "Sunny, with a high near 73. South wind 5 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -230,7 +241,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -264,14 +275,14 @@
    "now": {
     "temp": 49,
     "cond": "A Few Clouds",
-    "obs": "27 Oct 18:58 pm MDT"
+    "obs": "27 Oct 20:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40. North northeast wind around 5 mph becoming calm. "
+     "text": "Mostly clear, with a low around 40. Calm wind becoming south southwest around 5 mph after midnight. "
     },
     {
      "name": "Wednesday",
@@ -317,7 +328,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -380,7 +391,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 58. Southwest wind 5 to 10 mph becoming east southeast after midnight. "
+     "text": "Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 58. East southeast wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -426,7 +437,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -444,7 +455,8 @@
     "publisher": "Gothamist",
     "title": "NJ Gov. Sherrill: Election is secure, noncitizens taken off voter rolls",
     "url": "https://gothamist.com/news/nj-gov-sherrill-election-is-secure-noncitizens-taken-off-voter-rolls",
-    "published": "2026-10-27T23:42:19Z",
+    "published": "2026-10-27T23:42:00Z",
+    "updated": "2026-10-28T03:14:00Z",
     "gathered": "2026-10-28T00:39:28Z"
    },
    {
@@ -501,13 +513,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "27 Oct 20:51 pm EDT"
+    "obs": "27 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 49,
      "text": "Partly cloudy, with a low around 49. Northeast wind around 5 mph. "
@@ -556,7 +568,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -629,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "goodnews": []
  },
  {
@@ -686,8 +698,8 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 46,
-     "text": "Rain, mainly before 1am.  Low around 46. South southwest wind 10 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 49,
+     "text": "Rain, mainly before 1am.  Steady temperature around 49. South southwest wind 10 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday",
@@ -733,7 +745,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-28T04:12:00Z",
+  "updatedAt": "2026-10-28T07:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

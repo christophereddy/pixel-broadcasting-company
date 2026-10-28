@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T04:12:00Z",
+ "updatedAt": "2026-10-28T07:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -93,6 +93,17 @@
  ],
  "international": [
   {
+   "h": "Syria-Jordan border crossing reopens",
+   "b": "Nassib, Jordan's only border crossing with Syria, reopens after Jordanian strikes on suspected ISIL sites killed at least seven people in southern Syria.",
+   "date": "2026-10-28",
+   "place": "Nassib, Syria",
+   "tz": "Asia/Damascus",
+   "publisher": "Al Jazeera",
+   "title": "Syria-Jordan border reopens amid probe into deadly air strikes",
+   "url": "https://www.aljazeera.com/news/2026/10/28/syria-jordan-border-reopens-amid-probe-into-deadly-airstrikes",
+   "gathered": "2026-10-28T04:12:36Z"
+  },
+  {
    "h": "Egypt court orders closure of Mada Masr",
    "b": "A court ordered one of Egypt's last prominent independent news outlets shut and fined editor-in-chief Lina Attalah three million Egyptian pounds ($53,400) for running a website without a licence.",
    "date": "2026-10-27",
@@ -118,8 +129,6 @@
    "date": "2026-10-27",
    "place": "Serbia",
    "tz": "Europe/Belgrade",
-   "publisher": "Al Jazeera",
-   "title": "Protesters storm Serbian pro-Vucic TV station after his loss at polls",
    "url": "https://www.aljazeera.com/news/2026/10/27/protesters-storm-serbian-pro-vucic-tv-station-after-his-loss-at-polls",
    "gathered": "2026-10-27T21:26:22Z"
   },
@@ -169,13 +178,13 @@
    "gathered": "2026-10-27T13:22:01Z"
   },
   {
-   "h": "Netanyahu, Eisenkot blocs tied in exit polls",
-   "b": "Al Jazeera's live coverage: Updated exit polls show the Netanyahu and Eisenkot blocs tied at 51 seats each in Israel's election.",
-   "date": "2026-10-27",
+   "h": "Netanyahu calls for right-wing government",
+   "b": "Al Jazeera's live coverage: Netanyahu urges a 'strong, right-wing' government as vote counting continues in Israel's election.",
+   "date": "2026-10-28",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
    "publisher": "Al Jazeera",
-   "title": "Netanyahu and Eisenkot blocs tied at 51 seats each, updated exit polls show",
+   "title": "Netanyahu urges ‘strong, right-wing’ government as vote counting continues",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "gathered": "2026-10-27T21:26:22Z"
   },
@@ -199,6 +208,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Stocks rise as investors bet on AI",
+   "b": "All three major US indexes rose Tuesday, led by the Nasdaq, up 1.18 percent; Nvidia rose almost 1 percent after announcing a $3bn investment in Meta.",
+   "date": "2026-10-27",
+   "publisher": "Al Jazeera",
+   "title": "Global stock markets rise as investors continue to bet on AI",
+   "url": "https://www.aljazeera.com/news/2026/10/28/global-stock-markets-rise-as-investors-continue-to-bet-on-ai",
+   "gathered": "2026-10-28T04:12:36Z"
+  },
   {
    "h": "Consumer confidence rises to highest since June",
    "b": "The Conference Board's October reading unexpectedly rose after hitting a 12-year low in September, though CEO Steve Odland said confidence is still on a general downward trend.",
@@ -241,8 +259,6 @@
    "h": "Anthony Edwards to have knee surgery",
    "b": "The Timberwolves star is headed for surgery on his right knee, with December the target for his return, per The Athletic, after scoring 47 points Monday in an overtime loss to Cleveland.",
    "date": "2026-10-27",
-   "publisher": "CBS Sports",
-   "title": "Timberwolves star Anthony Edwards headed for knee surgery that will keep him out multiple months, per report",
    "url": "https://www.cbssports.com/nba/news/anthony-edwards-injury-update-timetable-timberwolves-lamelo-ball/",
    "gathered": "2026-10-28T00:39:28Z"
   },
@@ -298,7 +314,8 @@
    "publisher": "Gothamist",
    "title": "NJ Gov. Sherrill: Election is secure, noncitizens taken off voter rolls",
    "url": "https://gothamist.com/news/nj-gov-sherrill-election-is-secure-noncitizens-taken-off-voter-rolls",
-   "published": "2026-10-27T23:42:19Z",
+   "published": "2026-10-27T23:42:00Z",
+   "updated": "2026-10-28T03:14:00Z",
    "gathered": "2026-10-28T00:39:28Z"
   },
   {
@@ -355,13 +372,13 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
+   "temp": 51,
    "cond": "Fair",
-   "obs": "27 Oct 20:51 pm EDT"
+   "obs": "27 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 49,
     "text": "Partly cloudy, with a low around 49. Northeast wind around 5 mph. "
