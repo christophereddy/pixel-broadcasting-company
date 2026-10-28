@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-28T07:12:00Z",
+ "updatedAt": "2026-10-28T10:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -27,6 +27,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Trump ends Biden-era methane drilling rule",
+   "b": "Trump said his administration is \"terminating\" the rule aimed at cutting methane emissions from oil and gas drilling, saying it would unlock 210 million barrels of oil.",
+   "date": "2026-10-27",
+   "publisher": "KUOW",
+   "title": "Trump says he's ending restrictions on climate-warming methane from oil drilling",
+   "url": "https://www.kuow.org/npr-news/2026-10-27/trump-says-hes-ending-restrictions-on-climate-warming-methane-from-oil-drilling",
+   "published": "2026-10-28T06:15:31Z",
+   "updated": "2026-10-28T06:22:04Z",
+   "gathered": "2026-10-28T07:13:55Z"
+  },
   {
    "h": "Daylight saving time is ending again",
    "b": "Clocks fall back an hour, and standard time lasts until March 14. An AP-NORC poll found only 12% of American adults favor the twice-a-year changes.",
@@ -109,8 +120,6 @@
    "date": "2026-10-27",
    "place": "Egypt",
    "tz": "Africa/Cairo",
-   "publisher": "Al Jazeera",
-   "title": "Egypt orders closure of leading independent news site Mada Masr",
    "url": "https://www.aljazeera.com/news/2026/10/27/egypt-orders-closure-of-leading-independent-news-site-mada-masr",
    "gathered": "2026-10-28T00:39:28Z"
   },
@@ -184,7 +193,7 @@
    "place": "Israel",
    "tz": "Asia/Jerusalem",
    "publisher": "Al Jazeera",
-   "title": "Netanyahu urges ‘strong, right-wing’ government as vote counting continues",
+   "title": "Netanyahu calls for ‘strong, right-wing’ government as Israel counts votes",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-results-live-exit-polls-soon-as-netanyahu-faces-tight-race",
    "gathered": "2026-10-27T21:26:22Z"
   },
@@ -255,6 +264,17 @@
   }
  ],
  "sports": [
+  {
+   "h": "Rays rally in 12th to force World Series Game 5",
+   "b": "Jonny DeLuca and pinch-hitter Ben Williamson singled home runs in the 12th as Tampa Bay beat Milwaukee 4-3 to stave off elimination.",
+   "date": "2026-10-27",
+   "publisher": "KUOW",
+   "title": "Rays stun Brewers with 2-run rally in 12th inning and force World Series Game 5",
+   "url": "https://www.kuow.org/npr-news/2026-10-27/rays-stun-brewers-with-2-run-rally-in-12th-inning-and-force-world-series-game-5",
+   "published": "2026-10-28T06:13:28Z",
+   "updated": "2026-10-28T06:22:07Z",
+   "gathered": "2026-10-28T07:13:55Z"
+  },
   {
    "h": "Anthony Edwards to have knee surgery",
    "b": "The Timberwolves star is headed for surgery on his right knee, with December the target for his return, per The Athletic, after scoring 47 points Monday in an overtime loss to Cleveland.",
@@ -372,46 +392,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 49,
    "cond": "Fair",
-   "obs": "27 Oct 23:51 pm EDT"
+   "obs": "28 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 49,
-    "text": "Partly cloudy, with a low around 49. Northeast wind around 5 mph. "
-   },
    {
     "name": "Wednesday",
     "kind": "high",
     "temp": 63,
-    "text": "Partly sunny, with a high near 63. Light and variable wind becoming south 5 to 7 mph in the afternoon. "
+    "text": "Mostly sunny, with a high near 63. North wind 5 to 8 mph becoming south in the afternoon. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 54,
-    "text": "Cloudy during the early evening, then gradual clearing, with a low around 54. South wind around 6 mph becoming light and variable  after midnight. "
+    "temp": 53,
+    "text": "Partly cloudy, with a low around 53. South wind 5 to 7 mph becoming light and variable  after midnight. "
    },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 68,
-    "text": "Partly sunny, then gradually becoming sunny, with a high near 68. Calm wind becoming southwest 5 to 9 mph in the morning. "
+    "text": "Sunny, with a high near 68. Light west wind becoming southwest 5 to 9 mph in the morning. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
     "temp": 59,
-    "text": "Mostly clear, with a low around 59. Southwest wind 7 to 9 mph. "
+    "text": "Mostly clear, with a low around 59. Southwest wind 8 to 10 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 71,
-    "text": "Sunny, with a high near 71."
+    "temp": 70,
+    "text": "Sunny, with a high near 70."
+   },
+   {
+    "name": "Friday Night",
+    "kind": "low",
+    "temp": 52,
+    "text": "Mostly clear, with a low around 52."
    }
   ]
  },
