@@ -19,16 +19,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 60,
     "cond": "A Few Clouds",
-    "obs": "28 Oct 20:52 pm EDT"
+    "obs": "29 Oct 01:52 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 55,
-     "text": "Partly cloudy, with a low around 55. East wind around 5 mph. "
+     "text": "Mostly clear, with a low around 55. East wind around 5 mph. "
     },
     {
      "name": "Thursday",
@@ -40,13 +40,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. Calm wind. "
+     "text": "Mostly clear, with a low around 54. Northeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 79,
-     "text": "Mostly sunny, with a high near 79. Calm wind becoming east around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 79. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -97,46 +97,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 20:54 pm EDT"
+    "temp": 50,
+    "cond": "A Few Clouds",
+    "obs": "29 Oct 01:54 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. Southwest wind around 5 mph. "
+     "temp": 44,
+     "text": "Clear, with a low around 44. Southwest wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. Southwest wind 6 to 10 mph. "
+     "text": "Sunny, with a high near 68. Southwest wind 6 to 11 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. Southwest wind around 8 mph. "
+     "text": "Increasing clouds, with a low around 54. Southwest wind around 8 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. West wind 7 to 11 mph, with gusts as high as 23 mph. "
+     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 68. West wind 6 to 13 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 42,
-     "text": "Clear, with a low around 42. Northwest wind around 7 mph. "
+     "temp": 41,
+     "text": "Mostly clear, with a low around 41. Northwest wind 7 to 9 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 56,
-     "text": "Sunny, with a high near 56. Northwest wind 7 to 9 mph. "
+     "temp": 55,
+     "text": "Sunny, with a high near 55. Northwest wind 6 to 10 mph. "
     }
    ]
   },
@@ -152,7 +152,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -163,6 +163,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "UChicago students rally after assault reports",
+    "b": "More than 100 students called on the university to improve sexual assault prevention and survivor support after two cases tied to the campus in recent weeks.",
+    "date": "2026-10-28",
+    "publisher": "WBEZ",
+    "title": "University of Chicago students rally with 'Jane Doe' in wake of sexual assault reports",
+    "url": "https://www.wbez.org/news/2026/10/28/university-of-chicago-students-rally-with-jane-doe-in-wake-of-sexual-assault-reports",
+    "published": "2026-10-29T04:33:28Z",
+    "updated": "2026-10-29T04:33:28Z",
+    "gathered": "2026-10-29T06:14:43Z"
+   },
    {
     "h": "Firm pitches domed Bears stadium at Sox site",
     "b": "Skidmore, Owings and Merrill released renderings of a domed Bears stadium and mixed-use district at Bridgeport's Rate Field, presented by Sterling Bay.",
@@ -177,16 +188,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 19:53 pm CDT"
+    "temp": 66,
+    "cond": "Overcast",
+    "obs": "29 Oct 00:53 am CDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 59,
-     "text": "Partly cloudy, with a low around 59. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy, with a low around 59. South southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
@@ -232,7 +243,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -253,16 +264,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 17:58 pm MDT"
+    "temp": 46,
+    "cond": "A Few Clouds",
+    "obs": "28 Oct 23:58 pm MDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39. East northeast wind 5 to 7 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 39. Light and variable wind. "
     },
     {
      "name": "Thursday",
@@ -308,7 +319,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -349,7 +360,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Increasing clouds, with a low around 61. Southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Cloudy, with a low around 61. Southeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Thursday",
@@ -367,13 +378,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 72,
-     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 72. Light and variable wind becoming south southwest 5 to 10 mph in the afternoon. "
+     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 72. South wind around 5 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 61,
-     "text": "Mostly cloudy, with a low around 61. Southwest wind around 5 mph becoming east northeast after midnight. "
+     "text": "Mostly cloudy, with a low around 61. South wind around 5 mph becoming east after midnight. "
     },
     {
      "name": "Saturday",
@@ -395,7 +406,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -460,16 +471,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "28 Oct 20:51 pm EDT"
+    "obs": "29 Oct 01:51 am EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. Southeast wind around 6 mph becoming light and variable  after midnight. "
+     "text": "Mostly clear, with a low around 52. Light west wind. "
     },
     {
      "name": "Thursday",
@@ -515,7 +526,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -565,7 +576,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "goodnews": []
  },
  {
@@ -583,7 +594,7 @@
     "title": "Washington's Secretary of State rebuffs claims that non-citizens are voting en masse",
     "url": "https://www.kuow.org/elections/2026-10-28/washingtons-secretary-of-state-rebuffs-claims-that-non-citizens-are-voting-en-masse",
     "published": "2026-10-29T00:43:42Z",
-    "updated": "2026-10-29T00:46:24Z",
+    "updated": "2026-10-29T01:47:32Z",
     "gathered": "2026-10-29T01:12:20Z"
    }
   ],
@@ -593,8 +604,8 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "Rain likely, mainly after 11pm.  Increasing clouds, with a low around 42. South wind 6 to 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 47,
+     "text": "Rain likely, mainly before 5am.  Mostly cloudy, with a steady temperature around 47. South wind 6 to 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
@@ -640,7 +651,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T04:12:00Z",
+  "updatedAt": "2026-10-29T07:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
