@@ -21,17 +21,17 @@
    "now": {
     "temp": 59,
     "cond": "A Few Clouds",
-    "obs": "29 Oct 02:52 am EDT"
+    "obs": "29 Oct 08:52 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
      "text": "Mostly sunny, with a high near 77. Northeast wind 5 to 10 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "Mostly clear, with a low around 54. Northeast wind around 5 mph becoming calm. "
@@ -52,7 +52,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 73,
-     "text": "Mostly cloudy, with a high near 73."
+     "text": "Mostly cloudy, with a high near 73. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Saturday Night",
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,39 +86,46 @@
   },
   "local": [
    {
+    "h": "Sheriffs ask Healey to tweak ICE limits",
+    "b": "Twelve of the state's 14 sheriffs want the PROTECT Act changed so they can notify ICE about people charged with violent crimes who face deportation orders.",
+    "date": "2026-10-29",
+    "publisher": "WBUR",
+    "title": "Mass. sheriffs ask Gov. Healey to tweak new limits on ICE arrests",
+    "url": "https://www.wbur.org/news/2026/10/29/massachusetts-sheriffs-protect-act-healey-minogue",
+    "gathered": "2026-10-29T13:31:15Z"
+   },
+   {
     "h": "Mass. Lottery tries scented scratch tickets",
     "b": "Peppermint-scented Candy Cane Cash Blowout tickets are the first scented holiday tickets, as scratch ticket sales are down 6% this fiscal year.",
     "date": "2026-10-28",
-    "publisher": "WBUR",
-    "title": "Scratch and sniff: Scented offering eyed to lift sagging scratch ticket sales",
     "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
     "gathered": "2026-10-28T10:12:48Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 02:54 am EDT"
+    "temp": 54,
+    "cond": "Fair",
+    "obs": "29 Oct 08:54 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. Southwest wind 6 to 11 mph. "
+     "text": "Sunny, with a high near 68. Southwest wind 8 to 13 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Increasing clouds, with a low around 54. Southwest wind around 8 mph. "
+     "text": "Increasing clouds, with a low around 54. Southwest wind around 9 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 68. West wind 6 to 13 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 68. West wind 7 to 13 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday Night",
@@ -152,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -163,6 +170,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Southport Grocery to close Dec. 31",
+    "b": "The Lake View breakfast spot, open since 2003, will make way for Dollop Finer Diner, an outpost of Dollop Coffee Co.",
+    "date": "2026-10-29",
+    "publisher": "WBEZ",
+    "title": "Neighbors count down last breakfasts before ‘iconic’ Southport Grocery closes for Dollop Finer Diner",
+    "url": "https://www.wbez.org/food-drink/2026/10/29/southport-grocery-close-lake-view-dollop-coffee-chicago-diner",
+    "published": "2026-10-29T10:35:00Z",
+    "updated": "2026-10-29T10:35:04Z",
+    "gathered": "2026-10-29T13:31:15Z"
+   },
    {
     "h": "UChicago students rally after assault reports",
     "b": "More than 100 students called on the university to improve sexual assault prevention and survivor support after two cases tied to the campus in recent weeks.",
@@ -178,35 +196,25 @@
     "h": "Firm pitches domed Bears stadium at Sox site",
     "b": "Skidmore, Owings and Merrill released renderings of a domed Bears stadium and mixed-use district at Bridgeport's Rate Field, presented by Sterling Bay.",
     "date": "2026-10-28",
-    "publisher": "WBEZ",
-    "title": "Bridgeport Bears? Chicago firm releases plans for glitzy new domed stadium at Sox park site",
     "url": "https://www.wbez.org/sports/2026/10/28/bridgeport-bears-domed-stadium-proposal-sox-rate-field",
-    "published": "2026-10-28T19:29:25Z",
-    "updated": "2026-10-28T19:29:25Z",
     "gathered": "2026-10-28T19:45:42Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Overcast",
-    "obs": "29 Oct 00:53 am CDT"
+    "temp": 61,
+    "cond": "Mostly Cloudy",
+    "obs": "29 Oct 07:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. South southwest wind around 15 mph, with gusts as high as 25 mph. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
      "text": "Isolated showers before 3pm.  Mostly cloudy, then gradually becoming sunny, with a high near 68. Southwest wind 10 to 15 mph becoming west northwest in the afternoon.  Chance of precipitation is 20%."
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Mostly clear, with a low around 51. North northwest wind 5 to 10 mph. "
@@ -227,7 +235,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 60,
-     "text": "Showers likely, mainly before 1pm.  Cloudy, with a high near 60. Chance of precipitation is 70%."
+     "text": "Showers likely, mainly before 1pm.  Cloudy, with a high near 60. East southeast wind 5 to 10 mph.  Chance of precipitation is 70%."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 54,
+     "text": "Cloudy, with a low around 54."
     }
    ]
   },
@@ -243,7 +257,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -264,25 +278,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 37,
     "cond": "A Few Clouds",
-    "obs": "28 Oct 23:58 pm MDT"
+    "obs": "29 Oct 06:58 am MDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 39,
-     "text": "Mostly clear, with a low around 39. Calm wind. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
      "text": "Sunny, with a high near 65. Calm wind becoming east northeast around 6 mph in the afternoon. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Partly cloudy, with a low around 43. North northeast wind around 6 mph becoming calm  in the evening. "
@@ -303,7 +311,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63."
+     "text": "Mostly sunny, with a high near 63. Calm wind becoming northeast around 6 mph in the afternoon. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "Mostly cloudy, with a low around 44."
     }
    ]
   },
@@ -319,7 +333,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -330,6 +344,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Bass and feds disagree on MacArthur Park arrests",
+    "b": "Mayor Karen Bass said she had not approved arresting people for using drugs in the park; a federal prosecutor who oversaw the operation said she did.",
+    "date": "2026-10-29",
+    "publisher": "LAist",
+    "title": "Who approved arresting people for using drugs at MacArthur Park? Bass and feds disagree",
+    "url": "https://laist.com/news/criminal-justice/macarthur-park-la-bass-raman-drug-enforcement-mayor-race",
+    "published": "2026-10-29T12:00:00Z",
+    "updated": "2026-10-29T12:00:00Z",
+    "gathered": "2026-10-29T13:31:15Z"
+   },
    {
     "h": "Judge keeps LAHSA suspension on hold",
     "b": "U.S. District Judge David O. Carter's order lets federal homelessness money keep flowing through LAHSA while it hands its federal roles to L.A. County.",
@@ -349,7 +374,6 @@
     "title": "‘A source of strength’: LA leaders mourn Dolores Huerta’s death",
     "url": "https://laist.com/news/a-source-of-strength-la-leaders-mourn-dolores-huertas-death",
     "published": "2026-10-28T19:17:30Z",
-    "updated": "2026-10-28T19:17:30Z",
     "gathered": "2026-10-28T19:45:42Z"
    }
   ],
@@ -357,19 +381,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 61,
-     "text": "Cloudy, with a low around 61. Southeast wind around 5 mph becoming calm. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 74,
      "text": "Mostly cloudy, with a high near 74. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 62,
      "text": "A 20 percent chance of rain after 11pm.  Cloudy, with a low around 62. South southeast wind 5 to 10 mph. "
@@ -390,7 +408,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 69,
-     "text": "A 50 percent chance of rain after 11am.  Mostly cloudy, with a high near 69."
+     "text": "A 50 percent chance of rain after 11am.  Mostly cloudy, with a high near 69. East northeast wind around 5 mph becoming south southwest in the afternoon.  New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Rain.  Low around 58. Chance of precipitation is 80%."
     }
    ]
   },
@@ -406,9 +430,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Cole's French Dip set to return",
+    "b": "New owners Sean Maloney and Jeremy Fall plan to reopen the iconic downtown LA restaurant, which closed in March, by Thanksgiving.",
+    "date": "2026-10-29",
+    "publisher": "LAist",
+    "title": "The return of Cole’s French Dip",
+    "url": "https://laist.com/news/food/the-return-of-coles-french-dip",
+    "published": "2026-10-29T12:00:00Z",
+    "updated": "2026-10-29T12:00:08Z",
+    "gathered": "2026-10-29T13:31:15Z"
+   }
+  ]
  },
  {
   "location": {
@@ -417,6 +453,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Garbage truck kills woman in Brooklyn",
+    "b": "Siobhan Lynch, 30, was struck by a Department of Sanitation truck while crossing Bay Parkway at Cropsey Avenue Wednesday evening, the NYPD said.",
+    "date": "2026-10-29",
+    "publisher": "Gothamist",
+    "title": "Brooklyn woman hit and killed by garbage truck at peak time for traffic deaths, NYPD says",
+    "url": "https://gothamist.com/news/brooklyn-woman-hit-and-killed-by-garbage-truck-at-peak-time-for-traffic-deaths-nypd-says",
+    "published": "2026-10-29T11:54:44Z",
+    "gathered": "2026-10-29T13:31:15Z"
+   },
    {
     "h": "Woman charged with hate crimes in stabbings of Jewish men",
     "b": "Federal prosecutors accuse Anna Mochalova, 32, of stabbing two Jewish men near the Diamond District with a sharp object consistent with a needle.",
@@ -432,10 +478,9 @@
     "b": "The fire at the Patterson Houses in Mott Haven killed an 11-year-old boy and critically injured four other people early Wednesday.",
     "date": "2026-10-28",
     "publisher": "Gothamist",
-    "title": "Lithium-ion battery caused Bronx fire that killed 11-year-old, FDNY says",
+    "title": "Lithium-ion battery caused Bronx fire that killed 10-year-old, FDNY says",
     "url": "https://gothamist.com/news/lithium-ion-battery-caused-bronx-fire-that-killed-11-year-old-fdny-says",
-    "published": "2026-10-28T17:54:00Z",
-    "updated": "2026-10-28T18:11:00Z",
+    "published": "2026-10-28T18:11:00Z",
     "gathered": "2026-10-28T19:45:42Z"
    },
    {
@@ -471,19 +516,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "29 Oct 02:51 am EDT"
+    "obs": "29 Oct 08:51 am EDT"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. Light west wind becoming southwest 5 to 10 mph in the morning. "
+     "text": "Sunny, with a high near 68. Southwest wind 5 to 10 mph. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 58,
      "text": "Partly cloudy, with a low around 58. Southwest wind 9 to 11 mph. "
@@ -504,7 +549,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. North wind 6 to 8 mph. "
     },
     {
      "name": "Saturday Night",
@@ -526,7 +571,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -576,7 +621,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "goodnews": []
  },
  {
@@ -590,11 +635,7 @@
     "h": "Hobbs rebuffs claims of non-citizen voting",
     "b": "Secretary of State Steve Hobbs responded after two U.S. attorneys said they found more than 400 non-citizens on Washington voter rolls and asked officials to set aside matching ballots.",
     "date": "2026-10-28",
-    "publisher": "KUOW",
-    "title": "Washington's Secretary of State rebuffs claims that non-citizens are voting en masse",
     "url": "https://www.kuow.org/elections/2026-10-28/washingtons-secretary-of-state-rebuffs-claims-that-non-citizens-are-voting-en-masse",
-    "published": "2026-10-29T00:43:42Z",
-    "updated": "2026-10-29T01:47:32Z",
     "gathered": "2026-10-29T01:12:20Z"
    }
   ],
@@ -602,19 +643,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 47,
-     "text": "Rain likely, mainly before 5am.  Mostly cloudy, with a steady temperature around 47. South wind 6 to 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 53,
-     "text": "A chance of rain before 4pm, then a chance of rain after 5pm.  Partly sunny, with a high near 53. South southeast wind around 5 mph becoming calm  in the morning.  Chance of precipitation is 30%."
+     "text": "A chance of rain before 4pm, then a chance of rain after 5pm.  Partly sunny, with a high near 53. South southeast wind around 5 mph becoming calm  in the morning.  Chance of precipitation is 40%."
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 41,
      "text": "A chance of rain before 3am, then a slight chance of rain after 4am.  Partly cloudy, with a low around 41. Calm wind.  Chance of precipitation is 30%."
@@ -635,7 +670,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 52,
-     "text": "Partly sunny, with a high near 52."
+     "text": "Partly sunny, with a high near 52. Light and variable wind. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Mostly cloudy, with a low around 42."
     }
    ]
   },
@@ -651,7 +692,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T10:14:00Z",
+  "updatedAt": "2026-10-29T13:44:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
