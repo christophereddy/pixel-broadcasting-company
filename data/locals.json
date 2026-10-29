@@ -19,34 +19,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 08:52 am EDT"
+    "temp": 74,
+    "cond": "Partly Cloudy",
+    "obs": "29 Oct 14:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 77,
-     "text": "Mostly sunny, with a high near 77. Northeast wind 5 to 10 mph. "
+     "text": "Sunny, with a high near 77. Northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. Northeast wind around 5 mph becoming calm. "
+     "text": "Mostly clear, with a low around 54. Calm wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 79,
-     "text": "Sunny, with a high near 79. Calm wind becoming northeast around 5 mph in the afternoon. "
+     "temp": 80,
+     "text": "Sunny, with a high near 80. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. Calm wind becoming east around 5 mph after midnight. "
+     "temp": 60,
+     "text": "Mostly cloudy, with a low around 60. Calm wind becoming east around 5 mph after midnight. "
     },
     {
      "name": "Saturday",
@@ -58,7 +58,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 55,
-     "text": "A 30 percent chance of showers and thunderstorms after 2am.  Cloudy, with a low around 55."
+     "text": "Mostly cloudy, with a low around 55."
     }
    ]
   },
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -104,46 +104,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Fair",
-    "obs": "29 Oct 08:54 am EDT"
+    "temp": 68,
+    "cond": "A Few Clouds",
+    "obs": "29 Oct 14:54 pm EDT"
    },
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. Southwest wind 8 to 13 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Increasing clouds, with a low around 54. Southwest wind around 9 mph. "
+     "text": "Increasing clouds, with a low around 54. Southwest wind around 9 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 68. West wind 7 to 13 mph, with gusts as high as 25 mph. "
+     "temp": 66,
+     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 66. West wind 7 to 14 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. Northwest wind 7 to 9 mph, with gusts as high as 21 mph. "
+     "temp": 42,
+     "text": "Clear, with a low around 42. Northwest wind 11 to 14 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 55,
-     "text": "Sunny, with a high near 55. Northwest wind 6 to 10 mph. "
+     "text": "Sunny, with a high near 55. Northwest wind 7 to 11 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly clear, with a low around 34. Calm wind. "
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35. Calm wind. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 60,
+     "text": "Sunny, with a high near 60. West wind 3 to 6 mph. "
     }
    ]
   },
@@ -159,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -171,25 +171,28 @@
   },
   "local": [
    {
+    "h": "Art Institute traces Cassatt's lost World's Fair mural",
+    "b": "A new exhibit tells the story of Mary Cassatt's three-panel 1893 World's Fair mural, last known to be in Chicago in 1912.",
+    "date": "2026-10-29",
+    "publisher": "WBEZ",
+    "title": "Painter Mary Cassatt created a masterpiece for the 1893 World’s Fair in Chicago. Then, it disappeared.",
+    "url": "https://www.wbez.org/arts/2026/10/29/painter-mary-cassatt-missing-mural-1893-worlds-fair-chicago-art-institute",
+    "published": "2026-10-29T16:32:49Z",
+    "updated": "2026-10-29T16:32:49Z",
+    "gathered": "2026-10-29T19:08:23Z"
+   },
+   {
     "h": "Southport Grocery to close Dec. 31",
     "b": "The Lake View breakfast spot, open since 2003, will make way for Dollop Finer Diner, an outpost of Dollop Coffee Co.",
     "date": "2026-10-29",
-    "publisher": "WBEZ",
-    "title": "Neighbors count down last breakfasts before ‘iconic’ Southport Grocery closes for Dollop Finer Diner",
     "url": "https://www.wbez.org/food-drink/2026/10/29/southport-grocery-close-lake-view-dollop-coffee-chicago-diner",
-    "published": "2026-10-29T10:35:00Z",
-    "updated": "2026-10-29T10:35:04Z",
     "gathered": "2026-10-29T13:31:15Z"
    },
    {
     "h": "UChicago students rally after assault reports",
     "b": "More than 100 students called on the university to improve sexual assault prevention and survivor support after two cases tied to the campus in recent weeks.",
     "date": "2026-10-28",
-    "publisher": "WBEZ",
-    "title": "University of Chicago students rally with 'Jane Doe' in wake of sexual assault reports",
     "url": "https://www.wbez.org/news/2026/10/28/university-of-chicago-students-rally-with-jane-doe-in-wake-of-sexual-assault-reports",
-    "published": "2026-10-29T04:33:28Z",
-    "updated": "2026-10-29T04:33:28Z",
     "gathered": "2026-10-29T06:14:43Z"
    },
    {
@@ -202,46 +205,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 68,
     "cond": "Mostly Cloudy",
-    "obs": "29 Oct 07:53 am CDT"
+    "obs": "29 Oct 13:53 pm CDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 68,
-     "text": "Isolated showers before 3pm.  Mostly cloudy, then gradually becoming sunny, with a high near 68. Southwest wind 10 to 15 mph becoming west northwest in the afternoon.  Chance of precipitation is 20%."
+     "temp": 64,
+     "text": "Cloudy early, then becoming mostly sunny, with a steady temperature around 64. North northwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 51,
-     "text": "Mostly clear, with a low around 51. North northwest wind 5 to 10 mph. "
+     "temp": 50,
+     "text": "Mostly clear, with a low around 50. North northwest wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 60,
-     "text": "Mostly sunny, with a high near 60. East northeast wind 5 to 10 mph. "
+     "temp": 58,
+     "text": "Mostly sunny, with a high near 58. East northeast wind 5 to 10 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Showers likely, mainly after 1am.  Mostly cloudy, with a low around 53. East wind around 10 mph.  Chance of precipitation is 60%."
+     "temp": 52,
+     "text": "A 40 percent chance of showers after 1am.  Mostly cloudy, with a low around 52. East northeast wind around 10 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 60,
-     "text": "Showers likely, mainly before 1pm.  Cloudy, with a high near 60. East southeast wind 5 to 10 mph.  Chance of precipitation is 70%."
+     "temp": 59,
+     "text": "Showers likely, mainly before 1pm.  Cloudy, with a high near 59. Southeast wind around 10 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Cloudy, with a low around 54."
+     "temp": 52,
+     "text": "A 20 percent chance of showers before 10pm.  Cloudy, with a low around 52."
     }
    ]
   },
@@ -257,7 +260,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -278,46 +281,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 37,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 06:58 am MDT"
+    "temp": 60,
+    "cond": "Partly Cloudy",
+    "obs": "29 Oct 11:58 am MDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Calm wind becoming east northeast around 6 mph in the afternoon. "
+     "text": "Sunny, with a high near 65. East northeast wind 3 to 7 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Partly cloudy, with a low around 43. North northeast wind around 6 mph becoming calm  in the evening. "
+     "text": "Partly cloudy, with a low around 43. North wind 5 to 7 mph becoming calm  in the evening. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 65,
-     "text": "Mostly cloudy, with a high near 65. Calm wind becoming northeast around 6 mph in the afternoon. "
+     "temp": 66,
+     "text": "Partly sunny, with a high near 66. Calm wind becoming north northeast 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Partly cloudy, with a low around 43. North northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Partly cloudy, with a low around 43. North northeast wind around 6 mph becoming calm  in the evening. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 63,
-     "text": "Mostly sunny, with a high near 63. Calm wind becoming northeast around 6 mph in the afternoon. "
+     "temp": 62,
+     "text": "Partly sunny, with a high near 62. Calm wind becoming north northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Mostly cloudy, with a low around 44."
+     "temp": 45,
+     "text": "Partly cloudy, with a low around 45."
     }
    ]
   },
@@ -333,7 +336,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -344,6 +347,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "High tides speed up Palos Verdes landslide",
+    "b": "Land in the Portuguese Bend area is moving more than an inch a week, up from August, after storm-fueled waves eroded the coast, city officials said.",
+    "date": "2026-10-29",
+    "publisher": "LAist",
+    "title": "Recent high tides worsen landslide activity in Rancho Palos Verdes",
+    "url": "https://laist.com/news/climate-environment/high-tides-landslide-activity-rancho-palos-verdes-el-nino",
+    "published": "2026-10-29T16:30:03Z",
+    "updated": "2026-10-29T16:30:03Z",
+    "gathered": "2026-10-29T19:08:23Z"
+   },
+   {
+    "h": "California high-speed rail CEO resigns",
+    "b": "Ian Choudri cited personal and family priorities after a tenure troubled by budget woes, delays and the misuse of nearly $600,000 for questionable trips.",
+    "date": "2026-10-29",
+    "publisher": "LAist",
+    "title": "Head of California high-speed rail agency resigns amid travel expenses scandal",
+    "url": "https://laist.com/news/transportation/head-of-california-high-speed-rail-agency-resigns-amid-travel-expenses-scandal",
+    "published": "2026-10-29T17:00:00Z",
+    "updated": "2026-10-29T17:00:00Z",
+    "gathered": "2026-10-29T19:08:23Z"
+   },
    {
     "h": "Bass and feds disagree on MacArthur Park arrests",
     "b": "Mayor Karen Bass said she had not approved arresting people for using drugs in the park; a federal prosecutor who oversaw the operation said she did.",
@@ -370,10 +395,7 @@
     "h": "LA leaders mourn Dolores Huerta",
     "b": "Local leaders honored the United Farm Workers co-founder's legacy as a dedicated advocate for workers' and women's rights after her death Wednesday.",
     "date": "2026-10-28",
-    "publisher": "LAist",
-    "title": "‘A source of strength’: LA leaders mourn Dolores Huerta’s death",
     "url": "https://laist.com/news/a-source-of-strength-la-leaders-mourn-dolores-huertas-death",
-    "published": "2026-10-28T19:17:30Z",
     "gathered": "2026-10-28T19:45:42Z"
    }
   ],
@@ -381,40 +403,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 74,
-     "text": "Increasing clouds, with a high near 74. Light and variable wind becoming southwest 5 to 10 mph in the afternoon. "
+     "text": "Patchy drizzle.  Increasing clouds, with a high near 74. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 62,
-     "text": "A 20 percent chance of rain after 11pm.  Cloudy, with a low around 62. South southeast wind 5 to 10 mph. "
+     "temp": 61,
+     "text": "Cloudy, with a low around 61. South southeast wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 72,
-     "text": "Mostly cloudy, with a high near 72. South wind around 5 mph. "
+     "temp": 70,
+     "text": "A 30 percent chance of showers, mainly after 11am.  Mostly cloudy, with a high near 70. South wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 61,
-     "text": "Mostly cloudy, with a low around 61. South wind around 5 mph becoming east after midnight. "
+     "temp": 59,
+     "text": "A 40 percent chance of showers, mainly before 11pm.  Cloudy, with a low around 59. South wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 69,
-     "text": "A 50 percent chance of rain after 11am.  Mostly cloudy, with a high near 69. East northeast wind around 5 mph becoming south southwest in the afternoon.  New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 68,
+     "text": "A 40 percent chance of showers, mainly after 11am.  Cloudy, with a high near 68. East northeast wind around 5 mph becoming south southwest in the afternoon.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Rain.  Low around 58. Chance of precipitation is 80%."
+     "temp": 59,
+     "text": "Showers.  Low around 59. Chance of precipitation is 90%."
     }
    ]
   },
@@ -430,7 +452,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -441,7 +463,6 @@
     "title": "The return of Cole’s French Dip",
     "url": "https://laist.com/news/food/the-return-of-coles-french-dip",
     "published": "2026-10-29T12:00:00Z",
-    "updated": "2026-10-29T12:00:08Z",
     "gathered": "2026-10-29T13:31:15Z"
    }
   ]
@@ -454,6 +475,16 @@
   },
   "local": [
    {
+    "h": "Nobody is enforcing NYC's $3 bus fare for now",
+    "b": "Enforcement is on pause after a series of confrontations involving MTA agents, and the NYPD will not step in while the security force is suspended.",
+    "date": "2026-10-29",
+    "publisher": "Gothamist",
+    "title": "NYPD won't enforce NYC's bus fare while MTA security force is suspended",
+    "url": "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
+    "published": "2026-10-29T17:13:00Z",
+    "gathered": "2026-10-29T19:08:23Z"
+   },
+   {
     "h": "Garbage truck kills woman in Brooklyn",
     "b": "Siobhan Lynch, 30, was struck by a Department of Sanitation truck while crossing Bay Parkway at Cropsey Avenue Wednesday evening, the NYPD said.",
     "date": "2026-10-29",
@@ -461,6 +492,7 @@
     "title": "Brooklyn woman hit and killed by garbage truck at Bay Parkway, NYPD says",
     "url": "https://gothamist.com/news/brooklyn-woman-hit-and-killed-by-garbage-truck-at-peak-time-for-traffic-deaths-nypd-says",
     "published": "2026-10-29T11:54:00Z",
+    "updated": "2026-10-29T15:22:00Z",
     "gathered": "2026-10-29T13:31:15Z"
    },
    {
@@ -516,46 +548,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 65,
     "cond": "Fair",
-    "obs": "29 Oct 08:51 am EDT"
+    "obs": "29 Oct 14:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Today",
-     "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. Southwest wind 5 to 10 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 58,
-     "text": "Partly cloudy, with a low around 58. Southwest wind 9 to 11 mph. "
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59. Southwest wind 9 to 11 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Northwest wind 10 to 17 mph. "
+     "text": "Sunny, with a high near 69. Northwest wind 9 to 15 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. Northwest wind 10 to 14 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. Northwest wind 10 to 14 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. North wind 6 to 8 mph. "
+     "text": "Sunny, with a high near 61. North wind 7 to 9 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Mostly cloudy, with a low around 49."
+     "text": "Mostly cloudy, with a low around 49. North wind 3 to 5 mph. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Partly sunny, with a high near 63."
     }
    ]
   },
@@ -571,7 +603,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -583,6 +615,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Trappes shooting suspect targeted Muslims, Africans",
+    "b": "The 39-year-old suspect, who killed one person and wounded seven west of Paris, admitted targeting people who appeared Muslim or African, prosecutors said.",
+    "date": "2026-10-29",
+    "publisher": "The Local France",
+    "title": "French shooting suspect deliberately targeted Muslims and Africans, says prosecutor",
+    "url": "https://www.thelocal.fr/20261029/french-shooting-suspect-deliberately-targeted-muslims-and-africans-says-prosecutor",
+    "published": "2026-10-29T15:51:26Z",
+    "updated": "2026-10-29T15:51:27Z",
+    "gathered": "2026-10-29T19:08:23Z"
+   },
    {
     "h": "Yellow Vests plan third Paris march Oct. 31",
     "b": "The Yellow Vests and the CGT union have requested routes starting at Place de la Bastille for another day of cost-of-living protests on Saturday.",
@@ -621,7 +664,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "goodnews": []
  },
  {
@@ -631,6 +674,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Washington suicide deaths hit 25-year high",
+    "b": "Nearly 1,400 people died by suicide in the state in 2025, the most in 25 years, according to new health department data.",
+    "date": "2026-10-29",
+    "publisher": "KUOW",
+    "title": "1,400 people died by suicide in Washington state last year, a record",
+    "url": "https://www.kuow.org/mental-health/2026-10-29/1-400-people-died-by-suicide-in-washington-state-last-year-a-record",
+    "published": "2026-10-29T18:48:44Z",
+    "updated": "2026-10-29T18:48:44Z",
+    "gathered": "2026-10-29T19:08:23Z"
+   },
    {
     "h": "Hobbs rebuffs claims of non-citizen voting",
     "b": "Secretary of State Steve Hobbs responded after two U.S. attorneys said they found more than 400 non-citizens on Washington voter rolls and asked officials to set aside matching ballots.",
@@ -643,40 +697,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 53,
-     "text": "A chance of rain before 4pm, then a chance of rain after 5pm.  Partly sunny, with a high near 53. South southeast wind around 5 mph becoming calm  in the morning.  Chance of precipitation is 40%."
+     "text": "A 40 percent chance of rain, mainly after 3pm.  Partly sunny, with a high near 53. Light south wind. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "A chance of rain before 3am, then a slight chance of rain after 4am.  Partly cloudy, with a low around 41. Calm wind.  Chance of precipitation is 30%."
+     "text": "A 30 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 41. Calm wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 52,
-     "text": "A 30 percent chance of rain, mainly before 11am.  Partly sunny, with a high near 52. Calm wind. "
+     "temp": 51,
+     "text": "Rain likely, mainly between 10am and noon.  Partly sunny, with a high near 51. Light and variable wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Mostly cloudy, with a low around 40. Calm wind. "
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39. Calm wind. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 52,
-     "text": "Partly sunny, with a high near 52. Light and variable wind. "
+     "temp": 53,
+     "text": "Partly sunny, with a high near 53. Calm wind becoming north around 5 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 42,
-     "text": "Mostly cloudy, with a low around 42."
+     "temp": 41,
+     "text": "Mostly cloudy, with a low around 41."
     }
    ]
   },
@@ -692,7 +746,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T16:17:00Z",
+  "updatedAt": "2026-10-29T19:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T16:17:00Z",
+ "updatedAt": "2026-10-29T19:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,18 +10,15 @@
    "h": "UN condemns US embargo of Cuba as support slips",
    "b": "The General Assembly vote was 130-17 with 25 abstentions, down from more than 160 nations last year, as Germany and Italy were among those that refrained.",
    "date": "2026-10-28",
-   "publisher": "PBS NewsHour",
-   "title": "UN condemns U.S. economic embargo of Cuba though more nations sit out amid Trump push",
    "url": "https://www.pbs.org/newshour/world/un-condemns-u-s-economic-embargo-of-cuba-though-more-nations-sit-out-amid-trump-push",
-   "published": "2026-10-28T22:50:36Z",
    "gathered": "2026-10-29T00:12:43Z"
   },
   {
-   "h": "IRGC says 3 tankers hit mines in Hormuz",
-   "b": "Al Jazeera's live coverage of the Iran war: The IRGC says three tankers hit mines in the Strait of Hormuz and a US 'spy' drone was captured.",
+   "h": "Houthis again target Riyadh",
+   "b": "Al Jazeera's live coverage of the Iran war: The Houthis again target Riyadh, and the coalition says two missiles were intercepted.",
    "date": "2026-10-29",
    "publisher": "Al Jazeera",
-   "title": "IRGC says 3 tankers hit mines in Strait of Hormuz; US ‘spy’ drone captured",
+   "title": "Houthis again target Riyadh as coalition says two missiles intercepted",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks",
    "gathered": "2026-10-29T01:12:20Z"
   }
@@ -65,10 +62,7 @@
    "h": "Federal judge Alvin Hellerstein dies at 92",
    "b": "The judge, who handled cases on Trump, Maduro and 9/11, died Wednesday morning; two weeks ago he presided over the Maduros' arraignment on torture charges.",
    "date": "2026-10-28",
-   "publisher": "PBS NewsHour",
-   "title": "Alvin Hellerstein, federal judge who handled cases on Trump, Maduro and 9/11, dies at 92",
    "url": "https://www.pbs.org/newshour/politics/alvin-hellerstein-federal-judge-who-handled-cases-on-trump-maduro-and-9-11-dies-at-92",
-   "published": "2026-10-28T21:49:10Z",
    "gathered": "2026-10-29T00:12:43Z"
   },
   {
@@ -88,13 +82,20 @@
  ],
  "politics": [
   {
+   "h": "Alaska governor orders probe of Peltola campaign",
+   "b": "Gov. Dunleavy's order follows reporting that Peltola's campaign discussed recruiting a candidate with the same name as Sen. Dan Sullivan.",
+   "date": "2026-10-29",
+   "publisher": "PBS NewsHour",
+   "title": "Alaska's governor orders a probe into Peltola's Senate campaign over spoiler candidate controversy",
+   "url": "https://www.pbs.org/newshour/politics/alaskas-governor-orders-a-probe-into-peltolas-senate-campaign-over-spoiler-candidate-controversy",
+   "published": "2026-10-29T14:46:36Z",
+   "gathered": "2026-10-29T19:08:23Z"
+  },
+  {
    "h": "Trump calls for prosecution of Mary Peltola",
    "b": "Trump said Peltola should be prosecuted after a New York Times report that her campaign discussed recruiting another candidate named Dan Sullivan in the Alaska Senate race.",
    "date": "2026-10-28",
-   "publisher": "PBS NewsHour",
-   "title": "Trump calls for prosecution of Alaska Senate candidate Peltola over Sullivan name controversy",
    "url": "https://www.pbs.org/newshour/politics/trump-calls-for-prosecution-of-alaska-senate-candidate-peltola-over-sullivan-name-controversy",
-   "published": "2026-10-28T23:29:24Z",
    "gathered": "2026-10-29T00:12:43Z"
   },
   {
@@ -117,6 +118,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Prosecutors seek death sentence for Yoon",
+   "b": "Special prosecutors renewed their demand at an appeal hearing at the Seoul High Court; the former president was sentenced to life in February for leading an insurrection.",
+   "date": "2026-10-29",
+   "place": "Seoul, South Korea",
+   "tz": "Asia/Seoul",
+   "publisher": "Al Jazeera",
+   "title": "South Korean prosecutors press for death sentence in Yoon martial law case",
+   "url": "https://www.aljazeera.com/news/2026/10/29/south-korean-prosecutors-press-for-death-sentence-in-yoon-martial-law-case",
+   "gathered": "2026-10-29T19:08:23Z"
+  },
   {
    "h": "Activists say settlers beat them in West Bank",
    "b": "Activist Adele Shoko said armed settlers attacked her, US journalist Jasper Nathaniel and activist Andrey X in Umm al-Khair, and that Nathaniel was then arrested.",
@@ -146,10 +158,7 @@
    "date": "2026-10-28",
    "place": "London, England",
    "tz": "Europe/London",
-   "publisher": "PBS NewsHour",
-   "title": "Russell Brand denies all charges as he testifies at his rape and sex assault trial",
    "url": "https://www.pbs.org/newshour/world/russell-brand-denies-all-charges-as-he-testifies-at-his-rape-and-sex-assault-trial",
-   "published": "2026-10-28T23:35:56Z",
    "gathered": "2026-10-29T01:12:20Z"
   },
   {
@@ -158,8 +167,6 @@
    "date": "2026-10-28",
    "place": "Toledo, Spain",
    "tz": "Europe/Madrid",
-   "publisher": "Al Jazeera",
-   "title": "Train crash in Spain kills at least 68 people",
    "url": "https://www.aljazeera.com/news/2026/10/28/injuries-reported-after-two-trains-collide-in-spain",
    "gathered": "2026-10-28T19:45:42Z"
   },
@@ -202,11 +209,28 @@
  ],
  "business": [
   {
+   "h": "Fed's inflation gauge rises to 3.6%",
+   "b": "Consumer prices rose 3.6% in September from a year earlier, up from 3.4% in August, the Commerce Department said, driven largely by gas prices.",
+   "date": "2026-10-29",
+   "publisher": "PBS NewsHour",
+   "title": "Inflation heats up again, days before midterm elections",
+   "url": "https://www.pbs.org/newshour/economy/inflation-heats-up-again-days-before-midterm-elections",
+   "published": "2026-10-29T16:24:59Z",
+   "gathered": "2026-10-29T19:08:23Z"
+  },
+  {
+   "h": "ECB President Lagarde to step down early",
+   "b": "Lagarde will leave on February 7, about nine months before her term ends, giving EU leaders time to pick a successor before the French presidential election.",
+   "date": "2026-10-29",
+   "publisher": "Al Jazeera",
+   "title": "European Central Bank President Lagarde to step down early",
+   "url": "https://www.aljazeera.com/news/2026/10/29/european-central-bank-president-lagarde-to-step-down-early",
+   "gathered": "2026-10-29T19:08:23Z"
+  },
+  {
    "h": "AI boom pushes smartphone prices up",
    "b": "Memory chip shortages driven by AI data centers have pushed global phone prices up an average of 15%, Counterpoint Research reported.",
    "date": "2026-10-29",
-   "publisher": "Marketplace",
-   "title": "AI infrastructure is making smartphones pricier",
    "url": "https://www.marketplace.org/episode/2026/10/29/ai-infrastructure-is-making-smartphones-pricier",
    "gathered": "2026-10-29T13:31:15Z"
   },
@@ -292,6 +316,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Nobody is enforcing NYC's $3 bus fare for now",
+   "b": "Enforcement is on pause after a series of confrontations involving MTA agents, and the NYPD will not step in while the security force is suspended.",
+   "date": "2026-10-29",
+   "publisher": "Gothamist",
+   "title": "NYPD won't enforce NYC's bus fare while MTA security force is suspended",
+   "url": "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
+   "published": "2026-10-29T17:13:00Z",
+   "gathered": "2026-10-29T19:08:23Z"
+  },
+  {
    "h": "Garbage truck kills woman in Brooklyn",
    "b": "Siobhan Lynch, 30, was struck by a Department of Sanitation truck while crossing Bay Parkway at Cropsey Avenue Wednesday evening, the NYPD said.",
    "date": "2026-10-29",
@@ -299,6 +333,7 @@
    "title": "Brooklyn woman hit and killed by garbage truck at Bay Parkway, NYPD says",
    "url": "https://gothamist.com/news/brooklyn-woman-hit-and-killed-by-garbage-truck-at-peak-time-for-traffic-deaths-nypd-says",
    "published": "2026-10-29T11:54:00Z",
+   "updated": "2026-10-29T15:22:00Z",
    "gathered": "2026-10-29T13:31:15Z"
   },
   {
@@ -354,46 +389,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
+   "temp": 65,
    "cond": "Fair",
-   "obs": "29 Oct 08:51 am EDT"
+   "obs": "29 Oct 14:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Today",
-    "kind": "high",
-    "temp": 68,
-    "text": "Sunny, with a high near 68. Southwest wind 5 to 10 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 58,
-    "text": "Partly cloudy, with a low around 58. Southwest wind 9 to 11 mph. "
+    "temp": 59,
+    "text": "Mostly clear, with a low around 59. Southwest wind 9 to 11 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 69,
-    "text": "Sunny, with a high near 69. Northwest wind 10 to 17 mph. "
+    "text": "Sunny, with a high near 69. Northwest wind 9 to 15 mph, with gusts as high as 26 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly clear, with a low around 50. Northwest wind 10 to 14 mph. "
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51. Northwest wind 10 to 14 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61. North wind 6 to 8 mph. "
+    "text": "Sunny, with a high near 61. North wind 7 to 9 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
     "temp": 49,
-    "text": "Mostly cloudy, with a low around 49."
+    "text": "Mostly cloudy, with a low around 49. North wind 3 to 5 mph. "
+   },
+   {
+    "name": "Sunday",
+    "kind": "high",
+    "temp": 63,
+    "text": "Partly sunny, with a high near 63."
    }
   ]
  },
