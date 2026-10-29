@@ -19,9 +19,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Partly Cloudy",
-    "obs": "28 Oct 19:52 pm EDT"
+    "temp": 65,
+    "cond": "A Few Clouds",
+    "obs": "28 Oct 20:52 pm EDT"
    },
    "periods": [
     {
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,8 +98,8 @@
   "weather": {
    "now": {
     "temp": 48,
-    "cond": "Mostly Cloudy",
-    "obs": "28 Oct 19:54 pm EDT"
+    "cond": "Partly Cloudy",
+    "obs": "28 Oct 20:54 pm EDT"
    },
    "periods": [
     {
@@ -152,7 +152,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -177,16 +177,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
-    "cond": "A Few Clouds",
-    "obs": "28 Oct 18:53 pm CDT"
+    "temp": 69,
+    "cond": "Partly Cloudy",
+    "obs": "28 Oct 19:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Partly cloudy, with a low around 59. South wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Partly cloudy, with a low around 59. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
@@ -232,7 +232,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -253,9 +253,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Mostly Cloudy",
-    "obs": "28 Oct 16:58 pm MDT"
+    "temp": 57,
+    "cond": "Partly Cloudy",
+    "obs": "28 Oct 17:58 pm MDT"
    },
    "periods": [
     {
@@ -308,7 +308,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -395,7 +395,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -460,9 +460,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "28 Oct 19:51 pm EDT"
+    "obs": "28 Oct 20:51 pm EDT"
    },
    "periods": [
     {
@@ -515,7 +515,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -565,7 +565,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "goodnews": []
  },
  {
@@ -574,7 +574,19 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Hobbs rebuffs claims of non-citizen voting",
+    "b": "Secretary of State Steve Hobbs responded after two U.S. attorneys said they found more than 400 non-citizens on Washington voter rolls and asked officials to set aside matching ballots.",
+    "date": "2026-10-28",
+    "publisher": "KUOW",
+    "title": "Washington's Secretary of State rebuffs claims that non-citizens are voting en masse",
+    "url": "https://www.kuow.org/elections/2026-10-28/washingtons-secretary-of-state-rebuffs-claims-that-non-citizens-are-voting-en-masse",
+    "published": "2026-10-29T00:43:42Z",
+    "updated": "2026-10-29T00:46:24Z",
+    "gathered": "2026-10-29T01:12:20Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
@@ -606,7 +618,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly cloudy, with a low around 40."
+     "text": "Mostly cloudy, with a low around 40. Calm wind. "
     },
     {
      "name": "Saturday",
@@ -628,7 +640,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T01:12:00Z",
+  "updatedAt": "2026-10-29T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
