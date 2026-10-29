@@ -25,12 +25,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 77,
-     "text": "Sunny, with a high near 77. Northeast wind around 5 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
@@ -59,6 +53,12 @@
      "kind": "low",
      "temp": 55,
      "text": "Mostly cloudy, with a low around 55."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 65,
+     "text": "A 30 percent chance of showers.  Mostly cloudy, with a high near 65."
     }
    ]
   },
@@ -74,7 +74,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -159,7 +159,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -260,7 +260,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -336,7 +336,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -452,7 +452,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -603,7 +603,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -664,7 +664,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "goodnews": []
  },
  {
@@ -674,6 +674,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "GEO Group gets $1.5B deal to run Tacoma ICE center",
+    "b": "ICE awarded the private prison company a 10-year contract for the 1,635-bed Northwest ICE Processing Center despite reports of poor conditions.",
+    "date": "2026-10-29",
+    "publisher": "KUOW",
+    "title": "Feds approve $1.5 billion contract for GEO Group to continue running Tacoma ICE center",
+    "url": "https://www.kuow.org/immigration/2026-10-29/feds-approve-1-5-billion-contract-for-geo-group-to-continue-running-tacoma-ice-center",
+    "published": "2026-10-29T19:15:34Z",
+    "updated": "2026-10-29T19:15:34Z",
+    "gathered": "2026-10-29T19:17:38Z"
+   },
    {
     "h": "Washington suicide deaths hit 25-year high",
     "b": "Nearly 1,400 people died by suicide in the state in 2025, the most in 25 years, according to new health department data.",
@@ -746,7 +757,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T19:14:00Z",
+  "updatedAt": "2026-10-29T22:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
