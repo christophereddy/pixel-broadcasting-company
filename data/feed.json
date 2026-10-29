@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T07:18:00Z",
+ "updatedAt": "2026-10-29T10:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -51,11 +51,7 @@
    "h": "HHS to let pharmacies make popular peptides",
    "b": "HHS will exercise enforcement discretion for a half dozen wellness peptides made by compounding pharmacies, though evidence for their safety and effectiveness is sparse.",
    "date": "2026-10-28",
-   "publisher": "KUOW",
-   "title": "Trump administration will allow pharmacies to make popular peptides",
    "url": "https://www.kuow.org/npr-news/2026-10-28/trump-administration-will-allow-pharmacies-to-make-popular-peptides",
-   "published": "2026-10-28T22:26:48Z",
-   "updated": "2026-10-28T22:53:01Z",
    "gathered": "2026-10-29T00:12:43Z"
   },
   {
@@ -114,6 +110,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Activists say settlers beat them in West Bank",
+   "b": "Activist Adele Shoko said armed settlers attacked her, US journalist Jasper Nathaniel and activist Andrey X in Umm al-Khair, and that Nathaniel was then arrested.",
+   "date": "2026-10-29",
+   "place": "Masafer Yatta, West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Activists accuse Israeli settlers of assault in occupied West Bank",
+   "url": "https://www.aljazeera.com/news/2026/10/29/activists-accuse-israeli-settlers-of-assault-in-occupied-west-bank",
+   "gathered": "2026-10-29T07:18:12Z"
+  },
   {
    "h": "King Charles faces slavery reckoning in Caribbean",
    "b": "Facing demands for an apology and reparations, Charles is expected to call slavery an \"atrocity that forever stains our history\" while stopping short of an apology.",
@@ -210,7 +217,7 @@
    "b": "NOAA forecasts warmer-than-average temperatures across much of the continental U.S., with above-average precipitation in several regions.",
    "date": "2026-10-28",
    "publisher": "KUOW",
-   "title": "Forecasters are predicting a warmer and wetter winter. Here's how El Niño will affect your region.",
+   "title": "Forecasters are predicting a warmer and wetter winter. Here's how El Niño will affect your region",
    "url": "https://www.kuow.org/npr-news/2026-10-28/forecasters-are-predicting-a-warmer-and-wetter-winter-heres-how-el-nino-will-affect-your-region",
    "published": "2026-10-29T02:20:45Z",
    "updated": "2026-10-29T03:25:03Z",
@@ -321,46 +328,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "29 Oct 01:51 am EDT"
+   "obs": "29 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 52,
-    "text": "Mostly clear, with a low around 52. Light west wind. "
-   },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 68,
-    "text": "Sunny, with a high near 68. Light and variable wind becoming southwest 5 to 9 mph in the morning. "
+    "text": "Sunny, with a high near 68. Light west wind becoming southwest 5 to 10 mph in the morning. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "Partly cloudy, with a low around 59. Southwest wind 9 to 11 mph. "
+    "temp": 58,
+    "text": "Partly cloudy, with a low around 58. Southwest wind 9 to 11 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 69,
-    "text": "Partly sunny, then gradually becoming sunny, with a high near 69. Northwest wind 9 to 15 mph. "
+    "text": "Sunny, with a high near 69. Northwest wind 10 to 17 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 52,
-    "text": "Mostly clear, with a low around 52. Northwest wind 10 to 14 mph. "
+    "temp": 50,
+    "text": "Mostly clear, with a low around 50. Northwest wind 10 to 14 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 61,
     "text": "Sunny, with a high near 61."
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 49,
+    "text": "Mostly cloudy, with a low around 49."
    }
   ]
  },
