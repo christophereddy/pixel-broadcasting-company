@@ -8,16 +8,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 66,
     "cond": "A Few Clouds",
-    "obs": "29 Oct 18:52 pm EDT"
+    "obs": "29 Oct 22:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. Northeast wind around 5 mph becoming calm. "
+     "text": "Mostly clear, with a low around 54. Calm wind. "
     },
     {
      "name": "Friday",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,9 +86,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "29 Oct 18:54 pm EDT"
+    "obs": "29 Oct 22:54 pm EDT"
    },
    "periods": [
     {
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -157,7 +157,7 @@
     "b": "The ACLU and other groups filed a class-action suit over \"inhumane\" treatment at Miami Correctional Facility, where many Chicago-area immigrants are held.",
     "date": "2026-10-29",
     "publisher": "WBEZ",
-    "title": "Civil rights attorneys file lawsuit challenging 'inhumane' conditions at Indiana immigration detention center",
+    "title": "Civil rights lawsuit challenges 'inhumane' conditions at Indiana immigration detention center",
     "url": "https://www.wbez.org/immigration/2026/10/29/civil-rights-aclu-lawsuit-indiana-immigration-detention-center",
     "published": "2026-10-29T22:35:14Z",
     "updated": "2026-10-29T22:35:14Z",
@@ -180,16 +180,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 17:53 pm CDT"
+    "temp": 56,
+    "cond": "Fair",
+    "obs": "29 Oct 21:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 50,
-     "text": "Clear, with a low around 50. North northwest wind 5 to 10 mph. "
+     "temp": 51,
+     "text": "Clear, with a low around 51. North wind around 5 mph. "
     },
     {
      "name": "Friday",
@@ -235,7 +235,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -247,13 +247,17 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 48,
+    "cond": "Mostly Cloudy",
+    "obs": "29 Oct 19:58 pm MDT"
+   },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Patchy dense fog after 2am.  Otherwise, partly cloudy, with a low around 43. North wind 5 to 7 mph becoming calm  in the evening. "
+     "text": "Patchy dense fog after 2am.  Otherwise, mostly cloudy, with a low around 43. North wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Friday",
@@ -299,7 +303,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -310,6 +314,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "DOJ subpoenas LA County election workers",
+    "b": "The county Registrar-Recorder confirmed grand jury subpoenas ordering election workers to appear Nov. 4.",
+    "date": "2026-10-29",
+    "publisher": "KUOW",
+    "title": "Justice Department issues subpoenas to California election workers",
+    "url": "https://www.kuow.org/npr-news/2026-10-29/justice-department-issues-subpoenas-to-california-election-workers",
+    "published": "2026-10-30T01:35:54Z",
+    "updated": "2026-10-30T01:44:03Z",
+    "gathered": "2026-10-30T02:47:27Z"
+   },
    {
     "h": "SoCal could see first wet Halloween since 2014",
     "b": "Scattered showers are possible this weekend, with the highest chance Saturday night and Sunday morning and totals of half an inch to 1.5 inches.",
@@ -329,6 +344,7 @@
     "title": "Recent high tides worsen landslide activity in Rancho Palos Verdes",
     "url": "https://laist.com/news/climate-environment/high-tides-landslide-activity-rancho-palos-verdes-el-nino",
     "published": "2026-10-29T16:30:03Z",
+    "updated": "2026-10-29T16:30:03Z",
     "gathered": "2026-10-29T19:08:23Z"
    },
    {
@@ -385,7 +401,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Rain.  Low around 59. Chance of precipitation is 90%."
+     "text": "Rain.  Low around 59. South southwest wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -407,7 +423,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -426,6 +442,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "8 charged in $7M SNAP fraud scheme",
+    "b": "The Manhattan DA says the group used deli names to steal EBT card numbers from April 2023 to September 2025.",
+    "date": "2026-10-29",
+    "publisher": "Gothamist",
+    "title": "8 people charged in $7M SNAP benefit fraud scheme",
+    "url": "https://gothamist.com/news/8-people-charged-in-7m-snap-benefit-fraud-scheme",
+    "published": "2026-10-30T00:30:39Z",
+    "gathered": "2026-10-30T02:47:27Z"
+   },
    {
     "h": "Nobody is enforcing NYC's $3 bus fare for now",
     "b": "Enforcement is on pause after a series of confrontations involving MTA agents, and the NYPD will not step in while the security force is suspended.",
@@ -449,28 +475,28 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 61,
     "cond": "Fair",
-    "obs": "29 Oct 18:51 pm EDT"
+    "obs": "29 Oct 22:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly clear, with a low around 59. Southwest wind 9 to 11 mph. "
+     "temp": 57,
+     "text": "Mostly clear, with a low around 57. Southwest wind 8 to 10 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Northwest wind 9 to 15 mph, with gusts as high as 26 mph. "
+     "text": "Partly sunny through mid morning, then becoming sunny, with a high near 69. Breezy, with a northwest wind 9 to 14 mph increasing to 15 to 20 mph in the afternoon. Winds could gust as high as 30 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51. Northwest wind 10 to 14 mph. "
+     "text": "Mostly clear, with a low around 51. Northwest wind 10 to 17 mph. "
     },
     {
      "name": "Saturday",
@@ -504,7 +530,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -555,7 +581,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "goodnews": []
  },
  {
@@ -573,7 +599,7 @@
     "title": "Feds approve $1.5 billion contract for GEO Group to continue running Tacoma ICE lockup",
     "url": "https://www.kuow.org/immigration/2026-10-29/feds-approve-1-5-billion-contract-for-geo-group-to-continue-running-tacoma-ice-center",
     "published": "2026-10-29T19:15:34Z",
-    "updated": "2026-10-29T20:30:55Z",
+    "updated": "2026-10-29T23:33:54Z",
     "gathered": "2026-10-29T19:17:38Z"
    },
    {
@@ -619,7 +645,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 41,
-     "text": "Mostly cloudy, with a low around 41."
+     "text": "Mostly cloudy, with a low around 41. North wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Sunday",
@@ -641,7 +667,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T01:12:00Z",
+  "updatedAt": "2026-10-30T04:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

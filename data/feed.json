@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T01:12:00Z",
+ "updatedAt": "2026-10-30T04:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,34 +7,38 @@
  },
  "world": [
   {
-   "h": "Houthis again target Riyadh",
-   "b": "Al Jazeera's live coverage of the Iran war: The Houthis again target Riyadh, and the coalition says two missiles were intercepted.",
-   "date": "2026-10-29",
+   "h": "IRGC says four tankers struck Hormuz mines",
+   "b": "Iran's Revolutionary Guard says four tankers struck mines in the Strait of Hormuz. Al Jazeera is following developments live.",
+   "date": "2026-10-30",
    "publisher": "Al Jazeera",
-   "title": "Houthis again target Riyadh as coalition says two missiles intercepted",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks",
-   "gathered": "2026-10-29T01:12:20Z"
+   "title": "Iran’s IRGC says tankers strike naval mines and catch fire in Hormuz Strait",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
+   "gathered": "2026-10-30T02:47:27Z"
   }
  ],
  "national": [
   {
+   "h": "Most Americans say the country is in decline",
+   "b": "More than two-thirds of Americans believe the U.S. is in decline, according to a Michigan State American Communities Project survey of 2,155 adults.",
+   "date": "2026-10-29",
+   "publisher": "PBS NewsHour",
+   "title": "New survey finds more than two-thirds of Americans believe their country is in decline",
+   "url": "https://www.pbs.org/newshour/nation/new-survey-finds-more-than-two-thirds-of-americans-believe-their-country-is-in-decline",
+   "published": "2026-10-29T23:37:11Z",
+   "gathered": "2026-10-30T02:47:27Z"
+  },
+  {
    "h": "Hegseth fires Pentagon's top military planner",
    "b": "Army Lt. Gen. Brett Sylvia was removed as head of strategy, plans and policy on the Joint Chiefs of Staff, with no reason given, a defense official said.",
    "date": "2026-10-29",
-   "publisher": "PBS NewsHour",
-   "title": "Hegseth fires the Pentagon's top military planner even as Trump considers new Iran strikes",
    "url": "https://www.pbs.org/newshour/politics/hegseth-fires-the-pentagons-top-military-planner-even-as-trump-considers-new-iran-strikes",
-   "published": "2026-10-29T20:51:20Z",
    "gathered": "2026-10-29T23:29:30Z"
   },
   {
    "h": "'Star Trek' actor Patrick Stewart dies at 86",
    "b": "Best known as Captain Jean-Luc Picard and Professor Charles Xavier, Stewart spent more of his career onstage, from Macbeth to \"Waiting for Godot.\"",
    "date": "2026-10-29",
-   "publisher": "PBS NewsHour",
-   "title": "Patrick Stewart, star of stage and 'Star Trek,' dies at 86",
    "url": "https://www.pbs.org/newshour/arts/patrick-stewart-star-of-stage-and-star-trek-dies-at-86",
-   "published": "2026-10-29T20:02:17Z",
    "gathered": "2026-10-29T23:29:30Z"
   },
   {
@@ -51,6 +55,15 @@
  ],
  "politics": [
   {
+   "h": "DOJ renews bid to block Alaska results",
+   "b": "The Justice Department filed a revised lawsuit seeking to decertify Alaska's Senate race if Sen. Dan Sullivan loses narrowly.",
+   "date": "2026-10-30",
+   "publisher": "Al Jazeera",
+   "title": "Trump administration renews bid to block Alaska election results",
+   "url": "https://www.aljazeera.com/news/2026/10/30/trump-administration-renews-bid-to-block-alaska-election-results",
+   "gathered": "2026-10-30T02:47:27Z"
+  },
+  {
    "h": "Alaska governor orders probe of Peltola campaign",
    "b": "Gov. Dunleavy's order follows reporting that Peltola's campaign discussed recruiting a candidate with the same name as Sen. Dan Sullivan.",
    "date": "2026-10-29",
@@ -60,13 +73,34 @@
  ],
  "international": [
   {
+   "h": "Netanyahu's party claims Israeli vote was stolen",
+   "b": "Netanyahu's Likud made unsubstantiated allegations against Arab-led parties as final results showed his bloc losing its majority.",
+   "date": "2026-10-29",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "PBS NewsHour",
+   "title": "Netanyahu’s party claims Israeli election 'stolen' as results show him losing majority",
+   "url": "https://www.pbs.org/newshour/world/netanyahus-party-claims-israeli-election-stolen-as-results-show-him-losing-majority",
+   "published": "2026-10-30T00:44:24Z",
+   "gathered": "2026-10-30T02:47:27Z"
+  },
+  {
+   "h": "EU force helicopter crash kills four in Bosnia",
+   "b": "A CH-47 Chinook with the EU force crashed during training in the Brcko region, killing four and injuring 11. Italy's government said all on board were Italian.",
+   "date": "2026-10-30",
+   "place": "Brcko, Bosnia",
+   "tz": "Europe/Sarajevo",
+   "publisher": "Al Jazeera",
+   "title": "EU force helicopter crash kills four in Bosnia",
+   "url": "https://www.aljazeera.com/news/2026/10/30/eu-force-helicopter-crash-kills-four-in-bosnia",
+   "gathered": "2026-10-30T02:47:27Z"
+  },
+  {
    "h": "Israeli strikes continue across Gaza",
    "b": "A drone strike on a car in the Maghazi refugee camp killed two Palestinians, as the Health Ministry called for the Rafah crossing to open for the sick and wounded.",
    "date": "2026-10-29",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Israeli strikes hit Gaza as Health Ministry urges Rafah opening",
    "url": "https://www.aljazeera.com/news/2026/10/29/israeli-strikes-hit-gaza-as-health-ministry-urges-rafah-opening",
    "gathered": "2026-10-29T19:17:38Z"
   },
@@ -105,10 +139,7 @@
    "h": "DoorDash offers $17 billion for Instacart",
    "b": "The deal, which could cut competition in grocery delivery, is expected to close by the end of 2027 or early 2028 if shareholders and regulators approve; Instacart's name and app will remain.",
    "date": "2026-10-29",
-   "publisher": "PBS NewsHour",
-   "title": "DoorDash offers $17 billion for Instacart in what would be big grocery delivery consolidation",
    "url": "https://www.pbs.org/newshour/economy/doordash-offers-17-billion-for-instacart-in-what-would-be-big-grocery-delivery-consolidation",
-   "published": "2026-10-29T22:41:40Z",
    "gathered": "2026-10-29T23:29:30Z"
   },
   {
@@ -145,11 +176,7 @@
    "h": "Seabirds may get jet lag, study finds",
    "b": "Manx shearwaters appear to become slightly disoriented on long Atlantic flights as their internal clocks fall out of sync with the sun, a study in Science found.",
    "date": "2026-10-29",
-   "publisher": "KUOW",
-   "title": "Even birds get jet lagged, study shows",
    "url": "https://www.kuow.org/npr-news/2026-10-29/even-birds-get-jet-lagged-study-shows",
-   "published": "2026-10-29T18:00:00Z",
-   "updated": "2026-10-29T18:48:24Z",
    "gathered": "2026-10-29T19:17:38Z"
   }
  ],
@@ -183,6 +210,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "8 charged in $7M SNAP fraud scheme",
+   "b": "The Manhattan DA says the group used deli names to steal EBT card numbers from April 2023 to September 2025.",
+   "date": "2026-10-29",
+   "publisher": "Gothamist",
+   "title": "8 people charged in $7M SNAP benefit fraud scheme",
+   "url": "https://gothamist.com/news/8-people-charged-in-7m-snap-benefit-fraud-scheme",
+   "published": "2026-10-30T00:30:39Z",
+   "gathered": "2026-10-30T02:47:27Z"
+  },
+  {
    "h": "Nobody is enforcing NYC's $3 bus fare for now",
    "b": "Enforcement is on pause after a series of confrontations involving MTA agents, and the NYPD will not step in while the security force is suspended.",
    "date": "2026-10-29",
@@ -205,28 +242,28 @@
  ],
  "weather": {
   "now": {
-   "temp": 62,
+   "temp": 61,
    "cond": "Fair",
-   "obs": "29 Oct 18:51 pm EDT"
+   "obs": "29 Oct 22:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 59,
-    "text": "Mostly clear, with a low around 59. Southwest wind 9 to 11 mph. "
+    "temp": 57,
+    "text": "Mostly clear, with a low around 57. Southwest wind 8 to 10 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 69,
-    "text": "Sunny, with a high near 69. Northwest wind 9 to 15 mph, with gusts as high as 26 mph. "
+    "text": "Partly sunny through mid morning, then becoming sunny, with a high near 69. Breezy, with a northwest wind 9 to 14 mph increasing to 15 to 20 mph in the afternoon. Winds could gust as high as 30 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 51,
-    "text": "Mostly clear, with a low around 51. Northwest wind 10 to 14 mph. "
+    "text": "Mostly clear, with a low around 51. Northwest wind 10 to 17 mph. "
    },
    {
     "name": "Saturday",
