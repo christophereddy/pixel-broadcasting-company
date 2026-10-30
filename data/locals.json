@@ -5,19 +5,31 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "US scraps G20 photo in Atlanta over Russia",
+    "b": "Rubio canceled the traditional group photo at the G20 foreign ministers' meeting after several Europeans objected to posing with Russia's Sergey Lavrov.",
+    "date": "2026-10-30",
+    "publisher": "WABE",
+    "title": "US scraps G20 photo in Atlanta after Europeans object to Russia's inclusion",
+    "url": "https://www.wabe.org/us-scraps-g20-photo-in-atlanta-after-europeans-object-to-russias-inclusion/",
+    "published": "2026-10-30T15:05:34Z",
+    "updated": "2026-10-30T15:05:40Z",
+    "gathered": "2026-10-30T16:47:07Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "A Few Clouds",
-    "obs": "30 Oct 08:52 am EDT"
+    "temp": 72,
+    "cond": "Partly Cloudy",
+    "obs": "30 Oct 11:52 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 79,
-     "text": "Mostly sunny, with a high near 79. Calm wind becoming east around 5 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 79. East wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -63,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -84,16 +96,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "Partly Cloudy",
-    "obs": "30 Oct 08:54 am EDT"
+    "temp": 70,
+    "cond": "A Few Clouds",
+    "obs": "30 Oct 11:54 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. West wind 7 to 13 mph, with gusts as high as 23 mph. "
+     "text": "Sunny, with a high near 69. West wind 10 to 13 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Tonight",
@@ -139,7 +151,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -155,7 +167,7 @@
     "b": "Billions of gallons of wastewater are pouring into the river after heavy storms, threatening human health and wildlife at spots like Bubbly Creek.",
     "date": "2026-10-30",
     "publisher": "WBEZ",
-    "title": "More raw sewage, billions of gallons of it, is pouring into the Chicago River after storms",
+    "title": "Billions of gallons of raw sewage is pouring into the Chicago River after storms",
     "url": "https://www.wbez.org/environment/2026/10/30/raw-sewage-chicago-river-deep-tunnel-storms-climate-change",
     "published": "2026-10-30T10:40:00Z",
     "updated": "2026-10-30T10:40:00Z",
@@ -189,22 +201,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 56,
     "cond": "Mostly Cloudy",
-    "obs": "30 Oct 07:53 am CDT"
+    "obs": "30 Oct 10:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Partly sunny, with a high near 59. East northeast wind around 10 mph. "
+     "text": "Scattered sprinkles after 3pm.  Mostly cloudy, with a temperature falling to around 54 by 4pm. East wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Scattered sprinkles before midnight, then scattered showers, mainly after 3am.  Cloudy, with a low around 52. East northeast wind around 10 mph.  Chance of precipitation is 30%."
+     "temp": 55,
+     "text": "Scattered sprinkles before midnight, then scattered showers, mainly after 3am.  Cloudy, with a steady temperature around 55. East wind around 10 mph.  Chance of precipitation is 40%."
     },
     {
      "name": "Saturday",
@@ -244,7 +256,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -269,16 +281,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 38,
-    "cond": " Fog",
-    "obs": "30 Oct 05:58 am MDT"
+    "temp": 52,
+    "cond": "Mostly Cloudy",
+    "obs": "30 Oct 09:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Areas of dense fog before 10am.  Otherwise, mostly sunny, with a high near 65. Calm wind becoming northeast around 6 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 65. Calm wind becoming northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -324,7 +336,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -397,7 +409,7 @@
      "name": "Today",
      "kind": "high",
      "temp": 70,
-     "text": "A 40 percent chance of rain.  Cloudy, with a high near 70. South southwest wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Scattered showers.  Mostly cloudy, with a high near 70. East southeast wind around 5 mph becoming south southwest in the afternoon.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -443,7 +455,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -466,6 +478,27 @@
   },
   "local": [
    {
+    "h": "Suit says Two Trees illegally raised rents",
+    "b": "A class-action lawsuit accuses the Brooklyn developer of skirting tax-break rules and illegally raising rents at one of its buildings.",
+    "date": "2026-10-30",
+    "publisher": "Gothamist",
+    "title": "Influential Brooklyn developer illegally raised rents despite tax break, lawsuit claims",
+    "url": "https://gothamist.com/news/influential-brooklyn-developer-illegally-raised-rents-despite-tax-break-lawsuit-claims",
+    "published": "2026-10-30T15:43:00Z",
+    "updated": "2026-10-30T16:43:00Z",
+    "gathered": "2026-10-30T16:47:07Z"
+   },
+   {
+    "h": "Democrats' NJ-7 early vote lead keeps growing",
+    "b": "Early turnout in New Jersey's 7th District has swamped 2024 totals, giving Democrats an edge in their bid to unseat Rep. Tom Kean Jr.",
+    "date": "2026-10-30",
+    "publisher": "Gothamist",
+    "title": "Democrats' early voting lead in NJ keeps growing ahead of Election Day",
+    "url": "https://gothamist.com/news/democrats-early-voting-lead-in-nj-keeps-growing-ahead-of-election-day",
+    "published": "2026-10-30T15:17:55Z",
+    "gathered": "2026-10-30T16:47:07Z"
+   },
+   {
     "h": "Council takes up Mamdani's community safety agency",
     "b": "The City Council holds a hearing Friday on creating a Department of Community Safety, one of Mayor Mamdani's top campaign promises on violence prevention and mental health response.",
     "date": "2026-10-30",
@@ -482,7 +515,7 @@
     "publisher": "Gothamist",
     "title": "8 people charged in $7M SNAP benefit fraud scheme",
     "url": "https://gothamist.com/news/8-people-charged-in-7m-snap-benefit-fraud-scheme",
-    "published": "2026-10-30T00:30:39Z",
+    "published": "2026-10-30T14:25:00Z",
     "gathered": "2026-10-30T02:47:27Z"
    },
    {
@@ -508,16 +541,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 69,
     "cond": "Fair",
-    "obs": "30 Oct 08:51 am EDT"
+    "obs": "30 Oct 11:51 am EDT"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Northwest wind 9 to 18 mph, with gusts as high as 28 mph. "
+     "text": "Sunny, with a high near 69. Northwest wind 13 to 18 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Tonight",
@@ -563,7 +596,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -587,6 +620,17 @@
   },
   "local": [
    {
+    "h": "Feared EES airport chaos did not materialise",
+    "b": "A Eurocontrol report found French and German airports were worst affected by the EU's new entry-exit checks but saw only a slight rise in summer delays.",
+    "date": "2026-10-30",
+    "publisher": "The Local France",
+    "title": "Feared summer EES chaos at French airports 'did not materialise'",
+    "url": "https://www.thelocal.fr/20261030/feared-summer-ees-chaos-at-french-airports-did-not-materialise",
+    "published": "2026-10-30T14:49:33Z",
+    "updated": "2026-10-30T14:49:34Z",
+    "gathered": "2026-10-30T16:47:07Z"
+   },
+   {
     "h": "Police brace for Halloween protests in France",
     "b": "Interior Minister Laurent Nunez warned of a 'very high risk of public disorder' on Oct. 31 and announced around 70,000 police for the Yellow Vest and student protests.",
     "date": "2026-10-30",
@@ -601,11 +645,7 @@
     "h": "Philippe questioned in Le Havre embezzlement case",
     "b": "Magistrates named presidential candidate Edouard Philippe an 'assisted witness', a less serious status than formal investigation, in a case tied to his time as Le Havre mayor.",
     "date": "2026-10-30",
-    "publisher": "The Local France",
-    "title": "French presidential hopeful Philippe quizzed in embezzlement case",
     "url": "https://www.thelocal.fr/20261030/french-presidential-hopeful-philippe-quizzed-in-embezzlement-case",
-    "published": "2026-10-30T07:48:48Z",
-    "updated": "2026-10-30T07:48:50Z",
     "gathered": "2026-10-30T10:21:35Z"
    },
    {
@@ -632,7 +672,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "goodnews": []
  },
  {
@@ -710,7 +750,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T16:15:00Z",
+  "updatedAt": "2026-10-30T19:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
