@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T10:16:00Z",
+ "updatedAt": "2026-10-30T13:19:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -17,6 +17,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Veterans pay more after VA ends loan program",
+   "b": "An NPR investigation found more than 15,000 veterans with modified VA-backed mortgages saw payments rise at least $150 a month after the Trump administration shut down a low-interest program; more than 700 saw increases of $1,000 or more.",
+   "date": "2026-10-30",
+   "publisher": "KUOW",
+   "title": "Trump's VA killed a home loan program. Thousands of veterans are paying the price",
+   "url": "https://www.kuow.org/npr-news/2026-10-30/trumps-va-killed-a-home-loan-program-thousands-of-veterans-are-paying-the-price",
+   "published": "2026-10-30T09:00:00Z",
+   "updated": "2026-10-30T09:19:52Z",
+   "gathered": "2026-10-30T10:21:35Z"
+  },
   {
    "h": "Judge blocks Medicaid 'medically frail' rule",
    "b": "US District Judge Richard Stearns blocked a Trump administration rule requiring chronically ill Medicaid enrollees to prove they are medically frail to qualify for work exemptions, siding with 25 states and DC.",
@@ -63,6 +74,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Democrats aim to cut GOP lead in statehouses",
+   "b": "More than 6,100 state legislative seats are on the ballot. Republicans control 28 legislatures and Democrats 18, with the remaining four divided or under power-sharing deals.",
+   "date": "2026-10-30",
+   "publisher": "KUOW",
+   "title": "Democrats seek to weaken the Republican lead in state legislatures",
+   "url": "https://www.kuow.org/npr-news/2026-10-30/democrats-seek-to-weaken-the-republican-lead-in-state-legislatures",
+   "published": "2026-10-30T09:00:00Z",
+   "updated": "2026-10-30T09:20:58Z",
+   "gathered": "2026-10-30T10:21:35Z"
+  },
   {
    "h": "DOJ renews bid to block Alaska results",
    "b": "The Justice Department filed a revised lawsuit seeking to decertify Alaska's Senate race if Sen. Dan Sullivan loses narrowly.",
@@ -172,6 +194,17 @@
  ],
  "business": [
   {
+   "h": "Officials ramp up scrutiny of sports betting apps",
+   "b": "Gaming regulators, government lawyers and federal lawmakers have launched inquiries into DraftKings and others after a ProPublica investigation into their responsible-gaming guardrails.",
+   "date": "2026-10-30",
+   "publisher": "ProPublica",
+   "title": "Federal and State Officials Ramp Up Scrutiny of DraftKings, Other Sports Betting Apps",
+   "url": "https://www.propublica.org/article/sports-betting-impact-louisiana-ohio-congress",
+   "published": "2026-10-30T09:00:00Z",
+   "updated": "2026-10-30T09:00:11Z",
+   "gathered": "2026-10-30T10:21:35Z"
+  },
+  {
    "h": "DoorDash offers $17 billion for Instacart",
    "b": "The deal, which could cut competition in grocery delivery, is expected to close by the end of 2027 or early 2028 if shareholders and regulators approve; Instacart's name and app will remain.",
    "date": "2026-10-29",
@@ -208,6 +241,17 @@
   }
  ],
  "science": [
+  {
+   "h": "Secret UN vote boosted carbon capture, ProPublica finds",
+   "b": "A 2005 U.N. climate report suggested at least 99% of stored CO2 would likely stay underground despite scant evidence; major storage projects have since faced breakdowns and cost overruns.",
+   "date": "2026-10-30",
+   "publisher": "ProPublica",
+   "title": "How a Secret Vote by U.N. Scientists Legitimized Carbon Capture and Skewed Decades of Climate Policy",
+   "url": "https://www.propublica.org/article/carbon-capture-storage-fossil-fuel-sally-benson",
+   "published": "2026-10-30T10:00:00Z",
+   "updated": "2026-10-30T10:00:12Z",
+   "gathered": "2026-10-30T10:21:35Z"
+  },
   {
    "h": "Seabirds may get jet lag, study finds",
    "b": "Manx shearwaters appear to become slightly disoriented on long Atlantic flights as their internal clocks fall out of sync with the sun, a study in Science found.",
@@ -287,19 +331,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 58,
    "cond": "Fair",
-   "obs": "30 Oct 02:51 am EDT"
+   "obs": "30 Oct 05:51 am EDT"
   },
   "periods": [
    {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 69,
-    "text": "Sunny, with a high near 69. West wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
+    "text": "Sunny, with a high near 69. Southwest wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 49,
     "text": "Mostly clear, with a low around 49. Northwest wind 10 to 14 mph, with gusts as high as 24 mph. "
@@ -320,7 +364,7 @@
     "name": "Sunday",
     "kind": "high",
     "temp": 62,
-    "text": "Partly sunny, with a high near 62."
+    "text": "Partly sunny, with a high near 62. North wind around 5 mph becoming calm. "
    },
    {
     "name": "Sunday Night",

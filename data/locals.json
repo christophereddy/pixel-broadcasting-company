@@ -9,18 +9,18 @@
   "weather": {
    "now": {
     "temp": 60,
-    "cond": "A Few Clouds",
-    "obs": "30 Oct 02:52 am EDT"
+    "cond": "Fair",
+    "obs": "30 Oct 05:52 am EDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 79,
      "text": "Sunny, with a high near 79. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 60,
      "text": "Mostly cloudy, with a low around 60. Calm wind becoming east around 5 mph after midnight. "
@@ -41,7 +41,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 66,
-     "text": "Cloudy, with a high near 66."
+     "text": "Cloudy, with a high near 66. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Sunday Night",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,27 +78,25 @@
     "h": "Sheriffs ask Healey to tweak ICE limits",
     "b": "Twelve of the state's 14 sheriffs want the PROTECT Act changed so they can notify ICE about people charged with violent crimes who face deportation orders.",
     "date": "2026-10-29",
-    "publisher": "WBUR",
-    "title": "Mass. sheriffs ask Gov. Healey to tweak new limits on ICE arrests",
     "url": "https://www.wbur.org/news/2026/10/29/massachusetts-sheriffs-protect-act-healey-minogue",
     "gathered": "2026-10-29T13:31:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Partly Cloudy",
-    "obs": "30 Oct 02:54 am EDT"
+    "temp": 56,
+    "cond": "Mostly Cloudy",
+    "obs": "30 Oct 05:54 am EDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 69. West wind 6 to 13 mph, with gusts as high as 23 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
      "text": "Clear, with a low around 42. Northwest wind around 9 mph, with gusts as high as 22 mph. "
@@ -141,7 +139,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -180,25 +178,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Fair",
-    "obs": "30 Oct 01:53 am CDT"
+    "temp": 48,
+    "cond": "A Few Clouds",
+    "obs": "30 Oct 04:53 am CDT"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 51,
-     "text": "Mostly clear, with a low around 51. North wind around 10 mph. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "Increasing clouds, with a high near 59. East northeast wind around 10 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Scattered sprinkles before midnight, then scattered showers, mainly after 3am.  Cloudy, with a low around 52. East northeast wind around 10 mph.  Chance of precipitation is 30%."
@@ -207,7 +199,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 60,
-     "text": "Showers likely, mainly before 11am.  Cloudy, with a high near 60. Southeast wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 70%."
+     "text": "Showers likely, mainly before 11am.  Cloudy, with a high near 60. Southeast wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Saturday Night",
@@ -219,7 +211,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 64,
-     "text": "Isolated showers.  Mostly cloudy, with a high near 64. Chance of precipitation is 20%."
+     "text": "Isolated showers.  Mostly cloudy, with a high near 64. Southeast wind around 5 mph, with gusts as high as 10 mph.  Chance of precipitation is 20%."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 55,
+     "text": "Mostly cloudy, with a low around 55."
     }
    ]
   },
@@ -235,7 +233,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -248,17 +246,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 23:58 pm MDT"
+    "temp": 44,
+    "cond": "Partly Cloudy",
+    "obs": "30 Oct 01:58 am MDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Patchy dense fog after 2am.  Otherwise, mostly cloudy, with a low around 43. Calm wind. "
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -288,6 +280,12 @@
      "kind": "high",
      "temp": 63,
      "text": "Mostly cloudy, with a high near 63."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 46,
+     "text": "Mostly cloudy, with a low around 46."
     }
    ]
   },
@@ -303,7 +301,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -318,11 +316,7 @@
     "h": "DOJ subpoenas LA County election workers",
     "b": "The county Registrar-Recorder confirmed grand jury subpoenas ordering election workers to appear Nov. 4.",
     "date": "2026-10-29",
-    "publisher": "KUOW",
-    "title": "Justice Department issues subpoenas to California election workers",
     "url": "https://www.kuow.org/npr-news/2026-10-29/justice-department-issues-subpoenas-to-california-election-workers",
-    "published": "2026-10-30T01:35:54Z",
-    "updated": "2026-10-30T01:44:03Z",
     "gathered": "2026-10-30T02:47:27Z"
    },
    {
@@ -374,12 +368,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 61,
-     "text": "A 30 percent chance of rain.  Cloudy, with a low around 61. South southeast wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
      "name": "Friday",
      "kind": "high",
      "temp": 70,
@@ -408,6 +396,12 @@
      "kind": "high",
      "temp": 68,
      "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 68. Chance of precipitation is 60%."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56."
     }
    ]
   },
@@ -423,7 +417,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -475,19 +469,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 58,
     "cond": "Fair",
-    "obs": "30 Oct 02:51 am EDT"
+    "obs": "30 Oct 05:51 am EDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. West wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
+     "text": "Sunny, with a high near 69. Southwest wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Mostly clear, with a low around 49. Northwest wind 10 to 14 mph, with gusts as high as 24 mph. "
@@ -508,7 +502,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 62,
-     "text": "Partly sunny, with a high near 62."
+     "text": "Partly sunny, with a high near 62. North wind around 5 mph becoming calm. "
     },
     {
      "name": "Sunday Night",
@@ -530,7 +524,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -553,6 +547,28 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Police brace for Halloween protests in France",
+    "b": "Interior Minister Laurent Nunez warned of a 'very high risk of public disorder' on Oct. 31 and announced around 70,000 police for the Yellow Vest and student protests.",
+    "date": "2026-10-30",
+    "publisher": "The Local France",
+    "title": "French minister warns of ‘very high’ violence risk at Halloween protests",
+    "url": "https://www.thelocal.fr/20261030/french-minister-warns-of-very-high-violence-risk-at-halloween-protests",
+    "published": "2026-10-30T08:09:53Z",
+    "updated": "2026-10-30T08:09:54Z",
+    "gathered": "2026-10-30T10:21:35Z"
+   },
+   {
+    "h": "Philippe questioned in Le Havre embezzlement case",
+    "b": "Magistrates named presidential candidate Edouard Philippe an 'assisted witness', a less serious status than formal investigation, in a case tied to his time as Le Havre mayor.",
+    "date": "2026-10-30",
+    "publisher": "The Local France",
+    "title": "French presidential hopeful Philippe quizzed in embezzlement case",
+    "url": "https://www.thelocal.fr/20261030/french-presidential-hopeful-philippe-quizzed-in-embezzlement-case",
+    "published": "2026-10-30T07:48:48Z",
+    "updated": "2026-10-30T07:48:50Z",
+    "gathered": "2026-10-30T10:21:35Z"
+   },
    {
     "h": "Trappes shooting suspect targeted Muslims, Africans",
     "b": "The 39-year-old suspect, who killed one person and wounded seven west of Paris, admitted targeting people who appeared Muslim or African, prosecutors said.",
@@ -581,7 +597,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "goodnews": []
  },
  {
@@ -595,11 +611,7 @@
     "h": "GEO Group gets $1.5B deal to run Tacoma ICE center",
     "b": "ICE awarded the private prison company a 10-year contract for the 1,635-bed Northwest ICE Processing Center despite reports of poor conditions.",
     "date": "2026-10-29",
-    "publisher": "KUOW",
-    "title": "Feds approve $1.5 billion contract for GEO Group to continue running Tacoma ICE lockup",
     "url": "https://www.kuow.org/immigration/2026-10-29/feds-approve-1-5-billion-contract-for-geo-group-to-continue-running-tacoma-ice-center",
-    "published": "2026-10-29T19:15:34Z",
-    "updated": "2026-10-29T23:33:54Z",
     "gathered": "2026-10-29T19:17:38Z"
    },
    {
@@ -613,12 +625,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 45,
-     "text": "A chance of rain before 3am, then a slight chance of rain after 5am.  Mostly cloudy, with a steady temperature around 45. Light east northeast wind.  Chance of precipitation is 30%."
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -648,6 +654,12 @@
      "kind": "high",
      "temp": 54,
      "text": "Partly sunny, with a high near 54."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 41,
+     "text": "Partly cloudy, with a low around 41."
     }
    ]
   },
@@ -663,7 +675,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T10:16:00Z",
+  "updatedAt": "2026-10-30T13:19:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
