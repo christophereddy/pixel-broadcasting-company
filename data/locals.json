@@ -9,15 +9,15 @@
   "weather": {
    "now": {
     "temp": 60,
-    "cond": "Fair",
-    "obs": "30 Oct 05:52 am EDT"
+    "cond": "A Few Clouds",
+    "obs": "30 Oct 08:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 79,
-     "text": "Sunny, with a high near 79. Calm wind becoming east around 5 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 79. Calm wind becoming east around 5 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -84,16 +84,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Mostly Cloudy",
-    "obs": "30 Oct 05:54 am EDT"
+    "temp": 60,
+    "cond": "Partly Cloudy",
+    "obs": "30 Oct 08:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 69. West wind 6 to 13 mph, with gusts as high as 23 mph. "
+     "text": "Sunny, with a high near 69. West wind 7 to 13 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Tonight",
@@ -139,7 +139,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -150,6 +150,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Storms send more raw sewage into Chicago River",
+    "b": "Billions of gallons of wastewater are pouring into the river after heavy storms, threatening human health and wildlife at spots like Bubbly Creek.",
+    "date": "2026-10-30",
+    "publisher": "WBEZ",
+    "title": "More raw sewage, billions of gallons of it, is pouring into the Chicago River after storms",
+    "url": "https://www.wbez.org/environment/2026/10/30/raw-sewage-chicago-river-deep-tunnel-storms-climate-change",
+    "published": "2026-10-30T10:40:00Z",
+    "updated": "2026-10-30T10:40:00Z",
+    "gathered": "2026-10-30T13:19:34Z"
+   },
    {
     "h": "Lawsuit targets Indiana immigrant jail conditions",
     "b": "The ACLU and other groups filed a class-action suit over \"inhumane\" treatment at Miami Correctional Facility, where many Chicago-area immigrants are held.",
@@ -179,15 +190,15 @@
   "weather": {
    "now": {
     "temp": 48,
-    "cond": "A Few Clouds",
-    "obs": "30 Oct 04:53 am CDT"
+    "cond": "Mostly Cloudy",
+    "obs": "30 Oct 07:53 am CDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Increasing clouds, with a high near 59. East northeast wind around 10 mph. "
+     "text": "Partly sunny, with a high near 59. East northeast wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -233,9 +244,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Johnnie's Beef replica wins best Halloween house",
+    "b": "A Galewood couple's front-yard replica of Johnnie's Beef, complete with a crew of skeletons, took first prize in the Sun-Times/WBEZ Halloween display contest.",
+    "date": "2026-10-30",
+    "publisher": "WBEZ",
+    "title": "This Galewood couple — and a crew of skeletons — pay homage to Johnnie’s Beef for Halloween",
+    "url": "https://www.wbez.org/arts-culture/2026/10/30/this-galewood-couple-and-a-crew-of-skeletons-pay-homage-to-johnnies-beef-for-halloween",
+    "published": "2026-10-30T10:35:00Z",
+    "updated": "2026-10-30T10:35:04Z",
+    "gathered": "2026-10-30T13:19:34Z"
+   }
+  ]
  },
  {
   "location": {
@@ -246,19 +269,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
-    "cond": "Partly Cloudy",
-    "obs": "30 Oct 01:58 am MDT"
+    "temp": 38,
+    "cond": " Fog",
+    "obs": "30 Oct 05:58 am MDT"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
      "text": "Areas of dense fog before 10am.  Otherwise, mostly sunny, with a high near 65. Calm wind becoming northeast around 6 mph in the afternoon. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Partly cloudy, with a low around 43. North northeast wind around 6 mph becoming calm  in the evening. "
@@ -279,7 +302,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly cloudy, with a high near 63."
+     "text": "Mostly cloudy, with a high near 63. Calm wind becoming east around 6 mph in the afternoon. Winds could gust as high as 16 mph. "
     },
     {
      "name": "Sunday Night",
@@ -301,7 +324,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -312,6 +335,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LA approves $5M for Lineage fire recovery",
+    "b": "The City Council approved $5 million for Boyle Heights residents and businesses hit by the Lineage warehouse fire, part of a $10.5 million package.",
+    "date": "2026-10-30",
+    "publisher": "LAist",
+    "title": "LA approves initial $5 million to help Boyle Heights residents, businesses recover from Lineage fire",
+    "url": "https://laist.com/la-approves-initial-5-million-to-help-boyle-heights-residents-businesses-recover-from-lineage-fire",
+    "published": "2026-10-30T12:00:00Z",
+    "updated": "2026-10-30T11:59:59Z",
+    "gathered": "2026-10-30T13:19:34Z"
+   },
    {
     "h": "DOJ subpoenas LA County election workers",
     "b": "The county Registrar-Recorder confirmed grand jury subpoenas ordering election workers to appear Nov. 4.",
@@ -334,22 +368,14 @@
     "h": "High tides speed up Palos Verdes landslide",
     "b": "Land in the Portuguese Bend area is moving more than an inch a week, up from August, after storm-fueled waves eroded the coast, city officials said.",
     "date": "2026-10-29",
-    "publisher": "LAist",
-    "title": "Recent high tides worsen landslide activity in Rancho Palos Verdes",
     "url": "https://laist.com/news/climate-environment/high-tides-landslide-activity-rancho-palos-verdes-el-nino",
-    "published": "2026-10-29T16:30:03Z",
-    "updated": "2026-10-29T16:30:03Z",
     "gathered": "2026-10-29T19:08:23Z"
    },
    {
     "h": "California high-speed rail CEO resigns",
     "b": "Ian Choudri cited personal and family priorities after a tenure troubled by budget woes, delays and the misuse of nearly $600,000 for questionable trips.",
     "date": "2026-10-29",
-    "publisher": "LAist",
-    "title": "Head of California high-speed rail agency resigns amid travel expenses scandal",
     "url": "https://laist.com/news/transportation/head-of-california-high-speed-rail-agency-resigns-amid-travel-expenses-scandal",
-    "published": "2026-10-29T17:00:00Z",
-    "updated": "2026-10-29T17:00:00Z",
     "gathered": "2026-10-29T19:08:23Z"
    },
    {
@@ -368,13 +394,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 70,
      "text": "A 40 percent chance of rain.  Cloudy, with a high near 70. South southwest wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 59. South southwest wind around 5 mph becoming east southeast after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
@@ -395,7 +421,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 68,
-     "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 68. Chance of precipitation is 60%."
+     "text": "Rain likely, mainly before 11am.  Partly sunny, with a high near 68. Calm wind becoming southwest around 5 mph in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday Night",
@@ -417,14 +443,17 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "Cole's French Dip set to return",
     "b": "New owners Sean Maloney and Jeremy Fall plan to reopen the iconic downtown LA restaurant, which closed in March, by Thanksgiving.",
     "date": "2026-10-29",
+    "publisher": "LAist",
+    "title": "The return of Cole’s French Dip",
     "url": "https://laist.com/news/food/the-return-of-coles-french-dip",
+    "published": "2026-10-29T12:00:00Z",
     "gathered": "2026-10-29T13:31:15Z"
    }
   ]
@@ -436,6 +465,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Council takes up Mamdani's community safety agency",
+    "b": "The City Council holds a hearing Friday on creating a Department of Community Safety, one of Mayor Mamdani's top campaign promises on violence prevention and mental health response.",
+    "date": "2026-10-30",
+    "publisher": "Gothamist",
+    "title": "NYC Council takes key step toward Mamdani's promised Department of Community Safety",
+    "url": "https://gothamist.com/news/nyc-council-takes-key-step-toward-mamdanis-promised-department-of-community-safety",
+    "published": "2026-10-30T11:30:48Z",
+    "gathered": "2026-10-30T13:19:34Z"
+   },
    {
     "h": "8 charged in $7M SNAP fraud scheme",
     "b": "The Manhattan DA says the group used deli names to steal EBT card numbers from April 2023 to September 2025.",
@@ -469,34 +508,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 59,
     "cond": "Fair",
-    "obs": "30 Oct 05:51 am EDT"
+    "obs": "30 Oct 08:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Southwest wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
+     "text": "Sunny, with a high near 69. Northwest wind 9 to 18 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Mostly clear, with a low around 49. Northwest wind 10 to 14 mph, with gusts as high as 24 mph. "
+     "text": "Mostly clear, with a low around 49. Northwest wind 14 to 18 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. North wind 5 to 8 mph. "
+     "text": "Sunny, with a high near 61. North wind 9 to 11 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Increasing clouds, with a low around 44. North wind 3 to 5 mph. "
+     "text": "Increasing clouds, with a low around 44. North wind 5 to 8 mph. "
     },
     {
      "name": "Sunday",
@@ -524,7 +563,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -573,11 +612,7 @@
     "h": "Trappes shooting suspect targeted Muslims, Africans",
     "b": "The 39-year-old suspect, who killed one person and wounded seven west of Paris, admitted targeting people who appeared Muslim or African, prosecutors said.",
     "date": "2026-10-29",
-    "publisher": "The Local France",
-    "title": "French shooting suspect deliberately targeted Muslims and Africans, says prosecutor",
     "url": "https://www.thelocal.fr/20261029/french-shooting-suspect-deliberately-targeted-muslims-and-africans-says-prosecutor",
-    "published": "2026-10-29T15:51:26Z",
-    "updated": "2026-10-29T15:51:27Z",
     "gathered": "2026-10-29T19:08:23Z"
    }
   ],
@@ -597,7 +632,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "goodnews": []
  },
  {
@@ -626,13 +661,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 50,
      "text": "Rain, mainly before 3pm.  High near 50. Light and variable wind.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Partly cloudy, with a low around 39. Calm wind. "
@@ -653,7 +688,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 54,
-     "text": "Partly sunny, with a high near 54."
+     "text": "Partly sunny, with a high near 54. Calm wind. "
     },
     {
      "name": "Sunday Night",
@@ -675,7 +710,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T13:19:00Z",
+  "updatedAt": "2026-10-30T16:15:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

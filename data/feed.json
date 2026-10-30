@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T13:19:00Z",
+ "updatedAt": "2026-10-30T16:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Saudi coalition downs Houthi drone near Mecca",
-   "b": "The Saudi-led coalition says its air defences downed a Houthi drone over the Mecca region. Al Jazeera is following the Iran war live.",
+   "h": "Qatari delegation in Tehran for US-Iran talks",
+   "b": "A Qatari delegation is in Tehran for talks on resolving the US-Iran conflict. Al Jazeera is following the Iran war live.",
    "date": "2026-10-30",
    "publisher": "Al Jazeera",
-   "title": "Saudi coalition says its air defences downed Houthi drone over Mecca region",
+   "title": "Qatari delegation in Tehran for talks over resolving US-Iran war",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
    "gathered": "2026-10-30T02:47:27Z"
   }
@@ -78,11 +78,7 @@
    "h": "Democrats aim to cut GOP lead in statehouses",
    "b": "More than 6,100 state legislative seats are on the ballot. Republicans control 28 legislatures and Democrats 18, with the remaining four divided or under power-sharing deals.",
    "date": "2026-10-30",
-   "publisher": "KUOW",
-   "title": "Democrats seek to weaken the Republican lead in state legislatures",
    "url": "https://www.kuow.org/npr-news/2026-10-30/democrats-seek-to-weaken-the-republican-lead-in-state-legislatures",
-   "published": "2026-10-30T09:00:00Z",
-   "updated": "2026-10-30T09:20:58Z",
    "gathered": "2026-10-30T10:21:35Z"
   },
   {
@@ -194,6 +190,15 @@
  ],
  "business": [
   {
+   "h": "Binance hit by $6.3B hack tied to North Korea",
+   "b": "Blockchain firm TRM attributed the attack to North Korea's TraderTraitor unit. Binance said it froze about $3 billion, suspended withdrawals and will cover all losses.",
+   "date": "2026-10-30",
+   "publisher": "NPR Business",
+   "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+   "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+   "gathered": "2026-10-30T13:19:34Z"
+  },
+  {
    "h": "Officials ramp up scrutiny of sports betting apps",
    "b": "Gaming regulators, government lawyers and federal lawmakers have launched inquiries into DraftKings and others after a ProPublica investigation into their responsible-gaming guardrails.",
    "date": "2026-10-30",
@@ -299,6 +304,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Council takes up Mamdani's community safety agency",
+   "b": "The City Council holds a hearing Friday on creating a Department of Community Safety, one of Mayor Mamdani's top campaign promises on violence prevention and mental health response.",
+   "date": "2026-10-30",
+   "publisher": "Gothamist",
+   "title": "NYC Council takes key step toward Mamdani's promised Department of Community Safety",
+   "url": "https://gothamist.com/news/nyc-council-takes-key-step-toward-mamdanis-promised-department-of-community-safety",
+   "published": "2026-10-30T11:30:48Z",
+   "gathered": "2026-10-30T13:19:34Z"
+  },
+  {
    "h": "8 charged in $7M SNAP fraud scheme",
    "b": "The Manhattan DA says the group used deli names to steal EBT card numbers from April 2023 to September 2025.",
    "date": "2026-10-29",
@@ -331,34 +346,34 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 59,
    "cond": "Fair",
-   "obs": "30 Oct 05:51 am EDT"
+   "obs": "30 Oct 08:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 69,
-    "text": "Sunny, with a high near 69. Southwest wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
+    "text": "Sunny, with a high near 69. Northwest wind 9 to 18 mph, with gusts as high as 28 mph. "
    },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 49,
-    "text": "Mostly clear, with a low around 49. Northwest wind 10 to 14 mph, with gusts as high as 24 mph. "
+    "text": "Mostly clear, with a low around 49. Northwest wind 14 to 18 mph, with gusts as high as 28 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61. North wind 5 to 8 mph. "
+    "text": "Sunny, with a high near 61. North wind 9 to 11 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
     "temp": 44,
-    "text": "Increasing clouds, with a low around 44. North wind 3 to 5 mph. "
+    "text": "Increasing clouds, with a low around 44. North wind 5 to 8 mph. "
    },
    {
     "name": "Sunday",
