@@ -8,13 +8,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 22:52 pm EDT"
+    "temp": 65,
+    "cond": "Partly Cloudy",
+    "obs": "29 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
      "text": "Mostly clear, with a low around 54. Calm wind. "
@@ -63,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,13 +86,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "29 Oct 22:54 pm EDT"
+    "obs": "29 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
      "text": "Increasing clouds, with a low around 54. Southwest wind around 9 mph. "
@@ -141,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -180,9 +180,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 52,
     "cond": "Fair",
-    "obs": "29 Oct 21:53 pm CDT"
+    "obs": "29 Oct 22:53 pm CDT"
    },
    "periods": [
     {
@@ -235,7 +235,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -248,16 +248,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 50,
     "cond": "Mostly Cloudy",
-    "obs": "29 Oct 19:58 pm MDT"
+    "obs": "29 Oct 21:58 pm MDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Patchy dense fog after 2am.  Otherwise, mostly cloudy, with a low around 43. North wind around 5 mph becoming calm  in the evening. "
+     "text": "Patchy dense fog after 2am.  Otherwise, mostly cloudy, with a low around 43. Light and variable wind. "
     },
     {
      "name": "Friday",
@@ -303,7 +303,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -377,31 +377,31 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "A 30 percent chance of showers after 11pm.  Cloudy, with a low around 61. South southeast wind 5 to 10 mph.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 30 percent chance of showers after 11pm.  Cloudy, with a low around 61. South southeast wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 70,
-     "text": "A 40 percent chance of showers.  Mostly cloudy, with a high near 70. South wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 40 percent chance of showers.  Mostly cloudy, with a high near 70. South southwest wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 59,
-     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 59. South wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 59. South southwest wind around 5 mph becoming east southeast after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 68,
-     "text": "A slight chance of showers before 11am, then a chance of rain after 11am.  Cloudy, with a high near 68. East northeast wind around 5 mph becoming south southwest in the afternoon.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A slight chance of showers before 11am, then a chance of rain after 11am.  Cloudy, with a high near 68. East wind around 5 mph becoming southwest in the afternoon.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Rain.  Low around 59. South southwest wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain.  Low around 59. Calm wind becoming southwest around 5 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -423,7 +423,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -475,16 +475,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 60,
     "cond": "Fair",
-    "obs": "29 Oct 22:51 pm EDT"
+    "obs": "29 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 57,
-     "text": "Mostly clear, with a low around 57. Southwest wind 8 to 10 mph. "
+     "text": "Mostly clear, with a low around 57. Southwest wind around 9 mph. "
     },
     {
      "name": "Friday",
@@ -530,7 +530,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -581,7 +581,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "goodnews": []
  },
  {
@@ -606,11 +606,7 @@
     "h": "Washington suicide deaths hit 25-year high",
     "b": "Nearly 1,400 people died by suicide in the state in 2025, the most in 25 years, according to new health department data.",
     "date": "2026-10-29",
-    "publisher": "KUOW",
-    "title": "1,400 people died by suicide in Washington state last year, a record",
     "url": "https://www.kuow.org/mental-health/2026-10-29/1-400-people-died-by-suicide-in-washington-state-last-year-a-record",
-    "published": "2026-10-29T18:48:44Z",
-    "updated": "2026-10-29T18:48:44Z",
     "gathered": "2026-10-29T19:08:23Z"
    }
   ],
@@ -621,7 +617,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "A 30 percent chance of rain, mainly before 11pm.  Mostly cloudy, with a low around 41. Calm wind. "
+     "text": "A 20 percent chance of rain between 11pm and 1am.  Mostly cloudy, with a low around 41. Calm wind. "
     },
     {
      "name": "Friday",
@@ -667,7 +663,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T04:13:00Z",
+  "updatedAt": "2026-10-30T07:21:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

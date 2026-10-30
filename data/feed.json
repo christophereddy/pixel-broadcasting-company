@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T04:13:00Z",
+ "updatedAt": "2026-10-30T07:21:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -72,6 +72,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Houthis claim six attacks on Saudi airports, oil sites",
+   "b": "Houthi spokesperson Yahya Saree said the attacks targeted vital commercial and military infrastructure across Saudi Arabia, despite recent Saudi-Iranian talks on resolving differences through dialogue.",
+   "date": "2026-10-30",
+   "place": "Sanaa, Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Houthi forces claim six attacks on Saudi airports, oil facilities",
+   "url": "https://www.aljazeera.com/news/2026/10/30/houthi-forces-claim-six-attacks-on-saudi-airports-oil-facilities",
+   "gathered": "2026-10-30T04:13:37Z"
+  },
   {
    "h": "Netanyahu's party claims Israeli vote was stolen",
    "b": "Netanyahu's Likud made unsubstantiated allegations against Arab-led parties as final results showed his bloc losing its majority.",
@@ -182,6 +193,15 @@
  ],
  "sports": [
   {
+   "h": "Packers' Watson returns after hospital visit",
+   "b": "Christian Watson left with a chest injury, was taken to a hospital for precautionary tests, then returned after halftime against the Panthers with extra padding around his ribs.",
+   "date": "2026-10-30",
+   "publisher": "CBS Sports",
+   "title": "Packers' Christian Watson returns against Panthers after chest injury, hospital visit",
+   "url": "https://www.cbssports.com/nfl/news/christian-watson-injury-update-packers-wr-hospital/",
+   "gathered": "2026-10-30T04:13:37Z"
+  },
+  {
    "h": "Bears trade for Titans DT Jeffery Simmons",
    "b": "Tennessee agreed to send the four-time Pro Bowler to Chicago for first-round picks in 2027 and 2028 and a 2027 fourth-rounder.",
    "date": "2026-10-29",
@@ -242,16 +262,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 61,
+   "temp": 60,
    "cond": "Fair",
-   "obs": "29 Oct 22:51 pm EDT"
+   "obs": "29 Oct 23:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 57,
-    "text": "Mostly clear, with a low around 57. Southwest wind 8 to 10 mph. "
+    "text": "Mostly clear, with a low around 57. Southwest wind around 9 mph. "
    },
    {
     "name": "Friday",
