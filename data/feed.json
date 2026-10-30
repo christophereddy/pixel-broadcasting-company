@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T07:21:00Z",
+ "updatedAt": "2026-10-30T10:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,16 +7,25 @@
  },
  "world": [
   {
-   "h": "IRGC says four tankers struck Hormuz mines",
-   "b": "Iran's Revolutionary Guard says four tankers struck mines in the Strait of Hormuz. Al Jazeera is following developments live.",
+   "h": "Saudi coalition downs Houthi drone near Mecca",
+   "b": "The Saudi-led coalition says its air defences downed a Houthi drone over the Mecca region. Al Jazeera is following the Iran war live.",
    "date": "2026-10-30",
    "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC says tankers strike naval mines and catch fire in Hormuz Strait",
+   "title": "Saudi coalition says its air defences downed Houthi drone over Mecca region",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
    "gathered": "2026-10-30T02:47:27Z"
   }
  ],
  "national": [
+  {
+   "h": "Judge blocks Medicaid 'medically frail' rule",
+   "b": "US District Judge Richard Stearns blocked a Trump administration rule requiring chronically ill Medicaid enrollees to prove they are medically frail to qualify for work exemptions, siding with 25 states and DC.",
+   "date": "2026-10-29",
+   "publisher": "Al Jazeera",
+   "title": "US judge blocks Trump’s Medicaid rule forcing ill to prove impairment",
+   "url": "https://www.aljazeera.com/news/2026/10/30/us-judge-blocks-trumps-medicaid-rule-forcing-ill-to-prove-impairment",
+   "gathered": "2026-10-30T07:21:14Z"
+  },
   {
    "h": "Most Americans say the country is in decline",
    "b": "More than two-thirds of Americans believe the U.S. is in decline, according to a Michigan State American Communities Project survey of 2,155 adults.",
@@ -58,8 +67,6 @@
    "h": "DOJ renews bid to block Alaska results",
    "b": "The Justice Department filed a revised lawsuit seeking to decertify Alaska's Senate race if Sen. Dan Sullivan loses narrowly.",
    "date": "2026-10-30",
-   "publisher": "Al Jazeera",
-   "title": "Trump administration renews bid to block Alaska election results",
    "url": "https://www.aljazeera.com/news/2026/10/30/trump-administration-renews-bid-to-block-alaska-election-results",
    "gathered": "2026-10-30T02:47:27Z"
   },
@@ -73,13 +80,33 @@
  ],
  "international": [
   {
+   "h": "Machado praises Trump, urges 2027 Venezuela vote",
+   "b": "In her first public remarks since returning from more than 10 months in exile, Nobel laureate Maria Corina Machado credited Trump with opening the 'floodgate to freedom' and called for elections next year.",
+   "date": "2026-10-29",
+   "place": "Caracas, Venezuela",
+   "tz": "America/Caracas",
+   "publisher": "Al Jazeera",
+   "title": "Venezuela’s Machado lauds Trump for ‘freedom’, urges 2027 elections",
+   "url": "https://www.aljazeera.com/news/2026/10/30/machado-lauds-trump-for-freedom-floodgate-urges-2027-elections",
+   "gathered": "2026-10-30T07:21:14Z"
+  },
+  {
+   "h": "El Salvador ex-president Saca freed after 10 years",
+   "b": "Antonio Saca, 61, reported his release after serving a 10-year term under a plea deal in which he confessed to diverting and laundering more than $300m in public funds.",
+   "date": "2026-10-29",
+   "place": "San Salvador, El Salvador",
+   "tz": "America/El_Salvador",
+   "publisher": "Al Jazeera",
+   "title": "Salvadoran ex-president Saca released after 10-year sentence for corruption",
+   "url": "https://www.aljazeera.com/news/2026/10/30/salvadoran-ex-president-saca-released-after-serving-a-10-year-sentence-for-corruption",
+   "gathered": "2026-10-30T07:21:14Z"
+  },
+  {
    "h": "Houthis claim six attacks on Saudi airports, oil sites",
    "b": "Houthi spokesperson Yahya Saree said the attacks targeted vital commercial and military infrastructure across Saudi Arabia, despite recent Saudi-Iranian talks on resolving differences through dialogue.",
    "date": "2026-10-30",
    "place": "Sanaa, Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Houthi forces claim six attacks on Saudi airports, oil facilities",
    "url": "https://www.aljazeera.com/news/2026/10/30/houthi-forces-claim-six-attacks-on-saudi-airports-oil-facilities",
    "gathered": "2026-10-30T04:13:37Z"
   },
@@ -139,8 +166,6 @@
    "date": "2026-10-29",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Israel election result shows no overall majority as vote count complete",
    "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete",
    "gathered": "2026-10-29T23:29:30Z"
   }
@@ -262,46 +287,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 59,
    "cond": "Fair",
-   "obs": "29 Oct 23:51 pm EDT"
+   "obs": "30 Oct 02:51 am EDT"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 57,
-    "text": "Mostly clear, with a low around 57. Southwest wind around 9 mph. "
-   },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 69,
-    "text": "Partly sunny through mid morning, then becoming sunny, with a high near 69. Breezy, with a northwest wind 9 to 14 mph increasing to 15 to 20 mph in the afternoon. Winds could gust as high as 30 mph. "
+    "text": "Sunny, with a high near 69. West wind 10 to 16 mph becoming northwest in the morning. Winds could gust as high as 26 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly clear, with a low around 51. Northwest wind 10 to 17 mph. "
+    "temp": 49,
+    "text": "Mostly clear, with a low around 49. Northwest wind 10 to 14 mph, with gusts as high as 24 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61. North wind 7 to 9 mph. "
+    "text": "Sunny, with a high near 61. North wind 5 to 8 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 49,
-    "text": "Mostly cloudy, with a low around 49. North wind 3 to 5 mph. "
+    "temp": 44,
+    "text": "Increasing clouds, with a low around 44. North wind 3 to 5 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 63,
-    "text": "Partly sunny, with a high near 63."
+    "temp": 62,
+    "text": "Partly sunny, with a high near 62."
+   },
+   {
+    "name": "Sunday Night",
+    "kind": "low",
+    "temp": 51,
+    "text": "Mostly cloudy, with a low around 51."
    }
   ]
  },
