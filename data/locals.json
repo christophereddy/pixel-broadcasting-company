@@ -5,30 +5,19 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "UPS raises full-year outlook ahead of holidays",
-    "b": "CEO Carol Tomé told investors 70% of packages will be processed through centers using robotics and AI, and expects daily volume to rise 25% over the next three months.",
-    "date": "2026-10-28",
-    "publisher": "WABE",
-    "title": "UPS raises full year outlook ahead of holiday surge",
-    "url": "https://www.wabe.org/ups-raises-full-year-outlook-ahead-of-holiday-surge/",
-    "published": "2026-10-28T10:00:00Z",
-    "gathered": "2026-10-28T10:12:48Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 74,
-    "cond": "Partly Cloudy",
-    "obs": "29 Oct 14:52 pm EDT"
+    "temp": 71,
+    "cond": "A Few Clouds",
+    "obs": "29 Oct 18:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54. Calm wind. "
+     "text": "Mostly clear, with a low around 54. Northeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Friday",
@@ -52,7 +41,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, with a low around 55."
+     "text": "Mostly cloudy, with a low around 55. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday",
@@ -74,7 +63,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -93,27 +82,20 @@
     "title": "Mass. sheriffs ask Gov. Healey to tweak new limits on ICE arrests",
     "url": "https://www.wbur.org/news/2026/10/29/massachusetts-sheriffs-protect-act-healey-minogue",
     "gathered": "2026-10-29T13:31:15Z"
-   },
-   {
-    "h": "Mass. Lottery tries scented scratch tickets",
-    "b": "Peppermint-scented Candy Cane Cash Blowout tickets are the first scented holiday tickets, as scratch ticket sales are down 6% this fiscal year.",
-    "date": "2026-10-28",
-    "url": "https://www.wbur.org/news/2026/10/28/massachusetts-scented-scratch-ticket-holidays",
-    "gathered": "2026-10-28T10:12:48Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "A Few Clouds",
-    "obs": "29 Oct 14:54 pm EDT"
+    "temp": 63,
+    "cond": "Fair",
+    "obs": "29 Oct 18:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Increasing clouds, with a low around 54. Southwest wind around 9 mph, with gusts as high as 20 mph. "
+     "text": "Increasing clouds, with a low around 54. Southwest wind around 9 mph. "
     },
     {
      "name": "Friday",
@@ -159,7 +141,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -171,14 +153,21 @@
   },
   "local": [
    {
+    "h": "Lawsuit targets Indiana immigrant jail conditions",
+    "b": "The ACLU and other groups filed a class-action suit over \"inhumane\" treatment at Miami Correctional Facility, where many Chicago-area immigrants are held.",
+    "date": "2026-10-29",
+    "publisher": "WBEZ",
+    "title": "Civil rights attorneys file lawsuit challenging 'inhumane' conditions at Indiana immigration detention center",
+    "url": "https://www.wbez.org/immigration/2026/10/29/civil-rights-aclu-lawsuit-indiana-immigration-detention-center",
+    "published": "2026-10-29T22:35:14Z",
+    "updated": "2026-10-29T22:35:14Z",
+    "gathered": "2026-10-29T23:29:30Z"
+   },
+   {
     "h": "Exhibit traces Cassatt's lost World's Fair mural",
     "b": "A new exhibit tells the story of Mary Cassatt's three-panel 1893 World's Fair mural, last known to be in Chicago in 1912.",
     "date": "2026-10-29",
-    "publisher": "WBEZ",
-    "title": "Painter Mary Cassatt created a masterpiece for the 1893 World’s Fair in Chicago. Then, it disappeared.",
     "url": "https://www.wbez.org/arts/2026/10/29/painter-mary-cassatt-missing-mural-1893-worlds-fair-chicago-art-institute",
-    "published": "2026-10-29T16:32:49Z",
-    "updated": "2026-10-29T16:32:49Z",
     "gathered": "2026-10-29T19:08:23Z"
    },
    {
@@ -187,40 +176,20 @@
     "date": "2026-10-29",
     "url": "https://www.wbez.org/food-drink/2026/10/29/southport-grocery-close-lake-view-dollop-coffee-chicago-diner",
     "gathered": "2026-10-29T13:31:15Z"
-   },
-   {
-    "h": "UChicago students rally after assault reports",
-    "b": "More than 100 students called on the university to improve sexual assault prevention and survivor support after two cases tied to the campus in recent weeks.",
-    "date": "2026-10-28",
-    "url": "https://www.wbez.org/news/2026/10/28/university-of-chicago-students-rally-with-jane-doe-in-wake-of-sexual-assault-reports",
-    "gathered": "2026-10-29T06:14:43Z"
-   },
-   {
-    "h": "Firm pitches domed Bears stadium at Sox site",
-    "b": "Skidmore, Owings and Merrill released renderings of a domed Bears stadium and mixed-use district at Bridgeport's Rate Field, presented by Sterling Bay.",
-    "date": "2026-10-28",
-    "url": "https://www.wbez.org/sports/2026/10/28/bridgeport-bears-domed-stadium-proposal-sox-rate-field",
-    "gathered": "2026-10-28T19:45:42Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "Mostly Cloudy",
-    "obs": "29 Oct 13:53 pm CDT"
+    "temp": 65,
+    "cond": "A Few Clouds",
+    "obs": "29 Oct 17:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 64,
-     "text": "Cloudy early, then becoming mostly sunny, with a steady temperature around 64. North northwest wind around 10 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Mostly clear, with a low around 50. North northwest wind 5 to 10 mph. "
+     "text": "Clear, with a low around 50. North northwest wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
@@ -231,8 +200,8 @@
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "A 40 percent chance of showers after 1am.  Mostly cloudy, with a low around 52. East northeast wind around 10 mph. "
+     "temp": 55,
+     "text": "A 40 percent chance of showers after 1am.  Mostly cloudy, with a steady temperature around 55. East northeast wind around 10 mph. "
     },
     {
      "name": "Saturday",
@@ -244,7 +213,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 52,
-     "text": "A 20 percent chance of showers before 10pm.  Cloudy, with a low around 52."
+     "text": "A 20 percent chance of showers before 10pm.  Cloudy, with a low around 52. Southeast wind 5 to 10 mph. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 64,
+     "text": "A 20 percent chance of showers after 1pm.  Mostly cloudy, with a high near 64."
     }
    ]
   },
@@ -260,17 +235,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "Chicago's best Halloween displays picked",
-    "b": "WBEZ and the Sun-Times received more than 50 submissions, from movie scenes to a fire-breathing dragon, and chose three favorites.",
-    "date": "2026-10-28",
-    "url": "https://www.wbez.org/arts-culture/2026/10/28/chicago-best-halloween-displays",
-    "gathered": "2026-10-28T14:18:50Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -280,29 +247,19 @@
   },
   "local": [],
   "weather": {
-   "now": {
-    "temp": 60,
-    "cond": "Partly Cloudy",
-    "obs": "29 Oct 11:58 am MDT"
-   },
+   "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. East northeast wind 3 to 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Partly cloudy, with a low around 43. North wind 5 to 7 mph becoming calm  in the evening. "
+     "text": "Patchy dense fog after 2am.  Otherwise, partly cloudy, with a low around 43. North wind 5 to 7 mph becoming calm  in the evening. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 66,
-     "text": "Partly sunny, with a high near 66. Calm wind becoming north northeast 5 to 7 mph in the afternoon. "
+     "text": "Areas of dense fog before 10am.  Otherwise, partly sunny, with a high near 66. Calm wind becoming north northeast 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
@@ -320,7 +277,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Partly cloudy, with a low around 45."
+     "text": "Partly cloudy, with a low around 45. Light and variable wind. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 61,
+     "text": "Partly sunny, with a high near 61."
     }
    ]
   },
@@ -336,7 +299,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -348,6 +311,17 @@
   },
   "local": [
    {
+    "h": "SoCal could see first wet Halloween since 2014",
+    "b": "Scattered showers are possible this weekend, with the highest chance Saturday night and Sunday morning and totals of half an inch to 1.5 inches.",
+    "date": "2026-10-29",
+    "publisher": "LAist",
+    "title": "Be sure to incorporate an umbrella into your costume. SoCal to get Halloween rain",
+    "url": "https://laist.com/news/climate-environment/socal-la-oc-halloween-rain",
+    "published": "2026-10-29T22:27:38Z",
+    "updated": "2026-10-29T22:27:38Z",
+    "gathered": "2026-10-29T23:29:30Z"
+   },
+   {
     "h": "High tides speed up Palos Verdes landslide",
     "b": "Land in the Portuguese Bend area is moving more than an inch a week, up from August, after storm-fueled waves eroded the coast, city officials said.",
     "date": "2026-10-29",
@@ -355,7 +329,6 @@
     "title": "Recent high tides worsen landslide activity in Rancho Palos Verdes",
     "url": "https://laist.com/news/climate-environment/high-tides-landslide-activity-rancho-palos-verdes-el-nino",
     "published": "2026-10-29T16:30:03Z",
-    "updated": "2026-10-29T16:30:03Z",
     "gathered": "2026-10-29T19:08:23Z"
    },
    {
@@ -379,64 +352,46 @@
     "published": "2026-10-29T12:00:00Z",
     "updated": "2026-10-29T12:00:00Z",
     "gathered": "2026-10-29T13:31:15Z"
-   },
-   {
-    "h": "Judge keeps LAHSA suspension on hold",
-    "b": "U.S. District Judge David O. Carter's order lets federal homelessness money keep flowing through LAHSA while it hands its federal roles to L.A. County.",
-    "date": "2026-10-28",
-    "publisher": "LAist",
-    "title": "Judge keeps Trump suspension of LAHSA on hold as key homelessness roles shift to LA County",
-    "url": "https://laist.com/news/housing-homelessness/judge-keeps-trump-suspension-of-lahsa-on-hold-as-key-homelessness-roles-shift-to-la-county",
-    "published": "2026-10-28T21:19:44Z",
-    "updated": "2026-10-29T00:12:13Z",
-    "gathered": "2026-10-29T00:12:43Z"
-   },
-   {
-    "h": "LA leaders mourn Dolores Huerta",
-    "b": "Local leaders honored the United Farm Workers co-founder's legacy as a dedicated advocate for workers' and women's rights after her death Wednesday.",
-    "date": "2026-10-28",
-    "url": "https://laist.com/news/a-source-of-strength-la-leaders-mourn-dolores-huertas-death",
-    "gathered": "2026-10-28T19:45:42Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 74,
-     "text": "Patchy drizzle.  Increasing clouds, with a high near 74. Southwest wind 5 to 10 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Cloudy, with a low around 61. South southeast wind 5 to 10 mph. "
+     "text": "A 30 percent chance of showers after 11pm.  Cloudy, with a low around 61. South southeast wind 5 to 10 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 70,
-     "text": "A 30 percent chance of showers, mainly after 11am.  Mostly cloudy, with a high near 70. South wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 40 percent chance of showers.  Mostly cloudy, with a high near 70. South wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 59,
-     "text": "A 40 percent chance of showers, mainly before 11pm.  Cloudy, with a low around 59. South wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 59. South wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 68,
-     "text": "A 40 percent chance of showers, mainly after 11am.  Cloudy, with a high near 68. East northeast wind around 5 mph becoming south southwest in the afternoon.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A slight chance of showers before 11am, then a chance of rain after 11am.  Cloudy, with a high near 68. East northeast wind around 5 mph becoming south southwest in the afternoon.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Showers.  Low around 59. Chance of precipitation is 90%."
+     "text": "Rain.  Low around 59. Chance of precipitation is 90%."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 70,
+     "text": "Showers likely, mainly before 11am.  Partly sunny, with a high near 70. Chance of precipitation is 60%."
     }
    ]
   },
@@ -452,17 +407,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "Cole's French Dip set to return",
     "b": "New owners Sean Maloney and Jeremy Fall plan to reopen the iconic downtown LA restaurant, which closed in March, by Thanksgiving.",
     "date": "2026-10-29",
-    "publisher": "LAist",
-    "title": "The return of Cole’s French Dip",
     "url": "https://laist.com/news/food/the-return-of-coles-french-dip",
-    "published": "2026-10-29T12:00:00Z",
     "gathered": "2026-10-29T13:31:15Z"
    }
   ]
@@ -491,66 +443,15 @@
     "publisher": "Gothamist",
     "title": "Brooklyn woman hit and killed by garbage truck at Bay Parkway, NYPD says",
     "url": "https://gothamist.com/news/brooklyn-woman-hit-and-killed-by-garbage-truck-at-peak-time-for-traffic-deaths-nypd-says",
-    "published": "2026-10-29T11:54:00Z",
-    "updated": "2026-10-29T15:22:00Z",
+    "published": "2026-10-29T15:22:00Z",
     "gathered": "2026-10-29T13:31:15Z"
-   },
-   {
-    "h": "Woman charged with hate crimes in stabbings of Jewish men",
-    "b": "Federal prosecutors accuse Anna Mochalova, 32, of stabbing two Jewish men near the Diamond District with a sharp object consistent with a needle.",
-    "date": "2026-10-28",
-    "publisher": "Gothamist",
-    "title": "Woman charged with federal hate crimes after allegedly stabbing 2 Jewish men in NYC",
-    "url": "https://gothamist.com/news/woman-charged-with-federal-hate-crimes-after-allegedly-stabbing-two-jewish-men-in-nyc",
-    "published": "2026-10-28T20:27:00Z",
-    "gathered": "2026-10-29T00:12:43Z"
-   },
-   {
-    "h": "E-bike battery caused fatal Bronx fire, FDNY says",
-    "b": "The fire at the Patterson Houses in Mott Haven killed an 11-year-old boy and critically injured four other people early Wednesday.",
-    "date": "2026-10-28",
-    "publisher": "Gothamist",
-    "title": "Lithium-ion battery caused Bronx fire that killed 10-year-old, FDNY says",
-    "url": "https://gothamist.com/news/lithium-ion-battery-caused-bronx-fire-that-killed-11-year-old-fdny-says",
-    "published": "2026-10-28T18:11:00Z",
-    "gathered": "2026-10-28T19:45:42Z"
-   },
-   {
-    "h": "NYPD promises tight NYC Marathon security",
-    "b": "Drones, dogs, horses and helicopters will watch the race; Commissioner Jessica Tisch said there are \"no known specific credible threats.\"",
-    "date": "2026-10-28",
-    "publisher": "Gothamist",
-    "title": "60K runners, 2.5 million fans: NYPD promises tight security for NYC Marathon",
-    "url": "https://gothamist.com/news/60k-runners-25-million-fans-nypd-promises-tight-security-for-nyc-marathon",
-    "published": "2026-10-28T14:30:00Z",
-    "gathered": "2026-10-28T16:19:28Z"
-   },
-   {
-    "h": "Brooklyn's Third Avenue to get safety redesign",
-    "b": "The city will replace traffic lanes with bike lanes and shorten crossings on 2.1 miles of Third Avenue in Sunset Park, two months after nurse Jiayi Zheng was killed by a hit-and-run driver.",
-    "date": "2026-10-28",
-    "publisher": "Gothamist",
-    "title": "Mamdani plans redesign of Brooklyn's Third Avenue after nurse killed in hit-and-run",
-    "url": "https://gothamist.com/news/mamdani-plans-redesign-of-brooklyns-third-avenue-after-nurse-killed-in-hit-and-run",
-    "published": "2026-10-28T08:00:55Z",
-    "gathered": "2026-10-28T10:12:48Z"
-   },
-   {
-    "h": "Board delays vote on Tompkins Square overhaul",
-    "b": "Community Board 3 put off its vote on the $10 million Tompkins Square Park update until next month after preservationists protested over the park's pull-up bars.",
-    "date": "2026-10-28",
-    "publisher": "Gothamist",
-    "title": "'If this is what you want': East Village board halts vote on Tompkins Square overhaul",
-    "url": "https://gothamist.com/news/if-this-is-what-you-want-east-village-board-halts-vote-on-tompkins-square-overhaul",
-    "published": "2026-10-28T14:54:11Z",
-    "gathered": "2026-10-28T16:19:28Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "29 Oct 14:51 pm EDT"
+    "obs": "29 Oct 18:51 pm EDT"
    },
    "periods": [
     {
@@ -603,9 +504,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "SNAP users to get more for fresh produce",
+    "b": "City Hall said New Yorkers on SNAP will receive more money through the Health Bucks program for farmers markets and farm stands next year.",
+    "date": "2026-10-29",
+    "publisher": "Gothamist",
+    "title": "New Yorkers enrolled in SNAP will get more money for fresh produce next year",
+    "url": "https://gothamist.com/news/new-yorkers-enrolled-in-snap-will-get-more-money-for-fresh-produce-next-year",
+    "published": "2026-10-29T20:19:11Z",
+    "gathered": "2026-10-29T23:29:30Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -625,27 +537,6 @@
     "published": "2026-10-29T15:51:26Z",
     "updated": "2026-10-29T15:51:27Z",
     "gathered": "2026-10-29T19:08:23Z"
-   },
-   {
-    "h": "Yellow Vests plan third Paris march Oct. 31",
-    "b": "The Yellow Vests and the CGT union have requested routes starting at Place de la Bastille for another day of cost-of-living protests on Saturday.",
-    "date": "2026-10-28",
-    "url": "https://www.thelocal.fr/20261028/map-the-route-for-the-paris-protest-march-on-october-31st",
-    "gathered": "2026-10-28T14:18:50Z"
-   },
-   {
-    "h": "Most fake riot posts came from abroad, minister says",
-    "b": "Foreign Minister Jean-Noël Barrot said two-thirds of social media content linking the October 17th looting to immigration came from abroad.",
-    "date": "2026-10-28",
-    "url": "https://www.thelocal.fr/20261028/two-thirds-of-fake-news-about-french-riots-came-from-abroad-says-minister",
-    "gathered": "2026-10-28T14:18:50Z"
-   },
-   {
-    "h": "BHV department store seeks bankruptcy protection",
-    "b": "The landmark store opposite Paris City Hall, which employs 700 people, will remain open; the company called the procedure part of its relaunch, not its failure.",
-    "date": "2026-10-28",
-    "url": "https://www.thelocal.fr/20261028/historic-paris-department-store-seeks-bankruptcy-protection",
-    "gathered": "2026-10-28T10:12:48Z"
    }
   ],
   "weather": {
@@ -664,7 +555,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "goodnews": []
  },
  {
@@ -679,10 +570,10 @@
     "b": "ICE awarded the private prison company a 10-year contract for the 1,635-bed Northwest ICE Processing Center despite reports of poor conditions.",
     "date": "2026-10-29",
     "publisher": "KUOW",
-    "title": "Feds approve $1.5 billion contract for GEO Group to continue running Tacoma ICE center",
+    "title": "Feds approve $1.5 billion contract for GEO Group to continue running Tacoma ICE lockup",
     "url": "https://www.kuow.org/immigration/2026-10-29/feds-approve-1-5-billion-contract-for-geo-group-to-continue-running-tacoma-ice-center",
     "published": "2026-10-29T19:15:34Z",
-    "updated": "2026-10-29T19:15:34Z",
+    "updated": "2026-10-29T20:30:55Z",
     "gathered": "2026-10-29T19:17:38Z"
    },
    {
@@ -695,24 +586,11 @@
     "published": "2026-10-29T18:48:44Z",
     "updated": "2026-10-29T18:48:44Z",
     "gathered": "2026-10-29T19:08:23Z"
-   },
-   {
-    "h": "Hobbs rebuffs claims of non-citizen voting",
-    "b": "Secretary of State Steve Hobbs responded after two U.S. attorneys said they found more than 400 non-citizens on Washington voter rolls and asked officials to set aside matching ballots.",
-    "date": "2026-10-28",
-    "url": "https://www.kuow.org/elections/2026-10-28/washingtons-secretary-of-state-rebuffs-claims-that-non-citizens-are-voting-en-masse",
-    "gathered": "2026-10-29T01:12:20Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 53,
-     "text": "A 40 percent chance of rain, mainly after 3pm.  Partly sunny, with a high near 53. Light south wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -742,6 +620,12 @@
      "kind": "low",
      "temp": 41,
      "text": "Mostly cloudy, with a low around 41."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 54,
+     "text": "Mostly sunny, with a high near 54."
     }
    ]
   },
@@ -757,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-29T22:12:00Z",
+  "updatedAt": "2026-10-30T01:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
