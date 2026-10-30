@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T19:12:00Z",
+ "updatedAt": "2026-10-30T22:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,24 +7,31 @@
  },
  "world": [
   {
-   "h": "Tankers and drone reported struck around Hormuz",
-   "b": "Multiple tankers and a drone were reported struck in and around the Strait of Hormuz. Al Jazeera is following the Iran war live.",
+   "h": "Pakistan 'cautiously optimistic' on Iran-US mediation",
+   "b": "Pakistan's army says it is cautiously optimistic about efforts to mediate between Iran and the US. Al Jazeera is following the Iran war live.",
    "date": "2026-10-30",
    "publisher": "Al Jazeera",
-   "title": "Multiple tankers and drone reported struck in and around Strait of Hormuz",
+   "title": "Pakistan’s army says ‘cautiously optimistic’ on Iran-US mediation efforts",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
    "gathered": "2026-10-30T02:47:27Z"
   }
  ],
  "national": [
   {
+   "h": "ICE officer charged with assault in Houston",
+   "b": "Prosecutors say the officer struck and ran over a man fleeing on foot in a parking lot Oct. 10, breaking his leg. The DA said video contradicts ICE's account.",
+   "date": "2026-10-30",
+   "publisher": "PBS NewsHour",
+   "title": "An ICE officer is charged with assault for striking a man with a car in Houston",
+   "url": "https://www.pbs.org/newshour/nation/an-ice-officer-has-been-charged-after-striking-a-man-with-a-car-in-houston",
+   "published": "2026-10-30T17:53:28Z",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
+  {
    "h": "Early voting surges in Senate battlegrounds",
    "b": "More than 6.3 million Texans had voted early as of Wednesday, up 50% from four years ago, per an AP analysis. South Carolina's early vote is up 83%.",
    "date": "2026-10-30",
-   "publisher": "PBS NewsHour",
-   "title": "Millions more Americans vote ahead of Election Day as early voting jumps across Senate battlegrounds",
    "url": "https://www.pbs.org/newshour/politics/millions-more-americans-vote-ahead-of-election-day-as-early-voting-jumps-across-senate-battlegrounds",
-   "published": "2026-10-30T14:44:02Z",
    "gathered": "2026-10-30T16:47:07Z"
   },
   {
@@ -38,8 +45,6 @@
    "h": "Judge blocks Medicaid 'medically frail' rule",
    "b": "US District Judge Richard Stearns blocked a Trump administration rule requiring chronically ill Medicaid enrollees to prove they are medically frail to qualify for work exemptions, siding with 25 states and DC.",
    "date": "2026-10-29",
-   "publisher": "Al Jazeera",
-   "title": "US judge blocks Trump’s Medicaid rule forcing ill to prove impairment",
    "url": "https://www.aljazeera.com/news/2026/10/30/us-judge-blocks-trumps-medicaid-rule-forcing-ill-to-prove-impairment",
    "gathered": "2026-10-30T07:21:14Z"
   },
@@ -72,17 +77,23 @@
    "title": "Top U.S. Health Official Backed a Medication Policy Shift That Benefited a Company She Has Stock In",
    "url": "https://www.propublica.org/article/hhs-alicia-jackson-menopause-treatment-policy",
    "published": "2026-10-29T09:30:00Z",
-   "updated": "2026-10-29T09:30:05Z",
    "gathered": "2026-10-29T13:31:15Z"
   }
  ],
  "politics": [
   {
+   "h": "Appeals court again rejects bid to set aside CA ballots",
+   "b": "The 9th Circuit ruled the Trump administration's request to set aside 20,000 California ballots over non-citizen voting concerns would violate the Constitution and risk disenfranchising eligible voters.",
+   "date": "2026-10-30",
+   "publisher": "Al Jazeera",
+   "title": "US appeals court again rejects Trump bid to set aside California ballots",
+   "url": "https://www.aljazeera.com/news/2026/10/30/us-appeals-court-again-rejects-trump-bid-to-set-aside-california-ballots",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
+  {
    "h": "Trump reinstates canceled Kansas, Iowa rallies",
    "b": "A source close to the administration told Al Jazeera that Trump will headline the previously canceled rallies in person ahead of Tuesday's midterms.",
    "date": "2026-10-30",
-   "publisher": "Al Jazeera",
-   "title": "Trump reverses course, reinstates cancelled campaign rallies",
    "url": "https://www.aljazeera.com/news/2026/10/30/trump-reverses-course-reinstates-cancelled-campaign-rallies",
    "gathered": "2026-10-30T16:47:07Z"
   },
@@ -110,13 +121,34 @@
  ],
  "international": [
   {
+   "h": "Canada moves toward EU associate membership",
+   "b": "Prime Minister Carney said Canada is working toward becoming the EU's first associate member, though the Montreal summit declaration instead pledged an 'ever-closer association' by 2027.",
+   "date": "2026-10-30",
+   "place": "Montreal, Canada",
+   "tz": "America/Toronto",
+   "publisher": "PBS NewsHour",
+   "title": "Canada is taking steps toward becoming European Union's first associate member",
+   "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
+   "published": "2026-10-30T19:25:06Z",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
+  {
+   "h": "Israel demolishes homes of Hebron attackers",
+   "b": "Troops demolished the homes of two brothers killed after an Oct. 23 attack that killed two Israeli soldiers, on the eighth day of an offensive and siege on Hebron.",
+   "date": "2026-10-30",
+   "place": "Hebron, West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israel demolishes homes of Palestinians blamed for attack on soldiers",
+   "url": "https://www.aljazeera.com/news/2026/10/30/israel-demolishes-homes-of-palestinians-blamed-for-attack-on-soldiers",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
+  {
    "h": "Machado praises Trump, urges 2027 Venezuela vote",
    "b": "In her first public remarks since returning from more than 10 months in exile, Nobel laureate Maria Corina Machado credited Trump with opening the 'floodgate to freedom' and called for elections next year.",
    "date": "2026-10-29",
    "place": "Caracas, Venezuela",
    "tz": "America/Caracas",
-   "publisher": "Al Jazeera",
-   "title": "Venezuela’s Machado lauds Trump for ‘freedom’, urges 2027 elections",
    "url": "https://www.aljazeera.com/news/2026/10/30/machado-lauds-trump-for-freedom-floodgate-urges-2027-elections",
    "gathered": "2026-10-30T07:21:14Z"
   },
@@ -126,8 +158,6 @@
    "date": "2026-10-29",
    "place": "San Salvador, El Salvador",
    "tz": "America/El_Salvador",
-   "publisher": "Al Jazeera",
-   "title": "Salvadoran ex-president Saca released after 10-year sentence for corruption",
    "url": "https://www.aljazeera.com/news/2026/10/30/salvadoran-ex-president-saca-released-after-serving-a-10-year-sentence-for-corruption",
    "gathered": "2026-10-30T07:21:14Z"
   },
@@ -155,8 +185,6 @@
    "date": "2026-10-30",
    "place": "Brcko, Bosnia",
    "tz": "Europe/Sarajevo",
-   "publisher": "Al Jazeera",
-   "title": "EU force helicopter crash kills four in Bosnia",
    "url": "https://www.aljazeera.com/news/2026/10/30/eu-force-helicopter-crash-kills-four-in-bosnia",
    "gathered": "2026-10-30T02:47:27Z"
   },
@@ -198,6 +226,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Employment costs rose 0.8% in third quarter",
+   "b": "The Bureau of Labor Statistics' Employment Cost Index, which tracks wages and benefits, rose 0.8% in Q3, down from 0.9% in Q2.",
+   "date": "2026-10-30",
+   "publisher": "Marketplace",
+   "title": "This measure of labor costs can signal when inflation's on the way",
+   "url": "https://www.marketplace.org/story/2026/10/30/the-cost-of-employing-a-worker-rose-8-in-q3-whats-that-mean-for-inflation",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
   {
    "h": "Binance hit by $6.3B hack tied to North Korea",
    "b": "Blockchain firm TRM attributed the attack to North Korea's TraderTraitor unit. Binance said it froze about $3 billion, suspended withdrawals and will cover all losses.",
@@ -279,8 +316,6 @@
    "h": "Jacobs says TD celebration was about gospel song",
    "b": "Packers RB Josh Jacobs said his celebration against the Panthers, which some saw as mimicking handcuffs, referenced the gospel song 'Break Every Chain.'",
    "date": "2026-10-30",
-   "publisher": "CBS Sports",
-   "title": "Josh Jacobs explains controversial touchdown celebration vs. Panthers that seemed to mimic arrest",
    "url": "https://www.cbssports.com/nfl/news/packers-josh-jacobs-explains-touchdown-celebration-panthers/",
    "gathered": "2026-10-30T16:47:07Z"
   },
@@ -315,6 +350,26 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "Rooftop work wrecks Upper West Side owl nest",
+   "b": "Politicians, police and wildlife officers rushed to West 75th Street to stop water tower work that disturbed a nest of seven barn owls.",
+   "date": "2026-10-30",
+   "publisher": "Gothamist",
+   "title": "'It is a crime!': Upper West Side owl lovers outraged after rooftop work wrecks nest",
+   "url": "https://gothamist.com/news/it-is-a-crime-upper-west-side-owl-lovers-outraged-after-rooftop-work-wrecks-nest",
+   "published": "2026-10-30T20:13:00Z",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
+  {
+   "h": "NYCHA says Marcy Houses asbestos removed",
+   "b": "A steam leak left asbestos-laden residue on exterior walls in Bed-Stuy; residents had complained for weeks and some lost heat and hot water.",
+   "date": "2026-10-30",
+   "publisher": "Gothamist",
+   "title": "NYCHA says it's removed asbestos found at Brooklyn’s Marcy Houses",
+   "url": "https://gothamist.com/news/nycha-says-its-removed-asbestos-found-at-brooklyns-marcy-houses",
+   "published": "2026-10-30T20:29:00Z",
+   "gathered": "2026-10-30T21:39:21Z"
+  },
   {
    "h": "Suit says Two Trees illegally raised rents",
    "b": "A class-action lawsuit accuses the Brooklyn developer of skirting tax-break rules and illegally raising rents at one of its buildings.",
@@ -379,46 +434,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 69,
+   "temp": 62,
    "cond": "Fair",
-   "obs": "30 Oct 11:51 am EDT"
+   "obs": "30 Oct 16:51 pm EDT"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 69,
-    "text": "Sunny, with a high near 69. Northwest wind 13 to 18 mph, with gusts as high as 28 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 49,
-    "text": "Mostly clear, with a low around 49. Northwest wind 14 to 18 mph, with gusts as high as 28 mph. "
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47. Breezy, with a northwest wind 13 to 21 mph, with gusts as high as 31 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 61,
-    "text": "Sunny, with a high near 61. North wind 9 to 11 mph. "
+    "temp": 59,
+    "text": "Sunny, with a high near 59. North wind around 11 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 44,
-    "text": "Increasing clouds, with a low around 44. North wind 5 to 8 mph. "
+    "temp": 47,
+    "text": "Partly cloudy, with a low around 47. Northwest wind around 9 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 62,
-    "text": "Partly sunny, with a high near 62. North wind around 5 mph becoming calm. "
+    "text": "Mostly sunny, with a high near 62. North wind 5 to 7 mph becoming west in the afternoon. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
     "temp": 51,
-    "text": "Mostly cloudy, with a low around 51."
+    "text": "Partly cloudy, with a low around 51. Southwest wind 5 to 8 mph. "
+   },
+   {
+    "name": "Monday",
+    "kind": "high",
+    "temp": 66,
+    "text": "Mostly sunny, with a high near 66."
    }
   ]
  },
