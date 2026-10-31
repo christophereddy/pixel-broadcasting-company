@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 65,
     "cond": "Mostly Cloudy",
-    "obs": "30 Oct 19:52 pm EDT"
+    "obs": "30 Oct 23:52 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 60,
-     "text": "Mostly cloudy, with a low around 60. Calm wind becoming east around 5 mph after midnight. "
+     "text": "Mostly cloudy, with a low around 60. East wind around 5 mph. "
     },
     {
      "name": "Saturday",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,16 +98,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "A Few Clouds",
-    "obs": "30 Oct 19:54 pm EDT"
+    "temp": 51,
+    "cond": "Fair",
+    "obs": "30 Oct 23:54 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 40,
-     "text": "Clear, with a low around 40. Northwest wind around 11 mph, with gusts as high as 26 mph. "
+     "text": "Clear, with a low around 40. Northwest wind around 11 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Saturday",
@@ -153,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -189,16 +189,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 56,
     "cond": "Overcast",
-    "obs": "30 Oct 19:53 pm CDT"
+    "obs": "30 Oct 22:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "A 20 percent chance of showers.  Cloudy, with a steady temperature around 55. East wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "A 20 percent chance of showers.  Cloudy, with a steady temperature around 55. East wind 10 to 15 mph. "
     },
     {
      "name": "Saturday",
@@ -244,7 +244,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -264,7 +264,11 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 49,
+    "cond": "Mostly Cloudy",
+    "obs": "30 Oct 21:58 pm MDT"
+   },
    "periods": [
     {
      "name": "Tonight",
@@ -316,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -368,7 +372,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "A 30 percent chance of showers.  Mostly cloudy, with a low around 59. South southwest wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 30 percent chance of showers.  Mostly cloudy, with a low around 59. South wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -414,7 +418,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -479,16 +483,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "30 Oct 20:51 pm EDT"
+    "obs": "30 Oct 23:51 pm EDT"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 47,
-     "text": "Mostly clear, with a low around 47. Northwest wind 13 to 17 mph. "
+     "text": "Mostly clear, with a low around 47. Northwest wind around 14 mph. "
     },
     {
      "name": "Saturday",
@@ -534,7 +538,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -592,7 +596,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "goodnews": []
  },
  {
@@ -621,7 +625,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Partly cloudy, with a low around 39. Calm wind. "
+     "text": "Mostly clear, with a low around 39. Calm wind. "
     },
     {
      "name": "Saturday",
@@ -667,7 +671,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T04:12:00Z",
+  "updatedAt": "2026-10-31T07:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
