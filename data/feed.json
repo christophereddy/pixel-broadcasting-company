@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T16:12:00Z",
+ "updatedAt": "2026-10-31T19:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -108,6 +108,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Syria weighs joining Mecca defence pact",
+   "b": "Foreign Minister Asaad al-Shaibani said talks are under way on Syria entering the pact signed by Saudi Arabia, Turkiye and Pakistan, which treats an attack on one as an attack on all.",
+   "date": "2026-10-31",
+   "place": "Manama, Bahrain",
+   "tz": "Asia/Bahrain",
+   "publisher": "Al Jazeera",
+   "title": "Syria considering entry into Mecca defence pact, says foreign minister",
+   "url": "https://www.aljazeera.com/news/2026/10/31/syria-considering-entry-into-mecca-defence-pact-says-foreign-minister",
+   "gathered": "2026-10-31T16:15:57Z"
+  },
   {
    "h": "Yemen fighting has displaced 290,000, UN says",
    "b": "OCHA says renewed fighting between government forces and the Houthis, especially in Taiz and coastal areas, has displaced 290,000 since August, with pregnant women at dire risk.",
@@ -314,6 +325,15 @@
  ],
  "sports": [
   {
+   "h": "Colts in Jonathan Taylor trade talks",
+   "b": "Indianapolis (2-5), which already dealt Quenton Nelson and DeForest Buckner this week, has received at least one offer including a second-round pick, per ESPN. Taylor says he hasn't requested a trade.",
+   "date": "2026-10-31",
+   "publisher": "CBS Sports",
+   "title": "Colts actively engaged in Jonathan Taylor trade talks: Five teams reportedly interested in star running back",
+   "url": "https://www.cbssports.com/nfl/news/colts-engaged-jonathan-taylor-trade-talks-five-teams-interested/",
+   "gathered": "2026-10-31T16:15:57Z"
+  },
+  {
    "h": "Warriors rally past Lakers despite rookie's rough night",
    "b": "Yaxel Lendeborg had six points and five turnovers against Luka Dončić and the Lakers, but Golden State came back to win in the NBA Cup group-stage opener.",
    "date": "2026-10-30",
@@ -364,13 +384,23 @@
  ],
  "local": [
   {
+   "h": "Jersey City pre-K busing hits crisis point",
+   "b": "Overcrowding at P.S. 16 in booming Paulus Hook means its pre-K toddlers are bused across the city because the building has no room for them.",
+   "date": "2026-10-31",
+   "publisher": "Gothamist",
+   "title": "Pre-K busing in downtown Jersey City's hitting a crisis point, parents say",
+   "url": "https://gothamist.com/news/pre-k-busing-in-downtown-jersey-citys-hitting-a-crisis-point-parents-say",
+   "published": "2026-10-31T16:00:48Z",
+   "gathered": "2026-10-31T16:15:57Z"
+  },
+  {
    "h": "Bronx e-bike fire death toll rises to four",
    "b": "Two teenage boys and a woman have died alongside Zion Maine after an e-bike battery ignited in the family's 11th-floor kitchen, blocking their exit.",
    "date": "2026-10-31",
    "publisher": "Gothamist",
-   "title": "NYPD says Bronx e-bike fire that killed a boy has claimed 3 more lives",
+   "title": "Bronx e-bike fire that killed a boy has claimed 3 more lives, NYPD says",
    "url": "https://gothamist.com/news/nypd-says-bronx-e-bike-fire-that-killed-a-boy-has-claimed-3-more-lives",
-   "published": "2026-10-31T14:29:07Z",
+   "published": "2026-10-31T14:29:00Z",
    "gathered": "2026-10-31T15:27:44Z"
   },
   {
@@ -426,13 +456,13 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
+   "temp": 55,
    "cond": "Fair",
-   "obs": "31 Oct 10:51 am EDT"
+   "obs": "31 Oct 11:51 am EDT"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 59,
     "text": "Sunny, with a high near 59. Northwest wind 10 to 13 mph. "
