@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 80,
+    "temp": 77,
     "cond": "Mostly Cloudy",
-    "obs": "30 Oct 16:52 pm EDT"
+    "obs": "30 Oct 17:52 pm EDT"
    },
    "periods": [
     {
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -94,20 +94,13 @@
     "title": "American Federation of Teachers again sues Education Department over public service loan forgiveness",
     "url": "https://www.wbur.org/news/2026/10/30/american-federation-of-teachers-lawsuit-education-department-public-service-loan-forgiveness",
     "gathered": "2026-10-30T21:39:21Z"
-   },
-   {
-    "h": "Sheriffs ask Healey to tweak ICE limits",
-    "b": "Twelve of the state's 14 sheriffs want the PROTECT Act changed so they can notify ICE about people charged with violent crimes who face deportation orders.",
-    "date": "2026-10-29",
-    "url": "https://www.wbur.org/news/2026/10/29/massachusetts-sheriffs-protect-act-healey-minogue",
-    "gathered": "2026-10-29T13:31:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "A Few Clouds and Breezy",
-    "obs": "30 Oct 16:54 pm EDT"
+    "temp": 60,
+    "cond": "A Few Clouds",
+    "obs": "30 Oct 17:54 pm EDT"
    },
    "periods": [
     {
@@ -160,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -192,42 +185,15 @@
     "published": "2026-10-30T10:40:00Z",
     "updated": "2026-10-30T10:40:00Z",
     "gathered": "2026-10-30T13:19:34Z"
-   },
-   {
-    "h": "Lawsuit targets Indiana immigrant jail conditions",
-    "b": "The ACLU and other groups filed a class-action suit over \"inhumane\" treatment at Miami Correctional Facility, where many Chicago-area immigrants are held.",
-    "date": "2026-10-29",
-    "url": "https://www.wbez.org/immigration/2026/10/29/civil-rights-aclu-lawsuit-indiana-immigration-detention-center",
-    "gathered": "2026-10-29T23:29:30Z"
-   },
-   {
-    "h": "Exhibit traces Cassatt's lost World's Fair mural",
-    "b": "A new exhibit tells the story of Mary Cassatt's three-panel 1893 World's Fair mural, last known to be in Chicago in 1912.",
-    "date": "2026-10-29",
-    "url": "https://www.wbez.org/arts/2026/10/29/painter-mary-cassatt-missing-mural-1893-worlds-fair-chicago-art-institute",
-    "gathered": "2026-10-29T19:08:23Z"
-   },
-   {
-    "h": "Southport Grocery to close Dec. 31",
-    "b": "The Lake View breakfast spot, open since 2003, will make way for Dollop Finer Diner, an outpost of Dollop Coffee Co.",
-    "date": "2026-10-29",
-    "url": "https://www.wbez.org/food-drink/2026/10/29/southport-grocery-close-lake-view-dollop-coffee-chicago-diner",
-    "gathered": "2026-10-29T13:31:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 54,
     "cond": "Overcast",
-    "obs": "30 Oct 15:53 pm CDT"
+    "obs": "30 Oct 16:53 pm CDT"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 54,
-     "text": "A 20 percent chance of showers.  Cloudy, with a steady temperature around 54. East wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -257,6 +223,12 @@
      "kind": "low",
      "temp": 55,
      "text": "Mostly cloudy, with a low around 55."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 65,
+     "text": "A 40 percent chance of showers, mainly after 1pm.  Mostly cloudy, with a high near 65."
     }
    ]
   },
@@ -272,7 +244,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -292,14 +264,12 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 68,
+    "cond": "Mostly Cloudy",
+    "obs": "30 Oct 15:58 pm MDT"
+   },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Northeast wind around 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -328,7 +298,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly cloudy, with a low around 46."
+     "text": "Mostly cloudy, with a low around 46. North wind 5 to 7 mph becoming light and variable  in the evening. Winds could gust as high as 15 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 55,
+     "text": "Showers likely.  Cloudy, with a high near 55. Breezy.  Chance of precipitation is 70%."
     }
    ]
   },
@@ -344,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -376,56 +352,11 @@
     "published": "2026-10-30T12:00:00Z",
     "updated": "2026-10-30T11:59:59Z",
     "gathered": "2026-10-30T13:19:34Z"
-   },
-   {
-    "h": "DOJ subpoenas LA County election workers",
-    "b": "The county Registrar-Recorder confirmed grand jury subpoenas ordering election workers to appear Nov. 4.",
-    "date": "2026-10-29",
-    "url": "https://www.kuow.org/npr-news/2026-10-29/justice-department-issues-subpoenas-to-california-election-workers",
-    "gathered": "2026-10-30T02:47:27Z"
-   },
-   {
-    "h": "SoCal could see first wet Halloween since 2014",
-    "b": "Scattered showers are possible this weekend, with the highest chance Saturday night and Sunday morning and totals of half an inch to 1.5 inches.",
-    "date": "2026-10-29",
-    "url": "https://laist.com/news/climate-environment/socal-la-oc-halloween-rain",
-    "gathered": "2026-10-29T23:29:30Z"
-   },
-   {
-    "h": "High tides speed up Palos Verdes landslide",
-    "b": "Land in the Portuguese Bend area is moving more than an inch a week, up from August, after storm-fueled waves eroded the coast, city officials said.",
-    "date": "2026-10-29",
-    "url": "https://laist.com/news/climate-environment/high-tides-landslide-activity-rancho-palos-verdes-el-nino",
-    "gathered": "2026-10-29T19:08:23Z"
-   },
-   {
-    "h": "California high-speed rail CEO resigns",
-    "b": "Ian Choudri cited personal and family priorities after a tenure troubled by budget woes, delays and the misuse of nearly $600,000 for questionable trips.",
-    "date": "2026-10-29",
-    "url": "https://laist.com/news/transportation/head-of-california-high-speed-rail-agency-resigns-amid-travel-expenses-scandal",
-    "gathered": "2026-10-29T19:08:23Z"
-   },
-   {
-    "h": "Bass and feds disagree on MacArthur Park arrests",
-    "b": "Mayor Karen Bass said she had not approved arresting people for using drugs in the park; a federal prosecutor who oversaw the operation said she did.",
-    "date": "2026-10-29",
-    "publisher": "LAist",
-    "title": "Who approved arresting people for using drugs at MacArthur Park? Bass and feds disagree",
-    "url": "https://laist.com/news/criminal-justice/macarthur-park-la-bass-raman-drug-enforcement-mayor-race",
-    "published": "2026-10-29T12:00:00Z",
-    "updated": "2026-10-29T12:00:00Z",
-    "gathered": "2026-10-29T13:31:15Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Scattered showers.  Partly sunny, with a high near 70. South southwest wind around 5 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -455,6 +386,12 @@
      "kind": "low",
      "temp": 56,
      "text": "Mostly clear, with a low around 56."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 75,
+     "text": "Sunny, with a high near 75."
     }
    ]
   },
@@ -470,20 +407,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": [
-   {
-    "h": "Cole's French Dip set to return",
-    "b": "New owners Sean Maloney and Jeremy Fall plan to reopen the iconic downtown LA restaurant, which closed in March, by Thanksgiving.",
-    "date": "2026-10-29",
-    "publisher": "LAist",
-    "title": "The return of Cole’s French Dip",
-    "url": "https://laist.com/news/food/the-return-of-coles-french-dip",
-    "published": "2026-10-29T12:00:00Z",
-    "gathered": "2026-10-29T13:31:15Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -542,43 +468,13 @@
     "url": "https://gothamist.com/news/nyc-council-takes-key-step-toward-mamdanis-promised-department-of-community-safety",
     "published": "2026-10-30T11:30:48Z",
     "gathered": "2026-10-30T13:19:34Z"
-   },
-   {
-    "h": "8 charged in $7M SNAP fraud scheme",
-    "b": "The Manhattan DA says the group used deli names to steal EBT card numbers from April 2023 to September 2025.",
-    "date": "2026-10-29",
-    "publisher": "Gothamist",
-    "title": "8 people charged in $7M SNAP benefit fraud scheme",
-    "url": "https://gothamist.com/news/8-people-charged-in-7m-snap-benefit-fraud-scheme",
-    "published": "2026-10-30T14:25:00Z",
-    "gathered": "2026-10-30T02:47:27Z"
-   },
-   {
-    "h": "Nobody is enforcing NYC's $3 bus fare for now",
-    "b": "Enforcement is on pause after a series of confrontations involving MTA agents, and the NYPD will not step in while the security force is suspended.",
-    "date": "2026-10-29",
-    "publisher": "Gothamist",
-    "title": "NYPD won't enforce NYC's bus fare while MTA security force is suspended",
-    "url": "https://gothamist.com/news/who-is-enforcing-the-mtas-3-bus-fare-for-the-moment-no-one",
-    "published": "2026-10-29T17:13:00Z",
-    "gathered": "2026-10-29T19:08:23Z"
-   },
-   {
-    "h": "Garbage truck kills woman in Brooklyn",
-    "b": "Siobhan Lynch, 30, was struck by a Department of Sanitation truck while crossing Bay Parkway at Cropsey Avenue Wednesday evening, the NYPD said.",
-    "date": "2026-10-29",
-    "publisher": "Gothamist",
-    "title": "Brooklyn woman hit and killed by garbage truck at Bay Parkway, NYPD says",
-    "url": "https://gothamist.com/news/brooklyn-woman-hit-and-killed-by-garbage-truck-at-peak-time-for-traffic-deaths-nypd-says",
-    "published": "2026-10-29T15:22:00Z",
-    "gathered": "2026-10-29T13:31:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 59,
     "cond": "Fair",
-    "obs": "30 Oct 16:51 pm EDT"
+    "obs": "30 Oct 17:51 pm EDT"
    },
    "periods": [
     {
@@ -631,20 +527,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "SNAP users to get more for fresh produce",
-    "b": "City Hall said New Yorkers on SNAP will receive more money through the Health Bucks program for farmers markets and farm stands next year.",
-    "date": "2026-10-29",
-    "publisher": "Gothamist",
-    "title": "New Yorkers enrolled in SNAP will get more money for fresh produce next year",
-    "url": "https://gothamist.com/news/new-yorkers-enrolled-in-snap-will-get-more-money-for-fresh-produce-next-year",
-    "published": "2026-10-29T20:19:11Z",
-    "gathered": "2026-10-29T23:29:30Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -682,13 +567,6 @@
     "date": "2026-10-30",
     "url": "https://www.thelocal.fr/20261030/french-presidential-hopeful-philippe-quizzed-in-embezzlement-case",
     "gathered": "2026-10-30T10:21:35Z"
-   },
-   {
-    "h": "Trappes shooting suspect targeted Muslims, Africans",
-    "b": "The 39-year-old suspect, who killed one person and wounded seven west of Paris, admitted targeting people who appeared Muslim or African, prosecutors said.",
-    "date": "2026-10-29",
-    "url": "https://www.thelocal.fr/20261029/french-shooting-suspect-deliberately-targeted-muslims-and-africans-says-prosecutor",
-    "gathered": "2026-10-29T19:08:23Z"
    }
   ],
   "weather": {
@@ -707,7 +585,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "goodnews": []
  },
  {
@@ -727,31 +605,11 @@
     "published": "2026-10-30T19:35:31Z",
     "updated": "2026-10-30T19:35:31Z",
     "gathered": "2026-10-30T21:39:21Z"
-   },
-   {
-    "h": "GEO Group gets $1.5B deal to run Tacoma ICE center",
-    "b": "ICE awarded the private prison company a 10-year contract for the 1,635-bed Northwest ICE Processing Center despite reports of poor conditions.",
-    "date": "2026-10-29",
-    "url": "https://www.kuow.org/immigration/2026-10-29/feds-approve-1-5-billion-contract-for-geo-group-to-continue-running-tacoma-ice-center",
-    "gathered": "2026-10-29T19:17:38Z"
-   },
-   {
-    "h": "Washington suicide deaths hit 25-year high",
-    "b": "Nearly 1,400 people died by suicide in the state in 2025, the most in 25 years, according to new health department data.",
-    "date": "2026-10-29",
-    "url": "https://www.kuow.org/mental-health/2026-10-29/1-400-people-died-by-suicide-in-washington-state-last-year-a-record",
-    "gathered": "2026-10-29T19:08:23Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 50,
-     "text": "A 20 percent chance of rain before 3pm.  Partly sunny, with a high near 50. Light east southeast wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -774,13 +632,19 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 54,
-     "text": "Partly sunny, with a high near 54. Calm wind. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 54. Calm wind. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40."
+     "text": "Mostly clear, with a low around 40. Calm wind. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 54,
+     "text": "Partly sunny, with a high near 54."
     }
    ]
   },
@@ -796,7 +660,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-30T22:12:00Z",
+  "updatedAt": "2026-10-31T01:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
