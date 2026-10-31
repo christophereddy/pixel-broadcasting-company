@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T07:12:00Z",
+ "updatedAt": "2026-10-31T10:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,22 +7,29 @@
  },
  "world": [
   {
-   "h": "Oil tankers hit in Hormuz; Trump says war ends soon",
-   "b": "Iran says four oil tankers in the Strait of Hormuz are on fire, while Trump says the conflict will end soon. Al Jazeera is following the Iran war live.",
+   "h": "Iran warns of 'earth-shattering blow' if attacked",
+   "b": "Iran warned of an 'earth-shattering blow' if attacked, as a drone targeted Riyadh. Al Jazeera is following the Iran war live.",
    "date": "2026-10-31",
    "publisher": "Al Jazeera",
-   "title": "Iran says four oil tankers on fire in Hormuz; Trump says war will end soon",
+   "title": "Iran warns of ‘earth-shattering blow’ if attacked; drone targets Riyadh",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon",
    "gathered": "2026-10-31T01:44:04Z"
   }
  ],
  "national": [
   {
+   "h": "Two Chinese nationals jailed for spying",
+   "b": "The pair were each sentenced to 30 months in prison for a scheme that sought to arrange 'dead drop' cash payments for US national security information, the DOJ said.",
+   "date": "2026-10-30",
+   "publisher": "Al Jazeera",
+   "title": "US jails two Chinese nationals for spying",
+   "url": "https://www.aljazeera.com/news/2026/10/31/us-jails-two-chinese-nationals-for-spying",
+   "gathered": "2026-10-31T08:42:01Z"
+  },
+  {
    "h": "Pope Leo casts mail ballot in US midterms",
    "b": "The Vatican confirmed the Chicago-born pope submitted a mail-in ballot in Chicago, making him the first pontiff to vote in a US general election.",
    "date": "2026-10-30",
-   "publisher": "Al Jazeera",
-   "title": "Pope Leo becomes first pontiff to vote in US general election",
    "url": "https://www.aljazeera.com/news/2026/10/31/pope-leo-becomes-first-pontiff-to-vote-in-us-general-election",
    "gathered": "2026-10-31T04:12:29Z"
   },
@@ -30,8 +37,6 @@
    "h": "Christa Pike says she is in constant pain",
    "b": "In her first statement since her failed execution, Pike, 50, said through her lawyers that she is in constant physical and emotional pain and struggling to speak.",
    "date": "2026-10-30",
-   "publisher": "Al Jazeera",
-   "title": "US execution survivor Christa Pike says she is now in ‘constant pain’",
    "url": "https://www.aljazeera.com/news/2026/10/31/us-execution-survivor-christa-pike-says-she-is-now-in-constant",
    "gathered": "2026-10-31T04:12:29Z"
   },
@@ -110,13 +115,33 @@
  ],
  "international": [
   {
+   "h": "US approves $2.1bn Patriot missile sale to Ukraine",
+   "b": "The State Department approved the possible sale of 500 Patriot PAC-3 missiles, one of the biggest steps to supply Kyiv with defensive weapons since Trump's second term began.",
+   "date": "2026-10-30",
+   "place": "Kyiv, Ukraine",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "US greenlights $2.1bn Patriot missile sale to Ukraine",
+   "url": "https://www.aljazeera.com/news/2026/10/31/us-greenlights-2-1bn-patriot-missile-sale-to-ukraine",
+   "gathered": "2026-10-31T08:42:01Z"
+  },
+  {
+   "h": "Senior RSF commander defects, alleging nepotism",
+   "b": "Commander Ander accused relatives of RSF leader Hemedti of tightly controlling the group's finances, weapons and promotions, the latest in a string of defections this year.",
+   "date": "2026-10-30",
+   "place": "Khartoum, Sudan",
+   "tz": "Africa/Khartoum",
+   "publisher": "Al Jazeera",
+   "title": "RSF senior commander defects, accusing Sudan group’s leadership of nepotism",
+   "url": "https://www.aljazeera.com/news/2026/10/31/rsf-senior-commander-defects-accusing-sudan-groups-leadership-of-nepotism",
+   "gathered": "2026-10-31T08:42:01Z"
+  },
+  {
    "h": "DR Congo Ebola death toll passes 5,000",
    "b": "The country's deadliest outbreak on record has infected more than 10,000 people since May; there are no approved treatments or vaccines for the Bundibugyo strain.",
    "date": "2026-10-30",
    "place": "Kinshasa, DR Congo",
    "tz": "Africa/Kinshasa",
-   "publisher": "Al Jazeera",
-   "title": "Ebola death toll in DR Congo passes 5,000",
    "url": "https://www.aljazeera.com/news/2026/10/31/ebola-death-toll-in-dr-congo-passes-5000",
    "gathered": "2026-10-31T04:12:29Z"
   },
@@ -126,8 +151,6 @@
    "date": "2026-10-30",
    "place": "Brasilia, Brazil",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
    "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us",
    "gathered": "2026-10-31T01:44:04Z"
   },
@@ -250,8 +273,6 @@
    "h": "Reigning NHL MVP Kucherov requests a trade",
    "b": "The two-time Hart Trophy winner, 33, is in the final year of a contract paying $9.5 million a season after a 44-goal, 86-assist MVP campaign.",
    "date": "2026-10-30",
-   "publisher": "CBS Sports",
-   "title": "Nikita Kucherov trade request: Five potential landing spots for the reigning NHL MVP",
    "url": "https://www.cbssports.com/nhl/news/nikita-kucherov-trade-request-landing-spots-nhl-mvp/",
    "gathered": "2026-10-31T04:12:29Z"
   },
@@ -333,46 +354,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 50,
    "cond": "Fair",
-   "obs": "30 Oct 23:51 pm EDT"
+   "obs": "31 Oct 03:51 am EDT"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 47,
-    "text": "Mostly clear, with a low around 47. Northwest wind around 14 mph. "
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
-    "temp": 59,
-    "text": "Sunny, with a high near 59. North wind around 11 mph. "
+    "temp": 60,
+    "text": "Sunny, with a high near 60. Northwest wind 6 to 11 mph. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 47,
-    "text": "Partly cloudy, with a low around 47. Northwest wind around 9 mph. "
+    "text": "Mostly clear, with a low around 47. North wind around 6 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 62,
-    "text": "Mostly sunny, with a high near 62. North wind 5 to 7 mph becoming west in the afternoon. "
+    "text": "Mostly sunny, with a high near 62. Northwest wind around 5 mph becoming light and variable. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 51,
-    "text": "Partly cloudy, with a low around 51. Southwest wind 5 to 8 mph. "
+    "temp": 50,
+    "text": "Mostly clear, with a low around 50. Southwest wind around 6 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
-    "temp": 66,
-    "text": "Mostly sunny, with a high near 66."
+    "temp": 65,
+    "text": "Mostly sunny, with a high near 65. Southwest wind 6 to 8 mph. "
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 53,
+    "text": "Partly cloudy, with a low around 53."
    }
   ]
  },
