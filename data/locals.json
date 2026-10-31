@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 60,
     "cond": "Overcast",
-    "obs": "31 Oct 03:52 am EDT"
+    "obs": "31 Oct 05:52 am EDT"
    },
    "periods": [
     {
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,9 +98,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 47,
     "cond": "Fair",
-    "obs": "31 Oct 03:54 am EDT"
+    "obs": "31 Oct 05:54 am EDT"
    },
    "periods": [
     {
@@ -153,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -189,17 +189,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 55,
     "cond": "Overcast",
-    "obs": "31 Oct 02:53 am CDT"
+    "obs": "31 Oct 04:53 am CDT"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Isolated showers.  Cloudy, with a low around 54. East southeast wind 10 to 15 mph.  Chance of precipitation is 20%."
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -229,6 +223,12 @@
      "kind": "high",
      "temp": 65,
      "text": "A 40 percent chance of showers, mainly after 1pm.  Mostly cloudy, with a high near 65."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 60,
+     "text": "A 30 percent chance of showers.  Mostly cloudy, with a low around 60. Breezy. "
     }
    ]
   },
@@ -244,7 +244,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -271,19 +271,13 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Areas of dense fog.  Otherwise, mostly cloudy, with a low around 43. Calm wind. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 61,
      "text": "Areas of dense fog before 10am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 61. Calm wind becoming north northeast around 6 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Increasing clouds, with a low around 44. Light and variable wind. "
@@ -298,13 +292,19 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 46,
-     "text": "A 20 percent chance of showers after midnight.  Mostly cloudy, with a low around 46. South southeast wind around 6 mph becoming calm  in the evening. Winds could gust as high as 15 mph. "
+     "text": "A 20 percent chance of showers after midnight.  Increasing clouds, with a low around 46. South southeast wind around 6 mph becoming calm  in the evening. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 59,
-     "text": "Showers likely, mainly after noon.  Mostly cloudy, with a high near 59. Breezy.  Chance of precipitation is 60%."
+     "text": "Showers likely, mainly after noon.  Mostly cloudy, with a high near 59. Breezy, with a light west northwest wind becoming north northwest 12 to 17 mph in the morning. Winds could gust as high as 37 mph.  Chance of precipitation is 60%."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "A 30 percent chance of showers, mainly before midnight.  Mostly cloudy, with a low around 40."
     }
    ]
   },
@@ -320,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -369,12 +369,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "A 30 percent chance of rain.  Cloudy, with a low around 59. East wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
      "name": "Saturday",
      "kind": "high",
      "temp": 68,
@@ -403,6 +397,12 @@
      "kind": "high",
      "temp": 75,
      "text": "Sunny, with a high near 75."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Partly cloudy, with a low around 58."
     }
    ]
   },
@@ -418,7 +418,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -483,9 +483,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 49,
     "cond": "Fair",
-    "obs": "31 Oct 03:51 am EDT"
+    "obs": "31 Oct 05:51 am EDT"
    },
    "periods": [
     {
@@ -538,7 +538,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -588,7 +588,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "goodnews": []
  },
  {
@@ -609,12 +609,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 39,
-     "text": "Mostly clear, with a low around 39. Calm wind. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -644,6 +638,12 @@
      "kind": "high",
      "temp": 54,
      "text": "Mostly cloudy, with a high near 54."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 46,
+     "text": "Mostly cloudy, with a low around 46."
     }
    ]
   },
@@ -659,18 +659,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T10:11:00Z",
+  "updatedAt": "2026-10-31T13:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "'Docktober' draws crowds to peer under docks",
     "b": "About 40 people lay on a marina dock near Olympia to watch skeleton shrimp and other sea life just below the surface.",
     "date": "2026-10-30",
-    "publisher": "KUOW",
-    "title": "Move over, Halloween. It’s Docktober on Puget Sound",
     "url": "https://www.kuow.org/environment/2026-10-30/move-over-halloween-its-docktober-on-puget-sound",
-    "published": "2026-10-30T19:36:42Z",
-    "updated": "2026-10-30T23:54:26Z",
     "gathered": "2026-10-30T21:39:21Z"
    }
   ]
