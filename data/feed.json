@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T01:11:00Z",
+ "updatedAt": "2026-10-31T04:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,13 @@
  },
  "world": [
   {
-   "h": "Pakistan 'cautiously optimistic' on Iran-US mediation",
-   "b": "Pakistan's army says it is cautiously optimistic about efforts to mediate between Iran and the US. Al Jazeera is following the Iran war live.",
-   "date": "2026-10-30",
+   "h": "Oil tankers hit in Hormuz; Trump says war ends soon",
+   "b": "Iran says four oil tankers in the Strait of Hormuz are on fire, while Trump says the conflict will end soon. Al Jazeera is following the Iran war live.",
+   "date": "2026-10-31",
    "publisher": "Al Jazeera",
-   "title": "Pakistan’s army says ‘cautiously optimistic’ on Iran-US mediation efforts",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
-   "gathered": "2026-10-30T02:47:27Z"
+   "title": "Iran says four oil tankers in Hormuz on fire; Trump says war will end soon",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon",
+   "gathered": "2026-10-31T01:44:04Z"
   }
  ],
  "national": [
@@ -21,10 +21,7 @@
    "h": "ICE officer charged with assault in Houston",
    "b": "Prosecutors say the officer struck and ran over a man fleeing on foot in a parking lot Oct. 10, breaking his leg. The DA said video contradicts ICE's account.",
    "date": "2026-10-30",
-   "publisher": "PBS NewsHour",
-   "title": "An ICE officer is charged with assault for striking a man with a car in Houston",
    "url": "https://www.pbs.org/newshour/nation/an-ice-officer-has-been-charged-after-striking-a-man-with-a-car-in-houston",
-   "published": "2026-10-30T17:53:28Z",
    "gathered": "2026-10-30T21:39:21Z"
   },
   {
@@ -44,6 +41,16 @@
  ],
  "politics": [
   {
+   "h": "Alaska US attorney confirms spoiler candidate probe",
+   "b": "U.S. Attorney Michael Heyman said a months-long criminal probe has seen a 'significant surge' of agents after reports Peltola's campaign helped recruit a Dan J. Sullivan to run.",
+   "date": "2026-10-30",
+   "publisher": "PBS NewsHour",
+   "title": "Top federal prosecutor in Alaska says criminal probe underway over would-be spoiler Senate candidate",
+   "url": "https://www.pbs.org/newshour/politics/top-federal-prosecutor-in-alaska-says-criminal-probe-underway-over-would-be-spoiler-senate-candidate",
+   "published": "2026-10-30T22:12:36Z",
+   "gathered": "2026-10-31T01:44:04Z"
+  },
+  {
    "h": "Judge orders inquiry into DOJ conduct in golf case",
    "b": "Judge Ana Reyes is examining whether officials misrepresented plans for D.C.'s East Potomac golf course after DOJ lawyers confirmed a plan to close it and much of the park in mid-November.",
    "date": "2026-10-30",
@@ -58,8 +65,6 @@
    "h": "Appeals court again rejects bid to set aside CA ballots",
    "b": "The 9th Circuit ruled the Trump administration's request to set aside 20,000 California ballots over non-citizen voting concerns would violate the Constitution and risk disenfranchising eligible voters.",
    "date": "2026-10-30",
-   "publisher": "Al Jazeera",
-   "title": "US appeals court again rejects Trump bid to set aside California ballots",
    "url": "https://www.aljazeera.com/news/2026/10/30/us-appeals-court-again-rejects-trump-bid-to-set-aside-california-ballots",
    "gathered": "2026-10-30T21:39:21Z"
   },
@@ -87,13 +92,33 @@
  ],
  "international": [
   {
+   "h": "Brazil summons Argentine envoy over Bolsonaro flight",
+   "b": "Brazil called in Argentina's charge d'affaires after Flavio Bolsonaro fled to Argentina and then the US following his election loss. Argentina denied receiving a formal request.",
+   "date": "2026-10-30",
+   "place": "Brasilia, Brazil",
+   "tz": "America/Sao_Paulo",
+   "publisher": "Al Jazeera",
+   "title": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
+   "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us",
+   "gathered": "2026-10-31T01:44:04Z"
+  },
+  {
+   "h": "Germany and France brace for Halloween protests",
+   "b": "About 150,000 people have registered to protest Saturday in some 30 German cities, led by the 'GenZ regelt!' group; some stores boarded up windows.",
+   "date": "2026-10-31",
+   "place": "Berlin, Germany",
+   "tz": "Europe/Berlin",
+   "publisher": "Al Jazeera",
+   "title": "Germany and France brace for protests on Halloween weekend",
+   "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend",
+   "gathered": "2026-10-31T01:44:04Z"
+  },
+  {
    "h": "Port Sudan families can barely afford water",
    "b": "Without piped water, families in Port Sudan's Deim Mayo neighbourhood rely on street vendors; one mother says a month of water costs her entire salary.",
    "date": "2026-10-30",
    "place": "Port Sudan, Sudan",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Port Sudan families can barely afford water as shortages persist",
    "url": "https://www.aljazeera.com/news/2026/10/30/port-sudan-families-can-barely-afford-water-as-shortages-persist",
    "gathered": "2026-10-30T22:12:38Z"
   },
@@ -115,8 +140,6 @@
    "date": "2026-10-30",
    "place": "Hebron, West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Israel demolishes homes of Palestinians blamed for attack on soldiers",
    "url": "https://www.aljazeera.com/news/2026/10/30/israel-demolishes-homes-of-palestinians-blamed-for-attack-on-soldiers",
    "gathered": "2026-10-30T21:39:21Z"
   },
@@ -171,6 +194,16 @@
   }
  ],
  "science": [
+  {
+   "h": "Striped bass could face collapse, scientists warn",
+   "b": "After years of heavy fishing, the big striper runs have faded and young fish are harder to find, worrying anglers from Montauk to the Chesapeake.",
+   "date": "2026-10-30",
+   "publisher": "PBS NewsHour",
+   "title": "For many, striped bass fishing is a way of life. But the iconic species could face collapse",
+   "url": "https://www.pbs.org/newshour/science/for-many-striped-bass-fishing-is-a-way-of-life-but-the-iconic-species-could-face-collapse",
+   "published": "2026-10-31T00:01:16Z",
+   "gathered": "2026-10-31T01:44:04Z"
+  },
   {
    "h": "Secret UN vote boosted carbon capture, ProPublica finds",
    "b": "A 2005 U.N. climate report suggested at least 99% of stored CO2 would likely stay underground despite scant evidence; major storage projects have since faced breakdowns and cost overruns.",
@@ -262,16 +295,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 55,
    "cond": "Fair",
-   "obs": "30 Oct 17:51 pm EDT"
+   "obs": "30 Oct 20:51 pm EDT"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 47,
-    "text": "Mostly clear, with a low around 47. Breezy, with a northwest wind 13 to 21 mph, with gusts as high as 31 mph. "
+    "text": "Mostly clear, with a low around 47. Northwest wind 13 to 17 mph. "
    },
    {
     "name": "Saturday",

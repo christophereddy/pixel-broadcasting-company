@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 77,
+    "temp": 70,
     "cond": "Mostly Cloudy",
-    "obs": "30 Oct 17:52 pm EDT"
+    "obs": "30 Oct 19:52 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 60,
-     "text": "Mostly cloudy, with a low around 60. East wind around 5 mph becoming calm. "
+     "text": "Mostly cloudy, with a low around 60. Calm wind becoming east around 5 mph after midnight. "
     },
     {
      "name": "Saturday",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,16 +98,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 55,
     "cond": "A Few Clouds",
-    "obs": "30 Oct 17:54 pm EDT"
+    "obs": "30 Oct 19:54 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "Clear, with a low around 40. Northwest wind 10 to 14 mph, with gusts as high as 26 mph. "
+     "text": "Clear, with a low around 40. Northwest wind around 11 mph, with gusts as high as 26 mph. "
     },
     {
      "name": "Saturday",
@@ -153,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -189,28 +189,28 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 55,
     "cond": "Overcast",
-    "obs": "30 Oct 16:53 pm CDT"
+    "obs": "30 Oct 19:53 pm CDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "A slight chance of showers before 10pm, then a chance of sprinkles between 10pm and midnight, then scattered showers after midnight.  Cloudy, with a steady temperature around 55. East wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 40%."
+     "text": "A 20 percent chance of showers.  Cloudy, with a steady temperature around 55. East wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 62,
-     "text": "Showers likely, mainly before 10am.  Cloudy, with a high near 62. Southeast wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "A 40 percent chance of showers, mainly before 4pm.  Cloudy, with a high near 62. Southeast wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 55,
-     "text": "A 20 percent chance of showers before 4am.  Cloudy, with a low around 55. Southeast wind 5 to 10 mph. "
+     "text": "A 20 percent chance of showers before 2am.  Cloudy, with a low around 55. Southeast wind 5 to 10 mph. "
     },
     {
      "name": "Sunday",
@@ -222,7 +222,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, with a low around 55."
+     "text": "Mostly cloudy, with a low around 55. South southeast wind around 10 mph. "
     },
     {
      "name": "Monday",
@@ -244,7 +244,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -264,17 +264,13 @@
   },
   "local": [],
   "weather": {
-   "now": {
-    "temp": 68,
-    "cond": "Mostly Cloudy",
-    "obs": "30 Oct 15:58 pm MDT"
-   },
+   "now": null,
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Patchy fog after 2am.  Otherwise, mostly cloudy, with a low around 43. North northeast wind around 6 mph becoming calm  in the evening. "
+     "text": "Patchy fog after 2am.  Otherwise, mostly cloudy, with a low around 43. Light and variable wind. "
     },
     {
      "name": "Saturday",
@@ -320,7 +316,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -331,6 +327,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LA breaks 1983 record for coastal flooding days",
+    "b": "Los Angeles has already set a record for most coastal flooding days in a year, without counting October, with king tides and a wet El Niño winter ahead.",
+    "date": "2026-10-30",
+    "publisher": "LAist",
+    "title": "LA coastal flooding breaks record set in 1983 — with more almost certainly ahead",
+    "url": "https://laist.com/news/climate-environment/la-coastal-flooding-breaks-record-set-in-1983",
+    "published": "2026-10-30T23:21:24Z",
+    "updated": "2026-10-30T23:21:24Z",
+    "gathered": "2026-10-31T01:44:04Z"
+   },
    {
     "h": "Bank app breach delays CA students' financial aid",
     "b": "Thousands of California college students have faced delays after a breach of the BankMobile app, used by about 60 community college districts to disburse aid.",
@@ -379,13 +386,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 68,
-     "text": "Rain likely before 11am, then a slight chance of showers after 11am.  Partly sunny, with a high near 68. Light west wind becoming west southwest 5 to 10 mph in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely before 11am, then a slight chance of showers after 11am.  Mostly cloudy, then gradually becoming sunny, with a high near 68. Light west wind becoming west southwest 5 to 10 mph in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56."
+     "text": "Mostly clear, with a low around 56. West southwest wind around 5 mph becoming northeast in the evening. "
     },
     {
      "name": "Monday",
@@ -407,7 +414,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -472,16 +479,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "30 Oct 17:51 pm EDT"
+    "obs": "30 Oct 20:51 pm EDT"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Mostly clear, with a low around 47. Breezy, with a northwest wind 13 to 21 mph, with gusts as high as 31 mph. "
+     "text": "Mostly clear, with a low around 47. Northwest wind 13 to 17 mph. "
     },
     {
      "name": "Saturday",
@@ -527,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -585,7 +592,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "goodnews": []
  },
  {
@@ -603,7 +610,7 @@
     "title": "Seattle and Tacoma want higher sales taxes to expand bus service. Will voters go for it?",
     "url": "https://www.kuow.org/elections/2026-10-30/seattle-and-tacoma-want-higher-sales-taxes-to-expand-bus-service-will-voters-go-for-it",
     "published": "2026-10-30T19:35:31Z",
-    "updated": "2026-10-30T19:35:31Z",
+    "updated": "2026-10-30T23:56:14Z",
     "gathered": "2026-10-30T21:39:21Z"
    }
   ],
@@ -660,7 +667,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T01:11:00Z",
+  "updatedAt": "2026-10-31T04:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
@@ -671,7 +678,7 @@
     "title": "Move over, Halloween. It’s Docktober on Puget Sound",
     "url": "https://www.kuow.org/environment/2026-10-30/move-over-halloween-its-docktober-on-puget-sound",
     "published": "2026-10-30T19:36:42Z",
-    "updated": "2026-10-30T21:27:55Z",
+    "updated": "2026-10-30T23:54:26Z",
     "gathered": "2026-10-30T21:39:21Z"
    }
   ]
