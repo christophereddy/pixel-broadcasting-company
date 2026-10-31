@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-31T13:12:00Z",
+ "updatedAt": "2026-10-31T16:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "IRGC warns war could engulf wider region",
-   "b": "Iran's Revolutionary Guard warned the 'flames of war' would engulf a much wider area if the US attacks Iran. Al Jazeera is following the Iran war live.",
+   "h": "Araghchi calls US outreach a 'positive step'",
+   "b": "Iran's foreign minister called a US call for dialogue a positive step as an Iranian delegation arrived in Doha. Al Jazeera is following the Iran war live.",
    "date": "2026-10-31",
    "publisher": "Al Jazeera",
-   "title": "IRGC warns ‘flames of war to engulf much wider area’ if US attacks Iran",
+   "title": "Araghchi says US call for dialogue a positive step; Iran delegation in Doha",
    "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon",
    "gathered": "2026-10-31T01:44:04Z"
   }
@@ -66,7 +66,7 @@
    "b": "U.S. Attorney Michael Heyman said a months-long criminal probe has seen a 'significant surge' of agents after reports Peltola's campaign helped recruit a Dan J. Sullivan to run.",
    "date": "2026-10-30",
    "publisher": "PBS NewsHour",
-   "title": "Top federal prosecutor in Alaska says criminal probe underway over would-be spoiler Senate candidate",
+   "title": "Justice Department seeks to isolate Alaska ballots as criminal probe underway over Senate candidate",
    "url": "https://www.pbs.org/newshour/politics/top-federal-prosecutor-in-alaska-says-criminal-probe-underway-over-would-be-spoiler-senate-candidate",
    "published": "2026-10-30T22:12:36Z",
    "gathered": "2026-10-31T01:44:04Z"
@@ -109,13 +109,45 @@
  ],
  "international": [
   {
+   "h": "Yemen fighting has displaced 290,000, UN says",
+   "b": "OCHA says renewed fighting between government forces and the Houthis, especially in Taiz and coastal areas, has displaced 290,000 since August, with pregnant women at dire risk.",
+   "date": "2026-10-30",
+   "place": "Taiz, Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "New Yemen fighting displaces 290,000, says UN, with pregnant women at risk",
+   "url": "https://www.aljazeera.com/news/2026/10/31/new-yemen-fighting-displaces-290000-says-un-with-pregnant-women-at-risk",
+   "gathered": "2026-10-31T15:27:44Z"
+  },
+  {
+   "h": "Oleshky evacuees reach Ukraine via Belarus",
+   "b": "Residents evacuated from Russian-occupied Oleshky arrived in Ukraine under a localized ceasefire brokered by Melania Trump, expected to last through Sunday evening.",
+   "date": "2026-10-31",
+   "place": "Kherson, Ukraine",
+   "tz": "Europe/Kyiv",
+   "publisher": "PBS NewsHour",
+   "title": "Residents evacuated from Russian-occupied Oleshky reach Ukraine after localized ceasefire",
+   "url": "https://www.pbs.org/newshour/world/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire",
+   "published": "2026-10-31T14:47:05Z",
+   "gathered": "2026-10-31T15:27:44Z"
+  },
+  {
+   "h": "Burnham opens door to UK slave trade apology",
+   "b": "Ahead of a Commonwealth summit in Antigua and Barbuda, the UK prime minister offered structured talks, including on whether Britain should issue an official state apology.",
+   "date": "2026-10-30",
+   "place": "London, UK",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "Burnham opens door to formal apology for Britain’s slave trade",
+   "url": "https://www.aljazeera.com/news/2026/10/31/burnham-opens-door-to-formal-apology-for-britains-slave-trade",
+   "gathered": "2026-10-31T15:27:44Z"
+  },
+  {
    "h": "Lebanon charges 13 over Hezbollah explosives",
    "b": "The individuals face charges including weapons possession and undermining state security after a truck carrying explosives was seized at the Dahr al-Baydar checkpoint.",
    "date": "2026-10-30",
    "place": "Beirut, Lebanon",
    "tz": "Asia/Beirut",
-   "publisher": "Al Jazeera",
-   "title": "Lebanon charges 13 over confiscated Hezbollah explosives",
    "url": "https://www.aljazeera.com/news/2026/10/31/lebanon-charges-13-over-hezbollah-confiscated-explosives",
    "gathered": "2026-10-31T10:11:54Z"
   },
@@ -125,8 +157,6 @@
    "date": "2026-10-30",
    "place": "New York, US",
    "tz": "America/New_York",
-   "publisher": "Al Jazeera",
-   "title": "Rival US and Russian resolutions on Western Sahara fail at UN",
    "url": "https://www.aljazeera.com/news/2026/10/31/rival-us-and-russian-resolutions-on-western-sahara-fail-at-un",
    "gathered": "2026-10-31T10:11:54Z"
   },
@@ -136,8 +166,6 @@
    "date": "2026-10-30",
    "place": "Kyiv, Ukraine",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "US greenlights $2.1bn Patriot missile sale to Ukraine",
    "url": "https://www.aljazeera.com/news/2026/10/31/us-greenlights-2-1bn-patriot-missile-sale-to-ukraine",
    "gathered": "2026-10-31T08:42:01Z"
   },
@@ -147,8 +175,6 @@
    "date": "2026-10-30",
    "place": "Khartoum, Sudan",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "RSF senior commander defects, accusing Sudan group’s leadership of nepotism",
    "url": "https://www.aljazeera.com/news/2026/10/31/rsf-senior-commander-defects-accusing-sudan-groups-leadership-of-nepotism",
    "gathered": "2026-10-31T08:42:01Z"
   },
@@ -176,8 +202,6 @@
    "date": "2026-10-31",
    "place": "Berlin, Germany",
    "tz": "Europe/Berlin",
-   "publisher": "Al Jazeera",
-   "title": "Germany and France brace for protests on Halloween weekend",
    "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend",
    "gathered": "2026-10-31T01:44:04Z"
   },
@@ -196,10 +220,7 @@
    "date": "2026-10-30",
    "place": "Montreal, Canada",
    "tz": "America/Toronto",
-   "publisher": "PBS NewsHour",
-   "title": "Canada is taking steps toward becoming European Union's first associate member",
    "url": "https://www.pbs.org/newshour/world/canada-is-taking-steps-toward-becoming-european-unions-first-associate-member",
-   "published": "2026-10-30T19:25:06Z",
    "gathered": "2026-10-30T21:39:21Z"
   },
   {
@@ -235,11 +256,7 @@
    "h": "Oil giants' earnings soar again on Iran war",
    "b": "ExxonMobil earned $15.4 billion, Shell $10.8 billion and Chevron $9.9 billion as the war disrupted supply; Brent crude trades near $113 a barrel, up from about $70.",
    "date": "2026-10-31",
-   "publisher": "KUOW",
-   "title": "Oil company earnings skyrocket — again",
    "url": "https://www.kuow.org/npr-news/2026-10-31/oil-company-earnings-skyrocket-again",
-   "published": "2026-10-31T09:00:00Z",
-   "updated": "2026-10-31T10:04:56Z",
    "gathered": "2026-10-31T10:11:54Z"
   },
   {
@@ -291,15 +308,26 @@
    "title": "How a Secret Vote by U.N. Scientists Legitimized Carbon Capture and Skewed Decades of Climate Policy",
    "url": "https://www.propublica.org/article/carbon-capture-storage-fossil-fuel-sally-benson",
    "published": "2026-10-30T10:00:00Z",
-   "updated": "2026-10-30T10:00:12Z",
+   "updated": "2026-10-31T14:43:40Z",
    "gathered": "2026-10-30T10:21:35Z"
   }
  ],
  "sports": [
   {
+   "h": "Warriors rally past Lakers despite rookie's rough night",
+   "b": "Yaxel Lendeborg had six points and five turnovers against Luka Dončić and the Lakers, but Golden State came back to win in the NBA Cup group-stage opener.",
+   "date": "2026-10-30",
+   "publisher": "CBS Sports",
+   "title": "Luka Dončić teaches Yaxel Lendeborg a lesson, but Warriors bail their rookie out in comeback win over Lakers",
+   "url": "https://www.cbssports.com/nba/news/luka-doncic-yaxel-lendeborg-warriors-comeback-win-lakers/",
+   "gathered": "2026-10-31T15:27:44Z"
+  },
+  {
    "h": "Reigning NHL MVP Kucherov requests a trade",
    "b": "The two-time Hart Trophy winner, 33, is in the final year of a contract paying $9.5 million a season after a 44-goal, 86-assist MVP campaign.",
    "date": "2026-10-30",
+   "publisher": "CBS Sports",
+   "title": "Nikita Kucherov trade request: Five potential landing spots for the reigning NHL MVP",
    "url": "https://www.cbssports.com/nhl/news/nikita-kucherov-trade-request-landing-spots-nhl-mvp/",
    "gathered": "2026-10-31T04:12:29Z"
   },
@@ -330,15 +358,21 @@
    "h": "Maryland man grows oysters to revive the Chesapeake",
    "b": "With oyster stocks plunged, a Kent Island resident raises them off his pier; his nets are packed with oysters after just three months of growth.",
    "date": "2026-10-31",
-   "publisher": "KUOW",
-   "title": "Oyster stocks have plunged in the Chesapeake. This resident wants to bring them back",
    "url": "https://www.kuow.org/npr-news/2026-10-31/oyster-stocks-have-plunged-in-the-chesapeake-this-resident-wants-to-bring-them-back",
-   "published": "2026-10-31T09:00:00Z",
-   "updated": "2026-10-31T10:05:15Z",
    "gathered": "2026-10-31T10:11:54Z"
   }
  ],
  "local": [
+  {
+   "h": "Bronx e-bike fire death toll rises to four",
+   "b": "Two teenage boys and a woman have died alongside Zion Maine after an e-bike battery ignited in the family's 11th-floor kitchen, blocking their exit.",
+   "date": "2026-10-31",
+   "publisher": "Gothamist",
+   "title": "NYPD says Bronx e-bike fire that killed a boy has claimed 3 more lives",
+   "url": "https://gothamist.com/news/nypd-says-bronx-e-bike-fire-that-killed-a-boy-has-claimed-3-more-lives",
+   "published": "2026-10-31T14:29:07Z",
+   "gathered": "2026-10-31T15:27:44Z"
+  },
   {
    "h": "Rooftop work wrecks Upper West Side owl nest",
    "b": "Politicians, police and wildlife officers rushed to West 75th Street to stop water tower work that disturbed a nest of seven barn owls.",
@@ -366,8 +400,7 @@
    "publisher": "Gothamist",
    "title": "Influential Brooklyn developer illegally raised rents despite tax break, lawsuit claims",
    "url": "https://gothamist.com/news/influential-brooklyn-developer-illegally-raised-rents-despite-tax-break-lawsuit-claims",
-   "published": "2026-10-30T15:43:00Z",
-   "updated": "2026-10-30T16:43:00Z",
+   "published": "2026-10-30T16:43:00Z",
    "gathered": "2026-10-30T16:47:07Z"
   },
   {
@@ -393,34 +426,34 @@
  ],
  "weather": {
   "now": {
-   "temp": 49,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "31 Oct 05:51 am EDT"
+   "obs": "31 Oct 10:51 am EDT"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
-    "temp": 60,
-    "text": "Sunny, with a high near 60. Northwest wind 6 to 11 mph. "
+    "temp": 59,
+    "text": "Sunny, with a high near 59. Northwest wind 10 to 13 mph. "
    },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 47,
-    "text": "Mostly clear, with a low around 47. North wind around 6 mph. "
+    "text": "Mostly clear, with a low around 47. Northwest wind around 9 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 62,
-    "text": "Mostly sunny, with a high near 62. Northwest wind around 5 mph becoming light and variable. "
+    "text": "Mostly sunny, with a high near 62. North wind 5 to 8 mph becoming west in the afternoon. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
     "temp": 50,
-    "text": "Mostly clear, with a low around 50. Southwest wind around 6 mph. "
+    "text": "Mostly clear, with a low around 50. Southwest wind 6 to 8 mph. "
    },
    {
     "name": "Monday",
@@ -436,7 +469,28 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "Formerly homeless New Yorkers lead outreach",
+   "b": "Outreach worker Felipe Ramos, who cycled through homelessness himself, says his past is his superpower in getting people off Manhattan's streets.",
+   "date": "2026-10-31",
+   "publisher": "Gothamist",
+   "title": "How formerly homeless New Yorkers are helping others get off the streets",
+   "url": "https://gothamist.com/news/how-formerly-homeless-new-yorkers-are-helping-others-get-off-the-streets",
+   "published": "2026-10-31T14:00:44Z",
+   "gathered": "2026-10-31T15:27:44Z"
+  },
+  {
+   "h": "Hate crime survivor reclaims his marathon dream",
+   "b": "A year after an attack cost him his first marathon, Daniel Cho will join more than 18,000 first-timers at this year's NYC Marathon.",
+   "date": "2026-10-31",
+   "publisher": "Gothamist",
+   "title": "A violent hate crime claimed one NYC man's marathon dream. A year later, he's taking it back.",
+   "url": "https://gothamist.com/news/a-violent-hate-crime-claimed-nyc-mans-marathon-dream-a-year-later-hes-taking-it-back",
+   "published": "2026-10-31T12:00:00Z",
+   "gathered": "2026-10-31T15:27:44Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",

@@ -20,16 +20,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 66,
     "cond": "Overcast",
-    "obs": "31 Oct 05:52 am EDT"
+    "obs": "31 Oct 10:52 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly cloudy, with a high near 72. East wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy, with a high near 72. East wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,34 +98,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Fair",
-    "obs": "31 Oct 05:54 am EDT"
+    "temp": 50,
+    "cond": "A Few Clouds",
+    "obs": "31 Oct 10:54 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 53,
-     "text": "Sunny, with a high near 53. Northwest wind 7 to 10 mph. "
+     "temp": 55,
+     "text": "Sunny, with a high near 55. Northwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 33,
-     "text": "Clear, with a low around 33. Light northwest wind. "
+     "temp": 38,
+     "text": "Clear, with a low around 38. Northwest wind 6 to 8 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. West wind 3 to 7 mph. "
+     "text": "Sunny, with a high near 60. West wind 5 to 9 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44. Southwest wind around 5 mph. "
+     "temp": 46,
+     "text": "Clear, with a low around 46. Southwest wind around 8 mph. "
     },
     {
      "name": "Monday",
@@ -153,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -189,19 +189,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 56,
     "cond": "Overcast",
-    "obs": "31 Oct 04:53 am CDT"
+    "obs": "31 Oct 09:53 am CDT"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
-     "temp": 61,
-     "text": "Scattered showers, mainly between 8am and noon.  Cloudy, with a high near 61. Southeast wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 30%."
+     "temp": 60,
+     "text": "Scattered showers, mainly before noon.  Cloudy, with a high near 60. Southeast wind 5 to 10 mph.  Chance of precipitation is 40%."
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 55,
      "text": "Isolated showers before midnight.  Cloudy, with a low around 55. South southeast wind 5 to 10 mph.  Chance of precipitation is 20%."
@@ -222,7 +222,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 65,
-     "text": "A 40 percent chance of showers, mainly after 1pm.  Mostly cloudy, with a high near 65."
+     "text": "A 40 percent chance of showers, mainly after 1pm.  Mostly cloudy, with a high near 65. South southeast wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Monday Night",
@@ -244,7 +244,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -265,16 +265,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Mostly Cloudy",
-    "obs": "31 Oct 01:58 am MDT"
+    "temp": 44,
+    "cond": " Fog",
+    "obs": "31 Oct 07:58 am MDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 61,
-     "text": "Areas of dense fog before 10am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 61. Calm wind becoming north northeast around 6 mph. "
+     "text": "Areas of dense fog before 10am.  Otherwise, cloudy early, then gradual clearing, with a high near 61. Calm wind becoming north northeast around 6 mph. "
     },
     {
      "name": "Tonight",
@@ -320,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -331,6 +331,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "DA drops felony case against LA peace ambassador",
+    "b": "Prosecutors dropped body armor charges against MacArthur Park peace ambassador Michael Angel Alvarez, who was sentenced to time served on a probation violation.",
+    "date": "2026-10-31",
+    "publisher": "LAist",
+    "title": "Second felony case against LA peace ambassador dismissed",
+    "url": "https://laist.com/news/criminal-justice/michael-angel-alvarez-charges-dropped-macarthur-park-peace-ambassador",
+    "published": "2026-10-31T14:00:00Z",
+    "updated": "2026-10-31T14:00:00Z",
+    "gathered": "2026-10-31T15:27:44Z"
+   },
    {
     "h": "LA breaks 1983 record for coastal flooding days",
     "b": "Los Angeles has already set a record for most coastal flooding days in a year, without counting October, with king tides and a wet El Niño winter ahead.",
@@ -350,18 +361,13 @@
     "title": "Bank breach delays financial aid, forces California college students to choose between books or food",
     "url": "https://laist.com/news/education/bank-breach-delays-financial-aid-college-students",
     "published": "2026-10-30T18:30:00Z",
-    "updated": "2026-10-30T18:30:00Z",
     "gathered": "2026-10-30T21:39:21Z"
    },
    {
     "h": "LA approves $5M for Lineage fire recovery",
     "b": "The City Council approved $5 million for Boyle Heights residents and businesses hit by the Lineage warehouse fire, part of a $10.5 million package.",
     "date": "2026-10-30",
-    "publisher": "LAist",
-    "title": "LA approves initial $5 million to help Boyle Heights residents, businesses recover from Lineage fire",
     "url": "https://laist.com/la-approves-initial-5-million-to-help-boyle-heights-residents-businesses-recover-from-lineage-fire",
-    "published": "2026-10-30T12:00:00Z",
-    "updated": "2026-10-30T11:59:59Z",
     "gathered": "2026-10-30T13:19:34Z"
    }
   ],
@@ -369,13 +375,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
      "text": "Rain likely, mainly after 11am.  Cloudy, with a high near 68. East wind around 5 mph becoming southwest in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 59,
      "text": "Rain.  Low around 59. Southwest wind around 5 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
@@ -396,7 +402,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75."
+     "text": "Sunny, with a high near 75. North northeast wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Monday Night",
@@ -418,9 +424,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Cal State LA collects underground music memories",
+    "b": "The college invites fans to bring photos, fliers and ticket stubs from their gig-going days for its underground music archive on Nov. 5.",
+    "date": "2026-10-31",
+    "publisher": "LAist",
+    "title": "Cal State LA wants memorabilia from your gig-going days for its underground music archive",
+    "url": "https://laist.com/news/los-angeles-activities/cal-state-los-angeles-underground-music-archive",
+    "published": "2026-10-31T12:00:00Z",
+    "updated": "2026-10-31T12:00:06Z",
+    "gathered": "2026-10-31T15:27:44Z"
+   }
+  ]
  },
  {
   "location": {
@@ -429,6 +447,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Bronx e-bike fire death toll rises to four",
+    "b": "Two teenage boys and a woman have died alongside Zion Maine after an e-bike battery ignited in the family's 11th-floor kitchen, blocking their exit.",
+    "date": "2026-10-31",
+    "publisher": "Gothamist",
+    "title": "NYPD says Bronx e-bike fire that killed a boy has claimed 3 more lives",
+    "url": "https://gothamist.com/news/nypd-says-bronx-e-bike-fire-that-killed-a-boy-has-claimed-3-more-lives",
+    "published": "2026-10-31T14:29:07Z",
+    "gathered": "2026-10-31T15:27:44Z"
+   },
    {
     "h": "Rooftop work wrecks Upper West Side owl nest",
     "b": "Politicians, police and wildlife officers rushed to West 75th Street to stop water tower work that disturbed a nest of seven barn owls.",
@@ -456,8 +484,7 @@
     "publisher": "Gothamist",
     "title": "Influential Brooklyn developer illegally raised rents despite tax break, lawsuit claims",
     "url": "https://gothamist.com/news/influential-brooklyn-developer-illegally-raised-rents-despite-tax-break-lawsuit-claims",
-    "published": "2026-10-30T15:43:00Z",
-    "updated": "2026-10-30T16:43:00Z",
+    "published": "2026-10-30T16:43:00Z",
     "gathered": "2026-10-30T16:47:07Z"
    },
    {
@@ -483,34 +510,34 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 53,
     "cond": "Fair",
-    "obs": "31 Oct 05:51 am EDT"
+    "obs": "31 Oct 10:51 am EDT"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. Northwest wind 6 to 11 mph. "
+     "temp": 59,
+     "text": "Sunny, with a high near 59. Northwest wind 10 to 13 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Mostly clear, with a low around 47. North wind around 6 mph. "
+     "text": "Mostly clear, with a low around 47. Northwest wind around 9 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 62,
-     "text": "Mostly sunny, with a high near 62. Northwest wind around 5 mph becoming light and variable. "
+     "text": "Mostly sunny, with a high near 62. North wind 5 to 8 mph becoming west in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Mostly clear, with a low around 50. Southwest wind around 6 mph. "
+     "text": "Mostly clear, with a low around 50. Southwest wind 6 to 8 mph. "
     },
     {
      "name": "Monday",
@@ -538,9 +565,30 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Formerly homeless New Yorkers lead outreach",
+    "b": "Outreach worker Felipe Ramos, who cycled through homelessness himself, says his past is his superpower in getting people off Manhattan's streets.",
+    "date": "2026-10-31",
+    "publisher": "Gothamist",
+    "title": "How formerly homeless New Yorkers are helping others get off the streets",
+    "url": "https://gothamist.com/news/how-formerly-homeless-new-yorkers-are-helping-others-get-off-the-streets",
+    "published": "2026-10-31T14:00:44Z",
+    "gathered": "2026-10-31T15:27:44Z"
+   },
+   {
+    "h": "Hate crime survivor reclaims his marathon dream",
+    "b": "A year after an attack cost him his first marathon, Daniel Cho will join more than 18,000 first-timers at this year's NYC Marathon.",
+    "date": "2026-10-31",
+    "publisher": "Gothamist",
+    "title": "A violent hate crime claimed one NYC man's marathon dream. A year later, he's taking it back.",
+    "url": "https://gothamist.com/news/a-violent-hate-crime-claimed-nyc-mans-marathon-dream-a-year-later-hes-taking-it-back",
+    "published": "2026-10-31T12:00:00Z",
+    "gathered": "2026-10-31T15:27:44Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -550,6 +598,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Fitch cuts France's outlook to negative",
+    "b": "The agency now expects French debt to rise from about 115.7% of GDP in 2025 to 124% in 2028, citing weaker growth and higher yields.",
+    "date": "2026-10-31",
+    "publisher": "The Local France",
+    "title": "Fitch downgrades France's economic outlook from stable to negative",
+    "url": "https://www.thelocal.fr/20261031/fitch-downgrades-frances-economic-outlook-from-stable-to-negative",
+    "published": "2026-10-31T15:12:22Z",
+    "updated": "2026-10-31T15:12:25Z",
+    "gathered": "2026-10-31T15:27:44Z"
+   },
    {
     "h": "Feared EES airport chaos did not materialise",
     "b": "A Eurocontrol report found French and German airports were worst affected by the EU's new entry-exit checks but saw only a slight rise in summer delays.",
@@ -588,7 +647,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "goodnews": []
  },
  {
@@ -610,13 +669,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 54,
      "text": "Mostly sunny, with a high near 54. Calm wind becoming north northwest around 6 mph in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
      "text": "Patchy fog after 2am.  Otherwise, mostly cloudy, with a low around 42. North wind around 5 mph becoming calm  in the evening. "
@@ -631,13 +690,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Partly cloudy, with a low around 40. Calm wind. "
+     "text": "Mostly cloudy during the early evening, then becoming mostly clear, with a low around 40. Calm wind. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 54,
-     "text": "Mostly cloudy, with a high near 54."
+     "text": "Mostly cloudy, with a high near 54. Calm wind. "
     },
     {
      "name": "Monday Night",
@@ -659,7 +718,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-10-31T13:12:00Z",
+  "updatedAt": "2026-10-31T16:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
