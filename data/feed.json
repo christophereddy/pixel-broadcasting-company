@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T11:12:00Z",
+ "updatedAt": "2026-11-01T14:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -18,6 +18,17 @@
  ],
  "national": [
   {
+   "h": "Supreme Court weighs religious schools in Colorado pre-K",
+   "b": "At issue is whether religious schools in the state's universal pre-K program may refuse children of gay and trans parents despite a state anti-discrimination law.",
+   "date": "2026-11-01",
+   "publisher": "KUOW",
+   "title": "Supreme Court hears religious freedom case centered on universal pre-K program",
+   "url": "https://www.kuow.org/npr-news/2026-11-01/supreme-court-hears-religious-freedom-case-centered-on-universal-pre-k-program",
+   "published": "2026-11-01T09:00:00Z",
+   "updated": "2026-11-01T11:05:38Z",
+   "gathered": "2026-11-01T11:12:29Z"
+  },
+  {
    "h": "Analysis: 40% of DOJ 'noncitizen' list not on CA rolls",
    "b": "UCLA data analysts examined 20,930 names DOJ wanted California to separate on Election Day and found thousands of U.S. citizens appear wrongly flagged.",
    "date": "2026-10-31",
@@ -29,6 +40,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Trump reflects on rallies in final midterm stops",
+   "b": "In South Carolina, Trump told supporters 'you'll never see it happen again' while boosting Senate picks Darline Graham and Michael Whatley.",
+   "date": "2026-11-01",
+   "publisher": "KUOW",
+   "title": "Trump thanks supporters for the memories in final campaign stops for 2026 midterms",
+   "url": "https://www.kuow.org/npr-news/2026-11-01/trump-thanks-supporters-for-the-memories-in-final-campaign-stops-for-2026-midterms",
+   "published": "2026-11-01T09:00:00Z",
+   "updated": "2026-11-01T11:06:00Z",
+   "gathered": "2026-11-01T11:12:29Z"
+  },
   {
    "h": "Paxton and Talarico trade attacks in Texas Senate race",
    "b": "Talarico cast Paxton, who beat Sen. John Cornyn in the GOP primary with Trump's help, as corrupt; Paxton painted Talarico as too liberal for Texas.",
@@ -71,6 +93,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Qatar LNG carrier struck by 'unidentified objects'",
+   "b": "QatarEnergy said the Al Mayeda was hit in the Gulf Friday evening; no crew were injured, no environmental damage was reported and the ship is in safe condition.",
+   "date": "2026-11-01",
+   "place": "Doha, Qatar",
+   "tz": "Asia/Qatar",
+   "publisher": "Al Jazeera",
+   "title": "Qatar LNG carrier struck by ‘unidentified objects’ in Gulf",
+   "url": "https://www.aljazeera.com/news/2026/11/1/qatar-lng-carrier-struck-by-unidentified-objects-in-gulf",
+   "gathered": "2026-11-01T11:12:29Z"
+  },
+  {
+   "h": "Yemeni forces seize positions in al-Jawf",
+   "b": "The army said its 1st Emergency Brigade seized Houthi weapons depots and destroyed armoured vehicles, as fighting deepens the crisis in besieged Taiz.",
+   "date": "2026-10-31",
+   "place": "al-Jawf, Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Yemeni government forces seize strategic positions in al-Jawf",
+   "url": "https://www.aljazeera.com/news/2026/11/1/yemeni-government-forces-seize-strategic-positions-in-al-jawf",
+   "gathered": "2026-11-01T11:12:29Z"
+  },
   {
    "h": "Rubio says US did not help Bolsonaro flee Brazil",
    "b": "Flavio Bolsonaro, under investigation in Brazil for alleged corruption and money laundering, arrived in Miami after the State Department said his family would get US visas.",
@@ -191,8 +235,6 @@
    "h": "FBI blames North Korea for $6.3bn Binance heist",
    "b": "The FBI attributed the theft to TraderTraitor, the group behind last year's $1.5bn Bybit hack, and urged crypto firms to block laundering transactions.",
    "date": "2026-10-31",
-   "publisher": "Al Jazeera",
-   "title": "FBI blames North Korea for record $6.3bn crypto heist from Binance",
    "url": "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist",
    "gathered": "2026-11-01T04:12:15Z"
   },
@@ -318,9 +360,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 46,
+   "temp": 45,
    "cond": "Fair",
-   "obs": "1 Nov 03:51 am EST"
+   "obs": "1 Nov 05:51 am EST"
   },
   "periods": [
    {

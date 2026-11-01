@@ -22,17 +22,17 @@
    "now": {
     "temp": 54,
     "cond": "Overcast",
-    "obs": "1 Nov 03:52 am EST"
+    "obs": "1 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 63,
      "text": "A 40 percent chance of showers.  Mostly cloudy, with a high near 63. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "A 20 percent chance of showers before 10pm.  Mostly cloudy, with a low around 54. East wind 10 to 15 mph, with gusts as high as 25 mph. "
@@ -53,7 +53,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 74,
-     "text": "Partly sunny, with a high near 74."
+     "text": "Partly sunny, with a high near 74. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,9 +88,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "Fair",
-    "obs": "1 Nov 03:54 am EST"
+    "temp": 40,
+    "cond": "A Few Clouds",
+    "obs": "1 Nov 05:54 am EST"
    },
    "periods": [
     {
@@ -143,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -156,17 +156,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 54,
     "cond": " Light Rain",
-    "obs": "1 Nov 02:53 am CST"
+    "obs": "1 Nov 04:53 am CST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 55,
-     "text": "A 50 percent chance of showers and thunderstorms.  Cloudy, with a low around 55. Southeast wind around 5 mph, with gusts as high as 10 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -196,6 +190,12 @@
      "kind": "high",
      "temp": 72,
      "text": "Rain likely, mainly after noon.  Cloudy, with a high near 72. Breezy.  Chance of precipitation is 60%."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Rain.  Low around 58. Chance of precipitation is 80%."
     }
    ]
   },
@@ -211,7 +211,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -226,19 +226,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Patchy fog.  Otherwise, mostly cloudy, with a low around 43. Calm wind. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Patchy fog before 11am.  Otherwise, mostly cloudy, with a high near 63. Calm wind becoming south southeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
+     "text": "Areas of fog before 9am.  Otherwise, mostly cloudy, with a high near 63. Calm wind becoming south southeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "A slight chance of showers before 11pm, then a slight chance of showers after 2am.  Cloudy, then gradually becoming partly cloudy, with a low around 46. West wind 3 to 5 mph.  Chance of precipitation is 20%."
@@ -259,7 +253,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60."
+     "text": "Sunny, with a high near 60. West wind around 6 mph becoming light and variable  in the afternoon. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35."
     }
    ]
   },
@@ -275,7 +275,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -309,12 +309,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Rain.  Low around 59. South southwest wind around 5 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
-    {
      "name": "Sunday",
      "kind": "high",
      "temp": 69,
@@ -343,6 +337,12 @@
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56."
     }
    ]
   },
@@ -358,7 +358,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -411,9 +411,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 45,
     "cond": "Fair",
-    "obs": "1 Nov 03:51 am EST"
+    "obs": "1 Nov 05:51 am EST"
    },
    "periods": [
     {
@@ -466,7 +466,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -542,7 +542,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "goodnews": []
  },
  {
@@ -555,12 +555,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43. Calm wind. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -590,6 +584,12 @@
      "kind": "high",
      "temp": 57,
      "text": "Mostly cloudy, with a high near 57."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Partly cloudy, with a low around 43."
     }
    ]
   },
@@ -605,7 +605,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T11:12:00Z",
+  "updatedAt": "2026-11-01T14:15:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
