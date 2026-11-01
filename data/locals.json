@@ -31,28 +31,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 62,
     "cond": "Overcast",
-    "obs": "1 Nov 11:52 am EST"
+    "obs": "1 Nov 14:52 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 63,
-     "text": "A 40 percent chance of showers.  Mostly cloudy, with a high near 63. East wind around 15 mph, with gusts as high as 25 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly cloudy, with a low around 54. East wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "A 30 percent chance of showers before 7pm.  Mostly cloudy, with a low around 54. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 73,
-     "text": "Partly sunny, with a high near 73. East wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 72,
+     "text": "Partly sunny, with a high near 72. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Monday Night",
@@ -63,14 +57,20 @@
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 74,
-     "text": "Partly sunny, with a high near 74. East wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 75,
+     "text": "Partly sunny, with a high near 75. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 61,
-     "text": "Mostly cloudy, with a low around 61."
+     "temp": 62,
+     "text": "Mostly cloudy, with a low around 62."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 73,
+     "text": "A chance of showers, then showers likely and possibly a thunderstorm after 1pm.  Cloudy, with a high near 73. Chance of precipitation is 70%."
     }
    ]
   },
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,17 +99,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "A Few Clouds",
-    "obs": "1 Nov 11:54 am EST"
+    "temp": 59,
+    "cond": "Fair",
+    "obs": "1 Nov 14:54 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. West wind 8 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -131,14 +125,20 @@
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 72,
-     "text": "Mostly sunny, with a high near 72. West wind 7 to 9 mph. "
+     "temp": 73,
+     "text": "Mostly sunny, with a high near 73. West wind 7 to 9 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 53,
      "text": "Partly cloudy, with a low around 53. Southwest wind around 8 mph. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Sunny, with a high near 73. Southwest wind around 9 mph. "
     }
    ]
   },
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -179,46 +179,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 61,
     "cond": "Overcast",
-    "obs": "1 Nov 10:53 am CST"
+    "obs": "1 Nov 13:53 pm CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 60,
-     "text": "Intermittent showers.  Cloudy, with a high near 60. East southeast wind around 5 mph.  Chance of precipitation is 30%."
+     "temp": 62,
+     "text": "Scattered showers, mainly between 4pm and 5pm.  Cloudy, with a high near 62. East southeast wind around 5 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 56,
-     "text": "Patchy drizzle.  Mostly cloudy, with a low around 56. South wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "temp": 57,
+     "text": "A chance of sprinkles before 9pm, then a slight chance of showers between 9pm and 3am, then patchy drizzle after 3am.  Mostly cloudy, with a low around 57. South wind 5 to 10 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 65,
-     "text": "A 30 percent chance of showers, mainly before 2pm.  Mostly cloudy, with a high near 65. South southeast wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "temp": 62,
+     "text": "Patchy drizzle before 9am, then a chance of showers after 9am.  Cloudy, with a high near 62. South wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 60,
-     "text": "A 20 percent chance of showers.  Cloudy, with a low around 60. South wind around 15 mph, with gusts as high as 25 mph. "
+     "text": "A chance of showers before 8pm, then a slight chance of showers after midnight.  Cloudy, with a low around 60. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 72,
-     "text": "Rain likely, mainly after noon.  Cloudy, with a high near 72. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 60%."
+     "text": "A 40 percent chance of showers, mainly after noon.  Mostly cloudy, with a high near 72. Breezy, with a south wind around 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Rain.  Low around 58. Chance of precipitation is 80%."
+     "temp": 59,
+     "text": "Showers.  Low around 59. Breezy.  Chance of precipitation is 90%."
     }
    ]
   },
@@ -234,7 +234,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -249,40 +249,40 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly cloudy, with a high near 63. South southeast wind 3 to 7 mph. Winds could gust as high as 15 mph. "
+     "text": "A 30 percent chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 63. East wind around 7 mph becoming north. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "A slight chance of showers before 11pm, then a slight chance of showers after 2am.  Cloudy, then gradually becoming partly cloudy, with a low around 46. West wind 3 to 5 mph.  Chance of precipitation is 20%."
+     "text": "A chance of rain before 11pm, then a chance of rain after 2am.  Cloudy, then gradually becoming partly cloudy, with a low around 46. Light and variable wind.  Chance of precipitation is 30%."
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 56,
-     "text": "A 50 percent chance of showers, mainly after 8am.  Mostly cloudy, with a high near 56. Breezy, with a north northwest wind 5 to 10 mph increasing to 11 to 16 mph in the afternoon. Winds could gust as high as 30 mph. "
+     "temp": 54,
+     "text": "Rain likely, mainly between 8am and 2pm.  Mostly cloudy, with a high near 54. Light and variable wind becoming north 8 to 13 mph in the morning. Winds could gust as high as 22 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 50 percent chance of showers before 11pm.  Mostly cloudy, with a low around 41. North northwest wind 9 to 14 mph becoming light  after midnight. Winds could gust as high as 24 mph. "
+     "text": "A 30 percent chance of rain, mainly before 11pm.  Cloudy, with a low around 41. North wind 5 to 8 mph becoming calm  after midnight. Winds could gust as high as 18 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. West wind around 6 mph becoming light and variable  in the afternoon. "
+     "temp": 58,
+     "text": "Sunny, with a high near 58. Light and variable wind becoming west southwest around 5 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Mostly clear, with a low around 35."
+     "temp": 36,
+     "text": "Mostly clear, with a low around 36."
     }
    ]
   },
@@ -298,7 +298,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -317,7 +317,7 @@
     "title": "Over 40% of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, UCLA finds",
     "url": "https://laist.com/news/politics/over-40-of-names-on-doj-list-of-alleged-noncitizens-are-not-on-calif-voter-rolls-ucla-finds",
     "published": "2026-11-01T14:59:36Z",
-    "updated": "2026-11-01T15:01:32Z",
+    "updated": "2026-11-01T17:38:55Z",
     "gathered": "2026-11-01T16:15:20Z"
    },
    {
@@ -328,7 +328,7 @@
     "title": "Long Beach coastal waters remain closed after 29,000-gallon sewage spill",
     "url": "https://laist.com/news/29-000-gallons-of-sewage-spill-in-belmont-shore-forcing-city-to-close-coastal-waters",
     "published": "2026-10-31T20:34:45Z",
-    "updated": "2026-11-01T16:39:24Z",
+    "updated": "2026-11-01T17:23:35Z",
     "gathered": "2026-10-31T22:42:30Z"
    },
    {
@@ -343,22 +343,22 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
-     "text": "Rain likely, mainly before 10am.  Cloudy early, then gradual clearing, with a high near 69. Light west wind becoming west southwest 5 to 10 mph in the morning.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A 20 percent chance of rain.  Mostly sunny, with a high near 69. West southwest wind 10 to 15 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55. West northwest wind around 5 mph becoming north northeast after midnight. "
+     "text": "Mostly clear, with a low around 55. Northwest wind around 5 mph becoming north northeast after midnight. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. North northwest wind around 5 mph becoming south in the morning. "
+     "text": "Mostly sunny, with a high near 75. North northwest wind around 5 mph becoming south in the morning. "
     },
     {
      "name": "Monday Night",
@@ -370,13 +370,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. Calm wind becoming southwest around 5 mph in the morning. "
+     "text": "Mostly sunny, with a high near 76. Calm wind becoming southwest around 5 mph in the morning. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 56,
-     "text": "Mostly clear, with a low around 56."
+     "temp": 55,
+     "text": "Mostly clear, with a low around 55."
     }
    ]
   },
@@ -392,7 +392,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -431,7 +431,7 @@
     "b": "Runners set off from Staten Island Sunday morning in the high 40s as crowds cheered in Bay Ridge near the Verrazzano-Narrows Bridge.",
     "date": "2026-11-01",
     "publisher": "Gothamist",
-    "title": "Runners, and throngs of spectators, kick off the five-borough New York City Marathon",
+    "title": "A 'beautiful' day for a marathon, as runners, spectators pack NYC streets",
     "url": "https://gothamist.com/news/runners-and-throngs-of-spectators-kick-off-the-five-borough-new-york-city-marathon",
     "published": "2026-11-01T14:41:00Z",
     "gathered": "2026-11-01T16:15:20Z"
@@ -470,46 +470,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 57,
     "cond": "Fair",
-    "obs": "1 Nov 11:51 am EST"
+    "obs": "1 Nov 15:51 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 60,
-     "text": "Mostly sunny, with a high near 60. Southwest wind 6 to 8 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 49,
-     "text": "Mostly clear, with a low around 49. Southwest wind around 9 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. Southwest wind around 9 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Southwest wind 6 to 9 mph. "
+     "text": "Mostly sunny, with a high near 66. Southwest wind 8 to 11 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Partly cloudy, with a low around 52. Southwest wind 5 to 7 mph. "
+     "temp": 56,
+     "text": "Partly cloudy, with a low around 56. Southwest wind around 9 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny, with a high near 68. Southwest wind 5 to 8 mph. "
+     "temp": 67,
+     "text": "Mostly sunny, with a high near 67. Southwest wind 7 to 9 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 56,
-     "text": "Partly cloudy, with a low around 56."
+     "temp": 57,
+     "text": "Partly cloudy, with a low around 57. South wind 5 to 9 mph. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 69,
+     "text": "Mostly sunny, with a high near 69."
     }
    ]
   },
@@ -525,9 +525,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Clinton Hill throws its 'mile nine' marathon party",
+    "b": "Thousands of revelers packed Brooklyn's brownstone-lined streets near mile nine to cheer on runners.",
+    "date": "2026-11-01",
+    "publisher": "Gothamist",
+    "title": "'The best day of the year': Inside Clinton Hill's 'mile nine' NYC marathon party",
+    "url": "https://gothamist.com/news/the-best-day-of-the-year-inside-clinton-hills-mile-nine-nyc-marathon-party",
+    "published": "2026-11-01T20:50:32Z",
+    "gathered": "2026-11-01T20:42:52Z"
+   },
    {
     "h": "November brings three meteor showers",
     "b": "The Southern Taurids peak Nov. 4-5 with about five bright, slow meteors per hour, and Saturn and Jupiter are good viewing this month.",
@@ -546,16 +556,6 @@
     "title": "How formerly homeless New Yorkers are helping others get off the streets",
     "url": "https://gothamist.com/news/how-formerly-homeless-new-yorkers-are-helping-others-get-off-the-streets",
     "published": "2026-10-31T14:00:44Z",
-    "gathered": "2026-10-31T15:27:44Z"
-   },
-   {
-    "h": "Hate crime survivor reclaims his marathon dream",
-    "b": "A year after an attack cost him his first marathon, Daniel Cho will join more than 18,000 first-timers at this year's NYC Marathon.",
-    "date": "2026-10-31",
-    "publisher": "Gothamist",
-    "title": "A violent hate crime claimed one NYC man's marathon dream. A year later, he's taking it back.",
-    "url": "https://gothamist.com/news/a-violent-hate-crime-claimed-nyc-mans-marathon-dream-a-year-later-hes-taking-it-back",
-    "published": "2026-10-31T16:49:00Z",
     "gathered": "2026-10-31T15:27:44Z"
    }
   ]
@@ -632,7 +632,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "goodnews": []
  },
  {
@@ -658,10 +658,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 53,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 53. Calm wind. "
+     "text": "Mostly sunny, with a high near 53. Calm wind. "
     },
     {
      "name": "Tonight",
@@ -678,20 +678,20 @@
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Cloudy, with a low around 46. Calm wind. "
+     "temp": 47,
+     "text": "Cloudy, with a low around 47. Light north wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly cloudy, with a high near 57. Light north wind. "
+     "text": "Partly sunny, with a high near 57. North wind 3 to 5 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43."
+     "temp": 44,
+     "text": "Partly cloudy, with a low around 44."
     }
    ]
   },
@@ -707,7 +707,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T20:11:00Z",
+  "updatedAt": "2026-11-01T23:14:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
