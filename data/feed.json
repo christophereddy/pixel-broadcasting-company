@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-01T17:13:00Z",
+ "updatedAt": "2026-11-01T20:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Iran says ready for all scenarios as talks go on",
+   "b": "\"We are prepared for all scenarios,\" Foreign Minister Abbas Araghchi said, as Trump called the talks \"fine\" but said Iranian authorities were not \"reliable\".",
+   "date": "2026-11-01",
+   "publisher": "Al Jazeera",
+   "title": "Iran and US explore diplomacy amid rising threats of war",
+   "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+   "gathered": "2026-11-01T17:14:03Z"
+  },
   {
    "h": "Israeli drone strike kills five Gaza police",
    "b": "An Israeli drone attack killed five Palestinian police officers in al-Mawasi, west of Khan Younis, on Sunday; at least eight Palestinians were killed across Gaza.",
@@ -40,7 +49,11 @@
    "h": "Supreme Court weighs religious schools in Colorado pre-K",
    "b": "At issue is whether religious schools in the state's universal pre-K program may refuse children of gay and trans parents despite a state anti-discrimination law.",
    "date": "2026-11-01",
+   "publisher": "KUOW",
+   "title": "Supreme Court hears religious freedom case centered on universal pre-K program",
    "url": "https://www.kuow.org/npr-news/2026-11-01/supreme-court-hears-religious-freedom-case-centered-on-universal-pre-k-program",
+   "published": "2026-11-01T09:00:00Z",
+   "updated": "2026-11-01T11:05:38Z",
    "gathered": "2026-11-01T11:12:29Z"
   },
   {
@@ -55,6 +68,16 @@
   }
  ],
  "politics": [
+  {
+   "h": "Sullivan says Peltola 'still lying' on ballot",
+   "b": "Two days before Election Day, Sullivan said Peltola lied about her campaign's role in a second Sullivan appearing on the Alaska Senate ballot.",
+   "date": "2026-11-01",
+   "publisher": "PBS NewsHour",
+   "title": "Sullivan claims Peltola is 'still lying' about campaign's involvement in Alaska ballot controversy",
+   "url": "https://www.pbs.org/newshour/politics/sullivan-claims-peltola-is-still-lying-about-campaigns-involvement-in-alaska-ballot-controversy",
+   "published": "2026-11-01T16:40:55Z",
+   "gathered": "2026-11-01T17:14:03Z"
+  },
   {
    "h": "Trump reflects on rallies in final midterm stops",
    "b": "In South Carolina, Trump told supporters 'you'll never see it happen again' while boosting Senate picks Darline Graham and Michael Whatley.",
@@ -100,10 +123,7 @@
    "h": "Virginia and D.C. sue over Trump's arch",
    "b": "There are now three lawsuits seeking to halt the planned 250-foot monument near the bridge to Arlington National Cemetery; Judge Tanya Chutkan is weighing an order to pause it.",
    "date": "2026-10-31",
-   "publisher": "PBS NewsHour",
-   "title": "Virginia and D.C. sue over Trump's arch, adding to legal challenges as government wants work to begin",
    "url": "https://www.pbs.org/newshour/politics/virginia-and-d-c-sue-over-trumps-arch-adding-to-legal-challenges-as-government-wants-work-to-begin",
-   "published": "2026-10-31T19:29:25Z",
    "gathered": "2026-10-31T19:27:51Z"
   }
  ],
@@ -325,6 +345,8 @@
    "h": "Colts in Jonathan Taylor trade talks",
    "b": "Indianapolis (2-5), which already dealt Quenton Nelson and DeForest Buckner this week, has received at least one offer including a second-round pick, per ESPN. Taylor says he hasn't requested a trade.",
    "date": "2026-10-31",
+   "publisher": "CBS Sports",
+   "title": "Colts actively engaged in Jonathan Taylor trade talks: Five teams reportedly interested in star running back",
    "url": "https://www.cbssports.com/nfl/news/colts-engaged-jonathan-taylor-trade-talks-five-teams-interested/",
    "gathered": "2026-10-31T16:15:57Z"
   },
@@ -411,16 +433,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
+   "temp": 55,
    "cond": "Fair",
-   "obs": "1 Nov 10:51 am EST"
+   "obs": "1 Nov 11:51 am EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 60,
-    "text": "Mostly sunny, with a high near 60. West wind 5 to 8 mph becoming southwest in the afternoon. "
+    "text": "Mostly sunny, with a high near 60. Southwest wind 6 to 8 mph. "
    },
    {
     "name": "Tonight",
