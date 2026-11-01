@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T14:15:00Z",
+ "updatedAt": "2026-11-01T17:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,25 +7,40 @@
  },
  "world": [
   {
-   "h": "Iran vows 'no limitations' if war resumes",
-   "b": "Iran vowed 'no limitations' if the US and Israel return to war. Al Jazeera is following the Iran war live.",
+   "h": "Israeli drone strike kills five Gaza police",
+   "b": "An Israeli drone attack killed five Palestinian police officers in al-Mawasi, west of Khan Younis, on Sunday; at least eight Palestinians were killed across Gaza.",
    "date": "2026-11-01",
    "publisher": "Al Jazeera",
-   "title": "Iran vows ‘no limitations’ if US and Israel return to war",
+   "title": "At least eight Palestinians killed in Israeli attacks across Gaza",
+   "url": "https://www.aljazeera.com/news/2026/11/1/at-least-eight-palestinians-killed-in-israeli-attacks-across-gaza",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
+   "h": "Iran awaits US response on Hormuz plan",
+   "b": "Tehran says it is waiting for a US response to its latest proposal to reopen the Strait of Hormuz. Al Jazeera is following the Iran war live.",
+   "date": "2026-11-01",
+   "publisher": "Al Jazeera",
+   "title": "Iran says waiting for US response to latest plan to reopen Hormuz Strait",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz",
    "gathered": "2026-11-01T02:27:33Z"
   }
  ],
  "national": [
   {
+   "h": "ICE officer to surrender in Houston car strike",
+   "b": "Indicted on an aggravated assault charge, the officer plans to turn himself in Monday, his attorney said. The man he hit with his SUV on Oct. 10 broke his leg.",
+   "date": "2026-11-01",
+   "publisher": "PBS NewsHour",
+   "title": "ICE agent charged with assault for hitting fleeing man with car in Houston will turn himself in, attorney says",
+   "url": "https://www.pbs.org/newshour/nation/ice-agent-charged-with-assault-for-hitting-fleeing-man-with-car-in-houston-will-turn-himself-in-attorney-says",
+   "published": "2026-11-01T16:01:18Z",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
    "h": "Supreme Court weighs religious schools in Colorado pre-K",
    "b": "At issue is whether religious schools in the state's universal pre-K program may refuse children of gay and trans parents despite a state anti-discrimination law.",
    "date": "2026-11-01",
-   "publisher": "KUOW",
-   "title": "Supreme Court hears religious freedom case centered on universal pre-K program",
    "url": "https://www.kuow.org/npr-news/2026-11-01/supreme-court-hears-religious-freedom-case-centered-on-universal-pre-k-program",
-   "published": "2026-11-01T09:00:00Z",
-   "updated": "2026-11-01T11:05:38Z",
    "gathered": "2026-11-01T11:12:29Z"
   },
   {
@@ -94,13 +109,33 @@
  ],
  "international": [
   {
+   "h": "Israel faces weeks of coalition wrangling",
+   "b": "Neither the bloc around Netanyahu nor the Jewish parties opposing him won a majority in the 120-seat Knesset, leaving no clear path to a new government.",
+   "date": "2026-11-01",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Israel election: When will government be formed, who will lead it?",
+   "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
+   "h": "Thousands in Delhi demand election chief resign",
+   "b": "Rahul Gandhi led Sunday's protest over voter list revisions that opposition parties say favour Prime Minister Narendra Modi's ruling party.",
+   "date": "2026-11-01",
+   "place": "New Delhi, India",
+   "tz": "Asia/Kolkata",
+   "publisher": "Al Jazeera",
+   "title": "Thousands rally in New Delhi to demand India’s election chief resign",
+   "url": "https://www.aljazeera.com/news/2026/11/1/thousands-rally-in-delhi-demanding-indias-election-chief-resign",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
    "h": "Qatar LNG carrier struck by 'unidentified objects'",
    "b": "The Qatari owner said its Al Mayeda was hit in the Gulf Friday evening; no crew were injured, no environmental damage was reported and the ship is in safe condition.",
    "date": "2026-11-01",
    "place": "Doha, Qatar",
    "tz": "Asia/Qatar",
-   "publisher": "Al Jazeera",
-   "title": "Qatar LNG carrier struck by ‘unidentified objects’ in Gulf",
    "url": "https://www.aljazeera.com/news/2026/11/1/qatar-lng-carrier-struck-by-unidentified-objects-in-gulf",
    "gathered": "2026-11-01T11:12:29Z"
   },
@@ -110,8 +145,6 @@
    "date": "2026-10-31",
    "place": "al-Jawf, Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Yemeni government forces seize strategic positions in al-Jawf",
    "url": "https://www.aljazeera.com/news/2026/11/1/yemeni-government-forces-seize-strategic-positions-in-al-jawf",
    "gathered": "2026-11-01T11:12:29Z"
   },
@@ -121,8 +154,6 @@
    "date": "2026-11-01",
    "place": "Brasilia, Brazil",
    "tz": "America/Sao_Paulo",
-   "publisher": "Al Jazeera",
-   "title": "Rubio says Trump administration did not help Bolsonaro flee Brazil to US",
    "url": "https://www.aljazeera.com/news/2026/11/1/flavio",
    "gathered": "2026-11-01T09:31:47Z"
   },
@@ -132,8 +163,6 @@
    "date": "2026-11-01",
    "place": "Dhaka, Bangladesh",
    "tz": "Asia/Dhaka",
-   "publisher": "Al Jazeera",
-   "title": "Bangladesh forms wage board as garment workers protest",
    "url": "https://www.aljazeera.com/news/2026/11/1/bangladesh-forms-wage-board-amid-garment-worker-protests",
    "gathered": "2026-11-01T09:31:47Z"
   },
@@ -143,8 +172,6 @@
    "date": "2026-10-31",
    "place": "Tel Aviv, Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Thousands rally in Israel urging ‘Jewish-Arab’ coalition to oust Netanyahu",
    "url": "https://www.aljazeera.com/news/2026/11/1/thousands-rally-in-israel-urging-eisenkot-arab-deal-to-remove-netanyahu",
    "gathered": "2026-11-01T04:12:15Z"
   },
@@ -249,11 +276,27 @@
  "science": [],
  "sports": [
   {
+   "h": "Texas gets a B, Ole Miss an A- in Week 9 grades",
+   "b": "No. 3 Georgia, No. 11 Texas and No. 12 Ole Miss cruised, while No. 1 Miami and No. 4 Indiana squeaked out close wins over unranked foes.",
+   "date": "2026-11-01",
+   "publisher": "CBS Sports",
+   "title": "College football grades: Texas earns 'B' mark for win, Ole Miss gets 'A-' on Week 9 report card",
+   "url": "https://www.cbssports.com/college-football/news/college-football-grades-texas-earns-b-mark-for-win-ole-miss-gets-a-on-week-9-report-card/",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
+   "h": "Bowl projections reshuffled after wild Week 9",
+   "b": "USC's upset of Ohio State, Miami's escape at North Carolina and Georgia's rout of Florida reshape projections ahead of Tuesday's first CFP Rankings.",
+   "date": "2026-11-01",
+   "publisher": "CBS Sports",
+   "title": "Bowl projections: Projecting all 47 games as parity reigns ahead of first CFP Rankings release",
+   "url": "https://www.cbssports.com/college-football/news/college-football-bowl-projections-all-47-games-week-10/",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
    "h": "Valkyries win WNBA title as Williams stars in Game 7",
    "b": "Finals MVP Gabby Williams scored 30 points, 28 in the second half, with four blocks to lead Golden State to the championship.",
    "date": "2026-10-31",
-   "publisher": "CBS Sports",
-   "title": "'I stayed patient': How Finals MVP Gabby Williams made history in Game 7 to fuel Valkyries to WNBA title",
    "url": "https://www.cbssports.com/wnba/news/gabby-williams-finals-mvp-game-7-valkyries/",
    "gathered": "2026-11-01T09:31:47Z"
   },
@@ -268,8 +311,6 @@
    "h": "Upsets shake college football's Week 9",
    "b": "Five AP Top 25 teams fell in the first two windows, three to unranked foes. No. 3 Georgia routed Florida, while No. 25 Wisconsin's season slid to a halt.",
    "date": "2026-10-31",
-   "publisher": "CBS Sports",
-   "title": "College football winners, losers: Oregon's Dylan Raiola bounces back, Wisconsin falls flat",
    "url": "https://www.cbssports.com/college-football/news/college-football-winners-losers-oregons-dylan-raiola-wisconsin/",
    "gathered": "2026-11-01T02:27:33Z"
   },
@@ -327,6 +368,16 @@
  ],
  "local": [
   {
+   "h": "NYC Marathon kicks off under brisk skies",
+   "b": "Runners set off from Staten Island Sunday morning in the high 40s as crowds cheered in Bay Ridge near the Verrazzano-Narrows Bridge.",
+   "date": "2026-11-01",
+   "publisher": "Gothamist",
+   "title": "Runners, and throngs of spectators, kick off the five-borough New York City Marathon",
+   "url": "https://gothamist.com/news/runners-and-throngs-of-spectators-kick-off-the-five-borough-new-york-city-marathon",
+   "published": "2026-11-01T14:41:00Z",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
    "h": "Visa granted for mom of slain Bronx teen, Mamdani says",
    "b": "Mayor Mamdani said Trump agreed to immediately grant a visa to the mother of Javits Frimpong, 15, who was shot and killed on his way to school.",
    "date": "2026-10-31",
@@ -360,22 +411,22 @@
  ],
  "weather": {
   "now": {
-   "temp": 45,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "1 Nov 05:51 am EST"
+   "obs": "1 Nov 10:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
-    "temp": 61,
-    "text": "Mostly sunny, with a high near 61. Calm wind becoming southwest around 6 mph in the afternoon. "
+    "temp": 60,
+    "text": "Mostly sunny, with a high near 60. West wind 5 to 8 mph becoming southwest in the afternoon. "
    },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 49,
-    "text": "Mostly clear, with a low around 49. Southwest wind 5 to 7 mph. "
+    "text": "Mostly clear, with a low around 49. Southwest wind around 9 mph. "
    },
    {
     "name": "Monday",
@@ -405,6 +456,16 @@
  },
  "localgood": [
   {
+   "h": "November brings three meteor showers",
+   "b": "The Southern Taurids peak Nov. 4-5 with about five bright, slow meteors per hour, and Saturn and Jupiter are good viewing this month.",
+   "date": "2026-11-01",
+   "publisher": "Gothamist",
+   "title": "November has 3 meteor showers and the best chance to see Uranus",
+   "url": "https://gothamist.com/news/november-has-3-meteor-showers-and-the-best-chance-to-see-uranus",
+   "published": "2026-11-01T15:00:56Z",
+   "gathered": "2026-11-01T16:15:20Z"
+  },
+  {
    "h": "Formerly homeless New Yorkers lead outreach",
    "b": "Outreach worker Felipe Ramos, who cycled through homelessness himself, says his past is his superpower in getting people off Manhattan's streets.",
    "date": "2026-10-31",
@@ -421,8 +482,7 @@
    "publisher": "Gothamist",
    "title": "A violent hate crime claimed one NYC man's marathon dream. A year later, he's taking it back.",
    "url": "https://gothamist.com/news/a-violent-hate-crime-claimed-nyc-mans-marathon-dream-a-year-later-hes-taking-it-back",
-   "published": "2026-10-31T12:00:00Z",
-   "updated": "2026-10-31T16:49:00Z",
+   "published": "2026-10-31T16:49:00Z",
    "gathered": "2026-10-31T15:27:44Z"
   }
  ],
