@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01T04:12:00Z",
+ "updatedAt": "2026-11-01T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,11 @@
  },
  "world": [
   {
-   "h": "Araghchi: talks under way on 2-day Hormuz plan",
-   "b": "Iran's foreign minister says talks are under way on a two-day plan to reopen the Strait of Hormuz. Al Jazeera is following the Iran war live.",
+   "h": "Iran weighs Hormuz plan as Trump says talks 'going fine'",
+   "b": "Iran is weighing a two-day plan to reopen the Strait of Hormuz as Trump says talks are going fine. Al Jazeera is following the Iran war live.",
    "date": "2026-11-01",
    "publisher": "Al Jazeera",
-   "title": "Iran says talks under way on two-day plan to reopen Strait of Hormuz",
+   "title": "Iran mulls 2-day plan for Hormuz reopening as Trump says talks ‘going fine’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz",
    "gathered": "2026-11-01T02:27:33Z"
   }
@@ -71,6 +71,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Israelis rally for Jewish-Arab coalition to oust Netanyahu",
+   "b": "Thousands urged opposition leader Gadi Eisenkot, who has ruled out a coalition with Arab parties, to make a deal after Tuesday's deadlocked election.",
+   "date": "2026-10-31",
+   "place": "Tel Aviv, Israel",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Thousands rally in Israel urging ‘Jewish-Arab’ coalition to oust Netanyahu",
+   "url": "https://www.aljazeera.com/news/2026/11/1/thousands-rally-in-israel-urging-eisenkot-arab-deal-to-remove-netanyahu",
+   "gathered": "2026-11-01T04:12:15Z"
+  },
+  {
+   "h": "Polish president holds crisis talks in court standoff",
+   "b": "President Karol Nawrocki convened urgent consultations citing a threat to internal security; Prime Minister Tusk's Civic Coalition stayed away.",
+   "date": "2026-10-31",
+   "place": "Warsaw, Poland",
+   "tz": "Europe/Warsaw",
+   "publisher": "Al Jazeera",
+   "title": "Polish president holds crisis talks in court standoff",
+   "url": "https://www.aljazeera.com/news/2026/11/1/polish-president-holds-crisis-talks-in-court-standoff",
+   "gathered": "2026-11-01T04:12:15Z"
+  },
   {
    "h": "Erdogan urges halt to Black Sea attacks",
    "b": "At a news conference with Zelenskyy in Istanbul, Erdogan said attacks on civilian vessels were unacceptable whoever carries them out.",
@@ -148,6 +170,15 @@
  ],
  "business": [
   {
+   "h": "FBI blames North Korea for $6.3bn Binance heist",
+   "b": "The FBI attributed the theft to TraderTraitor, the group behind last year's $1.5bn Bybit hack, and urged crypto firms to block laundering transactions.",
+   "date": "2026-10-31",
+   "publisher": "Al Jazeera",
+   "title": "FBI blames North Korea for record $6.3bn crypto heist from Binance",
+   "url": "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist",
+   "gathered": "2026-11-01T04:12:15Z"
+  },
+  {
    "h": "Oil giants' earnings soar again on Iran war",
    "b": "ExxonMobil earned $15.4 billion, Shell $10.8 billion and Chevron $9.9 billion as the war disrupted supply; Brent crude trades near $113 a barrel, up from about $70.",
    "date": "2026-10-31",
@@ -157,6 +188,15 @@
  ],
  "science": [],
  "sports": [
+  {
+   "h": "USC upsets No. 2 Ohio State 30-18",
+   "b": "The win puts Lincoln Riley's Trojans back in the College Football Playoff discussion, with games against Indiana and unbeaten UCLA still ahead.",
+   "date": "2026-10-31",
+   "publisher": "CBS Sports",
+   "title": "Lincoln Riley flips script on hot-seat chatter as USC's upset over Ohio State puts Trojans back in CFP picture",
+   "url": "https://www.cbssports.com/college-football/news/lincoln-riley-cools-hot-seat-usc-upsets-ohio-state-college-football-playoff-contender/",
+   "gathered": "2026-11-01T04:12:15Z"
+  },
   {
    "h": "Upsets shake college football's Week 9",
    "b": "Five AP Top 25 teams fell in the first two windows, three to unranked foes. No. 3 Georgia routed Florida, while No. 25 Wisconsin's season slid to a halt.",
@@ -257,16 +297,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 49,
    "cond": "Fair",
-   "obs": "31 Oct 21:51 pm EDT"
+   "obs": "31 Oct 22:51 pm EDT"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 47,
-    "text": "Partly cloudy, with a low around 47. North wind around 9 mph. "
+    "text": "Partly cloudy, with a low around 47. North wind around 8 mph. "
    },
    {
     "name": "Sunday",
