@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T14:14:00Z",
+ "updatedAt": "2026-11-02T17:45:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -30,11 +30,11 @@
    "gathered": "2026-11-01T16:15:20Z"
   },
   {
-   "h": "Iran says 'ball in US court' on Hormuz deal",
-   "b": "Iran says a deal is on the table and the 'ball is in the US court'. Al Jazeera is following the Iran war live.",
+   "h": "Tanker ablaze as fears of US-Iran escalation grow",
+   "b": "A tanker is on fire as fear of a wider US-Iran escalation grips the Middle East. Al Jazeera is following the Iran war live.",
    "date": "2026-11-02",
    "publisher": "Al Jazeera",
-   "title": "‘Ball in US court’ with deal on the table, says Iran",
+   "title": "Tanker ablaze as fear over US-Iran escalation grips the Middle East",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
    "gathered": "2026-11-02T00:58:11Z"
   }
@@ -99,6 +99,17 @@
  ],
  "politics": [
   {
+   "h": "Five ways voting could be disrupted Tuesday",
+   "b": "Experts are watching how the Trump administration's push for more federal control over elections, from voter rolls to mail voting, plays out.",
+   "date": "2026-11-02",
+   "publisher": "ProPublica",
+   "title": "“Chaos” in the Air: Five Ways Voting Could Be Disrupted on Election Day",
+   "url": "https://www.propublica.org/article/five-voting-disruptions-midterm-election",
+   "published": "2026-11-02T11:00:00Z",
+   "updated": "2026-11-02T11:00:13Z",
+   "gathered": "2026-11-02T14:15:09Z"
+  },
+  {
    "h": "Six things to watch on election night",
    "b": "Indiana and Kentucky report in the 6 p.m. ET hour as early bellwethers, with many Florida House results in the 7 p.m. hour.",
    "date": "2026-11-02",
@@ -160,13 +171,33 @@
  ],
  "international": [
   {
+   "h": "Suspected cyberattacks overheat supermarket fridges",
+   "b": "Overnight temperature spikes hit stores in Belgium, Estonia, Ireland, Luxembourg and Sweden, with authorities pointing to alleged cyberattacks.",
+   "date": "2026-11-02",
+   "place": "Stockholm, Sweden",
+   "tz": "Europe/Stockholm",
+   "publisher": "Al Jazeera",
+   "title": "Suspected cyberattacks trigger supermarket fridge failures across Europe",
+   "url": "https://www.aljazeera.com/news/2026/11/2/freezers-in-sweden-belgium-overheat-following-possible-cyberattacks",
+   "gathered": "2026-11-02T14:15:09Z"
+  },
+  {
+   "h": "Jordan's king vows to confront 'terrorists'",
+   "b": "Opening parliament, King Abdullah said the Karak church attack, which killed nine about two weeks ago, tested the state's resilience.",
+   "date": "2026-11-02",
+   "place": "Amman, Jordan",
+   "tz": "Asia/Amman",
+   "publisher": "Al Jazeera",
+   "title": "Jordan’s King Abdullah promises to confront ‘terrorists’ after Karak attack",
+   "url": "https://www.aljazeera.com/news/2026/11/2/jordans-king-abdullah-promises-to-confront-terrorists-after-karak-attack",
+   "gathered": "2026-11-02T14:15:09Z"
+  },
+  {
    "h": "Sudan complains to UN over drones from Ethiopia",
    "b": "Sudan accuses the RSF of using Ethiopian territory to launch drone attacks on civilian sites and power stations, causing hundreds of casualties.",
    "date": "2026-11-02",
    "place": "Port Sudan, Sudan",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Sudan files complaints against Ethiopia with UN over deadly drone spree",
    "url": "https://www.aljazeera.com/news/2026/11/2/sudan-files-complaints-against-ethiopia-with-un-over-deadly-drone-spree",
    "gathered": "2026-11-02T11:13:51Z"
   },
@@ -176,8 +207,6 @@
    "date": "2026-11-02",
    "place": "Ankara, Turkiye",
    "tz": "Europe/Istanbul",
-   "publisher": "Al Jazeera",
-   "title": "Jailed PKK founder Ocalan moved to new section of Turkish island prison",
    "url": "https://www.aljazeera.com/news/2026/11/2/jailed-pkk-founder-ocalan-moved-to-new-section-of-turkish-island-prison",
    "gathered": "2026-11-02T11:13:51Z"
   },
@@ -216,8 +245,6 @@
    "date": "2026-11-02",
    "place": "Jerusalem",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Israeli officials say results stand as Netanyahu claims election ‘stolen’",
    "url": "https://www.aljazeera.com/news/2026/11/2/israeli-officials-say-results-stand-as-netanyahu-claims-election-stolen",
    "gathered": "2026-11-02T00:58:11Z"
   },
@@ -299,6 +326,17 @@
  ],
  "business": [
   {
+   "h": "Ryanair to raise fares as fuel bill soars",
+   "b": "The airline expects its fuel bill to rise by 2 billion euros next year and plans double-digit fare hikes and cost cuts; quarterly profit fell 6%.",
+   "date": "2026-11-02",
+   "publisher": "The Local France",
+   "title": "Ryanair to hit passengers in Europe with 'double-digit' hikes in air fares",
+   "url": "https://www.thelocal.fr/20261102/ryanair-to-hit-passengers-in-europe-with-double-digit-hikes-in-air-fares",
+   "published": "2026-11-02T12:35:49Z",
+   "updated": "2026-11-02T12:35:52Z",
+   "gathered": "2026-11-02T14:15:09Z"
+  },
+  {
    "h": "Bangladesh garment protests hit third day",
    "b": "About 500 factories temporarily shut after worker protests over low pay and living costs began Saturday in Dhaka-area industrial hubs.",
    "date": "2026-11-02",
@@ -308,7 +346,17 @@
    "gathered": "2026-11-02T07:59:16Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "Mathematician calls AI breakthroughs a gift",
+   "b": "After OpenAI said its models solved a Millennium Prize problem, Rutgers professor Alex Kontorovich says the shake-up is good for math.",
+   "date": "2026-11-02",
+   "publisher": "Marketplace",
+   "title": "What it means when AI helps solve complex math problems",
+   "url": "https://www.marketplace.org/episode/2026/11/02/what-it-means-when-ai-helps-solve-complex-math-problems",
+   "gathered": "2026-11-02T14:15:09Z"
+  }
+ ],
  "sports": [
   {
    "h": "Reid sticks with Butker after costly miss",
@@ -466,16 +514,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
+   "temp": 57,
    "cond": "Fair",
-   "obs": "2 Nov 05:51 am EST"
+   "obs": "2 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 65,
-    "text": "Mostly sunny, with a high near 65. Southwest wind 6 to 9 mph. "
+    "text": "Mostly sunny, with a high near 65. Southwest wind 7 to 9 mph. "
    },
    {
     "name": "Tonight",
@@ -510,6 +558,16 @@
   ]
  },
  "localgood": [
+  {
+   "h": "SoHo basketball court set to return",
+   "b": "The Grand Canal Court, torn up in 2022 for an MTA substation, will reopen at month's end with new benches, lighting and a water fountain.",
+   "date": "2026-11-02",
+   "publisher": "Gothamist",
+   "title": "Buzzer beater? MTA vows to turn this SoHo pit into a basketball court in 30 days.",
+   "url": "https://gothamist.com/news/buzzer-beater-mta-vows-to-turn-this-soho-pit-into-a-basketball-court-in-30-days",
+   "published": "2026-11-02T11:30:46Z",
+   "gathered": "2026-11-02T14:15:09Z"
+  },
   {
    "h": "Clinton Hill throws its 'mile nine' marathon party",
    "b": "Thousands of revelers packed Brooklyn's brownstone-lined streets near mile nine to cheer on runners.",
