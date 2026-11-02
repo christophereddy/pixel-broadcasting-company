@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-02T05:12:00Z",
+ "updatedAt": "2026-11-02T08:24:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Israeli forces leave Hebron after 10-day siege",
+   "b": "Governor Khaled Dudin said Palestinian security forces have taken control of the area and displaced families can return home.",
+   "date": "2026-11-02",
+   "publisher": "Al Jazeera",
+   "title": "Hebron governor says Israeli forces withdraw from city after 10-day siege",
+   "url": "https://www.aljazeera.com/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege",
+   "gathered": "2026-11-02T07:59:16Z"
+  },
   {
    "h": "Iran says ready for all scenarios as talks go on",
    "b": "\"We are prepared for all scenarios,\" Foreign Minister Abbas Araghchi said, as Trump called the talks \"fine\" but said Iranian authorities were not \"reliable\".",
@@ -17,8 +26,6 @@
    "h": "Israeli drone strike kills five Gaza police",
    "b": "An Israeli drone attack killed five Palestinian police officers in al-Mawasi, west of Khan Younis, on Sunday; at least eight Palestinians were killed across Gaza.",
    "date": "2026-11-01",
-   "publisher": "Al Jazeera",
-   "title": "At least eight Palestinians killed in Israeli attacks across Gaza",
    "url": "https://www.aljazeera.com/news/2026/11/1/at-least-eight-palestinians-killed-in-israeli-attacks-across-gaza",
    "gathered": "2026-11-01T16:15:20Z"
   },
@@ -134,7 +141,7 @@
    "place": "Kyiv, Ukraine",
    "tz": "Europe/Kyiv",
    "publisher": "Al Jazeera",
-   "title": "Ukraine blames Russia after air alert app sends out false warnings",
+   "title": "Russia, Ukraine air raid alert apps hit by cyberattacks after truce ends",
    "url": "https://www.aljazeera.com/news/2026/11/2/ukraine-blames-russia-after-air-alert-app-sends-out-false-warnings",
    "gathered": "2026-11-02T02:12:04Z"
   },
@@ -173,8 +180,6 @@
    "date": "2026-11-01",
    "place": "Moscow, Russia",
    "tz": "Europe/Moscow",
-   "publisher": "Al Jazeera",
-   "title": "Russia detains minor over alleged Moscow attack plot after US warning",
    "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning",
    "gathered": "2026-11-01T20:42:52Z"
   },
@@ -236,15 +241,32 @@
    "gathered": "2026-11-01T09:31:47Z"
   }
  ],
- "business": [],
+ "business": [
+  {
+   "h": "Bangladesh garment protests hit third day",
+   "b": "About 500 factories temporarily shut after worker protests over low pay and living costs began Saturday in Dhaka-area industrial hubs.",
+   "date": "2026-11-02",
+   "publisher": "Al Jazeera",
+   "title": "Bangladesh garment factories disrupted as protests continue for third day",
+   "url": "https://www.aljazeera.com/news/2026/11/2/bangladesh-garment-factories-disrupted-as-protests-continue-for-third-day",
+   "gathered": "2026-11-02T07:59:16Z"
+  }
+ ],
  "science": [],
  "sports": [
+  {
+   "h": "Reid sticks with Butker after costly miss",
+   "b": "Harrison Butker missed a 54-yard try that set up Denver's game-winning drive, his third significant miss in two weeks.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "Andy Reid backs decision to trust Harrison Butker despite Chiefs kicker's struggles",
+   "url": "https://www.cbssports.com/nfl/news/andy-reid-harrison-butker-decision-chiefs-broncos/",
+   "gathered": "2026-11-02T07:59:16Z"
+  },
   {
    "h": "Jones won't fire Schottenheimer after collapse",
    "b": "Dallas lost 33-30 in overtime to Arizona after leading 24-10, its first loss ever when up 14 or more in the fourth quarter.",
    "date": "2026-11-02",
-   "publisher": "CBS Sports",
-   "title": "Why Jerry Jones 'doesn't see' firing Brian Schottenheimer midseason after disaster Cowboys loss to Cardinals",
    "url": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-fire-brian-schottenheimer-midseason-cardinals-loss/",
    "gathered": "2026-11-02T02:12:04Z"
   },
@@ -268,11 +290,7 @@
    "h": "Almgren, Chepkirui win New York City Marathon",
    "b": "Sweden's Almgren won his marathon debut in 2:06:01, the course's third-fastest time, and Kenya's Sheila Chepkirui won the women's race for a second time.",
    "date": "2026-11-01",
-   "publisher": "KUOW",
-   "title": "New York City Marathon: Sweden's Almgren and Kenya's Chepkirui win as 60,000 take part",
    "url": "https://www.kuow.org/npr-news/2026-11-01/new-york-city-marathon-swedens-almgren-and-kenyas-chepkirui-win-as-60-000-take-part",
-   "published": "2026-11-01T17:33:21Z",
-   "updated": "2026-11-01T18:23:02Z",
    "gathered": "2026-11-01T20:42:52Z"
   },
   {
@@ -352,6 +370,16 @@
  ],
  "local": [
   {
+   "h": "Watchdog urges MTA job cuts ahead of shortfall",
+   "b": "The Citizens Budget Commission says the MTA faces a nearly $900 million gap within four years and suggests one-person train crews.",
+   "date": "2026-11-02",
+   "publisher": "Gothamist",
+   "title": "MTA should eliminate some jobs to prepare for budget woes, watchdog writes",
+   "url": "https://gothamist.com/news/mta-should-eliminate-some-jobs-to-prepare-for-budget-woes-watchdog-writes",
+   "published": "2026-11-02T05:05:55Z",
+   "gathered": "2026-11-02T07:59:16Z"
+  },
+  {
    "h": "Council to review NYC snow removal plans",
    "b": "The sanitation committee meets Monday and will weigh a bill requiring the city to publish snowplowing records on PlowNYC.",
    "date": "2026-11-01",
@@ -374,46 +402,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
+   "temp": 51,
    "cond": "Fair",
-   "obs": "1 Nov 20:51 pm EST"
+   "obs": "2 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly clear, with a low around 51. Southwest wind around 9 mph. "
+    "temp": 50,
+    "text": "Mostly clear, with a low around 50. Southwest wind around 7 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
-    "temp": 66,
-    "text": "Mostly sunny, with a high near 66. Southwest wind 8 to 11 mph. "
+    "temp": 65,
+    "text": "Mostly sunny, with a high near 65. Southwest wind 6 to 9 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 56,
-    "text": "Partly cloudy, with a low around 56. Southwest wind around 9 mph. "
+    "temp": 52,
+    "text": "Mostly clear, with a low around 52. Southwest wind 6 to 8 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 67,
-    "text": "Mostly sunny, with a high near 67. Southwest wind 7 to 9 mph. "
+    "text": "Mostly sunny, with a high near 67. Southwest wind 5 to 8 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 57,
-    "text": "Partly cloudy, with a low around 57. South wind 5 to 9 mph. "
+    "temp": 56,
+    "text": "Partly cloudy, with a low around 56. Southwest wind 5 to 7 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
     "temp": 69,
-    "text": "Mostly sunny, with a high near 69."
+    "text": "Sunny, with a high near 69."
    }
   ]
  },
