@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T02:11:00Z",
+ "updatedAt": "2026-11-02T05:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -128,13 +128,22 @@
  ],
  "international": [
   {
+   "h": "Ukraine blames Russia for false air alerts",
+   "b": "Fake alerts of nuclear and chemical threats around Kyiv were sent Sunday; the air force said the app appeared to be \"subjected to enemy influence\".",
+   "date": "2026-11-02",
+   "place": "Kyiv, Ukraine",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Ukraine blames Russia after air alert app sends out false warnings",
+   "url": "https://www.aljazeera.com/news/2026/11/2/ukraine-blames-russia-after-air-alert-app-sends-out-false-warnings",
+   "gathered": "2026-11-02T02:12:04Z"
+  },
+  {
    "h": "UN warns of risks as Western Sahara mission ends",
    "b": "Secretary-General Antonio Guterres confirmed the 35-year peacekeeping mission ended and warned hostilities could escalate.",
    "date": "2026-11-02",
    "place": "Laayoune, Western Sahara",
    "tz": "Africa/El_Aaiun",
-   "publisher": "Al Jazeera",
-   "title": "UN warns of security risks in Western Sahara as peacekeeping mission ends",
    "url": "https://www.aljazeera.com/news/2026/11/1/un-warns-of-security-risks-in-western-sahara-as-peacekeeping-mission-ends",
    "gathered": "2026-11-02T00:58:11Z"
   },
@@ -155,8 +164,6 @@
    "date": "2026-11-01",
    "place": "Hargeisa, Somaliland",
    "tz": "Africa/Mogadishu",
-   "publisher": "Al Jazeera",
-   "title": "Israel’s first ambassador to Somaliland presents credentials in Hargeisa",
    "url": "https://www.aljazeera.com/news/2026/11/1/israels-first-ambassador-to-somaliland-presents-credentials-in-hargeisa",
    "gathered": "2026-11-01T20:42:52Z"
   },
@@ -233,11 +240,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Jones won't fire Schottenheimer after collapse",
+   "b": "Dallas lost 33-30 in overtime to Arizona after leading 24-10, its first loss ever when up 14 or more in the fourth quarter.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "Why Jerry Jones 'doesn't see' firing Brian Schottenheimer midseason after disaster Cowboys loss to Cardinals",
+   "url": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-fire-brian-schottenheimer-midseason-cardinals-loss/",
+   "gathered": "2026-11-02T02:12:04Z"
+  },
+  {
    "h": "Bucs win without a single completion",
    "b": "In heavy rain, Baker Mayfield went 0-for-3 as Tampa Bay ran for 324 yards to beat Atlanta, the first completion-less win since 1974.",
    "date": "2026-11-01",
-   "publisher": "CBS Sports",
-   "title": "Baker Mayfield, Buccaneers complete win against Falcons with statistics not seen since 1933",
    "url": "https://www.cbssports.com/nfl/news/buccaneers-falcons-baker-mayfield-no-completions-nfl-history/",
    "gathered": "2026-11-02T00:58:11Z"
   },
@@ -325,7 +339,17 @@
    "gathered": "2026-10-31T16:15:57Z"
   }
  ],
- "goodnews": [],
+ "goodnews": [
+  {
+   "h": "Volunteers build 108 stupas for Bhutan city",
+   "b": "More than 40,000 volunteers helped build the 15-metre stupas along the riverbank at the site of the future Gelephu Mindfulness City.",
+   "date": "2026-11-02",
+   "publisher": "Al Jazeera",
+   "title": "Tens of thousands build 108 Buddhist stupas for Bhutan ‘mindfulness’ city",
+   "url": "https://www.aljazeera.com/news/2026/11/2/tens-of-thousands-build-108-buddhist-stupas-for-bhutan-mindfulness-city",
+   "gathered": "2026-11-02T02:12:04Z"
+  }
+ ],
  "local": [
   {
    "h": "Council to review NYC snow removal plans",
@@ -350,9 +374,9 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "1 Nov 18:51 pm EST"
+   "obs": "1 Nov 20:51 pm EST"
   },
   "periods": [
    {
