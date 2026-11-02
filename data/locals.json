@@ -16,31 +16,20 @@
     "published": "2026-11-01T15:36:43Z",
     "updated": "2026-11-01T15:36:48Z",
     "gathered": "2026-11-01T16:15:20Z"
-   },
-   {
-    "h": "G20 ministers end Atlanta talks without consensus",
-    "b": "Divisions over Russia's war in Ukraine left no joint communique; Secretary of State Rubio said he would release a chairman's statement instead.",
-    "date": "2026-10-31",
-    "publisher": "WABE",
-    "title": "G20 foreign ministers end Atlanta meeting without consensus on key issues",
-    "url": "https://www.wabe.org/g20-foreign-ministers-end-atlanta-meeting-without-consensus-on-key-issues/",
-    "published": "2026-10-31T18:09:49Z",
-    "updated": "2026-10-31T18:09:52Z",
-    "gathered": "2026-10-31T19:27:51Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 59,
     "cond": "Overcast",
-    "obs": "1 Nov 14:52 pm EST"
+    "obs": "1 Nov 19:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 54,
-     "text": "A 30 percent chance of showers before 7pm.  Mostly cloudy, with a low around 54. East wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy, with a low around 54. East wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Monday",
@@ -64,7 +53,7 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Mostly cloudy, with a low around 62."
+     "text": "Mostly cloudy, with a low around 62. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
@@ -86,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,9 +88,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 51,
     "cond": "Fair",
-    "obs": "1 Nov 14:54 pm EST"
+    "obs": "1 Nov 19:54 pm EST"
    },
    "periods": [
     {
@@ -154,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -179,17 +168,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 60,
     "cond": "Overcast",
-    "obs": "1 Nov 13:53 pm CST"
+    "obs": "1 Nov 18:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 62,
-     "text": "Scattered showers, mainly between 4pm and 5pm.  Cloudy, with a high near 62. East southeast wind around 5 mph.  Chance of precipitation is 30%."
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -218,7 +201,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Showers.  Low around 59. Breezy.  Chance of precipitation is 90%."
+     "text": "Showers.  Low around 59. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Showers likely, mainly before noon.  Mostly cloudy, with a high near 66. Chance of precipitation is 60%."
     }
    ]
   },
@@ -234,7 +223,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -248,12 +237,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 63,
-     "text": "A 30 percent chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 63. East wind around 7 mph becoming north. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -283,6 +266,12 @@
      "kind": "low",
      "temp": 36,
      "text": "Mostly clear, with a low around 36."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 56,
+     "text": "Mostly sunny, with a high near 56."
     }
    ]
   },
@@ -298,7 +287,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -319,40 +308,16 @@
     "published": "2026-11-01T14:59:36Z",
     "updated": "2026-11-01T17:38:55Z",
     "gathered": "2026-11-01T16:15:20Z"
-   },
-   {
-    "h": "Belmont Shore sewage spill closes coastal waters",
-    "b": "A pressurized main break spilled 29,000 gallons of sewage near Livingston Drive and Second Street Friday evening; Long Beach is making emergency repairs.",
-    "date": "2026-10-31",
-    "publisher": "LAist",
-    "title": "Long Beach coastal waters remain closed after 29,000-gallon sewage spill",
-    "url": "https://laist.com/news/29-000-gallons-of-sewage-spill-in-belmont-shore-forcing-city-to-close-coastal-waters",
-    "published": "2026-10-31T20:34:45Z",
-    "updated": "2026-11-01T17:23:35Z",
-    "gathered": "2026-10-31T22:42:30Z"
-   },
-   {
-    "h": "DA drops felony case against LA peace ambassador",
-    "b": "Prosecutors dropped body armor charges against MacArthur Park peace ambassador Michael Angel Alvarez, who was sentenced to time served on a probation violation.",
-    "date": "2026-10-31",
-    "url": "https://laist.com/news/criminal-justice/michael-angel-alvarez-charges-dropped-macarthur-park-peace-ambassador",
-    "gathered": "2026-10-31T15:27:44Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 69,
-     "text": "A 20 percent chance of rain.  Mostly sunny, with a high near 69. West southwest wind 10 to 15 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55. Northwest wind around 5 mph becoming north northeast after midnight. "
+     "text": "Mostly clear, with a low around 55. West wind 5 to 10 mph becoming north northeast after midnight. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Monday",
@@ -376,7 +341,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55."
+     "text": "Mostly clear, with a low around 55. West southwest wind around 5 mph becoming north northeast in the evening. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 75,
+     "text": "Sunny, with a high near 75."
     }
    ]
   },
@@ -392,7 +363,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -405,17 +376,6 @@
     "published": "2026-11-01T13:00:00Z",
     "updated": "2026-11-01T13:56:01Z",
     "gathered": "2026-11-01T16:15:20Z"
-   },
-   {
-    "h": "Cal State LA collects underground music memories",
-    "b": "The college invites fans to bring photos, fliers and ticket stubs from their gig-going days for its underground music archive on Nov. 5.",
-    "date": "2026-10-31",
-    "publisher": "LAist",
-    "title": "Cal State LA wants memorabilia from your gig-going days for its underground music archive",
-    "url": "https://laist.com/news/los-angeles-activities/cal-state-los-angeles-underground-music-archive",
-    "published": "2026-10-31T12:00:00Z",
-    "updated": "2026-10-31T12:00:06Z",
-    "gathered": "2026-10-31T15:27:44Z"
    }
   ]
  },
@@ -427,6 +387,16 @@
   },
   "local": [
    {
+    "h": "Council to review NYC snow removal plans",
+    "b": "The sanitation committee meets Monday and will weigh a bill requiring the city to publish snowplowing records on PlowNYC.",
+    "date": "2026-11-01",
+    "publisher": "Gothamist",
+    "title": "NYC Council to scrutinize snow removal plans as winter approaches",
+    "url": "https://gothamist.com/news/nyc-council-to-scrutinize-snow-removal-plans-as-winter-approaches",
+    "published": "2026-11-01T22:46:53Z",
+    "gathered": "2026-11-02T00:58:11Z"
+   },
+   {
     "h": "NYC Marathon kicks off under brisk skies",
     "b": "Runners set off from Staten Island Sunday morning in the high 40s as crowds cheered in Bay Ridge near the Verrazzano-Narrows Bridge.",
     "date": "2026-11-01",
@@ -435,44 +405,13 @@
     "url": "https://gothamist.com/news/runners-and-throngs-of-spectators-kick-off-the-five-borough-new-york-city-marathon",
     "published": "2026-11-01T14:41:00Z",
     "gathered": "2026-11-01T16:15:20Z"
-   },
-   {
-    "h": "Visa granted for mom of slain Bronx teen, Mamdani says",
-    "b": "Mayor Mamdani said Trump agreed to immediately grant a visa to the mother of Javits Frimpong, 15, who was shot and killed on his way to school.",
-    "date": "2026-10-31",
-    "publisher": "Gothamist",
-    "title": "Mamdani says Trump will 'immediately' grant visa to Ghanaian mom of slain Bronx teen",
-    "url": "https://gothamist.com/news/mamdani-says-trump-will-immediately-grant-visa-to-ghanaian-mom-of-slain-bronx-teen",
-    "published": "2026-10-31T19:08:00Z",
-    "updated": "2026-10-31T23:03:00Z",
-    "gathered": "2026-10-31T19:27:51Z"
-   },
-   {
-    "h": "Jersey City pre-K busing hits crisis point",
-    "b": "Overcrowding at P.S. 16 in booming Paulus Hook means its pre-K toddlers are bused across the city because the building has no room for them.",
-    "date": "2026-10-31",
-    "publisher": "Gothamist",
-    "title": "Overflowing school in downtown Jersey City is hitting a crisis point, parents say",
-    "url": "https://gothamist.com/news/pre-k-busing-in-downtown-jersey-citys-hitting-a-crisis-point-parents-say",
-    "published": "2026-10-31T16:00:00Z",
-    "gathered": "2026-10-31T16:15:57Z"
-   },
-   {
-    "h": "Bronx e-bike fire death toll rises to four",
-    "b": "Two teenage boys and a woman have died alongside Zion Maine after an e-bike battery ignited in the family's 11th-floor kitchen, blocking their exit.",
-    "date": "2026-10-31",
-    "publisher": "Gothamist",
-    "title": "Bronx e-bike fire that killed a boy has claimed 3 more lives, NYPD says",
-    "url": "https://gothamist.com/news/nypd-says-bronx-e-bike-fire-that-killed-a-boy-has-claimed-3-more-lives",
-    "published": "2026-10-31T14:29:00Z",
-    "gathered": "2026-10-31T15:27:44Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 55,
     "cond": "Fair",
-    "obs": "1 Nov 15:51 pm EST"
+    "obs": "1 Nov 18:51 pm EST"
    },
    "periods": [
     {
@@ -525,7 +464,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -535,7 +474,7 @@
     "publisher": "Gothamist",
     "title": "'The best day of the year': Inside Clinton Hill's 'mile nine' NYC marathon party",
     "url": "https://gothamist.com/news/the-best-day-of-the-year-inside-clinton-hills-mile-nine-nyc-marathon-party",
-    "published": "2026-11-01T20:50:32Z",
+    "published": "2026-11-01T20:50:00Z",
     "gathered": "2026-11-01T20:42:52Z"
    },
    {
@@ -547,16 +486,6 @@
     "url": "https://gothamist.com/news/november-has-3-meteor-showers-and-the-best-chance-to-see-uranus",
     "published": "2026-11-01T15:00:56Z",
     "gathered": "2026-11-01T16:15:20Z"
-   },
-   {
-    "h": "Formerly homeless New Yorkers lead outreach",
-    "b": "Outreach worker Felipe Ramos, who cycled through homelessness himself, says his past is his superpower in getting people off Manhattan's streets.",
-    "date": "2026-10-31",
-    "publisher": "Gothamist",
-    "title": "How formerly homeless New Yorkers are helping others get off the streets",
-    "url": "https://gothamist.com/news/how-formerly-homeless-new-yorkers-are-helping-others-get-off-the-streets",
-    "published": "2026-10-31T14:00:44Z",
-    "gathered": "2026-10-31T15:27:44Z"
    }
   ]
  },
@@ -589,31 +518,6 @@
     "published": "2026-11-01T13:33:41Z",
     "updated": "2026-11-01T13:33:42Z",
     "gathered": "2026-11-01T16:15:20Z"
-   },
-   {
-    "h": "France arrests 5 UK anti-migrant activists",
-    "b": "The five, from an 'ultra-right movement,' were arrested near Dunkirk carrying tear gas canisters and are being held pending expulsion, the prefecture said.",
-    "date": "2026-10-31",
-    "publisher": "The Local France",
-    "title": "French arrest 5 UK anti-migrant activists: officials",
-    "url": "https://www.thelocal.fr/20261101/french-arrest-5-uk-anti-migrant-activists-officials",
-    "published": "2026-11-01T08:58:02Z",
-    "updated": "2026-11-01T08:58:03Z",
-    "gathered": "2026-11-01T09:31:47Z"
-   },
-   {
-    "h": "Hundreds of thousands protest again in France",
-    "b": "Organizers said nearly half a million joined the third straight weekend of protests, including 200,000 in Paris; authorities put turnout at 320,000.",
-    "date": "2026-10-31",
-    "url": "https://www.aljazeera.com/news/2026/10/31/tension-and-clashes-as-hundreds-of-thousands-protest-again-in-france",
-    "gathered": "2026-10-31T19:27:51Z"
-   },
-   {
-    "h": "Fitch cuts France's outlook to negative",
-    "b": "The agency now expects French debt to rise from about 115.7% of GDP in 2025 to 124% in 2028, citing weaker growth and higher yields.",
-    "date": "2026-10-31",
-    "url": "https://www.thelocal.fr/20261031/fitch-downgrades-frances-economic-outlook-from-stable-to-negative",
-    "gathered": "2026-10-31T15:27:44Z"
    }
   ],
   "weather": {
@@ -632,7 +536,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "goodnews": []
  },
  {
@@ -646,23 +550,13 @@
     "h": "ACA open enrollment brings higher premiums",
     "b": "Open enrollment for 2027 runs Nov. 1 to Jan. 15 in most states, with premium increases, possible ID checks and new subsidy limits for some immigrants.",
     "date": "2026-11-01",
-    "publisher": "KUOW",
-    "title": "It's ACA open enrollment time. Here are the changes for health insurance shoppers",
     "url": "https://www.kuow.org/npr-news/2026-11-01/its-aca-open-enrollment-time-here-are-the-changes-for-health-insurance-shoppers",
-    "published": "2026-11-01T12:00:00Z",
-    "updated": "2026-11-01T15:53:06Z",
     "gathered": "2026-11-01T16:15:20Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 53,
-     "text": "Mostly sunny, with a high near 53. Calm wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -685,13 +579,19 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 57,
-     "text": "Partly sunny, with a high near 57. North wind 3 to 5 mph. "
+     "text": "Cloudy, then gradually becoming mostly sunny, with a high near 57. North wind 3 to 5 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Partly cloudy, with a low around 44."
+     "text": "Partly cloudy, with a low around 44. Calm wind. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 57,
+     "text": "Partly sunny, with a high near 57."
     }
    ]
   },
@@ -707,7 +607,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-01T23:14:00Z",
+  "updatedAt": "2026-11-02T02:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
