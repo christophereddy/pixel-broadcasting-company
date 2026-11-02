@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T08:24:00Z",
+ "updatedAt": "2026-11-02T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -408,12 +408,6 @@
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 50,
-    "text": "Mostly clear, with a low around 50. Southwest wind around 7 mph. "
-   },
-   {
     "name": "Monday",
     "kind": "high",
     "temp": 65,
@@ -442,6 +436,12 @@
     "kind": "high",
     "temp": 69,
     "text": "Sunny, with a high near 69."
+   },
+   {
+    "name": "Wednesday Night",
+    "kind": "low",
+    "temp": 61,
+    "text": "Partly cloudy, with a low around 61."
    }
   ]
  },
