@@ -20,17 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 65,
     "cond": "Mostly Cloudy",
-    "obs": "2 Nov 12:52 pm EST"
+    "obs": "2 Nov 14:52 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 73,
-     "text": "Mostly sunny, with a high near 73. East wind 10 to 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -60,6 +54,12 @@
      "kind": "low",
      "temp": 62,
      "text": "Showers and possibly a thunderstorm before 1am, then a chance of showers.  Low around 62. Chance of precipitation is 80%."
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 75,
+     "text": "A 20 percent chance of showers.  Partly sunny, with a high near 75."
     }
    ]
   },
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,17 +88,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 71,
     "cond": "Partly Cloudy",
-    "obs": "2 Nov 12:54 pm EST"
+    "obs": "2 Nov 14:54 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Mostly sunny, with a high near 70. Southwest wind around 9 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -128,6 +122,12 @@
      "kind": "low",
      "temp": 55,
      "text": "Partly cloudy, with a low around 55. Southwest wind 5 to 7 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 73,
+     "text": "Mostly cloudy, with a high near 73. Southwest wind 5 to 11 mph. "
     }
    ]
   },
@@ -143,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -155,11 +155,20 @@
   },
   "local": [
    {
+    "h": "Chicago clergy take immigration concerns to Pope Leo",
+    "b": "A delegation of Chicago clergy and leaders traveled to Rome to raise concerns about immigration detention with the pontiff.",
+    "date": "2026-11-02",
+    "publisher": "WBEZ",
+    "title": "Chicago clergy visit Pope Leo",
+    "url": "https://www.wbez.org/in-the-loop-with-sasha-ann-simons/2026/11/02/chicago-clergy-visit-pope-leo",
+    "gathered": "2026-11-02T20:12:46Z"
+   },
+   {
     "h": "Ex-Chicago FBI boss sues over 'Broadview Six' blame",
     "b": "Douglas DePodesta alleges he resigned under duress after U.S. Attorney Andrew Boutros sought to blame him for the case's collapse.",
     "date": "2026-11-02",
     "publisher": "WBEZ",
-    "title": "Ex-Chicago FBI boss sues Trump admin saying he was wrongly blamed for botched 'Broadview 6' case",
+    "title": "Ex-Chicago FBI boss sues Trump admin saying he was wrongly blamed for botched ‘Broadview 6’ case",
     "url": "https://www.wbez.org/crime/2026/11/02/fbi-boutros-depodesta-broadview-six",
     "published": "2026-11-02T15:35:46Z",
     "updated": "2026-11-02T16:12:32Z",
@@ -190,9 +199,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Overcast",
-    "obs": "2 Nov 11:53 am CST"
+    "temp": 59,
+    "cond": " Light Drizzle",
+    "obs": "2 Nov 13:53 pm CST"
    },
    "periods": [
     {
@@ -245,7 +254,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -253,7 +262,7 @@
     "b": "The March 19-21 event will feature free screenings at venues including the Music Box Theatre and Gene Siskel Film Center.",
     "date": "2026-11-02",
     "publisher": "WBEZ",
-    "title": "Chicago to host an indie 'Cinema Weekend' celebrating local art house venues and filmmakers",
+    "title": "Chicago to host an indie ‘Cinema Weekend’ celebrating local art house venues and filmmakers",
     "url": "https://www.wbez.org/movies-tv/2026/11/02/chicago-cinema-weekend-movie-audience-film-growth-independent",
     "published": "2026-11-02T11:35:00Z",
     "updated": "2026-11-02T11:35:01Z",
@@ -281,46 +290,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 46,
     "cond": " Light Rain and Breezy",
-    "obs": "2 Nov 10:58 am MST"
+    "obs": "2 Nov 11:58 am MST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 50,
-     "text": "Showers likely, mainly before 2pm.  Mostly cloudy, with a steady temperature around 50. North wind 8 to 11 mph, with gusts as high as 24 mph.  Chance of precipitation is 60%."
+     "text": "Showers likely, mainly before 5pm.  Mostly cloudy, with a steady temperature around 50. North wind 8 to 11 mph, with gusts as high as 18 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 41,
-     "text": "A chance of showers before 8pm, then a slight chance of showers after 2am.  Mostly cloudy, with a low around 41. North wind around 6 mph becoming calm  in the evening.  Chance of precipitation is 30%."
+     "temp": 40,
+     "text": "A chance of showers before 8pm, then a slight chance of showers after 11pm.  Mostly cloudy, with a low around 40. North wind around 6 mph becoming calm.  Chance of precipitation is 30%."
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 59,
-     "text": "Partly sunny, then gradually becoming sunny, with a high near 59. West southwest wind 5 to 7 mph becoming east northeast in the afternoon. "
+     "temp": 58,
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 58. West southwest wind 5 to 7 mph becoming east northeast in the morning. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Mostly clear, with a low around 35. Light and variable wind. "
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34. Light and variable wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 58,
-     "text": "Mostly sunny, with a high near 58. Light and variable wind becoming north northeast 5 to 7 mph in the afternoon. Winds could gust as high as 16 mph. "
+     "temp": 56,
+     "text": "Mostly sunny, with a high near 56. Calm wind becoming northeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 36,
-     "text": "A 30 percent chance of showers before 11pm.  Mostly cloudy, with a low around 36."
+     "temp": 37,
+     "text": "A 30 percent chance of showers, mainly before 11pm.  Mostly cloudy, with a low around 37."
     }
    ]
   },
@@ -336,7 +345,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -347,6 +356,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Beware California's election-night 'red mirage'",
+    "b": "Early returns often favor Republicans before later counts shift toward Democrats, a pattern that is not evidence of rigging.",
+    "date": "2026-11-02",
+    "publisher": "LAist",
+    "title": "Beware the ‘red mirage’ if California Republicans have an election night lead",
+    "url": "https://laist.com/news/politics/red-mirage-california-republicans-election-night-lead",
+    "published": "2026-11-02T19:00:00Z",
+    "updated": "2026-11-02T19:00:00Z",
+    "gathered": "2026-11-02T20:12:46Z"
+   },
    {
     "h": "Koreatown getting 65 new trash cans",
     "b": "The city acted after the Los Angeles Tenants Union's Koreatown chapter raised a shortage of places to throw away trash.",
@@ -374,7 +394,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 74,
      "text": "Sunny, with a high near 74. Southwest wind around 5 mph. "
@@ -423,14 +443,17 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "NoHo karaoke league treats singing as a team sport",
     "b": "At a North Hollywood bar every Wednesday night, L.A. Karaoke league teams compete with over-the-top productions.",
     "date": "2026-11-01",
+    "publisher": "LAist",
+    "title": "At this North Hollywood bar, karaoke is a competitive sport",
     "url": "https://laist.com/news/los-angeles-activities/los-angeles-karaoke-league-north-hollywood",
+    "published": "2026-11-01T13:00:00Z",
     "gathered": "2026-11-01T16:15:20Z"
    }
   ]
@@ -442,6 +465,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYPD probes bullying in Bronx teen's killing",
+    "b": "Detectives say the Education Department won't share information on alleged bullying of the slain 15-year-old without a subpoena.",
+    "date": "2026-11-02",
+    "publisher": "Gothamist",
+    "title": "NYPD investigating bullying as possible motive in Bronx teen's killing",
+    "url": "https://gothamist.com/news/nypd-investigating-bullying-as-possible-motive-in-bronx-teens-killing",
+    "published": "2026-11-02T20:07:06Z",
+    "gathered": "2026-11-02T20:12:46Z"
+   },
    {
     "h": "What drove NYC gas prices up",
     "b": "Prices rose after US and Israeli strikes on Iran strained tanker traffic through the Strait of Hormuz, which carries over 20% of world oil trade.",
@@ -505,17 +538,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 65,
     "cond": "Fair",
-    "obs": "2 Nov 12:51 pm EST"
+    "obs": "2 Nov 14:51 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. Southwest wind around 11 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -544,7 +571,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Increasing clouds, with a low around 62."
+     "text": "Increasing clouds, with a low around 62. South wind 7 to 9 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 69,
+     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 69. Chance of precipitation is 60%."
     }
    ]
   },
@@ -560,7 +593,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -663,7 +696,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "goodnews": []
  },
  {
@@ -685,7 +718,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 53,
      "text": "Mostly cloudy, with a high near 53. Calm wind. "
@@ -734,7 +767,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T20:12:00Z",
+  "updatedAt": "2026-11-02T23:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
