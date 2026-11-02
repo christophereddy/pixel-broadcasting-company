@@ -20,22 +20,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "Partly Cloudy",
-    "obs": "2 Nov 08:52 am EST"
+    "temp": 70,
+    "cond": "Mostly Cloudy",
+    "obs": "2 Nov 12:52 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 73,
-     "text": "Partly sunny, with a high near 73. East wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Mostly sunny, with a high near 73. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. East wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly cloudy, with a low around 59. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday",
@@ -46,20 +46,20 @@
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 63,
-     "text": "Mostly cloudy, with a low around 63. Southeast wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 64,
+     "text": "A 20 percent chance of showers after 4am.  Mostly cloudy, with a low around 64. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 74,
-     "text": "A chance of showers, then showers and possibly a thunderstorm after 1pm.  High near 74. Southeast wind around 10 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%."
+     "text": "Showers likely, then showers and possibly a thunderstorm after 10am.  High near 74. Southeast wind around 10 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Showers and possibly a thunderstorm before 1am, then a chance of showers and thunderstorms after 1am.  Low around 62. Chance of precipitation is 80%."
+     "text": "Showers and possibly a thunderstorm before 1am, then a chance of showers.  Low around 62. Chance of precipitation is 80%."
     }
    ]
   },
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,46 +88,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Mostly Cloudy",
-    "obs": "2 Nov 08:54 am EST"
+    "temp": 70,
+    "cond": "Partly Cloudy",
+    "obs": "2 Nov 12:54 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny, with a high near 68. Southwest wind 7 to 10 mph. "
+     "temp": 70,
+     "text": "Mostly sunny, with a high near 70. Southwest wind around 9 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48. Southwest wind 5 to 7 mph. "
+     "temp": 50,
+     "text": "Partly cloudy, with a low around 50. Southwest wind 5 to 7 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 70,
-     "text": "Increasing clouds, with a high near 70. Light and variable wind becoming southwest around 5 mph in the afternoon. "
+     "temp": 73,
+     "text": "Increasing clouds, with a high near 73. Southwest wind around 5 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Partly cloudy, with a low around 51. Light southwest wind. "
+     "temp": 52,
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 52. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 73,
-     "text": "Sunny, with a high near 73. Southwest wind 5 to 9 mph. "
+     "temp": 75,
+     "text": "Sunny, with a high near 75. Southwest wind 6 to 10 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. Southwest wind 5 to 7 mph. "
+     "temp": 55,
+     "text": "Partly cloudy, with a low around 55. Southwest wind 5 to 7 mph. "
     }
    ]
   },
@@ -143,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -154,6 +154,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Ex-Chicago FBI boss sues over 'Broadview Six' blame",
+    "b": "Douglas DePodesta alleges he resigned under duress after U.S. Attorney Andrew Boutros sought to blame him for the case's collapse.",
+    "date": "2026-11-02",
+    "publisher": "WBEZ",
+    "title": "Ex-Chicago FBI boss sues Trump admin saying he was wrongly blamed for botched 'Broadview 6' case",
+    "url": "https://www.wbez.org/crime/2026/11/02/fbi-boutros-depodesta-broadview-six",
+    "published": "2026-11-02T15:35:46Z",
+    "updated": "2026-11-02T16:12:32Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
    {
     "h": "Two-thirds of Taste of Chicago vendors had violations",
     "b": "City inspectors found overflowing garbage, backed-up sinks and food prepped in bushes, and tossed over 800 pounds of food.",
@@ -179,46 +190,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 58,
     "cond": "Overcast",
-    "obs": "2 Nov 07:53 am CST"
+    "obs": "2 Nov 11:53 am CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 62,
-     "text": "Patchy drizzle after 11am.  Cloudy, with a high near 62. South wind around 15 mph, with gusts as high as 25 mph. "
+     "temp": 60,
+     "text": "Patchy drizzle after 5pm.  Cloudy, with a high near 60. South southeast wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 60,
-     "text": "Cloudy, with a low around 60. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph. "
+     "text": "A 20 percent chance of showers before 8pm.  Cloudy, with a low around 60. Breezy, with a south wind 15 to 20 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 72,
-     "text": "Showers likely, mainly after 5pm.  Mostly cloudy, with a high near 72. Breezy, with a south wind around 20 mph, with gusts as high as 35 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 68,
+     "text": "A 30 percent chance of showers, mainly after 5pm.  Mostly cloudy, with a high near 68. Breezy, with a south wind 15 to 25 mph, with gusts as high as 35 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 60,
-     "text": "Showers.  Low around 60. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%."
+     "text": "Showers, mainly before 3am.  Low around 60. Breezy, with a south wind 15 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Showers likely, mainly before noon.  Mostly cloudy, with a high near 66. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%."
+     "temp": 63,
+     "text": "Showers, mainly before noon.  High near 63. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly cloudy, with a low around 50."
+     "temp": 51,
+     "text": "Mostly cloudy, with a low around 51."
     }
    ]
   },
@@ -234,7 +245,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -269,13 +280,17 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 47,
+    "cond": " Light Rain and Breezy",
+    "obs": "2 Nov 10:58 am MST"
+   },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 54,
-     "text": "Showers likely, mainly between 8am and 2pm.  Areas of dense fog before 8am.  Otherwise, mostly cloudy, with a high near 54. Light and variable wind becoming north 6 to 11 mph in the morning. Winds could gust as high as 24 mph.  Chance of precipitation is 60%."
+     "temp": 50,
+     "text": "Showers likely, mainly before 2pm.  Mostly cloudy, with a steady temperature around 50. North wind 8 to 11 mph, with gusts as high as 24 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Tonight",
@@ -321,7 +336,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -332,6 +347,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Koreatown getting 65 new trash cans",
+    "b": "The city acted after the Los Angeles Tenants Union's Koreatown chapter raised a shortage of places to throw away trash.",
+    "date": "2026-11-02",
+    "publisher": "LAist",
+    "title": "Koreatown tenants push for better trash collection, more street trash cans",
+    "url": "https://laist.com/news/koreatown-tenants-push-for-better-trash-collection-more-street-trash-cans",
+    "published": "2026-11-02T18:00:00Z",
+    "updated": "2026-11-02T18:00:00Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
    {
     "h": "UCLA: 4 in 10 DOJ-flagged names not on voter rolls",
     "b": "UCLA analysts found more than 40% of 20,930 names flagged as possible noncitizen voters in California are not on state rolls, and thousands appear to be citizens.",
@@ -350,38 +376,38 @@
     {
      "name": "Today",
      "kind": "high",
-     "temp": 75,
-     "text": "Sunny, with a high near 75. North northeast wind around 5 mph becoming southwest in the afternoon. "
+     "temp": 74,
+     "text": "Sunny, with a high near 74. Southwest wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Partly cloudy, with a low around 57. West northwest wind around 5 mph becoming calm  in the evening. "
+     "temp": 56,
+     "text": "Mostly clear, with a low around 56. West northwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 75,
-     "text": "Sunny, with a high near 75. Calm wind becoming southwest around 5 mph in the morning. "
+     "temp": 74,
+     "text": "Sunny, with a high near 74. Light and variable wind becoming southwest 5 to 10 mph in the morning. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55. West southwest wind around 5 mph becoming northeast after midnight. "
+     "text": "Mostly clear, with a low around 55. West northwest wind around 5 mph becoming northeast in the evening. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 75,
-     "text": "Sunny, with a high near 75. North northeast wind around 5 mph becoming west in the afternoon. "
+     "text": "Sunny, with a high near 75. Northeast wind around 5 mph becoming west in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58."
+     "temp": 57,
+     "text": "Mostly clear, with a low around 57."
     }
    ]
   },
@@ -397,18 +423,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "NoHo karaoke league treats singing as a team sport",
     "b": "At a North Hollywood bar every Wednesday night, L.A. Karaoke league teams compete with over-the-top productions.",
     "date": "2026-11-01",
-    "publisher": "LAist",
-    "title": "At this North Hollywood bar, karaoke is a competitive sport",
     "url": "https://laist.com/news/los-angeles-activities/los-angeles-karaoke-league-north-hollywood",
-    "published": "2026-11-01T13:00:00Z",
-    "updated": "2026-11-01T13:56:01Z",
     "gathered": "2026-11-01T16:15:20Z"
    }
   ]
@@ -420,6 +442,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "What drove NYC gas prices up",
+    "b": "Prices rose after US and Israeli strikes on Iran strained tanker traffic through the Strait of Hormuz, which carries over 20% of world oil trade.",
+    "date": "2026-11-02",
+    "publisher": "Gothamist",
+    "title": "Here’s what drove NYC gas prices higher and whether relief is on the way",
+    "url": "https://gothamist.com/news/heres-what-drove-nyc-gas-prices-higher-and-whether-relief-is-on-the-way",
+    "published": "2026-11-02T17:55:26Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
+   {
+    "h": "NY opens HEAP heating aid applications",
+    "b": "The program offers up to $1,086 to low- and middle-income households for fuel or heating and cooling equipment.",
+    "date": "2026-11-02",
+    "publisher": "Gothamist",
+    "title": "NY opens HEAP applications to help pay for heating costs",
+    "url": "https://gothamist.com/news/ny-opens-heap-applications-to-help-pay-for-heating-costs",
+    "published": "2026-11-02T18:34:43Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
    {
     "h": "NYC PTA fundraising gap grows",
     "b": "Some school PTAs raise a few hundred dollars from bake sales while others, like P.S. 29 in Cobble Hill, take in about $2 million.",
@@ -463,46 +505,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 64,
     "cond": "Fair",
-    "obs": "2 Nov 08:51 am EST"
+    "obs": "2 Nov 12:51 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 65,
-     "text": "Mostly sunny, with a high near 65. Southwest wind 7 to 9 mph. "
+     "temp": 67,
+     "text": "Sunny, with a high near 67. Southwest wind around 11 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52. Southwest wind 6 to 8 mph. "
+     "temp": 53,
+     "text": "Mostly clear, with a low around 53. Southwest wind 6 to 9 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 67,
-     "text": "Mostly sunny, with a high near 67. Southwest wind 5 to 8 mph. "
+     "temp": 68,
+     "text": "Mostly sunny, with a high near 68. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 56,
-     "text": "Partly cloudy, with a low around 56. Southwest wind 5 to 7 mph. "
+     "temp": 57,
+     "text": "Partly cloudy, with a low around 57. Southwest wind 5 to 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Light south wind increasing to 5 to 10 mph in the morning. "
+     "text": "Mostly sunny, with a high near 69. Light southwest wind becoming south 8 to 13 mph in the morning. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 61,
-     "text": "Partly cloudy, with a low around 61."
+     "temp": 62,
+     "text": "Increasing clouds, with a low around 62."
     }
    ]
   },
@@ -518,7 +560,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -562,14 +604,32 @@
   },
   "local": [
    {
+    "h": "Young doctors sent to France's 'medical deserts'",
+    "b": "The health ministry promises millions of extra appointment slots in areas, especially rural, that lack enough doctors.",
+    "date": "2026-11-02",
+    "publisher": "The Local France",
+    "title": "Thousands of young doctors deployed to France's 'medical deserts'",
+    "url": "https://www.thelocal.fr/20261102/thousands-of-young-doctors-deployed-to-frances-medical-deserts",
+    "published": "2026-11-02T14:35:16Z",
+    "updated": "2026-11-02T14:35:17Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
+   {
+    "h": "Historic BHV department store gets bankruptcy protection",
+    "b": "A Paris court opened proceedings for the roughly 170-year-old store opposite City Hall, with a six-month observation period.",
+    "date": "2026-11-02",
+    "publisher": "The Local France",
+    "title": "Historic Paris department store receives bankruptcy protection",
+    "url": "https://www.thelocal.fr/20261102/historic-paris-department-store-receives-bankruptcy-protection",
+    "published": "2026-11-02T16:51:26Z",
+    "updated": "2026-11-02T16:51:27Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
+   {
     "h": "What to expect from the November 5 strike",
     "b": "All major unions call a nationwide strike Thursday over wages and living costs, affecting transport, schools, healthcare and public offices.",
     "date": "2026-11-02",
-    "publisher": "The Local France",
-    "title": "French protests: What to expect from November 5th strikes",
     "url": "https://www.thelocal.fr/20261102/french-protests-what-to-expect-from-november-5th-strikes",
-    "published": "2026-11-02T11:01:38Z",
-    "updated": "2026-11-02T11:01:39Z",
     "gathered": "2026-11-02T11:13:51Z"
    },
    {
@@ -603,7 +663,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "goodnews": []
  },
  {
@@ -633,14 +693,14 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 49,
-     "text": "Cloudy, with a steady temperature around 49. Calm wind. "
+     "temp": 47,
+     "text": "Cloudy, with a low around 47. Calm wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 57,
-     "text": "Cloudy through mid morning, then gradual clearing, with a high near 57. Light north wind. "
+     "temp": 56,
+     "text": "Cloudy through mid morning, then gradual clearing, with a high near 56. Light and variable wind becoming northwest around 5 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -651,14 +711,14 @@
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 58,
-     "text": "Rain after 4pm.  High near 58. Calm wind becoming south around 5 mph in the afternoon.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 57,
+     "text": "Partly sunny, with a high near 57. Calm wind becoming south around 5 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Rain, mainly before 4am.  Low around 49. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 50,
+     "text": "Rain, mainly before 4am.  Low around 50. Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -674,9 +734,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-02T17:45:00Z",
+  "updatedAt": "2026-11-02T20:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
+   {
+    "h": "Indigenous fashion show puts community first",
+    "b": "\"Our Ancestors Walk With Us\" at North Seattle College used a cedar-bough circle runway to keep Indigenous values at the center.",
+    "date": "2026-11-02",
+    "publisher": "KUOW",
+    "title": "'Our Ancestors Walk With Us.' An Indigenous fashion show about more than style",
+    "url": "https://www.kuow.org/history/2026-11-02/our-ancestors-walk-with-us-an-indigenous-fashion-show-about-more-than-fashion",
+    "published": "2026-11-02T15:00:00Z",
+    "updated": "2026-11-02T15:46:00Z",
+    "gathered": "2026-11-02T18:42:24Z"
+   },
    {
     "h": "KUOW Book Club cooks through Lunch at the Shop",
     "b": "November's pick is Seattle bookseller Peter Miller's book on the midday meal, reprinted this year by the University of Washington Press.",

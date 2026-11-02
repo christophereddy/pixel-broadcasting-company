@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-02T17:45:00Z",
+ "updatedAt": "2026-11-02T20:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Israeli forces leave Hebron after 10-day siege",
    "b": "Governor Khaled Dudin said Palestinian security forces have taken control of the area and displaced families can return home.",
    "date": "2026-11-02",
-   "publisher": "Al Jazeera",
-   "title": "Hebron governor says Israeli forces withdraw from city after 10-day siege",
    "url": "https://www.aljazeera.com/news/2026/11/2/hebron-governor-says-israeli-forces-withdraw-from-city-after-10-day-siege",
    "gathered": "2026-11-02T07:59:16Z"
   },
@@ -30,11 +28,11 @@
    "gathered": "2026-11-01T16:15:20Z"
   },
   {
-   "h": "Tanker ablaze as fears of US-Iran escalation grow",
-   "b": "A tanker is on fire as fear of a wider US-Iran escalation grips the Middle East. Al Jazeera is following the Iran war live.",
+   "h": "Iran says 'intensive' talks under way",
+   "b": "Iran says intensive talks are under way but warns it is ready to fight the US again. Al Jazeera is following the Iran war live.",
    "date": "2026-11-02",
    "publisher": "Al Jazeera",
-   "title": "Tanker ablaze as fear over US-Iran escalation grips the Middle East",
+   "title": "Iran says ‘intensive’ talks under way, warns it is ready to fight US again",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
    "gathered": "2026-11-02T00:58:11Z"
   }
@@ -66,20 +64,14 @@
    "h": "All 9 aboard die in Florida jet crash",
    "b": "The Bahamas-bound Learjet 60 crashed near a roadway in Palm Beach County and exploded, Transportation Secretary Sean Duffy said.",
    "date": "2026-11-01",
-   "publisher": "PBS NewsHour",
-   "title": "All 9 people aboard a jet that crashed in Florida have died, transportation secretary says",
    "url": "https://www.pbs.org/newshour/nation/all-9-people-aboard-a-jet-that-crashed-in-florida-have-died-transportation-secretary-says",
-   "published": "2026-11-01T22:05:03Z",
    "gathered": "2026-11-02T00:58:11Z"
   },
   {
    "h": "Halloween weekend shootings hit nightlife districts",
    "b": "Four people died and 15 were injured in shootings in Dallas's Deep Ellum, and college towns including Fayetteville and Bloomington reported shootings too.",
    "date": "2026-11-01",
-   "publisher": "PBS NewsHour",
-   "title": "Shootings over Halloween weekend leave at least 6 dead and dozens injured across U.S.",
    "url": "https://www.pbs.org/newshour/nation/dozens-injured-at-least-6-dead-in-halloween-weekend-gun-violence-at-nightlife-districts-across-u-s",
-   "published": "2026-11-01T17:49:59Z",
    "gathered": "2026-11-01T20:42:52Z"
   },
   {
@@ -98,6 +90,16 @@
   }
  ],
  "politics": [
+  {
+   "h": "Trump administration asks Supreme Court to sideline 20,000 California ballots",
+   "b": "It wants the ballots held until voters' status is verified; California says the list is unreliable and a lower court denied the request.",
+   "date": "2026-11-02",
+   "publisher": "PBS NewsHour",
+   "title": "Trump administration asks Supreme Court to sideline 20,000 disputed California mail ballots",
+   "url": "https://www.pbs.org/newshour/politics/trump-administration-asks-supreme-court-to-sideline-20000-disputed-california-mail-ballots",
+   "published": "2026-11-02T17:53:40Z",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
   {
    "h": "Five ways voting could be disrupted Tuesday",
    "b": "Experts are watching how the Trump administration's push for more federal control over elections, from voter rolls to mail voting, plays out.",
@@ -124,10 +126,7 @@
    "h": "DOJ seeks sanctions over noncitizen list analysis",
    "b": "The Justice Department says CHIRLA and its lawyers should face contempt after publishing an analysis finding over 40% of names on its California list are not on voter rolls.",
    "date": "2026-11-01",
-   "publisher": "PBS NewsHour",
-   "title": "Justice Department urges sanctions for database analysis critical of its noncitizen voting claims",
    "url": "https://www.pbs.org/newshour/politics/justice-department-urges-sanctions-for-database-analysis-critical-of-its-noncitizen-voting-claims",
-   "published": "2026-11-01T23:18:16Z",
    "gathered": "2026-11-02T00:58:11Z"
   },
   {
@@ -148,10 +147,7 @@
    "h": "Stevens endorses GOP's Rogers in Michigan Senate race",
    "b": "Democrat Haley Stevens backed Trump-backed Mike Rogers over nominee Abdul El-Sayed, saying El-Sayed told her she was no longer welcome in his campaign.",
    "date": "2026-11-01",
-   "publisher": "PBS NewsHour",
-   "title": "El-Sayed's primary opponent stuns Democrats by endorsing Republican opponent in Michigan Senate race",
    "url": "https://www.pbs.org/newshour/politics/democrat-haley-stevens-endorses-gops-mike-rogers-in-michigan-senate-race-2-days-before-election",
-   "published": "2026-11-01T17:37:32Z",
    "gathered": "2026-11-01T20:42:52Z"
   },
   {
@@ -171,13 +167,45 @@
  ],
  "international": [
   {
+   "h": "Zelenskyy says Ukraine hacked back after alert attack",
+   "b": "After false nuclear warnings hit Ukraine's alert app, Zelenskyy called it a Russian cyberattack; Russia says hackers also sent fake alerts on its app.",
+   "date": "2026-11-02",
+   "place": "Kyiv, Ukraine",
+   "tz": "Europe/Kyiv",
+   "publisher": "PBS NewsHour",
+   "title": "WATCH: Zelenskyy confirms Ukraine hacked back after Russia’s cyberattack of its emergency alert system",
+   "url": "https://www.pbs.org/newshour/world/watch-zelenskyy-confirms-ukraine-hacked-back-after-russias-cyberattack-of-its-emergency-alert-system",
+   "published": "2026-11-02T18:06:16Z",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
+   "h": "WHO: Tigray fighting pushing Ethiopia's health system to collapse",
+   "b": "Tedros said the conflict between Tigray rebels and the government in Addis Ababa has killed civilians in recent days and strained medical facilities.",
+   "date": "2026-11-02",
+   "place": "Addis Ababa, Ethiopia",
+   "tz": "Africa/Addis_Ababa",
+   "publisher": "Al Jazeera",
+   "title": "Violence in northern Ethiopia pushing health system towards collapse: WHO",
+   "url": "https://www.aljazeera.com/news/2026/11/2/violence-in-northern-ethiopia-pushing-health-system-towards-collapse-who",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
+   "h": "China steps up Mideast diplomacy",
+   "b": "Wang Yi told a senior Iranian security official dialogue is \"the only viable path forward\" as Xi hosted Oman's Sultan Haitham bin Tariq.",
+   "date": "2026-11-02",
+   "place": "Beijing, China",
+   "tz": "Asia/Shanghai",
+   "publisher": "Al Jazeera",
+   "title": "China steps up Middle East diplomacy with Iran and Oman meetings",
+   "url": "https://www.aljazeera.com/news/2026/11/2/china-steps-up-middle-east-diplomacy-with-iran-and-oman-meetings",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
    "h": "Suspected cyberattacks overheat supermarket fridges",
    "b": "Overnight temperature spikes hit stores in Belgium, Estonia, Ireland, Luxembourg and Sweden, with authorities pointing to alleged cyberattacks.",
    "date": "2026-11-02",
    "place": "Stockholm, Sweden",
    "tz": "Europe/Stockholm",
-   "publisher": "Al Jazeera",
-   "title": "Suspected cyberattacks trigger supermarket fridge failures across Europe",
    "url": "https://www.aljazeera.com/news/2026/11/2/freezers-in-sweden-belgium-overheat-following-possible-cyberattacks",
    "gathered": "2026-11-02T14:15:09Z"
   },
@@ -187,8 +215,6 @@
    "date": "2026-11-02",
    "place": "Amman, Jordan",
    "tz": "Asia/Amman",
-   "publisher": "Al Jazeera",
-   "title": "Jordan’s King Abdullah promises to confront ‘terrorists’ after Karak attack",
    "url": "https://www.aljazeera.com/news/2026/11/2/jordans-king-abdullah-promises-to-confront-terrorists-after-karak-attack",
    "gathered": "2026-11-02T14:15:09Z"
   },
@@ -216,8 +242,6 @@
    "date": "2026-11-02",
    "place": "Riyadh, Saudi Arabia",
    "tz": "Asia/Riyadh",
-   "publisher": "Al Jazeera",
-   "title": "Saudi-led coalition intercepts a missile as fighting rages in Yemen’s al-Jawf",
    "url": "https://www.aljazeera.com/news/2026/11/2/saudi-led-coalition-intercepts-a-missile-as-fighting-rages-in-yemens-al-jawf",
    "gathered": "2026-11-02T11:13:51Z"
   },
@@ -272,10 +296,7 @@
    "date": "2026-11-01",
    "place": "Ottawa, Canada",
    "tz": "America/Toronto",
-   "publisher": "PBS NewsHour",
-   "title": "Canada's Carney reports progress in trade talks with U.S. and Trump talks up 'concept' of a deal",
    "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
-   "published": "2026-11-01T18:00:43Z",
    "gathered": "2026-11-01T20:42:52Z"
   },
   {
@@ -326,22 +347,26 @@
  ],
  "business": [
   {
+   "h": "Farmers promised $15 billion before midterms",
+   "b": "The Agriculture Department's payments and initiatives come on top of $13.8 billion in safety net payments for the 2025 crop year.",
+   "date": "2026-11-02",
+   "publisher": "PBS NewsHour",
+   "title": "Trump administration promised farmers $15 billion in weeks before midterms",
+   "url": "https://www.pbs.org/newshour/politics/trump-administration-promised-farmers-15-billion-in-weeks-before-midterms",
+   "published": "2026-11-02T18:25:17Z",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
    "h": "Ryanair to raise fares as fuel bill soars",
    "b": "The airline expects its fuel bill to rise by 2 billion euros next year and plans double-digit fare hikes and cost cuts; quarterly profit fell 6%.",
    "date": "2026-11-02",
-   "publisher": "The Local France",
-   "title": "Ryanair to hit passengers in Europe with 'double-digit' hikes in air fares",
    "url": "https://www.thelocal.fr/20261102/ryanair-to-hit-passengers-in-europe-with-double-digit-hikes-in-air-fares",
-   "published": "2026-11-02T12:35:49Z",
-   "updated": "2026-11-02T12:35:52Z",
    "gathered": "2026-11-02T14:15:09Z"
   },
   {
    "h": "Bangladesh garment protests hit third day",
    "b": "About 500 factories temporarily shut after worker protests over low pay and living costs began Saturday in Dhaka-area industrial hubs.",
    "date": "2026-11-02",
-   "publisher": "Al Jazeera",
-   "title": "Bangladesh garment factories disrupted as protests continue for third day",
    "url": "https://www.aljazeera.com/news/2026/11/2/bangladesh-garment-factories-disrupted-as-protests-continue-for-third-day",
    "gathered": "2026-11-02T07:59:16Z"
   }
@@ -359,11 +384,27 @@
  ],
  "sports": [
   {
+   "h": "Grizzlies are the NBA's last unbeaten team",
+   "b": "Memphis, one of last season's biggest tankers, leads the league in net rating after 13 days of play.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "NBA's biggest winners and losers of the week: Last unbeaten team is ... the Grizzlies? Plus a crisis in OKC",
+   "url": "https://www.cbssports.com/nba/news/nba-biggest-winners-losers-of-the-week-grizzlies-okc-nov-2/",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
+   "h": "Miami tops Power Rankings ahead of Notre Dame clash",
+   "b": "Week 10 has seven ranked-on-ranked games, led by Miami at Notre Dame, plus Georgia at Ole Miss and Alabama at LSU.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "College Football Power Rankings: Miami jumps to No. 1 ahead of pivotal showdown with Notre Dame",
+   "url": "https://www.cbssports.com/college-football/news/college-football-power-rankings-miami-no-1-notre-dame-showdown/",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
    "h": "Reid sticks with Butker after costly miss",
    "b": "Harrison Butker missed a 54-yard try that set up Denver's game-winning drive, his third significant miss in two weeks.",
    "date": "2026-11-02",
-   "publisher": "CBS Sports",
-   "title": "Andy Reid backs decision to trust Harrison Butker despite Chiefs kicker's struggles",
    "url": "https://www.cbssports.com/nfl/news/andy-reid-harrison-butker-decision-chiefs-broncos/",
    "gathered": "2026-11-02T07:59:16Z"
   },
@@ -385,8 +426,6 @@
    "h": "Cowboys collapse, Burrow makes history in Week 8",
    "b": "Dallas blew a fourth-quarter lead to Arizona in overtime, and Joe Burrow posted a stat line no quarterback has since the merger.",
    "date": "2026-11-01",
-   "publisher": "CBS Sports",
-   "title": "NFL Week 8 winners and losers: Cowboys suffer epic collapse, Joe Burrow delivers historic heroics",
    "url": "https://www.cbssports.com/nfl/news/nfl-week-8-winners-losers-cowboys-joe-burrow/",
    "gathered": "2026-11-02T00:58:11Z"
   },
@@ -463,6 +502,15 @@
  ],
  "goodnews": [
   {
+   "h": "Karl Bushby home after 28-year walk around world",
+   "b": "The 57-year-old British adventurer was embraced by his mother in Hull after travelling some 50,000km on foot.",
+   "date": "2026-11-02",
+   "publisher": "Al Jazeera",
+   "title": "British adventurer Karl Bushby returns home after 28-year walk around world",
+   "url": "https://www.aljazeera.com/news/2026/11/2/british-adventurer-karl-bushby-returns-home-after-28-year-walk-around-world",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
    "h": "Volunteers build 108 stupas for Bhutan city",
    "b": "More than 40,000 volunteers helped build the 15-metre stupas along the riverbank at the site of the future Gelephu Mindfulness City.",
    "date": "2026-11-02",
@@ -471,6 +519,26 @@
   }
  ],
  "local": [
+  {
+   "h": "What drove NYC gas prices up",
+   "b": "Prices rose after US and Israeli strikes on Iran strained tanker traffic through the Strait of Hormuz, which carries over 20% of world oil trade.",
+   "date": "2026-11-02",
+   "publisher": "Gothamist",
+   "title": "Here’s what drove NYC gas prices higher and whether relief is on the way",
+   "url": "https://gothamist.com/news/heres-what-drove-nyc-gas-prices-higher-and-whether-relief-is-on-the-way",
+   "published": "2026-11-02T17:55:26Z",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
+  {
+   "h": "NY opens HEAP heating aid applications",
+   "b": "The program offers up to $1,086 to low- and middle-income households for fuel or heating and cooling equipment.",
+   "date": "2026-11-02",
+   "publisher": "Gothamist",
+   "title": "NY opens HEAP applications to help pay for heating costs",
+   "url": "https://gothamist.com/news/ny-opens-heap-applications-to-help-pay-for-heating-costs",
+   "published": "2026-11-02T18:34:43Z",
+   "gathered": "2026-11-02T18:42:24Z"
+  },
   {
    "h": "NYC PTA fundraising gap grows",
    "b": "Some school PTAs raise a few hundred dollars from bake sales while others, like P.S. 29 in Cobble Hill, take in about $2 million.",
@@ -514,46 +582,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 64,
    "cond": "Fair",
-   "obs": "2 Nov 08:51 am EST"
+   "obs": "2 Nov 12:51 pm EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
-    "temp": 65,
-    "text": "Mostly sunny, with a high near 65. Southwest wind 7 to 9 mph. "
+    "temp": 67,
+    "text": "Sunny, with a high near 67. Southwest wind around 11 mph. "
    },
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 52,
-    "text": "Mostly clear, with a low around 52. Southwest wind 6 to 8 mph. "
+    "temp": 53,
+    "text": "Mostly clear, with a low around 53. Southwest wind 6 to 9 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 67,
-    "text": "Mostly sunny, with a high near 67. Southwest wind 5 to 8 mph. "
+    "temp": 68,
+    "text": "Mostly sunny, with a high near 68. Southwest wind 5 to 10 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 56,
-    "text": "Partly cloudy, with a low around 56. Southwest wind 5 to 7 mph. "
+    "temp": 57,
+    "text": "Partly cloudy, with a low around 57. Southwest wind 5 to 7 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
     "temp": 69,
-    "text": "Sunny, with a high near 69. Light south wind increasing to 5 to 10 mph in the morning. "
+    "text": "Mostly sunny, with a high near 69. Light southwest wind becoming south 8 to 13 mph in the morning. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 61,
-    "text": "Partly cloudy, with a low around 61."
+    "temp": 62,
+    "text": "Increasing clouds, with a low around 62."
    }
   ]
  },
