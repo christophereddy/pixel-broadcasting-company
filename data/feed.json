@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T02:12:00Z",
+ "updatedAt": "2026-11-03T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "Zelenskyy said a repeat strike dropped nine more bombs directly on a shelter in the Zaporizhia region; five others were injured.",
    "date": "2026-11-02",
    "publisher": "Al Jazeera",
-   "title": "Russian bombing of Ukrainian aid centre kills 26 people",
+   "title": "Russian strike on Ukraine aid hub kills 26 as US announces new peace talks",
    "url": "https://www.aljazeera.com/news/2026/11/2/russian-bombing-of-ukrainian-aid-centre-kills-24-people-zelenskyy",
    "gathered": "2026-11-02T20:12:46Z"
   },
@@ -129,6 +129,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Ebola deaths top 5,300 in Africa outbreak",
+   "b": "Africa CDC says most cases are in DR Congo, which declared its 17th and largest Ebola outbreak in mid-May.",
+   "date": "2026-11-03",
+   "place": "Kinshasa, DR Congo",
+   "tz": "Africa/Kinshasa",
+   "publisher": "Al Jazeera",
+   "title": "Ebola outbreak kills more than 5,300 people in DR Congo",
+   "url": "https://www.aljazeera.com/news/2026/11/3/ebola-outbreak-kills-more-than-5300-people-in-dr-congo",
+   "gathered": "2026-11-03T02:12:28Z"
+  },
   {
    "h": "Yotova wins Bulgaria runoff, initial results show",
    "b": "Iliana Yotova, endorsed by PM Rumen Radev's Moscow-friendly party, is set to become the first elected female president; rival Gyurov conceded.",
@@ -306,11 +317,18 @@
  ],
  "sports": [
   {
+   "h": "No. 1 Florida opens with win over Miami",
+   "b": "Thomas Haugh had 19 points and 10 rebounds, hitting four 3-pointers, as the defending-champion Gators began their season.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "No. 1 Florida opens season with convincing victory vs. Miami: Gators show why they deserve No. 1 ranking",
+   "url": "https://www.cbssports.com/college-basketball/news/florida-miami-season-opening-win-top-ranked-gators-hurricanes-thomas-haugh/",
+   "gathered": "2026-11-03T02:12:28Z"
+  },
+  {
    "h": "NFL reinstates Falcons' James Pearce Jr.",
    "b": "The edge rusher returns after an eight-game suspension under the personal conduct policy; Atlanta released Jared Ivey and Drake Jackson.",
    "date": "2026-11-02",
-   "publisher": "CBS Sports",
-   "title": "NFL reinstates James Pearce Jr. after eight-game suspension: Why EDGE returns at critical time for Falcons",
    "url": "https://www.cbssports.com/nfl/news/nfl-reinstates-james-pearce-jr-after-eight-game-suspension-falcons/",
    "gathered": "2026-11-03T01:44:17Z"
   },
@@ -494,16 +512,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
+   "temp": 59,
    "cond": "Fair",
-   "obs": "2 Nov 19:51 pm EST"
+   "obs": "2 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 53,
-    "text": "Mostly clear, with a low around 53. Southwest wind 6 to 9 mph. "
+    "text": "Mostly clear, with a low around 53. Southwest wind 6 to 8 mph. "
    },
    {
     "name": "Tuesday",
