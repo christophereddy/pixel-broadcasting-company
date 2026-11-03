@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-03T08:13:00Z",
+ "updatedAt": "2026-11-03T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Israeli attacks kill four in Gaza",
+   "b": "Two were killed in Khan Younis and one in al-Musaddar on Monday, plus one in a vehicle strike in Gaza City; a fifth Palestinian died of wounds.",
+   "date": "2026-11-03",
+   "publisher": "Al Jazeera",
+   "title": "Israeli forces kill four in Gaza as fifth Palestinian dies of wounds",
+   "url": "https://www.aljazeera.com/news/2026/11/3/israeli-forces-kill-four-in-gaza-as-fifth-palestinian-dies-of-wounds",
+   "gathered": "2026-11-03T09:53:00Z"
+  },
   {
    "h": "Explosions hit Iran's Qeshm Island",
    "b": "IRNA said blasts came in rapid succession late Monday and witnesses saw two planes over the island near the Strait of Hormuz.",
@@ -30,7 +39,7 @@
    "b": "Zelenskyy said a repeat strike dropped nine more bombs directly on a shelter in the Zaporizhia region; five others were injured.",
    "date": "2026-11-02",
    "publisher": "Al Jazeera",
-   "title": "Russian attack on Ukraine aid hub kills 26 as US announces new peace talks",
+   "title": "Russian attack on Ukraine aid hub kills 29 as US announces new peace talks",
    "url": "https://www.aljazeera.com/news/2026/11/2/russian-bombing-of-ukrainian-aid-centre-kills-24-people-zelenskyy",
    "gathered": "2026-11-02T20:12:46Z"
   },
@@ -42,16 +51,25 @@
    "gathered": "2026-11-02T07:59:16Z"
   },
   {
-   "h": "US conducts 'defensive' strikes in Hormuz",
-   "b": "The US carried out what it called defensive strikes on Iranian targets in the Strait of Hormuz. Al Jazeera is following the Iran war live.",
+   "h": "Ghalibaf says 'ball in US court' after Qeshm strike",
+   "b": "Iran's parliament speaker says the 'ball is in the US court' as Qeshm Island is struck. Al Jazeera is following the Iran war live.",
    "date": "2026-11-03",
    "publisher": "Al Jazeera",
-   "title": "US conducts ‘defensive’ strikes on Iranian targets in Strait of Hormuz",
+   "title": "Iranian speaker Ghalibaf says ‘ball in US court’ as Qeshm Island struck",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/3/iran-war-live-vance-sees-progress-in-talks-tehran-says-ball-in-us-court",
    "gathered": "2026-11-03T01:44:17Z"
   }
  ],
  "national": [
+  {
+   "h": "Bay Area debates data centres before midterms",
+   "b": "Oakland residents worry the centres will strain the grid and push up already high electricity bills.",
+   "date": "2026-11-03",
+   "publisher": "Al Jazeera",
+   "title": "California’s Bay Area debates data centres ahead of US midterm elections",
+   "url": "https://www.aljazeera.com/news/2026/11/3/californias-bay-area-debates-data-centres-ahead-of-us-midterm-elections",
+   "gathered": "2026-11-03T09:53:00Z"
+  },
   {
    "h": "Southwest flash floods force evacuations",
    "b": "Officials warned of potentially catastrophic flooding in Pagosa Springs, Colorado, with the San Juan River forecast to crest above 20 feet.",
@@ -103,8 +121,6 @@
    "h": "Lawmakers urge halt to Afghan deportations",
    "b": "They cited reports that at least 150 Afghans, some who worked with coalition forces, were set to be flown from Louisiana to Pakistan.",
    "date": "2026-11-03",
-   "publisher": "Al Jazeera",
-   "title": "US lawmakers ask Trump administration to stop deportation of Afghans",
    "url": "https://www.aljazeera.com/news/2026/11/3/us-lawmakers-ask-trump-administration-to-stop-deportation-of-afghans",
    "gathered": "2026-11-03T05:14:35Z"
   },
@@ -158,13 +174,24 @@
  ],
  "international": [
   {
+   "h": "UK to double wait for permanent residency",
+   "b": "Home Secretary Shabana Mahmood said hundreds of thousands of care workers will be exempt, after an outcry within Labour.",
+   "date": "2026-11-03",
+   "place": "London, UK",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK to double wait for permanent residency, with exemptions for care workers",
+   "url": "https://www.aljazeera.com/news/2026/11/3/uk-to-double-wait-for-permanent-residency-with-exemptions-for-care-workers",
+   "gathered": "2026-11-03T09:53:00Z"
+  },
+  {
    "h": "Israel arrests Al Jazeera journalist in West Bank",
    "b": "Correspondent Montaser Nassar was arrested at his home in Dura, near Hebron, among more than 13 Palestinians detained there Tuesday.",
    "date": "2026-11-03",
    "place": "Hebron, West Bank",
    "tz": "Asia/Hebron",
    "publisher": "Al Jazeera",
-   "title": "Israeli forces arrest Al Jazeera journalist in West Bank raid",
+   "title": "Israeli forces release Al Jazeera journalist in occupied West Bank",
    "url": "https://www.aljazeera.com/news/2026/11/3/israeli-forces-arrest-al-jazeera-journalist-in-raid-on-his-west-bank-home",
    "gathered": "2026-11-03T05:14:35Z"
   },
@@ -192,10 +219,7 @@
    "date": "2026-11-02",
    "place": "Kyiv, Ukraine",
    "tz": "Europe/Kyiv",
-   "publisher": "PBS NewsHour",
-   "title": "WATCH: Zelenskyy confirms Ukraine hacked back after Russia’s cyberattack of its emergency alert system",
    "url": "https://www.pbs.org/newshour/world/watch-zelenskyy-confirms-ukraine-hacked-back-after-russias-cyberattack-of-its-emergency-alert-system",
-   "published": "2026-11-02T18:06:16Z",
    "gathered": "2026-11-02T18:42:24Z"
   },
   {
@@ -351,6 +375,15 @@
  ],
  "sports": [
   {
+   "h": "UCLA upsets No. 5 Arizona on opening night",
+   "b": "College basketball tipped off Monday, with Grambling State beating Northern Illinois 89-87 in a 4 a.m. game.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "College basketball scores, opening night winners and losers: UCLA upsets No. 5 Arizona; No. 3 Illinois rolls",
+   "url": "https://www.cbssports.com/college-basketball/news/college-basketball-scores-opening-night-ucla-arizona-illinois-memphis/",
+   "gathered": "2026-11-03T09:53:00Z"
+  },
+  {
    "h": "Malone's UNC debut a shaky win",
    "b": "North Carolina beat Western Carolina 80-72, but the Catamounts cut the lead to one twice in the second half.",
    "date": "2026-11-02",
@@ -363,8 +396,6 @@
    "h": "No. 1 Florida opens with win over Miami",
    "b": "Thomas Haugh had 19 points and 10 rebounds, hitting four 3-pointers, as the top-ranked Gators began their season.",
    "date": "2026-11-02",
-   "publisher": "CBS Sports",
-   "title": "No. 1 Florida opens season with convincing victory vs. Miami: Gators show why they deserve No. 1 ranking",
    "url": "https://www.cbssports.com/college-basketball/news/florida-miami-season-opening-win-top-ranked-gators-hurricanes-thomas-haugh/",
    "gathered": "2026-11-03T02:12:28Z"
   },
@@ -379,8 +410,6 @@
    "h": "SEC rules Missouri's CJ Gunn ineligible",
    "b": "Gunn was banned after receiving $524 for three games in the Canadian Elite Basketball League in May.",
    "date": "2026-11-02",
-   "publisher": "CBS Sports",
-   "title": "Missouri's CJ Gunn ruled ineligble by SEC, Tigers starting C Jaylen Carey indefinitely suspended",
    "url": "https://www.cbssports.com/college-basketball/news/missouri-cj-gunn-ruled-ineligble-by-sec-jaylen-carey-indefinitely-suspended/",
    "gathered": "2026-11-03T01:44:17Z"
   },
@@ -553,46 +582,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
+   "temp": 53,
    "cond": "Fair",
-   "obs": "2 Nov 23:51 pm EST"
+   "obs": "3 Nov 04:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 53,
-    "text": "Mostly clear, with a low around 53. Southwest wind around 7 mph. "
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "kind": "high",
-    "temp": 68,
-    "text": "Mostly sunny, with a high near 68. Southwest wind 5 to 10 mph. "
+    "temp": 72,
+    "text": "Sunny, with a high near 72. Southwest wind 6 to 10 mph. "
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 57,
-    "text": "Partly cloudy, with a low around 57. Southwest wind 5 to 7 mph. "
+    "temp": 55,
+    "text": "Mostly clear, with a low around 55. South wind around 7 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 69,
-    "text": "Mostly sunny, with a high near 69. Light southwest wind becoming south 8 to 13 mph in the morning. "
+    "temp": 74,
+    "text": "Mostly sunny, with a high near 74. Southwest wind 5 to 10 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 62,
-    "text": "Increasing clouds, with a low around 62. South wind 7 to 9 mph. "
+    "temp": 59,
+    "text": "Cloudy during the early evening, then becoming partly cloudy, with a low around 59. South wind 7 to 9 mph. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 69,
-    "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 69. Chance of precipitation is 60%."
+    "temp": 72,
+    "text": "A 30 percent chance of showers, mainly after noon.  Mostly cloudy, with a high near 72. South wind 7 to 10 mph. "
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 63,
+    "text": "A chance of showers before 1am, then a chance of showers and thunderstorms between 1am and 3am, then showers likely and possibly a thunderstorm after 3am.  Mostly cloudy, with a low around 63. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    }
   ]
  },
