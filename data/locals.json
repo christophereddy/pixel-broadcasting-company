@@ -22,11 +22,11 @@
    "now": {
     "temp": 64,
     "cond": "Mostly Cloudy",
-    "obs": "2 Nov 20:52 pm EST"
+    "obs": "2 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 59,
      "text": "Partly cloudy, with a low around 59. East wind around 10 mph, with gusts as high as 20 mph. "
@@ -41,25 +41,25 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 64,
-     "text": "A 20 percent chance of showers after 4am.  Mostly cloudy, with a low around 64. East wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "A 20 percent chance of showers after 3am.  Mostly cloudy, with a low around 64. Southeast wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 74,
-     "text": "Showers likely, then showers and possibly a thunderstorm after 10am.  High near 74. Southeast wind around 10 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%."
+     "text": "Showers and thunderstorms likely, then showers and possibly a thunderstorm after 1pm.  High near 74. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 62,
-     "text": "Showers and possibly a thunderstorm before 1am, then a chance of showers.  Low around 62. Southeast wind around 5 mph.  Chance of precipitation is 80%."
+     "text": "Showers and possibly a thunderstorm before 1am, then a chance of showers and thunderstorms between 1am and 4am, then a chance of showers after 4am.  Low around 62. Southeast wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 80%."
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 75,
-     "text": "A 20 percent chance of showers.  Partly sunny, with a high near 75."
+     "text": "A 40 percent chance of showers, mainly after 1pm.  Partly sunny, with a high near 75."
     }
    ]
   },
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -100,16 +100,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Mostly Cloudy",
-    "obs": "2 Nov 20:54 pm EST"
+    "temp": 56,
+    "cond": "Partly Cloudy",
+    "obs": "2 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 50,
-     "text": "Partly cloudy, with a low around 50. Southwest wind 5 to 7 mph. "
+     "text": "Mostly cloudy, with a low around 50. Southwest wind around 6 mph. "
     },
     {
      "name": "Tuesday",
@@ -155,7 +155,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -188,7 +188,11 @@
     "h": "Ex-Chicago FBI boss sues over 'Broadview Six' blame",
     "b": "Douglas DePodesta alleges he resigned under duress after U.S. Attorney Andrew Boutros sought to blame him for the case's collapse.",
     "date": "2026-11-02",
+    "publisher": "WBEZ",
+    "title": "'Broadview 6' case heats up again as ex-FBI boss sues, top federal prosecutor ordered to testify",
     "url": "https://www.wbez.org/crime/2026/11/02/fbi-boutros-depodesta-broadview-six",
+    "published": "2026-11-03T03:08:00Z",
+    "updated": "2026-11-03T03:10:29Z",
     "gathered": "2026-11-02T18:42:24Z"
    },
    {
@@ -202,15 +206,15 @@
   "weather": {
    "now": {
     "temp": 60,
-    "cond": "Overcast",
-    "obs": "2 Nov 19:53 pm CST"
+    "cond": " Light Drizzle Fog/Mist",
+    "obs": "2 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 59,
-     "text": "Areas of drizzle before 3am.  Cloudy, with a temperature rising to around 63 by 5am. Breezy, with a south wind 15 to 20 mph, with gusts as high as 25 mph. "
+     "temp": 62,
+     "text": "Areas of drizzle before 3am.  Cloudy, with a steady temperature around 62. Breezy, with a south wind 15 to 20 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday",
@@ -256,7 +260,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -284,16 +288,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Overcast and Windy",
-    "obs": "2 Nov 17:58 pm MST"
+    "temp": 44,
+    "cond": " Light Rain and Breezy",
+    "obs": "2 Nov 21:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "A chance of showers before 8pm, then a slight chance of showers after 11pm.  Mostly cloudy, with a low around 40. North wind 5 to 7 mph becoming calm.  Chance of precipitation is 30%."
+     "text": "A 30 percent chance of showers.  Mostly cloudy, with a low around 40. North wind around 5 mph becoming calm. "
     },
     {
      "name": "Tuesday",
@@ -339,7 +343,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -350,6 +354,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LA County pauses Skid Row syringe handouts",
+    "b": "The county stopped giving out syringes and pipes at its Skid Row services hub in August and ended the contract of the nonprofit running harm reduction there.",
+    "date": "2026-11-02",
+    "publisher": "LAist",
+    "title": "LA County pauses syringe and pipe handouts at Skid Row services hub",
+    "url": "https://laist.com/news/health/la-county-pauses-syringe-pipe-handouts-skid-row",
+    "published": "2026-11-03T03:00:03Z",
+    "updated": "2026-11-03T03:00:03Z",
+    "gathered": "2026-11-03T05:14:35Z"
+   },
    {
     "h": "New law makes it easier to ask for more college aid",
     "b": "Colleges must show how students can request more financial aid and publish how they calculate the cost of attendance.",
@@ -402,7 +417,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56. West southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 56. West northwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -448,7 +463,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -533,16 +548,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 56,
     "cond": "Fair",
-    "obs": "2 Nov 20:51 pm EST"
+    "obs": "2 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 53,
-     "text": "Mostly clear, with a low around 53. Southwest wind 6 to 8 mph. "
+     "text": "Mostly clear, with a low around 53. Southwest wind around 7 mph. "
     },
     {
      "name": "Tuesday",
@@ -588,7 +603,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -657,7 +672,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "goodnews": []
  },
  {
@@ -732,7 +747,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-03T05:11:00Z",
+  "updatedAt": "2026-11-03T08:13:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

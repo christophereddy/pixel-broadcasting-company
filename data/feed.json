@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T05:11:00Z",
+ "updatedAt": "2026-11-03T08:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,30 @@
  },
  "world": [
   {
+   "h": "Explosions hit Iran's Qeshm Island",
+   "b": "IRNA said blasts came in rapid succession late Monday and witnesses saw two planes over the island near the Strait of Hormuz.",
+   "date": "2026-11-03",
+   "publisher": "Al Jazeera",
+   "title": "Explosions hit Iran’s Qeshm Island as US media report US strikes in Hormuz",
+   "url": "https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz",
+   "gathered": "2026-11-03T05:14:35Z"
+  },
+  {
+   "h": "US strikes Iranian targets in Hormuz",
+   "b": "A U.S. official said Iranians using surface-to-air missiles against U.S. assets were targeted; the strikes appeared limited rather than a return to full hostilities.",
+   "date": "2026-11-02",
+   "publisher": "PBS NewsHour",
+   "title": "U.S. strikes Iranian targets in Strait of Hormuz, U.S. official tells AP",
+   "url": "https://www.pbs.org/newshour/world/u-s-strikes-iranian-targets-in-strait-of-hormuz-u-s-official-tells-ap",
+   "published": "2026-11-03T02:59:26Z",
+   "gathered": "2026-11-03T05:14:35Z"
+  },
+  {
    "h": "Russian bombing of Ukrainian aid centre kills 24",
    "b": "Zelenskyy said a repeat strike dropped nine more bombs directly on a shelter in the Zaporizhia region; five others were injured.",
    "date": "2026-11-02",
    "publisher": "Al Jazeera",
-   "title": "Russian strike on Ukraine aid hub kills 26 as US announces new peace talks",
+   "title": "Russian attack on Ukraine aid hub kills 26 as US announces new peace talks",
    "url": "https://www.aljazeera.com/news/2026/11/2/russian-bombing-of-ukrainian-aid-centre-kills-24-people-zelenskyy",
    "gathered": "2026-11-02T20:12:46Z"
   },
@@ -23,11 +42,11 @@
    "gathered": "2026-11-02T07:59:16Z"
   },
   {
-   "h": "Vance sees 'progress' in Iran talks",
-   "b": "Vance says there is progress in talks while Tehran says 'the ball is in the US court'. Al Jazeera is following the Iran war live.",
+   "h": "US conducts 'defensive' strikes in Hormuz",
+   "b": "The US carried out what it called defensive strikes on Iranian targets in the Strait of Hormuz. Al Jazeera is following the Iran war live.",
    "date": "2026-11-03",
    "publisher": "Al Jazeera",
-   "title": "JD Vance sees ‘progress’ in Iran talks, Tehran says ‘ball is in US court’",
+   "title": "US conducts ‘defensive’ strikes on Iranian targets in Strait of Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/3/iran-war-live-vance-sees-progress-in-talks-tehran-says-ball-in-us-court",
    "gathered": "2026-11-03T01:44:17Z"
   }
@@ -81,6 +100,15 @@
  ],
  "politics": [
   {
+   "h": "Lawmakers urge halt to Afghan deportations",
+   "b": "They cited reports that at least 150 Afghans, some who worked with coalition forces, were set to be flown from Louisiana to Pakistan.",
+   "date": "2026-11-03",
+   "publisher": "Al Jazeera",
+   "title": "US lawmakers ask Trump administration to stop deportation of Afghans",
+   "url": "https://www.aljazeera.com/news/2026/11/3/us-lawmakers-ask-trump-administration-to-stop-deportation-of-afghans",
+   "gathered": "2026-11-03T05:14:35Z"
+  },
+  {
    "h": "House Democrats demand answers on detained citizens",
    "b": "Rep. Lou Correa and 39 others asked DHS how many U.S. citizens immigration agents have held, after ProPublica counted more than 500.",
    "date": "2026-11-02",
@@ -130,13 +158,22 @@
  ],
  "international": [
   {
+   "h": "Israel arrests Al Jazeera journalist in West Bank",
+   "b": "Correspondent Montaser Nassar was arrested at his home in Dura, near Hebron, among more than 13 Palestinians detained there Tuesday.",
+   "date": "2026-11-03",
+   "place": "Hebron, West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israeli forces arrest Al Jazeera journalist in West Bank raid",
+   "url": "https://www.aljazeera.com/news/2026/11/3/israeli-forces-arrest-al-jazeera-journalist-in-raid-on-his-west-bank-home",
+   "gathered": "2026-11-03T05:14:35Z"
+  },
+  {
    "h": "Ebola deaths top 5,300 in Africa outbreak",
    "b": "Africa CDC says most cases are in DR Congo, which declared its 17th and largest Ebola outbreak in mid-May.",
    "date": "2026-11-03",
    "place": "Kinshasa, DR Congo",
    "tz": "Africa/Kinshasa",
-   "publisher": "Al Jazeera",
-   "title": "Ebola outbreak kills more than 5,300 people in DR Congo",
    "url": "https://www.aljazeera.com/news/2026/11/3/ebola-outbreak-kills-more-than-5300-people-in-dr-congo",
    "gathered": "2026-11-03T02:12:28Z"
   },
@@ -146,10 +183,7 @@
    "date": "2026-11-02",
    "place": "Sofia, Bulgaria",
    "tz": "Europe/Sofia",
-   "publisher": "PBS NewsHour",
-   "title": "Initial results suggest Iliana Yotova wins runoff to become Bulgaria's 1st elected female president",
    "url": "https://www.pbs.org/newshour/world/initial-results-suggest-iliana-yotova-wins-runoff-to-become-bulgarias-1st-elected-female-president",
-   "published": "2026-11-02T20:44:47Z",
    "gathered": "2026-11-03T01:44:17Z"
   },
   {
@@ -270,7 +304,7 @@
    "b": "A KFF analysis found an employer family plan averaged $28,303 this year, up 5%, with workers paying about $7,470.",
    "date": "2026-11-02",
    "publisher": "PBS NewsHour",
-   "title": "Why health insurance premiums are rising, according to experts",
+   "title": "Why are Americans paying more for health insurance? Experts give 3 reasons",
    "url": "https://www.pbs.org/newshour/nation/why-health-insurance-premiums-are-rising-according-to-experts",
    "published": "2026-11-02T22:09:29Z",
    "gathered": "2026-11-03T01:44:17Z"
@@ -316,6 +350,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "Malone's UNC debut a shaky win",
+   "b": "North Carolina beat Western Carolina 80-72, but the Catamounts cut the lead to one twice in the second half.",
+   "date": "2026-11-02",
+   "publisher": "CBS Sports",
+   "title": "Michael Malone's debut as North Carolina coach exposes issues in Tar Heels' ugly win vs. Western Carolina",
+   "url": "https://www.cbssports.com/college-basketball/news/michael-malone-debut-north-carolina-coach-western-carolina/",
+   "gathered": "2026-11-03T05:14:35Z"
+  },
   {
    "h": "No. 1 Florida opens with win over Miami",
    "b": "Thomas Haugh had 19 points and 10 rebounds, hitting four 3-pointers, as the top-ranked Gators began their season.",
@@ -424,8 +467,6 @@
    "h": "Karl Bushby home after 28-year walk around world",
    "b": "The 57-year-old British adventurer was embraced by his mother in Hull after travelling some 50,000km on foot.",
    "date": "2026-11-02",
-   "publisher": "Al Jazeera",
-   "title": "British adventurer Karl Bushby returns home after 28-year walk around world",
    "url": "https://www.aljazeera.com/news/2026/11/2/british-adventurer-karl-bushby-returns-home-after-28-year-walk-around-world",
    "gathered": "2026-11-02T18:42:24Z"
   },
@@ -512,16 +553,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 56,
    "cond": "Fair",
-   "obs": "2 Nov 20:51 pm EST"
+   "obs": "2 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 53,
-    "text": "Mostly clear, with a low around 53. Southwest wind 6 to 8 mph. "
+    "text": "Mostly clear, with a low around 53. Southwest wind around 7 mph. "
    },
    {
     "name": "Tuesday",
