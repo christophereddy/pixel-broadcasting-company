@@ -31,19 +31,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 65,
     "cond": "Overcast",
-    "obs": "4 Nov 02:52 am EST"
+    "obs": "4 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
      "text": "A chance of showers and thunderstorms, then showers and possibly a thunderstorm after 9am.  High near 72. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 65,
      "text": "Showers and thunderstorms likely before 1am, then a chance of showers.  Mostly cloudy, with a low around 65. South wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
@@ -64,7 +64,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74."
+     "text": "Sunny, with a high near 74. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Friday Night",
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,46 +99,46 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Partly Cloudy",
-    "obs": "4 Nov 02:54 am EST"
+    "temp": 56,
+    "cond": "A Few Clouds",
+    "obs": "4 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 76,
-     "text": "Mostly sunny, with a high near 76. Southwest wind 6 to 11 mph. "
+     "text": "Sunny, with a high near 76. Southwest wind 6 to 10 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Partly cloudy, with a low around 57. Southwest wind 6 to 9 mph. "
+     "temp": 58,
+     "text": "Increasing clouds, with a low around 58. Southwest wind 6 to 8 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 74,
-     "text": "Mostly cloudy, with a high near 74. Southwest wind 6 to 11 mph, with gusts as high as 22 mph. "
+     "text": "Mostly cloudy, with a high near 74. Southwest wind 7 to 13 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 62,
-     "text": "A chance of rain after 1am.  Mostly cloudy, with a low around 62. Southwest wind 6 to 8 mph.  Chance of precipitation is 50%."
+     "text": "A chance of rain, mainly after 2am.  Mostly cloudy, with a low around 62. Southwest wind 6 to 9 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 69,
-     "text": "Rain likely, then rain and possibly a thunderstorm after 10am.  High near 69. South wind 5 to 7 mph.  Chance of precipitation is 80%."
+     "temp": 70,
+     "text": "Rain, with thunderstorms also possible after 4pm.  High near 70. South wind around 6 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Rain and possibly a thunderstorm.  Low around 57. South wind around 7 mph.  Chance of precipitation is 80%."
+     "text": "Rain and possibly a thunderstorm.  Low around 57. South wind 3 to 5 mph.  Chance of precipitation is 100%."
     }
    ]
   },
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -166,25 +166,28 @@
   },
   "local": [
    {
+    "h": "Rhymefest keeps South Side school board seat",
+    "b": "Grammy-winning artist Che \"Rhymefest\" Smith was reelected in District 10a over a write-in challenger.",
+    "date": "2026-11-04",
+    "publisher": "WBEZ",
+    "title": "Grammy winner Che ‘Rhymefest’ Smith reelected in South Side District 10a Chicago School Board race",
+    "url": "https://www.wbez.org/education/2026/11/03/chicago-school-board-district-10a-results",
+    "published": "2026-11-04T09:31:00Z",
+    "updated": "2026-11-04T09:31:18Z",
+    "gathered": "2026-11-04T11:24:59Z"
+   },
+   {
     "h": "Illinois Democrats aim to unwind Trump policies",
     "b": "Democratic members of Congress hope to pass legislation rolling back some of the administration's policies.",
     "date": "2026-11-04",
-    "publisher": "WBEZ",
-    "title": "As blue wave sweeps country, Illinois Democrats want to unwind Trump policies ‘as quickly as possible’",
     "url": "https://www.wbez.org/government-politics/elections/2026/11/03/blue-wave-election-night-illinois-democrats-unwind-trump-policies",
-    "published": "2026-11-04T04:06:30Z",
-    "updated": "2026-11-04T04:06:30Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
     "h": "Teachers union leads in nine school board races",
     "b": "CTU candidates were ahead in nine of 20 seats, though its pick for board president trailed Jessica Biggs.",
     "date": "2026-11-04",
-    "publisher": "WBEZ",
-    "title": "Chicago Teachers Union poised to capture half of school board district seats, but loses president’s race",
     "url": "https://www.wbez.org/education/2026/11/03/chicago-teachers-union-poised-to-capture-half-of-school-board-district-seats-but-likely-to-lose-presidency",
-    "published": "2026-11-04T03:30:36Z",
-    "updated": "2026-11-04T03:44:24Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -212,49 +215,35 @@
     "h": "Stratton, Tracy face off for Durbin's Senate seat",
     "b": "Juliana Stratton backs a $25 minimum wage and abolishing ICE; Don Tracy is a former state GOP chair.",
     "date": "2026-11-03",
-    "publisher": "WBEZ",
-    "title": "Democrat Juliana Stratton takes reins from Dick Durbin in decisive U.S. Senate victory",
     "url": "https://www.wbez.org/government-politics/elections/2026/11/03/elections-2026-11-03-us-senate-illinois-midterm-results",
-    "published": "2026-11-04T02:23:00Z",
-    "updated": "2026-11-04T02:38:47Z",
     "gathered": "2026-11-03T11:13:22Z"
    },
    {
     "h": "Pritzker, Bailey meet again in governor race",
     "b": "Pritzker seeks a rare third term in a 2022 rematch; independent Collin Corbett hopes to draw moderate voters.",
     "date": "2026-11-03",
-    "publisher": "WBEZ",
-    "title": "Illinois Gov. JB Pritzker beats Darren Bailey for 3rd term, leaving one question: Will he run for president?",
     "url": "https://www.wbez.org/government-politics/elections/2026/11/03/jb-pritzker-and-darren-bailey-square-off-again-in-illinois-governor-race",
-    "published": "2026-11-04T02:14:00Z",
-    "updated": "2026-11-04T02:43:09Z",
     "gathered": "2026-11-03T11:13:22Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": " Light Rain",
-    "obs": "4 Nov 01:53 am CST"
+    "temp": 64,
+    "cond": " Light Drizzle Fog/Mist",
+    "obs": "4 Nov 04:53 am CST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 64,
-     "text": "Showers.  Steady temperature around 64. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 64,
-     "text": "A 50 percent chance of showers, mainly before 11am.  Mostly cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "text": "Scattered showers before 11am, then patchy drizzle with isolated showers between 11am and 2pm, then patchy drizzle with isolated sprinkles after 2pm.  Mostly cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Mostly cloudy, with a low around 49. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "temp": 50,
+     "text": "Patchy drizzle with isolated sprinkles before 10pm.  Mostly cloudy, with a low around 50. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
@@ -273,6 +262,12 @@
      "kind": "high",
      "temp": 50,
      "text": "A 30 percent chance of showers before noon.  Mostly cloudy, with a high near 50. Breezy. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "Mostly cloudy, with a low around 40. Breezy. "
     }
    ]
   },
@@ -288,7 +283,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -309,25 +304,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 36,
     "cond": "Fair",
-    "obs": "4 Nov 00:58 am MST"
+    "obs": "4 Nov 03:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 35,
-     "text": "Partly cloudy, with a low around 35. Light south southwest wind. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 57,
      "text": "Partly sunny, with a high near 57. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 37,
      "text": "A 20 percent chance of showers before 11pm.  Mostly cloudy, with a low around 37. North northeast wind around 6 mph becoming calm  after midnight. "
@@ -348,7 +337,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly sunny, with a high near 57."
+     "text": "Mostly sunny, with a high near 57. Calm wind becoming north northeast around 5 mph. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35."
     }
    ]
   },
@@ -364,7 +359,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -424,12 +419,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a low around 55. Calm wind becoming north around 5 mph. "
-    },
-    {
      "name": "Wednesday",
      "kind": "high",
      "temp": 76,
@@ -458,6 +447,12 @@
      "kind": "high",
      "temp": 84,
      "text": "Sunny, with a high near 84."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59."
     }
    ]
   },
@@ -473,7 +468,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -651,17 +646,17 @@
    "now": {
     "temp": 59,
     "cond": "Fair",
-    "obs": "4 Nov 02:51 am EST"
+    "obs": "4 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
      "text": "Sunny, with a high near 72. Southwest wind 5 to 11 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 62,
      "text": "Partly cloudy, with a low around 62. South wind 8 to 10 mph. "
@@ -682,13 +677,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 67,
-     "text": "Showers, with thunderstorms also possible after 1pm.  High near 67. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible. "
+     "text": "Showers, with thunderstorms also possible after 10am.  High near 67. South wind 5 to 8 mph.  Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 58,
-     "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 58. Chance of precipitation is 60%."
+     "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 58. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -704,7 +699,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -731,33 +726,21 @@
     "h": "Hoax bomb threats disrupt European flights",
     "b": "Flights to Warsaw, a Ryanair flight to Murcia and a Wizz Air flight in Sofia were hit by bomb alerts.",
     "date": "2026-11-03",
-    "publisher": "The Local France",
-    "title": "UPDATE: Hoax bomb threats disrupt flights around Europe",
     "url": "https://www.thelocal.fr/20261103/hoax-bomb-threats-disrupt-flights-in-europe",
-    "published": "2026-11-03T14:20:52Z",
-    "updated": "2026-11-03T14:20:56Z",
     "gathered": "2026-11-03T17:58:29Z"
    },
    {
     "h": "Food rules to ease on UK-France trips",
     "b": "An EU-UK deal removes Brexit checks on food and animal products such as cheese and sausages, expected from 2028.",
     "date": "2026-11-03",
-    "publisher": "The Local France",
-    "title": "Food rules to be relaxed on UK-France trips after EU deal",
     "url": "https://www.thelocal.fr/20261103/food-rules-to-be-relaxed-on-uk-france-trips-after-eu-deal",
-    "published": "2026-11-03T12:46:25Z",
-    "updated": "2026-11-03T12:46:26Z",
     "gathered": "2026-11-03T14:16:48Z"
    },
    {
     "h": "Students blockade dozens of French schools",
     "b": "Officials said 48 of 3,700 lycées and 51 higher education sites were blocked or disrupted, including in Paris.",
     "date": "2026-11-03",
-    "publisher": "The Local France",
-    "title": "Students blockade dozens of French schools and universities",
     "url": "https://www.thelocal.fr/20261103/students-blockade-dozens-of-french-schools-and-universities",
-    "published": "2026-11-03T14:06:26Z",
-    "updated": "2026-11-03T14:06:27Z",
     "gathered": "2026-11-03T14:16:48Z"
    },
    {
@@ -791,7 +774,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "goodnews": []
  },
  {
@@ -816,12 +799,6 @@
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "Tonight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43. Calm wind. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -851,6 +828,12 @@
      "kind": "high",
      "temp": 55,
      "text": "Rain likely.  Cloudy, with a high near 55. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 49,
+     "text": "Rain likely, mainly before 4am.  Cloudy, with a low around 49. Chance of precipitation is 70%."
     }
    ]
   },
@@ -866,7 +849,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T11:14:00Z",
+  "updatedAt": "2026-11-04T14:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

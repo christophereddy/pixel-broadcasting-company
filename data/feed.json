@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T11:14:00Z",
+ "updatedAt": "2026-11-04T14:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -51,11 +51,11 @@
    "gathered": "2026-11-03T05:14:35Z"
   },
   {
-   "h": "Iran readies 'maximum deterrence' plan",
-   "b": "Tehran says it has a plan ready in case of any new US attack, Al Jazeera's live coverage reports.",
+   "h": "Khamenei warns of 'broader retaliation'",
+   "b": "Iran's supreme leader warned of a wider response if the US renews attacks, Al Jazeera's live coverage reports.",
    "date": "2026-11-04",
    "publisher": "Al Jazeera",
-   "title": "Iran says ‘maximum deterrence’ plan ready in case of new US attack",
+   "title": "Supreme Leader Khamenei warns of ‘broader retaliation’ if US renews attacks",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/4/iran-war-live-tehran-prepares-maximum-deterrence-plan-for-any-new-attack",
    "gathered": "2026-11-04T03:10:24Z"
   }
@@ -85,6 +85,17 @@
  ],
  "politics": [
   {
+   "h": "Aaron Ford wins Nevada governor's race",
+   "b": "The state attorney general unseated the Republican incumbent in one of the most competitive governor's races.",
+   "date": "2026-11-04",
+   "publisher": "KUOW",
+   "title": "Nevada Attorney General Aaron Ford beats GOP incumbent for governor",
+   "url": "https://www.kuow.org/npr-news/2026-11-04/nevada-attorney-general-aaron-ford-beats-gop-incumbent-for-governor",
+   "published": "2026-11-04T09:48:40Z",
+   "updated": "2026-11-04T09:56:02Z",
+   "gathered": "2026-11-04T11:24:59Z"
+  },
+  {
    "h": "Democrats win control of the House",
    "b": "Voters rebuked Trump over high prices, the Iran war and corruption concerns, giving Democrats both chambers.",
    "date": "2026-11-04",
@@ -109,11 +120,7 @@
    "h": "Troy Jackson unseats Sen. Susan Collins in Maine",
    "b": "The Democrat beat the longest-serving Republican woman in the Senate, a key flip for his party.",
    "date": "2026-11-04",
-   "publisher": "KUOW",
-   "title": "Troy Jackson wins Maine Senate race over Susan Collins, in major coup for Democrats",
    "url": "https://www.kuow.org/npr-news/2026-11-03/troy-jackson-wins-maine-senate-race-over-susan-collins-in-major-coup-for-democrats",
-   "published": "2026-11-04T06:02:31Z",
-   "updated": "2026-11-04T06:51:04Z",
    "gathered": "2026-11-04T08:17:00Z"
   },
   {
@@ -340,7 +347,7 @@
    "place": "South Africa",
    "tz": "Africa/Johannesburg",
    "publisher": "Al Jazeera",
-   "title": "South Africans vote in local elections seen as test for embattled ANC",
+   "title": "South Africans vote in local elections as failing services test ANC",
    "url": "https://www.aljazeera.com/news/2026/11/4/south-africans-vote-in-local-elections-seen-as-test-for-embattled-anc",
    "gathered": "2026-11-04T08:17:00Z"
   },
@@ -372,11 +379,7 @@
    "date": "2026-11-03",
    "place": "Warsaw, Poland",
    "tz": "Europe/Warsaw",
-   "publisher": "The Local France",
-   "title": "UPDATE: Hoax bomb threats disrupt flights around Europe",
    "url": "https://www.thelocal.fr/20261103/hoax-bomb-threats-disrupt-flights-in-europe",
-   "published": "2026-11-03T14:20:52Z",
-   "updated": "2026-11-03T14:20:56Z",
    "gathered": "2026-11-03T17:58:29Z"
   },
   {
@@ -770,17 +773,17 @@
   "now": {
    "temp": 59,
    "cond": "Fair",
-   "obs": "4 Nov 02:51 am EST"
+   "obs": "4 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Wednesday",
+    "name": "Today",
     "kind": "high",
     "temp": 72,
     "text": "Sunny, with a high near 72. Southwest wind 5 to 11 mph. "
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 62,
     "text": "Partly cloudy, with a low around 62. South wind 8 to 10 mph. "
@@ -801,13 +804,13 @@
     "name": "Friday",
     "kind": "high",
     "temp": 67,
-    "text": "Showers, with thunderstorms also possible after 1pm.  High near 67. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible. "
+    "text": "Showers, with thunderstorms also possible after 10am.  High near 67. South wind 5 to 8 mph.  Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 58,
-    "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 58. Chance of precipitation is 60%."
+    "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 58. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
    }
   ]
  },
@@ -833,6 +836,14 @@
    "name": "National Weather Service",
    "url": "https://forecast.weather.gov/MapClick.php?lat=40.7128&lon=-74.006",
    "desk": "local"
+  },
+  {
+   "name": "Gothamist",
+   "url": "https://gothamist.com/news"
+  },
+  {
+   "name": "National Weather Service",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=40.7128&lon=-74.006"
   },
   {
    "name": "Democracy Now!",
