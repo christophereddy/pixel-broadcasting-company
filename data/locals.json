@@ -31,46 +31,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 67,
     "cond": "Overcast",
-    "obs": "3 Nov 23:52 pm EST"
+    "obs": "4 Nov 02:52 am EST"
    },
    "periods": [
     {
-     "name": "Tonight",
-     "kind": "low",
-     "temp": 65,
-     "text": "A 30 percent chance of showers and thunderstorms, mainly after 3am.  Mostly cloudy, with a low around 65. Southeast wind around 15 mph, with gusts as high as 25 mph. "
-    },
-    {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 73,
-     "text": "Showers and thunderstorms likely, then showers and possibly a thunderstorm after 2pm.  High near 73. Southeast wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+     "temp": 72,
+     "text": "A chance of showers and thunderstorms, then showers and possibly a thunderstorm after 9am.  High near 72. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 64,
-     "text": "A chance of showers and thunderstorms.  Mostly cloudy, with a low around 64. South wind around 5 mph becoming calm  in the evening.  Chance of precipitation is 50%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "temp": 65,
+     "text": "Showers and thunderstorms likely before 1am, then a chance of showers.  Mostly cloudy, with a low around 65. South wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 77,
-     "text": "A 40 percent chance of showers, mainly after 1pm.  Partly sunny, with a high near 77. Calm wind becoming southwest around 5 mph in the morning. "
+     "temp": 76,
+     "text": "A 20 percent chance of showers between noon and 4pm.  Partly sunny, with a high near 76. Calm wind becoming southwest around 5 mph in the morning. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 58,
-     "text": "A 40 percent chance of showers, mainly after 1am.  Mostly cloudy, with a low around 58. Calm wind. "
+     "text": "A 20 percent chance of showers after 1am.  Partly cloudy, with a low around 58. Calm wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 75,
-     "text": "A 20 percent chance of showers.  Mostly sunny, with a high near 75."
+     "temp": 74,
+     "text": "Sunny, with a high near 74."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Clear, with a low around 50."
     }
    ]
   },
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,17 +99,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Overcast",
-    "obs": "3 Nov 23:54 pm EST"
+    "temp": 58,
+    "cond": "Partly Cloudy",
+    "obs": "4 Nov 02:54 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. Southwest wind around 6 mph. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -139,6 +133,12 @@
      "kind": "high",
      "temp": 69,
      "text": "Rain likely, then rain and possibly a thunderstorm after 10am.  High near 69. South wind 5 to 7 mph.  Chance of precipitation is 80%."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 57,
+     "text": "Rain and possibly a thunderstorm.  Low around 57. South wind around 7 mph.  Chance of precipitation is 80%."
     }
    ]
   },
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -181,7 +181,7 @@
     "b": "CTU candidates were ahead in nine of 20 seats, though its pick for board president trailed Jessica Biggs.",
     "date": "2026-11-04",
     "publisher": "WBEZ",
-    "title": "Chicago Teachers Union poised to capture half of school board district seats but likely to lose presidency",
+    "title": "Chicago Teachers Union poised to capture half of school board district seats, but loses president’s race",
     "url": "https://www.wbez.org/education/2026/11/03/chicago-teachers-union-poised-to-capture-half-of-school-board-district-seats-but-likely-to-lose-presidency",
     "published": "2026-11-04T03:30:36Z",
     "updated": "2026-11-04T03:44:24Z",
@@ -234,45 +234,45 @@
   "weather": {
    "now": {
     "temp": 68,
-    "cond": "Overcast",
-    "obs": "3 Nov 22:53 pm CST"
+    "cond": " Light Rain",
+    "obs": "4 Nov 01:53 am CST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 61,
-     "text": "Rain likely, mainly after 2am.  Cloudy, with a low around 61. Breezy, with a south wind 15 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 64,
+     "text": "Showers.  Steady temperature around 64. Breezy, with a south wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 63,
-     "text": "Showers likely, mainly before noon.  Mostly cloudy, with a temperature rising to near 63 by 9am, then falling to around 57 during the remainder of the day. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 64,
+     "text": "A 50 percent chance of showers, mainly before 11am.  Mostly cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly cloudy, with a low around 50. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "temp": 49,
+     "text": "Mostly cloudy, with a low around 49. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 56,
-     "text": "A 20 percent chance of showers after noon.  Mostly cloudy, with a high near 56. Southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "A 40 percent chance of showers, mainly after 2pm.  Cloudy, with a high near 56. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Showers likely, mainly after midnight.  Cloudy, with a low around 46. West southwest wind 10 to 15 mph becoming north after midnight.  Chance of precipitation is 60%."
+     "temp": 45,
+     "text": "Showers likely, mainly before midnight.  Cloudy, with a low around 45. West wind around 15 mph becoming north after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 53,
-     "text": "A 50 percent chance of showers.  Mostly cloudy, with a high near 53."
+     "temp": 50,
+     "text": "A 30 percent chance of showers before noon.  Mostly cloudy, with a high near 50. Breezy. "
     }
    ]
   },
@@ -288,7 +288,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -309,40 +309,40 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "A Few Clouds",
-    "obs": "3 Nov 20:58 pm MST"
+    "temp": 39,
+    "cond": "Fair",
+    "obs": "4 Nov 00:58 am MST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly clear, with a low around 34. Light south southwest wind. "
+     "temp": 35,
+     "text": "Partly cloudy, with a low around 35. Light south southwest wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 57,
-     "text": "Increasing clouds, with a high near 57. Calm wind becoming northeast 5 to 7 mph in the afternoon. Winds could gust as high as 15 mph. "
+     "text": "Partly sunny, with a high near 57. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 36,
-     "text": "Mostly cloudy, with a low around 36. North northeast wind around 5 mph becoming calm  in the evening. "
+     "temp": 37,
+     "text": "A 20 percent chance of showers before 11pm.  Mostly cloudy, with a low around 37. North northeast wind around 6 mph becoming calm  after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 58. Southwest wind around 5 mph becoming calm  in the morning. "
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 58. South southwest wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Partly cloudy, with a low around 35. Light and variable wind. "
+     "temp": 37,
+     "text": "Partly cloudy, with a low around 37. Calm wind. "
     },
     {
      "name": "Friday",
@@ -364,7 +364,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -376,6 +376,28 @@
   },
   "local": [
    {
+    "h": "California voters reject Prop 39 voter ID measure",
+    "b": "About 60% opposed the GOP-backed proposal, which drew millions from Republican megadonors.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "Prop 39: California voters reject conservative voter ID proposal",
+    "url": "https://laist.com/news/politics/2026-election-california-general-proposition-39-results",
+    "published": "2026-11-04T06:01:15Z",
+    "updated": "2026-11-04T06:42:10Z",
+    "gathered": "2026-11-04T08:17:00Z"
+   },
+   {
+    "h": "Clinic spending measure Prop 44 fails",
+    "b": "Voters rejected the SEIU-UHW measure, the union's fourth failed clinic initiative since 2018.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "Prop 44 fails: Clinics defeat measures that would have restricted their spending",
+    "url": "https://laist.com/news/politics/2026-election-california-general-proposition-44-results",
+    "published": "2026-11-04T05:44:57Z",
+    "updated": "2026-11-04T07:08:02Z",
+    "gathered": "2026-11-04T08:17:00Z"
+   },
+   {
     "h": "Bass narrowly leads Raman in early mayor count",
     "b": "Mayor Karen Bass was ahead 50.86% to 49.14% after the first ballot drops; counting will take days.",
     "date": "2026-11-04",
@@ -383,7 +405,7 @@
     "title": "Bass ahead in early LA mayor’s race vote count, Raman trailing close behind",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
     "published": "2026-11-04T04:21:44Z",
-    "updated": "2026-11-04T05:12:57Z",
+    "updated": "2026-11-04T08:15:24Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -391,10 +413,10 @@
     "b": "Sheriff Robert Luna led predecessor Alex Villanueva in early returns.",
     "date": "2026-11-04",
     "publisher": "LAist",
-    "title": "Live results: Luna takes wide lead in early results",
+    "title": "Live results: Luna wins second term as LA County sheriff",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-county-sheriff-results-luna-villanueva",
     "published": "2026-11-04T04:33:06Z",
-    "updated": "2026-11-04T05:09:34Z",
+    "updated": "2026-11-04T06:49:43Z",
     "gathered": "2026-11-04T05:12:45Z"
    }
   ],
@@ -402,10 +424,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55. West southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly clear, with a low around 55. Calm wind becoming north around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -451,18 +473,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "Eaton Fire survivors take their stories to the stage",
     "b": "Altadena survivors wrote and performed a play adapted from interviews by a longtime local photographer.",
     "date": "2026-11-03",
-    "publisher": "LAist",
-    "title": "In an act of healing, Eaton Fire survivors take their own experiences to the stage",
     "url": "https://laist.com/news/climate-environment/eaton-fire-survivors-play",
-    "published": "2026-11-03T13:00:00Z",
-    "updated": "2026-11-03T17:06:06Z",
     "gathered": "2026-11-03T14:16:48Z"
    }
   ]
@@ -631,17 +649,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 59,
     "cond": "Fair",
-    "obs": "3 Nov 23:51 pm EST"
+    "obs": "4 Nov 02:51 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58. Southwest wind around 7 mph. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -671,6 +683,12 @@
      "kind": "high",
      "temp": 67,
      "text": "Showers, with thunderstorms also possible after 1pm.  High near 67. Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 58. Chance of precipitation is 60%."
     }
    ]
   },
@@ -686,7 +704,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -773,7 +791,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "goodnews": []
  },
  {
@@ -782,7 +800,19 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Washington voters keep millionaires tax",
+    "b": "A repeal of the tax on households earning over $1 million was losing by more than 16 points.",
+    "date": "2026-11-04",
+    "publisher": "KUOW",
+    "title": "Socially conservative, fiscally liberal? Election night takeaways in Washington state",
+    "url": "https://www.kuow.org/elections/2026-11-03/socially-conservative-fiscally-liberal-election-night-takeaways-in-washington-state",
+    "published": "2026-11-04T07:34:40Z",
+    "updated": "2026-11-04T07:35:53Z",
+    "gathered": "2026-11-04T08:17:00Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
@@ -790,37 +820,37 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. Calm wind. "
+     "text": "Partly cloudy, with a low around 43. Calm wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 56,
-     "text": "Increasing clouds, with a high near 56. South wind 3 to 5 mph. "
+     "temp": 57,
+     "text": "A 30 percent chance of rain after 4pm.  Partly sunny, with a high near 57. South wind 3 to 7 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Rain, mainly before 3am.  Low around 50. South wind 7 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 49,
+     "text": "Rain before 2am, then a slight chance of rain after 3am.  Low around 49. South wind 10 to 14 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 57,
-     "text": "Partly sunny, with a high near 57. South southwest wind around 8 mph. "
+     "text": "Partly sunny, with a high near 57. South southwest wind around 9 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Rain, mainly after 4am.  Low around 49. South southeast wind 5 to 7 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 48,
+     "text": "Mostly cloudy, with a low around 48. South southeast wind around 8 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 56,
-     "text": "Rain.  High near 56. Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 55,
+     "text": "Rain likely.  Cloudy, with a high near 55. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     }
    ]
   },
@@ -836,7 +866,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T08:13:00Z",
+  "updatedAt": "2026-11-04T11:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
