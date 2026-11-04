@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T20:12:00Z",
+ "updatedAt": "2026-11-04T23:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -100,6 +100,26 @@
   }
  ],
  "politics": [
+  {
+   "h": "Schumer hails 'generational remake' of Senate",
+   "b": "The Democratic leader said the blue wave that won his party both chambers marks a major shift.",
+   "date": "2026-11-04",
+   "publisher": "KUOW",
+   "title": "Chuck Schumer heralds Democrats' 'generational remake' of Senate",
+   "url": "https://www.kuow.org/npr-news/2026-11-04/chuck-schumer-heralds-democrats-generational-remake-of-senate",
+   "published": "2026-11-04T18:37:34Z",
+   "updated": "2026-11-04T19:04:03Z",
+   "gathered": "2026-11-04T20:12:41Z"
+  },
+  {
+   "h": "Several key races still undecided",
+   "b": "Mary Peltola holds a 626-vote lead in Alaska, and Kansas' governor's race is within a point.",
+   "date": "2026-11-04",
+   "publisher": "Al Jazeera",
+   "title": "US midterms 2026: What key races remain undecided?",
+   "url": "https://www.aljazeera.com/news/2026/11/4/us-midterms-2026-what-key-races-remain-undecided",
+   "gathered": "2026-11-04T20:12:41Z"
+  },
   {
    "h": "Mike Johnson to step aside as House GOP leader",
    "b": "The speaker does not plan to stay on as Republican leader in the new Congress, a source said.",
@@ -371,8 +391,6 @@
    "date": "2026-11-04",
    "place": "Yemen",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
    "url": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range",
    "gathered": "2026-11-04T18:46:07Z"
   },
@@ -382,8 +400,6 @@
    "date": "2026-11-04",
    "place": "Belgorod, Russia",
    "tz": "Europe/Moscow",
-   "publisher": "Al Jazeera",
-   "title": "Ukrainian strikes kill three in Russia’s Belgorod region",
    "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region",
    "gathered": "2026-11-04T18:46:07Z"
   },
@@ -573,8 +589,6 @@
    "h": "Voters reject data centers at the ballot box",
    "b": "Voters overwhelmingly backed restrictions on data centers on Tuesday, and the opposition was bipartisan.",
    "date": "2026-11-04",
-   "publisher": "Marketplace",
-   "title": "Data centers were on the ballot. They lost.",
    "url": "https://www.marketplace.org/episode/2026/11/04/data-centers-were-on-the-ballot-they-lost",
    "gathered": "2026-11-04T14:16:27Z"
   },
@@ -603,11 +617,18 @@
  "science": [],
  "sports": [
   {
+   "h": "Ravens agree to trade for Jacoby Brissett",
+   "b": "Baltimore adds the Cardinals QB after Lamar Jackson's thumb surgery left its quarterback room depleted.",
+   "date": "2026-11-04",
+   "publisher": "CBS Sports",
+   "title": "Jacoby Brissett trade: Ravens strike deal for Cardinals QB amid injury crisis",
+   "url": "https://www.cbssports.com/nfl/news/jacoby-brissett-trade-ravens-cardinals-lamar-jackson/",
+   "gathered": "2026-11-04T20:12:41Z"
+  },
+  {
    "h": "Jalon Daniels leads midseason All-Rookie Team",
    "b": "The Buccaneers quarterback heads CBS Sports' picks, which feature multiple Browns and Jets.",
    "date": "2026-11-04",
-   "publisher": "CBS Sports",
-   "title": "Midseason All-Rookie Team: QB Jalon Daniels leads team filled with multiple Browns, Jets",
    "url": "https://www.cbssports.com/nfl/news/nfl-midseason-all-rookie-team-jalon-daniels-browns-jets/",
    "gathered": "2026-11-04T18:46:07Z"
   },
@@ -698,6 +719,16 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "Rain to end NYC's weeks-long run of nice weather",
+   "b": "Clouds and rain arrive Thursday and Friday after nearly three weeks of clear, mild days.",
+   "date": "2026-11-04",
+   "publisher": "Gothamist",
+   "title": "Rain in NYC and NJ will end weeks-long stretch of beautiful weather",
+   "url": "https://gothamist.com/news/rain-in-nyc-and-nj-will-end-weeks-long-stretch-of-beautiful-weather",
+   "published": "2026-11-04T18:47:08Z",
+   "gathered": "2026-11-04T20:12:41Z"
+  },
   {
    "h": "Outsiders sweep Jersey City school board",
    "b": "A parent slate won a majority, ending the teachers union's control of the $1 billion district's board.",
@@ -871,17 +902,11 @@
  ],
  "weather": {
   "now": {
-   "temp": 71,
+   "temp": 69,
    "cond": "Fair",
-   "obs": "4 Nov 12:51 pm EST"
+   "obs": "4 Nov 14:51 pm EST"
   },
   "periods": [
-   {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 70,
-    "text": "Sunny, with a high near 70. South wind around 10 mph. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
@@ -910,11 +935,27 @@
     "name": "Friday Night",
     "kind": "low",
     "temp": 59,
-    "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59."
+    "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59. Northwest wind 5 to 7 mph. "
+   },
+   {
+    "name": "Saturday",
+    "kind": "high",
+    "temp": 64,
+    "text": "Mostly sunny, with a high near 64."
    }
   ]
  },
  "localgood": [
+  {
+   "h": "Jeweler turns back NYC's only sidewalk clock",
+   "b": "Master jeweler Gilo Vintimilla adjusts the clock's hands from a ladder beneath the sidewalk.",
+   "date": "2026-11-04",
+   "publisher": "Gothamist",
+   "title": "When turning back the clock means going under an NYC sidewalk",
+   "url": "https://gothamist.com/arts-entertainment/when-turning-back-the-clock-means-going-under-an-nyc-sidewalk",
+   "published": "2026-11-04T19:30:38Z",
+   "gathered": "2026-11-04T20:12:41Z"
+  },
   {
    "h": "Muppets, aliens and more at NYC's November films",
    "b": "The month's screenings around the city include \"The Muppets Take Manhattan\" in Queens.",

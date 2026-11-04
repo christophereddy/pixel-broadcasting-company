@@ -31,17 +31,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 70,
     "cond": " Light Rain Fog/Mist",
-    "obs": "4 Nov 12:52 pm EST"
+    "obs": "4 Nov 14:52 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 72,
-     "text": "Showers and possibly a thunderstorm, mainly before 4pm, then a chance of showers and thunderstorms after 4pm.  High near 72. Southeast wind around 10 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -71,6 +65,12 @@
      "kind": "low",
      "temp": 50,
      "text": "Clear, with a low around 50."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Sunny, with a high near 66."
     }
    ]
   },
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -109,17 +109,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 77,
+    "temp": 76,
     "cond": "A Few Clouds",
-    "obs": "4 Nov 12:54 pm EST"
+    "obs": "4 Nov 14:54 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 76,
-     "text": "Sunny, with a high near 76. Southwest wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -142,13 +136,19 @@
      "name": "Friday",
      "kind": "high",
      "temp": 71,
-     "text": "Rain likely.  Patchy fog before noon.  Otherwise, cloudy, with a high near 71. South wind around 6 mph.  Chance of precipitation is 70%."
+     "text": "Rain likely.  Patchy fog before noon.  Otherwise, cloudy, with a high near 71. South wind around 6 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 57,
      "text": "Rain.  Patchy fog. Low around 57. Light south wind.  Chance of precipitation is 80%."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 64,
+     "text": "A chance of rain, mainly after 1pm.  Mostly cloudy, with a high near 64. Light and variable wind becoming north 5 to 7 mph in the morning.  Chance of precipitation is 30%."
     }
    ]
   },
@@ -164,7 +164,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -197,7 +197,11 @@
     "h": "Teachers union leads in nine school board races",
     "b": "CTU candidates were ahead in nine of 20 seats, though its pick for board president trailed Jessica Biggs.",
     "date": "2026-11-04",
+    "publisher": "WBEZ",
+    "title": "Chicago Teachers Union poised to capture half of school board district seats, but loses president’s race",
     "url": "https://www.wbez.org/education/2026/11/03/chicago-teachers-union-poised-to-capture-half-of-school-board-district-seats-but-likely-to-lose-presidency",
+    "published": "2026-11-04T16:30:00Z",
+    "updated": "2026-11-04T20:10:09Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -240,14 +244,14 @@
    "now": {
     "temp": 60,
     "cond": "Overcast",
-    "obs": "4 Nov 11:53 am CST"
+    "obs": "4 Nov 13:53 pm CST"
    },
    "periods": [
     {
      "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "A slight chance of drizzle before 2pm, then a slight chance of drizzle or sprinkles after 2pm.  Cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "text": "A slight chance of drizzle or sprinkles.  Cloudy, with a high near 64. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -293,7 +297,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -326,22 +330,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 55,
     "cond": "Partly Cloudy",
-    "obs": "4 Nov 10:58 am MST"
+    "obs": "4 Nov 12:58 pm MST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 57,
-     "text": "Partly sunny, with a high near 57. Northeast wind 5 to 7 mph. "
+     "text": "Partly sunny, with a high near 57. Northeast wind around 7 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "A 20 percent chance of showers before 11pm.  Mostly cloudy, with a low around 37. North northeast wind around 6 mph becoming calm  after midnight. "
+     "text": "Mostly cloudy, with a low around 37. North northeast wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Thursday",
@@ -352,14 +356,14 @@
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 37,
-     "text": "Partly cloudy, with a low around 37. Calm wind. "
+     "temp": 35,
+     "text": "Increasing clouds, with a low around 35. Light and variable wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 57,
-     "text": "Mostly sunny, with a high near 57. Calm wind becoming north northeast around 5 mph. "
+     "temp": 56,
+     "text": "Mostly sunny, with a high near 56. Calm wind becoming north around 5 mph. "
     },
     {
      "name": "Friday Night",
@@ -381,7 +385,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -392,6 +396,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Xavier Becerra wins California governor's race",
+    "b": "The governor-elect faces federal health care cuts, rising wildfire costs and a cost-of-living crisis.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "Xavier Becerra is California’s next governor: Five things to know",
+    "url": "https://laist.com/news/politics/xavier-becerra-california-next-governor-five-things-to-know",
+    "published": "2026-11-04T19:00:00Z",
+    "updated": "2026-11-04T18:59:59Z",
+    "gathered": "2026-11-04T20:12:41Z"
+   },
    {
     "h": "California voters reject Prop 39 voter ID measure",
     "b": "About 60% opposed the GOP-backed proposal, which drew millions from Republican megadonors.",
@@ -441,7 +456,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76. Southwest wind around 5 mph. "
@@ -490,7 +505,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -509,6 +524,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Rain to end NYC's weeks-long run of nice weather",
+    "b": "Clouds and rain arrive Thursday and Friday after nearly three weeks of clear, mild days.",
+    "date": "2026-11-04",
+    "publisher": "Gothamist",
+    "title": "Rain in NYC and NJ will end weeks-long stretch of beautiful weather",
+    "url": "https://gothamist.com/news/rain-in-nyc-and-nj-will-end-weeks-long-stretch-of-beautiful-weather",
+    "published": "2026-11-04T18:47:08Z",
+    "gathered": "2026-11-04T20:12:41Z"
+   },
    {
     "h": "Outsiders sweep Jersey City school board",
     "b": "A parent slate won a majority, ending the teachers union's control of the $1 billion district's board.",
@@ -682,17 +707,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 69,
     "cond": "Fair",
-    "obs": "4 Nov 12:51 pm EST"
+    "obs": "4 Nov 14:51 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Sunny, with a high near 70. South wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -721,7 +740,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 59,
-     "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59."
+     "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59. Northwest wind 5 to 7 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 64,
+     "text": "Mostly sunny, with a high near 64."
     }
    ]
   },
@@ -737,9 +762,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Jeweler turns back NYC's only sidewalk clock",
+    "b": "Master jeweler Gilo Vintimilla adjusts the clock's hands from a ladder beneath the sidewalk.",
+    "date": "2026-11-04",
+    "publisher": "Gothamist",
+    "title": "When turning back the clock means going under an NYC sidewalk",
+    "url": "https://gothamist.com/arts-entertainment/when-turning-back-the-clock-means-going-under-an-nyc-sidewalk",
+    "published": "2026-11-04T19:30:38Z",
+    "gathered": "2026-11-04T20:12:41Z"
+   },
    {
     "h": "Muppets, aliens and more at NYC's November films",
     "b": "The month's screenings around the city include \"The Muppets Take Manhattan\" in Queens.",
@@ -834,7 +869,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "goodnews": []
  },
  {
@@ -856,10 +891,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 57,
-     "text": "A 30 percent chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 57. South wind 3 to 6 mph. "
+     "text": "A 30 percent chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 57. South wind around 6 mph. "
     },
     {
      "name": "Tonight",
@@ -905,7 +940,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T20:12:00Z",
+  "updatedAt": "2026-11-04T23:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
