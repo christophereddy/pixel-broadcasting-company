@@ -31,40 +31,40 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 68,
     "cond": " Light Rain Fog/Mist",
-    "obs": "4 Nov 08:52 am EST"
+    "obs": "4 Nov 12:52 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 72,
-     "text": "Showers and possibly a thunderstorm.  High near 72. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Showers and possibly a thunderstorm, mainly before 4pm, then a chance of showers and thunderstorms after 4pm.  High near 72. Southeast wind around 10 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 65,
-     "text": "Showers and thunderstorms likely before 1am, then a chance of showers.  Mostly cloudy, with a low around 65. South wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "temp": 64,
+     "text": "Showers and thunderstorms likely, mainly before 10pm.  Mostly cloudy, with a low around 64. South wind around 5 mph becoming calm  in the evening.  Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 76,
-     "text": "A 20 percent chance of showers between noon and 4pm.  Partly sunny, with a high near 76. Calm wind becoming southwest around 5 mph in the morning. "
+     "text": "A slight chance of showers between noon and 1pm.  Partly sunny, with a high near 76. Calm wind becoming west around 5 mph in the afternoon.  Chance of precipitation is 20%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 58,
-     "text": "A 20 percent chance of showers after 1am.  Partly cloudy, with a low around 58. Calm wind. "
+     "text": "Partly cloudy, with a low around 58. Calm wind. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 74,
-     "text": "Sunny, with a high near 74. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "temp": 73,
+     "text": "Mostly sunny, with a high near 73. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Friday Night",
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -96,49 +96,59 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Judge dismisses frog embryo case against scientist",
+    "b": "Charges were dropped against Harvard cancer researcher Kseniia Petrova at the government's request.",
+    "date": "2026-11-04",
+    "publisher": "WBUR",
+    "title": "Federal judge dismisses case against Russian-born scientist accused of smuggling frog embryos",
+    "url": "https://www.wbur.org/news/2026/11/04/federal-judge-dismisses-case-russian-scientist-frog-embryos",
+    "gathered": "2026-11-04T18:46:07Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Partly Cloudy",
-    "obs": "4 Nov 08:54 am EST"
+    "temp": 77,
+    "cond": "A Few Clouds",
+    "obs": "4 Nov 12:54 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. Southwest wind 8 to 10 mph. "
+     "text": "Sunny, with a high near 76. Southwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 58,
-     "text": "Increasing clouds, with a low around 58. Southwest wind 6 to 8 mph. "
+     "temp": 59,
+     "text": "Mostly clear, with a low around 59. Southwest wind 6 to 8 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 74,
-     "text": "Mostly cloudy, with a high near 74. Southwest wind 7 to 13 mph, with gusts as high as 23 mph. "
+     "text": "Increasing clouds, with a high near 74. Southwest wind 7 to 13 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 62,
-     "text": "A chance of rain, mainly after 2am.  Mostly cloudy, with a low around 62. Southwest wind 6 to 9 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly after 3am.  Patchy fog after 4am.  Otherwise, mostly cloudy, with a low around 62. Southwest wind 6 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 70,
-     "text": "Rain, with thunderstorms also possible after 4pm.  High near 70. South wind around 6 mph.  Chance of precipitation is 90%."
+     "temp": 71,
+     "text": "Rain likely.  Patchy fog before noon.  Otherwise, cloudy, with a high near 71. South wind around 6 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Rain and possibly a thunderstorm.  Low around 57. South wind 3 to 5 mph.  Chance of precipitation is 100%."
+     "text": "Rain.  Patchy fog. Low around 57. Light south wind.  Chance of precipitation is 80%."
     }
    ]
   },
@@ -154,7 +164,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -228,46 +238,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 60,
     "cond": "Overcast",
-    "obs": "4 Nov 07:53 am CST"
+    "obs": "4 Nov 11:53 am CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "Scattered showers before 11am, then patchy drizzle with isolated showers between 11am and 2pm, then patchy drizzle with isolated sprinkles after 2pm.  Mostly cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 40%."
+     "text": "A slight chance of drizzle before 2pm, then a slight chance of drizzle or sprinkles after 2pm.  Cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 50,
-     "text": "Patchy drizzle with isolated sprinkles before 10pm.  Mostly cloudy, with a low around 50. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "temp": 49,
+     "text": "A slight chance of drizzle or sprinkles before 10pm, then a slight chance of rain after 5am.  Cloudy, with a low around 49. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 56,
-     "text": "A 40 percent chance of showers, mainly after 2pm.  Cloudy, with a high near 56. Southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "temp": 54,
+     "text": "A slight chance of rain before 10am, then a chance of rain after noon.  Mostly cloudy, with a high near 54. Southwest wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Showers likely, mainly before midnight.  Cloudy, with a low around 45. West wind around 15 mph becoming north after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 70%."
+     "temp": 42,
+     "text": "Rain likely, mainly before 10pm.  Cloudy, with a low around 42. Breezy, with a north northwest wind 10 to 20 mph.  Chance of precipitation is 70%."
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 50,
-     "text": "A 30 percent chance of showers before noon.  Mostly cloudy, with a high near 50. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
+     "temp": 51,
+     "text": "A 20 percent chance of rain.  Mostly cloudy, with a high near 51. Breezy, with a north northwest wind 15 to 20 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Mostly cloudy, with a low around 40. Breezy. "
+     "temp": 39,
+     "text": "Partly cloudy, with a low around 39."
     }
    ]
   },
@@ -283,7 +293,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -316,16 +326,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 37,
-    "cond": "Mostly Cloudy",
-    "obs": "4 Nov 05:58 am MST"
+    "temp": 50,
+    "cond": "Partly Cloudy",
+    "obs": "4 Nov 10:58 am MST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "Partly sunny, with a high near 57. Calm wind becoming northeast 5 to 7 mph in the afternoon. "
+     "text": "Partly sunny, with a high near 57. Northeast wind 5 to 7 mph. "
     },
     {
      "name": "Tonight",
@@ -371,7 +381,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -412,7 +422,7 @@
     "title": "Raman pulls ahead of Bass as counting continues in the race for LA mayor",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
     "published": "2026-11-04T04:21:44Z",
-    "updated": "2026-11-04T13:58:25Z",
+    "updated": "2026-11-04T18:20:29Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -434,37 +444,37 @@
      "name": "Today",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. Calm wind becoming southwest around 5 mph in the morning. "
+     "text": "Sunny, with a high near 76. Southwest wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 57,
-     "text": "Partly cloudy, with a low around 57. West northwest wind around 5 mph becoming north in the evening. "
+     "temp": 58,
+     "text": "Mostly clear, with a low around 58. Calm wind becoming north around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 80,
-     "text": "Mostly sunny, with a high near 80. North northeast wind around 5 mph becoming west southwest in the afternoon. "
+     "text": "Sunny, with a high near 80. North northeast wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly clear, with a low around 58. West northwest wind around 5 mph becoming north northeast after midnight. "
+     "text": "Mostly clear, with a low around 58. North northeast wind around 5 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 84,
-     "text": "Sunny, with a high near 84. North northeast wind around 5 mph. "
+     "temp": 83,
+     "text": "Sunny, with a high near 83. North northeast wind 5 to 10 mph becoming northwest in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "Mostly clear, with a low around 59."
+     "temp": 60,
+     "text": "Clear, with a low around 60."
     }
    ]
   },
@@ -480,7 +490,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -499,6 +509,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Outsiders sweep Jersey City school board",
+    "b": "A parent slate won a majority, ending the teachers union's control of the $1 billion district's board.",
+    "date": "2026-11-04",
+    "publisher": "Gothamist",
+    "title": "Incumbents booted from Jersey City school board after years of dysfunction",
+    "url": "https://gothamist.com/news/incumbents-booted-from-jersey-city-school-board-after-years-of-dysfunction",
+    "published": "2026-11-04T17:35:00Z",
+    "gathered": "2026-11-04T18:46:07Z"
+   },
+   {
+    "h": "Strand admits taking ineligible pandemic loan",
+    "b": "The bookstore will pay nearly $1.5 million over a $930,000 PPP loan barred for businesses tied to a member of Congress.",
+    "date": "2026-11-04",
+    "publisher": "Gothamist",
+    "title": "Strand Bookstore admits it took a pandemic loan despite being ineligible",
+    "url": "https://gothamist.com/news/strand-bookstore-admits-it-took-a-pandemic-loan-despite-being-ineligible",
+    "published": "2026-11-04T18:06:00Z",
+    "gathered": "2026-11-04T18:46:07Z"
+   },
    {
     "h": "Van Drew concedes South Jersey seat",
     "b": "The four-term Republican conceded to Democrat Zack Mullock, a small-town Jersey Shore mayor.",
@@ -526,8 +556,7 @@
     "publisher": "Gothamist",
     "title": "Rebecca Bennett flips NJ Republican House seat for Democrats",
     "url": "https://gothamist.com/news/first-time-nj-democrat-rebecca-bennett-defeats-republican-scion-tom-kean-jr",
-    "published": "2026-11-04T02:51:00Z",
-    "updated": "2026-11-04T03:35:00Z",
+    "published": "2026-11-04T03:35:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -535,10 +564,9 @@
     "b": "Measures easing outdoor dining and speeding bike and bus lanes were ahead with about 86% of scanners reporting.",
     "date": "2026-11-04",
     "publisher": "Gothamist",
-    "title": "NYC voters appear poised to approve outdoor dining, bike lane ballot measures",
+    "title": "NYC voters approve outdoor dining, bike lane ballot measures",
     "url": "https://gothamist.com/news/nyc-voters-appear-poised-to-approve-outdoor-dining-bike-lane-ballot-measures",
-    "published": "2026-11-04T02:56:00Z",
-    "updated": "2026-11-04T04:40:00Z",
+    "published": "2026-11-04T14:30:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -548,7 +576,7 @@
     "publisher": "Gothamist",
     "title": "Mamdani allies Valdez, Avila Chevalier win House seats for New York",
     "url": "https://gothamist.com/news/mamdani-allies-valdez-avila-chevalier-win-house-seats-for-new-york",
-    "published": "2026-11-04T02:13:00Z",
+    "published": "2026-11-04T14:29:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -654,46 +682,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 71,
     "cond": "Fair",
-    "obs": "4 Nov 08:51 am EST"
+    "obs": "4 Nov 12:51 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71. South wind 7 to 10 mph. "
+     "temp": 70,
+     "text": "Sunny, with a high near 70. South wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 61,
-     "text": "Partly cloudy, with a low around 61. South wind 7 to 9 mph. "
+     "temp": 62,
+     "text": "Partly cloudy, with a low around 62. Southwest wind 8 to 11 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 72,
-     "text": "A slight chance of showers before noon, then a chance of showers after 3pm.  Mostly cloudy, with a high near 72. South wind 9 to 11 mph.  Chance of precipitation is 30%."
+     "temp": 70,
+     "text": "A 40 percent chance of rain.  Mostly cloudy, with a high near 70. South wind 9 to 13 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 63,
-     "text": "Showers likely, mainly after 1am.  Mostly cloudy, with a low around 63. South wind 7 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 65,
+     "text": "Rain likely.  Mostly cloudy, with a low around 65. South wind 7 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 64,
-     "text": "Showers, with thunderstorms also possible after 1pm.  Steady temperature around 64. Southwest wind 5 to 7 mph becoming southeast in the afternoon.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "temp": 68,
+     "text": "Rain likely.  Mostly cloudy, with a high near 68. Southwest wind 5 to 7 mph becoming northwest in the afternoon.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 59,
-     "text": "Showers likely before midnight.  Cloudy, then gradually becoming partly cloudy, with a low around 59. Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59."
     }
    ]
   },
@@ -709,7 +737,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -732,6 +760,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "EU-UK deal could bring back pet passports",
+    "b": "The measure may be announced at a Nov. 20 summit in Brussels, easing Channel travel with pets.",
+    "date": "2026-11-04",
+    "publisher": "The Local France",
+    "title": "Pet passports set to be restored between the EU and the UK",
+    "url": "https://www.thelocal.fr/20261104/pet-passports-set-to-be-restored-between-the-eu-and-the-uk",
+    "published": "2026-11-04T16:02:06Z",
+    "updated": "2026-11-04T16:02:11Z",
+    "gathered": "2026-11-04T18:46:07Z"
+   },
    {
     "h": "Cyberattack hits French bank Credit Mutuel Arkea",
     "b": "The bank said the attack, reported to involve €118 million in fraudulent transactions, was under control.",
@@ -795,7 +834,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "goodnews": []
  },
  {
@@ -809,11 +848,7 @@
     "h": "Washington voters keep millionaires tax",
     "b": "A repeal of the tax on households earning over $1 million was losing by more than 16 points.",
     "date": "2026-11-04",
-    "publisher": "KUOW",
-    "title": "Socially conservative, fiscally liberal? Election night takeaways in Washington state",
     "url": "https://www.kuow.org/elections/2026-11-03/socially-conservative-fiscally-liberal-election-night-takeaways-in-washington-state",
-    "published": "2026-11-04T07:34:40Z",
-    "updated": "2026-11-04T07:35:53Z",
     "gathered": "2026-11-04T08:17:00Z"
    }
   ],
@@ -824,37 +859,37 @@
      "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "A 30 percent chance of rain after 4pm.  Partly sunny, with a high near 57. Calm wind becoming south 5 to 7 mph in the morning. "
+     "text": "A 30 percent chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 57. South wind 3 to 6 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 49,
-     "text": "Rain before 2am, then a slight chance of rain after 3am.  Low around 49. South wind 10 to 14 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 50,
+     "text": "Rain, mainly before 10pm.  Low around 50. South wind 7 to 10 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 57,
-     "text": "Partly sunny, with a high near 57. South southwest wind around 9 mph. "
+     "temp": 56,
+     "text": "Partly sunny, with a high near 56. South wind 5 to 7 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Increasing clouds, with a low around 48. South southeast wind around 8 mph. "
+     "text": "A 30 percent chance of rain, mainly after 4am.  Mostly cloudy, with a low around 48. South southeast wind around 5 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 55,
-     "text": "Rain likely.  Cloudy, with a high near 55. South wind around 11 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 54,
+     "text": "Rain, mainly after 10am.  High near 54. South wind around 7 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Rain likely, mainly before 4am.  Cloudy, with a low around 49. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 50,
+     "text": "Rain likely, mainly before 10pm.  Cloudy, with a low around 50. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -870,7 +905,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T17:12:00Z",
+  "updatedAt": "2026-11-04T20:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
