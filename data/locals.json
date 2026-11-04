@@ -31,9 +31,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 68,
     "cond": "Overcast",
-    "obs": "3 Nov 21:52 pm EST"
+    "obs": "3 Nov 23:52 pm EST"
    },
    "periods": [
     {
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,13 +99,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Mostly Cloudy",
-    "obs": "3 Nov 21:54 pm EST"
+    "temp": 63,
+    "cond": "Overcast",
+    "obs": "3 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 54,
      "text": "Partly cloudy, with a low around 54. Southwest wind around 6 mph. "
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -166,6 +166,28 @@
   },
   "local": [
    {
+    "h": "Illinois Democrats aim to unwind Trump policies",
+    "b": "Democratic members of Congress hope to pass legislation rolling back some of the administration's policies.",
+    "date": "2026-11-04",
+    "publisher": "WBEZ",
+    "title": "As blue wave sweeps country, Illinois Democrats want to unwind Trump policies ‘as quickly as possible’",
+    "url": "https://www.wbez.org/government-politics/elections/2026/11/03/blue-wave-election-night-illinois-democrats-unwind-trump-policies",
+    "published": "2026-11-04T04:06:30Z",
+    "updated": "2026-11-04T04:06:30Z",
+    "gathered": "2026-11-04T05:12:45Z"
+   },
+   {
+    "h": "Teachers union leads in nine school board races",
+    "b": "CTU candidates were ahead in nine of 20 seats, though its pick for board president trailed Jessica Biggs.",
+    "date": "2026-11-04",
+    "publisher": "WBEZ",
+    "title": "Chicago Teachers Union poised to capture half of school board district seats but likely to lose presidency",
+    "url": "https://www.wbez.org/education/2026/11/03/chicago-teachers-union-poised-to-capture-half-of-school-board-district-seats-but-likely-to-lose-presidency",
+    "published": "2026-11-04T03:30:36Z",
+    "updated": "2026-11-04T03:44:24Z",
+    "gathered": "2026-11-04T05:12:45Z"
+   },
+   {
     "h": "Senator's wife runs unopposed for school board seat",
     "b": "Brittany Bailey Preston will represent South Side District 9a after the appointed member was removed from the ballot.",
     "date": "2026-11-03",
@@ -176,11 +198,7 @@
     "h": "Advocates: contract loophole gives ICE jail data",
     "b": "A clause in Illinois' victim-notification contract with Appriss lets it share jail records with third parties.",
     "date": "2026-11-03",
-    "publisher": "WBEZ",
-    "title": "Loophole in an Illinois contract lets ICE access immigrant data, privacy advocates warn",
     "url": "https://www.wbez.org/immigration/2026/11/03/loophole-in-an-illinois-contract-allows-ice-to-access-data-for-immigration-enforcement",
-    "published": "2026-11-03T19:06:23Z",
-    "updated": "2026-11-03T19:06:23Z",
     "gathered": "2026-11-03T20:16:50Z"
    },
    {
@@ -215,9 +233,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 68,
     "cond": "Overcast",
-    "obs": "3 Nov 20:53 pm CST"
+    "obs": "3 Nov 22:53 pm CST"
    },
    "periods": [
     {
@@ -270,7 +288,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -285,19 +303,15 @@
     "h": "Melat Kiros wins Denver's House seat",
     "b": "The 29-year-old Democratic socialist becomes the first Gen Z woman elected to Congress.",
     "date": "2026-11-04",
-    "publisher": "KUOW",
-    "title": "Melat Kiros becomes the first Gen Z woman elected to Congress",
     "url": "https://www.kuow.org/npr-news/2026-11-03/melat-kiros-becomes-the-first-gen-z-woman-elected-to-congress",
-    "published": "2026-11-04T02:34:21Z",
-    "updated": "2026-11-04T02:41:33Z",
     "gathered": "2026-11-04T03:10:24Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Partly Cloudy",
-    "obs": "3 Nov 18:58 pm MST"
+    "temp": 41,
+    "cond": "A Few Clouds",
+    "obs": "3 Nov 20:58 pm MST"
    },
    "periods": [
     {
@@ -350,7 +364,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -360,7 +374,30 @@
    "short": "LA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Bass narrowly leads Raman in early mayor count",
+    "b": "Mayor Karen Bass was ahead 50.86% to 49.14% after the first ballot drops; counting will take days.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "Bass ahead in early LA mayor’s race vote count, Raman trailing close behind",
+    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
+    "published": "2026-11-04T04:21:44Z",
+    "updated": "2026-11-04T05:12:57Z",
+    "gathered": "2026-11-04T05:12:45Z"
+   },
+   {
+    "h": "Luna takes wide early lead for LA sheriff",
+    "b": "Sheriff Robert Luna led predecessor Alex Villanueva in early returns.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "Live results: Luna takes wide lead in early results",
+    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-county-sheriff-results-luna-villanueva",
+    "published": "2026-11-04T04:33:06Z",
+    "updated": "2026-11-04T05:09:34Z",
+    "gathered": "2026-11-04T05:12:45Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
@@ -379,14 +416,14 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58. West northwest wind around 5 mph becoming north northeast in the evening. "
+     "temp": 57,
+     "text": "Partly cloudy, with a low around 57. West northwest wind around 5 mph becoming north in the evening. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 80,
-     "text": "Sunny, with a high near 80. North northeast wind around 5 mph becoming west southwest in the afternoon. "
+     "text": "Mostly sunny, with a high near 80. North northeast wind around 5 mph becoming west southwest in the afternoon. "
     },
     {
      "name": "Thursday Night",
@@ -414,7 +451,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -438,6 +475,16 @@
   },
   "local": [
    {
+    "h": "Van Drew concedes South Jersey seat",
+    "b": "The four-term Republican conceded to Democrat Zack Mullock, a small-town Jersey Shore mayor.",
+    "date": "2026-11-04",
+    "publisher": "Gothamist",
+    "title": "Republican Jeff Van Drew concedes NJ congressional seat in surprise victory for Democrats",
+    "url": "https://gothamist.com/news/republican-jeff-van-drew-concedes-nj-congressional-seat-in-surprise-victory-for-democrats",
+    "published": "2026-11-04T04:24:00Z",
+    "gathered": "2026-11-04T05:12:45Z"
+   },
+   {
     "h": "Hochul wins second full term as governor",
     "b": "She defeated Republican Bruce Blakeman after tying him to President Trump.",
     "date": "2026-11-04",
@@ -445,6 +492,7 @@
     "title": "Kathy Hochul re-elected New York governor, defeats Bruce Blakeman",
     "url": "https://gothamist.com/news/ny-election-results-governor-race",
     "published": "2026-11-04T01:04:00Z",
+    "updated": "2026-11-04T03:54:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -455,6 +503,7 @@
     "title": "Rebecca Bennett flips NJ Republican House seat for Democrats",
     "url": "https://gothamist.com/news/first-time-nj-democrat-rebecca-bennett-defeats-republican-scion-tom-kean-jr",
     "published": "2026-11-04T02:51:00Z",
+    "updated": "2026-11-04T03:35:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -464,7 +513,8 @@
     "publisher": "Gothamist",
     "title": "NYC voters appear poised to approve outdoor dining, bike lane ballot measures",
     "url": "https://gothamist.com/news/nyc-voters-appear-poised-to-approve-outdoor-dining-bike-lane-ballot-measures",
-    "published": "2026-11-04T02:56:09Z",
+    "published": "2026-11-04T02:56:00Z",
+    "updated": "2026-11-04T04:40:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -482,9 +532,10 @@
     "b": "Malfunctioning machines in Westchester could slow the count in a race that may help decide the House.",
     "date": "2026-11-04",
     "publisher": "Gothamist",
-    "title": "Voting machine snafu may delay results in NY House race between Lawler, Conley",
+    "title": "Republican Rep. Mike Lawler concedes to Cait Conley after voting machine snafu",
     "url": "https://gothamist.com/news/voting-machine-snafu-may-delay-results-in-ny-house-race-between-lawler-conley",
     "published": "2026-11-04T00:57:00Z",
+    "updated": "2026-11-04T04:11:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -524,8 +575,7 @@
     "publisher": "Gothamist",
     "title": "Floyd Bennett Field gets $10M for project to reopen historic hangars",
     "url": "https://gothamist.com/news/floyd-bennet-field-gets-10m-for-project-to-reopen-historic-hangars",
-    "published": "2026-11-03T18:43:00Z",
-    "updated": "2026-11-03T20:28:00Z",
+    "published": "2026-11-03T20:28:00Z",
     "gathered": "2026-11-03T20:16:50Z"
    },
    {
@@ -581,13 +631,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 61,
     "cond": "Fair",
-    "obs": "3 Nov 21:51 pm EST"
+    "obs": "3 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 58,
      "text": "Mostly clear, with a low around 58. Southwest wind around 7 mph. "
@@ -636,7 +686,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -723,7 +773,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "goodnews": []
  },
  {
@@ -740,7 +790,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 43. Calm wind. "
+     "text": "Mostly clear, with a low around 43. Calm wind. "
     },
     {
      "name": "Wednesday",
@@ -786,7 +836,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T05:12:00Z",
+  "updatedAt": "2026-11-04T08:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
