@@ -32,15 +32,15 @@
   "weather": {
    "now": {
     "temp": 65,
-    "cond": "Overcast",
-    "obs": "4 Nov 05:52 am EST"
+    "cond": " Light Rain Fog/Mist",
+    "obs": "4 Nov 08:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "A chance of showers and thunderstorms, then showers and possibly a thunderstorm after 9am.  High near 72. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "text": "Showers and possibly a thunderstorm.  High near 72. Southeast wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,16 +99,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "A Few Clouds",
-    "obs": "4 Nov 05:54 am EST"
+    "temp": 64,
+    "cond": "Partly Cloudy",
+    "obs": "4 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 76,
-     "text": "Sunny, with a high near 76. Southwest wind 6 to 10 mph. "
+     "text": "Sunny, with a high near 76. Southwest wind 8 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -228,19 +228,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": " Light Drizzle Fog/Mist",
-    "obs": "4 Nov 04:53 am CST"
+    "temp": 63,
+    "cond": "Overcast",
+    "obs": "4 Nov 07:53 am CST"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
-     "text": "Scattered showers before 11am, then patchy drizzle with isolated showers between 11am and 2pm, then patchy drizzle with isolated sprinkles after 2pm.  Mostly cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 50%."
+     "text": "Scattered showers before 11am, then patchy drizzle with isolated showers between 11am and 2pm, then patchy drizzle with isolated sprinkles after 2pm.  Mostly cloudy, with a temperature falling to around 56 by 5pm. Southwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 40%."
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 50,
      "text": "Patchy drizzle with isolated sprinkles before 10pm.  Mostly cloudy, with a low around 50. Southwest wind around 15 mph, with gusts as high as 25 mph. "
@@ -261,7 +261,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 50,
-     "text": "A 30 percent chance of showers before noon.  Mostly cloudy, with a high near 50. Breezy. "
+     "text": "A 30 percent chance of showers before noon.  Mostly cloudy, with a high near 50. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Friday Night",
@@ -283,9 +283,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Chicago artist's 'Maybe it will happen today' catches on",
+    "b": "Phineas X. Jones turned a hopeful doodle into a message thousands of fans have embraced.",
+    "date": "2026-11-04",
+    "publisher": "WBEZ",
+    "title": "Maybe it will happen today, one Chicago pessimist hopes. Thousands of fans do too.",
+    "url": "https://www.wbez.org/arts-culture/2026/11/04/maybe-it-will-happen-today-one-chicago-pessimist-hopes-thousands-of-fans-do-too",
+    "published": "2026-11-04T11:35:00Z",
+    "updated": "2026-11-04T11:35:00Z",
+    "gathered": "2026-11-04T14:16:27Z"
+   }
+  ]
  },
  {
   "location": {
@@ -304,9 +316,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 36,
-    "cond": "Fair",
-    "obs": "4 Nov 03:58 am MST"
+    "temp": 37,
+    "cond": "Mostly Cloudy",
+    "obs": "4 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -359,7 +371,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -397,10 +409,10 @@
     "b": "Mayor Karen Bass was ahead 50.86% to 49.14% after the first ballot drops; counting will take days.",
     "date": "2026-11-04",
     "publisher": "LAist",
-    "title": "Bass ahead in early LA mayor’s race vote count, Raman trailing close behind",
+    "title": "Raman pulls ahead of Bass as counting continues in the race for LA mayor",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
     "published": "2026-11-04T04:21:44Z",
-    "updated": "2026-11-04T08:15:24Z",
+    "updated": "2026-11-04T13:58:25Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -419,13 +431,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 76,
      "text": "Sunny, with a high near 76. Calm wind becoming southwest around 5 mph in the morning. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Partly cloudy, with a low around 57. West northwest wind around 5 mph becoming north in the evening. "
@@ -446,7 +458,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 84,
-     "text": "Sunny, with a high near 84."
+     "text": "Sunny, with a high near 84. North northeast wind around 5 mph. "
     },
     {
      "name": "Friday Night",
@@ -468,7 +480,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -504,8 +516,7 @@
     "publisher": "Gothamist",
     "title": "Kathy Hochul re-elected New York governor, defeats Bruce Blakeman",
     "url": "https://gothamist.com/news/ny-election-results-governor-race",
-    "published": "2026-11-04T01:04:00Z",
-    "updated": "2026-11-04T03:54:00Z",
+    "published": "2026-11-04T03:54:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -547,8 +558,7 @@
     "publisher": "Gothamist",
     "title": "Republican Rep. Mike Lawler concedes to Cait Conley after voting machine snafu",
     "url": "https://gothamist.com/news/voting-machine-snafu-may-delay-results-in-ny-house-race-between-lawler-conley",
-    "published": "2026-11-04T00:57:00Z",
-    "updated": "2026-11-04T04:11:00Z",
+    "published": "2026-11-04T04:11:00Z",
     "gathered": "2026-11-04T03:10:24Z"
    },
    {
@@ -644,46 +654,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 62,
     "cond": "Fair",
-    "obs": "4 Nov 05:51 am EST"
+    "obs": "4 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 72,
-     "text": "Sunny, with a high near 72. Southwest wind 5 to 11 mph. "
+     "temp": 71,
+     "text": "Sunny, with a high near 71. South wind 7 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 62,
-     "text": "Partly cloudy, with a low around 62. South wind 8 to 10 mph. "
+     "temp": 61,
+     "text": "Partly cloudy, with a low around 61. South wind 7 to 9 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 70,
-     "text": "A 30 percent chance of showers, mainly before 1pm.  Mostly cloudy, with a high near 70. South wind 8 to 11 mph. "
+     "temp": 72,
+     "text": "A slight chance of showers before noon, then a chance of showers after 3pm.  Mostly cloudy, with a high near 72. South wind 9 to 11 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 65,
-     "text": "Showers.  Low around 65. Southwest wind 7 to 10 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 63,
+     "text": "Showers likely, mainly after 1am.  Mostly cloudy, with a low around 63. South wind 7 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 67,
-     "text": "Showers, with thunderstorms also possible after 10am.  High near 67. South wind 5 to 8 mph.  Chance of precipitation is 90%. New rainfall amounts between 1 and 2 inches possible. "
+     "temp": 64,
+     "text": "Showers, with thunderstorms also possible after 1pm.  Steady temperature around 64. Southwest wind 5 to 7 mph becoming southeast in the afternoon.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 58,
-     "text": "Showers likely, mainly before 1am.  Mostly cloudy, with a low around 58. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 59,
+     "text": "Showers likely before midnight.  Cloudy, then gradually becoming partly cloudy, with a low around 59. Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -699,7 +709,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -722,6 +732,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Cyberattack hits French bank Credit Mutuel Arkea",
+    "b": "The bank said the attack, reported to involve €118 million in fraudulent transactions, was under control.",
+    "date": "2026-11-04",
+    "publisher": "The Local France",
+    "title": "French bank hit by cyberattack that caused €118m 'fraudulent transactions'",
+    "url": "https://www.thelocal.fr/20261104/french-bank-hit-by-cyberattack-that-caused-e118m-fraudulent-transactions",
+    "published": "2026-11-04T12:23:16Z",
+    "updated": "2026-11-04T12:23:17Z",
+    "gathered": "2026-11-04T14:16:27Z"
+   },
    {
     "h": "Hoax bomb threats disrupt European flights",
     "b": "Flights to Warsaw, a Ryanair flight to Murcia and a Wizz Air flight in Sofia were hit by bomb alerts.",
@@ -774,7 +795,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "goodnews": []
  },
  {
@@ -800,13 +821,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "A 30 percent chance of rain after 4pm.  Partly sunny, with a high near 57. South wind 3 to 7 mph. "
+     "text": "A 30 percent chance of rain after 4pm.  Partly sunny, with a high near 57. Calm wind becoming south 5 to 7 mph in the morning. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Rain before 2am, then a slight chance of rain after 3am.  Low around 49. South wind 10 to 14 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -821,19 +842,19 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly cloudy, with a low around 48. South southeast wind around 8 mph. "
+     "text": "Increasing clouds, with a low around 48. South southeast wind around 8 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 55,
-     "text": "Rain likely.  Cloudy, with a high near 55. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely.  Cloudy, with a high near 55. South wind around 11 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Rain likely, mainly before 4am.  Cloudy, with a low around 49. Chance of precipitation is 70%."
+     "text": "Rain likely, mainly before 4am.  Cloudy, with a low around 49. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -849,7 +870,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-04T14:13:00Z",
+  "updatedAt": "2026-11-04T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
