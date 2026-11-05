@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T08:12:00Z",
+ "updatedAt": "2026-11-05T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -47,6 +47,15 @@
   }
  ],
  "politics": [
+  {
+   "h": "Can Democrats deliver on their promises?",
+   "b": "They won't take control of Congress until January, and will need Republican cooperation to do much.",
+   "date": "2026-11-05",
+   "publisher": "Al Jazeera",
+   "title": "Democrats won Congress. But can they deliver on their promises?",
+   "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises",
+   "gathered": "2026-11-05T08:12:20Z"
+  },
   {
    "h": "Election deniers lose swing-state governor races",
    "b": "Andy Biggs, John James, Stacy Garrity and Tom Tiffany were among the Republicans defeated.",
@@ -617,46 +626,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 63,
-   "cond": "Mostly Cloudy",
-   "obs": "5 Nov 01:51 am EST"
+   "temp": 64,
+   "cond": "Overcast",
+   "obs": "5 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 64,
-    "text": "Mostly cloudy, with a low around 64. Southwest wind around 8 mph. "
-   },
    {
     "name": "Thursday",
     "kind": "high",
     "temp": 70,
-    "text": "A 40 percent chance of rain.  Mostly cloudy, with a high near 70. South wind 9 to 13 mph. "
+    "text": "A 30 percent chance of rain, mainly after 1pm.  Patchy fog before 7am.  Otherwise, mostly cloudy, with a high near 70. South wind 6 to 11 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
     "temp": 65,
-    "text": "Rain likely.  Mostly cloudy, with a low around 65. South wind 7 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "text": "Rain, mainly before 4am, then showers likely and possibly a thunderstorm after 4am.  Low around 65. South wind 7 to 11 mph becoming west after midnight.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 68,
-    "text": "Rain likely.  Mostly cloudy, with a high near 68. Southwest wind 5 to 7 mph becoming northwest in the afternoon.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
+    "text": "Showers likely and possibly a thunderstorm, then rain after 7am.  High near 68. Northwest wind 5 to 7 mph becoming southeast in the afternoon.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59. Northwest wind 5 to 7 mph. "
+    "temp": 58,
+    "text": "Rain likely, mainly before 7pm.  Mostly cloudy, then gradually becoming mostly clear, with a low around 58. South wind 5 to 7 mph becoming northwest after midnight.  Chance of precipitation is 60%."
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 64,
     "text": "Mostly sunny, with a high near 64."
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 51,
+    "text": "Partly cloudy, with a low around 51."
    }
   ]
  },

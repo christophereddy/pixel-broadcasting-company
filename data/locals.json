@@ -20,17 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
+    "temp": 69,
     "cond": "Mostly Cloudy",
-    "obs": "5 Nov 01:52 am EST"
+    "obs": "5 Nov 02:52 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 64,
-     "text": "A 20 percent chance of showers.  Patchy fog.  Otherwise, mostly cloudy, with a low around 64. South wind around 5 mph becoming calm. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
@@ -60,6 +54,12 @@
      "kind": "high",
      "temp": 66,
      "text": "Sunny, with a high near 66."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43."
     }
    ]
   },
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -100,15 +100,9 @@
    "now": {
     "temp": 60,
     "cond": "Partly Cloudy",
-    "obs": "5 Nov 01:54 am EST"
+    "obs": "5 Nov 02:54 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. Southwest wind around 6 mph. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
@@ -138,6 +132,12 @@
      "kind": "high",
      "temp": 64,
      "text": "A chance of rain, mainly after 1pm.  Mostly cloudy, with a high near 64. Light and variable wind becoming north 5 to 7 mph in the morning.  Chance of precipitation is 30%."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "A chance of rain.  Mostly cloudy, with a low around 48. Northeast wind 7 to 10 mph becoming northwest after midnight.  Chance of precipitation is 40%."
     }
    ]
   },
@@ -153,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -224,9 +224,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 52,
     "cond": "Overcast",
-    "obs": "5 Nov 00:53 am CST"
+    "obs": "5 Nov 01:53 am CST"
    },
    "periods": [
     {
@@ -279,7 +279,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -308,16 +308,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 39,
     "cond": "Partly Cloudy",
-    "obs": "4 Nov 23:58 pm MST"
+    "obs": "5 Nov 00:58 am MST"
    },
    "periods": [
     {
      "name": "Overnight",
      "kind": "low",
      "temp": 37,
-     "text": "Mostly cloudy, with a low around 37. North northwest wind around 5 mph becoming calm. "
+     "text": "Mostly cloudy, with a low around 37. Light west southwest wind. "
     },
     {
      "name": "Thursday",
@@ -363,7 +363,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -393,7 +393,7 @@
     "title": "West Hollywood passes domestic partnership registry for polyamorous families",
     "url": "https://laist.com/news/politics/west-hollywood-passes-domestic-partnership-registry-for-polyamorous-families",
     "published": "2026-11-05T01:56:56Z",
-    "updated": "2026-11-05T05:41:46Z",
+    "updated": "2026-11-05T07:16:27Z",
     "gathered": "2026-11-05T02:12:12Z"
    },
    {
@@ -436,7 +436,7 @@
     "title": "Raman widens her lead over Bass as counting continues in the race for LA mayor",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
     "published": "2026-11-04T04:21:44Z",
-    "updated": "2026-11-05T04:40:22Z",
+    "updated": "2026-11-05T07:25:29Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -455,7 +455,7 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 58,
      "text": "Partly cloudy, with a low around 58. North wind around 5 mph. "
@@ -504,7 +504,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -639,46 +639,46 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Mostly Cloudy",
-    "obs": "5 Nov 01:51 am EST"
+    "temp": 64,
+    "cond": "Overcast",
+    "obs": "5 Nov 02:51 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 64,
-     "text": "Mostly cloudy, with a low around 64. Southwest wind around 8 mph. "
-    },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 70,
-     "text": "A 40 percent chance of rain.  Mostly cloudy, with a high near 70. South wind 9 to 13 mph. "
+     "text": "A 30 percent chance of rain, mainly after 1pm.  Patchy fog before 7am.  Otherwise, mostly cloudy, with a high near 70. South wind 6 to 11 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 65,
-     "text": "Rain likely.  Mostly cloudy, with a low around 65. South wind 7 to 10 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly before 4am, then showers likely and possibly a thunderstorm after 4am.  Low around 65. South wind 7 to 11 mph becoming west after midnight.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 68,
-     "text": "Rain likely.  Mostly cloudy, with a high near 68. Southwest wind 5 to 7 mph becoming northwest in the afternoon.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Showers likely and possibly a thunderstorm, then rain after 7am.  High near 68. Northwest wind 5 to 7 mph becoming southeast in the afternoon.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 59,
-     "text": "A 30 percent chance of rain before 1am.  Cloudy, then gradually becoming partly cloudy, with a low around 59. Northwest wind 5 to 7 mph. "
+     "temp": 58,
+     "text": "Rain likely, mainly before 7pm.  Mostly cloudy, then gradually becoming mostly clear, with a low around 58. South wind 5 to 7 mph becoming northwest after midnight.  Chance of precipitation is 60%."
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 64,
      "text": "Mostly sunny, with a high near 64."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 51,
+     "text": "Partly cloudy, with a low around 51."
     }
    ]
   },
@@ -694,7 +694,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -718,6 +718,17 @@
   },
   "local": [
    {
+    "h": "Southern France on alert for heavy rain, floods",
+    "b": "Hérault and Gard joined Corsica under orange alerts from 10am Thursday, Météo-France said.",
+    "date": "2026-11-05",
+    "publisher": "The Local France",
+    "title": "Parts of southern France put on alert for heavy rain and floods",
+    "url": "https://www.thelocal.fr/20261105/parts-of-southern-france-put-on-alert-for-heavy-rain-and-floods",
+    "published": "2026-11-05T07:46:20Z",
+    "updated": "2026-11-05T07:46:21Z",
+    "gathered": "2026-11-05T08:12:20Z"
+   },
+   {
     "h": "EU-UK deal could bring back pet passports",
     "b": "The measure may be announced at a Nov. 20 summit in Brussels, easing Channel travel with pets.",
     "date": "2026-11-04",
@@ -732,11 +743,7 @@
     "h": "Cyberattack hits French bank Credit Mutuel Arkea",
     "b": "The bank said the attack, reported to involve €118 million in fraudulent transactions, was under control.",
     "date": "2026-11-04",
-    "publisher": "The Local France",
-    "title": "French bank hit by cyberattack that caused €118m 'fraudulent transactions'",
     "url": "https://www.thelocal.fr/20261104/french-bank-hit-by-cyberattack-that-caused-e118m-fraudulent-transactions",
-    "published": "2026-11-04T12:23:16Z",
-    "updated": "2026-11-04T12:23:17Z",
     "gathered": "2026-11-04T14:16:27Z"
    }
   ],
@@ -756,7 +763,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "goodnews": []
  },
  {
@@ -789,10 +796,10 @@
    "now": null,
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 50,
-     "text": "A 20 percent chance of rain before midnight.  Mostly cloudy, then gradually becoming mostly clear, with a low around 50. South southwest wind 7 to 10 mph. "
+     "text": "Partly cloudy, with a low around 50. South southwest wind 7 to 10 mph. "
     },
     {
      "name": "Thursday",
@@ -838,7 +845,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T08:12:00Z",
+  "updatedAt": "2026-11-05T11:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
