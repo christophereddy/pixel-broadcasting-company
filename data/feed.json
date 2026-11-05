@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T11:13:00Z",
+ "updatedAt": "2026-11-05T14:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -28,16 +28,38 @@
    "gathered": "2026-11-04T05:12:45Z"
   },
   {
-   "h": "IRGC says tankers, tugboat ablaze in Hormuz",
-   "b": "Iran's Revolutionary Guard says two tankers and a tugboat caught fire in the strait, Al Jazeera's live coverage reports.",
+   "h": "IRGC says three tankers on fire in Hormuz",
+   "b": "A Saudi-led coalition also downed a Houthi missile, Al Jazeera's live coverage reports.",
    "date": "2026-11-05",
    "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC says two tankers and a tugboat caught fire in Strait of Hormuz",
+   "title": "IRGC says 3 tankers on fire in Hormuz; Saudi coalition downs Houthi missile",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it",
    "gathered": "2026-11-05T00:29:03Z"
   }
  ],
  "national": [
+  {
+   "h": "SafeSport to alert clubs about banned coaches",
+   "b": "The move follows a ProPublica-Washington Post probe that found sanctioned coaches still working with kids.",
+   "date": "2026-11-05",
+   "publisher": "ProPublica",
+   "title": "SafeSport Will Now Alert Schools, Clubs if Coaches Sanctioned for Abuse Continue to Work With Kids",
+   "url": "https://www.propublica.org/article/safesport-child-abuse-notification-system-impact",
+   "published": "2026-11-05T10:00:00Z",
+   "updated": "2026-11-05T10:00:15Z",
+   "gathered": "2026-11-05T11:14:07Z"
+  },
+  {
+   "h": "Trump's 250-foot arch nears federal approval",
+   "b": "A judge could still block construction of the planned triumphal arch in Washington.",
+   "date": "2026-11-05",
+   "publisher": "KUOW",
+   "title": "Trump's arch is on the verge of federal approval. But a judge could block construction",
+   "url": "https://www.kuow.org/npr-news/2026-11-05/trumps-arch-is-on-the-verge-of-federal-approval-but-a-judge-could-block-construction",
+   "published": "2026-11-05T10:02:00Z",
+   "updated": "2026-11-05T10:28:54Z",
+   "gathered": "2026-11-05T11:14:07Z"
+  },
   {
    "h": "Navajo voters overcome flooding to cast ballots",
    "b": "Despite washed-out roads that drove thousands from their homes, voters turned out across the reservation.",
@@ -402,6 +424,28 @@
  ],
  "business": [
   {
+   "h": "Tight budgets send readers back to libraries",
+   "b": "People are turning to library cards for books and digital content as they cut spending.",
+   "date": "2026-11-05",
+   "publisher": "KUOW",
+   "title": "As budgets tighten, people are breaking out their library cards",
+   "url": "https://www.kuow.org/npr-news/2026-11-05/as-budgets-tighten-people-are-breaking-out-their-library-cards",
+   "published": "2026-11-05T10:00:00Z",
+   "updated": "2026-11-05T10:28:57Z",
+   "gathered": "2026-11-05T11:14:07Z"
+  },
+  {
+   "h": "Don't expect lower gas prices soon",
+   "b": "Gas averages $4.12 a gallon, about $1 more than a year ago, with Brent crude near $95.",
+   "date": "2026-11-05",
+   "publisher": "KUOW",
+   "title": "Does the blue wave mean lower gasoline and diesel prices soon? Don't hold your breath",
+   "url": "https://www.kuow.org/npr-news/2026-11-05/does-the-blue-wave-mean-lower-gasoline-and-diesel-prices-soon-dont-hold-your-breath",
+   "published": "2026-11-05T10:00:00Z",
+   "updated": "2026-11-05T10:28:35Z",
+   "gathered": "2026-11-05T11:14:07Z"
+  },
+  {
    "h": "Wyoming, Florida split on property tax cuts",
    "b": "Florida approved an exemption while Wyoming voters overwhelmingly rejected a 50% cut.",
    "date": "2026-11-04",
@@ -626,19 +670,19 @@
  ],
  "weather": {
   "now": {
-   "temp": 64,
+   "temp": 65,
    "cond": "Overcast",
-   "obs": "5 Nov 02:51 am EST"
+   "obs": "5 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Thursday",
+    "name": "Today",
     "kind": "high",
     "temp": 70,
-    "text": "A 30 percent chance of rain, mainly after 1pm.  Patchy fog before 7am.  Otherwise, mostly cloudy, with a high near 70. South wind 6 to 11 mph. "
+    "text": "A 30 percent chance of rain, mainly after 1pm.  Patchy fog before 7am.  Otherwise, mostly cloudy, with a high near 70. Southwest wind 5 to 11 mph. "
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 65,
     "text": "Rain, mainly before 4am, then showers likely and possibly a thunderstorm after 4am.  Low around 65. South wind 7 to 11 mph becoming west after midnight.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
@@ -659,7 +703,7 @@
     "name": "Saturday",
     "kind": "high",
     "temp": 64,
-    "text": "Mostly sunny, with a high near 64."
+    "text": "Mostly sunny, with a high near 64. West wind 7 to 13 mph. "
    },
    {
     "name": "Saturday Night",
