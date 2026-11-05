@@ -20,9 +20,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 70,
     "cond": "Mostly Cloudy",
-    "obs": "4 Nov 18:52 pm EST"
+    "obs": "4 Nov 20:52 pm EST"
    },
    "periods": [
     {
@@ -75,7 +75,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,9 +98,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 64,
     "cond": "A Few Clouds",
-    "obs": "4 Nov 18:54 pm EST"
+    "obs": "4 Nov 20:54 pm EST"
    },
    "periods": [
     {
@@ -153,7 +153,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -165,6 +165,17 @@
   },
   "local": [
    {
+    "h": "Upset in West Side school board race",
+    "b": "Realtor LaPamela Williams, backed by charter school supporters, unseated activist Jitu Brown in District 5a.",
+    "date": "2026-11-04",
+    "publisher": "WBEZ",
+    "title": "In upset, LaPamela Williams wins in West Side District 5a Chicago School Board race",
+    "url": "https://www.wbez.org/education/2026/11/03/chicago-school-board-district-5a-results",
+    "published": "2026-11-04T23:00:00Z",
+    "updated": "2026-11-05T02:12:15Z",
+    "gathered": "2026-11-05T02:12:12Z"
+   },
+   {
     "h": "Stratton win makes Illinois history",
     "b": "With Tammy Duckworth, Illinois becomes the first state with two women of color in the Senate at once.",
     "date": "2026-11-04",
@@ -172,7 +183,7 @@
     "title": "Juliana Stratton’s win marks historic first for women of color in national politics",
     "url": "https://www.wbez.org/government-politics/elections/2026/11/04/julianna-strattons-win-marks-historic-first-for-women-of-color-in-illinois-politics",
     "published": "2026-11-04T23:35:35Z",
-    "updated": "2026-11-04T23:35:35Z",
+    "updated": "2026-11-05T01:32:31Z",
     "gathered": "2026-11-05T00:29:03Z"
    },
    {
@@ -215,19 +226,15 @@
     "h": "Teachers union leads in nine school board races",
     "b": "CTU candidates were ahead in nine of 20 seats, though its pick for board president trailed Jessica Biggs.",
     "date": "2026-11-04",
-    "publisher": "WBEZ",
-    "title": "Chicago Teachers Union poised to capture half of school board district seats, but loses president’s race",
     "url": "https://www.wbez.org/education/2026/11/03/chicago-teachers-union-poised-to-capture-half-of-school-board-district-seats-but-likely-to-lose-presidency",
-    "published": "2026-11-04T16:30:00Z",
-    "updated": "2026-11-04T20:10:09Z",
     "gathered": "2026-11-04T05:12:45Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "obs": "4 Nov 17:53 pm CST"
+    "temp": 53,
+    "cond": " Light Rain",
+    "obs": "4 Nov 19:53 pm CST"
    },
    "periods": [
     {
@@ -280,18 +287,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Chicago artist's 'Maybe it will happen today' catches on",
     "b": "Phineas X. Jones turned a hopeful doodle into a message thousands of fans have embraced.",
     "date": "2026-11-04",
-    "publisher": "WBEZ",
-    "title": "Maybe it will happen today, one Chicago pessimist hopes. Thousands of fans do too.",
     "url": "https://www.wbez.org/arts-culture/2026/11/04/maybe-it-will-happen-today-one-chicago-pessimist-hopes-thousands-of-fans-do-too",
-    "published": "2026-11-04T11:35:00Z",
-    "updated": "2026-11-04T11:35:00Z",
     "gathered": "2026-11-04T14:16:27Z"
    }
   ]
@@ -312,11 +315,7 @@
    }
   ],
   "weather": {
-   "now": {
-    "temp": 54,
-    "cond": "Mostly Cloudy",
-    "obs": "4 Nov 14:58 pm MST"
-   },
+   "now": null,
    "periods": [
     {
      "name": "Tonight",
@@ -368,7 +367,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -379,6 +378,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "All 8 LA city ballot measures passing",
+    "b": "Voters are poised to approve every measure, including a charter change to how often the council meets.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "All 8 LA city ballot measures are passing. Here’s what changes",
+    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-live-results-los-angeles-city-ballot-measures-ee-fd-la-te-se-prt-el",
+    "published": "2026-11-05T00:28:38Z",
+    "updated": "2026-11-05T00:57:23Z",
+    "gathered": "2026-11-05T02:12:12Z"
+   },
+   {
+    "h": "West Hollywood creates registry for polyamorous families",
+    "b": "The ordinance extends some legal protections, including visitation rights, to multi-partner relationships.",
+    "date": "2026-11-04",
+    "publisher": "LAist",
+    "title": "West Hollywood passes domestic partnership registry for polyamorous families",
+    "url": "https://laist.com/news/politics/west-hollywood-passes-domestic-partnership-registry-for-polyamorous-families",
+    "published": "2026-11-05T01:56:56Z",
+    "updated": "2026-11-05T01:56:56Z",
+    "gathered": "2026-11-05T02:12:12Z"
+   },
    {
     "h": "Gonzales-Torres unseats Rep. Jimmy Gomez",
     "b": "Newcomer Angela Gonzales-Torres won the 34th Congressional District race, AP projected.",
@@ -394,33 +415,21 @@
     "h": "Xavier Becerra wins California governor's race",
     "b": "The governor-elect faces federal health care cuts, rising wildfire costs and a cost-of-living crisis.",
     "date": "2026-11-04",
-    "publisher": "LAist",
-    "title": "Xavier Becerra is California’s next governor: Five things to know",
     "url": "https://laist.com/news/politics/xavier-becerra-california-next-governor-five-things-to-know",
-    "published": "2026-11-04T19:00:00Z",
-    "updated": "2026-11-04T18:59:59Z",
     "gathered": "2026-11-04T20:12:41Z"
    },
    {
     "h": "California voters reject Prop 39 voter ID measure",
     "b": "About 60% opposed the GOP-backed proposal, which drew millions from Republican megadonors.",
     "date": "2026-11-04",
-    "publisher": "LAist",
-    "title": "Prop 39: California voters reject conservative voter ID proposal",
     "url": "https://laist.com/news/politics/2026-election-california-general-proposition-39-results",
-    "published": "2026-11-04T06:01:15Z",
-    "updated": "2026-11-04T06:42:10Z",
     "gathered": "2026-11-04T08:17:00Z"
    },
    {
     "h": "Clinic spending measure Prop 44 fails",
     "b": "Voters rejected the SEIU-UHW measure, the union's fourth failed clinic initiative since 2018.",
     "date": "2026-11-04",
-    "publisher": "LAist",
-    "title": "Prop 44 fails: Clinics defeat measures that would have restricted their spending",
     "url": "https://laist.com/news/politics/2026-election-california-general-proposition-44-results",
-    "published": "2026-11-04T05:44:57Z",
-    "updated": "2026-11-04T07:08:02Z",
     "gathered": "2026-11-04T08:17:00Z"
    },
    {
@@ -431,7 +440,7 @@
     "title": "Raman pulls ahead of Bass as counting continues in the race for LA mayor",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
     "published": "2026-11-04T04:21:44Z",
-    "updated": "2026-11-04T23:17:23Z",
+    "updated": "2026-11-05T01:19:44Z",
     "gathered": "2026-11-04T05:12:45Z"
    },
    {
@@ -453,7 +462,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly clear, with a low around 58. Calm wind becoming north around 5 mph. "
+     "text": "Mostly clear, with a low around 58. West southwest wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Thursday",
@@ -477,7 +486,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 60,
-     "text": "Clear, with a low around 60."
+     "text": "Clear, with a low around 60. North northeast wind 5 to 10 mph. "
     },
     {
      "name": "Saturday",
@@ -499,7 +508,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -634,16 +643,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 64,
     "cond": "Fair",
-    "obs": "4 Nov 18:51 pm EST"
+    "obs": "4 Nov 20:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 62,
-     "text": "Partly cloudy, with a low around 62. Southwest wind 8 to 11 mph. "
+     "temp": 64,
+     "text": "Mostly cloudy, with a low around 64. Southwest wind 8 to 10 mph. "
     },
     {
      "name": "Thursday",
@@ -689,7 +698,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -751,7 +760,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "goodnews": []
  },
  {
@@ -787,7 +796,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Rain, mainly before 10pm.  Low around 50. South wind 7 to 10 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain, mainly before 10pm.  Low around 50. South southwest wind 6 to 10 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
@@ -811,7 +820,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Rain likely, mainly before 10pm.  Cloudy, with a low around 50. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 10pm.  Cloudy, with a low around 50. South wind 3 to 6 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -833,7 +842,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T02:12:00Z",
+  "updatedAt": "2026-11-05T05:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T02:12:00Z",
+ "updatedAt": "2026-11-05T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -402,11 +402,27 @@
  "science": [],
  "sports": [
   {
+   "h": "Miami's Malachi Toney to have ankle surgery",
+   "b": "The No. 1 Hurricanes' top receiver has a high-ankle sprain but may return for a playoff run.",
+   "date": "2026-11-04",
+   "publisher": "CBS Sports",
+   "title": "Malachi Toney expected to undergo surgery after injuring ankle in practice ahead of showdown with Notre Dame",
+   "url": "https://www.cbssports.com/college-football/news/malachi-toney-injury-update-ankle-miami-notre-dame-status/",
+   "gathered": "2026-11-05T02:12:12Z"
+  },
+  {
+   "h": "Micah Parsons returns to Packers practice",
+   "b": "Green Bay opened his 21-day window to return from a torn ACL and meniscus.",
+   "date": "2026-11-04",
+   "publisher": "CBS Sports",
+   "title": "NFL Week 9 injury report: Micah Parsons returns to Packers practice, Rams lose Jaylen Watson for season",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-9-injury-report-micah-parsons-jaylen-watson-rams/",
+   "gathered": "2026-11-05T02:12:12Z"
+  },
+  {
    "h": "Ravens agree to trade for Jacoby Brissett",
    "b": "Baltimore adds the Cardinals QB after Lamar Jackson's thumb surgery left its quarterback room depleted.",
    "date": "2026-11-04",
-   "publisher": "CBS Sports",
-   "title": "Jacoby Brissett trade: Ravens strike deal for Cardinals QB amid injury crisis",
    "url": "https://www.cbssports.com/nfl/news/jacoby-brissett-trade-ravens-cardinals-lamar-jackson/",
    "gathered": "2026-11-04T20:12:41Z"
   },
@@ -565,16 +581,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 66,
+   "temp": 64,
    "cond": "Fair",
-   "obs": "4 Nov 18:51 pm EST"
+   "obs": "4 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 62,
-    "text": "Partly cloudy, with a low around 62. Southwest wind 8 to 11 mph. "
+    "temp": 64,
+    "text": "Mostly cloudy, with a low around 64. Southwest wind 8 to 10 mph. "
    },
    {
     "name": "Thursday",
