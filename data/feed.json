@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T05:11:00Z",
+ "updatedAt": "2026-11-05T08:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Iran hails US vote as Khamenei warns hostility won't end",
    "b": "Iran's supreme leader called US policy \"seriously mistaken\" as other officials struck a more optimistic tone.",
    "date": "2026-11-04",
-   "publisher": "Al Jazeera",
-   "title": "Iran’s Khamenei warns Trump loss at polls won’t end US hostility",
    "url": "https://www.aljazeera.com/news/2026/11/4/iran-hails-us-voters-rejecting-war-while-khamenei-warns-hostility-wont-end",
    "gathered": "2026-11-04T14:16:27Z"
   },
@@ -30,11 +28,11 @@
    "gathered": "2026-11-04T05:12:45Z"
   },
   {
-   "h": "Trump says Iran war cost GOP but he 'had to do it'",
-   "b": "The president acknowledged the war caused his party's election wipeout, Al Jazeera's live coverage reports.",
+   "h": "IRGC says tankers, tugboat ablaze in Hormuz",
+   "b": "Iran's Revolutionary Guard says two tankers and a tugboat caught fire in the strait, Al Jazeera's live coverage reports.",
    "date": "2026-11-05",
    "publisher": "Al Jazeera",
-   "title": "Trump admits war on Iran led to election wipeout but he ‘had to do it’",
+   "title": "Iran’s IRGC says two tankers and a tugboat caught fire in Strait of Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it",
    "gathered": "2026-11-05T00:29:03Z"
   }
@@ -44,32 +42,31 @@
    "h": "Navajo voters overcome flooding to cast ballots",
    "b": "Despite washed-out roads that drove thousands from their homes, voters turned out across the reservation.",
    "date": "2026-11-04",
-   "publisher": "KUOW",
-   "title": "Navajo voters hop tractors, make extraordinary efforts to vote after widespread flooding",
    "url": "https://www.kuow.org/npr-news/2026-11-04/navajo-voters-hop-tractors-make-extraordinary-efforts-to-vote-after-widespread-flooding",
-   "published": "2026-11-04T20:24:30Z",
-   "updated": "2026-11-04T21:50:34Z",
    "gathered": "2026-11-05T00:29:03Z"
   }
  ],
  "politics": [
   {
+   "h": "Election deniers lose swing-state governor races",
+   "b": "Andy Biggs, John James, Stacy Garrity and Tom Tiffany were among the Republicans defeated.",
+   "date": "2026-11-04",
+   "publisher": "Al Jazeera",
+   "title": "Election deniers lose races for governor in key US swing states",
+   "url": "https://www.aljazeera.com/news/2026/11/5/election-deniers-lose-races-for-governor-in-key-us-swing-states",
+   "gathered": "2026-11-05T07:10:57Z"
+  },
+  {
    "h": "Schumer hails 'generational remake' of Senate",
    "b": "The Democratic leader said the blue wave that won his party both chambers marks a major shift.",
    "date": "2026-11-04",
-   "publisher": "KUOW",
-   "title": "Chuck Schumer heralds Democrats' 'generational remake' of Senate",
    "url": "https://www.kuow.org/npr-news/2026-11-04/chuck-schumer-heralds-democrats-generational-remake-of-senate",
-   "published": "2026-11-04T18:37:34Z",
-   "updated": "2026-11-04T19:04:03Z",
    "gathered": "2026-11-04T20:12:41Z"
   },
   {
    "h": "Several key races still undecided",
    "b": "Mary Peltola holds a 626-vote lead in Alaska, and Kansas' governor's race is within a point.",
    "date": "2026-11-04",
-   "publisher": "Al Jazeera",
-   "title": "US midterms 2026: What key races remain undecided?",
    "url": "https://www.aljazeera.com/news/2026/11/4/us-midterms-2026-what-key-races-remain-undecided",
    "gathered": "2026-11-04T20:12:41Z"
   },
@@ -278,16 +275,47 @@
  ],
  "international": [
   {
+   "h": "Bukele touts Salvadoran troops in Haiti",
+   "b": "El Salvador's president posted videos of his soldiers patrolling Haitian streets and dared gangs to fight.",
+   "date": "2026-11-04",
+   "place": "Haiti",
+   "tz": "America/Port-au-Prince",
+   "publisher": "Al Jazeera",
+   "title": "El Salvador’s Bukele touts military intervention in Haiti",
+   "url": "https://www.aljazeera.com/news/2026/11/5/el-salvadors-bukele-touts-military-intervention-in-haiti",
+   "gathered": "2026-11-05T07:10:57Z"
+  },
+  {
+   "h": "Saudi Arabia, Syria sign defence deal",
+   "b": "The kingdom also agreed to more than $403 million in loans for Syria's energy, housing and health sectors.",
+   "date": "2026-11-04",
+   "place": "Riyadh, Saudi Arabia",
+   "tz": "Asia/Riyadh",
+   "publisher": "Al Jazeera",
+   "title": "Syria, Saudi Arabia sign defence cooperation deal, agree $403m in loans",
+   "url": "https://www.aljazeera.com/news/2026/11/5/syria-saudi-arabia-sign-defence-cooperation-deal-agree-403m-in-loans",
+   "gathered": "2026-11-05T07:10:57Z"
+  },
+  {
+   "h": "Joshua Wong sentenced to 10 years",
+   "b": "The prominent Hong Kong activist was sentenced for his second conviction under a Beijing-imposed law.",
+   "date": "2026-11-05",
+   "place": "Hong Kong",
+   "tz": "Asia/Hong_Kong",
+   "publisher": "KUOW",
+   "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison",
+   "url": "https://www.kuow.org/npr-news/2026-11-04/hong-kong-activist-joshua-wong-sentenced-to-10-years-in-prison",
+   "published": "2026-11-05T05:29:56Z",
+   "updated": "2026-11-05T05:53:03Z",
+   "gathered": "2026-11-05T07:10:57Z"
+  },
+  {
    "h": "Conductor Herbert Blomstedt dies at 99",
    "b": "The American-born Swedish conductor led major orchestras for seven decades, including the San Francisco Symphony.",
    "date": "2026-11-04",
    "place": "Gothenburg, Sweden",
    "tz": "Europe/Stockholm",
-   "publisher": "KUOW",
-   "title": "Herbert Blomstedt, conductor of great orchestras for seven decades, dies at 99",
    "url": "https://www.kuow.org/npr-news/2026-11-04/herbert-blomstedt-conductor-of-great-orchestras-for-seven-decades-dies-at-99",
-   "published": "2026-11-04T20:11:14Z",
-   "updated": "2026-11-04T20:56:56Z",
    "gathered": "2026-11-05T00:29:03Z"
   },
   {
@@ -386,8 +414,6 @@
    "h": "Stocks rise after Democrats sweep midterms",
    "b": "The Dow opened up 1.8%, the S&P 500 1.1% and the Nasdaq 1%; import-reliant retailers gained.",
    "date": "2026-11-04",
-   "publisher": "Al Jazeera",
-   "title": "US markets rise as Democrats sweep midterm elections",
    "url": "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections",
    "gathered": "2026-11-04T18:46:07Z"
   },
@@ -414,8 +440,6 @@
    "h": "Micah Parsons returns to Packers practice",
    "b": "Green Bay opened his 21-day window to return from a torn ACL and meniscus.",
    "date": "2026-11-04",
-   "publisher": "CBS Sports",
-   "title": "NFL Week 9 injury report: Micah Parsons returns to Packers practice, Rams lose Jaylen Watson for season",
    "url": "https://www.cbssports.com/nfl/news/nfl-week-9-injury-report-micah-parsons-jaylen-watson-rams/",
    "gathered": "2026-11-05T02:12:12Z"
   },
@@ -455,7 +479,19 @@
    "gathered": "2026-11-03T14:16:48Z"
   }
  ],
- "goodnews": [],
+ "goodnews": [
+  {
+   "h": "Bob Dylan visits Pope Leo at the Vatican",
+   "b": "The singer and Nobel laureate met the pope on Wednesday.",
+   "date": "2026-11-04",
+   "publisher": "KUOW",
+   "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+   "url": "https://www.kuow.org/npr-news/2026-11-04/bob-dylan-comes-knockin-on-popes-door-as-leo-welcomes-legend-to-vatican",
+   "published": "2026-11-05T07:02:12Z",
+   "updated": "2026-11-05T07:08:34Z",
+   "gathered": "2026-11-05T07:10:57Z"
+  }
+ ],
  "local": [
   {
    "h": "Ballot win fast-tracks bus and bike lanes",
@@ -581,16 +617,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 64,
-   "cond": "Fair",
-   "obs": "4 Nov 20:51 pm EST"
+   "temp": 63,
+   "cond": "Mostly Cloudy",
+   "obs": "5 Nov 01:51 am EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 64,
-    "text": "Mostly cloudy, with a low around 64. Southwest wind 8 to 10 mph. "
+    "text": "Mostly cloudy, with a low around 64. Southwest wind around 8 mph. "
    },
    {
     "name": "Thursday",
