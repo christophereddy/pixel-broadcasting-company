@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-05T17:13:00Z",
+ "updatedAt": "2026-11-05T20:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -308,10 +308,7 @@
    "date": "2026-11-05",
    "place": "London",
    "tz": "Europe/London",
-   "publisher": "PBS NewsHour",
-   "title": "Russell Brand convicted of rape and sexual assault",
    "url": "https://www.pbs.org/newshour/world/russell-brand-convicted-of-rape-and-sexual-assault",
-   "published": "2026-11-05T15:31:28Z",
    "gathered": "2026-11-05T15:42:19Z"
   },
   {
@@ -507,11 +504,18 @@
  ],
  "sports": [
   {
+   "h": "No. 1 Miami visits No. 11 Notre Dame",
+   "b": "The Irish get a shot at revenge for the Week 1 loss that kept them out of last year's playoff.",
+   "date": "2026-11-05",
+   "publisher": "CBS Sports",
+   "title": "Who has the edge in Miami vs. Notre Dame? Position-by-position breakdown for major showdown",
+   "url": "https://www.cbssports.com/college-football/news/miami-notre-dame-position-by-position-breakdown/",
+   "gathered": "2026-11-05T17:16:56Z"
+  },
+  {
    "h": "NBA weighs shortening games to 40 minutes",
    "b": "Commissioner Adam Silver has backed four 10-minute quarters as the league battles an injury crisis.",
    "date": "2026-11-05",
-   "publisher": "CBS Sports",
-   "title": "Should the NBA shorten games to 40 minutes? Pros and cons of move as league battles early season injury crisis",
    "url": "https://www.cbssports.com/nba/news/should-nba-shorten-games-to-40-minutes-pros-cons-injury-crisis/",
    "gathered": "2026-11-05T15:42:19Z"
   },
@@ -570,11 +574,7 @@
    "h": "Bob Dylan visits Pope Leo at the Vatican",
    "b": "The singer and Nobel laureate met the pope on Wednesday.",
    "date": "2026-11-04",
-   "publisher": "KUOW",
-   "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
    "url": "https://www.kuow.org/npr-news/2026-11-04/bob-dylan-comes-knockin-on-popes-door-as-leo-welcomes-legend-to-vatican",
-   "published": "2026-11-05T07:02:12Z",
-   "updated": "2026-11-05T07:08:34Z",
    "gathered": "2026-11-05T07:10:57Z"
   }
  ],
@@ -584,10 +584,10 @@
    "b": "Seven others were hurt in the blaze at a two-story home on 58th Street; over 200 responders fought it.",
    "date": "2026-11-05",
    "publisher": "Gothamist",
-   "title": "Brooklyn fire kills 6 people, injures 7 others in Sunset Park, officials said",
+   "title": "Brooklyn fire kills 6 people, injures 9 others in Sunset Park, officials said",
    "url": "https://gothamist.com/news/brooklyn-fire-kills-6-people-injures-7-others-in-sunset-park",
    "published": "2026-11-05T12:31:00Z",
-   "updated": "2026-11-05T14:47:00Z",
+   "updated": "2026-11-05T17:13:00Z",
    "gathered": "2026-11-05T15:42:19Z"
   },
   {
@@ -734,15 +734,15 @@
  "weather": {
   "now": {
    "temp": 70,
-   "cond": "Mostly Cloudy",
-   "obs": "5 Nov 09:51 am EST"
+   "cond": "Overcast",
+   "obs": "5 Nov 11:51 am EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 70,
-    "text": "A 30 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a high near 70. South wind 8 to 11 mph. "
+    "text": "A 30 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a high near 70. South wind 9 to 11 mph. "
    },
    {
     "name": "Tonight",
