@@ -31,22 +31,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Mostly Cloudy",
-    "obs": "6 Nov 02:52 am EST"
+    "temp": 59,
+    "cond": "Partly Cloudy",
+    "obs": "6 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Mostly clear, with a low around 49. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 49. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
@@ -58,13 +58,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. Northwest wind around 5 mph becoming calm  in the evening. Winds could gust as high as 15 mph. "
+     "text": "Mostly clear, with a low around 43. Northwest wind 5 to 10 mph becoming light north  in the evening. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68."
+     "text": "Sunny, with a high near 68. Calm wind becoming northwest around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,19 +99,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Overcast",
-    "obs": "6 Nov 02:54 am EST"
+    "temp": 63,
+    "cond": " Thunderstorm Fog/Mist",
+    "obs": "6 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Rain and possibly a thunderstorm.  Patchy fog. High near 69. South wind around 7 mph.  Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible. "
+     "text": "Showers and possibly a thunderstorm, mainly before 10am, then rain and possibly a thunderstorm after 10am.  Patchy fog. High near 69. South wind around 7 mph.  Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 55,
      "text": "Rain and possibly a thunderstorm.  Patchy fog. Low around 55. Light and variable wind becoming southwest around 5 mph after midnight.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
@@ -126,7 +126,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 46. Light and variable wind becoming west 5 to 8 mph after midnight.  Chance of precipitation is 60%."
+     "text": "Rain likely, mainly after 4am.  Increasing clouds, with a low around 46. Light and variable wind becoming west 5 to 8 mph after midnight.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -210,25 +210,19 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Mostly Cloudy",
-    "obs": "6 Nov 01:53 am CST"
+    "temp": 39,
+    "cond": "A Few Clouds",
+    "obs": "6 Nov 04:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 41,
-     "text": "Mostly cloudy, with a low around 41. Breezy, with a north northwest wind around 20 mph, with gusts as high as 25 mph. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 48,
      "text": "Partly sunny, with a high near 48. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 38,
      "text": "Mostly cloudy, with a low around 38. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
@@ -249,7 +243,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59."
+     "text": "Sunny, with a high near 59. West southwest wind 10 to 15 mph. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42."
     }
    ]
   },
@@ -265,7 +265,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -293,25 +293,19 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 39,
-    "cond": "Partly Cloudy",
-    "obs": "5 Nov 23:58 pm MST"
+    "temp": 44,
+    "cond": "Mostly Cloudy",
+    "obs": "6 Nov 02:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 36,
-     "text": "Mostly cloudy, with a low around 36. Light south southwest wind. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "Mostly cloudy, with a high near 59. Calm wind becoming north northeast around 5 mph in the afternoon. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 37,
      "text": "Mostly cloudy, then gradually becoming clear, with a low around 37. Light and variable wind becoming southwest around 5 mph after midnight. "
@@ -332,7 +326,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66."
+     "text": "Sunny, with a high near 66. South southwest wind around 6 mph becoming calm  in the morning. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "Clear, with a low around 40."
     }
    ]
   },
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -397,12 +397,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 58,
-     "text": "Mostly clear, with a low around 58. North northeast wind around 5 mph. "
-    },
-    {
      "name": "Friday",
      "kind": "high",
      "temp": 83,
@@ -431,6 +425,12 @@
      "kind": "high",
      "temp": 86,
      "text": "Sunny, with a high near 86."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 64,
+     "text": "Mostly clear, with a low around 64."
     }
    ]
   },
@@ -446,7 +446,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -469,6 +469,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "South Bronx, East New York lead in low-level tickets",
+    "b": "A John Jay College analysis found more than 60% of NYPD loitering summonses since 2025 came from one South Bronx precinct.",
+    "date": "2026-11-06",
+    "publisher": "Gothamist",
+    "title": "South Bronx, East New York lead NYC in littering and panhandling tickets, analysis finds",
+    "url": "https://gothamist.com/news/south-bronx-east-new-york-lead-nyc-in-littering-and-panhandling-tickets-analysis-finds",
+    "published": "2026-11-06T11:00:55Z",
+    "gathered": "2026-11-06T11:21:08Z"
+   },
    {
     "h": "Ex-FBI agent charged in Brooklyn hit-and-run",
     "b": "Prosecutors say Andrew Reyes hit a man in a Kensington crosswalk with his government car in February, left him unconscious on a bench and lied to investigators.",
@@ -556,17 +566,17 @@
    "now": {
     "temp": 67,
     "cond": "Overcast",
-    "obs": "6 Nov 02:51 am EST"
+    "obs": "6 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind around 6 mph becoming northwest in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
+     "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind 5 to 7 mph becoming southeast in the morning.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 58,
      "text": "A chance of rain and thunderstorms before 7pm, then a chance of rain between 7pm and 10pm.  Cloudy during the early evening, then gradual clearing, with a low around 58. West wind 5 to 7 mph.  Chance of precipitation is 40%."
@@ -587,7 +597,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. West wind 14 to 16 mph. "
     },
     {
      "name": "Sunday Night",
@@ -609,7 +619,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -622,14 +632,43 @@
   },
   "local": [
    {
+    "h": "Bomb hoaxes disrupt flights across Europe",
+    "b": "About 20 flights were affected Thursday alone. No government has said who is responsible, though experts suspect hybrid warfare.",
+    "date": "2026-11-06",
+    "publisher": "The Local France",
+    "title": "Who is behind the bomb hoaxes hitting flights across Europe?",
+    "url": "https://www.thelocal.fr/20261106/who-is-behind-the-bomb-hoaxes-hitting-flights-across-europe",
+    "published": "2026-11-06T09:21:43Z",
+    "updated": "2026-11-06T09:21:47Z",
+    "gathered": "2026-11-06T11:21:08Z"
+   },
+   {
+    "h": "Police to stand trial over 2020 beating of Michel Zecler",
+    "b": "The CCTV-recorded assault on the music producer fuelled outrage over police violence. 'I expect this trial to hold the police officers accountable,' he said.",
+    "date": "2026-11-06",
+    "publisher": "The Local France",
+    "title": "French policemen to stand trial over 2020 beating of black man",
+    "url": "https://www.thelocal.fr/20261106/french-policemen-to-stand-trial-over-2020-beating-of-black-man",
+    "published": "2026-11-06T11:17:25Z",
+    "updated": "2026-11-06T11:17:26Z",
+    "gathered": "2026-11-06T11:21:08Z"
+   },
+   {
+    "h": "Two Paris marches planned for Saturday",
+    "b": "Major unions and the Yellow Vests have both called demonstrations in Paris on Nov. 7 after a week of school blockades and a national strike.",
+    "date": "2026-11-06",
+    "publisher": "The Local France",
+    "title": "MAP: What to expect for the Paris protest on November 7th",
+    "url": "https://www.thelocal.fr/20261106/what-to-expect-for-the-paris-demo-on-november-7th",
+    "published": "2026-11-06T10:37:27Z",
+    "updated": "2026-11-06T10:37:28Z",
+    "gathered": "2026-11-06T11:21:08Z"
+   },
+   {
     "h": "Workers strike across France over wages",
     "b": "More than 250,000 marched in 73 cities against the rising cost of living, the CGT union said.",
     "date": "2026-11-05",
-    "publisher": "The Local France",
-    "title": "France workers strike and march for 'dignified wage'",
     "url": "https://www.thelocal.fr/20261105/france-workers-strike-and-march-for-dignified-wage",
-    "published": "2026-11-05T12:47:01Z",
-    "updated": "2026-11-05T12:47:03Z",
     "gathered": "2026-11-05T15:42:19Z"
    },
    {
@@ -640,7 +679,7 @@
     "title": "French protests: What to expect on November 7th",
     "url": "https://www.thelocal.fr/20261105/french-protests-what-to-expect-on-november-7th",
     "published": "2026-11-05T11:12:20Z",
-    "updated": "2026-11-05T11:12:21Z",
+    "updated": "2026-11-06T11:02:19Z",
     "gathered": "2026-11-05T11:14:07Z"
    },
    {
@@ -674,7 +713,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "goodnews": []
  },
  {
@@ -743,12 +782,6 @@
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 48,
-     "text": "Rain likely after 4am.  Cloudy, with a low around 48. South wind around 6 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
      "name": "Friday",
      "kind": "high",
      "temp": 56,
@@ -777,6 +810,12 @@
      "kind": "high",
      "temp": 55,
      "text": "Rain likely, mainly before 10am.  Partly sunny, with a high near 55. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Partly cloudy, with a low around 42."
     }
    ]
   },
@@ -792,7 +831,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T11:13:00Z",
+  "updatedAt": "2026-11-06T14:16:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

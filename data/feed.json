@@ -1,11 +1,22 @@
 {
- "updatedAt": "2026-11-06T11:13:00Z",
+ "updatedAt": "2026-11-06T14:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Pope Leo begins Latin America tour",
+   "b": "Three weeks after lung cancer surgery, the pope heads to Uruguay to start a trip that also takes in Argentina and Peru through Nov. 17.",
+   "date": "2026-11-06",
+   "publisher": "KUOW",
+   "title": "After cancer surgery, Pope Leo embarks on Latin America trip",
+   "url": "https://www.kuow.org/npr-news/2026-11-06/after-cancer-surgery-pope-leo-embarks-on-latin-america-trip",
+   "published": "2026-11-06T09:19:57Z",
+   "updated": "2026-11-06T09:35:03Z",
+   "gathered": "2026-11-06T11:21:08Z"
+  },
   {
    "h": "Iraq's leader talks to Trump on Iran",
    "b": "Prime Minister al-Zaidi urged diplomacy and said Iraqi territory must not be used to launch attacks on neighbours as efforts grow to avert new US strikes.",
@@ -34,16 +45,27 @@
    "gathered": "2026-11-06T02:43:27Z"
   },
   {
-   "h": "Trump warns US may have to 'destroy' rest of Iran",
+   "h": "Trump and Qatar's emir discuss de-escalation",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-06",
    "publisher": "Al Jazeera",
-   "title": "Trump: US may have to ‘destroy’ rest of Iran; ‘you’ll know soon enough’",
+   "title": "Trump and Qatar’s emir discuss efforts for regional de-escalation in call",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
    "gathered": "2026-11-06T02:43:27Z"
   }
  ],
  "national": [
+  {
+   "h": "Deportations deepen school enrollment drop",
+   "b": "Schools already shrinking from low birth rates are losing immigrant children, and Los Angeles officials say campuses will likely have to close.",
+   "date": "2026-11-06",
+   "publisher": "KUOW",
+   "title": "Low birth rates were emptying public schools. ICE deportations are now making it worse",
+   "url": "https://www.kuow.org/npr-news/2026-11-06/low-birth-rates-were-emptying-public-schools-ice-deportations-are-now-making-it-worse",
+   "published": "2026-11-06T10:00:00Z",
+   "updated": "2026-11-06T10:16:11Z",
+   "gathered": "2026-11-06T11:21:08Z"
+  },
   {
    "h": "Justice Department sues Penn State over tuition",
    "b": "The suit says in-state rates for undocumented students who meet residency rules discriminate against US citizens.",
@@ -113,6 +135,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Burgum pushes public-land data centers while invested in AI",
+   "b": "ProPublica reports the interior secretary, who is leading the push to put data centers on federal land, has tens of millions invested in the AI industry.",
+   "date": "2026-11-06",
+   "publisher": "ProPublica",
+   "title": "Trump Official Who Wants Data Centers on Public Lands Has Tens of Millions Invested in AI Industry",
+   "url": "https://www.propublica.org/article/burgum-public-land-data-centers-investments",
+   "published": "2026-11-06T11:00:00Z",
+   "updated": "2026-11-06T11:00:10Z",
+   "gathered": "2026-11-06T11:21:08Z"
+  },
   {
    "h": "Vance blames war for midterm losses",
    "b": "As Republicans weigh a course correction after losing both chambers, the vice president wrote on X that 'the reason we lost is the war.'",
@@ -232,11 +265,7 @@
    "h": "AI crackdown fears wipe $2 trillion off tech stocks",
    "b": "The Nasdaq fell more than 5% as investors worried a Democratic Congress and states could crack down on AI and data centers.",
    "date": "2026-11-05",
-   "publisher": "KUOW",
-   "title": "Fears of an AI crackdown after midterms spark $2 trillion rout in tech stocks",
    "url": "https://www.kuow.org/npr-news/2026-11-05/fears-of-an-ai-crackdown-after-midterms-spark-2-trillion-rout-in-tech-stocks",
-   "published": "2026-11-06T00:16:53Z",
-   "updated": "2026-11-06T00:22:33Z",
    "gathered": "2026-11-06T02:43:27Z"
   },
   {
@@ -354,6 +383,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "South Bronx, East New York lead in low-level tickets",
+   "b": "A John Jay College analysis found more than 60% of NYPD loitering summonses since 2025 came from one South Bronx precinct.",
+   "date": "2026-11-06",
+   "publisher": "Gothamist",
+   "title": "South Bronx, East New York lead NYC in littering and panhandling tickets, analysis finds",
+   "url": "https://gothamist.com/news/south-bronx-east-new-york-lead-nyc-in-littering-and-panhandling-tickets-analysis-finds",
+   "published": "2026-11-06T11:00:55Z",
+   "gathered": "2026-11-06T11:21:08Z"
+  },
+  {
    "h": "Ex-FBI agent charged in Brooklyn hit-and-run",
    "b": "Prosecutors say Andrew Reyes hit a man in a Kensington crosswalk with his government car in February, left him unconscious on a bench and lied to investigators.",
    "date": "2026-11-05",
@@ -440,17 +479,17 @@
   "now": {
    "temp": 67,
    "cond": "Overcast",
-   "obs": "6 Nov 02:51 am EST"
+   "obs": "6 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 67,
-    "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind around 6 mph becoming northwest in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
+    "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind 5 to 7 mph becoming southeast in the morning.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 58,
     "text": "A chance of rain and thunderstorms before 7pm, then a chance of rain between 7pm and 10pm.  Cloudy during the early evening, then gradual clearing, with a low around 58. West wind 5 to 7 mph.  Chance of precipitation is 40%."
@@ -471,7 +510,7 @@
     "name": "Sunday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61."
+    "text": "Sunny, with a high near 61. West wind 14 to 16 mph. "
    },
    {
     "name": "Sunday Night",
