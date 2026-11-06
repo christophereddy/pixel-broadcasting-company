@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T20:12:00Z",
+ "updatedAt": "2026-11-06T23:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,19 @@
  },
  "world": [
   {
+   "h": "UN warns Sudan's displaced may lose shelter",
+   "b": "Two UN agencies say funding covers only about 10% of those in need as millions flee the war.",
+   "date": "2026-11-06",
+   "publisher": "Al Jazeera",
+   "title": "Millions fleeing Sudan’s war risk losing shelter as funds run low, UN warns",
+   "url": "https://www.aljazeera.com/news/2026/11/6/millions-fleeing-sudans-war-risk-losing-shelter-as-funds-run-low-un-warns",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
    "h": "Zelenskyy seeks 'clear' postwar guarantees",
    "b": "Ukraine wants specifics on how allied security support would work after the war, ahead of US-Russia-Ukraine talks in Abu Dhabi next week.",
    "date": "2026-11-06",
-   "publisher": "PBS NewsHour",
-   "title": "Zelenskyy pushes for 'clear' postwar security guarantees in Ukraine",
    "url": "https://www.pbs.org/newshour/world/zelenskyy-pushes-for-clear-postwar-security-guarantees-in-ukraine",
-   "published": "2026-11-06T17:49:09Z",
    "gathered": "2026-11-06T18:15:06Z"
   },
   {
@@ -45,14 +51,26 @@
    "gathered": "2026-11-06T02:43:27Z"
   },
   {
-   "h": "Three tankers reported hit in Hormuz",
+   "h": "Iran says US drone downed over Qeshm island",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-06",
+   "publisher": "Al Jazeera",
+   "title": "Iran’s IRGC says US drone downed over Qeshm island as tankers hit in Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
    "gathered": "2026-11-06T02:43:27Z"
   }
  ],
  "national": [
+  {
+   "h": "Three charged in $129 million AI impersonation scheme",
+   "b": "Prosecutors say the defendants used AI to impersonate executives and lawyers, targeting thousands of companies worldwide.",
+   "date": "2026-11-05",
+   "publisher": "PBS NewsHour",
+   "title": "3 charged in $129 million AI scheme targeting thousands of companies",
+   "url": "https://www.pbs.org/newshour/nation/3-charged-in-129-million-ai-scheme-targeting-thousands-of-companies",
+   "published": "2026-11-06T18:59:17Z",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
   {
    "h": "Deportations deepen school enrollment drop",
    "b": "Schools already shrinking from low birth rates are losing immigrant children, and Los Angeles officials say campuses will likely have to close.",
@@ -116,6 +134,47 @@
  ],
  "politics": [
   {
+   "h": "Sen. Chris Murphy leaves hospital after stroke",
+   "b": "The Connecticut Democrat will miss several weeks of Senate votes while he recovers in a rehabilitation facility.",
+   "date": "2026-11-06",
+   "publisher": "PBS NewsHour",
+   "title": "Connecticut Sen. Chris Murphy released from hospital after stroke",
+   "url": "https://www.pbs.org/newshour/politics/connecticut-sen-chris-murphy-released-from-hospital-after-stroke",
+   "published": "2026-11-06T19:52:13Z",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
+   "h": "Mississippi Senate race still too close to call",
+   "b": "Fewer than 2,000 votes separate Sen. Cindy Hyde-Smith and Democrat Scott Colom, and no one can say how many ballots remain.",
+   "date": "2026-11-06",
+   "publisher": "KUOW",
+   "title": "No one knows how many ballots are outstanding in Mississippi's Senate race",
+   "url": "https://www.kuow.org/npr-news/2026-11-06/no-one-knows-how-many-ballots-are-outstanding-in-mississippis-senate-race",
+   "published": "2026-11-06T19:50:14Z",
+   "updated": "2026-11-06T19:54:33Z",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
+   "h": "Schumer vows to block a 'right-winger' on Supreme Court",
+   "b": "The Senate Democratic leader said his party won't confirm 'crappy nominees' to the courts or Cabinet once it takes power.",
+   "date": "2026-11-06",
+   "publisher": "PBS NewsHour",
+   "title": "Schumer says Democrats will stop Trump from placing 'right-winger' on the Supreme Court",
+   "url": "https://www.pbs.org/newshour/politics/schumer-says-democrats-will-stop-trump-from-placing-right-winger-on-the-supreme-court",
+   "published": "2026-11-06T19:46:53Z",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
+   "h": "Stephen Miller named White House chief of staff",
+   "b": "Trump said Miller will replace Susie Wiles days after Republicans lost Congress. Wiles will keep working for his political organization.",
+   "date": "2026-11-06",
+   "publisher": "PBS NewsHour",
+   "title": "Trump names Stephen Miller his next chief of staff after major Republican midterm losses",
+   "url": "https://www.pbs.org/newshour/politics/trump-names-stephen-miller-his-next-chief-of-staff-after-major-republican-midterm-losses",
+   "published": "2026-11-06T19:17:44Z",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
    "h": "Harmeet Dhillon resigns from Justice Department",
    "b": "The assistant attorney general oversaw a sweeping reshaping of the Civil Rights Division, including mass departures of career lawyers.",
    "date": "2026-11-06",
@@ -129,8 +188,6 @@
    "h": "Trump says he is willing to work with Democrats",
    "b": "'I don't want to be just sitting there for two years just vetoing everything,' he said, as Democrats hold comfortable majorities in both chambers.",
    "date": "2026-11-06",
-   "publisher": "Al Jazeera",
-   "title": "Veto or deals: Can Trump find a way to work with Democrats?",
    "url": "https://www.aljazeera.com/news/2026/11/6/veto-or-deals-can-trump-find-a-way-to-work-with-democrats",
    "gathered": "2026-11-06T18:15:06Z"
   },
@@ -183,13 +240,44 @@
  ],
  "international": [
   {
+   "h": "Armed men kill 33 in eastern Congo village",
+   "b": "Officials blamed the ADF armed group, whose fighters also set fire to more than 50 houses near Beni.",
+   "date": "2026-11-06",
+   "place": "Beni",
+   "tz": "Africa/Lubumbashi",
+   "publisher": "Al Jazeera",
+   "title": "Armed men kill at least 33 in village in Ebola-hit eastern DRC",
+   "url": "https://www.aljazeera.com/news/2026/11/6/armed-men-kill-at-least-33-in-village-in-ebola-hit-eastern-drc",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
+   "h": "Paraguay presses impeachment of Pena",
+   "b": "Lawmakers filed charges against the president despite his resignation, after a 78-0 lower house vote amid a bank collapse crisis.",
+   "date": "2026-11-06",
+   "place": "Asuncion",
+   "tz": "America/Asuncion",
+   "publisher": "Al Jazeera",
+   "title": "Paraguay resumes Pena impeachment proceedings as financial crisis deepens",
+   "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
+   "h": "Strikes on Taiz market kill civilians",
+   "b": "The Houthis say Saudi air strikes killed at least 30 civilians at the Yemeni market; government forces and the Houthis blame each other.",
+   "date": "2026-11-06",
+   "place": "Taiz",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Yemeni gov’t forces, Houthis trade blame for deadly strikes on Taiz market",
+   "url": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
    "h": "Bomb threats hit European broadcasters",
    "b": "Ireland's RTE briefly evacuated staff in Dublin after an emailed threat, and Bulgaria's Nova TV was also targeted, after a week of hoaxes against flights.",
    "date": "2026-11-06",
    "place": "Dublin",
    "tz": "Europe/Dublin",
-   "publisher": "Al Jazeera",
-   "title": "New bomb threats target European broadcasters, air traffic",
    "url": "https://www.aljazeera.com/news/2026/11/6/new-bomb-threats-target-european-broadcasters-air-traffic",
    "gathered": "2026-11-06T18:15:06Z"
   },
@@ -199,8 +287,6 @@
    "date": "2026-11-06",
    "place": "Zaporizhia",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Ukraine raises Zaporizhia aid strike death toll to at least 50",
    "url": "https://www.aljazeera.com/news/2026/11/6/ukraine-raises-zaporizhia-aid-strike-death-toll-to-at-least-50",
    "gathered": "2026-11-06T18:15:06Z"
   },
@@ -210,8 +296,6 @@
    "date": "2026-11-06",
    "place": "Kenya",
    "tz": "Africa/Nairobi",
-   "publisher": "Al Jazeera",
-   "title": "Kenyan court sentences starvation cult leader to 200 years",
    "url": "https://www.aljazeera.com/news/2026/11/6/kenyan-court-sentences-starvation-cult-leader-to-200-years",
    "gathered": "2026-11-06T18:15:06Z"
   },
@@ -290,14 +374,20 @@
  ],
  "business": [
   {
+   "h": "Salon shuts down after 31 years",
+   "b": "The online magazine cited changed business realities for independent digital journalism. Nineteen full-time employees were affected.",
+   "date": "2026-11-05",
+   "publisher": "PBS NewsHour",
+   "title": "Online magazine Salon announces it is shutting down",
+   "url": "https://www.pbs.org/newshour/arts/online-magazine-salon-announces-it-is-shutting-down",
+   "published": "2026-11-06T18:46:46Z",
+   "gathered": "2026-11-06T20:12:47Z"
+  },
+  {
    "h": "US employers add 165,000 jobs in October",
    "b": "Unemployment dipped to 4.1% and wages rose 3.1% from a year ago. Health care and manufacturing added jobs while restaurants and construction cut them.",
    "date": "2026-11-06",
-   "publisher": "KUOW",
-   "title": "Hiring jumps: The economy added 165,000 jobs last month",
    "url": "https://www.kuow.org/npr-news/2026-11-06/hiring-jumps-the-economy-added-165-000-jobs-last-month",
-   "published": "2026-11-06T13:49:21Z",
-   "updated": "2026-11-06T14:06:03Z",
    "gathered": "2026-11-06T14:19:55Z"
   },
   {
@@ -428,7 +518,7 @@
    "publisher": "Gothamist",
    "title": "Man arrested in NYC on accusations of sexual assault, rape on Cape Cod, officials said",
    "url": "https://gothamist.com/news/man-arrested-in-nyc-on-accusations-of-sexual-assault-rape-on-cape-cod-officials-said",
-   "published": "2026-11-06T18:05:48Z",
+   "published": "2026-11-06T18:05:00Z",
    "gathered": "2026-11-06T18:15:06Z"
   },
   {
@@ -469,7 +559,7 @@
    "title": "Health aide, elderly man killed in East Harlem senior center shooting, per NYPD",
    "url": "https://gothamist.com/news/manhattan-shooting-kills-2-people-in-east-harlem-nypd-says",
    "published": "2026-11-06T12:50:00Z",
-   "updated": "2026-11-06T15:27:00Z",
+   "updated": "2026-11-06T19:18:00Z",
    "gathered": "2026-11-06T14:19:55Z"
   },
   {
@@ -565,48 +655,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 66,
-   "cond": "Light Rain Fog/Mist",
+   "temp": 62,
+   "cond": "Light Rain",
    "wind": "Calm",
-   "humidity": 96,
-   "obs": "6 Nov 12:51 pm EST"
+   "humidity": 90,
+   "obs": "6 Nov 14:51 pm EST"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 67,
-    "text": "Rain, with thunderstorms also possible after 4pm.  High near 67. Northwest wind around 6 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 58,
-    "text": "A chance of rain and thunderstorms before 7pm, then a chance of rain between 7pm and 10pm.  Cloudy during the early evening, then gradual clearing, with a low around 58. West wind 5 to 7 mph.  Chance of precipitation is 40%."
+    "temp": 57,
+    "text": "A 30 percent chance of rain, mainly before 7pm.  Cloudy during the early evening, then gradual clearing, with a low around 57. West wind 3 to 6 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 60,
-    "text": "Mostly sunny, with a steady temperature around 60. West wind 7 to 15 mph. "
+    "temp": 62,
+    "text": "Sunny, with a high near 62. West wind 8 to 13 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 52,
-    "text": "Partly cloudy, with a low around 52. West wind 15 to 17 mph. "
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51. West wind 13 to 15 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61. West wind 14 to 16 mph. "
+    "text": "Sunny, with a high near 61. West wind 13 to 15 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
     "temp": 51,
     "text": "Mostly clear, with a low around 51."
+   },
+   {
+    "name": "Monday",
+    "kind": "high",
+    "temp": 60,
+    "text": "Mostly sunny, with a high near 60. Breezy. "
    }
   ]
  },
