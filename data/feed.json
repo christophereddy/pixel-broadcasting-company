@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-06T08:13:00Z",
+ "updatedAt": "2026-11-06T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Iraq's leader talks to Trump on Iran",
+   "b": "Prime Minister al-Zaidi urged diplomacy and said Iraqi territory must not be used to launch attacks on neighbours as efforts grow to avert new US strikes.",
+   "date": "2026-11-05",
+   "publisher": "Al Jazeera",
+   "title": "Iraq’s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran",
+   "url": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran",
+   "gathered": "2026-11-06T08:13:11Z"
+  },
   {
    "h": "Putin meets Iran's security chief",
    "b": "Mohsen Rezaei delivered a letter from Supreme Leader Mojtaba Khamenei in Moscow as diplomatic efforts to end the US-Israel war on Iran gather pace.",
@@ -36,15 +45,24 @@
  ],
  "national": [
   {
-   "h": "Federal panel approves Trump's arch",
-   "b": "The National Capital Planning Commission voted 8-4 for the 250-foot arch on Memorial Circle after nearly eight hours of testimony, much of it opposed.",
+   "h": "Justice Department sues Penn State over tuition",
+   "b": "The suit says in-state rates for undocumented students who meet residency rules discriminate against US citizens.",
+   "date": "2026-11-05",
+   "publisher": "Al Jazeera",
+   "title": "US Justice Department sues Penn State over undocumented students’ tuition",
+   "url": "https://www.aljazeera.com/news/2026/11/6/us-justice-department-sues-penn-state-over-undocumented-students-tuition",
+   "gathered": "2026-11-06T08:13:11Z"
+  },
+  {
+   "h": "Judge blocks Trump's arch after panel approval",
+   "b": "Hours after a federal planning panel voted 8-4 for the 250-foot arch, Judge Tanya Chutkan barred any construction for 14 days at the request of D.C. and Virginia.",
    "date": "2026-11-05",
    "publisher": "KUOW",
-   "title": "Trump's arch gets a late-night green light. Will a judge stop construction?",
-   "url": "https://www.kuow.org/npr-news/2026-11-05/trumps-arch-gets-a-late-night-green-light-will-a-judge-stop-construction",
+   "title": "A judge blocks construction of Trump's arch moments after it won federal approval",
+   "url": "https://www.kuow.org/npr-news/2026-11-05/a-judge-blocks-construction-of-trumps-arch-moments-after-it-won-federal-approval",
    "published": "2026-11-06T05:05:43Z",
    "updated": "2026-11-06T05:13:33Z",
-   "gathered": "2026-11-06T05:12:05Z"
+   "gathered": "2026-11-06T08:13:11Z"
   },
   {
    "h": "Three states carry out executions in one day",
@@ -132,6 +150,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Settlers seize 8 Palestinian homes in Jericho",
+   "b": "The UN says settlers used live ammunition and assaulted residents, forcing dozens to flee. Israel's military has declared the area a closed zone.",
+   "date": "2026-11-05",
+   "place": "Jericho",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israeli settlers seize 8 Palestinian homes in Jericho, displacing dozens",
+   "url": "https://www.aljazeera.com/news/2026/11/6/israeli-settlers-seize-8-palestinian-homes-in-jericho-displacing-dozens",
+   "gathered": "2026-11-06T08:13:11Z"
+  },
   {
    "h": "Turkiye ratifies Mecca defence pact",
    "b": "Parliament approved the agreement Thursday, committing NATO's second-largest military to the group's aid in case of attack as Saudi Arabia faces Houthi strikes.",
@@ -262,8 +291,6 @@
    "h": "Prescott unsure Cowboys are proud of offense",
    "b": "Dak Prescott said 'we'll be better, I can promise' as Dallas ranks near the bottom in motion and play action at midseason.",
    "date": "2026-11-05",
-   "publisher": "CBS Sports",
-   "title": "Dak Prescott delivers blunt assessment of Cowboys' offensive identity: 'Are we proud of it? I don't know'",
    "url": "https://www.cbssports.com/nfl/news/dak-prescott-cowboys-offensive-identity-comment-brian-schottenheimer/",
    "gathered": "2026-11-06T02:43:27Z"
   },
@@ -411,46 +438,46 @@
  ],
  "weather": {
   "now": {
-   "temp": 68,
-   "cond": " Light Rain Fog/Mist",
-   "obs": "5 Nov 23:51 pm EST"
+   "temp": 67,
+   "cond": "Overcast",
+   "obs": "6 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 65,
-    "text": "Rain, with thunderstorms also possible after 4am.  Low around 65. Southwest wind 7 to 10 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
-   },
-   {
     "name": "Friday",
     "kind": "high",
-    "temp": 65,
-    "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain.  High near 65. Southwest wind around 5 mph becoming light and variable.  Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible. "
+    "temp": 67,
+    "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind around 6 mph becoming northwest in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 58,
-    "text": "A 30 percent chance of rain before 10pm.  Mostly cloudy, then gradually becoming mostly clear, with a low around 58. Light and variable wind becoming northwest 5 to 7 mph after midnight. "
+    "text": "A chance of rain and thunderstorms before 7pm, then a chance of rain between 7pm and 10pm.  Cloudy during the early evening, then gradual clearing, with a low around 58. West wind 5 to 7 mph.  Chance of precipitation is 40%."
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 64,
-    "text": "A 20 percent chance of showers after 1pm.  Mostly sunny, with a high near 64. West wind 7 to 14 mph. "
+    "temp": 60,
+    "text": "Mostly sunny, with a steady temperature around 60. West wind 7 to 15 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 53,
-    "text": "A 20 percent chance of showers.  Mostly cloudy, with a low around 53. West wind 15 to 17 mph. "
+    "temp": 52,
+    "text": "Partly cloudy, with a low around 52. West wind 15 to 17 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 61,
     "text": "Sunny, with a high near 61."
+   },
+   {
+    "name": "Sunday Night",
+    "kind": "low",
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51."
    }
   ]
  },
