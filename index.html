@@ -133,6 +133,11 @@ function compose(){
   D=Object.assign({},FEED,{location:LOCAL.location,local:LOCAL.local||[],localgood:Array.isArray(LOCAL.goodnews)?LOCAL.goodnews:[],weather:LOCAL.weather||FEED.weather,sources:keep.concat(LOCAL.sources||[])});
 }
 function nowWx(){const w=D.weather,n=w.now;if(n&&n.temp!=null)return n;const p=(w.periods||[])[0]||{temp:"--",text:""};return {temp:p.temp,cond:String(p.text).replace(/[.,].*$/,""),name:p.name,fromPeriod:true}}
+/* wind and humidity are optional in the data: show a line only when the value is there */
+function wxHas(v){return v!=null&&String(v).trim()!==""&&!/^(na|undefined|null)$/i.test(String(v).trim())}
+function wxWind(n){return wxHas(n.wind)?String(n.wind).trim():""}
+function wxHum(n){return wxHas(n.humidity)?String(n.humidity).trim().replace(/%$/,"")+"%":""}
+function wxObsTime(n){const m=wxHas(n.obs)&&String(n.obs).match(/(\d{1,2}):(\d{2})\s*(am|pm)?\s*([A-Z]{2,4})?/i);if(!m)return "";let h=+m[1];const ap=h>12?"PM":(m[3]||"").toUpperCase();if(h>12)h-=12;if(h===0)h=12;return (h+":"+m[2]+" "+ap+" "+(m[4]||"")).replace(/\s+/g," ").trim()}
 let dataVer=0;
 
 /* ---------- cast ---------- */
@@ -546,7 +551,7 @@ function drawWx(t,b,phase){
   R("#0b2c52e6",108,28,268,52);
   icon(wxKind(n.cond,n.name||""),116,36,t);
   txt(n.temp+"°",140,34,"#ffffff",5);
-  txt(String(n.cond).slice(0,14),226,38,"#f2b632",2);if(n.fromPeriod)txt(String(Wd.periods[0].name).toUpperCase(),226,54,"#ffffff",1);else{txt("WIND "+String(n.wind).split(",")[0].toUpperCase(),226,54,"#ffffff",1);txt("HUMIDITY "+n.humidity+"%",226,64,"#ffffff",1)}
+  txt(String(n.cond).slice(0,14),226,38,"#f2b632",2);if(n.fromPeriod)txt(String(Wd.periods[0].name).toUpperCase(),226,54,"#ffffff",1);else{const wl=[];if(wxWind(n))wl.push("WIND "+wxWind(n).split(",")[0].toUpperCase());if(wxHum(n))wl.push("HUMIDITY "+wxHum(n));if(!wl.length&&wxObsTime(n))wl.push("AS OF "+wxObsTime(n));wl.forEach((l,i)=>txt(l,226,54+i*10,"#ffffff",1))}
   const ps=(Wd.periods||[]).slice(0,4);
   ps.forEach((p,i)=>{const x=108+i*68,y=86;R("#0b2c52e6",x,y,64,40);
     const nm=String(p.name).toUpperCase().replace("SATURDAY","SAT").replace("SUNDAY","SUN").replace("MONDAY","MON").replace("TUESDAY","TUE").replace("WEDNESDAY","WED").replace("THURSDAY","THU").replace("FRIDAY","FRI").replace(" NIGHT"," NT");
@@ -586,7 +591,7 @@ function buildBeats(c,cycleStartMs){
   if(w&&(w.now||ps.length))B.push({seg:"Weather",sp:"B",shot:"two",cat:"WEATHER",head:"Weather with Sunny Okafor",body:"Sunny, what does the sky have in store?",wall:"weather"});
   const n=nowWx();let i0=0;
   if(!(w&&(w.now||ps.length))){}
-  else if(!n.fromPeriod)B.push({seg:"Weather",sp:"W",scene:"wx",cat:"WEATHER",head:"Right now in "+loc+": "+n.temp+"° and "+String(n.cond).toLowerCase(),body:"Wind "+n.wind+", humidity "+n.humidity+"%. Observed "+n.obs+"."});
+  else if(!n.fromPeriod)B.push({seg:"Weather",sp:"W",scene:"wx",cat:"WEATHER",head:"Right now in "+loc+": "+n.temp+"° and "+String(n.cond).toLowerCase(),body:[[wxWind(n)&&"Wind "+wxWind(n),wxHum(n)&&"humidity "+wxHum(n)].filter(Boolean).join(", "),wxHas(n.obs)&&"Observed "+n.obs].filter(Boolean).map(x=>x[0].toUpperCase()+x.slice(1)+".").join(" ")});
   else if(ps.length){i0=1;B.push({seg:"Weather",sp:"W",scene:"wx",cat:"WEATHER",head:ps[0].name+" in "+loc+": "+ps[0].kind+" "+ps[0].temp+"°",body:ps[0].text})}
   for(let i=i0;i<i0+4&&i<ps.length;i+=2){const a=ps[i],b2=ps[i+1];
     B.push({seg:"Weather",sp:"W",scene:"wx",cat:"FORECAST",head:a.name+": "+a.kind+" "+a.temp+"°"+(b2?" · "+b2.name+": "+b2.kind+" "+b2.temp+"°":""),body:a.text+(b2?" "+b2.name+": "+b2.text:"")})}
