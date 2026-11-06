@@ -31,9 +31,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 63,
     "cond": "Partly Cloudy",
-    "obs": "6 Nov 05:52 am EST"
+    "obs": "6 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,16 +99,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": " Thunderstorm Fog/Mist",
-    "obs": "6 Nov 05:54 am EST"
+    "temp": 67,
+    "cond": "Overcast",
+    "obs": "6 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Showers and possibly a thunderstorm, mainly before 10am, then rain and possibly a thunderstorm after 10am.  Patchy fog. High near 69. South wind around 7 mph.  Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible. "
+     "text": "Showers and possibly a thunderstorm before 10am, then rain and possibly a thunderstorm after 10am.  Patchy fog. High near 69. South wind around 7 mph.  Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Tonight",
@@ -154,15 +154,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
     "h": "Meet the new 'Voice of Logan'",
     "b": "HVAC pipe fitter Christopher Donisi won the airport's competition after entering at his mother's urging.",
     "date": "2026-11-05",
-    "publisher": "WBUR",
-    "title": "Meet the winner of the 'Voice of Logan' competition",
     "url": "https://www.wbur.org/news/2026/11/05/voice-of-boston-logan-airport-winner",
     "gathered": "2026-11-05T22:11:50Z"
    }
@@ -211,15 +209,15 @@
   "weather": {
    "now": {
     "temp": 39,
-    "cond": "A Few Clouds",
-    "obs": "6 Nov 04:53 am CST"
+    "cond": "Partly Cloudy",
+    "obs": "6 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 48,
-     "text": "Partly sunny, with a high near 48. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy, with a high near 48. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -265,7 +263,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -293,9 +291,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 39,
     "cond": "Mostly Cloudy",
-    "obs": "6 Nov 02:58 am MST"
+    "obs": "6 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -348,7 +346,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -359,6 +357,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Seawall approved to protect San Clemente rail line",
+    "b": "The Coastal Commission approved a quarter-mile seawall and new sand to shield the Pacific Surfliner tracks from erosion.",
+    "date": "2026-11-05",
+    "publisher": "LAist",
+    "title": "Coastal Commission approves seawall, sand for battered stretch of San Clemente",
+    "url": "https://laist.com/news/climate-environment/coastal-commission-approves-seawall-sand-for-battered-stretch-of-san-clemente",
+    "published": "2026-11-06T13:00:00Z",
+    "updated": "2026-11-06T13:00:10Z",
+    "gathered": "2026-11-06T14:19:55Z"
+   },
    {
     "h": "Marissa Roy wins LA city attorney race",
     "b": "Opponent John McKinney appeared to concede Thursday as Roy held a lead of more than two to one.",
@@ -389,7 +398,6 @@
     "title": "Raman defeats Bass in race for LA mayor, ushering in new era of progressive politics",
     "url": "https://laist.com/news/politics/raman-defeats-bass-in-race-for-la-mayor-ushering-in-new-era-of-progressive-politics",
     "published": "2026-11-05T20:09:22Z",
-    "updated": "2026-11-06T06:03:53Z",
     "gathered": "2026-11-05T22:11:50Z"
    }
   ],
@@ -397,13 +405,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 83,
      "text": "Sunny, with a high near 83. North wind around 5 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 60,
      "text": "Mostly clear, with a low around 60. North northeast wind around 5 mph. "
@@ -424,7 +432,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 86,
-     "text": "Sunny, with a high near 86."
+     "text": "Sunny, with a high near 86. North northeast wind around 5 mph becoming northwest in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -446,9 +454,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
+   {
+    "h": "Free legal clinic for former Lozano Kennedy clients",
+    "b": "The L.A. Law Library will help people who believe they were defrauded by the former immigration lawyer's firm on Saturday.",
+    "date": "2026-11-06",
+    "publisher": "LAist",
+    "title": "Former clients of immigration lawyer Alexandra Lozano Kennedy can get free legal help in LA",
+    "url": "https://laist.com/news/politics/former-clients-immigration-lawyer-alexandra-lozano-kennedy-free-legal-clinic-loyola-marymount-university-counsel-for-justice",
+    "published": "2026-11-06T13:00:00Z",
+    "updated": "2026-11-06T13:00:05Z",
+    "gathered": "2026-11-06T14:19:55Z"
+   },
    {
     "h": "Coyote is first mammal seen on 101 wildlife crossing",
     "b": "Cameras caught a coyote twice on the Wallis Annenberg Wildlife Crossing in Agoura Hills, a month before its official opening.",
@@ -469,6 +488,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Supreme Court case could limit specialized school reforms",
+    "b": "Experts say a challenge to a Maryland county's magnet school admissions could narrow Mayor Mamdani's options for admitting more Black and Latino students.",
+    "date": "2026-11-06",
+    "publisher": "Gothamist",
+    "title": "Supreme Court case could affect admissions reforms for NYC specialized schools",
+    "url": "https://gothamist.com/news/supreme-court-case-could-affect-admissions-reforms-for-nyc-specialized-schools",
+    "published": "2026-11-06T11:30:59Z",
+    "gathered": "2026-11-06T14:19:55Z"
+   },
+   {
+    "h": "Two found shot dead at East Harlem senior center",
+    "b": "Police found a 55-year-old woman and a 66-year-old man at a NYCHA complex Thursday night and are investigating whether it was a murder-suicide.",
+    "date": "2026-11-06",
+    "publisher": "Gothamist",
+    "title": "Manhattan shooting kills 2 people in East Harlem, NYPD says",
+    "url": "https://gothamist.com/news/manhattan-shooting-kills-2-people-in-east-harlem-nypd-says",
+    "published": "2026-11-06T12:50:39Z",
+    "gathered": "2026-11-06T14:19:55Z"
+   },
    {
     "h": "South Bronx, East New York lead in low-level tickets",
     "b": "A John Jay College analysis found more than 60% of NYPD loitering summonses since 2025 came from one South Bronx precinct.",
@@ -506,8 +545,7 @@
     "publisher": "Gothamist",
     "title": "Queens Public Library online system downed by ransomware hack, officials said",
     "url": "https://gothamist.com/news/queens-public-library-online-system-downed-by-ransomware-hack-officials-said",
-    "published": "2026-11-05T17:39:00Z",
-    "updated": "2026-11-05T19:40:00Z",
+    "published": "2026-11-05T19:40:00Z",
     "gathered": "2026-11-05T22:11:50Z"
    },
    {
@@ -564,16 +602,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Overcast",
-    "obs": "6 Nov 05:51 am EST"
+    "temp": 66,
+    "cond": " Light Rain Fog/Mist",
+    "obs": "6 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind 5 to 7 mph becoming southeast in the morning.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
+     "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southeast wind around 6 mph becoming northwest in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -619,7 +657,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -632,6 +670,17 @@
   },
   "local": [
    {
+    "h": "Four flights diverted in France after bomb threats",
+    "b": "Three landed at Orly and one at Bordeaux without incident as investigators look for the source of alerts hitting flights across Europe.",
+    "date": "2026-11-06",
+    "publisher": "The Local France",
+    "title": "LATEST: Four new bomb threats on flights over France",
+    "url": "https://www.thelocal.fr/20261106/latest-four-new-bomb-threats-on-flights-over-france",
+    "published": "2026-11-06T11:47:08Z",
+    "updated": "2026-11-06T11:47:10Z",
+    "gathered": "2026-11-06T14:19:55Z"
+   },
+   {
     "h": "Bomb hoaxes disrupt flights across Europe",
     "b": "About 20 flights were affected Thursday alone. No government has said who is responsible, though experts suspect hybrid warfare.",
     "date": "2026-11-06",
@@ -639,7 +688,7 @@
     "title": "Who is behind the bomb hoaxes hitting flights across Europe?",
     "url": "https://www.thelocal.fr/20261106/who-is-behind-the-bomb-hoaxes-hitting-flights-across-europe",
     "published": "2026-11-06T09:21:43Z",
-    "updated": "2026-11-06T09:21:47Z",
+    "updated": "2026-11-06T11:31:37Z",
     "gathered": "2026-11-06T11:21:08Z"
    },
    {
@@ -657,11 +706,7 @@
     "h": "Two Paris marches planned for Saturday",
     "b": "Major unions and the Yellow Vests have both called demonstrations in Paris on Nov. 7 after a week of school blockades and a national strike.",
     "date": "2026-11-06",
-    "publisher": "The Local France",
-    "title": "MAP: What to expect for the Paris protest on November 7th",
     "url": "https://www.thelocal.fr/20261106/what-to-expect-for-the-paris-demo-on-november-7th",
-    "published": "2026-11-06T10:37:27Z",
-    "updated": "2026-11-06T10:37:28Z",
     "gathered": "2026-11-06T11:21:08Z"
    },
    {
@@ -713,7 +758,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "goodnews": []
  },
  {
@@ -782,13 +827,13 @@
    "now": null,
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Rain, mainly after 11am.  High near 56. South wind 8 to 11 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain, mainly after 11am.  High near 56. South wind 7 to 11 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "A 40 percent chance of rain after midnight.  Mostly cloudy, with a low around 51. South wind 9 to 14 mph becoming light south southeast  after midnight. Winds could gust as high as 20 mph. "
@@ -809,7 +854,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 55,
-     "text": "Rain likely, mainly before 10am.  Partly sunny, with a high near 55. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 10am.  Partly sunny, with a high near 55. South southwest wind 9 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday Night",
@@ -831,7 +876,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T14:16:00Z",
+  "updatedAt": "2026-11-06T17:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

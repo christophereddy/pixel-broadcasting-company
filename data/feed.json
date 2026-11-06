@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T14:16:00Z",
+ "updatedAt": "2026-11-06T17:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -45,11 +45,11 @@
    "gathered": "2026-11-06T02:43:27Z"
   },
   {
-   "h": "Trump and Qatar's emir discuss de-escalation",
+   "h": "Three tankers reported hit in Hormuz",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-06",
    "publisher": "Al Jazeera",
-   "title": "Trump and Qatar’s emir discuss efforts for regional de-escalation in call",
+   "title": "3 tankers reported hit in Hormuz; Trump and Qatar’s emir hold phone call",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
    "gathered": "2026-11-06T02:43:27Z"
   }
@@ -262,6 +262,17 @@
  ],
  "business": [
   {
+   "h": "US employers add 165,000 jobs in October",
+   "b": "Unemployment dipped to 4.1% and wages rose 3.1% from a year ago. Health care and manufacturing added jobs while restaurants and construction cut them.",
+   "date": "2026-11-06",
+   "publisher": "KUOW",
+   "title": "Hiring jumps: The economy added 165,000 jobs last month",
+   "url": "https://www.kuow.org/npr-news/2026-11-06/hiring-jumps-the-economy-added-165-000-jobs-last-month",
+   "published": "2026-11-06T13:49:21Z",
+   "updated": "2026-11-06T14:06:03Z",
+   "gathered": "2026-11-06T14:19:55Z"
+  },
+  {
    "h": "AI crackdown fears wipe $2 trillion off tech stocks",
    "b": "The Nasdaq fell more than 5% as investors worried a Democratic Congress and states could crack down on AI and data centers.",
    "date": "2026-11-05",
@@ -383,6 +394,26 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Supreme Court case could limit specialized school reforms",
+   "b": "Experts say a challenge to a Maryland county's magnet school admissions could narrow Mayor Mamdani's options for admitting more Black and Latino students.",
+   "date": "2026-11-06",
+   "publisher": "Gothamist",
+   "title": "Supreme Court case could affect admissions reforms for NYC specialized schools",
+   "url": "https://gothamist.com/news/supreme-court-case-could-affect-admissions-reforms-for-nyc-specialized-schools",
+   "published": "2026-11-06T11:30:59Z",
+   "gathered": "2026-11-06T14:19:55Z"
+  },
+  {
+   "h": "Two found shot dead at East Harlem senior center",
+   "b": "Police found a 55-year-old woman and a 66-year-old man at a NYCHA complex Thursday night and are investigating whether it was a murder-suicide.",
+   "date": "2026-11-06",
+   "publisher": "Gothamist",
+   "title": "Manhattan shooting kills 2 people in East Harlem, NYPD says",
+   "url": "https://gothamist.com/news/manhattan-shooting-kills-2-people-in-east-harlem-nypd-says",
+   "published": "2026-11-06T12:50:39Z",
+   "gathered": "2026-11-06T14:19:55Z"
+  },
+  {
    "h": "South Bronx, East New York lead in low-level tickets",
    "b": "A John Jay College analysis found more than 60% of NYPD loitering summonses since 2025 came from one South Bronx precinct.",
    "date": "2026-11-06",
@@ -419,8 +450,7 @@
    "publisher": "Gothamist",
    "title": "Queens Public Library online system downed by ransomware hack, officials said",
    "url": "https://gothamist.com/news/queens-public-library-online-system-downed-by-ransomware-hack-officials-said",
-   "published": "2026-11-05T17:39:00Z",
-   "updated": "2026-11-05T19:40:00Z",
+   "published": "2026-11-05T19:40:00Z",
    "gathered": "2026-11-05T22:11:50Z"
   },
   {
@@ -477,16 +507,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 67,
-   "cond": "Overcast",
-   "obs": "6 Nov 05:51 am EST"
+   "temp": 66,
+   "cond": " Light Rain Fog/Mist",
+   "obs": "6 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 67,
-    "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southwest wind 5 to 7 mph becoming southeast in the morning.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
+    "text": "Rain and possibly a thunderstorm before 1pm, then rain between 1pm and 4pm, then a chance of rain and thunderstorms after 4pm. Some of the storms could produce heavy rainfall.  High near 67. Southeast wind around 6 mph becoming northwest in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Tonight",
