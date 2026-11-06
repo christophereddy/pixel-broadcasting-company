@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T05:11:00Z",
+ "updatedAt": "2026-11-06T08:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,20 @@
  },
  "world": [
   {
+   "h": "Putin meets Iran's security chief",
+   "b": "Mohsen Rezaei delivered a letter from Supreme Leader Mojtaba Khamenei in Moscow as diplomatic efforts to end the US-Israel war on Iran gather pace.",
+   "date": "2026-11-05",
+   "publisher": "Al Jazeera",
+   "title": "Iran’s security chief meets Putin, delivers message from Khamenei",
+   "url": "https://www.aljazeera.com/news/2026/11/6/irans-security-chief-meets-putin-delivers-message-from-khamenei",
+   "gathered": "2026-11-06T05:12:05Z"
+  },
+  {
    "h": "Trump says Russia-Ukraine deal is 'very close'",
    "b": "After meeting Kremlin envoy Kirill Dmitriev at the White House, Trump said an agreement would come and could involve 'all of Europe,' without giving details.",
    "date": "2026-11-05",
    "publisher": "Al Jazeera",
-   "title": "Trump met Russian envoy after he appeared with Melania Trump and Ukrainians",
+   "title": "Trump says Russia-Ukraine deal is near after meeting Putin’s envoy",
    "url": "https://www.aljazeera.com/news/2026/11/6/trump-met-russian-envoy-after-he-appeared-with-melania-trump-and-ukrainians",
    "gathered": "2026-11-06T02:43:27Z"
   },
@@ -26,6 +35,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Federal panel approves Trump's arch",
+   "b": "The National Capital Planning Commission voted 8-4 for the 250-foot arch on Memorial Circle after nearly eight hours of testimony, much of it opposed.",
+   "date": "2026-11-05",
+   "publisher": "KUOW",
+   "title": "Trump's arch gets a late-night green light. Will a judge stop construction?",
+   "url": "https://www.kuow.org/npr-news/2026-11-05/trumps-arch-gets-a-late-night-green-light-will-a-judge-stop-construction",
+   "published": "2026-11-06T05:05:43Z",
+   "updated": "2026-11-06T05:13:33Z",
+   "gathered": "2026-11-06T05:12:05Z"
+  },
   {
    "h": "Three states carry out executions in one day",
    "b": "Alabama, Florida and a third state put prisoners to death Thursday. Florida's was its record-tying 19th execution this year.",
@@ -391,16 +411,16 @@
  ],
  "weather": {
   "now": {
-   "temp": 70,
-   "cond": "Overcast",
-   "obs": "5 Nov 20:51 pm EST"
+   "temp": 68,
+   "cond": " Light Rain Fog/Mist",
+   "obs": "5 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 65,
-    "text": "Rain, with thunderstorms also possible after 4am.  Low around 65. Southwest wind 7 to 13 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+    "text": "Rain, with thunderstorms also possible after 4am.  Low around 65. Southwest wind 7 to 10 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
    },
    {
     "name": "Friday",

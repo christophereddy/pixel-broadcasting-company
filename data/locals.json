@@ -31,40 +31,40 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
-    "cond": "Partly Cloudy",
-    "obs": "5 Nov 20:52 pm EST"
+    "temp": 66,
+    "cond": "Mostly Cloudy",
+    "obs": "5 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 58,
-     "text": "Mostly cloudy, with a low around 58. Calm wind becoming northwest around 5 mph. "
+     "text": "Mostly cloudy, with a low around 58. Northwest wind around 5 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 72,
-     "text": "Partly sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Mostly clear, with a low around 49. Northwest wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 49. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 66,
-     "text": "Sunny, with a high near 66. Northwest wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Sunny, with a high near 66. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. Northwest wind 5 to 10 mph becoming light north  after midnight. Winds could gust as high as 15 mph. "
+     "text": "Mostly clear, with a low around 43. Northwest wind around 5 mph becoming calm  in the evening. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Sunday",
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,16 +99,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 68,
     "cond": "Overcast",
-    "obs": "5 Nov 19:54 pm EST"
+    "obs": "5 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 62,
-     "text": "Rain likely, mainly after 5am.  Patchy fog after 3am.  Otherwise, mostly cloudy, with a low around 62. South wind 6 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly after 5am.  Patchy fog after 3am.  Otherwise, mostly cloudy, with a low around 62. South wind 6 to 8 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday",
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -210,16 +210,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": " Light Drizzle Fog/Mist",
-    "obs": "5 Nov 19:53 pm CST"
+    "temp": 46,
+    "cond": "Overcast",
+    "obs": "5 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "Showers with areas of drizzle before midnight, then patchy drizzle with isolated showers between midnight and 3am.  Low around 41. Breezy, with a north northwest wind around 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Drizzle, mainly before midnight.  Cloudy, with a low around 41. Breezy, with a north wind around 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Friday",
@@ -265,7 +265,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -293,16 +293,16 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "A Few Clouds",
-    "obs": "5 Nov 16:58 pm MST"
+    "temp": 44,
+    "cond": "Partly Cloudy",
+    "obs": "5 Nov 21:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Increasing clouds, with a low around 37. Light south southwest wind. "
+     "text": "Mostly cloudy, with a low around 37. Light south southwest wind. "
     },
     {
      "name": "Friday",
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -400,7 +400,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Clear, with a low around 58. West southwest wind around 5 mph becoming north northeast in the evening. "
+     "text": "Clear, with a low around 58. North northeast wind around 5 mph. "
     },
     {
      "name": "Friday",
@@ -446,7 +446,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -554,16 +554,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 70,
-    "cond": "Overcast",
-    "obs": "5 Nov 20:51 pm EST"
+    "temp": 68,
+    "cond": " Light Rain Fog/Mist",
+    "obs": "5 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 65,
-     "text": "Rain, with thunderstorms also possible after 4am.  Low around 65. Southwest wind 7 to 13 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Rain, with thunderstorms also possible after 4am.  Low around 65. Southwest wind 7 to 10 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Friday",
@@ -609,7 +609,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -674,7 +674,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "goodnews": []
  },
  {
@@ -710,11 +710,7 @@
     "h": "Washington voters keep millionaires tax",
     "b": "Nearly 58% rejected repealing the high-earner income tax, and the repeal campaign conceded Thursday.",
     "date": "2026-11-05",
-    "publisher": "KUOW",
-    "title": "WA millionaires tax supporters claim victory as repeal effort concedes",
     "url": "https://www.kuow.org/elections/2026-11-05/wa-millionaires-tax-supporters-claim-victory-as-repeal-effort-concedes",
-    "published": "2026-11-05T23:50:20Z",
-    "updated": "2026-11-05T23:50:20Z",
     "gathered": "2026-11-06T02:43:27Z"
    },
    {
@@ -785,7 +781,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T05:11:00Z",
+  "updatedAt": "2026-11-06T08:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
