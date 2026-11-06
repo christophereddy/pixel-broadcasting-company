@@ -31,9 +31,9 @@
   ],
   "weather": {
    "now": {
-    "temp": 73,
-    "cond": "Mostly Cloudy",
-    "obs": "5 Nov 17:52 pm EST"
+    "temp": 69,
+    "cond": "Partly Cloudy",
+    "obs": "5 Nov 20:52 pm EST"
    },
    "periods": [
     {
@@ -86,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,28 +99,28 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 68,
-    "cond": "Mostly Cloudy",
-    "obs": "5 Nov 17:54 pm EST"
+    "temp": 67,
+    "cond": "Overcast",
+    "obs": "5 Nov 19:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 62,
-     "text": "Rain likely, mainly after 5am.  Patchy fog after 3am.  Otherwise, increasing clouds, with a low around 62. South wind 6 to 13 mph, with gusts as high as 24 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly after 5am.  Patchy fog after 3am.  Otherwise, mostly cloudy, with a low around 62. South wind 6 to 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 70,
-     "text": "Rain and possibly a thunderstorm.  Patchy fog between 1pm and 2pm. High near 70. South wind around 6 mph.  Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible. "
+     "text": "Rain and possibly a thunderstorm.  Patchy fog between 1pm and 2pm. High near 70. Calm wind becoming south 5 to 7 mph in the afternoon.  Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Rain, mainly before 4am.  Patchy fog. Low around 55. Calm wind becoming north around 5 mph after midnight.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly before 4am.  Patchy fog. Low around 55. South wind around 6 mph becoming calm.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -176,25 +176,28 @@
   },
   "local": [
    {
+    "h": "Uncounted ballots hold up two school board races",
+    "b": "About 131,000 votes, including mail-in ballots, remain uncounted, leaving West Side and Southwest Side school board districts undecided.",
+    "date": "2026-11-05",
+    "publisher": "WBEZ",
+    "title": "Missing Election Day results holding up race calls in two Chicago School Board districts",
+    "url": "https://www.wbez.org/education/2026/11/05/missing-election-day-results-holding-up-race-calls-in-two-chicago-school-board-districts",
+    "published": "2026-11-06T01:04:57Z",
+    "updated": "2026-11-06T01:04:57Z",
+    "gathered": "2026-11-06T02:43:27Z"
+   },
+   {
     "h": "Chicago's arts budget stays flat",
     "b": "The city's cultural affairs department would get about $62.5 million under Mayor Brandon Johnson's proposed 2027 budget, up less than 1%, disappointing advocates.",
     "date": "2026-11-05",
-    "publisher": "WBEZ",
-    "title": "As several other major cities boost arts funding, Chicago’s proposed 2027 cultural spending plan is flat",
     "url": "https://www.wbez.org/city-hall/2026/11/05/chicago-dcase-culture-arts-spending-2027-budget-events",
-    "published": "2026-11-05T20:58:56Z",
-    "updated": "2026-11-05T20:58:56Z",
     "gathered": "2026-11-05T23:12:34Z"
    },
    {
     "h": "Blue wave reaches red Indiana",
     "b": "Rep. Frank Mrvan won reelection and Beau Bayh won Democrats' first statewide race in 14 years.",
     "date": "2026-11-05",
-    "publisher": "WBEZ",
-    "title": "Blue wave comes ashore in red Indiana",
     "url": "https://www.wbez.org/government-politics/elections/2026/11/05/mrvan-election-indiana-statehouse-blue-wave-democrats",
-    "published": "2026-11-05T19:15:47Z",
-    "updated": "2026-11-05T19:15:47Z",
     "gathered": "2026-11-05T22:11:50Z"
    },
    {
@@ -207,16 +210,16 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": " Light Rain Fog/Mist",
-    "obs": "5 Nov 16:53 pm CST"
+    "temp": 49,
+    "cond": " Light Drizzle Fog/Mist",
+    "obs": "5 Nov 19:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "Showers likely with areas of drizzle before midnight, then patchy drizzle with isolated showers between midnight and 3am.  Cloudy, with a low around 41. Breezy, with a west northwest wind 10 to 15 mph becoming north 15 to 20 mph in the evening. Winds could gust as high as 30 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Showers with areas of drizzle before midnight, then patchy drizzle with isolated showers between midnight and 3am.  Low around 41. Breezy, with a north northwest wind around 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
@@ -240,7 +243,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40."
+     "text": "Mostly clear, with a low around 40. West southwest wind 5 to 10 mph. "
     },
     {
      "name": "Sunday",
@@ -262,29 +265,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Downtown 'Cultural Stadium' gets a leader",
     "b": "Former Michigan state Rep. Donna Lasinski will lead the $2 million effort to turn underused Downtown spaces into arts venues.",
     "date": "2026-11-05",
-    "publisher": "WBEZ",
-    "title": "Downtown 'Cultural Stadium' idea gains steam with new leader, $2 million funding",
     "url": "https://www.wbez.org/arts-culture/2026/11/05/chicago-cultural-stadium-leadership-donna-lasinski-funding-plan",
-    "published": "2026-11-05T20:52:31Z",
-    "updated": "2026-11-05T20:52:31Z",
     "gathered": "2026-11-05T23:12:34Z"
    },
    {
     "h": "Soul Train Awards come home to Chicago",
     "b": "Queen Latifah helped kick off festivities; the show tapes at the Harris Theater and airs Nov. 27.",
     "date": "2026-11-05",
-    "publisher": "WBEZ",
-    "title": "Queen Latifah, Durand Bernarr kick off Soul Train Awards party in Chicago",
     "url": "https://www.wbez.org/movies-tv/2026/11/05/soul-train-awards-queen-latifah-durand-bernarr-chicago-bet",
-    "published": "2026-11-05T15:45:06Z",
-    "updated": "2026-11-05T15:45:06Z",
     "gathered": "2026-11-05T17:16:56Z"
    }
   ]
@@ -298,9 +293,9 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 52,
     "cond": "A Few Clouds",
-    "obs": "5 Nov 14:58 pm MST"
+    "obs": "5 Nov 16:58 pm MST"
    },
    "periods": [
     {
@@ -331,7 +326,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 37,
-     "text": "Mostly clear, with a low around 37."
+     "text": "Mostly clear, with a low around 37. Calm wind becoming south southwest around 5 mph after midnight. "
     },
     {
      "name": "Sunday",
@@ -353,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -364,6 +359,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Marissa Roy wins LA city attorney race",
+    "b": "Opponent John McKinney appeared to concede Thursday as Roy held a lead of more than two to one.",
+    "date": "2026-11-05",
+    "publisher": "LAist",
+    "title": "Roy wins LA city attorney's race",
+    "url": "https://laist.com/news/politics/roy-wins-la-city-attorneys-race",
+    "published": "2026-11-05T23:53:50Z",
+    "updated": "2026-11-05T23:53:50Z",
+    "gathered": "2026-11-06T02:43:27Z"
+   },
    {
     "h": "Airbnb's $6M bet on LA races falls short",
     "b": "The company spent more than $4.1 million backing Mayor Karen Bass and $2.1 million for city attorney candidate John McKinney. Bass conceded to Nithya Raman on Thursday.",
@@ -394,7 +400,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 58,
-     "text": "Clear, with a low around 58. North northeast wind around 5 mph. "
+     "text": "Clear, with a low around 58. West southwest wind around 5 mph becoming north northeast in the evening. "
     },
     {
      "name": "Friday",
@@ -418,7 +424,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 63,
-     "text": "Clear, with a low around 63."
+     "text": "Clear, with a low around 63. North northeast wind around 5 mph. "
     },
     {
      "name": "Sunday",
@@ -440,9 +446,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Coyote is first mammal seen on 101 wildlife crossing",
+    "b": "Cameras caught a coyote twice on the Wallis Annenberg Wildlife Crossing in Agoura Hills, a month before its official opening.",
+    "date": "2026-11-05",
+    "publisher": "LAist",
+    "title": "Coyote becomes first mammal seen using 101 wildlife crossing: 'This is amazing'",
+    "url": "https://laist.com/news/climate-environment/coyote-becomes-first-mammal-seen-using-101-wildlife-crossing-this-is-amazing",
+    "published": "2026-11-06T00:57:06Z",
+    "updated": "2026-11-06T00:57:06Z",
+    "gathered": "2026-11-06T02:43:27Z"
+   }
+  ]
  },
  {
   "location": {
@@ -468,7 +486,7 @@
     "publisher": "Gothamist",
     "title": "Better days ahead for NYC commuters with Democrats in control of Congress, MTA chair says",
     "url": "https://gothamist.com/news/better-days-ahead-for-nyc-commuters-with-democrats-in-control-of-congress-mta-chair-says",
-    "published": "2026-11-05T22:59:43Z",
+    "published": "2026-11-05T22:59:00Z",
     "gathered": "2026-11-05T23:12:34Z"
    },
    {
@@ -536,22 +554,22 @@
   ],
   "weather": {
    "now": {
-    "temp": 71,
+    "temp": 70,
     "cond": "Overcast",
-    "obs": "5 Nov 17:51 pm EST"
+    "obs": "5 Nov 20:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 64,
-     "text": "Rain, with thunderstorms also possible after 4am.  Low around 64. Southwest wind 7 to 13 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "temp": 65,
+     "text": "Rain, with thunderstorms also possible after 4am.  Low around 65. Southwest wind 7 to 13 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 67,
-     "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain.  High near 67. Southwest wind around 5 mph becoming light and variable.  Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible. "
+     "temp": 65,
+     "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain.  High near 65. Southwest wind around 5 mph becoming light and variable.  Chance of precipitation is 90%. New rainfall amounts between three quarters and one inch possible. "
     },
     {
      "name": "Friday Night",
@@ -591,7 +609,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -656,7 +674,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "goodnews": []
  },
  {
@@ -667,25 +685,50 @@
   },
   "local": [
    {
+    "h": "Hood Canal rename paused after tribal objections",
+    "b": "A state naming panel halted the proposal after Skokomish leaders said the tribe should weigh in on the change.",
+    "date": "2026-11-05",
+    "publisher": "KUOW",
+    "title": "Effort to rename Hood Canal hits a fjordblock amid tribal opposition",
+    "url": "https://www.kuow.org/environment/2026-11-05/effort-to-rename-hood-canal-hits-a-fjordblock-amid-tribal-opposition",
+    "published": "2026-11-06T01:22:08Z",
+    "updated": "2026-11-06T01:22:08Z",
+    "gathered": "2026-11-06T02:43:27Z"
+   },
+   {
+    "h": "Group weighs suit over trans sports ban",
+    "b": "Gender Justice League says it may challenge, on privacy grounds, the ballot measure banning transgender girls from girls' school sports.",
+    "date": "2026-11-05",
+    "publisher": "KUOW",
+    "title": "Lawsuits likely over Washington’s ban on trans girls in sports",
+    "url": "https://www.kuow.org/elections/2026-11-05/lawsuits-likely-over-washingtons-ban-on-trans-girls-in-sports",
+    "published": "2026-11-06T01:05:43Z",
+    "updated": "2026-11-06T01:37:45Z",
+    "gathered": "2026-11-06T02:43:27Z"
+   },
+   {
+    "h": "Washington voters keep millionaires tax",
+    "b": "Nearly 58% rejected repealing the high-earner income tax, and the repeal campaign conceded Thursday.",
+    "date": "2026-11-05",
+    "publisher": "KUOW",
+    "title": "WA millionaires tax supporters claim victory as repeal effort concedes",
+    "url": "https://www.kuow.org/elections/2026-11-05/wa-millionaires-tax-supporters-claim-victory-as-repeal-effort-concedes",
+    "published": "2026-11-05T23:50:20Z",
+    "updated": "2026-11-05T23:50:20Z",
+    "gathered": "2026-11-06T02:43:27Z"
+   },
+   {
     "h": "Spokane County deputy killed in firefight",
     "b": "A second deputy wounded at a home in Spangle is not expected to survive.",
     "date": "2026-11-05",
-    "publisher": "KUOW",
-    "title": "1 deputy dead, another not expected to survive after firefight with suspect at Spokane area home",
     "url": "https://www.kuow.org/crime/2026-11-05/1-deputy-dead-another-not-expected-to-survive-after-firefight-with-suspect-at-spokane-area-home",
-    "published": "2026-11-05T17:56:32Z",
-    "updated": "2026-11-05T17:58:37Z",
     "gathered": "2026-11-05T22:11:50Z"
    },
    {
     "h": "Seattle schools tighten access to YouTube, AI",
     "b": "The district is expanding limits on classroom screen time and personal devices.",
     "date": "2026-11-05",
-    "publisher": "KUOW",
-    "title": "Seattle Public Schools tightens student access to YouTube, Minecraft, and AI",
     "url": "https://www.kuow.org/education/2026-11-05/seattle-public-schools-tightens-student-access-to-youtube-minecraft-and-ai",
-    "published": "2026-11-05T20:10:58Z",
-    "updated": "2026-11-05T20:12:18Z",
     "gathered": "2026-11-05T22:11:50Z"
    }
   ],
@@ -742,7 +785,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T02:12:00Z",
+  "updatedAt": "2026-11-06T05:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
