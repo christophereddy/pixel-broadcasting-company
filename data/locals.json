@@ -27,24 +27,13 @@
     "published": "2026-11-05T14:56:31Z",
     "updated": "2026-11-05T14:56:33Z",
     "gathered": "2026-11-05T15:42:19Z"
-   },
-   {
-    "h": "Georgia elects first openly transgender lawmaker",
-    "b": "Bentley Hudgins won House District 90 with 92.5% of the vote.",
-    "date": "2026-11-04",
-    "publisher": "WABE",
-    "title": "New transgender Georgia lawmaker to push for LGBTQ+ policies",
-    "url": "https://www.wabe.org/new-transgender-georgia-lawmaker-wants-to-push-for-lgbtq-policies/",
-    "published": "2026-11-04T21:26:00Z",
-    "updated": "2026-11-04T21:36:28Z",
-    "gathered": "2026-11-05T00:29:03Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 78,
-    "cond": "A Few Clouds",
-    "obs": "5 Nov 16:52 pm EST"
+    "temp": 73,
+    "cond": "Mostly Cloudy",
+    "obs": "5 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -97,7 +86,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -107,20 +96,12 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Judge dismisses frog embryo case against scientist",
-    "b": "Charges were dropped against Harvard cancer researcher Kseniia Petrova at the government's request.",
-    "date": "2026-11-04",
-    "url": "https://www.wbur.org/news/2026/11/04/federal-judge-dismisses-case-russian-scientist-frog-embryos",
-    "gathered": "2026-11-04T18:46:07Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
     "temp": 68,
     "cond": "Mostly Cloudy",
-    "obs": "5 Nov 16:54 pm EST"
+    "obs": "5 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -173,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -195,6 +176,17 @@
   },
   "local": [
    {
+    "h": "Chicago's arts budget stays flat",
+    "b": "The city's cultural affairs department would get about $62.5 million under Mayor Brandon Johnson's proposed 2027 budget, up less than 1%, disappointing advocates.",
+    "date": "2026-11-05",
+    "publisher": "WBEZ",
+    "title": "As several other major cities boost arts funding, Chicago’s proposed 2027 cultural spending plan is flat",
+    "url": "https://www.wbez.org/city-hall/2026/11/05/chicago-dcase-culture-arts-spending-2027-budget-events",
+    "published": "2026-11-05T20:58:56Z",
+    "updated": "2026-11-05T20:58:56Z",
+    "gathered": "2026-11-05T23:12:34Z"
+   },
+   {
     "h": "Blue wave reaches red Indiana",
     "b": "Rep. Frank Mrvan won reelection and Beau Bayh won Democrats' first statewide race in 14 years.",
     "date": "2026-11-05",
@@ -211,70 +203,15 @@
     "date": "2026-11-05",
     "url": "https://www.wbez.org/architecture/2026/11/05/landmark-status-lake-view-house-vinci-preservation-movement",
     "gathered": "2026-11-05T15:42:19Z"
-   },
-   {
-    "h": "Upset in West Side school board race",
-    "b": "Realtor LaPamela Williams, backed by charter school supporters, unseated activist Jitu Brown in District 5a.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/education/2026/11/03/chicago-school-board-district-5a-results",
-    "gathered": "2026-11-05T02:12:12Z"
-   },
-   {
-    "h": "Stratton win makes Illinois history",
-    "b": "With Tammy Duckworth, Illinois becomes the first state with two women of color in the Senate at once.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/government-politics/elections/2026/11/04/julianna-strattons-win-marks-historic-first-for-women-of-color-in-illinois-politics",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Voters back ShotSpotter's return",
-    "b": "More than 70% supported bringing back gunshot detection, though Mayor Brandon Johnson is unlikely to revive it.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/government-politics/elections/2026/11/04/shotspotter-advisory-referendum-gunshot-detection-technology-brandon-johnson-opposition",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Democrats grow Illinois supermajorities",
-    "b": "Speaker Chris Welch's operation flipped at least four districts on Election Day.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/government-politics/elections/2026/11/04/blue-tsunami-democrats-massive-advantage-illinois-general-assembly",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Rhymefest keeps South Side school board seat",
-    "b": "Grammy-winning artist Che \"Rhymefest\" Smith was reelected in District 10a over a write-in challenger.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/education/2026/11/03/chicago-school-board-district-10a-results",
-    "gathered": "2026-11-04T11:24:59Z"
-   },
-   {
-    "h": "Illinois Democrats aim to unwind Trump policies",
-    "b": "Democratic members of Congress hope to pass legislation rolling back some of the administration's policies.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/government-politics/elections/2026/11/03/blue-wave-election-night-illinois-democrats-unwind-trump-policies",
-    "gathered": "2026-11-04T05:12:45Z"
-   },
-   {
-    "h": "Teachers union leads in nine school board races",
-    "b": "CTU candidates were ahead in nine of 20 seats, though its pick for board president trailed Jessica Biggs.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/education/2026/11/03/chicago-teachers-union-poised-to-capture-half-of-school-board-district-seats-but-likely-to-lose-presidency",
-    "gathered": "2026-11-04T05:12:45Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Overcast",
-    "obs": "5 Nov 15:53 pm CST"
+    "temp": 51,
+    "cond": " Light Rain Fog/Mist",
+    "obs": "5 Nov 16:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 52,
-     "text": "Showers likely with areas of drizzle.  Cloudy, with a high near 52. West wind around 10 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -304,6 +241,12 @@
      "kind": "low",
      "temp": 40,
      "text": "Mostly clear, with a low around 40."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 57,
+     "text": "Sunny, with a high near 57."
     }
    ]
   },
@@ -319,9 +262,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Downtown 'Cultural Stadium' gets a leader",
+    "b": "Former Michigan state Rep. Donna Lasinski will lead the $2 million effort to turn underused Downtown spaces into arts venues.",
+    "date": "2026-11-05",
+    "publisher": "WBEZ",
+    "title": "Downtown 'Cultural Stadium' idea gains steam with new leader, $2 million funding",
+    "url": "https://www.wbez.org/arts-culture/2026/11/05/chicago-cultural-stadium-leadership-donna-lasinski-funding-plan",
+    "published": "2026-11-05T20:52:31Z",
+    "updated": "2026-11-05T20:52:31Z",
+    "gathered": "2026-11-05T23:12:34Z"
+   },
    {
     "h": "Soul Train Awards come home to Chicago",
     "b": "Queen Latifah helped kick off festivities; the show tapes at the Harris Theater and airs Nov. 27.",
@@ -332,13 +286,6 @@
     "published": "2026-11-05T15:45:06Z",
     "updated": "2026-11-05T15:45:06Z",
     "gathered": "2026-11-05T17:16:56Z"
-   },
-   {
-    "h": "Chicago artist's 'Maybe it will happen today' catches on",
-    "b": "Phineas X. Jones turned a hopeful doodle into a message thousands of fans have embraced.",
-    "date": "2026-11-04",
-    "url": "https://www.wbez.org/arts-culture/2026/11/04/maybe-it-will-happen-today-one-chicago-pessimist-hopes-thousands-of-fans-do-too",
-    "gathered": "2026-11-04T14:16:27Z"
    }
   ]
  },
@@ -348,28 +295,14 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [
-   {
-    "h": "Melat Kiros wins Denver's House seat",
-    "b": "The 29-year-old Democratic socialist becomes the first Gen Z woman elected to Congress.",
-    "date": "2026-11-04",
-    "url": "https://www.kuow.org/npr-news/2026-11-03/melat-kiros-becomes-the-first-gen-z-woman-elected-to-congress",
-    "gathered": "2026-11-04T03:10:24Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 58,
     "cond": "A Few Clouds",
-    "obs": "5 Nov 12:58 pm MST"
+    "obs": "5 Nov 14:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. Light east wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -399,6 +332,12 @@
      "kind": "low",
      "temp": 37,
      "text": "Mostly clear, with a low around 37."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 65,
+     "text": "Sunny, with a high near 65."
     }
    ]
   },
@@ -414,7 +353,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -426,6 +365,17 @@
   },
   "local": [
    {
+    "h": "Airbnb's $6M bet on LA races falls short",
+    "b": "The company spent more than $4.1 million backing Mayor Karen Bass and $2.1 million for city attorney candidate John McKinney. Bass conceded to Nithya Raman on Thursday.",
+    "date": "2026-11-05",
+    "publisher": "LAist",
+    "title": "Airbnb poured more than $6M into the LA mayoral and city attorney races. Its candidates lost",
+    "url": "https://laist.com/news/politics/airbnb-poured-more-than-6m-into-the-la-mayoral-and-city-attorney-races-its-candidates-lost",
+    "published": "2026-11-05T20:28:52Z",
+    "updated": "2026-11-05T22:52:01Z",
+    "gathered": "2026-11-05T23:12:34Z"
+   },
+   {
     "h": "Nithya Raman defeats Karen Bass for LA mayor",
     "b": "The councilmember and DSA member beat the incumbent with a message of hope for a city beset by crises.",
     "date": "2026-11-05",
@@ -433,87 +383,13 @@
     "title": "Raman defeats Bass in race for LA mayor, ushering in new era of progressive politics",
     "url": "https://laist.com/news/politics/raman-defeats-bass-in-race-for-la-mayor-ushering-in-new-era-of-progressive-politics",
     "published": "2026-11-05T20:09:22Z",
-    "updated": "2026-11-05T20:59:07Z",
+    "updated": "2026-11-05T22:38:08Z",
     "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "All 8 LA city ballot measures passing",
-    "b": "Voters are poised to approve every measure, including a charter change to how often the council meets.",
-    "date": "2026-11-04",
-    "publisher": "LAist",
-    "title": "All 8 LA city ballot measures are passing. Here’s what changes",
-    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-live-results-los-angeles-city-ballot-measures-ee-fd-la-te-se-prt-el",
-    "published": "2026-11-05T00:28:38Z",
-    "updated": "2026-11-05T18:52:06Z",
-    "gathered": "2026-11-05T02:12:12Z"
-   },
-   {
-    "h": "West Hollywood creates registry for polyamorous families",
-    "b": "The ordinance extends some legal protections, including visitation rights, to multi-partner relationships.",
-    "date": "2026-11-04",
-    "publisher": "LAist",
-    "title": "West Hollywood passes domestic partnership registry for polyamorous families",
-    "url": "https://laist.com/news/politics/west-hollywood-passes-domestic-partnership-registry-for-polyamorous-families",
-    "published": "2026-11-05T01:56:56Z",
-    "updated": "2026-11-05T07:16:27Z",
-    "gathered": "2026-11-05T02:12:12Z"
-   },
-   {
-    "h": "Gonzales-Torres unseats Rep. Jimmy Gomez",
-    "b": "Newcomer Angela Gonzales-Torres won the 34th Congressional District race, AP projected.",
-    "date": "2026-11-04",
-    "publisher": "LAist",
-    "title": "Newcomer Gonzales-Torres defeats incumbent in California's 34th Congressional District race",
-    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-congress-34-district-gomes-gonzales-torres-la-live-results",
-    "published": "2026-11-05T00:08:56Z",
-    "updated": "2026-11-05T00:23:30Z",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Xavier Becerra wins California governor's race",
-    "b": "The governor-elect faces federal health care cuts, rising wildfire costs and a cost-of-living crisis.",
-    "date": "2026-11-04",
-    "url": "https://laist.com/news/politics/xavier-becerra-california-next-governor-five-things-to-know",
-    "gathered": "2026-11-04T20:12:41Z"
-   },
-   {
-    "h": "California voters reject Prop 39 voter ID measure",
-    "b": "About 60% opposed the GOP-backed proposal, which drew millions from Republican megadonors.",
-    "date": "2026-11-04",
-    "url": "https://laist.com/news/politics/2026-election-california-general-proposition-39-results",
-    "gathered": "2026-11-04T08:17:00Z"
-   },
-   {
-    "h": "Clinic spending measure Prop 44 fails",
-    "b": "Voters rejected the SEIU-UHW measure, the union's fourth failed clinic initiative since 2018.",
-    "date": "2026-11-04",
-    "url": "https://laist.com/news/politics/2026-election-california-general-proposition-44-results",
-    "gathered": "2026-11-04T08:17:00Z"
-   },
-   {
-    "h": "Bass narrowly leads Raman in early mayor count",
-    "b": "Mayor Karen Bass was ahead 50.86% to 49.14% after the first ballot drops; counting will take days.",
-    "date": "2026-11-04",
-    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-los-angeles-city-mayor-results-bass-raman",
-    "gathered": "2026-11-04T05:12:45Z"
-   },
-   {
-    "h": "Luna takes wide early lead for LA sheriff",
-    "b": "Sheriff Robert Luna led predecessor Alex Villanueva in early returns.",
-    "date": "2026-11-04",
-    "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-la-county-sheriff-results-luna-villanueva",
-    "gathered": "2026-11-04T05:12:45Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 80,
-     "text": "Sunny, with a high near 80. West southwest wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -543,6 +419,12 @@
      "kind": "low",
      "temp": 63,
      "text": "Clear, with a low around 63."
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 87,
+     "text": "Sunny, with a high near 87."
     }
    ]
   },
@@ -558,7 +440,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -569,6 +451,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Ex-FBI agent charged in Brooklyn hit-and-run",
+    "b": "Prosecutors say Andrew Reyes hit a man in a Kensington crosswalk with his government car in February, left him unconscious on a bench and lied to investigators.",
+    "date": "2026-11-05",
+    "publisher": "Gothamist",
+    "title": "Feds accuse former FBI agent of Brooklyn hit and run, leaving victim on a bench",
+    "url": "https://gothamist.com/news/feds-accuse-former-fbi-agent-of-brooklyn-hit-and-run-leaving-victim-on-a-bench",
+    "published": "2026-11-05T19:39:31Z",
+    "gathered": "2026-11-05T23:12:34Z"
+   },
+   {
+    "h": "MTA chair sees better days with Democratic Congress",
+    "b": "Janno Lieber said he expects more federal transit funding after the Trump administration repeatedly withheld money from New York and the MTA.",
+    "date": "2026-11-05",
+    "publisher": "Gothamist",
+    "title": "Better days ahead for NYC commuters with Democrats in control of Congress, MTA chair says",
+    "url": "https://gothamist.com/news/better-days-ahead-for-nyc-commuters-with-democrats-in-control-of-congress-mta-chair-says",
+    "published": "2026-11-05T22:59:43Z",
+    "gathered": "2026-11-05T23:12:34Z"
+   },
    {
     "h": "Ransomware attack hits Queens Public Library",
     "b": "Branches are open, but the website, computers, checkout machines and Wi-Fi are down.",
@@ -630,133 +532,13 @@
     "url": "https://gothamist.com/news/dsny-worker-arrested-for-killing-a-woman-in-brooklyn-while-driving-a-garbage-truck",
     "published": "2026-11-05T13:18:32Z",
     "gathered": "2026-11-05T15:42:19Z"
-   },
-   {
-    "h": "Ballot win fast-tracks bus and bike lanes",
-    "b": "The charter change, approved with 65% support, simplifies review of street safety projects.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Brace for bus and bike lane boom following NYC ballot approval",
-    "url": "https://gothamist.com/news/brace-for-bus-and-bike-lane-boom-following-nyc-ballot-approval",
-    "published": "2026-11-04T21:38:00Z",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Court strikes Nassau's transgender athlete ban",
-    "b": "The appeals court overturned the county's ban on trans women and girls at county-owned facilities.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "NY appeals court strikes down Nassau County's ban on transgender athletes",
-    "url": "https://gothamist.com/news/ny-appeals-court-strikes-down-nassau-countys-ban-on-transgender-athletes",
-    "published": "2026-11-04T21:30:01Z",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Court backs NYC's pied-à-terre tax",
-    "b": "An appeals court dismissed owners' suit against the luxury second-home surcharge.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "NYC wins court fight over rollout of pied-à-terre tax on luxury second homes",
-    "url": "https://gothamist.com/news/nyc-wins-court-fight-over-rollout-of-pied-%C3%A0-terre-tax-on-luxury-second-homes",
-    "published": "2026-11-04T20:59:00Z",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Rain to end NYC's weeks-long run of nice weather",
-    "b": "Clouds and rain arrive Thursday and Friday after nearly three weeks of clear, mild days.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Rain in NYC and NJ will end weeks-long stretch of beautiful weather",
-    "url": "https://gothamist.com/news/rain-in-nyc-and-nj-will-end-weeks-long-stretch-of-beautiful-weather",
-    "published": "2026-11-04T18:47:08Z",
-    "gathered": "2026-11-04T20:12:41Z"
-   },
-   {
-    "h": "Outsiders sweep Jersey City school board",
-    "b": "A parent slate won a majority, ending the teachers union's control of the $1 billion district's board.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Incumbents booted from Jersey City school board after years of dysfunction",
-    "url": "https://gothamist.com/news/incumbents-booted-from-jersey-city-school-board-after-years-of-dysfunction",
-    "published": "2026-11-04T17:35:00Z",
-    "gathered": "2026-11-04T18:46:07Z"
-   },
-   {
-    "h": "Strand admits taking ineligible pandemic loan",
-    "b": "The bookstore will pay nearly $1.5 million over a $930,000 PPP loan barred for businesses tied to a member of Congress.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Strand Bookstore admits it took a pandemic loan despite being ineligible",
-    "url": "https://gothamist.com/news/strand-bookstore-admits-it-took-a-pandemic-loan-despite-being-ineligible",
-    "published": "2026-11-04T18:06:00Z",
-    "gathered": "2026-11-04T18:46:07Z"
-   },
-   {
-    "h": "Van Drew concedes South Jersey seat",
-    "b": "The four-term Republican conceded to Democrat Zack Mullock, a small-town Jersey Shore mayor.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Republican Jeff Van Drew concedes NJ congressional seat in surprise victory for Democrats",
-    "url": "https://gothamist.com/news/republican-jeff-van-drew-concedes-nj-congressional-seat-in-surprise-victory-for-democrats",
-    "published": "2026-11-04T04:24:00Z",
-    "gathered": "2026-11-04T05:12:45Z"
-   },
-   {
-    "h": "Hochul wins second full term as governor",
-    "b": "She defeated Republican Bruce Blakeman after tying him to President Trump.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Kathy Hochul re-elected New York governor, defeats Bruce Blakeman",
-    "url": "https://gothamist.com/news/ny-election-results-governor-race",
-    "published": "2026-11-04T03:54:00Z",
-    "gathered": "2026-11-04T03:10:24Z"
-   },
-   {
-    "h": "Rebecca Bennett unseats Rep. Tom Kean Jr.",
-    "b": "The Democratic newcomer flipped New Jersey's 7th District from the two-term Republican.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Rebecca Bennett flips NJ Republican House seat for Democrats",
-    "url": "https://gothamist.com/news/first-time-nj-democrat-rebecca-bennett-defeats-republican-scion-tom-kean-jr",
-    "published": "2026-11-04T03:35:00Z",
-    "gathered": "2026-11-04T03:10:24Z"
-   },
-   {
-    "h": "NYC ballot measures lead by wide margins",
-    "b": "Measures easing outdoor dining and speeding bike and bus lanes were ahead with about 86% of scanners reporting.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "NYC voters approve outdoor dining, bike lane ballot measures",
-    "url": "https://gothamist.com/news/nyc-voters-appear-poised-to-approve-outdoor-dining-bike-lane-ballot-measures",
-    "published": "2026-11-04T14:30:00Z",
-    "gathered": "2026-11-04T03:10:24Z"
-   },
-   {
-    "h": "Mamdani allies win House seats",
-    "b": "Brad Lander, Claire Valdez and Darializa Avila Chevalier won their races in heavily Democratic districts.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Mamdani allies Valdez, Avila Chevalier win House seats for New York",
-    "url": "https://gothamist.com/news/mamdani-allies-valdez-avila-chevalier-win-house-seats-for-new-york",
-    "published": "2026-11-04T14:29:00Z",
-    "gathered": "2026-11-04T03:10:24Z"
-   },
-   {
-    "h": "Voting machine snafu may delay Lawler-Conley result",
-    "b": "Malfunctioning machines in Westchester could slow the count in a race that may help decide the House.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "Republican Rep. Mike Lawler concedes to Cait Conley after voting machine snafu",
-    "url": "https://gothamist.com/news/voting-machine-snafu-may-delay-results-in-ny-house-race-between-lawler-conley",
-    "published": "2026-11-04T04:11:00Z",
-    "gathered": "2026-11-04T03:10:24Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 71,
     "cond": "Overcast",
-    "obs": "5 Nov 16:51 pm EST"
+    "obs": "5 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -787,7 +569,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 53,
-     "text": "Mostly cloudy, with a low around 53."
+     "text": "A 20 percent chance of showers.  Mostly cloudy, with a low around 53. West wind 15 to 17 mph. "
     },
     {
      "name": "Sunday",
@@ -809,20 +591,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Jeweler turns back NYC's only sidewalk clock",
-    "b": "Master jeweler Gilo Vintimilla adjusts the clock's hands from a ladder beneath the sidewalk.",
-    "date": "2026-11-04",
-    "publisher": "Gothamist",
-    "title": "When turning back the clock means going under an NYC sidewalk",
-    "url": "https://gothamist.com/arts-entertainment/when-turning-back-the-clock-means-going-under-an-nyc-sidewalk",
-    "published": "2026-11-04T19:30:38Z",
-    "gathered": "2026-11-04T20:12:41Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -867,20 +638,6 @@
     "date": "2026-11-05",
     "url": "https://www.thelocal.fr/20261105/parts-of-southern-france-put-on-alert-for-heavy-rain-and-floods",
     "gathered": "2026-11-05T08:12:20Z"
-   },
-   {
-    "h": "EU-UK deal could bring back pet passports",
-    "b": "The measure may be announced at a Nov. 20 summit in Brussels, easing Channel travel with pets.",
-    "date": "2026-11-04",
-    "url": "https://www.thelocal.fr/20261104/pet-passports-set-to-be-restored-between-the-eu-and-the-uk",
-    "gathered": "2026-11-04T18:46:07Z"
-   },
-   {
-    "h": "Cyberattack hits French bank Credit Mutuel Arkea",
-    "b": "The bank said the attack, reported to involve €118 million in fraudulent transactions, was under control.",
-    "date": "2026-11-04",
-    "url": "https://www.thelocal.fr/20261104/french-bank-hit-by-cyberattack-that-caused-e118m-fraudulent-transactions",
-    "gathered": "2026-11-04T14:16:27Z"
    }
   ],
   "weather": {
@@ -899,7 +656,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "goodnews": []
  },
  {
@@ -930,31 +687,11 @@
     "published": "2026-11-05T20:10:58Z",
     "updated": "2026-11-05T20:12:18Z",
     "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "Amazon, Alaska Airlines cut Washington jobs",
-    "b": "Amazon let go of 95 workers in the state, and Alaska Airlines cut 200 jobs, 125 of them in Washington.",
-    "date": "2026-11-04",
-    "url": "https://www.kuow.org/economy/2026-11-04/amazon-alaska-airlines-cut-jobs-in-washington-state",
-    "gathered": "2026-11-05T00:29:03Z"
-   },
-   {
-    "h": "Washington voters keep millionaires tax",
-    "b": "A repeal of the tax on households earning over $1 million was losing by more than 16 points.",
-    "date": "2026-11-04",
-    "url": "https://www.kuow.org/elections/2026-11-03/socially-conservative-fiscally-liberal-election-night-takeaways-in-washington-state",
-    "gathered": "2026-11-04T08:17:00Z"
    }
   ],
   "weather": {
    "now": null,
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Partly sunny, with a high near 56. South southwest wind around 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -983,7 +720,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Rain, mainly before 4am.  Low around 51. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly before 4am.  Low around 51. South wind 16 to 20 mph, with gusts as high as 34 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 55,
+     "text": "A 40 percent chance of rain, mainly before 10am.  Partly sunny, with a high near 55."
     }
    ]
   },
@@ -999,7 +742,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-05T23:12:00Z",
+  "updatedAt": "2026-11-06T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
