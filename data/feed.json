@@ -1,11 +1,30 @@
 {
- "updatedAt": "2026-11-07T05:11:00Z",
+ "updatedAt": "2026-11-07T08:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "US sanctions eight Canadian exchange firms over Iran",
+   "b": "The Treasury says the Ontario and British Columbia businesses helped Iran evade sanctions, some by converting currency into crypto.",
+   "date": "2026-11-07",
+   "publisher": "Al Jazeera",
+   "title": "US Treasury sanctions eight Canadian money exchange firms over Iran ties",
+   "url": "https://www.aljazeera.com/economy/2026/11/7/us-treasury-sanctions-eight-canadian-money-exchange-firms-over-iran-ties",
+   "gathered": "2026-11-07T05:14:59Z"
+  },
+  {
+   "h": "Trump confirms new US strikes on Qeshm Island",
+   "b": "'We do minor strikes,' Trump said, after Iranian media reported two missile strikes on the Hormuz island and Iran said it downed a US drone.",
+   "date": "2026-11-07",
+   "place": "Qeshm Island, Iran",
+   "publisher": "Al Jazeera",
+   "title": "Trump confirms new US strikes on Iran’s Qeshm Island",
+   "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
+   "gathered": "2026-11-07T05:14:59Z"
+  },
   {
    "h": "UN warns Sudan's displaced may lose shelter",
    "b": "Two UN agencies say funding covers only about 10% of those in need as millions flee the war.",
@@ -42,8 +61,6 @@
    "h": "US measles cases top 5,000, most in 35 years",
    "b": "The CDC count is more than double 2025's, and children and teens make up about 59% of cases as kindergarten vaccination rates fall.",
    "date": "2026-11-06",
-   "publisher": "Al Jazeera",
-   "title": "CDC reports more than 5,000 measles cases, highest number in 35 years",
    "url": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years",
    "gathered": "2026-11-07T03:02:14Z"
   },
@@ -92,11 +109,7 @@
    "h": "Mississippi Senate race still too close to call",
    "b": "Fewer than 2,000 votes separate Sen. Cindy Hyde-Smith and Democrat Scott Colom, and no one can say how many ballots remain.",
    "date": "2026-11-06",
-   "publisher": "KUOW",
-   "title": "No one knows how many ballots are outstanding in Mississippi's Senate race",
    "url": "https://www.kuow.org/npr-news/2026-11-06/no-one-knows-how-many-ballots-are-outstanding-in-mississippis-senate-race",
-   "published": "2026-11-06T19:50:14Z",
-   "updated": "2026-11-06T19:54:33Z",
    "gathered": "2026-11-06T20:12:47Z"
   },
   {
@@ -368,18 +381,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 61,
-   "cond": "Mostly Cloudy",
-   "wind": "W 3 mph",
-   "humidity": 93,
-   "obs": "6 Nov 21:51 pm EST"
+   "temp": 60,
+   "cond": "Light Rain Fog/Mist",
+   "wind": "Calm",
+   "humidity": 96,
+   "obs": "6 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 56,
-    "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 56. West wind around 6 mph. "
+    "text": "Partly cloudy, with a low around 56. West wind around 6 mph. "
    },
    {
     "name": "Saturday",

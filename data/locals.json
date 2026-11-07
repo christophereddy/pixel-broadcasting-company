@@ -8,18 +8,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 54,
     "cond": "A Few Clouds",
-    "wind": "N 17 mph, gusts to 26 mph",
-    "humidity": 62,
-    "obs": "6 Nov 21:52 pm EST"
+    "wind": "NW 14 mph",
+    "humidity": 75,
+    "obs": "6 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 48,
-     "text": "Clear, with a low around 48. Northwest wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "Clear, with a low around 48. Northwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -97,18 +97,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Light Rain Fog/Mist",
-    "wind": "SW 10 mph, gusts to 24 mph",
-    "humidity": 96,
-    "obs": "6 Nov 21:54 pm EST"
+    "temp": 62,
+    "cond": "Light Rain",
+    "wind": "SW 7 mph",
+    "humidity": 100,
+    "obs": "6 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 55,
-     "text": "Rain before 1am, then rain likely and possibly a thunderstorm between 1am and 4am, then a chance of rain after 4am.  Patchy fog. Low around 55. Southwest wind around 5 mph becoming calm  after midnight.  Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Rain likely before 1am, then rain likely and possibly a thunderstorm between 1am and 4am, then a chance of rain after 4am.  Patchy fog.  Otherwise, cloudy, with a low around 55. Southwest wind around 5 mph becoming calm.  Chance of precipitation is 70%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -199,23 +199,23 @@
   "weather": {
    "now": {
     "temp": 41,
-    "cond": "A Few Clouds",
-    "wind": "W 3 mph",
-    "humidity": 79,
-    "obs": "6 Nov 20:53 pm CST"
+    "cond": "Fair",
+    "wind": "W 6 mph",
+    "humidity": 76,
+    "obs": "6 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 38,
-     "text": "Partly cloudy, with a low around 38. Northwest wind around 10 mph. "
+     "temp": 36,
+     "text": "Mostly clear, with a low around 36. Northwest wind around 10 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 52,
-     "text": "Mostly sunny, with a high near 52. Northwest wind 5 to 10 mph. "
+     "temp": 53,
+     "text": "Mostly sunny, with a high near 53. Northwest wind 5 to 10 mph. "
     },
     {
      "name": "Saturday Night",
@@ -255,7 +255,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -309,11 +309,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "wind": "Calm",
-    "humidity": 48,
-    "obs": "6 Nov 18:58 pm MST"
+    "temp": 41,
+    "cond": "Fair",
+    "wind": "S 8 mph",
+    "humidity": 62,
+    "obs": "6 Nov 21:55 pm MST"
    },
    "periods": [
     {
@@ -366,7 +366,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -435,10 +435,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "wind": "N 5 mph",
-    "humidity": 54,
-    "obs": "06 Nov 06:55 PM PST"
+    "temp": 68,
+    "wind": "Calm",
+    "humidity": 43,
+    "obs": "06 Nov 09:10 PM PST"
    },
    "periods": [
     {
@@ -491,7 +491,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -587,18 +587,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Mostly Cloudy",
-    "wind": "W 3 mph",
-    "humidity": 93,
-    "obs": "6 Nov 21:51 pm EST"
+    "temp": 60,
+    "cond": "Light Rain Fog/Mist",
+    "wind": "Calm",
+    "humidity": 96,
+    "obs": "6 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 56. West wind around 6 mph. "
+     "text": "Partly cloudy, with a low around 56. West wind around 6 mph. "
     },
     {
      "name": "Saturday",
@@ -644,7 +644,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -720,7 +720,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "goodnews": [
    {
     "h": "France's new TGV-M trains finally launch",
@@ -757,28 +757,24 @@
     "h": "Trump's global health strategy takes shape",
     "b": "The US signed a global health agreement with Zambia in October that a US diplomat called a fundamental shift.",
     "date": "2026-11-06",
-    "publisher": "KUOW",
-    "title": "Trump's global health strategy is emerging. What will the Democratic Congress say?",
     "url": "https://www.kuow.org/npr-news/2026-11-06/trumps-global-health-strategy-is-emerging-what-will-the-democratic-congress-say",
-    "published": "2026-11-06T20:09:58Z",
-    "updated": "2026-11-06T20:13:38Z",
     "gathered": "2026-11-06T23:24:15Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 57,
-    "cond": "Partly Cloudy",
-    "wind": "S 18 mph",
-    "humidity": 83,
-    "obs": "06 Nov 06:53 PM PST"
+    "cond": "Clear",
+    "wind": "S 10 mph",
+    "humidity": 80,
+    "obs": "06 Nov 08:53 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Mostly cloudy, with a low around 50. South wind 9 to 14 mph becoming light southeast  after midnight. Winds could gust as high as 22 mph. "
+     "text": "Mostly cloudy, with a low around 50. South wind 8 to 13 mph becoming light southeast  after midnight. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Saturday",
@@ -824,7 +820,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T05:11:00Z",
+  "updatedAt": "2026-11-07T08:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
