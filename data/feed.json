@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T20:11:00Z",
+ "updatedAt": "2026-11-07T23:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "IRGC says weapons production moved underground",
    "b": "A spokesman said missile and drone lines were shifted to underground sites, with an 'underground missile city' set to be unveiled.",
    "date": "2026-11-07",
-   "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC says building underground sites for weapons production, storage",
    "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage",
    "gathered": "2026-11-07T16:57:04Z"
   },
@@ -52,11 +50,11 @@
    "gathered": "2026-11-06T11:21:08Z"
   },
   {
-   "h": "Tanker hit in Hormuz as Iraq warns of wider war",
+   "h": "Houthis claim attacks on Saudi Arabia",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-07",
    "publisher": "Al Jazeera",
-   "title": "Tanker hit in Hormuz Strait; Iraqi FM warns of potential war in the region",
+   "title": "Houthis claim attacks on Saudi; explosions heard in southern Iran.",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal",
    "gathered": "2026-11-07T03:02:14Z"
   }
@@ -82,10 +80,7 @@
    "b": "The Faculty Senate passed the symbolic resolution 75-50 after a former student sued, saying she was gang raped at a fraternity party in 2024.",
    "date": "2026-11-06",
    "place": "Ithaca, New York",
-   "publisher": "PBS NewsHour",
-   "title": "Cornell faculty vote ‘no confidence’ in university leadership after alleged fraternity gang rape",
    "url": "https://www.pbs.org/newshour/nation/cornell-faculty-vote-no-confidence-in-university-leadership-after-alleged-fraternity-gang-rape",
-   "published": "2026-11-06T21:28:00Z",
    "gathered": "2026-11-06T23:24:15Z"
   },
   {
@@ -97,6 +92,16 @@
   }
  ],
  "politics": [
+  {
+   "h": "Trump says he asked Dana White to be press secretary",
+   "b": "Trump posted the offer to the UFC chief on social media. The White House did not respond to questions about it.",
+   "date": "2026-11-07",
+   "publisher": "PBS NewsHour",
+   "title": "Trump says he's asked UFC's Dana White to be his press secretary",
+   "url": "https://www.pbs.org/newshour/politics/trump-says-hes-asked-ufcs-dana-white-to-be-his-press-secretary",
+   "published": "2026-11-07T20:55:40Z",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
   {
    "h": "Texas vouchers could be 'unrecognizable' after Democratic wins",
    "b": "Democrats won back the Texas House for the first time in 24 years, and some say Gov. Greg Abbott's voucher push turned off rural voters.",
@@ -113,8 +118,6 @@
    "h": "Petition urges Democrats to pick a speaker other than Jeffries",
    "b": "More than 980,000 people have signed, though Hakeem Jeffries is poised to become House speaker after the Democratic wave.",
    "date": "2026-11-07",
-   "publisher": "Al Jazeera",
-   "title": "Who is Hakeem Jeffries, the Democrat poised to become House speaker?",
    "url": "https://www.aljazeera.com/news/2026/11/7/who-is-hakeem-jeffries-the-democrat-poised-to-become-house-speaker",
    "gathered": "2026-11-07T16:57:04Z"
   },
@@ -137,10 +140,7 @@
    "b": "Democrats took both legislative chambers and kept the governor's office. Gov. Katie Hobbs vetoed more than 540 Republican bills in her first term.",
    "date": "2026-11-06",
    "place": "Arizona",
-   "publisher": "PBS NewsHour",
-   "title": "Democrats win the Arizona House, Senate and governor’s office for the first time since 1966",
    "url": "https://www.pbs.org/newshour/politics/democrats-win-the-arizona-house-senate-and-governors-office-for-the-first-time-since-1966",
-   "published": "2026-11-06T21:16:31Z",
    "gathered": "2026-11-06T23:24:15Z"
   },
   {
@@ -199,13 +199,34 @@
  ],
  "international": [
   {
+   "h": "More than 140,000 rally across France over costs",
+   "b": "Unions put turnout at 250,000. Police clashed with some protesters in Paris and used tear gas.",
+   "date": "2026-11-07",
+   "place": "Paris",
+   "tz": "Europe/Paris",
+   "publisher": "Al Jazeera",
+   "title": "More than 140,000 rally as new protests against rising costs sweep France",
+   "url": "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
+  {
+   "h": "Israel's president taps Eisenkot to form government",
+   "b": "Opposition candidate Gadi Eisenkot, a former military chief, gets up to six weeks to build a coalition, a setback for Netanyahu.",
+   "date": "2026-11-07",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "PBS NewsHour",
+   "title": "Israel’s president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu",
+   "url": "https://www.pbs.org/newshour/world/israels-president-taps-opposition-candidate-eisenkot-to-form-a-government-in-setback-for-netanyahu",
+   "published": "2026-11-07T20:39:08Z",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
+  {
    "h": "Drone attacks drive villagers from Zaporizhzhia's south",
    "b": "Villages south of the regional capital face escalating Russian attacks, pushing residents into shelters for displaced people.",
    "date": "2026-11-07",
    "place": "Zaporizhzhia",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "‘They started bombing us with drones’: Russian attacks unnerve Zaporizhzhia",
    "url": "https://www.aljazeera.com/news/2026/11/7/they-started-bombing-us-with-drones-russian-attacks-unnerve-zaporizhzhia",
    "gathered": "2026-11-07T17:15:03Z"
   },
@@ -221,15 +242,17 @@
    "gathered": "2026-11-07T16:57:04Z"
   },
   {
-   "h": "Gunman kills five in Krakow, Poland",
-   "b": "Police shot and detained the man, who wore military-style clothing. About a dozen people were wounded, including two officers.",
+   "h": "Gunman kills six in Krakow's Main Square",
+   "b": "Police say a 24-year-old opened fire on random people in the busy tourist square, wounding 15. He was shot and taken to hospital.",
    "date": "2026-11-07",
    "place": "Krakow",
    "tz": "Europe/Warsaw",
-   "publisher": "Al Jazeera",
-   "title": "At least five people killed in shooting in Poland’s Krakow",
-   "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow",
-   "gathered": "2026-11-07T16:57:04Z"
+   "publisher": "KUOW",
+   "title": "Gunman opens fire in Polish city of Krakow, killing 6 people and injuring 15",
+   "url": "https://www.kuow.org/npr-news/2026-11-07/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15",
+   "published": "2026-11-07T18:37:36Z",
+   "updated": "2026-11-07T19:02:31Z",
+   "gathered": "2026-11-07T21:01:28Z"
   },
   {
    "h": "Haiti's prime minister hails killing of gang leader",
@@ -379,20 +402,24 @@
    "h": "Tomb finds point to cannabis high 2,800 years ago",
    "b": "Seeds and hair from a Siberian tomb suggest psychoactive cannabis use at least 300 years earlier than known use in China.",
    "date": "2026-11-06",
-   "publisher": "PBS NewsHour",
-   "title": "Seeds and preserved hair in tomb point to oldest signs of cannabis high 2,800 years ago, study suggests",
    "url": "https://www.pbs.org/newshour/science/seeds-and-preserved-hair-in-tomb-point-to-oldest-signs-of-cannabis-high-2800-years-ago-study-suggests",
-   "published": "2026-11-06T22:19:59Z",
    "gathered": "2026-11-06T23:24:15Z"
   }
  ],
  "sports": [
   {
+   "h": "Nebraska fires offensive coordinator Dana Holgorsen",
+   "b": "Matt Rhule made the change after a 24-13 loss to Illinois dropped the Huskers to 5-4 following a 5-0 start.",
+   "date": "2026-11-07",
+   "publisher": "CBS Sports",
+   "title": "Nebraska fires Dana Holgorsen: Matt Rhule parts with high-profile OC amid four-game losing streak",
+   "url": "https://www.cbssports.com/college-football/news/nebraska-fires-dana-holgorsen-offensive-coordinator-matt-rhule/",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
+  {
    "h": "Winless Chargers to keep Khalil Mack at deadline",
    "b": "The 0-7 Chargers reportedly told teams Mack stays, and gave 'hard nos' on Justin Herbert and Ladd McConkey ahead of the Nov. 10 deadline.",
    "date": "2026-11-07",
-   "publisher": "CBS Sports",
-   "title": "Chargers not interested in Khalil Mack trade, will retain top offensive players despite 0-7 record, per report",
    "url": "https://www.cbssports.com/nfl/news/trade-deadline-chargers-to-retain-khalil-mack-top-offensive-players-despite-0-7-record/",
    "gathered": "2026-11-07T17:15:03Z"
   },
@@ -441,6 +468,16 @@
  ],
  "goodnews": [
   {
+   "h": "New LSU scholarships for former foster youth",
+   "b": "Melania Trump and LSU raised more than $7 million in private donations for an endowment funding scholarships for students who were in foster care.",
+   "date": "2026-11-07",
+   "publisher": "PBS NewsHour",
+   "title": "Melania Trump and LSU announce a scholarship program for students who were in foster care",
+   "url": "https://www.pbs.org/newshour/politics/melania-trump-and-lsu-announce-a-scholarship-program-for-students-who-were-in-foster-care",
+   "published": "2026-11-07T19:35:15Z",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
+  {
    "h": "Teen fighting period stigma wins Diana Award",
    "b": "Aadvik Jain of Delhi, who began campaigning at 14, is among 198 young changemakers from 44 countries honored this year.",
    "date": "2026-11-07",
@@ -453,6 +490,27 @@
   }
  ],
  "local": [
+  {
+   "h": "Work begins to replace Newark Bay Bridge",
+   "b": "The 1956 span carries about 95,000 vehicles a day. The new bridge is due in 2031 and the old one stays open meanwhile.",
+   "date": "2026-11-07",
+   "publisher": "Gothamist",
+   "title": "Work is underway to replace deteriorating Newark Bay Bridge, a major NY-NJ route",
+   "url": "https://gothamist.com/news/work-is-underway-to-replace-deteriorating-newark-bay-bridge-a-major-ny-nj-route",
+   "published": "2026-11-07T17:30:49Z",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
+  {
+   "h": "Schools employee charged in Brooklyn jogger's murder",
+   "b": "Police charged Sayed Mohassib, 27, in the Oct. 30 stabbing of Katie Suarez on the Shore Parkway path. He has been suspended.",
+   "date": "2026-11-07",
+   "publisher": "Gothamist",
+   "title": "NYPD arrests and charges city schools employee in murder of Brooklyn jogger",
+   "url": "https://gothamist.com/news/nypd-arrests-and-charges-city-schools-employee-man-in-murder-of-brooklyn-jogger",
+   "published": "2026-11-07T18:39:00Z",
+   "updated": "2026-11-07T20:18:00Z",
+   "gathered": "2026-11-07T21:01:28Z"
+  },
   {
    "h": "Quest pays $13M over Giants ticket kickbacks",
    "b": "Prosecutors say the lab company offered clients suite seats and training camp access in exchange for referrals.",
@@ -536,36 +594,30 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
-   "cond": "Overcast",
-   "wind": "W 10 mph, gusts to 20 mph",
-   "humidity": 69,
-   "obs": "7 Nov 11:51 am EST"
+   "temp": 55,
+   "cond": "Fair",
+   "wind": "NW 10 mph, gusts to 20 mph",
+   "humidity": 53,
+   "obs": "7 Nov 15:51 pm EST"
   },
   "periods": [
-   {
-    "name": "Today",
-    "kind": "high",
-    "temp": 63,
-    "text": "Mostly sunny, with a high near 63. West wind 13 to 16 mph. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 48,
-    "text": "Partly cloudy, with a low around 48. West wind around 15 mph, with gusts as high as 25 mph. "
+    "text": "Partly cloudy, with a low around 48. West wind 14 to 16 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 62,
-    "text": "Sunny, with a high near 62. West wind 10 to 16 mph, with gusts as high as 26 mph. "
+    "text": "Sunny, with a high near 62. West wind 13 to 16 mph, with gusts as high as 26 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
     "temp": 51,
-    "text": "Mostly clear, with a low around 51. West wind around 14 mph. "
+    "text": "Mostly clear, with a low around 51. West wind 13 to 15 mph. "
    },
    {
     "name": "Monday",
@@ -577,7 +629,13 @@
     "name": "Monday Night",
     "kind": "low",
     "temp": 48,
-    "text": "Mostly clear, with a low around 48."
+    "text": "Mostly clear, with a low around 48. Northwest wind 10 to 14 mph. "
+   },
+   {
+    "name": "Tuesday",
+    "kind": "high",
+    "temp": 61,
+    "text": "Mostly sunny, with a high near 61."
    }
   ]
  },
