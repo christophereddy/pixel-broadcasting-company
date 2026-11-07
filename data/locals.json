@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,7 +75,26 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Councilor plans legal action after MBTA chief skips hearing",
+    "b": "Councilor Culpepper ended Friday's hearing when general manager Phil Eng did not appear to testify under oath.",
+    "date": "2026-11-06",
+    "publisher": "WBUR",
+    "title": "Boston city councilor plans to seek legal action after T general manager fails to attend hearing",
+    "url": "https://www.wbur.org/news/2026/11/06/boston-city-council-mbta-phil-eng-subpoena-blue-hill-evenue-project",
+    "gathered": "2026-11-06T23:24:15Z"
+   },
+   {
+    "h": "Closing arguments in Farwell trial over Birchmore death",
+    "b": "Prosecutors say Sandra Birchmore was strangled; the defense says she took her own life. Farwell faces two federal charges.",
+    "date": "2026-11-06",
+    "publisher": "WBUR",
+    "title": "Jurors listen as prosecutor, Farwell attorney tell very different stories about Birchmore's death",
+    "url": "https://www.wbur.org/news/2026/11/06/matthew-farwell-trial-sandra-birchmore-death-closing-statements",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 65,
@@ -135,9 +154,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "boston-ma",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Boston to pilot music and arts space in Brighton",
+    "b": "The city will turn a warehouse at 290 North Beacon St. into 17 studios and a community space using $1.25 million in ARPA funds.",
+    "date": "2026-11-06",
+    "publisher": "WBUR",
+    "title": "City to pilot music and arts space in Brighton",
+    "url": "https://www.wbur.org/news/2026/11/06/boston-pilot-music-arts-space-290-north-beacon-street-brighton",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ]
  },
  {
   "location": {
@@ -228,7 +257,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -238,7 +267,38 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Denver airport eyes $84M restroom renovation",
+    "b": "The airport says it's time for a refresh of its restrooms.",
+    "date": "2026-11-06",
+    "publisher": "Denverite",
+    "title": "Flush with cash? Denver airport eyes $84M restroom renovation",
+    "url": "https://denverite.com/2026/11/06/devner-airport-restroom-expansion-renovation/",
+    "published": "2026-11-06T17:00:00Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   },
+   {
+    "h": "Top Democrats to meet in Denver next week",
+    "b": "Potential presidential candidates will attend 'What's Next,' an independent event put on by Majority Democrats.",
+    "date": "2026-11-06",
+    "publisher": "Denverite",
+    "title": "A pack of presidential potentials and other top Democrats will meet in Denver next week",
+    "url": "https://denverite.com/2026/11/06/whats-next-democratic-party-meeting-denver/",
+    "published": "2026-11-06T21:45:27Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   },
+   {
+    "h": "Lakewood police seek help after deadly bus shooting",
+    "b": "Police had tracked a hit-and-run suspect to an RTD bus before the shooting.",
+    "date": "2026-11-06",
+    "publisher": "Denverite",
+    "title": "Lakewood police will turn to the city’s neighbors for help after a deadly shooting",
+    "url": "https://denverite.com/2026/11/06/lakewood-police-rtd-bus-shooting-update/",
+    "published": "2026-11-06T22:48:12Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 58,
@@ -298,9 +358,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "denver-co",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Skyland's long wait for a grocery store is over",
+    "b": "The Corner on Madison soft-launches Friday.",
+    "date": "2026-11-06",
+    "publisher": "Denverite",
+    "title": "Skyland’s long wait for a grocery store is over",
+    "url": "https://denverite.com/2026/11/06/skyland-new-grocery-store/",
+    "published": "2026-11-06T11:00:00Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ]
  },
  {
   "location": {
@@ -308,7 +379,41 @@
    "short": "LA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Filing questions Long Beach police on evidence sharing",
+    "b": "A defense attorney alleges the department has a pattern of failing to disclose information that could help defendants.",
+    "date": "2026-11-06",
+    "publisher": "LAist",
+    "title": "Defense attorney: Long Beach police can’t be trusted to share evidence that could clear defendants",
+    "url": "https://laist.com/news/criminal-justice/defense-attorney-long-beach-police-cant-be-trusted-to-share-evidence-that-could-clear-defendants",
+    "published": "2026-11-06T13:00:00Z",
+    "updated": "2026-11-06T22:19:44Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   },
+   {
+    "h": "LA voters raise sales tax for fire department",
+    "b": "Measure FD lifts the rate to 10.75% and should raise nearly $350 million a year. Shoppers likely start paying in spring.",
+    "date": "2026-11-06",
+    "publisher": "LAist",
+    "title": "Voters have chosen to increase LA's sales tax — here’s how it compares to other cities",
+    "url": "https://laist.com/news/politics/voters-have-chosen-to-increase-las-sales-tax-heres-how-it-compares-to-other-cities",
+    "published": "2026-11-06T13:00:00Z",
+    "updated": "2026-11-06T15:32:23Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   },
+   {
+    "h": "Raman won without council backing. Can she govern with it?",
+    "b": "No council colleague endorsed the mayor-elect, who unseated Karen Bass this week.",
+    "date": "2026-11-06",
+    "publisher": "LAist",
+    "title": "None of Nithya Raman’s council colleagues backed her bid for mayor. Will they work with her?",
+    "url": "https://laist.com/news/politics/mayor-elect-nithya-raman-council-colleagues-cooperation",
+    "published": "2026-11-06T13:00:00Z",
+    "updated": "2026-11-06T18:30:34Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 81,
@@ -367,7 +472,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -511,7 +616,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -587,7 +692,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "goodnews": [
    {
     "h": "France's new TGV-M trains finally launch",
@@ -608,7 +713,19 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Trump's global health strategy takes shape",
+    "b": "The US is signing new health agreements with countries such as Zambia, which officials call a fundamental shift from traditional aid.",
+    "date": "2026-11-06",
+    "publisher": "KUOW",
+    "title": "Trump's global health strategy is emerging. What will the Democratic Congress say?",
+    "url": "https://www.kuow.org/npr-news/2026-11-06/trumps-global-health-strategy-is-emerging-what-will-the-democratic-congress-say",
+    "published": "2026-11-06T20:09:58Z",
+    "updated": "2026-11-06T20:13:38Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 55,
@@ -668,7 +785,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T02:11:00Z",
+  "updatedAt": "2026-11-07T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
