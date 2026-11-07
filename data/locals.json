@@ -5,29 +5,14 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Black voters help propel Democratic sweep",
-    "b": "Rep. Shomari Figures won again in Alabama despite Republicans reshaping his district.",
-    "date": "2026-11-05",
-    "url": "https://www.wabe.org/black-voters-help-propel-democrats-in-sweeping-midterm-victories/",
-    "gathered": "2026-11-05T17:16:56Z"
-   },
-   {
-    "h": "The South flexes political power",
-    "b": "Democrats flipped Senate seats in North Carolina, South Carolina and Texas as turnout surged in Georgia and Louisiana.",
-    "date": "2026-11-05",
-    "url": "https://www.wabe.org/the-south-flexes-political-power-in-midterms/",
-    "gathered": "2026-11-05T15:42:19Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 74,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 12 mph",
-    "humidity": 37,
-    "obs": "6 Nov 14:52 pm EST"
+    "temp": 66,
+    "cond": "Partly Cloudy",
+    "wind": "W 6 mph",
+    "humidity": 54,
+    "obs": "6 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -58,7 +43,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43."
+     "text": "Mostly clear, with a low around 43. Northwest wind around 5 mph. "
     },
     {
      "name": "Monday",
@@ -80,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -93,48 +78,48 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Light Rain",
+    "temp": 65,
+    "cond": "Heavy Rain Fog/Mist",
     "wind": "S 7 mph",
     "humidity": 93,
-    "obs": "6 Nov 14:54 pm EST"
+    "obs": "6 Nov 17:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 55,
-     "text": "Rain and possibly a thunderstorm.  Patchy fog. Low around 55. Light and variable wind becoming southwest around 5 mph after midnight.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "text": "Rain and possibly a thunderstorm before 4am, then a chance of rain.  Patchy fog. Low around 55. South wind 3 to 6 mph.  Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 62,
-     "text": "Rain likely before 1pm, then a slight chance of rain after 5pm.  Patchy fog before 1pm.  Otherwise, partly sunny, with a high near 62. North wind 5 to 7 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 10am.  Patchy fog before noon.  Otherwise, partly sunny, with a high near 62. Northwest wind 5 to 7 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Rain likely, mainly after 4am.  Increasing clouds, with a low around 46. Light and variable wind becoming west 5 to 8 mph after midnight.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 45,
+     "text": "A chance of rain, mainly after 2am.  Patchy fog before 8pm, then patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 45. Light and variable wind becoming west 5 to 10 mph in the evening.  Chance of precipitation is 50%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 57,
-     "text": "Rain likely, mainly before 11am.  Mostly sunny, with a high near 57. West wind 9 to 14 mph, with gusts as high as 25 mph.  Chance of precipitation is 60%."
+     "temp": 59,
+     "text": "Mostly sunny, with a high near 59. West wind 9 to 14 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. West wind 6 to 8 mph. "
+     "text": "Mostly clear, with a low around 43. West wind around 7 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 57,
-     "text": "Mostly sunny, with a high near 57. West wind 9 to 14 mph, with gusts as high as 24 mph. "
+     "temp": 58,
+     "text": "Mostly sunny, with a high near 58. West wind 8 to 13 mph, with gusts as high as 23 mph. "
     }
    ]
   },
@@ -150,17 +135,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "boston-ma",
-  "goodnews": [
-   {
-    "h": "Meet the new 'Voice of Logan'",
-    "b": "HVAC pipe fitter Christopher Donisi won the airport's competition after entering at his mother's urging.",
-    "date": "2026-11-05",
-    "url": "https://www.wbur.org/news/2026/11/05/voice-of-boston-logan-airport-winner",
-    "gathered": "2026-11-05T22:11:50Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -170,54 +147,42 @@
   },
   "local": [
    {
-    "h": "Uncounted ballots hold up two school board races",
-    "b": "About 131,000 votes, including mail-in ballots, remain uncounted, leaving West Side and Southwest Side school board districts undecided.",
-    "date": "2026-11-05",
-    "url": "https://www.wbez.org/education/2026/11/05/missing-election-day-results-holding-up-race-calls-in-two-chicago-school-board-districts",
-    "gathered": "2026-11-06T02:43:27Z"
+    "h": "Big spending against CTU fell short in several races",
+    "b": "A Sun-Times analysis found groups backed by financier Michael Sacks spent up to $45 per vote on school board candidates who lost.",
+    "date": "2026-11-06",
+    "publisher": "WBEZ",
+    "title": "Political groups spent $12 million to defeat CTU candidates. One losing race cost $76 per vote.",
+    "url": "https://www.wbez.org/education/2026/11/06/chicago-school-board-ctu-teachers-union-spending",
+    "published": "2026-11-06T22:16:16Z",
+    "updated": "2026-11-06T22:16:16Z",
+    "gathered": "2026-11-06T23:24:15Z"
    },
    {
-    "h": "Chicago's arts budget stays flat",
-    "b": "The city's cultural affairs department would get about $62.5 million under Mayor Brandon Johnson's proposed 2027 budget, up less than 1%, disappointing advocates.",
-    "date": "2026-11-05",
-    "url": "https://www.wbez.org/city-hall/2026/11/05/chicago-dcase-culture-arts-spending-2027-budget-events",
-    "gathered": "2026-11-05T23:12:34Z"
-   },
-   {
-    "h": "Blue wave reaches red Indiana",
-    "b": "Rep. Frank Mrvan won reelection and Beau Bayh won Democrats' first statewide race in 14 years.",
-    "date": "2026-11-05",
-    "url": "https://www.wbez.org/government-politics/elections/2026/11/05/mrvan-election-indiana-statehouse-blue-wave-democrats",
-    "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "Landmark status sought for Vinci's Lake View home",
-    "b": "The commission weighs honoring the graystone of preservationist John Vinci, who championed Louis Sullivan's work.",
-    "date": "2026-11-05",
-    "url": "https://www.wbez.org/architecture/2026/11/05/landmark-status-lake-view-house-vinci-preservation-movement",
-    "gathered": "2026-11-05T15:42:19Z"
+    "h": "Chicago dog licenses hit an all-time low",
+    "b": "The city clerk's office issued only 4,100 licenses this year for an estimated 650,000 dogs, down from 8,000 last year.",
+    "date": "2026-11-06",
+    "publisher": "WBEZ",
+    "title": "Doggonit! City dog licensing hits an all-time low",
+    "url": "https://www.wbez.org/city-hall/2026/11/06/chicago-dog-licenses-all-time-low-city-clerk-anna-valencia",
+    "published": "2026-11-06T22:56:05Z",
+    "updated": "2026-11-06T22:56:05Z",
+    "gathered": "2026-11-06T23:24:15Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 46,
     "cond": "Mostly Cloudy",
-    "wind": "NW 9 mph",
-    "humidity": 61,
-    "obs": "6 Nov 13:53 pm CST"
+    "wind": "NE 6 mph",
+    "humidity": 63,
+    "obs": "6 Nov 16:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 47,
-     "text": "Partly sunny, with a high near 47. North northwest wind around 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly cloudy, with a low around 38. Northwest wind 10 to 15 mph. "
+     "text": "Partly cloudy, with a low around 38. Northwest wind 10 to 15 mph. "
     },
     {
      "name": "Saturday",
@@ -241,7 +206,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Mostly clear, with a low around 42."
+     "text": "Mostly clear, with a low around 42. West northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 60,
+     "text": "Mostly sunny, with a high near 60."
     }
    ]
   },
@@ -257,24 +228,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "Downtown 'Cultural Stadium' gets a leader",
-    "b": "Former Michigan state Rep. Donna Lasinski will lead the $2 million effort to turn underused Downtown spaces into arts venues.",
-    "date": "2026-11-05",
-    "url": "https://www.wbez.org/arts-culture/2026/11/05/chicago-cultural-stadium-leadership-donna-lasinski-funding-plan",
-    "gathered": "2026-11-05T23:12:34Z"
-   },
-   {
-    "h": "Soul Train Awards come home to Chicago",
-    "b": "Queen Latifah helped kick off festivities; the show tapes at the Harris Theater and airs Nov. 27.",
-    "date": "2026-11-05",
-    "url": "https://www.wbez.org/movies-tv/2026/11/05/soul-train-awards-queen-latifah-durand-bernarr-chicago-bet",
-    "gathered": "2026-11-05T17:16:56Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -285,24 +241,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 58,
     "cond": "Mostly Cloudy",
-    "wind": "N 5 mph",
-    "humidity": 35,
-    "obs": "6 Nov 11:58 am MST"
+    "wind": "NW 3 mph",
+    "humidity": 28,
+    "obs": "6 Nov 15:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 59,
-     "text": "Partly sunny, with a high near 59. North northeast wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly clear, with a low around 38. Light and variable wind becoming southwest around 5 mph after midnight. "
+     "text": "Mostly clear, with a low around 38. North wind around 5 mph becoming light and variable. "
     },
     {
      "name": "Saturday",
@@ -326,7 +276,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Clear, with a low around 40."
+     "text": "Clear, with a low around 40. Southwest wind 3 to 6 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 68,
+     "text": "Sunny, with a high near 68."
     }
    ]
   },
@@ -342,7 +298,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -352,62 +308,15 @@
    "short": "LA",
    "tz": "America/Los_Angeles"
   },
-  "local": [
-   {
-    "h": "Seawall approved to protect San Clemente rail line",
-    "b": "The Coastal Commission approved a quarter-mile seawall and new sand to shield the Pacific Surfliner tracks from erosion.",
-    "date": "2026-11-05",
-    "publisher": "LAist",
-    "title": "Coastal Commission approves seawall, sand for battered stretch of San Clemente",
-    "url": "https://laist.com/news/climate-environment/coastal-commission-approves-seawall-sand-for-battered-stretch-of-san-clemente",
-    "published": "2026-11-06T13:00:00Z",
-    "updated": "2026-11-06T13:00:10Z",
-    "gathered": "2026-11-06T14:19:55Z"
-   },
-   {
-    "h": "Marissa Roy wins LA city attorney race",
-    "b": "Opponent John McKinney appeared to concede Thursday as Roy held a lead of more than two to one.",
-    "date": "2026-11-05",
-    "publisher": "LAist",
-    "title": "Roy wins LA city attorney's race",
-    "url": "https://laist.com/news/politics/roy-wins-la-city-attorneys-race",
-    "published": "2026-11-05T23:53:50Z",
-    "updated": "2026-11-06T19:42:18Z",
-    "gathered": "2026-11-06T02:43:27Z"
-   },
-   {
-    "h": "Airbnb's $6M bet on LA races falls short",
-    "b": "The company spent more than $4.1 million backing Mayor Karen Bass and $2.1 million for city attorney candidate John McKinney. Bass conceded to Nithya Raman on Thursday.",
-    "date": "2026-11-05",
-    "url": "https://laist.com/news/politics/airbnb-poured-more-than-6m-into-the-la-mayoral-and-city-attorney-races-its-candidates-lost",
-    "gathered": "2026-11-05T23:12:34Z"
-   },
-   {
-    "h": "Nithya Raman defeats Karen Bass for LA mayor",
-    "b": "The councilmember and DSA member beat the incumbent with a message of hope for a city beset by crises.",
-    "date": "2026-11-05",
-    "publisher": "LAist",
-    "title": "Raman defeats Bass in race for LA mayor, ushering in new era of progressive politics",
-    "url": "https://laist.com/news/politics/raman-defeats-bass-in-race-for-la-mayor-ushering-in-new-era-of-progressive-politics",
-    "published": "2026-11-05T20:09:22Z",
-    "updated": "2026-11-06T06:03:53Z",
-    "gathered": "2026-11-05T22:11:50Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
     "temp": 81,
-    "wind": "SE 1 mph",
-    "humidity": 23,
-    "obs": "06 Nov 12:10 PM PST"
+    "wind": "NW 1 mph",
+    "humidity": 32,
+    "obs": "06 Nov 03:10 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 83,
-     "text": "Sunny, with a high near 83. North northeast wind around 5 mph becoming northwest. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -417,8 +326,8 @@
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 85,
-     "text": "Sunny, with a high near 85. North wind around 5 mph. "
+     "temp": 88,
+     "text": "Sunny, with a high near 88. North wind around 5 mph. "
     },
     {
      "name": "Saturday Night",
@@ -429,14 +338,20 @@
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 86,
-     "text": "Sunny, with a high near 86. North northeast wind around 5 mph becoming west northwest in the afternoon. "
+     "temp": 89,
+     "text": "Sunny, with a high near 89. North northeast wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 63,
      "text": "Mostly clear, with a low around 63."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 86,
+     "text": "Sunny, with a high near 86."
     }
    ]
   },
@@ -452,7 +367,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -465,17 +380,6 @@
     "published": "2026-11-06T13:00:00Z",
     "updated": "2026-11-06T16:50:09Z",
     "gathered": "2026-11-06T14:19:55Z"
-   },
-   {
-    "h": "Coyote is first mammal seen on 101 wildlife crossing",
-    "b": "Cameras caught a coyote twice on the Wallis Annenberg Wildlife Crossing in Agoura Hills, a month before its official opening.",
-    "date": "2026-11-05",
-    "publisher": "LAist",
-    "title": "Coyote becomes first mammal seen using 101 wildlife crossing: 'This is amazing'",
-    "url": "https://laist.com/news/climate-environment/coyote-becomes-first-mammal-seen-using-101-wildlife-crossing-this-is-amazing",
-    "published": "2026-11-06T00:57:06Z",
-    "updated": "2026-11-06T00:57:06Z",
-    "gathered": "2026-11-06T02:43:27Z"
    }
   ]
  },
@@ -487,24 +391,24 @@
   },
   "local": [
    {
-    "h": "Ex-rowing coach arrested in Bronx in Cape Cod case",
-    "b": "Guy Monseair, 57, faces child rape and assault charges over alleged incidents from 2008 to 2011, police said.",
-    "date": "2026-11-05",
+    "h": "Queens driver indicted in stroller crash that killed baby",
+    "b": "Prosecutors say Elvin Rivera ran a stop sign in Flushing on cocaine and THC and struck 1-year-old Justin Hu.",
+    "date": "2026-11-06",
     "publisher": "Gothamist",
-    "title": "Man arrested in NYC on accusations of sexual assault, rape on Cape Cod, officials said",
-    "url": "https://gothamist.com/news/man-arrested-in-nyc-on-accusations-of-sexual-assault-rape-on-cape-cod-officials-said",
-    "published": "2026-11-06T18:05:00Z",
-    "gathered": "2026-11-06T18:15:06Z"
+    "title": "Intoxicated Queens driver killed baby after running stop sign, indictment says",
+    "url": "https://gothamist.com/news/intoxicated-queens-driver-killed-baby-after-running-stop-sign-indictment-says",
+    "published": "2026-11-06T21:29:29Z",
+    "gathered": "2026-11-06T23:24:15Z"
    },
    {
-    "h": "Historic skeleton found in West Village backyard",
-    "b": "Workers at 79 Christopher St. found bones likely buried when the plot was a church cemetery in the mid-1800s. Police suspect no foul play.",
-    "date": "2026-11-05",
+    "h": "Penn Station plan could fund a new MSG venue",
+    "b": "Amtrak's overhaul would buy and demolish the Infosys Theater, and MSG says sale money could pay for a new venue.",
+    "date": "2026-11-06",
     "publisher": "Gothamist",
-    "title": "Skeletal remains found in backyard of West Village building, NYPD says",
-    "url": "https://gothamist.com/news/skeletal-remains-found-in-backyard-of-west-village-building-nypd-says",
-    "published": "2026-11-06T14:29:52Z",
-    "gathered": "2026-11-06T18:15:06Z"
+    "title": "Amtrak's Penn Station plan could funnel taxpayer money to new venue for James Dolan",
+    "url": "https://gothamist.com/news/amtraks-penn-station-plan-could-funnel-taxpayer-money-to-new-venue-for-james-dolan",
+    "published": "2026-11-06T21:34:00Z",
+    "gathered": "2026-11-06T23:24:15Z"
    },
    {
     "h": "Google, NYC schools clash over AI ban",
@@ -534,7 +438,7 @@
     "title": "Health aide, elderly man killed in East Harlem senior center shooting, per NYPD",
     "url": "https://gothamist.com/news/manhattan-shooting-kills-2-people-in-east-harlem-nypd-says",
     "published": "2026-11-06T12:50:00Z",
-    "updated": "2026-11-06T19:18:00Z",
+    "updated": "2026-11-06T23:14:00Z",
     "gathered": "2026-11-06T14:19:55Z"
    },
    {
@@ -546,102 +450,22 @@
     "url": "https://gothamist.com/news/south-bronx-east-new-york-lead-nyc-in-littering-and-panhandling-tickets-analysis-finds",
     "published": "2026-11-06T11:00:55Z",
     "gathered": "2026-11-06T11:21:08Z"
-   },
-   {
-    "h": "Ex-FBI agent charged in Brooklyn hit-and-run",
-    "b": "Prosecutors say Andrew Reyes hit a man in a Kensington crosswalk with his government car in February, left him unconscious on a bench and lied to investigators.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "Feds accuse former FBI agent of Brooklyn hit and run, leaving victim on a bench",
-    "url": "https://gothamist.com/news/feds-accuse-former-fbi-agent-of-brooklyn-hit-and-run-leaving-victim-on-a-bench",
-    "published": "2026-11-05T19:39:31Z",
-    "gathered": "2026-11-05T23:12:34Z"
-   },
-   {
-    "h": "MTA chair sees better days with Democratic Congress",
-    "b": "Janno Lieber said he expects more federal transit funding after the Trump administration repeatedly withheld money from New York and the MTA.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "Better days ahead for NYC commuters with Democrats in control of Congress, MTA chair says",
-    "url": "https://gothamist.com/news/better-days-ahead-for-nyc-commuters-with-democrats-in-control-of-congress-mta-chair-says",
-    "published": "2026-11-05T22:59:00Z",
-    "gathered": "2026-11-05T23:12:34Z"
-   },
-   {
-    "h": "Ransomware attack hits Queens Public Library",
-    "b": "Branches are open, but the website, computers, checkout machines and Wi-Fi are down.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "Queens Public Library online system downed by ransomware hack, officials said",
-    "url": "https://gothamist.com/news/queens-public-library-online-system-downed-by-ransomware-hack-officials-said",
-    "published": "2026-11-05T19:40:00Z",
-    "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "Lithium-ion battery found at Sunset Park fire",
-    "b": "The discovery comes a week after an e-bike fire in Mott Haven killed four people.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "Battery found at deadly Sunset Park fire days after similar blaze in Bronx",
-    "url": "https://gothamist.com/news/battery-found-at-deadly-sunset-park-fire-days-after-similar-blaze-in-bronx",
-    "published": "2026-11-05T18:32:00Z",
-    "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "Elizabeth voters restore $20 rent-increase cap",
-    "b": "The measure keeps the cap on future rent increases for at least a year.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "$20 rent-control cap coming to Elizabeth, New Jersey",
-    "url": "https://gothamist.com/news/20-rent-control-cap-coming-to-elizabeth-new-jersey",
-    "published": "2026-11-05T20:46:04Z",
-    "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "Sunset Park fire kills six",
-    "b": "Seven others were hurt in the blaze at a two-story home on 58th Street; over 200 responders fought it.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "Brooklyn fire kills 6 people, injures 9 others in Sunset Park, officials said",
-    "url": "https://gothamist.com/news/brooklyn-fire-kills-6-people-injures-7-others-in-sunset-park",
-    "published": "2026-11-05T20:01:00Z",
-    "gathered": "2026-11-05T15:42:19Z"
-   },
-   {
-    "h": "Street vendor tickets hit new highs",
-    "b": "Parks enforcement tickets for unlawful vending rose 43% to 2,237, despite Mamdani's pledge of support.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "Mamdani pledged support for NYC street vendors. Now they’re facing a crackdown.",
-    "url": "https://gothamist.com/news/mamdani-pledged-support-for-nyc-street-vendors-now-theyre-facing-a-crackdown",
-    "published": "2026-11-05T11:30:00Z",
-    "gathered": "2026-11-05T15:42:19Z"
-   },
-   {
-    "h": "Sanitation worker charged in Brooklyn crash death",
-    "b": "Police say he struck and killed Siobhan Lynch, 30, while driving a garbage truck on Oct. 28.",
-    "date": "2026-11-05",
-    "publisher": "Gothamist",
-    "title": "DSNY worker arrested for killing a woman in Brooklyn while driving a garbage truck",
-    "url": "https://gothamist.com/news/dsny-worker-arrested-for-killing-a-woman-in-brooklyn-while-driving-a-garbage-truck",
-    "published": "2026-11-05T13:18:32Z",
-    "gathered": "2026-11-05T15:42:19Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "cond": "Light Rain",
+    "temp": 61,
+    "cond": "Mostly Cloudy",
     "wind": "Calm",
-    "humidity": 90,
-    "obs": "6 Nov 14:51 pm EST"
+    "humidity": 93,
+    "obs": "6 Nov 17:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "A 30 percent chance of rain, mainly before 7pm.  Cloudy during the early evening, then gradual clearing, with a low around 57. West wind 3 to 6 mph. "
+     "text": "A 40 percent chance of rain, mainly before 7pm.  Cloudy during the early evening, then gradual clearing, with a low around 57. West wind 3 to 6 mph. "
     },
     {
      "name": "Saturday",
@@ -665,7 +489,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51."
+     "text": "Mostly clear, with a low around 51. West wind 13 to 16 mph. "
     },
     {
      "name": "Monday",
@@ -687,7 +511,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -745,34 +569,6 @@
     "date": "2026-11-06",
     "url": "https://www.thelocal.fr/20261106/what-to-expect-for-the-paris-demo-on-november-7th",
     "gathered": "2026-11-06T11:21:08Z"
-   },
-   {
-    "h": "Workers strike across France over wages",
-    "b": "More than 250,000 marched in 73 cities against the rising cost of living, the CGT union said.",
-    "date": "2026-11-05",
-    "url": "https://www.thelocal.fr/20261105/france-workers-strike-and-march-for-dignified-wage",
-    "gathered": "2026-11-05T15:42:19Z"
-   },
-   {
-    "h": "Yellow vests plan more protests Nov. 7",
-    "b": "Saturday cost-of-living protests have drawn hundreds of thousands since Oct. 17, under tight security.",
-    "date": "2026-11-05",
-    "url": "https://www.thelocal.fr/20261105/french-protests-what-to-expect-on-november-7th",
-    "gathered": "2026-11-05T11:14:07Z"
-   },
-   {
-    "h": "Four new airlines get Ryanair's Orly slots",
-    "b": "Services to Germany, Lebanon, Moldova and Morocco are set to begin between April and October 2027.",
-    "date": "2026-11-05",
-    "url": "https://www.thelocal.fr/20261105/four-new-airlines-to-take-over-ryanairs-slots-at-paris-orly-airport-in-summer-2027",
-    "gathered": "2026-11-05T11:14:07Z"
-   },
-   {
-    "h": "Southern France on alert for heavy rain, floods",
-    "b": "Hérault and Gard joined Corsica under orange alerts from 10am Thursday, Météo-France said.",
-    "date": "2026-11-05",
-    "url": "https://www.thelocal.fr/20261105/parts-of-southern-france-put-on-alert-for-heavy-rain-and-floods",
-    "gathered": "2026-11-05T08:12:20Z"
    }
   ],
   "weather": {
@@ -791,7 +587,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "goodnews": [
    {
     "h": "France's new TGV-M trains finally launch",
@@ -812,65 +608,16 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [
-   {
-    "h": "Seattle rallies for trans girls after sports ban",
-    "b": "Advocates marched from Westlake Park Thursday night after voters approved a measure restricting trans girls from girls' school sports.",
-    "date": "2026-11-05",
-    "url": "https://www.kuow.org/governing/2026-11-06/seattleites-rally-in-support-of-trans-girls-after-state-voters-approve-sports-ban",
-    "gathered": "2026-11-06T08:13:11Z"
-   },
-   {
-    "h": "Hood Canal rename paused after tribal objections",
-    "b": "A state naming panel halted the proposal after Skokomish leaders said the tribe should weigh in on the change.",
-    "date": "2026-11-05",
-    "url": "https://www.kuow.org/environment/2026-11-05/effort-to-rename-hood-canal-hits-a-fjordblock-amid-tribal-opposition",
-    "gathered": "2026-11-06T02:43:27Z"
-   },
-   {
-    "h": "Group weighs suit over trans sports ban",
-    "b": "Gender Justice League says it may challenge, on privacy grounds, the ballot measure banning transgender girls from girls' school sports.",
-    "date": "2026-11-05",
-    "url": "https://www.kuow.org/elections/2026-11-05/lawsuits-likely-over-washingtons-ban-on-trans-girls-in-sports",
-    "gathered": "2026-11-06T02:43:27Z"
-   },
-   {
-    "h": "Washington voters keep millionaires tax",
-    "b": "Nearly 58% rejected repealing the high-earner income tax, and the repeal campaign conceded Thursday.",
-    "date": "2026-11-05",
-    "url": "https://www.kuow.org/elections/2026-11-05/wa-millionaires-tax-supporters-claim-victory-as-repeal-effort-concedes",
-    "gathered": "2026-11-06T02:43:27Z"
-   },
-   {
-    "h": "Spokane County deputy killed in firefight",
-    "b": "A second deputy wounded at a home in Spangle is not expected to survive.",
-    "date": "2026-11-05",
-    "url": "https://www.kuow.org/crime/2026-11-05/1-deputy-dead-another-not-expected-to-survive-after-firefight-with-suspect-at-spokane-area-home",
-    "gathered": "2026-11-05T22:11:50Z"
-   },
-   {
-    "h": "Seattle schools tighten access to YouTube, AI",
-    "b": "The district is expanding limits on classroom screen time and personal devices.",
-    "date": "2026-11-05",
-    "url": "https://www.kuow.org/education/2026-11-05/seattle-public-schools-tightens-student-access-to-youtube-minecraft-and-ai",
-    "gathered": "2026-11-05T22:11:50Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 55,
     "cond": "Rain",
-    "wind": "Calm",
-    "humidity": 81,
-    "obs": "06 Nov 12:05 PM PST"
+    "wind": "S 11 mph",
+    "humidity": 87,
+    "obs": "06 Nov 03:00 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Rain, mainly before 5pm.  High near 56. South wind around 10 mph.  Chance of precipitation is 100%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -900,6 +647,12 @@
      "kind": "low",
      "temp": 43,
      "text": "Mostly cloudy, with a low around 43."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 55,
+     "text": "Rain likely, mainly after 4pm.  Mostly cloudy, with a high near 55. Chance of precipitation is 60%."
     }
    ]
   },
@@ -915,8 +668,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-06T23:11:00Z",
+  "updatedAt": "2026-11-07T02:11:00Z",
   "slug": "seattle-wa",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Elliott Bay Book Company's Rick Simonson marks 50 years",
+    "b": "The longtime bookseller has worked at the Seattle store for half a century and is full of stories.",
+    "date": "2026-11-06",
+    "publisher": "KUOW",
+    "title": "Seattle's Elliott Bay Book Company celebrates 50 years with Rick Simonson",
+    "url": "https://www.kuow.org/2026-11-06/seattle-elliott-bay-book-company-celebrates-50-years-with-rick-simonson",
+    "published": "2026-11-06T21:50:41Z",
+    "updated": "2026-11-06T21:55:11Z",
+    "gathered": "2026-11-06T23:24:15Z"
+   }
+  ]
  }
 ]
