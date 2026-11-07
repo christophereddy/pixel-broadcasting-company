@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T08:12:00Z",
+ "updatedAt": "2026-11-07T11:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "US sanctions eight Canadian exchange firms over Iran",
    "b": "The Treasury says the Ontario and British Columbia businesses helped Iran evade sanctions, some by converting currency into crypto.",
    "date": "2026-11-07",
-   "publisher": "Al Jazeera",
-   "title": "US Treasury sanctions eight Canadian money exchange firms over Iran ties",
    "url": "https://www.aljazeera.com/economy/2026/11/7/us-treasury-sanctions-eight-canadian-money-exchange-firms-over-iran-ties",
    "gathered": "2026-11-07T05:14:59Z"
   },
@@ -20,8 +18,6 @@
    "b": "'We do minor strikes,' Trump said, after Iranian media reported two missile strikes on the Hormuz island and Iran said it downed a US drone.",
    "date": "2026-11-07",
    "place": "Qeshm Island, Iran",
-   "publisher": "Al Jazeera",
-   "title": "Trump confirms new US strikes on Iran’s Qeshm Island",
    "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
    "gathered": "2026-11-07T05:14:59Z"
   },
@@ -47,16 +43,26 @@
    "gathered": "2026-11-06T11:21:08Z"
   },
   {
-   "h": "Qatar urges US and Iran to reach a peace deal",
+   "h": "IRGC says it could change 'nuclear doctrine'",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-07",
    "publisher": "Al Jazeera",
-   "title": "Qatar urges US, Iran deal to end war, says don’t wait for ‘perfect moment’",
+   "title": "IRGC warns ready to change ‘nuclear doctrine’ if ordered to by the state",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal",
    "gathered": "2026-11-07T03:02:14Z"
   }
  ],
  "national": [
+  {
+   "h": "Houston mayor curbs police cooperation with ICE",
+   "b": "Under Mayor John Whitmire's order, police will contact ICE only when someone is arrested for a jailable offense. 'Elections matter,' he said.",
+   "date": "2026-11-06",
+   "place": "Houston, Texas",
+   "publisher": "Al Jazeera",
+   "title": "Houston mayor curbs cooperation of US city’s police with ICE",
+   "url": "https://www.aljazeera.com/news/2026/11/7/houston-mayor-curbs-cooperation-of-us-citys-police-with-ice",
+   "gathered": "2026-11-07T10:35:19Z"
+  },
   {
    "h": "US measles cases top 5,000, most in 35 years",
    "b": "The CDC count is more than double 2025's, and children and teens make up about 59% of cases as kindergarten vaccination rates fall.",
@@ -84,6 +90,15 @@
   }
  ],
  "politics": [
+  {
+   "h": "El-Sayed launches 'Habibi' PAC",
+   "b": "The Michigan senator-elect registered a leadership PAC named for the term he used in his victory speech.",
+   "date": "2026-11-06",
+   "publisher": "Al Jazeera",
+   "title": "US Senator Abdul El-Sayed launches ‘Habibi’ political action committee",
+   "url": "https://www.aljazeera.com/news/2026/11/7/el-sayed-launches-habibi-pac-days-after-historic-michigan-senate-win",
+   "gathered": "2026-11-07T10:35:19Z"
+  },
   {
    "h": "Arizona Democrats win first trifecta since 1966",
    "b": "Democrats took both legislative chambers and kept the governor's office. Gov. Katie Hobbs vetoed more than 540 Republican bills in her first term.",
@@ -154,13 +169,44 @@
  ],
  "international": [
   {
+   "h": "Haiti's prime minister hails killing of gang leader",
+   "b": "Gang leader Saintil died after being shot in a police operation. 'One less gang leader,' Prime Minister Alix Didier Fils-Aime wrote.",
+   "date": "2026-11-07",
+   "place": "Port-au-Prince",
+   "tz": "America/Port-au-Prince",
+   "publisher": "Al Jazeera",
+   "title": "‘One less gang leader’: Haiti’s prime minister celebrates police operation",
+   "url": "https://www.aljazeera.com/news/2026/11/7/one-less-gang-leader-haitis-prime-minister-celebrates-police-operation",
+   "gathered": "2026-11-07T10:35:19Z"
+  },
+  {
+   "h": "Russian missiles hit Kyiv, injuring two",
+   "b": "Debris struck an apartment building and a building housing a kindergarten was damaged, city officials said.",
+   "date": "2026-11-07",
+   "place": "Kyiv",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Russia launches missile attack on Kyiv, injuring residents",
+   "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents",
+   "gathered": "2026-11-07T10:35:19Z"
+  },
+  {
+   "h": "New Zealand election too close to call",
+   "b": "Early counts show the two main parties neck and neck, with neither likely to win a majority. Final results are due Nov. 27.",
+   "date": "2026-11-07",
+   "place": "Wellington",
+   "tz": "Pacific/Auckland",
+   "publisher": "Al Jazeera",
+   "title": "Two main parties neck and neck after New Zealand vote, early count",
+   "url": "https://www.aljazeera.com/news/2026/11/7/governing-party-leads-in-new-zealands-knife-edge-vote-early-results",
+   "gathered": "2026-11-07T10:35:19Z"
+  },
+  {
    "h": "EU prosecutors probe Spain rail funds after deadly crash",
    "b": "Investigators searched Spain's rail infrastructure and safety agencies over possible fraud involving EU money for the Madrid-Seville high-speed line.",
    "date": "2026-11-06",
    "place": "Madrid",
    "tz": "Europe/Madrid",
-   "publisher": "Al Jazeera",
-   "title": "EU prosecutor office investigates fatal train crash in Spain",
    "url": "https://www.aljazeera.com/news/2026/11/7/eu-prosecutor-office-investigates-fatal-train-crash-in-spain",
    "gathered": "2026-11-07T03:02:14Z"
   },
@@ -188,8 +234,6 @@
    "date": "2026-11-06",
    "place": "Asuncion",
    "tz": "America/Asuncion",
-   "publisher": "Al Jazeera",
-   "title": "Paraguay’s Santiago Pena under arrest, new president Pedro Alliana sworn in",
    "url": "https://www.aljazeera.com/news/2026/11/7/paraguays-santiago-pena-under-arrest-new-president-pedro-alliana-sworn-in",
    "gathered": "2026-11-07T03:02:14Z"
   },
@@ -257,6 +301,15 @@
  ],
  "science": [
   {
+   "h": "Pakistani astronaut to join China's space station",
+   "b": "China says a Pakistani astronaut will fly on its next station mission, expected by year's end.",
+   "date": "2026-11-07",
+   "publisher": "Al Jazeera",
+   "title": "Pakistani astronaut to join China’s next space station mission",
+   "url": "https://www.aljazeera.com/news/2026/11/7/pakistani-astronaut-to-join-chinas-next-space-station-mission",
+   "gathered": "2026-11-07T10:35:19Z"
+  },
+  {
    "h": "Tomb finds point to cannabis high 2,800 years ago",
    "b": "Seeds and hair from a Siberian tomb suggest psychoactive cannabis use at least 300 years earlier than known use in China.",
    "date": "2026-11-06",
@@ -272,8 +325,6 @@
    "h": "Texas Tech's Okechukwu is tallest in women's college hoops",
    "b": "The 7-foot-1 center from Nigeria had 6 points, 10 rebounds and 3 blocks in her debut, the first 7-footer to play NCAA women's basketball.",
    "date": "2026-11-06",
-   "publisher": "CBS Sports",
-   "title": "Meet Texas Tech's Stephanie Okechukwu, the tallest player in women's college basketball history",
    "url": "https://www.cbssports.com/womens-college-basketball/news/stephanie-okechukwu-texas-tech-tallest-player-womens-college-basketball-history/",
    "gathered": "2026-11-06T23:24:15Z"
   },
@@ -381,48 +432,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 60,
-   "cond": "Light Rain Fog/Mist",
-   "wind": "Calm",
-   "humidity": 96,
-   "obs": "6 Nov 23:51 pm EST"
+   "temp": 56,
+   "cond": "Fair",
+   "wind": "W 6 mph",
+   "humidity": 87,
+   "obs": "7 Nov 04:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 56,
-    "text": "Partly cloudy, with a low around 56. West wind around 6 mph. "
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
-    "temp": 62,
-    "text": "Sunny, with a high near 62. West wind 8 to 13 mph. "
+    "temp": 63,
+    "text": "Mostly sunny, with a high near 63. West wind 7 to 16 mph. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly clear, with a low around 51. West wind 13 to 15 mph. "
+    "temp": 48,
+    "text": "Partly cloudy, with a low around 48. West wind around 15 mph, with gusts as high as 25 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 61,
-    "text": "Sunny, with a high near 61. West wind 13 to 15 mph. "
+    "temp": 62,
+    "text": "Sunny, with a high near 62. West wind 10 to 16 mph, with gusts as high as 26 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly clear, with a low around 51. West wind 13 to 16 mph. "
+    "temp": 50,
+    "text": "Mostly clear, with a low around 50. West wind 10 to 13 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
-    "temp": 60,
-    "text": "Mostly sunny, with a high near 60. Breezy. "
+    "temp": 59,
+    "text": "Mostly sunny, with a high near 59. Northwest wind 11 to 18 mph, with gusts as high as 29 mph. "
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 48,
+    "text": "Mostly clear, with a low around 48."
    }
   ]
  },
