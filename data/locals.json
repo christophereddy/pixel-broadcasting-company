@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Fair",
-    "wind": "NW 12 mph",
-    "humidity": 86,
-    "obs": "7 Nov 04:52 am EST"
+    "temp": 48,
+    "cond": "A Few Clouds",
+    "wind": "NW 14 mph",
+    "humidity": 89,
+    "obs": "7 Nov 05:52 am EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -97,21 +97,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Rain Fog/Mist",
-    "wind": "N 7 mph",
-    "humidity": 96,
-    "obs": "7 Nov 04:54 am EST"
+    "temp": 56,
+    "cond": "Overcast",
+    "wind": "N 8 mph",
+    "humidity": 97,
+    "obs": "7 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Showers, mainly before 11am.  Patchy fog before 1pm. High near 63. North wind 5 to 7 mph becoming light and variable  in the afternoon.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers, mainly before 11am.  Patchy fog before 1pm. High near 63. Light and variable wind becoming north 5 to 7 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Showers likely, mainly after midnight.  Patchy fog.  Otherwise, cloudy, with a low around 46. Light northwest wind becoming west 5 to 10 mph after midnight.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -198,11 +198,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 36,
+    "temp": 35,
     "cond": "Fair",
-    "wind": "NW 6 mph",
-    "humidity": 79,
-    "obs": "7 Nov 03:53 am CST"
+    "wind": "W 7 mph",
+    "humidity": 78,
+    "obs": "7 Nov 04:53 am CST"
    },
    "periods": [
     {
@@ -255,7 +255,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -309,27 +309,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 37,
     "cond": "Fair",
-    "wind": "S 9 mph",
-    "humidity": 64,
-    "obs": "7 Nov 02:58 am MST"
+    "wind": "S 8 mph",
+    "humidity": 68,
+    "obs": "7 Nov 03:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 37,
-     "text": "Clear, with a low around 37. Southwest wind 3 to 5 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. South southwest wind around 5 mph becoming light and variable  in the afternoon. "
+     "text": "Sunny, with a high near 65. Southwest wind around 5 mph becoming light and variable  in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 38,
      "text": "Mostly clear, with a low around 38. Light and variable wind becoming southwest around 5 mph after midnight. "
@@ -350,7 +344,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69."
+     "text": "Sunny, with a high near 69. South southwest wind 5 to 7 mph becoming calm. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39."
     }
    ]
   },
@@ -366,7 +366,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -436,17 +436,11 @@
   "weather": {
    "now": {
     "temp": 58,
-    "wind": "NW 3 mph",
-    "humidity": 52,
-    "obs": "07 Nov 02:25 AM PST"
+    "wind": "NW 2 mph",
+    "humidity": 51,
+    "obs": "07 Nov 02:50 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Mostly clear, with a low around 59. North wind around 5 mph. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -476,6 +470,12 @@
      "kind": "high",
      "temp": 86,
      "text": "Sunny, with a high near 86."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 62,
+     "text": "Mostly clear, with a low around 62."
     }
    ]
   },
@@ -491,7 +491,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -587,11 +587,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 55,
     "cond": "Fair",
-    "wind": "W 6 mph",
-    "humidity": 87,
-    "obs": "7 Nov 04:51 am EST"
+    "wind": "W 5 mph",
+    "humidity": 80,
+    "obs": "7 Nov 05:51 am EST"
    },
    "periods": [
     {
@@ -644,7 +644,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -723,17 +723,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "goodnews": [
    {
     "h": "France's new TGV-M trains finally launch",
     "b": "After years of delays, the double-decker trains began running Paris to Marseille Friday, with 20% more seats and 20% lower energy use.",
     "date": "2026-11-06",
-    "publisher": "The Local France",
-    "title": "Bar carriage, bike spaces and phone holder: Inside France's new TGV-M trains",
     "url": "https://www.thelocal.fr/20261106/bar-carriage-bike-spaces-and-phone-holder-inside-frances-new-tgv-m-trains",
-    "published": "2026-11-06T14:48:24Z",
-    "updated": "2026-11-06T14:48:25Z",
     "gathered": "2026-11-06T18:15:06Z"
    }
   ]
@@ -766,19 +762,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Partly Cloudy",
+    "temp": 52,
+    "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 93,
-    "obs": "07 Nov 02:20 AM PST"
+    "humidity": 96,
+    "obs": "07 Nov 02:53 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 50,
-     "text": "Mostly cloudy, with a low around 50. Calm wind. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -808,6 +798,12 @@
      "kind": "high",
      "temp": 54,
      "text": "A 40 percent chance of rain after 10am.  Mostly cloudy, with a high near 54."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 49,
+     "text": "Rain.  Low around 49. Chance of precipitation is 90%."
     }
    ]
   },
@@ -823,7 +819,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T11:12:00Z",
+  "updatedAt": "2026-11-07T14:13:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
