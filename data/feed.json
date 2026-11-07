@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T02:12:00Z",
+ "updatedAt": "2026-11-07T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -28,16 +28,25 @@
    "gathered": "2026-11-06T11:21:08Z"
   },
   {
-   "h": "Trump says US is talking to Tehran's representatives",
+   "h": "Qatar urges US and Iran to reach a peace deal",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-06",
+   "date": "2026-11-07",
    "publisher": "Al Jazeera",
-   "title": "Trump says US talking to Tehran’s representatives, says ‘doing very well’",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
-   "gathered": "2026-11-06T02:43:27Z"
+   "title": "Qatar urges US, Iran deal to end war, says don’t wait for ‘perfect moment’",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal",
+   "gathered": "2026-11-07T03:02:14Z"
   }
  ],
  "national": [
+  {
+   "h": "US measles cases top 5,000, most in 35 years",
+   "b": "The CDC count is more than double 2025's, and children and teens make up about 59% of cases as kindergarten vaccination rates fall.",
+   "date": "2026-11-06",
+   "publisher": "Al Jazeera",
+   "title": "CDC reports more than 5,000 measles cases, highest number in 35 years",
+   "url": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years",
+   "gathered": "2026-11-07T03:02:14Z"
+  },
   {
    "h": "Cornell faculty vote no confidence in leaders",
    "b": "The Faculty Senate passed the symbolic resolution 75-50 after a former student sued, saying she was gang raped at a fraternity party in 2024.",
@@ -73,7 +82,10 @@
    "h": "Sen. Chris Murphy leaves hospital after stroke",
    "b": "The Connecticut Democrat will miss several weeks of Senate votes while he recovers in a rehabilitation facility.",
    "date": "2026-11-06",
+   "publisher": "PBS NewsHour",
+   "title": "Connecticut Sen. Chris Murphy released from hospital after stroke",
    "url": "https://www.pbs.org/newshour/politics/connecticut-sen-chris-murphy-released-from-hospital-after-stroke",
+   "published": "2026-11-06T19:52:13Z",
    "gathered": "2026-11-06T20:12:47Z"
   },
   {
@@ -98,10 +110,7 @@
    "h": "Stephen Miller named White House chief of staff",
    "b": "Trump said Miller will replace Susie Wiles days after Republicans lost Congress. Wiles will keep working for his political organization.",
    "date": "2026-11-06",
-   "publisher": "PBS NewsHour",
-   "title": "Trump names Stephen Miller his next chief of staff after major Republican midterm losses",
    "url": "https://www.pbs.org/newshour/politics/trump-names-stephen-miller-his-next-chief-of-staff-after-major-republican-midterm-losses",
-   "published": "2026-11-06T19:17:44Z",
    "gathered": "2026-11-06T20:12:47Z"
   },
   {
@@ -132,13 +141,22 @@
  ],
  "international": [
   {
+   "h": "EU prosecutors probe Spain rail funds after deadly crash",
+   "b": "Investigators searched Spain's rail infrastructure and safety agencies over possible fraud involving EU money for the Madrid-Seville high-speed line.",
+   "date": "2026-11-06",
+   "place": "Madrid",
+   "tz": "Europe/Madrid",
+   "publisher": "Al Jazeera",
+   "title": "EU prosecutor office investigates fatal train crash in Spain",
+   "url": "https://www.aljazeera.com/news/2026/11/7/eu-prosecutor-office-investigates-fatal-train-crash-in-spain",
+   "gathered": "2026-11-07T03:02:14Z"
+  },
+  {
    "h": "Protesters occupy Amsterdam Microsoft data centre site",
    "b": "Demonstrators broke into the construction site trying to stop the project, and police were removing them by late afternoon.",
    "date": "2026-11-06",
    "place": "Amsterdam",
    "tz": "Europe/Amsterdam",
-   "publisher": "Al Jazeera",
-   "title": "Protesters break into Microsoft data centre site in Amsterdam",
    "url": "https://www.aljazeera.com/news/2026/11/6/protesters-break-into-microsoft-data-centre-site-in-amsterdam",
    "gathered": "2026-11-06T23:24:15Z"
   },
@@ -152,15 +170,15 @@
    "gathered": "2026-11-06T20:12:47Z"
   },
   {
-   "h": "Paraguay presses impeachment of Pena",
-   "b": "Lawmakers filed charges against the president despite his resignation, after a 78-0 lower house vote amid a bank collapse crisis.",
+   "h": "Paraguay's Senate removes President Pena",
+   "b": "Senators voted 44-0 to remove Santiago Pena amid the collapse of Ueno Bank, and Vice President Pedro Alliana was sworn in.",
    "date": "2026-11-06",
    "place": "Asuncion",
    "tz": "America/Asuncion",
    "publisher": "Al Jazeera",
-   "title": "Paraguay resumes Pena impeachment proceedings as financial crisis deepens",
-   "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens",
-   "gathered": "2026-11-06T20:12:47Z"
+   "title": "Paraguay’s Santiago Pena under arrest, new president Pedro Alliana sworn in",
+   "url": "https://www.aljazeera.com/news/2026/11/7/paraguays-santiago-pena-under-arrest-new-president-pedro-alliana-sworn-in",
+   "gathered": "2026-11-07T03:02:14Z"
   },
   {
    "h": "Strikes on Taiz market kill civilians",
@@ -168,8 +186,6 @@
    "date": "2026-11-06",
    "place": "Taiz",
    "tz": "Asia/Aden",
-   "publisher": "Al Jazeera",
-   "title": "Yemeni gov’t forces, Houthis trade blame for deadly strikes on Taiz market",
    "url": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market",
    "gathered": "2026-11-06T20:12:47Z"
   },
@@ -215,8 +231,6 @@
    "h": "US urges China to honour Busan trade deal",
    "b": "The Treasury announced talks on the deal in which Trump and Xi agreed to ease tariffs and tech restrictions. China says it may buy more US farm goods.",
    "date": "2026-11-06",
-   "publisher": "Al Jazeera",
-   "title": "US urges China to honour Busan trade deal commitments",
    "url": "https://www.aljazeera.com/economy/2026/11/6/us-urges-china-to-honour-busan-trade-deal-commitments",
    "gathered": "2026-11-06T23:24:15Z"
   },
@@ -282,6 +296,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Woman found stabbed to death in Flushing building",
+   "b": "Police found her unresponsive Friday afternoon. No arrests have been made and she has not been identified.",
+   "date": "2026-11-06",
+   "publisher": "Gothamist",
+   "title": "Person found dead with stab wounds in Queens building, NYPD says",
+   "url": "https://gothamist.com/news/person-found-dead-with-multiple-stab-wounds-in-queens-building-nypd-says",
+   "published": "2026-11-07T01:34:00Z",
+   "gathered": "2026-11-07T03:02:14Z"
+  },
+  {
    "h": "Queens driver indicted in stroller crash that killed baby",
    "b": "Prosecutors say Elvin Rivera ran a stop sign in Flushing on cocaine and THC and struck 1-year-old Justin Hu.",
    "date": "2026-11-06",
@@ -328,8 +352,7 @@
    "publisher": "Gothamist",
    "title": "Health aide, elderly man killed in East Harlem senior center shooting, per NYPD",
    "url": "https://gothamist.com/news/manhattan-shooting-kills-2-people-in-east-harlem-nypd-says",
-   "published": "2026-11-06T12:50:00Z",
-   "updated": "2026-11-06T23:14:00Z",
+   "published": "2026-11-06T23:14:00Z",
    "gathered": "2026-11-06T14:19:55Z"
   },
   {
@@ -347,16 +370,16 @@
   "now": {
    "temp": 61,
    "cond": "Mostly Cloudy",
-   "wind": "Calm",
+   "wind": "W 3 mph",
    "humidity": 93,
-   "obs": "6 Nov 17:51 pm EST"
+   "obs": "6 Nov 21:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 57,
-    "text": "A 40 percent chance of rain, mainly before 7pm.  Cloudy during the early evening, then gradual clearing, with a low around 57. West wind 3 to 6 mph. "
+    "temp": 56,
+    "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 56. West wind around 6 mph. "
    },
    {
     "name": "Saturday",
