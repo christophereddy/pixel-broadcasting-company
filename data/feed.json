@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-07T14:13:00Z",
+ "updatedAt": "2026-11-07T17:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "IRGC says weapons production moved underground",
+   "b": "A spokesman said missile and drone lines were shifted to underground sites, with an 'underground missile city' set to be unveiled.",
+   "date": "2026-11-07",
+   "publisher": "Al Jazeera",
+   "title": "Iran’s IRGC says building underground sites for weapons production, storage",
+   "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
   {
    "h": "US sanctions eight Canadian exchange firms over Iran",
    "b": "The Treasury says the Ontario and British Columbia businesses helped Iran evade sanctions, some by converting currency into crypto.",
@@ -43,11 +52,11 @@
    "gathered": "2026-11-06T11:21:08Z"
   },
   {
-   "h": "IRGC says it could change 'nuclear doctrine'",
+   "h": "Tanker hit in Hormuz as Iraq warns of wider war",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-07",
    "publisher": "Al Jazeera",
-   "title": "IRGC warns ready to change ‘nuclear doctrine’ if ordered to by the state",
+   "title": "Tanker hit in Hormuz Strait; Iraqi FM warns of potential war in the region",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/7/iran-war-live-qatar-says-us-iran-should-not-wait-to-reach-a-peace-deal",
    "gathered": "2026-11-07T03:02:14Z"
   }
@@ -58,8 +67,6 @@
    "b": "Under Mayor John Whitmire's order, police will contact ICE only when someone is arrested for a jailable offense. 'Elections matter,' he said.",
    "date": "2026-11-06",
    "place": "Houston, Texas",
-   "publisher": "Al Jazeera",
-   "title": "Houston mayor curbs cooperation of US city’s police with ICE",
    "url": "https://www.aljazeera.com/news/2026/11/7/houston-mayor-curbs-cooperation-of-us-citys-police-with-ice",
    "gathered": "2026-11-07T10:35:19Z"
   },
@@ -91,11 +98,30 @@
  ],
  "politics": [
   {
+   "h": "Texas vouchers could be 'unrecognizable' after Democratic wins",
+   "b": "Democrats won back the Texas House for the first time in 24 years, and some say Gov. Greg Abbott's voucher push turned off rural voters.",
+   "date": "2026-11-07",
+   "place": "Texas",
+   "publisher": "ProPublica",
+   "title": "Texas’ School Voucher Program Could Be “Unrecognizable, If Not Extinct,” Says Democratic Lawmaker",
+   "url": "https://www.propublica.org/article/texas-school-vouchers-gina-hinojosa",
+   "published": "2026-11-07T11:00:00Z",
+   "updated": "2026-11-07T11:00:12Z",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
+  {
+   "h": "Petition urges Democrats to pick a speaker other than Jeffries",
+   "b": "Nearly 980,000 people have signed, though Hakeem Jeffries is poised to become House speaker after the Democratic wave.",
+   "date": "2026-11-07",
+   "publisher": "Al Jazeera",
+   "title": "Who is Hakeem Jeffries, the Democrat poised to become House speaker?",
+   "url": "https://www.aljazeera.com/news/2026/11/7/who-is-hakeem-jeffries-the-democrat-poised-to-become-house-speaker",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
+  {
    "h": "Voters reject data centres in nearly every ballot measure",
    "b": "Of 41 data centre measures on Tuesday's ballots, voters are on track to reject or limit development in all but one, a monitoring project says.",
    "date": "2026-11-07",
-   "publisher": "Al Jazeera",
-   "title": "How the US midterm elections reflected resistance to data centres",
    "url": "https://www.aljazeera.com/economy/2026/11/7/how-the-us-midterm-elections-reflected-resistance-to-data-centres",
    "gathered": "2026-11-07T11:12:23Z"
   },
@@ -103,8 +129,6 @@
    "h": "El-Sayed launches 'Habibi' PAC",
    "b": "The Michigan senator-elect registered a leadership PAC named for the term he used in his victory speech.",
    "date": "2026-11-06",
-   "publisher": "Al Jazeera",
-   "title": "US Senator Abdul El-Sayed launches ‘Habibi’ political action committee",
    "url": "https://www.aljazeera.com/news/2026/11/7/el-sayed-launches-habibi-pac-days-after-historic-michigan-senate-win",
    "gathered": "2026-11-07T10:35:19Z"
   },
@@ -123,10 +147,7 @@
    "h": "Sen. Chris Murphy leaves hospital after stroke",
    "b": "The Connecticut Democrat will miss several weeks of Senate votes while he recovers in a rehabilitation facility.",
    "date": "2026-11-06",
-   "publisher": "PBS NewsHour",
-   "title": "Connecticut Sen. Chris Murphy released from hospital after stroke",
    "url": "https://www.pbs.org/newshour/politics/connecticut-sen-chris-murphy-released-from-hospital-after-stroke",
-   "published": "2026-11-06T19:52:13Z",
    "gathered": "2026-11-06T20:12:47Z"
   },
   {
@@ -178,13 +199,33 @@
  ],
  "international": [
   {
+   "h": "Rains flood displaced families' tents in Gaza",
+   "b": "Civil defence crews got about 1,500 distress calls in 10 hours as water rose 30 to 40 cm in shelter sites.",
+   "date": "2026-11-07",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Rains flood 70,000 displaced families’ tents in Gaza",
+   "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
+  {
+   "h": "Gunman kills five in Krakow, Poland",
+   "b": "Police shot and detained the man, who wore military-style clothing. About a dozen people were wounded, including two officers.",
+   "date": "2026-11-07",
+   "place": "Krakow",
+   "tz": "Europe/Warsaw",
+   "publisher": "Al Jazeera",
+   "title": "At least five people killed in shooting in Poland’s Krakow",
+   "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
+  {
    "h": "Haiti's prime minister hails killing of gang leader",
    "b": "Gang leader Saintil died after being shot in a police operation. 'One less gang leader,' Prime Minister Alix Didier Fils-Aime wrote.",
    "date": "2026-11-07",
    "place": "Port-au-Prince",
    "tz": "America/Port-au-Prince",
-   "publisher": "Al Jazeera",
-   "title": "‘One less gang leader’: Haiti’s prime minister celebrates police operation",
    "url": "https://www.aljazeera.com/news/2026/11/7/one-less-gang-leader-haitis-prime-minister-celebrates-police-operation",
    "gathered": "2026-11-07T10:35:19Z"
   },
@@ -194,8 +235,6 @@
    "date": "2026-11-07",
    "place": "Kyiv",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Russia launches missile attack on Kyiv, injuring residents",
    "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents",
    "gathered": "2026-11-07T10:35:19Z"
   },
@@ -205,8 +244,6 @@
    "date": "2026-11-07",
    "place": "Wellington",
    "tz": "Pacific/Auckland",
-   "publisher": "Al Jazeera",
-   "title": "Two main parties neck and neck after New Zealand vote, early results",
    "url": "https://www.aljazeera.com/news/2026/11/7/governing-party-leads-in-new-zealands-knife-edge-vote-early-results",
    "gathered": "2026-11-07T10:35:19Z"
   },
@@ -310,11 +347,20 @@
  ],
  "science": [
   {
+   "h": "Promising heart drug fails major study",
+   "b": "The medicine lowered a blood particle linked to heart attacks and strokes but did not protect volunteers. 'I was shocked,' the lead researcher said.",
+   "date": "2026-11-07",
+   "publisher": "KUOW",
+   "title": "A promising new medicine against heart disease fails unexpectedly",
+   "url": "https://www.kuow.org/npr-news/2026-11-07/a-promising-new-medicine-against-heart-disease-fails-unexpectedly",
+   "published": "2026-11-07T14:50:00Z",
+   "updated": "2026-11-07T15:05:33Z",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
+  {
    "h": "Pakistani astronaut to join China's space station",
    "b": "China says a Pakistani astronaut will fly on its next station mission, expected by year's end.",
    "date": "2026-11-07",
-   "publisher": "Al Jazeera",
-   "title": "Pakistani astronaut to join China’s next space station mission",
    "url": "https://www.aljazeera.com/news/2026/11/7/pakistani-astronaut-to-join-chinas-next-space-station-mission",
    "gathered": "2026-11-07T10:35:19Z"
   },
@@ -330,6 +376,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "Luka Doncic's historic start",
+   "b": "Doncic has the Lakers atop the West at 8-2, with three games of 50 points or more... ",
+   "date": "2026-11-07",
+   "publisher": "CBS Sports",
+   "title": "The numbers behind Luka Dončić's historic start are entering the realm of ridiculous",
+   "url": "https://www.cbssports.com/nba/news/luka-doncic-lakers-mvp-numbers-historic-start/",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
   {
    "h": "Texas Tech's Okechukwu is tallest in women's college hoops",
    "b": "The 7-foot-1 center from Nigeria had 6 points, 10 rebounds and 3 blocks in her debut, the first 7-footer to play NCAA women's basketball.",
@@ -366,8 +421,30 @@
    "gathered": "2026-11-05T15:42:19Z"
   }
  ],
- "goodnews": [],
+ "goodnews": [
+  {
+   "h": "Teen fighting period stigma wins Diana Award",
+   "b": "Aadvik Jain of Delhi, who began campaigning at 14, is among 198 young changemakers from 44 countries honored this year.",
+   "date": "2026-11-07",
+   "publisher": "KUOW",
+   "title": "This teen boy set out to get people talking about periods. He's now a Diana honoree",
+   "url": "https://www.kuow.org/npr-news/2026-11-07/this-teen-boy-set-out-to-get-people-talking-about-periods-hes-now-a-diana-honoree",
+   "published": "2026-11-07T11:50:21Z",
+   "updated": "2026-11-07T15:08:32Z",
+   "gathered": "2026-11-07T16:57:04Z"
+  }
+ ],
  "local": [
+  {
+   "h": "Quest pays $13M over Giants ticket kickbacks",
+   "b": "Prosecutors say the lab company offered clients suite seats and training camp access in exchange for referrals.",
+   "date": "2026-11-07",
+   "publisher": "Gothamist",
+   "title": "Quest Diagnostics pays $13M to settle kickback allegations involving NY Giants tickets",
+   "url": "https://gothamist.com/news/quest-diagnostics-pays-13m-to-settle-kickback-allegations-involving-ny-giants-tickets",
+   "published": "2026-11-07T15:21:15Z",
+   "gathered": "2026-11-07T16:57:04Z"
+  },
   {
    "h": "Woman found stabbed to death in Flushing building",
    "b": "Police found her unresponsive Friday afternoon. No arrests have been made and she has not been identified.",
@@ -441,18 +518,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
-   "cond": "Fair",
-   "wind": "W 5 mph",
-   "humidity": 80,
-   "obs": "7 Nov 05:51 am EST"
+   "temp": 59,
+   "cond": "Overcast",
+   "wind": "W 10 mph, gusts to 20 mph",
+   "humidity": 69,
+   "obs": "7 Nov 11:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 63,
-    "text": "Mostly sunny, with a high near 63. West wind 7 to 16 mph. "
+    "text": "Mostly sunny, with a high near 63. West wind 13 to 16 mph. "
    },
    {
     "name": "Tonight",
@@ -469,14 +546,14 @@
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly clear, with a low around 50. West wind 10 to 13 mph. "
+    "temp": 51,
+    "text": "Mostly clear, with a low around 51. West wind around 14 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 59,
-    "text": "Mostly sunny, with a high near 59. Northwest wind 11 to 18 mph, with gusts as high as 29 mph. "
+    "text": "Mostly sunny, with a high near 59. Northwest wind 15 to 18 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Monday Night",

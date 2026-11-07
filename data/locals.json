@@ -8,30 +8,30 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
-    "wind": "NW 14 mph",
-    "humidity": 89,
-    "obs": "7 Nov 05:52 am EST"
+    "temp": 63,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 3 mph",
+    "humidity": 54,
+    "obs": "7 Nov 11:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Increasing clouds, with a high near 67. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Partly sunny, with a high near 67. Northwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "Mostly clear, with a low around 43. Northwest wind around 5 mph. "
+     "text": "Partly cloudy, with a low around 43. Northwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68. Calm wind becoming northwest around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 68. Calm wind becoming west around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -97,24 +97,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Overcast",
-    "wind": "N 8 mph",
-    "humidity": 97,
-    "obs": "7 Nov 05:54 am EST"
+    "temp": 57,
+    "cond": "Fog/Mist",
+    "wind": "N 12 mph, gusts to 18 mph",
+    "humidity": 90,
+    "obs": "7 Nov 11:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Showers, mainly before 11am.  Patchy fog before 1pm. High near 63. Light and variable wind becoming north 5 to 7 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "A chance of showers, mainly before noon.  Patchy fog before 1pm.  Otherwise, cloudy, with a high near 63. North wind 3 to 7 mph.  Chance of precipitation is 30%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "Showers likely, mainly after midnight.  Patchy fog.  Otherwise, cloudy, with a low around 46. Light northwest wind becoming west 5 to 10 mph after midnight.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers likely, mainly after midnight.  Patchy fog.  Otherwise, cloudy, with a low around 46. Light northwest wind becoming west 5 to 10 mph after midnight.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -154,7 +154,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -173,6 +173,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago businesses brace for state hemp ban",
+    "b": "THC drinks grew to nearly half of Marz Brewing's production, and its founder says they 'truly rescued our business.'",
+    "date": "2026-11-07",
+    "publisher": "WBEZ",
+    "title": "How Chicago businesses are bracing for the state's hemp ban",
+    "url": "https://www.wbez.org/business/2026/11/07/chicago-businesses-bracing-state-hemp-thc-ban",
+    "published": "2026-11-07T11:30:00Z",
+    "updated": "2026-11-07T16:45:32Z",
+    "gathered": "2026-11-07T16:57:04Z"
+   },
    {
     "h": "Big spending against CTU fell short in several races",
     "b": "A Sun-Times analysis found groups backed by financier Michael Sacks spent up to $45 per vote on school board candidates who lost.",
@@ -198,18 +209,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
-    "cond": "Fair",
-    "wind": "W 7 mph",
-    "humidity": 78,
-    "obs": "7 Nov 04:53 am CST"
+    "temp": 48,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 8 mph",
+    "humidity": 50,
+    "obs": "7 Nov 10:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 51,
-     "text": "Increasing clouds, with a high near 51. Northwest wind 5 to 10 mph. "
+     "text": "Mostly sunny, with a high near 51. West southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -255,7 +266,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -309,18 +320,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 37,
-    "cond": "Fair",
-    "wind": "S 8 mph",
-    "humidity": 68,
-    "obs": "7 Nov 03:58 am MST"
+    "temp": 52,
+    "cond": "A Few Clouds",
+    "wind": "S 10 mph",
+    "humidity": 39,
+    "obs": "7 Nov 08:58 am MST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Sunny, with a high near 65. Southwest wind around 5 mph becoming light and variable  in the afternoon. "
+     "text": "Sunny, with a high near 65. South wind around 5 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -366,7 +377,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -403,11 +414,7 @@
     "h": "Filing questions Long Beach police on evidence sharing",
     "b": "A defense attorney alleges the department has a pattern of failing to disclose information that could help defendants.",
     "date": "2026-11-06",
-    "publisher": "LAist",
-    "title": "Defense attorney: Long Beach police can’t be trusted to share evidence that could clear defendants",
     "url": "https://laist.com/news/criminal-justice/defense-attorney-long-beach-police-cant-be-trusted-to-share-evidence-that-could-clear-defendants",
-    "published": "2026-11-06T13:00:00Z",
-    "updated": "2026-11-06T22:19:44Z",
     "gathered": "2026-11-06T23:24:15Z"
    },
    {
@@ -435,20 +442,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "wind": "NW 2 mph",
-    "humidity": 51,
-    "obs": "07 Nov 02:50 AM PST"
+    "temp": 74,
+    "wind": "Calm",
+    "humidity": 32,
+    "obs": "07 Nov 08:40 AM PST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 88,
      "text": "Sunny, with a high near 88. North wind around 5 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 61,
      "text": "Clear, with a low around 61. North northeast wind 5 to 10 mph. "
@@ -469,7 +476,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 86,
-     "text": "Sunny, with a high near 86."
+     "text": "Sunny, with a high near 86. North northeast wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Monday Night",
@@ -491,18 +498,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "Free legal clinic for former Lozano Kennedy clients",
     "b": "The L.A. Law Library will host a free clinic Saturday for clients who believe they may be victims of fraud or misconduct by the former immigration lawyer or her firm.",
     "date": "2026-11-06",
-    "publisher": "LAist",
-    "title": "Former clients of immigration lawyer Alexandra Lozano Kennedy can get free legal help in LA",
     "url": "https://laist.com/news/politics/former-clients-immigration-lawyer-alexandra-lozano-kennedy-free-legal-clinic-loyola-marymount-university-counsel-for-justice",
-    "published": "2026-11-06T13:00:00Z",
-    "updated": "2026-11-06T16:50:09Z",
     "gathered": "2026-11-06T14:19:55Z"
    }
   ]
@@ -514,6 +517,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Quest pays $13M over Giants ticket kickbacks",
+    "b": "Prosecutors say the lab company offered clients suite seats and training camp access in exchange for referrals.",
+    "date": "2026-11-07",
+    "publisher": "Gothamist",
+    "title": "Quest Diagnostics pays $13M to settle kickback allegations involving NY Giants tickets",
+    "url": "https://gothamist.com/news/quest-diagnostics-pays-13m-to-settle-kickback-allegations-involving-ny-giants-tickets",
+    "published": "2026-11-07T15:21:15Z",
+    "gathered": "2026-11-07T16:57:04Z"
+   },
    {
     "h": "Woman found stabbed to death in Flushing building",
     "b": "Police found her unresponsive Friday afternoon. No arrests have been made and she has not been identified.",
@@ -587,18 +600,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 80,
-    "obs": "7 Nov 05:51 am EST"
+    "temp": 59,
+    "cond": "Overcast",
+    "wind": "W 10 mph, gusts to 20 mph",
+    "humidity": 69,
+    "obs": "7 Nov 11:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63. West wind 7 to 16 mph. "
+     "text": "Mostly sunny, with a high near 63. West wind 13 to 16 mph. "
     },
     {
      "name": "Tonight",
@@ -615,14 +628,14 @@
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. West wind 10 to 13 mph. "
+     "temp": 51,
+     "text": "Mostly clear, with a low around 51. West wind around 14 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59. Northwest wind 11 to 18 mph, with gusts as high as 29 mph. "
+     "text": "Mostly sunny, with a high near 59. Northwest wind 15 to 18 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Monday Night",
@@ -644,7 +657,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -657,25 +670,43 @@
   },
   "local": [
    {
+    "h": "Students and teachers call new strike for Tuesday",
+    "b": "Groups say the government is 'starting to yield' and want to broaden the protest movement.",
+    "date": "2026-11-07",
+    "publisher": "The Local France",
+    "title": "French students and teachers call new strike for Tuesday",
+    "url": "https://www.thelocal.fr/20261107/french-students-and-teachers-call-new-strike-for-tuesday",
+    "published": "2026-11-07T12:48:08Z",
+    "updated": "2026-11-07T12:48:09Z",
+    "gathered": "2026-11-07T16:57:04Z"
+   },
+   {
+    "h": "AFP denounces police violence against reporters",
+    "b": "An AFP photographer wearing a press armband suffered a broken leg from baton blows during a police charge in Lyon.",
+    "date": "2026-11-07",
+    "publisher": "The Local France",
+    "title": "French news agency denounces police 'violence' against reporters at protests",
+    "url": "https://www.thelocal.fr/20261107/french-news-agency-denounces-police-violence-against-reporters-at-protests",
+    "published": "2026-11-07T13:57:40Z",
+    "updated": "2026-11-07T13:57:41Z",
+    "gathered": "2026-11-07T16:57:04Z"
+   },
+   {
     "h": "Yellow Vests plan banned Paris rally",
     "b": "Unions and students hold an authorised march against the high cost of living, while the Yellow Vests call a separate rally at Place de la Concorde despite a ban.",
     "date": "2026-11-07",
     "publisher": "The Local France",
-    "title": "France braces for protests as Yellow Vests urge 'mass disobedience'",
+    "title": "UPDATE: New mass protests in France as police seek to thwart banned rally",
     "url": "https://www.thelocal.fr/20261107/france-braces-for-protests-as-yellow-vests-urge-mass-disobedience",
     "published": "2026-11-07T06:57:53Z",
-    "updated": "2026-11-07T06:57:54Z",
+    "updated": "2026-11-07T14:42:57Z",
     "gathered": "2026-11-07T10:35:19Z"
    },
    {
     "h": "Lawyers to sue interior minister over protest injuries",
     "b": "Attorneys said they will target Laurent Nunez over what they call police mutilations of protesters during weeks of student-led demonstrations.",
     "date": "2026-11-06",
-    "publisher": "The Local France",
-    "title": "French lawyers to sue interior minister over protester 'mutilations'",
     "url": "https://www.thelocal.fr/20261106/french-lawyers-to-sue-interior-minister-over-protester-mutilations",
-    "published": "2026-11-06T16:36:29Z",
-    "updated": "2026-11-06T16:36:30Z",
     "gathered": "2026-11-06T18:15:06Z"
    },
    {
@@ -723,7 +754,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "goodnews": [
    {
     "h": "France's new TGV-M trains finally launch",
@@ -763,20 +794,20 @@
   "weather": {
    "now": {
     "temp": 52,
-    "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 96,
-    "obs": "07 Nov 02:53 AM PST"
+    "cond": "Fog",
+    "wind": "S 3 mph",
+    "humidity": 93,
+    "obs": "07 Nov 08:35 AM PST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 62,
      "text": "Mostly cloudy, with a high near 62. Calm wind becoming south around 6 mph in the afternoon. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 51,
      "text": "Rain, mainly before midnight, then a chance of showers after 1am.  Low around 51. South wind 17 to 21 mph, with gusts as high as 38 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
@@ -797,13 +828,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 54,
-     "text": "A 40 percent chance of rain after 10am.  Mostly cloudy, with a high near 54."
+     "text": "A 40 percent chance of rain after 10am.  Mostly cloudy, with a high near 54. Light south wind. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Rain.  Low around 49. Chance of precipitation is 90%."
+     "text": "Rain.  Low around 49. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     }
    ]
   },
@@ -819,18 +850,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T14:13:00Z",
+  "updatedAt": "2026-11-07T17:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "Elliott Bay Book Company's Rick Simonson marks 50 years",
     "b": "The longtime bookseller has worked at the Seattle store for half a century and is full of stories.",
     "date": "2026-11-06",
-    "publisher": "KUOW",
-    "title": "Seattle's Elliott Bay Book Company celebrates 50 years with Rick Simonson",
     "url": "https://www.kuow.org/2026-11-06/seattle-elliott-bay-book-company-celebrates-50-years-with-rick-simonson",
-    "published": "2026-11-06T21:50:41Z",
-    "updated": "2026-11-06T23:37:59Z",
     "gathered": "2026-11-06T23:24:15Z"
    }
   ]
