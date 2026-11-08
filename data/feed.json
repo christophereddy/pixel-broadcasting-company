@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T14:11:00Z",
+ "updatedAt": "2026-11-08T17:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -20,8 +20,6 @@
    "b": "About 40,000 people attended the first Mass of his South American tour, which had been in doubt after his surgery.",
    "date": "2026-11-07",
    "place": "Uruguay",
-   "publisher": "Al Jazeera",
-   "title": "Pope Leo hold first mass in Uruguay, urges crowd to be ‘bridge builders’",
    "url": "https://www.aljazeera.com/news/2026/11/7/pope-leo-hold-first-mass-in-uruguay-urges-crowd-to-be-bridge-builders",
    "gathered": "2026-11-08T00:51:01Z"
   },
@@ -48,11 +46,11 @@
    "gathered": "2026-11-07T05:14:59Z"
   },
   {
-   "h": "Saudi Aramco building in Riyadh damaged in attack from Yemen",
+   "h": "Three tankers ablaze in Hormuz as Iran and US ramp up strikes",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-08",
    "publisher": "Al Jazeera",
-   "title": "Saudi Aramco building in Riyadh damaged during attack from Yemen",
+   "title": "Three tankers ablaze in Hormuz as Iran and US ramp up strikes",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes",
    "gathered": "2026-11-08T00:51:01Z"
   }
@@ -75,11 +73,7 @@
    "b": "Taylor Frazier McCollum joined opposition to a data center campus planned for the former Landover Mall site in Prince George's County.",
    "date": "2026-11-07",
    "place": "Landover, Maryland",
-   "publisher": "KUOW",
-   "title": "An unexpected activist emerged to help block a $5 billion data center in Maryland",
    "url": "https://www.kuow.org/npr-news/2026-11-07/an-unexpected-activist-emerged-to-help-block-a-5-billion-data-center-in-maryland",
-   "published": "2026-11-07T10:00:00Z",
-   "updated": "2026-11-07T10:32:03Z",
    "gathered": "2026-11-08T00:51:01Z"
   },
   {
@@ -87,11 +81,7 @@
    "b": "In Minneapolis, residents have left 'I Voted' stickers at memorials for two US citizens killed by federal agents.",
    "date": "2026-11-07",
    "place": "Minneapolis, Minnesota",
-   "publisher": "KUOW",
-   "title": "Democrats plan to widen their probes of fatal ICE shootings",
    "url": "https://www.kuow.org/npr-news/2026-11-07/democrats-plan-to-widen-their-probes-of-fatal-ice-shootings",
-   "published": "2026-11-07T13:19:09Z",
-   "updated": "2026-11-07T14:56:34Z",
    "gathered": "2026-11-08T00:51:01Z"
   }
  ],
@@ -178,13 +168,55 @@
  ],
  "international": [
   {
+   "h": "Russian strikes leave hundreds of thousands of Ukrainians without power",
+   "b": "An overnight attack on an energy facility cut electricity in Dnipro and surrounding districts, and another 250,000 people lost power in the Kharkiv region. DTEK said repeated attacks are complicating repairs.",
+   "date": "2026-11-08",
+   "place": "Dnipro, Ukraine",
+   "tz": "Europe/Kyiv",
+   "publisher": "Al Jazeera",
+   "title": "Russian strikes on Ukraine leave hundreds of thousands without electricity",
+   "url": "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity",
+   "gathered": "2026-11-08T15:29:30Z"
+  },
+  {
+   "h": "South Africa's ANC slips to 31% in local elections",
+   "b": "With 99% of votes counted, the ANC trails its 2021 result by about 14 points, ahead of the Democratic Alliance at 25%. Jacob Zuma's uMkhonto weSizwe party is third with about 10%.",
+   "date": "2026-11-08",
+   "place": "Johannesburg, South Africa",
+   "tz": "Africa/Johannesburg",
+   "publisher": "Al Jazeera",
+   "title": "South Africa’s ANC suffers setback in local elections",
+   "url": "https://www.aljazeera.com/news/2026/11/8/south-africas-anc-suffers-setback-in-local-elections",
+   "gathered": "2026-11-08T15:29:30Z"
+  },
+  {
+   "h": "Floods in Gaza leave tens of thousands without shelter",
+   "b": "Heavy rain and strong winds tore through tents across the Gaza Strip. Al Jazeera reports nearly 400,000 displaced Palestinians are sheltering in places considered highly vulnerable to more flooding.",
+   "date": "2026-11-08",
+   "place": "Gaza City",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Floods in Gaza leave tens of thousands without shelter",
+   "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter",
+   "gathered": "2026-11-08T15:29:30Z"
+  },
+  {
+   "h": "At least 21 dead as boat capsizes off Senegal",
+   "b": "The pirogue overturned Saturday off the Loumpoul dunes between Dakar and Saint-Louis, and one person was rescued. The Interior Ministry called the toll provisional as the search continues.",
+   "date": "2026-11-08",
+   "place": "Kebemer, Senegal",
+   "tz": "Africa/Dakar",
+   "publisher": "Al Jazeera",
+   "title": "At least 21 dead as small boat sinks off Senegal",
+   "url": "https://www.aljazeera.com/news/2026/11/8/at-least-21-dead-as-small-boat-sinks-off-senegal",
+   "gathered": "2026-11-08T15:29:30Z"
+  },
+  {
    "h": "Drone attack on Colombian army base kills three soldiers",
    "b": "At least 16 more were wounded at a base in Santa Rosa del Sur in northern Colombia. Authorities have not said who carried out the strike, and President Abelardo de la Espriella said those behind it \"will have nowhere to hide.\"",
    "date": "2026-11-08",
    "place": "Santa Rosa del Sur, Colombia",
    "tz": "America/Bogota",
-   "publisher": "Al Jazeera",
-   "title": "Drone attack on Colombian army base kills three soldiers and wounds 16",
    "url": "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16",
    "gathered": "2026-11-08T07:45:34Z"
   },
@@ -194,8 +226,6 @@
    "date": "2026-11-08",
    "place": "Shizuoka, Japan",
    "tz": "Asia/Tokyo",
-   "publisher": "Al Jazeera",
-   "title": "Earthquake hits central Japan, injuring more than 20 people",
    "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people",
    "gathered": "2026-11-08T07:45:34Z"
   },
@@ -205,8 +235,6 @@
    "date": "2026-11-08",
    "place": "El Hierro, Spain",
    "tz": "Atlantic/Canary",
-   "publisher": "Al Jazeera",
-   "title": "Canary Islands’ El Hierro declares emergency amid migrant, refugee influx",
    "url": "https://www.aljazeera.com/news/2026/11/8/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee-influx",
    "gathered": "2026-11-08T02:15:27Z"
   },
@@ -216,11 +244,7 @@
    "date": "2026-11-07",
    "place": "Asuncion",
    "tz": "America/Asuncion",
-   "publisher": "KUOW",
-   "title": "Ousted Paraguayan president appears before prosecutors",
    "url": "https://www.kuow.org/npr-news/2026-11-07/ousted-paraguayan-president-appears-before-prosecutors",
-   "published": "2026-11-07T17:14:36Z",
-   "updated": "2026-11-07T17:54:32Z",
    "gathered": "2026-11-08T00:51:01Z"
   },
   {
@@ -315,11 +339,7 @@
    "h": "Promising heart drug fails major study",
    "b": "The medicine lowered a blood particle linked to heart attacks and strokes but did not protect volunteers. 'I was shocked,' the lead researcher said.",
    "date": "2026-11-07",
-   "publisher": "KUOW",
-   "title": "A promising new medicine against heart disease fails unexpectedly",
    "url": "https://www.kuow.org/npr-news/2026-11-07/a-promising-new-medicine-against-heart-disease-fails-unexpectedly",
-   "published": "2026-11-07T14:50:00Z",
-   "updated": "2026-11-07T15:05:33Z",
    "gathered": "2026-11-07T16:57:04Z"
   },
   {
@@ -335,8 +355,6 @@
    "h": "Notre Dame beats No. 1 Miami 31-24",
    "b": "The Irish win opens the top spot in the rankings. CBS Sports projects Georgia will reclaim No. 1 in Sunday's AP poll after a wire-to-wire win at Ole Miss, with Tennessee moving into the top 10.",
    "date": "2026-11-07",
-   "publisher": "CBS Sports",
-   "title": "Tomorrow's Top 25 Today: Georgia reclaims No. 1 spot, Tennessee joins top 10 in college football rankings",
    "url": "https://www.cbssports.com/college-football/news/college-football-rankings-tomorrows-top-25-ap-poll-week-11/",
    "gathered": "2026-11-08T07:45:34Z"
   },
@@ -401,6 +419,17 @@
  ],
  "goodnews": [
   {
+   "h": "Chile's Atacama Desert bursts into its biggest bloom in decades",
+   "b": "Record El Niño rains turned the world's driest non-polar desert into fields of pink, yellow and purple wildflowers.",
+   "date": "2026-11-08",
+   "publisher": "KUOW",
+   "title": "A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades",
+   "url": "https://www.kuow.org/npr-news/2026-11-08/a-desert-stirs-to-life-chiles-atacama-erupts-in-its-biggest-floral-display-in-decades",
+   "published": "2026-11-08T11:00:00Z",
+   "updated": "2026-11-08T11:52:14Z",
+   "gathered": "2026-11-08T15:29:30Z"
+  },
+  {
    "h": "What Diwali is and how it is celebrated",
    "b": "More than a billion people mark the Festival of Lights, which falls on Nov. 8 this year. Celebrants place rows of clay oil lamps outside their homes to symbolize the victory of light over darkness.",
    "date": "2026-11-07",
@@ -424,15 +453,21 @@
    "h": "Teen fighting period stigma wins Diana Award",
    "b": "Aadvik Jain of Delhi, who began campaigning at 14, is among 198 young changemakers from 44 countries honored this year.",
    "date": "2026-11-07",
-   "publisher": "KUOW",
-   "title": "This teen boy set out to get people talking about periods. He's now a Diana honoree",
    "url": "https://www.kuow.org/npr-news/2026-11-07/this-teen-boy-set-out-to-get-people-talking-about-periods-hes-now-a-diana-honoree",
-   "published": "2026-11-07T11:50:21Z",
-   "updated": "2026-11-07T15:08:32Z",
    "gathered": "2026-11-07T16:57:04Z"
   }
  ],
  "local": [
+  {
+   "h": "Woman dies after falling from moving SUV on the BQE",
+   "b": "Police said the 37-year-old opened a rear door and fell out near the Brooklyn Bridge around 2:30 a.m. Sunday, then was struck by another car. No arrests have been made.",
+   "date": "2026-11-08",
+   "publisher": "Gothamist",
+   "title": "Woman dies after tumbling from a moving SUV on the BQE near the Brooklyn Bridge",
+   "url": "https://gothamist.com/news/woman-dies-after-falling-from-a-moving-car-near-the-brooklyn-bridge",
+   "published": "2026-11-08T14:16:00Z",
+   "gathered": "2026-11-08T15:29:30Z"
+  },
   {
    "h": "Judge orders NYC to give ICE names of Bronx shelter residents",
    "b": "Judge Lewis Kaplan ruled the city must comply with the subpoena. City Hall, which bars agencies from cooperating with ICE, had fought it.",
@@ -477,17 +512,17 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
-   "cond": "Mostly Cloudy",
-   "humidity": 69,
-   "obs": "8 Nov 05:51 am EST"
+   "temp": 55,
+   "cond": "Overcast",
+   "humidity": 59,
+   "obs": "8 Nov 09:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 62,
-    "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
+    "text": "Sunny, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Tonight",
@@ -521,7 +556,18 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "Mamdani expands free produce programs for SNAP recipients",
+   "b": "The city is adding funding to Health Bucks and Get the Good Stuff, which matches SNAP spending on fresh or frozen fruits, vegetables and beans dollar for dollar.",
+   "date": "2026-11-08",
+   "publisher": "Gothamist",
+   "title": "Mamdani expands free produce programs for New Yorkers on SNAP",
+   "url": "https://gothamist.com/news/mamdani-expands-free-produce-programs-for-new-yorkers-on-snap",
+   "published": "2026-11-08T13:00:43Z",
+   "gathered": "2026-11-08T15:29:30Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",

@@ -8,18 +8,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 58,
     "cond": "A Few Clouds",
-    "wind": "N 6 mph",
-    "humidity": 83,
-    "obs": "8 Nov 05:52 am EST"
+    "wind": "Calm",
+    "humidity": 62,
+    "obs": "8 Nov 09:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Mostly sunny, with a high near 69. Calm wind becoming west around 5 mph in the afternoon. "
+     "text": "Sunny, with a high near 69. Calm wind becoming northwest around 5 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,36 +78,36 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 49,
     "cond": "Mostly Cloudy",
-    "wind": "W 14 mph, gusts to 24 mph",
-    "humidity": 86,
-    "obs": "8 Nov 05:54 am EST"
+    "wind": "W 14 mph, gusts to 20 mph",
+    "humidity": 77,
+    "obs": "8 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 58,
-     "text": "Cloudy through mid morning, then gradual clearing, with a high near 58. West wind 9 to 15 mph, with gusts as high as 26 mph. "
+     "temp": 59,
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 59. West wind 15 to 18 mph, with gusts as high as 32 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43. Southwest wind 5 to 7 mph. "
+     "temp": 44,
+     "text": "Partly cloudy, with a low around 44. West wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly sunny, with a high near 58. West wind 6 to 10 mph. "
+     "text": "Isolated showers after 9am.  Partly sunny, with a high near 58. West wind 13 to 15 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 41,
-     "text": "Mostly clear, with a low around 41. West wind around 7 mph. "
+     "text": "Mostly clear, with a low around 41. West wind 6 to 15 mph. "
     },
     {
      "name": "Tuesday",
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -146,6 +146,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Illinois House could elect its first woman speaker",
+    "b": "Five women lawmakers are among the names floated to succeed Speaker Emanuel \"Chris\" Welch, who will not seek a fourth term as speaker.",
+    "date": "2026-11-08",
+    "publisher": "WBEZ",
+    "title": "Will the Illinois House elect its first woman speaker? Dems float potential contenders to replace Welch",
+    "url": "https://www.wbez.org/government-politics/elections/2026/11/08/illinois-house-speaker-chris-welch-steps-down-female-replacement-contenders",
+    "published": "2026-11-08T11:30:00Z",
+    "updated": "2026-11-08T11:30:00Z",
+    "gathered": "2026-11-08T15:29:30Z"
+   },
    {
     "h": "Chicago Democrats rally in the Loop after midterm wins",
     "b": "More than 100 supporters gathered at Federal Plaza on Saturday. Representative-elect Daniel Biss told them, \"Y'all did your job, and now it's time for people like me to do our job.\"",
@@ -182,18 +193,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
-    "cond": "A Few Clouds",
-    "wind": "SW 13 mph, gusts to 26 mph",
-    "humidity": 86,
-    "obs": "8 Nov 04:53 am CST"
+    "temp": 46,
+    "cond": "Fair",
+    "wind": "W 15 mph",
+    "humidity": 77,
+    "obs": "8 Nov 08:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59. West southwest wind around 15 mph, with gusts as high as 30 mph. "
+     "text": "Sunny, with a high near 59. West wind around 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Tonight",
@@ -239,7 +250,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -264,21 +275,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 41,
     "cond": "Fair",
-    "wind": "S 9 mph",
+    "wind": "S 12 mph",
     "humidity": 53,
-    "obs": "8 Nov 02:58 am MST"
+    "obs": "8 Nov 06:58 am MST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Sunny, with a high near 67. South wind around 6 mph becoming calm  in the morning. "
+     "text": "Sunny, with a high near 67. South wind around 5 mph becoming calm  in the morning. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 40,
      "text": "Clear, with a low around 40. Southwest wind 3 to 6 mph. "
@@ -299,7 +310,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68."
+     "text": "Mostly sunny, with a high near 68. Calm wind becoming north around 6 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -321,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -368,20 +379,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "wind": "Calm",
-    "humidity": 39,
-    "obs": "08 Nov 02:50 AM PST"
+    "temp": 68,
+    "wind": "N 2 mph",
+    "humidity": 29,
+    "obs": "08 Nov 07:25 AM PST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 85,
      "text": "Sunny, with a high near 85. Northeast wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 61,
      "text": "Mostly clear, with a low around 61. North northeast wind around 5 mph. "
@@ -402,7 +413,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 86,
-     "text": "Sunny, with a high near 86."
+     "text": "Sunny, with a high near 86. North northeast wind around 5 mph becoming northwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -424,7 +435,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -447,6 +458,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Woman dies after falling from moving SUV on the BQE",
+    "b": "Police said the 37-year-old opened a rear door and fell out near the Brooklyn Bridge around 2:30 a.m. Sunday, then was struck by another car. No arrests have been made.",
+    "date": "2026-11-08",
+    "publisher": "Gothamist",
+    "title": "Woman dies after tumbling from a moving SUV on the BQE near the Brooklyn Bridge",
+    "url": "https://gothamist.com/news/woman-dies-after-falling-from-a-moving-car-near-the-brooklyn-bridge",
+    "published": "2026-11-08T14:16:00Z",
+    "gathered": "2026-11-08T15:29:30Z"
+   },
    {
     "h": "Judge orders NYC to give ICE names of Bronx shelter residents",
     "b": "Judge Lewis Kaplan ruled the city must comply with the subpoena. City Hall, which bars agencies from cooperating with ICE, had fought it.",
@@ -491,17 +512,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Mostly Cloudy",
-    "humidity": 69,
-    "obs": "8 Nov 05:51 am EST"
+    "temp": 55,
+    "cond": "Overcast",
+    "humidity": 59,
+    "obs": "8 Nov 09:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 62,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
+     "text": "Sunny, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Tonight",
@@ -547,9 +568,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Mamdani expands free produce programs for SNAP recipients",
+    "b": "The city is adding funding to Health Bucks and Get the Good Stuff, which matches SNAP spending on fresh or frozen fruits, vegetables and beans dollar for dollar.",
+    "date": "2026-11-08",
+    "publisher": "Gothamist",
+    "title": "Mamdani expands free produce programs for New Yorkers on SNAP",
+    "url": "https://gothamist.com/news/mamdani-expands-free-produce-programs-for-new-yorkers-on-snap",
+    "published": "2026-11-08T13:00:43Z",
+    "gathered": "2026-11-08T15:29:30Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -630,7 +662,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "goodnews": []
  },
  {
@@ -642,21 +674,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 52,
     "cond": "Overcast",
-    "wind": "S 14 mph",
-    "humidity": 74,
-    "obs": "08 Nov 02:53 AM PST"
+    "wind": "SE 14 mph",
+    "humidity": 87,
+    "obs": "08 Nov 07:15 AM PST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "A 30 percent chance of rain, mainly before 10am.  Cloudy, then gradually becoming mostly sunny, with a high near 56. South southwest wind 7 to 14 mph, with gusts as high as 23 mph. "
+     "text": "A 30 percent chance of rain, mainly before 10am.  Cloudy, then gradually becoming mostly sunny, with a high near 56. South southwest wind 7 to 15 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Increasing clouds, with a low around 43. Light and variable wind. "
@@ -677,13 +709,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 57,
-     "text": "Rain.  High near 57. Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain.  High near 57. South southeast wind around 9 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 52. Chance of precipitation is 70%."
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 52. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -699,7 +731,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T14:11:00Z",
+  "updatedAt": "2026-11-08T17:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
