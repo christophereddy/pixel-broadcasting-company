@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 59,
     "cond": "Mostly Cloudy",
-    "wind": "NW 10 mph",
-    "humidity": 44,
-    "obs": "7 Nov 15:52 pm EST"
+    "wind": "NW 7 mph",
+    "humidity": 54,
+    "obs": "7 Nov 18:52 pm EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,46 +75,27 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Councilor plans legal action after MBTA chief skips hearing",
-    "b": "Councilor Culpepper ended Friday's hearing when general manager Phil Eng did not appear to testify under oath.",
-    "date": "2026-11-06",
-    "publisher": "WBUR",
-    "title": "Boston city councilor plans to seek legal action after T general manager fails to attend hearing",
-    "url": "https://www.wbur.org/news/2026/11/06/boston-city-council-mbta-phil-eng-subpoena-blue-hill-evenue-project",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Closing arguments in Farwell trial over Birchmore death",
-    "b": "Prosecutors say Sandra Birchmore was strangled; the defense says she took her own life. Farwell faces two federal charges.",
-    "date": "2026-11-06",
-    "publisher": "WBUR",
-    "title": "Jurors listen as prosecutor, Farwell attorney tell very different stories about Birchmore's death",
-    "url": "https://www.wbur.org/news/2026/11/06/matthew-farwell-trial-sandra-birchmore-death-closing-statements",
-    "gathered": "2026-11-06T23:24:15Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Overcast",
-    "wind": "N 6 mph",
-    "humidity": 93,
-    "obs": "7 Nov 15:54 pm EST"
+    "temp": 54,
+    "cond": "Light Drizzle Fog/Mist",
+    "wind": "N 3 mph",
+    "humidity": 97,
+    "obs": "7 Nov 18:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Rain, mainly after 1am.  Patchy fog. Low around 45. West wind 6 to 13 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly after 1am.  Patchy fog. Low around 45. Light north wind becoming west 6 to 11 mph after midnight. Winds could gust as high as 24 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly cloudy through mid morning, then becoming sunny, with a high near 59. Breezy, with a west wind 14 to 20 mph, with gusts as high as 30 mph. "
+     "text": "Mostly cloudy through mid morning, then becoming sunny, with a high near 59. West wind 13 to 16 mph, with gusts as high as 31 mph. "
     },
     {
      "name": "Sunday Night",
@@ -154,17 +135,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "boston-ma",
-  "goodnews": [
-   {
-    "h": "Boston to pilot music and arts space in Brighton",
-    "b": "The city will turn a warehouse at 290 North Beacon St. into 17 studios and a community space using $1.25 million in ARPA funds.",
-    "date": "2026-11-06",
-    "url": "https://www.wbur.org/news/2026/11/06/boston-pilot-music-arts-space-290-north-beacon-street-brighton",
-    "gathered": "2026-11-06T23:24:15Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -183,45 +156,17 @@
     "published": "2026-11-07T11:30:00Z",
     "updated": "2026-11-07T16:45:32Z",
     "gathered": "2026-11-07T16:57:04Z"
-   },
-   {
-    "h": "Big spending against CTU fell short in several races",
-    "b": "A Sun-Times analysis found groups backed by financier Michael Sacks spent up to $45 per vote on school board candidates who lost.",
-    "date": "2026-11-06",
-    "publisher": "WBEZ",
-    "title": "Political groups spent $12 million to defeat CTU candidates. One losing race cost $76 per vote.",
-    "url": "https://www.wbez.org/education/2026/11/06/chicago-school-board-ctu-teachers-union-spending",
-    "published": "2026-11-06T22:16:16Z",
-    "updated": "2026-11-06T22:16:16Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Chicago dog licenses hit an all-time low",
-    "b": "The city clerk's office issued only 4,100 licenses this year for an estimated 650,000 dogs, down from 8,000 last year.",
-    "date": "2026-11-06",
-    "publisher": "WBEZ",
-    "title": "Doggonit! City dog licensing hits an all-time low",
-    "url": "https://www.wbez.org/city-hall/2026/11/06/chicago-dog-licenses-all-time-low-city-clerk-anna-valencia",
-    "published": "2026-11-06T22:56:05Z",
-    "updated": "2026-11-06T22:56:05Z",
-    "gathered": "2026-11-06T23:24:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 46,
     "cond": "A Few Clouds",
-    "wind": "W 9 mph",
-    "humidity": 49,
-    "obs": "7 Nov 14:53 pm CST"
+    "wind": "SW 6 mph",
+    "humidity": 58,
+    "obs": "7 Nov 17:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 51,
-     "text": "Sunny, with a high near 51. West southwest wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -250,7 +195,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46."
+     "text": "Mostly clear, with a low around 46. South southwest wind around 10 mph becoming west after midnight. Winds could gust as high as 15 mph. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 61,
+     "text": "Sunny, with a high near 61."
     }
    ]
   },
@@ -266,9 +217,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "MSI lights its four-story tree",
+    "b": "Families kicked off the holiday season at the museum's annual Tree Lighting and Cultural Festival.",
+    "date": "2026-11-07",
+    "publisher": "WBEZ",
+    "title": "Chicago families kick off holiday season with MSI tree lighting festival",
+    "url": "https://www.wbez.org/museums/2026/11/07/msi-tree-lighting-festival",
+    "published": "2026-11-07T22:25:33Z",
+    "updated": "2026-11-07T22:25:33Z",
+    "gathered": "2026-11-08T00:51:01Z"
+   }
+  ]
  },
  {
   "location": {
@@ -276,63 +239,16 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [
-   {
-    "h": "Denver's 'universal childcare' could take shape in 2027",
-    "b": "Mayor Mike Johnston has made childcare a focus ahead of his reelection campaign.",
-    "date": "2026-11-06",
-    "publisher": "Denverite",
-    "title": "What does Denver’s mayor mean by ‘universal childcare’? We could find out in 2027",
-    "url": "https://denverite.com/2026/11/06/denver-universal-childcare-program-task-force-updates/",
-    "published": "2026-11-06T23:31:05Z",
-    "gathered": "2026-11-07T03:02:14Z"
-   },
-   {
-    "h": "Denver airport eyes $84M restroom renovation",
-    "b": "The airport says it's time for a refresh of its restrooms.",
-    "date": "2026-11-06",
-    "publisher": "Denverite",
-    "title": "Flush with cash? Denver airport eyes $84M restroom renovation",
-    "url": "https://denverite.com/2026/11/06/devner-airport-restroom-expansion-renovation/",
-    "published": "2026-11-06T17:00:00Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Top Democrats to meet in Denver next week",
-    "b": "Potential presidential candidates will attend 'What's Next,' an independent event put on by Majority Democrats.",
-    "date": "2026-11-06",
-    "publisher": "Denverite",
-    "title": "A pack of presidential potentials and other top Democrats will meet in Denver next week",
-    "url": "https://denverite.com/2026/11/06/whats-next-democratic-party-meeting-denver/",
-    "published": "2026-11-06T21:45:27Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Lakewood police seek help after deadly bus shooting",
-    "b": "Police had tracked a hit-and-run suspect to an RTD bus before the shooting.",
-    "date": "2026-11-06",
-    "publisher": "Denverite",
-    "title": "Lakewood police will turn to the city’s neighbors for help after a deadly shooting",
-    "url": "https://denverite.com/2026/11/06/lakewood-police-rtd-bus-shooting-update/",
-    "published": "2026-11-06T22:48:12Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "A Few Clouds",
-    "wind": "W 5 mph",
-    "humidity": 15,
-    "obs": "7 Nov 12:58 pm MST"
+    "temp": 54,
+    "cond": "Partly Cloudy",
+    "wind": "NE 7 mph",
+    "humidity": 24,
+    "obs": "7 Nov 16:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. East northeast wind 3 to 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -361,7 +277,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40."
+     "text": "Mostly clear, with a low around 40. Light southwest wind. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Mostly sunny, with a high near 67."
     }
    ]
   },
@@ -377,20 +299,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "denver-co",
-  "goodnews": [
-   {
-    "h": "Skyland's long wait for a grocery store is over",
-    "b": "The Corner on Madison soft-launches Friday.",
-    "date": "2026-11-06",
-    "publisher": "Denverite",
-    "title": "Skyland’s long wait for a grocery store is over",
-    "url": "https://denverite.com/2026/11/06/skyland-new-grocery-store/",
-    "published": "2026-11-06T11:00:00Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -400,60 +311,25 @@
   },
   "local": [
    {
-    "h": "Justice Department drops suit over California ballots",
-    "b": "The DOJ moved to dismiss its bid to stop California counting about 20,000 ballots it alleged went to noncitizens. State officials said the list was out of date.",
-    "date": "2026-11-06",
+    "h": "ICE detains two US citizens protesting at hospital",
+    "b": "Rapid response groups say the protest outside White Memorial Hospital began after people saw someone detained and taken inside.",
+    "date": "2026-11-07",
     "publisher": "LAist",
-    "title": "US Justice Department drops bid to force California to set aside disputed ballots",
-    "url": "https://laist.com/news/politics/us-justice-department-drops-bid-to-force-california-to-set-aside-disputed-ballots",
-    "published": "2026-11-07T00:53:33Z",
-    "updated": "2026-11-07T00:56:25Z",
-    "gathered": "2026-11-07T03:02:14Z"
-   },
-   {
-    "h": "Filing questions Long Beach police on evidence sharing",
-    "b": "A defense attorney alleges the department has a pattern of failing to disclose information that could help defendants.",
-    "date": "2026-11-06",
-    "url": "https://laist.com/news/criminal-justice/defense-attorney-long-beach-police-cant-be-trusted-to-share-evidence-that-could-clear-defendants",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "LA voters raise sales tax for fire department",
-    "b": "Measure FD lifts the rate to 10.75% and should raise nearly $350 million a year. Shoppers likely start paying in spring.",
-    "date": "2026-11-06",
-    "publisher": "LAist",
-    "title": "Voters have chosen to increase LA's sales tax — here’s how it compares to other cities",
-    "url": "https://laist.com/news/politics/voters-have-chosen-to-increase-las-sales-tax-heres-how-it-compares-to-other-cities",
-    "published": "2026-11-06T13:00:00Z",
-    "updated": "2026-11-06T15:32:23Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Raman won without council backing. Can she govern with it?",
-    "b": "No council colleague endorsed the mayor-elect, who unseated Karen Bass this week.",
-    "date": "2026-11-06",
-    "publisher": "LAist",
-    "title": "None of Nithya Raman’s council colleagues backed her bid for mayor. Will they work with her?",
-    "url": "https://laist.com/news/politics/mayor-elect-nithya-raman-council-colleagues-cooperation",
-    "published": "2026-11-06T13:00:00Z",
-    "updated": "2026-11-06T18:30:34Z",
-    "gathered": "2026-11-06T23:24:15Z"
+    "title": "ICE detains two US citizens protesting outside White Memorial Hospital, rapid response groups say",
+    "url": "https://laist.com/news/politics/ice-detains-two-u-s-citizens-protesting-outside-white-memorial-hospital-rapid-response-groups-say",
+    "published": "2026-11-07T18:59:41Z",
+    "updated": "2026-11-07T20:07:19Z",
+    "gathered": "2026-11-08T00:51:01Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 84,
-    "wind": "SE 1 mph",
-    "humidity": 22,
-    "obs": "07 Nov 12:55 PM PST"
+    "temp": 77,
+    "wind": "Calm",
+    "humidity": 31,
+    "obs": "07 Nov 04:40 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 84,
-     "text": "Sunny, with a high near 84. North wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -483,6 +359,12 @@
      "kind": "low",
      "temp": 61,
      "text": "Mostly clear, with a low around 61."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 86,
+     "text": "Sunny, with a high near 86."
     }
    ]
   },
@@ -498,17 +380,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": [
-   {
-    "h": "Free legal clinic for former Lozano Kennedy clients",
-    "b": "The L.A. Law Library will host a free clinic Saturday for clients who believe they may be victims of fraud or misconduct by the former immigration lawyer or her firm.",
-    "date": "2026-11-06",
-    "url": "https://laist.com/news/politics/former-clients-immigration-lawyer-alexandra-lozano-kennedy-free-legal-clinic-loyola-marymount-university-counsel-for-justice",
-    "gathered": "2026-11-06T14:19:55Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -517,6 +391,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Judge orders NYC to give ICE names of Bronx shelter residents",
+    "b": "Judge Lewis Kaplan ruled the city must comply with the subpoena. City Hall, which bars agencies from cooperating with ICE, had fought it.",
+    "date": "2026-11-07",
+    "publisher": "Gothamist",
+    "title": "Federal judge rules Mamdani administration must give ICE names of Bronx shelter residents",
+    "url": "https://gothamist.com/news/federal-judge-rules-mamdani-administration-must-give-ice-names-of-bronx-shelter-residents",
+    "published": "2026-11-07T21:49:00Z",
+    "gathered": "2026-11-08T00:51:01Z"
+   },
    {
     "h": "Work begins to replace Newark Bay Bridge",
     "b": "The 1956 span carries about 95,000 vehicles a day. The new bridge is due in 2031 and the old one stays open meanwhile.",
@@ -547,92 +431,22 @@
     "url": "https://gothamist.com/news/quest-diagnostics-pays-13m-to-settle-kickback-allegations-involving-ny-giants-tickets",
     "published": "2026-11-07T15:21:15Z",
     "gathered": "2026-11-07T16:57:04Z"
-   },
-   {
-    "h": "Woman found stabbed to death in Flushing building",
-    "b": "Police found her unresponsive Friday afternoon. No arrests have been made and she has not been identified.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "Person found dead with stab wounds in Queens building, NYPD says",
-    "url": "https://gothamist.com/news/person-found-dead-with-multiple-stab-wounds-in-queens-building-nypd-says",
-    "published": "2026-11-07T01:34:00Z",
-    "gathered": "2026-11-07T03:02:14Z"
-   },
-   {
-    "h": "Queens driver indicted in stroller crash that killed baby",
-    "b": "Prosecutors say Elvin Rivera ran a stop sign in Flushing on cocaine and THC and struck 1-year-old Justin Hu.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "Intoxicated Queens driver killed baby after running stop sign, indictment says",
-    "url": "https://gothamist.com/news/intoxicated-queens-driver-killed-baby-after-running-stop-sign-indictment-says",
-    "published": "2026-11-06T21:29:29Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Penn Station plan could fund a new MSG venue",
-    "b": "Amtrak's overhaul would buy and demolish the Infosys Theater, and MSG says sale money could pay for a new venue.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "Amtrak's Penn Station plan could funnel taxpayer money to new venue for James Dolan",
-    "url": "https://gothamist.com/news/amtraks-penn-station-plan-could-funnel-taxpayer-money-to-new-venue-for-james-dolan",
-    "published": "2026-11-06T21:34:00Z",
-    "gathered": "2026-11-06T23:24:15Z"
-   },
-   {
-    "h": "Google, NYC schools clash over AI ban",
-    "b": "Google said schools that ban AI will lose access to its search, and Mayor Mamdani accused it of using monopoly power to force AI into classrooms.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "NYC schools’ standoff with Google over AI raises prospect of no search in class",
-    "url": "https://gothamist.com/news/nyc-schools-standoff-with-google-over-ai-raises-prospect-of-no-search-in-class",
-    "published": "2026-11-06T15:58:00Z",
-    "gathered": "2026-11-06T18:15:06Z"
-   },
-   {
-    "h": "Supreme Court case could limit specialized school reforms",
-    "b": "Experts say a challenge to a Maryland county's magnet school admissions could narrow Mayor Mamdani's options for admitting more Black and Latino students.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "Supreme Court case could affect admissions reforms for NYC specialized schools",
-    "url": "https://gothamist.com/news/supreme-court-case-could-affect-admissions-reforms-for-nyc-specialized-schools",
-    "published": "2026-11-06T11:30:59Z",
-    "gathered": "2026-11-06T14:19:55Z"
-   },
-   {
-    "h": "Two found shot dead at East Harlem senior center",
-    "b": "Police found a 55-year-old woman and a 66-year-old man at a NYCHA complex Thursday night and are investigating whether it was a murder-suicide.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "Health aide, elderly man killed in East Harlem senior center shooting, per NYPD",
-    "url": "https://gothamist.com/news/manhattan-shooting-kills-2-people-in-east-harlem-nypd-says",
-    "published": "2026-11-06T23:14:00Z",
-    "gathered": "2026-11-06T14:19:55Z"
-   },
-   {
-    "h": "South Bronx, East New York lead in low-level tickets",
-    "b": "A John Jay College analysis found more than 60% of NYPD loitering summonses since 2025 came from one South Bronx precinct.",
-    "date": "2026-11-06",
-    "publisher": "Gothamist",
-    "title": "South Bronx, East New York lead NYC in littering and panhandling tickets, analysis finds",
-    "url": "https://gothamist.com/news/south-bronx-east-new-york-lead-nyc-in-littering-and-panhandling-tickets-analysis-finds",
-    "published": "2026-11-06T11:00:55Z",
-    "gathered": "2026-11-06T11:21:08Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 51,
     "cond": "Fair",
-    "wind": "NW 10 mph, gusts to 20 mph",
-    "humidity": 53,
-    "obs": "7 Nov 15:51 pm EST"
+    "wind": "W 6 mph, gusts to 18 mph",
+    "humidity": 54,
+    "obs": "7 Nov 19:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Partly cloudy, with a low around 48. West wind 14 to 16 mph. "
+     "text": "Partly cloudy, with a low around 48. West wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Sunday",
@@ -678,7 +492,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -722,41 +536,6 @@
     "published": "2026-11-07T06:57:53Z",
     "updated": "2026-11-07T14:42:57Z",
     "gathered": "2026-11-07T10:35:19Z"
-   },
-   {
-    "h": "Lawyers to sue interior minister over protest injuries",
-    "b": "Attorneys said they will target Laurent Nunez over what they call police mutilations of protesters during weeks of student-led demonstrations.",
-    "date": "2026-11-06",
-    "url": "https://www.thelocal.fr/20261106/french-lawyers-to-sue-interior-minister-over-protester-mutilations",
-    "gathered": "2026-11-06T18:15:06Z"
-   },
-   {
-    "h": "Four flights diverted in France after bomb threats",
-    "b": "Three landed at Orly and one at Bordeaux without incident as investigators look for the source of alerts hitting flights across Europe.",
-    "date": "2026-11-06",
-    "url": "https://www.thelocal.fr/20261106/latest-four-new-bomb-threats-on-flights-over-france",
-    "gathered": "2026-11-06T14:19:55Z"
-   },
-   {
-    "h": "Bomb hoaxes disrupt flights across Europe",
-    "b": "About 20 flights were affected Thursday alone. No government has said who is responsible, though experts suspect hybrid warfare.",
-    "date": "2026-11-06",
-    "url": "https://www.thelocal.fr/20261106/who-is-behind-the-bomb-hoaxes-hitting-flights-across-europe",
-    "gathered": "2026-11-06T11:21:08Z"
-   },
-   {
-    "h": "Police to stand trial over 2020 beating of Michel Zecler",
-    "b": "The CCTV-recorded assault fuelled outrage over police violence. 'I expect this trial to hold the police officers accountable,' he said.",
-    "date": "2026-11-06",
-    "url": "https://www.thelocal.fr/20261106/french-policemen-to-stand-trial-over-2020-beating-of-black-man",
-    "gathered": "2026-11-06T11:21:08Z"
-   },
-   {
-    "h": "Two Paris marches planned for Saturday",
-    "b": "Major unions and the Yellow Vests have both called demonstrations in Paris on Nov. 7 after a week of school blockades and a national strike.",
-    "date": "2026-11-06",
-    "url": "https://www.thelocal.fr/20261106/what-to-expect-for-the-paris-demo-on-november-7th",
-    "gathered": "2026-11-06T11:21:08Z"
    }
   ],
   "weather": {
@@ -775,16 +554,8 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
-  "goodnews": [
-   {
-    "h": "France's new TGV-M trains finally launch",
-    "b": "After years of delays, the double-decker trains began running Paris to Marseille Friday, with 20% more seats and 20% lower energy use.",
-    "date": "2026-11-06",
-    "url": "https://www.thelocal.fr/20261106/bar-carriage-bike-spaces-and-phone-holder-inside-frances-new-tgv-m-trains",
-    "gathered": "2026-11-06T18:15:06Z"
-   }
-  ]
+  "updatedAt": "2026-11-08T02:12:00Z",
+  "goodnews": []
  },
  {
   "location": {
@@ -792,48 +563,27 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [
-   {
-    "h": "Bellevue court offers alternatives to jail",
-    "b": "The community court, held weekly at Bellevue Library, handles nonviolent cases and aims to address issues like addiction behind them.",
-    "date": "2026-11-06",
-    "url": "https://www.kuow.org/law/2026-11-06/bellevue-court-offers-alternatives-to-jail-while-still-holding-defendants-accountable",
-    "gathered": "2026-11-07T03:02:14Z"
-   },
-   {
-    "h": "Trump's global health strategy takes shape",
-    "b": "The US signed a global health agreement with Zambia in October that a US diplomat called a fundamental shift.",
-    "date": "2026-11-06",
-    "url": "https://www.kuow.org/npr-news/2026-11-06/trumps-global-health-strategy-is-emerging-what-will-the-democratic-congress-say",
-    "gathered": "2026-11-06T23:24:15Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
     "temp": 57,
-    "cond": "Partly Cloudy",
-    "wind": "SE 4 mph",
+    "cond": "Clear",
+    "wind": "SE 9 mph",
     "humidity": 82,
-    "obs": "07 Nov 12:30 PM PST"
+    "obs": "07 Nov 04:35 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 62,
-     "text": "Mostly cloudy, with a high near 62. South wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Rain, mainly after 7pm.  Low around 52. South wind 16 to 21 mph, with gusts as high as 34 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly after 7pm.  Low around 52. South wind 11 to 21 mph, with gusts as high as 39 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 56,
-     "text": "A 50 percent chance of rain, mainly before 1pm.  Mostly cloudy, with a high near 56. South southwest wind 8 to 14 mph, with gusts as high as 24 mph. "
+     "text": "A 50 percent chance of rain, mainly before 1pm.  Mostly cloudy, with a high near 56. South southwest wind 8 to 14 mph, with gusts as high as 28 mph. "
     },
     {
      "name": "Sunday Night",
@@ -851,7 +601,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Rain.  Low around 50. Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  Low around 50. South southeast wind 7 to 11 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 58,
+     "text": "Rain.  High near 58. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -867,16 +623,8 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-07T23:12:00Z",
+  "updatedAt": "2026-11-08T02:12:00Z",
   "slug": "seattle-wa",
-  "goodnews": [
-   {
-    "h": "Elliott Bay Book Company's Rick Simonson marks 50 years",
-    "b": "The longtime bookseller has worked at the Seattle store for half a century and is full of stories.",
-    "date": "2026-11-06",
-    "url": "https://www.kuow.org/2026-11-06/seattle-elliott-bay-book-company-celebrates-50-years-with-rick-simonson",
-    "gathered": "2026-11-06T23:24:15Z"
-   }
-  ]
+  "goodnews": []
  }
 ]
