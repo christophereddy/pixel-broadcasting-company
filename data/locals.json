@@ -8,19 +8,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
-    "wind": "NW 7 mph",
-    "humidity": 74,
-    "obs": "8 Nov 01:52 am EST"
+    "temp": 46,
+    "cond": "Partly Cloudy",
+    "wind": "NW 8 mph",
+    "humidity": 79,
+    "obs": "8 Nov 02:52 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Partly cloudy, with a low around 43. Calm wind becoming north around 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -50,6 +44,12 @@
      "kind": "high",
      "temp": 70,
      "text": "Mostly sunny, with a high near 70."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "Partly cloudy, with a low around 48."
     }
    ]
   },
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -79,18 +79,12 @@
   "weather": {
    "now": {
     "temp": 48,
-    "cond": "Overcast",
-    "wind": "SW 10 mph",
-    "humidity": 93,
-    "obs": "8 Nov 01:54 am EST"
+    "cond": "Fog/Mist",
+    "wind": "W 7 mph",
+    "humidity": 96,
+    "obs": "8 Nov 02:54 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 46,
-     "text": "Showers likely.  Patchy fog.  Otherwise, cloudy, with a low around 46. Northwest wind 7 to 11 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -120,6 +114,12 @@
      "kind": "high",
      "temp": 55,
      "text": "Mostly sunny, with a high near 55. West wind 6 to 10 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43. Southwest wind around 7 mph. "
     }
    ]
   },
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -146,6 +146,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago parking attendants reach deal to end strike",
+    "b": "Teamsters Local 727 reached a tentative agreement Friday with the Chicago Parking Association after a strike that began Tuesday at O'Hare, McCormick Place and the Hyatt Regency. The union has nearly 1,200 members.",
+    "date": "2026-11-07",
+    "publisher": "WBEZ",
+    "title": "Chicago parking attendants reach deal with operators to end strike",
+    "url": "https://www.wbez.org/news/2026/11/08/chicago-parking-attendants-reach-deal-with-operators-to-end-strike",
+    "published": "2026-11-08T07:54:07Z",
+    "updated": "2026-11-08T07:54:07Z",
+    "gathered": "2026-11-08T08:12:00Z"
+   },
    {
     "h": "Chicago businesses brace for state hemp ban",
     "b": "THC drinks grew to nearly half of Marz Brewing's production, and its founder says they 'truly rescued our business.'",
@@ -161,10 +172,10 @@
   "weather": {
    "now": {
     "temp": 42,
-    "cond": "Fair",
-    "wind": "SW 9 mph",
-    "humidity": 71,
-    "obs": "8 Nov 00:53 am CST"
+    "cond": "A Few Clouds",
+    "wind": "W 12 mph",
+    "humidity": 73,
+    "obs": "8 Nov 01:53 am CST"
    },
    "periods": [
     {
@@ -217,7 +228,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -242,11 +253,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "Partly Cloudy",
-    "wind": "SW 8 mph",
-    "humidity": 48,
-    "obs": "7 Nov 23:58 pm MST"
+    "temp": 41,
+    "cond": "A Few Clouds",
+    "wind": "S 9 mph",
+    "humidity": 49,
+    "obs": "8 Nov 00:58 am MST"
    },
    "periods": [
     {
@@ -299,7 +310,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -346,14 +357,14 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "wind": "Calm",
-    "humidity": 45,
-    "obs": "07 Nov 11:40 PM PST"
+    "temp": 62,
+    "wind": "NW 3 mph",
+    "humidity": 50,
+    "obs": "07 Nov 11:55 PM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 60,
      "text": "Mostly clear, with a low around 60. North northeast wind around 5 mph. "
@@ -402,7 +413,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -471,17 +482,10 @@
    "now": {
     "temp": 50,
     "cond": "Overcast",
-    "wind": "W 8 mph, gusts to 20 mph",
-    "humidity": 63,
-    "obs": "8 Nov 01:51 am EST"
+    "humidity": 68,
+    "obs": "8 Nov 02:51 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 48,
-     "text": "Mostly cloudy, with a low around 48. West wind 11 to 13 mph, with gusts as high as 23 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -511,6 +515,12 @@
      "kind": "high",
      "temp": 61,
      "text": "Mostly sunny, with a high near 61."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Mostly clear, with a low around 50."
     }
    ]
   },
@@ -526,7 +536,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -538,6 +548,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Clashes in Paris as cost-of-living protests enter fourth weekend",
+    "b": "The interior ministry counted 146,000 protesters across France on Saturday, including 46,000 in Paris, fewer than in previous weeks. Police used tear gas at the end of the Paris march against people throwing projectiles and fireworks.",
+    "date": "2026-11-07",
+    "publisher": "The Local France",
+    "title": "Clashes in Paris after new French protests",
+    "url": "https://www.thelocal.fr/20261108/clashes-in-paris-after-new-french-protests",
+    "published": "2026-11-08T07:58:03Z",
+    "updated": "2026-11-08T07:58:03Z",
+    "gathered": "2026-11-08T08:12:00Z"
+   },
    {
     "h": "France marks Armistice Day on Wednesday",
     "b": "Nov. 11 is a public holiday, with parades and wreaths at war memorials and the President laying a wreath at the Tomb of the Unknown Soldier at the Arc de Triomphe. Paris Photo opens Thursday.",
@@ -587,7 +608,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "goodnews": []
  },
  {
@@ -600,17 +621,17 @@
   "weather": {
    "now": {
     "temp": 54,
-    "cond": "Overcast",
-    "wind": "SE 16 mph",
-    "humidity": 87,
-    "obs": "07 Nov 11:30 PM PST"
+    "cond": "Mostly Cloudy",
+    "wind": "S 17 mph",
+    "humidity": 86,
+    "obs": "07 Nov 11:53 PM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 52,
-     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 52. South wind 18 to 20 mph, with gusts as high as 33 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 52. South wind 18 to 20 mph, with gusts as high as 32 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -656,7 +677,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T08:11:00Z",
+  "updatedAt": "2026-11-08T11:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

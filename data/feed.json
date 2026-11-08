@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T08:11:00Z",
+ "updatedAt": "2026-11-08T11:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -456,17 +456,10 @@
   "now": {
    "temp": 50,
    "cond": "Overcast",
-   "wind": "W 8 mph, gusts to 20 mph",
-   "humidity": 63,
-   "obs": "8 Nov 01:51 am EST"
+   "humidity": 68,
+   "obs": "8 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 48,
-    "text": "Mostly cloudy, with a low around 48. West wind 11 to 13 mph, with gusts as high as 23 mph. "
-   },
    {
     "name": "Sunday",
     "kind": "high",
@@ -496,6 +489,12 @@
     "kind": "high",
     "temp": 61,
     "text": "Mostly sunny, with a high near 61."
+   },
+   {
+    "name": "Tuesday Night",
+    "kind": "low",
+    "temp": 50,
+    "text": "Mostly clear, with a low around 50."
    }
   ]
  },
