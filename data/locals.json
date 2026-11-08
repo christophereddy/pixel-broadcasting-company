@@ -8,21 +8,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Partly Cloudy",
-    "wind": "NW 8 mph",
-    "humidity": 79,
-    "obs": "8 Nov 02:52 am EST"
+    "temp": 45,
+    "cond": "A Few Clouds",
+    "wind": "N 6 mph",
+    "humidity": 83,
+    "obs": "8 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Mostly sunny, with a high near 69. Calm wind becoming west around 5 mph in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Mostly clear, with a low around 44. Northwest wind around 5 mph. "
@@ -43,7 +43,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 70,
-     "text": "Mostly sunny, with a high near 70."
+     "text": "Mostly sunny, with a high near 70. West wind around 5 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -79,20 +79,20 @@
   "weather": {
    "now": {
     "temp": 48,
-    "cond": "Fog/Mist",
-    "wind": "W 7 mph",
-    "humidity": 96,
-    "obs": "8 Nov 02:54 am EST"
+    "cond": "Mostly Cloudy",
+    "wind": "W 14 mph, gusts to 24 mph",
+    "humidity": 86,
+    "obs": "8 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 58,
      "text": "Cloudy through mid morning, then gradual clearing, with a high near 58. West wind 9 to 15 mph, with gusts as high as 26 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Partly cloudy, with a low around 43. Southwest wind 5 to 7 mph. "
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -146,6 +146,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago Democrats rally in the Loop after midterm wins",
+    "b": "More than 100 supporters gathered at Federal Plaza on Saturday. Representative-elect Daniel Biss told them, \"Y'all did your job, and now it's time for people like me to do our job.\"",
+    "date": "2026-11-07",
+    "publisher": "WBEZ",
+    "title": "After Democrats won big during midterm election, Chicago supporters rally for 'productive change'",
+    "url": "https://www.wbez.org/politics/2026/11/08/after-democrats-won-big-during-midterm-election-chicago-supporters-rally-for-productive-change",
+    "published": "2026-11-08T07:52:57Z",
+    "updated": "2026-11-08T07:52:57Z",
+    "gathered": "2026-11-08T11:12:02Z"
+   },
    {
     "h": "Chicago parking attendants reach deal to end strike",
     "b": "Teamsters Local 727 reached a tentative agreement Friday with the Chicago Parking Association after a strike that began Tuesday at O'Hare, McCormick Place and the Hyatt Regency. The union has nearly 1,200 members.",
@@ -171,27 +182,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
+    "temp": 40,
     "cond": "A Few Clouds",
-    "wind": "W 12 mph",
-    "humidity": 73,
-    "obs": "8 Nov 01:53 am CST"
+    "wind": "SW 13 mph, gusts to 26 mph",
+    "humidity": 86,
+    "obs": "8 Nov 04:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 40,
-     "text": "Partly cloudy, with a low around 40. West southwest wind around 15 mph, with gusts as high as 25 mph. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "Sunny, with a high near 59. West southwest wind around 15 mph, with gusts as high as 30 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
      "text": "Mostly clear, with a low around 42. Northwest wind 5 to 15 mph. "
@@ -212,7 +217,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60."
+     "text": "Sunny, with a high near 60. West northwest wind around 5 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 46,
+     "text": "Partly cloudy, with a low around 46."
     }
    ]
   },
@@ -228,7 +239,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -253,19 +264,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "A Few Clouds",
+    "temp": 39,
+    "cond": "Fair",
     "wind": "S 9 mph",
-    "humidity": 49,
-    "obs": "8 Nov 00:58 am MST"
+    "humidity": 53,
+    "obs": "8 Nov 02:58 am MST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 37,
-     "text": "Clear, with a low around 37. South southwest wind 3 to 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -295,6 +300,12 @@
      "kind": "high",
      "temp": 68,
      "text": "Mostly sunny, with a high near 68."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39."
     }
    ]
   },
@@ -310,7 +321,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -357,18 +368,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "wind": "NW 3 mph",
-    "humidity": 50,
-    "obs": "07 Nov 11:55 PM PST"
+    "temp": 63,
+    "wind": "Calm",
+    "humidity": 39,
+    "obs": "08 Nov 02:50 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 60,
-     "text": "Mostly clear, with a low around 60. North northeast wind around 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -398,6 +403,12 @@
      "kind": "high",
      "temp": 86,
      "text": "Sunny, with a high near 86."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 62,
+     "text": "Clear, with a low around 62."
     }
    ]
   },
@@ -413,7 +424,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -480,20 +491,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Overcast",
-    "humidity": 68,
-    "obs": "8 Nov 02:51 am EST"
+    "temp": 51,
+    "cond": "Mostly Cloudy",
+    "humidity": 69,
+    "obs": "8 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 62,
      "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Mostly clear, with a low around 48. West wind 9 to 13 mph, with gusts as high as 28 mph. "
@@ -514,7 +525,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 61,
-     "text": "Mostly sunny, with a high near 61."
+     "text": "Mostly sunny, with a high near 61. West wind 9 to 14 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -536,7 +547,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -548,6 +559,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "France investigates whether foreign powers sent airline bomb threats",
+    "b": "Paris prosecutors opened a probe into hoax bomb threats against dozens of flights in Europe over the past week. No explosives have been found.",
+    "date": "2026-11-08",
+    "publisher": "The Local France",
+    "title": "France probes if bomb threats against airlines linked to 'foreign powers'",
+    "url": "https://www.thelocal.fr/20261108/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers",
+    "published": "2026-11-08T09:06:41Z",
+    "updated": "2026-11-08T09:06:42Z",
+    "gathered": "2026-11-08T11:12:02Z"
+   },
    {
     "h": "Clashes in Paris as cost-of-living protests enter fourth weekend",
     "b": "The interior ministry counted 146,000 protesters across France on Saturday, including 46,000 in Paris, fewer than in previous weeks. Police used tear gas at the end of the Paris march against people throwing projectiles and fireworks.",
@@ -608,7 +630,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "goodnews": []
  },
  {
@@ -620,19 +642,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Mostly Cloudy",
-    "wind": "S 17 mph",
-    "humidity": 86,
-    "obs": "07 Nov 11:53 PM PST"
+    "temp": 55,
+    "cond": "Overcast",
+    "wind": "S 14 mph",
+    "humidity": 74,
+    "obs": "08 Nov 02:53 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 52. South wind 18 to 20 mph, with gusts as high as 32 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -662,6 +678,12 @@
      "kind": "high",
      "temp": 57,
      "text": "Rain.  High near 57. Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 52. Chance of precipitation is 70%."
     }
    ]
   },
@@ -677,7 +699,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T11:11:00Z",
+  "updatedAt": "2026-11-08T14:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

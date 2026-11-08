@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T11:11:00Z",
+ "updatedAt": "2026-11-08T14:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -48,16 +48,28 @@
    "gathered": "2026-11-07T05:14:59Z"
   },
   {
-   "h": "US moves to block Iran's land supply routes as UAE rescues 22 from burning ship",
+   "h": "Saudi Aramco building in Riyadh damaged in attack from Yemen",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-08",
    "publisher": "Al Jazeera",
-   "title": "US moves to block Iran land supply routes; UAE rescues 22 from burning ship",
+   "title": "Saudi Aramco building in Riyadh damaged during attack from Yemen",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes",
    "gathered": "2026-11-08T00:51:01Z"
   }
  ],
  "national": [
+  {
+   "h": "Texas ER didn't give bleeding newborn a vitamin K shot for hours, ProPublica reports",
+   "b": "Eleven-day-old Gwen Biesenbach, whose parents chose vitamin K drops instead of the standard injection, bled from her belly button as an ER doctor tried seven methods to stop it. The family has filed a complaint with the Texas Medical Board.",
+   "date": "2026-11-08",
+   "place": "Texas",
+   "publisher": "ProPublica",
+   "title": "An 11-Day-Old Baby Couldn’t Stop Bleeding. For Hours, the ER Didn’t Provide a Critical Vitamin Shot.",
+   "url": "https://www.propublica.org/article/vitamin-k-shot-texas-lonestar-emergency-room-nicole-malouf",
+   "published": "2026-11-08T10:00:00Z",
+   "updated": "2026-11-08T10:00:16Z",
+   "gathered": "2026-11-08T11:12:02Z"
+  },
   {
    "h": "Resident helps block $5 billion Maryland data center",
    "b": "Taylor Frazier McCollum joined opposition to a data center campus planned for the former Landover Mall site in Prince George's County.",
@@ -84,6 +96,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Gen Z voters helped fuel the Democratic wave",
+   "b": "Exit polls show Democrats carried voters under 30 by nearly 50 points on Tuesday, a sharp shift from 2024. In Texas, James Talarico won his Senate race by 12 points overall and by 60 among Gen Z.",
+   "date": "2026-11-08",
+   "publisher": "KUOW",
+   "title": "How Gen Z voters helped fuel a blue wave for Democrats",
+   "url": "https://www.kuow.org/npr-news/2026-11-08/how-gen-z-voters-helped-fuel-a-blue-wave-for-democrats",
+   "published": "2026-11-08T10:00:00Z",
+   "updated": "2026-11-08T10:15:03Z",
+   "gathered": "2026-11-08T11:12:02Z"
+  },
   {
    "h": "Judge to probe whether officials misled her in golf course case",
    "b": "She plans to appoint former US attorney Jessie Liu to examine conduct in the suit over the renovation of a public golf course on the Potomac.",
@@ -454,20 +477,20 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
-   "cond": "Overcast",
-   "humidity": 68,
-   "obs": "8 Nov 02:51 am EST"
+   "temp": 51,
+   "cond": "Mostly Cloudy",
+   "humidity": 69,
+   "obs": "8 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Sunday",
+    "name": "Today",
     "kind": "high",
     "temp": 62,
     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 48,
     "text": "Mostly clear, with a low around 48. West wind 9 to 13 mph, with gusts as high as 28 mph. "
@@ -488,7 +511,7 @@
     "name": "Tuesday",
     "kind": "high",
     "temp": 61,
-    "text": "Mostly sunny, with a high near 61."
+    "text": "Mostly sunny, with a high near 61. West wind 9 to 14 mph, with gusts as high as 24 mph. "
    },
    {
     "name": "Tuesday Night",
