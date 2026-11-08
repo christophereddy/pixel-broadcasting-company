@@ -8,19 +8,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 70,
-    "cond": "Mostly Cloudy",
-    "wind": "W 3 mph",
-    "humidity": 44,
-    "obs": "8 Nov 13:52 pm EST"
+    "temp": 69,
+    "cond": "Partly Cloudy",
+    "wind": "S 6 mph",
+    "humidity": 42,
+    "obs": "8 Nov 14:52 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 69,
-     "text": "Sunny, with a high near 69. Calm wind becoming northwest around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -50,6 +44,12 @@
      "kind": "low",
      "temp": 48,
      "text": "Partly cloudy, with a low around 48."
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 72,
+     "text": "Mostly sunny, with a high near 72."
     }
    ]
   },
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -79,23 +79,17 @@
   "weather": {
    "now": {
     "temp": 57,
-    "cond": "Overcast",
-    "wind": "W 18 mph, gusts to 32 mph",
-    "humidity": 58,
-    "obs": "8 Nov 13:54 pm EST"
+    "cond": "Mostly Cloudy",
+    "wind": "W 18 mph, gusts to 28 mph",
+    "humidity": 55,
+    "obs": "8 Nov 14:54 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 59,
-     "text": "Mostly cloudy early, then becoming sunny, with a high near 59. West wind around 16 mph, with gusts as high as 30 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Partly cloudy, with a low around 44. West wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly cloudy, with a low around 44. West wind 9 to 11 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Monday",
@@ -113,13 +107,19 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly sunny, with a high near 57. West wind 6 to 10 mph. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 57. West wind 6 to 10 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 43,
      "text": "Mostly clear, with a low around 43. Southwest wind around 7 mph. "
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 59,
+     "text": "Sunny, with a high near 59. West wind 6 to 10 mph. "
     }
    ]
   },
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -193,11 +193,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "Mostly Cloudy",
-    "wind": "W 14 mph",
-    "humidity": 58,
-    "obs": "8 Nov 12:53 pm CST"
+    "temp": 60,
+    "cond": "A Few Clouds",
+    "wind": "W 15 mph, gusts to 26 mph",
+    "humidity": 46,
+    "obs": "8 Nov 13:53 pm CST"
    },
    "periods": [
     {
@@ -250,7 +250,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -275,11 +275,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 67,
     "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 20,
-    "obs": "8 Nov 11:58 am MST"
+    "wind": "SW 6 mph",
+    "humidity": 17,
+    "obs": "8 Nov 12:58 pm MST"
    },
    "periods": [
     {
@@ -332,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -390,17 +390,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 86,
-    "wind": "SW 1 mph",
+    "temp": 87,
+    "wind": "S 3 mph",
     "humidity": 18,
-    "obs": "08 Nov 11:40 AM PST"
+    "obs": "08 Nov 11:55 AM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 85,
-     "text": "Sunny, with a high near 85. Northeast wind around 5 mph becoming west northwest in the afternoon. "
+     "text": "Sunny, with a high near 85. Northeast wind around 5 mph becoming west northwest. "
     },
     {
      "name": "Tonight",
@@ -446,7 +446,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -542,12 +542,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 58,
-     "text": "Sunny, with a steady temperature around 58. West wind around 14 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
@@ -575,7 +569,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Clear, with a low around 50."
+     "text": "Clear, with a low around 50. West wind around 10 mph. "
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 61,
+     "text": "Sunny, with a high near 61."
     }
    ]
   },
@@ -591,7 +591,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -685,7 +685,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "goodnews": []
  },
  {
@@ -697,18 +697,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 59,
     "cond": "Clear",
     "wind": "S 11 mph",
-    "humidity": 67,
-    "obs": "08 Nov 11:35 AM PST"
+    "humidity": 62,
+    "obs": "08 Nov 11:53 AM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 56,
-     "text": "Partly sunny, with a high near 56. South southwest wind 8 to 13 mph. "
+     "text": "Partly sunny, with a high near 56. South southwest wind 8 to 11 mph. "
     },
     {
      "name": "Tonight",
@@ -754,7 +754,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T20:11:00Z",
+  "updatedAt": "2026-11-08T23:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

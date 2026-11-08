@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T20:11:00Z",
+ "updatedAt": "2026-11-08T23:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -107,6 +107,16 @@
  ],
  "politics": [
   {
+   "h": "Midterms energized abuse survivors as a political force",
+   "b": "In Ohio, Democrat Amy Acton won the governor's race by 8 points after Vivek Ramaswamy spent $4 million on an ad questioning her account of childhood abuse, which court records confirmed. Survivors told The 19th the ad pushed them to get involved.",
+   "date": "2026-11-08",
+   "publisher": "PBS NewsHour",
+   "title": "The midterms energized a powerful political constituency: abuse survivors",
+   "url": "https://www.pbs.org/newshour/politics/the-midterms-energized-a-powerful-political-constituency-abuse-survivors",
+   "published": "2026-11-08T18:41:30Z",
+   "gathered": "2026-11-08T20:11:54Z"
+  },
+  {
    "h": "Staff at US AI safety center told to report to the White House, AP sources say",
    "b": "The Commerce Department division that assesses new AI systems lacks a permanent leader and has stopped publishing its research, according to two former officials.",
    "date": "2026-11-08",
@@ -157,10 +167,7 @@
    "h": "Trump says he asked Dana White to be press secretary",
    "b": "Trump posted the offer to the UFC chief on social media. The White House did not respond to questions about it.",
    "date": "2026-11-07",
-   "publisher": "PBS NewsHour",
-   "title": "Trump says he's asked UFC's Dana White to be his press secretary",
    "url": "https://www.pbs.org/newshour/politics/trump-says-hes-asked-ufcs-dana-white-to-be-his-press-secretary",
-   "published": "2026-11-07T20:55:40Z",
    "gathered": "2026-11-07T21:01:28Z"
   },
   {
@@ -577,12 +584,6 @@
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 58,
-    "text": "Sunny, with a steady temperature around 58. West wind around 14 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
     "temp": 51,
@@ -610,7 +611,13 @@
     "name": "Tuesday Night",
     "kind": "low",
     "temp": 50,
-    "text": "Clear, with a low around 50."
+    "text": "Clear, with a low around 50. West wind around 10 mph. "
+   },
+   {
+    "name": "Veterans Day",
+    "kind": "high",
+    "temp": 61,
+    "text": "Sunny, with a high near 61."
    }
   ]
  },
