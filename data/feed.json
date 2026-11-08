@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-08T05:12:00Z",
+ "updatedAt": "2026-11-08T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "US launches task force to cut Iran's land supply routes",
+   "b": "CENTCOM's new Task Force Iron Gate, based in Tampa, will work to stop weapons, dual-use technology, sanctioned materials and illegal revenue from crossing Iran's land borders and the Caspian Sea. Commander Adm. Brad Cooper said it will reinforce the US blockade at sea.",
+   "date": "2026-11-08",
+   "publisher": "Al Jazeera",
+   "title": "US launches task force to disrupt Iran’s land-based supply routes",
+   "url": "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes",
+   "gathered": "2026-11-08T07:45:34Z"
+  },
   {
    "h": "Pope Leo urges Uruguayans to be 'bridge builders'",
    "b": "About 40,000 people attended the first Mass of his South American tour, which had been in doubt after his surgery.",
@@ -39,11 +48,11 @@
    "gathered": "2026-11-07T05:14:59Z"
   },
   {
-   "h": "Blasts heard in Iran's Qeshm and Bandar Abbas as US moves to block land routes",
+   "h": "US moves to block Iran's land supply routes as UAE rescues 22 from burning ship",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-08",
    "publisher": "Al Jazeera",
-   "title": "Blasts heard in Iran’s Qeshm, Bandar Abbas as US moves to block land routes",
+   "title": "US moves to block Iran land supply routes; UAE rescues 22 from burning ship",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes",
    "gathered": "2026-11-08T00:51:01Z"
   }
@@ -146,6 +155,28 @@
  ],
  "international": [
   {
+   "h": "Drone attack on Colombian army base kills three soldiers",
+   "b": "At least 16 more were wounded at a base in Santa Rosa del Sur in northern Colombia. Authorities have not said who carried out the strike, and President Abelardo de la Espriella said those behind it \"will have nowhere to hide.\"",
+   "date": "2026-11-08",
+   "place": "Santa Rosa del Sur, Colombia",
+   "tz": "America/Bogota",
+   "publisher": "Al Jazeera",
+   "title": "Drone attack on Colombian army base kills three soldiers and wounds 16",
+   "url": "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16",
+   "gathered": "2026-11-08T07:45:34Z"
+  },
+  {
+   "h": "Magnitude 5.7 earthquake injures more than 20 in central Japan",
+   "b": "The quake struck at 1:04 a.m. Sunday in western Shizuoka Prefecture, shattering shop windows in Aichi and Shizuoka. No tsunami warning was issued, and the weather agency warned of possible strong quakes in the coming week.",
+   "date": "2026-11-08",
+   "place": "Shizuoka, Japan",
+   "tz": "Asia/Tokyo",
+   "publisher": "Al Jazeera",
+   "title": "Earthquake hits central Japan, injuring more than 20 people",
+   "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people",
+   "gathered": "2026-11-08T07:45:34Z"
+  },
+  {
    "h": "Canary Islands' El Hierro declares emergency over migrant arrivals",
    "b": "More than 3,300 people have reached the island of about 11,400 residents in roughly 30 boats since the start of November. Local leaders asked Madrid for help, and the Canary Islands' regional leader called the situation \"absolutely unsustainable.\"",
    "date": "2026-11-08",
@@ -175,8 +206,6 @@
    "date": "2026-11-07",
    "place": "Paris",
    "tz": "Europe/Paris",
-   "publisher": "Al Jazeera",
-   "title": "More than 140,000 rally as new protests against rising costs sweep France",
    "url": "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france",
    "gathered": "2026-11-07T21:01:28Z"
   },
@@ -207,8 +236,6 @@
    "date": "2026-11-07",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Rains flood 70,000 displaced families’ tents in Gaza",
    "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza",
    "gathered": "2026-11-07T16:57:04Z"
   },
@@ -282,11 +309,20 @@
  ],
  "sports": [
   {
+   "h": "Notre Dame beats No. 1 Miami 31-24",
+   "b": "The Irish win opens the top spot in the rankings. CBS Sports projects Georgia will reclaim No. 1 in Sunday's AP poll after a wire-to-wire win at Ole Miss, with Tennessee moving into the top 10.",
+   "date": "2026-11-07",
+   "publisher": "CBS Sports",
+   "title": "Tomorrow's Top 25 Today: Georgia reclaims No. 1 spot, Tennessee joins top 10 in college football rankings",
+   "url": "https://www.cbssports.com/college-football/news/college-football-rankings-tomorrows-top-25-ap-poll-week-11/",
+   "gathered": "2026-11-08T07:45:34Z"
+  },
+  {
    "h": "Oregon stuns Ohio State in college football's Week 10",
    "b": "No. 23 Oregon won at Ohio State, and No. 3 Utah beat No. 9 BYU in the Holy War rivalry. Ohio State and LSU moved outside the playoff bubble.",
    "date": "2026-11-07",
    "publisher": "CBS Sports",
-   "title": "College football winners, losers: Texas charging down backstretch; is Nebraska cursed?",
+   "title": "College football winners, losers: Texas charging down backstretch; new low for Kyle Whittingham",
    "url": "https://www.cbssports.com/college-football/news/college-football-winners-losers-texas-charging-nebraska-cursed/",
    "gathered": "2026-11-08T02:15:27Z"
   },
@@ -294,8 +330,6 @@
    "h": "No. 5 Alabama routs No. 14 LSU 31-13",
    "b": "LSU led 13-10 in the third quarter before Alabama scored 21 unanswered points, handing Lane Kiffin his sixth straight loss to the Crimson Tide. LSU falls to 6-3.",
    "date": "2026-11-07",
-   "publisher": "CBS Sports",
-   "title": "Lane Kiffin falls flat against Alabama as massive LSU hype crashes into reality",
    "url": "https://www.cbssports.com/college-football/news/lane-kiffin-alabama-lsu-hype-reality/",
    "gathered": "2026-11-08T02:15:27Z"
   },
@@ -331,8 +365,6 @@
    "h": "Luka Doncic's historic start for the Lakers",
    "b": "Doncic has the Lakers atop the West at 8-2, with games of 52 and 53 points so far.",
    "date": "2026-11-07",
-   "publisher": "CBS Sports",
-   "title": "The numbers behind Luka Dončić's historic start are entering the realm of ridiculous",
    "url": "https://www.cbssports.com/nba/news/luka-doncic-lakers-mvp-numbers-historic-start/",
    "gathered": "2026-11-07T16:57:04Z"
   },
@@ -423,41 +455,41 @@
  "weather": {
   "now": {
    "temp": 50,
-   "cond": "A Few Clouds",
-   "wind": "W 3 mph",
-   "humidity": 61,
-   "obs": "7 Nov 20:51 pm EST"
+   "cond": "Overcast",
+   "wind": "W 8 mph, gusts to 20 mph",
+   "humidity": 63,
+   "obs": "8 Nov 01:51 am EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 48,
-    "text": "Partly cloudy, with a low around 48. West wind around 15 mph. "
+    "text": "Mostly cloudy, with a low around 48. West wind 11 to 13 mph, with gusts as high as 23 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 62,
-    "text": "Sunny, with a high near 62. West wind 13 to 16 mph, with gusts as high as 26 mph. "
+    "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 62. West wind 11 to 15 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly clear, with a low around 51. West wind 13 to 15 mph. "
+    "temp": 48,
+    "text": "Mostly clear, with a low around 48. West wind 9 to 13 mph, with gusts as high as 28 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 59,
-    "text": "Mostly sunny, with a high near 59. Northwest wind 15 to 18 mph, with gusts as high as 29 mph. "
+    "text": "Mostly sunny, with a high near 59. Breezy, with a northwest wind 11 to 20 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Mostly clear, with a low around 48. Northwest wind 10 to 14 mph. "
+    "temp": 47,
+    "text": "Mostly clear, with a low around 47. Northwest wind 10 to 13 mph. "
    },
    {
     "name": "Tuesday",
