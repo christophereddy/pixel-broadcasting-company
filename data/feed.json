@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T14:18:00Z",
+ "updatedAt": "2026-11-09T17:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Rubio calls Iran war unpopular but 'necessary'",
    "b": "Secretary of State Marco Rubio said the US is not \"at the verge of a breakthrough\" in talks and called some Iranian demands \"outrageous and ridiculous.\"",
    "date": "2026-11-08",
-   "publisher": "Al Jazeera",
-   "title": "Rubio says war on Iran unpopular but ‘necessary’ to stop nuclear threat",
    "url": "https://www.aljazeera.com/news/2026/11/9/rubio-says-war-on-iran-unpopular-but-necessary-to-stop-nuclear-threat",
    "gathered": "2026-11-09T07:00:29Z"
   },
@@ -93,6 +91,26 @@
  ],
  "politics": [
   {
+   "h": "Firm tied to Trump's sons won nearly $40 million to screen for Ebola, ProPublica reports",
+   "b": "XpresTest has screened travelers at US airports but has never worked with Ebola or provided biosecurity services abroad.",
+   "date": "2026-11-09",
+   "publisher": "ProPublica",
+   "title": "Firm Tied to Trump Sons Won Nearly $40 Million in Federal Funds to Screen for Ebola, Other Diseases",
+   "url": "https://www.propublica.org/article/trump-sons-xwell-xprestest-government-contracts",
+   "published": "2026-11-09T11:00:00Z",
+   "updated": "2026-11-09T11:00:02Z",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
+  {
+   "h": "Trump says his immigration policy may be 'too tough' for voters",
+   "b": "In a 60 Minutes interview after Republicans lost both chambers, Trump said an immigration deal with the new Democratic Congress is \"actually doable.\"",
+   "date": "2026-11-09",
+   "publisher": "Al Jazeera",
+   "title": "Trump says his immigration policy ‘too tough’ for voters",
+   "url": "https://www.aljazeera.com/news/2026/11/9/trump-says-his-immigration-policy-too-tough-for-voters",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
+  {
    "h": "Jeffries backs Hegseth impeachment as Democrats prepare probes",
    "b": "Likely incoming Speaker Hakeem Jeffries said he is \"a hard yes\" on a resolution to impeach Defense Secretary Pete Hegseth, led by outgoing Republican Rep. Thomas Massie. Jeffries said Hegseth \"engineered this reckless and costly war of choice in Iran.\"",
    "date": "2026-11-08",
@@ -123,10 +141,7 @@
    "h": "Staff at US AI safety center told to report to the White House, AP sources say",
    "b": "The Commerce Department division that assesses new AI systems lacks a permanent leader and has stopped publishing its research, according to two former officials.",
    "date": "2026-11-08",
-   "publisher": "PBS NewsHour",
-   "title": "AP sources: Staff at U.S. center for AI safety are reporting to the White House, raising independence concerns",
    "url": "https://www.pbs.org/newshour/politics/staff-at-u-s-center-for-ai-safety-are-reporting-to-the-white-house-raising-independence-concerns",
-   "published": "2026-11-08T18:05:01Z",
    "gathered": "2026-11-08T19:52:21Z"
   },
   {
@@ -139,13 +154,33 @@
  ],
  "international": [
   {
+   "h": "Bangladesh's ousted leader Sheikh Hasina seeks passport to return",
+   "b": "Hasina, sentenced to death in absentia over the 2024 protest crackdown, told Reuters she plans to return from India in December and surrender to a court.",
+   "date": "2026-11-09",
+   "place": "Dhaka, Bangladesh",
+   "tz": "Asia/Dhaka",
+   "publisher": "Al Jazeera",
+   "title": "Ousted PM Sheikh Hasina seeks passport in sign of Bangladesh return plan",
+   "url": "https://www.aljazeera.com/news/2026/11/9/ousted-pm-sheikh-hasina-seeks-passport-in-sign-of-bangladesh-return-plan",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
+  {
+   "h": "Mudslide kills five in Gaza displacement camp",
+   "b": "Four children and a woman died when a sandbank collapsed onto their tent in Deir el-Balah after the first winter storm, and two people remain missing. Residents dug with their bare hands for survivors.",
+   "date": "2026-11-09",
+   "place": "Deir el-Balah, Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Gaza authorities slam global ‘inaction’ after mudslide kills five people",
+   "url": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
+  {
    "h": "Mexico arrests alleged Jalisco cartel leader 'R2'",
    "b": "Rafael Alvarez, suspected of heading CJNG's \"Los Rs\" cell, was wounded in a shootout during his arrest in Zapopan, based on intelligence shared by the US DEA.",
    "date": "2026-11-08",
    "place": "Zapopan, Mexico",
    "tz": "America/Mexico_City",
-   "publisher": "Al Jazeera",
-   "title": "Mexico arrests alleged major leader of Jalisco cartel",
    "url": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel",
    "gathered": "2026-11-09T07:00:29Z"
   },
@@ -155,8 +190,6 @@
    "date": "2026-11-09",
    "place": "Sulaimaniyah, Iraq",
    "tz": "Asia/Baghdad",
-   "publisher": "Al Jazeera",
-   "title": "Drone attack suspends production at Iraq’s Khor Mor gasfield",
    "url": "https://www.aljazeera.com/news/2026/11/9/drone-attack-suspends-production-at-iraqs-khor-mor-gasfield",
    "gathered": "2026-11-09T07:00:29Z"
   },
@@ -256,22 +289,26 @@
  ],
  "business": [
   {
+   "h": "China calls Nvidia spy claims a smear campaign",
+   "b": "Beijing denied trying to ensnare CEO Jensen Huang, who apologized to his wife and company for an affair and said he supports Nvidia's investigation.",
+   "date": "2026-11-09",
+   "publisher": "PBS NewsHour",
+   "title": "China dismisses claims of spy plot involving Nvidia CEO Huang as a smear campaign",
+   "url": "https://www.pbs.org/newshour/world/china-dismisses-claims-of-spy-plot-involving-nvidia-ceo-huang-as-a-smear-campaign",
+   "published": "2026-11-09T13:31:43Z",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
+  {
    "h": "Palantir hires former Sen. Jon Tester ahead of Democratic Congress",
    "b": "Tech companies expecting scrutiny from the incoming majorities are hiring former Democratic lawmakers. Tester said his role is advisory, not lobbying.",
    "date": "2026-11-09",
-   "publisher": "KUOW",
-   "title": "Palantir hires a former Democratic senator as it faces scrutiny in new Congress",
    "url": "https://www.kuow.org/npr-news/2026-11-09/palantir-hires-a-former-democratic-senator-as-it-faces-scrutiny-in-new-congress",
-   "published": "2026-11-09T10:00:00Z",
-   "updated": "2026-11-09T11:12:38Z",
    "gathered": "2026-11-09T11:17:12Z"
   },
   {
    "h": "Asian stocks climb after tech rout",
    "b": "Taiwan's Taiex jumped 5.72% and Japan's Nikkei 225 rose 3.45% on Monday, following a Friday rebound on Wall Street. US stock futures also edged higher.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "Asian stock markets climb after earlier tech rout",
    "url": "https://www.aljazeera.com/economy/2026/11/9/asian-stock-markets-climb-after-earlier-tech-rout",
    "gathered": "2026-11-09T07:00:29Z"
   },
@@ -279,8 +316,6 @@
    "h": "Nvidia investigates CEO Jensen Huang over relationship",
    "b": "The board opened a probe after Huang confirmed an intimate relationship with a woman accused of working for Chinese intelligence. The board said it has no reason to believe national security or company secrets were compromised, and Huang will keep leading Nvidia.",
    "date": "2026-11-08",
-   "publisher": "Al Jazeera",
-   "title": "US chipmaker Nvidia investigates CEO Jensen Huang over affair",
    "url": "https://www.aljazeera.com/news/2026/11/8/us-chipmaker-nvidia-investigates-ceo-jensen-huang-over-affair",
    "gathered": "2026-11-08T23:54:10Z"
   }
@@ -306,6 +341,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "Jaguars acquire All-Pro safety Jessie Bates III from Falcons",
+   "b": "Atlanta gets a 2027 second-round pick and a 2028 fifth-round pick. Jacksonville is 6-2, and the NFL trade deadline is Tuesday.",
+   "date": "2026-11-09",
+   "publisher": "CBS Sports",
+   "title": "Jaguars acquire All-Pro safety Jessie Bates III from Falcons ahead of NFL trade deadline",
+   "url": "https://www.cbssports.com/nfl/news/jessie-bates-trade-jaguars-falcons-nfl-deadline-2026/",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
   {
    "h": "Jonathan Taylor says goodbye to Indianapolis as trade deadline nears",
    "b": "The Colts running back thanked the city after a 27-23 loss to Dallas, saying he plays every game like it's his last. The NFL trade deadline is Tuesday.",
@@ -399,6 +443,16 @@
  ],
  "local": [
   {
+   "h": "One dead in Hamilton Heights apartment fire",
+   "b": "The fire started in a cluttered third-floor unit of a Riverside Drive building around 1:30 a.m. Five others, including two firefighters, were hurt. FDNY says 87 people have died in fires this year, up from 45 at this point last year.",
+   "date": "2026-11-09",
+   "publisher": "Gothamist",
+   "title": "1 dead after early morning fire rips through Hamilton Heights apartment building, FDNY says",
+   "url": "https://gothamist.com/news/1-dead-after-early-morning-fire-rips-through-hamilton-heights-apartment-building-fdny-says",
+   "published": "2026-11-09T12:36:00Z",
+   "gathered": "2026-11-09T14:18:34Z"
+  },
+  {
    "h": "NYC expands Code Blue cold-weather help for homeless New Yorkers",
    "b": "The city is adding $25 million, 300 more outreach workers and 800 more beds for nights below freezing. More than two dozen people died in the cold last winter.",
    "date": "2026-11-09",
@@ -432,18 +486,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
-   "cond": "A Few Clouds",
-   "wind": "W 3 mph",
-   "humidity": 50,
-   "obs": "9 Nov 05:51 am EST"
+   "temp": 54,
+   "cond": "Mostly Cloudy",
+   "wind": "SW 8 mph",
+   "humidity": 53,
+   "obs": "9 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 59,
-    "text": "Mostly sunny, with a high near 59. West wind 13 to 18 mph, with gusts as high as 29 mph. "
+    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 59. Northwest wind 14 to 18 mph, with gusts as high as 32 mph. "
    },
    {
     "name": "Tonight",

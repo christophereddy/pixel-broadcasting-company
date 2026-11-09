@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Fair",
+    "temp": 53,
+    "cond": "A Few Clouds",
     "wind": "NW 12 mph",
-    "humidity": 69,
-    "obs": "9 Nov 05:52 am EST"
+    "humidity": 57,
+    "obs": "9 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,48 +78,48 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Overcast",
-    "wind": "W 12 mph",
-    "humidity": 61,
-    "obs": "9 Nov 04:54 am EST"
+    "temp": 52,
+    "cond": "Mostly Cloudy",
+    "wind": "W 12 mph, gusts to 20 mph",
+    "humidity": 57,
+    "obs": "9 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 58,
-     "text": "A slight chance of showers between 11am and noon.  Partly sunny, with a high near 58. West wind 6 to 10 mph.  Chance of precipitation is 20%."
+     "text": "Isolated showers after noon.  Mostly cloudy, with a high near 58. West wind 11 to 15 mph, with gusts as high as 26 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 41,
-     "text": "Increasing clouds, with a low around 41. West wind 5 to 8 mph. "
+     "temp": 44,
+     "text": "Partly cloudy, with a low around 44. West wind 10 to 15 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 57,
-     "text": "Mostly cloudy, then becoming sunny during the afternoon, with a high near 57. West wind 6 to 10 mph. "
+     "temp": 59,
+     "text": "Mostly sunny, with a high near 59. West wind 9 to 14 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Mostly clear, with a low around 44. West wind 6 to 8 mph. "
+     "temp": 46,
+     "text": "Mostly clear, with a low around 46. West wind 11 to 13 mph. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
-     "temp": 58,
-     "text": "Sunny, with a high near 58. West wind 5 to 9 mph. "
+     "temp": 57,
+     "text": "Sunny, with a high near 57. Northwest wind 8 to 13 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 39,
-     "text": "Partly cloudy, with a low around 39. Calm wind. "
+     "temp": 40,
+     "text": "Mostly cloudy, with a low around 40. Light and variable wind becoming northeast 5 to 9 mph after midnight. "
     }
    ]
   },
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -146,6 +146,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago voters back a permanent festival grounds",
+    "b": "68% supported a non-binding measure for a Summerfest-style site for music festivals, but there are no clear next steps.",
+    "date": "2026-11-09",
+    "publisher": "WBEZ",
+    "title": "Chicagoans overwhelmingly support a permanent festival grounds like Milwaukee’s Summerfest. What’s next?",
+    "url": "https://www.wbez.org/arts-culture/2026/11/09/chicago-ballot-measure-permanent-festival-grounds-milwaukee-summerfest",
+    "published": "2026-11-09T11:35:00Z",
+    "updated": "2026-11-09T11:35:01Z",
+    "gathered": "2026-11-09T14:18:34Z"
+   },
    {
     "h": "An inside look at Illinois' newest senator, Juliana Stratton",
     "b": "The lieutenant governor and proud South Sider will join Sen. Tammy Duckworth, making Illinois the first state with two women of color serving in the Senate at the same time.",
@@ -171,18 +182,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
+    "temp": 44,
     "cond": "A Few Clouds",
     "wind": "Calm",
-    "humidity": 86,
-    "obs": "9 Nov 04:53 am CST"
+    "humidity": 79,
+    "obs": "9 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59. Northwest wind 5 to 10 mph becoming south southwest in the afternoon. "
+     "text": "Mostly sunny, with a high near 59. West northwest wind 5 to 10 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -228,7 +239,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -240,13 +251,7 @@
   },
   "local": [],
   "weather": {
-   "now": {
-    "temp": 47,
-    "cond": "A Few Clouds",
-    "wind": "S 8 mph",
-    "humidity": 43,
-    "obs": "9 Nov 01:58 am MST"
-   },
+   "now": null,
    "periods": [
     {
      "name": "Today",
@@ -298,7 +303,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -323,20 +328,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 68,
     "wind": "N 1 mph",
-    "humidity": 33,
-    "obs": "09 Nov 03:10 AM PST"
+    "humidity": 35,
+    "obs": "09 Nov 06:10 AM PST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 84,
      "text": "Mostly sunny, with a high near 84. North northeast wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 62,
      "text": "Partly cloudy, with a low around 62. Northwest wind around 5 mph becoming north northeast after midnight. "
@@ -357,7 +362,7 @@
      "name": "Veterans Day",
      "kind": "high",
      "temp": 87,
-     "text": "Sunny, with a high near 87."
+     "text": "Sunny, with a high near 87. North northeast wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Wednesday Night",
@@ -379,7 +384,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -390,6 +395,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "One dead in Hamilton Heights apartment fire",
+    "b": "The fire started in a cluttered third-floor unit of a Riverside Drive building around 1:30 a.m. Five others, including two firefighters, were hurt. FDNY says 87 people have died in fires this year, up from 45 at this point last year.",
+    "date": "2026-11-09",
+    "publisher": "Gothamist",
+    "title": "1 dead after early morning fire rips through Hamilton Heights apartment building, FDNY says",
+    "url": "https://gothamist.com/news/1-dead-after-early-morning-fire-rips-through-hamilton-heights-apartment-building-fdny-says",
+    "published": "2026-11-09T12:36:00Z",
+    "gathered": "2026-11-09T14:18:34Z"
+   },
    {
     "h": "NYC expands Code Blue cold-weather help for homeless New Yorkers",
     "b": "The city is adding $25 million, 300 more outreach workers and 800 more beds for nights below freezing. More than two dozen people died in the cold last winter.",
@@ -424,18 +439,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "A Few Clouds",
-    "wind": "W 3 mph",
-    "humidity": 50,
-    "obs": "9 Nov 05:51 am EST"
+    "temp": 54,
+    "cond": "Mostly Cloudy",
+    "wind": "SW 8 mph",
+    "humidity": 53,
+    "obs": "9 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59. West wind 13 to 18 mph, with gusts as high as 29 mph. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 59. Northwest wind 14 to 18 mph, with gusts as high as 32 mph. "
     },
     {
      "name": "Tonight",
@@ -481,7 +496,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -525,25 +540,28 @@
   },
   "local": [
    {
+    "h": "Judo champion Teddy Riner runs for French president",
+    "b": "The Olympic star announced a 2027 bid, citing concern about the rise of the far right as Marine Le Pen leads the polls.",
+    "date": "2026-11-09",
+    "publisher": "The Local France",
+    "title": "Olympic judo champion Riner joins fight for French presidency",
+    "url": "https://www.thelocal.fr/20261109/olympic-judo-champion-riner-joins-fight-for-french-presidency",
+    "published": "2026-11-09T13:51:33Z",
+    "updated": "2026-11-09T13:51:34Z",
+    "gathered": "2026-11-09T14:18:34Z"
+   },
+   {
     "h": "Teachers and students call strikes and protests for Tuesday",
     "b": "Education unions and student groups plan a nationwide mobilization on Nov. 10 with a major march in Paris, citing staffing and funding concerns.",
     "date": "2026-11-09",
-    "publisher": "The Local France",
-    "title": "French students and teachers call fresh strikes and protests on November 10th",
     "url": "https://www.thelocal.fr/20261109/french-students-and-teachers-call-fresh-strikes-and-protests-on-november-10th",
-    "published": "2026-11-09T11:13:38Z",
-    "updated": "2026-11-09T11:13:39Z",
     "gathered": "2026-11-09T11:17:12Z"
    },
    {
     "h": "France investigates whether foreign powers sent airline bomb threats",
     "b": "Paris prosecutors opened a probe into hoax bomb threats against dozens of flights in Europe over the past week. No explosives have been found.",
     "date": "2026-11-08",
-    "publisher": "The Local France",
-    "title": "France probes if bomb threats against airlines linked to 'foreign powers'",
     "url": "https://www.thelocal.fr/20261108/france-probes-if-bomb-threats-against-airlines-linked-to-foreign-powers",
-    "published": "2026-11-08T09:06:41Z",
-    "updated": "2026-11-08T09:06:42Z",
     "gathered": "2026-11-08T11:12:02Z"
    },
    {
@@ -570,7 +588,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "goodnews": []
  },
  {
@@ -591,20 +609,20 @@
   "weather": {
    "now": {
     "temp": 46,
-    "cond": "Overcast",
-    "wind": "S 3 mph",
+    "cond": "Mostly Cloudy",
+    "wind": "Calm",
     "humidity": 87,
-    "obs": "09 Nov 03:05 AM PST"
+    "obs": "09 Nov 05:55 AM PST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
      "text": "Rain, mainly after 2pm.  High near 56. Calm wind becoming south around 6 mph in the afternoon.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Rain before 4am, then a slight chance of rain after 5am.  Low around 49. South wind 7 to 14 mph, with gusts as high as 22 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
@@ -625,7 +643,7 @@
      "name": "Veterans Day",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly cloudy, with a high near 65."
+     "text": "Mostly cloudy, with a high near 65. South southeast wind around 7 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -647,7 +665,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T14:18:00Z",
+  "updatedAt": "2026-11-09T17:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
