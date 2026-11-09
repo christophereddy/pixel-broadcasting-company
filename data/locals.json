@@ -8,15 +8,15 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "A Few Clouds",
-    "wind": "NW 12 mph",
-    "humidity": 57,
-    "obs": "9 Nov 08:52 am EST"
+    "temp": 68,
+    "cond": "Partly Cloudy",
+    "wind": "NW 7 mph",
+    "humidity": 35,
+    "obs": "9 Nov 11:52 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 72,
      "text": "Sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
@@ -25,31 +25,31 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "Partly cloudy, with a low around 46. Northwest wind around 5 mph. "
+     "text": "Mostly clear, with a low around 46. Northwest wind around 5 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 71,
-     "text": "Partly sunny, with a high near 71. Northwest wind around 5 mph. "
+     "text": "Mostly sunny, with a high near 71. Northwest wind around 5 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48. Northwest wind around 5 mph becoming calm. "
+     "text": "Mostly clear, with a low around 48. Northwest wind around 5 mph. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
      "temp": 71,
-     "text": "Mostly sunny, with a high near 71. West wind 5 to 10 mph. "
+     "text": "Mostly sunny, with a high near 71. West wind around 5 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Partly cloudy, with a low around 52."
+     "text": "A 20 percent chance of showers after 1am.  Partly cloudy, with a low around 52."
     }
    ]
   },
@@ -65,9 +65,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "atlanta-ga",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Atlanta's Iranian community unveils giant Cyrus the Great statue",
+    "b": "The 29-foot bronze by Atlanta artist Stan Mullins stands in Midtown's Pardis Park after a five-year effort led by Rostam Zafari of the nonprofit Nimruz.",
+    "date": "2026-11-09",
+    "publisher": "WABE",
+    "title": "Atlanta's Iranian community unveils massive Cyrus the Great statue",
+    "url": "https://www.wabe.org/atlantas-iranian-community-unveils-massive-cyrus-the-great-statue/",
+    "published": "2026-11-09T14:44:00Z",
+    "updated": "2026-11-09T15:29:45Z",
+    "gathered": "2026-11-09T17:44:16Z"
+   }
+  ]
  },
  {
   "location": {
@@ -78,18 +90,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 56,
     "cond": "Mostly Cloudy",
-    "wind": "W 12 mph, gusts to 20 mph",
-    "humidity": 57,
-    "obs": "9 Nov 08:54 am EST"
+    "wind": "W 16 mph, gusts to 29 mph",
+    "humidity": 55,
+    "obs": "9 Nov 11:54 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 58,
-     "text": "Isolated showers after noon.  Mostly cloudy, with a high near 58. West wind 11 to 15 mph, with gusts as high as 26 mph.  Chance of precipitation is 20%."
+     "text": "A chance of rain, mainly before 3pm.  Mostly cloudy, with a high near 58. West wind around 15 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -135,7 +147,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -182,18 +194,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 56,
     "cond": "A Few Clouds",
-    "wind": "Calm",
-    "humidity": 79,
-    "obs": "9 Nov 07:53 am CST"
+    "wind": "SW 5 mph",
+    "humidity": 55,
+    "obs": "9 Nov 10:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59. West northwest wind 5 to 10 mph becoming south southwest in the afternoon. "
+     "text": "Mostly sunny, with a high near 59. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Tonight",
@@ -239,7 +251,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -249,15 +261,32 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Denver and Littleton sue Bow Mar over gates on South Sheridan",
+    "b": "The two cities are taking the small town to court over its plan to gate South Sheridan Boulevard.",
+    "date": "2026-11-09",
+    "publisher": "Denverite",
+    "title": "The battle over Bow Mar’s gates is going to court",
+    "url": "https://denverite.com/2026/11/09/bow-mar-gates-lawsuit/",
+    "published": "2026-11-09T17:31:45Z",
+    "gathered": "2026-11-09T17:44:16Z"
+   }
+  ],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 58,
+    "cond": "A Few Clouds",
+    "wind": "S 10 mph",
+    "humidity": 21,
+    "obs": "9 Nov 08:58 am MST"
+   },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 71,
-     "text": "Sunny, with a high near 71. South southwest wind 5 to 7 mph becoming light and variable. "
+     "text": "Sunny, with a high near 71. Light and variable wind becoming east around 6 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -303,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -328,10 +357,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "wind": "N 1 mph",
-    "humidity": 35,
-    "obs": "09 Nov 06:10 AM PST"
+    "temp": 77,
+    "wind": "NW 2 mph",
+    "humidity": 30,
+    "obs": "09 Nov 09:10 AM PST"
    },
    "periods": [
     {
@@ -384,7 +413,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -395,6 +424,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NJ Gov. Sherrill picks Shirley Emehelu as lieutenant governor",
+    "b": "The former prosecutor and acting secretary of state replaces Dale Caldwell, who resigned in September. Women now hold New Jersey's two highest executive offices for the first time.",
+    "date": "2026-11-09",
+    "publisher": "Gothamist",
+    "title": "NJ Gov. Sherrill announces her new lieutenant governor pick",
+    "url": "https://gothamist.com/news/nj-gov-sherrill-to-announce-her-new-lieutenant-governor-pick",
+    "published": "2026-11-09T15:26:00Z",
+    "gathered": "2026-11-09T17:44:16Z"
+   },
    {
     "h": "One dead in Hamilton Heights apartment fire",
     "b": "The fire started in a cluttered third-floor unit of a Riverside Drive building around 1:30 a.m. Five others, including two firefighters, were hurt. FDNY says 87 people have died in fires this year, up from 45 at this point last year.",
@@ -432,25 +471,24 @@
     "publisher": "Gothamist",
     "title": "Brooklyn woman killed after tumbling from a moving SUV on the BQE near Brooklyn Bridge",
     "url": "https://gothamist.com/news/woman-dies-after-falling-from-a-moving-car-near-the-brooklyn-bridge",
-    "published": "2026-11-08T14:16:00Z",
-    "updated": "2026-11-08T19:00:00Z",
+    "published": "2026-11-08T19:00:00Z",
     "gathered": "2026-11-08T15:29:30Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 57,
     "cond": "Mostly Cloudy",
-    "wind": "SW 8 mph",
-    "humidity": 53,
-    "obs": "9 Nov 08:51 am EST"
+    "wind": "NW 14 mph, gusts to 23 mph",
+    "humidity": 47,
+    "obs": "9 Nov 11:51 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 59. Northwest wind 14 to 18 mph, with gusts as high as 32 mph. "
+     "text": "Mostly sunny, with a high near 59. Northwest wind around 18 mph, with gusts as high as 32 mph. "
     },
     {
      "name": "Tonight",
@@ -496,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -543,11 +581,7 @@
     "h": "Judo champion Teddy Riner runs for French president",
     "b": "The Olympic star announced a 2027 bid, citing concern about the rise of the far right as Marine Le Pen leads the polls.",
     "date": "2026-11-09",
-    "publisher": "The Local France",
-    "title": "Olympic judo champion Riner joins fight for French presidency",
     "url": "https://www.thelocal.fr/20261109/olympic-judo-champion-riner-joins-fight-for-french-presidency",
-    "published": "2026-11-09T13:51:33Z",
-    "updated": "2026-11-09T13:51:34Z",
     "gathered": "2026-11-09T14:18:34Z"
    },
    {
@@ -588,7 +622,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "goodnews": []
  },
  {
@@ -608,42 +642,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Mostly Cloudy",
-    "wind": "Calm",
-    "humidity": 87,
-    "obs": "09 Nov 05:55 AM PST"
+    "temp": 48,
+    "cond": "Clear",
+    "wind": "S 4 mph",
+    "humidity": 81,
+    "obs": "09 Nov 09:05 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Rain, mainly after 2pm.  High near 56. Calm wind becoming south around 6 mph in the afternoon.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly after 2pm.  High near 56. Calm wind becoming southeast around 5 mph in the afternoon.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 49,
-     "text": "Rain before 4am, then a slight chance of rain after 5am.  Low around 49. South wind 7 to 14 mph, with gusts as high as 22 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain before 4am, then a slight chance of rain after 5am.  Low around 49. South wind 7 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 57,
-     "text": "Rain, mainly after 8am.  High near 57. Southeast wind around 7 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly after 8am.  High near 57. Southeast wind around 8 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 53,
-     "text": "Rain, mainly before 10pm.  Low around 53. South southeast wind around 9 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly before 10pm.  Low around 53. South southeast wind around 10 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly cloudy, with a high near 65. South southeast wind around 7 mph. "
+     "text": "Mostly cloudy, with a high near 65. South wind around 9 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -665,7 +699,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T17:14:00Z",
+  "updatedAt": "2026-11-09T20:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
