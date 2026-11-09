@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T20:13:00Z",
+ "updatedAt": "2026-11-09T23:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,16 +35,26 @@
    "gathered": "2026-11-08T07:45:34Z"
   },
   {
-   "h": "Diplomacy ramps up as fears of new US strikes on Iran reverberate",
+   "h": "Diplomacy intensifies as Qatar's prime minister meets Trump",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-09",
    "publisher": "Al Jazeera",
-   "title": "Diplomacy ramps up as fears of new US strikes on Iran reverberate",
+   "title": "Diplomacy intensifies as Qatar PM meets Trump",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq",
    "gathered": "2026-11-09T02:14:52Z"
   }
  ],
  "national": [
+  {
+   "h": "Two security breaches near White House prompt brief lockdown",
+   "b": "A vehicle crash and a person jumping a barrier at Lafayette Park happened around the same time Monday morning while Trump was in the residence. The lockdown lifted an hour later.",
+   "date": "2026-11-09",
+   "place": "Washington, D.C.",
+   "publisher": "Al Jazeera",
+   "title": "Two security breaches near White House prompt brief lockdown",
+   "url": "https://www.aljazeera.com/news/2026/11/9/two-security-breaches-near-white-house-prompt-brief-lockdown",
+   "gathered": "2026-11-09T20:13:15Z"
+  },
   {
    "h": "Nebraska cancer patient lost Medicaid under rushed work rules",
    "b": "Eli McCreary of Omaha said a hospital told him he was no longer insured, and a call center said he had not met the new work requirement.",
@@ -83,6 +93,25 @@
  ],
  "politics": [
   {
+   "h": "Biden memoir says Trump should carry Jan. 6 'to his grave'",
+   "b": "The first excerpt of \"Promise Me, America,\" published by The Atlantic, accuses Trump of trying to \"tear down institutions.\" The full book comes out Nov. 17.",
+   "date": "2026-11-09",
+   "publisher": "PBS NewsHour",
+   "title": "In memoir, Biden says Trump should carry the weight of Jan. 6 riots 'to his grave'",
+   "url": "https://www.pbs.org/newshour/arts/in-memoir-biden-says-trump-should-carry-the-weight-of-jan-6-riots-to-his-grave",
+   "published": "2026-11-09T19:09:14Z",
+   "gathered": "2026-11-09T20:13:15Z"
+  },
+  {
+   "h": "Trump reverses stance and alleges fraud in midterm elections",
+   "b": "Trump questioned the results on Truth Social without evidence. A Pew analysis found pre-election polls understated Democratic margins by at least 2 points in 23 of 27 governor and Senate races.",
+   "date": "2026-11-09",
+   "publisher": "Al Jazeera",
+   "title": "Trump reverses stance, alleges fraud in recent US midterm elections",
+   "url": "https://www.aljazeera.com/news/2026/11/9/trump-reverses-stance-alleges-fraud-in-recent-us-midterm-elections",
+   "gathered": "2026-11-09T20:13:15Z"
+  },
+  {
    "h": "Firm tied to Trump's sons won nearly $40 million to screen for Ebola, ProPublica reports",
    "b": "XpresTest has screened travelers at US airports but has never worked with Ebola or provided biosecurity services abroad.",
    "date": "2026-11-09",
@@ -97,8 +126,6 @@
    "h": "Trump says his immigration policy may be 'too tough' for voters",
    "b": "In a 60 Minutes interview after Republicans lost both chambers, Trump said an immigration deal with the new Democratic Congress is \"actually doable.\"",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "Trump says his immigration policy ‘too tough’ for voters",
    "url": "https://www.aljazeera.com/news/2026/11/9/trump-says-his-immigration-policy-too-tough-for-voters",
    "gathered": "2026-11-09T14:18:34Z"
   },
@@ -298,6 +325,15 @@
  ],
  "business": [
   {
+   "h": "Meta expands automated teen age checks worldwide",
+   "b": "The technology moves users it believes are teens into Teen Account protections even if they list an adult birthday.",
+   "date": "2026-11-09",
+   "publisher": "Al Jazeera",
+   "title": "Meta rolls out automated age checks for teens globally",
+   "url": "https://www.aljazeera.com/news/2026/11/9/meta-rolls-out-automated-age-checks-for-teens-globally",
+   "gathered": "2026-11-09T20:13:15Z"
+  },
+  {
    "h": "China calls Nvidia spy claims a smear campaign",
    "b": "Beijing denied trying to ensnare CEO Jensen Huang, who apologized to his wife and company for an affair and said he supports Nvidia's investigation.",
    "date": "2026-11-09",
@@ -358,8 +394,6 @@
    "h": "College Football Playoff expanding to 24 teams in 2027",
    "b": "The new format has 19 at-large bids, four for Power Four champions and one for the top Group of Six champion, and will eliminate conference championship games, CBS Sports reports.",
    "date": "2026-11-09",
-   "publisher": "CBS Sports",
-   "title": "College Football Playoff expanding to 24 teams: 2027 move has big impact on conference championships, Heisman",
    "url": "https://www.cbssports.com/college-football/news/college-football-playoff-format-expanding-to-24-teams-for-2027-season/",
    "gathered": "2026-11-09T17:44:16Z"
   },
@@ -465,7 +499,7 @@
    "publisher": "Gothamist",
    "title": "NJ Gov. Sherrill announces her new lieutenant governor pick",
    "url": "https://gothamist.com/news/nj-gov-sherrill-to-announce-her-new-lieutenant-governor-pick",
-   "published": "2026-11-09T15:26:00Z",
+   "published": "2026-11-09T16:56:00Z",
    "gathered": "2026-11-09T17:44:16Z"
   },
   {
@@ -512,47 +546,47 @@
  "weather": {
   "now": {
    "temp": 57,
-   "cond": "Mostly Cloudy",
-   "wind": "NW 14 mph, gusts to 23 mph",
-   "humidity": 47,
-   "obs": "9 Nov 11:51 am EST"
+   "cond": "Partly Cloudy",
+   "wind": "W 14 mph, gusts to 23 mph",
+   "humidity": 45,
+   "obs": "9 Nov 14:51 pm EST"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 59,
-    "text": "Mostly sunny, with a high near 59. Northwest wind around 18 mph, with gusts as high as 32 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 49,
-    "text": "Mostly clear, with a low around 49. West wind 10 to 13 mph. "
+    "temp": 48,
+    "text": "Mostly clear, with a low around 48. West wind 9 to 14 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 61,
-    "text": "Partly sunny, then gradually becoming sunny, with a high near 61. West wind 9 to 15 mph. "
+    "text": "Partly sunny, then gradually becoming sunny, with a high near 61. West wind 9 to 15 mph, with gusts as high as 25 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
     "temp": 51,
-    "text": "Clear, with a low around 51. West wind around 10 mph. "
+    "text": "Clear, with a low around 51. West wind 9 to 11 mph. "
    },
    {
     "name": "Veterans Day",
     "kind": "high",
     "temp": 61,
-    "text": "Sunny, with a high near 61. West wind 6 to 9 mph. "
+    "text": "Mostly sunny, with a high near 61. West wind 6 to 8 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Mostly cloudy, with a low around 50."
+    "temp": 51,
+    "text": "Mostly cloudy, with a low around 51. Light and variable wind becoming northeast around 6 mph after midnight. "
+   },
+   {
+    "name": "Thursday",
+    "kind": "high",
+    "temp": 59,
+    "text": "Rain likely, mainly after 1pm.  Mostly cloudy, with a high near 59. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
    }
   ]
  },
