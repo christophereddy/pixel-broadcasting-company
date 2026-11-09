@@ -10,19 +10,19 @@
    "now": {
     "temp": 47,
     "cond": "Fair",
-    "wind": "W 6 mph",
-    "humidity": 83,
-    "obs": "9 Nov 02:52 am EST"
+    "wind": "NW 12 mph",
+    "humidity": 69,
+    "obs": "9 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 72,
      "text": "Sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Partly cloudy, with a low around 46. Northwest wind around 5 mph. "
@@ -43,7 +43,7 @@
      "name": "Veterans Day",
      "kind": "high",
      "temp": 71,
-     "text": "Mostly sunny, with a high near 71."
+     "text": "Mostly sunny, with a high near 71. West wind 5 to 10 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,21 +78,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Light Rain",
-    "wind": "SW 8 mph",
-    "humidity": 71,
-    "obs": "9 Nov 01:54 am EST"
+    "temp": 50,
+    "cond": "Overcast",
+    "wind": "W 12 mph",
+    "humidity": 61,
+    "obs": "9 Nov 04:54 am EST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 58,
-     "text": "A slight chance of showers between 11am and noon.  Partly sunny, with a high near 58. West wind 7 to 10 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of showers between 11am and noon.  Partly sunny, with a high near 58. West wind 6 to 10 mph.  Chance of precipitation is 20%."
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 41,
      "text": "Increasing clouds, with a low around 41. West wind 5 to 8 mph. "
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -171,27 +171,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 41,
     "cond": "A Few Clouds",
-    "wind": "NW 3 mph",
-    "humidity": 80,
-    "obs": "9 Nov 01:53 am CST"
+    "wind": "Calm",
+    "humidity": 86,
+    "obs": "9 Nov 04:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. Northwest wind 5 to 10 mph. "
-    },
-    {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "Mostly sunny, with a high near 59. Northwest wind 5 to 10 mph becoming south southwest in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Mostly cloudy, then gradually becoming clear, with a low around 46. South southwest wind around 10 mph becoming west northwest after midnight. Winds could gust as high as 15 mph. "
@@ -212,7 +206,13 @@
      "name": "Veterans Day",
      "kind": "high",
      "temp": 54,
-     "text": "A 40 percent chance of showers after noon.  Mostly cloudy, with a high near 54."
+     "text": "A 40 percent chance of showers after noon.  Mostly cloudy, with a high near 54. Light and variable wind becoming north northeast 5 to 10 mph in the morning. Winds could gust as high as 15 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 43."
     }
    ]
   },
@@ -228,7 +228,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -242,26 +242,20 @@
   "weather": {
    "now": {
     "temp": 47,
-    "cond": "Fair",
-    "wind": "S 10 mph",
-    "humidity": 54,
-    "obs": "8 Nov 22:58 pm MST"
+    "cond": "A Few Clouds",
+    "wind": "S 8 mph",
+    "humidity": 43,
+    "obs": "9 Nov 01:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 41,
-     "text": "Clear, with a low around 41. Southwest wind around 6 mph. "
-    },
-    {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 71,
      "text": "Sunny, with a high near 71. South southwest wind 5 to 7 mph becoming light and variable. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Mostly clear, with a low around 39. West wind around 5 mph becoming calm  in the evening. "
@@ -282,7 +276,13 @@
      "name": "Veterans Day",
      "kind": "high",
      "temp": 63,
-     "text": "Sunny, with a high near 63."
+     "text": "Sunny, with a high near 63. Southwest wind around 5 mph becoming calm  in the afternoon. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 38,
+     "text": "Clear, with a low around 38."
     }
    ]
   },
@@ -298,7 +298,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -323,18 +323,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "wind": "NW 1 mph",
-    "humidity": 39,
-    "obs": "09 Nov 12:10 AM PST"
+    "temp": 69,
+    "wind": "N 1 mph",
+    "humidity": 33,
+    "obs": "09 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 63,
-     "text": "Mostly clear, with a low around 63. North northeast wind around 5 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -364,6 +358,12 @@
      "kind": "high",
      "temp": 87,
      "text": "Sunny, with a high near 87."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 61,
+     "text": "Clear, with a low around 61."
     }
    ]
   },
@@ -379,7 +379,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -390,6 +390,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYC expands Code Blue cold-weather help for homeless New Yorkers",
+    "b": "The city is adding $25 million, 300 more outreach workers and 800 more beds for nights below freezing. More than two dozen people died in the cold last winter.",
+    "date": "2026-11-09",
+    "publisher": "Gothamist",
+    "title": "Mamdani says more help is coming to homeless New Yorkers living outside this winter",
+    "url": "https://gothamist.com/news/mamdani-says-more-help-is-coming-to-homeless-new-yorkers-living-outside-this-winter",
+    "published": "2026-11-09T09:00:45Z",
+    "gathered": "2026-11-09T11:17:12Z"
+   },
    {
     "h": "New York sends 20 Democrats and 6 Republicans to the House",
     "b": "Democrat Cait Conley flipped the Hudson Valley's 17th District by defeating Rep. Mike Lawler. Rep. Nicole Malliotakis remains the city's only Republican in Congress.",
@@ -415,20 +425,20 @@
   "weather": {
    "now": {
     "temp": 52,
-    "cond": "Mostly Cloudy",
-    "wind": "W 6 mph",
-    "humidity": 47,
-    "obs": "9 Nov 02:51 am EST"
+    "cond": "A Few Clouds",
+    "wind": "W 3 mph",
+    "humidity": 50,
+    "obs": "9 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59. West wind 14 to 18 mph, with gusts as high as 29 mph. "
+     "text": "Mostly sunny, with a high near 59. West wind 13 to 18 mph, with gusts as high as 29 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Mostly clear, with a low around 49. West wind 10 to 13 mph. "
@@ -449,7 +459,7 @@
      "name": "Veterans Day",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. West wind 6 to 9 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -471,7 +481,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -515,6 +525,17 @@
   },
   "local": [
    {
+    "h": "Teachers and students call strikes and protests for Tuesday",
+    "b": "Education unions and student groups plan a nationwide mobilization on Nov. 10 with a major march in Paris, citing staffing and funding concerns.",
+    "date": "2026-11-09",
+    "publisher": "The Local France",
+    "title": "French students and teachers call fresh strikes and protests on November 10th",
+    "url": "https://www.thelocal.fr/20261109/french-students-and-teachers-call-fresh-strikes-and-protests-on-november-10th",
+    "published": "2026-11-09T11:13:38Z",
+    "updated": "2026-11-09T11:13:39Z",
+    "gathered": "2026-11-09T11:17:12Z"
+   },
+   {
     "h": "France investigates whether foreign powers sent airline bomb threats",
     "b": "Paris prosecutors opened a probe into hoax bomb threats against dozens of flights in Europe over the past week. No explosives have been found.",
     "date": "2026-11-08",
@@ -529,11 +550,7 @@
     "h": "France marks Armistice Day on Wednesday",
     "b": "Nov. 11 is a public holiday, with parades and wreaths at war memorials and the President laying a wreath at the Tomb of the Unknown Soldier at the Arc de Triomphe. Paris Photo opens Thursday.",
     "date": "2026-11-08",
-    "publisher": "The Local France",
-    "title": "On the Agenda: What's happening in France this week",
     "url": "https://www.thelocal.fr/20261108/on-the-agenda-whats-happening-in-france-this-week-235",
-    "published": "2026-11-08T07:21:04Z",
-    "updated": "2026-11-08T07:21:06Z",
     "gathered": "2026-11-08T07:45:34Z"
    }
   ],
@@ -553,7 +570,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "goodnews": []
  },
  {
@@ -567,29 +584,19 @@
     "h": "Seattle School Board weighs legal action over trans sports ban",
     "b": "The board is poised to vote Monday on challenging Initiative 638, which 56% of Washington voters approved and which requires girls to prove their biological sex to play girls' sports.",
     "date": "2026-11-08",
-    "publisher": "KUOW",
-    "title": "Seattle School Board considers legal action over ban on trans girls in sports",
     "url": "https://www.kuow.org/education/2026-11-08/seattle-school-board-considers-legal-action-over-ban-on-trans-girls-in-sports",
-    "published": "2026-11-09T05:16:32Z",
-    "updated": "2026-11-09T05:16:32Z",
     "gathered": "2026-11-09T07:00:29Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 46,
-    "cond": "Clear",
-    "wind": "Calm",
+    "cond": "Overcast",
+    "wind": "S 3 mph",
     "humidity": 87,
-    "obs": "09 Nov 12:00 AM PST"
+    "obs": "09 Nov 03:05 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "Cloudy, with a low around 44. Calm wind. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -619,6 +626,12 @@
      "kind": "high",
      "temp": 65,
      "text": "Mostly cloudy, with a high near 65."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 51,
+     "text": "Mostly cloudy, with a low around 51."
     }
    ]
   },
@@ -634,7 +647,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T11:17:00Z",
+  "updatedAt": "2026-11-09T14:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
