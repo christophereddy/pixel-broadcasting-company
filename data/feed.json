@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-09T05:12:00Z",
+ "updatedAt": "2026-11-09T08:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Rubio calls Iran war unpopular but 'necessary'",
+   "b": "Secretary of State Marco Rubio said the US is not \"at the verge of a breakthrough\" in talks and called some Iranian demands \"outrageous and ridiculous.\"",
+   "date": "2026-11-08",
+   "publisher": "Al Jazeera",
+   "title": "Rubio says war on Iran unpopular but ‘necessary’ to stop nuclear threat",
+   "url": "https://www.aljazeera.com/news/2026/11/9/rubio-says-war-on-iran-unpopular-but-necessary-to-stop-nuclear-threat",
+   "gathered": "2026-11-09T07:00:29Z"
+  },
   {
    "h": "Iran threatens to 'rain down hell' if US escalates war",
    "b": "Foreign Minister Abbas Araghchi warned the US against escalation. President Trump said renewed strikes are \"highly unlikely\" if talks on Iran's nuclear program and reopening the Strait of Hormuz progress.",
@@ -32,11 +41,11 @@
    "gathered": "2026-11-08T07:45:34Z"
   },
   {
-   "h": "Trump says Iran land blockade in effect as drone cuts power in northern Iraq",
+   "h": "Trump says he expects to talk to Xi and Putin about Iran war at China summit",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-09",
    "publisher": "Al Jazeera",
-   "title": "Trump says Iran land blockade in effect; drone cuts power in northern Iraq",
+   "title": "Trump says he expects to talk to Xi, Putin about Iran war at China summit",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq",
    "gathered": "2026-11-09T02:14:52Z"
   }
@@ -68,8 +77,6 @@
    "h": "Jeffries backs Hegseth impeachment as Democrats prepare probes",
    "b": "Likely incoming Speaker Hakeem Jeffries said he is \"a hard yes\" on a resolution to impeach Defense Secretary Pete Hegseth, led by outgoing Republican Rep. Thomas Massie. Jeffries said Hegseth \"engineered this reckless and costly war of choice in Iran.\"",
    "date": "2026-11-08",
-   "publisher": "Al Jazeera",
-   "title": "Jeffries backs Hegseth impeachment as Democrats vow probes of Trump allies",
    "url": "https://www.aljazeera.com/news/2026/11/9/jeffries-backs-hegseth-impeachment-as-democrats-vow-probes-of-trump-allies",
    "gathered": "2026-11-09T02:14:52Z"
   },
@@ -107,15 +114,33 @@
    "h": "Gen Z voters helped fuel the Democratic wave",
    "b": "Exit polls show Democrats carried voters under 30 by nearly 50 points on Tuesday, a sharp shift from 2024. In Texas, James Talarico won his Senate race by 12 points overall and by 60 among Gen Z.",
    "date": "2026-11-08",
-   "publisher": "KUOW",
-   "title": "How Gen Z voters helped fuel a blue wave for Democrats",
    "url": "https://www.kuow.org/npr-news/2026-11-08/how-gen-z-voters-helped-fuel-a-blue-wave-for-democrats",
-   "published": "2026-11-08T10:00:00Z",
-   "updated": "2026-11-08T10:15:03Z",
    "gathered": "2026-11-08T11:12:02Z"
   }
  ],
  "international": [
+  {
+   "h": "Mexico arrests alleged Jalisco cartel leader 'R2'",
+   "b": "Rafael Alvarez, suspected of heading CJNG's \"Los Rs\" cell, was wounded in a shootout during his arrest in Zapopan, based on intelligence shared by the US DEA.",
+   "date": "2026-11-08",
+   "place": "Zapopan, Mexico",
+   "tz": "America/Mexico_City",
+   "publisher": "Al Jazeera",
+   "title": "Mexico arrests alleged major leader of Jalisco cartel",
+   "url": "https://www.aljazeera.com/news/2026/11/9/mexico-arrests-major-leader-of-jalisco-cartel",
+   "gathered": "2026-11-09T07:00:29Z"
+  },
+  {
+   "h": "Drone attack halts production at Iraq's Khor Mor gasfield",
+   "b": "The strike cut gas to power plants across the Kurdish region, knocking 2,500 to 2,800 megawatts off the grid. It was not clear who carried it out.",
+   "date": "2026-11-09",
+   "place": "Sulaimaniyah, Iraq",
+   "tz": "Asia/Baghdad",
+   "publisher": "Al Jazeera",
+   "title": "Drone attack suspends production at Iraq’s Khor Mor gasfield",
+   "url": "https://www.aljazeera.com/news/2026/11/9/drone-attack-suspends-production-at-iraqs-khor-mor-gasfield",
+   "gathered": "2026-11-09T07:00:29Z"
+  },
   {
    "h": "Pope Leo arrives in Argentina and tells Milei people must come first",
    "b": "In his first speech in Buenos Aires, Leo said \"the economy must serve the person, not the person the economy,\" a subtle critique of President Javier Milei's austerity agenda.",
@@ -134,8 +159,6 @@
    "date": "2026-11-08",
    "place": "Amsterdam, Netherlands",
    "tz": "Europe/Amsterdam",
-   "publisher": "Al Jazeera",
-   "title": "Hundreds of thousands join Amsterdam’s ‘Red Line’ protest against Israel",
    "url": "https://www.aljazeera.com/news/2026/11/8/hundreds-of-thousands-protesters-storm-amsterdam",
    "gathered": "2026-11-08T19:52:21Z"
   },
@@ -214,6 +237,15 @@
  ],
  "business": [
   {
+   "h": "Asian stocks climb after tech rout",
+   "b": "Taiwan's Taiex jumped 5.72% and Japan's Nikkei 225 rose 3.45% on Monday, following a Friday rebound on Wall Street. US stock futures also edged higher.",
+   "date": "2026-11-09",
+   "publisher": "Al Jazeera",
+   "title": "Asian stock markets climb after earlier tech rout",
+   "url": "https://www.aljazeera.com/economy/2026/11/9/asian-stock-markets-climb-after-earlier-tech-rout",
+   "gathered": "2026-11-09T07:00:29Z"
+  },
+  {
    "h": "Nvidia investigates CEO Jensen Huang over relationship",
    "b": "The board opened a probe after Huang confirmed an intimate relationship with a woman accused of working for Chinese intelligence. The board said it has no reason to believe national security or company secrets were compromised, and Huang will keep leading Nvidia.",
    "date": "2026-11-08",
@@ -228,11 +260,7 @@
    "h": "Climate change is shifting the colors of nature",
    "b": "An illustrated NPR project looks at how warming is changing familiar colors, from Arctic landscapes to insect bodies.",
    "date": "2026-11-08",
-   "publisher": "KUOW",
-   "title": "Climate change is altering the colors we see in the world: an illustrated journey",
    "url": "https://www.kuow.org/npr-news/2026-11-08/climate-change-is-altering-the-colors-we-see-in-the-world-an-illustrated-journey",
-   "published": "2026-11-08T11:00:00Z",
-   "updated": "2026-11-08T11:52:03Z",
    "gathered": "2026-11-08T23:54:10Z"
   }
  ],
@@ -324,11 +352,7 @@
    "h": "Chile's Atacama Desert bursts into its biggest bloom in decades",
    "b": "Record El Niño rains turned the world's driest non-polar desert into fields of pink, yellow and purple wildflowers.",
    "date": "2026-11-08",
-   "publisher": "KUOW",
-   "title": "A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades",
    "url": "https://www.kuow.org/npr-news/2026-11-08/a-desert-stirs-to-life-chiles-atacama-erupts-in-its-biggest-floral-display-in-decades",
-   "published": "2026-11-08T11:00:00Z",
-   "updated": "2026-11-08T11:52:14Z",
    "gathered": "2026-11-08T15:29:30Z"
   }
  ],
@@ -357,18 +381,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 52,
    "cond": "Fair",
-   "wind": "W 7 mph",
-   "humidity": 47,
-   "obs": "8 Nov 20:51 pm EST"
+   "wind": "W 3 mph",
+   "humidity": 49,
+   "obs": "9 Nov 01:51 am EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly clear, with a low around 51. West wind around 14 mph. "
+    "temp": 54,
+    "text": "Mostly clear, with a steady temperature around 54. West wind around 14 mph. "
    },
    {
     "name": "Monday",
