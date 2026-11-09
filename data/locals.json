@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 61,
     "cond": "Partly Cloudy",
-    "wind": "S 6 mph",
-    "humidity": 42,
-    "obs": "8 Nov 14:52 pm EST"
+    "wind": "NW 8 mph",
+    "humidity": 56,
+    "obs": "8 Nov 18:52 pm EST"
    },
    "periods": [
     {
@@ -43,7 +43,7 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Partly cloudy, with a low around 48."
+     "text": "Partly cloudy, with a low around 48. West wind around 5 mph. "
     },
     {
      "name": "Veterans Day",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,30 +78,30 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "Mostly Cloudy",
-    "wind": "W 18 mph, gusts to 28 mph",
-    "humidity": 55,
-    "obs": "8 Nov 14:54 pm EST"
+    "temp": 53,
+    "cond": "Partly Cloudy",
+    "wind": "W 16 mph, gusts to 33 mph",
+    "humidity": 59,
+    "obs": "8 Nov 17:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Partly cloudy, with a low around 44. West wind 9 to 11 mph, with gusts as high as 23 mph. "
+     "text": "Partly cloudy, with a low around 44. Southwest wind 6 to 11 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 58,
-     "text": "Isolated showers after 9am.  Partly sunny, with a high near 58. West wind 13 to 15 mph.  Chance of precipitation is 20%."
+     "text": "Partly sunny, with a high near 58. West wind 9 to 11 mph, with gusts as high as 24 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Partly cloudy, with a low around 40. West wind 6 to 15 mph. "
+     "text": "Partly cloudy, with a low around 40. West wind 6 to 11 mph. "
     },
     {
      "name": "Tuesday",
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -156,56 +156,17 @@
     "published": "2026-11-08T11:30:00Z",
     "updated": "2026-11-08T11:30:00Z",
     "gathered": "2026-11-08T15:29:30Z"
-   },
-   {
-    "h": "Chicago Democrats rally in the Loop after midterm wins",
-    "b": "More than 100 supporters gathered at Federal Plaza on Saturday. Representative-elect Daniel Biss told them, \"Y'all did your job, and now it's time for people like me to do our job.\"",
-    "date": "2026-11-07",
-    "publisher": "WBEZ",
-    "title": "After Democrats won big during midterm election, Chicago supporters rally for 'productive change'",
-    "url": "https://www.wbez.org/politics/2026/11/08/after-democrats-won-big-during-midterm-election-chicago-supporters-rally-for-productive-change",
-    "published": "2026-11-08T07:52:57Z",
-    "updated": "2026-11-08T07:52:57Z",
-    "gathered": "2026-11-08T11:12:02Z"
-   },
-   {
-    "h": "Chicago parking attendants reach deal to end strike",
-    "b": "Teamsters Local 727 reached a tentative agreement Friday with the Chicago Parking Association after a strike that began Tuesday at O'Hare, McCormick Place and the Hyatt Regency. The union has nearly 1,200 members.",
-    "date": "2026-11-07",
-    "publisher": "WBEZ",
-    "title": "Chicago parking attendants reach deal with operators to end strike",
-    "url": "https://www.wbez.org/news/2026/11/08/chicago-parking-attendants-reach-deal-with-operators-to-end-strike",
-    "published": "2026-11-08T07:54:07Z",
-    "updated": "2026-11-08T07:54:07Z",
-    "gathered": "2026-11-08T08:12:00Z"
-   },
-   {
-    "h": "Chicago businesses brace for state hemp ban",
-    "b": "THC drinks grew to nearly half of Marz Brewing's production, and its founder says they 'truly rescued our business.'",
-    "date": "2026-11-07",
-    "publisher": "WBEZ",
-    "title": "How Chicago businesses are bracing for the state's hemp ban",
-    "url": "https://www.wbez.org/business/2026/11/07/chicago-businesses-bracing-state-hemp-thc-ban",
-    "published": "2026-11-07T11:30:00Z",
-    "updated": "2026-11-07T16:45:32Z",
-    "gathered": "2026-11-07T16:57:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 56,
     "cond": "A Few Clouds",
-    "wind": "W 15 mph, gusts to 26 mph",
-    "humidity": 46,
-    "obs": "8 Nov 13:53 pm CST"
+    "wind": "W 9 mph",
+    "humidity": 49,
+    "obs": "8 Nov 17:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 58,
-     "text": "Sunny, with a high near 58. West wind around 15 mph, with gusts as high as 25 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -234,7 +195,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Partly cloudy, with a low around 42."
+     "text": "Partly cloudy, with a low around 42. Calm wind becoming west southwest around 5 mph. "
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 55,
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 55."
     }
    ]
   },
@@ -250,21 +217,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "MSI lights its four-story tree",
-    "b": "Families kicked off the holiday season at the museum's annual Tree Lighting and Cultural Festival.",
-    "date": "2026-11-07",
-    "publisher": "WBEZ",
-    "title": "Chicago families kick off holiday season with MSI tree lighting festival",
-    "url": "https://www.wbez.org/museums/2026/11/07/msi-tree-lighting-festival",
-    "published": "2026-11-07T22:25:33Z",
-    "updated": "2026-11-07T22:25:33Z",
-    "gathered": "2026-11-08T00:51:01Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -275,19 +230,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Fair",
-    "wind": "SW 6 mph",
-    "humidity": 17,
-    "obs": "8 Nov 12:58 pm MST"
+    "temp": 69,
+    "cond": "Partly Cloudy",
+    "wind": "Calm",
+    "humidity": 16,
+    "obs": "8 Nov 15:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 69,
-     "text": "Sunny, with a high near 69. Light and variable wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -316,7 +265,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39."
+     "text": "Mostly clear, with a low around 39. West northwest wind 5 to 10 mph becoming light and variable. Winds could gust as high as 16 mph. "
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 64,
+     "text": "Sunny, with a high near 64."
     }
    ]
   },
@@ -332,7 +287,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -353,55 +308,16 @@
     "published": "2026-11-08T18:45:15Z",
     "updated": "2026-11-08T19:09:04Z",
     "gathered": "2026-11-08T19:52:21Z"
-   },
-   {
-    "h": "Long Beach cancels Naples Island Holiday Boat Parade",
-    "b": "Organizers called off the tradition, held since 1946, because expected high tides and heavy surf would make it unsafe. It is the first cancellation in six years for an event that draws about 60,000 spectators.",
-    "date": "2026-11-07",
-    "publisher": "LAist",
-    "title": "Naples Boat Parade canceled as El Niño season threatens dangerously high tides over Christmas week",
-    "url": "https://laist.com/news/los-angeles-activities/naples-boat-parade-canceled-as-el-nino-season-threatens-dangerously-high-tides-over-christmas-week",
-    "published": "2026-11-08T02:51:57Z",
-    "updated": "2026-11-08T05:25:15Z",
-    "gathered": "2026-11-08T07:45:34Z"
-   },
-   {
-    "h": "Boyle Heights rally denounces ICE activity at White Memorial",
-    "b": "Crowds marched to Adventist Health White Memorial after federal immigration agents blockaded the emergency room entrance and detained at least two people. State Sen. Maria Elena Durazo called the agents' actions at the hospital unacceptable.",
-    "date": "2026-11-07",
-    "publisher": "LAist",
-    "title": "Community, LA leaders denounce ICE activity at White Memorial",
-    "url": "https://laist.com/news/politics/community-la-leaders-denounce-ice-activity-at-white-memorial",
-    "published": "2026-11-08T01:41:16Z",
-    "updated": "2026-11-08T17:53:25Z",
-    "gathered": "2026-11-08T02:15:27Z"
-   },
-   {
-    "h": "ICE detains two US citizens protesting at hospital",
-    "b": "Rapid response groups say the protest outside White Memorial Hospital began after people saw someone detained and taken inside.",
-    "date": "2026-11-07",
-    "publisher": "LAist",
-    "title": "ICE detains two US citizens protesting outside White Memorial Hospital, rapid response groups say",
-    "url": "https://laist.com/news/politics/ice-detains-two-u-s-citizens-protesting-outside-white-memorial-hospital-rapid-response-groups-say",
-    "published": "2026-11-07T18:59:41Z",
-    "updated": "2026-11-07T20:07:19Z",
-    "gathered": "2026-11-08T00:51:01Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 87,
-    "wind": "S 3 mph",
-    "humidity": 18,
-    "obs": "08 Nov 11:55 AM PST"
+    "temp": 83,
+    "wind": "Calm",
+    "humidity": 23,
+    "obs": "08 Nov 03:40 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 85,
-     "text": "Sunny, with a high near 85. Northeast wind around 5 mph becoming west northwest. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -431,6 +347,12 @@
      "kind": "low",
      "temp": 63,
      "text": "Clear, with a low around 63."
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 86,
+     "text": "Sunny, with a high near 86."
     }
    ]
   },
@@ -446,21 +368,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": [
-   {
-    "h": "LAUSD coffee cake becomes a wedding cake",
-    "b": "Valley native Micki Boden served the LAUSD coffee cake she ate from kindergarten through high school at her October wedding.",
-    "date": "2026-11-07",
-    "publisher": "LAist",
-    "title": "How LAUSD’s famed coffee cake became this Valley bride’s wedding cake",
-    "url": "https://laist.com/news/los-angeles-activities/lausd-coffee-wedding-cake-san-fernando-valley-bride",
-    "published": "2026-11-07T13:00:00Z",
-    "updated": "2026-11-07T14:24:56Z",
-    "gathered": "2026-11-08T00:51:01Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -489,56 +399,14 @@
     "published": "2026-11-08T14:16:00Z",
     "updated": "2026-11-08T19:00:00Z",
     "gathered": "2026-11-08T15:29:30Z"
-   },
-   {
-    "h": "Judge orders NYC to give ICE names of Bronx shelter residents",
-    "b": "Judge Lewis Kaplan ruled the city must comply with the subpoena. City Hall, which bars agencies from cooperating with ICE, had fought it.",
-    "date": "2026-11-07",
-    "publisher": "Gothamist",
-    "title": "Federal judge rules Mamdani administration must give ICE names of Bronx shelter residents",
-    "url": "https://gothamist.com/news/federal-judge-rules-mamdani-administration-must-give-ice-names-of-bronx-shelter-residents",
-    "published": "2026-11-07T21:49:00Z",
-    "gathered": "2026-11-08T00:51:01Z"
-   },
-   {
-    "h": "Work begins to replace Newark Bay Bridge",
-    "b": "The 1956 span carries about 95,000 vehicles a day. The new bridge is due in 2031 and the old one stays open meanwhile.",
-    "date": "2026-11-07",
-    "publisher": "Gothamist",
-    "title": "Work is underway to replace deteriorating Newark Bay Bridge, a major NY-NJ route",
-    "url": "https://gothamist.com/news/work-is-underway-to-replace-deteriorating-newark-bay-bridge-a-major-ny-nj-route",
-    "published": "2026-11-07T17:30:49Z",
-    "gathered": "2026-11-07T21:01:28Z"
-   },
-   {
-    "h": "Schools employee charged in Brooklyn jogger's murder",
-    "b": "Police charged Sayed Mohassib, 27, in the Oct. 30 stabbing of Katie Suarez on the Shore Parkway path. He has been suspended.",
-    "date": "2026-11-07",
-    "publisher": "Gothamist",
-    "title": "NYPD arrests and charges city schools employee in murder of Brooklyn jogger",
-    "url": "https://gothamist.com/news/nypd-arrests-and-charges-city-schools-employee-man-in-murder-of-brooklyn-jogger",
-    "published": "2026-11-07T18:39:00Z",
-    "updated": "2026-11-07T20:18:00Z",
-    "gathered": "2026-11-07T21:01:28Z"
-   },
-   {
-    "h": "Quest pays $13M over Giants ticket kickbacks",
-    "b": "Prosecutors say the lab company offered clients suite seats and training camp access in exchange for referrals.",
-    "date": "2026-11-07",
-    "publisher": "Gothamist",
-    "title": "Quest Diagnostics pays $13M to settle kickback allegations involving NY Giants tickets",
-    "url": "https://gothamist.com/news/quest-diagnostics-pays-13m-to-settle-kickback-allegations-involving-ny-giants-tickets",
-    "published": "2026-11-07T15:21:15Z",
-    "gathered": "2026-11-07T16:57:04Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 54,
     "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 48,
-    "obs": "8 Nov 14:51 pm EST"
+    "humidity": 51,
+    "obs": "8 Nov 18:51 pm EST"
    },
    "periods": [
     {
@@ -591,9 +459,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Brooklyn jogger killed in stabbing saves four lives through organ donation",
+    "b": "LiveOnNY said Katie Suarez's heart, liver, pancreas and kidneys went to four recipients ages 12 to 75.",
+    "date": "2026-11-08",
+    "publisher": "Gothamist",
+    "title": "Brooklyn jogger killed in stabbing saves 4 lives through organ donations",
+    "url": "https://gothamist.com/news/brooklyn-jogger-killed-in-stabbing-saves-4-lives-through-organ-donations",
+    "published": "2026-11-08T21:25:44Z",
+    "gathered": "2026-11-08T23:54:10Z"
+   },
    {
     "h": "Mamdani expands free produce programs for SNAP recipients",
     "b": "The city is adding funding to Health Bucks and Get the Good Stuff, which matches SNAP spending on fresh or frozen fruits, vegetables and beans dollar for dollar.",
@@ -626,17 +504,6 @@
     "gathered": "2026-11-08T11:12:02Z"
    },
    {
-    "h": "Clashes in Paris as cost-of-living protests enter fourth weekend",
-    "b": "The interior ministry counted 146,000 protesters across France on Saturday, including 46,000 in Paris, fewer than in previous weeks. Police used tear gas at the end of the Paris march against people throwing projectiles and fireworks.",
-    "date": "2026-11-07",
-    "publisher": "The Local France",
-    "title": "Clashes in Paris after new French protests",
-    "url": "https://www.thelocal.fr/20261108/clashes-in-paris-after-new-french-protests",
-    "published": "2026-11-08T07:58:03Z",
-    "updated": "2026-11-08T07:58:03Z",
-    "gathered": "2026-11-08T08:12:00Z"
-   },
-   {
     "h": "France marks Armistice Day on Wednesday",
     "b": "Nov. 11 is a public holiday, with parades and wreaths at war memorials and the President laying a wreath at the Tomb of the Unknown Soldier at the Arc de Triomphe. Paris Photo opens Thursday.",
     "date": "2026-11-08",
@@ -646,27 +513,6 @@
     "published": "2026-11-08T07:21:04Z",
     "updated": "2026-11-08T07:21:06Z",
     "gathered": "2026-11-08T07:45:34Z"
-   },
-   {
-    "h": "Students and teachers call new strike for Tuesday",
-    "b": "Groups say the government is 'starting to yield' and want to broaden the protest movement.",
-    "date": "2026-11-07",
-    "url": "https://www.thelocal.fr/20261107/french-students-and-teachers-call-new-strike-for-tuesday",
-    "gathered": "2026-11-07T16:57:04Z"
-   },
-   {
-    "h": "AFP denounces police violence against reporters",
-    "b": "An AFP photographer wearing a press armband suffered a broken leg from baton blows during a police charge in Lyon.",
-    "date": "2026-11-07",
-    "url": "https://www.thelocal.fr/20261107/french-news-agency-denounces-police-violence-against-reporters-at-protests",
-    "gathered": "2026-11-07T16:57:04Z"
-   },
-   {
-    "h": "Yellow Vests plan banned Paris rally",
-    "b": "Unions and students hold an authorised march against the high cost of living, while the Yellow Vests call a separate rally at Place de la Concorde despite a ban.",
-    "date": "2026-11-07",
-    "url": "https://www.thelocal.fr/20261107/france-braces-for-protests-as-yellow-vests-urge-mass-disobedience",
-    "gathered": "2026-11-07T10:35:19Z"
    }
   ],
   "weather": {
@@ -685,7 +531,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "goodnews": []
  },
  {
@@ -697,24 +543,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 57,
     "cond": "Clear",
-    "wind": "S 11 mph",
+    "wind": "S 9 mph",
     "humidity": 62,
-    "obs": "08 Nov 11:53 AM PST"
+    "obs": "08 Nov 03:35 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Partly sunny, with a high near 56. South southwest wind 8 to 11 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Mostly cloudy, with a low around 44. Light northeast wind. "
+     "text": "Mostly cloudy, with a low around 44. South wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Monday",
@@ -738,7 +578,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 52. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 52. South southeast wind 7 to 9 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Veterans Day",
+     "kind": "high",
+     "temp": 63,
+     "text": "Mostly cloudy, with a high near 63."
     }
    ]
   },
@@ -754,7 +600,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-08T23:11:00Z",
+  "updatedAt": "2026-11-09T02:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
