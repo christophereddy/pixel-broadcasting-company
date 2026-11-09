@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T08:16:00Z",
+ "updatedAt": "2026-11-09T11:17:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -382,47 +382,47 @@
  "weather": {
   "now": {
    "temp": 52,
-   "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 49,
-   "obs": "9 Nov 01:51 am EST"
+   "cond": "Mostly Cloudy",
+   "wind": "W 6 mph",
+   "humidity": 47,
+   "obs": "9 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 54,
-    "text": "Mostly clear, with a steady temperature around 54. West wind around 14 mph. "
-   },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 59,
-    "text": "Mostly sunny, with a high near 59. Northwest wind 15 to 18 mph, with gusts as high as 29 mph. "
+    "text": "Mostly sunny, with a high near 59. West wind 14 to 18 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Monday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Partly cloudy, with a low around 48. Northwest wind 10 to 14 mph. "
+    "temp": 49,
+    "text": "Mostly clear, with a low around 49. West wind 10 to 13 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 61,
-    "text": "Partly sunny, then gradually becoming sunny, with a high near 61. West wind 9 to 14 mph. "
+    "text": "Partly sunny, then gradually becoming sunny, with a high near 61. West wind 9 to 15 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 50,
-    "text": "Clear, with a low around 50. West wind around 10 mph. "
+    "temp": 51,
+    "text": "Clear, with a low around 51. West wind around 10 mph. "
    },
    {
     "name": "Veterans Day",
     "kind": "high",
     "temp": 61,
     "text": "Sunny, with a high near 61."
+   },
+   {
+    "name": "Wednesday Night",
+    "kind": "low",
+    "temp": 50,
+    "text": "Mostly cloudy, with a low around 50."
    }
   ]
  },

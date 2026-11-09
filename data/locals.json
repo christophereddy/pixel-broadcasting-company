@@ -8,19 +8,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
-    "wind": "W 7 mph",
+    "temp": 47,
+    "cond": "Fair",
+    "wind": "W 6 mph",
     "humidity": 83,
-    "obs": "9 Nov 01:52 am EST"
+    "obs": "9 Nov 02:52 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "Mostly clear, with a low around 44. Northwest wind around 5 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -50,6 +44,12 @@
      "kind": "high",
      "temp": 71,
      "text": "Mostly sunny, with a high near 71."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Partly cloudy, with a low around 52."
     }
    ]
   },
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -86,16 +86,10 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 46,
-     "text": "Mostly cloudy, with a low around 46. West wind around 6 mph. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 58,
-     "text": "Partly sunny, with a high near 58. West wind 7 to 10 mph. "
+     "text": "A slight chance of showers between 11am and noon.  Partly sunny, with a high near 58. West wind 7 to 10 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Monday Night",
@@ -120,6 +114,12 @@
      "kind": "high",
      "temp": 58,
      "text": "Sunny, with a high near 58. West wind 5 to 9 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 39,
+     "text": "Partly cloudy, with a low around 39. Calm wind. "
     }
    ]
   },
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -171,11 +171,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 43,
     "cond": "A Few Clouds",
-    "wind": "W 7 mph",
-    "humidity": 74,
-    "obs": "9 Nov 00:53 am CST"
+    "wind": "NW 3 mph",
+    "humidity": 80,
+    "obs": "9 Nov 01:53 am CST"
    },
    "periods": [
     {
@@ -228,7 +228,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -298,7 +298,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -323,14 +323,14 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "wind": "Calm",
-    "humidity": 38,
-    "obs": "08 Nov 10:55 PM PST"
+    "temp": 66,
+    "wind": "NW 1 mph",
+    "humidity": 39,
+    "obs": "09 Nov 12:10 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 63,
      "text": "Mostly clear, with a low around 63. North northeast wind around 5 mph. "
@@ -379,7 +379,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -415,47 +415,47 @@
   "weather": {
    "now": {
     "temp": 52,
-    "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 49,
-    "obs": "9 Nov 01:51 am EST"
+    "cond": "Mostly Cloudy",
+    "wind": "W 6 mph",
+    "humidity": 47,
+    "obs": "9 Nov 02:51 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a steady temperature around 54. West wind around 14 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 59,
-     "text": "Mostly sunny, with a high near 59. Northwest wind 15 to 18 mph, with gusts as high as 29 mph. "
+     "text": "Mostly sunny, with a high near 59. West wind 14 to 18 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48. Northwest wind 10 to 14 mph. "
+     "temp": 49,
+     "text": "Mostly clear, with a low around 49. West wind 10 to 13 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 61,
-     "text": "Partly sunny, then gradually becoming sunny, with a high near 61. West wind 9 to 14 mph. "
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 61. West wind 9 to 15 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Clear, with a low around 50. West wind around 10 mph. "
+     "temp": 51,
+     "text": "Clear, with a low around 51. West wind around 10 mph. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
      "temp": 61,
      "text": "Sunny, with a high near 61."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 50,
+     "text": "Mostly cloudy, with a low around 50."
     }
    ]
   },
@@ -471,7 +471,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -553,7 +553,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "goodnews": []
  },
  {
@@ -577,15 +577,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 46,
     "cond": "Clear",
     "wind": "Calm",
-    "humidity": 76,
-    "obs": "08 Nov 10:53 PM PST"
+    "humidity": 87,
+    "obs": "09 Nov 12:00 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 44,
      "text": "Cloudy, with a low around 44. Calm wind. "
@@ -634,7 +634,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-09T08:16:00Z",
+  "updatedAt": "2026-11-09T11:17:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
