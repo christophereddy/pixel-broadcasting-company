@@ -5,21 +5,33 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "UN honors CNN founder Ted Turner",
+    "b": "The United Nations held a celebration of life for Ted Turner, who died in May at 87. His daughter Laura Turner Seydel recalled his record $1 billion gift to UN causes in 1997 and urged guests to back the institutions that hold the world together.",
+    "date": "2026-11-10",
+    "publisher": "WABE",
+    "title": "UN honors late media mogul and CNN founder Ted Turner",
+    "url": "https://www.wabe.org/un-honors-late-media-mogul-and-cnn-founder-ted-turner/",
+    "published": "2026-11-10T16:33:37Z",
+    "updated": "2026-11-10T16:33:41Z",
+    "gathered": "2026-11-10T18:05:25Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 8 mph",
-    "humidity": 69,
-    "obs": "10 Nov 08:52 am EST"
+    "temp": 72,
+    "cond": "Partly Cloudy",
+    "wind": "NW 13 mph",
+    "humidity": 33,
+    "obs": "10 Nov 12:52 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 72,
-     "text": "Partly sunny, with a high near 72. Northwest wind around 5 mph. "
+     "text": "Sunny, with a high near 72. Northwest wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -43,7 +55,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly sunny, with a high near 65. West wind 10 to 15 mph, with gusts as high as 30 mph. "
+     "text": "Sunny, with a high near 65. Northwest wind 10 to 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday Night",
@@ -65,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -98,42 +110,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 54,
     "cond": "Mostly Cloudy",
-    "wind": "SW 12 mph",
-    "humidity": 61,
-    "obs": "10 Nov 08:54 am EST"
+    "wind": "W 17 mph, gusts to 25 mph",
+    "humidity": 53,
+    "obs": "10 Nov 12:54 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly sunny, with a high near 57. West wind 7 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly sunny early, then becoming sunny, with a high near 57. Southwest wind 7 to 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Mostly clear, with a low around 44. West wind around 7 mph. "
+     "text": "Clear, with a low around 44. West wind 6 to 8 mph. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
      "temp": 56,
-     "text": "Mostly sunny, with a high near 56. West wind 3 to 8 mph. "
+     "text": "Sunny, with a high near 56. West wind 3 to 8 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 41,
-     "text": "Increasing clouds, with a low around 41. Calm wind. "
+     "text": "Mostly cloudy, with a low around 41. Calm wind. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 54,
-     "text": "A slight chance of rain after 2pm.  Mostly cloudy, with a high near 54. Light northeast wind becoming east 5 to 9 mph in the morning.  Chance of precipitation is 20%."
+     "text": "A chance of rain before 11am, then a slight chance of rain after 2pm.  Mostly cloudy, with a high near 54. Light east wind increasing to 5 to 9 mph in the morning.  Chance of precipitation is 30%."
     },
     {
      "name": "Thursday Night",
@@ -155,7 +167,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -176,36 +188,36 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
-    "wind": "W 3 mph",
-    "humidity": 77,
-    "obs": "10 Nov 07:53 am CST"
+    "temp": 62,
+    "cond": "Fair",
+    "wind": "Calm",
+    "humidity": 44,
+    "obs": "10 Nov 11:53 am CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59. North northwest wind around 5 mph becoming calm  in the afternoon. "
+     "text": "Sunny, with a high near 59. North wind around 5 mph becoming south southeast. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Increasing clouds, with a low around 44. Calm wind becoming west northwest around 5 mph. "
+     "text": "Increasing clouds, with a low around 44. Calm wind becoming south southwest around 5 mph after midnight. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
      "temp": 54,
-     "text": "A 50 percent chance of showers, mainly after 9am.  Mostly cloudy, with a high near 54. South southwest wind 5 to 10 mph becoming north northeast 10 to 15 mph in the afternoon. Winds could gust as high as 20 mph. "
+     "text": "A 50 percent chance of showers, mainly after 9am.  Mostly cloudy, with a high near 54. South wind 5 to 10 mph becoming north northeast 10 to 15 mph in the afternoon. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "A 40 percent chance of showers.  Mostly cloudy, with a low around 42. Breezy, with a north wind 15 to 20 mph, with gusts as high as 25 mph. "
+     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 42. Breezy, with a north wind 15 to 25 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday",
@@ -233,7 +245,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -285,18 +297,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
-    "cond": "A Few Clouds",
-    "wind": "S 9 mph",
-    "humidity": 54,
-    "obs": "10 Nov 06:58 am MST"
+    "temp": 59,
+    "cond": "Partly Cloudy",
+    "wind": "W 5 mph",
+    "humidity": 23,
+    "obs": "10 Nov 09:58 am MST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Partly sunny, with a high near 69. Southwest wind 5 to 8 mph becoming north northwest in the afternoon. "
+     "text": "Partly sunny, with a high near 69. Northwest wind 5 to 8 mph. "
     },
     {
      "name": "Tonight",
@@ -342,7 +354,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -396,10 +408,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "wind": "NW 1 mph",
-    "humidity": 51,
-    "obs": "10 Nov 06:10 AM PST"
+    "temp": 79,
+    "wind": "SE 3 mph",
+    "humidity": 31,
+    "obs": "10 Nov 09:55 AM PST"
    },
    "periods": [
     {
@@ -452,7 +464,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -464,13 +476,24 @@
   },
   "local": [
    {
+    "h": "Judge orders city to answer ICE shelter subpoena",
+    "b": "A federal judge ruled City Hall must give ICE the names and birthdates of South Bronx migrant shelter residents with serious criminal histories. The Mamdani administration says it is evaluating next steps.",
+    "date": "2026-11-10",
+    "publisher": "Gothamist",
+    "title": "ICE subpoena puts a spotlight on the last emergency migrant shelter in NYC",
+    "url": "https://gothamist.com/news/ice-subpoena-puts-a-spotlight-on-the-last-emergency-migrant-shelter-in-nyc",
+    "published": "2026-11-10T15:01:03Z",
+    "gathered": "2026-11-10T18:05:25Z"
+   },
+   {
     "h": "Canal Street face-lift pushed into 2027",
     "b": "The city's Department of Transportation told a community board that concrete work on west Canal Street, planned for this fall, will slip to next year in the Reimagining Canal Street project.",
     "date": "2026-11-10",
     "publisher": "Gothamist",
     "title": "Manhattan's Canal Street is getting a face-lift, but it'll take a while",
     "url": "https://gothamist.com/news/manhattans-canal-street-is-getting-a-face-lift-but-itll-take-a-while",
-    "published": "2026-11-10T11:30:55Z",
+    "published": "2026-11-10T11:30:00Z",
+    "updated": "2026-11-10T15:02:00Z",
     "gathered": "2026-11-10T14:19:46Z"
    },
    {
@@ -526,18 +549,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 60,
     "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 57,
-    "obs": "10 Nov 08:51 am EST"
+    "humidity": 44,
+    "obs": "10 Nov 12:51 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 61,
-     "text": "Mostly cloudy early, then gradual clearing, with a high near 61. West wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Sunny, with a high near 61. West wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -583,7 +605,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -596,11 +618,31 @@
   },
   "local": [
    {
+    "h": "BHV Marais abruptly shuts its doors",
+    "b": "The Paris department store closed Monday evening after an insurance policy lapsed during its bankruptcy process. Management says a new contract takes effect Tuesday, but unions fear it won't reopen.",
+    "date": "2026-11-10",
+    "publisher": "The Local France",
+    "title": "Paris department store BHV forced to close doors",
+    "url": "https://www.thelocal.fr/20261110/paris-department-store-bhv-forced-to-close-doors",
+    "published": "2026-11-10T14:53:10Z",
+    "updated": "2026-11-10T14:53:11Z",
+    "gathered": "2026-11-10T18:05:25Z"
+   },
+   {
+    "h": "Ritz searched in Al-Fayed trafficking probe",
+    "b": "Investigators searched the Ritz and other Paris landmarks tied to the late Mohamed Al-Fayed in a probe into accomplices in alleged human trafficking. People were held for questioning and his former Saint-Tropez estate was also investigated.",
+    "date": "2026-11-10",
+    "publisher": "The Local France",
+    "title": "Ritz among Paris landmarks searched in Al-Fayed trafficking probe",
+    "url": "https://www.thelocal.fr/20261110/ritz-among-paris-landmarks-searched-in-al-fayed-trafficking-probe",
+    "published": "2026-11-10T14:47:36Z",
+    "updated": "2026-11-10T14:47:36Z",
+    "gathered": "2026-11-10T18:05:25Z"
+   },
+   {
     "h": "France summons Iran's envoy over fridge sabotage",
     "b": "Foreign Minister Jean-Noel Barrot summoned Iran's ambassador to protest the cyberattack on supermarket fridges, calling it the first large-scale sabotage attack on French territory. He said France will push for EU sanctions and rules nothing out.",
     "date": "2026-11-10",
-    "publisher": "Al Jazeera",
-    "title": "France summons Iran’s ambassador over supermarket fridge ‘sabotage’",
     "url": "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage",
     "gathered": "2026-11-10T14:19:46Z"
    },
@@ -608,11 +650,7 @@
     "h": "France vows tough response to Iran-blamed supermarket cyberattack",
     "b": "Foreign Minister Jean-Noël Barrot said Iran's ambassador will be summoned and EU sanctions sought over the October attack on hundreds of supermarket fridges.",
     "date": "2026-11-10",
-    "publisher": "The Local France",
-    "title": "France vows tough response to freezer cyberattack blamed on Iran",
     "url": "https://www.thelocal.fr/20261110/france-vows-tough-response-to-freezer-cyberattack-blamed-on-iran",
-    "published": "2026-11-10T08:07:07Z",
-    "updated": "2026-11-10T08:07:08Z",
     "gathered": "2026-11-10T10:14:16Z"
    },
    {
@@ -646,7 +684,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "goodnews": []
  },
  {
@@ -673,18 +711,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Rain",
-    "wind": "SE 9 mph",
-    "humidity": 87,
-    "obs": "10 Nov 06:05 AM PST"
+    "temp": 54,
+    "cond": "light rain,mist",
+    "wind": "SE 4 mph",
+    "humidity": 93,
+    "obs": "10 Nov 09:53 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "Rain, mainly before 5pm.  High near 57. South southeast wind 7 to 9 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly before 5pm.  High near 57. South southeast wind around 9 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -730,7 +768,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T17:13:00Z",
+  "updatedAt": "2026-11-10T20:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

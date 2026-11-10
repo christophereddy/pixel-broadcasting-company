@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T17:13:00Z",
+ "updatedAt": "2026-11-10T20:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,6 +10,8 @@
    "h": "Russia, Ukraine and US negotiators meet in Abu Dhabi",
    "b": "The talks are the first three-way round since February, with US envoys Steve Witkoff and Jared Kushner mediating. European foreign ministers pressed Secretary of State Marco Rubio for a seat at the table.",
    "date": "2026-11-10",
+   "publisher": "Al Jazeera",
+   "title": "First day of Russia-Ukraine talks in Abu Dhabi ‘constructive’: Zelenskyy",
    "url": "https://www.aljazeera.com/news/2026/11/10/russia-ukraine-and-us-to-meet-as-zelenskyy-claims-battlefield-successes",
    "gathered": "2026-11-10T10:14:16Z"
   },
@@ -24,8 +26,6 @@
    "h": "Rubio says no need for major combat operations against Iran",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "Rubio says no need for major combat operations against Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender",
    "gathered": "2026-11-10T01:43:03Z"
   }
@@ -35,11 +35,7 @@
    "h": "Door-to-door shots slow measles in Amish country",
    "b": "In Chester County, Pennsylvania, health department supervisor Dale Weiser has spent months driving to Amish homes to vaccinate families against measles. Word of mouth has spread her phone number through the community almost as fast as the virus.",
    "date": "2026-11-10",
-   "publisher": "KUOW",
-   "title": "How word of mouth is helping an Amish community's fight against measles",
    "url": "https://www.kuow.org/npr-news/2026-11-10/how-word-of-mouth-is-helping-an-amish-communitys-fight-against-measles",
-   "published": "2026-11-10T10:00:00Z",
-   "updated": "2026-11-10T10:13:55Z",
    "gathered": "2026-11-10T11:14:45Z"
   },
   {
@@ -79,8 +75,6 @@
    "h": "Hegseth calls impeachment push a 'farce'",
    "b": "At his first Pentagon press conference in nearly six months, Defense Secretary Pete Hegseth called Rep. Thomas Massie's impeachment resolution \"a stunt\" and \"sabotage,\" framing criticism of the Iran war as policy disagreements. The House may hold a procedural vote on the resolution Tuesday.",
    "date": "2026-11-10",
-   "publisher": "Al Jazeera",
-   "title": "Pentagon Chief Hegseth calls US House impeachment effort a ‘farce’",
    "url": "https://www.aljazeera.com/news/2026/11/10/pentagon-chief-hegseth-calls-us-house-impeachment-effort-a-farce",
    "gathered": "2026-11-10T14:19:46Z"
   },
@@ -88,11 +82,7 @@
    "h": "House Republicans pick a new leader after midterm losses",
    "b": "A week after losing the majority, House Republicans meet behind closed doors Tuesday to choose a minority leader to succeed Mike Johnson. The race is between Majority Leader Steve Scalise and Ohio's Jim Jordan, a co-founder of the House Freedom Caucus.",
    "date": "2026-11-10",
-   "publisher": "KUOW",
-   "title": "House Republicans to elect a new leader as they look to rebuild from midterm defeat",
    "url": "https://www.kuow.org/npr-news/2026-11-10/house-republicans-to-elect-a-new-leader-as-they-look-to-rebuild-from-midterm-defeat",
-   "published": "2026-11-10T10:01:00Z",
-   "updated": "2026-11-10T10:14:00Z",
    "gathered": "2026-11-10T11:14:45Z"
   },
   {
@@ -144,6 +134,41 @@
  ],
  "international": [
   {
+   "h": "Israel's president urges compromise as new Knesset sworn in",
+   "b": "Israel's president urged lawmakers to make concessions and avoid a repeat election as the 26th Knesset was sworn in. Opposition leader Gadi Eisenkot, tasked with forming a government, has 28 days to build a coalition.",
+   "date": "2026-11-10",
+   "place": "Israel",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Israeli president warns against repeat election in new Knesset session",
+   "url": "https://www.aljazeera.com/news/2026/11/10/israeli-president-warns-against-repeat-election-in-new-knesset-session",
+   "gathered": "2026-11-10T18:05:25Z"
+  },
+  {
+   "h": "Egypt train crash fuels calls for accountability",
+   "b": "Parliament's transport committee summoned the transport minister after a Giza-Fayoum train rammed another on the Cairo-Aswan line Sunday in al-Ayyat district. Opposition voices are demanding resignations as the crash questions years of railway upgrades.",
+   "date": "2026-11-10",
+   "place": "Egypt",
+   "tz": "Africa/Cairo",
+   "publisher": "Al Jazeera",
+   "title": "Deadly Egypt train crash prompts calls for political accountability",
+   "url": "https://www.aljazeera.com/news/2026/11/10/deadly-egypt-train-collision-prompts-calls-for-political-accountability",
+   "gathered": "2026-11-10T18:05:25Z"
+  },
+  {
+   "h": "Indonesia's vice president offers to resign",
+   "b": "Vice President Gibran Rakabuming Raka, son of former President Joko Widodo, offered to resign in a meeting with President Prabowo Subianto amid questions over his academic documents. It was not clear whether Prabowo accepted.",
+   "date": "2026-11-10",
+   "place": "Jakarta, Indonesia",
+   "tz": "Asia/Jakarta",
+   "publisher": "KUOW",
+   "title": "Indonesia's VP offers resignation as questions mount over his eligibility",
+   "url": "https://www.kuow.org/npr-news/2026-11-10/indonesias-vp-offers-resignation-as-questions-mount-over-his-eligibility",
+   "published": "2026-11-10T14:01:14Z",
+   "updated": "2026-11-10T14:35:05Z",
+   "gathered": "2026-11-10T18:05:25Z"
+  },
+  {
    "h": "Spain weighs suspending TikTok over abuse videos",
    "b": "Spain is considering suspending TikTok after the nonprofit Maldita.es found more than 1,000 child sexual abuse videos with 48 million views and over 20,000 suspected predator profiles during 35 days of monitoring.",
    "date": "2026-11-10",
@@ -160,8 +185,6 @@
    "date": "2026-11-10",
    "place": "Yambol, Bulgaria",
    "tz": "Europe/Sofia",
-   "publisher": "Al Jazeera",
-   "title": "At least 12 people killed in motorway crash in southeastern Bulgaria",
    "url": "https://www.aljazeera.com/news/2026/11/10/at-least-12-people-killed-in-motorway-crash-in-southeastern-bulgaria",
    "gathered": "2026-11-10T14:19:46Z"
   },
@@ -171,8 +194,6 @@
    "date": "2026-11-10",
    "place": "Hosur, India",
    "tz": "Asia/Kolkata",
-   "publisher": "Al Jazeera",
-   "title": "Three workers die at Tata’s iPhone parts plant in India’s Tamil Nadu",
    "url": "https://www.aljazeera.com/news/2026/11/10/three-workers-die-at-tatas-iphone-parts-plant-in-indias-tamil-nadu",
    "gathered": "2026-11-10T14:19:46Z"
   },
@@ -182,8 +203,6 @@
    "date": "2026-11-10",
    "place": "Eastern England, UK",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "US moves aircraft from second UK base over ‘threat from Iran’",
    "url": "https://www.aljazeera.com/news/2026/11/10/us-moves-aircraft-from-second-uk-base-over-threat-from-iran",
    "gathered": "2026-11-10T14:19:46Z"
   },
@@ -292,6 +311,27 @@
  ],
  "business": [
   {
+   "h": "New car prices hit a record above $51,000",
+   "b": "The average transaction price for a new vehicle reached $51,109, Kelley Blue Book reported, about $500 above the previous record. The 2.1% yearly rise is below inflation, as tariffs and demand for larger vehicles keep prices high.",
+   "date": "2026-11-10",
+   "publisher": "KUOW",
+   "title": "The average cost for a new vehicle in the U.S. hits a record high: over $51,000",
+   "url": "https://www.kuow.org/npr-news/2026-11-10/the-average-cost-for-a-new-vehicle-in-the-u-s-hits-a-record-high-over-51-000",
+   "published": "2026-11-10T13:30:00Z",
+   "updated": "2026-11-10T15:04:03Z",
+   "gathered": "2026-11-10T18:05:25Z"
+  },
+  {
+   "h": "Inflation runs hotter than expected in October",
+   "b": "Consumer prices rose 0.4% from September to October and core prices rose 0.3%, both a tenth of a point above forecasts, the Labor Department said. At an annual rate both are well above the Fed's 2% target.",
+   "date": "2026-11-10",
+   "publisher": "PBS NewsHour",
+   "title": "Inflation runs hotter than expected as higher prices extend beyond the gas station",
+   "url": "https://www.pbs.org/newshour/economy/inflation-runs-hotter-than-expected-as-higher-prices-extend-beyond-the-gas-station",
+   "published": "2026-11-10T17:59:58Z",
+   "gathered": "2026-11-10T18:05:25Z"
+  },
+  {
    "h": "Gates holds $29 billion stake in landfill giant",
    "b": "A ProPublica investigation finds Bill Gates owns 38% of Republic Services, America's No. 2 landfill operator. EPA inspectors have repeatedly found methane escaping Republic landfills above federal limits, and the company has lobbied against rules that would make the waste industry cleaner.",
    "date": "2026-11-10",
@@ -359,8 +399,6 @@
    "h": "Jaguars trade for Eagles defensive tackle Jordan Davis",
    "b": "Jacksonville sent a 2027 first-round pick and a 2029 second-round pick to Philadelphia on the eve of the trade deadline, after also adding Jessie Bates III and Davon Godchaux.",
    "date": "2026-11-09",
-   "publisher": "CBS Sports",
-   "title": "Jordan Davis trade grades: Eagles kickstart rebuild, Jaguars push for 2026 AFC and Super Bowl titles",
    "url": "https://www.cbssports.com/nfl/news/jordan-davis-trade-grades-eagles-jaguars/",
    "gathered": "2026-11-10T01:43:03Z"
   },
@@ -418,13 +456,24 @@
  ],
  "local": [
   {
+   "h": "Judge orders city to answer ICE shelter subpoena",
+   "b": "A federal judge ruled City Hall must give ICE the names and birthdates of South Bronx migrant shelter residents with serious criminal histories. The Mamdani administration says it is evaluating next steps.",
+   "date": "2026-11-10",
+   "publisher": "Gothamist",
+   "title": "ICE subpoena puts a spotlight on the last emergency migrant shelter in NYC",
+   "url": "https://gothamist.com/news/ice-subpoena-puts-a-spotlight-on-the-last-emergency-migrant-shelter-in-nyc",
+   "published": "2026-11-10T15:01:03Z",
+   "gathered": "2026-11-10T18:05:25Z"
+  },
+  {
    "h": "Canal Street face-lift pushed into 2027",
    "b": "The city's Department of Transportation told a community board that concrete work on west Canal Street, planned for this fall, will slip to next year in the Reimagining Canal Street project.",
    "date": "2026-11-10",
    "publisher": "Gothamist",
    "title": "Manhattan's Canal Street is getting a face-lift, but it'll take a while",
    "url": "https://gothamist.com/news/manhattans-canal-street-is-getting-a-face-lift-but-itll-take-a-while",
-   "published": "2026-11-10T11:30:55Z",
+   "published": "2026-11-10T11:30:00Z",
+   "updated": "2026-11-10T15:02:00Z",
    "gathered": "2026-11-10T14:19:46Z"
   },
   {
@@ -480,18 +529,17 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
+   "temp": 60,
    "cond": "Fair",
-   "wind": "W 5 mph",
-   "humidity": 57,
-   "obs": "10 Nov 08:51 am EST"
+   "humidity": 44,
+   "obs": "10 Nov 12:51 pm EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 61,
-    "text": "Mostly cloudy early, then gradual clearing, with a high near 61. West wind 10 to 15 mph, with gusts as high as 25 mph. "
+    "text": "Sunny, with a high near 61. West wind around 15 mph, with gusts as high as 25 mph. "
    },
    {
     "name": "Tonight",
