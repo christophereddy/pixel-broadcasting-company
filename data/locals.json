@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 63,
-    "cond": "Partly Cloudy",
-    "wind": "NW 7 mph",
-    "humidity": 43,
-    "obs": "9 Nov 18:52 pm EST"
+    "temp": 57,
+    "cond": "A Few Clouds",
+    "wind": "NW 5 mph",
+    "humidity": 58,
+    "obs": "9 Nov 20:52 pm EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -100,18 +100,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 51,
     "cond": "Partly Cloudy",
-    "wind": "W 13 mph, gusts to 20 mph",
-    "humidity": 61,
-    "obs": "9 Nov 19:54 pm EST"
+    "wind": "W 12 mph, gusts to 23 mph",
+    "humidity": 66,
+    "obs": "9 Nov 20:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Partly cloudy, with a low around 44. West wind 10 to 15 mph. "
+     "text": "Mostly cloudy, with a low around 44. West wind 10 to 15 mph. "
     },
     {
      "name": "Tuesday",
@@ -157,7 +157,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -178,11 +178,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Partly Cloudy",
-    "wind": "S 8 mph",
-    "humidity": 61,
-    "obs": "9 Nov 18:53 pm CST"
+    "temp": 51,
+    "cond": "Fair",
+    "wind": "SW 8 mph",
+    "humidity": 66,
+    "obs": "9 Nov 19:53 pm CST"
    },
    "periods": [
     {
@@ -235,7 +235,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -373,10 +373,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 76,
-    "wind": "NW 2 mph",
-    "humidity": 34,
-    "obs": "09 Nov 05:10 PM PST"
+    "temp": 73,
+    "wind": "NW 3 mph",
+    "humidity": 49,
+    "obs": "09 Nov 06:10 PM PST"
    },
    "periods": [
     {
@@ -429,7 +429,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -483,18 +483,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Overcast",
-    "wind": "NW 9 mph, gusts to 20 mph",
-    "humidity": 52,
-    "obs": "9 Nov 19:51 pm EST"
+    "temp": 52,
+    "cond": "Mostly Cloudy",
+    "wind": "W 10 mph, gusts to 20 mph",
+    "humidity": 53,
+    "obs": "9 Nov 20:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48. West wind 9 to 13 mph. "
+     "text": "Mostly clear, with a low around 48. West wind 9 to 11 mph. "
     },
     {
      "name": "Tuesday",
@@ -540,7 +540,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -583,7 +583,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "goodnews": []
  },
  {
@@ -625,8 +625,8 @@
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "A chance of rain before 7pm, then a slight chance of rain after 11pm.  Cloudy, with a low around 53. South southeast wind around 10 mph.  Chance of precipitation is 30%."
+     "temp": 56,
+     "text": "A chance of rain before 7pm, then a slight chance of rain after 11pm.  Cloudy, with a steady temperature around 56. South southeast wind around 10 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Veterans Day",
@@ -638,7 +638,7 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly cloudy, with a low around 52."
+     "text": "Mostly cloudy, with a low around 52. South southeast wind around 6 mph. "
     },
     {
      "name": "Thursday",
@@ -660,9 +660,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T02:12:00Z",
+  "updatedAt": "2026-11-10T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
+   {
+    "h": "Granddaughter turns to social media to save 50-year-old La Palma",
+    "b": "Loren Jewett has given herself 30 days of videos to bring customers back to the Mexican restaurant her grandparents have run since 1976.",
+    "date": "2026-11-09",
+    "publisher": "KUOW",
+    "title": "Saving a Seattle family’s restaurant, one social media post at a time",
+    "url": "https://www.kuow.org/news-stories/2026-11-09/saving-a-seattle-familys-restaurant-one-social-media-post-at-a-time",
+    "published": "2026-11-10T00:54:52Z",
+    "updated": "2026-11-10T01:27:30Z",
+    "gathered": "2026-11-10T02:12:23Z"
+   },
    {
     "h": "Jimi Hendrix will be on Washington's $1 coin",
     "b": "Gov. Bob Ferguson's office chose the Seattle guitar legend for the state's innovation coin, due in 2029.",

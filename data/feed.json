@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T02:12:00Z",
+ "updatedAt": "2026-11-10T05:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Trump calls Iran war 'effectively over' militarily after Qatar talks",
    "b": "After meeting Qatar's prime minister and Vice President JD Vance, Trump said the US is keeping the status quo at the request of Iran's neighbors. The Qatari leader cited positive talks on reaching a deal.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
    "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm",
    "gathered": "2026-11-10T01:43:03Z"
   },
@@ -63,6 +61,15 @@
   }
  ],
  "politics": [
+  {
+   "h": "Poll: Voters 3 to 1 less likely to back pro-war candidates",
+   "b": "44% said a candidate's support for the Iran war made them less likely to vote for them, versus 13% more likely. A majority, 53%, said Congress should decide when the war ends.",
+   "date": "2026-11-09",
+   "publisher": "Al Jazeera",
+   "title": "Poll finds Americans less likely to back pro-war candidates by 3-1 margin",
+   "url": "https://www.aljazeera.com/news/2026/11/10/poll-finds-voters-preferred-candidates-who-opposed-iran-war-by-3-1-margin",
+   "gathered": "2026-11-10T02:12:23Z"
+  },
   {
    "h": "Massie files articles of impeachment against Hegseth",
    "b": "The outgoing Kentucky Republican reintroduced eight articles as the House returned Monday, accusing the defense secretary of carrying out unlawful orders.",
@@ -182,8 +189,6 @@
    "h": "Meta expands automated teen age checks worldwide",
    "b": "The technology moves users it believes are teens into Teen Account protections even if they list an adult birthday.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "Meta rolls out automated age checks for teens globally",
    "url": "https://www.aljazeera.com/news/2026/11/9/meta-rolls-out-automated-age-checks-for-teens-globally",
    "gathered": "2026-11-09T20:13:15Z"
   },
@@ -337,18 +342,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
-   "cond": "Overcast",
-   "wind": "NW 9 mph, gusts to 20 mph",
-   "humidity": 52,
-   "obs": "9 Nov 19:51 pm EST"
+   "temp": 52,
+   "cond": "Mostly Cloudy",
+   "wind": "W 10 mph, gusts to 20 mph",
+   "humidity": 53,
+   "obs": "9 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 48,
-    "text": "Mostly clear, with a low around 48. West wind 9 to 13 mph. "
+    "text": "Mostly clear, with a low around 48. West wind 9 to 11 mph. "
    },
    {
     "name": "Tuesday",
