@@ -9,10 +9,10 @@
   "weather": {
    "now": {
     "temp": 46,
-    "cond": "A Few Clouds",
-    "wind": "W 7 mph",
+    "cond": "Partly Cloudy",
+    "wind": "NW 7 mph",
     "humidity": 86,
-    "obs": "10 Nov 04:52 am EST"
+    "obs": "10 Nov 05:52 am EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -101,10 +101,10 @@
   "weather": {
    "now": {
     "temp": 47,
-    "cond": "A Few Clouds",
-    "wind": "W 9 mph",
-    "humidity": 71,
-    "obs": "10 Nov 04:54 am EST"
+    "cond": "Mostly Cloudy",
+    "wind": "W 13 mph",
+    "humidity": 69,
+    "obs": "10 Nov 05:54 am EST"
    },
    "periods": [
     {
@@ -157,7 +157,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -178,11 +178,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 46,
     "cond": "A Few Clouds",
-    "wind": "NW 5 mph",
+    "wind": "Calm",
     "humidity": 77,
-    "obs": "10 Nov 03:53 am CST"
+    "obs": "10 Nov 04:53 am CST"
    },
    "periods": [
     {
@@ -235,7 +235,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -299,12 +299,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 42,
-     "text": "Clear, with a low around 42. Light southwest wind. "
-    },
-    {
      "name": "Tuesday",
      "kind": "high",
      "temp": 69,
@@ -333,6 +327,12 @@
      "kind": "high",
      "temp": 68,
      "text": "Sunny, with a high near 68."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39."
     }
    ]
   },
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -395,18 +395,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "wind": "N 3 mph",
-    "humidity": 45,
-    "obs": "10 Nov 02:10 AM PST"
+    "temp": 62,
+    "wind": "Calm",
+    "humidity": 53,
+    "obs": "10 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 63,
-     "text": "Partly cloudy, with a low around 63. North northeast wind around 5 mph. "
-    },
     {
      "name": "Tuesday",
      "kind": "high",
@@ -436,6 +430,12 @@
      "kind": "high",
      "temp": 83,
      "text": "Sunny, with a high near 83."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 59,
+     "text": "A 20 percent chance of rain after 10pm.  Partly cloudy, with a low around 59."
     }
    ]
   },
@@ -451,7 +451,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -462,6 +462,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "East Harlem buildings head to auction despite City Hall push",
+    "b": "Thirty-eight deteriorating buildings with about 850 mostly rent-stabilized apartments, formerly owned by bankrupt Emerald Equities Group, go to auction starting Tuesday. Mayor Mamdani's administration had backed a bid by affordable housing developer Spatial Equity to buy the portfolio first.",
+    "date": "2026-11-10",
+    "publisher": "Gothamist",
+    "title": "Rent-stabilized buildings hit auction block, despite Mamdani’s efforts to intervene",
+    "url": "https://gothamist.com/news/emerald",
+    "published": "2026-11-10T11:00:58Z",
+    "gathered": "2026-11-10T11:14:45Z"
+   },
    {
     "h": "T-Mobile throttled affordable internet for low-income New Yorkers, AG says",
     "b": "T-Mobile agreed to improve service after the attorney general's office found it capped speeds and made the discounted plans hard to find. Only 15 households had enrolled.",
@@ -505,18 +515,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 48,
     "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 59,
-    "obs": "10 Nov 04:51 am EST"
+    "wind": "W 3 mph",
+    "humidity": 63,
+    "obs": "10 Nov 05:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 61,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 61. West wind 9 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Cloudy through mid morning, then gradual clearing, with a high near 61. West wind 9 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -562,7 +572,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -620,7 +630,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "goodnews": []
  },
  {
@@ -651,19 +661,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Clear",
-    "wind": "S 6 mph",
-    "humidity": 93,
-    "obs": "10 Nov 01:55 AM PST"
+    "temp": 52,
+    "cond": "Overcast",
+    "wind": "Calm",
+    "humidity": 87,
+    "obs": "10 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 49,
-     "text": "A 30 percent chance of rain, mainly after 4am.  Cloudy, with a low around 49. South southeast wind 6 to 8 mph. "
-    },
     {
      "name": "Tuesday",
      "kind": "high",
@@ -693,6 +697,12 @@
      "kind": "high",
      "temp": 60,
      "text": "A 10 percent chance of rain after 4pm.  Cloudy, with a high near 60."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 51,
+     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 51. Chance of precipitation is 60%."
     }
    ]
   },
@@ -708,29 +718,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T11:14:00Z",
+  "updatedAt": "2026-11-10T14:19:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "Granddaughter turns to social media to save 50-year-old La Palma",
     "b": "Loren Jewett has given herself 30 days of videos to bring customers back to the Mexican restaurant her grandparents have run since 1976.",
     "date": "2026-11-09",
-    "publisher": "KUOW",
-    "title": "Saving a Seattle family’s restaurant, one social media post at a time",
     "url": "https://www.kuow.org/news-stories/2026-11-09/saving-a-seattle-familys-restaurant-one-social-media-post-at-a-time",
-    "published": "2026-11-10T00:54:52Z",
-    "updated": "2026-11-10T01:27:30Z",
     "gathered": "2026-11-10T02:12:23Z"
    },
    {
     "h": "Jimi Hendrix will be on Washington's $1 coin",
     "b": "Gov. Bob Ferguson's office chose the Seattle guitar legend for the state's innovation coin, due in 2029.",
     "date": "2026-11-10",
-    "publisher": "KUOW",
-    "title": "Jimi Hendrix will represent Washington on the $1 coin",
     "url": "https://www.kuow.org/arts-life/2026-11-09/jimi-hendrix-will-represent-washington-on-the-1-coin",
-    "published": "2026-11-10T01:14:12Z",
-    "updated": "2026-11-10T01:14:12Z",
     "gathered": "2026-11-10T01:43:03Z"
    }
   ]
