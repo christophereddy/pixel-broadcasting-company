@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T14:19:00Z",
+ "updatedAt": "2026-11-10T17:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Russia, Ukraine and US negotiators meet in Abu Dhabi",
    "b": "The talks are the first three-way round since February, with US envoys Steve Witkoff and Jared Kushner mediating. European foreign ministers pressed Secretary of State Marco Rubio for a seat at the table.",
    "date": "2026-11-10",
-   "publisher": "Al Jazeera",
-   "title": "Russia, Ukraine and US officials hold talks in Abu Dhabi",
    "url": "https://www.aljazeera.com/news/2026/11/10/russia-ukraine-and-us-to-meet-as-zelenskyy-claims-battlefield-successes",
    "gathered": "2026-11-10T10:14:16Z"
   },
@@ -19,17 +17,15 @@
    "h": "Trump calls Iran war 'effectively over' militarily after Qatar talks",
    "b": "After meeting Qatar's prime minister and Vice President JD Vance, Trump said the US is keeping the status quo at the request of Iran's neighbors. The Qatari leader cited positive talks on reaching a deal.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
    "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm",
    "gathered": "2026-11-10T01:43:03Z"
   },
   {
-   "h": "GCC states approve military headquarters located in Kuwait",
+   "h": "Rubio says no need for major combat operations against Iran",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-09",
    "publisher": "Al Jazeera",
-   "title": "GCC states approve military headquarters located in Kuwait",
+   "title": "Rubio says no need for major combat operations against Iran",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender",
    "gathered": "2026-11-10T01:43:03Z"
   }
@@ -80,6 +76,15 @@
  ],
  "politics": [
   {
+   "h": "Hegseth calls impeachment push a 'farce'",
+   "b": "At his first Pentagon press conference in nearly six months, Defense Secretary Pete Hegseth called Rep. Thomas Massie's impeachment resolution \"a stunt\" and \"sabotage,\" framing criticism of the Iran war as policy disagreements. The House may hold a procedural vote on the resolution Tuesday.",
+   "date": "2026-11-10",
+   "publisher": "Al Jazeera",
+   "title": "Pentagon Chief Hegseth calls US House impeachment effort a ‘farce’",
+   "url": "https://www.aljazeera.com/news/2026/11/10/pentagon-chief-hegseth-calls-us-house-impeachment-effort-a-farce",
+   "gathered": "2026-11-10T14:19:46Z"
+  },
+  {
    "h": "House Republicans pick a new leader after midterm losses",
    "b": "A week after losing the majority, House Republicans meet behind closed doors Tuesday to choose a minority leader to succeed Mike Johnson. The race is between Majority Leader Steve Scalise and Ohio's Jim Jordan, a co-founder of the House Freedom Caucus.",
    "date": "2026-11-10",
@@ -94,8 +99,6 @@
    "h": "Poll: Voters 3 to 1 less likely to back pro-war candidates",
    "b": "44% said a candidate's support for the Iran war made them less likely to vote for them, versus 13% more likely. A majority, 53%, said Congress should decide when the war ends.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "Poll finds Americans less likely to back pro-war candidates by 3-1 margin",
    "url": "https://www.aljazeera.com/news/2026/11/10/poll-finds-voters-preferred-candidates-who-opposed-iran-war-by-3-1-margin",
    "gathered": "2026-11-10T02:12:23Z"
   },
@@ -141,13 +144,55 @@
  ],
  "international": [
   {
+   "h": "Spain weighs suspending TikTok over abuse videos",
+   "b": "Spain is considering suspending TikTok after the nonprofit Maldita.es found more than 1,000 child sexual abuse videos with 48 million views and over 20,000 suspected predator profiles during 35 days of monitoring.",
+   "date": "2026-11-10",
+   "place": "Spain",
+   "tz": "Europe/Madrid",
+   "publisher": "Al Jazeera",
+   "title": "Spain mulls TikTok suspension after investigation into child sex abuse videos",
+   "url": "https://www.aljazeera.com/news/2026/11/10/spanish-probe-finds-over-20000-suspected-paedophile-profiles-on-tiktok",
+   "gathered": "2026-11-10T14:19:46Z"
+  },
+  {
+   "h": "Fog pile-up kills at least 12 in Bulgaria",
+   "b": "About 50 cars and trucks crashed in thick fog on the motorway near Yambol linking Sofia and Burgas, killing at least 12 and sending 46 to hospital. Prime Minister Rumen Radev called it a tragedy.",
+   "date": "2026-11-10",
+   "place": "Yambol, Bulgaria",
+   "tz": "Europe/Sofia",
+   "publisher": "Al Jazeera",
+   "title": "At least 12 people killed in motorway crash in southeastern Bulgaria",
+   "url": "https://www.aljazeera.com/news/2026/11/10/at-least-12-people-killed-in-motorway-crash-in-southeastern-bulgaria",
+   "gathered": "2026-11-10T14:19:46Z"
+  },
+  {
+   "h": "Three workers die at Tata iPhone parts plant",
+   "b": "Three contract workers died after inhaling gas while cleaning an effluent treatment tank at a Tata Electronics site in Hosur, Tamil Nadu, late Monday. Tata handles roughly 40% of iPhone assembly in India.",
+   "date": "2026-11-10",
+   "place": "Hosur, India",
+   "tz": "Asia/Kolkata",
+   "publisher": "Al Jazeera",
+   "title": "Three workers die at Tata’s iPhone parts plant in India’s Tamil Nadu",
+   "url": "https://www.aljazeera.com/news/2026/11/10/three-workers-die-at-tatas-iphone-parts-plant-in-indias-tamil-nadu",
+   "gathered": "2026-11-10T14:19:46Z"
+  },
+  {
+   "h": "US moves aircraft from second UK base over Iran threat",
+   "b": "US refuelling tankers at RAF Mildenhall in eastern England were diverted to Germany and elsewhere Monday after a threat from Iran, The Wall Street Journal reported. Mildenhall and RAF Lakenheath were raised to FPCON Charlie, the second-highest threat level.",
+   "date": "2026-11-10",
+   "place": "Eastern England, UK",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "US moves aircraft from second UK base over ‘threat from Iran’",
+   "url": "https://www.aljazeera.com/news/2026/11/10/us-moves-aircraft-from-second-uk-base-over-threat-from-iran",
+   "gathered": "2026-11-10T14:19:46Z"
+  },
+  {
    "h": "Europe presses Rubio for a seat at Ukraine talks",
    "b": "Meeting in Paris with G7 counterparts, European foreign ministers told Secretary of State Marco Rubio that Europe must have a say in any deal to end Russia's war on Ukraine, as US-mediated talks began in Abu Dhabi. Germany's Johann Wadephul rejected any fundamental change to Europe's security architecture.",
    "date": "2026-11-10",
    "place": "Paris, France",
    "tz": "Europe/Paris",
-   "publisher": "Al Jazeera",
-   "title": "European diplomats press Rubio for a role in Russia-Ukraine talks",
    "url": "https://www.aljazeera.com/news/2026/11/10/europe-belongs-at-this-table-germany-tells-us-before-ukraine-talks",
    "gathered": "2026-11-10T11:14:45Z"
   },
@@ -157,8 +202,6 @@
    "date": "2026-11-10",
    "place": "Burqa, West Bank",
    "tz": "Asia/Hebron",
-   "publisher": "Al Jazeera",
-   "title": "Israeli forces kill 14-year-old Palestinian boy in occupied West Bank",
    "url": "https://www.aljazeera.com/news/2026/11/10/israeli-forces-kill-14-year-old-palestinian-boy-in-occupied-west-bank",
    "gathered": "2026-11-10T10:14:16Z"
   },
@@ -168,8 +211,6 @@
    "date": "2026-11-10",
    "place": "Riyadh, Saudi Arabia",
    "tz": "Asia/Riyadh",
-   "publisher": "Al Jazeera",
-   "title": "Saudi Arabia downs missiles fired at Riyadh after Houthi attack on pipeline",
    "url": "https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline",
    "gathered": "2026-11-10T10:14:16Z"
   },
@@ -179,8 +220,6 @@
    "date": "2026-11-10",
    "place": "Yaounde, Cameroon",
    "tz": "Africa/Douala",
-   "publisher": "Al Jazeera",
-   "title": "Cameroon sets date for twice-delayed legislative and local elections",
    "url": "https://www.aljazeera.com/news/2026/11/10/cameroon-sets-date-for-twice-delayed-legislative-and-local-elections",
    "gathered": "2026-11-10T05:12:34Z"
   },
@@ -260,7 +299,7 @@
    "title": "Bill Gates Wants to Stop Global Warming. He’s Earned Billions From Climate-Polluting Landfills.",
    "url": "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
    "published": "2026-11-10T10:00:00Z",
-   "updated": "2026-11-10T10:00:12Z",
+   "updated": "2026-11-10T14:01:28Z",
    "gathered": "2026-11-10T11:14:45Z"
   },
   {
@@ -366,11 +405,7 @@
    "h": "Norway's eider keepers build nests for migrating ducks",
    "b": "On the Vega Islands, just south of the Arctic Circle, keepers shelter nesting eider ducks each spring and collect their prized down.",
    "date": "2026-11-10",
-   "publisher": "KUOW",
-   "title": "Eider keepers of the subarctic Norway care for migrating ducks, collect their luxury feathers",
    "url": "https://www.kuow.org/world/2026-11-10/eider-keepers-of-the-subarctic-norway-care-for-migrating-ducks-collect-their-luxury-feathers",
-   "published": "2026-11-10T08:15:00Z",
-   "updated": "2026-11-10T08:15:04Z",
    "gathered": "2026-11-10T10:14:16Z"
   },
   {
@@ -382,6 +417,16 @@
   }
  ],
  "local": [
+  {
+   "h": "Canal Street face-lift pushed into 2027",
+   "b": "The city's Department of Transportation told a community board that concrete work on west Canal Street, planned for this fall, will slip to next year in the Reimagining Canal Street project.",
+   "date": "2026-11-10",
+   "publisher": "Gothamist",
+   "title": "Manhattan's Canal Street is getting a face-lift, but it'll take a while",
+   "url": "https://gothamist.com/news/manhattans-canal-street-is-getting-a-face-lift-but-itll-take-a-while",
+   "published": "2026-11-10T11:30:55Z",
+   "gathered": "2026-11-10T14:19:46Z"
+  },
   {
    "h": "East Harlem buildings head to auction despite City Hall push",
    "b": "Thirty-eight deteriorating buildings with about 850 mostly rent-stabilized apartments, formerly owned by bankrupt Emerald Equities Group, go to auction starting Tuesday. Mayor Mamdani's administration had backed a bid by affordable housing developer Spatial Equity to buy the portfolio first.",
@@ -435,18 +480,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 48,
+   "temp": 52,
    "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 63,
-   "obs": "10 Nov 05:51 am EST"
+   "wind": "W 5 mph",
+   "humidity": 57,
+   "obs": "10 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 61,
-    "text": "Cloudy through mid morning, then gradual clearing, with a high near 61. West wind 9 to 15 mph, with gusts as high as 25 mph. "
+    "text": "Mostly cloudy early, then gradual clearing, with a high near 61. West wind 10 to 15 mph, with gusts as high as 25 mph. "
    },
    {
     "name": "Tonight",

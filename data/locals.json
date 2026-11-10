@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Partly Cloudy",
-    "wind": "NW 7 mph",
-    "humidity": 86,
-    "obs": "10 Nov 05:52 am EST"
+    "temp": 54,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 8 mph",
+    "humidity": 69,
+    "obs": "10 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -92,26 +92,24 @@
     "h": "Judge denies Lindsay Clancy's double jeopardy motion",
     "b": "Judge William Sullivan rejected the defense argument that a retrial after September's mistrial in the deaths of her three children would violate her rights.",
     "date": "2026-11-09",
-    "publisher": "WBUR",
-    "title": "Judge denies three motions in Lindsay Clancy case ahead of hearing on retrial",
     "url": "https://www.wbur.org/news/2026/11/09/lindsay-clancy-double-jeapardy-motions-denied",
     "gathered": "2026-11-10T01:43:03Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 50,
     "cond": "Mostly Cloudy",
-    "wind": "W 13 mph",
-    "humidity": 69,
-    "obs": "10 Nov 05:54 am EST"
+    "wind": "SW 12 mph",
+    "humidity": 61,
+    "obs": "10 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly sunny, with a high near 57. West wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly sunny, with a high near 57. West wind 7 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -157,7 +155,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -178,18 +176,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 48,
     "cond": "A Few Clouds",
-    "wind": "Calm",
+    "wind": "W 3 mph",
     "humidity": 77,
-    "obs": "10 Nov 04:53 am CST"
+    "obs": "10 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59. North northwest wind around 5 mph becoming calm  in the afternoon. Winds could gust as high as 10 mph. "
+     "text": "Sunny, with a high near 59. North northwest wind around 5 mph becoming calm  in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -235,18 +233,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "51-year-old Chicago truck driver makes pro sumo debut",
     "b": "Rupert Cintron got his shot when a new sumo league came through Chicago. \"It's like life never ends if you don't let the dream end,\" he said.",
     "date": "2026-11-09",
-    "publisher": "WBEZ",
-    "title": "Rupert Cintron, a 51-year-old Chicago truck driver, makes his unlikely pro sumo wrestling debut",
     "url": "https://www.wbez.org/sports/2026/11/09/rupert-cintron-a-51-year-old-chicago-truck-driver-makes-his-unlikely-pro-sumo-wrestling-debut",
-    "published": "2026-11-09T20:23:58Z",
-    "updated": "2026-11-09T20:23:58Z",
     "gathered": "2026-11-10T01:43:03Z"
    }
   ]
@@ -292,20 +286,20 @@
   "weather": {
    "now": {
     "temp": 39,
-    "cond": "Fair",
-    "wind": "S 7 mph",
-    "humidity": 59,
-    "obs": "10 Nov 00:58 am MST"
+    "cond": "A Few Clouds",
+    "wind": "S 9 mph",
+    "humidity": 54,
+    "obs": "10 Nov 06:58 am MST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
      "text": "Partly sunny, with a high near 69. Southwest wind 5 to 8 mph becoming north northwest in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Mostly cloudy, then gradually becoming clear, with a low around 39. West wind 5 to 8 mph becoming south southwest after midnight. "
@@ -326,7 +320,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68."
+     "text": "Sunny, with a high near 68. South southwest wind 5 to 7 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Thursday Night",
@@ -348,7 +342,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -359,6 +353,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Claims center opens for Garden Grove evacuees",
+    "b": "GKN Aerospace opened a center in Los Alamitos Tuesday to help residents evacuated during the Garden Grove chemical tank scare file for reimbursement from its $100 million claims program. Help is offered in English, Vietnamese, Spanish and Korean.",
+    "date": "2026-11-10",
+    "publisher": "LAist",
+    "title": "The company behind Garden Grove hazmat scare opens a center to help victims file claims",
+    "url": "https://laist.com/news/climate-environment/the-company-behind-garden-grove-hazmat-scare-opens-a-center-to-help-victims-file-claims",
+    "published": "2026-11-10T13:00:00Z",
+    "updated": "2026-11-10T13:00:00Z",
+    "gathered": "2026-11-10T14:19:46Z"
+   },
    {
     "h": "LAHSA shuts down computers over potential security issue",
     "b": "The homeless services agency told employees Friday to stay off its systems, and the order was still in place Monday. Its interim CEO said it was not yet clear whether personal information was accessed.",
@@ -374,11 +379,7 @@
     "h": "California voters reject billionaire tax",
     "b": "Prop. 40 would have charged billionaires a one-time 5% tax on most of their wealth to fund healthcare. Opponents argued it would drive the wealthy out of the state.",
     "date": "2026-11-09",
-    "publisher": "KUOW",
-    "title": "California voters defeat billionaire tax proposal that divided Democrats",
     "url": "https://www.kuow.org/npr-news/2026-11-09/california-voters-defeat-billionaire-tax-proposal-that-divided-democrats",
-    "published": "2026-11-10T03:05:39Z",
-    "updated": "2026-11-10T03:14:33Z",
     "gathered": "2026-11-10T05:12:34Z"
    },
    {
@@ -395,20 +396,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "wind": "Calm",
-    "humidity": 53,
-    "obs": "10 Nov 03:10 AM PST"
+    "temp": 61,
+    "wind": "NW 1 mph",
+    "humidity": 51,
+    "obs": "10 Nov 06:10 AM PST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 88,
      "text": "Sunny, with a high near 88. North northeast wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 63,
      "text": "Clear, with a low around 63. North northeast wind around 5 mph. "
@@ -429,7 +430,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 83,
-     "text": "Sunny, with a high near 83."
+     "text": "Sunny, with a high near 83. Calm wind becoming south southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
@@ -451,7 +452,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -462,6 +463,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Canal Street face-lift pushed into 2027",
+    "b": "The city's Department of Transportation told a community board that concrete work on west Canal Street, planned for this fall, will slip to next year in the Reimagining Canal Street project.",
+    "date": "2026-11-10",
+    "publisher": "Gothamist",
+    "title": "Manhattan's Canal Street is getting a face-lift, but it'll take a while",
+    "url": "https://gothamist.com/news/manhattans-canal-street-is-getting-a-face-lift-but-itll-take-a-while",
+    "published": "2026-11-10T11:30:55Z",
+    "gathered": "2026-11-10T14:19:46Z"
+   },
    {
     "h": "East Harlem buildings head to auction despite City Hall push",
     "b": "Thirty-eight deteriorating buildings with about 850 mostly rent-stabilized apartments, formerly owned by bankrupt Emerald Equities Group, go to auction starting Tuesday. Mayor Mamdani's administration had backed a bid by affordable housing developer Spatial Equity to buy the portfolio first.",
@@ -515,18 +526,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 52,
     "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 63,
-    "obs": "10 Nov 05:51 am EST"
+    "wind": "W 5 mph",
+    "humidity": 57,
+    "obs": "10 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 61,
-     "text": "Cloudy through mid morning, then gradual clearing, with a high near 61. West wind 9 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Mostly cloudy early, then gradual clearing, with a high near 61. West wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -572,7 +583,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -584,6 +595,15 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "France summons Iran's envoy over fridge sabotage",
+    "b": "Foreign Minister Jean-Noel Barrot summoned Iran's ambassador to protest the cyberattack on supermarket fridges, calling it the first large-scale sabotage attack on French territory. He said France will push for EU sanctions and rules nothing out.",
+    "date": "2026-11-10",
+    "publisher": "Al Jazeera",
+    "title": "France summons Iran’s ambassador over supermarket fridge ‘sabotage’",
+    "url": "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage",
+    "gathered": "2026-11-10T14:19:46Z"
+   },
    {
     "h": "France vows tough response to Iran-blamed supermarket cyberattack",
     "b": "Foreign Minister Jean-Noël Barrot said Iran's ambassador will be summoned and EU sanctions sought over the October attack on hundreds of supermarket fridges.",
@@ -599,11 +619,7 @@
     "h": "Judo champion Teddy Riner runs for French president",
     "b": "The Olympic star announced a 2027 bid, citing concern about the rise of the far right as Marine Le Pen leads the polls.",
     "date": "2026-11-09",
-    "publisher": "The Local France",
-    "title": "Olympic judo champion Riner joins fight for French presidency",
     "url": "https://www.thelocal.fr/20261109/olympic-judo-champion-riner-joins-fight-for-french-presidency",
-    "published": "2026-11-09T13:51:33Z",
-    "updated": "2026-11-09T13:51:34Z",
     "gathered": "2026-11-09T14:18:34Z"
    },
    {
@@ -630,7 +646,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "goodnews": []
  },
  {
@@ -651,31 +667,27 @@
     "h": "Seattle School Board votes to authorize suit over trans sports ban",
     "b": "Directors voted unanimously Monday to let Superintendent Ben Shuldiner take legal action against Initiative 638, which bans transgender girls from girls' school sports.",
     "date": "2026-11-09",
-    "publisher": "KUOW",
-    "title": "Seattle schools poised to sue over trans ban initiative",
     "url": "https://www.kuow.org/education/2026-11-09/seattle-schools-poised-to-sue-over-trans-ban-initiative",
-    "published": "2026-11-10T06:18:15Z",
-    "updated": "2026-11-10T06:18:15Z",
     "gathered": "2026-11-10T10:14:16Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 52,
-    "cond": "Overcast",
-    "wind": "Calm",
+    "cond": "Rain",
+    "wind": "SE 9 mph",
     "humidity": 87,
-    "obs": "10 Nov 02:55 AM PST"
+    "obs": "10 Nov 06:05 AM PST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 57,
      "text": "Rain, mainly before 5pm.  High near 57. South southeast wind 7 to 9 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 56,
      "text": "A 30 percent chance of rain, mainly before 10pm.  Mostly cloudy, with a steady temperature around 56. South southeast wind 7 to 9 mph. "
@@ -696,13 +708,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 60,
-     "text": "A 10 percent chance of rain after 4pm.  Cloudy, with a high near 60."
+     "text": "A 10 percent chance of rain after 4pm.  Cloudy, with a high near 60. South wind around 6 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 51. Chance of precipitation is 60%."
+     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 51. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -718,7 +730,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T14:19:00Z",
+  "updatedAt": "2026-11-10T17:13:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
