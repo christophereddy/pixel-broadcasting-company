@@ -8,15 +8,15 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "A Few Clouds",
-    "wind": "NW 5 mph",
-    "humidity": 58,
-    "obs": "9 Nov 20:52 pm EST"
+    "temp": 53,
+    "cond": "Mostly Cloudy",
+    "wind": "W 5 mph",
+    "humidity": 66,
+    "obs": "9 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 47,
      "text": "Mostly clear, with a low around 47. Northwest wind around 5 mph. "
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -100,18 +100,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Partly Cloudy",
-    "wind": "W 12 mph, gusts to 23 mph",
-    "humidity": 66,
-    "obs": "9 Nov 20:54 pm EST"
+    "temp": 49,
+    "cond": "A Few Clouds",
+    "wind": "W 12 mph",
+    "humidity": 71,
+    "obs": "9 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 44,
-     "text": "Mostly cloudy, with a low around 44. West wind 10 to 15 mph. "
+     "text": "Mostly cloudy, with a low around 44. West wind 10 to 13 mph. "
     },
     {
      "name": "Tuesday",
@@ -157,7 +157,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -178,18 +178,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 50,
     "cond": "Fair",
-    "wind": "SW 8 mph",
-    "humidity": 66,
-    "obs": "9 Nov 19:53 pm CST"
+    "wind": "SW 9 mph",
+    "humidity": 63,
+    "obs": "9 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46. Southwest wind 10 to 15 mph becoming west northwest after midnight. "
+     "text": "Mostly clear, with a low around 46. West southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday",
@@ -235,7 +235,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -291,18 +291,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "A Few Clouds",
-    "wind": "SE 13 mph",
-    "humidity": 31,
-    "obs": "9 Nov 17:58 pm MST"
+    "temp": 51,
+    "cond": "Fair",
+    "wind": "S 9 mph",
+    "humidity": 40,
+    "obs": "9 Nov 20:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40. Calm wind becoming southwest around 5 mph. "
+     "text": "Clear, with a low around 40. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Tuesday",
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -359,6 +359,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LAHSA shuts down computers over potential security issue",
+    "b": "The homeless services agency told employees Friday to stay off its systems, and the order was still in place Monday. Its interim CEO said it was not yet clear whether personal information was accessed.",
+    "date": "2026-11-09",
+    "publisher": "LAist",
+    "title": "LAHSA shuts down its computers over ‘potential security issue’",
+    "url": "https://laist.com/news/housing-homelessness/lahsa-shuts-down-computers-potential-security-issue",
+    "published": "2026-11-10T02:33:08Z",
+    "updated": "2026-11-10T03:12:30Z",
+    "gathered": "2026-11-10T05:12:34Z"
+   },
+   {
+    "h": "California voters reject billionaire tax",
+    "b": "Prop. 40 would have charged billionaires a one-time 5% tax on most of their wealth to fund healthcare. Opponents argued it would drive the wealthy out of the state.",
+    "date": "2026-11-09",
+    "publisher": "KUOW",
+    "title": "California voters defeat billionaire tax proposal that divided Democrats",
+    "url": "https://www.kuow.org/npr-news/2026-11-09/california-voters-defeat-billionaire-tax-proposal-that-divided-democrats",
+    "published": "2026-11-10T03:05:39Z",
+    "updated": "2026-11-10T03:14:33Z",
+    "gathered": "2026-11-10T05:12:34Z"
+   },
    {
     "h": "Raman's mayoral win lifts hopes for transit and safer streets",
     "b": "Advocates are optimistic after Mayor-elect Nithya Raman, backed by bike lane supporters, defeated Mayor Karen Bass, who conceded Thursday.",
@@ -373,17 +395,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 73,
+    "temp": 65,
     "wind": "NW 3 mph",
-    "humidity": 49,
-    "obs": "09 Nov 06:10 PM PST"
+    "humidity": 62,
+    "obs": "09 Nov 09:10 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 63,
-     "text": "Partly cloudy, with a low around 63. West southwest wind around 5 mph becoming north northeast after midnight. "
+     "text": "Partly cloudy, with a low around 63. Northwest wind around 5 mph becoming north northeast after midnight. "
     },
     {
      "name": "Tuesday",
@@ -429,7 +451,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -483,18 +505,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Mostly Cloudy",
-    "wind": "W 10 mph, gusts to 20 mph",
-    "humidity": 53,
-    "obs": "9 Nov 20:51 pm EST"
+    "temp": 50,
+    "cond": "A Few Clouds",
+    "wind": "W 5 mph",
+    "humidity": 52,
+    "obs": "9 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48. West wind 9 to 11 mph. "
+     "text": "Partly cloudy, with a low around 48. West wind around 10 mph. "
     },
     {
      "name": "Tuesday",
@@ -540,7 +562,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -583,7 +605,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "goodnews": []
  },
  {
@@ -603,18 +625,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "rain,mist",
-    "wind": "SE 6 mph",
-    "humidity": 87,
-    "obs": "09 Nov 05:00 PM PST"
+    "temp": 54,
+    "cond": "Overcast",
+    "wind": "S 9 mph",
+    "humidity": 93,
+    "obs": "09 Nov 09:05 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 52,
-     "text": "Rain likely before 8pm, then a chance of rain after 3am.  Increasing clouds, with a steady temperature around 52. South wind 7 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 49,
+     "text": "A 30 percent chance of rain, mainly after 5am.  Increasing clouds, with a low around 49. South southeast wind 7 to 14 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Tuesday",
@@ -660,7 +682,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T05:12:00Z",
+  "updatedAt": "2026-11-10T08:13:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

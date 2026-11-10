@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T05:12:00Z",
+ "updatedAt": "2026-11-10T08:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,6 +10,8 @@
    "h": "Trump calls Iran war 'effectively over' militarily after Qatar talks",
    "b": "After meeting Qatar's prime minister and Vice President JD Vance, Trump said the US is keeping the status quo at the request of Iran's neighbors. The Qatari leader cited positive talks on reaching a deal.",
    "date": "2026-11-09",
+   "publisher": "Al Jazeera",
+   "title": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
    "url": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm",
    "gathered": "2026-11-10T01:43:03Z"
   },
@@ -39,8 +41,6 @@
    "b": "A vehicle crash and a person jumping a barrier at Lafayette Park happened around the same time Monday morning while Trump was in the residence. The lockdown lifted an hour later.",
    "date": "2026-11-09",
    "place": "Washington, D.C.",
-   "publisher": "Al Jazeera",
-   "title": "Two security breaches near White House prompt brief lockdown",
    "url": "https://www.aljazeera.com/news/2026/11/9/two-security-breaches-near-white-house-prompt-brief-lockdown",
    "gathered": "2026-11-09T20:13:15Z"
   },
@@ -90,8 +90,6 @@
    "h": "Trump reverses stance and alleges fraud in midterm elections",
    "b": "Trump questioned the results on Truth Social without evidence. A Pew analysis found pre-election polls understated Democratic margins by at least 2 points in 23 of 27 governor and Senate races.",
    "date": "2026-11-09",
-   "publisher": "Al Jazeera",
-   "title": "Trump reverses stance, alleges fraud in recent US midterm elections",
    "url": "https://www.aljazeera.com/news/2026/11/9/trump-reverses-stance-alleges-fraud-in-recent-us-midterm-elections",
    "gathered": "2026-11-09T20:13:15Z"
   },
@@ -115,6 +113,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Cameroon sets Feb. 7 date for twice-delayed elections",
+   "b": "President Paul Biya, 93, announced the legislative and local vote by decree as authorities crack down on the opposition a year after his disputed reelection.",
+   "date": "2026-11-10",
+   "place": "Yaounde, Cameroon",
+   "tz": "Africa/Douala",
+   "publisher": "Al Jazeera",
+   "title": "Cameroon sets date for twice-delayed legislative and local elections",
+   "url": "https://www.aljazeera.com/news/2026/11/10/cameroon-sets-date-for-twice-delayed-legislative-and-local-elections",
+   "gathered": "2026-11-10T05:12:34Z"
+  },
   {
    "h": "Pope Leo meets clergy abuse survivors in Argentina",
    "b": "The closed-door meetings followed an open-air Mass in Buenos Aires that drew an estimated 2.5 million people, the country's first papal liturgy in nearly 40 years.",
@@ -290,11 +299,7 @@
    "h": "Apocalyptic satire 'The End of Everything' wins the Booker Prize",
    "b": "Judges' chair Mary Beard said M. John Harrison's novel leaves readers with \"a twinge of optimism.\"",
    "date": "2026-11-09",
-   "publisher": "KUOW",
-   "title": "Apocalyptic sci-fi novel 'The End of Everything' wins this year's Booker Prize",
    "url": "https://www.kuow.org/npr-news/2026-11-09/apocalyptic-sci-fi-novel-the-end-of-everything-wins-this-years-booker-prize",
-   "published": "2026-11-09T22:00:00Z",
-   "updated": "2026-11-09T22:07:24Z",
    "gathered": "2026-11-10T01:43:03Z"
   }
  ],
@@ -342,18 +347,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
-   "cond": "Mostly Cloudy",
-   "wind": "W 10 mph, gusts to 20 mph",
-   "humidity": 53,
-   "obs": "9 Nov 20:51 pm EST"
+   "temp": 50,
+   "cond": "A Few Clouds",
+   "wind": "W 5 mph",
+   "humidity": 52,
+   "obs": "9 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 48,
-    "text": "Mostly clear, with a low around 48. West wind 9 to 11 mph. "
+    "text": "Partly cloudy, with a low around 48. West wind around 10 mph. "
    },
    {
     "name": "Tuesday",
