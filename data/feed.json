@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T14:15:00Z",
+ "updatedAt": "2026-11-11T17:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,20 @@
  },
  "world": [
   {
-   "h": "Pezeshkian says US threatening 'mother of all bombs' to pursue diplomacy",
+   "h": "Russia-Ukraine talks end with deal on prisoner swap",
+   "b": "US-mediated talks in Abu Dhabi ended with agreement on a large-scale prisoner exchange, expected within weeks. US envoys Jared Kushner and Steve Witkoff will brief Putin in Moscow, then meet Zelenskyy in Dublin.",
+   "date": "2026-11-11",
+   "publisher": "Al Jazeera",
+   "title": "Russia-Ukraine talks in Abu Dhabi end with prisoner exchange agreement",
+   "url": "https://www.aljazeera.com/news/2026/11/11/russia-ukraine-talks-in-abu-dhabi-end-with-prisoner-exchange-agreement",
+   "gathered": "2026-11-11T15:31:16Z"
+  },
+  {
+   "h": "Iran's security chief rejects moving nuclear material out of country",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-11",
    "publisher": "Al Jazeera",
-   "title": "Pezeshkian say US threatening ‘mother of all bombs’ to pursue diplomacy",
+   "title": "Iran’s security chief rejects moving nuclear material out of country",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/11/iran-war-live-hegseth-survives-impeachment-bid-iran-denies-us-talks",
    "gathered": "2026-11-11T11:20:48Z"
   },
@@ -19,8 +28,6 @@
    "h": "Iran denies talks with US, says Hormuz stays shut",
    "b": "Iranian official Mohsen Rezaei called reports of negotiations or a meeting in Qatar \"a pure lie\" and said the Strait of Hormuz won't reopen until the US meets Tehran's seven conditions. Trump said new attacks on Iran were unnecessary.",
    "date": "2026-11-11",
-   "publisher": "Al Jazeera",
-   "title": "Iran denies talks with US, says Hormuz will stay shut until demands are met",
    "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met",
    "gathered": "2026-11-11T11:20:48Z"
   },
@@ -28,8 +35,6 @@
    "h": "Ebola cases in DR Congo pass 11,000",
    "b": "The outbreak of the rare Bundibugyo strain has now infected more than 11,000 people and killed 5,387, the second-largest Ebola outbreak on record. No vaccine or treatment exists for the strain, and eight of 26 provinces are affected.",
    "date": "2026-11-11",
-   "publisher": "Al Jazeera",
-   "title": "Ebola cases in DR Congo pass 11,000, with 5,387 deaths",
    "url": "https://www.aljazeera.com/news/2026/11/11/ebola-cases-in-dr-congo-pass-11000-with-5387-deaths",
    "gathered": "2026-11-11T08:13:37Z"
   },
@@ -64,11 +69,7 @@
    "h": "AI-voiced hoax calls are fooling 911 dispatchers",
    "b": "Swatting calls made with AI-generated voices, like a bomb threat that closed a Yuba County, California, high school in August, are getting harder for emergency dispatchers to detect.",
    "date": "2026-11-11",
-   "publisher": "KUOW",
-   "title": "AI hoaxes are deceiving 911 dispatchers, and they're only getting harder to detect",
    "url": "https://www.kuow.org/npr-news/2026-11-11/ai-hoaxes-are-deceiving-911-dispatchers-and-theyre-only-getting-harder-to-detect",
-   "published": "2026-11-11T10:00:00Z",
-   "updated": "2026-11-11T10:49:40Z",
    "gathered": "2026-11-11T11:20:48Z"
   },
   {
@@ -166,16 +167,34 @@
  ],
  "international": [
   {
+   "h": "Rights group raises alarm over jailed Gaza doctor",
+   "b": "Physicians for Human Rights Israel says a review of Dr. Hussam Abu Safia's records shows a 14kg weight loss in four months and untreated chest pain, and is petitioning to free 14 Gaza doctors held without charge.",
+   "date": "2026-11-11",
+   "place": "Israel",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Israeli rights group raises concerns about jailed doctor amid Gaza strikes",
+   "url": "https://www.aljazeera.com/news/2026/11/11/rights-group-raises-concerns-about-jailed-dr-abu-safia-amid-strikes-on-gaza",
+   "gathered": "2026-11-11T15:31:16Z"
+  },
+  {
+   "h": "Hundreds of Italian schools evacuated over email bomb threats",
+   "b": "Schools across Italy were evacuated after emailed bomb alerts that also threatened Prime Minister Giorgia Meloni. The same purported author claimed earlier threats to newsrooms in Ireland and Bulgaria, amid wider worry about hybrid attacks in Europe.",
+   "date": "2026-11-11",
+   "place": "Italy",
+   "tz": "Europe/Rome",
+   "publisher": "Al Jazeera",
+   "title": "Schools across Italy evacuated after receiving email bomb alerts",
+   "url": "https://www.aljazeera.com/news/2026/11/11/at-least-300-italian-schools-evacuated-after-email-bomb-alerts",
+   "gathered": "2026-11-11T15:31:16Z"
+  },
+  {
    "h": "Spain's first general strike in 14 years targets housing crisis",
    "b": "Millions of workers walked off the job to demand action on housing, slowing transit in Barcelona and Madrid and closing many schools, less than three weeks before a national election.",
    "date": "2026-11-11",
    "place": "Spain",
    "tz": "Europe/Madrid",
-   "publisher": "KUOW",
-   "title": "Spain's first general strike in 14 years demands solutions to housing crisis",
    "url": "https://www.kuow.org/npr-news/2026-11-11/spains-first-general-strike-in-14-years-demands-solutions-to-housing-crisis",
-   "published": "2026-11-11T09:54:54Z",
-   "updated": "2026-11-11T10:48:32Z",
    "gathered": "2026-11-11T11:20:48Z"
   },
   {
@@ -206,8 +225,6 @@
    "date": "2026-11-11",
    "place": "Beirut, Lebanon",
    "tz": "Asia/Beirut",
-   "publisher": "Al Jazeera",
-   "title": "Former Iraqi lawmaker Ahmed al-Alwani found dead in Beirut",
    "url": "https://www.aljazeera.com/news/2026/11/11/former-iraqi-awmaker-ahmed-al-alwani-found-dead-in-beirut",
    "gathered": "2026-11-11T06:57:06Z"
   },
@@ -381,8 +398,6 @@
    "h": "Blacklisted Chinese university bought Nvidia H200 chips",
    "b": "Northwestern Polytechnical University bought two H200 AI chips through a third party despite US export restrictions, procurement records reviewed by Reuters show. The school also rented access to the chips this year.",
    "date": "2026-11-11",
-   "publisher": "Al Jazeera",
-   "title": "Chinese university buys Nvidia AI H200 chips despite US ban, records show",
    "url": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show",
    "gathered": "2026-11-11T08:13:37Z"
   },
@@ -428,6 +443,15 @@
  ],
  "science": [
   {
+   "h": "'Climate crisis is outrunning us,' Guterres tells COP31",
+   "b": "Opening leaders' talks in Antalya, the UN chief said the last four years were the hottest on record and called for fossil fuels to \"go the way of the dinosaurs,\" warning that fossil fuel interests keep profiting while the planet suffers.",
+   "date": "2026-11-11",
+   "publisher": "Al Jazeera",
+   "title": "‘Climate crisis is outrunning us,’ UN chief Guterres says at COP31",
+   "url": "https://www.aljazeera.com/news/2026/11/11/climate-crisis-is-outrunning-us-un-chief-guterres-says-at-cop31",
+   "gathered": "2026-11-11T15:31:16Z"
+  },
+  {
    "h": "Thunberg slams COP31 as 'hypocrisy'",
    "b": "Climate activist Greta Thunberg criticized the COP31 talks co-hosted by Turkiye and Australia, saying negotiations are filled with fossil fuel lobbyists and that \"everything and everyone we love is at stake.\"",
    "date": "2026-11-11",
@@ -444,11 +468,18 @@
  ],
  "sports": [
   {
+   "h": "Kansas routs Kentucky at Champions Classic",
+   "b": "No. 15 Kansas beat No. 24 Kentucky 89-69 as Tre White scored 30 and Trey Kaufman-Renn added 12 points and six assists, even without injured guard Melvin Council Jr.",
+   "date": "2026-11-11",
+   "publisher": "CBS Sports",
+   "title": "Kansas' three-week trial thrashes Kentucky's five-month build in eye-opening Champions Classic performance",
+   "url": "https://www.cbssports.com/college-basketball/news/kentucky-kansas-mark-pope-champions-classic/",
+   "gathered": "2026-11-11T15:31:16Z"
+  },
+  {
    "h": "Michigan State upsets No. 2 Duke at Champions Classic",
    "b": "Jeremy Fears Jr. had 18 points, 11 assists and seven rebounds as fifth-ranked Michigan State beat Duke 79-73 at the United Center.",
    "date": "2026-11-11",
-   "publisher": "CBS Sports",
-   "title": "Jeremy Fears Jr. races out to early lead for national player of year in Michigan State's upset win over Duke",
    "url": "https://www.cbssports.com/college-basketball/news/jeremy-fears-jr-national-player-of-year-michigan-state-upset-duke-champions-classic/",
    "gathered": "2026-11-11T06:57:06Z"
   },
@@ -456,8 +487,6 @@
    "h": "Alabama jumps to No. 3 in second CFP rankings",
    "b": "Alabama rose two spots to No. 3, the earliest a two-loss team has reached the committee's top four, while Tennessee, which beat the Tide, sits at No. 8. The committee chair cited Alabama's top-ranked strength of schedule.",
    "date": "2026-11-11",
-   "publisher": "CBS Sports",
-   "title": "College Football Playoff Rankings reaction: Alabama getting too much love, how did Indiana lose during a bye?",
    "url": "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-reaction-alabama-indiana/",
    "gathered": "2026-11-11T06:57:06Z"
   },
@@ -526,13 +555,23 @@
  ],
  "local": [
   {
+   "h": "Sanitation supervisors rack up speed camera tickets",
+   "b": "Gothamist found 763 sanitation department cars assigned to supervisors and other staff have collected at least 2,375 speed camera tickets since 2023. Advocates want faster rollout of speed limiters, which Mayor Mamdani supports.",
+   "date": "2026-11-11",
+   "publisher": "Gothamist",
+   "title": "NYC sanitation supervisors keep speeding on the job, data shows",
+   "url": "https://gothamist.com/news/nyc-sanitation-supervisors-keep-speeding-on-the-job-data-shows",
+   "published": "2026-11-11T11:30:55Z",
+   "gathered": "2026-11-11T15:31:16Z"
+  },
+  {
    "h": "Chelsea NYCHA redevelopment splits Mamdani's allies",
    "b": "Tenant activists at Fulton and Elliott-Chelsea Houses have joined DSA to fight the $1.2 billion plan to replace about 2,000 public housing units with mixed-income development, calling it privatization. Mamdani says a teardown is cheaper than repairs.",
    "date": "2026-11-11",
    "publisher": "Gothamist",
    "title": "Mamdani’s redevelopment plan for NYCHA complex in Chelsea spills into DSA",
    "url": "https://gothamist.com/news/mamdanis-redevelopment-plan-for-nycha-complex-in-chelsea-spills-into-dsa",
-   "published": "2026-11-11T11:00:48Z",
+   "published": "2026-11-11T11:00:00Z",
    "gathered": "2026-11-11T11:20:48Z"
   },
   {
@@ -599,18 +638,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 52,
+   "temp": 56,
    "cond": "Fair",
    "wind": "W 5 mph",
-   "humidity": 57,
-   "obs": "11 Nov 05:51 am EST"
+   "humidity": 51,
+   "obs": "11 Nov 09:51 am EST"
   },
   "periods": [
    {
     "name": "Veterans Day",
     "kind": "high",
     "temp": 63,
-    "text": "Mostly sunny, with a high near 63. West wind 6 to 8 mph. "
+    "text": "Mostly sunny, with a high near 63. West wind 5 to 7 mph becoming southwest in the afternoon. "
    },
    {
     "name": "Tonight",
