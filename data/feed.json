@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T05:11:00Z",
+ "updatedAt": "2026-11-11T08:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -114,13 +114,33 @@
  ],
  "international": [
   {
+   "h": "Russia says it downed 146 drones over Leningrad region",
+   "b": "Russia claimed to intercept 146 drones over the Leningrad region, where a drone attack sparked a fire at Ust-Luga port. The strikes came as US-mediated Russia-Ukraine talks in Abu Dhabi entered their final day, which Zelenskyy called constructive.",
+   "date": "2026-11-11",
+   "place": "Leningrad region, Russia",
+   "tz": "Europe/Moscow",
+   "publisher": "Al Jazeera",
+   "title": "Russia claims interception of 146 drones in Leningrad region",
+   "url": "https://www.aljazeera.com/news/2026/11/11/russia-claims-interception-of-146-drones-in-leningrad-region",
+   "gathered": "2026-11-11T06:57:06Z"
+  },
+  {
+   "h": "Former Iraqi lawmaker found dead in Beirut",
+   "b": "Ahmed al-Alwani's body was found in an apartment in Beirut's Tariq al-Jdideh neighbourhood. His office called it an assassination, and Lebanon's top prosecutor is overseeing the investigation.",
+   "date": "2026-11-11",
+   "place": "Beirut, Lebanon",
+   "tz": "Asia/Beirut",
+   "publisher": "Al Jazeera",
+   "title": "Former Iraqi lawmaker Ahmed al-Alwani found dead in Beirut",
+   "url": "https://www.aljazeera.com/news/2026/11/11/former-iraqi-awmaker-ahmed-al-alwani-found-dead-in-beirut",
+   "gathered": "2026-11-11T06:57:06Z"
+  },
+  {
    "h": "Lewis Hamilton visits Gaza's Rafah crossing",
    "b": "The Ferrari driver toured the Rafah border crossing with North Sinai's governor, greeting Egyptian Red Crescent staff and asking how often aid can enter Gaza.",
    "date": "2026-11-10",
    "place": "Rafah, Egypt",
    "tz": "Africa/Cairo",
-   "publisher": "Al Jazeera",
-   "title": "F1 champion Lewis Hamilton visits Gaza border",
    "url": "https://www.aljazeera.com/news/2026/11/10/f1-champion-lewis-hamilton-visits-gaza-border",
    "gathered": "2026-11-10T23:38:00Z"
   },
@@ -130,8 +150,6 @@
    "date": "2026-11-10",
    "place": "United Kingdom",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK children’s author David Walliams accused of grooming minors",
    "url": "https://www.aljazeera.com/news/2026/11/10/uk-comedian-and-childrens-author-david-walliams-accused-of-grooming-minors",
    "gathered": "2026-11-10T23:38:00Z"
   },
@@ -181,8 +199,6 @@
    "date": "2026-11-10",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Israeli president warns against repeat election in new Knesset session",
    "url": "https://www.aljazeera.com/news/2026/11/10/israeli-president-warns-against-repeat-election-in-new-knesset-session",
    "gathered": "2026-11-10T18:05:25Z"
   },
@@ -282,8 +298,6 @@
    "h": "IBM Consulting ends most US foreign worker sponsorships",
    "b": "IBM's biggest division, with more than 150,000 employees, will end most sponsorships of foreign workers in the US, saying its use of high-skilled visa programs had been declining for years. The move comes amid Trump administration pressure on H-1B use.",
    "date": "2026-11-10",
-   "publisher": "Al Jazeera",
-   "title": "IBM’s biggest division ends most US foreign worker sponsorships",
    "url": "https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships",
    "gathered": "2026-11-10T23:38:00Z"
   },
@@ -291,8 +305,6 @@
    "h": "Anthropic targets $1.4 trillion valuation in IPO",
    "b": "Anthropic's SEC filing plans 825 million shares priced at $70 to $78, valuing the AI company at up to $1.4 trillion, plus a $26 billion private placement backed by Google, Nvidia, Microsoft and AMD. The valuation is below earlier estimates amid worries over AI spending.",
    "date": "2026-11-10",
-   "publisher": "Al Jazeera",
-   "title": "Anthropic targets $1.4 trillion valuation in massive stock market debut",
    "url": "https://www.aljazeera.com/economy/2026/11/10/anthropic-targets-1-4-trillion-valuation-in-massive-stock-market-debut",
    "gathered": "2026-11-10T20:12:49Z"
   },
@@ -324,6 +336,15 @@
  ],
  "science": [
   {
+   "h": "Thunberg slams COP31 as 'hypocrisy'",
+   "b": "Climate activist Greta Thunberg criticized the COP31 talks co-hosted by Turkiye and Australia, saying negotiations are filled with fossil fuel lobbyists and that \"everything and everyone we love is at stake.\"",
+   "date": "2026-11-11",
+   "publisher": "Al Jazeera",
+   "title": "‘Everything and everyone we love is at stake’: Thunberg slams COP31 talks",
+   "url": "https://www.aljazeera.com/news/2026/11/11/everything-and-everyone-we-love-is-at-stake-thunberg-slams-cop31-talks",
+   "gathered": "2026-11-11T06:57:06Z"
+  },
+  {
    "h": "Iran war oil shock trims global CO2 emissions",
    "b": "Fossil fuel carbon emissions fell 0.4% in 2026 to 38.2 billion metric tons, the Global Carbon Project found, mostly because the Iran war choked oil through the Strait of Hormuz. Oil emissions dropped nearly 2% while coal rose 0.6%.",
    "date": "2026-11-10",
@@ -332,6 +353,24 @@
   }
  ],
  "sports": [
+  {
+   "h": "Michigan State upsets No. 2 Duke at Champions Classic",
+   "b": "Jeremy Fears Jr. had 18 points, 11 assists and seven rebounds as fifth-ranked Michigan State beat Duke 79-73 at the United Center.",
+   "date": "2026-11-11",
+   "publisher": "CBS Sports",
+   "title": "Jeremy Fears Jr. races out to early lead for national player of year in Michigan State's upset win over Duke",
+   "url": "https://www.cbssports.com/college-basketball/news/jeremy-fears-jr-national-player-of-year-michigan-state-upset-duke-champions-classic/",
+   "gathered": "2026-11-11T06:57:06Z"
+  },
+  {
+   "h": "Alabama jumps to No. 3 in second CFP rankings",
+   "b": "Alabama rose two spots to No. 3, the earliest a two-loss team has reached the committee's top four, while Tennessee, which beat the Tide, sits at No. 8. The committee chair cited Alabama's top-ranked strength of schedule.",
+   "date": "2026-11-11",
+   "publisher": "CBS Sports",
+   "title": "College Football Playoff Rankings reaction: Alabama getting too much love, how did Indiana lose during a bye?",
+   "url": "https://www.cbssports.com/college-football/news/college-football-playoff-rankings-reaction-alabama-indiana/",
+   "gathered": "2026-11-11T06:57:06Z"
+  },
   {
    "h": "Vikings trade for Kirk Cousins",
    "b": "Minnesota reacquired Kirk Cousins from the Raiders for a 2027 third-round pick ahead of the trade deadline, after Carson Wentz went 8-for-25 Monday. The deal hands Las Vegas's starting job to No. 1 pick Fernando Mendoza.",
@@ -449,48 +488,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 55,
    "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 48,
-   "obs": "10 Nov 20:51 pm EST"
+   "wind": "W 7 mph",
+   "humidity": 45,
+   "obs": "11 Nov 01:51 am EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 50,
-    "text": "Clear, with a low around 50. West wind 7 to 9 mph. "
+    "temp": 55,
+    "text": "Mostly clear, with a steady temperature around 55. West wind around 10 mph. "
    },
    {
     "name": "Veterans Day",
     "kind": "high",
-    "temp": 61,
-    "text": "Mostly sunny, with a high near 61. West wind around 6 mph. "
+    "temp": 63,
+    "text": "Mostly sunny, with a high near 63. West wind around 7 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 53,
-    "text": "A 40 percent chance of rain after 1am.  Mostly cloudy, with a low around 53. Light and variable wind becoming east 5 to 7 mph after midnight. "
+    "temp": 55,
+    "text": "A 20 percent chance of rain after 4am.  Mostly cloudy, with a low around 55. South wind 5 to 10 mph becoming east after midnight. "
    },
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 59,
-    "text": "Rain.  High near 59. East wind 9 to 11 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 60,
+    "text": "A chance of rain before 10am, then rain and possibly a thunderstorm between 10am and 4pm, then rain after 4pm.  High near 60. East wind 10 to 14 mph becoming north in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 45,
-    "text": "Rain likely.  Mostly cloudy, with a low around 45. North wind 11 to 16 mph.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 46,
+    "text": "Rain likely.  Mostly cloudy, with a low around 46. North wind 11 to 17 mph.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 47,
-    "text": "Rain.  High near 47. Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "text": "Rain, mainly before 1pm.  Temperature falling to around 44 by 3pm. Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
    }
   ]
  },
