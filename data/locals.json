@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 74,
+    "temp": 66,
     "cond": "Partly Cloudy",
-    "wind": "NW 8 mph",
-    "humidity": 29,
-    "obs": "10 Nov 14:52 pm EST"
+    "wind": "NW 7 mph",
+    "humidity": 42,
+    "obs": "10 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -55,7 +55,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 41,
-     "text": "Mostly clear, with a low around 41."
+     "text": "Mostly clear, with a low around 41. Northwest wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Friday",
@@ -77,21 +77,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "atlanta-ga",
-  "goodnews": [
-   {
-    "h": "Atlanta's Iranian community unveils giant Cyrus the Great statue",
-    "b": "The 29-foot bronze by Atlanta artist Stan Mullins stands in Midtown's Pardis Park after a five-year effort led by Rostam Zafari of the nonprofit Nimruz.",
-    "date": "2026-11-09",
-    "publisher": "WABE",
-    "title": "Atlanta's Iranian community unveils massive Cyrus the Great statue",
-    "url": "https://www.wabe.org/atlantas-iranian-community-unveils-massive-cyrus-the-great-statue/",
-    "published": "2026-11-09T14:44:00Z",
-    "updated": "2026-11-09T21:28:50Z",
-    "gathered": "2026-11-09T17:44:16Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -99,22 +87,14 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Judge denies Lindsay Clancy's double jeopardy motion",
-    "b": "Judge William Sullivan rejected the defense argument that a retrial after September's mistrial in the deaths of her three children would violate her rights.",
-    "date": "2026-11-09",
-    "url": "https://www.wbur.org/news/2026/11/09/lindsay-clancy-double-jeapardy-motions-denied",
-    "gathered": "2026-11-10T01:43:03Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Mostly Cloudy",
+    "temp": 52,
+    "cond": "A Few Clouds",
     "wind": "SW 12 mph",
-    "humidity": 51,
-    "obs": "10 Nov 14:54 pm EST"
+    "humidity": 59,
+    "obs": "10 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -167,7 +147,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -179,28 +159,26 @@
   },
   "local": [
    {
-    "h": "Chicago voters back a permanent festival grounds",
-    "b": "68% supported a non-binding measure for a Summerfest-style site for music festivals, but there are no clear next steps.",
-    "date": "2026-11-09",
-    "url": "https://www.wbez.org/arts-culture/2026/11/09/chicago-ballot-measure-permanent-festival-grounds-milwaukee-summerfest",
-    "gathered": "2026-11-09T14:18:34Z"
+    "h": "Morton Grove man died after deportation, lawyer says",
+    "b": "Ayaz Ahmed, 61, who had chronic health conditions and needed a breathing device, died shortly after a deportation flight to Pakistan, his attorney said. He had been detained by ICE in June over an expired visa.",
+    "date": "2026-11-10",
+    "publisher": "WBEZ",
+    "title": "‘Heartbreaking and entirely preventable’: Chicago-area man died after deportation, family attorney says",
+    "url": "https://www.wbez.org/immigration/2026/11/10/chicago-area-man-dies-after-deportation-to-pakistan-family-attorney-says",
+    "published": "2026-11-10T21:52:25Z",
+    "updated": "2026-11-10T21:52:25Z",
+    "gathered": "2026-11-10T23:38:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Partly Cloudy",
-    "wind": "NW 3 mph",
-    "humidity": 36,
-    "obs": "10 Nov 13:53 pm CST"
+    "temp": 58,
+    "cond": "A Few Clouds",
+    "wind": "E 6 mph",
+    "humidity": 65,
+    "obs": "10 Nov 16:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. East wind around 5 mph becoming south southeast. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -229,7 +207,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 35,
-     "text": "A slight chance of rain showers before midnight, then a chance of rain and snow showers.  Mostly cloudy, with a low around 35. Breezy.  Chance of precipitation is 30%."
+     "text": "A slight chance of rain showers before midnight, then a chance of rain and snow showers.  Mostly cloudy, with a low around 35. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 30%."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 44,
+     "text": "A slight chance of rain and snow showers before noon, then a slight chance of rain showers.  Partly sunny, with a high near 44. Chance of precipitation is 20%."
     }
    ]
   },
@@ -245,17 +229,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "51-year-old Chicago truck driver makes pro sumo debut",
-    "b": "Rupert Cintron got his shot when a new sumo league came through Chicago. \"It's like life never ends if you don't let the dream end,\" he said.",
-    "date": "2026-11-09",
-    "url": "https://www.wbez.org/sports/2026/11/09/rupert-cintron-a-51-year-old-chicago-truck-driver-makes-his-unlikely-pro-sumo-wrestling-debut",
-    "gathered": "2026-11-10T01:43:03Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -265,56 +241,40 @@
   },
   "local": [
    {
-    "h": "Salvation Army to lose control of one of Denver's largest shelters",
-    "b": "The change is part of a broader shake-up of the city's homeless services.",
-    "date": "2026-11-09",
+    "h": "Denver could close Crossroads shelter within a year",
+    "b": "The city may sign a short contract with Urban Alchemy to run the Crossroads shelter while it looks for replacements.",
+    "date": "2026-11-10",
     "publisher": "Denverite",
-    "title": "The Salvation Army will lose control of one of Denver’s largest shelters",
-    "url": "https://denverite.com/2026/11/09/urban-alchemy-crossroads-48th-avenue-mens-shelter/",
-    "published": "2026-11-09T21:02:52Z",
-    "gathered": "2026-11-10T01:43:03Z"
+    "title": "Denver could close the Crossroads shelter in the next year",
+    "url": "https://denverite.com/2026/11/10/crossroads-homeless-shelter-future/",
+    "published": "2026-11-10T22:48:57Z",
+    "gathered": "2026-11-10T23:38:00Z"
    },
    {
-    "h": "City Park bandstand to be torn down after fire",
-    "b": "Denver will build a nearly identical replacement in time for the 2027 City Park Jazz season.",
-    "date": "2026-11-09",
+    "h": "Denver passes $1.68 billion budget",
+    "b": "The City Council passed Denver's 2027 budget, which grows slightly after years of cuts, though some members say it falls short in some areas.",
+    "date": "2026-11-10",
     "publisher": "Denverite",
-    "title": "The City Park bandstand is coming down after the fire",
-    "url": "https://denverite.com/2026/11/09/city-park-bandstand-demolition-rebuild/",
-    "published": "2026-11-09T20:00:21Z",
-    "gathered": "2026-11-09T20:13:15Z"
-   },
-   {
-    "h": "Denver and Littleton sue Bow Mar over gates on South Sheridan",
-    "b": "The two cities are taking the small town to court over its plan to gate South Sheridan Boulevard.",
-    "date": "2026-11-09",
-    "publisher": "Denverite",
-    "title": "The battle over Bow Mar’s gates is going to court",
-    "url": "https://denverite.com/2026/11/09/bow-mar-gates-lawsuit/",
-    "published": "2026-11-09T17:31:45Z",
-    "gathered": "2026-11-09T17:44:16Z"
+    "title": "Denver’s $1.68B budget passed. Council members weren’t thrilled about it",
+    "url": "https://denverite.com/2026/11/10/denver-2027-budget-passes/",
+    "published": "2026-11-10T21:58:48Z",
+    "gathered": "2026-11-10T23:38:00Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 62,
     "cond": "Mostly Cloudy",
-    "wind": "E 12 mph",
-    "humidity": 20,
-    "obs": "10 Nov 11:58 am MST"
+    "wind": "Calm",
+    "humidity": 18,
+    "obs": "10 Nov 15:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Partly sunny, with a high near 70. North northeast wind around 6 mph becoming northwest. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 39. West northwest wind around 6 mph becoming light and variable  after midnight. "
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 39. West wind 5 to 7 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Veterans Day",
@@ -338,7 +298,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39."
+     "text": "Mostly clear, with a low around 39. Light south southwest wind. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66."
     }
    ]
   },
@@ -354,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -375,51 +341,16 @@
     "published": "2026-11-10T13:00:00Z",
     "updated": "2026-11-10T13:00:00Z",
     "gathered": "2026-11-10T14:19:46Z"
-   },
-   {
-    "h": "LAHSA shuts down computers over potential security issue",
-    "b": "The homeless services agency told employees Friday to stay off its systems, and the order was still in place Monday. Its interim CEO said it was not yet clear whether personal information was accessed.",
-    "date": "2026-11-09",
-    "publisher": "LAist",
-    "title": "LAHSA shuts down its computers over ‘potential security issue’",
-    "url": "https://laist.com/news/housing-homelessness/lahsa-shuts-down-computers-potential-security-issue",
-    "published": "2026-11-10T02:33:08Z",
-    "updated": "2026-11-10T08:07:40Z",
-    "gathered": "2026-11-10T05:12:34Z"
-   },
-   {
-    "h": "California voters reject billionaire tax",
-    "b": "Prop. 40 would have charged billionaires a one-time 5% tax on most of their wealth to fund healthcare. Opponents argued it would drive the wealthy out of the state.",
-    "date": "2026-11-09",
-    "url": "https://www.kuow.org/npr-news/2026-11-09/california-voters-defeat-billionaire-tax-proposal-that-divided-democrats",
-    "gathered": "2026-11-10T05:12:34Z"
-   },
-   {
-    "h": "Raman's mayoral win lifts hopes for transit and safer streets",
-    "b": "Advocates are optimistic after Mayor-elect Nithya Raman, backed by bike lane supporters, defeated Mayor Karen Bass, who conceded Thursday.",
-    "date": "2026-11-09",
-    "publisher": "LAist",
-    "title": "Raman’s win triggers surge of optimism among advocates of transit and safer streets in LA",
-    "url": "https://laist.com/news/transportation/nithya-raman-mayor-bass-transit-metro",
-    "published": "2026-11-09T18:42:16Z",
-    "updated": "2026-11-09T21:14:08Z",
-    "gathered": "2026-11-09T20:13:15Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 84,
-    "wind": "SE 3 mph",
-    "humidity": 23,
-    "obs": "10 Nov 12:10 PM PST"
+    "temp": 83,
+    "wind": "N 1 mph",
+    "humidity": 36,
+    "obs": "10 Nov 03:25 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 86,
-     "text": "Sunny, with a high near 86. North northeast wind around 5 mph becoming west northwest. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -449,6 +380,12 @@
      "kind": "low",
      "temp": 60,
      "text": "A 30 percent chance of rain after 4am.  Partly cloudy, with a low around 60."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 74,
+     "text": "A 30 percent chance of rain, mainly before 10am.  Mostly sunny, with a high near 74."
     }
    ]
   },
@@ -464,7 +401,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -475,6 +412,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Ninth death in city jail custody this year",
+    "b": "A man held at Rikers' Robert N. Davoren Center was found dead in his bed, at least the ninth death in Department of Correction custody this year. The department did not release a cause and will investigate.",
+    "date": "2026-11-10",
+    "publisher": "Gothamist",
+    "title": "Rikers detainee's death is at least the 9th in corrections department custody this year",
+    "url": "https://gothamist.com/news/rikers-detainees-death-is-at-least-the-9th-in-corrections-department-custody-this-year",
+    "published": "2026-11-10T20:58:31Z",
+    "gathered": "2026-11-10T23:38:00Z"
+   },
+   {
+    "h": "Hochul keeps door open to redrawing House map",
+    "b": "Gov. Kathy Hochul said Democratic gains don't necessarily end the push to amend the state constitution for mid-decade redistricting, which could let Democrats redraw New York's districts as soon as 2028, but she didn't commit.",
+    "date": "2026-11-10",
+    "publisher": "Gothamist",
+    "title": "Gov. Hochul keeps the door open to redrawing New York’s congressional map",
+    "url": "https://gothamist.com/news/gov-hochul-keeps-the-door-open-to-redrawing-new-yorks-congressional-map",
+    "published": "2026-11-10T21:29:39Z",
+    "gathered": "2026-11-10T23:38:00Z"
+   },
    {
     "h": "Man indicted in killing of Brooklyn runner Katie Suarez",
     "b": "Brooklyn prosecutors indicted a city Department of Education worker in the Oct. 30 stabbing of Katie Suarez on a Bath Beach path. Police say surveillance shows him fleeing the scene.",
@@ -502,8 +459,7 @@
     "publisher": "Gothamist",
     "title": "Manhattan's Canal Street is getting a face-lift, but it'll take a while",
     "url": "https://gothamist.com/news/manhattans-canal-street-is-getting-a-face-lift-but-itll-take-a-while",
-    "published": "2026-11-10T11:30:00Z",
-    "updated": "2026-11-10T15:02:00Z",
+    "published": "2026-11-10T15:02:00Z",
     "gathered": "2026-11-10T14:19:46Z"
    },
    {
@@ -515,55 +471,15 @@
     "url": "https://gothamist.com/news/emerald",
     "published": "2026-11-10T11:00:58Z",
     "gathered": "2026-11-10T11:14:45Z"
-   },
-   {
-    "h": "T-Mobile throttled affordable internet for low-income New Yorkers, AG says",
-    "b": "T-Mobile agreed to improve service after the attorney general's office found it capped speeds and made the discounted plans hard to find. Only 15 households had enrolled.",
-    "date": "2026-11-09",
-    "publisher": "Gothamist",
-    "title": "T-Mobile slowed Internet to a crawl for NY low-income users, AG says",
-    "url": "https://gothamist.com/news/t-mobile-slowed-internet-to-a-crawl-for-ny-low-income-users-ag-says",
-    "published": "2026-11-09T21:44:00Z",
-    "gathered": "2026-11-10T01:43:03Z"
-   },
-   {
-    "h": "NJ Gov. Sherrill picks Shirley Emehelu as lieutenant governor",
-    "b": "The former prosecutor and acting secretary of state replaces Dale Caldwell, who resigned in September. Women now hold New Jersey's two highest executive offices for the first time.",
-    "date": "2026-11-09",
-    "publisher": "Gothamist",
-    "title": "NJ Gov. Sherrill announces her new lieutenant governor pick",
-    "url": "https://gothamist.com/news/nj-gov-sherrill-to-announce-her-new-lieutenant-governor-pick",
-    "published": "2026-11-09T16:56:00Z",
-    "gathered": "2026-11-09T17:44:16Z"
-   },
-   {
-    "h": "One dead in Hamilton Heights apartment fire",
-    "b": "The fire started in a cluttered third-floor unit of a Riverside Drive building around 1:30 a.m. Five others, including two firefighters, were hurt. FDNY says 87 people have died in fires this year, up from 45 at this point last year.",
-    "date": "2026-11-09",
-    "publisher": "Gothamist",
-    "title": "1 dead after early morning fire rips through Hamilton Heights apartment building, FDNY says",
-    "url": "https://gothamist.com/news/1-dead-after-early-morning-fire-rips-through-hamilton-heights-apartment-building-fdny-says",
-    "published": "2026-11-09T12:36:00Z",
-    "gathered": "2026-11-09T14:18:34Z"
-   },
-   {
-    "h": "NYC expands Code Blue cold-weather help for homeless New Yorkers",
-    "b": "The city is adding $25 million, 300 more outreach workers and 800 more beds for nights below freezing. More than two dozen people died in the cold last winter.",
-    "date": "2026-11-09",
-    "publisher": "Gothamist",
-    "title": "Mamdani says more help is coming to homeless New Yorkers living outside this winter",
-    "url": "https://gothamist.com/news/mamdani-says-more-help-is-coming-to-homeless-new-yorkers-living-outside-this-winter",
-    "published": "2026-11-09T09:00:45Z",
-    "gathered": "2026-11-09T11:17:12Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 60,
     "cond": "Fair",
-    "wind": "W 6 mph, gusts to 17 mph",
-    "humidity": 41,
-    "obs": "10 Nov 14:51 pm EST"
+    "wind": "W 3 mph",
+    "humidity": 46,
+    "obs": "10 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -616,7 +532,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -663,20 +579,6 @@
     "date": "2026-11-10",
     "url": "https://www.thelocal.fr/20261110/france-vows-tough-response-to-freezer-cyberattack-blamed-on-iran",
     "gathered": "2026-11-10T10:14:16Z"
-   },
-   {
-    "h": "Judo champion Teddy Riner runs for French president",
-    "b": "The Olympic star announced a 2027 bid, citing concern about the rise of the far right as Marine Le Pen leads the polls.",
-    "date": "2026-11-09",
-    "url": "https://www.thelocal.fr/20261109/olympic-judo-champion-riner-joins-fight-for-french-presidency",
-    "gathered": "2026-11-09T14:18:34Z"
-   },
-   {
-    "h": "Teachers and students call strikes and protests for Tuesday",
-    "b": "Education unions and student groups plan a nationwide mobilization on Nov. 10 with a major march in Paris, citing staffing and funding concerns.",
-    "date": "2026-11-09",
-    "url": "https://www.thelocal.fr/20261109/french-students-and-teachers-call-fresh-strikes-and-protests-on-november-10th",
-    "gathered": "2026-11-09T11:17:12Z"
    }
   ],
   "weather": {
@@ -695,7 +597,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "goodnews": []
  },
  {
@@ -710,42 +612,22 @@
     "b": "Sen. Patty Murray, set to chair Senate Appropriations, is pressing DHS about ICE's $1.5 billion contract to keep a private firm running the Northwest ICE Processing Center and whether ICE still plans to buy a new Seattle-area facility.",
     "date": "2026-11-10",
     "publisher": "KUOW",
-    "title": "Washington state senator begins probe into deportation system after GOP loses congress",
+    "title": "Washington state senator begins probe into deportation system after GOP loses Congress",
     "url": "https://www.kuow.org/governing/2026-11-10/washington-state-senator-begins-probe-into-deportation-system-after-gop-loses-congress",
     "published": "2026-11-10T18:44:18Z",
-    "updated": "2026-11-10T18:44:18Z",
+    "updated": "2026-11-10T22:41:35Z",
     "gathered": "2026-11-10T20:12:49Z"
-   },
-   {
-    "h": "Washington Democrats win a supermajority in the state House",
-    "b": "Democrats flipped at least seven seats and are on track for at least 66, their first two-thirds House majority since 1949.",
-    "date": "2026-11-09",
-    "url": "https://www.kuow.org/elections/2026-11-09/washington-dems-nab-supermajority-in-state-house",
-    "gathered": "2026-11-09T20:13:15Z"
-   },
-   {
-    "h": "Seattle School Board votes to authorize suit over trans sports ban",
-    "b": "Directors voted unanimously Monday to let Superintendent Ben Shuldiner take legal action against Initiative 638, which bans transgender girls from girls' school sports.",
-    "date": "2026-11-09",
-    "url": "https://www.kuow.org/education/2026-11-09/seattle-schools-poised-to-sue-over-trans-ban-initiative",
-    "gathered": "2026-11-10T10:14:16Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 55,
-    "cond": "Rain",
-    "wind": "SE 4 mph",
+    "cond": "light rain,mist",
+    "wind": "SE 5 mph",
     "humidity": 93,
-    "obs": "10 Nov 12:05 PM PST"
+    "obs": "10 Nov 03:10 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 57,
-     "text": "Rain.  High near 57. South southeast wind around 9 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -775,6 +657,12 @@
      "kind": "low",
      "temp": 51,
      "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 51."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 58,
+     "text": "Rain likely.  Cloudy, with a high near 58. Chance of precipitation is 70%."
     }
    ]
   },
@@ -790,16 +678,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-10T23:12:00Z",
+  "updatedAt": "2026-11-11T02:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
-   {
-    "h": "Granddaughter turns to social media to save 50-year-old La Palma",
-    "b": "Loren Jewett has given herself 30 days of videos to bring customers back to the Mexican restaurant her grandparents have run since 1976.",
-    "date": "2026-11-09",
-    "url": "https://www.kuow.org/news-stories/2026-11-09/saving-a-seattle-familys-restaurant-one-social-media-post-at-a-time",
-    "gathered": "2026-11-10T02:12:23Z"
-   },
    {
     "h": "Jimi Hendrix will be on Washington's $1 coin",
     "b": "Gov. Bob Ferguson's office chose the Seattle guitar legend for the state's innovation coin, due in 2029.",
