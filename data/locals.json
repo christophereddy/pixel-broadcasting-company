@@ -22,17 +22,11 @@
    "now": {
     "temp": 53,
     "cond": "Mostly Cloudy",
-    "wind": "NW 9 mph",
+    "wind": "NW 8 mph",
     "humidity": 69,
-    "obs": "11 Nov 01:52 am EST"
+    "obs": "11 Nov 02:52 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 48,
-     "text": "Partly cloudy, with a low around 48. West wind around 5 mph. "
-    },
     {
      "name": "Veterans Day",
      "kind": "high",
@@ -62,6 +56,12 @@
      "kind": "high",
      "temp": 54,
      "text": "Sunny, with a high near 54."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35."
     }
    ]
   },
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -118,19 +118,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 46,
     "cond": "A Few Clouds",
-    "wind": "S 7 mph",
-    "humidity": 77,
-    "obs": "11 Nov 01:54 am EST"
+    "wind": "SW 5 mph",
+    "humidity": 79,
+    "obs": "11 Nov 02:54 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44. West wind around 7 mph. "
-    },
     {
      "name": "Veterans Day",
      "kind": "high",
@@ -160,6 +154,12 @@
      "kind": "high",
      "temp": 48,
      "text": "Rain.  High near 48. North wind around 15 mph, with gusts as high as 26 mph.  Chance of precipitation is 90%."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 35,
+     "text": "A chance of rain before midnight, then a chance of snow between midnight and 1am, then a chance of rain after 1am.  Mostly cloudy, with a low around 35. North wind 8 to 10 mph, with gusts as high as 20 mph.  Chance of precipitation is 50%."
     }
    ]
   },
@@ -175,7 +175,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -222,48 +222,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 45,
     "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 77,
-    "obs": "10 Nov 23:53 pm CST"
+    "wind": "SW 3 mph",
+    "humidity": 83,
+    "obs": "11 Nov 01:53 am CST"
    },
    "periods": [
     {
      "name": "Overnight",
      "kind": "low",
-     "temp": 46,
-     "text": "Mostly cloudy, with a low around 46. South southwest wind around 5 mph. "
+     "temp": 47,
+     "text": "Mostly cloudy, with a low around 47. South wind around 5 mph. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
      "temp": 54,
-     "text": "Rain likely, mainly between noon and 5pm.  Mostly cloudy, with a high near 54. South wind 5 to 10 mph becoming north northeast 10 to 15 mph in the afternoon. Winds could gust as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Showers likely, mainly between 10am and 4pm.  Mostly cloudy, with a high near 54. South wind 5 to 10 mph becoming north northeast 10 to 15 mph in the afternoon. Winds could gust as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 42,
-     "text": "A chance of rain before 3am, then a chance of rain after 4am.  Mostly cloudy, with a low around 42. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 40%."
+     "text": "A 40 percent chance of showers, mainly after 3am.  Mostly cloudy, with a low around 42. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 48,
-     "text": "Rain likely, mainly between 11am and 3pm.  Mostly cloudy, with a high near 48. Breezy, with a north wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 70%."
+     "text": "Showers.  High near 48. Breezy, with a north wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "A chance of rain before 3am, then a slight chance of rain and snow.  Mostly cloudy, with a low around 34. Breezy, with a north northwest wind 20 to 25 mph, with gusts as high as 30 mph.  Chance of precipitation is 50%."
+     "temp": 36,
+     "text": "A chance of rain showers before 3am, then a chance of rain and snow showers.  Mostly cloudy, with a low around 36. Breezy, with a north northwest wind 20 to 25 mph, with gusts as high as 30 mph.  Chance of precipitation is 50%."
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 44,
-     "text": "A chance of rain and snow before 9am, then a chance of rain.  Partly sunny, with a high near 44. Chance of precipitation is 40%."
+     "text": "A chance of rain and snow showers before 9am, then a chance of rain showers.  Partly sunny, with a high near 44. Chance of precipitation is 40%."
     }
    ]
   },
@@ -279,7 +279,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -321,40 +321,40 @@
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39. Light and variable wind becoming south around 5 mph. "
+     "text": "Mostly clear, with a low around 39. South southwest wind around 6 mph. "
     },
     {
      "name": "Veterans Day",
      "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. South wind around 5 mph becoming calm  in the morning. "
+     "temp": 67,
+     "text": "Sunny, with a high near 67. South southwest wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Clear, with a low around 39. Calm wind becoming southwest around 5 mph after midnight. "
+     "text": "Clear, with a low around 39. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 69,
-     "text": "Sunny, with a high near 69. Southwest wind around 6 mph becoming light and variable  in the afternoon. "
+     "temp": 68,
+     "text": "Sunny, with a high near 68. South southwest wind around 6 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 39,
-     "text": "Mostly clear, with a low around 39. Light south southwest wind. "
+     "temp": 38,
+     "text": "Mostly clear, with a low around 38. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66."
+     "temp": 65,
+     "text": "Mostly sunny, with a high near 65."
     }
    ]
   },
@@ -370,7 +370,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -413,14 +413,14 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 62,
     "wind": "NW 3 mph",
-    "humidity": 62,
-    "obs": "10 Nov 10:40 PM PST"
+    "humidity": 56,
+    "obs": "11 Nov 12:10 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 61,
      "text": "Mostly clear, with a low around 61. North wind around 5 mph. "
@@ -469,7 +469,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -547,16 +547,10 @@
     "temp": 55,
     "cond": "Fair",
     "wind": "W 7 mph",
-    "humidity": 45,
-    "obs": "11 Nov 01:51 am EST"
+    "humidity": 47,
+    "obs": "11 Nov 02:51 am EST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a steady temperature around 55. West wind around 10 mph. "
-    },
     {
      "name": "Veterans Day",
      "kind": "high",
@@ -586,6 +580,12 @@
      "kind": "high",
      "temp": 47,
      "text": "Rain, mainly before 1pm.  Temperature falling to around 44 by 3pm. Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "A 30 percent chance of rain before 1am.  Mostly cloudy, with a low around 42."
     }
    ]
   },
@@ -601,7 +601,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -613,6 +613,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Zemmour enters French presidential race",
+    "b": "Far-right Reconquete leader Eric Zemmour declared his candidacy, pledging two million fewer immigrants by the end of a five-year term. Marine Le Pen remains widely projected to lead the first round.",
+    "date": "2026-11-11",
+    "publisher": "The Local France",
+    "title": "French far-right politician Zemmour joins presidential race",
+    "url": "https://www.thelocal.fr/20261111/french-far-right-politician-zemmour-joins-presidential-race",
+    "published": "2026-11-11T08:07:30Z",
+    "updated": "2026-11-11T08:08:07Z",
+    "gathered": "2026-11-11T08:13:37Z"
+   },
    {
     "h": "BHV Marais abruptly shuts its doors",
     "b": "The Paris department store closed Monday evening after an insurance policy lapsed during its bankruptcy process. Management says a new contract takes effect Tuesday, but unions fear it won't reopen.",
@@ -666,7 +677,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "goodnews": []
  },
  {
@@ -704,18 +715,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 93,
-    "obs": "10 Nov 10:35 PM PST"
+    "temp": 51,
+    "cond": "Mist",
+    "wind": "E 5 mph",
+    "humidity": 100,
+    "obs": "11 Nov 12:10 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 53,
-     "text": "Mostly cloudy, with a low around 53. South southeast wind around 8 mph. "
+     "text": "Mostly cloudy, with a low around 53. South southeast wind around 7 mph. "
     },
     {
      "name": "Veterans Day",
@@ -761,7 +772,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T08:13:00Z",
+  "updatedAt": "2026-11-11T11:20:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-11T08:13:00Z",
+ "updatedAt": "2026-11-11T11:20:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Ebola cases in DR Congo pass 11,000",
+   "b": "The outbreak of the rare Bundibugyo strain has now infected more than 11,000 people and killed 5,387, the second-largest Ebola outbreak on record. No vaccine or treatment exists for the strain, and eight of 26 provinces are affected.",
+   "date": "2026-11-11",
+   "publisher": "Al Jazeera",
+   "title": "Ebola cases in DR Congo pass 11,000, with 5,387 deaths",
+   "url": "https://www.aljazeera.com/news/2026/11/11/ebola-cases-in-dr-congo-pass-11000-with-5387-deaths",
+   "gathered": "2026-11-11T08:13:37Z"
+  },
   {
    "h": "Probe suggests Alaska gas project may serve Russian intel",
    "b": "A ProPublica investigation found surveyors linked to Russian gas giant Novatek worked off Alaska's sensitive North Slope in 2025 and this year. An expert called such Russia-backed information gathering near US shores a direct challenge to sovereignty and security.",
@@ -114,13 +123,24 @@
  ],
  "international": [
   {
+   "h": "Yemeni government forces and Houthis trade heavy attacks",
+   "b": "Yemen's Saudi-backed government forces said they hit Houthi positions in six governorates with air strikes, drones and artillery, claiming about 190 fighters killed or injured. Al Jazeera could not verify the claims.",
+   "date": "2026-11-11",
+   "place": "Yemen",
+   "tz": "Asia/Aden",
+   "publisher": "Al Jazeera",
+   "title": "Yemeni forces, Houthis exchange attacks, claim to inflict heavy losses",
+   "url": "https://www.aljazeera.com/news/2026/11/11/yemeni-forces-houthis-exchange-attacks-claim-to-inflict-heavy-losses",
+   "gathered": "2026-11-11T08:13:37Z"
+  },
+  {
    "h": "Russia says it downed 146 drones over Leningrad region",
    "b": "Russia claimed to intercept 146 drones over the Leningrad region, where a drone attack sparked a fire at Ust-Luga port. The strikes came as US-mediated Russia-Ukraine talks in Abu Dhabi entered their final day, which Zelenskyy called constructive.",
    "date": "2026-11-11",
    "place": "Leningrad region, Russia",
    "tz": "Europe/Moscow",
    "publisher": "Al Jazeera",
-   "title": "Russia claims interception of 146 drones in Leningrad region",
+   "title": "Russia, Ukraine exchange strikes as Baltic nations issue drone alerts",
    "url": "https://www.aljazeera.com/news/2026/11/11/russia-claims-interception-of-146-drones-in-leningrad-region",
    "gathered": "2026-11-11T06:57:06Z"
   },
@@ -159,8 +179,6 @@
    "date": "2026-11-10",
    "place": "Russia",
    "tz": "Europe/Moscow",
-   "publisher": "Al Jazeera",
-   "title": "Russia expels Moldovan diplomat in tit-for-tat move",
    "url": "https://www.aljazeera.com/news/2026/11/10/russia-expels-moldovan-diplomat-in-tit-for-tat-move",
    "gathered": "2026-11-10T23:38:00Z"
   },
@@ -170,8 +188,6 @@
    "date": "2026-11-10",
    "place": "Southern Lebanon",
    "tz": "Asia/Beirut",
-   "publisher": "Al Jazeera",
-   "title": "UNIFIL patrol comes under fire in southern Lebanon",
    "url": "https://www.aljazeera.com/news/2026/11/10/unifil-patrol-comes-under-fire-in-southern-lebanon",
    "gathered": "2026-11-10T23:38:00Z"
   },
@@ -294,6 +310,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Blacklisted Chinese university bought Nvidia H200 chips",
+   "b": "Northwestern Polytechnical University bought two H200 AI chips through a third party despite US export restrictions, procurement records reviewed by Reuters show. The school also rented access to the chips this year.",
+   "date": "2026-11-11",
+   "publisher": "Al Jazeera",
+   "title": "Chinese university buys Nvidia AI H200 chips despite US ban, records show",
+   "url": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show",
+   "gathered": "2026-11-11T08:13:37Z"
+  },
   {
    "h": "IBM Consulting ends most US foreign worker sponsorships",
    "b": "IBM's biggest division, with more than 150,000 employees, will end most sponsorships of foreign workers in the US, saying its use of high-skilled visa programs had been declining for years. The move comes amid Trump administration pressure on H-1B use.",
@@ -491,16 +516,10 @@
    "temp": 55,
    "cond": "Fair",
    "wind": "W 7 mph",
-   "humidity": 45,
-   "obs": "11 Nov 01:51 am EST"
+   "humidity": 47,
+   "obs": "11 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 55,
-    "text": "Mostly clear, with a steady temperature around 55. West wind around 10 mph. "
-   },
    {
     "name": "Veterans Day",
     "kind": "high",
@@ -530,6 +549,12 @@
     "kind": "high",
     "temp": 47,
     "text": "Rain, mainly before 1pm.  Temperature falling to around 44 by 3pm. Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+   },
+   {
+    "name": "Friday Night",
+    "kind": "low",
+    "temp": 42,
+    "text": "A 30 percent chance of rain before 1am.  Mostly cloudy, with a low around 42."
    }
   ]
  },
