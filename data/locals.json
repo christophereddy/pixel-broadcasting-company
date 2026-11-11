@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Partly Cloudy",
+    "temp": 59,
+    "cond": "A Few Clouds",
     "wind": "NW 7 mph",
-    "humidity": 42,
-    "obs": "10 Nov 17:52 pm EST"
+    "humidity": 58,
+    "obs": "10 Nov 20:52 pm EST"
    },
    "periods": [
     {
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -118,11 +118,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 51,
     "cond": "A Few Clouds",
-    "wind": "SW 12 mph",
-    "humidity": 59,
-    "obs": "10 Nov 17:54 pm EST"
+    "wind": "SW 16 mph",
+    "humidity": 64,
+    "obs": "10 Nov 20:54 pm EST"
    },
    "periods": [
     {
@@ -175,7 +175,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -200,11 +200,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "A Few Clouds",
-    "wind": "E 6 mph",
-    "humidity": 65,
-    "obs": "10 Nov 16:53 pm CST"
+    "temp": 51,
+    "cond": "Overcast",
+    "wind": "SW 3 mph",
+    "humidity": 83,
+    "obs": "10 Nov 19:53 pm CST"
    },
    "periods": [
     {
@@ -257,7 +257,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -291,18 +291,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 56,
     "cond": "Mostly Cloudy",
-    "wind": "Calm",
-    "humidity": 18,
-    "obs": "10 Nov 15:58 pm MST"
+    "wind": "W 8 mph",
+    "humidity": 22,
+    "obs": "10 Nov 18:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 39. West wind 5 to 7 mph becoming light and variable  after midnight. "
+     "text": "Mostly cloudy during the early evening, then becoming clear, with a low around 39. West northwest wind around 6 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Veterans Day",
@@ -348,7 +348,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -359,6 +359,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Shimell unseats Amezcua as Santa Ana mayor",
+    "b": "Attorney Dan Shimell defeated incumbent Valerie Amezcua in one of Orange County's biggest upsets, holding a 5-point lead Tuesday night. Amezcua conceded on social media.",
+    "date": "2026-11-10",
+    "publisher": "LAist",
+    "title": "Dan Shimell unseats incumbent Valerie Amezcua as Santa Ana’s next mayor",
+    "url": "https://laist.com/news/politics/dan-shimell-unseats-valerie-amezcua-santa-ana-mayor",
+    "published": "2026-11-10T23:40:18Z",
+    "updated": "2026-11-10T23:46:24Z",
+    "gathered": "2026-11-11T02:15:13Z"
+   },
    {
     "h": "Ballot tampering claim in tight South LA council race",
     "b": "Council District 9 candidate Estuardo Mazariegos filed a complaint alleging front-runner Jose Ugarte's campaign mishandled voters' ballots. The race remains too close to call.",
@@ -374,27 +385,23 @@
     "h": "Claims center opens for Garden Grove evacuees",
     "b": "GKN Aerospace opened a center in Los Alamitos Tuesday to help residents evacuated during the Garden Grove chemical tank scare file for reimbursement from its $100 million claims program. Help is offered in English, Vietnamese, Spanish and Korean.",
     "date": "2026-11-10",
-    "publisher": "LAist",
-    "title": "The company behind Garden Grove hazmat scare opens a center to help victims file claims",
     "url": "https://laist.com/news/climate-environment/the-company-behind-garden-grove-hazmat-scare-opens-a-center-to-help-victims-file-claims",
-    "published": "2026-11-10T13:00:00Z",
-    "updated": "2026-11-10T13:00:00Z",
     "gathered": "2026-11-10T14:19:46Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 83,
-    "wind": "N 1 mph",
-    "humidity": 36,
-    "obs": "10 Nov 03:25 PM PST"
+    "temp": 73,
+    "wind": "NW 1 mph",
+    "humidity": 57,
+    "obs": "10 Nov 05:55 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 61,
-     "text": "Clear, with a low around 61. North northeast wind around 5 mph. "
+     "text": "Clear, with a low around 61. West southwest wind around 5 mph becoming north northeast in the evening. "
     },
     {
      "name": "Veterans Day",
@@ -418,7 +425,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 60,
-     "text": "A 30 percent chance of rain after 4am.  Partly cloudy, with a low around 60."
+     "text": "A 30 percent chance of rain after 4am.  Partly cloudy, with a low around 60. Southwest wind around 5 mph becoming east after midnight.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
@@ -440,7 +447,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -458,7 +465,8 @@
     "publisher": "Gothamist",
     "title": "Rikers detainee's death is at least the 9th in corrections department custody this year",
     "url": "https://gothamist.com/news/rikers-detainees-death-is-at-least-the-9th-in-corrections-department-custody-this-year",
-    "published": "2026-11-10T20:58:31Z",
+    "published": "2026-11-10T20:58:00Z",
+    "updated": "2026-11-11T01:16:00Z",
     "gathered": "2026-11-10T23:38:00Z"
    },
    {
@@ -514,18 +522,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
+    "temp": 59,
     "cond": "Fair",
     "wind": "W 3 mph",
-    "humidity": 46,
-    "obs": "10 Nov 17:51 pm EST"
+    "humidity": 48,
+    "obs": "10 Nov 20:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 50,
-     "text": "Clear, with a low around 50. West wind 7 to 11 mph. "
+     "text": "Clear, with a low around 50. West wind 7 to 9 mph. "
     },
     {
      "name": "Veterans Day",
@@ -571,7 +579,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -636,7 +644,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "goodnews": []
  },
  {
@@ -646,6 +654,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Wilson approves targeted expansion of police cameras",
+    "b": "Seattle Mayor Katie Wilson will allow surveillance cameras in three more neighborhoods after pausing the plan last spring, saying an NYU Policing Project audit supports a targeted approach. Stadium District cameras activate immediately.",
+    "date": "2026-11-10",
+    "publisher": "KUOW",
+    "title": "Seattle mayor greenlights ‘targeted’ expansion of police surveillance cameras",
+    "url": "https://www.kuow.org/governing/2026-11-10/seattle-mayor-greenlights-targeted-expansion-of-police-surveillance-cameras",
+    "published": "2026-11-10T23:56:11Z",
+    "updated": "2026-11-10T23:56:11Z",
+    "gathered": "2026-11-11T02:15:13Z"
+   },
    {
     "h": "Federal prosecutors can't keep up with detention challenges",
     "b": "Facing a flood of habeas petitions from people saying they're unlawfully held by immigration authorities, the US Attorney's Office for Western Washington says it can no longer defend every case and will let judges rule without opposition.",
@@ -672,17 +691,17 @@
   "weather": {
    "now": {
     "temp": 55,
-    "cond": "light rain,mist",
-    "wind": "SE 5 mph",
+    "cond": "Overcast",
+    "wind": "S 5 mph",
     "humidity": 93,
-    "obs": "10 Nov 03:10 PM PST"
+    "obs": "10 Nov 06:05 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 56,
-     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a steady temperature around 56. South southeast wind around 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a steady temperature around 56. South wind around 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Veterans Day",
@@ -706,13 +725,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 51,
-     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 51."
+     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 51. South southeast wind 3 to 6 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 58,
-     "text": "Rain likely.  Cloudy, with a high near 58. Chance of precipitation is 70%."
+     "text": "Rain likely.  Cloudy, with a high near 58. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     }
    ]
   },
@@ -728,7 +747,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-11T02:12:00Z",
+  "updatedAt": "2026-11-11T05:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
