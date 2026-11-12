@@ -42,11 +42,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Mostly Cloudy",
-    "wind": "W 5 mph",
-    "humidity": 56,
-    "obs": "11 Nov 17:52 pm EST"
+    "temp": 59,
+    "cond": "A Few Clouds",
+    "wind": "SW 9 mph",
+    "humidity": 67,
+    "obs": "11 Nov 21:52 pm EST"
    },
    "periods": [
     {
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,18 +131,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 49,
     "cond": "Mostly Cloudy",
-    "wind": "SW 3 mph",
-    "humidity": 42,
-    "obs": "11 Nov 17:54 pm EST"
+    "wind": "E 5 mph",
+    "humidity": 77,
+    "obs": "11 Nov 21:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "Cloudy, with a low around 41. Northwest wind 3 to 6 mph. "
+     "text": "Cloudy, with a low around 41. North wind 3 to 6 mph. "
     },
     {
      "name": "Thursday",
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -209,6 +209,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "CPS students could lose Google search over AI rules",
+    "b": "Districts that bar popular AI tools in classrooms, like Chicago Public Schools, will lose access to Google search next year. CPS says it has guidelines to help students and teachers use AI safely.",
+    "date": "2026-11-12",
+    "publisher": "WBEZ",
+    "title": "What to know about CPS and AI as Chicago students risk losing access to Google search",
+    "url": "https://www.wbez.org/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search",
+    "published": "2026-11-12T00:30:19Z",
+    "updated": "2026-11-12T00:30:19Z",
+    "gathered": "2026-11-12T03:14:36Z"
+   },
    {
     "h": "Lawmakers probe deadly fires at Joliet prison",
     "b": "State legislators held a hearing after a Marshall Project, WBEZ and Sun-Times investigation found 70 fires at the Joliet Treatment Center, where men in mental health care set fires in despair over conditions. Two died.",
@@ -234,41 +245,41 @@
   "weather": {
    "now": {
     "temp": 49,
-    "cond": "Light Rain",
-    "wind": "N 10 mph",
-    "humidity": 83,
-    "obs": "11 Nov 16:53 pm CST"
+    "cond": "Overcast",
+    "wind": "NW 9 mph",
+    "humidity": 77,
+    "obs": "11 Nov 20:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "A 30 percent chance of rain, mainly before 3am.  Mostly cloudy, with a low around 42. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
+     "temp": 40,
+     "text": "A slight chance of rain between 11pm and 2am.  Mostly cloudy, with a low around 40. Breezy, with a north northwest wind 10 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 46,
-     "text": "Rain likely, mainly after noon.  Mostly cloudy, with a high near 46. Breezy, with a north wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly after noon.  High near 46. Breezy, with a north northwest wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 36,
-     "text": "Rain likely before 2am, then a chance of rain and snow.  Mostly cloudy, with a low around 36. Breezy, with a north northwest wind 15 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 70%. Little or no snow accumulation expected. "
+     "text": "Rain before 2am, then rain and snow likely.  Low around 36. Breezy, with a north northwest wind 15 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%. Little or no snow accumulation expected. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 43,
-     "text": "A chance of rain and snow before 9am, then a chance of rain.  Mostly cloudy, with a high near 43. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 30%."
+     "text": "A chance of rain and snow before 9am, then a chance of rain.  Mostly cloudy, with a high near 43. Breezy, with a north wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Partly cloudy, with a low around 34."
+     "text": "Partly cloudy, with a low around 34. North northwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Saturday",
@@ -290,18 +301,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Illinois Holocaust Museum reopens after renovation",
     "b": "The Skokie museum reopens Wednesday after 15 months and more than $10 million in upgrades, including a reflection gallery, new artifacts and a 240-seat auditorium.",
     "date": "2026-11-11",
-    "publisher": "WBEZ",
-    "title": "‘A sanctuary of memory’: Illinois Holocaust Museum and Education Center reopens in Skokie after 15-month renovation",
     "url": "https://www.wbez.org/museums/2026/11/11/a-sanctuary-of-memory-illinois-holocaust-museum-and-education-center-in-skokie-after-15-month-renovation",
-    "published": "2026-11-11T11:35:00Z",
-    "updated": "2026-11-11T11:35:07Z",
     "gathered": "2026-11-11T15:31:16Z"
    }
   ]
@@ -326,18 +333,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "cond": "Partly Cloudy",
-    "wind": "N 7 mph",
-    "humidity": 16,
-    "obs": "11 Nov 14:58 pm MST"
+    "temp": 45,
+    "cond": "A Few Clouds",
+    "wind": "S 9 mph",
+    "humidity": 38,
+    "obs": "11 Nov 19:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Clear, with a low around 39. Calm wind becoming south southwest around 5 mph after midnight. "
+     "text": "Clear, with a low around 39. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Thursday",
@@ -383,7 +390,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -430,10 +437,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 81,
-    "wind": "N 1 mph",
-    "humidity": 34,
-    "obs": "11 Nov 03:10 PM PST"
+    "temp": 68,
+    "wind": "NW 2 mph",
+    "humidity": 69,
+    "obs": "11 Nov 07:10 PM PST"
    },
    "periods": [
     {
@@ -464,7 +471,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 57,
-     "text": "Rain, mainly before 4am.  Low around 57. Chance of precipitation is 80%."
+     "text": "Rain, mainly before 4am.  Low around 57. South southwest wind around 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -486,9 +493,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Original Pantry Cafe reopens with a new mission",
+    "b": "The century-old downtown diner, closed since March 2025, reopens Nov. 19 run by nonprofit Hope the Mission, with all profits going to shelters for unhoused Angelenos and longtime staff returning under a union contract.",
+    "date": "2026-11-12",
+    "publisher": "LAist",
+    "title": "The Original Pantry Cafe returns with a new menu and mission",
+    "url": "https://laist.com/news/food/the-original-pantry-cafe-returns-with-a-new-menu-and-mission",
+    "published": "2026-11-12T00:28:38Z",
+    "updated": "2026-11-12T00:28:38Z",
+    "gathered": "2026-11-12T03:14:36Z"
+   }
+  ]
  },
  {
   "location": {
@@ -502,9 +521,10 @@
     "b": "A three-story building at 2625 Bedford Avenue in Brooklyn collapsed Wednesday afternoon. Four people had life-threatening injuries, the FDNY said.",
     "date": "2026-11-11",
     "publisher": "Gothamist",
-    "title": "1 dead, 10 injured after building collapse in Flatbush, Brooklyn, FDNY says",
+    "title": "Brooklyn building collapse: 2 dead, 7 children among at least 19 injured",
     "url": "https://gothamist.com/news/1-dead-10-injured-after-building-collapse-in-flatbush-brookln-fdny-says",
     "published": "2026-11-11T23:10:00Z",
+    "updated": "2026-11-12T01:56:00Z",
     "gathered": "2026-11-11T23:15:31Z"
    },
    {
@@ -553,16 +573,16 @@
    "now": {
     "temp": 57,
     "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 62,
-    "obs": "11 Nov 17:51 pm EST"
+    "wind": "SE 3 mph",
+    "humidity": 49,
+    "obs": "11 Nov 21:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 54,
-     "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Increasing clouds, with a low around 54. South wind 6 to 9 mph becoming east after midnight. "
+     "temp": 57,
+     "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a steady temperature around 57. South wind 6 to 8 mph becoming east after midnight. "
     },
     {
      "name": "Thursday",
@@ -608,7 +628,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -666,7 +686,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "goodnews": []
  },
  {
@@ -690,11 +710,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Clear",
-    "wind": "S 6 mph",
-    "humidity": 59,
-    "obs": "11 Nov 03:05 PM PST"
+    "temp": 61,
+    "cond": "Mostly Cloudy",
+    "wind": "SE 6 mph",
+    "humidity": 72,
+    "obs": "11 Nov 06:55 PM PST"
    },
    "periods": [
     {
@@ -747,7 +767,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T02:11:00Z",
+  "updatedAt": "2026-11-12T05:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
