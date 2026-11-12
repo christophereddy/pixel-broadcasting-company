@@ -43,29 +43,23 @@
   "weather": {
    "now": {
     "temp": 58,
-    "cond": "A Few Clouds",
-    "wind": "SW 12 mph",
-    "humidity": 70,
-    "obs": "11 Nov 23:52 pm EST"
+    "cond": "Partly Cloudy",
+    "wind": "SW 18 mph, gusts to 26 mph",
+    "humidity": 78,
+    "obs": "12 Nov 02:52 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 55,
-     "text": "Partly cloudy, with a low around 55. Southwest wind around 10 mph, with gusts as high as 20 mph. "
-    },
-    {
      "name": "Thursday",
      "kind": "high",
-     "temp": 65,
-     "text": "Sunny, with a high near 65. Northwest wind 10 to 15 mph, with gusts as high as 30 mph. "
+     "temp": 64,
+     "text": "Sunny, with a high near 64. Northwest wind 10 to 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. Northwest wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42. Northwest wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Friday",
@@ -77,13 +71,19 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 36,
-     "text": "Mostly clear, with a low around 36. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 36. Northwest wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 54,
      "text": "Sunny, with a high near 54."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 33,
+     "text": "Clear, with a low around 33."
     }
    ]
   },
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,48 +131,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Partly Cloudy",
+    "temp": 49,
+    "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 77,
-    "obs": "11 Nov 23:54 pm EST"
+    "humidity": 83,
+    "obs": "12 Nov 02:54 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 41,
-     "text": "Cloudy, with a low around 41. North wind 3 to 6 mph. "
-    },
-    {
      "name": "Thursday",
      "kind": "high",
-     "temp": 52,
-     "text": "Showers likely, mainly after 5pm.  Cloudy, with a high near 52. Northeast wind 6 to 11 mph increasing to 12 to 17 mph in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 53,
+     "text": "Rain likely, mainly after 4pm.  Mostly cloudy, with a high near 53. East wind 5 to 11 mph, with gusts as high as 23 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Rain.  Low around 40. Breezy, with a northeast wind 15 to 20 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 38,
+     "text": "Rain.  Low around 38. Northeast wind around 14 mph, with gusts as high as 28 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 42,
-     "text": "Rain, mainly before 4pm.  High near 42. North wind 11 to 17 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 43,
+     "text": "Rain likely.  Cloudy, with a high near 43. North wind 10 to 14 mph, with gusts as high as 26 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 36,
-     "text": "A chance of rain before 7pm, then a chance of showers, mainly between 7pm and 8pm.  Mostly cloudy, with a low around 36. Northwest wind 8 to 11 mph.  Chance of precipitation is 30%."
+     "temp": 34,
+     "text": "A chance of rain, mainly before 7pm.  Mostly cloudy, with a low around 34. Northwest wind around 7 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 47,
-     "text": "A slight chance of rain before 1pm.  Mostly cloudy, with a high near 47. Northwest wind 8 to 10 mph.  Chance of precipitation is 20%."
+     "text": "Mostly cloudy, with a high near 47. Northwest wind 6 to 9 mph. "
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 34,
+     "text": "Partly cloudy, with a low around 34. Northwest wind around 7 mph. "
     }
    ]
   },
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -245,41 +245,41 @@
   "weather": {
    "now": {
     "temp": 47,
-    "cond": "Overcast",
-    "wind": "NW 9 mph",
+    "cond": "Mostly Cloudy",
+    "wind": "N 12 mph",
     "humidity": 83,
-    "obs": "11 Nov 22:53 pm CST"
+    "obs": "12 Nov 01:53 am CST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 40,
-     "text": "A 20 percent chance of rain before 2am.  Mostly cloudy, with a low around 40. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
+     "temp": 41,
+     "text": "A slight chance of showers before 3am, then a chance of showers after 4am.  Mostly cloudy, with a low around 41. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 46,
-     "text": "Rain, mainly after noon.  High near 46. Breezy, with a north northwest wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 45,
+     "text": "Showers, mainly after 10am.  High near 45. Windy, with a north northwest wind 20 to 30 mph, with gusts as high as 40 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 36,
-     "text": "Rain before 2am, then rain and snow likely.  Low around 36. Breezy, with a north northwest wind 15 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%. Little or no snow accumulation expected. "
+     "text": "Showers.  Low around 36. Breezy, with a north wind 15 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 43,
-     "text": "A chance of rain and snow before 9am, then a chance of rain.  Mostly cloudy, with a high near 43. Breezy, with a north wind 15 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 30%."
+     "temp": 42,
+     "text": "Showers.  High near 42. Breezy, with a north wind 15 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Partly cloudy, with a low around 34. North northwest wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "temp": 33,
+     "text": "Rain showers likely before 3am, then a chance of rain and snow showers.  Partly cloudy, with a low around 33. North northwest wind around 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Saturday",
@@ -301,7 +301,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -333,42 +333,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 44,
-    "cond": "A Few Clouds",
+    "temp": 43,
+    "cond": "Fair",
     "wind": "S 9 mph",
-    "humidity": 41,
-    "obs": "11 Nov 20:58 pm MST"
+    "humidity": 43,
+    "obs": "11 Nov 22:58 pm MST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 39,
-     "text": "Clear, with a low around 39. Southwest wind 3 to 5 mph. "
+     "text": "Clear, with a low around 39. Southwest wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 68,
-     "text": "Sunny, with a high near 68. South southwest wind around 6 mph becoming light and variable. "
+     "text": "Sunny, with a high near 68. South southwest wind around 6 mph becoming east in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39. Southwest wind 3 to 5 mph. "
+     "text": "Mostly clear, with a low around 39. South wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 65,
-     "text": "Mostly sunny, with a high near 65. Calm wind becoming north northeast around 5 mph in the afternoon. "
+     "temp": 64,
+     "text": "Partly sunny, with a high near 64. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 38,
-     "text": "Partly cloudy, with a low around 38. Light west wind. "
+     "temp": 37,
+     "text": "Mostly cloudy, with a low around 37. Light west wind. "
     },
     {
      "name": "Saturday",
@@ -390,7 +390,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -437,17 +437,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 61,
     "wind": "NW 2 mph",
     "humidity": 71,
-    "obs": "11 Nov 09:10 PM PST"
+    "obs": "12 Nov 12:10 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 59,
-     "text": "Mostly clear, with a low around 59. Calm wind becoming west around 5 mph. "
+     "text": "Mostly clear, with a low around 59. West wind around 5 mph becoming calm. "
     },
     {
      "name": "Thursday",
@@ -464,8 +464,8 @@
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 70,
-     "text": "Rain, mainly before 10am.  High near 70. East wind around 5 mph becoming south southwest in the afternoon.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 74,
+     "text": "Rain, mainly before 10am.  High near 74. East wind around 5 mph becoming south southwest in the afternoon.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
@@ -476,8 +476,8 @@
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 71,
-     "text": "A 30 percent chance of rain before 10am.  Partly sunny, with a high near 71."
+     "temp": 70,
+     "text": "A 30 percent chance of rain before 10am.  Partly sunny, with a high near 70."
     }
    ]
   },
@@ -493,7 +493,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -517,15 +517,13 @@
   },
   "local": [
    {
-    "h": "Flatbush building collapse kills one, injures 10",
-    "b": "A three-story building at 2625 Bedford Avenue in Brooklyn collapsed Wednesday afternoon. Four people had life-threatening injuries, the FDNY said.",
-    "date": "2026-11-11",
-    "publisher": "Gothamist",
-    "title": "Brooklyn building collapse: 2 dead, 7 children among at least 19 injured",
-    "url": "https://gothamist.com/news/1-dead-10-injured-after-building-collapse-in-flatbush-brookln-fdny-says",
-    "published": "2026-11-11T23:10:00Z",
-    "updated": "2026-11-12T01:56:00Z",
-    "gathered": "2026-11-11T23:15:31Z"
+    "h": "Flatbush building collapse kills at least two",
+    "b": "A three-story mixed-use building collapsed in Brooklyn's Flatbush neighborhood Wednesday afternoon, killing at least two and injuring more than a dozen as firefighters searched the rubble for survivors.",
+    "date": "2026-11-12",
+    "publisher": "Al Jazeera",
+    "title": "Building collapse in Brooklyn kills two, injures more than a dozen",
+    "url": "https://www.aljazeera.com/news/2026/11/12/building-collapse-in-brooklyn-kills-two-injures-more-than-a-dozen",
+    "gathered": "2026-11-12T08:13:00Z"
    },
    {
     "h": "East Side's Cinema 123 closes after 60 years",
@@ -571,48 +569,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 67,
-    "obs": "11 Nov 23:51 pm EST"
+    "temp": 55,
+    "cond": "Mostly Cloudy",
+    "wind": "E 5 mph",
+    "humidity": 77,
+    "obs": "12 Nov 02:51 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a low around 54. East wind around 8 mph. "
-    },
-    {
      "name": "Thursday",
      "kind": "high",
-     "temp": 57,
-     "text": "Showers, mainly after noon.  Steady temperature around 57. East wind 10 to 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 58,
+     "text": "A slight chance of rain before 7am, then rain after 10am.  Steady temperature around 58. East wind 10 to 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 42,
-     "text": "Rain.  Low around 42. North wind 14 to 18 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 44,
+     "text": "Rain.  Low around 44. Breezy, with a north wind 15 to 20 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 47,
-     "text": "Rain, mainly before 4pm.  Temperature falling to around 37 by 1pm. North wind 14 to 17 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 48,
+     "text": "Rain.  Temperature falling to around 43 by 10am. North wind 13 to 18 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "A 30 percent chance of rain, mainly before 7pm.  Mostly cloudy, with a low around 40. Northwest wind around 13 mph. "
+     "temp": 42,
+     "text": "A 30 percent chance of rain, mainly after 1am.  Mostly cloudy, with a low around 42. Northwest wind around 11 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 48,
-     "text": "Partly sunny, with a high near 48."
+     "temp": 46,
+     "text": "Partly sunny, with a high near 46."
+    },
+    {
+     "name": "Saturday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42."
     }
    ]
   },
@@ -628,7 +626,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -665,8 +663,8 @@
     "publisher": "The Local France",
     "title": "French far-right politician Zemmour joins presidential race",
     "url": "https://www.thelocal.fr/20261111/french-far-right-politician-zemmour-joins-presidential-race",
-    "published": "2026-11-11T09:07:30Z",
-    "updated": "2026-11-11T09:08:07Z",
+    "published": "2026-11-11T08:07:30Z",
+    "updated": "2026-11-12T07:35:51Z",
     "gathered": "2026-11-11T08:13:37Z"
    }
   ],
@@ -686,7 +684,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "goodnews": []
  },
  {
@@ -710,48 +708,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 54,
     "cond": "Clear",
-    "wind": "SE 6 mph",
-    "humidity": 83,
-    "obs": "11 Nov 08:53 PM PST"
+    "wind": "S 4 mph",
+    "humidity": 87,
+    "obs": "11 Nov 11:55 PM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly cloudy, with a low around 52. Southeast wind around 6 mph. "
+     "text": "Cloudy, with a low around 52. Southeast wind around 5 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 60,
-     "text": "Cloudy, with a high near 60. Light south southeast wind. "
+     "temp": 61,
+     "text": "Mostly cloudy, with a high near 61. Light south southeast wind. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "A 20 percent chance of rain after 3am.  Cloudy, with a low around 51. South southeast wind around 5 mph becoming calm  after midnight. "
+     "temp": 52,
+     "text": "A 30 percent chance of rain, mainly after 4am.  Cloudy, with a low around 52. South southeast wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 60,
-     "text": "A 50 percent chance of rain.  Cloudy, with a high near 60. South southwest wind around 6 mph. "
+     "temp": 59,
+     "text": "Rain, mainly before 2pm.  High near 59. South southwest wind around 6 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Rain likely.  Mostly cloudy, with a low around 49. South southeast wind 5 to 7 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 50,
+     "text": "Rain likely.  Mostly cloudy, with a low around 50. South southeast wind 5 to 7 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 58,
-     "text": "A 40 percent chance of rain.  Mostly cloudy, with a high near 58."
+     "temp": 57,
+     "text": "Rain likely, mainly after 4pm.  Mostly cloudy, with a high near 57. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -767,7 +765,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T08:12:00Z",
+  "updatedAt": "2026-11-12T11:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

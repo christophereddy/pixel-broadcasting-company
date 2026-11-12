@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T08:12:00Z",
+ "updatedAt": "2026-11-12T11:14:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -72,8 +72,6 @@
    "h": "Guard reprimands Hegseth entourage at Tomb of the Unknown Soldier",
    "b": "Video shows an Old Guard sentinel loudly telling members of Defense Secretary Pete Hegseth's group to keep silence and respect after they laughed while taking photos on Veterans Day.",
    "date": "2026-11-12",
-   "publisher": "Al Jazeera",
-   "title": "Hegseth entourage reprimanded by guard at Tomb of the Unknown Soldier",
    "url": "https://www.aljazeera.com/news/2026/11/12/hegseth-entourage-reprimanded-by-guard-at-tomb-of-the-unknown-soldier",
    "gathered": "2026-11-12T03:14:36Z"
   },
@@ -217,8 +215,6 @@
    "date": "2026-11-12",
    "place": "Bolivia",
    "tz": "America/La_Paz",
-   "publisher": "Al Jazeera",
-   "title": "Bolivia arrests former judge on suspicion of drug trafficking",
    "url": "https://www.aljazeera.com/news/2026/11/12/bolivia-arrests-former-judge-on-suspicion-of-drug-trafficking",
    "gathered": "2026-11-12T05:12:07Z"
   },
@@ -248,6 +244,8 @@
    "date": "2026-11-11",
    "place": "Gaza",
    "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Deadly Israeli air strike hits hospital, 13 killed across Gaza",
    "url": "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza",
    "gathered": "2026-11-11T23:15:31Z"
   },
@@ -340,6 +338,17 @@
    "tz": "Asia/Beirut",
    "url": "https://www.aljazeera.com/news/2026/11/11/former-iraqi-awmaker-ahmed-al-alwani-found-dead-in-beirut",
    "gathered": "2026-11-11T06:57:06Z"
+  },
+  {
+   "h": "Indonesia's vice president resigns",
+   "b": "Gibran Rakabuming Raka, son of former President Joko Widodo, submitted his resignation two years into his term amid court rulings disputing his educational credentials. Parliament will pick a replacement from two presidential nominees within 60 days.",
+   "date": "2026-11-12",
+   "place": "Jakarta, Indonesia",
+   "tz": "Asia/Jakarta",
+   "publisher": "Al Jazeera",
+   "title": "Indonesia vice president resigns amid dispute over eligibility",
+   "url": "https://www.aljazeera.com/news/2026/11/12/indonesia-vice-president-resigns-amid-dispute-over-eligibility",
+   "gathered": "2026-11-12T08:13:00Z"
   }
  ],
  "business": [
@@ -404,8 +413,6 @@
    "h": "Misiorowski and Schlittler win Cy Young awards unanimously",
    "b": "Milwaukee's Jacob Misiorowski (1.80 ERA, 252 strikeouts) and the Yankees' Cam Schlittler (1.95 ERA) swept the NL and AL voting, only the third unanimous pair in MLB history.",
    "date": "2026-11-12",
-   "publisher": "CBS Sports",
-   "title": "Cy Young winners Jacob Misiorowski and Cam Schlittler just put up a 2026 tandem not seen since 1905",
    "url": "https://www.cbssports.com/mlb/news/cy-young-winners-jacob-misiorowski-cam-schlittler-2026-tandem/",
    "gathered": "2026-11-12T03:14:36Z"
   },
@@ -463,15 +470,13 @@
  ],
  "local": [
   {
-   "h": "Flatbush building collapse kills one, injures 10",
-   "b": "A three-story building at 2625 Bedford Avenue in Brooklyn collapsed Wednesday afternoon. Four people had life-threatening injuries, the FDNY said.",
-   "date": "2026-11-11",
-   "publisher": "Gothamist",
-   "title": "Brooklyn building collapse: 2 dead, 7 children among at least 19 injured",
-   "url": "https://gothamist.com/news/1-dead-10-injured-after-building-collapse-in-flatbush-brookln-fdny-says",
-   "published": "2026-11-11T23:10:00Z",
-   "updated": "2026-11-12T01:56:00Z",
-   "gathered": "2026-11-11T23:15:31Z"
+   "h": "Flatbush building collapse kills at least two",
+   "b": "A three-story mixed-use building collapsed in Brooklyn's Flatbush neighborhood Wednesday afternoon, killing at least two and injuring more than a dozen as firefighters searched the rubble for survivors.",
+   "date": "2026-11-12",
+   "publisher": "Al Jazeera",
+   "title": "Building collapse in Brooklyn kills two, injures more than a dozen",
+   "url": "https://www.aljazeera.com/news/2026/11/12/building-collapse-in-brooklyn-kills-two-injures-more-than-a-dozen",
+   "gathered": "2026-11-12T08:13:00Z"
   },
   {
    "h": "East Side's Cinema 123 closes after 60 years",
@@ -517,48 +522,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
-   "cond": "Fair",
-   "wind": "Calm",
-   "humidity": 67,
-   "obs": "11 Nov 23:51 pm EST"
+   "temp": 55,
+   "cond": "Mostly Cloudy",
+   "wind": "E 5 mph",
+   "humidity": 77,
+   "obs": "12 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 54,
-    "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a low around 54. East wind around 8 mph. "
-   },
-   {
     "name": "Thursday",
     "kind": "high",
-    "temp": 57,
-    "text": "Showers, mainly after noon.  Steady temperature around 57. East wind 10 to 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 58,
+    "text": "A slight chance of rain before 7am, then rain after 10am.  Steady temperature around 58. East wind 10 to 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 42,
-    "text": "Rain.  Low around 42. North wind 14 to 18 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 44,
+    "text": "Rain.  Low around 44. Breezy, with a north wind 15 to 20 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 47,
-    "text": "Rain, mainly before 4pm.  Temperature falling to around 37 by 1pm. North wind 14 to 17 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "temp": 48,
+    "text": "Rain.  Temperature falling to around 43 by 10am. North wind 13 to 18 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 40,
-    "text": "A 30 percent chance of rain, mainly before 7pm.  Mostly cloudy, with a low around 40. Northwest wind around 13 mph. "
+    "temp": 42,
+    "text": "A 30 percent chance of rain, mainly after 1am.  Mostly cloudy, with a low around 42. Northwest wind around 11 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 48,
-    "text": "Partly sunny, with a high near 48."
+    "temp": 46,
+    "text": "Partly sunny, with a high near 46."
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 42,
+    "text": "Mostly clear, with a low around 42."
    }
   ]
  },
