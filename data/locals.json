@@ -42,18 +42,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 58,
     "cond": "A Few Clouds",
-    "wind": "SW 9 mph",
-    "humidity": 67,
-    "obs": "11 Nov 21:52 pm EST"
+    "wind": "SW 12 mph",
+    "humidity": 70,
+    "obs": "11 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 55,
-     "text": "Partly cloudy, with a low around 55. Southwest wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly cloudy, with a low around 55. Southwest wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,15 +131,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Mostly Cloudy",
-    "wind": "E 5 mph",
+    "temp": 50,
+    "cond": "Partly Cloudy",
+    "wind": "Calm",
     "humidity": 77,
-    "obs": "11 Nov 21:54 pm EST"
+    "obs": "11 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 41,
      "text": "Cloudy, with a low around 41. North wind 3 to 6 mph. "
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -244,18 +244,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 47,
     "cond": "Overcast",
     "wind": "NW 9 mph",
-    "humidity": 77,
-    "obs": "11 Nov 20:53 pm CST"
+    "humidity": 83,
+    "obs": "11 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "A slight chance of rain between 11pm and 2am.  Mostly cloudy, with a low around 40. Breezy, with a north northwest wind 10 to 20 mph, with gusts as high as 30 mph.  Chance of precipitation is 20%."
+     "text": "A 20 percent chance of rain before 2am.  Mostly cloudy, with a low around 40. Breezy, with a north northwest wind 15 to 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday",
@@ -301,7 +301,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -333,11 +333,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 44,
     "cond": "A Few Clouds",
     "wind": "S 9 mph",
-    "humidity": 38,
-    "obs": "11 Nov 19:58 pm MST"
+    "humidity": 41,
+    "obs": "11 Nov 20:58 pm MST"
    },
    "periods": [
     {
@@ -390,7 +390,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -437,10 +437,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 64,
     "wind": "NW 2 mph",
-    "humidity": 69,
-    "obs": "11 Nov 07:10 PM PST"
+    "humidity": 71,
+    "obs": "11 Nov 09:10 PM PST"
    },
    "periods": [
     {
@@ -493,7 +493,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -571,18 +571,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
+    "temp": 56,
     "cond": "Fair",
-    "wind": "SE 3 mph",
-    "humidity": 49,
-    "obs": "11 Nov 21:51 pm EST"
+    "wind": "Calm",
+    "humidity": 67,
+    "obs": "11 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 57,
-     "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a steady temperature around 57. South wind 6 to 8 mph becoming east after midnight. "
+     "temp": 54,
+     "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a low around 54. East wind around 8 mph. "
     },
     {
      "name": "Thursday",
@@ -628,7 +628,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -686,7 +686,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "goodnews": []
  },
  {
@@ -710,11 +710,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Mostly Cloudy",
+    "temp": 57,
+    "cond": "Clear",
     "wind": "SE 6 mph",
-    "humidity": 72,
-    "obs": "11 Nov 06:55 PM PST"
+    "humidity": 83,
+    "obs": "11 Nov 08:53 PM PST"
    },
    "periods": [
     {
@@ -733,19 +733,19 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 51,
-     "text": "A 20 percent chance of rain after 3am.  Cloudy, with a low around 51. Light south southeast wind. "
+     "text": "A 20 percent chance of rain after 3am.  Cloudy, with a low around 51. South southeast wind around 5 mph becoming calm  after midnight. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 60,
-     "text": "A 50 percent chance of rain.  Cloudy, with a high near 60. East southeast wind 5 to 7 mph becoming south southwest in the afternoon. "
+     "text": "A 50 percent chance of rain.  Cloudy, with a high near 60. South southwest wind around 6 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Rain likely.  Mostly cloudy, with a low around 49. South southeast wind around 6 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely.  Mostly cloudy, with a low around 49. South southeast wind 5 to 7 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -767,7 +767,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T05:11:00Z",
+  "updatedAt": "2026-11-12T08:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

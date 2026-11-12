@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T05:11:00Z",
+ "updatedAt": "2026-11-12T08:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,18 @@
  },
  "world": [
   {
+   "h": "Iran warns of wider retaliation as Israel readies possible strike",
+   "b": "Israel's security cabinet ordered the military to step up preparations for an attack on Iran, Israeli media reported, and Iran warned it would expand the war beyond the region if attacked. Opposition leader Gadi Eisenkot urged caretaker PM Netanyahu not to act without an immediate threat.",
+   "date": "2026-11-12",
+   "publisher": "Al Jazeera",
+   "title": "Iran warns of expanded retaliation as Israel reportedly readies to attack",
+   "url": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack",
+   "gathered": "2026-11-12T05:12:07Z"
+  },
+  {
    "h": "US, Mexico and Guatemala at risk of losing measles-free status",
    "b": "A Pan American Health Organization commission is reviewing measles elimination across the Americas this week. The US, which has held the status since 2000, is facing its largest and deadliest outbreak in nearly 30 years.",
    "date": "2026-11-12",
-   "publisher": "Al Jazeera",
-   "title": "Why the US, Mexico and Guatemala may lose their measles-free status",
    "url": "https://www.aljazeera.com/news/2026/11/12/why-the-us-mexico-and-guatemala-may-lose-their-measles-free-status",
    "gathered": "2026-11-12T03:14:36Z"
   },
@@ -194,13 +201,44 @@
  ],
  "international": [
   {
+   "h": "Houthis deny targeting Mecca as Yemen fighting intensifies",
+   "b": "The Houthis said they targeted a pumping station in Yanbu and Riyadh's airport, not Mecca, after Saudi-led forces said they intercepted missiles and drones. Saudi civil defence said debris fell in a village in Mecca province.",
+   "date": "2026-11-12",
+   "place": "Saudi Arabia",
+   "tz": "Asia/Riyadh",
+   "publisher": "Al Jazeera",
+   "title": "Fighting intensifies in Yemen as Houthis deny targeting Mecca",
+   "url": "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca",
+   "gathered": "2026-11-12T05:12:07Z"
+  },
+  {
+   "h": "Bolivia arrests ex-judge on drug trafficking suspicion",
+   "b": "Former Santa Cruz chief justice Quezada, who resigned after landing on a US visa restriction list, is among several senior Bolivian judicial officials arrested since September over alleged cartel links.",
+   "date": "2026-11-12",
+   "place": "Bolivia",
+   "tz": "America/La_Paz",
+   "publisher": "Al Jazeera",
+   "title": "Bolivia arrests former judge on suspicion of drug trafficking",
+   "url": "https://www.aljazeera.com/news/2026/11/12/bolivia-arrests-former-judge-on-suspicion-of-drug-trafficking",
+   "gathered": "2026-11-12T05:12:07Z"
+  },
+  {
+   "h": "Amnesty: UN and South Sudan failed to prevent village massacre",
+   "b": "Amnesty says UN peacekeepers and officials knew an attack on Abiemnom was likely but didn't reinforce about three dozen troops before the March 1 assault, which killed more than 200 people.",
+   "date": "2026-11-12",
+   "place": "Abiemnom, South Sudan",
+   "tz": "Africa/Juba",
+   "publisher": "Al Jazeera",
+   "title": "Amnesty says UN, South Sudan officials failed to prevent village massacre",
+   "url": "https://www.aljazeera.com/news/2026/11/12/amnesty-says-un-south-sudan-officials-failed-to-prevent-village-massacre",
+   "gathered": "2026-11-12T05:12:07Z"
+  },
+  {
    "h": "Ex-Red Brigades member escapes house arrest in Argentina",
    "b": "Leonardo Bertulazzi, facing extradition to serve a 27-year sentence in Italy over the kidnapping and killing of a former prime minister, slipped out over neighbouring terraces, prompting a nationwide search.",
    "date": "2026-11-12",
    "place": "Argentina",
    "tz": "America/Argentina/Buenos_Aires",
-   "publisher": "Al Jazeera",
-   "title": "Former Italian Red Brigades member escapes house arrest in Argentina",
    "url": "https://www.aljazeera.com/news/2026/11/12/former-italian-red-brigades-member-escapes-house-arrest-in-argentina",
    "gathered": "2026-11-12T03:14:36Z"
   },
@@ -479,18 +517,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 56,
    "cond": "Fair",
-   "wind": "SE 3 mph",
-   "humidity": 49,
-   "obs": "11 Nov 21:51 pm EST"
+   "wind": "Calm",
+   "humidity": 67,
+   "obs": "11 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 57,
-    "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a steady temperature around 57. South wind 6 to 8 mph becoming east after midnight. "
+    "temp": 54,
+    "text": "A 30 percent chance of showers, mainly between 2am and 4am.  Mostly cloudy, with a low around 54. East wind around 8 mph. "
    },
    {
     "name": "Thursday",
