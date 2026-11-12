@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T20:12:00Z",
+ "updatedAt": "2026-11-12T23:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -8,19 +8,20 @@
  "world": [
   {
    "h": "US envoys meet Putin in Moscow on Ukraine war",
-   "b": "Jared Kushner and Steve Witkoff held talks with Putin after two days of US-mediated Russia-Ukraine talks in Abu Dhabi ended with another planned prisoner exchange but no breakthrough.",
+   "b": "Jared Kushner and Steve Witkoff met Putin for about two hours, then headed to Dublin for talks with Zelenskyy after US-mediated Russia-Ukraine talks in Abu Dhabi ended without a major breakthrough.",
    "date": "2026-11-12",
-   "publisher": "Al Jazeera",
-   "title": "US envoys meet Putin in Moscow to discuss Russia-Ukraine war",
-   "url": "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin",
+   "publisher": "PBS NewsHour",
+   "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, then head for Dublin to see Zelenskyy",
+   "url": "https://www.pbs.org/newshour/world/u-s-envoys-meet-with-putin-in-moscow-on-ukraine-talks-then-head-for-dublin-to-see-zelenskyy",
+   "published": "2026-11-12T17:22:53Z",
    "gathered": "2026-11-12T17:13:38Z"
   },
   {
-   "h": "Iran vows reply 10 times more severe to any US attack",
+   "h": "Houthis claim attacks on Saudi energy and military sites",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-12",
    "publisher": "Al Jazeera",
-   "title": "Iran vows ‘severe’ reply to any US attack; Israel kills 10 across Gaza",
+   "title": "Houthis claim attacks on Saudi energy and military infrastructure",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza",
    "gathered": "2026-11-12T17:13:38Z"
   },
@@ -76,13 +77,20 @@
  ],
  "national": [
   {
+   "h": "USDA plans rule that could cut SNAP for 6.3 million",
+   "b": "A proposed rule would end automatic SNAP eligibility for some families on TANF cash aid; the agency says about 6.3 million people could lose benefits by fiscal 2029.",
+   "date": "2026-11-12",
+   "publisher": "PBS NewsHour",
+   "title": "Trump administration plans to make it harder to get grocery assistance",
+   "url": "https://www.pbs.org/newshour/politics/trump-administration-plans-to-make-it-harder-to-get-grocery-assistance",
+   "published": "2026-11-12T19:02:18Z",
+   "gathered": "2026-11-12T20:19:24Z"
+  },
+  {
    "h": "Gunman shoots 5 in DC, killing 1, then dies by suicide",
    "b": "Police say the gunman opened fire at a VIDA Fitness gym in Logan Circle, about a mile north of the White House, then barricaded himself in an adjoining apartment, where he shot himself.",
    "date": "2026-11-12",
-   "publisher": "PBS NewsHour",
-   "title": "Suspected gunman shoots 5 people in D.C., killing 1, before dying by suicide",
    "url": "https://www.pbs.org/newshour/nation/suspected-gunman-shoots-5-people-in-d-c-killing-1-before-dying-by-suicide",
-   "published": "2026-11-12T16:26:29Z",
    "gathered": "2026-11-12T17:13:38Z"
   },
   {
@@ -145,11 +153,21 @@
    "title": "Trump Promised to Care for America’s Veterans. The VA Is Now “Collapsing From the Inside.”",
    "url": "https://www.propublica.org/article/east-orange-va-hospital-veterans-decline-new-jersey",
    "published": "2026-11-11T10:00:00Z",
-   "updated": "2026-11-11T22:54:54Z",
+   "updated": "2026-11-12T19:14:10Z",
    "gathered": "2026-11-11T11:20:48Z"
   }
  ],
  "politics": [
+  {
+   "h": "House passes veterans pay bill amid floor drama",
+   "b": "The bill gives combat-injured retirees full disability and retirement pay, funded by changing how tinnitus and sleep apnea are rated, a trade-off Democrats opposed.",
+   "date": "2026-11-12",
+   "publisher": "PBS NewsHour",
+   "title": "House approves bill to boost compensation for many veterans, with some floor drama",
+   "url": "https://www.pbs.org/newshour/politics/house-approves-bill-to-boost-compensation-for-many-veterans-with-some-floor-drama",
+   "published": "2026-11-12T18:28:00Z",
+   "gathered": "2026-11-12T20:19:24Z"
+  },
   {
    "h": "Blue wave slows drop in Black House members",
    "b": "After a Supreme Court ruling weakened the Voting Rights Act, Democratic gains limited losses: the next House will have 60 Black members, down from 63, NPR found. Alabama's Shomari Figures won despite a redrawn district.",
@@ -207,22 +225,39 @@
    "b": "Democrat Scott Colom defeated Republican Sen. Cindy Hyde-Smith after a prolonged count, becoming Mississippi's first Black US senator since Reconstruction, the AP projected.",
    "date": "2026-11-11",
    "place": "Jackson, Mississippi",
-   "publisher": "PBS NewsHour",
-   "title": "Scott Colom wins Senate election in Mississippi",
    "url": "https://www.pbs.org/newshour/politics/scott-colom-wins-senate-election-in-mississippi",
-   "published": "2026-11-11T23:01:15Z",
    "gathered": "2026-11-11T23:15:31Z"
   }
  ],
  "international": [
+  {
+   "h": "Fujairah truck crash kills 14 in UAE",
+   "b": "A truck driver lost control at the entrance to the emirate late Wednesday, setting off a fiery pileup that also injured 30, the interior ministry said.",
+   "date": "2026-11-12",
+   "place": "Fujairah, UAE",
+   "tz": "Asia/Dubai",
+   "publisher": "Al Jazeera",
+   "title": "UAE says 14 killed, 30 injured in Fujairah traffic accident",
+   "url": "https://www.aljazeera.com/news/2026/11/12/uae-says-14-killed-30-injured-in-fujairah-traffic-accident",
+   "gathered": "2026-11-12T20:19:24Z"
+  },
+  {
+   "h": "Palestinian baby dies of cold in Gaza",
+   "b": "A father said his infant son froze to death overnight as cold hit Gaza, while a coalition of more than 50 countries and groups urged Israel to let in shelter, fuel and sanitation supplies.",
+   "date": "2026-11-12",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Palestinian baby dies from cold in Gaza amid Israeli restrictions on aid",
+   "url": "https://www.aljazeera.com/news/2026/11/12/palestinian-baby-dies-from-cold-in-gaza-amid-israeli-restrictions-on-aid",
+   "gathered": "2026-11-12T20:19:24Z"
+  },
   {
    "h": "Spain approves housing reforms after nationwide strike",
    "b": "A day after hundreds of thousands walked out over soaring rents, a parliamentary council passed the first of Prime Minister Pedro Sanchez's reissued decrees extending eviction protections, 35 to 34.",
    "date": "2026-11-12",
    "place": "Spain",
    "tz": "Europe/Madrid",
-   "publisher": "Al Jazeera",
-   "title": "Spain approves housing reforms after nationwide strike over costs",
    "url": "https://www.aljazeera.com/news/2026/11/12/spain-approves-housing-reforms-after-nationwide-strike-over-costs",
    "gathered": "2026-11-12T17:13:38Z"
   },
@@ -243,8 +278,6 @@
    "date": "2026-11-12",
    "place": "Italy",
    "tz": "Europe/Rome",
-   "publisher": "Al Jazeera",
-   "title": "More than 1,800 Italian schools targeted by new hoax bomb alerts",
    "url": "https://www.aljazeera.com/news/2026/11/12/more-than-1800-italian-schools-targeted-by-new-hoax-bomb-alerts",
    "gathered": "2026-11-12T17:13:38Z"
   },
@@ -281,8 +314,6 @@
    "date": "2026-11-12",
    "place": "Abiemnom, South Sudan",
    "tz": "Africa/Juba",
-   "publisher": "Al Jazeera",
-   "title": "Amnesty says UN, South Sudan officials failed to prevent village massacre",
    "url": "https://www.aljazeera.com/news/2026/11/12/amnesty-says-un-south-sudan-officials-failed-to-prevent-village-massacre",
    "gathered": "2026-11-12T05:12:07Z"
   },
@@ -405,6 +436,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Existing home sales hit 16-year low",
+   "b": "October sales fell 8.8% from a year earlier to 3.75 million, the lowest since 2010, as 30-year mortgage rates reached as high as 7.40%.",
+   "date": "2026-11-12",
+   "publisher": "NPR Business",
+   "title": "'Punch in the gut': Homes sales fall to their lowest in 16 years",
+   "url": "https://www.npr.org/2026/11/12/nx-s1-6038940/punch-in-the-gut-homes-sales-fall-to-their-lowest-in-16-years",
+   "gathered": "2026-11-12T20:19:24Z"
+  },
   {
    "h": "Nvidia CEO Jensen Huang resigns",
    "b": "Huang stepped down Thursday after facing growing calls to resign over an affair with an alleged Chinese spy. Nvidia named CFO Colette Kress interim CEO, and its shares fell 10% in premarket trading.",
@@ -531,6 +571,16 @@
  ],
  "local": [
   {
+   "h": "Feds charge gang members in 2022 killing of 12-year-old",
+   "b": "Prosecutors say members of a Brooklyn gang fired into the wrong car in East Flatbush, killing a 12-year-old boy, after mistaking it for a rival's.",
+   "date": "2026-11-12",
+   "publisher": "Gothamist",
+   "title": "Feds say gang members killed 12-year-old in East Flatbush drive-by, targeting a rival",
+   "url": "https://gothamist.com/news/feds-say-gang-members-killed-12-year-old-in-east-flatbush-drive-by-targeting-a-rival",
+   "published": "2026-11-12T19:12:31Z",
+   "gathered": "2026-11-12T20:19:24Z"
+  },
+  {
    "h": "Developer next to Flatbush collapse had flouted city orders",
    "b": "Buildings department records show the owner of the lot being excavated beside the collapsed building kept demolishing after a stop work order earlier this year and was penalized again.",
    "date": "2026-11-12",
@@ -538,6 +588,7 @@
    "title": "Developer at Brooklyn collapse site had record of flouting orders from city agency",
    "url": "https://gothamist.com/news/developer-at-brooklyn-collapse-site-had-record-of-flouting-orders-from-city-agency",
    "published": "2026-11-12T16:00:00Z",
+   "updated": "2026-11-12T17:54:00Z",
    "gathered": "2026-11-12T17:13:38Z"
   },
   {
@@ -575,10 +626,10 @@
    "b": "City officials said Thursday the collapse of a three-story apartment building in Flatbush has killed eight people and injured at least 25, including at least seven children, as crews kept searching the rubble.",
    "date": "2026-11-12",
    "publisher": "Gothamist",
-   "title": "Death toll from Brooklyn building collapse continues to rise amid ongoing search",
+   "title": "Brooklyn building collapse kills 6 adults, 2 children and rescue work still underway, mayor says",
    "url": "https://gothamist.com/news/death-toll-from-brooklyn-building-collapse-continues-to-rise-amid-ongoing-search",
    "published": "2026-11-12T12:08:00Z",
-   "updated": "2026-11-12T16:32:00Z",
+   "updated": "2026-11-12T17:24:00Z",
    "gathered": "2026-11-12T14:18:46Z"
   },
   {
@@ -624,48 +675,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
-   "cond": "Rain Fog/Mist",
-   "wind": "W 7 mph, gusts to 20 mph",
-   "humidity": 87,
-   "obs": "12 Nov 11:51 am EST"
+   "temp": 53,
+   "cond": "Light Rain Fog/Mist",
+   "wind": "E 10 mph, gusts to 21 mph",
+   "humidity": 93,
+   "obs": "12 Nov 14:51 pm EST"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 61,
-    "text": "Rain.  High near 61. Northeast wind 11 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 44,
-    "text": "Rain.  Low around 44. Breezy, with a north wind 14 to 20 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 42,
+    "text": "Showers, mainly before 10pm, then rain after midnight.  Low around 42. Breezy, with a northeast wind 14 to 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 48,
-    "text": "Rain.  Temperature falling to around 43 by 10am. North wind 13 to 18 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "temp": 50,
+    "text": "Rain, mainly before 4pm.  Temperature falling to around 40 by noon. Breezy, with a north wind 15 to 22 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 42,
-    "text": "A 30 percent chance of rain, mainly after 1am.  Mostly cloudy, with a low around 42. Northwest wind around 11 mph. "
+    "temp": 45,
+    "text": "A 30 percent chance of rain before 10pm.  Cloudy, with a steady temperature around 45. Northwest wind around 11 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 46,
-    "text": "Partly sunny, with a high near 46. Northwest wind 10 to 14 mph. "
+    "temp": 48,
+    "text": "Partly sunny, with a high near 48. Northwest wind 10 to 14 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 42,
-    "text": "Mostly clear, with a low around 42."
+    "temp": 41,
+    "text": "Mostly clear, with a low around 41."
+   },
+   {
+    "name": "Sunday",
+    "kind": "high",
+    "temp": 50,
+    "text": "Mostly sunny, with a high near 50."
    }
   ]
  },
