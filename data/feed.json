@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T14:15:00Z",
+ "updatedAt": "2026-11-12T17:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -98,7 +98,7 @@
    "b": "The historic ocean liner, which still holds the trans-Atlantic speed record from its 1952 maiden voyage, was set to be intentionally sunk off the Florida panhandle Wednesday.",
    "date": "2026-11-11",
    "publisher": "PBS NewsHour",
-   "title": "WATCH LIVE: SS United States, once world’s fastest ocean liner, sinks to become reef off Florida",
+   "title": "WATCH: SS United States, once world’s fastest ocean liner, sinks to become reef off Florida",
    "url": "https://www.pbs.org/newshour/nation/watch-live-ss-united-states-once-worlds-fastest-ocean-liner-sinks-to-become-reef-off-florida",
    "published": "2026-11-11T17:54:51Z",
    "gathered": "2026-11-11T22:09:32Z"
@@ -272,7 +272,7 @@
    "place": "Gaza",
    "tz": "Asia/Gaza",
    "publisher": "Al Jazeera",
-   "title": "At least six killed in Israeli strike on Gaza’s Nasser Medical Complex",
+   "title": "Israeli strike on Gaza’s Nasser Hospital kills surgeon, five others",
    "url": "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza",
    "gathered": "2026-11-11T23:15:31Z"
   },
@@ -379,6 +379,16 @@
   }
  ],
  "business": [
+  {
+   "h": "Nvidia CEO Jensen Huang resigns",
+   "b": "Huang stepped down Thursday after facing growing calls to resign over an affair with an alleged Chinese spy. Nvidia named CFO Colette Kress interim CEO, and its shares fell 10% in premarket trading.",
+   "date": "2026-11-12",
+   "publisher": "PBS NewsHour",
+   "title": "Nvidia CEO Jensen Huang resigns after his affair raises national security concerns",
+   "url": "https://www.pbs.org/newshour/economy/nvidia-ceo-jensen-huang-resigns-after-his-affair-raises-national-security-concerns",
+   "published": "2026-11-12T14:10:01Z",
+   "gathered": "2026-11-12T14:18:46Z"
+  },
   {
    "h": "Nvidia shares plunge as board weighs Huang's future",
    "b": "Nvidia stock fell after reports its board will discuss CEO Jensen Huang's position over alleged affairs, including one with a woman accused of working with Chinese intelligence. The company opened an investigation Sunday.",
@@ -497,8 +507,18 @@
  ],
  "local": [
   {
+   "h": "Bill would make delivery apps pay for e-bike fixes",
+   "b": "A City Council bill from Councilmember Harvey Epstein would require food delivery companies to fund fixes for crowded e-bike parking, like the East Village block where hundreds of bikes line the curb.",
+   "date": "2026-11-12",
+   "publisher": "Gothamist",
+   "title": "NYC bill would require food delivery firms to fund fixes to the e-bike 'crisis'",
+   "url": "https://gothamist.com/news/nyc-bill-would-require-food-delivery-firms-to-fund-fixes-to-the-e-bike-crisis",
+   "published": "2026-11-12T13:01:05Z",
+   "gathered": "2026-11-12T14:18:46Z"
+  },
+  {
    "h": "New Yorkers line up to become casino dealers",
-   "b": "Big Deal Casino Academy in NoMad, the city's only Education Department-licensed dealer school, is scaling up as New York City's first full-scale casino opens in Jamaica.",
+   "b": "Big Deal Casino Academy in NoMad, the city's only Education Department-licensed dealer school, is scaling up as New York City's first full-scale casino, in Jamaica, finally arrives.",
    "date": "2026-11-12",
    "publisher": "Gothamist",
    "title": "A good bet: New Yorkers are lining up to become casino dealers",
@@ -517,13 +537,15 @@
    "gathered": "2026-11-12T11:40:33Z"
   },
   {
-   "h": "Flatbush building collapse kills at least two",
-   "b": "A three-story mixed-use building collapsed in Brooklyn's Flatbush neighborhood Wednesday afternoon, killing at least two and injuring more than a dozen as firefighters searched the rubble for survivors.",
+   "h": "Flatbush building collapse death toll rises to eight",
+   "b": "City officials said Thursday the collapse of a three-story apartment building in Flatbush has killed eight people and injured at least 25, including at least seven children, as crews kept searching the rubble.",
    "date": "2026-11-12",
-   "publisher": "Al Jazeera",
-   "title": "Building collapse in Brooklyn kills two, injures more than a dozen",
-   "url": "https://www.aljazeera.com/news/2026/11/12/building-collapse-in-brooklyn-kills-two-injures-more-than-a-dozen",
-   "gathered": "2026-11-12T08:13:00Z"
+   "publisher": "Gothamist",
+   "title": "Death toll from Brooklyn building collapse continues to rise amid ongoing search",
+   "url": "https://gothamist.com/news/death-toll-from-brooklyn-building-collapse-continues-to-rise-amid-ongoing-search",
+   "published": "2026-11-12T12:08:00Z",
+   "updated": "2026-11-12T12:52:00Z",
+   "gathered": "2026-11-12T14:18:46Z"
   },
   {
    "h": "East Side's Cinema 123 closes after 60 years",
@@ -569,18 +591,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
-   "cond": "Overcast",
-   "wind": "NE 6 mph",
-   "humidity": 77,
-   "obs": "12 Nov 05:51 am EST"
+   "temp": 59,
+   "cond": "Mostly Cloudy",
+   "wind": "W 3 mph",
+   "humidity": 67,
+   "obs": "12 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 58,
-    "text": "A slight chance of rain before 7am, then rain after 10am.  Steady temperature around 58. East wind 10 to 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+    "text": "Rain, mainly after 10am.  Steady temperature around 58. East wind around 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Tonight",
