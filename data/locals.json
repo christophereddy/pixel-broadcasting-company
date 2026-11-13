@@ -42,30 +42,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 16 mph",
-    "humidity": 52,
-    "obs": "13 Nov 11:52 am EST"
+    "temp": 50,
+    "cond": "Partly Cloudy",
+    "wind": "NW 15 mph",
+    "humidity": 43,
+    "obs": "13 Nov 16:52 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 54,
-     "text": "Sunny, with a high near 54. Northwest wind around 15 mph, with gusts as high as 25 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 36,
-     "text": "Clear, with a low around 36. Northwest wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 37,
+     "text": "Clear, with a low around 37. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 54,
-     "text": "Sunny, with a high near 54. North wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 55,
+     "text": "Sunny, with a high near 55. North wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
@@ -77,13 +71,19 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 57,
-     "text": "Widespread frost before 8am.  Otherwise, sunny, with a high near 57. Calm wind becoming northeast around 5 mph. "
+     "text": "Widespread frost before 8am.  Otherwise, sunny, with a high near 57. Northeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 37,
-     "text": "Partly cloudy, with a low around 37."
+     "text": "Mostly clear, with a low around 37. Calm wind becoming northeast around 5 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 57,
+     "text": "Mostly sunny, with a high near 57."
     }
    ]
   },
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -134,36 +134,30 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
-    "cond": "Overcast",
-    "wind": "N 9 mph",
-    "humidity": 79,
-    "obs": "13 Nov 11:54 am EST"
+    "temp": 43,
+    "cond": "Partly Cloudy",
+    "wind": "NW 6 mph",
+    "humidity": 71,
+    "obs": "13 Nov 16:54 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 41,
-     "text": "A slight chance of rain before 1pm.  Mostly cloudy, with a high near 41. North wind 7 to 11 mph, with gusts as high as 26 mph.  Chance of precipitation is 20%."
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 35,
-     "text": "Mostly cloudy, with a low around 35. Northwest wind around 6 mph. "
+     "temp": 33,
+     "text": "Mostly cloudy, with a low around 33. Northwest wind 3 to 6 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 47,
-     "text": "Partly sunny, with a high near 47. Northwest wind 6 to 8 mph. "
+     "text": "Mostly cloudy through mid morning, then becoming sunny, with a high near 47. West wind 6 to 8 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 34. West wind around 7 mph. "
+     "text": "Mostly cloudy, with a low around 34. West wind around 7 mph. "
     },
     {
      "name": "Sunday",
@@ -174,8 +168,14 @@
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 36,
-     "text": "Mostly clear, with a low around 36. Northwest wind 8 to 11 mph. "
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35. Northwest wind 8 to 11 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 50,
+     "text": "Sunny, with a high near 50. Northwest wind 5 to 13 mph. "
     }
    ]
   },
@@ -191,7 +191,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -225,11 +225,7 @@
     "h": "Thanksgiving Parade to start an hour early",
     "b": "For the first time in 92 years, the parade steps off at 7:45 a.m. so the broadcast can air before the Bears play the Lions; former Bear Charles Tillman is grand marshal.",
     "date": "2026-11-12",
-    "publisher": "WBEZ",
-    "title": "Chicago Thanksgiving Parade to start an hour earlier for the first time in 92 years",
     "url": "https://www.wbez.org/news/2026/11/12/chicago-thanksgiving-parade-to-start-an-hour-earlier-for-the-first-time-in-92-years",
-    "published": "2026-11-12T21:21:05Z",
-    "updated": "2026-11-12T21:21:05Z",
     "gathered": "2026-11-13T01:21:11Z"
    },
    {
@@ -242,36 +238,36 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 41,
     "cond": "Mostly Cloudy",
-    "wind": "N 16 mph",
-    "humidity": 63,
-    "obs": "13 Nov 10:53 am CST"
+    "wind": "N 12 mph",
+    "humidity": 62,
+    "obs": "13 Nov 15:53 pm CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 42,
-     "text": "Showers before noon, then rain after noon.  High near 42. Breezy, with a north wind 15 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Scattered showers.  Partly sunny, with a high near 42. Breezy, with a north northwest wind around 20 mph.  Chance of precipitation is 40%."
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Rain and snow likely.  Mostly cloudy, with a low around 37. Breezy, with a north northwest wind 15 to 20 mph.  Chance of precipitation is 70%. Little or no snow accumulation expected. "
+     "text": "Rain showers likely before 1am, then rain likely, possibly mixed with snow showers.  Mostly cloudy, with a low around 37. Breezy, with a north northwest wind 15 to 20 mph.  Chance of precipitation is 60%. Little or no snow accumulation expected. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 46,
-     "text": "Mostly sunny, with a high near 46. North northwest wind 5 to 15 mph. "
+     "text": "Sunny, with a high near 46. North northwest wind 5 to 15 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly clear, with a low around 34. Northwest wind around 5 mph. "
+     "temp": 36,
+     "text": "Mostly clear, with a low around 36. Northwest wind around 5 mph. "
     },
     {
      "name": "Sunday",
@@ -282,8 +278,8 @@
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly clear, with a low around 34."
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35."
     }
    ]
   },
@@ -299,7 +295,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -310,6 +306,16 @@
    "tz": "America/Denver"
   },
   "local": [
+   {
+    "h": "Protesters ejected as Democrats debate leadership in Denver",
+    "b": "Democratic power players are in town for the What's Next conference.",
+    "date": "2026-11-13",
+    "publisher": "Denverite",
+    "title": "Protesters ejected in Denver as Democratic leadership debate heats up",
+    "url": "https://denverite.com/2026/11/13/denver-whats-next-protesters-ejected/",
+    "published": "2026-11-13T22:43:32Z",
+    "gathered": "2026-11-13T22:45:57Z"
+   },
    {
     "h": "Denver board votes to close Robert F. Smith STEAM Academy",
     "b": "The HBCU-style high school, which has 24 students this year, will close at the end of the school year after a 4-2 vote.",
@@ -383,48 +389,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "cond": "A Few Clouds",
-    "wind": "W 6 mph",
-    "humidity": 27,
-    "obs": "13 Nov 09:58 am MST"
+    "temp": 62,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 7 mph",
+    "humidity": 22,
+    "obs": "13 Nov 14:58 pm MST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "Partly sunny, with a high near 64. Calm wind becoming northeast around 5 mph in the afternoon. "
+     "text": "Partly sunny, with a high near 64. North northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Patchy fog after midnight.  Otherwise, mostly cloudy, with a low around 37. Light south southwest wind. "
+     "text": "Areas of fog after 11pm.  Otherwise, mostly cloudy, with a low around 37. Light southwest wind. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 55,
-     "text": "A 20 percent chance of rain after noon.  Patchy fog before 10am.  Otherwise, mostly cloudy, with a high near 55. Calm wind becoming northeast around 6 mph in the afternoon. "
+     "text": "A 30 percent chance of showers, mainly after 3pm.  Areas of fog before 10am.  Otherwise, mostly cloudy, with a high near 55. Calm wind becoming northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "A 20 percent chance of rain before 11pm.  Cloudy, then gradually becoming partly cloudy, with a low around 34. Light west northwest wind. "
+     "temp": 37,
+     "text": "A 50 percent chance of showers before 2am.  Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 37. Light and variable wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 56,
-     "text": "Sunny, with a high near 56. Calm wind becoming east around 5 mph in the afternoon. "
+     "temp": 59,
+     "text": "Patchy fog before 10am.  Otherwise, sunny, with a high near 59. Calm wind becoming east around 6 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 33,
-     "text": "Mostly clear, with a low around 33."
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34."
     }
    ]
   },
@@ -440,7 +446,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -466,22 +472,14 @@
     "h": "LA County judge removed for 'severe misconduct'",
     "b": "The state judicial commission found Judge Draper engaged in 17 instances of misconduct; he called the decision deeply disappointing.",
     "date": "2026-11-12",
-    "publisher": "LAist",
-    "title": "Embroiled LA County judge is removed from the bench for ‘severe misconduct’",
     "url": "https://laist.com/news/politics/robert-draper-removed-from-los-angeles-superior-court-misconduct",
-    "published": "2026-11-13T00:55:53Z",
-    "updated": "2026-11-13T00:55:53Z",
     "gathered": "2026-11-13T01:21:11Z"
    },
    {
     "h": "State gives $1 million to study Pacific Surfliner fixes",
     "b": "The rail agency will update a reliability study, including how the 2028 Olympics could affect service on the erosion-plagued line.",
     "date": "2026-11-12",
-    "publisher": "LAist",
-    "title": "Agency overseeing Amtrak Pacific Surfliner to get $1 million from state to study improvements",
     "url": "https://laist.com/news/transportation/agency-overseeing-amtrak-pacific-surfliner-to-get-1-million-from-state-to-study-improvements",
-    "published": "2026-11-12T19:46:00Z",
-    "updated": "2026-11-12T19:46:00Z",
     "gathered": "2026-11-12T20:19:24Z"
    },
    {
@@ -494,47 +492,47 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "wind": "Calm",
-    "humidity": 81,
-    "obs": "13 Nov 09:10 AM PST"
+    "temp": 66,
+    "wind": "NE 1 mph",
+    "humidity": 70,
+    "obs": "13 Nov 02:40 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 72,
-     "text": "Showers, mainly before 10am, then rain likely after 4pm.  High near 72. South southeast wind 5 to 10 mph becoming southwest in the afternoon.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 69,
+     "text": "Rain likely.  Mostly cloudy, with a high near 69. Southwest wind around 10 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "Rain.  Low around 57. West southwest wind 5 to 10 mph, with gusts as high as 15 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  Low around 57. Southwest wind 5 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 72,
-     "text": "Sunny, with a high near 72. West wind around 5 mph becoming south in the morning. "
+     "temp": 70,
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 70. West wind around 5 mph becoming south southeast in the morning. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly clear, with a low around 55. East northeast wind around 5 mph. "
+     "temp": 54,
+     "text": "Mostly clear, with a low around 54. East northeast wind around 5 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 73,
-     "text": "Mostly sunny, with a high near 73. East wind around 5 mph becoming southwest in the afternoon. "
+     "temp": 71,
+     "text": "Mostly sunny, with a high near 71. East wind around 5 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 56,
-     "text": "A 10 percent chance of showers after 4am.  Mostly cloudy, with a low around 56."
+     "temp": 55,
+     "text": "Mostly cloudy, with a low around 55."
     }
    ]
   },
@@ -550,14 +548,28 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
+   {
+    "h": "Endeavour's new home opens at California Science Center",
+    "b": "The Samuel Oschin Air and Space Center displays the shuttle 20 stories tall in launch position, alongside 100 new hands-on exhibits.",
+    "date": "2026-11-13",
+    "publisher": "LAist",
+    "title": "Space shuttle Endeavour launches its final chapter at the CA Science Center. How to explore its home",
+    "url": "https://laist.com/news/los-angeles-activities/space-shuttle-endeavour-launches-its-final-chapter-at-the-ca-science-center-how-to-explore-its-home",
+    "published": "2026-11-13T18:12:40Z",
+    "updated": "2026-11-13T18:46:03Z",
+    "gathered": "2026-11-13T22:45:57Z"
+   },
    {
     "h": "Original Pantry Cafe reopens with a new mission",
     "b": "The century-old downtown diner, closed since March 2025, reopens Nov. 19 run by nonprofit Hope the Mission, with all profits going to shelters for unhoused Angelenos and longtime staff returning under a union contract.",
     "date": "2026-11-12",
+    "publisher": "LAist",
+    "title": "The Original Pantry Cafe returns with a new menu and mission",
     "url": "https://laist.com/news/food/the-original-pantry-cafe-returns-with-a-new-menu-and-mission",
+    "published": "2026-11-12T00:28:38Z",
     "gathered": "2026-11-12T03:14:36Z"
    }
   ]
@@ -570,13 +582,33 @@
   },
   "local": [
    {
+    "h": "Mamdani declines to back Schumer for majority leader",
+    "b": "The mayor said he cares less about who leads Senate Democrats than what they do for the working class.",
+    "date": "2026-11-13",
+    "publisher": "Gothamist",
+    "title": "Mamdani declines to back fellow New Yorker Schumer as Senate majority leader",
+    "url": "https://gothamist.com/news/mamdani-declines-to-back-fellow-new-yorker-schumer-as-senate-majority-leader",
+    "published": "2026-11-13T21:34:09Z",
+    "gathered": "2026-11-13T22:45:57Z"
+   },
+   {
+    "h": "First Code Blue of the winter declared",
+    "b": "The cold weather emergency runs until 8 a.m. Saturday as wind chills near freezing, the first test of the city's expanded outreach plan.",
+    "date": "2026-11-13",
+    "publisher": "Gothamist",
+    "title": "First Code Blue of the winter season arrives in New York City",
+    "url": "https://gothamist.com/news/first-code-blue-of-the-winter-season-arrives-in-new-york-city",
+    "published": "2026-11-13T21:30:13Z",
+    "gathered": "2026-11-13T22:45:57Z"
+   },
+   {
     "h": "Flatbush collapse fuels anger over pace of development",
     "b": "Mayor Mamdani says the city is examining 100 other sites tied to the construction companies, as residents say rapid building is displacing longtime neighbors.",
     "date": "2026-11-13",
     "publisher": "Gothamist",
     "title": "Brooklyn building collapse has residents questioning pace of development",
     "url": "https://gothamist.com/news/brooklyn-building-collapse-has-residents-questioning-pace-of-development",
-    "published": "2026-11-13T11:00:57Z",
+    "published": "2026-11-13T11:00:00Z",
     "gathered": "2026-11-13T11:13:22Z"
    },
    {
@@ -654,28 +686,21 @@
    "now": {
     "temp": 40,
     "cond": "Light Rain",
-    "wind": "W 7 mph, gusts to 22 mph",
     "humidity": 86,
-    "obs": "13 Nov 11:51 am EST"
+    "obs": "13 Nov 16:51 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 43,
-     "text": "Rain, mainly before 4pm.  Steady temperature around 43. North wind 14 to 16 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 36,
-     "text": "A 30 percent chance of rain, mainly before 10pm.  Mostly cloudy, with a low around 36. North wind around 11 mph. "
+     "temp": 40,
+     "text": "A 30 percent chance of rain before 7pm.  Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 48,
-     "text": "Mostly sunny, with a high near 48. Northwest wind 11 to 15 mph. "
+     "text": "Partly sunny, with a high near 48. Northwest wind 10 to 15 mph. "
     },
     {
      "name": "Saturday Night",
@@ -687,13 +712,19 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 49,
-     "text": "Mostly sunny, with a high near 49. Northwest wind 13 to 15 mph. "
+     "text": "Sunny, with a high near 49. Northwest wind 13 to 15 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 42,
-     "text": "Mostly clear, with a low around 42."
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 53,
+     "text": "Sunny, with a high near 53."
     }
    ]
   },
@@ -709,7 +740,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -719,7 +750,7 @@
     "publisher": "Gothamist",
     "title": "Homeless New Yorkers’ healthcare costs plummeted after getting housed, study finds",
     "url": "https://gothamist.com/news/homeless-new-yorkers-healthcare-costs-plummeted-after-getting-housed-study-finds",
-    "published": "2026-11-12T15:00:46Z",
+    "published": "2026-11-13T17:31:00Z",
     "gathered": "2026-11-12T17:13:38Z"
    }
   ]
@@ -758,8 +789,6 @@
     "h": "France slams Israel's ban on Melenchon",
     "b": "Foreign Minister Barrot called the ban on the France Unbowed leader and Mathilde Panot \"demagogic\" while restating France's push for a two-state solution.",
     "date": "2026-11-13",
-    "publisher": "Al Jazeera",
-    "title": "France slams Israel’s ‘demagogic’ ban on opposition leader Melenchon",
     "url": "https://www.aljazeera.com/news/2026/11/13/france-slams-israels-demagogic-ban-on-left-wing-leader-melenchon",
     "gathered": "2026-11-13T16:41:10Z"
    },
@@ -819,7 +848,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "goodnews": []
  },
  {
@@ -885,48 +914,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 76,
-    "obs": "13 Nov 09:05 AM PST"
+    "temp": 54,
+    "cond": "light rain,mist",
+    "wind": "W 3 mph",
+    "humidity": 93,
+    "obs": "13 Nov 02:30 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 56,
-     "text": "Rain, mainly after 1pm.  Steady temperature around 56. South southwest wind around 7 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 59,
+     "text": "Rain, mainly before 4pm.  High near 59. South wind around 7 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "A 30 percent chance of rain, mainly between 2am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 6 to 10 mph. "
+     "text": "A 30 percent chance of rain, mainly between 3am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 7 to 10 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 57,
-     "text": "A slight chance of rain before 9am, then a chance of rain after 2pm.  Mostly cloudy, with a high near 57. South wind around 9 mph.  Chance of precipitation is 50%."
+     "text": "A 50 percent chance of rain, mainly between 9am and 4pm.  Mostly cloudy, with a high near 57. South wind around 9 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Rain, mainly after 10pm.  Low around 50. Southeast wind 8 to 14 mph, with gusts as high as 22 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  Low around 50. South southeast wind 9 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 54,
-     "text": "Rain.  High near 54. South wind around 10 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 55,
+     "text": "Rain.  High near 55. South southwest wind around 11 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 45. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 44,
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 44."
     }
    ]
   },
@@ -942,7 +971,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T20:12:00Z",
+  "updatedAt": "2026-11-13T23:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
