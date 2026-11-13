@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T02:12:00Z",
+ "updatedAt": "2026-11-13T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,18 @@
  },
  "world": [
   {
+   "h": "Albania says 2027 NATO summit won't be in Tirana",
+   "b": "Albania's prime minister said a summit would come to Tirana in 2028 if held, as NATO weighs ending its annual summits.",
+   "date": "2026-11-13",
+   "publisher": "Al Jazeera",
+   "title": "Albania’s PM says 2027 NATO summit will not be held in Tirana",
+   "url": "https://www.aljazeera.com/news/2026/11/13/albanias-pm-says-2027-nato-summit-will-not-be-held-in-tirana",
+   "gathered": "2026-11-13T02:15:37Z"
+  },
+  {
    "h": "European leaders meet in Dublin as hybrid attacks mount",
    "b": "Leaders from more than 40 countries gathered after a wave of hoaxes and cyberattacks hit supermarkets, blood banks, airlines, schools and media across Europe.",
    "date": "2026-11-12",
-   "publisher": "Al Jazeera",
-   "title": "Regional security dominates European talks in Dublin amid hybrid attacks",
    "url": "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks",
    "gathered": "2026-11-13T01:21:11Z"
   },
@@ -144,6 +151,17 @@
  ],
  "international": [
   {
+   "h": "Lebanon asks Syria to hand over suspects in Iraqi ex-MP's killing",
+   "b": "Lebanese prosecutors want two Syrian nationals over the killing of al-Alwani, a critic of Iranian influence in Baghdad; a Lebanese national has been arrested.",
+   "date": "2026-11-13",
+   "place": "Lebanon",
+   "tz": "Asia/Beirut",
+   "publisher": "Al Jazeera",
+   "title": "After Iraq ex-MP’s killing, Lebanon asks Syria to extradite suspects",
+   "url": "https://www.aljazeera.com/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects",
+   "gathered": "2026-11-13T02:15:37Z"
+  },
+  {
    "h": "Russian court jails rights lawyer 12 years for treason",
    "b": "Prosecutors accused her of passing information to Ukraine about security officers in Kaliningrad; the trial was held behind closed doors.",
    "date": "2026-11-12",
@@ -181,8 +199,6 @@
    "date": "2026-11-12",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Palestinian baby dies from cold in Gaza amid Israeli restrictions on aid",
    "url": "https://www.aljazeera.com/news/2026/11/12/palestinian-baby-dies-from-cold-in-gaza-amid-israeli-restrictions-on-aid",
    "gathered": "2026-11-12T20:19:24Z"
   },
@@ -444,17 +460,17 @@
  "weather": {
   "now": {
    "temp": 48,
-   "cond": "Heavy Rain Fog/Mist",
-   "wind": "W 5 mph",
-   "humidity": 93,
-   "obs": "12 Nov 18:51 pm EST"
+   "cond": "Overcast",
+   "wind": "NE 13 mph, gusts to 21 mph",
+   "humidity": 89,
+   "obs": "12 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 49,
-    "text": "Showers, mainly before 10pm, then rain after midnight.  Low around 49. Breezy, with a northeast wind 14 to 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+    "text": "Showers, mainly before 10pm, then rain after midnight.  Low around 49. Breezy, with a northeast wind 14 to 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday",
