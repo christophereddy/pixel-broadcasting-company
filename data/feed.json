@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-13T17:13:00Z",
+ "updatedAt": "2026-11-13T20:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "UN watchdog urges Iran to reopen nuclear sites to inspectors",
+   "b": "The IAEA called the lack of information about Iran's nuclear material a proliferation concern needing urgent action, citing an enrichment plant near Isfahan.",
+   "date": "2026-11-13",
+   "publisher": "Al Jazeera",
+   "title": "UN watchdog calls on Iran to reopen nuclear facilities to inspection",
+   "url": "https://www.aljazeera.com/news/2026/11/13/un-watchdog-calls-on-iran-to-reopen-nuclear-facilities-to-inspection",
+   "gathered": "2026-11-13T17:13:30Z"
+  },
   {
    "h": "Finland detects strike on Russian warship",
    "b": "Finland's military said it detected a strike on a Russian warship in the Gulf of Finland area, and Ukraine's Security Service reportedly said it carried out the attack.",
@@ -67,6 +76,16 @@
  ],
  "national": [
   {
+   "h": "Navy quietly fired commanders, drawing pushback from Congress",
+   "b": "Democratic lawmakers say the Navy didn't tell Congress it fired a submarine's entire leadership team after an underwater collision, breaking with its practice of announcing removals.",
+   "date": "2026-11-13",
+   "publisher": "PBS NewsHour",
+   "title": "Navy has quietly fired some commanders and other officials, drawing congressional pushback",
+   "url": "https://www.pbs.org/newshour/politics/navy-has-quietly-fired-some-commanders-and-other-officials-drawing-congressional-pushback",
+   "published": "2026-11-13T16:58:31Z",
+   "gathered": "2026-11-13T17:13:30Z"
+  },
+  {
    "h": "Hegseth awards medal to soldier who chastised him",
    "b": "After a viral rebuke over decorum at the Tomb of the Unknown Soldier on Veterans Day, the defense secretary sought to turn the incident into a PR opportunity.",
    "date": "2026-11-13",
@@ -115,6 +134,16 @@
  ],
  "politics": [
   {
+   "h": "Democrats weigh RFK Jr. impeachment while courting MAHA voters",
+   "b": "Some top lawmakers have floated impeaching Kennedy, but that could clash with efforts to win over his Make America Healthy Again supporters.",
+   "date": "2026-11-13",
+   "publisher": "PBS NewsHour",
+   "title": "Democrats are weighing impeachment of RFK Jr. while courting his supporters",
+   "url": "https://www.pbs.org/newshour/politics/democrats-are-weighing-impeachment-of-rfk-jr-while-courting-his-supporters",
+   "published": "2026-11-13T16:43:22Z",
+   "gathered": "2026-11-13T17:13:30Z"
+  },
+  {
    "h": "Van Hollen to challenge Schumer for majority leader",
    "b": "The Maryland senator said midterm voters want change from the status quo and Democrats need new leadership.",
    "date": "2026-11-13",
@@ -160,10 +189,7 @@
    "h": "Democrat Cindy Holscher wins Kansas governor's race",
    "b": "The AP called the race Thursday for Holscher, a state senator who promised to halt new data centers and overcame heavy Republican spending behind state Senate President Masterson.",
    "date": "2026-11-12",
-   "publisher": "PBS NewsHour",
-   "title": "Cindy Holscher wins election for Kansas governor, extending Democrats' wave of victories",
    "url": "https://www.pbs.org/newshour/politics/cindy-holscher-wins-election-for-kansas-governor-extending-democrats-wave-of-victories",
-   "published": "2026-11-12T23:15:50Z",
    "gathered": "2026-11-13T01:21:11Z"
   },
   {
@@ -188,8 +214,6 @@
    "date": "2026-11-13",
    "place": "Balochistan, Pakistan",
    "tz": "Asia/Karachi",
-   "publisher": "Al Jazeera",
-   "title": "Pakistan military reports it killed 74 ‘terrorists’ during raids",
    "url": "https://www.aljazeera.com/news/2026/11/13/pakistan-military-reports-it-killed-74-terrorists-during-raids",
    "gathered": "2026-11-13T16:41:10Z"
   },
@@ -199,8 +223,6 @@
    "date": "2026-11-13",
    "place": "Syokimau, Kenya",
    "tz": "Africa/Nairobi",
-   "publisher": "Al Jazeera",
-   "title": "Kenyan building collapse near Nairobi kills six people",
    "url": "https://www.aljazeera.com/news/2026/11/13/kenyan-building-collapse-near-nairobi-kills-six-people",
    "gathered": "2026-11-13T16:41:10Z"
   },
@@ -401,10 +423,7 @@
    "h": "Florida battles largest dengue outbreak in 15 years",
    "b": "The state has recorded a record 524 locally acquired cases this year, and helicopters are spraying a natural bacteria that kills mosquito larvae.",
    "date": "2026-11-12",
-   "publisher": "PBS NewsHour",
-   "title": "What to know about dengue fever as Florida reports more than 500 cases this year",
    "url": "https://www.pbs.org/newshour/health/what-to-know-about-dengue-fever-as-florida-reports-more-than-500-cases-this-year",
-   "published": "2026-11-13T00:31:23Z",
    "gathered": "2026-11-13T01:21:11Z"
   }
  ],
@@ -549,17 +568,17 @@
  "weather": {
   "now": {
    "temp": 40,
-   "cond": "Overcast",
-   "wind": "W 5 mph",
-   "humidity": 89,
-   "obs": "13 Nov 10:51 am EST"
+   "cond": "Light Rain",
+   "wind": "W 7 mph, gusts to 22 mph",
+   "humidity": 86,
+   "obs": "13 Nov 11:51 am EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 43,
-    "text": "Rain, mainly before 4pm.  Steady temperature around 43. North wind 14 to 17 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+    "text": "Rain, mainly before 4pm.  Steady temperature around 43. North wind 14 to 16 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
    },
    {
     "name": "Tonight",
