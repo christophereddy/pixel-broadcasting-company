@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T08:13:00Z",
+ "updatedAt": "2026-11-13T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -25,11 +25,11 @@
    "gathered": "2026-11-13T05:15:07Z"
   },
   {
-   "h": "Trump says Gulf allies urged pause in Iran strikes",
+   "h": "Iran targets US radar in Bahrain; Trump says Gulf allies urged pause",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-13",
    "publisher": "Al Jazeera",
-   "title": "Iran targets US radar in Bahrain as Trump says Gulf allies urged pause",
+   "title": "Iran targets US radar in Bahrain; Trump says Gulf allies urged strike pause",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
    "gathered": "2026-11-13T05:15:07Z"
   },
@@ -388,8 +388,6 @@
    "h": "Crow-Armstrong wins NL MVP unanimously",
    "b": "The Cubs star beat Shohei Ohtani after leading the majors in WAR, runs, home runs and total bases, with 45 homers and 41 steals in all 162 games.",
    "date": "2026-11-12",
-   "publisher": "CBS Sports",
-   "title": "Cubs superstar Pete Crow-Armstrong wins National League MVP unanimously, beating Shohei Ohtani",
    "url": "https://www.cbssports.com/mlb/news/mlb-2026-national-league-mvp-pete-crow-armstrong-cubs/",
    "gathered": "2026-11-13T01:21:11Z"
   },
@@ -498,48 +496,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
-   "cond": "Overcast",
-   "wind": "NE 14 mph, gusts to 23 mph",
-   "humidity": 74,
-   "obs": "12 Nov 23:51 pm EST"
+   "temp": 45,
+   "cond": "Fog/Mist",
+   "wind": "NE 9 mph, gusts to 18 mph",
+   "humidity": 93,
+   "obs": "13 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 49,
-    "text": "Rain.  Low around 49. Breezy, with a north wind 15 to 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
-   },
-   {
     "name": "Friday",
     "kind": "high",
-    "temp": 50,
-    "text": "Rain, mainly before 4pm.  Temperature falling to around 40 by noon. Breezy, with a north wind 15 to 22 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "temp": 49,
+    "text": "Rain, mainly before 4pm.  Temperature falling to around 42 by noon. Breezy, with a north wind 14 to 20 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 45,
-    "text": "A 30 percent chance of rain before 10pm.  Cloudy, with a steady temperature around 45. Northwest wind around 11 mph. "
+    "temp": 36,
+    "text": "A 30 percent chance of rain, mainly before 10pm.  Mostly cloudy, with a low around 36. North wind around 11 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 48,
-    "text": "Partly sunny, with a high near 48. Northwest wind 10 to 14 mph. "
+    "text": "Mostly sunny, with a high near 48. Northwest wind 11 to 15 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 41,
-    "text": "Mostly clear, with a low around 41. West wind around 13 mph. "
+    "temp": 47,
+    "text": "Partly cloudy, with a steady temperature around 47. West wind around 14 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 50,
-    "text": "Mostly sunny, with a high near 50."
+    "temp": 49,
+    "text": "Mostly sunny, with a high near 49."
+   },
+   {
+    "name": "Sunday Night",
+    "kind": "low",
+    "temp": 42,
+    "text": "Mostly clear, with a low around 42."
    }
   ]
  },
