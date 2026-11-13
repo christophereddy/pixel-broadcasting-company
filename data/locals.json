@@ -5,47 +5,14 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Forsyth voters flagged as dead were found alive",
-    "b": "ProPublica found that a Forsyth County election board member challenged dozens of ballots using a data tool built by an election denier network, and some voters it called dead are alive.",
-    "date": "2026-11-11",
-    "publisher": "ProPublica",
-    "title": "A Tool Built by Election Deniers Said These Voters Were Dead. We Found Them Alive.",
-    "url": "https://www.propublica.org/article/election-challenge-forsyth-county-georgia",
-    "published": "2026-11-11T17:30:00Z",
-    "updated": "2026-11-11T18:13:12Z",
-    "gathered": "2026-11-11T22:09:32Z"
-   },
-   {
-    "h": "Bidding closes on Georgia warehouses ICE bought",
-    "b": "Offers are due Thursday on ICE-purchased warehouses, including a $128 million site in Social Circle meant to hold up to 10,000 people. A GAO report found ICE wasted taxpayer money expanding detention.",
-    "date": "2026-11-11",
-    "publisher": "WABE",
-    "title": "Bidding deadline ends for Georgia warehouses ditched by ICE",
-    "url": "https://www.wabe.org/bidding-deadline-ends-for-georgia-warehouses-ditched-by-ice/",
-    "published": "2026-11-11T21:05:00Z",
-    "updated": "2026-11-11T23:11:42Z",
-    "gathered": "2026-11-11T22:09:32Z"
-   },
-   {
-    "h": "Georgia's Latino voters swing toward Democrats",
-    "b": "About 198,000 Latinos voted in Georgia's midterms, up 78% from 2022, and polling showed 72% backed Sen. Jon Ossoff. Advocates warn it's a misalignment, not a realignment, and both parties must earn their votes.",
-    "date": "2026-11-11",
-    "publisher": "WABE",
-    "title": "Georgia’s Latinos shift toward Democratic candidates, for now",
-    "url": "https://www.wabe.org/georgias-latinos-shift-toward-democratic-candidates-for-now/",
-    "published": "2026-11-11T14:39:33Z",
-    "gathered": "2026-11-11T15:31:16Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "Partly Cloudy and Breezy",
-    "wind": "NW 22 mph, gusts to 31 mph",
-    "humidity": 39,
-    "obs": "12 Nov 14:52 pm EST"
+    "temp": 55,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 9 mph",
+    "humidity": 49,
+    "obs": "12 Nov 19:52 pm EST"
    },
    "periods": [
     {
@@ -76,7 +43,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 33,
-     "text": "Widespread frost, mainly after 5am.  Otherwise, clear, with a low around 33."
+     "text": "Widespread frost, mainly after 5am.  Otherwise, clear, with a low around 33. Northwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Sunday",
@@ -98,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -108,29 +75,14 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Healey plans pilot to bring military medics into hospitals",
-    "b": "The administration unveiled a pilot letting a limited number of veteran medics work at certain hospitals without additional training, aiming to ease staff shortages.",
-    "date": "2026-11-11",
-    "url": "https://www.wbur.org/news/2026/11/11/pilot-program-former-military-medics-healthcare",
-    "gathered": "2026-11-11T23:15:31Z"
-   },
-   {
-    "h": "Paul George scores 36 as Celtics rout 76ers",
-    "b": "George hit six 3-pointers in his return to Philadelphia and Jayson Tatum added 21 as Boston won 123-101 for its ninth win in 10 games, outplaying former teammate Jaylen Brown.",
-    "date": "2026-11-11",
-    "url": "https://www.wbur.org/news/2026/11/11/jaylen-brown-jayson-tatum-celtics-win",
-    "gathered": "2026-11-11T23:15:31Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 51,
     "cond": "Overcast",
-    "wind": "E 13 mph",
-    "humidity": 75,
-    "obs": "12 Nov 14:54 pm EST"
+    "wind": "E 20 mph, gusts to 30 mph",
+    "humidity": 74,
+    "obs": "12 Nov 19:54 pm EST"
    },
    "periods": [
     {
@@ -183,17 +135,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "boston-ma",
-  "goodnews": [
-   {
-    "h": "Cambridge home baker's cookies sell out in minutes",
-    "b": "Hope Truwit's Butter & Hope baked goods took off after a local influencer shared them, with one customer driving 40 minutes for a cookie.",
-    "date": "2026-11-11",
-    "url": "https://www.wbur.org/news/2026/11/11/butter-hope-bakery-cambridge-truwit",
-    "gathered": "2026-11-11T23:15:31Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -203,54 +147,38 @@
   },
   "local": [
    {
+    "h": "Thanksgiving Parade to start an hour early",
+    "b": "For the first time in 92 years, the parade steps off at 7:45 a.m. so the broadcast can air before the Bears play the Lions; former Bear Charles Tillman is grand marshal.",
+    "date": "2026-11-12",
+    "publisher": "WBEZ",
+    "title": "Chicago Thanksgiving Parade to start an hour earlier for the first time in 92 years",
+    "url": "https://www.wbez.org/news/2026/11/12/chicago-thanksgiving-parade-to-start-an-hour-earlier-for-the-first-time-in-92-years",
+    "published": "2026-11-12T21:21:05Z",
+    "updated": "2026-11-12T21:21:05Z",
+    "gathered": "2026-11-13T01:21:11Z"
+   },
+   {
     "h": "CPS students could lose Google search over AI rules",
     "b": "Districts that bar popular AI tools in classrooms, like Chicago Public Schools, will lose access to Google search next year. CPS says it has guidelines to help students and teachers use AI safely.",
     "date": "2026-11-12",
     "url": "https://www.wbez.org/education/2026/11/11/what-to-know-about-cps-and-ai-as-chicago-students-risk-losing-access-to-google-search",
     "gathered": "2026-11-12T03:14:36Z"
-   },
-   {
-    "h": "Lawmakers probe deadly fires at Joliet prison",
-    "b": "State legislators held a hearing after a Marshall Project, WBEZ and Sun-Times investigation found 70 fires at the Joliet Treatment Center, where men in mental health care set fires in despair over conditions. Two died.",
-    "date": "2026-11-11",
-    "url": "https://www.wbez.org/the-watchdogs/2026/11/11/illinois-lawmakers-prison-fires-hearings-joliet-treatment-center",
-    "gathered": "2026-11-11T15:31:16Z"
-   },
-   {
-    "h": "Police sergeant dies after being found unresponsive at station",
-    "b": "Sgt. Timothy Martin, 49, was found unresponsive on duty at the Albany Park District station and later pronounced dead. The medical examiner hasn't ruled on a cause.",
-    "date": "2026-11-11",
-    "url": "https://www.wbez.org/chicago/2026/11/10/chicago-police-sergeant-dies-after-being-found-unresponsive-at-northwest-side-station",
-    "gathered": "2026-11-11T06:57:06Z"
-   },
-   {
-    "h": "Amazon drone delivery center coming to Markham",
-    "b": "Amazon says drone deliveries will start this fall from a new center at 2201 W. 159th St. in Markham, part of a suburban expansion. The drones carry packages up to five pounds.",
-    "date": "2026-11-11",
-    "url": "https://www.wbez.org/business/2026/11/10/amazon-drone-delivery-center-in-markham-set-for-takeoff",
-    "gathered": "2026-11-11T06:57:06Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 18 mph",
-    "humidity": 58,
-    "obs": "12 Nov 13:53 pm CST"
+    "temp": 41,
+    "cond": "Overcast and Breezy",
+    "wind": "N 22 mph, gusts to 30 mph",
+    "humidity": 60,
+    "obs": "12 Nov 18:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 44,
-     "text": "Rain.  High near 44. Windy, with a north northwest wind 25 to 30 mph, with gusts as high as 40 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Rain before 1am, then rain likely, possibly mixed with snow.  Low around 37. Windy, with a north wind 20 to 30 mph, with gusts as high as 40 mph.  Chance of precipitation is 80%. Little or no snow accumulation expected. "
+     "text": "Rain before 1am, then rain likely, possibly mixed with snow.  Low around 37. Breezy, with a north wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%. Little or no snow accumulation expected. "
     },
     {
      "name": "Friday",
@@ -274,7 +202,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Mostly clear, with a low around 34."
+     "text": "Mostly clear, with a low around 34. Northwest wind 5 to 10 mph. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 48,
+     "text": "Sunny, with a high near 48."
     }
    ]
   },
@@ -290,17 +224,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "Illinois Holocaust Museum reopens after renovation",
-    "b": "The Skokie museum reopens Wednesday after 15 months and more than $10 million in upgrades, including a reflection gallery, new artifacts and a 240-seat auditorium.",
-    "date": "2026-11-11",
-    "url": "https://www.wbez.org/museums/2026/11/11/a-sanctuary-of-memory-illinois-holocaust-museum-and-education-center-in-skokie-after-15-month-renovation",
-    "gathered": "2026-11-11T15:31:16Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -338,38 +264,22 @@
     "url": "https://denverite.com/2026/11/12/denver-renters-union-landlord-regulations-proposal/",
     "published": "2026-11-12T11:00:00Z",
     "gathered": "2026-11-12T11:40:33Z"
-   },
-   {
-    "h": "Citywide upzoning back on the table in Denver",
-    "b": "Denver's \"Unlocking Housing Choices\" proposal has been expanded once more, reviving a citywide upzoning push.",
-    "date": "2026-11-11",
-    "publisher": "Denverite",
-    "title": "A citywide upzoning is back on the menu in Denver",
-    "url": "https://denverite.com/2026/11/11/denver-upzoning-unlocking-housing-choices-back/",
-    "published": "2026-11-11T11:00:00Z",
-    "gathered": "2026-11-11T11:20:48Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 54,
     "cond": "A Few Clouds",
-    "wind": "E 8 mph",
-    "humidity": 19,
-    "obs": "12 Nov 12:58 pm MST"
+    "wind": "SE 12 mph",
+    "humidity": 36,
+    "obs": "12 Nov 17:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. East wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Mostly clear, with a low around 39. South southwest wind 3 to 5 mph. "
+     "text": "Mostly clear, with a low around 39. Light and variable wind becoming south southwest around 5 mph. "
     },
     {
      "name": "Friday",
@@ -393,7 +303,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 37,
-     "text": "A 20 percent chance of showers before 11pm.  Mostly cloudy, with a low around 37."
+     "text": "A 20 percent chance of showers before 11pm.  Mostly cloudy, with a low around 37. Northwest wind around 5 mph becoming calm  in the evening. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 55,
+     "text": "Sunny, with a high near 55."
     }
    ]
   },
@@ -409,20 +325,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "denver-co",
-  "goodnews": [
-   {
-    "h": "Couples tie the knot with Elvis on Colfax",
-    "b": "More than a dozen couples were married by an Elvis impersonator at the Bluebird Theater.",
-    "date": "2026-11-11",
-    "publisher": "Denverite",
-    "title": "Who needs the Elvis chapel in Vegas when we’ve got Colfax?",
-    "url": "https://denverite.com/2026/11/11/bluebird-theater-elvis-weddings/",
-    "published": "2026-11-11T11:15:00Z",
-    "gathered": "2026-11-11T23:15:31Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -431,6 +336,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Record marine heat wave raises coastal flood threat",
+    "b": "Ocean temperatures from Sonoma County to Ensenada are running 10 degrees above average, warmer than ever recorded in the cold season.",
+    "date": "2026-11-12",
+    "publisher": "LAist",
+    "title": "California’s 'record-shattering' marine heat wave means threat of coastal flooding will stick around",
+    "url": "https://laist.com/news/climate-environment/california-el-nino-marine-heat-wave-king-tides-coastal-flooding",
+    "published": "2026-11-13T00:02:28Z",
+    "updated": "2026-11-13T00:02:28Z",
+    "gathered": "2026-11-13T01:21:11Z"
+   },
+   {
+    "h": "LA County judge removed for 'severe misconduct'",
+    "b": "The state judicial commission found Judge Draper engaged in 17 instances of misconduct; he called the decision deeply disappointing.",
+    "date": "2026-11-12",
+    "publisher": "LAist",
+    "title": "Embroiled LA County judge is removed from the bench for ‘severe misconduct’",
+    "url": "https://laist.com/news/politics/robert-draper-removed-from-los-angeles-superior-court-misconduct",
+    "published": "2026-11-13T00:55:53Z",
+    "updated": "2026-11-13T00:55:53Z",
+    "gathered": "2026-11-13T01:21:11Z"
+   },
    {
     "h": "State gives $1 million to study Pacific Surfliner fixes",
     "b": "The rail agency will update a reliability study, including how the 2028 Olympics could affect service on the erosion-plagued line.",
@@ -450,47 +377,23 @@
     "title": "Nithya Raman’s big Olympics promise: Reduce street homelessness by 50%",
     "url": "https://laist.com/news/housing-homelessness/nithya-ramans-big-olympics-promise-reduce-street-homelessness-by-50",
     "published": "2026-11-12T13:00:00Z",
-    "updated": "2026-11-12T13:00:04Z",
+    "updated": "2026-11-12T20:41:48Z",
     "gathered": "2026-11-12T14:18:46Z"
-   },
-   {
-    "h": "Doctors' group backs ban on stone linked to deadly lung disease",
-    "b": "The American Medical Association now opposes making, selling and installing high-silica engineered stone countertops, linked to silicosis killing stoneworkers in California.",
-    "date": "2026-11-11",
-    "publisher": "LAist",
-    "title": "Largest US doctors’ group supports banning countertop material linked to deadly lung disease",
-    "url": "https://laist.com/news/health/largest-us-doctors-group-supports-banning-countertop-material-linked-to-deadly-lung-disease",
-    "published": "2026-11-11T21:00:00Z",
-    "updated": "2026-11-12T18:02:28Z",
-    "gathered": "2026-11-11T23:15:31Z"
-   },
-   {
-    "h": "Driver arrested in deadly Metro station crash",
-    "b": "Police arrested the 61-year-old minivan driver whose rush-hour crash outside a Los Angeles Metro station killed three, on suspicion of DUI and three counts of murder.",
-    "date": "2026-11-11",
-    "url": "https://laist.com/news/criminal-justice/driver-in-deadly-los-angeles-metro-station-crash-is-arrested-on-dui-and-murder-counts",
-    "gathered": "2026-11-11T22:09:32Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 77,
-    "wind": "Calm",
-    "humidity": 46,
-    "obs": "12 Nov 12:10 PM PST"
+    "temp": 67,
+    "wind": "E 1 mph",
+    "humidity": 78,
+    "obs": "12 Nov 05:10 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 81,
-     "text": "Mostly sunny, with a high near 81. South southwest wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 59,
-     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 59. Southeast wind around 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 59. South southwest wind 5 to 10 mph becoming southeast in the evening.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
@@ -514,7 +417,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55."
+     "text": "Mostly clear, with a low around 55. East northeast wind around 5 mph. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 72,
+     "text": "Mostly sunny, with a high near 72."
     }
    ]
   },
@@ -530,18 +439,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
     "h": "Original Pantry Cafe reopens with a new mission",
     "b": "The century-old downtown diner, closed since March 2025, reopens Nov. 19 run by nonprofit Hope the Mission, with all profits going to shelters for unhoused Angelenos and longtime staff returning under a union contract.",
     "date": "2026-11-12",
-    "publisher": "LAist",
-    "title": "The Original Pantry Cafe returns with a new menu and mission",
     "url": "https://laist.com/news/food/the-original-pantry-cafe-returns-with-a-new-menu-and-mission",
-    "published": "2026-11-12T00:28:38Z",
-    "updated": "2026-11-12T00:28:38Z",
     "gathered": "2026-11-12T03:14:36Z"
    }
   ]
@@ -553,6 +458,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "City Council bans 'surveillance pricing'",
+    "b": "The bill bars companies from setting prices based on personal data like demographics, credit or browsing history, online and in stores.",
+    "date": "2026-11-12",
+    "publisher": "Gothamist",
+    "title": "NYC Council passes ban on 'surveillance pricing' that relies on personal data",
+    "url": "https://gothamist.com/news/nyc-council-passes-ban-on-surveillance-pricing-that-relies-on-personal-data",
+    "published": "2026-11-12T20:23:16Z",
+    "gathered": "2026-11-13T01:21:11Z"
+   },
    {
     "h": "Feds charge gang members in 2022 killing of 12-year-old",
     "b": "Prosecutors say members of a Brooklyn gang fired into the wrong car in East Flatbush, killing a 12-year-old boy, after mistaking it for a rival's.",
@@ -609,67 +524,26 @@
     "b": "City officials said Thursday the collapse of a three-story apartment building in Flatbush has killed eight people and injured at least 25, including at least seven children, as crews kept searching the rubble.",
     "date": "2026-11-12",
     "publisher": "Gothamist",
-    "title": "Brooklyn building collapse kills 6 adults, 2 children and rescue work still underway, mayor says",
+    "title": "FDNY ends search at Brooklyn building collapse: 6 adults, 2 children dead, 18 injured",
     "url": "https://gothamist.com/news/death-toll-from-brooklyn-building-collapse-continues-to-rise-amid-ongoing-search",
-    "published": "2026-11-12T12:08:00Z",
-    "updated": "2026-11-12T17:24:00Z",
+    "published": "2026-11-12T20:00:00Z",
     "gathered": "2026-11-12T14:18:46Z"
-   },
-   {
-    "h": "East Side's Cinema 123 closes after 60 years",
-    "b": "The Angelika theater near the Queensboro Bridge screened its last film after its building sold to Roger Equities for $41 million, weeks after the Kips Bay AMC announced it will close.",
-    "date": "2026-11-11",
-    "publisher": "Gothamist",
-    "title": "Manhattan’s East Side loses another movie theater to development",
-    "url": "https://gothamist.com/news/manhattans-east-side-loses-another-movie-theater-to-development",
-    "published": "2026-11-11T20:48:50Z",
-    "gathered": "2026-11-11T22:09:32Z"
-   },
-   {
-    "h": "Teen arrested in killing of Bronx boy walking to school",
-    "b": "Police arrested a 17-year-old in the Oct. 29 shooting death of 15-year-old Javits Frimpong near Crotona Park. The motive is not yet clear.",
-    "date": "2026-11-11",
-    "publisher": "Gothamist",
-    "title": "Teen arrested for fatal shooting of 15-year-old Bronx boy walking to school, NYPD says",
-    "url": "https://gothamist.com/news/suspect-arrested-for-fatal-shooting-of-15-year-old-bronx-boy-walking-to-school-family-says",
-    "published": "2026-11-11T09:20:00Z",
-    "gathered": "2026-11-11T17:12:59Z"
-   },
-   {
-    "h": "Sanitation supervisors rack up speed camera tickets",
-    "b": "Gothamist found 763 sanitation department cars assigned to supervisors and other staff have collected at least 2,375 speed camera tickets since 2023. Advocates want faster rollout of speed limiters, which Mayor Mamdani supports.",
-    "date": "2026-11-11",
-    "publisher": "Gothamist",
-    "title": "NYC sanitation supervisors keep speeding on the job, data shows",
-    "url": "https://gothamist.com/news/nyc-sanitation-supervisors-keep-speeding-on-the-job-data-shows",
-    "published": "2026-11-11T11:30:55Z",
-    "gathered": "2026-11-11T15:31:16Z"
-   },
-   {
-    "h": "Chelsea NYCHA redevelopment splits Mamdani's allies",
-    "b": "Tenant activists at Fulton and Elliott-Chelsea Houses have joined DSA to fight the $1.2 billion plan to replace about 2,000 public housing units with mixed-income development, calling it privatization. Mamdani says a teardown is cheaper than repairs.",
-    "date": "2026-11-11",
-    "publisher": "Gothamist",
-    "title": "Mamdani’s redevelopment plan for NYCHA complex in Chelsea spills into DSA",
-    "url": "https://gothamist.com/news/mamdanis-redevelopment-plan-for-nycha-complex-in-chelsea-spills-into-dsa",
-    "published": "2026-11-11T11:00:00Z",
-    "gathered": "2026-11-11T11:20:48Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Light Rain Fog/Mist",
-    "wind": "E 10 mph, gusts to 21 mph",
+    "temp": 48,
+    "cond": "Heavy Rain Fog/Mist",
+    "wind": "W 5 mph",
     "humidity": 93,
-    "obs": "12 Nov 14:51 pm EST"
+    "obs": "12 Nov 18:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "Showers, mainly before 10pm, then rain after midnight.  Low around 42. Breezy, with a northeast wind 14 to 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 49,
+     "text": "Showers, mainly before 10pm, then rain after midnight.  Low around 49. Breezy, with a northeast wind 14 to 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
@@ -693,7 +567,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 41,
-     "text": "Mostly clear, with a low around 41."
+     "text": "Mostly clear, with a low around 41. West wind around 13 mph. "
     },
     {
      "name": "Sunday",
@@ -715,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -727,16 +601,6 @@
     "url": "https://gothamist.com/news/homeless-new-yorkers-healthcare-costs-plummeted-after-getting-housed-study-finds",
     "published": "2026-11-12T15:00:46Z",
     "gathered": "2026-11-12T17:13:38Z"
-   },
-   {
-    "h": "Lost Georgia O'Keeffe painting found in East Village closet",
-    "b": "A niece helping her aunt settle her affairs found O'Keeffe's landscape \"Near Abiquiu, New Mexico I\" in a wooden box behind coats. Christie's specialists called the find exceptional.",
-    "date": "2026-11-11",
-    "publisher": "Gothamist",
-    "title": "Long-lost Georgia O’Keeffe painting found in East Village closet",
-    "url": "https://gothamist.com/arts-entertainment/long-lost-georgia-okeeffe-painting-found-in-east-village-closet",
-    "published": "2026-11-11T17:00:56Z",
-    "gathered": "2026-11-11T17:12:59Z"
    }
   ]
  },
@@ -752,8 +616,6 @@
     "h": "France bars prominent Israeli settler leader",
     "b": "Yossi Dagan was turned back at a Paris airport over his role in West Bank settlement policy, and Israel's foreign ministry said it will demand an explanation.",
     "date": "2026-11-12",
-    "publisher": "Al Jazeera",
-    "title": "Prominent Israeli settler denied entry into France",
     "url": "https://www.aljazeera.com/news/2026/11/12/chk-prominent-israeli-settler-denied-entry-into-france",
     "gathered": "2026-11-12T20:19:24Z"
    },
@@ -789,20 +651,6 @@
     "published": "2026-11-12T09:32:18Z",
     "updated": "2026-11-12T09:32:19Z",
     "gathered": "2026-11-12T11:40:33Z"
-   },
-   {
-    "h": "Russia bans two French lawmakers and two journalists",
-    "b": "Moscow barred four French citizens in retaliation for France's July expulsion of former RT France head Xenia Fedorova, whom Paris called an agent of influence.",
-    "date": "2026-11-11",
-    "url": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move",
-    "gathered": "2026-11-11T17:12:59Z"
-   },
-   {
-    "h": "Zemmour enters French presidential race",
-    "b": "Far-right Reconquete leader Eric Zemmour declared his candidacy, pledging two million fewer immigrants by the end of a five-year term. Marine Le Pen remains widely projected to lead the first round.",
-    "date": "2026-11-11",
-    "url": "https://www.thelocal.fr/20261111/french-far-right-politician-zemmour-joins-presidential-race",
-    "gathered": "2026-11-11T08:13:37Z"
    }
   ],
   "weather": {
@@ -821,7 +669,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "goodnews": []
  },
  {
@@ -832,14 +680,21 @@
   },
   "local": [
    {
+    "h": "Council upholds Mayor Wilson's veto on RV permits",
+    "b": "The vetoed rule would have required people living in RVs on city streets to get a permit or risk being towed.",
+    "date": "2026-11-12",
+    "publisher": "KUOW",
+    "title": "Seattle City Council upholds mayor’s first veto on RV homelessness",
+    "url": "https://www.kuow.org/governing/2026-11-12/seattle-city-council-upholds-mayors-first-veto-on-rv-homelessness",
+    "published": "2026-11-12T21:46:00Z",
+    "updated": "2026-11-12T23:29:33Z",
+    "gathered": "2026-11-13T01:21:11Z"
+   },
+   {
     "h": "O'Donnell claims win in WA Supreme Court race",
     "b": "King County Superior Court Judge Sean O'Donnell leads appeals court Judge Ian Birk by 39,000 votes in the state's closest Supreme Court race.",
     "date": "2026-11-12",
-    "publisher": "KUOW",
-    "title": "O’Donnell declares victory in tight WA Supreme Court race",
     "url": "https://www.kuow.org/elections/2026-11-12/odonnell-declares-victory-in-tight-wa-supreme-court-race",
-    "published": "2026-11-12T19:15:32Z",
-    "updated": "2026-11-12T19:15:51Z",
     "gathered": "2026-11-12T20:19:24Z"
    },
    {
@@ -848,35 +703,22 @@
     "date": "2026-11-12",
     "url": "https://www.kuow.org/education/2026-11-12/trump-wants-to-bring-back-fitness-testing-seattle-area-pe-teachers-not-so-much",
     "gathered": "2026-11-12T17:13:38Z"
-   },
-   {
-    "h": "Washington schools chief Reykdal won't seek reelection",
-    "b": "Superintendent of Public Instruction Chris Reykdal, in his third term, cited his belief in term limits but hasn't ruled out another public role.",
-    "date": "2026-11-11",
-    "url": "https://www.kuow.org/education/2026-11-11/washingtons-head-of-public-schools-will-not-seek-reelection-in-2028",
-    "gathered": "2026-11-11T22:09:32Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 57,
     "cond": "Clear",
-    "wind": "SE 6 mph",
-    "humidity": 62,
-    "obs": "12 Nov 11:55 AM PST"
+    "wind": "Calm",
+    "humidity": 71,
+    "obs": "12 Nov 04:55 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 61,
-     "text": "Mostly cloudy, with a high near 61. Calm wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "A 30 percent chance of rain, mainly after 4am.  Cloudy, with a low around 52. South southeast wind around 5 mph becoming calm  after midnight. "
+     "text": "A 30 percent chance of rain, mainly after 4am.  Cloudy, with a low around 52. Calm wind becoming south southeast around 5 mph. "
     },
     {
      "name": "Friday",
@@ -900,7 +742,13 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Rain.  Low around 51. Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  Low around 51. Southeast wind 8 to 13 mph, with gusts as high as 22 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Sunday",
+     "kind": "high",
+     "temp": 55,
+     "text": "Rain.  High near 55. Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     }
    ]
   },
@@ -916,8 +764,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-12T23:13:00Z",
+  "updatedAt": "2026-11-13T02:12:00Z",
   "slug": "seattle-wa",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Sound Transit cages wires to stop fish deaths",
+    "b": "Divers fitted mesh cages around anode wires under the I-90 light rail bridge, designed with the Muckleshoot Tribe and state wildlife staff.",
+    "date": "2026-11-12",
+    "publisher": "KUOW",
+    "title": "Sound Transit installs mesh cages to stop fish deaths under I-90 light rail",
+    "url": "https://www.kuow.org/governing/2026-11-12/sound-transit-installs-mesh-cages-to-stop-fish-deaths-under-i-90-light-rail",
+    "published": "2026-11-13T00:03:22Z",
+    "updated": "2026-11-13T00:03:22Z",
+    "gathered": "2026-11-13T01:21:11Z"
+   }
+  ]
  }
 ]
