@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T11:13:00Z",
+ "updatedAt": "2026-11-13T15:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -25,11 +25,11 @@
    "gathered": "2026-11-13T05:15:07Z"
   },
   {
-   "h": "Iran targets US radar in Bahrain; Trump says Gulf allies urged pause",
+   "h": "UN atomic watchdog 'increasingly concerned' over Iranian enrichment plant",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-13",
    "publisher": "Al Jazeera",
-   "title": "Iran targets US radar in Bahrain; Trump says Gulf allies urged strike pause",
+   "title": "UN atomic watchdog ‘increasingly concerned’ over Iranian enrichment plant",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
    "gathered": "2026-11-13T05:15:07Z"
   },
@@ -70,6 +70,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Hegseth awards medal to soldier who chastised him",
+   "b": "After a viral rebuke over decorum at the Tomb of the Unknown Soldier on Veterans Day, the defense secretary sought to turn the incident into a PR opportunity.",
+   "date": "2026-11-13",
+   "publisher": "KUOW",
+   "title": "Hegseth awards medal to soldier who chastised him",
+   "url": "https://www.kuow.org/npr-news/2026-11-13/hegseth-awards-medal-to-soldier-who-chastised-him",
+   "published": "2026-11-13T10:27:08Z",
+   "updated": "2026-11-13T10:36:32Z",
+   "gathered": "2026-11-13T11:13:22Z"
+  },
   {
    "h": "Advocacy groups sue AI companies to pause new models",
    "b": "The suit against Anthropic, Google, Meta, OpenAI and SpaceX argues the companies cannot keep their AI from causing catastrophic harm and asks for a pause until safeguards exist.",
@@ -113,11 +124,7 @@
    "h": "Van Hollen to challenge Schumer for majority leader",
    "b": "The Maryland senator said midterm voters want change from the status quo and Democrats need new leadership.",
    "date": "2026-11-13",
-   "publisher": "KUOW",
-   "title": "Chris Van Hollen says he will challenge Chuck Schumer for Senate majority leader",
    "url": "https://www.kuow.org/npr-news/2026-11-12/chris-van-hollen-says-he-will-challenge-chuck-schumer-for-senate-majority-leader",
-   "published": "2026-11-13T03:52:25Z",
-   "updated": "2026-11-13T03:57:32Z",
    "gathered": "2026-11-13T05:15:07Z"
   },
   {
@@ -423,6 +430,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Flatbush collapse fuels anger over pace of development",
+   "b": "Mayor Mamdani says the city is examining 100 other sites tied to the construction companies, as residents say rapid building is displacing longtime neighbors.",
+   "date": "2026-11-13",
+   "publisher": "Gothamist",
+   "title": "Brooklyn building collapse has residents questioning pace of development",
+   "url": "https://gothamist.com/news/brooklyn-building-collapse-has-residents-questioning-pace-of-development",
+   "published": "2026-11-13T11:00:57Z",
+   "gathered": "2026-11-13T11:13:22Z"
+  },
+  {
    "h": "City Council bans 'surveillance pricing'",
    "b": "The bill bars companies from setting prices based on personal data like demographics, credit or browsing history, online and in stores.",
    "date": "2026-11-12",
@@ -496,21 +513,21 @@
  ],
  "weather": {
   "now": {
-   "temp": 45,
-   "cond": "Fog/Mist",
-   "wind": "NE 9 mph, gusts to 18 mph",
+   "temp": 39,
+   "cond": "Overcast",
+   "wind": "W 7 mph",
    "humidity": 93,
-   "obs": "13 Nov 02:51 am EST"
+   "obs": "13 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 49,
     "text": "Rain, mainly before 4pm.  Temperature falling to around 42 by noon. Breezy, with a north wind 14 to 20 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 36,
     "text": "A 30 percent chance of rain, mainly before 10pm.  Mostly cloudy, with a low around 36. North wind around 11 mph. "
@@ -531,7 +548,7 @@
     "name": "Sunday",
     "kind": "high",
     "temp": 49,
-    "text": "Mostly sunny, with a high near 49."
+    "text": "Mostly sunny, with a high near 49. Northwest wind 13 to 15 mph. "
    },
    {
     "name": "Sunday Night",

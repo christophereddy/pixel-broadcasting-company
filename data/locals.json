@@ -20,21 +20,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "A Few Clouds",
-    "wind": "NW 12 mph, gusts to 21 mph",
-    "humidity": 69,
-    "obs": "13 Nov 02:52 am EST"
+    "temp": 41,
+    "cond": "Fair",
+    "wind": "W 6 mph",
+    "humidity": 76,
+    "obs": "13 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 54,
      "text": "Sunny, with a high near 54. Northwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 36,
      "text": "Mostly clear, with a low around 36. Northwest wind around 10 mph, with gusts as high as 20 mph. "
@@ -55,7 +55,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 57,
-     "text": "Widespread frost before 8am.  Otherwise, sunny, with a high near 57."
+     "text": "Widespread frost before 8am.  Otherwise, sunny, with a high near 57. Calm wind becoming northeast around 5 mph. "
     },
     {
      "name": "Sunday Night",
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -92,8 +92,6 @@
     "h": "Healey names Joroff state climate chief",
     "b": "Joroff, most recently deputy climate chief, will succeed Hoffer, the state's first Cabinet-level climate chief.",
     "date": "2026-11-12",
-    "publisher": "WBUR",
-    "title": "Gov. Healey names new state climate chief",
     "url": "https://www.wbur.org/news/2026/11/12/massachusetts-state-climate-chief-named-joroff",
     "gathered": "2026-11-13T01:21:11Z"
    },
@@ -101,8 +99,6 @@
     "h": "Greater Boston housing growth falls by half",
     "b": "Boston Indicators' report card counts 15,241 net new homes in the year to July, down from 29,024 the year before.",
     "date": "2026-11-12",
-    "publisher": "WBUR",
-    "title": "6 numbers to know from this year's Greater Boston housing report card",
     "url": "https://www.wbur.org/news/2026/11/12/boston-indicators-housing-report-card",
     "gathered": "2026-11-13T01:21:11Z"
    },
@@ -118,21 +114,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Light Rain Fog/Mist",
-    "wind": "NE 18 mph, gusts to 28 mph",
+    "temp": 38,
+    "cond": "Light Rain Snow",
+    "wind": "N 17 mph",
     "humidity": 93,
-    "obs": "13 Nov 02:54 am EST"
+    "obs": "13 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 45,
-     "text": "A chance of rain, mainly before 10am.  Mostly cloudy, with a high near 45. North wind 7 to 11 mph, with gusts as high as 28 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "A chance of rain, mainly before 10am.  Mostly cloudy, with a high near 45. North wind 7 to 11 mph, with gusts as high as 28 mph.  Chance of precipitation is 50%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 35,
      "text": "Mostly cloudy, with a low around 35. Northwest wind around 6 mph. "
@@ -147,7 +143,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Partly cloudy, with a low around 34. West wind around 7 mph. "
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 34. West wind around 7 mph. "
     },
     {
      "name": "Sunday",
@@ -175,7 +171,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -217,19 +213,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 38,
     "cond": "Overcast",
-    "wind": "N 18 mph, gusts to 26 mph",
-    "humidity": 65,
-    "obs": "13 Nov 01:53 am CST"
+    "wind": "N 15 mph",
+    "humidity": 68,
+    "obs": "13 Nov 04:53 am CST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 37,
-     "text": "Rain and snow.  Low around 37. Breezy, with a north northwest wind 15 to 20 mph.  Chance of precipitation is 100%. Little or no snow accumulation expected. "
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -259,6 +249,12 @@
      "kind": "high",
      "temp": 48,
      "text": "Sunny, with a high near 48."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34."
     }
    ]
   },
@@ -274,7 +270,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -285,6 +281,26 @@
    "tz": "America/Denver"
   },
   "local": [
+   {
+    "h": "Denver weighs changes after tough Colfax construction",
+    "b": "The city is considering big changes to how it supports businesses during its next mega-projects.",
+    "date": "2026-11-13",
+    "publisher": "Denverite",
+    "title": "Colfax construction wasn’t fun for business. Can Denver do better next time?",
+    "url": "https://denverite.com/2026/11/13/denver-infrastructure-projects-business-support/",
+    "published": "2026-11-13T11:05:00Z",
+    "gathered": "2026-11-13T11:13:22Z"
+   },
+   {
+    "h": "Restaurants adapt to Denver's foie gras ban",
+    "b": "The law takes effect July 1; advocates estimate about 15 Denver restaurants serve foie gras.",
+    "date": "2026-11-13",
+    "publisher": "Denverite",
+    "title": "Denver banned foie gras. Restaurants are already adapting",
+    "url": "https://denverite.com/2026/11/13/denver-foie-gras-ban-restaurant-changes/",
+    "published": "2026-11-13T11:10:00Z",
+    "gathered": "2026-11-13T11:13:22Z"
+   },
    {
     "h": "Big-name Democrats gather in Denver for 'What's Next'",
     "b": "The conference has taken over Mission Ballroom and blocks of River North, putting the party's biggest questions on display.",
@@ -328,27 +344,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 44,
     "cond": "Fair",
-    "wind": "S 12 mph",
-    "humidity": 43,
-    "obs": "13 Nov 00:58 am MST"
+    "wind": "NW 6 mph",
+    "humidity": 46,
+    "obs": "13 Nov 02:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 39,
-     "text": "Mostly cloudy, with a low around 39. South southwest wind 3 to 5 mph. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
      "text": "Partly sunny, with a high near 64. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 37,
      "text": "Patchy fog after midnight.  Otherwise, mostly cloudy, with a low around 37. Light south southwest wind. "
@@ -363,13 +373,19 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 34,
-     "text": "A 20 percent chance of rain before 11pm.  Mostly cloudy, with a low around 34. Light west northwest wind. "
+     "text": "A 20 percent chance of rain before 11pm.  Cloudy, then gradually becoming partly cloudy, with a low around 34. Light west northwest wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 56,
-     "text": "Sunny, with a high near 56."
+     "text": "Sunny, with a high near 56. Calm wind becoming east around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 33,
+     "text": "Mostly clear, with a low around 33."
     }
    ]
   },
@@ -385,7 +401,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -443,23 +459,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "wind": "Calm",
-    "humidity": 82,
-    "obs": "13 Nov 12:25 AM PST"
+    "temp": 63,
+    "wind": "NW 2 mph",
+    "humidity": 83,
+    "obs": "13 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "A chance of showers and thunderstorms, then showers and possibly a thunderstorm after 4am.  Low around 59. Southeast wind around 5 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
-    },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 72,
-     "text": "Showers and possibly a thunderstorm before 10am, then a slight chance of showers between 10am and 4pm, then rain likely after 4pm.  High near 72. South southeast wind 5 to 10 mph becoming southwest in the afternoon.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
+     "text": "Showers and possibly a thunderstorm before 10am, then a slight chance of showers between 10am and 4pm, then rain likely after 4pm.  High near 72. South southeast wind 5 to 10 mph becoming southwest in the afternoon.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms. "
     },
     {
      "name": "Friday Night",
@@ -470,8 +480,8 @@
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 71,
-     "text": "Sunny, with a high near 71. West wind around 5 mph becoming south in the morning. "
+     "temp": 72,
+     "text": "Sunny, with a high near 72. West wind around 5 mph becoming south in the morning. "
     },
     {
      "name": "Saturday Night",
@@ -482,8 +492,14 @@
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 72,
-     "text": "Mostly sunny, with a high near 72."
+     "temp": 73,
+     "text": "Mostly sunny, with a high near 73."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "A 10 percent chance of showers after 4am.  Mostly cloudy, with a low around 56."
     }
    ]
   },
@@ -499,7 +515,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -518,6 +534,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Flatbush collapse fuels anger over pace of development",
+    "b": "Mayor Mamdani says the city is examining 100 other sites tied to the construction companies, as residents say rapid building is displacing longtime neighbors.",
+    "date": "2026-11-13",
+    "publisher": "Gothamist",
+    "title": "Brooklyn building collapse has residents questioning pace of development",
+    "url": "https://gothamist.com/news/brooklyn-building-collapse-has-residents-questioning-pace-of-development",
+    "published": "2026-11-13T11:00:57Z",
+    "gathered": "2026-11-13T11:13:22Z"
+   },
    {
     "h": "City Council bans 'surveillance pricing'",
     "b": "The bill bars companies from setting prices based on personal data like demographics, credit or browsing history, online and in stores.",
@@ -592,21 +618,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Fog/Mist",
-    "wind": "NE 9 mph, gusts to 18 mph",
+    "temp": 39,
+    "cond": "Overcast",
+    "wind": "W 7 mph",
     "humidity": 93,
-    "obs": "13 Nov 02:51 am EST"
+    "obs": "13 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 49,
      "text": "Rain, mainly before 4pm.  Temperature falling to around 42 by noon. Breezy, with a north wind 14 to 20 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 36,
      "text": "A 30 percent chance of rain, mainly before 10pm.  Mostly cloudy, with a low around 36. North wind around 11 mph. "
@@ -627,7 +653,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 49,
-     "text": "Mostly sunny, with a high near 49."
+     "text": "Mostly sunny, with a high near 49. Northwest wind 13 to 15 mph. "
     },
     {
      "name": "Sunday Night",
@@ -649,7 +675,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -673,6 +699,17 @@
   },
   "local": [
    {
+    "h": "Protests planned across France on Saturday",
+    "b": "Gilets Jaunes list 237 events nationwide, with 30,000 to 60,000 people expected in Paris across three events starting at République.",
+    "date": "2026-11-13",
+    "publisher": "The Local France",
+    "title": "MAP: What to expect from France's latest day of protests on November 14th",
+    "url": "https://www.thelocal.fr/20261113/map-what-to-expect-from-frances-latest-day-of-protests-on-november-14th",
+    "published": "2026-11-13T09:24:54Z",
+    "updated": "2026-11-13T09:24:55Z",
+    "gathered": "2026-11-13T11:13:22Z"
+   },
+   {
     "h": "France bars prominent Israeli settler leader",
     "b": "Yossi Dagan was turned back at a Paris airport over his role in West Bank settlement policy, and Israel's foreign ministry said it will demand an explanation.",
     "date": "2026-11-12",
@@ -694,11 +731,7 @@
     "h": "EES glitches leave travellers wrongly accused of overstays",
     "b": "Several British travellers say the EU's new biometric border system miscounted their 90-day Schengen allowance, leaving some facing travel bans or large fines.",
     "date": "2026-11-12",
-    "publisher": "The Local France",
-    "title": "Travellers accused of overstaying EU's 90-day rule after being caught in EES chaos",
     "url": "https://www.thelocal.fr/20261112/travellers-accused-of-overstaying-eus-90-day-rule-after-being-caught-up-in-ees-chaos",
-    "published": "2026-11-12T12:02:21Z",
-    "updated": "2026-11-12T12:02:25Z",
     "gathered": "2026-11-12T14:18:46Z"
    },
    {
@@ -725,7 +758,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "goodnews": []
  },
  {
@@ -736,25 +769,28 @@
   },
   "local": [
    {
+    "h": "Back-to-back atmospheric rivers to soak Northwest",
+    "b": "Two more storms will pound Washington and Oregon Friday and Saturday after two others already dropped inches of rain this week.",
+    "date": "2026-11-13",
+    "publisher": "KUOW",
+    "title": "Rivers in the sky are raining down on the Pacific Northwest. What are they?",
+    "url": "https://www.kuow.org/npr-news/2026-11-13/rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-are-they",
+    "published": "2026-11-13T10:01:00Z",
+    "updated": "2026-11-13T10:19:59Z",
+    "gathered": "2026-11-13T11:13:22Z"
+   },
+   {
     "h": "Cracked dock halts ferry trucks to Orcas Island",
     "b": "San Juan County declared an emergency as groceries arrive by barge and residents hold onto garbage while crews repair cracked steel beams at the terminal.",
     "date": "2026-11-12",
-    "publisher": "KUOW",
-    "title": "Stalled groceries, stopped garbage: Orcas Island deals with truck shutdown on ferries",
     "url": "https://www.kuow.org/governing/2026-11-12/stalled-groceries-stopped-garbage-orcas-island-deals-with-truck-shutdown-on-ferries",
-    "published": "2026-11-13T01:10:08Z",
-    "updated": "2026-11-13T01:13:23Z",
     "gathered": "2026-11-13T02:15:37Z"
    },
    {
     "h": "AG Brown's office hands trans sports ban defense to outside firm",
     "b": "Citing potential conflicts, the attorney general appointed national firm Bryan Cave Leighton Paisner to defend voter-passed Initiative 638 in court.",
     "date": "2026-11-12",
-    "publisher": "KUOW",
-    "title": "Washington AG hires outside firm to defend ban on trans girls in girls’ school sports",
     "url": "https://www.kuow.org/law/2026-11-12/washington-ag-hires-outside-firm-to-defend-ban-on-trans-girls-in-girls-school-sports",
-    "published": "2026-11-13T01:21:03Z",
-    "updated": "2026-11-13T01:33:19Z",
     "gathered": "2026-11-13T02:15:37Z"
    },
    {
@@ -781,19 +817,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 52,
     "cond": "Clear",
-    "wind": "SE 9 mph",
-    "humidity": 81,
-    "obs": "13 Nov 12:20 AM PST"
+    "wind": "Calm",
+    "humidity": 87,
+    "obs": "13 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Cloudy, with a steady temperature around 54. Southeast wind around 5 mph becoming calm. "
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -823,6 +853,12 @@
      "kind": "high",
      "temp": 54,
      "text": "Rain.  High near 54. Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 45. Chance of precipitation is 60%."
     }
    ]
   },
@@ -838,18 +874,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-13T11:13:00Z",
+  "updatedAt": "2026-11-13T15:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "Sound Transit cages wires to stop fish deaths",
     "b": "Divers fitted mesh cages around anode wires under the I-90 light rail bridge, designed with the Muckleshoot Tribe and state wildlife staff.",
     "date": "2026-11-12",
-    "publisher": "KUOW",
-    "title": "Sound Transit installs mesh cages to stop fish deaths under I-90 light rail",
     "url": "https://www.kuow.org/governing/2026-11-12/sound-transit-installs-mesh-cages-to-stop-fish-deaths-under-i-90-light-rail",
-    "published": "2026-11-13T00:03:22Z",
-    "updated": "2026-11-13T00:03:22Z",
     "gathered": "2026-11-13T01:21:11Z"
    }
   ]
