@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T02:12:00Z",
+ "updatedAt": "2026-11-14T05:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -28,11 +28,11 @@
    "gathered": "2026-11-13T05:15:07Z"
   },
   {
-   "h": "Qatar, Turkiye ink defence pact; UN warns of displacement crisis in Yemen",
+   "h": "Qatar, Turkiye ink defence deal; fighting rages in Yemen",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-13",
    "publisher": "Al Jazeera",
-   "title": "Qatar, Turkiye ink defence pact; UN warns of displacement crisis in Yemen",
+   "title": "Iran war updates: Qatar, Turkiye ink defence deal; fighting rages in Yemen",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
    "gathered": "2026-11-13T05:15:07Z"
   },
@@ -45,6 +45,15 @@
   }
  ],
  "national": [
+  {
+   "h": "US measles deaths reach 10 this year",
+   "b": "Two more deaths were reported as confirmed cases topped 5,400, more than double last year's total.",
+   "date": "2026-11-14",
+   "publisher": "Al Jazeera",
+   "title": "Measles-associated deaths reach 10 in US after two more deaths reported",
+   "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported",
+   "gathered": "2026-11-14T03:28:02Z"
+  },
   {
    "h": "Supreme Court to hear Trump's southern border asylum ban",
    "b": "The administration wants the justices to overturn lower court rulings that found it illegal to block asylum applications under the order.",
@@ -63,14 +72,15 @@
    "gathered": "2026-11-13T22:45:57Z"
   },
   {
-   "h": "FAA grounds all flights at US airports",
-   "b": "A communications problem at regional air traffic control centers prompted the first nationwide ground stop since 2023; officials said there was no indication yet of an attack.",
+   "h": "FAA lifts nationwide ground stop after hours-long halt",
+   "b": "The FAA lifted the ground stop Friday evening after a communications problem at regional air traffic control centers halted all departures for hours, though it was unclear when flights would fully resume.",
    "date": "2026-11-13",
-   "publisher": "PBS NewsHour",
-   "title": "FAA grounds all flights at U.S. airports due to air traffic control communications problems",
-   "url": "https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems",
-   "published": "2026-11-13T21:41:27Z",
-   "gathered": "2026-11-13T22:45:57Z"
+   "publisher": "WBEZ",
+   "title": "FAA lifts nationwide ground stop. O'Hare, Midway flights can resume after hours of delays, cancellations",
+   "url": "https://www.wbez.org/transportation/2026/11/13/all-departing-flights-grounded-nationwide-due-to-faa-order",
+   "published": "2026-11-13T21:48:59Z",
+   "updated": "2026-11-13T21:48:59Z",
+   "gathered": "2026-11-14T03:28:02Z"
   },
   {
    "h": "Navy quietly fired commanders, drawing pushback from Congress",
@@ -143,6 +153,17 @@
  ],
  "international": [
   {
+   "h": "UK police open sex offence probe into David Walliams",
+   "b": "The Metropolitan Police said it received allegations of non-recent serious sexual offences, separate from misconduct claims reported this week by ITV and The Guardian.",
+   "date": "2026-11-14",
+   "place": "London, UK",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK police open sex offence probe into comedian and author David Walliams",
+   "url": "https://www.aljazeera.com/news/2026/11/14/uk-police-open-sex-offence-probe-into-comedian-and-author-david-walliams",
+   "gathered": "2026-11-14T03:28:02Z"
+  },
+  {
    "h": "Eisenkot accuses Netanyahu of 'racist' campaign against Arab Israelis",
    "b": "The opposition leader said Arab citizens faced a campaign of delegitimisation fuelled by the outgoing prime minister after the October 27 election.",
    "date": "2026-11-13",
@@ -170,8 +191,6 @@
    "date": "2026-11-13",
    "place": "Siguiri, Guinea",
    "tz": "Africa/Conakry",
-   "publisher": "Al Jazeera",
-   "title": "At least 10 killed in Guinea clashes over gold mining ban",
    "url": "https://www.aljazeera.com/news/2026/11/13/at-least-10-killed-in-guinea-in-crackdown-on-gold-mining",
    "gathered": "2026-11-13T22:45:57Z"
   },
@@ -228,11 +247,7 @@
    "h": "Microsoft says outage was not AI or cyberattack",
    "b": "The company said the outage of more than 24 hours, which hit Outlook, Teams and Copilot, stemmed from an earlier network capacity upgrade.",
    "date": "2026-11-13",
-   "publisher": "KUOW",
-   "title": "As Microsoft services return online, company says outage wasn't caused by AI or cyberattack",
    "url": "https://www.kuow.org/technology/2026-11-13/microsoft-says-outage-not-caused-by-ai-or-cyber-attack",
-   "published": "2026-11-13T18:50:45Z",
-   "updated": "2026-11-13T19:58:03Z",
    "gathered": "2026-11-13T23:15:41Z"
   },
   {
@@ -245,13 +260,20 @@
  ],
  "science": [
   {
+   "h": "Starship reaches orbit despite booster mishap",
+   "b": "The booster ended up in the Gulf of Mexico after an automatic abort, scrapping the first half of SpaceX's double catch attempt, but the spacecraft will try to return to the pad Saturday.",
+   "date": "2026-11-13",
+   "publisher": "PBS NewsHour",
+   "title": "SpaceX’s Starship soars into orbit after booster malfunction thwarts double catch attempt",
+   "url": "https://www.pbs.org/newshour/science/spacexs-starship-soars-into-orbit-after-booster-malfunction-thwarts-double-catch-attempt",
+   "published": "2026-11-14T00:20:20Z",
+   "gathered": "2026-11-14T03:28:02Z"
+  },
+  {
    "h": "Guterres urges 'immediate and drastic' emissions cuts",
    "b": "At his final climate summit as UN chief, Guterres said the world must cut fossil fuel emissions now to avert catastrophe.",
    "date": "2026-11-13",
-   "publisher": "PBS NewsHour",
-   "title": "UN chief says 'immediate and drastic' emissions cuts needed to avert climate change catastrophe",
    "url": "https://www.pbs.org/newshour/world/un-chief-says-immediate-and-drastic-emissions-cuts-needed-to-avert-climate-change-catastrophe",
-   "published": "2026-11-13T19:45:22Z",
    "gathered": "2026-11-13T23:15:41Z"
   }
  ],
@@ -261,7 +283,7 @@
    "b": "Programs preparing for road games had to look for alternate travel plans after the nationwide halt.",
    "date": "2026-11-13",
    "publisher": "CBS Sports",
-   "title": "FAA flight stoppage leaves college football teams scrambling to find alternate travel plans",
+   "title": "College football teams scrambling to find alternate travel plans after FAA lifts ground-stop order",
    "url": "https://www.cbssports.com/college-football/news/faa-ground-stoppage-college-football-teams-travel-plans/",
    "gathered": "2026-11-13T23:15:41Z"
   },
@@ -269,8 +291,6 @@
    "h": "Red Sox reportedly sign Jake Bauers for $58 million",
    "b": "The NLCS MVP agreed to a four-year deal after hitting 26 homers for the champion Brewers, ESPN reports.",
    "date": "2026-11-13",
-   "publisher": "CBS Sports",
-   "title": "Jake Bauers reportedly agrees to $58 million deal with Red Sox after helping lead Brewers to World Series",
    "url": "https://www.cbssports.com/mlb/news/jake-bauers-contract-red-sox-brewers-mlb-free-agency/",
    "gathered": "2026-11-13T22:45:57Z"
   },
@@ -306,13 +326,24 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Signal problems halt F and G trains in Friday rush",
+   "b": "The MTA reported no F service between Brooklyn and Manhattan and no G service between Church Avenue and Bedford-Nostrand Avenues.",
+   "date": "2026-11-13",
+   "publisher": "Gothamist",
+   "title": "F and G lines grind to a halt as signal issues slows Friday night rush",
+   "url": "https://gothamist.com/news/f-and-g-lines-grind-to-a-halt-as-signal-issues-slows-friday-night-rush",
+   "published": "2026-11-14T00:38:06Z",
+   "gathered": "2026-11-14T03:28:02Z"
+  },
+  {
    "h": "Ex-jails chief testifies in Adams-era corruption trial",
    "b": "Former jails chief Molina told the court an adviser pushed him to interview a friend's daughter, who got a conditional job offer.",
    "date": "2026-11-13",
    "publisher": "Gothamist",
    "title": "Former NYC jails chief testifies about Adams adviser's push to hire friend’s daughter",
    "url": "https://gothamist.com/news/former-nyc-jails-chief-testifies-about-adams-advisers-push-to-hire-friends-daughter",
-   "published": "2026-11-13T21:23:29Z",
+   "published": "2026-11-13T21:23:00Z",
+   "updated": "2026-11-13T22:24:00Z",
    "gathered": "2026-11-13T23:15:41Z"
   },
   {
@@ -342,8 +373,7 @@
    "publisher": "Gothamist",
    "title": "Engineers question city-approved plans after Brooklyn building collapse",
    "url": "https://gothamist.com/news/engineers-question-city-approved-plans-after-brooklyn-building-collapse",
-   "published": "2026-11-13T20:38:00Z",
-   "updated": "2026-11-13T21:41:00Z",
+   "published": "2026-11-13T21:41:00Z",
    "gathered": "2026-11-13T23:15:41Z"
   },
   {
@@ -379,18 +409,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 41,
+   "temp": 39,
    "cond": "Overcast",
    "wind": "Calm",
-   "humidity": 82,
-   "obs": "13 Nov 17:51 pm EST"
+   "humidity": 79,
+   "obs": "13 Nov 21:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 40,
-    "text": "A 40 percent chance of rain before 7pm.  Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
+    "text": "Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
    },
    {
     "name": "Saturday",

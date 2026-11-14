@@ -42,18 +42,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "wind": "N 10 mph",
-    "humidity": 50,
-    "obs": "13 Nov 17:52 pm EST"
+    "temp": 41,
+    "cond": "Partly Cloudy",
+    "wind": "NW 12 mph",
+    "humidity": 65,
+    "obs": "13 Nov 21:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Clear, with a low around 37. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Clear, with a low around 37. Northwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,18 +131,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 7 mph",
-    "humidity": 73,
-    "obs": "13 Nov 17:54 pm EST"
+    "temp": 38,
+    "cond": "Partly Cloudy",
+    "wind": "NW 13 mph",
+    "humidity": 76,
+    "obs": "13 Nov 21:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 33,
-     "text": "Mostly cloudy, with a low around 33. Northwest wind 3 to 6 mph. "
+     "text": "Mostly cloudy, with a low around 33. Northwest wind around 6 mph. "
     },
     {
      "name": "Saturday",
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -213,30 +213,30 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
+    "temp": 38,
     "cond": "Mostly Cloudy",
-    "wind": "N 14 mph",
-    "humidity": 62,
-    "obs": "13 Nov 16:53 pm CST"
+    "wind": "N 14 mph, gusts to 22 mph",
+    "humidity": 60,
+    "obs": "13 Nov 20:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 37,
-     "text": "Rain showers likely before 1am, then rain likely, possibly mixed with snow showers.  Mostly cloudy, with a low around 37. Breezy, with a north northwest wind 15 to 20 mph.  Chance of precipitation is 60%. Little or no snow accumulation expected. "
+     "temp": 34,
+     "text": "Rain and snow before 10pm, then rain between 10pm and 3am, then a chance of rain and snow after 3am.  Low around 34. North wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 80%. Little or no snow accumulation expected. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 46,
-     "text": "Sunny, with a high near 46. North northwest wind 5 to 15 mph. "
+     "temp": 47,
+     "text": "Sunny, with a high near 47. Northwest wind 10 to 15 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 36,
-     "text": "Mostly clear, with a low around 36. Northwest wind around 5 mph. "
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34. Northwest wind 5 to 10 mph. "
     },
     {
      "name": "Sunday",
@@ -248,7 +248,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 35,
-     "text": "Mostly clear, with a low around 35."
+     "text": "Mostly clear, with a low around 35. Calm wind becoming west southwest around 5 mph. "
     },
     {
      "name": "Monday",
@@ -270,7 +270,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -324,18 +324,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 49,
     "cond": "Mostly Cloudy",
-    "wind": "NW 7 mph",
-    "humidity": 22,
-    "obs": "13 Nov 14:58 pm MST"
+    "wind": "S 6 mph",
+    "humidity": 44,
+    "obs": "13 Nov 18:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Areas of fog after 11pm.  Otherwise, mostly cloudy, with a low around 37. Light southwest wind. "
+     "text": "Areas of fog after 11pm.  Otherwise, mostly cloudy, with a low around 37. Light and variable wind. "
     },
     {
      "name": "Saturday",
@@ -353,13 +353,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 59,
-     "text": "Patchy fog before 10am.  Otherwise, sunny, with a high near 59. Calm wind becoming east around 6 mph in the afternoon. "
+     "text": "Patchy fog before 10am.  Otherwise, partly sunny, then gradually becoming sunny, with a high near 59. Calm wind becoming east around 6 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Mostly clear, with a low around 34."
+     "text": "Mostly clear, with a low around 34. Light southwest wind. "
     },
     {
      "name": "Monday",
@@ -381,7 +381,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -392,6 +392,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Control of LA's federal homeless money set to shift to county",
+    "b": "Under a deal a federal judge plans to approve, LAHSA's management of federal homeless dollars would end in June.",
+    "date": "2026-11-13",
+    "publisher": "LAist",
+    "title": "Control of LA’s federal homeless money is about to change. Here’s what happens next",
+    "url": "https://laist.com/news/housing-homelessness/federal-homeless-money-lahsa-hud-carter",
+    "published": "2026-11-14T01:19:49Z",
+    "updated": "2026-11-14T01:19:49Z",
+    "gathered": "2026-11-14T03:28:02Z"
+   },
    {
     "h": "LAUSD may help add infant childcare",
     "b": "The district plans to seek proposals next year from providers who want to run programs on district property.",
@@ -417,17 +428,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "wind": "SE 2 mph",
-    "humidity": 69,
-    "obs": "13 Nov 03:10 PM PST"
+    "temp": 60,
+    "wind": "N 1 mph",
+    "humidity": 91,
+    "obs": "13 Nov 07:25 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "Rain.  Low around 57. Southwest wind 5 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain.  Low around 57. Southwest wind 5 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -451,7 +462,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, with a low around 55."
+     "text": "Mostly cloudy, with a low around 55. Calm wind becoming northeast around 5 mph. "
     },
     {
      "name": "Monday",
@@ -473,7 +484,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -497,13 +508,24 @@
   },
   "local": [
    {
+    "h": "Signal problems halt F and G trains in Friday rush",
+    "b": "The MTA reported no F service between Brooklyn and Manhattan and no G service between Church Avenue and Bedford-Nostrand Avenues.",
+    "date": "2026-11-13",
+    "publisher": "Gothamist",
+    "title": "F and G lines grind to a halt as signal issues slows Friday night rush",
+    "url": "https://gothamist.com/news/f-and-g-lines-grind-to-a-halt-as-signal-issues-slows-friday-night-rush",
+    "published": "2026-11-14T00:38:06Z",
+    "gathered": "2026-11-14T03:28:02Z"
+   },
+   {
     "h": "Ex-jails chief testifies in Adams-era corruption trial",
     "b": "Former jails chief Molina told the court an adviser pushed him to interview a friend's daughter, who got a conditional job offer.",
     "date": "2026-11-13",
     "publisher": "Gothamist",
     "title": "Former NYC jails chief testifies about Adams adviser's push to hire friend’s daughter",
     "url": "https://gothamist.com/news/former-nyc-jails-chief-testifies-about-adams-advisers-push-to-hire-friends-daughter",
-    "published": "2026-11-13T21:23:29Z",
+    "published": "2026-11-13T21:23:00Z",
+    "updated": "2026-11-13T22:24:00Z",
     "gathered": "2026-11-13T23:15:41Z"
    },
    {
@@ -533,8 +555,7 @@
     "publisher": "Gothamist",
     "title": "Engineers question city-approved plans after Brooklyn building collapse",
     "url": "https://gothamist.com/news/engineers-question-city-approved-plans-after-brooklyn-building-collapse",
-    "published": "2026-11-13T20:38:00Z",
-    "updated": "2026-11-13T21:41:00Z",
+    "published": "2026-11-13T21:41:00Z",
     "gathered": "2026-11-13T23:15:41Z"
    },
    {
@@ -570,18 +591,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
+    "temp": 39,
     "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 82,
-    "obs": "13 Nov 17:51 pm EST"
+    "humidity": 79,
+    "obs": "13 Nov 21:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 40,
-     "text": "A 40 percent chance of rain before 7pm.  Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
+     "text": "Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
     },
     {
      "name": "Saturday",
@@ -627,7 +648,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -696,7 +717,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "goodnews": []
  },
  {
@@ -706,6 +727,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Judge rules Adams County broke state law by working with ICE",
+    "b": "The ruling found the county violated the Keep Washington Working Act, which bars local police from holding people for immigration agents.",
+    "date": "2026-11-13",
+    "publisher": "KUOW",
+    "title": "Judge rules Adams County violated WA state law by working with ICE",
+    "url": "https://www.kuow.org/immigration/2026-11-13/judge-rules-adams-county-violated-wa-state-law-by-working-with-ice",
+    "published": "2026-11-14T02:12:29Z",
+    "updated": "2026-11-14T02:12:29Z",
+    "gathered": "2026-11-14T03:28:02Z"
+   },
    {
     "h": "Kirkland weighs raising minimum wage",
     "b": "The city is considering going above the state's $17.13 minimum after a study of Seattle and other cities' increases.",
@@ -723,18 +755,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "light rain,mist",
+    "temp": 52,
+    "cond": "Overcast",
     "wind": "Calm",
     "humidity": 93,
-    "obs": "13 Nov 02:55 PM PST"
+    "obs": "13 Nov 07:20 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "A 30 percent chance of rain, mainly between 3am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 7 to 10 mph. "
+     "text": "A 30 percent chance of rain, mainly between 3am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 6 to 10 mph. "
     },
     {
      "name": "Saturday",
@@ -758,7 +790,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 44,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 44."
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 44. South wind around 7 mph. "
     },
     {
      "name": "Monday",
@@ -780,8 +812,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T02:12:00Z",
+  "updatedAt": "2026-11-14T05:12:00Z",
   "slug": "seattle-wa",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Quinault Nation moves first families to higher ground",
+    "b": "The tribe celebrated the first four modular homes of 59 planned in a new neighborhood above flood-prone Taholah.",
+    "date": "2026-11-13",
+    "publisher": "KUOW",
+    "title": "Quinault tribe races against king tides to relocate coastal homes",
+    "url": "https://www.kuow.org/environment/2026-11-13/quinault-tribe-races-against-king-tides-to-relocate-coastal-homes",
+    "published": "2026-11-14T01:03:25Z",
+    "updated": "2026-11-14T01:03:25Z",
+    "gathered": "2026-11-14T03:28:02Z"
+   }
+  ]
  }
 ]
