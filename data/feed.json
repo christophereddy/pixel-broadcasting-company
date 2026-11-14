@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T08:12:00Z",
+ "updatedAt": "2026-11-14T11:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,18 @@
  },
  "world": [
   {
+   "h": "UN says 25 seafarers killed around Hormuz since war began",
+   "b": "The UN tracked 136 security incidents involving vessels in the region since March, as Iran reported three tankers hit mines Saturday.",
+   "date": "2026-11-14",
+   "publisher": "Al Jazeera",
+   "title": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
+   "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february",
+   "gathered": "2026-11-14T10:47:38Z"
+  },
+  {
    "h": "ICC halts probe into alleged crimes by US troops in Afghanistan",
    "b": "Judges cited significant limits on the prosecution's ability to gather evidence; the prosecutor's office says it has appealed.",
    "date": "2026-11-14",
-   "publisher": "Al Jazeera",
-   "title": "ICC stops probe into alleged crimes by US troops in Afghanistan",
    "url": "https://www.aljazeera.com/news/2026/11/14/icc-stops-probe-into-alleged-crimes-by-us-troops-in-afghanistan",
    "gathered": "2026-11-14T05:22:05Z"
   },
@@ -95,7 +102,7 @@
    "title": "Old tech blamed for the ground stop that caused flight chaos: 'It got overloaded'",
    "url": "https://laist.com/news/old-tech-blamed-for-the-ground-stop-that-caused-flight-chaos-it-got-overloaded",
    "published": "2026-11-14T04:05:34Z",
-   "updated": "2026-11-14T04:05:34Z",
+   "updated": "2026-11-14T07:21:38Z",
    "gathered": "2026-11-14T05:22:05Z"
   },
   {
@@ -114,6 +121,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Democrat Kreiss-Tomkins wins Alaska governor's race",
+   "b": "At 37 he will be the state's youngest governor, replacing term-limited Republican Mike Dunleavy; Alaska's last Democratic governor left office in 2002.",
+   "date": "2026-11-13",
+   "publisher": "KUOW",
+   "title": "Democrat Jonathan Kreiss-Tomkins wins race for Alaska governor, replaces a Republican",
+   "url": "https://www.kuow.org/npr-news/2026-11-13/democrat-jonathan-kreiss-tomkins-wins-race-for-alaska-governor-replaces-a-republican",
+   "published": "2026-11-14T05:12:43Z",
+   "updated": "2026-11-14T05:55:33Z",
+   "gathered": "2026-11-14T10:47:38Z"
+  },
   {
    "h": "GOP attorneys general seek to revive Trump mail voting limits",
    "b": "Twelve Republican state attorneys general began appealing a judge's order that blocked a Postal Service plan, aiming at the 2028 election.",
@@ -165,6 +183,28 @@
  ],
  "international": [
   {
+   "h": "Philippine court orders arrest of jailed preacher wanted by US",
+   "b": "The warrant for Quiboloy, whose extradition Washington requested in August, means the court must now hold hearings on whether to hand him over.",
+   "date": "2026-11-14",
+   "place": "Manila, Philippines",
+   "tz": "Asia/Manila",
+   "publisher": "Al Jazeera",
+   "title": "Philippine court orders arrest of jailed, US-wanted celebrity preacher",
+   "url": "https://www.aljazeera.com/news/2026/11/14/philippine-court-orders-arrest-of-jailed-us-wanted-celebrity-preacher",
+   "gathered": "2026-11-14T10:47:38Z"
+  },
+  {
+   "h": "Nearly $20m in cash found hidden in Hungary's forests",
+   "b": "Investigators searching in a corruption probe found money buried in forests and stashed in farm buildings, amid a case against former development minister Miklos Sesztak, who denies wrongdoing.",
+   "date": "2026-11-14",
+   "place": "Hungary",
+   "tz": "Europe/Budapest",
+   "publisher": "Al Jazeera",
+   "title": "Nearly $20m found in Hungary’s forests, buildings amid corruption probe",
+   "url": "https://www.aljazeera.com/news/2026/11/14/hungarian-investigators-uncover-19-5m-hidden-in-forests-and-buildings",
+   "gathered": "2026-11-14T10:47:38Z"
+  },
+  {
    "h": "Germany grants spy agencies sweeping new powers",
    "b": "The reform lets the BND and BfV actively disrupt threats, such as deleting stolen data from an attacker's server, not just gather intelligence.",
    "date": "2026-11-14",
@@ -181,8 +221,6 @@
    "date": "2026-11-14",
    "place": "London, UK",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK police open sex offence probe into comedian and author David Walliams",
    "url": "https://www.aljazeera.com/news/2026/11/14/uk-police-open-sex-offence-probe-into-comedian-and-author-david-walliams",
    "gathered": "2026-11-14T03:28:02Z"
   },
@@ -192,8 +230,6 @@
    "date": "2026-11-13",
    "place": "Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Eisenkot slams Netanyahu’s ‘racist’ campaign against Palestinian Israelis",
    "url": "https://www.aljazeera.com/news/2026/11/13/eisenkot-slams-netanyahus-racist-campaign-against-palestinian-israelis",
    "gathered": "2026-11-13T23:15:41Z"
   },
@@ -203,8 +239,6 @@
    "date": "2026-11-13",
    "place": "Chiclayo, Peru",
    "tz": "America/Lima",
-   "publisher": "Al Jazeera",
-   "title": "Pope thanks crowds on emotional return to ‘second home’ in Peru’s Chiclayo",
    "url": "https://www.aljazeera.com/news/2026/11/13/pope-thanks-crowds-on-emotional-return-to-second-home-in-perus-chiclayo",
    "gathered": "2026-11-13T23:15:41Z"
   },
@@ -430,48 +464,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 39,
+   "temp": 38,
    "cond": "Overcast",
-   "wind": "N 8 mph",
-   "humidity": 73,
-   "obs": "13 Nov 23:51 pm EST"
+   "wind": "W 6 mph",
+   "humidity": 70,
+   "obs": "14 Nov 04:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 40,
-    "text": "Mostly cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
-    "temp": 48,
-    "text": "Partly sunny, with a high near 48. Northwest wind 10 to 15 mph. "
+    "temp": 49,
+    "text": "Increasing clouds, with a high near 49. Northwest wind 14 to 17 mph. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
-    "temp": 47,
-    "text": "Partly cloudy, with a steady temperature around 47. West wind around 14 mph. "
+    "temp": 44,
+    "text": "Mostly cloudy during the early evening, then gradual clearing, with a low around 44. West wind around 16 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 49,
-    "text": "Sunny, with a high near 49. Northwest wind 13 to 15 mph. "
+    "text": "Sunny, with a high near 49. Northwest wind 15 to 17 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 43,
-    "text": "Mostly clear, with a low around 43. Northwest wind 8 to 13 mph. "
+    "temp": 41,
+    "text": "Mostly clear, with a low around 41. Northwest wind 8 to 11 mph. "
    },
    {
     "name": "Monday",
     "kind": "high",
-    "temp": 53,
-    "text": "Sunny, with a high near 53."
+    "temp": 52,
+    "text": "Sunny, with a high near 52. Northwest wind around 9 mph. "
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 42,
+    "text": "Mostly clear, with a low around 42."
    }
   ]
  },

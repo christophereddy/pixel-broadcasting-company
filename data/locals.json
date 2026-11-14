@@ -42,48 +42,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 12 mph",
-    "humidity": 65,
-    "obs": "13 Nov 23:52 pm EST"
+    "temp": 37,
+    "cond": "Fair",
+    "wind": "NW 9 mph",
+    "humidity": 86,
+    "obs": "14 Nov 04:52 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 37,
-     "text": "Clear, with a low around 37. Northwest wind around 10 mph, with gusts as high as 15 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 55,
      "text": "Sunny, with a high near 55. North wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 32,
-     "text": "Widespread frost, mainly after 4am.  Otherwise, clear, with a low around 32. North wind around 5 mph. "
+     "text": "Widespread frost, mainly after 4am.  Otherwise, mostly clear, with a low around 32. Northwest wind around 5 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 57,
-     "text": "Widespread frost before 8am.  Otherwise, sunny, with a high near 57. Northeast wind around 5 mph becoming calm. "
+     "text": "Widespread frost before 8am.  Otherwise, mostly sunny, with a high near 57. Calm wind becoming northeast around 5 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 37,
-     "text": "Mostly clear, with a low around 37. Calm wind becoming northeast around 5 mph. "
+     "temp": 36,
+     "text": "Mostly clear, with a low around 36. Calm wind becoming northeast around 5 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 57,
-     "text": "Mostly sunny, with a high near 57."
+     "text": "Mostly sunny, with a high near 57. East wind around 5 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 37,
+     "text": "Mostly clear, with a low around 37."
     }
    ]
   },
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -132,47 +132,47 @@
   "weather": {
    "now": {
     "temp": 36,
-    "cond": "Partly Cloudy",
-    "wind": "NW 12 mph, gusts to 21 mph",
-    "humidity": 76,
-    "obs": "13 Nov 23:54 pm EST"
+    "cond": "Mostly Cloudy",
+    "wind": "NW 10 mph",
+    "humidity": 70,
+    "obs": "14 Nov 04:54 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 33,
-     "text": "Mostly cloudy, with a low around 33. Northwest wind around 5 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 47,
-     "text": "Mostly cloudy through mid morning, then becoming sunny, with a high near 47. West wind 6 to 8 mph. "
+     "text": "Increasing clouds, with a high near 47. Northwest wind 5 to 8 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Mostly cloudy, with a low around 34. West wind around 7 mph. "
+     "text": "Partly cloudy, with a low around 34. West wind around 6 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 49,
-     "text": "Sunny, with a high near 49. Northwest wind 10 to 14 mph. "
+     "temp": 48,
+     "text": "Sunny, with a high near 48. Northwest wind 7 to 11 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Mostly clear, with a low around 35. Northwest wind 8 to 11 mph. "
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34. Northwest wind 5 to 7 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 50,
-     "text": "Sunny, with a high near 50. Northwest wind 5 to 13 mph. "
+     "temp": 49,
+     "text": "Sunny, with a high near 49. Northwest wind 5 to 8 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 32,
+     "text": "Mostly clear, with a low around 32. Light west wind. "
     }
    ]
   },
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -213,48 +213,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 37,
-    "cond": "Mostly Cloudy",
-    "wind": "N 10 mph",
-    "humidity": 65,
-    "obs": "13 Nov 22:53 pm CST"
+    "temp": 33,
+    "cond": "Fair",
+    "wind": "NW 10 mph",
+    "humidity": 75,
+    "obs": "14 Nov 03:53 am CST"
    },
    "periods": [
+    {
+     "name": "Today",
+     "kind": "high",
+     "temp": 46,
+     "text": "Sunny, with a high near 46. Northwest wind 10 to 15 mph. "
+    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Rain.  Low around 34. North wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
-    {
-     "name": "Saturday",
-     "kind": "high",
-     "temp": 47,
-     "text": "Sunny, with a high near 47. Northwest wind 10 to 15 mph. "
-    },
-    {
-     "name": "Saturday Night",
-     "kind": "low",
-     "temp": 34,
-     "text": "Mostly clear, with a low around 34. Northwest wind 5 to 10 mph. "
+     "text": "Partly cloudy, with a low around 34. Northwest wind 5 to 10 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 48,
-     "text": "Sunny, with a high near 48. Northwest wind around 5 mph becoming calm  in the afternoon. "
+     "temp": 49,
+     "text": "Mostly sunny, with a high near 49. Northwest wind around 5 mph becoming calm  in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Mostly clear, with a low around 35. Calm wind becoming west southwest around 5 mph. "
+     "temp": 33,
+     "text": "Mostly clear, with a low around 33. Calm wind becoming west southwest around 5 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 50,
-     "text": "Sunny, with a high near 50."
+     "text": "Sunny, with a high near 50. Southwest wind around 5 mph, with gusts as high as 10 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 35,
+     "text": "Mostly clear, with a low around 35."
     }
    ]
   },
@@ -270,7 +270,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -324,42 +324,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Mostly Cloudy",
-    "wind": "S 8 mph",
-    "humidity": 54,
-    "obs": "13 Nov 21:58 pm MST"
+    "temp": 36,
+    "cond": "Partly Cloudy",
+    "wind": "SW 6 mph",
+    "humidity": 79,
+    "obs": "14 Nov 02:58 am MST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 37,
-     "text": "Areas of fog after 11pm.  Otherwise, mostly cloudy, with a low around 37. Light and variable wind. "
+     "text": "Areas of fog.  Otherwise, cloudy, with a low around 37. Calm wind. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 55,
-     "text": "A 30 percent chance of showers, mainly after 3pm.  Areas of fog before 10am.  Otherwise, mostly cloudy, with a high near 55. Calm wind becoming northeast around 6 mph in the afternoon. "
+     "temp": 53,
+     "text": "A 30 percent chance of rain, mainly after 2pm.  Areas of fog before 10am.  Otherwise, mostly cloudy, with a high near 53. Calm wind becoming north northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 37,
-     "text": "A 50 percent chance of showers before 2am.  Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 37. Light and variable wind. "
+     "temp": 34,
+     "text": "A 50 percent chance of rain, mainly before 8pm.  Patchy fog after 11pm.  Otherwise, mostly cloudy, with a low around 34. Calm wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 59,
-     "text": "Patchy fog before 10am.  Otherwise, partly sunny, then gradually becoming sunny, with a high near 59. Calm wind becoming east around 6 mph in the afternoon. "
+     "text": "Patchy fog before 10am.  Otherwise, partly sunny, then gradually becoming sunny, with a high near 59. Calm wind becoming east around 6 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly clear, with a low around 34. Light southwest wind. "
+     "temp": 33,
+     "text": "Mostly clear, with a low around 33. Light and variable wind. "
     },
     {
      "name": "Monday",
@@ -381,7 +381,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -428,47 +428,47 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "wind": "SE 2 mph",
-    "humidity": 94,
-    "obs": "13 Nov 09:10 PM PST"
+    "temp": 58,
+    "wind": "Calm",
+    "humidity": 97,
+    "obs": "14 Nov 02:40 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 57,
-     "text": "Rain.  Low around 57. West southwest wind 5 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Showers likely, mainly before 4am.  Mostly cloudy, with a low around 57. West southwest wind around 5 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 70,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 70. West wind around 5 mph becoming south southeast in the morning. "
+     "text": "Isolated showers before 10am.  Partly sunny, then gradually becoming sunny, with a high near 70. West wind around 5 mph becoming south southeast in the morning.  Chance of precipitation is 20%."
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Mostly clear, with a low around 54. East northeast wind around 5 mph. "
+     "temp": 55,
+     "text": "Mostly clear, with a low around 55. East northeast wind around 5 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 71,
-     "text": "Mostly sunny, with a high near 71. East wind around 5 mph becoming south southwest in the afternoon. "
+     "temp": 72,
+     "text": "Mostly sunny, with a high near 72. East wind around 5 mph becoming south southwest in the afternoon. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 55,
-     "text": "Mostly cloudy, with a low around 55. Calm wind becoming northeast around 5 mph. "
+     "temp": 56,
+     "text": "Mostly cloudy, with a low around 56. Calm wind becoming northeast around 5 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 70,
-     "text": "A 20 percent chance of rain after 10am.  Partly sunny, with a high near 70."
+     "text": "A 30 percent chance of rain after 10am.  Mostly cloudy, with a high near 70."
     }
    ]
   },
@@ -484,7 +484,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -591,48 +591,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 38,
     "cond": "Overcast",
-    "wind": "N 8 mph",
-    "humidity": 73,
-    "obs": "13 Nov 23:51 pm EST"
+    "wind": "W 6 mph",
+    "humidity": 70,
+    "obs": "14 Nov 04:51 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 40,
-     "text": "Mostly cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
-    },
-    {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
-     "temp": 48,
-     "text": "Partly sunny, with a high near 48. Northwest wind 10 to 15 mph. "
+     "temp": 49,
+     "text": "Increasing clouds, with a high near 49. Northwest wind 14 to 17 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 47,
-     "text": "Partly cloudy, with a steady temperature around 47. West wind around 14 mph. "
+     "temp": 44,
+     "text": "Mostly cloudy during the early evening, then gradual clearing, with a low around 44. West wind around 16 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 49,
-     "text": "Sunny, with a high near 49. Northwest wind 13 to 15 mph. "
+     "text": "Sunny, with a high near 49. Northwest wind 15 to 17 mph. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. Northwest wind 8 to 13 mph. "
+     "temp": 41,
+     "text": "Mostly clear, with a low around 41. Northwest wind 8 to 11 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 53,
-     "text": "Sunny, with a high near 53."
+     "temp": 52,
+     "text": "Sunny, with a high near 52. Northwest wind around 9 mph. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42."
     }
    ]
   },
@@ -648,7 +648,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -675,11 +675,7 @@
     "h": "Regulated gas price to rise again in December",
     "b": "The fourth straight monthly increase will add about €16 to December bills for households on the reference price; fixed-price contracts are unaffected.",
     "date": "2026-11-13",
-    "publisher": "The Local France",
-    "title": "French gas prices to rise for a fourth month in a row in December",
     "url": "https://www.thelocal.fr/20261113/french-gas-prices-to-rise-for-a-fourth-month-in-a-row-in-december",
-    "published": "2026-11-13T15:47:39Z",
-    "updated": "2026-11-13T15:47:40Z",
     "gathered": "2026-11-13T16:41:10Z"
    },
    {
@@ -693,11 +689,7 @@
     "h": "Protests planned across France on Saturday",
     "b": "Gilets Jaunes list 237 events nationwide, with 30,000 to 60,000 people expected in Paris across three events starting at République.",
     "date": "2026-11-13",
-    "publisher": "The Local France",
-    "title": "MAP: What to expect from France's latest day of protests on November 14th",
     "url": "https://www.thelocal.fr/20261113/map-what-to-expect-from-frances-latest-day-of-protests-on-november-14th",
-    "published": "2026-11-13T09:24:54Z",
-    "updated": "2026-11-13T09:24:55Z",
     "gathered": "2026-11-13T11:13:22Z"
    }
   ],
@@ -717,7 +709,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "goodnews": []
  },
  {
@@ -755,48 +747,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Mostly Cloudy",
-    "wind": "SE 4 mph",
-    "humidity": 92,
-    "obs": "13 Nov 08:53 PM PST"
+    "temp": 52,
+    "cond": "Partly Cloudy",
+    "wind": "S 10 mph",
+    "humidity": 76,
+    "obs": "14 Nov 02:35 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 52,
-     "text": "A 30 percent chance of rain, mainly between 3am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 7 to 10 mph. "
+     "text": "A slight chance of rain between 3am and 4am.  Mostly cloudy, with a steady temperature around 52. South wind around 10 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 57,
-     "text": "A 50 percent chance of rain, mainly between 9am and 4pm.  Mostly cloudy, with a high near 57. South wind around 9 mph. "
+     "text": "A 40 percent chance of rain, mainly between 9am and 4pm.  Partly sunny, with a high near 57. South wind around 9 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Rain.  Low around 50. South southeast wind 9 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly after 9pm.  Low around 50. South southeast wind 8 to 14 mph, with gusts as high as 23 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Sunday",
      "kind": "high",
-     "temp": 55,
-     "text": "Rain.  High near 55. South southwest wind around 11 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 54,
+     "text": "Rain, mainly after 2pm.  High near 54. South southwest wind around 11 mph, with gusts as high as 20 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 44. South wind around 7 mph. "
+     "temp": 45,
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 45. South southeast wind around 7 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 52,
-     "text": "A 50 percent chance of rain.  Partly sunny, with a high near 52."
+     "temp": 51,
+     "text": "Rain likely, mainly before 4pm.  Mostly cloudy, with a high near 51. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -812,7 +804,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T08:12:00Z",
+  "updatedAt": "2026-11-14T11:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
