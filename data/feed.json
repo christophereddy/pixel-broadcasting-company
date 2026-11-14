@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-14T14:11:00Z",
+ "updatedAt": "2026-11-14T17:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,20 @@
  },
  "world": [
   {
-   "h": "Fifth tanker reported hit around Hormuz in past 24 hours",
+   "h": "Zelenskyy says US raised NATO-for-Donbas idea",
+   "b": "Ukraine's president said US negotiators asked at Abu Dhabi talks whether Kyiv would pull troops from Donbas in exchange for NATO membership. He said no concrete offer exists and Ukraine won't withdraw.",
+   "date": "2026-11-14",
+   "publisher": "Al Jazeera",
+   "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
+   "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option",
+   "gathered": "2026-11-14T14:12:05Z"
+  },
+  {
+   "h": "Saudi coalition downs Houthi drones; 5 ships hit in Hormuz in 24 hours",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-14",
    "publisher": "Al Jazeera",
-   "title": "Fifth tanker reported hit in and around Strait of Hormuz in past 24 hours",
+   "title": "Saudi coalition downs Houthi drones; 5 ships hit in Hormuz in 24 hours",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/14/iran-war-live-fighting-grips-yemen-as-qatar-turkiye-sign-defence-deal",
    "gathered": "2026-11-14T11:12:15Z"
   },
@@ -35,8 +44,6 @@
    "h": "Trump, Xi and Putin to hold first three-way summit",
    "b": "The leaders will meet next week on the sidelines of the APEC summit in Shenzhen, with nuclear stockpiles on the agenda nine months after New START lapsed.",
    "date": "2026-11-14",
-   "publisher": "Al Jazeera",
-   "title": "Trump, Xi and Putin to hold first three-way summit in China",
    "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china",
    "gathered": "2026-11-14T05:22:05Z"
   },
@@ -89,7 +96,7 @@
    "b": "The tanker hit the paddlewheel boat American Heritage, carrying 129 passengers, on the Mississippi, partially submerging it as rescues got underway.",
    "date": "2026-11-13",
    "publisher": "PBS NewsHour",
-   "title": "Rescues operations underway in New Orleans after tanker hits river cruise boat",
+   "title": "All passengers and crew on New Orleans cruise ship survive crash with tanker on Mississippi River",
    "url": "https://www.pbs.org/newshour/nation/rescues-operations-underway-in-new-orleans-after-tanker-hits-river-cruise-boat",
    "published": "2026-11-13T21:00:35Z",
    "gathered": "2026-11-13T22:45:57Z"
@@ -390,6 +397,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "FAA meltdown strands Gov. Sherrill in Denver",
+   "b": "New Jersey Gov. Mikie Sherrill was among the travelers stranded by Friday's nationwide ground stop while at a Democratic conference in Denver. She's now expected back Saturday morning.",
+   "date": "2026-11-14",
+   "publisher": "Gothamist",
+   "title": "FAA meltdown strands NJ Gov. Sherrill at Dem conference in Denver",
+   "url": "https://gothamist.com/news/faa-meltdown-strands-nj-gov-sherrill-at-dem-conference-in-denver",
+   "published": "2026-11-14T13:27:00Z",
+   "gathered": "2026-11-14T14:12:05Z"
+  },
+  {
    "h": "Signal problems halt F and G trains in Friday rush",
    "b": "The MTA reported no F service between Brooklyn and Manhattan and no G service between Church Avenue and Bedford-Nostrand Avenues.",
    "date": "2026-11-13",
@@ -406,8 +423,7 @@
    "publisher": "Gothamist",
    "title": "Former NYC jails chief testifies about Adams adviser's push to hire friend’s daughter",
    "url": "https://gothamist.com/news/former-nyc-jails-chief-testifies-about-adams-advisers-push-to-hire-friends-daughter",
-   "published": "2026-11-13T21:23:00Z",
-   "updated": "2026-11-13T22:24:00Z",
+   "published": "2026-11-13T22:24:00Z",
    "gathered": "2026-11-13T23:15:41Z"
   },
   {
@@ -473,17 +489,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 38,
+   "temp": 40,
    "cond": "Overcast",
-   "humidity": 68,
-   "obs": "14 Nov 05:51 am EST"
+   "wind": "W 5 mph",
+   "humidity": 63,
+   "obs": "14 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 49,
-    "text": "Increasing clouds, with a high near 49. Northwest wind 14 to 17 mph. "
+    "text": "Partly sunny, with a high near 49. West wind 15 to 17 mph. "
    },
    {
     "name": "Tonight",
@@ -517,7 +534,18 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "Loew's Jersey Theatre reopens after $130M renovation",
+   "b": "The nearly century-old Jersey City movie palace near Journal Square is welcoming the public back after five years closed, with two sold-out concerts this weekend.",
+   "date": "2026-11-14",
+   "publisher": "Gothamist",
+   "title": "'A palace for the people': Historic, grand Loew's theater reopens in Jersey City",
+   "url": "https://gothamist.com/news/a-palace-for-the-people-historic-grand-loews-theater-reopens-in-jersey-city",
+   "published": "2026-11-14T12:22:58Z",
+   "gathered": "2026-11-14T14:12:05Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",
