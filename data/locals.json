@@ -42,15 +42,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "Partly Cloudy",
+    "temp": 43,
+    "cond": "Mostly Cloudy",
     "wind": "NW 12 mph",
     "humidity": 65,
-    "obs": "13 Nov 21:52 pm EST"
+    "obs": "13 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 37,
      "text": "Clear, with a low around 37. Northwest wind around 10 mph, with gusts as high as 15 mph. "
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,18 +131,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 38,
+    "temp": 36,
     "cond": "Partly Cloudy",
-    "wind": "NW 13 mph",
+    "wind": "NW 12 mph, gusts to 21 mph",
     "humidity": 76,
-    "obs": "13 Nov 21:54 pm EST"
+    "obs": "13 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 33,
-     "text": "Mostly cloudy, with a low around 33. Northwest wind around 6 mph. "
+     "text": "Mostly cloudy, with a low around 33. Northwest wind around 5 mph. "
     },
     {
      "name": "Saturday",
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -213,18 +213,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 38,
+    "temp": 37,
     "cond": "Mostly Cloudy",
-    "wind": "N 14 mph, gusts to 22 mph",
-    "humidity": 60,
-    "obs": "13 Nov 20:53 pm CST"
+    "wind": "N 10 mph",
+    "humidity": 65,
+    "obs": "13 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Rain and snow before 10pm, then rain between 10pm and 3am, then a chance of rain and snow after 3am.  Low around 34. North wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 80%. Little or no snow accumulation expected. "
+     "text": "Rain.  Low around 34. North wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -270,7 +270,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -324,11 +324,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 45,
     "cond": "Mostly Cloudy",
-    "wind": "S 6 mph",
-    "humidity": 44,
-    "obs": "13 Nov 18:58 pm MST"
+    "wind": "S 8 mph",
+    "humidity": 54,
+    "obs": "13 Nov 21:58 pm MST"
    },
    "periods": [
     {
@@ -381,7 +381,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -428,17 +428,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "wind": "N 1 mph",
-    "humidity": 91,
-    "obs": "13 Nov 07:25 PM PST"
+    "temp": 59,
+    "wind": "SE 2 mph",
+    "humidity": 94,
+    "obs": "13 Nov 09:10 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "Rain.  Low around 57. Southwest wind 5 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  Low around 57. West southwest wind 5 to 15 mph.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -484,7 +484,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -593,16 +593,16 @@
    "now": {
     "temp": 39,
     "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 79,
-    "obs": "13 Nov 21:51 pm EST"
+    "wind": "N 8 mph",
+    "humidity": 73,
+    "obs": "13 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 40,
-     "text": "Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
+     "text": "Mostly cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
     },
     {
      "name": "Saturday",
@@ -648,7 +648,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -717,7 +717,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "goodnews": []
  },
  {
@@ -755,18 +755,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 93,
-    "obs": "13 Nov 07:20 PM PST"
+    "temp": 51,
+    "cond": "Mostly Cloudy",
+    "wind": "SE 4 mph",
+    "humidity": 92,
+    "obs": "13 Nov 08:53 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "A 30 percent chance of rain, mainly between 3am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 6 to 10 mph. "
+     "text": "A 30 percent chance of rain, mainly between 3am and 5am.  Cloudy, then gradually becoming partly cloudy, with a steady temperature around 52. South wind 7 to 10 mph. "
     },
     {
      "name": "Saturday",
@@ -812,7 +812,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T05:12:00Z",
+  "updatedAt": "2026-11-14T08:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

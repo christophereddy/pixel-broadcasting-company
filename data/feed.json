@@ -1,11 +1,29 @@
 {
- "updatedAt": "2026-11-14T05:12:00Z",
+ "updatedAt": "2026-11-14T08:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "ICC halts probe into alleged crimes by US troops in Afghanistan",
+   "b": "Judges cited significant limits on the prosecution's ability to gather evidence; the prosecutor's office says it has appealed.",
+   "date": "2026-11-14",
+   "publisher": "Al Jazeera",
+   "title": "ICC stops probe into alleged crimes by US troops in Afghanistan",
+   "url": "https://www.aljazeera.com/news/2026/11/14/icc-stops-probe-into-alleged-crimes-by-us-troops-in-afghanistan",
+   "gathered": "2026-11-14T05:22:05Z"
+  },
+  {
+   "h": "Trump, Xi and Putin to hold first three-way summit",
+   "b": "The leaders will meet next week on the sidelines of the APEC summit in Shenzhen, with nuclear stockpiles on the agenda nine months after New START lapsed.",
+   "date": "2026-11-14",
+   "publisher": "Al Jazeera",
+   "title": "Trump, Xi and Putin to hold first three-way summit in China",
+   "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china",
+   "gathered": "2026-11-14T05:22:05Z"
+  },
   {
    "h": "UN watchdog urges Iran to reopen nuclear sites to inspectors",
    "b": "The IAEA called the lack of information about Iran's nuclear material a proliferation concern needing urgent action, citing an enrichment plant near Isfahan.",
@@ -49,8 +67,6 @@
    "h": "US measles deaths reach 10 this year",
    "b": "Two more deaths were reported as confirmed cases topped 5,400, more than double last year's total.",
    "date": "2026-11-14",
-   "publisher": "Al Jazeera",
-   "title": "Measles-associated deaths reach 10 in US after two more deaths reported",
    "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported",
    "gathered": "2026-11-14T03:28:02Z"
   },
@@ -72,15 +88,15 @@
    "gathered": "2026-11-13T22:45:57Z"
   },
   {
-   "h": "FAA lifts nationwide ground stop after hours-long halt",
-   "b": "The FAA lifted the ground stop Friday evening after a communications problem at regional air traffic control centers halted all departures for hours, though it was unclear when flights would fully resume.",
+   "h": "Duffy blames old tech for four-hour nationwide ground stop",
+   "b": "The FAA's rare ground stop grounded thousands of flights Friday; the transportation secretary said aging switches, routers and copper lines got overloaded.",
    "date": "2026-11-13",
-   "publisher": "WBEZ",
-   "title": "FAA lifts nationwide ground stop. O'Hare, Midway flights can resume after hours of delays, cancellations",
-   "url": "https://www.wbez.org/transportation/2026/11/13/all-departing-flights-grounded-nationwide-due-to-faa-order",
-   "published": "2026-11-13T21:48:59Z",
-   "updated": "2026-11-13T21:48:59Z",
-   "gathered": "2026-11-14T03:28:02Z"
+   "publisher": "LAist",
+   "title": "Old tech blamed for the ground stop that caused flight chaos: 'It got overloaded'",
+   "url": "https://laist.com/news/old-tech-blamed-for-the-ground-stop-that-caused-flight-chaos-it-got-overloaded",
+   "published": "2026-11-14T04:05:34Z",
+   "updated": "2026-11-14T04:05:34Z",
+   "gathered": "2026-11-14T05:22:05Z"
   },
   {
    "h": "Navy quietly fired commanders, drawing pushback from Congress",
@@ -102,11 +118,7 @@
    "h": "GOP attorneys general seek to revive Trump mail voting limits",
    "b": "Twelve Republican state attorneys general began appealing a judge's order that blocked a Postal Service plan, aiming at the 2028 election.",
    "date": "2026-11-13",
-   "publisher": "KUOW",
-   "title": "GOP state officials push to revive Trump's mail voting restrictions for 2028 election",
    "url": "https://www.kuow.org/npr-news/2026-11-13/gop-state-officials-push-to-revive-trumps-mail-voting-restrictions-for-2028-election",
-   "published": "2026-11-13T22:18:55Z",
-   "updated": "2026-11-13T22:31:56Z",
    "gathered": "2026-11-13T23:15:41Z"
   },
   {
@@ -152,6 +164,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Germany grants spy agencies sweeping new powers",
+   "b": "The reform lets the BND and BfV actively disrupt threats, such as deleting stolen data from an attacker's server, not just gather intelligence.",
+   "date": "2026-11-14",
+   "place": "Germany",
+   "tz": "Europe/Berlin",
+   "publisher": "Al Jazeera",
+   "title": "German spies granted sweeping new powers",
+   "url": "https://www.aljazeera.com/news/2026/11/14/german-spies-granted-sweeping-new-powers",
+   "gathered": "2026-11-14T05:22:05Z"
+  },
   {
    "h": "UK police open sex offence probe into David Walliams",
    "b": "The Metropolitan Police said it received allegations of non-recent serious sexual offences, separate from misconduct claims reported this week by ITV and The Guardian.",
@@ -218,8 +241,6 @@
    "date": "2026-11-13",
    "place": "Qatar",
    "tz": "Asia/Qatar",
-   "publisher": "Al Jazeera",
-   "title": "Turkiye and Qatar sign mutual defence agreement",
    "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement",
    "gathered": "2026-11-13T16:41:10Z"
   },
@@ -411,16 +432,16 @@
   "now": {
    "temp": 39,
    "cond": "Overcast",
-   "wind": "Calm",
-   "humidity": 79,
-   "obs": "13 Nov 21:51 pm EST"
+   "wind": "N 8 mph",
+   "humidity": 73,
+   "obs": "13 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 40,
-    "text": "Cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
+    "text": "Mostly cloudy, with a steady temperature around 40. Northwest wind around 10 mph. "
    },
    {
     "name": "Saturday",
