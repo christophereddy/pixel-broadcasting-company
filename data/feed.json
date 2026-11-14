@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-14T11:12:00Z",
+ "updatedAt": "2026-11-14T14:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Fifth tanker reported hit around Hormuz in past 24 hours",
+   "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
+   "date": "2026-11-14",
+   "publisher": "Al Jazeera",
+   "title": "Fifth tanker reported hit in and around Strait of Hormuz in past 24 hours",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/14/iran-war-live-fighting-grips-yemen-as-qatar-turkiye-sign-defence-deal",
+   "gathered": "2026-11-14T11:12:15Z"
+  },
   {
    "h": "UN says 25 seafarers killed around Hormuz since war began",
    "b": "The UN tracked 136 security incidents involving vessels in the region since March, as Iran reported three tankers hit mines Saturday.",
@@ -50,15 +59,6 @@
    "b": "The Revolutionary Guard called the strike a serious warning over what it said were aerial provocations and oil smuggling in the Strait of Hormuz; there was no immediate comment from Washington or Manama.",
    "date": "2026-11-13",
    "url": "https://www.aljazeera.com/news/2026/11/13/iran-says-it-struck-us-radar-site-in-bahrain",
-   "gathered": "2026-11-13T05:15:07Z"
-  },
-  {
-   "h": "Qatar, Turkiye ink defence deal; fighting rages in Yemen",
-   "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-13",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: Qatar, Turkiye ink defence deal; fighting rages in Yemen",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
    "gathered": "2026-11-13T05:15:07Z"
   },
   {
@@ -183,6 +183,17 @@
  ],
  "international": [
   {
+   "h": "South Sudan delays first national elections to February",
+   "b": "The election commission moved the vote from December 22 to February 11 without giving a reason, the latest of several delays.",
+   "date": "2026-11-14",
+   "place": "South Sudan",
+   "tz": "Africa/Juba",
+   "publisher": "Al Jazeera",
+   "title": "South Sudan postpones first-ever national elections until February",
+   "url": "https://www.aljazeera.com/news/2026/11/14/south-sudan-postpones-first-ever-national-elections-until-february",
+   "gathered": "2026-11-14T11:12:15Z"
+  },
+  {
    "h": "Philippine court orders arrest of jailed preacher wanted by US",
    "b": "The warrant for Quiboloy, whose extradition Washington requested in August, means the court must now hold hearings on whether to hand him over.",
    "date": "2026-11-14",
@@ -210,8 +221,6 @@
    "date": "2026-11-14",
    "place": "Germany",
    "tz": "Europe/Berlin",
-   "publisher": "Al Jazeera",
-   "title": "German spies granted sweeping new powers",
    "url": "https://www.aljazeera.com/news/2026/11/14/german-spies-granted-sweeping-new-powers",
    "gathered": "2026-11-14T05:22:05Z"
   },
@@ -466,9 +475,8 @@
   "now": {
    "temp": 38,
    "cond": "Overcast",
-   "wind": "W 6 mph",
-   "humidity": 70,
-   "obs": "14 Nov 04:51 am EST"
+   "humidity": 68,
+   "obs": "14 Nov 05:51 am EST"
   },
   "periods": [
    {
