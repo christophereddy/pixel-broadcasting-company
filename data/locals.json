@@ -42,15 +42,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
+    "temp": 51,
     "cond": "A Few Clouds",
-    "wind": "NW 16 mph",
-    "humidity": 71,
-    "obs": "14 Nov 08:52 am EST"
+    "wind": "N 14 mph",
+    "humidity": 39,
+    "obs": "14 Nov 11:52 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 55,
      "text": "Sunny, with a high near 55. North wind around 10 mph, with gusts as high as 20 mph. "
@@ -59,13 +59,13 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 32,
-     "text": "Widespread frost, mainly after 4am.  Otherwise, mostly clear, with a low around 32. Northwest wind around 5 mph. "
+     "text": "Widespread frost, mainly after 4am.  Otherwise, clear, with a low around 32. Northwest wind around 5 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 57,
-     "text": "Widespread frost before 8am.  Otherwise, mostly sunny, with a high near 57. Calm wind becoming northeast around 5 mph. "
+     "text": "Widespread frost before 8am.  Otherwise, mostly sunny, with a high near 57. East wind around 5 mph becoming calm. "
     },
     {
      "name": "Sunday Night",
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,18 +131,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
-    "cond": "Partly Cloudy",
-    "wind": "NW 10 mph",
-    "humidity": 65,
-    "obs": "14 Nov 08:54 am EST"
+    "temp": 43,
+    "cond": "Mostly Cloudy",
+    "wind": "W 10 mph",
+    "humidity": 53,
+    "obs": "14 Nov 11:54 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 47,
-     "text": "Increasing clouds, with a high near 47. Northwest wind around 8 mph. "
+     "text": "Mostly cloudy, with a high near 47. Northwest wind around 8 mph. "
     },
     {
      "name": "Tonight",
@@ -188,7 +188,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -199,6 +199,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "CPS faces possible midyear cuts without state money",
+    "b": "Chicago Public Schools has overspent its special education budget by $27 million as lawmakers open a veto session Tuesday, with low odds of more funding.",
+    "date": "2026-11-14",
+    "publisher": "WBEZ",
+    "title": "Without more state funding, CPS faces possible midyear as unexpected costs mount",
+    "url": "https://www.wbez.org/education/2026/11/14/without-more-state-funding-cps-faces-possible-midyear-as-unexpected-costs-mount",
+    "published": "2026-11-14T14:34:07Z",
+    "updated": "2026-11-14T14:34:07Z",
+    "gathered": "2026-11-14T17:16:05Z"
+   },
+   {
+    "h": "O'Hare, Midway cancellations continue after ground stop",
+    "b": "By about 9:30 a.m. Saturday, 153 O'Hare departures had been canceled and 114 delayed, with 25 cancellations at Midway.",
+    "date": "2026-11-14",
+    "publisher": "WBEZ",
+    "title": "Cancellations, delays at O'Hare, Midway continue Saturday in fallout from yesterday's ground stop",
+    "url": "https://www.wbez.org/transportation/2026/11/14/cancellations-delays-ohare-midway-continue-saturday-fallout-faa-ground-stop",
+    "published": "2026-11-14T15:51:31Z",
+    "updated": "2026-11-14T15:51:31Z",
+    "gathered": "2026-11-14T17:16:05Z"
+   },
    {
     "h": "Black Friday deals start earlier than ever",
     "b": "Retailers are launching holiday sales sooner to lure inflation-weary shoppers. A Deloitte survey says Chicago shoppers plan to spend $991 on retail goods this season.",
@@ -224,30 +246,30 @@
   ],
   "weather": {
    "now": {
-    "temp": 34,
+    "temp": 42,
     "cond": "A Few Clouds",
-    "wind": "NW 13 mph",
-    "humidity": 76,
-    "obs": "14 Nov 07:53 am CST"
+    "wind": "N 10 mph",
+    "humidity": 62,
+    "obs": "14 Nov 10:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 46,
-     "text": "Sunny, with a high near 46. North northwest wind 10 to 15 mph. "
+     "text": "Sunny, with a high near 46. North northwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Partly cloudy, with a low around 34. Northwest wind 5 to 10 mph. "
+     "text": "Mostly clear, with a low around 34. Northwest wind 5 to 10 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 49,
-     "text": "Mostly sunny, with a high near 49. Northwest wind around 5 mph becoming calm  in the afternoon. "
+     "text": "Sunny, with a high near 49. Northwest wind around 5 mph becoming calm  in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -281,7 +303,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -335,11 +357,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
-    "cond": "Fog",
-    "wind": "NW 6 mph",
-    "humidity": 95,
-    "obs": "14 Nov 05:58 am MST"
+    "temp": 40,
+    "cond": "Overcast",
+    "wind": "NE 5 mph",
+    "humidity": 89,
+    "obs": "14 Nov 09:58 am MST"
    },
    "periods": [
     {
@@ -392,7 +414,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -438,17 +460,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "wind": "NW 2 mph",
-    "humidity": 97,
-    "obs": "14 Nov 05:55 AM PST"
+    "temp": 64,
+    "wind": "E 1 mph",
+    "humidity": 82,
+    "obs": "14 Nov 09:10 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 70,
-     "text": "Isolated showers before 10am.  Partly sunny, then gradually becoming sunny, with a high near 70. Northwest wind around 5 mph becoming south southeast in the morning.  Chance of precipitation is 20%."
+     "text": "Isolated showers before 10am.  Partly sunny, then gradually becoming sunny, with a high near 70. West wind around 5 mph becoming south southeast in the morning.  Chance of precipitation is 20%."
     },
     {
      "name": "Tonight",
@@ -494,7 +516,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -517,6 +539,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Brooklyn power plant expansion fuels data center fears",
+    "b": "AlphaGen wants to expand two floating peaker plants near Sunset Park, prompting protests from environmentalists.",
+    "date": "2026-11-14",
+    "publisher": "Gothamist",
+    "title": "Expansion proposal for Brooklyn plants fuels data center fears",
+    "url": "https://gothamist.com/news/expansion-proposal-for-brooklyn-plants-fuels-data-center-fears",
+    "published": "2026-11-14T16:00:57Z",
+    "gathered": "2026-11-14T17:16:05Z"
+   },
+   {
+    "h": "Hochul calls on Duffy to resign over FAA meltdown",
+    "b": "The governor said the transportation secretary must resign or be removed after Friday's nationwide ground stop led to cancellations into Saturday.",
+    "date": "2026-11-14",
+    "publisher": "Gothamist",
+    "title": "Gov. Hochul calls on Duffy to resign after FAA meltdown grounds nation's flights",
+    "url": "https://gothamist.com/news/gov-hochul-calls-on-duffy-to-resign-after-faa-meltdown-grounds-nations-flights",
+    "published": "2026-11-14T16:25:45Z",
+    "gathered": "2026-11-14T17:16:05Z"
+   },
    {
     "h": "FAA meltdown strands Gov. Sherrill in Denver",
     "b": "New Jersey Gov. Mikie Sherrill was among the travelers stranded by Friday's nationwide ground stop while at a Democratic conference in Denver. She's now expected back Saturday morning.",
@@ -610,18 +652,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 43,
     "cond": "Overcast",
-    "wind": "W 5 mph",
-    "humidity": 63,
-    "obs": "14 Nov 08:51 am EST"
+    "wind": "W 8 mph, gusts to 17 mph",
+    "humidity": 58,
+    "obs": "14 Nov 11:51 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 49,
-     "text": "Partly sunny, with a high near 49. West wind 15 to 17 mph. "
+     "text": "Partly sunny, with a high near 49. West wind around 17 mph. "
     },
     {
      "name": "Tonight",
@@ -667,7 +709,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -691,14 +733,21 @@
   },
   "local": [
    {
+    "h": "Teddy Riner calls Macron's endorsement a 'poisoned chalice'",
+    "b": "The five-time Olympic judo champion, now running for president, said he is not the president's envoy.",
+    "date": "2026-11-14",
+    "publisher": "The Local France",
+    "title": "France presidential hopeful judoka distances himself from Macron",
+    "url": "https://www.thelocal.fr/20261114/france-presidential-hopeful-riner-distances-himself-from-macron",
+    "published": "2026-11-14T15:28:44Z",
+    "updated": "2026-11-14T15:42:15Z",
+    "gathered": "2026-11-14T17:16:05Z"
+   },
+   {
     "h": "Two Britons charged over €16m château fraud",
     "b": "The case centres on a château near Limoges the pair bought and promoted with brochures for a planned luxury golf development; both deny the charges.",
     "date": "2026-11-13",
-    "publisher": "The Local France",
-    "title": "Two Brits charged over €16m French château fraud",
     "url": "https://www.thelocal.fr/20261113/two-brits-charged-over-e16m-french-chateau-fraud",
-    "published": "2026-11-13T16:45:51Z",
-    "updated": "2026-11-13T16:45:52Z",
     "gathered": "2026-11-13T17:13:30Z"
    },
    {
@@ -739,7 +788,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "goodnews": []
  },
  {
@@ -753,11 +802,7 @@
     "h": "Judge rules Adams County broke state law by working with ICE",
     "b": "The ruling found the county violated the Keep Washington Working Act, which bars local police from holding people for immigration agents.",
     "date": "2026-11-13",
-    "publisher": "KUOW",
-    "title": "Judge rules Adams County violated WA state law by working with ICE",
     "url": "https://www.kuow.org/immigration/2026-11-13/judge-rules-adams-county-violated-wa-state-law-by-working-with-ice",
-    "published": "2026-11-14T02:12:29Z",
-    "updated": "2026-11-14T02:12:29Z",
     "gathered": "2026-11-14T03:28:02Z"
    },
    {
@@ -777,18 +822,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Clear",
+    "temp": 52,
+    "cond": "Partly Cloudy",
     "wind": "SE 8 mph",
-    "humidity": 92,
-    "obs": "14 Nov 05:53 AM PST"
+    "humidity": 76,
+    "obs": "14 Nov 09:00 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "A 40 percent chance of rain, mainly between 9am and 4pm.  Partly sunny, with a high near 57. South wind around 9 mph. "
+     "text": "A 40 percent chance of rain, mainly between 10am and 4pm.  Partly sunny, with a high near 57. South wind around 9 mph. "
     },
     {
      "name": "Tonight",
@@ -834,18 +879,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-14T17:12:00Z",
+  "updatedAt": "2026-11-14T20:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
     "h": "Quinault Nation celebrates first homes on higher ground",
     "b": "The tribe celebrated the first four modular homes of 59 planned in a new neighborhood above flood-prone Taholah.",
     "date": "2026-11-13",
-    "publisher": "KUOW",
-    "title": "Quinault tribe races against king tides to relocate coastal homes",
     "url": "https://www.kuow.org/environment/2026-11-13/quinault-tribe-races-against-king-tides-to-relocate-coastal-homes",
-    "published": "2026-11-14T01:03:25Z",
-    "updated": "2026-11-14T01:03:25Z",
     "gathered": "2026-11-14T03:28:02Z"
    }
   ]
