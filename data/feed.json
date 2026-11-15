@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T05:11:00Z",
+ "updatedAt": "2026-11-15T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,18 @@
  },
  "world": [
   {
+   "h": "Saudi coalition intercepts missiles and drones aimed at Riyadh",
+   "b": "The coalition said it destroyed two ballistic missiles and two suspected Houthi drones; Saudi authorities say at least 26 people have been killed in such attacks since September 23.",
+   "date": "2026-11-15",
+   "publisher": "Al Jazeera",
+   "title": "Saudi-led coalition intercepts two missiles, two drones in Riyadh",
+   "url": "https://www.aljazeera.com/news/2026/11/15/saudi-led-coalition-intercepts-two-missiles-two-drones-in-riyadh",
+   "gathered": "2026-11-15T05:11:54Z"
+  },
+  {
    "h": "Car blast near Damascus kills father and child",
    "b": "Syria's Internal Security Forces opened an investigation into the explosion in Jaramana, home to a large Druze community.",
    "date": "2026-11-14",
-   "publisher": "Al Jazeera",
-   "title": "Explosion near Syria’s capital kills father and child",
    "url": "https://www.aljazeera.com/news/2026/11/14/explosion-near-syrias-capital-kills-father-and-child",
    "gathered": "2026-11-15T02:03:06Z"
   },
@@ -109,6 +116,17 @@
  ],
  "national": [
   {
+   "h": "Judge pauses Trump's plan to redevelop DC public golf course",
+   "b": "A federal judge ordered a two-week delay on work at East Potomac Golf Links, which was due to close Sunday for 15 months.",
+   "date": "2026-11-15",
+   "publisher": "KUOW",
+   "title": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
+   "url": "https://www.kuow.org/npr-news/2026-11-14/judge-temporarily-blocks-trump-from-moving-ahead-on-washington-public-golf-course-redevelopment",
+   "published": "2026-11-15T04:28:45Z",
+   "updated": "2026-11-15T04:33:03Z",
+   "gathered": "2026-11-15T05:11:54Z"
+  },
+  {
    "h": "Florida city cancels St. Patrick's Day parade over anti-DEI law",
    "b": "Delray Beach says the new state law, which takes effect Jan. 1, bars it from putting on the nearly 60-year-old celebration. It will also drop Pride sponsorship.",
    "date": "2026-11-14",
@@ -178,6 +196,15 @@
  ],
  "politics": [
   {
+   "h": "NYC socialists urge Ocasio-Cortez to run for president",
+   "b": "The city's DSA chapter voted 291 to 123 to encourage a 2028 bid, short of a formal endorsement.",
+   "date": "2026-11-15",
+   "publisher": "Al Jazeera",
+   "title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
+   "url": "https://www.aljazeera.com/news/2026/11/15/new-york-democratic-socialists-urge-ocasio-cortez-to-run-for-us-president",
+   "gathered": "2026-11-15T05:11:54Z"
+  },
+  {
    "h": "Democrats find hope at post-midterms conference in Denver",
    "b": "After winning virtually every contested race, party strategists at the What's Next conference say they can see the outlines of a post-Trump era.",
    "date": "2026-11-14",
@@ -223,8 +250,6 @@
    "date": "2026-11-14",
    "place": "Bern, Switzerland",
    "tz": "Europe/Zurich",
-   "publisher": "Al Jazeera",
-   "title": "Hundreds of men march in Switzerland to protest violence against women",
    "url": "https://www.aljazeera.com/news/2026/11/15/hundreds-of-men-march-in-switzerland-to-protest-violence-against-women",
    "gathered": "2026-11-15T02:03:06Z"
   },
@@ -318,8 +343,6 @@
    "h": "Jeremiah Smith becomes Big Ten's all-time receiving leader",
    "b": "The Ohio State star passed Purdue's John Standeford, whose record stood for 23 years, with a 22-yard catch against Northwestern.",
    "date": "2026-11-14",
-   "publisher": "CBS Sports",
-   "title": "Another record for Jeremiah Smith: Ohio State star WR breaks Big Ten all-time receiving yards mark",
    "url": "https://www.cbssports.com/college-football/news/jeremiah-smith-ohio-state-big-ten-receiving-yards-record/",
    "gathered": "2026-11-14T21:38:31Z"
   },
@@ -399,18 +422,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 43,
-   "cond": "Partly Cloudy",
-   "wind": "W 9 mph, gusts to 17 mph",
+   "temp": 42,
+   "cond": "Fair",
+   "wind": "W 8 mph, gusts to 18 mph",
    "humidity": 68,
-   "obs": "14 Nov 20:51 pm EST"
+   "obs": "14 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 42,
-    "text": "Isolated showers before 10pm.  Mostly cloudy, then gradually becoming mostly clear, with a low around 42. Northwest wind 14 to 16 mph.  Chance of precipitation is 20%."
+    "text": "Partly cloudy, with a low around 42. Northwest wind around 16 mph. "
    },
    {
     "name": "Sunday",
