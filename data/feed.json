@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-15T17:11:00Z",
+ "updatedAt": "2026-11-15T20:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Zelenskyy says Starshield limits help Russian energy strikes",
+   "b": "Ukraine's president said speed restrictions on the terminals along the front let drone strikes through, as an Odesa hit left 41,000 households without power.",
+   "date": "2026-11-15",
+   "publisher": "Al Jazeera",
+   "title": "Starshield restrictions help Russia’s energy attacks on Ukraine: Zelenskyy",
+   "url": "https://www.aljazeera.com/news/2026/11/15/starshield-restrictions-help-russias-energy-attacks-on-ukraine-zelenskyy",
+   "gathered": "2026-11-15T17:20:31Z"
+  },
   {
    "h": "Bahrain accuses Iran of attacks to settle score with US",
    "b": "Bahrain's military said it intercepted several Iranian aerial attacks; the kingdom's Riffa Air Base is used by the US military.",
@@ -16,11 +25,11 @@
    "gathered": "2026-11-15T14:15:00Z"
   },
   {
-   "h": "Fears of 'miscalculation' as Iran ramps up strikes on US bases",
+   "h": "Yemen's army says it is 'repositioning' troops from Bab al-Mandeb",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-15",
    "publisher": "Al Jazeera",
-   "title": "Fears of ‘miscalculation’ as Iran ramps up strikes on US bases",
+   "title": "Yemen’s army says ‘repositioning’ troops from Bab al-Mandeb",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status",
    "gathered": "2026-11-15T09:46:04Z"
   },
@@ -49,8 +58,6 @@
    "h": "Israeli strike targets senior Hamas commander in Khan Younis",
    "b": "Israel's military said it targeted a senior Hamas commander in a drone strike Saturday that hit a tent sheltering displaced people. Gaza's health ministry says Israeli attacks killed 16 people in 48 hours.",
    "date": "2026-11-15",
-   "publisher": "Al Jazeera",
-   "title": "Israeli air strike kills senior Hamas commander in Gaza",
    "url": "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza",
    "gathered": "2026-11-15T02:03:06Z"
   },
@@ -68,10 +75,7 @@
    "h": "Zelenskyy warns US-floated security framework could help Putin",
    "b": "Ukraine's president said a new European security framework raised by the US could let Moscow weaken NATO and reshape borders.",
    "date": "2026-11-14",
-   "publisher": "PBS NewsHour",
-   "title": "Zelenskyy says a new European security framework floated by U.S. could benefit Putin",
    "url": "https://www.pbs.org/newshour/world/zelenskyy-says-a-new-european-security-framework-floated-by-u-s-could-benefit-putin",
-   "published": "2026-11-14T20:23:29Z",
    "gathered": "2026-11-14T21:38:31Z"
   },
   {
@@ -166,10 +170,7 @@
    "h": "New Orleans port sues to seize tanker that hit cruise boat",
    "b": "All 197 people aboard the American Heritage survived Friday's crash; a judge gave federal officials control of the tanker for now.",
    "date": "2026-11-14",
-   "publisher": "PBS NewsHour",
-   "title": "New Orleans port sues to get control of tanker that crashed into cruise ship on Mississippi River",
    "url": "https://www.pbs.org/newshour/nation/new-orleans-port-sues-to-get-control-of-tanker-that-crashed-into-cruise-ship-on-mississippi-river",
-   "published": "2026-11-14T20:09:17Z",
    "gathered": "2026-11-14T21:38:31Z"
   },
   {
@@ -183,10 +184,7 @@
    "h": "Flu season off to a very early start",
    "b": "The CDC says seven states reported high flu activity last week, up from two, with Louisiana hit hardest so far.",
    "date": "2026-11-14",
-   "publisher": "PBS NewsHour",
-   "title": "The U.S. flu season is off to a very early start. It's hitting the South and West now",
    "url": "https://www.pbs.org/newshour/health/the-u-s-flu-season-is-off-to-a-very-early-start-its-hitting-the-south-and-west-now",
-   "published": "2026-11-14T21:02:19Z",
    "gathered": "2026-11-14T21:38:31Z"
   },
   {
@@ -206,6 +204,16 @@
  ],
  "politics": [
   {
+   "h": "Trump breaks silence on ground stop, presses Congress for money",
+   "b": "The president said upgrading air traffic control shouldn't be done in 'drips and drabs' after a weekend of stranded travelers.",
+   "date": "2026-11-15",
+   "publisher": "PBS NewsHour",
+   "title": "Trump breaks silence on nationwide ground stop and demands more money from Congress",
+   "url": "https://www.pbs.org/newshour/politics/trump-breaks-silence-on-nationwide-ground-stop-and-demands-more-money-from-congress",
+   "published": "2026-11-15T16:32:43Z",
+   "gathered": "2026-11-15T17:20:31Z"
+  },
+  {
    "h": "Midterms end long GOP dominance in state legislatures",
    "b": "Democrats look likely to control 24 legislatures to Republicans' 22, flipping chambers in Pennsylvania, Texas and Georgia.",
    "date": "2026-11-15",
@@ -220,8 +228,6 @@
    "h": "NYC socialists urge Ocasio-Cortez to run for president",
    "b": "The city's DSA chapter voted 291 to 123 to encourage a 2028 bid, short of a formal endorsement.",
    "date": "2026-11-15",
-   "publisher": "Al Jazeera",
-   "title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
    "url": "https://www.aljazeera.com/news/2026/11/15/new-york-democratic-socialists-urge-ocasio-cortez-to-run-for-us-president",
    "gathered": "2026-11-15T05:11:54Z"
   },
@@ -229,10 +235,7 @@
    "h": "Democrats find hope at post-midterms conference in Denver",
    "b": "After winning virtually every contested race, party strategists at the What's Next conference say they can see the outlines of a post-Trump era.",
    "date": "2026-11-14",
-   "publisher": "PBS NewsHour",
-   "title": "Democrats try out a strange new emotion at post-midterms What's Next conference: hope",
    "url": "https://www.pbs.org/newshour/politics/democrats-try-out-a-strange-new-emotion-at-post-midterms-whats-next-conference-hope",
-   "published": "2026-11-14T18:19:50Z",
    "gathered": "2026-11-15T02:03:06Z"
   },
   {
@@ -255,6 +258,28 @@
  ],
  "international": [
   {
+   "h": "Record 1,488 migrants reach Canary Islands in a day",
+   "b": "Spain's maritime rescue service said most arrived on El Hierro from West Africa on Saturday, beating a 2020 record.",
+   "date": "2026-11-15",
+   "place": "El Hierro, Spain",
+   "tz": "Atlantic/Canary",
+   "publisher": "Al Jazeera",
+   "title": "Record number of migrants arrive in Spain’s Canary Islands",
+   "url": "https://www.aljazeera.com/news/2026/11/15/record-number-of-migrants-arrive-in-spains-canary-islands",
+   "gathered": "2026-11-15T17:20:31Z"
+  },
+  {
+   "h": "Thousands rally in Prague against state media funding plan",
+   "b": "Prime Minister Andrej Babis's government wants to replace the household broadcast fee with state budget funding; opponents say it threatens media freedom.",
+   "date": "2026-11-15",
+   "place": "Prague, Czech Republic",
+   "tz": "Europe/Prague",
+   "publisher": "Al Jazeera",
+   "title": "Thousands rally in Czech Republic against state media funding changes",
+   "url": "https://www.aljazeera.com/news/2026/11/15/thousands-rally-in-czech-republic-against-state-media-funding-changes",
+   "gathered": "2026-11-15T17:20:31Z"
+  },
+  {
    "h": "Cape Verde votes with first woman in presidential race",
    "b": "President Jose Maria Neves faces opposition candidate Joana Rosa, the first woman to run for president since independence in 1975.",
    "date": "2026-11-15",
@@ -271,8 +296,6 @@
    "date": "2026-11-15",
    "place": "Phnom Penh, Cambodia",
    "tz": "Asia/Phnom_Penh",
-   "publisher": "Al Jazeera",
-   "title": "Francophone summit opens in Cambodia amid Rwanda-DR Congo rift",
    "url": "https://www.aljazeera.com/news/2026/11/15/francophone-summit-opens-in-cambodia-amid-rwanda-dr-congo-rift",
    "gathered": "2026-11-15T09:46:04Z"
   },
@@ -426,6 +449,26 @@
  "goodnews": [],
  "local": [
   {
+   "h": "NY's biggest landfill leaks far more methane than thought",
+   "b": "A report found Seneca Meadows emitting as much as 90 times the federal limit; six of 16 landfills exceeded limits.",
+   "date": "2026-11-15",
+   "publisher": "Gothamist",
+   "title": "New York's biggest trash dump is releasing even more methane than thought",
+   "url": "https://gothamist.com/news/new-yorks-biggest-trash-dump-is-releasing-even-more-methane-than-thought",
+   "published": "2026-11-15T16:00:53Z",
+   "gathered": "2026-11-15T17:20:31Z"
+  },
+  {
+   "h": "NYPD fatally shoots van driver after suspected Coney Island kidnapping",
+   "b": "Police chased the van onto the Belt Parkway after 911 callers reported a woman screaming inside; she escaped unharmed.",
+   "date": "2026-11-15",
+   "publisher": "Gothamist",
+   "title": "NYPD fatally shoots driver on Belt Parkway following suspected kidnapping",
+   "url": "https://gothamist.com/news/nypd-fatally-shoot-man-after-report-of-possible-abduction-in-coney-island",
+   "published": "2026-11-15T15:20:00Z",
+   "gathered": "2026-11-15T17:20:31Z"
+  },
+  {
    "h": "New Yorkers weigh AI's threat and promise",
    "b": "At a Latino AI Summit in Manhattan, an Afro-Latina virtual assistant helped deliver the keynote.",
    "date": "2026-11-15",
@@ -480,18 +523,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 43,
-   "cond": "Fair",
-   "wind": "NW 9 mph",
-   "humidity": 63,
-   "obs": "15 Nov 08:51 am EST"
+   "temp": 49,
+   "cond": "Mostly Cloudy",
+   "wind": "W 6 mph",
+   "humidity": 46,
+   "obs": "15 Nov 11:51 am EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 51,
-    "text": "Sunny, with a high near 51. Northwest wind around 14 mph. "
+    "text": "Mostly sunny, with a high near 51. Northwest wind around 14 mph. "
    },
    {
     "name": "Tonight",

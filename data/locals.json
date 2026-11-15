@@ -8,15 +8,15 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "A Few Clouds",
-    "wind": "W 3 mph",
-    "humidity": 62,
-    "obs": "15 Nov 08:52 am EST"
+    "temp": 50,
+    "cond": "Partly Cloudy",
+    "wind": "E 5 mph",
+    "humidity": 39,
+    "obs": "15 Nov 11:52 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 58,
      "text": "Mostly sunny, with a high near 58. Calm wind becoming north around 5 mph. "
@@ -25,7 +25,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 36,
-     "text": "Patchy frost after 5am.  Otherwise, mostly clear, with a low around 36. Calm wind becoming east around 5 mph. "
+     "text": "Patchy frost after 5am.  Otherwise, mostly clear, with a low around 36. Calm wind becoming northeast around 5 mph. "
     },
     {
      "name": "Monday",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,18 +78,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 16 mph, gusts to 24 mph",
-    "humidity": 68,
-    "obs": "15 Nov 08:54 am EST"
+    "temp": 49,
+    "cond": "Partly Cloudy",
+    "wind": "NW 16 mph, gusts to 25 mph",
+    "humidity": 50,
+    "obs": "15 Nov 11:54 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 49,
-     "text": "Sunny, with a high near 49. Northwest wind 9 to 11 mph, with gusts as high as 22 mph. "
+     "text": "Mostly sunny, with a high near 49. Northwest wind 9 to 11 mph, with gusts as high as 22 mph. "
     },
     {
      "name": "Tonight",
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -204,11 +204,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
+    "temp": 48,
     "cond": "A Few Clouds",
     "wind": "Calm",
-    "humidity": 76,
-    "obs": "15 Nov 07:53 am CST"
+    "humidity": 48,
+    "obs": "15 Nov 10:53 am CST"
    },
    "periods": [
     {
@@ -220,26 +220,26 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 33,
-     "text": "Mostly clear, with a low around 33. Southeast wind around 5 mph becoming southwest in the evening. "
+     "temp": 34,
+     "text": "Mostly clear, with a low around 34. Southeast wind around 5 mph becoming southwest in the evening. "
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 51,
-     "text": "Sunny, with a high near 51. Southwest wind 5 to 10 mph. "
+     "temp": 52,
+     "text": "Sunny, with a high near 52. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 36,
-     "text": "Mostly clear, with a low around 36. South southwest wind 5 to 10 mph. "
+     "text": "Mostly clear, with a low around 36. South southwest wind around 10 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 54,
-     "text": "Sunny, with a high near 54. South southwest wind around 10 mph. "
+     "text": "Sunny, with a high near 54. Southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -261,7 +261,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -274,18 +274,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 39,
-    "cond": "Overcast",
-    "wind": "SW 6 mph",
-    "humidity": 85,
-    "obs": "15 Nov 04:58 am MST"
+    "temp": 42,
+    "cond": "Partly Cloudy",
+    "wind": "SE 7 mph",
+    "humidity": 86,
+    "obs": "15 Nov 08:58 am MST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Areas of dense fog before 10am.  Otherwise, sunny, with a high near 59. Calm wind becoming east southeast around 6 mph. "
+     "text": "Sunny, with a high near 59. Calm wind becoming east southeast around 6 mph. "
     },
     {
      "name": "Tonight",
@@ -331,7 +331,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -342,6 +342,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Phil Collins, Oasis, Wu-Tang Clan enter Rock Hall in LA",
+    "b": "The induction ceremony at the Peacock Theater also honored Queen Latifah, Sade, Iron Maiden and the late Luther Vandross.",
+    "date": "2026-11-15",
+    "publisher": "LAist",
+    "title": "Phil Collins cries, Billy Idol shouts and rappers romp at Rock & Roll Hall of Fame ceremony",
+    "url": "https://laist.com/news/arts-and-entertainment/phil-collins-cries-billy-idol-shouts-and-rappers-romp-at-rock-roll-hall-of-fame-ceremony",
+    "published": "2026-11-15T14:30:53Z",
+    "updated": "2026-11-15T14:30:53Z",
+    "gathered": "2026-11-15T17:20:31Z"
+   },
    {
     "h": "California voters send mixed signals on taxing the rich",
     "b": "Voters rejected a billionaire wealth tax and banned future wealth taxes, but made permanent a tax on high earners.",
@@ -367,17 +378,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "wind": "SE 1 mph",
-    "humidity": 71,
-    "obs": "15 Nov 06:10 AM PST"
+    "temp": 67,
+    "wind": "SE 2 mph",
+    "humidity": 60,
+    "obs": "15 Nov 09:10 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 71,
-     "text": "Mostly sunny, with a high near 71. East northeast wind around 5 mph becoming west in the afternoon. "
+     "text": "Partly sunny, with a high near 71. East northeast wind around 5 mph becoming west in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -423,7 +434,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -434,7 +445,7 @@
     "title": "We’ve got baby turtles! First sea turtle eggs laid on SoCal beaches have hatched",
     "url": "https://laist.com/news/climate-environment/weve-got-baby-turtles-rare-sea-turtle-eggs-laid-on-socal-beaches-have-hatched",
     "published": "2026-11-14T17:24:00Z",
-    "updated": "2026-11-14T19:53:52Z",
+    "updated": "2026-11-15T15:58:13Z",
     "gathered": "2026-11-14T21:38:31Z"
    }
   ]
@@ -446,6 +457,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NY's biggest landfill leaks far more methane than thought",
+    "b": "A report found Seneca Meadows emitting as much as 90 times the federal limit; six of 16 landfills exceeded limits.",
+    "date": "2026-11-15",
+    "publisher": "Gothamist",
+    "title": "New York's biggest trash dump is releasing even more methane than thought",
+    "url": "https://gothamist.com/news/new-yorks-biggest-trash-dump-is-releasing-even-more-methane-than-thought",
+    "published": "2026-11-15T16:00:53Z",
+    "gathered": "2026-11-15T17:20:31Z"
+   },
+   {
+    "h": "NYPD fatally shoots van driver after suspected Coney Island kidnapping",
+    "b": "Police chased the van onto the Belt Parkway after 911 callers reported a woman screaming inside; she escaped unharmed.",
+    "date": "2026-11-15",
+    "publisher": "Gothamist",
+    "title": "NYPD fatally shoots driver on Belt Parkway following suspected kidnapping",
+    "url": "https://gothamist.com/news/nypd-fatally-shoot-man-after-report-of-possible-abduction-in-coney-island",
+    "published": "2026-11-15T15:20:00Z",
+    "gathered": "2026-11-15T17:20:31Z"
+   },
    {
     "h": "New Yorkers weigh AI's threat and promise",
     "b": "At a Latino AI Summit in Manhattan, an Afro-Latina virtual assistant helped deliver the keynote.",
@@ -501,18 +532,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Fair",
-    "wind": "NW 9 mph",
-    "humidity": 63,
-    "obs": "15 Nov 08:51 am EST"
+    "temp": 49,
+    "cond": "Mostly Cloudy",
+    "wind": "W 6 mph",
+    "humidity": 46,
+    "obs": "15 Nov 11:51 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 51,
-     "text": "Sunny, with a high near 51. Northwest wind around 14 mph. "
+     "text": "Mostly sunny, with a high near 51. Northwest wind around 14 mph. "
     },
     {
      "name": "Tonight",
@@ -558,7 +589,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -616,7 +647,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "goodnews": []
  },
  {
@@ -628,18 +659,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 52,
     "cond": "Overcast",
-    "wind": "S 12 mph",
-    "humidity": 76,
-    "obs": "15 Nov 06:05 AM PST"
+    "wind": "S 6 mph",
+    "humidity": 87,
+    "obs": "15 Nov 08:55 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 55,
-     "text": "Rain, mainly before 4pm.  High near 55. South wind 8 to 11 mph, with gusts as high as 22 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain, mainly before 4pm.  High near 55. South wind 8 to 11 mph, with gusts as high as 20 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -685,7 +716,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T17:11:00Z",
+  "updatedAt": "2026-11-15T20:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
