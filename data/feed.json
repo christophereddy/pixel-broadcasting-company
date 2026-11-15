@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T14:11:00Z",
+ "updatedAt": "2026-11-15T17:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,20 @@
  },
  "world": [
   {
-   "h": "Iran warns Gulf states against US attack support as it steps up strikes",
+   "h": "Bahrain accuses Iran of attacks to settle score with US",
+   "b": "Bahrain's military said it intercepted several Iranian aerial attacks; the kingdom's Riffa Air Base is used by the US military.",
+   "date": "2026-11-15",
+   "publisher": "Al Jazeera",
+   "title": "Bahrain accuses Iran of attacking its territory to ‘settle’ score with US",
+   "url": "https://www.aljazeera.com/news/2026/11/15/bahrain-accuses-iran-of-attacking-its-territory-to-settle-score-with-us",
+   "gathered": "2026-11-15T14:15:00Z"
+  },
+  {
+   "h": "Fears of 'miscalculation' as Iran ramps up strikes on US bases",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-15",
    "publisher": "Al Jazeera",
-   "title": "Iran warns Gulf states against US attack support as it steps up strikes",
+   "title": "Fears of ‘miscalculation’ as Iran ramps up strikes on US bases",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status",
    "gathered": "2026-11-15T09:46:04Z"
   },
@@ -19,8 +28,6 @@
    "h": "Saudi coalition intercepts missiles and drones aimed at Riyadh",
    "b": "The coalition said it destroyed two ballistic missiles and two suspected Houthi drones; Saudi authorities say at least 26 people have been killed in such attacks since September 23.",
    "date": "2026-11-15",
-   "publisher": "Al Jazeera",
-   "title": "Saudi-led coalition intercepts suspected Houthi missiles and drones",
    "url": "https://www.aljazeera.com/news/2026/11/15/saudi-led-coalition-intercepts-two-missiles-two-drones-in-riyadh",
    "gathered": "2026-11-15T05:11:54Z"
   },
@@ -419,6 +426,16 @@
  "goodnews": [],
  "local": [
   {
+   "h": "New Yorkers weigh AI's threat and promise",
+   "b": "At a Latino AI Summit in Manhattan, an Afro-Latina virtual assistant helped deliver the keynote.",
+   "date": "2026-11-15",
+   "publisher": "Gothamist",
+   "title": "Some in NY fret about being hit by the AI bus. Others are trying to board it.",
+   "url": "https://gothamist.com/news/some-in-ny-fret-about-being-hit-by-the-ai-bus-others-are-trying-to-board-it",
+   "published": "2026-11-15T12:00:43Z",
+   "gathered": "2026-11-15T14:15:00Z"
+  },
+  {
    "h": "Tech problems stall specialized high school test",
    "b": "The DOE will reschedule the SHSAT for students who couldn't finish after vendor Pearson reported technical issues; testing continues Nov. 15.",
    "date": "2026-11-14",
@@ -463,11 +480,11 @@
  ],
  "weather": {
   "now": {
-   "temp": 41,
+   "temp": 43,
    "cond": "Fair",
    "wind": "NW 9 mph",
-   "humidity": 70,
-   "obs": "15 Nov 05:51 am EST"
+   "humidity": 63,
+   "obs": "15 Nov 08:51 am EST"
   },
   "periods": [
    {
