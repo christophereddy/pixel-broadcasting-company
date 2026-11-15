@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-15T11:11:00Z",
+ "updatedAt": "2026-11-15T14:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,8 +35,6 @@
    "h": "Netanyahu renews call for unity government with Eisenkot",
    "b": "Neither bloc won a majority in the Oct. 27 election; Eisenkot dismissed the appeal as a ploy, saying Netanyahu knows he lost.",
    "date": "2026-11-14",
-   "publisher": "Al Jazeera",
-   "title": "Netanyahu says only a unity government can guarantee Israel’s security",
    "url": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security",
    "gathered": "2026-11-15T02:03:06Z"
   },
@@ -114,6 +112,17 @@
  ],
  "national": [
   {
+   "h": "New Mexico's free childcare for all, one year in",
+   "b": "Parents call universal childcare life-changing, but the state lacks the capacity to meet demand, leaving long waitlists.",
+   "date": "2026-11-15",
+   "publisher": "KUOW",
+   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+   "url": "https://www.kuow.org/npr-news/2026-11-15/new-mexico-wanted-free-childcare-for-all-this-is-whats-worked-and-what-hasnt",
+   "published": "2026-11-15T10:00:00Z",
+   "updated": "2026-11-15T10:38:02Z",
+   "gathered": "2026-11-15T11:12:07Z"
+  },
+  {
    "h": "Judge pauses Trump's plan to redevelop DC public golf course",
    "b": "A federal judge ordered a two-week delay on work at East Potomac Golf Links, which was due to close Sunday for 15 months.",
    "date": "2026-11-15",
@@ -177,11 +186,7 @@
    "h": "Duffy ties ground stop to contractor's line upgrade",
    "b": "The transportation secretary said Friday's nationwide halt began when contractor L3Harris hit an error while swapping copper for fiber at a remote FAA site. The FAA is still investigating the exact cause.",
    "date": "2026-11-14",
-   "publisher": "KUOW",
-   "title": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
    "url": "https://www.kuow.org/npr-news/2026-11-14/faa-blames-fridays-ground-stop-on-equipment-issue-during-telecoms-network-upgrade",
-   "published": "2026-11-14T16:53:04Z",
-   "updated": "2026-11-14T16:59:33Z",
    "gathered": "2026-11-14T17:16:05Z"
   },
   {
@@ -193,6 +198,17 @@
   }
  ],
  "politics": [
+  {
+   "h": "Midterms end long GOP dominance in state legislatures",
+   "b": "Democrats look likely to control 24 legislatures to Republicans' 22, flipping chambers in Pennsylvania, Texas and Georgia.",
+   "date": "2026-11-15",
+   "publisher": "KUOW",
+   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
+   "url": "https://www.kuow.org/npr-news/2026-11-15/midterm-voters-ended-the-long-running-gop-dominance-in-state-legislatures",
+   "published": "2026-11-15T10:00:00Z",
+   "updated": "2026-11-15T10:37:39Z",
+   "gathered": "2026-11-15T11:12:07Z"
+  },
   {
    "h": "NYC socialists urge Ocasio-Cortez to run for president",
    "b": "The city's DSA chapter voted 291 to 123 to encourage a 2028 bid, short of a formal endorsement.",
@@ -231,6 +247,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Cape Verde votes with first woman in presidential race",
+   "b": "President Jose Maria Neves faces opposition candidate Joana Rosa, the first woman to run for president since independence in 1975.",
+   "date": "2026-11-15",
+   "place": "Praia, Cape Verde",
+   "tz": "Atlantic/Cape_Verde",
+   "publisher": "Al Jazeera",
+   "title": "Polls open in Cape Verde in race with first female presidential candidate",
+   "url": "https://www.aljazeera.com/news/2026/11/15/polls-open-in-cape-verde-in-race-with-first-female-presidential-candidate",
+   "gathered": "2026-11-15T11:12:07Z"
+  },
   {
    "h": "Francophone summit opens in Cambodia amid Rwanda-DR Congo rift",
    "b": "Congo has threatened to leave the French-speaking group if Rwanda's Louise Mushikiwabo wins a third term as secretary-general on Monday.",
@@ -438,9 +465,9 @@
   "now": {
    "temp": 41,
    "cond": "Fair",
-   "wind": "W 6 mph",
+   "wind": "NW 9 mph",
    "humidity": 70,
-   "obs": "15 Nov 03:51 am EST"
+   "obs": "15 Nov 05:51 am EST"
   },
   "periods": [
    {

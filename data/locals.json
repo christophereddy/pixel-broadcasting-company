@@ -8,21 +8,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 34,
-    "cond": "Fair",
+    "temp": 33,
+    "cond": "A Few Clouds",
     "wind": "NW 5 mph",
-    "humidity": 79,
-    "obs": "15 Nov 03:52 am EST"
+    "humidity": 82,
+    "obs": "15 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 58,
      "text": "Widespread frost, mainly before 8am.  Otherwise, sunny, with a high near 58. Calm wind becoming north around 5 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 36,
      "text": "Patchy frost after 5am.  Otherwise, mostly clear, with a low around 36. Calm wind becoming east around 5 mph. "
@@ -43,7 +43,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 62,
-     "text": "Sunny, with a high near 62."
+     "text": "Sunny, with a high near 62. East wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,11 +78,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 38,
-    "cond": "Mostly Cloudy",
-    "wind": "W 10 mph",
-    "humidity": 76,
-    "obs": "15 Nov 03:54 am EST"
+    "temp": 37,
+    "cond": "A Few Clouds",
+    "wind": "W 13 mph",
+    "humidity": 79,
+    "obs": "15 Nov 05:54 am EST"
    },
    "periods": [
     {
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -146,6 +146,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "11 Chicago ward races are uncontested in February",
+    "b": "Ten incumbents are guaranteed reelection on Feb. 23 even as the City Council grows more independent from Mayor Johnson.",
+    "date": "2026-11-15",
+    "publisher": "WBEZ",
+    "title": "Why is Chicago alderperson the job few want? In February, 11 ward races will be uncontested",
+    "url": "https://www.wbez.org/government-politics/elections/2026/11/15/chicago-aldermanic-election-2027-11-wards-uncontested-races",
+    "published": "2026-11-15T11:00:00Z",
+    "updated": "2026-11-15T11:00:09Z",
+    "gathered": "2026-11-15T11:12:07Z"
+   },
+   {
+    "h": "Chicago police rarely seize guns from domestic abusers",
+    "b": "A WBEZ review finds police often fail to carry out gun warrants issued under Karina's Law, which took effect last year.",
+    "date": "2026-11-15",
+    "publisher": "WBEZ",
+    "title": "Chicago police rarely seize guns from domestic abusers, despite state law",
+    "url": "https://www.wbez.org/criminal-justice/2026/11/15/domestic-violence-karinas-law-chicago",
+    "published": "2026-11-15T11:00:00Z",
+    "updated": "2026-11-15T11:00:04Z",
+    "gathered": "2026-11-15T11:12:07Z"
+   },
    {
     "h": "CPS faces possible midyear cuts without state money",
     "b": "Chicago Public Schools has overspent its special education budget by $27 million as lawmakers open a veto session Tuesday, with low odds of more funding.",
@@ -182,27 +204,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 34,
-    "cond": "A Few Clouds",
+    "temp": 32,
+    "cond": "Fair",
     "wind": "W 3 mph",
-    "humidity": 79,
-    "obs": "15 Nov 02:53 am CST"
+    "humidity": 82,
+    "obs": "15 Nov 04:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 34,
-     "text": "Partly cloudy, with a low around 34. Northwest wind around 5 mph. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 49,
      "text": "Sunny, with a high near 49. Northwest wind around 5 mph becoming east northeast in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 33,
      "text": "Mostly clear, with a low around 33. Calm wind becoming southwest around 5 mph after midnight. "
@@ -223,7 +239,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 54,
-     "text": "Sunny, with a high near 54."
+     "text": "Sunny, with a high near 54. South southwest wind around 10 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 38,
+     "text": "Mostly clear, with a low around 38."
     }
    ]
   },
@@ -239,7 +261,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -253,26 +275,20 @@
   "weather": {
    "now": {
     "temp": 41,
-    "cond": "Mostly Cloudy",
-    "wind": "S 3 mph",
-    "humidity": 82,
-    "obs": "14 Nov 23:58 pm MST"
+    "cond": "Overcast",
+    "wind": "SW 3 mph",
+    "humidity": 84,
+    "obs": "15 Nov 02:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 37,
-     "text": "Patchy dense fog.  Otherwise, mostly cloudy, with a low around 37. Calm wind. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 59,
      "text": "Areas of dense fog before 10am.  Otherwise, sunny, with a high near 59. Calm wind becoming east southeast around 6 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 34,
      "text": "Mostly clear, with a low around 34. Light and variable wind. "
@@ -293,7 +309,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly sunny, with a high near 65."
+     "text": "Mostly sunny, with a high near 65. Calm wind becoming east around 6 mph in the afternoon. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 39,
+     "text": "Mostly clear, with a low around 39."
     }
    ]
   },
@@ -309,7 +331,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -334,18 +356,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "wind": "N 3 mph",
-    "humidity": 73,
-    "obs": "15 Nov 01:40 AM PST"
+    "temp": 59,
+    "wind": "Calm",
+    "humidity": 79,
+    "obs": "15 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. Northeast wind around 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -375,6 +391,12 @@
      "kind": "high",
      "temp": 68,
      "text": "Sunny, with a high near 68."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 49,
+     "text": "Mostly clear, with a low around 49."
     }
    ]
   },
@@ -390,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -460,9 +482,9 @@
    "now": {
     "temp": 41,
     "cond": "Fair",
-    "wind": "W 6 mph",
+    "wind": "NW 9 mph",
     "humidity": 70,
-    "obs": "15 Nov 03:51 am EST"
+    "obs": "15 Nov 05:51 am EST"
    },
    "periods": [
     {
@@ -515,7 +537,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -573,7 +595,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "goodnews": []
  },
  {
@@ -585,19 +607,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 52,
-    "cond": "Rain",
-    "wind": "SE 9 mph",
-    "humidity": 87,
-    "obs": "15 Nov 01:35 AM PST"
+    "temp": 54,
+    "cond": "Overcast",
+    "wind": "SE 13 mph",
+    "humidity": 77,
+    "obs": "15 Nov 02:53 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a steady temperature around 54. South wind around 15 mph, with gusts as high as 26 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -627,6 +643,12 @@
      "kind": "high",
      "temp": 50,
      "text": "Mostly sunny, with a high near 50."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 41,
+     "text": "Partly cloudy, with a low around 41."
     }
    ]
   },
@@ -642,7 +664,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T11:11:00Z",
+  "updatedAt": "2026-11-15T14:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
