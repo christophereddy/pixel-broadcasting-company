@@ -7,6 +7,17 @@
   },
   "local": [
    {
+    "h": "AAA forecasts 81.5 million Thanksgiving travelers",
+    "b": "That is a 0.1% decline from last year's forecast.",
+    "date": "2026-11-16",
+    "publisher": "WABE",
+    "title": "AAA forecasts another busy Thanksgiving travel week",
+    "url": "https://www.wabe.org/aaa-forecasts-another-busy-but-not-quite-as-busy-thanksgiving-travel-week/",
+    "published": "2026-11-16T18:36:49Z",
+    "updated": "2026-11-16T19:26:03Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   },
+   {
     "h": "Flight disruptions from ground stop expected through Monday",
     "b": "Atlanta and Dallas-Fort Worth had the most delays Sunday, with more than 250 flights each.",
     "date": "2026-11-16",
@@ -31,19 +42,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 58,
     "cond": "Partly Cloudy",
-    "wind": "NE 8 mph",
-    "humidity": 47,
-    "obs": "16 Nov 11:52 am EST"
+    "wind": "SE 8 mph",
+    "humidity": 39,
+    "obs": "16 Nov 14:52 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 62,
-     "text": "Mostly sunny, with a high near 62. East wind around 10 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -53,26 +58,32 @@
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 64,
-     "text": "Sunny, with a high near 64. East wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 62,
+     "text": "Sunny, with a high near 62. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 42,
-     "text": "Mostly clear, with a low around 42. East wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43. East wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. East wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly clear, with a low around 45."
+     "temp": 48,
+     "text": "Mostly clear, with a low around 48."
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Mostly sunny, with a high near 67."
     }
    ]
   },
@@ -88,9 +99,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "atlanta-ga",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Indigo Girls to perform at the 100th Macy's parade",
+    "b": "The Atlanta duo will appear in the Thanksgiving parade.",
+    "date": "2026-11-16",
+    "publisher": "WABE",
+    "title": "Indigo Girls to perform in Macy's Thanksgiving Day Parade",
+    "url": "https://www.wabe.org/indigo-girls-to-perform-in-macys-thanksgiving-day-parade/",
+    "published": "2026-11-16T18:14:00Z",
+    "updated": "2026-11-16T19:30:33Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   }
+  ]
  },
  {
   "location": {
@@ -103,11 +126,7 @@
     "h": "Lindsay Clancy to face new trial in spring",
     "b": "Her retrial in the deaths of her three children is set for March 29 after September's mistrial, with no change to the charges.",
     "date": "2026-11-16",
-    "publisher": "KUOW",
-    "title": "Lindsay Clancy to face a new trial in spring of 2027 over children's killing",
     "url": "https://www.kuow.org/npr-news/2026-11-16/lindsay-clancy-to-face-a-new-trial-in-spring-of-2027-over-childrens-killing",
-    "published": "2026-11-16T16:28:19Z",
-    "updated": "2026-11-16T16:46:18Z",
     "gathered": "2026-11-16T17:13:08Z"
    },
    {
@@ -120,19 +139,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 52,
     "cond": "A Few Clouds",
-    "wind": "NW 9 mph",
-    "humidity": 46,
-    "obs": "16 Nov 11:54 am EST"
+    "wind": "NW 7 mph",
+    "humidity": 47,
+    "obs": "16 Nov 14:54 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 50,
-     "text": "Sunny, with a high near 50. Northwest wind 3 to 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -154,14 +167,20 @@
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. West wind 6 to 8 mph. "
+     "temp": 61,
+     "text": "Sunny, with a high near 61. West wind 6 to 8 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40. West wind 3 to 5 mph. "
+     "text": "Mostly clear, with a low around 40. West wind 3 to 6 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Sunny, with a high near 62. Southwest wind 3 to 5 mph. "
     }
    ]
   },
@@ -177,7 +196,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -189,11 +208,22 @@
   },
   "local": [
    {
+    "h": "Judge vacates Anthony Garrett's conviction in 1992 killing",
+    "b": "The judge found Garrett's confession in the murder of 7-year-old Dantrell Davis was likely tortured.",
+    "date": "2026-11-16",
+    "publisher": "WBEZ",
+    "title": "Judge tosses man’s murder conviction amid claims of torture led by CPD detective tied to Gitmo abuses",
+    "url": "https://www.wbez.org/criminal-justice/2026/11/16/richard-zuley-anthony-garrett-dantrell-davis-torture-guantanamo-bay",
+    "published": "2026-11-16T18:35:06Z",
+    "updated": "2026-11-16T18:35:06Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   },
+   {
     "h": "Mavis Staples, Michelle Obama among Chicago Grammy nominees",
     "b": "Staples' latest album earned several nominations, bringing her total to 19.",
     "date": "2026-11-16",
     "publisher": "WBEZ",
-    "title": "Chicago musicians from Mavis Staples to Kurt Elling to Ye land nods on 2027 Grammy Awards list",
+    "title": "Chicago musicians from Mavis Staples to Kurt Elling to Ye land nods for 2027 Grammys",
     "url": "https://www.wbez.org/music/2026/11/16/2027-grammy-awards-list-chicago-raye-rosalia-mavis-staples-ye-j-ivy",
     "published": "2026-11-16T16:19:30Z",
     "updated": "2026-11-16T16:19:30Z",
@@ -203,22 +233,14 @@
     "h": "Groups petition EPA for stricter nitrate limits in drinking water",
     "b": "Advocates say fertilizer runoff makes Illinois a hot spot for nitrate pollution.",
     "date": "2026-11-16",
-    "publisher": "WBEZ",
-    "title": "Public health advocates call for stricter nitrate standards in drinking water",
     "url": "https://www.wbez.org/environment/2026/11/16/public-health-petition-epa-nitrate-standards",
-    "published": "2026-11-16T11:35:00Z",
-    "updated": "2026-11-16T11:35:00Z",
     "gathered": "2026-11-16T14:18:13Z"
    },
    {
     "h": "CPS overtime costs tripled despite 2022 warning",
     "b": "The inspector general found overtime peaked at $150 million in 2024 before dropping to $97 million in 2025.",
     "date": "2026-11-16",
-    "publisher": "WBEZ",
-    "title": "CPS overtime pay costs skyrocketed despite a 2022 warning to rein in spending",
     "url": "https://www.wbez.org/education/2026/11/16/cps-overtime-pay-costs-skyrocketed-despite-a-2022-warning-to-rein-in-spending",
-    "published": "2026-11-16T11:30:00Z",
-    "updated": "2026-11-16T11:30:21Z",
     "gathered": "2026-11-16T14:18:13Z"
    },
    {
@@ -236,11 +258,7 @@
     "h": "11 Chicago ward races are uncontested in February",
     "b": "Ten incumbents are guaranteed reelection on Feb. 23 even as the City Council grows more independent from Mayor Johnson.",
     "date": "2026-11-15",
-    "publisher": "WBEZ",
-    "title": "Why is Chicago alderperson the job few want? In February, 11 ward races will be uncontested",
     "url": "https://www.wbez.org/government-politics/elections/2026/11/15/chicago-aldermanic-election-2027-11-wards-uncontested-races",
-    "published": "2026-11-15T11:00:00Z",
-    "updated": "2026-11-15T11:00:09Z",
     "gathered": "2026-11-15T11:12:07Z"
    },
    {
@@ -253,18 +271,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Mostly Cloudy",
-    "wind": "SW 10 mph",
-    "humidity": 50,
-    "obs": "16 Nov 10:53 am CST"
+    "temp": 53,
+    "cond": "A Few Clouds",
+    "wind": "SW 9 mph",
+    "humidity": 45,
+    "obs": "16 Nov 13:53 pm CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 53,
-     "text": "Sunny, with a high near 53. Southwest wind around 10 mph. "
+     "text": "Mostly sunny, with a high near 53. South southwest wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -310,18 +328,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "A perfect Bridgeport bike ride",
     "b": "A 3.3-mile route starting at Palmisano Park, a former quarry with one of the best skyline views.",
     "date": "2026-11-15",
-    "publisher": "WBEZ",
-    "title": "The perfect Bridgeport bike ride",
     "url": "https://www.wbez.org/2026/11/15/perfect-bridgeport-bike-ride",
-    "published": "2026-11-15T19:10:43Z",
-    "updated": "2026-11-15T19:12:28Z",
     "gathered": "2026-11-15T21:59:04Z"
    }
   ]
@@ -346,42 +360,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
-    "wind": "SW 8 mph",
-    "humidity": 44,
-    "obs": "16 Nov 08:58 am MST"
+    "temp": 65,
+    "cond": "Mostly Cloudy",
+    "wind": "SE 3 mph",
+    "humidity": 19,
+    "obs": "16 Nov 12:58 pm MST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "Mostly sunny, with a high near 64. Calm wind becoming northeast around 5 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 64. Northeast wind 3 to 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 36,
-     "text": "Partly cloudy, with a low around 36. Light and variable wind. "
+     "text": "Mostly cloudy, with a low around 36. Light and variable wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Calm wind becoming south southwest 5 to 8 mph in the afternoon. Winds could gust as high as 17 mph. "
+     "text": "Mostly sunny, with a high near 66. Light and variable wind becoming south southwest around 6 mph in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Mostly clear, with a low around 40. South southwest wind 9 to 13 mph, with gusts as high as 22 mph. "
+     "temp": 38,
+     "text": "Mostly clear, with a low around 38. South southwest wind 10 to 13 mph, with gusts as high as 23 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. West southwest wind 11 to 14 mph becoming northwest in the afternoon. Winds could gust as high as 23 mph. "
+     "temp": 57,
+     "text": "Sunny, with a high near 57. Southwest wind 8 to 13 mph becoming northwest in the afternoon. Winds could gust as high as 21 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -403,7 +417,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -415,6 +429,17 @@
   },
   "local": [
    {
+    "h": "California donates 1,300 hospital beds to Ukraine",
+    "b": "Gov. Newsom visited Lviv.",
+    "date": "2026-11-16",
+    "publisher": "LAist",
+    "title": "California donates 1,300 hospital beds and medical supplies to Ukraine",
+    "url": "https://laist.com/news/california-donates-1-300-hospital-beds-and-medical-supplies-to-ukraine",
+    "published": "2026-11-16T19:00:00Z",
+    "updated": "2026-11-16T19:00:00Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   },
+   {
     "h": "What happens to Raman's council seat when she becomes mayor",
     "b": "Nithya Raman takes office Dec. 14, which could leave Council District 4 temporarily without a representative.",
     "date": "2026-11-16",
@@ -422,7 +447,7 @@
     "title": "What happens to Nithya Raman's LA City Council seat once she's sworn in as mayor?",
     "url": "https://laist.com/news/politics/what-happens-to-nithya-raman-la-city-council-seat-once-sworn-in-as-mayor",
     "published": "2026-11-16T13:00:00Z",
-    "updated": "2026-11-16T12:59:59Z",
+    "updated": "2026-11-16T18:55:35Z",
     "gathered": "2026-11-16T14:18:13Z"
    },
    {
@@ -457,23 +482,23 @@
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "wind": "Calm",
-    "humidity": 66,
-    "obs": "16 Nov 09:10 AM PST"
+    "temp": 70,
+    "wind": "N 2 mph",
+    "humidity": 61,
+    "obs": "16 Nov 12:10 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 71,
-     "text": "A slight chance of rain between 10am and 4pm, then a chance of rain and thunderstorms after 4pm.  Partly sunny, with a high near 71. Light and variable wind becoming west southwest 5 to 10 mph in the morning.  Chance of precipitation is 30%. New rainfall amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+     "text": "A chance of rain, with thunderstorms also possible after 4pm.  Partly sunny, with a high near 71. West southwest wind 5 to 10 mph.  Chance of precipitation is 40%."
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 53,
-     "text": "A chance of rain and thunderstorms before 10pm, then a slight chance of rain.  Partly cloudy, with a low around 53. Northwest wind around 10 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+     "text": "A chance of rain and thunderstorms before 10pm, then a slight chance of rain.  Partly cloudy, with a low around 53. Northwest wind around 10 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tuesday",
@@ -484,14 +509,14 @@
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "Mostly clear, with a low around 48. Northwest wind 5 to 15 mph becoming north northeast after midnight. "
+     "temp": 49,
+     "text": "Mostly clear, with a low around 49. Northwest wind 5 to 15 mph becoming north northeast after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 67,
-     "text": "Mostly sunny, with a high near 67. Northeast wind around 5 mph becoming southwest in the afternoon. "
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66. Northeast wind around 5 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
@@ -513,7 +538,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -524,6 +549,17 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Two Co-op City peace officers shot during Bronx wellness check",
+    "b": "The 56-year-old shooter was found dead; the officers' injuries are not life-threatening.",
+    "date": "2026-11-16",
+    "publisher": "Gothamist",
+    "title": "2 Co-op City peace officers shot during Bronx wellness check, officials say",
+    "url": "https://gothamist.com/news/3-people-shot-in-co-op-city-in-the-bronx-including-two-peace-officers-nypd-says",
+    "published": "2026-11-16T18:08:00Z",
+    "updated": "2026-11-16T19:29:00Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   },
    {
     "h": "Andrew Goodman's brother on Mississippi's historic Senate win",
     "b": "Democrat Scott Colom became the state's first Black senator in 150 years, 62 years after the Freedom Summer murders.",
@@ -607,48 +643,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 54,
     "cond": "Fair",
-    "wind": "NW 9 mph, gusts to 20 mph",
-    "humidity": 50,
-    "obs": "16 Nov 11:51 am EST"
+    "wind": "W 6 mph",
+    "humidity": 37,
+    "obs": "16 Nov 14:51 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 56,
-     "text": "Sunny, with a high near 56. Northwest wind around 11 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "Mostly clear, with a low around 42. Northwest wind 6 to 9 mph. "
+     "temp": 43,
+     "text": "Clear, with a low around 43. Northwest wind 6 to 8 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. Northwest wind 6 to 10 mph. "
+     "temp": 57,
+     "text": "Sunny, with a high near 57. Northwest wind 5 to 8 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Mostly clear, with a low around 45. West wind around 8 mph. "
+     "temp": 46,
+     "text": "Mostly clear, with a low around 46. West wind around 7 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. West wind around 7 mph. "
+     "temp": 61,
+     "text": "Sunny, with a high near 61. Northwest wind around 8 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 46,
-     "text": "Mostly clear, with a low around 46."
+     "text": "Mostly clear, with a low around 46. West wind 6 to 8 mph. "
+    },
+    {
+     "name": "Thursday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Sunny, with a high near 62."
     }
    ]
   },
@@ -664,7 +700,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -768,7 +804,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "goodnews": []
  },
  {
@@ -777,21 +813,55 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Rep. April Berg challenges Laurie Jinkins for House speaker",
+    "b": "Washington House Democrats face a contest for the speakership.",
+    "date": "2026-11-16",
+    "publisher": "KUOW",
+    "title": "After big wins, Washington House Democrats face internal duel for speaker",
+    "url": "https://www.kuow.org/governing/2026-11-16/after-big-wins-wa-house-democrats-face-an-internal-duel-for-speaker",
+    "published": "2026-11-16T18:04:22Z",
+    "updated": "2026-11-16T18:07:56Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   },
+   {
+    "h": "New AG rules aim to speed up public records requests",
+    "b": "The state attorney general's rules target Washington's public records process.",
+    "date": "2026-11-16",
+    "publisher": "KUOW",
+    "title": "New rules seek to speed up Washington's public records system",
+    "url": "https://www.kuow.org/governing/2026-11-16/new-rules-seek-to-speed-up-wa-public-records-system",
+    "published": "2026-11-16T18:11:53Z",
+    "updated": "2026-11-16T18:12:07Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   },
+   {
+    "h": "Immigration lawyers welcome Seattle US Attorney's pullback",
+    "b": "Lawyers reacted to the change by the Seattle US Attorney's office.",
+    "date": "2026-11-16",
+    "publisher": "KUOW",
+    "title": "Immigration lawyers say pullback by Seattle’s U.S. attorney could help people in detention",
+    "url": "https://www.kuow.org/immigration/2026-11-16/immigration-lawyers-say-pullback-by-seattles-u-s-attorney-could-help-people-in-detention",
+    "published": "2026-11-16T19:03:52Z",
+    "updated": "2026-11-16T19:03:52Z",
+    "gathered": "2026-11-16T20:38:02Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 52,
     "cond": "Clear",
-    "wind": "S 4 mph",
-    "humidity": 100,
-    "obs": "16 Nov 08:55 AM PST"
+    "wind": "SE 5 mph",
+    "humidity": 62,
+    "obs": "16 Nov 11:55 AM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 52,
-     "text": "A 30 percent chance of showers, mainly after 2pm.  Partly sunny, with a high near 52. South southwest wind 3 to 5 mph. "
+     "text": "A 30 percent chance of showers, mainly after 2pm.  Mostly sunny, with a high near 52. South southwest wind 3 to 5 mph. "
     },
     {
      "name": "Tonight",
@@ -837,7 +907,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T20:12:00Z",
+  "updatedAt": "2026-11-16T23:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
