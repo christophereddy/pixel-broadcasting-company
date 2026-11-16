@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Mostly Cloudy",
+    "temp": 50,
+    "cond": "A Few Clouds",
     "wind": "N 7 mph",
-    "humidity": 40,
-    "obs": "15 Nov 17:52 pm EST"
+    "humidity": 46,
+    "obs": "15 Nov 20:52 pm EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,11 +88,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 43,
     "cond": "A Few Clouds",
-    "wind": "W 12 mph",
-    "humidity": 56,
-    "obs": "15 Nov 17:54 pm EST"
+    "wind": "W 7 mph",
+    "humidity": 60,
+    "obs": "15 Nov 20:54 pm EST"
    },
    "periods": [
     {
@@ -145,7 +145,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -181,18 +181,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "wind": "E 6 mph",
-    "humidity": 56,
-    "obs": "15 Nov 16:53 pm CST"
+    "temp": 41,
+    "cond": "Fair",
+    "wind": "SW 5 mph",
+    "humidity": 76,
+    "obs": "15 Nov 19:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Mostly clear, with a low around 34. Southeast wind around 5 mph becoming southwest after midnight. "
+     "text": "Mostly clear, with a low around 34. Southwest wind around 5 mph. "
     },
     {
      "name": "Monday",
@@ -238,7 +238,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -263,18 +263,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "A Few Clouds",
-    "wind": "E 14 mph",
-    "humidity": 36,
-    "obs": "15 Nov 14:58 pm MST"
+    "temp": 45,
+    "cond": "Fair",
+    "wind": "S 8 mph",
+    "humidity": 64,
+    "obs": "15 Nov 18:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Patchy fog after 3am.  Otherwise, partly cloudy, with a low around 34. Northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Patchy fog after 3am.  Otherwise, partly cloudy, with a low around 34. Calm wind. "
     },
     {
      "name": "Monday",
@@ -320,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -356,17 +356,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 73,
-    "wind": "N 1 mph",
-    "humidity": 50,
-    "obs": "15 Nov 02:45 PM PST"
+    "temp": 66,
+    "wind": "NW 1 mph",
+    "humidity": 69,
+    "obs": "15 Nov 06:05 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "A 20 percent chance of rain.  Increasing clouds, with a low around 57. West northwest wind around 5 mph becoming calm. "
+     "text": "A 20 percent chance of rain.  Increasing clouds, with a low around 57. West southwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Monday",
@@ -390,7 +390,7 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Mostly clear, with a low around 49."
+     "text": "Mostly clear, with a low around 49. Northwest wind 5 to 15 mph becoming northeast after midnight. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Wednesday",
@@ -412,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -423,6 +423,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Bronx man charged with killing his elderly aunt",
+    "b": "Police say 75-year-old Carmen Nunez was found beaten in the Manida Street home she shared with her nephew, who was charged with murder.",
+    "date": "2026-11-15",
+    "publisher": "Gothamist",
+    "title": "NYPD says man murdered his elderly aunt at their Bronx home",
+    "url": "https://gothamist.com/news/nypd-says-man-murdered-his-elderly-aunt-at-their-bronx-home",
+    "published": "2026-11-16T01:18:00Z",
+    "gathered": "2026-11-16T02:19:47Z"
+   },
    {
     "h": "DJ survives Flatbush collapse, but his records don't",
     "b": "Omari Jack lost thousands of reggae records, a collection he values at over $100,000, when his building came down.",
@@ -467,18 +477,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "wind": "W 5 mph",
-    "humidity": 51,
-    "obs": "15 Nov 17:51 pm EST"
+    "temp": 44,
+    "cond": "Fair",
+    "wind": "W 7 mph",
+    "humidity": 58,
+    "obs": "15 Nov 20:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "Partly cloudy, with a low around 41. Northwest wind 7 to 10 mph. "
+     "text": "Partly cloudy, with a low around 41. Northwest wind 7 to 9 mph. "
     },
     {
      "name": "Monday",
@@ -524,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -564,7 +574,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "goodnews": []
  },
  {
@@ -576,11 +586,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Partly Cloudy",
-    "wind": "SE 10 mph",
-    "humidity": 82,
-    "obs": "15 Nov 02:53 PM PST"
+    "temp": 46,
+    "cond": "Mostly Cloudy",
+    "wind": "Calm",
+    "humidity": 93,
+    "obs": "15 Nov 05:55 PM PST"
    },
    "periods": [
     {
@@ -611,7 +621,7 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Partly cloudy, with a low around 40."
+     "text": "Partly cloudy, with a low around 40. Calm wind becoming northeast around 6 mph in the evening. "
     },
     {
      "name": "Wednesday",
@@ -633,7 +643,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T02:12:00Z",
+  "updatedAt": "2026-11-16T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
