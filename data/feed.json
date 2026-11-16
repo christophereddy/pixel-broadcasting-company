@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-16T14:18:00Z",
+ "updatedAt": "2026-11-16T17:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Russian attacks kill three in Ukraine as EU's Kallas blames Putin",
+   "b": "The EU foreign policy chief accused Putin of making maximalist demands to extend the war.",
+   "date": "2026-11-16",
+   "publisher": "Al Jazeera",
+   "title": "Russian attacks kill three in Ukraine, EU accuses Moscow of prolonging war",
+   "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war",
+   "gathered": "2026-11-16T14:18:13Z"
+  },
   {
    "h": "WHO warns drug-resistant infections could kill 39 million",
    "b": "Officials said progress on prevention and appropriate antibiotic use is too slow, threatening routine surgery and childbirth.",
@@ -369,11 +378,18 @@
  ],
  "sports": [
   {
+   "h": "Patriots fear Drake Maye fractured his ankle",
+   "b": "The quarterback could miss the rest of the season after the sack by Aidan Hutchinson in Munich, ESPN reports.",
+   "date": "2026-11-16",
+   "publisher": "CBS Sports",
+   "title": "Drake Maye injury update: Patriots reportedly fear QB fractured ankle, could miss rest of season",
+   "url": "https://www.cbssports.com/nfl/news/drake-maye-injury-update-patriots-qb-ankle-out-for-season/",
+   "gathered": "2026-11-16T14:18:13Z"
+  },
+  {
    "h": "49ers beat Cowboys 46-40 in a first-ever NFL score",
    "b": "Five fourth-quarter touchdowns produced the 1,099th unique final score in league history.",
    "date": "2026-11-15",
-   "publisher": "CBS Sports",
-   "title": "Scorigami: Cowboys-49ers ends with score never before seen in NFL history thanks to Dak Prescott",
    "url": "https://www.cbssports.com/nfl/news/scorigami-cowboys-49ers-ends-with-score-never-seen-nfl/",
    "gathered": "2026-11-16T02:19:47Z"
   },
@@ -416,13 +432,23 @@
  "goodnews": [],
  "local": [
   {
+   "h": "Many NYC food pantry users have jobs, report finds",
+   "b": "Robin Hood found 39% of pantry users work full time, as more than 26,500 New Yorkers lost SNAP this year under new work rules.",
+   "date": "2026-11-16",
+   "publisher": "Gothamist",
+   "title": "Having a job doesn’t save you from going hungry in NYC, report finds",
+   "url": "https://gothamist.com/news/having-a-job-doesnt-save-you-from-going-hungry-in-nyc-report-finds",
+   "published": "2026-11-16T14:00:55Z",
+   "gathered": "2026-11-16T14:18:13Z"
+  },
+  {
    "h": "Mamdani to disband NYPD's Strategic Response Group",
    "b": "The mayor will split the protest unit's functions and create a new unit for peaceful demonstrations.",
    "date": "2026-11-16",
    "publisher": "Gothamist",
    "title": "Mamdani announces plan to disband NYPD’s Strategic Response Group",
    "url": "https://gothamist.com/news/mamdani-announces-plan-to-disband-nypds-strategic-response-group",
-   "published": "2026-11-16T11:06:49Z",
+   "published": "2026-11-16T11:06:00Z",
    "gathered": "2026-11-16T11:13:56Z"
   },
   {
@@ -462,8 +488,7 @@
    "publisher": "Gothamist",
    "title": "NYPD fatally shoots driver on Belt Parkway following suspected kidnapping",
    "url": "https://gothamist.com/news/nypd-fatally-shoot-man-after-report-of-possible-abduction-in-coney-island",
-   "published": "2026-11-15T15:20:00Z",
-   "updated": "2026-11-15T19:33:00Z",
+   "published": "2026-11-15T19:33:00Z",
    "gathered": "2026-11-15T17:20:31Z"
   },
   {
@@ -479,18 +504,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 41,
+   "temp": 44,
    "cond": "Fair",
-   "wind": "Calm",
-   "humidity": 70,
-   "obs": "16 Nov 04:51 am EST"
+   "wind": "W 6 mph",
+   "humidity": 65,
+   "obs": "16 Nov 08:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
     "temp": 56,
-    "text": "Sunny, with a high near 56. Northwest wind 6 to 11 mph. "
+    "text": "Sunny, with a high near 56. Northwest wind around 11 mph. "
    },
    {
     "name": "Tonight",
@@ -525,6 +550,16 @@
   ]
  },
  "localgood": [
+  {
+   "h": "Cat rescued from Flatbush collapse reunited with owner",
+   "b": "A local rescue group found Isaac after his owner's tearful plea went viral.",
+   "date": "2026-11-16",
+   "publisher": "Gothamist",
+   "title": "How one Brooklyn cat avoided the building collapse and was rejoined with his human",
+   "url": "https://gothamist.com/news/how-one-brooklyn-cat-avoided-the-building-collapse-and-was-rejoined-with-his-human",
+   "published": "2026-11-16T11:30:50Z",
+   "gathered": "2026-11-16T14:18:13Z"
+  },
   {
    "h": "Meet the Syracuse artist who restores subway mosaics",
    "b": "Robert Shenfeld, 73, is the one man the MTA relies on to restore its century-old station name tiles.",
