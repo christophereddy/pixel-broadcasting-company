@@ -8,15 +8,15 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "A Few Clouds",
-    "wind": "N 7 mph",
-    "humidity": 46,
-    "obs": "15 Nov 20:52 pm EST"
+    "temp": 43,
+    "cond": "Overcast",
+    "wind": "E 3 mph",
+    "humidity": 65,
+    "obs": "15 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 37,
      "text": "Patchy frost after 5am.  Otherwise, mostly clear, with a low around 37. Calm wind becoming northeast around 5 mph. "
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,15 +88,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 41,
     "cond": "A Few Clouds",
-    "wind": "W 7 mph",
-    "humidity": 60,
-    "obs": "15 Nov 20:54 pm EST"
+    "wind": "NW 8 mph",
+    "humidity": 67,
+    "obs": "15 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 35,
      "text": "Partly cloudy, with a low around 35. Northwest wind around 8 mph. "
@@ -145,7 +145,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -181,11 +181,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "Fair",
-    "wind": "SW 5 mph",
-    "humidity": 76,
-    "obs": "15 Nov 19:53 pm CST"
+    "temp": 40,
+    "cond": "A Few Clouds",
+    "wind": "S 5 mph",
+    "humidity": 77,
+    "obs": "15 Nov 22:53 pm CST"
    },
    "periods": [
     {
@@ -238,7 +238,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -263,11 +263,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Fair",
-    "wind": "S 8 mph",
-    "humidity": 64,
-    "obs": "15 Nov 18:58 pm MST"
+    "temp": 41,
+    "cond": "A Few Clouds",
+    "wind": "SW 10 mph",
+    "humidity": 78,
+    "obs": "15 Nov 21:58 pm MST"
    },
    "periods": [
     {
@@ -320,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -356,17 +356,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 65,
     "wind": "NW 1 mph",
-    "humidity": 69,
-    "obs": "15 Nov 06:05 PM PST"
+    "humidity": 72,
+    "obs": "15 Nov 09:00 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 57,
-     "text": "A 20 percent chance of rain.  Increasing clouds, with a low around 57. West southwest wind around 5 mph becoming calm  in the evening. "
+     "text": "A 20 percent chance of rain.  Increasing clouds, with a low around 57. West northwest wind around 5 mph becoming calm. "
     },
     {
      "name": "Monday",
@@ -412,7 +412,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -477,18 +477,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 42,
     "cond": "Fair",
-    "wind": "W 7 mph",
-    "humidity": 58,
-    "obs": "15 Nov 20:51 pm EST"
+    "wind": "NW 6 mph",
+    "humidity": 65,
+    "obs": "15 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 41,
-     "text": "Partly cloudy, with a low around 41. Northwest wind 7 to 9 mph. "
+     "text": "Partly cloudy, with a low around 41. Northwest wind around 8 mph. "
     },
     {
      "name": "Monday",
@@ -534,7 +534,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -574,7 +574,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "goodnews": []
  },
  {
@@ -588,16 +588,16 @@
    "now": {
     "temp": 46,
     "cond": "Mostly Cloudy",
-    "wind": "Calm",
-    "humidity": 93,
-    "obs": "15 Nov 05:55 PM PST"
+    "wind": "NW 4 mph",
+    "humidity": 92,
+    "obs": "15 Nov 08:53 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 43,
-     "text": "A 40 percent chance of rain, mainly between 9pm and 5am.  Partly cloudy, with a low around 43. South southeast wind 3 to 7 mph. "
+     "text": "A 40 percent chance of rain, mainly between 2am and 5am.  Partly cloudy, with a low around 43. South southeast wind 3 to 7 mph. "
     },
     {
      "name": "Monday",
@@ -643,7 +643,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T05:12:00Z",
+  "updatedAt": "2026-11-16T08:16:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

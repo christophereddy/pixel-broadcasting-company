@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-16T05:12:00Z",
+ "updatedAt": "2026-11-16T08:16:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "ASEAN and China fail to agree South China Sea code",
+   "b": "The Philippines' foreign minister said key issues, including whether the code would be legally binding, remain unresolved after two decades of talks.",
+   "date": "2026-11-16",
+   "publisher": "Al Jazeera",
+   "title": "ASEAN, China fall short of agreeing on South China Sea code",
+   "url": "https://www.aljazeera.com/news/2026/11/16/asean-china-fall-short-of-agreeing-on-south-china-sea-code",
+   "gathered": "2026-11-16T05:12:24Z"
+  },
   {
    "h": "Eisenkot says Netanyahu can't remain PM over alleged vote meddling",
    "b": "A Channel 12 report alleges Netanyahu's chief of staff sent police after members of the Ra'am party on the eve of the election.",
@@ -162,13 +171,22 @@
  ],
  "international": [
   {
+   "h": "Indonesia's Prabowo apologizes to neighbors for wildfire haze",
+   "b": "At the ASEAN summit, he said 104 companies are under police investigation over the months-long blazes.",
+   "date": "2026-11-16",
+   "place": "Manila, Philippines",
+   "tz": "Asia/Manila",
+   "publisher": "Al Jazeera",
+   "title": "Indonesian president apologises to Singapore, Malaysia for wildfire haze",
+   "url": "https://www.aljazeera.com/news/2026/11/16/indonesian-president-apologises-to-singapore-malaysia-for-wildfire-haze",
+   "gathered": "2026-11-16T05:12:24Z"
+  },
+  {
    "h": "Prince Harry meets Ukraine's Invictus hopefuls in Lviv",
    "b": "On his fourth wartime visit, he watched athletes vying for Ukraine's largest-ever team for the 2027 games in Birmingham.",
    "date": "2026-11-15",
    "place": "Lviv, Ukraine",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "Prince Harry in Ukraine meeting Invictus 2027 hopefuls",
    "url": "https://www.aljazeera.com/news/2026/11/15/prince-harry-in-ukraine-meeting-invictus-2027-hopefuls",
    "gathered": "2026-11-15T21:59:04Z"
   },
@@ -190,8 +208,6 @@
    "date": "2026-11-15",
    "place": "Tallinn, Estonia",
    "tz": "Europe/Tallinn",
-   "publisher": "Al Jazeera",
-   "title": "Estonia to close border crossings with Russia after attack on drone maker",
    "url": "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker",
    "gathered": "2026-11-15T21:59:04Z"
   },
@@ -210,8 +226,6 @@
    "date": "2026-11-15",
    "place": "Prague, Czech Republic",
    "tz": "Europe/Prague",
-   "publisher": "Al Jazeera",
-   "title": "Thousands rally in Czech Republic against state media funding changes",
    "url": "https://www.aljazeera.com/news/2026/11/15/thousands-rally-in-czech-republic-against-state-media-funding-changes",
    "gathered": "2026-11-15T17:20:31Z"
   },
@@ -264,8 +278,6 @@
    "h": "Bessent says Nvidia should pick an outsider as CEO",
    "b": "The Treasury secretary said the chipmaker needs 'a dramatic shake-up' after Jensen Huang stepped down Thursday.",
    "date": "2026-11-15",
-   "publisher": "Al Jazeera",
-   "title": "US Treasury chief calls for outsider to lead embattled tech firm Nvidia",
    "url": "https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia",
    "gathered": "2026-11-15T23:12:04Z"
   }
@@ -373,18 +385,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 44,
+   "temp": 42,
    "cond": "Fair",
-   "wind": "W 7 mph",
-   "humidity": 58,
-   "obs": "15 Nov 20:51 pm EST"
+   "wind": "NW 6 mph",
+   "humidity": 65,
+   "obs": "15 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 41,
-    "text": "Partly cloudy, with a low around 41. Northwest wind 7 to 9 mph. "
+    "text": "Partly cloudy, with a low around 41. Northwest wind around 8 mph. "
    },
    {
     "name": "Monday",
