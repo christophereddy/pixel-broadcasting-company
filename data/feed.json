@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T08:16:00Z",
+ "updatedAt": "2026-11-16T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "ASEAN and China fail to agree South China Sea code",
    "b": "The Philippines' foreign minister said key issues, including whether the code would be legally binding, remain unresolved after two decades of talks.",
    "date": "2026-11-16",
-   "publisher": "Al Jazeera",
-   "title": "ASEAN, China fall short of agreeing on South China Sea code",
    "url": "https://www.aljazeera.com/news/2026/11/16/asean-china-fall-short-of-agreeing-on-south-china-sea-code",
    "gathered": "2026-11-16T05:12:24Z"
   },
@@ -25,11 +23,11 @@
    "gathered": "2026-11-16T02:19:47Z"
   },
   {
-   "h": "Third US carrier arrives in Middle East, Iran warns it could strike first",
+   "h": "New US strike group arrives in Middle East; Iran warns of US-Israel threat",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-16",
    "publisher": "Al Jazeera",
-   "title": "Third US carrier arrives in Middle East, Iran warns it could strike first",
+   "title": "New US strike group arrives in Middle East; Iran warns of US-Israel threat",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
    "gathered": "2026-11-16T02:19:47Z"
   },
@@ -170,6 +168,39 @@
   }
  ],
  "international": [
+  {
+   "h": "Martine Moise registers for Haiti presidential race",
+   "b": "The widow of slain President Jovenel Moise is one of 33 candidates for the first presidential vote in a decade, set for July.",
+   "date": "2026-11-16",
+   "place": "Port-au-Prince, Haiti",
+   "tz": "America/Port-au-Prince",
+   "publisher": "Al Jazeera",
+   "title": "Widow of Haiti’s slain leader Moise to contest presidential vote",
+   "url": "https://www.aljazeera.com/news/2026/11/16/widow-of-haitis-slain-leader-moise-to-contest-presidential-vote",
+   "gathered": "2026-11-16T10:02:05Z"
+  },
+  {
+   "h": "Ecuador's Noboa denies US has a military base",
+   "b": "The president said US personnel at Taura Air Base are there only for 'temporary activities' after AFP documented US flights and construction.",
+   "date": "2026-11-16",
+   "place": "Quito, Ecuador",
+   "tz": "America/Guayaquil",
+   "publisher": "Al Jazeera",
+   "title": "Ecuador’s president denies existence of US military base",
+   "url": "https://www.aljazeera.com/news/2026/11/16/ecuadors-president-denies-us-has-military-base-in-country",
+   "gathered": "2026-11-16T10:02:05Z"
+  },
+  {
+   "h": "Fire on Thailand's Phuket island kills at least 11",
+   "b": "The blaze in Patong started early Monday in a building with a restaurant, rooms and a motorcycle rental shop; police ruled out arson.",
+   "date": "2026-11-16",
+   "place": "Phuket, Thailand",
+   "tz": "Asia/Bangkok",
+   "publisher": "Al Jazeera",
+   "title": "At least 11 killed in blaze on Thailand’s Phuket island",
+   "url": "https://www.aljazeera.com/news/2026/11/16/shophouse-fire-on-thai-resort-island-kills-11",
+   "gathered": "2026-11-16T10:02:05Z"
+  },
   {
    "h": "Indonesia's Prabowo apologizes to neighbors for wildfire haze",
    "b": "At the ASEAN summit, he said 104 companies are under police investigation over the months-long blazes.",
@@ -385,48 +416,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 42,
+   "temp": 41,
    "cond": "Fair",
-   "wind": "NW 6 mph",
-   "humidity": 65,
-   "obs": "15 Nov 23:51 pm EST"
+   "wind": "Calm",
+   "humidity": 70,
+   "obs": "16 Nov 04:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 41,
-    "text": "Partly cloudy, with a low around 41. Northwest wind around 8 mph. "
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "kind": "high",
-    "temp": 55,
-    "text": "Mostly sunny, with a high near 55. Northwest wind 6 to 9 mph. "
+    "temp": 56,
+    "text": "Sunny, with a high near 56. Northwest wind 6 to 11 mph. "
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 42,
-    "text": "Mostly clear, with a low around 42. Northwest wind 6 to 8 mph. "
+    "text": "Mostly clear, with a low around 42. Northwest wind 6 to 9 mph. "
    },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 59,
-    "text": "Sunny, with a high near 59. Northwest wind 6 to 8 mph. "
+    "text": "Sunny, with a high near 59. Northwest wind 6 to 10 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 47,
-    "text": "Clear, with a low around 47. West wind around 8 mph. "
+    "temp": 45,
+    "text": "Mostly clear, with a low around 45. West wind around 8 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
     "temp": 62,
-    "text": "Sunny, with a high near 62."
+    "text": "Sunny, with a high near 62. West wind around 7 mph. "
+   },
+   {
+    "name": "Wednesday Night",
+    "kind": "low",
+    "temp": 46,
+    "text": "Mostly clear, with a low around 46."
    }
   ]
  },
