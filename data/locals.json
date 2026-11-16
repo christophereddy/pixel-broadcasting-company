@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 53,
     "cond": "Mostly Cloudy",
-    "wind": "NE 5 mph",
-    "humidity": 36,
-    "obs": "15 Nov 16:52 pm EST"
+    "wind": "N 7 mph",
+    "humidity": 40,
+    "obs": "15 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,14 +75,24 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Lions rout Patriots 35-10 in Munich after Maye hurt",
+    "b": "Drake Maye was knocked out by Aidan Hutchinson's sack, and Jared Goff threw three touchdown passes.",
+    "date": "2026-11-15",
+    "publisher": "WBUR",
+    "title": "Lions' 35-10 rout over Patriots after Maye injured in Munich",
+    "url": "https://www.wbur.org/news/2026/11/15/lions-35-10-rout-over-patriots-after-maye-injured-in-munich",
+    "gathered": "2026-11-15T23:12:04Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 45,
     "cond": "A Few Clouds",
-    "wind": "W 8 mph",
+    "wind": "W 12 mph",
     "humidity": 56,
-    "obs": "15 Nov 16:54 pm EST"
+    "obs": "15 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -135,7 +145,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -167,48 +177,15 @@
     "published": "2026-11-15T11:00:00Z",
     "updated": "2026-11-15T11:00:04Z",
     "gathered": "2026-11-15T11:12:07Z"
-   },
-   {
-    "h": "CPS faces possible midyear cuts without state money",
-    "b": "Chicago Public Schools has overspent its special education budget by $27 million as lawmakers open a veto session Tuesday, with low odds of more funding.",
-    "date": "2026-11-14",
-    "publisher": "WBEZ",
-    "title": "Without more state funding, CPS faces possible midyear cuts as unexpected costs mount",
-    "url": "https://www.wbez.org/education/2026/11/14/without-more-state-funding-cps-faces-possible-midyear-as-unexpected-costs-mount",
-    "published": "2026-11-14T14:34:07Z",
-    "updated": "2026-11-14T14:34:07Z",
-    "gathered": "2026-11-14T17:16:05Z"
-   },
-   {
-    "h": "O'Hare, Midway cancellations continue after ground stop",
-    "b": "By about 9:30 a.m. Saturday, 153 O'Hare departures had been canceled and 114 delayed, with 25 cancellations at Midway.",
-    "date": "2026-11-14",
-    "publisher": "WBEZ",
-    "title": "Cancellations, delays at O'Hare, Midway continue Saturday in fallout from FAA ground stop",
-    "url": "https://www.wbez.org/transportation/2026/11/14/cancellations-delays-ohare-midway-continue-saturday-fallout-faa-ground-stop",
-    "published": "2026-11-14T15:51:31Z",
-    "updated": "2026-11-14T15:51:31Z",
-    "gathered": "2026-11-14T17:16:05Z"
-   },
-   {
-    "h": "Black Friday deals start earlier than ever",
-    "b": "Retailers are launching holiday sales sooner to lure inflation-weary shoppers. A Deloitte survey says Chicago shoppers plan to spend $991 on retail goods this season.",
-    "date": "2026-11-14",
-    "publisher": "WBEZ",
-    "title": "It's true: Black Friday deals are starting even earlier than previous years",
-    "url": "https://www.wbez.org/business/2026/11/14/black-friday-deals-holiday-shopping-starting-earlier-previous-years",
-    "published": "2026-11-14T12:01:00Z",
-    "updated": "2026-11-14T12:01:00Z",
-    "gathered": "2026-11-14T14:12:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 46,
     "cond": "A Few Clouds",
-    "wind": "E 10 mph",
-    "humidity": 48,
-    "obs": "15 Nov 15:53 pm CST"
+    "wind": "E 6 mph",
+    "humidity": 56,
+    "obs": "15 Nov 16:53 pm CST"
    },
    "periods": [
     {
@@ -261,7 +238,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -288,22 +265,16 @@
    "now": {
     "temp": 59,
     "cond": "A Few Clouds",
-    "wind": "E 10 mph",
+    "wind": "E 14 mph",
     "humidity": 36,
-    "obs": "15 Nov 13:58 pm MST"
+    "obs": "15 Nov 14:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. East wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 34,
-     "text": "Patchy fog after 3am.  Otherwise, partly cloudy, with a low around 34. Calm wind. "
+     "text": "Patchy fog after 3am.  Otherwise, partly cloudy, with a low around 34. Northeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Monday",
@@ -327,7 +298,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 40,
-     "text": "Mostly clear, with a low around 40."
+     "text": "Mostly clear, with a low around 40. Southwest wind 8 to 11 mph, with gusts as high as 22 mph. "
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 60,
+     "text": "Sunny, with a high near 60."
     }
    ]
   },
@@ -343,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -375,33 +352,16 @@
     "published": "2026-11-15T13:00:00Z",
     "updated": "2026-11-15T13:00:00Z",
     "gathered": "2026-11-15T14:15:00Z"
-   },
-   {
-    "h": "Great L.A. Walk takes on Route 66",
-    "b": "About 600 people are expected to walk Santa Monica Boulevard and beyond on Nov. 21 in the pre-Thanksgiving tradition.",
-    "date": "2026-11-14",
-    "publisher": "LAist",
-    "title": "600 strangers, 16 miles, just because — LA’s mellowest walking party hits Route 66 next Saturday",
-    "url": "https://laist.com/news/los-angeles-activities/great-los-angeles-walk-2026-route-66",
-    "published": "2026-11-14T13:00:00Z",
-    "updated": "2026-11-15T08:24:57Z",
-    "gathered": "2026-11-15T02:03:06Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 74,
-    "wind": "S 1 mph",
-    "humidity": 45,
-    "obs": "15 Nov 01:55 PM PST"
+    "temp": 73,
+    "wind": "N 1 mph",
+    "humidity": 50,
+    "obs": "15 Nov 02:45 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 71,
-     "text": "Mostly sunny, with a high near 71. West wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -431,6 +391,12 @@
      "kind": "low",
      "temp": 49,
      "text": "Mostly clear, with a low around 49."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Mostly sunny, with a high near 67."
     }
    ]
   },
@@ -446,21 +412,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": [
-   {
-    "h": "First sea turtle eggs laid on SoCal beaches hatch",
-    "b": "Olive ridley eggs from Seal Beach hatched after 58 days, and the Aquarium of the Pacific released the hatchlings early Saturday.",
-    "date": "2026-11-14",
-    "publisher": "LAist",
-    "title": "We’ve got baby turtles! First sea turtle eggs laid on SoCal beaches have hatched",
-    "url": "https://laist.com/news/climate-environment/weve-got-baby-turtles-rare-sea-turtle-eggs-laid-on-socal-beaches-have-hatched",
-    "published": "2026-11-14T17:24:00Z",
-    "updated": "2026-11-15T15:58:13Z",
-    "gathered": "2026-11-14T21:38:31Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -469,6 +423,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "DJ survives Flatbush collapse, but his records don't",
+    "b": "Omari Jack lost thousands of reggae records, a collection he values at over $100,000, when his building came down.",
+    "date": "2026-11-15",
+    "publisher": "Gothamist",
+    "title": "A DJ survived the Brooklyn building collapse: His prized record collection did not",
+    "url": "https://gothamist.com/news/a-dj-survived-the-brooklyn-building-collapse-his-prized-record-collection-did-not",
+    "published": "2026-11-15T22:19:00Z",
+    "gathered": "2026-11-15T23:12:04Z"
+   },
    {
     "h": "NY's biggest landfill leaks far more methane than thought",
     "b": "A report found Seneca Meadows emitting as much as 90 times the federal limit; six of 16 landfills exceeded limits.",
@@ -499,57 +463,15 @@
     "url": "https://gothamist.com/news/some-in-ny-fret-about-being-hit-by-the-ai-bus-others-are-trying-to-board-it",
     "published": "2026-11-15T12:00:43Z",
     "gathered": "2026-11-15T14:15:00Z"
-   },
-   {
-    "h": "Tech problems stall specialized high school test",
-    "b": "The DOE will reschedule the SHSAT for students who couldn't finish after vendor Pearson reported technical issues; testing continues Nov. 15.",
-    "date": "2026-11-14",
-    "publisher": "Gothamist",
-    "title": "NYC's specialized high school test stalled by technical problems, DOE says",
-    "url": "https://gothamist.com/news/nycs-specialized-high-school-test-stalled-by-technical-problems-doe-says",
-    "published": "2026-11-14T23:40:00Z",
-    "updated": "2026-11-14T23:56:00Z",
-    "gathered": "2026-11-15T02:03:06Z"
-   },
-   {
-    "h": "Brooklyn power plant expansion fuels data center fears",
-    "b": "AlphaGen wants to expand two floating peaker plants near Sunset Park, prompting protests from environmentalists.",
-    "date": "2026-11-14",
-    "publisher": "Gothamist",
-    "title": "Expansion proposal for Brooklyn plants fuels data center fears",
-    "url": "https://gothamist.com/news/expansion-proposal-for-brooklyn-plants-fuels-data-center-fears",
-    "published": "2026-11-14T16:00:57Z",
-    "gathered": "2026-11-14T17:16:05Z"
-   },
-   {
-    "h": "Hochul calls on Duffy to resign over FAA meltdown",
-    "b": "The governor said the transportation secretary must resign or be removed after Friday's nationwide ground stop led to cancellations into Saturday.",
-    "date": "2026-11-14",
-    "publisher": "Gothamist",
-    "title": "Gov. Hochul calls on Duffy to resign after FAA meltdown grounds nation's flights",
-    "url": "https://gothamist.com/news/gov-hochul-calls-on-duffy-to-resign-after-faa-meltdown-grounds-nations-flights",
-    "published": "2026-11-14T16:25:00Z",
-    "updated": "2026-11-14T18:13:00Z",
-    "gathered": "2026-11-14T17:16:05Z"
-   },
-   {
-    "h": "FAA meltdown strands Gov. Sherrill in Denver",
-    "b": "New Jersey Gov. Mikie Sherrill was among the travelers stranded by Friday's nationwide ground stop while at a Democratic conference in Denver. She's now expected back Saturday morning.",
-    "date": "2026-11-14",
-    "publisher": "Gothamist",
-    "title": "FAA meltdown strands NJ Gov. Sherrill at Dem conference in Denver",
-    "url": "https://gothamist.com/news/faa-meltdown-strands-nj-gov-sherrill-at-dem-conference-in-denver",
-    "published": "2026-11-14T13:27:00Z",
-    "gathered": "2026-11-14T14:12:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Fair",
-    "wind": "NW 9 mph, gusts to 18 mph",
-    "humidity": 48,
-    "obs": "15 Nov 16:51 pm EST"
+    "temp": 46,
+    "cond": "A Few Clouds",
+    "wind": "W 5 mph",
+    "humidity": 51,
+    "obs": "15 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -602,20 +524,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Loew's Jersey Theatre reopens after $130M renovation",
-    "b": "The nearly century-old Jersey City theater near Journal Square is welcoming the public back after five years closed, with two sold-out concerts this weekend.",
-    "date": "2026-11-14",
-    "publisher": "Gothamist",
-    "title": "'A palace for the people': Historic, grand Loew's theater reopens in Jersey City",
-    "url": "https://gothamist.com/news/a-palace-for-the-people-historic-grand-loews-theater-reopens-in-jersey-city",
-    "published": "2026-11-14T12:22:58Z",
-    "gathered": "2026-11-14T14:12:05Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -626,22 +537,15 @@
   },
   "local": [
    {
-    "h": "Tens of thousands protest cost of living across France",
-    "b": "About 106,000 people marched nationwide, including 24,000 in Paris, over rising prices and a new police bill, the interior ministry said.",
-    "date": "2026-11-14",
+    "h": "OECD says integration policies are getting stricter",
+    "b": "The Paris-based group's migration outlook finds tighter citizenship rules in many of its 38 member countries.",
+    "date": "2026-11-15",
     "publisher": "The Local France",
-    "title": "UPDATED: French protesters chant against inflation and police",
-    "url": "https://www.thelocal.fr/20261114/in-pictures-french-protesters-chant-against-inflation-and-police/",
-    "published": "2026-11-14T14:20:16Z",
-    "updated": "2026-11-15T11:19:12Z",
-    "gathered": "2026-11-15T02:03:06Z"
-   },
-   {
-    "h": "Teddy Riner calls Macron's endorsement a 'poisoned chalice'",
-    "b": "The five-time Olympic judo champion, now running for president, said he is not the president's envoy.",
-    "date": "2026-11-14",
-    "url": "https://www.thelocal.fr/20261114/france-presidential-hopeful-riner-distances-himself-from-macron",
-    "gathered": "2026-11-14T17:16:05Z"
+    "title": "How integration policies are becoming more stringent across Europe",
+    "url": "https://www.thelocal.fr/20261115/how-integration-policies-are-becoming-more-stringent-across-europe",
+    "published": "2026-11-15T13:34:10Z",
+    "updated": "2026-11-15T13:34:14Z",
+    "gathered": "2026-11-15T23:12:04Z"
    }
   ],
   "weather": {
@@ -660,7 +564,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "goodnews": []
  },
  {
@@ -672,19 +576,13 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Mostly Cloudy",
-    "wind": "SW 9 mph",
-    "humidity": 63,
-    "obs": "15 Nov 01:53 PM PST"
+    "temp": 50,
+    "cond": "Partly Cloudy",
+    "wind": "SE 10 mph",
+    "humidity": 82,
+    "obs": "15 Nov 02:53 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 55,
-     "text": "A 30 percent chance of rain.  Partly sunny, with a high near 55. South southwest wind around 9 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -714,6 +612,12 @@
      "kind": "low",
      "temp": 40,
      "text": "Partly cloudy, with a low around 40."
+    },
+    {
+     "name": "Wednesday",
+     "kind": "high",
+     "temp": 50,
+     "text": "Mostly cloudy, with a high near 50."
     }
    ]
   },
@@ -729,7 +633,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-15T23:11:00Z",
+  "updatedAt": "2026-11-16T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
