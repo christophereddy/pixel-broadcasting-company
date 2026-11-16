@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-16T11:13:00Z",
+ "updatedAt": "2026-11-16T14:18:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "WHO warns drug-resistant infections could kill 39 million",
+   "b": "Officials said progress on prevention and appropriate antibiotic use is too slow, threatening routine surgery and childbirth.",
+   "date": "2026-11-16",
+   "publisher": "Al Jazeera",
+   "title": "Antimicrobial resistance could kill 39 million people over 25 years: WHO",
+   "url": "https://www.aljazeera.com/news/2026/11/16/un-health-agency-sounds-alarm-on-antimicrobial-resistance-threat",
+   "gathered": "2026-11-16T11:13:56Z"
+  },
   {
    "h": "ASEAN and China fail to agree South China Sea code",
    "b": "The Philippines' foreign minister said key issues, including whether the code would be legally binding, remain unresolved after two decades of talks.",
@@ -17,17 +26,15 @@
    "h": "Eisenkot says Netanyahu can't remain PM over alleged vote meddling",
    "b": "A Channel 12 report alleges Netanyahu's chief of staff sent police after members of the Ra'am party on the eve of the election.",
    "date": "2026-11-16",
-   "publisher": "Al Jazeera",
-   "title": "Eisenkot says Netanyahu can’t remain Israel PM amid alleged vote meddling",
    "url": "https://www.aljazeera.com/news/2026/11/16/eisenkot-says-netanyahu-cant-remain-israel-pm-amid-alleged-vote-meddling",
    "gathered": "2026-11-16T02:19:47Z"
   },
   {
-   "h": "New US strike group arrives in Middle East; Iran warns of US-Israel threat",
+   "h": "Iran commandeers US surveillance drone over southern island",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-16",
    "publisher": "Al Jazeera",
-   "title": "New US strike group arrives in Middle East; Iran warns of US-Israel threat",
+   "title": "Iran commandeers US surveillance drone over southern island",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack",
    "gathered": "2026-11-16T02:19:47Z"
   },
@@ -82,6 +89,17 @@
  ],
  "national": [
   {
+   "h": "A San Diego SNAP office doubles as a food pantry",
+   "b": "As millions lose food aid, county workers who process benefit applications are now handing out groceries.",
+   "date": "2026-11-16",
+   "publisher": "KUOW",
+   "title": "As millions lose food aid nationwide, this SNAP office is doubling up as a food pantry",
+   "url": "https://www.kuow.org/npr-news/2026-11-16/as-millions-lose-food-aid-nationwide-this-snap-office-is-doubling-up-as-a-food-pantry",
+   "published": "2026-11-16T10:00:00Z",
+   "updated": "2026-11-16T10:19:08Z",
+   "gathered": "2026-11-16T11:13:56Z"
+  },
+  {
    "h": "Two planes collide on Miami airport taxiway",
    "b": "A Copa Airlines 737's wing struck the nose of a UPS cargo plane Saturday night; two people reported minor injuries.",
    "date": "2026-11-15",
@@ -105,11 +123,7 @@
    "h": "New Mexico's free childcare for all, one year in",
    "b": "Parents call universal childcare life-changing, but the state lacks the capacity to meet demand, leaving long waitlists.",
    "date": "2026-11-15",
-   "publisher": "KUOW",
-   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
    "url": "https://www.kuow.org/npr-news/2026-11-15/new-mexico-wanted-free-childcare-for-all-this-is-whats-worked-and-what-hasnt",
-   "published": "2026-11-15T10:00:00Z",
-   "updated": "2026-11-15T10:38:02Z",
    "gathered": "2026-11-15T11:12:07Z"
   },
   {
@@ -152,11 +166,7 @@
    "h": "Midterms end long GOP dominance in state legislatures",
    "b": "Democrats look likely to control 24 legislatures to Republicans' 22, flipping chambers in Pennsylvania, Texas and Georgia.",
    "date": "2026-11-15",
-   "publisher": "KUOW",
-   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
    "url": "https://www.kuow.org/npr-news/2026-11-15/midterm-voters-ended-the-long-running-gop-dominance-in-state-legislatures",
-   "published": "2026-11-15T10:00:00Z",
-   "updated": "2026-11-15T10:37:39Z",
    "gathered": "2026-11-15T11:12:07Z"
   },
   {
@@ -168,6 +178,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Ahmad Tibi elected Knesset deputy speaker",
+   "b": "The Joint List leader said Likud and Ben-Gvir tried to block his election after Arab parties won a combined 19 seats.",
+   "date": "2026-11-16",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Ahmad Tibi elected deputy speaker of Israel’s Knesset",
+   "url": "https://www.aljazeera.com/news/2026/11/16/ahmed-tibi-appointed-as-deputy-speaker-of-israels-knesset",
+   "gathered": "2026-11-16T11:13:56Z"
+  },
+  {
+   "h": "Jordan bans Telegram over security concerns",
+   "b": "The ban comes amid a crackdown after last month's deadly attack on a Greek Orthodox church in Karak.",
+   "date": "2026-11-16",
+   "place": "Amman, Jordan",
+   "tz": "Asia/Amman",
+   "publisher": "Al Jazeera",
+   "title": "Jordan bans Telegram over national security concerns",
+   "url": "https://www.aljazeera.com/news/2026/11/16/jordan-bans-telegram-messing-app-over-national-security-concerns",
+   "gathered": "2026-11-16T11:13:56Z"
+  },
   {
    "h": "Martine Moise registers for Haiti presidential race",
    "b": "The widow of slain President Jovenel Moise is one of 33 candidates for the first presidential vote in a decade, set for July.",
@@ -207,8 +239,6 @@
    "date": "2026-11-16",
    "place": "Manila, Philippines",
    "tz": "Asia/Manila",
-   "publisher": "Al Jazeera",
-   "title": "Indonesian president apologises to Singapore, Malaysia for wildfire haze",
    "url": "https://www.aljazeera.com/news/2026/11/16/indonesian-president-apologises-to-singapore-malaysia-for-wildfire-haze",
    "gathered": "2026-11-16T05:12:24Z"
   },
@@ -299,6 +329,17 @@
  ],
  "business": [
   {
+   "h": "Companies use tariff refunds for executive bonuses",
+   "b": "ProPublica found firms including Stanley Black & Decker and TJ Maxx's parent are spending refunds on bonuses rather than reimbursing consumers.",
+   "date": "2026-11-16",
+   "publisher": "ProPublica",
+   "title": "These Companies Are Using Trump’s Tariff Refunds for Executive Bonuses",
+   "url": "https://www.propublica.org/article/trump-tariff-refunds-corporate-bonuses",
+   "published": "2026-11-16T11:00:00Z",
+   "updated": "2026-11-16T11:00:15Z",
+   "gathered": "2026-11-16T11:13:56Z"
+  },
+  {
    "h": "Who made Sydney Sweeney's jeans?",
    "b": "NPR traces American Eagle denim to garment workers in Karachi, Pakistan, and their working conditions.",
    "date": "2026-11-15",
@@ -313,7 +354,19 @@
    "gathered": "2026-11-15T23:12:04Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "Sandpipers fly 17,000 miles a year; climate change may make it harder",
+   "b": "The robin-sized shorebirds flap the whole way between Alaska and Argentina, and scientists are studying how they do it.",
+   "date": "2026-11-16",
+   "publisher": "KUOW",
+   "title": "These birds fly 17,000 miles every year. Climate change could make it harder",
+   "url": "https://www.kuow.org/npr-news/2026-11-16/these-birds-fly-17-000-miles-every-year-climate-change-could-make-it-harder",
+   "published": "2026-11-16T10:00:00Z",
+   "updated": "2026-11-16T10:19:46Z",
+   "gathered": "2026-11-16T11:13:56Z"
+  }
+ ],
  "sports": [
   {
    "h": "49ers beat Cowboys 46-40 in a first-ever NFL score",
@@ -362,6 +415,16 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "Mamdani to disband NYPD's Strategic Response Group",
+   "b": "The mayor will split the protest unit's functions and create a new unit for peaceful demonstrations.",
+   "date": "2026-11-16",
+   "publisher": "Gothamist",
+   "title": "Mamdani announces plan to disband NYPD’s Strategic Response Group",
+   "url": "https://gothamist.com/news/mamdani-announces-plan-to-disband-nypds-strategic-response-group",
+   "published": "2026-11-16T11:06:49Z",
+   "gathered": "2026-11-16T11:13:56Z"
+  },
   {
    "h": "Bronx man charged with killing his elderly aunt",
    "b": "Police say 75-year-old Carmen Nunez was found beaten in the Manida Street home she shared with her nephew, who was charged with murder.",
@@ -461,7 +524,18 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "Meet the Syracuse artist who restores subway mosaics",
+   "b": "Robert Shenfeld, 73, is the one man the MTA relies on to restore its century-old station name tiles.",
+   "date": "2026-11-16",
+   "publisher": "Gothamist",
+   "title": "Meet the Syracuse tile guy with a monopoly on NYC subway mosaics",
+   "url": "https://gothamist.com/news/meet-the-syracuse-tile-guy-with-a-monopoly-on-nyc-subway-mosaics",
+   "published": "2026-11-16T11:01:02Z",
+   "gathered": "2026-11-16T11:13:56Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",

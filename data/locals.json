@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 41,
+    "temp": 39,
     "cond": "Overcast",
-    "wind": "NE 13 mph",
-    "humidity": 65,
-    "obs": "16 Nov 04:52 am EST"
+    "wind": "E 8 mph",
+    "humidity": 73,
+    "obs": "16 Nov 05:52 am EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -80,8 +80,6 @@
     "h": "Lions rout Patriots 35-10 in Munich after Maye hurt",
     "b": "Drake Maye was knocked out by Aidan Hutchinson's sack, and Jared Goff threw three touchdown passes.",
     "date": "2026-11-15",
-    "publisher": "WBUR",
-    "title": "Lions' 35-10 rout over Patriots after Maye injured in Munich",
     "url": "https://www.wbur.org/news/2026/11/15/lions-35-10-rout-over-patriots-after-maye-injured-in-munich",
     "gathered": "2026-11-15T23:12:04Z"
    }
@@ -145,7 +143,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -156,6 +154,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago is $55 billion in debt, threatening city services",
+    "b": "A WTTW and ProPublica investigation traces decades of pension mismanagement and heavy borrowing.",
+    "date": "2026-11-16",
+    "publisher": "ProPublica",
+    "title": "Chicago Is $55 Billion in Debt, With No End in Sight. It’s a Threat to City Services.",
+    "url": "https://www.propublica.org/article/chicago-debt-burden-public-health-safety",
+    "published": "2026-11-16T10:00:00Z",
+    "updated": "2026-11-16T10:00:16Z",
+    "gathered": "2026-11-16T11:13:56Z"
+   },
    {
     "h": "11 Chicago ward races are uncontested in February",
     "b": "Ten incumbents are guaranteed reelection on Feb. 23 even as the City Council grows more independent from Mayor Johnson.",
@@ -183,9 +192,9 @@
    "now": {
     "temp": 35,
     "cond": "Fair",
-    "wind": "S 3 mph",
+    "wind": "Calm",
     "humidity": 89,
-    "obs": "16 Nov 03:53 am CST"
+    "obs": "16 Nov 04:53 am CST"
    },
    "periods": [
     {
@@ -238,7 +247,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -260,24 +269,29 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "New Capitol Hill venue refuses to work with AEG, Live Nation",
+    "b": "The DIY music space says no AI and no corporate promoters.",
+    "date": "2026-11-16",
+    "publisher": "Denverite",
+    "title": "This new Capitol Hill music venue refuses to work with AEG and Live Nation",
+    "url": "https://denverite.com/2026/11/16/poison-pit-capitol-hill-new-venue/",
+    "published": "2026-11-16T11:00:00Z",
+    "gathered": "2026-11-16T11:13:56Z"
+   }
+  ],
   "weather": {
    "now": null,
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 34,
-     "text": "Partly cloudy, with a low around 34. Calm wind. "
-    },
-    {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
      "text": "Mostly sunny, with a high near 64. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 36,
      "text": "Partly cloudy, with a low around 36. Light and variable wind. "
@@ -298,7 +312,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 59,
-     "text": "Sunny, with a high near 59."
+     "text": "Sunny, with a high near 59. West southwest wind 11 to 14 mph becoming northwest in the afternoon. Winds could gust as high as 23 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 30,
+     "text": "Mostly clear, with a low around 30."
     }
    ]
   },
@@ -314,7 +334,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -352,16 +372,10 @@
    "now": {
     "temp": 63,
     "wind": "NW 1 mph",
-    "humidity": 73,
-    "obs": "16 Nov 01:55 AM PST"
+    "humidity": 74,
+    "obs": "16 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 57,
-     "text": "Mostly cloudy, with a low around 57. Calm wind. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -391,6 +405,12 @@
      "kind": "high",
      "temp": 67,
      "text": "Mostly sunny, with a high near 67."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "Rain likely, then rain and possibly a thunderstorm after 4am.  Low around 53. Chance of precipitation is 80%."
     }
    ]
   },
@@ -406,7 +426,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -417,6 +437,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Mamdani to disband NYPD's Strategic Response Group",
+    "b": "The mayor will split the protest unit's functions and create a new unit for peaceful demonstrations.",
+    "date": "2026-11-16",
+    "publisher": "Gothamist",
+    "title": "Mamdani announces plan to disband NYPD’s Strategic Response Group",
+    "url": "https://gothamist.com/news/mamdani-announces-plan-to-disband-nypds-strategic-response-group",
+    "published": "2026-11-16T11:06:49Z",
+    "gathered": "2026-11-16T11:13:56Z"
+   },
    {
     "h": "Bronx man charged with killing his elderly aunt",
     "b": "Police say 75-year-old Carmen Nunez was found beaten in the Manida Street home she shared with her nephew, who was charged with murder.",
@@ -528,9 +558,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Meet the Syracuse artist who restores subway mosaics",
+    "b": "Robert Shenfeld, 73, is the one man the MTA relies on to restore its century-old station name tiles.",
+    "date": "2026-11-16",
+    "publisher": "Gothamist",
+    "title": "Meet the Syracuse tile guy with a monopoly on NYC subway mosaics",
+    "url": "https://gothamist.com/news/meet-the-syracuse-tile-guy-with-a-monopoly-on-nyc-subway-mosaics",
+    "published": "2026-11-16T11:01:02Z",
+    "gathered": "2026-11-16T11:13:56Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -540,6 +581,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Eurotunnel announces 'breakthrough' on EU border checks",
+    "b": "Getlink says an airport-style camera system will let it roll out the EES passport checks at Folkestone and Calais.",
+    "date": "2026-11-16",
+    "publisher": "The Local France",
+    "title": "EU 'breakthrough' to allow streamlined checks at UK-France border",
+    "url": "https://www.thelocal.fr/20261116/eu-breakthrough-to-allow-streamlined-checks-at-uk-france-border",
+    "published": "2026-11-16T11:08:24Z",
+    "updated": "2026-11-16T11:08:25Z",
+    "gathered": "2026-11-16T11:13:56Z"
+   },
    {
     "h": "France eases citizenship rules for foreign retirees",
     "b": "Interior Minister Laurent Nunez says naturalization checks have been adapted to account for retirees' circumstances.",
@@ -555,11 +607,7 @@
     "h": "Paris police ban protests near some schools and universities",
     "b": "The order covers 10 lycées and university sites including the Sorbonne through Friday, amid a two-month blockade movement.",
     "date": "2026-11-16",
-    "publisher": "The Local France",
-    "title": "Police ban protests near some Paris schools and universities",
     "url": "https://www.thelocal.fr/20261116/police-ban-protests-near-some-paris-schools-and-universities",
-    "published": "2026-11-16T07:54:16Z",
-    "updated": "2026-11-16T07:54:17Z",
     "gathered": "2026-11-16T10:02:05Z"
    },
    {
@@ -597,7 +645,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "goodnews": []
  },
  {
@@ -610,18 +658,12 @@
   "weather": {
    "now": {
     "temp": 43,
-    "cond": "Mostly Cloudy",
-    "wind": "SE 3 mph",
-    "humidity": 96,
-    "obs": "16 Nov 01:53 AM PST"
+    "cond": "Overcast",
+    "wind": "Calm",
+    "humidity": 100,
+    "obs": "16 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 46,
-     "text": "Mostly cloudy, with a steady temperature around 46. South wind around 5 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -651,6 +693,12 @@
      "kind": "high",
      "temp": 49,
      "text": "A 30 percent chance of rain after 10am.  Mostly cloudy, with a high near 49."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 41,
+     "text": "Mostly cloudy, with a low around 41."
     }
    ]
   },
@@ -666,7 +714,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-16T11:13:00Z",
+  "updatedAt": "2026-11-16T14:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
