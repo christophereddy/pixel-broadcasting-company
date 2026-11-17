@@ -7,6 +7,17 @@
   },
   "local": [
    {
+    "h": "Georgia breaks ground on $409M psychiatric hospital",
+    "b": "It is the state's first new forensic psychiatric hospital in more than 50 years.",
+    "date": "2026-11-17",
+    "publisher": "WABE",
+    "title": "Georgia begins construction on new $400M psychiatric hospital",
+    "url": "https://www.wabe.org/georgia-begins-construction-on-new-400m-psychiatric-hospital/",
+    "published": "2026-11-17T15:58:31Z",
+    "updated": "2026-11-17T15:58:34Z",
+    "gathered": "2026-11-17T17:12:41Z"
+   },
+   {
     "h": "Zoox robotaxis arrive in Atlanta",
     "b": "The Amazon-owned company starts near Atlantic Station, Woodward and Home Park and will expand as testing progresses.",
     "date": "2026-11-16",
@@ -14,7 +25,7 @@
     "title": "Zoox robotaxis arrive on the streets of Atlanta",
     "url": "https://www.wabe.org/zoox-robotaxis-arrive-on-the-streets-of-atlanta/",
     "published": "2026-11-16T23:52:16Z",
-    "updated": "2026-11-16T23:52:23Z",
+    "updated": "2026-11-17T14:57:49Z",
     "gathered": "2026-11-17T04:05:40Z"
    },
    {
@@ -22,10 +33,10 @@
     "b": "They are charged with misusing the license plate reader system.",
     "date": "2026-11-16",
     "publisher": "WABE",
-    "title": "Two Metro Atlanta officers arrested for Flock camera misuse",
+    "title": "Two metro Atlanta officers arrested for Flock camera misuse",
     "url": "https://www.wabe.org/two-metro-atlanta-officers-arrested-due-to-improper-license-plate-reader-system-use/",
     "published": "2026-11-16T20:33:00Z",
-    "updated": "2026-11-16T21:48:28Z",
+    "updated": "2026-11-17T15:07:53Z",
     "gathered": "2026-11-16T23:16:32Z"
    },
    {
@@ -64,11 +75,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 55,
     "cond": "A Few Clouds",
-    "wind": "E 13 mph",
-    "humidity": 63,
-    "obs": "17 Nov 08:52 am EST"
+    "wind": "E 17 mph",
+    "humidity": 44,
+    "obs": "17 Nov 10:52 am EST"
    },
    "periods": [
     {
@@ -121,7 +132,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -164,18 +175,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Fair",
-    "wind": "NW 12 mph",
-    "humidity": 61,
-    "obs": "17 Nov 08:54 am EST"
+    "temp": 53,
+    "cond": "A Few Clouds",
+    "wind": "W 9 mph",
+    "humidity": 48,
+    "obs": "17 Nov 11:54 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 57,
-     "text": "Sunny, with a high near 57. West wind 6 to 10 mph, with gusts as high as 21 mph. "
+     "text": "Sunny, with a high near 57. West wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -221,7 +232,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -232,6 +243,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Cook County Jail death suit to settle for record $7.25M",
+    "b": "It would be the largest jail-related payout since at least 2007.",
+    "date": "2026-11-17",
+    "publisher": "WBEZ",
+    "title": "Cook County Jail wrongful death lawsuit set to settle for record $7.25 million",
+    "url": "https://www.wbez.org/prisoncast-illinois/2026/11/17/cook-county-jail-tom-dart-cory-ulmer",
+    "published": "2026-11-17T15:16:27Z",
+    "updated": "2026-11-17T15:16:27Z",
+    "gathered": "2026-11-17T17:12:41Z"
+   },
+   {
+    "h": "Construction begins on $917M O'Hare concourse",
+    "b": "Officials broke ground on the new Concourse E at Terminal 2.",
+    "date": "2026-11-17",
+    "publisher": "WBEZ",
+    "title": "Construction begins on $917 million concourse at O’Hare’s Terminal 2",
+    "url": "https://www.wbez.org/architecture/2026/11/17/construction-groundbreaking-ohare-917-million-concourse-e-terminal-2",
+    "published": "2026-11-17T16:58:46Z",
+    "updated": "2026-11-17T16:58:46Z",
+    "gathered": "2026-11-17T17:12:41Z"
+   },
    {
     "h": "Chicago renters face volatile utility bills under ratio billing",
     "b": "More landlords are passing utility costs to tenants, and bills now change sharply month to month.",
@@ -285,24 +318,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 38,
+    "temp": 53,
     "cond": "Fair",
-    "wind": "SW 7 mph",
-    "humidity": 83,
-    "obs": "17 Nov 07:53 am CST"
+    "wind": "SW 12 mph",
+    "humidity": 55,
+    "obs": "17 Nov 10:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "Sunny, with a high near 57. Southwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Sunny, with a high near 57. South wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Partly cloudy, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday",
@@ -342,7 +375,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -360,11 +393,7 @@
     "h": "50 people become citizens at Pilsen's Mexican art museum",
     "b": "It was the National Museum of Mexican Art's first naturalization ceremony in its 44-year history.",
     "date": "2026-11-16",
-    "publisher": "WBEZ",
-    "title": "At Pilsen’s Mexican art museum, 50 people take oath of U.S. citizenship",
     "url": "https://www.wbez.org/immigration/2026/11/16/at-pilsens-mexican-art-museum-50-people-take-oath-of-u-s-citizenship",
-    "published": "2026-11-16T22:13:31Z",
-    "updated": "2026-11-16T22:13:31Z",
     "gathered": "2026-11-16T23:16:32Z"
    }
   ]
@@ -399,18 +428,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 34,
+    "temp": 46,
     "cond": "Mostly Cloudy",
-    "wind": "S 6 mph",
-    "humidity": 69,
-    "obs": "17 Nov 05:58 am MST"
+    "wind": "S 5 mph",
+    "humidity": 60,
+    "obs": "17 Nov 08:58 am MST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Light and variable wind becoming south southeast around 6 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 66. Southeast wind 3 to 6 mph. "
     },
     {
      "name": "Tonight",
@@ -456,7 +485,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -516,10 +545,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 62,
     "wind": "NW 5 mph",
-    "humidity": 41,
-    "obs": "17 Nov 06:10 AM PST"
+    "humidity": 39,
+    "obs": "17 Nov 09:10 AM PST"
    },
    "periods": [
     {
@@ -572,7 +601,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -584,13 +613,33 @@
   },
   "local": [
    {
+    "h": "Astoria board weighs 3 high-rise towers on Steinway Street",
+    "b": "The proposals have become a lightning rod over the neighborhood's redevelopment.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "Astoria board eyes plans for 3 high-rise towers on Steinway Street",
+    "url": "https://gothamist.com/news/astoria-board-eyes-plans-for-3-high-rise-towers-on-steinway-street",
+    "published": "2026-11-17T15:00:56Z",
+    "gathered": "2026-11-17T17:12:41Z"
+   },
+   {
+    "h": "Mamdani details plan for carriage horse drivers",
+    "b": "The industry's 200 drivers and stable hands would get career training at LaGuardia Community College; the union is skeptical.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "Mamdani's plan to wind down carriage horse industry takes shape",
+    "url": "https://gothamist.com/news/mamdanis-plan-to-wind-down-carriage-horse-industry-takes-shape",
+    "published": "2026-11-17T14:57:51Z",
+    "gathered": "2026-11-17T17:12:41Z"
+   },
+   {
     "h": "Council bill pits Amazon against Teamsters over delivery workers",
     "b": "More than 40 delivery service providers bring Amazon packages to New Yorkers' doorsteps.",
     "date": "2026-11-17",
     "publisher": "Gothamist",
     "title": "NYC Council bill pits Amazon against Teamsters union in fight over delivery workers",
     "url": "https://gothamist.com/news/nyc-council-bill-pits-amazon-against-teamsters-union-in-fight-over-delivery-workers",
-    "published": "2026-11-17T11:00:47Z",
+    "published": "2026-11-17T11:00:00Z",
     "gathered": "2026-11-17T13:44:05Z"
    },
    {
@@ -676,18 +725,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 53,
     "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 63,
-    "obs": "17 Nov 08:51 am EST"
+    "wind": "W 3 mph",
+    "humidity": 48,
+    "obs": "17 Nov 11:51 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 57,
-     "text": "Sunny, with a high near 57. West wind 7 to 10 mph. "
+     "text": "Sunny, with a high near 57. West wind around 10 mph. "
     },
     {
      "name": "Tonight",
@@ -733,7 +782,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -766,6 +815,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "€50 train fine grows into €148,000 legal bill",
+    "b": "The man told French media he is being forced to sell his house.",
+    "date": "2026-11-17",
+    "publisher": "The Local France",
+    "title": "Frenchman landed with €148k legal bill after train ticket fine",
+    "url": "https://www.thelocal.fr/20261117/frenchman-landed-with-e148k-legal-bill-after-train-ticket-fine",
+    "published": "2026-11-17T15:05:21Z",
+    "updated": "2026-11-17T15:05:22Z",
+    "gathered": "2026-11-17T17:12:41Z"
+   },
    {
     "h": "France sends fertility letters to all 29-year-olds",
     "b": "The government letters explain steps people can take to preserve their fertility.",
@@ -840,7 +900,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "goodnews": []
  },
  {
@@ -881,11 +941,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 46,
     "cond": "Overcast",
-    "wind": "SE 4 mph",
-    "humidity": 86,
-    "obs": "17 Nov 05:55 AM PST"
+    "wind": "Calm",
+    "humidity": 75,
+    "obs": "17 Nov 09:00 AM PST"
    },
    "periods": [
     {
@@ -938,7 +998,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T17:12:00Z",
+  "updatedAt": "2026-11-17T20:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
