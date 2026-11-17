@@ -7,6 +7,17 @@
   },
   "local": [
    {
+    "h": "Zoox robotaxis arrive in Atlanta",
+    "b": "The Amazon-owned company starts near Atlantic Station, Woodward and Home Park and will expand as testing progresses.",
+    "date": "2026-11-16",
+    "publisher": "WABE",
+    "title": "Zoox robotaxis arrive on the streets of Atlanta",
+    "url": "https://www.wabe.org/zoox-robotaxis-arrive-on-the-streets-of-atlanta/",
+    "published": "2026-11-16T23:52:16Z",
+    "updated": "2026-11-16T23:52:23Z",
+    "gathered": "2026-11-17T04:05:40Z"
+   },
+   {
     "h": "Two Metro Atlanta officers arrested over Flock camera misuse",
     "b": "They are charged with misusing the license plate reader system.",
     "date": "2026-11-16",
@@ -53,11 +64,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 46,
     "cond": "A Few Clouds",
-    "wind": "E 7 mph",
-    "humidity": 45,
-    "obs": "16 Nov 17:52 pm EST"
+    "wind": "E 8 mph",
+    "humidity": 61,
+    "obs": "16 Nov 22:52 pm EST"
    },
    "periods": [
     {
@@ -110,7 +121,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -134,6 +145,16 @@
   },
   "local": [
    {
+    "h": "Judge sets March retrial for Lindsay Clancy",
+    "b": "Her first trial ended in a mistrial; 11 jurors favored acquittal on insanity grounds.",
+    "date": "2026-11-16",
+    "publisher": "PBS NewsHour",
+    "title": "Judge sets March retrial date for Lindsay Clancy in deaths of her 3 children",
+    "url": "https://www.pbs.org/newshour/nation/judge-sets-march-retrial-date-for-lindsay-clancy-in-deaths-of-her-3-children",
+    "published": "2026-11-17T00:23:23Z",
+    "gathered": "2026-11-17T04:05:40Z"
+   },
+   {
     "h": "Lindsay Clancy to face new trial in spring",
     "b": "Her retrial in the deaths of her three children is set for March 29 after September's mistrial, with no change to the charges.",
     "date": "2026-11-16",
@@ -143,11 +164,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "A Few Clouds",
-    "wind": "NW 7 mph",
-    "humidity": 52,
-    "obs": "16 Nov 17:54 pm EST"
+    "temp": 43,
+    "cond": "Fair",
+    "wind": "W 8 mph",
+    "humidity": 60,
+    "obs": "16 Nov 22:54 pm EST"
    },
    "periods": [
     {
@@ -200,7 +221,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -215,11 +236,7 @@
     "h": "Judge vacates Anthony Garrett's conviction in 1992 killing",
     "b": "The judge found Garrett's confession in the murder of 7-year-old Dantrell Davis was likely tortured.",
     "date": "2026-11-16",
-    "publisher": "WBEZ",
-    "title": "High-profile murder conviction tossed amid torture claims involving CPD detective tied to Gitmo abuses",
     "url": "https://www.wbez.org/criminal-justice/2026/11/16/richard-zuley-anthony-garrett-dantrell-davis-torture-guantanamo-bay",
-    "published": "2026-11-16T18:35:06Z",
-    "updated": "2026-11-16T18:35:06Z",
     "gathered": "2026-11-16T20:38:02Z"
    },
    {
@@ -257,18 +274,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Mostly Cloudy",
-    "wind": "SW 5 mph",
-    "humidity": 48,
-    "obs": "16 Nov 16:53 pm CST"
+    "temp": 43,
+    "cond": "Fair",
+    "wind": "S 8 mph",
+    "humidity": 65,
+    "obs": "16 Nov 21:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 37,
-     "text": "Mostly clear, with a low around 37. South southwest wind around 10 mph. "
+     "temp": 33,
+     "text": "Clear, with a low around 33. South southwest wind around 10 mph. "
     },
     {
      "name": "Tuesday",
@@ -314,7 +331,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -360,18 +377,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 44,
     "cond": "Mostly Cloudy",
-    "wind": "NE 6 mph",
-    "humidity": 19,
-    "obs": "16 Nov 14:58 pm MST"
+    "wind": "S 9 mph",
+    "humidity": 55,
+    "obs": "16 Nov 19:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 36,
-     "text": "Mostly cloudy, with a low around 36. Light and variable wind. "
+     "text": "Mostly cloudy, with a low around 36. Light southwest wind. "
     },
     {
      "name": "Tuesday",
@@ -395,7 +412,7 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 30,
-     "text": "Mostly clear, with a low around 30."
+     "text": "Mostly clear, with a low around 30. West southwest wind around 6 mph becoming calm  after midnight. "
     },
     {
      "name": "Thursday",
@@ -417,7 +434,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -432,55 +449,43 @@
     "h": "California donates 1,300 hospital beds to Ukraine",
     "b": "Gov. Newsom visited Lviv.",
     "date": "2026-11-16",
-    "publisher": "LAist",
-    "title": "California donates 1,300 hospital beds and medical supplies to Ukraine",
     "url": "https://laist.com/news/california-donates-1-300-hospital-beds-and-medical-supplies-to-ukraine",
-    "published": "2026-11-16T19:00:00Z",
-    "updated": "2026-11-16T19:00:00Z",
     "gathered": "2026-11-16T20:38:02Z"
    },
    {
     "h": "What happens to Raman's council seat when she becomes mayor",
     "b": "Nithya Raman takes office Dec. 14, which could leave Council District 4 temporarily without a representative.",
     "date": "2026-11-16",
-    "publisher": "LAist",
-    "title": "What happens to Nithya Raman's LA City Council seat once she's sworn in as mayor?",
     "url": "https://laist.com/news/politics/what-happens-to-nithya-raman-la-city-council-seat-once-sworn-in-as-mayor",
-    "published": "2026-11-16T13:00:00Z",
-    "updated": "2026-11-16T18:55:35Z",
     "gathered": "2026-11-16T14:18:13Z"
    },
    {
     "h": "Eaton Fire survivors face Nov. 30 Edison payout deadline",
     "b": "Survivors must decide whether to apply for Southern California Edison's compensation program or hold out for a lawsuit.",
     "date": "2026-11-16",
-    "publisher": "LAist",
-    "title": "What Eaton Fire survivors need to know as Edison payout and lawsuit deadlines approach",
     "url": "https://laist.com/news/climate-environment/eaton-fire-survivors-edison-payout-and-lawsuit-deadlines",
-    "published": "2026-11-16T13:00:00Z",
-    "updated": "2026-11-16T13:00:03Z",
     "gathered": "2026-11-16T14:18:13Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 70,
-    "wind": "E 2 mph",
-    "humidity": 57,
-    "obs": "16 Nov 03:10 PM PST"
+    "temp": 66,
+    "wind": "E 1 mph",
+    "humidity": 66,
+    "obs": "16 Nov 07:55 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 53,
-     "text": "A chance of rain and thunderstorms before 10pm, then a slight chance of rain.  Partly cloudy, with a low around 53. Northwest wind around 10 mph.  Chance of precipitation is 30%."
+     "temp": 52,
+     "text": "A 30 percent chance of rain and thunderstorms before 10pm.  Partly cloudy, with a low around 52. Northwest wind around 10 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. West northwest wind around 10 mph. "
+     "temp": 65,
+     "text": "Sunny, with a high near 65. West northwest wind around 10 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -497,8 +502,8 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Rain likely, then rain and possibly a thunderstorm after 4am.  Low around 53. Chance of precipitation is 80%."
+     "temp": 54,
+     "text": "Rain, with thunderstorms also possible after 4am.  Low around 54. Southwest wind 5 to 10 mph becoming southeast after midnight.  Chance of precipitation is 80%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thursday",
@@ -520,7 +525,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -531,6 +536,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Man charged with murder in Elizabeth vigil shooting",
+    "b": "Travon Holmes, 29, is charged in the shooting that left one dead and four injured.",
+    "date": "2026-11-16",
+    "publisher": "Gothamist",
+    "title": "Man charged with murder in shooting at NJ vigil that left 1 dead, 4 injured",
+    "url": "https://gothamist.com/news/man-charged-with-murder-in-shooting-at-nj-vigil-that-left-1-dead-4-injured",
+    "published": "2026-11-17T00:55:26Z",
+    "gathered": "2026-11-17T04:05:40Z"
+   },
    {
     "h": "MTA falls further behind on subway signal upgrades",
     "b": "A consultant's report found the $2B effort slipping further behind schedule.",
@@ -559,7 +574,7 @@
     "title": "2 Co-op City peace officers shot during Bronx wellness check, officials say",
     "url": "https://gothamist.com/news/3-people-shot-in-co-op-city-in-the-bronx-including-two-peace-officers-nypd-says",
     "published": "2026-11-16T18:08:00Z",
-    "updated": "2026-11-16T19:29:00Z",
+    "updated": "2026-11-17T01:48:00Z",
     "gathered": "2026-11-16T20:38:02Z"
    },
    {
@@ -595,18 +610,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 45,
     "cond": "Fair",
-    "wind": "W 6 mph",
-    "humidity": 48,
-    "obs": "16 Nov 17:51 pm EST"
+    "wind": "Calm",
+    "humidity": 63,
+    "obs": "16 Nov 22:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 43,
-     "text": "Clear, with a low around 43. Northwest wind 6 to 8 mph. "
+     "temp": 40,
+     "text": "Clear, with a low around 40. Northwest wind around 6 mph. "
     },
     {
      "name": "Tuesday",
@@ -652,7 +667,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -749,7 +764,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "goodnews": []
  },
  {
@@ -781,11 +796,7 @@
     "h": "New AG rules aim to speed up public records requests",
     "b": "The state attorney general's rules target Washington's public records process.",
     "date": "2026-11-16",
-    "publisher": "KUOW",
-    "title": "New rules seek to speed up Washington's public records system",
     "url": "https://www.kuow.org/governing/2026-11-16/new-rules-seek-to-speed-up-wa-public-records-system",
-    "published": "2026-11-16T18:11:53Z",
-    "updated": "2026-11-16T18:12:07Z",
     "gathered": "2026-11-16T20:38:02Z"
    },
    {
@@ -802,18 +813,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Clear",
-    "wind": "SW 5 mph",
-    "humidity": 62,
-    "obs": "16 Nov 02:55 PM PST"
+    "temp": 46,
+    "cond": "Overcast",
+    "wind": "Calm",
+    "humidity": 87,
+    "obs": "16 Nov 07:15 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "A 10 percent chance of rain before 7pm.  Partly cloudy, with a low around 42. Light south southeast wind. "
+     "text": "Partly cloudy, with a low around 42. Light south southeast wind. "
     },
     {
      "name": "Tuesday",
@@ -859,7 +870,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T02:12:00Z",
+  "updatedAt": "2026-11-17T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
