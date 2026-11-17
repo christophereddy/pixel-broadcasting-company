@@ -64,15 +64,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 43,
     "cond": "A Few Clouds",
     "wind": "E 8 mph",
-    "humidity": 61,
-    "obs": "16 Nov 22:52 pm EST"
+    "humidity": 68,
+    "obs": "16 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 40,
      "text": "Clear, with a low around 40. East wind around 5 mph. "
@@ -121,7 +121,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -164,48 +164,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 41,
     "cond": "Fair",
-    "wind": "W 8 mph",
-    "humidity": 60,
-    "obs": "16 Nov 22:54 pm EST"
+    "wind": "NW 7 mph",
+    "humidity": 65,
+    "obs": "16 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
-     "temp": 32,
-     "text": "Clear, with a low around 32. Light west wind. "
+     "temp": 36,
+     "text": "Clear, with a low around 36. Northwest wind around 6 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 55,
-     "text": "Sunny, with a high near 55. West wind 5 to 7 mph. "
+     "temp": 57,
+     "text": "Sunny, with a high near 57. West wind 5 to 10 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. West wind around 6 mph. "
+     "temp": 43,
+     "text": "Clear, with a low around 43. West wind 8 to 10 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. West wind 6 to 8 mph. "
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66. West wind 8 to 11 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "Mostly clear, with a low around 40. West wind 3 to 6 mph. "
+     "temp": 44,
+     "text": "Mostly clear, with a low around 44. West wind 6 to 9 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. Southwest wind 3 to 5 mph. "
+     "temp": 66,
+     "text": "Sunny, with a high near 66. Northwest wind 6 to 8 mph becoming southwest in the afternoon. "
     }
    ]
   },
@@ -221,7 +221,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -274,18 +274,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 42,
     "cond": "Fair",
-    "wind": "S 8 mph",
-    "humidity": 65,
-    "obs": "16 Nov 21:53 pm CST"
+    "wind": "S 7 mph",
+    "humidity": 71,
+    "obs": "16 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 33,
-     "text": "Clear, with a low around 33. South southwest wind around 10 mph. "
+     "temp": 38,
+     "text": "Clear, with a steady temperature around 38. South southwest wind around 10 mph. "
     },
     {
      "name": "Tuesday",
@@ -331,7 +331,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -380,8 +380,8 @@
     "temp": 44,
     "cond": "Mostly Cloudy",
     "wind": "S 9 mph",
-    "humidity": 55,
-    "obs": "16 Nov 19:58 pm MST"
+    "humidity": 60,
+    "obs": "16 Nov 21:58 pm MST"
    },
    "periods": [
     {
@@ -434,7 +434,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -469,10 +469,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "wind": "E 1 mph",
-    "humidity": 66,
-    "obs": "16 Nov 07:55 PM PST"
+    "temp": 65,
+    "wind": "Calm",
+    "humidity": 68,
+    "obs": "16 Nov 08:55 PM PST"
    },
    "periods": [
     {
@@ -525,7 +525,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -610,15 +610,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 44,
     "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 63,
-    "obs": "16 Nov 22:51 pm EST"
+    "wind": "W 3 mph",
+    "humidity": 65,
+    "obs": "16 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 40,
      "text": "Clear, with a low around 40. Northwest wind around 6 mph. "
@@ -667,7 +667,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -764,7 +764,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "goodnews": []
  },
  {
@@ -803,58 +803,54 @@
     "h": "Immigration lawyers welcome Seattle US Attorney's pullback",
     "b": "The office says it can't keep up with detention release petitions; lawyers say clients could be freed sooner.",
     "date": "2026-11-16",
-    "publisher": "KUOW",
-    "title": "Immigration lawyers say pullback by Seattle’s U.S. attorney could help people in detention",
     "url": "https://www.kuow.org/immigration/2026-11-16/immigration-lawyers-say-pullback-by-seattles-u-s-attorney-could-help-people-in-detention",
-    "published": "2026-11-16T19:03:52Z",
-    "updated": "2026-11-16T19:03:52Z",
     "gathered": "2026-11-16T20:38:02Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 45,
     "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 87,
-    "obs": "16 Nov 07:15 PM PST"
+    "wind": "SE 5 mph",
+    "humidity": 89,
+    "obs": "16 Nov 08:53 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "Partly cloudy, with a low around 42. Light south southeast wind. "
+     "temp": 44,
+     "text": "Mostly clear, with a steady temperature around 44. Calm wind. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 50,
-     "text": "Mostly sunny, with a high near 50. Light south wind. "
+     "text": "Mostly sunny, with a high near 50. Calm wind. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Increasing clouds, with a steady temperature around 45. Calm wind becoming north northeast around 5 mph after midnight. "
+     "temp": 39,
+     "text": "Increasing clouds, with a low around 39. Calm wind becoming east around 5 mph after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 49,
-     "text": "A 20 percent chance of rain.  Mostly cloudy, with a high near 49. North northeast wind around 6 mph. "
+     "text": "A 50 percent chance of rain, mainly between 9am and 4pm.  Cloudy, with a high near 49. North wind around 6 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 10 percent chance of rain before 10pm.  Mostly cloudy, with a low around 41. Light north northeast wind. "
+     "text": "A 20 percent chance of rain before 10pm.  Mostly cloudy, with a low around 41. Light north wind. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 49,
-     "text": "Mostly sunny, with a high near 49."
+     "text": "Partly sunny, with a high near 49."
     }
    ]
   },
@@ -870,7 +866,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T05:12:00Z",
+  "updatedAt": "2026-11-17T08:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

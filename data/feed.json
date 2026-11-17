@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-17T05:12:00Z",
+ "updatedAt": "2026-11-17T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Two tankers hit mines in Strait of Hormuz, Iran's IRGC says",
+   "b": "The IRGC Navy said the tankers caught fire while crossing on a route Tehran considers unauthorised; a drone alert also hit a gas field in northern Iraq.",
+   "date": "2026-11-16",
+   "publisher": "Al Jazeera",
+   "title": "Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field",
+   "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
+   "gathered": "2026-11-17T05:12:09Z"
+  },
   {
    "h": "Ukraine holds peace talks with US and European officials",
    "b": "The talks came hours before Kyiv's mayor reported strikes on two bridges in the capital.",
@@ -501,15 +510,15 @@
  ],
  "weather": {
   "now": {
-   "temp": 45,
+   "temp": 44,
    "cond": "Fair",
-   "wind": "Calm",
-   "humidity": 63,
-   "obs": "16 Nov 22:51 pm EST"
+   "wind": "W 3 mph",
+   "humidity": 65,
+   "obs": "16 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 40,
     "text": "Clear, with a low around 40. Northwest wind around 6 mph. "
