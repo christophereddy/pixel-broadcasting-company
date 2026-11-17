@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-17T08:11:00Z",
+ "updatedAt": "2026-11-17T11:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Bahrain thwarts drone attack; IRGC says it targeted US radar",
+   "b": "Iran's Revolutionary Guard said it hit a US radar system at Isa airbase; Bahrain's state TV said air defences stopped the drones.",
+   "date": "2026-11-17",
+   "publisher": "Al Jazeera",
+   "title": "Bahrain thwarts drone attack; Iran claims targeting US military radar",
+   "url": "https://www.aljazeera.com/news/2026/11/17/bahrain-thwarts-drone-attack-iran-claims-targeting-us-military-radar",
+   "gathered": "2026-11-17T08:12:04Z"
+  },
   {
    "h": "Two tankers hit mines in Strait of Hormuz, Iran's IRGC says",
    "b": "The IRGC Navy said the tankers caught fire while crossing on a route Tehran considers unauthorised; a drone alert also hit a gas field in northern Iraq.",
@@ -34,11 +43,11 @@
    "gathered": "2026-11-17T04:05:40Z"
   },
   {
-   "h": "LIVE: Houthis advance in Yemen as Vance rejects 'forever war'",
+   "h": "LIVE: Bahrain says it intercepted Iran drone attack as IRGC says it targeted US radar",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-17",
    "publisher": "Al Jazeera",
-   "title": "Houthis advance in Yemen as Vance rejects ‘forever war’",
+   "title": "Bahrain says intercepted Iran drone attack as IRGC says targeted US radar",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
    "gathered": "2026-11-17T04:05:40Z"
   },
@@ -238,8 +247,6 @@
    "date": "2026-11-17",
    "place": "London, United Kingdom",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK seeks closer ties with EU after Brexit fail",
    "url": "https://www.aljazeera.com/news/2026/11/17/uk-seeks-closer-ties-with-eu-after-brexit-fail",
    "gathered": "2026-11-17T04:05:40Z"
   },
@@ -407,8 +414,6 @@
    "h": "Burrow throws for 409 yards and four TDs against Steelers",
    "b": "The Bengals quarterback is now the clear MVP front-runner.",
    "date": "2026-11-16",
-   "publisher": "CBS Sports",
-   "title": "Joe Burrow isn't just chasing MVP, he's chasing the greatest passing season ever",
    "url": "https://www.cbssports.com/nfl/news/joe-burrow-stats-mvp-bengals-qb-2026/",
    "gathered": "2026-11-16T23:16:32Z"
   },
@@ -510,36 +515,30 @@
  ],
  "weather": {
   "now": {
-   "temp": 44,
+   "temp": 43,
    "cond": "Fair",
-   "wind": "W 3 mph",
+   "wind": "Calm",
    "humidity": 65,
-   "obs": "16 Nov 23:51 pm EST"
+   "obs": "17 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 40,
-    "text": "Clear, with a low around 40. Northwest wind around 6 mph. "
-   },
    {
     "name": "Tuesday",
     "kind": "high",
     "temp": 57,
-    "text": "Sunny, with a high near 57. Northwest wind 5 to 8 mph. "
+    "text": "Sunny, with a high near 57. West wind 6 to 10 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 46,
-    "text": "Mostly clear, with a low around 46. West wind around 7 mph. "
+    "temp": 49,
+    "text": "Clear, with a low around 49. West wind around 8 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 61,
-    "text": "Sunny, with a high near 61. Northwest wind around 8 mph. "
+    "temp": 60,
+    "text": "Sunny, with a high near 60. West wind 7 to 9 mph. "
    },
    {
     "name": "Wednesday Night",
@@ -550,8 +549,14 @@
    {
     "name": "Thursday",
     "kind": "high",
-    "temp": 62,
-    "text": "Sunny, with a high near 62."
+    "temp": 61,
+    "text": "Sunny, with a high near 61."
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 46,
+    "text": "Partly cloudy, with a low around 46."
    }
   ]
  },
