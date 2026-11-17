@@ -64,21 +64,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 42,
     "cond": "A Few Clouds",
-    "wind": "E 6 mph",
-    "humidity": 77,
-    "obs": "17 Nov 02:52 am EST"
+    "wind": "E 13 mph",
+    "humidity": 71,
+    "obs": "17 Nov 07:52 am EST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 62,
      "text": "Sunny, with a high near 62. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Clear, with a low around 44. East wind 5 to 10 mph, with gusts as high as 20 mph. "
@@ -99,7 +99,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 66,
-     "text": "Partly sunny, with a high near 66."
+     "text": "Partly sunny, with a high near 66. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday Night",
@@ -121,7 +121,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -164,21 +164,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 42,
     "cond": "Fair",
     "wind": "W 8 mph",
-    "humidity": 68,
-    "obs": "17 Nov 02:54 am EST"
+    "humidity": 62,
+    "obs": "17 Nov 07:54 am EST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "Sunny, with a high near 57. West wind 5 to 10 mph, with gusts as high as 21 mph. "
+     "text": "Sunny, with a high near 57. West wind 6 to 10 mph, with gusts as high as 21 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "Mostly clear, with a low around 43. West wind 8 to 10 mph. "
@@ -221,7 +221,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -232,6 +232,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Chicago renters face volatile utility bills under ratio billing",
+    "b": "More landlords are passing utility costs to tenants, and bills now change sharply month to month.",
+    "date": "2026-11-17",
+    "publisher": "WBEZ",
+    "title": "Chicago renters struggle to keep up with gas and water bills as landlords switch to new way of billing",
+    "url": "https://www.wbez.org/housing/2026/11/17/ratio-utility-billing-leads-to-volatile-gas-water-bills-rubs",
+    "published": "2026-11-17T11:35:00Z",
+    "updated": "2026-11-17T11:35:04Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   },
    {
     "h": "Judge vacates Anthony Garrett's conviction in 1992 killing",
     "b": "The judge found Garrett's confession in the murder of 7-year-old Dantrell Davis was likely tortured.",
@@ -274,27 +285,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 37,
     "cond": "Fair",
-    "wind": "S 7 mph",
-    "humidity": 77,
-    "obs": "17 Nov 01:53 am CST"
+    "wind": "S 6 mph",
+    "humidity": 82,
+    "obs": "17 Nov 06:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 40,
-     "text": "Clear, with a low around 40. South southwest wind around 5 mph, with gusts as high as 10 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 57,
      "text": "Sunny, with a high near 57. Southwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
      "text": "Partly cloudy, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
@@ -309,13 +314,19 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 47,
-     "text": "Partly cloudy, with a low around 47. South southwest wind around 15 mph, with gusts as high as 20 mph. "
+     "text": "Cloudy, then gradually becoming partly cloudy, with a low around 47. South southwest wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 63,
-     "text": "Sunny, with a high near 63."
+     "text": "Sunny, with a high near 63. Southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "Mostly clear, with a low around 44."
     }
    ]
   },
@@ -331,9 +342,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Kyle Kinane's 'Kinanesgiving' returns",
+    "b": "The comedian's annual Chicago show offers a night of laughs before the holiday.",
+    "date": "2026-11-17",
+    "publisher": "WBEZ",
+    "title": "Kyle Kinane, the comedic architect of 'Kinanesgiving,' knows we all need a laugh about now",
+    "url": "https://www.wbez.org/comedy/2026/11/17/kyle-kinane-chicago-comic-thanksgiving-thalia-hall",
+    "published": "2026-11-17T11:35:00Z",
+    "updated": "2026-11-17T11:35:01Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   },
    {
     "h": "50 people become citizens at Pilsen's Mexican art museum",
     "b": "It was the National Museum of Mexican Art's first naturalization ceremony in its 44-year history.",
@@ -377,27 +399,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 34,
     "cond": "Mostly Cloudy",
-    "wind": "S 8 mph",
-    "humidity": 60,
-    "obs": "16 Nov 22:58 pm MST"
+    "wind": "S 6 mph",
+    "humidity": 69,
+    "obs": "17 Nov 05:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 36,
-     "text": "Mostly cloudy, with a low around 36. Light west southwest wind. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 66,
      "text": "Mostly sunny, with a high near 66. Light and variable wind becoming south southeast around 6 mph in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 38,
      "text": "Mostly clear, with a low around 38. South southwest wind 8 to 13 mph, with gusts as high as 21 mph. "
@@ -418,7 +434,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 54,
-     "text": "Mostly sunny, with a high near 54."
+     "text": "Mostly sunny, with a high near 54. Calm wind becoming northeast around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 32,
+     "text": "Partly cloudy, with a low around 32."
     }
    ]
   },
@@ -434,9 +456,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "denver-co",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Holiday markets in Denver this year",
+    "b": "Denverite rounds up where to shop for loved ones this season.",
+    "date": "2026-11-17",
+    "publisher": "Denverite",
+    "title": "Check out these holiday markets in Denver this year",
+    "url": "https://denverite.com/2026/11/17/denver-holiday-markets-2026/",
+    "published": "2026-11-17T11:00:00Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   }
+  ]
  },
  {
   "location": {
@@ -445,6 +478,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Inglewood mayor wins restraining order against council candidate",
+    "b": "A judge ordered Leonard Redway to stay 100 yards from Mayor James Butts for three years.",
+    "date": "2026-11-17",
+    "publisher": "LAist",
+    "title": "Inglewood mayor gets restraining order against City Council candidate",
+    "url": "https://laist.com/news/politics/inglewood-mayor-gets-restraining-order-against-city-council-candidate",
+    "published": "2026-11-17T13:00:00Z",
+    "updated": "2026-11-17T13:00:00Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   },
    {
     "h": "California donates 1,300 hospital beds to Ukraine",
     "b": "Gov. Newsom visited Lviv.",
@@ -463,32 +507,29 @@
     "h": "Eaton Fire survivors face Nov. 30 Edison payout deadline",
     "b": "Survivors must decide whether to apply for Southern California Edison's compensation program or hold out for a lawsuit.",
     "date": "2026-11-16",
+    "publisher": "LAist",
+    "title": "What Eaton Fire survivors need to know as Edison payout and lawsuit deadlines approach",
     "url": "https://laist.com/news/climate-environment/eaton-fire-survivors-edison-payout-and-lawsuit-deadlines",
+    "published": "2026-11-16T13:00:00Z",
     "gathered": "2026-11-16T14:18:13Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "wind": "NW 2 mph",
-    "humidity": 74,
-    "obs": "16 Nov 11:55 PM PST"
+    "temp": 58,
+    "wind": "NW 7 mph",
+    "humidity": 42,
+    "obs": "17 Nov 05:40 AM PST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "Partly cloudy, with a low around 52. West northwest wind around 5 mph. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 66,
      "text": "Sunny, with a high near 66. West northwest wind around 10 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 50,
      "text": "Partly cloudy, with a low around 50. Northwest wind 5 to 10 mph becoming east northeast after midnight. "
@@ -503,13 +544,19 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Rain and possibly a thunderstorm, mainly after 4am.  Low around 54. Southwest wind around 10 mph becoming south southeast after midnight. Winds could gust as high as 15 mph.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Rain and possibly a thunderstorm, mainly after 4am.  Low around 54. Southwest wind around 10 mph becoming south southeast after midnight.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 62,
-     "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain and thunderstorms after 4pm.  High near 62. Chance of precipitation is 100%."
+     "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain and thunderstorms after 4pm.  High near 62. South southeast wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "A 40 percent chance of rain before 10pm.  Partly cloudy, with a low around 48."
     }
    ]
   },
@@ -525,7 +572,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -536,6 +583,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Council bill pits Amazon against Teamsters over delivery workers",
+    "b": "Many Amazon drivers work for one of more than 40 delivery service providers, not Amazon itself.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "NYC Council bill pits Amazon against Teamsters union in fight over delivery workers",
+    "url": "https://gothamist.com/news/nyc-council-bill-pits-amazon-against-teamsters-union-in-fight-over-delivery-workers",
+    "published": "2026-11-17T11:00:47Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   },
+   {
+    "h": "Flatbush Avenue redesign gives bus riders priority",
+    "b": "New center bus lanes between Grand Army Plaza and Livingston Street ban passenger cars around the clock.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "A new day arrives on Brooklyn's Flatbush Avenue as redesign gives bus riders priority",
+    "url": "https://gothamist.com/news/a-new-day-arrives-on-brooklyns-flatbush-avenue-as-redesign-gives-bus-riders-priority",
+    "published": "2026-11-17T10:30:45Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   },
    {
     "h": "Man charged with murder in Elizabeth vigil shooting",
     "b": "Travon Holmes, 29, is charged in the shooting that left one dead and four injured.",
@@ -573,8 +640,7 @@
     "publisher": "Gothamist",
     "title": "2 Co-op City peace officers shot during Bronx wellness check, officials say",
     "url": "https://gothamist.com/news/3-people-shot-in-co-op-city-in-the-bronx-including-two-peace-officers-nypd-says",
-    "published": "2026-11-16T18:08:00Z",
-    "updated": "2026-11-17T01:48:00Z",
+    "published": "2026-11-17T01:48:00Z",
     "gathered": "2026-11-16T20:38:02Z"
    },
    {
@@ -612,19 +678,19 @@
    "now": {
     "temp": 43,
     "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 65,
-    "obs": "17 Nov 02:51 am EST"
+    "wind": "W 6 mph",
+    "humidity": 68,
+    "obs": "17 Nov 07:51 am EST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 57,
-     "text": "Sunny, with a high near 57. West wind 6 to 10 mph. "
+     "text": "Sunny, with a high near 57. Northwest wind 6 to 10 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 49,
      "text": "Clear, with a low around 49. West wind around 8 mph. "
@@ -645,7 +711,7 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61."
+     "text": "Sunny, with a high near 61. West wind 6 to 8 mph. "
     },
     {
      "name": "Thursday Night",
@@ -667,7 +733,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -701,25 +767,28 @@
   },
   "local": [
    {
+    "h": "France sends fertility letters to all 29-year-olds",
+    "b": "The government letters explain steps people can take to preserve their fertility.",
+    "date": "2026-11-17",
+    "publisher": "The Local France",
+    "title": "Why some French residents are receiving letters about having a baby",
+    "url": "https://www.thelocal.fr/20261117/why-some-french-residents-are-receiving-letters-about-having-a-baby",
+    "published": "2026-11-17T12:10:53Z",
+    "updated": "2026-11-17T12:10:54Z",
+    "gathered": "2026-11-17T13:44:05Z"
+   },
+   {
     "h": "Apple faces Paris trial over alleged iPhone planned obsolescence",
     "b": "Prosecutors charge Apple with obstructing repair and refurbishment; it could be fined up to €300,000 or a share of annual revenue.",
     "date": "2026-11-17",
-    "publisher": "The Local France",
-    "title": "Apple faces Paris trial over alleged planned obsolescence of iPhones",
     "url": "https://www.thelocal.fr/20261117/apple-faces-paris-trial-over-alleged-planned-obsolescence-of-iphones",
-    "published": "2026-11-17T07:28:14Z",
-    "updated": "2026-11-17T07:28:15Z",
     "gathered": "2026-11-17T08:12:04Z"
    },
    {
     "h": "Paris court fines landlord €110,000 over illegal Airbnb",
     "b": "The 8th arrondissement apartment was rented out for 351 nights in 2025, the court found.",
     "date": "2026-11-16",
-    "publisher": "The Local France",
-    "title": "Paris court imposes €110,000 fine for illegal Airbnb rental",
     "url": "https://www.thelocal.fr/20261116/paris-court-imposes-e110000-fine-for-illegal-airbnb-rental",
-    "published": "2026-11-16T12:36:49Z",
-    "updated": "2026-11-16T12:36:49Z",
     "gathered": "2026-11-16T14:18:13Z"
    },
    {
@@ -771,7 +840,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "goodnews": []
  },
  {
@@ -785,11 +854,7 @@
     "h": "Student athletes join legal fight over I-638",
     "b": "Five high school athletes backing the transgender sports ban intervened as Seattle parents try to strike it down.",
     "date": "2026-11-16",
-    "publisher": "KUOW",
-    "title": "Student athletes in support of I-638 jump into legal fight that could overturn the measure",
     "url": "https://www.kuow.org/law/2026-11-16/student-athletes-in-support-of-i-638-jump-into-legal-fight-that-could-overturn-the-measure",
-    "published": "2026-11-16T21:59:34Z",
-    "updated": "2026-11-16T21:59:34Z",
     "gathered": "2026-11-16T23:16:32Z"
    },
    {
@@ -816,27 +881,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "Clear",
-    "wind": "S 4 mph",
-    "humidity": 92,
-    "obs": "16 Nov 11:53 PM PST"
+    "temp": 43,
+    "cond": "Overcast",
+    "wind": "SE 3 mph",
+    "humidity": 86,
+    "obs": "17 Nov 05:35 AM PST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 44,
-     "text": "Partly cloudy, with a steady temperature around 44. Calm wind. "
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 50,
      "text": "Mostly sunny, with a high near 50. Calm wind. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Increasing clouds, with a low around 39. Calm wind becoming east around 5 mph after midnight. "
@@ -857,7 +916,13 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 49,
-     "text": "Partly sunny, with a high near 49."
+     "text": "Partly sunny, with a high near 49. Calm wind becoming north around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 37,
+     "text": "Mostly clear, with a low around 37."
     }
    ]
   },
@@ -873,7 +938,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T11:12:00Z",
+  "updatedAt": "2026-11-17T14:15:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
