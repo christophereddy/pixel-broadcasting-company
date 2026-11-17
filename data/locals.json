@@ -58,7 +58,6 @@
     "title": "Flight disruptions expected to last through Monday",
     "url": "https://www.wabe.org/flight-disruptions-expected-to-last-through-monday/",
     "published": "2026-11-16T15:53:51Z",
-    "updated": "2026-11-16T15:53:54Z",
     "gathered": "2026-11-16T17:13:08Z"
    },
    {
@@ -75,24 +74,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 61,
     "cond": "A Few Clouds",
-    "wind": "E 17 mph",
-    "humidity": 44,
-    "obs": "17 Nov 10:52 am EST"
+    "wind": "E 13 mph",
+    "humidity": 25,
+    "obs": "17 Nov 16:52 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
-     "kind": "high",
-     "temp": 62,
-     "text": "Sunny, with a high near 62. East wind around 10 mph, with gusts as high as 20 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 44,
-     "text": "Clear, with a low around 44. East wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "temp": 41,
+     "text": "Clear, with a low around 41. East wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
@@ -103,20 +96,26 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 50,
-     "text": "Mostly clear, with a low around 50. East wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 48,
+     "text": "Mostly clear, with a low around 48. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 66,
-     "text": "Partly sunny, with a high near 66. East wind around 10 mph, with gusts as high as 20 mph. "
+     "text": "Mostly sunny, with a high near 66. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 53,
-     "text": "Mostly cloudy, with a low around 53."
+     "text": "Mostly cloudy, with a low around 53. East wind around 10 mph, with gusts as high as 20 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 67,
+     "text": "Partly sunny, with a high near 67."
     }
    ]
   },
@@ -132,7 +131,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -159,10 +158,7 @@
     "h": "Judge sets March retrial for Lindsay Clancy",
     "b": "Her first trial ended in a mistrial; 11 jurors favored acquittal on insanity grounds.",
     "date": "2026-11-16",
-    "publisher": "PBS NewsHour",
-    "title": "Judge sets March retrial date for Lindsay Clancy in deaths of her 3 children",
     "url": "https://www.pbs.org/newshour/nation/judge-sets-march-retrial-date-for-lindsay-clancy-in-deaths-of-her-3-children",
-    "published": "2026-11-17T00:23:23Z",
     "gathered": "2026-11-17T04:05:40Z"
    },
    {
@@ -175,48 +171,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 55,
     "cond": "A Few Clouds",
-    "wind": "W 9 mph",
-    "humidity": 48,
-    "obs": "17 Nov 11:54 am EST"
+    "wind": "W 8 mph",
+    "humidity": 44,
+    "obs": "17 Nov 16:54 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 57,
-     "text": "Sunny, with a high near 57. West wind around 10 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 43,
-     "text": "Mostly clear, with a low around 43. West wind 8 to 10 mph. "
+     "temp": 42,
+     "text": "Clear, with a low around 42. West wind 6 to 8 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66. West wind 8 to 11 mph, with gusts as high as 21 mph. "
+     "temp": 63,
+     "text": "Mostly sunny, with a high near 63. West wind 7 to 10 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Mostly clear, with a low around 44. West wind 6 to 9 mph. "
+     "temp": 43,
+     "text": "Mostly clear, with a low around 43. West wind 3 to 6 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. Northwest wind 6 to 8 mph becoming southwest in the afternoon. "
+     "temp": 64,
+     "text": "Sunny, with a high near 64. West wind 3 to 5 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Mostly clear, with a low around 41. Southwest wind 5 to 7 mph. "
+     "temp": 42,
+     "text": "Mostly clear, with a low around 42. Southwest wind around 5 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Sunny, with a high near 63. West wind 5 to 8 mph. "
     }
    ]
   },
@@ -232,7 +228,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -269,11 +265,7 @@
     "h": "Chicago renters face volatile utility bills under ratio billing",
     "b": "More landlords are passing utility costs to tenants, and bills now change sharply month to month.",
     "date": "2026-11-17",
-    "publisher": "WBEZ",
-    "title": "Chicago renters struggle to keep up with gas and water bills as landlords switch to new way of billing",
     "url": "https://www.wbez.org/housing/2026/11/17/ratio-utility-billing-leads-to-volatile-gas-water-bills-rubs",
-    "published": "2026-11-17T11:35:00Z",
-    "updated": "2026-11-17T11:35:04Z",
     "gathered": "2026-11-17T13:44:05Z"
    },
    {
@@ -312,25 +304,18 @@
     "title": "Chicago Is $55 Billion in Debt, With No End in Sight. It’s a Threat to City Services.",
     "url": "https://www.propublica.org/article/chicago-debt-burden-public-health-safety",
     "published": "2026-11-16T10:00:00Z",
-    "updated": "2026-11-16T10:00:16Z",
     "gathered": "2026-11-16T11:13:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Fair",
-    "wind": "SW 12 mph",
-    "humidity": 55,
-    "obs": "17 Nov 10:53 am CST"
+    "temp": 55,
+    "cond": "A Few Clouds",
+    "wind": "S 9 mph",
+    "humidity": 45,
+    "obs": "17 Nov 15:53 pm CST"
    },
    "periods": [
-    {
-     "name": "Today",
-     "kind": "high",
-     "temp": 57,
-     "text": "Sunny, with a high near 57. South wind around 10 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -341,25 +326,31 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 60,
-     "text": "Mostly sunny, with a high near 60. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
+     "text": "Increasing clouds, with a high near 60. South southwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 47,
-     "text": "Cloudy, then gradually becoming partly cloudy, with a low around 47. South southwest wind around 15 mph, with gusts as high as 20 mph. "
+     "temp": 46,
+     "text": "Partly cloudy, with a low around 46. South southwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Thursday",
      "kind": "high",
      "temp": 63,
-     "text": "Sunny, with a high near 63. Southwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 63. Southwest wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Mostly clear, with a low around 44."
+     "text": "Mostly clear, with a low around 44. Southwest wind 5 to 10 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 62,
+     "text": "Sunny, with a high near 62."
     }
    ]
   },
@@ -375,7 +366,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -428,48 +419,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 67,
     "cond": "Mostly Cloudy",
-    "wind": "S 5 mph",
-    "humidity": 60,
-    "obs": "17 Nov 08:58 am MST"
+    "wind": "SW 17 mph, gusts to 24 mph",
+    "humidity": 17,
+    "obs": "17 Nov 13:58 pm MST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66. Southeast wind 3 to 6 mph. "
+     "text": "Mostly sunny, with a high near 66. South southwest wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 38,
-     "text": "Mostly clear, with a low around 38. South southwest wind 8 to 13 mph, with gusts as high as 21 mph. "
+     "temp": 37,
+     "text": "Mostly clear, with a low around 37. South southwest wind 9 to 11 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 59,
-     "text": "Sunny, with a high near 59. Breezy, with a west wind 11 to 16 mph becoming east northeast 5 to 10 mph in the afternoon. Winds could gust as high as 26 mph. "
+     "temp": 58,
+     "text": "Sunny, with a high near 58. Southwest wind 6 to 14 mph becoming south southeast in the afternoon. Winds could gust as high as 23 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 28,
-     "text": "Mostly clear, with a low around 28. South wind around 6 mph becoming calm  after midnight. "
+     "temp": 29,
+     "text": "Mostly clear, with a low around 29. South wind around 6 mph becoming calm  after midnight. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 54,
-     "text": "Mostly sunny, with a high near 54. Calm wind becoming northeast around 5 mph in the afternoon. "
+     "temp": 57,
+     "text": "Partly sunny, with a high near 57. Calm wind becoming northeast around 5 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 32,
-     "text": "Partly cloudy, with a low around 32."
+     "temp": 35,
+     "text": "Partly cloudy, with a low around 35."
     }
    ]
   },
@@ -485,7 +476,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -507,6 +498,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Gas plume billows out of Chiquita Canyon Landfill",
+    "b": "Drilling crews in Castaic triggered a sudden release of gas and decomposing garbage Monday.",
+    "date": "2026-11-17",
+    "publisher": "LAist",
+    "title": "Large plume of gas billows out of Chiquita Canyon Landfill",
+    "url": "https://laist.com/news/climate-environment/large-plume-of-gas-billows-out-of-chiquita-canyon-landfill",
+    "published": "2026-11-17T17:14:45Z",
+    "updated": "2026-11-17T17:14:45Z",
+    "gathered": "2026-11-17T22:33:35Z"
+   },
    {
     "h": "Inglewood mayor wins restraining order against council candidate",
     "b": "A judge ordered Leonard Redway to stay 100 yards from Mayor James Butts for three years.",
@@ -545,14 +547,14 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "wind": "NW 5 mph",
-    "humidity": 39,
-    "obs": "17 Nov 09:10 AM PST"
+    "temp": 68,
+    "wind": "Calm",
+    "humidity": 32,
+    "obs": "17 Nov 02:25 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 66,
      "text": "Sunny, with a high near 66. West northwest wind around 10 mph. "
@@ -566,26 +568,26 @@
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66. East northeast wind around 5 mph becoming southwest in the afternoon. "
+     "temp": 68,
+     "text": "Mostly sunny, with a high near 68. East wind around 5 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Rain and possibly a thunderstorm, mainly after 4am.  Low around 54. Southwest wind around 10 mph becoming south southeast after midnight.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Rain and possibly a thunderstorm, mainly after 4am.  Low around 54. South southwest wind around 10 mph becoming southeast after midnight.  Chance of precipitation is 80%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 62,
-     "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain and thunderstorms after 4pm.  High near 62. South southeast wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
+     "temp": 63,
+     "text": "Rain and possibly a thunderstorm before 4pm, then a chance of rain and thunderstorms after 4pm.  High near 63. South wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between three quarters and one inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 48,
-     "text": "A 40 percent chance of rain before 10pm.  Partly cloudy, with a low around 48."
+     "temp": 47,
+     "text": "A 30 percent chance of rain before 10pm.  Partly cloudy, with a low around 47."
     }
    ]
   },
@@ -601,7 +603,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -612,6 +614,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Woman arrested after climbing Steinway Tower to 91st floor",
+    "b": "Firefighters pulled the 18-year-old from the Midtown tower's exterior; no injuries were reported.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "Woman arrested after climbing outside of a Manhattan skyscraper's 91st floor, NYPD says",
+    "url": "https://gothamist.com/news/woman-arrested-after-climbing-outside-of-a-manhattan-skyscrapers-91st-floor-nypd-says",
+    "published": "2026-11-17T18:47:45Z",
+    "gathered": "2026-11-17T22:33:35Z"
+   },
+   {
+    "h": "Inspectors halt work at sites tied to Brooklyn collapse",
+    "b": "Stop-work orders hit at least five projects linked to two engineers after the Nov. 11 collapse that killed eight.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "NYC inspection blitz halts construction at sites tied to fatal Brooklyn building collapse",
+    "url": "https://gothamist.com/news/nyc-inspection-blitz-halts-construction-at-sites-tied-to-fatal-brooklyn-building-collapse",
+    "published": "2026-11-17T20:40:00Z",
+    "gathered": "2026-11-17T22:33:35Z"
+   },
    {
     "h": "Astoria board weighs 3 high-rise towers on Steinway Street",
     "b": "The proposals have become a lightning rod over the neighborhood's redevelopment.",
@@ -725,30 +747,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 55,
     "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 48,
-    "obs": "17 Nov 11:51 am EST"
+    "wind": "Calm",
+    "humidity": 45,
+    "obs": "17 Nov 16:51 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 57,
-     "text": "Sunny, with a high near 57. West wind around 10 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 49,
-     "text": "Clear, with a low around 49. West wind around 8 mph. "
+     "temp": 45,
+     "text": "Clear, with a low around 45. West wind around 8 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 60,
-     "text": "Sunny, with a high near 60. West wind 7 to 9 mph. "
+     "temp": 61,
+     "text": "Sunny, with a high near 61. West wind around 7 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -760,13 +776,19 @@
      "name": "Thursday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. West wind 6 to 8 mph. "
+     "text": "Sunny, with a high near 61. West wind 3 to 6 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Partly cloudy, with a low around 46."
+     "temp": 47,
+     "text": "Partly cloudy, with a low around 47. West wind around 8 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 64,
+     "text": "Sunny, with a high near 64."
     }
    ]
   },
@@ -782,7 +804,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -900,7 +922,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "goodnews": []
  },
  {
@@ -910,6 +932,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Ocean Shores races to patch shoreline before king tides",
+    "b": "The city is under a state of emergency ahead of the season's first king tide.",
+    "date": "2026-11-17",
+    "publisher": "KUOW",
+    "title": "‘It’s on our front door’: Ocean Shores races to patch up shoreline ahead of king tides",
+    "url": "https://www.kuow.org/environment/2026-11-17/its-on-our-front-door-ocean-shores-races-to-patch-up-shoreline-ahead-of-king-tides",
+    "published": "2026-11-17T21:05:57Z",
+    "updated": "2026-11-17T21:05:57Z",
+    "gathered": "2026-11-17T22:33:35Z"
+   },
+   {
+    "h": "Ferguson orders deeper cuts to face $4B shortfall",
+    "b": "The governor wants agencies to cut spending by up to 15% through mid-2028.",
+    "date": "2026-11-17",
+    "publisher": "KUOW",
+    "title": "WA governor looks to sharply pare spending in face of $4B budget shortfall",
+    "url": "https://www.kuow.org/governing/2026-11-17/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall",
+    "published": "2026-11-17T17:27:16Z",
+    "updated": "2026-11-17T17:27:16Z",
+    "gathered": "2026-11-17T22:33:35Z"
+   },
    {
     "h": "Student athletes join legal fight over I-638",
     "b": "Five high school athletes backing the transgender sports ban intervened as Seattle parents try to strike it down.",
@@ -941,48 +985,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Overcast",
-    "wind": "Calm",
-    "humidity": 75,
-    "obs": "17 Nov 09:00 AM PST"
+    "temp": 54,
+    "cond": "Mostly Cloudy",
+    "wind": "W 5 mph",
+    "humidity": 54,
+    "obs": "17 Nov 02:10 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 50,
-     "text": "Mostly sunny, with a high near 50. Calm wind. "
+     "text": "Sunny, with a high near 50. Calm wind. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 39,
-     "text": "Increasing clouds, with a low around 39. Calm wind becoming east around 5 mph after midnight. "
+     "text": "Increasing clouds, with a low around 39. Calm wind becoming northeast around 6 mph after midnight. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 49,
-     "text": "A 50 percent chance of rain, mainly between 9am and 4pm.  Cloudy, with a high near 49. North wind around 6 mph. "
+     "temp": 50,
+     "text": "A 40 percent chance of rain after 1pm.  Mostly cloudy, with a high near 50. East northeast wind around 6 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 20 percent chance of rain before 10pm.  Mostly cloudy, with a low around 41. Light north wind. "
+     "text": "Rain, mainly before 8pm.  Low around 41. Light north northeast wind.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday",
      "kind": "high",
-     "temp": 49,
-     "text": "Partly sunny, with a high near 49. Calm wind becoming north around 5 mph in the afternoon. "
+     "temp": 50,
+     "text": "Partly sunny, with a high near 50. Calm wind becoming north around 6 mph in the afternoon. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 37,
-     "text": "Mostly clear, with a low around 37."
+     "text": "Partly cloudy, with a low around 37."
     }
    ]
   },
@@ -998,8 +1042,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T20:11:00Z",
+  "updatedAt": "2026-11-17T23:11:00Z",
   "slug": "seattle-wa",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "LeVar Burton writes a memoir",
+    "b": "The former Reading Rainbow host looks back on growing up in Sacramento.",
+    "date": "2026-11-17",
+    "publisher": "KUOW",
+    "title": "Take a look, it's in his book: LeVar Burton writes a memoir",
+    "url": "https://www.kuow.org/npr-news/2026-11-17/take-a-look-its-in-his-book-levar-burton-writes-a-memoir",
+    "published": "2026-11-17T18:45:36Z",
+    "updated": "2026-11-17T21:30:18Z",
+    "gathered": "2026-11-17T22:33:35Z"
+   }
+  ]
  }
 ]
