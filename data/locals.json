@@ -20,15 +20,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 46,
     "cond": "Fair",
-    "wind": "E 12 mph",
-    "humidity": 43,
-    "obs": "17 Nov 21:52 pm EST"
+    "wind": "E 8 mph",
+    "humidity": 51,
+    "obs": "17 Nov 23:52 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 41,
      "text": "Clear, with a low around 41. East wind 5 to 10 mph, with gusts as high as 20 mph. "
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -118,15 +118,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 49,
     "cond": "Fair",
-    "wind": "W 13 mph, gusts to 26 mph",
-    "humidity": 57,
-    "obs": "17 Nov 21:54 pm EST"
+    "wind": "W 10 mph",
+    "humidity": 59,
+    "obs": "17 Nov 23:54 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 42,
      "text": "Mostly clear, with a low around 42. West wind around 7 mph. "
@@ -175,7 +175,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -239,18 +239,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
-    "wind": "S 8 mph",
-    "humidity": 58,
-    "obs": "17 Nov 20:53 pm CST"
+    "temp": 46,
+    "cond": "Partly Cloudy",
+    "wind": "S 7 mph",
+    "humidity": 63,
+    "obs": "17 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Partly cloudy, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday",
@@ -296,7 +296,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -328,11 +328,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "cond": "Mostly Cloudy",
-    "wind": "S 15 mph, gusts to 29 mph",
-    "humidity": 26,
-    "obs": "17 Nov 17:58 pm MST"
+    "temp": 55,
+    "cond": "A Few Clouds and Breezy",
+    "wind": "S 21 mph",
+    "humidity": 31,
+    "obs": "17 Nov 20:58 pm MST"
    },
    "periods": [
     {
@@ -385,7 +385,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -485,10 +485,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "wind": "NW 3 mph",
-    "humidity": 47,
-    "obs": "17 Nov 07:40 PM PST"
+    "temp": 56,
+    "wind": "NW 2 mph",
+    "humidity": 51,
+    "obs": "17 Nov 08:55 PM PST"
    },
    "periods": [
     {
@@ -541,7 +541,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -635,15 +635,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 50,
     "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 55,
-    "obs": "17 Nov 21:51 pm EST"
+    "wind": "W 6 mph",
+    "humidity": 59,
+    "obs": "17 Nov 23:51 pm EST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 45,
      "text": "Mostly clear, with a low around 45. West wind around 8 mph. "
@@ -692,7 +692,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -750,7 +750,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "goodnews": []
  },
  {
@@ -803,11 +803,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 41,
     "cond": "Clear",
     "wind": "Calm",
-    "humidity": 81,
-    "obs": "17 Nov 07:20 PM PST"
+    "humidity": 92,
+    "obs": "17 Nov 08:53 PM PST"
    },
    "periods": [
     {
@@ -860,7 +860,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T05:12:00Z",
+  "updatedAt": "2026-11-18T08:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
