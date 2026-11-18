@@ -1,11 +1,29 @@
 {
- "updatedAt": "2026-11-18T08:12:00Z",
+ "updatedAt": "2026-11-18T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "LIVE: Iran targets US base in Kuwait; Bahrain repels 'criminal' attacks",
+   "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
+   "date": "2026-11-18",
+   "publisher": "Al Jazeera",
+   "title": "Iran targets US base in Kuwait; Bahrain repels ‘criminal’ attacks",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks",
+   "gathered": "2026-11-18T08:12:45Z"
+  },
+  {
+   "h": "Xi says China and Russia should lead push to multipolar world",
+   "b": "Xi spoke after meeting Vladimir Putin on the sidelines of the APEC summit in Shenzhen.",
+   "date": "2026-11-18",
+   "publisher": "Al Jazeera",
+   "title": "Russia, China should ‘lead’ push to multipolar world, Xi tells APEC summit",
+   "url": "https://www.aljazeera.com/news/2026/11/18/president-xi-says-russia-and-china-should-lead-push-to-multipolar-world",
+   "gathered": "2026-11-18T08:12:45Z"
+  },
   {
    "h": "China and Canada expand tariff relief",
    "b": "Xi Jinping and Mark Carney agreed on more tariff cuts as Ottawa navigates strained US ties.",
@@ -20,8 +38,6 @@
    "h": "Man accused of damaging US military plane at Irish airport",
    "b": "Prosecutors allege an axe-wielding man breached security and damaged a US C-130.",
    "date": "2026-11-17",
-   "publisher": "Al Jazeera",
-   "title": "Prosecutors allege man ‘destroyed’ US military plane at Irish airport",
    "url": "https://www.aljazeera.com/news/2026/11/18/prosecutors-allege-man-destroyed-us-military-plane-at-irish-airport",
    "gathered": "2026-11-18T03:49:20Z"
   },
@@ -88,15 +104,6 @@
    "b": "The army says 173 fighters were killed or wounded as Houthi forces push toward Aden.",
    "date": "2026-11-17",
    "url": "https://www.aljazeera.com/news/2026/11/17/yemen-army-reports-661-attacks-on-houthis-amid-houthi-push-towards-aden",
-   "gathered": "2026-11-17T04:05:40Z"
-  },
-  {
-   "h": "LIVE: US hits Qeshm Island, Houthis claim hit on Saudi pipeline",
-   "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-17",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: US hits Qeshm Island, Houthis claim hit on Saudi pipeline",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz",
    "gathered": "2026-11-17T04:05:40Z"
   }
  ],
@@ -462,24 +469,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
+   "temp": 49,
    "cond": "Fair",
-   "wind": "W 6 mph",
+   "wind": "W 8 mph",
    "humidity": 59,
-   "obs": "17 Nov 23:51 pm EST"
+   "obs": "18 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 45,
-    "text": "Mostly clear, with a low around 45. West wind around 8 mph. "
-   },
-   {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 61,
-    "text": "Sunny, with a high near 61. West wind around 7 mph. "
+    "temp": 60,
+    "text": "Sunny, with a high near 60. West wind around 7 mph. "
    },
    {
     "name": "Wednesday Night",
@@ -496,14 +497,20 @@
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 47,
-    "text": "Partly cloudy, with a low around 47. West wind around 8 mph. "
+    "temp": 48,
+    "text": "Partly cloudy, with a low around 48. West wind around 7 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 64,
-    "text": "Sunny, with a high near 64."
+    "temp": 63,
+    "text": "Sunny, with a high near 63."
+   },
+   {
+    "name": "Friday Night",
+    "kind": "low",
+    "temp": 49,
+    "text": "Mostly clear, with a low around 49."
    }
   ]
  },
