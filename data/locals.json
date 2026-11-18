@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -87,7 +87,35 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Sutton residents oppose $16B Kraft-backed data center",
+    "b": "Residents voiced outrage at a planning board meeting Monday.",
+    "date": "2026-11-17",
+    "publisher": "WBUR",
+    "title": "Kraft-backed data center proposal met with opposition from Sutton residents",
+    "url": "https://www.wbur.org/news/2026/11/17/kraft-group-data-center-sutton-residents",
+    "gathered": "2026-11-17T23:15:36Z"
+   },
+   {
+    "h": "Healey urges Legislature to pass housing plan voters rejected",
+    "b": "Question 7 drew 1.29 million votes against and nearly 1.26 million in favor.",
+    "date": "2026-11-17",
+    "publisher": "WBUR",
+    "title": "Healey: Legislature should pass housing policy rejected by voters",
+    "url": "https://www.wbur.org/news/2026/11/17/healey-legislature-should-pass-housing-policy-question-7-rejected-by-voters",
+    "gathered": "2026-11-17T23:15:36Z"
+   },
+   {
+    "h": "Rideshare drivers rally for first union contract with Uber and Lyft",
+    "b": "Drivers gathered in Dorchester pushing for what they called the country's first gig worker union contract.",
+    "date": "2026-11-17",
+    "publisher": "WBUR",
+    "title": "Unionized Uber and Lyft drivers in Massachusetts rally for first-of-its-kind contract",
+    "url": "https://www.wbur.org/news/2026/11/17/uber-lyft-massachusetts-drivers-union-contract",
+    "gathered": "2026-11-17T23:15:36Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 53,
@@ -147,9 +175,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "boston-ma",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Taylor Swift's Eras archive is coming to the MFA",
+    "b": "About 50 objects, including dresses and her green Gibson J-180 guitar, go on view this spring.",
+    "date": "2026-11-17",
+    "publisher": "WBUR",
+    "title": "Ready for it? Taylor Swift’s Eras archive is coming to the MFA",
+    "url": "https://www.wbur.org/news/2026/11/17/taylor-swift-eras-archive-mfa",
+    "gathered": "2026-11-17T23:15:36Z"
+   }
+  ]
  },
  {
   "location": {
@@ -247,7 +285,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -269,7 +307,18 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Study calls for demolishing most of Denver Pavilions",
+    "b": "A panel of national experts recommends a $615 million redo of the mall.",
+    "date": "2026-11-17",
+    "publisher": "Denverite",
+    "title": "Tear down this mall, Mr. Johnston-chev? $100K study calls for demolishing most of Denver Pavilions",
+    "url": "https://denverite.com/2026/11/17/denver-pavilions-report-demolition/",
+    "published": "2026-11-17T20:02:10Z",
+    "gathered": "2026-11-17T23:15:36Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 64,
@@ -329,7 +378,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -361,6 +410,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LA County remains a hospice fraud epicenter",
+    "b": "One Van Nuys building housed 44 licensed hospices in May; it has 11 now.",
+    "date": "2026-11-17",
+    "publisher": "LAist",
+    "title": "New California hospice rules target fraud. Will they fix LA County’s problems?",
+    "url": "https://laist.com/news/health/california-hospice-regulations-la-county-fraud-fix",
+    "published": "2026-11-17T13:00:00Z",
+    "updated": "2026-11-17T18:31:30Z",
+    "gathered": "2026-11-17T23:15:36Z"
+   },
    {
     "h": "Gas plume billows out of Chiquita Canyon Landfill",
     "b": "Drilling crews in Castaic triggered a sudden release of gas and decomposing garbage Monday.",
@@ -442,7 +502,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -573,7 +633,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -631,7 +691,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "goodnews": []
  },
  {
@@ -723,7 +783,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:11:00Z",
+  "updatedAt": "2026-11-18T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
