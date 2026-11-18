@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "cond": "A Few Clouds",
-    "wind": "E 10 mph",
-    "humidity": 31,
-    "obs": "17 Nov 17:52 pm EST"
+    "temp": 50,
+    "cond": "Fair",
+    "wind": "E 12 mph",
+    "humidity": 43,
+    "obs": "17 Nov 21:52 pm EST"
    },
    "periods": [
     {
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -118,18 +118,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "A Few Clouds",
-    "wind": "SW 10 mph, gusts to 22 mph",
-    "humidity": 51,
-    "obs": "17 Nov 17:54 pm EST"
+    "temp": 50,
+    "cond": "Fair",
+    "wind": "W 13 mph, gusts to 26 mph",
+    "humidity": 57,
+    "obs": "17 Nov 21:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Clear, with a low around 42. West wind 6 to 8 mph. "
+     "text": "Mostly clear, with a low around 42. West wind around 7 mph. "
     },
     {
      "name": "Wednesday",
@@ -175,7 +175,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -196,6 +196,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "CPS and principals union reach tentative deal",
+    "b": "The three-year contract would give school leaders 3% annual raises and restore some assistant principal positions.",
+    "date": "2026-11-18",
+    "publisher": "WBEZ",
+    "title": "CPS and principals union reach tentative agreement that raises pay, brings back some positions",
+    "url": "https://www.wbez.org/education/2026/11/17/cps-and-principals-union-reach-tentative-agreement-that-raises-pay-brings-back-some-ap-positions",
+    "published": "2026-11-18T00:23:00Z",
+    "updated": "2026-11-18T00:23:00Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
    {
     "h": "Cook County Jail death suit to settle for record $7.25M",
     "b": "It would be the largest jail-related payout since at least 2007.",
@@ -228,18 +239,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Partly Cloudy",
-    "wind": "S 5 mph",
-    "humidity": 47,
-    "obs": "17 Nov 16:53 pm CST"
+    "temp": 48,
+    "cond": "A Few Clouds",
+    "wind": "S 8 mph",
+    "humidity": 58,
+    "obs": "17 Nov 20:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Mostly clear, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Partly cloudy, with a low around 42. South southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Wednesday",
@@ -285,18 +296,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Kyle Kinane's 'Kinanesgiving' returns",
     "b": "The comedian's annual Chicago show offers a night of laughs before the holiday.",
     "date": "2026-11-17",
-    "publisher": "WBEZ",
-    "title": "Kyle Kinane, the comedic architect of 'Kinanesgiving,' knows we all need a laugh about now",
     "url": "https://www.wbez.org/comedy/2026/11/17/kyle-kinane-chicago-comic-thanksgiving-thalia-hall",
-    "published": "2026-11-17T11:35:00Z",
-    "updated": "2026-11-17T11:35:01Z",
     "gathered": "2026-11-17T13:44:05Z"
    }
   ]
@@ -321,18 +328,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
+    "temp": 60,
     "cond": "Mostly Cloudy",
-    "wind": "S 17 mph",
-    "humidity": 21,
-    "obs": "17 Nov 14:58 pm MST"
+    "wind": "S 15 mph, gusts to 29 mph",
+    "humidity": 26,
+    "obs": "17 Nov 17:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 37,
-     "text": "Mostly clear, with a low around 37. South southwest wind 9 to 11 mph, with gusts as high as 20 mph. "
+     "text": "Mostly clear, with a low around 37. South southwest wind 9 to 11 mph, with gusts as high as 18 mph. "
     },
     {
      "name": "Wednesday",
@@ -378,7 +385,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -411,6 +418,39 @@
   },
   "local": [
    {
+    "h": "Parents allege OC childcare gave kids melatonin",
+    "b": "The lawsuit says Kiddie Academy of Orange did so after staff were told not to.",
+    "date": "2026-11-17",
+    "publisher": "LAist",
+    "title": "Parents allege an Orange County childcare secretly gave their kids melatonin",
+    "url": "https://laist.com/news/education/early-childhood-education-pre-k/melatonin-orange-county-childcare-lawsuit",
+    "published": "2026-11-17T23:55:49Z",
+    "updated": "2026-11-17T23:56:00Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
+   {
+    "h": "Cold storm to bring rain and mountain snow to Southern California",
+    "b": "Parts of the LA Basin could get up to 3 inches of rain Thursday; high elevations up to 8 inches of snow.",
+    "date": "2026-11-18",
+    "publisher": "LAist",
+    "title": "Cold storm moving into Southern California will bring rain, snow and hazards",
+    "url": "https://laist.com/news/climate-environment/cold-storm-november-southern-california",
+    "published": "2026-11-18T00:07:18Z",
+    "updated": "2026-11-18T00:07:18Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
+   {
+    "h": "Judge finalizes LAHSA's loss of federal homeless money",
+    "b": "Control shifts to LA County in phases starting next month, wrapping up by the end of 2027.",
+    "date": "2026-11-18",
+    "publisher": "LAist",
+    "title": "Judge makes it official: LAHSA loses control of LA’s federal homeless money to the county",
+    "url": "https://laist.com/news/housing-homelessness/lahsa-hud-settlement-federal-homeless-funding-la-county",
+    "published": "2026-11-18T01:01:19Z",
+    "updated": "2026-11-18T01:37:36Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
+   {
     "h": "LA County remains a hospice fraud epicenter",
     "b": "One Van Nuys building housed 44 licensed hospices in May; it has 11 now.",
     "date": "2026-11-17",
@@ -429,7 +469,7 @@
     "title": "Large plume of gas billows out of Chiquita Canyon Landfill",
     "url": "https://laist.com/news/climate-environment/large-plume-of-gas-billows-out-of-chiquita-canyon-landfill",
     "published": "2026-11-17T17:14:45Z",
-    "updated": "2026-11-17T17:14:45Z",
+    "updated": "2026-11-17T23:57:08Z",
     "gathered": "2026-11-17T22:33:35Z"
    },
    {
@@ -440,16 +480,15 @@
     "title": "Inglewood mayor gets restraining order against City Council candidate",
     "url": "https://laist.com/news/politics/inglewood-mayor-gets-restraining-order-against-city-council-candidate",
     "published": "2026-11-17T13:00:00Z",
-    "updated": "2026-11-17T13:00:00Z",
     "gathered": "2026-11-17T13:44:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "wind": "N 1 mph",
-    "humidity": 36,
-    "obs": "17 Nov 03:10 PM PST"
+    "temp": 57,
+    "wind": "NW 3 mph",
+    "humidity": 47,
+    "obs": "17 Nov 07:40 PM PST"
    },
    "periods": [
     {
@@ -480,7 +519,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 47,
-     "text": "A 30 percent chance of rain before 10pm.  Partly cloudy, with a low around 47."
+     "text": "A 30 percent chance of rain before 10pm.  Partly cloudy, with a low around 47. North wind 5 to 10 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
@@ -502,7 +541,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -513,6 +552,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Tenant says he warned landlord of cracks before Brooklyn collapse",
+    "b": "Dengane Omari Jack is suing his landlord and construction firms over the collapse that killed eight.",
+    "date": "2026-11-17",
+    "publisher": "Gothamist",
+    "title": "Tenant in collapsed Brooklyn building warned landlord of cracks, lawsuit says",
+    "url": "https://gothamist.com/news/tenant-in-collapsed-brooklyn-building-says-he-warned-landlord-of-cracks-in-lawsuit",
+    "published": "2026-11-17T23:28:00Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
+   {
+    "h": "MTA plans new signals for every mile of subway by 2050",
+    "b": "Chair Janno Lieber said the upgrade targets the leading cause of delays.",
+    "date": "2026-11-18",
+    "publisher": "Gothamist",
+    "title": "MTA plans new subway signals for ‘the whole damn system, finally’",
+    "url": "https://gothamist.com/news/mta-plans-new-subway-signals-for-the-whole-damn-system-finally",
+    "published": "2026-11-18T02:00:55Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
    {
     "h": "Woman arrested after climbing Steinway Tower to 91st floor",
     "b": "Firefighters pulled the 18-year-old from the Midtown tower's exterior; no injuries were reported.",
@@ -576,18 +635,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 52,
     "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 47,
-    "obs": "17 Nov 17:51 pm EST"
+    "wind": "W 5 mph",
+    "humidity": 55,
+    "obs": "17 Nov 21:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Clear, with a low around 45. West wind around 8 mph. "
+     "text": "Mostly clear, with a low around 45. West wind around 8 mph. "
     },
     {
      "name": "Wednesday",
@@ -633,7 +692,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -691,7 +750,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "goodnews": []
  },
  {
@@ -701,6 +760,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Teen pleads not guilty in Fall City family killings",
+    "b": "The 17-year-old is charged with killing five family members in October 2024.",
+    "date": "2026-11-18",
+    "publisher": "KUOW",
+    "title": "Teenager charged in Fall City family killings pleads not guilty",
+    "url": "https://www.kuow.org/crime/2026-11-17/teenager-charged-in-fall-city-family-killings-pleads-not-guilty",
+    "published": "2026-11-18T00:07:05Z",
+    "updated": "2026-11-18T00:17:05Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
+   {
+    "h": "Measles spreading in Washington as US loses elimination status",
+    "b": "The state has five times as many cases this year as in all of 2025.",
+    "date": "2026-11-17",
+    "publisher": "KUOW",
+    "title": "Measles is spreading in Washington state as US loses its elimination status",
+    "url": "https://www.kuow.org/health-care/2026-11-17/measles-is-spreading-in-washington-state-as-us-loses-its-elimination-status",
+    "published": "2026-11-17T23:16:41Z",
+    "updated": "2026-11-17T23:16:41Z",
+    "gathered": "2026-11-18T03:49:20Z"
+   },
    {
     "h": "Ocean Shores races to patch shoreline before king tides",
     "b": "The city is under a state of emergency ahead of the season's first king tide.",
@@ -716,21 +797,17 @@
     "h": "Ferguson orders deeper cuts to face $4B shortfall",
     "b": "The governor wants agencies to cut spending by up to 15% through mid-2028.",
     "date": "2026-11-17",
-    "publisher": "KUOW",
-    "title": "WA governor looks to sharply pare spending in face of $4B budget shortfall",
     "url": "https://www.kuow.org/governing/2026-11-17/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall",
-    "published": "2026-11-17T17:27:16Z",
-    "updated": "2026-11-17T17:27:16Z",
     "gathered": "2026-11-17T22:33:35Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 54,
-    "cond": "Partly Cloudy",
-    "wind": "W 4 mph",
-    "humidity": 54,
-    "obs": "17 Nov 02:55 PM PST"
+    "temp": 46,
+    "cond": "Clear",
+    "wind": "Calm",
+    "humidity": 81,
+    "obs": "17 Nov 07:20 PM PST"
    },
    "periods": [
     {
@@ -783,7 +860,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T02:12:00Z",
+  "updatedAt": "2026-11-18T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
