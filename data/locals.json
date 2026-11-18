@@ -16,69 +16,15 @@
     "published": "2026-11-17T15:58:31Z",
     "updated": "2026-11-17T15:58:34Z",
     "gathered": "2026-11-17T17:12:41Z"
-   },
-   {
-    "h": "Zoox robotaxis arrive in Atlanta",
-    "b": "The Amazon-owned company starts near Atlantic Station, Woodward and Home Park and will expand as testing progresses.",
-    "date": "2026-11-16",
-    "publisher": "WABE",
-    "title": "Zoox robotaxis arrive on the streets of Atlanta",
-    "url": "https://www.wabe.org/zoox-robotaxis-arrive-on-the-streets-of-atlanta/",
-    "published": "2026-11-16T23:52:16Z",
-    "updated": "2026-11-17T14:57:49Z",
-    "gathered": "2026-11-17T04:05:40Z"
-   },
-   {
-    "h": "Two Metro Atlanta officers arrested over Flock camera misuse",
-    "b": "They are charged with misusing the license plate reader system.",
-    "date": "2026-11-16",
-    "publisher": "WABE",
-    "title": "Two metro Atlanta officers arrested for Flock camera misuse",
-    "url": "https://www.wabe.org/two-metro-atlanta-officers-arrested-due-to-improper-license-plate-reader-system-use/",
-    "published": "2026-11-16T20:33:00Z",
-    "updated": "2026-11-17T15:07:53Z",
-    "gathered": "2026-11-16T23:16:32Z"
-   },
-   {
-    "h": "AAA forecasts 81.5 million Thanksgiving travelers",
-    "b": "That would be about 121,000 fewer than last year, a 0.1% decline.",
-    "date": "2026-11-16",
-    "publisher": "WABE",
-    "title": "AAA forecasts another busy Thanksgiving travel week",
-    "url": "https://www.wabe.org/aaa-forecasts-another-busy-but-not-quite-as-busy-thanksgiving-travel-week/",
-    "published": "2026-11-16T18:36:49Z",
-    "updated": "2026-11-16T19:26:03Z",
-    "gathered": "2026-11-16T20:38:02Z"
-   },
-   {
-    "h": "Flight disruptions from ground stop expected through Monday",
-    "b": "Atlanta and Dallas-Fort Worth had the most delays Sunday, with more than 250 flights each.",
-    "date": "2026-11-16",
-    "publisher": "WABE",
-    "title": "Flight disruptions expected to last through Monday",
-    "url": "https://www.wabe.org/flight-disruptions-expected-to-last-through-monday/",
-    "published": "2026-11-16T15:53:51Z",
-    "gathered": "2026-11-16T17:13:08Z"
-   },
-   {
-    "h": "Black voter turnout helped drive Georgia's historic shift",
-    "b": "Eight Black women were elected to statewide offices as Democrats flipped the state up and down the ballot.",
-    "date": "2026-11-16",
-    "publisher": "WABE",
-    "title": "Rise in Black voter turnout helps drive historic change in Georgia",
-    "url": "https://www.wabe.org/rise-in-black-voter-turnout-helps-drive-historic-change-in-georgia-transforming-state-government/",
-    "published": "2026-11-16T16:09:28Z",
-    "updated": "2026-11-16T16:12:26Z",
-    "gathered": "2026-11-16T17:13:08Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 58,
     "cond": "A Few Clouds",
-    "wind": "E 13 mph",
-    "humidity": 25,
-    "obs": "17 Nov 16:52 pm EST"
+    "wind": "E 10 mph",
+    "humidity": 31,
+    "obs": "17 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -131,21 +77,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "atlanta-ga",
-  "goodnews": [
-   {
-    "h": "Indigo Girls to perform at the 100th Macy's parade",
-    "b": "The Atlanta duo will appear in the Thanksgiving parade.",
-    "date": "2026-11-16",
-    "publisher": "WABE",
-    "title": "Indigo Girls to perform in Macy's Thanksgiving Day Parade",
-    "url": "https://www.wabe.org/indigo-girls-to-perform-in-macys-thanksgiving-day-parade/",
-    "published": "2026-11-16T18:14:00Z",
-    "updated": "2026-11-16T19:30:33Z",
-    "gathered": "2026-11-16T20:38:02Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -153,29 +87,14 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Judge sets March retrial for Lindsay Clancy",
-    "b": "Her first trial ended in a mistrial; 11 jurors favored acquittal on insanity grounds.",
-    "date": "2026-11-16",
-    "url": "https://www.pbs.org/newshour/nation/judge-sets-march-retrial-date-for-lindsay-clancy-in-deaths-of-her-3-children",
-    "gathered": "2026-11-17T04:05:40Z"
-   },
-   {
-    "h": "Lindsay Clancy to face new trial in spring",
-    "b": "Her retrial in the deaths of her three children is set for March 29 after September's mistrial, with no change to the charges.",
-    "date": "2026-11-16",
-    "url": "https://www.kuow.org/npr-news/2026-11-16/lindsay-clancy-to-face-a-new-trial-in-spring-of-2027-over-childrens-killing",
-    "gathered": "2026-11-16T17:13:08Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 53,
     "cond": "A Few Clouds",
-    "wind": "W 8 mph",
-    "humidity": 44,
-    "obs": "17 Nov 16:54 pm EST"
+    "wind": "SW 10 mph, gusts to 22 mph",
+    "humidity": 51,
+    "obs": "17 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -228,7 +147,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -267,53 +186,15 @@
     "date": "2026-11-17",
     "url": "https://www.wbez.org/housing/2026/11/17/ratio-utility-billing-leads-to-volatile-gas-water-bills-rubs",
     "gathered": "2026-11-17T13:44:05Z"
-   },
-   {
-    "h": "Judge vacates Anthony Garrett's conviction in 1992 killing",
-    "b": "The judge found Garrett's confession in the murder of 7-year-old Dantrell Davis was likely tortured.",
-    "date": "2026-11-16",
-    "url": "https://www.wbez.org/criminal-justice/2026/11/16/richard-zuley-anthony-garrett-dantrell-davis-torture-guantanamo-bay",
-    "gathered": "2026-11-16T20:38:02Z"
-   },
-   {
-    "h": "Mavis Staples, Michelle Obama among Chicago Grammy nominees",
-    "b": "Staples' latest album earned several nominations, bringing her total to 19.",
-    "date": "2026-11-16",
-    "url": "https://www.wbez.org/music/2026/11/16/2027-grammy-awards-list-chicago-raye-rosalia-mavis-staples-ye-j-ivy",
-    "gathered": "2026-11-16T17:13:08Z"
-   },
-   {
-    "h": "Groups petition EPA for stricter nitrate limits in drinking water",
-    "b": "Advocates say fertilizer runoff makes Illinois a hot spot for nitrate pollution.",
-    "date": "2026-11-16",
-    "url": "https://www.wbez.org/environment/2026/11/16/public-health-petition-epa-nitrate-standards",
-    "gathered": "2026-11-16T14:18:13Z"
-   },
-   {
-    "h": "CPS overtime costs tripled despite 2022 warning",
-    "b": "The inspector general found overtime peaked at $150 million in 2024 before dropping to $97 million in 2025.",
-    "date": "2026-11-16",
-    "url": "https://www.wbez.org/education/2026/11/16/cps-overtime-pay-costs-skyrocketed-despite-a-2022-warning-to-rein-in-spending",
-    "gathered": "2026-11-16T14:18:13Z"
-   },
-   {
-    "h": "Chicago is $55 billion in debt, threatening city services",
-    "b": "A WTTW and ProPublica investigation traces decades of pension mismanagement and heavy borrowing.",
-    "date": "2026-11-16",
-    "publisher": "ProPublica",
-    "title": "Chicago Is $55 Billion in Debt, With No End in Sight. It’s a Threat to City Services.",
-    "url": "https://www.propublica.org/article/chicago-debt-burden-public-health-safety",
-    "published": "2026-11-16T10:00:00Z",
-    "gathered": "2026-11-16T11:13:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "A Few Clouds",
-    "wind": "S 9 mph",
-    "humidity": 45,
-    "obs": "17 Nov 15:53 pm CST"
+    "temp": 54,
+    "cond": "Partly Cloudy",
+    "wind": "S 5 mph",
+    "humidity": 47,
+    "obs": "17 Nov 16:53 pm CST"
    },
    "periods": [
     {
@@ -366,7 +247,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -379,13 +260,6 @@
     "published": "2026-11-17T11:35:00Z",
     "updated": "2026-11-17T11:35:01Z",
     "gathered": "2026-11-17T13:44:05Z"
-   },
-   {
-    "h": "50 people become citizens at Pilsen's Mexican art museum",
-    "b": "It was the National Museum of Mexican Art's first naturalization ceremony in its 44-year history.",
-    "date": "2026-11-16",
-    "url": "https://www.wbez.org/immigration/2026/11/16/at-pilsens-mexican-art-museum-50-people-take-oath-of-u-s-citizenship",
-    "gathered": "2026-11-16T23:16:32Z"
    }
   ]
  },
@@ -395,43 +269,16 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [
-   {
-    "h": "RTD moves forward with northern rail extension",
-    "b": "A plan to add 5.5 miles to the N Line is now in development.",
-    "date": "2026-11-16",
-    "publisher": "Denverite",
-    "title": "Not all cuts: RTD moves forward with northern rail extension",
-    "url": "https://denverite.com/2026/11/16/rtd-n-line-extension-adams-county/",
-    "published": "2026-11-16T21:51:23Z",
-    "gathered": "2026-11-16T23:16:32Z"
-   },
-   {
-    "h": "New Capitol Hill venue refuses to work with AEG, Live Nation",
-    "b": "The DIY music space says no AI and no corporate promoters.",
-    "date": "2026-11-16",
-    "publisher": "Denverite",
-    "title": "This new Capitol Hill music venue refuses to work with AEG and Live Nation",
-    "url": "https://denverite.com/2026/11/16/poison-pit-capitol-hill-new-venue/",
-    "published": "2026-11-16T11:00:00Z",
-    "gathered": "2026-11-16T11:13:56Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 67,
+    "temp": 64,
     "cond": "Mostly Cloudy",
-    "wind": "SW 17 mph, gusts to 24 mph",
-    "humidity": 17,
-    "obs": "17 Nov 13:58 pm MST"
+    "wind": "S 17 mph",
+    "humidity": 21,
+    "obs": "17 Nov 14:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 66,
-     "text": "Mostly sunny, with a high near 66. South southwest wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -460,7 +307,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 35,
-     "text": "Partly cloudy, with a low around 35."
+     "text": "Partly cloudy, with a low around 35. Light west southwest wind becoming south southwest 5 to 10 mph in the evening. Winds could gust as high as 17 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 60,
+     "text": "Sunny, with a high near 60."
     }
    ]
   },
@@ -476,9 +329,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "denver-co",
   "goodnews": [
+   {
+    "h": "Construction starts on long-closed Five Points pool",
+    "b": "The Mestizo-Curtis Park swimming pool and park will be renovated.",
+    "date": "2026-11-17",
+    "publisher": "Denverite",
+    "title": "This Five Points pool closed three years ago. Construction is finally starting",
+    "url": "https://denverite.com/2026/11/17/mestizo-curtis-park-construction-starts/",
+    "published": "2026-11-17T23:02:39Z",
+    "gathered": "2026-11-17T23:15:36Z"
+   },
    {
     "h": "Holiday markets in Denver this year",
     "b": "Denverite rounds up where to shop for loved ones this season.",
@@ -519,46 +382,16 @@
     "published": "2026-11-17T13:00:00Z",
     "updated": "2026-11-17T13:00:00Z",
     "gathered": "2026-11-17T13:44:05Z"
-   },
-   {
-    "h": "California donates 1,300 hospital beds to Ukraine",
-    "b": "Gov. Newsom visited Lviv.",
-    "date": "2026-11-16",
-    "url": "https://laist.com/news/california-donates-1-300-hospital-beds-and-medical-supplies-to-ukraine",
-    "gathered": "2026-11-16T20:38:02Z"
-   },
-   {
-    "h": "What happens to Raman's council seat when she becomes mayor",
-    "b": "Nithya Raman takes office Dec. 14, which could leave Council District 4 temporarily without a representative.",
-    "date": "2026-11-16",
-    "url": "https://laist.com/news/politics/what-happens-to-nithya-raman-la-city-council-seat-once-sworn-in-as-mayor",
-    "gathered": "2026-11-16T14:18:13Z"
-   },
-   {
-    "h": "Eaton Fire survivors face Nov. 30 Edison payout deadline",
-    "b": "Survivors must decide whether to apply for Southern California Edison's compensation program or hold out for a lawsuit.",
-    "date": "2026-11-16",
-    "publisher": "LAist",
-    "title": "What Eaton Fire survivors need to know as Edison payout and lawsuit deadlines approach",
-    "url": "https://laist.com/news/climate-environment/eaton-fire-survivors-edison-payout-and-lawsuit-deadlines",
-    "published": "2026-11-16T13:00:00Z",
-    "gathered": "2026-11-16T14:18:13Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "wind": "Calm",
-    "humidity": 32,
-    "obs": "17 Nov 02:25 PM PST"
+    "temp": 66,
+    "wind": "N 1 mph",
+    "humidity": 36,
+    "obs": "17 Nov 03:10 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 66,
-     "text": "Sunny, with a high near 66. West northwest wind around 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -588,6 +421,12 @@
      "kind": "low",
      "temp": 47,
      "text": "A 30 percent chance of rain before 10pm.  Partly cloudy, with a low around 47."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 64,
+     "text": "Sunny, with a high near 64."
     }
    ]
   },
@@ -603,7 +442,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -673,85 +512,15 @@
     "url": "https://gothamist.com/news/a-new-day-arrives-on-brooklyns-flatbush-avenue-as-redesign-gives-bus-riders-priority",
     "published": "2026-11-17T10:30:45Z",
     "gathered": "2026-11-17T13:44:05Z"
-   },
-   {
-    "h": "Man charged with murder in Elizabeth vigil shooting",
-    "b": "Travon Holmes, 29, is charged in the shooting that left one dead and four injured.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "Man charged with murder in shooting at NJ vigil that left 1 dead, 4 injured",
-    "url": "https://gothamist.com/news/man-charged-with-murder-in-shooting-at-nj-vigil-that-left-1-dead-4-injured",
-    "published": "2026-11-17T00:55:26Z",
-    "gathered": "2026-11-17T04:05:40Z"
-   },
-   {
-    "h": "MTA falls further behind on subway signal upgrades",
-    "b": "A consultant's report found the $2B effort slipping further behind schedule.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "MTA falls further behind on $2B in upgrades to NYC subway signals, consultant finds",
-    "url": "https://gothamist.com/news/mta-falls-further-behind-on-2b-in-upgrades-to-nyc-subway-signals-consultant-finds",
-    "published": "2026-11-16T20:56:49Z",
-    "gathered": "2026-11-16T23:16:32Z"
-   },
-   {
-    "h": "NYC public school enrollment drops again",
-    "b": "The decline adds pressure to school budgets and calls for closures and mergers.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "NYC public school enrollment drops yet again, even as some schools overflow",
-    "url": "https://gothamist.com/news/nyc-public-school-enrollment-drops-yet-again-even-as-some-schools-overflow",
-    "published": "2026-11-16T21:11:02Z",
-    "gathered": "2026-11-16T23:16:32Z"
-   },
-   {
-    "h": "Two Co-op City peace officers shot during Bronx wellness check",
-    "b": "The 56-year-old shooter was found dead; the officers' injuries are not life-threatening.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "2 Co-op City peace officers shot during Bronx wellness check, officials say",
-    "url": "https://gothamist.com/news/3-people-shot-in-co-op-city-in-the-bronx-including-two-peace-officers-nypd-says",
-    "published": "2026-11-17T01:48:00Z",
-    "gathered": "2026-11-16T20:38:02Z"
-   },
-   {
-    "h": "Andrew Goodman's brother on Mississippi's historic Senate win",
-    "b": "Democrat Scott Colom became the state's first Black senator in 150 years, 62 years after the Freedom Summer murders.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "NY, the 'Freedom Summer' murders and an improbable election win in Mississippi",
-    "url": "https://gothamist.com/news/ny-the-freedom-summer-murders-and-an-improbable-election-win-in-ny-the-freedom-summer-murders-and-an-improbable-election-win-in-mississippi",
-    "published": "2026-11-16T16:00:00Z",
-    "gathered": "2026-11-16T17:13:08Z"
-   },
-   {
-    "h": "Many NYC food pantry users have jobs, report finds",
-    "b": "Robin Hood found 39% of pantry users work full time, as more than 26,500 New Yorkers lost SNAP this year under new work rules.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "Having a job doesn’t save you from going hungry in NYC, report finds",
-    "url": "https://gothamist.com/news/having-a-job-doesnt-save-you-from-going-hungry-in-nyc-report-finds",
-    "published": "2026-11-16T14:00:55Z",
-    "gathered": "2026-11-16T14:18:13Z"
-   },
-   {
-    "h": "Mamdani to disband NYPD's Strategic Response Group",
-    "b": "The mayor will split the protest unit's functions and create a new unit for peaceful demonstrations.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "Mamdani announces plan to disband NYPD’s Strategic Response Group",
-    "url": "https://gothamist.com/news/mamdani-announces-plan-to-disband-nypds-strategic-response-group",
-    "published": "2026-11-16T11:06:00Z",
-    "gathered": "2026-11-16T11:13:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 54,
     "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 45,
-    "obs": "17 Nov 16:51 pm EST"
+    "wind": "W 3 mph",
+    "humidity": 47,
+    "obs": "17 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -804,30 +573,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Cat rescued from Flatbush collapse reunited with owner",
-    "b": "A local rescue group found Isaac after his owner's tearful plea went viral.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "How one Brooklyn cat avoided the building collapse and was rejoined with his human",
-    "url": "https://gothamist.com/news/how-one-brooklyn-cat-avoided-the-building-collapse-and-was-rejoined-with-his-human",
-    "published": "2026-11-16T11:30:50Z",
-    "gathered": "2026-11-16T14:18:13Z"
-   },
-   {
-    "h": "Meet the Syracuse artist who restores subway mosaics",
-    "b": "Robert Shenfeld, 73, is the one man the MTA relies on to restore its century-old station name tiles.",
-    "date": "2026-11-16",
-    "publisher": "Gothamist",
-    "title": "Meet the Syracuse tile guy with a monopoly on NYC subway mosaics",
-    "url": "https://gothamist.com/news/meet-the-syracuse-tile-guy-with-a-monopoly-on-nyc-subway-mosaics",
-    "published": "2026-11-16T11:01:00Z",
-    "gathered": "2026-11-16T11:13:56Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -865,45 +613,6 @@
     "date": "2026-11-17",
     "url": "https://www.thelocal.fr/20261117/apple-faces-paris-trial-over-alleged-planned-obsolescence-of-iphones",
     "gathered": "2026-11-17T08:12:04Z"
-   },
-   {
-    "h": "Paris court fines landlord €110,000 over illegal Airbnb",
-    "b": "The 8th arrondissement apartment was rented out for 351 nights in 2025, the court found.",
-    "date": "2026-11-16",
-    "url": "https://www.thelocal.fr/20261116/paris-court-imposes-e110000-fine-for-illegal-airbnb-rental",
-    "gathered": "2026-11-16T14:18:13Z"
-   },
-   {
-    "h": "Eurotunnel announces 'breakthrough' on EU border checks",
-    "b": "Getlink says an airport-style camera system will let it roll out the EES passport checks at Folkestone and Calais.",
-    "date": "2026-11-16",
-    "url": "https://www.thelocal.fr/20261116/eu-breakthrough-to-allow-streamlined-checks-at-uk-france-border",
-    "gathered": "2026-11-16T11:13:56Z"
-   },
-   {
-    "h": "France eases citizenship rules for foreign retirees",
-    "b": "Interior Minister Laurent Nunez says naturalization checks have been adapted to account for retirees' circumstances.",
-    "date": "2026-11-16",
-    "url": "https://www.thelocal.fr/20261116/minister-announces-adaptation-of-rules-on-french-citizenship",
-    "gathered": "2026-11-16T10:02:05Z"
-   },
-   {
-    "h": "Paris police ban protests near some schools and universities",
-    "b": "The order covers 10 lycées and university sites including the Sorbonne through Friday, amid a two-month blockade movement.",
-    "date": "2026-11-16",
-    "url": "https://www.thelocal.fr/20261116/police-ban-protests-near-some-paris-schools-and-universities",
-    "gathered": "2026-11-16T10:02:05Z"
-   },
-   {
-    "h": "Public sector strike set for Tuesday",
-    "b": "Unions are calling for pay raises after talks with the prime minister failed; rail unions and students have joined.",
-    "date": "2026-11-16",
-    "publisher": "The Local France",
-    "title": "MAPS: What to expect from France's November 17th strikes and protests",
-    "url": "https://www.thelocal.fr/20261116/what-to-expect-from-frances-november-17th-strike/",
-    "published": "2026-11-16T09:04:07Z",
-    "updated": "2026-11-16T14:46:58Z",
-    "gathered": "2026-11-16T10:02:05Z"
    }
   ],
   "weather": {
@@ -922,7 +631,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "goodnews": []
  },
  {
@@ -953,51 +662,17 @@
     "published": "2026-11-17T17:27:16Z",
     "updated": "2026-11-17T17:27:16Z",
     "gathered": "2026-11-17T22:33:35Z"
-   },
-   {
-    "h": "Student athletes join legal fight over I-638",
-    "b": "Five high school athletes backing the transgender sports ban intervened as Seattle parents try to strike it down.",
-    "date": "2026-11-16",
-    "url": "https://www.kuow.org/law/2026-11-16/student-athletes-in-support-of-i-638-jump-into-legal-fight-that-could-overturn-the-measure",
-    "gathered": "2026-11-16T23:16:32Z"
-   },
-   {
-    "h": "Rep. April Berg challenges Laurie Jinkins for House speaker",
-    "b": "Washington House Democrats face a contest for the speakership.",
-    "date": "2026-11-16",
-    "url": "https://www.kuow.org/governing/2026-11-16/after-big-wins-wa-house-democrats-face-an-internal-duel-for-speaker",
-    "gathered": "2026-11-16T20:38:02Z"
-   },
-   {
-    "h": "New AG rules aim to speed up public records requests",
-    "b": "The state attorney general's rules target Washington's public records process.",
-    "date": "2026-11-16",
-    "url": "https://www.kuow.org/governing/2026-11-16/new-rules-seek-to-speed-up-wa-public-records-system",
-    "gathered": "2026-11-16T20:38:02Z"
-   },
-   {
-    "h": "Immigration lawyers welcome Seattle US Attorney's pullback",
-    "b": "The office says it can't keep up with detention release petitions; lawyers say clients could be freed sooner.",
-    "date": "2026-11-16",
-    "url": "https://www.kuow.org/immigration/2026-11-16/immigration-lawyers-say-pullback-by-seattles-u-s-attorney-could-help-people-in-detention",
-    "gathered": "2026-11-16T20:38:02Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 54,
-    "cond": "Mostly Cloudy",
-    "wind": "W 5 mph",
+    "cond": "Partly Cloudy",
+    "wind": "W 4 mph",
     "humidity": 54,
-    "obs": "17 Nov 02:10 PM PST"
+    "obs": "17 Nov 02:55 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 50,
-     "text": "Sunny, with a high near 50. Calm wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -1026,7 +701,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 37,
-     "text": "Partly cloudy, with a low around 37."
+     "text": "Partly cloudy, with a low around 37. Calm wind. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 48,
+     "text": "Partly sunny, with a high near 48."
     }
    ]
   },
@@ -1042,7 +723,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-17T23:11:00Z",
+  "updatedAt": "2026-11-18T02:11:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
