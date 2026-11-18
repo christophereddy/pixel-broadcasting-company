@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T11:13:00Z",
+ "updatedAt": "2026-11-18T14:15:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,31 @@
  },
  "world": [
   {
-   "h": "LIVE: Iran targets US base in Kuwait; Bahrain repels 'criminal' attacks",
+   "h": "Trump lands in China for meetings with Xi and Putin",
+   "b": "He arrived in Shenzhen as a series of technical outages at home has the administration scrambling.",
+   "date": "2026-11-18",
+   "publisher": "KUOW",
+   "title": "Trump lands in China with key meetings with Xi and Putin on the agenda",
+   "url": "https://www.kuow.org/npr-news/2026-11-18/trump-lands-in-china-with-key-meetings-with-xi-and-putin-on-the-agenda",
+   "published": "2026-11-18T10:32:03Z",
+   "updated": "2026-11-18T10:39:07Z",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
+  {
+   "h": "Saudi coalition says it hit 60 Houthi military sites",
+   "b": "The coalition says strikes destroyed missile tunnels as the Houthis advance toward Aden.",
+   "date": "2026-11-18",
+   "publisher": "Al Jazeera",
+   "title": "Saudi coalition hits 60 Houthi military sites; Taiz sees ‘fierce battles’",
+   "url": "https://www.aljazeera.com/news/2026/11/18/houthis-advance-on-aden-as-saudi-coalition-targets-military-sites",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
+  {
+   "h": "LIVE: Saudi Arabia, Qatar and UAE condemn Iranian attacks on Kuwait and Bahrain",
    "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-18",
    "publisher": "Al Jazeera",
-   "title": "Iran targets US base in Kuwait; Bahrain repels ‘criminal’ attacks",
+   "title": "Saudi Arabia, Qatar and UAE condemn Iranian attacks on Kuwait and Bahrain",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks",
    "gathered": "2026-11-18T08:12:45Z"
   },
@@ -45,8 +65,6 @@
    "h": "Board of Peace warns Gaza ceasefire faces imminent collapse",
    "b": "The US-backed board gave the UN Security Council a grim assessment of the year-old truce.",
    "date": "2026-11-17",
-   "publisher": "Al Jazeera",
-   "title": "Board of Peace warns Gaza ceasefire faces imminent collapse without action",
    "url": "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
    "gathered": "2026-11-18T03:49:20Z"
   },
@@ -109,11 +127,18 @@
  ],
  "national": [
   {
+   "h": "Forensic expert says Epstein was likely strangled",
+   "b": "Michael Freeman told CBS News his review of autopsy records points to homicide, not suicide.",
+   "date": "2026-11-18",
+   "publisher": "Al Jazeera",
+   "title": "Epstein’s death more likely homicide than suicide, forensic expert says",
+   "url": "https://www.aljazeera.com/news/2026/11/18/forensic-experts-says-jeffrey-epstein-was-killed-casts-doubt-over-suicide",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
+  {
    "h": "Ecuadorian fishermen sue over US drone strike",
    "b": "They say a March strike sank their vessel and injured crew; the suit was filed in Pennsylvania federal court.",
    "date": "2026-11-17",
-   "publisher": "Al Jazeera",
-   "title": "Ecuadorian fishermen sue Trump administration over drone strike",
    "url": "https://www.aljazeera.com/news/2026/11/18/ecuadorian-fishermen-sue-trump-administration-over-drone-strike",
    "gathered": "2026-11-18T03:49:20Z"
   },
@@ -139,11 +164,7 @@
    "h": "US loses measles elimination status",
    "b": "The country declared measles eliminated in 2000; Illinois has reported 29 cases so far this year.",
    "date": "2026-11-17",
-   "publisher": "WBEZ",
-   "title": "U.S. loses measles elimination status, but cases remain low in Illinois",
    "url": "https://www.wbez.org/health-medicine/2026/11/17/us-loses-measles-elimination-status",
-   "published": "2026-11-17T16:46:38Z",
-   "updated": "2026-11-17T16:46:38Z",
    "gathered": "2026-11-17T17:12:41Z"
   },
   {
@@ -160,14 +181,21 @@
  ],
  "politics": [
   {
+   "h": "DOJ loosens standards to hire new prosecutors",
+   "b": "ProPublica reports the department is hiring young attorneys amid a loss of experienced staff.",
+   "date": "2026-11-18",
+   "publisher": "ProPublica",
+   "title": "They Just Passed the Bar. Now They’re Federal Prosecutors.",
+   "url": "https://www.propublica.org/article/federal-prosecutors-hiring-trump-doj",
+   "published": "2026-11-18T11:00:00Z",
+   "updated": "2026-11-18T11:00:12Z",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
+  {
    "h": "Mary Peltola flips Alaska Senate seat",
    "b": "The former Democratic congresswoman defeated Sen. Dan Sullivan, giving Democrats 56 senators in the next Congress, per an AP race call.",
    "date": "2026-11-17",
-   "publisher": "KUOW",
-   "title": "Mary Peltola flips Alaska's Senate seat into Democrats' column",
    "url": "https://www.kuow.org/npr-news/2026-11-17/mary-peltola-flips-alaskas-senate-seat-into-democrats-column",
-   "published": "2026-11-18T03:27:23Z",
-   "updated": "2026-11-18T03:31:39Z",
    "gathered": "2026-11-18T03:49:20Z"
   },
   {
@@ -221,6 +249,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Tim Hortons app accused of sharing data with Israeli-linked firm",
+   "b": "A Canadian advocacy group says the app shared user data with Forter, founded by former Unit 8200 members.",
+   "date": "2026-11-18",
+   "place": "Toronto, Canada",
+   "tz": "America/Toronto",
+   "publisher": "Al Jazeera",
+   "title": "Tim Hortons accused of sharing user data with firm linked to Israeli army",
+   "url": "https://www.aljazeera.com/news/2026/11/18/tim-hortons-app-sharing-extensive-data-with-israeli-military-linked-firm",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
+  {
+   "h": "Arsenic linked to Myanmar mining prompts water scramble in Thailand",
+   "b": "Authorities are supplying clean water to more than 20,000 households in Chiang Rai province.",
+   "date": "2026-11-18",
+   "place": "Chiang Rai, Thailand",
+   "tz": "Asia/Bangkok",
+   "publisher": "Al Jazeera",
+   "title": "Myanmar-linked arsenic pollution prompts clean water scramble in Thailand",
+   "url": "https://www.aljazeera.com/news/2026/11/18/arsenic-pollution-linked-to-myanmar-mining-prompts-water-alert-in-thailand",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
   {
    "h": "More than 100,000 join France pay protests",
    "b": "Public sector workers demanded raises in nationwide strikes over the cost of living.",
@@ -278,11 +328,20 @@
  ],
  "business": [
   {
+   "h": "Meta documents reveal 'Project Gryffindor' to grow teen Instagram use",
+   "b": "The plan targeted schools with banners on profiles and a student directory.",
+   "date": "2026-11-18",
+   "publisher": "KUOW",
+   "title": "Project Gryffindor: Meta's plan to get more school kids using Instagram",
+   "url": "https://www.kuow.org/npr-news/2026-11-18/project-gryffindor-metas-plan-to-get-more-school-kids-using-instagram",
+   "published": "2026-11-18T10:00:00Z",
+   "updated": "2026-11-18T10:11:22Z",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
+  {
    "h": "'Grand Theft Auto VI' set for release Thursday",
    "b": "It is expected to be the biggest video game launch ever, 13 years after the last edition.",
    "date": "2026-11-17",
-   "publisher": "WBUR",
-   "title": "How a local video game developer helped create 'Grand Theft Auto VI'",
    "url": "https://www.wbur.org/news/2026/11/17/gta-vi-video-game-rockstar",
    "gathered": "2026-11-17T23:15:36Z"
   },
@@ -322,6 +381,17 @@
   }
  ],
  "science": [
+  {
+   "h": "Researchers say OpenAI's new safety program falls short",
+   "b": "AI safety researchers say the third-party evaluator program is less than the company promised.",
+   "date": "2026-11-18",
+   "publisher": "KUOW",
+   "title": "OpenAI announces new AI safety program; researchers worry it won't be enough",
+   "url": "https://www.kuow.org/npr-news/2026-11-18/openai-announces-new-ai-safety-program-researchers-worry-it-wont-be-enough",
+   "published": "2026-11-18T10:00:00Z",
+   "updated": "2026-11-18T10:10:44Z",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
   {
    "h": "Doctors raise alarm over US babies born with measles",
    "b": "Congenital measles, passed from a pregnant woman to her fetus, can cause serious complications or be deadly for newborns.",
@@ -386,6 +456,16 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "Williamsburg business district plan sparks fight",
+   "b": "The proposal grew out of complaints about dirty parks and streets in the fast-developing neighborhood.",
+   "date": "2026-11-18",
+   "publisher": "Gothamist",
+   "title": "Plan for Williamsburg business district fuels fight over future of pricey neighborhood",
+   "url": "https://gothamist.com/news/plan-for-williamsburg-business-district-fuels-fight-over-future-of-pricey-neighborhood",
+   "published": "2026-11-18T11:00:57Z",
+   "gathered": "2026-11-18T13:19:11Z"
+  },
   {
    "h": "Tenant says he warned landlord of cracks before Brooklyn collapse",
    "b": "Dengane Omari Jack is suing his landlord and construction firms over the collapse that killed eight.",
@@ -469,21 +549,21 @@
  ],
  "weather": {
   "now": {
-   "temp": 49,
+   "temp": 47,
    "cond": "Fair",
-   "wind": "W 8 mph",
-   "humidity": 59,
-   "obs": "18 Nov 02:51 am EST"
+   "wind": "NW 3 mph",
+   "humidity": 61,
+   "obs": "18 Nov 07:51 am EST"
   },
   "periods": [
    {
-    "name": "Wednesday",
+    "name": "Today",
     "kind": "high",
     "temp": 60,
     "text": "Sunny, with a high near 60. West wind around 7 mph. "
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 46,
     "text": "Mostly clear, with a low around 46. West wind 6 to 8 mph. "
@@ -504,7 +584,7 @@
     "name": "Friday",
     "kind": "high",
     "temp": 63,
-    "text": "Sunny, with a high near 63."
+    "text": "Sunny, with a high near 63. West wind around 6 mph. "
    },
    {
     "name": "Friday Night",
