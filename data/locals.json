@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 49,
     "cond": "A Few Clouds",
-    "wind": "NE 9 mph",
-    "humidity": 61,
-    "obs": "18 Nov 07:52 am EST"
+    "wind": "E 14 mph",
+    "humidity": 55,
+    "obs": "18 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -112,11 +112,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "A Few Clouds",
-    "wind": "W 9 mph",
-    "humidity": 57,
-    "obs": "18 Nov 07:54 am EST"
+    "temp": 53,
+    "cond": "Mostly Cloudy",
+    "wind": "W 9 mph, gusts to 22 mph",
+    "humidity": 52,
+    "obs": "18 Nov 08:54 am EST"
    },
    "periods": [
     {
@@ -169,7 +169,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -188,6 +188,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Man acquitted in Bovino murder plot fights deportation",
+    "b": "Ten months after his not-guilty verdict, Juan Espinoza Martinez remains in immigrant detention facing deportation to Mexico.",
+    "date": "2026-11-18",
+    "publisher": "WBEZ",
+    "title": "Chicago man cleared in Gregory Bovino murder plot fights deportation to stay with family",
+    "url": "https://www.wbez.org/immigration/2026/11/18/gregory-bovino-juan-espinoza-martinez-ice-trump",
+    "published": "2026-11-18T13:23:39Z",
+    "updated": "2026-11-18T13:23:39Z",
+    "gathered": "2026-11-18T14:18:49Z"
+   },
    {
     "h": "Biggs won CPS race, but allies didn't follow",
     "b": "At least half of the school board she will oversee was endorsed by the Chicago Teachers Union.",
@@ -221,11 +232,7 @@
     "h": "Construction begins on $917M O'Hare concourse",
     "b": "Officials broke ground on the new Concourse E at Terminal 2.",
     "date": "2026-11-17",
-    "publisher": "WBEZ",
-    "title": "Construction begins on $917 million concourse at O’Hare’s Terminal 2",
     "url": "https://www.wbez.org/architecture/2026/11/17/construction-groundbreaking-ohare-917-million-concourse-e-terminal-2",
-    "published": "2026-11-17T16:58:46Z",
-    "updated": "2026-11-17T16:58:46Z",
     "gathered": "2026-11-17T17:12:41Z"
    },
    {
@@ -238,18 +245,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 42,
     "cond": "A Few Clouds",
     "wind": "S 8 mph",
-    "humidity": 77,
-    "obs": "18 Nov 06:53 am CST"
+    "humidity": 71,
+    "obs": "18 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 59,
-     "text": "Increasing clouds, with a high near 59. South southwest wind around 15 mph, with gusts as high as 25 mph. "
+     "text": "Mostly sunny, with a high near 59. South wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -295,7 +302,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -338,11 +345,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "A Few Clouds",
-    "wind": "SW 15 mph",
-    "humidity": 37,
-    "obs": "18 Nov 04:58 am MST"
+    "temp": 46,
+    "cond": "Partly Cloudy",
+    "wind": "S 12 mph",
+    "humidity": 36,
+    "obs": "18 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -395,7 +402,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -500,10 +507,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 51,
     "wind": "Calm",
-    "humidity": 57,
-    "obs": "18 Nov 05:10 AM PST"
+    "humidity": 63,
+    "obs": "18 Nov 06:10 AM PST"
    },
    "periods": [
     {
@@ -556,7 +563,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -567,6 +574,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Alleged Central Park rapist charged with 2 counts of rape",
+    "b": "Dereck Rivera-Deleon, 30, was arrested in Miami; police say he will also be charged in two earlier park rapes.",
+    "date": "2026-11-18",
+    "publisher": "Gothamist",
+    "title": "Alleged Central Park rapist charged with 2 counts of rape, NYPD says",
+    "url": "https://gothamist.com/news/alleged-central-park-rapist-charged-with-2-counts-of-rape-nypd-says",
+    "published": "2026-11-18T13:27:23Z",
+    "gathered": "2026-11-18T14:18:49Z"
+   },
    {
     "h": "Williamsburg business district plan sparks fight",
     "b": "The proposal grew out of complaints about dirty parks and streets in the fast-developing neighborhood.",
@@ -717,7 +734,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -778,7 +795,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "goodnews": [
    {
     "h": "French 'forever chemicals slayer' wins Earthshot Prize",
@@ -831,11 +848,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 46,
     "cond": "Clear",
-    "wind": "NE 4 mph",
-    "humidity": 75,
-    "obs": "18 Nov 05:00 AM PST"
+    "wind": "NE 6 mph",
+    "humidity": 70,
+    "obs": "18 Nov 05:55 AM PST"
    },
    "periods": [
     {
@@ -888,7 +905,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T14:15:00Z",
+  "updatedAt": "2026-11-18T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {
