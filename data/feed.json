@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T20:11:00Z",
+ "updatedAt": "2026-11-19T23:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -19,8 +19,6 @@
    "h": "South Korea court orders retrial for ex-PM Han",
    "b": "The Supreme Court overturned former Prime Minister Han Duck-soo's 15-year sentence over the martial law attempt and sent the case back to a lower court.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "South Korean court orders retrial for ex-PM Han over martial law attempt",
    "url": "https://www.aljazeera.com/news/2026/11/19/south-korean-court-orders-retrial-for-ex-pm-han-over-martial-law-attempt",
    "gathered": "2026-11-19T17:16:08Z"
   },
@@ -46,8 +44,6 @@
    "h": "World court rules Myanmar committed genocide",
    "b": "The International Court of Justice ruled that Myanmar committed genocide against its Rohingya Muslim minority.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "UN’s top court finds Myanmar guilty of genocide against Rohingya",
    "url": "https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide",
    "gathered": "2026-11-19T11:59:24Z"
   },
@@ -179,6 +175,17 @@
   }
  ],
  "national": [
+  {
+   "h": "FCC lets state prisons jam contraband phones",
+   "b": "The FCC voted to let state prisons jam signals from cellphones smuggled to inmates, which officials call the top security threat in prisons.",
+   "date": "2026-11-19",
+   "publisher": "WABE",
+   "title": "FCC to let state prisons jam signals from contraband cellphones",
+   "url": "https://www.wabe.org/fcc-gives-state-prisons-the-go-ahead-to-jam-signals-from-contraband-cellphones/",
+   "published": "2026-11-19T19:52:07Z",
+   "updated": "2026-11-19T19:52:12Z",
+   "gathered": "2026-11-19T20:53:55Z"
+  },
   {
    "h": "Storm rain triggers emergency in South Florida",
    "b": "Heavy rain prompted an emergency declaration in South Florida, where a synagogue roof collapsed; planes were also grounded at SFO.",
@@ -313,13 +320,22 @@
  ],
  "international": [
   {
+   "h": "Hegseth hails US ties with Colombia",
+   "b": "On a brief visit to Bogota, Defense Secretary Pete Hegseth praised the close alliance with Colombian President Abelardo de la Espriella.",
+   "date": "2026-11-19",
+   "place": "Bogota, Colombia",
+   "tz": "America/Bogota",
+   "publisher": "Al Jazeera",
+   "title": "‘On the same page’: Hegseth hails US ties with Colombia’s de la Espriella",
+   "url": "https://www.aljazeera.com/news/2026/11/19/on-the-same-page-hegseth-hails-us-ties-with-colombias-de-la-espriella",
+   "gathered": "2026-11-19T20:53:55Z"
+  },
+  {
    "h": "Dutch church's nonstop service passes two years",
    "b": "A church in Kampen has held a nonstop service since November 2024, shielding a family facing deportation to Uzbekistan under a law that bars interrupting worship.",
    "date": "2026-11-19",
    "place": "Kampen, Netherlands",
    "tz": "Europe/Amsterdam",
-   "publisher": "Al Jazeera",
-   "title": "Two years in, Dutch church’s nonstop service shields family seeking asylum",
    "url": "https://www.aljazeera.com/news/2026/11/19/two-years-in-dutch-churchs-nonstop-service-shields-family-seeking-asylum",
    "gathered": "2026-11-19T17:16:08Z"
   },
@@ -382,6 +398,15 @@
   }
  ],
  "science": [
+  {
+   "h": "BU study points toward blood test for CTE",
+   "b": "Boston University researchers may have taken a key step toward a blood test for CTE, the brain disease caused by repeated head trauma.",
+   "date": "2026-11-19",
+   "publisher": "WBUR",
+   "title": "Boston University study points toward a potential blood test for CTE",
+   "url": "https://www.wbur.org/news/2026/11/19/boston-university-study-biomarker-cte",
+   "gathered": "2026-11-19T20:53:55Z"
+  },
   {
    "h": "Researchers say OpenAI's new safety program falls short",
    "b": "AI safety researchers say the third-party evaluator program is less than the company promised.",
@@ -455,6 +480,16 @@
  ],
  "local": [
   {
+   "h": "MTA bus video shows Brooklyn building collapse",
+   "b": "A bus camera captured the moment a three-story Flatbush building split and fell on Nov. 11, a collapse that killed eight people.",
+   "date": "2026-11-19",
+   "publisher": "Gothamist",
+   "title": "Watch: MTA bus video captures moment of deadly Brooklyn building collapse",
+   "url": "https://gothamist.com/news/watch-mta-bus-video-captures-moment-of-deadly-brooklyn-building-collapse",
+   "published": "2026-11-19T20:45:28Z",
+   "gathered": "2026-11-19T20:53:55Z"
+  },
+  {
    "h": "Troubled builder picked for NJ ICE warehouse review",
    "b": "A company run by developer James Grossmann was chosen to lead the court-ordered environmental review of a planned immigration detention facility in Roxbury, NJ.",
    "date": "2026-11-19",
@@ -481,7 +516,7 @@
    "publisher": "Gothamist",
    "title": "Mayor Mamdani signs NYC's carriage horse ban after decades of animal rights activism",
    "url": "https://gothamist.com/news/mayor-mamdani-signs-nycs-carriage-horse-ban-after-decades-of-animal-rights-activism",
-   "published": "2026-11-19T15:26:09Z",
+   "published": "2026-11-19T15:26:00Z",
    "gathered": "2026-11-19T17:16:08Z"
   },
   {
@@ -587,48 +622,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 62,
    "cond": "Fair",
-   "wind": "W 5 mph",
-   "humidity": 33,
-   "obs": "19 Nov 11:51 am EST"
+   "wind": "Calm",
+   "humidity": 29,
+   "obs": "19 Nov 15:51 pm EST"
   },
   "periods": [
-   {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 61,
-    "text": "Sunny, with a high near 61. Southwest wind 3 to 6 mph. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 48,
-    "text": "Mostly clear, with a low around 48. Southwest wind 6 to 8 mph. "
+    "text": "Increasing clouds, with a low around 48. West wind 6 to 8 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 63,
-    "text": "Sunny, with a high near 63. West wind 5 to 7 mph. "
+    "temp": 64,
+    "text": "Sunny, with a high near 64. West wind around 6 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 49,
-    "text": "Mostly clear, with a low around 49. North wind around 6 mph. "
+    "text": "Mostly clear, with a low around 49. North wind around 7 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 59,
-    "text": "Mostly sunny, with a high near 59. North wind around 6 mph becoming southeast in the afternoon. "
+    "temp": 60,
+    "text": "Mostly sunny, with a high near 60. North wind around 6 mph becoming southeast in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 51,
-    "text": "Mostly cloudy, with a low around 51."
+    "temp": 52,
+    "text": "Mostly cloudy, with a low around 52. Light and variable wind becoming northeast 5 to 7 mph after midnight. "
+   },
+   {
+    "name": "Sunday",
+    "kind": "high",
+    "temp": 61,
+    "text": "Rain likely after 1pm.  Mostly cloudy, with a high near 61. Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
    }
   ]
  },
