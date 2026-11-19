@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -99,7 +99,35 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "More Mass. pet owners turn to food pantries",
+    "b": "People line up at pantries like PAWS in Wakefield for free dog and cat food.",
+    "date": "2026-11-18",
+    "publisher": "WBUR",
+    "title": "More Mass. pet owners are turning to pantries for free dog and cat food",
+    "url": "https://www.wbur.org/news/2026/11/18/pet-pantries-cats-dogs-food-massachusetts",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
+   {
+    "h": "Eng agrees to meet Boston City Council, ending subpoena standoff",
+    "b": "Councilors want to discuss the MBTA's planned Blue Hill Avenue bus lanes.",
+    "date": "2026-11-18",
+    "publisher": "WBUR",
+    "title": "Eng agrees to meet with Boston City Council, ending subpoena standoff",
+    "url": "https://www.wbur.org/news/2026/11/18/boston-phil-eng-subpoena-blue-hill-ave",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
+   {
+    "h": "Boston council moves to drop parking requirement for new housing",
+    "b": "Developers would decide how many spaces new buildings need.",
+    "date": "2026-11-18",
+    "publisher": "WBUR",
+    "title": "Boston moves to eliminate off-street parking requirement for new housing",
+    "url": "https://www.wbur.org/news/2026/11/18/boston-parking-requirements-housing",
+    "gathered": "2026-11-18T23:12:49Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 61,
@@ -159,7 +187,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -285,7 +313,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -399,7 +427,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -520,7 +548,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -651,7 +679,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -663,6 +691,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Foreign retirees may again be eligible for French citizenship",
+    "b": "The Interior Minister signaled a change to citizenship requirements.",
+    "date": "2026-11-18",
+    "publisher": "The Local France",
+    "title": "Explained: Are retirees once again eligible for French citizenship?",
+    "url": "https://www.thelocal.fr/20261118/explained-are-retirees-once-again-eligible-for-french-citizenship",
+    "published": "2026-11-18T10:44:53Z",
+    "updated": "2026-11-18T10:44:53Z",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
    {
     "h": "France braces for another day of protest Saturday",
     "b": "Students across Europe are also expected to stage actions over the weekend.",
@@ -702,7 +741,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "goodnews": [
    {
     "h": "French 'forever chemicals slayer' wins Earthshot Prize",
@@ -809,7 +848,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T02:11:00Z",
+  "updatedAt": "2026-11-19T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
