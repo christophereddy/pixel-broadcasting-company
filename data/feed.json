@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T08:13:00Z",
+ "updatedAt": "2026-11-19T11:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,29 @@
  },
  "world": [
   {
+   "h": "Houthis fire missiles toward Saudi Arabia",
+   "b": "Yemen's Houthis launched missiles toward Saudi Arabia as the head of US Central Command met Crown Prince Mohammed bin Salman.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Houthis launch missiles towards Saudi Arabia as US CENTCOM chief meets MBS",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz",
+   "gathered": "2026-11-19T08:13:18Z"
+  },
+  {
+   "h": "Europe meets in Berlin on Ukraine defence costs",
+   "b": "German Chancellor Friedrich Merz hosts more than 30 leaders, including Zelenskyy, to agree on funding for Ukraine's defence and press for a European role in peace talks.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Far from Trump-Putin meeting, Europe to count cost of Ukraine’s defence",
+   "url": "https://www.aljazeera.com/news/2026/11/19/far-from-trump-putin-meeting-europe-to-count-cost-of-ukraines-defence",
+   "gathered": "2026-11-19T08:13:18Z"
+  },
+  {
    "h": "LIVE: Trump, Xi and Putin to meet at APEC in China",
    "b": "Trump, Xi Jinping and Vladimir Putin will hold a three-way meeting Thursday in Shenzhen on the sidelines of the APEC summit, the first ever between the three leaders.",
    "date": "2026-11-19",
    "publisher": "Al Jazeera",
-   "title": "Trump, Xi and Putin to hold historic trilateral meeting in China at APEC",
+   "title": "Trump, Xi and Putin about to meet, with Ukraine, Iran and AI on the table",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/apec-live-trump-xi-and-putin-to-meet-in-historic-three-way-china-summit",
    "gathered": "2026-11-19T05:16:06Z"
   },
@@ -19,8 +37,6 @@
    "h": "World court to rule on Rohingya genocide case",
    "b": "The International Court of Justice will rule Thursday on a case accusing Myanmar of genocide against its Rohingya minority. The ruling is final but the court has limited means to enforce it.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "ICJ to rule on Rohingya genocide case against Myanmar",
    "url": "https://www.aljazeera.com/news/2026/11/19/icj-to-rule-on-rohingya-genocide-case-against-myanmar",
    "gathered": "2026-11-19T05:16:06Z"
   },
@@ -28,8 +44,6 @@
    "h": "Miami jury convicts pastor in Haiti president's killing",
    "b": "A Florida pastor with dual Haitian-American citizenship was convicted on charges stemming from the 2021 assassination of Haitian President Jovenel Moise, after a nearly eight-week federal trial in Miami.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "Miami court convicts US-Haitian pastor over 2021 assassination of president",
    "url": "https://www.aljazeera.com/news/2026/11/19/miami-court-convicts-us-haitian-pastor-over-2021-assassination-of-president",
    "gathered": "2026-11-19T05:16:06Z"
   },
@@ -58,8 +72,6 @@
    "h": "Israeli court extends Gaza doctor Abu Safia's detention",
    "b": "The Kamal Adwan Hospital director, held without charge, faces six more months, his lawyer said.",
    "date": "2026-11-18",
-   "publisher": "Al Jazeera",
-   "title": "Israeli court extends Gaza doctor Abu Safia’s detention without charge",
    "url": "https://www.aljazeera.com/news/2026/11/18/israeli-court-extends-gaza-doctor-abu-safias-detention-without-charge",
    "gathered": "2026-11-18T21:30:36Z"
   },
@@ -180,6 +192,15 @@
  ],
  "politics": [
   {
+   "h": "Musk feels 'pretty foolish' about midterm spending",
+   "b": "Elon Musk said he feels \"pretty foolish\" about the money he spent on this year's midterms after Republicans suffered sweeping losses.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Elon Musk says he feels ‘pretty foolish’ about US midterm spending",
+   "url": "https://www.aljazeera.com/news/2026/11/19/elon-musk-says-he-feels-pretty-foolish-about-us-midterm-spending",
+   "gathered": "2026-11-19T08:13:18Z"
+  },
+  {
    "h": "Sanders unveils plan to push Medicare for All",
    "b": "He is expected to chair the Senate HELP Committee when Democrats take control in January.",
    "date": "2026-11-18",
@@ -244,6 +265,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Grand Theft Auto VI launches to rave reviews",
+   "b": "GTA VI went on sale Thursday after a 13-year wait, with critics calling the open-world game a \"masterpiece\" and \"an astonishing American epic\".",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Grand Theft Auto VI launches to rave reviews after 13-year wait",
+   "url": "https://www.aljazeera.com/news/2026/11/19/grand-theft-auto-vi-launches-to-rave-reviews-after-13-year-wait",
+   "gathered": "2026-11-19T08:13:18Z"
+  },
   {
    "h": "Anthropic prices IPO at $83 a share",
    "b": "Anthropic priced its IPO at $83 per share, above the expected range, valuing the company at $1.5 trillion.",
@@ -425,48 +455,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 53,
+   "temp": 52,
    "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 40,
-   "obs": "18 Nov 23:51 pm EST"
+   "wind": "W 5 mph",
+   "humidity": 45,
+   "obs": "19 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 49,
-    "text": "Mostly clear, with a low around 49. West wind 6 to 9 mph. "
-   },
-   {
     "name": "Thursday",
     "kind": "high",
-    "temp": 63,
-    "text": "Sunny, with a high near 63. West wind 6 to 9 mph. "
+    "temp": 61,
+    "text": "Sunny, with a high near 61. West wind 3 to 6 mph. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 53,
-    "text": "Mostly clear, with a low around 53. West wind around 9 mph. "
+    "temp": 48,
+    "text": "Mostly clear, with a low around 48. Southwest wind 6 to 8 mph. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 63,
-    "text": "Sunny, with a high near 63. West wind 8 to 10 mph. "
+    "text": "Sunny, with a high near 63. West wind 5 to 7 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 54,
-    "text": "Mostly clear, with a low around 54. North wind 6 to 9 mph. "
+    "temp": 49,
+    "text": "Mostly clear, with a low around 49. North wind around 6 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 60,
-    "text": "Sunny, with a high near 60."
+    "temp": 59,
+    "text": "Mostly sunny, with a high near 59."
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 51,
+    "text": "Mostly cloudy, with a low around 51."
    }
   ]
  },
