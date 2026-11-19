@@ -1,11 +1,38 @@
 {
- "updatedAt": "2026-11-19T05:12:00Z",
+ "updatedAt": "2026-11-19T08:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "LIVE: Trump, Xi and Putin to meet at APEC in China",
+   "b": "Trump, Xi Jinping and Vladimir Putin will hold a three-way meeting Thursday in Shenzhen on the sidelines of the APEC summit, the first ever between the three leaders.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Trump, Xi and Putin to hold historic trilateral meeting in China at APEC",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/apec-live-trump-xi-and-putin-to-meet-in-historic-three-way-china-summit",
+   "gathered": "2026-11-19T05:16:06Z"
+  },
+  {
+   "h": "World court to rule on Rohingya genocide case",
+   "b": "The International Court of Justice will rule Thursday on a case accusing Myanmar of genocide against its Rohingya minority. The ruling is final but the court has limited means to enforce it.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "ICJ to rule on Rohingya genocide case against Myanmar",
+   "url": "https://www.aljazeera.com/news/2026/11/19/icj-to-rule-on-rohingya-genocide-case-against-myanmar",
+   "gathered": "2026-11-19T05:16:06Z"
+  },
+  {
+   "h": "Miami jury convicts pastor in Haiti president's killing",
+   "b": "A Florida pastor with dual Haitian-American citizenship was convicted on charges stemming from the 2021 assassination of Haitian President Jovenel Moise, after a nearly eight-week federal trial in Miami.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Miami court convicts US-Haitian pastor over 2021 assassination of president",
+   "url": "https://www.aljazeera.com/news/2026/11/19/miami-court-convicts-us-haitian-pastor-over-2021-assassination-of-president",
+   "gathered": "2026-11-19T05:16:06Z"
+  },
   {
    "h": "Iran hits Kuwait and Bahrain after US strike on Qeshm Island",
    "b": "Iran targeted an airbase used by the US military in Kuwait and carried out several attacks on Bahrain.",
@@ -93,15 +120,6 @@
    "gathered": "2026-11-18T13:19:11Z"
   },
   {
-   "h": "LIVE: US says it hits IRGC Qeshm; Iran says US drone downed",
-   "b": "Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-18",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: US says it hits IRGC Qeshm; Iran says US drone downed",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/18/iran-war-live-kuwait-says-intercepting-hostile-drone-attacks",
-   "gathered": "2026-11-18T08:12:45Z"
-  },
-  {
    "h": "Xi says China and Russia should lead push to multipolar world",
    "b": "Xi spoke after meeting Vladimir Putin on the sidelines of the APEC summit in Shenzhen.",
    "date": "2026-11-18",
@@ -124,8 +142,6 @@
    "h": "Pennsylvania reports eighth measles death this year",
    "b": "An unvaccinated Pennsylvania resident died of measles, the state's eighth measles-related death this year.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "Unvaccinated Pennsylvania resident dies amid historic US measles resurgence",
    "url": "https://www.aljazeera.com/news/2026/11/19/unvaccinated-pennsylvania-resident-dies-amid-historic-us-measles-resurgence",
    "gathered": "2026-11-19T02:43:42Z"
   },
@@ -274,8 +290,6 @@
    "h": "No. 8 Houston beats No. 1 Florida",
    "b": "Dedan Thomas Jr. scored 30 as Houston beat top-ranked Florida in the Players Era 8 semifinals.",
    "date": "2026-11-19",
-   "publisher": "CBS Sports",
-   "title": "No. 1 Florida knocked off by No. 8 Houston: Dedan Thomas Jr. drops 30 points as Cougars play to strengths",
    "url": "https://www.cbssports.com/college-basketball/news/florida-houston-players-era-dedan-thomas-jr-kelvin-sampson/",
    "gathered": "2026-11-19T02:43:42Z"
   },
@@ -283,8 +297,6 @@
    "h": "German FA backs Diallo for FIFA president",
    "b": "Germany's football federation is backing France's Philippe Diallo for FIFA president.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "German FA backs France’s Diallo for FIFA presidency",
    "url": "https://www.aljazeera.com/news/2026/11/19/german-fa-backs-frances-diallo-for-fifa-presidency",
    "gathered": "2026-11-19T02:43:42Z"
   },
@@ -413,15 +425,15 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 53,
    "cond": "Fair",
-   "wind": "W 6 mph",
-   "humidity": 42,
-   "obs": "18 Nov 20:51 pm EST"
+   "wind": "W 3 mph",
+   "humidity": 40,
+   "obs": "18 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 49,
     "text": "Mostly clear, with a low around 49. West wind 6 to 9 mph. "
