@@ -16,26 +16,15 @@
     "published": "2026-11-18T14:59:10Z",
     "updated": "2026-11-18T14:59:14Z",
     "gathered": "2026-11-18T17:12:15Z"
-   },
-   {
-    "h": "Georgia breaks ground on $409M psychiatric hospital",
-    "b": "It is the state's first new forensic psychiatric hospital in more than 50 years.",
-    "date": "2026-11-17",
-    "publisher": "WABE",
-    "title": "Georgia begins construction on new $400M psychiatric hospital",
-    "url": "https://www.wabe.org/georgia-begins-construction-on-new-400m-psychiatric-hospital/",
-    "published": "2026-11-17T15:58:31Z",
-    "updated": "2026-11-17T15:58:34Z",
-    "gathered": "2026-11-17T17:12:41Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Partly Cloudy",
-    "wind": "E 13 mph",
-    "humidity": 40,
-    "obs": "18 Nov 15:52 pm EST"
+    "temp": 62,
+    "cond": "A Few Clouds",
+    "wind": "E 10 mph",
+    "humidity": 46,
+    "obs": "18 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -88,9 +77,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "atlanta-ga",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Bagel Rescue marks 5 million rescued baked goods",
+    "b": "Founder Erin Stieglitz's nonprofit feeds people in metro Atlanta with unwanted bagels and pastries.",
+    "date": "2026-11-18",
+    "publisher": "WABE",
+    "title": "Bagel Rescue combating hunger, CO2 emissions one bagel at a time",
+    "url": "https://www.wabe.org/bagel-rescue-combating-hunger-co2-emissions-one-bagel-at-a-time/",
+    "published": "2026-11-18T22:21:00Z",
+    "updated": "2026-11-18T23:08:07Z",
+    "gathered": "2026-11-18T23:12:49Z"
+   }
+  ]
  },
  {
   "location": {
@@ -98,36 +99,14 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Sutton residents oppose $16B Kraft-backed data center",
-    "b": "Residents voiced outrage at a planning board meeting Monday.",
-    "date": "2026-11-17",
-    "url": "https://www.wbur.org/news/2026/11/17/kraft-group-data-center-sutton-residents",
-    "gathered": "2026-11-17T23:15:36Z"
-   },
-   {
-    "h": "Healey urges Legislature to pass housing plan voters rejected",
-    "b": "Question 7 drew 1.29 million votes against and nearly 1.26 million in favor.",
-    "date": "2026-11-17",
-    "url": "https://www.wbur.org/news/2026/11/17/healey-legislature-should-pass-housing-policy-question-7-rejected-by-voters",
-    "gathered": "2026-11-17T23:15:36Z"
-   },
-   {
-    "h": "Rideshare drivers rally for first union contract with Uber and Lyft",
-    "b": "Drivers gathered in Dorchester pushing for what they called the country's first gig worker union contract.",
-    "date": "2026-11-17",
-    "url": "https://www.wbur.org/news/2026/11/17/uber-lyft-massachusetts-drivers-union-contract",
-    "gathered": "2026-11-17T23:15:36Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 63,
+    "temp": 61,
     "cond": "A Few Clouds",
-    "wind": "W 9 mph",
+    "wind": "W 7 mph",
     "humidity": 31,
-    "obs": "18 Nov 15:54 pm EST"
+    "obs": "18 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -180,17 +159,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "boston-ma",
-  "goodnews": [
-   {
-    "h": "Taylor Swift's Eras archive is coming to the MFA",
-    "b": "About 50 objects, including dresses and her green Gibson J-180 guitar, go on view this spring.",
-    "date": "2026-11-17",
-    "url": "https://www.wbur.org/news/2026/11/17/taylor-swift-eras-archive-mfa",
-    "gathered": "2026-11-17T23:15:36Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -199,6 +170,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "City Council orders independent review of Chicago finances",
+    "b": "The move follows the resignation of the city's chief financial officer.",
+    "date": "2026-11-18",
+    "publisher": "ProPublica",
+    "title": "Chicago’s City Council Orders Independent Review of Finances as Scrutiny Intensifies",
+    "url": "https://www.propublica.org/article/chicago-city-council-finance-review",
+    "published": "2026-11-18T22:30:00Z",
+    "updated": "2026-11-18T22:30:18Z",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
    {
     "h": "Berwyn mosque welcomes growing Latino Muslim community",
     "b": "Ojala Islamic Center in suburban Berwyn reflects changing religious identities.",
@@ -226,7 +208,7 @@
     "b": "At least half of the school board she will oversee was endorsed by the Chicago Teachers Union.",
     "date": "2026-11-18",
     "publisher": "WBEZ",
-    "title": "In CPS win, Jessica Biggs’ took precincts across the city but her coattails were not long, data shows",
+    "title": "In CPS win, Jessica Biggs took precincts across the city but her coattails were not long, data shows",
     "url": "https://www.wbez.org/education/2026/11/18/in-cps-win-jessica-biggs-took-precincts-across-the-city-but-her-coattails-were-not-long-data-shows",
     "published": "2026-11-18T11:30:00Z",
     "updated": "2026-11-18T11:30:11Z",
@@ -242,44 +224,17 @@
     "published": "2026-11-18T00:23:00Z",
     "updated": "2026-11-18T00:23:00Z",
     "gathered": "2026-11-18T03:49:20Z"
-   },
-   {
-    "h": "Cook County Jail death suit to settle for record $7.25M",
-    "b": "It would be the largest jail-related payout since at least 2007.",
-    "date": "2026-11-17",
-    "url": "https://www.wbez.org/prisoncast-illinois/2026/11/17/cook-county-jail-tom-dart-cory-ulmer",
-    "gathered": "2026-11-17T17:12:41Z"
-   },
-   {
-    "h": "Construction begins on $917M O'Hare concourse",
-    "b": "Officials broke ground on the new Concourse E at Terminal 2.",
-    "date": "2026-11-17",
-    "url": "https://www.wbez.org/architecture/2026/11/17/construction-groundbreaking-ohare-917-million-concourse-e-terminal-2",
-    "gathered": "2026-11-17T17:12:41Z"
-   },
-   {
-    "h": "Chicago renters face volatile utility bills under ratio billing",
-    "b": "More landlords are passing utility costs to tenants, and bills now change sharply month to month.",
-    "date": "2026-11-17",
-    "url": "https://www.wbez.org/housing/2026/11/17/ratio-utility-billing-leads-to-volatile-gas-water-bills-rubs",
-    "gathered": "2026-11-17T13:44:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 57,
     "cond": "Mostly Cloudy",
-    "wind": "S 13 mph, gusts to 28 mph",
-    "humidity": 31,
-    "obs": "18 Nov 14:53 pm CST"
+    "wind": "S 8 mph",
+    "humidity": 39,
+    "obs": "18 Nov 16:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 60,
-     "text": "Partly sunny, with a high near 60. South southwest wind around 15 mph, with gusts as high as 25 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -308,7 +263,13 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Mostly clear, with a low around 51."
+     "text": "Mostly clear, with a low around 51. South wind 10 to 15 mph, with gusts as high as 20 mph. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 66,
+     "text": "Mostly sunny, with a high near 66."
     }
    ]
   },
@@ -324,7 +285,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -348,13 +309,6 @@
     "published": "2026-11-18T11:05:00Z",
     "updated": "2026-11-18T11:05:01Z",
     "gathered": "2026-11-18T13:19:11Z"
-   },
-   {
-    "h": "Kyle Kinane's 'Kinanesgiving' returns",
-    "b": "The comedian's annual Chicago show offers a night of laughs before the holiday.",
-    "date": "2026-11-17",
-    "url": "https://www.wbez.org/comedy/2026/11/17/kyle-kinane-chicago-comic-thanksgiving-thalia-hall",
-    "gathered": "2026-11-17T13:44:05Z"
    }
   ]
  },
@@ -366,6 +320,16 @@
   },
   "local": [
    {
+    "h": "Denver shelter workers report bedbugs, mold and asbestos",
+    "b": "Colorado Coalition for the Homeless staff say conditions are getting worse.",
+    "date": "2026-11-18",
+    "publisher": "Denverite",
+    "title": "Bedbugs, mold, asbestos: Denver shelter workers sound alarm",
+    "url": "https://denverite.com/2026/11/18/colorado-coalition-for-the-homeless-union-protest/",
+    "published": "2026-11-18T22:20:54Z",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
+   {
     "h": "'The Bottoms' and an infamous flood get Denver historical markers",
     "b": "Four markers are up, with 146 more to go.",
     "date": "2026-11-18",
@@ -374,16 +338,6 @@
     "url": "https://denverite.com/2026/11/18/denver-new-historical-markers-westside/",
     "published": "2026-11-18T17:00:00Z",
     "gathered": "2026-11-18T17:12:15Z"
-   },
-   {
-    "h": "Study calls for demolishing most of Denver Pavilions",
-    "b": "A panel of national experts recommends a $615 million redo of the mall.",
-    "date": "2026-11-17",
-    "publisher": "Denverite",
-    "title": "Tear down this mall, Mr. Johnston-chev? $100K study calls for demolishing most of Denver Pavilions",
-    "url": "https://denverite.com/2026/11/17/denver-pavilions-report-demolition/",
-    "published": "2026-11-17T20:02:10Z",
-    "gathered": "2026-11-17T23:15:36Z"
    }
   ],
   "weather": {
@@ -396,16 +350,10 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 61,
-     "text": "Sunny, with a high near 61. West wind 8 to 10 mph becoming south southeast. Winds could gust as high as 17 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 29,
-     "text": "Mostly clear, with a low around 29. South wind 5 to 7 mph becoming calm  after midnight. "
+     "text": "Mostly clear, with a low around 29. South southeast wind 5 to 7 mph becoming calm  after midnight. "
     },
     {
      "name": "Thursday",
@@ -423,13 +371,19 @@
      "name": "Friday",
      "kind": "high",
      "temp": 60,
-     "text": "Sunny, with a high near 60. Breezy, with a south southwest wind 9 to 17 mph, with gusts as high as 29 mph. "
+     "text": "Partly sunny, then gradually becoming sunny, with a high near 60. Breezy, with a south southwest wind 9 to 17 mph, with gusts as high as 29 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 30,
-     "text": "Mostly clear, with a low around 30."
+     "text": "Mostly clear, with a low around 30. West southwest wind around 6 mph becoming calm  in the evening. "
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 45,
+     "text": "A chance of snow showers before 11am, then a slight chance of rain and snow showers.  Mostly sunny, with a high near 45. Chance of precipitation is 30%."
     }
    ]
   },
@@ -445,7 +399,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -457,26 +411,6 @@
     "url": "https://denverite.com/2026/11/18/rino-sessions-november-19-lineup/",
     "published": "2026-11-18T11:00:00Z",
     "gathered": "2026-11-18T13:19:11Z"
-   },
-   {
-    "h": "Construction starts on long-closed Five Points pool",
-    "b": "The Mestizo-Curtis Park swimming pool and park will be renovated.",
-    "date": "2026-11-17",
-    "publisher": "Denverite",
-    "title": "This Five Points pool closed three years ago. Construction is finally starting",
-    "url": "https://denverite.com/2026/11/17/mestizo-curtis-park-construction-starts/",
-    "published": "2026-11-17T23:02:39Z",
-    "gathered": "2026-11-17T23:15:36Z"
-   },
-   {
-    "h": "Holiday markets in Denver this year",
-    "b": "Denverite rounds up where to shop for loved ones this season.",
-    "date": "2026-11-17",
-    "publisher": "Denverite",
-    "title": "Check out these holiday markets in Denver this year",
-    "url": "https://denverite.com/2026/11/17/denver-holiday-markets-2026/",
-    "published": "2026-11-17T11:00:00Z",
-    "gathered": "2026-11-17T13:44:05Z"
    }
   ]
  },
@@ -487,6 +421,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "LAPD chief says Raman hasn't decided on his future",
+    "b": "Mayor-elect Nithya Raman has not said if McDonnell stays through the 2028 Olympics.",
+    "date": "2026-11-18",
+    "publisher": "LAist",
+    "title": "LAPD Chief Jim McDonnell says Nithya Raman hasn’t decided if she’ll replace him before the Olympics",
+    "url": "https://laist.com/news/politics/lapd-chief-jim-mcdonnell-says-nithya-raman-hasnt-decided-if-shell-replace-him-before-the-olympics",
+    "published": "2026-11-18T21:21:16Z",
+    "updated": "2026-11-18T22:08:27Z",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
    {
     "h": "Santa Ana cancels license plate reader contracts",
     "b": "The council ended its Motorola Solutions and Flock Safety contracts and told staff to turn off the cameras.",
@@ -499,20 +444,10 @@
     "gathered": "2026-11-18T21:30:36Z"
    },
    {
-    "h": "Parents allege OC childcare gave kids melatonin",
-    "b": "The lawsuit says Kiddie Academy of Orange did so after staff were told not to.",
-    "date": "2026-11-17",
-    "url": "https://laist.com/news/education/early-childhood-education-pre-k/melatonin-orange-county-childcare-lawsuit",
-    "gathered": "2026-11-18T03:49:20Z"
-   },
-   {
     "h": "Cold storm to bring rain and mountain snow to Southern California",
     "b": "Parts of the LA Basin could get up to 3 inches of rain Thursday; high elevations up to 8 inches of snow.",
     "date": "2026-11-18",
-    "publisher": "LAist",
-    "title": "Cold storm moving into Southern California will bring rain, snow and hazards",
     "url": "https://laist.com/news/climate-environment/cold-storm-november-southern-california",
-    "published": "2026-11-18T00:07:18Z",
     "gathered": "2026-11-18T03:49:20Z"
    },
    {
@@ -525,47 +460,16 @@
     "published": "2026-11-18T01:01:19Z",
     "updated": "2026-11-18T01:37:36Z",
     "gathered": "2026-11-18T03:49:20Z"
-   },
-   {
-    "h": "LA County remains a hospice fraud epicenter",
-    "b": "One Van Nuys building housed 44 licensed hospices in May; it has 11 now.",
-    "date": "2026-11-17",
-    "publisher": "LAist",
-    "title": "New California hospice rules target fraud. Will they fix LA County’s problems?",
-    "url": "https://laist.com/news/health/california-hospice-regulations-la-county-fraud-fix",
-    "published": "2026-11-17T13:00:00Z",
-    "updated": "2026-11-17T18:31:30Z",
-    "gathered": "2026-11-17T23:15:36Z"
-   },
-   {
-    "h": "Gas plume billows out of Chiquita Canyon Landfill",
-    "b": "Drilling crews in Castaic triggered a sudden release of gas and decomposing garbage Monday.",
-    "date": "2026-11-17",
-    "url": "https://laist.com/news/climate-environment/large-plume-of-gas-billows-out-of-chiquita-canyon-landfill",
-    "gathered": "2026-11-17T22:33:35Z"
-   },
-   {
-    "h": "Inglewood mayor wins restraining order against council candidate",
-    "b": "A judge ordered Leonard Redway to stay 100 yards from Mayor James Butts for three years.",
-    "date": "2026-11-17",
-    "url": "https://laist.com/news/politics/inglewood-mayor-gets-restraining-order-against-city-council-candidate",
-    "gathered": "2026-11-17T13:44:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "wind": "Calm",
-    "humidity": 44,
-    "obs": "18 Nov 01:25 PM PST"
+    "temp": 67,
+    "wind": "N 4 mph",
+    "humidity": 45,
+    "obs": "18 Nov 03:10 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny early, then becoming cloudy, with a high near 68. Southwest wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -595,6 +499,12 @@
      "kind": "low",
      "temp": 45,
      "text": "Mostly clear, with a low around 45."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 65,
+     "text": "Mostly sunny, with a high near 65."
     }
    ]
   },
@@ -610,7 +520,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -621,6 +531,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "City to demolish building damaged in Flatbush collapse",
+    "b": "Engineers found 1323 Flatbush Ave. too unstable to repair.",
+    "date": "2026-11-18",
+    "publisher": "Gothamist",
+    "title": "City to demolish Brooklyn building damaged in deadly Flatbush collapse",
+    "url": "https://gothamist.com/news/city-to-demolish-brooklyn-building-damaged-in-deadly-flatbush-collapse",
+    "published": "2026-11-18T23:07:07Z",
+    "gathered": "2026-11-18T23:12:49Z"
+   },
    {
     "h": "MTA warns of $585 million deficit by 2028",
     "b": "Officials say the gap could grow to $979 million in 2030 without government help.",
@@ -655,73 +575,30 @@
     "h": "Williamsburg business district plan sparks fight",
     "b": "The proposal grew out of complaints about dirty parks and streets in the fast-developing neighborhood.",
     "date": "2026-11-18",
+    "publisher": "Gothamist",
+    "title": "Plan for Williamsburg business district fuels fight over future of pricey neighborhood",
     "url": "https://gothamist.com/news/plan-for-williamsburg-business-district-fuels-fight-over-future-of-pricey-neighborhood",
+    "published": "2026-11-18T15:11:00Z",
     "gathered": "2026-11-18T13:19:11Z"
-   },
-   {
-    "h": "Tenant says he warned landlord of cracks before Brooklyn collapse",
-    "b": "Dengane Omari Jack is suing his landlord and construction firms over the collapse that killed eight.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/tenant-in-collapsed-brooklyn-building-says-he-warned-landlord-of-cracks-in-lawsuit",
-    "gathered": "2026-11-18T03:49:20Z"
    },
    {
     "h": "MTA plans new signals for every mile of subway by 2050",
     "b": "Chair Janno Lieber said the upgrade targets the leading cause of delays.",
     "date": "2026-11-18",
+    "publisher": "Gothamist",
+    "title": "MTA plans new subway signals for ‘the whole damn system, finally’",
     "url": "https://gothamist.com/news/mta-plans-new-subway-signals-for-the-whole-damn-system-finally",
+    "published": "2026-11-18T02:00:55Z",
     "gathered": "2026-11-18T03:49:20Z"
-   },
-   {
-    "h": "Woman arrested after climbing Steinway Tower to 91st floor",
-    "b": "Firefighters pulled the 18-year-old from the Midtown tower's exterior; no injuries were reported.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/woman-arrested-after-climbing-outside-of-a-manhattan-skyscrapers-91st-floor-nypd-says",
-    "gathered": "2026-11-17T22:33:35Z"
-   },
-   {
-    "h": "Inspectors halt work at sites tied to Brooklyn collapse",
-    "b": "Stop-work orders hit at least five projects linked to two engineers after the Nov. 11 collapse that killed eight.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/nyc-inspection-blitz-halts-construction-at-sites-tied-to-fatal-brooklyn-building-collapse",
-    "gathered": "2026-11-17T22:33:35Z"
-   },
-   {
-    "h": "Astoria board weighs 3 high-rise towers on Steinway Street",
-    "b": "The proposals have become a lightning rod over the neighborhood's redevelopment.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/astoria-board-eyes-plans-for-3-high-rise-towers-on-steinway-street",
-    "gathered": "2026-11-17T17:12:41Z"
-   },
-   {
-    "h": "Mamdani details plan for carriage horse drivers",
-    "b": "The industry's 200 drivers and stable hands would get career training at LaGuardia Community College; the union is skeptical.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/mamdanis-plan-to-wind-down-carriage-horse-industry-takes-shape",
-    "gathered": "2026-11-17T17:12:41Z"
-   },
-   {
-    "h": "Council bill pits Amazon against Teamsters over delivery workers",
-    "b": "More than 40 delivery service providers bring Amazon packages to New Yorkers' doorsteps.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/nyc-council-bill-pits-amazon-against-teamsters-union-in-fight-over-delivery-workers",
-    "gathered": "2026-11-17T13:44:05Z"
-   },
-   {
-    "h": "Flatbush Avenue redesign gives bus riders priority",
-    "b": "New center bus lanes between Grand Army Plaza and Livingston Street ban passenger cars around the clock.",
-    "date": "2026-11-17",
-    "url": "https://gothamist.com/news/a-new-day-arrives-on-brooklyns-flatbush-avenue-as-redesign-gives-bus-riders-priority",
-    "gathered": "2026-11-17T13:44:05Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 61,
+    "temp": 60,
     "cond": "Fair",
     "wind": "W 5 mph",
-    "humidity": 30,
-    "obs": "18 Nov 15:51 pm EST"
+    "humidity": 32,
+    "obs": "18 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -774,7 +651,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -807,27 +684,6 @@
     "published": "2026-11-18T11:15:05Z",
     "updated": "2026-11-18T11:15:06Z",
     "gathered": "2026-11-18T13:19:11Z"
-   },
-   {
-    "h": "€50 train fine grows into €148,000 legal bill",
-    "b": "The man told French media he is being forced to sell his house.",
-    "date": "2026-11-17",
-    "url": "https://www.thelocal.fr/20261117/frenchman-landed-with-e148k-legal-bill-after-train-ticket-fine",
-    "gathered": "2026-11-17T17:12:41Z"
-   },
-   {
-    "h": "France sends fertility letters to all 29-year-olds",
-    "b": "The government letters explain steps people can take to preserve their fertility.",
-    "date": "2026-11-17",
-    "url": "https://www.thelocal.fr/20261117/why-some-french-residents-are-receiving-letters-about-having-a-baby",
-    "gathered": "2026-11-17T13:44:05Z"
-   },
-   {
-    "h": "Apple faces Paris trial over alleged iPhone planned obsolescence",
-    "b": "Prosecutors charge Apple with obstructing repair and refurbishment; it could be fined up to €300,000 or a share of annual revenue.",
-    "date": "2026-11-17",
-    "url": "https://www.thelocal.fr/20261117/apple-faces-paris-trial-over-alleged-planned-obsolescence-of-iphones",
-    "gathered": "2026-11-17T08:12:04Z"
    }
   ],
   "weather": {
@@ -846,7 +702,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "goodnews": [
    {
     "h": "French 'forever chemicals slayer' wins Earthshot Prize",
@@ -892,44 +748,17 @@
     "date": "2026-11-18",
     "url": "https://www.kuow.org/crime/2026-11-17/teenager-charged-in-fall-city-family-killings-pleads-not-guilty",
     "gathered": "2026-11-18T03:49:20Z"
-   },
-   {
-    "h": "Measles spreading in Washington as US loses elimination status",
-    "b": "The state has five times as many cases this year as in all of 2025.",
-    "date": "2026-11-17",
-    "url": "https://www.kuow.org/health-care/2026-11-17/measles-is-spreading-in-washington-state-as-us-loses-its-elimination-status",
-    "gathered": "2026-11-18T03:49:20Z"
-   },
-   {
-    "h": "Ocean Shores races to patch shoreline before king tides",
-    "b": "The city is under a state of emergency ahead of the season's first king tide.",
-    "date": "2026-11-17",
-    "url": "https://www.kuow.org/environment/2026-11-17/its-on-our-front-door-ocean-shores-races-to-patch-up-shoreline-ahead-of-king-tides",
-    "gathered": "2026-11-17T22:33:35Z"
-   },
-   {
-    "h": "Ferguson orders deeper cuts to face $4B shortfall",
-    "b": "The governor wants agencies to cut spending by up to 15% through mid-2028.",
-    "date": "2026-11-17",
-    "url": "https://www.kuow.org/governing/2026-11-17/wa-governor-looks-to-sharply-pare-spending-in-face-of-4b-budget-shortfall",
-    "gathered": "2026-11-17T22:33:35Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 52,
     "cond": "Overcast",
-    "wind": "NW 5 mph",
-    "humidity": 66,
-    "obs": "18 Nov 01:10 PM PST"
+    "wind": "SE 3 mph",
+    "humidity": 53,
+    "obs": "18 Nov 02:55 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 50,
-     "text": "A 30 percent chance of rain, mainly after 4pm.  Cloudy, with a high near 50. East wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -959,6 +788,12 @@
      "kind": "low",
      "temp": 38,
      "text": "Mostly cloudy, with a low around 38."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 49,
+     "text": "Patchy fog before 9am.  Otherwise, partly sunny, with a high near 49."
     }
    ]
   },
@@ -974,16 +809,8 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-18T23:12:00Z",
+  "updatedAt": "2026-11-19T02:11:00Z",
   "slug": "seattle-wa",
-  "goodnews": [
-   {
-    "h": "LeVar Burton writes a memoir",
-    "b": "Burton recalls growing up in Sacramento, where he once wanted to be a priest.",
-    "date": "2026-11-17",
-    "url": "https://www.kuow.org/npr-news/2026-11-17/take-a-look-its-in-his-book-levar-burton-writes-a-memoir",
-    "gathered": "2026-11-17T22:33:35Z"
-   }
-  ]
+  "goodnews": []
  }
 ]
