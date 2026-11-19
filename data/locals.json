@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 55,
     "cond": "Mostly Cloudy",
-    "wind": "NE 12 mph",
-    "humidity": 49,
-    "obs": "19 Nov 06:52 am EST"
+    "wind": "NE 13 mph",
+    "humidity": 47,
+    "obs": "19 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -100,6 +100,15 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Healey puts $4M toward luring big events",
+    "b": "The Healey administration will put $4 million toward attracting major sporting and entertainment events to Massachusetts by the end of the decade.",
+    "date": "2026-11-19",
+    "publisher": "WBUR",
+    "title": "After World Cup excitement, Healey puts money toward attracting big events to Mass.",
+    "url": "https://www.wbur.org/news/2026/11/19/massachusetts-major-event-grant-fund",
+    "gathered": "2026-11-19T14:15:26Z"
+   },
    {
     "h": "Boston College to retire Johnny Gaudreau's number",
     "b": "BC is retiring the late Johnny Gaudreau's jersey number, and a sculpture of him and brother Matthew is going up in New Jersey.",
@@ -142,11 +151,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 53,
     "cond": "A Few Clouds",
-    "wind": "W 5 mph",
-    "humidity": 61,
-    "obs": "19 Nov 06:54 am EST"
+    "wind": "NW 6 mph",
+    "humidity": 47,
+    "obs": "19 Nov 08:54 am EST"
    },
    "periods": [
     {
@@ -199,7 +208,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -252,11 +261,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Mostly Cloudy",
-    "wind": "S 12 mph",
-    "humidity": 58,
-    "obs": "19 Nov 05:53 am CST"
+    "temp": 50,
+    "cond": "A Few Clouds",
+    "wind": "SW 12 mph",
+    "humidity": 59,
+    "obs": "19 Nov 07:53 am CST"
    },
    "periods": [
     {
@@ -309,18 +318,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Actor trains to play boxer Jack Johnson",
     "b": "La'Tevin Alexander spent hours in the gym for \"The Royale\" at Writers Theatre.",
     "date": "2026-11-18",
-    "publisher": "WBEZ",
-    "title": "How one actor trained to play heavyweight Jack Johnson, one of the great boxers of Chicago history",
     "url": "https://www.wbez.org/theater-stages/2026/11/18/the-royale-writers-theatre-jack-johnson-boxer-chicago-history",
-    "published": "2026-11-18T20:33:42Z",
-    "updated": "2026-11-18T20:33:42Z",
     "gathered": "2026-11-18T21:30:36Z"
    },
    {
@@ -362,11 +367,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "A Few Clouds",
-    "wind": "S 6 mph",
-    "humidity": 20,
-    "obs": "19 Nov 01:58 am MST"
+    "temp": 36,
+    "cond": "Mostly Cloudy",
+    "wind": "Calm",
+    "humidity": 28,
+    "obs": "19 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -419,7 +424,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -441,6 +446,39 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "UC Regents let UCLA police buy more equipment",
+    "b": "The regents authorized UCLA police to buy additional military equipment, including drones.",
+    "date": "2026-11-19",
+    "publisher": "LAist",
+    "title": "UCLA police will add a weapon in their collection that LAPD was banned from using on crowds",
+    "url": "https://laist.com/news/education/ucla-police-weapon-purchase-authorization-40mm-drones-pepperballs",
+    "published": "2026-11-19T13:00:00Z",
+    "updated": "2026-11-19T13:00:07Z",
+    "gathered": "2026-11-19T14:15:26Z"
+   },
+   {
+    "h": "Newsom proposes AI emergency shutdown power",
+    "b": "Gov. Newsom's AI recommendations would let state officials order an immediate emergency shutdown of AI systems they deem dangerous.",
+    "date": "2026-11-19",
+    "publisher": "LAist",
+    "title": "Newsom touts an AI kill switch to halt dangerous OpenAI, Anthropic releases",
+    "url": "https://laist.com/news/politics/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-anthropic-releases",
+    "published": "2026-11-19T13:00:00Z",
+    "updated": "2026-11-19T13:00:10Z",
+    "gathered": "2026-11-19T14:15:26Z"
+   },
+   {
+    "h": "Port strike looms Saturday at LA and Long Beach",
+    "b": "A strike is looming Saturday at the ports of Long Beach and Los Angeles, threatening the complex's busiest year on record.",
+    "date": "2026-11-19",
+    "publisher": "LAist",
+    "title": "Port workers strike looks more likely this weekend, shippers say",
+    "url": "https://laist.com/news/transportation/port-workers-strike-looks-more-likely-this-weekend-shippers-say",
+    "published": "2026-11-19T13:00:00Z",
+    "updated": "2026-11-19T13:00:12Z",
+    "gathered": "2026-11-19T14:15:26Z"
+   },
    {
     "h": "Olympics security could cost nearly $3 billion",
     "b": "Sheriff Robert Luna estimates Olympics security will cost nearly $3 billion, about three times the $1 billion in federal funds.",
@@ -471,7 +509,6 @@
     "title": "Santa Ana cancels license plate reader contracts, looks into banning them for business properties",
     "url": "https://laist.com/news/politics/santa-ana-cancels-license-plate-reader-contracts-looks-into-banning-them-for-business-properties",
     "published": "2026-11-18T19:31:12Z",
-    "updated": "2026-11-18T19:31:12Z",
     "gathered": "2026-11-18T21:30:36Z"
    },
    {
@@ -489,26 +526,25 @@
     "title": "Judge makes it official: LAHSA loses control of LA’s federal homeless money to the county",
     "url": "https://laist.com/news/housing-homelessness/lahsa-hud-settlement-federal-homeless-funding-la-county",
     "published": "2026-11-18T01:01:19Z",
-    "updated": "2026-11-18T01:37:36Z",
     "gathered": "2026-11-18T03:49:20Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "wind": "SE 1 mph",
-    "humidity": 71,
-    "obs": "19 Nov 03:55 AM PST"
+    "temp": 56,
+    "wind": "Calm",
+    "humidity": 88,
+    "obs": "19 Nov 06:10 AM PST"
    },
    "periods": [
     {
-     "name": "Thursday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Rain and possibly a thunderstorm.  High near 65. South wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "text": "Rain and possibly a thunderstorm.  High near 65. South southeast wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
     },
     {
-     "name": "Thursday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Partly cloudy, with a low around 46. North wind 5 to 10 mph. "
@@ -529,7 +565,7 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly sunny, with a high near 65."
+     "text": "Mostly sunny, with a high near 65. North northeast wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Saturday Night",
@@ -551,7 +587,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -562,6 +598,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Family sues city over wrong-way crash death",
+    "b": "The family of a 27-year-old woman killed by a wrong-way driver in the West Village last year filed a wrongful death lawsuit against the city and DOT.",
+    "date": "2026-11-19",
+    "publisher": "Gothamist",
+    "title": "Family of woman killed in wrong-way crash files wrongful death lawsuit against NYC, DOT",
+    "url": "https://gothamist.com/news/family-of-woman-killed-in-wrong-way-crash-files-wrongful-death-lawsuit-against-nyc-dot",
+    "published": "2026-11-19T13:33:27Z",
+    "gathered": "2026-11-19T14:15:26Z"
+   },
+   {
+    "h": "Bill would ban idling trailers at Hunts Point",
+    "b": "A new City Council bill would ban idling diesel refrigerated trailers at warehouses, targeting Hunts Point Produce Market in the South Bronx.",
+    "date": "2026-11-19",
+    "publisher": "Gothamist",
+    "title": "Polluting trailers at Hunts Point market would be banned under new NYC Council bill",
+    "url": "https://gothamist.com/news/polluting-trailers-at-hunts-point-market-would-be-banned-under-new-nyc-council-bill",
+    "published": "2026-11-19T13:00:52Z",
+    "gathered": "2026-11-19T14:15:26Z"
+   },
    {
     "h": "Council weighs closing sanctuary-law 'loophole'",
     "b": "The City Council's immigration committee is considering bills to close a \"loophole\" in the city's sanctuary laws.",
@@ -645,11 +701,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 51,
     "cond": "Fair",
     "wind": "Calm",
-    "humidity": 54,
-    "obs": "19 Nov 06:51 am EST"
+    "humidity": 48,
+    "obs": "19 Nov 08:51 am EST"
    },
    "periods": [
     {
@@ -702,7 +758,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -718,11 +774,7 @@
     "h": "Foreign retirees may again be eligible for French citizenship",
     "b": "The Interior Minister signaled a change to citizenship requirements.",
     "date": "2026-11-18",
-    "publisher": "The Local France",
-    "title": "Explained: Are retirees once again eligible for French citizenship?",
     "url": "https://www.thelocal.fr/20261118/explained-are-retirees-once-again-eligible-for-french-citizenship",
-    "published": "2026-11-18T10:44:53Z",
-    "updated": "2026-11-18T10:44:53Z",
     "gathered": "2026-11-18T23:12:49Z"
    },
    {
@@ -756,7 +808,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "goodnews": [
    {
     "h": "French 'forever chemicals slayer' wins Earthshot Prize",
@@ -778,11 +830,7 @@
     "h": "Girls winter athletes must file sex attestation by Dec. 3",
     "b": "Under I-638, Washington girls winter-sports athletes in grades 7-12 must turn in a \"biological sex\" attestation by Dec. 3.",
     "date": "2026-11-18",
-    "publisher": "KUOW",
-    "title": "WA students who hope to play girls sports have 10 days to prove their 'biological sex'",
     "url": "https://www.kuow.org/sports/2026-11-18/wa-students-who-hope-to-play-girls-sports-have-10-days-to-prove-their-biological-sex",
-    "published": "2026-11-18T23:53:13Z",
-    "updated": "2026-11-18T23:53:13Z",
     "gathered": "2026-11-19T02:43:42Z"
    },
    {
@@ -820,11 +868,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "Mostly Cloudy",
+    "temp": 43,
+    "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 92,
-    "obs": "19 Nov 03:53 AM PST"
+    "humidity": 86,
+    "obs": "19 Nov 05:55 AM PST"
    },
    "periods": [
     {
@@ -877,7 +925,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T14:15:00Z",
+  "updatedAt": "2026-11-19T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

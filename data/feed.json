@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T14:15:00Z",
+ "updatedAt": "2026-11-19T17:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,20 @@
  },
  "world": [
   {
+   "h": "Five tankers ablaze after hitting mines near Hormuz",
+   "b": "Five tankers were reported on fire after hitting naval mines in and around the Strait of Hormuz.",
+   "date": "2026-11-19",
+   "publisher": "Al Jazeera",
+   "title": "Five tankers reported ablaze after hitting naval mines in and around Hormuz",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz",
+   "gathered": "2026-11-19T14:15:26Z"
+  },
+  {
    "h": "World court rules Myanmar committed genocide",
    "b": "The International Court of Justice ruled that Myanmar committed genocide against its Rohingya Muslim minority.",
    "date": "2026-11-19",
    "publisher": "Al Jazeera",
-   "title": "UN top court finds Myanmar guilty of genocide against Rohingya",
+   "title": "UN’s top court finds Myanmar guilty of genocide against Rohingya",
    "url": "https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide",
    "gathered": "2026-11-19T11:59:24Z"
   },
@@ -47,7 +56,7 @@
    "b": "Trump, Xi Jinping and Vladimir Putin will hold a three-way meeting Thursday in Shenzhen on the sidelines of the APEC summit, the first ever between the three leaders.",
    "date": "2026-11-19",
    "publisher": "Al Jazeera",
-   "title": "Trump, Xi, Putin pledge ‘stable energy flows’, nuclear talks",
+   "title": "APEC updates: Trump, Xi, Putin commit to ‘stable energy flows’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/apec-live-trump-xi-and-putin-to-meet-in-historic-three-way-china-summit",
    "gathered": "2026-11-19T05:16:06Z"
   },
@@ -203,6 +212,15 @@
  ],
  "politics": [
   {
+   "h": "Katherine Clark nominated for House majority leader",
+   "b": "Massachusetts Rep. Katherine Clark became the first woman nominated to be House majority leader after Democratic Caucus leadership elections.",
+   "date": "2026-11-19",
+   "publisher": "WBUR",
+   "title": "Katherine Clark becomes first woman nominated to be House majority leader",
+   "url": "https://www.wbur.org/news/2026/11/19/katherine-clark-house-majority-leader-nomination",
+   "gathered": "2026-11-19T14:15:26Z"
+  },
+  {
    "h": "DOJ deal for Trump-linked golf pro made without IRS",
    "b": "A Justice Department settlement with people and a company connected to Trump was made without IRS agreement, alarming agency officials.",
    "date": "2026-11-19",
@@ -221,7 +239,7 @@
    "title": "We’re Publishing the Tariff Refunds the Government Has Refused to Disclose",
    "url": "https://www.propublica.org/article/tariff-refund-database-cash-back",
    "published": "2026-11-19T10:35:00Z",
-   "updated": "2026-11-19T11:52:42Z",
+   "updated": "2026-11-19T12:52:29Z",
    "gathered": "2026-11-19T11:59:24Z"
   },
   {
@@ -414,6 +432,26 @@
  ],
  "local": [
   {
+   "h": "Family sues city over wrong-way crash death",
+   "b": "The family of a 27-year-old woman killed by a wrong-way driver in the West Village last year filed a wrongful death lawsuit against the city and DOT.",
+   "date": "2026-11-19",
+   "publisher": "Gothamist",
+   "title": "Family of woman killed in wrong-way crash files wrongful death lawsuit against NYC, DOT",
+   "url": "https://gothamist.com/news/family-of-woman-killed-in-wrong-way-crash-files-wrongful-death-lawsuit-against-nyc-dot",
+   "published": "2026-11-19T13:33:27Z",
+   "gathered": "2026-11-19T14:15:26Z"
+  },
+  {
+   "h": "Bill would ban idling trailers at Hunts Point",
+   "b": "A new City Council bill would ban idling diesel refrigerated trailers at warehouses, targeting Hunts Point Produce Market in the South Bronx.",
+   "date": "2026-11-19",
+   "publisher": "Gothamist",
+   "title": "Polluting trailers at Hunts Point market would be banned under new NYC Council bill",
+   "url": "https://gothamist.com/news/polluting-trailers-at-hunts-point-market-would-be-banned-under-new-nyc-council-bill",
+   "published": "2026-11-19T13:00:52Z",
+   "gathered": "2026-11-19T14:15:26Z"
+  },
+  {
    "h": "Council weighs closing sanctuary-law 'loophole'",
    "b": "The City Council's immigration committee is considering bills to close a \"loophole\" in the city's sanctuary laws.",
    "date": "2026-11-19",
@@ -496,11 +534,11 @@
  ],
  "weather": {
   "now": {
-   "temp": 48,
+   "temp": 51,
    "cond": "Fair",
    "wind": "Calm",
-   "humidity": 54,
-   "obs": "19 Nov 06:51 am EST"
+   "humidity": 48,
+   "obs": "19 Nov 08:51 am EST"
   },
   "periods": [
    {
