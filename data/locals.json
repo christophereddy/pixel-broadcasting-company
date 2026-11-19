@@ -20,15 +20,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 65,
     "cond": "Mostly Cloudy",
-    "wind": "NE 13 mph",
-    "humidity": 47,
-    "obs": "19 Nov 08:52 am EST"
+    "wind": "NE 10 mph",
+    "humidity": 43,
+    "obs": "19 Nov 11:52 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 67,
      "text": "Mostly sunny, with a high near 67. East wind around 10 mph, with gusts as high as 20 mph. "
@@ -37,7 +37,7 @@
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Partly cloudy, with a low around 52. Northeast wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly cloudy, with a low around 52. East wind around 5 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Friday",
@@ -48,20 +48,20 @@
     {
      "name": "Friday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Partly cloudy, with a low around 53. East wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "temp": 52,
+     "text": "Partly cloudy, with a low around 52. East wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny, with a high near 68. East wind around 10 mph, with gusts as high as 20 mph. "
+     "temp": 69,
+     "text": "Sunny, with a high near 69. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 51,
-     "text": "Partly cloudy, with a low around 51."
+     "text": "Mostly clear, with a low around 51."
     }
    ]
   },
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -151,15 +151,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
+    "temp": 61,
     "cond": "A Few Clouds",
-    "wind": "NW 6 mph",
-    "humidity": 47,
-    "obs": "19 Nov 08:54 am EST"
+    "wind": "W 3 mph",
+    "humidity": 31,
+    "obs": "19 Nov 11:54 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 67,
      "text": "Sunny, with a high near 67. Light southwest wind. "
@@ -208,7 +208,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -219,6 +219,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Illinois e-scooter law takes effect Jan. 1",
+    "b": "Devices that can top 28 mph will count as motor vehicles, requiring a driver's license, insurance and registration.",
+    "date": "2026-11-19",
+    "publisher": "WBEZ",
+    "title": "An e-scooter law in Illinois takes effect Jan. 1. How it aims to make riding them safer",
+    "url": "https://www.wbez.org/transportation/2026/11/19/an-e-scooter-law-in-illinois-takes-effect-jan-1-how-it-aims-to-make-riding-them-safer",
+    "published": "2026-11-19T15:19:48Z",
+    "updated": "2026-11-19T15:19:48Z",
+    "gathered": "2026-11-19T17:16:08Z"
+   },
    {
     "h": "City Council orders independent review of Chicago finances",
     "b": "The move follows the resignation of the city's chief financial officer.",
@@ -261,11 +272,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "A Few Clouds",
-    "wind": "SW 12 mph",
-    "humidity": 59,
-    "obs": "19 Nov 07:53 am CST"
+    "temp": 61,
+    "cond": "Mostly Cloudy",
+    "wind": "W 16 mph",
+    "humidity": 52,
+    "obs": "19 Nov 10:53 am CST"
    },
    "periods": [
     {
@@ -318,7 +329,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -367,11 +378,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 36,
+    "temp": 39,
     "cond": "Mostly Cloudy",
-    "wind": "Calm",
-    "humidity": 28,
-    "obs": "19 Nov 05:58 am MST"
+    "wind": "E 3 mph",
+    "humidity": 26,
+    "obs": "19 Nov 08:58 am MST"
    },
    "periods": [
     {
@@ -424,7 +435,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -472,11 +483,7 @@
     "h": "Port strike looms Saturday at LA and Long Beach",
     "b": "A strike is looming Saturday at the ports of Long Beach and Los Angeles, threatening the complex's busiest year on record.",
     "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "Port workers strike looks more likely this weekend, shippers say",
     "url": "https://laist.com/news/transportation/port-workers-strike-looks-more-likely-this-weekend-shippers-say",
-    "published": "2026-11-19T13:00:00Z",
-    "updated": "2026-11-19T13:00:12Z",
     "gathered": "2026-11-19T14:15:26Z"
    },
    {
@@ -509,13 +516,17 @@
     "title": "Santa Ana cancels license plate reader contracts, looks into banning them for business properties",
     "url": "https://laist.com/news/politics/santa-ana-cancels-license-plate-reader-contracts-looks-into-banning-them-for-business-properties",
     "published": "2026-11-18T19:31:12Z",
+    "updated": "2026-11-18T19:31:12Z",
     "gathered": "2026-11-18T21:30:36Z"
    },
    {
     "h": "Cold storm to bring rain and mountain snow to Southern California",
     "b": "Parts of the LA Basin could get up to 3 inches of rain Thursday; high elevations up to 8 inches of snow.",
     "date": "2026-11-18",
+    "publisher": "LAist",
+    "title": "Cold storm moves into Southern California, bringing rain, snow and hazards",
     "url": "https://laist.com/news/climate-environment/cold-storm-november-southern-california",
+    "published": "2026-11-18T00:07:18Z",
     "gathered": "2026-11-18T03:49:20Z"
    },
    {
@@ -531,17 +542,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 57,
     "wind": "Calm",
-    "humidity": 88,
-    "obs": "19 Nov 06:10 AM PST"
+    "humidity": 95,
+    "obs": "19 Nov 09:10 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Rain and possibly a thunderstorm.  High near 65. South southeast wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "text": "Rain and possibly a thunderstorm.  High near 65. South wind 10 to 15 mph becoming west in the afternoon.  Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -587,7 +598,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -599,13 +610,43 @@
   },
   "local": [
    {
+    "h": "Troubled builder picked for NJ ICE warehouse review",
+    "b": "A company run by developer James Grossmann was chosen to lead the court-ordered environmental review of a planned immigration detention facility in Roxbury, NJ.",
+    "date": "2026-11-19",
+    "publisher": "Gothamist",
+    "title": "Builder facing bankruptcy will lead environmental review of controversial NJ ICE warehouse",
+    "url": "https://gothamist.com/news/builder-facing-bankruptcy-will-lead-environmental-review-of-controversial-nj-ice-warehouse",
+    "published": "2026-11-19T15:05:00Z",
+    "gathered": "2026-11-19T17:16:08Z"
+   },
+   {
+    "h": "NY delays Medicaid work-rule cutoffs to July",
+    "b": "Gov. Hochul said New Yorkers won't lose Medicaid over new federal work rules until July, and the state will spend $213 million on enrollment help.",
+    "date": "2026-11-19",
+    "publisher": "Gothamist",
+    "title": "NY to delay enforcement of new Medicaid rules, potentially keeping thousands insured",
+    "url": "https://gothamist.com/news/more-words-words-words",
+    "published": "2026-11-19T16:30:04Z",
+    "gathered": "2026-11-19T17:16:08Z"
+   },
+   {
+    "h": "Mamdani signs carriage horse ban",
+    "b": "Mayor Zohran Mamdani signed a bill banning the city's horse-drawn carriage industry, which must leave Central Park by June 2028.",
+    "date": "2026-11-19",
+    "publisher": "Gothamist",
+    "title": "Mayor Mamdani signs NYC's carriage horse ban after decades of animal rights activism",
+    "url": "https://gothamist.com/news/mayor-mamdani-signs-nycs-carriage-horse-ban-after-decades-of-animal-rights-activism",
+    "published": "2026-11-19T15:26:09Z",
+    "gathered": "2026-11-19T17:16:08Z"
+   },
+   {
     "h": "Family sues city over wrong-way crash death",
     "b": "The family of a 27-year-old woman killed by a wrong-way driver in the West Village last year filed a wrongful death lawsuit against the city and DOT.",
     "date": "2026-11-19",
     "publisher": "Gothamist",
     "title": "Family of woman killed in wrong-way crash files wrongful death lawsuit against NYC, DOT",
     "url": "https://gothamist.com/news/family-of-woman-killed-in-wrong-way-crash-files-wrongful-death-lawsuit-against-nyc-dot",
-    "published": "2026-11-19T13:33:27Z",
+    "published": "2026-11-19T13:33:00Z",
     "gathered": "2026-11-19T14:15:26Z"
    },
    {
@@ -701,15 +742,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 59,
     "cond": "Fair",
-    "wind": "Calm",
-    "humidity": 48,
-    "obs": "19 Nov 08:51 am EST"
+    "wind": "W 5 mph",
+    "humidity": 33,
+    "obs": "19 Nov 11:51 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 61,
      "text": "Sunny, with a high near 61. Southwest wind 3 to 6 mph. "
@@ -758,7 +799,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -774,7 +815,11 @@
     "h": "Foreign retirees may again be eligible for French citizenship",
     "b": "The Interior Minister signaled a change to citizenship requirements.",
     "date": "2026-11-18",
+    "publisher": "The Local France",
+    "title": "LATEST: Are retirees once again eligible for French citizenship?",
     "url": "https://www.thelocal.fr/20261118/explained-are-retirees-once-again-eligible-for-french-citizenship",
+    "published": "2026-11-18T10:44:53Z",
+    "updated": "2026-11-19T14:38:47Z",
     "gathered": "2026-11-18T23:12:49Z"
    },
    {
@@ -808,7 +853,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "goodnews": [
    {
     "h": "French 'forever chemicals slayer' wins Earthshot Prize",
@@ -837,11 +882,7 @@
     "h": "Teachers union president on leave nearly a year",
     "b": "Seattle teachers union president Ibi Idowu has been on paid leave for nearly a year amid an abuse investigation.",
     "date": "2026-11-19",
-    "publisher": "KUOW",
-    "title": "Teachers union president on leave one year after being accused of abusing students",
     "url": "https://www.kuow.org/education/2026-11-18/teachers-union-president-on-leave-one-year-after-being-accused-of-abusing-students",
-    "published": "2026-11-19T00:17:38Z",
-    "updated": "2026-11-19T00:17:38Z",
     "gathered": "2026-11-19T02:43:42Z"
    },
    {
@@ -869,17 +910,17 @@
   "weather": {
    "now": {
     "temp": 43,
-    "cond": "Overcast",
+    "cond": "Mostly Cloudy",
     "wind": "Calm",
     "humidity": 86,
-    "obs": "19 Nov 05:55 AM PST"
+    "obs": "19 Nov 08:55 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 49,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 49. North northwest wind 3 to 6 mph. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 49. Light and variable wind becoming north around 6 mph in the morning. "
     },
     {
      "name": "Tonight",
@@ -925,7 +966,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-19T17:12:00Z",
+  "updatedAt": "2026-11-19T20:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
