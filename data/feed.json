@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-20T20:12:00Z",
+ "updatedAt": "2026-11-20T23:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Spain grants bail to activist facing US extradition",
+   "b": "A Spanish court granted conditional bail to James \"Fergie\" Chambers, a pro-Palestinian donor the US accuses of financing Hamas. He denies the charges.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Spain court grants bail to pro-Palestinian activist James ‘Fergie’ Chambers",
+   "url": "https://www.aljazeera.com/news/2026/11/20/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers",
+   "gathered": "2026-11-20T20:12:19Z"
+  },
   {
    "h": "Myanmar rejects ICJ genocide ruling as 'unfair'",
    "b": "Myanmar's government rejected the court's finding that its forces committed state-sponsored genocide against the Rohingya.",
@@ -243,6 +252,17 @@
  ],
  "international": [
   {
+   "h": "Iraqi forces enter Kataib Hezbollah stronghold",
+   "b": "Security forces deployed to Jurf al-Sakhar, a stronghold of the Iran-aligned armed group, after a deal with it.",
+   "date": "2026-11-20",
+   "place": "Jurf al-Sakhar, Iraq",
+   "tz": "Asia/Baghdad",
+   "publisher": "Al Jazeera",
+   "title": "Iraqi forces deploy to Jurf al-Sakhar after deal with Iran-backed group",
+   "url": "https://www.aljazeera.com/news/2026/11/20/iraqi-forces-deploy-to-jurf-al-sakhar-after-deal-with-iran-backed-group",
+   "gathered": "2026-11-20T20:12:19Z"
+  },
+  {
    "h": "Qatar and Germany expand defence ties",
    "b": "Qatar's Emir Sheikh Tamim bin Hamad Al Thani held talks in Berlin on broadening defence and diplomatic cooperation.",
    "date": "2026-11-20",
@@ -422,6 +442,16 @@
  ],
  "local": [
   {
+   "h": "MTA chair skeptical of Amtrak's Penn Station plan",
+   "b": "The MTA chair is skeptical of Amtrak's idea to unify Penn Station's railroads.",
+   "date": "2026-11-20",
+   "publisher": "Gothamist",
+   "title": "MTA chair skeptical of Amtrak's big idea to unify Penn Station's railroads",
+   "url": "https://gothamist.com/news/mta-chair-skeptical-of-amtraks-big-idea-to-unify-penn-stations-railroads",
+   "published": "2026-11-20T19:14:59Z",
+   "gathered": "2026-11-20T20:12:19Z"
+  },
+  {
    "h": "Mamdani tears Achilles in staff-vs-press soccer game",
    "b": "The mayor appeared Friday in a medical boot and on crutches after the injury Thursday night.",
    "date": "2026-11-20",
@@ -449,7 +479,7 @@
    "title": "Mamdani lays out plan to close Rikers by 2032, after years of delays",
    "url": "https://gothamist.com/news/mamdani-lays-out-plan-to-close-rikers-by-2032-after-years-of-delays",
    "published": "2026-11-20T10:00:00Z",
-   "updated": "2026-11-20T18:35:00Z",
+   "updated": "2026-11-20T19:35:00Z",
    "gathered": "2026-11-20T10:19:05Z"
   },
   {
@@ -459,8 +489,7 @@
    "publisher": "Gothamist",
    "title": "Federal government claims control of Newark Housing Authority",
    "url": "https://gothamist.com/news/federal-government-claims-control-of-newark-housing-authority",
-   "published": "2026-11-20T03:32:00Z",
-   "updated": "2026-11-20T18:07:00Z",
+   "published": "2026-11-20T18:07:00Z",
    "gathered": "2026-11-20T05:12:15Z"
   },
   {
@@ -576,48 +605,47 @@
  ],
  "weather": {
   "now": {
-   "temp": 66,
+   "temp": 68,
    "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 33,
-   "obs": "20 Nov 12:51 pm EST"
+   "humidity": 35,
+   "obs": "20 Nov 14:51 pm EST"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 63,
-    "text": "Sunny, with a steady temperature around 63. West wind 6 to 9 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 49,
-    "text": "Mostly clear, with a low around 49. North wind 6 to 9 mph. "
+    "temp": 48,
+    "text": "Mostly clear, with a low around 48. West wind 5 to 8 mph becoming north after midnight. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 60,
-    "text": "Mostly sunny, with a high near 60. North wind around 6 mph becoming southeast in the afternoon. "
+    "temp": 63,
+    "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming south in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 52,
-    "text": "Mostly cloudy, with a low around 52. Light and variable wind becoming northeast around 6 mph after midnight. "
+    "temp": 53,
+    "text": "Mostly cloudy, with a low around 53. Light and variable wind becoming northeast around 6 mph after midnight. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 62,
-    "text": "Rain likely, mainly after 1pm.  Cloudy, with a high near 62. Northeast wind 7 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 63,
+    "text": "Rain likely, mainly after 3pm.  Cloudy, with a high near 63. Northeast wind 7 to 11 mph.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 61,
-    "text": "Rain.  Steady temperature around 61. Chance of precipitation is 90%. New precipitation amounts between three quarters and one inch possible. "
+    "temp": 59,
+    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Low around 59. Northeast wind 15 to 18 mph becoming northwest after midnight.  Chance of precipitation is 90%. New precipitation amounts between three quarters and one inch possible. "
+   },
+   {
+    "name": "Monday",
+    "kind": "high",
+    "temp": 64,
+    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 64."
    }
   ]
  },
