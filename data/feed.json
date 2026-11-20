@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T05:12:00Z",
+ "updatedAt": "2026-11-20T08:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -104,8 +104,6 @@
    "h": "Court lets Trump end TPS for Venezuelans",
    "b": "A federal appeals court allowed the administration to move forward, for now, with removing deportation protections for Venezuelans.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "US appeals court lets Trump end TPS deportation protections for Venezuelans",
    "url": "https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans",
    "gathered": "2026-11-19T23:15:48Z"
   },
@@ -196,6 +194,17 @@
  ],
  "international": [
   {
+   "h": "Thousands protest Colombia's tax plans",
+   "b": "Unions, students and opposition groups marched in Bogota and other cities in a second nationwide protest against President de la Espriella's tax reforms.",
+   "date": "2026-11-20",
+   "place": "Bogota, Colombia",
+   "tz": "America/Bogota",
+   "publisher": "Al Jazeera",
+   "title": "Thousands protest Colombia’s tax plans amid row over US military role",
+   "url": "https://www.aljazeera.com/news/2026/11/20/thousands-protest-colombias-tax-plans-amid-row-over-us-military-role",
+   "gathered": "2026-11-20T05:12:15Z"
+  },
+  {
    "h": "Hegseth hails US ties with Colombia",
    "b": "On a brief visit to Bogota, Defense Secretary Pete Hegseth praised the close alliance with Colombian President Abelardo de la Espriella.",
    "date": "2026-11-19",
@@ -224,6 +233,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Asian stocks dive despite Anthropic debut",
+   "b": "Markets in Japan, South Korea, Taiwan and Hong Kong fell sharply Friday as AI bubble fears outweighed excitement over Anthropic's listing.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+   "url": "https://www.aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears",
+   "gathered": "2026-11-20T05:12:15Z"
+  },
   {
    "h": "Average new car price tops $50,000",
    "b": "Edmunds says the average new-car price passed $50,000, and more than a quarter of buyers are taking loans of seven years or longer.",
@@ -296,8 +314,38 @@
    "gathered": "2026-11-18T03:49:20Z"
   }
  ],
- "goodnews": [],
+ "goodnews": [
+  {
+   "h": "Brazil recognises Chief Raoni's ancestral land",
+   "b": "President Lula visited 94-year-old Indigenous leader Raoni Metuktire as the government recognised the chief's ancestral land as Indigenous territory.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Lula visits ailing Chief Raoni as Brazil recognises Indigenous land",
+   "url": "https://www.aljazeera.com/news/2026/11/20/lula-visits-ailing-chief-raoni-as-brazil-recognises-indigenous-land",
+   "gathered": "2026-11-20T05:12:15Z"
+  }
+ ],
  "local": [
+  {
+   "h": "HUD takes over Newark Housing Authority",
+   "b": "The federal government took control of New Jersey's largest public housing authority, citing missed occupancy and financial targets.",
+   "date": "2026-11-20",
+   "publisher": "Gothamist",
+   "title": "Federal government claims control of Newark Housing Authority",
+   "url": "https://gothamist.com/news/federal-government-claims-control-of-newark-housing-authority",
+   "published": "2026-11-20T03:32:00Z",
+   "gathered": "2026-11-20T05:12:15Z"
+  },
+  {
+   "h": "Mamdani closes Bronx shelter targeted by ICE subpoena",
+   "b": "The city closed its last migrant shelter, in Mott Haven, and told a court the ICE subpoena for residents' names is now moot.",
+   "date": "2026-11-20",
+   "publisher": "Gothamist",
+   "title": "Mamdani shuts Bronx migrant shelter at center of ICE fight over residents’ data",
+   "url": "https://gothamist.com/news/mamdani-shuts-bronx-migrant-shelter-at-center-of-ice-fight-over-residents-data",
+   "published": "2026-11-20T03:41:33Z",
+   "gathered": "2026-11-20T05:12:15Z"
+  },
   {
    "h": "NY to pay $1.2M in prison sexual assault suit",
    "b": "The state will pay a woman who accused a former corrections officer of repeated sexual assault at a Manhattan women's prison, her lawyers said.",
@@ -401,18 +449,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 56,
    "cond": "Fair",
    "wind": "Calm",
-   "humidity": 51,
-   "obs": "19 Nov 20:51 pm EST"
+   "humidity": 36,
+   "obs": "19 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 48,
-    "text": "Increasing clouds, with a low around 48. West wind around 8 mph. "
+    "text": "Partly cloudy, with a low around 48. West wind around 8 mph. "
    },
    {
     "name": "Friday",
