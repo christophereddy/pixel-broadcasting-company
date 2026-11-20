@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 54,
     "cond": "Mostly Cloudy",
-    "wind": "NE 12 mph",
-    "humidity": 74,
-    "obs": "20 Nov 04:52 am EST"
+    "wind": "NE 10 mph",
+    "humidity": 77,
+    "obs": "20 Nov 05:52 am EST"
    },
    "periods": [
     {
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -131,10 +131,10 @@
   "weather": {
    "now": {
     "temp": 51,
-    "cond": "A Few Clouds",
-    "wind": "W 7 mph",
+    "cond": "Mostly Cloudy",
+    "wind": "SW 5 mph",
     "humidity": 43,
-    "obs": "20 Nov 04:54 am EST"
+    "obs": "20 Nov 05:54 am EST"
    },
    "periods": [
     {
@@ -187,7 +187,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -198,6 +198,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Evanston moves to save modernist Chase bank",
+    "b": "The Preservation Commission voted to pursue landmark status for a branch designed by a disciple of Mies van der Rohe, halting Chase's demolition plan for now.",
+    "date": "2026-11-20",
+    "publisher": "WBEZ",
+    "title": "Evanston landmark officials look to save modernist Chase bank from demolition",
+    "url": "https://www.wbez.org/architecture/2026/11/20/evanston-landmark-officials-save-modernist-chase-bank-demolition",
+    "published": "2026-11-20T11:05:00Z",
+    "updated": "2026-11-20T11:05:01Z",
+    "gathered": "2026-11-20T11:14:39Z"
+   },
    {
     "h": "Michelin adds six Chicago restaurants",
     "b": "New picks include All Well, Petite Edith and local soup favorite Lao Peng You.",
@@ -235,21 +246,17 @@
     "h": "Illinois e-scooter law takes effect Jan. 1",
     "b": "Devices that can top 28 mph will count as motor vehicles, requiring a driver's license, insurance and registration.",
     "date": "2026-11-19",
-    "publisher": "WBEZ",
-    "title": "An e-scooter law in Illinois takes effect Jan. 1. How it aims to make riding them safer",
     "url": "https://www.wbez.org/transportation/2026/11/19/an-e-scooter-law-in-illinois-takes-effect-jan-1-how-it-aims-to-make-riding-them-safer",
-    "published": "2026-11-19T15:19:48Z",
-    "updated": "2026-11-19T15:19:48Z",
     "gathered": "2026-11-19T17:16:08Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Fair",
-    "wind": "S 3 mph",
-    "humidity": 90,
-    "obs": "20 Nov 03:53 am CST"
+    "temp": 46,
+    "cond": "A Few Clouds",
+    "wind": "Calm",
+    "humidity": 86,
+    "obs": "20 Nov 04:53 am CST"
    },
    "periods": [
     {
@@ -302,7 +309,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -356,27 +363,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Fair",
-    "wind": "S 16 mph",
-    "humidity": 26,
-    "obs": "20 Nov 00:58 am MST"
+    "temp": 50,
+    "cond": "A Few Clouds",
+    "wind": "SW 12 mph",
+    "humidity": 32,
+    "obs": "20 Nov 01:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 39,
-     "text": "Partly cloudy, with a steady temperature around 39. South southwest wind around 11 mph, with gusts as high as 21 mph. "
-    },
-    {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 62,
      "text": "Mostly sunny, with a high near 62. Breezy, with a south southwest wind 11 to 16 mph increasing to 17 to 22 mph in the afternoon. Winds could gust as high as 36 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 31,
      "text": "Increasing clouds, with a low around 31. West southwest wind 5 to 7 mph becoming calm  in the evening. "
@@ -397,7 +398,13 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 45,
-     "text": "Mostly sunny, with a high near 45."
+     "text": "Mostly sunny, with a high near 45. Calm wind becoming northeast around 5 mph in the afternoon. "
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 24,
+     "text": "Partly cloudy, with a low around 24."
     }
    ]
   },
@@ -413,9 +420,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "denver-co",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "The crews who make Denver glow",
+    "b": "Teams behind Denver's popular holiday light displays start work in August.",
+    "date": "2026-11-20",
+    "publisher": "Denverite",
+    "title": "It takes miles of lights, time and creativity to make Denver glow for the holidays",
+    "url": "https://denverite.com/2026/11/20/denver-holiday-zoo-lights-botanic-gardens/",
+    "published": "2026-11-20T11:00:00Z",
+    "gathered": "2026-11-20T11:14:39Z"
+   }
+  ]
  },
  {
   "location": {
@@ -526,18 +544,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "wind": "N 3 mph",
+    "temp": 49,
+    "wind": "NW 3 mph",
     "humidity": 87,
-    "obs": "20 Nov 02:10 AM PST"
+    "obs": "20 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 47,
-     "text": "Mostly clear, with a low around 47. North northwest wind around 5 mph. "
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -567,6 +579,12 @@
      "kind": "high",
      "temp": 66,
      "text": "Mostly sunny, with a high near 66."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 51,
+     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 51."
     }
    ]
   },
@@ -582,7 +600,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -726,11 +744,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 51,
     "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 49,
-    "obs": "20 Nov 04:51 am EST"
+    "wind": "W 3 mph",
+    "humidity": 48,
+    "obs": "20 Nov 05:51 am EST"
    },
    "periods": [
     {
@@ -783,7 +801,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -822,7 +840,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "goodnews": []
  },
  {
@@ -836,11 +854,7 @@
     "h": "Justice Montoya-Lewis leaves state Supreme Court",
     "b": "Raquel Montoya-Lewis, the first Native American on Washington's Supreme Court, is departing after being appointed in 2020.",
     "date": "2026-11-19",
-    "publisher": "KUOW",
-    "title": "After series of ‘firsts,’ Raquel Montoya-Lewis departs Washington state Supreme Court",
     "url": "https://www.kuow.org/governing/2026-11-19/after-series-of-firsts-raquel-montoya-lewis-departs-washington-state-supreme-court",
-    "published": "2026-11-19T20:36:42Z",
-    "updated": "2026-11-19T23:06:11Z",
     "gathered": "2026-11-19T23:15:48Z"
    },
    {
@@ -866,17 +880,11 @@
    "now": {
     "temp": 34,
     "cond": "Clear",
-    "wind": "SE 4 mph",
-    "humidity": 100,
-    "obs": "20 Nov 02:05 AM PST"
+    "wind": "SE 6 mph",
+    "humidity": 93,
+    "obs": "20 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 37,
-     "text": "Mostly cloudy, with a low around 37. Calm wind. "
-    },
     {
      "name": "Friday",
      "kind": "high",
@@ -906,6 +914,12 @@
      "kind": "high",
      "temp": 50,
      "text": "A 40 percent chance of rain before 10am.  Mostly cloudy, with a high near 50."
+    },
+    {
+     "name": "Sunday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 40."
     }
    ]
   },
@@ -921,7 +935,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T11:14:00Z",
+  "updatedAt": "2026-11-20T14:14:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
