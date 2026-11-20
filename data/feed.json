@@ -1,11 +1,29 @@
 {
- "updatedAt": "2026-11-20T02:12:00Z",
+ "updatedAt": "2026-11-20T05:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Bukele to register for third term",
+   "b": "El Salvador's President Nayib Bukele is set to formally register his candidacy as he seeks a third consecutive term.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "El Salvador’s Bukele expected to formalise bid for third presidential term",
+   "url": "https://www.aljazeera.com/news/2026/11/20/el-salvadors-bukele-expected-to-formalise-bid-for-third-presidential-term",
+   "gathered": "2026-11-20T02:29:52Z"
+  },
+  {
+   "h": "Migrant boat capsizes off Senegal",
+   "b": "Four bodies were recovered after a migrant boat capsized off Senegal's coast, and officials fear the toll could rise significantly.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Four bodies recovered after Senegal boat capsizes amid migration surge",
+   "url": "https://www.aljazeera.com/news/2026/11/20/four-bodies-recovered-after-senegal-boat-capsizes-amid-migration-surge",
+   "gathered": "2026-11-20T02:29:52Z"
+  },
   {
    "h": "COP31 draft drops fossil fuel phaseout",
    "b": "The latest COP31 draft text dropped language about phasing out fossil fuels and emphasizes carbon capture and storage.",
@@ -26,8 +44,6 @@
    "h": "Trump, Xi and Putin pledge closer cooperation",
    "b": "At an unprecedented summit in Shenzhen, the three leaders declared a shared intent to stabilise energy flows, prevent nuclear proliferation and work more closely together.",
    "date": "2026-11-19",
-   "publisher": "Al Jazeera",
-   "title": "‘Groundbreaking’ Trump-Xi-Putin summit: Five key takeaways",
    "url": "https://www.aljazeera.com/news/2026/11/19/groundbreaking-trump-xi-putin-summit-five-key-takeaways",
    "gathered": "2026-11-19T17:16:08Z"
   },
@@ -36,7 +52,7 @@
    "b": "Five tankers were reported on fire after hitting naval mines in and around the Strait of Hormuz.",
    "date": "2026-11-19",
    "publisher": "Al Jazeera",
-   "title": "Tower in Riyadh’s financial centre hit by Houthi attack",
+   "title": "Iran war updates: Riyadh tower hit by Houthi attack, Saudi authorities say",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/19/iran-war-live-saudi-led-coalition-strikes-yemen-ships-on-fire-in-hormuz",
    "gathered": "2026-11-19T14:15:26Z"
   },
@@ -121,6 +137,15 @@
  ],
  "politics": [
   {
+   "h": "Democrats: Kirkland & Ellis gave $11.8M in free work to administration",
+   "b": "Democrats say their investigation found the law firm provided at least $11.8 million in free legal work to the Trump administration.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Democrats say law firm gave $11.8m in free services to Trump administration",
+   "url": "https://www.aljazeera.com/news/2026/11/20/democrats-say-law-firm-gave-11-8m-worth-of-service-to-trump-administration",
+   "gathered": "2026-11-20T02:29:52Z"
+  },
+  {
    "h": "Senate GOP blocks Democratic bid to end Iran war",
    "b": "Senate Republicans blocked a Democratic effort to end the war in Iran, their first move on the conflict since the party's sweeping midterm losses.",
    "date": "2026-11-19",
@@ -176,8 +201,6 @@
    "date": "2026-11-19",
    "place": "Bogota, Colombia",
    "tz": "America/Bogota",
-   "publisher": "Al Jazeera",
-   "title": "‘On the same page’: Hegseth hails US ties with Colombia’s de la Espriella",
    "url": "https://www.aljazeera.com/news/2026/11/19/on-the-same-page-hegseth-hails-us-ties-with-colombias-de-la-espriella",
    "gathered": "2026-11-19T20:53:55Z"
   },
@@ -206,7 +229,7 @@
    "b": "Edmunds says the average new-car price passed $50,000, and more than a quarter of buyers are taking loans of seven years or longer.",
    "date": "2026-11-19",
    "publisher": "Marketplace",
-   "title": "Why aren't cars getting any more affordable?",
+   "title": "Cars aren't getting any more affordable",
    "url": "https://www.marketplace.org/story/2026/11/19/why-car-prices-just-keep-climbing",
    "gathered": "2026-11-19T23:15:48Z"
   },
@@ -275,6 +298,16 @@
  ],
  "goodnews": [],
  "local": [
+  {
+   "h": "NY to pay $1.2M in prison sexual assault suit",
+   "b": "The state will pay a woman who accused a former corrections officer of repeated sexual assault at a Manhattan women's prison, her lawyers said.",
+   "date": "2026-11-20",
+   "publisher": "Gothamist",
+   "title": "NY to pay $1.2M to a woman who accused ex-Manhattan corrections officer of sexual assault",
+   "url": "https://gothamist.com/news/ny-to-pay-12m-to-a-woman-who-accused-ex-manhattan-corrections-officer-of-sexual-assault",
+   "published": "2026-11-20T00:12:00Z",
+   "gathered": "2026-11-20T02:29:52Z"
+  },
   {
    "h": "Duck farm fighting foie gras ban destroyed by fire",
    "b": "Hudson Valley Foie Gras, which is challenging the city's foie gras ban in court, was destroyed in a fire early Thursday, Sullivan County officials said.",
@@ -368,18 +401,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 58,
+   "temp": 54,
    "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 35,
-   "obs": "19 Nov 17:51 pm EST"
+   "wind": "Calm",
+   "humidity": 51,
+   "obs": "19 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 48,
-    "text": "Increasing clouds, with a low around 48. West wind 6 to 8 mph. "
+    "text": "Increasing clouds, with a low around 48. West wind around 8 mph. "
    },
    {
     "name": "Friday",

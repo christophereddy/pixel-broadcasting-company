@@ -20,18 +20,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 64,
-    "cond": "Mostly Cloudy",
-    "wind": "E 13 mph",
-    "humidity": 50,
-    "obs": "19 Nov 17:52 pm EST"
+    "temp": 62,
+    "cond": "A Few Clouds",
+    "wind": "NE 13 mph",
+    "humidity": 54,
+    "obs": "19 Nov 20:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly cloudy, with a low around 52. East wind around 5 mph, with gusts as high as 15 mph. "
+     "text": "Mostly cloudy, with a low around 52. Northeast wind around 5 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Friday",
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -126,19 +126,17 @@
     "h": "Tax cuts among possible 2028 ballot questions",
     "b": "Proposals certified as ballot-eligible include cutting the income tax rate from 5% to 4%, ending legislative stipends and ending the gas tax.",
     "date": "2026-11-19",
-    "publisher": "WBUR",
-    "title": "Two major tax cuts among bevy of possible 2028 ballot questions",
     "url": "https://www.wbur.org/news/2026/11/19/2028-ballot-questions-early-look-initiatives",
     "gathered": "2026-11-19T11:59:24Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 52,
+    "temp": 51,
     "cond": "Fair",
-    "wind": "S 7 mph",
-    "humidity": 57,
-    "obs": "19 Nov 17:54 pm EST"
+    "wind": "SW 9 mph",
+    "humidity": 48,
+    "obs": "19 Nov 20:54 pm EST"
    },
    "periods": [
     {
@@ -191,7 +189,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -249,30 +247,30 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 56,
     "cond": "Fair",
-    "wind": "SW 10 mph",
-    "humidity": 54,
-    "obs": "19 Nov 16:53 pm CST"
+    "wind": "SW 7 mph",
+    "humidity": 67,
+    "obs": "19 Nov 19:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 50,
-     "text": "Clear, with a low around 50. Southwest wind 5 to 10 mph. "
+     "temp": 49,
+     "text": "Clear, with a low around 49. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 68,
-     "text": "Mostly sunny, with a high near 68. South wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "temp": 67,
+     "text": "Mostly sunny, with a high near 67. South wind 5 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Mostly clear, with a low around 50. South wind around 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 50. South wind around 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday",
@@ -306,7 +304,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -360,18 +358,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Mostly Cloudy",
-    "wind": "NW 8 mph",
-    "humidity": 22,
-    "obs": "19 Nov 14:58 pm MST"
+    "temp": 43,
+    "cond": "Partly Cloudy",
+    "wind": "Calm",
+    "humidity": 28,
+    "obs": "19 Nov 18:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 36,
-     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 36. Light and variable wind becoming south southwest 6 to 11 mph in the evening. Winds could gust as high as 21 mph. "
+     "text": "Mostly cloudy, then gradually becoming mostly clear, with a low around 36. Light southwest wind becoming south southwest 6 to 11 mph in the evening. Winds could gust as high as 21 mph. "
     },
     {
      "name": "Friday",
@@ -417,7 +415,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -428,6 +426,26 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Did $29M speed up ballot counting?",
+    "b": "The state gave county registrars $29 million to count ballots faster this year, and LA and Orange counties did.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "LA, OC counted ballots faster this year. Will it last?",
+    "url": "https://laist.com/news/politics/voter-guides/2026-election-la-county-vote-counting-rate-voter-turnout",
+    "published": "2026-11-20T01:09:22Z",
+    "gathered": "2026-11-20T02:29:52Z"
+   },
+   {
+    "h": "CD-9 race tightens as Ugarte gains",
+    "b": "Jose Ugarte gained slightly in the race for South LA's Council District 9, which will come down to a narrow number of ballots.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "Jose Ugarte gains slightly in tight race to represent South LA’s CD-9",
+    "url": "https://laist.com/news/politics/jose-ugarte-gains-slightly-election-south-la-cd-9",
+    "published": "2026-11-20T02:04:37Z",
+    "gathered": "2026-11-20T02:29:52Z"
+   },
    {
     "h": "LBUSD finds no problem in Monroe Elementary rooms",
     "b": "Long Beach Unified says two rounds of environmental testing found nothing concerning in a Monroe Elementary building where dozens of kids got sick.",
@@ -462,10 +480,7 @@
     "h": "LAPD still stops Black residents at higher rates",
     "b": "Efforts to curb racial profiling by the LAPD have fallen short despite a state law meant to address it.",
     "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "LAPD keeps stopping Black Angelenos at higher rates — often without a ticket or arrest",
     "url": "https://laist.com/news/politics/lapd-keeps-stopping-black-angelenos-at-higher-rates-often-without-a-ticket-or-arrest",
-    "published": "2026-11-19T18:32:00Z",
     "gathered": "2026-11-19T20:53:55Z"
    },
    {
@@ -511,17 +526,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
-    "wind": "Calm",
+    "temp": 58,
+    "wind": "NW 3 mph",
     "humidity": 81,
-    "obs": "19 Nov 03:10 PM PST"
+    "obs": "19 Nov 06:25 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Partly cloudy, with a low around 47. North wind 5 to 10 mph. "
+     "text": "Partly cloudy, with a low around 47. West wind 5 to 10 mph becoming north after midnight. Winds could gust as high as 15 mph. "
     },
     {
      "name": "Friday",
@@ -545,7 +560,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48."
+     "text": "Mostly clear, with a low around 48. West northwest wind around 5 mph becoming north after midnight. "
     },
     {
      "name": "Sunday",
@@ -567,7 +582,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -578,6 +593,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NY to pay $1.2M in prison sexual assault suit",
+    "b": "The state will pay a woman who accused a former corrections officer of repeated sexual assault at a Manhattan women's prison, her lawyers said.",
+    "date": "2026-11-20",
+    "publisher": "Gothamist",
+    "title": "NY to pay $1.2M to a woman who accused ex-Manhattan corrections officer of sexual assault",
+    "url": "https://gothamist.com/news/ny-to-pay-12m-to-a-woman-who-accused-ex-manhattan-corrections-officer-of-sexual-assault",
+    "published": "2026-11-20T00:12:00Z",
+    "gathered": "2026-11-20T02:29:52Z"
+   },
    {
     "h": "Duck farm fighting foie gras ban destroyed by fire",
     "b": "Hudson Valley Foie Gras, which is challenging the city's foie gras ban in court, was destroyed in a fire early Thursday, Sullivan County officials said.",
@@ -671,18 +696,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 54,
     "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 35,
-    "obs": "19 Nov 17:51 pm EST"
+    "wind": "Calm",
+    "humidity": 51,
+    "obs": "19 Nov 20:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Increasing clouds, with a low around 48. West wind 6 to 8 mph. "
+     "text": "Increasing clouds, with a low around 48. West wind around 8 mph. "
     },
     {
      "name": "Friday",
@@ -728,7 +753,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -767,7 +792,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "goodnews": []
  },
  {
@@ -809,11 +834,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Mostly Cloudy",
+    "temp": 43,
+    "cond": "Clear",
     "wind": "Calm",
-    "humidity": 61,
-    "obs": "19 Nov 03:00 PM PST"
+    "humidity": 81,
+    "obs": "19 Nov 06:15 PM PST"
    },
    "periods": [
     {
@@ -866,7 +891,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:12:00Z",
+  "updatedAt": "2026-11-20T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
