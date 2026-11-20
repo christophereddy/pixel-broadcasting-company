@@ -20,11 +20,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 56,
     "cond": "Mostly Cloudy",
-    "wind": "NE 10 mph",
-    "humidity": 77,
-    "obs": "20 Nov 05:52 am EST"
+    "wind": "NE 13 mph",
+    "humidity": 72,
+    "obs": "20 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -43,13 +43,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68. East wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "A 20 percent chance of showers after 2pm.  Mostly sunny, with a high near 68. East wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly clear, with a low around 52. Northeast wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "A 20 percent chance of showers before 1am.  Mostly clear, with a low around 52. Northeast wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Sunday",
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -89,11 +89,27 @@
   },
   "local": [
    {
+    "h": "Fewer MBTA shutdowns planned for 2027",
+    "b": "Weekday shutdowns should be fewer next year; this weekend, shuttle buses replace the Red Line between Broadway and North Quincy.",
+    "date": "2026-11-20",
+    "publisher": "WBUR",
+    "title": "The MBTA is planning fewer shutdowns in 2027. Here's a peek at the schedule",
+    "url": "https://www.wbur.org/news/2026/11/20/mbta-shutdown-2027-schedule-phil-eng",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
+   {
+    "h": "Logan tests robot wheelchairs and cleaners",
+    "b": "Massport is piloting autonomous wheelchairs and cleaning machines at Logan to boost customer satisfaction.",
+    "date": "2026-11-20",
+    "publisher": "WBUR",
+    "title": "Massport pilots robot wheelchairs, cleaners at Logan",
+    "url": "https://www.wbur.org/news/2026/11/20/logan-airport-autonomous-wheelchairs-cleaners-boston",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
+   {
     "h": "Northeast household spending jumps nearly 10%",
     "b": "Northeast households spent an average of $91,698 in 2025, almost 10% more than in 2024 and nearly $10,000 above the national average, BLS figures show.",
     "date": "2026-11-19",
-    "publisher": "WBUR",
-    "title": "Household spending in Northeast shot up 10% in one year",
     "url": "https://www.wbur.org/news/2026/11/19/household-spending-in-northeast-shot-up-in-one-year",
     "gathered": "2026-11-19T23:15:48Z"
    },
@@ -101,8 +117,6 @@
     "h": "SJC to hear Lindsay Clancy appeal",
     "b": "Massachusetts' highest court will hear arguments on the motion to dismiss the murder case against Lindsay Clancy.",
     "date": "2026-11-19",
-    "publisher": "WBUR",
-    "title": "Mass. high court will hear Lindsay Clancy appeal",
     "url": "https://www.wbur.org/news/2026/11/19/lindsay-clancy-appeal-massachusetts-supreme-judicial-court",
     "gathered": "2026-11-19T23:15:48Z"
    },
@@ -130,18 +144,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Mostly Cloudy",
-    "wind": "SW 5 mph",
-    "humidity": 43,
-    "obs": "20 Nov 05:54 am EST"
+    "temp": 58,
+    "cond": "A Few Clouds",
+    "wind": "W 9 mph",
+    "humidity": 33,
+    "obs": "20 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 67. West wind 6 to 11 mph. "
+     "text": "Sunny, with a high near 67. West wind 7 to 11 mph. "
     },
     {
      "name": "Tonight",
@@ -187,7 +201,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -198,6 +212,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Christkindlmarket opens for 30th year",
+    "b": "The German-inspired market opens Nov. 20 in Daley Plaza, with Wrigleyville and Aurora markets opening the same day.",
+    "date": "2026-11-20",
+    "publisher": "WBEZ",
+    "title": "Christkindlmarket to celebrate 30 years of shopping, Glühwein and tradition at Daley Plaza",
+    "url": "https://www.wbez.org/things-to-do/2026/11/20/christkindlmarket-daley-plaza-wrigleyville-aurora",
+    "published": "2026-11-20T11:35:00Z",
+    "updated": "2026-11-20T11:35:04Z",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
+   {
+    "h": "South and West Side drivers booted most",
+    "b": "Chicago booted more than 283,000 vehicles from 2020 through 2025, with some majority-Black areas at twice the citywide rate, a WBEZ and Sun-Times analysis found.",
+    "date": "2026-11-20",
+    "publisher": "WBEZ",
+    "title": "Who gets booted in Chicago? Drivers on the South Side, West Side are especially hit hard",
+    "url": "https://www.wbez.org/wbez-investigations/2026/11/20/booted-tickets-booting-chicago",
+    "published": "2026-11-20T11:35:00Z",
+    "updated": "2026-11-20T11:35:01Z",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
    {
     "h": "Evanston moves to save modernist Chase bank",
     "b": "The Preservation Commission voted to pursue landmark status for a branch designed by a disciple of Mies van der Rohe, halting Chase's demolition plan for now.",
@@ -213,33 +249,21 @@
     "h": "Michelin adds six Chicago restaurants",
     "b": "New picks include All Well, Petite Edith and local soup favorite Lao Peng You.",
     "date": "2026-11-19",
-    "publisher": "WBEZ",
-    "title": "Michelin Guide adds six Chicago restaurants to its list, including a favorite city soup spot",
     "url": "https://www.wbez.org/food-drink/2026/11/19/michelin-guide-chicago-restaurants-new-2026-all-well-petite-edith-lao-peng-you",
-    "published": "2026-11-19T21:22:09Z",
-    "updated": "2026-11-19T21:22:09Z",
     "gathered": "2026-11-19T23:15:48Z"
    },
    {
     "h": "Illinois warns of lead dust from Army detonation",
     "b": "Illinois' EPA chief warns a planned Defense Department detonation at an Iowa site could put Illinois residents across the Mississippi at risk.",
     "date": "2026-11-19",
-    "publisher": "WBEZ",
-    "title": "Illinois officials fear a toxic lead-dust plume may spread from Army site explosion in Iowa",
     "url": "https://www.wbez.org/environment/2026/11/19/illinois-toxic-lead-dust-plume-army-site-explosion-iowa",
-    "published": "2026-11-19T20:21:54Z",
-    "updated": "2026-11-19T20:21:54Z",
     "gathered": "2026-11-19T20:53:55Z"
    },
    {
     "h": "Transit agency launches safety reporting app",
     "b": "The NITA Ride Safe app lets CTA, Metra and Pace riders report safety concerns by text and photo, with an option to stay anonymous.",
     "date": "2026-11-19",
-    "publisher": "WBEZ",
-    "title": "NITA releases unified safety reporting app for CTA, Metra and Pace",
     "url": "https://www.wbez.org/transportation/2026/11/19/nita-safe-ride-app-crime-reporting-cta-metra-pace",
-    "published": "2026-11-19T20:26:33Z",
-    "updated": "2026-11-19T20:26:33Z",
     "gathered": "2026-11-19T20:53:55Z"
    },
    {
@@ -252,18 +276,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "A Few Clouds",
-    "wind": "Calm",
-    "humidity": 86,
-    "obs": "20 Nov 04:53 am CST"
+    "temp": 49,
+    "cond": "Mostly Cloudy",
+    "wind": "S 7 mph",
+    "humidity": 77,
+    "obs": "20 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Mostly sunny, with a high near 68. South wind 5 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 68. South wind 5 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -309,9 +333,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Hopleaf's Mighty Slim pours his last beer",
+    "b": "The beloved Andersonville bartender retired Friday after 34 years behind the bar.",
+    "date": "2026-11-20",
+    "publisher": "WBEZ",
+    "title": "After 34 years bartending at Hopleaf in Andersonville, Mighty Slim has poured his last beer",
+    "url": "https://www.wbez.org/food-drink/2026/11/20/after-34-years-bartending-at-hopleaf-in-andersonville-mighty-slim-has-poured-his-last-beer",
+    "published": "2026-11-20T11:35:00Z",
+    "updated": "2026-11-20T11:35:11Z",
+    "gathered": "2026-11-20T14:15:03Z"
+   }
+  ]
  },
  {
   "location": {
@@ -363,11 +399,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "A Few Clouds",
-    "wind": "SW 12 mph",
-    "humidity": 32,
-    "obs": "20 Nov 01:58 am MST"
+    "temp": 48,
+    "cond": "Partly Cloudy",
+    "wind": "SE 12 mph",
+    "humidity": 38,
+    "obs": "20 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -420,7 +456,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -442,6 +478,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "State reviews quality of online community college classes",
+    "b": "The community college chancellor is reviewing whether online professors are giving students a quality education.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "Why students might lose access to financial aid because of ‘low-quality’ online courses",
+    "url": "https://laist.com/news/education/students-might-lose-access-to-financial-aid-because-of-low-quality-online-courses",
+    "published": "2026-11-20T13:00:00Z",
+    "updated": "2026-11-20T13:00:00Z",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
+   {
+    "h": "Over a dozen charged in $22M train heist ring",
+    "b": "Prosecutors say the group stole more than $22 million in cargo, from shoes to power tools, from major retailers.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "Suspects charged in brazen train heist ring that netted $22 million in cargo from major retailers",
+    "url": "https://laist.com/news/criminal-justice/suspects-charged-in-brazen-train-heist-ring-that-netted-22-million-in-cargo-from-major-retailers",
+    "published": "2026-11-20T13:00:00Z",
+    "updated": "2026-11-20T13:00:04Z",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
    {
     "h": "Did $29M speed up ballot counting?",
     "b": "The state gave county registrars $29 million to count ballots faster this year, and LA and Orange counties did.",
@@ -505,22 +563,14 @@
     "h": "UC Regents let UCLA police buy more equipment",
     "b": "The regents authorized UCLA police to buy additional military equipment, including drones.",
     "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "UCLA police will add a weapon in their collection that LAPD was banned from using on crowds",
     "url": "https://laist.com/news/education/ucla-police-weapon-purchase-authorization-40mm-drones-pepperballs",
-    "published": "2026-11-19T13:00:00Z",
-    "updated": "2026-11-19T13:00:07Z",
     "gathered": "2026-11-19T14:15:26Z"
    },
    {
     "h": "Newsom proposes AI emergency shutdown power",
     "b": "Gov. Newsom's AI recommendations would let state officials order an immediate emergency shutdown of AI systems they deem dangerous.",
     "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "Newsom touts an AI kill switch to halt dangerous OpenAI, Anthropic releases",
     "url": "https://laist.com/news/politics/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-anthropic-releases",
-    "published": "2026-11-19T13:00:00Z",
-    "updated": "2026-11-19T13:00:10Z",
     "gathered": "2026-11-19T14:15:26Z"
    },
    {
@@ -534,30 +584,26 @@
     "h": "Olympics security could cost nearly $3 billion",
     "b": "Sheriff Robert Luna estimates Olympics security will cost nearly $3 billion, about three times the $1 billion in federal funds.",
     "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "LA County Sheriff Robert Luna estimates Olympics security will cost nearly $3B",
     "url": "https://laist.com/news/criminal-justice/la-county-sheriff-robert-luna-estimates-olympics-security-will-cost-nearly-3b",
-    "published": "2026-11-19T01:44:12Z",
-    "updated": "2026-11-19T02:10:21Z",
     "gathered": "2026-11-19T02:43:42Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 49,
-    "wind": "NW 3 mph",
-    "humidity": 87,
-    "obs": "20 Nov 03:10 AM PST"
+    "wind": "NW 4 mph",
+    "humidity": 77,
+    "obs": "20 Nov 06:10 AM PST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
      "text": "Sunny, with a high near 64. Northwest wind 5 to 10 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Mostly clear, with a low around 44. North wind 5 to 10 mph, with gusts as high as 15 mph. "
@@ -578,7 +624,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 66,
-     "text": "Mostly sunny, with a high near 66."
+     "text": "Mostly sunny, with a high near 66. Calm wind becoming southwest around 5 mph in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -600,7 +646,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -612,13 +658,23 @@
   },
   "local": [
    {
+    "h": "6,159 supportive housing units sat empty",
+    "b": "More apartments for homeless New Yorkers were vacant in September than the nearly 5,000 people counted sleeping on the street.",
+    "date": "2026-11-20",
+    "publisher": "Gothamist",
+    "title": "Over 6K NYC apartments for homeless people sat vacant in September, city data shows",
+    "url": "https://gothamist.com/news/over-6k-nyc-apartments-for-homeless-people-sat-vacant-in-september-city-data-shows",
+    "published": "2026-11-20T11:30:59Z",
+    "gathered": "2026-11-20T14:15:03Z"
+   },
+   {
     "h": "Mamdani plans to close Rikers by 2032",
     "b": "The plan moves detainees to four borough jails and three hospital units and cuts the jail population to about two-thirds of today's 6,600.",
     "date": "2026-11-20",
     "publisher": "Gothamist",
     "title": "Mamdani lays out plan to close Rikers by 2032, after years of delays",
     "url": "https://gothamist.com/news/mamdani-lays-out-plan-to-close-rikers-by-2032-after-years-of-delays",
-    "published": "2026-11-20T10:00:51Z",
+    "published": "2026-11-20T10:00:00Z",
     "gathered": "2026-11-20T10:19:05Z"
    },
    {
@@ -638,7 +694,7 @@
     "publisher": "Gothamist",
     "title": "Mamdani shuts Bronx migrant shelter at center of ICE fight over residents’ data",
     "url": "https://gothamist.com/news/mamdani-shuts-bronx-migrant-shelter-at-center-of-ice-fight-over-residents-data",
-    "published": "2026-11-20T03:41:33Z",
+    "published": "2026-11-20T03:41:00Z",
     "gathered": "2026-11-20T05:12:15Z"
    },
    {
@@ -744,11 +800,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 56,
     "cond": "Fair",
-    "wind": "W 3 mph",
-    "humidity": 48,
-    "obs": "20 Nov 05:51 am EST"
+    "humidity": 37,
+    "obs": "20 Nov 08:51 am EST"
    },
    "periods": [
     {
@@ -801,7 +856,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -840,7 +895,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "goodnews": []
  },
  {
@@ -861,11 +916,7 @@
     "h": "Council set for routine 1% property tax hike",
     "b": "The Seattle City Council is expected to vote unanimously Friday to raise its property tax collections by 1%, an increase so standard it draws no debate.",
     "date": "2026-11-19",
-    "publisher": "KUOW",
-    "title": "Another year, another property tax increase for Washington cities",
     "url": "https://www.kuow.org/governing/2026-11-19/another-year-another-property-tax-increase-for-washington-cities",
-    "published": "2026-11-19T22:43:34Z",
-    "updated": "2026-11-19T23:12:55Z",
     "gathered": "2026-11-19T23:15:48Z"
    },
    {
@@ -879,20 +930,20 @@
   "weather": {
    "now": {
     "temp": 34,
-    "cond": "Clear",
-    "wind": "SE 6 mph",
-    "humidity": 93,
-    "obs": "20 Nov 02:55 AM PST"
+    "cond": "Mist",
+    "wind": "SE 3 mph",
+    "humidity": 100,
+    "obs": "20 Nov 06:05 AM PST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 48,
      "text": "Mostly cloudy, with a high near 48. South southeast wind 3 to 5 mph. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 36,
      "text": "Mostly cloudy, with a low around 36. Calm wind. "
@@ -913,7 +964,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 50,
-     "text": "A 40 percent chance of rain before 10am.  Mostly cloudy, with a high near 50."
+     "text": "A 40 percent chance of rain before 10am.  Mostly cloudy, with a high near 50. Light south wind. "
     },
     {
      "name": "Sunday Night",
@@ -935,7 +986,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T14:14:00Z",
+  "updatedAt": "2026-11-20T17:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
