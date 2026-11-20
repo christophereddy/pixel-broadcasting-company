@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -191,7 +191,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -306,7 +306,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -417,7 +417,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -567,7 +567,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -728,9 +728,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Singles swap their exes' stuff in Central Park",
+    "b": "Dating network Park Bench hosted \"The Ex-Change,\" a mixer where people traded mementos from past relationships.",
+    "date": "2026-11-19",
+    "publisher": "Gothamist",
+    "title": "These singles gathered in Central Park to swap their exes’ stuff",
+    "url": "https://gothamist.com/arts-entertainment/these-singles-gathered-in-central-park-to-swap-their-exes-stuff",
+    "published": "2026-11-19T15:50:18Z",
+    "gathered": "2026-11-19T23:15:48Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -756,7 +767,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "goodnews": []
  },
  {
@@ -766,6 +777,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Justice Montoya-Lewis leaves state Supreme Court",
+    "b": "Raquel Montoya-Lewis, the first Native American on Washington's Supreme Court, is departing after being appointed in 2020.",
+    "date": "2026-11-19",
+    "publisher": "KUOW",
+    "title": "After series of ‘firsts,’ Raquel Montoya-Lewis departs Washington state Supreme Court",
+    "url": "https://www.kuow.org/governing/2026-11-19/after-series-of-firsts-raquel-montoya-lewis-departs-washington-state-supreme-court",
+    "published": "2026-11-19T20:36:42Z",
+    "updated": "2026-11-19T23:06:11Z",
+    "gathered": "2026-11-19T23:15:48Z"
+   },
+   {
+    "h": "Council set for routine 1% property tax hike",
+    "b": "The Seattle City Council is expected to vote unanimously Friday to raise its property tax collections by 1%, an increase so standard it draws no debate.",
+    "date": "2026-11-19",
+    "publisher": "KUOW",
+    "title": "Another year, another property tax increase for Washington cities",
+    "url": "https://www.kuow.org/governing/2026-11-19/another-year-another-property-tax-increase-for-washington-cities",
+    "published": "2026-11-19T22:43:34Z",
+    "updated": "2026-11-19T23:12:55Z",
+    "gathered": "2026-11-19T23:15:48Z"
+   },
    {
     "h": "Teachers union president on leave nearly a year",
     "b": "Seattle teachers union president Ibi Idowu has been on paid leave for nearly a year amid an abuse investigation.",
@@ -833,7 +866,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T02:11:00Z",
+  "updatedAt": "2026-11-20T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
