@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T14:12:00Z",
+ "updatedAt": "2026-11-21T17:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "Iran says it shot down two US drones over Hormuz",
    "b": "Iranian forces say they downed two US drones over the Strait of Hormuz as the United States steps up its economic pressure campaign and efforts to end the war remain stalled.",
    "date": "2026-11-21",
-   "publisher": "Al Jazeera",
-   "title": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
    "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled",
    "gathered": "2026-11-21T11:12:39Z"
   },
@@ -19,8 +17,6 @@
    "h": "Honduras court convicts four, including three Americans",
    "b": "A court in Honduras convicted four people, three of them US citizens, of criminal association in connection with the 2022 disappearance of a woman whose whereabouts are still unknown.",
    "date": "2026-11-21",
-   "publisher": "Al Jazeera",
-   "title": "Three US citizens among 4 convicted in Honduras over sex-trafficking case",
    "url": "https://www.aljazeera.com/news/2026/11/21/three-us-citizens-among-4-convicted-in-honduras-over-sex-trafficking-case",
    "gathered": "2026-11-21T08:37:16Z"
   },
@@ -35,8 +31,6 @@
    "h": "Denmark expels Russian diplomat over alleged plot",
    "b": "Denmark expelled a Russian diplomat over an alleged plot to kill a Ukrainian rapper.",
    "date": "2026-11-20",
-   "publisher": "Al Jazeera",
-   "title": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
    "url": "https://www.aljazeera.com/news/2026/11/21/denmark-expels-russian-diplomat-over-alleged-plot-to-kill-ukrainian-rapper",
    "gathered": "2026-11-21T02:15:44Z"
   },
@@ -45,7 +39,7 @@
    "b": "The coalition says it intercepted three Houthi missiles headed for the Saudi capital.",
    "date": "2026-11-20",
    "publisher": "Al Jazeera",
-   "title": "Two tankers hit by ‘unknown projectiles’ off Oman coast",
+   "title": "US denies Iran army’s claim it struck an F-16 over Gulf, forcing it to land",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
    "gathered": "2026-11-21T00:54:55Z"
   },
@@ -100,6 +94,16 @@
   }
  ],
  "national": [
+  {
+   "h": "Witness disputes Texas account of a troubled execution",
+   "b": "Texas defended its execution of 70-year-old Reinaldo Dennes, who pleaded \"Don't let me suffer like this\" during a lethal injection that followed a struggle to find a vein. His spiritual adviser described severe distress in the Huntsville death chamber.",
+   "date": "2026-11-21",
+   "publisher": "PBS NewsHour",
+   "title": "Texas says an execution went as planned. A witness says screams showed 'tremendous distress'",
+   "url": "https://www.pbs.org/newshour/nation/texas-says-an-execution-went-as-planned-a-witness-says-screams-showed-tremendous-distress",
+   "published": "2026-11-21T16:46:44Z",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
   {
    "h": "Ohio wants $1M back after GMO salmon plan collapses",
    "b": "AquaBounty's genetically engineered fish farm in Pioneer, Ohio, promised 112 jobs before the plan imploded; one agency now wants its $1 million back.",
@@ -166,13 +170,55 @@
  ],
  "international": [
   {
+   "h": "Mexico arrests alleged cartel boss 'Chapo Isidro'",
+   "b": "Mexican special forces arrested Fausto Isidro Meza-Flores, on the FBI's Ten Most Wanted list, along with two other men in Guasave, Sinaloa, on Friday night, Mexico's defence ministry said.",
+   "date": "2026-11-21",
+   "place": "Guasave, Mexico",
+   "tz": "America/Mazatlan",
+   "publisher": "Al Jazeera",
+   "title": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
+   "url": "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
+   "h": "India's opposition youth wing protests at Meta offices",
+   "b": "The Indian Youth Congress protested outside Meta offices in Hyderabad, Mumbai and Gurugram, demanding the company restore its leaders' Instagram accounts. The protests led to clashes with police and security guards.",
+   "date": "2026-11-21",
+   "place": "Mumbai, India",
+   "tz": "Asia/Kolkata",
+   "publisher": "Al Jazeera",
+   "title": "India’s opposition stages protests against Meta over account removals",
+   "url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
+   "h": "Crew evacuates Russian ship hit by drones off Finland",
+   "b": "The crew of the Russian cargo ship Sparta II, struck by drones likely launched by Ukraine in the Gulf of Finland, was being evacuated into life rafts. Finnish authorities say the ship has links to Russia's armed forces.",
+   "date": "2026-11-21",
+   "place": "Gulf of Finland",
+   "tz": "Europe/Helsinki",
+   "publisher": "Al Jazeera",
+   "title": "Russian crew evacuating ship hit by drones off coast of Finland",
+   "url": "https://www.aljazeera.com/news/2026/11/21/russia-says-kaliningrad-bound-ship-struck-by-drones-in-gulf-of-finland",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
+   "h": "Israeli strike on food aid van kills three in Gaza City",
+   "b": "An Israeli strike on a van carrying food aid west of Gaza City killed three people, part of attacks that killed at least four Palestinians in Gaza despite last year's ceasefire, as winter flooding deepens the crisis.",
+   "date": "2026-11-21",
+   "place": "Gaza City",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Israeli strike on vehicle distributing food aid in Gaza kills three",
+   "url": "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
    "h": "Toxic liquor kills at least 11 in India's Manipur",
    "b": "At least 11 people died after drinking suspected spurious alcohol in northeast India's Manipur state, and more than 180 had been admitted to hospitals as of Friday. Authorities have opened an investigation.",
    "date": "2026-11-21",
    "place": "Manipur, India",
    "tz": "Asia/Kolkata",
-   "publisher": "Al Jazeera",
-   "title": "Illicit alcohol kills 11, poisons 180 in northeast India’s Manipur state",
    "url": "https://www.aljazeera.com/news/2026/11/21/suspected-toxic-alcohol-kills-at-least-11-people-in-northeast-india",
    "gathered": "2026-11-21T11:12:39Z"
   },
@@ -182,8 +228,6 @@
    "date": "2026-11-21",
    "place": "Geneva, Switzerland",
    "tz": "Europe/Zurich",
-   "publisher": "Al Jazeera",
-   "title": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
    "url": "https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit",
    "gathered": "2026-11-21T11:12:39Z"
   },
@@ -193,8 +237,6 @@
    "date": "2026-11-21",
    "place": "Basra, Iraq",
    "tz": "Asia/Baghdad",
-   "publisher": "Al Jazeera",
-   "title": "At least four killed, 35 injured in fire at power station in Iraq’s Basra",
    "url": "https://www.aljazeera.com/news/2026/11/21/at-least-two-people-killed-as-fire-engulfs-power-station-in-southern-iraq",
    "gathered": "2026-11-21T08:37:16Z"
   },
@@ -246,6 +288,16 @@
  ],
  "business": [
   {
+   "h": "Bessent says no new limits needed on Nvidia chip sales to China",
+   "b": "Treasury Secretary Scott Bessent said no further restrictions on sales of older Nvidia chips to China are needed, after the administration moved this week to block China's remote access to the latest semiconductors.",
+   "date": "2026-11-21",
+   "publisher": "PBS NewsHour",
+   "title": "Bessent says no further restrictions are needed for Nvidia chip exports to China",
+   "url": "https://www.pbs.org/newshour/politics/bessent-says-no-further-restrictions-are-needed-for-nvidia-chip-exports-to-china",
+   "published": "2026-11-21T16:28:20Z",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
    "h": "Critics say Anthropic's IPO will test its safety pledge",
    "b": "Anthropic began trading on the Nasdaq this week, and critics say its commitment to put safety ahead of commercial success will now be tested as a public company.",
    "date": "2026-11-21",
@@ -267,8 +319,6 @@
    "h": "Trump urges Nvidia to bring back Jensen Huang",
    "b": "Trump said he would welcome Huang's return as CEO, more than a week after Nvidia's founder stepped down over a scandal involving extramarital affairs.",
    "date": "2026-11-20",
-   "publisher": "Al Jazeera",
-   "title": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
    "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
    "gathered": "2026-11-21T02:15:44Z"
   },
@@ -307,6 +357,15 @@
  ],
  "science": [
   {
+   "h": "Anthropic mathematician claims AI-assisted Riemann proof",
+   "b": "Levent Alpoge, a mathematician at Anthropic, wrote that he believes he has discovered a proof of the Riemann Hypothesis working with Claude. The claim has yet to be verified.",
+   "date": "2026-11-21",
+   "publisher": "Al Jazeera",
+   "title": "Riemann hypothesis: Has the world’s most famous maths problem been cracked?",
+   "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
    "h": "How much should climate plans lean on carbon capture?",
    "b": "ProPublica spoke with three leading climate modelers about the assumptions behind models that count on capturing and storing carbon, a technology ProPublica calls unproven.",
    "date": "2026-11-21",
@@ -319,6 +378,15 @@
   }
  ],
  "sports": [
+  {
+   "h": "Prochazka meets Stirling in UFC main event in Qatar",
+   "b": "Former light heavyweight champion Jiri Prochazka faces rising star Navajo Stirling in Saturday's UFC Fight Night main event in Qatar. Stirling is seeking his fourth win of 2026.",
+   "date": "2026-11-21",
+   "publisher": "CBS Sports",
+   "title": "UFC Fight Night start time for Jiri Prochazka vs. Navajo Stirling: Where to watch live on Paramount+",
+   "url": "https://www.cbssports.com/ufc/news/where-watch-ufc-fight-night-qatar-start-time-live-stream/",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
   {
    "h": "No. 8 Houston beats No. 1 Florida",
    "b": "Dedan Thomas Jr. scored 30 as Houston beat top-ranked Florida in the Players Era 8 semifinals.",
@@ -360,6 +428,36 @@
   }
  ],
  "local": [
+  {
+   "h": "National Grid gas rate freeze approved, but costs may follow",
+   "b": "State regulators approved a yearlong rate freeze for nearly 2 million National Grid gas customers in the city and on Long Island, but customers will still owe for capital spending during the freeze, advocates warn.",
+   "date": "2026-11-21",
+   "publisher": "Gothamist",
+   "title": "New York approves National Grid rate freeze, but customers could see higher bills soon",
+   "url": "https://gothamist.com/news/new-york-approves-national-grid-rate-freeze-but-customers-could-see-higher-bills-soon",
+   "published": "2026-11-21T13:00:50Z",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
+   "h": "Judge keeps man shot by ICE in the Bronx in custody",
+   "b": "A federal judge ruled Oscar Belgal, wounded when federal agents fired on his SUV in the Bronx in October, will stay in custody while the administration pursues his deportation.",
+   "date": "2026-11-21",
+   "publisher": "Gothamist",
+   "title": "Federal judge in NY denies release of man shot by ICE in the Bronx",
+   "url": "https://gothamist.com/news/federal-judge-denies-release-of-man-shot-by-ice-in-the-bronx",
+   "published": "2026-11-21T15:24:00Z",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
+  {
+   "h": "Rain returns Sunday, and another storm may hit Thanksgiving",
+   "b": "Showers arrive Sunday afternoon and may linger into the Monday commute, with an inch or two of rain expected across the city. Forecasters are already watching a second storm near Thanksgiving.",
+   "date": "2026-11-21",
+   "publisher": "Gothamist",
+   "title": "Rain once again coming for NYC's idyllic fall — and maybe Thanksgiving, too",
+   "url": "https://gothamist.com/news/rain-one-again-coming-for-nycs-idyllic-fall-and-maybe-thanksgiving-too",
+   "published": "2026-11-21T16:23:00Z",
+   "gathered": "2026-11-21T16:54:03Z"
+  },
   {
    "h": "Princeton PhD student detained by ICE",
    "b": "Eva Yi Xie was detained at Reagan National Airport on her way home from a neuroscience conference, the university said.",
@@ -453,24 +551,24 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
+   "temp": 62,
    "cond": "Fair",
-   "wind": "N 3 mph",
-   "humidity": 64,
-   "obs": "21 Nov 05:51 am EST"
+   "wind": "Calm",
+   "humidity": 44,
+   "obs": "21 Nov 11:51 am EST"
   },
   "periods": [
    {
     "name": "Today",
     "kind": "high",
-    "temp": 63,
-    "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming south in the afternoon. "
+    "temp": 61,
+    "text": "Sunny, with a high near 61. Northeast wind 6 to 8 mph becoming south in the afternoon. "
    },
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 53,
-    "text": "Increasing clouds, with a low around 53. Light and variable wind becoming northeast around 6 mph after midnight. "
+    "temp": 52,
+    "text": "Increasing clouds, with a low around 52. East wind around 6 mph becoming light and variable. "
    },
    {
     "name": "Sunday",

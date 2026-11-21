@@ -31,42 +31,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Overcast",
-    "wind": "E 18 mph",
-    "humidity": 41,
-    "obs": "21 Nov 05:52 am EST"
+    "temp": 56,
+    "cond": "Light Rain",
+    "wind": "NE 15 mph",
+    "humidity": 77,
+    "obs": "21 Nov 11:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 62,
-     "text": "Showers likely, mainly after 2pm.  Cloudy, with a high near 62. Northeast wind around 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "A 50 percent chance of showers.  Cloudy, with a high near 62. Northeast wind 10 to 15 mph, with gusts as high as 25 mph.  New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 53,
-     "text": "A 50 percent chance of showers, mainly after 1am.  Cloudy, with a low around 53. Northeast wind 5 to 15 mph, with gusts as high as 25 mph.  New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "A 30 percent chance of showers, mainly before 2am.  Mostly cloudy, with a low around 53. Northeast wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 68,
-     "text": "A 30 percent chance of showers, mainly between 11am and noon.  Mostly cloudy, with a high near 68. North wind around 5 mph becoming northwest in the afternoon. "
+     "text": "A slight chance of showers between 7am and 8am.  Partly sunny, with a high near 68. Northeast wind around 5 mph becoming northwest in the afternoon.  Chance of precipitation is 20%."
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 53,
-     "text": "Mostly clear, with a low around 53. Calm wind becoming west around 5 mph. "
+     "text": "Mostly clear, with a low around 53. Calm wind becoming northwest around 5 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 72,
-     "text": "Mostly sunny, with a high near 72. Northwest wind 5 to 10 mph. "
+     "text": "Partly sunny, with a high near 72. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday Night",
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": [
    {
@@ -157,18 +157,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 55,
     "cond": "A Few Clouds",
-    "wind": "NW 6 mph",
-    "humidity": 71,
-    "obs": "21 Nov 05:54 am EST"
+    "wind": "SE 3 mph",
+    "humidity": 57,
+    "obs": "21 Nov 10:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Sunny, with a high near 63. Calm wind becoming south 5 to 8 mph in the afternoon. "
+     "text": "Sunny, with a high near 63. Light and variable wind becoming south 5 to 8 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -214,7 +214,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -225,6 +225,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Could a redevelopment authority fix Cook County's vacant lots?",
+    "b": "More than 100 Chicago leaders met in workshops on repurposing an estimated 50,000 vacant lots across Cook County, floating ideas from community farms to housing and a proposed redevelopment authority.",
+    "date": "2026-11-21",
+    "publisher": "WBEZ",
+    "title": "Could a redevelopment authority solve Cook County's vacant lot problem?",
+    "url": "https://www.wbez.org/real-estate-development/2026/11/21/redevelopment-authority-cook-county-vacant-lot-problem",
+    "published": "2026-11-21T12:01:00Z",
+    "updated": "2026-11-21T12:01:01Z",
+    "gathered": "2026-11-21T16:54:03Z"
+   },
    {
     "h": "Illinois SNAP enrollment at lowest since 2009",
     "b": "Participation keeps falling, even among children, after the federal overhaul, state data show.",
@@ -240,11 +251,7 @@
     "h": "Christkindlmarket opens for 30th year",
     "b": "The German-inspired market opens Nov. 20 in Daley Plaza, with Wrigleyville and Aurora markets opening the same day.",
     "date": "2026-11-20",
-    "publisher": "WBEZ",
-    "title": "Christkindlmarket to celebrate 30 years of shopping, Glühwein and tradition at Daley Plaza",
     "url": "https://www.wbez.org/things-to-do/2026/11/20/christkindlmarket-daley-plaza-wrigleyville-aurora",
-    "published": "2026-11-20T11:35:00Z",
-    "updated": "2026-11-20T11:35:04Z",
     "gathered": "2026-11-20T14:15:03Z"
    },
    {
@@ -264,11 +271,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 53,
-    "cond": "Fair",
-    "wind": "S 8 mph",
-    "humidity": 66,
-    "obs": "21 Nov 04:53 am CST"
+    "temp": 64,
+    "cond": "A Few Clouds",
+    "wind": "S 12 mph",
+    "humidity": 35,
+    "obs": "21 Nov 10:53 am CST"
    },
    "periods": [
     {
@@ -321,7 +328,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -365,19 +372,19 @@
    "now": {
     "temp": 38,
     "cond": "Mostly Cloudy",
-    "wind": "SE 8 mph",
-    "humidity": 38,
-    "obs": "21 Nov 02:58 am MST"
+    "wind": "W 3 mph",
+    "humidity": 44,
+    "obs": "21 Nov 08:58 am MST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 47,
-     "text": "A chance of snow, possibly mixing with rain after 11am, then gradually ending.  Mostly cloudy, then gradually becoming sunny, with a high near 47. Calm wind becoming east around 6 mph.  Chance of precipitation is 30%. Little or no snow accumulation expected. "
+     "text": "A chance of snow showers, mixing with rain after 11am, then gradually ending.  Mostly cloudy, then gradually becoming sunny, with a high near 47. Light and variable wind becoming east around 6 mph.  Chance of precipitation is 40%. Little or no snow accumulation expected. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 22,
      "text": "Mostly clear, with a low around 22. Light and variable wind. "
@@ -398,7 +405,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 45,
-     "text": "Partly sunny, with a high near 45."
+     "text": "Partly sunny, with a high near 45. Calm wind becoming north northeast around 6 mph in the afternoon. "
     },
     {
      "name": "Monday Night",
@@ -420,7 +427,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -483,7 +490,6 @@
     "title": "CSU faculty could soon go on strike",
     "url": "https://laist.com/news/education/csu-faculty-could-soon-go-on-strike",
     "published": "2026-11-20T22:58:10Z",
-    "updated": "2026-11-21T00:51:51Z",
     "gathered": "2026-11-21T00:54:55Z"
    },
    {
@@ -515,11 +521,7 @@
     "h": "4.2 quake near Commerce rattles LA",
     "b": "The overnight quake was felt as far as Lancaster and Poway; nearly 13,000 people reported shaking to the USGS.",
     "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "A quake with a 4.2 magnitude struck near Commerce, rattling LA overnight",
     "url": "https://laist.com/news/climate-environment/earthquake-commerce-4-2",
-    "published": "2026-11-20T15:21:13Z",
-    "updated": "2026-11-20T15:33:37Z",
     "gathered": "2026-11-20T18:43:48Z"
    },
    {
@@ -556,20 +558,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "wind": "NW 6 mph",
-    "humidity": 61,
-    "obs": "21 Nov 03:10 AM PST"
+    "temp": 57,
+    "wind": "SE 2 mph",
+    "humidity": 46,
+    "obs": "21 Nov 08:40 AM PST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 67,
      "text": "Sunny, with a high near 67. North wind around 5 mph becoming calm. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 50,
      "text": "Partly cloudy, with a low around 50. West northwest wind around 5 mph becoming north after midnight. "
@@ -590,7 +592,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69."
+     "text": "Sunny, with a high near 69. Calm wind becoming east northeast around 5 mph. "
     },
     {
      "name": "Monday Night",
@@ -612,9 +614,32 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "los-angeles-ca",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Arcadia restorer revives Bob Hope's nativity set",
+    "b": "Sheila Lehman of La Porte Vintage in Arcadia, who specializes in restoring religious plaster statues, has been restoring a nativity set owned by the late Bob Hope.",
+    "date": "2026-11-21",
+    "publisher": "LAist",
+    "title": "An Arcadia restorer is reviving Bob Hope’s nativity set — and looking for its missing angel",
+    "url": "https://laist.com/news/los-angeles-activities/bob-hope-nativity-restoration",
+    "published": "2026-11-21T13:00:00Z",
+    "updated": "2026-11-21T15:36:45Z",
+    "gathered": "2026-11-21T16:54:03Z"
+   },
+   {
+    "h": "Teen music nonprofit opens a permanent venue in Pasadena",
+    "b": "Backyard Party, which spent the past year moving from venue to venue staging shows for young bands, opened its permanent home in a northwest Pasadena warehouse.",
+    "date": "2026-11-21",
+    "publisher": "LAist",
+    "title": "Born after the Eaton Fire, Backyard Party opens a permanent music venue for teens in Pasadena",
+    "url": "https://laist.com/news/los-angeles-activities/backyard-party-pasadena-permanent-home-2026",
+    "published": "2026-11-21T13:00:00Z",
+    "updated": "2026-11-21T14:59:47Z",
+    "gathered": "2026-11-21T16:54:03Z"
+   }
+  ]
  },
  {
   "location": {
@@ -623,6 +648,36 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "National Grid gas rate freeze approved, but costs may follow",
+    "b": "State regulators approved a yearlong rate freeze for nearly 2 million National Grid gas customers in the city and on Long Island, but customers will still owe for capital spending during the freeze, advocates warn.",
+    "date": "2026-11-21",
+    "publisher": "Gothamist",
+    "title": "New York approves National Grid rate freeze, but customers could see higher bills soon",
+    "url": "https://gothamist.com/news/new-york-approves-national-grid-rate-freeze-but-customers-could-see-higher-bills-soon",
+    "published": "2026-11-21T13:00:50Z",
+    "gathered": "2026-11-21T16:54:03Z"
+   },
+   {
+    "h": "Judge keeps man shot by ICE in the Bronx in custody",
+    "b": "A federal judge ruled Oscar Belgal, wounded when federal agents fired on his SUV in the Bronx in October, will stay in custody while the administration pursues his deportation.",
+    "date": "2026-11-21",
+    "publisher": "Gothamist",
+    "title": "Federal judge in NY denies release of man shot by ICE in the Bronx",
+    "url": "https://gothamist.com/news/federal-judge-denies-release-of-man-shot-by-ice-in-the-bronx",
+    "published": "2026-11-21T15:24:00Z",
+    "gathered": "2026-11-21T16:54:03Z"
+   },
+   {
+    "h": "Rain returns Sunday, and another storm may hit Thanksgiving",
+    "b": "Showers arrive Sunday afternoon and may linger into the Monday commute, with an inch or two of rain expected across the city. Forecasters are already watching a second storm near Thanksgiving.",
+    "date": "2026-11-21",
+    "publisher": "Gothamist",
+    "title": "Rain once again coming for NYC's idyllic fall — and maybe Thanksgiving, too",
+    "url": "https://gothamist.com/news/rain-one-again-coming-for-nycs-idyllic-fall-and-maybe-thanksgiving-too",
+    "published": "2026-11-21T16:23:00Z",
+    "gathered": "2026-11-21T16:54:03Z"
+   },
    {
     "h": "Princeton PhD student detained by ICE",
     "b": "Eva Yi Xie was detained at Reagan National Airport on her way home from a neuroscience conference, the university said.",
@@ -716,24 +771,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 62,
     "cond": "Fair",
-    "wind": "N 3 mph",
-    "humidity": 64,
-    "obs": "21 Nov 05:51 am EST"
+    "wind": "Calm",
+    "humidity": 44,
+    "obs": "21 Nov 11:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 63,
-     "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming south in the afternoon. "
+     "temp": 61,
+     "text": "Sunny, with a high near 61. Northeast wind 6 to 8 mph becoming south in the afternoon. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 53,
-     "text": "Increasing clouds, with a low around 53. Light and variable wind becoming northeast around 6 mph after midnight. "
+     "temp": 52,
+     "text": "Increasing clouds, with a low around 52. East wind around 6 mph becoming light and variable. "
     },
     {
      "name": "Sunday",
@@ -773,7 +828,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -820,7 +875,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "goodnews": []
  },
  {
@@ -845,31 +900,27 @@
     "h": "Council adopts Mayor Wilson's first budget",
     "b": "The council voted 7-2, reversing proposed firefighter cuts and adding money for trafficking survivors and affordable housing.",
     "date": "2026-11-20",
-    "publisher": "KUOW",
-    "title": "Seattle City Council approves budget despite concerns from mayor, some members",
     "url": "https://www.kuow.org/governing/2026-11-20/seattle-city-council-approves-budget-despite-concerns-from-mayor-some-members",
-    "published": "2026-11-21T00:21:37Z",
-    "updated": "2026-11-21T01:08:20Z",
     "gathered": "2026-11-21T00:54:55Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 34,
-    "cond": "Fog",
+    "temp": 36,
+    "cond": "Mist",
     "wind": "Calm",
-    "humidity": 100,
-    "obs": "21 Nov 02:53 AM PST"
+    "humidity": 93,
+    "obs": "21 Nov 08:35 AM PST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 50,
-     "text": "A 30 percent chance of rain, mainly after 5pm.  Patchy fog before 7am.  Otherwise, increasing clouds, with a high near 50. Light and variable wind. "
+     "text": "A 30 percent chance of rain, mainly after 5pm.  Increasing clouds, with a high near 50. Light and variable wind. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 41,
      "text": "A chance of rain before 2am, then a chance of rain after 3am.  Cloudy, with a low around 41. Light and variable wind.  Chance of precipitation is 30%."
@@ -890,13 +941,13 @@
      "name": "Monday",
      "kind": "high",
      "temp": 51,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 51."
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 51. Light southeast wind. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Rain likely, mainly after 10pm.  Mostly cloudy, with a low around 43. Chance of precipitation is 70%."
+     "text": "Rain likely, mainly after 10pm.  Mostly cloudy, with a low around 43. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     }
    ]
   },
@@ -912,7 +963,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T14:12:00Z",
+  "updatedAt": "2026-11-21T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
