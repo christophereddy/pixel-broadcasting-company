@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T08:11:00Z",
+ "updatedAt": "2026-11-21T11:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,18 @@
  },
  "world": [
   {
+   "h": "Honduras court convicts four, including three Americans",
+   "b": "A court in Honduras convicted four people, three of them US citizens, of criminal association in connection with the 2022 disappearance of a woman whose whereabouts are still unknown.",
+   "date": "2026-11-21",
+   "publisher": "Al Jazeera",
+   "title": "Three US citizens among 4 convicted in Honduras over sex-trafficking case",
+   "url": "https://www.aljazeera.com/news/2026/11/21/three-us-citizens-among-4-convicted-in-honduras-over-sex-trafficking-case",
+   "gathered": "2026-11-21T08:37:16Z"
+  },
+  {
    "h": "Houthis fire three missiles at Riyadh",
    "b": "The coalition said it intercepted the ballistic missiles Saturday, two days after a Houthi strike damaged the Public Investment Fund tower, Riyadh's tallest skyscraper.",
    "date": "2026-11-21",
-   "publisher": "Al Jazeera",
-   "title": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh",
    "url": "https://www.aljazeera.com/news/2026/11/21/saudi-led-coalition-intercepts-three-houthi-missiles-headed-for-riyadh",
    "gathered": "2026-11-21T05:12:00Z"
   },
@@ -29,7 +36,7 @@
    "b": "The coalition says it intercepted three Houthi missiles headed for the Saudi capital.",
    "date": "2026-11-20",
    "publisher": "Al Jazeera",
-   "title": "Saudi-led coalition repels three Houthi missiles; IRGC says downed US drone",
+   "title": "2 tankers hit by ‘unknown projectiles’ off Oman coast: UK maritime agency",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
    "gathered": "2026-11-21T00:54:55Z"
   },
@@ -143,8 +150,6 @@
    "h": "Senate passes bill to speed energy project approvals",
    "b": "The bipartisan bill would speed approvals for power plants and transmission lines as AI growth drives electricity demand.",
    "date": "2026-11-20",
-   "publisher": "Al Jazeera",
-   "title": "US Senate passes bill to speed up energy project approvals",
    "url": "https://www.aljazeera.com/news/2026/11/20/us-senate-passes-bill-to-speed-up-energy-project-approvals",
    "gathered": "2026-11-21T00:54:55Z"
   },
@@ -157,6 +162,17 @@
   }
  ],
  "international": [
+  {
+   "h": "Fire at power station near Basra kills at least four",
+   "b": "A fire broke out at the Hartha power station north of Basra in southern Iraq, killing at least four people and injuring 35, according to Iraqi state media.",
+   "date": "2026-11-21",
+   "place": "Basra, Iraq",
+   "tz": "Asia/Baghdad",
+   "publisher": "Al Jazeera",
+   "title": "At least four killed, 35 injured in fire at power station in Iraq’s Basra",
+   "url": "https://www.aljazeera.com/news/2026/11/21/at-least-two-people-killed-as-fire-engulfs-power-station-in-southern-iraq",
+   "gathered": "2026-11-21T08:37:16Z"
+  },
   {
    "h": "Iraqi forces enter Kataib Hezbollah stronghold",
    "b": "Security forces deployed to Jurf al-Sakhar, a stronghold of the Iran-aligned armed group, after a deal with it.",
@@ -382,48 +398,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 55,
+   "temp": 54,
    "cond": "Fair",
    "wind": "Calm",
    "humidity": 55,
-   "obs": "20 Nov 23:51 pm EST"
+   "obs": "21 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 48,
-    "text": "Mostly clear, with a low around 48. North wind around 6 mph. "
-   },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 63,
-    "text": "Partly sunny, with a high near 63. North wind 5 to 7 mph becoming south in the afternoon. "
+    "text": "Partly sunny, with a high near 63. North wind around 6 mph becoming south in the afternoon. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
     "temp": 53,
-    "text": "Mostly cloudy, with a low around 53. Light and variable wind becoming northeast around 6 mph after midnight. "
+    "text": "Increasing clouds, with a low around 53. Light and variable wind becoming northeast around 6 mph after midnight. "
    },
    {
     "name": "Sunday",
     "kind": "high",
     "temp": 63,
-    "text": "Rain likely, mainly after 3pm.  Cloudy, with a high near 63. Northeast wind 7 to 11 mph.  Chance of precipitation is 70%. New precipitation amounts between a quarter and half of an inch possible. "
+    "text": "Rain, mainly after 1pm.  High near 63. East wind 7 to 13 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 59,
-    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Low around 59. Northeast wind 15 to 18 mph becoming northwest after midnight.  Chance of precipitation is 90%. New precipitation amounts between three quarters and one inch possible. "
+    "temp": 62,
+    "text": "Rain, mainly before 1am.  Steady temperature around 62. East wind 11 to 14 mph becoming west after midnight.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 64,
-    "text": "Mostly cloudy, then gradually becoming sunny, with a high near 64."
+    "text": "Mostly sunny, with a high near 64."
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 46,
+    "text": "Mostly clear, with a low around 46."
    }
   ]
  },
