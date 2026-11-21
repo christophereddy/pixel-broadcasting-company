@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-21T02:12:00Z",
+ "updatedAt": "2026-11-21T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Denmark expels Russian diplomat over alleged plot",
+   "b": "Denmark expelled a Russian diplomat over an alleged plot to kill a Ukrainian rapper.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
+   "url": "https://www.aljazeera.com/news/2026/11/21/denmark-expels-russian-diplomat-over-alleged-plot-to-kill-ukrainian-rapper",
+   "gathered": "2026-11-21T02:15:44Z"
+  },
   {
    "h": "LIVE: Saudi-led coalition intercepts Houthi missiles aimed at Riyadh",
    "b": "The coalition says it intercepted three Houthi missiles headed for the Saudi capital.",
@@ -109,11 +118,7 @@
    "h": "Most Republicans doubt midterms were fair",
    "b": "Less than half of GOP voters called the midterms \"free and fair\" in new UC San Diego polling.",
    "date": "2026-11-20",
-   "publisher": "KUOW",
-   "title": "Trump initially accepted the midterm results, but most GOP voters doubt they were fair",
    "url": "https://www.kuow.org/npr-news/2026-11-20/trump-initially-accepted-the-midterm-results-but-most-gop-voters-doubt-they-were-fair",
-   "published": "2026-11-20T17:00:00Z",
-   "updated": "2026-11-20T17:53:45Z",
    "gathered": "2026-11-21T00:54:55Z"
   },
   {
@@ -192,6 +197,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Trump urges Nvidia to bring back Jensen Huang",
+   "b": "Trump said he would welcome Huang's return as CEO, more than a week after Nvidia's founder stepped down over a scandal involving extramarital affairs.",
+   "date": "2026-11-20",
+   "publisher": "Al Jazeera",
+   "title": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
+   "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+   "gathered": "2026-11-21T02:15:44Z"
+  },
   {
    "h": "Deutsche Bank leak reveals deals with Russian oligarchs",
    "b": "More than 15 million leaked emails and files from the early 2010s through 2021 are drawing fresh scrutiny to the bank.",
@@ -365,14 +379,14 @@
    "cond": "Fair",
    "wind": "Calm",
    "humidity": 44,
-   "obs": "20 Nov 19:51 pm EST"
+   "obs": "20 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 48,
-    "text": "Mostly clear, with a low around 48. Northwest wind 5 to 8 mph becoming north after midnight. "
+    "text": "Mostly clear, with a low around 48. North wind 5 to 7 mph. "
    },
    {
     "name": "Saturday",
