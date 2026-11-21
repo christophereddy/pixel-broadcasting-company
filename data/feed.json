@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-21T05:11:00Z",
+ "updatedAt": "2026-11-21T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Houthis fire three missiles at Riyadh",
+   "b": "The coalition said it intercepted the ballistic missiles Saturday, two days after a Houthi strike damaged the Public Investment Fund tower, Riyadh's tallest skyscraper.",
+   "date": "2026-11-21",
+   "publisher": "Al Jazeera",
+   "title": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh",
+   "url": "https://www.aljazeera.com/news/2026/11/21/saudi-led-coalition-intercepts-three-houthi-missiles-headed-for-riyadh",
+   "gathered": "2026-11-21T05:12:00Z"
+  },
   {
    "h": "Denmark expels Russian diplomat over alleged plot",
    "b": "Denmark expelled a Russian diplomat over an alleged plot to kill a Ukrainian rapper.",
@@ -20,7 +29,7 @@
    "b": "The coalition says it intercepted three Houthi missiles headed for the Saudi capital.",
    "date": "2026-11-20",
    "publisher": "Al Jazeera",
-   "title": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh",
+   "title": "Saudi-led coalition repels three Houthi missiles; IRGC says downed US drone",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
    "gathered": "2026-11-21T00:54:55Z"
   },
@@ -51,8 +60,6 @@
    "h": "Poland says Russia violated its airspace three times",
    "b": "Prime Minister Donald Tusk called the overnight incursions a \"provocation\" by Moscow.",
    "date": "2026-11-20",
-   "publisher": "Al Jazeera",
-   "title": "Poland condemns Russian ‘provocation’ after airspace violations",
    "url": "https://www.aljazeera.com/news/2026/11/20/poland-condemns-russian-provocation-after-airspace-violations",
    "gathered": "2026-11-20T18:43:48Z"
   },
@@ -375,18 +382,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 61,
+   "temp": 55,
    "cond": "Fair",
    "wind": "Calm",
-   "humidity": 44,
-   "obs": "20 Nov 20:51 pm EST"
+   "humidity": 55,
+   "obs": "20 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 48,
-    "text": "Mostly clear, with a low around 48. North wind 5 to 7 mph. "
+    "text": "Mostly clear, with a low around 48. North wind around 6 mph. "
    },
    {
     "name": "Saturday",
