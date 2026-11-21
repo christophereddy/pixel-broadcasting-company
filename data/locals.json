@@ -16,26 +16,15 @@
     "published": "2026-11-20T19:08:21Z",
     "updated": "2026-11-20T19:08:25Z",
     "gathered": "2026-11-20T20:12:19Z"
-   },
-   {
-    "h": "Thanksgiving dinner to cost 6% more",
-    "b": "The American Farm Bureau Federation says an average Thanksgiving feast for 10 will cost $58.63, up 6% from last year.",
-    "date": "2026-11-19",
-    "publisher": "WABE",
-    "title": "Americans will pay more for Thanksgiving dinners this year",
-    "url": "https://www.wabe.org/americans-will-pay-more-for-thanksgiving-dinners-this-year-farm-bureau-says/",
-    "published": "2026-11-19T20:00:42Z",
-    "updated": "2026-11-19T20:00:46Z",
-    "gathered": "2026-11-19T20:53:55Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 69,
+    "temp": 65,
     "cond": "Overcast",
-    "wind": "E 13 mph",
-    "humidity": 45,
-    "obs": "20 Nov 14:52 pm EST"
+    "wind": "E 14 mph, gusts to 22 mph",
+    "humidity": 43,
+    "obs": "20 Nov 19:52 pm EST"
    },
    "periods": [
     {
@@ -54,7 +43,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 54,
-     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 54. Northeast wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "A 50 percent chance of showers.  Mostly cloudy, with a low around 54. Northeast wind 5 to 10 mph, with gusts as high as 20 mph.  New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Sunday",
@@ -66,7 +55,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Mostly clear, with a low around 54."
+     "text": "Mostly clear, with a low around 54. Calm wind becoming west around 5 mph. "
     },
     {
      "name": "Monday",
@@ -88,9 +77,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "atlanta-ga",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Food Well Alliance grows Atlanta's local food",
+    "b": "The group is helping metro Atlanta build community gardens, urban farms and orchards.",
+    "date": "2026-11-20",
+    "publisher": "WABE",
+    "title": "Food Well Alliance helps metro Atlanta cities grow stronger local food systems",
+    "url": "https://www.wabe.org/food-well-alliance-helps-metro-atlanta-cities-grow-stronger-local-food-systems/",
+    "published": "2026-11-20T20:57:00Z",
+    "updated": "2026-11-20T21:51:15Z",
+    "gathered": "2026-11-21T00:54:55Z"
+   }
+  ]
  },
  {
   "location": {
@@ -130,6 +131,8 @@
     "h": "Fewer MBTA shutdowns planned for 2027",
     "b": "Weekday shutdowns should be fewer next year; this weekend, shuttle buses replace the Red Line between Broadway and North Quincy.",
     "date": "2026-11-20",
+    "publisher": "WBUR",
+    "title": "The MBTA is planning fewer shutdowns in 2027. Here's a peek at the schedule",
     "url": "https://www.wbur.org/news/2026/11/20/mbta-shutdown-2027-schedule-phil-eng",
     "gathered": "2026-11-20T14:15:03Z"
    },
@@ -139,87 +142,52 @@
     "date": "2026-11-20",
     "url": "https://www.wbur.org/news/2026/11/20/logan-airport-autonomous-wheelchairs-cleaners-boston",
     "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "Northeast household spending jumps nearly 10%",
-    "b": "Northeast households spent an average of $91,698 in 2025, almost 10% more than in 2024 and nearly $10,000 above the national average, BLS figures show.",
-    "date": "2026-11-19",
-    "url": "https://www.wbur.org/news/2026/11/19/household-spending-in-northeast-shot-up-in-one-year",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "SJC to hear Lindsay Clancy appeal",
-    "b": "Massachusetts' highest court will hear arguments on the motion to dismiss the murder case against Lindsay Clancy.",
-    "date": "2026-11-19",
-    "url": "https://www.wbur.org/news/2026/11/19/lindsay-clancy-appeal-massachusetts-supreme-judicial-court",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Healey puts $4M toward luring big events",
-    "b": "The Healey administration will put $4 million toward attracting major sporting and entertainment events to Massachusetts by the end of the decade.",
-    "date": "2026-11-19",
-    "url": "https://www.wbur.org/news/2026/11/19/massachusetts-major-event-grant-fund",
-    "gathered": "2026-11-19T14:15:26Z"
-   },
-   {
-    "h": "Boston College to retire Johnny Gaudreau's number",
-    "b": "BC is retiring the late Johnny Gaudreau's jersey number, and a sculpture of him and brother Matthew is going up in New Jersey.",
-    "date": "2026-11-19",
-    "url": "https://www.wbur.org/news/2026/11/19/bc-retire-johnny-gaudreau-number",
-    "gathered": "2026-11-19T11:59:24Z"
-   },
-   {
-    "h": "Tax cuts among possible 2028 ballot questions",
-    "b": "Proposals certified as ballot-eligible include cutting the income tax rate from 5% to 4%, ending legislative stipends and ending the gas tax.",
-    "date": "2026-11-19",
-    "url": "https://www.wbur.org/news/2026/11/19/2028-ballot-questions-early-look-initiatives",
-    "gathered": "2026-11-19T11:59:24Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 60,
     "cond": "Fair",
-    "wind": "W 13 mph",
-    "humidity": 29,
-    "obs": "20 Nov 14:54 pm EST"
+    "wind": "NW 8 mph",
+    "humidity": 38,
+    "obs": "20 Nov 19:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 45,
-     "text": "Clear, with a low around 45. North wind 5 to 7 mph. "
+     "temp": 41,
+     "text": "Clear, with a low around 41. West wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 61,
-     "text": "Sunny, with a high near 61. Northwest wind 5 to 9 mph becoming southeast in the afternoon. "
+     "text": "Sunny, with a high near 61. Calm wind becoming southeast around 5 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Increasing clouds, with a low around 46. South wind 3 to 8 mph. "
+     "temp": 43,
+     "text": "Mostly cloudy, with a low around 43. Light southwest wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 64,
-     "text": "A chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 64. South wind 6 to 8 mph becoming east in the afternoon.  Chance of precipitation is 30%."
+     "text": "A chance of rain, mainly after 5pm.  Cloudy, with a high near 64. Light and variable wind.  Chance of precipitation is 30%."
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Rain, mainly after 8pm.  Low around 54. Northeast wind around 6 mph.  Chance of precipitation is 100%."
+     "temp": 53,
+     "text": "Rain, with thunderstorms also possible after 10pm.  Low around 53. East wind 3 to 8 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Monday",
      "kind": "high",
-     "temp": 63,
-     "text": "Rain, mainly before 1pm.  High near 63. Northwest wind 7 to 10 mph, with gusts as high as 23 mph.  Chance of precipitation is 80%."
+     "temp": 64,
+     "text": "Rain likely, mainly before 8am.  Partly sunny, with a high near 64. West wind 8 to 10 mph.  Chance of precipitation is 60%."
     }
    ]
   },
@@ -235,7 +203,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -283,57 +251,19 @@
     "h": "Evanston moves to save modernist Chase bank",
     "b": "The Preservation Commission voted to pursue landmark status for a branch designed by a disciple of Mies van der Rohe, halting Chase's demolition plan for now.",
     "date": "2026-11-20",
-    "publisher": "WBEZ",
-    "title": "Evanston landmark officials look to save modernist Chase bank from demolition",
     "url": "https://www.wbez.org/architecture/2026/11/20/evanston-landmark-officials-save-modernist-chase-bank-demolition",
-    "published": "2026-11-20T11:05:00Z",
-    "updated": "2026-11-20T11:05:01Z",
     "gathered": "2026-11-20T11:14:39Z"
-   },
-   {
-    "h": "Michelin adds six Chicago restaurants",
-    "b": "New picks include All Well, Petite Edith and local soup favorite Lao Peng You.",
-    "date": "2026-11-19",
-    "url": "https://www.wbez.org/food-drink/2026/11/19/michelin-guide-chicago-restaurants-new-2026-all-well-petite-edith-lao-peng-you",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Illinois warns of lead dust from Army detonation",
-    "b": "Illinois' EPA chief warns a planned Defense Department detonation at an Iowa site could put Illinois residents across the Mississippi at risk.",
-    "date": "2026-11-19",
-    "url": "https://www.wbez.org/environment/2026/11/19/illinois-toxic-lead-dust-plume-army-site-explosion-iowa",
-    "gathered": "2026-11-19T20:53:55Z"
-   },
-   {
-    "h": "Transit agency launches safety reporting app",
-    "b": "The NITA Ride Safe app lets CTA, Metra and Pace riders report safety concerns by text and photo, with an option to stay anonymous.",
-    "date": "2026-11-19",
-    "url": "https://www.wbez.org/transportation/2026/11/19/nita-safe-ride-app-crime-reporting-cta-metra-pace",
-    "gathered": "2026-11-19T20:53:55Z"
-   },
-   {
-    "h": "Illinois e-scooter law takes effect Jan. 1",
-    "b": "Devices that can top 28 mph will count as motor vehicles, requiring a driver's license, insurance and registration.",
-    "date": "2026-11-19",
-    "url": "https://www.wbez.org/transportation/2026/11/19/an-e-scooter-law-in-illinois-takes-effect-jan-1-how-it-aims-to-make-riding-them-safer",
-    "gathered": "2026-11-19T17:16:08Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 62,
     "cond": "Mostly Cloudy",
-    "wind": "S 12 mph",
-    "humidity": 49,
-    "obs": "20 Nov 13:53 pm CST"
+    "wind": "S 9 mph",
+    "humidity": 56,
+    "obs": "20 Nov 18:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 68,
-     "text": "Sunny, with a high near 68. South wind around 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -362,7 +292,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 33,
-     "text": "Mostly clear, with a low around 33."
+     "text": "Mostly clear, with a low around 33. Breezy, with a northwest wind 15 to 20 mph. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 43,
+     "text": "Sunny, with a high near 43."
     }
    ]
   },
@@ -378,7 +314,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -402,66 +338,30 @@
   },
   "local": [
    {
-    "h": "Wayfair opens store at Northfield",
-    "b": "Wayfair's new two-floor store has opened at Northfield.",
-    "date": "2026-11-19",
+    "h": "Broncos team up with 'Umamusume' anime",
+    "b": "The team will collaborate with the anime when it plays the Miami Dolphins on Dec. 6.",
+    "date": "2026-11-20",
     "publisher": "Denverite",
-    "title": "Why go to Wayfair.com when you can go to Northfield?",
-    "url": "https://denverite.com/2026/11/19/wayfair-denver-northfield-opens/",
-    "published": "2026-11-19T22:20:38Z",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Denver Preschool Program plans expansion",
-    "b": "Twenty years after launching, the program plans to expand to support caregivers, infants and toddlers.",
-    "date": "2026-11-19",
-    "publisher": "Denverite",
-    "title": "20 years after launching, Denver Preschool Program has big plans",
-    "url": "https://denverite.com/2026/11/19/denver-preschool-program-expansion/",
-    "published": "2026-11-19T22:01:26Z",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Parking meter money diverted from bike projects",
-    "b": "Denver's parking meters are supposed to fund mobility, but millions have lately been redirected away from bike and pedestrian projects.",
-    "date": "2026-11-19",
-    "publisher": "Denverite",
-    "title": "Denver has been diverting millions away from bike and pedestrian projects",
-    "url": "https://denverite.com/2026/11/19/denver-bike-pedestrian-project-funding-diverted/",
-    "published": "2026-11-19T21:06:36Z",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Denver to close its first hotel homeless shelter",
-    "b": "The city will close its first hotel shelter, leaving residents asking where people will go.",
-    "date": "2026-11-19",
-    "publisher": "Denverite",
-    "title": "Denver will close its first hotel homeless shelter",
-    "url": "https://denverite.com/2026/11/19/denver-will-close-its-first-hotel-homeless-shelter/",
-    "published": "2026-11-19T21:48:13Z",
-    "gathered": "2026-11-19T23:15:48Z"
+    "title": "The Denver Broncos are embracing their bond with anime horse girls",
+    "url": "https://denverite.com/2026/11/20/denver-broncos-umamusume-collab/",
+    "published": "2026-11-20T20:37:13Z",
+    "gathered": "2026-11-21T00:54:55Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 65,
-    "cond": "A Few Clouds and Breezy",
-    "wind": "SW 25 mph, gusts to 36 mph",
-    "humidity": 11,
-    "obs": "20 Nov 12:58 pm MST"
+    "temp": 49,
+    "cond": "A Few Clouds",
+    "wind": "NE 6 mph",
+    "humidity": 27,
+    "obs": "20 Nov 16:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 64,
-     "text": "Mostly sunny, with a high near 64. Breezy, with a west southwest wind 15 to 18 mph, with gusts as high as 31 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 32,
-     "text": "Increasing clouds, with a low around 32. West wind 5 to 8 mph becoming calm  in the evening. "
+     "text": "Increasing clouds, with a low around 32. West wind 5 to 9 mph becoming calm  in the evening. Winds could gust as high as 16 mph. "
     },
     {
      "name": "Saturday",
@@ -485,7 +385,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 23,
-     "text": "Partly cloudy, with a low around 23."
+     "text": "Partly cloudy, with a low around 23. Light and variable wind. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 45,
+     "text": "Partly sunny, with a high near 45."
     }
    ]
   },
@@ -501,7 +407,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -524,25 +430,49 @@
   },
   "local": [
    {
+    "h": "Charter changes would curb LA mayor's power",
+    "b": "The proposals would let the City Council override executive directives and remove general managers with a two-thirds vote.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "Two proposed charter changes would roll back LA mayor's power",
+    "url": "https://laist.com/news/politics/two-proposed-charter-changes-would-roll-back-la-mayors-power",
+    "published": "2026-11-21T00:24:18Z",
+    "gathered": "2026-11-21T00:54:55Z"
+   },
+   {
+    "h": "CSU faculty vote to authorize strike",
+    "b": "About 97% of California Faculty Association members voted to authorize a strike.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "CSU faculty could soon go on strike",
+    "url": "https://laist.com/news/education/csu-faculty-could-soon-go-on-strike",
+    "published": "2026-11-20T22:58:10Z",
+    "updated": "2026-11-21T00:51:51Z",
+    "gathered": "2026-11-21T00:54:55Z"
+   },
+   {
+    "h": "Man convicted of starting Palisades Fire",
+    "b": "After a mistrial, jurors convicted Jonathan Rinderknecht, 30, of arson for the fire that killed 12 people.",
+    "date": "2026-11-20",
+    "publisher": "LAist",
+    "title": "After mistrial, jury convicts man of starting the deadly 2025 Palisades Fire",
+    "url": "https://laist.com/news/criminal-justice/after-mistrial-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire",
+    "published": "2026-11-20T23:31:19Z",
+    "updated": "2026-11-20T23:34:39Z",
+    "gathered": "2026-11-21T00:54:55Z"
+   },
+   {
     "h": "Video shows Long Beach police clearing way for ICE",
     "b": "Body camera footage shows officers clearing a road so ICE agents could leave after neighbors surrounded them in North Long Beach.",
     "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "Body camera footage shows how police responded when ICE called for help in North Long Beach",
     "url": "https://laist.com/news/politics/body-camera-footage-shows-how-police-responded-when-ice-called-for-help-in-north-long-beach",
-    "published": "2026-11-20T19:00:00Z",
-    "updated": "2026-11-20T19:00:00Z",
     "gathered": "2026-11-20T20:12:19Z"
    },
    {
     "h": "California elects most diverse Legislature yet",
     "b": "Women, Black, Latino and LGBTQ lawmakers will enter the statehouse in record numbers next year.",
     "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "California just elected its most diverse group of lawmakers yet",
     "url": "https://laist.com/news/politics/california-just-elected-its-most-diverse-group-of-lawmakers-yet",
-    "published": "2026-11-20T17:00:29Z",
-    "updated": "2026-11-20T17:00:29Z",
     "gathered": "2026-11-20T18:43:48Z"
    },
    {
@@ -564,18 +494,13 @@
     "title": "Why students might lose access to financial aid because of ‘low-quality’ online courses",
     "url": "https://laist.com/news/education/students-might-lose-access-to-financial-aid-because-of-low-quality-online-courses",
     "published": "2026-11-20T13:00:00Z",
-    "updated": "2026-11-20T13:00:00Z",
     "gathered": "2026-11-20T14:15:03Z"
    },
    {
     "h": "Over a dozen charged in $22M train heist ring",
     "b": "Prosecutors say the group stole more than $22 million in cargo, from shoes to power tools, from major retailers.",
     "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "Suspects charged in brazen train heist ring that netted $22 million in cargo from major retailers",
     "url": "https://laist.com/news/criminal-justice/suspects-charged-in-brazen-train-heist-ring-that-netted-22-million-in-cargo-from-major-retailers",
-    "published": "2026-11-20T13:00:00Z",
-    "updated": "2026-11-20T13:00:04Z",
     "gathered": "2026-11-20T14:15:03Z"
    },
    {
@@ -595,84 +520,16 @@
     "published": "2026-11-20T02:04:37Z",
     "updated": "2026-11-20T02:04:37Z",
     "gathered": "2026-11-20T02:29:52Z"
-   },
-   {
-    "h": "LBUSD finds no problem in Monroe Elementary rooms",
-    "b": "Long Beach Unified says two rounds of environmental testing found nothing concerning in a Monroe Elementary building where dozens of kids got sick.",
-    "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "LBUSD says it can’t find anything wrong with classrooms where dozens of kids got sick",
-    "url": "https://laist.com/news/education/long-beach-unified-school-district-environmental-testing-classrooms",
-    "published": "2026-11-19T21:00:00Z",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Prop 4 defeat is official",
-    "b": "California's ban on public funding for most state and local candidates stays in place after Proposition 4 failed.",
-    "date": "2026-11-19",
-    "url": "https://laist.com/news/politics/prop-4-fails-ending-latest-effort-to-allow-taxpayer-funding-of-california-political-campaigns",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Audit: schools miss kids' dental checks",
-    "b": "California schools are supposed to make sure young students see a dentist, but many don't, a state audit found.",
-    "date": "2026-11-19",
-    "publisher": "LAist",
-    "title": "California told schools to make sure kids see a dentist. Then the state didn’t follow up",
-    "url": "https://laist.com/news/education/california-told-schools-make-sure-kids-see-dentist-state-didnt-follow-up",
-    "published": "2026-11-19T19:03:20Z",
-    "gathered": "2026-11-19T20:53:55Z"
-   },
-   {
-    "h": "LAPD still stops Black residents at higher rates",
-    "b": "Efforts to curb racial profiling by the LAPD have fallen short despite a state law meant to address it.",
-    "date": "2026-11-19",
-    "url": "https://laist.com/news/politics/lapd-keeps-stopping-black-angelenos-at-higher-rates-often-without-a-ticket-or-arrest",
-    "gathered": "2026-11-19T20:53:55Z"
-   },
-   {
-    "h": "UC Regents let UCLA police buy more equipment",
-    "b": "The regents authorized UCLA police to buy additional military equipment, including drones.",
-    "date": "2026-11-19",
-    "url": "https://laist.com/news/education/ucla-police-weapon-purchase-authorization-40mm-drones-pepperballs",
-    "gathered": "2026-11-19T14:15:26Z"
-   },
-   {
-    "h": "Newsom proposes AI emergency shutdown power",
-    "b": "Gov. Newsom's AI recommendations would let state officials order an immediate emergency shutdown of AI systems they deem dangerous.",
-    "date": "2026-11-19",
-    "url": "https://laist.com/news/politics/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-anthropic-releases",
-    "gathered": "2026-11-19T14:15:26Z"
-   },
-   {
-    "h": "Port strike looms Saturday at LA and Long Beach",
-    "b": "A strike is looming Saturday at the ports of Long Beach and Los Angeles, threatening the complex's busiest year on record.",
-    "date": "2026-11-19",
-    "url": "https://laist.com/news/transportation/port-workers-strike-looks-more-likely-this-weekend-shippers-say",
-    "gathered": "2026-11-19T14:15:26Z"
-   },
-   {
-    "h": "Olympics security could cost nearly $3 billion",
-    "b": "Sheriff Robert Luna estimates Olympics security will cost nearly $3 billion, about three times the $1 billion in federal funds.",
-    "date": "2026-11-19",
-    "url": "https://laist.com/news/criminal-justice/la-county-sheriff-robert-luna-estimates-olympics-security-will-cost-nearly-3b",
-    "gathered": "2026-11-19T02:43:42Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 63,
-    "wind": "NW 3 mph",
-    "humidity": 41,
-    "obs": "20 Nov 12:10 PM PST"
+    "temp": 61,
+    "wind": "NW 1 mph",
+    "humidity": 48,
+    "obs": "20 Nov 04:40 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 64,
-     "text": "Sunny, with a high near 64. Northwest wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -702,6 +559,12 @@
      "kind": "low",
      "temp": 53,
      "text": "A chance of rain before 10pm, then a chance of showers after 10pm.  Mostly cloudy, with a low around 53. Chance of precipitation is 30%."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 68,
+     "text": "Sunny, with a high near 68."
     }
    ]
   },
@@ -717,7 +580,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -728,6 +591,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Princeton PhD student detained by ICE",
+    "b": "Eva Yi Xie was detained at Reagan National Airport on her way home from a neuroscience conference, the university said.",
+    "date": "2026-11-20",
+    "publisher": "Gothamist",
+    "title": "Princeton doctoral student from China detained by ICE in Washington, DC",
+    "url": "https://gothamist.com/news/princeton-phd-student-from-china-detained-by-ice-in-washington-dc",
+    "published": "2026-11-20T21:06:00Z",
+    "gathered": "2026-11-21T00:54:55Z"
+   },
+   {
+    "h": "Amazon warns NYC deliveries will cost more",
+    "b": "Amazon told app users deliveries would get pricier if lawmakers pass a bill forcing it to hire many contract drivers as employees.",
+    "date": "2026-11-20",
+    "publisher": "Gothamist",
+    "title": "'They’re blowing this': Amazon's push against NYC delivery worker bill may be backfiring",
+    "url": "https://gothamist.com/news/theyre-blowing-this-amazons-push-against-nyc-delivery-worker-bill-may-be-backfiring",
+    "published": "2026-11-20T21:38:00Z",
+    "gathered": "2026-11-21T00:54:55Z"
+   },
    {
     "h": "MTA chair skeptical of Amtrak's Penn Station plan",
     "b": "The MTA chair is skeptical of Amtrak's idea to unify Penn Station's railroads.",
@@ -765,8 +648,7 @@
     "publisher": "Gothamist",
     "title": "Mamdani lays out plan to close Rikers by 2032, after years of delays",
     "url": "https://gothamist.com/news/mamdani-lays-out-plan-to-close-rikers-by-2032-after-years-of-delays",
-    "published": "2026-11-20T10:00:00Z",
-    "updated": "2026-11-20T19:35:00Z",
+    "published": "2026-11-20T19:35:00Z",
     "gathered": "2026-11-20T10:19:05Z"
    },
    {
@@ -798,111 +680,22 @@
     "url": "https://gothamist.com/news/ny-to-pay-12m-to-a-woman-who-accused-ex-manhattan-corrections-officer-of-sexual-assault",
     "published": "2026-11-20T00:12:00Z",
     "gathered": "2026-11-20T02:29:52Z"
-   },
-   {
-    "h": "Duck farm fighting foie gras ban destroyed by fire",
-    "b": "Hudson Valley Foie Gras, which is challenging the city's foie gras ban in court, was destroyed in a fire early Thursday, Sullivan County officials said.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Hudson Valley duck farm suing over NYC foie gras ban destroyed in fire",
-    "url": "https://gothamist.com/news/hudson-valley-duck-farm-suing-over-nyc-foie-gras-ban-destroyed-in-fire",
-    "published": "2026-11-19T22:09:44Z",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "MTA bus video shows Brooklyn building collapse",
-    "b": "A bus camera captured the moment a three-story Flatbush building split and fell on Nov. 11, a collapse that killed eight people.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Watch: MTA bus video captures moment of deadly Brooklyn building collapse",
-    "url": "https://gothamist.com/news/watch-mta-bus-video-captures-moment-of-deadly-brooklyn-building-collapse",
-    "published": "2026-11-19T20:45:00Z",
-    "gathered": "2026-11-19T20:53:55Z"
-   },
-   {
-    "h": "Troubled builder picked for NJ ICE warehouse review",
-    "b": "A company run by developer James Grossmann was chosen to lead the court-ordered environmental review of a planned immigration detention facility in Roxbury, NJ.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Builder facing bankruptcy will lead environmental review of controversial NJ ICE warehouse",
-    "url": "https://gothamist.com/news/builder-facing-bankruptcy-will-lead-environmental-review-of-controversial-nj-ice-warehouse",
-    "published": "2026-11-20T16:38:00Z",
-    "gathered": "2026-11-19T17:16:08Z"
-   },
-   {
-    "h": "NY delays Medicaid work-rule cutoffs to July",
-    "b": "Gov. Hochul said New Yorkers won't lose Medicaid over new federal work rules until July, and the state will spend $213 million on enrollment help.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "NY to delay enforcement of new Medicaid rules, potentially keeping thousands insured",
-    "url": "https://gothamist.com/news/more-words-words-words",
-    "published": "2026-11-19T16:30:04Z",
-    "gathered": "2026-11-19T17:16:08Z"
-   },
-   {
-    "h": "Mamdani signs carriage horse ban",
-    "b": "Mayor Zohran Mamdani signed a bill banning the city's horse-drawn carriage industry, which must leave Central Park by June 2028.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Mayor Mamdani signs NYC's carriage horse ban after decades of animal rights activism",
-    "url": "https://gothamist.com/news/mayor-mamdani-signs-nycs-carriage-horse-ban-after-decades-of-animal-rights-activism",
-    "published": "2026-11-19T15:26:00Z",
-    "gathered": "2026-11-19T17:16:08Z"
-   },
-   {
-    "h": "Family sues city over wrong-way crash death",
-    "b": "The family of a 27-year-old woman killed by a wrong-way driver in the West Village last year filed a wrongful death lawsuit against the city and DOT.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Family of woman killed in wrong-way crash files wrongful death lawsuit against NYC, DOT",
-    "url": "https://gothamist.com/news/family-of-woman-killed-in-wrong-way-crash-files-wrongful-death-lawsuit-against-nyc-dot",
-    "published": "2026-11-19T13:33:00Z",
-    "gathered": "2026-11-19T14:15:26Z"
-   },
-   {
-    "h": "Bill would ban idling trailers at Hunts Point",
-    "b": "A new City Council bill would ban idling diesel refrigerated trailers at warehouses, targeting Hunts Point Produce Market in the South Bronx.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Polluting trailers at Hunts Point market would be banned under new NYC Council bill",
-    "url": "https://gothamist.com/news/polluting-trailers-at-hunts-point-market-would-be-banned-under-new-nyc-council-bill",
-    "published": "2026-11-19T13:00:52Z",
-    "gathered": "2026-11-19T14:15:26Z"
-   },
-   {
-    "h": "Council weighs closing sanctuary-law 'loophole'",
-    "b": "The City Council's immigration committee is considering bills to close a \"loophole\" in the city's sanctuary laws.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "NYC looks to close a 'loophole' in sanctuary protection for immigrants",
-    "url": "https://gothamist.com/news/nyc-looks-to-close-a-loophole-in-sanctuary-protection-for-immigrants",
-    "published": "2026-11-19T11:30:58Z",
-    "gathered": "2026-11-19T11:59:24Z"
-   },
-   {
-    "h": "Peanut the squirrel's owner pleads not guilty to fraud",
-    "b": "Mark Longo, 36, was arraigned on mortgage fraud and grand larceny charges and pleaded not guilty.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "Owner of Peanut, scandalously slain NY squirrel, charged with upstate mortgage fraud",
-    "url": "https://gothamist.com/news/owner-of-peanut-scandalously-slain-ny-squirrel-charged-with-upstate-mortgage-fraud",
-    "published": "2026-11-19T01:44:00Z",
-    "gathered": "2026-11-19T02:43:42Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 61,
     "cond": "Fair",
-    "humidity": 35,
-    "obs": "20 Nov 14:51 pm EST"
+    "wind": "Calm",
+    "humidity": 44,
+    "obs": "20 Nov 19:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Mostly clear, with a low around 48. West wind 5 to 8 mph becoming north after midnight. "
+     "text": "Mostly clear, with a low around 48. Northwest wind 5 to 8 mph becoming north after midnight. "
     },
     {
      "name": "Saturday",
@@ -948,20 +741,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Singles swap their exes' stuff in Central Park",
-    "b": "Dating network Park Bench hosted \"The Ex-Change,\" a mixer where people traded mementos from past relationships.",
-    "date": "2026-11-19",
-    "publisher": "Gothamist",
-    "title": "These singles gathered in Central Park to swap their exes’ stuff",
-    "url": "https://gothamist.com/arts-entertainment/these-singles-gathered-in-central-park-to-swap-their-exes-stuff",
-    "published": "2026-11-19T15:50:18Z",
-    "gathered": "2026-11-19T23:15:48Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -987,7 +769,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "goodnews": []
  },
  {
@@ -996,73 +778,51 @@
    "short": "SEA",
    "tz": "America/Los_Angeles"
   },
-  "local": [
-   {
-    "h": "Justice Montoya-Lewis leaves state Supreme Court",
-    "b": "Raquel Montoya-Lewis, the first Native American on Washington's Supreme Court, is departing after being appointed in 2020.",
-    "date": "2026-11-19",
-    "url": "https://www.kuow.org/governing/2026-11-19/after-series-of-firsts-raquel-montoya-lewis-departs-washington-state-supreme-court",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Council set for routine 1% property tax hike",
-    "b": "The Seattle City Council is expected to vote unanimously Friday to raise its property tax collections by 1%, an increase so standard it draws no debate.",
-    "date": "2026-11-19",
-    "url": "https://www.kuow.org/governing/2026-11-19/another-year-another-property-tax-increase-for-washington-cities",
-    "gathered": "2026-11-19T23:15:48Z"
-   },
-   {
-    "h": "Teachers union president on leave nearly a year",
-    "b": "Seattle teachers union president Ibi Idowu has been on paid leave for nearly a year amid an abuse investigation.",
-    "date": "2026-11-19",
-    "url": "https://www.kuow.org/education/2026-11-18/teachers-union-president-on-leave-one-year-after-being-accused-of-abusing-students",
-    "gathered": "2026-11-19T02:43:42Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 39,
-    "cond": "Overcast",
-    "wind": "SW 6 mph",
-    "humidity": 92,
-    "obs": "20 Nov 11:53 AM PST"
+    "temp": 43,
+    "cond": "Partly Cloudy",
+    "wind": "Calm",
+    "humidity": 81,
+    "obs": "20 Nov 04:35 PM PST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 48,
-     "text": "Partly sunny, with a high near 48. South wind 3 to 5 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 36,
-     "text": "Mostly cloudy, with a low around 36. Calm wind. "
+     "temp": 37,
+     "text": "Patchy fog between 3am and 5am.  Otherwise, mostly cloudy, with a low around 37. Calm wind. "
     },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 49,
-     "text": "A slight chance of rain before 1pm, then a chance of rain after 2pm.  Patchy fog before 9am.  Otherwise, cloudy, with a high near 49. Light and variable wind.  Chance of precipitation is 30%."
+     "text": "A 30 percent chance of rain, mainly after 4pm.  Patchy fog before 7am.  Otherwise, mostly cloudy, with a high near 49. Light and variable wind. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "Rain likely, mainly before 4am.  Mostly cloudy, with a low around 41. Calm wind becoming southeast around 5 mph in the evening.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 42,
+     "text": "A chance of rain before 10pm, then a chance of rain after 1am.  Cloudy, with a low around 42. Light east southeast wind.  Chance of precipitation is 50%."
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 50,
-     "text": "A 40 percent chance of rain before 10am.  Mostly cloudy, with a high near 50. Light south wind. "
+     "text": "A 50 percent chance of rain before 10am.  Cloudy, then gradually becoming mostly sunny, with a high near 50. Light south southeast wind. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
      "temp": 40,
-     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 40."
+     "text": "A 30 percent chance of rain after 4am.  Mostly cloudy, with a low around 40. Light east wind. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 51,
+     "text": "A 30 percent chance of rain, mainly after 4pm.  Mostly cloudy, with a high near 51."
     }
    ]
   },
@@ -1078,7 +838,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-20T23:12:00Z",
+  "updatedAt": "2026-11-21T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
