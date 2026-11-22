@@ -9,17 +9,17 @@
   "weather": {
    "now": {
     "temp": 55,
-    "cond": "Fog/Mist",
-    "wind": "NE 7 mph",
-    "humidity": 93,
-    "obs": "22 Nov 05:52 am EST"
+    "cond": "Light Drizzle Fog/Mist",
+    "wind": "NE 6 mph",
+    "humidity": 96,
+    "obs": "22 Nov 07:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 64,
-     "text": "A 30 percent chance of showers, mainly before 9am.  Mostly cloudy, with a high near 64. Northeast wind around 5 mph becoming north in the afternoon. Winds could gust as high as 15 mph. "
+     "text": "A 30 percent chance of showers, mainly before 9am.  Mostly cloudy, with a high near 64. Northeast wind around 5 mph. "
     },
     {
      "name": "Tonight",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,18 +78,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 49,
     "cond": "Patches Fog Fog/Mist",
-    "wind": "Calm",
+    "wind": "SE 3 mph",
     "humidity": 97,
-    "obs": "22 Nov 05:54 am EST"
+    "obs": "22 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Areas of fog before 7am.  Otherwise, cloudy, with a high near 63. Southeast wind 5 to 8 mph. "
+     "text": "Mostly cloudy, with a high near 63. Southeast wind 5 to 8 mph. "
     },
     {
      "name": "Tonight",
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -193,18 +193,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
+    "temp": 56,
     "cond": "Mostly Cloudy",
-    "wind": "S 12 mph",
-    "humidity": 72,
-    "obs": "22 Nov 04:53 am CST"
+    "wind": "SW 13 mph, gusts to 26 mph",
+    "humidity": 75,
+    "obs": "22 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Rain, mainly before 2pm.  Temperature rising to near 56 by 10am, then falling to around 47 during the remainder of the day. Breezy, with a south southwest wind 15 to 20 mph becoming northwest in the afternoon. Winds could gust as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain, mainly before 2pm.  Temperature rising to near 56 by 11am, then falling to around 44 during the remainder of the day. Breezy, with a southwest wind 15 to 20 mph becoming northwest in the afternoon. Winds could gust as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -228,7 +228,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 42,
-     "text": "A 20 percent chance of snow before noon.  Partly sunny, with a high near 42. North northwest wind 5 to 10 mph becoming northeast in the afternoon. "
+     "text": "A 20 percent chance of snow showers before noon.  Partly sunny, with a high near 42. North northwest wind 5 to 10 mph becoming northeast in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -250,9 +250,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
+   {
+    "h": "Christkindlmarket draws long lines for its 30th year",
+    "b": "Long lines wrapped around the entrance Saturday as the German-style outdoor holiday market returned for its 30th year.",
+    "date": "2026-11-22",
+    "publisher": "WBEZ",
+    "title": "Long lines and a bustling crowd at this year's Christkindlmarket",
+    "url": "https://www.wbez.org/things-to-do/2026/11/22/long-lines-crowds-christkindlmarket",
+    "published": "2026-11-22T14:03:15Z",
+    "updated": "2026-11-22T14:03:15Z",
+    "gathered": "2026-11-22T14:12:29Z"
+   },
    {
     "h": "Chicago lights its Christmas tree in Millennium Park",
     "b": "Crowds packed Millennium Park as the city's 50-foot tree flickered to life Friday at the 113th annual lighting, with Lalah Hathaway, Ballet Chicago's \"Nutcracker\" and Santa on hand.",
@@ -275,11 +286,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 26,
-    "cond": "Fair",
+    "temp": 20,
+    "cond": "A Few Clouds",
     "wind": "S 6 mph",
-    "humidity": 70,
-    "obs": "22 Nov 01:58 am MST"
+    "humidity": 74,
+    "obs": "22 Nov 06:58 am MST"
    },
    "periods": [
     {
@@ -332,7 +343,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -362,7 +373,6 @@
     "title": "Even Orange County couldn’t escape the ‘bluenami’ this election season",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-orange-county-bluenami-results",
     "published": "2026-11-21T01:13:51Z",
-    "updated": "2026-11-21T22:23:36Z",
     "gathered": "2026-11-21T02:15:44Z"
    },
    {
@@ -373,26 +383,25 @@
     "title": "In coastal Orange County, a flood of anxiety ahead of November king tides",
     "url": "https://laist.com/news/climate-environment/orange-county-coastal-flooding-king-tides",
     "published": "2026-11-21T01:50:44Z",
-    "updated": "2026-11-21T01:50:44Z",
     "gathered": "2026-11-21T02:15:44Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 52,
-    "wind": "Calm",
-    "humidity": 56,
-    "obs": "22 Nov 03:10 AM PST"
+    "temp": 48,
+    "wind": "NW 1 mph",
+    "humidity": 66,
+    "obs": "22 Nov 05:55 AM PST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Showers likely after 4pm.  Partly sunny, with a high near 68. North northeast wind around 5 mph becoming south in the morning.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Showers likely after 4pm.  Partly sunny, with a high near 68. Northeast wind around 5 mph becoming west in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 53,
      "text": "Showers likely, mainly before 10pm.  Mostly cloudy, then gradually becoming mostly clear, with a low around 53. Northwest wind around 5 mph becoming calm.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -413,7 +422,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 71,
-     "text": "Mostly sunny, with a high near 71."
+     "text": "Mostly sunny, with a high near 71. North wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -435,7 +444,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -533,18 +542,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 55,
     "cond": "Fog/Mist",
-    "wind": "NE 3 mph",
-    "humidity": 97,
-    "obs": "22 Nov 05:51 am EST"
+    "wind": "NE 5 mph",
+    "humidity": 96,
+    "obs": "22 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 62,
-     "text": "Rain likely, mainly after 1pm.  Areas of fog before 10am.  Otherwise, cloudy, with a high near 62. Northeast wind 7 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly after 1pm.  Patchy fog before 10am.  Otherwise, cloudy, with a high near 62. Northeast wind 7 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -590,9 +599,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Adopt a storm drain? Council bill would enlist New Yorkers",
+    "b": "A City Council bill would let residents volunteer to clear leaves and litter from storm drains on their block, building on a pilot in Greenpoint, Brooklyn, to help prevent flooding.",
+    "date": "2026-11-22",
+    "publisher": "Gothamist",
+    "title": "Adopt a storm drain? NYC proposal aims to enlist residents in flood prevention.",
+    "url": "https://gothamist.com/news/adopt-a-storm-drain-nyc-proposal-aims-to-enlist-residents-in-flood-prevention",
+    "published": "2026-11-22T13:00:49Z",
+    "gathered": "2026-11-22T14:12:29Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -628,7 +648,11 @@
     "h": "Inside France: police raids, private lives and protest slogans",
     "b": "This week's talking points in France ran from police raids at a political party's headquarters to the romantic lives of public figures and a museum appeal for the country's best protest slogans.",
     "date": "2026-11-21",
+    "publisher": "The Local France",
+    "title": "Inside France: Police raids, politicians' private lives and protest banners expo",
     "url": "https://www.thelocal.fr/20261121/inside-france-police-raids-politicians-private-lives-and-protest-banners-expo",
+    "published": "2026-11-21T10:51:26Z",
+    "updated": "2026-11-21T10:51:32Z",
     "gathered": "2026-11-21T11:12:39Z"
    }
   ],
@@ -648,7 +672,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "goodnews": []
  },
  {
@@ -679,21 +703,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 44,
     "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 65,
-    "obs": "22 Nov 02:55 AM PST"
+    "humidity": 67,
+    "obs": "22 Nov 05:53 AM PST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 48,
      "text": "A 40 percent chance of rain, mainly before 10am.  Mostly cloudy, with a high near 48. South southeast wind 3 to 5 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 43,
      "text": "A slight chance of rain before 11pm, then a chance of rain after midnight.  Mostly cloudy, with a steady temperature around 43. East southeast wind 3 to 6 mph.  Chance of precipitation is 40%."
@@ -714,13 +738,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 50,
-     "text": "Rain likely.  Cloudy, with a high near 50. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely.  Cloudy, with a high near 50. East southeast wind around 7 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Rain.  Low around 45. Chance of precipitation is 80%."
+     "text": "Rain.  Low around 45. Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -736,7 +760,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T14:12:00Z",
+  "updatedAt": "2026-11-22T17:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
