@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T05:11:00Z",
+ "updatedAt": "2026-11-22T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -109,6 +109,28 @@
  ],
  "international": [
   {
+   "h": "Displaced Palestinians protest Israeli strikes in Gaza",
+   "b": "Hundreds of displaced Palestinians living near the \"Yellow Line\" in Deir el-Balah demonstrated Saturday as Israeli forces continued air strikes and destroyed buildings beyond the ceasefire line.",
+   "date": "2026-11-22",
+   "place": "Deir el-Balah, Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
+   "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza",
+   "gathered": "2026-11-22T05:11:29Z"
+  },
+  {
+   "h": "Eleven killed in Sinaloa operation to capture cartel boss",
+   "b": "Mexico's Defence Ministry said seven alleged cartel gunmen and four soldiers were killed in the overnight operation in Sinaloa that captured Fausto Isidro Meza Flores.",
+   "date": "2026-11-22",
+   "place": "Sinaloa, Mexico",
+   "tz": "America/Mazatlan",
+   "publisher": "Al Jazeera",
+   "title": "Eleven killed in burst of violence during Mexican cartel leader’s capture",
+   "url": "https://www.aljazeera.com/news/2026/11/22/eleven-killed-in-burst-of-violence-during-mexican-cartel-leaders-capture",
+   "gathered": "2026-11-22T05:11:29Z"
+  },
+  {
    "h": "Bahrain says Iranian attack set industrial site on fire",
    "b": "Bahrain's Defence Force said its air defences intercepted a number of Iranian aerial attacks late Saturday, and one struck a civilian industrial facility, starting a fire. Preliminary reports pointed to no injuries.",
    "date": "2026-11-21",
@@ -134,8 +156,6 @@
    "date": "2026-11-21",
    "place": "Guasave, Mexico",
    "tz": "America/Mazatlan",
-   "publisher": "Al Jazeera",
-   "title": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
    "url": "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico",
    "gathered": "2026-11-21T16:54:03Z"
   },
@@ -165,8 +185,6 @@
    "date": "2026-11-21",
    "place": "Gaza City",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Israeli strike on vehicle distributing food aid in Gaza kills three",
    "url": "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza",
    "gathered": "2026-11-21T16:54:03Z"
   },
@@ -341,18 +359,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 56,
-   "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 77,
-   "obs": "21 Nov 20:51 pm EST"
+   "temp": 54,
+   "cond": "Fog/Mist",
+   "wind": "NE 5 mph",
+   "humidity": 90,
+   "obs": "21 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 53,
-    "text": "Mostly cloudy, with a low around 53. East wind around 6 mph becoming light and variable. "
+    "text": "Mostly cloudy, with a low around 53. Northeast wind 3 to 6 mph. "
    },
    {
     "name": "Sunday",
