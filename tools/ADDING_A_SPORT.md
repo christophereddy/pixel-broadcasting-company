@@ -40,6 +40,7 @@ Fonts, colors and anything on screen follow `tools/NEW_PAGE.md`. Run the checks.
 node tools/check_style.cjs    # fonts and colors come from shared/pbc.css
 node tools/check_layout.cjs   # News and Sports controls in the same place
 node tools/check_sports.cjs   # every sport has every part, in the same place, from its own source
+node tools/check_f1.cjs       # F1 only: the replay's running order and onboard caption
 ```
 
 Also replay a finished game and watch a live one (or a mocked live one) for each sport, including the existing ones, since most code is shared.

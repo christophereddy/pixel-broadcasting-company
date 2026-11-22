@@ -33,13 +33,20 @@ function f1Slot(){
   f1Chain = p.catch(() => {}); return p;
 }
 const f1Cache = new Map();
+// one finished session's data never changes, so it is kept for this browser tab (sessionStorage): switching sports
+// and coming back doesn't ask OpenF1 for the same race again
+const f1Kept = path => /[?&]session_key=\d/.test(path);
+function f1Stored(path){ try { const v = sessionStorage.getItem('pbc-f1:' + path); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
+function f1Store(path, v){ try { if (Array.isArray(v)) sessionStorage.setItem('pbc-f1:' + path, JSON.stringify(v)); } catch (e) {} }
 function f1Get(path, keep = true){
   if (keep && f1Cache.has(path)) return f1Cache.get(path);
   const p = (async () => {
+    const was = keep && f1Kept(path) ? f1Stored(path) : null; if (was) return was;
     for (let k = 0; ; k++) {
       await f1Slot();
-      try { return await getJSON(F1_API + path); }
-      catch (e) { if (k || !/429|abort/i.test(String(e.message || e.name))) throw e; await sleep(2500); }
+      try { const v = await getJSON(F1_API + path); if (keep && f1Kept(path)) f1Store(path, v); return v; }
+      // a 429 (too many requests) or a timeout is tried once more, two seconds later
+      catch (e) { if (k || !/429|abort/i.test(String(e.message || e.name))) throw e; await sleep(2000); }
     }
   })();
   if (keep) { f1Cache.set(path, p); p.catch(() => f1Cache.delete(path)); }
@@ -155,7 +162,9 @@ async function f1Roster(t){
 /* ---- a race replay: the cars, their laps, and what happened ---- */
 async function f1LoadRace(ev){
   const k = ev.id, q = p => f1Arr(f1Get(`/${p}?session_key=${k}`));
-  const [drivers, laps, pos, pits, rc, res] = await Promise.all([q('drivers'), q('laps'), q('position'), q('pit'), q('race_control'), q('session_result')]);
+  // one endpoint after another, not all at once, so the free tier's per-second limit isn't hit (f1Slot spaces them out)
+  const got = []; for (const p of ['drivers', 'laps', 'position', 'pit', 'race_control', 'session_result']) got.push(await q(p));
+  const [drivers, laps, pos, pits, rc, res] = got;
   if (!laps?.length || !drivers?.length) return null;
   const D = new Map();
   for (const d of drivers) D.set(d.driver_number, {num: d.driver_number, code: d.name_acronym || String(d.driver_number), name: f1Name(d), team: d.team_name || '',
@@ -172,9 +181,19 @@ async function f1LoadRace(ev){
     d.laps = L.filter(l => l.t0 != null);
   }
   for (const r of res || []) { const d = D.get(r.driver_number); if (d) d.res = r; }
+  // a retirement: the results give the laps it completed, so no lap after the one it stopped on counts
+  for (const d of D.values()) if (d.res?.dnf && d.res.number_of_laps != null && Number.isFinite(+d.res.number_of_laps)) d.laps = d.laps.filter(l => l.n <= +d.res.number_of_laps + 1);
   const cars = [...D.values()].filter(d => d.laps.length);
   if (!cars.length) return null;
   const t0 = Math.min(...cars.map(d => d.laps[0].n === 1 ? d.laps[0].t0 : Infinity).filter(Number.isFinite).concat(cars.map(d => d.laps[0].t0)));
+  // a car whose first lap has no start time runs lap 1 from the lights to the start of its lap 2
+  for (const d of cars) { const f = d.laps[0]; if (f.n === 2 && f.t0 > t0) d.laps.unshift({n: 1, t0, dur: (f.t0 - t0) / 1000, pitOut: false}); }
+  // how long the field took over each lap, for a car that stops part way round one
+  const lapMs = new Map();
+  for (const d of cars) d.laps.forEach((l, i) => {
+    const nx = d.laps[i + 1], ms = l.dur ? l.dur * 1000 : nx && nx.n === l.n + 1 ? nx.t0 - l.t0 : null;
+    if (ms > 0) { if (!lapMs.has(l.n)) lapMs.set(l.n, []); lapMs.get(l.n).push(ms); }
+  });
   const win = (res || []).find(r => r.position === 1);
   const total = win?.number_of_laps || Math.max(...cars.map(d => d.laps.at(-1).n));
   for (const d of cars) {
@@ -184,6 +203,13 @@ async function f1LoadRace(ev){
     // a finisher whose last lap has no time yet crosses the line one typical lap after starting it
     const typ = d.laps.filter(l => l.dur).map(l => l.dur).sort((a, b) => a - b)[d.laps.length >> 2] || 100;
     d.finishT = d.done ? d.done.t0 + (d.done.dur || typ) * 1000 : null;
+    // a car that never finished its last lap (no lap time and no later lap, or the lap after its last completed one
+    // in the results) stopped on it: it runs at the back of that lap's pace and is out one typical lap after starting it
+    if (!d.done && (!last.dur || (d.res?.dnf && d.res.number_of_laps != null && last.n > +d.res.number_of_laps))) {
+      const ms = (lapMs.get(last.n) || []).slice().sort((a, b) => a - b), typMs = ms[ms.length >> 1] || typ * 1000;
+      d.stop = {n: last.n, pace: Math.max(ms.at(-1) || 0, typMs), outT: last.t0 + (last.dur ? Math.min(last.dur * 1000, typMs) : typMs)};
+      d.end = d.stop.outT;
+    }
   }
   for (const p of pits || []) { const d = D.get(p.driver_number); if (d && p.date) d.pits.push({t: Date.parse(p.date), lap: p.lap_number, lane: +p.lane_duration || +p.pit_duration || 25, stop: p.stop_duration}); }
   const end = Math.max(...cars.map(d => d.finishT || d.end || d.laps.at(-1).t0)) + 15000;
@@ -241,7 +267,7 @@ function f1Events(R, P, cur, rc){
   let fl = null; for (const d of R.cars) for (const l of d.laps) if (l.dur && l.n > 1 && !l.pitOut && (!fl || l.dur < fl.l.dur)) fl = {d, l};
   if (fl) push(fl.l.t0 + fl.l.dur * 1000, 'fl', `${fl.d.code} sets what stands as the fastest lap of the race, ${f1Lap(fl.l.dur)}.`, {num: fl.d.num});
   // retirements
-  for (const d of R.cars) if (d.res?.dnf) { const l = d.laps.at(-1); push(l.t0 + (l.dur ? l.dur * 1000 : 30000), 'out', `${d.code} is out of the race.`, {num: d.num}); }
+  for (const d of R.cars) if (d.res?.dnf) { const l = d.laps.at(-1); push(d.stop ? d.stop.outT : l.t0 + (l.dur ? l.dur * 1000 : 30000), 'out', `${d.code} is out of the race.`, {num: d.num}); }
   // the last lap and the finish
   const lead = R.D.get(R.win?.driver_number);
   if (lead) {
@@ -269,7 +295,10 @@ function f1Prog(R, d, t){
   if (!d.laps.length || t < d.laps[0].t0) return {p: 0, grid: true};
   if (d.finishT && t >= d.finishT) return {p: d.done.n, fin: true, at: d.finishT};
   const i = f1LapAt(d, t), l = d.laps[i], nx = d.laps[i + 1];
-  if (!nx && !l.dur) return t - l.t0 > 45000 ? {p: l.n - 1, out: true} : {p: l.n - 1 + Math.min(0.6, (t - l.t0) / 100000)};
+  // the lap a car stopped on never counts as a finished lap, and the car can't run ahead of the field on it
+  if (d.stop && !nx && l.n === d.stop.n) return t >= d.stop.outT ? {p: l.n - 1, out: true} : {p: l.n - 1 + Math.min(0.95, (t - l.t0) / d.stop.pace)};
+  // a finisher whose last lap has no time yet: round to the line at its finish time
+  if (!nx && !l.dur) return {p: l.n - 1 + Math.min(0.99, (t - l.t0) / Math.max(1000, (d.finishT || l.t0 + 100000) - l.t0))};
   if (!nx && t > l.t0 + l.dur * 1000) return {p: l.n, out: !d.done};
   const dur = l.dur ? l.dur * 1000 : nx.t0 - l.t0;
   return {p: l.n - 1 + f1Frac(R, l.dur ? l : {...l, dur: dur / 1000}, Math.min(dur, t - l.t0))};
@@ -295,6 +324,8 @@ function f1Order(R, t){
   }
   return rows;
 }
+// the winner has taken the chequered flag in the replay (or the replay is over), so "winner" no longer spoils anything
+const f1Flagged = R => { const w = R?.D.get(R.win?.driver_number); return !!R && (!!R.done || !!(w?.finishT && R.clock >= w.finishT)); };
 const f1LeadLap = (R, t) => { const o = f1Order(R, t)[0]; return o ? Math.max(1, Math.min(R.total, Math.floor(o.p) + 1)) : 1; };
 
 /* ---- the circuit: one real lap of car positions, fitted to the screen ---- */
