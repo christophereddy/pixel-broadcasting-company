@@ -7,6 +7,8 @@
 //     This Game, Live Now, Up Next, team boxes, data-sources footer)
 //   - the footer names the sport's data source and the live feed says where plays come from
 //   - every request the sport makes goes to one of its own hosts (one data source per sport)
+// Then it opens the NBA with a stand-in ESPN that turns down date ranges (HTTP 400) and answers single days, as ESPN has
+// since November 2026, and checks that UP NEXT and FINAL fill from single days and that a refresh asks for today only.
 // Exit code 1 means a sport is missing a part, something moved, or the page threw a script error.
 const http = require('node:http'), fs = require('node:fs'), path = require('node:path');
 const { chromium } = require('playwright');
@@ -112,6 +114,47 @@ for (const width of WIDTHS) {
   }
   errors.forEach(e => lines.push(`  script error: ${e}`));
   console.log(`${width}px (${sports.join(', ')}): ${lines.length ? 'PROBLEMS' : 'ok'}`);
+  lines.forEach(l => console.log(l));
+  bad += lines.length;
+  await page.close();
+}
+// basketball with ESPN refusing date ranges: UP NEXT and FINAL fill one day at a time, and a refresh asks for today only
+{
+  const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  const errors = [], asked = [];
+  page.on('pageerror', e => errors.push(e.message));
+  const team = (id, ab, c) => ({ id, abbreviation: ab, displayName: ab + ' Test', shortDisplayName: ab, location: ab, name: ab, color: c, alternateColor: 'ffffff' });
+  // one game on day `d` (YYYYMMDD) at 7 PM local time: finished before today, not started after
+  const game = (d, st) => {
+    const at = new Date(+d.slice(0, 4), +d.slice(4, 6) - 1, +d.slice(6, 8), 19);
+    return { id: 'bb' + d, date: at.toISOString(), status: { type: { state: st, shortDetail: st === 'post' ? 'Final' : '7:00 PM', detail: '' } },
+      competitions: [{ competitors: [{ homeAway: 'home', team: team('1', 'HOM', '113355'), score: st === 'post' ? '101' : '' },
+        { homeAway: 'away', team: team('2', 'AWY', '992211'), score: st === 'post' ? '99' : '' }], status: { type: { state: st } } }] };
+  };
+  await page.route('**/*', r => {
+    const u = new URL(r.request().url());
+    if (u.hostname === '127.0.0.1') return r.continue();
+    if (!/\/basketball\/nba\/scoreboard$/.test(u.pathname)) return r.abort();
+    asked.push(u.search);
+    const d = u.searchParams.get('dates');
+    if (d && d.includes('-')) return r.fulfill({ status: 400, contentType: 'application/json', body: '{"code":400}' });
+    const today = new Date(), t = today.getFullYear() + String(today.getMonth() + 1).padStart(2, '0') + String(today.getDate()).padStart(2, '0');
+    const day = d || t, st = day < t ? 'post' : 'pre';
+    return r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ events: [game(day, st)] }) });
+  });
+  await page.goto(`${base}/sports/#nba`, { waitUntil: 'load' });
+  await page.waitForTimeout(1500);
+  const lines = [];
+  const counts = await page.evaluate(() => ({ next: document.querySelectorAll('#list-next .game').length, fin: document.querySelectorAll('#list-fin .game').length }));
+  if (counts.next < 6) lines.push(`  UP NEXT lists ${counts.next} games, expected the next six days' games`);
+  if (counts.fin < 8) lines.push(`  FINAL lists ${counts.fin} games, expected the last eight days' games`);
+  const ranges = asked.filter(q => /dates=\d+-\d+/.test(q)).length;
+  if (ranges > 2) lines.push(`  asked for a date range ${ranges} times after ESPN refused it`);
+  asked.length = 0;
+  await page.evaluate(() => loadScoreboard());
+  if (asked.length !== 1) lines.push(`  a refresh asked ESPN ${asked.length} times (${asked.join(' ') || 'none'}), expected today's scoreboard only`);
+  errors.forEach(e => lines.push(`  script error: ${e}`));
+  console.log(`NBA with date ranges refused: ${lines.length ? 'PROBLEMS' : 'ok'}`);
   lines.forEach(l => console.log(l));
   bad += lines.length;
   await page.close();
