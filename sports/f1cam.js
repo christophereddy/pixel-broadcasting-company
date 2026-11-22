@@ -113,11 +113,15 @@ function f1CarSpots(R, w){
   }
   return out;
 }
+// the onboard caption. HIDE RESULTS: with no pick the camera rides with the leader, and is only called the winner
+// once the viewer shows results or the replay passes the flag
+function f1CamCaption(R){ return S.f1.cam != null ? 'ONBOARD' : !hideRes() || f1Flagged(R) ? 'ONBOARD - WINNER' : 'ONBOARD - LEADER'; }
 // the car the camera rides with: the viewer's pick, else the race winner, else the leader
 function f1CamCar(R){
   // HIDE RESULTS: with no pick of their own the camera follows whoever leads right now, not the eventual winner
   const want = S.f1.cam ?? (hideRes() ? R.order?.[0]?.d.num : R.win?.driver_number);
-  const o = (R.order || []).find(r => r.d.num === want && !r.out) || (R.order || []).find(r => r.d.num === R.win?.driver_number && !r.out) || R.order?.[0];
+  // a picked car that retires hands the camera to the leader (results hidden) or the winner (results shown)
+  const o = (R.order || []).find(r => r.d.num === want && !r.out) || (!hideRes() && (R.order || []).find(r => r.d.num === R.win?.driver_number && !r.out)) || (R.order || []).find(r => !r.out) || R.order?.[0];
   return o?.d.num;
 }
 
@@ -261,7 +265,7 @@ function f1Hud(R, w, cars, me, now){
     ctx.fillStyle = 'rgba(8,10,26,.6)'; ctx.fillRect(W - 14 - Math.max(tw, 66), by - 18, Math.max(tw, 66) + 8, 47);
     pixText(ctx, txt, bx + sc, by + sc, true, '#05060d', sc); pixText(ctx, txt, bx, by, true, pos === 1 ? '#f2b632' : '#ffffff', sc);
     const sub = `${me.d.code} ${f1TeamShort(me.d.team).toUpperCase()}`; pixText(ctx, sub, W - 10 - pixWidth(sub, false), by - 8, false, '#ffffff');
-    const cap = S.f1.cam == null ? 'ONBOARD - WINNER' : 'ONBOARD'; pixText(ctx, cap, W - 10 - pixWidth(cap, false), by - 15, false, '#f2b632');
+    const cap = f1CamCaption(R); pixText(ctx, cap, W - 10 - pixWidth(cap, false), by - 15, false, '#f2b632');
   }
 }
 function f1MiniMap(w, mw){
@@ -282,11 +286,12 @@ function f1CoverCache(){
 function f1CamPicker(){
   const box = $('f1cam'), sel = $('f1cam-sel'), R = S.f1r; if (!box) return;
   const on = isF1() && S.mode === 'replay' && !!R; box.hidden = !on; if (!on) return;
+  // the first option follows the caption's rule: "Race leader" while results are hidden, the winner once shown or flagged
+  const win = !hideRes() || f1Flagged(R) ? R.D.get(R.win?.driver_number) : null, first = win ? `Race winner (${win.code})` : 'Race leader';
   if (sel.dataset.race !== String(R.k)) {
     sel.dataset.race = String(R.k); sel.replaceChildren();
     // HIDE RESULTS: no "race winner" default and no result order in the list, so the picker doesn't name the winner
-    const win = hideRes() ? null : R.D.get(R.win?.driver_number);
-    const o0 = document.createElement('option'); o0.value = ''; o0.textContent = win ? `Race winner (${win.code})` : 'Race leader'; sel.append(o0);
+    const o0 = document.createElement('option'); o0.value = ''; o0.textContent = first; sel.append(o0);
     const teams = new Map(); for (const d of R.cars) { if (!teams.has(d.team)) teams.set(d.team, []); teams.get(d.team).push(d); }
     for (const [team, ds] of [...teams].sort((a, b) => a[0].localeCompare(b[0]))) {
       const og = document.createElement('optgroup'); og.label = team;
@@ -296,5 +301,6 @@ function f1CamPicker(){
     }
     sel.onchange = () => { S.f1.cam = sel.value ? +sel.value : null; S.f1.camst = {}; };
   }
+  if (sel.options[0] && sel.options[0].textContent !== first) sel.options[0].textContent = first;
   sel.value = S.f1.cam == null ? '' : String(S.f1.cam);
 }

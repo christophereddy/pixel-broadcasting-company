@@ -29,6 +29,7 @@ https://christophereddy.github.io/pixel-broadcasting-company/. It has three chan
 | `tools/check_layout.cjs` | Checks that the shared controls sit in the same place on all three channels | Code changes |
 | `tools/ADDING_A_SPORT.md` | The checklist every sport on Pixel Sports Live follows | When the shared sports structure changes |
 | `tools/check_sports.cjs` | Checks that every sport has every part, in the same place, from its one data source | Code changes |
+| `tools/check_f1.cjs` | Checks the F1 replay's running order (a car out on lap 1 never leads) and the spoiler-free onboard caption, on a race shaped like OpenF1's data (runs on every pull request) | Code changes |
 | `news/index.html` | Redirect for old `/news/` links | Leave as is |
 | `about/`, `advertise/`, `contact/`, `sources/`, `corrections/`, `accessibility/`, `ad-policy/`, `privacy/`, `terms/` | The company pages linked from the footer on every page. `advertise/` is the Marketing Division ad page with the request form. | Code changes |
 | `data/cooking/ingredients.json`, `data/cooking/recipes/`, `data/cooking/shows.json` | The cooking channel's ingredient library, its AI-written recipes (one file each) and the shows that cook them. The COOKING channel and the recipe site are built on these. | Through pull requests; `tools/check_recipes.cjs` must pass |
