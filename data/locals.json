@@ -5,33 +5,55 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "How to serve a safe Thanksgiving meal",
+    "b": "Food poisoning outbreaks tend to rise in November and December, the CDC says, with tainted turkey, undercooked stuffing and holiday buffets behind past illnesses. Here's how to avoid them.",
+    "date": "2026-11-22",
+    "publisher": "WABE",
+    "title": "What to do to have a safe Thanksgiving meal",
+    "url": "https://www.wabe.org/what-to-do-to-have-a-safe-thanksgiving-meal/",
+    "published": "2026-11-22T16:48:03Z",
+    "updated": "2026-11-22T16:48:06Z",
+    "gathered": "2026-11-22T17:58:26Z"
+   },
+   {
+    "h": "Delta system glitch delays flights at Atlanta airport",
+    "b": "An issue with Delta's weight and balance system at Hartsfield-Jackson is delaying thousands of flights ahead of Thanksgiving, the FAA said.",
+    "date": "2026-11-22",
+    "publisher": "Gothamist",
+    "title": "Delta delays flights ahead of Thanksgiving holiday over system failure",
+    "url": "https://gothamist.com/news/scattered-showers-heading-for-nyc-could-linger-into-monday",
+    "published": "2026-11-22T17:49:00Z",
+    "gathered": "2026-11-22T17:58:26Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Light Drizzle Fog/Mist",
+    "temp": 59,
+    "cond": "Fog/Mist",
     "wind": "NE 6 mph",
-    "humidity": 96,
-    "obs": "22 Nov 07:52 am EST"
+    "humidity": 90,
+    "obs": "22 Nov 11:52 am EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 64,
-     "text": "A 30 percent chance of showers, mainly before 9am.  Mostly cloudy, with a high near 64. Northeast wind around 5 mph. "
+     "text": "A slight chance of drizzle before 2pm.  Mostly cloudy, with a high near 64. North wind around 5 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Partly cloudy, with a low around 52. Calm wind. "
+     "text": "Patchy fog between 11pm and 4am.  Otherwise, partly cloudy, with a low around 52. Calm wind becoming west around 5 mph. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 71,
-     "text": "Partly sunny, with a high near 71. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Patchy fog between 8am and 9am.  Otherwise, mostly sunny, with a high near 71. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Monday Night",
@@ -43,13 +65,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 62,
-     "text": "Mostly cloudy, with a high near 62. East wind 5 to 10 mph, with gusts as high as 20 mph. "
+     "text": "Partly sunny, with a high near 62. East wind 5 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 43,
-     "text": "A 20 percent chance of showers.  Mostly cloudy, with a low around 43."
+     "text": "A 20 percent chance of showers after 1am.  Mostly cloudy, with a low around 43."
     }
    ]
   },
@@ -65,7 +87,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,18 +97,28 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "ICE keeps making courthouse arrests despite new state law",
+    "b": "Immigration agents are still arresting people at Massachusetts courthouses, including a Framingham district court, despite the state's new PROTECT Act.",
+    "date": "2026-11-22",
+    "publisher": "WBUR",
+    "title": "ICE continues courthouse arrests, despite state's new PROTECT Act",
+    "url": "https://www.wbur.org/news/2026/11/22/massachusetts-immigration-court-arrests-agents",
+    "gathered": "2026-11-22T17:58:26Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 49,
-    "cond": "Patches Fog Fog/Mist",
-    "wind": "SE 3 mph",
-    "humidity": 97,
-    "obs": "22 Nov 08:54 am EST"
+    "temp": 53,
+    "cond": "Overcast",
+    "wind": "E 7 mph",
+    "humidity": 83,
+    "obs": "22 Nov 12:54 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 63,
      "text": "Mostly cloudy, with a high near 63. Southeast wind 5 to 8 mph. "
@@ -135,7 +167,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -194,17 +226,17 @@
   "weather": {
    "now": {
     "temp": 56,
-    "cond": "Mostly Cloudy",
-    "wind": "SW 13 mph, gusts to 26 mph",
-    "humidity": 75,
-    "obs": "22 Nov 07:53 am CST"
+    "cond": "Overcast",
+    "wind": "W 14 mph, gusts to 23 mph",
+    "humidity": 90,
+    "obs": "22 Nov 11:53 am CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 56,
-     "text": "Rain, mainly before 2pm.  Temperature rising to near 56 by 11am, then falling to around 44 during the remainder of the day. Breezy, with a southwest wind 15 to 20 mph becoming northwest in the afternoon. Winds could gust as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly before 1pm.  Cloudy, with a temperature falling to around 47 by 5pm. Breezy, with a west southwest wind 15 to 20 mph becoming northwest. Winds could gust as high as 30 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -216,19 +248,19 @@
      "name": "Monday",
      "kind": "high",
      "temp": 42,
-     "text": "Sunny, with a high near 42. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "text": "Sunny, with a high near 42. Northwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Monday Night",
      "kind": "low",
      "temp": 30,
-     "text": "Mostly clear, with a low around 30. North northwest wind 10 to 15 mph. "
+     "text": "Mostly clear, with a low around 30. North northwest wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 42,
-     "text": "A 20 percent chance of snow showers before noon.  Partly sunny, with a high near 42. North northwest wind 5 to 10 mph becoming northeast in the afternoon. "
+     "text": "A 20 percent chance of snow showers before noon.  Partly sunny, with a high near 42. North wind 5 to 10 mph becoming east northeast in the afternoon. "
     },
     {
      "name": "Tuesday Night",
@@ -250,7 +282,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -286,18 +318,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 20,
-    "cond": "A Few Clouds",
-    "wind": "S 6 mph",
-    "humidity": 74,
-    "obs": "22 Nov 06:58 am MST"
+    "temp": 37,
+    "cond": "Mostly Cloudy",
+    "wind": "W 3 mph",
+    "humidity": 52,
+    "obs": "22 Nov 09:58 am MST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 45,
-     "text": "Patchy freezing fog before 10am. Mostly sunny, with a high near 45. Calm wind becoming north around 6 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 45. Calm wind becoming north around 6 mph in the afternoon. "
     },
     {
      "name": "Tonight",
@@ -343,7 +375,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -388,17 +420,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "wind": "NW 1 mph",
-    "humidity": 66,
-    "obs": "22 Nov 05:55 AM PST"
+    "temp": 63,
+    "wind": "S 2 mph",
+    "humidity": 34,
+    "obs": "22 Nov 09:55 AM PST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 68,
-     "text": "Showers likely after 4pm.  Partly sunny, with a high near 68. Northeast wind around 5 mph becoming west in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Showers likely after 4pm.  Mostly cloudy, with a high near 68. South wind around 5 mph becoming west in the afternoon.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -444,7 +476,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -489,6 +521,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Jersey City rent control push ends in setback for DSA members",
+    "b": "A bill from progressive Jersey City council members to protect tenants of a waterfront high-rise from rent hikes was tossed before it could be formally introduced.",
+    "date": "2026-11-22",
+    "publisher": "Gothamist",
+    "title": "A rush to rent control in Jersey City ends in a setback for DSA council members",
+    "url": "https://gothamist.com/news/a-rush-to-rent-control-in-jersey-city-ends-in-a-setback-for-dsa-council-members",
+    "published": "2026-11-22T17:40:45Z",
+    "gathered": "2026-11-22T17:58:26Z"
+   },
    {
     "h": "Homeless man charged with murder in Chinatown killing",
     "b": "Police charged a homeless man with murder after a 62-year-old woman was found dead with signs of trauma to her neck at her Catherine Street apartment on Friday.",
@@ -542,24 +584,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Fog/Mist",
+    "temp": 58,
+    "cond": "Overcast",
     "wind": "NE 5 mph",
-    "humidity": 96,
-    "obs": "22 Nov 08:51 am EST"
+    "humidity": 90,
+    "obs": "22 Nov 12:51 pm EST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 62,
-     "text": "Rain likely, mainly after 1pm.  Patchy fog before 10am.  Otherwise, cloudy, with a high near 62. Northeast wind 7 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 61,
+     "text": "Rain likely.  Cloudy, with a high near 61. Northeast wind 8 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 61,
-     "text": "Rain, mainly before 1am.  Steady temperature around 61. Northeast wind 11 to 14 mph becoming northwest after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 58,
+     "text": "Rain, mainly before 1am.  Low around 58. Northeast wind 11 to 14 mph becoming northwest after midnight. Winds could gust as high as 25 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Monday",
@@ -599,7 +641,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -622,6 +664,27 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Activists demand tear gas suspension over reported health effects",
+    "b": "French activists and lawmakers want police to stop using tear gas after women reported menstrual changes following protests. An advocacy group says it has over 10,000 complaints; scientists have not confirmed a link.",
+    "date": "2026-11-22",
+    "publisher": "PBS NewsHour",
+    "title": "French activists demand a tear gas suspension over reported menstrual changes",
+    "url": "https://www.pbs.org/newshour/health/french-activists-demand-a-tear-gas-suspension-over-reported-menstrual-changes",
+    "published": "2026-11-22T17:34:24Z",
+    "gathered": "2026-11-22T17:58:26Z"
+   },
+   {
+    "h": "Le Pen denies receiving secrets from civil servant",
+    "b": "Marine Le Pen denied receiving confidential information from a civil servant suspected of leaking investigation details to her National Rally party, but said she could not say whether others in the party had.",
+    "date": "2026-11-22",
+    "publisher": "The Local France",
+    "title": "France's Le Pen denies receiving secrets from civil servant",
+    "url": "https://www.thelocal.fr/20261122/frances-le-pen-denies-receiving-secrets-from-civil-servant",
+    "published": "2026-11-22T15:06:22Z",
+    "updated": "2026-11-22T15:06:23Z",
+    "gathered": "2026-11-22T17:58:26Z"
+   },
    {
     "h": "Budget talks and Black Friday top France's week ahead",
     "b": "Lawmakers meet in committee to try to strike a deal on the social security budget, a trial opens for seven men accused of raising funds for the PKK, and retailers gear up for Black Friday.",
@@ -648,11 +711,7 @@
     "h": "Inside France: police raids, private lives and protest slogans",
     "b": "This week's talking points in France ran from police raids at a political party's headquarters to the romantic lives of public figures and a museum appeal for the country's best protest slogans.",
     "date": "2026-11-21",
-    "publisher": "The Local France",
-    "title": "Inside France: Police raids, politicians' private lives and protest banners expo",
     "url": "https://www.thelocal.fr/20261121/inside-france-police-raids-politicians-private-lives-and-protest-banners-expo",
-    "published": "2026-11-21T10:51:26Z",
-    "updated": "2026-11-21T10:51:32Z",
     "gathered": "2026-11-21T11:12:39Z"
    }
   ],
@@ -672,7 +731,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "goodnews": []
  },
  {
@@ -686,11 +745,7 @@
     "h": "ICE arrest in Sea-Tac jetway draws Ferguson's rebuke",
     "b": "Federal immigration agents made an arrest in a crowded Alaska Airlines jetway at Sea-Tac on Saturday morning, sparking a chaotic struggle. Gov. Bob Ferguson called ICE \"completely and totally out of control.\"",
     "date": "2026-11-21",
-    "publisher": "KUOW",
-    "title": "‘Outraged.’ Port officials react after ICE reportedly arrests family at Sea-Tac Airport",
     "url": "https://www.kuow.org/immigration/2026-11-21/outraged-port-officials-react-after-ice-arrests-family-at-sea-tac-airport",
-    "published": "2026-11-21T21:46:25Z",
-    "updated": "2026-11-22T05:37:53Z",
     "gathered": "2026-11-21T22:16:51Z"
    },
    {
@@ -703,11 +758,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 45,
     "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 67,
-    "obs": "22 Nov 05:53 AM PST"
+    "humidity": 70,
+    "obs": "22 Nov 09:35 AM PST"
    },
    "periods": [
     {
@@ -760,7 +815,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T17:11:00Z",
+  "updatedAt": "2026-11-22T20:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
