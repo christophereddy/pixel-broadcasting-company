@@ -1,0 +1,75 @@
+# Checks every morning that the live data the site reads still answers the way the pages expect (ESPN, MLB, OpenF1,
+# and the news sources through the hourly fetch), with tools/check_live_sources.cjs. When something fails it opens one
+# issue, "Live data check failed", listing what broke (or updates the open one, with a comment when the list changes),
+# and closes it when everything passes again.
+# It never runs on other pull requests, so a slow day at ESPN never blocks a merge. A change to the check itself gets a
+# dry run (results in the run's summary, no issue).
+name: Live data check
+
+on:
+  schedule:
+    - cron: '20 12 * * *'   # 7:20 AM ET (8:20 AM in summer), after the overnight games are final
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'tools/check_live_sources.cjs'
+      - '.github/workflows/live-sources.yml'
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: live-sources
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check the live sources
+        id: check
+        continue-on-error: true
+        run: node tools/check_live_sources.cjs --report "$RUNNER_TEMP/report.md"
+      - name: Write the summary
+        if: always()
+        run: |
+          { echo "## Live data check"; echo; cat "$RUNNER_TEMP/report.md" 2>/dev/null || echo "The check did not finish; see the log."; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Open, update or close the issue
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTCOME: ${{ steps.check.outcome }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="Live data check failed"
+          NUM=$(gh issue list --state open --search "\"$TITLE\" in:title" --json number,title --jq ".[] | select(.title == \"$TITLE\") | .number" | head -1)
+          REPORT="$RUNNER_TEMP/report.md"
+          [ -f "$REPORT" ] || echo "The check did not finish. <!-- failed: unfinished -->" > "$REPORT"
+          BODY="$RUNNER_TEMP/body.md"
+          { echo "The daily check of the site's live data found feeds that the pages can no longer read. The [run]($RUN_URL) has the full log."; echo; cat "$REPORT"; echo; echo "This issue closes by itself on the first day everything passes. The check is \`tools/check_live_sources.cjs\`."; } > "$BODY"
+          if [ "$OUTCOME" = "success" ]; then
+            if [ -n "$NUM" ]; then
+              gh issue comment "$NUM" --body "Everything passed today ([run]($RUN_URL)), so this is closed."
+              gh issue close "$NUM"
+            fi
+            exit 0
+          fi
+          if [ -z "$NUM" ]; then
+            gh issue create --title "$TITLE" --body-file "$BODY"
+          else
+            OLD=$(gh issue view "$NUM" --json body --jq .body | grep -o '<!-- failed: .* -->' || true)
+            NEW=$(grep -o '<!-- failed: .* -->' "$REPORT" || true)
+            gh issue edit "$NUM" --body-file "$BODY"
+            if [ "$OLD" != "$NEW" ]; then
+              gh issue comment "$NUM" --body "What fails changed today; the list above is up to date ([run]($RUN_URL))."
+            fi
+          fi
+      - name: Fail the run when a feed failed
+        if: steps.check.outcome != 'success'
+        run: exit 1
