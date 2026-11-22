@@ -9,20 +9,20 @@
   "weather": {
    "now": {
     "temp": 55,
-    "cond": "Light Drizzle Fog/Mist",
-    "wind": "NE 8 mph",
-    "humidity": 96,
-    "obs": "22 Nov 04:52 am EST"
+    "cond": "Fog/Mist",
+    "wind": "NE 7 mph",
+    "humidity": 93,
+    "obs": "22 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 64,
-     "text": "A 30 percent chance of showers, mainly before 9am.  Mostly cloudy, with a high near 64. Northeast wind around 5 mph becoming north in the afternoon. "
+     "text": "A 30 percent chance of showers, mainly before 9am.  Mostly cloudy, with a high near 64. Northeast wind around 5 mph becoming north in the afternoon. Winds could gust as high as 15 mph. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Partly cloudy, with a low around 52. Calm wind. "
@@ -43,7 +43,7 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 62,
-     "text": "Mostly cloudy, with a high near 62."
+     "text": "Mostly cloudy, with a high near 62. East wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -78,18 +78,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 45,
     "cond": "Patches Fog Fog/Mist",
-    "wind": "N 5 mph",
-    "humidity": 96,
-    "obs": "22 Nov 04:54 am EST"
+    "wind": "Calm",
+    "humidity": 97,
+    "obs": "22 Nov 05:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 63,
-     "text": "Patchy fog between 7am and 9am.  Otherwise, cloudy, with a high near 63. Southeast wind 5 to 8 mph. "
+     "text": "Areas of fog before 7am.  Otherwise, cloudy, with a high near 63. Southeast wind 5 to 8 mph. "
     },
     {
      "name": "Tonight",
@@ -135,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -193,11 +193,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
+    "temp": 55,
     "cond": "Mostly Cloudy",
     "wind": "S 12 mph",
-    "humidity": 70,
-    "obs": "22 Nov 03:53 am CST"
+    "humidity": 72,
+    "obs": "22 Nov 04:53 am CST"
    },
    "periods": [
     {
@@ -250,7 +250,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -275,27 +275,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 28,
+    "temp": 26,
     "cond": "Fair",
-    "wind": "SE 7 mph",
-    "humidity": 69,
-    "obs": "22 Nov 00:58 am MST"
+    "wind": "S 6 mph",
+    "humidity": 70,
+    "obs": "22 Nov 01:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 22,
-     "text": "Mostly clear, with a low around 22. Calm wind. "
-    },
-    {
-     "name": "Sunday",
+     "name": "Today",
      "kind": "high",
      "temp": 45,
      "text": "Patchy freezing fog before 10am. Mostly sunny, with a high near 45. Calm wind becoming north around 6 mph in the afternoon. "
     },
     {
-     "name": "Sunday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 25,
      "text": "Increasing clouds, with a low around 25. Light and variable wind. "
@@ -316,7 +310,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 47,
-     "text": "Sunny, with a high near 47."
+     "text": "Sunny, with a high near 47. Light and variable wind becoming southeast around 5 mph. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 25,
+     "text": "Mostly clear, with a low around 25."
     }
    ]
   },
@@ -332,7 +332,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -351,6 +351,7 @@
     "title": "Thousands of mixed-status California families to lose housing under Trump HUD rule",
     "url": "https://laist.com/news/housing-homelessness/thousands-of-mixed-status-california-families-to-lose-housing-under-trump-hud-rule",
     "published": "2026-11-21T18:51:31Z",
+    "updated": "2026-11-21T18:51:31Z",
     "gathered": "2026-11-21T23:12:04Z"
    },
    {
@@ -380,16 +381,10 @@
    "now": {
     "temp": 52,
     "wind": "Calm",
-    "humidity": 55,
-    "obs": "22 Nov 01:55 AM PST"
+    "humidity": 56,
+    "obs": "22 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 51,
-     "text": "Mostly cloudy, with a low around 51. North northeast wind around 5 mph. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -419,6 +414,12 @@
      "kind": "high",
      "temp": 71,
      "text": "Mostly sunny, with a high near 71."
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 53,
+     "text": "Mostly cloudy, with a low around 53."
     }
    ]
   },
@@ -434,7 +435,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -534,16 +535,16 @@
    "now": {
     "temp": 54,
     "cond": "Fog/Mist",
-    "wind": "NE 6 mph",
+    "wind": "NE 3 mph",
     "humidity": 97,
-    "obs": "22 Nov 04:51 am EST"
+    "obs": "22 Nov 05:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 62,
-     "text": "Rain likely, mainly after 1pm.  Cloudy, with a high near 62. Northeast wind 7 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly after 1pm.  Areas of fog before 10am.  Otherwise, cloudy, with a high near 62. Northeast wind 7 to 10 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tonight",
@@ -589,7 +590,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -647,7 +648,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "goodnews": []
  },
  {
@@ -680,17 +681,11 @@
    "now": {
     "temp": 45,
     "cond": "Overcast",
-    "wind": "SE 3 mph",
+    "wind": "Calm",
     "humidity": 65,
-    "obs": "22 Nov 01:20 AM PST"
+    "obs": "22 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 42,
-     "text": "Rain likely, mainly between 2am and 4am.  Mostly cloudy, with a low around 42. South southeast wind around 5 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Sunday",
      "kind": "high",
@@ -720,6 +715,12 @@
      "kind": "high",
      "temp": 50,
      "text": "Rain likely.  Cloudy, with a high near 50. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Tuesday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Rain.  Low around 45. Chance of precipitation is 80%."
     }
    ]
   },
@@ -735,7 +736,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-22T11:12:00Z",
+  "updatedAt": "2026-11-22T14:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
