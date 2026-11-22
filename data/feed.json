@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T02:12:00Z",
+ "updatedAt": "2026-11-22T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -93,10 +93,7 @@
    "h": "Trump orders contractors to consult White House on Congress requests",
    "b": "A new executive order directs federal contractors to consult the administration about inquiries from Congress and withhold communications the White House deems privileged, or risk losing their contracts.",
    "date": "2026-11-21",
-   "publisher": "PBS NewsHour",
-   "title": "Trump orders federal contractors to check with White House before responding to Congress",
    "url": "https://www.pbs.org/newshour/politics/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress",
-   "published": "2026-11-21T19:29:23Z",
    "gathered": "2026-11-21T22:16:51Z"
   },
   {
@@ -148,8 +145,6 @@
    "date": "2026-11-21",
    "place": "Mumbai, India",
    "tz": "Asia/Kolkata",
-   "publisher": "Al Jazeera",
-   "title": "India’s opposition stages protests against Meta over account removals",
    "url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals",
    "gathered": "2026-11-21T16:54:03Z"
   },
@@ -205,6 +200,17 @@
  ],
  "business": [
   {
+   "h": "Paolo Bulgari, who built a global jewelry brand, dies at 89",
+   "b": "Paolo Bulgari, grandson of a Greek silversmith, helped turn the family jewelry business into a global luxury brand. His family announced his death Saturday, calling him \"the greatest jeweler of our time.\"",
+   "date": "2026-11-22",
+   "publisher": "KUOW",
+   "title": "Paolo Bulgari, who turned a family jewelry business into a global brand, dies at 89",
+   "url": "https://www.kuow.org/npr-news/2026-11-21/paolo-bulgari-who-turned-a-family-jewelry-business-into-a-global-brand-dies-at-89",
+   "published": "2026-11-22T00:04:28Z",
+   "updated": "2026-11-22T00:12:05Z",
+   "gathered": "2026-11-22T02:31:13Z"
+  },
+  {
    "h": "Judge approves Bayer's Roundup settlement worth up to $7.25 billion",
    "b": "A Missouri judge gave final approval to Bayer's nationwide settlement with people who say the weed-killer Roundup caused their cancer, a deal that could cost the company up to $7.25 billion.",
    "date": "2026-11-21",
@@ -243,6 +249,16 @@
  ],
  "science": [
   {
+   "h": "Why recent tech failures felt connected to so many people",
+   "b": "Outages hit Microsoft, United Airlines, JPMorgan Chase and government systems such as the FAA and National Weather Service in quick succession. The piece looks at why that pile-on felt coordinated to many people.",
+   "date": "2026-11-21",
+   "publisher": "PBS NewsHour",
+   "title": "Why do people believe recent tech failures must be connected?",
+   "url": "https://www.pbs.org/newshour/nation/why-do-people-believe-recent-tech-failures-must-be-connected",
+   "published": "2026-11-21T23:14:57Z",
+   "gathered": "2026-11-22T02:31:13Z"
+  },
+  {
    "h": "Anthropic mathematician claims AI-assisted Riemann proof",
    "b": "Levent Alpoge, a mathematician at Anthropic, wrote that he believes he has discovered a proof of the Riemann Hypothesis working with Claude.",
    "date": "2026-11-21",
@@ -277,9 +293,9 @@
    "b": "Police charged a homeless man with murder after a 62-year-old woman was found dead with signs of trauma to her neck at her Catherine Street apartment on Friday.",
    "date": "2026-11-21",
    "publisher": "Gothamist",
-   "title": "NYPD charges homeless man with murder after woman, 62, was killed at her Chinatown home",
+   "title": "NYPD charges homeless man with murder after woman, 62, was killed at Chinatown apartment",
    "url": "https://gothamist.com/news/nypd-charges-homeless-man-with-murder-after-woman-62-was-killed-at-her-chinatown-home",
-   "published": "2026-11-21T23:12:39Z",
+   "published": "2026-11-21T23:12:00Z",
    "gathered": "2026-11-21T23:12:04Z"
   },
   {
@@ -325,18 +341,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 57,
+   "temp": 56,
    "cond": "Fair",
-   "wind": "Calm",
-   "humidity": 67,
-   "obs": "21 Nov 17:51 pm EST"
+   "wind": "W 3 mph",
+   "humidity": 77,
+   "obs": "21 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 53,
-    "text": "Increasing clouds, with a low around 53. Southeast wind 5 to 7 mph becoming light and variable. "
+    "text": "Mostly cloudy, with a low around 53. East wind around 6 mph becoming light and variable. "
    },
    {
     "name": "Sunday",
