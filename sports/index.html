@@ -493,6 +493,20 @@ const fullName = t => t.loc === t.nick ? t.nick : `${t.loc} ${t.nick}`;
 
 // playoff games whose teams aren't decided yet are left out
 const isTBD = ev => { const cs = ev?.competitions?.[0]?.competitors || []; return cs.length < 2 || cs.some(c => !(c.team?.id ?? c.id) || /^TBD$/i.test(c.team?.abbreviation || '') || /\bTBD\b/i.test(c.team?.displayName || '')); };
+// basketball's day-by-day scoreboards (see loadScoreboard). Days other than today keep for 10 minutes, so the 30-second
+// refresh asks ESPN for today's scoreboard only. offs are days from today (-1 is yesterday).
+const TRY_RANGES = true, RANGE_OFF = new Map(), DAY_KEEP = 10 * 60e3, DAYS = new Map();
+function dayBoards(sport, offs, q){
+  const now = Date.now();
+  return Promise.allSettled(offs.map(o => {
+    const day = ymd(new Date(now + o * 864e5)), key = sport + ':' + day + q, kept = DAYS.get(key);
+    if (kept && now - kept.t < DAY_KEEP) return kept.p;
+    const p = getJSON(SPORTS[sport].api + '/scoreboard?dates=' + day + q);
+    DAYS.set(key, {t: now, p});
+    p.catch(() => { if (DAYS.get(key)?.p === p) DAYS.delete(key); }); // a failed day is asked for again next time
+    return p;
+  }));
+}
 async function loadScoreboard(){
   if (isMLB()) return loadMLBGames();
   if (isF1()) return f1LoadRaces();
@@ -514,17 +528,24 @@ async function loadScoreboard(){
       if (ty === 2 && next.status === 'fulfilled' && !next.value.events?.length) res.push(...await Promise.allSettled([getJSON(wkURL(3, 1))]));
     }
   } else {
-    // a date range comes back short unless it asks for a big enough page
+    // ESPN's basketball scoreboards now turn down date ranges too (HTTP 400) but still answer one day at a time, so the
+    // games come from today, the next six days and the last eight, one day each (dayBoards). The range is still tried
+    // first (TRY_RANGES), so the page goes back to it if ESPN allows it again; after a 400 it waits an hour to ask again.
     const lim = q.includes('limit=') ? '' : '&limit=300';
-    const urls = [API + '/scoreboard' + (q && '?' + q.slice(1)), API + '/scoreboard?dates=' + ymd(now) + '-' + ymd(later) + lim + q, API + '/scoreboard?dates=' + ymd(earlier) + '-' + ymd(now) + lim + q];
-    res = await Promise.allSettled(urls.map(getJSON));
-    // no finished games in the range: ask for each of the last eight days one by one (once a day per sport), so the
-    // FINAL list still fills when the range query leaves games out
-    const key = sport + ymd(now), past = res[2].status === 'fulfilled' && (res[2].value.events || []).some(e => stateOf(e) === 'post');
-    if (!past && S.pastDays !== key) {
-      S.pastDays = key;
-      res.push(...await Promise.allSettled(Array.from({length: 8}, (_, i) => getJSON(API + '/scoreboard?dates=' + ymd(new Date(now.getTime() - (i + 1) * 864e5)) + q))));
+    let ranged = [];
+    if (TRY_RANGES && !(RANGE_OFF.get(sport) > Date.now())) {
+      const base = SPORTS[sport].api + '/scoreboard?dates=';
+      ranged = await Promise.allSettled([base + ymd(now) + '-' + ymd(later) + lim + q, base + ymd(earlier) + '-' + ymd(now) + lim + q].map(getJSON));
+      if (ranged.some(r => r.status === 'rejected')) {
+        if (ranged.some(r => /HTTP 400/.test(r.reason?.message || ''))) RANGE_OFF.set(sport, Date.now() + 36e5);
+        ranged = [];
+      }
     }
+    // a range that worked can still leave out finished games, so the last eight days fill in from single days then too
+    const past = ranged.length && (ranged[1].value.events || []).some(e => stateOf(e) === 'post');
+    const days = ranged.length ? (past ? [] : [-8, -7, -6, -5, -4, -3, -2, -1]) : [-8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6];
+    // today's scoreboard is asked for fresh every time and goes last, so its live scores win over the kept days
+    res = [...ranged, ...await dayBoards(sport, days, q), ...await Promise.allSettled([getJSON(SPORTS[sport].api + '/scoreboard' + (q && '?' + q.slice(1)))])];
   }
   if (sport !== S.sport) return false; // the viewer switched sports while this was loading
   let ok = false;
@@ -636,7 +657,7 @@ function renderList(){
   };
   const lg = S.sport === 'cfb' && S.confs?.find(x => x.id === S.conf)?.name || SPORTS[S.sport].name;
   fill($('list-live'), live, isF1() ? 'No F1 session on track right now.' : `No ${lg} games live right now.`);
-  fill($('list-next'), next.slice(0, 8), isF1() ? 'No sessions on the schedule.' : SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next 10 days.');
+  fill($('list-next'), next.slice(0, 8), isF1() ? 'No sessions on the schedule.' : SPORTS[S.sport].family === 'football' ? 'No games scheduled this week or next.' : 'No games scheduled in the next week.');
   // finished games, newest first, to pick a replay from; their scores follow SHOW RESULTS / HIDE RESULTS (gameLine)
   fill($('list-fin'), fin, isF1() ? 'No race replays yet.' : `No ${lg} games finished in the last week.`);
   markLive();
