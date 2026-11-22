@@ -343,27 +343,28 @@ main{grid-area:main;display:grid;gap:12px;min-width:0;align-content:start}
 // football and basketball read ESPN's feeds; baseball reads MLB's own (statsapi.mlb.com). The tabs switch between them.
 // Every sport fills in the same entry and the same parts of the page; tools/ADDING_A_SPORT.md lists them all and
 // tools/check_sports.cjs fails if a sport is missing one. hosts: the only places this sport's data and images come from
-// (one data source per sport).
+// (one data source per sport). core: ESPN's core API for the same league, which (unlike site.api.espn.com) answers
+// github.io for team details and the NFL depth chart. depth: ESPN keeps a depth chart for this league (it has none for college).
 const SPORTS = {
-  nfl: {name: 'NFL', family: 'football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play',
-    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+  nfl: {name: 'NFL', family: 'football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/nfl', core: 'https://sports.core.api.espn.com/v2/sports/football/leagues/nfl', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/nfl', src: 'ESPN play-by-play', depth: true,
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'sports.core.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nfl/']]},
   // college football (FBS) is the same ESPN football feed as the NFL, so it shares all of the football code. `league` is ESPN's
   // name for it in image paths; `standings` lists the conferences, each in ESPN's standing order.
-  cfb: {name: 'NCAAF', family: 'football', league: 'college-football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/college-football', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/college-football',
+  cfb: {name: 'NCAAF', family: 'football', league: 'college-football', api: 'https://site.api.espn.com/apis/site/v2/sports/football/college-football', core: 'https://sports.core.api.espn.com/v2/sports/football/leagues/college-football', site: 'https://site.web.api.espn.com/apis/common/v3/sports/football/college-football',
     standings: 'https://site.web.api.espn.com/apis/v2/sports/football/college-football/standings', board: 'groups=80&limit=500', src: 'ESPN play-by-play',
-    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'sports.core.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play, conference standings, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/college-football/']]},
   mlb: {name: 'MLB', family: 'baseball', api: 'https://statsapi.mlb.com/api', site: '', src: 'MLB play-by-play',
     hosts: ['statsapi.mlb.com', 'www.mlbstatic.com', 'img.mlbstatic.com'],
     credits: [['Games, pitch-by-pitch play-by-play, team schedules, rosters, stats, logos, headshots and game recaps', 'MLB Stats API', 'https://statsapi.mlb.com'],
       ['Ballpark fence distances and wall heights', "each park's Wikipedia page", 'https://en.wikipedia.org/wiki/List_of_current_Major_League_Baseball_stadiums']]},
   // the NBA and WNBA share ESPN's basketball feed and all of the basketball code
-  nba: {name: 'NBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba', src: 'ESPN play-by-play',
-    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+  nba: {name: 'NBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba', core: 'https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba', src: 'ESPN play-by-play',
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'sports.core.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/nba/']]},
-  wnba: {name: 'WNBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/wnba', src: 'ESPN play-by-play',
-    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'a.espncdn.com'],
+  wnba: {name: 'WNBA', family: 'basketball', api: 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba', core: 'https://sports.core.api.espn.com/v2/sports/basketball/leagues/wnba', site: 'https://site.web.api.espn.com/apis/common/v3/sports/basketball/wnba', src: 'ESPN play-by-play',
+    hosts: ['site.api.espn.com', 'site.web.api.espn.com', 'sports.core.api.espn.com', 'a.espncdn.com'],
     credits: [['Games, play-by-play with shot locations, team schedules, rosters, stats, logos, headshots and team news', 'ESPN', 'https://www.espn.com/wnba/']]},
   // Formula 1 reads only OpenF1, whose free tier covers finished sessions: races replay from their real timing (sports/f1.js)
   f1: {name: 'F1', family: 'racing', api: 'https://api.openf1.org/v1', site: '', src: 'OpenF1 timing',
@@ -465,12 +466,13 @@ function teamObj(t, id){
   };
 }
 // scoreboards give a score as text, team schedules as {value, displayValue}
-// ESPN's team page carries the colors that its team schedules and standings leave out
+// ESPN's team details carry the colors that its team schedules and standings leave out (core API: the site API's
+// /teams/{id} sends no CORS headers, so it fails on github.io)
 async function teamColors(t){
   if (!t?.noColor || isMLB() || !/^\d+$/.test(t.id)) return;
   const key = S.sport + ':' + t.id;
   if (!COLORS.has(key)) {
-    try { const x = (await getJSON(`${API}/teams/${t.id}`)).team || {}; if (x.color) COLORS.set(key, ['#' + x.color, x.alternateColor ? '#' + x.alternateColor : '#ffffff']); } catch (e) { return; }
+    try { const j = await getJSON(`${SPORTS[S.sport].core}/teams/${t.id}`), x = j.team || j; if (x.color) COLORS.set(key, ['#' + x.color, x.alternateColor ? '#' + x.alternateColor : '#ffffff']); } catch (e) { return; }
   }
   const c = COLORS.get(key); if (!c) return;
   [t.color, t.alt] = c; t.noColor = false; t.kit = null;
@@ -690,14 +692,17 @@ function footballPools(team){
   R.pools.RET = mix([from('WR', 3), from('RB', 1), from('CB', 2)]);
 }
 // ESPN's depth chart: each formation lists its positions with the players in order (first is the starter).
-// Shapes differ between ESPN's endpoints, so read any athlete id we can find; a player's rank is his best slot.
+// It comes from ESPN's core API (the site API's depthcharts URL sends no CORS headers, so it fails on github.io). Athletes
+// there are $refs with a rank (1 = starter); a player's rank is his best slot. ESPN has no college depth chart, so NCAAF
+// skips the call and uses roster order with the box score's players first.
 async function loadDepth(team){
   const R = S.roster[team.id]; if (!R || R.rank) return;
   R.rank = {};
-  try {
-    const d = await getJSON(`${API}/teams/${team.id}/depthcharts`);
+  if (SPORTS[S.sport].depth) try {
+    const d = await getJSON(`${SPORTS[S.sport].core}/seasons/${seasonYear()}/teams/${team.id}/depthcharts`);
     for (const f of d.depthchart || d.items || d.depthCharts || []) for (const pos of Object.values(f.positions || {})) {
       (pos.athletes || []).forEach((a, i) => {
+        if (a.rank > 0) i = a.rank - 1;
         const id = String(a.id ?? a.athlete?.id ?? (/athletes\/(\d+)/.exec(a.athlete?.$ref || a.$ref || '') || [])[1] ?? '');
         if (id && (R.rank[id] == null || i < R.rank[id])) R.rank[id] = i;
       });
@@ -4686,7 +4691,7 @@ async function drawLogo(cv, team){
   }
 }
 
-// the 32 NFL teams (ESPN ids and colors), used when ESPN's team list doesn't load
+// the 32 NFL teams (ESPN ids and colors): the team grid. ESPN's own team list sends no CORS headers, so it fails on github.io
 const NFL_TEAMS = [[22, 'ARI', 'Arizona', 'Cardinals', 'a40227', 'ffffff'], [1, 'ATL', 'Atlanta', 'Falcons', 'a71930', '000000'], [33, 'BAL', 'Baltimore', 'Ravens', '29126f', '000000'],
   [2, 'BUF', 'Buffalo', 'Bills', '00338d', 'd50a0a'], [29, 'CAR', 'Carolina', 'Panthers', '0085ca', '000000'], [3, 'CHI', 'Chicago', 'Bears', '0b1c3a', 'e64100'],
   [4, 'CIN', 'Cincinnati', 'Bengals', 'fb4f14', '000000'], [5, 'CLE', 'Cleveland', 'Browns', '472a08', 'ff3c00'], [6, 'DAL', 'Dallas', 'Cowboys', '002a5c', 'b0b7bc'],
@@ -4718,18 +4723,15 @@ const WNBA_TEAMS = espnTeams('wnba', [[20, 'ATL', 'Atlanta', 'Dream', 'e31837', 
   [17, 'LV', 'Las Vegas', 'Aces', 'a7a8aa', '000000'], [6, 'LA', 'Los Angeles', 'Sparks', '552583', 'fdb927'], [8, 'MIN', 'Minnesota', 'Lynx', '266092', '79bc43'],
   [9, 'NY', 'New York', 'Liberty', '86cebc', '000000'], [11, 'PHX', 'Phoenix', 'Mercury', '3c286e', 'fa4b0a'], [132052, 'POR', 'Portland', 'Fire', 'cee5eb', '000000'],
   [14, 'SEA', 'Seattle', 'Storm', '2c5235', 'fee11a'], [131935, 'TOR', 'Toronto', 'Tempo', '33476d', '7b1b38'], [16, 'WSH', 'Washington', 'Mystics', 'e03a3e', '002b5c']]);
-const FALLBACK_TEAMS = {nfl: NFL_TEAMS, nba: NBA_TEAMS, wnba: WNBA_TEAMS};
+const ESPN_TEAMS = {nfl: NFL_TEAMS, nba: NBA_TEAMS, wnba: WNBA_TEAMS};
 // College football: ESPN's FBS standings give the conferences, each one's teams in ESPN's standing order (its conference seed,
-// then conference record, then overall record). Colors come from ESPN's team list. If the standings don't load, the teams
+// then conference record, then overall record). Colors come from teamColors() when a team is shown (ESPN's team list sends
+// no CORS headers, so the page doesn't ask for it). If the standings don't load, the teams
 // playing in the games list stand in, alphabetically and without conferences.
 const recOf = (e, k) => e.stats?.find(x => x.type === k || x.name === k);
 const pct = r => { const [w, l, t] = String(r?.summary || r?.displayValue || '').split('-').map(Number); return w + l + (t || 0) ? (w + (t || 0) / 2) / (w + l + (t || 0)) : 0; };
 async function loadCFBTeams(){
-  const [st, tl] = await Promise.allSettled([
-    getJSON(`${SPORTS.cfb.standings}?region=us&lang=en&contentorigin=espn&group=80&season=${seasonYear()}&type=0&level=3`),
-    getJSON(`${API}/teams?limit=1000`)]);
-  const look = new Map();
-  for (const x of tl.value?.sports?.[0]?.leagues?.[0]?.teams || []) if (x.team?.id) look.set(String(x.team.id), x.team);
+  const st = {value: await getJSON(`${SPORTS.cfb.standings}?region=us&lang=en&contentorigin=espn&group=80&season=${seasonYear()}&type=0&level=3`).catch(() => null)};
   const nodes = [];
   (function walk(n){ for (const c of n?.children || []) { if (c.isConference || c.standings?.entries) nodes.push(c); else walk(c); } })(st.value);
   const list = [], confs = [];
@@ -4740,9 +4742,9 @@ async function loadCFBTeams(){
     entries.sort((a, b) => seed(a) - seed(b) || pct(recOf(b, 'vsconf')) - pct(recOf(a, 'vsconf')) || pct(recOf(b, 'total')) - pct(recOf(a, 'total')));
     const conf = {id: String(c.id), name: c.abbreviation || c.shortName || c.name, full: c.name, ids: new Set()};
     entries.forEach((e, i) => {
-      const id = String(e.team.id), x = look.get(id) || {};
-      const logo = (e.team.logos?.find(l => l.rel?.includes('default')) || e.team.logos?.[0] || x.logos?.[0])?.href || `https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`;
-      const t = teamObj({...x, ...e.team, color: x.color, alternateColor: x.alternateColor, logo});
+      const id = String(e.team.id);
+      const logo = (e.team.logos?.find(l => l.rel?.includes('default')) || e.team.logos?.[0])?.href || `https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`;
+      const t = teamObj({...e.team, logo});
       Object.assign(t, {conf: conf.id, rank: i + 1, rec: recOf(e, 'total')?.displayValue || recOf(e, 'overall')?.displayValue || '', crec: recOf(e, 'vsconf')?.displayValue || ''});
       conf.ids.add(id); list.push(t);
     });
@@ -4795,12 +4797,9 @@ async function loadTeams(){
       const j = await getJSON(`${MLB_API}/v1/teams?sportId=1&season=${seasonYear()}`);
       list = (j.teams || []).filter(t => t.active !== false).map(t => teamObj(mlbTeamOf(t)));
     } else {
-      const j = await getJSON(`${API}/teams`).catch(() => null);
-      // teams with no logo are exhibition opponents (ESPN's NBA list includes one), not league teams
-      list = (j?.sports?.[0]?.leagues?.[0]?.teams || []).map(x => x.team).filter(t => t?.id && t.isActive !== false && t.logos?.length)
-        .map(t => teamObj({...t, logo: (t.logos?.find(l => l.rel?.includes('default')) || t.logos?.[0])?.href}));
-      const fb = FALLBACK_TEAMS[S.sport] || [];
-      if (list.length < fb.length) list = fb.map(t => teamObj(t));
+      // ESPN's team list (site API /teams) sends no CORS headers, so it always fails on github.io: ESPN sports use
+      // their built-in list
+      list = (ESPN_TEAMS[S.sport] || []).map(t => teamObj(t));
     }
   } catch (e) { list = []; }
   if (sport !== S.sport) return;
