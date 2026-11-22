@@ -19,7 +19,7 @@ In `sports/index.html`:
 2. **Tab.** Turn the sport's "soon" tab into `<button class="tab" aria-pressed="false" id="sport-<key>">`, and give it a `SPORTS` entry with the same key (the click handler comes from `SPORTS`). A sport that plays like one already on the page shares its code through `family`, the way the NBA and WNBA share the basketball code (`isBB()`).
 3. **Booth.** Add a `CAST.<key>` entry with two announcers of the sport's own, play-by-play (A) and color (B). Booths are never shared between sports.
 4. **Games list.** `loadScoreboard()` fills `S.events` with games shaped like ESPN events (`id`, `date`, `status.type.state` of pre/in/post, and `competitions[0].competitors` with home/away teams and scores). See `loadMLBGames()` and `mlbEvent()` for a source that isn't ESPN.
-5. **Teams.** `loadTeams()` lists every team as `teamObj(...)` objects with colors and a logo, plus a built-in fallback list in case the provider's team list doesn't load (like `NFL_TEAMS` and `NBA_TEAMS`, listed in `FALLBACK_TEAMS`). `logoURL()` returns a logo made for dark backgrounds.
+5. **Teams.** `loadTeams()` lists every team as `teamObj(...)` objects with colors and a logo. For an ESPN sport this is a built-in list (like `NFL_TEAMS` and `NBA_TEAMS`, listed in `ESPN_TEAMS`), because ESPN's team list doesn't load on the live site (see below). `logoURL()` returns a logo made for dark backgrounds.
 6. **Team page.** `loadTeamData()` fills the season's games (next game, live game, replays), season stats, and news from the same provider. `loadRoster()` returns players with number, name, position and group.
 7. **Player card.** `headshotURL()`, `loadSeason()` (season and career stats) and `gameStatsFor()` (this game's line).
 8. **Play-by-play.** `gameURL()` and `playsOf()` turn the provider's feed into an ordered list of plays. Each play needs a stable `id` so live polling never repeats one.
@@ -31,6 +31,16 @@ In `sports/index.html`:
 In `sports/show.js` (the Sports Desk, the channel's entry point):
 
 13. **Desk slot.** Add the sport's key to `DESK_ORDER` so Bo's loop reaches it, and check `deskClips()` picks sensible highlights for it (the scoring plays its `buildReplay()` marks) and `deskStatRows()` names a few of its box-score keys. The guest in the booth is the sport's own `CAST` pair, so nothing else is needed.
+
+## ESPN URLs that fail on the live site
+
+Some ESPN URLs work in a local test but fail on github.io, because ESPN sends them without CORS headers and the browser refuses the answer. Test a new ESPN URL from the live page's console (`await fetch(url)`) before relying on it. As of November 2026:
+
+- **Works:** `site.api.espn.com` scoreboards, game summaries, team rosters, schedules and statistics; `site.web.api.espn.com` standings; everything on `sports.core.api.espn.com` (`SPORTS.<sport>.core`).
+- **Blocked:** `site.api.espn.com/.../teams` (the team list), `.../teams/{id}` (team details) and `.../teams/{id}/depthcharts`, and the same paths on `site.web.api.espn.com`. The page doesn't call them.
+- **Instead:** team lists are built in (`ESPN_TEAMS`); team colors come from `{core}/teams/{id}`; the NFL depth chart comes from `{core}/seasons/{year}/teams/{id}/depthcharts`, whose athletes are `$ref` links with a `rank` (1 is the starter). ESPN has no college depth chart (it answers 400), so `depth` is set only for the NFL, and NCAAF lineups put the players from the box score first.
+
+`sports.core.api.espn.com` is ESPN too, so it counts as the same data source; add it to `hosts`.
 
 ## Before opening the pull request
 
