@@ -5,37 +5,14 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Proposed SNAP rules could cut 6.3 million people",
-    "b": "Two newly proposed USDA rules could end benefits for an estimated 6.3 million people.",
-    "date": "2026-11-20",
-    "publisher": "WABE",
-    "title": "Center on Budget and Policy spokesperson explains potential harm of proposed SNAP cuts",
-    "url": "https://www.wabe.org/center-on-budget-and-policy-spokesperson-explains-potential-harm-of-proposed-snap-cuts/",
-    "published": "2026-11-20T21:28:00Z",
-    "updated": "2026-11-20T22:01:09Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "Air traffic control still runs on antique tech",
-    "b": "Last week's nationwide ground stop was a reminder that the US air traffic control system relies on antiquated technology.",
-    "date": "2026-11-20",
-    "publisher": "WABE",
-    "title": "Why the U.S. air traffic control system relies on an 'antique' network",
-    "url": "https://www.wabe.org/why-the-u-s-air-traffic-control-system-still-relies-on-an-antique-network-2/",
-    "published": "2026-11-20T19:08:21Z",
-    "updated": "2026-11-20T19:08:25Z",
-    "gathered": "2026-11-20T20:12:19Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
     "temp": 57,
     "cond": "Light Rain",
     "wind": "N 9 mph",
-    "humidity": 83,
-    "obs": "21 Nov 16:52 pm EST"
+    "humidity": 87,
+    "obs": "21 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -66,7 +43,7 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Partly cloudy, with a low around 50."
+     "text": "Partly cloudy, with a low around 50. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday",
@@ -88,21 +65,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "atlanta-ga",
-  "goodnews": [
-   {
-    "h": "Food Well Alliance grows Atlanta's local food",
-    "b": "The group is helping metro Atlanta build community gardens, urban farms and orchards.",
-    "date": "2026-11-20",
-    "publisher": "WABE",
-    "title": "Food Well Alliance helps metro Atlanta cities grow stronger local food systems",
-    "url": "https://www.wabe.org/food-well-alliance-helps-metro-atlanta-cities-grow-stronger-local-food-systems/",
-    "published": "2026-11-20T20:57:00Z",
-    "updated": "2026-11-20T21:51:15Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -110,58 +75,14 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "Rain ends dry stretch late Sunday",
-    "b": "A fast-moving storm will bring soaking rain late Sunday into early Monday, the first measurable rain since Nov. 13.",
-    "date": "2026-11-20",
-    "publisher": "WBUR",
-    "title": "Ending the dry stretch: Rain arrives late Sunday as fast-moving storm arrives",
-    "url": "https://www.wbur.org/news/2026/11/20/boston-rain-storm-sunday-weather",
-    "gathered": "2026-11-20T20:12:19Z"
-   },
-   {
-    "h": "Bay State lawmakers set for top roles in Congress",
-    "b": "Katherine Clark will be the first woman House majority leader, and Elizabeth Warren is poised for a Senate committee chair.",
-    "date": "2026-11-20",
-    "publisher": "WBUR",
-    "title": "Massachusetts lawmakers are poised to take on key roles in the next Congress",
-    "url": "https://www.wbur.org/news/2026/11/20/blue-wave-clark-pressley-warren-banking-house",
-    "gathered": "2026-11-20T18:43:48Z"
-   },
-   {
-    "h": "Charlie's Kitchen closes for good",
-    "b": "The Harvard Square fixture since 1951 closed after a flood shut it nearly 10 months ago and its building was sold.",
-    "date": "2026-11-20",
-    "publisher": "WBUR",
-    "title": "Remembering Charlie’s Kitchen, a Harvard Square fixture since 1951",
-    "url": "https://www.wbur.org/news/2026/11/20/remembering-charlies-kitchen-harvard-square",
-    "gathered": "2026-11-20T18:43:48Z"
-   },
-   {
-    "h": "Fewer MBTA shutdowns planned for 2027",
-    "b": "Weekday shutdowns should be fewer next year; this weekend, shuttle buses replace the Red Line between Broadway and North Quincy.",
-    "date": "2026-11-20",
-    "publisher": "WBUR",
-    "title": "The MBTA is planning fewer shutdowns in 2027. Here's a peek at the schedule",
-    "url": "https://www.wbur.org/news/2026/11/20/mbta-shutdown-2027-schedule-phil-eng",
-    "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "Logan tests robot wheelchairs and cleaners",
-    "b": "Massport is piloting autonomous wheelchairs and cleaning machines at Logan to boost customer satisfaction.",
-    "date": "2026-11-20",
-    "url": "https://www.wbur.org/news/2026/11/20/logan-airport-autonomous-wheelchairs-cleaners-boston",
-    "gathered": "2026-11-20T14:15:03Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 51,
+    "temp": 50,
     "cond": "Mostly Cloudy",
-    "wind": "N 5 mph",
-    "humidity": 86,
-    "obs": "21 Nov 16:54 pm EST"
+    "wind": "Calm",
+    "humidity": 89,
+    "obs": "21 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -214,7 +135,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -235,47 +156,15 @@
     "published": "2026-11-21T12:01:00Z",
     "updated": "2026-11-21T12:01:01Z",
     "gathered": "2026-11-21T16:54:03Z"
-   },
-   {
-    "h": "Illinois SNAP enrollment at lowest since 2009",
-    "b": "Participation keeps falling, even among children, after the federal overhaul, state data show.",
-    "date": "2026-11-20",
-    "publisher": "WBEZ",
-    "title": "SNAP enrollment in Illinois keeps dropping in wake of 'One Big Beautiful Bill' overhaul",
-    "url": "https://www.wbez.org/health-medicine/2026/11/20/snap-enrollment-in-illinois-keeps-dropping-in-wake-of-one-big-beautiful-bill-overhaul",
-    "published": "2026-11-20T18:08:02Z",
-    "updated": "2026-11-20T18:08:02Z",
-    "gathered": "2026-11-20T18:43:48Z"
-   },
-   {
-    "h": "Christkindlmarket opens for 30th year",
-    "b": "The German-inspired market opens Nov. 20 in Daley Plaza, with Wrigleyville and Aurora markets opening the same day.",
-    "date": "2026-11-20",
-    "url": "https://www.wbez.org/things-to-do/2026/11/20/christkindlmarket-daley-plaza-wrigleyville-aurora",
-    "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "South and West Side drivers booted most",
-    "b": "Chicago booted more than 283,000 vehicles from 2020 through 2025, with some majority-Black areas at twice the citywide rate, a WBEZ and Sun-Times analysis found.",
-    "date": "2026-11-20",
-    "url": "https://www.wbez.org/wbez-investigations/2026/11/20/booted-tickets-booting-chicago",
-    "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "Evanston moves to save modernist Chase bank",
-    "b": "The Preservation Commission voted to pursue landmark status for a branch designed by a disciple of Mies van der Rohe, halting Chase's demolition plan for now.",
-    "date": "2026-11-20",
-    "url": "https://www.wbez.org/architecture/2026/11/20/evanston-landmark-officials-save-modernist-chase-bank-demolition",
-    "gathered": "2026-11-20T11:14:39Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
+    "temp": 65,
     "cond": "Partly Cloudy",
-    "wind": "S 9 mph, gusts to 18 mph",
-    "humidity": 35,
-    "obs": "21 Nov 15:53 pm CST"
+    "wind": "S 8 mph",
+    "humidity": 39,
+    "obs": "21 Nov 16:53 pm CST"
    },
    "periods": [
     {
@@ -328,17 +217,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "Hopleaf's Mighty Slim pours his last beer",
-    "b": "The beloved Andersonville bartender retired Friday after 34 years behind the bar.",
-    "date": "2026-11-20",
-    "url": "https://www.wbez.org/food-drink/2026/11/20/after-34-years-bartending-at-hopleaf-in-andersonville-mighty-slim-has-poured-his-last-beer",
-    "gathered": "2026-11-20T14:15:03Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -346,43 +227,16 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [
-   {
-    "h": "Crisanta Duran weighs run for 1st District",
-    "b": "Duran, who formed an exploratory committee in September, could challenge Rep. Melat Kiros in 2028.",
-    "date": "2026-11-20",
-    "publisher": "Denverite",
-    "title": "Melat Kiros may face a notable Democratic challenger in 2028",
-    "url": "https://denverite.com/2026/11/20/crisanta-duran-1st-congressional-district-potential-run/",
-    "published": "2026-11-20T20:26:46Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "Broncos team up with 'Umamusume' anime",
-    "b": "The team will collaborate with the anime when it plays the Miami Dolphins on Dec. 6.",
-    "date": "2026-11-20",
-    "publisher": "Denverite",
-    "title": "The Denver Broncos are embracing their bond with anime horse girls",
-    "url": "https://denverite.com/2026/11/20/denver-broncos-umamusume-collab/",
-    "published": "2026-11-20T20:37:13Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 41,
     "cond": "Partly Cloudy",
-    "wind": "S 15 mph",
-    "humidity": 38,
-    "obs": "21 Nov 14:58 pm MST"
+    "wind": "S 13 mph",
+    "humidity": 48,
+    "obs": "21 Nov 15:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 44,
-     "text": "Mostly sunny, with a steady temperature around 44. West wind 5 to 7 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -411,7 +265,13 @@
      "name": "Monday Night",
      "kind": "low",
      "temp": 25,
-     "text": "Mostly cloudy, with a low around 25."
+     "text": "Mostly cloudy, with a low around 25. North wind around 5 mph becoming calm  in the evening. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 49,
+     "text": "Sunny, with a high near 49."
     }
    ]
   },
@@ -427,20 +287,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "denver-co",
-  "goodnews": [
-   {
-    "h": "The crews who make Denver glow",
-    "b": "Teams behind Denver's popular holiday light displays start work in August.",
-    "date": "2026-11-20",
-    "publisher": "Denverite",
-    "title": "It takes miles of lights, time and creativity to make Denver glow for the holidays",
-    "url": "https://denverite.com/2026/11/20/denver-holiday-zoo-lights-botanic-gardens/",
-    "published": "2026-11-20T11:00:00Z",
-    "gathered": "2026-11-20T11:14:39Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -457,7 +306,7 @@
     "title": "Even Orange County couldn’t escape the ‘bluenami’ this election season",
     "url": "https://laist.com/news/politics/voter-guides/2026-election-california-general-orange-county-bluenami-results",
     "published": "2026-11-21T01:13:51Z",
-    "updated": "2026-11-21T01:13:51Z",
+    "updated": "2026-11-21T22:23:36Z",
     "gathered": "2026-11-21T02:15:44Z"
    },
    {
@@ -470,106 +319,16 @@
     "published": "2026-11-21T01:50:44Z",
     "updated": "2026-11-21T01:50:44Z",
     "gathered": "2026-11-21T02:15:44Z"
-   },
-   {
-    "h": "Charter changes would curb LA mayor's power",
-    "b": "The proposals would let the City Council override executive directives and remove general managers with a two-thirds vote.",
-    "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "Two proposed charter changes would roll back LA mayor's power",
-    "url": "https://laist.com/news/politics/two-proposed-charter-changes-would-roll-back-la-mayors-power",
-    "published": "2026-11-21T00:24:18Z",
-    "updated": "2026-11-21T00:55:14Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "CSU faculty vote to authorize strike",
-    "b": "About 97% of California Faculty Association members voted to authorize a strike.",
-    "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "CSU faculty could soon go on strike",
-    "url": "https://laist.com/news/education/csu-faculty-could-soon-go-on-strike",
-    "published": "2026-11-20T22:58:10Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "Man convicted of starting Palisades Fire",
-    "b": "After a mistrial, jurors convicted Jonathan Rinderknecht, 30, of arson for the fire that killed 12 people.",
-    "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "After mistrial, jury convicts man of starting the deadly 2025 Palisades Fire",
-    "url": "https://laist.com/news/criminal-justice/after-mistrial-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire",
-    "published": "2026-11-20T23:31:19Z",
-    "updated": "2026-11-20T23:34:39Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "Video shows Long Beach police clearing way for ICE",
-    "b": "Body camera footage shows officers clearing a road so ICE agents could leave after neighbors surrounded them in North Long Beach.",
-    "date": "2026-11-20",
-    "url": "https://laist.com/news/politics/body-camera-footage-shows-how-police-responded-when-ice-called-for-help-in-north-long-beach",
-    "gathered": "2026-11-20T20:12:19Z"
-   },
-   {
-    "h": "California elects most diverse Legislature yet",
-    "b": "Women, Black, Latino and LGBTQ lawmakers will enter the statehouse in record numbers next year.",
-    "date": "2026-11-20",
-    "url": "https://laist.com/news/politics/california-just-elected-its-most-diverse-group-of-lawmakers-yet",
-    "gathered": "2026-11-20T18:43:48Z"
-   },
-   {
-    "h": "4.2 quake near Commerce rattles LA",
-    "b": "The overnight quake was felt as far as Lancaster and Poway; nearly 13,000 people reported shaking to the USGS.",
-    "date": "2026-11-20",
-    "url": "https://laist.com/news/climate-environment/earthquake-commerce-4-2",
-    "gathered": "2026-11-20T18:43:48Z"
-   },
-   {
-    "h": "State reviews quality of online community college classes",
-    "b": "The community college chancellor is reviewing whether online professors are giving students a quality education.",
-    "date": "2026-11-20",
-    "publisher": "LAist",
-    "title": "Why students might lose access to financial aid because of ‘low-quality’ online courses",
-    "url": "https://laist.com/news/education/students-might-lose-access-to-financial-aid-because-of-low-quality-online-courses",
-    "published": "2026-11-20T13:00:00Z",
-    "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "Over a dozen charged in $22M train heist ring",
-    "b": "Prosecutors say the group stole more than $22 million in cargo, from shoes to power tools, from major retailers.",
-    "date": "2026-11-20",
-    "url": "https://laist.com/news/criminal-justice/suspects-charged-in-brazen-train-heist-ring-that-netted-22-million-in-cargo-from-major-retailers",
-    "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "Did $29M speed up ballot counting?",
-    "b": "The state gave county registrars $29 million to count ballots faster this year, and LA and Orange counties did.",
-    "date": "2026-11-20",
-    "url": "https://laist.com/news/politics/voter-guides/2026-election-la-county-vote-counting-rate-voter-turnout",
-    "gathered": "2026-11-20T02:29:52Z"
-   },
-   {
-    "h": "CD-9 race tightens as Ugarte gains",
-    "b": "Jose Ugarte gained slightly in the race for South LA's Council District 9, which will come down to a narrow number of ballots.",
-    "date": "2026-11-20",
-    "url": "https://laist.com/news/politics/jose-ugarte-gains-slightly-election-south-la-cd-9",
-    "gathered": "2026-11-20T02:29:52Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 70,
-    "wind": "N 1 mph",
-    "humidity": 22,
-    "obs": "21 Nov 02:10 PM PST"
+    "temp": 68,
+    "wind": "Calm",
+    "humidity": 24,
+    "obs": "21 Nov 02:55 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 67,
-     "text": "Sunny, with a high near 67. West wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -599,6 +358,12 @@
      "kind": "low",
      "temp": 55,
      "text": "Partly cloudy, with a low around 55."
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 71,
+     "text": "Mostly sunny, with a high near 71."
     }
    ]
   },
@@ -614,7 +379,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": [
    {
@@ -636,7 +401,7 @@
     "title": "Born after the Eaton Fire, Backyard Party opens a permanent music venue for teens in Pasadena",
     "url": "https://laist.com/news/los-angeles-activities/backyard-party-pasadena-permanent-home-2026",
     "published": "2026-11-21T13:00:00Z",
-    "updated": "2026-11-21T21:34:23Z",
+    "updated": "2026-11-21T23:06:58Z",
     "gathered": "2026-11-21T16:54:03Z"
    }
   ]
@@ -648,6 +413,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Homeless man charged with murder in Chinatown killing",
+    "b": "Police charged a homeless man with murder after a 62-year-old woman was found dead with signs of trauma to her neck at her Catherine Street apartment on Friday.",
+    "date": "2026-11-21",
+    "publisher": "Gothamist",
+    "title": "NYPD charges homeless man with murder after woman, 62, was killed at her Chinatown home",
+    "url": "https://gothamist.com/news/nypd-charges-homeless-man-with-murder-after-woman-62-was-killed-at-her-chinatown-home",
+    "published": "2026-11-21T23:12:39Z",
+    "gathered": "2026-11-21T23:12:04Z"
+   },
    {
     "h": "FDNY leaders on lithium-ion fires and EMS shortages",
     "b": "Fire deaths have nearly doubled since last year, many driven by lithium-ion batteries, and EMS response times remain at a record high. FDNY Commissioner Lillian Bonsignore discussed the department's response on WNYC.",
@@ -687,105 +462,15 @@
     "url": "https://gothamist.com/news/rain-one-again-coming-for-nycs-idyllic-fall-and-maybe-thanksgiving-too",
     "published": "2026-11-21T16:23:00Z",
     "gathered": "2026-11-21T16:54:03Z"
-   },
-   {
-    "h": "Princeton PhD student detained by ICE",
-    "b": "Eva Yi Xie was detained at Reagan National Airport on her way home from a neuroscience conference, the university said.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "Princeton doctoral student from China detained by ICE in Washington, DC",
-    "url": "https://gothamist.com/news/princeton-phd-student-from-china-detained-by-ice-in-washington-dc",
-    "published": "2026-11-20T21:06:00Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "Amazon warns NYC deliveries will cost more",
-    "b": "Amazon told app users deliveries would get pricier if lawmakers pass a bill forcing it to hire many contract drivers as employees.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "'They’re blowing this': Amazon's push against NYC delivery worker bill may be backfiring",
-    "url": "https://gothamist.com/news/theyre-blowing-this-amazons-push-against-nyc-delivery-worker-bill-may-be-backfiring",
-    "published": "2026-11-20T21:38:00Z",
-    "gathered": "2026-11-21T00:54:55Z"
-   },
-   {
-    "h": "MTA chair skeptical of Amtrak's Penn Station plan",
-    "b": "The MTA chair is skeptical of Amtrak's idea to unify Penn Station's railroads.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "MTA chair skeptical of Amtrak's big idea to unify Penn Station's railroads",
-    "url": "https://gothamist.com/news/mta-chair-skeptical-of-amtraks-big-idea-to-unify-penn-stations-railroads",
-    "published": "2026-11-20T19:14:59Z",
-    "gathered": "2026-11-20T20:12:19Z"
-   },
-   {
-    "h": "Mamdani tears Achilles in staff-vs-press soccer game",
-    "b": "The mayor appeared Friday in a medical boot and on crutches after the injury Thursday night.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "Mamdani tears Achilles in soccer match against NYC press corps, will be out for the season",
-    "url": "https://gothamist.com/news/mamdani-tears-achilles-soccer-game",
-    "published": "2026-11-20T16:51:00Z",
-    "gathered": "2026-11-20T18:43:48Z"
-   },
-   {
-    "h": "6,159 supportive housing units sat empty",
-    "b": "More apartments for homeless New Yorkers were vacant in September than the nearly 5,000 people counted sleeping on the street.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "Over 6K NYC apartments for homeless people sat vacant in September, city data shows",
-    "url": "https://gothamist.com/news/over-6k-nyc-apartments-for-homeless-people-sat-vacant-in-september-city-data-shows",
-    "published": "2026-11-20T11:30:59Z",
-    "gathered": "2026-11-20T14:15:03Z"
-   },
-   {
-    "h": "Mamdani plans to close Rikers by 2032",
-    "b": "The plan moves detainees to four borough jails and three hospital units and cuts the jail population to about two-thirds of today's 6,600.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "Mamdani lays out plan to close Rikers by 2032, after years of delays",
-    "url": "https://gothamist.com/news/mamdani-lays-out-plan-to-close-rikers-by-2032-after-years-of-delays",
-    "published": "2026-11-20T19:35:00Z",
-    "gathered": "2026-11-20T10:19:05Z"
-   },
-   {
-    "h": "HUD takes over Newark Housing Authority",
-    "b": "The federal government took control of New Jersey's largest public housing authority, citing missed occupancy and financial targets.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "Federal government claims control of Newark Housing Authority",
-    "url": "https://gothamist.com/news/federal-government-claims-control-of-newark-housing-authority",
-    "published": "2026-11-20T18:07:00Z",
-    "gathered": "2026-11-20T05:12:15Z"
-   },
-   {
-    "h": "Mamdani closes Bronx shelter targeted by ICE subpoena",
-    "b": "The city closed its last migrant shelter, in Mott Haven, and told a court the ICE subpoena for residents' names is now moot.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "Mamdani shuts Bronx migrant shelter at center of ICE fight over residents’ data",
-    "url": "https://gothamist.com/news/mamdani-shuts-bronx-migrant-shelter-at-center-of-ice-fight-over-residents-data",
-    "published": "2026-11-20T03:41:00Z",
-    "gathered": "2026-11-20T05:12:15Z"
-   },
-   {
-    "h": "NY to pay $1.2M in prison sexual assault suit",
-    "b": "The state will pay a woman who accused a former corrections officer of repeated sexual assault at a Manhattan women's prison, her lawyers said.",
-    "date": "2026-11-20",
-    "publisher": "Gothamist",
-    "title": "NY to pay $1.2M to a woman who accused ex-Manhattan corrections officer of sexual assault",
-    "url": "https://gothamist.com/news/ny-to-pay-12m-to-a-woman-who-accused-ex-manhattan-corrections-officer-of-sexual-assault",
-    "published": "2026-11-20T00:12:00Z",
-    "gathered": "2026-11-20T02:29:52Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 57,
     "cond": "Fair",
-    "wind": "SE 5 mph",
-    "humidity": 60,
-    "obs": "21 Nov 16:51 pm EST"
+    "wind": "Calm",
+    "humidity": 67,
+    "obs": "21 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -838,7 +523,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -860,13 +545,6 @@
     "published": "2026-11-21T10:51:26Z",
     "updated": "2026-11-21T10:51:32Z",
     "gathered": "2026-11-21T11:12:39Z"
-   },
-   {
-    "h": "Three police officers sentenced for racist assault",
-    "b": "A Paris court sentenced three officers for beating Black music producer Michel Zecler in 2020, finding racism was an aggravating factor.",
-    "date": "2026-11-20",
-    "url": "https://www.aljazeera.com/news/2026/11/21/three-french-police-officers-sentenced-over-racist-assault-on-black-man",
-    "gathered": "2026-11-21T05:12:00Z"
    }
   ],
   "weather": {
@@ -885,7 +563,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "goodnews": []
  },
  {
@@ -900,10 +578,10 @@
     "b": "Federal immigration agents made an arrest in a crowded Alaska Airlines jetway at Sea-Tac on Saturday morning, sparking a chaotic struggle. Gov. Bob Ferguson called ICE \"completely and totally out of control.\"",
     "date": "2026-11-21",
     "publisher": "KUOW",
-    "title": "‘Outraged.’ Port officials react after ICE arrests family at Sea-Tac Airport",
+    "title": "‘Outraged.’ Port officials react after ICE reportedly arrests family at Sea-Tac Airport",
     "url": "https://www.kuow.org/immigration/2026-11-21/outraged-port-officials-react-after-ice-arrests-family-at-sea-tac-airport",
     "published": "2026-11-21T21:46:25Z",
-    "updated": "2026-11-21T22:12:14Z",
+    "updated": "2026-11-21T23:05:19Z",
     "gathered": "2026-11-21T22:16:51Z"
    },
    {
@@ -912,30 +590,17 @@
     "date": "2026-11-21",
     "url": "https://www.kuow.org/npr-news/2026-11-21/an-effort-to-circumvent-the-electoral-college-may-be-within-reach-but-hurdles-remain",
     "gathered": "2026-11-21T11:12:39Z"
-   },
-   {
-    "h": "Council adopts Mayor Wilson's first budget",
-    "b": "The council voted 7-2, reversing proposed firefighter cuts and adding money for trafficking survivors and affordable housing.",
-    "date": "2026-11-20",
-    "url": "https://www.kuow.org/governing/2026-11-20/seattle-city-council-approves-budget-despite-concerns-from-mayor-some-members",
-    "gathered": "2026-11-21T00:54:55Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 46,
     "cond": "Overcast",
     "wind": "Calm",
-    "humidity": 73,
-    "obs": "21 Nov 01:53 PM PST"
+    "humidity": 70,
+    "obs": "21 Nov 02:53 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 50,
-     "text": "A 30 percent chance of rain after 4pm.  Mostly cloudy, with a high near 50. Light west southwest wind. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -965,6 +630,12 @@
      "kind": "low",
      "temp": 44,
      "text": "Rain likely, mainly after 10pm.  Mostly cloudy, with a low around 44. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+    },
+    {
+     "name": "Tuesday",
+     "kind": "high",
+     "temp": 50,
+     "text": "Rain.  High near 50. Chance of precipitation is 80%."
     }
    ]
   },
@@ -980,7 +651,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-21T23:11:00Z",
+  "updatedAt": "2026-11-22T02:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
