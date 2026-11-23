@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T02:12:00Z",
+ "updatedAt": "2026-11-23T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,13 +7,13 @@
  },
  "world": [
   {
-   "h": "LIVE: Tehran says US 'defeated' and cannot dictate peace terms",
-   "b": "Iran says the United States has been \"defeated\" in the war and cannot dictate the terms of a peace deal. Follow Al Jazeera's live coverage.",
+   "h": "LIVE: Tankers set ablaze in Hormuz as IRGC warns of unrest",
+   "b": "Tankers have been set ablaze in the Strait of Hormuz as Iran's Revolutionary Guard warns of a threat of unrest. Follow Al Jazeera's live coverage.",
    "date": "2026-11-22",
    "publisher": "Al Jazeera",
-   "title": "Iran says two more tankers ablaze near Hormuz after hitting mines",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue",
-   "gathered": "2026-11-22T10:07:56Z"
+   "title": "Tankers set ablaze in Hormuz as IRGC warns of unrest threat",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/22/iran-war-live-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
+   "gathered": "2026-11-23T02:14:41Z"
   }
  ],
  "national": [
@@ -86,13 +86,22 @@
  ],
  "international": [
   {
+   "h": "WHO chief urges peace as fighting disrupts Congo Ebola response",
+   "b": "WHO Director-General Tedros Adhanom Ghebreyesus said fighting near a hospital in Ituri province, the epicentre of DR Congo's Ebola outbreak, disrupted response efforts and forced health workers to shelter in a maternity ward.",
+   "date": "2026-11-22",
+   "place": "Ituri, DR Congo",
+   "tz": "Africa/Lubumbashi",
+   "publisher": "Al Jazeera",
+   "title": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
+   "url": "https://www.aljazeera.com/news/2026/11/23/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit-dr-congo-region",
+   "gathered": "2026-11-23T02:14:41Z"
+  },
+  {
    "h": "Likud and Eisenkot's Yashar end coalition talks without a deal",
    "b": "Caretaker Prime Minister Benjamin Netanyahu's Likud and Gadi Eisenkot's Yashar party ended coalition talks in Israel without reaching an agreement.",
    "date": "2026-11-22",
    "place": "Tel Aviv, Israel",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Netanyahu’s Likud, Eisenkot’s Yashar end coalition talks without deal",
    "url": "https://www.aljazeera.com/news/2026/11/22/netanyahus-likud-eisenkots-yashar-end-coalition-talks-without-deal",
    "gathered": "2026-11-22T23:44:22Z"
   },
@@ -133,8 +142,6 @@
    "date": "2026-11-22",
    "place": "Khartoum, Sudan",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Drone attacks kill four near Sudan’s capital, damage UN building",
    "url": "https://www.aljazeera.com/news/2026/11/22/rsf-drones-kill-four-in-khartoum",
    "gathered": "2026-11-22T17:58:26Z"
   },
@@ -304,24 +311,25 @@
    "publisher": "Gothamist",
    "title": "A rush to rent control in Jersey City ends in a setback for DSA council members",
    "url": "https://gothamist.com/news/a-rush-to-rent-control-in-jersey-city-ends-in-a-setback-for-dsa-council-members",
-   "published": "2026-11-22T17:40:45Z",
+   "published": "2026-11-22T17:40:00Z",
+   "updated": "2026-11-23T00:58:00Z",
    "gathered": "2026-11-22T17:58:26Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 58,
-   "cond": "Light Rain",
-   "wind": "NE 6 mph",
-   "humidity": 90,
-   "obs": "22 Nov 16:51 pm EST"
+   "temp": 61,
+   "cond": "Overcast",
+   "wind": "Calm",
+   "humidity": 87,
+   "obs": "22 Nov 20:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 56,
-    "text": "A 30 percent chance of rain, mainly before 10pm.  Cloudy, with a low around 56. Northeast wind 6 to 11 mph becoming west after midnight. "
+    "text": "A 30 percent chance of rain, mainly before 10pm.  Cloudy, with a low around 56. North wind 6 to 10 mph becoming west after midnight. "
    },
    {
     "name": "Monday",
