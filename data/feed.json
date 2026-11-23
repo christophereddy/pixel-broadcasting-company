@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T17:12:00Z",
+ "updatedAt": "2026-11-23T20:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -70,23 +70,37 @@
  ],
  "politics": [
   {
+   "h": "Universal healthcare rises on Democrats' agenda",
+   "b": "Democrats plan swift action in the new Congress to reverse recent Medicaid cuts and revive Affordable Care Act tax breaks, with more ambitious universal healthcare goals behind them.",
+   "date": "2026-11-23",
+   "publisher": "PBS NewsHour",
+   "title": "Medicare for All was once a long shot. Now universal healthcare is on the Democrats' agenda",
+   "url": "https://www.pbs.org/newshour/politics/medicare-for-all-was-once-a-long-shot-now-universal-healthcare-is-on-the-democrats-agenda",
+   "published": "2026-11-23T17:05:26Z",
+   "gathered": "2026-11-23T17:15:56Z"
+  },
+  {
+   "h": "Democrats plan 12 debates for 2028 primary",
+   "b": "The Democratic National Committee announced Monday a dozen presidential primary debates for an expected crowded 2028 field, with the first scheduled for June.",
+   "date": "2026-11-23",
+   "publisher": "PBS NewsHour",
+   "title": "Democrats plan 12 debates for their 2028 presidential primary, with what's likely to be a crowded field",
+   "url": "https://www.pbs.org/newshour/politics/democrats-plan-12-debates-for-their-2028-presidential-primary-with-whats-likely-to-be-a-crowded-field",
+   "published": "2026-11-23T15:54:04Z",
+   "gathered": "2026-11-23T17:15:56Z"
+  },
+  {
    "h": "Oath Keepers founder Stewart Rhodes says he's 'done' with Trump",
    "b": "Stewart Rhodes, who went to prison for his role in Jan. 6, now calls Trump a traitor and \"one of the very worst in our nation's history.\"",
    "date": "2026-11-23",
-   "publisher": "PBS NewsHour",
-   "title": "'One of the very worst.' Jan. 6 leader Stewart Rhodes says he is 'absolutely done' with Trump",
    "url": "https://www.pbs.org/newshour/politics/one-of-the-very-worst-jan-6-leader-stewart-rhodes-says-he-is-absolutely-done-with-trump",
-   "published": "2026-11-23T12:59:12Z",
    "gathered": "2026-11-23T14:21:49Z"
   },
   {
    "h": "California voters reject billionaire tax despite progressive wins",
    "b": "52% of voters rejected Proposition 40, a one-time 5% tax on billionaires' wealth, and they narrowly approved a measure making such taxes much harder to enact in the future.",
    "date": "2026-11-23",
-   "publisher": "PBS NewsHour",
-   "title": "How a billionaire tax proposal failed in California despite big election wins for progressives",
    "url": "https://www.pbs.org/newshour/politics/how-a-billionaire-tax-proposal-failed-in-california-despite-big-election-wins-for-progressives",
-   "published": "2026-11-23T13:27:26Z",
    "gathered": "2026-11-23T14:21:49Z"
   },
   {
@@ -123,6 +137,18 @@
   }
  ],
  "international": [
+  {
+   "h": "12,000 evacuated from Manchester concert",
+   "b": "More than 12,000 fans were evacuated from a Don Toliver concert at Manchester's Co-op Live arena and over 80 were treated after an unknown irritant was released in the crowd, police said.",
+   "date": "2026-11-23",
+   "place": "Manchester, England",
+   "tz": "Europe/London",
+   "publisher": "PBS NewsHour",
+   "title": "More than 12,000 fans were evacuated from Don Toliver concert after an unknown substance sickens fans",
+   "url": "https://www.pbs.org/newshour/world/more-than-12000-fans-were-evacuated-from-don-toliver-concert-after-an-unknown-substance-sickens-fans",
+   "published": "2026-11-23T15:15:36Z",
+   "gathered": "2026-11-23T17:15:56Z"
+  },
   {
    "h": "At least 15 killed in Kyiv region as Russia steps up attacks",
    "b": "The death toll from Russian attacks in Ukraine's Kyiv region has risen to at least 15, including at a partially destroyed apartment building in the town of Dymer.",
@@ -289,11 +315,7 @@
    "h": "What Thanksgiving dinner costs this year",
    "b": "Grocery prices have risen nearly 22% over five years, driven by wars, tariffs and severe weather, but food-price experts say it's unclear whether this year's Thanksgiving meal will cost more.",
    "date": "2026-11-23",
-   "publisher": "KUOW",
-   "title": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
    "url": "https://www.kuow.org/npr-news/2026-11-23/lets-talk-turkey-heres-how-thanksgiving-meal-costs-have-changed-this-year",
-   "published": "2026-11-23T10:00:00Z",
-   "updated": "2026-11-23T10:14:50Z",
    "gathered": "2026-11-23T11:12:31Z"
   },
   {
@@ -342,14 +364,20 @@
  ],
  "science": [
   {
+   "h": "Researchers split over 'positive masculinity'",
+   "b": "Psychologist Ryon McDermott spent seven years building a scale to measure masculinity in a positive light, a push that is dividing the male studies field.",
+   "date": "2026-11-23",
+   "publisher": "Science News",
+   "title": "The notion of 'positive masculinity' is dividing the male studies field",
+   "url": "https://www.sciencenews.org/article/positive-masculinity-male-studies-field",
+   "published": "2026-11-23T16:00:00Z",
+   "gathered": "2026-11-23T17:15:56Z"
+  },
+  {
    "h": "Mushroom supplements promise a lot. What does the science say?",
    "b": "NPR looks at the evidence behind popular mushroom supplements such as lion's mane and reishi.",
    "date": "2026-11-23",
-   "publisher": "KUOW",
-   "title": "Mushroom supplements promise health benefits. What does the science say?",
    "url": "https://www.kuow.org/npr-news/2026-11-23/mushroom-supplements-promise-health-benefits-what-does-the-science-say",
-   "published": "2026-11-23T10:00:00Z",
-   "updated": "2026-11-23T10:14:17Z",
    "gathered": "2026-11-23T11:12:31Z"
   },
   {
@@ -404,6 +432,17 @@
  ],
  "local": [
   {
+   "h": "Top court upholds Section 8 renter protection",
+   "b": "New York's Court of Appeals upheld a state law banning discrimination against tenants who pay rent with housing subsidies, siding with Attorney General Letitia James against an Ithaca landlord.",
+   "date": "2026-11-23",
+   "publisher": "Gothamist",
+   "title": "New York’s highest court upholds key protection for low-income renters with Section 8",
+   "url": "https://gothamist.com/news/new-yorks-highest-court-upholds-key-protection-for-low-income-renters-with-section-8",
+   "published": "2026-11-23T16:06:00Z",
+   "updated": "2026-11-23T16:33:00Z",
+   "gathered": "2026-11-23T17:15:56Z"
+  },
+  {
    "h": "New film captures ICE agents' banter at NYC courthouse arrests",
    "b": "Journalist Emma V.F. filmed scores of arrests at 26 Federal Plaza, along with the rarely seen small talk among the ICE agents making them.",
    "date": "2026-11-23",
@@ -447,25 +486,23 @@
    "publisher": "Gothamist",
    "title": "A rush to rent control in Jersey City ends in a setback for DSA council members",
    "url": "https://gothamist.com/news/a-rush-to-rent-control-in-jersey-city-ends-in-a-setback-for-dsa-council-members",
-   "published": "2026-11-22T17:40:00Z",
-   "updated": "2026-11-23T00:58:00Z",
+   "published": "2026-11-23T00:58:00Z",
    "gathered": "2026-11-22T17:58:26Z"
   }
  ],
  "weather": {
   "now": {
-   "temp": 59,
+   "temp": 67,
    "cond": "Fair",
-   "wind": "W 6 mph",
-   "humidity": 83,
-   "obs": "23 Nov 08:51 am EST"
+   "humidity": 59,
+   "obs": "23 Nov 11:51 am EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 65,
-    "text": "Mostly sunny, with a high near 65. West wind 9 to 14 mph. "
+    "text": "Mostly sunny, with a high near 65. West wind 11 to 14 mph. "
    },
    {
     "name": "Tonight",
@@ -507,7 +544,8 @@
    "publisher": "Gothamist",
    "title": "These New Yorkers ditched their smartphones for a month. No, seriously.",
    "url": "https://gothamist.com/news/these-new-yorkers-ditched-their-smartphones-for-a-month-no-seriously",
-   "published": "2026-11-23T11:00:59Z",
+   "published": "2026-11-23T11:00:00Z",
+   "updated": "2026-11-23T15:54:00Z",
    "gathered": "2026-11-23T11:12:31Z"
   },
   {
