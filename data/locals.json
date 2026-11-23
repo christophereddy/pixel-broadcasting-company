@@ -24,26 +24,19 @@
     "publisher": "Gothamist",
     "title": "Delta delays flights ahead of Thanksgiving holiday over system failure",
     "url": "https://gothamist.com/news/scattered-showers-heading-for-nyc-could-linger-into-monday",
-    "published": "2026-11-22T17:49:00Z",
-    "updated": "2026-11-22T18:05:00Z",
+    "published": "2026-11-22T18:05:00Z",
     "gathered": "2026-11-22T17:58:26Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 65,
+    "temp": 67,
     "cond": "Mostly Cloudy",
-    "wind": "NW 9 mph",
-    "humidity": 76,
-    "obs": "23 Nov 11:52 am EST"
+    "wind": "W 8 mph, gusts to 17 mph",
+    "humidity": 68,
+    "obs": "23 Nov 14:52 pm EST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 70,
-     "text": "Mostly cloudy, with a high near 70. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -53,26 +46,32 @@
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 64,
-     "text": "Partly sunny, with a high near 64. North wind 5 to 15 mph becoming east in the afternoon. Winds could gust as high as 20 mph. "
+     "temp": 62,
+     "text": "Mostly cloudy, with a high near 62. North wind 5 to 15 mph becoming east in the morning. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Mostly cloudy, with a low around 44. East wind 10 to 15 mph, with gusts as high as 30 mph. "
+     "temp": 43,
+     "text": "Mostly cloudy, with a low around 43. East wind 10 to 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 54,
-     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 54. East wind around 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 60%."
+     "temp": 51,
+     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 51. East wind around 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "Showers.  Low around 45. Chance of precipitation is 90%."
+     "temp": 44,
+     "text": "Showers.  Low around 44. Chance of precipitation is 80%."
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 57,
+     "text": "A 40 percent chance of showers before 1pm.  Mostly cloudy, with a high near 57."
     }
    ]
   },
@@ -88,7 +87,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -99,6 +98,24 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Beacon Hill welcomes at least 21 new lawmakers",
+    "b": "The incoming class includes a 19-year-old from Billerica, a 'Bachelorette' contestant and the sitting mayor of Gardner; every freshman but one is a Democrat.",
+    "date": "2026-11-23",
+    "publisher": "WBUR",
+    "title": "A mayor, a 19-year-old and a 'Bachelorette' alum: Meet Beacon Hill’s incoming class",
+    "url": "https://www.wbur.org/news/2026/11/23/massachusetts-beacon-hill-incoming-class-senate-house",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
+   {
+    "h": "Massachusetts sues ICE over courthouse arrests",
+    "b": "Attorney General Andrea Campbell sued the Trump administration, saying immigration agents keep arresting people inside Massachusetts courthouses in violation of a new state law.",
+    "date": "2026-11-23",
+    "publisher": "WBUR",
+    "title": "Mass. sues ICE over immigration arrests in state courts",
+    "url": "https://www.wbur.org/news/2026/11/23/massachusetts-ice-lawsuit-courtroom-arrests",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
    {
     "h": "Coastal storm set to soak Thanksgiving",
     "b": "Tuesday and Wednesday look clear for travel, but a coastal storm is expected to bring soaking rain, strong wind gusts and coastal flooding on Thanksgiving Day.",
@@ -112,56 +129,54 @@
     "h": "ICE keeps making courthouse arrests despite new state law",
     "b": "Immigration agents are still arresting people at Massachusetts courthouses, including a Framingham district court, despite the state's new PROTECT Act.",
     "date": "2026-11-22",
-    "publisher": "WBUR",
-    "title": "ICE continues courthouse arrests, despite state's new PROTECT Act",
     "url": "https://www.wbur.org/news/2026/11/22/massachusetts-immigration-court-arrests-agents",
     "gathered": "2026-11-22T17:58:26Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
+    "temp": 67,
     "cond": "Partly Cloudy",
-    "wind": "SW 13 mph",
-    "humidity": 63,
-    "obs": "23 Nov 11:54 am EST"
+    "wind": "W 8 mph, gusts to 23 mph",
+    "humidity": 53,
+    "obs": "23 Nov 14:54 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 67,
-     "text": "Mostly sunny, with a high near 67. West wind 11 to 13 mph, with gusts as high as 25 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "Mostly cloudy, then gradually becoming clear, with a low around 42. Northwest wind 7 to 13 mph. "
+     "temp": 38,
+     "text": "Mostly cloudy, then becoming clear toward daybreak, with a low around 38. Northwest wind 5 to 8 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 46,
-     "text": "Sunny, with a high near 46. Northwest wind 11 to 17 mph. "
+     "text": "Sunny, with a high near 46. Northwest wind 7 to 11 mph. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 30,
-     "text": "Clear, with a low around 30. Northwest wind 7 to 9 mph. "
+     "temp": 28,
+     "text": "Clear, with a low around 28. North wind 3 to 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 44,
-     "text": "Sunny, with a high near 44. Calm wind becoming northeast 5 to 8 mph in the morning. "
+     "temp": 45,
+     "text": "Sunny, with a high near 45. North wind around 5 mph becoming light and variable  in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly cloudy, with a low around 34. Northeast wind 7 to 10 mph. "
+     "temp": 32,
+     "text": "Partly cloudy, with a low around 32. Calm wind becoming northeast around 5 mph after midnight. "
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 53,
+     "text": "A chance of rain, mainly after 5pm.  Mostly cloudy, with a high near 53. East wind 6 to 16 mph, with gusts as high as 38 mph.  Chance of precipitation is 30%."
     }
    ]
   },
@@ -177,7 +192,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -243,15 +258,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 43,
     "cond": "A Few Clouds",
-    "wind": "NW 10 mph",
-    "humidity": 55,
-    "obs": "23 Nov 10:53 am CST"
+    "wind": "N 9 mph",
+    "humidity": 47,
+    "obs": "23 Nov 13:53 pm CST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 42,
      "text": "Partly sunny, with a high near 42. Northwest wind around 15 mph, with gusts as high as 20 mph. "
@@ -259,32 +274,32 @@
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 30,
-     "text": "Partly cloudy, with a low around 30. North northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 33,
+     "text": "Partly cloudy, with a low around 33. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 42,
-     "text": "A slight chance of rain and snow showers before 11am, then a slight chance of rain showers between 11am and noon.  Partly sunny, with a high near 42. North wind 5 to 10 mph becoming east southeast in the afternoon.  Chance of precipitation is 20%."
+     "text": "Partly sunny, with a high near 42. North northwest wind 5 to 10 mph becoming east in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 35,
-     "text": "Mostly cloudy, with a low around 35. East southeast wind 5 to 10 mph. "
+     "temp": 37,
+     "text": "Mostly cloudy, with a low around 37. East wind 5 to 15 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 45,
-     "text": "Mostly cloudy, with a high near 45. East wind 10 to 15 mph. "
+     "temp": 46,
+     "text": "A 20 percent chance of rain after noon.  Mostly cloudy, with a high near 46. Breezy, with an east northeast wind 10 to 20 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 40,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 40."
+     "temp": 41,
+     "text": "A 50 percent chance of rain.  Cloudy, with a low around 41. Breezy. "
     }
    ]
   },
@@ -300,7 +315,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -322,27 +337,38 @@
    "short": "DEN",
    "tz": "America/Denver"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Saturday flurries weren't Denver's first snow",
+    "b": "The weekend flurries didn't count as Denver's official first snow, making this already the third-latest first snow on record.",
+    "date": "2026-11-23",
+    "publisher": "Denverite",
+    "title": "Sorry, those Saturday flurries didn’t count as Denver’s official first snow",
+    "url": "https://denverite.com/2026/11/23/denver-no-first-snow-yet/",
+    "published": "2026-11-23T19:10:17Z",
+    "gathered": "2026-11-23T20:27:45Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 31,
-    "cond": "Mostly Cloudy",
-    "wind": "Calm",
-    "humidity": 78,
-    "obs": "23 Nov 08:58 am MST"
+    "temp": 42,
+    "cond": "Partly Cloudy",
+    "wind": "N 9 mph",
+    "humidity": 46,
+    "obs": "23 Nov 12:58 pm MST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
-     "temp": 43,
-     "text": "Partly sunny, with a high near 43. Calm wind becoming northeast around 6 mph in the afternoon. "
+     "temp": 42,
+     "text": "Mostly cloudy, with a high near 42. North northeast wind around 6 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 25,
-     "text": "A slight chance of snow showers between 8pm and 11pm.  Partly cloudy, with a low around 25. Light and variable wind.  Chance of precipitation is 20%."
+     "text": "Mostly cloudy, with a low around 25. Light and variable wind. "
     },
     {
      "name": "Tuesday",
@@ -353,20 +379,20 @@
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 24,
-     "text": "Mostly clear, with a low around 24. Southwest wind around 6 mph. "
+     "temp": 26,
+     "text": "Mostly clear, with a low around 26. Southwest wind 3 to 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 53,
-     "text": "Sunny, with a high near 53. Calm wind becoming east northeast around 5 mph. "
+     "text": "Sunny, with a high near 53. Calm wind becoming east around 5 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 26,
-     "text": "Partly cloudy, with a low around 26."
+     "temp": 27,
+     "text": "Partly cloudy, with a low around 27."
     }
    ]
   },
@@ -382,7 +408,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -394,6 +420,28 @@
   },
   "local": [
    {
+    "h": "Thanksgiving dinner may cost more this year",
+    "b": "The American Farm Bureau Federation estimates Thanksgiving will cost more than 6% more than last year, though other food-price experts say the increase is unclear.",
+    "date": "2026-11-23",
+    "publisher": "LAist",
+    "title": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+    "url": "https://laist.com/news/lets-talk-turkey-heres-how-thanksgiving-meal-costs-have-changed-this-year",
+    "published": "2026-11-23T17:39:17Z",
+    "updated": "2026-11-23T17:39:17Z",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
+   {
+    "h": "Ethics panel finds Rep. Gomez made unwelcome advances",
+    "b": "The House Ethics Committee reported 'substantial evidence' that Rep. Jimmy Gomez made unwelcome sexual advances and contact toward a House staffer.",
+    "date": "2026-11-23",
+    "publisher": "LAist",
+    "title": "Ethics probe finds Democratic Rep. Jimmy Gomez made unwelcome sexual advances to a staffer",
+    "url": "https://laist.com/news/politics/ethics-probe-finds-democratic-rep-jimmy-gomez-made-unwelcome-sexual-advances-to-a-staffer",
+    "published": "2026-11-23T20:19:08Z",
+    "updated": "2026-11-23T20:19:08Z",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
+   {
     "h": "Why international tourists love Route 66",
     "b": "A century after its founding, the nearly 2,500-mile highway from Chicago to Santa Monica still draws tour groups from abroad to stops like Roy's Motel and Cafe in Amboy.",
     "date": "2026-11-22",
@@ -403,17 +451,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 68,
     "wind": "S 2 mph",
-    "humidity": 62,
-    "obs": "23 Nov 09:10 AM PST"
+    "humidity": 46,
+    "obs": "23 Nov 12:25 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Northeast wind around 5 mph becoming west northwest in the afternoon. "
+     "text": "Increasing clouds, with a high near 69. East southeast wind around 5 mph becoming west northwest. "
     },
     {
      "name": "Tonight",
@@ -425,13 +473,13 @@
      "name": "Tuesday",
      "kind": "high",
      "temp": 73,
-     "text": "Mostly sunny, with a high near 73. North wind around 5 mph becoming west northwest in the afternoon. "
+     "text": "Increasing clouds, with a high near 73. North wind around 5 mph becoming west northwest in the afternoon. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Cloudy, then gradually becoming partly cloudy, with a low around 55. Northwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly cloudy, with a low around 55. North northwest wind around 5 mph. "
     },
     {
      "name": "Wednesday",
@@ -442,8 +490,8 @@
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 52,
-     "text": "Mostly clear, with a low around 52."
+     "temp": 55,
+     "text": "Mostly clear, with a low around 55."
     }
    ]
   },
@@ -459,7 +507,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -470,6 +518,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Flu cases surge ahead of Thanksgiving",
+    "b": "More than 43,000 New Yorkers have caught the flu since early October, compared with about 7,000 at this point last season, state data shows.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "Reported flu cases surge across New York ahead of Thanksgiving",
+    "url": "https://gothamist.com/news/reported-flu-cases-surge-across-new-york-ahead-of-thanksgiving",
+    "published": "2026-11-23T18:16:27Z",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
+   {
+    "h": "NY sues HUD over mixed-status housing rule",
+    "b": "The state and city sued over a federal rule that could strip housing assistance from about 20,000 families in which not every member is a citizen or eligible non-citizen.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "NYC, state sue Trump administration over ‘mixed-status’ federal housing assistance rule",
+    "url": "https://gothamist.com/news/attorney-general-letitia-james-sues-hud-over-mixed-status-housing-rule",
+    "published": "2026-11-23T18:44:56Z",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
    {
     "h": "Top court upholds Section 8 renter protection",
     "b": "New York's Court of Appeals upheld a state law banning discrimination against tenants who pay rent with housing subsidies, siding with Attorney General Letitia James against an Ithaca landlord.",
@@ -488,7 +556,7 @@
     "publisher": "Gothamist",
     "title": "New film captures ICE agents' banter amid NYC courthouse arrests",
     "url": "https://gothamist.com/news/new-film-captures-ice-agents-banter-amid-nyc-courthouse-arrests",
-    "published": "2026-11-23T11:30:46Z",
+    "published": "2026-11-23T11:30:00Z",
     "gathered": "2026-11-23T14:21:49Z"
    },
    {
@@ -531,29 +599,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Fair",
-    "humidity": 59,
-    "obs": "23 Nov 11:51 am EST"
+    "temp": 66,
+    "cond": "Overcast",
+    "wind": "NW 10 mph, gusts to 18 mph",
+    "humidity": 56,
+    "obs": "23 Nov 14:51 pm EST"
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 65,
-     "text": "Mostly sunny, with a high near 65. West wind 11 to 14 mph. "
-    },
-    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 46,
-     "text": "Partly cloudy, with a low around 46. Northwest wind 11 to 14 mph. "
+     "temp": 47,
+     "text": "Partly cloudy, with a low around 47. Northwest wind 11 to 15 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 48,
-     "text": "Sunny, with a steady temperature around 48. North wind 11 to 15 mph. "
+     "temp": 51,
+     "text": "Sunny, with a high near 51. North wind 10 to 16 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -565,13 +628,19 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 50,
-     "text": "Mostly sunny, with a high near 50. Northeast wind 9 to 11 mph. "
+     "text": "Sunny, with a high near 50. Northeast wind around 10 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Mostly cloudy, with a steady temperature around 49. Breezy. "
+     "temp": 48,
+     "text": "Mostly cloudy, with a steady temperature around 48. Breezy, with a northeast wind 11 to 20 mph. "
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 59,
+     "text": "Rain, mainly after 1pm.  High near 59. Windy.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -587,7 +656,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -597,8 +666,7 @@
     "publisher": "Gothamist",
     "title": "These New Yorkers ditched their smartphones for a month. No, seriously.",
     "url": "https://gothamist.com/news/these-new-yorkers-ditched-their-smartphones-for-a-month-no-seriously",
-    "published": "2026-11-23T11:00:00Z",
-    "updated": "2026-11-23T15:54:00Z",
+    "published": "2026-11-23T17:32:00Z",
     "gathered": "2026-11-23T11:12:31Z"
    },
    {
@@ -688,7 +756,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "goodnews": []
  },
  {
@@ -698,6 +766,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Dallesport residents fight huge data center plan",
+    "b": "Neighbors in rural Klickitat County are organizing against a proposed hyperscale data center campus that could one day reach one gigawatt.",
+    "date": "2026-11-23",
+    "publisher": "KUOW",
+    "title": "Rural Washington community organizes against massive data center proposal",
+    "url": "https://www.kuow.org/technology/2026-11-23/rural-washington-community-organizes-against-massive-data-center-proposal",
+    "published": "2026-11-23T18:30:29Z",
+    "updated": "2026-11-23T18:30:29Z",
+    "gathered": "2026-11-23T20:27:45Z"
+   },
    {
     "h": "Longest-serving state justice to retire",
     "b": "Washington Supreme Court Justice Charles W. Johnson, on the court for 36 years, will leave when his term ends this year at the state's mandatory age limit of 75.",
@@ -733,48 +812,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 54,
     "cond": "Overcast",
-    "wind": "SE 11 mph",
-    "humidity": 46,
-    "obs": "23 Nov 09:05 AM PST"
+    "wind": "SE 12 mph",
+    "humidity": 37,
+    "obs": "23 Nov 12:15 PM PST"
    },
    "periods": [
     {
-     "name": "Today",
+     "name": "This Afternoon",
      "kind": "high",
      "temp": 51,
-     "text": "A 30 percent chance of rain, mainly after 4pm.  Mostly cloudy, with a high near 51. East southeast wind around 5 mph. "
+     "text": "A 20 percent chance of rain.  Cloudy, with a high near 51. Southeast wind around 6 mph. "
     },
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 47,
-     "text": "Rain.  Steady temperature around 47. East wind 6 to 8 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "temp": 45,
+     "text": "Rain, mainly before 5am.  Low around 45. East southeast wind 6 to 8 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 52,
-     "text": "Rain, mainly before 3pm.  High near 52. East southeast wind around 8 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly between 10am and 3pm.  Cloudy, with a high near 52. East southeast wind 7 to 9 mph.  Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 47,
-     "text": "Rain, mainly after 10pm.  Low around 47. Southeast wind around 9 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 48,
+     "text": "Rain likely before 11pm, then rain after 1am.  Low around 48. South southeast wind around 10 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 56,
-     "text": "Rain.  High near 56. South southeast wind around 7 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  High near 56. South southeast wind around 8 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 49,
-     "text": "Rain before 4am, then showers and possibly a thunderstorm after 4am.  Low around 49. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
+     "temp": 50,
+     "text": "Rain.  Low around 50. Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     }
    ]
   },
@@ -790,7 +869,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T20:13:00Z",
+  "updatedAt": "2026-11-23T23:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
