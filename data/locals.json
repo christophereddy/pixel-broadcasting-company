@@ -31,18 +31,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
+    "temp": 59,
     "cond": "Mostly Cloudy",
-    "wind": "NW 7 mph",
-    "humidity": 93,
-    "obs": "23 Nov 05:52 am EST"
+    "wind": "NW 9 mph",
+    "humidity": 90,
+    "obs": "23 Nov 08:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 70,
-     "text": "Patchy fog between 8am and 9am.  Otherwise, partly sunny, with a high near 70. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly cloudy, with a high near 70. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tonight",
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -111,18 +111,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "wind": "NW 9 mph",
-    "humidity": 96,
-    "obs": "23 Nov 05:54 am EST"
+    "temp": 57,
+    "cond": "Mostly Cloudy",
+    "wind": "SW 9 mph",
+    "humidity": 87,
+    "obs": "23 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "A slight chance of rain before 7am.  Cloudy through mid morning, then gradual clearing, with a high near 67. West wind 6 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
+     "text": "Cloudy early, then gradual clearing, with a high near 67. West wind 8 to 13 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -168,9 +168,18 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
+   {
+    "h": "Skatesgiving brings roller skating and turkeys to Dorchester",
+    "b": "Kids skated in the Joseph Lee K-8 School auditorium Friday night at an annual community event where families also picked up Thanksgiving food.",
+    "date": "2026-11-23",
+    "publisher": "WBUR",
+    "title": "Annual turkey giveaway centers community, roller skating in Dorchester",
+    "url": "https://www.wbur.org/news/2026/11/23/skatesgiving-dorchester-thanksgiving-roller-skating",
+    "gathered": "2026-11-23T14:21:49Z"
+   },
    {
     "h": "ProBlak's mural brings community stories to A.R.T.'s new center",
     "b": "Artist Rob \"ProBlak\" Gibbs has created a massive mural for the American Repertory Theater's new Goel Center in Allston, which opens to the public in April 2027.",
@@ -190,6 +199,28 @@
   },
   "local": [
    {
+    "h": "Chicago bets on the Soul Train Awards to boost tourism",
+    "b": "Taped in Chicago, the Soul Train Awards return to network TV Friday after a two-year hiatus, and local officials hope the show will draw tourism and more awards specials to the city.",
+    "date": "2026-11-23",
+    "publisher": "WBEZ",
+    "title": "Can the Soul Train Awards help boost Chicago’s reputation as an entertainment destination?",
+    "url": "https://www.wbez.org/movies-tv/2026/11/23/soul-train-awards-chicago-bet-entertainment",
+    "published": "2026-11-23T11:35:00Z",
+    "updated": "2026-11-23T11:35:01Z",
+    "gathered": "2026-11-23T14:21:49Z"
+   },
+   {
+    "h": "Ankle monitors take over a Chicagoan's life",
+    "b": "As the administration puts ankle monitors on more immigrants, advocates say they aren't necessary for people complying with their cases and take a toll on mental health.",
+    "date": "2026-11-23",
+    "publisher": "WBEZ",
+    "title": "As the Trump administration puts ankle monitors on more immigrants, it’s taking over this Chicagoan’s life",
+    "url": "https://www.wbez.org/immigration/2026/11/23/trump-administration-ankle-monitors-immigrants-chicago",
+    "published": "2026-11-23T11:30:00Z",
+    "updated": "2026-11-23T11:30:14Z",
+    "gathered": "2026-11-23T14:21:49Z"
+   },
+   {
     "h": "Teen critically wounded in Riverdale shooting",
     "b": "An 18-year-old was shot in the head Saturday night after a group of men approached him in the 800 block of East 130th Place, police said. He was taken to UChicago Medical Center in critical condition.",
     "date": "2026-11-22",
@@ -204,10 +235,10 @@
   "weather": {
    "now": {
     "temp": 32,
-    "cond": "Fair",
-    "wind": "NW 8 mph",
-    "humidity": 73,
-    "obs": "23 Nov 04:53 am CST"
+    "cond": "A Few Clouds",
+    "wind": "NW 9 mph",
+    "humidity": 69,
+    "obs": "23 Nov 07:53 am CST"
    },
    "periods": [
     {
@@ -260,7 +291,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -285,11 +316,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 26,
-    "cond": "Partly Cloudy",
-    "wind": "S 3 mph",
-    "humidity": 78,
-    "obs": "23 Nov 01:58 am MST"
+    "temp": 27,
+    "cond": "Mostly Cloudy",
+    "wind": "SW 6 mph",
+    "humidity": 81,
+    "obs": "23 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -342,7 +373,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -357,30 +388,26 @@
     "h": "Why international tourists love Route 66",
     "b": "A century after its founding, the nearly 2,500-mile highway from Chicago to Santa Monica still draws tour groups from abroad to stops like Roy's Motel and Cafe in Amboy.",
     "date": "2026-11-22",
-    "publisher": "LAist",
-    "title": "Route 66 is an American icon. That's why international tourists love it",
     "url": "https://laist.com/news/los-angeles-activities/route-66-is-an-american-icon-thats-why-international-tourists-love-it",
-    "published": "2026-11-22T14:43:49Z",
-    "updated": "2026-11-22T17:12:51Z",
     "gathered": "2026-11-22T23:44:22Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "wind": "NW 3 mph",
-    "humidity": 84,
-    "obs": "23 Nov 02:25 AM PST"
+    "temp": 54,
+    "wind": "N 3 mph",
+    "humidity": 83,
+    "obs": "23 Nov 06:10 AM PST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 69,
-     "text": "Sunny, with a high near 69. Northeast wind around 5 mph becoming west northwest in the afternoon. "
+     "text": "Sunny, with a high near 69. North wind around 5 mph becoming east southeast in the morning. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "Mostly cloudy, with a low around 54. North wind around 5 mph. "
@@ -395,13 +422,13 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, with a low around 55. Northwest wind around 5 mph becoming calm  in the evening. "
+     "text": "Cloudy, then gradually becoming partly cloudy, with a low around 55. Northwest wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74."
+     "text": "Sunny, with a high near 74. Calm wind becoming north northwest around 5 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
@@ -423,7 +450,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -435,13 +462,23 @@
   },
   "local": [
    {
+    "h": "New film captures ICE agents' banter at NYC courthouse arrests",
+    "b": "Filmmaker Emma V.F. recorded scores of arrests at 26 Federal Plaza, along with the rarely seen small talk among the ICE agents making them.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "New film captures ICE agents' banter amid NYC courthouse arrests",
+    "url": "https://gothamist.com/news/new-film-captures-ice-agents-banter-amid-nyc-courthouse-arrests",
+    "published": "2026-11-23T11:30:46Z",
+    "gathered": "2026-11-23T14:21:49Z"
+   },
+   {
     "h": "Citi Bike e-bike rides to be capped at $3.65 for members",
     "b": "Under a new deal between Mayor Zohran Mamdani's administration and Lyft, Citi Bike members will pay no more than $3.65 for e-bike rides up to 45 minutes starting Jan. 19, 2027.",
     "date": "2026-11-23",
     "publisher": "Gothamist",
-    "title": "NYC Citi Bike rides to be capped at $3.65 for members under new deal with Lyft",
+    "title": "NYC Citi Bike member rides to be capped at $3.65 after Mamdani inks new deal with Lyft",
     "url": "https://gothamist.com/news/nyc-citi-bike-rides-to-be-capped-at-365-for-members-under-new-deal-with-lyft",
-    "published": "2026-11-23T10:00:52Z",
+    "published": "2026-11-23T10:00:00Z",
     "gathered": "2026-11-23T11:12:31Z"
    },
    {
@@ -476,17 +513,17 @@
   "weather": {
    "now": {
     "temp": 59,
-    "cond": "Mostly Cloudy",
-    "wind": "W 3 mph",
+    "cond": "Fair",
+    "wind": "W 6 mph",
     "humidity": 83,
-    "obs": "23 Nov 05:51 am EST"
+    "obs": "23 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 65. West wind 7 to 14 mph becoming northwest in the afternoon. "
+     "text": "Mostly sunny, with a high near 65. West wind 9 to 14 mph. "
     },
     {
      "name": "Tonight",
@@ -532,7 +569,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -625,7 +662,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "goodnews": []
  },
  {
@@ -669,18 +706,18 @@
     "temp": 45,
     "cond": "Overcast",
     "wind": "SE 5 mph",
-    "humidity": 62,
-    "obs": "23 Nov 02:53 AM PST"
+    "humidity": 65,
+    "obs": "23 Nov 06:00 AM PST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 51,
      "text": "A 30 percent chance of rain after 4pm.  Cloudy, with a high near 51. East southeast wind around 5 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 47,
      "text": "Rain.  Steady temperature around 47. East wind 6 to 8 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
@@ -701,13 +738,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 56,
-     "text": "Rain.  High near 56. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  High near 56. South southeast wind around 7 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 49,
-     "text": "Rain before 4am, then showers and possibly a thunderstorm after 4am.  Low around 49. Chance of precipitation is 100%."
+     "text": "Rain before 4am, then showers and possibly a thunderstorm after 4am.  Low around 49. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible. "
     }
    ]
   },
@@ -723,7 +760,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T14:18:00Z",
+  "updatedAt": "2026-11-23T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
