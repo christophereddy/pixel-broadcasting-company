@@ -31,21 +31,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Overcast",
-    "wind": "NW 6 mph",
+    "temp": 58,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 7 mph",
     "humidity": 93,
-    "obs": "23 Nov 02:52 am EST"
+    "obs": "23 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 70,
      "text": "Patchy fog between 8am and 9am.  Otherwise, partly sunny, with a high near 70. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Partly cloudy, with a low around 48. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
@@ -66,7 +66,7 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 54,
-     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 54. Chance of precipitation is 60%."
+     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 54. East wind around 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 60%."
     },
     {
      "name": "Wednesday Night",
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -111,24 +111,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Light Rain Fog/Mist",
-    "wind": "N 12 mph",
-    "humidity": 97,
-    "obs": "23 Nov 02:54 am EST"
+    "temp": 55,
+    "cond": "Overcast",
+    "wind": "NW 9 mph",
+    "humidity": 96,
+    "obs": "23 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 67,
-     "text": "Patchy fog before 8am.  Otherwise, cloudy through mid morning, then gradual clearing, with a high near 67. West wind 6 to 13 mph, with gusts as high as 25 mph. "
+     "text": "A slight chance of rain before 7am.  Cloudy through mid morning, then gradual clearing, with a high near 67. West wind 6 to 13 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Mostly clear, with a low around 42. Northwest wind 7 to 13 mph. "
+     "text": "Mostly cloudy, then gradually becoming clear, with a low around 42. Northwest wind 7 to 13 mph. "
     },
     {
      "name": "Tuesday",
@@ -168,9 +168,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "boston-ma",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "ProBlak's mural brings community stories to A.R.T.'s new center",
+    "b": "Artist Rob \"ProBlak\" Gibbs is painting a massive mural on the American Repertory Theater's new Goel Center in Allston, which opens to the public in April 2027.",
+    "date": "2026-11-23",
+    "publisher": "WBUR",
+    "title": "ProBlak’s huge mural brings community stories to A.R.T.’s new center",
+    "url": "https://www.wbur.org/news/2026/11/23/rob-problak-gibbs-art-mural-goel-center",
+    "gathered": "2026-11-23T11:12:31Z"
+   }
+  ]
  },
  {
   "location": {
@@ -193,27 +203,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
+    "temp": 32,
     "cond": "Fair",
-    "wind": "NW 7 mph",
-    "humidity": 67,
-    "obs": "23 Nov 01:53 am CST"
+    "wind": "NW 8 mph",
+    "humidity": 73,
+    "obs": "23 Nov 04:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 33,
-     "text": "Clear, with a low around 33. Northwest wind around 15 mph, with gusts as high as 25 mph. "
-    },
-    {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 42,
      "text": "Mostly sunny, with a high near 42. Northwest wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 30,
      "text": "Mostly clear, with a low around 30. North northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
@@ -234,7 +238,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 45,
-     "text": "Mostly cloudy, with a high near 45."
+     "text": "Mostly cloudy, with a high near 45. East wind 10 to 15 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 40."
     }
    ]
   },
@@ -250,7 +260,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -274,22 +284,22 @@
   },
   "local": [],
   "weather": {
-   "now": null,
+   "now": {
+    "temp": 26,
+    "cond": "Partly Cloudy",
+    "wind": "S 3 mph",
+    "humidity": 78,
+    "obs": "23 Nov 01:58 am MST"
+   },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 25,
-     "text": "Mostly cloudy, with a low around 25. Calm wind. "
-    },
-    {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 43,
      "text": "Partly sunny, with a high near 43. Calm wind becoming northeast around 6 mph in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 25,
      "text": "A slight chance of snow showers between 8pm and 11pm.  Partly cloudy, with a low around 25. Light and variable wind.  Chance of precipitation is 20%."
@@ -310,7 +320,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 53,
-     "text": "Sunny, with a high near 53."
+     "text": "Sunny, with a high near 53. Calm wind becoming east northeast around 5 mph. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 26,
+     "text": "Partly cloudy, with a low around 26."
     }
    ]
   },
@@ -326,7 +342,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -351,18 +367,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "wind": "N 2 mph",
-    "humidity": 79,
-    "obs": "23 Nov 12:05 AM PST"
+    "temp": 56,
+    "wind": "NW 3 mph",
+    "humidity": 84,
+    "obs": "23 Nov 02:25 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "A 40 percent chance of rain.  Partly cloudy, with a low around 52. North northwest wind around 5 mph becoming calm.  New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -392,6 +402,12 @@
      "kind": "high",
      "temp": 74,
      "text": "Sunny, with a high near 74."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 52,
+     "text": "Mostly clear, with a low around 52."
     }
    ]
   },
@@ -407,7 +423,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -418,6 +434,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Citi Bike e-bike rides to be capped at $3.65 for members",
+    "b": "Under a new deal between Mayor Zohran Mamdani's administration and Lyft, Citi Bike members will pay no more than $3.65 for e-bike rides up to 45 minutes starting Jan. 19, 2027.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "NYC Citi Bike rides to be capped at $3.65 for members under new deal with Lyft",
+    "url": "https://gothamist.com/news/nyc-citi-bike-rides-to-be-capped-at-365-for-members-under-new-deal-with-lyft",
+    "published": "2026-11-23T10:00:52Z",
+    "gathered": "2026-11-23T11:12:31Z"
+   },
    {
     "h": "Abandoned dog family found in the cold in Orange, NJ",
     "b": "Animal protection officers found two dogs tied to a fence in Orange, just west of Newark, along with five newborn puppies. One puppy died, the Associated Humane Societies said.",
@@ -450,20 +476,20 @@
   "weather": {
    "now": {
     "temp": 59,
-    "cond": "Partly Cloudy",
+    "cond": "Mostly Cloudy",
     "wind": "W 3 mph",
     "humidity": 83,
-    "obs": "23 Nov 02:51 am EST"
+    "obs": "23 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Monday",
+     "name": "Today",
      "kind": "high",
      "temp": 65,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 65. Southwest wind 8 to 14 mph becoming northwest in the afternoon. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 65. West wind 7 to 14 mph becoming northwest in the afternoon. "
     },
     {
-     "name": "Monday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 46,
      "text": "Partly cloudy, with a low around 46. Northwest wind 11 to 14 mph. "
@@ -484,13 +510,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 50,
-     "text": "Mostly sunny, with a high near 50."
+     "text": "Mostly sunny, with a high near 50. Northeast wind 9 to 11 mph. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Mostly cloudy, with a low around 46. Breezy. "
+     "temp": 49,
+     "text": "Mostly cloudy, with a steady temperature around 49. Breezy. "
     }
    ]
   },
@@ -506,9 +532,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "About 100 New Yorkers ditched their smartphones for a month",
+    "b": "A phone-free party celebrated roughly 100 New Yorkers who gave up their smartphones for a month, with a showcase of the hobbies and art projects they picked up instead.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "These New Yorkers ditched their smartphones for a month. No, seriously.",
+    "url": "https://gothamist.com/news/these-new-yorkers-ditched-their-smartphones-for-a-month-no-seriously",
+    "published": "2026-11-23T11:00:59Z",
+    "gathered": "2026-11-23T11:12:31Z"
+   },
    {
     "h": "Adopt a storm drain? Council bill would enlist New Yorkers",
     "b": "A City Council bill would let residents volunteer to clear leaves and litter from storm drains on their block, building on a pilot in Greenpoint, Brooklyn, to help prevent flooding.",
@@ -529,6 +565,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Where the presidential candidates stand on rural France",
+    "b": "Rural France, home to a third of the population, is a key 2027 battleground, with residents more reliant on cars and facing reduced public services such as healthcare. A look at the candidates' policies.",
+    "date": "2026-11-23",
+    "publisher": "The Local France",
+    "title": "Compared: The presidential candidates' policies for rural France",
+    "url": "https://www.thelocal.fr/20261123/compared-the-presidential-candidates-policies-for-rural-france",
+    "published": "2026-11-23T09:43:40Z",
+    "updated": "2026-11-23T09:43:41Z",
+    "gathered": "2026-11-23T11:12:31Z"
+   },
    {
     "h": "Activists demand tear gas suspension over reported health effects",
     "b": "French activists and lawmakers want police to stop using tear gas after women reported menstrual changes following protests. An advocacy group says it has over 10,000 complaints; scientists have not confirmed a link.",
@@ -551,22 +598,14 @@
     "h": "Budget talks and Black Friday top France's week ahead",
     "b": "Lawmakers meet in committee to try to strike a deal on the social security budget, a trial opens for seven men accused of raising funds for the PKK, and retailers gear up for Black Friday.",
     "date": "2026-11-22",
-    "publisher": "The Local France",
-    "title": "Budget wrangling and Black Friday: What’s on the agenda in France this week",
     "url": "https://www.thelocal.fr/20261122/budget-wrangling-and-black-friday-whats-on-the-agenda-in-france-this-week",
-    "published": "2026-11-22T06:03:09Z",
-    "updated": "2026-11-22T06:03:10Z",
     "gathered": "2026-11-22T10:07:56Z"
    },
    {
     "h": "France sees sixth straight weekend of cost-of-living protests",
     "b": "Tens of thousands marched in French cities on Saturday demanding better public services and protesting rising prices and inequality, though turnout has dwindled.",
     "date": "2026-11-22",
-    "publisher": "The Local France",
-    "title": "French protesters rally for sixth weekend over living costs and public services",
     "url": "https://www.thelocal.fr/20261122/french-protesters-rally-for-sixth-weekend-over-living-costs-public-services",
-    "published": "2026-11-22T06:30:54Z",
-    "updated": "2026-11-22T06:30:55Z",
     "gathered": "2026-11-22T10:07:56Z"
    }
   ],
@@ -586,7 +625,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "goodnews": []
  },
  {
@@ -621,11 +660,7 @@
     "h": "Medicare open enrollment runs through Dec. 7",
     "b": "Open enrollment is underway for Medicare, which covers roughly 70 million people, and coverage choices for 2027 are complex and often consequential. The season ends Dec. 7.",
     "date": "2026-11-22",
-    "publisher": "KUOW",
-    "title": "Medicare looks a bit different in 2027, so don't miss open enrollment",
     "url": "https://www.kuow.org/npr-news/2026-11-22/medicare-looks-a-bit-different-in-2027-so-dont-miss-open-enrollment",
-    "published": "2026-11-22T13:11:04Z",
-    "updated": "2026-11-22T15:04:35Z",
     "gathered": "2026-11-22T23:44:22Z"
    }
   ],
@@ -633,17 +668,11 @@
    "now": {
     "temp": 45,
     "cond": "Overcast",
-    "wind": "S 3 mph",
-    "humidity": 65,
-    "obs": "23 Nov 12:00 AM PST"
+    "wind": "SE 5 mph",
+    "humidity": 62,
+    "obs": "23 Nov 02:53 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 41,
-     "text": "A 40 percent chance of rain after 5am.  Cloudy, with a low around 41. East southeast wind around 5 mph. "
-    },
     {
      "name": "Monday",
      "kind": "high",
@@ -673,6 +702,12 @@
      "kind": "high",
      "temp": 56,
      "text": "Rain.  High near 56. Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 49,
+     "text": "Rain before 4am, then showers and possibly a thunderstorm after 4am.  Low around 49. Chance of precipitation is 100%."
     }
    ]
   },
@@ -688,7 +723,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T11:12:00Z",
+  "updatedAt": "2026-11-23T14:18:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
