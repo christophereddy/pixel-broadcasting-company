@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T08:14:00Z",
+ "updatedAt": "2026-11-23T11:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -361,12 +361,6 @@
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 57,
-    "text": "Cloudy, with a low around 57. West wind around 7 mph. "
-   },
-   {
     "name": "Monday",
     "kind": "high",
     "temp": 65,
@@ -395,6 +389,12 @@
     "kind": "high",
     "temp": 50,
     "text": "Mostly sunny, with a high near 50."
+   },
+   {
+    "name": "Wednesday Night",
+    "kind": "low",
+    "temp": 46,
+    "text": "Mostly cloudy, with a low around 46. Breezy. "
    }
   ]
  },

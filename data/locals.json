@@ -39,12 +39,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 56,
-     "text": "Patchy fog before 4am.  Otherwise, partly cloudy, with a low around 56. Calm wind becoming northwest around 5 mph. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 70,
@@ -73,6 +67,12 @@
      "kind": "high",
      "temp": 54,
      "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 54. Chance of precipitation is 60%."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 45,
+     "text": "Showers.  Low around 45. Chance of precipitation is 90%."
     }
    ]
   },
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -119,12 +119,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "A chance of rain before 4am.  Patchy fog.  Otherwise, cloudy, with a low around 52. North wind around 9 mph, with gusts as high as 22 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 67,
@@ -153,6 +147,12 @@
      "kind": "high",
      "temp": 44,
      "text": "Sunny, with a high near 44. Calm wind becoming northeast 5 to 8 mph in the morning. "
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 34,
+     "text": "Mostly cloudy, with a low around 34. Northeast wind 7 to 10 mph. "
     }
    ]
   },
@@ -168,7 +168,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -250,7 +250,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -326,7 +326,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -351,10 +351,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 58,
-    "wind": "NW 4 mph",
-    "humidity": 77,
-    "obs": "22 Nov 11:55 PM PST"
+    "temp": 57,
+    "wind": "N 2 mph",
+    "humidity": 79,
+    "obs": "23 Nov 12:05 AM PST"
    },
    "periods": [
     {
@@ -407,7 +407,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -457,12 +457,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 57,
-     "text": "Cloudy, with a low around 57. West wind around 7 mph. "
-    },
-    {
      "name": "Monday",
      "kind": "high",
      "temp": 65,
@@ -491,6 +485,12 @@
      "kind": "high",
      "temp": 50,
      "text": "Mostly sunny, with a high near 50."
+    },
+    {
+     "name": "Wednesday Night",
+     "kind": "low",
+     "temp": 46,
+     "text": "Mostly cloudy, with a low around 46. Breezy. "
     }
    ]
   },
@@ -506,7 +506,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -586,7 +586,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "goodnews": []
  },
  {
@@ -596,6 +596,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Seattle lab aims to break down 'forever chemicals'",
+    "b": "Nature has no tools to break down PFAS, the so-called forever chemicals invented in the 1930s. A Seattle protein design lab is trying to build some.",
+    "date": "2026-11-23",
+    "publisher": "KUOW",
+    "title": "Seattle lab looks to break the bonds that make 'forever chemicals' last",
+    "url": "https://www.kuow.org/science/2026-11-23/seattle-lab-looks-to-break-the-bonds-that-make-forever-chemicals-last",
+    "published": "2026-11-23T08:05:00Z",
+    "updated": "2026-11-23T08:05:05Z",
+    "gathered": "2026-11-23T08:16:26Z"
+   },
    {
     "h": "Father and daughter held by ICE at Sea-Tac were headed to a baptism",
     "b": "The father and daughter detained by masked immigration officers on a Sea-Tac jet bridge Saturday were traveling to a family baptism in California, their lawyer said. Passenger videos of the arrest were widely viewed.",
@@ -620,15 +631,15 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 45,
     "cond": "Overcast",
-    "wind": "SW 4 mph",
-    "humidity": 56,
-    "obs": "22 Nov 11:35 PM PST"
+    "wind": "S 3 mph",
+    "humidity": 65,
+    "obs": "23 Nov 12:00 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 41,
      "text": "A 40 percent chance of rain after 5am.  Cloudy, with a low around 41. East southeast wind around 5 mph. "
@@ -677,7 +688,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T08:14:00Z",
+  "updatedAt": "2026-11-23T11:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
