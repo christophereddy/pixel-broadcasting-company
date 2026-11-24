@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-24T20:11:00Z",
+ "updatedAt": "2026-11-24T23:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "Landmine casualties hit five-year high",
+   "b": "The International Campaign to Ban Landmines recorded 6,929 casualties in 2025, 84% of them civilians and half of those children, driven largely by Myanmar's civil war.",
+   "date": "2026-11-24",
+   "publisher": "Al Jazeera",
+   "title": "Global landmine casualties hit a five-year high, driven by Myanmar, Syria",
+   "url": "https://www.aljazeera.com/news/2026/11/24/global-landmine-casualties-hit-a-five-year-high-driven-by-myanmar-syria",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
   {
    "h": "UN: 47,000 women killed by partners or family",
    "b": "About 47,000 women and girls were killed by an intimate partner or family member last year, the UN's 2026 Femicide Brief found, and home remains the most dangerous place for them.",
@@ -34,6 +43,17 @@
  ],
  "national": [
   {
+   "h": "Princeton researcher held by ICE at D.C. airport",
+   "b": "ICE detained Chinese doctoral student Eva Yi Xie at Reagan National Airport; DHS says she overstayed her visa.",
+   "date": "2026-11-24",
+   "place": "Washington, D.C.",
+   "publisher": "PBS NewsHour",
+   "title": "Chinese neuroscientist at Princeton held by ICE after detention at D.C. airport",
+   "url": "https://www.pbs.org/newshour/nation/chinese-neuroscientist-at-princeton-held-by-ice-after-detention-at-d-c-airport",
+   "published": "2026-11-24T18:54:56Z",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
    "h": "Army to detonate lead azide in Iowa Wednesday",
    "b": "After winning approval from a federal appeals court, the Army plans a controlled detonation of 68 barrels of lead azide in Iowa on Wednesday morning.",
    "date": "2026-11-24",
@@ -49,7 +69,7 @@
    "title": "Delayed Cancer Treatment. Missed Medication. How a Popular Insurance Plan’s Use of Prior Authorization Hurt Patients.",
    "url": "https://www.propublica.org/article/ambetter-prior-authorization-denials",
    "published": "2026-11-24T10:00:00Z",
-   "updated": "2026-11-24T10:00:13Z",
+   "updated": "2026-11-24T17:37:12Z",
    "gathered": "2026-11-24T11:11:33Z"
   },
   {
@@ -148,23 +168,27 @@
  ],
  "politics": [
   {
+   "h": "Abortion-rights Democrats won, but big changes unlikely",
+   "b": "Democrats lack full control in states with the strictest bans, and any congressional move would likely face a Trump veto.",
+   "date": "2026-11-24",
+   "publisher": "PBS NewsHour",
+   "title": "Democrats supporting abortion rights won big in midterms, but vast changes unlikely soon",
+   "url": "https://www.pbs.org/newshour/politics/democrats-supporting-abortion-rights-won-big-in-midterms-but-vast-changes-unlikely-soon",
+   "published": "2026-11-24T19:53:41Z",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
    "h": "Huang intervention fuels Democrats' 2028 attacks",
    "b": "Democrats eyeing the White House see Trump's pressure on Nvidia to reinstate Jensen Huang as fresh evidence of his coziness with tech executives.",
    "date": "2026-11-24",
-   "publisher": "PBS NewsHour",
-   "title": "Trump's intervention on behalf of Jensen Huang gives Democrats more 2028 campaign fuel",
    "url": "https://www.pbs.org/newshour/politics/trumps-intervention-on-behalf-of-jensen-huang-gives-democrats-more-2028-campaign-fuel",
-   "published": "2026-11-24T16:12:37Z",
    "gathered": "2026-11-24T17:12:56Z"
   },
   {
    "h": "Unsealed records detail search of Ilhan Omar's home",
    "b": "Court documents show the magistrate judge who approved the search ruled Omar could assert privacy protections for sitting members of Congress.",
    "date": "2026-11-24",
-   "publisher": "PBS NewsHour",
-   "title": "Records show how DOJ, judge debated constitutional implications of searching Rep. Ilhan Omar's home",
    "url": "https://www.pbs.org/newshour/politics/records-show-how-doj-judge-debated-constitutional-implications-of-searching-rep-ilhan-omars-home",
-   "published": "2026-11-24T15:56:52Z",
    "gathered": "2026-11-24T16:09:41Z"
   },
   {
@@ -237,15 +261,45 @@
  ],
  "international": [
   {
+   "h": "Cameroon separatist pleads not guilty in Norway",
+   "b": "Lucas Cho Ayaba denied charges in an Oslo court of being an accessory to war crimes and terrorism over two attacks in Cameroon.",
+   "date": "2026-11-24",
+   "place": "Oslo, Norway",
+   "tz": "Europe/Oslo",
+   "publisher": "Al Jazeera",
+   "title": "Cameroon separatist leader pleads not guilty at war crimes trial in Norway",
+   "url": "https://www.aljazeera.com/news/2026/11/24/cameroon-separatist-leader-pleads-not-guilty-in-war-crimes-trial",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
+   "h": "Putin vows retaliation over refinery strikes",
+   "b": "Putin said Ukraine kept attacking Russian oil refineries despite Trump's requests to hold off, and threatened retaliation.",
+   "date": "2026-11-24",
+   "place": "Moscow, Russia",
+   "tz": "Europe/Moscow",
+   "publisher": "Al Jazeera",
+   "title": "Putin says retaliation ‘inevitable’ after Ukraine hit Russian oil plants",
+   "url": "https://www.aljazeera.com/news/2026/11/24/putin-says-kyiv-hit-russian-oil-plants-despite-trump-plea-vows-retaliation",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
+   "h": "Turkish military helicopter crash kills five",
+   "b": "An air force AS-532 helicopter crashed after taking off from Eskisehir on a training flight, killing five crew members, the defense ministry said.",
+   "date": "2026-11-24",
+   "place": "Eskisehir, Turkey",
+   "tz": "Europe/Istanbul",
+   "publisher": "Al Jazeera",
+   "title": "Turkish military helicopter crash kills five in western Turkiye",
+   "url": "https://www.aljazeera.com/news/2026/11/24/turkish-military-helicopter-crash-kills-five-in-western-turkiye",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
    "h": "Pope Francis' diary reveals spiritual crisis",
    "b": "Diary excerpts published by the Vatican describe Francis seeing the 'gates of hell' over the abuse scandal and a spiritual crisis in 2021-22.",
    "date": "2026-11-24",
    "place": "Vatican City",
    "tz": "Europe/Rome",
-   "publisher": "PBS NewsHour",
-   "title": "Francis' private diary reveals pope grappling with spiritual crisis and encounters with the devil",
    "url": "https://www.pbs.org/newshour/nation/francis-private-diary-reveals-pope-grappling-with-spiritual-crisis-and-encounters-with-the-devil",
-   "published": "2026-11-24T15:40:12Z",
    "gathered": "2026-11-24T16:09:41Z"
   },
   {
@@ -254,8 +308,6 @@
    "date": "2026-11-24",
    "place": "London, England",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "Heat deaths reach record high in UK in 2026",
    "url": "https://www.aljazeera.com/news/2026/11/24/heat-deaths-reach-record-high-in-uk-in-2026",
    "gathered": "2026-11-24T16:09:41Z"
   },
@@ -274,8 +326,6 @@
    "date": "2026-11-24",
    "place": "Riyadh, Saudi Arabia",
    "tz": "Asia/Riyadh",
-   "publisher": "Al Jazeera",
-   "title": "11 injured in Houthi attack on Riyadh tower, Saudi civil defence says",
    "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh",
    "gathered": "2026-11-24T16:09:41Z"
   },
@@ -285,8 +335,6 @@
    "date": "2026-11-24",
    "place": "Norfolk, England",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK police arrest two after break-in at Prince William’s country residence",
    "url": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home",
    "gathered": "2026-11-24T16:09:41Z"
   },
@@ -297,7 +345,7 @@
    "place": "Shanghai, China",
    "tz": "Asia/Shanghai",
    "publisher": "Al Jazeera",
-   "title": "China’s probes Shanghai party chief Chen Jining over corruption",
+   "title": "China probes Shanghai party chief Chen Jining over corruption",
    "url": "https://www.aljazeera.com/news/2026/11/24/xis-anti-corruption-campaign-targets-shanghai-party-chief-chen-jining",
    "gathered": "2026-11-24T16:09:41Z"
   },
@@ -438,6 +486,24 @@
   }
  ],
  "business": [
+  {
+   "h": "Afghan refugees build businesses in Houston",
+   "b": "Thousands of Afghans who resettled in the Houston area after the 2021 US withdrawal have built a growing network of businesses.",
+   "date": "2026-11-24",
+   "publisher": "Marketplace",
+   "title": "From refugees to entrepreneurs: Afghan businesses take root in Houston",
+   "url": "https://www.marketplace.org/story/2026/11/24/afghans-go-from-refugees-to-entreprenuers-in-houston",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
+   "h": "Nvidia recovers most of its lost value",
+   "b": "Nvidia had regained $952 billion of the $1.16 trillion in market value it lost when Jensen Huang resigned, according to a Financial Times analysis.",
+   "date": "2026-11-24",
+   "publisher": "Al Jazeera",
+   "title": "Nvidia stock cools after Huang’s return-driven surge",
+   "url": "https://www.aljazeera.com/economy/2026/11/24/nvidia-stock-cools-after-huangs-return-driven-surge",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
   {
    "h": "Few US homes are protected against floods",
    "b": "Very few homeowners outside flood zones buy flood insurance, even as storms bring flooding to the Bay Area, the East Coast and Florida.",
@@ -580,6 +646,26 @@
  ],
  "local": [
   {
+   "h": "Wind threatens Macy's parade balloons",
+   "b": "Forecasters expect rain and winds gusting to 60 mph on Thanksgiving, which could affect the 100th parade's balloons.",
+   "date": "2026-11-24",
+   "publisher": "Gothamist",
+   "title": "Goodbye Kitty: Preparation underway for a windy Macy's Thanksgiving Day Parade in NYC",
+   "url": "https://gothamist.com/news/goodbye-kitty-preparation-underway-for-a-windy-macys-thanksgiving-day-parade-in-nyc",
+   "published": "2026-11-24T19:27:03Z",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
+   "h": "Body shop owner charged in tow truck scheme",
+   "b": "Brooklyn prosecutors say Steven Ventura used unlicensed tow trucks to haul crash victims' cars and demand bogus storage fees.",
+   "date": "2026-11-24",
+   "publisher": "Gothamist",
+   "title": "Brooklyn body shop owner charged with bilking drivers in illegal tow truck scheme",
+   "url": "https://gothamist.com/news/brooklyn-body-shop-owner-charged-with-bilking-drivers-in-illegal-tow-truck-scheme",
+   "published": "2026-11-24T20:12:35Z",
+   "gathered": "2026-11-24T20:11:42Z"
+  },
+  {
    "h": "Woman stabbed at random in Riverside Park",
    "b": "Police are searching for a man who stabbed a 26-year-old woman near West 96th Street Monday night; she is in stable condition.",
    "date": "2026-11-24",
@@ -682,48 +768,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 49,
+   "temp": 47,
    "cond": "Fair",
-   "wind": "N 10 mph, gusts to 21 mph",
-   "humidity": 32,
-   "obs": "24 Nov 11:51 am EST"
+   "wind": "W 6 mph, gusts to 17 mph",
+   "humidity": 29,
+   "obs": "24 Nov 14:51 pm EST"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 51,
-    "text": "Sunny, with a high near 51. North wind 10 to 14 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 40,
-    "text": "Mostly clear, with a low around 40. North wind around 10 mph. "
+    "temp": 39,
+    "text": "Clear, with a low around 39. North wind around 10 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 51,
-    "text": "Mostly sunny, with a high near 51. Northeast wind 9 to 11 mph. "
+    "temp": 50,
+    "text": "Increasing clouds, with a high near 50. Northeast wind around 11 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
     "temp": 49,
-    "text": "Increasing clouds, with a steady temperature around 49. Breezy, with a northeast wind 11 to 20 mph. "
+    "text": "Cloudy, with a steady temperature around 49. Breezy, with a northeast wind 11 to 16 mph increasing to 19 to 24 mph after midnight. "
    },
    {
     "name": "Thanksgiving Day",
     "kind": "high",
-    "temp": 60,
-    "text": "Rain.  High near 60. Windy, with a northeast wind 22 to 31 mph, with gusts as high as 55 mph.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
+    "temp": 55,
+    "text": "Rain, mainly after 1pm.  High near 55. Windy, with a northeast wind 26 to 33 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 55,
-    "text": "Rain.  Temperature rising to around 60 by 3am. Windy.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+    "temp": 53,
+    "text": "Rain.  Low around 53. Windy, with an east wind 26 to 34 mph becoming south after midnight.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+   },
+   {
+    "name": "Friday",
+    "kind": "high",
+    "temp": 58,
+    "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 58. Breezy. "
    }
   ]
  },
