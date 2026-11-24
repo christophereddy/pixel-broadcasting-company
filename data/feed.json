@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T08:11:00Z",
+ "updatedAt": "2026-11-24T11:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "Iran says three tankers caught fire after hitting naval mines in the Strait of Hormuz. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-24",
    "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC says three tankers ablaze after hitting naval mines in Hormuz",
+   "title": "Tehran demands 7 conditions be met before holding any talks with US",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines",
    "gathered": "2026-11-24T04:54:32Z"
   },
@@ -24,6 +24,16 @@
   }
  ],
  "national": [
+  {
+   "h": "Pennsylvania reports ninth measles death",
+   "b": "The state health department confirmed the death of an unvaccinated Centre County resident who tested positive for measles, bringing the outbreak's death toll to nine.",
+   "date": "2026-11-24",
+   "place": "Pennsylvania",
+   "publisher": "Al Jazeera",
+   "title": "Pennsylvania reports ninth measles death in ongoing state outbreak",
+   "url": "https://www.aljazeera.com/news/2026/11/24/pennsylvania-reports-ninth-measles-death-in-ongoing-state-outbreak",
+   "gathered": "2026-11-24T08:12:04Z"
+  },
   {
    "h": "Military families share challenges as commission meets",
    "b": "As Trump's new military spouse commission convenes, families describe problems like expired groceries at overseas base commissaries.",
@@ -106,8 +116,6 @@
    "h": "Democrats' House majority reaches 258 seats",
    "b": "As counting wraps up in the final midterm races, Democrats hold 258 of 435 House seats with four races uncalled, and the party plans to use its majorities for oversight.",
    "date": "2026-11-24",
-   "publisher": "Al Jazeera",
-   "title": "What could Democrats do with their expanding congressional majority?",
    "url": "https://www.aljazeera.com/news/2026/11/24/what-could-democrats-do-with-their-expanding-congressional-majority",
    "gathered": "2026-11-24T05:15:13Z"
   },
@@ -169,6 +177,17 @@
  ],
  "international": [
   {
+   "h": "Australia threatens tech giants with big fines",
+   "b": "Communications Minister Anika Wells announced plans for heavier fines on tech companies that fail to remove harmful content from their platforms.",
+   "date": "2026-11-24",
+   "place": "Canberra, Australia",
+   "tz": "Australia/Sydney",
+   "publisher": "Al Jazeera",
+   "title": "Australia warns tech giants of multibillion-dollar fines for online ‘harm’",
+   "url": "https://www.aljazeera.com/news/2026/11/24/australia-warns-tech-giants-of-multibillion-dollar-fines-for-online-harm",
+   "gathered": "2026-11-24T08:12:04Z"
+  },
+  {
    "h": "WHO chief visits Cuba's ailing hospitals",
    "b": "Tedros Adhanom Ghebreyesus toured a pediatric cardiology center in Havana as Cuba's healthcare system deteriorates amid an economic crisis deepened by US sanctions.",
    "date": "2026-11-24",
@@ -227,8 +246,6 @@
    "date": "2026-11-23",
    "place": "Kyiv region, Ukraine",
    "tz": "Europe/Kyiv",
-   "publisher": "Al Jazeera",
-   "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
    "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine",
    "gathered": "2026-11-23T11:12:31Z"
   },
@@ -442,48 +459,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 50,
-   "cond": "Mostly Cloudy",
-   "wind": "W 7 mph",
-   "humidity": 52,
-   "obs": "23 Nov 23:51 pm EST"
+   "temp": 46,
+   "cond": "Fair",
+   "wind": "W 6 mph, gusts to 18 mph",
+   "humidity": 51,
+   "obs": "24 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 47,
-    "text": "Mostly clear, with a low around 47. Northwest wind 11 to 13 mph. "
-   },
-   {
     "name": "Tuesday",
     "kind": "high",
-    "temp": 51,
-    "text": "Sunny, with a high near 51. North wind 10 to 16 mph. "
+    "temp": 48,
+    "text": "Sunny, with a steady temperature around 48. North wind 10 to 16 mph. "
    },
    {
     "name": "Tuesday Night",
     "kind": "low",
-    "temp": 39,
-    "text": "Mostly clear, with a low around 39. North wind around 10 mph. "
+    "temp": 40,
+    "text": "Mostly clear, with a low around 40. North wind around 10 mph. "
    },
    {
     "name": "Wednesday",
     "kind": "high",
-    "temp": 50,
-    "text": "Sunny, with a high near 50. Northeast wind around 10 mph. "
+    "temp": 51,
+    "text": "Mostly sunny, with a high near 51. Northeast wind 9 to 11 mph. "
    },
    {
     "name": "Wednesday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Mostly cloudy, with a steady temperature around 48. Breezy, with a northeast wind 11 to 20 mph. "
+    "temp": 49,
+    "text": "Increasing clouds, with a steady temperature around 49. Breezy, with a northeast wind 11 to 20 mph. "
    },
    {
     "name": "Thanksgiving Day",
     "kind": "high",
-    "temp": 59,
-    "text": "Rain, mainly after 1pm.  High near 59. Windy.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 60,
+    "text": "Rain.  High near 60. Windy.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
+   },
+   {
+    "name": "Thursday Night",
+    "kind": "low",
+    "temp": 54,
+    "text": "Rain.  Low around 54. Windy.  Chance of precipitation is 100%."
    }
   ]
  },
