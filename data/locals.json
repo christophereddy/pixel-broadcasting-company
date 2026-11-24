@@ -8,21 +8,21 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "A Few Clouds",
+    "temp": 46,
+    "cond": "Partly Cloudy",
     "wind": "NW 8 mph",
-    "humidity": 83,
-    "obs": "24 Nov 02:52 am EST"
+    "humidity": 79,
+    "obs": "24 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 60,
      "text": "Mostly cloudy, with a high near 60. North wind 5 to 10 mph becoming east in the morning. Winds could gust as high as 20 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Mostly cloudy, with a low around 44. East wind 10 to 15 mph, with gusts as high as 30 mph. "
@@ -43,7 +43,7 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 57,
-     "text": "A 30 percent chance of showers before 1pm.  Mostly cloudy, with a high near 57."
+     "text": "A 30 percent chance of showers before 1pm.  Mostly cloudy, with a high near 57. West wind 5 to 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday Night",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,8 +98,6 @@
     "h": "Massachusetts sues ICE over courthouse arrests",
     "b": "Attorney General Andrea Campbell sued the Trump administration, saying immigration agents keep arresting people inside Massachusetts courthouses in violation of a new state law.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "Mass. sues ICE over immigration arrests in state courts",
     "url": "https://www.wbur.org/news/2026/11/23/massachusetts-ice-lawsuit-courtroom-arrests",
     "gathered": "2026-11-23T20:27:45Z"
    },
@@ -107,29 +105,27 @@
     "h": "Coastal storm set to soak Thanksgiving",
     "b": "Tuesday and Wednesday look clear for travel, but a coastal storm is expected to bring soaking rain, strong wind gusts and coastal flooding on Thanksgiving Day.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "Thanksgiving forecast: Quiet week before an impactful storm",
     "url": "https://www.wbur.org/news/2026/11/23/thanksgiving-travel-weather-forecast-storm-east-coast",
     "gathered": "2026-11-23T17:15:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 45,
+    "temp": 42,
     "cond": "A Few Clouds",
-    "wind": "W 12 mph",
-    "humidity": 54,
-    "obs": "24 Nov 02:54 am EST"
+    "wind": "W 13 mph",
+    "humidity": 60,
+    "obs": "24 Nov 05:54 am EST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 45,
      "text": "Sunny, with a high near 45. Northwest wind 7 to 11 mph, with gusts as high as 21 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 28,
      "text": "Clear, with a low around 28. Northwest wind 3 to 5 mph. "
@@ -172,7 +168,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -268,27 +264,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 29,
+    "temp": 27,
     "cond": "A Few Clouds",
-    "wind": "NW 10 mph",
-    "humidity": 69,
-    "obs": "24 Nov 01:53 am CST"
+    "wind": "NW 7 mph",
+    "humidity": 72,
+    "obs": "24 Nov 04:53 am CST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 31,
-     "text": "Isolated snow showers after 5am.  Mostly clear, with a low around 31. North northwest wind around 10 mph.  Chance of precipitation is 20%."
-    },
-    {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 41,
-     "text": "A slight chance of snow showers, mixing with rain after 8am, then gradually ending.  Partly sunny, with a high near 41. North northwest wind 5 to 10 mph becoming east southeast in the afternoon.  Chance of precipitation is 20%."
+     "text": "A slight chance of snow showers before 8am, then scattered rain and snow showers between 8am and noon.  Partly sunny, with a high near 41. North northwest wind 5 to 10 mph becoming east southeast in the afternoon.  Chance of precipitation is 30%."
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 36,
      "text": "Mostly cloudy, with a low around 36. East wind 5 to 10 mph. "
@@ -309,7 +299,13 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 45,
-     "text": "Rain.  High near 45. Breezy.  Chance of precipitation is 90%."
+     "text": "Rain.  High near 45. Breezy, with a northeast wind 15 to 25 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 40,
+     "text": "Rain.  Low around 40. Breezy.  Chance of precipitation is 90%."
     }
    ]
   },
@@ -325,7 +321,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -369,19 +365,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 31,
+    "temp": 30,
     "cond": "Overcast",
-    "wind": "N 3 mph",
-    "humidity": 80,
-    "obs": "23 Nov 22:58 pm MST"
+    "wind": "W 3 mph",
+    "humidity": 79,
+    "obs": "24 Nov 01:58 am MST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 29,
-     "text": "Mostly cloudy, with a steady temperature around 29. Calm wind. "
-    },
     {
      "name": "Tuesday",
      "kind": "high",
@@ -411,6 +401,12 @@
      "kind": "high",
      "temp": 58,
      "text": "Sunny, with a high near 58."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 33,
+     "text": "Partly cloudy, with a low around 33."
     }
    ]
   },
@@ -426,7 +422,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -505,18 +501,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "wind": "NW 1 mph",
-    "humidity": 72,
-    "obs": "23 Nov 11:55 PM PST"
+    "temp": 57,
+    "wind": "NW 3 mph",
+    "humidity": 60,
+    "obs": "24 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 54,
-     "text": "Partly cloudy, with a low around 54. North wind around 5 mph. "
-    },
     {
      "name": "Tuesday",
      "kind": "high",
@@ -546,6 +536,12 @@
      "kind": "high",
      "temp": 80,
      "text": "Sunny, with a high near 80."
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 58,
+     "text": "Mostly clear, with a low around 58."
     }
    ]
   },
@@ -561,7 +557,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -572,6 +568,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Report backs regular taxi fare hikes",
+    "b": "A Taxi and Limousine Commission report says yellow cab operating costs rose about 16% since 2022, and regular fare hikes could help drivers avoid poverty.",
+    "date": "2026-11-24",
+    "publisher": "Gothamist",
+    "title": "Fare hikes on yellow taxi cabs could keep drivers out of poverty, city report finds",
+    "url": "https://gothamist.com/news/fare-hikes-on-yellow-taxi-cabs-could-keep-drivers-out-of-poverty-city-report-finds",
+    "published": "2026-11-24T11:00:47Z",
+    "gathered": "2026-11-24T11:11:33Z"
+   },
    {
     "h": "Hochul vetoes AI accuracy-warning bill",
     "b": "Gov. Kathy Hochul vetoed a bill requiring AI platforms to warn users their information may be inaccurate, calling it too far-reaching.",
@@ -646,21 +652,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 43,
     "cond": "Fair",
-    "wind": "W 6 mph, gusts to 18 mph",
-    "humidity": 51,
-    "obs": "24 Nov 02:51 am EST"
+    "wind": "W 5 mph",
+    "humidity": 58,
+    "obs": "24 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 48,
      "text": "Sunny, with a steady temperature around 48. North wind 10 to 16 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 40,
      "text": "Mostly clear, with a low around 40. North wind around 10 mph. "
@@ -681,13 +687,13 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 60,
-     "text": "Rain.  High near 60. Windy.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Rain.  High near 60. Windy, with a northeast wind 22 to 31 mph, with gusts as high as 55 mph.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 54,
-     "text": "Rain.  Low around 54. Windy.  Chance of precipitation is 100%."
+     "temp": 55,
+     "text": "Rain.  Temperature rising to around 60 by 3am. Windy.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
     }
    ]
   },
@@ -703,7 +709,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -727,6 +733,17 @@
   },
   "local": [
    {
+    "h": "Freezing temperatures hit France",
+    "b": "Arctic air is bringing a sharp drop in temperatures, with overnight lows below freezing in several regions this week.",
+    "date": "2026-11-24",
+    "publisher": "The Local France",
+    "title": "Freezing temperatures hit northern and eastern France as cold snap bites",
+    "url": "https://www.thelocal.fr/20261124/freezing-temperatures-hit-northern-and-eastern-france-as-cold-snap-bites",
+    "published": "2026-11-24T08:27:24Z",
+    "updated": "2026-11-24T08:27:25Z",
+    "gathered": "2026-11-24T11:11:33Z"
+   },
+   {
     "h": "Map shows France's hardest tap water",
     "b": "Tap water hardness varies significantly across France, and hard water builds limescale on taps and kettles and can dry out skin and hair.",
     "date": "2026-11-23",
@@ -741,22 +758,14 @@
     "h": "Three detained over Normandy train derailment",
     "b": "French police arrested three people in connection with the September derailment between Rouen and Caen that injured 44 people, sources said.",
     "date": "2026-11-23",
-    "publisher": "The Local France",
-    "title": "France detains three over mystery train derailment",
     "url": "https://www.thelocal.fr/20261123/france-detains-three-over-mystery-train-derailment",
-    "published": "2026-11-23T15:32:13Z",
-    "updated": "2026-11-23T15:32:13Z",
     "gathered": "2026-11-23T17:15:56Z"
    },
    {
     "h": "Where the presidential candidates stand on rural France",
     "b": "Rural France, home to a third of the population, is a key 2027 battleground, with residents more reliant on cars and facing reduced public services such as healthcare. A look at the candidates' policies.",
     "date": "2026-11-23",
-    "publisher": "The Local France",
-    "title": "Compared: The presidential candidates' policies for rural France",
     "url": "https://www.thelocal.fr/20261123/compared-the-presidential-candidates-policies-for-rural-france",
-    "published": "2026-11-23T09:43:40Z",
-    "updated": "2026-11-23T09:43:41Z",
     "gathered": "2026-11-23T11:12:31Z"
    }
   ],
@@ -776,8 +785,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
-  "goodnews": []
+  "updatedAt": "2026-11-24T14:15:00Z",
+  "goodnews": [
+   {
+    "h": "World's best egg mayonnaise crowned",
+    "b": "A young French chef won the world championship of œuf mayonnaise in Saint-Ouen-sur-Seine, where competitors each made 100 eggs.",
+    "date": "2026-11-24",
+    "publisher": "The Local France",
+    "title": "'8 minutes and 40 seconds for perfection'",
+    "url": "https://www.thelocal.fr/20261124/8-minutes-and-40-seconds-for-perfection-frances-best-egg-mayonnaise-crowned",
+    "published": "2026-11-24T11:08:02Z",
+    "updated": "2026-11-24T11:08:02Z",
+    "gathered": "2026-11-24T11:11:33Z"
+   }
+  ]
  },
  {
   "location": {
@@ -790,22 +811,14 @@
     "h": "Seattle schools settle over pregnant workers",
     "b": "Seattle Public Schools will pay $600,000 and revise policies for pregnant and nursing employees under a settlement with the state attorney general.",
     "date": "2026-11-24",
-    "publisher": "KUOW",
-    "title": "Seattle schools to pay $600,000 over treatment of pregnant, nursing employees",
     "url": "https://www.kuow.org/education/2026-11-23/seattle-schools-to-pay-600-000-over-treatment-of-pregnant-nursing-employees",
-    "published": "2026-11-24T00:22:04Z",
-    "updated": "2026-11-24T00:22:04Z",
     "gathered": "2026-11-24T04:54:32Z"
    },
    {
     "h": "King tides could break records this week",
     "b": "El Niño-heated water along the West Coast could push this week's king tides to record highs, forecasters expect.",
     "date": "2026-11-24",
-    "publisher": "KUOW",
-    "title": "PNW braces for El Niño-fueled, possibly record-breaking king tides",
     "url": "https://www.kuow.org/environment/2026-11-23/pnw-braces-for-el-nino-fueled-possibly-record-breaking-king-tides",
-    "published": "2026-11-24T01:01:51Z",
-    "updated": "2026-11-24T01:43:02Z",
     "gathered": "2026-11-24T04:54:32Z"
    },
    {
@@ -843,19 +856,13 @@
   ],
   "weather": {
    "now": {
-    "temp": 49,
+    "temp": 47,
     "cond": "Rain",
-    "wind": "SW 4 mph",
-    "humidity": 58,
-    "obs": "23 Nov 11:53 PM PST"
+    "wind": "E 8 mph",
+    "humidity": 76,
+    "obs": "24 Nov 02:53 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 45,
-     "text": "Rain.  Low around 45. East wind 7 to 11 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
-    },
     {
      "name": "Tuesday",
      "kind": "high",
@@ -885,6 +892,12 @@
      "kind": "high",
      "temp": 55,
      "text": "Rain before 4pm, then a chance of showers and thunderstorms after 4pm.  High near 55. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
+    },
+    {
+     "name": "Thursday Night",
+     "kind": "low",
+     "temp": 47,
+     "text": "A chance of showers and thunderstorms before 10pm, then a chance of rain after 10pm.  Mostly cloudy, with a low around 47. Chance of precipitation is 50%."
     }
    ]
   },
@@ -900,7 +913,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T11:11:00Z",
+  "updatedAt": "2026-11-24T14:15:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
