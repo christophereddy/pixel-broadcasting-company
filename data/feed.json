@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-24T17:12:00Z",
+ "updatedAt": "2026-11-24T20:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "UN: 47,000 women killed by partners or family",
+   "b": "About 47,000 women and girls were killed by an intimate partner or family member last year, the UN's 2026 Femicide Brief found, and home remains the most dangerous place for them.",
+   "date": "2026-11-24",
+   "publisher": "Al Jazeera",
+   "title": "Five women killed every hour globally by partner, relative last year: UN",
+   "url": "https://www.aljazeera.com/news/2026/11/24/five-women-killed-every-hour-globally-by-partner-relative-in-2025-un",
+   "gathered": "2026-11-24T17:12:56Z"
+  },
   {
    "h": "LIVE: Three ships catch fire after hitting Hormuz mines",
    "b": "Iran says three tankers caught fire after hitting naval mines in the Strait of Hormuz. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
@@ -29,10 +38,7 @@
    "b": "After winning approval from a federal appeals court, the Army plans a controlled detonation of 68 barrels of lead azide in Iowa on Wednesday morning.",
    "date": "2026-11-24",
    "place": "Middletown, Iowa",
-   "publisher": "PBS NewsHour",
-   "title": "Getting court approval, U.S. Army to detonate degraded bomb-making material in Iowa on Wednesday",
    "url": "https://www.pbs.org/newshour/nation/getting-court-approval-u-s-army-to-detonate-degraded-bomb-making-material-in-iowa-on-wednesday",
-   "published": "2026-11-24T13:34:10Z",
    "gathered": "2026-11-24T16:09:41Z"
   },
   {
@@ -142,6 +148,16 @@
  ],
  "politics": [
   {
+   "h": "Huang intervention fuels Democrats' 2028 attacks",
+   "b": "Democrats eyeing the White House see Trump's pressure on Nvidia to reinstate Jensen Huang as fresh evidence of his coziness with tech executives.",
+   "date": "2026-11-24",
+   "publisher": "PBS NewsHour",
+   "title": "Trump's intervention on behalf of Jensen Huang gives Democrats more 2028 campaign fuel",
+   "url": "https://www.pbs.org/newshour/politics/trumps-intervention-on-behalf-of-jensen-huang-gives-democrats-more-2028-campaign-fuel",
+   "published": "2026-11-24T16:12:37Z",
+   "gathered": "2026-11-24T17:12:56Z"
+  },
+  {
    "h": "Unsealed records detail search of Ilhan Omar's home",
    "b": "Court documents show the magistrate judge who approved the search ruled Omar could assert privacy protections for sitting members of Congress.",
    "date": "2026-11-24",
@@ -249,8 +265,6 @@
    "date": "2026-11-24",
    "place": "Baghdad, Iraq",
    "tz": "Asia/Baghdad",
-   "publisher": "Al Jazeera",
-   "title": "Iraq orders takeover of oilfields in areas under Kurdish control",
    "url": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control",
    "gathered": "2026-11-24T16:09:41Z"
   },
@@ -261,7 +275,7 @@
    "place": "Riyadh, Saudi Arabia",
    "tz": "Asia/Riyadh",
    "publisher": "Al Jazeera",
-   "title": "11 injured in Houthi ‘terrorist’ attack on tower in Riyadh",
+   "title": "11 injured in Houthi attack on Riyadh tower, Saudi civil defence says",
    "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh",
    "gathered": "2026-11-24T16:09:41Z"
   },
@@ -668,18 +682,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 47,
+   "temp": 49,
    "cond": "Fair",
-   "wind": "W 3 mph, gusts to 21 mph",
-   "humidity": 41,
-   "obs": "24 Nov 10:51 am EST"
+   "wind": "N 10 mph, gusts to 21 mph",
+   "humidity": 32,
+   "obs": "24 Nov 11:51 am EST"
   },
   "periods": [
    {
-    "name": "Today",
+    "name": "This Afternoon",
     "kind": "high",
     "temp": 51,
-    "text": "Sunny, with a high near 51. North wind 10 to 15 mph. "
+    "text": "Sunny, with a high near 51. North wind 10 to 14 mph. "
    },
    {
     "name": "Tonight",
