@@ -8,18 +8,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Partly Cloudy",
-    "wind": "NW 8 mph",
-    "humidity": 79,
-    "obs": "24 Nov 05:52 am EST"
+    "temp": 60,
+    "cond": "Overcast",
+    "wind": "E 12 mph",
+    "humidity": 72,
+    "obs": "24 Nov 10:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 60,
-     "text": "Mostly cloudy, with a high near 60. North wind 5 to 10 mph becoming east in the morning. Winds could gust as high as 20 mph. "
+     "text": "Mostly cloudy, with a high near 60. East wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Tonight",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -77,11 +77,27 @@
   },
   "local": [
    {
+    "h": "Brookline residents report owl attacks",
+    "b": "More than two dozen people in Brookline believe they've been attacked by the same owl.",
+    "date": "2026-11-24",
+    "publisher": "WBUR",
+    "title": "Spate of reported owl attacks strikes Brookline",
+    "url": "https://www.wbur.org/news/2026/11/24/owl-brookline-barred-animal-attack",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
+   {
+    "h": "Baystate resumes gender care for youth",
+    "b": "Baystate Health will again prescribe gender-affirming medication for minors starting Dec. 15, almost a year after halting the program amid threats from Washington.",
+    "date": "2026-11-24",
+    "publisher": "WBUR",
+    "title": "Baystate resumes gender care for youth, after shutting it down amid government threats",
+    "url": "https://www.wbur.org/news/2026/11/24/baystate-resumes-gender-affirming-care-trans-youth-trump",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
+   {
     "h": "Harvard: Data center emissions far worse than thought",
     "b": "A Harvard study of 403 large data centers found their climate pollution is three times greater than previously estimated.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "Harvard study: Data center climate emissions are worse than previously thought",
     "url": "https://www.wbur.org/news/2026/11/23/harvard-study-data-centers-climate-emissions-energy",
     "gathered": "2026-11-23T23:12:53Z"
    },
@@ -89,8 +105,6 @@
     "h": "Beacon Hill welcomes at least 21 new lawmakers",
     "b": "The incoming class includes a 19-year-old from Billerica, a 'Bachelorette' contestant and the sitting mayor of Gardner; every freshman but one is a Democrat.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "A mayor, a 19-year-old and a 'Bachelorette' alum: Meet Beacon Hill’s incoming class",
     "url": "https://www.wbur.org/news/2026/11/23/massachusetts-beacon-hill-incoming-class-senate-house",
     "gathered": "2026-11-23T20:27:45Z"
    },
@@ -111,18 +125,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
+    "temp": 45,
     "cond": "A Few Clouds",
-    "wind": "W 13 mph",
-    "humidity": 60,
-    "obs": "24 Nov 05:54 am EST"
+    "wind": "NW 20 mph, gusts to 31 mph",
+    "humidity": 35,
+    "obs": "24 Nov 10:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 45,
-     "text": "Sunny, with a high near 45. Northwest wind 7 to 11 mph, with gusts as high as 21 mph. "
+     "text": "Sunny, with a high near 45. Northwest wind 8 to 11 mph, with gusts as high as 21 mph. "
     },
     {
      "name": "Tonight",
@@ -168,15 +182,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
     "h": "Neponset River cleanup moves forward",
     "b": "The EPA reached agreements with state conservation officials and 54 other parties to advance a $78.6 million cleanup of decades of industrial pollution in the Lower Neponset River.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "EPA reaches agreements with DCR, other parties to move forward on $78.6 million Neponset River cleanup",
     "url": "https://www.wbur.org/news/2026/11/23/epa-dcr-neponset-river-cleanup-agreement",
     "gathered": "2026-11-23T23:12:53Z"
    },
@@ -204,6 +216,17 @@
   },
   "local": [
    {
+    "h": "Bill would let assault survivors sue colleges",
+    "b": "Illinois lawmakers are weighing a proposal letting campus sexual assault survivors sue universities that fail to provide supports required by state law.",
+    "date": "2026-11-24",
+    "publisher": "WBEZ",
+    "title": "Illinois legislation could help more survivors of campus sexual assault stay in college",
+    "url": "https://www.wbez.org/education/2026/11/24/illinois-legislation-could-help-more-survivors-of-campus-sexual-assault-stay-in-college",
+    "published": "2026-11-24T11:35:00Z",
+    "updated": "2026-11-24T11:35:14Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
+   {
     "h": "Top cop finalist was disciplined three times",
     "b": "Records show CPD counterterrorism chief Christopher Papaioannou, a superintendent finalist, was suspended or reprimanded three times and drew dozens of complaints.",
     "date": "2026-11-23",
@@ -229,8 +252,6 @@
     "h": "NW Indiana food banks see heavy need",
     "b": "After a year of storms and cuts to SNAP benefits, Northwest Indiana is leaning on its food banks ahead of Thanksgiving.",
     "date": "2026-11-23",
-    "publisher": "WBEZ",
-    "title": "For Northwest Indiana food banks, the need is great — this year more than most",
     "url": "https://www.wbez.org/wbez-news/2026/11/23/for-northwest-indiana-food-banks-the-need-is-great-this-year-more-than-most",
     "gathered": "2026-11-23T23:12:53Z"
    },
@@ -238,8 +259,6 @@
     "h": "Chicago crime falls, domestic violence rises",
     "b": "While overall crime is dropping in Chicago, domestic violence is getting worse; experts and survivors discuss what it would take to reduce it.",
     "date": "2026-11-23",
-    "publisher": "WBEZ",
-    "title": "While overall crime is dropping in Chicago, domestic violence is getting worse",
     "url": "https://www.wbez.org/say-more-with-mary-dixon-patrick-smith/2026/11/23/while-overall-crime-is-dropping-in-chicago-domestic-violence-is-getting-worse",
     "gathered": "2026-11-23T23:12:53Z"
    },
@@ -247,11 +266,7 @@
     "h": "Chicago bets on the Soul Train Awards to boost tourism",
     "b": "Taped in Chicago, the Soul Train Awards return to network TV Friday after a two-year hiatus, and local officials hope the show will draw tourism and more awards specials to the city.",
     "date": "2026-11-23",
-    "publisher": "WBEZ",
-    "title": "Can the Soul Train Awards help boost Chicago’s reputation as an entertainment destination?",
     "url": "https://www.wbez.org/movies-tv/2026/11/23/soul-train-awards-chicago-bet-entertainment",
-    "published": "2026-11-23T11:35:00Z",
-    "updated": "2026-11-23T11:35:01Z",
     "gathered": "2026-11-23T14:21:49Z"
    },
    {
@@ -264,18 +279,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 27,
-    "cond": "A Few Clouds",
-    "wind": "NW 7 mph",
-    "humidity": 72,
-    "obs": "24 Nov 04:53 am CST"
+    "temp": 36,
+    "cond": "Mostly Cloudy",
+    "wind": "N 5 mph",
+    "humidity": 64,
+    "obs": "24 Nov 09:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 41,
-     "text": "A slight chance of snow showers before 8am, then scattered rain and snow showers between 8am and noon.  Partly sunny, with a high near 41. North northwest wind 5 to 10 mph becoming east southeast in the afternoon.  Chance of precipitation is 30%."
+     "text": "A chance of rain and snow showers before noon.  Partly sunny, with a high near 41. Northeast wind around 5 mph becoming east southeast in the afternoon.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -321,9 +336,21 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "chicago-il",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Druski to host Chicago's New Year's Eve",
+    "b": "The comedian will host the city's celebration from Navy Pier, broadcast live; free tickets go out first-come, first-served starting Wednesday.",
+    "date": "2026-11-24",
+    "publisher": "WBEZ",
+    "title": "Druski to host Chicago New Year’s Eve celebration and live TV broadcast from Navy Pier",
+    "url": "https://www.wbez.org/movies-tv/2026/11/24/druski-chicago-new-year-eve-countdown-event-free-tickets",
+    "published": "2026-11-24T15:37:20Z",
+    "updated": "2026-11-24T15:37:20Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   }
+  ]
  },
  {
   "location": {
@@ -365,21 +392,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 30,
-    "cond": "Overcast",
-    "wind": "W 3 mph",
-    "humidity": 79,
-    "obs": "24 Nov 01:58 am MST"
+    "temp": 31,
+    "cond": "A Few Clouds",
+    "wind": "S 9 mph",
+    "humidity": 72,
+    "obs": "24 Nov 07:58 am MST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 53,
-     "text": "Sunny, with a high near 53. Light and variable wind becoming south southwest around 5 mph. "
+     "text": "Sunny, with a high near 53. Light and variable wind becoming south around 5 mph. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 26,
      "text": "Mostly clear, with a low around 26. Southwest wind around 5 mph becoming calm  after midnight. "
@@ -400,7 +427,7 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 58,
-     "text": "Sunny, with a high near 58."
+     "text": "Sunny, with a high near 58. Southwest wind around 5 mph becoming calm  in the morning. "
     },
     {
      "name": "Thursday Night",
@@ -422,7 +449,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -433,6 +460,28 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "California port pollution rule faces Congress",
+    "b": "Republicans in Congress are trying to revoke a California rule targeting smog from ships idling at the ports of LA and Long Beach.",
+    "date": "2026-11-24",
+    "publisher": "LAist",
+    "title": "This neon green barge is part of how California is cutting port pollution. Will Congress interfere?",
+    "url": "https://laist.com/news/climate-environment/la-long-beach-port-pollution-capture-at-berth-clean-ship-waiver-congress",
+    "published": "2026-11-24T13:00:00Z",
+    "updated": "2026-11-24T12:59:59Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
+   {
+    "h": "Judge orders search of LA city attorney's devices",
+    "b": "A judge ordered a forensic search of Hydee Feldstein Soto's devices for messages about a former prosecutor who says she was fired for reporting alleged illegal conduct.",
+    "date": "2026-11-24",
+    "publisher": "LAist",
+    "title": "Judge sanctions outgoing LA city attorney, orders forensic search of her devices",
+    "url": "https://laist.com/news/criminal-justice/la-city-attorney-hydee-feldstein-soto-sanctions-device-search",
+    "published": "2026-11-24T13:00:00Z",
+    "updated": "2026-11-24T13:00:05Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
    {
     "h": "Fight over 20,000 California ballots ends",
     "b": "A federal appeals court approved the Justice Department's bid to drop its own suit that sought to pause the counting of roughly 20,000 ballots.",
@@ -473,7 +522,6 @@
     "title": "UC gives students free access to ChatGPT. Faculty say OpenAI deal is ‘unwise’",
     "url": "https://laist.com/news/education/uc-gives-students-free-access-to-chatgpt-faculty-say-openai-deal-is-unwise",
     "published": "2026-11-23T21:00:00Z",
-    "updated": "2026-11-23T22:21:31Z",
     "gathered": "2026-11-23T23:12:53Z"
    },
    {
@@ -484,7 +532,6 @@
     "title": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
     "url": "https://laist.com/news/lets-talk-turkey-heres-how-thanksgiving-meal-costs-have-changed-this-year",
     "published": "2026-11-23T17:39:17Z",
-    "updated": "2026-11-23T17:39:17Z",
     "gathered": "2026-11-23T20:27:45Z"
    },
    {
@@ -501,20 +548,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "wind": "NW 3 mph",
-    "humidity": 60,
-    "obs": "24 Nov 02:55 AM PST"
+    "temp": 58,
+    "wind": "NW 4 mph",
+    "humidity": 47,
+    "obs": "24 Nov 07:55 AM PST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 73,
      "text": "Partly sunny, with a high near 73. North northeast wind around 5 mph becoming west in the afternoon. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "Mostly cloudy, with a low around 54. North wind around 5 mph. "
@@ -535,7 +582,7 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 80,
-     "text": "Sunny, with a high near 80."
+     "text": "Sunny, with a high near 80. North wind 5 to 10 mph. "
     },
     {
      "name": "Thursday Night",
@@ -557,7 +604,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -568,6 +615,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Woman stabbed at random in Riverside Park",
+    "b": "Police are searching for a man who stabbed a 26-year-old woman near West 96th Street Monday night; she is in stable condition.",
+    "date": "2026-11-24",
+    "publisher": "Gothamist",
+    "title": "NYPD searches for suspect who police say stabbed a woman at random in Riverside Park",
+    "url": "https://gothamist.com/news/nypd-searches-for-suspect-who-police-say-stabbed-a-woman-at-random-in-riverside-park",
+    "published": "2026-11-24T13:13:54Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
+   {
+    "h": "Lawsuit says co-signer firm inflates rents",
+    "b": "A class action accuses TheGuarantors of raising renters' costs through exclusive deals with landlords that block cheaper options.",
+    "date": "2026-11-24",
+    "publisher": "Gothamist",
+    "title": "NYC renters face ‘higher fees, reduced housing access’ due to co-signer company, lawsuit says",
+    "url": "https://gothamist.com/news/nyc-renters-face-higher-fees-reduced-housing-access-due-to-co-signer-company-lawsuit-says",
+    "published": "2026-11-24T14:00:48Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
    {
     "h": "Report backs regular taxi fare hikes",
     "b": "A Taxi and Limousine Commission report says yellow cab operating costs rose about 16% since 2022, and regular fare hikes could help drivers avoid poverty.",
@@ -625,8 +692,7 @@
     "publisher": "Gothamist",
     "title": "New York’s highest court upholds key protection for low-income renters with Section 8",
     "url": "https://gothamist.com/news/new-yorks-highest-court-upholds-key-protection-for-low-income-renters-with-section-8",
-    "published": "2026-11-23T16:06:00Z",
-    "updated": "2026-11-23T20:54:00Z",
+    "published": "2026-11-23T20:54:00Z",
     "gathered": "2026-11-23T17:15:56Z"
    },
    {
@@ -652,18 +718,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 47,
     "cond": "Fair",
-    "wind": "W 5 mph",
-    "humidity": 58,
-    "obs": "24 Nov 05:51 am EST"
+    "wind": "W 3 mph, gusts to 21 mph",
+    "humidity": 41,
+    "obs": "24 Nov 10:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 48,
-     "text": "Sunny, with a steady temperature around 48. North wind 10 to 16 mph. "
+     "temp": 51,
+     "text": "Sunny, with a high near 51. North wind 10 to 15 mph. "
     },
     {
      "name": "Tonight",
@@ -709,9 +775,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Cataloguing hidden fungi under Green-Wood",
+    "b": "Green-Wood Cemetery fellows are sifting soil to catalogue potentially thousands of unknown fungus species.",
+    "date": "2026-11-24",
+    "publisher": "Gothamist",
+    "title": "Digging up a secret world under a Brooklyn graveyard, one teaspoon at a time",
+    "url": "https://gothamist.com/news/digging-up-a-secret-world-under-a-brooklyn-graveyard-one-teaspoon-at-a-time",
+    "published": "2026-11-24T11:30:56Z",
+    "gathered": "2026-11-24T16:09:41Z"
+   },
    {
     "h": "About 100 New Yorkers ditched their smartphones for a month",
     "b": "A phone-free party celebrated roughly 100 New Yorkers who gave up their smartphones for a month, with a showcase of the hobbies and art projects they picked up instead.",
@@ -736,22 +812,14 @@
     "h": "Freezing temperatures hit France",
     "b": "Arctic air is bringing a sharp drop in temperatures, with overnight lows below freezing in several regions this week.",
     "date": "2026-11-24",
-    "publisher": "The Local France",
-    "title": "Freezing temperatures hit northern and eastern France as cold snap bites",
     "url": "https://www.thelocal.fr/20261124/freezing-temperatures-hit-northern-and-eastern-france-as-cold-snap-bites",
-    "published": "2026-11-24T08:27:24Z",
-    "updated": "2026-11-24T08:27:25Z",
     "gathered": "2026-11-24T11:11:33Z"
    },
    {
     "h": "Map shows France's hardest tap water",
     "b": "Tap water hardness varies significantly across France, and hard water builds limescale on taps and kettles and can dry out skin and hair.",
     "date": "2026-11-23",
-    "publisher": "The Local France",
-    "title": "MAP: Which parts of France have the hardest tap water?",
     "url": "https://www.thelocal.fr/20261123/map-which-parts-of-france-have-the-hardest-tap-water",
-    "published": "2026-11-23T16:10:07Z",
-    "updated": "2026-11-23T16:10:07Z",
     "gathered": "2026-11-23T23:12:53Z"
    },
    {
@@ -785,7 +853,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "goodnews": [
    {
     "h": "World's best egg mayonnaise crowned",
@@ -825,11 +893,7 @@
     "h": "Seattle schools require sex attestation for girls sports",
     "b": "The district is asking families to complete a 'biological sex attestation' form to comply with Initiative 638, which bans trans girls from girls sports.",
     "date": "2026-11-24",
-    "publisher": "KUOW",
-    "title": "Submit ‘biological sex’ form to compete, Seattle schools tells girls",
     "url": "https://www.kuow.org/education/2026-11-23/submit-biological-sex-form-to-compete-seattle-schools-tells-girls",
-    "published": "2026-11-24T02:07:02Z",
-    "updated": "2026-11-24T02:07:02Z",
     "gathered": "2026-11-24T04:54:32Z"
    },
    {
@@ -856,21 +920,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Rain",
-    "wind": "E 8 mph",
-    "humidity": 76,
-    "obs": "24 Nov 02:53 AM PST"
+    "temp": 51,
+    "cond": "Overcast",
+    "wind": "SE 6 mph",
+    "humidity": 63,
+    "obs": "24 Nov 07:53 AM PST"
    },
    "periods": [
     {
-     "name": "Tuesday",
+     "name": "Today",
      "kind": "high",
      "temp": 53,
-     "text": "Rain likely, mainly between 11am and 5pm.  Cloudy, with a high near 53. East southeast wind around 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely, mainly between 4pm and 5pm.  Cloudy, with a high near 53. East southeast wind around 8 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
-     "name": "Tuesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 48,
      "text": "Rain.  Low around 48. South southeast wind around 10 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
@@ -891,7 +955,7 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 55,
-     "text": "Rain before 4pm, then a chance of showers and thunderstorms after 4pm.  High near 55. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
+     "text": "Rain before 4pm, then a chance of showers and thunderstorms after 4pm.  High near 55. South southwest wind 14 to 16 mph, with gusts as high as 28 mph.  Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday Night",
@@ -913,7 +977,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T14:15:00Z",
+  "updatedAt": "2026-11-24T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
