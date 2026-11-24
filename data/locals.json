@@ -8,24 +8,24 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Overcast",
-    "wind": "W 6 mph",
-    "humidity": 84,
-    "obs": "23 Nov 17:52 pm EST"
+    "temp": 53,
+    "cond": "Mostly Cloudy",
+    "wind": "NW 14 mph",
+    "humidity": 83,
+    "obs": "23 Nov 23:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 48,
-     "text": "Partly cloudy, with a low around 48. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Mostly clear, with a low around 48. Northwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Tuesday",
      "kind": "high",
      "temp": 62,
-     "text": "Mostly cloudy, with a high near 62. North wind 5 to 15 mph becoming east in the morning. Winds could gust as high as 20 mph. "
+     "text": "Mostly cloudy, with a high near 62. North wind 5 to 10 mph becoming east in the morning. Winds could gust as high as 20 mph. "
     },
     {
      "name": "Tuesday Night",
@@ -37,19 +37,19 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 51,
-     "text": "Showers likely, mainly after 1pm.  Mostly cloudy, with a high near 51. East wind around 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 60%."
+     "text": "A slight chance of showers before 2pm, then a chance of showers after 4pm.  Mostly cloudy, with a high near 51. East wind around 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Showers.  Low around 44. Northeast wind 10 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 80%."
+     "text": "Showers, mainly after 7pm.  Low around 44. East wind 5 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 100%."
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 57,
-     "text": "A 40 percent chance of showers before 1pm.  Mostly cloudy, with a high near 57."
+     "text": "A 30 percent chance of showers before 1pm.  Mostly cloudy, with a high near 57."
     }
    ]
   },
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -115,18 +115,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 61,
-    "cond": "Mostly Cloudy",
-    "wind": "W 17 mph, gusts to 24 mph",
-    "humidity": 56,
-    "obs": "23 Nov 17:54 pm EST"
+    "temp": 49,
+    "cond": "A Few Clouds",
+    "wind": "W 12 mph",
+    "humidity": 52,
+    "obs": "23 Nov 22:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 38,
-     "text": "Mostly cloudy, then becoming clear toward daybreak, with a low around 38. Northwest wind 5 to 8 mph. "
+     "text": "Mostly cloudy early, then becoming clear, with a low around 38. Northwest wind around 6 mph. "
     },
     {
      "name": "Tuesday",
@@ -172,7 +172,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -208,6 +208,28 @@
   },
   "local": [
    {
+    "h": "Top cop finalist was disciplined three times",
+    "b": "Records show CPD counterterrorism chief Christopher Papaioannou, a superintendent finalist, was suspended or reprimanded three times and drew dozens of complaints.",
+    "date": "2026-11-23",
+    "publisher": "WBEZ",
+    "title": "Chicago top cop finalist was disciplined 3 times while racking up dozens of misconduct complaints",
+    "url": "https://www.wbez.org/public-safety/2026/11/23/papaioannou-ursitti-novalez-chicago-police-cpd-superintendent-top-cop",
+    "published": "2026-11-23T23:33:43Z",
+    "updated": "2026-11-23T23:33:43Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
+    "h": "Workers walk out at Humboldt Park coffee shop",
+    "b": "Tasa Coffee Roasters faces boycott calls and was egged after a viral post alleged ties to ICE; workers walked off the job Monday.",
+    "date": "2026-11-24",
+    "publisher": "WBEZ",
+    "title": "Latino-focused Tasa Coffee Roasters targeted by social media post alleging ties to ICE",
+    "url": "https://www.wbez.org/politics/2026/11/23/tasa-coffee-roaster-west-humboldt-immigration-ice-dhs-social-media-worker-walkout",
+    "published": "2026-11-24T02:27:41Z",
+    "updated": "2026-11-24T03:32:41Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
     "h": "NW Indiana food banks see heavy need",
     "b": "After a year of storms and cuts to SNAP benefits, Northwest Indiana is leaning on its food banks ahead of Thanksgiving.",
     "date": "2026-11-23",
@@ -240,46 +262,42 @@
     "h": "Ankle monitors take over a Chicagoan's life",
     "b": "As the administration puts ankle monitors on more immigrants, advocates say they aren't necessary for people complying with their cases and take a toll on mental health.",
     "date": "2026-11-23",
-    "publisher": "WBEZ",
-    "title": "As the Trump administration puts ankle monitors on more immigrants, it’s taking over this Chicagoan’s life",
     "url": "https://www.wbez.org/immigration/2026/11/23/trump-administration-ankle-monitors-immigrants-chicago",
-    "published": "2026-11-23T11:30:00Z",
-    "updated": "2026-11-23T11:30:14Z",
     "gathered": "2026-11-23T14:21:49Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 38,
+    "temp": 31,
     "cond": "A Few Clouds",
-    "wind": "NW 8 mph",
-    "humidity": 52,
-    "obs": "23 Nov 16:53 pm CST"
+    "wind": "N 13 mph",
+    "humidity": 67,
+    "obs": "23 Nov 22:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 33,
-     "text": "Partly cloudy, with a low around 33. Northwest wind 10 to 15 mph, with gusts as high as 20 mph. "
+     "temp": 32,
+     "text": "A slight chance of rain and snow after 5am.  Mostly clear, with a low around 32. North northwest wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Tuesday",
      "kind": "high",
-     "temp": 42,
-     "text": "Partly sunny, with a high near 42. North northwest wind 5 to 10 mph becoming east in the afternoon. "
+     "temp": 41,
+     "text": "A slight chance of rain and snow before 9am.  Partly sunny, with a high near 41. North northwest wind 5 to 10 mph becoming east southeast in the morning.  Chance of precipitation is 20%."
     },
     {
      "name": "Tuesday Night",
      "kind": "low",
-     "temp": 37,
-     "text": "Mostly cloudy, with a low around 37. East wind 5 to 15 mph. "
+     "temp": 34,
+     "text": "Mostly cloudy, with a low around 34. East wind 5 to 10 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 46,
-     "text": "A 20 percent chance of rain after noon.  Mostly cloudy, with a high near 46. Breezy, with an east northeast wind 10 to 20 mph. "
+     "text": "A 20 percent chance of rain after 2pm.  Mostly cloudy, with a high near 46. Breezy, with an east northeast wind 10 to 20 mph. "
     },
     {
      "name": "Wednesday Night",
@@ -307,7 +325,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -318,6 +336,16 @@
    "tz": "America/Denver"
   },
   "local": [
+   {
+    "h": "Denver approves $40M DNC standby fund",
+    "b": "The city will provide a $40 million financial guarantee for its bid to host the Democratic National Convention.",
+    "date": "2026-11-23",
+    "publisher": "Denverite",
+    "title": "Denver approves $40M of ‘standby’ funding for Democratic National Convention",
+    "url": "https://denverite.com/2026/11/23/democratic-national-convention-denver-funding-approved/",
+    "published": "2026-11-23T23:59:35Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
    {
     "h": "Denver in the mix for 2031 Women's World Cup",
     "b": "The 2031 Women's World Cup is coming to the United States, Mexico, Costa Rica and Jamaica, and Denver is in the mix to host games.",
@@ -341,18 +369,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 36,
-    "cond": "Mostly Cloudy",
-    "wind": "N 7 mph",
-    "humidity": 62,
-    "obs": "23 Nov 15:58 pm MST"
+    "temp": 31,
+    "cond": "Overcast",
+    "wind": "N 3 mph",
+    "humidity": 82,
+    "obs": "23 Nov 20:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 25,
-     "text": "Mostly cloudy, with a low around 25. North northeast wind around 5 mph becoming calm  in the evening. "
+     "text": "Mostly cloudy, with a low around 25. Calm wind. "
     },
     {
      "name": "Tuesday",
@@ -398,7 +426,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -409,6 +437,38 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Fight over 20,000 California ballots ends",
+    "b": "A federal appeals court approved the Justice Department's bid to drop its own suit that sought to pause the counting of roughly 20,000 ballots.",
+    "date": "2026-11-24",
+    "publisher": "LAist",
+    "title": "Legal fight over 20,000 California ballots ends as appeals court OKs DOJ dismissal",
+    "url": "https://laist.com/news/politics/legal-fight-over-20-000-california-ballots-ends-as-appeals-court-oks-doj-dismissal",
+    "published": "2026-11-24T02:10:25Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
+    "h": "High gas prices cancel some holiday trips",
+    "b": "Gas prices in the LA-Long Beach area fell about 60 cents in the last month, AAA says, but some drivers have still canceled Thanksgiving travel.",
+    "date": "2026-11-24",
+    "publisher": "LAist",
+    "title": "Gasoline prices may be inching down, but some have already canceled Thanksgiving travel plans",
+    "url": "https://laist.com/news/los-angeles-activities/gasoline-prices-may-be-inching-down-but-some-have-already-canceled-thanksgiving-travel-plans",
+    "published": "2026-11-24T01:43:26Z",
+    "updated": "2026-11-24T01:43:26Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
+    "h": "LA weighs rent freeze for seniors, disabled",
+    "b": "Councilmember Ysabel Jurado introduced a motion to explore a program that would keep rents flat for qualifying tenants.",
+    "date": "2026-11-24",
+    "publisher": "LAist",
+    "title": "LA considers taxpayer-funded rent freeze for some senior and disabled tenants",
+    "url": "https://laist.com/news/housing-homelessness/los-angeles-city-council-housing-rent-freeze-proposal-senior-elderly-disabled-tenants-landlords",
+    "published": "2026-11-24T00:26:13Z",
+    "updated": "2026-11-24T00:32:56Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
    {
     "h": "UC gives all students ChatGPT access",
     "b": "The University of California signed a $1.2 million deal with OpenAI for ChatGPT Edu, despite faculty concerns that they weren't sufficiently consulted.",
@@ -436,19 +496,19 @@
     "b": "The House Ethics Committee reported 'substantial evidence' that Rep. Jimmy Gomez made unwelcome sexual advances and contact toward a House staffer.",
     "date": "2026-11-23",
     "publisher": "LAist",
-    "title": "Ethics probe finds Democratic Rep. Jimmy Gomez made unwelcome sexual advances to a staffer",
+    "title": "Democratic Rep. Jimmy Gomez resigns after Ethics panel finds evidence of sexual misconduct",
     "url": "https://laist.com/news/politics/ethics-probe-finds-democratic-rep-jimmy-gomez-made-unwelcome-sexual-advances-to-a-staffer",
     "published": "2026-11-23T20:19:08Z",
-    "updated": "2026-11-23T21:38:09Z",
+    "updated": "2026-11-24T01:08:30Z",
     "gathered": "2026-11-23T20:27:45Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "wind": "NW 2 mph",
-    "humidity": 43,
-    "obs": "23 Nov 03:10 PM PST"
+    "temp": 56,
+    "wind": "NW 1 mph",
+    "humidity": 78,
+    "obs": "23 Nov 08:40 PM PST"
    },
    "periods": [
     {
@@ -473,13 +533,13 @@
      "name": "Wednesday",
      "kind": "high",
      "temp": 74,
-     "text": "Mostly sunny, with a high near 74. Calm wind becoming north northwest around 5 mph in the afternoon. "
+     "text": "Mostly cloudy through mid morning, then gradual clearing, with a high near 74. Calm wind becoming north northwest around 5 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly clear, with a low around 55."
+     "text": "Mostly clear, with a low around 55. North wind 5 to 10 mph. "
     },
     {
      "name": "Thanksgiving Day",
@@ -501,7 +561,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -586,18 +646,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Fair",
-    "wind": "W 7 mph, gusts to 20 mph",
-    "humidity": 62,
-    "obs": "23 Nov 17:51 pm EST"
+    "temp": 50,
+    "cond": "Mostly Cloudy",
+    "wind": "W 7 mph",
+    "humidity": 52,
+    "obs": "23 Nov 23:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Partly cloudy, with a low around 47. Northwest wind 11 to 15 mph. "
+     "text": "Mostly clear, with a low around 47. Northwest wind 11 to 13 mph. "
     },
     {
      "name": "Tuesday",
@@ -643,7 +703,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -716,7 +776,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "goodnews": []
  },
  {
@@ -727,25 +787,50 @@
   },
   "local": [
    {
+    "h": "Seattle schools settle over pregnant workers",
+    "b": "Seattle Public Schools will pay $600,000 and revise policies for pregnant and nursing employees under a settlement with the state attorney general.",
+    "date": "2026-11-24",
+    "publisher": "KUOW",
+    "title": "Seattle schools to pay $600,000 over treatment of pregnant, nursing employees",
+    "url": "https://www.kuow.org/education/2026-11-23/seattle-schools-to-pay-600-000-over-treatment-of-pregnant-nursing-employees",
+    "published": "2026-11-24T00:22:04Z",
+    "updated": "2026-11-24T00:22:04Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
+    "h": "King tides could break records this week",
+    "b": "El Niño-heated water along the West Coast could push this week's king tides to record highs, and they may complicate Thanksgiving ferry travel.",
+    "date": "2026-11-24",
+    "publisher": "KUOW",
+    "title": "PNW braces for El Niño-fueled, possibly record-breaking king tides",
+    "url": "https://www.kuow.org/environment/2026-11-23/pnw-braces-for-el-nino-fueled-possibly-record-breaking-king-tides",
+    "published": "2026-11-24T01:01:51Z",
+    "updated": "2026-11-24T01:43:02Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
+    "h": "Seattle schools require sex attestation for girls sports",
+    "b": "The district is asking families to complete a 'biological sex attestation' form to comply with Initiative 638, which bans trans girls from girls sports.",
+    "date": "2026-11-24",
+    "publisher": "KUOW",
+    "title": "Submit ‘biological sex’ form to compete, Seattle schools tells girls",
+    "url": "https://www.kuow.org/education/2026-11-23/submit-biological-sex-form-to-compete-seattle-schools-tells-girls",
+    "published": "2026-11-24T02:07:02Z",
+    "updated": "2026-11-24T02:07:02Z",
+    "gathered": "2026-11-24T04:54:32Z"
+   },
+   {
     "h": "Dallesport residents fight huge data center plan",
     "b": "Neighbors in rural Klickitat County are organizing against a proposed hyperscale data center campus that could one day reach one gigawatt.",
     "date": "2026-11-23",
-    "publisher": "KUOW",
-    "title": "Rural Washington community organizes against massive data center proposal",
     "url": "https://www.kuow.org/technology/2026-11-23/rural-washington-community-organizes-against-massive-data-center-proposal",
-    "published": "2026-11-23T18:30:29Z",
-    "updated": "2026-11-23T18:30:29Z",
     "gathered": "2026-11-23T20:27:45Z"
    },
    {
     "h": "Longest-serving state justice to retire",
     "b": "Washington Supreme Court Justice Charles W. Johnson, on the court for 36 years, will leave when his term ends this year at the state's mandatory age limit of 75.",
     "date": "2026-11-23",
-    "publisher": "KUOW",
-    "title": "Record tenure concludes as Charles Johnson retires from Washington state Supreme Court",
     "url": "https://www.kuow.org/governing/2026-11-23/record-tenure-concludes-as-charles-johnson-retires-from-washington-state-supreme-court",
-    "published": "2026-11-23T16:20:28Z",
-    "updated": "2026-11-23T16:20:28Z",
     "gathered": "2026-11-23T17:15:56Z"
    },
    {
@@ -760,16 +845,16 @@
    "now": {
     "temp": 52,
     "cond": "Overcast",
-    "wind": "SE 11 mph",
+    "wind": "S 10 mph",
     "humidity": 40,
-    "obs": "23 Nov 03:05 PM PST"
+    "obs": "23 Nov 08:35 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Rain, mainly before 5am.  Low around 45. East southeast wind 6 to 8 mph.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly before 5am.  Low around 45. East southeast wind 6 to 8 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Tuesday",
@@ -793,13 +878,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 50,
-     "text": "Rain.  Low around 50. Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Rain.  Low around 50. South southeast wind 9 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 55,
-     "text": "Rain and possibly a thunderstorm before 7am, then showers and possibly a thunderstorm between 7am and 4pm, then a chance of rain and thunderstorms after 4pm.  High near 55. Chance of precipitation is 100%."
+     "text": "Rain and possibly a thunderstorm before 7am, then showers and possibly a thunderstorm between 7am and 4pm, then a chance of rain and thunderstorms after 4pm.  High near 55. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -815,7 +900,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T02:12:00Z",
+  "updatedAt": "2026-11-24T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
