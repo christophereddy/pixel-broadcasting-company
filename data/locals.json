@@ -5,36 +5,14 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [
-   {
-    "h": "How to serve a safe Thanksgiving meal",
-    "b": "Food poisoning outbreaks tend to rise in November and December, the CDC says, with tainted turkey, undercooked stuffing and holiday buffets behind past illnesses. Here's how to avoid them.",
-    "date": "2026-11-22",
-    "publisher": "WABE",
-    "title": "What to do to have a safe Thanksgiving meal",
-    "url": "https://www.wabe.org/what-to-do-to-have-a-safe-thanksgiving-meal/",
-    "published": "2026-11-22T16:48:03Z",
-    "updated": "2026-11-22T16:48:06Z",
-    "gathered": "2026-11-22T17:58:26Z"
-   },
-   {
-    "h": "Delta system glitch delays flights at Atlanta airport",
-    "b": "An issue with Delta's weight and balance system at Hartsfield-Jackson is delaying thousands of flights ahead of Thanksgiving, the FAA said.",
-    "date": "2026-11-22",
-    "publisher": "Gothamist",
-    "title": "Delta delays flights ahead of Thanksgiving holiday over system failure",
-    "url": "https://gothamist.com/news/scattered-showers-heading-for-nyc-could-linger-into-monday",
-    "published": "2026-11-22T18:05:00Z",
-    "gathered": "2026-11-22T17:58:26Z"
-   }
-  ],
+  "local": [],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Mostly Cloudy",
-    "wind": "W 8 mph, gusts to 17 mph",
-    "humidity": 68,
-    "obs": "23 Nov 14:52 pm EST"
+    "temp": 61,
+    "cond": "Overcast",
+    "wind": "W 6 mph",
+    "humidity": 84,
+    "obs": "23 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -65,7 +43,7 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Showers.  Low around 44. Chance of precipitation is 80%."
+     "text": "Showers.  Low around 44. Northeast wind 10 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Thanksgiving Day",
@@ -87,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -98,6 +76,15 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Harvard: Data center emissions far worse than thought",
+    "b": "A Harvard study of 403 large data centers found their climate pollution is three times greater than previously estimated.",
+    "date": "2026-11-23",
+    "publisher": "WBUR",
+    "title": "Harvard study: Data center climate emissions are worse than previously thought",
+    "url": "https://www.wbur.org/news/2026/11/23/harvard-study-data-centers-climate-emissions-energy",
+    "gathered": "2026-11-23T23:12:53Z"
+   },
    {
     "h": "Beacon Hill welcomes at least 21 new lawmakers",
     "b": "The incoming class includes a 19-year-old from Billerica, a 'Bachelorette' contestant and the sitting mayor of Gardner; every freshman but one is a Democrat.",
@@ -121,25 +108,18 @@
     "b": "Tuesday and Wednesday look clear for travel, but a coastal storm is expected to bring soaking rain, strong wind gusts and coastal flooding on Thanksgiving Day.",
     "date": "2026-11-23",
     "publisher": "WBUR",
-    "title": "Thanksgiving travel forecast: Quiet week before an impactful Thanksgiving storm",
+    "title": "Thanksgiving forecast: Quiet week before an impactful storm",
     "url": "https://www.wbur.org/news/2026/11/23/thanksgiving-travel-weather-forecast-storm-east-coast",
     "gathered": "2026-11-23T17:15:56Z"
-   },
-   {
-    "h": "ICE keeps making courthouse arrests despite new state law",
-    "b": "Immigration agents are still arresting people at Massachusetts courthouses, including a Framingham district court, despite the state's new PROTECT Act.",
-    "date": "2026-11-22",
-    "url": "https://www.wbur.org/news/2026/11/22/massachusetts-immigration-court-arrests-agents",
-    "gathered": "2026-11-22T17:58:26Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 67,
-    "cond": "Partly Cloudy",
-    "wind": "W 8 mph, gusts to 23 mph",
-    "humidity": 53,
-    "obs": "23 Nov 14:54 pm EST"
+    "temp": 61,
+    "cond": "Mostly Cloudy",
+    "wind": "W 17 mph, gusts to 24 mph",
+    "humidity": 56,
+    "obs": "23 Nov 17:54 pm EST"
    },
    "periods": [
     {
@@ -192,15 +172,22 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
+   {
+    "h": "Neponset River cleanup moves forward",
+    "b": "The EPA reached agreements with state conservation officials and 54 other parties to advance a $78.6 million cleanup of decades of industrial pollution in the Lower Neponset River.",
+    "date": "2026-11-23",
+    "publisher": "WBUR",
+    "title": "EPA reaches agreements with DCR, other parties to move forward on $78.6 million Neponset River cleanup",
+    "url": "https://www.wbur.org/news/2026/11/23/epa-dcr-neponset-river-cleanup-agreement",
+    "gathered": "2026-11-23T23:12:53Z"
+   },
    {
     "h": "Skatesgiving brings roller skating and turkeys to Dorchester",
     "b": "Kids skated in the Joseph Lee K-8 School auditorium Friday night at an annual community event where families also picked up Thanksgiving food.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "Annual turkey giveaway centers community, roller skating in Dorchester",
     "url": "https://www.wbur.org/news/2026/11/23/skatesgiving-dorchester-thanksgiving-roller-skating",
     "gathered": "2026-11-23T14:21:49Z"
    },
@@ -208,8 +195,6 @@
     "h": "ProBlak's mural brings community stories to A.R.T.'s new center",
     "b": "Artist Rob \"ProBlak\" Gibbs has created a massive mural for the American Repertory Theater's new Goel Center in Allston, which opens to the public in April 2027.",
     "date": "2026-11-23",
-    "publisher": "WBUR",
-    "title": "ProBlak’s huge mural brings community stories to A.R.T.’s new center",
     "url": "https://www.wbur.org/news/2026/11/23/rob-problak-gibbs-art-mural-goel-center",
     "gathered": "2026-11-23T11:12:31Z"
    }
@@ -243,34 +228,17 @@
     "published": "2026-11-23T11:30:00Z",
     "updated": "2026-11-23T11:30:14Z",
     "gathered": "2026-11-23T14:21:49Z"
-   },
-   {
-    "h": "Teen critically wounded in Riverdale shooting",
-    "b": "An 18-year-old was shot in the head Saturday night after a group of men approached him in the 800 block of East 130th Place, police said. He was taken to UChicago Medical Center in critical condition.",
-    "date": "2026-11-22",
-    "publisher": "WBEZ",
-    "title": "Teen critically wounded in Riverdale shooting",
-    "url": "https://www.wbez.org/crime/2026/11/21/teen-critically-wounded-in-riverdale-shooting",
-    "published": "2026-11-22T05:14:43Z",
-    "updated": "2026-11-22T05:14:43Z",
-    "gathered": "2026-11-22T10:07:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 43,
+    "temp": 38,
     "cond": "A Few Clouds",
-    "wind": "N 9 mph",
-    "humidity": 47,
-    "obs": "23 Nov 13:53 pm CST"
+    "wind": "NW 8 mph",
+    "humidity": 52,
+    "obs": "23 Nov 16:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 42,
-     "text": "Partly sunny, with a high near 42. Northwest wind around 15 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -299,7 +267,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 50 percent chance of rain.  Cloudy, with a low around 41. Breezy. "
+     "text": "A 50 percent chance of rain.  Cloudy, with a low around 41. Breezy, with an east northeast wind 15 to 20 mph, with gusts as high as 25 mph. "
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 48,
+     "text": "Rain, mainly after noon.  High near 48. Breezy.  Chance of precipitation is 80%."
     }
    ]
   },
@@ -315,21 +289,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "chicago-il",
-  "goodnews": [
-   {
-    "h": "Christkindlmarket draws long lines for its 30th year",
-    "b": "Long lines wrapped around the entrance Saturday as the German-style outdoor holiday market returned for its 30th year.",
-    "date": "2026-11-22",
-    "publisher": "WBEZ",
-    "title": "Long lines and a bustling crowd at this year's Christkindlmarket",
-    "url": "https://www.wbez.org/things-to-do/2026/11/22/long-lines-crowds-christkindlmarket",
-    "published": "2026-11-22T14:03:15Z",
-    "updated": "2026-11-22T14:03:15Z",
-    "gathered": "2026-11-22T14:12:29Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "location": {
@@ -338,6 +300,16 @@
    "tz": "America/Denver"
   },
   "local": [
+   {
+    "h": "Denver in the mix for 2031 Women's World Cup",
+    "b": "The 2031 Women's World Cup is coming to the United States, Mexico, Costa Rica and Jamaica, and Denver is in the mix to host games.",
+    "date": "2026-11-23",
+    "publisher": "Denverite",
+    "title": "Denver is in the mix to host games for the 2031 Women’s World Cup",
+    "url": "https://denverite.com/2026/11/23/womens-world-cup-2031-denver-bid/",
+    "published": "2026-11-23T20:46:04Z",
+    "gathered": "2026-11-23T23:12:53Z"
+   },
    {
     "h": "Saturday flurries weren't Denver's first snow",
     "b": "The weekend flurries didn't count as Denver's official first snow, making this already the third-latest first snow on record.",
@@ -351,24 +323,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "Partly Cloudy",
-    "wind": "N 9 mph",
-    "humidity": 46,
-    "obs": "23 Nov 12:58 pm MST"
+    "temp": 36,
+    "cond": "Mostly Cloudy",
+    "wind": "N 7 mph",
+    "humidity": 62,
+    "obs": "23 Nov 15:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 42,
-     "text": "Mostly cloudy, with a high near 42. North northeast wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 25,
-     "text": "Mostly cloudy, with a low around 25. Light and variable wind. "
+     "text": "Mostly cloudy, with a low around 25. North northeast wind around 5 mph becoming calm  in the evening. "
     },
     {
      "name": "Tuesday",
@@ -392,7 +358,13 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 27,
-     "text": "Partly cloudy, with a low around 27."
+     "text": "Partly cloudy, with a low around 27. Calm wind. "
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 57,
+     "text": "Mostly sunny, with a high near 57."
     }
    ]
   },
@@ -408,7 +380,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -419,6 +391,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "UC gives all students ChatGPT access",
+    "b": "The University of California signed a $1.2 million deal with OpenAI for ChatGPT Edu, despite faculty concerns that they weren't sufficiently consulted.",
+    "date": "2026-11-23",
+    "publisher": "LAist",
+    "title": "UC gives students free access to ChatGPT. Faculty say OpenAI deal is ‘unwise’",
+    "url": "https://laist.com/news/education/uc-gives-students-free-access-to-chatgpt-faculty-say-openai-deal-is-unwise",
+    "published": "2026-11-23T21:00:00Z",
+    "updated": "2026-11-23T22:21:31Z",
+    "gathered": "2026-11-23T23:12:53Z"
+   },
    {
     "h": "Thanksgiving dinner may cost more this year",
     "b": "The American Farm Bureau Federation estimates Thanksgiving will cost more than 6% more than last year, though other food-price experts say the increase is unclear.",
@@ -438,31 +421,18 @@
     "title": "Ethics probe finds Democratic Rep. Jimmy Gomez made unwelcome sexual advances to a staffer",
     "url": "https://laist.com/news/politics/ethics-probe-finds-democratic-rep-jimmy-gomez-made-unwelcome-sexual-advances-to-a-staffer",
     "published": "2026-11-23T20:19:08Z",
-    "updated": "2026-11-23T20:19:08Z",
+    "updated": "2026-11-23T21:38:09Z",
     "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "Why international tourists love Route 66",
-    "b": "A century after its founding, the nearly 2,500-mile highway from Chicago to Santa Monica still draws tour groups from abroad to stops like Roy's Motel and Cafe in Amboy.",
-    "date": "2026-11-22",
-    "url": "https://laist.com/news/los-angeles-activities/route-66-is-an-american-icon-thats-why-international-tourists-love-it",
-    "gathered": "2026-11-22T23:44:22Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 68,
-    "wind": "S 2 mph",
-    "humidity": 46,
-    "obs": "23 Nov 12:25 PM PST"
+    "temp": 67,
+    "wind": "NW 2 mph",
+    "humidity": 43,
+    "obs": "23 Nov 03:10 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 69,
-     "text": "Increasing clouds, with a high near 69. East southeast wind around 5 mph becoming west northwest. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -479,19 +449,25 @@
      "name": "Tuesday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Mostly cloudy, with a low around 55. North northwest wind around 5 mph. "
+     "text": "Cloudy, with a low around 55. North northwest wind around 5 mph. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 74,
-     "text": "Sunny, with a high near 74. Calm wind becoming north northwest around 5 mph in the afternoon. "
+     "text": "Mostly sunny, with a high near 74. Calm wind becoming north northwest around 5 mph in the afternoon. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 55,
      "text": "Mostly clear, with a low around 55."
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 81,
+     "text": "Sunny, with a high near 81."
     }
    ]
   },
@@ -507,7 +483,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -518,6 +494,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Hochul vetoes AI accuracy-warning bill",
+    "b": "Gov. Kathy Hochul vetoed a bill requiring AI platforms to warn users their information may be inaccurate, calling it too far-reaching.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "NY Gov. Hochul vetoes bill that would have required AI accuracy warnings",
+    "url": "https://gothamist.com/news/ny-gov-hochul-vetoes-bill-that-would-have-required-ai-accuracy-warnings",
+    "published": "2026-11-23T20:43:53Z",
+    "gathered": "2026-11-23T23:12:53Z"
+   },
+   {
+    "h": "Queens library restores most services",
+    "b": "Nearly three weeks after a Nov. 4 ransomware attack, the Queens Public Library has its website, app, computers and digital collections back up.",
+    "date": "2026-11-23",
+    "publisher": "Gothamist",
+    "title": "Queens Public Library restores most services nearly 3 weeks after ransomware attack",
+    "url": "https://gothamist.com/news/queens-public-library-restores-most-services-nearly-3-weeks-after-ransomware-attack",
+    "published": "2026-11-23T21:38:00Z",
+    "gathered": "2026-11-23T23:12:53Z"
+   },
    {
     "h": "Flu cases surge ahead of Thanksgiving",
     "b": "More than 43,000 New Yorkers have caught the flu since early October, compared with about 7,000 at this point last season, state data shows.",
@@ -546,7 +542,7 @@
     "title": "New York’s highest court upholds key protection for low-income renters with Section 8",
     "url": "https://gothamist.com/news/new-yorks-highest-court-upholds-key-protection-for-low-income-renters-with-section-8",
     "published": "2026-11-23T16:06:00Z",
-    "updated": "2026-11-23T16:33:00Z",
+    "updated": "2026-11-23T20:54:00Z",
     "gathered": "2026-11-23T17:15:56Z"
    },
    {
@@ -568,42 +564,15 @@
     "url": "https://gothamist.com/news/nyc-citi-bike-rides-to-be-capped-at-365-for-members-under-new-deal-with-lyft",
     "published": "2026-11-23T10:00:00Z",
     "gathered": "2026-11-23T11:12:31Z"
-   },
-   {
-    "h": "Abandoned dog family found in the cold in Orange, NJ",
-    "b": "Animal protection officers found two dogs tied to a fence in Orange, just west of Newark, along with five newborn puppies. One puppy died, the Associated Humane Societies said.",
-    "date": "2026-11-22",
-    "publisher": "Gothamist",
-    "title": "1 puppy dead, another fighting for its life after dog family abandoned in NJ cold",
-    "url": "https://gothamist.com/news/newborn-puppies-found-abandoned-in-freezing-cold-in-nj-1-dead-another-critically-injured",
-    "published": "2026-11-22T20:45:00Z",
-    "gathered": "2026-11-22T23:44:22Z"
-   },
-   {
-    "h": "Aber Kawas becomes first Palestinian in New York state Senate",
-    "b": "Aber Kawas won election as the first Palestinian in New York Senate history, celebrating with hundreds of Democratic Socialists of America members on election night.",
-    "date": "2026-11-22",
-    "url": "https://www.aljazeera.com/news/2026/11/22/aber-kawas-becomes-first-palestinian-in-new-york-state-senate-history",
-    "gathered": "2026-11-22T20:12:12Z"
-   },
-   {
-    "h": "Jersey City rent control push ends in setback for DSA members",
-    "b": "A bill from progressive Jersey City council members to protect tenants of a waterfront high-rise from rent hikes was tossed before it could be formally introduced.",
-    "date": "2026-11-22",
-    "publisher": "Gothamist",
-    "title": "A rush to rent control in Jersey City ends in a setback for DSA council members",
-    "url": "https://gothamist.com/news/a-rush-to-rent-control-in-jersey-city-ends-in-a-setback-for-dsa-council-members",
-    "published": "2026-11-23T00:58:00Z",
-    "gathered": "2026-11-22T17:58:26Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 66,
-    "cond": "Overcast",
-    "wind": "NW 10 mph, gusts to 18 mph",
-    "humidity": 56,
-    "obs": "23 Nov 14:51 pm EST"
+    "temp": 56,
+    "cond": "Fair",
+    "wind": "W 7 mph, gusts to 20 mph",
+    "humidity": 62,
+    "obs": "23 Nov 17:51 pm EST"
    },
    "periods": [
     {
@@ -656,7 +625,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -668,16 +637,6 @@
     "url": "https://gothamist.com/news/these-new-yorkers-ditched-their-smartphones-for-a-month-no-seriously",
     "published": "2026-11-23T17:32:00Z",
     "gathered": "2026-11-23T11:12:31Z"
-   },
-   {
-    "h": "Adopt a storm drain? Council bill would enlist New Yorkers",
-    "b": "A City Council bill would let residents volunteer to clear leaves and litter from storm drains on their block, building on a pilot in Greenpoint, Brooklyn, to help prevent flooding.",
-    "date": "2026-11-22",
-    "publisher": "Gothamist",
-    "title": "Adopt a storm drain? NYC proposal aims to enlist residents in flood prevention.",
-    "url": "https://gothamist.com/news/adopt-a-storm-drain-nyc-proposal-aims-to-enlist-residents-in-flood-prevention",
-    "published": "2026-11-22T13:00:49Z",
-    "gathered": "2026-11-22T14:12:29Z"
    }
   ]
  },
@@ -710,34 +669,6 @@
     "published": "2026-11-23T09:43:40Z",
     "updated": "2026-11-23T09:43:41Z",
     "gathered": "2026-11-23T11:12:31Z"
-   },
-   {
-    "h": "Activists demand tear gas suspension over reported health effects",
-    "b": "French activists and lawmakers want police to stop using tear gas after women reported menstrual changes following protests. An advocacy group says it has over 10,000 complaints; scientists have not confirmed a link.",
-    "date": "2026-11-22",
-    "url": "https://www.pbs.org/newshour/health/french-activists-demand-a-tear-gas-suspension-over-reported-menstrual-changes",
-    "gathered": "2026-11-22T17:58:26Z"
-   },
-   {
-    "h": "Le Pen denies receiving secrets from civil servant",
-    "b": "Marine Le Pen denied receiving confidential information from a civil servant suspected of leaking investigation details to her National Rally party, but said she could not say whether others in the party had.",
-    "date": "2026-11-22",
-    "url": "https://www.thelocal.fr/20261122/frances-le-pen-denies-receiving-secrets-from-civil-servant",
-    "gathered": "2026-11-22T17:58:26Z"
-   },
-   {
-    "h": "Budget talks and Black Friday top France's week ahead",
-    "b": "Lawmakers meet in committee to try to strike a deal on the social security budget, a trial opens for seven men accused of raising funds for the PKK, and retailers gear up for Black Friday.",
-    "date": "2026-11-22",
-    "url": "https://www.thelocal.fr/20261122/budget-wrangling-and-black-friday-whats-on-the-agenda-in-france-this-week",
-    "gathered": "2026-11-22T10:07:56Z"
-   },
-   {
-    "h": "France sees sixth straight weekend of cost-of-living protests",
-    "b": "Tens of thousands marched in French cities on Saturday demanding better public services and protesting rising prices and inequality, though turnout has dwindled.",
-    "date": "2026-11-22",
-    "url": "https://www.thelocal.fr/20261122/french-protesters-rally-for-sixth-weekend-over-living-costs-public-services",
-    "gathered": "2026-11-22T10:07:56Z"
    }
   ],
   "weather": {
@@ -756,7 +687,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "goodnews": []
  },
  {
@@ -794,37 +725,17 @@
     "date": "2026-11-23",
     "url": "https://www.kuow.org/science/2026-11-23/seattle-lab-looks-to-break-the-bonds-that-make-forever-chemicals-last",
     "gathered": "2026-11-23T08:16:26Z"
-   },
-   {
-    "h": "Father and daughter held by ICE at Sea-Tac were headed to a baptism",
-    "b": "The father and daughter detained by masked immigration officers on a Sea-Tac jet bridge Saturday were traveling to a family baptism in California, their lawyer said. Passenger videos of the arrest were widely viewed.",
-    "date": "2026-11-22",
-    "url": "https://www.pbs.org/newshour/nation/lawyer-father-and-daughter-detained-by-ice-at-seattle-airport-were-traveling-to-family-baptism",
-    "gathered": "2026-11-23T02:14:41Z"
-   },
-   {
-    "h": "Medicare open enrollment runs through Dec. 7",
-    "b": "Open enrollment is underway for Medicare, which covers roughly 70 million people, and coverage choices for 2027 are complex and often consequential. The season ends Dec. 7.",
-    "date": "2026-11-22",
-    "url": "https://www.kuow.org/npr-news/2026-11-22/medicare-looks-a-bit-different-in-2027-so-dont-miss-open-enrollment",
-    "gathered": "2026-11-22T23:44:22Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 52,
     "cond": "Overcast",
-    "wind": "SE 12 mph",
-    "humidity": 37,
-    "obs": "23 Nov 12:15 PM PST"
+    "wind": "SE 11 mph",
+    "humidity": 40,
+    "obs": "23 Nov 03:05 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 51,
-     "text": "A 20 percent chance of rain.  Cloudy, with a high near 51. Southeast wind around 6 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -854,6 +765,12 @@
      "kind": "low",
      "temp": 50,
      "text": "Rain.  Low around 50. Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+    },
+    {
+     "name": "Thanksgiving Day",
+     "kind": "high",
+     "temp": 55,
+     "text": "Rain and possibly a thunderstorm before 7am, then showers and possibly a thunderstorm between 7am and 4pm, then a chance of rain and thunderstorms after 4pm.  High near 55. Chance of precipitation is 100%."
     }
    ]
   },
@@ -869,7 +786,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-23T23:12:00Z",
+  "updatedAt": "2026-11-24T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
