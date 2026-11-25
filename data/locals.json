@@ -11,10 +11,10 @@
     "b": "Georgians are expected to spend slightly less than the national average on Thanksgiving dinner, though meal costs are up.",
     "date": "2026-11-24",
     "publisher": "WABE",
-    "title": "While Thanksgiving dinner costs rise, Georgians may spend less than U.S. average",
+    "title": "While Thanksgiving dinner costs rise, Georgians may spend less than US average",
     "url": "https://www.wabe.org/thanksgiving-dinner-costs-rise-for-first-time-since-2022-though-georgia-may-spend-less-than-the-u-s-average/",
     "published": "2026-11-24T22:43:00Z",
-    "updated": "2026-11-24T23:31:43Z",
+    "updated": "2026-11-25T14:04:04Z",
     "gathered": "2026-11-25T00:58:44Z"
    },
    {
@@ -42,18 +42,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 47,
     "cond": "Overcast and Breezy",
-    "wind": "E 23 mph",
-    "humidity": 48,
-    "obs": "25 Nov 05:52 am EST"
+    "wind": "E 22 mph, gusts to 31 mph",
+    "humidity": 50,
+    "obs": "25 Nov 08:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 50,
-     "text": "A 30 percent chance of showers, mainly after 4pm.  Mostly cloudy, with a high near 50. East wind around 15 mph, with gusts as high as 35 mph. "
+     "text": "A 30 percent chance of showers, mainly after 4pm.  Cloudy, with a high near 50. East wind around 15 mph, with gusts as high as 35 mph. "
     },
     {
      "name": "Tonight",
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -111,11 +111,36 @@
   },
   "local": [
    {
+    "h": "Wu backs council's end to parking minimums",
+    "b": "The mayor mostly blessed the City Council's vote to eliminate parking minimums for new housing, saying it speeds her own zoning changes.",
+    "date": "2026-11-25",
+    "publisher": "WBUR",
+    "title": "Mayor Wu weighs in on Boston City Council's move to eliminate parking minimums for new housing",
+    "url": "https://www.wbur.org/news/2026/11/25/mayor-wu-boston-city-council-minimum-parking",
+    "gathered": "2026-11-25T14:13:59Z"
+   },
+   {
+    "h": "Rep. Gaskey goes to court to halt election certification",
+    "b": "The Republican trails Democrat Sarah Hewins by 60 votes in the 2nd Plymouth district and wants a restraining order to stop certification.",
+    "date": "2026-11-25",
+    "publisher": "WBUR",
+    "title": "State Rep. Gaskey going to court to halt certification of election results",
+    "url": "https://www.wbur.org/news/2026/11/25/gaskey-hewins-plymouth-second-district-house-election",
+    "gathered": "2026-11-25T14:13:59Z"
+   },
+   {
+    "h": "MassHealth gives 6-month grace on Medicaid work rules",
+    "b": "Residents who would lose coverage Jan. 1 under new federal work requirements will get until June 2027 under the optional federal hold-harmless period.",
+    "date": "2026-11-25",
+    "publisher": "WBUR",
+    "title": "MassHealth opts into 6-month grace period on Medicaid work rules",
+    "url": "https://www.wbur.org/news/2026/11/25/masshealth-medicaid-work-requirements-hold-harmless",
+    "gathered": "2026-11-25T14:13:59Z"
+   },
+   {
     "h": "Montserrat guarantees every freshman a paid job",
     "b": "The Beverly art college's Creative Employment Initiative pays students to work every semester through graduation.",
     "date": "2026-11-25",
-    "publisher": "WBUR",
-    "title": "At Montserrat College of Art, a paid job comes with admission",
     "url": "https://www.wbur.org/news/2026/11/25/montserrat-college-of-art-creative-employment-initiative",
     "gathered": "2026-11-25T10:12:35Z"
    },
@@ -123,8 +148,6 @@
     "h": "Ex-transportation chief urges driverless car rules",
     "b": "Former state transportation chief Jamey Tesler called on Massachusetts to dedicate regulators and set standards for autonomous vehicles.",
     "date": "2026-11-24",
-    "publisher": "WBUR",
-    "title": "Mass. should accelerate driverless car oversight, former transportation chief says",
     "url": "https://www.wbur.org/news/2026/11/24/mass-should-accelerate-driverless-car-oversight-former-transportation-chief-says",
     "gathered": "2026-11-25T00:58:44Z"
    },
@@ -132,8 +155,6 @@
     "h": "Massachusetts joins suit over HUD housing rule",
     "b": "Twenty-one states sued HUD over a rule denying housing aid to families if any member lacks eligible immigration status.",
     "date": "2026-11-24",
-    "publisher": "WBUR",
-    "title": "Mass. joins 20 states in suing HUD over a rule that could cut off housing aid for mixed-status families",
     "url": "https://www.wbur.org/news/2026/11/24/states-sue-hud-housing-aid-immigrants-mixed-status",
     "gathered": "2026-11-24T20:11:42Z"
    },
@@ -154,18 +175,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 31,
+    "temp": 37,
     "cond": "A Few Clouds",
-    "wind": "NW 9 mph",
-    "humidity": 59,
-    "obs": "25 Nov 05:54 am EST"
+    "wind": "NW 7 mph",
+    "humidity": 54,
+    "obs": "25 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 45,
-     "text": "Increasing clouds, with a high near 45. Light and variable wind becoming northeast 5 to 7 mph in the morning. "
+     "text": "Increasing clouds, with a high near 45. East wind 5 to 7 mph. "
     },
     {
      "name": "Tonight",
@@ -211,15 +232,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
     "h": "Nova Scotia's Christmas tree arrives",
     "b": "A 46-foot white spruce arrived on Boston Common, Nova Scotia's 55th annual thank-you gift to the city.",
     "date": "2026-11-24",
-    "publisher": "WBUR",
-    "title": "Nova Scotia's tree arrival serves as goodwill reminder",
     "url": "https://www.wbur.org/news/2026/11/24/nova-scotia-christmas-tree-holiday-boston",
     "gathered": "2026-11-25T00:58:44Z"
    }
@@ -232,6 +251,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Latino drop drives CPS enrollment decline",
+    "b": "Latino enrollment fell by about 7,800 students, more than two-thirds of this year's districtwide drop, with experts pointing to housing costs.",
+    "date": "2026-11-25",
+    "publisher": "WBEZ",
+    "title": "Latino student drop drives CPS enrollment decline as many immigrant hubs grapple with rising costs",
+    "url": "https://www.wbez.org/education/2026/11/25/latino-student-drop-drives-cps-enrollment-decline-as-many-immigrant-hubs-grapple-with-rising-costs",
+    "published": "2026-11-25T11:35:00Z",
+    "updated": "2026-11-25T11:35:05Z",
+    "gathered": "2026-11-25T14:13:59Z"
+   },
    {
     "h": "Uptown's history as a Native American hub",
     "b": "In the mid-20th century, Native Americans built a cultural enclave in Uptown anchored by community centers, WBEZ's Curious City explains.",
@@ -282,18 +312,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 34,
+    "temp": 38,
     "cond": "Overcast",
-    "wind": "E 3 mph",
-    "humidity": 64,
-    "obs": "25 Nov 04:53 am CST"
+    "wind": "E 15 mph",
+    "humidity": 65,
+    "obs": "25 Nov 07:53 am CST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
-     "temp": 43,
-     "text": "Mostly cloudy, with a high near 43. Breezy, with an east northeast wind 15 to 20 mph, with gusts as high as 25 mph. "
+     "temp": 44,
+     "text": "Mostly cloudy, with a high near 44. Breezy, with an east northeast wind 15 to 20 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Tonight",
@@ -339,7 +369,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -371,11 +401,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
+    "temp": 29,
     "cond": "A Few Clouds",
-    "wind": "SE 6 mph",
-    "humidity": 29,
-    "obs": "25 Nov 02:58 am MST"
+    "wind": "Calm",
+    "humidity": 39,
+    "obs": "25 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -428,7 +458,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -512,7 +542,6 @@
     "title": "Gasoline prices may be inching down, but some have already canceled Thanksgiving travel plans",
     "url": "https://laist.com/news/los-angeles-activities/gasoline-prices-may-be-inching-down-but-some-have-already-canceled-thanksgiving-travel-plans",
     "published": "2026-11-24T01:43:26Z",
-    "updated": "2026-11-24T01:43:26Z",
     "gathered": "2026-11-24T04:54:32Z"
    },
    {
@@ -525,20 +554,20 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "wind": "Calm",
-    "humidity": 57,
-    "obs": "25 Nov 03:10 AM PST"
+    "temp": 52,
+    "wind": "NW 2 mph",
+    "humidity": 59,
+    "obs": "25 Nov 06:10 AM PST"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 77,
-     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 77. Northeast wind around 5 mph becoming west in the afternoon. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 77. North wind around 5 mph becoming west in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 52,
      "text": "Mostly clear, with a low around 52. North northeast wind 5 to 10 mph. "
@@ -559,7 +588,7 @@
      "name": "Friday",
      "kind": "high",
      "temp": 84,
-     "text": "Mostly sunny, with a high near 84."
+     "text": "Mostly sunny, with a high near 84. North northeast wind around 5 mph. "
     },
     {
      "name": "Friday Night",
@@ -581,7 +610,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -592,6 +621,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYPD seeks six after group exits Manhattan manhole",
+    "b": "Police say five people climbed out of a sewer at 2nd Avenue and East 17th Street on Nov. 18 and left in a red sedan driven by a sixth.",
+    "date": "2026-11-25",
+    "publisher": "Gothamist",
+    "title": "NYPD searches for 6 sewer spelunkers seen exiting a Manhattan manhole",
+    "url": "https://gothamist.com/news/nypd-searches-for-6-sewer-spelunkers-seen-exiting-a-manhattan-manhole",
+    "published": "2026-11-25T13:31:04Z",
+    "gathered": "2026-11-25T14:13:59Z"
+   },
+   {
+    "h": "Queens DA Katz sues to block wrongful-conviction probe",
+    "b": "Katz argues the state's new prosecutorial conduct commission is unconstitutional as it seeks records on three men wrongly convicted under former DA Richard Brown.",
+    "date": "2026-11-25",
+    "publisher": "Gothamist",
+    "title": "Queens DA Katz seeks to block prosecutor watchdog investigating wrongful convictions",
+    "url": "https://gothamist.com/news/queens-da-katz-seeks-to-block-prosecutor-watchdog-investigating-wrongful-convictions",
+    "published": "2026-11-25T12:31:00Z",
+    "gathered": "2026-11-25T14:13:59Z"
+   },
    {
     "h": "Boy, 4, dies in New Jersey house fire",
     "b": "A 4-year-old boy died and two people were injured in a house fire Tuesday in Union Township, near Newark.",
@@ -676,18 +725,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
+    "temp": 38,
     "cond": "Fair",
-    "wind": "W 7 mph",
-    "humidity": 54,
-    "obs": "25 Nov 05:51 am EST"
+    "wind": "NE 8 mph",
+    "humidity": 52,
+    "obs": "25 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 50,
-     "text": "Increasing clouds, with a high near 50. Northeast wind 9 to 11 mph. "
+     "text": "Mostly cloudy, with a high near 50. Northeast wind around 11 mph. "
     },
     {
      "name": "Tonight",
@@ -733,7 +782,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -819,7 +868,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "goodnews": [
    {
     "h": "Stranded cargo ship refloated in Landes",
@@ -889,21 +938,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 54,
+    "temp": 59,
     "cond": "Overcast",
-    "wind": "SE 11 mph",
-    "humidity": 66,
-    "obs": "25 Nov 02:55 AM PST"
+    "wind": "S 17 mph",
+    "humidity": 51,
+    "obs": "25 Nov 05:55 AM PST"
    },
    "periods": [
     {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "Rain.  High near 56. South wind 7 to 9 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  High near 56. South wind 7 to 11 mph, with gusts as high as 22 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 54,
      "text": "Rain.  Steady temperature around 54. South southeast wind 15 to 17 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
@@ -924,13 +973,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 50,
-     "text": "Rain.  High near 50. Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain.  High near 50. South wind around 5 mph becoming light and variable  in the morning.  Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 43,
-     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 43. Chance of precipitation is 70%."
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 43. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible. "
     }
    ]
   },
@@ -946,7 +995,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T14:13:00Z",
+  "updatedAt": "2026-11-25T17:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
