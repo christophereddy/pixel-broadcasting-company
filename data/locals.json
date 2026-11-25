@@ -42,48 +42,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "wind": "E 16 mph, gusts to 29 mph",
-    "humidity": 51,
-    "obs": "24 Nov 23:52 pm EST"
+    "temp": 50,
+    "cond": "Overcast and Breezy",
+    "wind": "E 21 mph, gusts to 31 mph",
+    "humidity": 43,
+    "obs": "25 Nov 04:52 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 41,
-     "text": "Mostly cloudy, with a low around 41. East wind around 15 mph, with gusts as high as 25 mph. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
-     "temp": 51,
-     "text": "A 30 percent chance of showers, mainly after 4pm.  Mostly cloudy, with a high near 51. East wind around 15 mph, with gusts as high as 30 mph. "
+     "temp": 50,
+     "text": "A 30 percent chance of showers, mainly after 4pm.  Mostly cloudy, with a high near 50. East wind around 15 mph, with gusts as high as 30 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Showers, mainly before 5am.  Low around 45. Northeast wind 5 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Showers, mainly before 5am.  Low around 45. Northeast wind 5 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
-     "temp": 53,
-     "text": "A 40 percent chance of showers, mainly before 8am.  Cloudy, with a high near 53. West wind 5 to 15 mph, with gusts as high as 30 mph. "
+     "temp": 52,
+     "text": "A 40 percent chance of showers, mainly before 8am.  Cloudy, with a high near 52. West wind 5 to 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 34,
-     "text": "Mostly cloudy, with a low around 34. West wind around 15 mph, with gusts as high as 30 mph. "
+     "temp": 36,
+     "text": "Mostly cloudy, with a low around 36. West wind around 15 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 50,
-     "text": "Mostly cloudy, with a high near 50."
+     "text": "Mostly cloudy, with a high near 50. West wind around 15 mph, with gusts as high as 25 mph. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 36,
+     "text": "Partly cloudy, with a low around 36."
     }
    ]
   },
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -110,6 +110,15 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Montserrat guarantees every freshman a paid job",
+    "b": "The Beverly art college's Creative Employment Initiative pays students to work every semester through graduation.",
+    "date": "2026-11-25",
+    "publisher": "WBUR",
+    "title": "At Montserrat College of Art, a paid job comes with admission",
+    "url": "https://www.wbur.org/news/2026/11/25/montserrat-college-of-art-creative-employment-initiative",
+    "gathered": "2026-11-25T10:12:35Z"
+   },
    {
     "h": "Ex-transportation chief urges driverless car rules",
     "b": "Former state transportation chief Jamey Tesler called on Massachusetts to dedicate regulators and set standards for autonomous vehicles.",
@@ -132,8 +141,6 @@
     "h": "Brookline residents report owl attacks",
     "b": "More than two dozen people in Brookline believe they've been attacked by the same owl.",
     "date": "2026-11-24",
-    "publisher": "WBUR",
-    "title": "Spate of reported owl attacks strikes Brookline",
     "url": "https://www.wbur.org/news/2026/11/24/owl-brookline-barred-animal-attack",
     "gathered": "2026-11-24T16:09:41Z"
    },
@@ -147,48 +154,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 34,
+    "temp": 31,
     "cond": "Fair",
-    "wind": "N 7 mph",
-    "humidity": 50,
-    "obs": "24 Nov 23:54 pm EST"
+    "wind": "NW 10 mph",
+    "humidity": 56,
+    "obs": "25 Nov 04:54 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 28,
-     "text": "Clear, with a low around 28. North wind 6 to 9 mph. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 45,
-     "text": "Mostly sunny, with a high near 45. North wind around 6 mph becoming east in the afternoon. "
+     "text": "Increasing clouds, with a high near 45. Light and variable wind becoming northeast 5 to 7 mph in the morning. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 33,
-     "text": "Mostly cloudy, with a low around 33. Calm wind becoming northeast around 5 mph after midnight. "
+     "temp": 34,
+     "text": "Mostly cloudy, with a low around 34. Calm wind becoming northeast around 5 mph after midnight. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
-     "temp": 46,
-     "text": "A chance of rain, mainly after 2pm.  Mostly cloudy, with a high near 46. East wind 8 to 18 mph, with gusts as high as 36 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 54,
+     "text": "Rain likely, mainly after 5pm.  Mostly cloudy, with a high near 54. East wind 8 to 18 mph, with gusts as high as 36 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 46,
-     "text": "Rain.  Low around 46. Breezy, with an east wind around 21 mph, with gusts as high as 41 mph.  Chance of precipitation is 100%."
+     "temp": 48,
+     "text": "Rain. The rain could be heavy at times.  Low around 48. Breezy, with an east wind around 21 mph, with gusts as high as 41 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 59,
-     "text": "Rain likely, mainly before noon.  Mostly cloudy, with a high near 59. East wind 11 to 17 mph becoming southwest in the afternoon. Winds could gust as high as 33 mph.  Chance of precipitation is 70%."
+     "temp": 61,
+     "text": "Rain likely, mainly before 9am.  Mostly cloudy, with a high near 61. East wind 11 to 17 mph becoming southwest in the afternoon. Winds could gust as high as 33 mph.  Chance of precipitation is 60%."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 42,
+     "text": "A slight chance of rain before 11pm.  Mostly cloudy, with a low around 42. West wind around 9 mph, with gusts as high as 20 mph.  Chance of precipitation is 20%."
     }
    ]
   },
@@ -204,7 +211,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -264,48 +271,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 38,
+    "temp": 34,
     "cond": "Overcast",
-    "wind": "E 12 mph",
-    "humidity": 60,
-    "obs": "24 Nov 22:53 pm CST"
+    "wind": "E 9 mph",
+    "humidity": 59,
+    "obs": "25 Nov 03:53 am CST"
    },
    "periods": [
     {
+     "name": "Today",
+     "kind": "high",
+     "temp": 43,
+     "text": "Mostly cloudy, with a high near 43. Breezy, with an east northeast wind 15 to 20 mph, with gusts as high as 25 mph. "
+    },
+    {
      "name": "Tonight",
      "kind": "low",
-     "temp": 36,
-     "text": "Mostly cloudy, with a low around 36. East wind around 10 mph, with gusts as high as 15 mph. "
-    },
-    {
-     "name": "Wednesday",
-     "kind": "high",
-     "temp": 46,
-     "text": "Mostly cloudy, with a high near 46. Breezy, with an east northeast wind 10 to 20 mph, with gusts as high as 25 mph. "
-    },
-    {
-     "name": "Wednesday Night",
-     "kind": "low",
-     "temp": 44,
-     "text": "A 40 percent chance of rain after 5am.  Mostly cloudy, with a low around 44. Breezy, with an east northeast wind 15 to 20 mph, with gusts as high as 30 mph. "
+     "temp": 42,
+     "text": "Mostly cloudy, with a low around 42. Breezy, with an east northeast wind around 20 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
-     "temp": 48,
-     "text": "Rain.  High near 48. Breezy, with a northeast wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 90%."
+     "temp": 46,
+     "text": "A 50 percent chance of rain after noon.  Cloudy, with a high near 46. Windy, with a northeast wind 25 to 30 mph, with gusts as high as 35 mph. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 39,
-     "text": "Rain.  Low around 39. Breezy, with a north northeast wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%."
+     "temp": 43,
+     "text": "Rain.  Low around 43. Windy, with a north northeast wind 25 to 30 mph, with gusts as high as 40 mph.  Chance of precipitation is 80%."
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 46,
-     "text": "Rain likely, mainly before noon.  Mostly cloudy, with a high near 46. Breezy.  Chance of precipitation is 70%."
+     "text": "A 40 percent chance of rain before noon.  Mostly cloudy, with a high near 46. Breezy, with a north wind 20 to 25 mph becoming west northwest 10 to 15 mph in the afternoon. Winds could gust as high as 30 mph. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 35,
+     "text": "Partly cloudy, with a low around 35."
     }
    ]
   },
@@ -321,7 +328,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -353,42 +360,42 @@
   ],
   "weather": {
    "now": {
-    "temp": 35,
+    "temp": 33,
     "cond": "A Few Clouds",
     "wind": "S 8 mph",
     "humidity": 34,
-    "obs": "24 Nov 20:58 pm MST"
+    "obs": "25 Nov 01:58 am MST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 26,
-     "text": "Mostly clear, with a low around 26. Southwest wind 3 to 5 mph. "
+     "text": "Clear, with a low around 26. Light southwest wind. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
-     "temp": 54,
-     "text": "Sunny, with a high near 54. South southwest wind around 5 mph becoming light and variable  in the afternoon. "
+     "temp": 53,
+     "text": "Sunny, with a high near 53. South wind around 5 mph becoming light and variable. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 27,
-     "text": "Partly cloudy, with a low around 27. Light and variable wind. "
+     "text": "Increasing clouds, with a low around 27. Calm wind. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 58,
-     "text": "Mostly sunny, with a high near 58. Light and variable wind. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 58. Light and variable wind. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 33,
-     "text": "Mostly clear, with a low around 33. Southwest wind 5 to 7 mph. "
+     "temp": 34,
+     "text": "Partly cloudy, with a low around 34. Southwest wind around 7 mph. "
     },
     {
      "name": "Friday",
@@ -410,7 +417,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -507,14 +514,14 @@
   ],
   "weather": {
    "now": {
-    "temp": 60,
-    "wind": "N 3 mph",
-    "humidity": 46,
-    "obs": "24 Nov 08:55 PM PST"
+    "temp": 59,
+    "wind": "N 1 mph",
+    "humidity": 43,
+    "obs": "25 Nov 01:20 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 52,
      "text": "Mostly cloudy, with a low around 52. North wind around 5 mph. "
@@ -563,7 +570,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -658,48 +665,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 39,
+    "temp": 35,
     "cond": "Fair",
-    "wind": "NE 12 mph",
-    "humidity": 45,
-    "obs": "24 Nov 23:51 pm EST"
+    "wind": "W 3 mph, gusts to 20 mph",
+    "humidity": 57,
+    "obs": "25 Nov 04:51 am EST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 39,
-     "text": "Clear, with a low around 39. Northeast wind around 10 mph. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 50,
-     "text": "Increasing clouds, with a high near 50. Northeast wind around 11 mph. "
+     "text": "Increasing clouds, with a high near 50. Northeast wind 9 to 11 mph. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 49,
-     "text": "Cloudy, with a steady temperature around 49. Breezy, with a northeast wind 11 to 16 mph increasing to 19 to 24 mph after midnight. "
+     "temp": 46,
+     "text": "Cloudy, with a low around 46. Breezy, with a northeast wind 13 to 22 mph. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
-     "temp": 55,
-     "text": "Rain, mainly after 1pm.  High near 55. Windy, with a northeast wind 26 to 33 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "temp": 60,
+     "text": "Rain, mainly after 10am.  High near 60. Windy, with a northeast wind 25 to 30 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
-     "temp": 53,
-     "text": "Rain.  Low around 53. Windy, with an east wind 26 to 34 mph becoming south after midnight.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+     "temp": 56,
+     "text": "Rain.  Temperature rising to around 60 by 3am. Windy, with an east wind 23 to 28 mph becoming south 17 to 22 mph after midnight. Winds could gust as high as 46 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 58,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a high near 58. Breezy. "
+     "text": "Rain likely, mainly after 1pm.  Mostly cloudy, with a temperature falling to around 53 by 4pm. Southwest wind around 18 mph, with gusts as high as 29 mph.  Chance of precipitation is 60%."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 48,
+     "text": "Mostly cloudy, with a low around 48."
     }
    ]
   },
@@ -715,7 +722,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -739,14 +746,32 @@
   },
   "local": [
    {
+    "h": "Chamonix plans tourist quotas for Alpine lakes",
+    "b": "If approved, Chamonix would become the first Alpine town to cap visitors to its two famous mountain lakes in summer.",
+    "date": "2026-11-25",
+    "publisher": "The Local France",
+    "title": "French Alpine lakes to impose tourist quotas next summer",
+    "url": "https://www.thelocal.fr/20261125/french-alpine-lakes-to-impose-tourist-quotas-next-summer",
+    "published": "2026-11-25T08:50:21Z",
+    "updated": "2026-11-25T08:50:22Z",
+    "gathered": "2026-11-25T10:12:35Z"
+   },
+   {
+    "h": "Surprise strike halts Eurostar trains",
+    "b": "An unannounced strike by workers in pay talks cancelled several Eurostar trains and suspended reservations Wednesday.",
+    "date": "2026-11-25",
+    "publisher": "The Local France",
+    "title": "BREAKING: Surprise strike paralyses services on Eurostar",
+    "url": "https://www.thelocal.fr/20261125/breaking-surprise-strike-paralyses-services-on-eurostar",
+    "published": "2026-11-25T09:17:48Z",
+    "updated": "2026-11-25T09:17:48Z",
+    "gathered": "2026-11-25T10:12:35Z"
+   },
+   {
     "h": "British Airways adds Nice-Glasgow flights",
     "b": "A new weekly direct route between Nice and Glasgow will run from May 15 to Oct. 3, 2027, operated by BA Cityflyer.",
     "date": "2026-11-24",
-    "publisher": "The Local France",
-    "title": "British Airways to launch new flights between Nice and Scotland",
     "url": "https://www.thelocal.fr/20261124/british-airways-to-launch-new-flights-between-nice-and-scotland",
-    "published": "2026-11-24T08:42:22Z",
-    "updated": "2026-11-24T08:42:23Z",
     "gathered": "2026-11-25T00:58:44Z"
    },
    {
@@ -773,17 +798,24 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "goodnews": [
+   {
+    "h": "Stranded cargo ship refloated in Landes",
+    "b": "The Malta-flagged Miro G was towed back out to sea to the applause of several hundred onlookers.",
+    "date": "2026-11-25",
+    "publisher": "The Local France",
+    "title": "Stranded cargo vessel off southwest France refloated",
+    "url": "https://www.thelocal.fr/20261125/stranded-cargo-vessel-off-southwest-france-refloated",
+    "published": "2026-11-25T07:45:00Z",
+    "updated": "2026-11-25T07:45:01Z",
+    "gathered": "2026-11-25T10:12:35Z"
+   },
    {
     "h": "World's best egg mayonnaise crowned",
     "b": "A young French chef won the world championship of œuf mayonnaise in Saint-Ouen-sur-Seine, where competitors each made 100 eggs.",
     "date": "2026-11-24",
-    "publisher": "The Local France",
-    "title": "'8 minutes and 40 seconds for perfection'",
     "url": "https://www.thelocal.fr/20261124/8-minutes-and-40-seconds-for-perfection-frances-best-egg-mayonnaise-crowned",
-    "published": "2026-11-24T11:08:02Z",
-    "updated": "2026-11-24T11:08:02Z",
     "gathered": "2026-11-24T11:11:33Z"
    }
   ]
@@ -799,33 +831,21 @@
     "h": "Rainier Valley Food Bank meets rising need",
     "b": "The food bank now serves 800 households a week as hunger rates rise statewide.",
     "date": "2026-11-25",
-    "publisher": "KUOW",
-    "title": "How one Seattle food bank navigates challenging times and continues to grow",
     "url": "https://www.kuow.org/food/2026-11-24/how-one-seattle-food-bank-navigates-challenging-times-and-continues-to-grow",
-    "published": "2026-11-25T01:09:58Z",
-    "updated": "2026-11-25T01:09:58Z",
     "gathered": "2026-11-25T02:12:59Z"
    },
    {
     "h": "King tides run higher than forecast",
     "b": "Tides along the West Coast have come in a foot or more above forecast this month; Seattle set up pumps and sandbags in South Park.",
     "date": "2026-11-25",
-    "publisher": "KUOW",
-    "title": "Extreme tides start to land on Washington coast",
     "url": "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
-    "published": "2026-11-25T01:39:09Z",
-    "updated": "2026-11-25T01:39:09Z",
     "gathered": "2026-11-25T02:12:59Z"
    },
    {
     "h": "Costs squeeze Washington's apple growers",
     "b": "Tariffs, fuel and fertilizer costs are squeezing growers, and some are leaving orchards unplanted; Washington grows nearly 70% of US fresh apples.",
     "date": "2026-11-24",
-    "publisher": "KUOW",
-    "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
     "url": "https://www.kuow.org/npr-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-    "published": "2026-11-24T21:09:29Z",
-    "updated": "2026-11-24T23:38:41Z",
     "gathered": "2026-11-25T00:58:44Z"
    },
    {
@@ -852,48 +872,48 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Overcast",
-    "wind": "SE 8 mph",
-    "humidity": 66,
-    "obs": "24 Nov 08:53 PM PST"
+    "temp": 54,
+    "cond": "Mostly Cloudy",
+    "wind": "SE 11 mph",
+    "humidity": 62,
+    "obs": "25 Nov 01:55 AM PST"
    },
    "periods": [
     {
-     "name": "Tonight",
+     "name": "Overnight",
      "kind": "low",
      "temp": 49,
-     "text": "Rain likely, mainly after 4am.  Cloudy, then gradually becoming partly cloudy, with a low around 49. South southeast wind 9 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain, mainly after 4am.  Low around 49. South southeast wind 11 to 13 mph, with gusts as high as 23 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Wednesday",
      "kind": "high",
      "temp": 56,
-     "text": "Rain.  High near 56. South wind around 8 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  High near 56. South wind 7 to 9 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Wednesday Night",
      "kind": "low",
-     "temp": 51,
-     "text": "Rain, mainly after 9pm.  Low around 51. South southeast wind 13 to 16 mph, with gusts as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "temp": 54,
+     "text": "Rain.  Steady temperature around 54. South southeast wind 15 to 17 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 55,
-     "text": "Rain.  High near 55. South southwest wind 13 to 15 mph, with gusts as high as 26 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain.  High near 55. South southwest wind around 14 mph, with gusts as high as 25 mph.  Chance of precipitation is 90%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 47,
-     "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 47. South wind 9 to 13 mph, with gusts as high as 20 mph. "
+     "text": "Rain likely, mainly after 4am.  Mostly cloudy, with a low around 47. South wind 9 to 13 mph, with gusts as high as 20 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 51,
-     "text": "Rain likely, mainly between 10am and 4pm.  Cloudy, with a high near 51. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "temp": 50,
+     "text": "Rain.  High near 50. Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -909,7 +929,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T08:12:00Z",
+  "updatedAt": "2026-11-25T11:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
