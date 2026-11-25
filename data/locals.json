@@ -5,14 +5,48 @@
    "short": "ATL",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Georgians may spend less on Thanksgiving",
+    "b": "Georgians are expected to spend slightly less than the national average on Thanksgiving dinner, though meal costs are up.",
+    "date": "2026-11-24",
+    "publisher": "WABE",
+    "title": "While Thanksgiving dinner costs rise, Georgians may spend less than U.S. average",
+    "url": "https://www.wabe.org/thanksgiving-dinner-costs-rise-for-first-time-since-2022-though-georgia-may-spend-less-than-the-u-s-average/",
+    "published": "2026-11-24T22:43:00Z",
+    "updated": "2026-11-24T23:31:43Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
+   {
+    "h": "Atlanta among most surveilled US cities",
+    "b": "Georgia State research finds about 124 surveillance cameras for every 1,000 people in Atlanta.",
+    "date": "2026-11-24",
+    "publisher": "WABE",
+    "title": "Mapped and Monitored: Atlanta's Surveillance Boom",
+    "url": "https://www.wabe.org/mapped-and-monitored-atlantas-surveillance-boom/",
+    "published": "2026-11-24T20:45:00Z",
+    "updated": "2026-11-24T21:30:26Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
+   {
+    "h": "ACLU sues over ICE re-detention policy",
+    "b": "Two Georgia men are at the center of an ACLU lawsuit seeking to halt a policy letting ICE re-detain previously released immigrants without clear reason.",
+    "date": "2026-11-24",
+    "publisher": "WABE",
+    "title": "Georgia immigrants file lawsuit challenging DHS re-detention policy",
+    "url": "https://www.wabe.org/georgia-immigrants-file-lawsuit-challenging-dhs-re-detention-policy/",
+    "published": "2026-11-24T22:15:12Z",
+    "updated": "2026-11-24T22:15:16Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   }
+  ],
   "weather": {
    "now": {
-    "temp": 62,
+    "temp": 58,
     "cond": "Overcast",
     "wind": "E 13 mph",
-    "humidity": 46,
-    "obs": "24 Nov 14:52 pm EST"
+    "humidity": 42,
+    "obs": "24 Nov 19:52 pm EST"
    },
    "periods": [
     {
@@ -31,7 +65,7 @@
      "name": "Wednesday Night",
      "kind": "low",
      "temp": 45,
-     "text": "Showers, mainly before 4am.  Low around 45. East wind 10 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%."
+     "text": "Showers, mainly before 4am.  Low around 45. East wind 10 to 15 mph, with gusts as high as 30 mph.  Chance of precipitation is 90%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thanksgiving Day",
@@ -43,7 +77,7 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 34,
-     "text": "Mostly cloudy, with a low around 34."
+     "text": "Mostly cloudy, with a low around 34. West wind 10 to 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday",
@@ -65,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -76,6 +110,15 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Ex-transportation chief urges driverless car rules",
+    "b": "Former state transportation chief Jamey Tesler called on Massachusetts to dedicate regulators and set standards for autonomous vehicles.",
+    "date": "2026-11-24",
+    "publisher": "WBUR",
+    "title": "Mass. should accelerate driverless car oversight, former transportation chief says",
+    "url": "https://www.wbur.org/news/2026/11/24/mass-should-accelerate-driverless-car-oversight-former-transportation-chief-says",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
    {
     "h": "Massachusetts joins suit over HUD housing rule",
     "b": "Twenty-one states sued HUD over a rule denying housing aid to families if any member lacks eligible immigration status.",
@@ -98,47 +141,17 @@
     "h": "Baystate resumes gender care for youth",
     "b": "Baystate Health will again prescribe gender-affirming medication for minors starting Dec. 15, almost a year after halting the program amid threats from Washington.",
     "date": "2026-11-24",
-    "publisher": "WBUR",
-    "title": "Baystate resumes gender care for youth, after shutting it down amid government threats",
     "url": "https://www.wbur.org/news/2026/11/24/baystate-resumes-gender-affirming-care-trans-youth-trump",
     "gathered": "2026-11-24T16:09:41Z"
-   },
-   {
-    "h": "Harvard: Data center emissions far worse than thought",
-    "b": "A Harvard study of 403 large data centers found their climate pollution is three times greater than previously estimated.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/harvard-study-data-centers-climate-emissions-energy",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Beacon Hill welcomes at least 21 new lawmakers",
-    "b": "The incoming class includes a 19-year-old from Billerica, a 'Bachelorette' contestant and the sitting mayor of Gardner; every freshman but one is a Democrat.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/massachusetts-beacon-hill-incoming-class-senate-house",
-    "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "Massachusetts sues ICE over courthouse arrests",
-    "b": "Attorney General Andrea Campbell sued the Trump administration, saying immigration agents keep arresting people inside Massachusetts courthouses in violation of a new state law.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/massachusetts-ice-lawsuit-courtroom-arrests",
-    "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "Coastal storm set to soak Thanksgiving",
-    "b": "Tuesday and Wednesday look clear for travel, but a coastal storm is expected to bring soaking rain, strong wind gusts and coastal flooding on Thanksgiving Day.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/thanksgiving-travel-weather-forecast-storm-east-coast",
-    "gathered": "2026-11-23T17:15:56Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "A Few Clouds",
-    "wind": "NW 16 mph, gusts to 28 mph",
-    "humidity": 27,
-    "obs": "24 Nov 14:54 pm EST"
+    "temp": 39,
+    "cond": "Fair",
+    "wind": "N 8 mph",
+    "humidity": 38,
+    "obs": "24 Nov 19:54 pm EST"
    },
    "periods": [
     {
@@ -191,29 +204,17 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
-    "h": "Neponset River cleanup moves forward",
-    "b": "The EPA reached agreements with state conservation officials and 54 other parties to advance a $78.6 million cleanup of decades of industrial pollution in the Lower Neponset River.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/epa-dcr-neponset-river-cleanup-agreement",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Skatesgiving brings roller skating and turkeys to Dorchester",
-    "b": "Kids skated in the Joseph Lee K-8 School auditorium Friday night at an annual community event where families also picked up Thanksgiving food.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/skatesgiving-dorchester-thanksgiving-roller-skating",
-    "gathered": "2026-11-23T14:21:49Z"
-   },
-   {
-    "h": "ProBlak's mural brings community stories to A.R.T.'s new center",
-    "b": "Artist Rob \"ProBlak\" Gibbs has created a massive mural for the American Repertory Theater's new Goel Center in Allston, which opens to the public in April 2027.",
-    "date": "2026-11-23",
-    "url": "https://www.wbur.org/news/2026/11/23/rob-problak-gibbs-art-mural-goel-center",
-    "gathered": "2026-11-23T11:12:31Z"
+    "h": "Nova Scotia's Christmas tree arrives",
+    "b": "A 46-foot white spruce arrived on Boston Common, Nova Scotia's 55th annual thank-you gift to the city.",
+    "date": "2026-11-24",
+    "publisher": "WBUR",
+    "title": "Nova Scotia's tree arrival serves as goodwill reminder",
+    "url": "https://www.wbur.org/news/2026/11/24/nova-scotia-christmas-tree-holiday-boston",
+    "gathered": "2026-11-25T00:58:44Z"
    }
   ]
  },
@@ -225,6 +226,28 @@
   },
   "local": [
    {
+    "h": "Tasa Coffee Roasters posts 'permanently closed'",
+    "b": "The West Humboldt Park shop posted the sign after workers walked out over a viral post alleging ties to ICE.",
+    "date": "2026-11-24",
+    "publisher": "WBEZ",
+    "title": "Sign on door of Tasa Coffee Roasters in West Humboldt Park says shop is ‘permanently closed’",
+    "url": "https://www.wbez.org/food-drink/2026/11/24/tasa-coffee-roasters-west-humboldt-park-permanently-closed-ice",
+    "published": "2026-11-24T21:55:50Z",
+    "updated": "2026-11-24T21:55:50Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
+   {
+    "h": "Illinois rejects federal school scholarship program",
+    "b": "Gov. JB Pritzker said Illinois won't opt in to the federal tax credit scholarship program, saying it would harm public school funding.",
+    "date": "2026-11-25",
+    "publisher": "WBEZ",
+    "title": "Illinois becomes sixth state to say no to Trump’s federal tax credit scholarship program",
+    "url": "https://www.wbez.org/education/2026/11/24/illinois-becomes-sixth-state-to-say-no-to-trumps-federal-tax-credit-scholarship-program",
+    "published": "2026-11-25T00:15:53Z",
+    "updated": "2026-11-25T00:15:53Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
+   {
     "h": "Bill would let assault survivors sue colleges",
     "b": "Illinois lawmakers are weighing a proposal letting campus sexual assault survivors sue universities that fail to provide supports required by state law.",
     "date": "2026-11-24",
@@ -232,63 +255,22 @@
     "gathered": "2026-11-24T16:09:41Z"
    },
    {
-    "h": "Top cop finalist was disciplined three times",
-    "b": "Records show CPD counterterrorism chief Christopher Papaioannou, a superintendent finalist, was suspended or reprimanded three times and drew dozens of complaints.",
-    "date": "2026-11-23",
-    "url": "https://www.wbez.org/public-safety/2026/11/23/papaioannou-ursitti-novalez-chicago-police-cpd-superintendent-top-cop",
-    "gathered": "2026-11-24T04:54:32Z"
-   },
-   {
     "h": "Workers walk out at Humboldt Park coffee shop",
     "b": "Tasa Coffee Roasters faces boycott calls and was egged after a viral post alleged ties to ICE; workers walked off the job Monday.",
     "date": "2026-11-24",
     "url": "https://www.wbez.org/politics/2026/11/23/tasa-coffee-roaster-west-humboldt-immigration-ice-dhs-social-media-worker-walkout",
     "gathered": "2026-11-24T04:54:32Z"
-   },
-   {
-    "h": "NW Indiana food banks see heavy need",
-    "b": "After a year of storms and cuts to SNAP benefits, Northwest Indiana is leaning on its food banks ahead of Thanksgiving.",
-    "date": "2026-11-23",
-    "url": "https://www.wbez.org/wbez-news/2026/11/23/for-northwest-indiana-food-banks-the-need-is-great-this-year-more-than-most",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Chicago crime falls, domestic violence rises",
-    "b": "While overall crime is dropping in Chicago, domestic violence is getting worse; experts and survivors discuss what it would take to reduce it.",
-    "date": "2026-11-23",
-    "url": "https://www.wbez.org/say-more-with-mary-dixon-patrick-smith/2026/11/23/while-overall-crime-is-dropping-in-chicago-domestic-violence-is-getting-worse",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Chicago bets on the Soul Train Awards to boost tourism",
-    "b": "Taped in Chicago, the Soul Train Awards return to network TV Friday after a two-year hiatus, and local officials hope the show will draw tourism and more awards specials to the city.",
-    "date": "2026-11-23",
-    "url": "https://www.wbez.org/movies-tv/2026/11/23/soul-train-awards-chicago-bet-entertainment",
-    "gathered": "2026-11-23T14:21:49Z"
-   },
-   {
-    "h": "Ankle monitors take over a Chicagoan's life",
-    "b": "As the administration puts ankle monitors on more immigrants, advocates say they aren't necessary for people complying with their cases and take a toll on mental health.",
-    "date": "2026-11-23",
-    "url": "https://www.wbez.org/immigration/2026/11/23/trump-administration-ankle-monitors-immigrants-chicago",
-    "gathered": "2026-11-23T14:21:49Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 42,
-    "cond": "Mostly Cloudy",
-    "wind": "NE 8 mph",
-    "humidity": 51,
-    "obs": "24 Nov 13:53 pm CST"
+    "temp": 38,
+    "cond": "Overcast",
+    "wind": "SE 6 mph",
+    "humidity": 62,
+    "obs": "24 Nov 18:53 pm CST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 40,
-     "text": "Partly sunny, with a high near 40. East wind 5 to 10 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -317,7 +299,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Rain.  Low around 39. Breezy.  Chance of precipitation is 80%."
+     "text": "Rain.  Low around 39. Breezy, with a north northeast wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 80%."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 46,
+     "text": "Rain likely, mainly before noon.  Mostly cloudy, with a high near 46. Breezy.  Chance of precipitation is 70%."
     }
    ]
   },
@@ -333,18 +321,14 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
     "h": "Druski to host Chicago's New Year's Eve",
     "b": "The comedian will host the city's celebration from Navy Pier, broadcast live; free tickets go out first-come, first-served starting Wednesday.",
     "date": "2026-11-24",
-    "publisher": "WBEZ",
-    "title": "Druski to host Chicago New Year’s Eve celebration and live TV broadcast from Navy Pier",
     "url": "https://www.wbez.org/movies-tv/2026/11/24/druski-chicago-new-year-eve-countdown-event-free-tickets",
-    "published": "2026-11-24T15:37:20Z",
-    "updated": "2026-11-24T15:37:20Z",
     "gathered": "2026-11-24T16:09:41Z"
    }
   ]
@@ -357,56 +341,30 @@
   },
   "local": [
    {
-    "h": "Denver approves $40M DNC standby fund",
-    "b": "The city will provide a $40 million financial guarantee for its bid to host the Democratic National Convention.",
-    "date": "2026-11-23",
+    "h": "Cheesman Park to close to cars in pilot",
+    "b": "Cars will be banned from Cheesman Park for now, while buses, cyclists and pedestrians are still welcome.",
+    "date": "2026-11-24",
     "publisher": "Denverite",
-    "title": "Denver approves $40M of ‘standby’ funding for Democratic National Convention",
-    "url": "https://denverite.com/2026/11/23/democratic-national-convention-denver-funding-approved/",
-    "published": "2026-11-23T23:59:35Z",
-    "gathered": "2026-11-24T04:54:32Z"
-   },
-   {
-    "h": "Denver in the mix for 2031 Women's World Cup",
-    "b": "The 2031 Women's World Cup is coming to the United States, Mexico, Costa Rica and Jamaica, and Denver is in the mix to host games.",
-    "date": "2026-11-23",
-    "publisher": "Denverite",
-    "title": "Denver is in the mix to host games for the 2031 Women’s World Cup",
-    "url": "https://denverite.com/2026/11/23/womens-world-cup-2031-denver-bid/",
-    "published": "2026-11-23T20:46:04Z",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Saturday flurries weren't Denver's first snow",
-    "b": "The weekend flurries didn't count as Denver's official first snow, making this already the third-latest first snow on record.",
-    "date": "2026-11-23",
-    "publisher": "Denverite",
-    "title": "Sorry, those Saturday flurries didn’t count as Denver’s official first snow",
-    "url": "https://denverite.com/2026/11/23/denver-no-first-snow-yet/",
-    "published": "2026-11-23T19:10:17Z",
-    "gathered": "2026-11-23T20:27:45Z"
+    "title": "Cars to be banned from Cheesman Park (for now)",
+    "url": "https://denverite.com/2026/11/24/cheesman-park-car-ban-pilot-12th-avenue/",
+    "published": "2026-11-24T22:11:15Z",
+    "gathered": "2026-11-25T00:58:44Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 47,
     "cond": "A Few Clouds",
-    "wind": "W 5 mph",
-    "humidity": 16,
-    "obs": "24 Nov 12:58 pm MST"
+    "wind": "Calm",
+    "humidity": 17,
+    "obs": "24 Nov 16:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 54,
-     "text": "Sunny, with a high near 54. East southeast wind 3 to 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 26,
-     "text": "Mostly clear, with a low around 26. Southwest wind 3 to 5 mph. "
+     "text": "Mostly clear, with a low around 26. East southeast wind around 5 mph becoming light and variable  after midnight. "
     },
     {
      "name": "Wednesday",
@@ -430,7 +388,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 33,
-     "text": "Mostly clear, with a low around 33."
+     "text": "Mostly clear, with a low around 33. Southwest wind 5 to 7 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 63,
+     "text": "Mostly sunny, with a high near 63."
     }
    ]
   },
@@ -446,7 +410,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -468,6 +432,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Critics slam LA28's Phillips 66 fuel deal",
+    "b": "LA28 named Phillips 66 its official fuel partner for the 2028 Games, drawing calls to cancel the deal.",
+    "date": "2026-11-24",
+    "publisher": "LAist",
+    "title": "LA28 names Phillips 66 its official fuel partner. Critics want the deal canceled",
+    "url": "https://laist.com/news/climate-environment/la28-names-phillips-66-its-official-fuel-partner-critics-want-the-deal-canceled",
+    "published": "2026-11-24T22:19:59Z",
+    "updated": "2026-11-24T23:03:08Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
    {
     "h": "Trump rolls back Head Start pay requirements",
     "b": "A final rule rescinds mandatory pay hikes for Head Start staff, including provisions meant to move pay closer to public preschool teachers'.",
@@ -498,7 +473,7 @@
     "title": "Judge sanctions outgoing LA city attorney, orders forensic search of her devices",
     "url": "https://laist.com/news/criminal-justice/la-city-attorney-hydee-feldstein-soto-sanctions-device-search",
     "published": "2026-11-24T13:00:00Z",
-    "updated": "2026-11-24T13:00:05Z",
+    "updated": "2026-11-25T00:55:09Z",
     "gathered": "2026-11-24T16:09:41Z"
    },
    {
@@ -526,57 +501,23 @@
     "h": "LA weighs rent freeze for seniors, disabled",
     "b": "Councilmember Ysabel Jurado introduced a motion to explore a program that would keep rents flat for qualifying tenants.",
     "date": "2026-11-24",
-    "publisher": "LAist",
-    "title": "LA considers taxpayer-funded rent freeze for some senior and disabled tenants",
     "url": "https://laist.com/news/housing-homelessness/los-angeles-city-council-housing-rent-freeze-proposal-senior-elderly-disabled-tenants-landlords",
-    "published": "2026-11-24T00:26:13Z",
-    "updated": "2026-11-24T00:32:56Z",
     "gathered": "2026-11-24T04:54:32Z"
-   },
-   {
-    "h": "UC gives all students ChatGPT access",
-    "b": "The University of California signed a $1.2 million deal with OpenAI for ChatGPT Edu, despite faculty concerns that they weren't sufficiently consulted.",
-    "date": "2026-11-23",
-    "publisher": "LAist",
-    "title": "UC gives students free access to ChatGPT. Faculty say OpenAI deal is ‘unwise’",
-    "url": "https://laist.com/news/education/uc-gives-students-free-access-to-chatgpt-faculty-say-openai-deal-is-unwise",
-    "published": "2026-11-23T21:00:00Z",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Thanksgiving dinner may cost more this year",
-    "b": "The American Farm Bureau Federation estimates Thanksgiving will cost more than 6% more than last year, though other food-price experts say the increase is unclear.",
-    "date": "2026-11-23",
-    "url": "https://laist.com/news/lets-talk-turkey-heres-how-thanksgiving-meal-costs-have-changed-this-year",
-    "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "Ethics panel finds Rep. Gomez made unwelcome advances",
-    "b": "The House Ethics Committee reported 'substantial evidence' that Rep. Jimmy Gomez made unwelcome sexual advances and contact toward a House staffer.",
-    "date": "2026-11-23",
-    "url": "https://laist.com/news/politics/ethics-probe-finds-democratic-rep-jimmy-gomez-made-unwelcome-sexual-advances-to-a-staffer",
-    "gathered": "2026-11-23T20:27:45Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 69,
-    "wind": "SE 1 mph",
-    "humidity": 35,
-    "obs": "24 Nov 11:00 AM PST"
+    "temp": 67,
+    "wind": "NW 2 mph",
+    "humidity": 45,
+    "obs": "24 Nov 04:55 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 73,
-     "text": "Partly sunny, with a high near 73. East northeast wind around 5 mph becoming west northwest. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 52,
-     "text": "Mostly cloudy, with a low around 52. North wind around 5 mph. "
+     "text": "Mostly cloudy, with a low around 52. West wind around 5 mph becoming north after midnight. "
     },
     {
      "name": "Wednesday",
@@ -600,7 +541,13 @@
      "name": "Thursday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Mostly clear, with a low around 56."
+     "text": "Mostly clear, with a low around 56. North northeast wind around 10 mph. "
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 84,
+     "text": "Sunny, with a high near 84."
     }
    ]
   },
@@ -616,7 +563,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -627,6 +574,27 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Council summons colleges on sexual assault",
+    "b": "The City Council wants presidents of the 10 largest colleges to testify under oath Dec. 8 about handling campus sexual assaults.",
+    "date": "2026-11-24",
+    "publisher": "Gothamist",
+    "title": "NYC Council looks for colleges to testify about sexual assault procedures",
+    "url": "https://gothamist.com/news/nyc-council-looks-for-colleges-to-testify-about-sexual-assault-procedures",
+    "published": "2026-11-24T21:39:00Z",
+    "updated": "2026-11-24T22:20:00Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
+   {
+    "h": "Panel to vote on $8B Queens casino design",
+    "b": "The Public Design Commission will vote Monday on the Hard Rock casino complex next to Citi Field after postponing in October.",
+    "date": "2026-11-24",
+    "publisher": "Gothamist",
+    "title": "NYC panel set to vote on $8 billion Queens casino design Monday",
+    "url": "https://gothamist.com/news/nyc-panel-set-to-vote-on-8-billion-queens-casino-design-monday-dek-the-vote-comes-after-commissioners-raised-concerns-last-month-about-how-the-sprawling-complex-near-citi-field",
+    "published": "2026-11-24T22:30:00Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
    {
     "h": "Wind threatens Macy's parade balloons",
     "b": "Forecasters expect rain and winds gusting to 60 mph on Thanksgiving, which could affect the 100th parade's balloons.",
@@ -676,85 +644,15 @@
     "url": "https://gothamist.com/news/fare-hikes-on-yellow-taxi-cabs-could-keep-drivers-out-of-poverty-city-report-finds",
     "published": "2026-11-24T11:00:47Z",
     "gathered": "2026-11-24T11:11:33Z"
-   },
-   {
-    "h": "Hochul vetoes AI accuracy-warning bill",
-    "b": "Gov. Kathy Hochul vetoed a bill requiring AI platforms to warn users their information may be inaccurate, calling it too far-reaching.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "NY Gov. Hochul vetoes bill that would have required AI accuracy warnings",
-    "url": "https://gothamist.com/news/ny-gov-hochul-vetoes-bill-that-would-have-required-ai-accuracy-warnings",
-    "published": "2026-11-23T20:43:53Z",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Queens library restores most services",
-    "b": "Nearly three weeks after a Nov. 4 ransomware attack, the Queens Public Library has its website, app, computers and digital collections back up.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "Queens Public Library restores most services nearly 3 weeks after ransomware attack",
-    "url": "https://gothamist.com/news/queens-public-library-restores-most-services-nearly-3-weeks-after-ransomware-attack",
-    "published": "2026-11-23T21:38:00Z",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Flu cases surge ahead of Thanksgiving",
-    "b": "More than 43,000 New Yorkers have caught the flu since early October, compared with about 7,000 at this point last season, state data shows.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "Reported flu cases surge across New York ahead of Thanksgiving",
-    "url": "https://gothamist.com/news/reported-flu-cases-surge-across-new-york-ahead-of-thanksgiving",
-    "published": "2026-11-23T18:16:27Z",
-    "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "NY sues HUD over mixed-status housing rule",
-    "b": "The state and city sued over a federal rule that could strip housing assistance from about 20,000 families in which not every member is a citizen or eligible non-citizen.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "NYC, state sue Trump administration over ‘mixed-status’ federal housing assistance rule",
-    "url": "https://gothamist.com/news/attorney-general-letitia-james-sues-hud-over-mixed-status-housing-rule",
-    "published": "2026-11-23T18:44:56Z",
-    "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "Top court upholds Section 8 renter protection",
-    "b": "New York's Court of Appeals upheld a state law banning discrimination against tenants who pay rent with housing subsidies, siding with Attorney General Letitia James against an Ithaca landlord.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "New York’s highest court upholds key protection for low-income renters with Section 8",
-    "url": "https://gothamist.com/news/new-yorks-highest-court-upholds-key-protection-for-low-income-renters-with-section-8",
-    "published": "2026-11-23T20:54:00Z",
-    "gathered": "2026-11-23T17:15:56Z"
-   },
-   {
-    "h": "New film captures ICE agents' banter at NYC courthouse arrests",
-    "b": "Journalist Emma V.F. filmed scores of arrests at 26 Federal Plaza, along with the rarely seen small talk among the ICE agents making them.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "New film captures ICE agents' banter amid NYC courthouse arrests",
-    "url": "https://gothamist.com/news/new-film-captures-ice-agents-banter-amid-nyc-courthouse-arrests",
-    "published": "2026-11-23T11:30:00Z",
-    "gathered": "2026-11-23T14:21:49Z"
-   },
-   {
-    "h": "Citi Bike e-bike rides to be capped at $3.65 for members",
-    "b": "Under a new deal between Mayor Zohran Mamdani's administration and Lyft, Citi Bike members will pay no more than $3.65 for e-bike rides up to 45 minutes starting Jan. 19, 2027.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "NYC Citi Bike member rides to be capped at $3.65 after Mamdani inks new deal with Lyft",
-    "url": "https://gothamist.com/news/nyc-citi-bike-rides-to-be-capped-at-365-for-members-under-new-deal-with-lyft",
-    "published": "2026-11-23T10:00:00Z",
-    "gathered": "2026-11-23T11:12:31Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 42,
     "cond": "Fair",
-    "wind": "W 6 mph, gusts to 17 mph",
-    "humidity": 29,
-    "obs": "24 Nov 14:51 pm EST"
+    "wind": "N 8 mph",
+    "humidity": 40,
+    "obs": "24 Nov 19:51 pm EST"
    },
    "periods": [
     {
@@ -807,7 +705,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -819,16 +717,6 @@
     "url": "https://gothamist.com/news/digging-up-a-secret-world-under-a-brooklyn-graveyard-one-teaspoon-at-a-time",
     "published": "2026-11-24T11:30:56Z",
     "gathered": "2026-11-24T16:09:41Z"
-   },
-   {
-    "h": "About 100 New Yorkers ditched their smartphones for a month",
-    "b": "A phone-free party celebrated roughly 100 New Yorkers who gave up their smartphones for a month, with a showcase of the hobbies and art projects they picked up instead.",
-    "date": "2026-11-23",
-    "publisher": "Gothamist",
-    "title": "These New Yorkers ditched their smartphones for a month. No, seriously.",
-    "url": "https://gothamist.com/news/these-new-yorkers-ditched-their-smartphones-for-a-month-no-seriously",
-    "published": "2026-11-23T17:32:00Z",
-    "gathered": "2026-11-23T11:12:31Z"
    }
   ]
  },
@@ -844,29 +732,12 @@
     "h": "Freezing temperatures hit France",
     "b": "Arctic air is bringing a sharp drop in temperatures, with overnight lows below freezing in several regions this week.",
     "date": "2026-11-24",
+    "publisher": "The Local France",
+    "title": "Freezing temperatures hit northern and eastern France as cold snap bites",
     "url": "https://www.thelocal.fr/20261124/freezing-temperatures-hit-northern-and-eastern-france-as-cold-snap-bites",
+    "published": "2026-11-24T08:27:24Z",
+    "updated": "2026-11-24T08:27:25Z",
     "gathered": "2026-11-24T11:11:33Z"
-   },
-   {
-    "h": "Map shows France's hardest tap water",
-    "b": "Tap water hardness varies significantly across France, and hard water builds limescale on taps and kettles and can dry out skin and hair.",
-    "date": "2026-11-23",
-    "url": "https://www.thelocal.fr/20261123/map-which-parts-of-france-have-the-hardest-tap-water",
-    "gathered": "2026-11-23T23:12:53Z"
-   },
-   {
-    "h": "Three detained over Normandy train derailment",
-    "b": "French police arrested three people in connection with the September derailment between Rouen and Caen that injured 44 people, sources said.",
-    "date": "2026-11-23",
-    "url": "https://www.thelocal.fr/20261123/france-detains-three-over-mystery-train-derailment",
-    "gathered": "2026-11-23T17:15:56Z"
-   },
-   {
-    "h": "Where the presidential candidates stand on rural France",
-    "b": "Rural France, home to a third of the population, is a key 2027 battleground, with residents more reliant on cars and facing reduced public services such as healthcare. A look at the candidates' policies.",
-    "date": "2026-11-23",
-    "url": "https://www.thelocal.fr/20261123/compared-the-presidential-candidates-policies-for-rural-france",
-    "gathered": "2026-11-23T11:12:31Z"
    }
   ],
   "weather": {
@@ -885,7 +756,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "goodnews": [
    {
     "h": "World's best egg mayonnaise crowned",
@@ -908,6 +779,17 @@
   },
   "local": [
    {
+    "h": "Costs squeeze Washington's apple growers",
+    "b": "Tariffs, fuel and fertilizer costs are pushing some Yakima Valley growers to tear out orchards; Washington grows nearly 70% of US fresh apples.",
+    "date": "2026-11-24",
+    "publisher": "KUOW",
+    "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+    "url": "https://www.kuow.org/npr-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+    "published": "2026-11-24T21:09:29Z",
+    "updated": "2026-11-24T23:38:41Z",
+    "gathered": "2026-11-25T00:58:44Z"
+   },
+   {
     "h": "Seattle schools settle over pregnant workers",
     "b": "Seattle Public Schools will pay $600,000 and revise policies for pregnant and nursing employees under a settlement with the state attorney general.",
     "date": "2026-11-24",
@@ -927,44 +809,17 @@
     "date": "2026-11-24",
     "url": "https://www.kuow.org/education/2026-11-23/submit-biological-sex-form-to-compete-seattle-schools-tells-girls",
     "gathered": "2026-11-24T04:54:32Z"
-   },
-   {
-    "h": "Dallesport residents fight huge data center plan",
-    "b": "Neighbors in rural Klickitat County are organizing against a proposed hyperscale data center campus that could one day reach one gigawatt.",
-    "date": "2026-11-23",
-    "url": "https://www.kuow.org/technology/2026-11-23/rural-washington-community-organizes-against-massive-data-center-proposal",
-    "gathered": "2026-11-23T20:27:45Z"
-   },
-   {
-    "h": "Longest-serving state justice to retire",
-    "b": "Washington Supreme Court Justice Charles W. Johnson, on the court for 36 years, will leave when his term ends this year at the state's mandatory age limit of 75.",
-    "date": "2026-11-23",
-    "url": "https://www.kuow.org/governing/2026-11-23/record-tenure-concludes-as-charles-johnson-retires-from-washington-state-supreme-court",
-    "gathered": "2026-11-23T17:15:56Z"
-   },
-   {
-    "h": "Seattle lab aims to break down 'forever chemicals'",
-    "b": "Nature has no tools to break down PFAS, the so-called forever chemicals invented in the 1930s. A Seattle protein design lab is trying to build some.",
-    "date": "2026-11-23",
-    "url": "https://www.kuow.org/science/2026-11-23/seattle-lab-looks-to-break-the-bonds-that-make-forever-chemicals-last",
-    "gathered": "2026-11-23T08:16:26Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 57,
-    "cond": "Mostly Cloudy",
-    "wind": "SE 9 mph",
+    "cond": "Overcast",
+    "wind": "S 9 mph",
     "humidity": 45,
-    "obs": "24 Nov 11:53 AM PST"
+    "obs": "24 Nov 04:53 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 53,
-     "text": "Rain, mainly after 4pm.  High near 53. Southeast wind around 8 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -994,6 +849,12 @@
      "kind": "low",
      "temp": 47,
      "text": "A 50 percent chance of rain.  Mostly cloudy, with a low around 47."
+    },
+    {
+     "name": "Friday",
+     "kind": "high",
+     "temp": 51,
+     "text": "Rain likely, mainly between 10am and 4pm.  Cloudy, with a high near 51. Chance of precipitation is 70%."
     }
    ]
   },
@@ -1009,7 +870,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-24T23:11:00Z",
+  "updatedAt": "2026-11-25T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
