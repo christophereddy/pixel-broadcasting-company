@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T05:11:00Z",
+ "updatedAt": "2026-11-25T08:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "The Houthis are threatening Saudi ports over the coalition's Hodeidah evacuation order. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-25",
    "publisher": "Al Jazeera",
-   "title": "Houthis threaten Saudi ports over coalition’s Hodeidah evacuation order",
+   "title": "Saudi-led coalition says it bombed key Houthi-run Red Sea port of Hodeidah",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order",
    "gathered": "2026-11-25T02:12:59Z"
   },
@@ -36,8 +36,6 @@
    "b": "Lt. Gov. Nancy Dahlstrom withdrew Alaska from a 2025 agreement giving the Justice Department access to state voter rolls.",
    "date": "2026-11-25",
    "place": "Alaska",
-   "publisher": "Al Jazeera",
-   "title": "Alaska ends deal to give voter records to US Justice Department",
    "url": "https://www.aljazeera.com/news/2026/11/25/alaska-ends-deal-to-give-voter-records-to-us-justice-department",
    "gathered": "2026-11-25T02:12:59Z"
   },
@@ -139,8 +137,6 @@
    "h": "Blanche won't say if Huang was investigated",
    "b": "Attorney General Todd Blanche declined to say whether the Justice Department investigated Nvidia's Jensen Huang.",
    "date": "2026-11-24",
-   "publisher": "Al Jazeera",
-   "title": "Todd Blanche declines to confirm if Nvidia’s Jensen Huang was investigated",
    "url": "https://www.aljazeera.com/news/2026/11/24/todd-blanche-declines-to-confirm-if-nvidias-jensen-huang-was-investigated",
    "gathered": "2026-11-25T00:58:44Z"
   },
@@ -192,6 +188,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Eisenkot lands first coalition partner",
+   "b": "Gadi Eisenkot's Yashar party agreed to a coalition pact with Avigdor Lieberman's party in a bid to form Israel's next government.",
+   "date": "2026-11-25",
+   "place": "Jerusalem",
+   "tz": "Asia/Jerusalem",
+   "publisher": "Al Jazeera",
+   "title": "Israel’s Eisenkot secures first coalition partner in bid to form government",
+   "url": "https://www.aljazeera.com/news/2026/11/25/israels-eisenkot-secures-first-coalition-partner-in-bid-to-form-government",
+   "gathered": "2026-11-25T05:12:06Z"
+  },
+  {
+   "h": "WHO chief urges end to US fuel blockade on Cuba",
+   "b": "Tedros Adhanom Ghebreyesus warned the sanctions endanger children's lives as fuel shortages strain Cuba's healthcare system.",
+   "date": "2026-11-25",
+   "place": "Havana, Cuba",
+   "tz": "America/Havana",
+   "publisher": "Al Jazeera",
+   "title": "WHO chief urges end to US fuel blockade on Cuba",
+   "url": "https://www.aljazeera.com/news/2026/11/25/who-chief-urges-end-to-us-fuel-blockade-on-cuba",
+   "gathered": "2026-11-25T05:12:06Z"
+  },
   {
    "h": "Pentagon rebukes Canada over military spending",
    "b": "A blunt Defense Department fact sheet said Canada falls short as a partner in defending North America; Ottawa says it has committed C$81.8 billion to rebuild its forces.",
@@ -362,15 +380,6 @@
    "tz": "Australia/Sydney",
    "url": "https://www.aljazeera.com/news/2026/11/24/australia-warns-tech-giants-of-multibillion-dollar-fines-for-online-harm",
    "gathered": "2026-11-24T08:12:04Z"
-  },
-  {
-   "h": "WHO chief visits Cuba's ailing hospitals",
-   "b": "Tedros Adhanom Ghebreyesus toured a pediatric cardiology center in Havana as Cuba's healthcare system deteriorates amid an economic crisis deepened by US sanctions.",
-   "date": "2026-11-24",
-   "place": "Havana, Cuba",
-   "tz": "America/Havana",
-   "url": "https://www.aljazeera.com/news/2026/11/24/who-chief-visits-cuba-as-healthcare-system-deteriorates",
-   "gathered": "2026-11-24T04:54:32Z"
   },
   {
    "h": "Guterres urges global AI oversight within a year",
@@ -597,18 +606,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 41,
+   "temp": 39,
    "cond": "Fair",
-   "wind": "W 3 mph",
-   "humidity": 39,
-   "obs": "24 Nov 20:51 pm EST"
+   "wind": "NE 12 mph",
+   "humidity": 45,
+   "obs": "24 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 39,
-    "text": "Clear, with a low around 39. North wind around 10 mph. "
+    "text": "Clear, with a low around 39. Northeast wind around 10 mph. "
    },
    {
     "name": "Wednesday",
