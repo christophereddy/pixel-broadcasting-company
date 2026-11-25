@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T17:13:00Z",
+ "updatedAt": "2026-11-25T20:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "The Houthis are threatening Saudi ports over the coalition's Hodeidah evacuation order. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-25",
    "publisher": "Al Jazeera",
-   "title": "Iran accuses US of ‘strategic ambiguity’; army ready to ‘push enemy back’",
+   "title": "Iran says another tanker on fire after hitting mine in Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order",
    "gathered": "2026-11-25T02:12:59Z"
   },
@@ -31,6 +31,26 @@
   }
  ],
  "national": [
+  {
+   "h": "FDA to expand testing of prescription drugs",
+   "b": "The FDA will test more drugs for impurities and quality lapses after a ProPublica investigation found it rarely tested generics doctors had flagged.",
+   "date": "2026-11-25",
+   "publisher": "ProPublica",
+   "title": "FDA to Expand Prescription Drug Testing After ProPublica Revealed Safety Concerns",
+   "url": "https://www.propublica.org/article/fda-prescription-generic-medication-testing",
+   "published": "2026-11-25T19:30:00Z",
+   "updated": "2026-11-25T19:30:17Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Army calls Iowa lead azide detonation a success",
+   "b": "Army officials said Wednesday's controlled detonation of 68 drums of volatile lead azide at the Iowa Army Ammunition Plant 'wildly exceeded' expectations.",
+   "date": "2026-11-25",
+   "publisher": "Al Jazeera",
+   "title": "US Army declares Iowa lead azide detonation ‘tremendously successful’",
+   "url": "https://www.aljazeera.com/news/2026/11/25/us-army-declares-iowa-lead-azide-detonation-tremendously-successful",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
   {
    "h": "Kilmar Abrego Garcia self-deports to Spain",
    "b": "Abrego Garcia, wrongfully deported to El Salvador last year, left voluntarily after months fighting a second deportation to Africa.",
@@ -58,10 +78,7 @@
    "b": "Outgoing Texas Attorney General Ken Paxton dropped lawsuits against two doctors accused of violating the state's ban on transgender youth care.",
    "date": "2026-11-24",
    "place": "Texas",
-   "publisher": "PBS NewsHour",
-   "title": "Paxton drops Texas lawsuits that accused doctors of illegally providing transgender youth care",
    "url": "https://www.pbs.org/newshour/nation/paxton-drops-texas-lawsuits-that-accused-doctors-of-illegally-providing-transgender-youth-care",
-   "published": "2026-11-24T21:33:53Z",
    "gathered": "2026-11-25T00:58:44Z"
   },
   {
@@ -71,14 +88,6 @@
    "place": "Washington, D.C.",
    "url": "https://www.pbs.org/newshour/nation/chinese-neuroscientist-at-princeton-held-by-ice-after-detention-at-d-c-airport",
    "gathered": "2026-11-24T20:11:42Z"
-  },
-  {
-   "h": "Army to detonate lead azide in Iowa Wednesday",
-   "b": "After winning approval from a federal appeals court, the Army plans a controlled detonation of 68 barrels of lead azide in Iowa on Wednesday morning.",
-   "date": "2026-11-24",
-   "place": "Middletown, Iowa",
-   "url": "https://www.pbs.org/newshour/nation/getting-court-approval-u-s-army-to-detonate-degraded-bomb-making-material-in-iowa-on-wednesday",
-   "gathered": "2026-11-24T16:09:41Z"
   },
   {
    "h": "ProPublica: Ambetter prior authorization hurt patients",
@@ -190,13 +199,66 @@
  ],
  "international": [
   {
+   "h": "Tinubu vows peace for Nigeria's northeast ahead of vote",
+   "b": "At a rally in Maiduguri, President Bola Tinubu promised to restore peace to the rebellion-hit region as he seeks a second term on January 16.",
+   "date": "2026-11-25",
+   "place": "Maiduguri, Nigeria",
+   "tz": "Africa/Lagos",
+   "publisher": "Al Jazeera",
+   "title": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region",
+   "url": "https://www.aljazeera.com/news/2026/11/25/nigerias-tinubu-pledges-to-bring-peace-to-insurgency-hit-northeast-region",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Ecuador and US review joint military operations",
+   "b": "The US paused operations in Ecuador pending an investigation into one carried out by Ecuadoran forces that raised human rights questions.",
+   "date": "2026-11-25",
+   "place": "Quito, Ecuador",
+   "tz": "America/Guayaquil",
+   "publisher": "Al Jazeera",
+   "title": "Ecuador and US review joint military operations, official says",
+   "url": "https://www.aljazeera.com/news/2026/11/25/ecuador-and-us-review-joint-military-operations-official-says",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "UK moves warplanes into hangars over drone threat",
+   "b": "British outlets report the RAF is sheltering planes overnight and installing anti-drone nets; the Ministry of Defence says it takes base security very seriously.",
+   "date": "2026-11-25",
+   "place": "London, UK",
+   "tz": "Europe/London",
+   "publisher": "Al Jazeera",
+   "title": "UK military ‘moving aircraft to hangars in case of drone attacks’",
+   "url": "https://www.aljazeera.com/news/2026/11/25/uk-military-moving-aircraft-to-hangars-in-case-of-drone-attacks",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Fuel truck fire kills at least 30 on Cairo ring road",
+   "b": "A vehicle carrying petroleum products overturned and caught fire above a tunnel in Giza's Warraq district, Egypt's health ministry said; 15 were injured.",
+   "date": "2026-11-25",
+   "place": "Giza, Egypt",
+   "tz": "Africa/Cairo",
+   "publisher": "Al Jazeera",
+   "title": "At least 30 killed in Egypt vehicle fire, health ministry says",
+   "url": "https://www.aljazeera.com/news/2026/11/25/at-least-30-killed-in-egypt-vehicle-fire-health-ministry-says",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Iraq's top court lets Baghdad take over Kurdish borders",
+   "b": "The ruling lets federal troops deploy to borders in the Kurdish region, a day after the prime minister ordered forces to take over Kurdish-run crossings and oil fields.",
+   "date": "2026-11-25",
+   "place": "Baghdad, Iraq",
+   "tz": "Asia/Baghdad",
+   "publisher": "Al Jazeera",
+   "title": "Iraq’s top court rules government can take over Kurdish borders, oil fields",
+   "url": "https://www.aljazeera.com/news/2026/11/25/iraqs-top-court-rules-government-can-take-over-kurdish-borders-oil-fields",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
    "h": "Solomon Islands bars foreign bases in Australia treaty",
    "b": "Solomon Islands signed a sweeping treaty with Australia affirming it will allow no foreign military bases, seen as a blow to China's regional ambitions.",
    "date": "2026-11-25",
    "place": "Canberra, Australia",
    "tz": "Australia/Sydney",
-   "publisher": "Al Jazeera",
-   "title": "Solomon Islands signs security deal with Australia",
    "url": "https://www.aljazeera.com/news/2026/11/25/solomon-islands-signs-security-deal-with-australia",
    "gathered": "2026-11-25T14:13:59Z"
   },
@@ -206,8 +268,6 @@
    "date": "2026-11-25",
    "place": "Brussels, Belgium",
    "tz": "Europe/Brussels",
-   "publisher": "Al Jazeera",
-   "title": "Catalan separatist Puigdemont to return to Spain on December 12",
    "url": "https://www.aljazeera.com/news/2026/11/25/catalan-separatist-puigdemont-to-return-to-spain-on-december",
    "gathered": "2026-11-25T14:13:59Z"
   },
@@ -217,8 +277,6 @@
    "date": "2026-11-25",
    "place": "Damazin, Sudan",
    "tz": "Africa/Khartoum",
-   "publisher": "Al Jazeera",
-   "title": "Sudan’s RSF kills at least 19 in drone attacks on Blue Nile state",
    "url": "https://www.aljazeera.com/news/2026/11/25/overnight-rsf-drone-attacks-kill-19-in-sudan",
    "gathered": "2026-11-25T14:13:59Z"
   },
@@ -228,8 +286,6 @@
    "date": "2026-11-25",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Israeli strike kills Hamas official, his wife and children",
    "url": "https://www.aljazeera.com/news/2026/11/25/israeli-strike-kills-hamas-official-his-wife-and-children",
    "gathered": "2026-11-25T14:13:59Z"
   },
@@ -302,10 +358,7 @@
    "date": "2026-11-24",
    "place": "Ottawa, Canada",
    "tz": "America/Toronto",
-   "publisher": "PBS NewsHour",
-   "title": "Pentagon sharply criticizes Canada over modernizing military",
    "url": "https://www.pbs.org/newshour/world/pentagon-sharply-criticizes-canada-over-modernizing-military",
-   "published": "2026-11-24T20:42:20Z",
    "gathered": "2026-11-25T00:58:44Z"
   },
   {
@@ -378,15 +431,6 @@
    "place": "London, England",
    "tz": "Europe/London",
    "url": "https://www.aljazeera.com/news/2026/11/24/heat-deaths-reach-record-high-in-uk-in-2026",
-   "gathered": "2026-11-24T16:09:41Z"
-  },
-  {
-   "h": "Iraq moves to take over Kurdish-held oilfields",
-   "b": "Prime Minister Ali al-Zaidi ordered the oil ministry to manage oilfields in Kurdish-controlled areas of Diyala, Kirkuk, Salahuddin and Nineveh provinces.",
-   "date": "2026-11-24",
-   "place": "Baghdad, Iraq",
-   "tz": "Asia/Baghdad",
-   "url": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control",
    "gathered": "2026-11-24T16:09:41Z"
   },
   {
@@ -491,6 +535,35 @@
  ],
  "business": [
   {
+   "h": "Trump administration plans new tariffs on China, EU and others",
+   "b": "The proposal adds 20% to tariffs on Chinese goods and raises them on the EU, Japan, South Korea, Taiwan and nine other trading partners.",
+   "date": "2026-11-25",
+   "publisher": "PBS NewsHour",
+   "title": "Trump administration to raise tariffs on China, EU, Brazil and others",
+   "url": "https://www.pbs.org/newshour/politics/trump-administration-to-raise-tariffs-on-china-eu-brazil-and-others",
+   "published": "2026-11-25T16:37:24Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Key inflation gauge rises to 3.8% in October",
+   "b": "The Commerce Department said consumer prices rose 3.8% from a year earlier, up from 3.6% in September, even as gas price increases slowed.",
+   "date": "2026-11-25",
+   "publisher": "PBS NewsHour",
+   "title": "Inflation remains stubbornly high, despite a drop in gas prices",
+   "url": "https://www.pbs.org/newshour/economy/inflation-remains-stubbornly-high-despite-a-drop-in-gas-prices",
+   "published": "2026-11-25T17:01:18Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Dollar Tree bets on wider range of products",
+   "b": "After strong quarterly earnings, the discount retailer says adding items above a dollar lets it offer more brands, price points and pack sizes.",
+   "date": "2026-11-25",
+   "publisher": "Marketplace",
+   "title": "Dollar Tree tries to attract more customers with the promise of one-stop shopping",
+   "url": "https://www.marketplace.org/story/2026/11/25/dollar-tree-tries-to-become-a-onestop-shop",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
    "h": "AI shopping agents can make costly mistakes",
    "b": "The NRF says 59% of shoppers plan to use AI this holiday weekend, but AI agents can hallucinate and work best when handed more personal data.",
    "date": "2026-11-25",
@@ -535,6 +608,8 @@
    "h": "Best Buy posts best growth in five years",
    "b": "Best Buy grew more than 6% in the third quarter, nearly triple estimates, as pandemic-era laptops and TVs wear out.",
    "date": "2026-11-24",
+   "publisher": "Marketplace",
+   "title": "Best Buy's best growth in five years",
    "url": "https://www.marketplace.org/story/2026/11/24/best-buys-big-third-quarter-is-its-best-in-five-years",
    "gathered": "2026-11-25T00:58:44Z"
   },
@@ -575,6 +650,35 @@
   }
  ],
  "science": [
+  {
+   "h": "Rare nearby supernova draws telescopes worldwide",
+   "b": "Astronomers caught type Ia supernova SN 2026ahvu before it peaked, giving an early look at how these stellar explosions work.",
+   "date": "2026-11-25",
+   "publisher": "Science News",
+   "title": "A cosmically close supernova may spill the stellar explosion’s secrets",
+   "url": "https://www.sciencenews.org/article/close-supernova-secrets-white-dwarf",
+   "published": "2026-11-25T17:00:00Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Australia's legless geckos evolved like snakes",
+   "b": "Researchers found the 50 species of pygopod geckos, from Australia and New Guinea, show diet and body diversity patterns that resemble snakes'.",
+   "date": "2026-11-25",
+   "publisher": "Science News",
+   "title": "Australia's legless geckos evolved like snakes did",
+   "url": "https://www.sciencenews.org/article/legless-geckos-evolved-like-snakes",
+   "published": "2026-11-25T15:00:00Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "FCC approves SpaceX plan for 1 million orbiting data centers",
+   "b": "The FCC authorized SpaceX to deploy 1,000,000 orbital compute modules, called Starmind, to meet growing demand for AI computing.",
+   "date": "2026-11-25",
+   "publisher": "Al Jazeera",
+   "title": "US grants SpaceX approval for 1 million space data centres",
+   "url": "https://www.aljazeera.com/news/2026/11/25/us-grants-spacex-approval-for-1-million-space-data-centres",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
   {
    "h": "Ancient grasshoppers may have walked on water",
    "b": "Leg hairs preserved in 99-million-year-old amber suggest a newfound family of grasshoppers could skate on surface tension like water striders.",
@@ -633,13 +737,53 @@
  ],
  "local": [
   {
+   "h": "Activists sue to stop Greenpoint waterfront towers",
+   "b": "Friends of Bushwick Inlet Park say the 1,300-unit Monitor Point project sits in a floodplain and relies on outdated climate projections.",
+   "date": "2026-11-25",
+   "publisher": "Gothamist",
+   "title": "Brooklyn environmentalists sue to block Greenpoint waterfront development",
+   "url": "https://gothamist.com/news/brooklyn-environmentalists-sue-to-block-greenpoint-waterfront-development",
+   "published": "2026-11-25T16:00:58Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Driver charged in killing of Brooklyn nurse",
+   "b": "Police say Justin Mercado ran a red light at 55 mph on Third Avenue in August, killing 28-year-old nurse Jiayi Zheng in a crosswalk.",
+   "date": "2026-11-25",
+   "publisher": "Gothamist",
+   "title": "Driver charged with killing Brooklyn nurse crossing Third Avenue",
+   "url": "https://gothamist.com/news/driver-charged-with-killing-brooklyn-nurse-crossing-3rd-avenue",
+   "published": "2026-11-25T19:55:56Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "High wind warning issued for Thanksgiving parade",
+   "b": "Winds will build overnight and peak Thursday afternoon, with up to 2 inches of rain and coastal flooding, putting the parade's balloons at risk.",
+   "date": "2026-11-25",
+   "publisher": "Gothamist",
+   "title": "Thanksgiving Day forecast upgraded to a high wind warning ahead of parade",
+   "url": "https://gothamist.com/news/thanksgiving-day-forecast-upgraded-to-a-high-wind-warning-ahead-of-parade",
+   "published": "2026-11-25T17:34:08Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
+   "h": "Judge upholds NYC rent freeze",
+   "b": "A Manhattan judge rejected landlords' bid to block the two-year rent freeze for about 1 million stabilized apartments, a win for Mayor Mamdani.",
+   "date": "2026-11-25",
+   "publisher": "Gothamist",
+   "title": "Judge upholds NYC rent freeze, marking win for Mamdani and his affordability agenda",
+   "url": "https://gothamist.com/news/judge-upholds-nyc-rent-freeze-marking-win-for-mamdani-and-his-affordability-agenda",
+   "published": "2026-11-25T18:49:00Z",
+   "gathered": "2026-11-25T20:03:08Z"
+  },
+  {
    "h": "NYPD seeks six after group exits Manhattan manhole",
    "b": "Police say five people climbed out of a sewer at 2nd Avenue and East 17th Street on Nov. 18 and left in a red sedan driven by a sixth.",
    "date": "2026-11-25",
    "publisher": "Gothamist",
    "title": "NYPD searches for 6 sewer spelunkers seen exiting a Manhattan manhole",
    "url": "https://gothamist.com/news/nypd-searches-for-6-sewer-spelunkers-seen-exiting-a-manhattan-manhole",
-   "published": "2026-11-25T13:31:04Z",
+   "published": "2026-11-25T13:31:00Z",
    "gathered": "2026-11-25T14:13:59Z"
   },
   {
@@ -669,8 +813,7 @@
    "publisher": "Gothamist",
    "title": "NYC Council looks for colleges to testify about sexual assault procedures",
    "url": "https://gothamist.com/news/nyc-council-looks-for-colleges-to-testify-about-sexual-assault-procedures",
-   "published": "2026-11-24T21:39:00Z",
-   "updated": "2026-11-24T22:20:00Z",
+   "published": "2026-11-24T22:20:00Z",
    "gathered": "2026-11-25T00:58:44Z"
   },
   {
@@ -682,16 +825,6 @@
    "url": "https://gothamist.com/news/nyc-panel-set-to-vote-on-8-billion-queens-casino-design-monday-dek-the-vote-comes-after-commissioners-raised-concerns-last-month-about-how-the-sprawling-complex-near-citi-field",
    "published": "2026-11-24T22:30:00Z",
    "gathered": "2026-11-25T00:58:44Z"
-  },
-  {
-   "h": "Wind threatens Macy's parade balloons",
-   "b": "Forecasters expect rain and winds gusting to 60 mph on Thanksgiving, which could affect the 100th parade's balloons.",
-   "date": "2026-11-24",
-   "publisher": "Gothamist",
-   "title": "Goodbye Kitty: Preparation underway for a windy Macy's Thanksgiving Day Parade in NYC",
-   "url": "https://gothamist.com/news/goodbye-kitty-preparation-underway-for-a-windy-macys-thanksgiving-day-parade-in-nyc",
-   "published": "2026-11-24T19:27:03Z",
-   "gathered": "2026-11-24T20:11:42Z"
   },
   {
    "h": "Body shop owner charged in tow truck scheme",
@@ -736,48 +869,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 38,
+   "temp": 43,
    "cond": "Fair",
-   "wind": "NE 8 mph",
-   "humidity": 52,
-   "obs": "25 Nov 08:51 am EST"
+   "wind": "NE 9 mph",
+   "humidity": 58,
+   "obs": "25 Nov 14:51 pm EST"
   },
   "periods": [
    {
-    "name": "Today",
-    "kind": "high",
-    "temp": 50,
-    "text": "Mostly cloudy, with a high near 50. Northeast wind around 11 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 46,
-    "text": "Cloudy, with a low around 46. Breezy, with a northeast wind 13 to 22 mph. "
+    "temp": 47,
+    "text": "Cloudy, with a low around 47. Breezy, with a northeast wind 14 to 24 mph. "
    },
    {
     "name": "Thanksgiving Day",
     "kind": "high",
     "temp": 60,
-    "text": "Rain, mainly after 10am.  High near 60. Windy, with a northeast wind 25 to 30 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+    "text": "Rain. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 28 to 34 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
     "temp": 56,
-    "text": "Rain.  Temperature rising to around 60 by 3am. Windy, with an east wind 23 to 28 mph becoming south 17 to 22 mph after midnight. Winds could gust as high as 46 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+    "text": "Rain, mainly before 1am.  Temperature rising to around 60 by 3am. Windy, with an east wind 29 to 34 mph becoming southeast 17 to 22 mph after midnight. Winds could gust as high as 49 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
     "temp": 58,
-    "text": "Rain likely, mainly after 1pm.  Mostly cloudy, with a temperature falling to around 53 by 4pm. Southwest wind around 18 mph, with gusts as high as 29 mph.  Chance of precipitation is 60%."
+    "text": "A 50 percent chance of showers.  Mostly cloudy, with a temperature falling to around 54 by 4pm. Breezy, with a south wind 17 to 20 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Mostly cloudy, with a low around 48."
+    "temp": 52,
+    "text": "Mostly cloudy, with a steady temperature around 52. West wind around 18 mph. "
+   },
+   {
+    "name": "Saturday",
+    "kind": "high",
+    "temp": 55,
+    "text": "Mostly sunny, with a high near 55."
    }
   ]
  },
@@ -789,7 +922,7 @@
    "publisher": "Gothamist",
    "title": "Queens drivers give thanks as Van Wyck work wraps ahead of busy season at JFK Airport",
    "url": "https://gothamist.com/news/queens-drivers-give-thanks-as-van-wyck-work-wraps-ahead-of-busy-season-at-jfk-airport",
-   "published": "2026-11-25T11:00:59Z",
+   "published": "2026-11-25T11:00:00Z",
    "gathered": "2026-11-25T11:12:31Z"
   },
   {
