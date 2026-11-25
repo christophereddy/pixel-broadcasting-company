@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T11:12:00Z",
+ "updatedAt": "2026-11-25T14:13:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -35,8 +35,6 @@
    "h": "Kilmar Abrego Garcia self-deports to Spain",
    "b": "Abrego Garcia, wrongfully deported to El Salvador last year, left voluntarily after months fighting a second deportation to Africa.",
    "date": "2026-11-25",
-   "publisher": "Al Jazeera",
-   "title": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
    "url": "https://www.aljazeera.com/news/2026/11/25/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us-legal-battle",
    "gathered": "2026-11-25T10:12:35Z"
   },
@@ -192,13 +190,44 @@
  ],
  "international": [
   {
+   "h": "Two Libyan officers die after drone strike on Russian ship",
+   "b": "Eastern Libyan forces said two naval officers died of wounds from Ukraine's drone attack on a Russian warship near Benghazi.",
+   "date": "2026-11-25",
+   "place": "Benghazi, Libya",
+   "tz": "Africa/Tripoli",
+   "publisher": "Al Jazeera",
+   "title": "Two Libyan soldiers die after Ukraine attack on Russian vessel",
+   "url": "https://www.aljazeera.com/news/2026/11/25/two-libyan-soldiers-die-after-ukraine-attack-on-russian-vessel",
+   "gathered": "2026-11-25T11:12:31Z"
+  },
+  {
+   "h": "Saudi Arabia downs Houthi drones",
+   "b": "Saudi air defenses destroyed four drones over Ras Tanura, a day after a coalition air strike on Hodeidah; no casualties were initially reported.",
+   "date": "2026-11-25",
+   "place": "Ras Tanura, Saudi Arabia",
+   "tz": "Asia/Riyadh",
+   "publisher": "Al Jazeera",
+   "title": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike",
+   "url": "https://www.aljazeera.com/news/2026/11/25/saudi-led-coalition-intercepts-houthi-attacks-after-hodeidah-strike",
+   "gathered": "2026-11-25T11:12:31Z"
+  },
+  {
+   "h": "Dozens feared trapped in flooded Indonesia mine",
+   "b": "Rescuers are searching for workers trapped after an overflowing river flooded an unauthorized open-pit gold mine in West Java's Bogor district.",
+   "date": "2026-11-25",
+   "place": "Bogor, Indonesia",
+   "tz": "Asia/Jakarta",
+   "publisher": "Al Jazeera",
+   "title": "Rescuers search for dozens trapped in flooded Indonesia gold mine",
+   "url": "https://www.aljazeera.com/news/2026/11/25/rescuers-search-for-dozens-trapped-in-flooded-indonesia-gold-mine",
+   "gathered": "2026-11-25T11:12:31Z"
+  },
+  {
    "h": "UK warns firms of Russian sabotage threat",
    "b": "The Defence Ministry and security officials warned companies supplying Ukraine's military that they could be targets of Russian sabotage.",
    "date": "2026-11-25",
    "place": "London, England",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK warns companies of potential Russian sabotage threat",
    "url": "https://www.aljazeera.com/news/2026/11/25/uk-warns-companies-of-potential-russian-sabotage-threat",
    "gathered": "2026-11-25T10:12:35Z"
   },
@@ -219,8 +248,6 @@
    "date": "2026-11-25",
    "place": "Jerusalem",
    "tz": "Asia/Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Israel’s Eisenkot secures first coalition partner in bid to form government",
    "url": "https://www.aljazeera.com/news/2026/11/25/israels-eisenkot-secures-first-coalition-partner-in-bid-to-form-government",
    "gathered": "2026-11-25T05:12:06Z"
   },
@@ -230,8 +257,6 @@
    "date": "2026-11-25",
    "place": "Havana, Cuba",
    "tz": "America/Havana",
-   "publisher": "Al Jazeera",
-   "title": "WHO chief urges end to US fuel blockade on Cuba",
    "url": "https://www.aljazeera.com/news/2026/11/25/who-chief-urges-end-to-us-fuel-blockade-on-cuba",
    "gathered": "2026-11-25T05:12:06Z"
   },
@@ -442,8 +467,6 @@
    "h": "Asian markets dive on AI doubts",
    "b": "Asian stocks fell sharply, reversing a rally sparked by Jensen Huang's return as Nvidia CEO.",
    "date": "2026-11-25",
-   "publisher": "Al Jazeera",
-   "title": "Asia’s markets dive as return of Nvidia’s Huang fails to quell AI doubts",
    "url": "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom",
    "gathered": "2026-11-25T10:12:35Z"
   },
@@ -551,11 +574,7 @@
    "h": "Senegal gets Africa Cup title back",
    "b": "The Court of Arbitration for Sport overturned a ruling that had handed the Africa Cup of Nations trophy to Morocco after Senegal's players walked off.",
    "date": "2026-11-25",
-   "publisher": "KUOW",
-   "title": "Africa Cup title given back to Senegal after sports court rules against Morocco",
    "url": "https://www.kuow.org/npr-news/2026-11-24/africa-cup-title-given-back-to-senegal-after-sports-court-rules-against-morocco",
-   "published": "2026-11-25T06:43:23Z",
-   "updated": "2026-11-25T06:47:34Z",
    "gathered": "2026-11-25T10:12:35Z"
   }
  ],
@@ -657,9 +676,9 @@
   "now": {
    "temp": 35,
    "cond": "Fair",
-   "wind": "W 3 mph, gusts to 20 mph",
-   "humidity": 57,
-   "obs": "25 Nov 04:51 am EST"
+   "wind": "W 7 mph",
+   "humidity": 54,
+   "obs": "25 Nov 05:51 am EST"
   },
   "periods": [
    {
@@ -701,6 +720,16 @@
   ]
  },
  "localgood": [
+  {
+   "h": "Van Wyck expansion wraps before Thanksgiving",
+   "b": "The state finished the six-year, $1.4 billion project adding lanes and ramps and fixing 23 bridges on the road to JFK.",
+   "date": "2026-11-25",
+   "publisher": "Gothamist",
+   "title": "Queens drivers give thanks as Van Wyck work wraps ahead of busy season at JFK Airport",
+   "url": "https://gothamist.com/news/queens-drivers-give-thanks-as-van-wyck-work-wraps-ahead-of-busy-season-at-jfk-airport",
+   "published": "2026-11-25T11:00:59Z",
+   "gathered": "2026-11-25T11:12:31Z"
+  },
   {
    "h": "Cataloguing hidden fungi under Green-Wood",
    "b": "Green-Wood Cemetery fellows are sifting soil to catalogue potentially thousands of unknown fungus species.",

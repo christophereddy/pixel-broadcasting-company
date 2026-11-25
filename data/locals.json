@@ -42,18 +42,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 48,
     "cond": "Overcast and Breezy",
-    "wind": "E 21 mph, gusts to 31 mph",
-    "humidity": 43,
-    "obs": "25 Nov 04:52 am EST"
+    "wind": "E 23 mph",
+    "humidity": 48,
+    "obs": "25 Nov 05:52 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 50,
-     "text": "A 30 percent chance of showers, mainly after 4pm.  Mostly cloudy, with a high near 50. East wind around 15 mph, with gusts as high as 30 mph. "
+     "text": "A 30 percent chance of showers, mainly after 4pm.  Mostly cloudy, with a high near 50. East wind around 15 mph, with gusts as high as 35 mph. "
     },
     {
      "name": "Tonight",
@@ -99,7 +99,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -155,10 +155,10 @@
   "weather": {
    "now": {
     "temp": 31,
-    "cond": "Fair",
-    "wind": "NW 10 mph",
-    "humidity": 56,
-    "obs": "25 Nov 04:54 am EST"
+    "cond": "A Few Clouds",
+    "wind": "NW 9 mph",
+    "humidity": 59,
+    "obs": "25 Nov 05:54 am EST"
    },
    "periods": [
     {
@@ -211,7 +211,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -232,6 +232,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Uptown's history as a Native American hub",
+    "b": "In the mid-20th century, Native Americans built a cultural enclave in Uptown anchored by community centers, WBEZ's Curious City explains.",
+    "date": "2026-11-25",
+    "publisher": "WBEZ",
+    "title": "Uptown was once a vibrant hub for Chicago’s Native American community",
+    "url": "https://www.wbez.org/curious-city/2026/11/25/uptown-was-once-a-vibrant-hub-for-chicagos-native-american-community",
+    "published": "2026-11-25T11:00:00Z",
+    "updated": "2026-11-25T11:00:01Z",
+    "gathered": "2026-11-25T11:12:31Z"
+   },
    {
     "h": "Tasa Coffee Roasters posts 'permanently closed'",
     "b": "The West Humboldt Park shop posted the sign after workers walked out over a viral post alleging ties to ICE.",
@@ -273,9 +284,9 @@
    "now": {
     "temp": 34,
     "cond": "Overcast",
-    "wind": "E 9 mph",
-    "humidity": 59,
-    "obs": "25 Nov 03:53 am CST"
+    "wind": "E 3 mph",
+    "humidity": 64,
+    "obs": "25 Nov 04:53 am CST"
    },
    "periods": [
     {
@@ -328,7 +339,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -360,27 +371,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 33,
+    "temp": 35,
     "cond": "A Few Clouds",
-    "wind": "S 8 mph",
-    "humidity": 34,
-    "obs": "25 Nov 01:58 am MST"
+    "wind": "SE 6 mph",
+    "humidity": 29,
+    "obs": "25 Nov 02:58 am MST"
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 26,
-     "text": "Clear, with a low around 26. Light southwest wind. "
-    },
-    {
-     "name": "Wednesday",
+     "name": "Today",
      "kind": "high",
      "temp": 53,
-     "text": "Sunny, with a high near 53. South wind around 5 mph becoming light and variable. "
+     "text": "Sunny, with a high near 53. Light and variable wind becoming south around 5 mph in the afternoon. "
     },
     {
-     "name": "Wednesday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 27,
      "text": "Increasing clouds, with a low around 27. Calm wind. "
@@ -401,7 +406,13 @@
      "name": "Friday",
      "kind": "high",
      "temp": 63,
-     "text": "Mostly sunny, with a high near 63."
+     "text": "Mostly sunny, with a high near 63. Southwest wind 6 to 8 mph becoming northwest in the afternoon. Winds could gust as high as 16 mph. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 38,
+     "text": "Partly cloudy, with a low around 38."
     }
    ]
   },
@@ -417,7 +428,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -514,18 +525,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "wind": "N 1 mph",
-    "humidity": 43,
-    "obs": "25 Nov 01:20 AM PST"
+    "temp": 55,
+    "wind": "Calm",
+    "humidity": 57,
+    "obs": "25 Nov 03:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 52,
-     "text": "Mostly cloudy, with a low around 52. North wind around 5 mph. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -555,6 +560,12 @@
      "kind": "high",
      "temp": 84,
      "text": "Mostly sunny, with a high near 84."
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 56,
+     "text": "Mostly cloudy, with a low around 56."
     }
    ]
   },
@@ -570,7 +581,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -667,9 +678,9 @@
    "now": {
     "temp": 35,
     "cond": "Fair",
-    "wind": "W 3 mph, gusts to 20 mph",
-    "humidity": 57,
-    "obs": "25 Nov 04:51 am EST"
+    "wind": "W 7 mph",
+    "humidity": 54,
+    "obs": "25 Nov 05:51 am EST"
    },
    "periods": [
     {
@@ -722,9 +733,19 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "new-york-city",
   "goodnews": [
+   {
+    "h": "Van Wyck expansion wraps before Thanksgiving",
+    "b": "The state finished the six-year, $1.4 billion project adding lanes and ramps and fixing 23 bridges on the road to JFK.",
+    "date": "2026-11-25",
+    "publisher": "Gothamist",
+    "title": "Queens drivers give thanks as Van Wyck work wraps ahead of busy season at JFK Airport",
+    "url": "https://gothamist.com/news/queens-drivers-give-thanks-as-van-wyck-work-wraps-ahead-of-busy-season-at-jfk-airport",
+    "published": "2026-11-25T11:00:59Z",
+    "gathered": "2026-11-25T11:12:31Z"
+   },
    {
     "h": "Cataloguing hidden fungi under Green-Wood",
     "b": "Green-Wood Cemetery fellows are sifting soil to catalogue potentially thousands of unknown fungus species.",
@@ -798,17 +819,13 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "goodnews": [
    {
     "h": "Stranded cargo ship refloated in Landes",
     "b": "The Malta-flagged Miro G was towed back out to sea to the applause of several hundred onlookers.",
     "date": "2026-11-25",
-    "publisher": "The Local France",
-    "title": "Stranded cargo vessel off southwest France refloated",
     "url": "https://www.thelocal.fr/20261125/stranded-cargo-vessel-off-southwest-france-refloated",
-    "published": "2026-11-25T07:45:00Z",
-    "updated": "2026-11-25T07:45:01Z",
     "gathered": "2026-11-25T10:12:35Z"
    },
    {
@@ -873,18 +890,12 @@
   "weather": {
    "now": {
     "temp": 54,
-    "cond": "Mostly Cloudy",
+    "cond": "Overcast",
     "wind": "SE 11 mph",
-    "humidity": 62,
-    "obs": "25 Nov 01:55 AM PST"
+    "humidity": 66,
+    "obs": "25 Nov 02:55 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 49,
-     "text": "Rain, mainly after 4am.  Low around 49. South southeast wind 11 to 13 mph, with gusts as high as 23 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Wednesday",
      "kind": "high",
@@ -914,6 +925,12 @@
      "kind": "high",
      "temp": 50,
      "text": "Rain.  High near 50. Chance of precipitation is 80%. New precipitation amounts between a quarter and half of an inch possible. "
+    },
+    {
+     "name": "Friday Night",
+     "kind": "low",
+     "temp": 43,
+     "text": "Rain likely, mainly before 10pm.  Mostly cloudy, with a low around 43. Chance of precipitation is 70%."
     }
    ]
   },
@@ -929,7 +946,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T11:12:00Z",
+  "updatedAt": "2026-11-25T14:13:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
