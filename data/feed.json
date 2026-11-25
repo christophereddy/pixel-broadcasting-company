@@ -1,11 +1,20 @@
 {
- "updatedAt": "2026-11-25T02:12:00Z",
+ "updatedAt": "2026-11-25T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
   "tz": "America/New_York"
  },
  "world": [
+  {
+   "h": "LIVE: Houthis threaten Saudi ports",
+   "b": "The Houthis are threatening Saudi ports over the coalition's Hodeidah evacuation order. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
+   "date": "2026-11-25",
+   "publisher": "Al Jazeera",
+   "title": "Houthis threaten Saudi ports over coalition’s Hodeidah evacuation order",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order",
+   "gathered": "2026-11-25T02:12:59Z"
+  },
   {
    "h": "Landmine casualties hit five-year high",
    "b": "The International Campaign to Ban Landmines recorded 6,929 casualties in 2025, 84% of them civilians, driven largely by Myanmar's civil war.",
@@ -19,18 +28,19 @@
    "date": "2026-11-24",
    "url": "https://www.aljazeera.com/news/2026/11/24/five-women-killed-every-hour-globally-by-partner-relative-in-2025-un",
    "gathered": "2026-11-24T17:12:56Z"
-  },
-  {
-   "h": "LIVE: Three ships catch fire after hitting Hormuz mines",
-   "b": "Iran says three tankers caught fire after hitting naval mines in the Strait of Hormuz. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-24",
-   "publisher": "Al Jazeera",
-   "title": "Iran war updates: Saudi-led coalition orders evacuation of Hodeidah Port",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines",
-   "gathered": "2026-11-24T04:54:32Z"
   }
  ],
  "national": [
+  {
+   "h": "Alaska ends voter records deal with DOJ",
+   "b": "Lt. Gov. Nancy Dahlstrom withdrew Alaska from a 2025 agreement giving the Justice Department access to state voter rolls.",
+   "date": "2026-11-25",
+   "place": "Alaska",
+   "publisher": "Al Jazeera",
+   "title": "Alaska ends deal to give voter records to US Justice Department",
+   "url": "https://www.aljazeera.com/news/2026/11/25/alaska-ends-deal-to-give-voter-records-to-us-justice-department",
+   "gathered": "2026-11-25T02:12:59Z"
+  },
   {
    "h": "Iran suspected in hacks of up to 50 ships",
    "b": "US officials are investigating cyberattacks that compromised as many as 50 commercial vessels as potentially linked to Iran.",
@@ -116,6 +126,15 @@
   }
  ],
  "politics": [
+  {
+   "h": "Poll: Most voters want Iran war ended now",
+   "b": "A new poll finds a majority of US voters want the war on Iran to end immediately, even on less favorable terms.",
+   "date": "2026-11-25",
+   "publisher": "Al Jazeera",
+   "title": "Poll finds US voters want government to end Iran war regardless of terms",
+   "url": "https://www.aljazeera.com/news/2026/11/25/poll-finds-us-voters-want-government-to-end-iran-war-regardless-of-terms",
+   "gathered": "2026-11-25T02:12:59Z"
+  },
   {
    "h": "Blanche won't say if Huang was investigated",
    "b": "Attorney General Todd Blanche declined to say whether the Justice Department investigated Nvidia's Jensen Huang.",
@@ -495,6 +514,16 @@
  ],
  "local": [
   {
+   "h": "Boy, 4, dies in New Jersey house fire",
+   "b": "A 4-year-old boy died and two people were injured in a house fire Tuesday in Union Township, near Newark.",
+   "date": "2026-11-24",
+   "publisher": "Gothamist",
+   "title": "4-year-old boy dies, 2 others injured in NJ house fire",
+   "url": "https://gothamist.com/news/4-year-old-boy-dies-2-others-injured-in-nj-house-fire",
+   "published": "2026-11-25T01:46:00Z",
+   "gathered": "2026-11-25T02:12:59Z"
+  },
+  {
    "h": "Council summons colleges on sexual assault",
    "b": "The City Council wants presidents of the 10 largest colleges to testify under oath Dec. 8 about handling campus sexual assaults.",
    "date": "2026-11-24",
@@ -568,11 +597,11 @@
  ],
  "weather": {
   "now": {
-   "temp": 42,
+   "temp": 41,
    "cond": "Fair",
-   "wind": "N 8 mph",
-   "humidity": 40,
-   "obs": "24 Nov 19:51 pm EST"
+   "wind": "W 3 mph",
+   "humidity": 39,
+   "obs": "24 Nov 20:51 pm EST"
   },
   "periods": [
    {
