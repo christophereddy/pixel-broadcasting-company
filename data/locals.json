@@ -61,12 +61,6 @@
    },
    "periods": [
     {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 50,
-     "text": "Showers likely, mainly after 5pm.  Cloudy, with a high near 50. Northeast wind around 15 mph, with gusts as high as 35 mph.  Chance of precipitation is 60%."
-    },
-    {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
@@ -95,6 +89,12 @@
      "kind": "low",
      "temp": 34,
      "text": "Partly cloudy, with a low around 34."
+    },
+    {
+     "name": "Saturday",
+     "kind": "high",
+     "temp": 59,
+     "text": "Sunny, with a high near 59."
     }
    ]
   },
@@ -110,7 +110,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -257,7 +257,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -399,7 +399,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -499,7 +499,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -618,9 +618,9 @@
   "weather": {
    "now": {
     "temp": 74,
-    "wind": "SE 2 mph",
-    "humidity": 26,
-    "obs": "25 Nov 11:55 AM PST"
+    "wind": "S 1 mph",
+    "humidity": 25,
+    "obs": "25 Nov 12:00 PM PST"
    },
    "periods": [
     {
@@ -673,7 +673,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -874,7 +874,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -967,7 +967,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "goodnews": [
    {
     "h": "Stranded cargo ship refloated in Landes",
@@ -1039,9 +1039,9 @@
    "now": {
     "temp": 61,
     "cond": "Overcast",
-    "wind": "S 12 mph",
-    "humidity": 53,
-    "obs": "25 Nov 11:53 AM PST"
+    "wind": "S 9 mph",
+    "humidity": 55,
+    "obs": "25 Nov 12:00 PM PST"
    },
    "periods": [
     {
@@ -1094,7 +1094,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-25T20:12:00Z",
+  "updatedAt": "2026-11-25T23:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
