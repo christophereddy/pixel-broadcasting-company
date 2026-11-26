@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T17:11:00Z",
+ "updatedAt": "2026-11-26T20:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "An explosion hit Yemen's capital as Houthi missiles were intercepted over Riyadh. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-26",
    "publisher": "Al Jazeera",
-   "title": "Kuwait says 4 injured by shrapnel during Iran drone attack on ‘vital site’",
+   "title": "Kuwait says 2 Italians killed by falling debris during drone attack",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -76,15 +76,25 @@
  ],
  "national": [
   {
-   "h": "Storms snarl Thanksgiving travel on both coasts",
-   "b": "Tens of millions face airport and highway delays; high tides flooded California streets and damaged Pacifica Pier as an East Coast storm moves north.",
+   "h": "King tides and waves destroy part of Pacifica pier",
+   "b": "A massive wave tore down a section of the already-closed Northern California pier as beachfront homes began flooding.",
+   "date": "2026-11-25",
+   "place": "Pacifica, California",
+   "publisher": "PBS NewsHour",
+   "title": "King tides and strong waves destroy part of Pacifica pier as officials warn of coastal flooding",
+   "url": "https://www.pbs.org/newshour/nation/king-tides-and-strong-waves-destroy-part-of-pacifica-pier-as-officials-warn-of-coastal-flooding",
+   "published": "2026-11-26T15:41:49Z",
+   "gathered": "2026-11-26T17:12:01Z"
+  },
+  {
+   "h": "Rain, wind and flooding hit much of US on Thanksgiving",
+   "b": "An East Coast storm postponed Macy's 100th parade to Saturday, while king tides brought flood warnings out West.",
    "date": "2026-11-26",
-   "publisher": "KUOW",
-   "title": "Powerful storms disrupt holiday travel, as Macy's Thanksgiving Day Parade is postponed",
-   "url": "https://www.kuow.org/npr-news/2026-11-26/powerful-storms-disrupt-holiday-travel-as-macys-thanksgiving-day-parade-is-postponed",
-   "published": "2026-11-26T09:43:27Z",
-   "updated": "2026-11-26T10:39:03Z",
-   "gathered": "2026-11-26T12:59:53Z"
+   "publisher": "PBS NewsHour",
+   "title": "Thanksgiving holiday plagued by heavy rain, wind and flooding across much of the U.S.",
+   "url": "https://www.pbs.org/newshour/nation/thanksgiving-holiday-plagued-by-heavy-rain-wind-and-flooding-across-much-of-the-u-s",
+   "published": "2026-11-26T15:18:40Z",
+   "gathered": "2026-11-26T17:12:01Z"
   },
   {
    "h": "Judge blocks FCC review of ABC station licenses",
@@ -110,10 +120,7 @@
    "h": "Ábrego García leaves for Spain, hopes to return",
    "b": "The Salvadoran man mistakenly deported in 2025 arrived in Madrid on what his lawyer called a temporary departure, hoping to rejoin his family in Maryland.",
    "date": "2026-11-25",
-   "publisher": "PBS NewsHour",
-   "title": "Ábrego García, a Salvadoran mistakenly deported by U.S., goes to Spain but hopes to return after Trump",
    "url": "https://www.pbs.org/newshour/politics/abrego-garcia-a-salvadoran-mistakenly-deported-by-u-s-goes-to-spain-but-hopes-to-return-after-trump",
-   "published": "2026-11-25T22:30:20Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
@@ -152,6 +159,16 @@
  ],
  "politics": [
   {
+   "h": "Trump calls GDP figures 'fake,' seeks investigation",
+   "b": "He accused the Commerce Department of issuing incorrect growth figures before the midterms, after it revised third-quarter GDP up to 4.3%.",
+   "date": "2026-11-26",
+   "publisher": "PBS NewsHour",
+   "title": "Trump calls GDP figures 'fake' and demands an investigation of Commerce Department",
+   "url": "https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department",
+   "published": "2026-11-26T16:36:06Z",
+   "gathered": "2026-11-26T17:12:01Z"
+  },
+  {
    "h": "Trump open to meeting El-Sayed on Medicare for All",
    "b": "Weeks after attacking him on the campaign trail, Trump says he will meet the incoming Democratic senator to discuss a national healthcare program.",
    "date": "2026-11-26",
@@ -169,20 +186,14 @@
    "h": "Judge orders Fulton County to give 2020 records to state board",
    "b": "A Fulton County judge ordered a digital copy of ballots and records seized by the FBI delivered to Georgia's State Election Board, under a protective order.",
    "date": "2026-11-25",
-   "publisher": "PBS NewsHour",
-   "title": "Georgia's Fulton County ordered to give copy of 2020 election records seized by FBI to state board",
    "url": "https://www.pbs.org/newshour/politics/georgias-fulton-county-ordered-to-give-copy-of-2020-election-records-seized-by-fbi-to-state-board",
-   "published": "2026-11-25T22:48:11Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
    "h": "Alaska ends voter data deal with Justice Department",
    "b": "Lt. Gov. Nancy Dahlstrom ended the agreement to share the voter list, saying the department never flagged any potentially ineligible voters.",
    "date": "2026-11-25",
-   "publisher": "PBS NewsHour",
-   "title": "Alaska ends voter data agreement with Justice Department, which had been searching for noncitizens",
    "url": "https://www.pbs.org/newshour/politics/alaska-ends-voter-data-agreement-with-justice-department-which-had-been-searching-for-noncitizens",
-   "published": "2026-11-25T22:53:33Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
@@ -234,7 +245,7 @@
    "place": "Gaza",
    "tz": "Asia/Gaza",
    "publisher": "Al Jazeera",
-   "title": "Israeli attacks on Gaza kill senior education official, eight other people",
+   "title": "Israeli attacks on Gaza kill senior education official, nine other people",
    "url": "https://www.aljazeera.com/news/2026/11/26/israeli-attacks-on-gaza-kill-senior-education-official-seven-other-people",
    "gathered": "2026-11-26T12:59:53Z"
   },
@@ -264,8 +275,6 @@
    "date": "2026-11-26",
    "place": "Bogor, Indonesia",
    "tz": "Asia/Jakarta",
-   "publisher": "Al Jazeera",
-   "title": "At least 13 dead in Indonesia gold mine flood as rescue efforts intensify",
    "url": "https://www.aljazeera.com/news/2026/11/26/at-least-13-dead-in-indonesia-gold-mine-flood-as-rescue-efforts-intensify",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -560,6 +569,16 @@
  ],
  "local": [
   {
+   "h": "State boosts sobriety checkpoints for Thanksgiving weekend",
+   "b": "Gov. Hochul announced extra patrols through Sunday targeting drunk and reckless drivers.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "New York State and local police out at sobriety checkpoints all Thanksgiving weekend long",
+   "url": "https://gothamist.com/news/new-york-state-and-local-police-out-at-sobriety-checkpoints-all-thanksgiving-weekend-long",
+   "published": "2026-11-26T16:20:52Z",
+   "gathered": "2026-11-26T17:12:01Z"
+  },
+  {
    "h": "Bill would let crash victims track NYPD investigations online",
    "b": "A City Council proposal would require a secure site showing case status, summonses, arrests and witnesses for victims of serious crashes.",
    "date": "2026-11-26",
@@ -664,35 +683,35 @@
  "weather": {
   "now": {
    "temp": 43,
-   "cond": "Overcast and Breezy",
-   "wind": "NE 21 mph, gusts to 37 mph",
-   "humidity": 76,
-   "obs": "26 Nov 08:51 am EST"
+   "cond": "Rain Fog/Mist",
+   "wind": "NE 20 mph, gusts to 39 mph",
+   "humidity": 86,
+   "obs": "26 Nov 11:51 am EST"
   },
   "periods": [
    {
     "name": "Thanksgiving Day",
     "kind": "high",
-    "temp": 60,
-    "text": "Rain, mainly after 10am. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 29 to 32 mph, with gusts as high as 60 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+    "temp": 53,
+    "text": "Rain. The rain could be heavy at times.  High near 53. Windy, with a northeast wind 30 to 33 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
    },
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 54,
-    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 60 by midnight. Windy, with a northeast wind 28 to 33 mph becoming east 14 to 19 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+    "temp": 50,
+    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 59 by 11pm. Windy, with a northeast wind 28 to 33 mph becoming east 14 to 19 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 57,
-    "text": "A 40 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a temperature falling to around 54 by 3pm. Breezy, with a south wind 17 to 21 mph. "
+    "temp": 58,
+    "text": "A 40 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a temperature falling to around 51 by 4pm. Breezy, with a south wind 17 to 21 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 48,
-    "text": "Mostly cloudy, with a low around 48. Breezy, with a west wind 18 to 20 mph. "
+    "temp": 52,
+    "text": "Mostly cloudy, with a steady temperature around 52. Breezy, with a west wind 18 to 20 mph. "
    },
    {
     "name": "Saturday",
