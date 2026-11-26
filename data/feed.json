@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T20:11:00Z",
+ "updatedAt": "2026-11-26T23:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,17 +11,35 @@
    "b": "An explosion hit Yemen's capital as Houthi missiles were intercepted over Riyadh. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-26",
    "publisher": "Al Jazeera",
-   "title": "Kuwait says 2 Italians killed by falling debris during drone attack",
+   "title": "Iran denies carrying out drone attack that killed two Italians in Kuwait",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh",
    "gathered": "2026-11-26T08:15:21Z"
+  },
+  {
+   "h": "Strike on Saudi Jazan refinery kills worker",
+   "b": "Saudi Arabia said a projectile hit the Red Sea refinery, starting a fire; the Saudi-led coalition blamed Yemen's Houthis.",
+   "date": "2026-11-26",
+   "place": "Jazan, Saudi Arabia",
+   "publisher": "Al Jazeera",
+   "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
+   "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
+  {
+   "h": "Egypt detains driver over Cairo tanker fire that killed 31",
+   "b": "Prosecutors ordered a 21-year-old held over the ring-road collision that overturned a fuel tanker, and sent him for drug tests.",
+   "date": "2026-11-26",
+   "place": "Giza, Egypt",
+   "publisher": "Al Jazeera",
+   "title": "Egypt detains driver over Cairo fuel tanker fire that killed 31",
+   "url": "https://www.aljazeera.com/news/2026/11/26/egypt-detains-driver-over-cairo-fuel-tanker-fire-that-killed-31",
+   "gathered": "2026-11-26T22:29:57Z"
   },
   {
    "h": "DR Congo Ebola cases pass 12,000 as fighting disrupts response",
    "b": "Response workers have been forced out of affected areas as clashes intensify in eastern Congo's Ituri province, officials said.",
    "date": "2026-11-26",
    "place": "Ituri, DR Congo",
-   "publisher": "Al Jazeera",
-   "title": "DR Congo Ebola cases surpass 12,000 as fighting disrupts response in east",
    "url": "https://www.aljazeera.com/news/2026/11/26/dr-congo-ebola-cases-surpass-12000-as-fighting-disrupts-response-in-east",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -50,14 +68,6 @@
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
-   "h": "Fuel truck fire kills at least 30 on Cairo ring road",
-   "b": "A vehicle carrying petroleum products overturned and caught fire above a tunnel in Giza's Warraq district, Egypt's health ministry said; 15 were injured.",
-   "date": "2026-11-25",
-   "place": "Giza, Egypt",
-   "url": "https://www.aljazeera.com/news/2026/11/25/at-least-30-killed-in-egypt-vehicle-fire-health-ministry-says",
-   "gathered": "2026-11-25T20:03:08Z"
-  },
-  {
    "h": "Iraq's top court lets Baghdad take over Kurdish borders",
    "b": "The ruling lets federal troops deploy to borders in the Kurdish region, a day after the prime minister ordered forces to take over Kurdish-run crossings and oil fields.",
    "date": "2026-11-25",
@@ -76,24 +86,27 @@
  ],
  "national": [
   {
+   "h": "Judge strikes down Trump's birthright citizenship limits",
+   "b": "Judge Christopher Cooper ruled that the US-born children the administration targeted are under US jurisdiction and guaranteed citizenship.",
+   "date": "2026-11-26",
+   "publisher": "Al Jazeera",
+   "title": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
+   "url": "https://www.aljazeera.com/news/2026/11/26/judge-strikes-down-trumps-latest-restrictions-on-us-birthright-citizenship",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
+  {
    "h": "King tides and waves destroy part of Pacifica pier",
    "b": "A massive wave tore down a section of the already-closed Northern California pier as beachfront homes began flooding.",
    "date": "2026-11-26",
    "place": "Pacifica, California",
-   "publisher": "PBS NewsHour",
-   "title": "King tides and strong waves destroy part of Pacifica pier as officials warn of coastal flooding",
    "url": "https://www.pbs.org/newshour/nation/king-tides-and-strong-waves-destroy-part-of-pacifica-pier-as-officials-warn-of-coastal-flooding",
-   "published": "2026-11-26T15:41:49Z",
    "gathered": "2026-11-26T17:12:01Z"
   },
   {
    "h": "Rain, wind and flooding hit much of US on Thanksgiving",
    "b": "An East Coast storm postponed Macy's 100th parade to Saturday, while king tides brought flood warnings out West.",
    "date": "2026-11-26",
-   "publisher": "PBS NewsHour",
-   "title": "Thanksgiving holiday plagued by heavy rain, wind and flooding across much of the U.S.",
    "url": "https://www.pbs.org/newshour/nation/thanksgiving-holiday-plagued-by-heavy-rain-wind-and-flooding-across-much-of-the-u-s",
-   "published": "2026-11-26T15:18:40Z",
    "gathered": "2026-11-26T17:12:01Z"
   },
   {
@@ -110,10 +123,7 @@
    "b": "The small plane was returning from a fishing trip when it crashed Tuesday; pilot Brent Stokes, 50, was among the dead, the coroner said.",
    "date": "2026-11-26",
    "place": "Mississippi",
-   "publisher": "PBS NewsHour",
-   "title": "Small plane crash off Mississippi coast kills extended family of 6 on fishing trip",
    "url": "https://www.pbs.org/newshour/nation/small-plane-crash-off-mississippi-coast-kills-extended-family-of-6-on-fishing-trip",
-   "published": "2026-11-26T00:02:17Z",
    "gathered": "2026-11-26T02:58:55Z"
   },
   {
@@ -159,13 +169,20 @@
  ],
  "politics": [
   {
+   "h": "Judge won't extend ban on pro-Trump government ads",
+   "b": "Judge Loren AliKhan declined Democrats' request for a long-term ban on taxpayer-funded TV spots they called propaganda.",
+   "date": "2026-11-26",
+   "publisher": "PBS NewsHour",
+   "title": "Judge declines to issue a long-term ban on taxpayer-funded, pro-Trump ads critics called propaganda",
+   "url": "https://www.pbs.org/newshour/politics/judge-declines-to-issue-a-long-term-ban-on-taxpayer-funded-pro-trump-ads-critics-called-propaganda",
+   "published": "2026-11-26T22:20:22Z",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
+  {
    "h": "Trump calls GDP figures 'fake,' seeks investigation",
    "b": "He accused the Commerce Department of issuing incorrect growth figures before the midterms, after it revised third-quarter GDP up to 4.3%.",
    "date": "2026-11-26",
-   "publisher": "PBS NewsHour",
-   "title": "Trump calls GDP figures 'fake' and demands an investigation of Commerce Department",
    "url": "https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department",
-   "published": "2026-11-26T16:36:06Z",
    "gathered": "2026-11-26T17:12:01Z"
   },
   {
@@ -206,13 +223,22 @@
  ],
  "international": [
   {
+   "h": "Mexico seeks US talks over suspected SpaceX debris",
+   "b": "Mexico wants a meeting on use of its airspace and possibly relocating the launch site after recovering debris from a Starship launch.",
+   "date": "2026-11-26",
+   "place": "Mexico City, Mexico",
+   "tz": "America/Mexico_City",
+   "publisher": "Al Jazeera",
+   "title": "Mexico seeks US talks about suspected SpaceX debris",
+   "url": "https://www.aljazeera.com/news/2026/11/26/mexico-seeks-us-talks-about-suspected-spacex-debris",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
+  {
    "h": "Ukrainian drone strike kills five in occupied Zaporizhia",
    "b": "A Russian-installed governor said the drone hit a parking lot in Vesioloye, as Russia launched a ballistic missile attack on Kyiv.",
    "date": "2026-11-26",
    "place": "Zaporizhia, Ukraine",
    "tz": "Europe/Zaporozhye",
-   "publisher": "Al Jazeera",
-   "title": "Ukraine drone attack kills five in Russian-occupied Zaporizhia",
    "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia",
    "gathered": "2026-11-26T12:59:53Z"
   },
@@ -222,8 +248,6 @@
    "date": "2026-11-26",
    "place": "Bangkok, Thailand",
    "tz": "Asia/Bangkok",
-   "publisher": "Al Jazeera",
-   "title": "Nine injured in explosion at oil facility in Thailand’s Bangkok",
    "url": "https://www.aljazeera.com/news/2026/11/26/explosion-occurs-at-oil-facility-in-thailands-bangkok",
    "gathered": "2026-11-26T12:59:53Z"
   },
@@ -233,8 +257,6 @@
    "date": "2026-11-26",
    "place": "Nanyuki, Kenya",
    "tz": "Africa/Nairobi",
-   "publisher": "Al Jazeera",
-   "title": "Kenya gov’t violated constitution with Ebola quarantine site, court says",
    "url": "https://www.aljazeera.com/news/2026/11/26/kenya-govt-violated-constitution-with-ebola-quarantine-site-court-says",
    "gathered": "2026-11-26T12:59:53Z"
   },
@@ -244,8 +266,6 @@
    "date": "2026-11-26",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Israeli attacks on Gaza kill senior education official, nine other people",
    "url": "https://www.aljazeera.com/news/2026/11/26/israeli-attacks-on-gaza-kill-senior-education-official-seven-other-people",
    "gathered": "2026-11-26T12:59:53Z"
   },
@@ -255,8 +275,6 @@
    "date": "2026-11-26",
    "place": "Baghdad, Iraq",
    "tz": "Asia/Baghdad",
-   "publisher": "Al Jazeera",
-   "title": "Iraq denies reports of troop movements towards Kurdish region",
    "url": "https://www.aljazeera.com/news/2026/11/26/iraq-denies-reports-of-troop-movements-towards-kurdish-region",
    "gathered": "2026-11-26T12:59:53Z"
   },
@@ -407,6 +425,15 @@
  ],
  "business": [
   {
+   "h": "Musk pledges two SpaceX shares for every US child",
+   "b": "The giveaway, worth about $18 billion, came hours after SpaceX won approval to deploy 1 million satellites for space data centers.",
+   "date": "2026-11-26",
+   "publisher": "Al Jazeera",
+   "title": "Musk pledges two SpaceX shares for every US child",
+   "url": "https://www.aljazeera.com/economy/2026/11/26/musk-pledges-two-spacex-shares-for-every-us-child",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
+  {
    "h": "South Korea raises interest rates amid chip boom",
    "b": "The Bank of Korea lifted its key rate a quarter point to 3.25%, citing strong growth driven by AI chip demand and above-target inflation.",
    "date": "2026-11-26",
@@ -424,8 +451,6 @@
    "h": "Core inflation hits 3-year high, raising rate-hike talk",
    "b": "The PCE index rose 3.8% from a year earlier in October, and core inflation also accelerated, moving farther from the Fed's 2% target.",
    "date": "2026-11-25",
-   "publisher": "Marketplace",
-   "title": "Rising inflation strengthens case for Fed rate hikes",
    "url": "https://www.marketplace.org/story/2026/11/25/core-pce-inflation-hit-a-3year-high-last-month",
    "gathered": "2026-11-26T02:58:55Z"
   },
@@ -536,11 +561,7 @@
    "h": "Steelers cut Aaron Rodgers after he rips coach on TV",
    "b": "Pittsburgh released the 42-year-old four-time MVP Wednesday after he criticized Mike McCarthy on 'The Pat McAfee Show' following his benching.",
    "date": "2026-11-26",
-   "publisher": "KUOW",
-   "title": "Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV",
    "url": "https://www.kuow.org/npr-news/2026-11-25/steelers-cut-aaron-rodgers-after-the-qb-rips-coach-mike-mccarthy-on-tv",
-   "published": "2026-11-26T06:26:03Z",
-   "updated": "2026-11-26T06:29:33Z",
    "gathered": "2026-11-26T08:15:21Z"
   },
   {
@@ -552,6 +573,17 @@
   }
  ],
  "goodnews": [
+  {
+   "h": "Coonhound Rocker wins National Dog Show",
+   "b": "The black and tan coonhound took best in show over six other group winners.",
+   "date": "2026-11-26",
+   "publisher": "KUOW",
+   "title": "Black and tan coonhound Rocker is top dog at the 2026 National Dog Show",
+   "url": "https://www.kuow.org/npr-news/2026-11-26/black-and-tan-coonhound-rocker-is-top-dog-at-the-2026-national-dog-show",
+   "published": "2026-11-26T19:00:00Z",
+   "updated": "2026-11-26T19:15:37Z",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
   {
    "h": "Little Free Bakeries bring neighbors together",
    "b": "Like Little Free Libraries but with baked goods, pop-ups such as Sarah Mason's monthly table in Austin's North Loop draw lines of neighbors.",
@@ -568,6 +600,16 @@
   }
  ],
  "local": [
+  {
+   "h": "Storm's worst hits NYC Thanksgiving evening",
+   "b": "Forecasters expect the heaviest rain and winds up to 65 mph from about 4 to 10 p.m., and Mayor Mamdani urged travelers to allow extra time.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "Travel treachery: The Thanksgiving holiday travel outlook is grim",
+   "url": "https://gothamist.com/news/travel-treachery-the-thanksgiving-holiday-travel-outlook-is-grim",
+   "published": "2026-11-26T18:29:08Z",
+   "gathered": "2026-11-26T22:29:57Z"
+  },
   {
    "h": "State boosts sobriety checkpoints for Thanksgiving weekend",
    "b": "Gov. Hochul announced extra patrols through Sunday targeting drunk and reckless drivers.",
@@ -586,16 +628,6 @@
    "title": "NYC bill would give crash victims online access to NYPD investigation updates",
    "url": "https://gothamist.com/news/nyc-bill-would-give-crash-victims-online-access-to-nypd-investigation-updates",
    "published": "2026-11-26T11:31:01Z",
-   "gathered": "2026-11-26T12:59:53Z"
-  },
-  {
-   "h": "NYC urged to stay inside as Thanksgiving storm peaks",
-   "b": "Forecasters say wind and heavy rain peak this afternoon; Mayor Mamdani warned families they may need to stay put longer than planned.",
-   "date": "2026-11-26",
-   "publisher": "Gothamist",
-   "title": "Fowl weather alert: Thanksgiving Day in NYC to bring cornucopia of wind and rain",
-   "url": "https://gothamist.com/news/fowl-weather-alert-thanksgiving-day-in-nyc-to-bring-cornucopia-of-wind-and-rain",
-   "published": "2026-11-26T12:00:47Z",
    "gathered": "2026-11-26T12:59:53Z"
   },
   {
@@ -625,8 +657,7 @@
    "publisher": "Gothamist",
    "title": "NYC postpones Thanksgiving parade to Saturday as wind gusts threaten disaster",
    "url": "https://gothamist.com/news/530-press",
-   "published": "2026-11-25T21:01:00Z",
-   "updated": "2026-11-25T23:42:00Z",
+   "published": "2026-11-25T23:42:00Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
@@ -682,48 +713,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 43,
-   "cond": "Rain Fog/Mist",
-   "wind": "NE 20 mph, gusts to 39 mph",
-   "humidity": 86,
-   "obs": "26 Nov 11:51 am EST"
+   "temp": 44,
+   "cond": "Heavy Rain Fog/Mist and Breezy",
+   "wind": "NE 21 mph, gusts to 46 mph",
+   "humidity": 96,
+   "obs": "26 Nov 16:51 pm EST"
   },
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "kind": "high",
-    "temp": 53,
-    "text": "Rain. The rain could be heavy at times.  High near 53. Windy, with a northeast wind 30 to 33 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
-   },
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 50,
-    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 59 by 11pm. Windy, with a northeast wind 28 to 33 mph becoming east 14 to 19 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 59 by 11pm. Windy, with a northeast wind 23 to 33 mph becoming southeast 13 to 23 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 58,
-    "text": "A 40 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a temperature falling to around 51 by 4pm. Breezy, with a south wind 17 to 21 mph. "
+    "temp": 57,
+    "text": "A slight chance of rain before 1pm, then a chance of showers between 1pm and 4pm.  Mostly cloudy, with a temperature falling to around 51 by 4pm. Breezy, with a southwest wind 16 to 20 mph.  Chance of precipitation is 40%."
    },
    {
     "name": "Friday Night",
     "kind": "low",
     "temp": 52,
-    "text": "Mostly cloudy, with a steady temperature around 52. Breezy, with a west wind 18 to 20 mph. "
+    "text": "Mostly cloudy, with a steady temperature around 52. West wind around 18 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 55,
-    "text": "Partly sunny, with a high near 55. West wind 14 to 17 mph. "
+    "text": "Partly sunny, with a high near 55. West wind 15 to 17 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
     "temp": 46,
     "text": "Mostly clear, with a low around 46."
+   },
+   {
+    "name": "Sunday",
+    "kind": "high",
+    "temp": 57,
+    "text": "Mostly sunny, with a high near 57."
    }
   ]
  },
