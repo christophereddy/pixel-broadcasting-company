@@ -20,18 +20,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Light Rain",
-    "wind": "NE 12 mph",
-    "humidity": 86,
-    "obs": "25 Nov 17:52 pm EST"
+    "temp": 47,
+    "cond": "Rain Fog/Mist",
+    "wind": "E 9 mph",
+    "humidity": 93,
+    "obs": "25 Nov 21:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "Showers.  Low around 45. Northeast wind 5 to 15 mph becoming northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Showers.  Low around 45. Northeast wind 5 to 15 mph becoming northwest after midnight. Winds could gust as high as 30 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Thanksgiving Day",
@@ -77,7 +77,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -139,11 +139,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 40,
+    "temp": 39,
     "cond": "Overcast",
-    "wind": "E 5 mph",
-    "humidity": 65,
-    "obs": "25 Nov 17:54 pm EST"
+    "wind": "N 7 mph",
+    "humidity": 73,
+    "obs": "25 Nov 20:54 pm EST"
    },
    "periods": [
     {
@@ -156,25 +156,25 @@
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 53,
-     "text": "Rain likely, mainly after 5pm.  Mostly cloudy, with a high near 53. East wind 9 to 18 mph, with gusts as high as 36 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly after 5pm.  Cloudy, with a high near 53. East wind 9 to 18 mph, with gusts as high as 36 mph.  Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 48,
-     "text": "Rain, mainly before 2am. The rain could be heavy at times.  Low around 48. Breezy, with an east wind 15 to 20 mph decreasing to 8 to 13 mph after midnight. Winds could gust as high as 40 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+     "text": "Rain, mainly before 2am. The rain could be heavy at times.  Low around 48. Breezy, with a northeast wind around 21 mph, with gusts as high as 40 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
      "temp": 61,
-     "text": "Scattered showers, mainly before 1pm.  Partly sunny, with a high near 61. North wind 5 to 11 mph becoming south in the morning. Winds could gust as high as 25 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Scattered showers, mainly before 1pm.  Partly sunny, with a high near 61. North wind 11 to 13 mph becoming south in the morning. Winds could gust as high as 25 mph.  Chance of precipitation is 40%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Friday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Scattered showers before 8pm.  Mostly cloudy, with a low around 42. Southwest wind around 9 mph, with gusts as high as 22 mph.  Chance of precipitation is 30%."
+     "text": "Scattered showers before 8pm.  Mostly cloudy, with a low around 42. Southwest wind 9 to 11 mph, with gusts as high as 22 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Saturday",
@@ -196,7 +196,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "boston-ma",
   "goodnews": [
    {
@@ -218,6 +218,17 @@
   },
   "local": [
    {
+    "h": "Man charged in Lower West Side killing of 86-year-old",
+    "b": "Alejandro Lozano, 44, faces first-degree murder and attempted murder charges in Monday's stabbing on West 19th Street, police said.",
+    "date": "2026-11-26",
+    "publisher": "WBEZ",
+    "title": "Man charged in Lower West Side fatal stabbing of 86-year-old",
+    "url": "https://www.wbez.org/crime/2026/11/25/man-charged-in-lower-west-side-fatal-stabbing-of-86-year-old",
+    "published": "2026-11-26T02:54:05Z",
+    "updated": "2026-11-26T02:54:05Z",
+    "gathered": "2026-11-26T02:58:55Z"
+   },
+   {
     "h": "Chicago shops hopeful for Small Business Saturday",
     "b": "Boutique and distillery owners are preparing for the shopping day after Black Friday, with mixed feelings about how much shoppers will spend.",
     "date": "2026-11-25",
@@ -232,11 +243,7 @@
     "h": "Latino drop drives CPS enrollment decline",
     "b": "Latino enrollment fell by about 7,800 students, more than two-thirds of this year's districtwide drop, with experts pointing to housing costs.",
     "date": "2026-11-25",
-    "publisher": "WBEZ",
-    "title": "Drop in number of Latino students drives CPS enrollment decline as many immigrants face rising costs",
     "url": "https://www.wbez.org/education/2026/11/25/latino-student-drop-drives-cps-enrollment-decline-as-many-immigrant-hubs-grapple-with-rising-costs",
-    "published": "2026-11-25T11:35:00Z",
-    "updated": "2026-11-25T11:35:05Z",
     "gathered": "2026-11-25T14:13:59Z"
    },
    {
@@ -256,18 +263,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 41,
-    "cond": "Overcast",
-    "wind": "NE 13 mph",
+    "temp": 42,
+    "cond": "Mostly Cloudy",
+    "wind": "E 18 mph, gusts to 29 mph",
     "humidity": 65,
-    "obs": "25 Nov 16:53 pm CST"
+    "obs": "25 Nov 20:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 41,
-     "text": "Cloudy, with a low around 41. Breezy, with an east northeast wind 20 to 25 mph, with gusts as high as 35 mph. "
+     "text": "Cloudy, with a low around 41. Breezy, with an east northeast wind 20 to 25 mph, with gusts as high as 30 mph. "
     },
     {
      "name": "Thanksgiving Day",
@@ -313,7 +320,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "chicago-il",
   "goodnews": [
    {
@@ -331,11 +338,7 @@
     "h": "Jackson Park's 'Gold Lady' shines again",
     "b": "A $1 million renovation has restored the gilded Statue of the Republic at 63rd Street and Richards Drive.",
     "date": "2026-11-25",
-    "publisher": "WBEZ",
-    "title": "Jackson Park's 'Gold Lady' shines again thanks to $1 million renovation",
     "url": "https://www.wbez.org/architecture/2026/11/25/jackson-park-gold-lady-statue-republic-shines-1-million-renovation",
-    "published": "2026-11-25T15:45:15Z",
-    "updated": "2026-11-25T15:45:15Z",
     "gathered": "2026-11-25T20:03:08Z"
    }
   ]
@@ -360,11 +363,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
-    "cond": "Mostly Cloudy",
-    "wind": "W 3 mph",
-    "humidity": 22,
-    "obs": "25 Nov 13:58 pm MST"
+    "temp": 32,
+    "cond": "Partly Cloudy",
+    "wind": "E 9 mph",
+    "humidity": 38,
+    "obs": "25 Nov 18:58 pm MST"
    },
    "periods": [
     {
@@ -395,7 +398,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 39,
-     "text": "Partly cloudy, with a low around 39."
+     "text": "Partly cloudy, with a low around 39. South southwest wind 5 to 7 mph. "
     },
     {
      "name": "Saturday",
@@ -417,7 +420,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "denver-co",
   "goodnews": []
  },
@@ -428,6 +431,16 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "Ugarte leads CD-9 race by 69 votes",
+    "b": "Jose Ugarte is closing in on the City Council seat in one of LA's last undecided races; results are certified Friday.",
+    "date": "2026-11-26",
+    "publisher": "LAist",
+    "title": "Jose Ugarte closes in on CD-9 win with a 69-vote lead",
+    "url": "https://laist.com/news/politics/jose-ugarte-closes-in-on-cd-9-win-with-a-69-vote-lead",
+    "published": "2026-11-26T00:57:00Z",
+    "gathered": "2026-11-26T02:58:55Z"
+   },
    {
     "h": "County sustainability chief quits LA28 role over oil sponsor",
     "b": "She stepped down as an Olympics adviser, citing LA28's sponsorship deal with Phillips 66.",
@@ -458,7 +471,7 @@
     "title": "King tides break Southern California records with more expected on Thanksgiving",
     "url": "https://laist.com/news/climate-environment/king-tides-break-southern-california-records-more-on-thanksgiving",
     "published": "2026-11-25T23:03:12Z",
-    "updated": "2026-11-25T23:03:12Z",
+    "updated": "2026-11-26T00:01:33Z",
     "gathered": "2026-11-25T23:12:06Z"
    },
    {
@@ -482,10 +495,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 75,
-    "wind": "Calm",
-    "humidity": 23,
-    "obs": "25 Nov 02:20 PM PST"
+    "temp": 60,
+    "wind": "NW 2 mph",
+    "humidity": 59,
+    "obs": "25 Nov 06:55 PM PST"
    },
    "periods": [
     {
@@ -516,7 +529,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Partly cloudy, with a low around 56."
+     "text": "Partly cloudy, with a low around 56. East northeast wind around 5 mph becoming calm. "
     },
     {
      "name": "Saturday",
@@ -538,7 +551,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -577,6 +590,7 @@
     "title": "NYC postpones Thanksgiving parade to Saturday as wind gusts threaten disaster",
     "url": "https://gothamist.com/news/530-press",
     "published": "2026-11-25T21:01:00Z",
+    "updated": "2026-11-25T23:42:00Z",
     "gathered": "2026-11-25T23:12:06Z"
    },
    {
@@ -633,30 +647,30 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Partly Cloudy",
-    "wind": "W 7 mph",
-    "humidity": 65,
-    "obs": "25 Nov 17:51 pm EST"
+    "temp": 44,
+    "cond": "Overcast",
+    "wind": "NE 10 mph, gusts to 22 mph",
+    "humidity": 60,
+    "obs": "25 Nov 21:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 47,
-     "text": "Cloudy, with a low around 47. Breezy, with a northeast wind 14 to 24 mph. "
+     "text": "Cloudy, with a temperature rising to around 51 by 3am. Breezy, with a northeast wind 10 to 15 mph increasing to 17 to 22 mph after midnight. "
     },
     {
      "name": "Thanksgiving Day",
      "kind": "high",
      "temp": 60,
-     "text": "Rain. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 28 to 34 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+     "text": "Rain. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 31 to 37 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Thursday Night",
      "kind": "low",
      "temp": 56,
-     "text": "Rain, mainly before 1am.  Temperature rising to around 60 by 3am. Windy, with an east wind 29 to 34 mph becoming southeast 17 to 22 mph after midnight. Winds could gust as high as 49 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+     "text": "Rain, mainly before 1am.  Temperature rising to around 60 by 3am. Windy, with a northeast wind 31 to 36 mph becoming southeast 17 to 22 mph after midnight. Winds could gust as high as 49 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
     },
     {
      "name": "Friday",
@@ -690,7 +704,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -759,7 +773,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "goodnews": [
    {
     "h": "Stranded cargo ship refloated in Landes",
@@ -778,6 +792,17 @@
   },
   "local": [
    {
+    "h": "Western Washington faces flooding and drought at once",
+    "b": "El Niño-boosted king tides are flooding low-lying areas while Seattle's Chester Morse reservoir sits unusually low.",
+    "date": "2026-11-26",
+    "publisher": "KUOW",
+    "title": "Flood, drought: Western Washington's got it all",
+    "url": "https://www.kuow.org/environment/2026-11-25/flood-drought-western-washingtons-got-it-all",
+    "published": "2026-11-26T01:34:05Z",
+    "updated": "2026-11-26T02:34:00Z",
+    "gathered": "2026-11-26T02:58:55Z"
+   },
+   {
     "h": "Rainier Valley Food Bank meets rising need",
     "b": "The food bank now serves 800 households a week as hunger rates rise statewide.",
     "date": "2026-11-25",
@@ -794,18 +819,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
-    "cond": "Rain",
-    "wind": "S 9 mph",
-    "humidity": 62,
-    "obs": "25 Nov 02:55 PM PST"
+    "temp": 53,
+    "cond": "light rain,mist",
+    "wind": "SE 6 mph",
+    "humidity": 89,
+    "obs": "25 Nov 06:53 PM PST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 51,
-     "text": "Rain.  Low around 51. South southeast wind around 16 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "text": "Rain.  Low around 51. South wind 14 to 16 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
     },
     {
      "name": "Thanksgiving Day",
@@ -829,7 +854,7 @@
      "name": "Friday Night",
      "kind": "low",
      "temp": 42,
-     "text": "Rain likely before 10pm.  Mostly cloudy, with a low around 42. Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain likely before 10pm.  Mostly cloudy, with a low around 42. Light north wind.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -851,7 +876,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-26T02:13:00Z",
+  "updatedAt": "2026-11-26T05:12:00Z",
   "slug": "seattle-wa",
   "goodnews": [
    {

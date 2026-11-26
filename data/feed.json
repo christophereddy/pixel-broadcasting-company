@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T02:13:00Z",
+ "updatedAt": "2026-11-26T05:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,18 +10,34 @@
    "h": "LIVE: Houthis threaten Saudi ports",
    "b": "The Houthis are threatening Saudi ports over the coalition's Hodeidah evacuation order. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-25",
-   "publisher": "Al Jazeera",
-   "title": "Iran says another tanker on fire after hitting mine in Hormuz",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order",
    "gathered": "2026-11-25T02:12:59Z"
+  },
+  {
+   "h": "Kim calls for wider deployment of tactical nukes",
+   "b": "North Korea's leader said tactical nuclear weapons should be deployed 'across multiple domains' as he inspected nuclear material production sites, state media said.",
+   "date": "2026-11-26",
+   "place": "North Korea",
+   "publisher": "Al Jazeera",
+   "title": "Kim Jong Un says North Korea should widen deployment of tactical nukes",
+   "url": "https://www.aljazeera.com/news/2026/11/26/kim-jong-un-says-north-korea-should-widen-deployment-of-tactical-nukes",
+   "gathered": "2026-11-26T02:58:55Z"
+  },
+  {
+   "h": "Ukraine says it hit five planes at Russian air base",
+   "b": "Ukraine's General Staff said it struck the Savasleyka airbase east of Moscow, damaging three MiG-31s and two Su-34s.",
+   "date": "2026-11-26",
+   "place": "Nizhny Novgorod, Russia",
+   "publisher": "Al Jazeera",
+   "title": "Ukraine attacks Russian military base, says five planes struck",
+   "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-attacks-russian-military-base-says-five-planes-struck",
+   "gathered": "2026-11-26T02:58:55Z"
   },
   {
    "h": "Netanyahu says corruption trial 'must end'",
    "b": "Israel's caretaker prime minister called for an immediate end to his trial after judges cast doubt on the charges and recommended dropping the bribery case.",
    "date": "2026-11-25",
    "place": "Jerusalem",
-   "publisher": "Al Jazeera",
-   "title": "Netanyahu says corruption trial ‘must end’ as court suggests dropping case",
    "url": "https://www.aljazeera.com/news/2026/11/25/netanyahu-says-corruption-trial-must-end-as-court-suggests-dropping-case",
    "gathered": "2026-11-25T23:12:06Z"
   },
@@ -53,6 +69,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Plane crash off Mississippi kills Florida family of 6",
+   "b": "The small plane was returning from a fishing trip when it crashed Tuesday; pilot Brent Stokes, 50, was among the dead, the coroner said.",
+   "date": "2026-11-26",
+   "place": "Mississippi",
+   "publisher": "PBS NewsHour",
+   "title": "Small plane crash off Mississippi coast kills extended family of 6 on fishing trip",
+   "url": "https://www.pbs.org/newshour/nation/small-plane-crash-off-mississippi-coast-kills-extended-family-of-6-on-fishing-trip",
+   "published": "2026-11-26T00:02:17Z",
+   "gathered": "2026-11-26T02:58:55Z"
+  },
   {
    "h": "Ábrego García leaves for Spain, hopes to return",
    "b": "The Salvadoran man mistakenly deported in 2025 arrived in Madrid on what his lawyer called a temporary departure, hoping to rejoin his family in Maryland.",
@@ -101,13 +128,19 @@
  ],
  "politics": [
   {
+   "h": "Trump open to meeting El-Sayed on Medicare for All",
+   "b": "Weeks after attacking him on the campaign trail, Trump says he will meet the incoming Democratic senator to discuss a national healthcare program.",
+   "date": "2026-11-26",
+   "publisher": "Al Jazeera",
+   "title": "A meeting with Democrats over healthcare? Trump says he’s open to it",
+   "url": "https://www.aljazeera.com/news/2026/11/26/a-meeting-with-democrats-over-healthcare-trump-says-hes-open-to-it",
+   "gathered": "2026-11-26T02:58:55Z"
+  },
+  {
    "h": "Young Republicans reckon with midterm losses",
    "b": "In Fort Worth, Tarrant County Young Republicans met at a brewery to sort through what went wrong after midterms that devastated the party.",
    "date": "2026-11-25",
-   "publisher": "PBS NewsHour",
-   "title": "These young Republicans have a message for their party: It's time to 'grow up'",
    "url": "https://www.pbs.org/newshour/politics/these-young-republicans-have-a-message-for-their-party-its-time-to-grow-up",
-   "published": "2026-11-25T22:00:15Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
@@ -140,13 +173,22 @@
  ],
  "international": [
   {
+   "h": "ISIL suicide attack kills two Syrian security officers",
+   "b": "Four gunmen attacked a checkpoint in Hasakah on Wednesday, killing two security personnel and wounding five; all four attackers died.",
+   "date": "2026-11-26",
+   "place": "Hasakah, Syria",
+   "tz": "Asia/Damascus",
+   "publisher": "Al Jazeera",
+   "title": "Two Syrian security personnel killed in ISIL suicide attack",
+   "url": "https://www.aljazeera.com/news/2026/11/26/two-syrian-security-personnel-killed-in-isil-suicide-attack",
+   "gathered": "2026-11-26T02:58:55Z"
+  },
+  {
    "h": "Tinubu vows peace for Nigeria's northeast ahead of vote",
    "b": "At a rally in Maiduguri, President Bola Tinubu promised to restore peace to the rebellion-hit region as he seeks a second term on January 16.",
    "date": "2026-11-25",
    "place": "Maiduguri, Nigeria",
    "tz": "Africa/Lagos",
-   "publisher": "Al Jazeera",
-   "title": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region",
    "url": "https://www.aljazeera.com/news/2026/11/25/nigerias-tinubu-pledges-to-bring-peace-to-insurgency-hit-northeast-region",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -156,8 +198,6 @@
    "date": "2026-11-25",
    "place": "Quito, Ecuador",
    "tz": "America/Guayaquil",
-   "publisher": "Al Jazeera",
-   "title": "Ecuador and US review joint military operations, official says",
    "url": "https://www.aljazeera.com/news/2026/11/25/ecuador-and-us-review-joint-military-operations-official-says",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -167,8 +207,6 @@
    "date": "2026-11-25",
    "place": "London, UK",
    "tz": "Europe/London",
-   "publisher": "Al Jazeera",
-   "title": "UK military ‘moving aircraft to hangars in case of drone attacks’",
    "url": "https://www.aljazeera.com/news/2026/11/25/uk-military-moving-aircraft-to-hangars-in-case-of-drone-attacks",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -265,6 +303,15 @@
  ],
  "business": [
   {
+   "h": "Core inflation hits 3-year high, raising rate-hike talk",
+   "b": "The PCE index rose 3.8% from a year earlier in October, and core inflation also accelerated, moving farther from the Fed's 2% target.",
+   "date": "2026-11-25",
+   "publisher": "Marketplace",
+   "title": "Rising inflation strengthens case for Fed rate hikes",
+   "url": "https://www.marketplace.org/story/2026/11/25/core-pce-inflation-hit-a-3year-high-last-month",
+   "gathered": "2026-11-26T02:58:55Z"
+  },
+  {
    "h": "Portland man's free newsletter tracks grocery prices",
    "b": "Bryan Vance has tracked 20 staples at more than a dozen stores since April 2025 in his Stumptown Savings newsletter, as food costs climb.",
    "date": "2026-11-25",
@@ -352,8 +399,6 @@
    "h": "FCC approves SpaceX plan for 1 million orbiting data centers",
    "b": "The FCC authorized SpaceX to deploy 1,000,000 orbital compute modules, called Starmind, to meet growing demand for AI computing.",
    "date": "2026-11-25",
-   "publisher": "Al Jazeera",
-   "title": "US grants SpaceX approval for 1 million space data centres",
    "url": "https://www.aljazeera.com/news/2026/11/25/us-grants-spacex-approval-for-1-million-space-data-centres",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -426,6 +471,7 @@
    "title": "NYC postpones Thanksgiving parade to Saturday as wind gusts threaten disaster",
    "url": "https://gothamist.com/news/530-press",
    "published": "2026-11-25T21:01:00Z",
+   "updated": "2026-11-25T23:42:00Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
@@ -482,30 +528,30 @@
  ],
  "weather": {
   "now": {
-   "temp": 43,
-   "cond": "Partly Cloudy",
-   "wind": "W 7 mph",
-   "humidity": 65,
-   "obs": "25 Nov 17:51 pm EST"
+   "temp": 44,
+   "cond": "Overcast",
+   "wind": "NE 10 mph, gusts to 22 mph",
+   "humidity": 60,
+   "obs": "25 Nov 21:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 47,
-    "text": "Cloudy, with a low around 47. Breezy, with a northeast wind 14 to 24 mph. "
+    "text": "Cloudy, with a temperature rising to around 51 by 3am. Breezy, with a northeast wind 10 to 15 mph increasing to 17 to 22 mph after midnight. "
    },
    {
     "name": "Thanksgiving Day",
     "kind": "high",
     "temp": 60,
-    "text": "Rain. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 28 to 34 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+    "text": "Rain. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 31 to 37 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
     "temp": 56,
-    "text": "Rain, mainly before 1am.  Temperature rising to around 60 by 3am. Windy, with an east wind 29 to 34 mph becoming southeast 17 to 22 mph after midnight. Winds could gust as high as 49 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+    "text": "Rain, mainly before 1am.  Temperature rising to around 60 by 3am. Windy, with a northeast wind 31 to 36 mph becoming southeast 17 to 22 mph after midnight. Winds could gust as high as 49 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
    },
    {
     "name": "Friday",
