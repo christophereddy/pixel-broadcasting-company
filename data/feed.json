@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T08:12:00Z",
+ "updatedAt": "2026-11-26T11:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,23 @@
  },
  "world": [
   {
-   "h": "LIVE: Houthis threaten Saudi ports",
-   "b": "The Houthis are threatening Saudi ports over the coalition's Hodeidah evacuation order. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-25",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order",
-   "gathered": "2026-11-25T02:12:59Z"
+   "h": "LIVE: Explosion rocks Sanaa",
+   "b": "An explosion hit Yemen's capital as Houthi missiles were intercepted over Riyadh. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
+   "date": "2026-11-26",
+   "publisher": "Al Jazeera",
+   "title": "Explosion rocks Sanaa; Houthi missiles intercepted over Saudi capital",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh",
+   "gathered": "2026-11-26T08:15:21Z"
+  },
+  {
+   "h": "DR Congo Ebola cases pass 12,000 as fighting disrupts response",
+   "b": "Response workers have been forced out of affected areas as clashes intensify in eastern Congo's Ituri province, officials said.",
+   "date": "2026-11-26",
+   "place": "Ituri, DR Congo",
+   "publisher": "Al Jazeera",
+   "title": "DR Congo Ebola cases surpass 12,000 as fighting disrupts response in east",
+   "url": "https://www.aljazeera.com/news/2026/11/26/dr-congo-ebola-cases-surpass-12000-as-fighting-disrupts-response-in-east",
+   "gathered": "2026-11-26T08:15:21Z"
   },
   {
    "h": "Kim calls for wider deployment of tactical nukes",
@@ -29,7 +41,7 @@
    "date": "2026-11-26",
    "place": "Nizhny Novgorod, Russia",
    "publisher": "Al Jazeera",
-   "title": "Ukraine attacks Russian military base, says five planes struck",
+   "title": "Ukraine says five jets damaged in attack on Russia’s Savasleyka airbase",
    "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-attacks-russian-military-base-says-five-planes-struck",
    "gathered": "2026-11-26T02:58:55Z"
   },
@@ -46,8 +58,6 @@
    "b": "A vehicle carrying petroleum products overturned and caught fire above a tunnel in Giza's Warraq district, Egypt's health ministry said; 15 were injured.",
    "date": "2026-11-25",
    "place": "Giza, Egypt",
-   "publisher": "Al Jazeera",
-   "title": "At least 31 killed in Egypt vehicle fire, Health Ministry says",
    "url": "https://www.aljazeera.com/news/2026/11/25/at-least-30-killed-in-egypt-vehicle-fire-health-ministry-says",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -69,6 +79,15 @@
   }
  ],
  "national": [
+  {
+   "h": "Judge blocks FCC review of ABC station licenses",
+   "b": "Judge Loren AliKhan found the FCC's early review of Disney's ABC licenses was unconstitutional retaliation for coverage Trump dislikes.",
+   "date": "2026-11-26",
+   "publisher": "NPR Business",
+   "title": "U.S. Judge rules FCC violated ABC's free speech rights to please Trump",
+   "url": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr",
+   "gathered": "2026-11-26T08:15:21Z"
+  },
   {
    "h": "Plane crash off Mississippi kills Florida family of 6",
    "b": "The small plane was returning from a fishing trip when it crashed Tuesday; pilot Brent Stokes, 50, was among the dead, the coroner said.",
@@ -105,8 +124,6 @@
    "h": "Army calls Iowa lead azide detonation a success",
    "b": "Army officials said Wednesday's controlled detonation of 68 drums of volatile lead azide at the Iowa Army Ammunition Plant 'wildly exceeded' expectations.",
    "date": "2026-11-25",
-   "publisher": "Al Jazeera",
-   "title": "US Army declares Iowa lead azide detonation ‘tremendously successful’",
    "url": "https://www.aljazeera.com/news/2026/11/25/us-army-declares-iowa-lead-azide-detonation-tremendously-successful",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -131,8 +148,6 @@
    "h": "Trump open to meeting El-Sayed on Medicare for All",
    "b": "Weeks after attacking him on the campaign trail, Trump says he will meet the incoming Democratic senator to discuss a national healthcare program.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "A meeting with Democrats over healthcare? Trump says he’s open to it",
    "url": "https://www.aljazeera.com/news/2026/11/26/a-meeting-with-democrats-over-healthcare-trump-says-hes-open-to-it",
    "gathered": "2026-11-26T02:58:55Z"
   },
@@ -172,6 +187,28 @@
   }
  ],
  "international": [
+  {
+   "h": "Puerto Rico's top court ends Luma Energy contract",
+   "b": "In a tight vote, the Supreme Court sided with the government's bid to cancel the private power company's contract after years of outages.",
+   "date": "2026-11-26",
+   "place": "San Juan, Puerto Rico",
+   "tz": "America/Puerto_Rico",
+   "publisher": "Al Jazeera",
+   "title": "Puerto Rico’s Supreme Court cancels major power contract",
+   "url": "https://www.aljazeera.com/news/2026/11/26/puerto-ricos-supreme-court-cancels-major-power-contract",
+   "gathered": "2026-11-26T08:15:21Z"
+  },
+  {
+   "h": "Indonesia gold mine flood kills at least 13",
+   "b": "Thirteen more workers remain missing after flooding hit an unauthorised gold mine in West Java's Bogor district, rescuers said.",
+   "date": "2026-11-26",
+   "place": "Bogor, Indonesia",
+   "tz": "Asia/Jakarta",
+   "publisher": "Al Jazeera",
+   "title": "At least 13 dead in Indonesia gold mine flood as rescue efforts intensify",
+   "url": "https://www.aljazeera.com/news/2026/11/26/at-least-13-dead-in-indonesia-gold-mine-flood-as-rescue-efforts-intensify",
+   "gathered": "2026-11-26T08:15:21Z"
+  },
   {
    "h": "ISIL suicide attack kills two Syrian security officers",
    "b": "Four gunmen attacked a checkpoint in Hasakah on Wednesday, killing two security personnel and wounding five; all four attackers died.",
@@ -301,6 +338,15 @@
  ],
  "business": [
   {
+   "h": "South Korea raises interest rates amid chip boom",
+   "b": "The Bank of Korea lifted its key rate a quarter point to 3.25%, citing strong growth driven by AI chip demand and above-target inflation.",
+   "date": "2026-11-26",
+   "publisher": "Al Jazeera",
+   "title": "South Korea’s central bank hikes interest rates amid AI chip boom",
+   "url": "https://www.aljazeera.com/economy/2026/11/26/south-koreas-central-bank-hikes-interest-rates-raises-gdp-growth-forecast",
+   "gathered": "2026-11-26T08:15:21Z"
+  },
+  {
    "h": "Amodei denies wanting humans to cede control to AI",
    "b": "In a post on X, the Anthropic CEO said he does not support surrendering 'human free will' to AI and that the technology should be subject to democratic processes.",
    "date": "2026-11-26",
@@ -422,6 +468,17 @@
  ],
  "sports": [
   {
+   "h": "Steelers cut Aaron Rodgers after he rips coach on TV",
+   "b": "Pittsburgh released the 42-year-old four-time MVP Wednesday after he criticized Mike McCarthy on 'The Pat McAfee Show' following his benching.",
+   "date": "2026-11-26",
+   "publisher": "KUOW",
+   "title": "Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV",
+   "url": "https://www.kuow.org/npr-news/2026-11-25/steelers-cut-aaron-rodgers-after-the-qb-rips-coach-mike-mccarthy-on-tv",
+   "published": "2026-11-26T06:26:03Z",
+   "updated": "2026-11-26T06:29:33Z",
+   "gathered": "2026-11-26T08:15:21Z"
+  },
+  {
    "h": "Senegal gets Africa Cup title back",
    "b": "The Court of Arbitration for Sport overturned a ruling that had handed the Africa Cup of Nations trophy to Morocco after Senegal's players walked off.",
    "date": "2026-11-25",
@@ -535,48 +592,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 44,
-   "cond": "Mostly Cloudy",
-   "wind": "NE 9 mph, gusts to 23 mph",
-   "humidity": 68,
-   "obs": "25 Nov 23:51 pm EST"
+   "temp": 43,
+   "cond": "Overcast",
+   "wind": "NE 13 mph, gusts to 29 mph",
+   "humidity": 74,
+   "obs": "26 Nov 02:51 am EST"
   },
   "periods": [
-   {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 51,
-    "text": "Cloudy, with a steady temperature around 51. Breezy, with a northeast wind 17 to 22 mph. "
-   },
    {
     "name": "Thanksgiving Day",
     "kind": "high",
     "temp": 60,
-    "text": "Rain. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 31 to 37 mph, with gusts as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+    "text": "Rain, mainly after 10am. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 26 to 32 mph, with gusts as high as 60 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
    },
    {
     "name": "Thursday Night",
     "kind": "low",
-    "temp": 56,
-    "text": "Rain, mainly before 1am.  Temperature rising to around 60 by 3am. Windy, with a northeast wind 31 to 36 mph becoming southeast 17 to 22 mph after midnight. Winds could gust as high as 49 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+    "temp": 54,
+    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 60 by midnight. Windy, with a northeast wind 28 to 33 mph becoming east 14 to 19 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
    },
    {
     "name": "Friday",
     "kind": "high",
-    "temp": 58,
-    "text": "A 50 percent chance of showers.  Mostly cloudy, with a temperature falling to around 54 by 4pm. Breezy, with a south wind 17 to 20 mph. "
+    "temp": 57,
+    "text": "A 40 percent chance of rain, mainly after 1pm.  Mostly cloudy, with a temperature falling to around 54 by 3pm. Breezy, with a south wind 17 to 21 mph. "
    },
    {
     "name": "Friday Night",
     "kind": "low",
-    "temp": 52,
-    "text": "Mostly cloudy, with a steady temperature around 52. West wind around 18 mph. "
+    "temp": 48,
+    "text": "Mostly cloudy, with a low around 48. Breezy, with a west wind 18 to 20 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
     "temp": 55,
-    "text": "Mostly sunny, with a high near 55."
+    "text": "Partly sunny, with a high near 55."
+   },
+   {
+    "name": "Saturday Night",
+    "kind": "low",
+    "temp": 46,
+    "text": "Mostly clear, with a low around 46."
    }
   ]
  },
