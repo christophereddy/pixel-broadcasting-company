@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T11:11:00Z",
+ "updatedAt": "2026-11-26T14:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,7 +11,7 @@
    "b": "An explosion hit Yemen's capital as Houthi missiles were intercepted over Riyadh. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-26",
    "publisher": "Al Jazeera",
-   "title": "Explosion rocks Sanaa; Houthi missiles intercepted over Saudi capital",
+   "title": "Three oil tankers reported hit around Oman’s Khasab",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -30,8 +30,6 @@
    "b": "North Korea's leader said tactical nuclear weapons should be deployed 'across multiple domains' as he inspected nuclear material production sites, state media said.",
    "date": "2026-11-26",
    "place": "North Korea",
-   "publisher": "Al Jazeera",
-   "title": "Kim Jong Un says North Korea should widen deployment of tactical nukes",
    "url": "https://www.aljazeera.com/news/2026/11/26/kim-jong-un-says-north-korea-should-widen-deployment-of-tactical-nukes",
    "gathered": "2026-11-26T02:58:55Z"
   },
@@ -40,8 +38,6 @@
    "b": "Ukraine's General Staff said it struck the Savasleyka airbase east of Moscow, damaging three MiG-31s and two Su-34s.",
    "date": "2026-11-26",
    "place": "Nizhny Novgorod, Russia",
-   "publisher": "Al Jazeera",
-   "title": "Ukraine says five jets damaged in attack on Russia’s Savasleyka airbase",
    "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-attacks-russian-military-base-says-five-planes-struck",
    "gathered": "2026-11-26T02:58:55Z"
   },
@@ -79,6 +75,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Storms snarl Thanksgiving travel on both coasts",
+   "b": "Tens of millions face airport and highway delays; high tides flooded California streets and damaged Pacifica Pier as an East Coast storm moves north.",
+   "date": "2026-11-26",
+   "publisher": "KUOW",
+   "title": "Powerful storms disrupt holiday travel, as Macy's Thanksgiving Day Parade is postponed",
+   "url": "https://www.kuow.org/npr-news/2026-11-26/powerful-storms-disrupt-holiday-travel-as-macys-thanksgiving-day-parade-is-postponed",
+   "published": "2026-11-26T09:43:27Z",
+   "updated": "2026-11-26T10:39:03Z",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
   {
    "h": "Judge blocks FCC review of ABC station licenses",
    "b": "Judge Loren AliKhan found the FCC's early review of Disney's ABC licenses was unconstitutional retaliation for coverage Trump dislikes.",
@@ -188,13 +195,66 @@
  ],
  "international": [
   {
+   "h": "Ukrainian drone strike kills five in occupied Zaporizhia",
+   "b": "A Russian-installed governor said the drone hit a parking lot in Vesioloye, as Russia launched a ballistic missile attack on Kyiv.",
+   "date": "2026-11-26",
+   "place": "Zaporizhia, Ukraine",
+   "tz": "Europe/Zaporozhye",
+   "publisher": "Al Jazeera",
+   "title": "Ukraine drone attack kills five in Russian-occupied Zaporizhia",
+   "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
+  {
+   "h": "Explosion at Bangkok oil refinery injures seven",
+   "b": "Bangchak shut all production units at its Phra Khanong refinery after the blaze, and nearby residents were urged to evacuate.",
+   "date": "2026-11-26",
+   "place": "Bangkok, Thailand",
+   "tz": "Asia/Bangkok",
+   "publisher": "Al Jazeera",
+   "title": "Seven injured in explosion at oil facility in Thailand’s Bangkok",
+   "url": "https://www.aljazeera.com/news/2026/11/26/explosion-occurs-at-oil-facility-in-thailands-bangkok",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
+  {
+   "h": "Kenyan court faults US-backed Ebola quarantine site",
+   "b": "A High Court judge ruled the government breached the constitution by not disclosing the deal or seeking public input on the facility near Nanyuki.",
+   "date": "2026-11-26",
+   "place": "Nanyuki, Kenya",
+   "tz": "Africa/Nairobi",
+   "publisher": "Al Jazeera",
+   "title": "Kenya gov’t violated constitution with Ebola quarantine site, court says",
+   "url": "https://www.aljazeera.com/news/2026/11/26/kenya-govt-violated-constitution-with-ebola-quarantine-site-court-says",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
+  {
+   "h": "Israeli attacks kill eight in Gaza, including education official",
+   "b": "Health officials said a senior education official and his wife were among those killed despite the ceasefire.",
+   "date": "2026-11-26",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Israeli attacks on Gaza kill senior education official, seven other people",
+   "url": "https://www.aljazeera.com/news/2026/11/26/israeli-attacks-on-gaza-kill-senior-education-official-seven-other-people",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
+  {
+   "h": "Iraq denies troops moving toward Kurdish region",
+   "b": "A government spokesperson called the reports untrue as Baghdad presses its claim over Kurdish border crossings and oil, citing smuggling.",
+   "date": "2026-11-26",
+   "place": "Baghdad, Iraq",
+   "tz": "Asia/Baghdad",
+   "publisher": "Al Jazeera",
+   "title": "Iraq denies reports of troop movements towards Kurdish region",
+   "url": "https://www.aljazeera.com/news/2026/11/26/iraq-denies-reports-of-troop-movements-towards-kurdish-region",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
+  {
    "h": "Puerto Rico's top court ends Luma Energy contract",
    "b": "In a tight vote, the Supreme Court sided with the government's bid to cancel the private power company's contract after years of outages.",
    "date": "2026-11-26",
    "place": "San Juan, Puerto Rico",
    "tz": "America/Puerto_Rico",
-   "publisher": "Al Jazeera",
-   "title": "Puerto Rico’s Supreme Court cancels major power contract",
    "url": "https://www.aljazeera.com/news/2026/11/26/puerto-ricos-supreme-court-cancels-major-power-contract",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -341,8 +401,6 @@
    "h": "South Korea raises interest rates amid chip boom",
    "b": "The Bank of Korea lifted its key rate a quarter point to 3.25%, citing strong growth driven by AI chip demand and above-target inflation.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "South Korea’s central bank hikes interest rates amid AI chip boom",
    "url": "https://www.aljazeera.com/economy/2026/11/26/south-koreas-central-bank-hikes-interest-rates-raises-gdp-growth-forecast",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -350,8 +408,6 @@
    "h": "Amodei denies wanting humans to cede control to AI",
    "b": "In a post on X, the Anthropic CEO said he does not support surrendering 'human free will' to AI and that the technology should be subject to democratic processes.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI",
    "url": "https://www.aljazeera.com/economy/2026/11/26/anthropic-ceo-amodei-denies-wanting-humanity-to-surrender-free-will-to-ai",
    "gathered": "2026-11-26T05:12:41Z"
   },
@@ -491,11 +547,7 @@
    "h": "Little Free Bakeries bring neighbors together",
    "b": "Like Little Free Libraries but with baked goods, pop-ups such as Sarah Mason's monthly table in Austin's North Loop draw lines of neighbors.",
    "date": "2026-11-25",
-   "publisher": "KUOW",
-   "title": "At this Little Free Bakery in Austin, neighbors come for the pastries and stay for community connection",
    "url": "https://www.kuow.org/npr-news/2026-11-25/at-this-little-free-bakery-in-austin-neighbors-come-for-the-pastries-and-stay-for-community-connection",
-   "published": "2026-11-25T21:02:58Z",
-   "updated": "2026-11-25T22:28:15Z",
    "gathered": "2026-11-25T23:12:06Z"
   },
   {
@@ -507,6 +559,26 @@
   }
  ],
  "local": [
+  {
+   "h": "Bill would let crash victims track NYPD investigations online",
+   "b": "A City Council proposal would require a secure site showing case status, summonses, arrests and witnesses for victims of serious crashes.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "NYC bill would give crash victims online access to NYPD investigation updates",
+   "url": "https://gothamist.com/news/nyc-bill-would-give-crash-victims-online-access-to-nypd-investigation-updates",
+   "published": "2026-11-26T11:31:01Z",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
+  {
+   "h": "NYC urged to stay inside as Thanksgiving storm peaks",
+   "b": "Forecasters say wind and heavy rain peak this afternoon; Mayor Mamdani warned families they may need to stay put longer than planned.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "Fowl weather alert: Thanksgiving Day in NYC to bring cornucopia of wind and rain",
+   "url": "https://gothamist.com/news/fowl-weather-alert-thanksgiving-day-in-nyc-to-bring-cornucopia-of-wind-and-rain",
+   "published": "2026-11-26T12:00:47Z",
+   "gathered": "2026-11-26T12:59:53Z"
+  },
   {
    "h": "Board backs replacing Tompkins Square pull-up bars",
    "b": "The East Village community board supported the parks department's plan to replace the '90s-era calisthenics equipment in a nearly $10 million renovation.",
@@ -565,8 +637,7 @@
    "publisher": "Gothamist",
    "title": "Judge upholds NYC rent freeze, marking win for Mamdani and his affordability agenda",
    "url": "https://gothamist.com/news/judge-upholds-nyc-rent-freeze-marking-win-for-mamdani-and-his-affordability-agenda",
-   "published": "2026-11-25T18:49:00Z",
-   "updated": "2026-11-25T22:26:00Z",
+   "published": "2026-11-25T22:26:00Z",
    "gathered": "2026-11-25T20:03:08Z"
   },
   {
@@ -594,19 +665,19 @@
   "now": {
    "temp": 43,
    "cond": "Overcast",
-   "wind": "NE 13 mph, gusts to 29 mph",
+   "wind": "E 15 mph, gusts to 33 mph",
    "humidity": 74,
-   "obs": "26 Nov 02:51 am EST"
+   "obs": "26 Nov 07:51 am EST"
   },
   "periods": [
    {
     "name": "Thanksgiving Day",
     "kind": "high",
     "temp": 60,
-    "text": "Rain, mainly after 10am. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 26 to 32 mph, with gusts as high as 60 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
+    "text": "Rain, mainly after 10am. The rain could be heavy at times.  High near 60. Windy, with a northeast wind 28 to 32 mph, with gusts as high as 60 mph.  Chance of precipitation is 100%. New precipitation amounts between three quarters and one inch possible. "
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 54,
     "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 60 by midnight. Windy, with a northeast wind 28 to 33 mph becoming east 14 to 19 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
@@ -627,7 +698,7 @@
     "name": "Saturday",
     "kind": "high",
     "temp": 55,
-    "text": "Partly sunny, with a high near 55."
+    "text": "Partly sunny, with a high near 55. West wind 14 to 17 mph. "
    },
    {
     "name": "Saturday Night",
