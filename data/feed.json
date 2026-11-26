@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T05:12:00Z",
+ "updatedAt": "2026-11-26T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -47,7 +47,7 @@
    "date": "2026-11-25",
    "place": "Giza, Egypt",
    "publisher": "Al Jazeera",
-   "title": "At least 30 killed in Egypt vehicle fire, health ministry says",
+   "title": "At least 31 killed in Egypt vehicle fire, Health Ministry says",
    "url": "https://www.aljazeera.com/news/2026/11/25/at-least-30-killed-in-egypt-vehicle-fire-health-ministry-says",
    "gathered": "2026-11-25T20:03:08Z"
   },
@@ -178,8 +178,6 @@
    "date": "2026-11-26",
    "place": "Hasakah, Syria",
    "tz": "Asia/Damascus",
-   "publisher": "Al Jazeera",
-   "title": "Two Syrian security personnel killed in ISIL suicide attack",
    "url": "https://www.aljazeera.com/news/2026/11/26/two-syrian-security-personnel-killed-in-isil-suicide-attack",
    "gathered": "2026-11-26T02:58:55Z"
   },
@@ -302,6 +300,15 @@
   }
  ],
  "business": [
+  {
+   "h": "Amodei denies wanting humans to cede control to AI",
+   "b": "In a post on X, the Anthropic CEO said he does not support surrendering 'human free will' to AI and that the technology should be subject to democratic processes.",
+   "date": "2026-11-25",
+   "publisher": "Al Jazeera",
+   "title": "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI",
+   "url": "https://www.aljazeera.com/economy/2026/11/26/anthropic-ceo-amodei-denies-wanting-humanity-to-surrender-free-will-to-ai",
+   "gathered": "2026-11-26T05:12:41Z"
+  },
   {
    "h": "Core inflation hits 3-year high, raising rate-hike talk",
    "b": "The PCE index rose 3.8% from a year earlier in October, and core inflation also accelerated, moving farther from the Fed's 2% target.",
@@ -529,17 +536,17 @@
  "weather": {
   "now": {
    "temp": 44,
-   "cond": "Overcast",
-   "wind": "NE 10 mph, gusts to 22 mph",
-   "humidity": 60,
-   "obs": "25 Nov 21:51 pm EST"
+   "cond": "Mostly Cloudy",
+   "wind": "NE 9 mph, gusts to 23 mph",
+   "humidity": 68,
+   "obs": "25 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
-    "temp": 47,
-    "text": "Cloudy, with a temperature rising to around 51 by 3am. Breezy, with a northeast wind 10 to 15 mph increasing to 17 to 22 mph after midnight. "
+    "temp": 51,
+    "text": "Cloudy, with a steady temperature around 51. Breezy, with a northeast wind 17 to 22 mph. "
    },
    {
     "name": "Thanksgiving Day",
