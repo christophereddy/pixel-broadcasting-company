@@ -8,11 +8,11 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 39,
-    "cond": "Overcast",
-    "wind": "W 10 mph",
+    "temp": 40,
+    "cond": "Light Drizzle",
+    "wind": "W 15 mph, gusts to 25 mph",
     "humidity": 79,
-    "obs": "27 Nov 05:52 am EST"
+    "obs": "27 Nov 08:52 am EST"
    },
    "periods": [
     {
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,18 +88,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
+    "temp": 48,
     "cond": "Fog/Mist",
-    "wind": "N 9 mph",
+    "wind": "NE 9 mph",
     "humidity": 96,
-    "obs": "27 Nov 05:54 am EST"
+    "obs": "27 Nov 08:54 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 61,
-     "text": "A chance of rain before 11am, then a chance of rain after 4pm.  Patchy fog before 10am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 61. Light and variable wind becoming southwest 6 to 11 mph in the morning. Winds could gust as high as 29 mph.  Chance of precipitation is 30%."
+     "text": "A chance of rain before 11am, then a chance of rain after 4pm.  Patchy fog before 10am.  Otherwise, cloudy, then gradually becoming mostly sunny, with a high near 61. Southwest wind 6 to 11 mph, with gusts as high as 29 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -145,7 +145,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -181,21 +181,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 43,
-    "cond": "Light Rain Fog/Mist",
-    "wind": "N 17 mph, gusts to 24 mph",
-    "humidity": 89,
-    "obs": "27 Nov 04:53 am CST"
+    "temp": 39,
+    "cond": "Overcast",
+    "wind": "NW 15 mph",
+    "humidity": 76,
+    "obs": "27 Nov 07:53 am CST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
-     "temp": 44,
-     "text": "Rain, mainly before 9am.  Steady temperature around 44. Breezy, with a northwest wind 20 to 25 mph decreasing to 10 to 15 mph in the afternoon.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
+     "temp": 47,
+     "text": "Rain likely, mainly before noon.  Mostly cloudy, with a high near 47. Breezy, with a northwest wind 10 to 20 mph, with gusts as high as 25 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 33,
      "text": "Increasing clouds, with a low around 33. West southwest wind around 10 mph, with gusts as high as 15 mph. "
@@ -216,7 +216,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 45,
-     "text": "Rain.  High near 45. Breezy.  Chance of precipitation is 90%."
+     "text": "Rain.  High near 45. Breezy, with a west southwest wind 5 to 10 mph becoming north northwest 15 to 20 mph in the morning. Winds could gust as high as 25 mph.  Chance of precipitation is 90%."
     },
     {
      "name": "Sunday Night",
@@ -238,7 +238,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -262,11 +262,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 46,
+    "temp": 55,
     "cond": "Mostly Cloudy",
-    "wind": "SW 7 mph",
-    "humidity": 29,
-    "obs": "27 Nov 03:58 am MST"
+    "wind": "W 17 mph, gusts to 29 mph",
+    "humidity": 24,
+    "obs": "27 Nov 05:58 am MST"
    },
    "periods": [
     {
@@ -319,7 +319,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -360,7 +360,6 @@
     "title": "Jose Ugarte closes in on CD-9 win with a 69-vote lead",
     "url": "https://laist.com/news/politics/jose-ugarte-closes-in-on-cd-9-win-with-a-69-vote-lead",
     "published": "2026-11-26T00:57:00Z",
-    "updated": "2026-11-26T01:02:42Z",
     "gathered": "2026-11-26T02:58:55Z"
    }
   ],
@@ -368,18 +367,18 @@
    "now": {
     "temp": 59,
     "wind": "Calm",
-    "humidity": 39,
-    "obs": "27 Nov 02:30 AM PST"
+    "humidity": 37,
+    "obs": "27 Nov 04:20 AM PST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 84,
-     "text": "Partly sunny, with a high near 84. Calm wind becoming west around 5 mph in the afternoon. "
+     "text": "Partly sunny, with a high near 84. North northeast wind around 5 mph becoming calm. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 57,
      "text": "Mostly cloudy, with a low around 57. Calm wind becoming east northeast around 5 mph. "
@@ -400,7 +399,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 73,
-     "text": "Mostly sunny, with a high near 73."
+     "text": "Mostly sunny, with a high near 73. East wind around 5 mph becoming southwest in the afternoon. "
     },
     {
      "name": "Sunday Night",
@@ -422,7 +421,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -433,6 +432,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Broken streetlight repairs slow down",
+    "b": "Complaints rose 16% last fiscal year and average repair times grew 60%, to 8.5 days, DOT data shows.",
+    "date": "2026-11-27",
+    "publisher": "Gothamist",
+    "title": "Busted NYC streetlights wait longer for repairs after brutal winter",
+    "url": "https://gothamist.com/news/busted-nyc-streetlights-wait-longer-for-repairs-after-brutal-winter",
+    "published": "2026-11-27T14:00:53Z",
+    "gathered": "2026-11-27T14:12:49Z"
+   },
    {
     "h": "Christmas tree season opens in NYC",
     "b": "Gothamist is tracking tree prices again; last year readers reported an average of $116, from a $10 mini to a $633 Fraser fir.",
@@ -496,18 +505,17 @@
   ],
   "weather": {
    "now": {
-    "temp": 56,
-    "cond": "Overcast",
-    "wind": "W 5 mph",
-    "humidity": 93,
-    "obs": "27 Nov 05:51 am EST"
+    "temp": 53,
+    "cond": "A Few Clouds",
+    "humidity": 80,
+    "obs": "27 Nov 08:51 am EST"
    },
    "periods": [
     {
      "name": "Today",
      "kind": "high",
      "temp": 56,
-     "text": "A chance of rain before 10am, then a chance of showers after 1pm.  Cloudy through mid morning, then becoming mostly sunny, with a temperature falling to around 50 by 3pm. Breezy, with a southwest wind 17 to 20 mph.  Chance of precipitation is 50%."
+     "text": "A slight chance of showers before 10am, then a chance of showers after 1pm.  Increasing clouds, with a temperature falling to around 50 by 3pm. Breezy, with a southwest wind 18 to 20 mph.  Chance of precipitation is 30%."
     },
     {
      "name": "Tonight",
@@ -553,7 +561,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -577,6 +585,17 @@
   },
   "local": [
    {
+    "h": "Tsunami alert test planned for Nice and Cannes",
+    "b": "Sirens and loudspeaker warnings on Monday afternoon will be part of a civil security exercise.",
+    "date": "2026-11-27",
+    "publisher": "The Local France",
+    "title": "French Riviera: Tsunami alert test in Nice and Cannes",
+    "url": "https://www.thelocal.fr/20261127/french-riviera-tsunami-alert-test-in-nice-and-cannes",
+    "published": "2026-11-27T13:43:37Z",
+    "updated": "2026-11-27T13:43:38Z",
+    "gathered": "2026-11-27T14:12:49Z"
+   },
+   {
     "h": "Marie-Antoinette's porcelain bowl sells for record €2.9M",
     "b": "The Sèvres piece, thought lost for two centuries, was rediscovered in a Paris gallery's inventory before the auction.",
     "date": "2026-11-27",
@@ -591,11 +610,7 @@
     "h": "Free land revives a French village",
     "b": "Parlan in Cantal has drawn hundreds of new residents since 2008 by offering plots to first-time homeowners who commit to stay 10 years.",
     "date": "2026-11-26",
-    "publisher": "The Local France",
-    "title": "French village tackles depopulation after offering near-free plots of land",
     "url": "https://www.thelocal.fr/20261126/french-village-tackles-depopulation-with-near-free-plots-of-land",
-    "published": "2026-11-26T12:57:28Z",
-    "updated": "2026-11-26T12:57:29Z",
     "gathered": "2026-11-26T23:12:01Z"
    },
    {
@@ -629,7 +644,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "goodnews": []
  },
  {
@@ -649,24 +664,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
+    "temp": 50,
     "cond": "Clear",
-    "wind": "SE 11 mph",
-    "humidity": 92,
-    "obs": "27 Nov 02:53 AM PST"
+    "wind": "S 6 mph",
+    "humidity": 86,
+    "obs": "27 Nov 05:53 AM PST"
    },
    "periods": [
     {
-     "name": "Friday",
+     "name": "Today",
      "kind": "high",
      "temp": 50,
      "text": "Rain, mainly after noon.  High near 50. South wind 3 to 7 mph.  Chance of precipitation is 90%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
-     "name": "Friday Night",
+     "name": "Tonight",
      "kind": "low",
-     "temp": 42,
-     "text": "Mostly cloudy, with a low around 42. Calm wind. "
+     "temp": 41,
+     "text": "Mostly cloudy, with a low around 41. Calm wind. "
     },
     {
      "name": "Saturday",
@@ -677,20 +692,20 @@
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 45,
-     "text": "A 10 percent chance of rain after 4am.  Mostly cloudy, with a low around 45. Light north wind. "
+     "temp": 42,
+     "text": "A 10 percent chance of rain after 4am.  Mostly cloudy, with a low around 42. Light north wind. "
     },
     {
      "name": "Sunday",
      "kind": "high",
      "temp": 49,
-     "text": "Rain likely, mainly after 10am.  Cloudy, with a high near 49. Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain likely, mainly after 10am.  Cloudy, with a high near 49. Light north wind.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Sunday Night",
      "kind": "low",
-     "temp": 44,
-     "text": "Rain.  Low around 44. Chance of precipitation is 100%."
+     "temp": 45,
+     "text": "Rain.  Low around 45. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -706,7 +721,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T14:12:00Z",
+  "updatedAt": "2026-11-27T17:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
