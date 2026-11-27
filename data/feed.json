@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T05:12:00Z",
+ "updatedAt": "2026-11-27T08:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -60,6 +60,15 @@
  ],
  "national": [
   {
+   "h": "Thanksgiving storms leave nearly 1 million without power",
+   "b": "Heavy storms disrupted travel nationwide, with more than 2,000 flights delayed and 400 canceled, and forced Macy's parade to Saturday.",
+   "date": "2026-11-27",
+   "publisher": "Al Jazeera",
+   "title": "Thanksgiving storms leave nearly a million without power across the US",
+   "url": "https://www.aljazeera.com/news/2026/11/27/thanksgiving-storms-leave-nearly-a-million-without-power-across-the-us",
+   "gathered": "2026-11-27T05:14:49Z"
+  },
+  {
    "h": "Report: CIA waterboarded more people than it admitted",
    "b": "The New York Times reported the finding after suing for material gathered by special prosecutor John Durham; the CIA had admitted waterboarding three people.",
    "date": "2026-11-26",
@@ -79,13 +88,6 @@
    "date": "2026-11-26",
    "place": "Pacifica, California",
    "url": "https://www.pbs.org/newshour/nation/king-tides-and-strong-waves-destroy-part-of-pacifica-pier-as-officials-warn-of-coastal-flooding",
-   "gathered": "2026-11-26T17:12:01Z"
-  },
-  {
-   "h": "Rain, wind and flooding hit much of US on Thanksgiving",
-   "b": "An East Coast storm postponed Macy's 100th parade to Saturday, while king tides brought flood warnings out West.",
-   "date": "2026-11-26",
-   "url": "https://www.pbs.org/newshour/nation/thanksgiving-holiday-plagued-by-heavy-rain-wind-and-flooding-across-much-of-the-u-s",
    "gathered": "2026-11-26T17:12:01Z"
   },
   {
@@ -280,8 +282,6 @@
    "h": "Musk pledges two SpaceX shares for every US child",
    "b": "The giveaway, worth about $18 billion, came hours after SpaceX won approval to deploy 1 million satellites for space data centers.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "Musk pledges two SpaceX shares for every US child",
    "url": "https://www.aljazeera.com/economy/2026/11/26/musk-pledges-two-spacex-shares-for-every-us-child",
    "gathered": "2026-11-26T22:29:57Z"
   },
@@ -405,18 +405,17 @@
  ],
  "weather": {
   "now": {
-   "temp": 51,
-   "cond": "Light Rain Fog/Mist",
-   "wind": "E 12 mph, gusts to 28 mph",
-   "humidity": 92,
-   "obs": "26 Nov 22:51 pm EST"
+   "temp": 52,
+   "cond": "Fog/Mist",
+   "humidity": 97,
+   "obs": "26 Nov 23:51 pm EST"
   },
   "periods": [
    {
-    "name": "Tonight",
+    "name": "Overnight",
     "kind": "low",
     "temp": 59,
-    "text": "Rain likely, mainly before 1am.  Cloudy, with a steady temperature around 59. Breezy, with a northeast wind 13 to 23 mph becoming south after midnight. Winds could gust as high as 37 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "text": "Rain likely, mainly before 1am.  Cloudy, with a steady temperature around 59. East wind 13 to 18 mph becoming south. Winds could gust as high as 31 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday",
