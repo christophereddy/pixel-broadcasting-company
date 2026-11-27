@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T20:12:00Z",
+ "updatedAt": "2026-11-27T23:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,19 +7,50 @@
  },
  "world": [
   {
-   "h": "LIVE: Explosion rocks Sanaa",
-   "b": "An explosion hit Yemen's capital as Houthi missiles were intercepted over Riyadh. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
-   "date": "2026-11-26",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh",
-   "gathered": "2026-11-26T08:15:21Z"
+   "h": "LIVE: IRGC says tanker hit in Hormuz",
+   "b": "Iran's Revolutionary Guard says a tanker was hit in the Strait of Hormuz and a hostile drone downed in the southeast.",
+   "date": "2026-11-27",
+   "publisher": "Al Jazeera",
+   "title": "Iran’s IRGC says tanker hit in Hormuz, ‘hostile drone’ downed in southeast",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Pakistan, Turkiye vow to defend Saudi Arabia from Houthis",
+   "b": "Mecca defence pact ministers met in Islamabad and denounced continuing Houthi attacks on the kingdom.",
+   "date": "2026-11-27",
+   "place": "Islamabad, Pakistan",
+   "publisher": "Al Jazeera",
+   "title": "Mecca pact allies condemn ‘heinous’ Houthi attacks on Saudi Arabia",
+   "url": "https://www.aljazeera.com/news/2026/11/27/mecca-pact-allies-condemn-heinous-houthi-attacks-on-saudi-arabia",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "US disables ship trying to run Iran blockade",
+   "b": "A US aircraft struck the stern of the Palau-flagged Pacific Archer in the Gulf of Oman; the crew was unharmed.",
+   "date": "2026-11-27",
+   "place": "Gulf of Oman",
+   "publisher": "PBS NewsHour",
+   "title": "U.S. military says it disabled another ship that tried to breach naval blockade on Iranian ports",
+   "url": "https://www.pbs.org/newshour/world/u-s-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports",
+   "published": "2026-11-27T19:39:21Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Putin unveils nuclear submarine armed with hypersonic missiles",
+   "b": "Moscow says the Yasen-M sub Perm is the first equipped with Zircon missiles.",
+   "date": "2026-11-27",
+   "place": "Severodvinsk, Russia",
+   "publisher": "Al Jazeera",
+   "title": "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons",
+   "url": "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons",
+   "gathered": "2026-11-27T22:51:26Z"
   },
   {
    "h": "Strike on Saudi Jazan refinery kills worker",
    "b": "Saudi Arabia said a projectile hit the Red Sea refinery, starting a fire; the Saudi-led coalition blamed Yemen's Houthis.",
    "date": "2026-11-26",
    "place": "Jazan, Saudi Arabia",
-   "publisher": "Al Jazeera",
-   "title": "Attack on Saudi’s Jazan refinery kills one person, disrupts operations",
    "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations",
    "gathered": "2026-11-26T22:29:57Z"
   },
@@ -28,8 +59,6 @@
    "b": "Prosecutors ordered a 21-year-old held over the ring-road collision that overturned a fuel tanker, and sent him for drug tests.",
    "date": "2026-11-26",
    "place": "Giza, Egypt",
-   "publisher": "Al Jazeera",
-   "title": "Egypt detains driver over Cairo fuel tanker fire that killed 31",
    "url": "https://www.aljazeera.com/news/2026/11/26/egypt-detains-driver-over-cairo-fuel-tanker-fire-that-killed-31",
    "gathered": "2026-11-26T22:29:57Z"
   },
@@ -60,13 +89,22 @@
  ],
  "national": [
   {
+   "h": "NY Senate leader Andrea Stewart-Cousins dies at 76",
+   "b": "The Yonkers Democrat was the first Black woman to lead a legislative conference in Albany.",
+   "date": "2026-11-27",
+   "place": "Albany, N.Y.",
+   "publisher": "Gothamist",
+   "title": "State Senate Majority Leader Andrea Stewart-Cousins has died",
+   "url": "https://gothamist.com/news/state-senate-majority-leader-andrea-stewart-cousins-has-died",
+   "published": "2026-11-27T19:19:00Z",
+   "updated": "2026-11-27T21:38:00Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
    "h": "East Coast rain winds down as power slowly returns",
    "b": "Hundreds of thousands remain without power after storms brought flooding and water rescues from New York to Virginia.",
    "date": "2026-11-27",
-   "publisher": "PBS NewsHour",
-   "title": "Heavy rain winds down as power remains out for hundreds of thousands on the East Coast",
    "url": "https://www.pbs.org/newshour/nation/heavy-rain-winds-down-as-power-remains-out-for-hundreds-of-thousands-on-the-east-coast",
-   "published": "2026-11-27T15:15:26Z",
    "gathered": "2026-11-27T17:12:47Z"
   },
   {
@@ -129,11 +167,18 @@
  ],
  "politics": [
   {
+   "h": "Trump's GAO pick raises impartiality concerns",
+   "b": "Democrats and some Republicans worry Eric Ueland would audit programs he worked on at OMB.",
+   "date": "2026-11-27",
+   "publisher": "Marketplace",
+   "title": "Here's why you should care who leads the Government Accountability Office",
+   "url": "https://www.marketplace.org/story/2026/11/27/trumps-gao-nominee-eric-ueland-raises-impartiality-concerns",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
    "h": "GOP backlash over Trump's role in Huang's return",
    "b": "Republicans warn the president's push to get Nvidia's board to reinstate its CEO could hurt him with his base.",
    "date": "2026-11-27",
-   "publisher": "Al Jazeera",
-   "title": "‘Playing with fire’: Trump faces GOP backlash over Nvidia CEO’s return",
    "url": "https://www.aljazeera.com/news/2026/11/27/playing-with-fire-republicans-incensed-after-trump-gets-huang-reinstated",
    "gathered": "2026-11-27T17:12:47Z"
   },
@@ -141,18 +186,13 @@
    "h": "Republicans rethink tariffs after election losses",
    "b": "Many GOP lawmakers say they're open to revisiting levies, giving Democrats a potential opening when they take Congress.",
    "date": "2026-11-27",
-   "publisher": "PBS NewsHour",
-   "title": "Republicans rethink tariffs, giving Democrats an opening to challenge Trump",
    "url": "https://www.pbs.org/newshour/politics/republicans-rethink-tariffs-giving-democrats-an-opening-to-challenge-trump",
-   "published": "2026-11-27T16:51:50Z",
    "gathered": "2026-11-27T17:12:47Z"
   },
   {
    "h": "Trump downplays Russia, China support for Iran",
    "b": "In Thanksgiving calls with US troops, Trump also claimed Iran has missiles capable of reaching Europe.",
    "date": "2026-11-27",
-   "publisher": "Al Jazeera",
-   "title": "Trump downplays Russia, China support for Iran during talks with US troops",
    "url": "https://www.aljazeera.com/news/2026/11/27/trump-downplays-russia-china-support-for-iran-during-talks-with-us-troops",
    "gathered": "2026-11-27T04:25:48Z"
   },
@@ -180,6 +220,76 @@
  ],
  "international": [
   {
+   "h": "EU budget talks stall, leaving Ukraine loan in limbo",
+   "b": "Leaders failed after 12 hours to agree on the 2028-2034 budget and will try again.",
+   "date": "2026-11-27",
+   "place": "Brussels, Belgium",
+   "tz": "Europe/Brussels",
+   "publisher": "PBS NewsHour",
+   "title": "A Ukraine loan is in limbo after EU budget talks stall. Leaders will try again",
+   "url": "https://www.pbs.org/newshour/world/a-ukraine-loan-is-in-limbo-after-eu-budget-talks-stall-leaders-will-try-again",
+   "published": "2026-11-27T18:19:36Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Thousands protest cost of living in San Juan",
+   "b": "Retirees, students and workers rallied over record electric rates and failing services on Black Friday.",
+   "date": "2026-11-27",
+   "place": "San Juan, Puerto Rico",
+   "tz": "America/Puerto_Rico",
+   "publisher": "PBS NewsHour",
+   "title": "Protesters take to the streets in Puerto Rico's capital as standard of living deteriorates",
+   "url": "https://www.pbs.org/newshour/nation/protesters-take-to-the-streets-in-puerto-ricos-capital-as-standard-of-living-deteriorates",
+   "published": "2026-11-27T22:10:46Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Mexico slams DEA tip line as foreign interference",
+   "b": "The US agency's WhatsApp line for reports on cartels and corrupt officials drew early tips from Sinaloa.",
+   "date": "2026-11-27",
+   "place": "Mexico City, Mexico",
+   "tz": "America/Mexico_City",
+   "publisher": "PBS NewsHour",
+   "title": "Mexico's government is slamming a DEA crime tip line as foreign interference. Others are thrilled.",
+   "url": "https://www.pbs.org/newshour/world/mexicos-government-is-slamming-a-dea-crime-tip-line-as-foreign-interference-others-are-thrilled",
+   "published": "2026-11-27T21:36:37Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Canada's top court largely upholds Quebec religious symbols ban",
+   "b": "The ruling affirmed Bill 21, which bars some public employees from wearing religious symbols at work.",
+   "date": "2026-11-27",
+   "place": "Ottawa, Canada",
+   "tz": "America/Toronto",
+   "publisher": "PBS NewsHour",
+   "title": "Canada’s Supreme Court largely upholds a Quebec ban on religious symbols for public servants",
+   "url": "https://www.pbs.org/newshour/world/canadas-supreme-court-largely-upholds-a-quebec-ban-on-religious-symbols-for-public-servants",
+   "published": "2026-11-27T20:48:47Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Hamas chief's son survives Israeli strike as four killed",
+   "b": "Hamas said a son of Khalil al-Hayya survived an air strike targeting his family in Gaza.",
+   "date": "2026-11-27",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Israel kills four in Gaza as Hamas chief al-Hayya’s son survives strike",
+   "url": "https://www.aljazeera.com/news/2026/11/27/israel-kills-four-in-gaza-as-hamas-chief-al-hayyas-son-survives-strike",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Venezuela to repeal law barring opposition from office",
+   "b": "The assembly chief said the 2024 law, criticized as enabling persecution, answered a specific moment.",
+   "date": "2026-11-27",
+   "place": "Caracas, Venezuela",
+   "tz": "America/Caracas",
+   "publisher": "Al Jazeera",
+   "title": "Venezuela to repeal law that bans opposition figures from office",
+   "url": "https://www.aljazeera.com/news/2026/11/27/venezuela-to-repeal-law-that-bans-opposition-figures-from-office",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
    "h": "Le Pen backs Bardella over antisemitism claims",
    "b": "New reports allege her protege made antisemitic remarks as a teenager in private messages; he denies them.",
    "date": "2026-11-27",
@@ -198,10 +308,7 @@
    "date": "2026-11-27",
    "place": "Belgrade, Serbia",
    "tz": "Europe/Belgrade",
-   "publisher": "PBS NewsHour",
-   "title": "Serbia's student movement proposes a chemistry professor for presidency ahead of Dec. 27 ballot",
    "url": "https://www.pbs.org/newshour/world/serbias-student-movement-proposes-a-chemistry-professor-for-presidency-ahead-of-dec-27-ballot",
-   "published": "2026-11-27T15:51:35Z",
    "gathered": "2026-11-27T17:12:47Z"
   },
   {
@@ -210,10 +317,7 @@
    "date": "2026-11-27",
    "place": "Kyiv, Ukraine",
    "tz": "Europe/Kyiv",
-   "publisher": "PBS NewsHour",
-   "title": "Zelenskyy urges the U.S. to pressure Putin, calling Trump’s 'my friend' remark strange",
    "url": "https://www.pbs.org/newshour/world/zelenskyy-urges-the-u-s-to-pressure-putin-calling-trumps-my-friend-remark-strange",
-   "published": "2026-11-27T15:31:42Z",
    "gathered": "2026-11-27T17:12:47Z"
   },
   {
@@ -244,8 +348,6 @@
    "date": "2026-11-27",
    "place": "Buenos Aires, Argentina",
    "tz": "America/Argentina/Buenos_Aires",
-   "publisher": "Al Jazeera",
-   "title": "Argentina bars Central Bank from printing money to fund government spending",
    "url": "https://www.aljazeera.com/news/2026/11/27/argentina-bars-central-bank-from-printing-money-to-fund-government-spending",
    "gathered": "2026-11-27T04:25:48Z"
   },
@@ -255,8 +357,6 @@
    "date": "2026-11-26",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Why are winter rains forcing Palestinians in Gaza to flee again?",
    "url": "https://www.aljazeera.com/news/2026/11/26/why-are-winter-rains-forcing-palestinians-in-gaza-to-flee-again",
    "gathered": "2026-11-26T23:12:01Z"
   },
@@ -344,6 +444,15 @@
  ],
  "business": [
   {
+   "h": "OpenAI countersues Apple over trade secrets",
+   "b": "The ChatGPT maker accuses Apple of trapping employees and blocking its access to hardware suppliers.",
+   "date": "2026-11-27",
+   "publisher": "Al Jazeera",
+   "title": "OpenAI countersues Apple over trade secrets as AI race heats up",
+   "url": "https://www.aljazeera.com/economy/2026/11/27/openai-countersues-apple-over-trade-secrets-as-ai-race-heats-up",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
    "h": "Record El Niño rocks Peru's anchovy fishery",
    "b": "The world's largest single-species fishery is being hit, a reminder of the weather pattern's economic toll.",
    "date": "2026-11-27",
@@ -356,8 +465,6 @@
    "h": "Food banks see demand climb as donations lag",
    "b": "Inflation, higher gas prices and SNAP cuts have driven a year-long rise in families seeking help.",
    "date": "2026-11-27",
-   "publisher": "Marketplace",
-   "title": "Food banks are getting more requests and fewer donations",
    "url": "https://www.marketplace.org/story/2026/11/27/food-banks-are-getting-more-requests-and-fewer-donations",
    "gathered": "2026-11-27T14:12:49Z"
   },
@@ -374,8 +481,6 @@
    "h": "Oil glut possible despite wars and high prices",
    "b": "IEA figures show global oil supply surpassing demand this quarter, a trend likely to continue in 2027.",
    "date": "2026-11-26",
-   "publisher": "Marketplace",
-   "title": "Despite market disruptions, is an oil glut on the way?",
    "url": "https://www.marketplace.org/story/2026/11/26/are-markets-in-for-an-oil-glut-in-2027",
    "gathered": "2026-11-26T23:12:01Z"
   },
@@ -410,6 +515,16 @@
  ],
  "science": [
   {
+   "h": "Drones and a sniffer dog check endangered orcas' health",
+   "b": "Researchers collect spout droplets and scat as Southern Resident killer whales spend less time in the Salish Sea.",
+   "date": "2026-11-27",
+   "publisher": "PBS NewsHour",
+   "title": "Using a drone and a poop-sniffing dog, scientists perform health checks on endangered orcas",
+   "url": "https://www.pbs.org/newshour/science/using-a-drone-and-a-poop-sniffing-dog-scientists-perform-health-checks-on-endangered-orcas",
+   "published": "2026-11-27T18:43:47Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
    "h": "What are king tides?",
    "b": "These highest tides of the year come when the sun, moon and Earth nearly align, and this year's super El Niño has pushed coastal water levels higher.",
    "date": "2026-11-26",
@@ -429,10 +544,7 @@
    "h": "Williams' late TD lifts Bears past Lions 39-35",
    "b": "Chicago rallied from 14 down, with a 6-yard pass to Rome Odunze with 3 seconds left, to take first place.",
    "date": "2026-11-27",
-   "publisher": "PBS NewsHour",
-   "title": "NFL's Thanksgiving tripleheader has impressive comebacks and fantastic finishes",
    "url": "https://www.pbs.org/newshour/nation/nfls-thanksgiving-tripleheader-has-impressive-comebacks-and-fantastic-finishes",
-   "published": "2026-11-27T17:03:28Z",
    "gathered": "2026-11-27T17:12:47Z"
   },
   {
@@ -467,6 +579,17 @@
   }
  ],
  "local": [
+  {
+   "h": "Senate Majority Leader Stewart-Cousins dies",
+   "b": "The Yonkers Democrat, 76, died unexpectedly two weeks after being re-elected to lead Senate Democrats.",
+   "date": "2026-11-27",
+   "publisher": "Gothamist",
+   "title": "State Senate Majority Leader Andrea Stewart-Cousins has died",
+   "url": "https://gothamist.com/news/state-senate-majority-leader-andrea-stewart-cousins-has-died",
+   "published": "2026-11-27T19:19:00Z",
+   "updated": "2026-11-27T21:38:00Z",
+   "gathered": "2026-11-27T22:51:26Z"
+  },
   {
    "h": "Clear skies expected for Saturday's Macy's parade",
    "b": "Forecast winds stay below the limits for flying the giant balloons at the postponed parade.",
@@ -550,48 +673,48 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
+   "temp": 48,
    "cond": "Overcast",
-   "wind": "W 6 mph",
-   "humidity": 69,
-   "obs": "27 Nov 11:51 am EST"
+   "wind": "SW 9 mph, gusts to 24 mph",
+   "humidity": 74,
+   "obs": "27 Nov 17:51 pm EST"
   },
   "periods": [
    {
-    "name": "This Afternoon",
-    "kind": "high",
-    "temp": 51,
-    "text": "A 30 percent chance of showers, mainly between 1pm and 4pm.  Mostly cloudy, with a steady temperature around 51. Breezy, with a southwest wind 18 to 20 mph. "
-   },
-   {
     "name": "Tonight",
     "kind": "low",
-    "temp": 46,
-    "text": "Mostly cloudy, with a low around 46. Southwest wind around 18 mph. "
+    "temp": 45,
+    "text": "A 30 percent chance of showers before 7pm.  Mostly cloudy, with a low around 45. Southwest wind 16 to 18 mph. "
    },
    {
     "name": "Saturday",
     "kind": "high",
-    "temp": 54,
-    "text": "Partly sunny, with a high near 54. West wind 16 to 18 mph. "
+    "temp": 53,
+    "text": "Partly sunny, with a high near 53. Breezy, with a west wind 16 to 20 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 47,
-    "text": "Mostly clear, with a low around 47. West wind 9 to 16 mph. "
+    "temp": 42,
+    "text": "Mostly cloudy, then gradually becoming clear, with a low around 42. West wind 10 to 16 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 57,
-    "text": "Mostly sunny, with a high near 57. West wind 6 to 8 mph becoming south in the afternoon. "
+    "temp": 56,
+    "text": "Mostly sunny, with a high near 56. West wind 7 to 9 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
-    "temp": 53,
-    "text": "Rain, mainly after 1am.  Low around 53. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+    "temp": 54,
+    "text": "Rain after 1am.  Temperature rising to around 57 by midnight. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+   },
+   {
+    "name": "Monday",
+    "kind": "high",
+    "temp": 56,
+    "text": "A 30 percent chance of rain before 1pm.  Cloudy through mid morning, then gradual clearing, with a high near 56. Breezy. "
    }
   ]
  },
