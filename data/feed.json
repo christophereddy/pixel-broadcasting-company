@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T11:11:00Z",
+ "updatedAt": "2026-11-27T14:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -59,6 +59,17 @@
   }
  ],
  "national": [
+  {
+   "h": "Advocates ask Supreme Court to restore asylum",
+   "b": "The court will consider whether the president can unilaterally suspend asylum, after nearly two years of bans on claims at the border.",
+   "date": "2026-11-27",
+   "publisher": "KUOW",
+   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "url": "https://www.kuow.org/npr-news/2026-11-27/trump-effectively-ended-asylum-advocates-look-to-the-supreme-court-to-restore-it",
+   "published": "2026-11-27T10:00:00Z",
+   "updated": "2026-11-27T10:16:22Z",
+   "gathered": "2026-11-27T11:11:58Z"
+  },
   {
    "h": "Strobe Talbott, ex-deputy secretary of state, dies at 80",
    "b": "The former Time reporter, who served under President Clinton and later led the Brookings Institution, died at his East Hampton home after a long illness.",
@@ -272,6 +283,15 @@
  ],
  "business": [
   {
+   "h": "Macy's bets on luxury to win back shoppers",
+   "b": "After years of falling sales, the retailer marking its 100th parade is reinventing itself as a higher-end destination.",
+   "date": "2026-11-27",
+   "publisher": "NPR Business",
+   "title": "Can luxury save Macy's?",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6026486/macys-tries-to-reinvent-with-luxury",
+   "gathered": "2026-11-27T11:11:58Z"
+  },
+  {
    "h": "Oil glut possible despite wars and high prices",
    "b": "IEA figures show global oil supply surpassing demand this quarter, a trend likely to continue in 2027.",
    "date": "2026-11-26",
@@ -335,6 +355,17 @@
  ],
  "sports": [
   {
+   "h": "Eagles rally from 21 down to stun Cowboys",
+   "b": "Joe Milton threw two long touchdowns to DeVonta Smith against his former team as Philadelphia came back on Thanksgiving in Arlington.",
+   "date": "2026-11-27",
+   "publisher": "KUOW",
+   "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
+   "url": "https://www.kuow.org/npr-news/2026-11-27/eagles-rally-to-stun-cowboys-coming-back-from-21-points-behind",
+   "published": "2026-11-27T08:23:12Z",
+   "updated": "2026-11-27T08:27:36Z",
+   "gathered": "2026-11-27T11:11:58Z"
+  },
+  {
    "h": "Steelers cut Aaron Rodgers after he rips coach on TV",
    "b": "Pittsburgh released the 42-year-old four-time MVP Wednesday after he criticized Mike McCarthy on 'The Pat McAfee Show' following his benching.",
    "date": "2026-11-26",
@@ -354,15 +385,21 @@
    "h": "Coonhound Rocker wins National Dog Show",
    "b": "The black and tan coonhound took best in show over six other group winners.",
    "date": "2026-11-26",
-   "publisher": "KUOW",
-   "title": "Black and tan coonhound Rocker is top dog at the 2026 National Dog Show",
    "url": "https://www.kuow.org/npr-news/2026-11-26/black-and-tan-coonhound-rocker-is-top-dog-at-the-2026-national-dog-show",
-   "published": "2026-11-26T19:00:00Z",
-   "updated": "2026-11-26T19:15:37Z",
    "gathered": "2026-11-26T22:29:57Z"
   }
  ],
  "local": [
+  {
+   "h": "Christmas tree season opens in NYC",
+   "b": "Gothamist is tracking tree prices again; last year readers reported an average of $116, from a $10 mini to a $633 Fraser fir.",
+   "date": "2026-11-27",
+   "publisher": "Gothamist",
+   "title": "It's officially Christmas season in NYC. Can you afford a tree?",
+   "url": "https://gothamist.com/news/its-officially-christmas-season-in-nyc-can-you-afford-a-tree",
+   "published": "2026-11-27T11:00:47Z",
+   "gathered": "2026-11-27T11:11:58Z"
+  },
   {
    "h": "Albany to welcome 27 new Assembly Democrats",
    "b": "Democrats will hold at least 158 of the Legislature's 213 seats in January, which could decide the fate of long-stalled bills.",
@@ -416,21 +453,21 @@
  ],
  "weather": {
   "now": {
-   "temp": 54,
-   "cond": "Fog/Mist",
-   "wind": "W 3 mph",
+   "temp": 56,
+   "cond": "Overcast",
+   "wind": "W 5 mph",
    "humidity": 93,
-   "obs": "27 Nov 02:51 am EST"
+   "obs": "27 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Friday",
+    "name": "Today",
     "kind": "high",
     "temp": 56,
-    "text": "A chance of rain before 10am, then a chance of showers after 1pm.  Cloudy through mid morning, then becoming mostly sunny, with a temperature falling to around 50 by 3pm. Breezy, with a southwest wind 18 to 20 mph.  Chance of precipitation is 30%."
+    "text": "A chance of rain before 10am, then a chance of showers after 1pm.  Cloudy through mid morning, then becoming mostly sunny, with a temperature falling to around 50 by 3pm. Breezy, with a southwest wind 17 to 20 mph.  Chance of precipitation is 50%."
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 46,
     "text": "Mostly cloudy, with a low around 46. Southwest wind around 18 mph. "
@@ -451,13 +488,13 @@
     "name": "Sunday",
     "kind": "high",
     "temp": 57,
-    "text": "Mostly sunny, with a high near 57."
+    "text": "Mostly sunny, with a high near 57. West wind 6 to 8 mph becoming south in the afternoon. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
     "temp": 53,
-    "text": "Rain, mainly after 1am.  Low around 53. Chance of precipitation is 100%."
+    "text": "Rain, mainly after 1am.  Low around 53. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
    }
   ]
  },
