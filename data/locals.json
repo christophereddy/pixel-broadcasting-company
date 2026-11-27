@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -75,7 +75,17 @@
    "short": "BOS",
    "tz": "America/New_York"
   },
-  "local": [],
+  "local": [
+   {
+    "h": "Chef Sean Sherman on reclaiming Indigenous foods",
+    "b": "The Lakota chef and author urges buying from Indigenous producers and cooking foods 'that taste like where we are.'",
+    "date": "2026-11-26",
+    "publisher": "WBUR",
+    "title": "Chef and restaurateur on reclaiming Indigenous foods and traditions",
+    "url": "https://www.wbur.org/news/2026/11/26/sean-sherman-james-beard-native-american-lakota",
+    "gathered": "2026-11-26T23:12:01Z"
+   }
+  ],
   "weather": {
    "now": {
     "temp": 45,
@@ -135,7 +145,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -228,7 +238,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -298,7 +308,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -320,6 +330,17 @@
    "tz": "America/Los_Angeles"
   },
   "local": [
+   {
+    "h": "King tides close part of PCH in Huntington Beach",
+    "b": "Thursday's tide came in a bit lower than Wednesday's, which tied a record of about 8.2 feet at the Port of LA.",
+    "date": "2026-11-26",
+    "publisher": "LAist",
+    "title": "King tides linger along SoCal coast. Here’s what to know",
+    "url": "https://laist.com/news/climate-environment/king-tides-have-arrived-thanksgiving-coastal-flooding-socal-what-to-expect",
+    "published": "2026-11-26T13:00:00Z",
+    "updated": "2026-11-26T22:52:21Z",
+    "gathered": "2026-11-26T23:12:01Z"
+   },
    {
     "h": "Ugarte leads CD-9 race by 69 votes",
     "b": "Jose Ugarte is closing in on the City Council seat in one of LA's last undecided races; results are certified Friday.",
@@ -390,7 +411,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -401,6 +422,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Albany to welcome 27 new Assembly Democrats",
+    "b": "Democrats will hold at least 158 of the Legislature's 213 seats in January, which could decide the fate of long-stalled bills.",
+    "date": "2026-11-26",
+    "publisher": "Gothamist",
+    "title": "Fate of long-stalled NY bills could be decided by 27 new Democrats",
+    "url": "https://gothamist.com/news/fate-of-long-stalled-ny-bills-could-be-decided-by-27-new-democrats",
+    "published": "2026-11-26T16:00:51Z",
+    "gathered": "2026-11-26T23:12:01Z"
+   },
+   {
+    "h": "NJ Turnpike Authority eyes housing near interchanges",
+    "b": "The plan would develop five tracts it owns near Turnpike and Parkway interchanges, advancing Gov. Sherrill's housing goals.",
+    "date": "2026-11-26",
+    "publisher": "Gothamist",
+    "title": "NJ agency eyes housing along the highways in Central Jersey",
+    "url": "https://gothamist.com/news/nj-agency-eyes-housing-along-the-highways-in-central-jersey",
+    "published": "2026-11-26T15:00:49Z",
+    "gathered": "2026-11-26T23:12:01Z"
+   },
    {
     "h": "Storm's worst hits NYC Thanksgiving evening",
     "b": "Forecasters expect the heaviest rain and winds up to 65 mph from about 4 to 10 p.m., and Mayor Mamdani urged travelers to allow extra time.",
@@ -491,9 +532,20 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "new-york-city",
-  "goodnews": []
+  "goodnews": [
+   {
+    "h": "Astoria the wild turkey charms Battery Park",
+    "b": "The turkey, first spotted in her namesake Queens neighborhood, has become a beloved sight in Lower Manhattan.",
+    "date": "2026-11-26",
+    "publisher": "Gothamist",
+    "title": "Every day is Turkey Day in Battery Park for fans of Astoria the bird",
+    "url": "https://gothamist.com/news/every-day-is-turkey-day-in-battery-park-for-fans-of-astoria-the-bird",
+    "published": "2026-11-26T11:31:00Z",
+    "gathered": "2026-11-26T23:12:01Z"
+   }
+  ]
  },
  {
   "slug": "paris-france",
@@ -503,6 +555,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Free land revives a French village",
+    "b": "Parlan in Cantal has drawn hundreds of new residents since 2008 by offering plots to first-time homeowners who commit to stay 10 years.",
+    "date": "2026-11-26",
+    "publisher": "The Local France",
+    "title": "French village tackles depopulation after offering near-free plots of land",
+    "url": "https://www.thelocal.fr/20261126/french-village-tackles-depopulation-with-near-free-plots-of-land",
+    "published": "2026-11-26T12:57:28Z",
+    "updated": "2026-11-26T12:57:29Z",
+    "gathered": "2026-11-26T23:12:01Z"
+   },
    {
     "h": "Paris to cut Navigo validation fine to €15",
     "b": "From Jan. 1, 2027, pass holders who fail to validate on the metro or RER A and B will pay €15 instead of €70.",
@@ -542,7 +605,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "goodnews": []
  },
  {
@@ -619,7 +682,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:11:00Z",
+  "updatedAt": "2026-11-27T02:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

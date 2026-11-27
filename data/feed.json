@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T02:11:00Z",
+ "updatedAt": "2026-11-27T02:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -140,6 +140,17 @@
  ],
  "international": [
   {
+   "h": "Winter rains force displaced Gazans to flee again",
+   "b": "About 1.36 million Palestinians, 65% of Gaza's population, live in tents and makeshift shelters that flood in heavy rain, the UN says.",
+   "date": "2026-11-26",
+   "place": "Gaza",
+   "tz": "Asia/Gaza",
+   "publisher": "Al Jazeera",
+   "title": "Why are winter rains forcing Palestinians in Gaza to flee again?",
+   "url": "https://www.aljazeera.com/news/2026/11/26/why-are-winter-rains-forcing-palestinians-in-gaza-to-flee-again",
+   "gathered": "2026-11-26T23:12:01Z"
+  },
+  {
    "h": "Mexico seeks US talks over suspected SpaceX debris",
    "b": "Mexico wants a meeting on use of its airspace and possibly relocating the launch site after recovering debris from a Starship launch.",
    "date": "2026-11-26",
@@ -266,7 +277,28 @@
    "gathered": "2026-11-26T05:12:41Z"
   }
  ],
- "science": [],
+ "science": [
+  {
+   "h": "What are king tides?",
+   "b": "These highest tides of the year come when the sun, moon and Earth nearly align, and this year's super El Niño has pushed coastal water levels higher.",
+   "date": "2026-11-26",
+   "publisher": "PBS NewsHour",
+   "title": "What are king tides? These exceptionally high tides are increasingly flooding coastal communities",
+   "url": "https://www.pbs.org/newshour/nation/what-are-king-tides-these-exceptionally-high-tides-are-increasingly-flooding-coastal-communities",
+   "published": "2026-11-26T20:44:28Z",
+   "gathered": "2026-11-26T23:12:01Z"
+  },
+  {
+   "h": "Scientists wary of SpaceX's 1 million-satellite plan",
+   "b": "The FCC's approval of SpaceX's Starmind data center constellation has raised skepticism and alarm among some scientists.",
+   "date": "2026-11-26",
+   "publisher": "PBS NewsHour",
+   "title": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical",
+   "url": "https://www.pbs.org/newshour/nation/fcc-says-spacex-can-deploy-1-million-satellites-for-data-centers-in-space-scientists-are-skeptical",
+   "published": "2026-11-26T20:16:59Z",
+   "gathered": "2026-11-26T23:12:01Z"
+  }
+ ],
  "sports": [
   {
    "h": "Steelers cut Aaron Rodgers after he rips coach on TV",
@@ -297,6 +329,26 @@
   }
  ],
  "local": [
+  {
+   "h": "Albany to welcome 27 new Assembly Democrats",
+   "b": "Democrats will hold at least 158 of the Legislature's 213 seats in January, which could decide the fate of long-stalled bills.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "Fate of long-stalled NY bills could be decided by 27 new Democrats",
+   "url": "https://gothamist.com/news/fate-of-long-stalled-ny-bills-could-be-decided-by-27-new-democrats",
+   "published": "2026-11-26T16:00:51Z",
+   "gathered": "2026-11-26T23:12:01Z"
+  },
+  {
+   "h": "NJ Turnpike Authority eyes housing near interchanges",
+   "b": "The plan would develop five tracts it owns near Turnpike and Parkway interchanges, advancing Gov. Sherrill's housing goals.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "NJ agency eyes housing along the highways in Central Jersey",
+   "url": "https://gothamist.com/news/nj-agency-eyes-housing-along-the-highways-in-central-jersey",
+   "published": "2026-11-26T15:00:49Z",
+   "gathered": "2026-11-26T23:12:01Z"
+  },
   {
    "h": "Storm's worst hits NYC Thanksgiving evening",
    "b": "Forecasters expect the heaviest rain and winds up to 65 mph from about 4 to 10 p.m., and Mayor Mamdani urged travelers to allow extra time.",
@@ -375,7 +427,18 @@
    }
   ]
  },
- "localgood": [],
+ "localgood": [
+  {
+   "h": "Astoria the wild turkey charms Battery Park",
+   "b": "The turkey, first spotted in her namesake Queens neighborhood, has become a beloved sight in Lower Manhattan.",
+   "date": "2026-11-26",
+   "publisher": "Gothamist",
+   "title": "Every day is Turkey Day in Battery Park for fans of Astoria the bird",
+   "url": "https://gothamist.com/news/every-day-is-turkey-day-in-battery-park-for-fans-of-astoria-the-bird",
+   "published": "2026-11-26T11:31:00Z",
+   "gathered": "2026-11-26T23:12:01Z"
+  }
+ ],
  "sources": [
   {
    "name": "Gothamist",
