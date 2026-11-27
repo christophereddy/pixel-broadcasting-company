@@ -8,18 +8,18 @@
   "local": [],
   "weather": {
    "now": {
-    "temp": 42,
+    "temp": 37,
     "cond": "Overcast",
-    "wind": "W 13 mph, gusts to 24 mph",
-    "humidity": 82,
-    "obs": "26 Nov 16:52 pm EST"
+    "wind": "W 13 mph, gusts to 22 mph",
+    "humidity": 86,
+    "obs": "26 Nov 22:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 35,
-     "text": "Cloudy, with a low around 35. West wind around 15 mph, with gusts as high as 30 mph. "
+     "text": "Cloudy, with a low around 35. West wind around 15 mph, with gusts as high as 25 mph. "
     },
     {
      "name": "Friday",
@@ -65,7 +65,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -88,18 +88,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Rain Fog/Mist and Windy",
-    "wind": "NE 30 mph, gusts to 41 mph",
-    "humidity": 86,
-    "obs": "26 Nov 17:54 pm EST"
+    "temp": 48,
+    "cond": "Heavy Rain Fog/Mist and Windy",
+    "wind": "NE 26 mph, gusts to 41 mph",
+    "humidity": 96,
+    "obs": "26 Nov 22:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 44,
-     "text": "Rain before 4am, then light rain likely, mainly between 4am and 5am. The rain could be heavy at times.  Low around 44. Windy, with an east wind 21 to 26 mph decreasing to 15 to 20 mph after midnight. Winds could gust as high as 43 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
+     "text": "Rain before 4am, then light rain likely, mainly between 4am and 5am. The rain could be heavy at times.  Low around 44. Windy, with a northeast wind 21 to 26 mph decreasing to 15 to 20 mph after midnight. Winds could gust as high as 43 mph.  Chance of precipitation is 100%. New precipitation amounts between 1 and 2 inches possible. "
     },
     {
      "name": "Friday",
@@ -145,7 +145,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -181,24 +181,24 @@
   ],
   "weather": {
    "now": {
-    "temp": 44,
+    "temp": 45,
     "cond": "Light Rain",
-    "wind": "N 18 mph, gusts to 39 mph",
-    "humidity": 85,
-    "obs": "26 Nov 16:53 pm CST"
+    "wind": "N 15 mph, gusts to 28 mph",
+    "humidity": 83,
+    "obs": "26 Nov 21:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 43,
-     "text": "Rain.  Steady temperature around 43. Breezy, with a north northeast wind 20 to 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "temp": 40,
+     "text": "Rain.  Low around 40. Breezy, with a north northeast wind around 25 mph, with gusts as high as 35 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Friday",
      "kind": "high",
-     "temp": 43,
-     "text": "A 50 percent chance of rain, mainly before 9am.  Cloudy, then gradually becoming mostly sunny, with a steady temperature around 43. Breezy, with a north wind 15 to 20 mph becoming west northwest 10 to 15 mph in the afternoon. Winds could gust as high as 30 mph. "
+     "temp": 46,
+     "text": "A 50 percent chance of rain, mainly before 9am.  Cloudy, then gradually becoming mostly sunny, with a high near 46. Breezy, with a north wind 15 to 20 mph becoming west northwest 10 to 15 mph in the afternoon. Winds could gust as high as 30 mph. "
     },
     {
      "name": "Friday Night",
@@ -210,13 +210,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 50,
-     "text": "Mostly sunny, with a high near 50. Southwest wind 10 to 15 mph. "
+     "text": "Cloudy through mid morning, then gradual clearing, with a high near 50. Southwest wind 10 to 15 mph. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 40,
-     "text": "A 50 percent chance of rain after midnight.  Mostly cloudy, with a low around 40."
+     "text": "A 50 percent chance of rain after midnight.  Mostly cloudy, with a low around 40. Southwest wind 5 to 10 mph. "
     },
     {
      "name": "Sunday",
@@ -238,7 +238,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -262,18 +262,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 43,
     "cond": "Mostly Cloudy",
-    "wind": "NW 3 mph",
-    "humidity": 16,
-    "obs": "26 Nov 14:58 pm MST"
+    "wind": "S 8 mph",
+    "humidity": 26,
+    "obs": "26 Nov 20:58 pm MST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 37,
-     "text": "Increasing clouds, with a low around 37. Southwest wind 5 to 7 mph. "
+     "temp": 40,
+     "text": "Increasing clouds, with a steady temperature around 40. Southwest wind around 7 mph. "
     },
     {
      "name": "Friday",
@@ -319,7 +319,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -349,7 +349,7 @@
     "title": "King tides linger along SoCal coast. Here’s what to know",
     "url": "https://laist.com/news/climate-environment/king-tides-have-arrived-thanksgiving-coastal-flooding-socal-what-to-expect",
     "published": "2026-11-26T13:00:00Z",
-    "updated": "2026-11-26T22:52:21Z",
+    "updated": "2026-11-26T23:37:49Z",
     "gathered": "2026-11-26T23:12:01Z"
    },
    {
@@ -366,10 +366,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 81,
-    "wind": "NW 2 mph",
-    "humidity": 21,
-    "obs": "26 Nov 02:10 PM PST"
+    "temp": 64,
+    "wind": "Calm",
+    "humidity": 54,
+    "obs": "26 Nov 08:10 PM PST"
    },
    "periods": [
     {
@@ -394,13 +394,13 @@
      "name": "Saturday",
      "kind": "high",
      "temp": 76,
-     "text": "Partly sunny, with a high near 76. Calm wind becoming south southeast around 5 mph in the afternoon. "
+     "text": "Mostly cloudy, then gradually becoming sunny, with a high near 76. Calm wind becoming south southeast around 5 mph in the afternoon. "
     },
     {
      "name": "Saturday Night",
      "kind": "low",
      "temp": 55,
-     "text": "Partly cloudy, with a low around 55."
+     "text": "Partly cloudy, with a low around 55. East northeast wind around 5 mph. "
     },
     {
      "name": "Sunday",
@@ -422,7 +422,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -486,18 +486,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Rain Fog/Mist and Breezy",
-    "wind": "NE 24 mph, gusts to 44 mph",
-    "humidity": 97,
-    "obs": "26 Nov 17:51 pm EST"
+    "temp": 51,
+    "cond": "Light Rain Fog/Mist",
+    "wind": "E 12 mph, gusts to 28 mph",
+    "humidity": 92,
+    "obs": "26 Nov 22:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 50,
-     "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 59 by 11pm. Windy, with a northeast wind 23 to 33 mph becoming southeast 13 to 23 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+     "temp": 59,
+     "text": "Rain likely, mainly before 1am.  Cloudy, with a steady temperature around 59. Breezy, with a northeast wind 13 to 23 mph becoming south after midnight. Winds could gust as high as 37 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Friday",
@@ -543,7 +543,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "new-york-city",
   "goodnews": [
    {
@@ -616,7 +616,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "goodnews": []
  },
  {
@@ -636,11 +636,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Partly Cloudy",
+    "temp": 52,
+    "cond": "Clear",
     "wind": "S 12 mph",
-    "humidity": 79,
-    "obs": "26 Nov 02:53 PM PST"
+    "humidity": 81,
+    "obs": "26 Nov 08:00 PM PST"
    },
    "periods": [
     {
@@ -671,7 +671,7 @@
      "name": "Saturday Night",
      "kind": "low",
      "temp": 41,
-     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 41."
+     "text": "A 20 percent chance of rain after 10pm.  Mostly cloudy, with a low around 41. Light north wind. "
     },
     {
      "name": "Sunday",
@@ -693,7 +693,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T02:12:00Z",
+  "updatedAt": "2026-11-27T05:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }

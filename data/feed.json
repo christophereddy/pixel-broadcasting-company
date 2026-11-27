@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T02:12:00Z",
+ "updatedAt": "2026-11-27T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,8 +10,6 @@
    "h": "LIVE: Explosion rocks Sanaa",
    "b": "An explosion hit Yemen's capital as Houthi missiles were intercepted over Riyadh. Follow Al Jazeera's live coverage of the US-Israel war on Iran.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "Iran denies carrying out drone attack that killed two Italians in Kuwait",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh",
    "gathered": "2026-11-26T08:15:21Z"
   },
@@ -65,8 +63,6 @@
    "h": "Report: CIA waterboarded more people than it admitted",
    "b": "The New York Times reported the finding after suing for material gathered by special prosecutor John Durham; the CIA had admitted waterboarding three people.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "Report: CIA tortured more people with waterboarding than US agency admitted",
    "url": "https://www.aljazeera.com/news/2026/11/26/report-cia-tortured-more-people-with-waterboarding-than-us-agency-admitted",
    "gathered": "2026-11-26T23:12:01Z"
   },
@@ -74,8 +70,6 @@
    "h": "Judge strikes down Trump's birthright citizenship limits",
    "b": "Judge Christopher Cooper ruled that the US-born children the administration targeted are under US jurisdiction and guaranteed citizenship.",
    "date": "2026-11-26",
-   "publisher": "Al Jazeera",
-   "title": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
    "url": "https://www.aljazeera.com/news/2026/11/26/judge-strikes-down-trumps-latest-restrictions-on-us-birthright-citizenship",
    "gathered": "2026-11-26T22:29:57Z"
   },
@@ -114,6 +108,15 @@
  ],
  "politics": [
   {
+   "h": "Trump downplays Russia, China support for Iran",
+   "b": "In Thanksgiving calls with US troops, Trump also claimed Iran has missiles capable of reaching Europe.",
+   "date": "2026-11-27",
+   "publisher": "Al Jazeera",
+   "title": "Trump downplays Russia, China support for Iran during talks with US troops",
+   "url": "https://www.aljazeera.com/news/2026/11/27/trump-downplays-russia-china-support-for-iran-during-talks-with-us-troops",
+   "gathered": "2026-11-27T04:25:48Z"
+  },
+  {
    "h": "Judge won't extend ban on pro-Trump government ads",
    "b": "Judge Loren AliKhan declined Democrats' request for a long-term ban on taxpayer-funded TV spots they called propaganda.",
    "date": "2026-11-26",
@@ -140,6 +143,28 @@
  ],
  "international": [
   {
+   "h": "Settlers damage Palestinian family's homes in West Bank",
+   "b": "Israeli settlers smashed the foundations of two homes in Jalud belonging to a family that attacks had kept from returning.",
+   "date": "2026-11-27",
+   "place": "Jalud, West Bank",
+   "tz": "Asia/Hebron",
+   "publisher": "Al Jazeera",
+   "title": "Israeli settlers damage Palestinian family’s homes in West Bank attack",
+   "url": "https://www.aljazeera.com/news/2026/11/26/israeli-settlers-damage-palestinian-familys-homes-in-west-bank-attack",
+   "gathered": "2026-11-27T04:25:48Z"
+  },
+  {
+   "h": "Argentina bars Central Bank from printing money for spending",
+   "b": "Deputies gave final approval to a Milei-backed bill defining the bank's main mission as maintaining the peso's value.",
+   "date": "2026-11-27",
+   "place": "Buenos Aires, Argentina",
+   "tz": "America/Argentina/Buenos_Aires",
+   "publisher": "Al Jazeera",
+   "title": "Argentina bars Central Bank from printing money to fund government spending",
+   "url": "https://www.aljazeera.com/news/2026/11/27/argentina-bars-central-bank-from-printing-money-to-fund-government-spending",
+   "gathered": "2026-11-27T04:25:48Z"
+  },
+  {
    "h": "Winter rains force displaced Gazans to flee again",
    "b": "About 1.36 million Palestinians, 65% of Gaza's population, live in tents and makeshift shelters that flood in heavy rain, the UN says.",
    "date": "2026-11-26",
@@ -156,8 +181,6 @@
    "date": "2026-11-26",
    "place": "Mexico City, Mexico",
    "tz": "America/Mexico_City",
-   "publisher": "Al Jazeera",
-   "title": "Mexico seeks US talks about suspected SpaceX debris",
    "url": "https://www.aljazeera.com/news/2026/11/26/mexico-seeks-us-talks-about-suspected-spacex-debris",
    "gathered": "2026-11-26T22:29:57Z"
   },
@@ -382,18 +405,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 45,
-   "cond": "Rain Fog/Mist and Breezy",
-   "wind": "NE 24 mph, gusts to 44 mph",
-   "humidity": 97,
-   "obs": "26 Nov 17:51 pm EST"
+   "temp": 51,
+   "cond": "Light Rain Fog/Mist",
+   "wind": "E 12 mph, gusts to 28 mph",
+   "humidity": 92,
+   "obs": "26 Nov 22:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
-    "temp": 50,
-    "text": "Rain, mainly before 1am. The rain could be heavy at times.  Temperature rising to around 59 by 11pm. Windy, with a northeast wind 23 to 33 mph becoming southeast 13 to 23 mph after midnight. Winds could gust as high as 55 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
+    "temp": 59,
+    "text": "Rain likely, mainly before 1am.  Cloudy, with a steady temperature around 59. Breezy, with a northeast wind 13 to 23 mph becoming south after midnight. Winds could gust as high as 37 mph.  Chance of precipitation is 70%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Friday",
