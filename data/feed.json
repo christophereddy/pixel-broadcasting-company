@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-28T11:11:00Z",
+ "updatedAt": "2026-11-28T14:12:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -11,17 +11,25 @@
    "b": "Italy says the drone in the Kuwait strike that killed two of its citizens was made in Iran.",
    "date": "2026-11-28",
    "publisher": "Al Jazeera",
-   "title": "Italy says drone in Kuwait strike that killed two citizens was made in Iran",
+   "title": "Iran says ready to respond to any attack ‘from anywhere in the world’",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran",
    "gathered": "2026-11-28T08:11:43Z"
+  },
+  {
+   "h": "Yemen government strikes hit Houthi-held areas",
+   "b": "At least 121 Houthis were killed or injured as more than six governorates were hit overnight, as the UN warns of hunger.",
+   "date": "2026-11-28",
+   "place": "Sanaa, Yemen",
+   "publisher": "Al Jazeera",
+   "title": "Yemen government forces hit Houthi positions as UN warns of hunger crisis",
+   "url": "https://www.aljazeera.com/news/2026/11/28/yemen-governmen-forces-hit-houthi-positions-as-un-warns-of-hunger-crisis",
+   "gathered": "2026-11-28T11:11:54Z"
   },
   {
    "h": "El Niño deluges flood cities in Peru and Ecuador",
    "b": "Waist-high water filled the streets of Piura after 12 hours of heavy rain.",
    "date": "2026-11-28",
    "place": "Piura, Peru",
-   "publisher": "Al Jazeera",
-   "title": "El Nino-linked deluges flood cities in Peru, Ecuador",
    "url": "https://www.aljazeera.com/news/2026/11/28/el-nino-linked-deluges-flood-cities-in-peru-ecuador",
    "gathered": "2026-11-28T08:11:43Z"
   },
@@ -31,7 +39,7 @@
    "date": "2026-11-28",
    "place": "Kunar, Afghanistan",
    "publisher": "Al Jazeera",
-   "title": "Students killed or injured in school explosion in Afghanistan’s Kunar",
+   "title": "At least six students killed in blast beside school in Afghanistan’s Kunar",
    "url": "https://www.aljazeera.com/news/2026/11/28/students-killed-injured-in-school-explosion-in-afghanistans-kunar-region",
    "gathered": "2026-11-28T08:11:43Z"
   },
@@ -40,8 +48,6 @@
    "b": "Doctors Without Borders said two watchmen were killed in the strike on its Gaza City clinic.",
    "date": "2026-11-28",
    "place": "Gaza City",
-   "publisher": "Al Jazeera",
-   "title": "Israeli ‘direct hit ‘on Doctors Without Borders Gaza clinic kills 2 staff",
    "url": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff",
    "gathered": "2026-11-28T04:52:33Z"
   },
@@ -124,6 +130,17 @@
  ],
  "politics": [
   {
+   "h": "Democratic AGs set to reshape state justice systems",
+   "b": "Democrats flipped attorney general offices in Georgia, Iowa, Kansas, Ohio and Texas, giving them a majority of states.",
+   "date": "2026-11-28",
+   "publisher": "KUOW",
+   "title": "New wave of Democratic attorneys general may reshape the justice system",
+   "url": "https://www.kuow.org/npr-news/2026-11-28/new-wave-of-democratic-attorneys-general-may-reshape-the-justice-system",
+   "published": "2026-11-28T10:00:00Z",
+   "updated": "2026-11-28T10:41:37Z",
+   "gathered": "2026-11-28T11:11:54Z"
+  },
+  {
    "h": "Trump's GAO pick raises impartiality concerns",
    "b": "Democrats and some Republicans worry Eric Ueland would audit programs he worked on at OMB.",
    "date": "2026-11-27",
@@ -154,15 +171,26 @@
  ],
  "international": [
   {
-   "h": "Sánchez bets on left-wing surge in Spain's snap vote",
-   "b": "The prime minister says he can't conceive of losing Sunday's election despite polls favoring the right.",
-   "date": "2026-11-27",
+   "h": "UN's Albanese leaves Costa Rica after entry denied",
+   "b": "The rapporteur on the Palestinian territories spent two nights held at the airport before departing.",
+   "date": "2026-11-28",
+   "place": "San José, Costa Rica",
+   "tz": "America/Costa_Rica",
+   "publisher": "Al Jazeera",
+   "title": "UN’s Albanese leaves Costa Rica airport after constitutional court verdict",
+   "url": "https://www.aljazeera.com/news/2026/11/28/uns-albanese-leaves-costa-rica-airport-after-constitutional-court-verdict",
+   "gathered": "2026-11-28T11:11:54Z"
+  },
+  {
+   "h": "Spain votes Sunday on Sánchez's eight years",
+   "b": "The snap election, fought over housing and immigration, is framed as a referendum on the prime minister.",
+   "date": "2026-11-28",
    "place": "Madrid, Spain",
    "tz": "Europe/Madrid",
    "publisher": "Al Jazeera",
-   "title": "Spain’s Sanchez bets on left-wing voting surge to defy polling odds",
-   "url": "https://www.aljazeera.com/news/2026/11/27/spains-pedro-sanchez-bets-on-left-wing-voting-surge-to-defy-election-polls",
-   "gathered": "2026-11-28T08:11:43Z"
+   "title": "Two visions of Spain collide as voters weigh PM Sanchez’s record",
+   "url": "https://www.aljazeera.com/news/2026/11/28/two-visions-of-spain-collide-as-voters-weigh-sanchez-record",
+   "gathered": "2026-11-28T11:11:54Z"
   },
   {
    "h": "At least eight dead on migrant boat off Canary Islands",
@@ -474,19 +502,19 @@
  "weather": {
   "now": {
    "temp": 44,
-   "cond": "Fair",
+   "cond": "Overcast",
    "humidity": 65,
-   "obs": "28 Nov 02:51 am EST"
+   "obs": "28 Nov 05:51 am EST"
   },
   "periods": [
    {
-    "name": "Saturday",
+    "name": "Today",
     "kind": "high",
     "temp": 52,
     "text": "Partly sunny, with a high near 52. West wind 15 to 18 mph, with gusts as high as 29 mph. "
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "kind": "low",
     "temp": 44,
     "text": "Mostly clear, with a low around 44. West wind 10 to 15 mph. "
@@ -507,7 +535,7 @@
     "name": "Monday",
     "kind": "high",
     "temp": 56,
-    "text": "Rain, mainly before 1pm.  Temperature falling to around 51 by 5pm. Breezy.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    "text": "Rain, mainly before 1pm.  Temperature falling to around 51 by 5pm. Breezy, with a southwest wind 16 to 23 mph becoming west in the afternoon. Winds could gust as high as 38 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
    },
    {
     "name": "Monday Night",

@@ -32,20 +32,20 @@
   "weather": {
    "now": {
     "temp": 37,
-    "cond": "A Few Clouds",
-    "wind": "W 5 mph",
+    "cond": "Fair",
+    "wind": "W 6 mph",
     "humidity": 82,
-    "obs": "28 Nov 02:52 am EST"
+    "obs": "28 Nov 05:52 am EST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 61,
      "text": "Sunny, with a high near 61. Southwest wind 5 to 10 mph, with gusts as high as 15 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 39,
      "text": "Mostly clear, with a low around 39. Southwest wind around 5 mph becoming calm  in the evening. "
@@ -66,7 +66,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 56,
-     "text": "Partly sunny, with a high near 56."
+     "text": "Partly sunny, with a high near 56. Northwest wind 5 to 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Monday Night",
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -111,21 +111,21 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Partly Cloudy",
-    "wind": "SW 15 mph, gusts to 24 mph",
-    "humidity": 71,
-    "obs": "28 Nov 02:54 am EST"
+    "temp": 44,
+    "cond": "Overcast",
+    "wind": "SW 14 mph",
+    "humidity": 73,
+    "obs": "28 Nov 04:54 am EST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 51,
      "text": "Increasing clouds, with a high near 51. West wind 9 to 13 mph, with gusts as high as 23 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 41,
      "text": "Mostly cloudy, with a low around 41. West wind around 8 mph. "
@@ -140,7 +140,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Rain likely, mainly after 5am.  Mostly cloudy, with a low around 44. South wind 5 to 9 mph.  Chance of precipitation is 60%."
+     "text": "Rain likely, mainly after 5am.  Increasing clouds, with a low around 44. South wind 5 to 9 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Monday",
@@ -168,7 +168,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -237,24 +237,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 36,
+    "temp": 38,
     "cond": "Overcast",
-    "wind": "SW 9 mph",
-    "humidity": 76,
-    "obs": "28 Nov 01:53 am CST"
+    "wind": "SW 8 mph",
+    "humidity": 70,
+    "obs": "28 Nov 04:53 am CST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 36,
-     "text": "A slight chance of sprinkles before 4am, then a slight chance of rain after 4am.  Mostly cloudy, with a low around 36. West southwest wind 10 to 15 mph, with gusts as high as 20 mph.  Chance of precipitation is 20%."
-    },
     {
      "name": "Saturday",
      "kind": "high",
      "temp": 52,
-     "text": "A slight chance of rain before 7am, then a slight chance of sprinkles between 7am and 9am.  Cloudy through mid morning, then gradual clearing, with a high near 52. Southwest wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
+     "text": "A slight chance of rain before 8am, then a slight chance of sprinkles between 8am and 9am.  Cloudy through mid morning, then gradual clearing, with a high near 52. Southwest wind 10 to 15 mph, with gusts as high as 25 mph.  Chance of precipitation is 20%."
     },
     {
      "name": "Saturday Night",
@@ -279,6 +273,12 @@
      "kind": "high",
      "temp": 39,
      "text": "Sunny, with a high near 39."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 30,
+     "text": "Partly cloudy, with a low around 30."
     }
    ]
   },
@@ -294,7 +294,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -326,12 +326,6 @@
    },
    "periods": [
     {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 40,
-     "text": "Mostly cloudy, with a low around 40. South wind 5 to 7 mph. "
-    },
-    {
      "name": "Saturday",
      "kind": "high",
      "temp": 54,
@@ -360,6 +354,12 @@
      "kind": "high",
      "temp": 59,
      "text": "Mostly sunny, with a high near 59."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 31,
+     "text": "Partly cloudy, with a low around 31."
     }
    ]
   },
@@ -375,7 +375,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -418,18 +418,12 @@
   ],
   "weather": {
    "now": {
-    "temp": 57,
-    "wind": "NW 4 mph",
-    "humidity": 67,
-    "obs": "27 Nov 11:45 PM PST"
+    "temp": 56,
+    "wind": "NW 2 mph",
+    "humidity": 66,
+    "obs": "28 Nov 02:10 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 59,
-     "text": "Mostly cloudy, with a low around 59. East northeast wind around 5 mph. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -459,6 +453,12 @@
      "kind": "high",
      "temp": 70,
      "text": "Rain likely.  Mostly cloudy, with a high near 70. Chance of precipitation is 60%."
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 59,
+     "text": "Rain likely, then rain and possibly a thunderstorm after 10pm.  Low around 59. Chance of precipitation is 100%."
     }
    ]
   },
@@ -474,7 +474,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -560,19 +560,19 @@
   "weather": {
    "now": {
     "temp": 44,
-    "cond": "Fair",
+    "cond": "Overcast",
     "humidity": 65,
-    "obs": "28 Nov 02:51 am EST"
+    "obs": "28 Nov 05:51 am EST"
    },
    "periods": [
     {
-     "name": "Saturday",
+     "name": "Today",
      "kind": "high",
      "temp": 52,
      "text": "Partly sunny, with a high near 52. West wind 15 to 18 mph, with gusts as high as 29 mph. "
     },
     {
-     "name": "Saturday Night",
+     "name": "Tonight",
      "kind": "low",
      "temp": 44,
      "text": "Mostly clear, with a low around 44. West wind 10 to 15 mph. "
@@ -593,7 +593,7 @@
      "name": "Monday",
      "kind": "high",
      "temp": 56,
-     "text": "Rain, mainly before 1pm.  Temperature falling to around 51 by 5pm. Breezy.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain, mainly before 1pm.  Temperature falling to around 51 by 5pm. Breezy, with a southwest wind 16 to 23 mph becoming west in the afternoon. Winds could gust as high as 38 mph.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Monday Night",
@@ -615,7 +615,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -627,6 +627,17 @@
    "tz": "Europe/Paris"
   },
   "local": [
+   {
+    "h": "Channel sole stocks collapse, alarming French fishers",
+    "b": "The emblematic flatfish has mysteriously vanished from the eastern Channel, worrying Normandy fishermen and chefs.",
+    "date": "2026-11-28",
+    "publisher": "The Local France",
+    "title": "France faces sole fish crisis as Channel stocks collapse",
+    "url": "https://www.thelocal.fr/20261128/france-faces-sole-fish-crisis-as-channel-stocks-collapse",
+    "published": "2026-11-28T10:44:21Z",
+    "updated": "2026-11-28T10:44:22Z",
+    "gathered": "2026-11-28T11:11:54Z"
+   },
    {
     "h": "Mélenchon demands 'overhaul' of French-German ties",
     "b": "The hard-left candidate, polling second for April, criticized Germany's economic dominance during a Berlin visit.",
@@ -649,11 +660,7 @@
     "h": "Tsunami alert test planned for Nice and Cannes",
     "b": "Sirens and loudspeaker warnings on Monday afternoon will be part of a civil security exercise.",
     "date": "2026-11-27",
-    "publisher": "The Local France",
-    "title": "French Riviera: Tsunami alert test in Nice and Cannes",
     "url": "https://www.thelocal.fr/20261127/french-riviera-tsunami-alert-test-in-nice-and-cannes",
-    "published": "2026-11-27T13:43:37Z",
-    "updated": "2026-11-27T13:43:38Z",
     "gathered": "2026-11-27T14:12:49Z"
    },
    {
@@ -680,7 +687,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "goodnews": []
  },
  {
@@ -708,15 +715,9 @@
     "cond": "Mist",
     "wind": "Calm",
     "humidity": 96,
-    "obs": "27 Nov 11:53 PM PST"
+    "obs": "28 Nov 02:53 AM PST"
    },
    "periods": [
-    {
-     "name": "Overnight",
-     "kind": "low",
-     "temp": 45,
-     "text": "Patchy fog between 2am and 3am.  Otherwise, mostly cloudy, with a steady temperature around 45. Calm wind. "
-    },
     {
      "name": "Saturday",
      "kind": "high",
@@ -746,6 +747,12 @@
      "kind": "high",
      "temp": 52,
      "text": "Rain, mainly before 4pm.  High near 52. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+    },
+    {
+     "name": "Monday Night",
+     "kind": "low",
+     "temp": 44,
+     "text": "A 50 percent chance of rain, mainly before 10pm.  Mostly cloudy, with a low around 44."
     }
    ]
   },
@@ -761,7 +768,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T11:11:00Z",
+  "updatedAt": "2026-11-28T14:12:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
