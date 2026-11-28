@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-28T08:11:00Z",
+ "updatedAt": "2026-11-28T11:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -7,11 +7,33 @@
  },
  "world": [
   {
-   "h": "LIVE: IRGC says tanker hit in Hormuz",
-   "b": "Iran's Revolutionary Guard says a tanker was hit in the Strait of Hormuz and a hostile drone downed in the southeast.",
-   "date": "2026-11-27",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
-   "gathered": "2026-11-27T22:51:26Z"
+   "h": "LIVE: Italy says drone in deadly Kuwait attack was Iranian",
+   "b": "Italy says the drone in the Kuwait strike that killed two of its citizens was made in Iran.",
+   "date": "2026-11-28",
+   "publisher": "Al Jazeera",
+   "title": "Italy says drone in Kuwait strike that killed two citizens was made in Iran",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran",
+   "gathered": "2026-11-28T08:11:43Z"
+  },
+  {
+   "h": "El Niño deluges flood cities in Peru and Ecuador",
+   "b": "Waist-high water filled the streets of Piura after 12 hours of heavy rain.",
+   "date": "2026-11-28",
+   "place": "Piura, Peru",
+   "publisher": "Al Jazeera",
+   "title": "El Nino-linked deluges flood cities in Peru, Ecuador",
+   "url": "https://www.aljazeera.com/news/2026/11/28/el-nino-linked-deluges-flood-cities-in-peru-ecuador",
+   "gathered": "2026-11-28T08:11:43Z"
+  },
+  {
+   "h": "Students killed or hurt in Afghan school blast",
+   "b": "An explosion inside a school in Kunar province's Andar Ser area had no immediate known cause, police said.",
+   "date": "2026-11-28",
+   "place": "Kunar, Afghanistan",
+   "publisher": "Al Jazeera",
+   "title": "Students killed or injured in school explosion in Afghanistan’s Kunar",
+   "url": "https://www.aljazeera.com/news/2026/11/28/students-killed-injured-in-school-explosion-in-afghanistans-kunar-region",
+   "gathered": "2026-11-28T08:11:43Z"
   },
   {
    "h": "Israeli strike on MSF clinic in Gaza kills two staff",
@@ -19,7 +41,7 @@
    "date": "2026-11-28",
    "place": "Gaza City",
    "publisher": "Al Jazeera",
-   "title": "Israeli strike on Doctors Without Borders clinic in Gaza kills two staff",
+   "title": "Israeli ‘direct hit ‘on Doctors Without Borders Gaza clinic kills 2 staff",
    "url": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff",
    "gathered": "2026-11-28T04:52:33Z"
   },
@@ -132,13 +154,22 @@
  ],
  "international": [
   {
+   "h": "Sánchez bets on left-wing surge in Spain's snap vote",
+   "b": "The prime minister says he can't conceive of losing Sunday's election despite polls favoring the right.",
+   "date": "2026-11-27",
+   "place": "Madrid, Spain",
+   "tz": "Europe/Madrid",
+   "publisher": "Al Jazeera",
+   "title": "Spain’s Sanchez bets on left-wing voting surge to defy polling odds",
+   "url": "https://www.aljazeera.com/news/2026/11/27/spains-pedro-sanchez-bets-on-left-wing-voting-surge-to-defy-election-polls",
+   "gathered": "2026-11-28T08:11:43Z"
+  },
+  {
    "h": "At least eight dead on migrant boat off Canary Islands",
    "b": "Spanish rescuers found the bodies on a boat carrying about 100 people; six were airlifted to hospital.",
    "date": "2026-11-27",
    "place": "El Hierro, Spain",
    "tz": "Atlantic/Canary",
-   "publisher": "Al Jazeera",
-   "title": "At least eight found dead on migrant boat off Spain’s Canary Islands",
    "url": "https://www.aljazeera.com/news/2026/11/27/at-least-eight-found-dead-on-migrant-boat-off-spains-canary-islands",
    "gathered": "2026-11-28T04:52:33Z"
   },
@@ -205,8 +236,6 @@
    "date": "2026-11-27",
    "place": "Gaza",
    "tz": "Asia/Gaza",
-   "publisher": "Al Jazeera",
-   "title": "Israel kills four in Gaza as Hamas chief al-Hayya’s son survives strike",
    "url": "https://www.aljazeera.com/news/2026/11/27/israel-kills-four-in-gaza-as-hamas-chief-al-hayyas-son-survives-strike",
    "gathered": "2026-11-27T22:51:26Z"
   },
@@ -216,8 +245,6 @@
    "date": "2026-11-27",
    "place": "Caracas, Venezuela",
    "tz": "America/Caracas",
-   "publisher": "Al Jazeera",
-   "title": "Venezuela to repeal law that bans opposition figures from office",
    "url": "https://www.aljazeera.com/news/2026/11/27/venezuela-to-repeal-law-that-bans-opposition-figures-from-office",
    "gathered": "2026-11-27T22:51:26Z"
   },
@@ -227,11 +254,7 @@
    "date": "2026-11-27",
    "place": "Paris, France",
    "tz": "Europe/Paris",
-   "publisher": "The Local France",
-   "title": "France's far-right Le Pen backs protege over antisemitism allegations",
    "url": "https://www.thelocal.fr/20261127/frances-far-right-le-pen-backs-protege-over-antisemitism-allegations",
-   "published": "2026-11-27T16:36:50Z",
-   "updated": "2026-11-27T16:36:51Z",
    "gathered": "2026-11-27T17:12:47Z"
   },
   {
@@ -289,8 +312,6 @@
    "h": "OpenAI countersues Apple over trade secrets",
    "b": "The ChatGPT maker accuses Apple of trapping employees and blocking its access to hardware suppliers.",
    "date": "2026-11-27",
-   "publisher": "Al Jazeera",
-   "title": "OpenAI countersues Apple over trade secrets as AI race heats up",
    "url": "https://www.aljazeera.com/economy/2026/11/27/openai-countersues-apple-over-trade-secrets-as-ai-race-heats-up",
    "gathered": "2026-11-27T22:51:26Z"
   },
@@ -321,6 +342,15 @@
   }
  ],
  "science": [
+  {
+   "h": "Uganda starts Africa's first mRNA Ebola vaccine trial",
+   "b": "The Moderna vaccine targets the Bundibugyo strain behind Congo's deadly outbreak.",
+   "date": "2026-11-28",
+   "publisher": "Al Jazeera",
+   "title": "Uganda starts mRNA Ebola vaccine trial in first for Africa",
+   "url": "https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa",
+   "gathered": "2026-11-28T08:11:43Z"
+  },
   {
    "h": "Drones and a sniffer dog check endangered orcas' health",
    "b": "Researchers collect spout droplets and scat as Southern Resident killer whales spend less time in the Salish Sea.",
@@ -443,48 +473,47 @@
  ],
  "weather": {
   "now": {
-   "temp": 46,
-   "cond": "Overcast",
-   "wind": "W 10 mph, gusts to 25 mph",
-   "humidity": 63,
-   "obs": "27 Nov 23:51 pm EST"
+   "temp": 44,
+   "cond": "Fair",
+   "humidity": 65,
+   "obs": "28 Nov 02:51 am EST"
   },
   "periods": [
    {
-    "name": "Overnight",
-    "kind": "low",
-    "temp": 45,
-    "text": "Mostly cloudy, with a low around 45. Southwest wind around 17 mph. "
-   },
-   {
     "name": "Saturday",
     "kind": "high",
-    "temp": 53,
-    "text": "Partly sunny, with a high near 53. Breezy, with a west wind 16 to 20 mph. "
+    "temp": 52,
+    "text": "Partly sunny, with a high near 52. West wind 15 to 18 mph, with gusts as high as 29 mph. "
    },
    {
     "name": "Saturday Night",
     "kind": "low",
-    "temp": 42,
-    "text": "Mostly cloudy, then gradually becoming clear, with a low around 42. West wind 10 to 16 mph. "
+    "temp": 44,
+    "text": "Mostly clear, with a low around 44. West wind 10 to 15 mph. "
    },
    {
     "name": "Sunday",
     "kind": "high",
-    "temp": 56,
-    "text": "Mostly sunny, with a high near 56. West wind 7 to 9 mph. "
+    "temp": 58,
+    "text": "Increasing clouds, with a high near 58. West wind around 8 mph. "
    },
    {
     "name": "Sunday Night",
     "kind": "low",
     "temp": 54,
-    "text": "Rain, mainly after 1am.  Temperature rising to around 57 by midnight. South wind 11 to 14 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+    "text": "Rain after 1am.  Temperature rising to around 57 by 1am. South wind 9 to 14 mph.  Chance of precipitation is 100%. New precipitation amounts between a half and three quarters of an inch possible. "
    },
    {
     "name": "Monday",
     "kind": "high",
     "temp": 56,
-    "text": "A 30 percent chance of rain before 1pm.  Cloudy through mid morning, then gradual clearing, with a temperature falling to around 50 by 4pm. Breezy. "
+    "text": "Rain, mainly before 1pm.  Temperature falling to around 51 by 5pm. Breezy.  Chance of precipitation is 80%. New precipitation amounts between a tenth and quarter of an inch possible. "
+   },
+   {
+    "name": "Monday Night",
+    "kind": "low",
+    "temp": 43,
+    "text": "Mostly clear, with a low around 43."
    }
   ]
  },
