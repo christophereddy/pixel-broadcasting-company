@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-28T02:11:00Z",
+ "updatedAt": "2026-11-28T05:11:00Z",
  "location": {
   "name": "New York City",
   "short": "NYC",
@@ -10,18 +10,34 @@
    "h": "LIVE: IRGC says tanker hit in Hormuz",
    "b": "Iran's Revolutionary Guard says a tanker was hit in the Strait of Hormuz and a hostile drone downed in the southeast.",
    "date": "2026-11-27",
-   "publisher": "Al Jazeera",
-   "title": "Iran’s IRGC says tanker hit in Hormuz, ‘hostile drone’ downed in southeast",
    "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
    "gathered": "2026-11-27T22:51:26Z"
+  },
+  {
+   "h": "Israeli strike on MSF clinic in Gaza kills two staff",
+   "b": "Doctors Without Borders said two watchmen were killed in the strike on its Gaza City clinic.",
+   "date": "2026-11-28",
+   "place": "Gaza City",
+   "publisher": "Al Jazeera",
+   "title": "Israeli strike on Doctors Without Borders clinic in Gaza kills two staff",
+   "url": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff",
+   "gathered": "2026-11-28T04:52:33Z"
+  },
+  {
+   "h": "Taiwan votes in competitive local elections",
+   "b": "Voters across 22 cities and counties are choosing mayors and councillors, with results expected Saturday evening.",
+   "date": "2026-11-28",
+   "place": "Taipei, Taiwan",
+   "publisher": "Al Jazeera",
+   "title": "Taiwan votes in local elections to choose mayors, other leaders",
+   "url": "https://www.aljazeera.com/news/2026/11/28/taiwan-votes-in-local-elections-to-choose-mayors-other-leaders",
+   "gathered": "2026-11-28T04:52:33Z"
   },
   {
    "h": "Pakistan, Turkiye vow to defend Saudi Arabia from Houthis",
    "b": "Mecca defence pact ministers met in Islamabad and denounced continuing Houthi attacks on the kingdom.",
    "date": "2026-11-27",
    "place": "Islamabad, Pakistan",
-   "publisher": "Al Jazeera",
-   "title": "Mecca pact allies condemn ‘heinous’ Houthi attacks on Saudi Arabia",
    "url": "https://www.aljazeera.com/news/2026/11/27/mecca-pact-allies-condemn-heinous-houthi-attacks-on-saudi-arabia",
    "gathered": "2026-11-27T22:51:26Z"
   },
@@ -41,8 +57,6 @@
    "b": "Moscow says the Yasen-M sub Perm is the first equipped with Zircon missiles.",
    "date": "2026-11-27",
    "place": "Severodvinsk, Russia",
-   "publisher": "Al Jazeera",
-   "title": "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons",
    "url": "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons",
    "gathered": "2026-11-27T22:51:26Z"
   }
@@ -57,7 +71,7 @@
    "title": "State Senate Majority Leader Andrea Stewart-Cousins has died",
    "url": "https://gothamist.com/news/state-senate-majority-leader-andrea-stewart-cousins-has-died",
    "published": "2026-11-27T19:19:00Z",
-   "updated": "2026-11-27T21:38:00Z",
+   "updated": "2026-11-28T00:46:00Z",
    "gathered": "2026-11-27T22:51:26Z"
   },
   {
@@ -118,13 +132,22 @@
  ],
  "international": [
   {
+   "h": "At least eight dead on migrant boat off Canary Islands",
+   "b": "Spanish rescuers found the bodies on a boat carrying about 100 people; six were airlifted to hospital.",
+   "date": "2026-11-27",
+   "place": "El Hierro, Spain",
+   "tz": "Atlantic/Canary",
+   "publisher": "Al Jazeera",
+   "title": "At least eight found dead on migrant boat off Spain’s Canary Islands",
+   "url": "https://www.aljazeera.com/news/2026/11/27/at-least-eight-found-dead-on-migrant-boat-off-spains-canary-islands",
+   "gathered": "2026-11-28T04:52:33Z"
+  },
+  {
    "h": "Trump backs Iraqi PM's oil smuggling crackdown",
    "b": "The endorsement of Ali al-Zaidi's push puts Baghdad further at odds with Kurdish authorities and Iran-aligned militias.",
    "date": "2026-11-27",
    "place": "Baghdad, Iraq",
    "tz": "Asia/Baghdad",
-   "publisher": "Al Jazeera",
-   "title": "Trump backs Iraqi PM’s oil smuggling crackdown",
    "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown",
    "gathered": "2026-11-27T23:12:13Z"
   },
@@ -347,6 +370,16 @@
  ],
  "local": [
   {
+   "h": "Mamdani recovering after Achilles surgery",
+   "b": "The mayor is resting at Gracie Mansion and expected to fully recover, his spokesperson said.",
+   "date": "2026-11-28",
+   "publisher": "Gothamist",
+   "title": "Mamdani recovering after surgery to repair torn Achilles",
+   "url": "https://gothamist.com/news/mamdani-recovering-after-surgery-to-repair-torn-achilles",
+   "published": "2026-11-28T00:09:00Z",
+   "gathered": "2026-11-28T04:52:33Z"
+  },
+  {
    "h": "NYC's school achievement gaps, by the numbers",
    "b": "As applications come due Dec. 4 and 11, the Mamdani administration faces pressure over segregation.",
    "date": "2026-11-27",
@@ -374,7 +407,7 @@
    "title": "State Senate Majority Leader Andrea Stewart-Cousins has died",
    "url": "https://gothamist.com/news/state-senate-majority-leader-andrea-stewart-cousins-has-died",
    "published": "2026-11-27T19:19:00Z",
-   "updated": "2026-11-27T21:38:00Z",
+   "updated": "2026-11-28T00:46:00Z",
    "gathered": "2026-11-27T22:51:26Z"
   },
   {
@@ -410,18 +443,18 @@
  ],
  "weather": {
   "now": {
-   "temp": 48,
+   "temp": 46,
    "cond": "Overcast",
-   "wind": "SW 9 mph, gusts to 24 mph",
-   "humidity": 74,
-   "obs": "27 Nov 17:51 pm EST"
+   "wind": "W 10 mph, gusts to 25 mph",
+   "humidity": 63,
+   "obs": "27 Nov 23:51 pm EST"
   },
   "periods": [
    {
     "name": "Tonight",
     "kind": "low",
     "temp": 45,
-    "text": "A 30 percent chance of showers before 7pm.  Mostly cloudy, with a low around 45. Southwest wind 16 to 18 mph. "
+    "text": "Mostly cloudy, with a low around 45. Southwest wind around 17 mph. "
    },
    {
     "name": "Saturday",

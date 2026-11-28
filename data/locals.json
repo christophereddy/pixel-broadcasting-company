@@ -31,18 +31,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 47,
-    "cond": "Partly Cloudy",
-    "wind": "SW 9 mph",
-    "humidity": 69,
-    "obs": "27 Nov 17:52 pm EST"
+    "temp": 40,
+    "cond": "A Few Clouds",
+    "wind": "W 8 mph",
+    "humidity": 79,
+    "obs": "27 Nov 23:52 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 35,
-     "text": "Mostly clear, with a low around 35. West wind 5 to 10 mph, with gusts as high as 15 mph. "
+     "text": "Clear, with a low around 35. West wind around 5 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -111,18 +111,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 51,
-    "cond": "Light Rain",
-    "wind": "SW 13 mph",
-    "humidity": 86,
-    "obs": "27 Nov 17:54 pm EST"
+    "temp": 48,
+    "cond": "Mostly Cloudy",
+    "wind": "SW 16 mph",
+    "humidity": 83,
+    "obs": "27 Nov 22:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Rain before 8pm.  Patchy fog before 9pm. Low around 42. Southwest wind 9 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 100%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Cloudy early, then gradual clearing, with a low around 42. Southwest wind around 10 mph, with gusts as high as 20 mph. "
     },
     {
      "name": "Saturday",
@@ -168,7 +168,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -179,6 +179,28 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "Fans remember Bears lineman Revie Sorey",
+    "b": "Readers recalled the Walter Payton blocker as an 'awesome human' off the field too.",
+    "date": "2026-11-28",
+    "publisher": "WBEZ",
+    "title": "Bears fans told us what made Revie Sorey more than just an offensive lineman. 'Awesome human'",
+    "url": "https://www.wbez.org/chicago/2026/11/27/bears-fans-told-us-what-made-revie-sorey-more-than-just-an-offensive-lineman-awesome-human",
+    "published": "2026-11-28T01:37:09Z",
+    "updated": "2026-11-28T01:37:09Z",
+    "gathered": "2026-11-28T04:52:33Z"
+   },
+   {
+    "h": "Man, 56, critical after Chicago Lawn gunfight",
+    "b": "Police said he was standing near a car when a group began shooting at each other Friday afternoon.",
+    "date": "2026-11-28",
+    "publisher": "WBEZ",
+    "title": "Man shot in head multiple times during Chicago Lawn gunfight",
+    "url": "https://www.wbez.org/news/2026/11/27/man-shot-in-head-multiple-times-during-chicago-lawn-gunfight",
+    "published": "2026-11-28T01:36:01Z",
+    "updated": "2026-11-28T01:36:01Z",
+    "gathered": "2026-11-28T04:52:33Z"
+   },
    {
     "h": "City program for blighted West Side falls short",
     "b": "Tax-increment financing transformed Downtown but left North Lawndale and the Garfield Parks overlooked.",
@@ -215,18 +237,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 45,
-    "cond": "Mostly Cloudy",
-    "wind": "W 10 mph",
-    "humidity": 48,
-    "obs": "27 Nov 16:53 pm CST"
+    "temp": 41,
+    "cond": "Fair",
+    "wind": "W 9 mph",
+    "humidity": 55,
+    "obs": "27 Nov 21:53 pm CST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
-     "temp": 35,
-     "text": "A chance of sprinkles after 3am.  Increasing clouds, with a low around 35. West southwest wind around 10 mph, with gusts as high as 15 mph. "
+     "temp": 36,
+     "text": "A slight chance of sprinkles after 3am.  Increasing clouds, with a low around 36. West southwest wind around 10 mph, with gusts as high as 15 mph. "
     },
     {
      "name": "Saturday",
@@ -272,7 +294,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -296,11 +318,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 59,
+    "temp": 56,
     "cond": "Mostly Cloudy",
-    "wind": "W 12 mph",
-    "humidity": 25,
-    "obs": "27 Nov 14:58 pm MST"
+    "wind": "W 14 mph",
+    "humidity": 26,
+    "obs": "27 Nov 20:58 pm MST"
    },
    "periods": [
     {
@@ -331,7 +353,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 31,
-     "text": "Partly cloudy, with a low around 31."
+     "text": "Partly cloudy, with a low around 31. Southwest wind 3 to 6 mph. "
     },
     {
      "name": "Monday",
@@ -353,7 +375,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
@@ -396,10 +418,10 @@
   ],
   "weather": {
    "now": {
-    "temp": 84,
-    "wind": "Calm",
-    "humidity": 19,
-    "obs": "27 Nov 01:25 PM PST"
+    "temp": 61,
+    "wind": "NW 3 mph",
+    "humidity": 84,
+    "obs": "27 Nov 08:40 PM PST"
    },
    "periods": [
     {
@@ -430,7 +452,7 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 60,
-     "text": "A 40 percent chance of rain after 10pm.  Mostly cloudy, with a low around 60."
+     "text": "A 40 percent chance of rain after 10pm.  Mostly cloudy, with a low around 60. South southwest wind around 5 mph.  New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Monday",
@@ -452,7 +474,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -463,6 +485,16 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "Mamdani recovering after Achilles surgery",
+    "b": "The mayor is resting at Gracie Mansion and expected to fully recover, his spokesperson said.",
+    "date": "2026-11-28",
+    "publisher": "Gothamist",
+    "title": "Mamdani recovering after surgery to repair torn Achilles",
+    "url": "https://gothamist.com/news/mamdani-recovering-after-surgery-to-repair-torn-achilles",
+    "published": "2026-11-28T00:09:00Z",
+    "gathered": "2026-11-28T04:52:33Z"
+   },
    {
     "h": "NYC's school achievement gaps, by the numbers",
     "b": "As applications come due Dec. 4 and 11, the Mamdani administration faces pressure over segregation.",
@@ -491,7 +523,7 @@
     "title": "State Senate Majority Leader Andrea Stewart-Cousins has died",
     "url": "https://gothamist.com/news/state-senate-majority-leader-andrea-stewart-cousins-has-died",
     "published": "2026-11-27T19:19:00Z",
-    "updated": "2026-11-27T21:38:00Z",
+    "updated": "2026-11-28T00:46:00Z",
     "gathered": "2026-11-27T22:51:26Z"
    },
    {
@@ -527,18 +559,18 @@
   ],
   "weather": {
    "now": {
-    "temp": 48,
+    "temp": 46,
     "cond": "Overcast",
-    "wind": "SW 9 mph, gusts to 24 mph",
-    "humidity": 74,
-    "obs": "27 Nov 17:51 pm EST"
+    "wind": "W 10 mph, gusts to 25 mph",
+    "humidity": 63,
+    "obs": "27 Nov 23:51 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 45,
-     "text": "A 30 percent chance of showers before 7pm.  Mostly cloudy, with a low around 45. Southwest wind 16 to 18 mph. "
+     "text": "Mostly cloudy, with a low around 45. Southwest wind around 17 mph. "
     },
     {
      "name": "Saturday",
@@ -584,7 +616,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "new-york-city",
   "goodnews": []
  },
@@ -597,14 +629,21 @@
   },
   "local": [
    {
+    "h": "Mélenchon demands 'overhaul' of French-German ties",
+    "b": "The hard-left candidate, polling second for April, criticized Germany's economic dominance during a Berlin visit.",
+    "date": "2026-11-28",
+    "publisher": "The Local France",
+    "title": "French far-left leader demands 'overhaul' of German ties",
+    "url": "https://www.thelocal.fr/20261128/french-far-left-leader-demands-overhaul-of-german-ties",
+    "published": "2026-11-28T03:26:21Z",
+    "updated": "2026-11-28T03:26:23Z",
+    "gathered": "2026-11-28T04:52:33Z"
+   },
+   {
     "h": "Unions call nationwide strike for December 1",
     "b": "Public sector federations, joined this time by private workers, retirees and students, protest 2027 budget cuts.",
     "date": "2026-11-27",
-    "publisher": "The Local France",
-    "title": "What to expect from France's December 1st strike",
     "url": "https://www.thelocal.fr/20261127/what-to-expect-from-frances-december-1st-strike",
-    "published": "2026-11-27T14:40:00Z",
-    "updated": "2026-11-27T14:40:00Z",
     "gathered": "2026-11-27T17:12:47Z"
    },
    {
@@ -642,7 +681,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "goodnews": []
  },
  {
@@ -666,11 +705,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Rain",
-    "wind": "SE 5 mph",
-    "humidity": 92,
-    "obs": "27 Nov 02:53 PM PST"
+    "temp": 46,
+    "cond": "Overcast",
+    "wind": "Calm",
+    "humidity": 100,
+    "obs": "27 Nov 08:35 PM PST"
    },
    "periods": [
     {
@@ -688,8 +727,8 @@
     {
      "name": "Saturday Night",
      "kind": "low",
-     "temp": 41,
-     "text": "A 10 percent chance of rain after 4am.  Cloudy, with a low around 41. North northeast wind 3 to 5 mph. "
+     "temp": 44,
+     "text": "A 10 percent chance of rain after 4am.  Cloudy, with a steady temperature around 44. North northeast wind 3 to 5 mph. "
     },
     {
      "name": "Sunday",
@@ -701,13 +740,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 44,
-     "text": "Rain.  Low around 44. Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+     "text": "Rain.  Low around 44. Light and variable wind becoming east northeast around 5 mph in the evening.  Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 52,
-     "text": "Rain, mainly before 4pm.  High near 52. Chance of precipitation is 100%."
+     "text": "Rain, mainly before 4pm.  High near 52. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     }
    ]
   },
@@ -723,7 +762,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-28T02:11:00Z",
+  "updatedAt": "2026-11-28T05:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
