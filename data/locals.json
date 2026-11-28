@@ -31,11 +31,11 @@
   ],
   "weather": {
    "now": {
-    "temp": 50,
-    "cond": "Mostly Cloudy",
-    "wind": "W 6 mph",
-    "humidity": 61,
-    "obs": "27 Nov 16:52 pm EST"
+    "temp": 47,
+    "cond": "Partly Cloudy",
+    "wind": "SW 9 mph",
+    "humidity": 69,
+    "obs": "27 Nov 17:52 pm EST"
    },
    "periods": [
     {
@@ -88,7 +88,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "atlanta-ga",
   "goodnews": []
  },
@@ -107,31 +107,22 @@
     "title": "College students tackle invasive plants in Worcester",
     "url": "https://www.wbur.org/news/2026/11/27/clark-university-worcester-partnership-invasive-plants",
     "gathered": "2026-11-27T17:12:47Z"
-   },
-   {
-    "h": "Chef Sean Sherman on reclaiming Indigenous foods",
-    "b": "The Lakota chef and author urges buying from Indigenous producers and cooking foods 'that taste like where we are.'",
-    "date": "2026-11-26",
-    "publisher": "WBUR",
-    "title": "Chef and restaurateur on reclaiming Indigenous foods and traditions",
-    "url": "https://www.wbur.org/news/2026/11/26/sean-sherman-james-beard-native-american-lakota",
-    "gathered": "2026-11-26T23:12:01Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 55,
-    "cond": "Mostly Cloudy",
-    "wind": "S 14 mph",
-    "humidity": 72,
-    "obs": "27 Nov 16:54 pm EST"
+    "temp": 51,
+    "cond": "Light Rain",
+    "wind": "SW 13 mph",
+    "humidity": 86,
+    "obs": "27 Nov 17:54 pm EST"
    },
    "periods": [
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Rain before 8pm.  Patchy fog before 9pm. Low around 42. Southwest wind 9 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 90%. New precipitation amounts of less than a tenth of an inch possible. "
+     "text": "Rain before 8pm.  Patchy fog before 9pm. Low around 42. Southwest wind 9 to 11 mph, with gusts as high as 21 mph.  Chance of precipitation is 100%. New precipitation amounts of less than a tenth of an inch possible. "
     },
     {
      "name": "Saturday",
@@ -149,7 +140,7 @@
      "name": "Sunday",
      "kind": "high",
      "temp": 55,
-     "text": "Sunny, with a high near 55. West wind 3 to 7 mph. "
+     "text": "Increasing clouds, with a high near 55. West wind 3 to 7 mph. "
     },
     {
      "name": "Sunday Night",
@@ -177,7 +168,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "boston-ma",
   "goodnews": []
  },
@@ -188,6 +179,17 @@
    "tz": "America/Chicago"
   },
   "local": [
+   {
+    "h": "City program for blighted West Side falls short",
+    "b": "Tax-increment financing transformed Downtown but left North Lawndale and the Garfield Parks overlooked.",
+    "date": "2026-11-27",
+    "publisher": "WBEZ",
+    "title": "How a city program to help Chicago's blighted neighborhoods has fallen short",
+    "url": "https://www.wbez.org/nation-world/2026/11/27/tif-tax-increment-financing-north-lawndale-east-garfield-park-west-blighted-neighborhoods-development",
+    "published": "2026-11-27T23:06:52Z",
+    "updated": "2026-11-27T23:10:19Z",
+    "gathered": "2026-11-27T23:12:13Z"
+   },
    {
     "h": "Shelter volunteers keep a Black Friday tradition",
     "b": "Volunteers stocked up on blankets, toys and treats for pets in need at Lincoln Park stores.",
@@ -209,33 +211,15 @@
     "published": "2026-11-27T15:10:17Z",
     "updated": "2026-11-27T15:10:17Z",
     "gathered": "2026-11-27T17:12:47Z"
-   },
-   {
-    "h": "Chicago Thanksgiving Parade steps off an hour early",
-    "b": "The 92nd parade drew hundreds to State Street at 7:45 a.m. so its broadcast could air before the Bears played the Lions.",
-    "date": "2026-11-26",
-    "publisher": "WBEZ",
-    "title": "Chicago's Thanksgiving parade draws hundreds to the Loop for a colorful burst of holiday spirit",
-    "url": "https://www.wbez.org/arts-culture/2026/11/26/chicagos-thanksgiving-parade-draws-hundreds-to-the-loop-for-a-colorful-burst-of-holiday-spirit",
-    "published": "2026-11-26T16:11:24Z",
-    "updated": "2026-11-26T16:21:22Z",
-    "gathered": "2026-11-26T17:12:01Z"
-   },
-   {
-    "h": "Man charged in Lower West Side killing of 86-year-old",
-    "b": "Alejandro Lozano, 44, faces first-degree murder and attempted murder charges in Monday's stabbing on West 19th Street, police said.",
-    "date": "2026-11-26",
-    "url": "https://www.wbez.org/crime/2026/11/25/man-charged-in-lower-west-side-fatal-stabbing-of-86-year-old",
-    "gathered": "2026-11-26T02:58:55Z"
    }
   ],
   "weather": {
    "now": {
-    "temp": 46,
-    "cond": "Overcast",
-    "wind": "W 9 mph",
-    "humidity": 47,
-    "obs": "27 Nov 15:53 pm CST"
+    "temp": 45,
+    "cond": "Mostly Cloudy",
+    "wind": "W 10 mph",
+    "humidity": 48,
+    "obs": "27 Nov 16:53 pm CST"
    },
    "periods": [
     {
@@ -288,7 +272,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "chicago-il",
   "goodnews": []
  },
@@ -300,14 +284,14 @@
   },
   "local": [
    {
-    "h": "How Denver restaurants try to keep diners as costs climb",
-    "b": "Denverite asked a food writer about the latest dining trends as eating out gets pricier.",
-    "date": "2026-11-26",
+    "h": "Watercourse Foods closes its restaurant",
+    "b": "Denver's pioneering plant-based eatery is shifting to catering instead.",
+    "date": "2026-11-27",
     "publisher": "Denverite",
-    "title": "As costs climb, how can Denver restaurants keep customers coming back?",
-    "url": "https://denverite.com/2026/11/26/denver-eating-out-costs-trends/",
-    "published": "2026-11-26T11:00:00Z",
-    "gathered": "2026-11-26T23:12:01Z"
+    "title": "Watercourse Foods, Denver’s pioneering plant-based eatery, is closing its doors",
+    "url": "https://denverite.com/2026/11/27/watercourse-foods-closing-denver/",
+    "published": "2026-11-27T22:54:27Z",
+    "gathered": "2026-11-27T23:12:13Z"
    }
   ],
   "weather": {
@@ -319,12 +303,6 @@
     "obs": "27 Nov 14:58 pm MST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 64,
-     "text": "Partly sunny, with a high near 64. Northwest wind 10 to 13 mph, with gusts as high as 20 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -354,6 +332,12 @@
      "kind": "low",
      "temp": 31,
      "text": "Partly cloudy, with a low around 31."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 59,
+     "text": "Mostly sunny, with a high near 59."
     }
    ]
   },
@@ -369,18 +353,18 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "denver-co",
   "goodnews": [
    {
-    "h": "Jade Cafe patrons join owner in feeding homeless",
-    "b": "After the Chinese restaurant's owner began feeding people in need, one customer bought 100 meals and others added dozens more.",
-    "date": "2026-11-26",
+    "h": "Lacrosse coach teaches the sport's Indigenous roots",
+    "b": "A Denver coach is teaching young players where the game came from.",
+    "date": "2026-11-27",
     "publisher": "Denverite",
-    "title": "A Chinese restaurant owner was feeding homeless people. Then the customers joined in",
-    "url": "https://denverite.com/2026/11/26/jade-cafe-denver-pay-it-forward/",
-    "published": "2026-11-26T11:05:00Z",
-    "gathered": "2026-11-26T12:59:53Z"
+    "title": "This Denver lacrosse coach is teaching the Indigenous roots of the sport",
+    "url": "https://denverite.com/2026/11/27/denver-lacrosse-indigenous-roots/",
+    "published": "2026-11-27T11:10:00Z",
+    "gathered": "2026-11-27T23:12:13Z"
    }
   ]
  },
@@ -392,32 +376,22 @@
   },
   "local": [
    {
+    "h": "Complaint: City attorney used tax dollars on court penalty",
+    "b": "Hydee Feldstein Soto repaid the city $1,000 a day after LAist requested records on the sanctions.",
+    "date": "2026-11-27",
+    "publisher": "LAist",
+    "title": "LA’s city attorney used tax dollars to pay her court penalty. A complaint claims that’s illegal",
+    "url": "https://laist.com/news/city-attorney-court-penalty-la-sanctions",
+    "published": "2026-11-27T13:00:00Z",
+    "updated": "2026-11-27T16:08:46Z",
+    "gathered": "2026-11-27T23:12:13Z"
+   },
+   {
     "h": "LAUSD quietly blocks Google AI search summaries",
     "b": "The district of half a million students disabled AI Overviews on school devices, surprising parents.",
     "date": "2026-11-27",
     "url": "https://www.pbs.org/newshour/education/as-google-threatens-to-cut-schools-search-access-los-angeles-blocks-ai-features",
     "gathered": "2026-11-27T17:12:47Z"
-   },
-   {
-    "h": "King tides close part of PCH in Huntington Beach",
-    "b": "Thursday's tide came in a bit lower than Wednesday's, which tied a record of about 8.2 feet at the Port of LA.",
-    "date": "2026-11-26",
-    "publisher": "LAist",
-    "title": "The worst of the king tides has passed. Now a storm is headed for SoCal",
-    "url": "https://laist.com/news/climate-environment/king-tides-have-arrived-thanksgiving-coastal-flooding-socal-what-to-expect",
-    "published": "2026-11-26T13:00:00Z",
-    "updated": "2026-11-27T18:54:14Z",
-    "gathered": "2026-11-26T23:12:01Z"
-   },
-   {
-    "h": "Ugarte leads CD-9 race by 69 votes",
-    "b": "Jose Ugarte is closing in on the City Council seat in one of LA's last undecided races; results are certified Friday.",
-    "date": "2026-11-26",
-    "publisher": "LAist",
-    "title": "Jose Ugarte wins tight LA City Council race in District 9",
-    "url": "https://laist.com/news/politics/jose-ugarte-closes-in-on-cd-9-win-with-a-69-vote-lead",
-    "published": "2026-11-26T00:57:00Z",
-    "gathered": "2026-11-26T02:58:55Z"
    }
   ],
   "weather": {
@@ -428,12 +402,6 @@
     "obs": "27 Nov 01:25 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 83,
-     "text": "Partly sunny, with a high near 83. West wind around 5 mph. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
@@ -463,6 +431,12 @@
      "kind": "low",
      "temp": 60,
      "text": "A 40 percent chance of rain after 10pm.  Mostly cloudy, with a low around 60."
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 70,
+     "text": "Rain, mainly after 10am.  High near 70. Chance of precipitation is 80%."
     }
    ]
   },
@@ -478,7 +452,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "los-angeles-ca",
   "goodnews": []
  },
@@ -489,6 +463,26 @@
    "tz": "America/New_York"
   },
   "local": [
+   {
+    "h": "NYC's school achievement gaps, by the numbers",
+    "b": "As applications come due Dec. 4 and 11, the Mamdani administration faces pressure over segregation.",
+    "date": "2026-11-27",
+    "publisher": "Gothamist",
+    "title": "The achievement gaps in NYC's public schools, stat by stat",
+    "url": "https://gothamist.com/news/the-achievement-gaps-in-nycs-public-schools-stat-by-stat",
+    "published": "2026-11-27T11:30:52Z",
+    "gathered": "2026-11-27T23:12:13Z"
+   },
+   {
+    "h": "Park Slope Food Coop weighs lifting mask mandate",
+    "b": "Members will debate the pandemic-era Wednesday and Thursday rule at the Dec. 1 general meeting.",
+    "date": "2026-11-27",
+    "publisher": "Gothamist",
+    "title": "Next on the Park Slope Food Coop agenda: lifting a COVID-era mask mandate",
+    "url": "https://gothamist.com/news/next-on-the-park-slope-food-coop-agenda-lifting-a-covid-era-mask-mandate",
+    "published": "2026-11-27T11:30:51Z",
+    "gathered": "2026-11-27T23:12:13Z"
+   },
    {
     "h": "Senate Majority Leader Stewart-Cousins dies",
     "b": "The Yonkers Democrat, 76, died unexpectedly two weeks after being re-elected to lead Senate Democrats.",
@@ -529,56 +523,6 @@
     "url": "https://gothamist.com/news/its-officially-christmas-season-in-nyc-can-you-afford-a-tree",
     "published": "2026-11-27T11:00:47Z",
     "gathered": "2026-11-27T11:11:58Z"
-   },
-   {
-    "h": "Albany to welcome 27 new Assembly Democrats",
-    "b": "Democrats will hold at least 158 of the Legislature's 213 seats in January, which could decide the fate of long-stalled bills.",
-    "date": "2026-11-26",
-    "publisher": "Gothamist",
-    "title": "Fate of long-stalled NY bills could be decided by 27 new Democrats",
-    "url": "https://gothamist.com/news/fate-of-long-stalled-ny-bills-could-be-decided-by-27-new-democrats",
-    "published": "2026-11-26T16:00:51Z",
-    "gathered": "2026-11-26T23:12:01Z"
-   },
-   {
-    "h": "NJ Turnpike Authority eyes housing near interchanges",
-    "b": "The plan would develop five tracts it owns near Turnpike and Parkway interchanges, advancing Gov. Sherrill's housing goals.",
-    "date": "2026-11-26",
-    "publisher": "Gothamist",
-    "title": "NJ agency eyes housing along the highways in Central Jersey",
-    "url": "https://gothamist.com/news/nj-agency-eyes-housing-along-the-highways-in-central-jersey",
-    "published": "2026-11-26T15:00:49Z",
-    "gathered": "2026-11-26T23:12:01Z"
-   },
-   {
-    "h": "Storm's worst hits NYC Thanksgiving evening",
-    "b": "Forecasters expect the heaviest rain and winds up to 65 mph from about 4 to 10 p.m., and Mayor Mamdani urged travelers to allow extra time.",
-    "date": "2026-11-26",
-    "publisher": "Gothamist",
-    "title": "Travel treachery: The Thanksgiving holiday travel outlook is grim",
-    "url": "https://gothamist.com/news/travel-treachery-the-thanksgiving-holiday-travel-outlook-is-grim",
-    "published": "2026-11-26T18:29:08Z",
-    "gathered": "2026-11-26T22:29:57Z"
-   },
-   {
-    "h": "State boosts sobriety checkpoints for Thanksgiving weekend",
-    "b": "Gov. Hochul announced extra patrols through Sunday targeting drunk and reckless drivers.",
-    "date": "2026-11-26",
-    "publisher": "Gothamist",
-    "title": "New York State and local police out at sobriety checkpoints all Thanksgiving weekend long",
-    "url": "https://gothamist.com/news/new-york-state-and-local-police-out-at-sobriety-checkpoints-all-thanksgiving-weekend-long",
-    "published": "2026-11-26T16:20:52Z",
-    "gathered": "2026-11-26T17:12:01Z"
-   },
-   {
-    "h": "Bill would let crash victims track NYPD investigations online",
-    "b": "A City Council proposal would require a secure site showing case status, summonses, arrests and witnesses for victims of serious crashes.",
-    "date": "2026-11-26",
-    "publisher": "Gothamist",
-    "title": "NYC bill would give crash victims online access to NYPD investigation updates",
-    "url": "https://gothamist.com/news/nyc-bill-would-give-crash-victims-online-access-to-nypd-investigation-updates",
-    "published": "2026-11-26T11:31:01Z",
-    "gathered": "2026-11-26T12:59:53Z"
    }
   ],
   "weather": {
@@ -618,13 +562,13 @@
      "name": "Sunday Night",
      "kind": "low",
      "temp": 54,
-     "text": "Rain after 1am.  Temperature rising to around 57 by midnight. Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
+     "text": "Rain, mainly after 1am.  Temperature rising to around 57 by midnight. South wind 11 to 14 mph, with gusts as high as 29 mph.  Chance of precipitation is 100%. New precipitation amounts between a quarter and half of an inch possible. "
     },
     {
      "name": "Monday",
      "kind": "high",
      "temp": 56,
-     "text": "A 30 percent chance of rain before 1pm.  Cloudy through mid morning, then gradual clearing, with a high near 56. Breezy. "
+     "text": "A 30 percent chance of rain before 1pm.  Cloudy through mid morning, then gradual clearing, with a temperature falling to around 50 by 4pm. Breezy. "
     }
    ]
   },
@@ -640,20 +584,9 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "new-york-city",
-  "goodnews": [
-   {
-    "h": "Astoria the wild turkey charms Battery Park",
-    "b": "The turkey, first spotted in her namesake Queens neighborhood, has become a beloved sight in Lower Manhattan.",
-    "date": "2026-11-26",
-    "publisher": "Gothamist",
-    "title": "Every day is Turkey Day in Battery Park for fans of Astoria the bird",
-    "url": "https://gothamist.com/news/every-day-is-turkey-day-in-battery-park-for-fans-of-astoria-the-bird",
-    "published": "2026-11-26T11:31:00Z",
-    "gathered": "2026-11-26T23:12:01Z"
-   }
-  ]
+  "goodnews": []
  },
  {
   "slug": "paris-france",
@@ -691,27 +624,6 @@
     "date": "2026-11-27",
     "url": "https://www.thelocal.fr/20261127/marie-antoinettes-nipple-bowl-fetches-record-e2-9-million-at-paris-auction",
     "gathered": "2026-11-27T11:11:58Z"
-   },
-   {
-    "h": "Free land revives a French village",
-    "b": "Parlan in Cantal has drawn hundreds of new residents since 2008 by offering plots to first-time homeowners who commit to stay 10 years.",
-    "date": "2026-11-26",
-    "url": "https://www.thelocal.fr/20261126/french-village-tackles-depopulation-with-near-free-plots-of-land",
-    "gathered": "2026-11-26T23:12:01Z"
-   },
-   {
-    "h": "Paris to cut Navigo validation fine to €15",
-    "b": "From Jan. 1, 2027, pass holders who fail to validate on the metro or RER A and B will pay €15 instead of €70.",
-    "date": "2026-11-26",
-    "url": "https://www.thelocal.fr/20261126/paris-fine-for-navigo-passengers-to-drop-from-e70-to-e15",
-    "gathered": "2026-11-26T17:12:01Z"
-   },
-   {
-    "h": "Long Orly queues as border police stage work-to-rule",
-    "b": "Officers in a pay dispute are carrying out more thorough identity checks on all international departures.",
-    "date": "2026-11-26",
-    "url": "https://www.thelocal.fr/20261126/long-airport-queues-as-french-border-control-stage-work-to-rule-strike",
-    "gathered": "2026-11-26T17:12:01Z"
    }
   ],
   "weather": {
@@ -730,7 +642,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "goodnews": []
  },
  {
@@ -750,35 +662,22 @@
     "published": "2026-11-27T16:00:00Z",
     "updated": "2026-11-27T18:27:59Z",
     "gathered": "2026-11-27T17:12:47Z"
-   },
-   {
-    "h": "Western Washington faces flooding and drought at once",
-    "b": "El Niño-boosted king tides are flooding low-lying areas while Seattle's Chester Morse reservoir sits unusually low.",
-    "date": "2026-11-26",
-    "url": "https://www.kuow.org/environment/2026-11-25/flood-drought-western-washingtons-got-it-all",
-    "gathered": "2026-11-26T02:58:55Z"
    }
   ],
   "weather": {
    "now": {
     "temp": 50,
     "cond": "Rain",
-    "wind": "SE 4 mph",
-    "humidity": 93,
-    "obs": "27 Nov 02:35 PM PST"
+    "wind": "SE 5 mph",
+    "humidity": 92,
+    "obs": "27 Nov 02:53 PM PST"
    },
    "periods": [
-    {
-     "name": "This Afternoon",
-     "kind": "high",
-     "temp": 51,
-     "text": "Rain, mainly before 4pm.  High near 51. South southwest wind 3 to 5 mph.  Chance of precipitation is 80%. New precipitation amounts of less than a tenth of an inch possible. "
-    },
     {
      "name": "Tonight",
      "kind": "low",
      "temp": 42,
-     "text": "Mostly cloudy, with a low around 42. Calm wind. "
+     "text": "Patchy fog between 2am and 3am.  Otherwise, mostly cloudy, with a low around 42. Calm wind. "
     },
     {
      "name": "Saturday",
@@ -803,6 +702,12 @@
      "kind": "low",
      "temp": 44,
      "text": "Rain.  Low around 44. Chance of precipitation is 100%. New precipitation amounts between a tenth and quarter of an inch possible. "
+    },
+    {
+     "name": "Monday",
+     "kind": "high",
+     "temp": 52,
+     "text": "Rain, mainly before 4pm.  High near 52. Chance of precipitation is 100%."
     }
    ]
   },
@@ -818,7 +723,7 @@
     "desk": "local"
    }
   ],
-  "updatedAt": "2026-11-27T23:12:00Z",
+  "updatedAt": "2026-11-28T02:11:00Z",
   "slug": "seattle-wa",
   "goodnews": []
  }
